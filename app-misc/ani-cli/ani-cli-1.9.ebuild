@@ -15,7 +15,8 @@ IUSE=""
 DEPEND="media-video/mpv
 	dev-libs/openssl
 	net-misc/curl
-	media-video/ffmpeg"
+	media-video/ffmpeg
+	net-misc/aria2"
 
 RDEPEND="${DEPEND}"
 BDEPEND=""
