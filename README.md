@@ -13,7 +13,7 @@
 
 **The official repository for new Gentoo packages, maintained collaboratively by Gentoo users.**
 
-This README contains some additional useful information for GURU contributors, such as common mistakes, frequently asked questions and other tips and tricks. 
+This README contains some additional useful information for GURU contributors, such as common mistakes, frequently asked questions and other tips and tricks.
 
 The [GURU regulations](https://wiki.gentoo.org/wiki/Project:GURU#The_regulations), and the Gentoo [developer manual](https://devmanual.gentoo.org/) take precedence over any information here.
 
@@ -24,11 +24,78 @@ The [GURU regulations](https://wiki.gentoo.org/wiki/Project:GURU#The_regulations
 
 ### Contents
 
-1. [Useful Links](#links)
-2. [Email Addresses](#email)
+1. [Installation](#install)
+  - [Eselect](#install-eselect)
+  - [Manual](#install-manual)
+  - [Layman](#install-layman)
+2. [Useful Links](#links)
+3. [Email Addresses](#email)
 
 </td>
 </tr></table>
+
+## Installation <a name="install"></a>
+
+As per the current [Portage specification](https://dev.gentoo.org/~zmedico/portage/doc/man/portage.5.html), ebuild repositories (a.k.a. overlays) can be managed via file collections under `/etc/portage/repos.conf/`, via the new [plug-in sync system](https://wiki.gentoo.org/wiki/Project:Portage/Sync).
+
+### Eselect-repository Install <a name="install-eselect"></a>
+
+The overlay can be enabled via the `repository` extension of the Gentoo `eselect` utility.
+
+```console
+emerge --ask --noreplace --verbose eselect-repository
+eselect repository enable guru
+```
+
+### Eselect-repository Uninstall
+
+To disable and remove the overlay, run:
+
+```console
+eselect repository disable guru
+eselect repository remove guru
+```
+
+### Manual Install <a name="install-manual"></a>
+
+To enable the overlay without the need for dedicated repository software, you need to have `git` installed:
+
+```console
+emerge --ask --noreplace --verbose dev-vcs/git
+````
+
+Then you can simply download the guru repository configuration file, [guru.conf](metadata/guru.conf):
+
+```console
+wget https://gitweb.gentoo.org/repo/proj/guru.git/tree/metadata/guru.conf \
+        -O /etc/portage/repos.conf/guru
+```
+
+### Manual Uninstall
+
+To disable and remove the overlay, run:
+
+```console
+rm /etc/portage/repos.conf/guru
+rm /var/db/repos/guru -rf
+```
+
+### Layman Install <a name="install-layman"></a>
+
+You can also install the overlay via the [layman](https://wiki.gentoo.org/wiki/Layman) overlay manager.
+
+```console
+emerge --ask --noreplace --verbose app-portage/layman
+layman --add guru
+```
+
+### Layman Uninstall
+
+To delete the overlay, run:
+
+```console
+layman --delete guru
+```
 
 ## Useful Links <a name="links"></a>
 
