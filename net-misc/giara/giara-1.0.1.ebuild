@@ -28,6 +28,7 @@ RDEPEND="
 	gui-libs/gtk:4[introspection(+)]
 	gui-libs/gtksourceview:5[introspection(+)]
 	gui-libs/libadwaita:1[introspection(+)]
+	dev-python/python-dateutil
 	$(python_gen_cond_dep '
 		dev-python/beautifulsoup4[${PYTHON_USEDEP}]
 		dev-python/mistune[${PYTHON_USEDEP}]
