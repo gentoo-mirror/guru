@@ -1,9 +1,9 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..11} )
+PYTHON_COMPAT=( python3_{9..11} )
 MY_PN=${PN%-*}
 
 inherit desktop python-single-r1 xdg
@@ -18,13 +18,7 @@ KEYWORDS="~amd64"
 #RESTRICT="strip"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
-QA_PREBUILT="
-	*/libGLESv2.so
-	*/libEGL.so
-	*/libffmpeg.so
-	*/libvk_swiftshader.so
-	*/${MY_PN}-${PV}
-	"
+QA_PREBUILT="*"
 
 ## RDEPEND is still required to be filled with actual runtime-deps:
 ## python is just assumed runtime-dependency.
@@ -37,17 +31,11 @@ BDEPEND="app-arch/unzip"
 
 S="${WORKDIR}/${MY_PN}-${PV}-linux-x64"
 
-QA_FLAGS_IGNORED="
-	/opt/${P}/chrome-sandbox
-	/opt/${P}/libvulkan.*
-"
+QA_FLAGS_IGNORED="*"
 
 ## It seems media-libs/alsa-lib is required by chrome-sandbox.
 ## Actually this library isn't required to work.
-QA_SONAME="
-	/usr/lib64/libasound.so.2
-	/usr/lib64/libxkbcommon.so.0
-"
+QA_SONAME="*"
 
 src_install() {
 	insinto "/opt/${P}"

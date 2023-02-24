@@ -27,6 +27,7 @@ app-misc/apidb:commands - Build commands
 app-misc/apidb:corelibs - Build Abtract layer
 app-misc/apidb:mariadb - Build MariaDB Layer
 app-misc/apidb:postgresql - Build PostgreSQL Layer
+app-misc/dbf:doc - build manpages
 app-misc/far2l:archive - Multiarc extended archives support
 app-misc/far2l:nfs - NFS support in NetRocks
 app-misc/far2l:python - Python scripting support
@@ -42,12 +43,10 @@ app-misc/fastfetch:pci - Enables reading GPU via sys-apps/pciutils
 app-misc/fastfetch:vulkan - Enables reading GPU via media-libs/vulkan-loader
 app-misc/fastfetch:xfce - Enables support for XFCE config
 app-misc/fastfetch:xrandr - Enables support for Xrandr
-app-misc/ntfy:dbus - Support for desktop notifications
-app-misc/ntfy:telegram - Add support for telegram backend
-app-misc/termdown:speak - Support for spoken countdown
 app-portage/emlop:fish-completion - Enable fish completion support.
 app-text/klogg:lto - Build with link time optimization (LTO).
 dev-cpp/cpptoml:libcxx - Use libc++ for the C++ standard library
+dev-cpp/dpp:voice - Enable voice-chat support
 dev-cpp/drogon:brotli - Enable support for brotli compression
 dev-cpp/drogon:mariadb - Add support for the mariadb database
 dev-cpp/drogon:redis - Add support for the Redis database via dev-libs/hiredis
@@ -59,11 +58,20 @@ dev-cpp/tiny-dnn:opencl - Build tiny-dnn with OpenCL library support
 dev-cpp/tiny-dnn:serialization - Build tiny-dnn with Serialization support
 dev-cpp/tiny-dnn:tbb - Build tiny-dnn with TBB library support
 dev-cpp/vexcl:amdsi - Implement workaround for AMD SI GPUs
+dev-cpp/xtensor:openmp - Enable parallel assignment loop using OpenMP
+dev-cpp/xtensor:tbb - Enable parallel assignment loop using dev-cpp/tbb
+dev-cpp/xtensor:xsimd - Enable SIMD accelaration using dev-cpp/xsimd
+dev-embedded/esp-idf:esp32 - Enable support for esp32
+dev-embedded/esp-idf:esp32s2 - Enable support for esp32
+dev-embedded/esp-idf:esp32s3 - Enable support for esp32
+dev-embedded/esp-idf:riscv32 - Enable support for esp32
 dev-embedded/rauc:gpt - Add GPT support
 dev-embedded/rauc:json - Add JSON support
 dev-embedded/rauc:network - Add network update support
 dev-embedded/rauc:service - Add dbus service
+dev-embedded/yosys:abc - Build with Berkeley ABC support
 dev-java/jogl:cg - Enable NVidia Cg binding.
+dev-lang/quickjs:lto - Enable Link Time Optimizations (improves performance and decreases size of executables)
 dev-libs/KVTree:fcntl - Set the type of file locking to fcntl.
 dev-libs/KVTree:flock - Set the type of file locking to flock.
 dev-libs/atl:utilities - Build utilities
@@ -78,6 +86,7 @@ dev-libs/dyninst:openmp - Enable parallel code parsing
 dev-libs/dyninst:valgrind - Enable annotations for Valgrind analysis
 dev-libs/ffs:atl - Enable the use of ATL
 dev-libs/hts_engine:speech-tools - use memory allocation/free functions of app-accessibility/speech-tools
+dev-libs/libdbf:doc - Include documentation
 dev-libs/libdwarf:dwarfexample - enable dwarfexample compilation
 dev-libs/libdwarf:dwarfgen - enable dwarfgen compilation
 dev-libs/libdwarf:elf - enable use of virtual/libelf
@@ -184,23 +193,12 @@ dev-ml/vchan:xen - Xen support
 dev-ml/vhd:lwt - provide an Lwt compatible interface to the library
 dev-ml/xen-evtchn:unix - Xen event channel interface for Linux
 dev-ml/xen-gnt:unix - build the userspace library
-dev-python/glance_store:cinder - enable cinder backend supprt
-dev-python/glance_store:swift - enable swift backend supprt
-dev-python/glance_store:vmware - enable vmware backend supprt
-dev-python/gnocchi:amqp - Installs dependencies needed for AMQP 1.0 support
-dev-python/gnocchi:ceph - Installs dependencies needed for Ceph storage support
-dev-python/gnocchi:keystone - Installs dependencies needed for Keystone authentication support
-dev-python/gnocchi:mysql - Installs dependencies needed for MYSQL indexer support
-dev-python/gnocchi:postgresql - Installs dependencies needed for PostgreSQL indexer support
-dev-python/gnocchi:prometheus - Installs dependencies needed for Prometheus Remote Write support
-dev-python/gnocchi:redis - Installs dependencies needed for Redis storage support
-dev-python/gnocchi:s3 - Installs dependencies needed for Amazon S3 storage support
-dev-python/gnocchi:swift - Installs dependencies needed for OpenStack Swift storage support
 dev-python/python-socketio:asyncio-client - Add async websocket client
 dev-python/python-socketio:client - Add websocket client
 dev-util/FoBiS:graphviz - Add support of generation of a dependencies graph
 dev-util/annobin:clang - Build the clang plugin
 dev-util/annobin:llvm - Build the LLVM plugin
+dev-util/fpm:openmp - OpenMP support to build targets in parallel where possible
 dev-util/gammaray:3d - Build support for Qt5 3D modules
 dev-util/gammaray:designer - Widget .ui file export
 dev-util/gammaray:geolocation - Physical position determination support from Qt5 framework
@@ -277,6 +275,8 @@ games-emulation/yuzu:discord - Enables Discord Rich Presence
 games-emulation/yuzu:system-vulkan - Use system dev-util/vulkan-headers
 games-emulation/yuzu:webengine - Use QtWebEngine for web applet implementation
 games-emulation/yuzu:webservice - Enable web services (telemetry, etc.)
+games-engines/easyrpg-player:fluidsynth - Support FluidSynth as MIDI synth backend
+games-engines/easyrpg-player:wildmidi - Support wildmidi as MIDI synth backend
 games-engines/fs2_open:clang - Use Clang compiler instead of GCC
 games-engines/fs2_open:debug - Debug build to collect logfiles
 games-engines/fs2_open:discord - Enable Discord RPC support
@@ -299,6 +299,10 @@ games-util/itch-bin:system-ffmpeg - Use the system-wide media-video/ffmpeg inste
 games-util/legendary:webview - Use dev-python/pywebview for the sign-in process
 games-util/mangohud:xnvctrl - Use XNVctrl as fall back for older Nvidia devices.
 games-util/samrewritten:zenity - Support for dialog display messages
+games-util/xivlauncher:act - Advanced Combat Tracker in Final Fantasy XIV.
+games-util/xivlauncher:aria2 - Enable Aria2 support.
+games-util/xivlauncher:dx9 - Support for running the dx9 api in wined3d/dxvk.
+games-util/xivlauncher:libsecret - Enable secrets/password storage support.
 gnome-extra/yad:spell - Enable spell check support with app-text/gspell
 gui-apps/azote:imagemagick - enable colorpicker using imagemagick
 gui-apps/azote:simple-colorpicker - enable colorpicker without imagemagick
@@ -312,6 +316,8 @@ gui-apps/nwg-launchers:bar - Installs nwgbar, a horizontal or vertical button ba
 gui-apps/nwg-launchers:dmenu - Installs nwgdmenu, GTK dynamic menu windows.
 gui-apps/nwg-launchers:grid - Installs nwggrid, a GNOME-like application grid.
 gui-apps/nwg-launchers:layershell - Enable Wayland layer shell support
+gui-apps/rofi-wayland:drun - Desktop file mode
+gui-apps/rofi-wayland:windowmode - Window switcher mode
 gui-apps/swaylock-effects:fish-completion - Enable fish completion support
 gui-apps/swaylock-effects:gdk-pixbuf - Enable additional image format support via the x11-libs/gdk-pixbuf library
 gui-apps/swaylock-effects:man - Build and install man pages
@@ -329,14 +335,46 @@ gui-apps/wlogout:layershell - Enable transparency
 gui-apps/wlogout:zsh-completions - Enable completions for zsh shell
 gui-apps/wob:man - Install man page
 gui-apps/wob:seccomp - Linux kernel syscall filtering
-gui-apps/wofi:dmenu - Enable dmenu mode
-gui-apps/wofi:drun - Enable drun mode
-gui-apps/wofi:run - Enable run mode
+gui-apps/yambar:alsa - ALSA support
+gui-apps/yambar:backlight - Backlight support
+gui-apps/yambar:battery - Battery support
+gui-apps/yambar:clock - Clock support
+gui-apps/yambar:core - Compiles modules, particles and decorations as shared libraries, which are loaded on-demand
+gui-apps/yambar:cpu - CPU monitoring support
+gui-apps/yambar:disk-io - Disk I/O support
+gui-apps/yambar:dwl - DWL (dwm for wayland) support
+gui-apps/yambar:foreign-toplevel - Foreign toplevel (window tracking for Wayland) support
+gui-apps/yambar:i3 - i3+Sway support
+gui-apps/yambar:label - Label support
+gui-apps/yambar:memory - Memory monitoring support
+gui-apps/yambar:mpd - Music Player Daemon (MPD) support
+gui-apps/yambar:network - Network monitoring support
+gui-apps/yambar:pipewire - Pipewire support
+gui-apps/yambar:pulseaudio - PulseAudio support
+gui-apps/yambar:removables - Removables (USB sticks, CD-ROM etc) monitoring support
+gui-apps/yambar:river - River support
+gui-apps/yambar:script - Script support
+gui-apps/yambar:sway-xkb - keyboard support for Sway
+gui-apps/yambar:xkb - keyboard support for X11
+gui-apps/yambar:xwindow - XWindow (window tracking for X11) support
 gui-libs/cubegui:concurrent - Enables usage of the QtConcurrent for the the parallel calculations
 gui-libs/cubegui:scorep - Enable scorep support
 gui-libs/cubegui:webengine - Enables usage of the QtWebEngine for the HTML Documentation
 gui-libs/power-profiles-daemon:pylint - Run pylint checks
 gui-wm/cage:X - Enable support for X11 applications (XWayland)
+gui-wm/hyprland:grimblast - Install 'grimblast': a Hyprland version of the sway script for taking screenshots
+gui-wm/hyprland:shellevents - Install 'shellevents': Invoke shell functions in response to Hyprland socket2 events.
+gui-wm/swayfx:X - Enable support for X11 applications (XWayland)
+gui-wm/swayfx:grimshot - Install 'grimshot': script for taking screenshots
+gui-wm/swayfx:swaybar - Install 'swaybar': sway's status bar component
+gui-wm/swayfx:swaybg - Install 'swaybg': allows to set a desktop background image
+gui-wm/swayfx:swayidle - Install 'swayidle': idle manager to run commands when user is inactive
+gui-wm/swayfx:swaylock - Install 'swaylock': sway's screen locker
+gui-wm/swayfx:swaymsg - Install 'swaymsg': tool for communicating with a running sway instance
+gui-wm/swayfx:swaynag - Install 'swaynag': shows a message with buttons
+gui-wm/swayfx:tray - Enable support for StatusNotifierItem tray specification
+gui-wm/swayfx:wallpapers - Install sway's default wallpaper image
+mail-filter/opensmtpd-filter-dkimsign:ed25519 - Enable ED25519 support
 media-fonts/victor-mono:otf - Install the OpenType version of the font
 media-fonts/victor-mono:ttf - Install the TrueType version of the font
 media-gfx/bonzomatic:system-glew - Use the systems installed version of GLEW (upstream-unsupported)
@@ -344,14 +382,20 @@ media-gfx/bonzomatic:system-glfw - Use the systems installed version of GLFW (up
 media-gfx/bonzomatic:system-stb - Use the systems installed version of STB (upstream-unsupported)
 media-gfx/bonzomatic:wayland - Build non-system-glfw for wayland instead of X11
 media-gfx/grafx2:ttf - Install TTF Fonts
-media-gfx/nsxiv:gif - Add animated gif support
 media-gfx/nsxiv:statusbar - Add statusbar support
-media-gfx/nsxiv:webp - Add animated webp support
+media-gfx/vpuppr:ifm-tracker - Enable the iFacialMocap tracker.
+media-gfx/vpuppr:meowface-tracker - Enable the MeowFace tracker.
+media-gfx/vpuppr:mouse-tracker - Enable the mouse tracker.
+media-gfx/vpuppr:osf-tracker - Enable the OpenSeeFace tracker.
+media-gfx/vpuppr:remote-control - Enable remote controlling the program.
+media-gfx/vpuppr:vts-tracker - Enable the VTubeStudio tracker.
 media-libs/alvr:client - Build ALVR client and launcher
 media-libs/alvr:server - Build ALVR server
 media-libs/alvr:vulkan - Build ALVR vulkan layer
 media-libs/alvr:x264 - Use x264 for h264 software encoding
 media-libs/alvr:x265 - Use x265 for h265 software encoding
+media-libs/amdvlk:raytracing - Enable Vulkan raytracing support in AMDVLK, requires dev-util/DirectXShaderCompiler to build. Disable if you have weak hardware.
+media-libs/imgui:allegro - Enable allegro backend and renderer
 media-libs/imgui:allegro5 - Enable allegro backend and renderer
 media-libs/imgui:bindings - Build the cimgui C bindigs
 media-libs/imgui:freetype - Use FreeType to build and rasterize the font atlas
@@ -404,12 +448,16 @@ media-sound/6pm:midimaps - Install midi maps for that synth. Recommended
 media-sound/6pm:nls - Add support for localization
 media-sound/6pm:presets - Install presets. Recommended
 media-sound/add64:presets - Install presets. Recommended
+media-sound/drumgizmo:lv2 - Build LV2 plugin
+media-sound/drumgizmo:vst - Build VST plugin
+media-sound/jacktrip:rtaudio - Enable rtaudio backend
+media-sound/jacktrip:virtualstudio - Enable VirtualStudio extension
 media-sound/ncpamixer:wide - Add ncurses wide characters support
 media-sound/nulloy:skins - Add a few themes, enable if you want dark
+media-sound/qpwgraph:trayicon - Build support for tray icon
 media-video/syncplay:client - Install the Syncplay client
 media-video/syncplay:server - Install the Syncplay server
 media-video/tartube:atomicparsley - Use AtomicParsley for embedding thumbnails in audio files
-media-video/uxplay:zoomfix - supported mirrored window for screen-sharing applications such as Zoom
 media-video/wlrobs:dmabuf - Enable the dmabuf backend
 media-video/wlrobs:scpy - Enable the screen copy backend
 mpv-plugin/mpv-mpris:autoload - Load plugin automatically
@@ -421,6 +469,18 @@ net-client/lagrange:harfbuzz - Use media-libs/harfbuzz to shape text
 net-client/telescope:libbsd - Use dev-libs/libbsd instead of internal funcs
 net-im/Quaternion:keychain - Enable support for password storage via dev-libs/qtkeychain
 net-im/abaddon:libhandy - Support for features using gui-libs/libhandy
+net-im/gajim-plugins:acronyms_expander - Plugin: Replaces acronyms (or other strings) with given expansions/substitutes
+net-im/gajim-plugins:anti_spam - Plugin: Block some incoming messages
+net-im/gajim-plugins:clients_icons - Plugin: Shows the client icons in the roster and in groupchats
+net-im/gajim-plugins:length_notifier - Plugin: Notifies you when message length reaches a limit
+net-im/gajim-plugins:message_box_size - Plugin: Allows you to adjust the height of the new message input field
+net-im/gajim-plugins:now_listen - Plugin: Copy tune info to conversation input box
+net-im/gajim-plugins:omemo - Plugin: OMEMO Multi-End Message and Object Encryption for 1:1 chats, groupchats, and file transfers
+net-im/gajim-plugins:openpgp - Plugin: Encrypt your messages with OpenPGP (XEP-0373)
+net-im/gajim-plugins:pgp - Plugin: Encrypt your messages with PGP (XEP-0027)
+net-im/gajim-plugins:plugins_translations - Plugin: Translation files for Gajim Plugins
+net-im/gajim-plugins:quick_replies - Plugin: Quick replies
+net-im/gajim-plugins:triggers - Plugin: Configure Gajim's behaviour when receiving messages/events
 net-im/jitsi-meet:swiftshader - Use SwiftShader OpenGL graphics
 net-im/jitsi-meet:system-ffmpeg - Use the system ffmpeg library
 net-im/nheko:video - Enables video calls
@@ -435,6 +495,7 @@ net-libs/evpath:libfabric - Build the libfabric transport
 net-libs/evpath:udt4 - Build the udt4 transport
 net-libs/ixwebsocket:ws - Build the ws utility
 net-libs/picotls:fusion - "fusion" AES-GCM engine, optimized for QUIC and other protocols that use short AEAD blocks
+net-libs/td:abseil - Build with dev-cpp/abseil-cpp
 net-libs/td:benchmark - Enable benchmarking
 net-libs/td:dotnet - Add support for .NET
 net-libs/td:jumbo-build - Combine source files to speed up build process
@@ -450,7 +511,7 @@ net-misc/megasync:dolphin - Upload your files to your Mega account from Dolphin 
 net-misc/megasync:freeimage - Use freeimage to manage graphic images format.
 net-misc/megasync:nautilus - Upload your files to your Mega account from nautilus.
 net-misc/megasync:thunar - Upload your files to your Mega account from Thunar.
-net-misc/moonlight:vaapi - Enable support for hardware video decoding using x11-libs/libva.
+net-misc/moonlight:vaapi - Enable support for hardware video decoding using media-libs/libva.
 net-misc/tinyssh:sodium - Use dev-libs/libsodium for cryptography
 net-misc/xmrig-mo:donate - Set the default donation level to 1% instead of 0
 net-misc/xmrig-mo:hwloc - Use sys-apps/hwloc for CPU affinity support
@@ -460,6 +521,13 @@ net-nntp/inn:gzip - Compress logs using gzip
 net-nntp/inn:keywords - Enable automatic innd keyword generation
 net-nntp/inn:largefile - Support files larger than 2GB
 net-nntp/inn:low-memory - Use tagged hash table for history to reduce memory footprint
+net-nntp/pan:dbus - Use DBUS. Support running multiple instances
+net-nntp/pan:gnome-keyring - Use libsecret/gcr for password storage
+net-nntp/pan:libnotify - Build libnotify support for notifications
+net-nntp/pan:nls - Localization support
+net-nntp/pan:spell - Spellchecking support (enchant/gtkspell)
+net-nntp/pan:ssl - TLS 1.x support (through gnutls)
+net-p2p/feather:localmonero - Enable LocalMonero.com support
 net-p2p/feather:qrcode - Enable QR code scanning with media-gfx/zbar
 net-p2p/feather:xmrig - Enable mining support using a user specified xmrig binary
 net-p2p/monero:daemon - Build the Monero daemon used to connect to the P2P network.
@@ -469,6 +537,8 @@ net-p2p/monero:wallet-rpc - Build the RPC wallet, monero-wallet-rpc.
 net-p2p/trezord-go:systemd - Install systemd service file
 net-p2p/trezord-go:udev - Install udev rules
 net-print/hpuld:scanner - Enable scanner on multifunction devices which support it
+net-vpn/fastd:doc - Build and install manpages
+net-vpn/fastd:offload-l2tp - Offload L2TP traffic to the kernel when using the null@l2tp transport method
 sci-biology/cmdock:apidoc - Build API documentation using app-doc/doxygen
 sci-biology/cmdock:boinc - Use CmDock with SiDock@home BOINC project
 sci-electronics/open_pdks:sky130 - Build the Skywater 130nm PDK.
@@ -526,6 +596,9 @@ sci-libs/superlu_dist:double-precision - Enable double precision library
 sci-libs/superlu_dist:hip - Enable the HIP libraries
 sci-libs/superlu_dist:metis - Use parmetis as dependency
 sci-libs/superlu_dist:single-precision - Enable single precision library
+sci-mathematics/abc:pthread - Builds with pthreads
+sci-mathematics/abc:readline - Enables readline support
+sci-mathematics/abc:static-libs - Builds libabc.a
 sci-mathematics/clasp:tools - whether or not to build the clasp application
 sci-mathematics/clingo:tools - whether or not to build the clingo tool
 sci-mathematics/frama-c-aorai:eva - Build support for the Eva plugin
@@ -587,6 +660,14 @@ sys-apps/bustd:glob - Enable excluding processes with glob patterns
 sys-apps/drm_info:pci - Print PCI device names via libpci
 sys-apps/fselect:users - Add support for getting system users and groups
 sys-apps/intel-cmt-cat:appqos - Install App QoS, a software created to demonstrate the use of Intel(R) RDT technologies (CAT, MBA) to improve QoS for applications via partitioning system resources.
+sys-apps/paludis:eapi7 - Enable experimental eapi7 support
+sys-apps/paludis:eapi8 - Enable extremely experimental eapi8 support
+sys-apps/paludis:pbins - Experimental binary packages support
+sys-apps/paludis:pink - Use a pink colour scheme
+sys-apps/paludis:python - Enable the Python bindings
+sys-apps/paludis:ruby - Enable the Ruby bindings
+sys-apps/paludis:search-index - Enable `cave search --index`
+sys-apps/paludis:xml - Enable parsing of xml files, for GLSA and metadata.xml support
 sys-apps/watchdogd:compat - Enable compat supervisor.status and signals
 sys-apps/watchdogd:filenr - Enable file descriptor leak monitor
 sys-apps/watchdogd:generic - Enable generic script monitor
@@ -594,6 +675,23 @@ sys-apps/watchdogd:loadavg - Enable CPU load average monitor
 sys-apps/watchdogd:meminfo - Enable memory leak monitor
 sys-auth/mrsh:pam - build with pam support
 sys-auth/mrsh:shadow - build with shadow file support
+sys-block/partclone:apfs - Compile partclone apfs tool
+sys-block/partclone:btrfs - Compile partclone btrfs tool
+sys-block/partclone:e2fs - Compile partclone e2fs tool
+sys-block/partclone:exfat - Compile partclone exfat tool
+sys-block/partclone:f2fs - Compile partclone f2fs tool
+sys-block/partclone:fat - Compile partclone fat tool
+sys-block/partclone:fuse - Compile partclone fuse tool
+sys-block/partclone:hfs - Compile partclone hfs tool
+sys-block/partclone:jfs - Compile partclone jfs tool
+sys-block/partclone:minix - Compile partclone minix tool
+sys-block/partclone:nilfs2 - Compile partclone nilfs2 tool
+sys-block/partclone:ntfs - Compile partclone ntfs tool
+sys-block/partclone:reiser4 - Compile partclone reiser4 tool
+sys-block/partclone:reiserfs - Compile partclone reiserfs tool
+sys-block/partclone:ufs - Compile partclone ufs tool
+sys-block/partclone:vmfs - Compile partclone vmfs tool
+sys-block/partclone:xfs - Compile partclone xfs tool
 sys-boot/limine:bios - Enable BIOS/MBR boot support.
 sys-boot/limine:bios-cd - Enables BIOS boot support for CDs.
 sys-boot/limine:bios-pxe - Enables BIOS PXE boot support.
@@ -604,6 +702,7 @@ sys-boot/limine:limine-install - Enables building the limine-install program.
 sys-boot/limine:uefi - Enable UEFI support.
 sys-boot/limine:uefi32 - Enable 32-bit UEFI support.
 sys-boot/limine:uefi64 - Enable 64-bit UEFI support.
+sys-boot/limine:uefiaa64 - Enable AArch64 UEFI support.
 sys-cluster/OpenHPC-meta:io-libs - Collection of IO libraries
 sys-cluster/OpenHPC-meta:parallel - Collection of parallel libraries
 sys-cluster/OpenHPC-meta:perf-tools - Collection of performance tools
@@ -735,33 +834,6 @@ sys-cluster/nanox:resiliency - Enables task-level resiliency
 sys-cluster/nanox:sqlite - enable dev-db/sqlite support
 sys-cluster/nanox:task-callback - Enables task callback feature
 sys-cluster/nanox:threads - Enable user level threads
-sys-cluster/neutron:compute-only - Only install things needed on compute hosts
-sys-cluster/neutron:dhcp - Installs the initscripts for the neutron dhcp service
-sys-cluster/neutron:haproxy - haproxy backend support
-sys-cluster/neutron:l3 - Installs the initscripts for the neutron l3 agent service
-sys-cluster/neutron:linuxbridge - Installs the initscripts for the neutron linuxbridge agent service
-sys-cluster/neutron:metadata - Installs the initscripts for the neutron metadata agent service
-sys-cluster/neutron:openvswitch - Installs the initscripts for the neutron openvswitch agent service
-sys-cluster/neutron:server - Installs the initscripts for the neutron server service
-sys-cluster/nova:iscsi - Installs iscsi helper udev scripts
-sys-cluster/openstack-meta:cinder - Installs Openstack block storage service Cinder
-sys-cluster/openstack-meta:compute - Installs the dependencies for the nova volume service
-sys-cluster/openstack-meta:dhcp - Installs the dependencies for the neutron dhcp service
-sys-cluster/openstack-meta:glance - Installs Openstack VM services Glance
-sys-cluster/openstack-meta:haproxy - haproxy backend support
-sys-cluster/openstack-meta:heat - Installs Openstack orchestration engine Heat
-sys-cluster/openstack-meta:iscsi - Allow using an iSCSI remote storage server as pool for disk image storage
-sys-cluster/openstack-meta:keystone - Installs Openstack authentication, authorization and service catalog Keystone
-sys-cluster/openstack-meta:lvm - Allow using the Logical Volume Manager (sys-fs/lvm2) as pool for disk image storage
-sys-cluster/openstack-meta:memcached - Installs dependencies needed for using memcached as a backend
-sys-cluster/openstack-meta:mongo - Installs dependencies needed for using mongo as a backend
-sys-cluster/openstack-meta:neutron - Installs Openstack virtual network Neutron
-sys-cluster/openstack-meta:nova - Installs Openstack fabric controller Nova
-sys-cluster/openstack-meta:novncproxy - Installs dependencies for nova novncproxy service
-sys-cluster/openstack-meta:openvswitch - Installs openvswitch for the neutron openvswitch support
-sys-cluster/openstack-meta:placement - Installs Openstack HTTP service manager for cloud resources Placement
-sys-cluster/openstack-meta:rabbitmq - Installs the rabbitmq server
-sys-cluster/openstack-meta:swift - Installs Openstack object/blob store Swift
 sys-cluster/osu-micro-benchmarks:openshmem - Build OpenSHMEM benchmarks
 sys-cluster/osu-micro-benchmarks:rocm - Enable ROCm extensions
 sys-cluster/otf2:sionlib - Enable sys-cluster/sionlibl support
@@ -835,7 +907,6 @@ sys-cluster/sionlibl:sionfwd - enable I/O forwarding with sys-cluster/SIONfwd
 sys-cluster/spath:slurm - Use sys-cluster/slurm as resource manager
 sys-cluster/spectral:extrae - Add sys-cluster/extrae support
 sys-cluster/spectral:libbsctools - Add sys-cluster/libbsctools support
-sys-cluster/swift:memcached - adds memcached support
 sys-cluster/temanejo:ompss - enable ompss plugin
 sys-cluster/temanejo:ompt - Acquire debugging events through OMPT (OpenMP, OmpSs)
 sys-cluster/temanejo:socket - Enable connection to socket
@@ -848,6 +919,11 @@ sys-kernel/dkms:kernel-hooks - Enable automatic rebuilding of modules via kernel
 sys-kernel/msr-safe:slurm - Install the spank plugin
 sys-kernel/uek-sources:experimental - apply experimental gentoo genpatches
 sys-kernel/uek-sources:gentoo - apply base gentoo genpatches
+sys-kernel/usermode-kernel:hardened - Use selection of hardening options recommended by Kernel Self Protection Project
+sys-kernel/usermode-kernel:hostfs - Enable CONFIG_HOSTFS
+sys-kernel/usermode-kernel:initramfs - Build initramfs along with the kernel.
+sys-kernel/usermode-kernel:iomem - Enable CONFIG_MMAPPER
+sys-kernel/usermode-kernel:pic - Enable the use of position independent code
 sys-kernel/xpmem:modules - Build the kernel module
 sys-libs/safeclib:constraint-handler - enable C11 invoke_safe_{str,mem}_constraint_handler for less performance, bigger size and more flexibility
 sys-libs/safeclib:extensions - enable additional functions not defined in the C11 specification
@@ -860,6 +936,7 @@ sys-power/ZenStates-Linux:togglecode - Install the togglecode utility to turn on
 sys-power/linux-tools-power-x86:pstate-tracer - Install utility to debug and tune the performance of the {amd,intel}_pstate drivers
 sys-process/nq:shell - Use shell implementation
 sys-process/nq:tq - Install tq, a tmux & screen wrapper
+www-apps/forgejo:acct - User and group management via acct-*/git packages
 www-apps/gogs:cert - Adds support for self-signed certificates
 www-client/torbrowser-launcher:apparmor - Enable AppArmor support
 www-client/vimb:adblock - Use www-misc/wyebadblock for adblocking
@@ -879,3 +956,4 @@ x11-misc/picom-jonaburg:doc - Build documentation and man pages (requires app-te
 x11-misc/picom-jonaburg:drm - Enable support for using drm for vsync
 x11-misc/picom-jonaburg:opengl - Enable features that require opengl (opengl backend, and opengl vsync methods)
 x11-themes/arc-darkest-colors:icons - Install icon themes
+x11-wm/leftwm:lefthk - Use LeftHK hotkey daemon

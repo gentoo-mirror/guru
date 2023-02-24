@@ -6,7 +6,7 @@ EAPI=8
 inherit cmake git-r3
 
 DESCRIPTION="Decentralized pool for Monero mining"
-HOMEPAGE="https://p2pool.io https://github.com/SChernykh/p2pool"
+HOMEPAGE="https://p2pool.io"
 
 SRC_URI=""
 EGIT_REPO_URI="https://github.com/SChernykh/p2pool.git"
@@ -16,7 +16,17 @@ SLOT="0"
 
 DEPEND="
 	dev-libs/libsodium
+	net-libs/czmq
 "
+
+src_prepare() {
+	default
+
+	# 884447: remove -s from OPTIMIZATION_FLAGS
+	sed -i 's/-s\>//' cmake/flags.cmake || die
+
+	cmake_src_prepare
+}
 
 src_configure() {
 	local mycmakeargs=(

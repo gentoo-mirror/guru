@@ -1,4 +1,4 @@
-BDEPEND=virtual/pkgconfig dev-ml/dune dev-lang/ocaml
+BDEPEND=virtual/pkgconfig dev-lang/ocaml dev-ml/dune
 DEFINED_PHASES=compile install test
 DEPEND=dev-ml/cstruct:=[lwt,ppx] dev-ml/mirage-net:= dev-ml/mirage-clock:= dev-ml/mirage-random:= dev-ml/mirage-time:= dev-ml/ipaddr:=[macaddr-cstruct] dev-ml/mirage-profile:= dev-ml/fmt:= dev-ml/lwt:= dev-ml/lwt-dllist:= dev-ml/logs:= dev-ml/duration:= dev-ml/randomconv:= dev-ml/ethernet:= dev-ml/arp:= dev-ml/mirage-flow:= dev-ml/lru:= dev-ml/metrics:= test? ( dev-ml/mirage-vnetif dev-ml/alcotest dev-ml/pcap-format dev-ml/mirage-clock dev-ml/mirage-clock-unix dev-ml/mirage-random-test dev-ml/ipaddr[cstruct] ) >=dev-lang/ocaml-4:=[ocamlopt?] dev-ml/dune:=
 DESCRIPTION=TCP/IP networking stack in pure OCaml, using the Mirage platform libraries
@@ -12,5 +12,5 @@ RDEPEND=dev-ml/cstruct:=[lwt,ppx] dev-ml/mirage-net:= dev-ml/mirage-clock:= dev-
 RESTRICT=!test? ( test )
 SLOT=0/7.1.0
 SRC_URI=https://github.com/mirage/mirage-tcpip/releases/download/v7.1.0/tcpip-7.1.0.tbz
-_eclasses_=multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	dune	c8f275f00adf2380fe0a57d8a249885c
+_eclasses_=edo	c0eb9cbe6b0bd01fcb4918f12598a4d3	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	dune	77dc707d5b61b8d0b0fe46cefbdfec3a
 _md5_=574f0fc1050504beeb4fd08c7f834a15

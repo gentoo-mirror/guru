@@ -1,17 +1,17 @@
-BDEPEND=test? ( sys-devel/bc ) sys-devel/gnuconfig >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.5:1.16 ) >=sys-devel/autoconf-2.71 >=sys-devel/libtool-2.4
+BDEPEND=test? ( sys-devel/bc ) sys-devel/gnuconfig >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.5:1.16 ) >=sys-devel/autoconf-2.71-r5 >=sys-devel/libtool-2.4.7
 DEFINED_PHASES=configure install prepare setup
 DEPEND=hwloc? ( sys-apps/hwloc ) mpi? ( virtual/mpi )
 DESCRIPTION=Dynamically react to application imbalance by modifying the number of resources
 EAPI=8
 HOMEPAGE=https://github.com/bsc-pm/dlb
 INHERIT=autotools python-single-r1
-IUSE=hwloc instrumentation mpi openmp test python_single_target_python3_8 python_single_target_python3_9 python_single_target_python3_10
+IUSE=hwloc instrumentation mpi openmp test python_single_target_python3_9 python_single_target_python3_10
 KEYWORDS=~amd64
 LICENSE=LGPL-3
-RDEPEND=python_single_target_python3_8? ( >=dev-lang/python-3.8.13:3.8[tk] ) python_single_target_python3_9? ( >=dev-lang/python-3.9.12:3.9[tk] ) python_single_target_python3_10? ( >=dev-lang/python-3.10.4:3.10[tk] ) hwloc? ( sys-apps/hwloc ) mpi? ( virtual/mpi ) dev-lang/tk python_single_target_python3_8? ( dev-python/matplotlib[tk,python_targets_python3_8(-)] ) python_single_target_python3_9? ( dev-python/matplotlib[tk,python_targets_python3_9(-)] ) python_single_target_python3_10? ( dev-python/matplotlib[tk,python_targets_python3_10(-)] )
-REQUIRED_USE=^^ ( python_single_target_python3_8 python_single_target_python3_9 python_single_target_python3_10 )
+RDEPEND=python_single_target_python3_9? ( >=dev-lang/python-3.9.16-r1:3.9[tk] ) python_single_target_python3_10? ( >=dev-lang/python-3.10.9-r1:3.10[tk] ) hwloc? ( sys-apps/hwloc ) mpi? ( virtual/mpi ) dev-lang/tk python_single_target_python3_9? ( dev-python/matplotlib[tk,python_targets_python3_9(-)] ) python_single_target_python3_10? ( dev-python/matplotlib[tk,python_targets_python3_10(-)] )
+REQUIRED_USE=^^ ( python_single_target_python3_9 python_single_target_python3_10 )
 RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://github.com/bsc-pm/dlb/archive/v2.1.tar.gz -> dlb-2.1.tar.gz
-_eclasses_=gnuconfig	b6b3e92f8b8c996400074b5f61a59256	toolchain-funcs	441f754fd75cd4fd1fa06fbc17da6144	multilib	5ca4e49abed8e3a2f7b56920eadee157	libtool	241a8f577b9781a42a7421e53448a44e	autotools	9e6965bfaa00f52cc61e0d4bc44c87b3	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	python-utils-r1	b9fc5e97e886514e5132f50465185401	python-single-r1	a5747fe6dc0651d95cb78eddd5e160a8
+_eclasses_=gnuconfig	b6b3e92f8b8c996400074b5f61a59256	toolchain-funcs	6001248ef162a5fa2a21ce132a212f6b	multilib	5ca4e49abed8e3a2f7b56920eadee157	libtool	241a8f577b9781a42a7421e53448a44e	autotools	6dcd6b6a486e79928e1243ff9ba41fcc	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	python-utils-r1	429bfd4e8d8e39db5385ba5744f30788	python-single-r1	75118e916668a74c660a13b0ecb22562
 _md5_=e9928bffae64aff038f34021efac3ee6

@@ -36,13 +36,20 @@ if [ "$PV" = 9999 ] ; then
 	"
 fi
 
+PATCHES=(
+	${FILESDIR}/bug-887887_allow-O2-override.patch
+)
+
 src_prepare() {
 	default
 	eautoreconf
 }
 
 src_configure() {
+	# Disable hardening so CFLAGS are left up to the Gentoo user
+	# https://bugs.gentoo.org/888751
 	econf \
+		--enable-hardening=no \
 		--with-dovecot="${EPREFIX}/usr/$(get_libdir)/dovecot" \
 		$( use_enable static-libs static )
 }

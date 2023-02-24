@@ -1,10 +1,10 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 FORTRAN_STANDARD="2003"
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{9..11} )
 
 inherit cmake fortran-2 git-r3 python-any-r1
 
@@ -34,6 +34,15 @@ DEPEND="
 
 pkg_setup() {
 	fortran-2_pkg_setup
+}
+
+src_prepare() {
+	default
+
+	# Remove Fortran compiler version from paths
+	sed -i -e "s:/\${CMAKE_Fortran_COMPILER_ID}-\${CMAKE_Fortran_COMPILER_VERSION}::" config/CMakeLists.txt || die
+
+	cmake_src_prepare
 }
 
 src_configure() {

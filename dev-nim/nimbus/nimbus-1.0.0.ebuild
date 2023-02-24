@@ -6,8 +6,11 @@ EAPI=8
 inherit nim-utils
 
 DESCRIPTION="A Nim build system"
-HOMEPAGE="https://git.sysrq.in/nimbus/about/"
-SRC_URI="https://git.sysrq.in/${PN}/snapshot/${P}.tar.gz"
+HOMEPAGE="
+	https://nimbus.sysrq.in/
+	https://git.sysrq.in/nimbus/about/
+"
+SRC_URI="https://git.sysrq.in/${PN}/snapshot/${P}.tar.bz2"
 
 LICENSE="Apache-2.0 BSD"
 SLOT="0"

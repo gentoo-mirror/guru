@@ -9,7 +9,7 @@ DESCRIPTION="Thin wrapper over POSIX syscalls"
 HOMEPAGE="https://github.com/sionescu/libfixposix"
 SRC_URI="https://github.com/sionescu/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 
-LICENSE="BSL-1.1"
+LICENSE="Boost-1.0"
 SLOT="0"
 KEYWORDS="~amd64"
 

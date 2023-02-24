@@ -1,11 +1,11 @@
-# Copyright 2022 Gentoo Authors
+# Copyright 2022-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 PYTHON_COMPAT=( python3_{9..11} )
 
-inherit meson python-r1
+inherit meson python-r1 virtualx
 
 if [[ ${PV} == *9999 ]]; then
 	inherit git-r3
@@ -53,10 +53,11 @@ src_configure() {
 
 src_compile() {
 	python_foreach_impl meson_src_compile
+	use doc && build_sphinx docs
 }
 
 src_test() {
-	python_foreach_impl meson_src_test
+	virtx python_foreach_impl meson_src_test
 }
 
 src_install() {
@@ -80,13 +81,7 @@ src_install() {
 		meson_src_install
 		python_doscript "${exe}"
 		python_optimize
-
-		# Install Sphinx-generated documentation only once
-		# since the documentation is supposed to be identical
-		# between different Python implementations
-		use doc && HTML_DOCS=( "${BUILD_DIR}/docs"/* )
 	}
 
 	python_foreach_impl my_src_install
-	einstalldocs
 }
