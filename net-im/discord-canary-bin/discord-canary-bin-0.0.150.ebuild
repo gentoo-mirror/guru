@@ -83,9 +83,11 @@ src_install() {
 	newicon usr/share/${MY_PN}/${MY_PN//-canary/}.png ${MY_PN}.png
 	domenu usr/share/${MY_PN}/${MY_PN}.desktop
 
+	rm usr/share/${MY_PN}/postinst.sh
 	insinto /opt/${MY_PN}
 	doins -r usr/share/${MY_PN}/.
 	fperms +x /opt/${MY_PN}/${MY_BIN}
+	fperms +x /opt/${MY_PN}/{chrome-sandbox,chrome_crashpad_handler}
 	dosym ../../opt/${MY_PN}/${MY_BIN} usr/bin/${MY_PN}
 
 	pax-mark -m "${ED}"/opt/${MY_PN}/${MY_PN}
