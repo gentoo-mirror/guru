@@ -5,7 +5,7 @@ EAPI=8
 
 DESCRIPTION="Opensource, compact, and material-designed cursor set"
 HOMEPAGE="https://github.com/ful1e5/Bibata_Cursor"
-SRC_URI="https://github.com/ful1e5/Bibata_Cursor/releases/download/v${PV}/Bibata.tar.gz -> ${P}-r2.tar.gz"
+SRC_URI="https://github.com/ful1e5/Bibata_Cursor/releases/download/v${PV}/Bibata.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"

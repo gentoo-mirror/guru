@@ -13,11 +13,8 @@ if [[ ${PV} == 9999 ]]; then
 	inherit git-r3
 else
 	KEYWORDS="~amd64"
-	PROTOCOMMIT=4d29e48433270a2af06b8bc711ca1fe5109746cd
 	SRC_URI="https://github.com/hyprwm/xdg-desktop-portal-hyprland/archive/refs/tags/v${PV}.tar.gz \
-		-> xdg-desktop-hyprland-${PV}.tar.gz
-	https://github.com/hyprwm/hyprland-protocols/archive/${PROTOCOMMIT}.tar.gz \
-		-> hyprland-protocol-${PV}.tar.gz"
+		-> xdg-desktop-hyprland-${PV}.tar.gz"
 fi
 
 LICENSE="MIT"
@@ -49,24 +46,18 @@ RDEPEND="
 "
 BDEPEND="
 	>=dev-libs/wayland-protocols-1.24
+	dev-libs/hyprland-protocols
 	virtual/pkgconfig
 "
 
-src_unpack() {
-	default
-
-	rmdir "${S}/subprojects/hyprland-protocols"
-	mv "${WORKDIR}/hyprland-protocols-${PROTOCOMMIT}" "${S}/subprojects/hyprland-protocols" || die
-}
-
 src_configure() {
-	local emasonargs=()
+	local emesonargs=()
 	if use systemd; then
-		emasonargs+=(-Dsd-bus-provider=libsystemd)
+		emesonargs+=(-Dsd-bus-provider=libsystemd)
 	elif use elogind; then
-		emasonargs+=(-Dsd-bus-provider=libelogind)
+		emesonargs+=(-Dsd-bus-provider=libelogind)
 	else
-		emasonargs+=(-Dsd-bus-provider=basu)
+		emesonargs+=(-Dsd-bus-provider=basu)
 	fi
 	meson_src_configure
 }

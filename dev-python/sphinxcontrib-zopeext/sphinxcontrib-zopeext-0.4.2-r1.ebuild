@@ -4,7 +4,7 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=pdm
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{9..10} )
 
 inherit distutils-r1 pypi
 
@@ -19,9 +19,15 @@ RDEPEND="
 	dev-python/importlib-metadata[${PYTHON_USEDEP}]
 	dev-python/zope-interface[${PYTHON_USEDEP}]
 "
+BDEPEND="
+	test? (
+		dev-python/pytest-cov[${PYTHON_USEDEP}]
+		dev-python/sphinx-testing[${PYTHON_USEDEP}]
+	)
+"
 
-src_unpack() {
-	default
-	sed -i -e "s/pdm-backend/pdm-pep517/" "${S}/pyproject.toml" || die
-	sed -i -e "s/pdm\.backend/pdm.pep517.api/" "${S}/pyproject.toml" || die
-}
+PATCHES=(
+	"${FILESDIR}/pyproject.patch"
+)
+
+distutils_enable_tests pytest
