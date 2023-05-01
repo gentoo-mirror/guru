@@ -1,4 +1,4 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -21,7 +21,7 @@ SLOT="0"
 IUSE="test"
 
 DEPEND="${RDEPEND}
-	<dev-cpp/jwt-cpp-0.5.0
+	>=dev-cpp/jwt-cpp-0.6.0
 	dev-db/sqlite
 	dev-libs/openssl
 	net-misc/curl
@@ -30,15 +30,17 @@ DEPEND="${RDEPEND}
 BDEPEND="virtual/pkgconfig"
 RESTRICT="!test? ( test )"
 
-PATCHES=(
-	"${FILESDIR}"/"${PN}"-0.7.1-fix-external-gtest.patch
-)
-
 src_prepare() {
 	# Unbundle dev-cpp/gtest, dev-cpp/jwt-cpp
 	rm -rvf vendor
 	# Fix include path for picojson.
-	find src/ \( -name '*.cpp' -o -name '*.h' \) -type f -print0 | xargs -0 sed -r -e "s:picojson/picojson\.h:picojson.h:g" -i || die
+	find src/ \( -name '*.cpp' -o -name '*.h' \) -type f -print0 | \
+		xargs -0 sed -r -e "s:picojson/picojson\.h:picojson.h:g" -i || die
+	# Disable network-based tests relying on external services.
+	if use test; then
+		sed -i	-e '/^TEST_F/s#RefreshTest#DISABLED_RefreshTest#' \
+			-e '/^TEST_F/s#RefreshExpiredTest#DISABLED_RefreshExpiredTest#' test/main.cpp || die
+	fi
 	cmake_src_prepare
 }
 
