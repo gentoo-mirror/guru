@@ -72,6 +72,13 @@ dev-embedded/rauc:network - Add network update support
 dev-embedded/rauc:service - Add dbus service
 dev-embedded/yosys:abc - Build with Berkeley ABC support
 dev-java/jogl:cg - Enable NVidia Cg binding.
+dev-lang/gnu-apl:erlang - Build the Erlang interface
+dev-lang/gnu-apl:gtk3 - Include the interface to gtk3
+dev-lang/gnu-apl:libapl - Build as a shared library rather than an executable
+dev-lang/gnu-apl:pcre2 - Enable pcre2
+dev-lang/gnu-apl:postgresql - Use postrgesql
+dev-lang/gnu-apl:python - Build the Python extension lib_gnu_apl.so
+dev-lang/gnu-apl:sqlite3 - Use sqlite3
 dev-lang/quickjs:lto - Enable Link Time Optimizations (improves performance and decreases size of executables)
 dev-libs/KVTree:fcntl - Set the type of file locking to fcntl.
 dev-libs/KVTree:flock - Set the type of file locking to flock.
@@ -508,7 +515,7 @@ net-misc/xmrig-mo:donate - Set the default donation level to 1% instead of 0
 net-misc/xmrig-mo:hwloc - Use sys-apps/hwloc for CPU affinity support
 net-misc/xmrig-mo:opencl - Enable OpenCL support
 net-misc/yacy:openrc - Install an openrc runscript
-net-nntp/inn:gzip - Compress logs using gzip
+net-nntp/inn:cancel-locks - Enable Cancel-Lock header functionality
 net-nntp/inn:keywords - Enable automatic innd keyword generation
 net-nntp/inn:largefile - Support files larger than 2GB
 net-nntp/inn:low-memory - Use tagged hash table for history to reduce memory footprint
