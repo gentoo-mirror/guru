@@ -6,28 +6,34 @@
 EAPI=8
 
 CRATES="
-	addr2line-0.17.0
+	addr2line-0.19.0
 	adler-1.0.2
 	ahash-0.8.1
 	aho-corasick-0.7.18
 	android_system_properties-0.1.4
 	anes-0.1.6
 	ansi_term-0.12.1
-	anyhow-1.0.66
+	anstream-0.3.1
+	anstyle-1.0.0
+	anstyle-parse-0.2.0
+	anstyle-query-1.0.0
+	anstyle-wincon-1.0.1
+	anyhow-1.0.70
 	arc-swap-1.5.0
 	arrayvec-0.7.2
 	askalono-0.4.6
 	atoi-2.0.0
 	atty-0.2.14
 	autocfg-1.1.0
-	backtrace-0.3.66
+	backtrace-0.3.67
 	base64-0.21.0
 	bit_field-0.10.1
 	bitflags-1.3.2
+	bitflags-2.2.1
 	block-buffer-0.10.3
 	bstr-0.2.17
 	bstr-1.3.0
-	btoi-0.4.2
+	btoi-0.4.3
 	bumpalo-3.12.0
 	byte-unit-4.0.19
 	bytecount-0.6.3
@@ -47,17 +53,17 @@ CRATES="
 	ciborium-ll-0.2.0
 	clap-2.34.0
 	clap-3.2.23
-	clap-4.1.6
+	clap-4.2.4
+	clap_builder-4.2.4
 	clap_complete-4.1.4
-	clap_derive-4.1.0
+	clap_derive-4.2.0
 	clap_lex-0.2.4
-	clap_lex-0.3.0
+	clap_lex-0.4.1
 	clru-0.6.1
 	cmake-0.1.48
 	color_quant-1.1.0
+	colorchoice-1.0.0
 	compact_str-0.6.1
-	concolor-0.0.11
-	concolor-query-0.1.0
 	console-0.15.5
 	core-foundation-sys-0.8.3
 	cpufeatures-0.2.5
@@ -92,11 +98,12 @@ CRATES="
 	env_logger-0.8.4
 	erased-serde-0.3.24
 	errno-0.2.8
+	errno-0.3.1
 	errno-dragonfly-0.1.2
 	exr-1.5.2
-	fastrand-1.8.0
+	fastrand-1.9.0
 	filetime-0.2.16
-	flate2-1.0.23
+	flate2-1.0.25
 	flume-0.10.12
 	fnv-1.0.7
 	form_urlencoded-1.0.1
@@ -107,45 +114,63 @@ CRATES="
 	getrandom-0.2.8
 	ghost-0.1.7
 	gif-0.12.0
-	gimli-0.26.2
-	git-features-0.23.1
-	git-hash-0.9.11
-	git2-0.16.1
-	gix-0.36.1
+	gimli-0.27.2
+	git2-0.17.1
+	gix-0.44.1
 	gix-actor-0.17.2
+	gix-actor-0.20.0
+	gix-attributes-0.12.0
 	gix-attributes-0.8.3
-	gix-bitmap-0.2.1
+	gix-bitmap-0.2.3
 	gix-chunk-0.4.1
 	gix-command-0.2.4
-	gix-config-0.16.2
-	gix-config-value-0.10.1
-	gix-credentials-0.9.2
+	gix-config-0.22.0
+	gix-config-value-0.12.0
+	gix-credentials-0.14.0
 	gix-date-0.4.3
-	gix-diff-0.26.1
+	gix-date-0.5.0
+	gix-diff-0.29.0
 	gix-discover-0.13.1
+	gix-discover-0.18.0
 	gix-features-0.26.5
+	gix-features-0.29.0
+	gix-fs-0.1.1
 	gix-glob-0.5.5
+	gix-glob-0.7.0
 	gix-hash-0.10.3
+	gix-hash-0.11.1
 	gix-hashtable-0.1.1
+	gix-hashtable-0.2.0
+	gix-ignore-0.2.0
 	gix-index-0.12.4
+	gix-index-0.16.0
 	gix-lock-3.0.2
-	gix-mailmap-0.9.3
+	gix-lock-5.0.1
+	gix-mailmap-0.12.0
 	gix-object-0.26.2
-	gix-odb-0.40.2
-	gix-pack-0.30.3
-	gix-path-0.7.2
-	gix-prompt-0.3.2
-	gix-quote-0.4.2
+	gix-object-0.29.1
+	gix-odb-0.45.0
+	gix-pack-0.35.0
+	gix-path-0.7.4
+	gix-path-0.8.0
+	gix-prompt-0.5.0
+	gix-quote-0.4.3
 	gix-ref-0.24.1
-	gix-refspec-0.7.3
-	gix-revision-0.10.4
+	gix-ref-0.29.0
+	gix-refspec-0.10.1
+	gix-revision-0.13.0
 	gix-sec-0.6.2
+	gix-sec-0.8.0
 	gix-tempfile-3.0.2
+	gix-tempfile-5.0.3
 	gix-testtools-0.11.0
 	gix-traverse-0.22.1
-	gix-url-0.13.3
-	gix-validate-0.7.3
+	gix-traverse-0.25.0
+	gix-url-0.18.0
+	gix-utils-0.1.1
+	gix-validate-0.7.4
 	gix-worktree-0.12.3
+	gix-worktree-0.17.0
 	globset-0.4.8
 	globwalk-0.8.1
 	grep-matcher-0.1.5
@@ -156,10 +181,10 @@ CRATES="
 	hashbrown-0.13.1
 	heck-0.4.0
 	hermit-abi-0.1.19
-	hermit-abi-0.2.6
+	hermit-abi-0.3.1
 	hex-0.4.3
-	home-0.5.3
-	human-panic-1.1.0
+	home-0.5.5
+	human-panic-1.1.4
 	human_format-1.0.3
 	humansize-1.1.1
 	humantime-2.1.0
@@ -169,12 +194,12 @@ CRATES="
 	image-0.24.6
 	imara-diff-0.1.5
 	indexmap-1.9.1
-	insta-1.28.0
+	insta-1.29.0
 	instant-0.1.12
 	inventory-0.3.3
 	io-close-0.3.7
-	io-lifetimes-1.0.3
-	is-terminal-0.4.2
+	io-lifetimes-1.0.10
+	is-terminal-0.4.7
 	is_ci-1.1.1
 	itertools-0.10.5
 	itoa-1.0.4
@@ -182,13 +207,16 @@ CRATES="
 	jpeg-decoder-0.3.0
 	js-sys-0.3.60
 	jwalk-0.8.1
+	kstring-2.0.0
 	lazy_static-1.4.0
 	lebe-0.5.2
-	libc-0.2.137
-	libgit2-sys-0.14.2+1.5.1
-	libz-sys-1.1.6
+	libc-0.2.142
+	libgit2-sys-0.15.1+1.6.4
+	libz-ng-sys-1.1.8
+	libz-sys-1.1.8
 	linked-hash-map-0.5.6
 	linux-raw-sys-0.1.3
+	linux-raw-sys-0.3.4
 	lock_api-0.4.7
 	log-0.4.17
 	lzma-sys-0.1.19
@@ -198,10 +226,8 @@ CRATES="
 	memmap2-0.5.3
 	memoffset-0.6.5
 	minimal-lexical-0.2.1
-	miniz_oxide-0.5.1
 	miniz_oxide-0.6.2
 	nanorand-0.7.0
-	nix-0.26.1
 	nom-7.1.1
 	npm-package-json-0.1.3
 	num-format-0.4.4
@@ -210,10 +236,10 @@ CRATES="
 	num-traits-0.2.15
 	num_cpus-1.13.1
 	num_threads-0.1.6
-	object-0.29.0
-	once_cell-1.15.0
+	object-0.30.3
+	once_cell-1.17.1
 	oorandom-11.1.3
-	os_info-2.0.8
+	os_info-3.7.0
 	os_str_bytes-6.0.1
 	output_vt100-0.1.3
 	owo-colors-3.5.0
@@ -241,10 +267,8 @@ CRATES="
 	png-0.17.7
 	ppv-lite86-0.2.16
 	pretty_assertions-1.3.0
-	proc-macro-error-1.0.4
-	proc-macro-error-attr-1.0.4
 	proc-macro2-1.0.56
-	prodash-23.0.0
+	prodash-23.1.2
 	qoi-0.4.1
 	quick-error-2.0.1
 	quote-1.0.26
@@ -258,20 +282,20 @@ CRATES="
 	regex-1.6.0
 	regex-automata-0.1.10
 	regex-syntax-0.6.27
-	remove_dir_all-0.5.3
 	rmp-0.8.11
 	rmp-serde-0.14.4
 	rustc-demangle-0.1.21
 	rustix-0.36.4
+	rustix-0.37.15
 	rustversion-1.0.6
 	ryu-1.0.10
 	same-file-1.0.6
 	scopeguard-1.1.0
-	serde-1.0.159
-	serde_derive-1.0.159
-	serde_json-1.0.89
+	serde-1.0.160
+	serde_derive-1.0.160
+	serde_json-1.0.96
 	serde_spanned-0.6.1
-	serde_yaml-0.9.19
+	serde_yaml-0.9.21
 	sha1-0.10.5
 	sha1_smol-1.0.0
 	signal-hook-0.3.14
@@ -279,7 +303,7 @@ CRATES="
 	similar-2.2.0
 	siphasher-0.3.10
 	slug-0.1.4
-	smallvec-1.9.0
+	smallvec-1.10.0
 	spin-0.9.8
 	static_assertions-1.1.0
 	strsim-0.10.0
@@ -289,14 +313,14 @@ CRATES="
 	syn-1.0.109
 	syn-2.0.13
 	tar-0.4.38
-	tempfile-3.3.0
+	tempfile-3.4.0
 	tera-1.17.1
 	term_size-0.3.2
 	termcolor-1.1.3
 	textwrap-0.11.0
 	textwrap-0.16.0
-	thiserror-1.0.35
-	thiserror-impl-1.0.35
+	thiserror-1.0.40
+	thiserror-impl-1.0.40
 	thread_local-1.1.4
 	threadpool-1.8.1
 	tiff-0.8.1
@@ -313,8 +337,8 @@ CRATES="
 	toml_datetime-0.6.1
 	toml_edit-0.19.6
 	typenum-1.15.0
-	typetag-0.2.7
-	typetag-impl-0.2.7
+	typetag-0.2.8
+	typetag-impl-0.2.8
 	ucd-trie-0.1.3
 	uluru-3.0.0
 	uncased-0.9.7
@@ -326,13 +350,15 @@ CRATES="
 	unic-ucd-version-0.9.0
 	unicode-bidi-0.3.8
 	unicode-bom-1.1.4
+	unicode-bom-2.0.2
 	unicode-ident-1.0.0
 	unicode-normalization-0.1.19
 	unicode-width-0.1.9
 	unsafe-libyaml-0.2.7
 	url-2.2.2
 	utf8-width-0.1.6
-	uuid-0.8.2
+	utf8parse-0.2.1
+	uuid-1.3.1
 	vcpkg-0.2.15
 	vec_map-0.8.2
 	version_check-0.9.4
@@ -350,20 +376,30 @@ CRATES="
 	winapi-util-0.1.5
 	winapi-x86_64-pc-windows-gnu-0.4.0
 	windows-0.43.0
+	windows-0.48.0
 	windows-sys-0.36.1
 	windows-sys-0.42.0
+	windows-sys-0.48.0
+	windows-targets-0.48.0
 	windows_aarch64_gnullvm-0.42.0
+	windows_aarch64_gnullvm-0.48.0
 	windows_aarch64_msvc-0.36.1
 	windows_aarch64_msvc-0.42.0
+	windows_aarch64_msvc-0.48.0
 	windows_i686_gnu-0.36.1
 	windows_i686_gnu-0.42.0
+	windows_i686_gnu-0.48.0
 	windows_i686_msvc-0.36.1
 	windows_i686_msvc-0.42.0
+	windows_i686_msvc-0.48.0
 	windows_x86_64_gnu-0.36.1
 	windows_x86_64_gnu-0.42.0
+	windows_x86_64_gnu-0.48.0
 	windows_x86_64_gnullvm-0.42.0
+	windows_x86_64_gnullvm-0.48.0
 	windows_x86_64_msvc-0.36.1
 	windows_x86_64_msvc-0.42.0
+	windows_x86_64_msvc-0.48.0
 	winnow-0.3.5
 	winres-0.1.12
 	xz2-0.1.7
@@ -392,6 +428,9 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE="test"
 RESTRICT="!test? ( test )"
+PATCHES=(
+	"${FILESDIR}"/${P}-fix-missing-git-repo.patch
+)
 
 BDEPEND="test? ( dev-vcs/git )"
 QA_FLAGS_IGNORED="usr/bin/onefetch"

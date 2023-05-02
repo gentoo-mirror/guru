@@ -6,12 +6,13 @@
 EAPI=8
 
 CRATES="
-	aho-corasick-0.7.20
+	aho-corasick-1.0.1
 	android_system_properties-0.1.5
-	anstream-0.2.6
-	anstyle-0.3.5
-	anstyle-parse-0.1.1
-	anstyle-wincon-0.2.0
+	anstream-0.3.1
+	anstyle-1.0.0
+	anstyle-parse-0.2.0
+	anstyle-query-1.0.0
+	anstyle-wincon-1.0.1
 	anyhow-1.0.70
 	async-broadcast-0.5.1
 	async-io-1.13.0
@@ -25,29 +26,28 @@ CRATES="
 	base64-0.21.0
 	bitflags-1.3.2
 	block-buffer-0.10.4
-	bumpalo-3.12.0
+	bumpalo-3.12.1
 	byteorder-1.4.3
 	bytes-1.4.0
-	calibright-0.1.2
+	calibright-0.1.3
 	cc-1.0.79
 	cfg-if-1.0.0
 	charset-0.1.3
 	chrono-0.4.24
-	chrono-tz-0.8.1
+	chrono-tz-0.8.2
 	chrono-tz-build-0.1.0
-	clap-4.2.1
-	clap_builder-4.2.1
+	clap-4.2.4
+	clap_builder-4.2.4
 	clap_derive-4.2.0
 	clap_lex-0.4.1
 	clap_mangen-0.2.10
 	codespan-reporting-0.11.1
-	concolor-override-1.0.0
-	concolor-query-0.3.3
-	concurrent-queue-2.1.0
+	colorchoice-1.0.0
+	concurrent-queue-2.2.0
 	convert_case-0.6.0
 	core-foundation-0.9.3
 	core-foundation-sys-0.8.4
-	cpufeatures-0.2.6
+	cpufeatures-0.2.7
 	crossbeam-channel-0.5.8
 	crossbeam-utils-0.8.15
 	crypto-common-0.1.6
@@ -64,20 +64,18 @@ CRATES="
 	data-encoding-2.3.3
 	derivative-2.2.0
 	digest-0.10.6
-	dirs-4.0.0
 	dirs-5.0.0
-	dirs-sys-0.3.7
 	dirs-sys-0.4.0
 	either-1.8.1
 	encoding_rs-0.8.32
-	enumflags2-0.7.6
-	enumflags2_derive-0.7.6
+	enumflags2-0.7.7
+	enumflags2_derive-0.7.7
 	env_logger-0.10.0
-	errno-0.3.0
+	errno-0.3.1
 	errno-dragonfly-0.1.2
 	event-listener-2.5.3
 	fastrand-1.9.0
-	filetime-0.2.20
+	filetime-0.2.21
 	fnv-1.0.7
 	foreign-types-0.3.2
 	foreign-types-shared-0.1.1
@@ -89,14 +87,14 @@ CRATES="
 	futures-core-0.3.28
 	futures-executor-0.3.28
 	futures-io-0.3.28
-	futures-lite-1.12.0
+	futures-lite-1.13.0
 	futures-sink-0.3.28
 	futures-task-0.3.28
 	futures-util-0.3.28
 	generic-array-0.14.7
 	gethostname-0.2.3
-	getrandom-0.2.8
-	h2-0.3.16
+	getrandom-0.2.9
+	h2-0.3.18
 	hashbrown-0.12.3
 	heck-0.4.1
 	hermit-abi-0.2.6
@@ -107,7 +105,7 @@ CRATES="
 	httparse-1.8.0
 	httpdate-1.0.2
 	humantime-2.1.0
-	hyper-0.14.25
+	hyper-0.14.26
 	hyper-tls-0.5.0
 	iana-time-zone-0.1.56
 	iana-time-zone-haiku-0.1.1
@@ -120,19 +118,19 @@ CRATES="
 	instant-0.1.12
 	io-lifetimes-1.0.10
 	ipnet-2.7.2
-	is-terminal-0.4.6
+	is-terminal-0.4.7
 	itertools-0.8.2
 	itoa-1.0.6
 	js-sys-0.3.61
 	kqueue-1.0.7
 	kqueue-sys-1.0.3
 	lazy_static-1.4.0
-	libc-0.2.141
+	libc-0.2.142
 	libpulse-binding-2.27.1
 	libpulse-sys-1.20.1
 	libsensors-sys-0.2.0
 	link-cplusplus-1.0.8
-	linux-raw-sys-0.3.1
+	linux-raw-sys-0.3.4
 	log-0.4.17
 	maildir-0.6.4
 	mailparse-0.14.0
@@ -154,13 +152,13 @@ CRATES="
 	num-traits-0.2.15
 	num_cpus-1.15.0
 	once_cell-1.17.1
-	openssl-0.10.49
+	openssl-0.10.51
 	openssl-macros-0.1.1
 	openssl-probe-0.1.5
-	openssl-sys-0.9.84
+	openssl-sys-0.9.86
 	ordered-stream-0.2.0
 	pandoc-0.8.10
-	parking-2.0.0
+	parking-2.1.0
 	parse-zoneinfo-0.3.0
 	percent-encoding-2.2.0
 	phf-0.11.1
@@ -170,12 +168,12 @@ CRATES="
 	pin-project-lite-0.2.9
 	pin-utils-0.1.0
 	pkg-config-0.3.26
-	polling-2.6.0
+	polling-2.8.0
 	ppv-lite86-0.2.17
 	proc-macro-crate-1.3.1
 	proc-macro2-1.0.56
 	pure-rust-locales-0.5.6
-	quick-xml-0.28.1
+	quick-xml-0.28.2
 	quote-1.0.26
 	quoted_printable-0.4.7
 	rand-0.8.5
@@ -184,11 +182,11 @@ CRATES="
 	redox_syscall-0.2.16
 	redox_syscall-0.3.5
 	redox_users-0.4.3
-	regex-1.7.3
-	regex-syntax-0.6.29
+	regex-1.8.1
+	regex-syntax-0.7.1
 	reqwest-0.11.16
 	roff-0.2.1
-	rustix-0.37.7
+	rustix-0.37.14
 	ryu-1.0.13
 	same-file-1.0.6
 	schannel-0.1.21
@@ -196,14 +194,14 @@ CRATES="
 	security-framework-2.8.2
 	security-framework-sys-2.8.0
 	sensors-0.2.2
-	serde-1.0.159
-	serde_derive-1.0.159
-	serde_json-1.0.95
+	serde-1.0.160
+	serde_derive-1.0.160
+	serde_json-1.0.96
 	serde_repr-0.1.12
 	serde_spanned-0.6.1
 	serde_urlencoded-0.7.1
-	serde_with-2.3.1
-	serde_with_macros-2.3.1
+	serde_with-2.3.2
+	serde_with_macros-2.3.2
 	sha1-0.10.5
 	shellexpand-3.1.0
 	signal-hook-0.3.15
@@ -211,7 +209,7 @@ CRATES="
 	signal-hook-tokio-0.3.1
 	siphasher-0.3.10
 	slab-0.4.8
-	smart-default-0.6.0
+	smart-default-0.7.1
 	socket2-0.4.9
 	static_assertions-1.1.0
 	strsim-0.10.0
@@ -219,7 +217,7 @@ CRATES="
 	swayipc-async-2.0.1
 	swayipc-types-1.3.0
 	syn-1.0.109
-	syn-2.0.13
+	syn-2.0.15
 	tempfile-3.5.0
 	termcolor-1.2.0
 	thiserror-1.0.40
@@ -253,7 +251,7 @@ CRATES="
 	vcpkg-0.2.15
 	version_check-0.9.4
 	waker-fn-1.1.0
-	walkdir-2.3.2
+	walkdir-2.3.3
 	want-0.3.0
 	wasi-0.11.0+wasi-snapshot-preview1
 	wasm-bindgen-0.2.84
@@ -262,9 +260,9 @@ CRATES="
 	wasm-bindgen-macro-0.2.84
 	wasm-bindgen-macro-support-0.2.84
 	wasm-bindgen-shared-0.2.84
-	wayrs-client-0.5.0
-	wayrs-protocols-0.5.0
-	wayrs-scanner-0.4.0
+	wayrs-client-0.10.0
+	wayrs-protocols-0.10.0
+	wayrs-scanner-0.10.0
 	web-sys-0.3.61
 	winapi-0.3.9
 	winapi-i686-pc-windows-gnu-0.4.0
@@ -292,8 +290,9 @@ CRATES="
 	windows_x86_64_msvc-0.48.0
 	winnow-0.4.1
 	winreg-0.10.1
-	zbus-3.11.1
-	zbus_macros-3.11.1
+	xdg-home-1.0.0
+	zbus-3.12.0
+	zbus_macros-3.12.0
 	zbus_names-2.5.0
 	zvariant-3.12.0
 	zvariant_derive-3.12.0
@@ -321,8 +320,8 @@ PATCHES=(
 
 DEPEND="dev-libs/openssl:=
 	sys-apps/dbus
-	sys-apps/lm-sensors
-	notmuch? ( net-mail/notmuch )
+	sys-apps/lm-sensors:=
+	notmuch? ( net-mail/notmuch:= )
 	pulseaudio? ( media-libs/libpulse )"
 RDEPEND="${DEPEND}"
 BDEPEND="man? ( virtual/pandoc )"
