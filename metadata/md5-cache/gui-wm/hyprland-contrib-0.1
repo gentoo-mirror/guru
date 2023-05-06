@@ -1,0 +1,15 @@
+BDEPEND=grimblast? ( app-text/scdoc ) hyprprop? ( app-text/scdoc )
+DEFINED_PHASES=install postinst
+DEPEND=app-shells/bash gui-wm/hyprland grimblast? ( gui-apps/wl-clipboard gui-apps/grim app-misc/jq gui-apps/slurp app-misc/jq ) hyprprop? ( app-misc/jq gui-apps/slurp ) scratchpad? ( sys-apps/sed app-misc/jq gui-apps/slurp app-misc/jq )
+DESCRIPTION=Community-maintained extensions for hyprland
+EAPI=8
+HOMEPAGE=https://hyprland.org/
+INHERIT=optfeature
+IUSE=+grimblast +hyprprop +scratchpad +shellevents +swap
+KEYWORDS=~amd64
+LICENSE=MIT
+RDEPEND=app-shells/bash gui-wm/hyprland grimblast? ( gui-apps/wl-clipboard gui-apps/grim app-misc/jq gui-apps/slurp app-misc/jq ) hyprprop? ( app-misc/jq gui-apps/slurp ) scratchpad? ( sys-apps/sed app-misc/jq gui-apps/slurp app-misc/jq )
+SLOT=0
+SRC_URI=https://github.com/hyprwm/contrib/archive/refs/tags/v0.1.tar.gz -> hyprland-contrib-0.1.tar.gz
+_eclasses_=optfeature	222cb475c5a4f7ae7cfb0bf510a6fe54
+_md5_=a7ab36d9f385fda3927abaa7d369ccb2
