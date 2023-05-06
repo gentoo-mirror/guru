@@ -5,6 +5,7 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{10..11} )
 DISTUTILS_USE_PEP517=setuptools
+DISTUTILS_EXT=1
 inherit meson distutils-r1
 
 COMMIT="1e4c5061d328105c4dcfcb6fdbc27ec49b3e9d23"
@@ -30,7 +31,10 @@ RDEPEND="
 	>=dev-python/fonttools-4.20[${PYTHON_USEDEP}]
 	dev-python/fs[${PYTHON_USEDEP}]
 "
-BDEPEND="dev-python/setuptools-scm[${PYTHON_USEDEP}]"
+BDEPEND="
+	dev-python/setuptools-scm[${PYTHON_USEDEP}]
+	test? ( dev-util/afdko )
+"
 
 DOCS=( doc {NEWS,README}.md )
 
