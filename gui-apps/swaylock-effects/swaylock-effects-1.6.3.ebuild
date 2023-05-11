@@ -1,9 +1,9 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
 
-inherit fcaps meson toolchain-funcs
+inherit fcaps meson
 
 DESCRIPTION="Swaylock, with fancy effects"
 HOMEPAGE="https://github.com/mortie/swaylock-effects"
@@ -52,10 +52,6 @@ src_configure() {
 	)
 
 	meson_src_configure
-}
-
-pkg_setup() {
-	[ $(gcc-major-version) -ge 9 ] || die "This package needs to be built with GCC >=9"
 }
 
 pkg_postinst() {

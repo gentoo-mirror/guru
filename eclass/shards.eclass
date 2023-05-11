@@ -28,7 +28,7 @@ inherit crystal-utils multiprocessing toolchain-funcs
 BDEPEND="
 	${CRYSTAL_DEPS}
 	${SHARDS_DEPS}
-	dev-util/gshards
+	>=dev-util/gshards-0.2
 "
 IUSE="debug doc"
 
@@ -58,7 +58,8 @@ shards_src_configure() {
 	crystal_configure
 	debug-print "CRYSTAL_OPTS='${CRYSTAL_OPTS}'"
 
-	export CRYSTAL_PATH="${BROOT}$(shards_get_libdir):$(crystal env CRYSTAL_PATH || die "'crystal env' failed")"
+	export SHARDS_INSTALL_PATH="${BROOT}$(shards_get_libdir)"
+	export CRYSTAL_PATH="${SHARDS_INSTALL_PATH}:$(crystal env CRYSTAL_PATH || die "'crystal env' failed")"
 	debug-print "CRYSTAL_PATH='${CRYSTAL_PATH}'"
 
 	tc-export CC
@@ -66,18 +67,14 @@ shards_src_configure() {
 
 # @FUNCTION: shards_src_compile
 # @DESCRIPTION:
-# General function for building packages using Shards.
+# Function for building the package's executables and documentation.
 shards_src_compile() {
 	debug-print-function ${FUNCNAME} "${@}"
 
-	local build_args=(
-		--threads=$(makeopts_jobs)
-		--verbose
-	)
-
-	if gshards-has-targets; then
-		eshards build "${build_args[@]}"
-	fi
+	local args
+	gshards-print-targets | while read -r args; do
+		crystal_build "${@}" ${args}
+	done
 
 	if use doc; then
 		ecrystal docs
@@ -95,7 +92,7 @@ shards_src_test() {
 	debug-print-function ${FUNCNAME} "${@}"
 
 	if [[ -d "spec" ]]; then
-		ecrystal spec --verbose "${@}" || die "Tests failed"
+		crystal_spec "${@}"
 	fi
 
 	return 0
@@ -103,13 +100,9 @@ shards_src_test() {
 
 # @FUNCTION: shards_src_install
 # @DESCRIPTION:
-# Function for installing the package.
+# Function for installing the package's source.
 shards_src_install() {
 	debug-print-function ${FUNCNAME} "${@}"
-
-	if [[ -d "bin" ]]; then
-		dobin bin/*
-	fi
 
 	if [[ -d "src" ]]; then
 		insinto $(shards_get_libdir)/$(shards_get_pkgname)
