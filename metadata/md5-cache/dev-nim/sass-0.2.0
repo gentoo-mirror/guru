@@ -1,4 +1,4 @@
-BDEPEND=>=dev-util/ninja-1.8.2 dev-lang/nim[experimental(-)] >=dev-nim/nimbus-1.0.0
+BDEPEND=>=dev-util/ninja-1.8.2 >=dev-nim/nimbus-1.1.0
 DEFINED_PHASES=compile configure install test
 DEPEND=dev-libs/libsass
 DESCRIPTION=A wrapper for the libsass library
@@ -10,5 +10,5 @@ LICENSE=MIT
 RDEPEND=dev-libs/libsass
 SLOT=0
 SRC_URI=https://github.com/dom96/sass/archive/refs/tags/v0.2.0.tar.gz -> sass-0.2.0.tar.gz
-_eclasses_=edo	c0eb9cbe6b0bd01fcb4918f12598a4d3	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	14a8ae365191b518fad51caad7a08f3e	multilib	104e1332efb829e2f7cbf89307a474f1	xdg-utils	baea6080dd821f5562d715887954c9d3	nim-utils	6548190660274fddf428c46e69463e89	ninja-utils	76050953ad5b70d7e09a6ca55558db92	nimble	dd6f01540df75eab2cc6b9de796953fd
+_eclasses_=edo	c0eb9cbe6b0bd01fcb4918f12598a4d3	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	14a8ae365191b518fad51caad7a08f3e	multilib	104e1332efb829e2f7cbf89307a474f1	xdg-utils	baea6080dd821f5562d715887954c9d3	nim-utils	6548190660274fddf428c46e69463e89	ninja-utils	76050953ad5b70d7e09a6ca55558db92	nimble	39bfcf6a4566ca416b5f1f5c0b9b33e6
 _md5_=bd22371ca79c8745efb8dc85770374cc

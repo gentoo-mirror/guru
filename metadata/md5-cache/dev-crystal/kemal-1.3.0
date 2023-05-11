@@ -1,4 +1,4 @@
-BDEPEND=|| ( dev-lang/crystal dev-lang/crystal-bin ) || ( dev-util/shards dev-lang/crystal-bin ) dev-util/gshards
+BDEPEND=|| ( dev-lang/crystal dev-lang/crystal-bin ) || ( dev-util/shards dev-lang/crystal-bin ) >=dev-util/gshards-0.2
 DEFINED_PHASES=compile configure install prepare test
 DESCRIPTION=Lightning Fast, Super Simple web framework
 EAPI=8
@@ -10,5 +10,5 @@ LICENSE=MIT
 RDEPEND=dev-crystal/exception_page dev-crystal/radix
 SLOT=0
 SRC_URI=https://github.com/kemalcr/kemal/archive/refs/tags/v1.3.0.tar.gz -> kemal-1.3.0.tar.gz
-_eclasses_=edo	c0eb9cbe6b0bd01fcb4918f12598a4d3	toolchain-funcs	14a8ae365191b518fad51caad7a08f3e	multilib	104e1332efb829e2f7cbf89307a474f1	flag-o-matic	16483e58fadb0d47b4528f0aa7e171f6	crystal-utils	7931d71b9bb891fd9fdae4f74278be68	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	shards	d5606925d054b3ccabe593a5eb777c2c
+_eclasses_=edo	c0eb9cbe6b0bd01fcb4918f12598a4d3	toolchain-funcs	14a8ae365191b518fad51caad7a08f3e	multilib	104e1332efb829e2f7cbf89307a474f1	flag-o-matic	16483e58fadb0d47b4528f0aa7e171f6	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	crystal-utils	e816e7b6d35264849479a2a21c60f362	shards	7169974c02ce16d3fb62e1b62a2fb195
 _md5_=a0b5c64fb5a9789c4229d57141dd5b6e
