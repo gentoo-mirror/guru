@@ -12,6 +12,7 @@ acct-group/hinsightd 0: A user group for www-servers/hinsightd
 acct-group/honk 0: System group: honk
 acct-group/invidious 0: System group: invidious
 acct-group/jackett 0: Group for www-apps/jackett-bin
+acct-group/mastoposter 0: System group: mastoposter
 acct-group/mautrix 0: Group for Mautrix Bridges
 acct-group/monero 0: System group: monero
 acct-group/nitter 0: System group: nitter
@@ -37,6 +38,7 @@ acct-user/hinsightd 0: A user account for www-servers/hinsightd
 acct-user/honk 0: System user: honk
 acct-user/invidious 0: System user: invidious
 acct-user/jackett 0: User for www-apps/jackett-bin
+acct-user/mastoposter 0: System user: mastoposter
 acct-user/mautrix-discord 0: User for Mautrix Discord Bridge
 acct-user/mautrix-facebook 0: User for Mautrix Facebook Bridge
 acct-user/mautrix-signal 0: User for Mautrix Signal Bridge
@@ -159,7 +161,7 @@ app-i18n/im-canna 0.3.2.2-r1: Japanese Canna input method module for GTK+2
 app-i18n/scim-canna 1.0.1: SCIM IMEngine module using Canna
 app-metrics/scaphandre 0.4.1: Electrical power consumption measurement agent.
 app-misc/1password-cli 2.14.0: The world’s most-loved password manager CLI
-app-misc/Clipboard 0.7.0: Cut, copy, and paste anything in your terminal
+app-misc/Clipboard 0.7.1: Cut, copy, and paste anything in your terminal
 app-misc/afc 1.1 1.2 9999: Anime File Checker, checks CRC32 contained in filenames
 app-misc/afetch 2.2.0: Simple system info written in C
 app-misc/ani-cli 4.2 9999: A cli to browse and watch anime.
@@ -1465,7 +1467,7 @@ media-sound/add64 3.8.0 3.9.3: Add64 is a realtime additive/subtractive-synthesi
 media-sound/amberol 0.9.2: Simple GUI Music Player
 media-sound/callaudiod 0.1.6 0.1.7: Call audio routing daemon
 media-sound/drumgizmo 0.9.20 9999: Cross-platform drum plugin and stand-alone application
-media-sound/dzr 230504: DZR: the command line deezer.com player
+media-sound/dzr 230513: DZR: the command line deezer.com player
 media-sound/helvum 0.3.4 0.3.4-r2: A GTK patchbay for pipewire
 media-sound/hushboard 0.0_pre20220518 9999: Mutes your microphone while you are typing
 media-sound/ibniz 1.18-r1: virtual machine designed for extremely compact low-level audiovisual programs
@@ -1497,7 +1499,7 @@ media-video/owncast 0.0.12 0.0.13: A self-hosted live video and web chat server
 media-video/syncplay 1.6.9 1.7.0: Client/server to synchronize media playback
 media-video/tartube 2.4.077 9999: A GUI front-end for youtube-dl
 media-video/trakt-scrobbler 1.4.2-r1 1.5.0-r1 1.6.3-r1: Scrobbler for trakt.tv that supports VLC, Plex, MPC-HC, and MPV
-media-video/uxplay 1.63: AirPlay Unix mirroring server
+media-video/uxplay 1.64: AirPlay Unix mirroring server
 media-video/wlrobs 1.0 9999: OBS plugin that allows you to screen capture on wlroots based compositors
 media-video/ytarchive 0.3.2: Youtube livestream downloader
 mpv-plugin/SmartCopyPaste 3.1: Gives mpv the capability to copy and paste while being smart and customizable
@@ -1540,7 +1542,7 @@ net-im/guilded-bin 1.0.9105465: Drop Discord, get Guilded
 net-im/heisenbridge 1.14.2: A bouncer-style Matrix IRC bridge
 net-im/jitsi-meet 2022.3.1: Desktop application for Jitsi Meet built with Electron
 net-im/kaidan 0.8.0-r1: A simple, user-friendly Jabber/XMPP client for every device!
-net-im/mastoposter 0.1: Configurable reposter from Mastodon-compatible Fediverse servers
+net-im/mastoposter 0.1-r1: Configurable reposter from Mastodon-compatible Fediverse servers
 net-im/matterhorn-bin 50200.13.0: Terminal based Mattermost client
 net-im/mautrix-discord 0.3.0: A Matrix-Discord puppeting bridge
 net-im/mautrix-facebook 0.4.1: A Matrix-Facebook Messenger puppeting bridge
@@ -1585,8 +1587,8 @@ net-misc/giara 1.0.1 1.1.0: An app for Reddit
 net-misc/gmid 1.8.5 1.8.6 9999: Simple and secure Gemini server
 net-misc/gnome-ssh-askpass 9.2_p1: GTK-based passphrase dialog for use with OpenSSH
 net-misc/lyrics-in-terminal 1.5.0: Command Line Lyrics fetcher for MPRIS media players
-net-misc/maestral 1.7.2 1.7.3_rc0: Maestral is an open-source Dropbox client written in Python
-net-misc/maestral-qt 1.7.2 1.7.3_rc1: Maestral is an open-source Dropbox client written in Python
+net-misc/maestral 1.7.2 1.7.3_rc2: Maestral is an open-source Dropbox client written in Python
+net-misc/maestral-qt 1.7.2 1.7.3_rc2: Maestral is an open-source Dropbox client written in Python
 net-misc/mastorss 0.13.0 0.13.1 9999: Another RSS to Mastodon bot
 net-misc/megasync 4.3.8.0 4.5.0.0 9999: The official Qt-based program for syncing your MEGA account in your PC
 net-misc/moonlight 4.3.1: GameStream client for PCs
@@ -1735,7 +1737,7 @@ sys-apps/bat-extras 2022.07.27 9999: Bash scripts that integrate bat with variou
 sys-apps/bustd 0.1.1: Process killer daemon for out-of-memory scenarios
 sys-apps/dool 1.1.0 9999: Versatile replacement for vmstat, iostat and ifstat (clone of dstat)
 sys-apps/drm_info 2.2.0 2.3.0 9999: Small utility to dump info about DRM devices
-sys-apps/dust 0.7.5 0.8.3 0.8.4 0.8.5: A more intuitive version of du
+sys-apps/dust 0.7.5 0.8.3 0.8.4 0.8.5 0.8.6: A more intuitive version of du
 sys-apps/fchroot 0.1.2: Funtoo's franken-chroot tool - chroot from AMD64 to ARM system
 sys-apps/fselect 0.7.9 0.8.0: Find files with SQL-like queries
 sys-apps/hex 0.3.2 0.4.0 0.4.1 0.4.2: Futuristic take on hexdump
