@@ -14,7 +14,9 @@ KEYWORDS="~amd64"
 RDEPEND="sys-libs/pam
 	>=gui-libs/gtk-layer-shell-0.6.0"
 
-BDEPEND="app-text/scdoc"
+BDEPEND="app-text/scdoc
+		 gtklock-extras? ( gui-apps/gtklock-extras )"
+IUSE="gtklock-extras"
 
 PATCHES=(
 	"${FILESDIR}"/"${P}"-makefile.patch
