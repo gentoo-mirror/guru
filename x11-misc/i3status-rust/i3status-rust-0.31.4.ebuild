@@ -8,16 +8,16 @@ EAPI=8
 CRATES="
 	aho-corasick-1.0.1
 	android_system_properties-0.1.5
-	anstream-0.3.1
+	anstream-0.3.2
 	anstyle-1.0.0
 	anstyle-parse-0.2.0
 	anstyle-query-1.0.0
 	anstyle-wincon-1.0.1
-	anyhow-1.0.70
+	anyhow-1.0.71
 	async-broadcast-0.5.1
 	async-io-1.13.0
 	async-lock-2.7.0
-	async-once-cell-0.4.4
+	async-once-cell-0.5.0
 	async-pidfd-0.1.4
 	async-recursion-1.0.4
 	async-trait-0.1.68
@@ -36,8 +36,8 @@ CRATES="
 	chrono-0.4.24
 	chrono-tz-0.8.2
 	chrono-tz-build-0.1.0
-	clap-4.2.4
-	clap_builder-4.2.4
+	clap-4.2.7
+	clap_builder-4.2.7
 	clap_derive-4.2.0
 	clap_lex-0.4.1
 	clap_mangen-0.2.10
@@ -56,16 +56,16 @@ CRATES="
 	cxxbridge-flags-1.0.94
 	cxxbridge-macro-1.0.94
 	darling-0.10.2
-	darling-0.14.4
+	darling-0.20.1
 	darling_core-0.10.2
-	darling_core-0.14.4
+	darling_core-0.20.1
 	darling_macro-0.10.2
-	darling_macro-0.14.4
+	darling_macro-0.20.1
 	data-encoding-2.3.3
 	derivative-2.2.0
 	digest-0.10.6
-	dirs-5.0.0
-	dirs-sys-0.4.0
+	dirs-5.0.1
+	dirs-sys-0.4.1
 	either-1.8.1
 	encoding_rs-0.8.32
 	enumflags2-0.7.7
@@ -125,12 +125,12 @@ CRATES="
 	kqueue-1.0.7
 	kqueue-sys-1.0.3
 	lazy_static-1.4.0
-	libc-0.2.142
+	libc-0.2.143
 	libpulse-binding-2.27.1
 	libpulse-sys-1.20.1
 	libsensors-sys-0.2.0
 	link-cplusplus-1.0.8
-	linux-raw-sys-0.3.4
+	linux-raw-sys-0.3.7
 	log-0.4.17
 	maildir-0.6.4
 	mailparse-0.14.0
@@ -152,10 +152,11 @@ CRATES="
 	num-traits-0.2.15
 	num_cpus-1.15.0
 	once_cell-1.17.1
-	openssl-0.10.51
+	openssl-0.10.52
 	openssl-macros-0.1.1
 	openssl-probe-0.1.5
-	openssl-sys-0.9.86
+	openssl-sys-0.9.87
+	option-ext-0.2.0
 	ordered-stream-0.2.0
 	pandoc-0.8.10
 	parking-2.1.0
@@ -167,7 +168,7 @@ CRATES="
 	phf_shared-0.11.1
 	pin-project-lite-0.2.9
 	pin-utils-0.1.0
-	pkg-config-0.3.26
+	pkg-config-0.3.27
 	polling-2.8.0
 	ppv-lite86-0.2.17
 	proc-macro-crate-1.3.1
@@ -175,7 +176,7 @@ CRATES="
 	pure-rust-locales-0.5.6
 	quick-xml-0.28.2
 	quote-1.0.26
-	quoted_printable-0.4.7
+	quoted_printable-0.4.8
 	rand-0.8.5
 	rand_chacha-0.3.1
 	rand_core-0.6.4
@@ -184,9 +185,9 @@ CRATES="
 	redox_users-0.4.3
 	regex-1.8.1
 	regex-syntax-0.7.1
-	reqwest-0.11.16
+	reqwest-0.11.17
 	roff-0.2.1
-	rustix-0.37.14
+	rustix-0.37.19
 	ryu-1.0.13
 	same-file-1.0.6
 	schannel-0.1.21
@@ -194,14 +195,14 @@ CRATES="
 	security-framework-2.8.2
 	security-framework-sys-2.8.0
 	sensors-0.2.2
-	serde-1.0.160
-	serde_derive-1.0.160
+	serde-1.0.162
+	serde_derive-1.0.162
 	serde_json-1.0.96
 	serde_repr-0.1.12
 	serde_spanned-0.6.1
 	serde_urlencoded-0.7.1
-	serde_with-2.3.2
-	serde_with_macros-2.3.2
+	serde_with-3.0.0
+	serde_with_macros-3.0.0
 	sha1-0.10.5
 	shellexpand-3.1.0
 	signal-hook-0.3.15
@@ -222,21 +223,21 @@ CRATES="
 	termcolor-1.2.0
 	thiserror-1.0.40
 	thiserror-impl-1.0.40
-	time-0.3.20
-	time-core-0.1.0
-	time-macros-0.2.8
+	time-0.3.21
+	time-core-0.1.1
+	time-macros-0.2.9
 	tinyvec-1.6.0
 	tinyvec_macros-0.1.1
-	tokio-1.27.0
-	tokio-macros-2.0.0
+	tokio-1.28.0
+	tokio-macros-2.1.0
 	tokio-native-tls-0.3.1
-	tokio-util-0.7.7
+	tokio-util-0.7.8
 	toml-0.7.3
 	toml_datetime-0.6.1
 	toml_edit-0.19.8
 	tower-service-0.3.2
 	tracing-0.1.37
-	tracing-attributes-0.1.23
+	tracing-attributes-0.1.24
 	tracing-core-0.1.30
 	try-lock-0.2.4
 	typenum-1.16.0
@@ -260,8 +261,8 @@ CRATES="
 	wasm-bindgen-macro-0.2.84
 	wasm-bindgen-macro-support-0.2.84
 	wasm-bindgen-shared-0.2.84
-	wayrs-client-0.10.0
-	wayrs-protocols-0.10.0
+	wayrs-client-0.10.3
+	wayrs-protocols-0.10.1
 	wayrs-scanner-0.10.0
 	web-sys-0.3.61
 	winapi-0.3.9
@@ -288,7 +289,7 @@ CRATES="
 	windows_x86_64_gnullvm-0.48.0
 	windows_x86_64_msvc-0.42.2
 	windows_x86_64_msvc-0.48.0
-	winnow-0.4.1
+	winnow-0.4.6
 	winreg-0.10.1
 	xdg-home-1.0.0
 	zbus-3.12.0
@@ -308,7 +309,8 @@ SRC_URI="https://github.com/greshake/i3status-rust/archive/refs/tags/v${PV}.tar.
 LICENSE="GPL-3"
 # Dependent crate licenses
 LICENSE+="
-	0BSD Apache-2.0 BSD GPL-3 GPL-3+ ISC MIT MirOS Unicode-DFS-2016
+	0BSD Apache-2.0 BSD GPL-3 GPL-3+ ISC MIT MPL-2.0 MirOS
+	Unicode-DFS-2016
 	|| ( Artistic-2 CC0-1.0 )
 "
 SLOT="0"
