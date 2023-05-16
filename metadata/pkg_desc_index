@@ -99,7 +99,7 @@ app-containers/waydroid 1.4.0: Container-based approach to boot a full Android s
 app-crypt/PBinCLI 0.3.2: PrivateBin CLI
 app-crypt/autofirma 1.7.1: Spanish government's electronic signature application for online procedures
 app-crypt/certbot-dns-desec 1.2.1: deSEC DNS Authenticator plugin for Certbot
-app-crypt/certbot-dns-rfc2136 2.2.0 2.3.0 2.4.0 2.5.0 9999: RFC 2136 DNS Authenticator plugin for Certbot (Let’s Encrypt client)
+app-crypt/certbot-dns-rfc2136 2.5.0 2.6.0 9999: RFC 2136 DNS Authenticator plugin for Certbot (Let’s Encrypt client)
 app-crypt/clevis 19-r1: Automated Encryption Framework
 app-crypt/configuradorfnmt 1.0.1: Spanish government certificate request generator
 app-crypt/gnome-encfs-manager 1.9-r1: An easy to use manager and mounter for encfs stashes
@@ -165,7 +165,7 @@ app-misc/Clipboard 0.7.1: Cut, copy, and paste anything in your terminal
 app-misc/afc 1.1 1.2 9999: Anime File Checker, checks CRC32 contained in filenames
 app-misc/afetch 2.2.0: Simple system info written in C
 app-misc/ani-cli 4.2 9999: A cli to browse and watch anime.
-app-misc/anki-bin 2.1.62: A spaced-repetition memory training program (flash cards)
+app-misc/anki-bin 2.1.63: A spaced-repetition memory training program (flash cards)
 app-misc/apidb 5.8.0_beta 5.11.0_beta 5.13.1_beta 5.13.4_beta 5.13.6_beta: API Generator for Database access
 app-misc/aw-client 0.11.0: Client library for ActivityWatch
 app-misc/aw-core 0.11.0: Core library for ActivityWatch
@@ -218,7 +218,7 @@ app-misc/uwufetch 2.0: A meme system info tool for Linux
 app-misc/vocabsieve 0.10.1: A simple, effective tool for language learning
 app-misc/vrms-gentoo 0_pre20201102: vrms clone for Gentoo Linux
 app-misc/walld 1.4.4: A Wallpaper daemon
-app-misc/watchexec 1.18.12 1.19.0 1.20.6 1.21.0 1.21.1 1.22.0 1.22.2: Executes commands in response to file modifications
+app-misc/watchexec 1.18.12 1.19.0 1.20.6 1.21.0 1.21.1 1.22.0 1.22.2 1.22.3: Executes commands in response to file modifications
 app-misc/wego 2.1: Wego is a weather client for the terminal
 app-misc/xplr 0.21.1: A hackable, minimal, fast TUI file explorer
 app-misc/yaf 0.0.3: Yet another system fetch that is minimal and customizable.
@@ -1045,7 +1045,7 @@ dev-python/python-pidfile 3.0.0-r1 3.1.1: PIDFile context processor. Supported p
 dev-python/python-pkcs11 0.7.0-r2: PKCS#11 (Cryptoki) support for Python
 dev-python/python-skywater-pdk 0.0.0_p20220424: Python library for working with files found in the SkyWater PDK
 dev-python/python-socketio 5.1.0: Python implementation of the Socket.IO realtime server.
-dev-python/python-telegram-bot 13.14 20.2-r1 9999: Python wrapper of telegram bots API
+dev-python/python-telegram-bot 13.14 20.2-r1 20.3 9999: Python wrapper of telegram bots API
 dev-python/pywebview 3.6.1 3.7 3.7.2: A lightweight cross-platform wrapper around a webview component
 dev-python/queuelib 1.6.2: Collection of persistent and non-persistent queues for Python
 dev-python/rchitect 0.3.36: Interoperate R with Python
@@ -1760,7 +1760,7 @@ sys-auth/pam-gnupg 0.3: Unlock GnuPG keys on login
 sys-block/partclone 0.3.20: Partition cloning tool
 sys-boot/customrescuecd-x86-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/customrescuecd-x86_64-grub 0.1: Grub menu entries for the .iso image of customrescuecd
-sys-boot/limine 4.20230325.0 4.20230330.0 4.20230408.0 4.20230422.0 4.20230428.0 4.20230503.0: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
+sys-boot/limine 4.20230325.0 4.20230330.0 4.20230408.0 4.20230422.0 4.20230428.0 4.20230503.0 4.20230514.0: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
 sys-boot/woeusb-ng 0.2.10: Create Windows installer USB from ISO (rewrite of WoeUSB)
 sys-boot/zfsbootmenu 1.12.0: ZFS bootloader for root-on-ZFS systems
 sys-cluster/AXL 0.5.0 0.7.0: AXL provides a common C interface to transfer files in an HPC storage hierarchy
@@ -1813,6 +1813,7 @@ sys-cluster/usort 0_pre20211230-r1: Fast distributed sorting routines using MPI 
 sys-cluster/veloc 1.6: Very-Low Overhead Checkpointing System
 sys-cluster/wxparaver 4.10.1: Performance analyzer based on event traces
 sys-devel/fcode-utils 1.0.3: Set of utilities to process FCODE, OpenFirmware's byte code
+sys-devel/gdb-dashboard 0.17.2: Modular visual interface for GDB in Python
 sys-devel/gsl 4.1.5-r1: iMatix GSL code generator
 sys-devel/just 1.12.0 1.13.0: Just a command runner (with syntax inspired by 'make')
 sys-firmware/pinephone-firmware 20210809: Firmwares files for PinePhone
@@ -1902,7 +1903,7 @@ x11-misc/greenclip-bin 4.2: Simple clipboard manager to be integrated with rofi
 x11-misc/gromit-mpx 1.4.3 9999: Gromit-MPX is a multi-pointer GTK3 port of the Gromit desktop annotation tool
 x11-misc/i3lock-color 2.13.2 2.13.4 9999: The world's most popular non-default computer lockscreen
 x11-misc/i3lock-fancy-rapid 0.0.0_pre20201109-r1 0.0.0_pre20210421: A faster implementation of i3lock-fancy
-x11-misc/i3status-rust 0.31.2: A feature-rich and resource-friendly replacement for i3status, written in Rust.
+x11-misc/i3status-rust 0.31.4: A feature-rich and resource-friendly replacement for i3status, written in Rust.
 x11-misc/ksnip 1.9.2 1.10.0-r1: Ksnip is a Qt based cross-platform screenshot tool
 x11-misc/leftwm-theme 9999: A theme mangager for LeftWM
 x11-misc/picom-jonaburg 9999: A lightweight compositor for X11 (previously a compton fork)
