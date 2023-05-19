@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install
+DEPEND=sys-fs/fuse:0 app-arch/libarchive
+DESCRIPTION=Read-only FUSE file system for mounting archives and compressed files
+EAPI=8
+HOMEPAGE=https://github.com/google/fuse-archive
+INHERIT=toolchain-funcs
+KEYWORDS=~amd64
+LICENSE=Apache-2.0
+RDEPEND=sys-fs/fuse:0 app-arch/libarchive
+SLOT=0
+SRC_URI=https://github.com/google/fuse-archive/archive/v0.1.14.tar.gz -> fuse-archive-0.1.14.tar.gz
+_eclasses_=toolchain-funcs	14a8ae365191b518fad51caad7a08f3e	multilib	104e1332efb829e2f7cbf89307a474f1
+_md5_=2aef8859c7196f2df09facd35be8bd10

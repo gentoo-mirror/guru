@@ -1,5 +1,5 @@
 DEFINED_PHASES=install setup
-DEPEND=python_single_target_python3_10? ( >=dev-lang/python-3.10.9-r1:3.10 ) >=sys-fs/python-btrfs-12
+DEPEND=python_single_target_python3_10? ( >=dev-lang/python-3.10.9-r1:3.10 ) python_single_target_python3_10? ( >=sys-fs/python-btrfs-12[python_targets_python3_10(-)] )
 DESCRIPTION=Python 3 script to draw a heatmap of a btrfs filesystem
 EAPI=8
 HOMEPAGE=https://github.com/knorrie/btrfs-heatmap
@@ -7,9 +7,9 @@ INHERIT=python-single-r1
 IUSE=+python_single_target_python3_10
 KEYWORDS=~amd64
 LICENSE=MIT
-RDEPEND=python_single_target_python3_10? ( >=dev-lang/python-3.10.9-r1:3.10 ) >=sys-fs/python-btrfs-12
+RDEPEND=python_single_target_python3_10? ( >=dev-lang/python-3.10.9-r1:3.10 ) python_single_target_python3_10? ( >=sys-fs/python-btrfs-12[python_targets_python3_10(-)] )
 REQUIRED_USE=^^ ( python_single_target_python3_10 )
 SLOT=0
 SRC_URI=https://github.com/knorrie/btrfs-heatmap/archive/v9.tar.gz -> btrfs-heatmap-9.tar.gz
 _eclasses_=multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	14a8ae365191b518fad51caad7a08f3e	multilib	104e1332efb829e2f7cbf89307a474f1	python-utils-r1	4544ab96b58e177dc52d75e42f5ee307	python-single-r1	75118e916668a74c660a13b0ecb22562
-_md5_=d60aec20104044f55096ad02ff2bebf6
+_md5_=2f54c1b0c430c910ad40f847a2e3377d

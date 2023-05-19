@@ -1,0 +1,12 @@
+DEFINED_PHASES=install
+DEPEND=sys-libs/zlib:=
+DESCRIPTION=Manager for the Ledger hardware wallet
+EAPI=8
+HOMEPAGE=https://www.ledger.com/
+KEYWORDS=~amd64
+LICENSE=all-rights-reserved
+RDEPEND=sys-libs/zlib:= sys-fs/fuse:0
+RESTRICT=strip
+SLOT=0
+SRC_URI=https://download.live.ledger.com/ledger-live-desktop-2.58.0-linux-x86_64.AppImage -> ledger-live-2.58.0.AppImage
+_md5_=af8bbbb5b179b886d2d9f6a0c7e2cdb7
