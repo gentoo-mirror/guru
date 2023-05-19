@@ -1,4 +1,4 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -44,7 +44,7 @@ RDEPEND="
 "
 
 PATCHES=(
-	"${FILESDIR}/${P}-disable-xdp.patch"
+	"${FILESDIR}/${PN}-1.3.5-disable-xdp.patch"
 )
 
 src_configure() {

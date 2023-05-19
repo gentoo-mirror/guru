@@ -17,7 +17,7 @@ CRATES="
 	async-broadcast-0.5.1
 	async-io-1.13.0
 	async-lock-2.7.0
-	async-once-cell-0.5.0
+	async-once-cell-0.5.2
 	async-pidfd-0.1.4
 	async-recursion-1.0.4
 	async-trait-0.1.68
@@ -26,7 +26,7 @@ CRATES="
 	base64-0.21.0
 	bitflags-1.3.2
 	block-buffer-0.10.4
-	bumpalo-3.12.1
+	bumpalo-3.12.2
 	byteorder-1.4.3
 	bytes-1.4.0
 	calibright-0.1.3
@@ -41,7 +41,6 @@ CRATES="
 	clap_derive-4.2.0
 	clap_lex-0.4.1
 	clap_mangen-0.2.10
-	codespan-reporting-0.11.1
 	colorchoice-1.0.0
 	concurrent-queue-2.2.0
 	convert_case-0.6.0
@@ -51,10 +50,6 @@ CRATES="
 	crossbeam-channel-0.5.8
 	crossbeam-utils-0.8.15
 	crypto-common-0.1.6
-	cxx-1.0.94
-	cxx-build-1.0.94
-	cxxbridge-flags-1.0.94
-	cxxbridge-macro-1.0.94
 	darling-0.10.2
 	darling-0.20.1
 	darling_core-0.10.2
@@ -94,7 +89,7 @@ CRATES="
 	generic-array-0.14.7
 	gethostname-0.2.3
 	getrandom-0.2.9
-	h2-0.3.18
+	h2-0.3.19
 	hashbrown-0.12.3
 	heck-0.4.1
 	hermit-abi-0.2.6
@@ -108,7 +103,7 @@ CRATES="
 	hyper-0.14.26
 	hyper-tls-0.5.0
 	iana-time-zone-0.1.56
-	iana-time-zone-haiku-0.1.1
+	iana-time-zone-haiku-0.1.2
 	ident_case-1.0.1
 	idna-0.3.0
 	indexmap-1.9.3
@@ -121,15 +116,14 @@ CRATES="
 	is-terminal-0.4.7
 	itertools-0.8.2
 	itoa-1.0.6
-	js-sys-0.3.61
+	js-sys-0.3.63
 	kqueue-1.0.7
 	kqueue-sys-1.0.3
 	lazy_static-1.4.0
-	libc-0.2.143
+	libc-0.2.144
 	libpulse-binding-2.27.1
 	libpulse-sys-1.20.1
 	libsensors-sys-0.2.0
-	link-cplusplus-1.0.8
 	linux-raw-sys-0.3.7
 	log-0.4.17
 	maildir-0.6.4
@@ -145,7 +139,7 @@ CRATES="
 	neli-wifi-0.5.1
 	nix-0.26.2
 	nom-7.1.3
-	notify-5.1.0
+	notify-5.2.0
 	notmuch-0.8.0
 	num-derive-0.3.3
 	num-integer-0.1.45
@@ -172,10 +166,10 @@ CRATES="
 	polling-2.8.0
 	ppv-lite86-0.2.17
 	proc-macro-crate-1.3.1
-	proc-macro2-1.0.56
+	proc-macro2-1.0.58
 	pure-rust-locales-0.5.6
 	quick-xml-0.28.2
-	quote-1.0.26
+	quote-1.0.27
 	quoted_printable-0.4.8
 	rand-0.8.5
 	rand_chacha-0.3.1
@@ -185,21 +179,20 @@ CRATES="
 	redox_users-0.4.3
 	regex-1.8.1
 	regex-syntax-0.7.1
-	reqwest-0.11.17
+	reqwest-0.11.18
 	roff-0.2.1
 	rustix-0.37.19
 	ryu-1.0.13
 	same-file-1.0.6
 	schannel-0.1.21
-	scratch-1.0.5
-	security-framework-2.8.2
-	security-framework-sys-2.8.0
+	security-framework-2.9.0
+	security-framework-sys-2.9.0
 	sensors-0.2.2
-	serde-1.0.162
-	serde_derive-1.0.162
+	serde-1.0.163
+	serde_derive-1.0.163
 	serde_json-1.0.96
 	serde_repr-0.1.12
-	serde_spanned-0.6.1
+	serde_spanned-0.6.2
 	serde_urlencoded-0.7.1
 	serde_with-3.0.0
 	serde_with_macros-3.0.0
@@ -218,7 +211,7 @@ CRATES="
 	swayipc-async-2.0.1
 	swayipc-types-1.3.0
 	syn-1.0.109
-	syn-2.0.15
+	syn-2.0.16
 	tempfile-3.5.0
 	termcolor-1.2.0
 	thiserror-1.0.40
@@ -228,17 +221,17 @@ CRATES="
 	time-macros-0.2.9
 	tinyvec-1.6.0
 	tinyvec_macros-0.1.1
-	tokio-1.28.0
+	tokio-1.28.1
 	tokio-macros-2.1.0
 	tokio-native-tls-0.3.1
 	tokio-util-0.7.8
-	toml-0.7.3
-	toml_datetime-0.6.1
-	toml_edit-0.19.8
+	toml-0.7.4
+	toml_datetime-0.6.2
+	toml_edit-0.19.9
 	tower-service-0.3.2
 	tracing-0.1.37
 	tracing-attributes-0.1.24
-	tracing-core-0.1.30
+	tracing-core-0.1.31
 	try-lock-0.2.4
 	typenum-1.16.0
 	uds_windows-1.0.2
@@ -246,7 +239,6 @@ CRATES="
 	unicode-ident-1.0.8
 	unicode-normalization-0.1.22
 	unicode-segmentation-1.10.1
-	unicode-width-0.1.10
 	url-2.3.1
 	utf8parse-0.2.1
 	vcpkg-0.2.15
@@ -255,16 +247,16 @@ CRATES="
 	walkdir-2.3.3
 	want-0.3.0
 	wasi-0.11.0+wasi-snapshot-preview1
-	wasm-bindgen-0.2.84
-	wasm-bindgen-backend-0.2.84
-	wasm-bindgen-futures-0.4.34
-	wasm-bindgen-macro-0.2.84
-	wasm-bindgen-macro-support-0.2.84
-	wasm-bindgen-shared-0.2.84
-	wayrs-client-0.10.3
-	wayrs-protocols-0.10.1
-	wayrs-scanner-0.10.0
-	web-sys-0.3.61
+	wasm-bindgen-0.2.86
+	wasm-bindgen-backend-0.2.86
+	wasm-bindgen-futures-0.4.36
+	wasm-bindgen-macro-0.2.86
+	wasm-bindgen-macro-support-0.2.86
+	wasm-bindgen-shared-0.2.86
+	wayrs-client-0.10.4
+	wayrs-protocols-0.10.5
+	wayrs-scanner-0.10.3
+	web-sys-0.3.63
 	winapi-0.3.9
 	winapi-i686-pc-windows-gnu-0.4.0
 	winapi-util-0.1.5
@@ -294,16 +286,16 @@ CRATES="
 	xdg-home-1.0.0
 	zbus-3.12.0
 	zbus_macros-3.12.0
-	zbus_names-2.5.0
-	zvariant-3.12.0
-	zvariant_derive-3.12.0
+	zbus_names-2.5.1
+	zvariant-3.13.0
+	zvariant_derive-3.13.0
 	zvariant_utils-1.0.0
 "
 inherit cargo optfeature
 
 DESCRIPTION="A feature-rich and resource-friendly replacement for i3status, written in Rust."
 HOMEPAGE="https://github.com/greshake/i3status-rust/"
-SRC_URI="https://github.com/greshake/i3status-rust/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
+SRC_URI="https://github.com/greshake/i3status-rust/archive/refs/tags/v${PV}.tar.gz -> ${P}.gh.tar.gz
 	$(cargo_crate_uris)"
 
 LICENSE="GPL-3"
@@ -316,12 +308,8 @@ LICENSE+="
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE="man notmuch pulseaudio"
-PATCHES=(
-	"${FILESDIR}"/${P}-disable-stripping.patch
-)
 
 DEPEND="dev-libs/openssl:=
-	sys-apps/dbus
 	sys-apps/lm-sensors:=
 	notmuch? ( net-mail/notmuch:= )
 	pulseaudio? ( media-libs/libpulse )"
