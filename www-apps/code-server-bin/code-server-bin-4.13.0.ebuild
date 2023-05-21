@@ -62,6 +62,9 @@ src_prepare() {
 	rm ./"${VSCODE_MODULES}"/@vscode/ripgrep/bin/rg \
 		|| die "Failed to remove bundled ripgrep"
 
+	# Only required at build time
+	find "${S}" -type l -name python3 -delete || die
+
 	# not needed
 	rm ./postinstall.sh || die
 

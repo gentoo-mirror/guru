@@ -16,6 +16,8 @@ src_unpack() {
 	default
 
 	# upstream decompresses to openSeaChest-vXX.YY. We need openSeaChest-XX.YY
-	# without the 'v'
-	mv "${WORKDIR}/openSeaChest-v${PV}" "${S}"
+	# without the 'v'.
+	# ... for 23.03.1 they still made the source extract to 23.03, so I guess
+	# we need to just put the version number here literally instead of using PV
+	mv "${WORKDIR}/openSeaChest-v23.03" "${S}"
 }
