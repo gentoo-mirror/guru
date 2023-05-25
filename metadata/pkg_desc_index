@@ -168,7 +168,7 @@ app-misc/Clipboard 0.7.1: Cut, copy, and paste anything in your terminal
 app-misc/afc 1.1 1.2 9999: Anime File Checker, checks CRC32 contained in filenames
 app-misc/afetch 2.2.0: Simple system info written in C
 app-misc/ani-cli 4.2 9999: A cli to browse and watch anime.
-app-misc/anki-bin 2.1.63: A spaced-repetition memory training program (flash cards)
+app-misc/anki-bin 2.1.64: A spaced-repetition memory training program (flash cards)
 app-misc/apidb 5.8.0_beta 5.11.0_beta 5.13.1_beta 5.13.4_beta 5.13.6_beta: API Generator for Database access
 app-misc/aw-client 0.11.0: Client library for ActivityWatch
 app-misc/aw-core 0.11.0: Core library for ActivityWatch
@@ -488,7 +488,7 @@ dev-cpp/blurhash 0.2.0: C++ blurhash encoder/decoder
 dev-cpp/coeurl 0.2.1 0.3.0: A simple async wrapper around CURL for C++
 dev-cpp/cpp-jwt 1.5_pre20220727: JSON Web Token library for C++
 dev-cpp/cpptoml 0.1.1: Header-only library for parsing TOML
-dev-cpp/dpp 10.0.22-r1 10.0.23: Lightweight C++ Discord bot library
+dev-cpp/dpp 10.0.23 10.0.24: Lightweight C++ Discord bot library
 dev-cpp/drogon 1.8.3 1.8.4: C++14/17 based HTTP web application framework
 dev-cpp/dtl 1.20-r1: diff template library written by C++
 dev-cpp/fbthrift 2023.02.06.00: Facebook's branch of Apache Thrift, including a new C++ server
@@ -927,8 +927,8 @@ dev-python/graphql-core 3.2.3: Python port of GraphQL.js, the JavaScript referen
 dev-python/graphql-relay 3.2.0: Relay library for graphql-core
 dev-python/grpc-stubs 1.53.0.2: gRPC typing stubs for Python
 dev-python/grpclib 0.4.2 0.4.3: Pure-Python gRPC implementation for asyncio
-dev-python/guidata 2.3.0: Library for user interfaces for easy dataset editing and display
-dev-python/guppy3 3.1.3: A Python Programming Environment & Heap analysis toolset
+dev-python/guidata 2.3.1: Library for user interfaces for easy dataset editing and display
+dev-python/guppy3 3.1.3-r1: A Python Programming Environment & Heap analysis toolset
 dev-python/hachoir 3.2.0: Hachoir is a Python library to view and edit a binary stream field by field
 dev-python/hijri-converter 2.2.4: Accurate Hijri-Gregorian date converter based on the Umm al-Qura calendar
 dev-python/hijridate 2.3.0: Accurate Hijri-Gregorian date converter based on the Umm al-Qura calendar
@@ -947,7 +947,7 @@ dev-python/itemloaders 1.0.4 1.0.6: Library to populate items using XPath and CS
 dev-python/iuliia 0.11.5: Transliterate Cyrillic to Latin in every possible way
 dev-python/j1m-sphinxautozconfig 0.1.0: Spinx support for ZConfig
 dev-python/jinja2-cli 0.8.2: CLI for Jinja2
-dev-python/jplephem 2.16: Python version of NASA DE4xx ephemerides for Astronomical Alamanac
+dev-python/jplephem 2.18: Python version of NASA DE4xx ephemerides for Astronomical Alamanac
 dev-python/jsonpath-rw 1.4.0: A robust and significantly extended implementation of JSONPath for Python
 dev-python/jsonpath-rw-ext 1.2.2: Extensions for JSONPath RW
 dev-python/jupyter-sphinx 0.4.0: Jupyter Sphinx Extensions
@@ -961,8 +961,8 @@ dev-python/markdownify 0.11.6: Convert HTML to Markdown
 dev-python/marshmallow_enum 1.5.1: Enum handling for Marshmallow
 dev-python/mastodon-py 1.8.0 1.8.1: Python wrapper for the Mastodon API
 dev-python/material-color-utilities 0.1.5 9999: Python port of material-color-utilities used for Material You colors
-dev-python/mautrix 0.19.13: A Python 3 asyncio Matrix framework
-dev-python/minio 7.1.14: MinIO Client SDK for Python
+dev-python/mautrix 0.19.13 0.19.14: A Python 3 asyncio Matrix framework
+dev-python/minio 7.1.14 7.1.15: MinIO Client SDK for Python
 dev-python/mistletoe 1.0.1: A fast, extensible and spec-compliant Markdown parser in pure Python.
 dev-python/mitype 0.2.4: Typing speed test in terminal
 dev-python/mkdocs-blog-plugin 9999: Plugin for MkDocs to keep a simple blog section inside your documentation.
@@ -1055,7 +1055,7 @@ dev-python/python-pkcs11 0.7.0-r2: PKCS#11 (Cryptoki) support for Python
 dev-python/python-skywater-pdk 0.0.0_p20220424: Python library for working with files found in the SkyWater PDK
 dev-python/python-socketio 5.1.0 5.8.0: Python implementation of the Socket.IO realtime server.
 dev-python/python-telegram-bot 13.14 20.2-r1 20.3 9999: Python wrapper of telegram bots API
-dev-python/pywebview 3.7.2: A lightweight cross-platform wrapper around a webview component
+dev-python/pywebview 3.7.2 4.1: A lightweight cross-platform wrapper around a webview component
 dev-python/queuelib 1.6.2: Collection of persistent and non-persistent queues for Python
 dev-python/rchitect 0.3.36: Interoperate R with Python
 dev-python/readability-lxml 0.6.1 0.8.1: fast html to text parser (article readability tool)
@@ -1112,12 +1112,12 @@ dev-python/transaction 3.0.1-r1 3.1.0: Transaction management for Python
 dev-python/trueskill 0.4.5_p20220422: Python Implementation of the TrueSkill Algorithm
 dev-python/ttfautohint-py 0.5.1-r1: Python wrapper for ttfautohint, a free auto-hinter for TrueType fonts
 dev-python/tulir-telethon 1.28.0_alpha9-r1: Pure Python 3 MTProto API Telegram client library, for bots too!
-dev-python/tweepy 4.10.1: An easy-to-use Python library for accessing the Twitter API.
+dev-python/tweepy 4.14.0: An easy-to-use Python library for accessing the Twitter API.
 dev-python/types-paramiko 2.10.0 2.11.1: Typing stubs for paramiko
 dev-python/types-protobuf 4.23.0.1: Typing stubs for protobuf
 dev-python/types-python-dateutil 2.8.17 2.8.18: Typing stubs for python-dateutil
 dev-python/types-pytz 2021.3.8 2022.1.1: Typing stubs for pytz
-dev-python/types-requests 2.30.0.0: Typing stubs for requests
+dev-python/types-requests 2.31.0.0: Typing stubs for requests
 dev-python/types-urllib3 1.26.25.13: Typing stubs for urllib3
 dev-python/typing_inspect 0.7.1: Runtime inspection utilities for Python typing module
 dev-python/ufmt 1.3.3: Safe, atomic formatting with black and usort
@@ -1189,7 +1189,7 @@ dev-util/DirectXShaderCompiler 1.7.2207-r1 1.7.2212: Microsoft DirectX Shader Co
 dev-util/FoBiS 3.0.5-r1: FoBiS.py, a Fortran Building System for poor men
 dev-util/afdko 3.9.5-r1: Adobe Font Development Kit for OpenType
 dev-util/babeltrace2 2.0.4: A command-line tool and library to read and convert trace files
-dev-util/bash-language-server 4.9.0 4.9.1: A language server for Bash
+dev-util/bash-language-server 4.9.1 4.9.2: A language server for Bash
 dev-util/bats-assert 2.0.0: Common assertions for Bats
 dev-util/bats-support 0.3.0: Supporting library for Bats test helpers
 dev-util/bazelisk 1.12.0: A user-friendly launcher for Bazel
@@ -1211,6 +1211,7 @@ dev-util/git-bug 0.7.2 9999: distributed, offline-first bug tracker
 dev-util/glsl-language-server 0.3.7: Language server implementation for GLSL
 dev-util/gshards 0.1-r1 0.2: Small helper tools to aid installing Crystal packages in Gentoo
 dev-util/haredo 1.0.2 9999: a simple and unix-idiomatic build automator
+dev-util/hut 0.3.0: CLI tool for sourcehut
 dev-util/insomnia-bin 2020.3.3 2020.5.2: HTTP and GraphQL client for developers
 dev-util/lemminx-bin 0.24.0 0.25.0: XML Language Server
 dev-util/lua-language-server 3.6.18 3.6.19: Lua language server
@@ -1234,7 +1235,7 @@ dev-util/wakatime-cli 1.27.0 1.28.6: Command line interface to WakaTime used by 
 dev-util/wxformbuilder 3.10.1-r1: A wxWidgets GUI Builder
 dev-util/xmake 2.7.8 9999: A cross-platform build utility based on Lua
 dev-util/xxd 8.2.4092: Hexdump utility from vim
-dev-util/yaml-language-server 1.11.0 1.12.0: Language Server for YAML Files
+dev-util/yaml-language-server 1.12.0 1.13.0: Language Server for YAML Files
 dev-vcs/bit 1.1.1 1.1.2: Bit is a modern Git CLI
 dev-vcs/git-blame-someone-else 0_pre20180613: Blame someone else for your bad code.
 dev-vcs/git-cu 0.5.0: Helps to keep your local git repositories organized
@@ -1350,7 +1351,7 @@ gui-apps/hiprompt-gtk-py 0_pre20220624 9999: GTK+ Himitsu prompter for Wayland
 gui-apps/hyprland-plugins 0.25.0: A blazing fast wayland wallpaper utility
 gui-apps/hyprpaper 0.2.0-r1: A blazing fast wayland wallpaper utility
 gui-apps/hyprpicker 0.1.0-r1: A wlroots-compatible Wayland color picker that does not suck
-gui-apps/intiface-central-bin 2.3.0-r2: Buttplug frontend application
+gui-apps/intiface-central-bin 2.3.0-r2 2.4.0: Buttplug frontend application
 gui-apps/meteo-qt 3.3: A system tray application for the weather status
 gui-apps/mpvpaper 1.2 1.3 9999: A video wallpaper program for wlroots based wayland compositors
 gui-apps/nwg-launchers 0.5.0 0.6.3 9999: GTK+ launchers for sway, i3 and some other WMs
@@ -1484,7 +1485,7 @@ media-sound/hushboard 0.0_pre20220518 9999: Mutes your microphone while you are 
 media-sound/ibniz 1.18-r1: virtual machine designed for extremely compact low-level audiovisual programs
 media-sound/jacktrip 1.7.1-r1: Send JACK audio over a network
 media-sound/loudgain 0.6.8: Versatile ReplayGain 2.0 loudness normalizer
-media-sound/mopidy 3.3.0: An extensible music server written in Python.
+media-sound/mopidy 3.4.1: An extensible music server written in Python.
 media-sound/mpd-mpris 0.3.1 0.4.0: An implementation of the MPRIS protocol for MPD.
 media-sound/mpvc 1.1.3: mpc-like tool which connects to existing mpv instances through sockets.
 media-sound/ncpamixer 1.3.3.1: A ncurses mixer for PulseAudio inspired by pavucontrol
@@ -1500,6 +1501,7 @@ media-sound/qpwgraph 0.3.9 9999: PipeWire Graph Qt GUI Interface
 media-sound/spotify-adblock 1.0.1 1.0.2: Adblocker for Spotify
 media-sound/tavu 9999: Terminal-based ALSA VU-meter with peaking
 media-sound/zita-ajbridge 0.8.4 0.8.4-r1: zita-a2j and zita-j2a - bridges between ALSA and JACK
+media-video/avisynth+ 9999: A powerful nonlinear scripting language for video
 media-video/ciano 0.2.4-r1: A multimedia file converter focused on simplicity
 media-video/ffsubsync 0.4.20-r1 0.4.22 0.4.23: Automagically syncronize subtitles with video
 media-video/kikoplay 0.8.2 9999: KikoPlay is a full-featured danmu player
@@ -1532,7 +1534,7 @@ net-analyzer/munin-plugins-mendix 23_p20210510: This package provides various pl
 net-client/amfora 1.8.0 1.9.2: A fancy terminal browser for the Gemini protocol.
 net-client/castor 0.8.18 0.9.0: A graphical browser for plain-text protocols
 net-client/kristall 0.3-r2 0.4: Visual cross-platform gemini browser
-net-client/lagrange 1.15.8 1.15.9: Desktop GUI client for browsing Geminispace
+net-client/lagrange 1.15.9 1.16.1: Desktop GUI client for browsing Geminispace
 net-client/offpunk 1.8 1.9.1: Offline-First Gemini/Web/Gopher/RSS reader and browser
 net-client/starfish 1.2.0 1.3.1: A Gemini browser for elementary OS
 net-client/telescope 0.7.1 0.8.1: w3m-like browser for Gemini
@@ -1888,7 +1890,7 @@ www-apps/snac 2.25 2.26: A simple, minimalistic ActivityPub instance
 www-apps/uwebsockets 20.11.0 20.14.0 9999: ultra fast, simple, secure & standards compliant web I/O
 www-client/badwolf 1.2.2 9999: Minimalist and privacy-oriented WebKitGTK+ browser
 www-client/browsh 1.6.4_p1: A fully-modern text-based browser, rendering to TTY and browsers
-www-client/nyxt 3_pre6 9999: Nyxt - the hacker's power-browser
+www-client/nyxt 3_pre6 3.0.0 9999: Nyxt - the hacker's power-browser
 www-client/vimb 3.6.0 9999: a fast, lightweight, vim-like browser based on webkit
 www-client/woob 3.1-r1 9999: Web Outside Of Browsers (core, site modules and applications)
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits
