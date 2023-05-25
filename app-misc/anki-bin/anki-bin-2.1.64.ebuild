@@ -6,7 +6,7 @@ EAPI=8
 ### A NOTE REGARDING PYTHON COMPATABILITY ###
 # Anki-bin downloads a python 3.9 wheel. However the wheel used has only one native library _rsbridge.so
 # that is not linked against libpython.
-# The configuration with Python 3.10 was tested on a limited number of machines and is not guaranteed to work.
+# The configuration with Python 3.{10,11} was tested on a limited number of machines and is not guaranteed to work.
 
 PYTHON_COMPAT=( python3_{10..11} )
 inherit desktop python-single-r1 pypi xdg
@@ -29,7 +29,8 @@ IUSE="qt6"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 QA_PREBUILT="usr/lib/*"
-DEPEND="
+
+RDEPEND="
 $(python_gen_cond_dep '
 	dev-python/beautifulsoup4[${PYTHON_USEDEP}]
 	dev-python/distro[${PYTHON_USEDEP}]
@@ -60,8 +61,6 @@ qt6? (
 			>=dev-python/PyQt6-WebEngine-6.5.0[widgets,${PYTHON_USEDEP}]
 			')
 	 )
-"
-RDEPEND="${DEPEND}
 	${PYTHON_DEPS}
 	!app-misc/anki
 "
