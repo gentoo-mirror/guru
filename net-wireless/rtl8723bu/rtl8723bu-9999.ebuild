@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit git-r3 linux-mod linux-info
+inherit git-r3 linux-mod
 
 DESCRIPTION="Driver for the rtl8723 wireless chipset"
 HOMEPAGE="https://github.com/lwfinger/rtl8723bu"

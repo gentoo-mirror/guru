@@ -5,13 +5,11 @@ EAPI=8
 
 inherit meson optfeature
 
-DESCRIPTION="i3-compatible Wayland window manager"
-HOMEPAGE="https://swaywm.org"
+DESCRIPTION="SwayFX: Sway, but with eye candy!"
+HOMEPAGE="https://github.com/WillPower3309/swayfx"
 
-MY_PV=${PV/_rc/-rc}
-SRC_URI="https://github.com/WillPower3309/swayfx/archive/refs/tags/${PV}.tar.gz"
+SRC_URI="https://github.com/WillPower3309/swayfx/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
 KEYWORDS="~amd64"
-S="${WORKDIR}/${PN}-${MY_PV}"
 
 LICENSE="MIT"
 SLOT="0"
@@ -19,7 +17,7 @@ IUSE="grimshot +man +swaybar +swaynag tray wallpapers X"
 
 DEPEND="
 	>=dev-libs/json-c-0.13:0=
-	>=dev-libs/libinput-1.6.0:0=
+	>=dev-libs/libinput-1.21.0:0=
 	sys-auth/seatd:=
 	dev-libs/libpcre
 	>=dev-libs/wayland-1.20.0
@@ -38,8 +36,8 @@ DEPEND="
 	X? ( x11-libs/libxcb:0= )
 "
 DEPEND+="
-	>=gui-libs/wlroots-0.15:=[X?]
-	<gui-libs/wlroots-0.16:=[X?]
+	>=gui-libs/wlroots-0.16:=[X?]
+	<gui-libs/wlroots-0.17:=[X?]
 "
 RDEPEND="
 	x11-misc/xkeyboard-config
