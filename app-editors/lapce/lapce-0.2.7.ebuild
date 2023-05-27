@@ -620,6 +620,7 @@ declare -A GIT_CRATES=(
 	[swash]="https://github.com/lapce/swash;1d9b8c700a415f0f4216dd30026b3a2149db8e1e"
 	[fount]="https://github.com/lapce/fount;3bfdc689c0cfbeb498358c79c7be2cb3beb44efe"
 	[font-kit]="https://github.com/lapce/font-kit;23e28b06b40f31fc53b82645b09ce6421768be23"
+	[winit]="https://github.com/lapce/winit;75e9569593223823e9191686368d196de9df6581"
 )
 
 inherit cargo desktop xdg-utils
