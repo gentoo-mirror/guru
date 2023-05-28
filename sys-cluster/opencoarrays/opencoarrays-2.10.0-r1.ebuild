@@ -1,4 +1,4 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -23,7 +23,7 @@ KEYWORDS="~amd64 ~x86"
 # Tests fail with FEATURES="network-sandbox" for most versions of openmpi and mpich it with error:
 # "No network interfaces were found for out-of-band communications.
 #  We require at least one available network for out-of-band messaging."
-IUSE="test"
+IUSE="static-libs test"
 PROPERTIES="test_network"
 RESTRICT="!test? ( test )"
 
@@ -34,8 +34,20 @@ DEPEND="
 	${RDEPEND}
 "
 
+PATCHES=(
+	"${FILESDIR}/${PN}-2.10.1_fix_Wint-conversion_warning_error.patch"
+)
+
 src_configure() {
 	filter-lto # Bug 860765
 
 	cmake_src_configure
+}
+
+src_install() {
+	cmake_src_install
+
+	if ! use static-libs ; then
+		find "${ED}" -name '*.a' -delete || die # Bug 901423
+	fi
 }

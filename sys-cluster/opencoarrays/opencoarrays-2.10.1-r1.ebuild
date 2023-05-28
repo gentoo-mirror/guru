@@ -23,12 +23,13 @@ KEYWORDS="~amd64 ~x86"
 # Tests fail with FEATURES="network-sandbox" for most versions of openmpi and mpich it with error:
 # "No network interfaces were found for out-of-band communications.
 #  We require at least one available network for out-of-band messaging."
-IUSE="test"
+IUSE="static-libs test"
 PROPERTIES="test_network"
 RESTRICT="!test? ( test )"
 
 # >=sys-cluster/openmpi-4.1.2[fortran] is dropped due to
-# multiple test failures issue: https://github.com/sourceryinstitute/OpenCoarrays/issues/769
+# multiple test failures issue:
+# https://github.com/sourceryinstitute/OpenCoarrays/issues/769
 RDEPEND="
 	>=sys-cluster/mpich-3.4.3[fortran,mpi-threads,threads]
 "
@@ -36,8 +37,20 @@ DEPEND="
 	${RDEPEND}
 "
 
+PATCHES=(
+	"${FILESDIR}/${PN}-2.10.1_fix_Wint-conversion_warning_error.patch"
+)
+
 src_configure() {
 	filter-lto # Bug 860765
 
 	cmake_src_configure
+}
+
+src_install() {
+	cmake_src_install
+
+	if ! use static-libs ; then
+		find "${ED}" -name '*.a' -delete || die # Bug 901423
+	fi
 }
