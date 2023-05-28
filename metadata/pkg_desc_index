@@ -72,7 +72,7 @@ app-admin/grub-customizer 5.1.0: A graphical grub2 settings manager
 app-admin/himitsu 0.3 9999: Secret storage system for Unix, suitable for storing passwords, keys, ...
 app-admin/himitsu-ssh 0.1-r1 9999: SSH integration for Himitsu
 app-admin/himitsu-totp 9999: TOTP support for Himitsu
-app-admin/i2pd-tools 0.2023.03.12: Some useful tools for I2P
+app-admin/i2pd-tools 0.2023.03.12 0.2023.05.26: Some useful tools for I2P
 app-admin/krapplet 0.3.1-r1: Krapplet (keyring applet): a Linux graphical password manager
 app-admin/oet 0.1.9 0.1.10 9999: Update your system into binpkgs in an overlay sandbox
 app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applications and tmux
@@ -179,7 +179,7 @@ app-misc/clifm 1.8 1.9 1.10 1.11 9999: The command line file manager
 app-misc/cpufetch 1.01 1.02 1.04: Simplistic yet fancy CPU architecture fetching tool
 app-misc/dbf 0.9.0: Command line tool to read the content of dBASE III, IV, and 5.0 files
 app-misc/diff-so-fancy 1.4.3-r1: Good-lookin' diffs. Actually... nah... The best-lookin' diffs
-app-misc/doublecmd-bin 1.0.10 1.0.11: Free cross platform open source file manager with two panels side by side.
+app-misc/doublecmd-bin 1.0.11: Free cross platform open source file manager with two panels side by side.
 app-misc/dragon 1.1.1 1.1.1_p20210820 1.2.0: Simple drag-and-drop source/sink for X and Wayland
 app-misc/electricsheep 3.0.2_p20191005 9999: Realize the collective dream of sleeping computers from all over the internet
 app-misc/far2l 2.3.2_alpha 2.4.0_beta 9999: Linux port of FAR Manager v2
@@ -526,7 +526,7 @@ dev-crystal/crystal-html5 0.4.0: Pure Crystal implementation of an HTML5-complia
 dev-crystal/crystal-pg 0.26.0: A native, non-blocking Postgres driver for Crystal
 dev-crystal/crystal-sqlite3 0.19.0: SQLite3 bindings for Crystal
 dev-crystal/crystal-xpath2 0.1.3: XPath implementation in Crystal
-dev-crystal/crystar 0.2.0_p20220913 0.3.0: Crystal language Tar Module implements access to tar archives
+dev-crystal/crystar 0.3.0 0.3.1: Crystal language Tar Module implements access to tar archives
 dev-crystal/exception_page 0.3.0: A library for displaying exceptional exception pages for easier debugging
 dev-crystal/habitat 0.4.7: Easily configure settings for Crystal projects
 dev-crystal/inflector 1.0.0: String inflectors for Crystal
@@ -751,7 +751,7 @@ dev-ml/xenstore-clients 1.1.0 1.3.0: Unix client tools for accessing xenstore
 dev-ml/xmlm 1.4.0: Ocaml XML manipulation module
 dev-nim/asynctools 0.1.1_p20210606: Various asynchronous tools for Nim language
 dev-nim/balls 3.9.6 3.9.8: A unittest macro to save the world, or at least your Sunday
-dev-nim/cligen 1.6.2 1.6.4: Infer & generate command-line interface/option/argument parser
+dev-nim/cligen 1.6.4 1.6.6: Infer & generate command-line interface/option/argument parser
 dev-nim/dotenv 2.0.1: dotenv implementation for Nim
 dev-nim/flatty 0.3.4: Tools and serializer for plain flat binary files
 dev-nim/frosty 3.0.0: Serialize native Nim types to strings, streams, sockets, or anything else
@@ -763,7 +763,7 @@ dev-nim/jsony 1.1.3_p20220114 1.1.5: A loose direct to object json parser with h
 dev-nim/karax 1.2.3 1.3.0: a framework for developing single page applications in Nim
 dev-nim/markdown 0.8.5 0.8.7-r1: A Markdown Parser in Nim World
 dev-nim/nake 1.9.4: make-like for Nim. Describe your builds as tasks!
-dev-nim/nimbus 1.1.1: A Nim build system
+dev-nim/nimbus 1.1.1 1.1.2: A Nim build system
 dev-nim/nimcrypto 0.5.4_p20210619: Nim cryptographic library
 dev-nim/noise 0.1.6 0.1.8: a Nim implementation of linenoise
 dev-nim/npeg 1.2.0 1.2.1: a PEG library for Nim
@@ -773,11 +773,11 @@ dev-nim/sass 0.2.0: A wrapper for the libsass library
 dev-nim/supersnappy 2.1.3: Nim implementation of Google's Snappy compression
 dev-nim/sync 1.5.0: Useful synchronization primitives
 dev-nim/synthesis 0.2.0: A compile-time, compact, fast, without allocation, state-machine generator
-dev-nim/ups 0.0.8: a package handler
+dev-nim/ups 0.0.8 0.0.9: a package handler
 dev-nim/weave 0.4.0: a state-of-the-art multithreading runtime
 dev-nim/ws 0.5.0: Simple WebSocket library for nim
 dev-nim/zedeus_redis 0.3.0_p20211226: Fork of the official redis client for Nim
-dev-nim/zippy 0.10.8 0.10.9: Pure Nim implementation of deflate, zlib, gzip and zip
+dev-nim/zippy 0.10.9 0.10.10: Pure Nim implementation of deflate, zlib, gzip and zip
 dev-octave/control 3.4.0: Computer-Aided Control System Design
 dev-octave/dataframe 1.2.0: Data manipulation toolbox similar to R data.frame
 dev-octave/fuzzy-logic-toolkit 0.4.6: A mostly MATLAB-compatible fuzzy logic toolkit for Octave
@@ -1098,7 +1098,7 @@ dev-python/stone 3.3.1: The Official Api Spec Language for Dropbox
 dev-python/strictyaml 1.6.1: A type-safe YAML parser built atop ruamel.yaml
 dev-python/stringbrewer 0.0.1-r1: Generate random strings matching a pattern
 dev-python/stringcase 1.2.0-r1: Convert string cases between camel case, pascal case, snake case etc.
-dev-python/survey 3.4.3 4.2.1_alpha: A simple library for creating beautiful interactive prompts
+dev-python/survey 3.4.3 4.3.0_alpha: A simple library for creating beautiful interactive prompts
 dev-python/svgelements 1.9.3: SVG Parsing for Elements, Paths, and other SVG Objects.
 dev-python/sysv_ipc 1.1.0: System V IPC primitives for python
 dev-python/tempus-themes 2.3.0.20220206: Accessible themes for Pygments
@@ -1196,7 +1196,7 @@ dev-util/binaryen 105: Compiler and toolchain infrastructure library for WebAsse
 dev-util/cargo-make 0.35.9 0.35.10: Rust task runner and build tool
 dev-util/deblob 0.4 9999: remove binary executables from a directory
 dev-util/dockerfile-language-server 0.9.0: A language server for Dockerfiles
-dev-util/eclipse-parallel-bin 4.26 4.27: Eclipse IDE for Scientific Computing (C, C++, Fortran)
+dev-util/eclipse-parallel-bin 4.27: Eclipse IDE for Scientific Computing (C, C++, Fortran)
 dev-util/exercism 3.1.0: Command line client for https://exercism.io
 dev-util/fnm 1.32.0 1.33.1: Fast and simple Node.js version manager
 dev-util/fontmake 3.5.1: Compile fonts from sources (UFO, Glyphs) to binary (OpenType, TrueType)
@@ -1240,7 +1240,7 @@ dev-vcs/git-blame-someone-else 0_pre20180613: Blame someone else for your bad co
 dev-vcs/git-cu 0.5.0: Helps to keep your local git repositories organized
 dev-vcs/git-repo-updater 0.5.1-r2: Easily update multiple git repositories at once
 dev-vcs/gitahead 2.6.3: Graphical Git client to help understand and manage source code history
-dev-vcs/gitqlient 1.6.1 1.6.1-r1 9999: Multi-platform Git client written with Qt
+dev-vcs/gitqlient 1.6.1 1.6.1-r1 1.6.2_pre20230519 9999: Multi-platform Git client written with Qt
 dev-vcs/gitqlient-gitserver-plugin 0.2.0: GitQlient GitServer plugin
 dev-vcs/gitqlient-jenkins-plugin 0.2.0: GitQlient Jenkins plugin
 dev-vcs/gitui 0.18.0 0.20.1: Blazing fast terminal-ui for git
@@ -1250,7 +1250,7 @@ dev-vcs/lefthook 1.0.4 1.2.6: Fast and powerful Git hooks manager for any type o
 dev-zig/zls 0.10.0-r1 9999: The officially unofficial Ziglang language server
 games-action/ATLauncher 3.4.3.1 3.4.27.0: Minecraft launcher which integrates multiple different ModPacks
 games-action/blackvoxel 2.50 9999: Blackvoxel Video Game
-games-action/ddnet 17.0 9999: DDraceNetwork, a cooperative racing mod of Teeworlds
+games-action/ddnet 17.0.1 9999: DDraceNetwork, a cooperative racing mod of Teeworlds
 games-action/netrek-brmh 2.6.0: brmh client for netrek
 games-action/netrek-cow 3.3.2: cow client for netrek
 games-action/technic-launcher 4.625 4.768: Minecraft launcher for community-made modpacks on the Technic Platform
@@ -1396,9 +1396,6 @@ gui-wm/dwl 0.3.1 0.4-r1 9999 9999-r1: dwm for Wayland
 gui-wm/hyprland-contrib 0.1: Community-maintained extensions for hyprland
 gui-wm/phosh 0.17.0: A pure Wayland shell prototype for GNOME on mobile devices
 gui-wm/swayfx 0.2 0.3: SwayFX: Sway, but with eye candy!
-kde-apps/alligator 22.11 23.04.0: A convergent RSS/Atom feed reader for Plasma
-kde-apps/kclock 22.11 23.04.0: A convergent clock application for Plasma
-kde-apps/krecorder 22.11 23.04.0: A convergent audio recording application for Plasma
 kde-apps/plasma-settings 22.11: Settings application for Plasma Mobile
 kde-misc/geminipart 2021125 20221020: KPart for viewing text/gemini files
 kde-misc/kio-gemini 20221021 20230419: Gemini KIO worker
@@ -1560,7 +1557,7 @@ net-im/mautrix-discord 0.3.0 0.4.0: A Matrix-Discord puppeting bridge
 net-im/mautrix-facebook 0.4.1: A Matrix-Facebook Messenger puppeting bridge
 net-im/mautrix-signal 0.4.2: A Matrix-Telegram Messenger puppeting bridge
 net-im/mautrix-slack 0_pre20230414 0_pre20230517: A Matrix-Slack puppeting bridge based on slack-go
-net-im/mautrix-telegram 0.13.0: A Matrix-Telegram Messenger puppeting bridge
+net-im/mautrix-telegram 0.13.0-r1 0.14.0: A Matrix-Telegram Messenger puppeting bridge
 net-im/nheko 0.11.3 9999: Native desktop client for Matrix using Qt
 net-im/ruqola 1.3.1: Rocket.Chat client for the KDE desktop
 net-im/session-desktop-bin 1.10.8: Session Desktop - Onion routing based messenger
@@ -1599,7 +1596,7 @@ net-misc/giara 1.0.1 1.1.0: An app for Reddit
 net-misc/gmid 1.8.5 1.8.6 9999: Simple and secure Gemini server
 net-misc/gnome-ssh-askpass 9.2_p1: GTK-based passphrase dialog for use with OpenSSH
 net-misc/lyrics-in-terminal 1.5.0: Command Line Lyrics fetcher for MPRIS media players
-net-misc/maestral 1.7.2 1.7.3_rc2: Maestral is an open-source Dropbox client written in Python
+net-misc/maestral 1.7.2 1.7.3_rc3: Maestral is an open-source Dropbox client written in Python
 net-misc/maestral-qt 1.7.2 1.7.3_rc2: Maestral is an open-source Dropbox client written in Python
 net-misc/mastorss 0.13.0 0.13.1 9999: Another RSS to Mastodon bot
 net-misc/megasync 4.3.8.0 4.5.0.0 9999: The official Qt-based program for syncing your MEGA account in your PC
@@ -1804,7 +1801,7 @@ sys-cluster/muster 1.0.1: Massively Scalable Clustering
 sys-cluster/nanos6 2.6-r4 2.7: runtime that implements the OmpSs-2 parallel programming model
 sys-cluster/nanox 0.15_p20210818: Runtime designed to serve as runtime support in parallel environments
 sys-cluster/opari2 2.0.6: OpenMP Pragma And Region Instrumentor
-sys-cluster/opencoarrays 2.9.2 2.9.3 2.10.0 2.10.1: A parallel application binary interface for Fortran 2018 compilers
+sys-cluster/opencoarrays 2.9.3-r1 2.10.0-r1 2.10.1-r1: A parallel application binary interface for Fortran 2018 compilers
 sys-cluster/osu-micro-benchmarks 5.9: MPI, OPC and many other benchmarks
 sys-cluster/otf2 2.3-r3 3.0: highly scalable, memory efficient event trace data format
 sys-cluster/parallel-netcdf 1.12.2: Parallel extension to netCDF
@@ -1879,12 +1876,12 @@ virtual/nnet 0: Virtual of a R recommended package
 virtual/survival 0: Virtual of a R recommended package
 www-apps/code-server-bin 4.9.1-r2 4.12.0-r1 4.13.0: VS Code in the browser (binary version with unbundled node and ripgrep)
 www-apps/forgejo 1.18.0.1: A self-hosted lightweight software forge
-www-apps/gotosocial 0.8.0 0.8.1: Fast, fun, ActivityPub server, powered by Go
+www-apps/gotosocial 0.8.1 0.9.0: Fast, fun, ActivityPub server, powered by Go
 www-apps/honk 0.9.8 0.9.91: ActivityPub server with minimal setup and support costs
-www-apps/invidious 2023.04.01 2023.05.08: Invidious is an alternative front-end to YouTube
+www-apps/invidious 2023.05.08 2023.05.26: Invidious is an alternative front-end to YouTube
 www-apps/jackett-bin 0.20.514 0.20.1202 0.20.3288 9999: API Support for your favorite torrent trackers
 www-apps/mycorrhiza 1.14.0 9999: Git-based wiki engine written in Go using mycomarkup
-www-apps/nitter 0.1.0_p20230120 0.1.0_p20230306: An alternative front-end for Twitter
+www-apps/nitter 0.1.0_p20230306 2023.05.20: Alternative front-end for Twitter
 www-apps/snac 2.25 2.26: A simple, minimalistic ActivityPub instance
 www-apps/uwebsockets 20.11.0 20.14.0 9999: ultra fast, simple, secure & standards compliant web I/O
 www-client/badwolf 1.2.2 9999: Minimalist and privacy-oriented WebKitGTK+ browser
