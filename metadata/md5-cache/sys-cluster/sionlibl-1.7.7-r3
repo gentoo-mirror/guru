@@ -1,6 +1,6 @@
 BDEPEND=doc? ( app-doc/doxygen ) fortran? ( virtual/fortran )
 DEFINED_PHASES=compile configure install setup
-DEPEND=mpi? ( virtual/mpi ) openmp? ( || ( sys-devel/gcc:*[openmp] sys-libs/libomp ) ) sionfwd? ( sys-cluster/SIONfwd ) || ( >=dev-lang/python-3.11.1-r1:3.11 >=dev-lang/python-3.10.9-r1:3.10 >=dev-python/pypy3-7.3.11-r1:0 ) fortran? ( virtual/fortran )
+DEPEND=mpi? ( virtual/mpi ) openmp? ( || ( sys-devel/gcc:*[openmp] sys-libs/libomp ) ) sionfwd? ( sys-cluster/SIONfwd ) || ( >=dev-lang/python-3.11.3:3.11 >=dev-lang/python-3.10.11:3.10 >=dev-python/pypy3-7.3.11_p1:0 ) fortran? ( virtual/fortran )
 DESCRIPTION=Scalable I/O library for parallel access to task-local files
 EAPI=8
 HOMEPAGE=https://www.fz-juelich.de/ias/jsc/EN/Expertise/Support/Software/SIONlib/_node.html
@@ -12,5 +12,5 @@ RDEPEND=mpi? ( virtual/mpi ) openmp? ( || ( sys-devel/gcc:*[openmp] sys-libs/lib
 REQUIRED_USE=ompi? ( mpi openmp ) ?? ( hostname-regex deep-est-sdv )
 SLOT=0
 SRC_URI=http://apps.fz-juelich.de/jsc/sionlib/download.php?version=1.7.7l -> sionlibll-1.7.7.tar.gz
-_eclasses_=docs	7b9e167549c44efa7994614f33ba6d7a	edo	c0eb9cbe6b0bd01fcb4918f12598a4d3	toolchain-funcs	14a8ae365191b518fad51caad7a08f3e	multilib	104e1332efb829e2f7cbf89307a474f1	flag-o-matic	16483e58fadb0d47b4528f0aa7e171f6	fortran-2	40c4450f1c4ecb2ee694d96e1958d4ea	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	python-utils-r1	d676fb844e9408f4290d20bc7312f8bb	python-any-r1	d2955aaac8daaaa69fcc6dc93ed19f29
+_eclasses_=docs	7b9e167549c44efa7994614f33ba6d7a	edo	c0eb9cbe6b0bd01fcb4918f12598a4d3	toolchain-funcs	14a8ae365191b518fad51caad7a08f3e	multilib	104e1332efb829e2f7cbf89307a474f1	flag-o-matic	16483e58fadb0d47b4528f0aa7e171f6	fortran-2	40c4450f1c4ecb2ee694d96e1958d4ea	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	python-utils-r1	ba15b8b81f30ca448294d759a9f7902c	python-any-r1	d2955aaac8daaaa69fcc6dc93ed19f29
 _md5_=f7bf0dadec433241a320a334cdbf9c2e
