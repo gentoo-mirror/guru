@@ -1,4 +1,4 @@
-# Copyright 2022 Gentoo Authors
+# Copyright 2022-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -14,13 +14,16 @@ S="${WORKDIR}/${MY_PN}-${PV}"
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="+man scripting"
+IUSE="pulseaudio"
 
 DEPEND="
+	dev-libs/libgee
 	dev-libs/glib:2
 	dev-libs/gobject-introspection
 	dev-libs/json-glib
-	dev-libs/libgee:=
+	pulseaudio? (
+		media-libs/libpulse
+	)
 	dev-libs/wayland
 	>=gui-libs/gtk-layer-shell-0.7.0[introspection]
 	gui-libs/libhandy:1
@@ -31,20 +34,13 @@ DEPEND="
 RDEPEND="${DEPEND}"
 BDEPEND="
 	$(vala_depend)
-	man? ( app-text/scdoc )
+	app-text/scdoc
 "
 
 src_prepare() {
+	! use pulseaudio && local PATCHES=( "${FILESDIR}"/${P}-pulsefree.patch )
 	default
 	vala_setup
-}
-
-src_configure() {
-	local emesonargs=(
-		$(meson_use man man-pages)
-		$(meson_use scripting)
-	)
-	meson_src_configure
 }
 
 pkg_postinst() {
