@@ -1,6 +1,13 @@
 # Copyright 2022-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
+# Note: This is the last version in which the upstream had not introduced
+# dependency on sys-libs/libbacktrace, which has been last-rited in ::gentoo.
+#
+# ebuilds for newer upstream versions have to use an experimental patch that
+# makes the libbacktrace dependency optional; please keep this version for
+# reasonable time until the patch has been proven stable.
+
 EAPI=8
 
 inherit gnome2-utils meson xdg
@@ -30,10 +37,9 @@ RDEPEND="
 	dev-libs/glib:2
 	dev-libs/json-glib
 	gui-libs/gtk:4[introspection]
-	>=gui-libs/libadwaita-1.2.0:1[introspection]
+	gui-libs/libadwaita:1[introspection]
 	gui-libs/text-engine
 	net-libs/libsoup:3.0
-	sys-libs/libbacktrace
 "
 
 DEPEND="
@@ -41,10 +47,7 @@ DEPEND="
 "
 
 src_configure() {
-	local emesonargs=(
-		-Dpackage="ebuild"
-		-Ddistributor="Gentoo GURU <guru-bugs@gentoo.org>"
-	)
+	local emesonargs=()
 	if has live ${PROPERTIES}; then
 		# Produce a development build for live ebuild
 		emesonargs+=( -Ddevelopment=true )

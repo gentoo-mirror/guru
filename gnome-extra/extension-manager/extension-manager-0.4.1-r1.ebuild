@@ -1,4 +1,4 @@
-# Copyright 2022 Gentoo Authors
+# Copyright 2022-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -33,15 +33,26 @@ RDEPEND="
 	>=gui-libs/libadwaita-1.2.0:1[introspection]
 	gui-libs/text-engine
 	net-libs/libsoup:3.0
-	sys-libs/libbacktrace
 "
 
 DEPEND="
 	${RDEPEND}
 "
 
+PATCHES=(
+	"${FILESDIR}/${PN}-0.4.1-exm-backtrace.c-include-stdint.h.patch"
+	"${FILESDIR}/${PN}-0.4.1-make-libbacktrace-optional.patch"
+)
+
 src_configure() {
-	local emesonargs=()
+	local emesonargs=(
+		-Dpackage="ebuild"
+		-Ddistributor="Gentoo GURU <guru-bugs@gentoo.org>"
+
+		# sys-libs/libbacktrace has been last-rited in ::gentoo
+		# and is thus unavailable
+		-Dbacktrace=false
+	)
 	if has live ${PROPERTIES}; then
 		# Produce a development build for live ebuild
 		emesonargs+=( -Ddevelopment=true )

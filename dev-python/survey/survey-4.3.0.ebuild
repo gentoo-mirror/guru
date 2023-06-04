@@ -4,18 +4,15 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_11 )
-inherit distutils-r1
-
-MY_PV=${PV/_/-}
+PYTHON_COMPAT=( python3_{10..11} )
+inherit distutils-r1 pypi
 
 DESCRIPTION="A simple library for creating beautiful interactive prompts"
 HOMEPAGE="
 	https://github.com/Exahilosys/survey
 	https://pypi.org/project/survey/
 "
-SRC_URI="https://github.com/Exahilosys/${PN}/archive/refs/tags/v${MY_PV}.tar.gz -> ${P}.gh.tar.gz"
-S="${WORKDIR}/${PN}-${MY_PV}"
 
 LICENSE="MIT"
 SLOT="0"
+KEYWORDS="~amd64 ~x86"

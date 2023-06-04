@@ -23,7 +23,9 @@ IUSE="openmp doc test"
 RESTRICT="!test? ( test )"
 
 CDEPEND="
-	dev-libs/toml-f:0/2
+	dev-libs/fortran-regex
+	dev-libs/jonquil:0/2
+	dev-libs/toml-f:0/4
 	dev-libs/M_CLI2
 "
 
@@ -64,7 +66,8 @@ set_build_flags() {
 	fi
 
 	BUILD_FLAGS=( --compiler "$(tc-getFC)"
-		--flag "${FCFLAGS} ${OMPFLAG} -I/usr/include/toml-f -I/usr/include/M_CLI2"
+		--flag "${FCFLAGS} ${OMPFLAG} -I/usr/include/fortran-regex -I/usr/include/jonquil/modules \
+						-I/usr/include/M_CLI2 -I/usr/include/toml-f/modules"
 		--c-compiler "$(tc-getCC)" --c-flag "${CFLAGS}"
 		--cxx-compiler "$(tc-getCXX)" --cxx-flag "${CXXFLAGS}"
 		--archiver "$(tc-getAR)" --link-flag "${LDFLAGS}" )

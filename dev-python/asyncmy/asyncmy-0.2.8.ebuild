@@ -1,4 +1,4 @@
-# Copyright 2022 Gentoo Authors
+# Copyright 2022-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -6,6 +6,7 @@ EAPI=8
 PYTHON_COMPAT=( python3_{10..11} )
 PYTHON_REQ_USE="ssl"
 DISTUTILS_USE_PEP517=poetry
+DISTUTILS_EXT=1
 inherit databases distutils-r1 optfeature
 
 DESCRIPTION="A fast asyncio MySQL driver"
@@ -62,11 +63,12 @@ python_test() {
 	epytest "${TEST_S}"
 }
 
-src_install() {
-	distutils-r1_src_install
+python_install() {
+	distutils-r1_python_install
 	find "${ED}"/usr/lib -name '*.md' -delete || die
+	find "${ED}"/usr/lib -name LICENSE -delete || die
 }
 
 pkg_postinst() {
-	optfeature "sha256_password and caching_sha2_password auth methods" dev-python/cryprography
+	optfeature "sha256_password and caching_sha2_password auth methods" dev-python/cryptography
 }
