@@ -1,0 +1,15 @@
+BDEPEND=sys-devel/gcc sys-devel/make dev-vcs/git virtual/pkgconfig
+DEFINED_PHASES=compile install postinst postrm preinst setup
+DEPEND=sys-devel/make kernel_linux? ( virtual/linux-sources ) kernel_linux? ( sys-apps/kmod[tools] dist-kernel? ( virtual/dist-kernel:= ) ) kernel_linux? ( virtual/linux-sources virtual/libelf )
+DESCRIPTION=CPU monitoring software designed for the 64-bits Processors, like top
+EAPI=8
+HOMEPAGE=https://www.cyring.fr/
+INHERIT=linux-mod systemd
+IUSE=doc systemd dist-kernel
+KEYWORDS=-* ~amd64
+LICENSE=GPL-2
+RDEPEND=sys-libs/glibc kernel_linux? ( sys-apps/kmod[tools] dist-kernel? ( virtual/dist-kernel:= ) )
+SLOT=0
+SRC_URI=https://github.com/cyring/corefreq/archive/1.96.2.tar.gz -> corefreq-1.96.2.tar.gz
+_eclasses_=toolchain-funcs	14a8ae365191b518fad51caad7a08f3e	multilib	c19072c3cd7ac5cb21de013f7e9832e0	linux-info	c4f1201b96a8a2c1f3b86cc8b2c71c91	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	linux-mod	073dc5c9bc044e85d704b503ebc764a2	systemd	5f4bb0758df2e483babf68cd517078ca
+_md5_=fb816dcf76ae7a84911b8f599f305569
