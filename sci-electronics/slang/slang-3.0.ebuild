@@ -3,7 +3,7 @@
 
 EAPI="8"
 
-PYTHON_COMPAT=( python3_{10..11} )
+PYTHON_COMPAT=( python3_{9..11} )
 inherit cmake python-single-r1
 
 DESCRIPTION="SystemVerilog compiler and language services"
@@ -31,7 +31,7 @@ RDEPEND="
 	${PYTHON_DEPS}
 	>=dev-cpp/catch-3.0.1
 	>=dev-libs/libfmt-9.1.0
-	>=dev-libs/unordered_dense-2.0.0 <dev-libs/unordered_dense-3.0.0
+	>=dev-libs/unordered_dense-2.0.1 <dev-libs/unordered_dense-2.0.2
 	$(python_gen_cond_dep '
 		>=dev-python/pybind11-2.10[${PYTHON_USEDEP}]
 	')
@@ -41,22 +41,14 @@ DEPEND="
 	${RDEPEND}
 "
 
-PATCHES=(
-	"${FILESDIR}/${PN}-2.0-fix-unordered-dense.patch"
-	"${FILESDIR}/${PN}-2.0-renamed-svlang.patch"
-	"${FILESDIR}/${PN}-2.0-fix-pkgconfig.patch"
-)
-
 src_configure() {
 	python_setup
-	# SLANG_SHARED_LIB_NAME=svlang because of name collision
-	# https://github.com/MikePopoloski/slang/issues/646
 	local mycmakeargs=(
 		-D CMAKE_INSTALL_LIBDIR="${EPREFIX}/usr/$(get_libdir)"
 		-D BUILD_SHARED_LIBS=ON
+		-D SLANG_USE_BOOST=OFF
 		-D SLANG_INCLUDE_PYLIB=$(usex python)
 		-D SLANG_INCLUDE_TESTS=$(usex test)
-		-D SLANG_SHARED_LIB_NAME="svlang"
 	)
 	cmake_src_configure
 }

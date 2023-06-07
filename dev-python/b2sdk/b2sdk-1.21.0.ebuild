@@ -21,7 +21,6 @@ PATCHES=(
 
 RDEPEND="
 	$(python_gen_cond_dep '
-		>=dev-python/arrow-1.0.2[${PYTHON_USEDEP}]
 		>=dev-python/logfury-1.0.1[${PYTHON_USEDEP}]
 		>=dev-python/requests-2.9.1[${PYTHON_USEDEP}]
 		>=dev-python/tqdm-4.5.0[${PYTHON_USEDEP}]
