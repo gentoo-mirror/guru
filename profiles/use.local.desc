@@ -27,6 +27,22 @@ app-misc/apidb:commands - Build commands
 app-misc/apidb:corelibs - Build Abtract layer
 app-misc/apidb:mariadb - Build MariaDB Layer
 app-misc/apidb:postgresql - Build PostgreSQL Layer
+app-misc/clifm:archive - Archive manipulation support (extraction/decompression, listing, repacking, mounting)
+app-misc/clifm:bleach - Support for Bleach, the built-in file names cleaner
+app-misc/clifm:emoji - Enable icons and set them to use the noto-emoji font (see media-fonts/noto-emoji)
+app-misc/clifm:fzf - Enable support for tab completion via app-shells/fzf
+app-misc/clifm:highlight - Syntax highlighting support
+app-misc/clifm:icons - Enable icons and set them to use icons-in-terminal (see https://github.com/sebastiencs/icons-in-terminal)
+app-misc/clifm:lira - Add Lira as the default built-in resource opener
+app-misc/clifm:magic - Use libmagic from sys-apps/file to query file MIME types (instead of using the output of the file command)
+app-misc/clifm:nerdfonts - Enable icons and set them to use NerdFonts
+app-misc/clifm:nls - Add translations support (via sys-devel/gettext)
+app-misc/clifm:posix - Force POSIX.1-2008 compliance, removing support for Linux-specific "file birth time" information
+app-misc/clifm:profiles - Enable support for creating, switching, renaming, and deleting of user profiles
+app-misc/clifm:qsort - Use Alexey Tourbin's faster qsort implementation
+app-misc/clifm:suggestions - Autosuggestion support
+app-misc/clifm:tags - Built-in file tagging system support
+app-misc/clifm:trash - FreeDesktop compliant trash system support
 app-misc/dbf:doc - build manpages
 app-misc/far2l:archive - Multiarc extended archives support
 app-misc/far2l:nfs - NFS support in NetRocks
@@ -36,7 +52,6 @@ app-misc/far2l:sftp - SFTP support in NetRocks
 app-misc/far2l:ssl - FTPS support in NetRocks
 app-misc/far2l:webdav - WebDav support in NetRocks
 app-misc/far2l:wxwidgets - GUI backend support
-app-portage/emlop:fish-completion - Enable fish completion support.
 app-text/klogg:lto - Build with link time optimization (LTO).
 dev-cpp/cpptoml:libcxx - Use libc++ for the C++ standard library
 dev-cpp/dpp:voice - Enable voice-chat support
@@ -488,7 +503,6 @@ net-misc/megasync:dolphin - Upload your files to your Mega account from Dolphin 
 net-misc/megasync:freeimage - Use freeimage to manage graphic images format.
 net-misc/megasync:nautilus - Upload your files to your Mega account from nautilus.
 net-misc/megasync:thunar - Upload your files to your Mega account from Thunar.
-net-misc/moonlight:vaapi - Enable support for hardware video decoding using media-libs/libva.
 net-misc/tinyssh:sodium - Use dev-libs/libsodium for cryptography
 net-misc/xmrig-mo:donate - Set the default donation level to 1% instead of 0
 net-misc/xmrig-mo:hwloc - Use sys-apps/hwloc for CPU affinity support
