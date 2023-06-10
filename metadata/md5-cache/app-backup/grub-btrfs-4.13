@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install postinst
+DEPEND=sys-fs/btrfs-progs sys-boot/grub app-alternatives/awk >=app-shells/bash-4 sys-fs/inotify-tools
+DESCRIPTION=Improves Grub by adding btrfs snapshots to the Grub menu.
+EAPI=8
+HOMEPAGE=https://github.com/Antynea/grub-btrfs
+INHERIT=optfeature
+IUSE=systemd
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=sys-fs/btrfs-progs sys-boot/grub app-alternatives/awk >=app-shells/bash-4 sys-fs/inotify-tools
+SLOT=0
+SRC_URI=https://github.com/Antynea/grub-btrfs/archive/4.13.tar.gz -> grub-btrfs-4.13.tar.gz
+_eclasses_=optfeature	222cb475c5a4f7ae7cfb0bf510a6fe54
+_md5_=045b18cd1db56798f95a381f090437f9

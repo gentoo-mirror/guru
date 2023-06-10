@@ -59,7 +59,6 @@ dev-cpp/drogon:brotli - Enable support for brotli compression
 dev-cpp/drogon:mariadb - Add support for the mariadb database
 dev-cpp/drogon:redis - Add support for the Redis database via dev-libs/hiredis
 dev-cpp/drogon:yaml - Add support for yaml config file
-dev-cpp/jwt-cpp:picojson - Enable use of dev-cpp/picojson
 dev-cpp/sprout:texconv - Install texconv from subproject compost
 dev-cpp/sprout:wavconv - Install texconv from subproject darkroom
 dev-cpp/tiny-dnn:double-precision - Build tiny-dnn with double precision computations
@@ -447,6 +446,16 @@ media-sound/drumgizmo:lv2 - Build LV2 plugin
 media-sound/drumgizmo:vst - Build VST plugin
 media-sound/jacktrip:rtaudio - Enable rtaudio backend
 media-sound/jacktrip:virtualstudio - Enable VirtualStudio extension
+media-sound/musikcube:alsa - Build plugin for alsa-out.
+media-sound/musikcube:basu - Build plugin to support MPRIS using basu.
+media-sound/musikcube:elogind - Build plugin to support MPRIS using elogind.
+media-sound/musikcube:libopenmpt - Build plugin to support playing MOD music aka tracker music through libopenmpt
+media-sound/musikcube:mpris - Build plugin to support MPRIS. needs systemd/elogind or basu USE flags. MPRIS (Media Player Remote Interfacing Specification) is a standard D-Bus interface which aims to provide a common programmatic API for controlling media players.
+media-sound/musikcube:pipewire - Build plugin to support pipewire.
+media-sound/musikcube:portaudio - Build plugin to support portaudio
+media-sound/musikcube:pulseaudio - Build plugin to support pulseaudio.
+media-sound/musikcube:sndio - Build plugin to support sndio
+media-sound/musikcube:systemd - Build plugin to support MPRIS using systemd.
 media-sound/ncpamixer:wide - Add ncurses wide characters support
 media-sound/nulloy:skins - Add a few themes, enable if you want dark
 media-sound/qpwgraph:trayicon - Build support for tray icon
