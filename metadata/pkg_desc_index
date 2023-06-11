@@ -78,7 +78,7 @@ app-admin/krapplet 0.3.1-r1: Krapplet (keyring applet): a Linux graphical passwo
 app-admin/oet 0.1.9 0.1.10 9999: Update your system into binpkgs in an overlay sandbox
 app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applications and tmux
 app-admin/pass-update 2.1: pass extension that provides an easy flow for updating passwords
-app-admin/pulumi-bin 3.68.0-r1 3.69.0: Infrastructure as code in any programming language
+app-admin/pulumi-bin 3.69.0 3.70.0: Infrastructure as code in any programming language
 app-admin/rbw 9999: unofficial bitwarden cli
 app-admin/s-tui 1.1.3-r1: Stress-Terminal UI monitoring tool
 app-admin/synadm 0.41.2: Command line admin tool for Synapse
@@ -176,7 +176,8 @@ app-misc/aw-core 0.11.0: Core library for ActivityWatch
 app-misc/brightness-control 2.4: Qt Brightness Controller in Python
 app-misc/brightnessctl 0.5.1: A program to read and control device brightness
 app-misc/cheat 4.2.3 4.3.3-r1: cheat allows you to create and view interactive cheatsheets on the command-line
-app-misc/clifm 1.8 1.9 1.10 1.11 9999: The command line file manager
+app-misc/clifm 1.8 1.10 1.11 1.12 9999: The command line file manager
+app-misc/corectrl 1.3.5 9999: Core control application
 app-misc/cpufetch 1.01 1.02 1.04: Simplistic yet fancy CPU architecture fetching tool
 app-misc/dbf 0.9.0: Command line tool to read the content of dBASE III, IV, and 5.0 files
 app-misc/diff-so-fancy 1.4.3-r1: Good-lookin' diffs. Actually... nah... The best-lookin' diffs
@@ -491,6 +492,7 @@ dev-cpp/cpptoml 0.1.1: Header-only library for parsing TOML
 dev-cpp/dpp 10.0.23 10.0.24: Lightweight C++ Discord bot library
 dev-cpp/drogon 1.8.3 1.8.4: C++14/17 based HTTP web application framework
 dev-cpp/dtl 1.20-r1: diff template library written by C++
+dev-cpp/easyloggingpp 9.97.0: C++ logging library
 dev-cpp/fbthrift 2023.02.06.00: Facebook's branch of Apache Thrift, including a new C++ server
 dev-cpp/fizz 2023.02.06.00: C++14 implementation of the TLS-1.3 standard
 dev-cpp/gsl-lite 0.38.0: C++ Guideline Support Library implementation
@@ -507,6 +509,7 @@ dev-cpp/std-format 0_pre20220112-r1: A simple polyfill allowing you to use std::
 dev-cpp/tiny-dnn 1.0.0_alpha3-r2: header only, dependency-free deep learning framework in C++14
 dev-cpp/trantor 1.5.10 1.5.11: Non-blocking I/O tcp network lib based on c++14/17
 dev-cpp/trompeloeil 43: Header only C++14 mocking framework
+dev-cpp/units 2.3.3: A compile-time, header-only, dimensional analysis and unit conversion library
 dev-cpp/vexcl 1.4.3-r2: VexCL - Vector expression template library for OpenCL
 dev-cpp/wangle 2023.02.06.00: Framework providing common client/server abstractions
 dev-cpp/workflow 0.10.2-r1 0.10.3 0.10.5 9999: C++ Parallel Computing and Asynchronous Networking Engine
@@ -570,7 +573,6 @@ dev-java/gluegen 2.3.2: Automatically generate the JNI code necessary to call C 
 dev-java/jargs 1.0: Command-line argument parsing library in Java
 dev-java/jcommon 1.0.24: A collection of useful classes used by JFreeChart, JFreeReport and others
 dev-java/jcuber 4.7-r1: Java reader library
-dev-java/jfreechart 1.0.19-r1: JFreeChart is a free Java class library for generating charts
 dev-java/jfreesvg 3.4.3: JFreeSVG is a fast, light-weight, vector graphics library for the Java platform
 dev-java/jgraph 5.14.0.0_p20180427: Open-source graph component for Java
 dev-java/jogl 2.3.2: Java(TM) Binding fot the OpenGL(TM) API
@@ -817,7 +819,6 @@ dev-python/aiomysql 0.1.1: aiomysql is a library for accessing a MySQL database 
 dev-python/aiopg 1.4.0: Postgres integration with asyncio
 dev-python/aiounittest 1.4.2: Test python asyncio-based code with ease
 dev-python/almost 0.1.5: A helper for approximate comparison
-dev-python/anyascii 0.3.1 9999: Unicode to ASCII transliteration
 dev-python/ascim 0.1.1: Manipulate ASCII art as you would do with raster images
 dev-python/asgi-lifespan 2.0.0 2.1.0: Programmatic startup/shutdown of ASGI apps
 dev-python/aspectlib 2.0.0: An aspect-oriented programming, monkey-patch and decorators library
@@ -988,7 +989,7 @@ dev-python/os-api-ref 2.3.0: Sphinx Extensions to support API reference sites in
 dev-python/oscrypto 1.3.0-r1: TLS sockets, key generation, encryption, decryption, signing, verification
 dev-python/ots-python 8.2.1: A Python wrapper for OpenType Sanitizer
 dev-python/parsel 1.7.0: Utility to extract data from XML/HTML documents using XPath or CSS selectors
-dev-python/pdm 2.5.4 2.6.1: Modern Python package and dependency manager supporting latest PEP standards
+dev-python/pdm 2.7.1: Modern Python package and dependency manager supporting latest PEP standards
 dev-python/pem 21.2.0: Easy PEM file parsing in Python
 dev-python/persist-queue 0.8.0: A thread-safe disk based persistent queue in Python
 dev-python/persistent 5.0: automatic persistence for Python objects
@@ -1002,7 +1003,6 @@ dev-python/portion 2.4.0: A Python library providing data structure and operatio
 dev-python/pproxy 2.7.8-r1: TCP/UDP asynchronous tunnel proxy implemented in Python3 asyncio
 dev-python/praw 7.6.1 7.7.0: Python Reddit API Wrapper
 dev-python/prawcore 2.3.0: Low-level communication layer for PRAW
-dev-python/promise 2.3.0: Promises/A+ implementation for Python
 dev-python/protego 0.2.1-r1: Pure-Python robots.txt parser with support for modern conventions
 dev-python/proxy_tools 0.1.0_p1: Simple proxy (as in the GoF design pattern)
 dev-python/psautohint 2.4.0-r1: Python wrapper for Adobe's PostScript autohinter
@@ -1098,7 +1098,7 @@ dev-python/stone 3.3.1: The Official Api Spec Language for Dropbox
 dev-python/strictyaml 1.6.1: A type-safe YAML parser built atop ruamel.yaml
 dev-python/stringbrewer 0.0.1-r1: Generate random strings matching a pattern
 dev-python/stringcase 1.2.0-r1: Convert string cases between camel case, pascal case, snake case etc.
-dev-python/survey 3.4.3 4.3.0: A simple library for creating beautiful interactive prompts
+dev-python/survey 3.4.3 4.4.0: A simple library for creating beautiful interactive prompts
 dev-python/svgelements 1.9.3: SVG Parsing for Elements, Paths, and other SVG Objects.
 dev-python/sysv_ipc 1.1.0: System V IPC primitives for python
 dev-python/tempus-themes 2.3.0.20220206: Accessible themes for Pygments
@@ -1188,7 +1188,7 @@ dev-util/DirectXShaderCompiler 1.7.2207-r1 1.7.2212: Microsoft DirectX Shader Co
 dev-util/FoBiS 3.0.5-r1: FoBiS.py, a Fortran Building System for poor men
 dev-util/afdko 3.9.5-r1: Adobe Font Development Kit for OpenType
 dev-util/babeltrace2 2.0.4: A command-line tool and library to read and convert trace files
-dev-util/bash-language-server 4.9.1 4.9.2: A language server for Bash
+dev-util/bash-language-server 4.9.2 4.10.0: A language server for Bash
 dev-util/bats-assert 2.0.0: Common assertions for Bats
 dev-util/bats-support 0.3.0: Supporting library for Bats test helpers
 dev-util/bazelisk 1.12.0: A user-friendly launcher for Bazel
@@ -1196,7 +1196,7 @@ dev-util/binaryen 105: Compiler and toolchain infrastructure library for WebAsse
 dev-util/cargo-make 0.35.9 0.35.10: Rust task runner and build tool
 dev-util/cmakelang 0.6.13: Provides Quality Assurance (QA) tools for cmake
 dev-util/deblob 0.4 9999: remove binary executables from a directory
-dev-util/dockerfile-language-server 0.9.0: A language server for Dockerfiles
+dev-util/dockerfile-language-server 0.9.0 0.10.2: A language server for Dockerfiles
 dev-util/eclipse-parallel-bin 4.27: Eclipse IDE for Scientific Computing (C, C++, Fortran)
 dev-util/exercism 3.1.0: Command line client for https://exercism.io
 dev-util/fnm 1.32.0 1.33.1: Fast and simple Node.js version manager
@@ -1372,7 +1372,7 @@ gui-apps/swww 0.7.3: Efficient animated wallpaper daemon for wayland, controlled
 gui-apps/szyszka 1.0.0: Simple, powerful and easy to use file renamer
 gui-apps/tessen 2.2.1-r1: an interactive menu to autotype and copy pass and gopass data
 gui-apps/tiramisu 1.0_p20201110 2.0.20211107 9999: minimalistic desktop notifications provider
-gui-apps/tofi 0.8.1: Fast and simple dmenu/rofi replacement for wlroots-based Wayland compositors
+gui-apps/tofi 0.8.1 0.9.1: Fast and simple dmenu/rofi replacement for wlroots-based Wayland compositors
 gui-apps/tootle 9999: Mastodon client written in GTK3
 gui-apps/wbg 1.0.2 1.1.0: Super simple wallpaper application
 gui-apps/wdisplays 1.0-r3 1.1 9999: GUI display configurator for wlroots compositors
@@ -1505,6 +1505,7 @@ media-video/ciano 0.2.4-r1: A multimedia file converter focused on simplicity
 media-video/ffsubsync 0.4.22 0.4.23 0.4.25: Automagically syncronize subtitles with video
 media-video/kikoplay 0.8.2 9999: KikoPlay is a full-featured danmu player
 media-video/megapixels 1.4.3: A GTK3 camera application that knows how to deal with the media request api
+media-video/obs-vaapi 0.2.0 9999: OBS Studio VAAPI support via GStreamer
 media-video/obs-vkcapture 1.1.3 1.1.4 1.2.0 1.3.3 9999: OBS Linux Vulkan/OpenGL game capture
 media-video/olive 9999: Free open-source non-linear video editor
 media-video/owncast 0.0.12 0.0.13: A self-hosted live video and web chat server
@@ -1539,7 +1540,7 @@ net-client/offpunk 1.8 1.9.1: Offline-First Gemini/Web/Gopher/RSS reader and bro
 net-client/starfish 1.2.0 1.3.1: A Gemini browser for elementary OS
 net-client/telescope 0.7.1 0.8.1: w3m-like browser for Gemini
 net-dialup/atinout 0.9.1-r1: AT commands as input are sent to modem and responses given as output
-net-dialup/tio 2.5: Simple TTY terminal application
+net-dialup/tio 2.6: Simple TTY terminal application
 net-fs/httpdirfs 1.2.0: Filesystem to mount HTTP directory listings, with a permanent cache
 net-fs/hubicfuse 3.0.1: Support for mounting HubiC drive in GNU/Linux
 net-im/Quaternion 0.0.95.1: A Qt-based IM client for Matrix
@@ -1637,7 +1638,7 @@ net-p2p/yggdrasil-go 0.4.7 9999: An experiment in scalable routing as an encrypt
 net-print/hpuld 1.00.39.15.00.23-r1: HP Unified Linux Driver (for samsung hardware)
 net-proxy/snowflake 2.5.1: Pluggable Transport using WebRTC, inspired by Flashproxy
 net-voip/discover-overlay 0.4.5 0.5.4 0.6.5: Yet another Discord overlay for Linux written in Python using GTK3
-net-voip/gnome-calls 44.0 44.1: Phone dialer and call handler
+net-voip/gnome-calls 44.1 44.2: Phone dialer and call handler
 net-voip/vvmd 0.8: vvmd is a lower level daemon that retrieves Visual Voicemail
 net-vpn/cloudflare-warp 2023.3.398: Cloudflare Warp Client
 net-vpn/fastd 22: A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
