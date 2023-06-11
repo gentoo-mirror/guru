@@ -3,7 +3,7 @@
 
 EAPI=8
 
-DISTUTILS_USE_PEP517=pdm
+DISTUTILS_USE_PEP517=pdm-backend
 PYTHON_COMPAT=( python3_{10..11} )
 
 inherit bash-completion-r1 distutils-r1 pypi
@@ -51,10 +51,6 @@ BDEPEND="
 	)
 "
 
-PATCHES=(
-	"${FILESDIR}/pdm-2.5.1-build-backend.patch"
-)
-
 distutils_enable_tests pytest
 
 python_compile_all() {
@@ -63,25 +59,10 @@ python_compile_all() {
 }
 
 python_test() {
-	local pdm_python_tests=(
-		tests/cli/test_add.py::test_add_editable_package
-		tests/cli/test_add.py::test_non_editable_override_editable
-		tests/cli/test_list.py::test_list_csv_include_exclude
-		tests/cli/test_list.py::test_list_csv_include_exclude_valid
-		tests/cli/test_list.py::test_list_dependency_graph_include_exclude
-		tests/test_project.py::test_project_packages_path
-		tests/cli/test_init.py::test_init_non_interactive
-		tests/cli/test_remove.py::test_remove_editable_packages_while_keeping_normal
-		tests/cli/test_venv.py::test_conda_backend_create
-		tests/models/test_backends.py::test_project_backend
-	)
-	local EPYTEST_DESELECT=("${pdm_python_tests[@]}")
 	epytest -m "not network"
 
-	EPYTEST_DESELECT=()
-	export PDM_PYTHON="${PYTHON}"
-	epytest -m "not network" "${pdm_python_tests[@]}"
-	unset PDM_PYTHON
+	# clear saved python version
+	rm -f .pdm-python
 }
 
 python_install_all() {
