@@ -1,0 +1,14 @@
+BDEPEND=verify-sig? ( sec-keys/openpgp-keys-emersion ) >=dev-lang/go-1.18 app-arch/unzip verify-sig? ( app-crypt/gnupg >=app-portage/gemato-16 )
+DEFINED_PHASES=compile install postinst unpack
+DESCRIPTION=A third-party, open-source ProtonMail CardDAV, IMAP and SMTP bridge
+EAPI=8
+HOMEPAGE=https://github.com/emersion/hydroxide
+INHERIT=go-module multiprocessing verify-sig
+IUSE=verify-sig
+KEYWORDS=~amd64
+LICENSE=MIT BSD
+RESTRICT=strip
+SLOT=0
+SRC_URI=https://github.com/emersion/hydroxide/releases/download/v0.2.27/hydroxide-0.2.27.tar.gz verify-sig? ( https://github.com/emersion/hydroxide/releases/download/v0.2.27/hydroxide-0.2.27.tar.gz.sig ) https://github.com/sevz17/go-deps/releases/download/hydroxide-0.2.27/hydroxide-0.2.27-deps.tar.xz
+_eclasses_=multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	513c31b3346458ed1f3878b57da6d61c	multilib	c19072c3cd7ac5cb21de013f7e9832e0	go-module	9c75e51a48520b2f01471c1f91762882	verify-sig	ed3712fa46ee0fdc2dbbad539e20ff26
+_md5_=37725303047d89c7964d0e2267790e96

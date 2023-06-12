@@ -68,7 +68,7 @@ app-admin/chezmoi 2.34.0: Manage your dotfiles across multiple machines, securel
 app-admin/customrescuecd-x86 0.4.1: A system rescue cd or usbstick for desktop and server based on gentoo
 app-admin/customrescuecd-x86_64 0.12.7 0.12.8: A system rescue cd or usbstick for desktop and server based on gentoo
 app-admin/enpass-desktop-bin 6.7.4.933: A cross-platform, complete password management solution
-app-admin/gentoo_update 0.1.2: Gentoo Linux updater
+app-admin/gentoo_update 0.1.3: Gentoo Linux updater
 app-admin/grub-customizer 5.1.0: A graphical grub2 settings manager
 app-admin/himitsu 0.3 9999: Secret storage system for Unix, suitable for storing passwords, keys, ...
 app-admin/himitsu-ssh 0.1-r1 9999: SSH integration for Himitsu
@@ -241,7 +241,7 @@ app-office/pyspread 2.1.1: Pyspread is a non-traditional spreadsheet written in 
 app-portage/appswipe 1.1.14: Application for browsing your local Portage repository files
 app-portage/gentle 0.1: Gentoo Lazy Entry - a metadata.xml generator
 app-portage/gentoo-sweep 0.1.2a: Check your gentoo installation for unwanted cruft, forgotten files
-app-portage/pacvis 0.4.2: Displays dependency graphs of packages
+app-portage/pacvis 0.4.2 0.4.2-r1: Displays dependency graphs of packages
 app-portage/portage-lostfiles 0.5.2: A simple script to identify files not tracked by Portage package manager
 app-portage/portconf 1.6.8-r1: /etc/portage cleaner
 app-portage/quantum-resolver 9999: A WIP portage dependency resolver
@@ -850,7 +850,7 @@ dev-python/bumpfontversion 0.4.1: Bumps the version of a font source file
 dev-python/celery 5.3.0_beta1-r1 5.3.0_beta2: Asynchronous task queue/job queue based on distributed message passing
 dev-python/cffsubr 0.2.9_p1: Standalone CFF subroutinizer based on AFDKO tx tool
 dev-python/click-command-tree 1.1.1: click plugin to show the command tree of your CLI
-dev-python/click-option-group 0.5.5: Option groups missing in Click
+dev-python/click-option-group 0.5.5 0.5.6: Option groups missing in Click
 dev-python/click-repl 0.2.0-r1: Subcommand REPL for click apps
 dev-python/clufter 0.77.2: Tool/library for transforming/analyzing cluster configuration formats
 dev-python/cmarkgfm 2022.10.27: Python bindings for GitHub's cmark
@@ -962,7 +962,7 @@ dev-python/mastodon-py 1.8.0 1.8.1: Python wrapper for the Mastodon API
 dev-python/material-color-utilities 0.1.5 9999: Python port of material-color-utilities used for Material You colors
 dev-python/mautrix 0.19.15 0.19.16: A Python 3 asyncio Matrix framework
 dev-python/minio 7.1.14 7.1.15: MinIO Client SDK for Python
-dev-python/mistletoe 1.0.1: A fast, extensible and spec-compliant Markdown parser in pure Python.
+dev-python/mistletoe 1.0.1 1.1.0: A fast, extensible and spec-compliant Markdown parser in pure Python.
 dev-python/mitype 0.2.4: Typing speed test in terminal
 dev-python/mkdocs-blog-plugin 9999: Plugin for MkDocs to keep a simple blog section inside your documentation.
 dev-python/mkdocs-exclude 1.0.2-r1: Lets you exclude files or trees from your output
@@ -1586,7 +1586,7 @@ net-libs/udt 4.11_p20181126: UDT is a UDP based data transport protocol
 net-libs/ulfius 2.7.13: HTTP Framework for REST Applications in C
 net-libs/usockets 0.8.1_p20211023 9999: tiny eventing, networking & crypto for async applications
 net-mail/dovecot-fts-xapian 1.5.4 1.5.5 9999: Dovecot FTS plugin backed by Xapian
-net-mail/hydroxide 0.2.23 0.2.24 0.2.26 9999: A third-party, open-source ProtonMail CardDAV, IMAP and SMTP bridge
+net-mail/hydroxide 0.2.23 0.2.24 0.2.26 0.2.27 9999: A third-party, open-source ProtonMail CardDAV, IMAP and SMTP bridge
 net-misc/FORT-validator 1.5.2 1.5.3 1.5.3_p20220607: FORT validator is an open source RPKI validator
 net-misc/can-utils 2021.08.0 2023.03 9999-r3: CAN userspace utilities and tools
 net-misc/clatd 1.6: A CLAT / SIIT-DC Edge Relay implementation for Linux
@@ -1648,11 +1648,12 @@ net-wireless/rtl8723bu 9999: Driver for the rtl8723 wireless chipset
 net-wireless/rtl8821ce 0_pre20230504: Realtek RTL8821CE Driver module for Linux kernel
 net-wireless/rtl8821cu 0_pre20230428: Realtek 8821CU/RTL8811CU module for Linux kernel
 sci-biology/cmdock 0.2.0: Program for docking ligands to proteins and nucleic acids
-sci-biology/geneathome 1.10-r3: BOINC application for expanding Gene Regulatory Networks (GRN)
+sci-biology/geneathome 1.10-r5: BOINC application for expanding Gene Regulatory Networks (GRN)
 sci-chemistry/vesta-bin 3.5.8: Visualisation for Electronic and STructural Analysis.
 sci-chemistry/xcrysden 1.6.2: For the visualisation of molecular and crystal structures.
 sci-electronics/bluespec 2022.01-r1 2023.01 9999: Toolchain for the Bluespec Hardware Definition Language
 sci-electronics/circt 1.14.0 1.37.0: The fast free Verilog/SystemVerilog simulator
+sci-electronics/coil64 2.1.27: Coil64 is inductance coil calculator
 sci-electronics/dsview 1.2.1 9999: An open source multi-function instrument
 sci-electronics/kactus2 3.10.0 9999: A open source IP-XACT-based tool
 sci-electronics/liblxi 1.16 1.18: Implementation of the LAN eXtensions for Instrumentation (LXI)
@@ -1894,7 +1895,7 @@ www-apps/snac 2.25 2.26: A simple, minimalistic ActivityPub instance
 www-apps/uwebsockets 20.11.0 20.14.0 9999: ultra fast, simple, secure & standards compliant web I/O
 www-client/badwolf 1.2.2 9999: Minimalist and privacy-oriented WebKitGTK+ browser
 www-client/browsh 1.6.4_p1: A fully-modern text-based browser, rendering to TTY and browsers
-www-client/nyxt 3.0.0 3.1.0 9999: Nyxt - the hacker's power-browser
+www-client/nyxt 3.1.0 3.2.0 9999: Nyxt - the hacker's power-browser
 www-client/vimb 3.6.0 9999: a fast, lightweight, vim-like browser based on webkit
 www-client/woob 3.1-r1 9999: Web Outside Of Browsers (core, site modules and applications)
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits
