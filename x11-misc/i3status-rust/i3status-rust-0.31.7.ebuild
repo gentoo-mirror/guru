@@ -7,6 +7,7 @@ EAPI=8
 
 CRATES="
 	aho-corasick-1.0.1
+	android-tzdata-0.1.1
 	android_system_properties-0.1.5
 	anstream-0.3.2
 	anstyle-1.0.0
@@ -22,25 +23,26 @@ CRATES="
 	async-recursion-1.0.4
 	async-trait-0.1.68
 	autocfg-1.1.0
+	backon-0.4.1
 	base64-0.13.1
-	base64-0.21.0
+	base64-0.21.2
 	bitflags-1.3.2
 	block-buffer-0.10.4
-	bumpalo-3.12.2
+	bumpalo-3.13.0
 	byteorder-1.4.3
 	bytes-1.4.0
-	calibright-0.1.3
+	calibright-0.1.4
 	cc-1.0.79
 	cfg-if-1.0.0
 	charset-0.1.3
-	chrono-0.4.24
+	chrono-0.4.26
 	chrono-tz-0.8.2
 	chrono-tz-build-0.1.0
-	clap-4.2.7
-	clap_builder-4.2.7
-	clap_derive-4.2.0
-	clap_lex-0.4.1
-	clap_mangen-0.2.10
+	clap-4.3.1
+	clap_builder-4.3.1
+	clap_derive-4.3.1
+	clap_lex-0.5.0
+	clap_mangen-0.2.12
 	colorchoice-1.0.0
 	concurrent-queue-2.2.0
 	convert_case-0.6.0
@@ -56,9 +58,9 @@ CRATES="
 	darling_core-0.20.1
 	darling_macro-0.10.2
 	darling_macro-0.20.1
-	data-encoding-2.3.3
+	data-encoding-2.4.0
 	derivative-2.2.0
-	digest-0.10.6
+	digest-0.10.7
 	dirs-5.0.1
 	dirs-sys-0.4.1
 	either-1.8.1
@@ -89,6 +91,7 @@ CRATES="
 	generic-array-0.14.7
 	gethostname-0.2.3
 	getrandom-0.2.9
+	glob-0.3.1
 	h2-0.3.19
 	hashbrown-0.12.3
 	heck-0.4.1
@@ -111,7 +114,7 @@ CRATES="
 	inotify-0.9.6
 	inotify-sys-0.1.5
 	instant-0.1.12
-	io-lifetimes-1.0.10
+	io-lifetimes-1.0.11
 	ipnet-2.7.2
 	is-terminal-0.4.7
 	itertools-0.8.2
@@ -124,15 +127,15 @@ CRATES="
 	libpulse-binding-2.27.1
 	libpulse-sys-1.20.1
 	libsensors-sys-0.2.0
-	linux-raw-sys-0.3.7
-	log-0.4.17
+	linux-raw-sys-0.3.8
+	log-0.4.18
 	maildir-0.6.4
 	mailparse-0.14.0
 	memchr-2.5.0
 	memoffset-0.7.1
 	mime-0.3.17
 	minimal-lexical-0.2.1
-	mio-0.8.6
+	mio-0.8.8
 	native-tls-0.2.11
 	neli-0.6.4
 	neli-proc-macros-0.1.3
@@ -142,14 +145,13 @@ CRATES="
 	notify-5.2.0
 	notmuch-0.8.0
 	num-derive-0.3.3
-	num-integer-0.1.45
 	num-traits-0.2.15
 	num_cpus-1.15.0
-	once_cell-1.17.1
-	openssl-0.10.52
+	once_cell-1.17.2
+	openssl-0.10.54
 	openssl-macros-0.1.1
 	openssl-probe-0.1.5
-	openssl-sys-0.9.87
+	openssl-sys-0.9.88
 	option-ext-0.2.0
 	ordered-stream-0.2.0
 	pandoc-0.8.10
@@ -160,16 +162,18 @@ CRATES="
 	phf_codegen-0.11.1
 	phf_generator-0.11.1
 	phf_shared-0.11.1
+	pin-project-1.1.0
+	pin-project-internal-1.1.0
 	pin-project-lite-0.2.9
 	pin-utils-0.1.0
 	pkg-config-0.3.27
 	polling-2.8.0
 	ppv-lite86-0.2.17
 	proc-macro-crate-1.3.1
-	proc-macro2-1.0.58
+	proc-macro2-1.0.59
 	pure-rust-locales-0.5.6
 	quick-xml-0.28.2
-	quote-1.0.27
+	quote-1.0.28
 	quoted_printable-0.4.8
 	rand-0.8.5
 	rand_chacha-0.3.1
@@ -177,15 +181,15 @@ CRATES="
 	redox_syscall-0.2.16
 	redox_syscall-0.3.5
 	redox_users-0.4.3
-	regex-1.8.1
-	regex-syntax-0.7.1
+	regex-1.8.3
+	regex-syntax-0.7.2
 	reqwest-0.11.18
 	roff-0.2.1
 	rustix-0.37.19
 	ryu-1.0.13
 	same-file-1.0.6
 	schannel-0.1.21
-	security-framework-2.9.0
+	security-framework-2.9.1
 	security-framework-sys-2.9.0
 	sensors-0.2.2
 	serde-1.0.163
@@ -211,7 +215,7 @@ CRATES="
 	swayipc-async-2.0.1
 	swayipc-types-1.3.0
 	syn-1.0.109
-	syn-2.0.16
+	syn-2.0.18
 	tempfile-3.5.0
 	termcolor-1.2.0
 	thiserror-1.0.40
@@ -221,13 +225,13 @@ CRATES="
 	time-macros-0.2.9
 	tinyvec-1.6.0
 	tinyvec_macros-0.1.1
-	tokio-1.28.1
+	tokio-1.28.2
 	tokio-macros-2.1.0
 	tokio-native-tls-0.3.1
 	tokio-util-0.7.8
 	toml-0.7.4
 	toml_datetime-0.6.2
-	toml_edit-0.19.9
+	toml_edit-0.19.10
 	tower-service-0.3.2
 	tracing-0.1.37
 	tracing-attributes-0.1.24
@@ -236,7 +240,7 @@ CRATES="
 	typenum-1.16.0
 	uds_windows-1.0.2
 	unicode-bidi-0.3.13
-	unicode-ident-1.0.8
+	unicode-ident-1.0.9
 	unicode-normalization-0.1.22
 	unicode-segmentation-1.10.1
 	url-2.3.1
@@ -320,6 +324,7 @@ QA_FLAGS_IGNORED="usr/bin/i3status-rs"
 
 src_configure() {
 	local myfeatures=(
+		$(usex debug debug_borders "")
 		$(usev notmuch)
 		maildir
 	)
@@ -336,7 +341,7 @@ src_compile() {
 src_install() {
 	cargo_src_install
 	use man && doman man/i3status-rs.1
-	insinto /usr/share/"${PN}"
+	insinto /usr/share/${PN}
 	doins -r files/icons files/themes
 	dodoc NEWS.md
 	docinto examples
