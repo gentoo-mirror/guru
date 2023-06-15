@@ -68,7 +68,7 @@ app-admin/chezmoi 2.34.0: Manage your dotfiles across multiple machines, securel
 app-admin/customrescuecd-x86 0.4.1: A system rescue cd or usbstick for desktop and server based on gentoo
 app-admin/customrescuecd-x86_64 0.12.7 0.12.8: A system rescue cd or usbstick for desktop and server based on gentoo
 app-admin/enpass-desktop-bin 6.7.4.933: A cross-platform, complete password management solution
-app-admin/gentoo_update 0.1.3: Gentoo Linux updater
+app-admin/gentoo_update 0.1.4: Gentoo Linux updater
 app-admin/grub-customizer 5.1.0: A graphical grub2 settings manager
 app-admin/himitsu 0.3 9999: Secret storage system for Unix, suitable for storing passwords, keys, ...
 app-admin/himitsu-ssh 0.1-r1 9999: SSH integration for Himitsu
@@ -78,10 +78,10 @@ app-admin/krapplet 0.3.1-r1: Krapplet (keyring applet): a Linux graphical passwo
 app-admin/oet 0.1.9 0.1.10 9999: Update your system into binpkgs in an overlay sandbox
 app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applications and tmux
 app-admin/pass-update 2.1: pass extension that provides an easy flow for updating passwords
-app-admin/pulumi-bin 3.69.0 3.70.0: Infrastructure as code in any programming language
+app-admin/pulumi-bin 3.70.0 3.71.0: Infrastructure as code in any programming language
 app-admin/rbw 9999: unofficial bitwarden cli
 app-admin/s-tui 1.1.3-r1: Stress-Terminal UI monitoring tool
-app-admin/synadm 0.41.2: Command line admin tool for Synapse
+app-admin/synadm 0.41.2 0.41.3: Command line admin tool for Synapse
 app-admin/terragrunt-bin 0.38.6 0.45.4: A thin wrapper for Terraform
 app-admin/zenmonitor3 2.0.0: Zen monitor is monitoring software for AMD Zen-based CPUs
 app-arch/fuse-archive 0.1.14: Read-only FUSE file system for mounting archives and compressed files
@@ -96,6 +96,7 @@ app-backup/pika-backup 0.6.0 0.6.1: Keep your data safe
 app-backup/timeshift 21.09.1-r3 22.06.5-r2 22.11.1-r1: A system restore utility for Linux
 app-backup/timeshift-autosnap 0.9: Automatically creates a timeshift-snapshot when executed
 app-benchmarks/phoronix-test-suite 9999: Phoronix's comprehensive, cross-platform testing and benchmark suite
+app-benchmarks/poop 9999: Performance Optimizer Observation Platform
 app-containers/dnsname-cni-plugin 1.3.0 1.3.1 9999: name resolution for containers
 app-containers/nvidia-container-toolkit 1.12.1 1.13.1 9999: NVIDIA container runtime toolkit
 app-containers/waydroid 1.4.0: Container-based approach to boot a full Android system on Linux systems
@@ -110,7 +111,7 @@ app-crypt/ifcplugin-bin 3.1.1.0: Crypto Interface Web Browser Plugin
 app-crypt/intel-ipsec-mb 1.1 1.2 1.3 9999: Multi-Buffer Crypto for IPSec from Intel
 app-crypt/pinentry-bemenu 0.11.0 0.12.0: Pinentry based on bemenu
 app-crypt/reop 2.1.1: reasonable expectation of privacy
-app-crypt/tang 12 13: Tang binding daemon
+app-crypt/tang 13 14: Tang binding daemon
 app-crypt/tomb 2.9-r6: Tomb :: File Encryption on GNU/Linux
 app-crypt/tpm2-openssl 1.1.1: OpenSSL Provider for TPM2 integration
 app-crypt/uacme 1.7.1: ACMEv2 client written in plain C with minimal dependencies
@@ -209,7 +210,7 @@ app-misc/onefetch 2.17.1: Command-line Git information tool
 app-misc/pfetch 0.6.0: A pretty system information tool written in POSIX sh
 app-misc/pipes-rs 1.6.1: An over-engineered rewrite of pipes.sh in Rust
 app-misc/powerpanel 1.4.1-r1: PowerPanel software for CyberPower UPS systems
-app-misc/pueue 3.1.2: A cli tool for managing long running shell commands.
+app-misc/pueue 3.2.0: A cli tool for managing long running shell commands.
 app-misc/pup 0.4.0_p1: Parsing HTML at the command line
 app-misc/rememberthemilk 1.3.11-r1: Freemium simple to-do tasks manager
 app-misc/s6-man 9999: mdoc versions of the HTML documentation for the s6 supervision suite
@@ -962,7 +963,7 @@ dev-python/mastodon-py 1.8.0 1.8.1: Python wrapper for the Mastodon API
 dev-python/material-color-utilities 0.1.5 9999: Python port of material-color-utilities used for Material You colors
 dev-python/mautrix 0.19.15 0.19.16: A Python 3 asyncio Matrix framework
 dev-python/minio 7.1.14 7.1.15: MinIO Client SDK for Python
-dev-python/mistletoe 1.0.1 1.1.0: A fast, extensible and spec-compliant Markdown parser in pure Python.
+dev-python/mistletoe 1.0.1 1.1.0-r1: A fast, extensible and spec-compliant Markdown parser in pure Python.
 dev-python/mitype 0.2.4: Typing speed test in terminal
 dev-python/mkdocs-blog-plugin 9999: Plugin for MkDocs to keep a simple blog section inside your documentation.
 dev-python/mkdocs-exclude 1.0.2-r1: Lets you exclude files or trees from your output
@@ -1085,7 +1086,7 @@ dev-python/sphinx-hoverxref 1.3.0: Sphinx extension to show tooltips with conten
 dev-python/sphinx-rtd-dark-mode 1.2.4: Dark mode for the Sphinx Read the Docs theme
 dev-python/sphinx-sitemap 2.2.1 2.5.0: Sitemap generator for Sphinx
 dev-python/sphinx-version-warning 1.1.2: Sphinx extension to add a warning banner
-dev-python/sphinxcontrib-katex 0.9.4: KaTeX Sphinx extension for rendering of math in HTML pages
+dev-python/sphinxcontrib-katex 0.9.4 0.9.6: KaTeX Sphinx extension for rendering of math in HTML pages
 dev-python/sphinxcontrib-restbuilder 0.3-r1: A Sphinx builder/writer to output reStructuredText (rst) files
 dev-python/sphinxcontrib-zopeext 0.4.2-r1: Sphinx extension for using Zope interfaces
 dev-python/sre-yield 1.2-r1: Python module to generate regular all expression matches
@@ -1110,7 +1111,7 @@ dev-python/trailrunner 1.2.1: Walk paths and run things
 dev-python/transaction 3.0.1-r1 3.1.0: Transaction management for Python
 dev-python/trueskill 0.4.5_p20220422: Python Implementation of the TrueSkill Algorithm
 dev-python/ttfautohint-py 0.5.1-r1: Python wrapper for ttfautohint, a free auto-hinter for TrueType fonts
-dev-python/tulir-telethon 1.28.0_alpha9-r1 1.29.0_alpha1: Pure Python 3 MTProto API Telegram client library, for bots too!
+dev-python/tulir-telethon 1.29.0_alpha1 1.29.0_alpha2: Pure Python 3 MTProto API Telegram client library, for bots too!
 dev-python/tweepy 4.14.0: An easy-to-use Python library for accessing the Twitter API.
 dev-python/types-paramiko 2.10.0 2.11.1: Typing stubs for paramiko
 dev-python/types-protobuf 4.23.0.1: Typing stubs for protobuf
@@ -1229,6 +1230,7 @@ dev-util/stripe-cli 9999: A command-line tool for Stripe
 dev-util/tflint-bin 0.43.0 0.46.0: A Pluggable Terraform Linter
 dev-util/tokei 12.1.1 12.1.2: Count code, quickly
 dev-util/typescript-language-server 3.3.1 3.3.2: TypeScript & JavaScript Language Server
+dev-util/upstream-ontologist 0.1.35: Tracking of upstream project metadata
 dev-util/vala-language-server 0.48.4: Code Intelligence for Vala & Genie
 dev-util/vscode-langservers-extracted 4.6.0 4.7.0: HTML/CSS/JSON/ESLint/Markdown language servers extracted from vscode.
 dev-util/wakatime-cli 1.27.0 1.28.6: Command line interface to WakaTime used by all WakaTime plugins
@@ -1261,6 +1263,7 @@ games-arcade/taisei 1.3.2-r2 9999: Clone of the Touhou series, written in C usin
 games-board/fairy-stockfish 14.0.1: Chess variant engine derived from Stockfish to support fairy chess variants
 games-board/openriichi 0.2.1.1: OpenRiichi is an open source Japanese Mahjong client
 games-board/rmahjong 0.4_p20201106: Riichi Mahjong, the Japanese variant of the Chinese game Mahjong for 4 players
+games-emulation/RetroArch 1.15.0: RetroArch is a frontend for emulators, game engines and media players
 games-emulation/citra 9999: A Nintendo 3DS Emulator
 games-emulation/citra-canary 9999: A Nintendo 3DS Emulator
 games-emulation/dosbox-x 2023.05.01 9999: Complete, accurate DOS emulator forked from DOSBox
@@ -1410,6 +1413,7 @@ media-fonts/firacode-nerdfont 2.2.2 3.0.1: A free and open-source typeface for d
 media-fonts/firago 1.001: A continuation of FiraSans
 media-fonts/gohufont 2.1_p20170627: A monospace bitmap font
 media-fonts/inconsolata_dz 20201205: A beautiful sans-serif monotype font designed for code listings
+media-fonts/intel-one-mono 1.2.1: An expressive monospaced font family
 media-fonts/iosevka-nerdfont 2.2.2 2.3.3 3.0.1: A free and open-source typeface for developers
 media-fonts/jetbrainsmono-nerdfont 2.2.2 3.0.1: A free and open-source typeface for developers
 media-fonts/last-resort 14.000 15.000: A collection of glyphs used as the backup of "last resort" to any other font
@@ -1843,7 +1847,6 @@ sys-fs/gcsfuse 0.42.4: A user-space file system for interacting with Google Clou
 sys-fs/gdu 5.13.2 5.14.0: Disk usage analyzer with console interface written in Go
 sys-fs/gfs2-utils 3.4.1: Shared-disk cluster file system
 sys-fs/ntfs2btrfs 20230501: Conversion tool from NTFS to Btrfs
-sys-fs/python-btrfs 13-r1: Python 3 module to inspect btrfs filesystems
 sys-fs/ufiformat 0.9.9: USB Floppy Disk formatting tool
 sys-kernel/dkms 2.8.4 3.0.10: Dynamic Kernel Module Support
 sys-kernel/dpdk-kmod 21.11.1 22.07 23.03: DPDK Kernel Nic Interface module
@@ -1921,7 +1924,7 @@ x11-misc/greenclip-bin 4.2: Simple clipboard manager to be integrated with rofi
 x11-misc/gromit-mpx 1.4.3 9999: Gromit-MPX is a multi-pointer GTK3 port of the Gromit desktop annotation tool
 x11-misc/i3lock-color 2.13.2 2.13.4 9999: The world's most popular non-default computer lockscreen
 x11-misc/i3lock-fancy-rapid 0.0.0_pre20201109-r1 0.0.0_pre20210421: A faster implementation of i3lock-fancy
-x11-misc/i3status-rust 0.31.6: A feature-rich and resource-friendly replacement for i3status, written in Rust.
+x11-misc/i3status-rust 0.31.7: A feature-rich and resource-friendly replacement for i3status, written in Rust.
 x11-misc/ksnip 1.9.2 1.10.0-r1 1.10.1: Ksnip is a Qt based cross-platform screenshot tool
 x11-misc/leftwm-theme 9999: A theme mangager for LeftWM
 x11-misc/picom-jonaburg 9999: A lightweight compositor for X11 (previously a compton fork)
