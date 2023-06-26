@@ -18,6 +18,7 @@ acct-group/monero 0: System group: monero
 acct-group/nitter 0: System group: nitter
 acct-group/owncast 0: Group for media-video/owncast
 acct-group/paludisbuild 0: System group: paludisbuild
+acct-group/pleroma 0: Group for www-apps/pleroma
 acct-group/purritobin 0: Group for net-misc/purritobin
 acct-group/signald 0: Group for signald
 acct-group/snac 0: System group: snac
@@ -48,6 +49,7 @@ acct-user/monero 0: System user: monero
 acct-user/nitter 0: System user: nitter
 acct-user/owncast 0: User for media-video/owncast
 acct-user/paludisbuild 0: Build user for sys-apps/paludis
+acct-user/pleroma 0: User for www-apps/pleroma
 acct-user/purritobin 0: User for net-misc/purritobin
 acct-user/signald 0: User for signald
 acct-user/snac 0: System user: snac
@@ -64,11 +66,11 @@ app-admin/ananicy-cpp 1.0.0_rc6-r1: Ananicy rewritten in C++ for much lower CPU 
 app-admin/antidot 0.6.3: Cleans up your $HOME from those pesky dotfiles
 app-admin/aws-vault 7.2.0: Securely store and access AWS credentials in development environments
 app-admin/chamber 2.10.9 2.10.12: Managing secrets in AWS SSM Parameter Store
-app-admin/chezmoi 2.34.0: Manage your dotfiles across multiple machines, securely
+app-admin/chezmoi 2.34.2: Manage your dotfiles across multiple machines, securely
 app-admin/customrescuecd-x86 0.4.1: A system rescue cd or usbstick for desktop and server based on gentoo
 app-admin/customrescuecd-x86_64 0.12.7 0.12.8: A system rescue cd or usbstick for desktop and server based on gentoo
 app-admin/enpass-desktop-bin 6.7.4.933: A cross-platform, complete password management solution
-app-admin/gentoo_update 0.1.4: Gentoo Linux updater
+app-admin/gentoo_update 0.1.6: Gentoo Linux updater
 app-admin/grub-customizer 5.1.0: A graphical grub2 settings manager
 app-admin/himitsu 0.3 9999: Secret storage system for Unix, suitable for storing passwords, keys, ...
 app-admin/himitsu-ssh 0.1-r1 9999: SSH integration for Himitsu
@@ -78,7 +80,7 @@ app-admin/krapplet 0.3.1-r1: Krapplet (keyring applet): a Linux graphical passwo
 app-admin/oet 0.1.9 0.1.10 9999: Update your system into binpkgs in an overlay sandbox
 app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applications and tmux
 app-admin/pass-update 2.1: pass extension that provides an easy flow for updating passwords
-app-admin/pulumi-bin 3.71.0 3.72.0: Infrastructure as code in any programming language
+app-admin/pulumi-bin 3.71.0 3.72.0 3.72.2 3.73.0: Infrastructure as code in any programming language
 app-admin/rbw 9999: unofficial bitwarden cli
 app-admin/s-tui 1.1.3-r1: Stress-Terminal UI monitoring tool
 app-admin/synadm 0.41.2 0.41.3: Command line admin tool for Synapse
@@ -98,7 +100,7 @@ app-backup/timeshift-autosnap 0.9: Automatically creates a timeshift-snapshot wh
 app-benchmarks/phoronix-test-suite 9999: Phoronix's comprehensive, cross-platform testing and benchmark suite
 app-benchmarks/poop 9999: Performance Optimizer Observation Platform
 app-containers/dnsname-cni-plugin 1.3.0 1.3.1 9999: name resolution for containers
-app-containers/nvidia-container-toolkit 1.12.1 1.13.1 9999: NVIDIA container runtime toolkit
+app-containers/nvidia-container-toolkit 1.12.1 1.13.1 1.13.2 9999: NVIDIA container runtime toolkit
 app-containers/waydroid 1.4.0: Container-based approach to boot a full Android system on Linux systems
 app-crypt/PBinCLI 0.3.2: PrivateBin CLI
 app-crypt/autofirma 1.7.1: Spanish government's electronic signature application for online procedures
@@ -138,7 +140,6 @@ app-doc/ford 6.1.17-r1 6.2.0 6.2.4 6.2.5: FORD, automatic documentation generato
 app-doc/openbsd-manpages 6.9 7.0: OpenBSD manual pages
 app-doc/stdman 2022.07.30 9999: Formatted C++ stdlib man pages (cppreference)
 app-editors/amp 0.6.2: A complete text editor for your terminal.
-app-editors/atom-bin 1.58.0-r1: A hackable text editor for the 21st Century
 app-editors/imhex 1.28.0: A hex editor for reverse engineers, programmers, and eyesight
 app-editors/kak-lsp 12.2.1: Kakoune Language Server Protocol Client
 app-editors/kitscenarist 0.7.2_rc9: Simple and powerful application for creating screenplays.
@@ -206,7 +207,7 @@ app-misc/neo 0.6.1 9999: cmatrix clone with 32-bit color and Unicode support
 app-misc/nerdfetch 5.0.2: A POSIX *nix fetch script using Nerdfonts
 app-misc/nonsense 0.7-r1: Generates random text from datafiles and templates
 app-misc/nwg-look 0.2.1 0.2.2: GTK3 settings editor adapted to work in the sway / wlroots environment
-app-misc/onefetch 2.17.1: Command-line Git information tool
+app-misc/onefetch 2.18.0: Command-line Git information tool
 app-misc/pfetch 0.6.0: A pretty system information tool written in POSIX sh
 app-misc/pipes-rs 1.6.1: An over-engineered rewrite of pipes.sh in Rust
 app-misc/powerpanel 1.4.1-r1: PowerPanel software for CyberPower UPS systems
@@ -241,7 +242,7 @@ app-office/obsidian 1.2.8: A second brain, for you, forever.
 app-office/openoffice-bin 4.1.14: Apache OpenOffice productivity suite
 app-office/pyspread 2.1.1: Pyspread is a non-traditional spreadsheet written in Python
 app-portage/appswipe 1.1.14: Application for browsing your local Portage repository files
-app-portage/gentle 0.1: Gentoo Lazy Entry - a metadata.xml generator
+app-portage/gentle 0.2 0.3.0: Gentoo Lazy Entry - a metadata.xml generator
 app-portage/gentoo-sweep 0.1.2a: Check your gentoo installation for unwanted cruft, forgotten files
 app-portage/pacvis 0.4.2 0.4.2-r1: Displays dependency graphs of packages
 app-portage/portage-lostfiles 0.5.2: A simple script to identify files not tracked by Portage package manager
@@ -281,7 +282,7 @@ app-text/code-minimap 0.6.4: A high performance code minimap generator
 app-text/dooit 1.0.0: A TUI todo manager
 app-text/epubgrep 0.6.0-r1 0.6.2: Search tool for EPUB e-books
 app-text/klogg 22.06.0.1289: A GUI application to browse and search through long and complex log files
-app-text/komikku 1.20.0 1.21.1: An online/offline manga reader for GNOME
+app-text/komikku 1.21.1 1.22.0: An online/offline manga reader for GNOME
 app-text/koodo-reader-bin 1.5.1: A modern ebook manager and reader with sync and backup capacities
 app-text/lizard 1.17.10: A simple code complexity analyser, supports most of the popular languages.
 app-text/mandown 0.1.3: Markdown to groff (man page) converter
@@ -291,6 +292,7 @@ app-text/noweb 2.12: a literate programming tool, lighter than web
 app-text/smu 1.5 9999: Simple markup - markdown like syntax
 app-text/the-platinum-searcher-bin 2.2.0: Fast CLI search tool, faster than grep, ack, silver_searcher (ag)
 app-text/tldr 2.0.0-r1: Python command line client for tldr pages
+app-text/vale 2.27.0: A syntax-aware linter for prose built with speed and extensibility in mind
 app-vim/ale 3.3.0: Check syntax in Vim asynchronously and fix files, with LSP support
 app-vim/ansible-vim 3.2 3.3: vim plugin: sytax highlighting for Ansible's common file types
 app-vim/apkbuild-vim 20210911: vim plugin: edit and work with APKBUILD files
@@ -302,7 +304,6 @@ app-vim/kotlin-vim 20220627: Kotlin plugin for Vim.
 app-vim/nerdtree-git 20210818: vim plugin: display git status flags in NERDTree
 app-vim/nim-syntax 1.1_p20211111: vim plugin: nim language support
 app-vim/openbsd-style 1.1: vim plugin: indent code according to the OpenBSD and FreeBSD style(9)
-app-vim/python-syntax 20201215: vim plugin: Enhanced Python syntax highlighting
 app-vim/qt-support 1.1: vim plugin: Qt, qmake, QML, Qbs, QRC, UI and TS support
 app-vim/rainbow 3.4.0_p20211113: vim plugin: Rainbow Parentheses Improved
 app-vim/tempus 2.0.0.20210514: Accessible themes for Vim
@@ -552,6 +553,7 @@ dev-db/dbeaver-bin 23.0.0: Free universal database tool (community edition).
 dev-db/pg_repack 1.4.8: Reorganize tables in PostgreSQL databases with minimal locks
 dev-db/rum 1.3.11: RUM access method - inverted index with additional information in posting lists
 dev-dotnet/gtk-sharp 2.99.3-r3: gtk bindings for mono
+dev-elixir/hex 1.0.1: Package manager for the Erlang VM
 dev-embedded/esp-idf 5.0 5.0.2: Espressif IoT Development Framework
 dev-embedded/etlcpp 20.35.8: A C++ template library for embedded applications
 dev-embedded/idf-component-manager 1.1.4: Tool for installing ESP-IDF components
@@ -760,12 +762,12 @@ dev-nim/frosty 3.0.0: Serialize native Nim types to strings, streams, sockets, o
 dev-nim/grok 0.6.2 0.6.4: Macro library for Nim
 dev-nim/httpbeast 0.4.1: A super-fast epoll-backed and parallel HTTP server
 dev-nim/inim 0.6.1: Interactive Nim Shell / REPL / Playground
-dev-nim/jester 0.5.0: A sinatra-like web framework for Nim
+dev-nim/jester 0.5.0 0.6.0: A sinatra-like web framework for Nim
 dev-nim/jsony 1.1.3_p20220114 1.1.5: A loose direct to object json parser with hooks
 dev-nim/karax 1.2.3 1.3.0: a framework for developing single page applications in Nim
 dev-nim/markdown 0.8.5 0.8.7-r1: A Markdown Parser in Nim World
 dev-nim/nake 1.9.4: make-like for Nim. Describe your builds as tasks!
-dev-nim/nimbus 1.1.1 1.1.2: A Nim build system
+dev-nim/nimbus 1.1.2 1.1.3: A Nim build system
 dev-nim/nimcrypto 0.5.4_p20210619: Nim cryptographic library
 dev-nim/noise 0.1.6 0.1.8: a Nim implementation of linenoise
 dev-nim/npeg 1.2.0 1.2.1: a PEG library for Nim
@@ -832,7 +834,7 @@ dev-python/auditok 0.1.5 0.2.0: A module for Audio/Acoustic Activity Detection
 dev-python/autoflake 1.4-r1: Removes unused imports and unused variables as reported by pyflakes
 dev-python/avro 1.11.0: Apache Avro is a data serialization system
 dev-python/axisregistry 0.3.11: A Python API to access data from the Google Fonts variable fonts Axis Registry
-dev-python/azure-core 1.26.4 1.27.0: Microsoft Azure Core Library for Python
+dev-python/azure-core 1.27.0 1.27.1: Microsoft Azure Core Library for Python
 dev-python/azure-storage-blob 12.14.1 12.16.0: Microsoft Azure Blob Storage Client Library for Python
 dev-python/b2sdk 1.17.2 1.21.0: The client library for BackBlaze's B2 product
 dev-python/babelfont 3.0.0: Interrogate and manipulate UFO, TTF and OTF fonts with a common interface
@@ -1081,7 +1083,7 @@ dev-python/sjcl 0.2.1: Decrypt and encrypt 'Stanford Javascript Crypto Library'-
 dev-python/skia-pathops 0.7.4: Python bindings for the Skia Path Ops
 dev-python/sortedcollections 2.1.0: Apache2 licensed Python sorted collections library
 dev-python/sphinx-argparse 0.3.1: Sphinx extension that automatically documents argparse commands and options
-dev-python/sphinx-argparse-cli 1.9.0 1.11.0: Render CLI arguments (sub-commands friendly) defined by argparse module
+dev-python/sphinx-argparse-cli 1.11.0 1.11.1: Render CLI arguments (sub-commands friendly) defined by argparse module
 dev-python/sphinx-click 4.1.0 4.2.0: Sphinx plugin to automatically document click-based applications
 dev-python/sphinx-hoverxref 1.3.0: Sphinx extension to show tooltips with content embedded when hover a reference
 dev-python/sphinx-rtd-dark-mode 1.2.4: Dark mode for the Sphinx Read the Docs theme
@@ -1216,7 +1218,7 @@ dev-util/haredo 1.0.2 9999: a simple and unix-idiomatic build automator
 dev-util/hut 0.3.0: CLI tool for sourcehut
 dev-util/insomnia-bin 2020.3.3 2020.5.2: HTTP and GraphQL client for developers
 dev-util/lemminx-bin 0.24.0 0.25.0: XML Language Server
-dev-util/lua-language-server 3.6.21: Lua language server
+dev-util/lua-language-server 3.6.22: Lua language server
 dev-util/mh 1.0.3: Generate help for Makefile
 dev-util/odb 2.5.0_beta21_p1: ODB compiler and the ODB system documentation
 dev-util/ots 8.1.4 8.2.1: An util for validating and sanitising OpenType files
@@ -1224,7 +1226,7 @@ dev-util/pmbootstrap 1.51.0: Helper tool for developing and building postmarketO
 dev-util/qshaderedit 0.1.5: Multiplatform shader editor inspired by Apple's OpenGL Shader Builder
 dev-util/quilttools 0.3-r1: Mailbox to quilt series converter
 dev-util/reflex 0.3.1: A small tool to watch a directory and rerun a command when certain files change
-dev-util/reuse 1.1.0 1.1.2: A tool for compliance with the REUSE recommendations
+dev-util/reuse 1.1.2 2.0.0: A tool for compliance with the REUSE recommendations
 dev-util/rust-analyzer 20220509 20220517 20220606 20220613 20220815 20220822 99999999: An implementation of Language Server Protocol for the Rust programming language
 dev-util/rust-analyzer-bin 2021.09.06 2021.09.20: An implementation of Language Server Protocol for the Rust programming language
 dev-util/stripe-cli 9999: A command-line tool for Stripe
@@ -1292,7 +1294,7 @@ games-misc/bonsai 0_pre20210201: bonsai tree generator written in bash
 games-misc/cbonsai 1.3.1-r1: grow bonsai trees in your terminal
 games-misc/gay 1.2.8 1.2.9: Colour your text / terminal to be more gay
 games-misc/varlpenis 3.0.2: Generates ASCII-art penis of arbitrary length
-games-puzzle/aaaaxy 1.3.103 1.3.263 1.3.436: A nonlinear 2D puzzle platformer taking place in impossible spaces
+games-puzzle/aaaaxy 1.3.263 1.3.436 1.4.8: A nonlinear 2D puzzle platformer taking place in impossible spaces
 games-puzzle/atris 1.0.7: Alizarin tetris
 games-puzzle/baba-is-you 474: Puzzle game where you can change the rules by which you play
 games-puzzle/krank 8: Little casual game
@@ -1313,8 +1315,8 @@ games-util/minigalaxy 1.1.0: A simple GOG client for Linux
 games-util/roll 2.6.1: Program to roll dices specified in a simple and intuitive way
 games-util/samrewritten 9999 202008: Steam Achievement Manager For Linux
 games-util/steamtinkerlaunch 12.0: Wrapper script for Steam custom launch options
-games-util/xivlauncher 1.0.3-r1: Custom Launcher for Final Fantasy XIV Online (Crossplatform rewrite)
-gnome-extra/extension-manager 0.3.2 0.4.1-r1 9999: A native tool for browsing, installing, and managing GNOME Shell Extensions
+games-util/xivlauncher 1.0.4: Custom Launcher for Final Fantasy XIV Online (Crossplatform rewrite)
+gnome-extra/extension-manager 0.3.2 0.4.1-r1 0.4.2 9999: A native tool for browsing, installing, and managing GNOME Shell Extensions
 gnome-extra/iio-sensor-proxy 3.3: IIO sensors to D-Bus proxy
 gnome-extra/junction 1.6-r1: Application/browser chooser
 gnome-extra/portfolio 0.9.14: A minimalist file manager for those who want to use Linux mobile devices
@@ -1493,7 +1495,7 @@ media-sound/mpd-mpris 0.3.1 0.4.0: An implementation of the MPRIS protocol for M
 media-sound/mpvc 1.1.3: mpc-like tool which connects to existing mpv instances through sockets.
 media-sound/musikcube 3.0.1: Excellent terminal music player, support almost every known sound system.
 media-sound/ncpamixer 1.3.3.1: A ncurses mixer for PulseAudio inspired by pavucontrol
-media-sound/netcat-cpi 2014.04.29: Kernel module edition of the Cycles Per Instruction (2014) album
+media-sound/netcat-cpi 2014.04.29-r1: Kernel module edition of the Cycles Per Instruction (2014) album
 media-sound/noson-app 5.2.2 5.4.0 5.4.1: The essential to control music from your SONOS devices on Linux platforms
 media-sound/nuclear-bin 0.6.15 0.6.17: Nuclear is a streaming program that pulls content from free sources on internet
 media-sound/nulloy 0.9.5 9999: Music player with a waveform progress bar (sound visualization)
@@ -1510,7 +1512,7 @@ media-video/ciano 0.2.4-r1: A multimedia file converter focused on simplicity
 media-video/ffsubsync 0.4.22 0.4.23 0.4.25: Automagically syncronize subtitles with video
 media-video/kikoplay 0.8.2 9999: KikoPlay is a full-featured danmu player
 media-video/megapixels 1.4.3: A GTK3 camera application that knows how to deal with the media request api
-media-video/obs-vaapi 0.2.0 9999: OBS Studio VAAPI support via GStreamer
+media-video/obs-vaapi 0.2.0 0.3.1 9999: OBS Studio VAAPI support via GStreamer
 media-video/obs-vkcapture 1.2.0 1.3.3 1.4.0 9999: OBS Linux Vulkan/OpenGL game capture
 media-video/olive 9999: Free open-source non-linear video editor
 media-video/owncast 0.0.12 0.0.13: A self-hosted live video and web chat server
@@ -1529,7 +1531,7 @@ mpv-plugin/kdialog-open-files 20221015: Use KDialog to add files to playlist, su
 mpv-plugin/mpv-autosub 20210629: Fully automatic subtitle downloading for the MPV media player
 mpv-plugin/mpv-kscreen-doctor 0.2.1: Set the display refresh rate that best approximates the content fps
 mpv-plugin/mpv-mpris 0.8.1 0.9-r2 1.0 9999: MPRIS plugin for mpv
-mpv-plugin/mpv-plugin-xrandr 20190523-r1: Automatically invoke the xrandr to set the parameters for the display output
+mpv-plugin/mpv-plugin-xrandr 2023.06.19: Automatically invoke the xrandr to set the parameters for the display output
 mpv-plugin/mpv-youtube-upnext 20210620 20220922 20221230: A userscript that allows you to play "up next"/recommended youtube videos
 mpv-plugin/mpv_sponsorblock 20211223 20220924 20230130: mpv script to skip sponsored segments of YouTube videos
 mpv-plugin/mpv_sponsorblock_minimal 2022.02.07: A minimal script to skip sponsored segments of YouTube videos
@@ -1540,7 +1542,7 @@ net-analyzer/munin-plugins-mendix 23_p20210510: This package provides various pl
 net-client/amfora 1.8.0 1.9.2: A fancy terminal browser for the Gemini protocol.
 net-client/castor 0.8.18 0.9.0: A graphical browser for plain-text protocols
 net-client/kristall 0.3-r2 0.4: Visual cross-platform gemini browser
-net-client/lagrange 1.16.2 1.16.3: Desktop GUI client for browsing Geminispace
+net-client/lagrange 1.16.3 1.16.4: Desktop GUI client for browsing Geminispace
 net-client/offpunk 1.8 1.9.1: Offline-First Gemini/Web/Gopher/RSS reader and browser
 net-client/starfish 1.2.0 1.3.1: A Gemini browser for elementary OS
 net-client/telescope 0.7.1 0.8.1: w3m-like browser for Gemini
@@ -1562,11 +1564,11 @@ net-im/guilded-bin 1.0.9105465: Drop Discord, get Guilded
 net-im/heisenbridge 1.14.2: A bouncer-style Matrix IRC bridge
 net-im/jitsi-meet 2022.3.1: Desktop application for Jitsi Meet built with Electron
 net-im/kaidan 0.9.1: User-friendly and modern chat app for every device
-net-im/mastoposter 0.1-r1: Configurable reposter from Mastodon-compatible Fediverse servers
+net-im/mastoposter 0.1-r1 0.2: Configurable reposter from Mastodon-compatible Fediverse servers
 net-im/matterhorn-bin 50200.13.0: Terminal based Mattermost client
 net-im/mautrix-discord 0.4.0 0.5.0: A Matrix-Discord puppeting bridge
 net-im/mautrix-facebook 0.4.1 0.5.0: A Matrix-Facebook Messenger puppeting bridge
-net-im/mautrix-signal 0.4.2: A Matrix-Signal Messenger puppeting bridge
+net-im/mautrix-signal 0.4.2 0.4.3: A Matrix-Signal Messenger puppeting bridge
 net-im/mautrix-slack 0_pre20230414 0_pre20230517: A Matrix-Slack puppeting bridge based on slack-go
 net-im/mautrix-telegram 0.13.0-r1 0.14.0: A Matrix-Telegram Messenger puppeting bridge
 net-im/nheko 0.11.3 9999: Native desktop client for Matrix using Qt
@@ -1648,10 +1650,10 @@ net-voip/vvmd 0.8: vvmd is a lower level daemon that retrieves Visual Voicemail
 net-vpn/cloudflare-warp 2023.3.398: Cloudflare Warp Client
 net-vpn/fastd 22: A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
 net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that require SAML
-net-wireless/rtl8192eu 0_pre20230313: Realtek 8192EU driver module for Linux kernel
+net-wireless/rtl8192eu 0_pre20230613: Realtek 8192EU driver module for Linux kernel
 net-wireless/rtl8723bu 9999: Driver for the rtl8723 wireless chipset
 net-wireless/rtl8821ce 0_pre20230504: Realtek RTL8821CE Driver module for Linux kernel
-net-wireless/rtl8821cu 0_pre20230428: Realtek 8821CU/RTL8811CU module for Linux kernel
+net-wireless/rtl8821cu 0_pre20230624: Realtek 8821CU/RTL8811CU module for Linux kernel
 sci-biology/cmdock 0.2.0: Program for docking ligands to proteins and nucleic acids
 sci-biology/geneathome 1.10-r5: BOINC application for expanding Gene Regulatory Networks (GRN)
 sci-chemistry/vesta-bin 3.5.8: Visualisation for Electronic and STructural Analysis.
@@ -1780,7 +1782,7 @@ sys-auth/pam-gnupg 0.3: Unlock GnuPG keys on login
 sys-block/partclone 0.3.20: Partition cloning tool
 sys-boot/customrescuecd-x86-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/customrescuecd-x86_64-grub 0.1: Grub menu entries for the .iso image of customrescuecd
-sys-boot/limine 4.20230325.0 4.20230330.0 4.20230408.0 4.20230422.0 4.20230428.0 4.20230503.0 4.20230514.0 4.20230529.0 4.20230530.0 4.20230606.0: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
+sys-boot/limine 4.20230503.0 4.20230514.0 4.20230529.0 4.20230530.0 4.20230606.0 4.20230615.0: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
 sys-boot/woeusb-ng 0.2.10: Create Windows installer USB from ISO (rewrite of WoeUSB)
 sys-boot/zfsbootmenu 1.12.0: ZFS bootloader for root-on-ZFS systems
 sys-cluster/AXL 0.5.0 0.7.0: AXL provides a common C interface to transfer files in an HPC storage hierarchy
@@ -1860,7 +1862,7 @@ sys-kernel/xow 0.5: Linux driver for the Xbox One wireless dongle
 sys-kernel/xpmem 2.6.5_p20210809: Linux Cross-Memory Attach
 sys-kernel/zenpower3 0.2.0: Linux kernel driver for reading sensors of AMD Zen family CPUs
 sys-libs/libfixposix 0.4.3 0.5.1: Thin wrapper over POSIX syscalls
-sys-libs/libnvidia-container 1.12.1 1.13.1 9999: NVIDIA container runtime library
+sys-libs/libnvidia-container 1.12.1 1.13.1 1.13.2 9999: NVIDIA container runtime library
 sys-libs/nss-tls 1.0 1.1 9999: A DNS over HTTPS resolver for glibc
 sys-libs/safeclib 3.7.1-r2: safec libc extension with all C11 Annex K functions
 sys-libs/solo-udev-rules 4.1.5: udev rules for the Solo FIDO2 & U2F USB+NFC security key
@@ -1885,20 +1887,21 @@ virtual/mgcv 0: Virtual of a R recommended package
 virtual/nlme 0: Virtual of a R recommended package
 virtual/nnet 0: Virtual of a R recommended package
 virtual/survival 0: Virtual of a R recommended package
-www-apps/castopod 1.3.5: Open-source hosting platform made for podcasters
-www-apps/code-server-bin 4.9.1-r2 4.12.0-r1 4.13.0 4.13.0-r1: VS Code in the browser (binary version with unbundled node and ripgrep)
+www-apps/castopod 1.3.5 1.4.1: Open-source hosting platform made for podcasters
+www-apps/code-server-bin 4.12.0-r1 4.13.0 4.13.0-r1 4.14.0: VS Code in the browser (binary version with unbundled node and ripgrep)
 www-apps/forgejo 1.18.0.1: A self-hosted lightweight software forge
-www-apps/gotosocial 0.8.1 0.9.0: Fast, fun, ActivityPub server, powered by Go
+www-apps/gotosocial 0.9.0: Fast, fun, ActivityPub server, powered by Go
 www-apps/honk 0.9.8 0.9.91: ActivityPub server with minimal setup and support costs
-www-apps/invidious 2023.05.26 2023.06.10: Invidious is an alternative front-end to YouTube
+www-apps/invidious 2023.06.10 2023.06.22: Invidious is an alternative front-end to YouTube
 www-apps/jackett-bin 0.20.514 0.20.1202 0.20.3288 9999: API Support for your favorite torrent trackers
 www-apps/mycorrhiza 1.14.0 9999: Git-based wiki engine written in Go using mycomarkup
 www-apps/nitter 0.1.0_p20230306 2023.05.20: Alternative front-end for Twitter
+www-apps/pleroma 2.5.2 9999: ActivityPub social networking software compatible with other Fediverse software
 www-apps/snac 2.25 2.26: A simple, minimalistic ActivityPub instance
 www-apps/uwebsockets 20.11.0 20.14.0 9999: ultra fast, simple, secure & standards compliant web I/O
 www-client/badwolf 1.2.2 9999: Minimalist and privacy-oriented WebKitGTK+ browser
 www-client/browsh 1.6.4_p1: A fully-modern text-based browser, rendering to TTY and browsers
-www-client/nyxt 3.1.0 3.2.0 9999: Nyxt - the hacker's power-browser
+www-client/nyxt 3.2.0 3.2.1 9999: Nyxt - the hacker's power-browser
 www-client/vimb 3.6.0 9999: a fast, lightweight, vim-like browser based on webkit
 www-client/woob 3.1-r1 9999: Web Outside Of Browsers (core, site modules and applications)
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits
@@ -1910,7 +1913,7 @@ www-servers/hinsightd 0.9.17 9999: hinsightd a http/1.1 webserver with (hopefull
 www-servers/quark 9999: A small, GET-only static HTTP server
 x11-apps/lightdm-gtk-greeter-settings 1.2.2-r1: Configuration tool for the LightDM GTK Greeter
 x11-apps/xcur2png 0.7.1: Convert X cursors to PNG images
-x11-drivers/OpenTabletDriver-bin 0.5.3.3 0.6.0.2 0.6.0.4: Cross platform tablet driver (binary package)
+x11-drivers/OpenTabletDriver-bin 0.6.0.2 0.6.0.4: Cross platform tablet driver (binary package)
 x11-libs/gtk-fortran 3.24.31 4.3.0 4.4.0: A GTK+ binding to build Graphical User Interfaces in Fortran
 x11-libs/sdl-fakeqwerty 0_pre20191217: Fixes non-QWERTY keyboards on Prison Architect (and maybe other SDL games)
 x11-misc/aerial-sddm-theme 0_pre20191018-r1 9999: SDDM theme with Apple TV Aerial videos

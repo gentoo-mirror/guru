@@ -1,0 +1,14 @@
+BDEPEND=dev-lang/erlang:= dev-lang/elixir:= dev-util/cmake dev-util/rebar dev-elixir/hex !<www-apps/pleroma-9999 !>www-apps/pleroma-9999 >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile install postinst prepare unpack
+DEPEND=sys-libs/ncurses:= sys-apps/file dev-lang/elixir
+DESCRIPTION=ActivityPub social networking software compatible with other Fediverse software
+EAPI=7
+HOMEPAGE=https://pleroma.social/
+INHERIT=mix optfeature git-r3
+LICENSE=AGPL-3 CC-BY-SA-4.0 CC-BY-4.0
+PROPERTIES=live
+RDEPEND=sys-libs/ncurses:= sys-apps/file acct-user/pleroma acct-group/pleroma dev-db/postgresql[uuid] dev-lang/elixir
+RESTRICT=network-sandbox
+SLOT=otp
+_eclasses_=mix	248421150047545259791313753ad1ab	optfeature	222cb475c5a4f7ae7cfb0bf510a6fe54	git-r3	27e13c09a4c7e4c78ac812f74727e676
+_md5_=86450e361330c835e0ba9c6b1b0e7eb0

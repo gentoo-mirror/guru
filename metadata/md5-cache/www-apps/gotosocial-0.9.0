@@ -1,15 +1,14 @@
-BDEPEND=doc? ( || ( ( >=dev-lang/python-3.11.3:3.11 dev-python/mkdocs[python_targets_python3_11(-)] dev-python/mkdocs-material[python_targets_python3_11(-)] dev-python/mkdocs-swagger-ui-tag[python_targets_python3_11(-)] dev-python/pillow[python_targets_python3_11(-)] dev-python/regex[python_targets_python3_11(-)] media-gfx/cairosvg[python_targets_python3_11(-)] ) ( >=dev-lang/python-3.10.11:3.10 dev-python/mkdocs[python_targets_python3_10(-)] dev-python/mkdocs-material[python_targets_python3_10(-)] dev-python/mkdocs-swagger-ui-tag[python_targets_python3_10(-)] dev-python/pillow[python_targets_python3_10(-)] dev-python/regex[python_targets_python3_10(-)] media-gfx/cairosvg[python_targets_python3_10(-)] ) ) ) >=dev-lang/go-1.18 app-arch/unzip virtual/pkgconfig
-DEFINED_PHASES=compile configure install postinst prepare setup test unpack
+BDEPEND=>=dev-lang/go-1.18 app-arch/unzip virtual/pkgconfig
+DEFINED_PHASES=compile configure install postinst prepare test unpack
 DESCRIPTION=Fast, fun, ActivityPub server, powered by Go
 EAPI=8
 HOMEPAGE=https://gotosocial.org/ https://github.com/superseriousbusiness/gotosocial
-INHERIT=python-any-r1 docs go-module systemd tmpfiles
-IUSE=doc
+INHERIT=go-module systemd tmpfiles
 KEYWORDS=~amd64
 LICENSE=|| ( WTFPL-2 CC0-1.0 ) AGPL-3 Apache-2.0 BSD BSD-2 CC0-1.0 GPL-3 MIT MPL-2.0
 RDEPEND=acct-user/gotosocial virtual/tmpfiles
 RESTRICT=test strip
 SLOT=0
 SRC_URI=https://github.com/superseriousbusiness/gotosocial/releases/download/v0.9.0/gotosocial-0.9.0-source-code.tar.gz https://github.com/superseriousbusiness/gotosocial/releases/download/v0.9.0/gotosocial_0.9.0_web-assets.tar.gz
-_eclasses_=multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	513c31b3346458ed1f3878b57da6d61c	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	a34d5f83235297b76d71eaf8deb53768	python-any-r1	d2955aaac8daaaa69fcc6dc93ed19f29	docs	7b9e167549c44efa7994614f33ba6d7a	go-module	8624eede24936fd7666e5298e5332f22	systemd	5f4bb0758df2e483babf68cd517078ca	tmpfiles	216aa76c3a6fcb5d893c23a0de86048f
-_md5_=962c1b67ecd4866190a31cb2052ae5a6
+_eclasses_=multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	513c31b3346458ed1f3878b57da6d61c	multilib	c19072c3cd7ac5cb21de013f7e9832e0	go-module	8624eede24936fd7666e5298e5332f22	systemd	5f4bb0758df2e483babf68cd517078ca	tmpfiles	216aa76c3a6fcb5d893c23a0de86048f
+_md5_=713280e6f3bf477ba6ebadd77b44d2c9
