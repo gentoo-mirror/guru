@@ -24,8 +24,8 @@ LICENSE="
 SLOT="0"
 KEYWORDS="~amd64"
 
-RDEPEND="net-libs/nodejs"
-BDEPEND="net-libs/nodejs[npm]"
+RDEPEND=">=net-libs/nodejs-18.16.18"
+BDEPEND=">=net-libs/nodejs-18.16.18[npm]"
 
 src_unpack() {
 	cd "${T}" || die "Could not cd to temporary directory"

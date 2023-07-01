@@ -1,4 +1,4 @@
-# Copyright 2020-2022 Gentoo Authors
+# Copyright 2020-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -21,6 +21,7 @@ IUSE="webview"
 # correctly in some cases, according to release notes for 0.20.16.
 RDEPEND="
 	$(python_gen_cond_dep '
+		dev-python/filelock[${PYTHON_USEDEP}]
 		<dev-python/requests-3.0[${PYTHON_USEDEP}]
 		webview? ( dev-python/pywebview[gtk,${PYTHON_USEDEP}] )
 	')

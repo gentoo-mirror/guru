@@ -18,18 +18,15 @@ SRC_URI="https://github.com/typeddjango/pytest-mypy-plugins/archive/refs/tags/${
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
-PATCHES=(
-	"${FILESDIR}"/${P}-deprecated-chevron-to-jinja.patch
-)
 
 DOCS="README* CHANGELOG*"
 
 RDEPEND="
+	>=dev-python/mypy-1.3.0[${PYTHON_USEDEP}]
+	>=dev-python/pytest-7.0.0[${PYTHON_USEDEP}]
 	dev-python/decorator[${PYTHON_USEDEP}]
 	dev-python/jinja[${PYTHON_USEDEP}]
-	dev-python/mypy[${PYTHON_USEDEP}]
 	dev-python/packaging[${PYTHON_USEDEP}]
-	dev-python/pytest[${PYTHON_USEDEP}]
 	dev-python/pyyaml[${PYTHON_USEDEP}]
 	dev-python/regex[${PYTHON_USEDEP}]
 "
