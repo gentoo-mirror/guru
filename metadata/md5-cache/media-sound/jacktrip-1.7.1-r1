@@ -1,4 +1,4 @@
-BDEPEND=|| ( ( >=dev-lang/python-3.11.3:3.11 dev-python/jinja[python_targets_python3_11(-)] dev-python/pyyaml[python_targets_python3_11(-)] ) ( >=dev-lang/python-3.10.11:3.10 dev-python/jinja[python_targets_python3_10(-)] dev-python/pyyaml[python_targets_python3_10(-)] ) ) >=dev-util/meson-0.62.2 >=dev-util/ninja-1.8.2 dev-util/meson-format-array
+BDEPEND=|| ( ( >=dev-lang/python-3.11.4:3.11 dev-python/jinja[python_targets_python3_11(-)] dev-python/pyyaml[python_targets_python3_11(-)] ) ( >=dev-lang/python-3.10.12:3.10 dev-python/jinja[python_targets_python3_10(-)] dev-python/pyyaml[python_targets_python3_10(-)] ) ) >=dev-util/meson-0.62.2 >=dev-util/ninja-1.8.2 dev-util/meson-format-array
 DEFINED_PHASES=compile configure install postinst postrm preinst setup test
 DEPEND=dev-qt/qtcore:5= dev-qt/qtnetwork:5= gui? ( dev-qt/qtgui:5= dev-qt/qtwidgets:5= ) jack? ( virtual/jack ) rtaudio? ( media-libs/rtaudio:= ) virtualstudio? ( dev-qt/qtdeclarative:5= dev-qt/qtnetworkauth:5= dev-qt/qtsvg:5= dev-qt/qtwebsockets:5= )
 DESCRIPTION=Send JACK audio over a network
@@ -13,5 +13,5 @@ RDEPEND=dev-qt/qtcore:5= dev-qt/qtnetwork:5= gui? ( dev-qt/qtgui:5= dev-qt/qtwid
 REQUIRED_USE=virtualstudio? ( gui ) || ( jack rtaudio )
 SLOT=0
 SRC_URI=https://github.com/jacktrip/jacktrip/archive/refs/tags/v1.7.1.tar.gz -> jacktrip-1.7.1.tar.gz
-_eclasses_=multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	513c31b3346458ed1f3878b57da6d61c	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	a34d5f83235297b76d71eaf8deb53768	python-any-r1	d2955aaac8daaaa69fcc6dc93ed19f29	xdg-utils	baea6080dd821f5562d715887954c9d3	xdg	4a14c5c24f121e7da66e5aab4a168c6e	ninja-utils	76050953ad5b70d7e09a6ca55558db92	meson	18d046bdb14e1bdb22cce6e5d953e364
+_eclasses_=multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	513c31b3346458ed1f3878b57da6d61c	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	a013e16d5d896b3d8be68dd2a0e846ea	python-any-r1	d2955aaac8daaaa69fcc6dc93ed19f29	xdg-utils	baea6080dd821f5562d715887954c9d3	xdg	4a14c5c24f121e7da66e5aab4a168c6e	ninja-utils	76050953ad5b70d7e09a6ca55558db92	meson	18d046bdb14e1bdb22cce6e5d953e364
 _md5_=d3a173dcf9a67c75bec9dd50dbc334a1

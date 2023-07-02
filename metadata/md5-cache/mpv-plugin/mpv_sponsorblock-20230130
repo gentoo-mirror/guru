@@ -6,9 +6,9 @@ INHERIT=mpv-plugin python-single-r1
 IUSE=+autoload python_single_target_pypy3 python_single_target_python3_10 python_single_target_python3_11
 KEYWORDS=~amd64
 LICENSE=GPL-3
-RDEPEND=python_single_target_pypy3? ( >=dev-python/pypy3-7.3.11_p1:0= ) python_single_target_python3_10? ( >=dev-lang/python-3.10.11:3.10 ) python_single_target_python3_11? ( >=dev-lang/python-3.11.3:3.11 ) media-video/mpv[lua]
+RDEPEND=python_single_target_pypy3? ( >=dev-python/pypy3-7.3.11_p1:0= ) python_single_target_python3_10? ( >=dev-lang/python-3.10.12:3.10 ) python_single_target_python3_11? ( >=dev-lang/python-3.11.4:3.11 ) media-video/mpv[lua]
 REQUIRED_USE=^^ ( python_single_target_pypy3 python_single_target_python3_10 python_single_target_python3_11 )
 SLOT=0
 SRC_URI=https://github.com/po5/mpv_sponsorblock/archive/7785c1477103f2fafabfd65fdcf28ef26e6d7f0d.tar.gz -> mpv_sponsorblock-20230130.tar.gz
-_eclasses_=mpv-plugin	d5b74b0d4b9aa2b088badc969f11de7a	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	513c31b3346458ed1f3878b57da6d61c	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	a34d5f83235297b76d71eaf8deb53768	python-single-r1	75118e916668a74c660a13b0ecb22562
+_eclasses_=mpv-plugin	d5b74b0d4b9aa2b088badc969f11de7a	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	513c31b3346458ed1f3878b57da6d61c	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	a013e16d5d896b3d8be68dd2a0e846ea	python-single-r1	75118e916668a74c660a13b0ecb22562
 _md5_=a77c4165f842f89f408b76c7a55093fb
