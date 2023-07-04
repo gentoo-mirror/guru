@@ -21,9 +21,9 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
 RDEPEND="
-	dev-python/wheel[${PYTHON_USEDEP}]
-	dev-python/packaging[${PYTHON_USEDEP}]
 	dev-python/dbus-next[${PYTHON_USEDEP}]
+	dev-python/packaging[${PYTHON_USEDEP}]
+	dev-python/wheel[${PYTHON_USEDEP}]
 "
 BDEPEND="
 	dev-python/build[${PYTHON_USEDEP}]
