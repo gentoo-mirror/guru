@@ -80,7 +80,7 @@ app-admin/krapplet 0.3.1-r1: Krapplet (keyring applet): a Linux graphical passwo
 app-admin/oet 0.1.9 0.1.10 9999: Update your system into binpkgs in an overlay sandbox
 app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applications and tmux
 app-admin/pass-update 2.1: pass extension that provides an easy flow for updating passwords
-app-admin/pulumi-bin 3.71.0 3.72.0 3.72.2 3.73.0: Infrastructure as code in any programming language
+app-admin/pulumi-bin 3.72.2 3.73.0 3.74.0: Infrastructure as code in any programming language
 app-admin/rbw 9999: unofficial bitwarden cli
 app-admin/s-tui 1.1.3-r1: Stress-Terminal UI monitoring tool
 app-admin/synadm 0.41.2 0.41.3: Command line admin tool for Synapse
@@ -628,7 +628,7 @@ dev-libs/libopensmtpd 0.7: Library for creating OpenSMTPD filters
 dev-libs/libthai 0.1.28 0.1.29: A a set of Thai language support routines
 dev-libs/ls-hpack 2.3.0: QPACK compression library for use with HTTP/3
 dev-libs/ls-qpack 2.5.0: QPACK compression library for use with HTTP/3
-dev-libs/lsbcrypt 1.0.0: libcrypt Wrapper for LiteSpeedTech
+dev-libs/lsbcrypt 1.0.0-r1: libcrypt wrapper for LiteSpeedTech
 dev-libs/luksmeta 9: LUKSMeta is a simple library for storing metadata in the LUKSv1 header
 dev-libs/memkind 1.13.0: user extensible heap manager built on top of jemalloc
 dev-libs/monero-seed 0.1.0: 14-word mnemonic seed for Monero
@@ -881,7 +881,7 @@ dev-python/dataclasses_json 0.5.7: Easily serialize Data Classes to and from JSO
 dev-python/dateparser 1.1.7 1.1.8: Date parsing library designed to parse dates from HTML pages
 dev-python/decopatch 1.4.9 1.4.10: Create decorators easily in python
 dev-python/defcon 0.10.2: A set of UFO based objects for use in font editing applications
-dev-python/desktop-notifier 3.5.3: desktop-notifier is a Python library for cross-platform desktop notifications
+dev-python/desktop-notifier 3.5.4: desktop-notifier is a Python library for cross-platform desktop notifications
 dev-python/devtools 0.10.0-r1: Dev tools for python
 dev-python/digitalocean 1.17.0 1.17.0-r1: Digitalocean API access library
 dev-python/django-bleach 3.0.1: Easily use bleach with Django models and templates
@@ -944,7 +944,6 @@ dev-python/hyperglot 0.4.4: Detect language support for font binaries
 dev-python/hypothesmith 0.2.0: Hypothesis strategies for generating Python programs
 dev-python/i3ipc 2.2.1 2.2.1-r1: An improved Python library to control i3wm and sway.
 dev-python/inscriptis 2.3.1 2.3.2: HTML to text converter
-dev-python/insipid-sphinx-theme 0.4.0 0.4.1: An insipid Sphinx theme
 dev-python/invoke 2.0.0: Pythonic task execution
 dev-python/isosurfaces 0.1.0: Construct isolines/isosurfaces of a 2D/3D scalar field defined by a function
 dev-python/itemadapter 0.6.0 0.7.0: Common interface for scrapy data container classes
@@ -1390,6 +1389,7 @@ gui-apps/wlgreet 0.4.1: Wayland based greeter for greetd
 gui-apps/wlogout 1.1.1: A wayland based logout menu
 gui-apps/wlr-randr 0.3.0 9999: xrandr clone for wlroots compositors
 gui-apps/wlsunset 0.3.0 9999: Day/night gamma adjustments for Wayland
+gui-apps/wmenu 0.1.3: dynamic menu for wlroots compositors, maintains the look and feel of dmenu
 gui-apps/wob 0.14.2: Lightweight overlay volume/backlight/progress/anything bar for Wayland
 gui-apps/wtype 0.4: xdotool type for wayland
 gui-apps/yambar 1.6.2 1.7.0 1.8.0 1.9.0 9999: Simplistic and highly configurable status panel for X and Wayland
@@ -1533,7 +1533,7 @@ mpv-plugin/mpv-autosub 20210629: Fully automatic subtitle downloading for the MP
 mpv-plugin/mpv-kscreen-doctor 0.2.1: Set the display refresh rate that best approximates the content fps
 mpv-plugin/mpv-mpris 0.8.1 0.9-r2 1.0 9999: MPRIS plugin for mpv
 mpv-plugin/mpv-plugin-xrandr 2023.06.19: Automatically invoke the xrandr to set the parameters for the display output
-mpv-plugin/mpv-youtube-upnext 20210620 20220922 20221230: A userscript that allows you to play "up next"/recommended youtube videos
+mpv-plugin/mpv-youtube-upnext 20220922 20221230 20230409: A userscript that allows you to play "up next"/recommended youtube videos
 mpv-plugin/mpv_sponsorblock 20211223 20220924 20230130: mpv script to skip sponsored segments of YouTube videos
 mpv-plugin/mpv_sponsorblock_minimal 2022.02.07: A minimal script to skip sponsored segments of YouTube videos
 mpv-plugin/mpv_thumbnail_script 0.5.1 0.5.2: A Lua script to show preview thumbnails in mpv's OSC seekbar
@@ -1648,7 +1648,7 @@ net-proxy/snowflake 2.5.1: Pluggable Transport using WebRTC, inspired by Flashpr
 net-voip/discover-overlay 0.4.5 0.5.4 0.6.5: Yet another Discord overlay for Linux written in Python using GTK3
 net-voip/gnome-calls 44.1 44.2: Phone dialer and call handler
 net-voip/vvmd 0.8: vvmd is a lower level daemon that retrieves Visual Voicemail
-net-vpn/cloudflare-warp 2023.3.398: Cloudflare Warp Client
+net-vpn/cloudflare-warp 2023.3.470: Cloudflare Warp Client
 net-vpn/fastd 22: A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
 net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that require SAML
 net-wireless/rtl8192eu 0_pre20230613: Realtek 8192EU driver module for Linux kernel
@@ -1908,7 +1908,7 @@ www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and comm
 www-misc/gorss 0.3: Go Terminal Feed Reader
 www-misc/waldl 0.0.1_pre20211112: Browse and download wallpapers from wallhaven.cc using sxiv
 www-misc/wyebadblock 1.0.0: An adblock extension for wyeb, also webkit2gtk browsers.
-www-plugins/firefoxpwa 2.5.0: The native part of the PWAsForFirefox project
+www-plugins/firefoxpwa 2.5.0 2.6.2: The native part of the PWAsForFirefox project
 www-servers/hinsightd 0.9.17 9999: hinsightd a http/1.1 webserver with (hopefully) minimal goals
 www-servers/quark 9999: A small, GET-only static HTTP server
 x11-apps/lightdm-gtk-greeter-settings 1.2.2-r1: Configuration tool for the LightDM GTK Greeter
