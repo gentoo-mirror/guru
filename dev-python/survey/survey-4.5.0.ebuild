@@ -16,3 +16,8 @@ HOMEPAGE="
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
+
+distutils_enable_sphinx docs \
+	dev-python/sphinx-autodoc-typehints \
+	dev-python/sphinx-paramlinks \
+	dev-python/sphinx-rtd-theme
