@@ -1,0 +1,15 @@
+BDEPEND=x11-libs/gtk+ virtual/pkgconfig playerctl? ( dev-go/act ) playerctl? ( net-libs/libsoup ) userinfo? ( sys-apps/accountsservice ) >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile install unpack
+DEPEND=gui-apps/gtklock
+DESCRIPTION=Gtklock modules
+EAPI=7
+HOMEPAGE=https://github.com/jovanlanik/gtklock
+INHERIT=git-r3
+IUSE=playerctl powerbar userinfo
+LICENSE=GPL-3
+PROPERTIES=live
+RDEPEND=gui-apps/gtklock
+REQUIRED_USE=|| ( playerctl powerbar userinfo )
+SLOT=0
+_eclasses_=git-r3	27e13c09a4c7e4c78ac812f74727e676
+_md5_=733c01b11eb2b445bfa8f643f77bc87d

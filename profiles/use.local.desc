@@ -324,6 +324,7 @@ games-emulation/rpcs3:vulkan - Build vulkan renderer
 games-emulation/yuzu:compatibility-list - Downloads the latest compatibility list
 games-emulation/yuzu:cubeb - Enables the cubeb audio backend
 games-emulation/yuzu:discord - Enables Discord Rich Presence
+games-emulation/yuzu:system-libfmt - Use system dev-libs/libfmt
 games-emulation/yuzu:system-vulkan - Use system dev-util/vulkan-headers
 games-emulation/yuzu:webengine - Use QtWebEngine for web applet implementation
 games-emulation/yuzu:webservice - Enable web services (telemetry, etc.)
@@ -357,11 +358,18 @@ games-util/xivlauncher:aria2 - Enable Aria2 support.
 games-util/xivlauncher:dx9 - Support for running the dx9 api in wined3d/dxvk.
 games-util/xivlauncher:libsecret - Enable secrets/password storage support.
 gnome-extra/yad:spell - Enable spell check support with app-text/gspell
+gui-apps/ReGreet:cage - Use cage to start ReGreet
+gui-apps/ReGreet:gtk4 - Compile with support for gtk4
+gui-apps/ReGreet:logs - Compile logs support ReGreet (debug)
+gui-apps/ReGreet:sway - Use sway to start ReGreet
 gui-apps/coreapps-meta:location - Enable location discovery
 gui-apps/coretoppings:location - Enable location discovery
 gui-apps/fuzzel:cairo - Required for rounded corners and SVG icons
 gui-apps/fuzzel:png - Enable support for PNG icons
 gui-apps/fuzzel:svg - enables support for SVG icons
+gui-apps/gtklock-extras:playerctl - gtklock module adding media player controls to the lockscreen
+gui-apps/gtklock-extras:powerbar - gtklock module adding power controls to the lockscreen
+gui-apps/gtklock-extras:userinfo - gtklock module adding user info to the lockscreen
 gui-apps/hyprland-plugins:borders-plus-plus - adds one or two additional borders to windows
 gui-apps/hyprland-plugins:csgo-vulkan-fix - fixes custom resolutions on CS:GO with -vulkan
 gui-apps/hyprland-plugins:hyprbars - adds title bars to windows
@@ -568,6 +576,10 @@ net-nntp/pan:libnotify - Build libnotify support for notifications
 net-nntp/pan:nls - Localization support
 net-nntp/pan:spell - Spellchecking support (enchant/gtkspell)
 net-nntp/pan:ssl - TLS 1.x support (through gnutls)
+net-p2p/dogecoin-qt:prune - Enables automatic pruning of old blocks to stay below 2.2GB target size (if ran from desktop)
+net-p2p/dogecoin-qt:tests - Build Dogecoin Core Qt with tests option
+net-p2p/dogecoin-qt:wallet - Build Dogecoin Core Qt with wallet support
+net-p2p/dogecoin-qt:zmq - Enables ZeroMQ notifications
 net-p2p/feather:localmonero - Enable LocalMonero.com support
 net-p2p/feather:qrcode - Enable QR code scanning with media-gfx/zbar
 net-p2p/feather:xmrig - Enable mining support using a user specified xmrig binary
@@ -933,6 +945,11 @@ sys-cluster/veloc:slurm - Use sys-cluster/slurm as resource manager
 sys-cluster/wxparaver:extrae - Enable extrae support
 sys-cluster/wxparaver:ompss - Enable OmpSs parallel version
 sys-cluster/wxparaver:openmp - Enable OpenMP parallel version
+sys-firmware/lenovolegionlinux:downgrade-nvidia - Downgrade nvidia for 525 to enable TDP control (systemd-service)
+sys-firmware/lenovolegionlinux:legion-acpi - Install acpi script (experimental feature)
+sys-firmware/lenovolegionlinux:legion-tools - Build and install legion_gui and legion_cli
+sys-firmware/lenovolegionlinux:radeon-dgpu - Enable AMD GPU TDP control (systemd-service)
+sys-firmware/lenovolegionlinux:ryzenadj - CPU and APU control using ryzenadj (systemd-service)
 sys-kernel/dkms:kernel-hooks - Enable automatic rebuilding of modules via kernel source makefile hooks
 sys-kernel/msr-safe:slurm - Install the spank plugin
 sys-kernel/uek-sources:experimental - apply experimental gentoo genpatches

@@ -234,7 +234,7 @@ app-mobilephone/mobile-config-firefox 2.1.0: Mobile and privacy friendly configu
 app-mobilephone/pinephone-modem-scripts 0.20.8: Modem scripts for the PinePhone
 app-mobilephone/usb-tethering 0.3: USB tethering on Pine64/ConfigFS systems
 app-office/beancount 2.3.5-r2: A double-entry accounting system that uses text files as input
-app-office/jameica-bin 2.10.3: Local platform for home banking
+app-office/jameica-bin 2.10.4: Local platform for home banking
 app-office/joplin-bin 2.9.17: Note taking app, on Electron, can import notes from Evernote
 app-office/lotus123r3 1.0.0_rc4: A native port of Lotus 1-2-3 to Linux.
 app-office/nixnote-bin 2.1.9 9999: Free and open source note taking app, compatible with Evernote sync server
@@ -287,6 +287,7 @@ app-text/mandown 0.1.3: Markdown to groff (man page) converter
 app-text/md2mld 0.5.1: Little cli tool to convert md files into mld files
 app-text/md4c 0.4.8_p20220115: C Markdown parser. Fast, SAX-like interface, CommonMark Compliant.
 app-text/noweb 2.12: a literate programming tool, lighter than web
+app-text/sioyek 9999: Sioyek is a PDF viewer with a focus on textbooks and research papers
 app-text/smu 1.5 9999: Simple markup - markdown like syntax
 app-text/the-platinum-searcher-bin 2.2.0: Fast CLI search tool, faster than grep, ack, silver_searcher (ag)
 app-text/tldr 2.0.0-r1: Python command line client for tldr pages
@@ -552,9 +553,13 @@ dev-db/pg_repack 1.4.8: Reorganize tables in PostgreSQL databases with minimal l
 dev-db/rum 1.3.11: RUM access method - inverted index with additional information in posting lists
 dev-dotnet/gtk-sharp 2.99.3-r3: gtk bindings for mono
 dev-elixir/hex 1.0.1: Package manager for the Erlang VM
-dev-embedded/esp-idf 5.0 5.0.2: Espressif IoT Development Framework
+dev-embedded/esp-coredump 1.5.2: Utility that helps users to retrieve and analyse core dumps
+dev-embedded/esp-idf 5.0.2 5.0.2-r1 5.1: Espressif IoT Development Framework
+dev-embedded/esp-idf-kconfig 1.1.0: Kconfig tooling for esp-idf
+dev-embedded/esp-idf-monitor 1.1.1: Python object-oriented database
+dev-embedded/esp-idf-size 0.3.1: Firmware size analysis for ESP-IDF
 dev-embedded/etlcpp 20.35.8: A C++ template library for embedded applications
-dev-embedded/idf-component-manager 1.1.4: Tool for installing ESP-IDF components
+dev-embedded/idf-component-manager 1.1.4 1.3.1: Tool for installing ESP-IDF components
 dev-embedded/mv88e6xxx-dump 0.2.0_pre20210327: Dump information about Marvell mv88e6xxx Ethernet switches
 dev-embedded/rauc 1.9: Lightweight update client that runs on your Embedded Linux device
 dev-erlang/cowboy 2.9.0: Small, fast, modern HTTP server for Erlang/OTP.
@@ -626,9 +631,10 @@ dev-libs/libglibutil 1.0.67-r3 1.0.68 9999: Library of glib utilities from sailf
 dev-libs/libnodave 0.8.5.1-r2: Connect to and exchange data with Siemens PLCs
 dev-libs/libopensmtpd 0.7: Library for creating OpenSMTPD filters
 dev-libs/libthai 0.1.28 0.1.29: A a set of Thai language support routines
-dev-libs/ls-hpack 2.3.0: QPACK compression library for use with HTTP/3
-dev-libs/ls-qpack 2.5.0: QPACK compression library for use with HTTP/3
-dev-libs/lsbcrypt 1.0.0-r1: libcrypt wrapper for LiteSpeedTech
+dev-libs/ls-hpack 2.3.0 2.3.0-r1: QPACK compression library for use with HTTP/3
+dev-libs/ls-qpack 2.5.0 2.5.0-r1: QPACK compression library for use with HTTP/3
+dev-libs/lsbcrypt 1.0.0-r1 1.0.0-r2: libcrypt wrapper for LiteSpeedTech
+dev-libs/lsquic 3.2.0: LiteSpeed QUIC (LSQUIC) Library
 dev-libs/luksmeta 9: LUKSMeta is a simple library for storing metadata in the LUKSv1 header
 dev-libs/memkind 1.13.0: user extensible heap manager built on top of jemalloc
 dev-libs/monero-seed 0.1.0: 14-word mnemonic seed for Monero
@@ -1021,6 +1027,7 @@ dev-python/pydispatcher 2.0.7: Multi-producer-multi-consumer signal dispatching 
 dev-python/pydub 0.25.1: Manipulate audio with an simple and easy high level interface
 dev-python/pyfiglet 0.8_p1: Pure-python FIGlet implementation
 dev-python/pygaljs 1.0.2-r1: Python package providing assets from https://github.com/Kozea/pygal.js
+dev-python/pygdbmi 0.11.0.0: A library to parse gdb mi output and interact with gdb subprocesses
 dev-python/pygments-promql 0.0.9: A PromQL lexer for Pygments
 dev-python/pygsl 2.3.3: Python interface for the GNU scientific library (gsl)
 dev-python/pykeepass 4.0.2: Python library to interact with keepass databases (supports KDBX3 and KDBX4)
@@ -1086,6 +1093,7 @@ dev-python/sortedcollections 2.1.0: Apache2 licensed Python sorted collections l
 dev-python/sphinx-argparse-cli 1.11.0 1.11.1: Render CLI arguments (sub-commands friendly) defined by argparse module
 dev-python/sphinx-click 4.1.0 4.2.0: Sphinx plugin to automatically document click-based applications
 dev-python/sphinx-hoverxref 1.3.0: Sphinx extension to show tooltips with content embedded when hover a reference
+dev-python/sphinx-paramlinks 0.5.4: Allows param links in Sphinx function/method descriptions to be linkable
 dev-python/sphinx-rtd-dark-mode 1.2.4: Dark mode for the Sphinx Read the Docs theme
 dev-python/sphinx-sitemap 2.2.1 2.5.0: Sitemap generator for Sphinx
 dev-python/sphinx-version-warning 1.1.2: Sphinx extension to add a warning banner
@@ -1098,11 +1106,12 @@ dev-python/sse-starlette 1.1.6: Server Sent Events for Starlette
 dev-python/starkbank-ecdsa 2.2.0: A lightweight and fast pure python ECDSA library
 dev-python/statmake 0.6.0-r1: Applies STAT information from a Stylespace to a variable font
 dev-python/stdlibs 2022.3.16 2022.6.8: What's in the Python stdlib
+dev-python/steam 1.4.4 9999: Python package for interacting with Steam
 dev-python/stone 3.3.1: The Official Api Spec Language for Dropbox
 dev-python/strictyaml 1.6.1: A type-safe YAML parser built atop ruamel.yaml
 dev-python/stringbrewer 0.0.1-r1: Generate random strings matching a pattern
 dev-python/stringcase 1.2.0-r1: Convert string cases between camel case, pascal case, snake case etc.
-dev-python/survey 3.4.3 4.4.0: A simple library for creating beautiful interactive prompts
+dev-python/survey 3.4.3 4.5.0: A simple library for creating beautiful interactive prompts
 dev-python/svgelements 1.9.3: SVG Parsing for Elements, Paths, and other SVG Objects.
 dev-python/sysv_ipc 1.1.0: System V IPC primitives for python
 dev-python/tempus-themes 2.3.0.20220206: Accessible themes for Pygments
@@ -1256,7 +1265,7 @@ dev-vcs/lefthook 1.0.4 1.2.6: Fast and powerful Git hooks manager for any type o
 dev-zig/zls 0.10.0-r1 9999: The officially unofficial Ziglang language server
 games-action/ATLauncher 3.4.3.1 3.4.27.0: Minecraft launcher which integrates multiple different ModPacks
 games-action/blackvoxel 2.50 9999: Blackvoxel Video Game
-games-action/ddnet 17.0.3 9999: DDraceNetwork, a cooperative racing mod of Teeworlds
+games-action/ddnet 17.1 9999: DDraceNetwork, a cooperative racing mod of Teeworlds
 games-action/netrek-brmh 2.6.0: brmh client for netrek
 games-action/netrek-cow 3.3.2: cow client for netrek
 games-action/technic-launcher 4.625 4.768: Minecraft launcher for community-made modpacks on the Technic Platform
@@ -1294,7 +1303,7 @@ games-misc/bonsai 0_pre20210201: bonsai tree generator written in bash
 games-misc/cbonsai 1.3.1-r1: grow bonsai trees in your terminal
 games-misc/gay 1.2.8 1.2.9: Colour your text / terminal to be more gay
 games-misc/varlpenis 3.0.2: Generates ASCII-art penis of arbitrary length
-games-puzzle/aaaaxy 1.3.263 1.3.436 1.4.8: A nonlinear 2D puzzle platformer taking place in impossible spaces
+games-puzzle/aaaaxy 1.3.436 1.4.8 1.4.18: A nonlinear 2D puzzle platformer taking place in impossible spaces
 games-puzzle/atris 1.0.7: Alizarin tetris
 games-puzzle/baba-is-you 474: Puzzle game where you can change the rules by which you play
 games-puzzle/krank 8: Little casual game
@@ -1303,6 +1312,7 @@ games-rpg/airshipper 0.7.0-r1: Provides automatic updates for the voxel RPG Velo
 games-rpg/snoot-game 1.8 1.8-r1: Visual novel parody of Goodbye Volcano High
 games-server/among-sus 20210519: Among Us, but it's a text adventure
 games-util/NotEnoughProduction 0.0.4: Tool for building production chains for modded minecraft
+games-util/ProtonUp-Qt 2.8.1 9999: Install and manage GE-Proton, Luxtorpeda & more for Steam Lutris and Heroic.
 games-util/chiaki 2.1.1-r2 9999: Client for PlayStation 4 and PlayStation 5 Remote Play
 games-util/dwarf-therapist 41.2.2 41.2.5: For managing dwarves in Dwarf Fortress
 games-util/gamehub 0.16.0.1 0.16.3.2: GameHub is a unified library for all your games
@@ -1312,6 +1322,7 @@ games-util/legendary 0.20.32 0.20.33: A free and open-source replacement for the
 games-util/libtess2 1.0.3: Game and tools oriented refactored version of GLU tesselator
 games-util/mangohud 0.6.6.1-r3 0.6.7.1 0.6.8 9999: Vulkan and OpenGL overlay for monitoring FPS, sensors, system load and more
 games-util/minigalaxy 1.1.0: A simple GOG client for Linux
+games-util/protonup 0.1.5 9999: Install and Update Proton-GE
 games-util/roll 2.6.1: Program to roll dices specified in a simple and intuitive way
 games-util/samrewritten 9999 202008: Steam Achievement Manager For Linux
 games-util/steamtinkerlaunch 12.0: Wrapper script for Steam custom launch options
@@ -1323,6 +1334,7 @@ gnome-extra/portfolio 0.9.14: A minimalist file manager for those who want to us
 gnome-extra/vvmplayer 1.4: Visual Voicemail Player
 gnome-extra/yad 10.1: Display GTK+ dialog boxes from command line or shell scripts
 gui-apps/1password 8.10.7: The world’s most-loved password manager
+gui-apps/ReGreet 9999: A clean and customizable GTK-based greetd greeter written in Rust
 gui-apps/clipman 1.6.2: A basic clipboard manager for Wayland.
 gui-apps/coreaction 4.2.0 9999: A side bar for showing widgets for C Suite
 gui-apps/coreapps-meta 4.2.0 9999: Meta package for coreapps
@@ -1353,6 +1365,7 @@ gui-apps/fuzzel 1.8.2 1.9.1 9999: Application launcher for wlroots based Wayland
 gui-apps/gcolor3 2.4.0: A simple color chooser written in GTK3
 gui-apps/gradience 0.3.0-r1: GNOME's main interface to configure various aspects of the desktop
 gui-apps/gtklock 2.0.1 2.1.0: GTK-based lockscreen for Wayland
+gui-apps/gtklock-extras 9999: Gtklock modules
 gui-apps/hiprompt-gtk-py 0_pre20220624 9999: GTK+ Himitsu prompter for Wayland
 gui-apps/hyprland-plugins 0.25.0 0.26.0: A blazing fast wayland wallpaper utility
 gui-apps/hyprpaper 0.2.0-r1 0.3.0: A blazing fast wayland wallpaper utility
@@ -1530,7 +1543,7 @@ mpv-plugin/kde-do-not-disturb 20230110: Disable the notifications while mpv is r
 mpv-plugin/kde-night-color 20230110: Disable Night Color while mpv is running
 mpv-plugin/kdialog-open-files 20221015: Use KDialog to add files to playlist, subtitles to playing video or open URLs
 mpv-plugin/mpv-autosub 20210629: Fully automatic subtitle downloading for the MPV media player
-mpv-plugin/mpv-kscreen-doctor 0.2.1: Set the display refresh rate that best approximates the content fps
+mpv-plugin/mpv-kscreen-doctor 0.2.1 0.2.2: Set the display refresh rate that best approximates the content fps
 mpv-plugin/mpv-mpris 0.8.1 0.9-r2 1.0 9999: MPRIS plugin for mpv
 mpv-plugin/mpv-plugin-xrandr 2023.06.19: Automatically invoke the xrandr to set the parameters for the display output
 mpv-plugin/mpv-youtube-upnext 20220922 20221230 20230409: A userscript that allows you to play "up next"/recommended youtube videos
@@ -1635,6 +1648,7 @@ net-news/communique 1.2.0: RSS Reader with cross-platform sync
 net-nntp/inn 2.7.1: InterNetNews - the Internet meets Netnews
 net-nntp/pan 0.154-r1: A newsreader for GNOME
 net-p2p/bisq-bin 1.9.9: The decentralized bitcoin exchange (non-atomic, with arbitration)
+net-p2p/dogecoin-qt 1.14.6: Dogecoin Core Qt 1.14.6 (with Graphical User Interface) with ultra-low transaction fees. Fast and lightweight; the default installation for desktop keeps downloaded blockchain size below 2.2GB, making it ideal for daily transactions, even on systems where disk space could be limited.
 net-p2p/feather 2.2.3 2.3.0 2.4.1_pre20230301 2.4.2 2.4.5 2.4.9 9999: A free, open-source Monero wallet
 net-p2p/fragments 2.1-r1 2.1.1: Fragments is an easy to use BitTorrent client
 net-p2p/ipfs-cluster 1.0.1 1.0.2: Pinset orchestration for IPFS
@@ -1754,7 +1768,7 @@ sec-keys/signify-keys-gmid 1.7 1.8: Signify keys used to sign gmid releases
 sec-keys/signify-keys-telescope 0.7 0.8: Signify keys used to sign telescope releases
 sys-apps/0xFFFF 0.8 0.9: The 0pen Free Fiasco Firmware Flasher
 sys-apps/CommsPowerManagement 0.2.1: Python library providing various tools to work with Intel processors
-sys-apps/asus-numpad 0.1 9999: User-space driver for Asus numpad
+sys-apps/asus-numpad 0.1 0.2 9999: User-space driver for Asus numpad
 sys-apps/asus-touchpad-numpad-driver 0_pre20220311 9999: Feature-rich configurable Asus NumPad drivers
 sys-apps/bat-extras 2022.07.27 9999: Bash scripts that integrate bat with various command line tools.
 sys-apps/bustd 0.1.1: Process killer daemon for out-of-memory scenarios
@@ -1838,6 +1852,7 @@ sys-devel/fcode-utils 1.0.3: Set of utilities to process FCODE, OpenFirmware's b
 sys-devel/gdb-dashboard 0.17.2: Modular visual interface for GDB in Python
 sys-devel/gsl 4.1.5-r1: iMatix GSL code generator
 sys-devel/just 1.12.0 1.13.0 1.14.0: 🤖 Just a command runner
+sys-firmware/lenovolegionlinux 9999: Lenovo Legion Linux kernel module
 sys-firmware/pinephone-firmware 20210809: Firmwares files for PinePhone
 sys-fs/btrfs-heatmap 9-r1: Python 3 script to draw a heatmap of a btrfs filesystem
 sys-fs/ddrescueview 0.4.5: Graphical viewer for GNU ddrescue mapfiles
@@ -1932,7 +1947,7 @@ x11-misc/ksnip 1.9.2 1.10.0-r1 1.10.1: Ksnip is a Qt based cross-platform screen
 x11-misc/leftwm-theme 9999: A theme mangager for LeftWM
 x11-misc/picom-jonaburg 9999: A lightweight compositor for X11 (previously a compton fork)
 x11-misc/squeekboard 1.17.1: Virtual keyboard supporting Wayland, built primarily for the Librem 5 phone
-x11-misc/sxcs 0.7.1 0.7.2: Color picker and magnifier for X11.
+x11-misc/sxcs 0.7.2 0.7.3: Color picker and magnifier for X11.
 x11-misc/tbsm 0.5 0.6 0.7: A pure bash session or application launcher. Inspired by cdm, tdm and krunner
 x11-misc/xbanish 1.8 1.8_p20230519: Banish the mouse cursor when typing, show it again when the mouse moves
 x11-misc/xob 0.2 0.3: A lightweight overlay volume (or anything) bar for the X Window System
