@@ -28,3 +28,5 @@ RDEPEND="
 BDEPEND="
 	dev-python/build[${PYTHON_USEDEP}]
 "
+
+PATCHES=( "${FILESDIR}"/${P}-importlib-resources.patch )
