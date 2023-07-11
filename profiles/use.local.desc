@@ -22,7 +22,6 @@ app-dicts/canna-2ch:canna - Add support for the Canna kana to kanji conversion e
 app-dicts/dictd-mueller:ipa - convert transcription into the IPA Unicode
 app-emulation/arnold:inkz80 - Use inkz80 processor emulation
 app-i18n/canna:canuum - Build canuum
-app-misc/Clipboard:lto - Enable Link Time Optimization (LTO)
 app-misc/apidb:commands - Build commands
 app-misc/apidb:corelibs - Build Abtract layer
 app-misc/apidb:mariadb - Build MariaDB Layer
@@ -43,6 +42,7 @@ app-misc/clifm:qsort - Use Alexey Tourbin's faster qsort implementation
 app-misc/clifm:suggestions - Autosuggestion support
 app-misc/clifm:tags - Built-in file tagging system support
 app-misc/clifm:trash - FreeDesktop compliant trash system support
+app-misc/clipboard:lto - Enable Link Time Optimization (LTO)
 app-misc/dbf:doc - build manpages
 app-misc/far2l:archive - Multiarc extended archives support
 app-misc/far2l:nfs - NFS support in NetRocks
@@ -945,11 +945,12 @@ sys-cluster/veloc:slurm - Use sys-cluster/slurm as resource manager
 sys-cluster/wxparaver:extrae - Enable extrae support
 sys-cluster/wxparaver:ompss - Enable OmpSs parallel version
 sys-cluster/wxparaver:openmp - Enable OpenMP parallel version
-sys-firmware/lenovolegionlinux:downgrade-nvidia - Downgrade nvidia for 525 to enable TDP control (systemd-service)
-sys-firmware/lenovolegionlinux:legion-acpi - Install acpi script (experimental feature)
-sys-firmware/lenovolegionlinux:legion-tools - Build and install legion_gui and legion_cli
-sys-firmware/lenovolegionlinux:radeon-dgpu - Enable AMD GPU TDP control (systemd-service)
-sys-firmware/lenovolegionlinux:ryzenadj - CPU and APU control using ryzenadj (systemd-service)
+sys-firmware/LenovoLegionLinux:downgrade-nvidia - Downgrade nvidia for 525 to enable TDP control (systemd-service)
+sys-firmware/LenovoLegionLinux:legion-acpi - Install acpi script (experimental feature)
+sys-firmware/LenovoLegionLinux:legion-tools - Build and install legion_gui and legion_cli
+sys-firmware/LenovoLegionLinux:radeon-dgpu - Enable AMD GPU TDP control (systemd-service)
+sys-firmware/LenovoLegionLinux:ryzenadj - [AMD] CPU and APU control using ryzenadj (systemd-service)
+sys-firmware/LenovoLegionLinux:undervolt-intel - [INTEL] CPU and APU control using undervolt (systemd-service)
 sys-kernel/dkms:kernel-hooks - Enable automatic rebuilding of modules via kernel source makefile hooks
 sys-kernel/msr-safe:slurm - Install the spank plugin
 sys-kernel/uek-sources:experimental - apply experimental gentoo genpatches

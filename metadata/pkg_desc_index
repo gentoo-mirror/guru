@@ -136,7 +136,7 @@ app-dicts/dictd-moby-thesaurus 1.0: Grady Ward's Moby Thesaurus; 35000 root word
 app-dicts/dictd-mueller 3.1-r1: V. K. Mueller English-Russian Dictionary
 app-dicts/dictd-web1913 0.5.0_p1: Webster's Revised Unabridged Dictionary (1913) for dict
 app-doc/anarchism 15.3: An anarchist FAQ
-app-doc/ford 6.1.17-r1 6.2.0 6.2.4 6.2.5: FORD, automatic documentation generator for modern Fortran programs
+app-doc/ford 6.2.5: FORD, automatic documentation generator for modern Fortran programs
 app-doc/openbsd-manpages 6.9 7.0: OpenBSD manual pages
 app-doc/stdman 2022.07.30 9999: Formatted C++ stdlib man pages (cppreference)
 app-editors/amp 0.6.2: A complete text editor for your terminal.
@@ -167,7 +167,6 @@ app-i18n/im-canna 0.3.2.2-r1: Japanese Canna input method module for GTK+2
 app-i18n/scim-canna 1.0.1: SCIM IMEngine module using Canna
 app-metrics/scaphandre 0.4.1: Electrical power consumption measurement agent.
 app-misc/1password-cli 2.14.0: The world’s most-loved password manager CLI
-app-misc/Clipboard 0.7.1 0.8.0: Cut, copy, and paste anything in your terminal
 app-misc/afc 1.1 1.2 9999: Anime File Checker, checks CRC32 contained in filenames
 app-misc/afetch 2.2.0: Simple system info written in C
 app-misc/ani-cli 4.4 9999: A cli to browse and watch anime.
@@ -179,6 +178,7 @@ app-misc/brightness-control 2.4: Qt Brightness Controller in Python
 app-misc/brightnessctl 0.5.1: A program to read and control device brightness
 app-misc/cheat 4.2.3 4.3.3-r1: cheat allows you to create and view interactive cheatsheets on the command-line
 app-misc/clifm 1.8 1.10 1.11 1.12 9999: The command line file manager
+app-misc/clipboard 0.8.0 0.8.1: Cut, copy, and paste anything in your terminal
 app-misc/corectrl 1.3.5 9999: Core control application
 app-misc/cpufetch 1.01 1.02 1.04: Simplistic yet fancy CPU architecture fetching tool
 app-misc/dbf 0.9.0: Command line tool to read the content of dBASE III, IV, and 5.0 files
@@ -530,7 +530,7 @@ dev-crystal/crystal-pg 0.26.0 0.27.0: A native, non-blocking Postgres driver for
 dev-crystal/crystal-sqlite3 0.19.0: SQLite3 bindings for Crystal
 dev-crystal/crystal-xpath2 0.1.3: XPath implementation in Crystal
 dev-crystal/crystar 0.3.0 0.3.1: Crystal language Tar Module implements access to tar archives
-dev-crystal/exception_page 0.3.0: A library for displaying exceptional exception pages for easier debugging
+dev-crystal/exception_page 0.3.0 0.3.1: A library for displaying exceptional exception pages for easier debugging
 dev-crystal/habitat 0.4.7: Easily configure settings for Crystal projects
 dev-crystal/inflector 1.0.0: String inflectors for Crystal
 dev-crystal/jbuilder 1.0.0: Generate JSON objects with a Builder-style DSL
@@ -538,15 +538,15 @@ dev-crystal/json_mapping 0.1.1: Provides the legacy JSON.mapping macro method
 dev-crystal/kemal 1.1.2 1.3.0 1.4.0: Lightning Fast, Super Simple web framework
 dev-crystal/kilt 0.6.1: Generic template interface for Crystal
 dev-crystal/liquid 0.4.1: Liquid template engine for Crystal
-dev-crystal/lucky_flow 0.9.0: LuckyFlow is a library for testing user flows in the browser
+dev-crystal/lucky_flow 0.9.0 0.9.1: LuckyFlow is a library for testing user flows in the browser
 dev-crystal/protodec 0.1.4 0.1.5: Command-line tool to encode and decode arbitrary protobuf data
 dev-crystal/radix 0.4.1: Radix tree implementation for Crystal language
-dev-crystal/selenium 0.9.1 0.11.0: Selenium library for Crystal
+dev-crystal/selenium 0.11.0 0.12.0: Selenium library for Crystal
 dev-crystal/slang 1.7.3: Slim-inspired templating language for Crystal
 dev-crystal/spectator 0.11.5 0.11.6: Feature-rich testing framework for Crystal inspired by RSpec
 dev-crystal/temel 0.1.0_p20171024: Extensible Markup DSL for Crystal
 dev-crystal/water 1.0.0: A library for writing HTML in plain Crystal
-dev-crystal/webdrivers 0.4.1-r1: Helps manage drivers for Selenium, such as the Chromedriver
+dev-crystal/webdrivers 0.4.1-r1 0.4.2: Helps manage drivers for Selenium, such as the Chromedriver
 dev-crystal/webless 0.1.0: HTTP::Client for testing HTTP::Handlers directly and maintaining cookies
 dev-db/dbeaver-bin 23.0.0: Free universal database tool (community edition).
 dev-db/pg_repack 1.4.8: Reorganize tables in PostgreSQL databases with minimal locks
@@ -631,10 +631,10 @@ dev-libs/libglibutil 1.0.67-r3 1.0.68 9999: Library of glib utilities from sailf
 dev-libs/libnodave 0.8.5.1-r2: Connect to and exchange data with Siemens PLCs
 dev-libs/libopensmtpd 0.7: Library for creating OpenSMTPD filters
 dev-libs/libthai 0.1.28 0.1.29: A a set of Thai language support routines
-dev-libs/ls-hpack 2.3.0 2.3.0-r1: QPACK compression library for use with HTTP/3
-dev-libs/ls-qpack 2.5.0 2.5.0-r1: QPACK compression library for use with HTTP/3
+dev-libs/ls-hpack 2.3.0-r1: QPACK compression library for use with HTTP/3
+dev-libs/ls-qpack 2.5.0-r1: QPACK compression library for use with HTTP/3
 dev-libs/lsbcrypt 1.0.0-r1 1.0.0-r2: libcrypt wrapper for LiteSpeedTech
-dev-libs/lsquic 3.2.0: LiteSpeed QUIC (LSQUIC) Library
+dev-libs/lsquic 3.2.0 3.2.0-r1: LiteSpeed QUIC (LSQUIC) Library
 dev-libs/luksmeta 9: LUKSMeta is a simple library for storing metadata in the LUKSv1 header
 dev-libs/memkind 1.13.0: user extensible heap manager built on top of jemalloc
 dev-libs/monero-seed 0.1.0: 14-word mnemonic seed for Monero
@@ -763,7 +763,7 @@ dev-ml/xenstore-clients 1.1.0 1.3.0: Unix client tools for accessing xenstore
 dev-ml/xmlm 1.4.0: Ocaml XML manipulation module
 dev-nim/asynctools 0.1.1_p20210606: Various asynchronous tools for Nim language
 dev-nim/balls 3.9.6 3.9.8: A unittest macro to save the world, or at least your Sunday
-dev-nim/cligen 1.6.6 1.6.7: Infer & generate command-line interface/option/argument parser
+dev-nim/cligen 1.6.7 1.6.8: Infer & generate command-line interface/option/argument parser
 dev-nim/dotenv 2.0.1: dotenv implementation for Nim
 dev-nim/flatty 0.3.4: Tools and serializer for plain flat binary files
 dev-nim/frosty 3.0.0: Serialize native Nim types to strings, streams, sockets, or anything else
@@ -966,7 +966,6 @@ dev-python/langdetect 1.0.9: Port of Google's language-detection library to Pyth
 dev-python/libcst 0.4.3_p20220607: Concrete syntax tree parser and serializer for Python
 dev-python/libusb1 2.0.1: Pure-python wrapper for libusb-1.0
 dev-python/manhole 1.8.0-r1: Debugging manhole for python application
-dev-python/markdown-include 0.8.1: Syntax which allows for inclusion of contents of other Markdown docs
 dev-python/markdownify 0.11.6: Convert HTML to Markdown
 dev-python/marshmallow_enum 1.5.1: Enum handling for Marshmallow
 dev-python/mastodon-py 1.8.0 1.8.1: Python wrapper for the Mastodon API
@@ -1073,7 +1072,7 @@ dev-python/readability-lxml 0.6.1 0.8.1: fast html to text parser (article reada
 dev-python/readmdict 0.1.1-r1: Read mdx/mdd files
 dev-python/repoze-sphinx-autointerface 1.0.0-r1: Auto-generate Sphinx API docs from Zope interfaces
 dev-python/requests-wsgi-adapter 0.4.1: WSGI Transport Adapter for Requests
-dev-python/restrictedpython 6.0: A restricted execution environment for Python to run untrusted code
+dev-python/restrictedpython 6.0 6.1: A restricted execution environment for Python to run untrusted code
 dev-python/rst2ansi 0.1.5-r2: Render reStructuredText documents to the terminal
 dev-python/rstcheck 6.1.1: Checks syntax of reStructuredText and code blocks nested within it
 dev-python/rstr 3.2.0: Easily generate random strings of various types
@@ -1139,6 +1138,7 @@ dev-python/ufoNormalizer 0.6.1: A tool that will normalize the XML and other dat
 dev-python/ufoProcessor 1.9.0-r2: Read, write and generate UFOs with designspace data
 dev-python/uharfbuzz 0.33.0-r1: Streamlined Cython bindings for the HarfBuzz shaping engine
 dev-python/ukpostcodeparser 1.1.2-r1: UK postcode parser library
+dev-python/undervolt 0.3.0 9999: Undervolt Intel CPUs under Linux
 dev-python/unearth 0.9.0: A utility to fetch and download python packages
 dev-python/unicodedata2 15.0.0: Unicodedata backport updated to the latest Unicode version
 dev-python/urlmatch 1.0.1-r2: A Python library for easily pattern matching wildcard URLs
@@ -1216,7 +1216,7 @@ dev-util/fnm 1.32.0 1.33.1: Fast and simple Node.js version manager
 dev-util/fontmake 3.5.1: Compile fonts from sources (UFO, Glyphs) to binary (OpenType, TrueType)
 dev-util/fortls 2.13.0: Fortran Language Server (fortls)
 dev-util/fortran-test-drive 0.4.0: The simple testing framework (for Fortran)
-dev-util/fpm 0.8.1 0.8.2 0.9.0: Fortran Package Manager (fpm)
+dev-util/fpm 0.9.0: Fortran Package Manager (fpm)
 dev-util/fypp 3.1: Fypp - Python powered Fortran preprocessor
 dev-util/gammaray 2.11.3: High-level runtime introspection tool for Qt applications
 dev-util/gftools 0.9.21-r1: Miscellaneous tools for working with the Google Fonts collection
@@ -1265,7 +1265,7 @@ dev-vcs/lefthook 1.0.4 1.2.6: Fast and powerful Git hooks manager for any type o
 dev-zig/zls 0.10.0-r1 9999: The officially unofficial Ziglang language server
 games-action/ATLauncher 3.4.3.1 3.4.27.0: Minecraft launcher which integrates multiple different ModPacks
 games-action/blackvoxel 2.50 9999: Blackvoxel Video Game
-games-action/ddnet 17.1 9999: DDraceNetwork, a cooperative racing mod of Teeworlds
+games-action/ddnet 17.1.1 9999: DDraceNetwork, a cooperative racing mod of Teeworlds
 games-action/netrek-brmh 2.6.0: brmh client for netrek
 games-action/netrek-cow 3.3.2: cow client for netrek
 games-action/technic-launcher 4.625 4.768: Minecraft launcher for community-made modpacks on the Technic Platform
@@ -1311,6 +1311,7 @@ games-puzzle/superflu-riteurnz 1.0.0: Artisanal video-game about Superflu, the u
 games-rpg/airshipper 0.7.0-r1: Provides automatic updates for the voxel RPG Veloren
 games-rpg/snoot-game 1.8 1.8-r1: Visual novel parody of Goodbye Volcano High
 games-server/among-sus 20210519: Among Us, but it's a text adventure
+games-util/HeroicGamesLauncher-bin 2.8.0: A Native GOG and Epic Games Launcher for Linux, Windows and Mac.
 games-util/NotEnoughProduction 0.0.4: Tool for building production chains for modded minecraft
 games-util/ProtonUp-Qt 2.8.1 9999: Install and manage GE-Proton, Luxtorpeda & more for Steam Lutris and Heroic.
 games-util/chiaki 2.1.1-r2 9999: Client for PlayStation 4 and PlayStation 5 Remote Play
@@ -1523,11 +1524,12 @@ media-sound/tavu 9999: Terminal-based ALSA VU-meter with peaking
 media-sound/zita-ajbridge 0.8.4 0.8.4-r1: zita-a2j and zita-j2a - bridges between ALSA and JACK
 media-video/avisynth+ 9999: A powerful nonlinear scripting language for video
 media-video/ciano 0.2.4-r1: A multimedia file converter focused on simplicity
-media-video/ffsubsync 0.4.22 0.4.23 0.4.25: Automagically syncronize subtitles with video
+media-video/ffsubsync 0.4.25: Automagically syncronize subtitles with video
 media-video/kikoplay 0.8.2 9999: KikoPlay is a full-featured danmu player
+media-video/lossless-cut 3.54.0: Lossless video/audio editing: export media without reencoding, powered by ffmpeg
 media-video/megapixels 1.4.3: A GTK3 camera application that knows how to deal with the media request api
 media-video/obs-vaapi 0.3.1 0.4.0 9999: OBS Studio VAAPI support via GStreamer
-media-video/obs-vkcapture 1.2.0 1.3.3 1.4.0 9999: OBS Linux Vulkan/OpenGL game capture
+media-video/obs-vkcapture 1.3.3 1.4.0 1.4.1 9999: OBS Linux Vulkan/OpenGL game capture
 media-video/olive 9999: Free open-source non-linear video editor
 media-video/owncast 0.0.12 0.0.13: A self-hosted live video and web chat server
 media-video/syncplay 1.6.9 1.7.0: Client/server to synchronize media playback
@@ -1546,7 +1548,7 @@ mpv-plugin/mpv-autosub 20210629: Fully automatic subtitle downloading for the MP
 mpv-plugin/mpv-kscreen-doctor 0.2.1 0.2.2: Set the display refresh rate that best approximates the content fps
 mpv-plugin/mpv-mpris 0.8.1 0.9-r2 1.0 9999: MPRIS plugin for mpv
 mpv-plugin/mpv-plugin-xrandr 2023.06.19: Automatically invoke the xrandr to set the parameters for the display output
-mpv-plugin/mpv-youtube-upnext 20220922 20221230 20230409: A userscript that allows you to play "up next"/recommended youtube videos
+mpv-plugin/mpv-youtube-upnext 20221230 20230409 20230709: A userscript that allows you to play "up next"/recommended youtube videos
 mpv-plugin/mpv_sponsorblock 20211223 20220924 20230130: mpv script to skip sponsored segments of YouTube videos
 mpv-plugin/mpv_sponsorblock_minimal 2022.02.07: A minimal script to skip sponsored segments of YouTube videos
 mpv-plugin/mpv_thumbnail_script 0.5.1 0.5.2: A Lua script to show preview thumbnails in mpv's OSC seekbar
@@ -1852,14 +1854,14 @@ sys-devel/fcode-utils 1.0.3: Set of utilities to process FCODE, OpenFirmware's b
 sys-devel/gdb-dashboard 0.17.2: Modular visual interface for GDB in Python
 sys-devel/gsl 4.1.5-r1: iMatix GSL code generator
 sys-devel/just 1.12.0 1.13.0 1.14.0: 🤖 Just a command runner
-sys-firmware/lenovolegionlinux 9999: Lenovo Legion Linux kernel module
+sys-firmware/LenovoLegionLinux 9999: Lenovo Legion Linux kernel module
 sys-firmware/pinephone-firmware 20210809: Firmwares files for PinePhone
 sys-fs/btrfs-heatmap 9-r1: Python 3 script to draw a heatmap of a btrfs filesystem
 sys-fs/ddrescueview 0.4.5: Graphical viewer for GNU ddrescue mapfiles
 sys-fs/diskonaut 0.10.0 0.11.0 9999: Terminal disk space visual navigator
 sys-fs/dua-cli 2.20.1: A tool to conveniently learn about the disk usage of directories, fast!
-sys-fs/dwarfs 0.7.0_rc4-r1: A fast very high compression read-only FUSE file system
-sys-fs/dwarfs-bin 0.6.2 0.7.0_rc4: Static version of a fast very high compression read-only FUSE file system
+sys-fs/dwarfs 0.7.0_rc4-r1 0.7.0_rc6: A fast very high compression read-only FUSE file system
+sys-fs/dwarfs-bin 0.6.2 0.7.0_rc6: Static version of a fast very high compression read-only FUSE file system
 sys-fs/gcsfuse 0.42.4: A user-space file system for interacting with Google Cloud Storage
 sys-fs/gdu 5.13.2 5.14.0: Disk usage analyzer with console interface written in Go
 sys-fs/gfs2-utils 3.4.1: Shared-disk cluster file system
@@ -1902,12 +1904,12 @@ virtual/mgcv 0: Virtual of a R recommended package
 virtual/nlme 0: Virtual of a R recommended package
 virtual/nnet 0: Virtual of a R recommended package
 virtual/survival 0: Virtual of a R recommended package
-www-apps/castopod 1.4.1 1.4.3: Open-source hosting platform made for podcasters
+www-apps/castopod 1.4.3 1.4.5: Open-source hosting platform made for podcasters
 www-apps/code-server-bin 4.12.0-r1 4.13.0 4.13.0-r1 4.14.0 4.14.1: VS Code in the browser (binary version with unbundled node and ripgrep)
-www-apps/forgejo 1.18.0.1 1.19.3.0: A self-hosted lightweight software forge
+www-apps/forgejo 1.18.0.1 1.19.4.0: A self-hosted lightweight software forge
 www-apps/gotosocial 0.9.0: Fast, fun, ActivityPub server, powered by Go
 www-apps/honk 0.9.8 0.9.91: ActivityPub server with minimal setup and support costs
-www-apps/invidious 2023.06.10 2023.06.22: Invidious is an alternative front-end to YouTube
+www-apps/invidious 2023.06.22 2023.07.05: Invidious is an alternative front-end to YouTube
 www-apps/jackett-bin 0.20.514 0.20.1202 0.20.3288 9999: API Support for your favorite torrent trackers
 www-apps/mycorrhiza 1.14.0 9999: Git-based wiki engine written in Go using mycomarkup
 www-apps/nitter 0.1.0_p20230306 2023.05.20: Alternative front-end for Twitter
@@ -1916,7 +1918,7 @@ www-apps/snac 2.25 2.26: A simple, minimalistic ActivityPub instance
 www-apps/uwebsockets 20.11.0 20.14.0 9999: ultra fast, simple, secure & standards compliant web I/O
 www-client/badwolf 1.2.2 9999: Minimalist and privacy-oriented WebKitGTK+ browser
 www-client/browsh 1.6.4_p1: A fully-modern text-based browser, rendering to TTY and browsers
-www-client/nyxt 3.2.1 3.3.0 9999: Nyxt - the hacker's power-browser
+www-client/nyxt 3.3.0 3.4.0 9999: Nyxt - the hacker's power-browser
 www-client/vimb 3.6.0 9999: a fast, lightweight, vim-like browser based on webkit
 www-client/woob 3.1-r1 9999: Web Outside Of Browsers (core, site modules and applications)
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits
