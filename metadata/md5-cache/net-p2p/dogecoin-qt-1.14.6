@@ -1,15 +1,15 @@
 BDEPEND=sys-devel/autoconf sys-devel/automake
 DEFINED_PHASES=configure install postinst
-DEPEND=dev-libs/libevent:= dev-libs/protobuf dev-libs/openssl sys-devel/libtool sys-devel/automake:= >=dev-libs/boost-1.81.0-r1 wallet? ( sys-libs/db:5.3=[cxx] ) dev-qt/qtcore dev-qt/qtgui dev-qt/qtwidgets dev-qt/qtdbus dev-qt/qtnetwork dev-qt/qtprintsupport dev-qt/linguist-tools:= wallet? ( media-gfx/qrencode ) zmq? ( net-libs/cppzmq )
+DEPEND=dev-libs/libevent:= dev-libs/protobuf dev-libs/openssl sys-devel/libtool sys-devel/automake:= >=dev-libs/boost-1.81.0-r1 cpu_flags_x86_avx2? ( app-crypt/intel-ipsec-mb ) wallet? ( sys-libs/db:5.3=[cxx] media-gfx/qrencode ) dev-qt/qtcore dev-qt/qtgui dev-qt/qtwidgets dev-qt/qtdbus dev-qt/qtnetwork dev-qt/qtprintsupport dev-qt/linguist-tools:= zmq? ( net-libs/cppzmq )
 DESCRIPTION=Dogecoin Core Qt 1.14.6 (with Graphical User Interface) with ultra-low transaction fees. Fast and lightweight; the default installation for desktop keeps downloaded blockchain size below 2.2GB, making it ideal for daily transactions, even on systems where disk space could be limited.
 EAPI=8
 HOMEPAGE=https://github.com/dogecoin
 INHERIT=desktop
-IUSE=tests +wallet +prune zmq
-KEYWORDS=~amd64 ~x86
+IUSE=cpu_flags_x86_avx2 tests +wallet +prune zmq
+KEYWORDS=~amd64
 LICENSE=MIT
-RDEPEND=dev-libs/libevent:= dev-libs/protobuf dev-libs/openssl sys-devel/libtool sys-devel/automake:= >=dev-libs/boost-1.81.0-r1 wallet? ( sys-libs/db:5.3=[cxx] ) dev-qt/qtcore dev-qt/qtgui dev-qt/qtwidgets dev-qt/qtdbus dev-qt/qtnetwork dev-qt/qtprintsupport dev-qt/linguist-tools:= wallet? ( media-gfx/qrencode ) zmq? ( net-libs/cppzmq )
+RDEPEND=dev-libs/libevent:= dev-libs/protobuf dev-libs/openssl sys-devel/libtool sys-devel/automake:= >=dev-libs/boost-1.81.0-r1 cpu_flags_x86_avx2? ( app-crypt/intel-ipsec-mb ) wallet? ( sys-libs/db:5.3=[cxx] media-gfx/qrencode ) dev-qt/qtcore dev-qt/qtgui dev-qt/qtwidgets dev-qt/qtdbus dev-qt/qtnetwork dev-qt/qtprintsupport dev-qt/linguist-tools:= zmq? ( net-libs/cppzmq )
 SLOT=0
 SRC_URI=https://github.com/dogecoin/dogecoin/archive/refs/tags/v1.14.6.tar.gz -> dogecoin-qt-v1.14.6.tar.gz
 _eclasses_=desktop	021728fdc1b03b36357dbc89489e0f0d
-_md5_=581584400f182599045f71c2d0afd597
+_md5_=76f5cee7778ddf703a4b489749e46c33
