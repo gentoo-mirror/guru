@@ -10,8 +10,8 @@ SRC_URI="https://github.com/dogecoin/dogecoin/archive/refs/tags/v${PV}.tar.gz ->
 LICENSE="MIT"
 SLOT="0"
 DB_VER="5.3"
-KEYWORDS="~amd64 ~x86"
-IUSE="tests +wallet +prune zmq"
+KEYWORDS="~amd64"
+IUSE="cpu_flags_x86_avx2 tests +wallet +prune zmq"
 DOGEDIR="/opt/${PN}"
 DEPEND="
 	dev-libs/libevent:=
@@ -20,7 +20,11 @@ DEPEND="
 	sys-devel/libtool
 	sys-devel/automake:=
 	>=dev-libs/boost-1.81.0-r1
-	wallet? ( sys-libs/db:"${DB_VER}"=[cxx] )
+	cpu_flags_x86_avx2? ( app-crypt/intel-ipsec-mb )
+	wallet? (
+			sys-libs/db:"${DB_VER}"=[cxx]
+			media-gfx/qrencode
+			)
 	dev-qt/qtcore
 	dev-qt/qtgui
 	dev-qt/qtwidgets
@@ -28,7 +32,6 @@ DEPEND="
 	dev-qt/qtnetwork
 	dev-qt/qtprintsupport
 	dev-qt/linguist-tools:=
-	wallet? ( media-gfx/qrencode )
 	zmq? ( net-libs/cppzmq )
 "
 RDEPEND="${DEPEND}"
@@ -53,6 +56,7 @@ src_configure() {
 	./autogen.sh || die "autogen failed"
 	local my_econf=(
 		--enable-cxx
+		$(use_with cpu_flags_x86_avx2 intel-avx2)
 		$(use_with wallet incompatible-bdb)
 		--bindir="${DOGEDIR}/bin"
 		BDB_CFLAGS="-I/usr/include/db${DB_VER}"
