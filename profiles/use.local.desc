@@ -284,15 +284,8 @@ games-emulation/RetroArch:xmb - XMB menu
 games-emulation/RetroArch:xv - XVideo support
 games-emulation/RetroArch:zlib - zlib support (ZIP extract, PNG decoding/encoding)
 games-emulation/citra:cubeb - Enables the cubeb audio backend
-games-emulation/citra:hle-sound - Enable HLE sound via FFmpeg audio (AAC) decoder
 games-emulation/citra:system-libfmt - Use system libfmt
 games-emulation/citra:telemetry - Enable web services (telemetry, etc.)
-games-emulation/citra:video - Enable FFmpeg video dumper
-games-emulation/citra-canary:cubeb - Enables the cubeb audio backend
-games-emulation/citra-canary:hle-sound - Enable HLE sound via FFmpeg audio (AAC) decoder
-games-emulation/citra-canary:system-libfmt - Use system libfmt
-games-emulation/citra-canary:telemetry - Enable web services (telemetry, etc.)
-games-emulation/citra-canary:video - Enable FFmpeg video dumper
 games-emulation/dosbox-x:X - Enable X11 integration for better fullscreening functionality
 games-emulation/dosbox-x:debug - Enable the internal debugger of this program
 games-emulation/dosbox-x:ffmpeg - Enable MPEG.TS + H.264 video capture format support via media-video/ffmpeg
@@ -348,6 +341,7 @@ games-fps/etlegacy:renderer2 - Enable renderer2
 games-fps/quakespasm:sdl2 - Use media-libs/libsdl2 instead of media-libs/libsdl
 games-puzzle/atris:sound - Enable atris sound pack
 games-server/among-sus:notifications - Notify players you're moving
+games-util/HeroicGamesLauncher-bin:gamescope - Efficient micro-compositor for running games
 games-util/chiaki:cli - Build CLI interface
 games-util/itch-bin:system-ffmpeg - Use the system-wide media-video/ffmpeg instead of bundled.
 games-util/legendary:webview - Use dev-python/pywebview for the sign-in process

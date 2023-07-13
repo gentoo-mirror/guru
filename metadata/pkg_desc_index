@@ -66,7 +66,7 @@ app-admin/ananicy-cpp 1.0.0_rc6-r1: Ananicy rewritten in C++ for much lower CPU 
 app-admin/antidot 0.6.3: Cleans up your $HOME from those pesky dotfiles
 app-admin/aws-vault 7.2.0: Securely store and access AWS credentials in development environments
 app-admin/chamber 2.10.9 2.10.12: Managing secrets in AWS SSM Parameter Store
-app-admin/chezmoi 2.34.2: Manage your dotfiles across multiple machines, securely
+app-admin/chezmoi 2.34.3: Manage your dotfiles across multiple machines, securely
 app-admin/customrescuecd-x86 0.4.1: A system rescue cd or usbstick for desktop and server based on gentoo
 app-admin/customrescuecd-x86_64 0.12.7 0.12.8: A system rescue cd or usbstick for desktop and server based on gentoo
 app-admin/enpass-desktop-bin 6.7.4.933: A cross-platform, complete password management solution
@@ -80,7 +80,7 @@ app-admin/krapplet 0.3.1-r1: Krapplet (keyring applet): a Linux graphical passwo
 app-admin/oet 0.1.9 0.1.10 9999: Update your system into binpkgs in an overlay sandbox
 app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applications and tmux
 app-admin/pass-update 2.1: pass extension that provides an easy flow for updating passwords
-app-admin/pulumi-bin 3.72.2 3.73.0 3.74.0: Infrastructure as code in any programming language
+app-admin/pulumi-bin 3.72.2 3.73.0 3.74.0 3.75.0: Infrastructure as code in any programming language
 app-admin/rbw 9999: unofficial bitwarden cli
 app-admin/s-tui 1.1.3-r1: Stress-Terminal UI monitoring tool
 app-admin/synadm 0.41.2 0.41.3: Command line admin tool for Synapse
@@ -238,7 +238,7 @@ app-office/jameica-bin 2.10.4: Local platform for home banking
 app-office/joplin-bin 2.9.17: Note taking app, on Electron, can import notes from Evernote
 app-office/lotus123r3 1.0.0_rc4: A native port of Lotus 1-2-3 to Linux.
 app-office/nixnote-bin 2.1.9 9999: Free and open source note taking app, compatible with Evernote sync server
-app-office/obsidian 1.2.8: A second brain, for you, forever.
+app-office/obsidian 1.2.8 1.3.5: A second brain, for you, forever.
 app-office/openoffice-bin 4.1.14: Apache OpenOffice productivity suite
 app-office/pyspread 2.1.1: Pyspread is a non-traditional spreadsheet written in Python
 app-portage/appswipe 1.1.14: Application for browsing your local Portage repository files
@@ -274,6 +274,7 @@ app-shells/zsh-histdb 0_pre20200405: A slightly better history for zsh
 app-shells/zsh-history-substring-search 1.0.2: ZSH port of Fish history search (up arrow)
 app-shells/zsh-history-to-fish 0.3.0-r1: Bring your ZSH history to Fish shell
 app-shells/zsh-silver 9999: Zsh plugin for silver
+app-text/Lorien-bin 0.5.0: Infinite canvas drawing/whiteboarding. Made with Godot.
 app-text/OCRmyPDF 14.1.0 14.2.1: OCRmyPDF adds an OCR text layer to scanned PDF files
 app-text/cmark-gfm 0.29.0.3: GitHub's fork of cmark
 app-text/code-minimap 0.6.4: A high performance code minimap generator
@@ -1277,7 +1278,6 @@ games-board/openriichi 0.2.1.1: OpenRiichi is an open source Japanese Mahjong cl
 games-board/rmahjong 0.4_p20201106: Riichi Mahjong, the Japanese variant of the Chinese game Mahjong for 4 players
 games-emulation/RetroArch 1.15.0: RetroArch is a frontend for emulators, game engines and media players
 games-emulation/citra 9999: A Nintendo 3DS Emulator
-games-emulation/citra-canary 9999: A Nintendo 3DS Emulator
 games-emulation/dosbox-x 2023.05.01 9999: Complete, accurate DOS emulator forked from DOSBox
 games-emulation/duckstation 9999: Fast Sony PlayStation (PSX) emulator
 games-emulation/flycast 9999: Sega Dreamcast, Naomi and Atomiswave emulator
@@ -1860,7 +1860,7 @@ sys-fs/btrfs-heatmap 9-r1: Python 3 script to draw a heatmap of a btrfs filesyst
 sys-fs/ddrescueview 0.4.5: Graphical viewer for GNU ddrescue mapfiles
 sys-fs/diskonaut 0.10.0 0.11.0 9999: Terminal disk space visual navigator
 sys-fs/dua-cli 2.20.1: A tool to conveniently learn about the disk usage of directories, fast!
-sys-fs/dwarfs 0.7.0_rc4-r1 0.7.0_rc6: A fast very high compression read-only FUSE file system
+sys-fs/dwarfs 0.7.0_rc4-r1 0.7.0: A fast very high compression read-only FUSE file system
 sys-fs/dwarfs-bin 0.6.2 0.7.0_rc6: Static version of a fast very high compression read-only FUSE file system
 sys-fs/gcsfuse 0.42.4: A user-space file system for interacting with Google Cloud Storage
 sys-fs/gdu 5.13.2 5.14.0: Disk usage analyzer with console interface written in Go
