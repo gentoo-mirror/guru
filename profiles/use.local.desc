@@ -20,7 +20,11 @@ app-crypt/uacme:mbedtls - Use net-libs/mbedtls instead of dev-libs/openssl
 app-crypt/uacme:ualpn - Build the ualpn proxy that transparently handles tls-alpn-01
 app-dicts/canna-2ch:canna - Add support for the Canna kana to kanji conversion engine
 app-dicts/dictd-mueller:ipa - convert transcription into the IPA Unicode
+app-emulation/LookingGlass:binutils - build backtrace support
+app-emulation/LookingGlass:pipewire - enable media-video/pipewire support
 app-emulation/arnold:inkz80 - Use inkz80 processor emulation
+app-emulation/box64:aot - Enables the dynamic ahead of time recompiler for increased performance on ARM
+app-emulation/box86:aot - Enables the dynamic ahead of time recompiler for increased performance on ARM
 app-i18n/canna:canuum - Build canuum
 app-misc/apidb:commands - Build commands
 app-misc/apidb:corelibs - Build Abtract layer
@@ -409,6 +413,8 @@ gui-apps/yambar:xkb - keyboard support for X11
 gui-apps/yambar:xwindow - XWindow (window tracking for X11) support
 gui-libs/cubegui:concurrent - Enables usage of the QtConcurrent for the the parallel calculations
 gui-libs/cubegui:webengine - Enables usage of the QtWebEngine for the HTML Documentation
+gui-libs/libdecor:dbus - Enable dbus to query current cursor theme
+gui-libs/libdecor:examples - Build and install examples
 gui-libs/xdg-desktop-portal-hyprland:elogind - Enable support for rootless session via elogind
 gui-wm/cage:X - Enable support for X11 applications (XWayland)
 gui-wm/hyprland-contrib:grimblast - Install grimblast, a hyprland version of grimshot

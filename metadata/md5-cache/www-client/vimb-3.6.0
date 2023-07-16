@@ -1,14 +1,15 @@
+BDEPEND=virtual/pkgconfig
 DEFINED_PHASES=compile install postinst prepare
-DEPEND=virtual/pkgconfig adblock? ( www-misc/wyebadblock )
-DESCRIPTION=a fast, lightweight, vim-like browser based on webkit
-EAPI=7
+DEPEND=adblock? ( www-misc/wyebadblock ) >=net-libs/webkit-gtk-2.20.0:4 x11-libs/gtk+:3
+DESCRIPTION=A fast, lightweight, vim-like browser based on webkit
+EAPI=8
 HOMEPAGE=https://fanglingsu.github.io/vimb/
-INHERIT=savedconfig optfeature
+INHERIT=flag-o-matic optfeature savedconfig
 IUSE=savedconfig adblock savedconfig
 KEYWORDS=~amd64
 LICENSE=GPL-3
-RDEPEND=x11-libs/gtk+:3 >=net-libs/webkit-gtk-2.20.0:4
+RDEPEND=adblock? ( www-misc/wyebadblock ) >=net-libs/webkit-gtk-2.20.0:4 x11-libs/gtk+:3
 SLOT=0
 SRC_URI=https://github.com/fanglingsu/vimb/archive/3.6.0.tar.gz -> vimb-3.6.0.tar.gz
-_eclasses_=portability	a74d533f258f1f435be71312558c12f9	savedconfig	8b5f9d995a970e49cd427c55d5840285	optfeature	222cb475c5a4f7ae7cfb0bf510a6fe54
-_md5_=50943f6e2f5675bf6cfe58020e0b53a6
+_eclasses_=toolchain-funcs	513c31b3346458ed1f3878b57da6d61c	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	ad475baa777c9978fa035216c8264a10	optfeature	222cb475c5a4f7ae7cfb0bf510a6fe54	portability	a74d533f258f1f435be71312558c12f9	savedconfig	8b5f9d995a970e49cd427c55d5840285
+_md5_=83836868c9f9d9d09bff045b956bccc6

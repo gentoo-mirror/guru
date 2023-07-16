@@ -151,7 +151,10 @@ app-editors/typora-bin 1.5.8: a markdown editor,markdown reader.
 app-emacs/idris-mode 1.0 9999: Idris syntax highlighting, compiler-supported editing, and interactive REPL
 app-emacs/prop-menu 0.1.2: Compute pop-up menus from text and overlay properties
 app-emacs/yc 5.2.1: Yet another Canna client on Emacsen
+app-emulation/LookingGlass 1_beta6 9999: A low latency KVM FrameRelay implementation for guests with VGA PCI Passthrough
 app-emulation/arnold 20170513: Amstrad CPC emulator
+app-emulation/box64 0.2.2: Linux Userspace x86_64 Emulator with a twist
+app-emulation/box86 0.3.0: Linux Userspace x86 Emulator with a twist
 app-emulation/proton-ge-custom-bin 7.27 7.28 7.29: A fancy custom distribution of Valves Proton with various patches
 app-emulation/quickemu 3.11: Create and run optimised Windows, macOS and Linux desktop virtual machines
 app-emulation/spice-html5 0.2.2 0.3.0-r1: Spice Javascript client
@@ -775,7 +778,7 @@ dev-nim/jester 0.5.0 0.6.0: A sinatra-like web framework for Nim
 dev-nim/jsony 1.1.3_p20220114 1.1.5: A loose direct to object json parser with hooks
 dev-nim/karax 1.2.3 1.3.0: a framework for developing single page applications in Nim
 dev-nim/markdown 0.8.5 0.8.7-r1: A Markdown Parser in Nim World
-dev-nim/nake 1.9.4: make-like for Nim. Describe your builds as tasks!
+dev-nim/nake 1.9.4-r1: make-like for Nim. Describe your builds as tasks!
 dev-nim/nimbus 1.1.2 1.1.3: A Nim build system
 dev-nim/nimcrypto 0.5.4_p20210619: Nim cryptographic library
 dev-nim/noise 0.1.6 0.1.8: a Nim implementation of linenoise
@@ -1027,7 +1030,7 @@ dev-python/pydispatcher 2.0.7: Multi-producer-multi-consumer signal dispatching 
 dev-python/pydub 0.25.1: Manipulate audio with an simple and easy high level interface
 dev-python/pyfiglet 0.8_p1: Pure-python FIGlet implementation
 dev-python/pygaljs 1.0.2-r1: Python package providing assets from https://github.com/Kozea/pygal.js
-dev-python/pygdbmi 0.11.0.0: A library to parse gdb mi output and interact with gdb subprocesses
+dev-python/pygdbmi 0.11.0.0-r1: A library to parse gdb mi output and interact with gdb subprocesses
 dev-python/pygments-promql 0.0.9: A PromQL lexer for Pygments
 dev-python/pygsl 2.3.3: Python interface for the GNU scientific library (gsl)
 dev-python/pykeepass 4.0.2: Python library to interact with keepass databases (supports KDBX3 and KDBX4)
@@ -1202,7 +1205,7 @@ dev-util/DirectXShaderCompiler 1.7.2207-r1 1.7.2212: Microsoft DirectX Shader Co
 dev-util/FoBiS 3.0.5-r1: FoBiS.py, a Fortran Building System for poor men
 dev-util/afdko 3.9.5-r1: Adobe Font Development Kit for OpenType
 dev-util/babeltrace2 2.0.4: A command-line tool and library to read and convert trace files
-dev-util/bash-language-server 4.10.0 4.10.1: A language server for Bash
+dev-util/bash-language-server 4.10.1 4.10.2: A language server for Bash
 dev-util/bats-assert 2.0.0: Common assertions for Bats
 dev-util/bats-support 0.3.0: Supporting library for Bats test helpers
 dev-util/bazelisk 1.12.0: A user-friendly launcher for Bazel
@@ -1228,7 +1231,8 @@ dev-util/haredo 1.0.2 9999: a simple and unix-idiomatic build automator
 dev-util/hut 0.3.0: CLI tool for sourcehut
 dev-util/insomnia-bin 2020.3.3 2020.5.2: HTTP and GraphQL client for developers
 dev-util/lemminx-bin 0.24.0 0.25.0: XML Language Server
-dev-util/lua-language-server 3.6.22: Lua language server
+dev-util/lottieconverter 0.2: Simple lottie (telegram animated sticker) converter.
+dev-util/lua-language-server 3.6.23: Lua language server
 dev-util/mh 1.0.3: Generate help for Makefile
 dev-util/odb 2.5.0_beta21_p1: ODB compiler and the ODB system documentation
 dev-util/ots 8.1.4 8.2.1: An util for validating and sanitising OpenType files
@@ -1361,8 +1365,8 @@ gui-apps/coreuniverse 4.2.0 9999: Shows information about apps for C Suite
 gui-apps/darkman 1.5.4: Framework for dark and light mode transitions
 gui-apps/espanso 2.1.8: Cross-platform Text Expander written in Rust
 gui-apps/eww 0.3.0 0.4.0 0.4.0-r1: Elkowars Wacky Widgets is a standalone widget system made in Rust
-gui-apps/fnott 1.2.1 1.3.0 9999: Keyboard driven and lightweight Wayland notification daemon.
-gui-apps/fuzzel 1.8.2 1.9.1 9999: Application launcher for wlroots based Wayland compositors.
+gui-apps/fnott 1.2.1 1.3.0 1.4.1 9999: Keyboard driven and lightweight Wayland notification daemon.
+gui-apps/fuzzel 1.9.2 9999: Application launcher for wlroots based Wayland compositors.
 gui-apps/gcolor3 2.4.0: A simple color chooser written in GTK3
 gui-apps/gradience 0.3.0-r1: GNOME's main interface to configure various aspects of the desktop
 gui-apps/gtklock 2.0.1 2.1.0: GTK-based lockscreen for Wayland
@@ -1410,6 +1414,7 @@ gui-apps/yambar 1.6.2 1.7.0 1.8.0 1.9.0 9999: Simplistic and highly configurable
 gui-libs/cubegui 4.7-r2: CUBE Uniform Behavioral Encoding GUI
 gui-libs/libcprime 4.2.0 4.2.2 9999: Library for managing settings of CoreApps
 gui-libs/libcsys 4.2.0 9999: Library for managing the device
+gui-libs/libdecor 0.1.1 9999: A client-side decorations library for Wayland clients
 gui-libs/text-engine 0.1.1-r2 9999: A lightweight rich-text framework for GTK 4
 gui-libs/webp-pixbuf-loader 0.0.1: WebP Image format GdkPixbuf loader
 gui-libs/xdg-desktop-portal-hyprland 0.3.0 0.3.0-r1 0.3.1 0.4.0 9999: xdg-desktop-portal backend for hyprland
@@ -1518,7 +1523,7 @@ media-sound/opensoundmeter 1.2.1 1.2.2 1.2.2_p20230104: FFT based application fo
 media-sound/pianobooster 1.0.0: A MIDI player/game that displays notes and teaches you how to play the piano
 media-sound/pulseaudio-virtualmic 0.1 9999: Use any offline or online media file or stream as a PulseAudio source
 media-sound/qloud 1.4.2: Tool to measure loudspeaker frequency and step responses and distortions
-media-sound/qpwgraph 0.3.9 9999: PipeWire Graph Qt GUI Interface
+media-sound/qpwgraph 0.4.4 9999: PipeWire Graph Qt GUI Interface
 media-sound/spotify-adblock 1.0.1 1.0.2: Adblocker for Spotify
 media-sound/tavu 9999: Terminal-based ALSA VU-meter with peaking
 media-sound/zita-ajbridge 0.8.4 0.8.4-r1: zita-a2j and zita-j2a - bridges between ALSA and JACK
@@ -1574,7 +1579,7 @@ net-im/discord-canary-bin 0.0.162: All-in-one voice and text chat
 net-im/discord-ptb-bin 0.0.29: All-in-one voice and text chat
 net-im/fractal 5_beta1: Matrix group messaging app
 net-im/gajim-plugins 9999: Plugins developed fro Gajim XMPP client
-net-im/go-sendxmpp 0.5.5 0.5.6: A little tool to send messages to an XMPP contact or MUC
+net-im/go-sendxmpp 0.5.6 0.6.0: A little tool to send messages to an XMPP contact or MUC
 net-im/gtkcord4 0.0.10 0.0.11: A Gtk4 Discord client in Golang
 net-im/guilded-bin 1.0.9105465: Drop Discord, get Guilded
 net-im/heisenbridge 1.14.2: A bouncer-style Matrix IRC bridge
@@ -1582,7 +1587,7 @@ net-im/jitsi-meet 2022.3.1: Desktop application for Jitsi Meet built with Electr
 net-im/kaidan 0.9.1: User-friendly and modern chat app for every device
 net-im/mastoposter 0.1-r1 0.2: Configurable reposter from Mastodon-compatible Fediverse servers
 net-im/matterhorn-bin 50200.13.0: Terminal based Mattermost client
-net-im/mautrix-discord 0.4.0 0.5.0: A Matrix-Discord puppeting bridge
+net-im/mautrix-discord 0.4.0 0.4.0-r1 0.5.0 0.5.0-r1: A Matrix-Discord puppeting bridge
 net-im/mautrix-facebook 0.4.1 0.5.0: A Matrix-Facebook Messenger puppeting bridge
 net-im/mautrix-signal 0.4.2 0.4.3: A Matrix-Signal Messenger puppeting bridge
 net-im/mautrix-slack 0_pre20230414 0_pre20230517: A Matrix-Slack puppeting bridge based on slack-go
@@ -1631,7 +1636,7 @@ net-misc/mastorss 0.13.0 0.13.1 9999: Another RSS to Mastodon bot
 net-misc/megasync 4.3.8.0 4.5.0.0 9999: The official Qt-based program for syncing your MEGA account in your PC
 net-misc/myip 1.2.0: Get your external IP address using STUN server
 net-misc/ooni-probe-cli 3.17.5 3.18.0: OONI Probe network measurement tool for detecting internet censorship
-net-misc/openbgpd 6.8_p0 6.9_p0 9999: OpenBGPD is a free implementation of BGPv4
+net-misc/openbgpd 6.9_p0 8.0 9999: OpenBGPD is a free implementation of BGPv4
 net-misc/peertube-viewer-rs 1.8.4-r1: Command-line PeerTube viewer inspired by youtube-viewer
 net-misc/purritobin 0.6.7 9999: minimalistic commandline pastebin
 net-misc/rpki-client 6.8_p0 6.8_p1: Portability shim for OpenBSD's rpki-client
@@ -1647,10 +1652,11 @@ net-misc/xmrig-mo 6.16.2 6.16.3 6.16.4 6.16.5 6.18.0 6.18.1 6.19.0 6.19.1 6.19.2
 net-misc/yacy 1.924.20210209.10069: YaCy - p2p based distributed web-search engine
 net-news/comitium 1.8.1: feed aggregator for gemini supporting many formats and protocols
 net-news/communique 1.2.0: RSS Reader with cross-platform sync
+net-news/newsraft 0.19 9999: A lightweight feed reader with ncurses user interface inspired by Newsboat.
 net-nntp/inn 2.7.1: InterNetNews - the Internet meets Netnews
 net-nntp/pan 0.154-r1: A newsreader for GNOME
 net-p2p/bisq-bin 1.9.9: The decentralized bitcoin exchange (non-atomic, with arbitration)
-net-p2p/dogecoin-qt 1.14.6: Dogecoin Core Qt 1.14.6 (with Graphical User Interface) with ultra-low transaction fees. Fast and lightweight; the default installation for desktop keeps downloaded blockchain size below 2.2GB, making it ideal for daily transactions, even on systems where disk space could be limited.
+net-p2p/dogecoin-qt 1.14.6: Dogecoin Core Qt-GUI for desktop. Keeps downloaded blockchain size below 2.2GB.
 net-p2p/feather 2.2.3 2.3.0 2.4.1_pre20230301 2.4.2 2.4.5 2.4.9 9999: A free, open-source Monero wallet
 net-p2p/fragments 2.1-r1 2.1.1: Fragments is an easy to use BitTorrent client
 net-p2p/ipfs-cluster 1.0.1 1.0.2: Pinset orchestration for IPFS
@@ -1670,7 +1676,7 @@ net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that 
 net-wireless/rtl8192eu 0_pre20230613: Realtek 8192EU driver module for Linux kernel
 net-wireless/rtl8723bu 9999: Driver for the rtl8723 wireless chipset
 net-wireless/rtl8821ce 0_pre20230504: Realtek RTL8821CE Driver module for Linux kernel
-net-wireless/rtl8821cu 0_pre20230624: Realtek 8821CU/RTL8811CU module for Linux kernel
+net-wireless/rtl8821cu 0_pre20230713: Realtek 8821CU/RTL8811CU module for Linux kernel
 sci-biology/cmdock 0.2.0: Program for docking ligands to proteins and nucleic acids
 sci-biology/geneathome 1.10-r5: BOINC application for expanding Gene Regulatory Networks (GRN)
 sci-chemistry/vesta-bin 3.5.8: Visualisation for Electronic and STructural Analysis.
@@ -1887,13 +1893,16 @@ sys-power/ZenStates-Linux 0_pre20170507: Dynamically edit AMD Ryzen processor P-
 sys-power/amdgpu-fan 0.1.0-r1: Fan controller for AMD graphics cards running the amdgpu driver on Linux
 sys-power/auto-cpufreq 1.9.6: Automatic CPU speed & power optimizer for Linux
 sys-power/disable-c6 0_p20190603: disable the C6 state upon system boot, preventing Ryzen freezes
+sys-power/envycontrol 3.2.0 9999: Easy GPU switching for Nvidia Optimus laptops under Linux
 sys-power/fan2go 0.6.2 0.6.2-r1: A simple daemon providing dynamic fan speed control
 sys-power/geopmd 2.0.0_rc1: Global Extensible Open Power Manager (Daemon)
 sys-power/gtherm 0.0.3: A simple daemon to monitor thermal zones and cooling devices
 sys-power/linux-tools-power-x86 5.18 6.1: Linux x86 CPU power tools
+sys-power/nvidia-exec 0.1.1 9999: Lenovo Legion Linux kernel module
 sys-process/gotop 4.2.0: A terminal based graphical activity monitor inspired by gtop and vtop
 sys-process/nq 0.4: Unix command line queue utility
 sys-process/nvtop 2.0.3 3.0.1 9999: NVIDIA GPUs htop like monitoring tool
+sys-process/scron 0.4: Simple cron daemon
 sys-process/snooze 0.5 9999: Run a command at a particular time
 sys-process/task-spooler 1.3.0: A scheduler for CPU tasks
 virtual/MASS 0: Virtual of a R recommended package
@@ -1909,17 +1918,17 @@ www-apps/code-server-bin 4.12.0-r1 4.13.0 4.13.0-r1 4.14.0 4.14.1: VS Code in th
 www-apps/forgejo 1.18.0.1 1.19.4.0: A self-hosted lightweight software forge
 www-apps/gotosocial 0.9.0: Fast, fun, ActivityPub server, powered by Go
 www-apps/honk 0.9.8 0.9.91: ActivityPub server with minimal setup and support costs
-www-apps/invidious 2023.06.22 2023.07.05: Invidious is an alternative front-end to YouTube
+www-apps/invidious 2023.07.05: Invidious is an alternative front-end to YouTube
 www-apps/jackett-bin 0.20.514 0.20.1202 0.20.3288 9999: API Support for your favorite torrent trackers
 www-apps/mycorrhiza 1.14.0 9999: Git-based wiki engine written in Go using mycomarkup
-www-apps/nitter 0.1.0_p20230306 2023.05.20: Alternative front-end for Twitter
+www-apps/nitter 2023.05.20 2023.07.12: Alternative front-end for Twitter
 www-apps/pleroma 2.5.2 9999: ActivityPub social networking software compatible with other Fediverse software
 www-apps/snac 2.25 2.26: A simple, minimalistic ActivityPub instance
 www-apps/uwebsockets 20.11.0 20.14.0 9999: ultra fast, simple, secure & standards compliant web I/O
 www-client/badwolf 1.2.2 9999: Minimalist and privacy-oriented WebKitGTK+ browser
 www-client/browsh 1.6.4_p1: A fully-modern text-based browser, rendering to TTY and browsers
 www-client/nyxt 3.3.0 3.4.0 9999: Nyxt - the hacker's power-browser
-www-client/vimb 3.6.0 9999: a fast, lightweight, vim-like browser based on webkit
+www-client/vimb 3.6.0 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
 www-client/woob 3.1-r1 9999: Web Outside Of Browsers (core, site modules and applications)
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits
 www-misc/gorss 0.3: Go Terminal Feed Reader

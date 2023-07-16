@@ -1,0 +1,14 @@
+BDEPEND=>=dev-util/ninja-1.8.2 >=dev-util/cmake-3.20.5
+DEFINED_PHASES=compile configure install postinst prepare test
+DESCRIPTION=Linux Userspace x86_64 Emulator with a twist
+EAPI=8
+HOMEPAGE=https://box86.org
+INHERIT=cmake optfeature
+IUSE=aot
+KEYWORDS=~arm64 ~ppc64
+LICENSE=MIT
+REQUIRED_USE=aot? ( arm64 )
+SLOT=0
+SRC_URI=https://github.com/ptitSeb/box64/archive/refs/tags/v0.2.2.tar.gz -> box64-0.2.2.tar.gz
+_eclasses_=toolchain-funcs	513c31b3346458ed1f3878b57da6d61c	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	ad475baa777c9978fa035216c8264a10	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	76050953ad5b70d7e09a6ca55558db92	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	6c921d868d090cc18e142a396f66f74a	optfeature	222cb475c5a4f7ae7cfb0bf510a6fe54
+_md5_=f5b20d59af20e2352c4bde895b124eb6
