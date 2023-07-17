@@ -1,6 +1,6 @@
 BDEPEND=>=dev-util/ninja-1.8.2 >=dev-util/cmake-3.20.5 virtual/fortran
 DEFINED_PHASES=compile configure install prepare setup test
-DEPEND=|| ( >=dev-lang/python-3.11.4:3.11 >=dev-lang/python-3.10.12:3.10 ) || ( ( >=dev-lang/python-3.11.4:3.11 dev-util/fypp[python_targets_python3_11(-)] ) ( >=dev-lang/python-3.10.12:3.10 dev-util/fypp[python_targets_python3_10(-)] ) ) doc? ( || ( ( >=dev-lang/python-3.11.4:3.11 app-doc/ford[python_targets_python3_11(-)] ) ( >=dev-lang/python-3.10.12:3.10 app-doc/ford[python_targets_python3_10(-)] ) ) ) test? ( dev-util/fortran-test-drive ) virtual/fortran
+DEPEND=|| ( dev-lang/python:3.11 dev-lang/python:3.10 ) || ( ( dev-lang/python:3.11 dev-util/fypp[python_targets_python3_11(-)] ) ( dev-lang/python:3.10 dev-util/fypp[python_targets_python3_10(-)] ) ) doc? ( || ( ( dev-lang/python:3.11 app-doc/ford[python_targets_python3_11(-)] ) ( dev-lang/python:3.10 app-doc/ford[python_targets_python3_10(-)] ) ) ) test? ( dev-util/fortran-test-drive ) virtual/fortran
 DESCRIPTION=A community driven standard library for (modern) Fortran
 EAPI=8
 HOMEPAGE=https://stdlib.fortran-lang.org/
@@ -12,5 +12,5 @@ RDEPEND=virtual/fortran
 RESTRICT=mirror !test? ( test )
 SLOT=0
 SRC_URI=https://github.com/fortran-lang/stdlib/archive/refs/tags/v0.2.1.tar.gz -> fortran-stdlib-0.2.1.tar.gz
-_eclasses_=toolchain-funcs	513c31b3346458ed1f3878b57da6d61c	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	ad475baa777c9978fa035216c8264a10	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	76050953ad5b70d7e09a6ca55558db92	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	6c921d868d090cc18e142a396f66f74a	fortran-2	40c4450f1c4ecb2ee694d96e1958d4ea	python-utils-r1	a013e16d5d896b3d8be68dd2a0e846ea	python-any-r1	d2955aaac8daaaa69fcc6dc93ed19f29
+_eclasses_=toolchain-funcs	513c31b3346458ed1f3878b57da6d61c	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	ad475baa777c9978fa035216c8264a10	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	76050953ad5b70d7e09a6ca55558db92	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	6c921d868d090cc18e142a396f66f74a	fortran-2	40c4450f1c4ecb2ee694d96e1958d4ea	python-utils-r1	7661dc585f75dd1f81eccefe37bef093	python-any-r1	845fed6b6dfc35679a4fea289272ddc0
 _md5_=0c8cd6deddc0334ca9e962f5fdc1262b

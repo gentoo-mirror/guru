@@ -1,4 +1,4 @@
-BDEPEND=app-arch/unzip || ( ( >=dev-lang/python-3.11.4:3.11 dev-python/mako[python_targets_python3_11(-)] ) ( >=dev-lang/python-3.10.12:3.10 dev-python/mako[python_targets_python3_10(-)] ) ) >=dev-util/meson-0.62.2 >=dev-util/ninja-1.8.2 dev-util/meson-format-array
+BDEPEND=app-arch/unzip || ( ( dev-lang/python:3.11 dev-python/mako[python_targets_python3_11(-)] ) ( dev-lang/python:3.10 dev-python/mako[python_targets_python3_10(-)] ) ) >=dev-util/meson-0.62.2 >=dev-util/ninja-1.8.2 dev-util/meson-format-array
 DEFINED_PHASES=compile configure install postinst setup test unpack
 DEPEND=dev-libs/spdlog dev-util/glslang >=dev-util/vulkan-headers-1.2 media-libs/vulkan-loader media-libs/libglvnd x11-libs/libdrm dbus? ( sys-apps/dbus ) X? ( x11-libs/libX11 ) video_cards_nvidia? ( x11-drivers/nvidia-drivers xnvctrl? ( x11-drivers/nvidia-drivers[static-libs] ) ) wayland? ( dev-libs/wayland )
 DESCRIPTION=Vulkan and OpenGL overlay for monitoring FPS, sensors, system load and more
@@ -12,5 +12,5 @@ RDEPEND=dev-libs/spdlog dev-util/glslang >=dev-util/vulkan-headers-1.2 media-lib
 REQUIRED_USE=|| ( X wayland ) xnvctrl? ( video_cards_nvidia )
 SLOT=0
 SRC_URI=https://github.com/flightlessmango/MangoHud/archive/v0.6.7-1.tar.gz -> mangohud-0.6.7.1.tar.gz https://github.com/ocornut/imgui/archive/v1.81.tar.gz -> imgui-1.81.tar.gz https://wrapdb.mesonbuild.com/v2/imgui_1.81-1/get_patch -> imgui-1.81-1-meson-wrap.zip
-_eclasses_=multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	513c31b3346458ed1f3878b57da6d61c	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	a013e16d5d896b3d8be68dd2a0e846ea	python-any-r1	d2955aaac8daaaa69fcc6dc93ed19f29	ninja-utils	76050953ad5b70d7e09a6ca55558db92	meson	18d046bdb14e1bdb22cce6e5d953e364
+_eclasses_=multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	513c31b3346458ed1f3878b57da6d61c	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	7661dc585f75dd1f81eccefe37bef093	python-any-r1	845fed6b6dfc35679a4fea289272ddc0	ninja-utils	76050953ad5b70d7e09a6ca55558db92	meson	18d046bdb14e1bdb22cce6e5d953e364
 _md5_=c1ed8ea039125b9cc24d0c3ee7657bae

@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install setup
-DEPEND=python_single_target_pypy3? ( >=dev-python/pypy3-7.3.11_p1:0= ) python_single_target_python3_10? ( >=dev-lang/python-3.10.12:3.10 ) python_single_target_python3_11? ( >=dev-lang/python-3.11.4:3.11 ) python_single_target_pypy3? ( dev-python/six[python_targets_pypy3(-)] ) python_single_target_python3_10? ( dev-python/six[python_targets_python3_10(-)] ) python_single_target_python3_11? ( dev-python/six[python_targets_python3_11(-)] ) sionlib? ( sys-cluster/sionlibl:= )
+DEPEND=python_single_target_pypy3? ( dev-python/pypy3:= ) python_single_target_python3_10? ( dev-lang/python:3.10 ) python_single_target_python3_11? ( dev-lang/python:3.11 ) python_single_target_pypy3? ( dev-python/six[python_targets_pypy3(-)] ) python_single_target_python3_10? ( dev-python/six[python_targets_python3_10(-)] ) python_single_target_python3_11? ( dev-python/six[python_targets_python3_11(-)] ) sionlib? ( sys-cluster/sionlibl:= )
 DESCRIPTION=highly scalable, memory efficient event trace data format
 EAPI=8
 HOMEPAGE=https://www.vi-hps.org/projects/score-p
@@ -7,10 +7,10 @@ INHERIT=python-single-r1 toolchain-funcs
 IUSE=debug sionlib test python_single_target_pypy3 python_single_target_python3_10 python_single_target_python3_11
 KEYWORDS=~amd64
 LICENSE=BSD
-RDEPEND=python_single_target_pypy3? ( >=dev-python/pypy3-7.3.11_p1:0= ) python_single_target_python3_10? ( >=dev-lang/python-3.10.12:3.10 ) python_single_target_python3_11? ( >=dev-lang/python-3.11.4:3.11 ) python_single_target_pypy3? ( dev-python/six[python_targets_pypy3(-)] ) python_single_target_python3_10? ( dev-python/six[python_targets_python3_10(-)] ) python_single_target_python3_11? ( dev-python/six[python_targets_python3_11(-)] ) sionlib? ( sys-cluster/sionlibl:= )
+RDEPEND=python_single_target_pypy3? ( dev-python/pypy3:= ) python_single_target_python3_10? ( dev-lang/python:3.10 ) python_single_target_python3_11? ( dev-lang/python:3.11 ) python_single_target_pypy3? ( dev-python/six[python_targets_pypy3(-)] ) python_single_target_python3_10? ( dev-python/six[python_targets_python3_10(-)] ) python_single_target_python3_11? ( dev-python/six[python_targets_python3_11(-)] ) sionlib? ( sys-cluster/sionlibl:= )
 REQUIRED_USE=^^ ( python_single_target_pypy3 python_single_target_python3_10 python_single_target_python3_11 )
 RESTRICT=test
 SLOT=0/2.3
 SRC_URI=https://perftools.pages.jsc.fz-juelich.de/cicd/otf2/tags/otf2-2.3/otf2-2.3.tar.gz
-_eclasses_=multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	513c31b3346458ed1f3878b57da6d61c	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	a013e16d5d896b3d8be68dd2a0e846ea	python-single-r1	75118e916668a74c660a13b0ecb22562
+_eclasses_=multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	513c31b3346458ed1f3878b57da6d61c	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	7661dc585f75dd1f81eccefe37bef093	python-single-r1	75118e916668a74c660a13b0ecb22562
 _md5_=180cf6b7814ac8bdd68cbbb713c5a127
