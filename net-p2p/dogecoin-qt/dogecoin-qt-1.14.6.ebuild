@@ -65,8 +65,6 @@ src_configure() {
 		--with-gui=qt5
 		--with-qt-incdir="/usr/include/qt5"
 		--disable-bench
-		BDB_CFLAGS="-I/usr/include/db${DB_VER}"
-		BDB_LIBS="-L/usr/lib64 -ldb_cxx-${DB_VER}"
 		$(use_with cpu_flags_x86_avx2 intel-avx2)
 		$(use_enable wallet)
 		$(use_enable zmq)
