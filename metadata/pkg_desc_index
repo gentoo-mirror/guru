@@ -11,7 +11,6 @@ acct-group/heisenbridge 0: Group for Heisenbridge
 acct-group/hinsightd 0: A user group for www-servers/hinsightd
 acct-group/honk 0: System group: honk
 acct-group/invidious 0: System group: invidious
-acct-group/jackett 0: Group for www-apps/jackett-bin
 acct-group/mastoposter 0: System group: mastoposter
 acct-group/mautrix 0: Group for Mautrix Bridges
 acct-group/monero 0: System group: monero
@@ -38,7 +37,6 @@ acct-user/heisenbridge 0: User for Heisenbridge
 acct-user/hinsightd 0: A user account for www-servers/hinsightd
 acct-user/honk 0: System user: honk
 acct-user/invidious 0: System user: invidious
-acct-user/jackett 0: User for www-apps/jackett-bin
 acct-user/mastoposter 0: System user: mastoposter
 acct-user/mautrix-discord 0: User for Mautrix Discord Bridge
 acct-user/mautrix-facebook 0: User for Mautrix Facebook Bridge
@@ -559,7 +557,7 @@ dev-db/rum 1.3.11: RUM access method - inverted index with additional informatio
 dev-dotnet/gtk-sharp 2.99.3-r3: gtk bindings for mono
 dev-elixir/hex 1.0.1: Package manager for the Erlang VM
 dev-embedded/esp-coredump 1.5.2: Utility that helps users to retrieve and analyse core dumps
-dev-embedded/esp-idf 5.0.2 5.0.2-r1 5.1: Espressif IoT Development Framework
+dev-embedded/esp-idf 5.1: Espressif IoT Development Framework
 dev-embedded/esp-idf-kconfig 1.1.0: Kconfig tooling for esp-idf
 dev-embedded/esp-idf-monitor 1.1.1: Python object-oriented database
 dev-embedded/esp-idf-size 0.3.1: Firmware size analysis for ESP-IDF
@@ -986,7 +984,6 @@ dev-python/mkdocs-exclude 1.0.2-r1: Lets you exclude files or trees from your ou
 dev-python/mkdocs-mkdocstrings 0.21.2: Automatic documentation from sources, for MkDocs.
 dev-python/mkdocs-mkdocstrings-python 0.9.0: A Python handler for mkdocstrings.
 dev-python/mkdocs-rss-plugin 1.6.0: MkDocs plugin to generate a RSS feeds.
-dev-python/mkdocs-swagger-ui-tag 0.6.0 0.6.1: MkDocs Swagger UI Tag
 dev-python/mobi 0.3.3: Unpack unencrypted mobi files
 dev-python/moderngl 5.8.2: Modern OpenGL binding for python
 dev-python/moderngl-window 2.4.3: A cross platform utility library for ModernGL
@@ -1047,7 +1044,7 @@ dev-python/pynmea2 1.18.0: Python library for the NMEA 0183 protcol
 dev-python/pyodbc 4.0.35: Python ODBC library
 dev-python/pyqtdarktheme 2.1.0: A flat dark theme for PySide and PyQt.
 dev-python/pyrr 0.10.3: A cross platform utility library for ModernGL
-dev-python/pysaml2 7.1.2-r1: Python implementation of SAML Version 2 to be used in a WSGI environment
+dev-python/pysaml2 7.4.2: Python implementation of SAML Version 2 Standard
 dev-python/pysnooper 1.1.1 1.2.0: Never use print for debugging again
 dev-python/pystardict 0.8-r1: Library for manipulating StarDict dictionaries from within Python
 dev-python/pysubs2 1.4.4 1.5.0 1.6.1: A library for editing subtitle files
@@ -1117,7 +1114,7 @@ dev-python/stone 3.3.1: The Official Api Spec Language for Dropbox
 dev-python/strictyaml 1.6.1: A type-safe YAML parser built atop ruamel.yaml
 dev-python/stringbrewer 0.0.1-r1: Generate random strings matching a pattern
 dev-python/stringcase 1.2.0-r1: Convert string cases between camel case, pascal case, snake case etc.
-dev-python/survey 3.4.3 4.5.1: A simple library for creating beautiful interactive prompts
+dev-python/survey 3.4.3 4.5.2: A simple library for creating beautiful interactive prompts
 dev-python/svgelements 1.9.3: SVG Parsing for Elements, Paths, and other SVG Objects.
 dev-python/sysv_ipc 1.1.0: System V IPC primitives for python
 dev-python/tempus-themes 2.3.0.20220206: Accessible themes for Pygments
@@ -1138,7 +1135,6 @@ dev-python/types-pytz 2021.3.8 2022.1.1: Typing stubs for pytz
 dev-python/types-requests 2.31.0.1: Typing stubs for requests
 dev-python/types-urllib3 1.26.25.13: Typing stubs for urllib3
 dev-python/typing_inspect 0.7.1: Runtime inspection utilities for Python typing module
-dev-python/ufmt 1.3.3: Safe, atomic formatting with black and usort
 dev-python/ufo2ft 2.31.1: A bridge from UFOs to FontTools
 dev-python/ufoLib2 0.13.1 0.14.0: A UFO font library
 dev-python/ufoNormalizer 0.6.1: A tool that will normalize the XML and other data inside of a UFO
@@ -1149,7 +1145,6 @@ dev-python/undervolt 0.3.0 9999: Undervolt Intel CPUs under Linux
 dev-python/unearth 0.9.0: A utility to fetch and download python packages
 dev-python/unicodedata2 15.0.0: Unicodedata backport updated to the latest Unicode version
 dev-python/urlmatch 1.0.1-r2: A Python library for easily pattern matching wildcard URLs
-dev-python/usort 1.0.2: Safe, minimal import sorting for Python projects
 dev-python/validator-collection 1.5.0: Python library of 60+ commonly-used validator functions.
 dev-python/vharfbuzz 0.1.4-r1: A user-friendlier way to use Harfbuzz in Python
 dev-python/volatile 2.1.0: A small extension for the tempfile module
@@ -1621,6 +1616,7 @@ net-mail/hydroxide 0.2.23 0.2.24 0.2.26 0.2.27 9999: A third-party, open-source 
 net-misc/FORT-validator 1.5.2 1.5.3 1.5.3_p20220607: FORT validator is an open source RPKI validator
 net-misc/can-utils 2021.08.0 2023.03 9999-r3: CAN userspace utilities and tools
 net-misc/clatd 1.6: A CLAT / SIIT-DC Edge Relay implementation for Linux
+net-misc/curlie 1.7.1: Curlie is a frontend to curl that adds the ease of use of httpie
 net-misc/cve-client 1.0.4 9999: CLI-based client / toolbox for CVE.org
 net-misc/eg25-manager 0.4.2: Daemon for managing the Quectel EG25 modem
 net-misc/facebook-ptp 0_pre20211123: Facebook's PTP libraries
@@ -1922,7 +1918,6 @@ www-apps/forgejo 1.18.0.1 1.19.4.0: A self-hosted lightweight software forge
 www-apps/gotosocial 0.9.0: Fast, fun, ActivityPub server, powered by Go
 www-apps/honk 0.9.8 0.9.91: ActivityPub server with minimal setup and support costs
 www-apps/invidious 2023.07.05: Invidious is an alternative front-end to YouTube
-www-apps/jackett-bin 0.20.514 0.20.1202 0.20.3288 9999: API Support for your favorite torrent trackers
 www-apps/mycorrhiza 1.14.0 9999: Git-based wiki engine written in Go using mycomarkup
 www-apps/nitter 2023.05.20 2023.07.12: Alternative front-end for Twitter
 www-apps/pleroma 2.5.2 9999: ActivityPub social networking software compatible with other Fediverse software
