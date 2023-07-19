@@ -13,7 +13,6 @@ HOMEPAGE="https://looking-glass.io https://github.com/gnif/LookingGlass"
 LICENSE="GPL-2"
 SLOT="0"
 IUSE="binutils gnome pipewire pulseaudio wayland X"
-USE="pipewire pulseaudio"
 REQUIRED_USE="|| ( binutils gnome pipewire pulseaudio wayland X ) pipewire? ( !pulseaudio ) pulseaudio? ( !pipewire ) "
 
 RDEPEND="dev-libs/libconfig
@@ -27,7 +26,7 @@ RDEPEND="dev-libs/libconfig
 	binutils? ( sys-devel/binutils )
 	X? ( x11-libs/libX11 x11-libs/libXfixes x11-libs/libXi x11-libs/libXScrnSaver x11-libs/libXpresent )
 	wayland? ( dev-libs/wayland )
-	pulseaudio? ( media-libs/libpulse )
+	media-libs/libpulse
 	pipewire? ( media-video/pipewire )
 	gnome? ( gui-libs/libdecor )
 "
