@@ -1,16 +1,17 @@
-BDEPEND=>=dev-util/meson-0.62.2 >=dev-util/ninja-1.8.2 dev-util/meson-format-array
-DEFINED_PHASES=compile configure install test
+BDEPEND=test? ( dev-libs/openssl || ( ( dev-lang/python:3.12 dev-python/flask[python_targets_python3_12(-)] ) ( dev-lang/python:3.11 dev-python/flask[python_targets_python3_11(-)] ) ( dev-lang/python:3.10 dev-python/flask[python_targets_python3_10(-)] ) ) ) >=dev-util/meson-0.62.2 >=dev-util/ninja-1.8.2 dev-util/meson-format-array
+DEFINED_PHASES=compile configure install prepare setup test
 DEPEND=net-misc/curl[ssl?] dev-libs/libevent:= dev-libs/libfmt:= dev-libs/spdlog:= test? ( dev-cpp/doctest )
 DESCRIPTION=A simple async wrapper around CURL for C++
 EAPI=8
 HOMEPAGE=https://nheko.im/nheko-reborn/coeurl
-INHERIT=meson
+INHERIT=edo meson python-any-r1
 IUSE=ssl test
 KEYWORDS=~amd64
 LICENSE=MIT
 RDEPEND=net-misc/curl[ssl?] dev-libs/libevent:= dev-libs/libfmt:= dev-libs/spdlog:=
-RESTRICT=test
+REQUIRED_USE=test? ( ssl )
+RESTRICT=!test? ( test )
 SLOT=0/0.3
 SRC_URI=https://nheko.im/nheko-reborn/coeurl/-/archive/v0.3.0/coeurl-v0.3.0.tar.bz2 -> coeurl-0.3.0.tar.bz2
-_eclasses_=multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	f3010c780f65d1bb5aea15a9af1adc9c	toolchain-funcs	8e3fb781f3258ae2757d1dfc2c7c170e	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	7661dc585f75dd1f81eccefe37bef093	meson	08b7183c3f4811568ee93eb0f79a89fe
-_md5_=bb857bffade3ce636b8d26910d8349ff
+_eclasses_=edo	c0eb9cbe6b0bd01fcb4918f12598a4d3	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	f3010c780f65d1bb5aea15a9af1adc9c	toolchain-funcs	8e3fb781f3258ae2757d1dfc2c7c170e	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	7661dc585f75dd1f81eccefe37bef093	meson	08b7183c3f4811568ee93eb0f79a89fe	python-any-r1	845fed6b6dfc35679a4fea289272ddc0
+_md5_=a7096969983931a98407ac4fa3b3f051
