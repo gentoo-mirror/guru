@@ -14,15 +14,11 @@ SRC_URI="
 	amd64? ( https://github.com/pulumi/pulumi/releases/download/v${PV}/pulumi-v${PV}-linux-x64.tar.gz )
 "
 
+S="${WORKDIR}/pulumi"
+
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64"
-
-DEPEND=""
-RDEPEND="${DEPEND}"
-BDEPEND=""
-
-S="${WORKDIR}/pulumi"
 
 QA_PREBUILT="*"
 
