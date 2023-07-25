@@ -1,12 +1,12 @@
 BDEPEND=app-text/scdoc virtual/pkgconfig
-DEFINED_PHASES=install
-DEPEND=dev-db/sqlite:3 dev-libs/expat dev-libs/gumbo dev-libs/yajl net-misc/curl sys-libs/ncurses
+DEFINED_PHASES=compile install
+DEPEND=dev-db/sqlite:3 dev-libs/expat dev-libs/gumbo:= dev-libs/yajl:= net-misc/curl sys-libs/ncurses:=
 DESCRIPTION=A lightweight feed reader with ncurses user interface inspired by Newsboat.
 EAPI=8
 HOMEPAGE=https://codeberg.org/grisha/newsraft
 KEYWORDS=~amd64
 LICENSE=ISC
-RDEPEND=dev-db/sqlite:3 dev-libs/expat dev-libs/gumbo dev-libs/yajl net-misc/curl sys-libs/ncurses
+RDEPEND=dev-db/sqlite:3 dev-libs/expat dev-libs/gumbo:= dev-libs/yajl:= net-misc/curl sys-libs/ncurses:=
 SLOT=0
 SRC_URI=https://codeberg.org/grisha/newsraft/archive/newsraft-0.19.tar.gz
-_md5_=3ed1ad9a6ed253ef6195c94d5943cadd
+_md5_=47126a63fc5ff73a7a132f64fc5e4bc6
