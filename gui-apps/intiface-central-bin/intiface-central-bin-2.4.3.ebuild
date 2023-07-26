@@ -8,7 +8,7 @@ inherit desktop xdg
 DESCRIPTION="Buttplug frontend application"
 HOMEPAGE="https://github.com/intiface/intiface-central"
 SRC_URI="https://github.com/intiface/intiface-central/releases/download/v${PV}/intiface-central-v${PV}-linux-x64.zip"
-S="${WORKDIR}/intiface-central-v${PV}-linux-x64"
+S="${WORKDIR}/intiface_central_v${PV}"
 
 LICENSE="GPL-3"
 SLOT="0"
@@ -20,10 +20,7 @@ RDEPEND="
 	sys-apps/dbus
 	sys-apps/systemd-utils
 	x11-libs/gtk+:3[X]
-	|| (
-		dev-libs/openssl:0/1.1
-		dev-libs/openssl-compat:1.1.1
-	)
+	dev-libs/openssl:0/3
 "
 BDEPEND="app-arch/unzip"
 

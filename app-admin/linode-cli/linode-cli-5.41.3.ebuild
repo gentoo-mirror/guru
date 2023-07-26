@@ -21,5 +21,5 @@ RDEPEND="
 	dev-python/pyyaml
 	dev-python/requests
 	dev-python/rich
-	<dev-python/urllib3-2
+	<dev-python/urllib3-3
 "
