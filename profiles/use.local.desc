@@ -551,7 +551,6 @@ net-libs/evpath:udt4 - Build the udt4 transport
 net-libs/ixwebsocket:ws - Build the ws utility
 net-libs/picotls:fusion - "fusion" AES-GCM engine, optimized for QUIC and other protocols that use short AEAD blocks
 net-libs/td:abseil - Build with dev-cpp/abseil-cpp
-net-libs/td:benchmark - Enable benchmarking
 net-libs/td:dotnet - Add support for .NET
 net-libs/td:jumbo-build - Combine source files to speed up build process
 net-libs/ulfius:jansson - Jansson support for JSON
@@ -579,7 +578,9 @@ net-nntp/pan:nls - Localization support
 net-nntp/pan:spell - Spellchecking support (enchant/gtkspell)
 net-nntp/pan:ssl - TLS 1.x support (through gnutls)
 net-p2p/dogecoin-qt:dogecoind - Build with dogecoind daemon
+net-p2p/dogecoin-qt:pie - Position Independent Executables - attempt to harden resulting executables, for extra security
 net-p2p/dogecoin-qt:prune - Enables automatic pruning of old blocks to stay below 2.2GB target size (if ran from desktop)
+net-p2p/dogecoin-qt:ssp - Apply stack protector to all functions, for extra security
 net-p2p/dogecoin-qt:tests - Build Dogecoin Core Qt with tests option
 net-p2p/dogecoin-qt:utils - Build with client utilities dogecoin-cli and dogecoin-tx
 net-p2p/dogecoin-qt:wallet - Build Dogecoin Core Qt with wallet

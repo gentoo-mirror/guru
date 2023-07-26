@@ -11,6 +11,7 @@ acct-group/heisenbridge 0: Group for Heisenbridge
 acct-group/hinsightd 0: A user group for www-servers/hinsightd
 acct-group/honk 0: System group: honk
 acct-group/invidious 0: System group: invidious
+acct-group/laminar 0: System group: laminar
 acct-group/mastoposter 0: System group: mastoposter
 acct-group/mautrix 0: Group for Mautrix Bridges
 acct-group/monero 0: System group: monero
@@ -37,6 +38,7 @@ acct-user/heisenbridge 0: User for Heisenbridge
 acct-user/hinsightd 0: A user account for www-servers/hinsightd
 acct-user/honk 0: System user: honk
 acct-user/invidious 0: System user: invidious
+acct-user/laminar 0: System user: laminar
 acct-user/mastoposter 0: System user: mastoposter
 acct-user/mautrix-discord 0: User for Mautrix Discord Bridge
 acct-user/mautrix-facebook 0: User for Mautrix Facebook Bridge
@@ -71,11 +73,11 @@ app-admin/enpass-desktop-bin 6.7.4.933: A cross-platform, complete password mana
 app-admin/gentoo_update 0.1.6: Gentoo Linux updater
 app-admin/grub-customizer 5.1.0: A graphical grub2 settings manager
 app-admin/himitsu 0.3 9999: Secret storage system for Unix, suitable for storing passwords, keys, ...
-app-admin/himitsu-ssh 0.1-r1 9999: SSH integration for Himitsu
+app-admin/himitsu-ssh 0.2 9999: SSH integration for Himitsu
 app-admin/himitsu-totp 9999: TOTP support for Himitsu
 app-admin/i2pd-tools 0.2023.03.12 0.2023.05.26: Some useful tools for I2P
 app-admin/krapplet 0.3.1-r1: Krapplet (keyring applet): a Linux graphical password manager
-app-admin/linode-cli 5.41.2: Linode Command Line Interface
+app-admin/linode-cli 5.41.3: Linode Command Line Interface
 app-admin/oet 0.1.9 0.1.10 9999: Update your system into binpkgs in an overlay sandbox
 app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applications and tmux
 app-admin/pass-update 2.1: pass extension that provides an easy flow for updating passwords
@@ -553,7 +555,7 @@ dev-crystal/webdrivers 0.4.1-r1 0.4.2: Helps manage drivers for Selenium, such a
 dev-crystal/webless 0.1.0: HTTP::Client for testing HTTP::Handlers directly and maintaining cookies
 dev-db/dbeaver-bin 23.0.0: Free universal database tool (community edition).
 dev-db/pg_repack 1.4.8: Reorganize tables in PostgreSQL databases with minimal locks
-dev-db/rum 1.3.11: RUM access method - inverted index with additional information in posting lists
+dev-db/rum 1.3.13: RUM access method - inverted index with additional information in posting lists
 dev-dotnet/gtk-sharp 2.99.3-r3: gtk bindings for mono
 dev-elixir/hex 1.0.1: Package manager for the Erlang VM
 dev-embedded/esp-coredump 1.5.2: Utility that helps users to retrieve and analyse core dumps
@@ -575,6 +577,7 @@ dev-go/lichen 0.1.4 0.1.7: Go binary license checker
 dev-go/staticcheck 0.3.3 9999: The advanced Go linter
 dev-hare/hare-compress 9999: Compression algorithms for Hare
 dev-hare/hare-iobus 9999: An asyncronous I/O abstraction for Hare
+dev-hare/hare-json 9999: JSON support for Hare
 dev-hare/hare-linux 9999: Extra Linux support for Hare programs
 dev-hare/hare-png 9999: PNG implementation for Hare
 dev-hare/hare-ssh 9999: SSH library for Hare
@@ -1199,7 +1202,7 @@ dev-util/DirectXShaderCompiler 1.7.2207-r1 1.7.2212: Microsoft DirectX Shader Co
 dev-util/FoBiS 3.0.5-r1: FoBiS.py, a Fortran Building System for poor men
 dev-util/afdko 3.9.5-r1: Adobe Font Development Kit for OpenType
 dev-util/babeltrace2 2.0.4: A command-line tool and library to read and convert trace files
-dev-util/bash-language-server 4.10.1 4.10.2: A language server for Bash
+dev-util/bash-language-server 4.10.2 5.0.0: A language server for Bash
 dev-util/bats-assert 2.0.0: Common assertions for Bats
 dev-util/bats-support 0.3.0: Supporting library for Bats test helpers
 dev-util/bazelisk 1.12.0: A user-friendly launcher for Bazel
@@ -1248,7 +1251,7 @@ dev-util/wakatime-cli 1.27.0 1.28.6: Command line interface to WakaTime used by 
 dev-util/wxformbuilder 3.10.1-r1: A wxWidgets GUI Builder
 dev-util/xmake 2.7.9 9999: A cross-platform build utility based on Lua
 dev-util/xxd 8.2.4092: Hexdump utility from vim
-dev-util/yaml-language-server 1.12.0 1.13.0: Language Server for YAML Files
+dev-util/yaml-language-server 1.13.0 1.14.0: Language Server for YAML Files
 dev-vcs/bit 1.1.1 1.1.2: Bit is a modern Git CLI
 dev-vcs/git-blame-someone-else 0_pre20180613: Blame someone else for your bad code.
 dev-vcs/git-cu 0.5.0: Helps to keep your local git repositories organized
@@ -1370,7 +1373,7 @@ gui-apps/hiprompt-gtk-py 0_pre20220624 9999: GTK+ Himitsu prompter for Wayland
 gui-apps/hyprland-plugins 0.26.0: A blazing fast wayland wallpaper utility
 gui-apps/hyprpaper 0.2.0-r1 0.3.0: A blazing fast wayland wallpaper utility
 gui-apps/hyprpicker 0.1.0-r1 0.1.1: A wlroots-compatible Wayland color picker that does not suck
-gui-apps/intiface-central-bin 2.3.0-r2 2.4.0: Buttplug frontend application
+gui-apps/intiface-central-bin 2.4.0 2.4.3: Buttplug frontend application
 gui-apps/meteo-qt 3.3: A system tray application for the weather status
 gui-apps/mpvpaper 1.2 1.3 9999: A video wallpaper program for wlroots based wayland compositors
 gui-apps/nwg-launchers 0.5.0 0.6.3 9999: GTK+ launchers for sway, i3 and some other WMs
@@ -1863,7 +1866,7 @@ sys-fs/ddrescueview 0.4.5: Graphical viewer for GNU ddrescue mapfiles
 sys-fs/diskonaut 0.10.0 0.11.0 9999: Terminal disk space visual navigator
 sys-fs/dua-cli 2.20.1: A tool to conveniently learn about the disk usage of directories, fast!
 sys-fs/dwarfs 0.7.2: A fast very high compression read-only FUSE file system
-sys-fs/dwarfs-bin 0.6.2 0.7.0_rc6: Static version of a fast very high compression read-only FUSE file system
+sys-fs/dwarfs-bin 0.6.2 0.7.2: Static version of a fast very high compression read-only FUSE file system
 sys-fs/gcsfuse 0.42.4: A user-space file system for interacting with Google Cloud Storage
 sys-fs/gdu 5.13.2 5.14.0: Disk usage analyzer with console interface written in Go
 sys-fs/gfs2-utils 3.4.1: Shared-disk cluster file system
@@ -1911,10 +1914,11 @@ virtual/nnet 0: Virtual of a R recommended package
 virtual/survival 0: Virtual of a R recommended package
 www-apps/castopod 1.4.3 1.4.5: Open-source hosting platform made for podcasters
 www-apps/code-server-bin 4.13.0-r1 4.14.1 4.15.0: VS Code in the browser (binary version with unbundled node and ripgrep)
-www-apps/forgejo 1.18.0.1 1.19.4.0: A self-hosted lightweight software forge
+www-apps/forgejo 1.19.4.0 1.20.1.0: A self-hosted lightweight software forge
 www-apps/gotosocial 0.9.0 0.10.0: Fast, fun, ActivityPub server, powered by Go
 www-apps/honk 0.9.8 0.9.91: ActivityPub server with minimal setup and support costs
 www-apps/invidious 2023.07.05: Invidious is an alternative front-end to YouTube
+www-apps/laminar 1.3: Fast and lightweight Continuous Integration
 www-apps/mycorrhiza 1.14.0 9999: Git-based wiki engine written in Go using mycomarkup
 www-apps/nitter 2023.05.20 2023.07.12: Alternative front-end for Twitter
 www-apps/pleroma 2.5.2 9999: ActivityPub social networking software compatible with other Fediverse software
@@ -1949,6 +1953,7 @@ x11-misc/gromit-mpx 1.4.3 9999: Gromit-MPX is a multi-pointer GTK3 port of the G
 x11-misc/i3lock-color 2.13.2 2.13.4 9999: The world's most popular non-default computer lockscreen
 x11-misc/i3lock-fancy-rapid 0.0.0_pre20201109-r1 0.0.0_pre20210421: A faster implementation of i3lock-fancy
 x11-misc/i3status-rust 0.31.7: A feature-rich and resource-friendly replacement for i3status, written in Rust.
+x11-misc/input-leap 9999: Share a mouse and keyboard between computers (fork of Barrier)
 x11-misc/ksnip 1.9.2 1.10.0-r1 1.10.1: Ksnip is a Qt based cross-platform screenshot tool
 x11-misc/leftwm-theme 9999: A theme mangager for LeftWM
 x11-misc/picom-jonaburg 9999: A lightweight compositor for X11 (previously a compton fork)
