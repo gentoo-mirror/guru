@@ -12,14 +12,14 @@ inherit systemd
 DESCRIPTION="VS Code in the browser (binary version with unbundled node and ripgrep)"
 HOMEPAGE="https://coder.com/"
 SRC_URI="
-	amd64? ( ${BASE_URI}-amd64.tar.gz )
-	arm64? ( ${BASE_URI}-arm64.tar.gz )
+	amd64? ( ${BASE_URI}-amd64.tar.gz -> ${P}-amd64.tar.gz )
+	arm64? ( ${BASE_URI}-arm64.tar.gz -> ${P}-arm64.tar.gz )
 "
 RESTRICT="test"
-LICENSE="MIT 0BSD ISC PYTHON BSD-2 BSD Apache-2.0 Unlicense LGPL-2.1+
-	|| ( BSD-2 MIT Apache-2.0 )
+LICENSE="MIT ISC BSD Apache-2.0 BSD-2 PYTHON GPL-2 0BSD"
+LICENSE+=" LGPL-2.1+
 	|| ( MIT WTFPL )
-	|| ( BSD GPL-2 )
+	|| ( BSD-2 MIT Apache-2.0 )
 "
 SLOT="0"
 KEYWORDS="~amd64 ~arm64"
