@@ -66,7 +66,7 @@ app-admin/ananicy-cpp 1.0.0_rc6-r1: Ananicy rewritten in C++ for much lower CPU 
 app-admin/antidot 0.6.3: Cleans up your $HOME from those pesky dotfiles
 app-admin/aws-vault 7.2.0: Securely store and access AWS credentials in development environments
 app-admin/chamber 2.10.9 2.10.12: Managing secrets in AWS SSM Parameter Store
-app-admin/chezmoi 2.35.2: Manage your dotfiles across multiple machines, securely
+app-admin/chezmoi 2.36.1: Manage your dotfiles across multiple machines, securely
 app-admin/customrescuecd-x86 0.4.1: A system rescue cd or usbstick for desktop and server based on gentoo
 app-admin/customrescuecd-x86_64 0.12.7 0.12.8: A system rescue cd or usbstick for desktop and server based on gentoo
 app-admin/enpass-desktop-bin 6.7.4.933: A cross-platform, complete password management solution
@@ -81,7 +81,7 @@ app-admin/linode-cli 5.41.3: Linode Command Line Interface
 app-admin/oet 0.1.9 0.1.10 9999: Update your system into binpkgs in an overlay sandbox
 app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applications and tmux
 app-admin/pass-update 2.1: pass extension that provides an easy flow for updating passwords
-app-admin/pulumi-bin 3.74.0 3.75.0 3.76.0: Infrastructure as code in any programming language
+app-admin/pulumi-bin 3.74.0 3.75.0 3.76.0 3.76.1: Infrastructure as code in any programming language
 app-admin/rbw 9999: unofficial bitwarden cli
 app-admin/s-tui 1.1.3-r1: Stress-Terminal UI monitoring tool
 app-admin/synadm 0.41.2 0.41.3: Command line admin tool for Synapse
@@ -211,7 +211,7 @@ app-misc/navi 2.19.0 2.20.1 9999: An interactive cheatsheet tool for the command
 app-misc/neo 0.6.1 9999: cmatrix clone with 32-bit color and Unicode support
 app-misc/nerdfetch 5.0.2: A POSIX *nix fetch script using Nerdfonts
 app-misc/nonsense 0.7-r1: Generates random text from datafiles and templates
-app-misc/nwg-look 0.2.1 0.2.2: GTK3 settings editor adapted to work in the sway / wlroots environment
+app-misc/nwg-look 0.2.1 0.2.2 0.2.4: GTK3 settings editor adapted to work in the sway / wlroots environment
 app-misc/onefetch 2.18.1: Command-line Git information tool
 app-misc/pfetch 0.6.0: A pretty system information tool written in POSIX sh
 app-misc/pipes-rs 1.6.1: An over-engineered rewrite of pipes.sh in Rust
@@ -239,6 +239,7 @@ app-mobilephone/mobile-config-firefox 2.1.0: Mobile and privacy friendly configu
 app-mobilephone/pinephone-modem-scripts 0.20.8: Modem scripts for the PinePhone
 app-mobilephone/usb-tethering 0.3: USB tethering on Pine64/ConfigFS systems
 app-office/beancount 2.3.5-r2: A double-entry accounting system that uses text files as input
+app-office/invoice 0.1.0: Generate invoices from the command line
 app-office/jameica-bin 2.10.4: Local platform for home banking
 app-office/joplin-bin 2.9.17: Note taking app, on Electron, can import notes from Evernote
 app-office/lotus123r3 1.0.0_rc4: A native port of Lotus 1-2-3 to Linux.
@@ -832,6 +833,7 @@ dev-python/MutatorMath 3.0.1-r2: A library for piecewise linear interpolation in
 dev-python/PGPy 0.6.0: Pretty Good Privacy for Python
 dev-python/PyWavefront 1.3.3: Python library for importing Wavefront .obj files
 dev-python/Pyro5 5.14: Distributed object middleware for Python (RPC)
+dev-python/PythonQwt 0.10.2: Qt plotting widgets for Python
 dev-python/SLPP 1.2.3: Simple lua-python parser
 dev-python/SQLAlchemy-Utils 0.39.0: Various utility functions and datatypes for SQLAlchemy
 dev-python/TakeTheTime 0.3.1: Take The Time, a super-neat Python library for timing chunks of code
@@ -947,6 +949,7 @@ dev-python/graphql-relay 3.2.0: Relay library for graphql-core
 dev-python/grpc-stubs 1.53.0.2: gRPC typing stubs for Python
 dev-python/grpclib 0.4.2 0.4.3: Pure-Python gRPC implementation for asyncio
 dev-python/guidata 2.3.1: Library for user interfaces for easy dataset editing and display
+dev-python/guiqwt 4.4.1: Efficient 2D plotting Python library based on PythonQwt
 dev-python/guppy3 3.1.3-r1: A Python Programming Environment & Heap analysis toolset
 dev-python/hachoir 3.2.0: Hachoir is a Python library to view and edit a binary stream field by field
 dev-python/hijri-converter 2.2.4: Accurate Hijri-Gregorian date converter based on the Umm al-Qura calendar
@@ -1129,11 +1132,11 @@ dev-python/ttfautohint-py 0.5.1-r1: Python wrapper for ttfautohint, a free auto-
 dev-python/tulir-telethon 1.29.0_alpha1 1.29.0_alpha2: Pure Python 3 MTProto API Telegram client library, for bots too!
 dev-python/tweepy 4.14.0: An easy-to-use Python library for accessing the Twitter API.
 dev-python/types-paramiko 2.10.0 2.11.1: Typing stubs for paramiko
-dev-python/types-protobuf 4.23.0.1: Typing stubs for protobuf
+dev-python/types-protobuf 4.23.0.2: Typing stubs for protobuf
 dev-python/types-python-dateutil 2.8.17 2.8.18: Typing stubs for python-dateutil
 dev-python/types-pytz 2021.3.8 2022.1.1: Typing stubs for pytz
-dev-python/types-requests 2.31.0.1: Typing stubs for requests
-dev-python/types-urllib3 1.26.25.13: Typing stubs for urllib3
+dev-python/types-requests 2.31.0.2: Typing stubs for requests
+dev-python/types-urllib3 1.26.25.14: Typing stubs for urllib3
 dev-python/typing_inspect 0.7.1: Runtime inspection utilities for Python typing module
 dev-python/ufo2ft 2.31.1: A bridge from UFOs to FontTools
 dev-python/ufoLib2 0.13.1 0.14.0: A UFO font library
@@ -1222,6 +1225,7 @@ dev-util/fypp 3.1: Fypp - Python powered Fortran preprocessor
 dev-util/gammaray 2.11.3: High-level runtime introspection tool for Qt applications
 dev-util/gftools 0.9.21-r1: Miscellaneous tools for working with the Google Fonts collection
 dev-util/git-bug 0.7.2 9999: distributed, offline-first bug tracker
+dev-util/gitlab-ci-local-bin 4.42.0: Run gitlab pipelines locally as shell executor or docker executor
 dev-util/glsl-language-server 0.3.7: Language server implementation for GLSL
 dev-util/gshards 0.1-r1 0.2: Small helper tools to aid installing Crystal packages in Gentoo
 dev-util/haredo 1.0.2 9999: a simple and unix-idiomatic build automator
@@ -1470,7 +1474,7 @@ media-gfx/qview 4.0 5.0: Practical and minimal image viewer
 media-gfx/sic 0.19.0: Accessible image processing and conversion from the terminal tool.
 media-gfx/silicon 0.5.1: Create beautiful image of your code
 media-gfx/svgcleaner 0.9.5: svgcleaner could help you to clean up your SVG files from the unnecessary data.
-media-gfx/swayimg 1.11: A lightweight image viewer for Wayland display servers
+media-gfx/swayimg 1.12: A lightweight image viewer for Wayland display servers
 media-gfx/ufolint 1.2.0-r1: UFO source format linter
 media-gfx/vpuppr 0.9.0 9999: VTuber application made with Godot 3.4
 media-gfx/zw3d 2022.0.3.1-r3 2023.0.3.1: CAD/CAM software for 3D design and processing
@@ -1613,6 +1617,7 @@ net-libs/ulfius 2.7.13: HTTP Framework for REST Applications in C
 net-libs/usockets 0.8.1_p20211023 9999: tiny eventing, networking & crypto for async applications
 net-mail/dovecot-fts-xapian 1.5.4 1.5.5 9999: Dovecot FTS plugin backed by Xapian
 net-mail/hydroxide 0.2.23 0.2.24 0.2.26 0.2.27 9999: A third-party, open-source ProtonMail CardDAV, IMAP and SMTP bridge
+net-mail/pop 0.2.0: Send emails from your terminal
 net-misc/FORT-validator 1.5.2 1.5.3 1.5.3_p20220607: FORT validator is an open source RPKI validator
 net-misc/can-utils 2021.08.0 2023.03 9999-r3: CAN userspace utilities and tools
 net-misc/clatd 1.6: A CLAT / SIIT-DC Edge Relay implementation for Linux
@@ -1951,7 +1956,7 @@ x11-misc/greenclip-bin 4.2: Simple clipboard manager to be integrated with rofi
 x11-misc/gromit-mpx 1.4.3 9999: Gromit-MPX is a multi-pointer GTK3 port of the Gromit desktop annotation tool
 x11-misc/i3lock-color 2.13.2 2.13.4 9999: The world's most popular non-default computer lockscreen
 x11-misc/i3lock-fancy-rapid 0.0.0_pre20201109-r1 0.0.0_pre20210421: A faster implementation of i3lock-fancy
-x11-misc/i3status-rust 0.31.8: A feature-rich and resource-friendly replacement for i3status, written in Rust.
+x11-misc/i3status-rust 0.31.9: A feature-rich and resource-friendly replacement for i3status, written in Rust.
 x11-misc/input-leap 9999: Share a mouse and keyboard between computers (fork of Barrier)
 x11-misc/ksnip 1.9.2 1.10.0-r1 1.10.1: Ksnip is a Qt based cross-platform screenshot tool
 x11-misc/leftwm-theme 9999: A theme mangager for LeftWM
