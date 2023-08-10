@@ -212,6 +212,7 @@ app-misc/neo 0.6.1 9999: cmatrix clone with 32-bit color and Unicode support
 app-misc/nerdfetch 5.0.2: A POSIX *nix fetch script using Nerdfonts
 app-misc/nonsense 0.7-r1: Generates random text from datafiles and templates
 app-misc/nwg-look 0.2.1 0.2.2 0.2.4: GTK3 settings editor adapted to work in the sway / wlroots environment
+app-misc/nwg-shell-wallpapers 1.1: Selection of wallpapers contributed to the nwg-shell project
 app-misc/onefetch 2.18.1: Command-line Git information tool
 app-misc/pfetch 0.6.0: A pretty system information tool written in POSIX sh
 app-misc/pipes-rs 1.6.1: An over-engineered rewrite of pipes.sh in Rust
@@ -1267,8 +1268,8 @@ dev-vcs/gitqlient-gitserver-plugin 0.2.0: GitQlient GitServer plugin
 dev-vcs/gitqlient-jenkins-plugin 0.2.0: GitQlient Jenkins plugin
 dev-vcs/gitui 0.18.0 0.20.1: Blazing fast terminal-ui for git
 dev-vcs/got 0.90 0.91: Portable version of the Game of Trees version control system
-dev-vcs/lazygit 0.38.2 0.39.4 0.40.0: Simple terminal UI for git commands
-dev-vcs/lefthook 1.0.4 1.2.6: Fast and powerful Git hooks manager for any type of projects
+dev-vcs/lazygit 0.38.2 0.39.4 0.40.2: Simple terminal UI for git commands
+dev-vcs/lefthook 1.0.4 1.2.6 1.4.8: Fast and powerful Git hooks manager for any type of projects
 dev-zig/zls 0.10.0-r1 9999: The officially unofficial Ziglang language server
 games-action/ATLauncher 3.4.3.1 3.4.27.0: Minecraft launcher which integrates multiple different ModPacks
 games-action/blackvoxel 2.50 9999: Blackvoxel Video Game
@@ -1381,7 +1382,17 @@ gui-apps/hyprpicker 0.1.0-r1 0.1.1: A wlroots-compatible Wayland color picker th
 gui-apps/intiface-central-bin 2.4.0 2.4.3: Buttplug frontend application
 gui-apps/meteo-qt 3.3: A system tray application for the weather status
 gui-apps/mpvpaper 1.2 1.3 9999: A video wallpaper program for wlroots based wayland compositors
+gui-apps/nwg-bar 0.1.3: GTK3-based button bar for wlroots-based compositors
+gui-apps/nwg-displays 0.3.7: Output management utility for sway and Hyprland
+gui-apps/nwg-dock 0.3.6: GTK3-based dock for sway
+gui-apps/nwg-dock-hyprland 0.1.4: GTK3-based dock for Hyprland
+gui-apps/nwg-drawer 0.3.9: Application drawer for wlroots-based Wayland compositors
+gui-apps/nwg-icon-picker 0.1.0: GTK icon chooser with a text search option
 gui-apps/nwg-launchers 0.5.0 0.6.3 9999: GTK+ launchers for sway, i3 and some other WMs
+gui-apps/nwg-menu 0.1.1: enuStart plugin to nwg-panel, also capable of working standalone
+gui-apps/nwg-panel 0.9.11 9999: GTK3-based panel for sway and Hyprland Wayland compositors
+gui-apps/nwg-shell 0.5.7: meta-package for the nwg-shell project
+gui-apps/nwg-shell-config 0.5.14: nwg-shell configuration utility
 gui-apps/organicmaps 9999: Offline maps and navigation using OpenStreetMap data
 gui-apps/packettracer 8.2.0: Cisco's packet tracer
 gui-apps/paperde 0.1.1_p20210426 9999: Simple, sleek QT based DE for wayland using wayfire
@@ -1543,7 +1554,7 @@ media-video/owncast 0.0.12 0.0.13: A self-hosted live video and web chat server
 media-video/syncplay 1.6.9 1.7.0: Client/server to synchronize media playback
 media-video/tartube 2.4.077 9999: A GUI front-end for youtube-dl
 media-video/trakt-scrobbler 1.4.2-r1 1.5.0-r1 1.6.3-r1: Scrobbler for trakt.tv that supports VLC, Plex, MPC-HC, and MPV
-media-video/uxplay 1.64: AirPlay Unix mirroring server
+media-video/uxplay 1.65.3: AirPlay Unix mirroring server
 media-video/wlrobs 1.0 9999: OBS plugin that allows you to screen capture on wlroots based compositors
 media-video/ytarchive 0.3.2: Youtube livestream downloader
 mpv-plugin/SmartCopyPaste 3.1: Gives mpv the capability to copy and paste while being smart and customizable
@@ -1578,7 +1589,7 @@ net-im/Quaternion 0.0.95.1: A Qt-based IM client for Matrix
 net-im/abaddon 0.1.8 9999: Alternative Discord client using GTK instead of Electron
 net-im/chatterino 2.3.5-r3: Chat client for https://twitch.tv
 net-im/conduit 0.5.0-r1: A Matrix homeserver written in Rust
-net-im/discord-canary-bin 0.0.162: All-in-one voice and text chat
+net-im/discord-canary-bin 0.0.163: All-in-one voice and text chat
 net-im/discord-ptb-bin 0.0.29: All-in-one voice and text chat
 net-im/fractal 5_beta1: Matrix group messaging app
 net-im/gajim-plugins 9999: Plugins developed fro Gajim XMPP client
@@ -1699,7 +1710,7 @@ sci-electronics/skywater-pdk 0.0.0_p20220424: Process design kit for usage with 
 sci-electronics/slang 1.0 2.0-r2 3.0 9999: SystemVerilog compiler and language services
 sci-electronics/svls 0.2.3: SystemVerilog language server
 sci-electronics/verible 0.0.2275 0.0.3124: SystemVerilog parser, style-linter, and formatter
-sci-electronics/verilator 4.106 5.008 9999: The fast free Verilog/SystemVerilog simulator
+sci-electronics/verilator 4.106 5.014 9999: The fast free Verilog/SystemVerilog simulator
 sci-geosciences/GeographicLib-data 0-r1: Datasets for GeographicLib
 sci-libs/ButterflyPACK 2.1.1-r1: Mathematical software for solving large-scale dense linear systems
 sci-libs/CoDiPack 0_pre20210720-r1: Fast gradient evaluation in C++ based on Expression Templates
