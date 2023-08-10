@@ -10,8 +10,9 @@ MY_BIN="${MY_BIN/-canary/}Canary"
 inherit desktop linux-info pax-utils unpacker xdg
 
 DESCRIPTION="All-in-one voice and text chat"
-HOMEPAGE="https://discordapp.com/"
+HOMEPAGE="https://discord.com/"
 SRC_URI="https://dl-canary.discordapp.net/apps/linux/${PV}/${MY_PN}-${PV}.deb"
+S="${WORKDIR}"
 
 LICENSE="all-rights-reserved"
 SLOT="0"
@@ -50,8 +51,6 @@ RDEPEND="
 	x11-libs/libXtst
 	x11-libs/pango
 "
-
-S="${WORKDIR}"
 
 QA_PREBUILT="
 	opt/discord-canary/${MY_BIN}
