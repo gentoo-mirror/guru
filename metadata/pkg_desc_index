@@ -81,7 +81,7 @@ app-admin/linode-cli 5.41.3: Linode Command Line Interface
 app-admin/oet 0.1.9 0.1.10 9999: Update your system into binpkgs in an overlay sandbox
 app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applications and tmux
 app-admin/pass-update 2.1: pass extension that provides an easy flow for updating passwords
-app-admin/pulumi-bin 3.76.0 3.76.1 3.77.1: Infrastructure as code in any programming language
+app-admin/pulumi-bin 3.77.1 3.78.1: Infrastructure as code in any programming language
 app-admin/rbw 9999: unofficial bitwarden cli
 app-admin/s-tui 1.1.3-r1: Stress-Terminal UI monitoring tool
 app-admin/synadm 0.41.2 0.41.3: Command line admin tool for Synapse
@@ -196,6 +196,7 @@ app-misc/fetsh 1.8 1.9 9999: A fetch written in POSIX shell without any external
 app-misc/fff 2.2: A simple file manager written in bash
 app-misc/ghq 1.1.0 1.1.5: Remote repository management made easy
 app-misc/glow 1.4.1 1.5.1: Render markdown on the CLI, with pizzazz!
+app-misc/gopsuinfo 0.1.5: A gopsutil-based command to display system usage info as text
 app-misc/grit 0.3.0: An personal task manager that represents tasks as multitree nodes
 app-misc/hollywood 1.22: Fill your console with Hollywood melodrama technobabble
 app-misc/kloak 0.2.30: A privacy tool that makes keystroke biometrics less effective
@@ -1134,7 +1135,7 @@ dev-python/ttfautohint-py 0.5.1-r1: Python wrapper for ttfautohint, a free auto-
 dev-python/tulir-telethon 1.29.0_alpha1 1.29.0_alpha2: Pure Python 3 MTProto API Telegram client library, for bots too!
 dev-python/tweepy 4.14.0: An easy-to-use Python library for accessing the Twitter API.
 dev-python/types-paramiko 2.10.0 2.11.1: Typing stubs for paramiko
-dev-python/types-protobuf 4.23.0.3: Typing stubs for protobuf
+dev-python/types-protobuf 4.24.0.0: Typing stubs for protobuf
 dev-python/types-python-dateutil 2.8.17 2.8.18: Typing stubs for python-dateutil
 dev-python/types-pytz 2021.3.8 2022.1.1: Typing stubs for pytz
 dev-python/types-requests 2.31.0.2: Typing stubs for requests
@@ -1273,6 +1274,7 @@ dev-vcs/lefthook 1.0.4 1.2.6 1.4.8: Fast and powerful Git hooks manager for any 
 dev-zig/zls 0.10.0-r1 9999: The officially unofficial Ziglang language server
 games-action/ATLauncher 3.4.3.1 3.4.27.0: Minecraft launcher which integrates multiple different ModPacks
 games-action/blackvoxel 2.50 9999: Blackvoxel Video Game
+games-action/classicube 1.3.5: Reverse-engineered Minecraft Classic client
 games-action/ddnet 17.1.1 9999: DDraceNetwork, a cooperative racing mod of Teeworlds
 games-action/netrek-brmh 2.6.0: brmh client for netrek
 games-action/netrek-cow 3.3.2: cow client for netrek
@@ -1321,7 +1323,7 @@ games-rpg/snoot-game 1.8 1.8-r1: Visual novel parody of Goodbye Volcano High
 games-server/among-sus 20210519: Among Us, but it's a text adventure
 games-util/HeroicGamesLauncher-bin 2.8.0 2.9.1: A Native GOG and Epic Games Launcher for Linux, Windows and Mac.
 games-util/NotEnoughProduction 0.0.4: Tool for building production chains for modded minecraft
-games-util/ProtonUp-Qt 2.8.1 9999: Install and manage GE-Proton, Luxtorpeda & more for Steam Lutris and Heroic.
+games-util/ProtonUp-Qt 2.8.2 9999: Install and manage GE-Proton, Luxtorpeda & more for Steam Lutris and Heroic.
 games-util/chiaki 2.1.1-r2 9999: Client for PlayStation 4 and PlayStation 5 Remote Play
 games-util/dwarf-therapist 41.2.2 41.2.5: For managing dwarves in Dwarf Fortress
 games-util/gamehub 0.16.0.1 0.16.3.2: GameHub is a unified library for all your games
@@ -1344,6 +1346,7 @@ gnome-extra/vvmplayer 1.4: Visual Voicemail Player
 gnome-extra/yad 10.1: Display GTK+ dialog boxes from command line or shell scripts
 gui-apps/1password 8.10.7: The world’s most-loved password manager
 gui-apps/ReGreet 9999: A clean and customizable GTK-based greetd greeter written in Rust
+gui-apps/azote 1.12.3: Wallpaper manager for wlroots-based compositors and some other WMs
 gui-apps/clipman 1.6.2: A basic clipboard manager for Wayland.
 gui-apps/coreaction 4.2.0 9999: A side bar for showing widgets for C Suite
 gui-apps/coreapps-meta 4.2.0 9999: Meta package for coreapps
@@ -1383,21 +1386,21 @@ gui-apps/intiface-central-bin 2.4.0 2.4.3: Buttplug frontend application
 gui-apps/meteo-qt 3.3: A system tray application for the weather status
 gui-apps/mpvpaper 1.2 1.3 9999: A video wallpaper program for wlroots based wayland compositors
 gui-apps/nwg-bar 0.1.3: GTK3-based button bar for wlroots-based compositors
-gui-apps/nwg-displays 0.3.7: Output management utility for sway and Hyprland
+gui-apps/nwg-displays 0.3.7 0.3.7-r1: Output management utility for sway and Hyprland
 gui-apps/nwg-dock 0.3.6: GTK3-based dock for sway
 gui-apps/nwg-dock-hyprland 0.1.4: GTK3-based dock for Hyprland
 gui-apps/nwg-drawer 0.3.9: Application drawer for wlroots-based Wayland compositors
-gui-apps/nwg-icon-picker 0.1.0: GTK icon chooser with a text search option
+gui-apps/nwg-icon-picker 0.1.0 0.1.0-r1 9999: GTK icon chooser with a text search option
 gui-apps/nwg-launchers 0.5.0 0.6.3 9999: GTK+ launchers for sway, i3 and some other WMs
 gui-apps/nwg-menu 0.1.1: enuStart plugin to nwg-panel, also capable of working standalone
-gui-apps/nwg-panel 0.9.11 9999: GTK3-based panel for sway and Hyprland Wayland compositors
-gui-apps/nwg-shell 0.5.7: meta-package for the nwg-shell project
-gui-apps/nwg-shell-config 0.5.14: nwg-shell configuration utility
+gui-apps/nwg-panel 0.9.11 0.9.11-r1 9999: GTK3-based panel for sway and Hyprland Wayland compositors
+gui-apps/nwg-shell 0.5.7 0.5.7-r1: meta-package for the nwg-shell project
+gui-apps/nwg-shell-config 0.5.14 0.5.14-r1: nwg-shell configuration utility
 gui-apps/organicmaps 9999: Offline maps and navigation using OpenStreetMap data
 gui-apps/packettracer 8.2.0: Cisco's packet tracer
 gui-apps/paperde 0.1.1_p20210426 9999: Simple, sleek QT based DE for wayland using wayfire
 gui-apps/rofi-wayland 1.7.5: A window switcher, run dialog and dmenu replacement
-gui-apps/sfwbar 1.0_beta10-r1 1.0_beta11: S* Floating Window Bar
+gui-apps/sfwbar 1.0_beta10-r1 1.0_beta11 1.0_beta12: S* Floating Window Bar
 gui-apps/showmethekey 1.7.3 1.10.0: Show keys you typed on screen.
 gui-apps/somebar 1.0.0 1.0.3 9999: dwm-like bar for dwl
 gui-apps/someblocks 1.0.0 1.0.1 9999: Modular status bar for somebar written in c.
@@ -1431,7 +1434,7 @@ gui-libs/libcsys 4.2.0 9999: Library for managing the device
 gui-libs/libdecor 0.1.1 9999: A client-side decorations library for Wayland clients
 gui-libs/text-engine 0.1.1-r2 9999: A lightweight rich-text framework for GTK 4
 gui-libs/webp-pixbuf-loader 0.0.1: WebP Image format GdkPixbuf loader
-gui-libs/xdg-desktop-portal-hyprland 0.3.0 0.3.0-r1 0.3.1 0.4.0 9999: xdg-desktop-portal backend for hyprland
+gui-libs/xdg-desktop-portal-hyprland 0.4.0 0.5.0 9999: xdg-desktop-portal backend for hyprland
 gui-wm/cage 0.1.5 9999: A Wayland kiosk
 gui-wm/dwl 0.3.1 0.4-r1 9999 9999-r1: dwm for Wayland
 gui-wm/hyprland-contrib 0.1: Community-maintained extensions for hyprland
@@ -1609,6 +1612,7 @@ net-im/mautrix-telegram 0.14.0 0.14.1: A Matrix-Telegram Messenger puppeting bri
 net-im/nheko 0.11.3 9999: Native desktop client for Matrix using Qt
 net-im/ruqola 1.3.1: Rocket.Chat client for the KDE desktop
 net-im/session-desktop-bin 1.10.8: Session Desktop - Onion routing based messenger
+net-im/teams-for-linux 1.3.1: Microsoft Teams client for Linux. Binary precompiled version.
 net-im/whatsapp-for-linux 1.5.3 1.6.2: An unofficial WhatsApp desktop application for Linux
 net-irc/catgirl 2.0a 2.1: TLS-only terminal IRC client
 net-irc/pounce 3.0 3.1: Multi-client, TLS-only IRC bouncer

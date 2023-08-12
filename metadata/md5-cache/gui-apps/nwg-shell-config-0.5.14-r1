@@ -1,0 +1,16 @@
+BDEPEND=python_targets_python3_10? ( dev-lang/python:3.10 ) python_targets_python3_11? ( dev-lang/python:3.11 ) >=dev-python/gpep517-13[python_targets_python3_10(-)?,python_targets_python3_11(-)?] >=dev-python/setuptools-67.8.0-r1[python_targets_python3_10(-)?,python_targets_python3_11(-)?]
+DEFINED_PHASES=compile configure install postinst postrm prepare test
+DEPEND=gui-apps/nwg-shell sci-geosciences/geopy x11-libs/gtk+:3
+DESCRIPTION=nwg-shell configuration utility
+EAPI=7
+HOMEPAGE=https://github.com/nwg-piotr/nwg-shell-config
+INHERIT=desktop distutils-r1 xdg-utils
+IUSE=python_targets_python3_10 python_targets_python3_11
+KEYWORDS=~amd64
+LICENSE=MIT
+RDEPEND=gui-apps/nwg-shell sci-geosciences/geopy x11-libs/gtk+:3 python_targets_python3_10? ( dev-lang/python:3.10 ) python_targets_python3_11? ( dev-lang/python:3.11 )
+REQUIRED_USE=|| ( python_targets_python3_10 python_targets_python3_11 )
+SLOT=0
+SRC_URI=https://github.com/nwg-piotr/nwg-shell-config/archive/v0.5.14.tar.gz -> nwg-shell-config-0.5.14.tar.gz
+_eclasses_=desktop	021728fdc1b03b36357dbc89489e0f0d	toolchain-funcs	0c8a0b0d318eb5d5180d114bd3f6592b	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	ad475baa777c9978fa035216c8264a10	out-of-source-utils	1a9007554652a6e627edbccb3c25a439	multibuild	30dbf3c5a31db09a19f31ad0a68f2405	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	f3010c780f65d1bb5aea15a9af1adc9c	eapi8-dosym	5ac4857ad078256d939c44f7c64197a9	python-utils-r1	1f435bc389faf790af695df46b8dcb73	python-r1	b3f874304c1bda6ffc3450ebb4ae5169	distutils-r1	b7cd5736a595ec0df9b164d5aec6f228	xdg-utils	baea6080dd821f5562d715887954c9d3
+_md5_=83bb4c974f988ce70825546b12b29bee
