@@ -15,6 +15,7 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
-DEPEND=""
-RDEPEND="${DEPEND}"
-BDEPEND=""
+RDEPEND="
+	dev-python/docutils
+	dev-python/sphinx
+"
