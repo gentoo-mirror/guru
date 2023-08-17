@@ -1,4 +1,4 @@
-BDEPEND=dev-util/gdbus-codegen virtual/pkgconfig test? ( dev-libs/opensc net-misc/casync sys-fs/mtd-utils sys-fs/squashfs-tools sys-libs/libfaketime ) sys-devel/gnuconfig >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.5:1.16 ) >=sys-devel/autoconf-2.71-r5 >=sys-devel/libtool-2.4.7 doc? ( || ( ( dev-lang/python:3.11 dev-python/sphinx[python_targets_python3_11(-)] ) ( dev-lang/python:3.10 dev-python/sphinx[python_targets_python3_10(-)] ) ) )
+BDEPEND=dev-util/gdbus-codegen virtual/pkgconfig test? ( dev-libs/opensc net-misc/casync sys-fs/mtd-utils sys-fs/squashfs-tools sys-libs/libfaketime ) sys-devel/gnuconfig >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.5:1.16 ) >=sys-devel/autoconf-2.71-r5 >=sys-devel/libtool-2.4.7 doc? ( || ( ( dev-lang/python:3.12 dev-python/sphinx[python_targets_python3_12(-)] ) ( dev-lang/python:3.11 dev-python/sphinx[python_targets_python3_11(-)] ) ( dev-lang/python:3.10 dev-python/sphinx[python_targets_python3_10(-)] ) ) )
 DEFINED_PHASES=compile configure prepare setup
 DEPEND=dev-libs/glib:2 dev-libs/openssl:0= json? ( dev-libs/json-glib ) network? ( net-misc/curl ) service? ( sys-apps/dbus )
 DESCRIPTION=Lightweight update client that runs on your Embedded Linux device
@@ -11,6 +11,6 @@ LICENSE=LGPL-2.1
 RDEPEND=dev-libs/glib:2 dev-libs/openssl:0= json? ( dev-libs/json-glib ) network? ( net-misc/curl ) service? ( sys-apps/dbus )
 RESTRICT=!test? ( test )
 SLOT=0
-SRC_URI=https://github.com/rauc/rauc/releases/download/v1.10/rauc-1.10.tar.xz
+SRC_URI=https://github.com/rauc/rauc/releases/download/v1.10.1/rauc-1.10.1.tar.xz
 _eclasses_=gnuconfig	b6b3e92f8b8c996400074b5f61a59256	toolchain-funcs	0c8a0b0d318eb5d5180d114bd3f6592b	multilib	c19072c3cd7ac5cb21de013f7e9832e0	libtool	9d3a9a889a6fa62ae794f817c156491b	autotools	6ae9a4347149b19a112caa1182d03bde	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	python-utils-r1	1f435bc389faf790af695df46b8dcb73	python-any-r1	845fed6b6dfc35679a4fea289272ddc0	docs	f4e4c22139b7811a4dbdafaede74c229
-_md5_=6f7fd610e33a1d3a4b9cb1fc23f8904e
+_md5_=b50592ca02fcd4405a3c9d9c9fdd5826

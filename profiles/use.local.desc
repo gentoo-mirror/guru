@@ -20,11 +20,11 @@ app-crypt/uacme:mbedtls - Use net-libs/mbedtls instead of dev-libs/openssl
 app-crypt/uacme:ualpn - Build the ualpn proxy that transparently handles tls-alpn-01
 app-dicts/canna-2ch:canna - Add support for the Canna kana to kanji conversion engine
 app-dicts/dictd-mueller:ipa - convert transcription into the IPA Unicode
-app-emulation/LookingGlass:binutils - build backtrace support
-app-emulation/LookingGlass:pipewire - enable media-video/pipewire support
 app-emulation/arnold:inkz80 - Use inkz80 processor emulation
 app-emulation/box64:aot - Enables the dynamic ahead of time recompiler for increased performance on ARM
 app-emulation/box86:aot - Enables the dynamic ahead of time recompiler for increased performance on ARM
+app-emulation/looking-glass:binutils - build backtrace support
+app-emulation/looking-glass:pipewire - enable media-video/pipewire support
 app-i18n/canna:canuum - Build canuum
 app-misc/apidb:commands - Build commands
 app-misc/apidb:corelibs - Build Abtract layer
@@ -948,12 +948,12 @@ sys-cluster/veloc:slurm - Use sys-cluster/slurm as resource manager
 sys-cluster/wxparaver:extrae - Enable extrae support
 sys-cluster/wxparaver:ompss - Enable OmpSs parallel version
 sys-cluster/wxparaver:openmp - Enable OpenMP parallel version
-sys-firmware/LenovoLegionLinux:downgrade-nvidia - Downgrade nvidia for 525 to enable TDP control (systemd-service)
-sys-firmware/LenovoLegionLinux:legion-acpi - Install acpi script (experimental feature)
-sys-firmware/LenovoLegionLinux:legion-tools - Build and install legion_gui and legion_cli
-sys-firmware/LenovoLegionLinux:radeon-dgpu - Enable AMD GPU TDP control (systemd-service)
-sys-firmware/LenovoLegionLinux:ryzenadj - [AMD] CPU and APU control using ryzenadj (systemd-service)
-sys-firmware/LenovoLegionLinux:undervolt-intel - [INTEL] CPU and APU control using undervolt (systemd-service)
+sys-firmware/lenovolegionlinux:downgrade-nvidia - Downgrade nvidia for 525 to enable TDP control (systemd-service)
+sys-firmware/lenovolegionlinux:legion-acpi - Install acpi script (experimental feature)
+sys-firmware/lenovolegionlinux:legion-tools - Build and install legion_gui and legion_cli
+sys-firmware/lenovolegionlinux:radeon-dgpu - Enable AMD GPU TDP control (systemd-service)
+sys-firmware/lenovolegionlinux:ryzenadj - [AMD] CPU and APU control using ryzenadj (systemd-service)
+sys-firmware/lenovolegionlinux:undervolt-intel - [INTEL] CPU and APU control using undervolt (systemd-service)
 sys-kernel/dkms:kernel-hooks - Enable automatic rebuilding of modules via kernel source makefile hooks
 sys-kernel/msr-safe:slurm - Install the spank plugin
 sys-kernel/uek-sources:experimental - apply experimental gentoo genpatches

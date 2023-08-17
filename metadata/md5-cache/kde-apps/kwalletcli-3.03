@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst
+DESCRIPTION=CLI for the KDE Wallet
+EAPI=8
+HOMEPAGE=http://www.mirbsd.org/kwalletcli.htm
+INHERIT=flag-o-matic
+KEYWORDS=~amd64
+LICENSE=MirOS
+PDEPEND=app-shells/mksh
+RDEPEND=dev-qt/qtcore:5 dev-qt/qtgui:5 kde-frameworks/kcoreaddons:5 kde-frameworks/ki18n:5 kde-frameworks/kwallet:5
+SLOT=0
+SRC_URI=https://github.com/MirBSD/kwalletcli/archive/refs/tags/kwalletcli-3_03.tar.gz
+_eclasses_=toolchain-funcs	0c8a0b0d318eb5d5180d114bd3f6592b	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	ad475baa777c9978fa035216c8264a10
+_md5_=3f4e79e793435e8e7896c5eced83ea40
