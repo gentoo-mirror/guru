@@ -24,7 +24,7 @@ Signed-off-by: Kurt Kanzenbach <kurt@kmk-computers.de>
  if ENABLE_STREAMING
  check_PROGRAMS += test/nbd.test
  endif
-@@ -282,9 +278,6 @@ test_utils_test_LDADD = librauctest.la
+@@ -283,9 +279,6 @@ test_utils_test_LDADD = librauctest.la
  test_install_test_SOURCES = test/install.c
  test_install_test_LDADD = librauctest.la
  

@@ -7,10 +7,10 @@
 EAPI=8
 
 CRATES="
-	aho-corasick-0.7.20
-	memchr-2.5.0
-	regex-1.7.3
-	regex-syntax-0.6.29
+	aho-corasick@0.7.20
+	memchr@2.5.0
+	regex@1.7.3
+	regex-syntax@0.6.29
 "
 
 inherit cargo
@@ -19,7 +19,7 @@ DESCRIPTION="OwO-ifies text via regex"
 # Double check the homepage as the cargo_metadata crate
 # does not provide this value so instead repository is used
 HOMEPAGE="https://github.com/iliketwertles"
-SRC_URI="https://github.com/iliketwertles/owo/archive/refs/tags/0.1.0.tar.gz"
+SRC_URI="https://github.com/iliketwertles/owo/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
 
 # License set may be more restrictive as OR is not respected
 # use cargo-license for a more accurate license picture
