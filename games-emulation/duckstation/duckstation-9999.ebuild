@@ -1,4 +1,4 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -13,7 +13,7 @@ EGIT_SUBMODULES=()
 
 LICENSE="GPL-3"
 SLOT="0"
-IUSE="discord +egl +evdev fbdev +gamepad gbm +nogui qt5 retroachievements wayland X"
+IUSE="+dbus discord +egl +evdev fbdev +gamepad gbm +nogui qt6 retroachievements wayland X"
 
 # Either or both frontends must be built
 REQUIRED_USE="
@@ -27,13 +27,14 @@ BDEPEND="
 	wayland? ( kde-frameworks/extra-cmake-modules )
 "
 DEPEND="
+	media-libs/cubeb
 	evdev? ( dev-libs/libevdev )
+	dbus? ( sys-apps/dbus )
 	gamepad? ( media-libs/libsdl2 )
 	gbm? ( x11-libs/libdrm )
-	qt5? (
-			dev-qt/qtcore
-			dev-qt/qtgui
-			dev-qt/qtnetwork
+	qt6? (
+		dev-qt/qtbase:6[gui,network,widgets]
+		dev-qt/qttools:6[linguist]
 	)
 	retroachievements? ( net-misc/curl[curl_ssl_gnutls] )
 	X? (
@@ -47,10 +48,12 @@ S="${WORKDIR}/${PN}"
 
 src_configure() {
 	local mycmakeargs=(
+		-DENABLE_CUBEB=ON
 		-DBUILD_NOGUI_FRONTEND=$(usex nogui)
-		-DBUILD_QT_FRONTEND=$(usex qt5)
+		-DBUILD_QT_FRONTEND=$(usex qt6)
 		-DENABLE_CHEEVOS=$(usex retroachievements)
-		–DENABLE_DISCORD_PRESENCE=$(usex discord)
+		-DENABLE_DISCORD_PRESENCE=$(usex discord)
+		-DUSE_DBUS=$(usex dbus)
 		-DUSE_DRMKMS=$(usex gbm)
 		-DUSE_EGL=$(usex egl)
 		-DUSE_EVDEV=$(usex evdev)
@@ -68,25 +71,22 @@ src_install() {
 
 	# Binary and resources files must be in same directory – installing in /opt
 	insinto /opt/${PN}
-	doins -r "${BUILD_DIR}"/bin/{database,inputprofiles,resources,shaders,translations}
+	doins -r "${BUILD_DIR}"/bin/resources/
 
 	if use nogui; then
-		for i in {16,32,48,64,128,256}; do
-			newicon -s ${i} extras/icons/icon-${i}px.png duckstation-nogui.png
-		done
-		domenu extras/linux-desktop-files/duckstation-nogui.desktop
+		newicon "${BUILD_DIR}"/bin/resources/images/duck.png duckstation-nogui.png
+		make_desktop_entry "${PN}-nogui %f" "DuckStation NoGUI" "${PN}-nogui" "Game"
 
 		doins "${BUILD_DIR}"/bin/duckstation-nogui
 		dosym ../../opt/${PN}/duckstation-nogui usr/bin/duckstation-nogui
 		fperms +x /opt/${PN}/duckstation-nogui
 	fi
 
-	if use qt5; then
-		for i in {16,32,48,64,128,256}; do
-			newicon -s ${i} extras/icons/icon-${i}px.png duckstation-qt.png
-		done
-		domenu extras/linux-desktop-files/duckstation-qt.desktop
+	if use qt6; then
+		newicon "${BUILD_DIR}"/bin/resources/images/duck.png duckstation-qt.png
+		make_desktop_entry "${PN}-qt %f" "DuckStation Qt" "${PN}-qt" "Game"
 
+		doins -r "${BUILD_DIR}"/bin/translations/
 		doins "${BUILD_DIR}"/bin/duckstation-qt
 		dosym ../../opt/${PN}/duckstation-qt usr/bin/duckstation-qt
 		fperms +x /opt/${PN}/duckstation-qt
