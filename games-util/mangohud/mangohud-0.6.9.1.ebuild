@@ -1,28 +1,35 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{10..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 
 inherit python-any-r1 meson
 
 MY_PV=$(ver_cut 1-3)
 [[ -n "$(ver_cut 4)" ]] && MY_PV_REV="-$(ver_cut 4)"
 
-IMGUI_VER="1.81"
-IMGUI_MESON_WRAP_VER="1"
-
 DESCRIPTION="Vulkan and OpenGL overlay for monitoring FPS, sensors, system load and more"
 HOMEPAGE="https://github.com/flightlessmango/MangoHud"
 
-SRC_URI="
-	https://github.com/flightlessmango/MangoHud/archive/v${MY_PV}${MY_PV_REV}.tar.gz -> ${P}.tar.gz
-	https://github.com/ocornut/imgui/archive/v${IMGUI_VER}.tar.gz -> imgui-${IMGUI_VER}.tar.gz
-	https://wrapdb.mesonbuild.com/v2/imgui_${IMGUI_VER}-${IMGUI_MESON_WRAP_VER}/get_patch -> imgui-${IMGUI_VER}-${IMGUI_MESON_WRAP_VER}-meson-wrap.zip
-"
+VK_HEADERS_VER="1.2.158"
+VK_HEADERS_MESON_WRAP_VER="2"
 
-KEYWORDS="~amd64 ~x86"
+if [[ ${PV} == 9999 ]]; then
+	inherit git-r3
+	EGIT_REPO_URI="https://github.com/flightlessmango/MangoHud.git"
+else
+	SRC_URI="
+		https://github.com/flightlessmango/MangoHud/archive/v${MY_PV}${MY_PV_REV}.tar.gz
+			-> ${P}.tar.gz
+		https://github.com/KhronosGroup/Vulkan-Headers/archive/v${VK_HEADERS_VER}.tar.gz
+			-> vulkan-headers-${VK_HEADERS_VER}.tar.gz
+		https://wrapdb.mesonbuild.com/v2/vulkan-headers_${VK_HEADERS_VER}-${VK_HEADERS_MESON_WRAP_VER}/get_patch
+			-> vulkan-headers-${VK_HEADERS_VER}-${VK_HEADERS_MESON_WRAP_VER}-meson-wrap.zip
+	"
+	KEYWORDS="~amd64"
+fi
 
 LICENSE="MIT"
 SLOT="0"
@@ -42,9 +49,9 @@ python_check_deps() {
 }
 
 DEPEND="
+	~media-libs/imgui-1.81[opengl,vulkan]
 	dev-libs/spdlog
 	dev-util/glslang
-	>=dev-util/vulkan-headers-1.2
 	media-libs/vulkan-loader
 	media-libs/libglvnd
 	x11-libs/libdrm
@@ -59,26 +66,37 @@ DEPEND="
 
 RDEPEND="${DEPEND}"
 
-S="${WORKDIR}/MangoHud-${PV}"
+[[ "$PV" != "9999" ]] && S="${WORKDIR}/MangoHud-${PV}"
 
-# PATCHES=(
-# 	"${FILESDIR}/mangohud-0.6.6-meson-fix-imgui-dep.patch"
-# )
+PATCHES=(
+	"${FILESDIR}/mangohud-0.6.6-meson-fix-imgui-dep.patch"
+)
 
 src_unpack() {
 	default
-	[[ -n "${MY_PV_REV}" ]] && ( mv "${WORKDIR}/MangoHud-${MY_PV}${MY_PV_REV}" "${WORKDIR}/MangoHud-${PV}" || die )
+	if [[ $PV != 9999 ]]; then
 
-	unpack imgui-${IMGUI_VER}.tar.gz
-	unpack imgui-${IMGUI_VER}-${IMGUI_MESON_WRAP_VER}-meson-wrap.zip
-	mv "${WORKDIR}/imgui-${IMGUI_VER}" "${S}/subprojects/imgui" || die
+		[[ -n "${MY_PV_REV}" ]] && ( mv "${WORKDIR}/MangoHud-${MY_PV}${MY_PV_REV}" "${WORKDIR}/MangoHud-${PV}" || die )
+
+		unpack vulkan-headers-${VK_HEADERS_VER}.tar.gz
+		unpack vulkan-headers-${VK_HEADERS_VER}-${VK_HEADERS_MESON_WRAP_VER}-meson-wrap.zip
+		mv "${WORKDIR}/Vulkan-Headers-${VK_HEADERS_VER}" "${S}/subprojects/" || die
+	else
+		git-r3_src_unpack
+	fi
+}
+
+src_prepare() {
+	default
+	# replace all occurences of "#include <imgui.h>" to "#include <imgui/imgui.h>"
+	find . -type f -exec sed -i 's/#include <imgui.h>/#include <imgui\/imgui.h>/g' {} \;
+	find . -type f -exec sed -i 's/#include "imgui.h"/#include <imgui\/imgui.h>/g' {} \;
 }
 
 src_configure() {
 	local emesonargs=(
 		-Dappend_libdir_mangohud=false
 		-Duse_system_spdlog=enabled
-		-Duse_system_vulkan=enabled
 		-Dinclude_doc=false
 		$(meson_feature video_cards_nvidia with_nvml)
 		$(meson_feature xnvctrl with_xnvctrl)

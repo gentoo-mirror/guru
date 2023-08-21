@@ -113,22 +113,26 @@ CRATES="
 	windows_x86_64_msvc-0.42.1
 "
 
-inherit cargo desktop
+inherit cargo desktop xdg
 
 DESCRIPTION="A GTK patchbay for pipewire"
 HOMEPAGE="https://gitlab.freedesktop.org/pipewire/helvum"
 SRC_URI="
-	https://gitlab.freedesktop.org/pipewire/helvum/-/archive/${PV}/${P}.tar.gz
-	$(cargo_crate_uris)
+	https://gitlab.freedesktop.org/pipewire/helvum/-/archive/${PV}/${P}.tar.bz2
+	${CARGO_CRATE_URIS}
 "
 
 LICENSE="Apache-2.0 BSD GPL-3 ISC MIT"
 SLOT="0"
 KEYWORDS="~amd64"
+RESTRICT="mirror"
 
+BDEPEND="
+	sys-devel/clang
+"
 DEPEND="
-	>=dev-libs/glib-2.66:2
-	>=gui-libs/gtk-4.4.0:4
+	dev-libs/glib:2
+	gui-libs/gtk:4
 	media-libs/graphene
 	media-video/pipewire:=
 	x11-libs/cairo
@@ -151,3 +155,7 @@ src_install() {
 	make_desktop_entry "${PN}" Helvum org.pipewire.Helvum "AudioVideo;Audio;Video;Midi;Settings;GNOME;GTK" "Terminal=false\nGenericName=Patchbay"
 }
 
+pkg_postinst() {
+	xdg_pkg_postinst
+	xdg_icon_cache_update
+}
