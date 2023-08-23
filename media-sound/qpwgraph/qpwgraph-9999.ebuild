@@ -13,6 +13,8 @@ LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS=""
 
+IUSE="alsa trayicon wayland"
+
 BDEPEND="dev-qt/linguist-tools:5"
 DEPEND="
 	dev-qt/qtcore:5
@@ -27,9 +29,6 @@ RDEPEND="${DEPEND}
 "
 
 src_prepare() {
-	# A small tweak in socket name that allow multiple user at same time
-	# See https://github.com/rncbc/qpwgraph/issues/1
-	sed -i -e "/@/a	m_unique += qgetenv(\"USER\");\n	m_unique += '-';" src/qpwgraph.cpp || die
 	cmake_src_prepare
 }
 
