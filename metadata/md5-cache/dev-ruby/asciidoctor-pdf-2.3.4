@@ -1,17 +1,17 @@
-BDEPEND=test? ( ruby_targets_ruby30? ( >=dev-ruby/asciidoctor-2.0[ruby_targets_ruby30(-)] >=dev-ruby/concurrent-ruby-1.1[ruby_targets_ruby30(-)] >=dev-ruby/matrix-0.4[ruby_targets_ruby30(-)] >=dev-ruby/prawn-2.4.0[ruby_targets_ruby30(-)] >=dev-ruby/prawn-icon-3.0.0[ruby_targets_ruby30(-)] >=dev-ruby/prawn-svg-0.32.0[ruby_targets_ruby30(-)] >=dev-ruby/prawn-table-0.2.0[ruby_targets_ruby30(-)] >=dev-ruby/prawn-templates-0.1.0[ruby_targets_ruby30(-)] >=dev-ruby/treetop-1.6.0[ruby_targets_ruby30(-)] ) ) ruby_targets_ruby30? ( dev-lang/ruby:3.0 ) ruby_targets_ruby30? ( doc? ( dev-ruby/rdoc[ruby_targets_ruby30(-)] ) ) ruby_targets_ruby30? ( test? ( dev-ruby/rake[ruby_targets_ruby30(-)] ) ) ruby_targets_ruby30? ( virtual/rubygems[ruby_targets_ruby30(-)] ) test? ( ruby_targets_ruby30? ( virtual/rubygems[ruby_targets_ruby30(-)] ) )
+BDEPEND=test? ( ruby_targets_ruby31? ( >=dev-ruby/asciidoctor-2.0[ruby_targets_ruby31(-)] >=dev-ruby/concurrent-ruby-1.1[ruby_targets_ruby31(-)] >=dev-ruby/matrix-0.4[ruby_targets_ruby31(-)] >=dev-ruby/prawn-2.4.0[ruby_targets_ruby31(-)] >=dev-ruby/prawn-icon-3.0.0[ruby_targets_ruby31(-)] >=dev-ruby/prawn-svg-0.32.0[ruby_targets_ruby31(-)] >=dev-ruby/prawn-table-0.2.0[ruby_targets_ruby31(-)] >=dev-ruby/prawn-templates-0.1.0[ruby_targets_ruby31(-)] >=dev-ruby/treetop-1.6.0[ruby_targets_ruby31(-)] ) ) ruby_targets_ruby31? ( dev-lang/ruby:3.1 ) ruby_targets_ruby31? ( doc? ( dev-ruby/rdoc[ruby_targets_ruby31(-)] ) ) ruby_targets_ruby31? ( test? ( dev-ruby/rake[ruby_targets_ruby31(-)] ) ) ruby_targets_ruby31? ( virtual/rubygems[ruby_targets_ruby31(-)] ) test? ( ruby_targets_ruby31? ( virtual/rubygems[ruby_targets_ruby31(-)] ) )
 DEFINED_PHASES=compile configure install prepare setup test unpack
-DEPEND=ruby_targets_ruby30? ( dev-lang/ruby:3.0 ) ruby_targets_ruby30? ( virtual/rubygems[ruby_targets_ruby30(-)] )
+DEPEND=ruby_targets_ruby31? ( dev-lang/ruby:3.1 ) ruby_targets_ruby31? ( virtual/rubygems[ruby_targets_ruby31(-)] )
 DESCRIPTION=A native PDF converter for AsciiDoc based on Asciidoctor and Prawn
 EAPI=8
 HOMEPAGE=https://github.com/asciidoctor/asciidoctor-pdf
 INHERIT=ruby-fakegem
-IUSE=test ruby_targets_ruby30 doc test test
+IUSE=test ruby_targets_ruby31 doc test test
 KEYWORDS=~amd64 ~x86
 LICENSE=MIT
-RDEPEND=ruby_targets_ruby30? ( >=dev-ruby/asciidoctor-2.0[ruby_targets_ruby30(-)] >=dev-ruby/concurrent-ruby-1.1[ruby_targets_ruby30(-)] >=dev-ruby/matrix-0.4[ruby_targets_ruby30(-)] >=dev-ruby/prawn-2.4.0[ruby_targets_ruby30(-)] >=dev-ruby/prawn-icon-3.0.0[ruby_targets_ruby30(-)] >=dev-ruby/prawn-svg-0.32.0[ruby_targets_ruby30(-)] >=dev-ruby/prawn-table-0.2.0[ruby_targets_ruby30(-)] >=dev-ruby/prawn-templates-0.1.0[ruby_targets_ruby30(-)] >=dev-ruby/treetop-1.6.0[ruby_targets_ruby30(-)] ) ruby_targets_ruby30? ( dev-lang/ruby:3.0 ) ruby_targets_ruby30? ( virtual/rubygems[ruby_targets_ruby30(-)] )
-REQUIRED_USE=|| ( ruby_targets_ruby30 )
+RDEPEND=ruby_targets_ruby31? ( >=dev-ruby/asciidoctor-2.0[ruby_targets_ruby31(-)] >=dev-ruby/concurrent-ruby-1.1[ruby_targets_ruby31(-)] >=dev-ruby/matrix-0.4[ruby_targets_ruby31(-)] >=dev-ruby/prawn-2.4.0[ruby_targets_ruby31(-)] >=dev-ruby/prawn-icon-3.0.0[ruby_targets_ruby31(-)] >=dev-ruby/prawn-svg-0.32.0[ruby_targets_ruby31(-)] >=dev-ruby/prawn-table-0.2.0[ruby_targets_ruby31(-)] >=dev-ruby/prawn-templates-0.1.0[ruby_targets_ruby31(-)] >=dev-ruby/treetop-1.6.0[ruby_targets_ruby31(-)] ) ruby_targets_ruby31? ( dev-lang/ruby:3.1 ) ruby_targets_ruby31? ( virtual/rubygems[ruby_targets_ruby31(-)] )
+REQUIRED_USE=|| ( ruby_targets_ruby31 )
 RESTRICT=test !test? ( test ) !test? ( test ) !test? ( test )
 SLOT=0
 SRC_URI=https://github.com/asciidoctor/asciidoctor-pdf/archive/v2.3.4.tar.gz -> asciidoctor-pdf-2.3.4.tar.gz
 _eclasses_=multilib	c19072c3cd7ac5cb21de013f7e9832e0	toolchain-funcs	862d337d98edb576796827be2c6b11ca	ruby-utils	69e7140043885477733c347fee4a981a	ruby-ng	e7004f981e452d70374b865ccff407aa	ruby-fakegem	5f7dd7ffeaf00a781713582bd507f80b
-_md5_=7aeb84aee8c1fbdc1b05df7032c00286
+_md5_=7b0e1952908a36c6e5ccbc1583148b55

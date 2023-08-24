@@ -158,7 +158,7 @@ app-emulation/box64 0.2.2: Linux Userspace x86_64 Emulator with a twist
 app-emulation/box86 0.3.0: Linux Userspace x86 Emulator with a twist
 app-emulation/looking-glass 1_beta6 9999: A low latency KVM FrameRelay implementation for guests with VGA PCI Passthrough
 app-emulation/proton-ge-custom-bin 7.27 7.28 7.29: A fancy custom distribution of Valves Proton with various patches
-app-emulation/quickemu 3.11 4.8: Create and run optimised Windows, macOS and Linux desktop virtual machines
+app-emulation/quickemu 4.8: Create and run optimised Windows, macOS and Linux desktop virtual machines
 app-emulation/spice-html5 0.2.2 0.3.0-r1: Spice Javascript client
 app-eselect/eselect-autostart 1.0.0: Manage symlinks in $XDG_CONFIG_HOME/autostart
 app-eselect/eselect-bluespec 1.0.1: Manages the /usr/bin/bsc (bluespec) symlink
@@ -176,7 +176,7 @@ app-misc/1password-cli 2.14.0: The world’s most-loved password manager CLI
 app-misc/afc 1.1 1.2 9999: Anime File Checker, checks CRC32 contained in filenames
 app-misc/afetch 2.2.0: Simple system info written in C
 app-misc/ani-cli 4.4 9999: A cli to browse and watch anime.
-app-misc/anki-bin 2.1.65: A spaced-repetition memory training program (flash cards)
+app-misc/anki-bin 2.1.66: A spaced-repetition memory training program (flash cards)
 app-misc/apidb 5.8.0_beta 5.11.0_beta 5.13.1_beta 5.13.4_beta 5.13.6_beta: API Generator for Database access
 app-misc/aw-client 0.11.0: Client library for ActivityWatch
 app-misc/aw-core 0.11.0: Core library for ActivityWatch
@@ -602,7 +602,7 @@ dev-java/orson-charts 1.7: A fast, lightweight charts generator for the Java pla
 dev-java/orsonpdf 1.9: A fast, lightweight PDF generator for the Java platform
 dev-java/paceRegression 1.0.1: Class for building pace regression linear models and using them for prediction
 dev-lang/aldor 1.2.0_p20190730-r1: The Aldor Programming Language
-dev-lang/cc65 2.19-r2 9999: Cross-development package for 65(C)02 systems
+dev-lang/cc65 2.19-r3 9999-r1: Cross-development package for 65(C)02 systems
 dev-lang/crystal-bin 1.8.2 1.9.2: The Crystal Programming Language
 dev-lang/fbc 1.07.3 1.08.1: A free/open source, multi-platform BASIC compiler.
 dev-lang/fbc-bootstrap 1.07.3 1.08.1: Bootstrap package for dev-lang/fbc
@@ -1231,7 +1231,7 @@ dev-util/fontmake 3.5.1: Compile fonts from sources (UFO, Glyphs) to binary (Ope
 dev-util/fortls 2.13.0: Fortran Language Server (fortls)
 dev-util/fortran-test-drive 0.4.0: The simple testing framework (for Fortran)
 dev-util/fpm 0.9.0: Fortran Package Manager (fpm)
-dev-util/fypp 3.1: Fypp - Python powered Fortran preprocessor
+dev-util/fypp 3.1 3.2: Fypp - Python powered Fortran preprocessor
 dev-util/gammaray 2.11.3: High-level runtime introspection tool for Qt applications
 dev-util/gftools 0.9.21-r1: Miscellaneous tools for working with the Google Fonts collection
 dev-util/git-bug 0.7.2 9999: distributed, offline-first bug tracker
@@ -1462,7 +1462,7 @@ media-fonts/firacode-nerdfont 2.2.2 3.0.1: A free and open-source typeface for d
 media-fonts/firago 1.001: A continuation of FiraSans
 media-fonts/gohufont 2.1_p20170627: A monospace bitmap font
 media-fonts/inconsolata_dz 20201205: A beautiful sans-serif monotype font designed for code listings
-media-fonts/intel-one-mono 1.2.1: An expressive monospaced font family
+media-fonts/intel-one-mono 1.2.1 1.3.0: An expressive monospaced font family
 media-fonts/iosevka-nerdfont 2.2.2 2.3.3 3.0.1: A free and open-source typeface for developers
 media-fonts/jetbrainsmono-nerdfont 2.2.2 3.0.1: A free and open-source typeface for developers
 media-fonts/last-resort 14.000 15.000: A collection of glyphs used as the backup of "last resort" to any other font
@@ -1502,7 +1502,7 @@ media-gfx/swayimg 1.12: A lightweight image viewer for Wayland display servers
 media-gfx/ufolint 1.2.0-r1: UFO source format linter
 media-gfx/vpuppr 0.9.0 9999: VTuber application made with Godot 3.4
 media-gfx/zw3d 2022.0.3.1-r3 2023.0.3.1: CAD/CAM software for 3D design and processing
-media-gfx/zwcad 2023.23.0.3.4-r1: CAD software for 2D drawing, reviewing and printing work
+media-gfx/zwcad 2023.23.0.3.4-r2: CAD software for 2D drawing, reviewing and printing work
 media-libs/alsa-ucm-pinephone 1.2.6.3: ALSA ucm configuration files for the PinePhone (Pro)
 media-libs/alvr 15.2.1_p20210604 16.0.0: ALVR is an open source remote VR display for the Oculus Go/Quest
 media-libs/amdvlk 2023.1.1 2023.1.2 2023.1.3: AMD Open Source Driver for Vulkan
@@ -1642,7 +1642,7 @@ net-libs/udt 4.11_p20181126: UDT is a UDP based data transport protocol
 net-libs/ulfius 2.7.13: HTTP Framework for REST Applications in C
 net-libs/usockets 0.8.1_p20211023 9999: tiny eventing, networking & crypto for async applications
 net-mail/dovecot-fts-xapian 1.5.4 1.5.5 9999: Dovecot FTS plugin backed by Xapian
-net-mail/hydroxide 0.2.23 0.2.24 0.2.26 0.2.27 9999: A third-party, open-source ProtonMail CardDAV, IMAP and SMTP bridge
+net-mail/hydroxide 0.2.23 0.2.24 0.2.26 0.2.27 0.2.28 9999: A third-party, open-source ProtonMail CardDAV, IMAP and SMTP bridge
 net-mail/pop 0.2.0: Send emails from your terminal
 net-misc/FORT-validator 1.5.2 1.5.3 1.5.3_p20220607: FORT validator is an open source RPKI validator
 net-misc/can-utils 2021.08.0 2023.03 9999-r3: CAN userspace utilities and tools
@@ -1818,6 +1818,7 @@ sys-apps/fchroot 0.1.2: Funtoo's franken-chroot tool - chroot from AMD64 to ARM 
 sys-apps/fselect 0.7.9 0.8.0: Find files with SQL-like queries
 sys-apps/hex 0.3.2 0.4.0 0.4.1 0.4.2: Futuristic take on hexdump
 sys-apps/intel-cmt-cat 4.4.0: User space software for Intel(R) Resource Director Technology
+sys-apps/loclone 0.1.0: A tool for creating CoW snapshots on XFS
 sys-apps/lsplug 4: Replacement for lsusb that shows more useful info and less useless info
 sys-apps/nvimpager 0.11.0: Use nvim as a pager to view manpages, diff, etc with nvim's syntax highlighting.
 sys-apps/openSeaChest 22.07 23.03.1: SeaGate's open source harddrive control utilities
