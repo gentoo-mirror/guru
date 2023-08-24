@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit git-r3
+inherit git-r3 toolchain-funcs
 
 DESCRIPTION="Cross-development package for 65(C)02 systems"
 HOMEPAGE="https://cc65.github.io/"
@@ -13,10 +13,10 @@ LICENSE="ZLIB"
 SLOT="0"
 
 src_compile() {
-	emake PREFIX="${EPREFIX}/usr"
+	emake CC="$(tc-getCC)" AR="$(tc-getAR)" PREFIX="${EPREFIX}/usr"
 }
 
 src_install() {
-	emake DESTDIR="${D}" PREFIX="${EPREFIX}/usr" install
+	emake CC="$(tc-getCC)" AR="$(tc-getAR)" DESTDIR="${D}" PREFIX="${EPREFIX}/usr" install
 	dodoc README.md
 }
