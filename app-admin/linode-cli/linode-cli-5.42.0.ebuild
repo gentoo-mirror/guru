@@ -16,10 +16,11 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="
-	dev-python/boto3
-	dev-python/packaging
-	dev-python/pyyaml
-	dev-python/requests
-	dev-python/rich
-	<dev-python/urllib3-3
+	dev-python/boto3[${PYTHON_USEDEP}]
+	dev-python/openapi3[${PYTHON_USEDEP}]
+	dev-python/packaging[${PYTHON_USEDEP}]
+	dev-python/pyyaml[${PYTHON_USEDEP}]
+	dev-python/requests[${PYTHON_USEDEP}]
+	dev-python/rich[${PYTHON_USEDEP}]
+	<dev-python/urllib3-3[${PYTHON_USEDEP}]
 "
