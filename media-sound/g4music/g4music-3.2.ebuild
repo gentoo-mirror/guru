@@ -16,12 +16,15 @@ KEYWORDS="~amd64"
 
 IUSE="pipewire"
 
-IDEPEND=">=gui-libs/gtk-4.6
->=gui-libs/libadwaita-1
->=media-libs/gstreamer-1.20.6[introspection]
->=media-plugins/gst-plugins-taglib-1.20.6
->=dev-lang/vala-0.56.8
-pipewire? ( media-video/pipewire[gstreamer] )"
+IDEPEND="
+		>=gui-libs/gtk-4.6
+		>=gui-libs/libadwaita-1
+		>=media-libs/gstreamer-1.20.6[introspection]
+		>=media-plugins/gst-plugins-taglib-1.20.6
+		>=dev-lang/vala-0.56.8
+		>=dev-libs/appstream-glib-0.8.2
+		pipewire? ( media-video/pipewire[gstreamer] )
+"
 DEPEND=""
 RDEPEND="${DEPEND}"
 BDEPEND="$(vala_depend)"
@@ -30,6 +33,11 @@ src_prepare() {
 	default
 	vala_setup
 	xdg_environment_reset
+
+	sed -i \
+		-e '/^gnome.post_install(/,/)/d' \
+		meson.build \
+		|| die
 }
 
 pkg_postinst() {
