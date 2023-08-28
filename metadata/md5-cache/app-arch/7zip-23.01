@@ -1,0 +1,14 @@
+BDEPEND=asm? ( dev-lang/jwasm )
+DEFINED_PHASES=compile install prepare setup
+DESCRIPTION=A free file archiver for extremely high compression
+EAPI=8
+HOMEPAGE=https://www.7-zip.org/ https://sourceforge.net/projects/sevenzip/
+INHERIT=toolchain-funcs
+IUSE=asm
+KEYWORDS=~amd64
+LICENSE=LGPL-2 BSD
+RESTRICT=mirror
+SLOT=0
+SRC_URI=https://sourceforge.net/projects/sevenzip/files/7-Zip/23.01/7z2301-src.tar.xz/download -> 7zip-23.01.tar.xz
+_eclasses_=toolchain-funcs	862d337d98edb576796827be2c6b11ca	multilib	c19072c3cd7ac5cb21de013f7e9832e0
+_md5_=31e12d812560f28de6ec8929253114ae

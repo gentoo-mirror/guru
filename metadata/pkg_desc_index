@@ -85,8 +85,9 @@ app-admin/pulumi-bin 3.77.1 3.78.1: Infrastructure as code in any programming la
 app-admin/rbw 9999: unofficial bitwarden cli
 app-admin/s-tui 1.1.3-r1: Stress-Terminal UI monitoring tool
 app-admin/synadm 0.41.2 0.41.3: Command line admin tool for Synapse
-app-admin/terragrunt-bin 0.38.6 0.45.4: A thin wrapper for Terraform
+app-admin/terragrunt-bin 0.38.6 0.45.4 0.50.8: A thin wrapper for Terraform
 app-admin/zenmonitor3 2.0.0: Zen monitor is monitoring software for AMD Zen-based CPUs
+app-arch/7zip 23.01: A free file archiver for extremely high compression
 app-arch/fuse-archive 0.1.14: Read-only FUSE file system for mounting archives and compressed files
 app-arch/libarchive-qt 2.0.6-r1 2.0.7 9999: A Qt based archiving solution with libarchive backend
 app-arch/microtar 0.1.0: A lightweight tar library written in ANSI C
@@ -176,7 +177,7 @@ app-misc/1password-cli 2.14.0: The world’s most-loved password manager CLI
 app-misc/afc 1.1 1.2 9999: Anime File Checker, checks CRC32 contained in filenames
 app-misc/afetch 2.2.0: Simple system info written in C
 app-misc/ani-cli 4.4 9999: A cli to browse and watch anime.
-app-misc/anki-bin 2.1.66: A spaced-repetition memory training program (flash cards)
+app-misc/anki-bin 2.1.66-r1: A spaced-repetition memory training program (flash cards)
 app-misc/apidb 5.8.0_beta 5.11.0_beta 5.13.1_beta 5.13.4_beta 5.13.6_beta: API Generator for Database access
 app-misc/aw-client 0.11.0: Client library for ActivityWatch
 app-misc/aw-core 0.11.0: Core library for ActivityWatch
@@ -505,7 +506,7 @@ dev-cpp/coeurl 0.2.1 0.3.0: A simple async wrapper around CURL for C++
 dev-cpp/cpp-jwt 1.5_pre20220727: JSON Web Token library for C++
 dev-cpp/cpptoml 0.1.1: Header-only library for parsing TOML
 dev-cpp/dpp 10.0.23 10.0.24: Lightweight C++ Discord bot library
-dev-cpp/drogon 1.8.3 1.8.4: C++14/17 based HTTP web application framework
+dev-cpp/drogon 1.8.4 1.8.6: C++14/17 based HTTP web application framework
 dev-cpp/dtl 1.20-r1: diff template library written by C++
 dev-cpp/easyloggingpp 9.97.0 9.97.1: C++ logging library
 dev-cpp/fbthrift 2023.02.06.00: Facebook's branch of Apache Thrift, including a new C++ server
@@ -522,7 +523,7 @@ dev-cpp/qt-jdenticon 0.3.0: Qt5 / C++14 Port of Jdenticon
 dev-cpp/sprout 0_pre20190615: C++11/14 constexpr based Containers, Algorithms, Random numbers and others
 dev-cpp/std-format 0_pre20220112-r1: A simple polyfill allowing you to use std::format
 dev-cpp/tiny-dnn 1.0.0_alpha3-r2: header only, dependency-free deep learning framework in C++14
-dev-cpp/trantor 1.5.10 1.5.11: Non-blocking I/O tcp network lib based on c++14/17
+dev-cpp/trantor 1.5.11 1.5.13: Non-blocking I/O tcp network lib based on c++14/17
 dev-cpp/trompeloeil 43: Header only C++14 mocking framework
 dev-cpp/units 2.3.3: A compile-time, header-only, dimensional analysis and unit conversion library
 dev-cpp/vexcl 1.4.3-r2: VexCL - Vector expression template library for OpenCL
@@ -846,6 +847,7 @@ dev-python/SQLAlchemy-Utils 0.39.0: Various utility functions and datatypes for 
 dev-python/TakeTheTime 0.3.1: Take The Time, a super-neat Python library for timing chunks of code
 dev-python/XenAPI 2.14-r1: Xen API SDK, for communication with Citrix XenServer and Xen Cloud Platform
 dev-python/adb-shell 0.4.3: A Python implementation of ADB with shell and FileSync functionality.
+dev-python/ahocorasick 1.4.4 9999: Python module implementing Aho-Corasick algorithm
 dev-python/aiomysql 0.1.1: aiomysql is a library for accessing a MySQL database from the asyncio
 dev-python/aiopg 1.4.0: Postgres integration with asyncio
 dev-python/aiounittest 1.4.2: Test python asyncio-based code with ease
@@ -922,6 +924,7 @@ dev-python/emailthreads 0.1.3: Parses email threads into conversation trees
 dev-python/etcd3 0.12.0: Python client for the etcd API v3
 dev-python/etcd3gw 1.0.2: A python client for etcd3 grpc-gateway v3 API
 dev-python/eventlet 0.33.3: Concurrent networking library for Python
+dev-python/evernote3 1.25.14: Evernote SDK
 dev-python/exifread 3.0.0: Easy to use Python module to extract Exif metadata from tiff and jpeg files
 dev-python/factory-boy 3.2.1-r1: A versatile test fixtures replacement based on thoughtbot's factory_bot for Ruby
 dev-python/fake-useragent 1.1.2: Up to date simple useragent faker with real world database
@@ -1008,6 +1011,7 @@ dev-python/multipart 0.2.4: Multipart parser for Python 3
 dev-python/nkdfu 0.2: Python DFU tool for updating Nitrokeys' firmware
 dev-python/notion-client 2.0.0: Python client for the official Notion API
 dev-python/notofonttools 0.2.17-r1: Noto fonts support tools and scripts plus web site generation
+dev-python/oauth2 1.9: A fully tested, abstract interface to creating OAuth clients and servers.
 dev-python/olm 3.2.14-r5 3.2.15: Python bindings for dev-libs/olm
 dev-python/openapi3 1.8.1: Python OpenAPI 3 Specification client and validator
 dev-python/openstep-plist 0.3.0_p1: ASCII plist parser written in Cython
@@ -1283,7 +1287,7 @@ dev-zig/zls 0.10.0-r1 9999: The officially unofficial Ziglang language server
 games-action/ATLauncher 3.4.3.1 3.4.27.0: Minecraft launcher which integrates multiple different ModPacks
 games-action/blackvoxel 2.50 9999: Blackvoxel Video Game
 games-action/classicube 1.3.5-r1 9999: Reverse-engineered Minecraft Classic client
-games-action/ddnet 17.2 9999: DDraceNetwork, a cooperative racing mod of Teeworlds
+games-action/ddnet 17.2.1 9999: DDraceNetwork, a cooperative racing mod of Teeworlds
 games-action/netrek-brmh 2.6.0: brmh client for netrek
 games-action/netrek-cow 3.3.2: cow client for netrek
 games-action/technic-launcher 4.625 4.768: Minecraft launcher for community-made modpacks on the Technic Platform
@@ -1607,7 +1611,7 @@ net-im/discord-canary-bin 0.0.166: All-in-one voice and text chat
 net-im/discord-ptb-bin 0.0.29: All-in-one voice and text chat
 net-im/fractal 5_beta1: Matrix group messaging app
 net-im/gajim-plugins 9999: Plugins developed fro Gajim XMPP client
-net-im/go-sendxmpp 0.5.6 0.6.0: A little tool to send messages to an XMPP contact or MUC
+net-im/go-sendxmpp 0.6.0 0.6.1: A little tool to send messages to an XMPP contact or MUC
 net-im/gtkcord4 0.0.10 0.0.11: A Gtk4 Discord client in Golang
 net-im/guilded-bin 1.0.9105465: Drop Discord, get Guilded
 net-im/heisenbridge 1.14.2 1.14.5: A bouncer-style Matrix IRC bridge
