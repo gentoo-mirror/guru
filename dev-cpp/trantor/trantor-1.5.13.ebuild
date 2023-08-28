@@ -36,7 +36,7 @@ src_configure() {
 		"-DBUILD_DOC=$(usex doc)"
 		"-DBUILD_TESTING=$(usex test)"
 		"-DBUILD_C-ARES=$(usex adns)"
-		"$(cmake_use_find_package ssl OpenSSL)"
+		"-DTRANTOR_USE_TLS=$(usex ssl openssl none)"
 	)
 
 	cmake_src_configure
