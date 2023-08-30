@@ -1,0 +1,15 @@
+DEFINED_PHASES=compile configure install postinst test unpack
+DEPEND=dev-R/rlang >=dev-R/vctrs-0.2.1 test? ( dev-R/testthat ) dev-lang/R
+DESCRIPTION=A Simple S3 Class for Representing Vectors of Binary Data ('BLOBS')
+EAPI=7
+HOMEPAGE=https://cran.r-project.org/package=blob
+INHERIT=R-packages edo
+IUSE=test
+KEYWORDS=~amd64
+LICENSE=MIT
+RDEPEND=dev-lang/R
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=mirror://cran/src/contrib/blob_1.2.3.tar.gz
+_eclasses_=edo	c0eb9cbe6b0bd01fcb4918f12598a4d3	optfeature	222cb475c5a4f7ae7cfb0bf510a6fe54	toolchain-funcs	862d337d98edb576796827be2c6b11ca	multilib	c19072c3cd7ac5cb21de013f7e9832e0	R-packages	f6ee29ccbac9a48cafba2ea605976ea8
+_md5_=aa733b54a28d59158423e99cbc330a5c

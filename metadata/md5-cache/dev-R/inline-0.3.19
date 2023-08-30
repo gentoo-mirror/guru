@@ -1,0 +1,15 @@
+DEFINED_PHASES=compile configure install postinst test unpack
+DEPEND=test? ( >=dev-R/Rcpp-0.11.0 dev-R/tinytest ) dev-lang/R
+DESCRIPTION=Functions to Inline C, C++, Fortran Function Calls from R
+EAPI=7
+HOMEPAGE=https://cran.r-project.org/package=inline
+INHERIT=R-packages edo
+IUSE=test
+KEYWORDS=~amd64
+LICENSE=LGPL-2+
+RDEPEND=dev-lang/R
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=mirror://cran/src/contrib/inline_0.3.19.tar.gz
+_eclasses_=edo	c0eb9cbe6b0bd01fcb4918f12598a4d3	optfeature	222cb475c5a4f7ae7cfb0bf510a6fe54	toolchain-funcs	862d337d98edb576796827be2c6b11ca	multilib	c19072c3cd7ac5cb21de013f7e9832e0	R-packages	f6ee29ccbac9a48cafba2ea605976ea8
+_md5_=dae193de504d332d2bdf5811526a700e

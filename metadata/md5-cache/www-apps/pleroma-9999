@@ -1,4 +1,4 @@
-BDEPEND=dev-lang/erlang:= dev-lang/elixir:= dev-util/cmake >=dev-util/rebar-3.20.0-r1 dev-elixir/hex !<www-apps/pleroma-9999 !>www-apps/pleroma-9999 >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=<dev-lang/erlang-26:= <dev-lang/elixir-1.15:= dev-util/cmake >=dev-util/rebar-3.20.0-r1 dev-elixir/hex !<www-apps/pleroma-9999 !>www-apps/pleroma-9999 >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile install postinst prepare unpack
 DEPEND=sys-libs/ncurses:= sys-apps/file dev-lang/elixir dev-lang/erlang:=
 DESCRIPTION=ActivityPub social networking software compatible with other Fediverse software
@@ -11,4 +11,4 @@ RDEPEND=sys-libs/ncurses:= sys-apps/file acct-user/pleroma acct-group/pleroma de
 RESTRICT=network-sandbox
 SLOT=otp
 _eclasses_=mix	050026469a6221b06a098c663472bffd	optfeature	222cb475c5a4f7ae7cfb0bf510a6fe54	git-r3	2358a7b20091609e24bd3a83b3ac5991
-_md5_=578b10be1deee883d6e13667f61d7542
+_md5_=a8668ecedc9028654c5a796239bf2c20

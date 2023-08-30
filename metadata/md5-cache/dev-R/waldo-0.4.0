@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst unpack
+DEPEND=dev-R/cli >=dev-R/diffobj-0.3.4 dev-R/fansi dev-R/glue dev-R/rematch2 >=dev-R/rlang-1.0.0 dev-R/tibble dev-lang/R
+DESCRIPTION=Find Differences Between R Objects
+EAPI=7
+HOMEPAGE=https://cran.r-project.org/package=waldo
+INHERIT=R-packages
+KEYWORDS=~amd64
+LICENSE=MIT
+RDEPEND=dev-R/cli >=dev-R/diffobj-0.3.4 dev-R/fansi dev-R/glue dev-R/rematch2 >=dev-R/rlang-1.0.0 dev-R/tibble dev-lang/R
+SLOT=0
+SRC_URI=mirror://cran/src/contrib/waldo_0.4.0.tar.gz
+_eclasses_=edo	c0eb9cbe6b0bd01fcb4918f12598a4d3	optfeature	222cb475c5a4f7ae7cfb0bf510a6fe54	toolchain-funcs	862d337d98edb576796827be2c6b11ca	multilib	c19072c3cd7ac5cb21de013f7e9832e0	R-packages	f6ee29ccbac9a48cafba2ea605976ea8
+_md5_=0ee08e17410de838f40d52195369b835

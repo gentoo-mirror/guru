@@ -1,0 +1,15 @@
+DEFINED_PHASES=compile configure install postinst test unpack
+DEPEND=|| ( dev-R/Matrix dev-lang/R[-minimal] ) dev-R/Rcpp test? ( dev-R/tinytest ) dev-lang/R
+DESCRIPTION='Rcpp' Integration for the 'Eigen' Templated Linear Algebra Library
+EAPI=7
+HOMEPAGE=https://cran.r-project.org/package=RcppEigen
+INHERIT=R-packages edo
+IUSE=test
+KEYWORDS=~amd64
+LICENSE=GPL-2+
+RDEPEND=dev-lang/R
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=mirror://cran/src/contrib/RcppEigen_0.3.3.9.2.tar.gz
+_eclasses_=edo	c0eb9cbe6b0bd01fcb4918f12598a4d3	optfeature	222cb475c5a4f7ae7cfb0bf510a6fe54	toolchain-funcs	862d337d98edb576796827be2c6b11ca	multilib	c19072c3cd7ac5cb21de013f7e9832e0	R-packages	f6ee29ccbac9a48cafba2ea605976ea8
+_md5_=9e7f2783804e0e1e36c5a40facdfd7de
