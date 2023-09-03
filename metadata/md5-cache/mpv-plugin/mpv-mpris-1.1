@@ -1,6 +1,6 @@
 BDEPEND=virtual/pkgconfig test? ( app-misc/jq app-text/jo media-sound/playerctl || ( media-video/mpv[lua] media-video/mpv[javascript] >=media-video/mpv-0.36 ) net-misc/socat sys-apps/dbus x11-apps/xauth x11-misc/xvfb-run x11-themes/sound-theme-freedesktop )
-DEFINED_PHASES=compile install postinst prepare test
-DEPEND=dev-libs/glib:2
+DEFINED_PHASES=compile install postinst test
+DEPEND=dev-libs/glib:2 media-video/ffmpeg
 DESCRIPTION=MPRIS plugin for mpv
 EAPI=8
 HOMEPAGE=https://github.com/hoyon/mpv-mpris
@@ -8,9 +8,9 @@ INHERIT=mpv-plugin toolchain-funcs
 IUSE=test +autoload
 KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux
 LICENSE=MIT
-RDEPEND=dev-libs/glib:2 media-video/mpv:=[cplugins(+),libmpv]
+RDEPEND=dev-libs/glib:2 media-video/ffmpeg media-video/mpv:=[cplugins(+),libmpv]
 RESTRICT=!test? ( test )
 SLOT=0
-SRC_URI=https://github.com/hoyon/mpv-mpris/archive/0.9.tar.gz -> mpv-mpris-0.9.tar.gz
+SRC_URI=https://github.com/hoyon/mpv-mpris/archive/1.1.tar.gz -> mpv-mpris-1.1.tar.gz
 _eclasses_=mpv-plugin	d5b74b0d4b9aa2b088badc969f11de7a	toolchain-funcs	862d337d98edb576796827be2c6b11ca	multilib	c19072c3cd7ac5cb21de013f7e9832e0
-_md5_=4f85097378436a44eb55747657ae568d
+_md5_=95869c0243c6df80e856a8c0bf421674
