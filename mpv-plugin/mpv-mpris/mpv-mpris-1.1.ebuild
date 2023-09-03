@@ -22,6 +22,7 @@ IUSE="test"
 
 RDEPEND="
 	dev-libs/glib:2
+	media-video/ffmpeg
 "
 DEPEND="${RDEPEND}"
 # temporary dep for tests on media-video/mpv due to https://github.com/mpv-player/mpv/pull/11468
@@ -47,11 +48,6 @@ BDEPEND="
 MPV_PLUGIN_FILES=( mpris.so )
 
 RESTRICT="!test? ( test )"
-
-src_prepare() {
-	sed -e 's:-O2 ::' -i Makefile || die "sed Makefile(s) failed"
-	default
-}
 
 src_compile() {
 	tc-export CC
