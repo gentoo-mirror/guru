@@ -1,6 +1,6 @@
 BDEPEND=test? ( media-libs/libsndfile )
-DEFINED_PHASES=install prepare test
-DESCRIPTION=WAV audio loader and writer
+DEFINED_PHASES=compile install prepare test unpack
+DESCRIPTION=Single-header WAV audio loader and writer library
 EAPI=8
 HOMEPAGE=https://github.com/mackron/dr_libs/
 INHERIT=toolchain-funcs
@@ -9,6 +9,6 @@ KEYWORDS=~amd64
 LICENSE=|| ( MIT-0 public-domain )
 RESTRICT=!test? ( test )
 SLOT=0
-SRC_URI=https://raw.githubusercontent.com/mackron/dr_libs/d35a3bc5efd02455d98cbe12b94647136f09b42d/dr_wav.h -> dr_wav-0.13.32.gh.h https://raw.githubusercontent.com/mackron/dr_libs/d35a3bc5efd02455d98cbe12b94647136f09b42d/README.md -> dr_wav-0.13.32-README.md test? ( https://github.com/mackron/dr_libs/archive/d35a3bc5efd02455d98cbe12b94647136f09b42d.tar.gz -> dr_wav-0.13.32.gh.tar.gz )
+SRC_URI=!test? ( https://raw.githubusercontent.com/mackron/dr_libs/d35a3bc5efd02455d98cbe12b94647136f09b42d/dr_wav.h -> dr_wav-0.13.32.h ) test? ( https://github.com/mackron/dr_libs/archive/d35a3bc5efd02455d98cbe12b94647136f09b42d.tar.gz -> dr_wav-0.13.32.gh.tar.gz )
 _eclasses_=toolchain-funcs	862d337d98edb576796827be2c6b11ca	multilib	c19072c3cd7ac5cb21de013f7e9832e0
-_md5_=48839441540163c8cd98dce1e45b28b8
+_md5_=f2dfdbca83c990a94a5b68320810ae63

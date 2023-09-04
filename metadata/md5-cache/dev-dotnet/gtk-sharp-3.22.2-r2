@@ -1,0 +1,16 @@
+BDEPEND=>=dev-util/meson-0.62.2 >=dev-util/ninja-1.8.2 dev-util/meson-format-array
+DEFINED_PHASES=compile configure install test
+DEPEND=>=dev-libs/glib-2.32 x11-libs/gtk+:3 >=dev-lang/mono-6.12 atk? ( app-accessibility/at-spi2-core ) cairo? ( x11-libs/cairo ) gdk? ( x11-libs/gdk-pixbuf ) gtk? ( x11-libs/gtk+:3 ) pango? ( x11-libs/pango )
+DESCRIPTION=gtk bindings for mono
+EAPI=8
+HOMEPAGE=https://github.com/GLibSharp/GtkSharp
+INHERIT=meson
+IUSE=+atk +cairo +gdk +gtk +pango
+KEYWORDS=~amd64 ~arm64 ~ppc ~x86
+LICENSE=GPL-2
+RDEPEND=>=dev-libs/glib-2.32 x11-libs/gtk+:3
+REQUIRED_USE=gdk? ( atk cairo pango ) gtk? ( atk cairo gdk pango ) pango? ( cairo )
+SLOT=3
+SRC_URI=https://github.com/GLibSharp/GtkSharp/archive/refs/tags/3.22.2.tar.gz -> gtk-sharp-3.22.2.tar.gz
+_eclasses_=multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	f3010c780f65d1bb5aea15a9af1adc9c	toolchain-funcs	862d337d98edb576796827be2c6b11ca	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	59e60e9c5cbd3f214d7f1002e798b387	meson	08b7183c3f4811568ee93eb0f79a89fe
+_md5_=a87be050ad6ddfeb6a2374b94daddeaa

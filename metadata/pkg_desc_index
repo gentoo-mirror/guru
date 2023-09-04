@@ -186,6 +186,7 @@ app-misc/aw-client 0.11.0: Client library for ActivityWatch
 app-misc/aw-core 0.11.0: Core library for ActivityWatch
 app-misc/brightness-control 2.4: Qt Brightness Controller in Python
 app-misc/brightnessctl 0.5.1: A program to read and control device brightness
+app-misc/chayang 0.1.0: Gradually dim the screen.
 app-misc/cheat 4.2.3 4.3.3-r1: cheat allows you to create and view interactive cheatsheets on the command-line
 app-misc/clifm 1.8 1.11 1.12 1.13 9999: The command line file manager
 app-misc/clipboard 0.8.0 0.8.1: Cut, copy, and paste anything in your terminal
@@ -570,13 +571,13 @@ dev-crystal/webless 0.1.0: HTTP::Client for testing HTTP::Handlers directly and 
 dev-db/dbeaver-bin 23.0.0: Free universal database tool (community edition).
 dev-db/pg_repack 1.4.8: Reorganize tables in PostgreSQL databases with minimal locks
 dev-db/rum 1.3.13: RUM access method - inverted index with additional information in posting lists
-dev-dotnet/gtk-sharp 2.99.3-r3: gtk bindings for mono
+dev-dotnet/gtk-sharp 2.99.3-r3 3.22.2-r2: gtk bindings for mono
 dev-elixir/hex 1.0.1-r1: Package manager for the Erlang VM
 dev-embedded/esp-coredump 1.5.2: Utility that helps users to retrieve and analyse core dumps
-dev-embedded/esp-idf 5.1 5.1-r1: Espressif IoT Development Framework
-dev-embedded/esp-idf-kconfig 1.1.0: Kconfig tooling for esp-idf
+dev-embedded/esp-idf 5.1 5.1-r1 5.1.1: Espressif IoT Development Framework
+dev-embedded/esp-idf-kconfig 1.1.0 1.2.0: Kconfig tooling for esp-idf
 dev-embedded/esp-idf-monitor 1.1.1: Python object-oriented database
-dev-embedded/esp-idf-size 0.3.1: Firmware size analysis for ESP-IDF
+dev-embedded/esp-idf-size 0.3.1 0.4.2: Firmware size analysis for ESP-IDF
 dev-embedded/etlcpp 20.35.8: A C++ template library for embedded applications
 dev-embedded/idf-component-manager 1.3.1: Tool for installing ESP-IDF components
 dev-embedded/mv88e6xxx-dump 0.2.0_pre20210327: Dump information about Marvell mv88e6xxx Ethernet switches
@@ -1516,7 +1517,9 @@ media-gfx/zwcad 2023.23.0.3.4-r2: CAD software for 2D drawing, reviewing and pri
 media-libs/alsa-ucm-pinephone 1.2.6.3: ALSA ucm configuration files for the PinePhone (Pro)
 media-libs/alvr 15.2.1_p20210604 16.0.0: ALVR is an open source remote VR display for the Oculus Go/Quest
 media-libs/amdvlk 2023.1.1 2023.1.2 2023.1.3: AMD Open Source Driver for Vulkan
-media-libs/dr_wav 0.13.32: WAV audio loader and writer
+media-libs/dr_flac 0.12.41: Single-header FLAC audio decoder library
+media-libs/dr_mp3 0.6.37: Single-header MP3 audio decoder library
+media-libs/dr_wav 0.13.32: Single-header WAV audio loader and writer library
 media-libs/gl4es 9999: OpenGL 2.1/1.5 to GL ES 2.0/1.1 translation library
 media-libs/glee 5.4.0: OpenGL Easy Extension library
 media-libs/grok 9.7.6: World's Leading Open Source JPEG 2000 Codec
@@ -1541,8 +1544,7 @@ media-sound/amberol 0.9.2 0.10.3: Simple GUI Music Player
 media-sound/callaudiod 0.1.7 0.1.9: Call audio routing daemon
 media-sound/drumgizmo 0.9.20 9999: Cross-platform drum plugin and stand-alone application
 media-sound/dzr 230730: DZR: the command line deezer.com player
-media-sound/g4music 3.2: A GTK4 music player
-media-sound/helvum 0.4.0 0.4.1: A GTK patchbay for pipewire
+media-sound/g4music 3.2 3.3: A GTK4 music player
 media-sound/hushboard 0.0_pre20220518 9999: Mutes your microphone while you are typing
 media-sound/ibniz 1.18-r1: virtual machine designed for extremely compact low-level audiovisual programs
 media-sound/jacktrip 1.7.1-r1: Send JACK audio over a network
@@ -1560,7 +1562,6 @@ media-sound/opensoundmeter 1.2.1 1.2.2 1.2.2_p20230104: FFT based application fo
 media-sound/pianobooster 1.0.0: A MIDI player/game that displays notes and teaches you how to play the piano
 media-sound/pulseaudio-virtualmic 0.1 9999: Use any offline or online media file or stream as a PulseAudio source
 media-sound/qloud 1.4.2: Tool to measure loudspeaker frequency and step responses and distortions
-media-sound/qpwgraph 0.4.4 9999: PipeWire Graph Qt GUI Interface
 media-sound/spotify-adblock 1.0.1 1.0.2: Adblocker for Spotify
 media-sound/spotifyd 0.3.5: A Spotify daemon
 media-sound/tavu 9999: Terminal-based ALSA VU-meter with peaking
@@ -1637,7 +1638,8 @@ net-im/ruqola 1.3.1: Rocket.Chat client for the KDE desktop
 net-im/session-desktop-bin 1.10.8: Session Desktop - Onion routing based messenger
 net-im/teams-for-linux 1.3.1: Unofficial Microsoft Teams client for Linux. Binary precompiled version.
 net-im/whatsapp-for-linux 1.5.3 1.6.2: An unofficial WhatsApp desktop application for Linux
-net-irc/catgirl 2.0a 2.1: TLS-only terminal IRC client
+net-irc/catgirl 2.0a 2.1 2.2: TLS-only terminal IRC client
+net-irc/litterbox 1.9: TLS-only IRC logger
 net-irc/pounce 3.0 3.1: Multi-client, TLS-only IRC bouncer
 net-irc/srain 1.4.0: Modern, beautiful IRC client written in GTK+ 3
 net-irc/tiny 0.10.0: An IRC client
@@ -1919,7 +1921,7 @@ sys-fs/gdu 5.13.2 5.14.0: Disk usage analyzer with console interface written in 
 sys-fs/gfs2-utils 3.4.1: Shared-disk cluster file system
 sys-fs/ntfs2btrfs 20230501: Conversion tool from NTFS to Btrfs
 sys-fs/ufiformat 0.9.9: USB Floppy Disk formatting tool
-sys-kernel/dkms 2.8.4 3.0.10: Dynamic Kernel Module Support
+sys-kernel/dkms 2.8.4 3.0.10 3.0.11: Dynamic Kernel Module Support
 sys-kernel/dpdk-kmod 21.11.1 22.07 23.03: DPDK Kernel Nic Interface module
 sys-kernel/modprobed-db 2.46: This utility tracks modules loaded by the kernel, for localmodconfig
 sys-kernel/msr-safe 1.6.0: Allows safer access to model specific registers (MSRs)
