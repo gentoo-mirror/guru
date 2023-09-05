@@ -201,6 +201,7 @@ app-misc/far2l 2.3.2_alpha 2.4.0_beta 9999: Linux port of FAR Manager v2
 app-misc/fetsh 1.8 1.9 9999: A fetch written in POSIX shell without any external commands
 app-misc/fff 2.2: A simple file manager written in bash
 app-misc/ghq 1.1.0 1.1.5: Remote repository management made easy
+app-misc/github-desktop-bin 3.3.1_rc1: Linux fork of GitHub Desktop
 app-misc/glow 1.4.1 1.5.1: Render markdown on the CLI, with pizzazz!
 app-misc/gopsuinfo 0.1.5: A gopsutil-based command to display system usage info as text
 app-misc/grit 0.3.0: An personal task manager that represents tasks as multitree nodes
@@ -236,7 +237,7 @@ app-misc/tty-share-bin 2.4.0: Screen sharing for terminal: ASCII in browser or t
 app-misc/twertlefetch 1.1.0: system fetch written in rust
 app-misc/ufetch 0.1 0.2 9999: Tiny system info for Unix-like operating systems
 app-misc/uwufetch 2.0: A meme system info tool for Linux
-app-misc/vocabsieve 0.10.1: A simple, effective tool for language learning
+app-misc/vocabsieve 0.10.2: A simple, effective tool for language learning
 app-misc/vrms-gentoo 0_pre20201102: vrms clone for Gentoo Linux
 app-misc/walld 1.4.4: A Wallpaper daemon
 app-misc/watchexec 1.21.1 1.22.3 1.23.0: Executes commands in response to file modifications
@@ -573,13 +574,13 @@ dev-db/pg_repack 1.4.8: Reorganize tables in PostgreSQL databases with minimal l
 dev-db/rum 1.3.13: RUM access method - inverted index with additional information in posting lists
 dev-dotnet/gtk-sharp 2.99.3-r3 3.22.2-r2: gtk bindings for mono
 dev-elixir/hex 1.0.1-r1: Package manager for the Erlang VM
-dev-embedded/esp-coredump 1.5.2: Utility that helps users to retrieve and analyse core dumps
+dev-embedded/esp-coredump 1.5.2 1.7.0: Utility that helps users to retrieve and analyse core dumps
 dev-embedded/esp-idf 5.1 5.1-r1 5.1.1: Espressif IoT Development Framework
 dev-embedded/esp-idf-kconfig 1.1.0 1.2.0: Kconfig tooling for esp-idf
-dev-embedded/esp-idf-monitor 1.1.1: Python object-oriented database
+dev-embedded/esp-idf-monitor 1.1.1 1.1.4: Python object-oriented database
 dev-embedded/esp-idf-size 0.3.1 0.4.2: Firmware size analysis for ESP-IDF
 dev-embedded/etlcpp 20.35.8: A C++ template library for embedded applications
-dev-embedded/idf-component-manager 1.3.1: Tool for installing ESP-IDF components
+dev-embedded/idf-component-manager 1.3.1 1.3.2: Tool for installing ESP-IDF components
 dev-embedded/mv88e6xxx-dump 0.2.0_pre20210327: Dump information about Marvell mv88e6xxx Ethernet switches
 dev-embedded/qdl 1.0 9999: Tool to communicate with Qualcomm System On a Chip bootroms
 dev-embedded/rauc 1.10.1: Lightweight update client that runs on your Embedded Linux device
@@ -887,6 +888,7 @@ dev-python/browserstack-local-python 1.2.3: Python bindings for BrowserStack Loc
 dev-python/bson 0.5.10: Independent BSON codec for Python that doesn't depend on MongoDB
 dev-python/bump2version 1.0.1: Version-bump your software with a single command!
 dev-python/bumpfontversion 0.4.1: Bumps the version of a font source file
+dev-python/cassowary 0.6: Run Windows Applications on Linux as if they are native (Using a VM and FreeRDP)
 dev-python/celery 5.3.0_beta2: Asynchronous task queue/job queue based on distributed message passing
 dev-python/cffsubr 0.2.9_p1: Standalone CFF subroutinizer based on AFDKO tx tool
 dev-python/click-command-tree 1.1.1: click plugin to show the command tree of your CLI
@@ -953,6 +955,7 @@ dev-python/gemcall 0.9.1: A library and CLI tool for making gemini requests
 dev-python/gflanguages 0.4.0-r1: A python API for evaluating language support in the Google Fonts collection
 dev-python/github-sublee-glicko2 0_pre20191010-r1: An implementation of the Glicko-2 rating system for Python
 dev-python/glcontext 2.4.0: Modern OpenGL binding for python
+dev-python/glfw 2.6.2: Python bindings for GLFW
 dev-python/glicko2 2.0.0-r2: glicko2 implementation in python
 dev-python/glyphsLib 6.2.2: A bridge from Glyphs source files (.glyphs) to UFOs
 dev-python/glyphsets 0.5.4-r1: A python API for evaluating coverage of glyph sets in font projects
@@ -979,6 +982,7 @@ dev-python/hyperglot 0.4.4: Detect language support for font binaries
 dev-python/hypothesmith 0.2.0: Hypothesis strategies for generating Python programs
 dev-python/i3ipc 2.2.1 2.2.1-r1: An improved Python library to control i3wm and sway.
 dev-python/iOSbackup 0.9.925: Reads and extracts files from a password-encrypted iOS backup
+dev-python/imgui 2.0.0: Cython-based Python bindings for dear imgui
 dev-python/inscriptis 2.3.1 2.3.2: HTML to text converter
 dev-python/invoke 2.0.0: Pythonic task execution
 dev-python/isosurfaces 0.1.0: Construct isolines/isosurfaces of a 2D/3D scalar field defined by a function
@@ -1065,8 +1069,12 @@ dev-python/pymorphy2 0.9.1: Morphological analyzer (POS tagger + inflection engi
 dev-python/pymorphy2-dicts 2.4.393442.3710985: Russian dictionary for PyMorphy2
 dev-python/pymorphy2-dicts-ru 2.4.417127.4579844: Russian dictionary for PyMorphy2
 dev-python/pymorphy2-dicts-uk 2.4.1.1.1460299261: Ukrainian dictionary for PyMorphy2
+dev-python/pymorphy3 1.2.0: Morphological analyzer (POS tagger + inflection engine) for Russian language.
+dev-python/pymorphy3-dicts-ru 2.4.417150.4580142: Russian dictionary for PyMorphy3
+dev-python/pymorphy3-dicts-uk 2.4.1.1.1663094765: Ukrainian dictionary for PyMorphy3
 dev-python/pynmea2 1.18.0: Python library for the NMEA 0183 protcol
 dev-python/pyodbc 4.0.35: Python ODBC library
+dev-python/pypandoc 1.4 1.11: Pypandoc provides a thin wrapper for pandoc, a universal document converter
 dev-python/pyqtdarktheme 2.1.0: A flat dark theme for PySide and PyQt.
 dev-python/pyrr 0.10.3: A cross platform utility library for ModernGL
 dev-python/pysaml2 7.4.2: Python implementation of SAML Version 2 Standard
@@ -1707,7 +1715,7 @@ net-p2p/feather 2.4.5 2.4.9 9999: A free, open-source Monero wallet
 net-p2p/fragments 2.1-r1 2.1.1: Fragments is an easy to use BitTorrent client
 net-p2p/ipfs-cluster 1.0.1 1.0.2: Pinset orchestration for IPFS
 net-p2p/monero 0.17.2.0 0.17.2.3 0.17.3.0 0.17.3.2 0.18.1.0 0.18.1.1 0.18.1.2 0.18.2.0 0.18.2.2 9999: The secure, private, untraceable cryptocurrency
-net-p2p/p2pool 2.7 3.0 3.1 3.2 3.3 3.4 3.5 3.6 3.6.1 9999: Decentralized pool for Monero mining
+net-p2p/p2pool 2.7 3.0 3.1 3.2 3.3 3.4 3.5 3.6.2 9999: Decentralized pool for Monero mining
 net-p2p/popura 0.4.6 9999: Popura: alternative Yggdrasil network client
 net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
 net-p2p/yggdrasil-go 0.4.7 9999: An experiment in scalable routing as an encrypted IPv6 overlay network
@@ -1716,7 +1724,7 @@ net-proxy/snowflake 2.5.1: Pluggable Transport using WebRTC, inspired by Flashpr
 net-voip/discover-overlay 0.4.5 0.5.4 0.6.5: Yet another Discord overlay for Linux written in Python using GTK3
 net-voip/gnome-calls 44.1 44.2: Phone dialer and call handler
 net-voip/vvmd 0.8: vvmd is a lower level daemon that retrieves Visual Voicemail
-net-vpn/cloudflare-warp 2023.3.470: Cloudflare Warp Client
+net-vpn/cloudflare-warp 2023.3.470 2023.7.40: Cloudflare Warp Client
 net-vpn/fastd 22: A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
 net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that require SAML
 net-wireless/rtl8192eu 0_pre20230613: Realtek 8192EU driver module for Linux kernel
@@ -1985,7 +1993,7 @@ www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and comm
 www-misc/gorss 0.3: Go Terminal Feed Reader
 www-misc/waldl 0.0.1_pre20211112: Browse and download wallpapers from wallhaven.cc using sxiv
 www-misc/wyebadblock 1.0.0: An adblock extension for wyeb, also webkit2gtk browsers.
-www-plugins/firefoxpwa 2.5.0 2.6.2: The native part of the PWAsForFirefox project
+www-plugins/firefoxpwa 2.5.0 2.6.2 2.7.3: The native part of the PWAsForFirefox project
 www-servers/hinsightd 0.9.17 9999: hinsightd a http/1.1 webserver with (hopefully) minimal goals
 www-servers/quark 9999: A small, GET-only static HTTP server
 x11-apps/lightdm-gtk-greeter-settings 1.2.2-r1: Configuration tool for the LightDM GTK Greeter

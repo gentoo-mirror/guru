@@ -219,6 +219,12 @@ dev-ml/vchan:xen - Xen support
 dev-ml/vhd:lwt - provide an Lwt compatible interface to the library
 dev-ml/xen-evtchn:unix - Xen event channel interface for Linux
 dev-ml/xen-gnt:unix - build the userspace library
+dev-python/imgui:allegro - Enable allegro backend and renderer
+dev-python/imgui:glfw - Enable glfw backend
+dev-python/imgui:glut - Enable glut backen
+dev-python/imgui:opengl - Enable opengl renderer
+dev-python/imgui:sdl - Enable sdl backend
+dev-python/imgui:vulkan - Enable vulkan renderer
 dev-python/python-socketio:asyncio-client - Add async websocket client
 dev-python/python-socketio:client - Add websocket client
 dev-util/FoBiS:graphviz - Add support of generation of a dependencies graph
@@ -989,6 +995,7 @@ sys-process/nq:tq - Install tq, a tmux & screen wrapper
 www-apps/forgejo:acct - User and group management via acct-*/git packages
 www-client/badwolf:webkit41 - Use net-libs/webkit-gtk:4.1 (uses libsoup3 and so allows HTTP/2) instead of net-libs/webkit-gtk:4
 www-client/vimb:adblock - Use www-misc/wyebadblock for adblocking
+www-plugins/firefoxpwa:custom-cflags - Disable the default use of clang and lld with LTO and all other manipulations of CFLAGS. Disabling this may cause the build and/or LTO to fail.
 www-plugins/firefoxpwa:lto - Enable Link Time Optimization (LTO)
 www-servers/hinsightd:cgi - Enable old/slow cgi support (legacy should not be used)
 www-servers/hinsightd:fcgi - Enable fast cgi support
