@@ -32,10 +32,10 @@ src_prepare() {
 	default
 
 	# Drop 'fatal' warning on version detection via git command:
-	sed -i -e "/^GQ_SHA/d" \
-		-e "/VERSION =/s| \$\$system(git rev-parse --short HEAD)||" "${MY_PN}".pro || die
-
-	sed -i -e "s/Office/Development/" "${S}/src/resources/${PN}.desktop" || die
+	sed -i -e '/message("Submodule update:")/d' \
+		-e "/system(git submodule update --init --recursive)/d" \
+		-e "/GQ_SHA =/s| \$\$system(git rev-parse --short HEAD)||" \
+		-e "/VERSION =/s| \$\$system(git describe --abbrev=0)||" "${MY_PN}".pro || die
 }
 
 src_configure() {
