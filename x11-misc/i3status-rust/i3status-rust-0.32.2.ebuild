@@ -57,7 +57,6 @@ CRATES="
 	core-foundation-sys@0.8.4
 	core-foundation@0.9.3
 	cpufeatures@0.2.9
-	crossbeam-channel@0.5.8
 	crossbeam-utils@0.8.16
 	crypto-common@0.1.6
 	darling@0.10.2
@@ -340,7 +339,7 @@ DEPEND="dev-libs/openssl:=
 	notmuch? ( net-mail/notmuch:= )
 	pulseaudio? ( media-libs/libpulse )"
 RDEPEND="${DEPEND}"
-BDEPEND=">=virtual/rust-1.70.0"
+BDEPEND=">=virtual/rust-1.72.0"
 
 QA_FLAGS_IGNORED="usr/bin/i3status-rs"
 
