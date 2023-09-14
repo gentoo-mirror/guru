@@ -939,7 +939,7 @@ dev-python/exifread 3.0.0: Easy to use Python module to extract Exif metadata fr
 dev-python/factory-boy 3.2.1-r1: A versatile test fixtures replacement based on thoughtbot's factory_bot for Ruby
 dev-python/fake-useragent 1.1.2: Up to date simple useragent faker with real world database
 dev-python/fastavro 1.7.0: Fast read/write of AVRO files
-dev-python/faust-cchardet 2.1.18: universal character encoding detector
+dev-python/faust-cchardet 2.1.18 2.1.19: universal character encoding detector
 dev-python/filecheck 0.0.22: Python port of LLVM's FileCheck, flexible pattern matching file verifier
 dev-python/flask-restx 0.5.1: Framework API development with Flask
 dev-python/font-v 2.1.0-r1: Font version reporting and modification tool
@@ -1340,7 +1340,7 @@ games-misc/bonsai 0_pre20210201: bonsai tree generator written in bash
 games-misc/cbonsai 1.3.1-r1: grow bonsai trees in your terminal
 games-misc/gay 1.2.8 1.2.9: Colour your text / terminal to be more gay
 games-misc/varlpenis 3.0.2: Generates ASCII-art penis of arbitrary length
-games-puzzle/aaaaxy 1.3.436 1.4.8 1.4.18: A nonlinear 2D puzzle platformer taking place in impossible spaces
+games-puzzle/aaaaxy 1.3.436 1.4.18 1.4.45: A nonlinear 2D puzzle platformer taking place in impossible spaces
 games-puzzle/atris 1.0.7: Alizarin tetris
 games-puzzle/baba-is-you 474: Puzzle game where you can change the rules by which you play
 games-puzzle/generic-tetromino-game 9999: Faithful clone of NES Tetris but with new features and mods API
@@ -1411,7 +1411,7 @@ gui-apps/hyprland-plugins 0.27.2: A blazing fast wayland wallpaper utility
 gui-apps/hyprpaper 0.3.0 0.4.0: A blazing fast wayland wallpaper utility
 gui-apps/hyprpicker 0.1.0-r1 0.1.1: A wlroots-compatible Wayland color picker that does not suck
 gui-apps/intiface-central-bin 2.4.0 2.4.3: Buttplug frontend application
-gui-apps/lemurs 0.3.1: A TUI Display/Login Manager
+gui-apps/lemurs 0.3.1 0.3.1-r1: A TUI Display/Login Manager
 gui-apps/meteo-qt 3.3: A system tray application for the weather status
 gui-apps/mpvpaper 1.2 1.3 9999: A video wallpaper program for wlroots based wayland compositors
 gui-apps/nwg-bar 0.1.3: GTK3-based button bar for wlroots-based compositors
@@ -1572,7 +1572,7 @@ media-sound/opensoundmeter 1.2.1 1.2.2 1.2.2_p20230104: FFT based application fo
 media-sound/pianobooster 1.0.0: A MIDI player/game that displays notes and teaches you how to play the piano
 media-sound/pulseaudio-virtualmic 0.1 9999: Use any offline or online media file or stream as a PulseAudio source
 media-sound/qloud 1.4.2: Tool to measure loudspeaker frequency and step responses and distortions
-media-sound/spotify-adblock 1.0.1 1.0.2: Adblocker for Spotify
+media-sound/spotify-adblock 1.0.1 1.0.2 1.0.3: Adblocker for Spotify
 media-sound/spotifyd 0.3.5: A Spotify daemon
 media-sound/tavu 9999: Terminal-based ALSA VU-meter with peaking
 media-sound/yewtube 2.10.4 9999: Terminal-based YouTube player and downloader
@@ -1582,7 +1582,7 @@ media-video/ciano 0.2.4-r1: A multimedia file converter focused on simplicity
 media-video/ffsubsync 0.4.25: Automagically syncronize subtitles with video
 media-video/kikoplay 0.9.3 9999: KikoPlay is a full-featured danmu player
 media-video/kooha 2.2.3: GTK4 screen recorder for Wayland
-media-video/lossless-cut 3.54.0: Lossless video/audio editing: export media without reencoding, powered by ffmpeg
+media-video/lossless-cut 3.54.0 3.54.0-r1 3.56.0: Lossless video/audio editing: export media without reencoding, powered by ffmpeg
 media-video/manimgl 1.6.1: Animation engine for explanatory math videos
 media-video/megapixels 1.4.3: A GTK3 camera application that knows how to deal with the media request api
 media-video/obs-vaapi 0.3.1 0.4.0 9999: OBS Studio VAAPI support via GStreamer
@@ -1596,7 +1596,7 @@ media-video/uxplay 1.65.3: AirPlay Unix mirroring server
 media-video/wlrobs 1.0 9999: OBS plugin that allows you to screen capture on wlroots based compositors
 media-video/ytarchive 0.3.2: Youtube livestream downloader
 mpv-plugin/SmartCopyPaste 3.1: Gives mpv the capability to copy and paste while being smart and customizable
-mpv-plugin/autoload 0.35.1: Loads playlist entries before and after the the currently played file
+mpv-plugin/autoload 0.35.1 0.36.0: Loads playlist entries before and after the the currently played file
 mpv-plugin/autosubsync-mpv 20220402: Automatic subtitle synchronization script for mpv media player
 mpv-plugin/kde-do-not-disturb 20230110: Disable the notifications while mpv is running
 mpv-plugin/kde-night-color 20230110: Disable Night Color while mpv is running
@@ -1850,6 +1850,7 @@ sys-apps/lsplug 4: Replacement for lsusb that shows more useful info and less us
 sys-apps/nvimpager 0.11.0: Use nvim as a pager to view manpages, diff, etc with nvim's syntax highlighting.
 sys-apps/openSeaChest 22.07 23.03.1: SeaGate's open source harddrive control utilities
 sys-apps/ov 0.11.1 0.11.2: Feature-rich terminal pager
+sys-apps/pnpm-bin 8.7.5: Fast, disk space efficient package manager, alternative to npm and yarn
 sys-apps/qemu-openrc 0.10.0 9999: OpenRC init script for QEMU/KVM
 sys-apps/qjournalctl 0.6.2: Qt-based GUI for systemd's journalctl command
 sys-apps/sampler 1.1.0: visualizer for shell commands, executions and alerting
@@ -1991,7 +1992,7 @@ www-apps/uwebsockets 20.11.0 20.14.0 9999: ultra fast, simple, secure & standard
 www-apps/whoogle-search 0.8.3: A self-hosted, ad-free, privacy-respecting metasearch engine
 www-client/badwolf 1.2.2 9999: Minimalist and privacy-oriented WebKitGTK+ browser
 www-client/browsh 1.6.4_p1: A fully-modern text-based browser, rendering to TTY and browsers
-www-client/nyxt 3.6.0 3.6.1 9999: Nyxt - the hacker's power-browser
+www-client/nyxt 3.6.1 3.7.0 9999: Nyxt - the hacker's power-browser
 www-client/vimb 3.6.0 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
 www-client/woob 3.1-r1 9999: Web Outside Of Browsers (core, site modules and applications)
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits
@@ -2017,7 +2018,7 @@ x11-misc/greenclip-bin 4.2: Simple clipboard manager to be integrated with rofi
 x11-misc/gromit-mpx 1.4.3 9999: Gromit-MPX is a multi-pointer GTK3 port of the Gromit desktop annotation tool
 x11-misc/i3lock-color 2.13.2 2.13.4 9999: The world's most popular non-default computer lockscreen
 x11-misc/i3lock-fancy-rapid 0.0.0_pre20201109-r1 0.0.0_pre20210421: A faster implementation of i3lock-fancy
-x11-misc/i3status-rust 0.32.1: A feature-rich and resource-friendly replacement for i3status, written in Rust.
+x11-misc/i3status-rust 0.32.2: A feature-rich and resource-friendly replacement for i3status, written in Rust.
 x11-misc/input-leap 9999: Share a mouse and keyboard between computers (fork of Barrier)
 x11-misc/ksnip 1.9.2 1.10.0-r1 1.10.1: Ksnip is a Qt based cross-platform screenshot tool
 x11-misc/leftwm-theme 0.1.2_rc1: A theme mangager for LeftWM
