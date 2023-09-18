@@ -19,8 +19,10 @@ KEYWORDS="~amd64"
 RDEPEND="
 	acct-user/${PN}
 	dev-libs/olm
+	dev-util/lottieconverter
 "
 DEPEND="${RDEPEND}"
+BDEPEND=">=dev-lang/go-1.20.0"
 
 src_compile() {
 	ego build

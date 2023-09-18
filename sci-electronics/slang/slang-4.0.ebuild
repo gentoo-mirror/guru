@@ -41,6 +41,10 @@ DEPEND="
 	${RDEPEND}
 "
 
+PATCHES=(
+	"${FILESDIR}/${PN}-4.0-fix-gentoo-libfmt-depend.patch"
+)
+
 src_configure() {
 	python_setup
 	local mycmakeargs=(
