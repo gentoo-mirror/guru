@@ -1,15 +1,15 @@
-BDEPEND=>=dev-lang/go-1.18 app-arch/unzip virtual/pkgconfig
+BDEPEND=>=dev-lang/go-1.20.0 >=dev-lang/go-1.18 app-arch/unzip virtual/pkgconfig
 DEFINED_PHASES=compile config install postinst unpack
-DEPEND=acct-user/mautrix-discord dev-libs/olm
+DEPEND=acct-user/mautrix-discord dev-libs/olm dev-util/lottieconverter
 DESCRIPTION=A Matrix-Discord puppeting bridge
 EAPI=8
 HOMEPAGE=https://github.com/mautrix/discord
 INHERIT=go-module systemd
 KEYWORDS=~amd64
 LICENSE=AGPL-3
-RDEPEND=acct-user/mautrix-discord dev-libs/olm
+RDEPEND=acct-user/mautrix-discord dev-libs/olm dev-util/lottieconverter
 RESTRICT=strip
 SLOT=0
-SRC_URI=https://github.com/mautrix/discord/archive/v0.5.0.tar.gz -> mautrix-discord-0.5.0.gh.tar.gz https://jroy.ca/dist/mautrix-discord-0.5.0.tar.xz
+SRC_URI=https://github.com/mautrix/discord/archive/v0.6.2.tar.gz -> mautrix-discord-0.6.2.gh.tar.gz https://jroy.ca/dist/mautrix-discord-0.6.2.tar.xz
 _eclasses_=multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	862d337d98edb576796827be2c6b11ca	multilib	c19072c3cd7ac5cb21de013f7e9832e0	go-module	8624eede24936fd7666e5298e5332f22	systemd	5f4bb0758df2e483babf68cd517078ca
-_md5_=eac3aa5fc85e7bb2c7ddbe03bcb329c3
+_md5_=9b98129eaa3bb201312e7a42b557722e

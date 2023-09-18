@@ -87,7 +87,7 @@ app-admin/pass-update 2.1: pass extension that provides an easy flow for updatin
 app-admin/pulumi-bin 3.80.0 3.81.0: Infrastructure as code in any programming language
 app-admin/rbw 9999: unofficial bitwarden cli
 app-admin/s-tui 1.1.3-r1: Stress-Terminal UI monitoring tool
-app-admin/synadm 0.42 0.43: Command line admin tool for Synapse
+app-admin/synadm 0.43 0.43.1: Command line admin tool for Synapse
 app-admin/terragrunt-bin 0.38.6 0.45.4 0.50.8: A thin wrapper for Terraform
 app-admin/zenmonitor3 2.0.0: Zen monitor is monitoring software for AMD Zen-based CPUs
 app-arch/7zip 23.01: A free file archiver for extremely high compression
@@ -120,7 +120,6 @@ app-crypt/pinentry-bemenu 0.11.0 0.12.0: Pinentry based on bemenu
 app-crypt/reop 2.1.1: reasonable expectation of privacy
 app-crypt/tang 13 14: Tang binding daemon
 app-crypt/tomb 2.9-r6: Tomb :: File Encryption on GNU/Linux
-app-crypt/tpm2-openssl 1.1.1: OpenSSL Provider for TPM2 integration
 app-crypt/uacme 1.7.1: ACMEv2 client written in plain C with minimal dependencies
 app-dicts/canna-2ch 20040519: Japanese Canna dictionary for 2channelers
 app-dicts/canna-bonobo 20021025: supporting dictionaries for Canna
@@ -189,7 +188,7 @@ app-misc/brightness-control 2.4: Qt Brightness Controller in Python
 app-misc/brightnessctl 0.5.1: A program to read and control device brightness
 app-misc/chayang 0.1.0: Gradually dim the screen.
 app-misc/cheat 4.2.3 4.3.3-r1: cheat allows you to create and view interactive cheatsheets on the command-line
-app-misc/clifm 1.8 1.11 1.12 1.13 9999: The command line file manager
+app-misc/clifm 1.8 1.11 1.13 1.14 9999: The command line file manager
 app-misc/clipboard 0.8.0 0.8.1: Cut, copy, and paste anything in your terminal
 app-misc/corectrl 1.3.5 9999: Core control application
 app-misc/cpufetch 1.01 1.02 1.04: Simplistic yet fancy CPU architecture fetching tool
@@ -238,7 +237,7 @@ app-misc/termdown 1.18.0: Countdown timer and stopwatch in your terminal
 app-misc/tty-share-bin 2.4.0: Screen sharing for terminal: ASCII in browser or terminal, without pixels moving
 app-misc/twertlefetch 1.1.0: system fetch written in rust
 app-misc/ufetch 0.1 0.2 9999: Tiny system info for Unix-like operating systems
-app-misc/uwufetch 2.0: A meme system info tool for Linux
+app-misc/uwufetch 2.0 2.1: A meme system info tool for Linux
 app-misc/vocabsieve 0.10.2: A simple, effective tool for language learning
 app-misc/vrms-gentoo 0_pre20201102: vrms clone for Gentoo Linux
 app-misc/walld 1.4.4: A Wallpaper daemon
@@ -513,7 +512,7 @@ dev-cpp/blurhash 0.2.0: C++ blurhash encoder/decoder
 dev-cpp/coeurl 0.2.1 0.3.0: A simple async wrapper around CURL for C++
 dev-cpp/cpp-jwt 1.5_pre20220727: JSON Web Token library for C++
 dev-cpp/cpptoml 0.1.1: Header-only library for parsing TOML
-dev-cpp/dpp 10.0.23 10.0.24: Lightweight C++ Discord bot library
+dev-cpp/dpp 10.0.23 10.0.24 10.0.25: Lightweight C++ Discord bot library
 dev-cpp/drogon 1.8.4 1.8.6: C++14/17 based HTTP web application framework
 dev-cpp/dtl 1.20-r1: diff template library written by C++
 dev-cpp/easyloggingpp 9.97.0 9.97.1: C++ logging library
@@ -993,7 +992,7 @@ dev-python/itemloaders 1.0.4 1.0.6: Library to populate items using XPath and CS
 dev-python/iuliia 0.11.5: Transliterate Cyrillic to Latin in every possible way
 dev-python/j1m-sphinxautozconfig 0.1.0: Spinx support for ZConfig
 dev-python/jinja2-cli 0.8.2: CLI for Jinja2
-dev-python/jplephem 2.18: Python version of NASA DE4xx ephemerides for Astronomical Alamanac
+dev-python/jplephem 2.18 2.19: Python version of NASA DE4xx ephemerides for Astronomical Alamanac
 dev-python/jsonpath-rw 1.4.0: A robust and significantly extended implementation of JSONPath for Python
 dev-python/jsonpath-rw-ext 1.2.2: Extensions for JSONPath RW
 dev-python/jupyter-sphinx 0.4.0: Jupyter Sphinx Extensions
@@ -1006,7 +1005,7 @@ dev-python/markdownify 0.11.6: Convert HTML to Markdown
 dev-python/marshmallow_enum 1.5.1: Enum handling for Marshmallow
 dev-python/mastodon-py 1.8.0 1.8.1: Python wrapper for the Mastodon API
 dev-python/material-color-utilities 0.1.5 9999: Python port of material-color-utilities used for Material You colors
-dev-python/mautrix 0.20.0 0.20.1: A Python 3 asyncio Matrix framework
+dev-python/mautrix 0.20.1 0.20.2: A Python 3 asyncio Matrix framework
 dev-python/minio 7.1.15 7.1.16: MinIO Client SDK for Python
 dev-python/mitype 0.2.4: Typing speed test in terminal
 dev-python/mkdocs-blog-plugin 9999: Plugin for MkDocs to keep a simple blog section inside your documentation.
@@ -1273,8 +1272,6 @@ dev-util/qshaderedit 0.1.5: Multiplatform shader editor inspired by Apple's Open
 dev-util/quilttools 0.3-r1: Mailbox to quilt series converter
 dev-util/reflex 0.3.1: A small tool to watch a directory and rerun a command when certain files change
 dev-util/reuse 2.0.0 2.1.0: A tool for compliance with the REUSE recommendations
-dev-util/rust-analyzer 20220509 20220517 20220606 20220613 20220815 20220822 99999999: An implementation of Language Server Protocol for the Rust programming language
-dev-util/rust-analyzer-bin 2021.09.06 2021.09.20: An implementation of Language Server Protocol for the Rust programming language
 dev-util/stripe-cli 9999: A command-line tool for Stripe
 dev-util/tflint-bin 0.43.0 0.46.0: A Pluggable Terraform Linter
 dev-util/tokei 12.1.1 12.1.2: Count code, quickly
@@ -1454,7 +1451,7 @@ gui-apps/wlogout 1.1.1: A wayland based logout menu
 gui-apps/wlr-randr 0.3.0 9999: xrandr clone for wlroots compositors
 gui-apps/wlsunset 0.3.0 9999: Day/night gamma adjustments for Wayland
 gui-apps/wmenu 0.1.4: dynamic menu for wlroots compositors, maintains the look and feel of dmenu
-gui-apps/wob 0.14.2: Lightweight overlay volume/backlight/progress/anything bar for Wayland
+gui-apps/wob 0.14.2 0.15.1: Lightweight overlay volume/backlight/progress/anything bar for Wayland
 gui-apps/wtype 0.4: xdotool type for wayland
 gui-apps/yambar 1.9.0 1.10.0 9999: Simplistic and highly configurable status panel for X and Wayland
 gui-libs/cubegui 4.7-r2: CUBE Uniform Behavioral Encoding GUI
@@ -1483,7 +1480,6 @@ media-fonts/firacode-nerdfont 2.2.2 3.0.1: A free and open-source typeface for d
 media-fonts/firago 1.001: A continuation of FiraSans
 media-fonts/gohufont 2.1_p20170627: A monospace bitmap font
 media-fonts/inconsolata_dz 20201205: A beautiful sans-serif monotype font designed for code listings
-media-fonts/intel-one-mono 1.2.1 1.3.0: An expressive monospaced font family
 media-fonts/iosevka-nerdfont 2.2.2 2.3.3 3.0.1: A free and open-source typeface for developers
 media-fonts/jetbrainsmono-nerdfont 2.2.2 3.0.1: A free and open-source typeface for developers
 media-fonts/last-resort 14.000 15.000: A collection of glyphs used as the backup of "last resort" to any other font
@@ -1534,7 +1530,7 @@ media-libs/gl4es 9999: OpenGL 2.1/1.5 to GL ES 2.0/1.1 translation library
 media-libs/glee 5.4.0: OpenGL Easy Extension library
 media-libs/grok 9.7.6: World's Leading Open Source JPEG 2000 Codec
 media-libs/imgui 1.81 1.83 1.87-r6: Bloat-free graphical user interface library for C++
-media-libs/libbpg 0.9.8: Better Portable Graphics reference implementation
+media-libs/libbpg 0.9.8-r1: Better Portable Graphics reference implementation
 media-libs/lodepng 20210627-r1: PNG encoder and decoder
 media-libs/monado 9999: The open source OpenXR runtime.
 media-libs/openxr-loader 1.0.20 9999: OpenXR loader
@@ -1639,7 +1635,7 @@ net-im/jitsi-meet 2022.3.1-r1: Desktop application for Jitsi Meet built with Ele
 net-im/kaidan 0.9.1: User-friendly and modern chat app for every device
 net-im/mastoposter 0.1-r1 0.2: Configurable reposter from Mastodon-compatible Fediverse servers
 net-im/matterhorn-bin 50200.13.0: Terminal based Mattermost client
-net-im/mautrix-discord 0.4.0 0.4.0-r1 0.5.0 0.5.0-r1: A Matrix-Discord puppeting bridge
+net-im/mautrix-discord 0.5.0-r1 0.6.2: A Matrix-Discord puppeting bridge
 net-im/mautrix-facebook 0.4.1 0.5.0: A Matrix-Facebook Messenger puppeting bridge
 net-im/mautrix-signal 0.4.2 0.4.3: A Matrix-Signal Messenger puppeting bridge
 net-im/mautrix-slack 0_pre20230414 0_pre20230517: A Matrix-Slack puppeting bridge based on slack-go
@@ -1679,7 +1675,7 @@ net-misc/cve-client 1.0.4 9999: CLI-based client / toolbox for CVE.org
 net-misc/eg25-manager 0.4.2: Daemon for managing the Quectel EG25 modem
 net-misc/facebook-ptp 0_pre20211123: Facebook's PTP libraries
 net-misc/fedigroup 1.0.6 1.0.8: Emulate group accounts on Mastodon/Pleroma
-net-misc/freetube-bin 0.17.1: A private YouTube desktop client
+net-misc/freetube-bin 0.17.1 0.19.0: A private YouTube desktop client
 net-misc/gdown 4.7.1: Google Drive direct download of big files
 net-misc/gemget 1.8.0: Command line downloader for the Gemini protocol
 net-misc/gemserv 0.6.5 0.6.6: A gemini Server written in rust
@@ -1706,7 +1702,7 @@ net-misc/wayback_machine_downloader 2.3.0 2.3.1: Download an entire website from
 net-misc/whatscli 1.0.6 1.0.11: A command line interface for WhatsApp
 net-misc/wsdd 0.7.0 0.7.1: A Web Service Discovery host daemon.
 net-misc/xkcd-handler 1.0.12: A handler for XKCD urls
-net-misc/xmrig-mo 6.16.2 6.16.3 6.16.4 6.16.5 6.18.0 6.18.1 6.19.0 6.19.1 6.19.2 6.19.3: MoneroOcean fork of xmrig that supports algo switching
+net-misc/xmrig-mo 6.16.2 6.16.3 6.16.4 6.16.5 6.18.0 6.18.1 6.19.0 6.19.1 6.19.2 6.19.3 6.20.0: MoneroOcean fork of xmrig that supports algo switching
 net-misc/yacy 1.924.20210209.10069: YaCy - p2p based distributed web-search engine
 net-news/comitium 1.8.1: feed aggregator for gemini supporting many formats and protocols
 net-news/communique 1.2.0: RSS Reader with cross-platform sync
@@ -1724,7 +1720,7 @@ net-p2p/popura 0.4.6 9999: Popura: alternative Yggdrasil network client
 net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
 net-p2p/yggdrasil-go 0.4.7 9999: An experiment in scalable routing as an encrypted IPv6 overlay network
 net-print/hpuld 1.00.39.15.00.23-r1: HP Unified Linux Driver (for samsung hardware)
-net-proxy/snowflake 2.5.1: Pluggable Transport using WebRTC, inspired by Flashproxy
+net-proxy/snowflake 2.6.1: Pluggable Transport using WebRTC, inspired by Flashproxy
 net-voip/discover-overlay 0.4.5 0.5.4 0.6.5: Yet another Discord overlay for Linux written in Python using GTK3
 net-voip/gnome-calls 44.1 44.2: Phone dialer and call handler
 net-voip/vvmd 0.8: vvmd is a lower level daemon that retrieves Visual Voicemail
@@ -1749,7 +1745,7 @@ sci-electronics/logic-bin 2.4.0 2.4.9: Saleae logic analyzer
 sci-electronics/lxi-tools 2.1 2.3: Tools to access devices with LXI
 sci-electronics/open_pdks 1.0.311: PDK installer for open-source EDA tools and toolchains
 sci-electronics/skywater-pdk 0.0.0_p20220424: Process design kit for usage with SkyWater Technology Foundry's 130nm node
-sci-electronics/slang 1.0 2.0-r2 3.0 9999: SystemVerilog compiler and language services
+sci-electronics/slang 1.0 2.0-r2 3.0 4.0 9999: SystemVerilog compiler and language services
 sci-electronics/svls 0.2.3: SystemVerilog language server
 sci-electronics/verible 0.0.2275 0.0.3124: SystemVerilog parser, style-linter, and formatter
 sci-electronics/verilator 4.106 5.014 9999: The fast free Verilog/SystemVerilog simulator
@@ -1819,7 +1815,7 @@ sci-mathematics/packup 0.6: PACKage Upgradability Problem solver
 sci-mathematics/pyromaths 21.8.2: Create maths exercises in LaTeX and PDF format
 sci-mathematics/qepcad 1.72b_p20220502-r2: Quantifier Elimination by Partial Cylindrical Algebraic Decomposition
 sci-mathematics/radian 0.6.3: A 21 century R console
-sci-mathematics/rstudio-desktop-bin 2022.12.0_p353: IDE for R and Python
+sci-mathematics/rstudio-desktop-bin 2022.12.0_p353 2023.06.2_p561: IDE for R and Python
 sci-mathematics/the-omega-project 2.1_p20131119: Tools from Pugh et al.'s for constraint-based compiler tools
 sci-misc/boinc-wrapper 26018: Wrapper to use non-BOINC apps with BOINC
 sci-misc/linuxcnc 9999: LinuxCNC

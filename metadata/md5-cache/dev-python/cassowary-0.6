@@ -1,4 +1,4 @@
-BDEPEND=sys-apps/kmod[tools] modules-sign? ( dev-libs/openssl virtual/pkgconfig ) python_targets_python3_10? ( dev-lang/python:3.10 ) python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 )
+BDEPEND=dev-python/setuptools dev-python/build dev-python/installer sys-apps/kmod[tools] modules-sign? ( dev-libs/openssl virtual/pkgconfig ) python_targets_python3_10? ( dev-lang/python:3.10 ) python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 )
 DEFINED_PHASES=compile configure install postinst prepare setup test
 DEPEND=net-misc/freerdp dev-python/libvirt-python dev-python/PyQt5 virtual/linux-sources
 DESCRIPTION=Run Windows Applications on Linux as if they are native (Using a VM and FreeRDP)
@@ -14,4 +14,4 @@ REQUIRED_USE=|| ( python_targets_python3_10 python_targets_python3_11 python_tar
 SLOT=0
 SRC_URI=https://github.com/casualsnek/cassowary/archive/refs/tags/0.6.tar.gz -> cassowary-0.6.tar.gz
 _eclasses_=edo	c0eb9cbe6b0bd01fcb4918f12598a4d3	toolchain-funcs	862d337d98edb576796827be2c6b11ca	multilib	c19072c3cd7ac5cb21de013f7e9832e0	linux-info	c4f1201b96a8a2c1f3b86cc8b2c71c91	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	linux-mod-r1	3adf4125a2c5f60764f8d3bba0d4111b	flag-o-matic	be27a904c614cb93ae037762dc69bcc2	out-of-source-utils	1a9007554652a6e627edbccb3c25a439	multibuild	30dbf3c5a31db09a19f31ad0a68f2405	ninja-utils	f3010c780f65d1bb5aea15a9af1adc9c	python-utils-r1	12aa0037eb004139215ff04894d52b28	python-r1	8a28fa6d3e3bc96ff8a7eff2badbe71f	distutils-r1	24344aec2be39c69d9f279b5415298ce	desktop	021728fdc1b03b36357dbc89489e0f0d
-_md5_=aa7b6cca2ec350211b7d4d911cddc1c8
+_md5_=b8af17f5726270c26871039320076c14
