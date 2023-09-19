@@ -8,10 +8,10 @@ IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
 INHERIT=cmake readme.gentoo-r1 xdg
 IUSE=doc fluidsynth harfbuzz +sound truetype +wildmidi
 KEYWORDS=~amd64
-LICENSE=Baekmuk CC-BY-4.0 GPL-2+-with-font-exception GPL-3+ public-domain TTYP0 Unlicense || ( MIT-0 public-domain )
+LICENSE=BAEKMUK CC-BY-4.0 GPL-2+-with-font-exception GPL-3+ public-domain TTYP0 Unlicense || ( MIT-0 public-domain )
 RDEPEND=dev-cpp/rang >=dev-games/liblcf-0.8 dev-libs/libfmt:= media-libs/libpng:= >=media-libs/libsdl2-2.0.5[joystick,sound?,video] sys-libs/zlib x11-libs/pixman harfbuzz? ( media-libs/harfbuzz:=[truetype] ) truetype? ( media-libs/freetype:= ) sound? ( media-libs/dr_wav media-libs/libsndfile media-libs/libvorbis media-libs/opusfile media-libs/speexdsp media-sound/mpg123 media-libs/libxmp fluidsynth? ( media-sound/fluidsynth ) wildmidi? ( media-sound/wildmidi ) !fluidsynth? ( !wildmidi? ( media-libs/alsa-lib ) ) ) fluidsynth? ( media-sound/fluid-soundfont )
 REQUIRED_USE=fluidsynth? ( sound ) harfbuzz? ( truetype ) wildmidi? ( sound )
 SLOT=0
 SRC_URI=https://easyrpg.org/downloads/player/0.8/easyrpg-player-0.8.tar.xz
 _eclasses_=toolchain-funcs	862d337d98edb576796827be2c6b11ca	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	be27a904c614cb93ae037762dc69bcc2	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	f3010c780f65d1bb5aea15a9af1adc9c	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	fc2f89084f590ac95c004ea95b0d2f80	readme.gentoo-r1	204091a2cde6179cd9d3db26d09412d3	xdg	4a14c5c24f121e7da66e5aab4a168c6e
-_md5_=36a97c2dc50360bdc45ef059da873a6a
+_md5_=616b52c7cfac5763fb4302665cb265db
