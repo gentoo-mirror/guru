@@ -80,7 +80,7 @@ app-admin/himitsu-ssh 0.2 9999: SSH integration for Himitsu
 app-admin/himitsu-totp 9999: TOTP support for Himitsu
 app-admin/i2pd-tools 0.2023.03.12 0.2023.05.26: Some useful tools for I2P
 app-admin/krapplet 0.3.1-r1: Krapplet (keyring applet): a Linux graphical password manager
-app-admin/linode-cli 5.42.1 5.43.0: Linode Command Line Interface
+app-admin/linode-cli 5.42.1 5.43.0 5.44.1: Linode Command Line Interface
 app-admin/oet 0.1.9 0.1.10 9999: Update your system into binpkgs in an overlay sandbox
 app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applications and tmux
 app-admin/pass-update 2.1: pass extension that provides an easy flow for updating passwords
@@ -100,7 +100,7 @@ app-arch/zarchive 0.1.2: Library for creating and reading zstd-compressed file a
 app-backup/b2 3.4.0 3.9.0: Command-line tool for BackBlaze's B2 product
 app-backup/grub-btrfs 4.11-r1 4.12 4.13 9999: Improves Grub by adding btrfs snapshots to the Grub menu.
 app-backup/pika-backup 0.6.1 0.6.2: Keep your data safe
-app-backup/timeshift 21.09.1-r3 22.06.5-r2 22.11.1-r1: A system restore utility for Linux
+app-backup/timeshift 21.09.1-r3 22.06.5-r2 22.11.1-r1 23.07.1: A system restore utility for Linux
 app-backup/timeshift-autosnap 0.9: Automatically creates a timeshift-snapshot when executed
 app-benchmarks/phoronix-test-suite 9999: Phoronix's comprehensive, cross-platform testing and benchmark suite
 app-benchmarks/poop 9999: Performance Optimizer Observation Platform
@@ -151,7 +151,7 @@ app-editors/kitscenarist 0.7.2_rc9: Simple and powerful application for creating
 app-editors/lapce 0.2.7 0.2.8 9999: Lightning-fast and Powerful Code Editor written in Rust
 app-editors/mined 2015.25: A powerful text editor with extensive Unicode and CJK support
 app-editors/neovim-qt 0.2.17-r1: Neovim client library and GUI, in Qt5
-app-editors/pulsar-bin 1.107.1 1.108.0: A Community-led Hyper-Hackable Text Editor
+app-editors/pulsar-bin 1.108.0 1.109.0: A Community-led Hyper-Hackable Text Editor
 app-editors/typora-bin 1.5.8: a markdown editor,markdown reader.
 app-emacs/idris-mode 1.0 9999: Idris syntax highlighting, compiler-supported editing, and interactive REPL
 app-emacs/prop-menu 0.1.2: Compute pop-up menus from text and overlay properties
@@ -209,7 +209,7 @@ app-misc/hollywood 1.22: Fill your console with Hollywood melodrama technobabble
 app-misc/hyfetch 1.4.10 9999: Neofetch with LGBTQ+ pride flags!
 app-misc/kloak 0.2.30: A privacy tool that makes keystroke biometrics less effective
 app-misc/ledger-live 2.60.0 2.62.2 2.64.1 2.66.0 2.68.1: Manager for the Ledger hardware wallet
-app-misc/lf 27 28-r1 29 30: Terminal file manager
+app-misc/lf 27 28-r1 29 30 31: Terminal file manager
 app-misc/macchina 6.1.8 6.1.8-r1: A system information fetcher, with an (unhealthy) emphasis on performance.
 app-misc/mangadesk 0.7.7 0.7.8: Terminal Client for MangaDex
 app-misc/mat2 0.13.3: Metadata Anonymisation Toolkit: handy tool to trash your metadata
@@ -1260,7 +1260,7 @@ dev-util/glsl-language-server 0.3.7: Language server implementation for GLSL
 dev-util/gshards 0.1-r1 0.2: Small helper tools to aid installing Crystal packages in Gentoo
 dev-util/haredo 1.0.2 9999: a simple and unix-idiomatic build automator
 dev-util/hut 0.3.0: CLI tool for sourcehut
-dev-util/insomnia-bin 2020.3.3 2020.5.2: HTTP and GraphQL client for developers
+dev-util/insomnia-bin 2020.5.2 2023.5.8: HTTP and GraphQL client for developers
 dev-util/lemminx-bin 0.24.0 0.25.0: XML Language Server
 dev-util/lottieconverter 0.2: Simple lottie (telegram animated sticker) converter.
 dev-util/lua-language-server 3.7.0: Lua language server
@@ -1529,7 +1529,7 @@ media-libs/dr_wav 0.13.32: Single-header WAV audio loader and writer library
 media-libs/gl4es 9999: OpenGL 2.1/1.5 to GL ES 2.0/1.1 translation library
 media-libs/glee 5.4.0: OpenGL Easy Extension library
 media-libs/grok 9.7.6: World's Leading Open Source JPEG 2000 Codec
-media-libs/imgui 1.81 1.83 1.87-r6: Bloat-free graphical user interface library for C++
+media-libs/imgui 1.81 1.83 1.87-r6 1.87-r7: Bloat-free graphical user interface library for C++
 media-libs/libbpg 0.9.8-r1: Better Portable Graphics reference implementation
 media-libs/lodepng 20210627-r1: PNG encoder and decoder
 media-libs/monado 9999: The open source OpenXR runtime.
@@ -1986,7 +1986,7 @@ www-apps/pleroma 2.5.5 9999: ActivityPub social networking software compatible w
 www-apps/snac 2.25 2.26: A simple, minimalistic ActivityPub instance
 www-apps/uwebsockets 20.11.0 20.14.0 9999: ultra fast, simple, secure & standards compliant web I/O
 www-apps/whoogle-search 0.8.3: A self-hosted, ad-free, privacy-respecting metasearch engine
-www-client/badwolf 1.2.2 9999: Minimalist and privacy-oriented WebKitGTK+ browser
+www-client/badwolf 1.2.2 1.3.0 9999: Minimalist and privacy-oriented WebKitGTK+ browser
 www-client/browsh 1.6.4_p1: A fully-modern text-based browser, rendering to TTY and browsers
 www-client/nyxt 3.6.1 3.7.0 9999: Nyxt - the hacker's power-browser
 www-client/vimb 3.6.0 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
