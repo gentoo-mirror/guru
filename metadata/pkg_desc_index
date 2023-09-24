@@ -671,7 +671,7 @@ dev-libs/octetos-db 1.3.2_alpha 1.3.3_alpha: C++ library for Database Acces.
 dev-libs/octetos-db-abstract 0.1.2_alpha 0.6.0_alpha: API to access database, abstract component.
 dev-libs/octetos-db-maria 1.4.2_alpha 1.9.2_alpha 9999: C++ library for Database Acces.
 dev-libs/octetos-db-postgresql 1.3.9_alpha 1.3.10_alpha: C++ library for Database Acces.
-dev-libs/open62541 1.3.6: Open source C implementation of OPC UA
+dev-libs/open62541 1.3.7: Open source C implementation of OPC UA
 dev-libs/perfstubs 0_pre20210915: Profiling API for adding external tool instrumentation support to any project
 dev-libs/polyseed 1.0.0 2.0.0 9999: Mnemonic seed library for Monero and other CryptoNote-based currencies.
 dev-libs/properties-cpp 0.0.2: Simple convenience library for handling properties and signals in C++11
@@ -1161,10 +1161,10 @@ dev-python/ttfautohint-py 0.5.1-r1: Python wrapper for ttfautohint, a free auto-
 dev-python/tulir-telethon 1.29.0_alpha2 1.30.0_alpha2: Pure Python 3 MTProto API Telegram client library, for bots too!
 dev-python/tweepy 4.14.0: An easy-to-use Python library for accessing the Twitter API.
 dev-python/types-paramiko 2.10.0 2.11.1: Typing stubs for paramiko
-dev-python/types-protobuf 4.24.0.1: Typing stubs for protobuf
+dev-python/types-protobuf 4.24.0.1 4.24.0.2: Typing stubs for protobuf
 dev-python/types-python-dateutil 2.8.17 2.8.18: Typing stubs for python-dateutil
 dev-python/types-pytz 2021.3.8 2022.1.1: Typing stubs for pytz
-dev-python/types-requests 2.31.0.2: Typing stubs for requests
+dev-python/types-requests 2.31.0.2 2.31.0.3: Typing stubs for requests
 dev-python/types-urllib3 1.26.25.14: Typing stubs for urllib3
 dev-python/typing_inspect 0.7.1: Runtime inspection utilities for Python typing module
 dev-python/ufo2ft 2.31.1: A bridge from UFOs to FontTools
@@ -1341,7 +1341,8 @@ games-puzzle/atris 1.0.7: Alizarin tetris
 games-puzzle/baba-is-you 474: Puzzle game where you can change the rules by which you play
 games-puzzle/generic-tetromino-game 9999: Faithful clone of NES Tetris but with new features and mods API
 games-puzzle/krank 8: Little casual game
-games-puzzle/superflu-riteurnz 1.0.0: Artisanal video-game about Superflu, the useless super-hero (french)
+games-puzzle/superflu-riteurnz 1.5.4: Artisanal video-game about Superflu, the useless super-hero
+games-puzzle/superflu-riteurnz-data 11: Artisanal video-game about Superflu, the useless super-hero (data files)
 games-rpg/airshipper 0.7.0-r1: Provides automatic updates for the voxel RPG Veloren
 games-rpg/snoot-game 1.8 1.8-r1: Visual novel parody of Goodbye Volcano High
 games-server/among-sus 20210519: Among Us, but it's a text adventure
@@ -1548,7 +1549,7 @@ media-sound/add64 3.8.0 3.9.3: Add64 is a realtime additive/subtractive-synthesi
 media-sound/amberol 0.9.2 0.10.3: Simple GUI Music Player
 media-sound/callaudiod 0.1.7 0.1.9: Call audio routing daemon
 media-sound/drumgizmo 0.9.20 9999: Cross-platform drum plugin and stand-alone application
-media-sound/dzr 230912: DZR: the command line deezer.com player
+media-sound/dzr 230919: DZR: the command line deezer.com player
 media-sound/g4music 3.2 3.3: A GTK4 music player
 media-sound/hushboard 0.0_pre20220518 9999: Mutes your microphone while you are typing
 media-sound/ibniz 1.18-r1: virtual machine designed for extremely compact low-level audiovisual programs
@@ -1615,7 +1616,7 @@ net-client/offpunk 1.8 1.9.1: Offline-First Gemini/Web/Gopher/RSS reader and bro
 net-client/starfish 1.2.0 1.3.1: A Gemini browser for elementary OS
 net-client/telescope 0.7.1 0.8.1: w3m-like browser for Gemini
 net-dialup/atinout 0.9.1-r1: AT commands as input are sent to modem and responses given as output
-net-dialup/tio 2.6: Simple TTY terminal application
+net-dialup/tio 2.7: Simple TTY terminal application
 net-fs/httpdirfs 1.2.0: Filesystem to mount HTTP directory listings, with a permanent cache
 net-fs/hubicfuse 3.0.1: Support for mounting HubiC drive in GNU/Linux
 net-im/Quaternion 0.0.95.1 0.0.96_beta4: A Qt-based IM client for Matrix
@@ -1638,7 +1639,7 @@ net-im/mautrix-discord 0.5.0-r1 0.6.2: A Matrix-Discord puppeting bridge
 net-im/mautrix-facebook 0.4.1 0.5.0: A Matrix-Facebook Messenger puppeting bridge
 net-im/mautrix-signal 0.4.2 0.4.3: A Matrix-Signal Messenger puppeting bridge
 net-im/mautrix-slack 0_pre20230414 0_pre20230517: A Matrix-Slack puppeting bridge based on slack-go
-net-im/mautrix-telegram 0.14.0 0.14.1: A Matrix-Telegram Messenger puppeting bridge
+net-im/mautrix-telegram 0.14.1 0.14.2: A Matrix-Telegram Messenger puppeting bridge
 net-im/mautrix-whatsapp 0.10.0: A Matrix-WhatsApp puppeting bridge
 net-im/nheko 0.11.3 9999: Native desktop client for Matrix using Qt
 net-im/ruqola 1.3.1: Rocket.Chat client for the KDE desktop
@@ -1974,7 +1975,7 @@ virtual/nnet 0: Virtual of a R recommended package
 virtual/survival 0: Virtual of a R recommended package
 www-apps/castopod 1.4.3 1.4.5: Open-source hosting platform made for podcasters
 www-apps/code-server-bin 4.14.1 4.15.0 4.16.0 4.16.1: VS Code in the browser (binary version with unbundled node and ripgrep)
-www-apps/forgejo 1.19.4.0 1.20.3.0 1.20.4.0: A self-hosted lightweight software forge
+www-apps/forgejo 1.19.4.0 1.20.4.0 1.20.4.1: A self-hosted lightweight software forge
 www-apps/gotosocial 0.9.0 0.10.0: Fast, fun, ActivityPub server, powered by Go
 www-apps/honk 0.9.8 0.9.91: ActivityPub server with minimal setup and support costs
 www-apps/invidious 2023.07.05: Invidious is an alternative front-end to YouTube
