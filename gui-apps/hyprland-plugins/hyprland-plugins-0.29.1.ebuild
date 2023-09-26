@@ -5,14 +5,15 @@ EAPI=8
 
 inherit meson
 
-COMMIT=1228eb57f9debd35811f0ade43bef5eaa09aab42
-SPLITCOMMIT=44785cee3fc0b2aa34a92882df31568bea3af8f0
+COMMIT=f9578d28d272fb61753417e175b0fcd5bedc1443
+SPLITCOMMIT=d8c97d60753f70d686588ad3b0a877e2ca67ff72
 DESCRIPTION="A blazing fast wayland wallpaper utility"
 HOMEPAGE="https://github.com/hyprwm/hyprland-plugins"
 SRC_URI="https://github.com/hyprwm/${PN}/archive/${COMMIT}.tar.gz -> ${P}.gh.tar.gz
 	https://github.com/Duckonaut/split-monitor-workspaces/archive/${SPLITCOMMIT}.tar.gz \
 	-> ${P}-split-monitor-workspaces.gh.tar.gz
 "
+
 S="${WORKDIR}/${PN}-${COMMIT}"
 
 LICENSE="BSD"
