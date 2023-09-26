@@ -1,16 +1,16 @@
 BDEPEND=sys-devel/autoconf sys-devel/automake sys-devel/gnuconfig >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.5:1.16 ) >=sys-devel/autoconf-2.71-r5 >=sys-devel/libtool-2.4.7
 DEFINED_PHASES=configure install postinst postrm prepare
-DEPEND=sys-libs/db:5.3=[cxx] dev-libs/libevent:= dev-libs/protobuf dev-libs/openssl sys-devel/libtool sys-devel/automake:= >=dev-libs/boost-1.81.0-r1 dev-qt/qtcore dev-qt/qtgui dev-qt/qtwidgets dev-qt/qtdbus dev-qt/qtnetwork dev-qt/qtprintsupport dev-qt/linguist-tools:= cpu_flags_x86_avx2? ( app-crypt/intel-ipsec-mb ) wallet? ( media-gfx/qrencode ) zmq? ( net-libs/cppzmq )
+DEPEND=sys-libs/db:5.3=[cxx] dev-libs/libevent:= dev-libs/protobuf dev-libs/openssl sys-devel/libtool sys-devel/automake:= >=dev-libs/boost-1.81.0-r1 dev-qt/qtcore dev-qt/qtgui dev-qt/qtwidgets dev-qt/qtdbus dev-qt/qtnetwork dev-qt/qtprintsupport dev-qt/linguist-tools:= wallet? ( media-gfx/qrencode ) zmq? ( net-libs/cppzmq )
 DESCRIPTION=Dogecoin Core Qt for desktop. Downloaded blockchain is under 2.2GB. Much secure.
 EAPI=8
 HOMEPAGE=https://github.com/dogecoin
 INHERIT=autotools desktop xdg-utils
-IUSE=cpu_flags_x86_avx2 dogecoind +pie +prune +ssp tests utils +wallet zmq
+IUSE=dogecoind +pie +prune +ssp tests utils +wallet zmq
 KEYWORDS=~amd64 ~arm64
 LICENSE=MIT
-RDEPEND=sys-libs/db:5.3=[cxx] dev-libs/libevent:= dev-libs/protobuf dev-libs/openssl sys-devel/libtool sys-devel/automake:= >=dev-libs/boost-1.81.0-r1 dev-qt/qtcore dev-qt/qtgui dev-qt/qtwidgets dev-qt/qtdbus dev-qt/qtnetwork dev-qt/qtprintsupport dev-qt/linguist-tools:= cpu_flags_x86_avx2? ( app-crypt/intel-ipsec-mb ) wallet? ( media-gfx/qrencode ) zmq? ( net-libs/cppzmq )
+RDEPEND=sys-libs/db:5.3=[cxx] dev-libs/libevent:= dev-libs/protobuf dev-libs/openssl sys-devel/libtool sys-devel/automake:= >=dev-libs/boost-1.81.0-r1 dev-qt/qtcore dev-qt/qtgui dev-qt/qtwidgets dev-qt/qtdbus dev-qt/qtnetwork dev-qt/qtprintsupport dev-qt/linguist-tools:= wallet? ( media-gfx/qrencode ) zmq? ( net-libs/cppzmq )
 REQUIRED_USE=dogecoind? ( utils )
 SLOT=0
 SRC_URI=https://github.com/dogecoin/dogecoin/archive/refs/tags/v1.14.6.tar.gz -> dogecoin-qt-v1.14.6.tar.gz
 _eclasses_=gnuconfig	b6b3e92f8b8c996400074b5f61a59256	toolchain-funcs	862d337d98edb576796827be2c6b11ca	multilib	c19072c3cd7ac5cb21de013f7e9832e0	libtool	9d3a9a889a6fa62ae794f817c156491b	autotools	6ae9a4347149b19a112caa1182d03bde	desktop	021728fdc1b03b36357dbc89489e0f0d	xdg-utils	baea6080dd821f5562d715887954c9d3
-_md5_=26b21d76e2fd1ab9fa4130d6dc3bc072
+_md5_=b39ed29ee44db9094f7460cf9aeddeee
