@@ -5,7 +5,7 @@ EAPI=8
 
 inherit cmake
 
-MY_TRANTOR_V="1.5.11"
+MY_TRANTOR_V="1.5.13"
 
 DESCRIPTION="C++14/17 based HTTP web application framework"
 HOMEPAGE="https://github.com/drogonframework/drogon"
@@ -30,7 +30,6 @@ RDEPEND="
 	postgres? ( dev-db/postgresql:= )
 	redis? ( dev-libs/hiredis:= )
 	sqlite? ( dev-db/sqlite:3 )
-	dev-libs/openssl:=
 	elibc_Darwin? ( sys-libs/native-uuid )
 	elibc_SunOS? ( sys-libs/libuuid )
 	!elibc_Darwin? ( !elibc_SunOS? (
@@ -44,7 +43,7 @@ DEPEND="
 "
 BDEPEND="doc? ( app-doc/doxygen )"
 
-PATCHES=( "${FILESDIR}"/${P}-fix-test-build.patch )
+PATCHES=( "${FILESDIR}"/${PN}-1.8.4-fix-test-build.patch )
 
 DOCS=( CONTRIBUTING.md ChangeLog.md README.md README.zh-CN.md README.zh-TW.md )
 
@@ -54,9 +53,9 @@ src_unpack() {
 	# the cert is in the trantor submodule normally, but we unbundle that
 	if use test; then
 		mkdir -p ${P}/trantor/trantor/tests || die
-		cp -v trantor-${MY_TRANTOR_V}/trantor/tests/server.pem \
-			${P}/trantor/trantor/tests/server.pem \
-			|| die "could not copy test certificate"
+		cp -v trantor-${MY_TRANTOR_V}/trantor/tests/server.{crt,key} \
+			${P}/trantor/trantor/tests/ \
+			|| die "could not copy test certificate and/or key"
 	fi
 }
 
