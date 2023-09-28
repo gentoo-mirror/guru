@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install postinst postrm preinst prepare unpack
+DEPEND=dev-libs/gobject-introspection dev-python/click dev-python/packaging dev-python/pip dev-python/psutil dev-python/pydantic dev-python/pygobject dev-python/requests dev-python/setuptools dev-python/unidecode dev-python/wheel dev-util/desktop-file-utils dev-util/gtk-update-icon-cache dev-vcs/git sys-devel/gettext x11-apps/mesa-progs x11-libs/cairo x11-libs/gtk+ x11-misc/shared-mime-info x11-misc/xdg-user-dirs x11-misc/xdg-utils
+DESCRIPTION=A Wine+Roblox management application
+EAPI=8
+HOMEPAGE=https://gitlab.com/brinkervii/grapejuice
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=xdg
+KEYWORDS=-* ~amd64
+LICENSE=GPL-3
+RDEPEND=dev-libs/gobject-introspection dev-python/click dev-python/packaging dev-python/pip dev-python/psutil dev-python/pydantic dev-python/pygobject dev-python/requests dev-python/setuptools dev-python/unidecode dev-python/wheel dev-util/desktop-file-utils dev-util/gtk-update-icon-cache dev-vcs/git sys-devel/gettext x11-apps/mesa-progs x11-libs/cairo x11-libs/gtk+ x11-misc/shared-mime-info x11-misc/xdg-user-dirs x11-misc/xdg-utils virtual/wine
+SLOT=0
+SRC_URI=https://gitlab.com/brinkervii/grapejuice/-/archive/v7.20.11/grapejuice-v7.20.11.tar.bz2
+_eclasses_=xdg-utils	baea6080dd821f5562d715887954c9d3	xdg	4a14c5c24f121e7da66e5aab4a168c6e
+_md5_=d535c1f4c79f11420ada18023d579326
