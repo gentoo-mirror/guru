@@ -1,7 +1,7 @@
-# Copyright 2021-2022 Gentoo Authors
+# Copyright 2021-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 inherit desktop xdg-utils savedconfig toolchain-funcs linux-info
 
@@ -18,7 +18,7 @@ HOMEPAGE="https://codeberg.org/nsxiv/nsxiv"
 
 LICENSE="GPL-2+ public-domain"
 SLOT="0"
-IUSE="+statusbar +inotify exif"
+IUSE="+statusbar +inotify exif debug"
 
 RDEPEND="
 	x11-libs/libX11
@@ -43,12 +43,15 @@ src_prepare() {
 }
 
 src_configure() {
-	sed -i -e '/^install: / s|: all|:|' Makefile || die "sed failed"
-	sed -i -e 's|^CFLAGS =|CFLAGS +=|' config.mk || die "sed failed"
+	# avoid rebuild on `make install`
+	sed -i -e '/^install: / s|: all|:|' Makefile || die
 }
 
 src_compile() {
-	emake CC="$(tc-getCC)" OPT_DEP_DEFAULT=0 \
+	local dbg=""
+	use debug && dbg="-UNDEBUG -DDEBUG"
+	emake CC="$(tc-getCC)" CFLAGS="${CFLAGS} ${dbg}" \
+		OPT_DEP_DEFAULT=0 \
 		HAVE_INOTIFY="$(usex inotify 1 0)" \
 		HAVE_LIBFONTS="$(usex statusbar 1 0)" \
 		HAVE_LIBEXIF="$(usex exif 1 0)"
