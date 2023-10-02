@@ -5,10 +5,10 @@ DESCRIPTION=Neo (or New or Not) Simple (or Small or Suckless) X Image Viewer
 EAPI=8
 HOMEPAGE=https://codeberg.org/nsxiv/nsxiv
 INHERIT=desktop xdg-utils savedconfig toolchain-funcs linux-info git-r3
-IUSE=+statusbar +inotify exif savedconfig
+IUSE=+statusbar +inotify exif debug savedconfig
 LICENSE=GPL-2+ public-domain
 PROPERTIES=live
 RDEPEND=x11-libs/libX11 >=media-libs/imlib2-1.8.0[X] statusbar? ( x11-libs/libXft ) exif? ( media-libs/libexif )
 SLOT=0
 _eclasses_=desktop	021728fdc1b03b36357dbc89489e0f0d	xdg-utils	baea6080dd821f5562d715887954c9d3	portability	a74d533f258f1f435be71312558c12f9	savedconfig	8b5f9d995a970e49cd427c55d5840285	toolchain-funcs	fbbbc99d10168de2926e06da7169b8dc	multilib	c19072c3cd7ac5cb21de013f7e9832e0	linux-info	c4f1201b96a8a2c1f3b86cc8b2c71c91	git-r3	2358a7b20091609e24bd3a83b3ac5991
-_md5_=ca3946b2e68dcac3631d153289ecf9e3
+_md5_=7e9be998c4cbb2d5578ad8ad08ec39db

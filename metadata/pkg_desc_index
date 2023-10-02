@@ -275,7 +275,7 @@ app-shells/fish-agnoster-theme 0.1.0_p20200415: Fancy, colorful theme with suppo
 app-shells/fish-command-timer 0.1.3 0.1.3_p20201002: Fish shell extension for printing execution time for each command
 app-shells/fish-history-merge 0_pre20201121: Plugin that modifies built-in up-or-search command to merge the command history
 app-shells/fishtape 3.0.1: 100% pure-Fish test runner
-app-shells/fzf-fish 8.3 9.0: Augment your fish command line with fzf key bindings
+app-shells/fzf-fish 8.3 9.0 10.0: Augment your fish command line with fzf key bindings
 app-shells/fzf-tab 0_pre20220815 0_pre20221124: Replace zsh's default completion selection menu with fzf
 app-shells/k 0.0.5: Directory listings for zsh with git features
 app-shells/mrsh 9999: minimal strictly POSIX compliant shell
@@ -1299,13 +1299,14 @@ dev-vcs/lefthook 1.0.4 1.2.6 1.4.8: Fast and powerful Git hooks manager for any 
 dev-zig/zls 0.10.0-r1 9999: The officially unofficial Ziglang language server
 games-action/ATLauncher 3.4.3.1 3.4.27.0: Minecraft launcher which integrates multiple different ModPacks
 games-action/blackvoxel 2.50 9999: Blackvoxel Video Game
-games-action/classicube 1.3.5-r1 9999: Reverse-engineered Minecraft Classic client
+games-action/classicube 1.3.6 9999: Reverse-engineered Minecraft Classic client
 games-action/ddnet 17.3 9999: DDraceNetwork, a cooperative racing mod of Teeworlds
 games-action/netrek-brmh 2.6.0: brmh client for netrek
 games-action/netrek-cow 3.3.2: cow client for netrek
 games-action/technic-launcher 4.625 4.768: Minecraft launcher for community-made modpacks on the Technic Platform
 games-arcade/SpaceCadetPinball 2.0 2.0.1 9999: Decompilation of 3D Pinball for Windows - Space Cadet
 games-arcade/opensurge 0.5.2.1 9999: fun 2D retro platformer inspired by old-school Sonic games
+games-arcade/shiromino 0.2.1: fast-paced puzzle game with roots in the arcade
 games-arcade/taisei 1.3.2-r2 1.4 9999: Clone of the Touhou series, written in C using SDL/OpenGL/OpenAL.
 games-board/fairy-stockfish 14.0.1: Chess variant engine derived from Stockfish to support fairy chess variants
 games-board/openriichi 0.2.1.1: OpenRiichi is an open source Japanese Mahjong client
@@ -1510,7 +1511,7 @@ media-gfx/gephi-bin 0.9.5 0.9.6: The Open Graph Viz Platform
 media-gfx/grafx2 2.7.2978 2.7.2978-r100: A pixelart-oriented painting program
 media-gfx/heatshrink 0.4.1: data compression library for embedded/real-time systems
 media-gfx/libpsautohint 2.4.0: A library for autohinting PostScript fonts
-media-gfx/nsxiv 31 9999: Neo (or New or Not) Simple (or Small or Suckless) X Image Viewer
+media-gfx/nsxiv 32 9999: Neo (or New or Not) Simple (or Small or Suckless) X Image Viewer
 media-gfx/oda-file-converter 23.5.0.0: For converting between different versions of .dwg and .dxf
 media-gfx/qview 4.0 5.0: Practical and minimal image viewer
 media-gfx/sic 0.19.0: Accessible image processing and conversion from the terminal tool.
@@ -1551,10 +1552,12 @@ media-sound/amberol 0.9.2 0.10.3: Simple GUI Music Player
 media-sound/callaudiod 0.1.7 0.1.9: Call audio routing daemon
 media-sound/drumgizmo 0.9.20 9999: Cross-platform drum plugin and stand-alone application
 media-sound/dzr 230919: DZR: the command line deezer.com player
+media-sound/eartag 0.5.0: GTK4 MusicBrainz audio tagger
 media-sound/g4music 3.2 3.3: A GTK4 music player
 media-sound/hushboard 0.0_pre20220518 9999: Mutes your microphone while you are typing
 media-sound/ibniz 1.18-r1: virtual machine designed for extremely compact low-level audiovisual programs
 media-sound/jacktrip 1.7.1-r1: Send JACK audio over a network
+media-sound/jriver 31.0.60: A cross-platform media center, famous for high quality of audio.
 media-sound/loudgain 0.6.8: Versatile ReplayGain 2.0 loudness normalizer
 media-sound/mopidy 3.4.1: An extensible music server written in Python.
 media-sound/mpd-mpris 0.3.1 0.4.0 0.4.1: An implementation of the MPRIS protocol for MPD.
@@ -1621,7 +1624,7 @@ net-dialup/tio 2.7: Simple TTY terminal application
 net-fs/httpdirfs 1.2.0: Filesystem to mount HTTP directory listings, with a permanent cache
 net-fs/hubicfuse 3.0.1: Support for mounting HubiC drive in GNU/Linux
 net-im/Quaternion 0.0.95.1 0.0.96_beta4: A Qt-based IM client for Matrix
-net-im/abaddon 0.1.8 9999: Alternative Discord client using GTK instead of Electron
+net-im/abaddon 0.1.12 9999: Alternative Discord client using GTK instead of Electron
 net-im/chatterino 2.3.5-r3: Chat client for https://twitch.tv
 net-im/conduit 0.5.0-r1 0.6.0: A Matrix homeserver written in Rust
 net-im/discord-canary-bin 0.0.166: All-in-one voice and text chat
@@ -1654,7 +1657,7 @@ net-irc/srain 1.4.0: Modern, beautiful IRC client written in GTK+ 3
 net-irc/tiny 0.10.0: An IRC client
 net-libs/dpdk 21.11.1-r1 22.07-r1 23.03: Data Plane Development Kit libraries for fast userspace networking
 net-libs/evpath 4.5.0_p20220601: EVpath is an event transport middleware layer
-net-libs/ixwebsocket 11.3.3 11.4.3: C++ websocket client and server library
+net-libs/ixwebsocket 11.4.4: C++ websocket client and server library
 net-libs/kcgi 0.12.5 0.13.0: Minimal CGI library for web applications
 net-libs/libuecc 7: a very small Elliptic Curve Cryptography library compatible with Ed25519.
 net-libs/orcania 2.3.2: Library for angharad programs
@@ -1715,8 +1718,8 @@ net-p2p/dogecoin-qt 1.14.6: Dogecoin Core Qt for desktop. Downloaded blockchain 
 net-p2p/feather 2.4.5 2.4.9 9999: A free, open-source Monero wallet
 net-p2p/fragments 2.1-r1 2.1.1: Fragments is an easy to use BitTorrent client
 net-p2p/ipfs-cluster 1.0.1 1.0.2: Pinset orchestration for IPFS
-net-p2p/monero 0.17.2.0 0.17.2.3 0.17.3.0 0.17.3.2 0.18.1.0 0.18.1.1 0.18.1.2 0.18.2.0 0.18.2.2 9999: The secure, private, untraceable cryptocurrency
-net-p2p/p2pool 2.7 3.0 3.1 3.2 3.3 3.4 3.5 3.6.2 9999: Decentralized pool for Monero mining
+net-p2p/monero 0.17.2.0 0.17.2.3 0.17.3.0 0.17.3.2 0.18.1.0 0.18.1.1 0.18.1.2 0.18.2.0 0.18.2.2 0.18.3.0 9999: The secure, private, untraceable cryptocurrency
+net-p2p/p2pool 2.7 3.0 3.1 3.2 3.3 3.4 3.5 3.6.2 3.7 9999: Decentralized pool for Monero mining
 net-p2p/popura 0.4.6 9999: Popura: alternative Yggdrasil network client
 net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
 net-p2p/yggdrasil-go 0.4.7 9999: An experiment in scalable routing as an encrypted IPv6 overlay network
@@ -1728,6 +1731,7 @@ net-voip/vvmd 0.8: vvmd is a lower level daemon that retrieves Visual Voicemail
 net-vpn/cloudflare-warp 2023.3.470 2023.7.40: Cloudflare Warp Client
 net-vpn/fastd 22: A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
 net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that require SAML
+net-wireless/bluetuith 0.1.7 9999: A TUI bluetooth manager for Linux written in Go
 net-wireless/rtl8192eu 0_pre20230613: Realtek 8192EU driver module for Linux kernel
 net-wireless/rtl8723bu 9999: Driver for the rtl8723 wireless chipset
 net-wireless/rtl8821ce 0_pre20230504: Realtek RTL8821CE Driver module for Linux kernel
@@ -1816,7 +1820,7 @@ sci-mathematics/packup 0.6: PACKage Upgradability Problem solver
 sci-mathematics/pyromaths 21.8.2: Create maths exercises in LaTeX and PDF format
 sci-mathematics/qepcad 1.72b_p20220502-r2: Quantifier Elimination by Partial Cylindrical Algebraic Decomposition
 sci-mathematics/radian 0.6.3: A 21 century R console
-sci-mathematics/rstudio-desktop-bin 2022.12.0_p353 2023.06.2_p561: IDE for R and Python
+sci-mathematics/rstudio-desktop-bin 2023.06.2_p561 2023.09.0_p463: IDE for R and Python
 sci-mathematics/the-omega-project 2.1_p20131119: Tools from Pugh et al.'s for constraint-based compiler tools
 sci-misc/boinc-wrapper 26018: Wrapper to use non-BOINC apps with BOINC
 sci-misc/linuxcnc 9999: LinuxCNC
@@ -1974,7 +1978,7 @@ virtual/nlme 0: Virtual of a R recommended package
 virtual/nnet 0: Virtual of a R recommended package
 virtual/survival 0: Virtual of a R recommended package
 www-apps/castopod 1.4.3 1.4.5: Open-source hosting platform made for podcasters
-www-apps/code-server-bin 4.14.1 4.15.0 4.16.0 4.16.1 4.17.0: VS Code in the browser (binary version with unbundled node and ripgrep)
+www-apps/code-server-bin 4.14.1 4.15.0 4.16.0 4.16.1 4.17.0 4.17.1: VS Code in the browser (binary version with unbundled node and ripgrep)
 www-apps/forgejo 1.19.4.0 1.20.4.0 1.20.4.1: A self-hosted lightweight software forge
 www-apps/gotosocial 0.9.0 0.10.0: Fast, fun, ActivityPub server, powered by Go
 www-apps/honk 0.9.8 0.9.91: ActivityPub server with minimal setup and support costs
@@ -1991,11 +1995,13 @@ www-client/browsh 1.6.4_p1: A fully-modern text-based browser, rendering to TTY 
 www-client/nyxt 3.7.0 3.8.0 9999: Nyxt - the hacker's power-browser
 www-client/vimb 3.6.0 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
 www-client/woob 3.1-r1 9999: Web Outside Of Browsers (core, site modules and applications)
+www-client/yandex-browser 23.3.1.912_p1: The web browser from Yandex
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits
 www-misc/gorss 0.3: Go Terminal Feed Reader
 www-misc/waldl 0.0.1_pre20211112: Browse and download wallpapers from wallhaven.cc using sxiv
 www-misc/wyebadblock 1.0.0: An adblock extension for wyeb, also webkit2gtk browsers.
 www-plugins/firefoxpwa 2.5.0 2.6.2 2.7.3: The native part of the PWAsForFirefox project
+www-plugins/yandex-browser-ffmpeg-codecs-bin 110.0.5481.100: Multi-threaded ffmpeg codecs needed for the HTML5 <audio> and <video> tags
 www-servers/hinsightd 0.9.17 9999: hinsightd a http/1.1 webserver with (hopefully) minimal goals
 www-servers/quark 9999: A small, GET-only static HTTP server
 x11-apps/lightdm-gtk-greeter-settings 1.2.2-r1: Configuration tool for the LightDM GTK Greeter

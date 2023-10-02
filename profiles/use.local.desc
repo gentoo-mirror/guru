@@ -537,6 +537,7 @@ net-client/lagrange:harfbuzz - Use media-libs/harfbuzz to shape text
 net-client/telescope:libbsd - Use dev-libs/libbsd instead of internal funcs
 net-im/Quaternion:keychain - Enable support for password storage via dev-libs/qtkeychain
 net-im/abaddon:libhandy - Support for features using gui-libs/libhandy
+net-im/abaddon:rnnoise - Support for noise reduction using media-libs/rnnoise
 net-im/gajim-plugins:acronyms_expander - Plugin: Replaces acronyms (or other strings) with given expansions/substitutes
 net-im/gajim-plugins:anti_spam - Plugin: Block some incoming messages
 net-im/gajim-plugins:clients_icons - Plugin: Shows the client icons in the roster and in groupchats
@@ -610,6 +611,7 @@ net-print/hpuld:scanner - Enable scanner on multifunction devices which support 
 net-vpn/cloudflare-warp:systray - Enable systray indicator of whether WARP is active
 net-vpn/fastd:doc - Build and install manpages
 net-vpn/fastd:offload-l2tp - Offload L2TP traffic to the kernel when using the null@l2tp transport method
+net-wireless/bluetuith:doc - Install html docs
 sci-biology/cmdock:apidoc - Build API documentation using app-doc/doxygen
 sci-biology/cmdock:boinc - Use CmDock with SiDock@home BOINC project
 sci-electronics/open_pdks:sky130 - Build the Skywater 130nm PDK.
@@ -991,6 +993,7 @@ sys-process/nq:tq - Install tq, a tmux & screen wrapper
 www-apps/forgejo:acct - User and group management via acct-*/git packages
 www-client/badwolf:webkit41 - Use net-libs/webkit-gtk:4.1 (uses libsoup3 and so allows HTTP/2) instead of net-libs/webkit-gtk:4
 www-client/vimb:adblock - Use www-misc/wyebadblock for adblocking
+www-client/yandex-browser:ffmpeg-codecs - Use www-plugins/yandex-browser-ffmpeg-codecs-bin for multi-threaded ffmpeg codecs for the HTML5 <audio> and <video> tags
 www-plugins/firefoxpwa:custom-cflags - Disable the default use of clang and lld with LTO and all other manipulations of CFLAGS. Disabling this may cause the build and/or LTO to fail.
 www-plugins/firefoxpwa:lto - Enable Link Time Optimization (LTO)
 www-servers/hinsightd:cgi - Enable old/slow cgi support (legacy should not be used)
