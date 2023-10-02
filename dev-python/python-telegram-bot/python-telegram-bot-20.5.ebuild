@@ -4,7 +4,7 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{10..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 inherit distutils-r1 optfeature
 
 DESCRIPTION="Python wrapper of telegram bots API"
@@ -19,7 +19,7 @@ IUSE=""
 RDEPEND="
 	>=dev-python/cachetools-5.3.0[${PYTHON_USEDEP}]
 	>=dev-python/cryptography-39.0.1[${PYTHON_USEDEP}]
-	>=dev-python/httpx-0.23.3[${PYTHON_USEDEP}]
+	>=dev-python/httpx-0.24.0[${PYTHON_USEDEP}]
 	>=dev-python/tornado-6.2[${PYTHON_USEDEP}]
 	dev-python/setuptools[${PYTHON_USEDEP}]
 "
@@ -37,8 +37,6 @@ BDEPEND="
 PATCHES=(
 	"${FILESDIR}/${P}-no-internet-tests.patch"
 )
-
-S="${WORKDIR}/${PN}-${PV}"
 
 distutils_enable_tests pytest
 
