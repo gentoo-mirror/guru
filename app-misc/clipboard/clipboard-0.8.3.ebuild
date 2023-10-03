@@ -16,34 +16,26 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE="X wayland lto debug"
 
-RDEPEND="X? ( x11-libs/libX11 )
+RDEPEND="X? (
+			x11-libs/libX11
+			x11-libs/libXext
+		)
 		wayland? (
 			dev-libs/wayland-protocols
 			dev-libs/wayland
 		)
+		media-libs/alsa-lib
 "
 S="${WORKDIR}/${MY_P}"
-
-PATCHES=(
-	"${FILESDIR}/disable-git-and-lto.patch"
-)
-
-src_prepare() {
-	if ! use wayland; then
-		sed -i '/pkg_check_modules(WAYLAND_CLIENT wayland-client wayland-protocols)/d' CMakeLists.txt || die
-	fi
-
-	if ! use debug; then
-		eapply "${FILESDIR}/disable-debug-info.patch"
-	fi
-	cmake_src_prepare
-}
 
 src_configure() {
 	local mycmakeargs=(
 	"-DCMAKE_INSTALL_LIBDIR=$(get_libdir)"
-	"-DCMAKE_INTERPROCEDURAL_OPTIMIZATION=$(usex lto TRUE FALSE)"
 	"-DCMAKE_DISABLE_FIND_PACKAGE_X11=$(usex X OFF ON)"
+	"-DCMAKE_C_FLAGS=$(usex debug "${CFLAGS}" "${CFLAGS} -DNDEBUG")"
+	"-DCMAKE_CXX_FLAGS=$(usex debug "${CXXFLAGS}" "${CXXFLAGS} -DNDEBUG")"
+	"-DNO_WAYLAND=$(usex wayland FALSE TRUE)"
+	"-DNO_LTO=$(usex lto FALSE TRUE)"
 	)
 	cmake_src_configure
 }

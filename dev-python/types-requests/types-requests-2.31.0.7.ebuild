@@ -19,4 +19,5 @@ SLOT="0"
 LICENSE="Apache-2.0"
 KEYWORDS="~amd64"
 
-RDEPEND="dev-python/types-urllib3"
+# Depends on _typeshed util stub module bundled with mypy and other type checkers.
+RDEPEND=">=dev-python/urllib3-2"
