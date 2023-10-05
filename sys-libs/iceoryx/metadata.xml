@@ -3,10 +3,9 @@
 <pkgmetadata>
 	<!-- maintainer-needed -->
 	<upstream>
-		<maintainer>
-			<name>TSUYUSATO Kitsune</name>
-			<email>make.just.on@gmail.com</email>
-		</maintainer>
-		<remote-id type="github">MakeNowJust/crustache</remote-id>
+		<remote-id type="github">eclipse-iceoryx/iceoryx</remote-id>
 	</upstream>
+	<use>
+		<flag name='ccache'>Enable ccache support</flag>
+	</use>
 </pkgmetadata>
