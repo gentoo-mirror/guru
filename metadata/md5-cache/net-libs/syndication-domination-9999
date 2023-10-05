@@ -1,0 +1,15 @@
+BDEPEND=>=dev-util/meson-0.62.2 >=dev-util/ninja-1.8.2 dev-util/meson-format-array >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile configure install test unpack
+DEPEND=app-text/htmltidy dev-libs/libfmt dev-libs/pugixml python? ( >=dev-lang/python-3.11 dev-python/pybind11 )
+DESCRIPTION=An RSS/Atom parser, because there's nothing else out there.
+EAPI=8
+HOMEPAGE=https://gitlab.com/gabmus/syndication-domination
+INHERIT=meson git-r3
+IUSE=debug json-binary +python
+LICENSE=AGPL-3
+PROPERTIES=live
+RDEPEND=app-text/htmltidy dev-libs/libfmt dev-libs/pugixml python? ( >=dev-lang/python-3.11 dev-python/pybind11 )
+REQUIRED_USE=^^ ( python json-binary )
+SLOT=0
+_eclasses_=multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	f3010c780f65d1bb5aea15a9af1adc9c	toolchain-funcs	fbbbc99d10168de2926e06da7169b8dc	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	12aa0037eb004139215ff04894d52b28	meson	08b7183c3f4811568ee93eb0f79a89fe	git-r3	2358a7b20091609e24bd3a83b3ac5991
+_md5_=391442c97c8181448e0aaa3109611d87
