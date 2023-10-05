@@ -1,0 +1,15 @@
+BDEPEND=dev-go/go-bindata >=dev-lang/go-1.18 app-arch/unzip
+DEFINED_PHASES=compile install unpack
+DEPEND=|| ( www-client/firefox:* www-client/firefox-bin:* )
+DESCRIPTION=A fully-modern text-based browser, rendering to TTY and browsers
+EAPI=8
+HOMEPAGE=https://www.brow.sh https://github.com/browsh-org/browsh
+INHERIT=go-module
+KEYWORDS=~amd64 ~arm64
+LICENSE=Apache-2.0 BSD BSD-2 CC0-1.0 CC-BY-3.0 ISC LGPL-2.1 MIT MPL-2.0
+RDEPEND=|| ( www-client/firefox:* www-client/firefox-bin:* )
+RESTRICT=strip
+SLOT=0
+SRC_URI=https://github.com/browsh-org/browsh/archive/refs/tags/v1.8.2.tar.gz -> browsh-1.8.2.tar.gz https://github.com/browsh-org/browsh/releases/download/v1.8.2/browsh-1.8.2.xpi https://gentoo.kropotkin.rocks/go-pkgs/browsh-1.8.2-vendor.tar.xz
+_eclasses_=multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	fbbbc99d10168de2926e06da7169b8dc	multilib	c19072c3cd7ac5cb21de013f7e9832e0	go-module	8624eede24936fd7666e5298e5332f22
+_md5_=a07d05c5cf3f79828c1f90a573bae023

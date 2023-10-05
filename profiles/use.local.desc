@@ -671,7 +671,6 @@ sci-libs/superlu_dist:single-precision - Enable single precision library
 sci-mathematics/clasp:tools - whether or not to build the clasp application
 sci-mathematics/clingo:tools - whether or not to build the clingo tool
 sci-mathematics/frama-c-aorai:eva - Build support for the Eva plugin
-sci-mathematics/frama-c-wp:coq - Precompile coq libraries
 sci-mathematics/minisat+:bignum - Build the bignum variant of minisat+
 sci-mathematics/the-omega-project:gui - Build petit with gui
 sci-mathematics/the-omega-project:htmldoc - Build html documentation
@@ -978,6 +977,7 @@ sys-kernel/usermode-kernel:initramfs - Build initramfs along with the kernel.
 sys-kernel/usermode-kernel:iomem - Enable CONFIG_MMAPPER
 sys-kernel/usermode-kernel:pic - Enable the use of position independent code
 sys-kernel/xpmem:modules - Build the kernel module
+sys-libs/iceoryx:ccache - Enable ccache support
 sys-libs/safeclib:constraint-handler - enable C11 invoke_safe_{str,mem}_constraint_handler for less performance, bigger size and more flexibility
 sys-libs/safeclib:extensions - enable additional functions not defined in the C11 specification
 sys-libs/safeclib:norm-compat - Enable NFKC and NFKD modes for wcsnorm
