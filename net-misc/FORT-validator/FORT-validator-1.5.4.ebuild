@@ -1,7 +1,7 @@
 # Copyright 2020-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 inherit autotools fcaps systemd
 
@@ -32,7 +32,7 @@ BDEPEND="
 	sys-devel/automake
 "
 
-S="${WORKDIR}/fort-${PV}"
+S="${WORKDIR}/${MY_PN}-${PV}"
 
 src_prepare() {
 	default
@@ -40,6 +40,8 @@ src_prepare() {
 	sed -i 's/fort_CFLAGS  =/fort_CFLAGS  = ${CFLAGS} /' src/Makefile.am || die
 	# Don't test network
 	sed -i '/http/d' test/Makefile.am || die
+	# Don’t compile debug by default
+	sed -i '/fort_CFLAGS/ s/ -g / /' src/Makefile.am || die
 	eautoreconf
 }
 
