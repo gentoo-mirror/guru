@@ -8,18 +8,13 @@ inherit go-module
 DESCRIPTION="distributed, offline-first bug tracker"
 HOMEPAGE="https://github.com/MichaelMure/git-bug"
 
-inherit git-r3
-EGIT_REPO_URI="https://github.com/MichaelMure/${PN}"
+SRC_URI="https://github.com/MichaelMure/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI+=" https://gentoo.kropotkin.rocks/go-pkgs/${P}-vendor.tar.xz"
 
+RESTRICT="strip"
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS=""
-
-src_unpack() {
-	default
-	git-r3_src_unpack
-	go-module_live_vendor
-}
+KEYWORDS="~amd64 ~arm64 ~x86"
 
 src_compile() {
 	ego generate
