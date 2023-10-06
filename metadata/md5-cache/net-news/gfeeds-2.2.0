@@ -1,15 +1,16 @@
 BDEPEND=>=dev-util/meson-0.58 >=dev-util/meson-0.62.2 >=dev-util/ninja-1.8.2 dev-util/meson-format-array
 DEFINED_PHASES=compile configure install postinst postrm setup test
-DEPEND=python_single_target_python3_11? ( dev-lang/python:3.11 ) python_single_target_python3_11? ( dev-python/beautifulsoup4[python_targets_python3_11(-)] dev-python/html5lib[python_targets_python3_11(-)] dev-python/humanize[python_targets_python3_11(-)] dev-python/pillow[python_targets_python3_11(-)] dev-python/pygments[python_targets_python3_11(-)] dev-python/python-magic[python_targets_python3_11(-)] dev-python/pytz[python_targets_python3_11(-)] dev-python/readability-lxml[python_targets_python3_11(-)] dev-python/requests[python_targets_python3_11(-)] ) gui-libs/gtk:4 gui-libs/libadwaita ~net-libs/syndication-domination-9999[python] net-libs/webkit-gtk:6
+DEPEND=python_single_target_python3_11? ( dev-lang/python:3.11 ) python_single_target_python3_11? ( dev-python/beautifulsoup4[python_targets_python3_11(-)] dev-python/html5lib[python_targets_python3_11(-)] dev-python/humanize[python_targets_python3_11(-)] dev-python/pillow[python_targets_python3_11(-)] dev-python/pygments[python_targets_python3_11(-)] dev-python/python-dateutil[python_targets_python3_11(-)] dev-python/python-magic[python_targets_python3_11(-)] dev-python/pytz[python_targets_python3_11(-)] dev-python/readability-lxml[python_targets_python3_11(-)] dev-python/requests[python_targets_python3_11(-)] ) dev-util/blueprint-compiler gui-libs/gtk:4 gui-libs/libadwaita net-libs/syndication-domination[python] net-libs/webkit-gtk:6
 DESCRIPTION=An RSS/Atom feed reader for GNOME.
 EAPI=8
 HOMEPAGE=https://gitlab.gnome.org/World/gfeeds
 INHERIT=gnome2-utils meson python-single-r1
 IUSE=debug +python_single_target_python3_11
+KEYWORDS=~amd64
 LICENSE=GPL-3
-RDEPEND=python_single_target_python3_11? ( dev-lang/python:3.11 ) python_single_target_python3_11? ( dev-python/beautifulsoup4[python_targets_python3_11(-)] dev-python/html5lib[python_targets_python3_11(-)] dev-python/humanize[python_targets_python3_11(-)] dev-python/pillow[python_targets_python3_11(-)] dev-python/pygments[python_targets_python3_11(-)] dev-python/python-magic[python_targets_python3_11(-)] dev-python/pytz[python_targets_python3_11(-)] dev-python/readability-lxml[python_targets_python3_11(-)] dev-python/requests[python_targets_python3_11(-)] ) gui-libs/gtk:4 gui-libs/libadwaita ~net-libs/syndication-domination-9999[python] net-libs/webkit-gtk:6
+RDEPEND=python_single_target_python3_11? ( dev-lang/python:3.11 ) python_single_target_python3_11? ( dev-python/beautifulsoup4[python_targets_python3_11(-)] dev-python/html5lib[python_targets_python3_11(-)] dev-python/humanize[python_targets_python3_11(-)] dev-python/pillow[python_targets_python3_11(-)] dev-python/pygments[python_targets_python3_11(-)] dev-python/python-dateutil[python_targets_python3_11(-)] dev-python/python-magic[python_targets_python3_11(-)] dev-python/pytz[python_targets_python3_11(-)] dev-python/readability-lxml[python_targets_python3_11(-)] dev-python/requests[python_targets_python3_11(-)] ) dev-util/blueprint-compiler gui-libs/gtk:4 gui-libs/libadwaita net-libs/syndication-domination[python] net-libs/webkit-gtk:6
 REQUIRED_USE=^^ ( python_single_target_python3_11 )
 SLOT=0
 SRC_URI=https://gitlab.gnome.org/World/gfeeds/-/archive/2.2.0/gfeeds-2.2.0.tar.bz2
 _eclasses_=toolchain-funcs	fbbbc99d10168de2926e06da7169b8dc	multilib	c19072c3cd7ac5cb21de013f7e9832e0	xdg-utils	baea6080dd821f5562d715887954c9d3	gnome2-utils	b0183db3b2e07b18f3b77bffec72e116	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	f3010c780f65d1bb5aea15a9af1adc9c	python-utils-r1	12aa0037eb004139215ff04894d52b28	meson	08b7183c3f4811568ee93eb0f79a89fe	python-single-r1	75118e916668a74c660a13b0ecb22562
-_md5_=ac93ced194afa770faec655fa3e12627
+_md5_=4de92f669b192aaf66225967517036fe

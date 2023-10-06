@@ -1168,7 +1168,7 @@ dev-python/types-paramiko 2.10.0 2.11.1: Typing stubs for paramiko
 dev-python/types-protobuf 4.24.0.1 4.24.0.2: Typing stubs for protobuf
 dev-python/types-python-dateutil 2.8.17 2.8.18: Typing stubs for python-dateutil
 dev-python/types-pytz 2021.3.8 2022.1.1: Typing stubs for pytz
-dev-python/types-requests 2.31.0.6 2.31.0.7: Typing stubs for requests
+dev-python/types-requests 2.31.0.6 2.31.0.8: Typing stubs for requests
 dev-python/types-urllib3 1.26.25.14: Typing stubs for urllib3
 dev-python/typing_inspect 0.7.1: Runtime inspection utilities for Python typing module
 dev-python/ufo2ft 2.31.1: A bridge from UFOs to FontTools
@@ -1407,6 +1407,7 @@ gui-apps/fnott 1.2.1 1.3.0 1.4.1 9999: Keyboard driven and lightweight Wayland n
 gui-apps/fuzzel 1.9.2 9999: Application launcher for wlroots based Wayland compositors.
 gui-apps/gcolor3 2.4.0: A simple color chooser written in GTK3
 gui-apps/gradience 0.3.0-r1: GNOME's main interface to configure various aspects of the desktop
+gui-apps/grimshot 9999: A helper for screenshots within sway
 gui-apps/gtklock 2.0.1 2.1.0: GTK-based lockscreen for Wayland
 gui-apps/gtklock-extras 9999: Gtklock modules
 gui-apps/hiprompt-gtk-py 0_pre20220624 9999: GTK+ Himitsu prompter for Wayland
@@ -1667,7 +1668,7 @@ net-libs/libuecc 7: a very small Elliptic Curve Cryptography library compatible 
 net-libs/orcania 2.3.2: Library for angharad programs
 net-libs/picotls 0_pre20220721 9999: TLS 1.3 implementation in C
 net-libs/signald 0.23.2: an API for interacting with Signal Private Messenger
-net-libs/syndication-domination 9999: An RSS/Atom parser, because there's nothing else out there.
+net-libs/syndication-domination 1.0 9999: An RSS/Atom parser, because there's nothing else out there.
 net-libs/td 1.8.0 9999: Cross-platform library for building Telegram clients
 net-libs/telepathy-haze 0.8.1: Telepathy connection manager providing libpurple supported protocols
 net-libs/udt 4.11_p20181126: UDT is a UDP based data transport protocol
@@ -1676,7 +1677,7 @@ net-libs/usockets 0.8.1_p20211023 9999: tiny eventing, networking & crypto for a
 net-mail/dovecot-fts-xapian 1.5.4 1.5.5 9999: Dovecot FTS plugin backed by Xapian
 net-mail/hydroxide 0.2.23 0.2.24 0.2.26 0.2.27 0.2.28 9999: A third-party, open-source ProtonMail CardDAV, IMAP and SMTP bridge
 net-mail/pop 0.2.0: Send emails from your terminal
-net-misc/FORT-validator 1.5.2 1.5.3 1.5.3_p20220607: FORT validator is an open source RPKI validator
+net-misc/FORT-validator 1.5.3 1.5.4: FORT validator is an open source RPKI validator
 net-misc/can-utils 2021.08.0 2023.03 9999-r3: CAN userspace utilities and tools
 net-misc/clatd 1.6: A CLAT / SIIT-DC Edge Relay implementation for Linux
 net-misc/curlie 1.7.1: Curlie is a frontend to curl that adds the ease of use of httpie
@@ -1686,7 +1687,7 @@ net-misc/facebook-ptp 0_pre20211123: Facebook's PTP libraries
 net-misc/fedigroup 1.0.6 1.0.8: Emulate group accounts on Mastodon/Pleroma
 net-misc/freetube-bin 0.17.1 0.19.0: A private YouTube desktop client
 net-misc/gdown 4.7.1: Google Drive direct download of big files
-net-misc/gemget 1.8.0: Command line downloader for the Gemini protocol
+net-misc/gemget 1.9.0: Command line downloader for the Gemini protocol
 net-misc/gemserv 0.6.5 0.6.6: A gemini Server written in rust
 net-misc/giara 1.0.1 1.1.0: An app for Reddit
 net-misc/gmid 1.8.5 1.8.6 9999: Simple and secure Gemini server
@@ -1696,7 +1697,7 @@ net-misc/maestral 1.8.0: Maestral is an open-source Dropbox client written in Py
 net-misc/maestral-qt 1.8.0: Maestral is an open-source Dropbox client written in Python
 net-misc/mastorss 0.13.0 0.13.1 9999: Another RSS to Mastodon bot
 net-misc/megasync 4.3.8.0 4.5.0.0 9999: The official Qt-based program for syncing your MEGA account in your PC
-net-misc/myip 1.2.0: Get your external IP address using STUN server
+net-misc/myip 1.2.1: Get your external IP address using STUN server
 net-misc/ooni-probe-cli 3.18.0 3.18.1: OONI Probe network measurement tool for detecting internet censorship
 net-misc/openbgpd 6.9_p0 8.0 9999: OpenBGPD is a free implementation of BGPv4
 net-misc/peertube-viewer-rs 1.8.4-r1: Command-line PeerTube viewer inspired by youtube-viewer
@@ -1856,7 +1857,7 @@ sys-apps/lsplug 4: Replacement for lsusb that shows more useful info and less us
 sys-apps/mission-center 0.3.2: Monitor your CPU, Memory, Disk, Network and GPU usage.
 sys-apps/nvimpager 0.11.0: Use nvim as a pager to view manpages, diff, etc with nvim's syntax highlighting.
 sys-apps/openSeaChest 22.07 23.03.1: SeaGate's open source harddrive control utilities
-sys-apps/ov 0.11.1 0.11.2: Feature-rich terminal pager
+sys-apps/ov 0.11.2 0.32.0: Feature-rich terminal pager
 sys-apps/pnpm-bin 8.7.5: Fast, disk space efficient package manager, alternative to npm and yarn
 sys-apps/qemu-openrc 0.10.0 9999: OpenRC init script for QEMU/KVM
 sys-apps/qjournalctl 0.6.2: Qt-based GUI for systemd's journalctl command
@@ -1936,8 +1937,8 @@ sys-fs/diskonaut 0.10.0 0.11.0 9999: Terminal disk space visual navigator
 sys-fs/dua-cli 2.20.1: A tool to conveniently learn about the disk usage of directories, fast!
 sys-fs/dwarfs 0.7.2-r1: A fast very high compression read-only FUSE file system
 sys-fs/dwarfs-bin 0.7.2: Static version of a fast very high compression read-only FUSE file system
-sys-fs/gcsfuse 0.42.4: A user-space file system for interacting with Google Cloud Storage
-sys-fs/gdu 5.13.2 5.14.0: Disk usage analyzer with console interface written in Go
+sys-fs/gcsfuse 1.2.0: A user-space file system for interacting with Google Cloud Storage
+sys-fs/gdu 5.14.0 5.25.0: Disk usage analyzer with console interface written in Go
 sys-fs/gfs2-utils 3.4.1: Shared-disk cluster file system
 sys-fs/mountpoint-s3-bin 1.0.1: Fuse for AWS S3 (Simple Storage Service), official
 sys-fs/ntfs2btrfs 20230501: Conversion tool from NTFS to Btrfs

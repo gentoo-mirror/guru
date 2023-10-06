@@ -1,0 +1,13 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=install unpack
+DESCRIPTION=A helper for screenshots within sway
+EAPI=8
+HOMEPAGE=https://github.com/OctopusET/sway-contrib
+INHERIT=git-r3
+IUSE=libnotify
+LICENSE=MIT
+PROPERTIES=live
+RDEPEND=app-misc/jq gui-apps/grim gui-apps/slurp gui-apps/wl-clipboard gui-wm/sway !!<=gui-wm/sway-1.8.1[grimshot] libnotify? ( x11-libs/libnotify )
+SLOT=0
+_eclasses_=git-r3	2358a7b20091609e24bd3a83b3ac5991
+_md5_=5d74c0e3f14f9e491d78f03285e09dbd
