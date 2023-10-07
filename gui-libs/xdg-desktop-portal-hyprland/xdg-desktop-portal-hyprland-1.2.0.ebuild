@@ -1,9 +1,9 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 2022-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-inherit meson
+inherit meson toolchain-funcs
 
 DESCRIPTION="xdg-desktop-portal backend for hyprland"
 HOMEPAGE="https://github.com/hyprwm/xdg-desktop-portal-hyprland"
@@ -24,6 +24,7 @@ REQUIRED_USE="?? ( elogind systemd )"
 
 DEPEND="
 	>=media-video/pipewire-0.3.41:=
+	dev-cpp/sdbus-c++
 	dev-libs/inih
 	dev-libs/wayland
 	dev-qt/qtbase
@@ -48,18 +49,21 @@ BDEPEND="
 	>=dev-libs/wayland-protocols-1.24
 	dev-libs/hyprland-protocols
 	virtual/pkgconfig
+	|| ( >=sys-devel/gcc-13:* >=sys-devel/clang-17:* )
 "
 
-src_configure() {
-	local emesonargs=()
-	if use systemd; then
-		emesonargs+=(-Dsd-bus-provider=libsystemd)
-	elif use elogind; then
-		emesonargs+=(-Dsd-bus-provider=libelogind)
-	else
-		emesonargs+=(-Dsd-bus-provider=basu)
+pkg_setup() {
+		[[ ${MERGE_TYPE} == binary ]] && return
+
+	if tc-is-gcc && ver_test $(gcc-version) -lt 13 ; then
+		eerror "XDPH needs >=gcc-13 or >=clang-17 to compile."
+		eerror "Please upgrade GCC: emerge -v1 sys-devel/gcc"
+		die "GCC version is too old to compile XDPH!"
+	elif tc-is-clang && ver_test $(clang-version) -lt 17 ; then
+		eerror "XDPH needs >=gcc-13 or >=clang-17 to compile."
+		eerror "Please upgrade Clang: emerge -v1 sys-devel/clang"
+		die "Clang version is too old to compile XDPH!"
 	fi
-	meson_src_configure
 }
 
 src_compile() {
