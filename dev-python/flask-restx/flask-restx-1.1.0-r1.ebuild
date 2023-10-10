@@ -4,7 +4,7 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_10)
+PYTHON_COMPAT=( python3_{11,12})
 inherit distutils-r1
 
 DESCRIPTION="Framework API development with Flask"
@@ -13,8 +13,10 @@ SRC_URI="https://github.com/python-restx/${PN}/archive/${PV}.tar.gz -> ${P}.tar.
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~amd64"
 IUSE="test"
+
+PATCHES=( "${FILESDIR}/${PN}-fix-flask-compat.patch" )
 
 RDEPEND="
 	dev-python/aniso8601[${PYTHON_USEDEP}]
