@@ -1,0 +1,16 @@
+BDEPEND=virtual/pkgconfig doc? ( app-text/docbook-xml-dtd:4.3 app-text/xmlto ) sys-devel/gnuconfig >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.5:1.16 ) >=sys-devel/autoconf-2.71-r5 >=sys-devel/libtool-2.4.7 virtual/pkgconfig
+DEFINED_PHASES=configure install prepare
+DEPEND=sys-apps/dbus[selinux?] pam? ( sys-libs/pam ) selinux? ( sec-policy/selinux-oddjob sys-libs/libselinux )
+DESCRIPTION=A D-Bus service which runs odd jobs on behalf of client applications
+EAPI=8
+HOMEPAGE=https://pagure.io/oddjob
+INHERIT=autotools systemd
+IUSE=doc examples pam selinux
+KEYWORDS=~amd64
+LICENSE=BSD
+RDEPEND=sys-apps/dbus[selinux?] pam? ( sys-libs/pam ) selinux? ( sec-policy/selinux-oddjob sys-libs/libselinux )
+RESTRICT=test
+SLOT=0
+SRC_URI=https://releases.pagure.org/oddjob/oddjob-0.34.7.tar.gz
+_eclasses_=gnuconfig	b6b3e92f8b8c996400074b5f61a59256	toolchain-funcs	fbbbc99d10168de2926e06da7169b8dc	multilib	c19072c3cd7ac5cb21de013f7e9832e0	libtool	9d3a9a889a6fa62ae794f817c156491b	autotools	6ae9a4347149b19a112caa1182d03bde	systemd	c8b03e8df84486aa991d4396686e8942
+_md5_=39189369a177cf36c424726e7a43e28c
