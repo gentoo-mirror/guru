@@ -87,7 +87,7 @@ app-admin/pass-update 2.1: pass extension that provides an easy flow for updatin
 app-admin/pulumi-bin 3.81.0 3.86.0 3.88.0: Infrastructure as code in any programming language
 app-admin/rbw 9999: unofficial bitwarden cli
 app-admin/s-tui 1.1.3-r1: Stress-Terminal UI monitoring tool
-app-admin/synadm 0.43 0.43.1: Command line admin tool for Synapse
+app-admin/synadm 0.43.1 0.44: Command line admin tool for Synapse
 app-admin/terragrunt-bin 0.38.6 0.45.4 0.50.8: A thin wrapper for Terraform
 app-admin/zenmonitor3 2.0.0: Zen monitor is monitoring software for AMD Zen-based CPUs
 app-arch/7zip 23.01: A free file archiver for extremely high compression
@@ -679,7 +679,7 @@ dev-libs/octetos-db 1.3.2_alpha 1.3.3_alpha: C++ library for Database Acces.
 dev-libs/octetos-db-abstract 0.1.2_alpha 0.6.0_alpha: API to access database, abstract component.
 dev-libs/octetos-db-maria 1.4.2_alpha 1.9.2_alpha 9999: C++ library for Database Acces.
 dev-libs/octetos-db-postgresql 1.3.9_alpha 1.3.10_alpha: C++ library for Database Acces.
-dev-libs/open62541 1.3.7: Open source C implementation of OPC UA
+dev-libs/open62541 1.3.8: Open source C implementation of OPC UA
 dev-libs/perfstubs 0_pre20210915: Profiling API for adding external tool instrumentation support to any project
 dev-libs/polyseed 1.0.0 2.0.0 9999: Mnemonic seed library for Monero and other CryptoNote-based currencies.
 dev-libs/properties-cpp 0.0.2: Simple convenience library for handling properties and signals in C++11
@@ -1330,7 +1330,7 @@ games-emulation/rpcs3 9999: PS3 emulator/debugger
 games-emulation/yuzu 0_p20230202 9999: An emulator for Nintendo Switch
 games-engines/boxtron 0.5.4-r2: Steam Play compatibility tool to run DOS games using native Linux DOSBox
 games-engines/easyrpg-player 0.7.0 0.8 0.8-r1: RPG Maker 2000/2003 and EasyRPG games interpreter
-games-engines/fs2_open 22.2.0 23.0.0: FreeSpace2 Source Code Project game engine
+games-engines/fs2_open 23.0.0 23.2.0: FreeSpace2 Source Code Project game engine
 games-engines/instead 3.3.5 3.4.1 9999: INSTEAD text-based quest game engine
 games-engines/luxtorpeda 25.0.0: Steam Play compatibility tool to run games using native Linux engines
 games-engines/nxengine-evo 2.6.4: rewrite of the jump-and-run platformer Doukutsu Monogatari(Cave Story)
@@ -1561,7 +1561,7 @@ media-sound/callaudiod 0.1.7 0.1.9: Call audio routing daemon
 media-sound/drumgizmo 0.9.20 9999: Cross-platform drum plugin and stand-alone application
 media-sound/dzr 230919: DZR: the command line deezer.com player
 media-sound/eartag 0.5.0: GTK4 MusicBrainz audio tagger
-media-sound/g4music 3.2 3.3: A GTK4 music player
+media-sound/g4music 3.3 3.4: A GTK4 music player
 media-sound/hushboard 0.0_pre20220518 9999: Mutes your microphone while you are typing
 media-sound/ibniz 1.18-r1: virtual machine designed for extremely compact low-level audiovisual programs
 media-sound/jacktrip 1.7.1-r1: Send JACK audio over a network
@@ -1728,7 +1728,7 @@ net-nntp/inn 2.7.1: InterNetNews - the Internet meets Netnews
 net-nntp/pan 0.154-r1: A newsreader for GNOME
 net-p2p/bisq-bin 1.9.9: The decentralized bitcoin exchange (non-atomic, with arbitration)
 net-p2p/dogecoin-qt 1.14.6: Dogecoin Core Qt for desktop. Downloaded blockchain is under 2.2GB. Much secure.
-net-p2p/feather 2.4.5 2.4.9 2.4.9-r1 2.5.0 9999: A free, open-source Monero wallet
+net-p2p/feather 2.4.9-r1 2.5.1 9999: A free, open-source Monero wallet
 net-p2p/fragments 2.1-r1 2.1.1: Fragments is an easy to use BitTorrent client
 net-p2p/ipfs-cluster 1.0.1 1.0.2: Pinset orchestration for IPFS
 net-p2p/monero 0.17.2.0 0.17.2.3 0.17.3.0 0.17.3.2 0.18.1.0 0.18.1.1 0.18.1.2 0.18.2.0 0.18.2.2 0.18.3.1 9999: The secure, private, untraceable cryptocurrency
@@ -1747,8 +1747,8 @@ net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that 
 net-wireless/bluetuith 0.1.7 9999: A TUI bluetooth manager for Linux written in Go
 net-wireless/rtl8192eu 0_pre20230613: Realtek 8192EU driver module for Linux kernel
 net-wireless/rtl8723bu 9999: Driver for the rtl8723 wireless chipset
-net-wireless/rtl8821ce 0_pre20230504: Realtek RTL8821CE Driver module for Linux kernel
-net-wireless/rtl8821cu 0_pre20230719: Realtek 8821CU/RTL8811CU module for Linux kernel
+net-wireless/rtl8821ce 0_pre20231002: Realtek RTL8821CE Driver module for Linux kernel
+net-wireless/rtl8821cu 0_pre20230925: Realtek 8821CU/RTL8811CU module for Linux kernel
 sci-biology/cmdock 0.2.0: Program for docking ligands to proteins and nucleic acids
 sci-biology/geneathome 1.10-r5: BOINC application for expanding Gene Regulatory Networks (GRN)
 sci-chemistry/vesta-bin 3.5.8: Visualisation for Electronic and STructural Analysis.
@@ -1860,7 +1860,7 @@ sys-apps/hex 0.3.2 0.4.0 0.4.1 0.4.2: Futuristic take on hexdump
 sys-apps/intel-cmt-cat 4.4.0: User space software for Intel(R) Resource Director Technology
 sys-apps/loclone 0.1.0: A tool for creating CoW snapshots on XFS
 sys-apps/lsplug 4: Replacement for lsusb that shows more useful info and less useless info
-sys-apps/mission-center 0.3.2: Monitor your CPU, Memory, Disk, Network and GPU usage.
+sys-apps/mission-center 0.3.2 0.3.3: Monitor your CPU, Memory, Disk, Network and GPU usage.
 sys-apps/nvimpager 0.11.0: Use nvim as a pager to view manpages, diff, etc with nvim's syntax highlighting.
 sys-apps/openSeaChest 22.07 23.03.1: SeaGate's open source harddrive control utilities
 sys-apps/ov 0.11.2 0.32.0: Feature-rich terminal pager
@@ -2005,7 +2005,7 @@ www-apps/uwebsockets 20.11.0 20.14.0 9999: ultra fast, simple, secure & standard
 www-apps/whoogle-search 0.8.3: A self-hosted, ad-free, privacy-respecting metasearch engine
 www-client/badwolf 1.2.2 1.3.0 9999: Minimalist and privacy-oriented WebKitGTK+ browser
 www-client/browsh 1.8.2: A fully-modern text-based browser, rendering to TTY and browsers
-www-client/nyxt 3.7.0 3.8.0 9999: Nyxt - the hacker's power-browser
+www-client/nyxt 3.8.0 3.9.0 9999: Nyxt - the hacker's power-browser
 www-client/vimb 3.6.0 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
 www-client/woob 3.1-r1 9999: Web Outside Of Browsers (core, site modules and applications)
 www-client/yandex-browser 23.9.1.962_p1: The web browser from Yandex
