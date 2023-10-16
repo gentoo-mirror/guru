@@ -36,6 +36,7 @@ RDEPEND="
 	dev-python/requests-file[${PYTHON_USEDEP}]
 	dev-python/schema[${PYTHON_USEDEP}]
 	dev-python/tqdm[${PYTHON_USEDEP}]
+	<dev-python/urllib3-2.0.0[${PYTHON_USEDEP}]
 "
 
 distutils_enable_tests pytest
