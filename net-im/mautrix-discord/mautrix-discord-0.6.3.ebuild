@@ -22,6 +22,7 @@ RDEPEND="
 	dev-util/lottieconverter
 "
 DEPEND="${RDEPEND}"
+BDEPEND=">=dev-lang/go-1.20.0"
 
 src_compile() {
 	ego build
