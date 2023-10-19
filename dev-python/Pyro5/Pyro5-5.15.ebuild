@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{10..11} pypy3 )
+PYTHON_COMPAT=( python3_{10..12} pypy3 )
 DISTUTILS_USE_PEP517=setuptools
 
 inherit distutils-r1 pypi
@@ -29,5 +29,10 @@ distutils_enable_tests pytest
 distutils_enable_sphinx docs/source \
 	dev-python/sphinx-rtd-theme
 
-PROPERTIES="test_network"
-RESTRICT="test"
+EPYTEST_DESELECT=(
+	tests/test_socketutil.py::TestSocketutil::testGetInterface # https://github.com/irmen/Pyro5/issues/82
+)
+
+python_test() {
+	epytest -m 'not network'
+}

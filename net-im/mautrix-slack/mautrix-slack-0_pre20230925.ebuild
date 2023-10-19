@@ -5,7 +5,7 @@ EAPI=8
 
 inherit go-module systemd
 
-COMMIT="eb519c6407751b48001bb66bc55014100322b6c6"
+COMMIT="4530ff397d08d93b673cd71da4c2a75d969ca0df"
 DESCRIPTION="A Matrix-Slack puppeting bridge based on slack-go"
 HOMEPAGE="https://github.com/mautrix/slack"
 SRC_URI="https://github.com/mautrix/slack/archive/${COMMIT}.tar.gz -> ${P}.gh.tar.gz

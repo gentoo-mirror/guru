@@ -1,9 +1,9 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="8"
 
-PYTHON_COMPAT=( python3_{10..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 inherit python-r1 qmake-utils xdg
 
 DESCRIPTION="A open source IP-XACT-based tool"
@@ -17,7 +17,7 @@ if [[ "${PV}" == "9999" ]] ; then
 	EGIT_REPO_URI="https://github.com/${PN}/${PN}dev.git"
 else
 	SRC_URI="https://github.com/${PN}/${PN}dev/archive/v${PV}.tar.gz -> ${P}.tar.gz"
-	KEYWORDS="~amd64 ~arm ~arm64 ~hppa ~ppc ~ppc64 ~riscv ~x86"
+	KEYWORDS="~amd64"
 	S="${WORKDIR}/${PN}dev-${PV}"
 fi
 
@@ -27,13 +27,8 @@ REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 RDEPEND="
 	${PYTHON_DEPS}
-	dev-qt/qtcore:5
-	dev-qt/qtgui:5
-	dev-qt/qthelp:5
-	dev-qt/qtprintsupport:5
-	dev-qt/qtsvg:5
-	dev-qt/qtwidgets:5
-	dev-qt/qtxml:5
+	dev-qt/qtbase:6=[cups,gui,network,opengl,widgets,xml]
+	dev-qt/qtsvg:6
 "
 
 DEPEND="
@@ -42,7 +37,12 @@ DEPEND="
 
 BDEPEND="
 	dev-lang/swig
+	dev-qt/qttools:6[linguist,qdoc]
 "
+
+PATCHES=(
+	"${FILESDIR}"/${PN}-3.12.0-fix-createhelp.patch
+)
 
 src_prepare() {
 	default
@@ -50,25 +50,45 @@ src_prepare() {
 	while IFS= read -r -d '' i; do
 		echo "CONFIG+=nostrip" >> "${i}" || die
 	done < <(find . -type f '(' -name "*.pro" ')' -print0)
-	# Fix QTBIN_PATH
-	sed -i -e "s|QTBIN_PATH=.*|QTBIN_PATH=\"$(qt5_get_bindir)/\"|" configure || die
+	# Fix bug 854081
+	python_setup
+	sed -i -e "s|PYTHON_CONFIG=.*|PYTHON_CONFIG=${EPYTHON}-config|" .qmake.conf || die
+}
+
+src_configure() {
+	default
+	# Fix bug 854075
+	# Fix bug 854078
+	eqmake6 Kactus2.pro
+}
+
+src_compile() {
+	default
+	python_compile() {
+		cp -TR "${S}/" "${BUILD_DIR}/" || die
+		# Fix bug 854081
+		python_setup
+		sed -i -e "s|PYTHON_CONFIG=.*|PYTHON_CONFIG=${EPYTHON}-config|" .qmake.conf || die
+		export PYTHON_C_FLAGS="$(python_get_CFLAGS)"
+		export PYTHON_LIBS="$(python_get_LIBS)"
+		pushd "PythonAPI" || die
+		eqmake6 PREFIX="$(python_get_library_path)"
+		emake
+		rm -rf _pythonAPI.so || die
+		cp -rf libPythonAPI.so.1.0.0 _pythonAPI.so || die
+		popd
+	}
+	python_foreach_impl run_in_build_dir python_compile
 }
 
 src_install() {
 	# Can't use default, set INSTALL_ROOT and workaround parallel install bug
 	emake -j1 INSTALL_ROOT="${D}" install
 	python_install() {
-		export PYTHON_C_FLAGS="$(python_get_CFLAGS)"
-		export PYTHON_LIBS="$(python_get_LIBS)"
 		pushd "PythonAPI" || die
-		emake clean
-		eqmake5 PREFIX="$(python_get_library_path)"
-		emake
-		rm -rf _pythonAPI.so || die
-		cp -rf libPythonAPI.so.1.0.0 _pythonAPI.so || die
 		python_domodule _pythonAPI.so
 		python_domodule pythonAPI.py
 		popd
 	}
-	python_foreach_impl python_install
+	python_foreach_impl run_in_build_dir python_install
 }
