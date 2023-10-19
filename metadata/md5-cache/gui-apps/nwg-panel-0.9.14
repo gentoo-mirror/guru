@@ -1,15 +1,16 @@
-BDEPEND=python_targets_python3_10? ( dev-lang/python:3.10 ) python_targets_python3_11? ( dev-lang/python:3.11 ) >=dev-python/gpep517-15[python_targets_python3_10(-)?,python_targets_python3_11(-)?] >=dev-python/setuptools-67.8.0-r1[python_targets_python3_10(-)?,python_targets_python3_11(-)?] virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
-DEFINED_PHASES=compile configure install postinst postrm prepare test unpack
+BDEPEND=python_targets_python3_10? ( dev-lang/python:3.10 ) python_targets_python3_11? ( dev-lang/python:3.11 ) >=dev-python/gpep517-15[python_targets_python3_10(-)?,python_targets_python3_11(-)?] >=dev-python/setuptools-67.8.0-r1[python_targets_python3_10(-)?,python_targets_python3_11(-)?] virtual/pkgconfig
+DEFINED_PHASES=compile configure install postinst postrm prepare test
 DEPEND=x11-libs/gtk+:3 dev-python/pygobject[python_targets_python3_10(-)?,python_targets_python3_11(-)?] dev-python/psutil[python_targets_python3_10(-)?,python_targets_python3_11(-)?] dev-python/i3ipc[python_targets_python3_10(-)?,python_targets_python3_11(-)?] dev-python/dasbus[python_targets_python3_10(-)?,python_targets_python3_11(-)?] gui-apps/nwg-icon-picker media-sound/playerctl gui-libs/gtk-layer-shell
 DESCRIPTION=GTK3-based panel for sway and Hyprland Wayland compositors
 EAPI=8
 HOMEPAGE=https://github.com/nwg-piotr/nwg-panel
-INHERIT=desktop distutils-r1 systemd xdg-utils git-r3
+INHERIT=desktop distutils-r1 systemd xdg-utils
 IUSE=systemd python_targets_python3_10 python_targets_python3_11
+KEYWORDS=~amd64
 LICENSE=MIT
-PROPERTIES=live
 RDEPEND=x11-libs/gtk+:3 dev-python/pygobject[python_targets_python3_10(-)?,python_targets_python3_11(-)?] dev-python/psutil[python_targets_python3_10(-)?,python_targets_python3_11(-)?] dev-python/i3ipc[python_targets_python3_10(-)?,python_targets_python3_11(-)?] dev-python/dasbus[python_targets_python3_10(-)?,python_targets_python3_11(-)?] gui-apps/nwg-icon-picker media-sound/playerctl gui-libs/gtk-layer-shell python_targets_python3_10? ( dev-lang/python:3.10 ) python_targets_python3_11? ( dev-lang/python:3.11 )
 REQUIRED_USE=|| ( python_targets_python3_10 python_targets_python3_11 )
 SLOT=0
-_eclasses_=desktop	021728fdc1b03b36357dbc89489e0f0d	toolchain-funcs	fbbbc99d10168de2926e06da7169b8dc	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	e5cc383ea8420f92fe3737be790021dc	out-of-source-utils	1a9007554652a6e627edbccb3c25a439	multibuild	30dbf3c5a31db09a19f31ad0a68f2405	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	39e7a84b06eff4efd9f2e0c3d1668b98	python-utils-r1	12aa0037eb004139215ff04894d52b28	python-r1	8a28fa6d3e3bc96ff8a7eff2badbe71f	distutils-r1	d05609532b134be7c4ae2514f4c7d06e	systemd	c8b03e8df84486aa991d4396686e8942	xdg-utils	baea6080dd821f5562d715887954c9d3	git-r3	2358a7b20091609e24bd3a83b3ac5991
+SRC_URI=https://github.com/nwg-piotr/nwg-panel/archive/v0.9.14.tar.gz -> nwg-panel-0.9.14.tar.gz
+_eclasses_=desktop	021728fdc1b03b36357dbc89489e0f0d	toolchain-funcs	fbbbc99d10168de2926e06da7169b8dc	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	e5cc383ea8420f92fe3737be790021dc	out-of-source-utils	1a9007554652a6e627edbccb3c25a439	multibuild	30dbf3c5a31db09a19f31ad0a68f2405	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	39e7a84b06eff4efd9f2e0c3d1668b98	python-utils-r1	12aa0037eb004139215ff04894d52b28	python-r1	8a28fa6d3e3bc96ff8a7eff2badbe71f	distutils-r1	d05609532b134be7c4ae2514f4c7d06e	systemd	c8b03e8df84486aa991d4396686e8942	xdg-utils	baea6080dd821f5562d715887954c9d3
 _md5_=f9866c6f2d3f93ca0b44219276afea29

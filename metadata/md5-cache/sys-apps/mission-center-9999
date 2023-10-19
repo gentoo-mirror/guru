@@ -1,0 +1,17 @@
+BDEPEND=|| ( dev-lang/python:3.11 dev-lang/python:3.10 ) dev-libs/gobject-introspection >=dev-util/meson-0.63 dev-util/blueprint-compiler >=dev-vcs/git-1.8.2.1[curl] >=dev-util/meson-0.62.2 >=dev-util/ninja-1.8.2 dev-util/meson-format-array
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup test unpack
+DEPEND=dev-libs/wayland gui-libs/libadwaita >=gui-libs/gtk-4 gui-libs/egl-gbm virtual/rust virtual/udev x11-libs/libdrm
+DESCRIPTION=Monitor your CPU, Memory, Disk, Network and GPU usage.
+EAPI=8
+HOMEPAGE=https://missioncenter.io/
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=git-r3 gnome2-utils meson python-any-r1 xdg
+IUSE=debug
+LICENSE=GPL-3+
+PROPERTIES=live
+RDEPEND=dev-libs/wayland gui-libs/libadwaita >=gui-libs/gtk-4 gui-libs/egl-gbm virtual/rust virtual/udev x11-libs/libdrm sys-apps/dmidecode
+RESTRICT=network-sandbox
+SLOT=0
+SRC_URI=https://github.com/Syllo/nvtop/archive/be47f8c560487efc6e6a419d59c69bfbdb819324.tar.gz -> nvtop-be47f8c560487efc6e6a419d59c69bfbdb819324.tar.gz
+_eclasses_=git-r3	2358a7b20091609e24bd3a83b3ac5991	toolchain-funcs	fbbbc99d10168de2926e06da7169b8dc	multilib	c19072c3cd7ac5cb21de013f7e9832e0	xdg-utils	baea6080dd821f5562d715887954c9d3	gnome2-utils	b0183db3b2e07b18f3b77bffec72e116	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	39e7a84b06eff4efd9f2e0c3d1668b98	python-utils-r1	12aa0037eb004139215ff04894d52b28	meson	af1ca7ad21fdd31fcc4fa91d8abca977	python-any-r1	f5169813d1619761b459800587005fd2	xdg	4a14c5c24f121e7da66e5aab4a168c6e
+_md5_=a4c14fc4478839baff70cff6c297d035

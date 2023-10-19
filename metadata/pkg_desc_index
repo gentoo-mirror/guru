@@ -223,7 +223,7 @@ app-misc/neo 0.6.1 9999: cmatrix clone with 32-bit color and Unicode support
 app-misc/nerdfetch 5.0.2: A POSIX *nix fetch script using Nerdfonts
 app-misc/nonsense 0.7-r1: Generates random text from datafiles and templates
 app-misc/nwg-look 0.2.2 0.2.4: GTK3 settings editor adapted to work in the sway / wlroots environment
-app-misc/nwg-shell-wallpapers 1.1: Selection of wallpapers contributed to the nwg-shell project
+app-misc/nwg-shell-wallpapers 1.1 1.3: Selection of wallpapers contributed to the nwg-shell project
 app-misc/oddjob 0.34.7: A D-Bus service which runs odd jobs on behalf of client applications
 app-misc/onefetch 2.18.1: Command-line Git information tool
 app-misc/pfetch 0.6.0: A pretty system information tool written in POSIX sh
@@ -257,7 +257,7 @@ app-office/beancount 2.3.5-r2: A double-entry accounting system that uses text f
 app-office/drawio-desktop-bin 21.6.5: Diagram drawing application built on web technologies
 app-office/invoice 0.1.0: Generate invoices from the command line
 app-office/jameica-bin 2.10.4: Local platform for home banking
-app-office/joplin-bin 2.9.17: Note taking app, on Electron, can import notes from Evernote
+app-office/joplin-bin 2.13.1: Note taking app, on Electron, can import notes from Evernote
 app-office/khronos 4.0.0 4.0.1: A GTK4 time tracker for tasks
 app-office/lotus123r3 1.0.0_rc4: A native port of Lotus 1-2-3 to Linux.
 app-office/nixnote-bin 2.1.10 9999: Free and open source note taking app, compatible with Evernote sync server
@@ -855,7 +855,7 @@ dev-python/MutatorMath 3.0.1-r2: A library for piecewise linear interpolation in
 dev-python/NSKeyedUnArchiver 1.5: Unserializes binary|text|file|memory plist data to Python dict
 dev-python/PGPy 0.6.0: Pretty Good Privacy for Python
 dev-python/PyWavefront 1.3.3: Python library for importing Wavefront .obj files
-dev-python/Pyro5 5.14: Distributed object middleware for Python (RPC)
+dev-python/Pyro5 5.15: Distributed object middleware for Python (RPC)
 dev-python/PythonQwt 0.10.3 0.10.5: Qt plotting widgets for Python
 dev-python/SLPP 1.2.3: Simple lua-python parser
 dev-python/SQLAlchemy-Utils 0.39.0: Various utility functions and datatypes for SQLAlchemy
@@ -1118,7 +1118,7 @@ dev-python/readmdict 0.1.1-r1: Read mdx/mdd files
 dev-python/repoze-sphinx-autointerface 1.0.0-r1: Auto-generate Sphinx API docs from Zope interfaces
 dev-python/restrictedpython 6.1 6.2: A restricted execution environment for Python to run untrusted code
 dev-python/rst2ansi 0.1.5-r2: Render reStructuredText documents to the terminal
-dev-python/rstcheck 6.1.1: Checks syntax of reStructuredText and code blocks nested within it
+dev-python/rstcheck 6.2.0: Checks syntax of reStructuredText and code blocks nested within it
 dev-python/rstr 3.2.0: Easily generate random strings of various types
 dev-python/schedule 1.1.0-r1: Python job scheduling for humans
 dev-python/schema 0.7.5: Python module to validate and convert data structures
@@ -1239,6 +1239,8 @@ dev-ruby/pry-byebug 3.9.0 3.10.1: Step-by-step debugging and stack navigation in
 dev-ruby/rbspy 0.17.0-r1: Sampling CPU profiler for Ruby
 dev-ruby/rspec-wait 0.0.9: enables time-resilient expectations in your RSpec test suite
 dev-ruby/ruby-install 0.8.5 0.9.0 0.9.1: Installs Ruby, JRuby, Rubinius, TruffleRuby (native / GraalVM), or mruby.
+dev-tex/ninecolors 2022.02.13: Select colors with proper WCAG color contrast
+dev-tex/tabularray 2023.03.01: Typeset tabulars and arrays with LATEX3
 dev-util/DirectXShaderCompiler 1.7.2207-r1 1.7.2212: Microsoft DirectX Shader Compiler which is based on LLVM/Clang
 dev-util/FoBiS 3.0.5-r1: FoBiS.py, a Fortran Building System for poor men
 dev-util/afdko 3.9.5-r1: Adobe Font Development Kit for OpenType
@@ -1423,16 +1425,16 @@ gui-apps/lemurs 0.3.1 0.3.1-r1 0.3.2: A TUI Display/Login Manager
 gui-apps/meteo-qt 3.3: A system tray application for the weather status
 gui-apps/mpvpaper 1.2 1.3 9999: A video wallpaper program for wlroots based wayland compositors
 gui-apps/nwg-bar 0.1.3: GTK3-based button bar for wlroots-based compositors
-gui-apps/nwg-displays 0.3.7 0.3.7-r1: Output management utility for sway and Hyprland
-gui-apps/nwg-dock 0.3.6: GTK3-based dock for sway
-gui-apps/nwg-dock-hyprland 0.1.4: GTK3-based dock for Hyprland
+gui-apps/nwg-displays 0.3.7 0.3.7-r1 0.3.8: Output management utility for sway and Hyprland
+gui-apps/nwg-dock 0.3.6 0.3.9: GTK3-based dock for sway
+gui-apps/nwg-dock-hyprland 0.1.4 0.1.7: GTK3-based dock for Hyprland
 gui-apps/nwg-drawer 0.3.9: Application drawer for wlroots-based Wayland compositors
 gui-apps/nwg-icon-picker 0.1.0 0.1.0-r1 9999: GTK icon chooser with a text search option
-gui-apps/nwg-launchers 0.5.0 0.6.3 9999: GTK+ launchers for sway, i3 and some other WMs
+gui-apps/nwg-launchers 0.5.0 0.6.3 0.7.1.1 9999: GTK+ launchers for sway, i3 and some other WMs
 gui-apps/nwg-menu 0.1.1: enuStart plugin to nwg-panel, also capable of working standalone
-gui-apps/nwg-panel 0.9.11 0.9.11-r1 9999: GTK3-based panel for sway and Hyprland Wayland compositors
-gui-apps/nwg-shell 0.5.7 0.5.7-r1: meta-package for the nwg-shell project
-gui-apps/nwg-shell-config 0.5.14 0.5.14-r1: nwg-shell configuration utility
+gui-apps/nwg-panel 0.9.11 0.9.11-r1 0.9.14 9999: GTK3-based panel for sway and Hyprland Wayland compositors
+gui-apps/nwg-shell 0.5.7 0.5.7-r1 0.5.16: meta-package for the nwg-shell project
+gui-apps/nwg-shell-config 0.5.14 0.5.14-r1 0.5.22: nwg-shell configuration utility
 gui-apps/organicmaps 9999: Offline maps and navigation using OpenStreetMap data
 gui-apps/packettracer 8.2.0: Cisco's packet tracer
 gui-apps/paperde 0.1.1_p20210426 9999: Simple, sleek QT based DE for wayland using wayfire
@@ -1652,7 +1654,7 @@ net-im/matterhorn-bin 50200.13.0: Terminal based Mattermost client
 net-im/mautrix-discord 0.6.2 0.6.3: A Matrix-Discord puppeting bridge
 net-im/mautrix-facebook 0.4.1 0.5.0: A Matrix-Facebook Messenger puppeting bridge
 net-im/mautrix-signal 0.4.2 0.4.3: A Matrix-Signal Messenger puppeting bridge
-net-im/mautrix-slack 0_pre20230414 0_pre20230517: A Matrix-Slack puppeting bridge based on slack-go
+net-im/mautrix-slack 0_pre20230517 0_pre20230925: A Matrix-Slack puppeting bridge based on slack-go
 net-im/mautrix-telegram 0.14.1 0.14.2: A Matrix-Telegram Messenger puppeting bridge
 net-im/mautrix-whatsapp 0.10.0: A Matrix-WhatsApp puppeting bridge
 net-im/nheko 0.11.3 9999: Native desktop client for Matrix using Qt
@@ -1758,7 +1760,7 @@ sci-electronics/bluespec 2022.01-r1 2023.01 9999: Toolchain for the Bluespec Har
 sci-electronics/circt 1.14.0 1.37.0: The fast free Verilog/SystemVerilog simulator
 sci-electronics/coil64 2.1.27: Coil64 is inductance coil calculator
 sci-electronics/dsview 1.2.1 1.3.0 9999: An open source multi-function instrument
-sci-electronics/kactus2 3.10.0 9999: A open source IP-XACT-based tool
+sci-electronics/kactus2 3.12.0 9999: A open source IP-XACT-based tool
 sci-electronics/liblxi 1.16 1.18: Implementation of the LAN eXtensions for Instrumentation (LXI)
 sci-electronics/logic-bin 2.4.0 2.4.9: Saleae logic analyzer
 sci-electronics/lxi-tools 2.1 2.3: Tools to access devices with LXI
@@ -1861,7 +1863,7 @@ sys-apps/hex 0.3.2 0.4.0 0.4.1 0.4.2: Futuristic take on hexdump
 sys-apps/intel-cmt-cat 4.4.0: User space software for Intel(R) Resource Director Technology
 sys-apps/loclone 0.1.0: A tool for creating CoW snapshots on XFS
 sys-apps/lsplug 4: Replacement for lsusb that shows more useful info and less useless info
-sys-apps/mission-center 0.3.2 0.3.3: Monitor your CPU, Memory, Disk, Network and GPU usage.
+sys-apps/mission-center 0.3.2 0.3.3 9999: Monitor your CPU, Memory, Disk, Network and GPU usage.
 sys-apps/nvimpager 0.11.0: Use nvim as a pager to view manpages, diff, etc with nvim's syntax highlighting.
 sys-apps/openSeaChest 22.07 23.03.1: SeaGate's open source harddrive control utilities
 sys-apps/ov 0.11.2 0.32.0: Feature-rich terminal pager
