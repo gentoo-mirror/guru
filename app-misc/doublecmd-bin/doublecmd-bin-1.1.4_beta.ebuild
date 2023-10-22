@@ -10,12 +10,12 @@ DESCRIPTION="Free cross platform open source file manager with two panels side b
 HOMEPAGE="https://doublecmd.sourceforge.io/"
 
 SRC_URI="amd64? (
-		gtk? ( mirror://sourceforge/${MY_PN}/${MY_PN}-${PV}.gtk2.x86_64.tar.xz )
-		qt5?  ( mirror://sourceforge/${MY_PN}/${MY_PN}-${PV}.qt.x86_64.tar.xz )
+		gtk? ( mirror://sourceforge/${MY_PN}/${MY_PN}-${PV/_beta/}.gtk2.x86_64.tar.xz )
+		qt5?  ( mirror://sourceforge/${MY_PN}/${MY_PN}-${PV/_beta/}.qt.x86_64.tar.xz )
 	)
 	x86? (
-		gtk? ( mirror://sourceforge/${MY_PN}/${MY_PN}-${PV}.gtk2.i386.tar.xz )
-		qt5?  ( mirror://sourceforge/${MY_PN}/${MY_PN}-${PV}.qt.i386.tar.xz )
+		gtk? ( mirror://sourceforge/${MY_PN}/${MY_PN}-${PV/_beta/}.gtk2.i386.tar.xz )
+		qt5?  ( mirror://sourceforge/${MY_PN}/${MY_PN}-${PV/_beta/}.qt.i386.tar.xz )
 	)"
 
 # Licenses for package and plugins
@@ -56,7 +56,7 @@ src_install(){
 	doins -r "${S}/."
 
 	# Remove doublecmd.inf to use config from user home directory
-	rm "${ED}/opt/${PN}"/doublecmd.inf || die
+	rm "${ED}/opt/${PN}"/settings/doublecmd.inf || die
 
 	exeinto "/opt/${PN}"
 	doexe "${S}/${MY_PN}"
