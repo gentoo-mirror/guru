@@ -84,7 +84,7 @@ app-admin/linode-cli 5.42.1 5.43.0 5.44.3 5.45.0: Linode Command Line Interface
 app-admin/oet 0.1.9 0.1.10 9999: Update your system into binpkgs in an overlay sandbox
 app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applications and tmux
 app-admin/pass-update 2.1: pass extension that provides an easy flow for updating passwords
-app-admin/pulumi-bin 3.86.0 3.88.0 3.89.0: Infrastructure as code in any programming language
+app-admin/pulumi-bin 3.88.0 3.89.0: Infrastructure as code in any programming language
 app-admin/rbw 9999: unofficial bitwarden cli
 app-admin/s-tui 1.1.3-r1: Stress-Terminal UI monitoring tool
 app-admin/synadm 0.43.1 0.44: Command line admin tool for Synapse
@@ -228,7 +228,7 @@ app-misc/onefetch 2.18.1: Command-line Git information tool
 app-misc/pfetch 0.6.0: A pretty system information tool written in POSIX sh
 app-misc/pipes-rs 1.6.1: An over-engineered rewrite of pipes.sh in Rust
 app-misc/powerpanel 1.4.1-r1: PowerPanel software for CyberPower UPS systems
-app-misc/pueue 3.2.0: A cli tool for managing long running shell commands.
+app-misc/pueue 3.3.0: A cli tool for managing long running shell commands.
 app-misc/pup 0.4.0_p1: Parsing HTML at the command line
 app-misc/rememberthemilk 1.3.11-r1: Freemium simple to-do tasks manager
 app-misc/s6-man 9999: mdoc versions of the HTML documentation for the s6 supervision suite
@@ -1139,7 +1139,7 @@ dev-python/sphinx-paramlinks 0.6.0: Allows param links in Sphinx function/method
 dev-python/sphinx-rtd-dark-mode 1.2.4: Dark mode for the Sphinx Read the Docs theme
 dev-python/sphinx-sitemap 2.2.1 2.5.0: Sitemap generator for Sphinx
 dev-python/sphinx-version-warning 1.1.2: Sphinx extension to add a warning banner
-dev-python/sphinxcontrib-katex 0.9.4 0.9.6 0.9.7: KaTeX Sphinx extension for rendering of math in HTML pages
+dev-python/sphinxcontrib-katex 0.9.4 0.9.6 0.9.7 0.9.9: KaTeX Sphinx extension for rendering of math in HTML pages
 dev-python/sphinxcontrib-restbuilder 0.3-r1: A Sphinx builder/writer to output reStructuredText (rst) files
 dev-python/sphinxcontrib-zopeext 0.4.2-r1: Sphinx extension for using Zope interfaces
 dev-python/sre-yield 1.2-r1: Python module to generate regular all expression matches
@@ -1431,7 +1431,7 @@ gui-apps/nwg-drawer 0.3.9: Application drawer for wlroots-based Wayland composit
 gui-apps/nwg-icon-picker 0.1.0 0.1.0-r1 9999: GTK icon chooser with a text search option
 gui-apps/nwg-launchers 0.5.0 0.6.3 0.7.1.1 9999: GTK+ launchers for sway, i3 and some other WMs
 gui-apps/nwg-menu 0.1.1: enuStart plugin to nwg-panel, also capable of working standalone
-gui-apps/nwg-panel 0.9.11 0.9.11-r1 0.9.14 9999: GTK3-based panel for sway and Hyprland Wayland compositors
+gui-apps/nwg-panel 0.9.11 0.9.11-r1 0.9.14 0.9.16 9999: GTK3-based panel for sway and Hyprland Wayland compositors
 gui-apps/nwg-shell 0.5.7 0.5.7-r1 0.5.16: meta-package for the nwg-shell project
 gui-apps/nwg-shell-config 0.5.14 0.5.14-r1 0.5.22: nwg-shell configuration utility
 gui-apps/organicmaps 9999: Offline maps and navigation using OpenStreetMap data
@@ -1551,7 +1551,7 @@ media-plugins/alsa-sndio 0.2: ALSA PCM to play audio on sndio servers
 media-plugins/argotlunar-bin 2.06-r1: Argotlunar is a sound granulator. Binary Linux VST
 media-plugins/gimp-avif-plugin 9999: Plug-in for development GIMP 2.99.11 for loading/saving AVIF images.
 media-plugins/gst-plugins-qt5 1.20.2 1.20.3: Qt5 QML video sink plugin for GStreamer
-media-plugins/qt-heif-image-plugin 0.3.3-r3: Qt plugin for HEIF images
+media-plugins/qt-heif-image-plugin 0.3.3-r3 0.3.4: Qt plugin for HEIF images
 media-plugins/qt-jpegxl-image-plugin 9999: Qt plug-in to allow Qt and KDE based applications to read/write JXL images.
 media-plugins/whysynth 20170701_p20180323: A software synthesizer plugin for the DSSI Soft Synth Interface
 media-radio/fllog 1.2.7: Logbook application for amateur radio use
@@ -1583,6 +1583,7 @@ media-sound/pulseaudio-virtualmic 0.1 9999: Use any offline or online media file
 media-sound/qloud 1.4.2: Tool to measure loudspeaker frequency and step responses and distortions
 media-sound/spot 0.4.0: GTK4 Spotify (Premium) client
 media-sound/spotify-adblock 1.0.1 1.0.2 1.0.3: Adblocker for Spotify
+media-sound/spotify-player 0.15.2: spotify_player is a fast, easy to use, and configurable terminal music player.
 media-sound/spotifyd 0.3.5: A Spotify daemon
 media-sound/tavu 9999: Terminal-based ALSA VU-meter with peaking
 media-sound/yewtube 2.10.5 9999: Terminal-based YouTube player and downloader
@@ -1686,7 +1687,7 @@ net-mail/pop 0.2.0: Send emails from your terminal
 net-misc/FORT-validator 1.5.3 1.5.4: FORT validator is an open source RPKI validator
 net-misc/can-utils 2021.08.0 2023.03 9999-r3: CAN userspace utilities and tools
 net-misc/clatd 1.6: A CLAT / SIIT-DC Edge Relay implementation for Linux
-net-misc/curlie 1.7.1: Curlie is a frontend to curl that adds the ease of use of httpie
+net-misc/curlie 1.7.2: Curlie is a frontend to curl that adds the ease of use of httpie
 net-misc/cve-client 1.0.5 9999: CLI-based client / toolbox for CVE.org
 net-misc/eg25-manager 0.4.2: Daemon for managing the Quectel EG25 modem
 net-misc/facebook-ptp 0_pre20211123: Facebook's PTP libraries
@@ -1998,7 +1999,7 @@ www-apps/forgejo 1.19.4.0 1.20.4.1 1.20.5.0: A self-hosted lightweight software 
 www-apps/gotosocial 0.9.0 0.10.0: Fast, fun, ActivityPub server, powered by Go
 www-apps/honk 0.9.8 0.9.91: ActivityPub server with minimal setup and support costs
 www-apps/invidious 2023.09.27: Invidious is an alternative front-end to YouTube
-www-apps/laminar 1.3: Fast and lightweight Continuous Integration
+www-apps/laminar 1.3-r1: Fast and lightweight Continuous Integration
 www-apps/mycorrhiza 1.14.0 9999: Git-based wiki engine written in Go using mycomarkup
 www-apps/nitter 2023.05.20 2023.07.12: Alternative front-end for Twitter
 www-apps/pleroma 2.5.5 9999: ActivityPub social networking software compatible with other Fediverse software
@@ -2032,7 +2033,7 @@ x11-misc/caffeine-ng 3.5.1: Aplication able to temporarily inhibit the screensav
 x11-misc/gammy 0.9.60 0.9.64: Adaptive screen brightness/temperature
 x11-misc/gobble 1.2-r1: Hide current window before launching external program, unhide after quitting
 x11-misc/greenclip-bin 4.2: Simple clipboard manager to be integrated with rofi
-x11-misc/gromit-mpx 1.4.3 1.5.0 9999: Gromit-MPX is a multi-pointer GTK3 port of the Gromit desktop annotation tool
+x11-misc/gromit-mpx 1.4.3 1.5.0 1.5.1 9999: Gromit-MPX is a multi-pointer GTK3 port of the Gromit desktop annotation tool
 x11-misc/i3lock-color 2.13.2 2.13.4 9999: The world's most popular non-default computer lockscreen
 x11-misc/i3lock-fancy-rapid 0.0.0_pre20201109-r1 0.0.0_pre20210421: A faster implementation of i3lock-fancy
 x11-misc/i3status-rust 0.32.2: A feature-rich and resource-friendly replacement for i3status, written in Rust.
