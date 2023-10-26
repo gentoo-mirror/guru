@@ -10,7 +10,7 @@ HOMEPAGE="https://curlie.io/"
 SRC_URI="https://github.com/rs/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 
 # Using a dependency tarball as per https://devmanual.gentoo.org/eclass-reference/go-module.eclass/index.html
-DEPS_URI="https://kdrive.infomaniak.com/2/app/192129/share/74ab6733-4354-4f97-84b5-8f270ff9e4f6/files/22/download -> ${P}-deps.tar.xz"
+DEPS_URI="https://gitlab.com/freijon_gentoo/${CATEGORY}/${PN}/-/raw/main/${P}-deps.tar.xz"
 SRC_URI+=" ${DEPS_URI}"
 
 LICENSE="MIT"
@@ -22,9 +22,6 @@ DEPEND="
 	net-misc/curl
 "
 RDEPEND="${DEPEND}"
-BDEPEND="
-	dev-lang/go
-"
 
 src_compile() {
 	ego build .
