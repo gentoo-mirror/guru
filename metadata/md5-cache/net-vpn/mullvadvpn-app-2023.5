@@ -1,0 +1,13 @@
+BDEPEND=app-arch/rpm2targz virtual/pkgconfig
+DEFINED_PHASES=install unpack
+DESCRIPTION=Tool used to manage daemon setup
+EAPI=8
+HOMEPAGE=https://github.com/mullvad/mullvadvpn-app https://mullvad.net/
+INHERIT=desktop rpm systemd shell-completion
+KEYWORDS=-* ~amd64
+LICENSE=GPL-3
+RESTRICT=test strip
+SLOT=0
+SRC_URI=amd64? ( https://github.com/mullvad/mullvadvpn-app/releases/download/2023.5/MullvadVPN-2023.5_x86_64.rpm )
+_eclasses_=desktop	021728fdc1b03b36357dbc89489e0f0d	estack	c61c368a76fdf3a82fdf8dbaebea3804	rpm	745ef34afb8c31915d9d42a6aca23a35	toolchain-funcs	fbbbc99d10168de2926e06da7169b8dc	multilib	c19072c3cd7ac5cb21de013f7e9832e0	systemd	c8b03e8df84486aa991d4396686e8942	bash-completion-r1	f5e7a020fd9c741740756aac61bf75ff	shell-completion	bb7eb6bc232cd6c4bf8af739cdd2ee14
+_md5_=d6b888523825082d3dec1bc411b0cef9
