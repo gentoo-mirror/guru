@@ -5,8 +5,8 @@ EAPI=8
 
 inherit meson
 
-COMMIT=f9578d28d272fb61753417e175b0fcd5bedc1443
-SPLITCOMMIT=d8c97d60753f70d686588ad3b0a877e2ca67ff72
+COMMIT=fadbcdd24b6f24b169056ed6fcf43d98ef405f87
+SPLITCOMMIT=9b40de35aeb8c62df3326eae7979b438f3ee0fb1
 DESCRIPTION="A blazing fast wayland wallpaper utility"
 HOMEPAGE="https://github.com/hyprwm/hyprland-plugins"
 SRC_URI="https://github.com/hyprwm/${PN}/archive/${COMMIT}.tar.gz -> ${P}.gh.tar.gz
