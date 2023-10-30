@@ -1,4 +1,4 @@
-BDEPEND=|| ( dev-lang/python:3.11 dev-lang/python:3.10 ) virtual/pkgconfig >=dev-util/meson-0.62.2 >=dev-util/ninja-1.8.2 dev-util/meson-format-array
+BDEPEND=|| ( dev-lang/python:3.11 dev-lang/python:3.10 ) virtual/pkgconfig >=dev-util/meson-1.2.1 >=dev-util/ninja-1.8.2 dev-util/meson-format-array
 DEFINED_PHASES=compile configure install postinst postrm setup test
 DEPEND=bash-completion? ( >=app-shells/bash-completion-2.11 ) >=sys-libs/readline-8.1_p2 lua_single_target_lua5-1? ( dev-lang/lua:5.1 ) lua_single_target_lua5-3? ( dev-lang/lua:5.3 ) lua_single_target_lua5-4? ( dev-lang/lua:5.4 ) >=sci-electronics/liblxi-1.13 gui? ( >=dev-libs/glib-2.70 >=gui-libs/gtk-4.6.0 >=gui-libs/gtksourceview-5.4.0 >=gui-libs/libadwaita-1.2 >=dev-libs/json-glib-1.4 )
 DESCRIPTION=Tools to access devices with LXI
@@ -12,5 +12,5 @@ RDEPEND=bash-completion? ( >=app-shells/bash-completion-2.11 ) >=sys-libs/readli
 REQUIRED_USE=^^ ( lua_single_target_lua5-1 lua_single_target_lua5-3 lua_single_target_lua5-4 )
 SLOT=0
 SRC_URI=https://github.com/lxi-tools/lxi-tools/archive/refs/tags/v2.3.tar.gz -> lxi-tools-2.3.tar.gz
-_eclasses_=multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	39e7a84b06eff4efd9f2e0c3d1668b98	toolchain-funcs	70ec42843fec87d20fd94c67e77cdbff	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	f6221c2f55e5e832be9919fe1711f33b	meson	af1ca7ad21fdd31fcc4fa91d8abca977	python-any-r1	f5169813d1619761b459800587005fd2	lua-utils	d37a16dbcc1f07f71bc48da75ed7a0cb	lua-single	86d497a20c93c7ce83af442f627515c1	xdg-utils	baea6080dd821f5562d715887954c9d3	gnome2-utils	b0183db3b2e07b18f3b77bffec72e116
+_eclasses_=multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	39e7a84b06eff4efd9f2e0c3d1668b98	toolchain-funcs	70ec42843fec87d20fd94c67e77cdbff	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	f6221c2f55e5e832be9919fe1711f33b	meson	1be925a1f585b2f19a8e45737f09016c	python-any-r1	f5169813d1619761b459800587005fd2	lua-utils	d37a16dbcc1f07f71bc48da75ed7a0cb	lua-single	86d497a20c93c7ce83af442f627515c1	xdg-utils	baea6080dd821f5562d715887954c9d3	gnome2-utils	b0183db3b2e07b18f3b77bffec72e116
 _md5_=ab51f22b21fa601e2fd724f0638fea99
