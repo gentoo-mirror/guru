@@ -230,7 +230,7 @@ app-misc/onefetch 2.18.1: Command-line Git information tool
 app-misc/pfetch 0.6.0: A pretty system information tool written in POSIX sh
 app-misc/pipes-rs 1.6.1: An over-engineered rewrite of pipes.sh in Rust
 app-misc/powerpanel 1.4.1-r1: PowerPanel software for CyberPower UPS systems
-app-misc/pueue 3.3.0: A cli tool for managing long running shell commands.
+app-misc/pueue 3.3.1: A cli tool for managing long running shell commands.
 app-misc/pup 0.4.0_p1: Parsing HTML at the command line
 app-misc/rememberthemilk 1.3.11-r1: Freemium simple to-do tasks manager
 app-misc/s6-man 9999: mdoc versions of the HTML documentation for the s6 supervision suite
@@ -319,7 +319,7 @@ app-text/the-platinum-searcher-bin 2.2.0: Fast CLI search tool, faster than grep
 app-text/tldr 2.0.0-r1: Python command line client for tldr pages
 app-text/vale 2.28.3: A syntax-aware linter for prose built with speed and extensibility in mind
 app-vim/ale 3.3.0: Check syntax in Vim asynchronously and fix files, with LSP support
-app-vim/ansible-vim 3.2 3.3: vim plugin: sytax highlighting for Ansible's common file types
+app-vim/ansible-vim 3.3 3.4: vim plugin: sytax highlighting for Ansible's common file types
 app-vim/apkbuild-vim 20210911: vim plugin: edit and work with APKBUILD files
 app-vim/bracketed-paste 20180522: vim plugin: handles bracketed-paste-mode in vim (aka. automatic `:set paste`)
 app-vim/css-color 20211229 20230308: vim plugin: preview colours in source code while editing
@@ -691,7 +691,7 @@ dev-libs/sealcurses 2.0.18_pre20220609 2.0.18_pre20230206: SDL Emulation and Ada
 dev-libs/shuffile 0.1.0-r1 0.2.0: SHUFFILE Shuffle files between processes
 dev-libs/sirit 0_p20220725: A runtime SPIR-V assembler
 dev-libs/supercop 0_p20200827: Fast cryptographic operations for Monero wallets
-dev-libs/tfdn 1.5.0 1.6.0: Opinionated C11 library for low-level functionality
+dev-libs/tfdn 1.6.0 1.7.0: Opinionated C11 library for low-level functionality
 dev-libs/toml-f 0.4.0 0.4.1: TOML parser implementation for data serialization and deserialization in Fortran
 dev-libs/tweeny 3.1.1 3.2.0: C++ tweening (inbetweening) library
 dev-libs/unordered_dense 2.0.0 2.0.1 3.1.1 4.0.1 9999: A fast and densely stored hashmap and hashset
@@ -855,6 +855,7 @@ dev-python/ManimPango 0.4.3: Binding for Pango, to use with Manim.
 dev-python/MutatorMath 3.0.1-r2: A library for piecewise linear interpolation in multiple dimensions
 dev-python/NSKeyedUnArchiver 1.5: Unserializes binary|text|file|memory plist data to Python dict
 dev-python/PGPy 0.6.0: Pretty Good Privacy for Python
+dev-python/PyQt5-stubs 5.15.2.0: Stubs for PyQt5
 dev-python/PyWavefront 1.3.3: Python library for importing Wavefront .obj files
 dev-python/PythonQwt 0.10.3 0.10.5: Qt plotting widgets for Python
 dev-python/SLPP 1.2.3: Simple lua-python parser
@@ -1109,7 +1110,7 @@ dev-python/python-pidfile 3.0.0-r1 3.1.1: PIDFile context processor. Supported p
 dev-python/python-pkcs11 0.7.0-r2: PKCS#11 (Cryptoki) support for Python
 dev-python/python-skywater-pdk 0.0.0_p20220424: Python library for working with files found in the SkyWater PDK
 dev-python/python-socketio 5.8.0 5.9.0 5.10.0: Python implementation of the Socket.IO realtime server.
-dev-python/python-telegram-bot 20.3 20.5 9999: Python wrapper of telegram bots API
+dev-python/python-telegram-bot 20.3 20.5 20.6 9999: Python wrapper of telegram bots API
 dev-python/pywebview 4.2.2 4.3.3: A lightweight cross-platform wrapper around a webview component
 dev-python/queuelib 1.6.2: Collection of persistent and non-persistent queues for Python
 dev-python/rchitect 0.3.36: Interoperate R with Python
@@ -1408,7 +1409,7 @@ gui-apps/coretoppings 4.1.0-r1 4.2.0 9999: Additional features, plugins, widgets
 gui-apps/coreuniverse 4.2.0 9999: Shows information about apps for C Suite
 gui-apps/darkman 1.5.4: Framework for dark and light mode transitions
 gui-apps/espanso 2.1.8: Cross-platform Text Expander written in Rust
-gui-apps/eww 0.3.0 0.4.0 0.4.0-r1 9999: Elkowars Wacky Widgets is a standalone widget system made in Rust
+gui-apps/eww 0.3.0 0.4.0 9999: Elkowars Wacky Widgets is a standalone widget system made in Rust
 gui-apps/fnott 1.2.1 1.3.0 1.4.1 9999: Keyboard driven and lightweight Wayland notification daemon.
 gui-apps/fuzzel 1.9.2 9999: Application launcher for wlroots based Wayland compositors.
 gui-apps/gcolor3 2.4.0: A simple color chooser written in GTK3
@@ -1417,14 +1418,14 @@ gui-apps/grimshot 9999: A helper for screenshots within sway
 gui-apps/gtklock 2.0.1 2.1.0: GTK-based lockscreen for Wayland
 gui-apps/gtklock-extras 9999: Gtklock modules
 gui-apps/hiprompt-gtk-py 0_pre20220624 9999: GTK+ Himitsu prompter for Wayland
-gui-apps/hyprland-plugins 0.29.1: A blazing fast wayland wallpaper utility
+gui-apps/hyprland-plugins 0.31.0: A blazing fast wayland wallpaper utility
 gui-apps/hyprpaper 0.3.0 0.4.0: A blazing fast wayland wallpaper utility
 gui-apps/hyprpicker 0.1.0-r1 0.1.1: A wlroots-compatible Wayland color picker that does not suck
 gui-apps/intiface-central-bin 2.4.0 2.4.3: Buttplug frontend application
 gui-apps/lemurs 0.3.1 0.3.1-r1 0.3.2: A TUI Display/Login Manager
 gui-apps/meteo-qt 3.3: A system tray application for the weather status
 gui-apps/mpvpaper 1.2 1.3 9999: A video wallpaper program for wlroots based wayland compositors
-gui-apps/nwg-bar 0.1.3: GTK3-based button bar for wlroots-based compositors
+gui-apps/nwg-bar 0.1.3 0.1.4: GTK3-based button bar for wlroots-based compositors
 gui-apps/nwg-displays 0.3.7 0.3.7-r1 0.3.8: Output management utility for sway and Hyprland
 gui-apps/nwg-dock 0.3.6 0.3.9: GTK3-based dock for sway
 gui-apps/nwg-dock-hyprland 0.1.4 0.1.7: GTK3-based dock for Hyprland
@@ -1443,6 +1444,7 @@ gui-apps/sfwbar 1.0_beta12 1.0_beta13: S* Floating Window Bar
 gui-apps/showmethekey 1.10.0 1.11.1: Show keys you typed on screen.
 gui-apps/somebar 1.0.0 1.0.3 9999: dwm-like bar for dwl
 gui-apps/someblocks 1.0.0 1.0.1 9999: Modular status bar for somebar written in c.
+gui-apps/sway-audio-idle-inhibit 9999: Prevents swayidle from idle when an application is outputting or receiving audio
 gui-apps/sway-launcher-desktop 1.5.4: TUI Application launcher with Desktop Entry support
 gui-apps/swaykbdd 1.0: Per-window keyboard layout switcher for Sway
 gui-apps/swaylock-effects 1.6.2 1.6.3 9999: Swaylock, with fancy effects
@@ -1562,7 +1564,7 @@ media-sound/amberol 0.9.2 0.10.3: Simple GUI Music Player
 media-sound/callaudiod 0.1.7 0.1.9: Call audio routing daemon
 media-sound/drumgizmo 0.9.20 9999: Cross-platform drum plugin and stand-alone application
 media-sound/dzr 230919: DZR: the command line deezer.com player
-media-sound/eartag 0.5.0: GTK4 MusicBrainz audio tagger
+media-sound/eartag 0.5.0 0.5.1: GTK4 MusicBrainz audio tagger
 media-sound/g4music 3.3 3.4: A GTK4 music player
 media-sound/hushboard 0.0_pre20220518 9999: Mutes your microphone while you are typing
 media-sound/ibniz 1.18-r1: virtual machine designed for extremely compact low-level audiovisual programs
@@ -1628,7 +1630,7 @@ net-analyzer/munin-plugins-mendix 23_p20210510: This package provides various pl
 net-client/amfora 1.8.0 1.9.2: A fancy terminal browser for the Gemini protocol.
 net-client/castor 0.8.18 0.9.0: A graphical browser for plain-text protocols
 net-client/kristall 0.3-r2 0.4: Visual cross-platform gemini browser
-net-client/lagrange 1.16.4 1.16.5: Desktop GUI client for browsing Geminispace
+net-client/lagrange 1.16.5 1.17.2: Desktop GUI client for browsing Geminispace
 net-client/offpunk 1.8 1.9.1: Offline-First Gemini/Web/Gopher/RSS reader and browser
 net-client/starfish 1.2.0 1.3.1: A Gemini browser for elementary OS
 net-client/telescope 0.7.1 0.8.1: w3m-like browser for Gemini
@@ -1837,7 +1839,7 @@ sci-mathematics/packup 0.6: PACKage Upgradability Problem solver
 sci-mathematics/pyromaths 21.8.2: Create maths exercises in LaTeX and PDF format
 sci-mathematics/qepcad 1.72b_p20220502-r2: Quantifier Elimination by Partial Cylindrical Algebraic Decomposition
 sci-mathematics/radian 0.6.3: A 21 century R console
-sci-mathematics/rstudio-desktop-bin 2023.06.2_p561 2023.09.0_p463: IDE for R and Python
+sci-mathematics/rstudio-desktop-bin 2023.09.0_p463 2023.09.1_p494: IDE for R and Python
 sci-mathematics/the-omega-project 2.1_p20131119: Tools from Pugh et al.'s for constraint-based compiler tools
 sci-misc/boinc-wrapper 26018: Wrapper to use non-BOINC apps with BOINC
 sci-misc/linuxcnc 9999: LinuxCNC
@@ -2008,6 +2010,7 @@ www-apps/pleroma 2.5.5 9999: ActivityPub social networking software compatible w
 www-apps/snac 2.25 2.26: A simple, minimalistic ActivityPub instance
 www-apps/uwebsockets 20.11.0 20.14.0 9999: ultra fast, simple, secure & standards compliant web I/O
 www-apps/whoogle-search 0.8.3: A self-hosted, ad-free, privacy-respecting metasearch engine
+www-apps/zola 0.17.2: A fast static site generator with everything built-in
 www-client/badwolf 1.2.2 1.3.0 9999: Minimalist and privacy-oriented WebKitGTK+ browser
 www-client/browsh 1.8.2: A fully-modern text-based browser, rendering to TTY and browsers
 www-client/nyxt 3.8.0 3.9.0 9999: Nyxt - the hacker's power-browser
