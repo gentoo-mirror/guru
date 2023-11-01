@@ -12,6 +12,8 @@ acct-group/hinsightd 0: A user group for www-servers/hinsightd
 acct-group/honk 0: System group: honk
 acct-group/invidious 0: System group: invidious
 acct-group/laminar 0: System group: laminar
+acct-group/libmedium 0: A group for www-apps/libmedium
+acct-group/librarian 0: A group for www-apps/librarian
 acct-group/mastoposter 0: System group: mastoposter
 acct-group/mautrix 0: Group for Mautrix Bridges
 acct-group/monero 0: System group: monero
@@ -20,6 +22,7 @@ acct-group/owncast 0: Group for media-video/owncast
 acct-group/paludisbuild 0: System group: paludisbuild
 acct-group/pleroma 0: Group for www-apps/pleroma
 acct-group/purritobin 0: Group for net-misc/purritobin
+acct-group/rimgo 0: Group for www-apps/rimgo
 acct-group/signald 0: Group for signald
 acct-group/snac 0: System group: snac
 acct-group/tang 0: Group for tang daemon
@@ -40,6 +43,8 @@ acct-user/hinsightd 0: A user account for www-servers/hinsightd
 acct-user/honk 0: System user: honk
 acct-user/invidious 0: System user: invidious
 acct-user/laminar 0: System user: laminar
+acct-user/libmedium 0: An user for www-apps/libmedium
+acct-user/librarian 0: An user for www-apps/librarian
 acct-user/mastoposter 0: System user: mastoposter
 acct-user/mautrix-discord 0: User for Mautrix Discord Bridge
 acct-user/mautrix-facebook 0: User for Mautrix Facebook Bridge
@@ -53,6 +58,7 @@ acct-user/owncast 0: User for media-video/owncast
 acct-user/paludisbuild 0: Build user for sys-apps/paludis
 acct-user/pleroma 0: User for www-apps/pleroma
 acct-user/purritobin 0: User for net-misc/purritobin
+acct-user/rimgo 0: User for www-apps/rimgo
 acct-user/signald 0: User for signald
 acct-user/snac 0: System user: snac
 acct-user/tang 0: User for tang daemon
@@ -84,7 +90,7 @@ app-admin/linode-cli 5.42.1 5.43.0 5.44.3 5.45.0: Linode Command Line Interface
 app-admin/oet 0.1.9 0.1.10 9999: Update your system into binpkgs in an overlay sandbox
 app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applications and tmux
 app-admin/pass-update 2.1: pass extension that provides an easy flow for updating passwords
-app-admin/pulumi-bin 3.89.0 3.91.0: Infrastructure as code in any programming language
+app-admin/pulumi-bin 3.89.0 3.91.0 3.91.1: Infrastructure as code in any programming language
 app-admin/rbw 9999: unofficial bitwarden cli
 app-admin/s-tui 1.1.3-r1: Stress-Terminal UI monitoring tool
 app-admin/synadm 0.43.1 0.44: Command line admin tool for Synapse
@@ -193,7 +199,7 @@ app-misc/chayang 0.1.0: Gradually dim the screen.
 app-misc/cheat 4.2.3 4.3.3-r1: cheat allows you to create and view interactive cheatsheets on the command-line
 app-misc/clifm 1.8 1.11 1.13 1.14 9999: The command line file manager
 app-misc/clipboard 0.8.3: Cut, copy, and paste anything in your terminal
-app-misc/corectrl 1.3.5 1.3.6 9999: Core control application
+app-misc/corectrl 1.3.7 9999: Core control application
 app-misc/cpufetch 1.01 1.02 1.04: Simplistic yet fancy CPU architecture fetching tool
 app-misc/dbf 0.9.0: Command line tool to read the content of dBASE III, IV, and 5.0 files
 app-misc/diff-so-fancy 1.4.3-r1: Good-lookin' diffs. Actually... nah... The best-lookin' diffs
@@ -686,6 +692,7 @@ dev-libs/polyseed 1.0.0 2.0.0 9999: Mnemonic seed library for Monero and other C
 dev-libs/properties-cpp 0.0.2: Simple convenience library for handling properties and signals in C++11
 dev-libs/protothreads 1.4-r2: Lightweight, Stackless Threads in C
 dev-libs/qhttpengine 1.0.1-r1 9999: HTTP server for Qt applications
+dev-libs/qrcodegen 1.8.0: High-quality QR Code generator library in Java, TypeScript/JavaScript, Python, C++, C, Rust.
 dev-libs/randomx 1.1.8 1.1.9: Proof of work algorithm based on random code execution
 dev-libs/sealcurses 2.0.18_pre20220609 2.0.18_pre20230206: SDL Emulation and Adaptation Layer for Curses
 dev-libs/shuffile 0.1.0-r1 0.2.0: SHUFFILE Shuffle files between processes
@@ -855,6 +862,7 @@ dev-python/ManimPango 0.4.3: Binding for Pango, to use with Manim.
 dev-python/MutatorMath 3.0.1-r2: A library for piecewise linear interpolation in multiple dimensions
 dev-python/NSKeyedUnArchiver 1.5: Unserializes binary|text|file|memory plist data to Python dict
 dev-python/PGPy 0.6.0: Pretty Good Privacy for Python
+dev-python/PyPubSub 4.0.3: Python Publish-Subscribe Package
 dev-python/PyQt5-stubs 5.15.2.0: Stubs for PyQt5
 dev-python/PyWavefront 1.3.3: Python library for importing Wavefront .obj files
 dev-python/PythonQwt 0.10.3 0.10.5: Qt plotting widgets for Python
@@ -1110,6 +1118,7 @@ dev-python/python-pidfile 3.0.0-r1 3.1.1: PIDFile context processor. Supported p
 dev-python/python-pkcs11 0.7.0-r2: PKCS#11 (Cryptoki) support for Python
 dev-python/python-skywater-pdk 0.0.0_p20220424: Python library for working with files found in the SkyWater PDK
 dev-python/python-socketio 5.8.0 5.9.0 5.10.0: Python implementation of the Socket.IO realtime server.
+dev-python/python-statemachine 2.1.2: Python Finite State Machines made easy.
 dev-python/python-telegram-bot 20.3 20.5 20.6 9999: Python wrapper of telegram bots API
 dev-python/pywebview 4.2.2 4.3.3: A lightweight cross-platform wrapper around a webview component
 dev-python/queuelib 1.6.2: Collection of persistent and non-persistent queues for Python
@@ -1139,7 +1148,7 @@ dev-python/sphinx-click 4.1.0 4.2.0: Sphinx plugin to automatically document cli
 dev-python/sphinx-hoverxref 1.3.0: Sphinx extension to show tooltips with content embedded when hover a reference
 dev-python/sphinx-paramlinks 0.6.0: Allows param links in Sphinx function/method descriptions to be linkable
 dev-python/sphinx-rtd-dark-mode 1.2.4: Dark mode for the Sphinx Read the Docs theme
-dev-python/sphinx-sitemap 2.2.1 2.5.0: Sitemap generator for Sphinx
+dev-python/sphinx-sitemap 2.5.0 2.5.1: Sitemap generator for Sphinx
 dev-python/sphinx-version-warning 1.1.2: Sphinx extension to add a warning banner
 dev-python/sphinxcontrib-katex 0.9.4 0.9.6 0.9.7 0.9.9: KaTeX Sphinx extension for rendering of math in HTML pages
 dev-python/sphinxcontrib-restbuilder 0.3-r1: A Sphinx builder/writer to output reStructuredText (rst) files
@@ -1496,7 +1505,7 @@ media-fonts/gohufont 2.1_p20170627: A monospace bitmap font
 media-fonts/inconsolata_dz 20201205: A beautiful sans-serif monotype font designed for code listings
 media-fonts/iosevka-nerdfont 2.2.2 2.3.3 3.0.1: A free and open-source typeface for developers
 media-fonts/jetbrainsmono-nerdfont 2.2.2 3.0.1: A free and open-source typeface for developers
-media-fonts/last-resort 14.000 15.000: A collection of glyphs used as the backup of "last resort" to any other font
+media-fonts/last-resort 15.000 15.100: A collection of glyphs used as the backup of "last resort" to any other font
 media-fonts/libertinus 7.040: Libertinus font
 media-fonts/linja-pona 4.2 4.9: Font for sitelen pona, a script for toki pona
 media-fonts/linja-wawa 1.21: Font for sitelen pona, a script for toki pona
@@ -1550,6 +1559,8 @@ media-libs/monado 9999: The open source OpenXR runtime.
 media-libs/openxr-loader 1.0.20 9999: OpenXR loader
 media-libs/sjpeg 1.0_p20210422-r1: simple jpeg encoder
 media-libs/svt-vp9 0.3.0 9999: Scalable Video Technology for VP9 (SVT-VP9 Encoder)
+media-libs/vvdec 2.1.2: The Fraunhofer Versatile Video Decoder (VVdeC) is a fast H.266/VVC software decoder implementation.
+media-libs/vvenc 1.9.1: The Fraunhofer Versatile Video Encoder (VVenC) is a fast and efficient H.266/VVC encoder implementation.
 media-plugins/alsa-sndio 0.2: ALSA PCM to play audio on sndio servers
 media-plugins/argotlunar-bin 2.06-r1: Argotlunar is a sound granulator. Binary Linux VST
 media-plugins/gimp-avif-plugin 9999: Plug-in for development GIMP 2.99.11 for loading/saving AVIF images.
@@ -1639,7 +1650,7 @@ net-dialup/tio 2.7: Simple TTY terminal application
 net-fs/httpdirfs 1.2.0: Filesystem to mount HTTP directory listings, with a permanent cache
 net-fs/hubicfuse 3.0.1: Support for mounting HubiC drive in GNU/Linux
 net-im/Quaternion 0.0.95.1 0.0.96_beta4: A Qt-based IM client for Matrix
-net-im/abaddon 0.1.12 9999: Alternative Discord client using GTK instead of Electron
+net-im/abaddon 0.1.12-r1 9999: Alternative Discord client using GTK instead of Electron
 net-im/chatterino 2.3.5-r3: Chat client for https://twitch.tv
 net-im/conduit 0.6.0: A Matrix homeserver written in Rust
 net-im/discord-canary-bin 0.0.166: All-in-one voice and text chat
@@ -1726,6 +1737,7 @@ net-misc/wsdd 0.7.0 0.7.1: A Web Service Discovery host daemon.
 net-misc/xkcd-handler 1.0.13: A handler for XKCD urls
 net-misc/xmrig-mo 6.16.2 6.16.3 6.16.4 6.16.5 6.18.0 6.18.1 6.19.0 6.19.1 6.19.2 6.19.3 6.20.0: MoneroOcean fork of xmrig that supports algo switching
 net-misc/yacy 1.924.20210209.10069: YaCy - p2p based distributed web-search engine
+net-misc/yt-dlg 2023.08.16: A cross platform front-end GUI of the popular youtube-dl written in wxPython.
 net-news/comitium 1.8.1: feed aggregator for gemini supporting many formats and protocols
 net-news/communique 1.2.0: RSS Reader with cross-platform sync
 net-news/gfeeds 2.2.0: An RSS/Atom feed reader for GNOME.
@@ -1738,14 +1750,14 @@ net-p2p/feather 2.4.9-r1 2.5.1 2.5.2 9999: A free, open-source Monero wallet
 net-p2p/fragments 2.1-r1 2.1.1: Fragments is an easy to use BitTorrent client
 net-p2p/ipfs-cluster 1.0.1 1.0.2: Pinset orchestration for IPFS
 net-p2p/monero 0.17.2.0 0.17.2.3 0.17.3.0 0.17.3.2 0.18.1.0 0.18.1.1 0.18.1.2 0.18.2.0 0.18.2.2 0.18.3.1 9999: The secure, private, untraceable cryptocurrency
-net-p2p/p2pool 3.5 3.6.2 3.7 9999: Decentralized pool for Monero mining
+net-p2p/p2pool 3.5 3.6.2 3.7 3.8 9999: Decentralized pool for Monero mining
 net-p2p/popura 0.4.6 9999: Popura: alternative Yggdrasil network client
 net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
-net-p2p/yggdrasil-go 0.4.7 9999: An experiment in scalable routing as an encrypted IPv6 overlay network
+net-p2p/yggdrasil-go 0.4.7 0.5.1 9999: An experiment in scalable routing as an encrypted IPv6 overlay network
 net-print/hpuld 1.00.39.15.00.23-r1: HP Unified Linux Driver (for samsung hardware)
 net-proxy/snowflake 2.6.1: Pluggable Transport using WebRTC, inspired by Flashproxy
 net-voip/discover-overlay 0.4.5 0.5.4 0.6.9: Yet another Discord overlay for Linux written in Python using GTK3
-net-voip/gnome-calls 44.1 44.2: Phone dialer and call handler
+net-voip/gnome-calls 44.2 45.0: Phone dialer and call handler
 net-voip/vvmd 0.8: vvmd is a lower level daemon that retrieves Visual Voicemail
 net-vpn/cloudflare-warp 2023.3.470 2023.7.40: Cloudflare Warp Client
 net-vpn/fastd 22: A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
@@ -1758,6 +1770,7 @@ net-wireless/rtl8821ce 0_pre20231002: Realtek RTL8821CE Driver module for Linux 
 net-wireless/rtl8821cu 0_pre20230925: Realtek 8821CU/RTL8811CU module for Linux kernel
 sci-biology/cmdock 0.2.0: Program for docking ligands to proteins and nucleic acids
 sci-biology/geneathome 1.10-r5: BOINC application for expanding Gene Regulatory Networks (GRN)
+sci-biology/jalview-bin 2.11.2.7: Editor of multiple sequence alignments.
 sci-chemistry/vesta-bin 3.5.8: Visualisation for Electronic and STructural Analysis.
 sci-chemistry/xcrysden 1.6.2: For the visualisation of molecular and crystal structures.
 sci-electronics/bluespec 2022.01-r1 2023.01 9999: Toolchain for the Bluespec Hardware Definition Language
@@ -1888,7 +1901,7 @@ sys-boot/customrescuecd-x86-grub 0.1: Grub menu entries for the .iso image of cu
 sys-boot/customrescuecd-x86_64-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/limine 4.20230503.0 4.20230514.0 4.20230529.0 4.20230530.0 4.20230606.0 4.20230615.0 5.20230811.0: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
 sys-boot/woeusb-ng 0.2.10: Create Windows installer USB from ISO (rewrite of WoeUSB)
-sys-boot/zfsbootmenu 1.12.0 2.2.0: ZFS bootloader for root-on-ZFS systems
+sys-boot/zfsbootmenu 1.12.0 2.2.0 2.2.1: ZFS bootloader for root-on-ZFS systems
 sys-cluster/AXL 0.5.0 0.7.0: AXL provides a common C interface to transfer files in an HPC storage hierarchy
 sys-cluster/Graph500 1.2: Graph500 reference implementations
 sys-cluster/OpenHPC-meta 2.1-r1: OpenHPC metapackage
@@ -1956,11 +1969,13 @@ sys-fs/gfs2-utils 3.4.1: Shared-disk cluster file system
 sys-fs/mountpoint-s3-bin 1.0.1: Fuse for AWS S3 (Simple Storage Service), official
 sys-fs/ntfs2btrfs 20230501: Conversion tool from NTFS to Btrfs
 sys-fs/ufiformat 0.9.9: USB Floppy Disk formatting tool
+sys-fs/zfs-auto-utils 1.0.0: ZFS Automatic Scrub/Trim for Linux
 sys-kernel/dpdk-kmod 21.11.1 22.07 23.03: DPDK Kernel Nic Interface module
 sys-kernel/modprobed-db 2.46: This utility tracks modules loaded by the kernel, for localmodconfig
 sys-kernel/msr-safe 1.6.0: Allows safer access to model specific registers (MSRs)
 sys-kernel/tirdad 0_pre20200926: kernel module for random ISN generation
 sys-kernel/uek-sources 5.15.0.5.70.1 5.15.0.6.80.3 5.15.0.8.91.3 5.15.0.105.125.4: Unbreakable Enterprise Kernel (UEK) sources built from Oracle
+sys-kernel/ugrd 0.7.3 0.7.4: Python based initramfs generator with TOML defintions
 sys-kernel/ummunotify 2-r1: Userspace support for MMU notifications
 sys-kernel/usermode-kernel 6.0.12: Linux kernel built with Gentoo patches
 sys-kernel/xow 0.5: Linux driver for the Xbox One wireless dongle
@@ -1998,15 +2013,18 @@ virtual/nlme 0: Virtual of a R recommended package
 virtual/nnet 0: Virtual of a R recommended package
 virtual/survival 0: Virtual of a R recommended package
 www-apps/castopod 1.4.3 1.4.5: Open-source hosting platform made for podcasters
-www-apps/code-server-bin 4.14.1 4.15.0 4.16.0 4.16.1 4.17.0 4.17.1: VS Code in the browser (binary version with unbundled node and ripgrep)
+www-apps/code-server-bin 4.14.1 4.15.0 4.16.0 4.16.1 4.17.0 4.17.1 4.18.0: VS Code in the browser (binary version with unbundled node and ripgrep)
 www-apps/forgejo 1.19.4.0 1.20.4.1 1.20.5.0: A self-hosted lightweight software forge
 www-apps/gotosocial 0.9.0 0.10.0: Fast, fun, ActivityPub server, powered by Go
 www-apps/honk 0.9.8 0.9.91: ActivityPub server with minimal setup and support costs
-www-apps/invidious 2023.09.27: Invidious is an alternative front-end to YouTube
+www-apps/invidious 2023.09.27-r1: Invidious is an alternative front-end to YouTube
 www-apps/laminar 1.3-r1: Fast and lightweight Continuous Integration
+www-apps/libmedium 20231020: Alternative private front-end to Medium
+www-apps/librarian 2023.05.07: An alternative frontend for LBRY/Odysee. Inspired by Invidious and Libreddit.
 www-apps/mycorrhiza 1.14.0 9999: Git-based wiki engine written in Go using mycomarkup
 www-apps/nitter 2023.05.20 2023.07.12: Alternative front-end for Twitter
 www-apps/pleroma 2.5.5 9999: ActivityPub social networking software compatible with other Fediverse software
+www-apps/rimgo 1.2.1: An alternative frontend for Imgur. Originally based on rimgu.
 www-apps/snac 2.25 2.26: A simple, minimalistic ActivityPub instance
 www-apps/uwebsockets 20.11.0 20.14.0 9999: ultra fast, simple, secure & standards compliant web I/O
 www-apps/whoogle-search 0.8.3: A self-hosted, ad-free, privacy-respecting metasearch engine

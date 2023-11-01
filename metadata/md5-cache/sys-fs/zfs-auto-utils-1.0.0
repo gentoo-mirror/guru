@@ -1,0 +1,10 @@
+DEFINED_PHASES=install postinst
+DESCRIPTION=ZFS Automatic Scrub/Trim for Linux
+EAPI=8
+HOMEPAGE=https://github.com/zfsonlinux
+KEYWORDS=~amd64 ~arm64 ~ppc64 ~riscv
+LICENSE=GPL-2+
+RDEPEND=sys-fs/zfs virtual/cron
+SLOT=0
+SRC_URI=https://github.com/vowstar/zfs-auto-utils/archive/1.0.0.tar.gz -> zfs-auto-utils-1.0.0.tar.gz
+_md5_=93103607d798f71f6d09fe8d7665351a
