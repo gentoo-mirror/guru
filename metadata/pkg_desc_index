@@ -78,6 +78,7 @@ app-admin/chamber 2.13.2: Managing secrets in AWS SSM Parameter Store
 app-admin/chezmoi 2.39.1: Manage your dotfiles across multiple machines, securely
 app-admin/customrescuecd-x86 0.4.1: A system rescue cd or usbstick for desktop and server based on gentoo
 app-admin/customrescuecd-x86_64 0.12.7 0.12.8: A system rescue cd or usbstick for desktop and server based on gentoo
+app-admin/dotbot 1.20.1: A tool that bootstraps your dotfiles
 app-admin/enpass-desktop-bin 6.7.4.933: A cross-platform, complete password management solution
 app-admin/gentoo_update 0.2.1: Gentoo Linux updater
 app-admin/grub-customizer 5.1.0: A graphical grub2 settings manager
@@ -156,7 +157,7 @@ app-editors/amp 0.6.2: A complete text editor for your terminal.
 app-editors/imhex 1.31.0: A hex editor for reverse engineers, programmers, and eyesight
 app-editors/kak-lsp 12.2.1: Kakoune Language Server Protocol Client
 app-editors/kitscenarist 0.7.2_rc9: Simple and powerful application for creating screenplays.
-app-editors/lapce 0.2.7 0.2.8 9999: Lightning-fast and Powerful Code Editor written in Rust
+app-editors/lapce 0.2.7 0.2.8 0.3.0 9999: Lightning-fast and Powerful Code Editor written in Rust
 app-editors/mined 2015.25: A powerful text editor with extensive Unicode and CJK support
 app-editors/neovim-qt 0.2.17-r1: Neovim client library and GUI, in Qt5
 app-editors/pulsar-bin 1.109.0 1.110.0: A Community-led Hyper-Hackable Text Editor
@@ -173,8 +174,9 @@ app-emulation/proton-ge-custom-bin 7.27 7.28 7.29: A fancy custom distribution o
 app-emulation/quickemu 4.8: Create and run optimised Windows, macOS and Linux desktop virtual machines
 app-emulation/rars 1.6: RARS -- RISC-V Assembler and Runtime Simulator
 app-emulation/spice-html5 0.2.2 0.3.0-r1: Spice Javascript client
+app-emulation/wslu 4.1.1: A collection of utilities for Windows Subsystem for Linux
 app-eselect/eselect-autostart 1.0.0: Manage symlinks in $XDG_CONFIG_HOME/autostart
-app-eselect/eselect-bluespec 1.0.1: Manages the /usr/bin/bsc (bluespec) symlink
+app-eselect/eselect-bluespec 1.0.2: Manages the /usr/bin/bsc (bluespec) symlink
 app-eselect/eselect-ld 1.0.0: Manage the ld symlink
 app-eselect/eselect-vala 1.0.0: Manage the valac symlink
 app-forensics/libpreloadvaccine 0_pre20190831: Whitelisting LD_PRELOAD libraries using LD_AUDIT
@@ -204,6 +206,7 @@ app-misc/cpufetch 1.01 1.02 1.04: Simplistic yet fancy CPU architecture fetching
 app-misc/dbf 0.9.0: Command line tool to read the content of dBASE III, IV, and 5.0 files
 app-misc/diff-so-fancy 1.4.3-r1: Good-lookin' diffs. Actually... nah... The best-lookin' diffs
 app-misc/doublecmd-bin 1.0.11 1.1.4_beta: Free cross platform open source file manager with two panels side by side.
+app-misc/dpscreenocr 1.4.0: Program to recognize text on screen
 app-misc/dragon 1.1.1 1.1.1_p20210820 1.2.0: Simple drag-and-drop source/sink for X and Wayland
 app-misc/electricsheep 3.0.2_p20191005 9999: Realize the collective dream of sleeping computers from all over the internet
 app-misc/far2l 2.3.2_alpha 2.4.0_beta 9999: Linux port of FAR Manager v2
@@ -1315,7 +1318,7 @@ dev-vcs/gitqlient-jenkins-plugin 0.2.0: GitQlient Jenkins plugin
 dev-vcs/gitui 0.18.0 0.20.1: Blazing fast terminal-ui for git
 dev-vcs/got 0.90 0.91: Portable version of the Game of Trees version control system
 dev-vcs/lazygit 0.39.4-r1 0.40.2-r1: Simple terminal UI for git commands
-dev-vcs/lefthook 1.0.4 1.2.6 1.4.8: Fast and powerful Git hooks manager for any type of projects
+dev-vcs/lefthook 1.4.8: Fast and powerful Git hooks manager for any type of projects
 dev-zig/zls 0.10.0-r1 9999: The officially unofficial Ziglang language server
 games-action/ATLauncher 3.4.3.1 3.4.27.0: Minecraft launcher which integrates multiple different ModPacks
 games-action/blackvoxel 2.50 9999: Blackvoxel Video Game
@@ -1342,7 +1345,7 @@ games-emulation/rpcs3 9999: PS3 emulator/debugger
 games-emulation/yuzu 0_p20230202 9999: An emulator for Nintendo Switch
 games-engines/boxtron 0.5.4-r2: Steam Play compatibility tool to run DOS games using native Linux DOSBox
 games-engines/easyrpg-player 0.7.0 0.8 0.8-r1: RPG Maker 2000/2003 and EasyRPG games interpreter
-games-engines/fs2_open 23.0.0 23.2.0: FreeSpace2 Source Code Project game engine
+games-engines/fs2_open 23.0.0 23.2.1: FreeSpace2 Source Code Project game engine
 games-engines/instead 3.3.5 3.4.1 9999: INSTEAD text-based quest game engine
 games-engines/luxtorpeda 25.0.0: Steam Play compatibility tool to run games using native Linux engines
 games-engines/nxengine-evo 2.6.4: rewrite of the jump-and-run platformer Doukutsu Monogatari(Cave Story)
@@ -1367,7 +1370,7 @@ games-puzzle/superflu-riteurnz 1.5.5: Artisanal video-game about Superflu, the u
 games-puzzle/superflu-riteurnz-data 12: Artisanal video-game about Superflu, the useless super-hero (data files)
 games-rpg/snoot-game 1.8 1.8-r1: Visual novel parody of Goodbye Volcano High
 games-server/among-sus 20210519: Among Us, but it's a text adventure
-games-util/HeroicGamesLauncher-bin 2.9.1 2.9.2: A Native GOG and Epic Games Launcher for Linux, Windows and Mac.
+games-util/HeroicGamesLauncher-bin 2.9.2 2.10.0: A Native GOG and Epic Games Launcher for Linux, Windows and Mac.
 games-util/NotEnoughProduction 0.0.4: Tool for building production chains for modded minecraft
 games-util/ProtonUp-Qt 2.8.2 9999: Install and manage GE-Proton, Luxtorpeda & more for Steam Lutris and Heroic.
 games-util/chiaki 2.1.1-r2 9999: Client for PlayStation 4 and PlayStation 5 Remote Play
@@ -1430,7 +1433,7 @@ gui-apps/hiprompt-gtk-py 0_pre20220624 9999: GTK+ Himitsu prompter for Wayland
 gui-apps/hyprland-plugins 0.31.0: A blazing fast wayland wallpaper utility
 gui-apps/hyprpaper 0.3.0 0.4.0: A blazing fast wayland wallpaper utility
 gui-apps/hyprpicker 0.1.0-r1 0.1.1: A wlroots-compatible Wayland color picker that does not suck
-gui-apps/intiface-central-bin 2.4.0 2.4.3: Buttplug frontend application
+gui-apps/intiface-central-bin 2.4.3 2.5.0: Buttplug frontend application
 gui-apps/lemurs 0.3.1 0.3.1-r1 0.3.2: A TUI Display/Login Manager
 gui-apps/meteo-qt 3.3: A system tray application for the weather status
 gui-apps/mpvpaper 1.2 1.3 9999: A video wallpaper program for wlroots based wayland compositors
@@ -1443,7 +1446,7 @@ gui-apps/nwg-icon-picker 0.1.0 0.1.0-r1 9999: GTK icon chooser with a text searc
 gui-apps/nwg-launchers 0.5.0 0.6.3 0.7.1.1 9999: GTK+ launchers for sway, i3 and some other WMs
 gui-apps/nwg-menu 0.1.1: enuStart plugin to nwg-panel, also capable of working standalone
 gui-apps/nwg-panel 0.9.11 0.9.11-r1 0.9.14 0.9.16 9999: GTK3-based panel for sway and Hyprland Wayland compositors
-gui-apps/nwg-shell 0.5.7 0.5.7-r1 0.5.16: meta-package for the nwg-shell project
+gui-apps/nwg-shell 0.5.16 0.5.18 0.5.19: meta-package for the nwg-shell project
 gui-apps/nwg-shell-config 0.5.14 0.5.14-r1 0.5.22: nwg-shell configuration utility
 gui-apps/organicmaps 9999: Offline maps and navigation using OpenStreetMap data
 gui-apps/packettracer 8.2.0: Cisco's packet tracer
@@ -1524,6 +1527,7 @@ media-gfx/akira 0.0.13 9999: Native Linux App for UI and UX Design built in Vala
 media-gfx/azpainter 3.0.3 3.0.4: Full color painting software for Linux for illustration drawing
 media-gfx/bonzomatic 2022.02.05 2022.08.20 9999: Live shader coding tool and Shader Showdown workhorse
 media-gfx/dehinter 4.0.0: A tool for the removal of TrueType instruction sets (hints) in fonts
+media-gfx/dnglab 0.5.2: Command line tool to convert camera RAW files to Digital Negative Format (DNG).
 media-gfx/dustr 9999: light and interactive tool your crops need
 media-gfx/fontbakery 0.7.38-r1 0.8.10-r1: Font quality assurance tool
 media-gfx/fontdiff 0.2.3: A tool for finding visual differences between two font versions
@@ -1717,7 +1721,7 @@ net-misc/lyrics-in-terminal 1.5.0: Command Line Lyrics fetcher for MPRIS media p
 net-misc/maestral 1.8.0: Maestral is an open-source Dropbox client written in Python
 net-misc/maestral-qt 1.8.0: Maestral is an open-source Dropbox client written in Python
 net-misc/mastorss 0.13.0 0.13.1 9999: Another RSS to Mastodon bot
-net-misc/megasync 4.3.8.0 4.5.0.0 9999: The official Qt-based program for syncing your MEGA account in your PC
+net-misc/megasync 4.5.0.0 4.10.0.0 9999: The official Qt-based program for syncing your MEGA account in your PC
 net-misc/myip 1.2.1: Get your external IP address using STUN server
 net-misc/ooni-probe-cli 3.18.0 3.18.1: OONI Probe network measurement tool for detecting internet censorship
 net-misc/openbgpd 6.9_p0 8.0 9999: OpenBGPD is a free implementation of BGPv4
@@ -1744,7 +1748,7 @@ net-news/communique 1.2.0: RSS Reader with cross-platform sync
 net-news/gfeeds 2.2.0: An RSS/Atom feed reader for GNOME.
 net-news/newsraft 0.19 9999: A lightweight feed reader with ncurses user interface inspired by Newsboat.
 net-nntp/inn 2.7.1: InterNetNews - the Internet meets Netnews
-net-nntp/pan 0.154-r1: A newsreader for GNOME
+net-nntp/pan 0.154-r1 0.155: A newsreader for GNOME
 net-p2p/bisq-bin 1.9.9: The decentralized bitcoin exchange (non-atomic, with arbitration)
 net-p2p/dogecoin-qt 1.14.6: Dogecoin Core Qt for desktop. Downloaded blockchain is under 2.2GB. Much secure.
 net-p2p/feather 2.4.9-r1 2.5.1 2.5.2 9999: A free, open-source Monero wallet
@@ -1764,7 +1768,7 @@ net-vpn/cloudflare-warp 2023.3.470 2023.7.40: Cloudflare Warp Client
 net-vpn/fastd 22: A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
 net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that require SAML
 net-vpn/mullvadvpn-app 2023.5: Tool used to manage daemon setup
-net-wireless/bluetuith 0.1.7 0.1.8 9999: A TUI bluetooth manager for Linux written in Go
+net-wireless/bluetuith 0.1.7 0.1.8 0.1.9 9999: A TUI bluetooth manager for Linux written in Go
 net-wireless/rtl8192eu 0_pre20230613: Realtek 8192EU driver module for Linux kernel
 net-wireless/rtl8723bu 9999: Driver for the rtl8723 wireless chipset
 net-wireless/rtl8821ce 0_pre20231002: Realtek RTL8821CE Driver module for Linux kernel
@@ -1774,7 +1778,7 @@ sci-biology/geneathome 1.10-r5: BOINC application for expanding Gene Regulatory 
 sci-biology/jalview-bin 2.11.2.7: Editor of multiple sequence alignments.
 sci-chemistry/vesta-bin 3.5.8: Visualisation for Electronic and STructural Analysis.
 sci-chemistry/xcrysden 1.6.2: For the visualisation of molecular and crystal structures.
-sci-electronics/bluespec 2022.01-r1 2023.01 9999: Toolchain for the Bluespec Hardware Definition Language
+sci-electronics/bluespec 2022.01-r1 2023.01 2023.07 9999: Toolchain for the Bluespec Hardware Definition Language
 sci-electronics/circt 1.14.0 1.37.0: The fast free Verilog/SystemVerilog simulator
 sci-electronics/coil64 2.1.27: Coil64 is inductance coil calculator
 sci-electronics/dsview 1.2.1 1.3.0 9999: An open source multi-function instrument
@@ -1787,7 +1791,7 @@ sci-electronics/skywater-pdk 0.0.0_p20220424: Process design kit for usage with 
 sci-electronics/slang 1.0 2.0-r2 3.0 4.0 9999: SystemVerilog compiler and language services
 sci-electronics/svls 0.2.3: SystemVerilog language server
 sci-electronics/verible 0.0.3420: SystemVerilog parser, style-linter, and formatter
-sci-electronics/verilator 4.106 5.014 9999: The fast free Verilog/SystemVerilog simulator
+sci-electronics/verilator 4.106 5.014 5.018 9999: The fast free Verilog/SystemVerilog simulator
 sci-geosciences/GeographicLib-data 0-r1: Datasets for GeographicLib
 sci-libs/ButterflyPACK 2.1.1-r1: Mathematical software for solving large-scale dense linear systems
 sci-libs/CoDiPack 0_pre20210720-r1: Fast gradient evaluation in C++ based on Expression Templates
@@ -1900,7 +1904,7 @@ sys-auth/pam-gnupg 0.3: Unlock GnuPG keys on login
 sys-block/partclone 0.3.20: Partition cloning tool
 sys-boot/customrescuecd-x86-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/customrescuecd-x86_64-grub 0.1: Grub menu entries for the .iso image of customrescuecd
-sys-boot/limine 4.20230503.0 4.20230514.0 4.20230529.0 4.20230530.0 4.20230606.0 4.20230615.0 5.20230811.0: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
+sys-boot/limine 4.20230503.0 4.20230514.0 4.20230529.0 4.20230530.0 4.20230606.0 4.20230615.0 5.20230811.0 5.20231103.0: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
 sys-boot/woeusb-ng 0.2.10: Create Windows installer USB from ISO (rewrite of WoeUSB)
 sys-boot/zfsbootmenu 1.12.0 2.2.0 2.2.1: ZFS bootloader for root-on-ZFS systems
 sys-cluster/AXL 0.5.0 0.7.0: AXL provides a common C interface to transfer files in an HPC storage hierarchy
@@ -1956,6 +1960,7 @@ sys-devel/fcode-utils 1.0.3: Set of utilities to process FCODE, OpenFirmware's b
 sys-devel/gdb-dashboard 0.17.2: Modular visual interface for GDB in Python
 sys-devel/gsl 4.1.5-r1: iMatix GSL code generator
 sys-devel/just 1.12.0 1.13.0 1.14.0 1.15.0: Just a command runner (with syntax inspired by 'make')
+sys-devel/lcc 2021.01.11: The lcc retargetable ANSI C compiler
 sys-firmware/lenovolegionlinux 9999: Lenovo Legion Linux kernel module
 sys-firmware/pinephone-firmware 20210809: Firmwares files for PinePhone
 sys-fs/btrfs-heatmap 9-r1: Python 3 script to draw a heatmap of a btrfs filesystem
@@ -1975,8 +1980,8 @@ sys-kernel/dpdk-kmod 21.11.1 22.07 23.03: DPDK Kernel Nic Interface module
 sys-kernel/modprobed-db 2.46: This utility tracks modules loaded by the kernel, for localmodconfig
 sys-kernel/msr-safe 1.6.0: Allows safer access to model specific registers (MSRs)
 sys-kernel/tirdad 0_pre20200926: kernel module for random ISN generation
-sys-kernel/uek-sources 5.15.0.5.70.1 5.15.0.6.80.3 5.15.0.8.91.3 5.15.0.105.125.4: Unbreakable Enterprise Kernel (UEK) sources built from Oracle
-sys-kernel/ugrd 0.7.3 0.7.4: Python based initramfs generator with TOML defintions
+sys-kernel/uek-sources 5.15.0.5.70.1 5.15.0.6.80.3 5.15.0.8.91.3 5.15.0.105.125.4 5.15.0.201.135.2: Unbreakable Enterprise Kernel (UEK) sources built from Oracle
+sys-kernel/ugrd 0.8.0: Python based initramfs generator with TOML defintions
 sys-kernel/ummunotify 2-r1: Userspace support for MMU notifications
 sys-kernel/usermode-kernel 6.0.12: Linux kernel built with Gentoo patches
 sys-kernel/xow 0.5: Linux driver for the Xbox One wireless dongle
@@ -2045,7 +2050,7 @@ www-plugins/yandex-browser-ffmpeg-codecs-bin 112.0.5615.49: Multi-threaded ffmpe
 www-servers/hinsightd 0.9.17 9999: hinsightd a http/1.1 webserver with (hopefully) minimal goals
 www-servers/quark 9999: A small, GET-only static HTTP server
 x11-apps/lightdm-gtk-greeter-settings 1.2.2-r1: Configuration tool for the LightDM GTK Greeter
-x11-apps/xcur2png 0.7.1: Convert X cursors to PNG images
+x11-apps/xcur2png 0.7.1 0.7.1-r1: Convert X cursors to PNG images
 x11-drivers/OpenTabletDriver-bin 0.6.0.2 0.6.0.4: Cross platform tablet driver (binary package)
 x11-libs/gtk-fortran 3.24.31 4.3.0 4.4.0 4.4.1: A GTK+ binding to build Graphical User Interfaces in Fortran
 x11-libs/sdl-fakeqwerty 0_pre20191217: Fixes non-QWERTY keyboards on Prison Architect (and maybe other SDL games)

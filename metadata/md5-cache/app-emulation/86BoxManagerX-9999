@@ -1,5 +1,5 @@
 BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
-DEFINED_PHASES=compile install unpack
+DEFINED_PHASES=compile install prepare unpack
 DEPEND=app-emulation/86Box dev-dotnet/dotnet-sdk-bin
 DESCRIPTION=A (cross-platform) configuration manager for the 86Box emulator
 EAPI=7
@@ -9,4 +9,4 @@ LICENSE=MIT
 PROPERTIES=live
 SLOT=0
 _eclasses_=desktop	021728fdc1b03b36357dbc89489e0f0d	git-r3	2358a7b20091609e24bd3a83b3ac5991
-_md5_=a1057557c3f0c47825c0249191efe1e3
+_md5_=671cbd02b2c13a493a8cae5fe533e310
