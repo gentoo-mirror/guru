@@ -1,4 +1,4 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -109,7 +109,7 @@ src_test() {
 	emake -C testsuite check
 }
 
-# Call eselect vi update with --if-unset
+# Call eselect bluespec update with --if-unset
 # to respect user's choice
 eselect_bluespec_update() {
 	ebegin "Calling eselect bluespec update"

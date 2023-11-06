@@ -4,12 +4,12 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{8..12} pypy3 )
+PYTHON_COMPAT=( python3_{9..12} pypy3 )
 inherit distutils-r1 optfeature
 
 DESCRIPTION="Python based initramfs generator with TOML defintions"
 HOMEPAGE="https://github.com/desultory/ugrd"
-SRC_URI="https://github.com/desultory/${PN}/archive/refs/tags/${P}.tar.gz"
+SRC_URI="https://github.com/desultory/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
@@ -18,6 +18,8 @@ KEYWORDS="~amd64"
 RDEPEND="app-misc/pax-utils"
 
 src_install() {
+	# Call the distutils-r1_src_install function to install the package
+	distutils-r1_src_install
 	# Create the ugrd config directory
 	keepdir /etc/ugrd
 }

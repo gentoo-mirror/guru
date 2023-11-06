@@ -1,9 +1,9 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
-inherit autotools desktop qmake-utils xdg cmake
+inherit autotools cmake qmake-utils xdg
 
 DESCRIPTION="The official Qt-based program for syncing your MEGA account in your PC"
 HOMEPAGE="
@@ -14,20 +14,22 @@ HOMEPAGE="
 if [[ ${PV} == 9999 ]];then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/meganz/MEGAsync"
+	EGIT_BRANCH="master"
+	EGIT_SUBMODULES=( '*' )
 else
-	MEGA_SDK_REV="37b346c2e119559e40c08f43e1a8f54353e7ad59" # commit of src/MEGASync/mega submodule
+	MEGA_SDK_REV="91d14ae6b024339dd4e15acb367ac20fb24633ac" # commit of src/MEGASync/mega submodule
+	MEGA_TAG_SUFFIX="Win"
 	SRC_URI="
-		https://github.com/meganz/MEGAsync/archive/v${PV}_Win.tar.gz -> ${P}.tar.gz
+		https://github.com/meganz/MEGAsync/archive/v${PV}_${MEGA_TAG_SUFFIX}.tar.gz -> ${P}.tar.gz
 		https://github.com/meganz/sdk/archive/${MEGA_SDK_REV}.tar.gz -> ${PN}-sdk-${PV}.tar.gz
 	"
 	KEYWORDS="~amd64 ~x86"
-	# 4.3.8.0 has no dedicated linux tag
-	S="${WORKDIR}"/MEGAsync-${PV}_Win
+	S="${WORKDIR}"/MEGAsync-${PV}_${MEGA_TAG_SUFFIX}
 fi
 
 LICENSE="MEGA"
 SLOT="0"
-IUSE="+cryptopp +curl +sqlite +zlib dolphin examples freeimage java nautilus php python readline threads thunar"
+IUSE="+cryptopp +curl +sqlite +zlib dolphin examples freeimage java nautilus nemo php python readline threads thunar"
 
 RDEPEND="
 	app-arch/xz-utils
@@ -42,7 +44,8 @@ RDEPEND="
 	curl? ( net-misc/curl[ssl,curl_ssl_openssl(-)] )
 	dolphin? ( kde-apps/dolphin )
 	freeimage? ( media-libs/freeimage )
-	nautilus? ( >=gnome-base/nautilus-3 )
+	nautilus? ( >=gnome-base/nautilus-43 )
+	nemo? ( gnome-extra/nemo )
 	readline? ( sys-libs/readline:0 )
 	sqlite? ( dev-db/sqlite:3 )
 	thunar? ( xfce-base/thunar )
@@ -65,30 +68,34 @@ DEPEND="
 BDEPEND="
 	dev-lang/swig
 	dev-qt/linguist-tools
+	dolphin? ( kde-frameworks/extra-cmake-modules )
 "
-
-DOCS=( CREDITS.md README.md )
 
 CMAKE_USE_DIR="${S}/src/MEGAShellExtDolphin"
 
 src_prepare() {
 	if [[ ${PV} != 9999 ]]; then
 		rmdir src/MEGASync/mega
-		mv "${WORKDIR}"/sdk-${MEGA_SDK_REV} src/MEGASync/mega
+		mv "${WORKDIR}/sdk-${MEGA_SDK_REV}" src/MEGASync/mega
 	fi
+
+	if has_version ">=media-video/ffmpeg-6.0"; then
+		eapply "${FILESDIR}/${PN}-4.10.0.0_ffmpeg6.patch"
+	fi
+	eapply "${FILESDIR}/${PN}-4.10.0.0_fix-build.patch"
+
 	if use dolphin; then
-		# use the kde5 CMakeLists instead of the kde 4 version
-		mv src/MEGAShellExtDolphin/CMakeLists_kde5.txt src/MEGAShellExtDolphin/CMakeLists.txt || die
 		cmake_src_prepare
 	else
 		default
 	fi
-	cd src/MEGASync/mega
+
+	cd "${S}/src/MEGASync/mega"
 	eautoreconf
 }
 
 src_configure() {
-	cd src/MEGASync/mega
+	cd "${S}/src/MEGASync/mega"
 	econf \
 		"--disable-silent-rules" \
 		"--disable-curl-checks" \
@@ -107,34 +114,37 @@ src_configure() {
 		$(use_enable java) \
 		$(use_enable php) \
 		$(use_enable python) \
-		"--enable-chat" \
 		"--enable-gcc-hardening"
-	cd ../..
 
+	cd "${S}/src"
 	local myeqmakeargs=(
 		MEGA.pro
 		CONFIG+="release"
+		$(usex freeimage "" "CONFIG+=nofreeimage")
+		$(usev nautilus "SUBDIRS+=MEGAShellExtNautilus")
+		$(usev nemo "SUBDIRS+=MEGAShellExtNemo")
+		$(usev thunar "SUBDIRS+=MEGAShellExtThunar")
 	)
 
 	eqmake5 ${myeqmakeargs[@]}
-	use dolphin && cmake_src_configure
 	$(qt5_get_bindir)/lrelease MEGASync/MEGASync.pro
+
+	use dolphin && cmake_src_configure
 }
 
 src_compile() {
-	emake -C src INSTALL_ROOT="${D}" || die
+	emake -C src
+
 	use dolphin && cmake_src_compile
 }
 
 src_install() {
+	emake -C src INSTALL_ROOT="${D}" install
+	dobin "src/MEGASync/${PN}"
+	dodoc CREDITS.md README.md
+
+	rm -rf "${D}"/usr/share/doc/megasync
+	rm -rf "${D}"/usr/share/icons/ubuntu-mono-dark
+
 	use dolphin && cmake_src_install
-	einstalldocs
-	dobin src/MEGASync/${PN}
-	insinto usr/share/licenses/${PN}
-	doins LICENCE.md installer/terms.txt
-	domenu src/MEGASync/platform/linux/data/${PN}.desktop
-	cd src/MEGASync/platform/linux/data/icons/hicolor
-	for size in 16x16 32x32 48x48 128x128 256x256;do
-		doicon -s $size $size/apps/mega.png
-	done
 }
