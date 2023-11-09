@@ -82,7 +82,8 @@ app-admin/dotbot 1.20.1: A tool that bootstraps your dotfiles
 app-admin/enpass-desktop-bin 6.7.4.933: A cross-platform, complete password management solution
 app-admin/gentoo_update 0.2.1: Gentoo Linux updater
 app-admin/grub-customizer 5.1.0: A graphical grub2 settings manager
-app-admin/himitsu 0.3 9999: Secret storage system for Unix, suitable for storing passwords, keys, ...
+app-admin/himitsu 0.3 0.4 9999: Secret storage system for Unix, suitable for storing passwords, keys, ...
+app-admin/himitsu-keyring 0.2.0: graphical frontend for managing a Himitsu key store
 app-admin/himitsu-ssh 0.2 9999: SSH integration for Himitsu
 app-admin/himitsu-totp 9999: TOTP support for Himitsu
 app-admin/i2pd-tools 0.2023.03.12 0.2023.05.26: Some useful tools for I2P
@@ -191,7 +192,7 @@ app-misc/1password-cli 2.14.0: The world’s most-loved password manager CLI
 app-misc/afc 1.1 1.2 9999: Anime File Checker, checks CRC32 contained in filenames
 app-misc/afetch 2.2.0: Simple system info written in C
 app-misc/ani-cli 4.4 9999: A cli to browse and watch anime.
-app-misc/anki-bin 23.10: A spaced-repetition memory training program (flash cards)
+app-misc/anki-bin 23.10-r1: A spaced-repetition memory training program (flash cards)
 app-misc/apidb 5.8.0_beta 5.11.0_beta 5.13.1_beta 5.13.4_beta 5.13.6_beta: API Generator for Database access
 app-misc/aw-client 0.11.0: Client library for ActivityWatch
 app-misc/aw-core 0.11.0: Core library for ActivityWatch
@@ -1220,29 +1221,6 @@ dev-python/zope-cachedescriptors 5.0: Python descriptors which cache their outpu
 dev-python/zope-testrunner 6.0 6.1: This package provides a flexible test runner with layer support.
 dev-python/zopfli 0.2.2: Zopfli module for Python
 dev-python/zxcvbn 4.4.28-r1: Python implementation of Dropbox's realistic password strength estimator
-dev-raku/App-Prove6 0.0.12-r2: Run tests through a TAP harness.
-dev-raku/Digest-MD5 0.05_p20170425-r1: MD5 Algorithm
-dev-raku/Distribution-Builder-MakeFromJSON 0.6-r2: Makefile based distribution builder
-dev-raku/File-Directory-Tree 0_pre20220314-r1: Module for creating and deleting directories
-dev-raku/File-Find 0.1.1: Get a lazy list of a directory tree
-dev-raku/File-Name-Editor 0.2.1-r1: A command line tool for renaming files in any text editor.
-dev-raku/File-Temp 0.0.10-r2: Create temporary files and directories.
-dev-raku/File-Which 1.0.1: Find the full or relative paths to an executable program
-dev-raku/Getopt-Long 0.3.3-r1: A powerful getopt implementation
-dev-raku/Inline-Perl5 0.59-r1: Use Perl 5 code in a Raku program
-dev-raku/JSON-Fast 0.17-r1: A naive imperative JSON parser in pure Raku
-dev-raku/LibraryMake 1.0.0_p20220410-r1: An attempt to simplify building native code for a Raku module.
-dev-raku/Shell-Command 0_pre20190129-r1: Cross-platform routines emulating common *NIX shell commands
-dev-raku/System-Query 0.1.6-r1: It collapses JSON dependent upon certain environmental information
-dev-raku/TAP 0.3.5-r1: An asynchronous TAP framework written in Raku.
-dev-raku/Term-termios 0_pre20180208-r1: termios routines for Raku
-dev-raku/Terminal-ANSIColor 0.5: Colorize terminal output
-dev-raku/Terminal-ANSIParser 0.0.2: ANSI/VT stream parser
-dev-raku/Terminal-LineEditor 0.0.11: Generalized terminal line editing
-dev-raku/Text-MiscUtils 0.0.6: A bag of small text processing tricks
-dev-raku/URI-Encode 0.09: A Raku module for encoding / decoding URIs
-dev-raku/fez 37-r1: Command line tool for uploading distributions to zef ecosystem
-dev-raku/zef 0.13.8-r1: Raku / Perl6 Module Management
 dev-ruby/asciidoctor-pdf 2.3.4: A native PDF converter for AsciiDoc based on Asciidoctor and Prawn
 dev-ruby/byebug 11.1.3: a Ruby 2 debugger
 dev-ruby/chruby 0.3.9-r3 9999: Changes the current Ruby
