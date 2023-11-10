@@ -1,4 +1,4 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -25,6 +25,7 @@ DEPEND="
 	ssl? ( net-libs/gnutls:= )
 	net-libs/libmicrohttpd:=
 	net-libs/orcania
+	net-libs/yder
 	sys-libs/zlib
 "
 RDEPEND="
@@ -34,7 +35,6 @@ RDEPEND="
 src_configure() {
 	local mycmakeargs=(
 		-DBUILD_ULFIUS_DOCUMENTATION=$(usex doc)
-		-DDOWNLOAD_DEPENDENCIES=OFF
 		-DWITH_CURL=$(usex curl)
 		-DWITH_GNUTLS=$(usex ssl)
 		-DWITH_JANSSON=$(usex jansson)
