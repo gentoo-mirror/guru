@@ -1,0 +1,12 @@
+BDEPEND=net-libs/nodejs sys-apps/yarn >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile install postinst unpack
+DESCRIPTION=Main frontend for www-apps/pleroma, inspired by qvitter
+EAPI=8
+HOMEPAGE=https://pleroma.social/ https://git.pleroma.social/pleroma/pleroma-fe
+INHERIT=git-r3
+LICENSE=AGPL-3 MIT ISC Apache-2.0
+PROPERTIES=live
+RESTRICT=network-sandbox
+SLOT=0
+_eclasses_=git-r3	5133e393e8717a3a093660f990801dc1
+_md5_=1026377bbf9ce7097cecfd545b3e6e0a

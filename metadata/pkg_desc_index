@@ -260,6 +260,7 @@ app-misc/wego 2.2: Wego is a weather client for the terminal
 app-misc/xplr 0.21.3: A hackable, minimal, fast TUI file explorer
 app-misc/yaf 0.0.3: Yet another system fetch that is minimal and customizable.
 app-misc/yazi 0.1.4: Blazing fast terminal file manager written in Rust, based on async I/O.
+app-misc/zcock 0.0.2: Print an emoji according to chinese calendar
 app-mobilephone/flashlight 0.1.1-r2: It's a flashlight, what do you expect?
 app-mobilephone/mobile-config-firefox 2.1.0: Mobile and privacy friendly configuration for Firefox
 app-mobilephone/pinephone-modem-scripts 0.20.8: Modem scripts for the PinePhone
@@ -879,7 +880,6 @@ dev-python/adb-shell 0.4.3 0.4.4 0.4.4-r1: A Python implementation of ADB with s
 dev-python/ahocorasick 1.4.4 9999: Python module implementing Aho-Corasick algorithm
 dev-python/aiomysql 0.1.1: aiomysql is a library for accessing a MySQL database from the asyncio
 dev-python/aiopg 1.4.0: Postgres integration with asyncio
-dev-python/aiounittest 1.4.2: Test python asyncio-based code with ease
 dev-python/almost 0.1.5: A helper for approximate comparison
 dev-python/ascim 0.1.1: Manipulate ASCII art as you would do with raster images
 dev-python/asgi-lifespan 2.0.0 2.1.0: Programmatic startup/shutdown of ASGI apps
@@ -1426,7 +1426,7 @@ gui-apps/nwg-launchers 0.5.0 0.6.3 0.7.1.1 9999: GTK+ launchers for sway, i3 and
 gui-apps/nwg-menu 0.1.1: enuStart plugin to nwg-panel, also capable of working standalone
 gui-apps/nwg-panel 0.9.11 0.9.11-r1 0.9.14 0.9.16 9999: GTK3-based panel for sway and Hyprland Wayland compositors
 gui-apps/nwg-shell 0.5.16 0.5.18 0.5.19: meta-package for the nwg-shell project
-gui-apps/nwg-shell-config 0.5.14 0.5.14-r1 0.5.22: nwg-shell configuration utility
+gui-apps/nwg-shell-config 0.5.14 0.5.14-r1 0.5.22 0.5.23: nwg-shell configuration utility
 gui-apps/organicmaps 9999: Offline maps and navigation using OpenStreetMap data
 gui-apps/packettracer 8.2.0: Cisco's packet tracer
 gui-apps/paperde 0.1.1_p20210426 9999: Simple, sleek QT based DE for wayland using wayfire
@@ -1671,15 +1671,16 @@ net-libs/evpath 4.5.0_p20220601: EVpath is an event transport middleware layer
 net-libs/ixwebsocket 11.4.4: C++ websocket client and server library
 net-libs/kcgi 0.12.5 0.13.0: Minimal CGI library for web applications
 net-libs/libuecc 7: a very small Elliptic Curve Cryptography library compatible with Ed25519.
-net-libs/orcania 2.3.2: Library for angharad programs
+net-libs/orcania 2.3.3: Library for angharad programs
 net-libs/picotls 0_pre20220721 9999: TLS 1.3 implementation in C
 net-libs/signald 0.23.2: an API for interacting with Signal Private Messenger
 net-libs/syndication-domination 1.0 9999: An RSS/Atom parser, because there's nothing else out there.
 net-libs/td 1.8.0 9999: Cross-platform library for building Telegram clients
 net-libs/telepathy-haze 0.8.1: Telepathy connection manager providing libpurple supported protocols
 net-libs/udt 4.11_p20181126: UDT is a UDP based data transport protocol
-net-libs/ulfius 2.7.13: HTTP Framework for REST Applications in C
+net-libs/ulfius 2.7.14: HTTP Framework for REST Applications in C
 net-libs/usockets 0.8.1_p20211023 9999: tiny eventing, networking & crypto for async applications
+net-libs/yder 1.4.20: Logging library for C applications
 net-mail/dovecot-fts-xapian 1.5.4 1.5.5 9999: Dovecot FTS plugin backed by Xapian
 net-mail/hydroxide 0.2.23 0.2.24 0.2.26 0.2.27 0.2.28 9999: A third-party, open-source ProtonMail CardDAV, IMAP and SMTP bridge
 net-mail/pop 0.2.0: Send emails from your terminal
@@ -1739,7 +1740,7 @@ net-p2p/monero 0.17.2.0 0.17.2.3 0.17.3.0 0.17.3.2 0.18.1.0 0.18.1.1 0.18.1.2 0.
 net-p2p/p2pool 3.5 3.6.2 3.7 3.8 9999: Decentralized pool for Monero mining
 net-p2p/popura 0.4.6 9999: Popura: alternative Yggdrasil network client
 net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
-net-p2p/yggdrasil-go 0.4.7 0.5.1 9999: An experiment in scalable routing as an encrypted IPv6 overlay network
+net-p2p/yggdrasil-go 0.4.7 0.5.1 0.5.2 9999: An experiment in scalable routing as an encrypted IPv6 overlay network
 net-print/hpuld 1.00.39.15.00.23-r1: HP Unified Linux Driver (for samsung hardware)
 net-proxy/snowflake 2.7.0: Pluggable Transport using WebRTC, inspired by Flashproxy
 net-voip/discover-overlay 0.4.5 0.5.4 0.6.9: Yet another Discord overlay for Linux written in Python using GTK3
@@ -2010,10 +2011,11 @@ www-apps/librarian 2023.05.07: An alternative frontend for LBRY/Odysee. Inspired
 www-apps/mycorrhiza 1.14.0 9999: Git-based wiki engine written in Go using mycomarkup
 www-apps/nitter 2023.05.20 2023.07.12: Alternative front-end for Twitter
 www-apps/pleroma 2.6.0 9999: ActivityPub social networking software compatible with other Fediverse software
+www-apps/pleroma-fe 2.6.0 9999: Main frontend for www-apps/pleroma, inspired by qvitter
 www-apps/rimgo 1.2.1: An alternative frontend for Imgur. Originally based on rimgu.
 www-apps/snac 2.25 2.26: A simple, minimalistic ActivityPub instance
 www-apps/uwebsockets 20.11.0 20.14.0 9999: ultra fast, simple, secure & standards compliant web I/O
-www-apps/whoogle-search 0.8.3-r1 0.8.4-r1: A self-hosted, ad-free, privacy-respecting metasearch engine
+www-apps/whoogle-search 0.8.3-r2 0.8.4-r2: A self-hosted, ad-free, privacy-respecting metasearch engine
 www-apps/zola 0.17.2: A fast static site generator with everything built-in
 www-client/badwolf 1.2.2 1.3.0 9999: Minimalist and privacy-oriented WebKitGTK+ browser
 www-client/browsh 1.8.2: A fully-modern text-based browser, rendering to TTY and browsers
