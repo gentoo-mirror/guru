@@ -20,6 +20,7 @@ BDEPEND="
 		app-doc/doxygen
 		media-gfx/graphviz
 	)
+	net-libs/orcania
 	systemd? (
 		sys-apps/systemd
 	)

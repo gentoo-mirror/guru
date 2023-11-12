@@ -20,7 +20,10 @@ BDEPEND="
 "
 DEPEND="
 	curl? ( net-misc/curl )
-	doc? ( app-doc/doxygen )
+	doc? (
+	     app-doc/doxygen
+	     media-gfx/graphviz
+	)
 	jansson? ( dev-libs/jansson:= )
 	ssl? ( net-libs/gnutls:= )
 	net-libs/libmicrohttpd:=
@@ -41,6 +44,9 @@ src_configure() {
 		-DWITH_WEBSOCKET=$(usex websocket)
 		-DWITH_YDER=OFF
 	)
+
+	# bug 917149
+	sed -i -e "s/-Werror//g" CMakeLists.txt || die
 
 	cmake_src_configure
 }
