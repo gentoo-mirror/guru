@@ -1,6 +1,6 @@
 BDEPEND=app-arch/xz-utils >=dev-lang/go-1.18 app-arch/unzip
 DEFINED_PHASES=compile install unpack
-DESCRIPTION=Print an emoji according to chinese calendar
+DESCRIPTION=Print an emoji according to traditional chinese calendar and more
 EAPI=8
 HOMEPAGE=https://github.com/stkw0/zcock
 INHERIT=go-module
@@ -8,6 +8,6 @@ KEYWORDS=~amd64
 LICENSE=Unlicense
 RESTRICT=strip
 SLOT=0
-SRC_URI=https://github.com/stkw0/zcock/archive/refs/tags/v0.0.2.tar.gz -> zcock-0.0.2.tar.gz https://gentoo.kropotkin.rocks/go-pkgs/zcock-0.0.2-vendor.tar.xz https://gentoo.kropotkin.rocks/go-pkgs/IP2LOCATION-LITE-DB5.BIN.lzma
+SRC_URI=https://github.com/stkw0/zcock/archive/refs/tags/v0.1.0.tar.gz -> zcock-0.1.0.tar.gz https://gentoo.kropotkin.rocks/go-pkgs/zcock-0.1.0-vendor.tar.xz https://gentoo.kropotkin.rocks/go-pkgs/IP2LOCATION-LITE-DB5.BIN.lzma
 _eclasses_=multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	toolchain-funcs	edeef89edaf21d30225d31702ab117ac	multilib	c19072c3cd7ac5cb21de013f7e9832e0	go-module	8624eede24936fd7666e5298e5332f22
-_md5_=d2581e593ae697d4a5a3be47e6c33b35
+_md5_=cd796b039b390c98099a2f7ba2cc728a

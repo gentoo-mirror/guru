@@ -1,0 +1,13 @@
+BDEPEND=>=dev-lang/go-1.18 app-arch/unzip
+DEFINED_PHASES=compile install test unpack
+DESCRIPTION=Kopia - Fast And Secure Open-Source Backup
+EAPI=8
+HOMEPAGE=https://github.com/kopia/kopia
+INHERIT=go-module
+KEYWORDS=~amd64 ~arm ~arm64
+LICENSE=Apache-2.0 MIT BSD BSD-2 CC0-1.0
+RESTRICT=strip
+SLOT=0
+SRC_URI=https://github.com/kopia/kopia/archive/refs/tags/v0.15.0.tar.gz -> kopia-0.15.0.tar.gz https://storage.googleapis.com/zhuyifei-static/gentoo/kopia-0.15.0-deps.tar.xz
+_eclasses_=multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	toolchain-funcs	edeef89edaf21d30225d31702ab117ac	multilib	c19072c3cd7ac5cb21de013f7e9832e0	go-module	8624eede24936fd7666e5298e5332f22
+_md5_=22571a8797a0c7f4868e78f46f6e07fd

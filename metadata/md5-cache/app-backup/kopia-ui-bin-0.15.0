@@ -1,0 +1,15 @@
+DEFINED_PHASES=install postinst postrm preinst unpack
+DESCRIPTION=Kopia - Fast And Secure Open-Source Backup (Electron UI)
+EAPI=8
+HOMEPAGE=https://github.com/kopia/kopia
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=unpacker xdg
+IUSE=+system-kopia
+KEYWORDS=-* ~amd64 ~arm ~arm64
+LICENSE=Apache-2.0
+RDEPEND=system-kopia? ( ~app-backup/kopia-0.15.0 ) app-accessibility/at-spi2-core dev-libs/expat dev-libs/glib dev-libs/nspr dev-libs/nss media-libs/alsa-lib media-libs/mesa net-print/cups sys-apps/dbus x11-libs/cairo x11-libs/gtk+:3 x11-libs/libdrm x11-libs/libX11 x11-libs/libxcb x11-libs/libXcomposite x11-libs/libXdamage x11-libs/libXext x11-libs/libXfixes x11-libs/libxkbcommon x11-libs/libXrandr x11-libs/pango
+RESTRICT=test
+SLOT=0
+SRC_URI=amd64? ( https://github.com/kopia/kopia/releases/download/v0.15.0/kopia-ui_0.15.0_amd64.deb -> kopia-ui-bin-0.15.0-amd64.deb ) arm? ( https://github.com/kopia/kopia/releases/download/v0.15.0/kopia-ui_0.15.0_armv7l.deb -> kopia-ui-bin-0.15.0-arm.deb ) arm64? ( https://github.com/kopia/kopia/releases/download/v0.15.0/kopia-ui_0.15.0_arm64.deb -> kopia-ui-bin-0.15.0-arm64.deb )
+_eclasses_=multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	toolchain-funcs	edeef89edaf21d30225d31702ab117ac	multilib	c19072c3cd7ac5cb21de013f7e9832e0	unpacker	aa6a4e924009232d8b78b31e932c30b5	xdg-utils	baea6080dd821f5562d715887954c9d3	xdg	4a14c5c24f121e7da66e5aab4a168c6e
+_md5_=fa037c3ebc33ac74528c475245e647a4
