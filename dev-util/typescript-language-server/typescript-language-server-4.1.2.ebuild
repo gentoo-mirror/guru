@@ -13,11 +13,11 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="
-	net-libs/nodejs
+	>=net-libs/nodejs-18
 "
 BDEPEND="
-	net-libs/nodejs[npm]
-	>=dev-lang/typescript-4.9.5
+	>=net-libs/nodejs-18[npm]
+	>=dev-lang/typescript-5.2.2
 "
 
 src_unpack() {

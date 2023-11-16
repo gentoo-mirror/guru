@@ -9,7 +9,7 @@ DESCRIPTION="Youtube livestream downloader"
 HOMEPAGE="https://github.com/Kethsar/ytarchive"
 SRC_URI="
 	https://github.com/Kethsar/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
-	https://files.asokolov.org/gentoo/${P}-deps.tar.xz
+	https://files.asokolov.org/gentoo/${P}-vendor.tar.xz
 "
 
 LICENSE="BSD MIT"
