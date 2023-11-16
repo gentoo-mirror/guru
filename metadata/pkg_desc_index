@@ -108,7 +108,7 @@ app-arch/zarchive 0.1.2: Library for creating and reading zstd-compressed file a
 app-backup/b2 3.4.0 3.9.0: Command-line tool for BackBlaze's B2 product
 app-backup/grub-btrfs 4.11-r1 4.12 4.13 9999: Improves Grub by adding btrfs snapshots to the Grub menu.
 app-backup/kopia 0.15.0: Kopia - Fast And Secure Open-Source Backup
-app-backup/kopia-ui-bin 0.15.0: Kopia - Fast And Secure Open-Source Backup (Electron UI)
+app-backup/kopia-ui-bin 0.15.0-r1: Kopia - Fast And Secure Open-Source Backup (Electron UI)
 app-backup/pika-backup 0.6.1 0.6.2: Keep your data safe
 app-backup/timeshift 21.09.1-r3 22.06.5-r2 22.11.1-r1 23.07.1: A system restore utility for Linux
 app-backup/timeshift-autosnap 0.9: Automatically creates a timeshift-snapshot when executed
@@ -320,7 +320,7 @@ app-text/klogg 22.06.0.1289: A GUI application to browse and search through long
 app-text/komikku 1.21.1 1.22.0: An online/offline manga reader for GNOME
 app-text/koodo-reader-bin 1.5.1: A modern ebook manager and reader with sync and backup capacities
 app-text/lizard 1.17.10 1.17.10-r1: A simple code complexity analyser, supports most of the popular languages.
-app-text/lorien-bin 0.5.0: Infinite canvas drawing/whiteboarding. Made with Godot.
+app-text/lorien-bin 0.6.0: Infinite canvas drawing/whiteboarding. Made with Godot.
 app-text/mandown 0.1.3: Markdown to groff (man page) converter
 app-text/md2mld 0.5.1: Little cli tool to convert md files into mld files
 app-text/md4c 0.4.8_p20220115: C Markdown parser. Fast, SAX-like interface, CommonMark Compliant.
@@ -1020,7 +1020,7 @@ dev-python/jplephem 2.18 2.19: Python version of NASA DE4xx ephemerides for Astr
 dev-python/jsonpath-rw 1.4.0: A robust and significantly extended implementation of JSONPath for Python
 dev-python/jsonpath-rw-ext 1.2.2: Extensions for JSONPath RW
 dev-python/jupyter-sphinx 0.4.0: Jupyter Sphinx Extensions
-dev-python/kurbopy 0.9.0-r1: Python wrapper around Rust kurbo 2D curves library
+dev-python/kurbopy 0.9.0-r1 0.10.40: Python wrapper around Rust kurbo 2D curves library
 dev-python/langdetect 1.0.9: Port of Google's language-detection library to Python
 dev-python/libcst 0.4.3_p20220607: Concrete syntax tree parser and serializer for Python
 dev-python/libusb1 2.0.1: Pure-python wrapper for libusb-1.0
@@ -1029,8 +1029,8 @@ dev-python/markdownify 0.11.6: Convert HTML to Markdown
 dev-python/marshmallow_enum 1.5.1: Enum handling for Marshmallow
 dev-python/mastodon-py 1.8.0 1.8.1: Python wrapper for the Mastodon API
 dev-python/material-color-utilities 0.1.5 9999: Python port of material-color-utilities used for Material You colors
-dev-python/mautrix 0.20.1 0.20.2: A Python 3 asyncio Matrix framework
-dev-python/minio 7.1.16 7.1.17: MinIO Client SDK for Python
+dev-python/mautrix 0.20.2 0.20.3: A Python 3 asyncio Matrix framework
+dev-python/minio 7.1.17 7.2.0: MinIO Client SDK for Python
 dev-python/mitype 0.2.4: Typing speed test in terminal
 dev-python/mkdocs-blog-plugin 9999: Plugin for MkDocs to keep a simple blog section inside your documentation.
 dev-python/mkdocs-exclude 1.0.2-r1: Lets you exclude files or trees from your output
@@ -1184,13 +1184,13 @@ dev-python/trailrunner 1.2.1: Walk paths and run things
 dev-python/transaction 3.0.1-r1 3.1.0: Transaction management for Python
 dev-python/trueskill 0.4.5_p20220422: Python Implementation of the TrueSkill Algorithm
 dev-python/ttfautohint-py 0.5.1-r1: Python wrapper for ttfautohint, a free auto-hinter for TrueType fonts
-dev-python/tulir-telethon 1.30.0_alpha2 1.32.0_alpha2: Pure Python 3 MTProto API Telegram client library, for bots too!
+dev-python/tulir-telethon 1.32.0_alpha2 1.32.0_alpha3: Pure Python 3 MTProto API Telegram client library, for bots too!
 dev-python/tweepy 4.14.0: An easy-to-use Python library for accessing the Twitter API.
 dev-python/types-paramiko 2.10.0 2.11.1: Typing stubs for paramiko
-dev-python/types-protobuf 4.24.0.1 4.24.0.2: Typing stubs for protobuf
+dev-python/types-protobuf 4.24.0.4: Typing stubs for protobuf
 dev-python/types-python-dateutil 2.8.17 2.8.18: Typing stubs for python-dateutil
 dev-python/types-pytz 2021.3.8 2022.1.1: Typing stubs for pytz
-dev-python/types-requests 2.31.0.6 2.31.0.8: Typing stubs for requests
+dev-python/types-requests 2.31.0.6 2.31.0.10: Typing stubs for requests
 dev-python/types-urllib3 1.26.25.14: Typing stubs for urllib3
 dev-python/typing_inspect 0.7.1: Runtime inspection utilities for Python typing module
 dev-python/ufo2ft 2.31.1: A bridge from UFOs to FontTools
@@ -1220,7 +1220,7 @@ dev-python/youseedee 0.3.0 0.4.1: Interface to the Unicode Character Database
 dev-python/zodb 5.8.0-r1 5.8.1: Python object-oriented database
 dev-python/zodbpickle 3.0.1-r1 3.1: Fork of Python's pickle module to work with ZODB
 dev-python/zope-cachedescriptors 5.0: Python descriptors which cache their output
-dev-python/zope-testrunner 6.0 6.1: This package provides a flexible test runner with layer support.
+dev-python/zope-testrunner 6.1 6.2: This package provides a flexible test runner with layer support.
 dev-python/zopfli 0.2.2: Zopfli module for Python
 dev-python/zxcvbn 4.4.28-r1: Python implementation of Dropbox's realistic password strength estimator
 dev-ruby/asciidoctor-pdf 2.3.4: A native PDF converter for AsciiDoc based on Asciidoctor and Prawn
@@ -1276,13 +1276,14 @@ dev-util/qshaderedit 0.1.5: Multiplatform shader editor inspired by Apple's Open
 dev-util/quilttools 0.3-r1: Mailbox to quilt series converter
 dev-util/reflex 0.3.1: A small tool to watch a directory and rerun a command when certain files change
 dev-util/reuse 2.0.0 2.1.0: A tool for compliance with the REUSE recommendations
+dev-util/rye 0.15.2: An Experimental Package Management Solution for Python
 dev-util/stripe-cli 9999: A command-line tool for Stripe
 dev-util/tflint-bin 0.43.0 0.46.0: A Pluggable Terraform Linter
 dev-util/tokei 12.1.1 12.1.2: Count code, quickly
-dev-util/typescript-language-server 3.3.1 3.3.2: TypeScript & JavaScript Language Server
+dev-util/typescript-language-server 3.3.2 4.1.2: TypeScript & JavaScript Language Server
 dev-util/upstream-ontologist 0.1.35-r1: Tracking of upstream project metadata
 dev-util/vala-language-server 0.48.4: Code Intelligence for Vala & Genie
-dev-util/vscode-langservers-extracted 4.6.0 4.7.0: HTML/CSS/JSON/ESLint/Markdown language servers extracted from vscode.
+dev-util/vscode-langservers-extracted 4.7.0 4.8.0: HTML/CSS/JSON/ESLint/Markdown language servers extracted from vscode.
 dev-util/wakatime-cli 1.27.0 1.28.6: Command line interface to WakaTime used by all WakaTime plugins
 dev-util/wxformbuilder 3.10.1-r1: A wxWidgets GUI Builder
 dev-util/xmake 2.7.9 9999: A cross-platform build utility based on Lua
@@ -1326,7 +1327,7 @@ games-emulation/rpcs3 9999: PS3 emulator/debugger
 games-emulation/yuzu 0_p20230202 9999: An emulator for Nintendo Switch
 games-engines/boxtron 0.5.4-r2: Steam Play compatibility tool to run DOS games using native Linux DOSBox
 games-engines/easyrpg-player 0.7.0 0.8 0.8-r1: RPG Maker 2000/2003 and EasyRPG games interpreter
-games-engines/fs2_open 23.0.0 23.2.1: FreeSpace2 Source Code Project game engine
+games-engines/fs2_open 23.0.0 23.2.1-r1: FreeSpace2 Source Code Project game engine
 games-engines/instead 3.3.5 3.4.1 9999: INSTEAD text-based quest game engine
 games-engines/luxtorpeda 25.0.0: Steam Play compatibility tool to run games using native Linux engines
 games-engines/nxengine-evo 2.6.4: rewrite of the jump-and-run platformer Doukutsu Monogatari(Cave Story)
@@ -1411,9 +1412,9 @@ gui-apps/grimshot 9999: A helper for screenshots within sway
 gui-apps/gtklock 2.0.1 2.1.0: GTK-based lockscreen for Wayland
 gui-apps/gtklock-extras 9999: Gtklock modules
 gui-apps/hiprompt-gtk-py 0_pre20220624 9999: GTK+ Himitsu prompter for Wayland
-gui-apps/hyprland-plugins 0.31.0: A blazing fast wayland wallpaper utility
+gui-apps/hyprland-plugins 0.31.0 0.32.3: A blazing fast wayland wallpaper utility
 gui-apps/hyprpaper 0.3.0 0.4.0: A blazing fast wayland wallpaper utility
-gui-apps/hyprpicker 0.1.0-r1 0.1.1: A wlroots-compatible Wayland color picker that does not suck
+gui-apps/hyprpicker 0.1.1 0.2.0: A wlroots-compatible Wayland color picker that does not suck
 gui-apps/intiface-central-bin 2.4.3 2.5.0: Buttplug frontend application
 gui-apps/lemurs 0.3.1 0.3.1-r1 0.3.2: A TUI Display/Login Manager
 gui-apps/meteo-qt 3.3: A system tray application for the weather status
@@ -1428,7 +1429,7 @@ gui-apps/nwg-launchers 0.5.0 0.6.3 0.7.1.1 9999: GTK+ launchers for sway, i3 and
 gui-apps/nwg-menu 0.1.1: enuStart plugin to nwg-panel, also capable of working standalone
 gui-apps/nwg-panel 0.9.11 0.9.11-r1 0.9.14 0.9.16 0.9.17 9999: GTK3-based panel for sway and Hyprland Wayland compositors
 gui-apps/nwg-shell 0.5.16 0.5.18 0.5.19: meta-package for the nwg-shell project
-gui-apps/nwg-shell-config 0.5.14 0.5.14-r1 0.5.22 0.5.23: nwg-shell configuration utility
+gui-apps/nwg-shell-config 0.5.14 0.5.14-r1 0.5.22 0.5.23 0.5.24: nwg-shell configuration utility
 gui-apps/organicmaps 9999: Offline maps and navigation using OpenStreetMap data
 gui-apps/packettracer 8.2.0: Cisco's packet tracer
 gui-apps/paperde 0.1.1_p20210426 9999: Simple, sleek QT based DE for wayland using wayfire
@@ -1461,6 +1462,7 @@ gui-apps/wlsunset 0.3.0 9999: Day/night gamma adjustments for Wayland
 gui-apps/wmenu 0.1.4: dynamic menu for wlroots compositors, maintains the look and feel of dmenu
 gui-apps/wob 0.14.2 0.15.1: Lightweight overlay volume/backlight/progress/anything bar for Wayland
 gui-apps/wtype 0.4: xdotool type for wayland
+gui-apps/xremap 0.8.11: Dynamic key remap for X and Wayland
 gui-apps/yambar 1.9.0 1.10.0 9999: Simplistic and highly configurable status panel for X and Wayland
 gui-libs/cubegui 4.7-r2: CUBE Uniform Behavioral Encoding GUI
 gui-libs/libcprime 4.2.0 4.2.2 9999: Library for managing settings of CoreApps
@@ -1483,6 +1485,7 @@ mail-client/heirloom-mailx 12.5: The mailx utility from CentOS
 mail-client/mailspring-bin 1.9.2 1.10.3 1.10.5: A beautiful, fast and fully open source mail client for Mac, Windows and Linux
 mail-filter/opensmtpd-filter-dkimsign 0.6: OpenSMTPD filter for DKIM signing
 media-fonts/3270font 2.3.1: A IBM 3270 Terminal font in a modern format
+media-fonts/blobmoji 15.0: Noto Emoji with extended Blob support
 media-fonts/firacode-nerdfont 2.2.2 3.0.1: A free and open-source typeface for developers
 media-fonts/firago 1.001: A continuation of FiraSans
 media-fonts/gohufont 2.1_p20170627: A monospace bitmap font
@@ -1606,7 +1609,7 @@ media-video/trakt-scrobbler 1.4.2-r1 1.5.0-r1 1.6.3-r1: Scrobbler for trakt.tv t
 media-video/uxplay 1.65.3 1.66: AirPlay Unix mirroring server
 media-video/walksnail-osd-tool 0.2.0 9999: Tool for rendering OSDs over Walksnail DVR recordings
 media-video/wlrobs 1.0 9999: OBS plugin that allows you to screen capture on wlroots based compositors
-media-video/ytarchive 0.3.2: Youtube livestream downloader
+media-video/ytarchive 0.4.0: Youtube livestream downloader
 mpv-plugin/SmartCopyPaste 3.1: Gives mpv the capability to copy and paste while being smart and customizable
 mpv-plugin/autoload 0.35.1 0.36.0: Loads playlist entries before and after the the currently played file
 mpv-plugin/autosubsync-mpv 20220402: Automatic subtitle synchronization script for mpv media player
@@ -1647,7 +1650,8 @@ net-im/gajim-plugins 9999: Plugins developed fro Gajim XMPP client
 net-im/go-sendxmpp 0.6.0 0.6.1: A little tool to send messages to an XMPP contact or MUC
 net-im/gtkcord4 0.0.10 0.0.11: A Gtk4 Discord client in Golang
 net-im/guilded-bin 1.0.9105465: Drop Discord, get Guilded
-net-im/heisenbridge 1.14.2 1.14.5: A bouncer-style Matrix IRC bridge
+net-im/heisenbridge 1.14.5 1.14.6: A bouncer-style Matrix IRC bridge
+net-im/iamb 0.0.8: A Matrix chat client that uses Vim keybindings
 net-im/jitsi-meet 2022.3.1-r1: Desktop application for Jitsi Meet built with Electron
 net-im/kaidan 0.9.1: User-friendly and modern chat app for every device
 net-im/mastoposter 0.1-r1 0.2: Configurable reposter from Mastodon-compatible Fediverse servers
@@ -1705,7 +1709,7 @@ net-misc/lyrics-in-terminal 1.5.0: Command Line Lyrics fetcher for MPRIS media p
 net-misc/maestral 1.8.0: Maestral is an open-source Dropbox client written in Python
 net-misc/maestral-qt 1.8.0: Maestral is an open-source Dropbox client written in Python
 net-misc/mastorss 0.13.0 0.13.1 9999: Another RSS to Mastodon bot
-net-misc/megasync 4.5.0.0 4.10.0.0 9999: The official Qt-based program for syncing your MEGA account in your PC
+net-misc/megasync 4.10.0.0 4.11.0.0 9999: The official Qt-based program for syncing your MEGA account in your PC
 net-misc/myip 1.2.1: Get your external IP address using STUN server
 net-misc/ooni-probe-cli 3.18.0 3.18.1: OONI Probe network measurement tool for detecting internet censorship
 net-misc/openbgpd 6.9_p0 8.0 9999: OpenBGPD is a free implementation of BGPv4
@@ -1728,7 +1732,6 @@ net-misc/yacy 1.924.20210209.10069: YaCy - p2p based distributed web-search engi
 net-misc/youtube-dl 2021.12.17: youtube-dl fork with additional features and fixes
 net-misc/yt-dlg 2023.08.16: A cross platform front-end GUI of the popular youtube-dl written in wxPython.
 net-news/comitium 1.8.1: feed aggregator for gemini supporting many formats and protocols
-net-news/communique 1.2.0: RSS Reader with cross-platform sync
 net-news/gfeeds 2.2.0: An RSS/Atom feed reader for GNOME.
 net-news/newsraft 0.19 9999: A lightweight feed reader with ncurses user interface inspired by Newsboat.
 net-nntp/inn 2.7.1: InterNetNews - the Internet meets Netnews

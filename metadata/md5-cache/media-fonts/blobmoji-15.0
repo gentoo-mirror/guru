@@ -1,0 +1,13 @@
+BDEPEND=X? ( >=x11-apps/mkfontscale-1.2.0 media-fonts/encodings )
+DEFINED_PHASES=install postinst postrm setup unpack
+DESCRIPTION=Noto Emoji with extended Blob support
+EAPI=8
+HOMEPAGE=https://github.com/C1710/blobmoji
+INHERIT=font
+IUSE=X
+KEYWORDS=~amd64
+LICENSE=OFL-1.1
+SLOT=0
+SRC_URI=https://github.com/C1710/blobmoji/releases/download/v15.0/Blobmoji.ttf -> blobmoji-15.0.ttf
+_eclasses_=font	aa113a3df9cd0a9693a1c1ee7c34a6eb
+_md5_=da6cbcd712f27c64b36b49c0feedf5c7
