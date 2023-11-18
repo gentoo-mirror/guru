@@ -5,7 +5,7 @@ EAPI=8
 
 inherit cmake
 
-MY_TRANTOR_V="1.5.13"
+MY_TRANTOR_V="1.5.14"
 
 DESCRIPTION="C++14/17 based HTTP web application framework"
 HOMEPAGE="https://github.com/drogonframework/drogon"
@@ -22,7 +22,7 @@ IUSE="+brotli doc examples mariadb postgres redis sqlite test +yaml"
 RESTRICT="!test? ( test )"
 
 RDEPEND="
-	>=dev-cpp/trantor-${MY_TRANTOR_V}:=
+	>=dev-cpp/trantor-${MY_TRANTOR_V}_p1:=
 	dev-libs/jsoncpp:=
 	sys-libs/zlib
 	brotli? ( app-arch/brotli:= )
