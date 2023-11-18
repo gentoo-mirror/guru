@@ -91,6 +91,7 @@ app-admin/krapplet 0.3.1-r1: Krapplet (keyring applet): a Linux graphical passwo
 app-admin/linode-cli 5.42.1 5.43.0 5.44.3 5.45.1: Linode Command Line Interface
 app-admin/oet 0.1.9 0.1.10 9999: Update your system into binpkgs in an overlay sandbox
 app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applications and tmux
+app-admin/pass-audit 1.2: A pass extension for auditing your password repository.
 app-admin/pass-update 2.1: pass extension that provides an easy flow for updating passwords
 app-admin/pulumi-bin 3.91.1 3.92.0: Infrastructure as code in any programming language
 app-admin/rbw 9999: unofficial bitwarden cli
@@ -208,7 +209,7 @@ app-misc/corectrl 1.3.7 9999: Core control application
 app-misc/cpufetch 1.01 1.02 1.04: Simplistic yet fancy CPU architecture fetching tool
 app-misc/dbf 0.9.0: Command line tool to read the content of dBASE III, IV, and 5.0 files
 app-misc/diff-so-fancy 1.4.3-r1: Good-lookin' diffs. Actually... nah... The best-lookin' diffs
-app-misc/doublecmd-bin 1.0.11 1.1.4_beta: Free cross platform open source file manager with two panels side by side.
+app-misc/doublecmd-bin 1.0.11 1.1.5_beta: Free cross platform open source file manager with two panels side by side.
 app-misc/dpscreenocr 1.4.0: Program to recognize text on screen
 app-misc/dragon 1.1.1 1.1.1_p20210820 1.2.0: Simple drag-and-drop source/sink for X and Wayland
 app-misc/electricsheep 3.0.2_p20191005 9999: Realize the collective dream of sleeping computers from all over the internet
@@ -223,7 +224,7 @@ app-misc/grit 0.3.0: An personal task manager that represents tasks as multitree
 app-misc/hollywood 1.22: Fill your console with Hollywood melodrama technobabble
 app-misc/kloak 0.2.30: A privacy tool that makes keystroke biometrics less effective
 app-misc/kmon 1.6.4: Linux kernel manager and activity monitor
-app-misc/ledger-live 2.60.0 2.62.2 2.64.1 2.66.0 2.68.1: Manager for the Ledger hardware wallet
+app-misc/ledger-live 2.62.2 2.64.1 2.66.0 2.68.1 2.71.1: Manager for the Ledger hardware wallet
 app-misc/lf 27 28-r1 29 30 31: Terminal file manager
 app-misc/macchina 6.1.8 6.1.8-r1: A system information fetcher, with an (unhealthy) emphasis on performance.
 app-misc/mangadesk 0.7.7 0.7.8: Terminal Client for MangaDex
@@ -287,6 +288,7 @@ app-portage/quantum-resolver 9999: A WIP portage dependency resolver
 app-portage/showbuild 0.9.1-r1: Script to follow log of running portage builds
 app-portage/version 0.19.0_alpha 0.20.1_alpha 0.21.0_alpha: A command line function for package version management.
 app-shells/antibody 6.1.1-r1: Fast Zsh plugin manager
+app-shells/carapace 0.28.3: Multi-shell multi-command argument completer
 app-shells/clownfish 0_pre20210117: fish shell mocks
 app-shells/direnv 2.32.3 9999: Environment variable manager for shell
 app-shells/fish-agnoster-theme 0.1.0_p20200415: Fancy, colorful theme with support for Powerline fonts
@@ -532,7 +534,7 @@ dev-cpp/coeurl 0.2.1 0.3.0: A simple async wrapper around CURL for C++
 dev-cpp/cpp-jwt 1.5_pre20220727: JSON Web Token library for C++
 dev-cpp/cpptoml 0.1.1: Header-only library for parsing TOML
 dev-cpp/dpp 10.0.23 10.0.24 10.0.25: Lightweight C++ Discord bot library
-dev-cpp/drogon 1.8.6 1.8.7: C++14/17 based HTTP web application framework
+dev-cpp/drogon 1.8.7 1.9.0: C++14/17 based HTTP web application framework
 dev-cpp/dtl 1.20-r1: diff template library written by C++
 dev-cpp/easyloggingpp 9.97.0 9.97.1: C++ logging library
 dev-cpp/fbthrift 2023.02.06.00: Facebook's branch of Apache Thrift, including a new C++ server
@@ -550,7 +552,7 @@ dev-cpp/rang 3.2: Minimal, header-only, modern C++ library for terminal goodies
 dev-cpp/sprout 0_pre20190615: C++11/14 constexpr based Containers, Algorithms, Random numbers and others
 dev-cpp/std-format 0_pre20220112-r1: A simple polyfill allowing you to use std::format
 dev-cpp/tiny-dnn 1.0.0_alpha3-r2: header only, dependency-free deep learning framework in C++14
-dev-cpp/trantor 1.5.13 1.5.14: Non-blocking I/O tcp network lib based on c++14/17
+dev-cpp/trantor 1.5.14 1.5.14_p1: Non-blocking I/O tcp network lib based on c++14/17
 dev-cpp/trompeloeil 43: Header only C++14 mocking framework
 dev-cpp/units 2.3.3: A compile-time, header-only, dimensional analysis and unit conversion library
 dev-cpp/vexcl 1.4.3-r2: VexCL - Vector expression template library for OpenCL
@@ -648,7 +650,7 @@ dev-libs/KVTree 1.2.0 1.3.0: KVTree provides a fully extensible C data structure
 dev-libs/M_CLI2 3.2.0: M_CLI2 - parse Unix-like command line arguments from Fortran
 dev-libs/StringiFor 1.1.4: StringiFor, Strings Fortran Manipulator, yet another strings Fortran module
 dev-libs/atl 2.2.1: Library for the creation and manipulation of lists
-dev-libs/cgicc 3.2.19: A C++ class library for writing CGI applications
+dev-libs/cgicc 3.2.19 3.2.20: A C++ class library for writing CGI applications
 dev-libs/cubelib 4.7-r2: General purpose C++ library and tools
 dev-libs/cubew 4.7: High performance C Writer library
 dev-libs/dill 2.4.1: Provides instruction-level code generation directly into memory regions
@@ -938,7 +940,7 @@ dev-python/daff 1.3.46: The daff can produce and apply tabular diffs
 dev-python/daiquiri 3.0.1: Python library to easily setup basic logging functionality
 dev-python/darkdetect 0.8.0: Detect OS dark mode from Python
 dev-python/dasbus 1.7: DBus library in Python 3
-dev-python/dataclasses_json 0.5.7: Easily serialize Data Classes to and from JSON
+dev-python/dataclasses_json 0.5.7 0.5.14: Easily serialize Data Classes to and from JSON
 dev-python/dateparser 1.1.7 1.1.8: Date parsing library designed to parse dates from HTML pages
 dev-python/decopatch 1.4.9 1.4.10: Create decorators easily in python
 dev-python/defcon 0.10.2: A set of UFO based objects for use in font editing applications
@@ -1133,7 +1135,7 @@ dev-python/rchitect 0.3.36: Interoperate R with Python
 dev-python/readability-lxml 0.6.1 0.8.1: fast html to text parser (article readability tool)
 dev-python/readmdict 0.1.1-r1: Read mdx/mdd files
 dev-python/repoze-sphinx-autointerface 1.0.0-r1: Auto-generate Sphinx API docs from Zope interfaces
-dev-python/restrictedpython 6.1 6.2: A restricted execution environment for Python to run untrusted code
+dev-python/restrictedpython 6.2 7.0: A restricted execution environment for Python to run untrusted code
 dev-python/rst2ansi 0.1.5-r2: Render reStructuredText documents to the terminal
 dev-python/rstcheck 6.2.0: Checks syntax of reStructuredText and code blocks nested within it
 dev-python/rstr 3.2.0: Easily generate random strings of various types
@@ -1184,7 +1186,7 @@ dev-python/trailrunner 1.2.1: Walk paths and run things
 dev-python/transaction 3.0.1-r1 3.1.0: Transaction management for Python
 dev-python/trueskill 0.4.5_p20220422: Python Implementation of the TrueSkill Algorithm
 dev-python/ttfautohint-py 0.5.1-r1: Python wrapper for ttfautohint, a free auto-hinter for TrueType fonts
-dev-python/tulir-telethon 1.32.0_alpha2 1.32.0_alpha3: Pure Python 3 MTProto API Telegram client library, for bots too!
+dev-python/tulir-telethon 1.32.0_alpha3 1.33.0_alpha1: Pure Python 3 MTProto API Telegram client library, for bots too!
 dev-python/tweepy 4.14.0: An easy-to-use Python library for accessing the Twitter API.
 dev-python/types-paramiko 2.10.0 2.11.1: Typing stubs for paramiko
 dev-python/types-protobuf 4.24.0.4: Typing stubs for protobuf
@@ -1192,7 +1194,7 @@ dev-python/types-python-dateutil 2.8.17 2.8.18: Typing stubs for python-dateutil
 dev-python/types-pytz 2021.3.8 2022.1.1: Typing stubs for pytz
 dev-python/types-requests 2.31.0.6 2.31.0.10: Typing stubs for requests
 dev-python/types-urllib3 1.26.25.14: Typing stubs for urllib3
-dev-python/typing_inspect 0.7.1: Runtime inspection utilities for Python typing module
+dev-python/typing_inspect 0.7.1 0.9.0: Runtime inspection utilities for Python typing module
 dev-python/ufo2ft 2.31.1: A bridge from UFOs to FontTools
 dev-python/ufoLib2 0.13.1 0.14.0: A UFO font library
 dev-python/ufoNormalizer 0.6.1: A tool that will normalize the XML and other data inside of a UFO
@@ -1212,7 +1214,7 @@ dev-python/webrtcvad 2.0.10-r1: Python interface to the Google WebRTC Voice Acti
 dev-python/wheezy-template 3.1.0: lightweight template library
 dev-python/wrapio 2.0.0: Handling event-based streams in Python
 dev-python/wsgi_intercept 1.10.0: wsgi_intercept installs a WSGI application in place of a real URI for testing
-dev-python/xattr 0.9.9: Python wrapper for extended filesystem attributes
+dev-python/xattr 0.9.9 0.10.1: Python wrapper for extended filesystem attributes
 dev-python/xunitparser 1.3.4: Read JUnit/XUnit XML files and map them to Python objects
 dev-python/yams 0.7.3 9999: Yet Another MPD Scrobbler (for Last.FM)
 dev-python/yaql 2.0.0: YAQL: Yet Another Query Language
@@ -1423,13 +1425,13 @@ gui-apps/nwg-bar 0.1.3 0.1.4: GTK3-based button bar for wlroots-based compositor
 gui-apps/nwg-displays 0.3.7 0.3.7-r1 0.3.8: Output management utility for sway and Hyprland
 gui-apps/nwg-dock 0.3.6 0.3.9: GTK3-based dock for sway
 gui-apps/nwg-dock-hyprland 0.1.4 0.1.7: GTK3-based dock for Hyprland
-gui-apps/nwg-drawer 0.3.9 0.4.0: Application drawer for wlroots-based Wayland compositors
+gui-apps/nwg-drawer 0.3.9 0.4.0 0.4.1: Application drawer for wlroots-based Wayland compositors
 gui-apps/nwg-icon-picker 0.1.0 0.1.0-r1 9999: GTK icon chooser with a text search option
 gui-apps/nwg-launchers 0.5.0 0.6.3 0.7.1.1 9999: GTK+ launchers for sway, i3 and some other WMs
 gui-apps/nwg-menu 0.1.1: enuStart plugin to nwg-panel, also capable of working standalone
 gui-apps/nwg-panel 0.9.11 0.9.11-r1 0.9.14 0.9.16 0.9.17 9999: GTK3-based panel for sway and Hyprland Wayland compositors
-gui-apps/nwg-shell 0.5.16 0.5.18 0.5.19: meta-package for the nwg-shell project
-gui-apps/nwg-shell-config 0.5.14 0.5.14-r1 0.5.22 0.5.23 0.5.24: nwg-shell configuration utility
+gui-apps/nwg-shell 0.5.18 0.5.19 0.5.22: meta-package for the nwg-shell project
+gui-apps/nwg-shell-config 0.5.23 0.5.24 0.5.25: nwg-shell configuration utility
 gui-apps/organicmaps 9999: Offline maps and navigation using OpenStreetMap data
 gui-apps/packettracer 8.2.0: Cisco's packet tracer
 gui-apps/paperde 0.1.1_p20210426 9999: Simple, sleek QT based DE for wayland using wayfire
@@ -1656,7 +1658,7 @@ net-im/jitsi-meet 2022.3.1-r1: Desktop application for Jitsi Meet built with Ele
 net-im/kaidan 0.9.1: User-friendly and modern chat app for every device
 net-im/mastoposter 0.1-r1 0.2: Configurable reposter from Mastodon-compatible Fediverse servers
 net-im/matterhorn-bin 50200.13.0: Terminal based Mattermost client
-net-im/mautrix-discord 0.6.2 0.6.3: A Matrix-Discord puppeting bridge
+net-im/mautrix-discord 0.6.3 0.6.4: A Matrix-Discord puppeting bridge
 net-im/mautrix-facebook 0.4.1 0.5.0: A Matrix-Facebook Messenger puppeting bridge
 net-im/mautrix-signal 0.4.2 0.4.3: A Matrix-Signal Messenger puppeting bridge
 net-im/mautrix-slack 0_pre20230517 0_pre20230925: A Matrix-Slack puppeting bridge based on slack-go
@@ -1745,7 +1747,7 @@ net-p2p/monero 0.17.2.0 0.17.2.3 0.17.3.0 0.17.3.2 0.18.1.0 0.18.1.1 0.18.1.2 0.
 net-p2p/p2pool 3.5 3.6.2 3.7 3.8 9999: Decentralized pool for Monero mining
 net-p2p/popura 0.4.6 9999: Popura: alternative Yggdrasil network client
 net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
-net-p2p/yggdrasil-go 0.4.7 0.5.1 0.5.2 9999: An experiment in scalable routing as an encrypted IPv6 overlay network
+net-p2p/yggdrasil-go 0.5.2 9999: An experiment in scalable routing as an encrypted IPv6 overlay network
 net-print/hpuld 1.00.39.15.00.23-r1: HP Unified Linux Driver (for samsung hardware)
 net-proxy/snowflake 2.7.0: Pluggable Transport using WebRTC, inspired by Flashproxy
 net-voip/discover-overlay 0.4.5 0.5.4 0.6.9: Yet another Discord overlay for Linux written in Python using GTK3
