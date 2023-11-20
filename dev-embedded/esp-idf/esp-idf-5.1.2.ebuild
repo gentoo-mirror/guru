@@ -16,7 +16,7 @@ HOMEPAGE="https://www.espressif.com/"
 
 #	https://github.com/espressif/binutils-esp32ulp/releases/download/v2.28.51-esp-20191205/binutils-esp32ulp-linux-amd64-2.28.51-esp-20191205.tar.gz
 SRC_URI="https://dl.espressif.com/github_assets/espressif/${PN}/releases/download/v${PV}/${PN}-v${PV}.zip -> ${P}.zip
-	https://github.com/espressif/openocd-esp32/releases/download/v0.12.0-esp32-20230419/openocd-esp32-linux-amd64-0.12.0-esp32-20230419.tar.gz
+	https://github.com/espressif/openocd-esp32/releases/download/v0.12.0-esp32-20230921/openocd-esp32-linux-amd64-0.12.0-esp32-20230921.tar.gz
 	https://github.com/espressif/binutils-gdb/releases/download/esp-gdb-v12.1_20221002/xtensa-esp-elf-gdb-12.1_20221002-x86_64-linux-gnu.tar.gz"
 SRC_URI+=" esp32? ( ${CROSSTOOL_URL}/xtensa-esp32-elf-${VER}-x86_64-linux-gnu.tar.xz )"
 SRC_URI+=" esp32s2? ( ${CROSSTOOL_URL}/xtensa-esp32s2-elf-${VER}-x86_64-linux-gnu.tar.xz )"
@@ -46,7 +46,9 @@ RDEPEND="
 	dev-embedded/esptool
 	dev-embedded/esp-idf-kconfig[${PYTHON_USEDEP}]
 	dev-embedded/esp-idf-monitor[${PYTHON_USEDEP}]
+	dev-embedded/esp-idf-panic-decoder[${PYTHON_USEDEP}]
 	dev-embedded/esp-idf-size[${PYTHON_USEDEP}]
+	dev-embedded/freertos-gdb[${PYTHON_USEDEP}]
 	dev-embedded/idf-component-manager[${PYTHON_USEDEP}]
 "
 
@@ -56,8 +58,7 @@ QA_PREBUILT="opt/* usr/lib* usr/share/esp-idf/*"
 QA_PRESTRIPPED="opt/*"
 
 PATCHES=(
-	"${FILESDIR}/allow-system-install-${PN}-5.0.2.patch"
-	"${FILESDIR}/pyparsing-${P}.patch"
+	"${FILESDIR}/allow-system-install-${PN}-5.1.2.patch"
 )
 
 S="${WORKDIR}/${PN}-v${PV}"
@@ -119,7 +120,6 @@ install_tool() {
 }
 
 src_install() {
-
 	echo -e "#!/bin/sh\npython /usr/share/${PN}/tools/idf.py \"\$@\"" > idf
 	dobin idf
 
