@@ -70,6 +70,14 @@ RDEPEND="
 	gui-libs/gtk-layer-shell
 	x11-libs/gtk+:3
 	x11-misc/xdg-utils
+	app-accessibility/at-spi2-core:2
+	dev-libs/glib:2
+	media-libs/fontconfig
+	media-libs/freetype
+	media-libs/harfbuzz:=
+	x11-libs/cairo
+	x11-libs/gdk-pixbuf:2
+	x11-libs/pango
 "
 DEPEND="
 	>=dev-lang/go-1.20
