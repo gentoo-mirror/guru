@@ -1,0 +1,12 @@
+BDEPEND=|| ( dev-lang/python:3.12 dev-lang/python:3.11 dev-lang/python:3.10 ) || ( ( dev-lang/python:3.12 dev-python/pyyaml[python_targets_python3_12(-)] ) ( dev-lang/python:3.11 dev-python/pyyaml[python_targets_python3_11(-)] ) ( dev-lang/python:3.10 dev-python/pyyaml[python_targets_python3_10(-)] ) )
+DEFINED_PHASES=compile install setup test
+DESCRIPTION=Forward-port of the Crowther/Woods Adventure 2.5
+EAPI=8
+HOMEPAGE=http://www.catb.org/~esr/open-adventure/
+INHERIT=desktop python-any-r1
+KEYWORDS=~amd64
+LICENSE=BSD-2
+SLOT=0
+SRC_URI=https://gitlab.com/esr/open-adventure/-/archive/1.16/open-adventure-1.16.tar.bz2
+_eclasses_=desktop	021728fdc1b03b36357dbc89489e0f0d	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	toolchain-funcs	eed10cf5e5a06916e654d31f5a1925cc	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	e989dbdcbb647bd8655857c1f95be244	python-any-r1	f5169813d1619761b459800587005fd2
+_md5_=f1b4d79f979bbb608e38532d0add8487

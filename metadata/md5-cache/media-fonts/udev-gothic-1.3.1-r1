@@ -1,6 +1,6 @@
 BDEPEND=app-arch/unzip X? ( >=x11-apps/mkfontscale-1.2.0 media-fonts/encodings )
 DEFINED_PHASES=install postinst postrm setup unpack
-DESCRIPTION=UDEV Gothic is a font that combines BIZ UD Gothic and JetBrains Mono.
+DESCRIPTION=UDEV Gothic is a composite font of BIZ UD Gothic and JetBrains Mono.
 EAPI=8
 HOMEPAGE=https://github.com/yuru7/udev-gothic
 INHERIT=font
@@ -10,4 +10,4 @@ LICENSE=OFL-1.1
 SLOT=0
 SRC_URI=https://github.com/yuru7/udev-gothic/releases/download/v1.3.1/UDEVGothic_v1.3.1.zip nerdfonts? ( https://github.com/yuru7/udev-gothic/releases/download/v1.3.1/UDEVGothic_NF_v1.3.1.zip )
 _eclasses_=font	aa113a3df9cd0a9693a1c1ee7c34a6eb
-_md5_=f048e50731cef208eb57d2b7e9f42b11
+_md5_=64bf35e051b130322ae52556f40e774d

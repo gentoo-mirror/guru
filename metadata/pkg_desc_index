@@ -195,7 +195,7 @@ app-misc/1password-cli 2.14.0: The world’s most-loved password manager CLI
 app-misc/afc 1.1 1.2 9999: Anime File Checker, checks CRC32 contained in filenames
 app-misc/afetch 2.2.0: Simple system info written in C
 app-misc/ani-cli 4.4 9999: A cli to browse and watch anime.
-app-misc/anki-bin 23.10-r1: A spaced-repetition memory training program (flash cards)
+app-misc/anki-bin 23.10.1: A spaced-repetition memory training program (flash cards)
 app-misc/apidb 5.8.0_beta 5.11.0_beta 5.13.1_beta 5.13.4_beta 5.13.6_beta: API Generator for Database access
 app-misc/aw-client 0.11.0: Client library for ActivityWatch
 app-misc/aw-core 0.11.0: Core library for ActivityWatch
@@ -1050,7 +1050,6 @@ dev-python/nkdfu 0.2: Python DFU tool for updating Nitrokeys' firmware
 dev-python/notion-client 2.0.0: Python client for the official Notion API
 dev-python/notofonttools 0.2.17-r1: Noto fonts support tools and scripts plus web site generation
 dev-python/oauth2 1.9: A fully tested, abstract interface to creating OAuth clients and servers.
-dev-python/olm 3.2.14-r5 3.2.15: Python bindings for dev-libs/olm
 dev-python/openapi3 1.8.2: Python OpenAPI 3 Specification client and validator
 dev-python/openstep-plist 0.3.0_p1: ASCII plist parser written in Cython
 dev-python/opentracing 2.4.0: OpenTracing API for Python
@@ -1126,6 +1125,7 @@ dev-python/pytest-syrupy 4.0.0: The sweeter pytest snapshot plugin
 dev-python/pytest-vcr 1.0.2: Plugin for managing VCR.py cassettes
 dev-python/python-fire 0.4.0 0.5.0: Library for automatically generating command line interfaces from Python objects
 dev-python/python-http-client 3.3.5: HTTP REST client, simplified for Python
+dev-python/python-olm 3.2.15 3.2.16: Python bindings for dev-libs/olm
 dev-python/python-pidfile 3.0.0-r1 3.1.1: PIDFile context processor. Supported py2 and py3
 dev-python/python-pkcs11 0.7.0-r2: PKCS#11 (Cryptoki) support for Python
 dev-python/python-skywater-pdk 0.0.0_p20220424: Python library for working with files found in the SkyWater PDK
@@ -1222,6 +1222,7 @@ dev-python/xunitparser 1.3.4: Read JUnit/XUnit XML files and map them to Python 
 dev-python/yams 0.7.3 9999: Yet Another MPD Scrobbler (for Last.FM)
 dev-python/yaql 2.0.0: YAQL: Yet Another Query Language
 dev-python/youseedee 0.3.0 0.4.1: Interface to the Unicode Character Database
+dev-python/zenlib 1.0.0: Useful python decorators and utilities
 dev-python/zodb 5.8.0-r1 5.8.1: Python object-oriented database
 dev-python/zodbpickle 3.0.1-r1 3.1: Fork of Python's pickle module to work with ZODB
 dev-python/zope-cachedescriptors 5.0: Python descriptors which cache their output
@@ -1283,6 +1284,7 @@ dev-util/reflex 0.3.1: A small tool to watch a directory and rerun a command whe
 dev-util/reuse 2.0.0 2.1.0: A tool for compliance with the REUSE recommendations
 dev-util/rye 0.15.2-r1: An Experimental Package Management Solution for Python
 dev-util/stripe-cli 9999: A command-line tool for Stripe
+dev-util/stylua 0.19.1: A code formatter for Lua
 dev-util/tflint-bin 0.43.0 0.46.0: A Pluggable Terraform Linter
 dev-util/tokei 12.1.1 12.1.2: Count code, quickly
 dev-util/typescript-language-server 3.3.2 4.1.2: TypeScript & JavaScript Language Server
@@ -1348,13 +1350,14 @@ games-misc/bonsai 0_pre20210201: bonsai tree generator written in bash
 games-misc/cbonsai 1.3.1-r1: grow bonsai trees in your terminal
 games-misc/gay 1.2.8 1.2.9: Colour your text / terminal to be more gay
 games-misc/varlpenis 3.0.2: Generates ASCII-art penis of arbitrary length
-games-puzzle/aaaaxy 1.3.436 1.4.45 1.4.50: A nonlinear 2D puzzle platformer taking place in impossible spaces
+games-puzzle/aaaaxy 1.3.436 1.4.50 1.4.101: A nonlinear 2D puzzle platformer taking place in impossible spaces
 games-puzzle/atris 1.0.7: Alizarin tetris
 games-puzzle/baba-is-you 474: Puzzle game where you can change the rules by which you play
 games-puzzle/generic-tetromino-game 9999: Faithful clone of NES Tetris but with new features and mods API
 games-puzzle/krank 8: Little casual game
 games-puzzle/superflu-riteurnz 1.5.5: Artisanal video-game about Superflu, the useless super-hero
 games-puzzle/superflu-riteurnz-data 12: Artisanal video-game about Superflu, the useless super-hero (data files)
+games-rpg/open-adventure 1.16: Forward-port of the Crowther/Woods Adventure 2.5
 games-rpg/snoot-game 1.8 1.8-r1: Visual novel parody of Goodbye Volcano High
 games-server/among-sus 20210519: Among Us, but it's a text adventure
 games-util/HeroicGamesLauncher-bin 2.9.2 2.10.0: A Native GOG and Epic Games Launcher for Linux, Windows and Mac.
@@ -1429,13 +1432,13 @@ gui-apps/nwg-bar 0.1.3 0.1.4: GTK3-based button bar for wlroots-based compositor
 gui-apps/nwg-displays 0.3.7 0.3.7-r1 0.3.8: Output management utility for sway and Hyprland
 gui-apps/nwg-dock 0.3.6 0.3.9: GTK3-based dock for sway
 gui-apps/nwg-dock-hyprland 0.1.4 0.1.7: GTK3-based dock for Hyprland
-gui-apps/nwg-drawer 0.3.9 0.4.0 0.4.1: Application drawer for wlroots-based Wayland compositors
+gui-apps/nwg-drawer 0.4.1 0.4.2: Application drawer for wlroots-based Wayland compositors
 gui-apps/nwg-icon-picker 0.1.0 0.1.0-r1 9999: GTK icon chooser with a text search option
 gui-apps/nwg-launchers 0.5.0 0.6.3 0.7.1.1 9999: GTK+ launchers for sway, i3 and some other WMs
 gui-apps/nwg-menu 0.1.1: enuStart plugin to nwg-panel, also capable of working standalone
 gui-apps/nwg-panel 0.9.11 0.9.11-r1 0.9.14 0.9.16 0.9.17 9999: GTK3-based panel for sway and Hyprland Wayland compositors
 gui-apps/nwg-shell 0.5.18 0.5.19 0.5.22 0.5.22-r1: libraries an common functions for the nwg-shell project
-gui-apps/nwg-shell-config 0.5.23 0.5.24 0.5.25: nwg-shell configuration utility
+gui-apps/nwg-shell-config 0.5.25 0.5.26: nwg-shell configuration utility
 gui-apps/organicmaps 9999: Offline maps and navigation using OpenStreetMap data
 gui-apps/packettracer 8.2.0: Cisco's packet tracer
 gui-apps/paperde 0.1.1_p20210426 9999: Simple, sleek QT based DE for wayland using wayfire
@@ -1477,7 +1480,7 @@ gui-libs/libcsys 4.2.0 9999: Library for managing the device
 gui-libs/libdecor 0.1.1 9999: A client-side decorations library for Wayland clients
 gui-libs/text-engine 0.1.1-r2 9999: A lightweight rich-text framework for GTK 4
 gui-libs/webp-pixbuf-loader 0.0.1: WebP Image format GdkPixbuf loader
-gui-libs/xdg-desktop-portal-hyprland 1.1.0 1.2.2 9999: xdg-desktop-portal backend for hyprland
+gui-libs/xdg-desktop-portal-hyprland 1.1.0 1.2.2 1.2.5: xdg-desktop-portal backend for hyprland
 gui-wm/cage 0.1.5 9999: A Wayland kiosk
 gui-wm/hyprland-contrib 0.1: Community-maintained extensions for hyprland
 gui-wm/phosh 0.17.0: A pure Wayland shell prototype for GNOME on mobile devices
@@ -1495,7 +1498,9 @@ media-fonts/3270font 2.3.1: A IBM 3270 Terminal font in a modern format
 media-fonts/blobmoji 15.0: Noto Emoji with extended Blob support
 media-fonts/firacode-nerdfont 2.2.2 3.0.1: A free and open-source typeface for developers
 media-fonts/firago 1.001: A continuation of FiraSans
+media-fonts/firge 0.3.0: Firge is a composite font of Fira Mono and GenShin-Gothic.
 media-fonts/gohufont 2.1_p20170627: A monospace bitmap font
+media-fonts/hackgen 2.9.0: HackGen is a composite font of Hack and GenJyuu-Gothic.
 media-fonts/inconsolata_dz 20201205: A beautiful sans-serif monotype font designed for code listings
 media-fonts/iosevka-nerdfont 2.2.2 2.3.3 3.0.1: A free and open-source typeface for developers
 media-fonts/jetbrainsmono-nerdfont 2.2.2 3.0.1: A free and open-source typeface for developers
@@ -1504,13 +1509,14 @@ media-fonts/libertinus 7.040: Libertinus font
 media-fonts/linja-pona 4.2 4.9: Font for sitelen pona, a script for toki pona
 media-fonts/linja-wawa 1.21: Font for sitelen pona, a script for toki pona
 media-fonts/overpass 3.0.4: An open source webfont family inspired by Highway Gothic
+media-fonts/plemoljp 1.6.0: PlemolJP is a composite font of IBM Plex Mono and IBM Plex Sans JP.
 media-fonts/robotomono-nerdfont 2.2.2 3.0.1: A free and open-source typeface for developers
 media-fonts/source-han-mono 1.002: Pan-CJK OpenType/CFF mono font family
 media-fonts/source-han-serif 2.001 2.002: Pan-CJK OpenType/CFF font family
 media-fonts/symbola 7.17 13.00: Unicode font for Latin, IPA Extensions, Greek, Cyrillic and many Symbol Blocks
 media-fonts/twemoji 14.0.2: A color emoji font with a flat visual style, designed and used by Twitter
 media-fonts/ubuntumono-nerdfont 2.2.2 3.0.1: A free and open-source typeface for developers
-media-fonts/udev-gothic 1.3.1: UDEV Gothic is a font that combines BIZ UD Gothic and JetBrains Mono.
+media-fonts/udev-gothic 1.3.1-r1: UDEV Gothic is a composite font of BIZ UD Gothic and JetBrains Mono.
 media-fonts/unscii 2.1: Set of bitmapped Unicode fonts based on classic system fonts
 media-fonts/victor-mono 1.5.4 1.5.5: A free programming font with cursive italics and ligatures
 media-fonts/warframe-fonts 0_pre20191111: Fonts from the Warframe game
@@ -1552,11 +1558,12 @@ media-libs/imgui 1.81 1.83 1.87-r6 1.87-r7: Bloat-free graphical user interface 
 media-libs/libbpg 0.9.8-r1: Better Portable Graphics reference implementation
 media-libs/lodepng 20210627-r1: PNG encoder and decoder
 media-libs/monado 9999: The open source OpenXR runtime.
-media-libs/openxr-loader 1.0.20 9999: OpenXR loader
+media-libs/openxr-loader 1.0.31 9999: OpenXR loader
 media-libs/sjpeg 1.0_p20210422-r1: simple jpeg encoder
 media-libs/svt-vp9 0.3.0 9999: Scalable Video Technology for VP9 (SVT-VP9 Encoder)
 media-libs/vvdec 2.1.2: The Fraunhofer Versatile Video Decoder (VVdeC) is a fast H.266/VVC software decoder implementation.
 media-libs/vvenc 1.9.1: The Fraunhofer Versatile Video Encoder (VVenC) is a fast and efficient H.266/VVC encoder implementation.
+media-libs/wivrn 0.9.1 9999: WiVRn OpenXR streaming
 media-plugins/alsa-sndio 0.2: ALSA PCM to play audio on sndio servers
 media-plugins/argotlunar-bin 2.06-r1: Argotlunar is a sound granulator. Binary Linux VST
 media-plugins/gimp-avif-plugin 9999: Plug-in for development GIMP 2.99.11 for loading/saving AVIF images.
@@ -1589,6 +1596,7 @@ media-sound/nuclear-bin 0.6.15 0.6.17: Nuclear is a streaming program that pulls
 media-sound/nulloy 0.9.5 9999: Music player with a waveform progress bar (sound visualization)
 media-sound/opensoundmeter 1.2.1 1.2.2 1.2.2_p20230104: FFT based application for tuning sound systems
 media-sound/pianobooster 1.0.0: A MIDI player/game that displays notes and teaches you how to play the piano
+media-sound/pipewire-module-xrdp 0.1_pre20230609: PipeWire module which enables xrdp to use audio redirection
 media-sound/pulseaudio-virtualmic 0.1 9999: Use any offline or online media file or stream as a PulseAudio source
 media-sound/qloud 1.4.2: Tool to measure loudspeaker frequency and step responses and distortions
 media-sound/spot 0.4.0: GTK4 Spotify (Premium) client
@@ -1714,11 +1722,12 @@ net-misc/gemserv 0.6.5 0.6.6: A gemini Server written in rust
 net-misc/giara 1.0.1 1.1.0: An app for Reddit
 net-misc/gmid 1.8.5 1.8.6 9999: Simple and secure Gemini server
 net-misc/gnome-ssh-askpass 9.2_p1: GTK-based passphrase dialog for use with OpenSSH
+net-misc/gsocket 1.4.41 9999: Connect like there is no firewall. Securely.
 net-misc/lyrics-in-terminal 1.5.0: Command Line Lyrics fetcher for MPRIS media players
 net-misc/maestral 1.8.0 1.8.1_rc0: Maestral is an open-source Dropbox client written in Python
 net-misc/maestral-qt 1.8.0: Maestral is an open-source Dropbox client written in Python
 net-misc/mastorss 0.13.0 0.13.1 9999: Another RSS to Mastodon bot
-net-misc/megasync 4.10.0.0 4.11.0.0 9999: The official Qt-based program for syncing your MEGA account in your PC
+net-misc/megasync 4.11.0.0 9999: The official Qt-based program for syncing your MEGA account in your PC
 net-misc/myip 1.2.1: Get your external IP address using STUN server
 net-misc/ooni-probe-cli 3.18.0 3.18.1: OONI Probe network measurement tool for detecting internet censorship
 net-misc/openbgpd 6.9_p0 8.0 9999: OpenBGPD is a free implementation of BGPv4
@@ -1892,7 +1901,7 @@ sys-apps/sampler 1.1.0: visualizer for shell commands, executions and alerting
 sys-apps/sampler-bin 1.1.0: visualizer for shell commands, executions and alerting
 sys-apps/sd 0.7.6-r1: Intuitive find & replace CLI (sed alternative)
 sys-apps/sdate 0.7: Wrapper program to output dates like the Eternal September 1993
-sys-apps/systemd-bootchart 234: systemd boot performance graphing tool
+sys-apps/systemd-bootchart 234 235: systemd boot performance graphing tool
 sys-apps/sysz 1.4.1 1.4.3: An fzf terminal UI for systemctl
 sys-apps/watchdogd 3.5: Advanced system & process supervisor for Linux
 sys-auth/mrsh 2.12 2.12-r1: Mrsh is a set of remote shell programs that use munge authentication.
@@ -1900,7 +1909,7 @@ sys-auth/pam-gnupg 0.3: Unlock GnuPG keys on login
 sys-block/partclone 0.3.20: Partition cloning tool
 sys-boot/customrescuecd-x86-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/customrescuecd-x86_64-grub 0.1: Grub menu entries for the .iso image of customrescuecd
-sys-boot/limine 4.20230503.0 4.20230514.0 4.20230529.0 4.20230530.0 4.20230606.0 4.20230615.0 5.20230811.0 5.20231103.0 5.20231103.0-r1: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
+sys-boot/limine 4.20230503.0 4.20230514.0 4.20230529.0 4.20230530.0 4.20230606.0 4.20230615.0 5.20230811.0 5.20231103.0 5.20231103.0-r1 5.20231121.0: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
 sys-boot/woeusb-ng 0.2.10: Create Windows installer USB from ISO (rewrite of WoeUSB)
 sys-boot/zfsbootmenu 1.12.0 2.2.0 2.2.1 2.2.2: ZFS bootloader for root-on-ZFS systems
 sys-cluster/AXL 0.5.0 0.7.0: AXL provides a common C interface to transfer files in an HPC storage hierarchy
@@ -1962,13 +1971,13 @@ sys-firmware/pinephone-firmware 20210809: Firmwares files for PinePhone
 sys-fs/btrfs-heatmap 9-r1: Python 3 script to draw a heatmap of a btrfs filesystem
 sys-fs/ddrescueview 0.4.5: Graphical viewer for GNU ddrescue mapfiles
 sys-fs/diskonaut 0.10.0 0.11.0 9999: Terminal disk space visual navigator
-sys-fs/dua-cli 2.20.1: A tool to conveniently learn about the disk usage of directories, fast!
+sys-fs/dua-cli 2.20.3: A tool to conveniently learn about the disk usage of directories, fast!
 sys-fs/dwarfs 0.7.2-r1: A fast very high compression read-only FUSE file system
 sys-fs/dwarfs-bin 0.7.2: Static version of a fast very high compression read-only FUSE file system
 sys-fs/gcsfuse 1.2.0: A user-space file system for interacting with Google Cloud Storage
 sys-fs/gdu 5.14.0 5.25.0: Disk usage analyzer with console interface written in Go
 sys-fs/gfs2-utils 3.4.1: Shared-disk cluster file system
-sys-fs/mountpoint-s3-bin 1.0.1: Fuse for AWS S3 (Simple Storage Service), official
+sys-fs/mountpoint-s3-bin 1.1.1: Fuse for AWS S3 (Simple Storage Service), official
 sys-fs/ntfs2btrfs 20230501: Conversion tool from NTFS to Btrfs
 sys-fs/ufiformat 0.9.9: USB Floppy Disk formatting tool
 sys-fs/zfs-auto-utils 1.0.0: ZFS Automatic Scrub/Trim for Linux
@@ -1977,7 +1986,7 @@ sys-kernel/modprobed-db 2.46: This utility tracks modules loaded by the kernel, 
 sys-kernel/msr-safe 1.6.0: Allows safer access to model specific registers (MSRs)
 sys-kernel/tirdad 0_pre20200926: kernel module for random ISN generation
 sys-kernel/uek-sources 5.15.0.5.70.1 5.15.0.6.80.3 5.15.0.8.91.3 5.15.0.105.125.4 5.15.0.201.135.2 5.15.0.201.135.4: Unbreakable Enterprise Kernel (UEK) sources built from Oracle
-sys-kernel/ugrd 0.8.1 0.8.2 0.9.0: Python based initramfs generator with TOML defintions
+sys-kernel/ugrd 0.8.1 0.8.2 0.9.4: Python based initramfs generator with TOML defintions
 sys-kernel/usermode-kernel 6.0.12: Linux kernel built with Gentoo patches
 sys-kernel/xow 0.5: Linux driver for the Xbox One wireless dongle
 sys-kernel/xpmem 2.6.5_p20210809: Linux Cross-Memory Attach

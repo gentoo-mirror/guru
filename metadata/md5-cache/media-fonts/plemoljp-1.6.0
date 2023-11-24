@@ -1,0 +1,13 @@
+BDEPEND=app-arch/unzip X? ( >=x11-apps/mkfontscale-1.2.0 media-fonts/encodings )
+DEFINED_PHASES=install postinst postrm setup unpack
+DESCRIPTION=PlemolJP is a composite font of IBM Plex Mono and IBM Plex Sans JP.
+EAPI=8
+HOMEPAGE=https://github.com/yuru7/PlemolJP
+INHERIT=font
+IUSE=hiddenspace nerdfonts X
+KEYWORDS=~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~loong ~m68k ~mips ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86
+LICENSE=OFL-1.1
+SLOT=0
+SRC_URI=https://github.com/yuru7/PlemolJP/releases/download/v1.6.0/PlemolJP_v1.6.0.zip hiddenspace? ( https://github.com/yuru7/PlemolJP/releases/download/v1.6.0/PlemolJP_HS_v1.6.0.zip ) nerdfonts? ( https://github.com/yuru7/PlemolJP/releases/download/v1.6.0/PlemolJP_NF_v1.6.0.zip )
+_eclasses_=font	aa113a3df9cd0a9693a1c1ee7c34a6eb
+_md5_=5da5ed6806ed76c6f140910d73ec5515
