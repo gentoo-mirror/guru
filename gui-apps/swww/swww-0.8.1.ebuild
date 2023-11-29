@@ -210,10 +210,11 @@ inherit cargo shell-completion
 
 DESCRIPTION="Efficient animated wallpaper daemon for wayland, controlled at runtime"
 HOMEPAGE="https://github.com/Horus645/swww"
-SRC_URI="https://github.com/Horus645/swww/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz $(cargo_crate_uris)"
+SRC_URI="https://github.com/Horus645/swww/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz ${CARGO_CRATE_URIS}"
 
 LICENSE="0BSD Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD ISC MIT Unicode-DFS-2016 Unlicense ZLIB"
 SLOT="0"
+IUSE="+man"
 KEYWORDS="~amd64"
 
 DEPEND="
@@ -232,10 +233,22 @@ src_install() {
 	dobashcomp "${WORKDIR}/swww-${PV}/completions/swww.bash"
 	dofishcomp "${WORKDIR}/swww-${PV}/completions/swww.fish"
 
+	if use man ; then
+		cd "${WORKDIR}/swww-${PV}/doc/" || die
+		./gen.sh || die #generate the man pages
+		doman "generated/swww.1"
+		doman "generated/swww-clear.1"
+		doman "generated/swww-daemon.1"
+		doman "generated/swww-img.1"
+		doman "generated/swww-init.1"
+		doman "generated/swww-kill.1"
+		doman "generated/swww-query.1"
+	fi
+
 	if use debug ; then
-		cd target/debug || die
+		cd "${WORKDIR}/swww-${PV}/target/debug" || die
 	else
-		cd target/release || die
+		cd "${WORKDIR}/swww-${PV}/target/release"  || die
 	fi
 
 	dobin swww{,-daemon}
