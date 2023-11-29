@@ -86,7 +86,7 @@ app-admin/himitsu 0.3 0.4 9999: Secret storage system for Unix, suitable for sto
 app-admin/himitsu-keyring 0.2.0: graphical frontend for managing a Himitsu key store
 app-admin/himitsu-ssh 0.2 9999: SSH integration for Himitsu
 app-admin/himitsu-totp 9999: TOTP support for Himitsu
-app-admin/i2pd-tools 0.2023.03.12 0.2023.05.26: Some useful tools for I2P
+app-admin/i2pd-tools 0.2023.05.26 2023.09.06: Some useful tools for I2P
 app-admin/krapplet 0.3.1-r1: Krapplet (keyring applet): a Linux graphical password manager
 app-admin/linode-cli 5.42.1 5.43.0 5.44.3 5.45.2: Linode Command Line Interface
 app-admin/oet 0.1.9 0.1.10 9999: Update your system into binpkgs in an overlay sandbox
@@ -338,7 +338,7 @@ app-vim/ale 3.3.0: Check syntax in Vim asynchronously and fix files, with LSP su
 app-vim/ansible-vim 3.3 3.4: vim plugin: sytax highlighting for Ansible's common file types
 app-vim/apkbuild-vim 20210911: vim plugin: edit and work with APKBUILD files
 app-vim/bracketed-paste 20180522: vim plugin: handles bracketed-paste-mode in vim (aka. automatic `:set paste`)
-app-vim/css-color 20211229 20230308: vim plugin: preview colours in source code while editing
+app-vim/css-color 20230308 20230727: vim plugin: preview colours in source code while editing
 app-vim/dracula 2.0.0: Dark theme for Vim
 app-vim/gemini-vim 20210923: vim plugin: syntax highlighting for Gemini Text, the text/gemini media type
 app-vim/kotlin-vim 20220627: Kotlin plugin for Vim.
@@ -356,7 +356,7 @@ app-vim/vim-crystal 2022.09.04 2023.03.15: vim plugin: Crystal language support
 app-vim/vim-nix 9999: vim plugin: Vim configuration files for Nix
 app-vim/vim-sensible 1.2 2.0: vim plugin: a universal set of defaults that (hopefully) everyone can agree on
 app-vim/vimwiki-cli 1.0.0: Command-line interface for Vimwiki
-app-vim/yats 2022.08.26: vim plugin: Yet Another TypeScript Syntax
+app-vim/yats 2022.08.26 2023.08.24: vim plugin: Yet Another TypeScript Syntax
 dev-R/AsioHeaders 1.22.1.1: 'Asio' C++ Header Files
 dev-R/BH 1.75.0.0 1.78.0.0-r1: Boost C++ Header Files
 dev-R/DBI 1.1.3: R Database Interface
@@ -1617,7 +1617,7 @@ media-video/manimgl 1.6.1: Animation engine for explanatory math videos
 media-video/mediaelch 2.10.4 9999: Video metadata scraper
 media-video/megapixels 1.4.3: A GTK3 camera application that knows how to deal with the media request api
 media-video/obs-vaapi 0.3.1 0.4.0 9999: OBS Studio VAAPI support via GStreamer
-media-video/obs-vkcapture 1.4.1 1.4.4 9999: OBS Linux Vulkan/OpenGL game capture
+media-video/obs-vkcapture 1.4.5 9999: OBS Linux Vulkan/OpenGL game capture
 media-video/olive 9999: Free open-source non-linear video editor
 media-video/owncast 0.0.12 0.0.13: A self-hosted live video and web chat server
 media-video/syncplay 1.6.9 1.7.0: Client/server to synchronize media playback
@@ -1662,7 +1662,6 @@ net-im/chatterino 2.3.5-r3: Chat client for https://twitch.tv
 net-im/conduit 0.6.0 0.6.0-r1: A Matrix homeserver written in Rust
 net-im/discord-canary-bin 0.0.166: All-in-one voice and text chat
 net-im/discord-ptb-bin 0.0.29: All-in-one voice and text chat
-net-im/fractal 5_beta1: Matrix group messaging app
 net-im/gajim-plugins 9999: Plugins developed fro Gajim XMPP client
 net-im/go-sendxmpp 0.6.0 0.6.1: A little tool to send messages to an XMPP contact or MUC
 net-im/gtkcord4 0.0.10 0.0.11: A Gtk4 Discord client in Golang
@@ -1888,6 +1887,7 @@ sys-apps/fchroot 0.1.2: Funtoo's franken-chroot tool - chroot from AMD64 to ARM 
 sys-apps/fselect 0.7.9 0.8.0: Find files with SQL-like queries
 sys-apps/hex 0.3.2 0.4.0 0.4.1 0.4.2: Futuristic take on hexdump
 sys-apps/intel-cmt-cat 4.4.0: User space software for Intel(R) Resource Director Technology
+sys-apps/lact 0.5.0: Linux AMDGPU Controller
 sys-apps/loclone 0.1.0: A tool for creating CoW snapshots on XFS
 sys-apps/lsplug 4: Replacement for lsusb that shows more useful info and less useless info
 sys-apps/mission-center 0.3.2 0.3.3 9999: Monitor your CPU, Memory, Disk, Network and GPU usage.
@@ -1909,7 +1909,7 @@ sys-auth/pam-gnupg 0.3: Unlock GnuPG keys on login
 sys-block/partclone 0.3.20: Partition cloning tool
 sys-boot/customrescuecd-x86-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/customrescuecd-x86_64-grub 0.1: Grub menu entries for the .iso image of customrescuecd
-sys-boot/limine 4.20230503.0 4.20230514.0 4.20230529.0 4.20230530.0 4.20230606.0 4.20230615.0 5.20230811.0 5.20231103.0 5.20231103.0-r1 5.20231121.0: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
+sys-boot/limine 4.20230503.0 4.20230514.0 4.20230529.0 4.20230530.0 4.20230606.0 4.20230615.0 5.20230811.0 5.20231103.0 5.20231103.0-r1 5.20231121.0 5.20231124.0: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
 sys-boot/woeusb-ng 0.2.10: Create Windows installer USB from ISO (rewrite of WoeUSB)
 sys-boot/zfsbootmenu 1.12.0 2.2.0 2.2.1 2.2.2: ZFS bootloader for root-on-ZFS systems
 sys-cluster/AXL 0.5.0 0.7.0: AXL provides a common C interface to transfer files in an HPC storage hierarchy
@@ -1986,7 +1986,7 @@ sys-kernel/modprobed-db 2.46: This utility tracks modules loaded by the kernel, 
 sys-kernel/msr-safe 1.6.0: Allows safer access to model specific registers (MSRs)
 sys-kernel/tirdad 0_pre20200926: kernel module for random ISN generation
 sys-kernel/uek-sources 5.15.0.5.70.1 5.15.0.6.80.3 5.15.0.8.91.3 5.15.0.105.125.4 5.15.0.201.135.2 5.15.0.201.135.4: Unbreakable Enterprise Kernel (UEK) sources built from Oracle
-sys-kernel/ugrd 0.8.1 0.8.2 0.9.4: Python based initramfs generator with TOML defintions
+sys-kernel/ugrd 0.8.2 0.11.1: Python based initramfs generator with TOML defintions
 sys-kernel/usermode-kernel 6.0.12: Linux kernel built with Gentoo patches
 sys-kernel/xow 0.5: Linux driver for the Xbox One wireless dongle
 sys-kernel/xpmem 2.6.5_p20210809: Linux Cross-Memory Attach

@@ -1,13 +1,14 @@
-DEFINED_PHASES=configure install unpack
+DEFINED_PHASES=compile configure install unpack
 DEPEND=dev-libs/boost:= dev-libs/openssl:= sys-libs/zlib:=
 DESCRIPTION=Some useful tools for I2P
 EAPI=8
 HOMEPAGE=https://github.com/PurpleI2P/i2pd-tools
 INHERIT=toolchain-funcs
+IUSE=cpu_flags_x86_aes
 KEYWORDS=~amd64
 LICENSE=BSD
 RDEPEND=dev-libs/boost:= dev-libs/openssl:= sys-libs/zlib:=
 SLOT=0
-SRC_URI=https://github.com/PurpleI2P/i2pd-tools/archive/f9348979a23dec01d1bb91519f6bc2525dc01958.tar.gz -> i2pd-tools-0.2023.03.12.tar.gz https://github.com/PurpleI2P/i2pd/archive/a6bd8275ca496c75c84d7eb890c0071569d28f55.tar.gz -> i2pd-a6bd827.tar.gz
+SRC_URI=https://github.com/PurpleI2P/i2pd-tools/archive/cf0c9c9d74fc06acb001bbeb2db845083397fa20.tar.gz -> i2pd-tools-2023.09.06.tar.gz https://github.com/PurpleI2P/i2pd/archive/a6bd8275ca496c75c84d7eb890c0071569d28f55.tar.gz -> i2pd-a6bd827.tar.gz
 _eclasses_=toolchain-funcs	eed10cf5e5a06916e654d31f5a1925cc	multilib	c19072c3cd7ac5cb21de013f7e9832e0
-_md5_=e40c8a32df66c2b4d9678ac9d3cbecc4
+_md5_=b4cca8e72a1634108019d855536daa77
