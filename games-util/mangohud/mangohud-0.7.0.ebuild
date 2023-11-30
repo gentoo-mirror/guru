@@ -5,7 +5,7 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{10..12} )
 
-inherit python-any-r1 meson
+inherit python-single-r1 meson
 
 MY_PV=$(ver_cut 1-3)
 [[ -n "$(ver_cut 4)" ]] && MY_PV_REV="-$(ver_cut 4)"
@@ -16,19 +16,23 @@ HOMEPAGE="https://github.com/flightlessmango/MangoHud"
 VK_HEADERS_VER="1.2.158"
 VK_HEADERS_MESON_WRAP_VER="2"
 
+SRC_URI="
+	https://github.com/KhronosGroup/Vulkan-Headers/archive/v${VK_HEADERS_VER}.tar.gz
+		-> vulkan-headers-${VK_HEADERS_VER}.tar.gz
+	https://wrapdb.mesonbuild.com/v2/vulkan-headers_${VK_HEADERS_VER}-${VK_HEADERS_MESON_WRAP_VER}/get_patch
+		-> vulkan-headers-${VK_HEADERS_VER}-${VK_HEADERS_MESON_WRAP_VER}-meson-wrap.zip
+"
+
 if [[ ${PV} == 9999 ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/flightlessmango/MangoHud.git"
 else
-	SRC_URI="
+	SRC_URI+="
 		https://github.com/flightlessmango/MangoHud/archive/v${MY_PV}${MY_PV_REV}.tar.gz
 			-> ${P}.tar.gz
-		https://github.com/KhronosGroup/Vulkan-Headers/archive/v${VK_HEADERS_VER}.tar.gz
-			-> vulkan-headers-${VK_HEADERS_VER}.tar.gz
-		https://wrapdb.mesonbuild.com/v2/vulkan-headers_${VK_HEADERS_VER}-${VK_HEADERS_MESON_WRAP_VER}/get_patch
-			-> vulkan-headers-${VK_HEADERS_VER}-${VK_HEADERS_MESON_WRAP_VER}-meson-wrap.zip
 	"
 	KEYWORDS="~amd64"
+	S="${WORKDIR}/MangoHud-${PV}"
 fi
 
 LICENSE="MIT"
@@ -36,23 +40,23 @@ SLOT="0"
 IUSE="+dbus debug +X xnvctrl wayland video_cards_nvidia video_cards_amdgpu"
 
 REQUIRED_USE="
+	${PYTHON_REQUIRED_USE}
 	|| ( X wayland )
-	xnvctrl? ( video_cards_nvidia )"
+	xnvctrl? ( video_cards_nvidia )
+"
 
 BDEPEND="
 	app-arch/unzip
-	$(python_gen_any_dep 'dev-python/mako[${PYTHON_USEDEP}]')
+	$(python_gen_cond_dep 'dev-python/mako[${PYTHON_USEDEP}]')
 "
 
-python_check_deps() {
-	python_has_version "dev-python/mako[${PYTHON_USEDEP}]"
-}
-
-DEPEND="
+RDEPEND="
+	${PYTHON_DEPS}
 	~media-libs/imgui-1.81[opengl,vulkan]
 	dev-cpp/nlohmann_json
 	dev-libs/spdlog
 	dev-util/glslang
+	media-fonts/lato
 	media-libs/vulkan-loader
 	media-libs/libglvnd
 	x11-libs/libdrm
@@ -63,35 +67,41 @@ DEPEND="
 		xnvctrl? ( x11-drivers/nvidia-drivers[static-libs] )
 	)
 	wayland? ( dev-libs/wayland )
+	$(python_gen_cond_dep '
+		|| (
+			dev-python/matplotlib[gtk3,${PYTHON_USEDEP}]
+			dev-python/matplotlib[qt5,${PYTHON_USEDEP}]
+			dev-python/matplotlib[wxwidgets,${PYTHON_USEDEP}]
+		)
+	')
 "
 
-RDEPEND="${DEPEND}"
-
-[[ "$PV" != "9999" ]] && S="${WORKDIR}/MangoHud-${PV}"
-
 PATCHES=(
-	"${FILESDIR}/mangohud-0.6.6-meson-fix-imgui-dep.patch"
+	"${FILESDIR}/mangohud-v0.7.0-meson-fix-imgui-dep.patch"
 )
 
 src_unpack() {
+
 	default
-	if [[ $PV != 9999 ]]; then
 
-		[[ -n "${MY_PV_REV}" ]] && ( mv "${WORKDIR}/MangoHud-${MY_PV}${MY_PV_REV}" "${WORKDIR}/MangoHud-${PV}" || die )
+	[[ -n "${MY_PV_REV}" ]] && ( mv "${WORKDIR}/MangoHud-${MY_PV}${MY_PV_REV}" "${WORKDIR}/MangoHud-${PV}" || die )
 
-		unpack vulkan-headers-${VK_HEADERS_VER}.tar.gz
-		unpack vulkan-headers-${VK_HEADERS_VER}-${VK_HEADERS_MESON_WRAP_VER}-meson-wrap.zip
-		mv "${WORKDIR}/Vulkan-Headers-${VK_HEADERS_VER}" "${S}/subprojects/" || die
-	else
+	if [[ $PV == 9999 ]]; then
 		git-r3_src_unpack
 	fi
+
+	unpack vulkan-headers-${VK_HEADERS_VER}.tar.gz
+	unpack vulkan-headers-${VK_HEADERS_VER}-${VK_HEADERS_MESON_WRAP_VER}-meson-wrap.zip
+	mv "${WORKDIR}/Vulkan-Headers-${VK_HEADERS_VER}" "${S}/subprojects/" || die
 }
 
 src_prepare() {
 	default
 	# replace all occurences of "#include <imgui.h>" to "#include <imgui/imgui.h>"
-	find . -type f -exec sed -i 's/#include <imgui.h>/#include <imgui\/imgui.h>/g' {} \;
-	find . -type f -exec sed -i 's/#include "imgui.h"/#include <imgui\/imgui.h>/g' {} \;
+	find . -type f -exec sed -i 's|<imgui.h>|<imgui/imgui.h>|g' {} \; || die
+	find . -type f -exec sed -i 's|"imgui.h"|<imgui/imgui.h>|g' {} \; || die
+	find . -type f -exec sed -i 's|<imgui_internal.h>|<imgui/imgui_internal.h>|g' {} \; || die
+	find . -type f -exec sed -i 's|"imgui_internal.h"|<imgui/imgui_internal.h>|g' {} \; || die
 }
 
 src_configure() {

@@ -41,18 +41,18 @@ EGO_SUM=(
 	"github.com/davecgh/go-spew v1.1.1/go.mod"
 	"github.com/diamondburned/adaptive v0.0.2-0.20221227093656-fa139be203a8"
 	"github.com/diamondburned/adaptive v0.0.2-0.20221227093656-fa139be203a8/go.mod"
-	"github.com/diamondburned/arikawa/v3 v3.2.1-0.20230210050458-2c379c90c2ac"
-	"github.com/diamondburned/arikawa/v3 v3.2.1-0.20230210050458-2c379c90c2ac/go.mod"
-	"github.com/diamondburned/chatkit v0.0.0-20230209213000-7d9bb654be2f"
-	"github.com/diamondburned/chatkit v0.0.0-20230209213000-7d9bb654be2f/go.mod"
-	"github.com/diamondburned/gotk4-adwaita/pkg v0.0.0-20230307050941-20a05fa3a9df"
-	"github.com/diamondburned/gotk4-adwaita/pkg v0.0.0-20230307050941-20a05fa3a9df/go.mod"
-	"github.com/diamondburned/gotk4/pkg v0.0.5-0.20230307013122-e86c9b44a4bf"
-	"github.com/diamondburned/gotk4/pkg v0.0.5-0.20230307013122-e86c9b44a4bf/go.mod"
-	"github.com/diamondburned/gotkit v0.0.0-20230307054845-dc8ab38b9db4"
-	"github.com/diamondburned/gotkit v0.0.0-20230307054845-dc8ab38b9db4/go.mod"
-	"github.com/diamondburned/ningen/v3 v3.0.1-0.20230124093205-d39554fd5d67"
-	"github.com/diamondburned/ningen/v3 v3.0.1-0.20230124093205-d39554fd5d67/go.mod"
+	"github.com/diamondburned/arikawa/v3 v3.3.1-0.20230609054540-4224b93c4e01"
+	"github.com/diamondburned/arikawa/v3 v3.3.1-0.20230609054540-4224b93c4e01/go.mod"
+	"github.com/diamondburned/chatkit v0.0.0-20231117102020-f172e4a1e35d"
+	"github.com/diamondburned/chatkit v0.0.0-20231117102020-f172e4a1e35d/go.mod"
+	"github.com/diamondburned/gotk4-adwaita/pkg v0.0.0-20231117093505-26f1789529b0"
+	"github.com/diamondburned/gotk4-adwaita/pkg v0.0.0-20231117093505-26f1789529b0/go.mod"
+	"github.com/diamondburned/gotk4/pkg v0.0.6-0.20231117083507-eb41da62b149"
+	"github.com/diamondburned/gotk4/pkg v0.0.6-0.20231117083507-eb41da62b149/go.mod"
+	"github.com/diamondburned/gotkit v0.0.0-20231117094938-ace9cfa5e044"
+	"github.com/diamondburned/gotkit v0.0.0-20231117094938-ace9cfa5e044/go.mod"
+	"github.com/diamondburned/ningen/v3 v3.0.1-0.20231125085623-c71ae51f868b"
+	"github.com/diamondburned/ningen/v3 v3.0.1-0.20231125085623-c71ae51f868b/go.mod"
 	"github.com/dlclark/regexp2 v1.4.0"
 	"github.com/dlclark/regexp2 v1.4.0/go.mod"
 	"github.com/dustin/go-humanize v1.0.0"
@@ -106,7 +106,8 @@ EGO_SUM=(
 	"github.com/kr/pty v1.1.1/go.mod"
 	"github.com/kr/text v0.1.0/go.mod"
 	"github.com/kylelemons/godebug v1.1.0"
-	"github.com/kylelemons/godebug v1.1.0/go.mod"
+	"github.com/leonelquinteros/gotext v1.5.3-0.20230829162019-37f474cfb069"
+	"github.com/leonelquinteros/gotext v1.5.3-0.20230829162019-37f474cfb069/go.mod"
 	"github.com/pkg/errors v0.9.1"
 	"github.com/pkg/errors v0.9.1/go.mod"
 	"github.com/pmezard/go-difflib v1.0.0"
@@ -124,8 +125,11 @@ EGO_SUM=(
 	"github.com/stretchr/testify v1.7.0/go.mod"
 	"github.com/twmb/murmur3 v1.1.3"
 	"github.com/twmb/murmur3 v1.1.3/go.mod"
-	"github.com/yuin/goldmark v1.4.13"
+	"github.com/yalue/merged_fs v1.2.3"
+	"github.com/yalue/merged_fs v1.2.3/go.mod"
 	"github.com/yuin/goldmark v1.4.13/go.mod"
+	"github.com/yuin/goldmark v1.5.6"
+	"github.com/yuin/goldmark v1.5.6/go.mod"
 	"github.com/zalando/go-keyring v0.2.1"
 	"github.com/zalando/go-keyring v0.2.1/go.mod"
 	"go.opencensus.io v0.21.0/go.mod"
@@ -134,14 +138,15 @@ EGO_SUM=(
 	"go.opencensus.io v0.22.3/go.mod"
 	"go4.org v0.0.0-20200411211856-f5505b9728dd"
 	"go4.org v0.0.0-20200411211856-f5505b9728dd/go.mod"
-	"go4.org/unsafe/assume-no-moving-gc v0.0.0-20230209150437-ee73d164e760"
-	"go4.org/unsafe/assume-no-moving-gc v0.0.0-20230209150437-ee73d164e760/go.mod"
+	"go4.org/unsafe/assume-no-moving-gc v0.0.0-20230525183740-e7c30c78aeb2"
+	"go4.org/unsafe/assume-no-moving-gc v0.0.0-20230525183740-e7c30c78aeb2/go.mod"
 	"golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2/go.mod"
 	"golang.org/x/crypto v0.0.0-20190510104115-cbcb75029529/go.mod"
 	"golang.org/x/crypto v0.0.0-20190605123033-f99c8df09eb5/go.mod"
 	"golang.org/x/crypto v0.0.0-20191011191535-87dc89f01550/go.mod"
-	"golang.org/x/crypto v0.0.0-20210921155107-089bfa567519"
 	"golang.org/x/crypto v0.0.0-20210921155107-089bfa567519/go.mod"
+	"golang.org/x/crypto v0.1.0"
+	"golang.org/x/crypto v0.1.0/go.mod"
 	"golang.org/x/exp v0.0.0-20190121172915-509febef88a4/go.mod"
 	"golang.org/x/exp v0.0.0-20190306152737-a1d7652674e8/go.mod"
 	"golang.org/x/exp v0.0.0-20190510132918-efd6b22b2522/go.mod"
@@ -169,7 +174,6 @@ EGO_SUM=(
 	"golang.org/x/mod v0.1.0/go.mod"
 	"golang.org/x/mod v0.1.1-0.20191105210325-c90efee705ee/go.mod"
 	"golang.org/x/mod v0.2.0/go.mod"
-	"golang.org/x/mod v0.6.0-dev.0.20220419223038-86c51ed26bb4"
 	"golang.org/x/mod v0.6.0-dev.0.20220419223038-86c51ed26bb4/go.mod"
 	"golang.org/x/net v0.0.0-20180724234803-3673e40ba225/go.mod"
 	"golang.org/x/net v0.0.0-20180826012351-8a410e7b638d/go.mod"
@@ -186,6 +190,8 @@ EGO_SUM=(
 	"golang.org/x/net v0.0.0-20200202094626-16171245cfb2/go.mod"
 	"golang.org/x/net v0.0.0-20200222125558-5a598a2470a0/go.mod"
 	"golang.org/x/net v0.0.0-20210226172049-e18ecbb05110/go.mod"
+	"golang.org/x/net v0.0.0-20220722155237-a158d28d115b/go.mod"
+	"golang.org/x/net v0.1.0/go.mod"
 	"golang.org/x/oauth2 v0.0.0-20180821212333-d2e6202438be/go.mod"
 	"golang.org/x/oauth2 v0.0.0-20190226205417-e64efc72b421/go.mod"
 	"golang.org/x/oauth2 v0.0.0-20190604053449-0f29369cfe45/go.mod"
@@ -197,8 +203,8 @@ EGO_SUM=(
 	"golang.org/x/sync v0.0.0-20190227155943-e225da77a7e6/go.mod"
 	"golang.org/x/sync v0.0.0-20190423024810-112230192c58/go.mod"
 	"golang.org/x/sync v0.0.0-20190911185100-cd5d95a43a6e/go.mod"
-	"golang.org/x/sync v0.0.0-20220601150217-0de741cfad7f"
-	"golang.org/x/sync v0.0.0-20220601150217-0de741cfad7f/go.mod"
+	"golang.org/x/sync v0.0.0-20220722155255-886fb9371eb4"
+	"golang.org/x/sync v0.0.0-20220722155255-886fb9371eb4/go.mod"
 	"golang.org/x/sys v0.0.0-20180830151530-49385e6e1522/go.mod"
 	"golang.org/x/sys v0.0.0-20190215142949-d0b11bdaac8a/go.mod"
 	"golang.org/x/sys v0.0.0-20190312061237-fead79001313/go.mod"
@@ -214,17 +220,21 @@ EGO_SUM=(
 	"golang.org/x/sys v0.0.0-20200223170610-d5e6a3e2c0ae/go.mod"
 	"golang.org/x/sys v0.0.0-20201119102817-f84b799fce68/go.mod"
 	"golang.org/x/sys v0.0.0-20210615035016-665e8c7367d1/go.mod"
-	"golang.org/x/sys v0.0.0-20211001092434-39dca1131b70/go.mod"
-	"golang.org/x/sys v0.1.0"
+	"golang.org/x/sys v0.0.0-20220520151302-bc2c85ada10a/go.mod"
+	"golang.org/x/sys v0.0.0-20220722155257-8c9f86f7a55f/go.mod"
 	"golang.org/x/sys v0.1.0/go.mod"
 	"golang.org/x/term v0.0.0-20201126162022-7de9c90e9dd1/go.mod"
+	"golang.org/x/term v0.0.0-20210927222741-03fcf44c2211/go.mod"
+	"golang.org/x/term v0.1.0/go.mod"
 	"golang.org/x/text v0.0.0-20170915032832-14c0d48ead0c/go.mod"
 	"golang.org/x/text v0.3.0/go.mod"
 	"golang.org/x/text v0.3.1-0.20180807135948-17ff2d5776d2/go.mod"
 	"golang.org/x/text v0.3.2/go.mod"
 	"golang.org/x/text v0.3.3/go.mod"
-	"golang.org/x/text v0.3.7"
 	"golang.org/x/text v0.3.7/go.mod"
+	"golang.org/x/text v0.3.8/go.mod"
+	"golang.org/x/text v0.4.0"
+	"golang.org/x/text v0.4.0/go.mod"
 	"golang.org/x/time v0.0.0-20181108054448-85acf8d2951c/go.mod"
 	"golang.org/x/time v0.0.0-20190308202827-9d24e82272b4/go.mod"
 	"golang.org/x/time v0.0.0-20210723032227-1f47c861a9ac"
@@ -253,8 +263,7 @@ EGO_SUM=(
 	"golang.org/x/tools v0.0.0-20200130002326-2f3ba24bd6e7/go.mod"
 	"golang.org/x/tools v0.0.0-20200207183749-b753a1ba74fa/go.mod"
 	"golang.org/x/tools v0.0.0-20200212150539-ea181f53ac56/go.mod"
-	"golang.org/x/tools v0.1.11"
-	"golang.org/x/tools v0.1.11/go.mod"
+	"golang.org/x/tools v0.1.12/go.mod"
 	"golang.org/x/xerrors v0.0.0-20190717185122-a985d3407aa7/go.mod"
 	"golang.org/x/xerrors v0.0.0-20191011141410-1b5146add898/go.mod"
 	"golang.org/x/xerrors v0.0.0-20191204190536-9bdfabe68543/go.mod"
@@ -306,12 +315,17 @@ EGO_SUM=(
 	"rsc.io/binaryregexp v0.2.0/go.mod"
 	"rsc.io/quote/v3 v3.1.0/go.mod"
 	"rsc.io/sampler v1.3.0/go.mod"
-)
+	)
 go-module_set_globals
 
 DESCRIPTION="A Gtk4 Discord client in Golang"
 HOMEPAGE="https://github.com/diamondburned/gtkcord4"
-SRC_URI="https://github.com/diamondburned/gtkcord4/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
+# normally SRC_URI is this:
+# SRC_URI="https://github.com/diamondburned/gtkcord4/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
+	# ${EGO_SUM_SRC_URI}"
+# but upstream did a special intermediate release 0.0.16-1
+MY_PV="0.0.16-1"
+SRC_URI="https://github.com/diamondburned/${PN}/archive/refs/tags/v${MY_PV}.tar.gz -> ${P}.tar.gz
 	${EGO_SUM_SRC_URI}"
 
 LICENSE="Apache-2.0 BSD BSD-2 GPL-3 ISC MIT MPL-2.0"
@@ -319,20 +333,26 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 DEPEND="
-	>=gui-libs/gtk-4
-	gui-libs/libadwaita
 	dev-libs/gobject-introspection
+	dev-libs/glib:2
+	gui-libs/gtk:4
+	gui-libs/libadwaita:1
+	media-libs/graphene
+	x11-libs/cairo
+	x11-libs/gdk-pixbuf:2
+	x11-libs/pango
 "
 RDEPEND="${DEPEND}"
 BDEPEND="virtual/pkgconfig"
 
+S=${WORKDIR}/${PN}-${MY_PV}
 src_compile() {
 	ego build
 }
 
 src_install() {
 	dobin ${PN}
-	newicon -s 256 "${S}/internal/icons/png/logo.png" ${PN}.png
+	newicon -s 256 "${S}/internal/icons/hicolor/scalable/apps/logo.svg" ${PN}.svg
 	make_desktop_entry ${PN} ${PN} ${PN} "GTK;GNOME;Chat;"
 
 	einstalldocs

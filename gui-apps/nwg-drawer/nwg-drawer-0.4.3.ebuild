@@ -53,7 +53,7 @@ EGO_SUM=(
 	"gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod"
 	"gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c/go.mod"
 	"gopkg.in/yaml.v3 v3.0.1"
-)
+	)
 go-module_set_globals
 
 SRC_URI="https://github.com/nwg-piotr/nwg-drawer/archive/v${PV}.tar.gz -> ${P}.tar.gz

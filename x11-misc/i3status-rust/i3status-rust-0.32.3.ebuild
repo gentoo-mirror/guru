@@ -40,6 +40,7 @@ CRATES="
 	bumpalo@3.13.0
 	byteorder@1.4.3
 	bytes@1.4.0
+	calendrical_calculations@0.1.0
 	calibright@0.1.4
 	cc@1.0.83
 	cfg-if@1.0.0
@@ -56,6 +57,7 @@ CRATES="
 	concurrent-queue@2.2.0
 	core-foundation-sys@0.8.4
 	core-foundation@0.9.3
+	core_maths@0.1.0
 	cpufeatures@0.2.9
 	crossbeam-utils@0.8.16
 	crypto-common@0.1.6
@@ -71,6 +73,7 @@ CRATES="
 	digest@0.10.7
 	dirs-sys@0.4.1
 	dirs@5.0.1
+	displaydoc@0.2.4
 	either@1.9.0
 	encoding_rs@0.8.33
 	enumflags2@0.7.7
@@ -83,6 +86,7 @@ CRATES="
 	fastrand@1.9.0
 	fastrand@2.0.0
 	filetime@0.2.22
+	fixed_decimal@0.5.4
 	fnv@1.0.7
 	foreign-types-shared@0.1.1
 	foreign-types@0.3.2
@@ -118,6 +122,21 @@ CRATES="
 	hyper@0.14.27
 	iana-time-zone-haiku@0.1.2
 	iana-time-zone@0.1.57
+	icu_calendar@1.3.2
+	icu_calendar_data@1.3.2
+	icu_datetime@1.3.2
+	icu_datetime_data@1.3.4
+	icu_decimal@1.3.2
+	icu_decimal_data@1.3.4
+	icu_locid@1.3.2
+	icu_locid_transform@1.3.2
+	icu_locid_transform_data@1.3.2
+	icu_plurals@1.3.2
+	icu_plurals_data@1.3.2
+	icu_provider@1.3.2
+	icu_provider_macros@1.3.2
+	icu_timezone@1.3.2
+	icu_timezone_data@1.3.2
 	ident_case@1.0.1
 	idna@0.4.0
 	indexmap@1.9.3
@@ -136,11 +155,13 @@ CRATES="
 	kqueue@1.0.8
 	lazy_static@1.4.0
 	libc@0.2.147
+	libm@0.2.8
 	libpulse-binding@2.28.1
 	libpulse-sys@1.21.0
 	libsensors-sys@0.2.0
 	linux-raw-sys@0.3.8
 	linux-raw-sys@0.4.5
+	litemap@0.7.1
 	log@0.4.20
 	maildir@0.6.4
 	mailparse@0.14.0
@@ -153,7 +174,7 @@ CRATES="
 	mio@0.8.8
 	native-tls@0.2.11
 	neli-proc-macros@0.1.3
-	neli-wifi@0.5.1
+	neli-wifi@0.6.0
 	neli@0.6.4
 	nix@0.26.4
 	nix@0.27.1
@@ -204,7 +225,7 @@ CRATES="
 	reqwest@0.11.20
 	roff@0.2.1
 	rustc-demangle@0.1.23
-	rustix@0.37.23
+	rustix@0.37.25
 	rustix@0.38.10
 	ryu@1.0.15
 	same-file@1.0.6
@@ -227,9 +248,11 @@ CRATES="
 	signal-hook@0.3.17
 	siphasher@0.3.11
 	slab@0.4.9
+	smallvec@1.11.2
 	smart-default@0.7.1
 	socket2@0.4.9
 	socket2@0.5.3
+	stable_deref_trait@1.2.0
 	static_assertions@1.1.0
 	strsim@0.10.0
 	strsim@0.9.3
@@ -237,13 +260,15 @@ CRATES="
 	swayipc-types@1.3.0
 	syn@1.0.109
 	syn@2.0.29
+	synstructure@0.13.0
 	tempfile@3.8.0
 	termcolor@1.2.0
-	thiserror-impl@1.0.47
-	thiserror@1.0.47
+	thiserror-impl@1.0.48
+	thiserror@1.0.48
 	time-core@0.1.1
 	time-macros@0.2.14
 	time@0.3.28
+	tinystr@0.7.4
 	tinyvec@1.6.0
 	tinyvec_macros@0.1.1
 	tokio-macros@2.1.0
@@ -251,8 +276,10 @@ CRATES="
 	tokio-util@0.7.8
 	tokio@1.32.0
 	toml@0.7.6
+	toml@0.8.0
 	toml_datetime@0.6.3
 	toml_edit@0.19.14
+	toml_edit@0.20.0
 	tower-service@0.3.2
 	tracing-attributes@0.1.26
 	tracing-core@0.1.31
@@ -264,6 +291,7 @@ CRATES="
 	unicode-ident@1.0.11
 	unicode-normalization@0.1.22
 	unicode-segmentation@1.10.1
+	unicode-xid@0.2.4
 	url@2.4.1
 	utf8parse@0.2.1
 	vcpkg@0.2.15
@@ -307,10 +335,18 @@ CRATES="
 	windows_x86_64_msvc@0.48.5
 	winnow@0.5.15
 	winreg@0.50.0
+	writeable@0.5.3
 	xdg-home@1.0.0
+	yoke-derive@0.7.2
+	yoke@0.7.2
 	zbus@3.14.1
 	zbus_macros@3.14.1
 	zbus_names@2.6.0
+	zerofrom-derive@0.1.3
+	zerofrom@0.1.3
+	zerotrie@0.1.1
+	zerovec-derive@0.10.0
+	zerovec@0.10.0
 	zvariant@3.15.0
 	zvariant_derive@3.15.0
 	zvariant_utils@1.0.1
@@ -347,6 +383,7 @@ src_configure() {
 	local myfeatures=(
 		$(usex debug debug_borders "")
 		$(usev notmuch)
+		icu_calendar
 		maildir
 	)
 	cargo_src_configure $(usex pulseaudio '' --no-default-features)
