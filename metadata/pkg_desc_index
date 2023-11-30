@@ -236,14 +236,14 @@ app-misc/navi 2.19.0 2.20.1 9999: An interactive cheatsheet tool for the command
 app-misc/neo 0.6.1 9999: cmatrix clone with 32-bit color and Unicode support
 app-misc/nerdfetch 5.0.2: A POSIX *nix fetch script using Nerdfonts
 app-misc/nonsense 0.7-r1: Generates random text from datafiles and templates
-app-misc/nwg-look 0.2.2 0.2.4: GTK3 settings editor adapted to work in the sway / wlroots environment
+app-misc/nwg-look 0.2.2 0.2.4 0.2.5: GTK3 settings editor adapted to work in the sway / wlroots environment
 app-misc/nwg-shell-wallpapers 1.1 1.3: Selection of wallpapers contributed to the nwg-shell project
 app-misc/oddjob 0.34.7: A D-Bus service which runs odd jobs on behalf of client applications
 app-misc/onefetch 2.18.1: Command-line Git information tool
 app-misc/pfetch 0.6.0: A pretty system information tool written in POSIX sh
 app-misc/pipes-rs 1.6.1: An over-engineered rewrite of pipes.sh in Rust
 app-misc/powerpanel 1.4.1-r1: PowerPanel software for CyberPower UPS systems
-app-misc/pueue 3.3.1: A cli tool for managing long running shell commands.
+app-misc/pueue 3.3.2: A cli tool for managing long running shell commands.
 app-misc/pup 0.4.0_p1: Parsing HTML at the command line
 app-misc/rememberthemilk 1.3.11-r1: Freemium simple to-do tasks manager
 app-misc/s6-man 9999: mdoc versions of the HTML documentation for the s6 supervision suite
@@ -288,7 +288,7 @@ app-portage/quantum-resolver 9999: A WIP portage dependency resolver
 app-portage/showbuild 0.9.1-r1: Script to follow log of running portage builds
 app-portage/version 0.19.0_alpha 0.20.1_alpha 0.21.0_alpha: A command line function for package version management.
 app-shells/antibody 6.1.1-r1: Fast Zsh plugin manager
-app-shells/carapace 0.28.3: Multi-shell multi-command argument completer
+app-shells/carapace 0.28.3 0.28.4: Multi-shell multi-command argument completer
 app-shells/clownfish 0_pre20210117: fish shell mocks
 app-shells/direnv 2.32.3 9999: Environment variable manager for shell
 app-shells/fish-agnoster-theme 0.1.0_p20200415: Fancy, colorful theme with support for Powerline fonts
@@ -1176,7 +1176,7 @@ dev-python/stone 3.3.1: The Official Api Spec Language for Dropbox
 dev-python/strictyaml 1.6.1: A type-safe YAML parser built atop ruamel.yaml
 dev-python/stringbrewer 0.0.1-r1: Generate random strings matching a pattern
 dev-python/stringcase 1.2.0-r1: Convert string cases between camel case, pascal case, snake case etc.
-dev-python/survey 4.5.4: A simple library for creating beautiful interactive prompts
+dev-python/survey 4.5.4 5.1.0_alpha: A simple library for creating beautiful interactive prompts
 dev-python/svgelements 1.9.3 1.9.6: SVG Parsing for Elements, Paths, and other SVG Objects.
 dev-python/sysv_ipc 1.1.0: System V IPC primitives for python
 dev-python/tempus-themes 2.3.0.20220206: Accessible themes for Pygments
@@ -1284,7 +1284,7 @@ dev-util/reflex 0.3.1: A small tool to watch a directory and rerun a command whe
 dev-util/reuse 2.0.0 2.1.0: A tool for compliance with the REUSE recommendations
 dev-util/rye 0.15.2-r1: An Experimental Package Management Solution for Python
 dev-util/stripe-cli 9999: A command-line tool for Stripe
-dev-util/stylua 0.19.1: A code formatter for Lua
+dev-util/stylua 0.19.1-r1: A code formatter for Lua
 dev-util/tflint-bin 0.43.0 0.46.0: A Pluggable Terraform Linter
 dev-util/tokei 12.1.1 12.1.2: Count code, quickly
 dev-util/typescript-language-server 3.3.2 4.1.2: TypeScript & JavaScript Language Server
@@ -1371,7 +1371,7 @@ games-util/hid-nintendo 9999: A Nintendo HID kernel module
 games-util/itch-bin 25.5.1-r2: itch.io game browser, installer and launcher
 games-util/legendary 0.20.32 0.20.33: A free and open-source replacement for the Epic Games Launcher
 games-util/libtess2 1.0.3: Game and tools oriented refactored version of GLU tesselator
-games-util/mangohud 0.6.9.1: Vulkan and OpenGL overlay for monitoring FPS, sensors, system load and more
+games-util/mangohud 0.7.0 9999: Vulkan and OpenGL overlay for monitoring FPS, sensors, system load and more
 games-util/minigalaxy 1.1.0: A simple GOG client for Linux
 games-util/protonup 0.1.5 9999: Install and Update Proton-GE
 games-util/roll 2.6.1: Program to roll dices specified in a simple and intuitive way
@@ -1429,16 +1429,16 @@ gui-apps/meteo-qt 3.3: A system tray application for the weather status
 gui-apps/mpvpaper 1.2 1.3 9999: A video wallpaper program for wlroots based wayland compositors
 gui-apps/nwg 0: meta package package for nwg-shell
 gui-apps/nwg-bar 0.1.3 0.1.4: GTK3-based button bar for wlroots-based compositors
-gui-apps/nwg-displays 0.3.7 0.3.7-r1 0.3.8: Output management utility for sway and Hyprland
+gui-apps/nwg-displays 0.3.8 0.3.9: Output management utility for sway and Hyprland
 gui-apps/nwg-dock 0.3.6 0.3.9: GTK3-based dock for sway
 gui-apps/nwg-dock-hyprland 0.1.4 0.1.7: GTK3-based dock for Hyprland
-gui-apps/nwg-drawer 0.4.1 0.4.2: Application drawer for wlroots-based Wayland compositors
+gui-apps/nwg-drawer 0.4.2 0.4.3: Application drawer for wlroots-based Wayland compositors
 gui-apps/nwg-icon-picker 0.1.0 0.1.0-r1 9999: GTK icon chooser with a text search option
 gui-apps/nwg-launchers 0.5.0 0.6.3 0.7.1.1 9999: GTK+ launchers for sway, i3 and some other WMs
 gui-apps/nwg-menu 0.1.1: enuStart plugin to nwg-panel, also capable of working standalone
 gui-apps/nwg-panel 0.9.11 0.9.11-r1 0.9.14 0.9.16 0.9.17 9999: GTK3-based panel for sway and Hyprland Wayland compositors
 gui-apps/nwg-shell 0.5.18 0.5.19 0.5.22 0.5.22-r1: libraries an common functions for the nwg-shell project
-gui-apps/nwg-shell-config 0.5.25 0.5.26: nwg-shell configuration utility
+gui-apps/nwg-shell-config 0.5.27 0.5.28: nwg-shell configuration utility
 gui-apps/organicmaps 9999: Offline maps and navigation using OpenStreetMap data
 gui-apps/packettracer 8.2.0: Cisco's packet tracer
 gui-apps/paperde 0.1.1_p20210426 9999: Simple, sleek QT based DE for wayland using wayfire
@@ -1505,6 +1505,7 @@ media-fonts/inconsolata_dz 20201205: A beautiful sans-serif monotype font design
 media-fonts/iosevka-nerdfont 2.2.2 2.3.3 3.0.1: A free and open-source typeface for developers
 media-fonts/jetbrainsmono-nerdfont 2.2.2 3.0.1: A free and open-source typeface for developers
 media-fonts/last-resort 15.000 15.100: A collection of glyphs used as the backup of "last resort" to any other font
+media-fonts/lato 2: Lato font
 media-fonts/libertinus 7.040: Libertinus font
 media-fonts/linja-pona 4.2 4.9: Font for sitelen pona, a script for toki pona
 media-fonts/linja-wawa 1.21: Font for sitelen pona, a script for toki pona
@@ -1538,7 +1539,7 @@ media-gfx/nsxiv 32 9999: Neo (or New or Not) Simple (or Small or Suckless) X Ima
 media-gfx/oda-file-converter 23.5.0.0: For converting between different versions of .dwg and .dxf
 media-gfx/qview 4.0 5.0: Practical and minimal image viewer
 media-gfx/sic 0.19.0: Accessible image processing and conversion from the terminal tool.
-media-gfx/silicon 0.5.1: Create beautiful image of your code
+media-gfx/silicon 0.5.1 0.5.2: Create beautiful image of your code
 media-gfx/svgcleaner 0.9.5: svgcleaner could help you to clean up your SVG files from the unnecessary data.
 media-gfx/swayimg 1.12: A lightweight image viewer for Wayland display servers
 media-gfx/ufolint 1.2.0-r1: UFO source format linter
@@ -1617,6 +1618,7 @@ media-video/manimgl 1.6.1: Animation engine for explanatory math videos
 media-video/mediaelch 2.10.4 9999: Video metadata scraper
 media-video/megapixels 1.4.3: A GTK3 camera application that knows how to deal with the media request api
 media-video/mpc-qt 23.02: Media Player Classic Qute Theater
+media-video/obs-multi-rtmp 0.5.0.4 9999: OBS Simulcast support plugin
 media-video/obs-vaapi 0.3.1 0.4.0 9999: OBS Studio VAAPI support via GStreamer
 media-video/obs-vkcapture 1.4.5 9999: OBS Linux Vulkan/OpenGL game capture
 media-video/olive 9999: Free open-source non-linear video editor
@@ -1665,7 +1667,7 @@ net-im/discord-canary-bin 0.0.166: All-in-one voice and text chat
 net-im/discord-ptb-bin 0.0.29: All-in-one voice and text chat
 net-im/gajim-plugins 9999: Plugins developed fro Gajim XMPP client
 net-im/go-sendxmpp 0.6.0 0.6.1: A little tool to send messages to an XMPP contact or MUC
-net-im/gtkcord4 0.0.10 0.0.11: A Gtk4 Discord client in Golang
+net-im/gtkcord4 0.0.11 0.0.16.1: A Gtk4 Discord client in Golang
 net-im/guilded-bin 1.0.9105465: Drop Discord, get Guilded
 net-im/heisenbridge 1.14.5 1.14.6: A bouncer-style Matrix IRC bridge
 net-im/iamb 0.0.8: A Matrix chat client that uses Vim keybindings
@@ -1679,10 +1681,10 @@ net-im/mautrix-signal 0.4.2 0.4.3: A Matrix-Signal Messenger puppeting bridge
 net-im/mautrix-slack 0_pre20230517 0_pre20230925: A Matrix-Slack puppeting bridge based on slack-go
 net-im/mautrix-telegram 0.14.1 0.14.2: A Matrix-Telegram Messenger puppeting bridge
 net-im/mautrix-whatsapp 0.10.0: A Matrix-WhatsApp puppeting bridge
-net-im/nheko 0.11.3 9999: Native desktop client for Matrix using Qt
+net-im/nheko 0.11.3 0.11.3-r1 9999: Native desktop client for Matrix using Qt
 net-im/ruqola 1.3.1: Rocket.Chat client for the KDE desktop
 net-im/session-desktop-bin 1.10.8: Session Desktop - Onion routing based messenger
-net-im/teams-for-linux 1.3.13: Unofficial Microsoft Teams client for Linux. Binary precompiled version.
+net-im/teams-for-linux 1.3.23: Unofficial Microsoft Teams client for Linux. Binary precompiled version.
 net-im/whatsapp-for-linux 1.5.3 1.6.2: An unofficial WhatsApp desktop application for Linux
 net-irc/catgirl 2.0a 2.1 2.2: TLS-only terminal IRC client
 net-irc/litterbox 1.9: TLS-only IRC logger
@@ -1701,10 +1703,10 @@ net-libs/syndication-domination 1.0 9999: An RSS/Atom parser, because there's no
 net-libs/td 1.8.0 9999: Cross-platform library for building Telegram clients
 net-libs/telepathy-haze 0.8.1: Telepathy connection manager providing libpurple supported protocols
 net-libs/udt 4.11_p20181126: UDT is a UDP based data transport protocol
-net-libs/ulfius 2.7.14: HTTP Framework for REST Applications in C
+net-libs/ulfius 2.7.15: HTTP Framework for REST Applications in C
 net-libs/usockets 0.8.1_p20211023 9999: tiny eventing, networking & crypto for async applications
 net-libs/yder 1.4.20: Logging library for C applications
-net-mail/dovecot-fts-xapian 1.5.4 1.5.5 9999: Dovecot FTS plugin backed by Xapian
+net-mail/dovecot-fts-xapian 1.5.4 1.5.5 1.5.7 9999: Dovecot FTS plugin backed by Xapian
 net-mail/hydroxide 0.2.23 0.2.24 0.2.26 0.2.27 0.2.28 9999: A third-party, open-source ProtonMail CardDAV, IMAP and SMTP bridge
 net-mail/pop 0.2.0: Send emails from your terminal
 net-misc/FORT-validator 1.5.3 1.5.4: FORT validator is an open source RPKI validator
@@ -1763,7 +1765,7 @@ net-p2p/monero 0.17.2.0 0.17.2.3 0.17.3.0 0.17.3.2 0.18.1.0 0.18.1.1 0.18.1.2 0.
 net-p2p/p2pool 3.5 3.6.2 3.7 3.8 3.9 9999: Decentralized pool for Monero mining
 net-p2p/popura 0.4.6 9999: Popura: alternative Yggdrasil network client
 net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
-net-p2p/yggdrasil-go 0.5.2 9999: An experiment in scalable routing as an encrypted IPv6 overlay network
+net-p2p/yggdrasil-go 0.5.2 0.5.4 9999: An experiment in scalable routing as an encrypted IPv6 overlay network
 net-print/hpuld 1.00.39.15.00.23-r1: HP Unified Linux Driver (for samsung hardware)
 net-proxy/snowflake 2.7.0: Pluggable Transport using WebRTC, inspired by Flashproxy
 net-voip/discover-overlay 0.4.5 0.5.4 0.6.9: Yet another Discord overlay for Linux written in Python using GTK3
@@ -2024,7 +2026,7 @@ virtual/nlme 0: Virtual of a R recommended package
 virtual/nnet 0: Virtual of a R recommended package
 virtual/survival 0: Virtual of a R recommended package
 www-apps/castopod 1.4.3 1.4.5: Open-source hosting platform made for podcasters
-www-apps/code-server-bin 4.14.1 4.15.0 4.16.0 4.16.1 4.17.0 4.17.1 4.18.0: VS Code in the browser (binary version with unbundled node and ripgrep)
+www-apps/code-server-bin 4.14.1 4.15.0 4.16.0 4.16.1 4.17.0 4.17.1 4.18.0 4.19.1: VS Code in the browser (binary version with unbundled node and ripgrep)
 www-apps/forgejo 1.19.4.0 1.20.4.1 1.20.5.0: A self-hosted lightweight software forge
 www-apps/gotosocial 0.9.0 0.10.0: Fast, fun, ActivityPub server, powered by Go
 www-apps/honk 0.9.8 0.9.91: ActivityPub server with minimal setup and support costs
@@ -2035,7 +2037,7 @@ www-apps/librarian 2023.05.07: An alternative frontend for LBRY/Odysee. Inspired
 www-apps/mycorrhiza 1.14.0 9999: Git-based wiki engine written in Go using mycomarkup
 www-apps/nitter 2023.05.20 2023.07.12: Alternative front-end for Twitter
 www-apps/pleroma 2.6.0 9999: ActivityPub social networking software compatible with other Fediverse software
-www-apps/pleroma-fe 2.6.0 9999: Main frontend for www-apps/pleroma, inspired by qvitter
+www-apps/pleroma-fe 2.6.1 9999: Main frontend for www-apps/pleroma, inspired by qvitter
 www-apps/rimgo 1.2.1: An alternative frontend for Imgur. Originally based on rimgu.
 www-apps/snac 2.25 2.26: A simple, minimalistic ActivityPub instance
 www-apps/uwebsockets 20.11.0 20.14.0 9999: ultra fast, simple, secure & standards compliant web I/O
@@ -2051,7 +2053,7 @@ www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and comm
 www-misc/gorss 0.3: Go Terminal Feed Reader
 www-misc/waldl 0.0.1_pre20211112: Browse and download wallpapers from wallhaven.cc using sxiv
 www-misc/wyebadblock 1.0.0: An adblock extension for wyeb, also webkit2gtk browsers.
-www-plugins/firefoxpwa 2.7.3 2.8.0 2.9.0: A tool to install, manage and use Progressive Web Apps (PWAs) in Mozilla Firefox (native component)
+www-plugins/firefoxpwa 2.7.3 2.8.0 2.9.0 2.9.0-r1: A tool to install, manage and use PWAs in Mozilla Firefox (native component)
 www-plugins/yandex-browser-ffmpeg-codecs-bin 112.0.5615.49: Multi-threaded ffmpeg codecs needed for the HTML5 <audio> and <video> tags
 www-servers/hinsightd 0.9.17 9999: hinsightd a http/1.1 webserver with (hopefully) minimal goals
 www-servers/quark 9999: A small, GET-only static HTTP server
@@ -2071,7 +2073,7 @@ x11-misc/greenclip-bin 4.2: Simple clipboard manager to be integrated with rofi
 x11-misc/gromit-mpx 1.4.3 1.5.0 1.5.1 9999: Gromit-MPX is a multi-pointer GTK3 port of the Gromit desktop annotation tool
 x11-misc/i3lock-color 2.13.2 2.13.4 9999: The world's most popular non-default computer lockscreen
 x11-misc/i3lock-fancy-rapid 0.0.0_pre20201109-r1 0.0.0_pre20210421: A faster implementation of i3lock-fancy
-x11-misc/i3status-rust 0.32.2: A feature-rich and resource-friendly replacement for i3status, written in Rust.
+x11-misc/i3status-rust 0.32.3: A feature-rich and resource-friendly replacement for i3status, written in Rust.
 x11-misc/input-leap 9999: Share a mouse and keyboard between computers (fork of Barrier)
 x11-misc/ksnip 1.9.2 1.10.0-r1 1.10.1: Ksnip is a Qt based cross-platform screenshot tool
 x11-misc/leftwm-theme 0.1.2_rc1: A theme mangager for LeftWM
