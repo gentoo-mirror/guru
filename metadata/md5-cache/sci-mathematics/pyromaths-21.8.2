@@ -1,17 +1,17 @@
-BDEPEND=dev-python/jinja2-cli dev-python/sphinx[python_targets_python3_10(-)?] dev-python/sphinx-argparse[python_targets_python3_10(-)?] dev-python/setuptools[python_targets_python3_10(-)?] test? ( dev-python/lxml[python_targets_python3_10(-)?] dev-texlive/texlive-pstricks dev-texlive/texlive-basic dev-texlive/texlive-latexextra dev-texlive/texlive-fontsrecommended dev-texlive/texlive-latexrecommended dev-texlive/texlive-mathscience >=dev-python/pytest-7.3.1[python_targets_python3_10(-)?] ) python_targets_python3_10? ( dev-lang/python:3.10 ) >=dev-python/gpep517-15[python_targets_python3_10(-)?] >=dev-python/setuptools-67.8.0-r1[python_targets_python3_10(-)?]
+BDEPEND=dev-python/jinja2-cli[python_targets_python3_10(-)?,python_targets_python3_11(-)?] doc? ( dev-python/sphinx[python_targets_python3_10(-)?,python_targets_python3_11(-)?] dev-python/sphinx-argparse[python_targets_python3_10(-)?,python_targets_python3_11(-)?] ) test? ( dev-python/lxml[python_targets_python3_10(-)?,python_targets_python3_11(-)?] dev-tex/latexmk dev-texlive/texlive-pstricks dev-texlive/texlive-basic dev-texlive/texlive-latexextra dev-texlive/texlive-fontsrecommended dev-texlive/texlive-latexrecommended dev-texlive/texlive-mathscience >=dev-python/pytest-7.3.1[python_targets_python3_10(-)?,python_targets_python3_11(-)?] ) python_targets_python3_10? ( dev-lang/python:3.10 ) python_targets_python3_11? ( dev-lang/python:3.11 ) >=dev-python/gpep517-15[python_targets_python3_10(-)?,python_targets_python3_11(-)?] >=dev-python/setuptools-67.8.0-r1[python_targets_python3_10(-)?,python_targets_python3_11(-)?]
 DEFINED_PHASES=compile configure install prepare test
-DEPEND=dev-python/lxml[python_targets_python3_10(-)?] dev-texlive/texlive-pstricks dev-texlive/texlive-basic dev-texlive/texlive-latexextra dev-texlive/texlive-fontsrecommended dev-texlive/texlive-latexrecommended dev-texlive/texlive-mathscience dev-python/jinja2-cli dev-python/sphinx[python_targets_python3_10(-)?] dev-python/sphinx-argparse[python_targets_python3_10(-)?] dev-python/setuptools[python_targets_python3_10(-)?]
+DEPEND=dev-python/lxml[python_targets_python3_10(-)?,python_targets_python3_11(-)?] dev-tex/latexmk dev-texlive/texlive-pstricks dev-texlive/texlive-basic dev-texlive/texlive-latexextra dev-texlive/texlive-fontsrecommended dev-texlive/texlive-latexrecommended dev-texlive/texlive-mathscience
 DESCRIPTION=Create maths exercises in LaTeX and PDF format
 EAPI=8
-HOMEPAGE=https://www.pyromaths.org https://pypi.org/project/pyromaths https://framagit.org/pyromaths/pyromaths
+HOMEPAGE=https://pyromaths.frama.io/pyromaths-staticsite https://pypi.org/project/pyromaths https://framagit.org/pyromaths/pyromaths
 INHERIT=distutils-r1
-IUSE=test test python_targets_python3_10
+IUSE=test doc test python_targets_python3_10 python_targets_python3_11
 KEYWORDS=~amd64
 LICENSE=GPL-3
-RDEPEND=dev-python/lxml[python_targets_python3_10(-)?] dev-texlive/texlive-pstricks dev-texlive/texlive-basic dev-texlive/texlive-latexextra dev-texlive/texlive-fontsrecommended dev-texlive/texlive-latexrecommended dev-texlive/texlive-mathscience python_targets_python3_10? ( dev-lang/python:3.10 )
-REQUIRED_USE=|| ( python_targets_python3_10 )
+RDEPEND=dev-python/lxml[python_targets_python3_10(-)?,python_targets_python3_11(-)?] dev-tex/latexmk dev-texlive/texlive-pstricks dev-texlive/texlive-basic dev-texlive/texlive-latexextra dev-texlive/texlive-fontsrecommended dev-texlive/texlive-latexrecommended dev-texlive/texlive-mathscience python_targets_python3_10? ( dev-lang/python:3.10 ) python_targets_python3_11? ( dev-lang/python:3.11 )
+REQUIRED_USE=|| ( python_targets_python3_10 python_targets_python3_11 )
 RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://framagit.org/pyromaths/pyromaths/-/archive/version-21.8.2/pyromaths-version-21.8.2.tar.gz -> pyromaths-21.8.2.tar.gz
 _eclasses_=toolchain-funcs	eed10cf5e5a06916e654d31f5a1925cc	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	6b3c606c5de2531072ffd36eca06a5a9	out-of-source-utils	1a9007554652a6e627edbccb3c25a439	multibuild	d67e78a235f541871c7dfe4cf7931489	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	39e7a84b06eff4efd9f2e0c3d1668b98	python-utils-r1	e989dbdcbb647bd8655857c1f95be244	python-r1	8a28fa6d3e3bc96ff8a7eff2badbe71f	distutils-r1	ae136dc2e1c0006e9480d44a6c1886d9
-_md5_=7144487dcf9fec8187df4fb1a35f82e7
+_md5_=38ae0cac3f2a77b66cbe86c069add117

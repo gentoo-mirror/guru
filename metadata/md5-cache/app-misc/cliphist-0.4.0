@@ -1,0 +1,15 @@
+BDEPEND=>=dev-lang/go-1.18 app-arch/unzip
+DEFINED_PHASES=compile install unpack
+DEPEND=gui-apps/wl-clipboard x11-misc/xdg-utils
+DESCRIPTION=Wayland clipboard manager with support for multimedia
+EAPI=8
+HOMEPAGE=https://github.com/sentriz/cliphist
+INHERIT=go-module
+KEYWORDS=~amd64
+LICENSE=GPL-3 MIT BSD
+RDEPEND=gui-apps/wl-clipboard x11-misc/xdg-utils
+RESTRICT=strip
+SLOT=0
+SRC_URI=https://github.com/henri-gasc/cliphist/archive/refs/tags/v0.4.0.tar.gz -> cliphist-0.4.0.gh.tar.gz
+_eclasses_=multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	toolchain-funcs	eed10cf5e5a06916e654d31f5a1925cc	multilib	c19072c3cd7ac5cb21de013f7e9832e0	go-env	96e1747610bbb2f5c5d3fb16f0f3a83a	go-module	9e5a8f7b134fd3ed3785755097fe8ef0
+_md5_=67b58689838d736bb15ac580f23feb58
