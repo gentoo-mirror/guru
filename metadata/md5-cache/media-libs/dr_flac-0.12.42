@@ -1,0 +1,14 @@
+BDEPEND=test? ( media-libs/flac )
+DEFINED_PHASES=compile install prepare test
+DESCRIPTION=Single-header FLAC audio decoder library
+EAPI=8
+HOMEPAGE=https://github.com/mackron/dr_libs/
+INHERIT=toolchain-funcs
+IUSE=test
+KEYWORDS=~amd64
+LICENSE=|| ( MIT-0 public-domain )
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/mackron/dr_libs/archive/39ce69188eab79a913aa23423eef9da5f3dcd142.tar.gz -> dr_flac-0.12.42.gh.tar.gz test? ( https://github.com/ietf-wg-cellar/flac-test-files/archive/aa7b0c6cf32994c106ae517a08134c28a96ff5b2.tar.gz -> dr_flac-0.12.42-testbench.gh.tar.gz )
+_eclasses_=toolchain-funcs	eed10cf5e5a06916e654d31f5a1925cc	multilib	c19072c3cd7ac5cb21de013f7e9832e0
+_md5_=de8dbbb2462283046edf7a602d9dc7f9

@@ -1,13 +1,13 @@
 DEFINED_PHASES=configure install prepare
-DEPEND=>=games-emulation/mupen64plus-core-2.5 dev-qt/qtcore:5 dev-qt/qtnetwork:5 dev-qt/qtxml:5 dev-qt/qtsql:5 dev-qt/qtwidgets:5 dev-libs/quazip
+DEPEND=>=games-emulation/mupen64plus-core-2.5 dev-qt/qtcore:5 dev-qt/qtnetwork:5 dev-qt/qtxml:5 dev-qt/qtsql:5 dev-qt/qtwidgets:5 || ( <dev-libs/quazip-1.3 >=dev-libs/quazip-1.3[qt5] )
 DESCRIPTION=A basic launcher for Mupen64Plus
 EAPI=8
 HOMEPAGE=https://github.com/dh4/mupen64plus-qt
 INHERIT=desktop qmake-utils
 KEYWORDS=~amd64 ~x86
 LICENSE=BSD
-RDEPEND=dev-qt/qtcore:5 dev-qt/qtnetwork:5 dev-qt/qtxml:5 dev-qt/qtsql:5 dev-qt/qtwidgets:5 dev-libs/quazip
+RDEPEND=dev-qt/qtcore:5 dev-qt/qtnetwork:5 dev-qt/qtxml:5 dev-qt/qtsql:5 dev-qt/qtwidgets:5 || ( <dev-libs/quazip-1.3 >=dev-libs/quazip-1.3[qt5] )
 SLOT=0
 SRC_URI=https://github.com/dh4/mupen64plus-qt/archive/1.15.tar.gz -> mupen64plus-qt-1.15.tar.gz
 _eclasses_=desktop	021728fdc1b03b36357dbc89489e0f0d	toolchain-funcs	eed10cf5e5a06916e654d31f5a1925cc	multilib	c19072c3cd7ac5cb21de013f7e9832e0	qmake-utils	a8dd17b1d94586164f5e3fc12b1c6b81
-_md5_=9c2fc3232232d0f492507f8ecc15ae0f
+_md5_=3a0065a4e4f16d479ca45cbf714e6657

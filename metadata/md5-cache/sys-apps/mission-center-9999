@@ -1,17 +1,17 @@
-BDEPEND=|| ( dev-lang/python:3.11 dev-lang/python:3.10 ) dev-libs/gobject-introspection >=dev-util/meson-0.63 dev-util/blueprint-compiler >=dev-vcs/git-1.8.2.1[curl] >=dev-util/meson-1.2.1 >=dev-util/ninja-1.8.2 dev-util/meson-format-array
+BDEPEND=|| ( dev-lang/python:3.12 dev-lang/python:3.11 dev-lang/python:3.10 ) dev-libs/gobject-introspection >=dev-util/meson-0.63 dev-util/blueprint-compiler >=dev-vcs/git-1.8.2.1[curl] >=dev-util/meson-1.2.1 >=dev-util/ninja-1.8.2 dev-util/meson-format-array
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup test unpack
-DEPEND=dev-libs/wayland gui-libs/libadwaita >=gui-libs/gtk-4 gui-libs/egl-gbm virtual/rust virtual/udev x11-libs/libdrm
+DEPEND=>=dev-libs/appstream-0.16.4 >=x11-libs/pango-1.51.0 >=dev-libs/glib-2.77 >=dev-util/gdbus-codegen-2.77 dev-libs/wayland >=gui-libs/libadwaita-1.4.0 >=gui-libs/gtk-4.12.3 gui-libs/egl-gbm virtual/rust virtual/udev x11-libs/libdrm
 DESCRIPTION=Monitor your CPU, Memory, Disk, Network and GPU usage.
 EAPI=8
 HOMEPAGE=https://missioncenter.io/
 IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
 INHERIT=git-r3 gnome2-utils meson python-any-r1 xdg
 IUSE=debug
-LICENSE=GPL-3+
+LICENSE=Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD BSD-2 Boost-1.0 CC0-1.0 CeCILL-2 MIT Unicode-DFS-2016 Unlicense ZLIB
 PROPERTIES=live
-RDEPEND=dev-libs/wayland gui-libs/libadwaita >=gui-libs/gtk-4 gui-libs/egl-gbm virtual/rust virtual/udev x11-libs/libdrm sys-apps/dmidecode
+RDEPEND=>=dev-libs/appstream-0.16.4 >=x11-libs/pango-1.51.0 >=dev-libs/glib-2.77 >=dev-util/gdbus-codegen-2.77 dev-libs/wayland >=gui-libs/libadwaita-1.4.0 >=gui-libs/gtk-4.12.3 gui-libs/egl-gbm virtual/rust virtual/udev x11-libs/libdrm sys-apps/dmidecode
 RESTRICT=network-sandbox
 SLOT=0
-SRC_URI=https://github.com/Syllo/nvtop/archive/be47f8c560487efc6e6a419d59c69bfbdb819324.tar.gz -> nvtop-be47f8c560487efc6e6a419d59c69bfbdb819324.tar.gz
+SRC_URI=https://github.com/Syllo/nvtop/archive/45a1796375cd617d16167869bb88e5e69c809468.tar.gz -> nvtop-45a1796375cd617d16167869bb88e5e69c809468.tar.gz
 _eclasses_=git-r3	5133e393e8717a3a093660f990801dc1	toolchain-funcs	eed10cf5e5a06916e654d31f5a1925cc	multilib	c19072c3cd7ac5cb21de013f7e9832e0	xdg-utils	baea6080dd821f5562d715887954c9d3	gnome2-utils	b0183db3b2e07b18f3b77bffec72e116	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	39e7a84b06eff4efd9f2e0c3d1668b98	python-utils-r1	e989dbdcbb647bd8655857c1f95be244	meson	576e6bbef90e9753368f8b4ad0bd5383	python-any-r1	f5169813d1619761b459800587005fd2	xdg	4a14c5c24f121e7da66e5aab4a168c6e
-_md5_=a4c14fc4478839baff70cff6c297d035
+_md5_=3387c02b0e0ea1710490193bc51f1028
