@@ -14,7 +14,8 @@ HOMEPAGE="https://pypi.python.org/pypi/PythonQwt"
 LICENSE="MIT"
 
 SLOT="0"
-RETRICT="test"
+# Test directory seems to contain demo instead
+RESTRICT="test"
 
 RDEPEND="dev-python/PyQt5[${PYTHON_USEDEP},svg]"
 

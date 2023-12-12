@@ -4,16 +4,17 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_11 )
+PYTHON_COMPAT=( python3_{11,12} )
 
-inherit distutils-r1 pypi
+inherit distutils-r1
 
 DESCRIPTION="Efficient 2D plotting Python library based on PythonQwt "
 HOMEPAGE="https://pypi.python.org/pypi/guiqwt"
+SRC_URI="https://github.com/PlotPyStack/guiqwt/archive/refs/tags/v${PV}.tar.gz -> ${P}.gh.tar.gz"
 LICENSE="MIT"
 
 SLOT="0"
-RESTRICT="test"
+RETRICT="test"
 
 RDEPEND="
 	dev-python/cython[${PYTHON_USEDEP}]
