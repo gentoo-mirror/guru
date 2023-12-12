@@ -193,7 +193,7 @@ app-metrics/scaphandre 0.4.1: Electrical power consumption measurement agent.
 app-misc/1password-cli 2.14.0: The world’s most-loved password manager CLI
 app-misc/afc 1.1 1.2 9999: Anime File Checker, checks CRC32 contained in filenames
 app-misc/afetch 2.2.0: Simple system info written in C
-app-misc/ani-cli 4.4 9999: A cli to browse and watch anime.
+app-misc/ani-cli 4.4 4.7 9999: A cli to browse and watch anime.
 app-misc/anki-bin 23.10.1-r1: A spaced-repetition memory training program (flash cards)
 app-misc/apidb 5.8.0_beta 5.11.0_beta 5.13.1_beta 5.13.4_beta 5.13.6_beta: API Generator for Database access
 app-misc/aw-client 0.11.0: Client library for ActivityWatch
@@ -880,7 +880,7 @@ dev-python/PGPy 0.6.0: Pretty Good Privacy for Python
 dev-python/PyPubSub 4.0.3: Python Publish-Subscribe Package
 dev-python/PyQt5-stubs 5.15.2.0: Stubs for PyQt5
 dev-python/PyWavefront 1.3.3: Python library for importing Wavefront .obj files
-dev-python/PythonQwt 0.10.3 0.10.5: Qt plotting widgets for Python
+dev-python/PythonQwt 0.10.5 0.11.2: Qt plotting widgets for Python
 dev-python/SLPP 1.2.3: Simple lua-python parser
 dev-python/SQLAlchemy-Utils 0.39.0: Various utility functions and datatypes for SQLAlchemy
 dev-python/TakeTheTime 0.3.1: Take The Time, a super-neat Python library for timing chunks of code
@@ -971,7 +971,7 @@ dev-python/fake-useragent 1.1.2: Up to date simple useragent faker with real wor
 dev-python/fastavro 1.7.0: Fast read/write of AVRO files
 dev-python/faust-cchardet 2.1.18 2.1.19: universal character encoding detector
 dev-python/filecheck 0.0.22: Python port of LLVM's FileCheck, flexible pattern matching file verifier
-dev-python/flask-restx 1.1.0 1.1.0-r1: Framework API development with Flask
+dev-python/flask-restx 1.1.0 1.1.0-r1 1.3.0: Framework API development with Flask
 dev-python/font-v 2.1.0-r1: Font version reporting and modification tool
 dev-python/fontFeatures 1.7.4: Python library for manipulating OpenType font features
 dev-python/fontMath 0.9.3: A collection of objects that implement fast font math
@@ -1001,8 +1001,8 @@ dev-python/graphql-core 3.2.3: Python port of GraphQL.js, the JavaScript referen
 dev-python/graphql-relay 3.2.0: Relay library for graphql-core
 dev-python/grpc-stubs 1.53.0.3: gRPC typing stubs for Python
 dev-python/grpclib 0.4.2 0.4.3: Pure-Python gRPC implementation for asyncio
-dev-python/guidata 2.3.1 3.1.0: Library for user interfaces for easy dataset editing and display
-dev-python/guiqwt 4.4.1 4.4.3: Efficient 2D plotting Python library based on PythonQwt
+dev-python/guidata 2.3.1 3.1.0 3.2.1: Library for user interfaces for easy dataset editing and display
+dev-python/guiqwt 4.4.5: Efficient 2D plotting Python library based on PythonQwt
 dev-python/guppy3 3.1.3-r1 3.1.4: A Python Programming Environment & Heap analysis toolset
 dev-python/hachoir 3.2.0: Hachoir is a Python library to view and edit a binary stream field by field
 dev-python/hijri-converter 2.2.4: Accurate Hijri-Gregorian date converter based on the Umm al-Qura calendar
@@ -1016,6 +1016,7 @@ dev-python/i3ipc 2.2.1 2.2.1-r1: An improved Python library to control i3wm and 
 dev-python/iOSbackup 0.9.925: Reads and extracts files from a password-encrypted iOS backup
 dev-python/icecream 2.1.3: Pythonic task execution
 dev-python/imgui 2.0.0: Cython-based Python bindings for dear imgui
+dev-python/importlib-resources 6.1.1: Backport of the importlib.resources module
 dev-python/inscriptis 2.3.1 2.3.2: HTML to text converter
 dev-python/invoke 2.2.0: Pythonic task execution
 dev-python/isosurfaces 0.1.0: Construct isolines/isosurfaces of a 2D/3D scalar field defined by a function
@@ -1024,7 +1025,7 @@ dev-python/itemloaders 1.0.4 1.0.6: Library to populate items using XPath and CS
 dev-python/iuliia 0.11.5: Transliterate Cyrillic to Latin in every possible way
 dev-python/j1m-sphinxautozconfig 0.1.0: Spinx support for ZConfig
 dev-python/jinja2-cli 0.8.2: CLI for Jinja2
-dev-python/jplephem 2.18 2.19: Python version of NASA DE4xx ephemerides for Astronomical Alamanac
+dev-python/jplephem 2.18 2.19 2.21: Python version of NASA DE4xx ephemerides for Astronomical Alamanac
 dev-python/jsonpath-rw 1.4.0: A robust and significantly extended implementation of JSONPath for Python
 dev-python/jsonpath-rw-ext 1.2.2: Extensions for JSONPath RW
 dev-python/jupyter-sphinx 0.4.0: Jupyter Sphinx Extensions
@@ -1116,7 +1117,7 @@ dev-python/pytest-cases 3.6.13 3.6.14: Separate test code from test cases in pyt
 dev-python/pytest-celery 0.1.0: a shim pytest plugin to enable celery.contrib.pytest
 dev-python/pytest-click 1.1.0: Pytest plugin for Click
 dev-python/pytest-cython 0.2.1: Plugin for testing Cython extension modules
-dev-python/pytest-flask 1.2.0 1.2.0-r1: A set of pytest fixtures to test Flask applications
+dev-python/pytest-flask 1.3.0: A set of pytest fixtures to test Flask applications
 dev-python/pytest-harvest 1.10.4: Store and retrieve data created during your pytest tests execution
 dev-python/pytest-instafail 0.4.2: Plugin for pytest that shows failures and errors instantly
 dev-python/pytest-isort 3.1.0 3.1.0-r1: Plugin to check import ordering using isort
@@ -1450,7 +1451,7 @@ gui-apps/paperde 0.1.1_p20210426 9999: Simple, sleek QT based DE for wayland usi
 gui-apps/rofi-wayland 1.7.5 1.7.5-r1: A window switcher, run dialog and dmenu replacement
 gui-apps/satty 0.7.0 9999: A screenshot annotation tool inspired by Swappy and Flameshot.
 gui-apps/sfwbar 1.0_beta12 1.0_beta13: S* Floating Window Bar
-gui-apps/showmethekey 1.10.0 1.11.1: Show keys you typed on screen.
+gui-apps/showmethekey 1.11.1 1.12.0: Show keys you typed on screen.
 gui-apps/somebar 1.0.0 1.0.3 9999: dwm-like bar for dwl
 gui-apps/someblocks 1.0.0 1.0.1 9999: Modular status bar for somebar written in c.
 gui-apps/sway-audio-idle-inhibit 9999: Prevents swayidle from idle when an application is outputting or receiving audio
@@ -1592,7 +1593,7 @@ media-sound/ibniz 1.18-r1: virtual machine designed for extremely compact low-le
 media-sound/jacktrip 1.7.1-r1: Send JACK audio over a network
 media-sound/jriver 31.0.60: A cross-platform media center, famous for high quality of audio.
 media-sound/loudgain 0.6.8: Versatile ReplayGain 2.0 loudness normalizer
-media-sound/mopidy 3.4.1: An extensible music server written in Python.
+media-sound/mopidy 3.4.2: An extensible music server written in Python.
 media-sound/mpd-mpris 0.3.1 0.4.0 0.4.1: An implementation of the MPRIS protocol for MPD.
 media-sound/mpvc 1.1.4: mpc-like tool which connects to existing mpv instances through sockets.
 media-sound/musikcube 3.0.1 3.0.2: Excellent terminal music player, support almost every known sound system.
@@ -1780,7 +1781,7 @@ net-voip/vvmd 0.8: vvmd is a lower level daemon that retrieves Visual Voicemail
 net-vpn/cloudflare-warp 2023.3.470 2023.7.40: Cloudflare Warp Client
 net-vpn/fastd 22: A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
 net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that require SAML
-net-vpn/mullvadvpn-app 2023.5: Tool used to manage daemon setup
+net-vpn/mullvadvpn-app 2023.5 2023.6: Tool used to manage daemon setup
 net-wireless/bluetuith 0.1.7 0.1.8 0.1.9 9999: A TUI bluetooth manager for Linux written in Go
 net-wireless/rtl8192eu 0_pre20230613: Realtek 8192EU driver module for Linux kernel
 net-wireless/rtl8723bu 9999: Driver for the rtl8723 wireless chipset
