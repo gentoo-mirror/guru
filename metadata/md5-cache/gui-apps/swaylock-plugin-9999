@@ -1,0 +1,15 @@
+BDEPEND=>=dev-libs/wayland-protocols-1.25 >=dev-util/wayland-scanner-1.15 virtual/pkgconfig man? ( app-text/scdoc ) >=dev-vcs/git-1.8.2.1[curl] >=dev-util/meson-1.2.1 >=dev-util/ninja-1.8.2 dev-util/meson-format-array
+DEFINED_PHASES=compile configure install postinst test unpack
+DEPEND=dev-libs/wayland x11-libs/cairo x11-libs/libxkbcommon virtual/libcrypt:= gdk-pixbuf? ( x11-libs/gdk-pixbuf:2 ) pam? ( sys-libs/pam )
+DESCRIPTION=Fork of Swaylock that supports animated backgrounds
+EAPI=8
+HOMEPAGE=https://github.com/mstoeckl/swaylock-plugin
+IDEPEND=filecaps? ( sys-libs/libcap )
+INHERIT=fcaps git-r3 meson
+IUSE=+gdk-pixbuf +man +pam +filecaps
+LICENSE=MIT
+PROPERTIES=live
+RDEPEND=dev-libs/glib:2 dev-libs/wayland x11-libs/cairo x11-libs/libxkbcommon virtual/libcrypt:= gdk-pixbuf? ( x11-libs/gdk-pixbuf:2 ) pam? ( sys-libs/pam )
+SLOT=0
+_eclasses_=fcaps	c0a086b957a1b183a8d136eabf02f191	git-r3	5133e393e8717a3a093660f990801dc1	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	39e7a84b06eff4efd9f2e0c3d1668b98	toolchain-funcs	eed10cf5e5a06916e654d31f5a1925cc	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	e989dbdcbb647bd8655857c1f95be244	meson	576e6bbef90e9753368f8b4ad0bd5383
+_md5_=8ab10896c3b0c86da9d60ae60b097ad1
