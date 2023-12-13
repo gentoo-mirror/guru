@@ -224,7 +224,7 @@ CRATES="
 	oorandom@11.1.3
 	option-ext@0.2.0
 	orbclient@0.3.46
-	ordered-float@4.1.1
+	ordered-float@4.2.0
 	owned_ttf_parser@0.20.0
 	parking_lot@0.12.1
 	parking_lot_core@0.9.9
@@ -443,8 +443,8 @@ DOCS=(
 
 src_configure() {
 	local myfeatures=(
-		$(usev wayland "")
-		$(usex X x11 "")
+		$(usev wayland)
+		$(usev X x11)
 	)
 	cargo_src_configure --verbose --no-default-features
 }
