@@ -92,7 +92,7 @@ app-admin/oet 0.1.9 0.1.10 9999: Update your system into binpkgs in an overlay s
 app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applications and tmux
 app-admin/pass-audit 1.2: A pass extension for auditing your password repository.
 app-admin/pass-update 2.1: pass extension that provides an easy flow for updating passwords
-app-admin/pulumi-bin 3.94.2 3.95.0: Infrastructure as code in any programming language
+app-admin/pulumi-bin 3.94.2 3.95.0 3.97.0: Infrastructure as code in any programming language
 app-admin/rbw 9999: unofficial bitwarden cli
 app-admin/s-tui 1.1.3-r1: Stress-Terminal UI monitoring tool
 app-admin/synadm 0.43.1 0.44: Command line admin tool for Synapse
@@ -212,7 +212,7 @@ app-misc/diff-so-fancy 1.4.3-r1: Good-lookin' diffs. Actually... nah... The best
 app-misc/doublecmd-bin 1.0.11 1.1.5_beta: Free cross platform open source file manager with two panels side by side.
 app-misc/dpscreenocr 1.4.0: Program to recognize text on screen
 app-misc/dragon 1.1.1 1.1.1_p20210820 1.2.0: Simple drag-and-drop source/sink for X and Wayland
-app-misc/electricsheep 3.0.2_p20191005 9999: Realize the collective dream of sleeping computers from all over the internet
+app-misc/electricsheep 3.0.2_p20191005 3.0.2_p20191005-r1: Realize the collective dream of sleeping computers from all over the internet
 app-misc/far2l 2.3.2_alpha 2.4.0_beta 9999: Linux port of FAR Manager v2
 app-misc/fetsh 1.8 1.9 9999: A fetch written in POSIX shell without any external commands
 app-misc/fff 2.2: A simple file manager written in bash
@@ -535,6 +535,7 @@ dev-cpp/MEL 1.0.0-r1: Math Expression Library
 dev-cpp/blurhash 0.2.0: C++ blurhash encoder/decoder
 dev-cpp/coeurl 0.2.1 0.3.0: A simple async wrapper around CURL for C++
 dev-cpp/cpp-jwt 1.5_pre20220727: JSON Web Token library for C++
+dev-cpp/cpprestsdk 2.10.19: A Microsoft project for cloud-based client-server communication.
 dev-cpp/cpptoml 0.1.1: Header-only library for parsing TOML
 dev-cpp/dpp 10.0.23 10.0.24 10.0.25: Lightweight C++ Discord bot library
 dev-cpp/drogon 1.8.7 1.9.0: C++14/17 based HTTP web application framework
@@ -1393,7 +1394,7 @@ gnome-extra/portfolio 0.9.14: A minimalist file manager for those who want to us
 gnome-extra/vvmplayer 1.4: Visual Voicemail Player
 gnome-extra/yad 10.1: Display GTK+ dialog boxes from command line or shell scripts
 gui-apps/1password 8.10.16: The world’s most-loved password manager
-gui-apps/ReGreet 9999: A clean and customizable GTK-based greetd greeter written in Rust
+gui-apps/ReGreet 0.1.1 9999: A clean and customizable GTK-based greetd greeter written in Rust
 gui-apps/azote 1.12.3: Wallpaper manager for wlroots-based compositors and some other WMs
 gui-apps/clipman 1.6.2: A basic clipboard manager for Wayland.
 gui-apps/coreaction 4.2.0 9999: A side bar for showing widgets for C Suite
@@ -1563,7 +1564,7 @@ media-libs/dr_flac 0.12.42: Single-header FLAC audio decoder library
 media-libs/dr_mp3 0.6.38: Single-header MP3 audio decoder library
 media-libs/dr_wav 0.13.13: Single-header WAV audio loader and writer library
 media-libs/gl4es 9999: OpenGL 2.1/1.5 to GL ES 2.0/1.1 translation library
-media-libs/glee 5.4.0: OpenGL Easy Extension library
+media-libs/glee 5.4.0 5.4.0-r1: OpenGL Easy Extension library
 media-libs/grok 11.0.0: World's Leading Open Source JPEG 2000 Codec
 media-libs/imgui 1.81 1.83 1.87-r6 1.87-r7: Bloat-free graphical user interface library for C++
 media-libs/libbpg 0.9.8-r1: Better Portable Graphics reference implementation
@@ -1808,7 +1809,7 @@ sci-electronics/open_pdks 1.0.311: PDK installer for open-source EDA tools and t
 sci-electronics/skywater-pdk 0.0.0_p20220424: Process design kit for usage with SkyWater Technology Foundry's 130nm node
 sci-electronics/slang 1.0 2.0-r2 3.0 4.0 9999: SystemVerilog compiler and language services
 sci-electronics/svls 0.2.3: SystemVerilog language server
-sci-electronics/verible 0.0.3420: SystemVerilog parser, style-linter, and formatter
+sci-electronics/verible 0.0.3420 0.0.3430: SystemVerilog parser, style-linter, and formatter
 sci-electronics/verilator 4.106 5.014 5.018 9999: The fast free Verilog/SystemVerilog simulator
 sci-geosciences/GeographicLib-data 0-r1: Datasets for GeographicLib
 sci-libs/ButterflyPACK 2.1.1-r1: Mathematical software for solving large-scale dense linear systems
@@ -2064,7 +2065,7 @@ www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and comm
 www-misc/gorss 0.3: Go Terminal Feed Reader
 www-misc/waldl 0.0.1_pre20211112: Browse and download wallpapers from wallhaven.cc using sxiv
 www-misc/wyebadblock 1.0.0: An adblock extension for wyeb, also webkit2gtk browsers.
-www-plugins/firefoxpwa 2.7.3 2.8.0 2.9.0 2.9.0-r1: A tool to install, manage and use PWAs in Mozilla Firefox (native component)
+www-plugins/firefoxpwa 2.7.3 2.8.0 2.9.0 2.9.0-r1 2.9.1: A tool to install, manage and use PWAs in Mozilla Firefox (native component)
 www-plugins/yandex-browser-ffmpeg-codecs-bin 112.0.5615.49: Multi-threaded ffmpeg codecs needed for the HTML5 <audio> and <video> tags
 www-servers/hinsightd 0.9.17 9999: hinsightd a http/1.1 webserver with (hopefully) minimal goals
 www-servers/quark 9999: A small, GET-only static HTTP server

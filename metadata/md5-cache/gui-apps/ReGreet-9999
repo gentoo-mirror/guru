@@ -1,8 +1,8 @@
-BDEPEND=virtual/rust >=virtual/rust-1.37.0 >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=virtual/rust >=virtual/rust-1.53 >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install test unpack
 DEPEND=x11-libs/gtk+:3 gtk4? ( gui-libs/gtk ) cage? ( gui-wm/cage ) sway? ( gui-wm/sway ) || ( gui-wm/cage gui-wm/sway )
 DESCRIPTION=A clean and customizable GTK-based greetd greeter written in Rust
-EAPI=7
+EAPI=8
 HOMEPAGE=https://github.com/rharish101/ReGreet
 INHERIT=cargo git-r3
 IUSE=gtk4 logs cage sway debug
@@ -12,4 +12,4 @@ RDEPEND=x11-libs/gtk+:3 gtk4? ( gui-libs/gtk ) cage? ( gui-wm/cage ) sway? ( gui
 REQUIRED_USE=|| ( cage sway ) cage? ( !sway ) sway? ( !cage )
 SLOT=0
 _eclasses_=toolchain-funcs	eed10cf5e5a06916e654d31f5a1925cc	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	c816c598969cbaf38cc02d2496ad2e98	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	cargo	8e446589282567c95e483e238d8dd120	git-r3	5133e393e8717a3a093660f990801dc1
-_md5_=066b5616d46a074ca08ef8f0c46c676b
+_md5_=867344c1182f1f1fbac92d971959ecc0

@@ -1,0 +1,15 @@
+BDEPEND=sys-devel/gnuconfig >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.5:1.16 ) >=sys-devel/autoconf-2.71-r5 >=sys-devel/libtool-2.4.7
+DEFINED_PHASES=configure install prepare
+DEPEND=dev-lang/lua:5.1 dev-libs/boost dev-libs/expat dev-libs/tinyxml gnome-base/libgtop media-gfx/flam3 media-libs/freeglut media-libs/glee media-libs/libpng:* media-video/ffmpeg:0 net-misc/curl sys-libs/zlib x11-libs/libX11 x11-libs/libXrender x11-libs/wxGTK:3.0-gtk3 virtual/opengl
+DESCRIPTION=Realize the collective dream of sleeping computers from all over the internet
+EAPI=8
+HOMEPAGE=https://electricsheep.org/
+INHERIT=autotools wxwidgets desktop flag-o-matic
+IUSE=video_cards_nvidia
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=dev-lang/lua:5.1 dev-libs/boost dev-libs/expat dev-libs/tinyxml gnome-base/libgtop media-gfx/flam3 media-libs/freeglut media-libs/glee media-libs/libpng:* media-video/ffmpeg:0 net-misc/curl sys-libs/zlib x11-libs/libX11 x11-libs/libXrender x11-libs/wxGTK:3.0-gtk3 virtual/opengl
+SLOT=0
+SRC_URI=https://github.com/scottdraves/electricsheep/archive/37ba0fd692d6581f8fe009ed11c9650cd8174123.tar.gz -> electricsheep-3.0.2_p20191005.tar.gz https://github.com/scottdraves/electricsheep/pull/109.patch -> electricsheep-fix-ffmpeg5.patch
+_eclasses_=gnuconfig	b6b3e92f8b8c996400074b5f61a59256	toolchain-funcs	eed10cf5e5a06916e654d31f5a1925cc	multilib	c19072c3cd7ac5cb21de013f7e9832e0	libtool	9d3a9a889a6fa62ae794f817c156491b	autotools	6ae9a4347149b19a112caa1182d03bde	flag-o-matic	c816c598969cbaf38cc02d2496ad2e98	wxwidgets	9a707a3f9f1ea7aa703b1e46552291e5	desktop	021728fdc1b03b36357dbc89489e0f0d
+_md5_=f15fcc3def411a7f39709c987c5006d2
