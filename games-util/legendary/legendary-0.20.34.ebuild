@@ -21,6 +21,7 @@ IUSE="webview"
 # correctly in some cases, according to release notes for 0.20.16.
 RDEPEND="
 	$(python_gen_cond_dep '
+		dev-python/filelock[${PYTHON_USEDEP}]
 		<dev-python/requests-3.0[${PYTHON_USEDEP}]
 		webview? ( dev-python/pywebview[gtk,${PYTHON_USEDEP}] )
 	')
