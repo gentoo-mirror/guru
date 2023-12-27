@@ -90,6 +90,7 @@ app-admin/himitsu-totp 9999: TOTP support for Himitsu
 app-admin/i2pd-tools 0.2023.05.26 2023.09.06: Some useful tools for I2P
 app-admin/krapplet 0.3.1-r1: Krapplet (keyring applet): a Linux graphical password manager
 app-admin/oet 0.1.9 0.1.10 9999: Update your system into binpkgs in an overlay sandbox
+app-admin/opentofu 1.6.0_rc1: A fork of Terraform that is open-source and community-driven
 app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applications and tmux
 app-admin/pass-audit 1.2: A pass extension for auditing your password repository.
 app-admin/pass-update 2.1: pass extension that provides an easy flow for updating passwords
@@ -195,7 +196,7 @@ app-misc/1password-cli 2.14.0: The world’s most-loved password manager CLI
 app-misc/afc 1.1 1.2 9999: Anime File Checker, checks CRC32 contained in filenames
 app-misc/afetch 2.2.0: Simple system info written in C
 app-misc/ani-cli 4.4 4.7 9999: A cli to browse and watch anime.
-app-misc/anki-bin 23.10.1-r1: A spaced-repetition memory training program (flash cards)
+app-misc/anki-bin 23.12: A spaced-repetition memory training program (flash cards)
 app-misc/apidb 5.8.0_beta 5.11.0_beta 5.13.1_beta 5.13.4_beta 5.13.6_beta: API Generator for Database access
 app-misc/aw-client 0.11.0: Client library for ActivityWatch
 app-misc/aw-core 0.11.0: Core library for ActivityWatch
@@ -680,6 +681,7 @@ dev-libs/jonquil 0.2.0: Jonquil: Bringing TOML blooms to JSON land
 dev-libs/jose 11-r1: C-language implementation of Javascript Object Signing and Encryption
 dev-libs/kwsys 0_pre20220603: Kitware System Library
 dev-libs/lexbor 2.3.0: Modular web engine (HTML/CSS parser, renderer, ...)
+dev-libs/libcli 1.10.7: Shared C library to include Cisco-like CLI into other software
 dev-libs/libdatrie 0.2.13: Double-Array Trie Library
 dev-libs/libdbf 0.0.1: Library to read the content of dBASE III, IV, and 5.0 files
 dev-libs/libdwarf 0.4.0 0.4.1 0.5.0 0.6.0: The DWARF Debugging Information Format
@@ -1046,7 +1048,7 @@ dev-python/minio 7.1.17 7.2.0: MinIO Client SDK for Python
 dev-python/mitype 0.2.4: Typing speed test in terminal
 dev-python/mkdocs-blog-plugin 9999: Plugin for MkDocs to keep a simple blog section inside your documentation.
 dev-python/mkdocs-exclude 1.0.2-r1: Lets you exclude files or trees from your output
-dev-python/mkdocs-rss-plugin 1.6.0: MkDocs plugin to generate a RSS feeds.
+dev-python/mkdocs-rss-plugin 1.11.0: MkDocs plugin to generate a RSS feeds.
 dev-python/mobi 0.3.3: Unpack unencrypted mobi files
 dev-python/moderngl 5.8.2: Modern OpenGL binding for python
 dev-python/moderngl-window 2.4.4: A cross platform utility library for ModernGL
@@ -1321,7 +1323,7 @@ dev-vcs/gitqlient-jenkins-plugin 0.2.0: GitQlient Jenkins plugin
 dev-vcs/gitui 0.18.0 0.20.1: Blazing fast terminal-ui for git
 dev-vcs/got 0.90 0.91: Portable version of the Game of Trees version control system
 dev-vcs/lazygit 0.39.4-r1 0.40.2-r1: Simple terminal UI for git commands
-dev-vcs/lefthook 1.4.8 1.5.5: Fast and powerful Git hooks manager for any type of projects
+dev-vcs/lefthook 1.4.8 1.5.5-r1: Fast and powerful Git hooks manager for any type of projects
 dev-zig/zls 0.10.0-r1 9999: The officially unofficial Ziglang language server
 games-action/ATLauncher 3.4.3.1 3.4.27.0: Minecraft launcher which integrates multiple different ModPacks
 games-action/blackvoxel 2.50 9999: Blackvoxel Video Game
@@ -1647,6 +1649,7 @@ media-video/tartube 2.4.077 9999: A GUI front-end for youtube-dl
 media-video/trakt-scrobbler 1.4.2-r1 1.5.0-r1 1.6.3-r1: Scrobbler for trakt.tv that supports VLC, Plex, MPC-HC, and MPV
 media-video/uxplay 1.66 1.67: AirPlay Unix mirroring server
 media-video/walksnail-osd-tool 0.2.0 9999: Tool for rendering OSDs over Walksnail DVR recordings
+media-video/wl-screenrec 0.1.2: High performance screen/audio recorder for wlroots
 media-video/wlrobs 1.0 1.1 9999: OBS plugin that allows you to screen capture on wlroots based compositors
 media-video/ytarchive 0.4.0: Youtube livestream downloader
 mpv-plugin/SmartCopyPaste 3.1: Gives mpv the capability to copy and paste while being smart and customizable
@@ -1665,6 +1668,7 @@ mpv-plugin/mpv_thumbnail_script 0.5.1 0.5.2 0.5.3: A Lua script to show preview 
 net-analyzer/gping-bin 1.5.1: Ping with graph
 net-analyzer/munin-contrib 0.2021.04.27: user contributed stuff related to munin
 net-analyzer/munin-plugins-mendix 23_p20210510: This package provides various plugins for Munin
+net-analyzer/netsniff-ng 0.6.8: high performance network sniffer for packet inspection
 net-client/amfora 1.8.0 1.9.2: A fancy terminal browser for the Gemini protocol.
 net-client/castor 0.8.18 0.9.0: A graphical browser for plain-text protocols
 net-client/kristall 0.3-r2 0.4: Visual cross-platform gemini browser
@@ -1673,6 +1677,7 @@ net-client/offpunk 1.8 1.9.1: Offline-First Gemini/Web/Gopher/RSS reader and bro
 net-client/starfish 1.2.0 1.3.1: A Gemini browser for elementary OS
 net-client/telescope 0.7.1 0.8.1: w3m-like browser for Gemini
 net-dialup/atinout 0.9.1-r1: AT commands as input are sent to modem and responses given as output
+net-dialup/tcpser 1.1.4: Hayes Smartmodem emulator over TCP/IP
 net-dialup/tio 2.7: Simple TTY terminal application
 net-fs/httpdirfs 1.2.0: Filesystem to mount HTTP directory listings, with a permanent cache
 net-fs/hubicfuse 3.0.1: Support for mounting HubiC drive in GNU/Linux
@@ -2006,7 +2011,7 @@ sys-kernel/modprobed-db 2.46: This utility tracks modules loaded by the kernel, 
 sys-kernel/msr-safe 1.6.0: Allows safer access to model specific registers (MSRs)
 sys-kernel/tirdad 0_pre20200926: kernel module for random ISN generation
 sys-kernel/uek-sources 5.15.0.5.70.1 5.15.0.6.80.3 5.15.0.8.91.3 5.15.0.105.125.4 5.15.0.201.135.2 5.15.0.201.135.4 5.15.0.202.135.1: Unbreakable Enterprise Kernel (UEK) sources built from Oracle
-sys-kernel/ugrd 0.12.1-r1 0.15.4 0.16.3: Python based initramfs generator with TOML defintions
+sys-kernel/ugrd 0.12.1-r1 0.15.4 0.18.0: Python based initramfs generator with TOML defintions
 sys-kernel/usermode-kernel 6.0.12: Linux kernel built with Gentoo patches
 sys-kernel/xow 0.5: Linux driver for the Xbox One wireless dongle
 sys-kernel/xpmem 2.6.5_p20210809: Linux Cross-Memory Attach
