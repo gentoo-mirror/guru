@@ -1,4 +1,4 @@
-BDEPEND=app-text/yelp-tools >=sys-devel/gettext-0.19.7 virtual/pkgconfig sys-devel/gnuconfig >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.5:1.16 ) >=sys-devel/autoconf-2.71-r5 >=sys-devel/libtool-2.4.7 app-arch/xz-utils
+BDEPEND=app-text/yelp-tools >=sys-devel/gettext-0.19.7 virtual/pkgconfig sys-devel/gnuconfig >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.5:1.16 ) || ( >=sys-devel/autoconf-2.72-r1:2.72 >=sys-devel/autoconf-2.71-r6:2.71 ) >=sys-devel/libtool-2.4.7 app-arch/xz-utils
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare
 DEPEND=>=dev-libs/glib-2.26:2 dev-libs/gmime:3.0 >=x11-libs/gtk+-3.00:3 gnome-keyring? ( >=app-crypt/gcr-3.20 >=app-crypt/libsecret-0.20 ) libnotify? ( >=x11-libs/libnotify-0.4.1:0= ) spell? ( >=app-text/enchant-2.2.3:2 >=app-text/gtkspell-3.0.10:3 ) ssl? ( >=net-libs/gnutls-3:0= ) >=sys-libs/zlib-1.2.0
 DESCRIPTION=A newsreader for GNOME
@@ -12,5 +12,5 @@ LICENSE=GPL-2
 RDEPEND=>=dev-libs/glib-2.26:2 dev-libs/gmime:3.0 >=x11-libs/gtk+-3.00:3 gnome-keyring? ( >=app-crypt/gcr-3.20 >=app-crypt/libsecret-0.20 ) libnotify? ( >=x11-libs/libnotify-0.4.1:0= ) spell? ( >=app-text/enchant-2.2.3:2 >=app-text/gtkspell-3.0.10:3 ) ssl? ( >=net-libs/gnutls-3:0= ) >=sys-libs/zlib-1.2.0
 SLOT=0
 SRC_URI=https://gitlab.gnome.org/GNOME/pan/-/archive/v0.155/pan-v0.155.tar.bz2
-_eclasses_=gnuconfig	b6b3e92f8b8c996400074b5f61a59256	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	libtool	9d3a9a889a6fa62ae794f817c156491b	autotools	6ae9a4347149b19a112caa1182d03bde	gnome.org	6b39404f1491c60a2d32e3c693a683fe	xdg-utils	baea6080dd821f5562d715887954c9d3	gnome2-utils	b0183db3b2e07b18f3b77bffec72e116	xdg	4a14c5c24f121e7da66e5aab4a168c6e	gnome2	9bd787a54d31405e742ae7537eed650b
+_eclasses_=gnuconfig	b6b3e92f8b8c996400074b5f61a59256	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	libtool	9d3a9a889a6fa62ae794f817c156491b	autotools	5f729b9cb10d5eda573cd604c93c6dc5	gnome.org	6b39404f1491c60a2d32e3c693a683fe	xdg-utils	baea6080dd821f5562d715887954c9d3	gnome2-utils	b0183db3b2e07b18f3b77bffec72e116	xdg	4a14c5c24f121e7da66e5aab4a168c6e	gnome2	9bd787a54d31405e742ae7537eed650b
 _md5_=a70bd1ae222448f274d6a4a83d5bfc79
