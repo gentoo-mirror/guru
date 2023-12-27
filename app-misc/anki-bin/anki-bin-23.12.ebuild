@@ -31,7 +31,7 @@ LICENSE="AGPL-3+ BSD public-domain"
 # Dependent crate licenses
 LICENSE+="
 	Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD-2 CC0-1.0 ISC MIT
-	MPL-2.0 openssl Unicode-DFS-2016
+	MPL-2.0 openssl Unicode-DFS-2016 ZLIB
 "
 # The supermemo importer is licensed under GPL-3+ and 0BSD.
 # - pylib/anki/importing/supermemo_xml.py
@@ -39,9 +39,6 @@ LICENSE+="
 # Anki bundles 3rd-party code and assets:
 # The MathJax files are licensed under Apache-2.0.
 # - node_modules/mathjax/es5/
-#
-# CSS Browser Selector is licensed under CC-BY-2.5.
-# - node_modules/css-browser-selector/css_browser_selector.min.js
 #
 # The fancy deboss pattern is licensed under CC-BY-4.0.
 # - pylib/anki/statsbg.py
@@ -59,7 +56,7 @@ LICENSE+="
 #
 # The vendored Flot plotting library is licensed under MIT.
 # - qt/aqt/data/web/js/vendor/plot.js
-LICENSE+=" 0BSD CC-BY-4.0 CC-BY-SA-2.5 GPL-3+ Unlicense"
+LICENSE+=" 0BSD CC-BY-4.0 GPL-3+ Unlicense"
 
 SLOT="0"
 KEYWORDS="~amd64"
@@ -83,15 +80,17 @@ RDEPEND="
 		dev-python/send2trash[${PYTHON_USEDEP}]
 		dev-python/waitress[${PYTHON_USEDEP}]
 	')
-	qt6? (  $(python_gen_cond_dep '
-			   >=dev-python/PyQt6-6.5.0[gui,network,opengl,quick,svg,webchannel,widgets,${PYTHON_USEDEP}]
+	qt6? ( 	dev-qt/qtsvg:6
+			$(python_gen_cond_dep '
+			   >=dev-python/PyQt6-6.5.0[gui,network,opengl,quick,webchannel,widgets,${PYTHON_USEDEP}]
 			   >=dev-python/PyQt6-sip-13.5.1[${PYTHON_USEDEP}]
 			   >=dev-python/PyQt6-WebEngine-6.5.0[widgets,${PYTHON_USEDEP}]')
 
 		 )
 	!qt6? ( dev-qt/qtgui[jpeg,png]
+			dev-qt/qtsvg:5
 			$(python_gen_cond_dep '
-				>=dev-python/PyQt5-5.15.5[gui,network,svg,webchannel,widgets,${PYTHON_USEDEP}]
+				>=dev-python/PyQt5-5.15.5[gui,network,webchannel,widgets,${PYTHON_USEDEP}]
 				>=dev-python/PyQt5-sip-12.9.0[${PYTHON_USEDEP}]
 				>=dev-python/PyQtWebEngine-5.15.5[${PYTHON_USEDEP}]')
 
@@ -108,12 +107,10 @@ to ${CATEGORY}/${PN}[-qt6], or temporarily set an environment variable
 ENABLE_QT5_COMPAT to 1 to have Anki install the previous compatibility code.
 The latter option has additional runtime dependencies. Please take a look
 at this package's 'optional runtime features' for a complete listing.
-
-In an early 2024 update, ENABLE_QT5_COMPAT will be removed, so this is not a
+\n\nIn an early 2024 update, ENABLE_QT5_COMPAT will be removed, so this is not a
 long-term solution.
-
-Anki's user manual is located online at https://docs.ankiweb.net/
-Anki's add-on developer manual is located online at
+\n\nAnki's user manual is located online at https://docs.ankiweb.net/
+\nAnki's add-on developer manual is located online at
 https://addon-docs.ankiweb.net/
 "
 
@@ -137,12 +134,10 @@ src_install() {
 	insinto /usr/share/mime/packages
 	newins "${DISTDIR}"/${P}.xml anki.xml
 
-	local DISABLE_AUTOFORMATTING=1
 	readme.gentoo_create_doc
 }
 
 pkg_postinst() {
-	[[ "${REPLACING_VERSIONS%-r*}" != '23.10.1' ]] && local FORCE_PRINT_ELOG=1
 	readme.gentoo_print_elog
 	xdg_pkg_postinst
 	optfeature "LaTeX in cards" "app-text/texlive[extra] app-text/dvipng"
