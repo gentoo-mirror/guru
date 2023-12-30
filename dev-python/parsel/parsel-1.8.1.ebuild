@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{10..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
@@ -20,6 +20,7 @@ KEYWORDS="~amd64"
 
 RDEPEND="
 	dev-python/cssselect[${PYTHON_USEDEP}]
+	dev-python/jmespath[${PYTHON_USEDEP}]
 	dev-python/lxml[${PYTHON_USEDEP}]
 	dev-python/packaging[${PYTHON_USEDEP}]
 	dev-python/w3lib[${PYTHON_USEDEP}]
