@@ -1,5 +1,5 @@
 BDEPEND=>=dev-lang/nasm-2.13.03 >=dev-vcs/git-1.8.2.1[curl]
-DEFINED_PHASES=compile configure install test unpack
+DEFINED_PHASES=configure unpack
 DESCRIPTION=Multi-Buffer Crypto for IPSec from Intel
 EAPI=8
 HOMEPAGE=https://github.com/intel/intel-ipsec-mb
@@ -10,4 +10,4 @@ PROPERTIES=live
 RESTRICT=!test? ( test )
 SLOT=0
 _eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	git-r3	86fa1f157b70b9d2ff340c4633b1cf4b
-_md5_=4d2ee7560028fa755e084fab135c286d
+_md5_=0d99c8b912f28acbf270f37ddb21efb3

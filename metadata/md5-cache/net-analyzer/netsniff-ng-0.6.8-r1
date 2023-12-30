@@ -1,4 +1,4 @@
-BDEPEND=sys-devel/flex sys-devel/bison dev-libs/libsodium virtual/pkgconfig
+BDEPEND=app-alternatives/lex sys-devel/bison dev-libs/libsodium virtual/pkgconfig
 DEFINED_PHASES=compile configure install prepare
 DEPEND=dev-libs/libcli:= dev-libs/libnl:3 dev-libs/userspace-rcu:= net-libs/libnet:1.1 net-libs/libnetfilter_conntrack net-libs/libpcap sys-libs/ncurses:0= geoip? ( dev-libs/geoip ) zlib? ( sys-libs/zlib:= )
 DESCRIPTION=high performance network sniffer for packet inspection
@@ -12,4 +12,4 @@ RDEPEND=dev-libs/libcli:= dev-libs/libnl:3 dev-libs/userspace-rcu:= net-libs/lib
 SLOT=0
 SRC_URI=http://pub.netsniff-ng.org/netsniff-ng/netsniff-ng-0.6.8.tar.xz
 _eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0
-_md5_=e230111c5f878327e1bdccd168a7558b
+_md5_=813d2b68efb6db4210340e8662e480f7

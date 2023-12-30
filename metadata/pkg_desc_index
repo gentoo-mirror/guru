@@ -94,7 +94,7 @@ app-admin/opentofu 1.6.0_rc1: A fork of Terraform that is open-source and commun
 app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applications and tmux
 app-admin/pass-audit 1.2: A pass extension for auditing your password repository.
 app-admin/pass-update 2.1: pass extension that provides an easy flow for updating passwords
-app-admin/pulumi-bin 3.94.2 3.95.0 3.97.0: Infrastructure as code in any programming language
+app-admin/pulumi-bin 3.95.0 3.97.0 3.99.0: Infrastructure as code in any programming language
 app-admin/rbw 9999: unofficial bitwarden cli
 app-admin/s-tui 1.1.3-r1: Stress-Terminal UI monitoring tool
 app-admin/synadm 0.43.1 0.44: Command line admin tool for Synapse
@@ -128,7 +128,7 @@ app-crypt/clevis 19-r1: Automated Encryption Framework
 app-crypt/configuradorfnmt 1.0.1: Spanish government certificate request generator
 app-crypt/gnome-encfs-manager 1.9-r1 1.9-r2: An easy to use manager and mounter for encfs stashes
 app-crypt/ifcplugin-bin 3.1.1.0: Crypto Interface Web Browser Plugin
-app-crypt/intel-ipsec-mb 1.1 1.2 1.3 9999: Multi-Buffer Crypto for IPSec from Intel
+app-crypt/intel-ipsec-mb 1.1 1.2 1.3 1.5 9999: Multi-Buffer Crypto for IPSec from Intel
 app-crypt/pinentry-bemenu 0.11.0 0.12.0: Pinentry based on bemenu
 app-crypt/reop 2.1.1: reasonable expectation of privacy
 app-crypt/tang 13 14: Tang binding daemon
@@ -272,7 +272,7 @@ app-mobilephone/mobile-config-firefox 2.1.0: Mobile and privacy friendly configu
 app-mobilephone/pinephone-modem-scripts 0.20.8: Modem scripts for the PinePhone
 app-mobilephone/usb-tethering 0.3: USB tethering on Pine64/ConfigFS systems
 app-office/beancount 2.3.5-r2: A double-entry accounting system that uses text files as input
-app-office/drawio-desktop-bin 21.6.5: Diagram drawing application built on web technologies
+app-office/drawio-desktop-bin 21.6.5 22.1.15: Diagram drawing application built on web technologies
 app-office/invoice 0.1.0: Generate invoices from the command line
 app-office/jameica-bin 2.10.4: Local platform for home banking
 app-office/joplin-bin 2.13.1: Note taking app, on Electron, can import notes from Evernote
@@ -1025,8 +1025,8 @@ dev-python/importlib-resources 6.1.1: Backport of the importlib.resources module
 dev-python/inscriptis 2.3.1 2.3.2: HTML to text converter
 dev-python/invoke 2.2.0: Pythonic task execution
 dev-python/isosurfaces 0.1.0: Construct isolines/isosurfaces of a 2D/3D scalar field defined by a function
-dev-python/itemadapter 0.6.0 0.7.0: Common interface for scrapy data container classes
-dev-python/itemloaders 1.0.4 1.0.6: Library to populate items using XPath and CSS with a convenient API
+dev-python/itemadapter 0.8.0: Common interface for scrapy data container classes
+dev-python/itemloaders 1.1.0: Library to populate items using XPath and CSS with a convenient API
 dev-python/iuliia 0.11.5: Transliterate Cyrillic to Latin in every possible way
 dev-python/j1m-sphinxautozconfig 0.1.0: Spinx support for ZConfig
 dev-python/jinja2-cli 0.8.2: CLI for Jinja2
@@ -1067,7 +1067,7 @@ dev-python/orderedmultidict 1.0.1: Ordered Multivalue Dictionary. Helps power fu
 dev-python/os-api-ref 3.0.0: Sphinx Extensions to support API reference sites in OpenStack
 dev-python/oscrypto 1.3.0-r1: TLS sockets, key generation, encryption, decryption, signing, verification
 dev-python/ots-python 8.2.1: A Python wrapper for OpenType Sanitizer
-dev-python/parsel 1.7.0: Utility to extract data from XML/HTML documents using XPath or CSS selectors
+dev-python/parsel 1.8.1: Utility to extract data from XML/HTML documents using XPath or CSS selectors
 dev-python/pem 21.2.0 23.1.0: Easy PEM file parsing in Python
 dev-python/persist-queue 0.8.0 0.8.1: A thread-safe disk based persistent queue in Python
 dev-python/persistent 5.0 5.1: automatic persistence for Python objects
@@ -1082,7 +1082,7 @@ dev-python/portion 2.4.0 2.4.1: A Python library providing data structure and op
 dev-python/pproxy 2.7.8-r1: TCP/UDP asynchronous tunnel proxy implemented in Python3 asyncio
 dev-python/praw 7.6.1 7.7.0: Python Reddit API Wrapper
 dev-python/prawcore 2.3.0: Low-level communication layer for PRAW
-dev-python/protego 0.2.1-r1: Pure-Python robots.txt parser with support for modern conventions
+dev-python/protego 0.3.0: Pure-Python robots.txt parser with support for modern conventions
 dev-python/proxy_tools 0.1.0_p1: Simple proxy (as in the GoF design pattern)
 dev-python/psautohint 2.4.0-r1: Python wrapper for Adobe's PostScript autohinter
 dev-python/psycopg2cffi 2.9.0-r1: Implementation of the psycopg2 module using cffi. Compatible with Psycopg 2.5.
@@ -1155,7 +1155,7 @@ dev-python/rstr 3.2.0: Easily generate random strings of various types
 dev-python/schedule 1.1.0-r1: Python job scheduling for humans
 dev-python/schema 0.7.5: Python module to validate and convert data structures
 dev-python/scramp 1.4.4: A pure-Python implementation of the SCRAM authentication protocol.
-dev-python/scrapy 2.8.0: A high-level Web Crawling and Web Scraping framework
+dev-python/scrapy 2.8.0-r1 2.11.0: A high-level Web Crawling and Web Scraping framework
 dev-python/screeninfo 0.8.1: Fetch location and size of physical screens.
 dev-python/sdnotify 0.3.2: Python implementation of the systemd sd_notify protocol
 dev-python/sendgrid 6.9.7: Twilio SendGrid library for Python
@@ -1224,7 +1224,7 @@ dev-python/validator-collection 1.5.0: Python library of 60+ commonly-used valid
 dev-python/vharfbuzz 0.1.4-r1: A user-friendlier way to use Harfbuzz in Python
 dev-python/volatile 2.1.0: A small extension for the tempfile module
 dev-python/vttlib 0.12.0: Dump, merge and compile Visual TrueType data in UFO3 with FontTools
-dev-python/w3lib 2.0.1 2.1.1: Library of web-related functions
+dev-python/w3lib 2.1.2: Library of web-related functions
 dev-python/webpy 0.62: A web framework for python that is as simple as it is powerful
 dev-python/webrtcvad 2.0.10-r1: Python interface to the Google WebRTC Voice Activity Detector (VAD)
 dev-python/wheezy-template 3.1.0: lightweight template library
@@ -1235,7 +1235,7 @@ dev-python/xunitparser 1.3.4: Read JUnit/XUnit XML files and map them to Python 
 dev-python/yams 0.7.3 9999: Yet Another MPD Scrobbler (for Last.FM)
 dev-python/yaql 2.0.0: YAQL: Yet Another Query Language
 dev-python/youseedee 0.3.0 0.4.1: Interface to the Unicode Character Database
-dev-python/zenlib 1.2.0-r1: Useful python decorators and utilities
+dev-python/zenlib 1.2.0-r1 1.3.1: Useful python decorators and utilities
 dev-python/zodb 5.8.0-r1 5.8.1: Python object-oriented database
 dev-python/zodbpickle 3.0.1-r1 3.1: Fork of Python's pickle module to work with ZODB
 dev-python/zope-cachedescriptors 5.0: Python descriptors which cache their output
@@ -1298,7 +1298,7 @@ dev-util/pmbootstrap 1.51.0: Helper tool for developing and building postmarketO
 dev-util/qshaderedit 0.1.5: Multiplatform shader editor inspired by Apple's OpenGL Shader Builder
 dev-util/quilttools 0.3-r1: Mailbox to quilt series converter
 dev-util/reflex 0.3.1: A small tool to watch a directory and rerun a command when certain files change
-dev-util/rye 0.15.2-r1: An Experimental Package Management Solution for Python
+dev-util/rye 0.16.0: An Experimental Package Management Solution for Python
 dev-util/stripe-cli 9999: A command-line tool for Stripe
 dev-util/stylua 0.19.1-r1: A code formatter for Lua
 dev-util/tflint-bin 0.43.0 0.46.0: A Pluggable Terraform Linter
@@ -1669,7 +1669,7 @@ mpv-plugin/mpv_thumbnail_script 0.5.1 0.5.2 0.5.3: A Lua script to show preview 
 net-analyzer/gping-bin 1.5.1: Ping with graph
 net-analyzer/munin-contrib 0.2021.04.27: user contributed stuff related to munin
 net-analyzer/munin-plugins-mendix 23_p20210510: This package provides various plugins for Munin
-net-analyzer/netsniff-ng 0.6.8: high performance network sniffer for packet inspection
+net-analyzer/netsniff-ng 0.6.8-r1: high performance network sniffer for packet inspection
 net-client/amfora 1.8.0 1.9.2: A fancy terminal browser for the Gemini protocol.
 net-client/castor 0.8.18 0.9.0: A graphical browser for plain-text protocols
 net-client/kristall 0.3-r2 0.4: Visual cross-platform gemini browser
@@ -1718,7 +1718,7 @@ net-irc/tiny 0.10.0: An IRC client
 net-libs/dpdk 21.11.1-r1 22.07-r1 23.03: Data Plane Development Kit libraries for fast userspace networking
 net-libs/evpath 4.5.0_p20220601: EVpath is an event transport middleware layer
 net-libs/ixwebsocket 11.4.4: C++ websocket client and server library
-net-libs/kcgi 0.12.5 0.13.0: Minimal CGI library for web applications
+net-libs/kcgi 0.12.5 0.13.0 0.13.3: Minimal CGI library for web applications
 net-libs/libuecc 7: a very small Elliptic Curve Cryptography library compatible with Ed25519.
 net-libs/orcania 2.3.3: Library for angharad programs
 net-libs/picotls 0_pre20220721 9999: TLS 1.3 implementation in C
@@ -1921,7 +1921,7 @@ sys-apps/nvimpager 0.11.0: Use nvim as a pager to view manpages, diff, etc with 
 sys-apps/openSeaChest 23.03.1 23.12: SeaGate's open source harddrive control utilities
 sys-apps/ov 0.11.2 0.32.0: Feature-rich terminal pager
 sys-apps/pnpm-bin 8.7.5: Fast, disk space efficient package manager, alternative to npm and yarn
-sys-apps/qemu-openrc 0.10.0 9999: OpenRC init script for QEMU/KVM
+sys-apps/qemu-openrc 0.10.0 0.11.1 9999: OpenRC init script for QEMU/KVM
 sys-apps/qjournalctl 0.6.2: Qt-based GUI for systemd's journalctl command
 sys-apps/sampler 1.1.0: visualizer for shell commands, executions and alerting
 sys-apps/sampler-bin 1.1.0: visualizer for shell commands, executions and alerting
@@ -2012,7 +2012,7 @@ sys-kernel/modprobed-db 2.46: This utility tracks modules loaded by the kernel, 
 sys-kernel/msr-safe 1.6.0: Allows safer access to model specific registers (MSRs)
 sys-kernel/tirdad 0_pre20200926: kernel module for random ISN generation
 sys-kernel/uek-sources 5.15.0.5.70.1 5.15.0.6.80.3 5.15.0.8.91.3 5.15.0.105.125.4 5.15.0.201.135.2 5.15.0.201.135.4 5.15.0.202.135.1: Unbreakable Enterprise Kernel (UEK) sources built from Oracle
-sys-kernel/ugrd 0.12.1-r1 0.15.4 0.18.0: Python based initramfs generator with TOML defintions
+sys-kernel/ugrd 0.12.1-r1 0.19.1: Python based initramfs generator with TOML defintions
 sys-kernel/usermode-kernel 6.0.12: Linux kernel built with Gentoo patches
 sys-kernel/xow 0.5: Linux driver for the Xbox One wireless dongle
 sys-kernel/xpmem 2.6.5_p20210809: Linux Cross-Memory Attach
