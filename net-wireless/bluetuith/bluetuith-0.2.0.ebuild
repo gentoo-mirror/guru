@@ -8,19 +8,25 @@ inherit go-module
 DESCRIPTION="A TUI bluetooth manager for Linux written in Go"
 HOMEPAGE="https://darkhz.github.io/bluetuith"
 
-GIT_DOCUMENTATION_COMMIT="9c215bb1a64bdbf0f88060db4de6701215799033"
+# MAKE SURE to change these on every update
+[[ ${PV} != 9999* ]] && \
+GIT_COMMIT="ffe8681"
+GIT_DOCUMENTATION_COMMIT="3b2ebf5a6bc8a9ed2dc48e1fa7f0df5851ddb84b"
 
-if [[ ${PV} == *9999* ]]; then
+if [[ ${PV} == 9999* ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/darkhz/bluetuith.git"
 else
 	SRC_URI="https://github.com/darkhz/bluetuith/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 	SRC_URI+=" https://github.com/rahilarious/gentoo-distfiles/releases/download/${P}/deps.tar.xz -> ${P}-deps.tar.xz"
-	SRC_URI+=" https://github.com/darkhz/bluetuith/archive/${GIT_DOCUMENTATION_COMMIT}.tar.gz -> ${P}-docs.tar.gz"
-	KEYWORDS="~amd64"
+	SRC_URI+=" https://github.com/darkhz/bluetuith/archive/${GIT_DOCUMENTATION_COMMIT}.tar.gz -> ${PN}-docs-${GIT_DOCUMENTATION_COMMIT}.tar.gz"
+	KEYWORDS="~amd64 ~arm64"
 fi
 
-LICENSE="Apache-2.0 BSD-2 BSD MIT"
+# main
+LICENSE="Apache-2.0"
+# deps
+LICENSE+=" BSD-2 BSD MIT"
 SLOT="0"
 
 IUSE="doc"
@@ -30,7 +36,7 @@ RDEPEND="
 "
 
 src_unpack() {
-	if [[ ${PV} == *9999* ]]; then
+	if [[ ${PV} == 9999* ]]; then
 		# unpack code
 		git-r3_src_unpack
 
@@ -47,7 +53,9 @@ src_unpack() {
 }
 
 src_compile() {
-	ego build
+	# mimicking behavior from https://github.com/darkhz/bluetuith/blob/master/.goreleaser.yml
+	[[ ${PV} == 9999* ]] && GIT_COMMIT=$(git rev-parse --short HEAD)
+	ego build -ldflags "-X github.com/darkhz/bluetuith/cmd.Version=${PV}@${GIT_COMMIT}"
 }
 
 src_test() {

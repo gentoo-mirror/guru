@@ -10,7 +10,7 @@ HOMEPAGE="https://darkhz.github.io/bluetuith"
 
 # MAKE SURE to change these on every update
 [[ ${PV} != 9999* ]] && \
-GIT_COMMIT="28c0a9f"
+GIT_COMMIT="ffe8681"
 GIT_DOCUMENTATION_COMMIT="3b2ebf5a6bc8a9ed2dc48e1fa7f0df5851ddb84b"
 
 if [[ ${PV} == 9999* ]]; then
