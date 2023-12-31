@@ -230,7 +230,7 @@ app-misc/ledger-live 2.64.1 2.66.0 2.68.1 2.71.1 2.73.0: Manager for the Ledger 
 app-misc/lf 27 28-r1 29 30 31: Terminal file manager
 app-misc/macchina 6.1.8 6.1.8-r1: A system information fetcher, with an (unhealthy) emphasis on performance.
 app-misc/mangadesk 0.7.7 0.7.8: Terminal Client for MangaDex
-app-misc/mat2 0.13.3: Metadata Anonymisation Toolkit: handy tool to trash your metadata
+app-misc/mat2 0.13.3 0.13.4: Metadata Anonymisation Toolkit: handy tool to trash your metadata
 app-misc/metadata-cleaner 2.5.4: Python GTK application to view and clean metadata in files, using mat2.
 app-misc/minder 1.14.0 1.15.6: Mind-mapping application for Elementary OS.
 app-misc/mobile-datovka 1.10.0: Mobile optimized GUI to access the Czech data box e-government system
@@ -258,7 +258,7 @@ app-misc/tty-share-bin 2.4.0: Screen sharing for terminal: ASCII in browser or t
 app-misc/twertlefetch 1.1.0: system fetch written in rust
 app-misc/ufetch 0.1 0.2 9999: Tiny system info for Unix-like operating systems
 app-misc/uwufetch 2.0 2.1: A meme system info tool for Linux
-app-misc/vocabsieve 0.10.2: A simple, effective tool for language learning
+app-misc/vocabsieve 0.11.0: A simple, effective tool for language learning
 app-misc/vrms-gentoo 0_pre20201102: vrms clone for Gentoo Linux
 app-misc/walld 1.4.4: A Wallpaper daemon
 app-misc/watchexec 1.21.1 1.22.3 1.23.0 1.24.0 1.24.1 1.24.2: Executes commands in response to file modifications
@@ -903,7 +903,7 @@ dev-python/asyncmy 0.2.7 0.2.8: A fast asyncio MySQL driver
 dev-python/asyncpg 0.26.0 0.27.0: A fast PostgreSQL Database Client Library for Python/asyncio
 dev-python/asyncssh 2.13.1: Asynchronous SSHv2 client and server library
 dev-python/auditok 0.1.5 0.2.0: A module for Audio/Acoustic Activity Detection
-dev-python/autoflake 1.4-r1: Removes unused imports and unused variables as reported by pyflakes
+dev-python/autoflake 2.2.1: Removes unused imports and unused variables from Python code
 dev-python/avro 1.11.0: Apache Avro is a data serialization system
 dev-python/axisregistry 0.3.11: A Python API to access data from the Google Fonts variable fonts Axis Registry
 dev-python/azure-core 1.27.1 1.28.0: Microsoft Azure Core Library for Python
@@ -988,7 +988,7 @@ dev-python/futurist 2.4.1: Useful additions to futures, from the future
 dev-python/gabbi 2.7.1: Declarative HTTP testing library
 dev-python/gazpacho 1.1: The simple, fast, and modern web scraping library
 dev-python/gbinder 1.1.2 9999: Python bindings for libgbinder
-dev-python/gemcall 0.9.1: A library and CLI tool for making gemini requests
+dev-python/gemcall 0.9.1 0.9.2: A library and CLI tool for making gemini requests
 dev-python/gflanguages 0.4.0-r1: A python API for evaluating language support in the Google Fonts collection
 dev-python/github-sublee-glicko2 0_pre20191010-r1: An implementation of the Glicko-2 rating system for Python
 dev-python/glcontext 2.5.0: Modern OpenGL binding for python
@@ -1263,6 +1263,7 @@ dev-util/bash-language-server 4.10.2 5.0.0: A language server for Bash
 dev-util/bats-assert 2.0.0: Common assertions for Bats
 dev-util/bats-support 0.3.0: Supporting library for Bats test helpers
 dev-util/bazelisk 1.12.0: A user-friendly launcher for Bazel
+dev-util/bc-ur 0.3.0: Blockchain Commons UR Library
 dev-util/binaryen 105: Compiler and toolchain infrastructure library for WebAssembly
 dev-util/cargo-make 0.35.9 0.35.10: Rust task runner and build tool
 dev-util/cmakelang 0.6.13: Provides Quality Assurance (QA) tools for cmake
@@ -1316,7 +1317,7 @@ dev-vcs/bit 1.1.1 1.1.2: Bit is a modern Git CLI
 dev-vcs/git-blame-someone-else 0_pre20180613: Blame someone else for your bad code.
 dev-vcs/git-cu 0.5.0: Helps to keep your local git repositories organized
 dev-vcs/git-repo-updater 0.5.1-r2: Easily update multiple git repositories at once
-dev-vcs/gitahead 2.6.3: Graphical Git client to help understand and manage source code history
+dev-vcs/gitahead 2.7.1: Graphical Git client to help understand and manage source code history
 dev-vcs/gitqlient 1.6.2 9999: Multi-platform Git client written with Qt
 dev-vcs/gitqlient-gitserver-plugin 0.2.0: GitQlient GitServer plugin
 dev-vcs/gitqlient-jenkins-plugin 0.2.0: GitQlient Jenkins plugin
@@ -1402,7 +1403,7 @@ gnome-extra/portfolio 0.9.14: A minimalist file manager for those who want to us
 gnome-extra/vvmplayer 1.4: Visual Voicemail Player
 gnome-extra/yad 10.1: Display GTK+ dialog boxes from command line or shell scripts
 gui-apps/1password 8.10.16: The world’s most-loved password manager
-gui-apps/ReGreet 0.1.1 9999: A clean and customizable GTK-based greetd greeter written in Rust
+gui-apps/ReGreet 0.1.1-r1 9999: A clean and customizable GTK-based greetd greeter written in Rust
 gui-apps/azote 1.12.3: Wallpaper manager for wlroots-based compositors and some other WMs
 gui-apps/clipman 1.6.2: A basic clipboard manager for Wayland.
 gui-apps/coreaction 4.2.0 9999: A side bar for showing widgets for C Suite
@@ -1454,7 +1455,7 @@ gui-apps/nwg-icon-picker 0.1.0 0.1.0-r1 9999: GTK icon chooser with a text searc
 gui-apps/nwg-launchers 0.5.0 0.6.3 0.7.1.1 9999: GTK+ launchers for sway, i3 and some other WMs
 gui-apps/nwg-menu 0.1.1: enuStart plugin to nwg-panel, also capable of working standalone
 gui-apps/nwg-panel 0.9.17 0.9.18 0.9.19 9999: GTK3-based panel for sway and Hyprland Wayland compositors
-gui-apps/nwg-shell 0.5.22-r1 0.5.23: libraries an common functions for the nwg-shell project
+gui-apps/nwg-shell 0.5.22-r1 0.5.23 0.5.24: libraries an common functions for the nwg-shell project
 gui-apps/nwg-shell-config 0.5.28 0.5.29: nwg-shell configuration utility
 gui-apps/organicmaps 9999: Offline maps and navigation using OpenStreetMap data
 gui-apps/packettracer 8.2.0: Cisco's packet tracer
@@ -1781,7 +1782,7 @@ net-nntp/inn 2.7.1: InterNetNews - the Internet meets Netnews
 net-nntp/pan 0.154-r1 0.155: A newsreader for GNOME
 net-p2p/bisq-bin 1.9.14: The decentralized bitcoin exchange (non-atomic, with arbitration)
 net-p2p/dogecoin-qt 1.14.6: Dogecoin Core Qt for desktop. Downloaded blockchain is under 2.2GB. Much secure.
-net-p2p/feather 2.4.9-r1 2.5.1 2.5.2 9999: A free, open-source Monero wallet
+net-p2p/feather 2.4.9-r1 2.5.1 2.5.2 2.6.0 2.6.1 9999: A free, open-source Monero wallet
 net-p2p/fragments 2.1-r1 2.1.1: Fragments is an easy to use BitTorrent client
 net-p2p/ipfs-cluster 1.0.1 1.0.2: Pinset orchestration for IPFS
 net-p2p/monero 0.17.2.0 0.17.2.3 0.17.3.0 0.17.3.2 0.18.1.0 0.18.1.1 0.18.1.2 0.18.2.0 0.18.2.2 0.18.3.1 9999: The secure, private, untraceable cryptocurrency
@@ -1798,7 +1799,7 @@ net-vpn/cloudflare-warp 2023.3.470 2023.7.40: Cloudflare Warp Client
 net-vpn/fastd 22: A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
 net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that require SAML
 net-vpn/mullvadvpn-app 2023.5 2023.6: Tool used to manage daemon setup
-net-wireless/bluetuith 0.1.7 0.1.8 0.1.9 9999: A TUI bluetooth manager for Linux written in Go
+net-wireless/bluetuith 0.1.8 0.1.9 0.2.0 9999: A TUI bluetooth manager for Linux written in Go
 net-wireless/rtl8192eu 0_pre20230613: Realtek 8192EU driver module for Linux kernel
 net-wireless/rtl8723bu 9999: Driver for the rtl8723 wireless chipset
 net-wireless/rtl8821ce 0_pre20231002: Realtek RTL8821CE Driver module for Linux kernel
@@ -1910,7 +1911,7 @@ sys-apps/corefreq 1.96.3: CPU monitoring software designed for the 64-bits Proce
 sys-apps/dool 1.1.0 9999: Versatile replacement for vmstat, iostat and ifstat (clone of dstat)
 sys-apps/drm_info 2.2.0 2.3.0 9999: Small utility to dump info about DRM devices
 sys-apps/fchroot 0.1.2: Funtoo's franken-chroot tool - chroot from AMD64 to ARM system
-sys-apps/fselect 0.8.4: Find files with SQL-like queries
+sys-apps/fselect 0.8.5: Find files with SQL-like queries
 sys-apps/hex 0.3.2 0.4.2 0.5.0: Futuristic take on hexdump
 sys-apps/intel-cmt-cat 4.4.0: User space software for Intel(R) Resource Director Technology
 sys-apps/lact 0.5.0 0.5.1: Linux AMDGPU Controller
@@ -1990,7 +1991,7 @@ sys-cluster/wxparaver 4.10.1: Performance analyzer based on event traces
 sys-devel/fcode-utils 1.0.3: Set of utilities to process FCODE, OpenFirmware's byte code
 sys-devel/gdb-dashboard 0.17.2: Modular visual interface for GDB in Python
 sys-devel/gsl 4.1.5-r1: iMatix GSL code generator
-sys-devel/just 1.18.0 1.18.1 1.19.0: Just a command runner (with syntax inspired by 'make')
+sys-devel/just 1.18.0 1.18.1 1.19.0 1.21.0: Just a command runner (with syntax inspired by 'make')
 sys-devel/lcc 2021.01.11-r1: The lcc retargetable ANSI C compiler
 sys-firmware/lenovolegionlinux 9999: Lenovo Legion Linux kernel module
 sys-firmware/pinephone-firmware 20210809: Firmwares files for PinePhone
