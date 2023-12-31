@@ -14,11 +14,12 @@ SRC_URI="https://github.com/scrapy/scrapy/archive/refs/tags/${PV}.tar.gz -> ${P}
 LICENSE="BSD"
 SLOT=0
 KEYWORDS="~amd64"
+IUSE="test"
+RESTRICT="!test? ( test )"
 
 # The 'PyDispatcher>=2.0.5' distribution was not found and is required by Scrapy
 # https://bugs.gentoo.org/684734
-RDEPEND="${PYTHON_DEPS}
-	dev-python/cssselect[${PYTHON_USEDEP}]
+RDEPEND="dev-python/cssselect[${PYTHON_USEDEP}]
 	dev-python/cryptography[${PYTHON_USEDEP}]
 	<dev-python/priority-2.0.0[${PYTHON_USEDEP}]
 	dev-python/h2[${PYTHON_USEDEP}]
@@ -33,29 +34,28 @@ RDEPEND="${PYTHON_DEPS}
 	dev-python/service-identity[${PYTHON_USEDEP}]
 	dev-python/six[${PYTHON_USEDEP}]
 	dev-python/tldextract[${PYTHON_USEDEP}]
-	>=dev-python/twisted-17.9.0[${PYTHON_USEDEP}]
-	<=dev-python/twisted-22.10.0[${PYTHON_USEDEP}]
+	>=dev-python/twisted-18.9.0[${PYTHON_USEDEP}]
 	dev-python/w3lib[${PYTHON_USEDEP}]
 	dev-python/zope-interface[${PYTHON_USEDEP}]
 "
-DEPEND="${RDEPEND}
+BDEPEND="
 	test? (
+		${RDEPEND}
 		dev-python/testfixtures[${PYTHON_USEDEP}]
 		dev-python/uvloop[${PYTHON_USEDEP}]
 	)
 "
 
+PATCHES="${FILESDIR}"/${P}-lift-twisted-restriction.patch
+
 distutils_enable_tests pytest
 
-PATCHES=( "${FILESDIR}/${PN}-2.5.1-no-doctest.patch" )
-
-python_test() {
-	py.test -vv --ignore=docs \
-		--ignore="tests/test_proxy_connect.py" \
-		--ignore="tests/test_utils_display.py" \
-		--ignore="tests/test_command_check.py" \
-		--ignore="tests/test_feedexport.py" \
-		--ignore="tests/test_pipeline_files.py" \
-		--ignore="tests/test_pipeline_images.py" \
-		--ignore="tests/test_squeues.py" || die
-}
+EPYTEST_DESELECT=(
+	# these require (local) network access
+	tests/test_command_check.py
+	tests/test_feedexport.py
+	tests/test_pipeline_files.py::TestFTPFileStore::test_persist
+	# Flaky test: https://github.com/scrapy/scrapy/issues/6193
+	tests/test_crawl.py::CrawlTestCase::test_start_requests_laziness
+	)
+EPYTEST_IGNORE=( docs )

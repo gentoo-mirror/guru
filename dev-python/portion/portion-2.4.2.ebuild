@@ -3,13 +3,15 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{10..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=setuptools
 
 inherit distutils-r1 pypi
 
 DESCRIPTION="A Python library providing data structure and operations for intervals."
-HOMEPAGE="https://github.com/AlexandreDecan/portion"
+HOMEPAGE="https://github.com/AlexandreDecan/portion
+	https://pypi.org/project/portion/
+"
 
 LICENSE="LGPL-3"
 SLOT="0"

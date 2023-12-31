@@ -4,21 +4,22 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{10..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 
 PYPI_NO_NORMALIZE=1
 PYPI_PN="${PN/-/\.}"
 inherit distutils-r1 pypi
 
 DESCRIPTION="This package provides a flexible test runner with layer support."
-HOMEPAGE="https://github.com/zopefoundation/zope.testrunner"
+HOMEPAGE="https://github.com/zopefoundation/zope.testrunner
+	https://pypi.org/project/zope.testrunner/
+"
 
 LICENSE="ZPL"
 SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="
-	dev-python/six[${PYTHON_USEDEP}]
 	dev-python/zope-interface[${PYTHON_USEDEP}]
 	dev-python/zope-exceptions[${PYTHON_USEDEP}]
 	doc? ( dev-python/sphinxcontrib-programoutput[${PYTHON_USEDEP}] )
