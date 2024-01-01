@@ -1,6 +1,7 @@
 acct-group/1password 0: System group: 1password
 acct-group/_bgpd 0-r1: System group: _bgpd
 acct-group/_rpki-client 0: System group: _rpki-client
+acct-group/blocky 0: A group for net-dns/blocky
 acct-group/canna 0: System group: canna
 acct-group/conduit 0: Group conduit
 acct-group/fedigroup 0: System group: fedigroup
@@ -33,6 +34,7 @@ acct-group/yacy 0: Group for net-misc/yacy
 acct-group/yggdrasil 1: System group: yggdrasil
 acct-user/_bgpd 0-r1: User for OpenBGPD
 acct-user/_rpki-client 0: User for rpki-client
+acct-user/blocky 0: A user for net-dns/blocky
 acct-user/canna 0: User for Canna language server
 acct-user/conduit 0: User for conduit
 acct-user/fedigroup 0: System user: fedigroup
@@ -129,6 +131,7 @@ app-crypt/configuradorfnmt 1.0.1: Spanish government certificate request generat
 app-crypt/gnome-encfs-manager 1.9-r1 1.9-r2: An easy to use manager and mounter for encfs stashes
 app-crypt/ifcplugin-bin 3.1.1.0: Crypto Interface Web Browser Plugin
 app-crypt/intel-ipsec-mb 1.1 1.2 1.3 1.5 9999: Multi-Buffer Crypto for IPSec from Intel
+app-crypt/lego 4.14.2 9999: Let's Encrypt/ACME client (like certbot or acme.sh) and library written in Go
 app-crypt/pinentry-bemenu 0.11.0 0.12.0: Pinentry based on bemenu
 app-crypt/reop 2.1.1: reasonable expectation of privacy
 app-crypt/tang 13 14: Tang binding daemon
@@ -215,7 +218,7 @@ app-misc/doublecmd-bin 1.0.11 1.1.5_beta: Free cross platform open source file m
 app-misc/dpscreenocr 1.4.0: Program to recognize text on screen
 app-misc/dragon 1.1.1 1.1.1_p20210820 1.2.0: Simple drag-and-drop source/sink for X and Wayland
 app-misc/electricsheep 3.0.2_p20191005 3.0.2_p20191005-r1: Realize the collective dream of sleeping computers from all over the internet
-app-misc/far2l 2.3.2_alpha 2.4.0_beta 9999: Linux port of FAR Manager v2
+app-misc/far2l 2.5.3_beta 9999: Linux port of FAR Manager v2
 app-misc/fetsh 1.8 1.9 9999: A fetch written in POSIX shell without any external commands
 app-misc/fff 2.2: A simple file manager written in bash
 app-misc/ghq 1.1.0 1.1.5: Remote repository management made easy
@@ -272,7 +275,6 @@ app-mobilephone/mobile-config-firefox 2.1.0: Mobile and privacy friendly configu
 app-mobilephone/pinephone-modem-scripts 0.20.8: Modem scripts for the PinePhone
 app-mobilephone/usb-tethering 0.3: USB tethering on Pine64/ConfigFS systems
 app-office/beancount 2.3.5-r2: A double-entry accounting system that uses text files as input
-app-office/drawio-desktop-bin 21.6.5 22.1.15: Diagram drawing application built on web technologies
 app-office/invoice 0.1.0: Generate invoices from the command line
 app-office/jameica-bin 2.10.4: Local platform for home banking
 app-office/joplin-bin 2.13.1: Note taking app, on Electron, can import notes from Evernote
@@ -882,7 +884,7 @@ dev-python/ManimPango 0.4.3 0.5.0: Binding for Pango, to use with Manim.
 dev-python/MutatorMath 3.0.1-r2: A library for piecewise linear interpolation in multiple dimensions
 dev-python/NSKeyedUnArchiver 1.5: Unserializes binary|text|file|memory plist data to Python dict
 dev-python/PGPy 0.6.0: Pretty Good Privacy for Python
-dev-python/PyPubSub 4.0.3: Python Publish-Subscribe Package
+dev-python/PyPubSub 4.0.3-r1: Python Publish-Subscribe Package
 dev-python/PyQt5-stubs 5.15.2.0 5.15.6.0: Stubs for PyQt5
 dev-python/PyWavefront 1.3.3: Python library for importing Wavefront .obj files
 dev-python/PythonQwt 0.10.5 0.11.2: Qt plotting widgets for Python
@@ -1683,6 +1685,8 @@ net-client/telescope 0.7.1 0.8.1: w3m-like browser for Gemini
 net-dialup/atinout 0.9.1-r1: AT commands as input are sent to modem and responses given as output
 net-dialup/tcpser 1.1.4: Hayes Smartmodem emulator over TCP/IP
 net-dialup/tio 2.7: Simple TTY terminal application
+net-dns/AdGuardHome 0.107.43: Network-wide ads & trackers blocking DNS server like Pi-Hole with web ui
+net-dns/blocky 0.22 9999: Fast and lightweight DNS proxy as ad-blocker with many features written in Go
 net-fs/httpdirfs 1.2.0: Filesystem to mount HTTP directory listings, with a permanent cache
 net-fs/hubicfuse 3.0.1: Support for mounting HubiC drive in GNU/Linux
 net-im/Quaternion 0.0.95.1 0.0.96_beta4: A Qt-based IM client for Matrix
