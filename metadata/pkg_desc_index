@@ -166,7 +166,7 @@ app-editors/lapce 0.3.1 9999: Lightning-fast and Powerful Code Editor written in
 app-editors/mined 2015.25: A powerful text editor with extensive Unicode and CJK support
 app-editors/neovim-qt 0.2.17-r1: Neovim client library and GUI, in Qt5
 app-editors/pulsar-bin 1.111.0 1.112.1: A Community-led Hyper-Hackable Text Editor
-app-editors/typora-bin 1.5.8: a markdown editor,markdown reader.
+app-editors/typora-bin 1.7.6: a markdown editor,markdown reader.
 app-emacs/idris-mode 1.0 9999: Idris syntax highlighting, compiler-supported editing, and interactive REPL
 app-emacs/prop-menu 0.1.2: Compute pop-up menus from text and overlay properties
 app-emacs/yc 5.2.1: Yet another Canna client on Emacsen
@@ -265,7 +265,7 @@ app-misc/watchexec 1.21.1 1.22.3 1.23.0 1.24.0 1.24.1 1.24.2: Executes commands 
 app-misc/wego 2.2: Wego is a weather client for the terminal
 app-misc/xplr 0.21.3: A hackable, minimal, fast TUI file explorer
 app-misc/yaf 0.0.3: Yet another system fetch that is minimal and customizable.
-app-misc/yazi 0.1.4: Blazing fast terminal file manager written in Rust, based on async I/O.
+app-misc/yazi 0.1.4 0.1.5: Blazing fast terminal file manager written in Rust, based on async I/O.
 app-misc/zcock 0.1.0: Print an emoji according to traditional chinese calendar and more
 app-mobilephone/flashlight 0.1.1-r2: It's a flashlight, what do you expect?
 app-mobilephone/mobile-config-firefox 2.1.0: Mobile and privacy friendly configuration for Firefox
@@ -697,7 +697,7 @@ dev-libs/luksmeta 9: LUKSMeta is a simple library for storing metadata in the LU
 dev-libs/memkind 1.13.0: user extensible heap manager built on top of jemalloc
 dev-libs/monero-seed 0.1.0: 14-word mnemonic seed for Monero
 dev-libs/mtxclient 0.9.1 0.9.2: Client API library for Matrix, built on top of libcurl
-dev-libs/nativefiledialog-extended 1.1.1: File dialog library with C and C++ bindings, based on nativefiledialog
+dev-libs/nativefiledialog-extended 1.1.1-r1: File dialog library with C and C++ bindings, based on nativefiledialog
 dev-libs/octetos-biblion 0.1.1_alpha: Library for reading biblia.
 dev-libs/octetos-core 2.15.0_beta 2.20.0_beta 2.25.0_beta 2.25.1_beta 2.31.2_beta 2.31.3_beta 2.31.5_beta 2.32.0_beta: C/C++ library to mainly provide Semantic Versioned implementation
 dev-libs/octetos-coreutils 0.11.1_alpha 0.13.0_alpha 0.17.0_alpha: Similar to coreutils but is a C++ API.
@@ -1044,7 +1044,7 @@ dev-python/marshmallow_enum 1.5.1: Enum handling for Marshmallow
 dev-python/mastodon-py 1.8.0 1.8.1: Python wrapper for the Mastodon API
 dev-python/material-color-utilities 0.1.5 9999: Python port of material-color-utilities used for Material You colors
 dev-python/mautrix 0.20.2 0.20.3: A Python 3 asyncio Matrix framework
-dev-python/minio 7.1.17 7.2.0: MinIO Client SDK for Python
+dev-python/minio 7.2.0 7.2.2: MinIO Client SDK for Python
 dev-python/mitype 0.2.4: Typing speed test in terminal
 dev-python/mkdocs-blog-plugin 9999: Plugin for MkDocs to keep a simple blog section inside your documentation.
 dev-python/mkdocs-exclude 1.0.2-r1: Lets you exclude files or trees from your output
@@ -1091,7 +1091,7 @@ dev-python/py-nanoid 9999: Python Nanoid
 dev-python/pyagentx 0.4: Python AgentX Implementation
 dev-python/pybrowserstack-screenshots 0.1-r1: A python api wrapper and client for Browserstack Screenshots API
 dev-python/pyclip 0.5.4 0.6.0 0.7.0 9999: Python clipboard module
-dev-python/pycpio 0.6.1 0.7.0: Python CPIO library
+dev-python/pycpio 0.8.0: Python CPIO library
 dev-python/pydispatcher 2.0.7: Multi-producer-multi-consumer signal dispatching mechanism
 dev-python/pydub 0.25.1: Manipulate audio with an simple and easy high level interface
 dev-python/pyfiglet 0.8_p1: Pure-python FIGlet implementation
@@ -1134,6 +1134,7 @@ dev-python/pytest-syrupy 4.0.0: The sweeter pytest snapshot plugin
 dev-python/pytest-vcr 1.0.2: Plugin for managing VCR.py cassettes
 dev-python/python-fire 0.4.0 0.5.0: Library for automatically generating command line interfaces from Python objects
 dev-python/python-http-client 3.3.5: HTTP REST client, simplified for Python
+dev-python/python-lsp-isort 0.1: isort plugin for the Python LSP Server
 dev-python/python-lsp-mypy 0.6.8: Mypy plugin for the Python LSP Server
 dev-python/python-olm 3.2.15 3.2.16: Python bindings for dev-libs/olm
 dev-python/python-pidfile 3.0.0-r1 3.1.1: PIDFile context processor. Supported py2 and py3
@@ -1236,7 +1237,7 @@ dev-python/xunitparser 1.3.4: Read JUnit/XUnit XML files and map them to Python 
 dev-python/yams 0.7.3 9999: Yet Another MPD Scrobbler (for Last.FM)
 dev-python/yaql 2.0.0: YAQL: Yet Another Query Language
 dev-python/youseedee 0.3.0 0.4.1: Interface to the Unicode Character Database
-dev-python/zenlib 1.2.0-r1 1.3.1: Useful python decorators and utilities
+dev-python/zenlib 1.2.0-r1 1.3.1 1.4.0: Useful python decorators and utilities
 dev-python/zodb 5.8.0-r1 5.8.1: Python object-oriented database
 dev-python/zodbpickle 3.0.1-r1 3.1: Fork of Python's pickle module to work with ZODB
 dev-python/zope-cachedescriptors 5.0: Python descriptors which cache their output
@@ -2014,7 +2015,7 @@ sys-kernel/modprobed-db 2.46: This utility tracks modules loaded by the kernel, 
 sys-kernel/msr-safe 1.6.0: Allows safer access to model specific registers (MSRs)
 sys-kernel/tirdad 0_pre20200926: kernel module for random ISN generation
 sys-kernel/uek-sources 5.15.0.5.70.1 5.15.0.6.80.3 5.15.0.8.91.3 5.15.0.105.125.4 5.15.0.201.135.2 5.15.0.201.135.4 5.15.0.202.135.1: Unbreakable Enterprise Kernel (UEK) sources built from Oracle
-sys-kernel/ugrd 0.12.1-r1 0.19.1: Python based initramfs generator with TOML defintions
+sys-kernel/ugrd 0.12.1-r1 0.19.1 0.19.3: Python based initramfs generator with TOML defintions
 sys-kernel/usermode-kernel 6.0.12: Linux kernel built with Gentoo patches
 sys-kernel/xow 0.5: Linux driver for the Xbox One wireless dongle
 sys-kernel/xpmem 2.6.5_p20210809: Linux Cross-Memory Attach
@@ -2073,7 +2074,7 @@ www-client/browsh 1.8.2: A fully-modern text-based browser, rendering to TTY and
 www-client/nyxt 3.8.0 3.9.0 9999: Nyxt - the hacker's power-browser
 www-client/vimb 3.6.0 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
 www-client/woob 3.1-r1 9999: Web Outside Of Browsers (core, site modules and applications)
-www-client/yandex-browser 23.9.1.962_p1: The web browser from Yandex
+www-client/yandex-browser 23.11.1.714_p1: The web browser from Yandex
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits
 www-misc/gorss 0.3: Go Terminal Feed Reader
 www-misc/waldl 0.0.1_pre20211112: Browse and download wallpapers from wallhaven.cc using sxiv
