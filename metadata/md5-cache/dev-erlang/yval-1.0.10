@@ -1,0 +1,15 @@
+BDEPEND=dev-util/rebar:3 >=sys-apps/gawk-4.1
+DEFINED_PHASES=compile install prepare test
+DEPEND=>=dev-lang/erlang-21 dev-lang/erlang:=
+DESCRIPTION=YAML validator
+EAPI=8
+HOMEPAGE=https://github.com/processone/yval
+INHERIT=rebar3
+KEYWORDS=~amd64
+LICENSE=Apache-2.0
+RDEPEND=>=dev-lang/erlang-21 dev-lang/erlang:=
+RESTRICT=test
+SLOT=0
+SRC_URI=https://github.com/processone/yval/archive/refs/tags/1.0.10.tar.gz -> yval-1.0.10.tar.gz
+_eclasses_=edo	c0eb9cbe6b0bd01fcb4918f12598a4d3	rebar3	78aaea82431aba85a8e5e47210967fae
+_md5_=569f20b69f1fae5f036e002a63463b51

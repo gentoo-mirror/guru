@@ -37,6 +37,7 @@ acct-user/_rpki-client 0: User for rpki-client
 acct-user/blocky 0: A user for net-dns/blocky
 acct-user/canna 0: User for Canna language server
 acct-user/conduit 0: User for conduit
+acct-user/eturnal 0: System user: eturnal
 acct-user/fedigroup 0: System user: fedigroup
 acct-user/fort 0-r1: User for FORT RPKI validator
 acct-user/gemini 0: System user: gemini
@@ -83,7 +84,7 @@ app-admin/customrescuecd-x86 0.4.1: A system rescue cd or usbstick for desktop a
 app-admin/customrescuecd-x86_64 0.12.7 0.12.8: A system rescue cd or usbstick for desktop and server based on gentoo
 app-admin/dotbot 1.20.1: A tool that bootstraps your dotfiles
 app-admin/enpass-desktop-bin 6.7.4.933: A cross-platform, complete password management solution
-app-admin/gentoo_update 0.2.2: Gentoo Linux updater
+app-admin/gentoo_update 0.2.3: Gentoo Linux updater
 app-admin/grub-customizer 5.1.0: A graphical grub2 settings manager
 app-admin/himitsu 0.3 0.4 9999: Secret storage system for Unix, suitable for storing passwords, keys, ...
 app-admin/himitsu-keyring 0.2.0: graphical frontend for managing a Himitsu key store
@@ -618,9 +619,11 @@ dev-embedded/mv88e6xxx-dump 0.2.0_pre20210327: Dump information about Marvell mv
 dev-embedded/qdl 1.0 9999: Tool to communicate with Qualcomm System On a Chip bootroms
 dev-embedded/rauc 1.10.1: Lightweight update client that runs on your Embedded Linux device
 dev-embedded/squareline-studio 1.3.2: Visual drag-and-drop UI editor for LVGL
+dev-erlang/conf 0.2.6: YAML configuration for Erlang applications
 dev-erlang/cowboy 2.9.0: Small, fast, modern HTTP server for Erlang/OTP.
 dev-erlang/cowlib 2.11.0: Support library for manipulating Web protocols.
 dev-erlang/ranch 1.7.1 1.8.0 2.0.0: Socket acceptor pool for TCP protocols.
+dev-erlang/yval 1.0.10: YAML validator
 dev-games/liblcf 0.7.0 0.8: Library to handle RPG Maker 2000/2003 and EasyRPG projects
 dev-games/surgescript 0.5.5 9999: scripting language made for opensurge
 dev-go/lichen 0.1.4 0.1.7: Go binary license checker
@@ -1464,6 +1467,7 @@ gui-apps/nwg-shell-config 0.5.28 0.5.29: nwg-shell configuration utility
 gui-apps/organicmaps 9999: Offline maps and navigation using OpenStreetMap data
 gui-apps/packettracer 8.2.0: Cisco's packet tracer
 gui-apps/paperde 0.1.1_p20210426 9999: Simple, sleek QT based DE for wayland using wayfire
+gui-apps/phosh-tour 0.28.0: Introduction to phosh on smartphones
 gui-apps/rofi-wayland 1.7.5 1.7.5-r1: A window switcher, run dialog and dmenu replacement
 gui-apps/satty 0.8.2 9999: A screenshot annotation tool inspired by Swappy and Flameshot.
 gui-apps/sfwbar 1.0_beta12 1.0_beta13: S* Floating Window Bar
@@ -1696,6 +1700,7 @@ net-im/chatterino 2.3.5-r3: Chat client for https://twitch.tv
 net-im/conduit 0.6.0 0.6.0-r1: A Matrix homeserver written in Rust
 net-im/discord-canary-bin 0.0.231: All-in-one voice and text chat
 net-im/discord-ptb-bin 0.0.29: All-in-one voice and text chat
+net-im/eturnal 1.12.0: STUN/TURN server
 net-im/gajim-plugins 9999: Plugins developed fro Gajim XMPP client
 net-im/go-sendxmpp 0.6.0 0.6.1: A little tool to send messages to an XMPP contact or MUC
 net-im/gtkcord4 0.0.11 0.0.16.1: A Gtk4 Discord client in Golang
@@ -1942,7 +1947,7 @@ sys-auth/pam-gnupg 0.3: Unlock GnuPG keys on login
 sys-block/partclone 0.3.20: Partition cloning tool
 sys-boot/customrescuecd-x86-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/customrescuecd-x86_64-grub 0.1: Grub menu entries for the .iso image of customrescuecd
-sys-boot/limine 4.20230503.0 4.20230514.0 4.20230529.0 4.20230530.0 4.20230606.0 4.20230615.0 5.20230811.0 5.20231103.0 5.20231103.0-r1 5.20231121.0 5.20231124.0: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
+sys-boot/limine 4.20230503.0 4.20230514.0 4.20230529.0 4.20230530.0 4.20230606.0 4.20230615.0 5.20230811.0 5.20231103.0 5.20231103.0-r1 5.20231121.0 5.20231124.0 6.20231227.0: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
 sys-boot/woeusb-ng 0.2.10: Create Windows installer USB from ISO (rewrite of WoeUSB)
 sys-boot/zfsbootmenu 1.12.0 2.2.0 2.2.1 2.2.2: ZFS bootloader for root-on-ZFS systems
 sys-cluster/AXL 0.5.0 0.7.0: AXL provides a common C interface to transfer files in an HPC storage hierarchy
@@ -2140,4 +2145,4 @@ x11-wm/berry 0.1.11 0.1.12: A byte-sized window manager written in C
 x11-wm/dk 1.7 9999: A list based tiling window manager in the vein of dwm, bspwm, and xmonad.
 x11-wm/i3-rounded 4.21.1: i3-gaps fork with rounded corners support.
 x11-wm/leftwm 0.4.2: A window manager for Adventurers
-x11-wm/phoc 0.13.1: Wlroots based Phone compositor
+x11-wm/phoc 0.13.1 0.33.0: Wayland compositor for mobile phones
