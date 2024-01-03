@@ -1,0 +1,14 @@
+BDEPEND=~gui-wm/hyprland-0.31.0 x11-libs/libdrm x11-libs/pixman x11-libs/xcb-util-wm >=dev-util/meson-1.2.1 app-alternatives/ninja dev-util/meson-format-array
+DEFINED_PHASES=compile configure install postinst test
+DEPEND=gui-wm/hyprland
+DESCRIPTION=A small plugin to provide awesome/dwm-like behavior with workspaces
+EAPI=8
+HOMEPAGE=https://github.com/Duckonaut/split-monitor-workspaces
+INHERIT=meson
+KEYWORDS=~amd64
+LICENSE=BSD
+RDEPEND=gui-wm/hyprland
+SLOT=0
+SRC_URI=https://github.com/Duckonaut/split-monitor-workspaces/archive/2b1abdbf9e9de9ee660540167c8f51903fa3d959.tar.gz -> hyprland-split-monitor-workspaces-0.31.0.gh.tar.gz
+_eclasses_=multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	c8951c1dfcc1d43e3f967f61fd0ec59c	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	474cb53a7d1b62721a91809a1d702661	meson	576e6bbef90e9753368f8b4ad0bd5383
+_md5_=bce1c7a942e2107f376f1315c3891b0d

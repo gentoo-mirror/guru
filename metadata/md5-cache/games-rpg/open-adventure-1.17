@@ -1,0 +1,17 @@
+BDEPEND=|| ( ( dev-lang/python:3.12 dev-python/pyyaml[python_targets_python3_12(-)] ) ( dev-lang/python:3.11 dev-python/pyyaml[python_targets_python3_11(-)] ) ( dev-lang/python:3.10 dev-python/pyyaml[python_targets_python3_10(-)] ) )
+DEFINED_PHASES=compile install prepare setup test
+DEPEND=dev-libs/libedit
+DESCRIPTION=Forward-port of the Crowther/Woods Adventure 2.5
+EAPI=8
+HOMEPAGE=http://www.catb.org/~esr/open-adventure/
+INHERIT=desktop flag-o-matic python-any-r1
+IUSE=autosave nosave test
+KEYWORDS=~amd64
+LICENSE=BSD-2
+RDEPEND=dev-libs/libedit
+REQUIRED_USE=?? ( autosave nosave ) test? ( !autosave !nosave )
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://gitlab.com/esr/open-adventure/-/archive/1.17/open-adventure-1.17.tar.bz2
+_eclasses_=desktop	021728fdc1b03b36357dbc89489e0f0d	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	78cf3cc2d5572fddf5e5e10c70f7c81a	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	python-utils-r1	474cb53a7d1b62721a91809a1d702661	python-any-r1	f5169813d1619761b459800587005fd2
+_md5_=b7e298d26e0ee77c5c9c3faaa47a73b7

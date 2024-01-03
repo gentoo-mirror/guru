@@ -114,7 +114,7 @@ app-backup/b2 3.4.0 3.9.0: Command-line tool for BackBlaze's B2 product
 app-backup/grub-btrfs 4.11-r1 4.12 4.13 9999: Improves Grub by adding btrfs snapshots to the Grub menu.
 app-backup/kopia 0.15.0: Kopia - Fast And Secure Open-Source Backup
 app-backup/kopia-ui-bin 0.15.0-r1: Kopia - Fast And Secure Open-Source Backup (Electron UI)
-app-backup/pika-backup 0.6.1 0.6.2: Keep your data safe
+app-backup/pika-backup 0.6.2: Keep your data safe
 app-backup/timeshift 21.09.1-r3 22.06.5-r2 22.11.1-r1 23.07.1: A system restore utility for Linux
 app-backup/timeshift-autosnap 0.9: Automatically creates a timeshift-snapshot when executed
 app-benchmarks/kdiskmark 3.1.4: Disk benchmarking tool
@@ -232,6 +232,7 @@ app-misc/kloak 0.2.30: A privacy tool that makes keystroke biometrics less effec
 app-misc/kmon 1.6.4: Linux kernel manager and activity monitor
 app-misc/ledger-live 2.64.1 2.66.0 2.68.1 2.71.1 2.73.0: Manager for the Ledger hardware wallet
 app-misc/lf 27 28-r1 29 30 31: Terminal file manager
+app-misc/lyfetch 1.1: Small system information script for linux systems.
 app-misc/macchina 6.1.8 6.1.8-r1: A system information fetcher, with an (unhealthy) emphasis on performance.
 app-misc/mangadesk 0.7.7 0.7.8: Terminal Client for MangaDex
 app-misc/mat2 0.13.3 0.13.4: Metadata Anonymisation Toolkit: handy tool to trash your metadata
@@ -265,7 +266,7 @@ app-misc/uwufetch 2.0 2.1: A meme system info tool for Linux
 app-misc/vocabsieve 0.11.0: A simple, effective tool for language learning
 app-misc/vrms-gentoo 0_pre20201102: vrms clone for Gentoo Linux
 app-misc/walld 1.4.4: A Wallpaper daemon
-app-misc/watchexec 1.21.1 1.22.3 1.23.0 1.24.0 1.24.1 1.24.2: Executes commands in response to file modifications
+app-misc/watchexec 1.23.0 1.24.0 1.24.1 1.24.2 1.25.0: Executes commands in response to file modifications
 app-misc/wego 2.2: Wego is a weather client for the terminal
 app-misc/xplr 0.21.3: A hackable, minimal, fast TUI file explorer
 app-misc/yaf 0.0.3: Yet another system fetch that is minimal and customizable.
@@ -283,7 +284,7 @@ app-office/khronos 4.0.0 4.0.1: A GTK4 time tracker for tasks
 app-office/lotus123r3 1.0.0_rc4: A native port of Lotus 1-2-3 to Linux.
 app-office/nixnote-bin 2.1.10 9999: Free and open source note taking app, compatible with Evernote sync server
 app-office/notesnook-bin 2.6.12: End-to-end encrypted note taking alternative to Evernote
-app-office/obsidian 1.3.5 1.4.16: A second brain, for you, forever.
+app-office/obsidian 1.4.16-r1 1.5.3: A second brain, for you, forever.
 app-office/openoffice-bin 4.1.14: Apache OpenOffice productivity suite
 app-office/pyspread 2.1.1: Pyspread is a non-traditional spreadsheet written in Python
 app-office/standartnotes-bin 3.183.22: End-to-end encrypted note-taking app, alternative to Evernote
@@ -1049,7 +1050,7 @@ dev-python/marshmallow_enum 1.5.1: Enum handling for Marshmallow
 dev-python/mastodon-py 1.8.0 1.8.1: Python wrapper for the Mastodon API
 dev-python/material-color-utilities 0.1.5 9999: Python port of material-color-utilities used for Material You colors
 dev-python/mautrix 0.20.2 0.20.3: A Python 3 asyncio Matrix framework
-dev-python/minio 7.2.0 7.2.2: MinIO Client SDK for Python
+dev-python/minio 7.2.2 7.2.3: MinIO Client SDK for Python
 dev-python/mitype 0.2.4: Typing speed test in terminal
 dev-python/mkdocs-blog-plugin 9999: Plugin for MkDocs to keep a simple blog section inside your documentation.
 dev-python/mkdocs-exclude 1.0.2-r1: Lets you exclude files or trees from your output
@@ -1381,7 +1382,7 @@ games-puzzle/generic-tetromino-game 9999: Faithful clone of NES Tetris but with 
 games-puzzle/krank 8: Little casual game
 games-puzzle/superflu-riteurnz 1.5.5: Artisanal video-game about Superflu, the useless super-hero
 games-puzzle/superflu-riteurnz-data 12: Artisanal video-game about Superflu, the useless super-hero (data files)
-games-rpg/open-adventure 1.16: Forward-port of the Crowther/Woods Adventure 2.5
+games-rpg/open-adventure 1.16 1.17: Forward-port of the Crowther/Woods Adventure 2.5
 games-rpg/snoot-game 1.8 1.8-r1: Visual novel parody of Goodbye Volcano High
 games-server/among-sus 20210519: Among Us, but it's a text adventure
 games-util/HeroicGamesLauncher-bin 2.9.2 2.10.0: A Native GOG and Epic Games Launcher for Linux, Windows and Mac.
@@ -1445,7 +1446,8 @@ gui-apps/grimshot 9999: A helper for screenshots within sway
 gui-apps/gtklock 2.0.1 2.1.0: GTK-based lockscreen for Wayland
 gui-apps/gtklock-extras 9999: Gtklock modules
 gui-apps/hiprompt-gtk-py 0_pre20220624 9999: GTK+ Himitsu prompter for Wayland
-gui-apps/hyprland-plugins 0.31.0 0.32.3: A blazing fast wayland wallpaper utility
+gui-apps/hyprland-plugins 0.31.0-r1 0.32.3-r1 9999: A blazing fast wayland wallpaper utility
+gui-apps/hyprland-split-monitor-workspaces 0.31.0 0.32.3 9999: A small plugin to provide awesome/dwm-like behavior with workspaces
 gui-apps/hyprpaper 0.4.0 0.5.0: A blazing fast wayland wallpaper utility
 gui-apps/hyprpicker 0.1.1 0.2.0: A wlroots-compatible Wayland color picker that does not suck
 gui-apps/intiface-central-bin 2.5.0 2.5.3: Buttplug frontend application
@@ -1470,7 +1472,7 @@ gui-apps/paperde 0.1.1_p20210426 9999: Simple, sleek QT based DE for wayland usi
 gui-apps/phosh-tour 0.28.0: Introduction to phosh on smartphones
 gui-apps/rofi-wayland 1.7.5 1.7.5-r1: A window switcher, run dialog and dmenu replacement
 gui-apps/satty 0.8.2 9999: A screenshot annotation tool inspired by Swappy and Flameshot.
-gui-apps/sfwbar 1.0_beta12 1.0_beta13: S* Floating Window Bar
+gui-apps/sfwbar 1.0_beta12 1.0_beta13 1.0_beta14: S* Floating Window Bar
 gui-apps/showmethekey 1.11.1 1.12.0: Show keys you typed on screen.
 gui-apps/somebar 1.0.0 1.0.3 9999: dwm-like bar for dwl
 gui-apps/someblocks 1.0.0 1.0.1 9999: Modular status bar for somebar written in c.
@@ -1508,9 +1510,9 @@ gui-libs/libcsys 4.2.0 9999: Library for managing the device
 gui-libs/libdecor 0.1.1 9999: A client-side decorations library for Wayland clients
 gui-libs/text-engine 0.1.1-r2 9999: A lightweight rich-text framework for GTK 4
 gui-libs/webp-pixbuf-loader 0.0.1: WebP Image format GdkPixbuf loader
-gui-libs/xdg-desktop-portal-hyprland 1.1.0 1.2.2-r1 1.2.5-r1 1.2.6: xdg-desktop-portal backend for hyprland
+gui-libs/xdg-desktop-portal-hyprland 1.1.0-r1 1.2.2-r2 1.2.5-r2 1.2.6-r1 9999: xdg-desktop-portal backend for hyprland
 gui-wm/cage 0.1.5 9999: A Wayland kiosk
-gui-wm/hyprland-contrib 0.1: Community-maintained extensions for hyprland
+gui-wm/hyprland-contrib 0.1-r1 9999: Community-maintained extensions for hyprland
 gui-wm/phosh 0.17.0: A pure Wayland shell prototype for GNOME on mobile devices
 gui-wm/swayfx 0.2 0.3: SwayFX: Sway, but with eye candy!
 kde-apps/kwalletcli 3.03: CLI for the KDE Wallet
@@ -1649,7 +1651,7 @@ media-video/mediaelch 2.10.4 2.10.6 9999: Video metadata scraper
 media-video/megapixels 1.4.3: A GTK3 camera application that knows how to deal with the media request api
 media-video/mpc-qt 23.02: Media Player Classic Qute Theater
 media-video/obs-multi-rtmp 0.5.0.4 9999: OBS Simulcast support plugin
-media-video/obs-streamfx 0.12.0 9999: OBS® Studio plugin which adds many new effects.
+media-video/obs-streamfx 0.12.0.9999 9999: OBS® Studio plugin which adds many new effects.
 media-video/obs-vaapi 0.4.1 9999: OBS Studio VAAPI support via GStreamer
 media-video/obs-vkcapture 1.4.5 9999: OBS Linux Vulkan/OpenGL game capture
 media-video/olive 9999: Free open-source non-linear video editor
@@ -1793,7 +1795,7 @@ net-nntp/inn 2.7.1: InterNetNews - the Internet meets Netnews
 net-nntp/pan 0.154-r1 0.155: A newsreader for GNOME
 net-p2p/bisq-bin 1.9.14: The decentralized bitcoin exchange (non-atomic, with arbitration)
 net-p2p/dogecoin-qt 1.14.6: Dogecoin Core Qt for desktop. Downloaded blockchain is under 2.2GB. Much secure.
-net-p2p/feather 2.4.9-r1 2.5.1 2.5.2 2.6.0 2.6.1 9999: A free, open-source Monero wallet
+net-p2p/feather 2.6.2 9999: A free, open-source Monero wallet
 net-p2p/fragments 2.1-r1 2.1.1: Fragments is an easy to use BitTorrent client
 net-p2p/ipfs-cluster 1.0.1 1.0.2: Pinset orchestration for IPFS
 net-p2p/monero 0.17.2.0 0.17.2.3 0.17.3.0 0.17.3.2 0.18.1.0 0.18.1.1 0.18.1.2 0.18.2.0 0.18.2.2 0.18.3.1 9999: The secure, private, untraceable cryptocurrency
@@ -1923,7 +1925,7 @@ sys-apps/dool 1.1.0 9999: Versatile replacement for vmstat, iostat and ifstat (c
 sys-apps/drm_info 2.2.0 2.3.0 9999: Small utility to dump info about DRM devices
 sys-apps/fchroot 0.1.2: Funtoo's franken-chroot tool - chroot from AMD64 to ARM system
 sys-apps/fselect 0.8.5: Find files with SQL-like queries
-sys-apps/hex 0.3.2 0.4.2 0.5.0: Futuristic take on hexdump
+sys-apps/hex 0.4.2 0.5.0 0.6.0: Futuristic take on hexdump
 sys-apps/intel-cmt-cat 4.4.0: User space software for Intel(R) Resource Director Technology
 sys-apps/lact 0.5.0 0.5.1: Linux AMDGPU Controller
 sys-apps/loclone 0.1.0: A tool for creating CoW snapshots on XFS
@@ -2010,7 +2012,7 @@ sys-fs/btrfs-heatmap 9-r1: Python 3 script to draw a heatmap of a btrfs filesyst
 sys-fs/ddrescueview 0.4.5: Graphical viewer for GNU ddrescue mapfiles
 sys-fs/diskonaut 0.10.0 0.11.0 9999: Terminal disk space visual navigator
 sys-fs/dua-cli 2.20.3 2.23.0: A tool to conveniently learn about the disk usage of directories, fast!
-sys-fs/dwarfs 0.7.2-r1: A fast very high compression read-only FUSE file system
+sys-fs/dwarfs 0.7.2-r1 0.7.4: A fast very high compression read-only FUSE file system
 sys-fs/dwarfs-bin 0.7.2: Static version of a fast very high compression read-only FUSE file system
 sys-fs/gcsfuse 1.2.0: A user-space file system for interacting with Google Cloud Storage
 sys-fs/gdu 5.14.0 5.25.0: Disk usage analyzer with console interface written in Go
@@ -2092,7 +2094,7 @@ www-plugins/firefoxpwa 2.7.3 2.8.0 2.9.0 2.9.0-r1 2.9.1: A tool to install, mana
 www-plugins/yandex-browser-ffmpeg-codecs-bin 112.0.5615.49: Multi-threaded ffmpeg codecs needed for the HTML5 <audio> and <video> tags
 www-servers/hinsightd 0.9.17 9999: hinsightd a http/1.1 webserver with (hopefully) minimal goals
 www-servers/quark 9999: A small, GET-only static HTTP server
-x11-apps/lightdm-gtk-greeter-settings 1.2.2-r1: Configuration tool for the LightDM GTK Greeter
+x11-apps/lightdm-gtk-greeter-settings 1.2.2-r2: Configuration tool for the LightDM GTK Greeter
 x11-apps/xcur2png 0.7.1 0.7.1-r1: Convert X cursors to PNG images
 x11-drivers/OpenTabletDriver 0.6.3.0 0.6.4.0: A cross-platform open-source tablet driver
 x11-drivers/OpenTabletDriver-bin 0.6.3.0: Cross platform tablet driver (binary package)
