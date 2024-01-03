@@ -1,12 +1,13 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 inherit cmake desktop xdg
 
+#TODO: Verify feather-${PV}.tar.gz with https://github.com/feather-wallet/feather-sigs
 SINGLEAPPLICATION_DIST_COMIT="3e8e85d1a487e433751711a8a090659684d42e3b"
-MONERO_DIST_COMIT="db1ac578a16e678f0778fb37001921f93704f0ed"
+MONERO_DIST_COMIT="34aacb1b49553f17b9bb7ca1ee6dfb6524aada55"
 	MINIUPNP_DIST_COMIT="544e6fcc73c5ad9af48a8985c94f0f1d742ef2e0"
 	RANDOMX_DIST_COMIT="261d58c77fc5547c0aa7fdfeb58421ba7e0e6e1c"
 	RAPIDJSON_DIST_COMIT="129d19ba7f496df5e33658527a7158c79b99c21c"
@@ -38,8 +39,7 @@ ${PF}-monero-trezorcommon.tar.gz
 LICENSE="BSD MIT"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="qrcode xmrig localmonero"
-
+IUSE="qrcode home tickers crowdfunding bounties reddit revuo calc exchange xmrig localmonero"
 DEPEND="
 	dev-libs/libsodium:=
 	media-gfx/qrencode:=
@@ -47,27 +47,25 @@ DEPEND="
 	~dev-libs/polyseed-1.0.0
 	dev-libs/libzip:=
 	dev-libs/boost:=[nls]
-	>=dev-qt/qtcore-5.15:5
-	>=dev-qt/qtwidgets-5.15:5
-	>=dev-qt/qtgui-5.15:5
-	>=dev-qt/qtnetwork-5.15:5
-	>=dev-qt/qtsvg-5.15:5
-	>=dev-qt/qtxml-5.15:5
-	>=dev-qt/qtwebsockets-5.15:5
-	>=dev-qt/qtmultimedia-5.15:5[widgets]
-	>=dev-qt/qtconcurrent-5.15:5
+	>=dev-qt/qtbase-6.5.2:6
+	>=dev-qt/qtsvg-6.5.2:6
+	>=dev-qt/qtmultimedia-6.5.2:6
+	>=dev-qt/qtwebsockets-6.5.2:6
 	dev-libs/libgcrypt:=
 	sys-libs/zlib
 	dev-libs/openssl:=
 	net-dns/unbound:=[threads]
 	net-libs/czmq:=
+	qrcode? ( media-libs/zxing-cpp )
 "
 RDEPEND="
 	${DEPEND}
 	net-vpn/tor
 	xmrig? ( net-misc/xmrig )
 "
-BDEPEND="virtual/pkgconfig"
+BDEPEND="
+	virtual/pkgconfig
+"
 
 src_unpack() {
 	unpack ${PF}.tar.gz \
@@ -109,8 +107,16 @@ src_configure() {
 		-DBUILD_TAG="linux-x64"
 		-DBUILD_64=ON
 		-DSELF_CONTAINED=OFF
-		-DLOCALMONERO=$(usex localmonero)
-		-DXMRIG=$(usex xmrig)
+		-DWITH_PLUGIN_HOME=$(usex home)
+		-DWITH_PLUGIN_TICKERS=$(usex tickers)
+		-DWITH_PLUGIN_CROWDFUNDING=$(usex crowdfunding)
+		-DWITH_PLUGIN_BOUNTIES=$(usex bounties)
+		-DWITH_PLUGIN_REDDIT=$(usex reddit)
+		-DWITH_PLUGIN_REVUO=$(usex revuo)
+		-DWITH_PLUGIN_CALC=$(usex calc)
+		-DWITH_PLUGIN_EXCHANGE=$(usex exchange)
+		-DWITH_PLUGIN_LOCALMONERO=$(usex localmonero)
+		-DWITH_PLUGIN_XMRIG=$(usex xmrig)
 		-DCHECK_UPDATES=OFF
 		-DPLATFORM_INSTALLER=OFF
 		-DUSE_DEVICE_TREZOR=OFF

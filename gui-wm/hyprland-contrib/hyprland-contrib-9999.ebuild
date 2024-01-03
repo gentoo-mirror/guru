@@ -7,12 +7,18 @@ inherit optfeature
 
 DESCRIPTION="Community-maintained extensions for hyprland"
 HOMEPAGE="https://hyprland.org/"
-SRC_URI="https://github.com/hyprwm/contrib/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
+if [[ ${PV} == 9999 ]]; then
+	EGIT_REPO_URI="https://github.com/hyprwm/contrib.git"
+	inherit git-r3
+else
+	SRC_URI="https://github.com/hyprwm/contrib/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
+	S="${WORKDIR}/contrib-${PV}"
+	KEYWORDS="~amd64"
+fi
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64"
-IUSE="+grimblast +hyprprop +scratchpad +shellevents +swap"
+IUSE="+grimblast +hyprprop +hdrop +scratchpad +shellevents +swap"
 
 RDEPEND="
 	app-shells/bash
@@ -45,7 +51,6 @@ BDEPEND="
 "
 DEPEND="${RDEPEND}"
 
-S="${WORKDIR}/contrib-${PV}"
 src_install() {
 	if use grimblast; then
 	   pushd grimblast || die
@@ -54,6 +59,12 @@ src_install() {
 	fi
 	if use hyprprop; then
 	   pushd hyprprop || die
+	   PREFIX="${D}/usr" emake install
+	   popd || die
+	fi
+	if use hdrop; then
+	   pushd hdrop || die
+	   PREFIX="${D}/usr" emake hdrop.1 #PR:80 will fix this
 	   PREFIX="${D}/usr" emake install
 	   popd || die
 	fi
@@ -75,7 +86,7 @@ src_install() {
 }
 
 pkg_postinst() {
-	if use grimblast || use hyprprop || use scratchpad || use swap; then
+	if use grimblast || use hyprprop || use hdrop || use scratchpad || use swap; then
 		optfeature "GUI notifications during dependency checks" x11-libs/libnotify
 	fi
 }

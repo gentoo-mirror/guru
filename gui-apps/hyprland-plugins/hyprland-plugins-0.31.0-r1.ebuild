@@ -5,22 +5,24 @@ EAPI=8
 
 inherit meson
 
-COMMIT=fadbcdd24b6f24b169056ed6fcf43d98ef405f87
-SPLITCOMMIT=9b40de35aeb8c62df3326eae7979b438f3ee0fb1
+if [[ ${PV} == 9999 ]]; then
+	EGIT_REPO_URI="https://github.com/hyprwm/${PN}.git"
+	inherit git-r3
+	S="${WORKDIR}/${PN}-${COMMIT}"
+else
+	COMMIT=2cc193e6dc524baed841c016109b4f48fd0512a3
+	SRC_URI="https://github.com/hyprwm/${PN}/archive/${COMMIT}.tar.gz -> ${P}.gh.tar.gz"
+	S="${WORKDIR}/${PN}-${COMMIT}"
+fi
+
 DESCRIPTION="A blazing fast wayland wallpaper utility"
 HOMEPAGE="https://github.com/hyprwm/hyprland-plugins"
-SRC_URI="https://github.com/hyprwm/${PN}/archive/${COMMIT}.tar.gz -> ${P}.gh.tar.gz
-	https://github.com/Duckonaut/split-monitor-workspaces/archive/${SPLITCOMMIT}.tar.gz \
-	-> ${P}-split-monitor-workspaces.gh.tar.gz
-"
-
-S="${WORKDIR}/${PN}-${COMMIT}"
 
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="+borders-plus-plus csgo-vulkan-fix +hyprbars split-monitor-workspaces"
-REQUIRED_USE="|| ( borders-plus-plus csgo-vulkan-fix hyprbars split-monitor-workspaces )"
+IUSE="+borders-plus-plus csgo-vulkan-fix +hyprbars"
+REQUIRED_USE="|| ( borders-plus-plus csgo-vulkan-fix hyprbars )"
 
 RDEPEND="gui-wm/hyprland"
 DEPEND="${RDEPEND}"
@@ -69,10 +71,6 @@ src_compile() {
 		EMESON_SOURCE="${S}/hyprbars"
 		meson_src_compile
 	fi
-
-	if use split-monitor-workspaces; then
-		emake -C "${WORKDIR}/split-monitor-workspaces-${SPLITCOMMIT}" split-monitor-workspaces.so
-	fi
 }
 
 src_install() {
@@ -88,10 +86,6 @@ src_install() {
 
 	if use hyprbars; then
 		newins "${WORKDIR}/${P}-build/hyprbars/libhyprbars.so" "hyprbars.so"
-	fi
-
-	if use split-monitor-workspaces; then
-		doins "${WORKDIR}/split-monitor-workspaces-${SPLITCOMMIT}/split-monitor-workspaces.so"
 	fi
 }
 
