@@ -8,7 +8,8 @@ inherit cmake git-r3 toolchain-funcs xdg
 DESCRIPTION="An emulator for Nintendo Switch"
 HOMEPAGE="https://yuzu-emu.org"
 EGIT_REPO_URI="https://github.com/yuzu-emu/yuzu-mainline"
-EGIT_SUBMODULES=( '-*' 'dynarmic' 'sirit' 'xbyak' 'tzdb_to_nx' 'externals/nx_tzdb/tzdb_to_nx/externals/tz/tz' 'VulkanMemoryAllocator' )
+EGIT_SUBMODULES=( '-*' 'dynarmic' 'sirit' 'xbyak' 'tzdb_to_nx'
+	              'externals/nx_tzdb/tzdb_to_nx/externals/tz/tz' 'VulkanMemoryAllocator' )
 # Dynarmic is not intended to be generic, it is tweaked to fit emulated processor
 # TODO wait 'xbyak' waiting version bump. see #860816
 
@@ -28,7 +29,7 @@ RDEPEND="
 	app-arch/lz4:=
 	dev-libs/boost:=[context]
 	media-libs/opus
-	media-libs/vulkan-loader
+	>=media-libs/vulkan-loader-1.3.274
 	sys-libs/zlib
 	virtual/libusb:1
 	cubeb? ( media-libs/cubeb )
@@ -48,12 +49,15 @@ RDEPEND="
 DEPEND="${RDEPEND}
 	dev-cpp/cpp-httplib
 	dev-cpp/cpp-jwt
-	system-vulkan? ( >=dev-util/vulkan-headers-1.3.250
-		dev-util/spirv-headers )
+	system-vulkan? ( >=dev-util/vulkan-headers-1.3.274
+		dev-util/spirv-headers
+		x11-libs/libX11
+	)
 	test? ( >dev-cpp/catch-3:0 )
 "
 BDEPEND="
 	>=dev-cpp/nlohmann_json-3.8.0
+	dev-cpp/simpleini
 	dev-cpp/robin-map
 	dev-util/glslang
 	discord? ( >=dev-libs/rapidjson-1.1.0 )
@@ -90,12 +94,6 @@ src_unpack() {
 src_prepare() {
 	# temporary fix
 	sed -i -e '/Werror/d' src/CMakeLists.txt || die
-
-	# Unbundle inih
-	sed -i -e '/^if.*inih/,/^endif()/d' externals/CMakeLists.txt || die
-	sed -i -e '1afind_package(PkgConfig REQUIRED)\npkg_check_modules(INIH REQUIRED INIReader)' \
-		src/yuzu_cmd/CMakeLists.txt || die
-	sed -i -e 's:inih/cpp/::' src/yuzu_cmd/config.cpp || die
 
 	# Unbundle mbedtls
 	sed -i -e '/mbedtls/d' -e '/^if (NOT MSVC)/,/endif()/d' externals/CMakeLists.txt || die
