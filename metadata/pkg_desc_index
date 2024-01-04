@@ -250,7 +250,7 @@ app-misc/onefetch 2.19.0: Command-line Git information tool
 app-misc/pfetch 0.6.0: A pretty system information tool written in POSIX sh
 app-misc/pipes-rs 1.6.2: An over-engineered rewrite of pipes.sh in Rust
 app-misc/powerpanel 1.4.1-r1: PowerPanel software for CyberPower UPS systems
-app-misc/pueue 3.3.2: A cli tool for managing long running shell commands.
+app-misc/pueue 3.3.2 3.3.3: A cli tool for managing long running shell commands.
 app-misc/pup 0.4.0_p1: Parsing HTML at the command line
 app-misc/rememberthemilk 1.3.11-r1: Freemium simple to-do tasks manager
 app-misc/s6-man 9999: mdoc versions of the HTML documentation for the s6 supervision suite
@@ -284,7 +284,7 @@ app-office/khronos 4.0.0 4.0.1: A GTK4 time tracker for tasks
 app-office/lotus123r3 1.0.0_rc4: A native port of Lotus 1-2-3 to Linux.
 app-office/nixnote-bin 2.1.10 9999: Free and open source note taking app, compatible with Evernote sync server
 app-office/notesnook-bin 2.6.12: End-to-end encrypted note taking alternative to Evernote
-app-office/obsidian 1.4.16-r1 1.5.3: A second brain, for you, forever.
+app-office/obsidian 1.4.16-r2 1.5.3-r1: A second brain, for you, forever.
 app-office/openoffice-bin 4.1.14: Apache OpenOffice productivity suite
 app-office/pyspread 2.1.1: Pyspread is a non-traditional spreadsheet written in Python
 app-office/standartnotes-bin 3.183.22: End-to-end encrypted note-taking app, alternative to Evernote
@@ -297,7 +297,7 @@ app-portage/quantum-resolver 9999: A WIP portage dependency resolver
 app-portage/showbuild 0.9.1-r1: Script to follow log of running portage builds
 app-portage/version 0.19.0_alpha 0.20.1_alpha 0.21.0_alpha: A command line function for package version management.
 app-shells/antibody 6.1.1-r1: Fast Zsh plugin manager
-app-shells/carapace 0.28.4 0.28.5: Multi-shell multi-command argument completer
+app-shells/carapace 0.28.5 0.29.0: Multi-shell multi-command argument completer
 app-shells/clownfish 0_pre20210117: fish shell mocks
 app-shells/direnv 2.32.3 9999: Environment variable manager for shell
 app-shells/fish-agnoster-theme 0.1.0_p20200415: Fancy, colorful theme with support for Powerline fonts
@@ -681,6 +681,7 @@ dev-libs/ftl 1.0_p20230220: The Fortran Template Library (FTL) is a general purp
 dev-libs/gbinder 1.1.30-r3 1.1.32 9999: GLib-style interface to binder
 dev-libs/gpds 1.6.0-r1 1.7.0-r1: A general purpose data serializer
 dev-libs/hts_engine 1.10: HMM-based speech synthesis system (HTS) engine and API
+dev-libs/hyprlang 0.2.1: Official implementation library for the hypr config language
 dev-libs/imsg-compat 6.8.2 9999: linux port of OpenBSD imsg
 dev-libs/ip2loc 8.1.4: IP2Location C Library
 dev-libs/jonquil 0.2.0: Jonquil: Bringing TOML blooms to JSON land
@@ -881,7 +882,6 @@ dev-perl/HTTP-Tiny-Multipart 0.08: Add post_multipart to HTTP::Tiny
 dev-perl/List-Compare 0.55: Compare elements of two or more lists
 dev-perl/Term-Animation 2.6: Animated ASCII Art support for Perl
 dev-php/pecl-inotify 3.0.0-r1: Inotify binding for PHP
-dev-python/BTrees 5.0-r1 5.1: scalable persistent components
 dev-python/DAWG-Python 0.7.2: Pure-python reader for DAWGs (DAFSAs) created by dawgdic C++ library.
 dev-python/EbookLib 0.17.1: Ebook library which can handle EPUB2/EPUB3 and Kindle format
 dev-python/ManimPango 0.4.3 0.5.0: Binding for Pango, to use with Manim.
@@ -1076,7 +1076,6 @@ dev-python/ots-python 8.2.1: A Python wrapper for OpenType Sanitizer
 dev-python/parsel 1.8.1: Utility to extract data from XML/HTML documents using XPath or CSS selectors
 dev-python/pem 21.2.0 23.1.0: Easy PEM file parsing in Python
 dev-python/persist-queue 0.8.0 0.8.1: A thread-safe disk based persistent queue in Python
-dev-python/persistent 5.1: automatic persistence for Python objects
 dev-python/pg8000 1.29.4: PostgreSQL interface library
 dev-python/phx-class-registry 3.0.5-r1 4.0.6: An intersection of the Registry and Factory pattern
 dev-python/pifpaf 3.1.5: Python fixtures and daemon managing tools for functional testing
@@ -1154,7 +1153,6 @@ dev-python/queuelib 1.6.2: Collection of persistent and non-persistent queues fo
 dev-python/rchitect 0.3.36: Interoperate R with Python
 dev-python/readability-lxml 0.6.1 0.8.1: fast html to text parser (article readability tool)
 dev-python/readmdict 0.1.1-r1: Read mdx/mdd files
-dev-python/repoze-sphinx-autointerface 1.0.0-r1: Auto-generate Sphinx API docs from Zope interfaces
 dev-python/restrictedpython 6.2 7.0: A restricted execution environment for Python to run untrusted code
 dev-python/rpmautospec-core 0.1.2: Core functionality used by rpmautospec
 dev-python/rst2ansi 0.1.5-r2: Render reStructuredText documents to the terminal
@@ -1207,7 +1205,6 @@ dev-python/textual 0.44.0: Modern Text User Interface framework
 dev-python/textual-dev 1.2.0: Modern Text User Interface framework
 dev-python/timeslot 0.1.2: Time slots/intervals with an arbitrary start and stop
 dev-python/trailrunner 1.2.1: Walk paths and run things
-dev-python/transaction 3.0.1-r1 3.1.0: Transaction management for Python
 dev-python/trueskill 0.4.5_p20220422: Python Implementation of the TrueSkill Algorithm
 dev-python/ttfautohint-py 0.5.1-r1: Python wrapper for ttfautohint, a free auto-hinter for TrueType fonts
 dev-python/tulir-telethon 1.33.0_alpha1 1.34.0_alpha2: Pure Python 3 MTProto API Telegram client library, for bots too!
@@ -1244,12 +1241,7 @@ dev-python/yams 0.7.3 9999: Yet Another MPD Scrobbler (for Last.FM)
 dev-python/yaql 2.0.0: YAQL: Yet Another Query Language
 dev-python/youseedee 0.3.0 0.4.1: Interface to the Unicode Character Database
 dev-python/zenlib 1.2.0-r1 1.3.1 1.4.0: Useful python decorators and utilities
-dev-python/zodb 5.8.0-r1 5.8.1: Python object-oriented database
-dev-python/zodbpickle 3.0.1-r1 3.1: Fork of Python's pickle module to work with ZODB
-dev-python/zope-cachedescriptors 5.0: Python descriptors which cache their output
-dev-python/zope-testrunner 6.2 6.2.1: This package provides a flexible test runner with layer support.
 dev-python/zopfli 0.2.2: Zopfli module for Python
-dev-python/zxcvbn 4.4.28-r1: Python implementation of Dropbox's realistic password strength estimator
 dev-ruby/asciidoctor-pdf 2.3.4: A native PDF converter for AsciiDoc based on Asciidoctor and Prawn
 dev-ruby/byebug 11.1.3: a Ruby 2 debugger
 dev-ruby/chruby 0.3.9-r3 9999: Changes the current Ruby
@@ -1448,7 +1440,7 @@ gui-apps/gtklock-extras 9999: Gtklock modules
 gui-apps/hiprompt-gtk-py 0_pre20220624 9999: GTK+ Himitsu prompter for Wayland
 gui-apps/hyprland-plugins 0.32.3-r1 9999: A blazing fast wayland wallpaper utility
 gui-apps/hyprland-split-monitor-workspaces 0.32.3 9999: A small plugin to provide awesome/dwm-like behavior with workspaces
-gui-apps/hyprpaper 0.4.0 0.5.0: A blazing fast wayland wallpaper utility
+gui-apps/hyprpaper 0.5.0 0.6.0: A blazing fast wayland wallpaper utility
 gui-apps/hyprpicker 0.1.1 0.2.0: A wlroots-compatible Wayland color picker that does not suck
 gui-apps/intiface-central-bin 2.5.0 2.5.3: Buttplug frontend application
 gui-apps/lemurs 0.3.1 0.3.1-r1 0.3.2: A TUI Display/Login Manager
@@ -1700,7 +1692,7 @@ net-im/abaddon 0.1.12-r1 0.1.13 9999: Alternative Discord client using GTK inste
 net-im/axolotl-bin 2.0.1: Axolotl is a cross-platform Signal client
 net-im/chatterino 2.3.5-r3: Chat client for https://twitch.tv
 net-im/conduit 0.6.0 0.6.0-r1: A Matrix homeserver written in Rust
-net-im/discord-canary-bin 0.0.231: All-in-one voice and text chat
+net-im/discord-canary-bin 0.0.233: All-in-one voice and text chat
 net-im/discord-ptb-bin 0.0.29: All-in-one voice and text chat
 net-im/eturnal 1.12.0: STUN/TURN server
 net-im/gajim-plugins 9999: Plugins developed fro Gajim XMPP client
@@ -2011,7 +2003,7 @@ sys-firmware/pinephone-firmware 20210809: Firmwares files for PinePhone
 sys-fs/btrfs-heatmap 9-r1: Python 3 script to draw a heatmap of a btrfs filesystem
 sys-fs/ddrescueview 0.4.5: Graphical viewer for GNU ddrescue mapfiles
 sys-fs/diskonaut 0.10.0 0.11.0 9999: Terminal disk space visual navigator
-sys-fs/dua-cli 2.20.3 2.23.0: A tool to conveniently learn about the disk usage of directories, fast!
+sys-fs/dua-cli 2.23.0 2.25.0: A tool to conveniently learn about the disk usage of directories, fast!
 sys-fs/dwarfs 0.7.2-r1 0.7.4: A fast very high compression read-only FUSE file system
 sys-fs/dwarfs-bin 0.7.2: Static version of a fast very high compression read-only FUSE file system
 sys-fs/gcsfuse 1.2.0: A user-space file system for interacting with Google Cloud Storage
