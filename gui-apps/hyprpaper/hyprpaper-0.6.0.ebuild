@@ -1,4 +1,4 @@
-# Copyright 2023 Gentoo Authors
+# Copyright 2023-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -18,8 +18,14 @@ BDEPEND="
 	dev-libs/wayland-protocols
 	dev-util/cmake
 	dev-util/wayland-scanner
+	dev-vcs/git
+"
+RDEPEND="
+	dev-libs/hyprlang
+	gui-libs/wlroots
 	media-libs/libglvnd
 	media-libs/libjpeg-turbo
+	media-libs/libwebp
 	x11-libs/cairo
 	x11-libs/pango
 "

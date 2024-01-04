@@ -29,7 +29,7 @@ src_compile() {
 src_install() {
 	dobin "cmd/${PN}/${PN}"
 	mv "docs/src" "docs/book" || die
-	rm -r "docs/book/changelog" || die
+	rm -r "docs/book/release_notes" || die
 	dodoc "README.md"
 	dodoc -r "docs/book"
 }
