@@ -8,6 +8,7 @@ app-accessibility/rhvoice:speech-dispatcher - Build a speech-dispatcher middlewa
 app-admin/krapplet:pass - Add support for pass compatible storage
 app-admin/zenmonitor3:cli - Build zenmonitor-cli
 app-arch/7zip:asm - Use dev-lang/jwasm to include optimized code
+app-backup/blocksync-fast:xxhash - Enable dev-libs/xxhash support for very high speed hashing
 app-backup/kopia-ui-bin:system-kopia - Use the system-wide app-backup/kopia instead of bundled.
 app-crypt/clevis:luks - Enable LUKS support
 app-crypt/clevis:tpm - Enable TPM support
@@ -52,6 +53,7 @@ app-misc/clifm:qsort - Use Alexey Tourbin's faster qsort implementation
 app-misc/clifm:suggestions - Autosuggestion support
 app-misc/clifm:tags - Built-in file tagging system support
 app-misc/clifm:trash - FreeDesktop compliant trash system support
+app-misc/clifm:xdu - Use a home-made implementation of du(1) instead
 app-misc/clipboard:lto - Enable Link Time Optimization (LTO)
 app-misc/dbf:doc - build manpages
 app-misc/far2l:archive - Multiarc extended archives support
@@ -251,8 +253,6 @@ dev-util/stylua:lua54 - Build for Lua 5.4
 dev-util/stylua:luau - Build for Luau
 dev-util/vala-language-server:debug_mem - 
 dev-util/vala-language-server:plugins - 
-dev-vcs/gitui:nerdfonts - Use nerd-fonts icons
-dev-vcs/gitui:trace - Enable libgit tracing
 games-action/ddnet:antibot - Enable support for a dynamic anticheat library.
 games-action/ddnet:autoupdate - Enable the autoupdater.
 games-action/ddnet:client - Enable client compilation.
@@ -380,10 +380,8 @@ games-util/samrewritten:zenity - Support for dialog display messages
 games-util/xivlauncher:aria2 - Enable Aria2 support.
 games-util/xivlauncher:libsecret - Enable secrets/password storage support.
 gnome-extra/yad:spell - Enable spell check support with app-text/gspell
-gui-apps/ReGreet:cage - Use cage to start ReGreet
 gui-apps/ReGreet:gtk4 - Compile with support for gtk4
 gui-apps/ReGreet:logs - Compile logs support ReGreet (debug)
-gui-apps/ReGreet:sway - Use sway to start ReGreet
 gui-apps/coreapps-meta:location - Enable location discovery
 gui-apps/coretoppings:location - Enable location discovery
 gui-apps/fuzzel:cairo - Required for rounded corners and SVG icons
@@ -476,6 +474,7 @@ media-gfx/bonzomatic:system-stb - Use the systems installed version of STB (upst
 media-gfx/bonzomatic:wayland - Build non-system-glfw for wayland instead of X11
 media-gfx/grafx2:ttf - Install TTF Fonts
 media-gfx/nsxiv:statusbar - Add statusbar support
+media-gfx/swayimg:exr - Enable support for EXR image format
 media-gfx/swayimg:jpegxl - Enable support for JPEG XL image format
 media-gfx/vpuppr:ifm-tracker - Enable the iFacialMocap tracker.
 media-gfx/vpuppr:meowface-tracker - Enable the MeowFace tracker.
@@ -567,6 +566,7 @@ net-analyzer/munin-contrib:templates - contrib munin tools
 net-analyzer/munin-contrib:tools - munin contrib tools
 net-client/lagrange:harfbuzz - Use media-libs/harfbuzz to shape text
 net-client/telescope:libbsd - Use dev-libs/libbsd instead of internal funcs
+net-dialup/minimodem:sndio - Enable support for the media-sound/sndio backend
 net-im/Quaternion:keychain - Enable support for password storage via dev-libs/qtkeychain
 net-im/abaddon:libhandy - Support for features using gui-libs/libhandy
 net-im/abaddon:qrcodegen - Support for login through QR Code feature using dev-libs/qrcodegen
@@ -613,6 +613,7 @@ net-misc/megasync:freeimage - Use freeimage to manage graphic images format.
 net-misc/megasync:nautilus - Upload your files to your Mega account from nautilus.
 net-misc/megasync:nemo - Upload your files to your Mega account from Nemo.
 net-misc/megasync:thunar - Upload your files to your Mega account from Thunar.
+net-misc/sunshine:libdrm - Enable KMS grab
 net-misc/xmrig-mo:donate - Set the default donation level to 1% instead of 0
 net-misc/xmrig-mo:hwloc - Use sys-apps/hwloc for CPU affinity support
 net-misc/xmrig-mo:opencl - Enable OpenCL support
@@ -647,6 +648,7 @@ net-p2p/feather:revuo - Enable revuo plugin
 net-p2p/feather:tickers - Enable price tickers plugin
 net-p2p/feather:xmrig - Enable mining support using a user specified xmrig binary
 net-p2p/monero:daemon - Build the Monero daemon used to connect to the P2P network.
+net-p2p/monero:hw-wallet - Enable Trezor hardware wallet support.
 net-p2p/monero:tools - Build tools used to manipulate the blockchain as it is stored on disk.
 net-p2p/monero:wallet-cli - Build the command line wallet, monero-wallet-cli.
 net-p2p/monero:wallet-rpc - Build the RPC wallet, monero-wallet-rpc.
@@ -1026,6 +1028,10 @@ sys-kernel/usermode-kernel:initramfs - Build initramfs along with the kernel.
 sys-kernel/usermode-kernel:iomem - Enable CONFIG_MMAPPER
 sys-kernel/usermode-kernel:pic - Enable the use of position independent code
 sys-kernel/xpmem:modules - Build the kernel module
+sys-libs/cyclonedds:get-kind - Apply patch for additional interface which returns type of entity
+sys-libs/cyclonedds:idlc - Build IDL preprocessor
+sys-libs/cyclonedds:parser - Regenerate parser
+sys-libs/cyclonedds:shm - Enable shared memory support
 sys-libs/iceoryx:ccache - Enable ccache support
 sys-libs/safeclib:constraint-handler - enable C11 invoke_safe_{str,mem}_constraint_handler for less performance, bigger size and more flexibility
 sys-libs/safeclib:extensions - enable additional functions not defined in the C11 specification

@@ -1,15 +1,15 @@
 BDEPEND=app-alternatives/ninja >=dev-util/cmake-3.20.5 >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install prepare test unpack
 DEPEND=doc? ( app-doc/doxygen ) ssl? ( dev-libs/openssl ) shm? ( sys-libs/iceoryx ) parser? ( sys-devel/bison )
-DESCRIPTION=Eclipse Cyclone DDS is a very performant and robust open-source implementation of the OMG DDS specification.
+DESCRIPTION=Eclipse Cyclone DDS project
 EAPI=8
 HOMEPAGE=https://cyclonedds.io/
 INHERIT=cmake git-r3
-IUSE=test ssl shm parser doc examples ipv6 idlc get_kind
+IUSE=test ssl shm parser doc examples ipv6 idlc get-kind
 LICENSE=EPL-2.0
 PROPERTIES=live
 RDEPEND=doc? ( app-doc/doxygen )
 RESTRICT=!test? ( test )
 SLOT=0/9999
 _eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	78cf3cc2d5572fddf5e5e10c70f7c81a	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	c8951c1dfcc1d43e3f967f61fd0ec59c	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	0f2e0c197fad0312f3c4765c9cf36271	git-r3	86fa1f157b70b9d2ff340c4633b1cf4b
-_md5_=0ebca3df2756e25bc878804c25f5fb72
+_md5_=2ac823505502ff9e0eed81946c32ea46

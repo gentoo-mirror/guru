@@ -1,16 +1,14 @@
 BDEPEND=app-alternatives/ninja >=dev-util/cmake-3.20.5
 DEFINED_PHASES=compile configure install prepare test
-DEPEND=doc? ( app-doc/doxygen ) ssl? ( dev-libs/openssl ) shm? ( sys-libs/iceoryx ) parser? ( sys-devel/bison )
-DESCRIPTION=Eclipse Cyclone DDS project
+DESCRIPTION=Official implementation library for the hypr config language
 EAPI=8
-HOMEPAGE=https://cyclonedds.io/
+HOMEPAGE=https://github.com/hyprwm/hyprlang
 INHERIT=cmake
-IUSE=test ssl shm parser doc examples ipv6 idlc get-kind
+IUSE=test
 KEYWORDS=~amd64
-LICENSE=EPL-2.0
-RDEPEND=doc? ( app-doc/doxygen )
+LICENSE=GPL-3
 RESTRICT=!test? ( test )
-SLOT=0/0.10
-SRC_URI=https://github.com/eclipse-cyclonedds/cyclonedds/archive/0.10.3.tar.gz -> cyclonedds-0.10.3.tar.gz
+SLOT=0
+SRC_URI=https://github.com/hyprwm/hyprlang/archive/v0.2.1.tar.gz -> hyprlang-0.2.1.gh.tar.gz
 _eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	78cf3cc2d5572fddf5e5e10c70f7c81a	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	c8951c1dfcc1d43e3f967f61fd0ec59c	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	0f2e0c197fad0312f3c4765c9cf36271
-_md5_=2ac823505502ff9e0eed81946c32ea46
+_md5_=b1b860760b4053f41acb1aef9db74a19
