@@ -14,6 +14,12 @@
 
 # New entries go on top.
 
+# Anna Vyalkova <cyber+gentoo@sysrq.in> (2024-01-07)
+# Depends on removed dev-java/gradle-bin slot.
+net-libs/signald
+# and revdeps
+net-im/mautrix-signal
+
 # Lucio Sauer <watermanpaint@posteo.net> (2024-01-04)
 # Known security bugs. Masked until somone updates it.
 # https://github.com/TheDarkBug/uwufetch/issues/249
@@ -39,11 +45,6 @@ app-misc/pup
 # (See also top comment)
 # Sorry for the inconvenience.
 app-office/lotus123r3
-
-# Julien Roy <julien@jroy.ca> (2023-01-25)
-# Requires <dev-python/coverage-7, which is no longer available in ::gentoo.
-# Upstream bug: https://github.com/TheKevJames/coveralls-python/issues/377
-dev-python/coveralls
 
 # Nicola Smaniotto <smaniotto.nicola@gmail.com> (2023-01-15)
 # Requires <dev-python/cleo-1, which is no longer available in ::gentoo.
