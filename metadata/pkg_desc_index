@@ -164,7 +164,7 @@ app-doc/openbsd-manpages 6.9 7.0: OpenBSD manual pages
 app-doc/stdman 2022.07.30 9999: Formatted C++ stdlib man pages (cppreference)
 app-doc/sway-wiki 9999: Wiki of gui-wm/sway, rendered to HTML using kramdown-parser-gfm
 app-editors/amp 0.6.2: A complete text editor for your terminal.
-app-editors/imhex 1.31.0: A hex editor for reverse engineers, programmers, and eyesight
+app-editors/imhex 1.32.2: A hex editor for reverse engineers, programmers, and eyesight
 app-editors/kak-lsp 15.0.1: Kakoune Language Server Protocol Client
 app-editors/kitscenarist 0.7.2_rc9: Simple and powerful application for creating screenplays.
 app-editors/lapce 0.3.1 9999: Lightning-fast and Powerful Code Editor written in Rust
@@ -212,7 +212,7 @@ app-misc/cheat 4.2.3 4.3.3-r1: cheat allows you to create and view interactive c
 app-misc/clifm 1.8 1.11 1.13 1.15 9999: The command line file manager
 app-misc/clipboard 0.9.0.1: Cut, copy, and paste anything in your terminal
 app-misc/cliphist 0.4.0: Wayland clipboard manager with support for multimedia
-app-misc/corectrl 1.3.7 9999: Core control application
+app-misc/corectrl 1.3.8 9999: Core control application
 app-misc/cpufetch 1.01 1.02 1.04: Simplistic yet fancy CPU architecture fetching tool
 app-misc/dbf 0.9.0: Command line tool to read the content of dBASE III, IV, and 5.0 files
 app-misc/diff-so-fancy 1.4.3-r1: Good-lookin' diffs. Actually... nah... The best-lookin' diffs
@@ -540,7 +540,7 @@ dev-R/xtable 1.8.4: Export Tables to LaTeX or HTML
 dev-R/yaml 2.3.5: Methods to Convert R Data to YAML and Back
 dev-R/zoo 1.8.10: S3 Infrastructure for Regular and Irregular Time Series (Z's Ordered Observations)
 dev-cpp/MEL 1.0.0-r1: Math Expression Library
-dev-cpp/blurhash 0.2.0: C++ blurhash encoder/decoder
+dev-cpp/blurhash 0.2.0 0.2.0-r1: C++ blurhash encoder/decoder
 dev-cpp/coeurl 0.2.1 0.3.0: A simple async wrapper around CURL for C++
 dev-cpp/cpp-jwt 1.5_pre20220727: JSON Web Token library for C++
 dev-cpp/cpprestsdk 2.10.19-r3: A Microsoft project for cloud-based client-server communication.
@@ -552,7 +552,7 @@ dev-cpp/easyloggingpp 9.97.0 9.97.1: C++ logging library
 dev-cpp/fbthrift 2023.02.06.00: Facebook's branch of Apache Thrift, including a new C++ server
 dev-cpp/fizz 2023.02.06.00: C++14 implementation of the TLS-1.3 standard
 dev-cpp/gsl-lite 0.38.0: C++ Guideline Support Library implementation
-dev-cpp/indicators 2.2 2.3: Activity indicators for modern C++
+dev-cpp/indicators 2.3 2.3-r1: Activity indicators for modern C++
 dev-cpp/libcutl 1.11.0_beta9: C++ utility library
 dev-cpp/libstudxml 1.1.0_beta10: Streaming XML pull parser/serializer for modern C++
 dev-cpp/mastodonpp 0.5.7-r1 9999: C++ wrapper for the Mastodon and Pleroma APIs.
@@ -1183,7 +1183,6 @@ dev-python/sphinx-sitemap 2.5.0 2.5.1: Sitemap generator for Sphinx
 dev-python/sphinx-version-warning 1.1.2: Sphinx extension to add a warning banner
 dev-python/sphinxcontrib-katex 0.9.4 0.9.6 0.9.7 0.9.9: KaTeX Sphinx extension for rendering of math in HTML pages
 dev-python/sphinxcontrib-restbuilder 0.3-r1: A Sphinx builder/writer to output reStructuredText (rst) files
-dev-python/sphinxcontrib-zopeext 0.4.2-r1: Sphinx extension for using Zope interfaces
 dev-python/sphinxext-opengraph 0.9.0: Sphinx extension to generate unique OpenGraph metadata
 dev-python/sre-yield 1.2-r1: Python module to generate regular all expression matches
 dev-python/srt 3.5.1 3.5.2 3.5.3: A tiny library for parsing, modifying, and composing SRT files
@@ -1209,7 +1208,7 @@ dev-python/timeslot 0.1.2: Time slots/intervals with an arbitrary start and stop
 dev-python/trailrunner 1.2.1: Walk paths and run things
 dev-python/trueskill 0.4.5_p20220422: Python Implementation of the TrueSkill Algorithm
 dev-python/ttfautohint-py 0.5.1-r1: Python wrapper for ttfautohint, a free auto-hinter for TrueType fonts
-dev-python/tulir-telethon 1.33.0_alpha1 1.34.0_alpha2: Pure Python 3 MTProto API Telegram client library, for bots too!
+dev-python/tulir-telethon 1.34.0_alpha2 1.34.0_alpha3: Pure Python 3 MTProto API Telegram client library, for bots too!
 dev-python/tweepy 4.14.0: An easy-to-use Python library for accessing the Twitter API.
 dev-python/types-paramiko 2.10.0 2.11.1: Typing stubs for paramiko
 dev-python/types-protobuf 4.24.0.4: Typing stubs for protobuf
@@ -1274,7 +1273,7 @@ dev-util/distribution-gpg-keys 1.99: Collection of GPG keys used in Linux Distri
 dev-util/dockerfile-language-server 0.10.2 0.11.0: A language server for Dockerfiles
 dev-util/eclipse-parallel-bin 4.27 4.28: Eclipse IDE for Scientific Computing (C, C++, Fortran)
 dev-util/exercism 3.1.0: Command line client for https://exercism.io
-dev-util/find-work 0.1.1: Personal advice utility for Gentoo package maintainers
+dev-util/find-work 0.1.1 0.2.0: Personal advice utility for Gentoo package maintainers
 dev-util/fnm 1.32.0 1.33.1: Fast and simple Node.js version manager
 dev-util/fontmake 3.5.1: Compile fonts from sources (UFO, Glyphs) to binary (OpenType, TrueType)
 dev-util/fortls 2.13.0: Fortran Language Server (fortls)
@@ -1313,7 +1312,7 @@ dev-util/vala-language-server 0.48.4: Code Intelligence for Vala & Genie
 dev-util/vscode-langservers-extracted 4.7.0 4.8.0: HTML/CSS/JSON/ESLint/Markdown language servers extracted from vscode.
 dev-util/wakatime-cli 1.27.0 1.28.6: Command line interface to WakaTime used by all WakaTime plugins
 dev-util/wxformbuilder 3.10.1-r1: A wxWidgets GUI Builder
-dev-util/xmake 2.7.9 9999: A cross-platform build utility based on Lua
+dev-util/xmake 2.8.6 9999: A cross-platform build utility based on Lua
 dev-util/xxd 8.2.4092: Hexdump utility from vim
 dev-util/yaml-language-server 1.13.0 1.14.0: Language Server for YAML Files
 dev-vcs/bit 1.1.1 1.1.2: Bit is a modern Git CLI
@@ -1464,7 +1463,7 @@ gui-apps/nwg-shell-config 0.5.29 0.5.30: nwg-shell configuration utility
 gui-apps/organicmaps 9999: Offline maps and navigation using OpenStreetMap data
 gui-apps/packettracer 8.2.0: Cisco's packet tracer
 gui-apps/paperde 0.1.1_p20210426 9999: Simple, sleek QT based DE for wayland using wayfire
-gui-apps/phosh-tour 0.28.0: Introduction to phosh on smartphones
+gui-apps/phosh-tour 0.28.0 0.35.0: Introduction to phosh on smartphones
 gui-apps/rofi-wayland 1.7.5 1.7.5-r1: A window switcher, run dialog and dmenu replacement
 gui-apps/satty 0.8.2 9999: A screenshot annotation tool inspired by Swappy and Flameshot.
 gui-apps/sfwbar 1.0_beta12 1.0_beta13 1.0_beta14: S* Floating Window Bar
@@ -1505,7 +1504,7 @@ gui-libs/libcsys 4.2.0 9999: Library for managing the device
 gui-libs/libdecor 0.1.1 9999: A client-side decorations library for Wayland clients
 gui-libs/text-engine 0.1.1-r2 9999: A lightweight rich-text framework for GTK 4
 gui-libs/webp-pixbuf-loader 0.0.1: WebP Image format GdkPixbuf loader
-gui-libs/xdg-desktop-portal-hyprland 1.1.0-r1 1.2.2-r2 1.2.5-r2 1.2.6-r1 9999: xdg-desktop-portal backend for hyprland
+gui-libs/xdg-desktop-portal-hyprland 1.1.0-r1 1.2.2-r2 1.2.5-r2 1.2.6-r1 1.3.1 9999: xdg-desktop-portal backend for hyprland
 gui-wm/cage 0.1.5 9999: A Wayland kiosk
 gui-wm/hyprland-contrib 0.1-r1 9999: Community-maintained extensions for hyprland
 gui-wm/phosh 0.17.0: A pure Wayland shell prototype for GNOME on mobile devices
@@ -1633,7 +1632,7 @@ media-sound/spotify-adblock 1.0.1 1.0.2 1.0.3: Adblocker for Spotify
 media-sound/spotify-player 0.16.2 0.16.3 9999: spotify_player is a fast, easy to use, and configurable terminal music player.
 media-sound/spotifyd 0.3.5: A Spotify daemon
 media-sound/tavu 9999: Terminal-based ALSA VU-meter with peaking
-media-sound/tidal-hifi-bin 5.7.1: Web version of Tidal running in electron with Hi-Fi support thanks to Widevine.
+media-sound/tidal-hifi-bin 5.8.0: Web version of Tidal running in electron with Hi-Fi support thanks to Widevine.
 media-sound/yewtube 2.10.5 9999: Terminal-based YouTube player and downloader
 media-sound/zita-ajbridge 0.8.4 0.8.4-r1: zita-a2j and zita-j2a - bridges between ALSA and JACK
 media-video/avisynth+ 9999: A powerful nonlinear scripting language for video
@@ -1695,7 +1694,7 @@ net-fs/hubicfuse 3.0.1: Support for mounting HubiC drive in GNU/Linux
 net-im/Quaternion 0.0.95.1 0.0.96_beta4: A Qt-based IM client for Matrix
 net-im/abaddon 0.1.12-r1 0.1.13 9999: Alternative Discord client using GTK instead of Electron
 net-im/axolotl-bin 2.0.1: Axolotl is a cross-platform Signal client
-net-im/chatterino 2.3.5-r3: Chat client for https://twitch.tv
+net-im/chatterino 2.4.6: Chat client for https://twitch.tv
 net-im/conduit 0.6.0 0.6.0-r1: A Matrix homeserver written in Rust
 net-im/discord-canary-bin 0.0.235: All-in-one voice and text chat
 net-im/discord-ptb-bin 0.0.29: All-in-one voice and text chat
@@ -1814,7 +1813,7 @@ net-wireless/rtl8192eu 0_pre20230613: Realtek 8192EU driver module for Linux ker
 net-wireless/rtl8723bu 9999: Driver for the rtl8723 wireless chipset
 net-wireless/rtl8821ce 0_pre20231002: Realtek RTL8821CE Driver module for Linux kernel
 net-wireless/rtl8821cu 0_pre20231126: Realtek 8821CU/RTL8811CU module for Linux kernel
-sci-biology/cmdock 0.2.0: Program for docking ligands to proteins and nucleic acids
+sci-biology/cmdock 0.2.0 0.2.0-r1: Program for docking ligands to proteins and nucleic acids
 sci-biology/geneathome 1.10-r5: BOINC application for expanding Gene Regulatory Networks (GRN)
 sci-biology/jalview-bin 2.11.2.7: Editor of multiple sequence alignments.
 sci-chemistry/vesta-bin 3.5.8: Visualisation for Electronic and STructural Analysis.
@@ -2001,7 +2000,7 @@ sys-cluster/wxparaver 4.10.1: Performance analyzer based on event traces
 sys-devel/fcode-utils 1.0.3: Set of utilities to process FCODE, OpenFirmware's byte code
 sys-devel/gdb-dashboard 0.17.2: Modular visual interface for GDB in Python
 sys-devel/gsl 4.1.5-r1: iMatix GSL code generator
-sys-devel/just 1.21.0 1.22.0: Just a command runner (with syntax inspired by 'make')
+sys-devel/just 1.21.0 1.22.0 1.22.1: Just a command runner (with syntax inspired by 'make')
 sys-devel/lcc 2021.01.11-r1: The lcc retargetable ANSI C compiler
 sys-firmware/lenovolegionlinux 9999: Lenovo Legion Linux kernel module
 sys-firmware/pinephone-firmware 20210809: Firmwares files for PinePhone
@@ -2009,7 +2008,7 @@ sys-fs/btrfs-heatmap 9-r1: Python 3 script to draw a heatmap of a btrfs filesyst
 sys-fs/ddrescueview 0.4.5: Graphical viewer for GNU ddrescue mapfiles
 sys-fs/diskonaut 0.10.0 0.11.0 9999: Terminal disk space visual navigator
 sys-fs/dua-cli 2.23.0 2.25.0: A tool to conveniently learn about the disk usage of directories, fast!
-sys-fs/dwarfs 0.7.4-r1: A fast very high compression read-only FUSE file system
+sys-fs/dwarfs 0.7.4-r2: A fast very high compression read-only FUSE file system
 sys-fs/dwarfs-bin 0.7.4: Static version of a fast very high compression read-only FUSE file system
 sys-fs/gcsfuse 1.2.0: A user-space file system for interacting with Google Cloud Storage
 sys-fs/gdu 5.14.0 5.25.0: Disk usage analyzer with console interface written in Go
@@ -2022,7 +2021,7 @@ sys-kernel/dpdk-kmod 21.11.1 22.07 23.03: DPDK Kernel Nic Interface module
 sys-kernel/modprobed-db 2.46: This utility tracks modules loaded by the kernel, for localmodconfig
 sys-kernel/msr-safe 1.6.0: Allows safer access to model specific registers (MSRs)
 sys-kernel/tirdad 0_pre20200926: kernel module for random ISN generation
-sys-kernel/uek-sources 5.15.0.5.70.1 5.15.0.6.80.3 5.15.0.8.91.3 5.15.0.105.125.4 5.15.0.201.135.2 5.15.0.201.135.4 5.15.0.202.135.1: Unbreakable Enterprise Kernel (UEK) sources built from Oracle
+sys-kernel/uek-sources 5.15.0.5.70.1 5.15.0.6.80.3 5.15.0.8.91.3 5.15.0.105.125.4 5.15.0.201.135.2 5.15.0.201.135.4 5.15.0.202.135.1 5.15.0.202.135.1-r1: Unbreakable Enterprise Kernel (UEK) sources built from Oracle
 sys-kernel/ugrd 0.12.1-r1 0.19.1 0.19.3: Python based initramfs generator with TOML defintions
 sys-kernel/usermode-kernel 6.0.12: Linux kernel built with Gentoo patches
 sys-kernel/xow 0.5: Linux driver for the Xbox One wireless dongle
@@ -2123,8 +2122,8 @@ x11-misc/xscreensaver-anclock 2.2.1: Analog clock hack for the xscreensaver prog
 x11-plugins/purple-mm-sms 0.1.7: Purple SMS plugin using ModemManager
 x11-terms/dmd5620 1.2.0: GTK+ 3.0 implementation of an AT&T / Teletype DMD 5620 emulator.
 x11-terms/mlterm-canna 3.9.3: canna plugin for mlterm
-x11-terms/rio 0.0.28 0.0.33: A hardware-accelerated GPU terminal emulator powered by WebGPU
-x11-terms/rio-terminfo 0.0.28 0.0.33: Terminfo for Rio, a hardware-accelerated GPU terminal emulator powered by WebGPU
+x11-terms/rio 0.0.28 0.0.34: A hardware-accelerated GPU terminal emulator powered by WebGPU
+x11-terms/rio-terminfo 0.0.28 0.0.34: Terminfo for Rio, a hardware-accelerated GPU terminal emulator powered by WebGPU
 x11-terms/tabby-bin 1.0.189: A terminal for a more modern age
 x11-terms/tym 3.5.0: Lua-configurable terminal emulator
 x11-themes/adw-gtk3 5.0 5.1: The theme from libadwaita ported to GTK-3
