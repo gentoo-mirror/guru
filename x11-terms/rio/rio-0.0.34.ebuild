@@ -66,7 +66,6 @@ CRATES="
 	clipboard-win@3.1.1
 	cmake@0.1.50
 	cocoa-foundation@0.1.2
-	cocoa@0.24.1
 	cocoa@0.25.0
 	codespan-reporting@0.11.1
 	color_quant@1.1.0
@@ -80,9 +79,8 @@ CRATES="
 	core-foundation-sys@0.8.4
 	core-foundation@0.9.3
 	core-graphics-types@0.1.2
-	core-graphics@0.22.3
 	core-graphics@0.23.1
-	core-text@19.2.0
+	core-text@20.1.0
 	crc32fast@1.3.2
 	criterion-plot@0.5.0
 	criterion@0.5.1
@@ -90,7 +88,7 @@ CRATES="
 	crossbeam-deque@0.8.3
 	crossbeam-epoch@0.9.15
 	crossbeam-utils@0.8.16
-	crossfont@0.5.1
+	crossfont@0.7.0
 	crunchy@0.2.2
 	cursor-icon@1.1.0
 	d3d12@0.7.0
@@ -112,11 +110,10 @@ CRATES="
 	filetime@0.2.22
 	flate2@1.0.28
 	flume@0.11.0
+	fnv@1.0.7
 	fontconfig-parser@0.5.3
 	foreign-types-macros@0.2.3
-	foreign-types-shared@0.1.1
 	foreign-types-shared@0.3.1
-	foreign-types@0.3.2
 	foreign-types@0.5.0
 	freetype-rs@0.26.0
 	freetype-sys@0.13.1
@@ -134,6 +131,7 @@ CRATES="
 	futures-util@0.3.29
 	futures@0.3.29
 	gethostname@0.3.0
+	gethostname@0.4.3
 	getrandom@0.2.10
 	gif@0.12.0
 	gimli@0.28.0
@@ -275,7 +273,7 @@ CRATES="
 	same-file@1.0.6
 	scoped-tls@1.0.1
 	scopeguard@1.2.0
-	sctk-adwaita@0.7.0
+	sctk-adwaita@0.8.1
 	serde@1.0.190
 	serde_derive@1.0.190
 	serde_json@1.0.107
@@ -379,13 +377,15 @@ CRATES="
 	windows_x86_64_gnullvm@0.48.5
 	windows_x86_64_msvc@0.42.2
 	windows_x86_64_msvc@0.48.5
-	winit@0.29.4
+	winit@0.29.9
 	winnow@0.5.17
 	wio@0.2.2
 	x11-clipboard@0.8.1
 	x11-dl@2.21.0
 	x11rb-protocol@0.12.0
+	x11rb-protocol@0.13.0
 	x11rb@0.12.0
+	x11rb@0.13.0
 	xcursor@0.3.4
 	xi-unicode@0.3.0
 	xkbcommon-dl@0.4.1

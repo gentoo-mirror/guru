@@ -1,7 +1,7 @@
-# Copyright 2021 Gentoo Authors
+# Copyright 2021-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 inherit cmake
 
@@ -13,6 +13,8 @@ LICENSE="BSD MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="examples"
+
+PATCHES=( "${FILESDIR}"/${P}-include.patch )
 
 QA_PKGCONFIG_VERSION="${PV}.0"
 

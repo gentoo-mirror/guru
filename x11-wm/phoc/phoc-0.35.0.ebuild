@@ -13,6 +13,7 @@ LICENSE="|| ( GPL-3+ MIT ) GPL-3+ LGPL-2.1+ MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~arm64"
 IUSE="+X gtk-doc man test"
+REQUIRED_USE="test? ( X )"
 RESTRICT="!test? ( test )"
 
 DEPEND="
@@ -60,6 +61,11 @@ src_test() {
 
 src_install() {
 	meson_src_install
+
+	if use gtk-doc; then
+		mkdir -p "${ED}"/usr/share/gtk-doc/html/ || die
+		mv "${ED}"/usr/share/doc/${PN}-${SLOT} "${ED}"/usr/share/gtk-doc/html/ || die
+	fi
 
 	newbin helpers/auto-maximize phoc-auto-maximize
 	newbin helpers/scale-to-fit phoc-scale-to-fit

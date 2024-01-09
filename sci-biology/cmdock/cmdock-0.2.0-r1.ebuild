@@ -16,16 +16,18 @@ LICENSE="LGPL-3 ZLIB"
 SLOT="0/${PV}"
 KEYWORDS="~amd64"
 IUSE="apidoc boinc cpu_flags_x86_sse2 doc test"
-RESTRICT="!test? ( test )"
+
+# Flaky tests
+RESTRICT="test"
 
 RDEPEND="
 	boinc? ( sci-misc/boinc-wrapper )
 "
 DEPEND="
 	dev-cpp/eigen:3
-	dev-cpp/indicators
+	>=dev-cpp/indicators-2.3-r1
 	>=dev-cpp/pcg-cpp-0.98.1_p20210406-r1
-	dev-libs/cxxopts
+	>=dev-libs/cxxopts-3
 "
 BDEPEND="
 	apidoc? (
@@ -40,6 +42,11 @@ BDEPEND="
 	)
 	test? ( ${PYTHON_DEPS} )
 "
+
+PATCHES=(
+	"${FILESDIR}"/${P}-include.patch
+	"${FILESDIR}"/${P}-cxxopts.patch
+)
 
 DOCS=( README.md changelog.md )
 
