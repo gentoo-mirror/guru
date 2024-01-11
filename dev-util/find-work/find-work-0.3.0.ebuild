@@ -25,10 +25,15 @@ RDEPEND="
 	dev-python/click-aliases[${PYTHON_USEDEP}]
 	>=dev-python/pydantic-2[${PYTHON_USEDEP}]
 	<dev-python/pydantic-3[${PYTHON_USEDEP}]
+	dev-python/python-bugzilla[${PYTHON_USEDEP}]
 	>=dev-python/repology-client-0.0.2[${PYTHON_USEDEP}]
 	<dev-python/repology-client-2[${PYTHON_USEDEP}]
+	>=dev-python/requests-2[${PYTHON_USEDEP}]
+	<dev-python/requests-3[${PYTHON_USEDEP}]
 	dev-python/sortedcontainers[${PYTHON_USEDEP}]
+	dev-python/tabulate[${PYTHON_USEDEP}]
 "
+BDEPEND="test? ( dev-python/pytest-recording[${PYTHON_USEDEP}] )"
 
 distutils_enable_tests pytest
 

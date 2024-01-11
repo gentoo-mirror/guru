@@ -47,6 +47,7 @@ RDEPEND="
 
 DEPEND="${RDEPEND}"
 BDEPEND="
+	dev-util/patchelf
 	sys-devel/bison
 	sys-devel/flex
 	virtual/pkgconfig
@@ -61,16 +62,8 @@ REQUIRED_USE="python? ( ${PYTHON_REQUIRED_USE} )"
 CHECKREQS_DISK_BUILD="1300M"
 CMAKE_IN_SOURCE_BUILD=1
 CMAKE_WARN_UNUSED_CLI=0
-#These files supposed to have no symlink
-QA_SONAME=(
-"/usr/sbin/dwarfs"
-"/usr/bin/dwarfsbench"
-"/usr/bin/dwarfsck"
-"/usr/bin/dwarfsextract"
-"/usr/bin/mkdwarfs"
-)
 
-src_prepare(){
+src_prepare() {
 	rm -r zstd xxHash parallel-hashmap || die
 	sed "s/DESTINATION lib/DESTINATION $(get_libdir)/" -i CMakeLists.txt || die
 
@@ -83,7 +76,7 @@ src_prepare(){
 	cmake_src_prepare
 }
 
-src_configure(){
+src_configure() {
 	append-cxxflags "-I/usr/include"
 	append-ldflags $(no-as-needed)
 
@@ -103,15 +96,43 @@ src_configure(){
 	cmake_src_configure
 }
 
-src_install(){
-	# Perform install
+src_install() {
+	local libs=(
+		libdwarfs.so
+		libdwarfs_main.so
+		libdwarfs_tool.so
+		libdwarfs_compression.so
+		libthrift_light.so
+		libmetadata_thrift.so
+		libmkdwarfs_main.so
+		libdwarfsbench_main.so
+		libdwarfsck_main.so
+		libdwarfsextract_main.so
+		libdwarfsck_main.so
+		libdwarfsextract_main.so
+		folly/libfolly.so
+		folly/libfolly.so.0.58.0-dev
+	)
+
 	cmake_src_install
-	dolib.so libdwarfs.so libdwarfs_main.so libdwarfs_tool.so libdwarfs_compression.so libthrift_light.so libmetadata_thrift.so || die "Install failed"
-	dolib.so folly/libfolly.so folly/libfolly.so.0.58.0-dev libmkdwarfs_main.so libdwarfsbench_main.so || die "Install failed"
-	dolib.so libdwarfsck_main.so libdwarfsextract_main.so || die "Install failed"
+
+	for lib in "${libs[@]}"; do
+		# TODO: figure out how to remove this with cmake
+		patchelf --remove-rpath "$lib" || die
+		dolib.so "$lib"
+	done
 }
 
-pkg_postinst(){
+src_test() {
+	local CMAKE_SKIP_TESTS=(
+		# Tests don't work in sandbox
+		# fuse: failed to open /dev/fuse: Permission denied
+		dwarfs/tools_test
+	)
+	cmake_src_test
+}
+
+pkg_postinst() {
 	elog "You may find more information in the"
 	elog "${HOMEPAGE}"
 	elog "About creating: ${HOMEPAGE}/blob/main/doc/mkdwarfs.md"

@@ -1,4 +1,4 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -33,6 +33,8 @@ RDEPEND="
 	gui-libs/gtk-layer-shell
 "
 DEPEND="${RDEPEND}"
+
+PATCHES=( "${FILESDIR}/${P}-fix-version-string.patch" )
 
 python_install_all() {
 	distutils-r1_python_install_all
