@@ -1,6 +1,6 @@
 BDEPEND=app-alternatives/ninja >=dev-util/cmake-3.20.5 >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare test unpack
-DEPEND=alsa? ( media-libs/alsa-lib ) faudio? ( app-emulation/faudio ) pulseaudio? ( media-sound/pulseaudio ) app-arch/p7zip dev-libs/hidapi dev-libs/libevdev dev-libs/pugixml dev-libs/xxhash media-libs/cubeb media-libs/glew media-libs/libpng media-libs/openal sys-libs/zlib
+DEPEND=app-arch/p7zip dev-libs/flatbuffers dev-libs/hidapi dev-libs/libevdev dev-libs/pugixml dev-libs/xxhash dev-qt/qtbase:6[concurrent,dbus,gui,widgets] dev-qt/qtmultimedia:6 dev-qt/qtsvg:6 media-libs/cubeb media-libs/glew media-libs/libglvnd media-libs/libpng:= media-libs/openal media-video/ffmpeg:= net-misc/curl sys-devel/llvm:= sys-libs/zlib virtual/libusb:1 alsa? ( media-libs/alsa-lib ) faudio? ( app-emulation/faudio ) pulseaudio? ( media-libs/libpulse ) vulkan? ( media-libs/vulkan-loader ) wayland? ( dev-libs/wayland )
 DESCRIPTION=PS3 emulator/debugger
 EAPI=8
 HOMEPAGE=https://rpcs3.net/
@@ -9,7 +9,7 @@ INHERIT=cmake flag-o-matic git-r3 xdg
 IUSE=alsa discord faudio +llvm pulseaudio vulkan wayland
 LICENSE=GPL-2
 PROPERTIES=live
-RDEPEND=alsa? ( media-libs/alsa-lib ) faudio? ( app-emulation/faudio ) pulseaudio? ( media-sound/pulseaudio ) app-arch/p7zip dev-libs/hidapi dev-libs/libevdev dev-libs/pugixml dev-libs/xxhash media-libs/cubeb media-libs/glew media-libs/libpng media-libs/openal sys-libs/zlib
+RDEPEND=app-arch/p7zip dev-libs/flatbuffers dev-libs/hidapi dev-libs/libevdev dev-libs/pugixml dev-libs/xxhash dev-qt/qtbase:6[concurrent,dbus,gui,widgets] dev-qt/qtmultimedia:6 dev-qt/qtsvg:6 media-libs/cubeb media-libs/glew media-libs/libglvnd media-libs/libpng:= media-libs/openal media-video/ffmpeg:= net-misc/curl sys-devel/llvm:= sys-libs/zlib virtual/libusb:1 alsa? ( media-libs/alsa-lib ) faudio? ( app-emulation/faudio ) pulseaudio? ( media-libs/libpulse ) vulkan? ( media-libs/vulkan-loader ) wayland? ( dev-libs/wayland )
 SLOT=0
 _eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	78cf3cc2d5572fddf5e5e10c70f7c81a	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	6ce0fba8085ef5b349c3a2e185305098	git-r3	86fa1f157b70b9d2ff340c4633b1cf4b	xdg	4a14c5c24f121e7da66e5aab4a168c6e
-_md5_=d21396f0fc163d258841c0515b426e8c
+_md5_=a0964a7e55cc4793bd3aa3c287ad1dee

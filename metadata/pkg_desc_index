@@ -85,7 +85,7 @@ app-admin/customrescuecd-x86_64 0.12.7 0.12.8: A system rescue cd or usbstick fo
 app-admin/dotbot 1.20.1: A tool that bootstraps your dotfiles
 app-admin/enpass-desktop-bin 6.7.4.933: A cross-platform, complete password management solution
 app-admin/gentoo_update 0.2.3: Gentoo Linux updater
-app-admin/grub-customizer 5.1.0: A graphical grub2 settings manager
+app-admin/grub-customizer 5.2.4: A graphical grub2 settings manager
 app-admin/himitsu 0.3 0.4 9999: Secret storage system for Unix, suitable for storing passwords, keys, ...
 app-admin/himitsu-keyring 0.2.0: graphical frontend for managing a Himitsu key store
 app-admin/himitsu-ssh 0.2 9999: SSH integration for Himitsu
@@ -97,7 +97,7 @@ app-admin/opentofu 1.6.0_rc1: A fork of Terraform that is open-source and commun
 app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applications and tmux
 app-admin/pass-audit 1.2: A pass extension for auditing your password repository.
 app-admin/pass-update 2.1: pass extension that provides an easy flow for updating passwords
-app-admin/pulumi-bin 3.99.0 3.100.0: Infrastructure as code in any programming language
+app-admin/pulumi-bin 3.99.0 3.100.0 3.101.0 3.101.1: Infrastructure as code in any programming language
 app-admin/rbw 9999: unofficial bitwarden cli
 app-admin/s-tui 1.1.3-r1 1.1.4: Stress-Terminal UI monitoring tool
 app-admin/synadm 0.43.1 0.44: Command line admin tool for Synapse
@@ -327,7 +327,7 @@ app-shells/zsh-silver 9999: Zsh plugin for silver
 app-text/OCRmyPDF 14.1.0 14.2.1: OCRmyPDF adds an OCR text layer to scanned PDF files
 app-text/cmark-gfm 0.29.0.3: GitHub's fork of cmark
 app-text/code-minimap 0.6.4: A high performance code minimap generator
-app-text/dooit 2.1.0: A TUI todo manager
+app-text/dooit 2.1.1: A TUI todo manager
 app-text/epubgrep 0.6.2: Search tool for EPUB e-books
 app-text/klogg 22.06.0.1289: A GUI application to browse and search through long and complex log files
 app-text/komikku 1.21.1 1.22.0: An online/offline manga reader for GNOME
@@ -366,7 +366,7 @@ app-vim/vala-syntax 20200502: vim plugin: vala language support
 app-vim/vim-crystal 2022.09.04 2023.03.15: vim plugin: Crystal language support
 app-vim/vim-nix 9999: vim plugin: Vim configuration files for Nix
 app-vim/vim-sensible 1.2 2.0: vim plugin: a universal set of defaults that (hopefully) everyone can agree on
-app-vim/vimwiki-cli 1.0.0: Command-line interface for Vimwiki
+app-vim/vimwiki-cli 1.1.0: Command-line interface for Vimwiki
 app-vim/yats 2022.08.26 2023.08.24: vim plugin: Yet Another TypeScript Syntax
 dev-R/AsioHeaders 1.22.1.1: 'Asio' C++ Header Files
 dev-R/BH 1.75.0.0 1.78.0.0-r1: Boost C++ Header Files
@@ -617,7 +617,7 @@ dev-embedded/esp-idf-panic-decoder 0.2.0: Parses ESP-IDF panic handler output ac
 dev-embedded/esp-idf-size 0.3.1 0.4.2 0.4.3: Firmware size analysis for ESP-IDF
 dev-embedded/etlcpp 20.35.8: A C++ template library for embedded applications
 dev-embedded/freertos-gdb 1.0.2: Python module for operating with freeRTOS-kernel objects in GDB
-dev-embedded/idf-component-manager 1.3.2 1.3.2-r1 1.4.1: Tool for installing ESP-IDF components
+dev-embedded/idf-component-manager 1.4.1: Tool for installing ESP-IDF components
 dev-embedded/mv88e6xxx-dump 0.2.0_pre20210327: Dump information about Marvell mv88e6xxx Ethernet switches
 dev-embedded/qdl 1.0 9999: Tool to communicate with Qualcomm System On a Chip bootroms
 dev-embedded/rauc 1.10.1: Lightweight update client that runs on your Embedded Linux device
@@ -1156,7 +1156,7 @@ dev-python/readability-lxml 0.6.1 0.8.1: fast html to text parser (article reada
 dev-python/readmdict 0.1.1-r1: Read mdx/mdd files
 dev-python/repology-client 0.0.2: Asynchronous wrapper for Repology API
 dev-python/restrictedpython 6.2 7.0: A restricted execution environment for Python to run untrusted code
-dev-python/rpmautospec-core 0.1.2 0.1.3: Core functionality used by rpmautospec
+dev-python/rpmautospec-core 0.1.4: Core functionality used by rpmautospec
 dev-python/rst2ansi 0.1.5-r2: Render reStructuredText documents to the terminal
 dev-python/rstcheck 6.2.0: Checks syntax of reStructuredText and code blocks nested within it
 dev-python/rstr 3.2.0: Easily generate random strings of various types
@@ -1183,7 +1183,7 @@ dev-python/sphinx-sitemap 2.5.0 2.5.1: Sitemap generator for Sphinx
 dev-python/sphinx-version-warning 1.1.2: Sphinx extension to add a warning banner
 dev-python/sphinxcontrib-katex 0.9.4 0.9.6 0.9.7 0.9.9: KaTeX Sphinx extension for rendering of math in HTML pages
 dev-python/sphinxcontrib-restbuilder 0.3-r1: A Sphinx builder/writer to output reStructuredText (rst) files
-dev-python/sphinxext-opengraph 0.9.0: Sphinx extension to generate unique OpenGraph metadata
+dev-python/sphinxext-opengraph 0.9.1: Sphinx extension to generate unique OpenGraph metadata
 dev-python/sre-yield 1.2-r1: Python module to generate regular all expression matches
 dev-python/srt 3.5.1 3.5.2 3.5.3: A tiny library for parsing, modifying, and composing SRT files
 dev-python/sse-starlette 1.1.6: Server Sent Events for Starlette
@@ -1202,8 +1202,8 @@ dev-python/templated-dictionary 1.2: Python dictionary with Jinja2 expansion
 dev-python/tempus-themes 2.3.0.20220206: Accessible themes for Pygments
 dev-python/tempy 1.3.0: A simple, visually pleasing weather report in your terminal
 dev-python/testrepository 0.0.20-r200: A repository of test results
-dev-python/textual 0.44.0: Modern Text User Interface framework
-dev-python/textual-dev 1.2.0: Modern Text User Interface framework
+dev-python/textual 0.47.1: Modern Text User Interface framework
+dev-python/textual-dev 1.4.0: Modern Text User Interface framework
 dev-python/timeslot 0.1.2: Time slots/intervals with an arbitrary start and stop
 dev-python/trailrunner 1.2.1: Walk paths and run things
 dev-python/trueskill 0.4.5_p20220422: Python Implementation of the TrueSkill Algorithm
@@ -1269,11 +1269,11 @@ dev-util/binaryen 105: Compiler and toolchain infrastructure library for WebAsse
 dev-util/cargo-make 0.35.9 0.35.10: Rust task runner and build tool
 dev-util/cmakelang 0.6.13: Provides Quality Assurance (QA) tools for cmake
 dev-util/deblob 0.5 0.6 9999: remove binary executables from a directory
-dev-util/distribution-gpg-keys 1.99: Collection of GPG keys used in Linux Distributions
+dev-util/distribution-gpg-keys 1.100: Collection of GPG keys used in Linux Distributions
 dev-util/dockerfile-language-server 0.10.2 0.11.0: A language server for Dockerfiles
 dev-util/eclipse-parallel-bin 4.27 4.28: Eclipse IDE for Scientific Computing (C, C++, Fortran)
 dev-util/exercism 3.1.0: Command line client for https://exercism.io
-dev-util/find-work 0.1.1 0.2.0: Personal advice utility for Gentoo package maintainers
+dev-util/find-work 0.2.0 0.3.0: Personal advice utility for Gentoo package maintainers
 dev-util/fnm 1.32.0 1.33.1: Fast and simple Node.js version manager
 dev-util/fontmake 3.5.1: Compile fonts from sources (UFO, Glyphs) to binary (OpenType, TrueType)
 dev-util/fortls 2.13.0: Fortran Language Server (fortls)
@@ -1319,7 +1319,7 @@ dev-vcs/bit 1.1.1 1.1.2: Bit is a modern Git CLI
 dev-vcs/git-blame-someone-else 0_pre20180613: Blame someone else for your bad code.
 dev-vcs/git-cu 0.5.0: Helps to keep your local git repositories organized
 dev-vcs/git-repo-updater 0.5.1-r2: Easily update multiple git repositories at once
-dev-vcs/gitahead 2.7.1: Graphical Git client to help understand and manage source code history
+dev-vcs/gitahead 2.7.1 2.7.1-r1: Graphical Git client to help understand and manage source code history
 dev-vcs/gitqlient 1.6.2 9999: Multi-platform Git client written with Qt
 dev-vcs/gitqlient-gitserver-plugin 0.2.0: GitQlient GitServer plugin
 dev-vcs/gitqlient-jenkins-plugin 0.2.0: GitQlient Jenkins plugin
@@ -1356,7 +1356,7 @@ games-engines/easyrpg-player 0.7.0 0.8 0.8-r1: RPG Maker 2000/2003 and EasyRPG g
 games-engines/fs2_open 23.0.0 23.2.1-r1: FreeSpace2 Source Code Project game engine
 games-engines/instead 3.3.5 3.4.1 9999: INSTEAD text-based quest game engine
 games-engines/luxtorpeda 25.0.0: Steam Play compatibility tool to run games using native Linux engines
-games-engines/nxengine-evo 2.6.4: rewrite of the jump-and-run platformer Doukutsu Monogatari(Cave Story)
+games-engines/nxengine-evo 2.6.4 2.6.5_p1: rewrite of the jump-and-run platformer Doukutsu Monogatari(Cave Story)
 games-engines/ponscripter-fork 3.0.2: Fork of the Ponscripter visual novel engine to take advantage of SDL2
 games-fps/assaultcube 1.3.0.2: Free multiplayer FPS based on the Cube engine
 games-fps/crispy-doom 5.12.0 6.0: A limit-removing enhanced-resolution Doom source port based on Chocolate Doom
@@ -1369,7 +1369,7 @@ games-misc/bonsai 0_pre20210201: bonsai tree generator written in bash
 games-misc/cbonsai 1.3.1-r1: grow bonsai trees in your terminal
 games-misc/gay 1.2.8 1.2.9: Colour your text / terminal to be more gay
 games-misc/varlpenis 3.0.2: Generates ASCII-art penis of arbitrary length
-games-puzzle/aaaaxy 1.3.436 1.4.101 1.4.119: A nonlinear 2D puzzle platformer taking place in impossible spaces
+games-puzzle/aaaaxy 1.3.436 1.4.119 1.4.137: A nonlinear 2D puzzle platformer taking place in impossible spaces
 games-puzzle/atris 1.0.7: Alizarin tetris
 games-puzzle/baba-is-you 474: Puzzle game where you can change the rules by which you play
 games-puzzle/generic-tetromino-game 9999: Faithful clone of NES Tetris but with new features and mods API
@@ -1439,7 +1439,7 @@ gui-apps/gradience 0.3.0-r1: GNOME's main interface to configure various aspects
 gui-apps/grimshot 9999: A helper for screenshots within sway
 gui-apps/gtklock 2.0.1 2.1.0: GTK-based lockscreen for Wayland
 gui-apps/gtklock-extras 9999: Gtklock modules
-gui-apps/hiprompt-gtk-py 0_pre20220624 9999: GTK+ Himitsu prompter for Wayland
+gui-apps/hiprompt-gtk-py 0_pre20220624-r1 9999: GTK+ Himitsu prompter for Wayland
 gui-apps/hyprland-plugins 0.32.3-r1 9999: A blazing fast wayland wallpaper utility
 gui-apps/hyprland-split-monitor-workspaces 0.32.3 9999: A small plugin to provide awesome/dwm-like behavior with workspaces
 gui-apps/hyprpaper 0.5.0 0.6.0: A blazing fast wayland wallpaper utility
@@ -1457,9 +1457,9 @@ gui-apps/nwg-drawer 0.4.2 0.4.3: Application drawer for wlroots-based Wayland co
 gui-apps/nwg-icon-picker 0.1.0 0.1.0-r1 9999: GTK icon chooser with a text search option
 gui-apps/nwg-launchers 0.5.0 0.6.3 0.7.1.1 9999: GTK+ launchers for sway, i3 and some other WMs
 gui-apps/nwg-menu 0.1.1: enuStart plugin to nwg-panel, also capable of working standalone
-gui-apps/nwg-panel 0.9.17 0.9.18 0.9.19 9999: GTK3-based panel for sway and Hyprland Wayland compositors
-gui-apps/nwg-shell 0.5.24 0.5.25: libraries an common functions for the nwg-shell project
-gui-apps/nwg-shell-config 0.5.29 0.5.30: nwg-shell configuration utility
+gui-apps/nwg-panel 0.9.19 0.9.20 9999: GTK3-based panel for sway and Hyprland Wayland compositors
+gui-apps/nwg-shell 0.5.25 0.5.26: libraries an common functions for the nwg-shell project
+gui-apps/nwg-shell-config 0.5.30 0.5.31: nwg-shell configuration utility
 gui-apps/organicmaps 9999: Offline maps and navigation using OpenStreetMap data
 gui-apps/packettracer 8.2.0: Cisco's packet tracer
 gui-apps/paperde 0.1.1_p20210426 9999: Simple, sleek QT based DE for wayland using wayfire
@@ -1496,7 +1496,7 @@ gui-apps/wmenu 0.1.4: dynamic menu for wlroots compositors, maintains the look a
 gui-apps/wob 0.14.2 0.15.1: Lightweight overlay volume/backlight/progress/anything bar for Wayland
 gui-apps/wscreensaver 9999: Xscreensaver screensavers ported to wayland
 gui-apps/wtype 0.4: xdotool type for wayland
-gui-apps/xremap 0.8.12: Dynamic key remap for X and Wayland
+gui-apps/xremap 0.8.14: Dynamic key remap for X and Wayland
 gui-apps/yambar 1.9.0 1.10.0 9999: Simplistic and highly configurable status panel for X and Wayland
 gui-libs/cubegui 4.7-r2: CUBE Uniform Behavioral Encoding GUI
 gui-libs/libcprime 4.2.0 4.2.2 9999: Library for managing settings of CoreApps
@@ -1684,7 +1684,7 @@ net-client/offpunk 1.8 1.9.1: Offline-First Gemini/Web/Gopher/RSS reader and bro
 net-client/starfish 1.2.0 1.3.1: A Gemini browser for elementary OS
 net-client/telescope 0.7.1 0.8.1: w3m-like browser for Gemini
 net-dialup/atinout 0.9.1-r1: AT commands as input are sent to modem and responses given as output
-net-dialup/minimodem 0.24: General-purpose software audio FSK modem
+net-dialup/minimodem 0.24-r1 9999: General-purpose software audio FSK modem
 net-dialup/tcpser 1.1.4: Hayes Smartmodem emulator over TCP/IP
 net-dialup/tio 2.7: Simple TTY terminal application
 net-dns/AdGuardHome 0.107.43: Network-wide ads & trackers blocking DNS server like Pi-Hole with web ui
@@ -1696,7 +1696,7 @@ net-im/abaddon 0.1.12-r1 0.1.13 9999: Alternative Discord client using GTK inste
 net-im/axolotl-bin 2.0.1: Axolotl is a cross-platform Signal client
 net-im/chatterino 2.4.6: Chat client for https://twitch.tv
 net-im/conduit 0.6.0 0.6.0-r1: A Matrix homeserver written in Rust
-net-im/discord-canary-bin 0.0.235: All-in-one voice and text chat
+net-im/discord-canary-bin 0.0.244: All-in-one voice and text chat
 net-im/discord-ptb-bin 0.0.29: All-in-one voice and text chat
 net-im/eturnal 1.12.0: STUN/TURN server
 net-im/gajim-plugins 9999: Plugins developed fro Gajim XMPP client
@@ -2008,8 +2008,8 @@ sys-fs/btrfs-heatmap 9-r1: Python 3 script to draw a heatmap of a btrfs filesyst
 sys-fs/ddrescueview 0.4.5: Graphical viewer for GNU ddrescue mapfiles
 sys-fs/diskonaut 0.10.0 0.11.0 9999: Terminal disk space visual navigator
 sys-fs/dua-cli 2.23.0 2.25.0: A tool to conveniently learn about the disk usage of directories, fast!
-sys-fs/dwarfs 0.7.4-r2: A fast very high compression read-only FUSE file system
-sys-fs/dwarfs-bin 0.7.4: Static version of a fast very high compression read-only FUSE file system
+sys-fs/dwarfs 0.7.4-r3: A fast very high compression read-only FUSE file system
+sys-fs/dwarfs-bin 0.7.4-r1: Static version of a fast very high compression read-only FUSE file system
 sys-fs/gcsfuse 1.2.0: A user-space file system for interacting with Google Cloud Storage
 sys-fs/gdu 5.14.0 5.25.0: Disk usage analyzer with console interface written in Go
 sys-fs/gfs2-utils 3.4.1: Shared-disk cluster file system
@@ -2076,7 +2076,7 @@ www-apps/snac 2.25 2.26: A simple, minimalistic ActivityPub instance
 www-apps/uwebsockets 20.11.0 20.14.0 9999: ultra fast, simple, secure & standards compliant web I/O
 www-apps/whoogle-search 0.8.3-r3 0.8.4-r3: A self-hosted, ad-free, privacy-respecting metasearch engine
 www-apps/zola 0.17.2: A fast static site generator with everything built-in
-www-client/badwolf 1.2.2 1.3.0 9999: Minimalist and privacy-oriented WebKitGTK+ browser
+www-client/badwolf 1.3.0 9999: Minimalist and privacy-oriented WebKitGTK+ browser
 www-client/browsh 1.8.2: A fully-modern text-based browser, rendering to TTY and browsers
 www-client/nyxt 3.8.0 3.9.0 9999: Nyxt - the hacker's power-browser
 www-client/vimb 3.6.0 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit

@@ -1,0 +1,15 @@
+BDEPEND=app-arch/unzip app-alternatives/ninja >=dev-util/cmake-3.20.5
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare test
+DEPEND=media-libs/libpng:= media-libs/libsdl2:= media-libs/sdl2-mixer:= media-libs/sdl2-ttf:=
+DESCRIPTION=rewrite of the jump-and-run platformer Doukutsu Monogatari(Cave Story)
+EAPI=8
+HOMEPAGE=https://github.com/nxengine/nxengine-evo http://nxengine.sourceforge.net/
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=xdg cmake
+KEYWORDS=~amd64
+LICENSE=GPL-3 freedist
+RDEPEND=media-libs/libpng:= media-libs/libsdl2:= media-libs/sdl2-mixer:= media-libs/sdl2-ttf:=
+SLOT=0
+SRC_URI=https://github.com/nxengine/nxengine-evo/archive/v2.6.5-1.tar.gz -> nxengine-evo-2.6.5-1.tar.gz https://www.cavestory.org/downloads/cavestoryen.zip
+_eclasses_=xdg-utils	baea6080dd821f5562d715887954c9d3	xdg	4a14c5c24f121e7da66e5aab4a168c6e	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	78cf3cc2d5572fddf5e5e10c70f7c81a	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	cmake	6ce0fba8085ef5b349c3a2e185305098
+_md5_=f3293675954b0ff4e697ff0e4d0b49e3
