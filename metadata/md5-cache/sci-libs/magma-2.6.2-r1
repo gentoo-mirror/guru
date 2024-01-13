@@ -1,4 +1,4 @@
-BDEPEND=virtual/pkgconfig doc? ( >=app-doc/doxygen-1.8.14-r1[dot] ) app-alternatives/ninja >=dev-util/cmake-3.20.5 virtual/fortran
+BDEPEND=virtual/pkgconfig doc? ( >=app-text/doxygen-1.8.14-r1[dot] ) app-alternatives/ninja >=dev-util/cmake-3.20.5 virtual/fortran
 DEFINED_PHASES=compile configure install prepare setup test
 DEPEND=sci-libs/hipBLAS openblas? ( sci-libs/openblas ) !openblas? ( virtual/blas virtual/lapack ) || ( dev-lang/python:3.11 dev-lang/python:3.10 ) dev-util/hip virtual/fortran
 DESCRIPTION=Matrix Algebra on GPU and Multicore Architectures
@@ -14,4 +14,4 @@ RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://icl.cs.utk.edu/projectsfiles/magma/downloads/magma-2.6.2.tar.gz
 _eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	78cf3cc2d5572fddf5e5e10c70f7c81a	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	6ce0fba8085ef5b349c3a2e185305098	fortran-2	40c4450f1c4ecb2ee694d96e1958d4ea	python-utils-r1	042f4cc53680245bf99a84669b94155a	python-any-r1	f5169813d1619761b459800587005fd2
-_md5_=62e5eda5a878d79858a581b473e349d6
+_md5_=835649484398d396bd2c268bc4f1ffca

@@ -1,4 +1,4 @@
-BDEPEND=apidoc? ( app-doc/doxygen dev-texlive/texlive-fontutils ) doc? ( || ( ( dev-lang/python:3.12 dev-python/insipid-sphinx-theme[python_targets_python3_12(-)] dev-python/sphinx[python_targets_python3_12(-)] ) ( dev-lang/python:3.11 dev-python/insipid-sphinx-theme[python_targets_python3_11(-)] dev-python/sphinx[python_targets_python3_11(-)] ) ( dev-lang/python:3.10 dev-python/insipid-sphinx-theme[python_targets_python3_10(-)] dev-python/sphinx[python_targets_python3_10(-)] ) ) ) test? ( || ( dev-lang/python:3.12 dev-lang/python:3.11 dev-lang/python:3.10 ) ) >=dev-util/meson-1.2.1 app-alternatives/ninja dev-util/meson-format-array
+BDEPEND=apidoc? ( app-text/doxygen dev-texlive/texlive-fontutils ) doc? ( || ( ( dev-lang/python:3.12 dev-python/insipid-sphinx-theme[python_targets_python3_12(-)] dev-python/sphinx[python_targets_python3_12(-)] ) ( dev-lang/python:3.11 dev-python/insipid-sphinx-theme[python_targets_python3_11(-)] dev-python/sphinx[python_targets_python3_11(-)] ) ( dev-lang/python:3.10 dev-python/insipid-sphinx-theme[python_targets_python3_10(-)] dev-python/sphinx[python_targets_python3_10(-)] ) ) ) test? ( || ( dev-lang/python:3.12 dev-lang/python:3.11 dev-lang/python:3.10 ) ) >=dev-util/meson-1.2.1 app-alternatives/ninja dev-util/meson-format-array
 DEFINED_PHASES=compile configure install postinst postrm prepare setup test
 DEPEND=dev-cpp/eigen:3 >=dev-cpp/indicators-2.3-r1 >=dev-cpp/pcg-cpp-0.98.1_p20210406-r1 >=dev-libs/cxxopts-3
 DESCRIPTION=Program for docking ligands to proteins and nucleic acids
@@ -13,4 +13,4 @@ RESTRICT=test
 SLOT=0/0.2.0
 SRC_URI=https://gitlab.com/Jukic/cmdock/-/archive/v0.2.0/cmdock-v0.2.0.tar.bz2
 _eclasses_=boinc-app	f9160f6b789f681ddcc7ecf54928ae47	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	78cf3cc2d5572fddf5e5e10c70f7c81a	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	042f4cc53680245bf99a84669b94155a	meson	0e160eeba59c15ec333bd675cecdfdc9	optfeature	222cb475c5a4f7ae7cfb0bf510a6fe54	python-any-r1	f5169813d1619761b459800587005fd2
-_md5_=783e06f2ca5512aec8b9c8cd53db69dc
+_md5_=29bdb70a3d2e3587f49abe75443e725e

@@ -1,0 +1,17 @@
+BDEPEND=app-text/scdoc test? ( lua_single_target_luajit? ( dev-lua/busted[lua_targets_luajit(-)] ) lua_single_target_lua5-1? ( dev-lua/busted[lua_targets_lua5-1(-)] ) )
+DEFINED_PHASES=compile install setup
+DEPEND=>=app-editors/neovim-0.9.0[-nvimpager] app-shells/bash
+DESCRIPTION=Use nvim as a pager to view manpages, diff, etc with nvim's syntax highlighting.
+EAPI=8
+HOMEPAGE=https://github.com/lucc/nvimpager
+INHERIT=lua-single
+IUSE=test lua_single_target_luajit lua_single_target_lua5-1
+KEYWORDS=~amd64 ~x86
+LICENSE=BSD-2
+RDEPEND=>=app-editors/neovim-0.9.0[-nvimpager] app-shells/bash
+REQUIRED_USE=test? ( ^^ ( lua_single_target_luajit lua_single_target_lua5-1 ) )
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/lucc/nvimpager/archive/v0.12.0.tar.gz -> nvimpager-0.12.0.tar.gz
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	lua-utils	d37a16dbcc1f07f71bc48da75ed7a0cb	lua-single	86d497a20c93c7ce83af442f627515c1
+_md5_=ff608ce1a1d8d4fc735ddfd87c3c9f6a

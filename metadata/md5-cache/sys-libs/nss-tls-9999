@@ -1,4 +1,4 @@
-BDEPEND=dev-libs/glib net-libs/libsoup sys-libs/glibc[nscd(+)] dev-util/meson dev-util/ninja >=dev-vcs/git-1.8.2.1[curl] >=dev-util/meson-1.2.1 app-alternatives/ninja dev-util/meson-format-array virtual/pkgconfig
+BDEPEND=dev-libs/glib net-libs/libsoup sys-libs/glibc[nscd(+)] app-alternatives/ninja dev-util/meson >=dev-vcs/git-1.8.2.1[curl] >=dev-util/meson-1.2.1 app-alternatives/ninja dev-util/meson-format-array virtual/pkgconfig
 DEFINED_PHASES=compile configure install postinst prepare test unpack
 DEPEND=dev-libs/glib net-libs/libsoup sys-libs/glibc[nscd(+)]
 DESCRIPTION=A DNS over HTTPS resolver for glibc
@@ -11,4 +11,4 @@ PROPERTIES=live
 RDEPEND=dev-libs/glib net-libs/libsoup
 SLOT=0
 _eclasses_=git-r3	86fa1f157b70b9d2ff340c4633b1cf4b	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	eapi8-dosym	5ac4857ad078256d939c44f7c64197a9	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	042f4cc53680245bf99a84669b94155a	meson	0e160eeba59c15ec333bd675cecdfdc9	systemd	c8b03e8df84486aa991d4396686e8942
-_md5_=2306551223db27cabad6ef8e451f606b
+_md5_=312f6b7b9164a57f41ed824358382fe4
