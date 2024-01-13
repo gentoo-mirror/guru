@@ -1,4 +1,4 @@
-BDEPEND=net-libs/rpcsvc-proto sys-apps/lsb-release sys-devel/bmake virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=net-libs/rpcsvc-proto sys-apps/lsb-release dev-build/bmake virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=unpack
 DEPEND=net-libs/libtirpc sys-libs/libcap sys-libs/libseccomp x11-drivers/nvidia-drivers
 DESCRIPTION=NVIDIA container runtime library
@@ -10,4 +10,4 @@ PROPERTIES=live
 RDEPEND=net-libs/libtirpc sys-libs/libcap sys-libs/libseccomp x11-drivers/nvidia-drivers
 SLOT=0
 _eclasses_=git-r3	86fa1f157b70b9d2ff340c4633b1cf4b
-_md5_=5ca5945da5f7305a77a417caca8b0517
+_md5_=64683132fc77a086b40a972ec33049df

@@ -1,4 +1,4 @@
-BDEPEND=sys-devel/bmake
+BDEPEND=dev-build/bmake
 DEFINED_PHASES=compile configure install prepare test
 DEPEND=app-crypt/libmd virtual/libcrypt test? ( net-misc/curl[static-libs(-)] )
 DESCRIPTION=Minimal CGI library for web applications
@@ -13,4 +13,4 @@ RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://kristaps.bsd.lv/kcgi/snapshots/kcgi-0.13.0.tgz
 _eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	78cf3cc2d5572fddf5e5e10c70f7c81a	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe
-_md5_=066ceb45922b284730e4988eea0459d8
+_md5_=5c3fec9bbc03d3b7884a82fa5c075571
