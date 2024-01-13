@@ -1,4 +1,4 @@
-BDEPEND=virtual/fortran virtual/pkgconfig sys-devel/make >=dev-util/cmake-3.20.5 virtual/fortran test? ( x11-base/xorg-server[xvfb] x11-apps/xhost )
+BDEPEND=virtual/fortran virtual/pkgconfig dev-build/make >=dev-util/cmake-3.20.5 virtual/fortran test? ( x11-base/xorg-server[xvfb] x11-apps/xhost )
 DEFINED_PHASES=compile configure install prepare setup test
 DEPEND=x11-libs/gtk+:3 plplot? ( >=sci-libs/plplot-5.15.0[cairo,fortran] ) virtual/fortran
 DESCRIPTION=A GTK+ binding to build Graphical User Interfaces in Fortran
@@ -13,5 +13,5 @@ REQUIRED_USE=plplot? ( high-level )
 RESTRICT=!test? ( test ) !test? ( test )
 SLOT=3
 SRC_URI=https://github.com/vmagnin/gtk-fortran/archive/v3.24.31.tar.gz -> gtk-fortran-3.24.31.tar.gz
-_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	78cf3cc2d5572fddf5e5e10c70f7c81a	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	6ce0fba8085ef5b349c3a2e185305098	fortran-2	40c4450f1c4ecb2ee694d96e1958d4ea	virtualx	817571665ee28575da44ee08135089e5
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	78cf3cc2d5572fddf5e5e10c70f7c81a	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	b7ccad6f1800c4ea58dbbdafb0b1b5e0	fortran-2	40c4450f1c4ecb2ee694d96e1958d4ea	virtualx	817571665ee28575da44ee08135089e5
 _md5_=c10c254de2791195a75f10b3cdb7c173
