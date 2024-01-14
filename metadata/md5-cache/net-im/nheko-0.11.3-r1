@@ -1,4 +1,4 @@
-BDEPEND=dev-qt/linguist-tools:5 doc? ( app-text/doxygen[dot] ) man? ( || ( app-text/asciidoc dev-ruby/asciidoctor ) ) app-alternatives/ninja >=dev-util/cmake-3.20.5
+BDEPEND=dev-qt/linguist-tools:5 doc? ( app-text/doxygen[dot] ) man? ( || ( app-text/asciidoc dev-ruby/asciidoctor ) ) app-alternatives/ninja >=dev-build/cmake-3.20.5
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare test
 DEPEND=app-text/cmark:= >=dev-cpp/blurhash-0.2.0:= dev-cpp/cpp-httplib:=[ssl] dev-db/lmdb:= dev-libs/libfmt:= >=dev-libs/mtxclient-0.9.0:= dev-libs/olm >=dev-libs/qtkeychain-0.12.0:=[qt5] dev-libs/spdlog:= dev-qt/qtcore:5 dev-qt/qtdbus:5 dev-qt/qtdeclarative:5[widgets] dev-qt/qtgui:5[jpeg?,png] dev-qt/qtmultimedia:5[qml] dev-qt/qtnetwork:5 dev-qt/qtsvg:5 dev-qt/qtwidgets:5 voip? ( dev-libs/glib:2 >=media-libs/gst-plugins-bad-1.18:1.0 >=media-libs/gst-plugins-base-1.18:1.0 >=media-libs/gstreamer-1.18:1.0 video? ( X? ( x11-libs/libxcb:= x11-libs/xcb-util-wm ) ) ) dev-cpp/nlohmann_json >=dev-db/lmdb++-1.0.0 dev-qt/qtconcurrent:5
 DESCRIPTION=Desktop client for the Matrix protocol
@@ -13,5 +13,5 @@ RDEPEND=app-text/cmark:= >=dev-cpp/blurhash-0.2.0:= dev-cpp/cpp-httplib:=[ssl] d
 REQUIRED_USE=video? ( voip )
 SLOT=0
 SRC_URI=https://nheko.im/nheko-reborn/nheko/-/archive/v0.11.3/nheko-v0.11.3.tar.bz2
-_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	78cf3cc2d5572fddf5e5e10c70f7c81a	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	b7ccad6f1800c4ea58dbbdafb0b1b5e0	optfeature	222cb475c5a4f7ae7cfb0bf510a6fe54	xdg	4a14c5c24f121e7da66e5aab4a168c6e
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	78cf3cc2d5572fddf5e5e10c70f7c81a	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	c7c9a62d6232cac66d4ea32d575c3e7c	optfeature	222cb475c5a4f7ae7cfb0bf510a6fe54	xdg	4a14c5c24f121e7da66e5aab4a168c6e
 _md5_=981d5633cab221822e0459c3ee09b67c

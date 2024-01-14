@@ -1,4 +1,4 @@
-BDEPEND=app-text/doxygen[dot] app-alternatives/ninja >=dev-util/cmake-3.20.5
+BDEPEND=app-text/doxygen[dot] app-alternatives/ninja >=dev-build/cmake-3.20.5
 DEFINED_PHASES=compile configure install prepare test
 DEPEND=benchmark? ( dev-cpp/benchmark ) codipack? ( sci-libs/CoDiPack ) ginkgo? ( sci-libs/ginkgo ) hip? ( sci-libs/hipSPARSE dev-util/hip ) lapack? ( virtual/blas virtual/lapack ) metis? ( sci-libs/metis ) mpfr? ( dev-libs/mpfr ) mpi? ( sci-libs/hypre[mpi] virtual/mpi[cxx] ) mumps? ( sci-libs/mumps[mpi] ) netcdf? ( sci-libs/netcdf ) petsc? ( sci-mathematics/petsc[mpi] ) slepc? ( sci-mathematics/slepc[mpi] ) sparse? ( sci-libs/amd sci-libs/btf sci-libs/camd sci-libs/ccolamd sci-libs/cholmod sci-libs/colamd sci-libs/klu sci-libs/umfpack ) ssl? ( net-libs/gnutls ) strumpack? ( sci-libs/STRUMPACK ) sundials? ( sci-libs/sundials mpi? ( sci-libs/sundials[hypre,mpi] ) ) superlu? ( sci-libs/superlu_dist ) unwind? ( || ( sys-libs/libunwind sys-libs/llvm-libunwind ) ) zlib? ( sys-libs/zlib )
 DESCRIPTION=Lightweight, general, scalable C++ library for finite element methods
@@ -13,5 +13,5 @@ REQUIRED_USE=hip? ( || ( amdgpu_gfx701 amdgpu_gfx702 amdgpu_gfx704 amdgpu_gfx802
 RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://github.com/mfem/mfem/archive/refs/tags/v4.4.tar.gz -> mfem-4.4.tar.gz
-_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	78cf3cc2d5572fddf5e5e10c70f7c81a	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	b7ccad6f1800c4ea58dbbdafb0b1b5e0
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	78cf3cc2d5572fddf5e5e10c70f7c81a	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	c7c9a62d6232cac66d4ea32d575c3e7c
 _md5_=076744818e5d1e8692ccd64c3eb56240
