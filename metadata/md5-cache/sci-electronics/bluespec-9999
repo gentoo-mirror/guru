@@ -1,4 +1,4 @@
-BDEPEND=dev-haskell/cabal:0= dev-lang/ghc:0= dev-lang/perl dev-util/gperf doc? ( dev-ruby/asciidoctor dev-ruby/asciidoctor-pdf dev-texlive/texlive-bibtexextra dev-texlive/texlive-fontsextra dev-texlive/texlive-fontutils dev-texlive/texlive-latex dev-texlive/texlive-latexextra dev-texlive/texlive-latexrecommended dev-texlive/texlive-plaingeneric ) sys-apps/coreutils sys-devel/autoconf sys-devel/bison sys-devel/flex virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=dev-haskell/cabal:0= dev-lang/ghc:0= dev-lang/perl dev-util/gperf doc? ( dev-ruby/asciidoctor dev-ruby/asciidoctor-pdf dev-texlive/texlive-bibtexextra dev-texlive/texlive-fontsextra dev-texlive/texlive-fontutils dev-texlive/texlive-latex dev-texlive/texlive-latexextra dev-texlive/texlive-latexrecommended dev-texlive/texlive-plaingeneric ) sys-apps/coreutils dev-build/automake sys-devel/bison sys-devel/flex virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile install postinst postrm prepare test unpack
 DEPEND=app-eselect/eselect-bluespec app-shells/tcsh dev-haskell/old-time:0= dev-haskell/regex-compat:0= dev-haskell/split:0= dev-haskell/syb:0= dev-lang/tcl test? ( dev-util/dejagnu sci-electronics/iverilog sci-electronics/systemc sys-process/time )
 DESCRIPTION=Toolchain for the Bluespec Hardware Definition Language
@@ -12,4 +12,4 @@ RDEPEND=app-eselect/eselect-bluespec app-shells/tcsh dev-haskell/old-time:0= dev
 RESTRICT=!test? ( test )
 SLOT=9999
 _eclasses_=git-r3	86fa1f157b70b9d2ff340c4633b1cf4b
-_md5_=4395814a265a3536c464ef7634e0a1a3
+_md5_=cccf1384bb03ccef77b97367f3420d8b

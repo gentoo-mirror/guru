@@ -1,4 +1,4 @@
-BDEPEND=sys-devel/libtool virtual/pkgconfig
+BDEPEND=dev-build/libtool virtual/pkgconfig
 DEFINED_PHASES=configure install postinst
 DESCRIPTION=OpenBGPD is a free implementation of BGPv4
 EAPI=7
@@ -10,4 +10,4 @@ RDEPEND=!!net-misc/quagga acct-group/_bgpd acct-user/_bgpd
 SLOT=0
 SRC_URI=mirror://openbsd/OpenBGPD/openbgpd-6.9p0.tar.gz
 _eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	78cf3cc2d5572fddf5e5e10c70f7c81a	systemd	c8b03e8df84486aa991d4396686e8942
-_md5_=5f5d18720d95aedbe6428fa255a6d16d
+_md5_=9ec562d8c836a83d74198ff804156e50
