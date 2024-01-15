@@ -1,4 +1,4 @@
-BDEPEND=dev-util/cmake clang? ( sys-devel/clang:= ) app-alternatives/ninja >=dev-build/cmake-3.20.5
+BDEPEND=clang? ( sys-devel/clang ) app-alternatives/ninja >=dev-build/cmake-3.20.5
 DEFINED_PHASES=compile configure install postinst prepare test unpack
 DEPEND=app-arch/lz4 <dev-lang/lua-5.1.6:5.1 dev-libs/jansson media-libs/freetype:2 media-libs/glu media-libs/libjpeg-turbo media-libs/libpng media-libs/libsdl2 media-libs/libtheora media-libs/libvorbis media-libs/mesa media-libs/openal media-video/ffmpeg
 DESCRIPTION=FreeSpace2 Source Code Project game engine
@@ -12,4 +12,4 @@ RDEPEND=app-arch/lz4 <dev-lang/lua-5.1.6:5.1 dev-libs/jansson media-libs/freetyp
 SLOT=0
 SRC_URI=https://github.com/scp-fs2open/fs2open.github.com/archive/refs/tags/release_23_2_1.tar.gz -> fs2_open-23.2.1.tar.gz https://github.com/asarium/libRocket/archive/ecd648a43aff8a9f3daf064d75ca5725237d5b38.tar.gz -> fs2_open-23.2.1-ext_libRocket.tar.gz https://github.com/asarium/cmake-modules/archive/7cef9577d6fc35057ea57f46b4986a8a28aeff50.tar.gz -> fs2_open-23.2.1-ext_rpavlik-cmake-modules.tar.gz
 _eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	78cf3cc2d5572fddf5e5e10c70f7c81a	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	c7c9a62d6232cac66d4ea32d575c3e7c
-_md5_=970ba734196911575f842ec3d3ad7469
+_md5_=85304db978a5f8c6c2ed9864f6d71731

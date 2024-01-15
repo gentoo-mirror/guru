@@ -99,7 +99,7 @@ app-admin/pass-audit 1.2: A pass extension for auditing your password repository
 app-admin/pass-update 2.1: pass extension that provides an easy flow for updating passwords
 app-admin/pulumi-bin 3.99.0 3.100.0 3.101.0 3.101.1: Infrastructure as code in any programming language
 app-admin/rbw 9999: unofficial bitwarden cli
-app-admin/s-tui 1.1.3-r1 1.1.4: Stress-Terminal UI monitoring tool
+app-admin/s-tui 1.1.4: Stress-Terminal UI monitoring tool
 app-admin/synadm 0.43.1 0.44: Command line admin tool for Synapse
 app-admin/terragrunt-bin 0.38.6 0.45.4 0.50.8: A thin wrapper for Terraform
 app-admin/zenmonitor3 2.0.0: Zen monitor is monitoring software for AMD Zen-based CPUs
@@ -212,7 +212,7 @@ app-misc/cheat 4.2.3 4.3.3-r1: cheat allows you to create and view interactive c
 app-misc/clifm 1.8 1.11 1.13 1.15 9999: The command line file manager
 app-misc/clipboard 0.9.0.1: Cut, copy, and paste anything in your terminal
 app-misc/cliphist 0.4.0: Wayland clipboard manager with support for multimedia
-app-misc/corectrl 1.3.8 9999: Core control application
+app-misc/corectrl 1.3.8 1.3.9 9999: Core control application
 app-misc/cpufetch 1.01 1.02 1.04: Simplistic yet fancy CPU architecture fetching tool
 app-misc/dbf 0.9.0: Command line tool to read the content of dBASE III, IV, and 5.0 files
 app-misc/diff-so-fancy 1.4.3-r1: Good-lookin' diffs. Actually... nah... The best-lookin' diffs
@@ -539,6 +539,7 @@ dev-R/xml2 1.3.3: Work with XML files using a simple, consistent interface
 dev-R/xtable 1.8.4: Export Tables to LaTeX or HTML
 dev-R/yaml 2.3.5: Methods to Convert R Data to YAML and Back
 dev-R/zoo 1.8.10: S3 Infrastructure for Regular and Irregular Time Series (Z's Ordered Observations)
+dev-build/just 1.21.0 1.22.0 1.22.1 1.23.0: Just a command runner (with syntax inspired by 'make')
 dev-cpp/MEL 1.0.0-r1: Math Expression Library
 dev-cpp/blurhash 0.2.0 0.2.0-r1: C++ blurhash encoder/decoder
 dev-cpp/coeurl 0.2.1 0.3.0: A simple async wrapper around CURL for C++
@@ -928,7 +929,6 @@ dev-python/blurhash 1.1.4: Pure-Python implementation of the blurhash algorithm
 dev-python/booleanOperations 0.9.0-r2: Boolean operations on paths
 dev-python/browserstack-local-python 1.2.3: Python bindings for BrowserStack Local
 dev-python/bson 0.5.10: Independent BSON codec for Python that doesn't depend on MongoDB
-dev-python/bump2version 1.0.1: Version-bump your software with a single command!
 dev-python/bumpfontversion 0.4.1: Bumps the version of a font source file
 dev-python/cassowary 0.6: Run Windows Applications on Linux as if they are native (Using a VM and FreeRDP)
 dev-python/celery 5.3.6: Asynchronous task queue/job queue based on distributed message passing
@@ -1265,6 +1265,7 @@ dev-util/bats-support 0.3.0: Supporting library for Bats test helpers
 dev-util/bazelisk 1.12.0: A user-friendly launcher for Bazel
 dev-util/bc-ur 0.3.0: Blockchain Commons UR Library
 dev-util/binaryen 105: Compiler and toolchain infrastructure library for WebAssembly
+dev-util/bump2version 1.0.1: Version-bump your software with a single command!
 dev-util/cargo-make 0.35.9 0.35.10: Rust task runner and build tool
 dev-util/cmakelang 0.6.13: Provides Quality Assurance (QA) tools for cmake
 dev-util/deblob 0.5 0.6 9999: remove binary executables from a directory
@@ -1272,7 +1273,7 @@ dev-util/distribution-gpg-keys 1.100: Collection of GPG keys used in Linux Distr
 dev-util/dockerfile-language-server 0.10.2 0.11.0: A language server for Dockerfiles
 dev-util/eclipse-parallel-bin 4.27 4.28: Eclipse IDE for Scientific Computing (C, C++, Fortran)
 dev-util/exercism 3.1.0: Command line client for https://exercism.io
-dev-util/find-work 0.2.0 0.3.0: Personal advice utility for Gentoo package maintainers
+dev-util/find-work 0.3.0 0.5.0: Personal advice utility for Gentoo package maintainers
 dev-util/fnm 1.32.0 1.33.1: Fast and simple Node.js version manager
 dev-util/fontmake 3.5.1: Compile fonts from sources (UFO, Glyphs) to binary (OpenType, TrueType)
 dev-util/fortls 2.13.0: Fortran Language Server (fortls)
@@ -1341,7 +1342,7 @@ games-arcade/taisei 1.3.2-r2 1.4 9999: Clone of the Touhou series, written in C 
 games-board/fairy-stockfish 14.0.1: Chess variant engine derived from Stockfish to support fairy chess variants
 games-board/openriichi 0.2.1.1: OpenRiichi is an open source Japanese Mahjong client
 games-board/rmahjong 0.4_p20201106: Riichi Mahjong, the Japanese variant of the Chinese game Mahjong for 4 players
-games-emulation/RetroArch 1.15.0: RetroArch is a frontend for emulators, game engines and media players
+games-emulation/RetroArch 1.16.0.3: RetroArch is a frontend for emulators, game engines and media players
 games-emulation/citra 9999: A Nintendo 3DS Emulator
 games-emulation/dosbox-x 2023.10.06 9999: Complete, accurate DOS emulator forked from DOSBox
 games-emulation/duckstation 9999: Fast Sony PlayStation (PSX) emulator
@@ -1695,7 +1696,7 @@ net-im/abaddon 0.1.12-r1 0.1.13 9999: Alternative Discord client using GTK inste
 net-im/axolotl-bin 2.0.1: Axolotl is a cross-platform Signal client
 net-im/chatterino 2.4.6: Chat client for https://twitch.tv
 net-im/conduit 0.6.0 0.6.0-r1: A Matrix homeserver written in Rust
-net-im/discord-canary-bin 0.0.244: All-in-one voice and text chat
+net-im/discord-canary-bin 0.0.248: All-in-one voice and text chat
 net-im/discord-ptb-bin 0.0.29: All-in-one voice and text chat
 net-im/eturnal 1.12.0: STUN/TURN server
 net-im/gajim-plugins 9999: Plugins developed fro Gajim XMPP client
@@ -1755,7 +1756,7 @@ net-misc/gdown 4.7.1: Google Drive direct download of big files
 net-misc/gemget 1.9.0: Command line downloader for the Gemini protocol
 net-misc/gemserv 0.6.5 0.6.6: A gemini Server written in rust
 net-misc/giara 1.0.1 1.1.0: An app for Reddit
-net-misc/gmid 1.8.5 1.8.6 9999: Simple and secure Gemini server
+net-misc/gmid 1.8.6 9999: Simple and secure Gemini server
 net-misc/gnome-ssh-askpass 9.2_p1: GTK-based passphrase dialog for use with OpenSSH
 net-misc/gsocket 1.4.41 9999: Connect like there is no firewall. Securely.
 net-misc/lyrics-in-terminal 1.5.0: Command Line Lyrics fetcher for MPRIS media players
@@ -1907,7 +1908,7 @@ sec-keys/openpgp-keys-emersion 20230421: OpenPGP keys used by Simon Ser
 sec-keys/openpgp-keys-jvoisin 20230224: OpenPGP keys used by Julien Voisin
 sec-keys/openpgp-keys-russallbery 20230000: OpenPGP keys used by Russ Allbery (Eagle)
 sec-keys/openpgp-keys-skyjake 20211224: OpenPGP keys used by Jaakko Keranen
-sec-keys/signify-keys-gmid 1.7 1.8: Signify keys used to sign gmid releases
+sec-keys/signify-keys-gmid 1.8 2.0: Signify keys used to sign gmid releases
 sec-keys/signify-keys-telescope 0.7 0.8: Signify keys used to sign telescope releases
 sys-apps/0xFFFF 0.8 0.9: The 0pen Free Fiasco Firmware Flasher
 sys-apps/CommsPowerManagement 0.2.1: Python library providing various tools to work with Intel processors
@@ -1999,7 +2000,6 @@ sys-cluster/wxparaver 4.10.1: Performance analyzer based on event traces
 sys-devel/fcode-utils 1.0.3: Set of utilities to process FCODE, OpenFirmware's byte code
 sys-devel/gdb-dashboard 0.17.2: Modular visual interface for GDB in Python
 sys-devel/gsl 4.1.5-r1: iMatix GSL code generator
-sys-devel/just 1.21.0 1.22.0 1.22.1 1.23.0: Just a command runner (with syntax inspired by 'make')
 sys-devel/lcc 2021.01.11-r1: The lcc retargetable ANSI C compiler
 sys-firmware/lenovolegionlinux 9999: Lenovo Legion Linux kernel module
 sys-firmware/pinephone-firmware 20210809: Firmwares files for PinePhone

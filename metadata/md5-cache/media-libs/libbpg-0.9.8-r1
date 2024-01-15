@@ -1,4 +1,4 @@
-BDEPEND=dev-lang/yasm dev-util/cmake
+BDEPEND=dev-lang/yasm dev-build/cmake
 DEFINED_PHASES=compile install prepare
 DEPEND=media-libs/libjpeg-turbo:= media-libs/libpng:= sys-process/numactl bpgview? ( media-libs/sdl-image media-libs/libsdl )
 DESCRIPTION=Better Portable Graphics reference implementation
@@ -12,4 +12,4 @@ RDEPEND=media-libs/libjpeg-turbo:= media-libs/libpng:= sys-process/numactl bpgvi
 SLOT=0
 SRC_URI=https://bellard.org/bpg/libbpg-0.9.8.tar.gz
 _eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0
-_md5_=80b40fb30e1ac85105ef6a2f29e89cda
+_md5_=6224e09a6e5c3531f12d8244e7782dc5
