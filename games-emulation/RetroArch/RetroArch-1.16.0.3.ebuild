@@ -1,4 +1,4 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -96,7 +96,8 @@ src_configure() {
 
 	# Note that OpenVG support is hard-disabled. (See ${RDEPEND} above.)
 	./configure \
-		--prefix=/usr \
+		--prefix="${EPREFIX}/usr" \
+		--docdir="${EPREFIX}/usr/share/doc/${PF}" \
 		--enable-dynamic \
 		--disable-vg \
 		$(use_enable 7zip) \
@@ -151,7 +152,7 @@ src_compile() {
 
 src_install() {
 	# Install core files and directories.
-	emake DESTDIR="${ED}" install
+	emake DESTDIR="${D}" install
 
 	# Install documentation.
 	dodoc README.md
