@@ -28,8 +28,8 @@ RDEPEND="
 	net-misc/rsync
 "
 BDEPEND="
-	sys-devel/autoconf
-	sys-devel/automake
+	dev-build/automake
+	dev-build/automake
 "
 
 S="${WORKDIR}/${MY_PN}-${PV}"
