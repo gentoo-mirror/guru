@@ -1,17 +1,17 @@
-# Copyright 2021-2023 Gentoo Authors
+# Copyright 2021-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 inherit cmake
 
-MY_TRANTOR_V="1.5.13"
+MY_TRANTOR_V="1.5.15" # NOTE: needs to be updated on each bump
 
 DESCRIPTION="C++14/17 based HTTP web application framework"
 HOMEPAGE="https://github.com/drogonframework/drogon"
 SRC_URI="
-	https://github.com/drogonframework/drogon/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
-	test? ( https://github.com/an-tao/trantor/archive/refs/tags/v${MY_TRANTOR_V}.tar.gz -> trantor-${MY_TRANTOR_V}.tar.gz )
+	https://github.com/drogonframework/drogon/archive/v${PV}.tar.gz -> ${P}.tar.gz
+	test? ( https://github.com/an-tao/trantor/archive/v${MY_TRANTOR_V}.tar.gz -> trantor-${MY_TRANTOR_V}.tar.gz )
 "
 
 LICENSE="MIT"

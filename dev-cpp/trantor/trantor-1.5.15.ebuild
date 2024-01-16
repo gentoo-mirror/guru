@@ -1,4 +1,4 @@
-# Copyright 2021-2023 Gentoo Authors
+# Copyright 2021-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -7,17 +7,21 @@ inherit cmake
 
 DESCRIPTION="Non-blocking I/O tcp network lib based on c++14/17"
 HOMEPAGE="https://github.com/an-tao/trantor"
-SRC_URI="https://github.com/an-tao/trantor/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/an-tao/trantor/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0/${PV}"
 KEYWORDS="~amd64"
-IUSE="adns doc +ssl test"
+IUSE="adns doc +spdlog +ssl test"
 RESTRICT="!test? ( test )"
 
 RDEPEND="
 	adns? ( net-dns/c-ares:= )
 	ssl? ( dev-libs/openssl:= )
+	spdlog? (
+		dev-libs/spdlog:=
+		dev-libs/libfmt:=
+	)
 "
 DEPEND="
 	${RDEPEND}
@@ -37,6 +41,7 @@ src_configure() {
 		"-DBUILD_TESTING=$(usex test)"
 		"-DBUILD_C-ARES=$(usex adns)"
 		"-DTRANTOR_USE_TLS=$(usex ssl openssl none)"
+		"-DUSE_SPDLOG=$(usex spdlog)"
 	)
 
 	cmake_src_configure
