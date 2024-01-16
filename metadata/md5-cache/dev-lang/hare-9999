@@ -1,13 +1,13 @@
 BDEPEND=app-text/scdoc >=dev-vcs/git-1.8.2.1[curl]
-DEFINED_PHASES=configure unpack
-DEPEND=sys-devel/qbe >=dev-lang/harec-0_pre20220702
+DEFINED_PHASES=configure install unpack
+DEPEND=~dev-lang/harec-9999 ~sys-devel/qbe-9999
 DESCRIPTION=The Hare systems programming language
 EAPI=8
 HOMEPAGE=https://harelang.org/
 INHERIT=git-r3
 LICENSE=MPL-2.0 GPL-3
 PROPERTIES=live
-RDEPEND=sys-devel/qbe >=dev-lang/harec-0_pre20220702
+RDEPEND=~dev-lang/harec-9999 ~sys-devel/qbe-9999
 SLOT=0
 _eclasses_=git-r3	86fa1f157b70b9d2ff340c4633b1cf4b
-_md5_=64eee55734d8228c3d59fa1dee2b6a4c
+_md5_=434e20d5ad869946937e758332cf3045
