@@ -1,4 +1,4 @@
-# Copyright 2021-2023 Gentoo Authors
+# Copyright 2021-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -24,7 +24,7 @@ RDEPEND="
 		media-libs/libsdl2[X?,sound(+),video(+)]
 	)
 	!gui? ( >=dev-libs/sealcurses-2.0.18_pre20230206:= )
-	mp3? ( media-sound/mpg123 )
+	mp3? ( media-sound/mpg123-base )
 	webp? ( media-libs/libwebp:= )
 "
 DEPEND="${RDEPEND}
