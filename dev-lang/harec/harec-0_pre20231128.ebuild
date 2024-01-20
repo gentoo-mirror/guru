@@ -8,7 +8,7 @@ if [[ "${PV}" = "9999" ]]; then
 	EGIT_REPO_URI="https://git.sr.ht/~sircmpwn/harec"
 	S="${WORKDIR}/${P}/build"
 else
-	EGIT_COMMIT="174aef484c0b0067f0a131dc52ee05af1a0e5027"
+	EGIT_COMMIT="ec3193e3870436180b0f3df82b769adc57a1c099"
 	MY_P="${PN}-${EGIT_COMMIT}"
 	SRC_URI="https://git.sr.ht/~sircmpwn/harec/archive/${EGIT_COMMIT}.tar.gz -> ${MY_P}.tar.gz"
 	S="${WORKDIR}/${MY_P}/build"
@@ -21,7 +21,7 @@ HOMEPAGE="https://harelang.org/"
 LICENSE="GPL-3"
 SLOT="0"
 
-DEPEND=">=sys-devel/qbe-1.1"
+DEPEND=">=sys-devel/qbe-1.1-r1"
 RDEPEND="${DEPEND}"
 
 src_unpack() {

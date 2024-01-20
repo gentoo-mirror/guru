@@ -1,7 +1,7 @@
-# Copyright 2022 Gentoo Authors
+# Copyright 2022-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 if [[ "${PV}" = "9999" ]]; then
 	inherit git-r3
@@ -20,7 +20,7 @@ LICENSE="GPL-3"
 IUSE=""
 
 DEPEND="
-	dev-lang/hare:=
+	>=dev-lang/hare-0_pre20231127-r1:=
 "
 RDEPEND="
 	gui-apps/hiprompt-gtk-py
