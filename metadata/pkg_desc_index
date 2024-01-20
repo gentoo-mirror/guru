@@ -86,7 +86,7 @@ app-admin/dotbot 1.20.1: A tool that bootstraps your dotfiles
 app-admin/enpass-desktop-bin 6.7.4.933: A cross-platform, complete password management solution
 app-admin/gentoo_update 0.2.3: Gentoo Linux updater
 app-admin/grub-customizer 5.2.4: A graphical grub2 settings manager
-app-admin/himitsu 0.3 0.4 9999: Secret storage system for Unix, suitable for storing passwords, keys, ...
+app-admin/himitsu 0.4 0.5 9999: Secret storage system for Unix, suitable for storing passwords, keys, ...
 app-admin/himitsu-keyring 0.2.0: graphical frontend for managing a Himitsu key store
 app-admin/himitsu-ssh 0.2 9999: SSH integration for Himitsu
 app-admin/himitsu-totp 9999: TOTP support for Himitsu
@@ -655,8 +655,8 @@ dev-lang/crystal-bin 1.8.2 1.9.2: The Crystal Programming Language
 dev-lang/fbc 1.07.3 1.08.1: A free/open source, multi-platform BASIC compiler.
 dev-lang/fbc-bootstrap 1.07.3 1.08.1: Bootstrap package for dev-lang/fbc
 dev-lang/gnu-apl 1.8: GNU interpreter for the APL programming language
-dev-lang/hare 0_pre20230615 0_pre20230813 9999: The Hare systems programming language
-dev-lang/harec 0_pre20230611 0_pre20230807 9999: The Hare compiler
+dev-lang/hare 0_pre20230813 0_pre20231127-r1 9999: The Hare systems programming language
+dev-lang/harec 0_pre20230807 0_pre20231128 9999: The Hare compiler
 dev-lang/opencilk 1.1: The OpenCilk concurrency platform for parallel programming
 dev-lang/opencilk-bin 1.1: The OpenCilk concurrency platform for parallel programming
 dev-lang/quickjs 2021.03.27: Small embeddable Javascript engine
@@ -1405,7 +1405,7 @@ gnome-extra/portfolio 0.9.14: A minimalist file manager for those who want to us
 gnome-extra/vvmplayer 1.4: Visual Voicemail Player
 gnome-extra/yad 10.1: Display GTK+ dialog boxes from command line or shell scripts
 gui-apps/1password 8.10.16: The world’s most-loved password manager
-gui-apps/ReGreet 0.1.1-r1 9999: A clean and customizable GTK-based greetd greeter written in Rust
+gui-apps/ReGreet 0.1.1-r2 9999: A clean and customizable GTK-based greetd greeter written in Rust
 gui-apps/azote 1.12.3: Wallpaper manager for wlroots-based compositors and some other WMs
 gui-apps/clipman 1.6.2: A basic clipboard manager for Wayland.
 gui-apps/coreaction 4.5.0 9999: A side bar for showing widgets for C Suite
@@ -1521,14 +1521,14 @@ mail-filter/opensmtpd-filter-dkimsign 0.6: OpenSMTPD filter for DKIM signing
 mail-filter/postfix-mta-sts-resolver 1.4.0: Daemon which provides TLS client policy for Postfix via socketmap
 media-fonts/3270font 2.3.1: A IBM 3270 Terminal font in a modern format
 media-fonts/blobmoji 15.0: Noto Emoji with extended Blob support
-media-fonts/firacode-nerdfont 2.2.2 3.0.1: A free and open-source typeface for developers
+media-fonts/firacode-nerdfont 2.2.2 3.1.1: A free and open-source typeface for developers
 media-fonts/firago 1.001: A continuation of FiraSans
 media-fonts/firge 0.3.0: Firge is a composite font of Fira Mono and GenShin-Gothic.
 media-fonts/gohufont 2.1_p20170627: A monospace bitmap font
 media-fonts/hackgen 2.9.0: HackGen is a composite font of Hack and GenJyuu-Gothic.
 media-fonts/inconsolata_dz 20201205: A beautiful sans-serif monotype font designed for code listings
-media-fonts/iosevka-nerdfont 2.2.2 2.3.3 3.0.1: A free and open-source typeface for developers
-media-fonts/jetbrainsmono-nerdfont 2.2.2 3.0.1: A free and open-source typeface for developers
+media-fonts/iosevka-nerdfont 2.2.2 2.3.3 3.1.1: A free and open-source typeface for developers
+media-fonts/jetbrainsmono-nerdfont 2.2.2 3.1.1: A free and open-source typeface for developers
 media-fonts/last-resort 15.000 15.100: A collection of glyphs used as the backup of "last resort" to any other font
 media-fonts/lato 2: Lato font
 media-fonts/libertinus 7.040: Libertinus font
@@ -1536,12 +1536,12 @@ media-fonts/linja-pona 4.2 4.9: Font for sitelen pona, a script for toki pona
 media-fonts/linja-wawa 1.21: Font for sitelen pona, a script for toki pona
 media-fonts/overpass 3.0.4: An open source webfont family inspired by Highway Gothic
 media-fonts/plemoljp 1.6.0: PlemolJP is a composite font of IBM Plex Mono and IBM Plex Sans JP.
-media-fonts/robotomono-nerdfont 2.2.2 3.0.1: A free and open-source typeface for developers
+media-fonts/robotomono-nerdfont 2.2.2 3.1.1: A free and open-source typeface for developers
 media-fonts/source-han-mono 1.002: Pan-CJK OpenType/CFF mono font family
 media-fonts/source-han-serif 2.001 2.002: Pan-CJK OpenType/CFF font family
 media-fonts/symbola 7.17 13.00: Unicode font for Latin, IPA Extensions, Greek, Cyrillic and many Symbol Blocks
 media-fonts/twemoji 14.0.2: A color emoji font with a flat visual style, designed and used by Twitter
-media-fonts/ubuntumono-nerdfont 2.2.2 3.0.1: A free and open-source typeface for developers
+media-fonts/ubuntumono-nerdfont 2.2.2 3.1.1: A free and open-source typeface for developers
 media-fonts/udev-gothic 1.3.1-r1: UDEV Gothic is a composite font of BIZ UD Gothic and JetBrains Mono.
 media-fonts/unscii 2.1: Set of bitmapped Unicode fonts based on classic system fonts
 media-fonts/victor-mono 1.5.4 1.5.5: A free programming font with cursive italics and ligatures
@@ -1752,7 +1752,7 @@ net-misc/eg25-manager 0.4.2: Daemon for managing the Quectel EG25 modem
 net-misc/facebook-ptp 0_pre20211123: Facebook's PTP libraries
 net-misc/fedigroup 1.0.6 1.0.8: Emulate group accounts on Mastodon/Pleroma
 net-misc/freetube-bin 0.17.1 0.19.0 0.19.1: A private YouTube desktop client
-net-misc/gdown 4.7.1 4.7.3: Google Drive direct download of big files
+net-misc/gdown 4.7.3 5.0.0: Google Drive public file/folder downloader
 net-misc/gemget 1.9.0: Command line downloader for the Gemini protocol
 net-misc/gemserv 0.6.5 0.6.6: A gemini Server written in rust
 net-misc/giara 1.0.1 1.1.0: An app for Reddit
@@ -1814,6 +1814,7 @@ net-wireless/rtl8723bu 9999: Driver for the rtl8723 wireless chipset
 net-wireless/rtl8821ce 0_pre20231002: Realtek RTL8821CE Driver module for Linux kernel
 net-wireless/rtl8821cu 0_pre20231126: Realtek 8821CU/RTL8811CU module for Linux kernel
 sci-biology/cmdock 0.2.0 0.2.0-r1: Program for docking ligands to proteins and nucleic acids
+sci-biology/cytoscape-bin 3.10.1: A visualization platform for molecular interaction networks
 sci-biology/geneathome 1.10-r5: BOINC application for expanding Gene Regulatory Networks (GRN)
 sci-biology/jalview-bin 2.11.2.7 2.11.3.2: Editor of multiple sequence alignments.
 sci-chemistry/vesta-bin 3.5.8: Visualisation for Electronic and STructural Analysis.
@@ -1945,7 +1946,7 @@ sys-auth/pam-gnupg 0.3: Unlock GnuPG keys on login
 sys-block/partclone 0.3.20: Partition cloning tool
 sys-boot/customrescuecd-x86-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/customrescuecd-x86_64-grub 0.1: Grub menu entries for the .iso image of customrescuecd
-sys-boot/limine 4.20230503.0 4.20230514.0 4.20230529.0 4.20230530.0 4.20230606.0 4.20230615.0 5.20230811.0 5.20231103.0 5.20231103.0-r1 5.20231121.0 5.20231124.0 6.20231227.0: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
+sys-boot/limine 4.20230503.0 4.20230514.0 4.20230529.0 4.20230530.0 4.20230606.0 4.20230615.0 5.20230811.0 5.20231103.0 5.20231103.0-r1 5.20231121.0 5.20231124.0 6.20231227.0 7.0.0: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
 sys-boot/woeusb-ng 0.2.10: Create Windows installer USB from ISO (rewrite of WoeUSB)
 sys-boot/zfsbootmenu 1.12.0 2.2.0 2.2.1 2.2.2: ZFS bootloader for root-on-ZFS systems
 sys-cluster/AXL 0.5.0 0.7.0: AXL provides a common C interface to transfer files in an HPC storage hierarchy
@@ -2020,7 +2021,7 @@ sys-kernel/dpdk-kmod 21.11.1 22.07 23.03: DPDK Kernel Nic Interface module
 sys-kernel/modprobed-db 2.46: This utility tracks modules loaded by the kernel, for localmodconfig
 sys-kernel/msr-safe 1.6.0: Allows safer access to model specific registers (MSRs)
 sys-kernel/tirdad 0_pre20200926: kernel module for random ISN generation
-sys-kernel/uek-sources 5.15.0.5.70.1 5.15.0.6.80.3 5.15.0.8.91.3 5.15.0.105.125.4 5.15.0.201.135.2 5.15.0.201.135.4 5.15.0.202.135.1 5.15.0.202.135.1-r1 5.15.0.203.135.1: Unbreakable Enterprise Kernel (UEK) sources built from Oracle
+sys-kernel/uek-sources 5.15.0.5.70.1 5.15.0.6.80.3 5.15.0.8.91.3 5.15.0.105.125.4 5.15.0.201.135.2 5.15.0.201.135.4 5.15.0.202.135.1 5.15.0.202.135.1-r1 5.15.0.203.135.1 5.15.0.203.146.3: Unbreakable Enterprise Kernel (UEK) sources built from Oracle
 sys-kernel/ugrd 0.12.1-r1 0.19.1 0.19.3 0.20.0: Python based initramfs generator with TOML defintions
 sys-kernel/usermode-kernel 6.0.12: Linux kernel built with Gentoo patches
 sys-kernel/xow 0.5: Linux driver for the Xbox One wireless dongle

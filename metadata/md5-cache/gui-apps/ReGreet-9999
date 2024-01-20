@@ -1,14 +1,14 @@
-BDEPEND=virtual/rust >=virtual/rust-1.53 >=dev-vcs/git-1.8.2.1[curl]
-DEFINED_PHASES=compile configure install test unpack
-DEPEND=x11-libs/gtk+:3 gtk4? ( gui-libs/gtk )
+BDEPEND=virtual/rust media-libs/graphene >=virtual/rust-1.53 >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=gui-libs/gtk
 DESCRIPTION=A clean and customizable GTK-based greetd greeter written in Rust
 EAPI=8
 HOMEPAGE=https://github.com/rharish101/ReGreet
 INHERIT=cargo git-r3
-IUSE=gtk4 logs debug
+IUSE=logs debug
 LICENSE=GPL-3
 PROPERTIES=live
-RDEPEND=x11-libs/gtk+:3 gtk4? ( gui-libs/gtk ) gui-libs/greetd
+RDEPEND=gui-libs/gtk gui-libs/greetd
 SLOT=0
 _eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	78cf3cc2d5572fddf5e5e10c70f7c81a	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	cargo	73fb2994b06920774024efe3e647a564	git-r3	86fa1f157b70b9d2ff340c4633b1cf4b
-_md5_=fd6feb465644e30624aeb191a02e8e7d
+_md5_=a4737bb5fa2eafc4d2208890c4112436
