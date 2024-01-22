@@ -1,0 +1,15 @@
+BDEPEND=dev-qt/qttools:6[linguist] virtual/pkgconfig
+DEFINED_PHASES=configure install postinst postrm preinst prepare
+DEPEND=dev-qt/qtbase:6[dbus,gui,network,opengl,widgets] media-video/mpv:=[libmpv]
+DESCRIPTION=Media Player Classic Qute Theater
+EAPI=8
+HOMEPAGE=https://mpc-qt.github.io/
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=qmake-utils xdg
+KEYWORDS=~amd64
+LICENSE=GPL-2
+RDEPEND=dev-qt/qtbase:6[dbus,gui,network,opengl,widgets] media-video/mpv:=[libmpv]
+SLOT=0
+SRC_URI=https://github.com/mpc-qt/mpc-qt/archive/refs/tags/v23.12.tar.gz -> mpc-qt-23.12.tar.gz
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	qmake-utils	a8dd17b1d94586164f5e3fc12b1c6b81	xdg-utils	baea6080dd821f5562d715887954c9d3	xdg	4a14c5c24f121e7da66e5aab4a168c6e
+_md5_=c6ba92a79f0168839fb4bc044a0fb94c
