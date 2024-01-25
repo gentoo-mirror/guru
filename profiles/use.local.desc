@@ -64,6 +64,8 @@ app-misc/far2l:ssl - FTPS support in NetRocks
 app-misc/far2l:webdav - WebDav support in NetRocks
 app-misc/far2l:wxwidgets - GUI backend support
 app-text/klogg:lto - Build with link time optimization (LTO).
+dev-build/FoBiS:graphviz - Add support of generation of a dependencies graph
+dev-build/fpm:openmp - OpenMP support to build targets in parallel where possible
 dev-cpp/cpptoml:libcxx - Use libc++ for the C++ standard library
 dev-cpp/dpp:voice - Enable voice-chat support
 dev-cpp/drogon:brotli - Enable support for brotli compression
@@ -234,9 +236,7 @@ dev-python/imgui:sdl - Enable sdl backend
 dev-python/imgui:vulkan - Enable vulkan renderer
 dev-python/python-socketio:asyncio-client - Add async websocket client
 dev-python/python-socketio:client - Add websocket client
-dev-util/FoBiS:graphviz - Add support of generation of a dependencies graph
 dev-util/distribution-gpg-keys:copr - Install GPG keys used by Copr projects
-dev-util/fpm:openmp - OpenMP support to build targets in parallel where possible
 dev-util/gammaray:3d - Build support for Qt5 3D modules
 dev-util/gammaray:designer - Widget .ui file export
 dev-util/gammaray:geolocation - Physical position determination support from Qt5 framework
@@ -585,6 +585,7 @@ net-im/gajim-plugins:pgp - Plugin: Encrypt your messages with PGP (XEP-0027)
 net-im/gajim-plugins:plugins_translations - Plugin: Translation files for Gajim Plugins
 net-im/gajim-plugins:quick_replies - Plugin: Quick replies
 net-im/gajim-plugins:triggers - Plugin: Configure Gajim's behaviour when receiving messages/events
+net-im/gomuks:encryption - End-to-end encryption support with dev-libs/olm
 net-im/jitsi-meet:swiftshader - Use SwiftShader OpenGL graphics
 net-im/mautrix-whatsapp:crypt - Enable end-to-bridge encryption with dev-libs/olm.
 net-im/nheko:video - Enable video calls

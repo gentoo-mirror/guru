@@ -1,6 +1,6 @@
 BDEPEND=virtual/fortran
 DEFINED_PHASES=compile install prepare pretend setup test
-DEPEND=dev-libs/fortran-regex dev-libs/jonquil:0/2 dev-libs/toml-f:0/4 dev-libs/M_CLI2 doc? ( || ( dev-lang/python:3.11 dev-lang/python:3.10 ) || ( ( dev-lang/python:3.11 app-doc/ford[python_targets_python3_11(-)] ) ( dev-lang/python:3.10 app-doc/ford[python_targets_python3_10(-)] ) ) ) virtual/fortran
+DEPEND=dev-libs/fortran-regex dev-libs/jonquil:0/2 dev-libs/toml-f:0/4 dev-libs/M_CLI2 doc? ( || ( dev-lang/python:3.11 dev-lang/python:3.10 ) || ( ( dev-lang/python:3.11 app-text/ford[python_targets_python3_11(-)] ) ( dev-lang/python:3.10 app-text/ford[python_targets_python3_10(-)] ) ) ) virtual/fortran
 DESCRIPTION=Fortran Package Manager (fpm)
 EAPI=8
 HOMEPAGE=https://fpm.fortran-lang.org
@@ -13,4 +13,4 @@ RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://github.com/fortran-lang/fpm/archive/v0.9.0.tar.gz -> fpm-0.9.0.tar.gz https://github.com/fortran-lang/fpm/releases/download/v0.9.0/fpm-0.9.0.F90
 _eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	fortran-2	40c4450f1c4ecb2ee694d96e1958d4ea	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	python-utils-r1	042f4cc53680245bf99a84669b94155a	python-any-r1	f5169813d1619761b459800587005fd2
-_md5_=e72728edc08b3e846701da0f5b51a0fd
+_md5_=a1e97c7672606fee95bd90422976f4dc
