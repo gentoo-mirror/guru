@@ -1,9 +1,9 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{10..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 optfeature pypi
 
@@ -13,7 +13,7 @@ HOMEPAGE="
 	https://github.com/scrapinghub/dateparser
 "
 
-LICENSE="BSD-4"
+LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64"
 
@@ -26,10 +26,12 @@ RDEPEND="
 BDEPEND="test? (
 	dev-libs/fastText[python,${PYTHON_USEDEP}]
 	dev-python/convertdate[${PYTHON_USEDEP}]
-	dev-python/hijri-converter[${PYTHON_USEDEP}]
+	dev-python/hijridate[${PYTHON_USEDEP}]
 	dev-python/langdetect[${PYTHON_USEDEP}]
 	dev-python/parameterized[${PYTHON_USEDEP}]
 )"
+
+PATCHES=( "${FILESDIR}/${P}-migrate-hijridate.patch" )
 
 EPYTEST_IGNORE=(
 	# tests that require network
@@ -39,11 +41,6 @@ EPYTEST_IGNORE=(
 EPYTEST_DESELECT=(
 	# tests that require network
 	tests/test_language_detect.py::CustomLangDetectParserTest::test_custom_language_detect_fast_text_{0,1}
-	# broken
-	tests/test_search.py::TestTranslateSearch::test_relative_base_setting_1_en
-	tests/test_search.py::TestTranslateSearch::test_splitting_of_not_parsed_1_en
-	tests/test_search.py::TestTranslateSearch::test_splitting_of_not_parsed_5_en
-	tests/test_search.py::TestTranslateSearch::test_splitting_of_not_parsed_6_sv
 )
 
 distutils_enable_tests pytest
@@ -52,7 +49,7 @@ distutils_enable_sphinx docs \
 	dev-python/sphinx-rtd-theme
 
 pkg_postinst() {
-	optfeature "calendars support" "dev-python/hijri-converter dev-python/convertdate"
+	optfeature "calendars support" "dev-python/hijridate dev-python/convertdate"
 	optfeature "fasttext support" "dev-libs/fastText[python]"
 	optfeature "langdetect support" dev-python/langdetect
 }

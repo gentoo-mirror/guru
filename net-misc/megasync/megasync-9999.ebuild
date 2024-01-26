@@ -1,4 +1,4 @@
-# Copyright 2023 Gentoo Authors
+# Copyright 2023-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -17,7 +17,7 @@ if [[ ${PV} == 9999 ]];then
 	EGIT_BRANCH="master"
 	EGIT_SUBMODULES=( '*' )
 else
-	MEGA_SDK_REV="6d4c102940dab277974090cd4292e58f08ac6032" # commit of src/MEGASync/mega submodule
+	MEGA_SDK_REV="2e9307d114c379967f415211d466262162e074d4" # commit of src/MEGASync/mega submodule
 	MEGA_TAG_SUFFIX="Win"
 	SRC_URI="
 		https://github.com/meganz/MEGAsync/archive/v${PV}_${MEGA_TAG_SUFFIX}.tar.gz -> ${P}.tar.gz
@@ -37,14 +37,15 @@ DEPEND="
 	dev-libs/libsodium:=
 	dev-libs/libuv:=
 	dev-libs/openssl:0=
-	dev-qt/qtcore:5
-	dev-qt/qtwidgets:5
-	dev-qt/qtgui:5
 	dev-qt/qtconcurrent:5
-	dev-qt/qtnetwork:5
+	dev-qt/qtcore:5
 	dev-qt/qtdbus:5
+	dev-qt/qtdeclarative:5
+	dev-qt/qtgui:5
+	dev-qt/qtnetwork:5
 	dev-qt/qtimageformats:5
 	dev-qt/qtsvg:5
+	dev-qt/qtwidgets:5
 	dev-qt/qtx11extras:5
 	media-libs/libmediainfo
 	media-libs/libraw
@@ -69,18 +70,18 @@ BDEPEND="
 	dolphin? ( kde-frameworks/extra-cmake-modules )
 "
 
+PATCHES=(
+	"${FILESDIR}/${PN}-4.10.0.0_ffmpeg6.patch"
+	"${FILESDIR}/${PN}-4.10.0.0_fix-build.patch"
+)
+
 CMAKE_USE_DIR="${S}/src/MEGAShellExtDolphin"
 
 src_prepare() {
 	if [[ ${PV} != 9999 ]]; then
-		rmdir src/MEGASync/mega
-		mv "${WORKDIR}/sdk-${MEGA_SDK_REV}" src/MEGASync/mega
+		rmdir src/MEGASync/mega || die
+		mv "${WORKDIR}/sdk-${MEGA_SDK_REV}" src/MEGASync/mega || die
 	fi
-
-	if has_version ">=media-video/ffmpeg-6.0"; then
-		eapply "${FILESDIR}/${PN}-4.10.0.0_ffmpeg6.patch"
-	fi
-	eapply "${FILESDIR}/${PN}-4.10.0.0_fix-build.patch"
 
 	if use dolphin; then
 		cmake_src_prepare
@@ -88,20 +89,20 @@ src_prepare() {
 		default
 	fi
 
-	cd "${S}/src/MEGASync/mega"
+	cd "${S}/src/MEGASync/mega" || die
 	eautoreconf
 }
 
 src_configure() {
-	cd "${S}/src/MEGASync/mega"
+	cd "${S}/src/MEGASync/mega" || die
 	econf \
 		"--disable-curl-checks" \
 		"--disable-examples" \
 		$(use_enable threads posix-threads) \
 		$(use_with freeimage)
 
-	cd "${S}/src"
-	local myeqmakeargs=(
+	cd "${S}/src" || die
+	local myqmakeargs=(
 		MEGA.pro
 		CONFIG+="release"
 		$(usex freeimage "" "CONFIG+=nofreeimage")
@@ -110,8 +111,8 @@ src_configure() {
 		$(usev thunar "SUBDIRS+=MEGAShellExtThunar")
 	)
 
-	eqmake5 ${myeqmakeargs[@]}
-	$(qt5_get_bindir)/lrelease MEGASync/MEGASync.pro
+	eqmake5 "${myqmakeargs[@]}"
+	$(qt5_get_bindir)/lrelease MEGASync/MEGASync.pro || die
 
 	use dolphin && cmake_src_configure
 }
@@ -127,8 +128,8 @@ src_install() {
 	dobin "src/MEGASync/${PN}"
 	dodoc CREDITS.md README.md
 
-	rm -rf "${D}"/usr/share/doc/megasync
-	rm -rf "${D}"/usr/share/icons/ubuntu-mono-dark
+	rm -rf "${D}"/usr/share/doc/megasync || die
+	rm -rf "${D}"/usr/share/icons/ubuntu-mono-dark || die
 
 	use dolphin && cmake_src_install
 }

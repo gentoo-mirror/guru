@@ -1,4 +1,4 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{10..12} )
 DOCS_BUILDER="sphinx"
 DOCS_DIR="${S}/docs"
 
-inherit autotools python-any-r1 docs
+inherit meson python-any-r1 docs
 
 DESCRIPTION="Lightweight update client that runs on your Embedded Linux device"
 HOMEPAGE="https://rauc.io/"
@@ -21,8 +21,15 @@ IUSE="gpt json network service test"
 RESTRICT="!test? ( test )"
 
 BDEPEND="
+	${PYTHON_DEPS}
 	dev-util/gdbus-codegen
 	virtual/pkgconfig
+	doc? (
+		$(python_gen_any_dep '
+			dev-python/sphinx[${PYTHON_USEDEP}]
+			dev-python/sphinx-rtd-theme[${PYTHON_USEDEP}]
+		')
+	)
 	test? (
 		dev-libs/opensc
 		net-misc/casync
@@ -44,22 +51,17 @@ DEPEND="
 
 PATCHES=( "${FILESDIR}/${P}-tests.patch" )
 
-src_prepare() {
-	default
-	eautoreconf
-}
-
 src_configure() {
-	local myconf=(
-		$(use_enable gpt)
-		$(use_enable json)
-		$(use_enable network)
-		$(use_enable service)
+	local emesonargs=(
+		$(meson_feature gpt)
+		$(meson_feature json)
+		$(meson_use network)
+		$(meson_use service)
 	)
-	econf "${myconf[@]}"
+	meson_src_configure
 }
 
 src_compile() {
-	default
+	meson_src_compile
 	docs_compile
 }
