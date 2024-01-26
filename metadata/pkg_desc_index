@@ -96,7 +96,7 @@ app-admin/oet 0.1.9 0.1.10 9999: Update your system into binpkgs in an overlay s
 app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applications and tmux
 app-admin/pass-audit 1.2: A pass extension for auditing your password repository.
 app-admin/pass-update 2.1: pass extension that provides an easy flow for updating passwords
-app-admin/pulumi-bin 3.100.0 3.101.0 3.101.1 3.102.0: Infrastructure as code in any programming language
+app-admin/pulumi-bin 3.101.0 3.101.1 3.102.0 3.103.1: Infrastructure as code in any programming language
 app-admin/rbw 9999: unofficial bitwarden cli
 app-admin/s-tui 1.1.4: Stress-Terminal UI monitoring tool
 app-admin/synadm 0.43.1 0.44: Command line admin tool for Synapse
@@ -229,7 +229,7 @@ app-misc/grit 0.3.0: An personal task manager that represents tasks as multitree
 app-misc/hollywood 1.22: Fill your console with Hollywood melodrama technobabble
 app-misc/kloak 0.2.30: A privacy tool that makes keystroke biometrics less effective
 app-misc/kmon 1.6.4: Linux kernel manager and activity monitor
-app-misc/ledger-live 2.66.0 2.68.1 2.71.1 2.73.0 2.73.1: Manager for the Ledger hardware wallet
+app-misc/ledger-live 2.68.1 2.71.1 2.73.0 2.73.1 2.75.0: Manager for the Ledger hardware wallet
 app-misc/lf 27 28-r1 29 30 31: Terminal file manager
 app-misc/lyfetch 1.1: Small system information script for linux systems.
 app-misc/macchina 6.1.8 6.1.8-r1: A system information fetcher, with an (unhealthy) emphasis on performance.
@@ -624,7 +624,7 @@ dev-embedded/freertos-gdb 1.0.2: Python module for operating with freeRTOS-kerne
 dev-embedded/idf-component-manager 1.4.1: Tool for installing ESP-IDF components
 dev-embedded/mv88e6xxx-dump 0.2.0_pre20210327: Dump information about Marvell mv88e6xxx Ethernet switches
 dev-embedded/qdl 1.0 9999: Tool to communicate with Qualcomm System On a Chip bootroms
-dev-embedded/rauc 1.10.1: Lightweight update client that runs on your Embedded Linux device
+dev-embedded/rauc 1.11.1: Lightweight update client that runs on your Embedded Linux device
 dev-embedded/squareline-studio 1.3.2: Visual drag-and-drop UI editor for LVGL
 dev-erlang/conf 0.2.6: YAML configuration for Erlang applications
 dev-erlang/cowboy 2.9.0: Small, fast, modern HTTP server for Erlang/OTP.
@@ -961,8 +961,8 @@ dev-python/daiquiri 3.2.3: Library to configure Python logging easily
 dev-python/darkdetect 0.8.0: Detect OS dark mode from Python
 dev-python/dasbus 1.7: DBus library in Python 3
 dev-python/dataclasses_json 0.5.7 0.5.14: Easily serialize Data Classes to and from JSON
-dev-python/dateparser 1.1.7 1.1.8: Date parsing library designed to parse dates from HTML pages
-dev-python/decopatch 1.4.9 1.4.10: Create decorators easily in python
+dev-python/dateparser 1.2.0: Date parsing library designed to parse dates from HTML pages
+dev-python/decopatch 1.4.10: Create decorators easily in python
 dev-python/defcon 0.10.2: A set of UFO based objects for use in font editing applications
 dev-python/desktop-notifier 3.5.6: desktop-notifier is a Python library for cross-platform desktop notifications
 dev-python/devtools 0.10.0-r1: Dev tools for python
@@ -1020,8 +1020,7 @@ dev-python/guidata 2.3.1 3.2.2: Library for user interfaces for easy dataset edi
 dev-python/guiqwt 4.4.5: Efficient 2D plotting Python library based on PythonQwt
 dev-python/guppy3 3.1.3-r1 3.1.4: A Python Programming Environment & Heap analysis toolset
 dev-python/hachoir 3.2.0 3.3.0: Hachoir is a Python library to view and edit a binary stream field by field
-dev-python/hijri-converter 2.2.4: Accurate Hijri-Gregorian date converter based on the Umm al-Qura calendar
-dev-python/hijridate 2.3.0: Accurate Hijri-Gregorian date converter based on the Umm al-Qura calendar
+dev-python/hijridate 2.4.1: Accurate Hijri-Gregorian date converter based on the Umm al-Qura calendar
 dev-python/hstspreload 2021.12.1: Chromium HSTS Preload list as a Python package
 dev-python/http-ece 1.1.0: Encrypted Content Encoding for HTTP
 dev-python/hunter 3.6.0: Hunter is a flexible code tracing toolkit
@@ -1095,7 +1094,7 @@ dev-python/protego 0.3.0: Pure-Python robots.txt parser with support for modern 
 dev-python/proxy_tools 0.1.0_p1: Simple proxy (as in the GoF design pattern)
 dev-python/psautohint 2.4.0-r1: Python wrapper for Adobe's PostScript autohinter
 dev-python/psycopg2cffi 2.9.0-r1: Implementation of the psycopg2 module using cffi. Compatible with Psycopg 2.5.
-dev-python/pure-protobuf 2.2.3 2.3.0: Python implementation of Protocol Buffers data types with dataclasses support
+dev-python/pure-protobuf 2.3.0: Python implementation of Protocol Buffers data types with dataclasses support
 dev-python/py-nanoid 9999: Python Nanoid
 dev-python/pyagentx 0.4: Python AgentX Implementation
 dev-python/pybrowserstack-screenshots 0.1-r1: A python api wrapper and client for Browserstack Screenshots API
@@ -1108,7 +1107,7 @@ dev-python/pygaljs 1.0.2-r1: Python package providing assets from https://github
 dev-python/pygments-promql 0.0.9: A PromQL lexer for Pygments
 dev-python/pygsl 2.3.3: Python interface for the GNU scientific library (gsl)
 dev-python/pykeepass 4.0.2: Python library to interact with keepass databases (supports KDBX3 and KDBX4)
-dev-python/pymeeus 0.5.11 0.5.12: Python implementation of Jean Meeus astronomical routines
+dev-python/pymeeus 0.5.12: Python implementation of Jean Meeus astronomical routines
 dev-python/pymemcache 4.0.0: A comprehensive, fast, pure-Python memcached client
 dev-python/pymorphy2 0.9.1: Morphological analyzer (POS tagger + inflection engine) for Russian language.
 dev-python/pymorphy2-dicts 2.4.393442.3710985: Russian dictionary for PyMorphy2
@@ -1127,7 +1126,7 @@ dev-python/pysnooper 1.1.1 1.2.0: Never use print for debugging again
 dev-python/pystardict 0.8-r1: Library for manipulating StarDict dictionaries from within Python
 dev-python/pysubs2 1.4.4 1.5.0 1.6.1: A library for editing subtitle files
 dev-python/pytest-benchmark 4.0.0: py.test fixture for benchmarking code
-dev-python/pytest-cases 3.6.13 3.6.14: Separate test code from test cases in pytest
+dev-python/pytest-cases 3.8.2: Separate test code from test cases in pytest
 dev-python/pytest-celery 0.1.0: a shim pytest plugin to enable celery.contrib.pytest
 dev-python/pytest-click 1.1.0: Pytest plugin for Click
 dev-python/pytest-cython 0.2.1: Plugin for testing Cython extension modules
@@ -1758,14 +1757,14 @@ net-misc/gdown 4.7.3 5.0.0: Google Drive public file/folder downloader
 net-misc/gemget 1.9.0: Command line downloader for the Gemini protocol
 net-misc/gemserv 0.6.5 0.6.6: A gemini Server written in rust
 net-misc/giara 1.0.1 1.1.0: An app for Reddit
-net-misc/gmid 1.8.6 9999: Simple and secure Gemini server
+net-misc/gmid 1.8.6 2.0.1 9999: Simple and secure Gemini server
 net-misc/gnome-ssh-askpass 9.2_p1: GTK-based passphrase dialog for use with OpenSSH
 net-misc/gsocket 1.4.41 9999: Connect like there is no firewall. Securely.
 net-misc/lyrics-in-terminal 1.5.0: Command Line Lyrics fetcher for MPRIS media players
 net-misc/maestral 1.8.0 1.8.1_rc0: Maestral is an open-source Dropbox client written in Python
 net-misc/maestral-qt 1.8.0: Maestral is an open-source Dropbox client written in Python
 net-misc/mastorss 0.13.0 0.13.1 9999: Another RSS to Mastodon bot
-net-misc/megasync 4.11.0.0 9999: The official Qt-based program for syncing your MEGA account in your PC
+net-misc/megasync 4.12.0.0 9999: The official Qt-based program for syncing your MEGA account in your PC
 net-misc/myip 1.2.1: Get your external IP address using STUN server
 net-misc/ooni-probe-cli 3.18.0 3.18.1: OONI Probe network measurement tool for detecting internet censorship
 net-misc/openbgpd 6.9_p0 8.0 9999: OpenBGPD is a free implementation of BGPv4
@@ -2023,7 +2022,7 @@ sys-kernel/dpdk-kmod 21.11.1 22.07 23.03: DPDK Kernel Nic Interface module
 sys-kernel/modprobed-db 2.46: This utility tracks modules loaded by the kernel, for localmodconfig
 sys-kernel/msr-safe 1.6.0: Allows safer access to model specific registers (MSRs)
 sys-kernel/tirdad 0_pre20200926: kernel module for random ISN generation
-sys-kernel/uek-sources 5.15.0.5.70.1 5.15.0.6.80.3 5.15.0.8.91.3 5.15.0.105.125.4 5.15.0.201.135.2 5.15.0.201.135.4 5.15.0.202.135.1 5.15.0.202.135.1-r1 5.15.0.203.135.1 5.15.0.203.146.3: Unbreakable Enterprise Kernel (UEK) sources built from Oracle
+sys-kernel/uek-sources 5.15.0.5.70.1 5.15.0.6.80.3 5.15.0.8.91.3 5.15.0.105.125.4 5.15.0.201.135.2 5.15.0.201.135.4 5.15.0.202.135.1 5.15.0.202.135.1-r1 5.15.0.203.135.1 5.15.0.203.146.3 5.15.0.203.146.3-r1: Unbreakable Enterprise Kernel (UEK) sources built from Oracle
 sys-kernel/ugrd 0.12.1-r1 0.19.1 0.19.3 0.20.0 0.21.0: Python based initramfs generator with TOML defintions
 sys-kernel/usermode-kernel 6.0.12: Linux kernel built with Gentoo patches
 sys-kernel/xow 0.5: Linux driver for the Xbox One wireless dongle
