@@ -6,11 +6,11 @@ EAPI=8
 HOMEPAGE=https://codeberg.org/dnkl/yambar
 INHERIT=meson
 IUSE=core +alsa +backlight +battery +clock +cpu +disk-io +dwl +foreign-toplevel +memory +mpd +i3 +label +network +pipewire +pulseaudio +removables +river +script sway-xkb wayland X xkb xwindow
-KEYWORDS=~amd64
+KEYWORDS=~amd64 ~arm64
 LICENSE=MIT
 RDEPEND=>=media-libs/fcft-2.4.0 dev-libs/libyaml alsa? ( media-libs/alsa-lib ) backlight? ( virtual/libudev:= ) battery? ( virtual/libudev:= ) mpd? ( media-libs/libmpdclient ) pipewire? ( dev-libs/json-c media-video/pipewire ) pulseaudio? ( media-libs/libpulse ) removables? ( virtual/libudev:= ) sway-xkb? ( dev-libs/json-c ) x11-libs/pixman X? ( x11-libs/libxcb:0=[xkb] x11-libs/xcb-util x11-libs/xcb-util-cursor x11-libs/xcb-util-wm ) wayland? ( dev-libs/wayland )
 REQUIRED_USE=|| ( wayland X ) sway-xkb? ( wayland ) xkb? ( X ) xwindow? ( X )
 SLOT=0
 SRC_URI=https://codeberg.org/dnkl/yambar/archive/1.10.0.tar.gz -> yambar-1.10.0.tar.gz
 _eclasses_=multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	042f4cc53680245bf99a84669b94155a	meson	e322276188f86eacb29ae081ba5485c8
-_md5_=a0dff7768862304fa20b5a84f7209d5c
+_md5_=9476c179dab97ab50d39f5870ff64444

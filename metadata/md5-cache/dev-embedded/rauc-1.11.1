@@ -1,6 +1,6 @@
 BDEPEND=|| ( dev-lang/python:3.12 dev-lang/python:3.11 dev-lang/python:3.10 ) dev-util/gdbus-codegen virtual/pkgconfig doc? ( || ( ( dev-lang/python:3.12 dev-python/sphinx[python_targets_python3_12(-)] dev-python/sphinx-rtd-theme[python_targets_python3_12(-)] ) ( dev-lang/python:3.11 dev-python/sphinx[python_targets_python3_11(-)] dev-python/sphinx-rtd-theme[python_targets_python3_11(-)] ) ( dev-lang/python:3.10 dev-python/sphinx[python_targets_python3_10(-)] dev-python/sphinx-rtd-theme[python_targets_python3_10(-)] ) ) ) test? ( dev-libs/opensc net-misc/casync sys-fs/mtd-utils sys-fs/squashfs-tools sys-libs/libfaketime ) >=dev-build/meson-1.2.1 app-alternatives/ninja dev-build/meson-format-array doc? ( || ( ( dev-lang/python:3.12 dev-python/sphinx[python_targets_python3_12(-)] ) ( dev-lang/python:3.11 dev-python/sphinx[python_targets_python3_11(-)] ) ( dev-lang/python:3.10 dev-python/sphinx[python_targets_python3_10(-)] ) ) )
 DEFINED_PHASES=compile configure install setup test
-DEPEND=dev-libs/glib:2 dev-libs/openssl:0= json? ( dev-libs/json-glib ) network? ( net-misc/curl ) service? ( sys-apps/dbus )
+DEPEND=dev-libs/glib:2 dev-libs/libnl:3= dev-libs/openssl:0= json? ( dev-libs/json-glib ) network? ( net-misc/curl ) service? ( sys-apps/dbus )
 DESCRIPTION=Lightweight update client that runs on your Embedded Linux device
 EAPI=8
 HOMEPAGE=https://rauc.io/
@@ -8,9 +8,9 @@ INHERIT=meson python-any-r1 docs
 IUSE=gpt json network service test doc
 KEYWORDS=~amd64
 LICENSE=LGPL-2.1
-RDEPEND=dev-libs/glib:2 dev-libs/openssl:0= json? ( dev-libs/json-glib ) network? ( net-misc/curl ) service? ( sys-apps/dbus )
+RDEPEND=dev-libs/glib:2 dev-libs/libnl:3= dev-libs/openssl:0= json? ( dev-libs/json-glib ) network? ( net-misc/curl ) service? ( sys-apps/dbus )
 RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://github.com/rauc/rauc/releases/download/v1.11.1/rauc-1.11.1.tar.xz
 _eclasses_=multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	042f4cc53680245bf99a84669b94155a	meson	e322276188f86eacb29ae081ba5485c8	python-any-r1	f5169813d1619761b459800587005fd2	docs	7f3c0d47338743498c69f1887a139f57
-_md5_=1130f5ecf12fd21ef23fc134ced3f8e4
+_md5_=f918939a1845933d9b821834256b3a84

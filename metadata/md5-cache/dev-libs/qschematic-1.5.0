@@ -6,7 +6,7 @@ EAPI=8
 HOMEPAGE=https://github.com/simulton/QSchematic
 INHERIT=cmake
 IUSE=examples qt6 static-libs test wayland +X
-KEYWORDS=~amd64 ~arm ~arm64 ~hppa ~ppc ~ppc64 ~riscv ~sparc ~x86
+KEYWORDS=~amd64 ~arm ~arm64 ~hppa ~ppc64 ~riscv ~x86
 LICENSE=MIT
 RDEPEND=!qt6? ( >=dev-qt/qtcore-5.15:5= >=dev-qt/qtgui-5.15:5=[jpeg,png,wayland?,X?] >=dev-qt/qtsvg-5.15:5 >=dev-qt/qtwidgets-5.15:5[png,X?] ) qt6? ( >=dev-qt/qtbase-6.5:6=[gui,wayland?,widgets,X?] >=dev-qt/qtimageformats-6.5:6 >=dev-qt/qtsvg-6.5:6 ) >=dev-libs/gpds-1.6.0[static-libs?]
 REQUIRED_USE=examples? ( static-libs ) test? ( static-libs )
@@ -14,4 +14,4 @@ RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://github.com/simulton/QSchematic/archive/1.5.0.tar.gz -> qschematic-1.5.0.tar.gz
 _eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	b2b07efa51009704f88173b2c7feab47	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	c7c9a62d6232cac66d4ea32d575c3e7c
-_md5_=e624c59b293f5c5789b9be9c8f030066
+_md5_=d8b9a858d01ddb794b45c58c21eef082
