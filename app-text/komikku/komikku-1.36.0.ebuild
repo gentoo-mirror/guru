@@ -1,20 +1,18 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{10..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 PYTHON_REQ_USE="sqlite(+),ssl(+)"
 DISTUTILS_USE_PEP517=no
 DISTUTILS_SINGLE_IMPL=1
-inherit distutils-r1 meson gnome2-utils virtualx xdg
+inherit distutils-r1 meson gnome2-utils xdg
 
-MY_PN="${PN^}"
-MY_P="${MY_PN}-v${PV}"
-DESCRIPTION="An online/offline manga reader for GNOME"
-HOMEPAGE="https://gitlab.com/valos/Komikku"
-SRC_URI="https://gitlab.com/valos/${MY_PN}/-/archive/v${PV}/${MY_P}.tar.bz2"
-S="${WORKDIR}/${MY_P}"
+DESCRIPTION="Manga reader for GNOME"
+HOMEPAGE="https://apps.gnome.org/Komikku/"
+SRC_URI="https://codeberg.org/valos/Komikku/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+S="${WORKDIR}/${PN}"
 
 KEYWORDS="~amd64"
 LICENSE="GPL-3+"
@@ -22,22 +20,23 @@ SLOT="0"
 IUSE="test"
 
 RESTRICT="test"
-PROPERTIES="test_network"
+# Depend on a random server that may or may not be accessible at all times.
+#PROPERTIES="test_network"
 
 DEPEND="
 	dev-libs/glib:2
 	dev-libs/gobject-introspection
-	>=gui-libs/gtk-4.10:4
-	>=gui-libs/libadwaita-1.3:1[introspection]
+	>=gui-libs/gtk-4.12.1:4
+	>=gui-libs/libadwaita-1.4:1[introspection]
 	net-libs/webkit-gtk:6[introspection]
 "
 RDEPEND="
 	${DEPEND}
+	x11-libs/libnotify[introspection]
 	$(python_gen_cond_dep '
 		app-arch/brotli[python,${PYTHON_USEDEP}]
-		dev-python/aiohttp[${PYTHON_USEDEP}]
 		dev-python/beautifulsoup4[${PYTHON_USEDEP}]
-		dev-python/cffi[${PYTHON_USEDEP}]
+		dev-python/colorthief[${PYTHON_USEDEP}]
 		dev-python/cryptography[${PYTHON_USEDEP}]
 		dev-python/dateparser[${PYTHON_USEDEP}]
 		dev-python/emoji[${PYTHON_USEDEP}]
@@ -55,6 +54,7 @@ RDEPEND="
 	')
 "
 BDEPEND="
+	dev-util/blueprint-compiler
 	sys-devel/gettext
 	test? (
 		$(python_gen_cond_dep '
@@ -73,7 +73,9 @@ src_prepare() {
 }
 
 src_test() {
-	virtx epytest
+	emake setup
+	emake develop
+	emake test
 }
 
 src_install() {
