@@ -1,4 +1,4 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -20,8 +20,6 @@ RDEPEND="
 	>=sys-apps/bat-0.16.0
 	>=sys-apps/fd-8.5.0
 "
-DEPEND="${RDEPEND}"
-BDEPEND=""
 
 src_install() {
 	dofishcomp completions/*
@@ -29,5 +27,4 @@ src_install() {
 	doins conf.d/*
 	insinto "/usr/share/fish/vendor_functions.d"
 	doins functions/*
-	einstalldocs
 }
