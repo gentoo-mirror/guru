@@ -1,11 +1,11 @@
-# Copyright 2022 Gentoo Authors
+# Copyright 2022,2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-inherit readme.gentoo-r1
+inherit flag-o-matic readme.gentoo-r1
 
-MY_COMMIT="938eef72e93ddb0609205a663bf0783f4e1b5fae"
+MY_COMMIT="c2b4aa5ad2532cca91f23908ac7f00efb7ff09c9"
 DESCRIPTION="Replace zsh's default completion selection menu with fzf"
 HOMEPAGE="https://github.com/Aloxaf/fzf-tab"
 SRC_URI="https://github.com/Aloxaf/fzf-tab/archive/${MY_COMMIT}.tar.gz -> ${P}.tar.gz"
@@ -27,7 +27,7 @@ BDEPEND="
 	)
 "
 
-RESTRICT="test" # bug 861638
+RESTRICT="!test? ( test )"
 
 DISABLE_AUTOFORMATTING="true"
 DOC_CONTENTS="In order to use ${CATEGORY}/${PN} add
@@ -41,6 +41,7 @@ src_configure() {
 		${PN}.zsh > ${PN}-patched.zsh || die "Modifying FZF_TAB_HOME failed"
 
 	pushd modules || die "Changing directory failed"
+	append-cflags -Wno-error=implicit-function-declaration -Wno-error=implicit-int
 	default_src_configure
 }
 
