@@ -1,0 +1,15 @@
+BDEPEND=test? ( app-shells/zsh dev-vcs/git )
+DEFINED_PHASES=compile configure install postinst test
+DESCRIPTION=Replace zsh's default completion selection menu with fzf
+EAPI=8
+HOMEPAGE=https://github.com/Aloxaf/fzf-tab
+INHERIT=flag-o-matic readme.gentoo-r1
+IUSE=test
+KEYWORDS=~amd64
+LICENSE=MIT
+RDEPEND=app-shells/fzf app-shells/zsh
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/Aloxaf/fzf-tab/archive/c2b4aa5ad2532cca91f23908ac7f00efb7ff09c9.tar.gz -> fzf-tab-0_pre20230611.tar.gz
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	b2b07efa51009704f88173b2c7feab47	readme.gentoo-r1	204091a2cde6179cd9d3db26d09412d3
+_md5_=3cc64cbbff1bb04be391fc27c74e0412
