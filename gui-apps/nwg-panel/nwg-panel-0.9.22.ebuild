@@ -34,8 +34,6 @@ RDEPEND="
 "
 DEPEND="${RDEPEND}"
 
-PATCHES=( "${FILESDIR}/${P}-fix-version-string.patch" )
-
 python_install_all() {
 	distutils-r1_python_install_all
 	domenu nwg-panel-config.desktop
