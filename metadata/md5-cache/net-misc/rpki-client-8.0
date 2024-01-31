@@ -1,0 +1,12 @@
+BDEPEND=dev-build/libtool
+DEFINED_PHASES=configure install
+DEPEND=acct-group/_rpki-client acct-user/_rpki-client dev-libs/libretls dev-libs/openssl[rfc3779]
+DESCRIPTION=Portability shim for OpenBSD's rpki-client
+EAPI=7
+HOMEPAGE=https://rpki-client.org/
+KEYWORDS=~amd64 ~x86
+LICENSE=ISC
+RDEPEND=acct-group/_rpki-client acct-user/_rpki-client dev-libs/libretls dev-libs/openssl[rfc3779]
+SLOT=0
+SRC_URI=mirror://openbsd/rpki-client/rpki-client-8.0.tar.gz https://lg.breizh-ix.net/ssl/cert.pem -> rpki-client-8.0-cert.pem
+_md5_=71ef0db9d5d580092cba82a4f667d541
