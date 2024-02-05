@@ -1,0 +1,13 @@
+BDEPEND=app-arch/unzip
+DEFINED_PHASES=install
+DESCRIPTION=RHVoice voice: arina (ru)
+EAPI=8
+HOMEPAGE=https://github.com/RHVoice/arina-rus
+INHERIT=rhvoice-voice
+KEYWORDS=~amd64 ~x86
+LICENSE=CC-BY-NC-ND-4.0
+RDEPEND=app-accessibility/rhvoice-core[l10n_ru]
+SLOT=0
+SRC_URI=https://github.com/RHVoice/arina-rus/releases/download/4.0/data.zip -> rhvoice-arina-4.0.zip
+_eclasses_=rhvoice-voice	2cb0d2f0793398496cd2a3c3d8376935
+_md5_=e3ed825ffcfe74346d42076d634f5f22

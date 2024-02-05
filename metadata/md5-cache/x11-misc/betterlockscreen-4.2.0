@@ -1,14 +1,13 @@
 BDEPEND=virtual/pkgconfig
 DEFINED_PHASES=install postinst
-DEPEND=media-gfx/feh media-gfx/imagemagick sys-devel/bc x11-apps/xdpyinfo x11-apps/xrandr x11-apps/xrdb x11-apps/xset >=x11-misc/i3lock-color-2.13.3:=
 DESCRIPTION=sweet looking lockscreen for linux system
-EAPI=7
-HOMEPAGE=https://github.com/pavanjadhaw/betterlockscreen
+EAPI=8
+HOMEPAGE=https://github.com/betterlockscreen/betterlockscreen
 INHERIT=systemd
 KEYWORDS=~amd64
 LICENSE=MIT
 RDEPEND=media-gfx/feh media-gfx/imagemagick sys-devel/bc x11-apps/xdpyinfo x11-apps/xrandr x11-apps/xrdb x11-apps/xset >=x11-misc/i3lock-color-2.13.3:=
 SLOT=0
-SRC_URI=https://github.com/pavanjadhaw/betterlockscreen/archive/refs/tags/v4.0.4.tar.gz -> betterlockscreen-4.0.4.tar.gz
+SRC_URI=https://github.com/betterlockscreen/betterlockscreen/archive/refs/tags/v4.2.0.tar.gz -> betterlockscreen-4.2.0.tar.gz
 _eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	systemd	c8b03e8df84486aa991d4396686e8942
-_md5_=a7bbe6ea8c660264c70e54b71092e91a
+_md5_=bc5b574d87d6a6f766d9fa17dffee115

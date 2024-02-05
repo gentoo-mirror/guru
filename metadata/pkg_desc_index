@@ -73,6 +73,7 @@ acct-user/yacy 0: User for net-misc/yacy
 acct-user/yggdrasil 1: Yggdrasil user
 app-accessibility/mimic1 1.3.0.1 9999: Mycroft's TTS engine, based on CMU's Flite (Festival Lite)
 app-accessibility/rhvoice 1.4.2-r1 1.6.0: TTS engine with extended languages support (including Russian)
+app-accessibility/rhvoice-core 1.14.0: TTS engine with extended languages support (including Russian)
 app-accessibility/speakup-tools 20121017: Tools to customize speakup module
 app-admin/akita 0.1.4: An HTTP log monitoring tool for your terminal
 app-admin/ananicy-cpp 1.0.0_rc6-r1: Ananicy rewritten in C++ for much lower CPU and memory usage
@@ -96,7 +97,7 @@ app-admin/oet 0.1.9 0.1.10 9999: Update your system into binpkgs in an overlay s
 app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applications and tmux
 app-admin/pass-audit 1.2: A pass extension for auditing your password repository.
 app-admin/pass-update 2.1: pass extension that provides an easy flow for updating passwords
-app-admin/pulumi-bin 3.101.0 3.101.1 3.102.0 3.103.1: Infrastructure as code in any programming language
+app-admin/pulumi-bin 3.102.0 3.103.1 3.104.2: Infrastructure as code in any programming language
 app-admin/rbw 9999: unofficial bitwarden cli
 app-admin/s-tui 1.1.4: Stress-Terminal UI monitoring tool
 app-admin/synadm 0.43.1 0.44: Command line admin tool for Synapse
@@ -156,12 +157,14 @@ app-dicts/dictd-misc 1.5_alpha2: Hitchcock's and Easton's Bible Dictionaries
 app-dicts/dictd-moby-thesaurus 1.0: Grady Ward's Moby Thesaurus; 35000 root words and 2.5 million synonyms
 app-dicts/dictd-mueller 3.1-r1: V. K. Mueller English-Russian Dictionary
 app-dicts/dictd-web1913 0.5.0_p1: Webster's Revised Unabridged Dictionary (1913) for dict
+app-dicts/rhvoice-en 2.11: English language support for RHVoice
+app-dicts/rhvoice-ru 2.14: Russian language support for RHVoice
 app-doc/anarchism 15.3: An anarchist FAQ
 app-doc/geeknote 9999: Evernote CLI: CRUD for notes in cloud
 app-doc/openbsd-manpages 6.9 7.0: OpenBSD manual pages
 app-doc/stdman 2022.07.30 9999: Formatted C++ stdlib man pages (cppreference)
 app-doc/sway-wiki 9999: Wiki of gui-wm/sway, rendered to HTML using kramdown-parser-gfm
-app-editors/amp 0.6.2: A complete text editor for your terminal.
+app-editors/amp 0.7.0: A complete text editor for your terminal.
 app-editors/imhex 1.32.2: A hex editor for reverse engineers, programmers, and eyesight
 app-editors/kak-lsp 15.0.1: Kakoune Language Server Protocol Client
 app-editors/kitscenarist 0.7.2_rc9: Simple and powerful application for creating screenplays.
@@ -368,6 +371,7 @@ app-vim/vim-sensible 1.2 2.0: vim plugin: a universal set of defaults that (hope
 app-vim/vimwiki-cli 1.1.0: Command-line interface for Vimwiki
 app-vim/wayland-clipboard 0.2.1: vim plugin:
 app-vim/yats 2022.08.26 2023.08.24: vim plugin: Yet Another TypeScript Syntax
+app-voices/rhvoice-arina 4.0: RHVoice voice: arina (ru)
 dev-R/AsioHeaders 1.22.1.1: 'Asio' C++ Header Files
 dev-R/BH 1.75.0.0 1.78.0.0-r1: Boost C++ Header Files
 dev-R/DBI 1.1.3: R Database Interface
@@ -612,7 +616,7 @@ dev-db/pg_repack 1.4.8: Reorganize tables in PostgreSQL databases with minimal l
 dev-db/rum 1.3.13: RUM access method - inverted index with additional information in posting lists
 dev-dotnet/gtk-sharp 2.99.3-r3 3.22.2-r2: gtk bindings for mono
 dev-elixir/hex 1.0.1-r1: Package manager for the Erlang VM
-dev-embedded/arduino-cli 0.34.2: Next-generation arduino command line tool
+dev-embedded/arduino-cli 0.34.2 0.35.2: Next-generation arduino command line tool
 dev-embedded/esp-coredump 1.5.2 1.7.0: Utility that helps users to retrieve and analyse core dumps
 dev-embedded/esp-idf 5.1.1 5.1.2: Espressif IoT Development Framework
 dev-embedded/esp-idf-kconfig 1.2.0 1.4.1 2.0.1: Kconfig tooling for esp-idf
@@ -1054,7 +1058,7 @@ dev-python/markdownify 0.11.6: Convert HTML to Markdown
 dev-python/marshmallow_enum 1.5.1: Enum handling for Marshmallow
 dev-python/mastodon-py 1.8.0 1.8.1: Python wrapper for the Mastodon API
 dev-python/material-color-utilities 0.1.5 9999: Python port of material-color-utilities used for Material You colors
-dev-python/mautrix 0.20.4 0.20.4-r1: A Python 3 asyncio Matrix framework
+dev-python/mautrix 0.20.4-r1 0.20.4-r2: A Python 3 asyncio Matrix framework
 dev-python/minio 7.2.2 7.2.3: MinIO Client SDK for Python
 dev-python/mitype 0.2.4: Typing speed test in terminal
 dev-python/mkdocs-blog-plugin 9999: Plugin for MkDocs to keep a simple blog section inside your documentation.
@@ -1247,7 +1251,8 @@ dev-python/yaql 2.0.0: YAQL: Yet Another Query Language
 dev-python/youseedee 0.3.0 0.4.1: Interface to the Unicode Character Database
 dev-python/zenlib 1.2.0-r1 1.3.1 1.4.0 1.6.2 1.7.2: Useful python decorators and utilities
 dev-python/zopfli 0.2.2: Zopfli module for Python
-dev-ruby/asciidoctor-pdf 2.3.4: A native PDF converter for AsciiDoc based on Asciidoctor and Prawn
+dev-qt/kdsingleapplication 1.1.0: KDAB's helper class for single-instance policy applications
+dev-ruby/asciidoctor-pdf 2.3.12: A native PDF converter for AsciiDoc based on Asciidoctor and Prawn
 dev-ruby/byebug 11.1.3: a Ruby 2 debugger
 dev-ruby/chruby 0.3.9-r3 9999: Changes the current Ruby
 dev-ruby/prawn-icon 3.1.0: Provides support for icons in Prawn
@@ -1270,7 +1275,7 @@ dev-util/bazelisk 1.12.0: A user-friendly launcher for Bazel
 dev-util/bc-ur 0.3.0: Blockchain Commons UR Library
 dev-util/binaryen 105: Compiler and toolchain infrastructure library for WebAssembly
 dev-util/bump2version 1.0.1: Version-bump your software with a single command!
-dev-util/cargo-make 0.35.9 0.35.10: Rust task runner and build tool
+dev-util/cargo-make 0.37.9: Rust task runner and build tool
 dev-util/cmakelang 0.6.13: Provides Quality Assurance (QA) tools for cmake
 dev-util/deblob 0.5 0.6 9999: remove binary executables from a directory
 dev-util/distribution-gpg-keys 1.100: Collection of GPG keys used in Linux Distributions
@@ -1304,9 +1309,9 @@ dev-util/pmbootstrap 1.51.0: Helper tool for developing and building postmarketO
 dev-util/qshaderedit 0.1.5: Multiplatform shader editor inspired by Apple's OpenGL Shader Builder
 dev-util/quilttools 0.3-r1: Mailbox to quilt series converter
 dev-util/reflex 0.3.1: A small tool to watch a directory and rerun a command when certain files change
-dev-util/rye 0.16.0: An Experimental Package Management Solution for Python
+dev-util/rye 0.21.0: An Experimental Package Management Solution for Python
 dev-util/stripe-cli 9999: A command-line tool for Stripe
-dev-util/stylua 0.19.1-r1: A code formatter for Lua
+dev-util/stylua 0.20.0: A code formatter for Lua
 dev-util/tflint-bin 0.43.0 0.46.0: A Pluggable Terraform Linter
 dev-util/tokei 12.1.1 12.1.2: Count code, quickly
 dev-util/typescript-language-server 3.3.2 4.1.2: TypeScript & JavaScript Language Server
@@ -1467,7 +1472,6 @@ gui-apps/nwg-shell-config 0.5.31 0.5.32: nwg-shell configuration utility
 gui-apps/organicmaps 9999: Offline maps and navigation using OpenStreetMap data
 gui-apps/packettracer 8.2.0: Cisco's packet tracer
 gui-apps/paperde 0.1.1_p20210426 9999: Simple, sleek QT based DE for wayland using wayfire
-gui-apps/phosh-tour 0.28.0 0.35.0: Introduction to phosh on smartphones
 gui-apps/rofi-wayland 1.7.5 1.7.5-r1: A window switcher, run dialog and dmenu replacement
 gui-apps/satty 0.8.2 9999: A screenshot annotation tool inspired by Swappy and Flameshot.
 gui-apps/sfwbar 1.0_beta12 1.0_beta13 1.0_beta14: S* Floating Window Bar
@@ -1511,7 +1515,8 @@ gui-libs/webp-pixbuf-loader 0.0.1: WebP Image format GdkPixbuf loader
 gui-libs/xdg-desktop-portal-hyprland 1.1.0-r1 1.2.2-r2 1.2.5-r2 1.2.6-r1 1.3.1 9999: xdg-desktop-portal backend for hyprland
 gui-wm/cage 0.1.5 9999: A Wayland kiosk
 gui-wm/hyprland-contrib 0.1-r1 9999: Community-maintained extensions for hyprland
-gui-wm/phosh 0.17.0: A pure Wayland shell prototype for GNOME on mobile devices
+gui-wm/niri 0.1.1: Scrollable-tiling Wayland compositor
+gui-wm/phoc 0.35.0 0.36.0: Wayland compositor for mobile phones
 gui-wm/swayfx 0.2 0.3: SwayFX: Sway, but with eye candy!
 kde-apps/kwalletcli 3.03: CLI for the KDE Wallet
 kde-apps/plasma-settings 22.11: Settings application for Plasma Mobile
@@ -1520,7 +1525,7 @@ kde-misc/kio-gemini 20230419 20231005: Gemini KIO worker
 kde-misc/plasma-applet-thermal-monitor 1.3.0: Plasma 5 applet for monitoring CPU, GPU and other available temperature sensors
 kde-misc/plasma5-wallpapers-dynamic 3.3.9 9999: A KDE Plasma wallpaper plugin to set your wallpaper based on the time of day.
 mail-client/heirloom-mailx 12.5: The mailx utility from CentOS
-mail-client/mailspring-bin 1.13.2-r3: A beautiful, fast and fully open source mail client for Mac, Windows and Linux
+mail-client/mailspring-bin 1.13.3: A beautiful, fast and fully open source mail client for Mac, Windows and Linux
 mail-filter/opensmtpd-filter-dkimsign 0.6: OpenSMTPD filter for DKIM signing
 mail-filter/postfix-mta-sts-resolver 1.4.0: Daemon which provides TLS client policy for Postfix via socketmap
 media-fonts/3270font 2.3.1: A IBM 3270 Terminal font in a modern format
@@ -1539,7 +1544,7 @@ media-fonts/libertinus 7.040: Libertinus font
 media-fonts/linja-pona 4.2 4.9: Font for sitelen pona, a script for toki pona
 media-fonts/linja-wawa 1.21: Font for sitelen pona, a script for toki pona
 media-fonts/overpass 3.0.4: An open source webfont family inspired by Highway Gothic
-media-fonts/plemoljp 1.6.0: PlemolJP is a composite font of IBM Plex Mono and IBM Plex Sans JP.
+media-fonts/plemoljp 1.7.0: PlemolJP is a composite font of IBM Plex Mono and IBM Plex Sans JP.
 media-fonts/robotomono-nerdfont 2.2.2 3.1.1: A free and open-source typeface for developers
 media-fonts/source-han-mono 1.002: Pan-CJK OpenType/CFF mono font family
 media-fonts/source-han-serif 2.001 2.002: Pan-CJK OpenType/CFF font family
@@ -1745,7 +1750,7 @@ net-libs/udt 4.11_p20181126: UDT is a UDP based data transport protocol
 net-libs/ulfius 2.7.15: HTTP Framework for REST Applications in C
 net-libs/usockets 0.8.1_p20211023 9999: tiny eventing, networking & crypto for async applications
 net-libs/yder 1.4.20: Logging library for C applications
-net-mail/dovecot-fts-xapian 1.5.4 1.5.5 1.5.7 9999: Dovecot FTS plugin backed by Xapian
+net-mail/dovecot-fts-xapian 1.5.5 1.5.7 1.5.9 9999: Dovecot FTS plugin backed by Xapian
 net-mail/hydroxide 0.2.23 0.2.24 0.2.26 0.2.27 0.2.28 9999: A third-party, open-source ProtonMail CardDAV, IMAP and SMTP bridge
 net-mail/pop 0.2.0: Send emails from your terminal
 net-misc/FORT-validator 1.5.3 1.5.4: FORT validator is an open source RPKI validator
@@ -1814,11 +1819,13 @@ net-vpn/cloudflare-warp 2023.3.470 2023.7.40: Cloudflare Warp Client
 net-vpn/fastd 22: A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
 net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that require SAML
 net-vpn/mullvadvpn-app 2023.5 2023.6: Tool used to manage daemon setup
-net-wireless/bluetuith 0.1.8 0.1.9 0.2.0 9999: A TUI bluetooth manager for Linux written in Go
+net-wireless/bluetuith 0.1.9 0.2.0 0.2.1 9999: A TUI bluetooth manager for Linux written in Go
 net-wireless/rtl8192eu 0_pre20230613: Realtek 8192EU driver module for Linux kernel
 net-wireless/rtl8723bu 9999: Driver for the rtl8723 wireless chipset
 net-wireless/rtl8821ce 0_pre20231002: Realtek RTL8821CE Driver module for Linux kernel
 net-wireless/rtl8821cu 0_pre20231126: Realtek 8821CU/RTL8811CU module for Linux kernel
+phosh-base/phosh-shell 0.17.0 0.36.0: Pure Wayland shell for mobile devices
+phosh-base/phosh-tour 0.35.0 0.36.0: Introduction to phosh on smartphones
 sci-biology/cmdock 0.2.0 0.2.0-r1: Program for docking ligands to proteins and nucleic acids
 sci-biology/cytoscape-bin 3.10.1: A visualization platform for molecular interaction networks
 sci-biology/geneathome 1.10-r5: BOINC application for expanding Gene Regulatory Networks (GRN)
@@ -1913,6 +1920,7 @@ sci-physics/mbdyn 1.7.3_p20210925-r1: A general purpose Multibody Dynamics analy
 sec-keys/openpgp-keys-aepaneshnikov 20221210: OpenPGP keys used by Alexander Epaneshnikov
 sec-keys/openpgp-keys-emersion 20230421: OpenPGP keys used by Simon Ser
 sec-keys/openpgp-keys-jvoisin 20230224: OpenPGP keys used by Julien Voisin
+sec-keys/openpgp-keys-phosh 2024: OpenPGP keys used to sign Phosh releases
 sec-keys/openpgp-keys-russallbery 20230000: OpenPGP keys used by Russ Allbery (Eagle)
 sec-keys/openpgp-keys-skyjake 20211224: OpenPGP keys used by Jaakko Keranen
 sec-keys/signify-keys-gmid 1.8 2.0: Signify keys used to sign gmid releases
@@ -1954,7 +1962,7 @@ sys-boot/customrescuecd-x86-grub 0.1: Grub menu entries for the .iso image of cu
 sys-boot/customrescuecd-x86_64-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/limine 4.20230503.0 4.20230514.0 4.20230529.0 4.20230530.0 4.20230606.0 4.20230615.0 5.20230811.0 5.20231103.0 5.20231103.0-r1 5.20231121.0 5.20231124.0 6.20231227.0 7.0.0: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
 sys-boot/woeusb-ng 0.2.10: Create Windows installer USB from ISO (rewrite of WoeUSB)
-sys-boot/zfsbootmenu 1.12.0 2.2.0 2.2.1 2.2.2: ZFS bootloader for root-on-ZFS systems
+sys-boot/zfsbootmenu 1.12.0 2.2.2 2.3.0: ZFS bootloader for root-on-ZFS systems
 sys-cluster/AXL 0.5.0 0.7.0: AXL provides a common C interface to transfer files in an HPC storage hierarchy
 sys-cluster/Graph500 1.2: Graph500 reference implementations
 sys-cluster/OpenHPC-meta 2.1-r1: OpenHPC metapackage
@@ -2028,7 +2036,7 @@ sys-kernel/dpdk-kmod 21.11.1 22.07 23.03: DPDK Kernel Nic Interface module
 sys-kernel/modprobed-db 2.46: This utility tracks modules loaded by the kernel, for localmodconfig
 sys-kernel/msr-safe 1.6.0: Allows safer access to model specific registers (MSRs)
 sys-kernel/tirdad 0_pre20200926: kernel module for random ISN generation
-sys-kernel/uek-sources 5.15.0.5.70.1 5.15.0.6.80.3 5.15.0.8.91.3 5.15.0.105.125.4 5.15.0.201.135.2 5.15.0.201.135.4 5.15.0.202.135.1 5.15.0.202.135.1-r1 5.15.0.203.135.1 5.15.0.203.146.3 5.15.0.203.146.3-r1 5.15.0.203.146.5: Unbreakable Enterprise Kernel (UEK) sources built from Oracle
+sys-kernel/uek-sources 5.15.0.5.70.1 5.15.0.6.80.3 5.15.0.8.91.3 5.15.0.105.125.4 5.15.0.201.135.2 5.15.0.201.135.4 5.15.0.202.135.1 5.15.0.202.135.1-r1 5.15.0.203.135.1 5.15.0.203.146.3 5.15.0.203.146.3-r1 5.15.0.203.146.5 5.15.0.204.147.2: Unbreakable Enterprise Kernel (UEK) sources built from Oracle
 sys-kernel/ugrd 0.12.1-r1 0.19.1 0.19.3 0.20.0 0.21.0: Python based initramfs generator with TOML defintions
 sys-kernel/usermode-kernel 6.0.12: Linux kernel built with Gentoo patches
 sys-kernel/xow 0.5: Linux driver for the Xbox One wireless dongle
@@ -2067,7 +2075,7 @@ virtual/nnet 0: Virtual of a R recommended package
 virtual/survival 0: Virtual of a R recommended package
 www-apps/castopod 1.4.3 1.4.5: Open-source hosting platform made for podcasters
 www-apps/code-server-bin 4.14.1 4.15.0 4.16.0 4.16.1 4.17.0 4.17.1 4.18.0 4.19.1: VS Code in the browser (binary version with unbundled node and ripgrep)
-www-apps/forgejo 1.19.4.0 1.20.5.0 1.20.6.0: A self-hosted lightweight software forge
+www-apps/forgejo 1.20.5.0 1.20.6.0 1.21.5.0: A self-hosted lightweight software forge
 www-apps/gotosocial 0.9.0 0.10.0: Fast, fun, ActivityPub server, powered by Go
 www-apps/honk 0.9.8 0.9.91: ActivityPub server with minimal setup and support costs
 www-apps/invidious 2023.12.02: Invidious is an alternative front-end to YouTube
@@ -2105,14 +2113,14 @@ x11-libs/gtk-fortran 3.24.31 4.3.0 4.4.0 4.4.1: A GTK+ binding to build Graphica
 x11-libs/sdl-fakeqwerty 0_pre20191217: Fixes non-QWERTY keyboards on Prison Architect (and maybe other SDL games)
 x11-misc/aerial-sddm-theme 0_pre20191018-r1 9999: SDDM theme with Apple TV Aerial videos
 x11-misc/autotiling 1.7 1.8: Script for sway and i3 to automatically switch the window split orientation
-x11-misc/betterlockscreen 4.0.4 9999: sweet looking lockscreen for linux system
+x11-misc/betterlockscreen 4.2.0: sweet looking lockscreen for linux system
 x11-misc/betterlockscreen_rapid 0.0.0_pre20210701 0.0.0_pre20210708: A rapid and good-looking screen locker
 x11-misc/caffeine-ng 3.5.1: Aplication able to temporarily inhibit the screensaver
 x11-misc/gammy 0.9.60 0.9.64: Adaptive screen brightness/temperature
 x11-misc/gobble 1.2-r1: Hide current window before launching external program, unhide after quitting
 x11-misc/greenclip-bin 4.2: Simple clipboard manager to be integrated with rofi
 x11-misc/gromit-mpx 1.4.3 1.5.0 1.5.1 9999: Gromit-MPX is a multi-pointer GTK3 port of the Gromit desktop annotation tool
-x11-misc/i3lock-color 2.13.2 2.13.4 9999: The world's most popular non-default computer lockscreen
+x11-misc/i3lock-color 2.13.5: The world's most popular non-default computer lockscreen
 x11-misc/i3lock-fancy-rapid 0.0.0_pre20201109-r1 0.0.0_pre20210421: A faster implementation of i3lock-fancy
 x11-misc/i3status-rust 0.32.3: A feature-rich and resource-friendly replacement for i3status, written in Rust.
 x11-misc/input-leap 9999: Share a mouse and keyboard between computers (fork of Barrier)
@@ -2132,7 +2140,7 @@ x11-terms/rio 0.0.28 0.0.34: A hardware-accelerated GPU terminal emulator powere
 x11-terms/rio-terminfo 0.0.28 0.0.34: Terminfo for Rio, a hardware-accelerated GPU terminal emulator powered by WebGPU
 x11-terms/tabby-bin 1.0.189: A terminal for a more modern age
 x11-terms/tym 3.5.0: Lua-configurable terminal emulator
-x11-themes/adw-gtk3 5.0 5.1: The theme from libadwaita ported to GTK-3
+x11-themes/adw-gtk3 5.1 5.2: The theme from libadwaita ported to GTK-3
 x11-themes/arc-darkest-colors 0_pre20200818 0_pre20201112: Flat, dark-mode theme with transparent elements
 x11-themes/arc-kde 20220908: Port of the popular GTK theme Arc for Plasma 5
 x11-themes/bibata-xcursors 2.0.2 2.0.3: Opensource, compact, and material-designed cursor set
@@ -2149,5 +2157,4 @@ x11-wm/berry 0.1.11 0.1.12: A byte-sized window manager written in C
 x11-wm/dk 1.7 9999: A list based tiling window manager in the vein of dwm, bspwm, and xmonad.
 x11-wm/i3-rounded 4.21.1: i3-gaps fork with rounded corners support.
 x11-wm/leftwm 0.4.2: A window manager for Adventurers
-x11-wm/phoc 0.33.0 0.35.0: Wayland compositor for mobile phones
 x11-wm/qtile-extras 0.23.0: elParaguayo's Qtile Extras
