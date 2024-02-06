@@ -8,7 +8,7 @@ inherit cmake flag-o-matic
 MY_PN="RHVoice"
 MY_P="${MY_PN}-${PV}"
 SANITIZERS_COMMIT="99e159ec9bc8dd362b08d18436bd40ff0648417b"
-DESCRIPTION="TTS engine with extended languages support (including Russian)"
+DESCRIPTION="TTS engine with extended languages support"
 HOMEPAGE="
 	https://rhvoice.org
 	https://github.com/RHVoice/RHVoice
@@ -25,6 +25,7 @@ SLOT="0"
 REQUIRED_USE="|| ( ao portaudio pulseaudio )"
 
 COMMON_DEPEND="
+	dev-libs/boost:=
 	ao? ( media-libs/libao )
 	dbus? (
 		dev-libs/glib:2[dbus]
