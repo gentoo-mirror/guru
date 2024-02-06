@@ -1,0 +1,13 @@
+BDEPEND=app-arch/unzip
+DEFINED_PHASES=install
+DESCRIPTION=RHVoice voice: clb (en)
+EAPI=8
+HOMEPAGE=https://github.com/RHVoice/clb
+INHERIT=rhvoice-voice
+KEYWORDS=~amd64 ~x86
+LICENSE=CC-BY-NC-ND-4.0
+RDEPEND=app-accessibility/rhvoice-core[l10n_en]
+SLOT=0
+SRC_URI=https://rhvoice.org/download/RHVoice-voice-English-CLB-v4.0.zip
+_eclasses_=rhvoice-voice	2cb0d2f0793398496cd2a3c3d8376935
+_md5_=e7aec5eca7f7ba595b71e869dd6698d7

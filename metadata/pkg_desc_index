@@ -72,8 +72,8 @@ acct-user/wsdd 0: User for net-misc/wsdd
 acct-user/yacy 0: User for net-misc/yacy
 acct-user/yggdrasil 1: Yggdrasil user
 app-accessibility/mimic1 1.3.0.1 9999: Mycroft's TTS engine, based on CMU's Flite (Festival Lite)
-app-accessibility/rhvoice 1.4.2-r1 1.6.0: TTS engine with extended languages support (including Russian)
-app-accessibility/rhvoice-core 1.14.0: TTS engine with extended languages support (including Russian)
+app-accessibility/rhvoice 1.6.0 1.14.0: TTS engine with extended languages support (metapackage)
+app-accessibility/rhvoice-core 1.14.0-r1: TTS engine with extended languages support
 app-accessibility/speakup-tools 20121017: Tools to customize speakup module
 app-admin/akita 0.1.4: An HTTP log monitoring tool for your terminal
 app-admin/ananicy-cpp 1.0.0_rc6-r1: Ananicy rewritten in C++ for much lower CPU and memory usage
@@ -372,6 +372,9 @@ app-vim/vimwiki-cli 1.1.0: Command-line interface for Vimwiki
 app-vim/wayland-clipboard 0.2.1: vim plugin:
 app-vim/yats 2022.08.26 2023.08.24: vim plugin: Yet Another TypeScript Syntax
 app-voices/rhvoice-arina 4.0: RHVoice voice: arina (ru)
+app-voices/rhvoice-bdl 4.1: RHVoice voice: bdl (en)
+app-voices/rhvoice-clb 4.0: RHVoice voice: clb (en)
+app-voices/rhvoice-slt 4.1: RHVoice voice: slt (en)
 dev-R/AsioHeaders 1.22.1.1: 'Asio' C++ Header Files
 dev-R/BH 1.75.0.0 1.78.0.0-r1: Boost C++ Header Files
 dev-R/DBI 1.1.3: R Database Interface
@@ -740,7 +743,7 @@ dev-libs/tweeny 3.1.1 3.2.0: C++ tweening (inbetweening) library
 dev-libs/unordered_dense 2.0.0 2.0.1 3.1.1 4.0.1 9999: A fast and densely stored hashmap and hashset
 dev-libs/weechat-relay 9999: Portable and multi-interface IRC client relay api
 dev-libs/xqilla 2.3.4 2.3.4-r1: An XQuery and XPath 2 library and command line utility written in C++
-dev-libs/zfp 0.5.5-r1: Compressed numerical arrays that support high-speed random access
+dev-libs/zfp 1.0.1: Compressed numerical arrays that support high-speed random access
 dev-libs/zlib-google 97.0.4692.13: google zlib extras
 dev-lisp/PSL 6.1_p20210604: Portable Standard Lisp
 dev-ml/afl-persistent 1.3: Persistent-mode afl-fuzz for ocaml
@@ -1277,7 +1280,7 @@ dev-util/binaryen 105: Compiler and toolchain infrastructure library for WebAsse
 dev-util/bump2version 1.0.1: Version-bump your software with a single command!
 dev-util/cargo-make 0.37.9: Rust task runner and build tool
 dev-util/cmakelang 0.6.13: Provides Quality Assurance (QA) tools for cmake
-dev-util/deblob 0.5 0.6 9999: remove binary executables from a directory
+dev-util/deblob 0.6 9999: remove binary executables from a directory
 dev-util/distribution-gpg-keys 1.100: Collection of GPG keys used in Linux Distributions
 dev-util/dockerfile-language-server 0.10.2 0.11.0: A language server for Dockerfiles
 dev-util/eclipse-parallel-bin 4.27 4.28: Eclipse IDE for Scientific Computing (C, C++, Fortran)
@@ -1565,7 +1568,7 @@ media-gfx/dustr 9999: light and interactive tool your crops need
 media-gfx/fontbakery 0.7.38-r1 0.8.10-r1: Font quality assurance tool
 media-gfx/fontdiff 0.2.3: A tool for finding visual differences between two font versions
 media-gfx/fontpreview 1.0.6: Highly customizable and minimal font previewer written in bash
-media-gfx/gephi-bin 0.9.5 0.9.6: The Open Graph Viz Platform
+media-gfx/gephi-bin 0.9.6 0.10.1: The Open Graph Viz Platform
 media-gfx/grafx2 2.7.2978 2.7.2978-r100: A pixelart-oriented painting program
 media-gfx/heatshrink 0.4.1: data compression library for embedded/real-time systems
 media-gfx/libpsautohint 2.4.0: A library for autohinting PostScript fonts
@@ -1681,6 +1684,7 @@ mpv-plugin/mpv-youtube-upnext 20221230 20230409 20230709: A userscript that allo
 mpv-plugin/mpv_sponsorblock 20211223 20220924 20230130: mpv script to skip sponsored segments of YouTube videos
 mpv-plugin/mpv_sponsorblock_minimal 2022.02.07: A minimal script to skip sponsored segments of YouTube videos
 mpv-plugin/mpv_thumbnail_script 0.5.1 0.5.2 0.5.3: A Lua script to show preview thumbnails in mpv's OSC seekbar
+net-analyzer/bandwhich 0.22.2: Terminal bandwidth utilization tool
 net-analyzer/gping-bin 1.5.1: Ping with graph
 net-analyzer/munin-contrib 0.2021.04.27: user contributed stuff related to munin
 net-analyzer/munin-plugins-mendix 23_p20210510: This package provides various plugins for Munin
