@@ -1,0 +1,14 @@
+DEFINED_PHASES=install postinst postrm preinst
+DESCRIPTION=A Native GOG and Epic Games Launcher for Linux, Windows and Mac.
+EAPI=8
+HOMEPAGE=https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=desktop xdg
+IUSE=gamescope
+KEYWORDS=~amd64
+LICENSE=GPL-3
+RDEPEND=gamescope? ( gui-wm/gamescope )
+SLOT=0
+SRC_URI=https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v2.12.1/heroic-2.12.1.tar.xz
+_eclasses_=desktop	021728fdc1b03b36357dbc89489e0f0d	xdg-utils	baea6080dd821f5562d715887954c9d3	xdg	4a14c5c24f121e7da66e5aab4a168c6e
+_md5_=f50757ae04bc0cfc3071eef09294dcce

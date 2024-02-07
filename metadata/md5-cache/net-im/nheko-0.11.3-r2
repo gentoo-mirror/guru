@@ -1,0 +1,17 @@
+BDEPEND=dev-qt/linguist-tools:5 doc? ( app-text/doxygen[dot] ) man? ( || ( app-text/asciidoc dev-ruby/asciidoctor ) ) app-alternatives/ninja >=dev-build/cmake-3.20.5
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare test
+DEPEND=app-text/cmark:= >=dev-cpp/blurhash-0.2.0:= dev-cpp/cpp-httplib:= dev-db/lmdb:= dev-libs/libfmt:= >=dev-libs/mtxclient-0.9.0:= dev-libs/olm >=dev-libs/qtkeychain-0.12.0:=[qt5] dev-libs/spdlog:= dev-qt/qtcore:5 dev-qt/qtdbus:5 dev-qt/qtdeclarative:5[widgets] dev-qt/qtgui:5[jpeg?,png] dev-qt/qtmultimedia:5[qml] dev-qt/qtnetwork:5 dev-qt/qtsvg:5 dev-qt/qtwidgets:5 voip? ( dev-libs/glib:2 >=media-libs/gst-plugins-bad-1.18:1.0 >=media-libs/gst-plugins-base-1.18:1.0 >=media-libs/gstreamer-1.18:1.0 video? ( X? ( x11-libs/libxcb:= x11-libs/xcb-util-wm ) ) ) dev-cpp/nlohmann_json >=dev-db/lmdb++-1.0.0 dev-qt/qtconcurrent:5
+DESCRIPTION=Desktop client for the Matrix protocol
+EAPI=8
+HOMEPAGE=https://nheko-reborn.github.io/
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=cmake optfeature xdg
+IUSE=X doc +jpeg man tiff v4l video voip +webp
+KEYWORDS=~amd64
+LICENSE=GPL-3 MIT
+RDEPEND=app-text/cmark:= >=dev-cpp/blurhash-0.2.0:= dev-cpp/cpp-httplib:= dev-db/lmdb:= dev-libs/libfmt:= >=dev-libs/mtxclient-0.9.0:= dev-libs/olm >=dev-libs/qtkeychain-0.12.0:=[qt5] dev-libs/spdlog:= dev-qt/qtcore:5 dev-qt/qtdbus:5 dev-qt/qtdeclarative:5[widgets] dev-qt/qtgui:5[jpeg?,png] dev-qt/qtmultimedia:5[qml] dev-qt/qtnetwork:5 dev-qt/qtsvg:5 dev-qt/qtwidgets:5 voip? ( dev-libs/glib:2 >=media-libs/gst-plugins-bad-1.18:1.0 >=media-libs/gst-plugins-base-1.18:1.0 >=media-libs/gstreamer-1.18:1.0 video? ( X? ( x11-libs/libxcb:= x11-libs/xcb-util-wm ) ) ) dev-qt/qtgraphicaleffects:5 dev-qt/qtquickcontrols2:5 virtual/notification-daemon tiff? ( dev-qt/qtimageformats:5 ) voip? ( >=media-plugins/gst-plugins-dtls-1.18:1.0 media-plugins/gst-plugins-libnice:1.0 >=media-plugins/gst-plugins-meta-1.18:1.0[opus] >=media-plugins/gst-plugins-srtp-1.18:1.0 >=media-plugins/gst-plugins-webrtc-1.18:1.0 video? ( >=media-libs/gst-plugins-base-1.18:1.0[opengl] >=media-plugins/gst-plugins-meta-1.18:1.0[v4l?,vpx] >=media-plugins/gst-plugins-qt5-1.18:1.0 X? ( >=media-plugins/gst-plugins-ximagesrc-1.18:1.0 ) ) ) webp? ( dev-qt/qtimageformats:5 )
+REQUIRED_USE=video? ( voip )
+SLOT=0
+SRC_URI=https://nheko.im/nheko-reborn/nheko/-/archive/v0.11.3/nheko-v0.11.3.tar.bz2
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	b2b07efa51009704f88173b2c7feab47	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	c7c9a62d6232cac66d4ea32d575c3e7c	optfeature	222cb475c5a4f7ae7cfb0bf510a6fe54	xdg	4a14c5c24f121e7da66e5aab4a168c6e
+_md5_=81618779ae2f00d4e47fbe24a7deefdd
