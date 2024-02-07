@@ -1,4 +1,4 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -11,25 +11,23 @@ LICENSE="CC0-1.0"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE="test"
+RESTRICT="!test? ( test )"
 
 RDEPEND="
 	dev-util/bats
 	dev-util/bats-support
 "
-DEPEND="${RDEPEND}"
+BDEPEND="test? ( ${RDEPEND} )"
 
 DOCS=( README.md )
-RESTRICT="!test? ( test )"
 
 src_install() {
 	insinto "/usr/share/${PN}"
-	doins *.bash
+	doins load.bash
 	doins -r src
 	einstalldocs
 }
 
 src_test() {
-	ln -s "/usr/share/bats-support" "${WORKDIR}/bats-support" || die
-	source /usr/share/bats-support/load.bash || die
-	bats test || die
+	BATS_LIB_PATH=/usr/share bats test || die
 }
