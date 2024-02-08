@@ -1,4 +1,4 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -22,6 +22,8 @@ EGO_SUM=(
 	"github.com/gotk3/gotk3 v0.6.1/go.mod"
 	"github.com/gotk3/gotk3 v0.6.2"
 	"github.com/gotk3/gotk3 v0.6.2/go.mod"
+	"github.com/gotk3/gotk3 v0.6.3"
+	"github.com/gotk3/gotk3 v0.6.3/go.mod"
 	"github.com/joshuarubin/go-sway v1.2.0"
 	"github.com/joshuarubin/go-sway v1.2.0/go.mod"
 	"github.com/joshuarubin/lifecycle v1.0.0/go.mod"
@@ -44,16 +46,20 @@ EGO_SUM=(
 	"golang.org/x/sync v0.3.0/go.mod"
 	"golang.org/x/sync v0.5.0"
 	"golang.org/x/sync v0.5.0/go.mod"
+	"golang.org/x/sync v0.6.0"
+	"golang.org/x/sync v0.6.0/go.mod"
 	"golang.org/x/sys v0.0.0-20220715151400-c0bba94af5f8/go.mod"
 	"golang.org/x/sys v0.0.0-20220908164124-27713097b956/go.mod"
 	"golang.org/x/sys v0.10.0"
 	"golang.org/x/sys v0.10.0/go.mod"
 	"golang.org/x/sys v0.14.0"
 	"golang.org/x/sys v0.14.0/go.mod"
+	"golang.org/x/sys v0.16.0"
+	"golang.org/x/sys v0.16.0/go.mod"
 	"gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod"
 	"gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c/go.mod"
 	"gopkg.in/yaml.v3 v3.0.1"
-)
+	)
 go-module_set_globals
 
 SRC_URI="https://github.com/nwg-piotr/nwg-drawer/archive/v${PV}.tar.gz -> ${P}.tar.gz
