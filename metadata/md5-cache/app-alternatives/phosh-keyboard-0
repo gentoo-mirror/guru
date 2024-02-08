@@ -1,0 +1,13 @@
+DEFINED_PHASES=install
+DESCRIPTION=sm.puri.OSK0.desktop symlinks
+EAPI=8
+HOMEPAGE=https://wiki.gentoo.org/wiki/Project:Base/Alternatives
+INHERIT=app-alternatives
+IUSE=+phosh-osk-stub squeekboard
+KEYWORDS=~amd64
+LICENSE=CC0-1.0
+RDEPEND=phosh-osk-stub? ( phosh-base/phosh-osk-stub ) squeekboard? ( phosh-base/squeekboard )
+REQUIRED_USE=^^ ( phosh-osk-stub squeekboard )
+SLOT=0
+_eclasses_=app-alternatives	7e9cb9b9eda5c46d0e04f3c992226ff2
+_md5_=96093bd37a46df0531273a618716ba5c
