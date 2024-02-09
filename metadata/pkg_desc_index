@@ -215,7 +215,7 @@ app-misc/clifm 1.8 1.11 1.13 1.15 9999: The command line file manager
 app-misc/clipboard 0.9.0.1: Cut, copy, and paste anything in your terminal
 app-misc/cliphist 0.4.0: Wayland clipboard manager with support for multimedia
 app-misc/corectrl 1.3.9 1.3.10 9999: Core control application
-app-misc/cpufetch 1.05: Simplistic yet fancy CPU architecture fetching tool
+app-misc/cpufetch 1.05-r1: Simplistic yet fancy CPU architecture fetching tool
 app-misc/dbf 0.9.0: Command line tool to read the content of dBASE III, IV, and 5.0 files
 app-misc/diff-so-fancy 1.4.4: Good-lookin' diffs. Actually... nah... The best-lookin' diffs
 app-misc/doublecmd-bin 1.0.11 1.1.9_beta: Free cross platform open source file manager with two panels side by side.
@@ -243,7 +243,7 @@ app-misc/mat2 0.13.3 0.13.4: Metadata Anonymisation Toolkit: handy tool to trash
 app-misc/metadata-cleaner 2.5.4: Python GTK application to view and clean metadata in files, using mat2.
 app-misc/minder 1.14.0 1.15.6 1.16.2: Mind-mapping application for Elementary OS.
 app-misc/mobile-datovka 1.10.0: Mobile optimized GUI to access the Czech data box e-government system
-app-misc/navi 2.19.0 2.20.1 9999: An interactive cheatsheet tool for the command-line
+app-misc/navi 2.23.0: An interactive cheatsheet tool for the command-line
 app-misc/neo 0.6.1 9999: cmatrix clone with 32-bit color and Unicode support
 app-misc/nerdfetch 8.1.0: A POSIX *nix fetch script using Nerdfonts
 app-misc/nonsense 0.7-r1: Generates random text from datafiles and templates
@@ -346,7 +346,7 @@ app-text/owo 0.1.0: OwO-ifies text via regex
 app-text/sioyek 2.0.0 9999: Sioyek is a PDF viewer with a focus on textbooks and research papers
 app-text/smu 1.5 9999: Simple markup - markdown like syntax
 app-text/the-platinum-searcher-bin 2.2.0: Fast CLI search tool, faster than grep, ack, silver_searcher (ag)
-app-text/tldr 2.0.0-r2: Python command line client for tldr pages
+app-text/tldr 3.2.0: Python command line client for tldr pages
 app-text/typst 0.9.0: A markup-based typesetting system for the sciences
 app-text/vale 2.28.3: A syntax-aware linter for prose built with speed and extensibility in mind
 app-vim/ale 3.3.0: Check syntax in Vim asynchronously and fix files, with LSP support
@@ -1185,6 +1185,7 @@ dev-python/screeninfo 0.8.1: Fetch location and size of physical screens.
 dev-python/sdnotify 0.3.2: Python implementation of the systemd sd_notify protocol
 dev-python/sendgrid 6.9.7: Twilio SendGrid library for Python
 dev-python/sentence-splitter 1.4-r2: Sentence splitter using heuristic algorithm by Philipp Koehn and Josh Schroeder
+dev-python/shtab 1.6.5: Automagic shell tab completion for Python CLI applications
 dev-python/signalstickers-client 3.2.0 3.3.0: A Python client for the Signal stickers API
 dev-python/simplemma 0.9.1: A simple multilingual lemmatizer for Python
 dev-python/sjcl 0.2.1: Decrypt and encrypt 'Stanford Javascript Crypto Library'-compatible messages
@@ -1290,7 +1291,7 @@ dev-util/distribution-gpg-keys 1.100: Collection of GPG keys used in Linux Distr
 dev-util/dockerfile-language-server 0.10.2 0.11.0: A language server for Dockerfiles
 dev-util/eclipse-parallel-bin 4.27 4.28: Eclipse IDE for Scientific Computing (C, C++, Fortran)
 dev-util/exercism 3.1.0 3.2.0: Command line client for https://exercism.io
-dev-util/find-work 0.3.0 0.5.0: Personal advice utility for Gentoo package maintainers
+dev-util/find-work 0.5.0 0.6.0: Personal advice utility for Gentoo package maintainers
 dev-util/fnm 1.32.0 1.33.1: Fast and simple Node.js version manager
 dev-util/fontmake 3.5.1: Compile fonts from sources (UFO, Glyphs) to binary (OpenType, TrueType)
 dev-util/fortls 2.13.0: Fortran Language Server (fortls)
@@ -1771,7 +1772,7 @@ net-misc/eg25-manager 0.4.2: Daemon for managing the Quectel EG25 modem
 net-misc/facebook-ptp 0_pre20211123: Facebook's PTP libraries
 net-misc/fedigroup 1.0.6 1.0.8: Emulate group accounts on Mastodon/Pleroma
 net-misc/freetube-bin 0.17.1 0.19.0 0.19.1: A private YouTube desktop client
-net-misc/gdown 5.0.0 5.0.1: Google Drive public file/folder downloader
+net-misc/gdown 5.0.1 5.1.0: Google Drive public file/folder downloader
 net-misc/gemget 1.9.0: Command line downloader for the Gemini protocol
 net-misc/gemserv 0.6.5 0.6.6: A gemini Server written in rust
 net-misc/giara 1.0.1 1.1.0: An app for Reddit
@@ -1973,7 +1974,7 @@ sys-auth/pam-gnupg 0.3: Unlock GnuPG keys on login
 sys-block/partclone 0.3.20: Partition cloning tool
 sys-boot/customrescuecd-x86-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/customrescuecd-x86_64-grub 0.1: Grub menu entries for the .iso image of customrescuecd
-sys-boot/limine 4.20230503.0 4.20230514.0 4.20230529.0 4.20230530.0 4.20230606.0 4.20230615.0 5.20230811.0 5.20231103.0 5.20231103.0-r1 5.20231121.0 5.20231124.0 6.20231227.0 7.0.0: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
+sys-boot/limine 7.0.0 7.0.3: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
 sys-boot/woeusb-ng 0.2.10: Create Windows installer USB from ISO (rewrite of WoeUSB)
 sys-boot/zfsbootmenu 1.12.0 2.2.2 2.3.0: ZFS bootloader for root-on-ZFS systems
 sys-cluster/AXL 0.5.0 0.7.0: AXL provides a common C interface to transfer files in an HPC storage hierarchy
@@ -2035,8 +2036,8 @@ sys-fs/btrfs-heatmap 9-r1: Python 3 script to draw a heatmap of a btrfs filesyst
 sys-fs/ddrescueview 0.4.5: Graphical viewer for GNU ddrescue mapfiles
 sys-fs/diskonaut 0.10.0 0.11.0 9999: Terminal disk space visual navigator
 sys-fs/dua-cli 2.25.0 2.28.0: A tool to conveniently learn about the disk usage of directories, fast!
-sys-fs/dwarfs 0.7.5 0.8.0: A fast very high compression read-only FUSE file system
-sys-fs/dwarfs-bin 0.7.5 0.8.0: Static version of a fast very high compression read-only FUSE file system
+sys-fs/dwarfs 0.8.0 0.9.1: A fast very high compression read-only FUSE file system
+sys-fs/dwarfs-bin 0.8.0 0.9.1: Static version of a fast very high compression read-only FUSE file system
 sys-fs/fstransform 0.9.4: Tool for in-place filesystem conversion
 sys-fs/gcsfuse 1.2.0: A user-space file system for interacting with Google Cloud Storage
 sys-fs/gdu 5.14.0 5.25.0: Disk usage analyzer with console interface written in Go
@@ -2168,5 +2169,5 @@ x11-themes/vimix-xcursors 20200224-r2: Theme inspired by Materia design and base
 x11-wm/berry 0.1.11 0.1.12: A byte-sized window manager written in C
 x11-wm/dk 1.7 9999: A list based tiling window manager in the vein of dwm, bspwm, and xmonad.
 x11-wm/i3-rounded 4.21.1: i3-gaps fork with rounded corners support.
-x11-wm/leftwm 0.4.2: A window manager for Adventurers
+x11-wm/leftwm 0.5.1: A window manager for Adventurers
 x11-wm/qtile-extras 0.23.0: elParaguayo's Qtile Extras
