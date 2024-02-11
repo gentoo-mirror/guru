@@ -198,7 +198,7 @@ app-i18n/canna 3.7_p3-r4: A client-server based Kana-Kanji conversion system
 app-i18n/fcitx-skk 0.1.4: An input method engine for Fcitx
 app-i18n/im-canna 0.3.2.2-r1: Japanese Canna input method module for GTK+2
 app-i18n/scim-canna 1.0.1: SCIM IMEngine module using Canna
-app-metrics/scaphandre 0.4.1: Electrical power consumption measurement agent.
+app-metrics/scaphandre 0.5.0: Electrical power consumption measurement agent
 app-misc/1password-cli 2.24.0: The world’s most-loved password manager CLI
 app-misc/afc 1.1 1.2 9999: Anime File Checker, checks CRC32 contained in filenames
 app-misc/afetch 2.2.0: Simple system info written in C
@@ -259,7 +259,7 @@ app-misc/pup 0.4.0_p1: Parsing HTML at the command line
 app-misc/rememberthemilk 1.3.11-r1: Freemium simple to-do tasks manager
 app-misc/s6-man 9999: mdoc versions of the HTML documentation for the s6 supervision suite
 app-misc/spark 1.0.1: sparklines for your shell
-app-misc/tai 0.0.4 0.0.5: tai (Terminal Ascii Image) tool to convert images to ascii
+app-misc/tai 0.0.8: tai (Terminal Ascii Images) tool to convert images to ascii
 app-misc/tealdeer 1.6.1: A very fast implementation of tldr in Rust.
 app-misc/termdown 1.18.0: Countdown timer and stopwatch in your terminal
 app-misc/treefetch 2.0.0: 🌲 A plant-based system fetch tool made with Rust.
@@ -1277,7 +1277,7 @@ dev-tex/tectonic 0.14.1: A modernized, complete, embeddable TeX/LaTeX engine.
 dev-util/DirectXShaderCompiler 1.7.2207-r1 1.7.2212: Microsoft DirectX Shader Compiler which is based on LLVM/Clang
 dev-util/afdko 3.9.5-r1: Adobe Font Development Kit for OpenType
 dev-util/babeltrace2 2.0.4: A command-line tool and library to read and convert trace files
-dev-util/bash-language-server 4.10.2 5.0.0: A language server for Bash
+dev-util/bash-language-server 5.0.0 5.1.2: A language server for Bash
 dev-util/bats-assert 2.1.0: Common assertions for Bats
 dev-util/bats-support 0.3.0: Supporting library for Bats test helpers
 dev-util/bazelisk 1.12.0: A user-friendly launcher for Bazel
@@ -1292,7 +1292,7 @@ dev-util/dockerfile-language-server 0.10.2 0.11.0: A language server for Dockerf
 dev-util/eclipse-parallel-bin 4.27 4.28: Eclipse IDE for Scientific Computing (C, C++, Fortran)
 dev-util/exercism 3.1.0 3.2.0: Command line client for https://exercism.io
 dev-util/find-work 0.5.0 0.6.0: Personal advice utility for Gentoo package maintainers
-dev-util/fnm 1.32.0 1.33.1: Fast and simple Node.js version manager
+dev-util/fnm 1.35.1: Fast and simple Node.js version manager
 dev-util/fontmake 3.5.1: Compile fonts from sources (UFO, Glyphs) to binary (OpenType, TrueType)
 dev-util/fortls 2.13.0: Fortran Language Server (fortls)
 dev-util/fortran-test-drive 0.4.0: The simple testing framework (for Fortran)
@@ -1318,12 +1318,12 @@ dev-util/pmbootstrap 1.51.0: Helper tool for developing and building postmarketO
 dev-util/qshaderedit 0.1.5: Multiplatform shader editor inspired by Apple's OpenGL Shader Builder
 dev-util/quilttools 0.3-r1: Mailbox to quilt series converter
 dev-util/reflex 0.3.1: A small tool to watch a directory and rerun a command when certain files change
-dev-util/rye 0.21.0: An Experimental Package Management Solution for Python
+dev-util/rye 0.22.0: An Experimental Package Management Solution for Python
 dev-util/stripe-cli 9999: A command-line tool for Stripe
 dev-util/stylua 0.20.0: A code formatter for Lua
 dev-util/tflint-bin 0.43.0 0.46.0: A Pluggable Terraform Linter
 dev-util/tokei 12.1.1 12.1.2: Count code, quickly
-dev-util/typescript-language-server 3.3.2 4.1.2: TypeScript & JavaScript Language Server
+dev-util/typescript-language-server 4.1.2 4.3.3: TypeScript & JavaScript Language Server
 dev-util/upstream-ontologist 0.1.35-r1: Tracking of upstream project metadata
 dev-util/vala-language-server 0.48.4: Code Intelligence for Vala & Genie
 dev-util/vscode-langservers-extracted 4.7.0 4.8.0: HTML/CSS/JSON/ESLint/Markdown language servers extracted from vscode.
@@ -1525,7 +1525,7 @@ gui-libs/xdg-desktop-portal-hyprland 1.1.0-r1 1.2.2-r2 1.2.5-r2 1.2.6-r1 1.3.1 9
 gui-wm/cage 0.1.5 9999: A Wayland kiosk
 gui-wm/hyprland-contrib 0.1-r1 9999: Community-maintained extensions for hyprland
 gui-wm/niri 0.1.1: Scrollable-tiling Wayland compositor
-gui-wm/phoc 0.35.0 0.36.0: Wayland compositor for mobile phones
+gui-wm/phoc 0.36.0-r1: Wayland compositor for mobile phones
 gui-wm/swayfx 0.2 0.3: SwayFX: Sway, but with eye candy!
 kde-apps/kwalletcli 3.03: CLI for the KDE Wallet
 kde-apps/plasma-settings 22.11: Settings application for Plasma Mobile
@@ -1744,7 +1744,7 @@ net-irc/catgirl 2.0a 2.1 2.2: TLS-only terminal IRC client
 net-irc/litterbox 1.9: TLS-only IRC logger
 net-irc/pounce 3.0 3.1: Multi-client, TLS-only IRC bouncer
 net-irc/srain 1.4.0: Modern, beautiful IRC client written in GTK+ 3
-net-irc/tiny 0.10.0: An IRC client
+net-irc/tiny 0.12.0: IRC client written in Rust
 net-libs/dpdk 21.11.1-r1 22.07-r1 23.03: Data Plane Development Kit libraries for fast userspace networking
 net-libs/evpath 4.5.0_p20220601: EVpath is an event transport middleware layer
 net-libs/ixwebsocket 11.4.4: C++ websocket client and server library
@@ -1787,7 +1787,7 @@ net-misc/megasync 4.12.2.0 9999: The official Qt-based program for syncing your 
 net-misc/myip 1.2.1: Get your external IP address using STUN server
 net-misc/ooni-probe-cli 3.18.0 3.18.1: OONI Probe network measurement tool for detecting internet censorship
 net-misc/openbgpd 6.9_p0 8.0 9999: OpenBGPD is a free implementation of BGPv4
-net-misc/peertube-viewer-rs 1.8.4-r1: Command-line PeerTube viewer inspired by youtube-viewer
+net-misc/peertube-viewer-rs 1.8.5: Command-line PeerTube viewer inspired by youtube-viewer
 net-misc/purritobin 0.6.7 9999: minimalistic commandline pastebin
 net-misc/rpki-client 8.0 8.4 8.8: Portability shim for OpenBSD's rpki-client
 net-misc/smcroute 2.5.6: A static multicast routing daemon
@@ -1834,10 +1834,10 @@ net-wireless/rtl8192eu 0_pre20240120: Realtek 8192EU driver module for Linux ker
 net-wireless/rtl8723bu 9999: Driver for the rtl8723 wireless chipset
 net-wireless/rtl8821ce 0_pre20240120: Realtek RTL8821CE Driver module for Linux kernel
 net-wireless/rtl8821cu 0_pre20240121: Realtek 8821CU/RTL8811CU module for Linux kernel
-phosh-base/phosh 0.36.0: Meta package for Phosh, merge this package to install
+phosh-base/phosh 0.36.0-r1: Meta package for Phosh, merge this package to install
 phosh-base/phosh-mobile-settings 0.36.0: Mobile Settings App for phosh and related components
 phosh-base/phosh-osk-stub 0.36.0: On-screen keyboard stub
-phosh-base/phosh-shell 0.17.0 0.36.0: Pure Wayland shell for mobile devices
+phosh-base/phosh-shell 0.36.0: Pure Wayland shell for mobile devices
 phosh-base/phosh-tour 0.35.0 0.36.0: Introduction to phosh on smartphones
 phosh-base/squeekboard 1.17.1: Virtual keyboard supporting Wayland, built primarily for the Librem 5 phone
 sci-biology/cmdock 0.2.0 0.2.0-r1: Program for docking ligands to proteins and nucleic acids
@@ -1955,7 +1955,7 @@ sys-apps/intel-cmt-cat 4.4.0: User space software for Intel(R) Resource Director
 sys-apps/lact 0.5.2: Linux AMDGPU Controller
 sys-apps/loclone 0.1.0: A tool for creating CoW snapshots on XFS
 sys-apps/lsplug 4: Replacement for lsusb that shows more useful info and less useless info
-sys-apps/mission-center 0.3.3 0.4.1 9999: Monitor your CPU, Memory, Disk, Network and GPU usage.
+sys-apps/mission-center 0.4.1 0.4.4 9999: Monitor your CPU, Memory, Disk, Network and GPU usage.
 sys-apps/nvimpager 0.12.0: Use nvim as a pager to view manpages, diff, etc with nvim's syntax highlighting.
 sys-apps/openSeaChest 23.03.1 23.12: SeaGate's open source harddrive control utilities
 sys-apps/ov 0.11.2 0.32.0: Feature-rich terminal pager
@@ -1964,7 +1964,7 @@ sys-apps/qemu-openrc 0.10.0 0.11.1 9999: OpenRC init script for QEMU/KVM
 sys-apps/qjournalctl 0.6.2: Qt-based GUI for systemd's journalctl command
 sys-apps/sampler 1.1.0: visualizer for shell commands, executions and alerting
 sys-apps/sampler-bin 1.1.0: visualizer for shell commands, executions and alerting
-sys-apps/sd 0.7.6-r1: Intuitive find & replace CLI (sed alternative)
+sys-apps/sd 1.0.0: Intuitive find & replace CLI (sed alternative)
 sys-apps/sdate 0.7: Wrapper program to output dates like the Eternal September 1993
 sys-apps/systemd-bootchart 234 235: systemd boot performance graphing tool
 sys-apps/sysz 1.4.1 1.4.3: An fzf terminal UI for systemctl
@@ -2067,15 +2067,15 @@ sys-power/ZenStates-Linux 0_pre20170507: Dynamically edit AMD Ryzen processor P-
 sys-power/amdgpu-fan 0.1.0-r1: Fan controller for AMD graphics cards running the amdgpu driver on Linux
 sys-power/auto-cpufreq 1.9.6 2.1.0 2.1.0-r1: Automatic CPU speed & power optimizer for Linux
 sys-power/disable-c6 0_p20190603: disable the C6 state upon system boot, preventing Ryzen freezes
-sys-power/envycontrol 3.2.0 9999: Easy GPU switching for Nvidia Optimus laptops under Linux
+sys-power/envycontrol 3.3.1 9999: Easy GPU switching for Nvidia Optimus laptops under Linux
 sys-power/fan2go 0.6.2 0.6.2-r1 0.8.1: A simple daemon providing dynamic fan speed control
 sys-power/geopmd 2.0.0_rc1: Global Extensible Open Power Manager (Daemon)
 sys-power/gtherm 0.0.3: A simple daemon to monitor thermal zones and cooling devices
 sys-power/linux-tools-power-x86 5.18 6.1: Linux x86 CPU power tools
-sys-power/nvidia-exec 0.1.1 9999: Lenovo Legion Linux kernel module
+sys-power/nvidia-exec 0.1.2 9999: Lenovo Legion Linux kernel module
 sys-process/gotop 4.2.0: A terminal based graphical activity monitor inspired by gtop and vtop
 sys-process/nq 0.4: Unix command line queue utility
-sys-process/nvtop 2.0.3 3.0.1 3.0.2 9999: NVIDIA GPUs htop like monitoring tool
+sys-process/nvtop 2.0.3 3.0.1 3.0.2 9999: (h)top like task monitor for AMD, Intel, NVIDIA, … GPUs
 sys-process/scron 0.4: Simple cron daemon
 sys-process/snooze 0.5 9999: Run a command at a particular time
 sys-process/task-spooler 1.3.0: A scheduler for CPU tasks
@@ -2131,7 +2131,7 @@ x11-misc/betterlockscreen 4.2.0: sweet looking lockscreen for linux system
 x11-misc/betterlockscreen_rapid 0.0.0_pre20210701 0.0.0_pre20210708: A rapid and good-looking screen locker
 x11-misc/caffeine-ng 3.5.1: Aplication able to temporarily inhibit the screensaver
 x11-misc/gammy 0.9.60 0.9.64: Adaptive screen brightness/temperature
-x11-misc/gobble 1.2-r1: Hide current window before launching external program, unhide after quitting
+x11-misc/gobble 1.3: Hide current window before launching external program, unhide after quitting
 x11-misc/greenclip-bin 4.2: Simple clipboard manager to be integrated with rofi
 x11-misc/gromit-mpx 1.4.3 1.5.0 1.5.1 9999: Gromit-MPX is a multi-pointer GTK3 port of the Gromit desktop annotation tool
 x11-misc/i3lock-color 2.13.5: The world's most popular non-default computer lockscreen

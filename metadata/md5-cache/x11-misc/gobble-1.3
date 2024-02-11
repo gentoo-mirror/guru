@@ -1,0 +1,15 @@
+BDEPEND=man? ( virtual/pandoc ) >=virtual/rust-1.53
+DEFINED_PHASES=compile configure install test unpack
+DEPEND=x11-libs/libxcb:=
+DESCRIPTION=Hide current window before launching external program, unhide after quitting
+EAPI=8
+HOMEPAGE=https://github.com/EmperorPenguin18/gobble
+INHERIT=cargo
+IUSE=man debug
+KEYWORDS=~amd64
+LICENSE=GPL-3 MIT
+RDEPEND=x11-libs/libxcb:=
+SLOT=0
+SRC_URI=https://github.com/EmperorPenguin18/gobble/archive/refs/tags/1.3.tar.gz -> gobble-1.3.tar.gz https://crates.io/api/v1/crates/anyhow/1.0.75/download -> anyhow-1.0.75.crate https://crates.io/api/v1/crates/bitflags/1.3.2/download -> bitflags-1.3.2.crate https://crates.io/api/v1/crates/libc/0.2.147/download -> libc-0.2.147.crate https://crates.io/api/v1/crates/memchr/2.5.0/download -> memchr-2.5.0.crate https://crates.io/api/v1/crates/quick-xml/0.28.2/download -> quick-xml-0.28.2.crate https://crates.io/api/v1/crates/xcb/1.2.2/download -> xcb-1.2.2.crate
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	b2b07efa51009704f88173b2c7feab47	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	cargo	4dede41d64d595673f6da62ab5540fa0
+_md5_=ad52acf5362d66cfa29de58ab69c7732
