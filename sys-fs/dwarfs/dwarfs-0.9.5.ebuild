@@ -14,7 +14,8 @@ SRC_URI="https://github.com/mhx/dwarfs/releases/download/v${PV}/${P}.tar.xz"
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="+jemalloc test man"
+IUSE="+jemalloc test man" #Tests is broken at this moment 
+# See https://github.com/mhx/dwarfs/issues/194
 S="${WORKDIR}/dwarfs-${PV}"
 
 RDEPEND="
@@ -23,6 +24,7 @@ RDEPEND="
 	app-arch/snappy
 	app-arch/xz-utils
 	app-arch/zstd
+	dev-cpp/range-v3
 	dev-cpp/gflags
 	dev-cpp/glog[gflags]
 	dev-cpp/parallel-hashmap:=
@@ -38,10 +40,6 @@ RDEPEND="
 	sys-libs/binutils-libs
 	sys-libs/libunwind
 	sys-libs/zlib
-	!dev-cpp/fbthrift
-	!dev-cpp/fizz
-	!dev-cpp/folly
-	!dev-cpp/wangle
 	jemalloc? ( >=dev-libs/jemalloc-5.3.0-r1 )
 "
 
@@ -77,12 +75,15 @@ src_prepare() {
 	sed '/CMAKE_CXX_FLAGS_COMMON/s#-g ##' -i folly/CMake/FollyCompilerUnix.cmake || die
 	sed '/^\s*-g$/d' -i folly/CMake/FollyCompilerUnix.cmake || die
 	replace-flags -O3 -O2
-
+	# Fixes building with test when using system-gtest
+	# https://github.com/mhx/dwarfs/issues/188
+	sed '/utils_test/d' -i CMakeLists.txt || die
 	cmake_src_prepare
 }
 
 src_configure() {
 	append-cxxflags "-I/usr/include"
+	filter-ldflags "-Wl,--as-needed"
 	append-ldflags $(no-as-needed)
 
 	# FIXME: Requires dev-cpp/gtest to be built with -fchar8_t or -std=c++20.
@@ -99,40 +100,17 @@ src_configure() {
 		-DPREFER_SYSTEM_LIBFMT=ON
 		-DWITH_LEGACY_FUSE=OFF
 		-DDISABLE_CCACHE=ON  # Use FEATURES=ccache
+		-DBUILD_SHARED_LIBS=OFF # It can be very difficult to explain
+		#  Shared libs is not fully supported by upstream
+		# https://github.com/mhx/dwarfs/issues/184#issuecomment-1873820859
+		#  So if we disable shared libs we dramatically reduce install code and
+		# remove libs collision with dev-cpp/folly, dev-cpp/fbthrift,
+		# dev-cpp/fizz, and dev-cpp/wangle
+		#  We do NOT enable the full static build, but eradicate bundled libs
+		# such as libfolly.so and libdwarfs_compression.so
+		-DCMAKE_FIND_LIBRARY_SUFFIXES=".a"
 	)
 	cmake_src_configure
-}
-
-src_install() {
-	local libs=(
-		folly/libfolly.so
-		folly/libfolly.so.0.58.0-dev
-		libcompression_thrift.so
-		libdwarfs.so
-		libdwarfs_categorizer.so
-		libdwarfs_compression.so
-		libdwarfs_compression_metadata.so
-		libdwarfs_main.so
-		libdwarfs_tool.so
-		libdwarfsbench_main.so
-		libdwarfsck_main.so
-		libdwarfsck_main.so
-		libdwarfsextract_main.so
-		libdwarfsextract_main.so
-		libfeatures_thrift.so
-		libhistory_thrift.so
-		libmetadata_thrift.so
-		libmkdwarfs_main.so
-		libthrift_light.so
-	)
-
-	cmake_src_install
-
-	for lib in "${libs[@]}"; do
-		# TODO: figure out how to remove this with cmake
-		patchelf --remove-rpath "$lib" || die
-		dolib.so "$lib"
-	done
 }
 
 src_test() {
@@ -140,6 +118,9 @@ src_test() {
 		# Tests don't work in sandbox
 		# fuse: failed to open /dev/fuse: Permission denied
 		dwarfs/tools_test
+		# Some tests doesn't work because of sed '/utils_test/d'
+		dwarfsextract_test.perfmon
+		dwarfs/segmenter_repeating_sequence_test.github161
 	)
 	cmake_src_test
 }

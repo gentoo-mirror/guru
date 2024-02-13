@@ -14,7 +14,8 @@ SRC_URI="https://github.com/mhx/dwarfs/releases/download/v${PV}/${P}.tar.xz"
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="+jemalloc test man"
+IUSE="+jemalloc test man" #Tests is broken at this moment 
+# See https://github.com/mhx/dwarfs/issues/194
 S="${WORKDIR}/dwarfs-${PV}"
 
 RDEPEND="
@@ -83,7 +84,7 @@ src_prepare() {
 }
 
 src_configure() {
-	append-cxxflags "-I/usr/include"
+	append-cxxflags "-I/usr/include -fPIC"
 	filter-ldflags "-Wl,--as-needed"
 	append-ldflags $(no-as-needed)
 
