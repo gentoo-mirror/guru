@@ -97,7 +97,7 @@ app-admin/oet 0.1.9 0.1.10 9999: Update your system into binpkgs in an overlay s
 app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applications and tmux
 app-admin/pass-audit 1.2: A pass extension for auditing your password repository.
 app-admin/pass-update 2.1: pass extension that provides an easy flow for updating passwords
-app-admin/pulumi-bin 3.102.0 3.103.1 3.104.2: Infrastructure as code in any programming language
+app-admin/pulumi-bin 3.103.1 3.104.2 3.105.0: Infrastructure as code in any programming language
 app-admin/rbw 9999: unofficial bitwarden cli
 app-admin/s-tui 1.1.4: Stress-Terminal UI monitoring tool
 app-admin/synadm 0.43.1 0.44: Command line admin tool for Synapse
@@ -338,6 +338,7 @@ app-text/komikku 1.37.1: Manga reader for GNOME
 app-text/koodo-reader-bin 1.5.1 1.6.3: A modern ebook manager and reader with sync and backup capacities
 app-text/lizard 1.17.10 1.17.10-r1: A simple code complexity analyser, supports most of the popular languages.
 app-text/lorien-bin 0.6.0: Infinite canvas drawing/whiteboarding. Made with Godot.
+app-text/lsp 0.5.0_rc4: The least significant pager
 app-text/mandown 0.1.3: Markdown to groff (man page) converter
 app-text/md2mld 0.5.1: Little cli tool to convert md files into mld files
 app-text/md4c 0.4.8_p20220115: C Markdown parser. Fast, SAX-like interface, CommonMark Compliant.
@@ -551,7 +552,7 @@ dev-R/zoo 1.8.10: S3 Infrastructure for Regular and Irregular Time Series (Z's O
 dev-build/FoBiS 3.0.5-r1: FoBiS.py, a Fortran Building System for poor men
 dev-build/fpm 0.9.0 0.10.0: Fortran Package Manager (fpm)
 dev-build/fypp 3.1 3.2: Fypp - Python powered Fortran preprocessor
-dev-build/just 1.21.0 1.22.0 1.22.1 1.23.0: Just a command runner (with syntax inspired by 'make')
+dev-build/just 1.22.1 1.23.0 1.24.0: Just a command runner (with syntax inspired by 'make')
 dev-cpp/MEL 1.0.0-r1: Math Expression Library
 dev-cpp/blurhash 0.2.0 0.2.0-r1: C++ blurhash encoder/decoder
 dev-cpp/coeurl 0.2.1 0.3.0: A simple async wrapper around CURL for C++
@@ -575,11 +576,12 @@ dev-cpp/pcg-cpp 0.98.1_p20210406-r1: Family of better random number generators
 dev-cpp/plog 1.1.5_p20200501 1.1.6-r1: Portable, simple and extensible C++ logging library
 dev-cpp/qt-jdenticon 0.3.0: Qt5 / C++14 Port of Jdenticon
 dev-cpp/rang 3.2: Minimal, header-only, modern C++ library for terminal goodies
-dev-cpp/scnlib 2.0.0: scanf for modern C++
+dev-cpp/scnlib 2.0.0 2.0.1: scanf for modern C++
 dev-cpp/simdutf 4.0.9: simdutf: Unicode validation and transcoding at billions of characters per second
 dev-cpp/sprout 0_pre20190615: C++11/14 constexpr based Containers, Algorithms, Random numbers and others
 dev-cpp/std-format 0_pre20220112-r1: A simple polyfill allowing you to use std::format
 dev-cpp/tiny-dnn 1.0.0_alpha3-r2: header only, dependency-free deep learning framework in C++14
+dev-cpp/toml11 3.8.1: TOML for Modern C++
 dev-cpp/trantor 1.5.14_p1 1.5.15: Non-blocking I/O tcp network lib based on c++14/17
 dev-cpp/trompeloeil 43: Header only C++14 mocking framework
 dev-cpp/units 2.3.3: A compile-time, header-only, dimensional analysis and unit conversion library
@@ -622,6 +624,7 @@ dev-crystal/webless 0.1.0: HTTP::Client for testing HTTP::Handlers directly and 
 dev-db/dbeaver-bin 23.0.0 23.2.0 23.3.0: Free universal database tool (community edition).
 dev-db/pg_repack 1.4.8: Reorganize tables in PostgreSQL databases with minimal locks
 dev-db/rum 1.3.13: RUM access method - inverted index with additional information in posting lists
+dev-db/tdscpp 20240212: C++ library to communicate with Microsoft SQL server
 dev-dotnet/gtk-sharp 2.99.3-r3 3.22.2-r2: gtk bindings for mono
 dev-elixir/hex 1.0.1-r1: Package manager for the Erlang VM
 dev-embedded/arduino-cli 0.34.2 0.35.2: Next-generation arduino command line tool
@@ -712,6 +715,7 @@ dev-libs/libdwarf 0.4.0 0.4.1 0.5.0 0.6.0: The DWARF Debugging Information Forma
 dev-libs/libglibutil 1.0.67-r3 1.0.68 9999: Library of glib utilities from sailfishos project
 dev-libs/libnodave 0.8.5.1-r2: Connect to and exchange data with Siemens PLCs
 dev-libs/libopensmtpd 0.7: Library for creating OpenSMTPD filters
+dev-libs/librepo 1.17.0: Repodata downloading library
 dev-libs/libthai 0.1.28 0.1.29: A a set of Thai language support routines
 dev-libs/ls-hpack 2.3.0-r1: QPACK compression library for use with HTTP/3
 dev-libs/ls-qpack 2.5.0-r1: QPACK compression library for use with HTTP/3
@@ -1319,6 +1323,7 @@ dev-util/qshaderedit 0.1.5: Multiplatform shader editor inspired by Apple's Open
 dev-util/quilttools 0.3-r1: Mailbox to quilt series converter
 dev-util/reflex 0.3.1: A small tool to watch a directory and rerun a command when certain files change
 dev-util/rye 0.22.0: An Experimental Package Management Solution for Python
+dev-util/spi-tools 1.0.2: Simple command line tools to help using Linux spidev devices
 dev-util/stripe-cli 9999: A command-line tool for Stripe
 dev-util/stylua 0.20.0: A code formatter for Lua
 dev-util/tflint-bin 0.43.0 0.46.0: A Pluggable Terraform Linter
@@ -1776,7 +1781,7 @@ net-misc/gdown 5.0.1 5.1.0: Google Drive public file/folder downloader
 net-misc/gemget 1.9.0: Command line downloader for the Gemini protocol
 net-misc/gemserv 0.6.5 0.6.6: A gemini Server written in rust
 net-misc/giara 1.0.1 1.1.0: An app for Reddit
-net-misc/gmid 1.8.6 2.0.1 2.0.1-r1 9999: Simple and secure Gemini server
+net-misc/gmid 2.0.1-r1 9999: Simple and secure Gemini server
 net-misc/gnome-ssh-askpass 9.2_p1: GTK-based passphrase dialog for use with OpenSSH
 net-misc/gsocket 1.4.41 9999: Connect like there is no firewall. Securely.
 net-misc/lyrics-in-terminal 1.5.0: Command Line Lyrics fetcher for MPRIS media players
@@ -1850,7 +1855,7 @@ sci-electronics/bluespec 2022.01-r1 2023.01 2023.07 9999: Toolchain for the Blue
 sci-electronics/circt 1.14.0 1.37.0: The fast free Verilog/SystemVerilog simulator
 sci-electronics/coil64 2.1.27: Coil64 is inductance coil calculator
 sci-electronics/dsview 1.2.1 1.3.0 9999: An open source multi-function instrument
-sci-electronics/kactus2 3.12.0 3.13.0 9999: A open source IP-XACT-based tool
+sci-electronics/kactus2 3.12.0 3.13.0 3.13.1 9999: A open source IP-XACT-based tool
 sci-electronics/liblxi 1.16 1.18: Implementation of the LAN eXtensions for Instrumentation (LXI)
 sci-electronics/logic-bin 2.4.0 2.4.9: Saleae logic analyzer
 sci-electronics/lxi-tools 2.1 2.3: Tools to access devices with LXI
@@ -2036,8 +2041,8 @@ sys-fs/btrfs-heatmap 9-r1: Python 3 script to draw a heatmap of a btrfs filesyst
 sys-fs/ddrescueview 0.4.5: Graphical viewer for GNU ddrescue mapfiles
 sys-fs/diskonaut 0.10.0 0.11.0 9999: Terminal disk space visual navigator
 sys-fs/dua-cli 2.25.0 2.28.0: A tool to conveniently learn about the disk usage of directories, fast!
-sys-fs/dwarfs 0.8.0 0.9.1: A fast very high compression read-only FUSE file system
-sys-fs/dwarfs-bin 0.8.0 0.9.1: Static version of a fast very high compression read-only FUSE file system
+sys-fs/dwarfs 0.9.3 0.9.5: A fast very high compression read-only FUSE file system
+sys-fs/dwarfs-bin 0.8.0 0.9.3: Static version of a fast very high compression read-only FUSE file system
 sys-fs/fstransform 0.9.4: Tool for in-place filesystem conversion
 sys-fs/gcsfuse 1.2.0: A user-space file system for interacting with Google Cloud Storage
 sys-fs/gdu 5.14.0 5.25.0: Disk usage analyzer with console interface written in Go

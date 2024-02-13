@@ -1,0 +1,15 @@
+BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.20.5
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=dev-cpp/nlohmann_json dev-libs/icu kerberos? ( virtual/krb5 ) ssl? ( dev-libs/openssl )
+DESCRIPTION=C++ library to communicate with Microsoft SQL server
+EAPI=8
+HOMEPAGE=https://github.com/maharmstone/tdscpp
+INHERIT=cmake
+IUSE=kerberos +ssl
+KEYWORDS=~amd64 ~arm64 ~riscv
+LICENSE=LGPL-3
+RDEPEND=dev-cpp/nlohmann_json dev-libs/icu kerberos? ( virtual/krb5 ) ssl? ( dev-libs/openssl )
+SLOT=0
+SRC_URI=https://codeload.github.com/maharmstone/tdscpp/tar.gz/refs/tags/20240212 -> tdscpp-20240212.tar.gz
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	24c947ff5f858625cf0b33c15eed4425	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	c7c9a62d6232cac66d4ea32d575c3e7c
+_md5_=bda7573d130c8aaff1e0e9bd21ac6959
