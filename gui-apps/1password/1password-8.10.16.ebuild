@@ -20,7 +20,6 @@ DEPEND="
 	acct-group/1password
 "
 RDEPEND="${DEPEND}"
-BDEPEND=""
 
 S=${WORKDIR}
 
@@ -33,7 +32,7 @@ src_unpack() {
 	rpm_unpack ${P}.x86_64.rpm
 }
 
-QA_FLAGS_IGNORED="/usr/bin/${PN}"
+QA_PREBUILT="/usr/bin/${PN}"
 
 QA_SONAME="
 /usr/lib64/libXcomposite.so.1

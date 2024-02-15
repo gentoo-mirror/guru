@@ -10,7 +10,7 @@ HOMEPAGE="https://nulloy.com"
 
 NAME="nulloy-theme-night-v1.0"
 SRC_URI="https://github.com/nulloy/nulloy/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz
-	skins? ( https://gitlab.com/vitaly-zdanevich/nulloy-theme-night/-/archive/v1.0/${NAME}.tar.gz )"
+	skins? ( https://gitlab.com/vitaly-zdanevich/nulloy-theme-night/-/archive/v1.0/${NAME}.tar.bz2 )"
 
 LICENSE="GPL-3"
 SLOT="0"
@@ -33,7 +33,11 @@ DEPEND="
 	media-libs/gst-plugins-base
 	media-libs/taglib
 	media-plugins/gst-plugins-meta
+	media-gfx/imagemagick
 "
+# imagemagick to generate icons, see
+# https://github.com/nulloy/nulloy/commit/9b89a9e60d68c59fa541807db68e5a1daf4110cc#r138660390
+
 RDEPEND="${DEPEND}"
 
 src_prepare() {
