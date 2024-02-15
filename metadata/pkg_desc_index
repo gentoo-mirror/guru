@@ -300,10 +300,10 @@ app-portage/quantum-resolver 9999: A WIP portage dependency resolver
 app-portage/showbuild 0.9.1-r1: Script to follow log of running portage builds
 app-portage/version 0.19.0_alpha 0.20.1_alpha 0.21.0_alpha: A command line function for package version management.
 app-shells/antibody 6.1.1-r1: Fast Zsh plugin manager
-app-shells/carapace 0.28.5 0.29.1: Multi-shell multi-command argument completer
+app-shells/carapace 0.28.5 0.30.1: Multi-shell multi-command argument completer
 app-shells/clownfish 0_pre20210117: fish shell mocks
 app-shells/direnv 2.32.3 9999: Environment variable manager for shell
-app-shells/elvish 0.19.2: Expressive programming language and a versatile interactive shell
+app-shells/elvish 0.19.2 0.20.1: Expressive programming language and a versatile interactive shell
 app-shells/fish-agnoster-theme 0.1.0_p20200415: Fancy, colorful theme with support for Powerline fonts
 app-shells/fish-command-timer 0.1.3 0.1.3_p20201002: Fish shell extension for printing execution time for each command
 app-shells/fish-history-merge 0_pre20201121: Plugin that modifies built-in up-or-search command to merge the command history
@@ -1313,8 +1313,8 @@ dev-util/lemminx-bin 0.24.0 0.25.0: XML Language Server
 dev-util/lottieconverter 0.2: Simple lottie (telegram animated sticker) converter.
 dev-util/lua-language-server 3.7.3: Lua language server
 dev-util/mh 1.0.3: Generate help for Makefile
-dev-util/mock 5.4: Simple chroot build environment manager for building RPMs
-dev-util/mock-core-configs 39.4: Mock core config files basic chroots
+dev-util/mock 5.5: Simple chroot build environment manager for building RPMs
+dev-util/mock-core-configs 40.1: Mock core config files basic chroots
 dev-util/odb 2.5.0_beta21_p1: ODB compiler and the ODB system documentation
 dev-util/ots 8.1.4 8.2.1: An util for validating and sanitising OpenType files
 dev-util/pifpaf 3.1.5-r1: Suite of tools and fixtures to manage daemons for testing
@@ -1322,7 +1322,7 @@ dev-util/pmbootstrap 1.51.0: Helper tool for developing and building postmarketO
 dev-util/qshaderedit 0.1.5: Multiplatform shader editor inspired by Apple's OpenGL Shader Builder
 dev-util/quilttools 0.3-r1: Mailbox to quilt series converter
 dev-util/reflex 0.3.1: A small tool to watch a directory and rerun a command when certain files change
-dev-util/rye 0.22.0: An Experimental Package Management Solution for Python
+dev-util/rye 0.23.0: An Experimental Package Management Solution for Python
 dev-util/spi-tools 1.0.2: Simple command line tools to help using Linux spidev devices
 dev-util/stripe-cli 9999: A command-line tool for Stripe
 dev-util/stylua 0.20.0: A code formatter for Lua
@@ -1483,6 +1483,7 @@ gui-apps/nwg-menu 0.1.1 0.1.2: enuStart plugin to nwg-panel, also capable of wor
 gui-apps/nwg-panel 0.9.21 0.9.22 0.9.23 9999: GTK3-based panel for sway and Hyprland Wayland compositors
 gui-apps/nwg-shell 0.5.31 0.5.32: libraries an common functions for the nwg-shell project
 gui-apps/nwg-shell-config 0.5.33 0.5.34: nwg-shell configuration utility
+gui-apps/openrefine 3.7.9: Wikidata batch editor, Wikimedia Commons mass upload tool
 gui-apps/organicmaps 9999: Offline maps and navigation using OpenStreetMap data
 gui-apps/packettracer 8.2.0: Cisco's packet tracer
 gui-apps/paperde 0.1.1_p20210426 9999: Simple, sleek QT based DE for wayland using wayfire
@@ -1505,6 +1506,7 @@ gui-apps/tessen 2.2.1-r1: an interactive menu to autotype and copy pass and gopa
 gui-apps/tiramisu 1.0_p20201110 2.0.20211107 9999: minimalistic desktop notifications provider
 gui-apps/tofi 0.8.1 0.9.1: Fast and simple dmenu/rofi replacement for wlroots-based Wayland compositors
 gui-apps/tootle 9999: Mastodon client written in GTK3
+gui-apps/vicuna 1.25: Tool for uploading files to Wikimedia Commons and other Wikimedia projects
 gui-apps/wbg 1.0.2 1.1.0 9999: Super simple wallpaper application
 gui-apps/wdisplays 1.0-r3 1.1 9999: GUI display configurator for wlroots compositors
 gui-apps/wev 1.0.0: Wayland event viewer
@@ -2041,7 +2043,7 @@ sys-fs/btrfs-heatmap 9-r1: Python 3 script to draw a heatmap of a btrfs filesyst
 sys-fs/ddrescueview 0.4.5: Graphical viewer for GNU ddrescue mapfiles
 sys-fs/diskonaut 0.10.0 0.11.0 9999: Terminal disk space visual navigator
 sys-fs/dua-cli 2.25.0 2.28.0: A tool to conveniently learn about the disk usage of directories, fast!
-sys-fs/dwarfs 0.9.3 0.9.5-r1: A fast very high compression read-only FUSE file system
+sys-fs/dwarfs 0.9.5-r1: A fast very high compression read-only FUSE file system
 sys-fs/dwarfs-bin 0.8.0 0.9.3: Static version of a fast very high compression read-only FUSE file system
 sys-fs/fstransform 0.9.4: Tool for in-place filesystem conversion
 sys-fs/gcsfuse 1.2.0: A user-space file system for interacting with Google Cloud Storage
@@ -2077,7 +2079,7 @@ sys-power/fan2go 0.6.2 0.6.2-r1 0.8.1: A simple daemon providing dynamic fan spe
 sys-power/geopmd 2.0.0_rc1: Global Extensible Open Power Manager (Daemon)
 sys-power/gtherm 0.0.3: A simple daemon to monitor thermal zones and cooling devices
 sys-power/linux-tools-power-x86 5.18 6.1: Linux x86 CPU power tools
-sys-power/nvidia-exec 0.1.2 9999: Lenovo Legion Linux kernel module
+sys-power/nvidia-exec 0.1.2-r1 9999: GPU switching without login out for Nvidia Optimus laptops under Linux
 sys-process/gotop 4.2.0: A terminal based graphical activity monitor inspired by gtop and vtop
 sys-process/nq 0.4: Unix command line queue utility
 sys-process/nvtop 2.0.3 3.0.1 3.0.2 9999: (h)top like task monitor for AMD, Intel, NVIDIA, … GPUs

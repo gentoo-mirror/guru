@@ -1,11 +1,12 @@
-BDEPEND=>=dev-vcs/git-1.8.2.1[curl] virtual/pkgconfig
+BDEPEND=virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=install postinst unpack
-DESCRIPTION=Lenovo Legion Linux kernel module
+DESCRIPTION=GPU switching without login out for Nvidia Optimus laptops under Linux
 EAPI=8
 HOMEPAGE=https://github.com/pedro00dk/nvidia-exec
-INHERIT=git-r3 systemd
+INHERIT=systemd git-r3
 LICENSE=GPL-3
 PROPERTIES=live
+RDEPEND=app-misc/jq sys-apps/lshw sys-process/lsof x11-drivers/nvidia-drivers
 SLOT=0
-_eclasses_=git-r3	86fa1f157b70b9d2ff340c4633b1cf4b	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	systemd	c8b03e8df84486aa991d4396686e8942
-_md5_=6a8e4142a248c2ec260e0bfc860e98c0
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	systemd	c8b03e8df84486aa991d4396686e8942	git-r3	86fa1f157b70b9d2ff340c4633b1cf4b
+_md5_=0cc39441c15ff863fc37cf8d7e6ba0fc

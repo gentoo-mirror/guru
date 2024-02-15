@@ -1,0 +1,14 @@
+BDEPEND=commons? ( app-arch/unzip )
+DEFINED_PHASES=install postinst
+DEPEND=virtual/jre dev-java/maven-bin net-libs/nodejs
+DESCRIPTION=Wikidata batch editor, Wikimedia Commons mass upload tool
+EAPI=8
+HOMEPAGE=https://openrefine.org
+INHERIT=wrapper
+IUSE=+commons
+KEYWORDS=~amd64
+LICENSE=BSD
+SLOT=0
+SRC_URI=https://github.com/OpenRefine/OpenRefine/releases/download/3.7.9/openrefine-linux-3.7.9.tar.gz commons? ( https://github.com/OpenRefine/CommonsExtension/releases/download/v0.1.1/openrefine-commons-0.1.1.zip )
+_eclasses_=wrapper	4a1902f969e5718126434fc35f3a0d9c
+_md5_=8b8abac92ccda402c1370b57314c4559
