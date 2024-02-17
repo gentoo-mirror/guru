@@ -13,7 +13,10 @@ LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64"
 
-DEPEND="dev-libs/jansson"
+DEPEND="
+	dev-libs/jansson
+	sys-libs/zlib
+"
 RDEPEND="${DEPEND}
 	dev-libs/openssl:=
 "

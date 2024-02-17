@@ -1,4 +1,4 @@
-# Copyright 2023 Gentoo Authors
+# Copyright 2023-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -26,10 +26,3 @@ RDEPEND="
 DEPEND="${RDEPEND}"
 
 distutils_enable_tests pytest
-
-# https://github.com/eventlet/eventlet/issues/821
-EPYTEST_DESELECT=(
-	tests/greenio_test.py::TestGreenSocket::test_full_duplex
-	tests/greenio_test.py::TestGreenSocket::test_invalid_connection
-	tests/greenio_test.py::TestGreenSocket::test_nonblocking_accept_mark_as_reopened
-)
