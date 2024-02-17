@@ -1,0 +1,13 @@
+DEFINED_PHASES=install postinst
+DESCRIPTION=High-performance on-the-fly thumbnailer script for mpv.
+EAPI=8
+HOMEPAGE=https://github.com/po5/thumbfast
+INHERIT=mpv-plugin
+IUSE=+autoload
+KEYWORDS=~amd64
+LICENSE=MPL-2
+RDEPEND=app-shells/bash media-video/mpv[lua]
+SLOT=0
+SRC_URI=https://github.com/po5/thumbfast/archive/03e93feee5a85bf7c65db953ada41b4826e9f905.tar.gz -> thumbfast-2023.12.08.tar.gz
+_eclasses_=mpv-plugin	d5b74b0d4b9aa2b088badc969f11de7a
+_md5_=2d4369574e95c5fa4b46afddaf0e85f6

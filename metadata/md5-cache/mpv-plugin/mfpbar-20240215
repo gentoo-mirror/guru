@@ -1,0 +1,13 @@
+DEFINED_PHASES=install postinst
+DESCRIPTION=A minimalistic progressbar and osc replacement
+EAPI=8
+HOMEPAGE=https://codeberg.org/NRK/mpv-toolbox
+INHERIT=mpv-plugin optfeature
+IUSE=+autoload
+KEYWORDS=~amd64
+LICENSE=GPL-3+
+RDEPEND=>=media-video/mpv-0.33.0[lua] media-video/mpv:=
+SLOT=0
+SRC_URI=https://codeberg.org/NRK/mpv-toolbox/archive/20240215.tar.gz -> mfpbar-20240215.tar.gz
+_eclasses_=mpv-plugin	d5b74b0d4b9aa2b088badc969f11de7a	optfeature	222cb475c5a4f7ae7cfb0bf510a6fe54
+_md5_=5688698e208ed61602ab10c649744914
