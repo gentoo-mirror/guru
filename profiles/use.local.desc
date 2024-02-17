@@ -389,7 +389,6 @@ games-util/samrewritten:zenity - Support for dialog display messages
 games-util/xivlauncher:aria2 - Enable Aria2 support.
 games-util/xivlauncher:libsecret - Enable secrets/password storage support.
 gnome-extra/yad:spell - Enable spell check support with app-text/gspell
-gui-apps/ReGreet:gtk4 - Compile with gtk4 support
 gui-apps/ReGreet:openrc - Manually create cache and logs folder
 gui-apps/ReGreet:systemd - Use system-tmpfiles to create cache and logs folder
 gui-apps/coreapps-meta:location - Enable location discovery
@@ -668,6 +667,17 @@ net-p2p/monero:wallet-rpc - Build the RPC wallet, monero-wallet-rpc.
 net-p2p/trezord-go:systemd - Install systemd service file
 net-p2p/trezord-go:udev - Install udev rules
 net-print/hpuld:scanner - Enable scanner on multifunction devices which support it
+net-voip/baresip:amr - Enables Adaptive Multi-Rate Audio support
+net-voip/baresip:aom - av1 module
+net-voip/baresip:aptx - Audio Processing Technology codec (aptX)
+net-voip/baresip:codec2 - CODEC2 low-bitrate speech audio codec
+net-voip/baresip:gst - Support for video (media-libs/gstreamer)
+net-voip/baresip:gtk3 - gtk+ user interface
+net-voip/baresip:mpa - MPA Speech and Audio Codec
+net-voip/baresip:mqtt - Enable mqtt support via app-misc/mosquitto
+net-voip/baresip:pipewire - Enable pipewire audio support
+net-voip/baresip:spandsp - Use media-libs/spandsp for for G.722 and G.726 codec support
+net-voip/baresip:vpx - Enables VP8 and VP9 codec support using libvpx
 net-vpn/cloudflare-warp:systray - Enable systray indicator of whether WARP is active
 net-vpn/fastd:doc - Build and install manpages
 net-vpn/fastd:offload-l2tp - Offload L2TP traffic to the kernel when using the null@l2tp transport method
