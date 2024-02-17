@@ -1,13 +1,13 @@
 BDEPEND=app-text/scdoc virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
-DEFINED_PHASES=compile install unpack
+DEFINED_PHASES=compile install test unpack
 DEPEND=dev-db/sqlite:3 dev-libs/expat dev-libs/gumbo:= dev-libs/yajl:= net-misc/curl sys-libs/ncurses:=
 DESCRIPTION=A lightweight feed reader with ncurses user interface inspired by Newsboat.
 EAPI=8
 HOMEPAGE=https://codeberg.org/grisha/newsraft
-INHERIT=git-r3
+INHERIT=toolchain-funcs git-r3
 LICENSE=ISC
 PROPERTIES=live
 RDEPEND=dev-db/sqlite:3 dev-libs/expat dev-libs/gumbo:= dev-libs/yajl:= net-misc/curl sys-libs/ncurses:=
 SLOT=0
-_eclasses_=git-r3	86fa1f157b70b9d2ff340c4633b1cf4b
-_md5_=47126a63fc5ff73a7a132f64fc5e4bc6
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	git-r3	86fa1f157b70b9d2ff340c4633b1cf4b
+_md5_=4a23cd09caec87c55ef71ab9cdf35aa0
