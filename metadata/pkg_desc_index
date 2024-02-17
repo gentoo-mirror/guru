@@ -137,7 +137,7 @@ app-crypt/intel-ipsec-mb 1.1 1.2 1.3 1.5 9999: Multi-Buffer Crypto for IPSec fro
 app-crypt/lego 4.14.2 4.15.0 9999: Let's Encrypt/ACME client (like certbot or acme.sh) and library written in Go
 app-crypt/pinentry-bemenu 0.11.0 0.12.0: Pinentry based on bemenu
 app-crypt/reop 2.1.1: reasonable expectation of privacy
-app-crypt/tang 13 14: Tang binding daemon
+app-crypt/tang 14 15: Tang binding daemon
 app-crypt/tomb 2.9-r6: Tomb :: File Encryption on GNU/Linux
 app-crypt/uacme 1.7.1: ACMEv2 client written in plain C with minimal dependencies
 app-dicts/canna-2ch 20040519: Japanese Canna dictionary for 2channelers
@@ -702,11 +702,11 @@ dev-libs/ftl 1.0_p20230220: The Fortran Template Library (FTL) is a general purp
 dev-libs/gbinder 1.1.30-r3 1.1.32 9999: GLib-style interface to binder
 dev-libs/gpds 1.8.3: A general purpose data serializer
 dev-libs/hts_engine 1.10: HMM-based speech synthesis system (HTS) engine and API
-dev-libs/hyprlang 0.2.1 0.2.1-r1: Official implementation library for the hypr config language
+dev-libs/hyprlang 0.2.1 0.2.1-r1 0.3.2: Official implementation library for the hypr config language
 dev-libs/imsg-compat 6.8.2 9999: linux port of OpenBSD imsg
 dev-libs/ip2loc 8.1.4: IP2Location C Library
 dev-libs/jonquil 0.2.0: Jonquil: Bringing TOML blooms to JSON land
-dev-libs/jose 11-r1: C-language implementation of Javascript Object Signing and Encryption
+dev-libs/jose 11-r1 12: C-language implementation of Javascript Object Signing and Encryption
 dev-libs/kwsys 0_pre20220603: Kitware System Library
 dev-libs/lexbor 2.3.0: Modular web engine (HTML/CSS parser, renderer, ...)
 dev-libs/libcli 1.10.7: Shared C library to include Cisco-like CLI into other software
@@ -996,7 +996,7 @@ dev-python/dtreeviz 2.2.1: A python library for decision tree visualization and 
 dev-python/emailthreads 0.1.3: Parses email threads into conversation trees
 dev-python/etcd3 0.12.0: Python client for the etcd API v3
 dev-python/etcd3gw 1.0.2: A python client for etcd3 grpc-gateway v3 API
-dev-python/eventlet 0.34.2 0.34.3: Concurrent networking library for Python
+dev-python/eventlet 0.34.3 0.35.1: Concurrent networking library for Python
 dev-python/evernote3 1.25.14: Evernote SDK
 dev-python/exifread 3.0.0: Easy to use Python module to extract Exif metadata from tiff and jpeg files
 dev-python/factory-boy 3.2.1-r1: A versatile test fixtures replacement based on thoughtbot's factory_bot for Ruby
@@ -1072,7 +1072,6 @@ dev-python/marshmallow_enum 1.5.1: Enum handling for Marshmallow
 dev-python/mastodon-py 1.8.0 1.8.1: Python wrapper for the Mastodon API
 dev-python/material-color-utilities 0.1.5 9999: Python port of material-color-utilities used for Material You colors
 dev-python/mautrix 0.20.4-r1 0.20.4-r2: A Python 3 asyncio Matrix framework
-dev-python/minio 7.2.2 7.2.3: MinIO Client SDK for Python
 dev-python/mitype 0.2.4: Typing speed test in terminal
 dev-python/mkdocs-blog-plugin 9999: Plugin for MkDocs to keep a simple blog section inside your documentation.
 dev-python/mkdocs-exclude 1.0.2-r1: Lets you exclude files or trees from your output
@@ -1466,7 +1465,7 @@ gui-apps/gtklock-extras 9999: Gtklock modules
 gui-apps/hiprompt-gtk-py 0_pre20220624-r1 9999: GTK+ Himitsu prompter for Wayland
 gui-apps/hyprland-plugins 0.32.3-r1 9999: A blazing fast wayland wallpaper utility
 gui-apps/hyprland-split-monitor-workspaces 0.32.3 9999: A small plugin to provide awesome/dwm-like behavior with workspaces
-gui-apps/hyprpaper 0.5.0 0.6.0: A blazing fast wayland wallpaper utility
+gui-apps/hyprpaper 0.5.0 0.6.0 0.6.0-r1: A blazing fast wayland wallpaper utility
 gui-apps/hyprpicker 0.1.1 0.2.0: A wlroots-compatible Wayland color picker that does not suck
 gui-apps/intiface-central-bin 2.5.0 2.5.3: Buttplug frontend application
 gui-apps/lemurs 0.3.1 0.3.1-r1 0.3.2: A TUI Display/Login Manager
@@ -1529,7 +1528,7 @@ gui-libs/libcsys 4.5.0 9999: Library for managing the device
 gui-libs/libdecor 0.1.1 9999: A client-side decorations library for Wayland clients
 gui-libs/text-engine 0.1.1-r2 9999: A lightweight rich-text framework for GTK 4
 gui-libs/webp-pixbuf-loader 0.0.1: WebP Image format GdkPixbuf loader
-gui-libs/xdg-desktop-portal-hyprland 1.1.0-r1 1.2.2-r2 1.2.5-r2 1.2.6-r1 1.3.1 9999: xdg-desktop-portal backend for hyprland
+gui-libs/xdg-desktop-portal-hyprland 1.1.0-r1 1.2.2-r2 1.2.5-r2 1.2.6-r1 1.3.1 1.3.1-r1 9999: xdg-desktop-portal backend for hyprland
 gui-wm/cage 0.1.5 9999: A Wayland kiosk
 gui-wm/hyprland-contrib 0.1-r1 9999: Community-maintained extensions for hyprland
 gui-wm/niri 0.1.2: Scrollable-tiling Wayland compositor
@@ -1839,7 +1838,7 @@ net-voip/discover-overlay 0.4.5 0.5.4 0.6.9-r1: Yet another Discord overlay for 
 net-voip/gnome-calls 44.2 45.0: Phone dialer and call handler
 net-voip/re 3.7.0 3.8.0 3.9.0: Generic library for real-time communications with async IO support
 net-voip/vvmd 0.8: vvmd is a lower level daemon that retrieves Visual Voicemail
-net-vpn/cloudflare-warp 2023.3.470 2023.7.40: Cloudflare Warp Client
+net-vpn/cloudflare-warp 2023.3.470 2023.7.40 2024.2.62: Cloudflare Warp Client
 net-vpn/fastd 22: A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
 net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that require SAML
 net-vpn/mullvadvpn-app 2023.5 2023.6: Tool used to manage daemon setup
@@ -1988,7 +1987,7 @@ sys-auth/pam-gnupg 0.3: Unlock GnuPG keys on login
 sys-block/partclone 0.3.20: Partition cloning tool
 sys-boot/customrescuecd-x86-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/customrescuecd-x86_64-grub 0.1: Grub menu entries for the .iso image of customrescuecd
-sys-boot/limine 7.0.0 7.0.3: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
+sys-boot/limine 7.0.0 7.0.3 7.0.5: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
 sys-boot/woeusb-ng 0.2.10: Create Windows installer USB from ISO (rewrite of WoeUSB)
 sys-boot/zfsbootmenu 1.12.0 2.2.2 2.3.0: ZFS bootloader for root-on-ZFS systems
 sys-cluster/AXL 0.5.0 0.7.0: AXL provides a common C interface to transfer files in an HPC storage hierarchy
