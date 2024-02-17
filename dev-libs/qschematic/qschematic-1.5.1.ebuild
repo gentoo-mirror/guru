@@ -38,7 +38,7 @@ RDEPEND="
 		>=dev-qt/qtimageformats-6.5:6
 		>=dev-qt/qtsvg-6.5:6
 	)
-	>=dev-libs/gpds-1.6.0[static-libs?]
+	>=dev-libs/gpds-1.8.1[static-libs?]
 "
 
 DEPEND="
@@ -50,7 +50,7 @@ BDEPEND="
 "
 
 PATCHES=(
-	"${FILESDIR}/${PN}-1.5.0-gentoo-cmake-option.patch"
+	"${FILESDIR}/${PN}-1.5.1-gentoo-cmake-option.patch"
 )
 
 src_configure() {
@@ -61,6 +61,7 @@ src_configure() {
 		-DQSCHEMATIC_BUILD_DEMO=$(usex examples)
 		-DQSCHEMATIC_BUILD_QT6=$(usex qt6)
 		-DQSCHEMATIC_BUILD_STATIC=$(usex static-libs)
+		-DQSCHEMATIC_BUILD_SHARED=ON
 	)
 
 	cmake_src_configure
