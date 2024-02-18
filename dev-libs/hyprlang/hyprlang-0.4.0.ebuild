@@ -17,8 +17,9 @@ RESTRICT="!test? ( test )"
 
 BUILD_DIR="${S}/build"
 
-src_install(){
-	cmake_src_install
-	dolib.so "${BUILD_DIR}/libhyprlang.so" || die
-	rm "${D}/usr/lib/libhyprlang.so"
+src_prepare() {
+	default
+
+	sed "s/\<lib\>/$(get_libdir)/" -i CMakeLists.txt hyprlang.pc.in
+	cmake_src_prepare
 }
