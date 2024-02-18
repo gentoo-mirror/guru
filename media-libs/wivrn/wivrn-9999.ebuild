@@ -14,7 +14,7 @@ if [[ ${PV} == 9999 ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/Meumeu/WiVRn.git"
 
-	MONADO_V=79bf8eb8fa168f65f4e5505e0525ee74aa88783e
+	MONADO_V=57e937383967c7e7b38b5de71297c8f537a2489d
 	PFR_V=2.0.3
 	SRC_URI="
 	https://github.com/boostorg/pfr/archive/refs/tags/${PFR_V}.tar.gz -> boostpfr_${PFR_V}.tar.gz
@@ -31,7 +31,7 @@ RDEPEND="
 		x11-drivers/nvidia-drivers
 	)
 	vaapi? (
-		media-video/ffmpeg[libdrm,vulkan,vaapi]
+		media-video/ffmpeg[libdrm,vaapi]
 	)
 	x264? (
 		media-libs/x264
