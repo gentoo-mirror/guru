@@ -29,6 +29,7 @@ acct-group/signald 0: Group for signald
 acct-group/snac 0: System group: snac
 acct-group/tang 0: Group for tang daemon
 acct-group/whoogle 0: Group for www-apps/whoogle-search
+acct-group/wikijs 0: Group for wikijs
 acct-group/wsdd 0: Group for net-misc/wsdd
 acct-group/yacy 0: Group for net-misc/yacy
 acct-group/yggdrasil 1: System group: yggdrasil
@@ -68,6 +69,7 @@ acct-user/snac 0: System user: snac
 acct-user/tang 0: User for tang daemon
 acct-user/trezord 0: User for TREZOR Bridge
 acct-user/whoogle 0: User for www-apps/whoogle-search
+acct-user/wikijs 0: User for wikijs
 acct-user/wsdd 0: User for net-misc/wsdd
 acct-user/yacy 0: User for net-misc/yacy
 acct-user/yggdrasil 1: Yggdrasil user
@@ -1420,7 +1422,7 @@ games-util/r2modman-bin 3.1.45: A simple and easy to use mod manager for several
 games-util/roll 2.6.1: Program to roll dices specified in a simple and intuitive way
 games-util/samrewritten 9999 202008: Steam Achievement Manager For Linux
 games-util/steamtinkerlaunch 12.0: Wrapper script for Steam custom launch options
-games-util/xivlauncher 1.0.6: Custom Launcher for Final Fantasy XIV Online (Crossplatform rewrite)
+games-util/xivlauncher 1.0.6 1.0.7: Custom Launcher for Final Fantasy XIV Online (Crossplatform rewrite)
 gnome-extra/extension-manager 0.4.3 9999: A native tool for browsing, installing, and managing GNOME Shell Extensions
 gnome-extra/iio-sensor-proxy 3.3: IIO sensors to D-Bus proxy
 gnome-extra/junction 1.6-r1: Application/browser chooser
@@ -1560,7 +1562,7 @@ media-fonts/libertinus 7.040: Libertinus font
 media-fonts/linja-pona 4.2 4.9: Font for sitelen pona, a script for toki pona
 media-fonts/linja-wawa 1.21: Font for sitelen pona, a script for toki pona
 media-fonts/overpass 3.0.4: An open source webfont family inspired by Highway Gothic
-media-fonts/plemoljp 1.7.0: PlemolJP is a composite font of IBM Plex Mono and IBM Plex Sans JP.
+media-fonts/plemoljp 1.7.1: PlemolJP is a composite font of IBM Plex Mono and IBM Plex Sans JP.
 media-fonts/robotomono-nerdfont 2.2.2 3.1.1: A free and open-source typeface for developers
 media-fonts/source-han-mono 1.002: Pan-CJK OpenType/CFF mono font family
 media-fonts/source-han-serif 2.001 2.002: Pan-CJK OpenType/CFF font family
@@ -1600,6 +1602,7 @@ media-gfx/zwcad 2023.23.0.3.4-r2: CAD software for 2D drawing, reviewing and pri
 media-libs/alsa-ucm-pinephone 1.2.6.3: ALSA ucm configuration files for the PinePhone (Pro)
 media-libs/alvr 16.0.0: ALVR is an open source remote VR display for the Oculus Go/Quest
 media-libs/amdvlk 2023.1.1 2023.1.2 2023.1.3: AMD Open Source Driver for Vulkan
+media-libs/amdvlk-bin 2023.3.3 2024.1.1: AMD Open Source Driver for Vulkan: official binary version
 media-libs/dr_flac 0.12.42: Single-header FLAC audio decoder library
 media-libs/dr_mp3 0.6.38: Single-header MP3 audio decoder library
 media-libs/dr_wav 0.13.15: Single-header WAV audio loader and writer library
@@ -1615,7 +1618,7 @@ media-libs/sjpeg 1.0_p20210422-r1: simple jpeg encoder
 media-libs/svt-vp9 0.3.0 9999: Scalable Video Technology for VP9 (SVT-VP9 Encoder)
 media-libs/vvdec 2.1.2: VVdeC, the Fraunhofer Versatile Video Decoder
 media-libs/vvenc 1.9.1: VVenC, the Fraunhofer Versatile Video Encoder
-media-libs/wivrn 0.9.1 0.10.1 9999: WiVRn OpenXR streaming
+media-libs/wivrn 0.10.1 0.11 9999: WiVRn OpenXR streaming
 media-plugins/alsa-sndio 0.2: ALSA PCM to play audio on sndio servers
 media-plugins/argotlunar-bin 2.06-r1: Argotlunar is a sound granulator. Binary Linux VST
 media-plugins/gimp-avif-plugin 9999: Plug-in for development GIMP 2.99.11 for loading/saving AVIF images.
@@ -2116,6 +2119,7 @@ www-apps/rimgo 1.2.1: An alternative frontend for Imgur. Originally based on rim
 www-apps/snac 2.25 2.26: A simple, minimalistic ActivityPub instance
 www-apps/uwebsockets 20.11.0 20.14.0 9999: ultra fast, simple, secure & standards compliant web I/O
 www-apps/whoogle-search 0.8.3-r3 0.8.4-r3: A self-hosted, ad-free, privacy-respecting metasearch engine
+www-apps/wiki-js-bin 2.5.301: Modern, lightweight and powerful wiki app built on Nodejs
 www-apps/zola 0.17.2: A fast static site generator with everything built-in
 www-client/badwolf 1.3.0 9999: Minimalist and privacy-oriented WebKitGTK+ browser
 www-client/browsh 1.8.2: A fully-modern text-based browser, rendering to TTY and browsers

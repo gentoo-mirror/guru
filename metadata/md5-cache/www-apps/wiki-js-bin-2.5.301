@@ -1,0 +1,14 @@
+DEFINED_PHASES=install postinst prerm setup
+DEPEND=app-admin/webapp-config
+DESCRIPTION=Modern, lightweight and powerful wiki app built on Nodejs
+EAPI=8
+HOMEPAGE=https://js.wiki/ https://github.com/Requarks/wiki
+INHERIT=webapp
+IUSE=vhosts
+KEYWORDS=~amd64
+LICENSE=AGPL-3
+RDEPEND=acct-group/wikijs acct-user/wikijs >=net-libs/nodejs-18[npm] app-admin/webapp-config
+SLOT=2.5.301
+SRC_URI=https://github.com/requarks/wiki/releases/download/v2.5.301/wiki-js.tar.gz -> wiki-js-bin-2.5.301.tar.gz
+_eclasses_=webapp	de2d3d345b44597c10d7104a7bcdf7b2
+_md5_=81c7548cd061016e1fc1f17009e40b11
