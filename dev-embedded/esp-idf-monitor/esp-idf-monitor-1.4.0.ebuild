@@ -9,8 +9,8 @@ PYTHON_COMPAT=( python3_{11,12} )
 
 inherit distutils-r1 pypi
 
-DESCRIPTION="Firmware size analysis for ESP-IDF"
-HOMEPAGE="https://github.com/espressif/esp-idf-size"
+DESCRIPTION="Python object-oriented database"
+HOMEPAGE="https://github.com/espressif/esp-idf-monitor"
 
 LICENSE="Apache-2.0"
 SLOT="0"
@@ -19,7 +19,8 @@ KEYWORDS="~amd64"
 RESTRICT="test"
 
 RDEPEND="
-	dev-python/pyyaml[${PYTHON_USEDEP}]
+	dev-embedded/esp-coredump[${PYTHON_USEDEP}]
+	dev-python/pyserial[${PYTHON_USEDEP}]
+	dev-python/pyelftools[${PYTHON_USEDEP}]
 "
-
 DEPEND="${RDEPEND}"

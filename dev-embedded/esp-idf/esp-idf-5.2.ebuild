@@ -3,9 +3,9 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_11 )
+PYTHON_COMPAT=( python3_{11,12} )
 
-VER="12.2.0_20230208"
+VER="13.2.0_20230928"
 
 CROSSTOOL_URL="https://github.com/espressif/crosstool-NG/releases/download/esp-${VER}"
 
@@ -16,18 +16,16 @@ HOMEPAGE="https://www.espressif.com/"
 
 #	https://github.com/espressif/binutils-esp32ulp/releases/download/v2.28.51-esp-20191205/binutils-esp32ulp-linux-amd64-2.28.51-esp-20191205.tar.gz
 SRC_URI="https://dl.espressif.com/github_assets/espressif/${PN}/releases/download/v${PV}/${PN}-v${PV}.zip -> ${P}.zip
-	https://github.com/espressif/openocd-esp32/releases/download/v0.12.0-esp32-20230419/openocd-esp32-linux-amd64-0.12.0-esp32-20230419.tar.gz
-	https://github.com/espressif/binutils-gdb/releases/download/esp-gdb-v12.1_20221002/xtensa-esp-elf-gdb-12.1_20221002-x86_64-linux-gnu.tar.gz"
-SRC_URI+=" esp32? ( ${CROSSTOOL_URL}/xtensa-esp32-elf-${VER}-x86_64-linux-gnu.tar.xz )"
-SRC_URI+=" esp32s2? ( ${CROSSTOOL_URL}/xtensa-esp32s2-elf-${VER}-x86_64-linux-gnu.tar.xz )"
-SRC_URI+=" esp32s3? ( ${CROSSTOOL_URL}/xtensa-esp32s3-elf-${VER}-x86_64-linux-gnu.tar.xz )"
+	https://github.com/espressif/openocd-esp32/releases/download/v0.12.0-esp32-20230921/openocd-esp32-linux-amd64-0.12.0-esp32-20230921.tar.gz
+	https://github.com/espressif/binutils-gdb/releases/download/esp-gdb-v12.1_20231023/xtensa-esp-elf-gdb-12.1_20231023-x86_64-linux-gnu.tar.gz"
+SRC_URI+=" ${CROSSTOOL_URL}/xtensa-esp-elf-${VER}-x86_64-linux-gnu.tar.xz"
 SRC_URI+=" riscv32? ( ${CROSSTOOL_URL}/riscv32-esp-elf-${VER}-x86_64-linux-gnu.tar.xz )"
 
 #https://dl.espressif.com/dl/toolchains/preview/riscv32-esp-elf-gcc8_4_0-crosstool-ng-1.24.0-123-g64eb9ff-linux-amd64.tar.gz
 
 KEYWORDS="~amd64"
 LICENSE="Apache-2.0"
-IUSE="+esp32 esp32s2 esp32s3 riscv32"
+IUSE="riscv32"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 SLOT="0"
@@ -46,7 +44,9 @@ RDEPEND="
 	dev-embedded/esptool
 	dev-embedded/esp-idf-kconfig[${PYTHON_USEDEP}]
 	dev-embedded/esp-idf-monitor[${PYTHON_USEDEP}]
+	dev-embedded/esp-idf-panic-decoder[${PYTHON_USEDEP}]
 	dev-embedded/esp-idf-size[${PYTHON_USEDEP}]
+	dev-embedded/freertos-gdb[${PYTHON_USEDEP}]
 	dev-embedded/idf-component-manager[${PYTHON_USEDEP}]
 "
 
@@ -56,7 +56,7 @@ QA_PREBUILT="opt/* usr/lib* usr/share/esp-idf/*"
 QA_PRESTRIPPED="opt/*"
 
 PATCHES=(
-	"${FILESDIR}/allow-system-install-${PN}-5.0.2.patch"
+	"${FILESDIR}/allow-system-install-${PN}-5.1.2.patch"
 )
 
 S="${WORKDIR}/${PN}-v${PV}"
@@ -118,24 +118,11 @@ install_tool() {
 }
 
 src_install() {
-
 	echo -e "#!/bin/sh\npython /usr/share/${PN}/tools/idf.py \"\$@\"" > idf
 	dobin idf
 
-	if use esp32; then
-		install_tool xtensa-esp32-elf
-		install_tool xtensa-esp32-elf/xtensa-esp32-elf
-	fi
-
-	if use esp32s2; then
-		install_tool xtensa-esp32s2-elf
-		install_tool xtensa-esp32s2-elf/xtensa-esp32s2-elf
-	fi
-
-	if use esp32s3; then
-		install_tool xtensa-esp32s3-elf
-		install_tool xtensa-esp32s3-elf/xtensa-esp32s3-elf
-	fi
+	install_tool xtensa-esp-elf
+	install_tool xtensa-esp-elf/xtensa-esp-elf
 
 	if use riscv32; then
 		install_tool riscv32-esp-elf
