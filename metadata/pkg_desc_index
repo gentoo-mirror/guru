@@ -179,7 +179,7 @@ app-editors/typora-bin 1.7.6: a markdown editor,markdown reader.
 app-emacs/idris-mode 1.0 9999: Idris syntax highlighting, compiler-supported editing, and interactive REPL
 app-emacs/prop-menu 0.1.2: Compute pop-up menus from text and overlay properties
 app-emacs/yc 5.2.1: Yet another Canna client on Emacsen
-app-emulation/86BoxManagerX 9999: A (cross-platform) configuration manager for the 86Box emulator
+app-emulation/86BoxManagerX 1.7.6.0e 9999: A (cross-platform) configuration manager for the 86Box emulator
 app-emulation/arnold 20170513: Amstrad CPC emulator
 app-emulation/box64 0.2.2: Linux Userspace x86_64 Emulator with a twist
 app-emulation/box86 0.3.0: Linux Userspace x86 Emulator with a twist
@@ -347,7 +347,7 @@ app-text/md2mld 0.5.1: Little cli tool to convert md files into mld files
 app-text/md4c 0.4.8_p20220115 0.5.2: C Markdown parser. Fast, SAX-like interface, CommonMark Compliant.
 app-text/noweb 2.12: a literate programming tool, lighter than web
 app-text/owo 0.1.0: OwO-ifies text via regex
-app-text/sioyek 2.0.0 9999: Sioyek is a PDF viewer with a focus on textbooks and research papers
+app-text/sioyek 9999: Sioyek is a PDF viewer with a focus on textbooks and research papers
 app-text/smu 1.5 9999: Simple markup - markdown like syntax
 app-text/the-platinum-searcher-bin 2.2.0: Fast CLI search tool, faster than grep, ack, silver_searcher (ag)
 app-text/tldr 3.2.0: Python command line client for tldr pages
@@ -631,15 +631,15 @@ dev-db/tdscpp 20240212: C++ library to communicate with Microsoft SQL server
 dev-dotnet/gtk-sharp 2.99.3-r3 3.22.2-r2: gtk bindings for mono
 dev-elixir/hex 1.0.1-r1: Package manager for the Erlang VM
 dev-embedded/arduino-cli 0.34.2 0.35.2: Next-generation arduino command line tool
-dev-embedded/esp-coredump 1.5.2 1.7.0: Utility that helps users to retrieve and analyse core dumps
-dev-embedded/esp-idf 5.1.1 5.1.2: Espressif IoT Development Framework
-dev-embedded/esp-idf-kconfig 1.2.0 1.4.1 2.0.1: Kconfig tooling for esp-idf
-dev-embedded/esp-idf-monitor 1.1.4 1.3.3: Python object-oriented database
-dev-embedded/esp-idf-panic-decoder 0.2.0: Parses ESP-IDF panic handler output acts as a GDB server over stdin/stdout
-dev-embedded/esp-idf-size 0.3.1 0.4.2 0.4.3: Firmware size analysis for ESP-IDF
+dev-embedded/esp-coredump 1.7.0 1.10.0: Utility that helps users to retrieve and analyse core dumps
+dev-embedded/esp-idf 5.1.2 5.2: Espressif IoT Development Framework
+dev-embedded/esp-idf-kconfig 1.4.1 2.0.1 2.1.0: Kconfig tooling for esp-idf
+dev-embedded/esp-idf-monitor 1.3.3 1.4.0: Python object-oriented database
+dev-embedded/esp-idf-panic-decoder 0.2.0 1.0.1: Parses ESP-IDF panic handler output acts as a GDB server over stdin/stdout
+dev-embedded/esp-idf-size 0.4.3 1.1.1: Firmware size analysis for ESP-IDF
 dev-embedded/etlcpp 20.35.8: A C++ template library for embedded applications
 dev-embedded/freertos-gdb 1.0.2: Python module for operating with freeRTOS-kernel objects in GDB
-dev-embedded/idf-component-manager 1.4.1: Tool for installing ESP-IDF components
+dev-embedded/idf-component-manager 1.4.1 1.5.1: Tool for installing ESP-IDF components
 dev-embedded/mv88e6xxx-dump 0.2.0_pre20210327: Dump information about Marvell mv88e6xxx Ethernet switches
 dev-embedded/qdl 1.0 9999: Tool to communicate with Qualcomm System On a Chip bootroms
 dev-embedded/rauc 1.11.1: Lightweight update client that runs on your Embedded Linux device
@@ -701,7 +701,7 @@ dev-libs/fortran-shlex 1.0.1: Modern Fortran port of the tiny-regex-c library fo
 dev-libs/fortran-stdlib 0.2.1-r1 0.3.0 9999: A community driven standard library for (modern) Fortran
 dev-libs/fsst 0_pre20200830-r1: Fast Static Symbol Table: fast text compression that allows random access
 dev-libs/ftl 1.0_p20230220: The Fortran Template Library (FTL) is a general purpose library for Fortran 2003
-dev-libs/gbinder 1.1.30-r3 1.1.32 9999: GLib-style interface to binder
+dev-libs/gbinder 1.1.30-r3 1.1.32 1.1.36 9999: GLib-style interface to binder
 dev-libs/gpds 1.8.4: A general purpose data serializer
 dev-libs/hts_engine 1.10: HMM-based speech synthesis system (HTS) engine and API
 dev-libs/hyprlang 0.2.1-r1 0.3.2 0.4.0: Official implementation library for the hypr config language
@@ -715,7 +715,7 @@ dev-libs/libcli 1.10.7: Shared C library to include Cisco-like CLI into other so
 dev-libs/libdatrie 0.2.13: Double-Array Trie Library
 dev-libs/libdbf 0.0.1: Library to read the content of dBASE III, IV, and 5.0 files
 dev-libs/libdwarf 0.4.0 0.4.1 0.5.0 0.6.0: The DWARF Debugging Information Format
-dev-libs/libglibutil 1.0.67-r3 1.0.68 9999: Library of glib utilities from sailfishos project
+dev-libs/libglibutil 1.0.68 1.0.76 9999: Library of glib utilities from sailfishos project
 dev-libs/libnodave 0.8.5.1-r2: Connect to and exchange data with Siemens PLCs
 dev-libs/libopensmtpd 0.7: Library for creating OpenSMTPD filters
 dev-libs/librepo 1.17.0: Repodata downloading library
@@ -1017,7 +1017,7 @@ dev-python/furl 2.1.3: URL parsing and manipulation made easy.
 dev-python/futurist 2.4.1: Useful additions to futures, from the future
 dev-python/gabbi 2.7.1: Declarative HTTP testing library
 dev-python/gazpacho 1.1: The simple, fast, and modern web scraping library
-dev-python/gbinder 1.1.2 9999: Python bindings for libgbinder
+dev-python/gbinder 1.1.2 1.1.2-r1 9999: Python bindings for libgbinder
 dev-python/gemcall 0.9.1 0.9.2: A library and CLI tool for making gemini requests
 dev-python/gevent 23.9.1: Coroutine-based network library
 dev-python/gflanguages 0.4.0-r1: A python API for evaluating language support in the Google Fonts collection
@@ -1118,7 +1118,7 @@ dev-python/pure-protobuf 2.3.0: Python implementation of Protocol Buffers data t
 dev-python/py-nanoid 9999: Python Nanoid
 dev-python/pyagentx 0.4: Python AgentX Implementation
 dev-python/pybrowserstack-screenshots 0.1-r1: A python api wrapper and client for Browserstack Screenshots API
-dev-python/pyclip 0.5.4 0.6.0 0.7.0 9999: Python clipboard module
+dev-python/pyclip 0.7.0-r1 9999: Python clipboard module
 dev-python/pycpio 0.8.0 0.8.2 0.9.0: Python CPIO library
 dev-python/pydispatcher 2.0.7: Multi-producer-multi-consumer signal dispatching mechanism
 dev-python/pydub 0.25.1: Manipulate audio with an simple and easy high level interface
@@ -1238,7 +1238,7 @@ dev-python/types-paramiko 2.10.0 2.11.1: Typing stubs for paramiko
 dev-python/types-protobuf 4.24.0.20240129: Typing stubs for protobuf
 dev-python/types-python-dateutil 2.8.17 2.8.18: Typing stubs for python-dateutil
 dev-python/types-pytz 2021.3.8 2022.1.1: Typing stubs for pytz
-dev-python/types-requests 2.31.0.20240125: Typing stubs for requests
+dev-python/types-requests 2.31.0.20240218: Typing stubs for requests
 dev-python/typing_inspect 0.7.1 0.9.0: Runtime inspection utilities for Python typing module
 dev-python/ufo2ft 2.31.1: A bridge from UFOs to FontTools
 dev-python/ufoLib2 0.13.1 0.14.0: A UFO font library
@@ -1246,7 +1246,7 @@ dev-python/ufoNormalizer 0.6.1: A tool that will normalize the XML and other dat
 dev-python/ufoProcessor 1.9.0-r2: Read, write and generate UFOs with designspace data
 dev-python/uharfbuzz 0.33.0-r1: Streamlined Cython bindings for the HarfBuzz shaping engine
 dev-python/ukpostcodeparser 1.1.2-r1: UK postcode parser library
-dev-python/undervolt 0.3.0 9999: Undervolt Intel CPUs under Linux
+dev-python/undervolt 0.4.0 9999: Undervolt Intel CPUs under Linux
 dev-python/unicodedata2 15.0.0: Unicodedata backport updated to the latest Unicode version
 dev-python/urlmatch 1.0.1-r2: A Python library for easily pattern matching wildcard URLs
 dev-python/validator-collection 1.5.0: Python library of 60+ commonly-used validator functions.
@@ -1405,9 +1405,9 @@ games-puzzle/superflu-riteurnz-data 12: Artisanal video-game about Superflu, the
 games-rpg/open-adventure 1.16 1.17 1.18: Forward-port of the Crowther/Woods Adventure 2.5
 games-rpg/snoot-game 1.8 1.8-r1: Visual novel parody of Goodbye Volcano High
 games-server/among-sus 20210519: Among Us, but it's a text adventure
-games-util/HeroicGamesLauncher-bin 2.12.1: A Native GOG and Epic Games Launcher for Linux, Windows and Mac.
+games-util/HeroicGamesLauncher-bin 2.13.0: A Native GOG and Epic Games Launcher for Linux, Windows and Mac.
 games-util/NotEnoughProduction 0.0.4: Tool for building production chains for modded minecraft
-games-util/ProtonUp-Qt 2.8.2 9999: Install and manage GE-Proton, Luxtorpeda & more for Steam Lutris and Heroic.
+games-util/ProtonUp-Qt 2.9.1 9999: Install and manage GE-Proton, Luxtorpeda & more for Steam Lutris and Heroic.
 games-util/chiaki 2.1.1-r2 9999: Client for PlayStation 4 and PlayStation 5 Remote Play
 games-util/dwarf-therapist 41.2.2 41.2.5: For managing dwarves in Dwarf Fortress
 games-util/gamehub 0.16.0.1 0.16.3.2: GameHub is a unified library for all your games
@@ -1429,9 +1429,9 @@ gnome-extra/iio-sensor-proxy 3.3: IIO sensors to D-Bus proxy
 gnome-extra/junction 1.6-r1: Application/browser chooser
 gnome-extra/portfolio 0.9.14: A minimalist file manager for those who want to use Linux mobile devices
 gnome-extra/vvmplayer 1.4: Visual Voicemail Player
-gnome-extra/yad 10.1: Display GTK+ dialog boxes from command line or shell scripts
+gnome-extra/yad 13.0: Display GTK+ dialog boxes from command line or shell scripts
 gui-apps/1password 8.10.16: The world’s most-loved password manager
-gui-apps/ReGreet 0.1.1-r4 9999: A clean and customizable GTK-based greetd greeter written in Rust
+gui-apps/ReGreet 0.1.1-r5 9999: A clean and customizable GTK-based greetd greeter written in Rust
 gui-apps/azote 1.12.3: Wallpaper manager for wlroots-based compositors and some other WMs
 gui-apps/clipman 1.6.2: A basic clipboard manager for Wayland.
 gui-apps/coreaction 4.5.0 9999: A side bar for showing widgets for C Suite
@@ -1457,7 +1457,7 @@ gui-apps/coretoppings 4.5.0 9999: Additional features, plugins, widgets etc for 
 gui-apps/coreuniverse 4.5.0 9999: Shows information about apps for C Suite
 gui-apps/darkman 1.5.4: Framework for dark and light mode transitions
 gui-apps/espanso 2.1.8 2.2.1: Cross-platform Text Expander written in Rust
-gui-apps/eww 0.4.0 9999: Elkowars Wacky Widgets is a standalone widget system made in Rust
+gui-apps/eww 0.5.0 9999: Elkowars Wacky Widgets is a standalone widget system made in Rust
 gui-apps/fnott 1.2.1 1.3.0 1.4.1 9999: Keyboard driven and lightweight Wayland notification daemon.
 gui-apps/fuzzel 1.9.2 9999: Application launcher for wlroots based Wayland compositors.
 gui-apps/gcolor3 2.4.0: A simple color chooser written in GTK3
