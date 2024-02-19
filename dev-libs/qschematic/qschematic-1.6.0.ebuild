@@ -50,7 +50,7 @@ BDEPEND="
 "
 
 PATCHES=(
-	"${FILESDIR}/${PN}-1.5.1-gentoo-cmake-option.patch"
+	"${FILESDIR}/${PN}-1.6.0-gentoo-cmake-option.patch"
 )
 
 src_configure() {

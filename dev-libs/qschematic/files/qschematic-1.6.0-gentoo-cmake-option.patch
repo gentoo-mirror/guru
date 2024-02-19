@@ -42,30 +42,6 @@ index b077470fe4d3..1f81a9c8ee8b 100644
  if (NOT Qt6_FOUND)
      find_package(
          Qt5
-diff --git a/qschematic/CMakeLists.txt b/qschematic/CMakeLists.txt
-index 7e80a3a445cc..8368e5742b43 100644
---- a/qschematic/CMakeLists.txt
-+++ b/qschematic/CMakeLists.txt
-@@ -153,7 +153,7 @@ endif()
- # Static library                                                               #
- ################################################################################
- 
--if (QSCHEMATIC_BUILD_STATIC)
-+# if (QSCHEMATIC_BUILD_STATIC)
-     add_library(${TARGET_STATIC} STATIC)
-     setup_target_common(${TARGET_STATIC})
- 
-@@ -161,8 +161,8 @@ if (QSCHEMATIC_BUILD_STATIC)
-         ${TARGET_STATIC}
-             PUBLIC
-             QSCHEMATIC_STATIC_DEFINE
--    )
--endif()
-+     )
-+# endif()
- 
- 
- ################################################################################
 diff --git a/qschematic/external.cmake b/qschematic/external.cmake
 index 80aae6c29b94..7e57f0852ac5 100644
 --- a/qschematic/external.cmake
