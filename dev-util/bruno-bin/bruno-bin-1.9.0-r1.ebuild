@@ -17,33 +17,32 @@ SRC_URI="https://github.com/usebruno/${PN%-*}/releases/download/v${PV}/${PN%-*}_
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="fontconfig cups alsa dbus accessibility"
 
 RDEPEND="
-	dev-libs/glib
-	dev-libs/nss
+	app-accessibility/at-spi2-core:2
+	dev-libs/expat
+	dev-libs/glib:2
 	dev-libs/nspr
-	app-accessibility/at-spi2-core
-	x11-libs/libdrm
-	x11-libs/gtk+
-	x11-libs/pango
+	dev-libs/nss
+	dev-libs/wayland
+	media-libs/alsa-lib
+	media-libs/mesa
+	net-print/cups
+	sys-apps/dbus
+	sys-devel/gcc:=
 	x11-libs/cairo
+	x11-libs/gtk+:3
 	x11-libs/libX11
 	x11-libs/libXcomposite
 	x11-libs/libXdamage
 	x11-libs/libXext
 	x11-libs/libXfixes
 	x11-libs/libXrandr
-	media-libs/mesa
-	dev-libs/expat
-	x11-libs/libxcb
+	x11-libs/libdrm
+	x11-libs/libxcb:=
 	x11-libs/libxkbcommon
-	sys-devel/gcc
-	alsa? ( media-libs/alsa-lib )
-	cups? ( net-print/cups )
-	dbus? ( sys-apps/dbus )
-	fontconfig? ( media-libs/fontconfig:1.0 )
-	accessibility? ( app-accessibility/at-spi2-core )
+	x11-libs/pango
+	x11-misc/xdg-utils
 "
 
 QA_PREBUILT="
@@ -59,11 +58,16 @@ QA_PREBUILT="
 
 S="$WORKDIR"
 
+src_prepare() {
+	default
+	rm opt/Bruno/LICENSE* || die
+}
+
 src_install() {
 	for size in 16x16 32x32 48x48 128x128 256x256 512x512 1024x1024; do
 		doicon -s "${size}" usr/share/icons/hicolor/"${size}"/apps/bruno.png
 	done
-	dosym ../icons/hicolor/512x512/apps/bruno.png \
+	dosym -r /usr/share/icons/hicolor/512x512/apps/bruno.png \
 		/usr/share/pixmaps/bruno.png
 
 	domenu usr/share/applications/bruno.desktop
@@ -73,5 +77,5 @@ src_install() {
 	fperms +x /opt/Bruno/bruno
 	fperms +x /opt/Bruno/chrome-sandbox
 	fperms +x /opt/Bruno/chrome_crashpad_handler
-	dosym ../Bruno/bruno opt/bin/bruno
+	dosym -r /opt/Bruno/bruno /usr/bin/bruno
 }
