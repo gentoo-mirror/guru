@@ -1,4 +1,4 @@
-# Copyright 2023 Gentoo Authors
+# Copyright 2023-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -7,8 +7,8 @@ inherit desktop xdg
 
 DESCRIPTION="Buttplug frontend application"
 HOMEPAGE="https://github.com/intiface/intiface-central"
-SRC_URI="https://github.com/intiface/intiface-central/releases/download/v${PV}/intiface-central-v${PV}-linux-x64.zip"
-S="${WORKDIR}/intiface_central_v${PV}"
+SRC_URI="https://github.com/intiface/intiface-central/releases/download/v${PV}/intiface-central-v${PV}-linux-ubuntu-22.04-x64.zip"
+S="${WORKDIR}/${PN/-bin/}-v${PV}-linux-ubuntu-22.04-x64"
 
 LICENSE="GPL-3"
 SLOT="0"
