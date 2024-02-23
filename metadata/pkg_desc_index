@@ -276,7 +276,7 @@ app-misc/watchexec 1.23.0 1.24.0 1.24.1 1.24.2 1.25.0 1.25.1: Executes commands 
 app-misc/wego 2.2: Wego is a weather client for the terminal
 app-misc/xplr 0.21.3: A hackable, minimal, fast TUI file explorer
 app-misc/yaf 0.0.3: Yet another system fetch that is minimal and customizable.
-app-misc/yazi 0.1.5 0.2.1 0.2.2: Blazing fast terminal file manager written in Rust, based on async I/O.
+app-misc/yazi 0.2.1 0.2.2 0.2.3: Blazing fast terminal file manager written in Rust, based on async I/O.
 app-misc/zcock 0.1.0: Print an emoji according to traditional chinese calendar and more
 app-mobilephone/flashlight 0.1.1-r2: It's a flashlight, what do you expect?
 app-mobilephone/mobile-config-firefox 2.1.0: Mobile and privacy friendly configuration for Firefox
@@ -302,7 +302,7 @@ app-portage/quantum-resolver 9999: A WIP portage dependency resolver
 app-portage/showbuild 0.9.1-r1: Script to follow log of running portage builds
 app-portage/version 0.19.0_alpha 0.20.1_alpha 0.21.0_alpha: A command line function for package version management.
 app-shells/antibody 6.1.1-r1: Fast Zsh plugin manager
-app-shells/carapace 0.28.5 0.30.1: Multi-shell multi-command argument completer
+app-shells/carapace 0.28.5 0.30.2: Multi-shell multi-command argument completer
 app-shells/clownfish 0_pre20210117: fish shell mocks
 app-shells/direnv 2.32.3 9999: Environment variable manager for shell
 app-shells/elvish 0.19.2 0.20.1: Expressive programming language and a versatile interactive shell
@@ -321,7 +321,6 @@ app-shells/powerline-go 1.21.0 1.22.1: A powerline like prompt for Bash, Zsh, Fi
 app-shells/silver 2.0.0-r1: A cross-shell customizable powerline-like prompt with icons
 app-shells/spark-fish 1.2.0: Sparklines for Fish
 app-shells/vivid 0.9.0: A themeable LS_COLORS generator with a rich filetype datebase
-app-shells/zoxide 0.8.0-r1 0.8.2-r2 0.8.3-r1 0.9.0 0.9.1 0.9.2: A smarter cd command for your terminal
 app-shells/zsh-async 1.8.5_p20211005 1.8.6: Run multiple asynchronous jobs with callbacks
 app-shells/zsh-autocomplete 23.07.13 9999: Real-time type-ahead completion for Zsh.
 app-shells/zsh-autosuggestions 0.7.0-r2: Fish-like autosuggestions for zsh
@@ -331,12 +330,12 @@ app-shells/zsh-history-to-fish 0.3.0-r1: Bring your ZSH history to Fish shell
 app-shells/zsh-silver 9999: Zsh plugin for silver
 app-text/OCRmyPDF 14.1.0 14.2.1: OCRmyPDF adds an OCR text layer to scanned PDF files
 app-text/cmark-gfm 0.29.0.3: GitHub's fork of cmark
-app-text/code-minimap 0.6.4: A high performance code minimap generator
+app-text/code-minimap 0.6.4 0.6.5: A high performance code minimap generator
 app-text/dooit 2.2.0: A TUI todo manager
 app-text/epubgrep 0.6.2: Search tool for EPUB e-books
 app-text/ford 6.2.5: FORD, automatic documentation generator for modern Fortran programs
 app-text/klogg 22.06.0.1289: A GUI application to browse and search through long and complex log files
-app-text/komikku 1.37.1: Manga reader for GNOME
+app-text/komikku 1.38.1: Manga reader for GNOME
 app-text/koodo-reader-bin 1.5.1 1.6.3: A modern ebook manager and reader with sync and backup capacities
 app-text/libspelling 0.2.0: A GNOME library for spellchecking
 app-text/lizard 1.17.10 1.17.10-r1: A simple code complexity analyser, supports most of the popular languages.
@@ -1267,7 +1266,7 @@ dev-python/youseedee 0.3.0 0.4.1: Interface to the Unicode Character Database
 dev-python/zenlib 1.2.0-r1 1.3.1 1.4.0 1.6.2 1.7.2: Useful python decorators and utilities
 dev-python/zopfli 0.2.2: Zopfli module for Python
 dev-qt/kdsingleapplication 1.1.0: KDAB's helper class for single-instance policy applications
-dev-ruby/asciidoctor-pdf 2.3.12: A native PDF converter for AsciiDoc based on Asciidoctor and Prawn
+dev-ruby/asciidoctor-pdf 2.3.13: A native PDF converter for AsciiDoc based on Asciidoctor and Prawn
 dev-ruby/byebug 11.1.3: a Ruby 2 debugger
 dev-ruby/chruby 0.3.9-r3 9999: Changes the current Ruby
 dev-ruby/prawn-icon 3.1.0: Provides support for icons in Prawn
@@ -1629,7 +1628,7 @@ media-plugins/qt-jpegxl-image-plugin 9999: Qt plug-in to allow Qt and KDE based 
 media-plugins/whysynth 20170701_p20180323: A software synthesizer plugin for the DSSI Soft Synth Interface
 media-radio/fllog 1.2.7: Logbook application for amateur radio use
 media-sound/6pm 0.9: 6PM is a polyphonic, touch-sensitive, realtime phase modulation synthesizer
-media-sound/TauonMusicBox 7.7.1 9999: The desktop music player of today!
+media-sound/TauonMusicBox 7.7.1 7.7.1-r1 9999: The desktop music player of today!
 media-sound/add64 3.8.0 3.9.3: Add64 is a realtime additive/subtractive-synthesis softsynth
 media-sound/amberol 0.9.2 0.10.3: Simple GUI Music Player
 media-sound/callaudiod 0.1.7 0.1.9: Call audio routing daemon
@@ -1949,6 +1948,7 @@ sci-misc/boinc-wrapper 26018-r1: Wrapper to use non-BOINC apps with BOINC
 sci-misc/linuxcnc 9999: LinuxCNC
 sci-physics/SU2 7.2.0-r2 7.2.0-r100 7.5.1: SU2: An Open-Source Suite for Multiphysics Simulation and Design
 sci-physics/mbdyn 1.7.3_p20210925-r1: A general purpose Multibody Dynamics analysis software
+sci-physics/ovito 3.10.1: Open Visualization Tool
 sec-keys/openpgp-keys-aepaneshnikov 20221210: OpenPGP keys used by Alexander Epaneshnikov
 sec-keys/openpgp-keys-emersion 20230421: OpenPGP keys used by Simon Ser
 sec-keys/openpgp-keys-jvoisin 20230224: OpenPGP keys used by Julien Voisin
@@ -2107,7 +2107,7 @@ virtual/nnet 0: Virtual of a R recommended package
 virtual/survival 0: Virtual of a R recommended package
 www-apps/castopod 1.4.3 1.4.5: Open-source hosting platform made for podcasters
 www-apps/code-server-bin 4.14.1 4.15.0 4.16.0 4.16.1 4.17.0 4.17.1 4.18.0 4.19.1: VS Code in the browser (binary version with unbundled node and ripgrep)
-www-apps/forgejo 1.20.5.0 1.20.6.0 1.21.5.0: A self-hosted lightweight software forge
+www-apps/forgejo 1.20.6.0 1.21.5.0 1.21.6.0: A self-hosted lightweight software forge
 www-apps/gotosocial 0.9.0 0.10.0: Fast, fun, ActivityPub server, powered by Go
 www-apps/honk 0.9.8 0.9.91: ActivityPub server with minimal setup and support costs
 www-apps/invidious 2023.12.02: Invidious is an alternative front-end to YouTube
