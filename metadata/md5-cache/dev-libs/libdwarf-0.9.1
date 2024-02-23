@@ -1,15 +1,15 @@
 BDEPEND=doc? ( app-text/doxygen ) >=dev-build/meson-1.2.1 app-alternatives/ninja dev-build/meson-format-array
 DEFINED_PHASES=compile configure install test
-DEPEND=app-arch/zstd:= sys-libs/zlib:= elf? ( virtual/libelf:= )
+DEPEND=app-arch/zstd:= sys-libs/zlib:=
 DESCRIPTION=The DWARF Debugging Information Format
 EAPI=8
 HOMEPAGE=https://www.prevanders.net/dwarf.html https://www.dwarfstd.org https://github.com/davea42/libdwarf-code
 INHERIT=meson
-IUSE=doc dwarfexample dwarfgen +elf
+IUSE=doc dwarfexample dwarfgen
 KEYWORDS=~amd64
 LICENSE=BSD GPL-2 LGPL-2.1
-RDEPEND=app-arch/zstd:= sys-libs/zlib:= elf? ( virtual/libelf:= )
+RDEPEND=app-arch/zstd:= sys-libs/zlib:=
 SLOT=0
-SRC_URI=https://www.prevanders.net/libdwarf-0.6.0.tar.xz
+SRC_URI=https://www.prevanders.net/libdwarf-0.9.1.tar.xz
 _eclasses_=multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	042f4cc53680245bf99a84669b94155a	meson	e322276188f86eacb29ae081ba5485c8
-_md5_=49a1b0ee7002b93431213c284b223326
+_md5_=a0ba731d39e2ac008c2b9b42b4b99dd4

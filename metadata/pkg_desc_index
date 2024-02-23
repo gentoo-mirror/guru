@@ -1,7 +1,7 @@
 acct-group/1password 0: System group: 1password
 acct-group/_bgpd 0-r1: System group: _bgpd
 acct-group/_rpki-client 0: System group: _rpki-client
-acct-group/blocky 0: A group for net-dns/blocky
+acct-group/blocky 0-r1: A group for net-dns/blocky
 acct-group/canna 0: System group: canna
 acct-group/conduit 0: Group conduit
 acct-group/fedigroup 0: System group: fedigroup
@@ -35,7 +35,7 @@ acct-group/yacy 0: Group for net-misc/yacy
 acct-group/yggdrasil 1: System group: yggdrasil
 acct-user/_bgpd 0-r1: User for OpenBGPD
 acct-user/_rpki-client 0: User for rpki-client
-acct-user/blocky 0: A user for net-dns/blocky
+acct-user/blocky 0-r1: A user for net-dns/blocky
 acct-user/canna 0: User for Canna language server
 acct-user/conduit 0: User for conduit
 acct-user/eturnal 0: System user: eturnal
@@ -591,6 +591,7 @@ dev-cpp/units 2.3.3: A compile-time, header-only, dimensional analysis and unit 
 dev-cpp/vexcl 1.4.3-r2: VexCL - Vector expression template library for OpenCL
 dev-cpp/wangle 2023.02.06.00: Framework providing common client/server abstractions
 dev-cpp/workflow 0.10.2-r1 0.10.3 0.10.5 9999: C++ Parallel Computing and Asynchronous Networking Engine
+dev-cpp/wt 4.10.3: Wt, C++ Web Toolkit
 dev-cpp/xdgpp 0_pre20201007-r1: C++17 header-only implementation of the XDG Base Directory Specification
 dev-cpp/xtensor 0.24.4: header-only C++ library for numerical analysis with multi-dimensional arrays
 dev-cpp/xtl 0.7.5: Algorithms and containers used by the xtensor stack and the xeus stack
@@ -704,7 +705,6 @@ dev-libs/ftl 1.0_p20230220: The Fortran Template Library (FTL) is a general purp
 dev-libs/gbinder 1.1.30-r3 1.1.32 1.1.36 9999: GLib-style interface to binder
 dev-libs/gpds 1.8.4: A general purpose data serializer
 dev-libs/hts_engine 1.10: HMM-based speech synthesis system (HTS) engine and API
-dev-libs/hyprlang 0.2.1-r1 0.3.2 0.4.0: Official implementation library for the hypr config language
 dev-libs/imsg-compat 6.8.2 9999: linux port of OpenBSD imsg
 dev-libs/ip2loc 8.1.4: IP2Location C Library
 dev-libs/jonquil 0.2.0: Jonquil: Bringing TOML blooms to JSON land
@@ -714,7 +714,7 @@ dev-libs/lexbor 2.3.0: Modular web engine (HTML/CSS parser, renderer, ...)
 dev-libs/libcli 1.10.7: Shared C library to include Cisco-like CLI into other software
 dev-libs/libdatrie 0.2.13: Double-Array Trie Library
 dev-libs/libdbf 0.0.1: Library to read the content of dBASE III, IV, and 5.0 files
-dev-libs/libdwarf 0.4.0 0.4.1 0.5.0 0.6.0: The DWARF Debugging Information Format
+dev-libs/libdwarf 0.9.1: The DWARF Debugging Information Format
 dev-libs/libglibutil 1.0.68 1.0.76 9999: Library of glib utilities from sailfishos project
 dev-libs/libnodave 0.8.5.1-r2: Connect to and exchange data with Siemens PLCs
 dev-libs/libopensmtpd 0.7: Library for creating OpenSMTPD filters
@@ -1348,7 +1348,7 @@ dev-vcs/gitahead 2.7.1 2.7.1-r1: Graphical Git client to help understand and man
 dev-vcs/gitqlient 1.6.2 9999: Multi-platform Git client written with Qt
 dev-vcs/gitqlient-gitserver-plugin 0.2.0: GitQlient GitServer plugin
 dev-vcs/gitqlient-jenkins-plugin 0.2.0: GitQlient Jenkins plugin
-dev-vcs/gitui 0.24.3: blazing fast terminal-ui for git
+dev-vcs/gitui 0.25.0: blazing fast terminal-ui for git
 dev-vcs/got 0.90 0.91: Portable version of the Game of Trees version control system
 dev-vcs/lazygit 0.39.4-r1 0.40.2-r1: Simple terminal UI for git commands
 dev-vcs/lefthook 1.4.8 1.5.5-r1: Fast and powerful Git hooks manager for any type of projects
@@ -1416,11 +1416,11 @@ games-util/hid-nintendo 9999: A Nintendo HID kernel module
 games-util/itch-bin 25.5.1-r2: itch.io game browser, installer and launcher
 games-util/legendary 0.20.33 0.20.34: A free and open-source replacement for the Epic Games Launcher
 games-util/libtess2 1.0.3: Game and tools oriented refactored version of GLU tesselator
-games-util/mangohud 0.7.0-r1 9999: Vulkan and OpenGL overlay for monitoring FPS, sensors, system load and more
+games-util/mangohud 0.7.1 9999: Vulkan and OpenGL overlay for monitoring FPS, sensors, system load and more
 games-util/minigalaxy 1.1.0: A simple GOG client for Linux
 games-util/pegasus 9999: Graphical frontend for browsing your game library
 games-util/protonup 0.1.5 9999: Install and Update Proton-GE
-games-util/r2modman-bin 3.1.45: A simple and easy to use mod manager for several games using Thunderstore
+games-util/r2modman-bin 3.1.47: A simple and easy to use mod manager for several games using Thunderstore
 games-util/roll 2.6.1: Program to roll dices specified in a simple and intuitive way
 games-util/samrewritten 9999 202008: Steam Achievement Manager For Linux
 games-util/steamtinkerlaunch 12.0: Wrapper script for Steam custom launch options
@@ -1468,8 +1468,6 @@ gui-apps/gtklock 2.0.1 2.1.0: GTK-based lockscreen for Wayland
 gui-apps/gtklock-extras 9999: Gtklock modules
 gui-apps/hiprompt-gtk-py 0_pre20220624-r1 9999: GTK+ Himitsu prompter for Wayland
 gui-apps/hypridle 0_pre20240220 9999: Hyprland's idle daemon
-gui-apps/hyprland-plugins 0.32.3-r1 9999: A blazing fast wayland wallpaper utility
-gui-apps/hyprland-split-monitor-workspaces 0.32.3 9999: A small plugin to provide awesome/dwm-like behavior with workspaces
 gui-apps/hyprlock 0_pre20240220 9999: Hyprland's GPU-accelerated screen locking utility
 gui-apps/hyprpaper 0.5.0 0.6.0 0.6.0-r1: A blazing fast wayland wallpaper utility
 gui-apps/hyprpicker 0.1.1 0.2.0: A wlroots-compatible Wayland color picker that does not suck
@@ -1522,7 +1520,6 @@ gui-apps/wlgreet 0.4.1: Wayland based greeter for greetd
 gui-apps/wlogout 1.1.1: A wayland based logout menu
 gui-apps/wlr-randr 0.3.0 9999: xrandr clone for wlroots compositors
 gui-apps/wlsunset 0.3.0 9999: Day/night gamma adjustments for Wayland
-gui-apps/wmenu 0.1.6: dynamic menu for wlroots compositors, maintains the look and feel of dmenu
 gui-apps/wob 0.14.2 0.15.1: Lightweight overlay volume/backlight/progress/anything bar for Wayland
 gui-apps/wscreensaver 9999: Xscreensaver screensavers ported to wayland
 gui-apps/wtype 0.4: xdotool type for wayland
@@ -1632,6 +1629,7 @@ media-plugins/qt-jpegxl-image-plugin 9999: Qt plug-in to allow Qt and KDE based 
 media-plugins/whysynth 20170701_p20180323: A software synthesizer plugin for the DSSI Soft Synth Interface
 media-radio/fllog 1.2.7: Logbook application for amateur radio use
 media-sound/6pm 0.9: 6PM is a polyphonic, touch-sensitive, realtime phase modulation synthesizer
+media-sound/TauonMusicBox 7.7.1 9999: The desktop music player of today!
 media-sound/add64 3.8.0 3.9.3: Add64 is a realtime additive/subtractive-synthesis softsynth
 media-sound/amberol 0.9.2 0.10.3: Simple GUI Music Player
 media-sound/callaudiod 0.1.7 0.1.9: Call audio routing daemon
@@ -1653,7 +1651,7 @@ media-sound/ncpamixer 1.3.7: A ncurses mixer for PulseAudio inspired by pavucont
 media-sound/netcat-cpi 2014.04.29-r1: Kernel module edition of the Cycles Per Instruction (2014) album
 media-sound/noson-app 5.2.2 5.4.0 5.4.1 5.6.0 5.6.3: The essential to control music from your SONOS devices on Linux platforms
 media-sound/nuclear-bin 0.6.15 0.6.17: Nuclear is a streaming program that pulls content from free sources on internet
-media-sound/nulloy 0.9.5 0.9.8 9999: Music player with a waveform progress bar (sound visualization)
+media-sound/nulloy 0.9.5 0.9.8 0.9.8.7 9999: Music player with a waveform progress bar (sound visualization)
 media-sound/opensoundmeter 1.2.1 1.2.2 1.2.2_p20230104: FFT based application for tuning sound systems
 media-sound/pianobooster 1.0.0: A MIDI player/game that displays notes and teaches you how to play the piano
 media-sound/pipewire-module-xrdp 0.1_pre20230609 0.1_pre20230609-r1: PipeWire module which enables xrdp to use audio redirection
@@ -1760,7 +1758,7 @@ net-im/whatsapp-for-linux 1.5.3 1.6.2: An unofficial WhatsApp desktop applicatio
 net-irc/catgirl 2.0a 2.1 2.2: TLS-only terminal IRC client
 net-irc/litterbox 1.9: TLS-only IRC logger
 net-irc/pounce 3.0 3.1: Multi-client, TLS-only IRC bouncer
-net-irc/srain 1.4.0: Modern, beautiful IRC client written in GTK+ 3
+net-irc/srain 1.6.0: Modern, beautiful IRC client written in GTK+ 3
 net-irc/tiny 0.12.0: IRC client written in Rust
 net-libs/dpdk 21.11.1-r1 22.07-r1 23.03: Data Plane Development Kit libraries for fast userspace networking
 net-libs/evpath 4.5.0_p20220601: EVpath is an event transport middleware layer
@@ -1796,6 +1794,7 @@ net-misc/giara 1.0.1 1.1.0: An app for Reddit
 net-misc/gmcapsule 0.6.1: Extensible Gemini/Titan server
 net-misc/gmid 2.0.1-r1 9999: Simple and secure Gemini server
 net-misc/gnome-ssh-askpass 9.2_p1: GTK-based passphrase dialog for use with OpenSSH
+net-misc/graftcp 0.7.1: A tool for redirecting a given program's TCP traffic to SOCKS5 or HTTP proxy
 net-misc/gsocket 1.4.41 9999: Connect like there is no firewall. Securely.
 net-misc/lyrics-in-terminal 1.5.0: Command Line Lyrics fetcher for MPRIS media players
 net-misc/maestral 1.8.0 1.8.1_rc0: Maestral is an open-source Dropbox client written in Python
