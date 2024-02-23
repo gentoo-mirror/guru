@@ -5,7 +5,7 @@ EAPI=8
 
 inherit cmake toolchain-funcs
 
-COMMIT="7b15d34f0af9b1c8ef49279827eee47e4dca9afa"
+COMMIT="8969351cba0e4a7ed91715121391f9786c2e6345"
 DESCRIPTION="Hyprland's GPU-accelerated screen locking utility"
 HOMEPAGE="https://github.com/hyprwm/hyprlock"
 
@@ -43,6 +43,7 @@ BDEPEND="
 	x11-libs/libxkbcommon
 	x11-libs/cairo
 	dev-build/cmake
+	dev-libs/date
 	virtual/pkgconfig
 "
 
