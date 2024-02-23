@@ -1,4 +1,4 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -13,35 +13,35 @@ HOMEPAGE="
 "
 SRC_URI="https://www.prevanders.net/${P}.tar.xz"
 
-LICENSE="LGPL-2.1 GPL-2 BSD"
+LICENSE="BSD GPL-2 LGPL-2.1"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc dwarfexample dwarfgen +elf"
+IUSE="doc dwarfexample dwarfgen"
 
 DEPEND="
-	sys-libs/zlib
-	elf? ( virtual/libelf:= )
+	app-arch/zstd:=
+	sys-libs/zlib:=
 "
 RDEPEND="${DEPEND}"
 BDEPEND="doc? ( app-text/doxygen )"
 
-src_configure() {
+DOCS=( AUTHORS NEWS README.md )
 
+src_configure() {
 	local emesonargs=(
 		$(meson_use dwarfgen)
 		$(meson_use dwarfexample)
 		$(meson_use doc)
-		$(meson_use elf libelf)
 	)
 	meson_src_configure
 }
 
 src_install(){
 	meson_src_install
-	dodoc AUTHORS README README.md ChangeLog* NEWS
+
+	dodoc ChangeLog* doc/*.pdf
 	if use doc; then
-		mkdir -p "${ED}/usr/share/doc/${PF}" || die
-		mv "${ED}/usr/share/doc/${PN}/html" "${ED}/usr/share/doc/${PF}/" || die
-		rm -r "${ED}/usr/share/doc/${PN}" || die
+		mv "${ED}"/usr/share/doc/${PN}/* "${ED}"/usr/share/doc/${PF}/ || die
+		rmdir "${ED}"/usr/share/doc/${PN} || die
 	fi
 }
