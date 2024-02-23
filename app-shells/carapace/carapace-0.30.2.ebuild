@@ -17,6 +17,13 @@ LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64"
 
+DOCS=(
+	"README.md"
+)
+HTML_DOCS=(
+	"docs/book/"
+)
+
 S="${WORKDIR}/${PN}-bin-${PV}"
 
 src_compile() {
@@ -29,6 +36,5 @@ src_install() {
 	dobin "cmd/${PN}/${PN}"
 	mv "docs/src" "docs/book" || die
 	rm -r "docs/book/release_notes" || die
-	dodoc "README.md"
-	dodoc -r "docs/book"
+	einstalldocs
 }

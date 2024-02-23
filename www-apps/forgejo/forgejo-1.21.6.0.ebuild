@@ -1,4 +1,4 @@
-# Copyright 2016-2022 Gentoo Authors
+# Copyright 2016-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -121,4 +121,16 @@ pkg_postinst() {
 	ewarn "${PN} ${MY_PV} will continue to use /var/lib/gitea as the default home,"
 	ewarn "as acct-user/git[gitea] depends on it, and acct-user[forgejo] does not"
 	ewarn "exist yet."
+	ewarn ""
+	ewarn "1.21.x includes changes that may require manual intervention when"
+	ewarn "upgrading from 1.20.x:"
+	ewarn ""
+	ewarn "> Git branches are stored in the databases to reduce the calls to a"
+	ewarn "> git process and improve performances. After upgrading, login as an"
+	ewarn "> admin, go to the /admin page and click run Sync missed branches"
+	ewarn "> from git data to databases. If this is not done there will be"
+	ewarn "> messages such as LoadBranches: branch does not exist in the logs."
+	ewarn ""
+	ewarn "See https://codeberg.org/forgejo/forgejo/src/branch/forgejo/RELEASE-NOTES.md#1-21-1-0"
+	ewarn "for more information"
 }
