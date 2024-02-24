@@ -628,6 +628,7 @@ dev-db/dbeaver-bin 23.0.0 23.2.0 23.3.0: Free universal database tool (community
 dev-db/pg_repack 1.4.8: Reorganize tables in PostgreSQL databases with minimal locks
 dev-db/rum 1.3.13: RUM access method - inverted index with additional information in posting lists
 dev-db/tdscpp 20240212: C++ library to communicate with Microsoft SQL server
+dev-debug/gdb-dashboard 0.17.2: Modular visual interface for GDB in Python
 dev-dotnet/gtk-sharp 2.99.3-r3 3.22.2-r2: gtk bindings for mono
 dev-elixir/hex 1.0.1-r1: Package manager for the Erlang VM
 dev-embedded/arduino-cli 0.34.2 0.35.2: Next-generation arduino command line tool
@@ -999,6 +1000,7 @@ dev-python/etcd3 0.12.0: Python client for the etcd API v3
 dev-python/etcd3gw 1.0.2: A python client for etcd3 grpc-gateway v3 API
 dev-python/eventlet 0.35.1 0.35.2: Concurrent networking library for Python
 dev-python/evernote3 1.25.14: Evernote SDK
+dev-python/exif 1.6.0: Read and modify image EXIF metadata using Python.
 dev-python/exifread 3.0.0: Easy to use Python module to extract Exif metadata from tiff and jpeg files
 dev-python/factory-boy 3.2.1-r1: A versatile test fixtures replacement based on thoughtbot's factory_bot for Ruby
 dev-python/fake-useragent 1.1.2: Up to date simple useragent faker with real world database
@@ -1102,6 +1104,7 @@ dev-python/pg8000 1.29.4: PostgreSQL interface library
 dev-python/phx-class-registry 3.0.5-r1 4.0.6: An intersection of the Registry and Factory pattern
 dev-python/pip-api 0.0.30: An unofficial, importable pip API
 dev-python/playsound 1.3.0: Single function module with no dependencies for playing sounds.
+dev-python/plum 0.8.7: Pack/Unpack Memory
 dev-python/podman-compose 1.0.6: A script to run docker-compose.yml using Podman
 dev-python/portio 0.5-r1: Python low level port I/O for Linux x86
 dev-python/portion 2.4.1 2.4.2: A Python library providing data structure and operations for intervals.
@@ -1176,6 +1179,7 @@ dev-python/queuelib 1.6.2: Collection of persistent and non-persistent queues fo
 dev-python/rchitect 0.3.36: Interoperate R with Python
 dev-python/readability-lxml 0.6.1 0.8.1: fast html to text parser (article readability tool)
 dev-python/readmdict 0.1.1-r1: Read mdx/mdd files
+dev-python/rectangle-packer 2.0.2: Pack a set of rectangles into a bounding box with minimum area
 dev-python/repology-client 0.0.2: Asynchronous wrapper for Repology API
 dev-python/restrictedpython 6.2 7.0: A restricted execution environment for Python to run untrusted code
 dev-python/rpmautospec-core 0.1.4: Core functionality used by rpmautospec
@@ -1190,7 +1194,7 @@ dev-python/screeninfo 0.8.1: Fetch location and size of physical screens.
 dev-python/sdnotify 0.3.2: Python implementation of the systemd sd_notify protocol
 dev-python/sendgrid 6.9.7: Twilio SendGrid library for Python
 dev-python/sentence-splitter 1.4-r2: Sentence splitter using heuristic algorithm by Philipp Koehn and Josh Schroeder
-dev-python/shtab 1.6.5: Automagic shell tab completion for Python CLI applications
+dev-python/shtab 1.7.0: Automagic shell tab completion for Python CLI applications
 dev-python/signalstickers-client 3.2.0 3.3.0: A Python client for the Signal stickers API
 dev-python/simplemma 0.9.1: A simple multilingual lemmatizer for Python
 dev-python/sjcl 0.2.1: Decrypt and encrypt 'Stanford Javascript Crypto Library'-compatible messages
@@ -1467,7 +1471,7 @@ gui-apps/gtklock 2.0.1 2.1.0: GTK-based lockscreen for Wayland
 gui-apps/gtklock-extras 9999: Gtklock modules
 gui-apps/hiprompt-gtk-py 0_pre20220624-r1 9999: GTK+ Himitsu prompter for Wayland
 gui-apps/hypridle 0_pre20240220 9999: Hyprland's idle daemon
-gui-apps/hyprlock 0_pre20240223 9999: Hyprland's GPU-accelerated screen locking utility
+gui-apps/hyprlock 0_pre20240224 9999: Hyprland's GPU-accelerated screen locking utility
 gui-apps/hyprpaper 0.5.0 0.6.0 0.6.0-r1: A blazing fast wayland wallpaper utility
 gui-apps/hyprpicker 0.1.1 0.2.0: A wlroots-compatible Wayland color picker that does not suck
 gui-apps/intiface-central-bin 2.5.3 2.5.5: Buttplug frontend application
@@ -1576,6 +1580,7 @@ media-fonts/warframe-fonts 0_pre20191111: Fonts from the Warframe game
 media-gfx/WebPlotDigitizer-bin 4.6: Web based tool to extract data from plots, images, and maps
 media-gfx/akira 0.0.13 9999: Native Linux App for UI and UX Design built in Vala and GTK.
 media-gfx/azpainter 3.0.7: Full color painting software for Linux for illustration drawing
+media-gfx/beeref 0.3.2: A Simple Reference Image Viewer
 media-gfx/bonzomatic 2022.02.05 2022.08.20 9999: Live shader coding tool and Shader Showdown workhorse
 media-gfx/dehinter 4.0.0: A tool for the removal of TrueType instruction sets (hints) in fonts
 media-gfx/dnglab 0.6.0: Command line tool to convert camera RAW files to Digital Negative Format (DNG).
@@ -2046,7 +2051,6 @@ sys-cluster/usort 0_pre20211230-r1: Fast distributed sorting routines using MPI 
 sys-cluster/veloc 1.6: Very-Low Overhead Checkpointing System
 sys-cluster/wxparaver 4.10.1: Performance analyzer based on event traces
 sys-devel/fcode-utils 1.0.3: Set of utilities to process FCODE, OpenFirmware's byte code
-sys-devel/gdb-dashboard 0.17.2: Modular visual interface for GDB in Python
 sys-devel/gsl 4.1.5-r1: iMatix GSL code generator
 sys-devel/lcc 2021.01.11-r1: The lcc retargetable ANSI C compiler
 sys-firmware/lenovolegionlinux 9999: Lenovo Legion Linux kernel module
@@ -2055,8 +2059,8 @@ sys-fs/btrfs-heatmap 9-r1: Python 3 script to draw a heatmap of a btrfs filesyst
 sys-fs/ddrescueview 0.4.5: Graphical viewer for GNU ddrescue mapfiles
 sys-fs/diskonaut 0.10.0 0.11.0 9999: Terminal disk space visual navigator
 sys-fs/dua-cli 2.25.0 2.28.0: A tool to conveniently learn about the disk usage of directories, fast!
-sys-fs/dwarfs 0.9.5-r1: A fast very high compression read-only FUSE file system
-sys-fs/dwarfs-bin 0.9.5: Static version of a fast very high compression read-only FUSE file system
+sys-fs/dwarfs 0.9.6: A fast very high compression read-only FUSE file system
+sys-fs/dwarfs-bin 0.9.6: Static version of a fast very high compression read-only FUSE file system
 sys-fs/fstransform 0.9.4: Tool for in-place filesystem conversion
 sys-fs/gcsfuse 1.2.0: A user-space file system for interacting with Google Cloud Storage
 sys-fs/gdu 5.14.0 5.25.0: Disk usage analyzer with console interface written in Go
