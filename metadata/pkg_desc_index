@@ -169,7 +169,7 @@ app-doc/stdman 2022.07.30 9999: Formatted C++ stdlib man pages (cppreference)
 app-doc/sway-wiki 9999: Wiki of gui-wm/sway, rendered to HTML using kramdown-parser-gfm
 app-editors/amp 0.7.0: A complete text editor for your terminal.
 app-editors/imhex 1.32.2: A hex editor for reverse engineers, programmers, and eyesight
-app-editors/kak-lsp 15.0.1: Kakoune Language Server Protocol Client
+app-editors/kakoune-lsp 16.0.0: Kakoune Language Server Protocol Client
 app-editors/kitscenarist 0.7.2_rc9: Simple and powerful application for creating screenplays.
 app-editors/lapce 0.3.1 9999: Lightning-fast and Powerful Code Editor written in Rust
 app-editors/mined 2015.25: A powerful text editor with extensive Unicode and CJK support
@@ -257,7 +257,6 @@ app-misc/pfetch 0.6.0: A pretty system information tool written in POSIX sh
 app-misc/pipes-rs 1.6.3: An over-engineered rewrite of pipes.sh in Rust
 app-misc/powerpanel 1.4.1-r1: PowerPanel software for CyberPower UPS systems
 app-misc/pueue 3.3.2 3.3.3: A cli tool for managing long running shell commands.
-app-misc/pup 0.4.0_p1: Parsing HTML at the command line
 app-misc/rememberthemilk 1.3.11-r1: Freemium simple to-do tasks manager
 app-misc/s6-man 9999: mdoc versions of the HTML documentation for the s6 supervision suite
 app-misc/spark 1.0.1: sparklines for your shell
@@ -301,7 +300,6 @@ app-portage/portconf 1.6.8-r1: /etc/portage cleaner
 app-portage/quantum-resolver 9999: A WIP portage dependency resolver
 app-portage/showbuild 0.9.1-r1: Script to follow log of running portage builds
 app-portage/version 0.19.0_alpha 0.20.1_alpha 0.21.0_alpha: A command line function for package version management.
-app-shells/antibody 6.1.1-r1: Fast Zsh plugin manager
 app-shells/carapace 0.28.5 0.30.2: Multi-shell multi-command argument completer
 app-shells/clownfish 0_pre20210117: fish shell mocks
 app-shells/direnv 2.32.3 9999: Environment variable manager for shell
@@ -1187,7 +1185,6 @@ dev-python/rst2ansi 0.1.5-r2: Render reStructuredText documents to the terminal
 dev-python/rstcheck 6.2.0: Checks syntax of reStructuredText and code blocks nested within it
 dev-python/rstr 3.2.0: Easily generate random strings of various types
 dev-python/schedule 1.1.0-r1: Python job scheduling for humans
-dev-python/schema 0.7.5: Python module to validate and convert data structures
 dev-python/scramp 1.4.4: A pure-Python implementation of the SCRAM authentication protocol.
 dev-python/scrapy 2.11.0-r1: A high-level Web Crawling and Web Scraping framework
 dev-python/screeninfo 0.8.1: Fetch location and size of physical screens.
@@ -1771,7 +1768,6 @@ net-libs/kcgi 0.12.5 0.13.0 0.13.3: Minimal CGI library for web applications
 net-libs/libuecc 7: a very small Elliptic Curve Cryptography library compatible with Ed25519.
 net-libs/orcania 2.3.3: Library for angharad programs
 net-libs/picotls 0_pre20220721 9999: TLS 1.3 implementation in C
-net-libs/signald 0.23.2: an API for interacting with Signal Private Messenger
 net-libs/syndication-domination 1.0 9999: An RSS/Atom parser, because there's nothing else out there.
 net-libs/td 1.8.0 9999: Cross-platform library for building Telegram clients
 net-libs/telepathy-haze 0.8.1: Telepathy connection manager providing libpurple supported protocols
@@ -1881,6 +1877,7 @@ sci-electronics/open_pdks 1.0.311: PDK installer for open-source EDA tools and t
 sci-electronics/skywater-pdk 0.0.0_p20220424: Process design kit for usage with SkyWater Technology Foundry's 130nm node
 sci-electronics/slang 1.0 2.0-r2 3.0 4.0 5.0 9999: SystemVerilog compiler and language services
 sci-electronics/svls 0.2.11: SystemVerilog language server
+sci-electronics/verible 0.0.3420 0.0.3430: SystemVerilog parser, style-linter, and formatter
 sci-electronics/verilator 4.106 5.014 5.018 9999: The fast free Verilog/SystemVerilog simulator
 sci-geosciences/GeographicLib-data 0-r1: Datasets for GeographicLib
 sci-libs/ButterflyPACK 2.1.1-r1: Mathematical software for solving large-scale dense linear systems
@@ -2002,53 +1999,28 @@ sys-boot/woeusb-ng 0.2.10: Create Windows installer USB from ISO (rewrite of Woe
 sys-boot/zfsbootmenu 1.12.0 2.2.2 2.3.0: ZFS bootloader for root-on-ZFS systems
 sys-cluster/AXL 0.5.0 0.7.0: AXL provides a common C interface to transfer files in an HPC storage hierarchy
 sys-cluster/Graph500 1.2: Graph500 reference implementations
-sys-cluster/OpenHPC-meta 2.1-r1: OpenHPC metapackage
 sys-cluster/SIONfwd 1.0.1: A minimalistic I/O forwarding server and client library for SIONlib
-sys-cluster/SOS 1.5.0-r1 1.5.1: implementation of the OpenSHMEM specification
-sys-cluster/TCL 1.0: Transparent Checkpointing Library
 sys-cluster/adios2 2.8.1-r1: Next generation of ADIOS developed in the Exascale Computing Program
 sys-cluster/booth 1.0_p20210730: The Booth Cluster Ticket Manager
-sys-cluster/clusteringsuite 2.6.9-r3: Expose the main performance trends in applications computation structure
 sys-cluster/dimemas 5.4.2_p20220601: High-abstracted network simulator for message-passing programs
-sys-cluster/dlb 2.1-r3: Dynamically react to application imbalance by modifying the number of resources
 sys-cluster/dtcmp 1.1.2 1.1.4: Datatype Compare Library for sorting and ranking distributed data using MPI
-sys-cluster/er 0.1.0 0.3.0: High-level distributed erasure coding lib combining shuffile and redset
-sys-cluster/extrae 4.0.1: Instrumentation framework to generate execution traces of parallel runtimes
 sys-cluster/fti 1.6-r1: Fault Tolerance Interface
 sys-cluster/genders 1.28.1-r1: Static cluster configuration database used for cluster configuration management
 sys-cluster/kops-bin 1.25.3: Kubernetes Operations
 sys-cluster/launchmon 1.0.2_p20210430-r2: Enables HPC run-time tools to co-locate tool daemons with a parallel job
 sys-cluster/libbsctools 1.0.6-r2: libbsctools
-sys-cluster/libi 5.0.1_p20180510-r2: A framework for bootstrapping extreme scale software systems
-sys-cluster/libyogrt 1.27 1.28: Your One Get Remaining Time library
 sys-cluster/lwgrp 1.0.3 1.0.5: Light-weight Group Library
-sys-cluster/mcxx 2021.06: C/C++/Fortran source-to-source compilation aimed at fast prototyping
 sys-cluster/mpi-benchmarks 2021.3: Intel MPI Benchmarks
-sys-cluster/mrnet 5.0.1_p20180510-r5: A Multicast/Reduction Network
 sys-cluster/muster 1.0.1: Massively Scalable Clustering
-sys-cluster/nanos6 2.6-r4 2.7: runtime that implements the OmpSs-2 parallel programming model
-sys-cluster/nanox 0.15_p20210818: Runtime designed to serve as runtime support in parallel environments
 sys-cluster/opari2 2.0.6: OpenMP Pragma And Region Instrumentor
 sys-cluster/opencoarrays 2.9.3-r1 2.10.0-r1 2.10.1-r1: A parallel application binary interface for Fortran 2018 compilers
-sys-cluster/osu-micro-benchmarks 5.9: MPI, OPC and many other benchmarks
 sys-cluster/otf2 2.3-r3 3.0: highly scalable, memory efficient event trace data format
 sys-cluster/parallel-netcdf 1.12.2: Parallel extension to netCDF
-sys-cluster/paraver-kernel 4.10.1-r1: paraver kernel library
-sys-cluster/parsec 3.0.2012-r2: Parallel Runtime Scheduler and Execution Controller
-sys-cluster/portals4 1.0_alpha1_p20190109-r3: low-level network API for high-performance networking
 sys-cluster/psort 1.0: Parallel sorting code for distributed and shared memory architectures
 sys-cluster/rankstr 0.1.0 0.2.0: Split an MPI communicator into subcomms based on string values
-sys-cluster/redset 0.1.0 0.2.0: Low-level distributed erasure coding lib to protect datasets of MPI applications
-sys-cluster/scr 3.0-r1: Scalable Checkpoint / Restart Library
 sys-cluster/sionlib 1.7.7-r4: Scalable I/O library for parallel access to task-local files
 sys-cluster/sionlibl 1.7.7-r3: Scalable I/O library for parallel access to task-local files
-sys-cluster/spath 0.1.0 0.2.0: Path manipulation functions
-sys-cluster/spectral 3.4.1-r1: Signal processing to select representative regions from Paraver traces
-sys-cluster/synapse 2.0.1-r1: synapse
-sys-cluster/temanejo 1.3: a debugger for task-parallel programming
 sys-cluster/usort 0_pre20211230-r1: Fast distributed sorting routines using MPI and OpenMP
-sys-cluster/veloc 1.6: Very-Low Overhead Checkpointing System
-sys-cluster/wxparaver 4.10.1: Performance analyzer based on event traces
 sys-devel/fcode-utils 1.0.3: Set of utilities to process FCODE, OpenFirmware's byte code
 sys-devel/gsl 4.1.5-r1: iMatix GSL code generator
 sys-devel/lcc 2021.01.11-r1: The lcc retargetable ANSI C compiler
@@ -2070,7 +2042,6 @@ sys-fs/ufiformat 0.9.9: USB Floppy Disk formatting tool
 sys-fs/zfs-auto-utils 1.0.0: ZFS Automatic Scrub/Trim for Linux
 sys-kernel/dpdk-kmod 21.11.1 22.07 23.03: DPDK Kernel Nic Interface module
 sys-kernel/modprobed-db 2.46: This utility tracks modules loaded by the kernel, for localmodconfig
-sys-kernel/msr-safe 1.6.0: Allows safer access to model specific registers (MSRs)
 sys-kernel/tirdad 0_pre20200926: kernel module for random ISN generation
 sys-kernel/uek-sources 5.15.0.5.70.1 5.15.0.6.80.3 5.15.0.8.91.3 5.15.0.105.125.4 5.15.0.201.135.2 5.15.0.201.135.4 5.15.0.202.135.1 5.15.0.202.135.1-r1 5.15.0.203.135.1 5.15.0.203.146.3 5.15.0.203.146.3-r1 5.15.0.203.146.5 5.15.0.204.147.2 5.15.0.204.147.4: Unbreakable Enterprise Kernel (UEK) sources built from Oracle
 sys-kernel/ugrd 0.12.1-r1 0.19.1 0.19.3 0.20.0 0.21.0: Python based initramfs generator with TOML defintions
@@ -2149,7 +2120,7 @@ x11-drivers/OpenTabletDriver-bin 0.6.3.0: Cross platform tablet driver (binary p
 x11-libs/gtk-fortran 3.24.31 4.3.0 4.4.0 4.4.1: A GTK+ binding to build Graphical User Interfaces in Fortran
 x11-libs/sdl-fakeqwerty 0_pre20191217: Fixes non-QWERTY keyboards on Prison Architect (and maybe other SDL games)
 x11-misc/aerial-sddm-theme 0_pre20191018-r1 9999: SDDM theme with Apple TV Aerial videos
-x11-misc/autotiling 1.7 1.8: Script for sway and i3 to automatically switch the window split orientation
+x11-misc/autotiling 1.8 1.9: Script for sway and i3 to automatically switch the window split orientation
 x11-misc/betterlockscreen 4.2.0: sweet looking lockscreen for linux system
 x11-misc/betterlockscreen_rapid 0.0.0_pre20210701 0.0.0_pre20210708: A rapid and good-looking screen locker
 x11-misc/caffeine-ng 3.5.1: Aplication able to temporarily inhibit the screensaver
