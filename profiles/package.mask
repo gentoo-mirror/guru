@@ -14,50 +14,21 @@
 
 # New entries go on top.
 
+# Julien Roy <julien@jroy.ca> (2024-02-24)
+# Eclass dropped from ::gentoo
+# https://github.com/gentoo/gentoo/commit/8876dc1db3205682d1ed8543b7fef1ce2b619874
+# Removal in 30 days
+sci-electronics/verible
+
 # Eric Joldasov <bratishkaerik@getgoogleoff.me> (2024-02-14)
 # Based on old yggdrasil-go 0.4.6 version, no new releases
 # since 2022, archived by upstream since 2023.
 # Removal in +30 days.
 net-p2p/popura
 
-# Anna Vyalkova <cyber+gentoo@sysrq.in> (2024-01-15)
-# Depend on treecleaned sys-cluster/slurm (bug #631552, #920104)
-# Masked for removal in 30 days.
-sys-cluster/libi
-sys-cluster/libyogrt
-sys-cluster/mrnet
-sys-cluster/OpenHPC-meta
-sys-cluster/portals4
-sys-cluster/redset
-sys-cluster/scr
-sys-cluster/SOS
-sys-cluster/spath
-sys-cluster/veloc
-sys-kernel/msr-safe
-# and revdeps
-sys-cluster/TCL
-sys-cluster/er
-sys-cluster/extrae
-sys-cluster/osu-micro-benchmarks
-sys-cluster/synapse
-# and revdeps of revdeps
-sys-cluster/clusteringsuite
-sys-cluster/dlb
-sys-cluster/mcxx
-sys-cluster/nanos6
-sys-cluster/nanox
-sys-cluster/paraver-kernel
-sys-cluster/spectral
-sys-cluster/wxparaver
-# and revdeps of revdeps of revdeps
-sys-cluster/temanejo
-# and... yeah
-sys-cluster/parsec
-
 # Anna Vyalkova <cyber+gentoo@sysrq.in> (2024-01-07)
-# Depends on removed dev-java/gradle-bin slot.
-net-libs/signald
-# and revdeps
+# Depends on dropped net-libs/signald package
+# Keeping the package since version >=0.5.0 no longer depend on it, just needs to be packaged
 net-im/mautrix-signal
 
 # Lucio Sauer <watermanpaint@posteo.net> (2024-01-04)
@@ -69,16 +40,6 @@ app-misc/uwufetch
 # Known security bugs. Masked until somone updates it.
 # See https://bugs.gentoo.org/915891
 media-video/owncast
-
-# David Roman <davidroman96@gmail.com> (2023-10-06)
-# No new releases since 2020, deprecated by upstream
-# Removal in +30 days.
-app-shells/antibody
-
-# David Roman <davidroman96@gmail.com> (2023-10-05)
-# Upstream seems dead (no new releases since 2016).
-# Removal in +30 days.
-app-misc/pup
 
 # Viorel Munteanu <ceamac@gentoo.org> (2023-06-07)
 # Does not work on no-multilib profiles and cannot be masked per profile
