@@ -1,10 +1,10 @@
-# Copyright 2023 Gentoo Authors
+# Copyright 2023-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_11 )
+PYTHON_COMPAT=( python3_{11,12} )
 inherit distutils-r1
 
 DESCRIPTION="pytest plugin for testing mypy types, stubs, plugins"
@@ -32,3 +32,8 @@ RDEPEND="
 "
 
 distutils_enable_tests pytest
+
+python_test() {
+	# --mypy-only-local-stub is a workaround for bug #921901
+	epytest --mypy-only-local-stub
+}

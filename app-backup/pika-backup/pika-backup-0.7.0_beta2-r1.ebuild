@@ -323,7 +323,7 @@ CRATES="
 	zxcvbn@2.2.2
 "
 PYTHON_COMPAT=( python3_{9..12} )
-inherit cargo gnome2-utils meson xdg
+inherit cargo gnome2-utils meson python-single-r1 xdg
 
 MY_PV="${PV/_beta/-beta\.}"
 MY_P="${PN}-v${MY_PV}"
@@ -341,6 +341,7 @@ LICENSE+="
 "
 SLOT="0"
 KEYWORDS="~amd64"
+REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 DEPEND="
 	app-backup/borgbackup
@@ -349,7 +350,10 @@ DEPEND="
 	>=gui-libs/gtk-4.12.5
 	gui-libs/libadwaita
 "
-RDEPEND="${DEPEND}"
+RDEPEND="
+	${DEPEND}
+	${PYTHON_DEPS}
+"
 BDEPEND="
 	dev-util/itstool
 	sys-devel/gettext
@@ -360,6 +364,11 @@ QA_FLAGS_IGNORED="usr/bin/${PN} usr/bin/${PN}-monitor"
 PATCHES=(
 	"${FILESDIR}/meson-fixes.patch"
 )
+
+src_prepare() {
+	python_fix_shebang "${S}/build-aux"
+	default
+}
 
 src_compile() {
 	meson_src_compile
