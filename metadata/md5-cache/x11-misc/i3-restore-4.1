@@ -1,0 +1,15 @@
+DEFINED_PHASES=install postinst prepare setup
+DEPEND=x11-misc/xdotool app-misc/jq python_single_target_python3_10? ( dev-python/psutil[python_targets_python3_10(-)] ) python_single_target_python3_11? ( dev-python/psutil[python_targets_python3_11(-)] ) python_single_target_python3_12? ( dev-python/psutil[python_targets_python3_12(-)] )
+DESCRIPTION=A simple bash + python script to restore your i3 session
+EAPI=8
+HOMEPAGE=https://github.com/jdholtz/i3-restore/
+INHERIT=python-single-r1
+IUSE=python_single_target_python3_10 python_single_target_python3_11 python_single_target_python3_12
+KEYWORDS=~amd64
+LICENSE=GPL-3
+RDEPEND=x11-wm/i3 python_single_target_python3_10? ( dev-lang/python:3.10 ) python_single_target_python3_11? ( dev-lang/python:3.11 ) python_single_target_python3_12? ( dev-lang/python:3.12 )
+REQUIRED_USE=^^ ( python_single_target_python3_10 python_single_target_python3_11 python_single_target_python3_12 )
+SLOT=0
+SRC_URI=https://github.com/jdholtz/i3-restore/archive/refs/tags/v4.1.tar.gz -> i3-restore-4.1.tar.gz
+_eclasses_=multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	042f4cc53680245bf99a84669b94155a	python-single-r1	75118e916668a74c660a13b0ecb22562
+_md5_=f2af4646c14ea817de76722151031073
