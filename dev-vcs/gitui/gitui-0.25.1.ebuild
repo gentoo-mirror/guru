@@ -28,7 +28,7 @@ CRATES="
 	bitflags@1.3.2
 	bitflags@2.4.2
 	bugreport@0.5.0
-	bumpalo@3.15.0
+	bumpalo@3.15.1
 	bwrap@1.3.0
 	bytesize@1.3.0
 	cassowary@0.3.0
@@ -121,7 +121,7 @@ CRATES="
 	onig_sys@69.8.1
 	openssl-probe@0.1.5
 	openssl-src@300.2.3+3.2.1
-	openssl-sys@0.9.100
+	openssl-sys@0.9.101
 	option-ext@0.2.0
 	parking_lot@0.12.1
 	parking_lot_core@0.9.9
