@@ -1,0 +1,13 @@
+BDEPEND=net-libs/nodejs[npm]
+DEFINED_PHASES=compile install prepare pretend setup
+DESCRIPTION=Bitwarden web vault patched to make it work with Vaultwarden
+EAPI=8
+HOMEPAGE=https://github.com/dani-garcia/bw_web_builds
+INHERIT=check-reqs
+KEYWORDS=~amd64
+LICENSE=GPL-3
+RDEPEND=!www-apps/vaultwarden-web-bin
+SLOT=0
+SRC_URI=https://github.com/bitwarden/clients/archive/refs/tags/web-v2024.1.2.tar.gz -> vaultwarden-web-2024.1.2.tar.gz https://github.com/rahilarious/gentoo-distfiles/releases/download/bitwarden-clients-a1a5c4b/deps.tar.xz -> bitwarden-clients-a1a5c4b.tar.xz https://github.com/dani-garcia/bw_web_builds/archive/refs/tags/v2024.1.2b.tar.gz -> vaultwarden-web-2024.1.2b-patches.tar.gz
+_eclasses_=check-reqs	02ac7654b64f7acc7a8b1a35ad9d6ddc
+_md5_=a2e55024aeb30c128e499c66f6e95f49

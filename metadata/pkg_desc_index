@@ -29,6 +29,7 @@ acct-group/rimgo 0: Group for www-apps/rimgo
 acct-group/signald 0: Group for signald
 acct-group/snac 0: System group: snac
 acct-group/tang 0: Group for tang daemon
+acct-group/vaultwarden 0: A group for app-admin/vaultwarden
 acct-group/whoogle 0: Group for www-apps/whoogle-search
 acct-group/wikijs 0: Group for wikijs
 acct-group/wsdd 0: Group for net-misc/wsdd
@@ -70,6 +71,7 @@ acct-user/signald 0: User for signald
 acct-user/snac 0: System user: snac
 acct-user/tang 0: User for tang daemon
 acct-user/trezord 0: User for TREZOR Bridge
+acct-user/vaultwarden 0: A user for app-admin/vaultwarden
 acct-user/whoogle 0: User for www-apps/whoogle-search
 acct-user/wikijs 0: User for wikijs
 acct-user/wsdd 0: User for net-misc/wsdd
@@ -83,6 +85,8 @@ app-admin/akita 0.1.4: An HTTP log monitoring tool for your terminal
 app-admin/ananicy-cpp 1.0.0_rc6-r1: Ananicy rewritten in C++ for much lower CPU and memory usage
 app-admin/antidot 0.6.3: Cleans up your $HOME from those pesky dotfiles
 app-admin/aws-vault 7.2.0: Securely store and access AWS credentials in development environments
+app-admin/bitwarden-cli 2024.2.0: CLI frontend client connects to Bitwarden comapatible password manager server
+app-admin/bitwarden-cli-bin 2024.2.0: Precompiled CLI frontend which connects to Bitwarden comapatible servers
 app-admin/chamber 2.13.2: Managing secrets in AWS SSM Parameter Store
 app-admin/chezmoi 2.39.1: Manage your dotfiles across multiple machines, securely
 app-admin/customrescuecd-x86 0.4.1: A system rescue cd or usbstick for desktop and server based on gentoo
@@ -106,6 +110,7 @@ app-admin/rbw 9999: unofficial bitwarden cli
 app-admin/s-tui 1.1.4: Stress-Terminal UI monitoring tool
 app-admin/synadm 0.43.1 0.44: Command line admin tool for Synapse
 app-admin/terragrunt-bin 0.38.6 0.45.4 0.50.8: A thin wrapper for Terraform
+app-admin/vaultwarden 1.30.3 9999: Unofficial Bitwarden compatible password manager server written in Rust
 app-admin/zenmonitor3 2.0.0: Zen monitor is monitoring software for AMD Zen-based CPUs
 app-alternatives/phosh-keyboard 0: sm.puri.OSK0.desktop symlinks
 app-arch/7zip 23.01: A free file archiver for extremely high compression
@@ -330,7 +335,7 @@ app-shells/zsh-history-to-fish 0.3.0-r1: Bring your ZSH history to Fish shell
 app-shells/zsh-silver 9999: Zsh plugin for silver
 app-text/OCRmyPDF 14.1.0 14.2.1: OCRmyPDF adds an OCR text layer to scanned PDF files
 app-text/cmark-gfm 0.29.0.3: GitHub's fork of cmark
-app-text/code-minimap 0.6.4 0.6.5: A high performance code minimap generator
+app-text/code-minimap 0.6.4 0.6.6: A high performance code minimap generator
 app-text/dooit 2.2.0: A TUI todo manager
 app-text/epubgrep 0.6.2: Search tool for EPUB e-books
 app-text/ford 6.2.5: FORD, automatic documentation generator for modern Fortran programs
@@ -1157,7 +1162,7 @@ dev-python/pytest-flask 1.3.0: A set of pytest fixtures to test Flask applicatio
 dev-python/pytest-harvest 1.10.4: Store and retrieve data created during your pytest tests execution
 dev-python/pytest-instafail 0.4.2: Plugin for pytest that shows failures and errors instantly
 dev-python/pytest-isort 3.1.0 3.1.0-r1: Plugin to check import ordering using isort
-dev-python/pytest-mypy-plugins 2.0.0 3.0.0: pytest plugin for testing mypy types, stubs, plugins
+dev-python/pytest-mypy-plugins 3.0.0-r1: pytest plugin for testing mypy types, stubs, plugins
 dev-python/pytest-randomly 3.12.0-r1: Pytest plugin to randomly order tests and control random.seed
 dev-python/pytest-relaxed 2.0.1: Relaxed test discovery for pytest
 dev-python/pytest-steps 1.8.0: Create step-wise / incremental tests in pytest
@@ -1221,7 +1226,7 @@ dev-python/stone 3.3.1: The Official Api Spec Language for Dropbox
 dev-python/strictyaml 1.6.1: A type-safe YAML parser built atop ruamel.yaml
 dev-python/stringbrewer 0.0.1-r1: Generate random strings matching a pattern
 dev-python/stringcase 1.2.0-r1: Convert string cases between camel case, pascal case, snake case etc.
-dev-python/survey 4.5.4 5.2.3: A simple library for creating beautiful interactive prompts
+dev-python/survey 4.5.4 5.2.4: A simple library for creating beautiful interactive prompts
 dev-python/svgelements 1.9.3 1.9.6: SVG Parsing for Elements, Paths, and other SVG Objects.
 dev-python/sysv_ipc 1.1.0: System V IPC primitives for python
 dev-python/templated-dictionary 1.4: Python dictionary with Jinja2 expansion
@@ -1460,7 +1465,7 @@ gui-apps/coretoppings 4.5.0 9999: Additional features, plugins, widgets etc for 
 gui-apps/coreuniverse 4.5.0 9999: Shows information about apps for C Suite
 gui-apps/darkman 1.5.4: Framework for dark and light mode transitions
 gui-apps/espanso 2.1.8 2.2.1: Cross-platform Text Expander written in Rust
-gui-apps/eww 0.5.0-r1 9999: Elkowars Wacky Widgets is a standalone widget system made in Rust
+gui-apps/eww 0.5.0-r2 9999: Elkowars Wacky Widgets is a standalone widget system made in Rust
 gui-apps/fnott 1.2.1 1.3.0 1.4.1 9999: Keyboard driven and lightweight Wayland notification daemon.
 gui-apps/fuzzel 1.9.2 9999: Application launcher for wlroots based Wayland compositors.
 gui-apps/gcolor3 2.4.0: A simple color chooser written in GTK3
@@ -1951,7 +1956,7 @@ sci-misc/boinc-wrapper 26018-r1: Wrapper to use non-BOINC apps with BOINC
 sci-misc/linuxcnc 9999: LinuxCNC
 sci-physics/SU2 7.2.0-r2 7.2.0-r100 7.5.1: SU2: An Open-Source Suite for Multiphysics Simulation and Design
 sci-physics/mbdyn 1.7.3_p20210925-r1: A general purpose Multibody Dynamics analysis software
-sci-physics/ovito 3.10.1: Open Visualization Tool
+sci-physics/ovito 3.10.1 3.10.3: Open Visualization Tool
 sec-keys/openpgp-keys-aepaneshnikov 20221210: OpenPGP keys used by Alexander Epaneshnikov
 sec-keys/openpgp-keys-emersion 20230421: OpenPGP keys used by Simon Ser
 sec-keys/openpgp-keys-jvoisin 20230224: OpenPGP keys used by Julien Voisin
@@ -2098,6 +2103,8 @@ www-apps/redlib 0.31.0: Private front-end to Reddit
 www-apps/rimgo 1.2.1: An alternative frontend for Imgur. Originally based on rimgu.
 www-apps/snac 2.25 2.26: A simple, minimalistic ActivityPub instance
 www-apps/uwebsockets 20.11.0 20.14.0 9999: ultra fast, simple, secure & standards compliant web I/O
+www-apps/vaultwarden-web 2024.1.2b: Bitwarden web vault patched to make it work with Vaultwarden
+www-apps/vaultwarden-web-bin 2024.1.2b: Prebuilt Vaultwarden web from upstream
 www-apps/whoogle-search 0.8.3-r3 0.8.4-r3: A self-hosted, ad-free, privacy-respecting metasearch engine
 www-apps/wiki-js-bin 2.5.301: Modern, lightweight and powerful wiki app built on Nodejs
 www-apps/zola 0.17.2: A fast static site generator with everything built-in
