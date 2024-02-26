@@ -29,16 +29,20 @@ DEPEND="
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 src_prepare() {
-	sed -i 's#CURR_DIR="$(dirname "${0}")"#CURR_DIR=/usr/libexec/i3-restore#' i3-save i3-restore  \
-		|| die "Sed error!"
+	sed -i 's#CURR_DIR="$(dirname "${0}")"#CURR_DIR=/usr/libexec/i3-restore#' i3-save i3-restore || die "Sed error"
+	sed -i "s/version=.*/version=${PV}/" utils/common.bash
 	default
 }
 
 src_install() {
+	keepdir /usr/libexec/${PN}/logs || die
+	fperms 777 /usr/libexec/${PN}/logs || die
+
 	insinto "/usr/libexec/${PN}"
 	doins -r utils
 	dobin i3-save
 	dobin i3-restore
+
 	python_moduleinto "/usr/libexec/${PN}"
 	python_domodule programs
 }

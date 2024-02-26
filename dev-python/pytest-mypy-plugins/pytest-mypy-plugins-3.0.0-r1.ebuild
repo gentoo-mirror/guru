@@ -19,10 +19,11 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
 
+PATCHES="${FILESDIR}"/${P}-compat-mypy-1.8.0.patch
 DOCS="README* CHANGELOG*"
 
 RDEPEND="
-	>=dev-python/mypy-1.3.0[${PYTHON_USEDEP}]
+	>=dev-python/mypy-1.8.0[${PYTHON_USEDEP}]
 	>=dev-python/pytest-7.0.0[${PYTHON_USEDEP}]
 	>=dev-python/tomlkit-0.11[${PYTHON_USEDEP}]
 	dev-python/decorator[${PYTHON_USEDEP}]
@@ -37,8 +38,7 @@ distutils_enable_tests pytest
 python_prepare_all() {
 	# tests need pytest_mypy_plugins.tests on the modules search path and
 	# python -m pytest preprends sys.path with ${PWD}/${S}
-	# --mypy-only-local-stub is a workaround for bug #921901
-	sed "s/\"pytest\"/\"MY_EPYTHON\", \"-m\", \"pytest\", \"--mypy-only-local-stub\"/" \
+	sed "s/\"pytest\"/\"MY_EPYTHON\", \"-m\", \"pytest\"/" \
 		-i pytest_mypy_plugins/tests/test_explicit_configs.py || die
 	distutils-r1_python_prepare_all
 }
@@ -46,7 +46,7 @@ python_prepare_all() {
 python_test() {
 	# substitute the correct interpreter
 	sed "s/MY_EPYTHON/${EPYTHON}/" -i pytest_mypy_plugins/tests/test_explicit_configs.py || die
-	epytest --mypy-only-local-stub
+	distutils-r1_python_test
 	# reset for next interpreter run
 	sed "s/${EPYTHON}/MY_EPYTHON/" -i pytest_mypy_plugins/tests/test_explicit_configs.py || die
 }
