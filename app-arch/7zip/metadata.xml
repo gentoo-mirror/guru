@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-	<use>
-		<flag name="asm">Use <pkg>dev-lang/jwasm</pkg> to include optimized code</flag>
-	</use>
 	<maintainer type="person">
 		<email>m@matous.dev</email>
 		<name>Martin Matouš</name>
 	</maintainer>
+	<maintainer type="person">
+		<email>nrk@disroot.org</email>
+	</maintainer>
+	<use>
+		<flag name="rar">Enable support for non-free rar decoder</flag>
+		<flag name="uasm">Use <pkg>dev-lang/uasm</pkg> to include optimized code</flag>
+		<flag name="jwasm">Use <pkg>dev-lang/jwasm</pkg> to include optimized code (doesn't support AES)</flag>
+	</use>
 	<upstream>
 		<maintainer>
 			<name>Igor Pavlov</name>
