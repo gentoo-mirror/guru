@@ -13,7 +13,9 @@ app-admin/vaultwarden:web - Install client with Web UI
 app-admin/zenmonitor3:cli - Build zenmonitor-cli
 app-alternatives/phosh-keyboard:phosh-osk-stub - Symlink to phosh-base/phosh-osk-stub
 app-alternatives/phosh-keyboard:squeekboard - Symlink to phosh-base/squeekboard
-app-arch/7zip:asm - Use dev-lang/jwasm to include optimized code
+app-arch/7zip:jwasm - Use dev-lang/jwasm to include optimized code (doesn't support AES)
+app-arch/7zip:rar - Enable support for non-free rar decoder
+app-arch/7zip:uasm - Use dev-lang/uasm to include optimized code
 app-backup/blocksync-fast:xxhash - Enable dev-libs/xxhash support for very high speed hashing
 app-backup/kopia-ui-bin:system-kopia - Use the system-wide app-backup/kopia instead of bundled.
 app-crypt/clevis:luks - Enable LUKS support
@@ -71,6 +73,7 @@ app-misc/far2l:webdav - WebDav support in NetRocks
 app-misc/far2l:wxwidgets - GUI backend support
 app-text/klogg:lto - Build with link time optimization (LTO).
 app-text/libspelling:enchant - Enable spellchecking using app-text/enchant
+app-text/md4c:md2html - Build the md2html cli tool
 dev-build/FoBiS:graphviz - Add support of generation of a dependencies graph
 dev-build/fpm:openmp - OpenMP support to build targets in parallel where possible
 dev-cpp/cpptoml:libcxx - Use libc++ for the C++ standard library
