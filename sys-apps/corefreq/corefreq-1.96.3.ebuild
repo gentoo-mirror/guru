@@ -33,10 +33,10 @@ MODULE_NAMES="corefreqk(misc:${S})"
 MODULESD_COREFREQK_ENABLED="yes"
 
 pkg_setup() {
-		get_version
-		require_configured_kernel
-		BUILD_PARAMS="KERNELDIR=/lib/modules/${KV_FULL}/build"
-		linux-mod_pkg_setup
+	get_version
+	require_configured_kernel
+	BUILD_PARAMS="KERNELDIR=/lib/modules/${KV_FULL}/build"
+	linux-mod_pkg_setup
 }
 
 QA_FLAGS_IGNORED="usr/bin/.*"
@@ -46,7 +46,7 @@ src_install() {
 	dobin corefreqd corefreq-cli
 	newconfd "${FILESDIR}/${PN}.conf" "${PN}"
 	doinitd "${FILESDIR}/${PN}"
-	use systemd && systemd_dounit ${PN}.service
+	use systemd && systemd_dounit ${PN}d.service
 	use doc && dodoc README.md
 }
 
