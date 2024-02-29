@@ -1,0 +1,13 @@
+DEFINED_PHASES=install prepare
+DEPEND=>=sys-devel/qbe-1.2
+DESCRIPTION=The Hare compiler
+EAPI=8
+HOMEPAGE=https://harelang.org/
+INHERIT=toolchain-funcs
+KEYWORDS=~amd64 ~arm64 ~riscv
+LICENSE=GPL-3
+RDEPEND=>=sys-devel/qbe-1.2
+SLOT=0
+SRC_URI=https://git.sr.ht/~sircmpwn/harec/archive/0.24.0.tar.gz -> harec-0.24.0.tar.gz
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0
+_md5_=c786cf47526988b3e8b97d0fd6f0eccb
