@@ -1,0 +1,17 @@
+BDEPEND=dev-build/make >=dev-build/cmake-3.20.5 virtual/fortran
+DEFINED_PHASES=compile configure install prepare setup test
+DEPEND=>=sys-cluster/mpich-3.4.3[fortran,mpi-threads,threads] virtual/fortran
+DESCRIPTION=A parallel application binary interface for Fortran 2018 compilers
+EAPI=8
+HOMEPAGE=http://www.opencoarrays.org/
+INHERIT=cmake flag-o-matic fortran-2
+IUSE=static-libs test
+KEYWORDS=~amd64 ~x86
+LICENSE=BSD
+PROPERTIES=test_network
+RDEPEND=>=sys-cluster/mpich-3.4.3[fortran,mpi-threads,threads] virtual/fortran
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/sourceryinstitute/OpenCoarrays/releases/download/2.10.2/OpenCoarrays-2.10.2.tar.gz
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	24c947ff5f858625cf0b33c15eed4425	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	c7c9a62d6232cac66d4ea32d575c3e7c	fortran-2	40c4450f1c4ecb2ee694d96e1958d4ea
+_md5_=c0437627c741757e5dfc6502bbd76998
