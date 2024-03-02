@@ -19,15 +19,15 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
 
-PATCHES="${FILESDIR}"/${P}-compat-mypy-1.8.0.patch
 DOCS="README* CHANGELOG*"
 
 RDEPEND="
-	>=dev-python/mypy-1.8.0[${PYTHON_USEDEP}]
+	>=dev-python/mypy-1.3.0[${PYTHON_USEDEP}]
 	>=dev-python/pytest-7.0.0[${PYTHON_USEDEP}]
 	>=dev-python/tomlkit-0.11[${PYTHON_USEDEP}]
 	dev-python/decorator[${PYTHON_USEDEP}]
 	dev-python/jinja[${PYTHON_USEDEP}]
+	dev-python/jsonschema[${PYTHON_USEDEP}]
 	dev-python/packaging[${PYTHON_USEDEP}]
 	dev-python/pyyaml[${PYTHON_USEDEP}]
 	dev-python/regex[${PYTHON_USEDEP}]
@@ -37,7 +37,7 @@ distutils_enable_tests pytest
 
 python_prepare_all() {
 	# tests need pytest_mypy_plugins.tests on the modules search path and
-	# python -m pytest preprends sys.path with ${PWD}/${S}
+	# python -m pytest preprends sys.path with ${S}
 	sed "s/\"pytest\"/\"MY_EPYTHON\", \"-m\", \"pytest\"/" \
 		-i pytest_mypy_plugins/tests/test_explicit_configs.py || die
 	distutils-r1_python_prepare_all
