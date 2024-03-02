@@ -47,8 +47,10 @@ src_prepare() {
 
 	fi
 
-	sed -n "120,223p" dr_flac.h > README.md || die
-	sed -n "12078,12485p" dr_flac.h > CHANGELOG || die
+	awk '/Introduction/,/\*\//' dr_flac.h | sed '$d' > README.md
+	assert
+	awk '/REVISION HISTORY/,/\*\//' dr_flac.h | sed '$d' > CHANGELOG
+	assert
 	default
 }
 

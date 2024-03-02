@@ -7,7 +7,7 @@ inherit edo toolchain-funcs
 
 DESCRIPTION="Single-header MP3 audio decoder library"
 HOMEPAGE="https://github.com/mackron/dr_libs/"
-COMMIT="01d23df76776faccee3bc456f685900dcc273b4c"
+COMMIT="da35f9d6c7374a95353fd1df1d394d44ab66cf01"
 SRC_URI="https://github.com/mackron/dr_libs/archive/${COMMIT}.tar.gz -> ${P}.gh.tar.gz"
 LICENSE="|| ( MIT-0 public-domain )"
 SLOT="0"
@@ -24,8 +24,11 @@ TESTCASES=(
 )
 
 src_prepare() {
-	sed -n "36,83p" dr_mp3.h > README.md || die
-	sed -n "4496,4776p" dr_mp3.h > CHANGELOG || die
+	sed 's/Introducation/Introduction/' -i dr_mp3.h || die
+	awk '/Introduction/,/\*\//' dr_mp3.h | sed '$d' > README.md
+	assert
+	awk '/REVISION HISTORY/,/\*\//' dr_mp3.h | sed '$d' > CHANGELOG
+	assert
 	default
 }
 
