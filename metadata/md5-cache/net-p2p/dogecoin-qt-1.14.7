@@ -1,16 +1,16 @@
 BDEPEND=dev-build/autoconf dev-build/automake sys-devel/gnuconfig >=app-portage/elt-patches-20170815 || ( >=dev-build/automake-1.16.5:1.16 ) >=dev-build/autoconf-2.71-r6:2.71 >=dev-build/libtool-2.4.7
 DEFINED_PHASES=configure install postinst postrm prepare pretend
-DEPEND=sys-libs/db:5.3=[cxx] dev-libs/libevent:= dev-libs/protobuf dev-libs/openssl dev-build/libtool dev-build/automake:= dev-qt/qtcore dev-qt/qtgui dev-qt/qtwidgets dev-qt/qtdbus dev-qt/qtnetwork dev-qt/qtprintsupport dev-qt/linguist-tools:= >=dev-libs/boost-1.84.0-r3 wallet? ( media-gfx/qrencode ) zmq? ( net-libs/cppzmq ) intel-avx2? ( =app-crypt/intel-ipsec-mb-1.3 )
+DEPEND=sys-libs/db:5.3=[cxx] dev-libs/libevent:= dev-libs/protobuf dev-libs/openssl dev-build/libtool dev-build/automake:= dev-qt/qtcore dev-qt/qtgui dev-qt/qtwidgets dev-qt/qtdbus dev-qt/qtnetwork dev-qt/qtprintsupport dev-qt/linguist-tools:= >=dev-libs/boost-1.84.0-r3 wallet? ( media-gfx/qrencode ) zmq? ( net-libs/cppzmq )
 DESCRIPTION=Dogecoin Core Qt for desktop. Downloaded blockchain is under 2.2GB. Much secure.
 EAPI=8
 HOMEPAGE=https://github.com/dogecoin
 INHERIT=autotools desktop xdg-utils flag-o-matic
 IUSE=cpu_flags_x86_avx2 cpu_flags_x86_sse2 intel-avx2 dogecoind experimental +pie +prune scrypt-sse2 +ssp tests utils +wallet zmq
-KEYWORDS=~amd64
+KEYWORDS=~amd64 ~arm64
 LICENSE=MIT
-RDEPEND=sys-libs/db:5.3=[cxx] dev-libs/libevent:= dev-libs/protobuf dev-libs/openssl dev-build/libtool dev-build/automake:= dev-qt/qtcore dev-qt/qtgui dev-qt/qtwidgets dev-qt/qtdbus dev-qt/qtnetwork dev-qt/qtprintsupport dev-qt/linguist-tools:= >=dev-libs/boost-1.84.0-r3 wallet? ( media-gfx/qrencode ) zmq? ( net-libs/cppzmq ) intel-avx2? ( =app-crypt/intel-ipsec-mb-1.3 )
+RDEPEND=sys-libs/db:5.3=[cxx] dev-libs/libevent:= dev-libs/protobuf dev-libs/openssl dev-build/libtool dev-build/automake:= dev-qt/qtcore dev-qt/qtgui dev-qt/qtwidgets dev-qt/qtdbus dev-qt/qtnetwork dev-qt/qtprintsupport dev-qt/linguist-tools:= >=dev-libs/boost-1.84.0-r3 wallet? ( media-gfx/qrencode ) zmq? ( net-libs/cppzmq ) cpu_flags_x86_avx2? ( intel-avx2? ( ~app-crypt/intel-ipsec-mb-1.3 ) )
 REQUIRED_USE=dogecoind? ( utils ) intel-avx2? ( experimental ) scrypt-sse2? ( experimental ) experimental? ( || ( intel-avx2 scrypt-sse2 ) )
 SLOT=0
 SRC_URI=https://github.com/dogecoin/dogecoin/archive/refs/tags/v1.14.7.tar.gz -> dogecoin-qt-v1.14.7.tar.gz
 _eclasses_=gnuconfig	b6b3e92f8b8c996400074b5f61a59256	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	libtool	9d3a9a889a6fa62ae794f817c156491b	autotools	e4cf390b19033d5ca443765bc8537b81	desktop	021728fdc1b03b36357dbc89489e0f0d	xdg-utils	baea6080dd821f5562d715887954c9d3	flag-o-matic	24c947ff5f858625cf0b33c15eed4425
-_md5_=7f1d5aabff2d78f99a34090675006727
+_md5_=ed1565df01fc34a283ebe55972da468a
