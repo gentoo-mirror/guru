@@ -1,5 +1,6 @@
+BDEPEND=test? ( media-libs/libsndfile )
 DEFINED_PHASES=compile install prepare test
-DESCRIPTION=Single-header MP3 audio decoder library
+DESCRIPTION=Single-header WAV audio loader and writer library
 EAPI=8
 HOMEPAGE=https://github.com/mackron/dr_libs/
 INHERIT=edo toolchain-funcs
@@ -8,6 +9,6 @@ KEYWORDS=~amd64
 LICENSE=|| ( MIT-0 public-domain )
 RESTRICT=!test? ( test )
 SLOT=0
-SRC_URI=https://github.com/mackron/dr_libs/archive/01d23df76776faccee3bc456f685900dcc273b4c.tar.gz -> dr_mp3-0.6.38.gh.tar.gz
+SRC_URI=https://github.com/mackron/dr_libs/archive/e4a7765e598e9e54dc0f520b7e4416359bee80cc.tar.gz -> dr_wav-0.13.16.gh.tar.gz
 _eclasses_=edo	c0eb9cbe6b0bd01fcb4918f12598a4d3	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0
-_md5_=095c09615d3a76fc22ce75a445cc608a
+_md5_=bae0a9e2d0f736ec99c40f022c5ec704
