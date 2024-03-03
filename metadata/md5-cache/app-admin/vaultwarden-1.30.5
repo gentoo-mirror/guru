@@ -1,0 +1,16 @@
+BDEPEND=virtual/pkgconfig >=virtual/rust-1.53 virtual/pkgconfig
+DEFINED_PHASES=compile configure install postinst prepare pretend setup test unpack
+DEPEND=acct-user/vaultwarden acct-group/vaultwarden cli? ( || ( app-admin/bitwarden-cli app-admin/bitwarden-cli-bin ) ) mysql? ( dev-db/mysql-connector-c:= ) postgres? ( dev-db/postgresql:* ) sqlite? ( dev-db/sqlite:3 ) web? ( || ( www-apps/vaultwarden-web www-apps/vaultwarden-web-bin ) )
+DESCRIPTION=Unofficial Bitwarden compatible password manager server written in Rust
+EAPI=8
+HOMEPAGE=https://github.com/dani-garcia/vaultwarden
+INHERIT=cargo check-reqs readme.gentoo-r1 systemd tmpfiles
+IUSE=cli mysql postgres sqlite web debug
+KEYWORDS=~amd64
+LICENSE=AGPL-3 0BSD Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD-2 BSD ISC MIT MPL-2.0 Unicode-DFS-2016
+RDEPEND=acct-user/vaultwarden acct-group/vaultwarden cli? ( || ( app-admin/bitwarden-cli app-admin/bitwarden-cli-bin ) ) mysql? ( dev-db/mysql-connector-c:= ) postgres? ( dev-db/postgresql:* ) sqlite? ( dev-db/sqlite:3 ) web? ( || ( www-apps/vaultwarden-web www-apps/vaultwarden-web-bin ) ) virtual/tmpfiles
+REQUIRED_USE=|| ( mysql postgres sqlite )
+SLOT=0
+SRC_URI=https://github.com/dani-garcia/vaultwarden/archive/refs/tags/1.30.5.tar.gz -> vaultwarden-1.30.5.tar.gz https://github.com/rahilarious/gentoo-distfiles/releases/download/vaultwarden-1.30.4/deps.tar.xz -> vaultwarden-1.30.4-deps.tar.xz https://github.com/rahilarious/gentoo-distfiles/releases/download/vaultwarden-1.30.4/wiki.tar.xz -> vaultwarden-1.30.4-docs.tar.xz
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	24c947ff5f858625cf0b33c15eed4425	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	cargo	4dede41d64d595673f6da62ab5540fa0	check-reqs	02ac7654b64f7acc7a8b1a35ad9d6ddc	readme.gentoo-r1	204091a2cde6179cd9d3db26d09412d3	systemd	c8b03e8df84486aa991d4396686e8942	tmpfiles	216aa76c3a6fcb5d893c23a0de86048f
+_md5_=cac70afbd1be794b0377014247312873
