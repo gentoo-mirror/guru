@@ -7,7 +7,7 @@ inherit edo toolchain-funcs
 
 DESCRIPTION="Single-header WAV audio loader and writer library"
 HOMEPAGE="https://github.com/mackron/dr_libs/"
-COMMIT="e4a7765e598e9e54dc0f520b7e4416359bee80cc"
+COMMIT="4ec70a37c4450b021a6653f0813f1b9ceaae65fb"
 SRC_URI="https://github.com/mackron/dr_libs/archive/${COMMIT}.tar.gz -> ${P}.gh.tar.gz"
 
 LICENSE="|| ( MIT-0 public-domain )"
