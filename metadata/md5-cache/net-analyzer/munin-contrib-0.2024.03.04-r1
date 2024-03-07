@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install prepare
+DESCRIPTION=User contributed stuff related to munin
+EAPI=8
+HOMEPAGE=https://github.com/munin-monitoring/contrib
+INHERIT=toolchain-funcs
+IUSE=examples templates tools
+KEYWORDS=~amd64
+LICENSE=GPL-3+ Apache-2.0 GPL-2 LGPL-2 GPL-2+ LGPL-3+ MIT
+RDEPEND=net-analyzer/munin
+SLOT=0
+SRC_URI=https://github.com/munin-monitoring/contrib/archive/83f4e970c4a7378540057318a5083653ee2f138b.tar.gz -> munin-contrib-0.2024.03.04.tar.gz
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0
+_md5_=6d2a62b0ce0e9f78207a5c9839c6f7c0

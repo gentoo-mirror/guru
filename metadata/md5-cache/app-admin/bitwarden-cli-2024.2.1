@@ -1,0 +1,14 @@
+BDEPEND=net-libs/nodejs:0/18[npm]
+DEFINED_PHASES=compile install prepare pretend setup
+DESCRIPTION=CLI frontend client connects to Bitwarden comapatible password manager server
+EAPI=8
+HOMEPAGE=https://github.com/bitwarden/clients/tree/main/apps/cli
+INHERIT=check-reqs shell-completion
+KEYWORDS=~amd64
+LICENSE=GPL-3
+RDEPEND=!app-admin/bitwarden-cli-bin
+RESTRICT=strip
+SLOT=0
+SRC_URI=https://github.com/bitwarden/clients/archive/refs/tags/cli-v2024.2.1.tar.gz -> bitwarden-cli-2024.2.1.tar.gz https://github.com/rahilarious/gentoo-distfiles/releases/download/bitwarden-clients-82998d8/deps.tar.xz -> bitwarden-clients-82998d8.tar.xz https://github.com/rahilarious/gentoo-distfiles/releases/download/bitwarden-cli-2024.2.0/pkg-cache.tar.xz -> bitwarden-cli-2024.2.0-pkg-cache.tar.xz
+_eclasses_=check-reqs	02ac7654b64f7acc7a8b1a35ad9d6ddc	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	bash-completion-r1	f5e7a020fd9c741740756aac61bf75ff	shell-completion	bb7eb6bc232cd6c4bf8af739cdd2ee14
+_md5_=ba67c72a7c33b20c0dba99234d78544c

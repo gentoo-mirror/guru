@@ -324,9 +324,6 @@ games-emulation/RetroArch:xinerama - Xinerama support
 games-emulation/RetroArch:xmb - XMB menu
 games-emulation/RetroArch:xv - XVideo support
 games-emulation/RetroArch:zlib - zlib support (ZIP extract, PNG decoding/encoding)
-games-emulation/citra:cubeb - Enables the cubeb audio backend
-games-emulation/citra:system-libfmt - Use system libfmt
-games-emulation/citra:telemetry - Enable web services (telemetry, etc.)
 games-emulation/dosbox-x:X - Enable X11 integration for better fullscreening functionality
 games-emulation/dosbox-x:debug - Enable the internal debugger of this program
 games-emulation/dosbox-x:ffmpeg - Enable MPEG.TS + H.264 video capture format support via media-video/ffmpeg
@@ -355,13 +352,6 @@ games-emulation/rpcs3:discord - Enables Discord Rich Presence
 games-emulation/rpcs3:faudio - Add faudio sound backend support
 games-emulation/rpcs3:llvm - Use llvm idk what for
 games-emulation/rpcs3:vulkan - Build vulkan renderer
-games-emulation/yuzu:compatibility-list - Downloads the latest compatibility list
-games-emulation/yuzu:cubeb - Enables the cubeb audio backend
-games-emulation/yuzu:discord - Enables Discord Rich Presence
-games-emulation/yuzu:system-libfmt - Use system dev-libs/libfmt
-games-emulation/yuzu:system-vulkan - Use system dev-util/vulkan-headers
-games-emulation/yuzu:webengine - Use QtWebEngine for web applet implementation
-games-emulation/yuzu:webservice - Enable web services (telemetry, etc.)
 games-engines/easyrpg-player:fluidsynth - Support FluidSynth as a MIDI synthesizer backend. Support the `--soundfont` command line option for custom soundfonts
 games-engines/easyrpg-player:harfbuzz - Use media-libs/harfbuzz for Unicode text shaping. Depends on external font support by means of the truetype USE flag
 games-engines/easyrpg-player:wildmidi - Support WildMIDI as a MIDI synthesizer backend
