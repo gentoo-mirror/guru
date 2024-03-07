@@ -4,7 +4,7 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{10..12} )
-DISTUTILS_USE_PEP517=hatchling
+DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
 
 DESCRIPTION="Python implementation of Protocol Buffers data types with dataclasses support"
@@ -17,4 +17,6 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
 
-BDEPEND="dev-python/hatch-vcs[${PYTHON_USEDEP}]"
+RDEPEND="dev-python/typing-extensions[${PYTHON_USEDEP}]"
+
+PATCHES=( "${FILESDIR}/${P}-static-version.patch" )

@@ -14,9 +14,9 @@ HOMEPAGE="https://apps.gnome.org/Komikku/"
 SRC_URI="https://codeberg.org/valos/Komikku/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 S="${WORKDIR}/${PN}"
 
-KEYWORDS="~amd64"
 LICENSE="GPL-3+"
 SLOT="0"
+KEYWORDS="~amd64"
 IUSE="test"
 
 RESTRICT="test"
