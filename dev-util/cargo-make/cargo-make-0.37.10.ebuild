@@ -17,24 +17,24 @@ CRATES="
 	bitflags@2.4.2
 	block-buffer@0.10.4
 	bstr@1.9.0
-	bumpalo@3.14.0
+	bumpalo@3.15.3
 	byteorder@1.5.0
 	bytes@1.5.0
 	bzip2-sys@0.1.11+1.0.8
 	bzip2@0.4.4
 	camino@1.1.6
-	cargo-platform@0.1.6
+	cargo-platform@0.1.7
 	cargo_metadata@0.18.1
-	cc@1.0.83
+	cc@1.0.86
 	cfg-if@1.0.0
-	chrono@0.4.33
+	chrono@0.4.34
 	ci_info@0.14.14
 	cliparser@0.1.2
 	colored@2.1.0
 	core-foundation-sys@0.8.6
 	core-foundation@0.9.4
 	cpufeatures@0.2.12
-	crc32fast@1.3.2
+	crc32fast@1.4.0
 	crossbeam-deque@0.8.5
 	crossbeam-epoch@0.9.18
 	crossbeam-utils@0.8.19
@@ -48,7 +48,7 @@ CRATES="
 	duckscript@0.8.0
 	duckscriptsdk@0.9.3
 	dunce@1.0.4
-	either@1.9.0
+	either@1.10.0
 	encoding_rs@0.8.33
 	envmnt@0.10.4
 	equivalent@1.0.1
@@ -73,19 +73,19 @@ CRATES="
 	hashbrown@0.12.3
 	hashbrown@0.14.3
 	heck@0.4.1
-	hermit-abi@0.3.4
+	hermit-abi@0.3.6
 	home@0.5.9
 	http@0.2.11
 	iana-time-zone-haiku@0.1.2
-	iana-time-zone@0.1.59
+	iana-time-zone@0.1.60
 	idna@0.5.0
 	ignore@0.4.22
 	indexmap@1.9.3
-	indexmap@2.2.2
+	indexmap@2.2.3
 	itertools@0.12.1
 	itoa@1.0.10
 	java-properties@2.0.0
-	js-sys@0.3.67
+	js-sys@0.3.68
 	lazy-regex-proc_macros@3.1.0
 	lazy-regex@3.1.0
 	lazy_static@1.4.0
@@ -97,21 +97,21 @@ CRATES="
 	linux-raw-sys@0.4.13
 	log@0.4.20
 	memchr@2.7.1
-	miniz_oxide@0.7.1
+	miniz_oxide@0.7.2
 	native-tls@0.2.11
 	nix@0.27.1
 	nu-ansi-term@0.50.0
 	num-conv@0.1.0
-	num-traits@0.2.17
+	num-traits@0.2.18
 	num_cpus@1.16.0
 	once_cell@1.19.0
 	openssl-macros@0.1.1
 	openssl-probe@0.1.5
-	openssl-sys@0.9.99
-	openssl@0.10.63
+	openssl-sys@0.9.101
+	openssl@0.10.64
 	percent-encoding@2.3.1
 	petgraph@0.6.4
-	pkg-config@0.3.29
+	pkg-config@0.3.30
 	powerfmt@0.2.0
 	ppv-lite86@0.2.17
 	proc-macro2@1.0.78
@@ -124,45 +124,45 @@ CRATES="
 	regex-automata@0.4.5
 	regex-syntax@0.8.2
 	regex@1.10.3
-	ring@0.17.7
+	ring@0.17.8
 	run_script@0.10.1
 	rust_info@0.3.2
 	rustix@0.38.31
 	rustls-webpki@0.101.7
 	rustls@0.21.10
-	ryu@1.0.16
+	ryu@1.0.17
 	same-file@1.0.6
 	schannel@0.1.23
 	sct@0.7.1
 	security-framework-sys@2.9.1
 	security-framework@2.9.2
-	semver@1.0.21
-	serde@1.0.196
-	serde_derive@1.0.196
+	semver@1.0.22
+	serde@1.0.197
+	serde_derive@1.0.197
 	serde_ignored@0.1.10
-	serde_json@1.0.113
+	serde_json@1.0.114
 	serde_spanned@0.6.5
 	sha2@0.10.8
 	shell2batch@0.4.5
 	spin@0.9.8
 	strip-ansi-escapes@0.2.0
 	suppaftp@5.3.1
-	syn@2.0.48
-	tempfile@3.9.0
-	thiserror-impl@1.0.56
-	thiserror@1.0.56
+	syn@2.0.50
+	tempfile@3.10.0
+	thiserror-impl@1.0.57
+	thiserror@1.0.57
 	time-core@0.1.2
-	time@0.3.32
+	time@0.3.34
 	tinyvec@1.6.0
 	tinyvec_macros@0.1.1
-	toml@0.8.9
+	toml@0.8.10
 	toml_datetime@0.6.5
-	toml_edit@0.21.1
+	toml_edit@0.22.6
 	typenum@1.17.0
 	uname@0.1.1
 	unicode-bidi@0.3.15
 	unicode-ident@1.0.12
-	unicode-normalization@0.1.22
+	unicode-normalization@0.1.23
 	untrusted@0.9.0
 	url@2.5.0
 	utf8parse@0.2.1
@@ -172,13 +172,13 @@ CRATES="
 	vte_generate_state_changes@0.1.1
 	walkdir@2.4.0
 	wasi@0.11.0+wasi-snapshot-preview1
-	wasm-bindgen-backend@0.2.90
-	wasm-bindgen-macro-support@0.2.90
-	wasm-bindgen-macro@0.2.90
-	wasm-bindgen-shared@0.2.90
-	wasm-bindgen@0.2.90
-	web-sys@0.3.67
-	webpki-roots@0.25.3
+	wasm-bindgen-backend@0.2.91
+	wasm-bindgen-macro-support@0.2.91
+	wasm-bindgen-macro@0.2.91
+	wasm-bindgen-shared@0.2.91
+	wasm-bindgen@0.2.91
+	web-sys@0.3.68
+	webpki-roots@0.25.4
 	which@6.0.0
 	whoami@1.4.1
 	winapi-i686-pc-windows-gnu@0.4.0
@@ -189,22 +189,22 @@ CRATES="
 	windows-sys@0.48.0
 	windows-sys@0.52.0
 	windows-targets@0.48.5
-	windows-targets@0.52.0
+	windows-targets@0.52.3
 	windows_aarch64_gnullvm@0.48.5
-	windows_aarch64_gnullvm@0.52.0
+	windows_aarch64_gnullvm@0.52.3
 	windows_aarch64_msvc@0.48.5
-	windows_aarch64_msvc@0.52.0
+	windows_aarch64_msvc@0.52.3
 	windows_i686_gnu@0.48.5
-	windows_i686_gnu@0.52.0
+	windows_i686_gnu@0.52.3
 	windows_i686_msvc@0.48.5
-	windows_i686_msvc@0.52.0
+	windows_i686_msvc@0.52.3
 	windows_x86_64_gnu@0.48.5
-	windows_x86_64_gnu@0.52.0
+	windows_x86_64_gnu@0.52.3
 	windows_x86_64_gnullvm@0.48.5
-	windows_x86_64_gnullvm@0.52.0
+	windows_x86_64_gnullvm@0.52.3
 	windows_x86_64_msvc@0.48.5
-	windows_x86_64_msvc@0.52.0
-	winnow@0.5.36
+	windows_x86_64_msvc@0.52.3
+	winnow@0.6.2
 	zip@0.6.6
 "
 
@@ -224,6 +224,9 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE="openssl +rustls"
 REQUIRED_USE="?? ( openssl rustls )"
+# Requires rustup
+# https://bugs.gentoo.org/834741
+RESTRICT="test"
 
 DEPEND="openssl? ( dev-libs/openssl:= )"
 RDEPEND="${DEPEND}"
