@@ -13,6 +13,7 @@ LICENSE="all-rights-reserved"
 SLOT=0
 RESTRICT="strip"
 KEYWORDS="~amd64"
+QA_PREBUILT={*}
 
 S="${WORKDIR}"
 
@@ -21,7 +22,8 @@ src_unpack() {
 }
 
 src_install() {
-	rm -rf usr/share/doc/
+	# Because here is only one file: "copyright", no docs
+	rm -rf usr/share/doc/ || die
 
 	doins -r usr
 	fperms +x /usr/bin/"${PN}"

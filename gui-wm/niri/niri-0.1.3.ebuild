@@ -3,9 +3,9 @@
 
 EAPI=8
 
-LLVM_MAX_SLOT=17
+LLVM_COMPAT=( {16..18} )
 
-inherit cargo llvm
+inherit cargo llvm-r1
 
 DESCRIPTION="Scrollable-tiling Wayland compositor"
 HOMEPAGE="https://github.com/YaLTeR/niri"
@@ -22,8 +22,11 @@ LICENSE+="
 "
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="dbus screencast"
-REQUIRED_USE="screencast? ( dbus )"
+IUSE="+dbus screencast systemd"
+REQUIRED_USE="
+	screencast? ( dbus )
+	systemd? ( dbus )
+"
 
 DEPEND="
 	dev-libs/glib:2
@@ -44,18 +47,12 @@ RDEPEND="${DEPEND}"
 # Clang is required for bindgen
 BDEPEND="
 	>=virtual/rust-1.72.0
-	screencast? ( <sys-devel/clang-$((LLVM_MAX_SLOT + 1)) )
+	screencast? ( $(llvm_gen_dep 'sys-devel/clang:${LLVM_SLOT}') )
 "
 
 ECARGO_VENDOR="${WORKDIR}/vendor"
 
 QA_FLAGS_IGNORED="usr/bin/niri"
-
-llvm_check_deps() {
-	if use screencast; then
-		has_version -b "sys-devel/clang:${LLVM_SLOT}"
-	fi
-}
 
 src_prepare() {
 	sed -i 's/^git =.*/version = "*"/' Cargo.toml || die
@@ -66,6 +63,7 @@ src_configure() {
 	local myfeatures=(
 		$(usev dbus)
 		$(usev screencast xdp-gnome-screencast)
+		$(usev systemd)
 	)
 	cargo_src_configure --no-default-features
 }
