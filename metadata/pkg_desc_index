@@ -15,6 +15,7 @@ acct-group/invidious 0: System group: invidious
 acct-group/laminar 0: System group: laminar
 acct-group/libmedium 0: A group for www-apps/libmedium
 acct-group/librarian 0: A group for www-apps/librarian
+acct-group/lms 0: Group for LMS
 acct-group/mastoposter 0: System group: mastoposter
 acct-group/mautrix 0: Group for Mautrix Bridges
 acct-group/mock 0: System group: mock
@@ -53,6 +54,7 @@ acct-user/invidious 0: System user: invidious
 acct-user/laminar 0: System user: laminar
 acct-user/libmedium 0: An user for www-apps/libmedium
 acct-user/librarian 0: An user for www-apps/librarian
+acct-user/lms 0: User for LMS
 acct-user/mastoposter 0: System user: mastoposter
 acct-user/mautrix-discord 0: User for Mautrix Discord Bridge
 acct-user/mautrix-facebook 0: User for Mautrix Facebook Bridge
@@ -107,7 +109,7 @@ app-admin/oet 0.1.9 0.1.10 9999: Update your system into binpkgs in an overlay s
 app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applications and tmux
 app-admin/pass-audit 1.2: A pass extension for auditing your password repository.
 app-admin/pass-update 2.2.1: pass extension that provides an easy flow for updating passwords
-app-admin/pulumi-bin 3.106.0 3.107.0 3.108.0: Infrastructure as code in any programming language
+app-admin/pulumi-bin 3.107.0 3.108.0 3.109.0: Infrastructure as code in any programming language
 app-admin/rbw 9999: unofficial bitwarden cli
 app-admin/s-tui 1.1.4: Stress-Terminal UI monitoring tool
 app-admin/synadm 0.43.1 0.44: Command line admin tool for Synapse
@@ -145,7 +147,7 @@ app-crypt/configuradorfnmt 1.0.1: Spanish government certificate request generat
 app-crypt/gnome-encfs-manager 1.9-r1 1.9-r2: An easy to use manager and mounter for encfs stashes
 app-crypt/ifcplugin-bin 3.1.1.0: Crypto Interface Web Browser Plugin
 app-crypt/intel-ipsec-mb 1.1 1.2 1.3 1.5 9999: Multi-Buffer Crypto for IPSec from Intel
-app-crypt/lego 4.14.2 4.15.0 4.16.0 9999: Let's Encrypt/ACME client (like certbot or acme.sh) and library written in Go
+app-crypt/lego 4.14.2 4.15.0 4.16.0 4.16.1 9999: Let's Encrypt/ACME client (like certbot or acme.sh) and library written in Go
 app-crypt/pinentry-bemenu 0.11.0 0.12.0: Pinentry based on bemenu
 app-crypt/reop 2.1.1: reasonable expectation of privacy
 app-crypt/tang 14 15: Tang binding daemon
@@ -177,13 +179,13 @@ app-doc/openbsd-manpages 6.9 7.0: OpenBSD manual pages
 app-doc/stdman 2022.07.30 9999: Formatted C++ stdlib man pages (cppreference)
 app-doc/sway-wiki 9999: Wiki of gui-wm/sway, rendered to HTML using kramdown-parser-gfm
 app-editors/amp 0.7.0: A complete text editor for your terminal.
-app-editors/imhex 1.33.1: A hex editor for reverse engineers, programmers, and eyesight
+app-editors/imhex 1.33.1-r1: A hex editor for reverse engineers, programmers, and eyesight
 app-editors/kakoune-lsp 16.0.0: Kakoune Language Server Protocol Client
 app-editors/kitscenarist 0.7.2_rc9: Simple and powerful application for creating screenplays.
 app-editors/lapce 0.3.1 9999: Lightning-fast and Powerful Code Editor written in Rust
 app-editors/mined 2015.25: A powerful text editor with extensive Unicode and CJK support
 app-editors/neovim-qt 0.2.17-r1 0.2.18: Neovim client library and GUI, in Qt
-app-editors/pulsar-bin 1.112.1 1.113.0: A Community-led Hyper-Hackable Text Editor
+app-editors/pulsar-bin 1.113.0 1.114.0: A Community-led Hyper-Hackable Text Editor
 app-editors/typora-bin 1.7.6: a markdown editor,markdown reader.
 app-emacs/idris-mode 1.0 9999: Idris syntax highlighting, compiler-supported editing, and interactive REPL
 app-emacs/prop-menu 0.1.2: Compute pop-up menus from text and overlay properties
@@ -258,7 +260,7 @@ app-misc/minder 1.14.0 1.15.6 1.16.2: Mind-mapping application for Elementary OS
 app-misc/mobile-datovka 1.10.0: Mobile optimized GUI to access the Czech data box e-government system
 app-misc/navi 2.23.0: An interactive cheatsheet tool for the command-line
 app-misc/neo 0.6.1 9999: cmatrix clone with 32-bit color and Unicode support
-app-misc/nerdfetch 8.1.0: A POSIX *nix fetch script using Nerdfonts
+app-misc/nerdfetch 8.1.1: A POSIX *nix fetch script using Nerdfonts
 app-misc/nonsense 0.7-r1: Generates random text from datafiles and templates
 app-misc/nwg-look 0.2.2 0.2.4 0.2.5: GTK3 settings editor adapted to work in the sway / wlroots environment
 app-misc/nwg-shell-wallpapers 1.3 1.4 1.5: Selection of wallpapers contributed to the nwg-shell project
@@ -340,7 +342,7 @@ app-shells/zsh-silver 9999: Zsh plugin for silver
 app-text/OCRmyPDF 14.1.0 14.2.1: OCRmyPDF adds an OCR text layer to scanned PDF files
 app-text/cmark-gfm 0.29.0.13: GitHub's fork of cmark
 app-text/code-minimap 0.6.4 0.6.7: A high performance code minimap generator
-app-text/dooit 2.2.0: A TUI todo manager
+app-text/dooit 2.2.0-r1: A TUI todo manager
 app-text/epubgrep 0.6.2: Search tool for EPUB e-books
 app-text/ford 6.2.5 7.0.5: FORD, automatic documentation generator for modern Fortran programs
 app-text/klogg 22.06.0.1289: A GUI application to browse and search through long and complex log files
@@ -599,7 +601,7 @@ dev-cpp/units 2.3.3: A compile-time, header-only, dimensional analysis and unit 
 dev-cpp/vexcl 1.4.3-r2: VexCL - Vector expression template library for OpenCL
 dev-cpp/wangle 2023.02.06.00: Framework providing common client/server abstractions
 dev-cpp/workflow 0.10.2-r1 0.10.3 0.10.5 9999: C++ Parallel Computing and Asynchronous Networking Engine
-dev-cpp/wt 4.10.3: Wt, C++ Web Toolkit
+dev-cpp/wt 4.10.3 4.10.4: Wt, C++ Web Toolkit
 dev-cpp/xdgpp 0_pre20201007-r1: C++17 header-only implementation of the XDG Base Directory Specification
 dev-cpp/xtensor 0.24.4: header-only C++ library for numerical analysis with multi-dimensional arrays
 dev-cpp/xtl 0.7.5: Algorithms and containers used by the xtensor stack and the xeus stack
@@ -935,6 +937,7 @@ dev-python/ahocorasick 2.0.0: Python module implementing Aho-Corasick algorithm
 dev-python/aiomysql 0.1.1: aiomysql is a library for accessing a MySQL database from the asyncio
 dev-python/aiopg 1.4.0: Postgres integration with asyncio
 dev-python/almost 0.1.5: A helper for approximate comparison
+dev-python/arpy 2.3.0: Library for accessing ar files
 dev-python/ascim 0.1.1: Manipulate ASCII art as you would do with raster images
 dev-python/asgi-lifespan 2.0.0 2.1.0: Programmatic startup/shutdown of ASGI apps
 dev-python/aspectlib 2.0.0 2.0.0-r1: Aspect-oriented programming, monkey-patch and decorators library
@@ -1115,6 +1118,7 @@ dev-python/pg8000 1.29.4: PostgreSQL interface library
 dev-python/phx-class-registry 3.0.5-r1 4.0.6: An intersection of the Registry and Factory pattern
 dev-python/pip-api 0.0.30: An unofficial, importable pip API
 dev-python/playsound 1.3.0: Single function module with no dependencies for playing sounds.
+dev-python/plotext 5.3.0: Plotting on terminal
 dev-python/plum 0.8.7: Pack/Unpack Memory
 dev-python/podman-compose 1.0.6: A script to run docker-compose.yml using Podman
 dev-python/portio 0.5-r1: Python low level port I/O for Linux x86
@@ -1153,6 +1157,7 @@ dev-python/pynmea2 1.18.0: Python library for the NMEA 0183 protcol
 dev-python/pynput 1.7.6: Sends virtual input commands
 dev-python/pyodbc 4.0.35: Python ODBC library
 dev-python/pypandoc 1.4 1.11: Pypandoc provides a thin wrapper for pandoc, a universal document converter
+dev-python/pyperscan 0.3.0: An opinionated Python binding for Hyperscan
 dev-python/pyqtdarktheme 2.1.0: A flat dark theme for PySide and PyQt.
 dev-python/pyrr 0.10.3: A cross platform utility library for ModernGL
 dev-python/pysaml2 7.4.2: Python implementation of SAML Version 2 Standard
@@ -1235,10 +1240,10 @@ dev-python/svgelements 1.9.3 1.9.6: SVG Parsing for Elements, Paths, and other S
 dev-python/sysv_ipc 1.1.0: System V IPC primitives for python
 dev-python/templated-dictionary 1.4: Python dictionary with Jinja2 expansion
 dev-python/tempus-themes 2.3.0.20220206: Accessible themes for Pygments
-dev-python/tempy 1.3.0: A simple, visually pleasing weather report in your terminal
+dev-python/tempy 1.4.0: A simple, visually pleasing weather report in your terminal
 dev-python/termynal 0.12.1: A lightweight and modern animated terminal window
 dev-python/testrepository 0.0.20-r200: A repository of test results
-dev-python/textual 0.47.1: Modern Text User Interface framework
+dev-python/textual 0.52.1: Modern Text User Interface framework
 dev-python/textual-dev 1.4.0: Modern Text User Interface framework
 dev-python/timeslot 0.1.2: Time slots/intervals with an arbitrary start and stop
 dev-python/trailrunner 1.2.1: Walk paths and run things
@@ -1338,7 +1343,7 @@ dev-util/pmbootstrap 1.51.0: Helper tool for developing and building postmarketO
 dev-util/qshaderedit 0.1.5: Multiplatform shader editor inspired by Apple's OpenGL Shader Builder
 dev-util/quilttools 0.3-r1: Mailbox to quilt series converter
 dev-util/reflex 0.3.1: A small tool to watch a directory and rerun a command when certain files change
-dev-util/rye 0.28.0: a Hassle-Free Python Experience
+dev-util/rye 0.29.0: a Hassle-Free Python Experience
 dev-util/spi-tools 1.0.2: Simple command line tools to help using Linux spidev devices
 dev-util/stripe-cli 9999: A command-line tool for Stripe
 dev-util/stylua 0.20.0: A code formatter for Lua
@@ -1655,6 +1660,7 @@ media-sound/hushboard 0.0_pre20220518 9999: Mutes your microphone while you are 
 media-sound/ibniz 1.18-r1: virtual machine designed for extremely compact low-level audiovisual programs
 media-sound/jacktrip 1.7.1-r1: Send JACK audio over a network
 media-sound/jriver 31.0.83: A cross-platform media center, famous for high quality of audio.
+media-sound/lms 3.50.1: Lightweight Music Server.
 media-sound/loudgain 0.6.8-r1: Versatile ReplayGain 2.0 loudness normalizer
 media-sound/mopidy 3.4.2: An extensible music server written in Python.
 media-sound/mpd-mpris 0.3.1 0.4.0 0.4.1: An implementation of the MPRIS protocol for MPD.
@@ -1685,7 +1691,7 @@ media-video/ffsubsync 0.4.25: Automagically syncronize subtitles with video
 media-video/kikoplay 0.9.3 9999: KikoPlay is a full-featured danmu player
 media-video/kooha 2.2.3: GTK4 screen recorder for Wayland
 media-video/lossless-cut 3.54.0 3.54.0-r1 3.56.0: Lossless video/audio editing: export media without reencoding, powered by ffmpeg
-media-video/manimgl 1.6.1: Animation engine for explanatory math videos
+media-video/manimgl 9999: Animation engine for explanatory math videos
 media-video/mediaelch 2.10.4 2.10.6 9999: Video metadata scraper
 media-video/megapixels 1.4.3: A GTK3 camera application that knows how to deal with the media request api
 media-video/mpc-qt 23.12: Media Player Classic Qute Theater
