@@ -1,15 +1,16 @@
-BDEPEND=>=net-libs/nodejs-16[npm] sys-apps/yarn virtual/pkgconfig
-DEFINED_PHASES=compile install postinst prepare
+BDEPEND=sqlite? ( python_single_target_python3_10? ( dev-lang/python:3.10 ) python_single_target_python3_11? ( dev-lang/python:3.11 ) ) >=net-libs/nodejs-16[npm] sys-apps/yarn virtual/pkgconfig
+DEFINED_PHASES=compile install postinst prepare setup
 DEPEND=acct-user/thelounge acct-group/thelounge >=net-libs/nodejs-16 sqlite? ( dev-db/sqlite:3= )
 DESCRIPTION=‎Modern, responsive, cross-platform, self-hosted web IRC client
 EAPI=8
 HOMEPAGE=https://thelounge.chat/
-INHERIT=readme.gentoo-r1 systemd tmpfiles
-IUSE=+sqlite
+INHERIT=python-single-r1 readme.gentoo-r1 systemd tmpfiles
+IUSE=+sqlite python_single_target_python3_10 python_single_target_python3_11
 KEYWORDS=~amd64
 LICENSE=BSD MIT
 RDEPEND=acct-user/thelounge acct-group/thelounge >=net-libs/nodejs-16 sqlite? ( dev-db/sqlite:3= ) virtual/tmpfiles
+REQUIRED_USE=sqlite? ( ^^ ( python_single_target_python3_10 python_single_target_python3_11 ) )
 SLOT=0
 SRC_URI=https://github.com/thelounge/thelounge/archive/refs/tags/v4.4.1.tar.gz -> thelounge-4.4.1.tar.gz https://github.com/rahilarious/gentoo-distfiles/releases/download/thelounge-4.4.1/deps.tar.xz -> thelounge-4.4.1-deps.tar.xz sqlite? ( https://github.com/rahilarious/gentoo-distfiles/releases/download/thelounge-4.4.1/sqlite.tar.xz -> thelounge-4.4.1-sqlite.tar.xz )
-_eclasses_=readme.gentoo-r1	204091a2cde6179cd9d3db26d09412d3	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	systemd	c8b03e8df84486aa991d4396686e8942	tmpfiles	216aa76c3a6fcb5d893c23a0de86048f
-_md5_=dc058c4ded896c50f5b9cf1a5a2a1ed1
+_eclasses_=multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	8904b60325f22500b0c3ad4b68a42448	python-single-r1	75118e916668a74c660a13b0ecb22562	readme.gentoo-r1	204091a2cde6179cd9d3db26d09412d3	systemd	c8b03e8df84486aa991d4396686e8942	tmpfiles	216aa76c3a6fcb5d893c23a0de86048f
+_md5_=7c9a921cb58bead869b648f2d3f97f8d
