@@ -16,10 +16,10 @@ else
 	KEYWORDS="~amd64 ~riscv ~x86"
 fi
 
-# tarball doesn't provide tests
-RESTRICT="test"
 LICENSE="Apache-2.0"
 SLOT="0"
+# tarball doesn't provide tests
+RESTRICT="test"
 
 DEPEND="
 	sys-libs/ncurses:=

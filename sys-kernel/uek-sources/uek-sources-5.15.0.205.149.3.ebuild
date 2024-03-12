@@ -10,7 +10,7 @@ UEK_VERSION="${KERNEL_VERSION}-${UEK_PATCH_VERSION}"
 
 ETYPE="sources"
 
-K_GENPATCHES_VER="154"
+K_GENPATCHES_VER="160"
 K_SECURITY_UNSUPPORTED="1"
 CKV="${KERNEL_VERSION}_p${UEK_PATCH_VERSION}"
 
@@ -24,7 +24,6 @@ SRC_URI="
 	https://github.com/oracle/linux-uek/archive/refs/tags/v${UEK_VERSION}.tar.gz
 		-> linux-uek-${UEK_VERSION}.tar.gz
 	mirror://gentoo/genpatches-${KERNEL_TRUNK}-${K_GENPATCHES_VER}.base.tar.xz
-	mirror://gentoo/genpatches-${KERNEL_TRUNK}-${K_GENPATCHES_VER}.experimental.tar.xz
 	mirror://gentoo/genpatches-${KERNEL_TRUNK}-${K_GENPATCHES_VER}.extras.tar.xz
 "
 S="${WORKDIR}/linux-uek-${UEK_VERSION}"
