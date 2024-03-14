@@ -1,4 +1,4 @@
-# Copyright 2019-2023 Gentoo Authors
+# Copyright 2019-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -14,10 +14,10 @@ if [[ ${PV} == 9999 ]]; then
 else
 	SRC_URI="https://git.sr.ht/~emersion/wlr-randr/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 	S="${WORKDIR}/${PN}-v${PV}"
-	KEYWORDS="~amd64"
+	KEYWORDS="~amd64 ~arm64"
 fi
 
-LICENSE="ISC"
+LICENSE="MIT"
 SLOT="0"
 
 DEPEND="
@@ -25,7 +25,7 @@ DEPEND="
 "
 RDEPEND="${DEPEND}"
 BDEPEND="
-	dev-libs/wayland-protocols
+	dev-util/wayland-scanner
 	virtual/pkgconfig
 "
 
