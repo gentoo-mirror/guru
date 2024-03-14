@@ -1,6 +1,6 @@
 BDEPEND=>=dev-cpp/robin-hood-hashing-3.11.5 test? ( dev-qt/qttest:5 >=dev-cpp/catch-2.13.8 ) app-alternatives/ninja >=dev-build/cmake-3.20.5
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare test unpack
-DEPEND=dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtwidgets:5 dev-qt/qtnetwork:5 dev-qt/qtxml:5 dev-qt/qtconcurrent:5 >=dev-libs/hyperscan-5.4.0 >=dev-libs/xxhash-0.8.0 >=app-i18n/uchardet-0.0.7 >=dev-cpp/tbb-2021.5 kde? ( kde-frameworks/karchive:5 ) dev-util/desktop-file-utils x11-misc/shared-mime-info
+DEPEND=dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtwidgets:5 dev-qt/qtnetwork:5 dev-qt/qtxml:5 dev-qt/qtconcurrent:5 dev-libs/vectorscan:= >=dev-libs/xxhash-0.8.0 >=app-i18n/uchardet-0.0.7 >=dev-cpp/tbb-2021.5 kde? ( kde-frameworks/karchive:5 ) dev-util/desktop-file-utils x11-misc/shared-mime-info
 DESCRIPTION=A GUI application to browse and search through long and complex log files
 EAPI=7
 HOMEPAGE=https://klogg.filimonov.dev
@@ -8,9 +8,9 @@ INHERIT=xdg cmake
 IUSE=lto test kde
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-3+
-RDEPEND=dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtwidgets:5 dev-qt/qtnetwork:5 dev-qt/qtxml:5 dev-qt/qtconcurrent:5 >=dev-libs/hyperscan-5.4.0 >=dev-libs/xxhash-0.8.0 >=app-i18n/uchardet-0.0.7 >=dev-cpp/tbb-2021.5 kde? ( kde-frameworks/karchive:5 ) x11-themes/hicolor-icon-theme
+RDEPEND=dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtwidgets:5 dev-qt/qtnetwork:5 dev-qt/qtxml:5 dev-qt/qtconcurrent:5 dev-libs/vectorscan:= >=dev-libs/xxhash-0.8.0 >=app-i18n/uchardet-0.0.7 >=dev-cpp/tbb-2021.5 kde? ( kde-frameworks/karchive:5 ) x11-themes/hicolor-icon-theme
 RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://github.com/variar/klogg/archive/refs/tags/v22.06.tar.gz -> klogg-22.06.0.1289.tar.gz https://github.com/variar/klogg/releases/download/v22.06/klogg-22.06.0.1289.deps.tar.gz
 _eclasses_=xdg-utils	baea6080dd821f5562d715887954c9d3	xdg	4a14c5c24f121e7da66e5aab4a168c6e	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	24c947ff5f858625cf0b33c15eed4425	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	cmake	c7c9a62d6232cac66d4ea32d575c3e7c
-_md5_=22affd4522de48b5674b5ae43be68f79
+_md5_=59ac6152fc087cae0c01e6347a19ae56

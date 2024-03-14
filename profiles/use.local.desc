@@ -242,12 +242,6 @@ dev-ml/xen-evtchn:unix - Xen event channel interface for Linux
 dev-ml/xen-gnt:unix - build the userspace library
 dev-python/gevent:monitor - Enhancements to gevent’s self-monitoring capabilities. This includes the psutil library which is needed to monitor memory usage.
 dev-python/gevent:recommended - A shortcut for installing suggested extras together. This includes the non-test extras defined here, plus additions that improve gevent’s operation on certain platforms (for example, in the past, it has included backports of newer APIs).
-dev-python/imgui:allegro - Enable allegro backend and renderer
-dev-python/imgui:glfw - Enable glfw backend
-dev-python/imgui:glut - Enable glut backen
-dev-python/imgui:opengl - Enable opengl renderer
-dev-python/imgui:sdl - Enable sdl backend
-dev-python/imgui:vulkan - Enable vulkan renderer
 dev-python/python-socketio:asyncio-client - Add async websocket client
 dev-python/python-socketio:client - Add websocket client
 dev-util/cargo-make:openssl - Enable TLS support with dev-libs/openssl
@@ -891,7 +885,6 @@ sys-cluster/sionlibl:parutils - Enable compilation of parutils (used for benchma
 sys-cluster/sionlibl:pthreads - configure SIONlib to use pthreads for locking
 sys-cluster/sionlibl:python - enable python support
 sys-cluster/sionlibl:sionfwd - enable I/O forwarding with sys-cluster/SIONfwd
-sys-firmware/lenovolegionlinux:acpi - Provide acpi exemple /usr/share/legion_linux/acpi
 sys-firmware/lenovolegionlinux:downgrade-nvidia - Downgrade nvidia for 525 to enable TDP control (systemd-service)
 sys-firmware/lenovolegionlinux:gui - Build and install legion_gui and legion_cli
 sys-firmware/lenovolegionlinux:radeon-dgpu - Enable AMD GPU TDP control (systemd-service)

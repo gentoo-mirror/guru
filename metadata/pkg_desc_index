@@ -149,7 +149,7 @@ app-crypt/gnome-encfs-manager 1.9-r1 1.9-r2: An easy to use manager and mounter 
 app-crypt/ifcplugin-bin 3.1.1.0: Crypto Interface Web Browser Plugin
 app-crypt/intel-ipsec-mb 1.1 1.2 1.3 1.5 9999: Multi-Buffer Crypto for IPSec from Intel
 app-crypt/lego 4.14.2 4.15.0 4.16.0 4.16.1 9999: Let's Encrypt/ACME client (like certbot or acme.sh) and library written in Go
-app-crypt/pinentry-bemenu 0.11.0 0.12.0: Pinentry based on bemenu
+app-crypt/pinentry-bemenu 0.13.1: Pinentry based on bemenu
 app-crypt/reop 2.1.1: reasonable expectation of privacy
 app-crypt/tang 14 15: Tang binding daemon
 app-crypt/tomb 2.9-r6: Tomb :: File Encryption on GNU/Linux
@@ -309,7 +309,7 @@ app-office/standartnotes-bin 3.183.22: End-to-end encrypted note-taking app, alt
 app-portage/appswipe 1.1.14: Application for browsing your local Portage repository files
 app-portage/gentoo-sweep 0.1.2a: Check your gentoo installation for unwanted cruft, forgotten files
 app-portage/pacvis 0.4.2 0.4.2-r1: Displays dependency graphs of packages
-app-portage/portage-lostfiles 0.5.4: A simple script to identify files not tracked by Portage package manager
+app-portage/portage-lostfiles 0.5.5: A simple script to identify files not tracked by Portage package manager
 app-portage/portconf 1.6.8-r1: /etc/portage cleaner
 app-portage/quantum-resolver 9999: A WIP portage dependency resolver
 app-portage/showbuild 0.9.1-r1: Script to follow log of running portage builds
@@ -346,7 +346,7 @@ app-text/code-minimap 0.6.4 0.6.7: A high performance code minimap generator
 app-text/dooit 2.2.0-r1: A TUI todo manager
 app-text/epubgrep 0.6.2: Search tool for EPUB e-books
 app-text/ford 6.2.5 7.0.5: FORD, automatic documentation generator for modern Fortran programs
-app-text/klogg 22.06.0.1289: A GUI application to browse and search through long and complex log files
+app-text/klogg 22.06.0.1289-r1: A GUI application to browse and search through long and complex log files
 app-text/komikku 1.39.0: Manga reader for GNOME
 app-text/koodo-reader-bin 1.5.1 1.6.3: A modern ebook manager and reader with sync and backup capacities
 app-text/libspelling 0.2.0: A GNOME library for spellchecking
@@ -645,14 +645,14 @@ dev-dotnet/gtk-sharp 2.99.3-r3 3.22.2-r2: gtk bindings for mono
 dev-elixir/hex 1.0.1-r1: Package manager for the Erlang VM
 dev-embedded/arduino-cli 0.34.2 0.35.2: Next-generation arduino command line tool
 dev-embedded/esp-coredump 1.7.0 1.10.0: Utility that helps users to retrieve and analyse core dumps
-dev-embedded/esp-idf 5.1.2 5.2: Espressif IoT Development Framework
-dev-embedded/esp-idf-kconfig 1.4.1 2.0.1 2.1.0: Kconfig tooling for esp-idf
+dev-embedded/esp-idf 5.1.2 5.2 5.2.1: Espressif IoT Development Framework
+dev-embedded/esp-idf-kconfig 1.4.1 2.1.0: Kconfig tooling for esp-idf
 dev-embedded/esp-idf-monitor 1.3.3 1.4.0: Python object-oriented database
 dev-embedded/esp-idf-panic-decoder 0.2.0 1.0.1: Parses ESP-IDF panic handler output acts as a GDB server over stdin/stdout
 dev-embedded/esp-idf-size 0.4.3 1.1.1: Firmware size analysis for ESP-IDF
 dev-embedded/etlcpp 20.35.8: A C++ template library for embedded applications
-dev-embedded/freertos-gdb 1.0.2: Python module for operating with freeRTOS-kernel objects in GDB
-dev-embedded/idf-component-manager 1.4.1 1.5.1: Tool for installing ESP-IDF components
+dev-embedded/freertos-gdb 1.0.2 1.0.3: Python module for operating with freeRTOS-kernel objects in GDB
+dev-embedded/idf-component-manager 1.4.1 1.5.2: Tool for installing ESP-IDF components
 dev-embedded/mv88e6xxx-dump 0.2.0_pre20210327: Dump information about Marvell mv88e6xxx Ethernet switches
 dev-embedded/qdl 1.0 9999: Tool to communicate with Qualcomm System On a Chip bootroms
 dev-embedded/rauc 1.11.1: Lightweight update client that runs on your Embedded Linux device
@@ -927,7 +927,7 @@ dev-python/NSKeyedUnArchiver 1.5: Unserializes binary|text|file|memory plist dat
 dev-python/PGPy 0.6.0: Pretty Good Privacy for Python
 dev-python/PyPubSub 4.0.3-r1: Python Publish-Subscribe Package
 dev-python/PyQt5-stubs 5.15.2.0 5.15.6.0: Stubs for PyQt5
-dev-python/PyWavefront 1.3.3: Python library for importing Wavefront .obj files
+dev-python/PyWavefront 1.3.3-r1: Python library for importing Wavefront .obj files
 dev-python/PythonQwt 0.10.5 0.11.2: Qt plotting widgets for Python
 dev-python/SLPP 1.2.3: Simple lua-python parser
 dev-python/SQLAlchemy-Utils 0.39.0: Various utility functions and datatypes for SQLAlchemy
@@ -1063,7 +1063,6 @@ dev-python/hypothesmith 0.2.0: Hypothesis strategies for generating Python progr
 dev-python/i3ipc 2.2.1 2.2.1-r1: An improved Python library to control i3wm and sway.
 dev-python/iOSbackup 0.9.925: Reads and extracts files from a password-encrypted iOS backup
 dev-python/icecream 2.1.3: Pythonic task execution
-dev-python/imgui 2.0.0: Cython-based Python bindings for dear imgui
 dev-python/importlib-resources 6.1.1: Backport of the importlib.resources module
 dev-python/inscriptis 2.3.1 2.3.2: HTML to text converter
 dev-python/invoke 2.2.0: Pythonic task execution
@@ -1095,8 +1094,8 @@ dev-python/mkdocs-exclude 1.0.2-r1: Lets you exclude files or trees from your ou
 dev-python/mkdocs-git-committers-plugin 0.2.3: A mkdocs plugin for displaying the last commit and a list of contributors.
 dev-python/mkdocs-rss-plugin 1.12.1: MkDocs plugin to generate a RSS feeds.
 dev-python/mobi 0.3.3: Unpack unencrypted mobi files
-dev-python/moderngl 5.8.2: Modern OpenGL binding for python
-dev-python/moderngl-window 2.4.4: A cross platform utility library for ModernGL
+dev-python/moderngl 5.10.0: Modern OpenGL binding for python
+dev-python/moderngl-window 2.4.5: A cross platform utility library for ModernGL
 dev-python/moreorless 0.4.0: Wrapper to make difflib.unified_diff more fun to use
 dev-python/msrest 0.7.1: AutoRest swagger generator Python client runtime
 dev-python/multipart 0.2.4: Multipart parser for Python 3
@@ -1245,7 +1244,7 @@ dev-python/tempy 1.4.0: A simple, visually pleasing weather report in your termi
 dev-python/termynal 0.12.1: A lightweight and modern animated terminal window
 dev-python/testrepository 0.0.20-r200: A repository of test results
 dev-python/textual 0.52.1: Modern Text User Interface framework
-dev-python/textual-dev 1.4.0: Modern Text User Interface framework
+dev-python/textual-dev 1.5.1: Modern Text User Interface framework
 dev-python/timeslot 0.1.2: Time slots/intervals with an arbitrary start and stop
 dev-python/trailrunner 1.2.1: Walk paths and run things
 dev-python/trueskill 0.4.5_p20220422: Python Implementation of the TrueSkill Algorithm
@@ -1284,7 +1283,6 @@ dev-python/yaql 2.0.0: YAQL: Yet Another Query Language
 dev-python/youseedee 0.3.0 0.4.1: Interface to the Unicode Character Database
 dev-python/zenlib 1.2.0-r1 1.3.1 1.4.0 1.6.2 1.7.2 1.7.3: Useful python decorators and utilities
 dev-python/zopfli 0.2.2: Zopfli module for Python
-dev-qt/kdsingleapplication 1.1.0: KDAB's helper class for single-instance policy applications
 dev-ruby/asciidoctor-pdf 2.3.13: A native PDF converter for AsciiDoc based on Asciidoctor and Prawn
 dev-ruby/byebug 11.1.3: a Ruby 2 debugger
 dev-ruby/chruby 0.3.9-r3 9999: Changes the current Ruby
@@ -1382,7 +1380,7 @@ games-action/technic-launcher 4.625 4.768 4.822: Minecraft launcher for communit
 games-arcade/SpaceCadetPinball 2.0 2.0.1 2.1.0 9999: Decompilation of 3D Pinball for Windows - Space Cadet
 games-arcade/opensurge 0.5.2.1 9999: fun 2D retro platformer inspired by old-school Sonic games
 games-arcade/shiromino 0.2.1: fast-paced puzzle game with roots in the arcade
-games-arcade/taisei 1.3.2-r2 1.4 1.4.1 9999: Clone of the Touhou series, written in C using SDL/OpenGL/OpenAL.
+games-arcade/taisei 1.4 1.4.1 9999: Clone of the Touhou series, written in C using SDL/OpenGL/OpenAL.
 games-board/fairy-stockfish 14.0.1: Chess variant engine derived from Stockfish to support fairy chess variants
 games-board/openriichi 0.2.1.1: OpenRiichi is an open source Japanese Mahjong client
 games-board/rmahjong 0.4_p20201106: Riichi Mahjong, the Japanese variant of the Chinese game Mahjong for 4 players
@@ -1867,7 +1865,7 @@ net-voip/discover-overlay 0.5.4 0.6.9-r1 0.7.0: Yet another Discord overlay for 
 net-voip/gnome-calls 44.2 45.0: Phone dialer and call handler
 net-voip/re 3.7.0 3.8.0 3.9.0: Generic library for real-time communications with async IO support
 net-voip/vvmd 0.8: vvmd is a lower level daemon that retrieves Visual Voicemail
-net-vpn/candy 4.1: Another virtual private network that supports peer-to-peer connections
+net-vpn/candy 5.3: Another virtual private network that supports peer-to-peer connections
 net-vpn/cloudflare-warp 2023.3.470 2023.7.40 2024.2.62-r2: Cloudflare Warp Client
 net-vpn/fastd 22: A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
 net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that require SAML
@@ -2106,7 +2104,7 @@ virtual/nnet 0: Virtual of a R recommended package
 virtual/survival 0: Virtual of a R recommended package
 www-apps/castopod 1.4.3 1.4.5: Open-source hosting platform made for podcasters
 www-apps/code-server-bin 4.14.1 4.15.0 4.16.0 4.16.1 4.17.0 4.17.1 4.18.0 4.19.1: VS Code in the browser (binary version with unbundled node and ripgrep)
-www-apps/forgejo 1.20.6.0 1.21.5.0 1.21.6.0: A self-hosted lightweight software forge
+www-apps/forgejo 1.20.6.0 1.21.6.0 1.21.7.0: A self-hosted lightweight software forge
 www-apps/gotosocial 0.9.0 0.10.0: Fast, fun, ActivityPub server, powered by Go
 www-apps/honk 0.9.8 0.9.91: ActivityPub server with minimal setup and support costs
 www-apps/invidious 2023.12.02 2024.02.18: Invidious is an alternative front-end to YouTube
@@ -2137,7 +2135,6 @@ www-misc/gorss 0.3: Go Terminal Feed Reader
 www-misc/waldl 0.0.1_pre20211112: Browse and download wallpapers from wallhaven.cc using sxiv
 www-misc/wyebadblock 1.0.0: An adblock extension for wyeb, also webkit2gtk browsers.
 www-plugins/firefoxpwa 2.9.1 2.10.1: A tool to install, manage and use PWAs in Mozilla Firefox (native component)
-www-plugins/yandex-browser-ffmpeg-codecs-bin 112.0.5615.49: Multi-threaded ffmpeg codecs needed for the HTML5 <audio> and <video> tags
 www-servers/hinsightd 0.9.17 9999: hinsightd a http/1.1 webserver with (hopefully) minimal goals
 www-servers/quark 9999: A small, GET-only static HTTP server
 x11-apps/lightdm-gtk-greeter-settings 1.2.2-r2: Configuration tool for the LightDM GTK Greeter
@@ -2154,7 +2151,7 @@ x11-misc/caffeine-ng 3.5.1: Aplication able to temporarily inhibit the screensav
 x11-misc/gammy 0.9.60 0.9.64: Adaptive screen brightness/temperature
 x11-misc/gobble 1.3: Hide current window before launching external program, unhide after quitting
 x11-misc/greenclip-bin 4.2: Simple clipboard manager to be integrated with rofi
-x11-misc/gromit-mpx 1.4.3 1.5.0 1.5.1 9999: Gromit-MPX is a multi-pointer GTK3 port of the Gromit desktop annotation tool
+x11-misc/gromit-mpx 1.5.1 1.6.0 9999: Gromit-MPX is a multi-pointer GTK3 port of the Gromit desktop annotation tool
 x11-misc/i3-restore 4.1: A simple bash + python script to restore your i3 session
 x11-misc/i3-resurrect 1.4.5: Saving and restoring i3 workspaces
 x11-misc/i3lock-color 2.13.5: The world's most popular non-default computer lockscreen
