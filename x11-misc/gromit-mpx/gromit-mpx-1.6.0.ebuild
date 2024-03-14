@@ -1,4 +1,4 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -26,10 +26,6 @@ RDEPEND="
 	>=x11-apps/xinput-1.3
 "
 DEPEND="${RDEPEND}"
-
-PATCHES=(
-	"${FILESDIR}"/${PN}-1.4.3-fwd-declare-app_parse_args.patch
-)
 
 src_prepare () {
 	cmake_src_prepare

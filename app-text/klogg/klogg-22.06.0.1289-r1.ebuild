@@ -27,7 +27,7 @@ DEPEND="
 	dev-qt/qtnetwork:5
 	dev-qt/qtxml:5
 	dev-qt/qtconcurrent:5
-	>=dev-libs/hyperscan-5.4.0
+	dev-libs/vectorscan:=
 	>=dev-libs/xxhash-0.8.0
 	>=app-i18n/uchardet-0.0.7
 	>=dev-cpp/tbb-2021.5
@@ -41,6 +41,10 @@ BDEPEND="
 	>=dev-cpp/robin-hood-hashing-3.11.5
 	test? ( dev-qt/qttest:5 >=dev-cpp/catch-2.13.8 )
 "
+
+PATCHES=(
+	"${FILESDIR}/${P}-missing-include.patch"
+)
 
 src_unpack() {
 	unpack ${P}.tar.gz
