@@ -1,4 +1,4 @@
-BDEPEND=|| ( ( dev-lang/python:3.11 dev-python/jinja[python_targets_python3_11(-)] dev-python/pyyaml[python_targets_python3_11(-)] ) ( dev-lang/python:3.10 dev-python/jinja[python_targets_python3_10(-)] dev-python/pyyaml[python_targets_python3_10(-)] ) ) >=dev-build/meson-1.2.1 app-alternatives/ninja dev-build/meson-format-array
+BDEPEND=|| ( ( dev-lang/python:3.11 dev-python/jinja[python_targets_python3_11(-)] dev-python/pyyaml[python_targets_python3_11(-)] ) ( dev-lang/python:3.10 dev-python/jinja[python_targets_python3_10(-)] dev-python/pyyaml[python_targets_python3_10(-)] ) ) >=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array
 DEFINED_PHASES=compile configure install postinst postrm preinst setup test
 DEPEND=dev-qt/qtcore:5= dev-qt/qtnetwork:5= gui? ( dev-qt/qtgui:5= dev-qt/qtwidgets:5= ) jack? ( virtual/jack ) rtaudio? ( media-libs/rtaudio:= ) virtualstudio? ( dev-qt/qtdeclarative:5= dev-qt/qtnetworkauth:5= dev-qt/qtsvg:5= dev-qt/qtwebsockets:5= )
 DESCRIPTION=Send JACK audio over a network
@@ -13,5 +13,5 @@ RDEPEND=dev-qt/qtcore:5= dev-qt/qtnetwork:5= gui? ( dev-qt/qtgui:5= dev-qt/qtwid
 REQUIRED_USE=virtualstudio? ( gui ) || ( jack rtaudio )
 SLOT=0
 SRC_URI=https://github.com/jacktrip/jacktrip/archive/refs/tags/v1.7.1.tar.gz -> jacktrip-1.7.1.tar.gz
-_eclasses_=multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	8904b60325f22500b0c3ad4b68a42448	python-any-r1	f5169813d1619761b459800587005fd2	xdg-utils	baea6080dd821f5562d715887954c9d3	xdg	4a14c5c24f121e7da66e5aab4a168c6e	flag-o-matic	24c947ff5f858625cf0b33c15eed4425	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	meson	bd1d5eaa305de6645e939caa7a352e3c
+_eclasses_=multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	8904b60325f22500b0c3ad4b68a42448	python-any-r1	f5169813d1619761b459800587005fd2	xdg-utils	baea6080dd821f5562d715887954c9d3	xdg	4a14c5c24f121e7da66e5aab4a168c6e	flag-o-matic	24c947ff5f858625cf0b33c15eed4425	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	meson	56446e0ef4b4c9af0e2dd4cdef1a086e
 _md5_=d3a173dcf9a67c75bec9dd50dbc334a1

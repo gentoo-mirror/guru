@@ -1,4 +1,4 @@
-BDEPEND=dev-lang/nasm >=dev-build/meson-1.2.1 app-alternatives/ninja dev-build/meson-format-array
+BDEPEND=dev-lang/nasm >=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array
 DEFINED_PHASES=compile configure install setup test
 DEPEND=python_single_target_python3_10? ( dev-lang/python:3.10 ) python_single_target_python3_10? ( dev-python/pyelftools[python_targets_python3_10(-)] ) ~sys-kernel/dpdk-kmod-21.11.1[python_single_target_python3_10(-)?] app-arch/libarchive app-crypt/intel-ipsec-mb dev-libs/elfutils dev-libs/isa-l dev-libs/jansson dev-libs/libbpf dev-libs/libbsd dev-libs/openssl net-libs/libmnl net-libs/libpcap sys-apps/dtc sys-cluster/rdma-core sys-process/numactl
 DESCRIPTION=Data Plane Development Kit libraries for fast userspace networking
@@ -13,5 +13,5 @@ REQUIRED_USE=^^ ( python_single_target_python3_10 )
 RESTRICT=test
 SLOT=0
 SRC_URI=https://fast.dpdk.org/rel/dpdk-21.11.1.tar.xz
-_eclasses_=eapi8-dosym	5ac4857ad078256d939c44f7c64197a9	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	8904b60325f22500b0c3ad4b68a42448	python-single-r1	75118e916668a74c660a13b0ecb22562	flag-o-matic	24c947ff5f858625cf0b33c15eed4425	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	meson	bd1d5eaa305de6645e939caa7a352e3c
+_eclasses_=eapi8-dosym	5ac4857ad078256d939c44f7c64197a9	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	8904b60325f22500b0c3ad4b68a42448	python-single-r1	75118e916668a74c660a13b0ecb22562	flag-o-matic	24c947ff5f858625cf0b33c15eed4425	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	meson	56446e0ef4b4c9af0e2dd4cdef1a086e
 _md5_=76e3bdd67c62f090ccb210d9063f06c2
