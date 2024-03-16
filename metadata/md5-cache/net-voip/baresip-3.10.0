@@ -1,0 +1,15 @@
+BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.20.5
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=~net-voip/re-3.10.0 aac? ( media-libs/fdk-aac ) alsa? ( media-libs/alsa-lib ) amr? ( media-libs/opencore-amr ) aptx? ( media-libs/libopenaptx ) aom? ( media-libs/libaom ) codec2? ( media-libs/codec2 ) ffmpeg? ( media-video/ffmpeg ) gst? ( media-libs/gstreamer:1.0 media-libs/gst-plugins-base:1.0 media-libs/gst-plugins-good:1.0 ) gtk3? ( x11-libs/gtk+:3 ) jack? ( virtual/jack ) mqtt? ( app-misc/mosquitto ) mpa? ( media-sound/twolame media-sound/mpg123 media-libs/speexdsp ) ssl? ( dev-libs/openssl:0= ) opus? ( media-libs/opus ) png? ( media-libs/libpng ) portaudio? ( media-libs/portaudio ) pulseaudio? ( media-libs/libpulse ) pipewire? ( media-video/pipewire ) sdl? ( media-libs/libsdl2 ) sndfile? ( media-libs/libsndfile ) spandsp? ( media-libs/spandsp ) vpx? ( media-libs/libvpx ) X? ( x11-libs/libX11 )
+DESCRIPTION=Baresip is a portable and modular SIP User-Agent
+EAPI=8
+HOMEPAGE=https://github.com/baresip/baresip
+INHERIT=cmake
+IUSE=aac alsa amr aptx aom codec2 ffmpeg gst gtk3 jack mqtt mpa opus ssl png portaudio pulseaudio pipewire sdl sndfile spandsp vpx X
+KEYWORDS=amd64
+LICENSE=BSD
+RDEPEND=~net-voip/re-3.10.0 aac? ( media-libs/fdk-aac ) alsa? ( media-libs/alsa-lib ) amr? ( media-libs/opencore-amr ) aptx? ( media-libs/libopenaptx ) aom? ( media-libs/libaom ) codec2? ( media-libs/codec2 ) ffmpeg? ( media-video/ffmpeg ) gst? ( media-libs/gstreamer:1.0 media-libs/gst-plugins-base:1.0 media-libs/gst-plugins-good:1.0 ) gtk3? ( x11-libs/gtk+:3 ) jack? ( virtual/jack ) mqtt? ( app-misc/mosquitto ) mpa? ( media-sound/twolame media-sound/mpg123 media-libs/speexdsp ) ssl? ( dev-libs/openssl:0= ) opus? ( media-libs/opus ) png? ( media-libs/libpng ) portaudio? ( media-libs/portaudio ) pulseaudio? ( media-libs/libpulse ) pipewire? ( media-video/pipewire ) sdl? ( media-libs/libsdl2 ) sndfile? ( media-libs/libsndfile ) spandsp? ( media-libs/spandsp ) vpx? ( media-libs/libvpx ) X? ( x11-libs/libX11 )
+SLOT=0
+SRC_URI=https://github.com/baresip/baresip/archive/v3.10.0.tar.gz -> baresip-3.10.0.tar.gz
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	24c947ff5f858625cf0b33c15eed4425	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	c7c9a62d6232cac66d4ea32d575c3e7c
+_md5_=455b3193317f0642d1a48a38456c191d
