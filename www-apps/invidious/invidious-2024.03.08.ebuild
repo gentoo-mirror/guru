@@ -1,11 +1,11 @@
-# Copyright 2022-2023 Gentoo Authors
+# Copyright 2022-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 inherit check-reqs shards systemd
 
-COMMIT="438467f69a20007cace4f300d03138b7d2d7e79a"
+COMMIT="99a5e9cbc44daa4555f36b43bc4b7246aee454c9"
 MOCKS_COMMIT="11ec372f72747c09d48ffef04843f72be67d5b54"
 MOCKS_P="${PN}-mocks-${MOCKS_COMMIT:0:7}"
 DESCRIPTION="Invidious is an alternative front-end to YouTube"
