@@ -3,10 +3,8 @@
 <pkgmetadata>
 	<use>
 		<flag name="gui">Build and install legion_gui and legion_cli</flag>
-		<flag name="radeon-dgpu">Enable AMD GPU TDP control (systemd-service)</flag>
 		<flag name="downgrade-nvidia">Downgrade nvidia for 525 to enable TDP control (systemd-service)</flag>
-		<flag name="ryzenadj">[AMD] CPU and APU control using ryzenadj (systemd-service)</flag>
-		<flag name="undervolt-intel">[INTEL] CPU and APU control using undervolt (systemd-service)</flag>
+		<flag name="elogind">Enable legiond-onresume openrc support</flag>
 	</use>
 	<maintainer type="person">
 		<email>gonegrier.duarte@gmail.com</email>
@@ -15,7 +13,11 @@
 	<upstream>
 		<remote-id type="github">johnfanv2/LenovoLegionLinux</remote-id>
 		<bugs-to>https://github.com/johnfanv2/LenovoLegionLinux/issues</bugs-to>
-		<changelog>https://github.com/johnfanv2/LenovoLegionLinux/blob/main/README.md</changelog>
+        <changelog>https://github.com/johnfanv2/LenovoLegionLinux/blob/main/README.md</changelog>
+    	<maintainer type="person">
+		  <email>ston.jia@outlook.com</email>
+		  <name>ston</name>
+	  </maintainer>
 	</upstream>
 </pkgmetadata>
 

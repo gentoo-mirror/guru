@@ -1,4 +1,4 @@
-# Copyright 2021-2023 Gentoo Authors
+# Copyright 2021-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -10,7 +10,7 @@ UEK_VERSION="${KERNEL_VERSION}-${UEK_PATCH_VERSION}"
 
 ETYPE="sources"
 
-K_GENPATCHES_VER="160"
+K_GENPATCHES_VER="161"
 K_SECURITY_UNSUPPORTED="1"
 CKV="${KERNEL_VERSION}_p${UEK_PATCH_VERSION}"
 
