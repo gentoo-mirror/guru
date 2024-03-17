@@ -180,7 +180,7 @@ app-doc/openbsd-manpages 6.9 7.0: OpenBSD manual pages
 app-doc/stdman 2022.07.30 9999: Formatted C++ stdlib man pages (cppreference)
 app-doc/sway-wiki 9999: Wiki of gui-wm/sway, rendered to HTML using kramdown-parser-gfm
 app-editors/amp 0.7.0: A complete text editor for your terminal.
-app-editors/imhex 1.33.1-r1: A hex editor for reverse engineers, programmers, and eyesight
+app-editors/imhex 1.33.1-r2: A hex editor for reverse engineers, programmers, and eyesight
 app-editors/kakoune-lsp 16.0.0: Kakoune Language Server Protocol Client
 app-editors/kitscenarist 0.7.2_rc9: Simple and powerful application for creating screenplays.
 app-editors/lapce 0.3.1 9999: Lightning-fast and Powerful Code Editor written in Rust
@@ -1517,7 +1517,7 @@ gui-apps/sway-launcher-desktop 1.5.4: TUI Application launcher with Desktop Entr
 gui-apps/swaykbdd 1.0: Per-window keyboard layout switcher for Sway
 gui-apps/swaylock-effects 1.7.0.0 9999: Swaylock, with fancy effects
 gui-apps/swaylock-plugin 9999: Fork of Swaylock that supports animated backgrounds
-gui-apps/swaync 0.9.0 0.10.0: A simple notification daemon with a GTK gui for notifications and control center
+gui-apps/swaync 0.9.0 0.10.1: A simple notification daemon with a GTK gui for notifications and control center
 gui-apps/sworkstyle 1.3.5: Map workspace names to icons for Sway
 gui-apps/swww 0.7.3 0.8.1 0.8.2: Efficient animated wallpaper daemon for wayland, controlled at runtime
 gui-apps/szyszka 3.0.0: Simple, powerful and easy to use file renamer
@@ -1685,7 +1685,7 @@ media-sound/yewtube 2.10.5 9999: Terminal-based YouTube player and downloader
 media-sound/zita-ajbridge 0.8.4 0.8.4-r1: zita-a2j and zita-j2a - bridges between ALSA and JACK
 media-video/avisynth+ 9999: A powerful nonlinear scripting language for video
 media-video/ciano 0.2.4-r1: A multimedia file converter focused on simplicity
-media-video/delfin 0.4.1: Stream movies and TV shows from Jellyfin
+media-video/delfin 0.4.1 0.4.2: Stream movies and TV shows from Jellyfin
 media-video/ffsubsync 0.4.25: Automagically syncronize subtitles with video
 media-video/kikoplay 0.9.3 9999: KikoPlay is a full-featured danmu player
 media-video/kooha 2.2.3: GTK4 screen recorder for Wayland
@@ -2065,7 +2065,7 @@ sys-fs/zfs-auto-utils 1.0.0: ZFS Automatic Scrub/Trim for Linux
 sys-kernel/dpdk-kmod 21.11.1 22.07 23.03: DPDK Kernel Nic Interface module
 sys-kernel/modprobed-db 2.46: This utility tracks modules loaded by the kernel, for localmodconfig
 sys-kernel/tirdad 0_pre20200926: kernel module for random ISN generation
-sys-kernel/uek-sources 5.15.0.204.147.4 5.15.0.205.149.3: Unbreakable Enterprise Kernel (UEK) sources built from Oracle
+sys-kernel/uek-sources 5.15.0.204.147.4 5.15.0.205.149.3 5.15.0.205.149.3-r1: Unbreakable Enterprise Kernel (UEK) sources built from Oracle
 sys-kernel/ugrd 0.12.1-r1 0.19.1 0.19.3 0.20.0 0.21.2: Python based initramfs generator with TOML defintions
 sys-kernel/usermode-kernel 6.0.12: Linux kernel built with Gentoo patches
 sys-kernel/xow 0.5: Linux driver for the Xbox One wireless dongle
@@ -2176,16 +2176,24 @@ x11-terms/rio-terminfo 0.0.28 0.0.34 0.0.35: Terminfo for Rio, a hardware-accele
 x11-terms/tabby-bin 1.0.189: A terminal for a more modern age
 x11-terms/tym 3.5.0: Lua-configurable terminal emulator
 x11-themes/adw-gtk3 5.1 5.2: The theme from libadwaita ported to GTK-3
+x11-themes/adwaita-dark-amoled 9999: GTK-3/4 theme: black background, blue accent
 x11-themes/arc-darkest-colors 0_pre20200818 0_pre20201112: Flat, dark-mode theme with transparent elements
 x11-themes/arc-kde 20220908: Port of the popular GTK theme Arc for Plasma 5
 x11-themes/bibata-xcursors 2.0.2 2.0.3: Opensource, compact, and material-designed cursor set
+x11-themes/blackandwhite-gtk 9999: GTK-3 theme: simple black-and-white, minimalistic
 x11-themes/breezex-xcursors 2.0.0: Cursor set highly inspired on KDE Breeze with HiDPi Support
+x11-themes/flat-remix-gtk 9999: Black flat with a colorful palette, some shadows, highlights, gradients
+x11-themes/hackerer 9999: GTK-3 theme: black background, green font
+x11-themes/juno 9999: GTK-3 themes: dark, inspired by epic vscode themes
 x11-themes/materia-theme 20210322: A Material Design theme for GNOME/GTK based desktop environments
+x11-themes/midnight 9999: Dark GTK-2, GTK-3, Gnome Shell, Cinnamon & Xfwm4 themes base on Arc-Theme
 x11-themes/neonly-cursor 1.0.0: Cursor theme using a custom color palette inspired by boreal colors
 x11-themes/obsidian-icon-theme 4.15-r1 9999: Obsidian Icon Theme is intuitive Faenza-like icon theme
 x11-themes/obsidian2-gtk-theme 2.22 9999: Obsidian Gnome Theme, based upon Adwaita-Maia dark skin
 x11-themes/papirus-claws-mail-theme 0_pre20181023 0_pre20201019: Papirus icon theme for Claws Mail
 x11-themes/qogir-icon-theme 2020.11.22: A flat colorful design icon theme for linux desktops
+x11-themes/razor-sharp-gtk 9999: GTK-3/4 theme: very dark background, red font
+x11-themes/solarized-black 1.0: GTK theme Solarized, multiple colors
 x11-themes/sound-theme-librem5 0.1.0: Sound theme for the Librem 5/PinePhone
 x11-themes/vimix-xcursors 20200224-r3: Theme inspired by Materia design and based on capitaine-cursors
 x11-wm/berry 0.1.11 0.1.12: A byte-sized window manager written in C

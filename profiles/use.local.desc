@@ -886,10 +886,8 @@ sys-cluster/sionlibl:pthreads - configure SIONlib to use pthreads for locking
 sys-cluster/sionlibl:python - enable python support
 sys-cluster/sionlibl:sionfwd - enable I/O forwarding with sys-cluster/SIONfwd
 sys-firmware/lenovolegionlinux:downgrade-nvidia - Downgrade nvidia for 525 to enable TDP control (systemd-service)
+sys-firmware/lenovolegionlinux:elogind - Enable legiond-onresume openrc support
 sys-firmware/lenovolegionlinux:gui - Build and install legion_gui and legion_cli
-sys-firmware/lenovolegionlinux:radeon-dgpu - Enable AMD GPU TDP control (systemd-service)
-sys-firmware/lenovolegionlinux:ryzenadj - [AMD] CPU and APU control using ryzenadj (systemd-service)
-sys-firmware/lenovolegionlinux:undervolt-intel - [INTEL] CPU and APU control using undervolt (systemd-service)
 sys-kernel/uek-sources:experimental - apply experimental gentoo genpatches
 sys-kernel/uek-sources:gentoo - apply base gentoo genpatches
 sys-kernel/usermode-kernel:hardened - Use selection of hardening options recommended by Kernel Self Protection Project
