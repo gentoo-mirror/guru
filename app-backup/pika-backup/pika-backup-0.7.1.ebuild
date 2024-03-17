@@ -325,14 +325,13 @@ CRATES="
 PYTHON_COMPAT=( python3_{9..12} )
 inherit cargo gnome2-utils meson python-single-r1 xdg
 
-MY_PV="${PV/_beta/-beta\.}"
-MY_P="${PN}-v${MY_PV}"
 DESCRIPTION="Keep your data safe"
 HOMEPAGE="https://gitlab.gnome.org/World/pika-backup"
-SRC_URI="https://gitlab.gnome.org/World/${PN}/-/archive/v${MY_PV}/${MY_P}.tar.bz2 -> ${P}.tar.bz2
+SRC_URI="https://gitlab.gnome.org/World/${PN}/-/archive/v${PV}/${P}.tar.bz2
 	${CARGO_CRATE_URIS}
 "
-S="${WORKDIR}/${MY_P}"
+COMMIT="f9d416385bb0d1949956c07e0117cba3a9c525dc"
+S="${WORKDIR}/${PN}-v${PV}-${COMMIT}"
 
 LICENSE="GPL-3"
 # Dependent crate licenses
@@ -355,10 +354,12 @@ RDEPEND="
 	${PYTHON_DEPS}
 "
 BDEPEND="
+	>=dev-lang/rust-1.75.0
 	dev-util/itstool
 	sys-devel/gettext
 "
 
+# Rust
 QA_FLAGS_IGNORED="usr/bin/${PN} usr/bin/${PN}-monitor"
 
 PATCHES=(
