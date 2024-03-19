@@ -58,6 +58,7 @@ acct-user/lms 0: User for LMS
 acct-user/mastoposter 0: System user: mastoposter
 acct-user/mautrix-discord 0: User for Mautrix Discord Bridge
 acct-user/mautrix-facebook 0: User for Mautrix Facebook Bridge
+acct-user/mautrix-meta 0: User for Mautrix Facebook Bridge
 acct-user/mautrix-signal 0: User for Mautrix Signal Bridge
 acct-user/mautrix-slack 0: User for Mautrix Slack Bridge
 acct-user/mautrix-telegram 0: User for Mautrix Telegram Bridge
@@ -733,6 +734,7 @@ dev-libs/libglibutil 1.0.68 1.0.76 9999: Library of glib utilities from sailfish
 dev-libs/libnodave 0.8.5.1-r2: Connect to and exchange data with Siemens PLCs
 dev-libs/libopensmtpd 0.7: Library for creating OpenSMTPD filters
 dev-libs/librepo 1.17.0: Repodata downloading library
+dev-libs/libsignal-ffi 0.41.1: A C ABI library which exposes Signal protocol logic
 dev-libs/libthai 0.1.28 0.1.29: A a set of Thai language support routines
 dev-libs/ls-hpack 2.3.0-r1: QPACK compression library for use with HTTP/3
 dev-libs/ls-qpack 2.5.0-r1: QPACK compression library for use with HTTP/3
@@ -1385,7 +1387,7 @@ games-board/fairy-stockfish 14.0.1: Chess variant engine derived from Stockfish 
 games-board/openriichi 0.2.1.1: OpenRiichi is an open source Japanese Mahjong client
 games-board/rmahjong 0.4_p20201106: Riichi Mahjong, the Japanese variant of the Chinese game Mahjong for 4 players
 games-emulation/RetroArch 1.16.0.3: RetroArch is a frontend for emulators, game engines and media players
-games-emulation/conty 1.25.1: Easy to use unprivileged Linux container packed in a single portable executable
+games-emulation/conty 1.25.1 1.25.2: Easy to use unprivileged Linux container packed in a single portable executable
 games-emulation/dosbox-x 2023.10.06-r1 2024.03.01 9999: Complete, accurate DOS emulator forked from DOSBox
 games-emulation/duckstation 9999: Fast Sony PlayStation (PSX) emulator
 games-emulation/flycast 9999: Sega Dreamcast, Naomi and Atomiswave emulator
@@ -1766,8 +1768,9 @@ net-im/mastoposter 0.1-r1 0.2: Configurable reposter from Mastodon-compatible Fe
 net-im/matterhorn-bin 50200.13.0 50200.19.0 90000.0.0: Terminal based Mattermost client
 net-im/mautrix-discord 0.6.4 0.6.5: A Matrix-Discord puppeting bridge
 net-im/mautrix-facebook 0.4.1 0.5.0: A Matrix-Facebook Messenger puppeting bridge
-net-im/mautrix-signal 0.4.2 0.4.3: A Matrix-Signal Messenger puppeting bridge
-net-im/mautrix-slack 0_pre20230517 0_pre20230925: A Matrix-Slack puppeting bridge based on slack-go
+net-im/mautrix-meta 0.2.0: A Matrix-Facebook puppeting bridge
+net-im/mautrix-signal 0.5.1: A Matrix-Signal puppeting bridge
+net-im/mautrix-slack 0_pre20230925 0_pre20240215: A Matrix-Slack puppeting bridge based on slack-go
 net-im/mautrix-telegram 0.14.1 0.14.2 0.15.1: A Matrix-Telegram Messenger puppeting bridge
 net-im/mautrix-whatsapp 0.10.0: A Matrix-WhatsApp puppeting bridge
 net-im/nheko 0.11.3-r1 0.11.3-r2 9999: Native desktop client for Matrix using Qt
