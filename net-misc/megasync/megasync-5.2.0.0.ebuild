@@ -17,8 +17,8 @@ if [[ ${PV} == 9999 ]];then
 	EGIT_BRANCH="master"
 	EGIT_SUBMODULES=( '*' )
 else
-	MEGA_SDK_REV="2e9307d114c379967f415211d466262162e074d4" # commit of src/MEGASync/mega submodule
-	MEGA_TAG_SUFFIX="Win"
+	MEGA_SDK_REV="f71b60452a5d6c32bebc5125a13977a335d78e71" # commit of src/MEGASync/mega submodule
+	MEGA_TAG_SUFFIX="Linux"
 	SRC_URI="
 		https://github.com/meganz/MEGAsync/archive/v${PV}_${MEGA_TAG_SUFFIX}.tar.gz -> ${P}.tar.gz
 		https://github.com/meganz/sdk/archive/${MEGA_SDK_REV}.tar.gz -> ${PN}-sdk-${PV}.tar.gz
@@ -34,6 +34,7 @@ IUSE="dolphin freeimage nautilus nemo threads thunar"
 DEPEND="
 	dev-db/sqlite:3
 	dev-libs/crypto++:=
+	dev-libs/icu:=
 	dev-libs/libsodium:=
 	dev-libs/libuv:=
 	dev-libs/openssl:0=
@@ -52,6 +53,7 @@ DEPEND="
 	net-dns/c-ares:=
 	net-misc/curl[ssl,curl_ssl_openssl(-)]
 	sys-libs/zlib
+	x11-libs/libxcb:=
 	dolphin? ( kde-apps/dolphin )
 	freeimage? (
 		media-libs/freeimage
