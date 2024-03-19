@@ -1,9 +1,9 @@
-# Copyright 2023 Gentoo Authors
+# Copyright 2023-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-inherit meson xdg
+inherit meson
 
 DESCRIPTION="The theme from libadwaita ported to GTK-3"
 HOMEPAGE="https://github.com/lassekongo83/adw-gtk3"
@@ -14,6 +14,3 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 IDEPEND=">=dev-lang/sassc-3.6.2"
-DEPEND=""
-RDEPEND="${DEPEND}"
-BDEPEND=""
