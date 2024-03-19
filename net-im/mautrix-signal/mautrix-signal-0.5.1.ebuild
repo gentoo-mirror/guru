@@ -1,17 +1,16 @@
-# Copyright 2022-2023 Gentoo Authors
+# Copyright 2022-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 inherit go-module systemd
 
-COMMIT="eb519c6407751b48001bb66bc55014100322b6c6"
-DESCRIPTION="A Matrix-Slack puppeting bridge based on slack-go"
-HOMEPAGE="https://github.com/mautrix/slack"
-SRC_URI="https://github.com/mautrix/slack/archive/${COMMIT}.tar.gz -> ${P}.gh.tar.gz
+DESCRIPTION="A Matrix-Signal puppeting bridge"
+HOMEPAGE="https://github.com/mautrix/signal"
+SRC_URI="https://github.com/mautrix/signal/archive/v${PV}.tar.gz -> ${P}.gh.tar.gz
 	https://jroy.ca/dist/${P}.tar.xz
 "
-S="${WORKDIR}/slack-${COMMIT}"
+S="${WORKDIR}/signal-${PV}"
 
 LICENSE="AGPL-3"
 SLOT="0"
@@ -19,21 +18,24 @@ KEYWORDS="~amd64"
 
 RDEPEND="
 	acct-user/${PN}
-	dev-libs/olm
 "
 DEPEND="${RDEPEND}"
+BDEPEND="
+	dev-libs/libsignal-ffi
+	dev-libs/olm
+"
 
 src_compile() {
 	ego build
 }
 
 src_install() {
-	dobin mautrix-slack
+	dobin mautrix-signal
 
-	keepdir /var/log/mautrix/slack
+	keepdir /var/log/mautrix/signal
 	fowners -R root:mautrix /var/log/mautrix
 	fperms -R 770 /var/log/mautrix
-	sed -i -e "s/\.\/logs/\/var\/log\/mautrix\/slack/" "example-config.yaml" || die
+	sed -i -e "s/\.\/logs/\/var\/log\/${PN/-/\\\/}/" "example-config.yaml" || die
 
 	insinto "/etc/mautrix"
 	newins "example-config.yaml" "${PN/-/_}.yaml"
@@ -60,5 +62,5 @@ pkg_postinst() {
 
 pkg_config() {
 	su - "${PN}" -s /bin/sh -c \
-	   "/usr/bin/${PN} -c /etc/mautrix/${PN/-/_}.yaml -g -r /var/lib/${PN/-/\/}/registration.yaml"
+		"/usr/bin/${PN} -c /etc/mautrix/${PN/-/_}.yaml -g -r /var/lib/${PN/-/\/}/registration.yaml"
 }
