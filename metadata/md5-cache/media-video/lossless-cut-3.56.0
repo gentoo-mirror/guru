@@ -1,4 +1,4 @@
-DEFINED_PHASES=install postinst postrm preinst prepare unpack
+DEFINED_PHASES=install postinst postrm preinst
 DESCRIPTION=Lossless video/audio editing: export media without reencoding, powered by ffmpeg
 EAPI=8
 HOMEPAGE=https://mifi.no/losslesscut/ https://github.com/mifi/lossless-cut
@@ -9,6 +9,6 @@ LICENSE=GPL-2
 RDEPEND=sys-fs/fuse:0 sys-libs/zlib:=
 RESTRICT=strip
 SLOT=0
-SRC_URI=https://github.com/mifi/lossless-cut/releases/download/v3.56.0/LosslessCut-linux-x86_64.AppImage -> lossless-cut-3.56.0.AppImage
+SRC_URI=https://github.com/mifi/lossless-cut/releases/download/v3.56.0/LosslessCut-linux-x86_64.AppImage -> lossless-cut-3.56.0.AppImage https://raw.githubusercontent.com/mifi/lossless-cut/v3.56.0/no.mifi.losslesscut.appdata.xml -> lossless-cut-3.56.0-metainfo.xml
 _eclasses_=desktop	021728fdc1b03b36357dbc89489e0f0d	xdg-utils	baea6080dd821f5562d715887954c9d3	xdg	4a14c5c24f121e7da66e5aab4a168c6e
-_md5_=204f25866797f4ea940c0f4c70ab8856
+_md5_=c6da19b9551a3ca4ef014f156335286f
