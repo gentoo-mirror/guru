@@ -1,4 +1,4 @@
-BDEPEND=>=virtual/rust-1.53
+BDEPEND=dev-libs/protobuf >=virtual/rust-1.53
 DEFINED_PHASES=compile configure install test unpack
 DESCRIPTION=A C ABI library which exposes Signal protocol logic
 EAPI=8
@@ -10,4 +10,4 @@ LICENSE=AGPL-3 AGPL-3 Apache-2.0 BSD-2 BSD ISC MIT Unicode-DFS-2016
 SLOT=0
 SRC_URI=https://github.com/signalapp/libsignal/archive/v0.41.1.tar.gz -> libsignal-ffi-0.41.1.gh.tar.gz https://jroy.ca/dist/libsignal-ffi-vendor-0.41.1.tar.xz
 _eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	24c947ff5f858625cf0b33c15eed4425	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	cargo	4dede41d64d595673f6da62ab5540fa0
-_md5_=993954deeaa37588e4117adbcd0f43de
+_md5_=ecf85bc4b55740ddf3f55854abaf4825
