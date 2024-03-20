@@ -1,4 +1,4 @@
-# Copyright 2021 Gentoo Authors
+# Copyright 2021-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -11,15 +11,8 @@ LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
-DEPEND="app-shells/fzf"
-RDEPEND="${DEPEND}"
-
-src_prepare() {
-	default
-	mv "${PN}.sh" "${PN}" || die
-}
+RDEPEND="app-shells/fzf"
 
 src_install() {
-	exeinto "/usr/bin"
-	doexe "${PN}"
+	newbin ${PN}.sh ${PN}
 }
