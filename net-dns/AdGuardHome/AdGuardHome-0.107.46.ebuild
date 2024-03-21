@@ -3,14 +3,16 @@
 
 EAPI=8
 
-inherit fcaps go-module systemd
+inherit fcaps go-module readme.gentoo-r1 systemd
 
 DESCRIPTION="Network-wide ads & trackers blocking DNS server like Pi-Hole with web ui"
 HOMEPAGE="https://github.com/AdguardTeam/AdGuardHome/"
 
+WIKI_COMMIT="7964837"
 SRC_URI="
 	https://github.com/AdguardTeam/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
 	https://github.com/rahilarious/gentoo-distfiles/releases/download/${P}/deps.tar.xz -> ${P}-deps.tar.xz
+	https://github.com/rahilarious/gentoo-distfiles/releases/download/${P}/wiki.tar.xz -> ${PN}-wiki-${WIKI_COMMIT}.tar.xz
 	web? ( https://github.com/AdguardTeam/${PN}/releases/download/v${PV}/AdGuardHome_frontend.tar.gz -> ${P}-frontend.tar.gz )
 "
 
@@ -25,21 +27,35 @@ KEYWORDS="~amd64 ~arm64"
 IUSE="+web"
 # RESTRICT="test"
 
-# see the patch below
-BDEPEND=">=dev-lang/go-1.21:="
-BDEPEND+=" app-arch/unzip"
+BDEPEND="app-arch/unzip"
 
 FILECAPS=(
 	-m 755 'cap_net_bind_service=+eip cap_net_raw=+eip' usr/bin/${PN}
 )
 
-# otherwise it'll error out saying "update go.mod file"
-# Since dev-lang/go-1.21 is stable i think it's safe to update
 PATCHES=(
-	"${FILESDIR}"/fix-go.mod-0.107.44.patch
+	"${FILESDIR}"/disable-update-cmd-opt.patch
 )
 
+DOCS="
+	../${PN,,}.wiki/*
+"
+
+DOC_CONTENTS="\n
+User is advised to not run binary directly instead use systemd service\n\n
+Defaults for systemd service:\n
+Web UI: 0.0.0.0:3000\n
+Data directory: /var/lib/${PN}\n
+Default config: /var/lib/${PN}/${PN}.yaml
+"
+src_unpack() {
+	# because we're using  vendor/ so we don't need go-module_src_unpack
+	default
+}
+
 src_prepare() {
+	ln -sv ../vendor ./ || die
+
 	default
 	# move frontend to project directory
 	use web && { rm -v build/gitkeep && mv -v ../build ./ || die ; }
@@ -116,6 +132,11 @@ src_install() {
 	dosym -r /usr/bin/"${PN}" /usr/bin/adguardhome
 
 	einstalldocs
+	readme.gentoo_create_doc
 
 	systemd_newunit "${FILESDIR}"/AdGuardHome-0.107.43.service "${PN}".service
+}
+
+pkg_postinst() {
+	readme.gentoo_print_elog
 }
