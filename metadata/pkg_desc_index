@@ -134,10 +134,11 @@ app-backup/timeshift-autosnap 0.9: Automatically creates a timeshift-snapshot wh
 app-benchmarks/kdiskmark 3.1.4: Disk benchmarking tool
 app-benchmarks/phoronix-test-suite 9999: Phoronix's comprehensive, cross-platform testing and benchmark suite
 app-benchmarks/poop 9999: Performance Optimizer Observation Platform
+app-containers/anbox-modules 0_p20240210: Anbox kernel modules
 app-containers/dnsname-cni-plugin 1.3.0 1.3.1 9999: name resolution for containers
 app-containers/nvidia-container-toolkit 1.12.1 1.13.1 1.13.2 9999: NVIDIA container runtime toolkit
 app-containers/pods 2.1.0_pre20240215-r3: Keep track of your podman containers
-app-containers/waydroid 1.4.0 1.4.2: Container-based approach to boot a full Android system on Linux systems
+app-containers/waydroid 1.4.0 1.4.2 1.4.2-r1: Container-based approach to boot a full Android system on Linux systems
 app-crypt/PBinCLI 0.3.5: PBinCLI is a command line client for PrivateBin written in Python 3
 app-crypt/autofirma 1.7.1: Spanish government's electronic signature application for online procedures
 app-crypt/certbot-dns-desec 1.2.1: deSEC DNS Authenticator plugin for Certbot
@@ -285,7 +286,7 @@ app-misc/vocabsieve 0.11.1: A simple, effective tool for language learning
 app-misc/vrms-gentoo 0_pre20201102: vrms clone for Gentoo Linux
 app-misc/walld 1.4.4: A Wallpaper daemon
 app-misc/watchexec 1.23.0 1.24.0 1.24.1 1.24.2 1.25.0 1.25.1: Executes commands in response to file modifications
-app-misc/wcal 0.1: ISO weekly calendar
+app-misc/wcal 0.1-r1: ISO weekly calendar
 app-misc/wego 2.2: Wego is a weather client for the terminal
 app-misc/xplr 0.21.3: A hackable, minimal, fast TUI file explorer
 app-misc/yaf 0.0.3: Yet another system fetch that is minimal and customizable.
@@ -715,7 +716,7 @@ dev-libs/fortran-shlex 1.0.1: Modern Fortran port of the tiny-regex-c library fo
 dev-libs/fortran-stdlib 0.2.1-r1 0.3.0 9999: A community driven standard library for (modern) Fortran
 dev-libs/fsst 0_pre20200830-r1: Fast Static Symbol Table: fast text compression that allows random access
 dev-libs/ftl 1.0_p20230220: The Fortran Template Library (FTL) is a general purpose library for Fortran 2003
-dev-libs/gbinder 1.1.30-r3 1.1.32 1.1.36 9999: GLib-style interface to binder
+dev-libs/gbinder 1.1.30-r3 1.1.32 1.1.36 1.1.38 9999: GLib-style interface to binder
 dev-libs/gpds 1.8.4: A general purpose data serializer
 dev-libs/hts_engine 1.10: HMM-based speech synthesis system (HTS) engine and API
 dev-libs/imsg-compat 6.8.2 9999: linux port of OpenBSD imsg
@@ -1317,7 +1318,7 @@ dev-util/exercism 3.1.0 3.2.0: Command line client for https://exercism.io
 dev-util/find-work 0.5.0 0.6.0: Personal advice utility for Gentoo package maintainers
 dev-util/fnm 1.35.1: Fast and simple Node.js version manager
 dev-util/fontmake 3.5.1: Compile fonts from sources (UFO, Glyphs) to binary (OpenType, TrueType)
-dev-util/fortls 2.13.0: Fortran Language Server (fortls)
+dev-util/fortls 2.13.0 3.0.0_rc2: Fortran Language Server (fortls)
 dev-util/fortran-test-drive 0.4.0: The simple testing framework (for Fortran)
 dev-util/gammaray 2.11.3: High-level runtime introspection tool for Qt applications
 dev-util/gftools 0.9.21-r1: Miscellaneous tools for working with the Google Fonts collection
@@ -1339,6 +1340,7 @@ dev-util/ots 8.1.4 8.2.1: An util for validating and sanitising OpenType files
 dev-util/pcpp 1.30: A C99 preprocessor written in pure Python
 dev-util/pifpaf 3.1.5-r1: Suite of tools and fixtures to manage daemons for testing
 dev-util/pmbootstrap 1.51.0: Helper tool for developing and building postmarketOS
+dev-util/prysk 0.18.0: Functional testing framework for command line applications (cram fork)
 dev-util/qshaderedit 0.1.5: Multiplatform shader editor inspired by Apple's OpenGL Shader Builder
 dev-util/quilttools 0.3-r1: Mailbox to quilt series converter
 dev-util/reflex 0.3.1: A small tool to watch a directory and rerun a command when certain files change
@@ -1421,6 +1423,7 @@ games-puzzle/superflu-riteurnz-data 12: Artisanal video-game about Superflu, the
 games-rpg/open-adventure 1.16 1.17 1.18: Forward-port of the Crowther/Woods Adventure 2.5
 games-rpg/snoot-game 1.8 1.8-r1: Visual novel parody of Goodbye Volcano High
 games-server/among-sus 20210519: Among Us, but it's a text adventure
+games-strategy/armies-of-exigo-demo 1.0: Singleplayer demo of Armies of Exigo (like WarCraft III), Windows
 games-util/HeroicGamesLauncher-bin 2.13.0: A Native GOG and Epic Games Launcher for Linux, Windows and Mac.
 games-util/NotEnoughProduction 0.0.4: Tool for building production chains for modded minecraft
 games-util/ProtonUp-Qt 2.9.1 9999: Install and manage GE-Proton, Luxtorpeda & more for Steam Lutris and Heroic.
@@ -1441,7 +1444,7 @@ games-util/roll 2.6.1: Program to roll dices specified in a simple and intuitive
 games-util/samrewritten 9999 202008: Steam Achievement Manager For Linux
 games-util/steamtinkerlaunch 12.0: Wrapper script for Steam custom launch options
 games-util/xivlauncher 1.0.8: Custom Launcher for Final Fantasy XIV Online (Crossplatform rewrite)
-gnome-extra/extension-manager 0.4.3 9999: A native tool for browsing, installing, and managing GNOME Shell Extensions
+gnome-extra/extension-manager 0.4.3 0.5.0 9999: A native tool for browsing, installing, and managing GNOME Shell Extensions
 gnome-extra/iio-sensor-proxy 3.3: IIO sensors to D-Bus proxy
 gnome-extra/junction 1.6-r1: Application/browser chooser
 gnome-extra/portfolio 0.9.14: A minimalist file manager for those who want to use Linux mobile devices
@@ -1741,7 +1744,7 @@ net-dialup/atinout 0.9.1-r1: AT commands as input are sent to modem and response
 net-dialup/minimodem 0.24-r1 9999: General-purpose software audio FSK modem
 net-dialup/tcpser 1.1.4: Hayes Smartmodem emulator over TCP/IP
 net-dialup/tio 2.7: Simple TTY terminal application
-net-dns/AdGuardHome 0.107.43 0.107.44 0.107.45: Network-wide ads & trackers blocking DNS server like Pi-Hole with web ui
+net-dns/AdGuardHome 0.107.45 0.107.46: Network-wide ads & trackers blocking DNS server like Pi-Hole with web ui
 net-dns/blocky 0.22 0.23 9999: Fast and lightweight DNS proxy as ad-blocker with many features written in Go
 net-fs/httpdirfs 1.2.0: Filesystem to mount HTTP directory listings, with a permanent cache
 net-fs/hubicfuse 3.0.1: Support for mounting HubiC drive in GNU/Linux
@@ -2063,6 +2066,7 @@ sys-fs/fstransform 0.9.4: Tool for in-place filesystem conversion
 sys-fs/gcsfuse 1.2.0: A user-space file system for interacting with Google Cloud Storage
 sys-fs/gdu 5.14.0 5.25.0: Disk usage analyzer with console interface written in Go
 sys-fs/gfs2-utils 3.4.1: Shared-disk cluster file system
+sys-fs/jefferson 0.4.5: JFFS2 filesystem extraction tool
 sys-fs/mountpoint-s3-bin 1.1.1: Fuse for AWS S3 (Simple Storage Service), official
 sys-fs/ntfs2btrfs 20240115: Conversion tool from NTFS to Btrfs
 sys-fs/ufiformat 0.9.9: USB Floppy Disk formatting tool
@@ -2077,6 +2081,7 @@ sys-kernel/xow 0.5: Linux driver for the Xbox One wireless dongle
 sys-kernel/xpmem 2.6.5_p20210809: Linux Cross-Memory Attach
 sys-kernel/zenpower3 0.2.0: Linux kernel driver for reading sensors of AMD Zen family CPUs
 sys-libs/cyclonedds 0.10.3 9999: Eclipse Cyclone DDS project
+sys-libs/gcompat 1.1.0: The GNU C Library compatibility layer for musl
 sys-libs/iceoryx 2.0.3 9999: Eclipse Iceoryx zero copy IPC
 sys-libs/libfixposix 0.4.3 0.5.1: Thin wrapper over POSIX syscalls
 sys-libs/libnvidia-container 1.12.1 1.13.1 1.13.2 9999: NVIDIA container runtime library

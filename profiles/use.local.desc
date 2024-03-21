@@ -20,6 +20,7 @@ app-arch/7zip:rar - Enable support for non-free rar decoder
 app-arch/7zip:uasm - Use dev-lang/uasm to include optimized code
 app-backup/blocksync-fast:xxhash - Enable dev-libs/xxhash support for very high speed hashing
 app-backup/kopia-ui-bin:system-kopia - Use the system-wide app-backup/kopia instead of bundled.
+app-containers/waydroid:clipboard - Enable clipboard manager service using dev-python/pyclip
 app-crypt/clevis:luks - Enable LUKS support
 app-crypt/clevis:tpm - Enable TPM support
 app-crypt/gnome-encfs-manager:appindicator - Build in support for notifications using the libindicate or libappindicator plugin
@@ -900,6 +901,8 @@ sys-libs/cyclonedds:get-kind - Apply patch for additional interface which return
 sys-libs/cyclonedds:idlc - Build IDL preprocessor
 sys-libs/cyclonedds:parser - Regenerate parser
 sys-libs/cyclonedds:shm - Enable shared memory support
+sys-libs/gcompat:libucontext - Add support for ucontext functions via sys-libs/libucontext
+sys-libs/gcompat:obstack - Use sys-libs/obstack-standalone for greater compatibility
 sys-libs/iceoryx:ccache - Enable ccache support
 sys-libs/safeclib:constraint-handler - enable C11 invoke_safe_{str,mem}_constraint_handler for less performance, bigger size and more flexibility
 sys-libs/safeclib:extensions - enable additional functions not defined in the C11 specification
