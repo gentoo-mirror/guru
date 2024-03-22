@@ -1,13 +1,11 @@
-BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
-DEFINED_PHASES=prepare unpack
+DEFINED_PHASES=prepare
 DEPEND=>=dev-lang/hare-0.24.0
 DESCRIPTION=SSH library for Hare
 EAPI=8
 HOMEPAGE=https://git.sr.ht/~sircmpwn/hare-ssh
-INHERIT=git-r3
+KEYWORDS=~amd64 ~arm64 ~riscv
 LICENSE=MPL-2.0
-PROPERTIES=live
 RDEPEND=>=dev-lang/hare-0.24.0
-SLOT=0
-_eclasses_=git-r3	86fa1f157b70b9d2ff340c4633b1cf4b
+SLOT=0/0.24.0
+SRC_URI=https://git.sr.ht/~sircmpwn/hare-ssh/archive/0.24.0.tar.gz -> hare-ssh-0.24.0.tar.gz
 _md5_=f25a401b65718700ae7bf63b9803aa0e
