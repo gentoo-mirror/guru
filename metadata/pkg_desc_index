@@ -108,7 +108,7 @@ app-admin/oet 0.1.9 0.1.10 9999: Update your system into binpkgs in an overlay s
 app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applications and tmux
 app-admin/pass-audit 1.2 1.2-r1: A pass extension for auditing your password repository.
 app-admin/pass-update 2.2.1: pass extension that provides an easy flow for updating passwords
-app-admin/pulumi-bin 3.108.0 3.109.0 3.110.0: Infrastructure as code in any programming language
+app-admin/pulumi-bin 3.109.0 3.110.0 3.111.1: Infrastructure as code in any programming language
 app-admin/rbw 9999: unofficial bitwarden cli
 app-admin/s-tui 1.1.4: Stress-Terminal UI monitoring tool
 app-admin/synadm 0.43.1 0.44: Command line admin tool for Synapse
@@ -139,6 +139,7 @@ app-containers/dnsname-cni-plugin 1.3.0 1.3.1 9999: name resolution for containe
 app-containers/nvidia-container-toolkit 1.12.1 1.13.1 1.13.2 9999: NVIDIA container runtime toolkit
 app-containers/pods 2.1.0_pre20240215-r3: Keep track of your podman containers
 app-containers/waydroid 1.4.0 1.4.2 1.4.2-r1: Container-based approach to boot a full Android system on Linux systems
+app-containers/waydroid-images 9999: Manage images for app-containers/waydroid using portage
 app-crypt/PBinCLI 0.3.5: PBinCLI is a command line client for PrivateBin written in Python 3
 app-crypt/autofirma 1.7.1: Spanish government's electronic signature application for online procedures
 app-crypt/certbot-dns-desec 1.2.1: deSEC DNS Authenticator plugin for Certbot
@@ -1367,7 +1368,7 @@ dev-vcs/gitahead 2.7.1 2.7.1-r1: Graphical Git client to help understand and man
 dev-vcs/gitqlient 1.6.2 9999: Multi-platform Git client written with Qt
 dev-vcs/gitqlient-gitserver-plugin 0.2.0: GitQlient GitServer plugin
 dev-vcs/gitqlient-jenkins-plugin 0.2.0: GitQlient Jenkins plugin
-dev-vcs/gitui 0.25.1: blazing fast terminal-ui for git
+dev-vcs/gitui 0.25.2: blazing fast terminal-ui for git
 dev-vcs/got 0.90 0.91: Portable version of the Game of Trees version control system
 dev-vcs/lazygit 0.39.4-r1 0.40.2-r1: Simple terminal UI for git commands
 dev-vcs/lefthook 1.4.8 1.5.5-r1: Fast and powerful Git hooks manager for any type of projects
@@ -1494,7 +1495,7 @@ gui-apps/hyprpaper 0.5.0 0.6.0 0.6.0-r1: A blazing fast wayland wallpaper utilit
 gui-apps/hyprpicker 0.1.1 0.2.0: A wlroots-compatible Wayland color picker that does not suck
 gui-apps/intiface-central-bin 2.5.3 2.5.5: Buttplug frontend application
 gui-apps/lemurs 0.3.1 0.3.1-r1 0.3.2: A TUI Display/Login Manager
-gui-apps/lswt 1.0.4: List Wayland toplevels
+gui-apps/lswt 1.0.4 9999: List Wayland toplevels
 gui-apps/meteo-qt 3.3: A system tray application for the weather status
 gui-apps/mpvpaper 1.4 9999: A video wallpaper program for wlroots based wayland compositors
 gui-apps/nwg 0: meta package package for nwg-shell
@@ -1828,8 +1829,8 @@ net-misc/gnome-ssh-askpass 9.2_p1: GTK-based passphrase dialog for use with Open
 net-misc/graftcp 0.7.1: A tool for redirecting a given program's TCP traffic to SOCKS5 or HTTP proxy
 net-misc/gsocket 1.4.41 9999: Connect like there is no firewall. Securely.
 net-misc/lyrics-in-terminal 1.5.0: Command Line Lyrics fetcher for MPRIS media players
-net-misc/maestral 1.8.0 1.8.1_rc0: Maestral is an open-source Dropbox client written in Python
-net-misc/maestral-qt 1.8.0: Maestral is an open-source Dropbox client written in Python
+net-misc/maestral 1.8.0 1.9.1: Maestral is an open-source Dropbox client written in Python
+net-misc/maestral-qt 1.8.0 1.9.1: Maestral is an open-source Dropbox client written in Python
 net-misc/mastorss 0.13.0 0.13.1 9999: Another RSS to Mastodon bot
 net-misc/megasync 5.2.0.0 9999: The official Qt-based program for syncing your MEGA account in your PC
 net-misc/myip 1.2.1: Get your external IP address using STUN server

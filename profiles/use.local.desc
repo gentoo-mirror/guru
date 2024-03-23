@@ -21,6 +21,10 @@ app-arch/7zip:uasm - Use dev-lang/uasm to include optimized code
 app-backup/blocksync-fast:xxhash - Enable dev-libs/xxhash support for very high speed hashing
 app-backup/kopia-ui-bin:system-kopia - Use the system-wide app-backup/kopia instead of bundled.
 app-containers/waydroid:clipboard - Enable clipboard manager service using dev-python/pyclip
+app-containers/waydroid-images:system-gapps - Use the GAPPS variant of system.img
+app-containers/waydroid-images:system-vanilla - Use the VANILLA variant of system.img
+app-containers/waydroid-images:vendor-halium - Use the HALIUM_11 variant of vendor.img
+app-containers/waydroid-images:vendor-mainline - Use the MAINLINE variant of vendor.img
 app-crypt/clevis:luks - Enable LUKS support
 app-crypt/clevis:tpm - Enable TPM support
 app-crypt/gnome-encfs-manager:appindicator - Build in support for notifications using the libindicate or libappindicator plugin
