@@ -45,6 +45,7 @@ RDEPEND="
 "
 
 src_configure() {
+	EMESON_BUILDTYPE=$(usex debug debug release)
 	local emesonargs=(
 		--prefix=/usr
 		-DHTML_SUPPORT=true

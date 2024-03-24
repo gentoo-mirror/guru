@@ -22,7 +22,7 @@ fi
 
 LICENSE="AGPL-3"
 SLOT="0"
-IUSE="json-binary +python"
+IUSE="debug json-binary +python"
 REQUIRED_USE="
 	python? ( ${PYTHON_REQUIRED_USE} )
 	!python? ( json-binary )
@@ -45,7 +45,8 @@ RDEPEND="
 "
 
 src_configure() {
-	local emesonargs=(
+	EMESON_BUILDTYPE=$(usex debug debug release)
+	local emesonarge=(
 		--prefix=/usr
 		-DHTML_SUPPORT=true
 		$(meson_use python PYTHON_BINDINGS)
