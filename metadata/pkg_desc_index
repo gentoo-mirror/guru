@@ -97,7 +97,7 @@ app-admin/customrescuecd-x86_64 0.12.7 0.12.8: A system rescue cd or usbstick fo
 app-admin/dotbot 1.20.1: A tool that bootstraps your dotfiles
 app-admin/enpass-desktop-bin 6.7.4.933: A cross-platform, complete password management solution
 app-admin/gentoo_update 0.2.4: Gentoo Linux updater
-app-admin/grub-customizer 5.2.4: A graphical grub2 settings manager
+app-admin/grub-customizer 5.2.4-r1: A graphical grub2 settings manager
 app-admin/himitsu 0.4 0.6 9999: Secret storage system for Unix, suitable for storing passwords, keys, ...
 app-admin/himitsu-keyring 0.2.0: graphical frontend for managing a Himitsu key store
 app-admin/himitsu-ssh 0.3 9999: SSH integration for Himitsu
@@ -187,7 +187,7 @@ app-editors/kitscenarist 0.7.2_rc9: Simple and powerful application for creating
 app-editors/lapce 0.3.1 9999: Lightning-fast and Powerful Code Editor written in Rust
 app-editors/mined 2015.25: A powerful text editor with extensive Unicode and CJK support
 app-editors/neovim-qt 0.2.17-r1 0.2.18: Neovim client library and GUI, in Qt
-app-editors/pulsar-bin 1.113.0 1.114.0: A Community-led Hyper-Hackable Text Editor
+app-editors/pulsar-bin 1.114.0 1.115.0: A Community-led Hyper-Hackable Text Editor
 app-editors/typora-bin 1.7.6: a markdown editor,markdown reader.
 app-emacs/idris-mode 1.0 9999: Idris syntax highlighting, compiler-supported editing, and interactive REPL
 app-emacs/prop-menu 0.1.2: Compute pop-up menus from text and overlay properties
@@ -241,6 +241,7 @@ app-misc/electricsheep 3.0.2_p20191005 3.0.2_p20191005-r1: Realize the collectiv
 app-misc/far2l 2.5.3_beta 9999: Linux port of FAR Manager v2
 app-misc/fetsh 1.8 1.9 9999: A fetch written in POSIX shell without any external commands
 app-misc/fff 2.2: A simple file manager written in bash
+app-misc/flox-bin 1.0.1: Developer environments you can take with you, with Nix inside, live virtual envs
 app-misc/gentodo 0.2.0 0.2.1 9999: Todo program to help enhance your Gentoo workflow
 app-misc/ghq 1.1.0 1.1.5: Remote repository management made easy
 app-misc/github-desktop-bin 3.3.1_rc1: Linux fork of GitHub Desktop
@@ -271,7 +272,7 @@ app-misc/onefetch 2.19.0: Command-line Git information tool
 app-misc/pfetch 0.6.0: A pretty system information tool written in POSIX sh
 app-misc/pipes-rs 1.6.3: An over-engineered rewrite of pipes.sh in Rust
 app-misc/powerpanel 1.4.1-r1: PowerPanel software for CyberPower UPS systems
-app-misc/pueue 3.3.2 3.3.3: A cli tool for managing long running shell commands.
+app-misc/pueue 3.3.2 3.3.3 3.4.0: A cli tool for managing long running shell commands.
 app-misc/rememberthemilk 1.3.11-r1: Freemium simple to-do tasks manager
 app-misc/s6-man 9999: mdoc versions of the HTML documentation for the s6 supervision suite
 app-misc/spark 1.0.1: sparklines for your shell
@@ -283,9 +284,10 @@ app-misc/tty-share-bin 2.4.0: Screen sharing for terminal: ASCII in browser or t
 app-misc/twertlefetch 1.1.0: system fetch written in rust
 app-misc/ufetch 0.3: Tiny system info for Unix-like operating systems
 app-misc/uwufetch 2.0 2.1: A meme system info tool for Linux
-app-misc/vocabsieve 0.11.1: A simple, effective tool for language learning
+app-misc/vocabsieve 0.12.0: A simple, effective tool for language learning
 app-misc/vrms-gentoo 0_pre20201102: vrms clone for Gentoo Linux
 app-misc/walld 1.4.4: A Wallpaper daemon
+app-misc/watch-tree-and-replace-spaces-with-a-few-other-chars 1.0.0: Monitor a tree for files with spaces in name - and replace to underscores
 app-misc/watchexec 1.23.0 1.24.0 1.24.1 1.24.2 1.25.0 1.25.1: Executes commands in response to file modifications
 app-misc/wcal 0.1-r1: ISO weekly calendar
 app-misc/wego 2.2: Wego is a weather client for the terminal
@@ -316,7 +318,7 @@ app-portage/portconf 1.6.8-r1: /etc/portage cleaner
 app-portage/quantum-resolver 9999: A WIP portage dependency resolver
 app-portage/showbuild 0.9.1-r1: Script to follow log of running portage builds
 app-portage/version 0.19.0_alpha 0.20.1_alpha 0.21.0_alpha: A command line function for package version management.
-app-shells/carapace 0.28.5 0.30.2: Multi-shell multi-command argument completer
+app-shells/carapace 0.28.5 0.30.2 1.0.0: Multi-shell multi-command argument completer
 app-shells/clownfish 0_pre20210117: fish shell mocks
 app-shells/direnv 2.32.3 9999: Environment variable manager for shell
 app-shells/elvish 0.19.2 0.20.1: Expressive programming language and a versatile interactive shell
@@ -1370,7 +1372,7 @@ dev-vcs/gitqlient-gitserver-plugin 0.2.0: GitQlient GitServer plugin
 dev-vcs/gitqlient-jenkins-plugin 0.2.0: GitQlient Jenkins plugin
 dev-vcs/gitui 0.25.2: blazing fast terminal-ui for git
 dev-vcs/got 0.90 0.91: Portable version of the Game of Trees version control system
-dev-vcs/lazygit 0.39.4-r1 0.40.2-r1: Simple terminal UI for git commands
+dev-vcs/lazygit 0.39.4-r1 0.40.2-r1 0.41.0: Simple terminal UI for git commands
 dev-vcs/lefthook 1.4.8 1.5.5-r1: Fast and powerful Git hooks manager for any type of projects
 dev-zig/zls 0.10.0-r1 9999: The officially unofficial Ziglang language server
 games-action/ATLauncher 3.4.3.1 3.4.27.0: Minecraft launcher which integrates multiple different ModPacks
@@ -1425,6 +1427,7 @@ games-rpg/open-adventure 1.16 1.17 1.18: Forward-port of the Crowther/Woods Adve
 games-rpg/snoot-game 1.8 1.8-r1: Visual novel parody of Goodbye Volcano High
 games-server/among-sus 20210519: Among Us, but it's a text adventure
 games-strategy/armies-of-exigo-demo 1.0: Single and multi player demos of Armies of Exigo (like WarCraft III), Windows
+games-strategy/massive-assault-network-2-demo 2.0.270: Turn-based, sci-fi, like a chess, from 2006, any screen resolution, good rating
 games-util/HeroicGamesLauncher-bin 2.13.0: A Native GOG and Epic Games Launcher for Linux, Windows and Mac.
 games-util/NotEnoughProduction 0.0.4: Tool for building production chains for modded minecraft
 games-util/ProtonUp-Qt 2.9.1 9999: Install and manage GE-Proton, Luxtorpeda & more for Steam Lutris and Heroic.
@@ -1514,6 +1517,7 @@ gui-apps/openrefine 3.7.9: Wikidata batch editor, Wikimedia Commons mass upload 
 gui-apps/organicmaps 9999: Offline maps and navigation using OpenStreetMap data
 gui-apps/packettracer 8.2.0: Cisco's packet tracer
 gui-apps/paperde 0.1.1_p20210426 9999: Simple, sleek QT based DE for wayland using wayfire
+gui-apps/riverguile 0.1.0 9999: River layout generator powered by guile scheme
 gui-apps/rofi-wayland 1.7.5 1.7.5-r1: A window switcher, run dialog and dmenu replacement
 gui-apps/satty 0.11.0 9999: A screenshot annotation tool inspired by Swappy and Flameshot.
 gui-apps/sfwbar 1.0_beta12 1.0_beta13 1.0_beta14: S* Floating Window Bar
@@ -1782,6 +1786,7 @@ net-im/nheko 0.11.3-r1 0.11.3-r2 9999: Native desktop client for Matrix using Qt
 net-im/pop 8.0.21: Screen sharing with multiplayer control, with voice
 net-im/ruqola 1.3.1: Rocket.Chat client for the KDE desktop
 net-im/session-desktop-bin 1.10.8: Session Desktop - Onion routing based messenger
+net-im/sliding-sync 0.99.15: Proxy implementation of MSC3575's sync protocol.
 net-im/teams-for-linux 1.4.12 1.4.13: Unofficial Microsoft Teams client for Linux. Binary precompiled version.
 net-im/whatsapp-for-linux 1.5.3 1.6.2: An unofficial WhatsApp desktop application for Linux
 net-irc/catgirl 2.0a 2.1 2.2: TLS-only terminal IRC client
@@ -1797,7 +1802,7 @@ net-libs/kcgi 0.12.5 0.13.0 0.13.3: Minimal CGI library for web applications
 net-libs/libuecc 7: a very small Elliptic Curve Cryptography library compatible with Ed25519.
 net-libs/orcania 2.3.3: Library for angharad programs
 net-libs/picotls 0_pre20220721 9999: TLS 1.3 implementation in C
-net-libs/syndication-domination 1.0 9999: An RSS/Atom parser, because there's nothing else out there.
+net-libs/syndication-domination 1.0-r1 9999: An RSS/Atom parser, because there's nothing else out there.
 net-libs/td 1.8.0 9999: Cross-platform library for building Telegram clients
 net-libs/telepathy-haze 0.8.1: Telepathy connection manager providing libpurple supported protocols
 net-libs/udt 4.11_p20181126: UDT is a UDP based data transport protocol
@@ -2025,9 +2030,11 @@ sys-apps/watchdogd 3.5: Advanced system & process supervisor for Linux
 sys-auth/mrsh 2.12 2.12-r1: Mrsh is a set of remote shell programs that use munge authentication.
 sys-auth/pam-gnupg 0.3: Unlock GnuPG keys on login
 sys-block/partclone 0.3.20: Partition cloning tool
+sys-boot/boot-repair-iso-download 9999: Ubuntu based ISO to fix GRUB problems - just downloads to /opt/distribs/
 sys-boot/customrescuecd-x86-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/customrescuecd-x86_64-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/limine 7.0.0 7.0.3 7.0.5: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
+sys-boot/ventoy-bin 1.0.97: Creator of bootable USBs, with ability to copy ISOs, persistence storage
 sys-boot/woeusb-ng 0.2.10: Create Windows installer USB from ISO (rewrite of WoeUSB)
 sys-boot/zfsbootmenu 1.12.0 2.2.2 2.3.0: ZFS bootloader for root-on-ZFS systems
 sys-cluster/AXL 0.5.0 0.7.0: AXL provides a common C interface to transfer files in an HPC storage hierarchy
@@ -2062,7 +2069,7 @@ sys-firmware/pinephone-firmware 20210809: Firmwares files for PinePhone
 sys-fs/btrfs-heatmap 9-r1: Python 3 script to draw a heatmap of a btrfs filesystem
 sys-fs/ddrescueview 0.4.5: Graphical viewer for GNU ddrescue mapfiles
 sys-fs/diskonaut 0.10.0 0.11.0 9999: Terminal disk space visual navigator
-sys-fs/dua-cli 2.25.0 2.28.0: A tool to conveniently learn about the disk usage of directories, fast!
+sys-fs/dua-cli 2.25.0 2.28.0 2.29.0: A tool to conveniently learn about the disk usage of directories, fast!
 sys-fs/dwarfs 0.9.6: A fast very high compression read-only FUSE file system
 sys-fs/dwarfs-bin 0.9.6: Static version of a fast very high compression read-only FUSE file system
 sys-fs/fstransform 0.9.4: Tool for in-place filesystem conversion
@@ -2184,8 +2191,8 @@ x11-misc/xscreensaver-anclock 2.2.1: Analog clock hack for the xscreensaver prog
 x11-plugins/purple-mm-sms 0.1.7: Purple SMS plugin using ModemManager
 x11-terms/dmd5620 1.2.0: GTK+ 3.0 implementation of an AT&T / Teletype DMD 5620 emulator.
 x11-terms/mlterm-canna 3.9.3: canna plugin for mlterm
-x11-terms/rio 0.0.28 0.0.34 0.0.35: A hardware-accelerated GPU terminal emulator powered by WebGPU
-x11-terms/rio-terminfo 0.0.28 0.0.34 0.0.35: Terminfo for Rio, a hardware-accelerated GPU terminal emulator powered by WebGPU
+x11-terms/rio 0.0.34 0.0.35 0.0.36: A hardware-accelerated GPU terminal emulator powered by WebGPU
+x11-terms/rio-terminfo 0.0.34 0.0.35 0.0.36: Terminfo for Rio, a hardware-accelerated GPU terminal emulator powered by WebGPU
 x11-terms/tabby-bin 1.0.189: A terminal for a more modern age
 x11-terms/tym 3.5.0: Lua-configurable terminal emulator
 x11-themes/adw-gtk3 5.2 5.3: The theme from libadwaita ported to GTK-3
@@ -2195,6 +2202,7 @@ x11-themes/arc-kde 20220908: Port of the popular GTK theme Arc for Plasma 5
 x11-themes/bibata-xcursors 2.0.2 2.0.3: Opensource, compact, and material-designed cursor set
 x11-themes/blackandwhite-gtk 9999: GTK-3 theme: simple black-and-white, minimalistic
 x11-themes/breezex-xcursors 2.0.0: Cursor set highly inspired on KDE Breeze with HiDPi Support
+x11-themes/catppuccin 0.7.1: Catppuccin is a community-driven pastel theme.
 x11-themes/flat-remix-gtk 9999: Black flat with a colorful palette, some shadows, highlights, gradients
 x11-themes/hackerer 9999: GTK-3 theme: black background, green font
 x11-themes/juno 9999: GTK-3 themes: dark, inspired by epic vscode themes
