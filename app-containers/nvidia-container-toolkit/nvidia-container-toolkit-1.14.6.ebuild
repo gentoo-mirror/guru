@@ -1,4 +1,4 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -21,8 +21,8 @@ if [[ "${PV}" == "9999" ]] ; then
 else
 	SRC_URI="
 		https://github.com/NVIDIA/${PN}/archive/v${PV/_rc/-rc.}.tar.gz -> ${P}.tar.gz
-		https://github.com/david-gentoo/gentoo-go-deps/releases/download/${P}/${P}-deps.tar.xz
-		https://github.com/david-gentoo/gentoo-go-deps/releases/download/${P}/${P}-vendor.tar.xz
+		https://github.com/vowstar/gentoo-go-deps/releases/download/${P}/${P}-deps.tar.xz
+		https://github.com/vowstar/gentoo-go-deps/releases/download/${P}/${P}-vendor.tar.xz
 	"
 	S="${WORKDIR}/${PN}-${PV/_rc/-rc.}"
 	KEYWORDS="~amd64"
@@ -30,11 +30,13 @@ else
 fi
 
 LICENSE="Apache-2.0"
-SLOT="0"
+SLOT="0/${PV}"
 
+# Some tests may require specific environmental setups or additional hardware.
+RESTRICT="test" # Bug 831702
 
 RDEPEND="
-	sys-libs/libnvidia-container
+	sys-libs/libnvidia-container:0/${PV}
 "
 
 DEPEND="${RDEPEND}"

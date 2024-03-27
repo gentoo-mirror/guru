@@ -1,4 +1,4 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -26,14 +26,17 @@ else
 	"
 	S="${WORKDIR}/${PN}-${PV/_rc/-rc.}"
 	KEYWORDS="~amd64"
+	RESTRICT="mirror"
 fi
 
 LICENSE="Apache-2.0"
-SLOT="0"
+SLOT="0/${PV}"
 
+# Some tests may require specific environmental setups or additional hardware.
+RESTRICT="test" # Bug 831702
 
 RDEPEND="
-	sys-libs/libnvidia-container
+	sys-libs/libnvidia-container:0/${PV}
 "
 
 DEPEND="${RDEPEND}"

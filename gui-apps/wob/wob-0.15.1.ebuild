@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit meson
+inherit meson systemd
 
 DESCRIPTION="Lightweight overlay volume/backlight/progress/anything bar for Wayland"
 HOMEPAGE="https://github.com/francma/wob"
@@ -36,4 +36,9 @@ src_configure() {
 		$(meson_feature test tests)
 	)
 	meson_src_configure
+}
+
+src_install() {
+	meson_src_install
+	systemd_douserunit contrib/systemd/${PN}.{service,socket}
 }
