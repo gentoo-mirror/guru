@@ -1,15 +1,15 @@
 BDEPEND=app-arch/unzip dev-build/make >=dev-lang/go-1.20:= app-arch/unzip
 DEFINED_PHASES=compile install postinst unpack
-DEPEND=sys-libs/libnvidia-container
+DEPEND=sys-libs/libnvidia-container:0/1.14.6
 DESCRIPTION=NVIDIA container runtime toolkit
 EAPI=8
 HOMEPAGE=https://github.com/NVIDIA/nvidia-container-toolkit
 INHERIT=go-module
 KEYWORDS=~amd64
 LICENSE=Apache-2.0
-RDEPEND=sys-libs/libnvidia-container
-RESTRICT=mirror strip
-SLOT=0
-SRC_URI=https://github.com/NVIDIA/nvidia-container-toolkit/archive/v1.13.2.tar.gz -> nvidia-container-toolkit-1.13.2.tar.gz https://github.com/david-gentoo/gentoo-go-deps/releases/download/nvidia-container-toolkit-1.13.2/nvidia-container-toolkit-1.13.2-deps.tar.xz https://github.com/david-gentoo/gentoo-go-deps/releases/download/nvidia-container-toolkit-1.13.2/nvidia-container-toolkit-1.13.2-vendor.tar.xz
+RDEPEND=sys-libs/libnvidia-container:0/1.14.6
+RESTRICT=test strip
+SLOT=0/1.14.6
+SRC_URI=https://github.com/NVIDIA/nvidia-container-toolkit/archive/v1.14.6.tar.gz -> nvidia-container-toolkit-1.14.6.tar.gz https://github.com/vowstar/gentoo-go-deps/releases/download/nvidia-container-toolkit-1.14.6/nvidia-container-toolkit-1.14.6-deps.tar.xz https://github.com/vowstar/gentoo-go-deps/releases/download/nvidia-container-toolkit-1.14.6/nvidia-container-toolkit-1.14.6-vendor.tar.xz
 _eclasses_=multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	24c947ff5f858625cf0b33c15eed4425	go-env	14f8f70fe58c14d7ab44fff15a05ac47	go-module	83fd3ed1657cfc316c93d6a37018290d
-_md5_=66597181ce620f3ace8a49f65d663b02
+_md5_=03f73ff41f7e71ec5c2c6a87d9db4b99

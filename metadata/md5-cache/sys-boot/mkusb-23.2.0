@@ -1,0 +1,13 @@
+DEFINED_PHASES=install postinst unpack
+DESCRIPTION=CLI and GUI for creating bootable live USB, with optional persistent storage
+EAPI=8
+HOMEPAGE=https://help.ubuntu.com/community/mkusb
+INHERIT=unpacker xdg-utils
+KEYWORDS=~amd64
+LICENSE=GPL-3
+RDEPEND=app-admin/sudo gnome-extra/zenity sys-apps/gptfdisk sys-apps/pv sys-fs/ntfs3g
+RESTRICT=strip
+SLOT=0
+SRC_URI=https://launchpad.net/~mkusb/+archive/ubuntu/ppa/+files/mkusb-common_23.2.0-1ubuntu1_all.deb -> mkusb-23.2.0-common.deb https://launchpad.net/~mkusb/+archive/ubuntu/unstable/+files/dus_23.2.0-1ubuntu1_all.deb -> mkusb-23.2.0.deb https://launchpad.net/~mkusb/+archive/ubuntu/ppa/+files/guidus_23.2.0-1ubuntu1_all.deb -> mkusb-23.2.0-gui.deb https://launchpad.net/~mkusb/+archive/ubuntu/ppa/+files/mkusb_23.2.0-1ubuntu1_all.deb -> mkusb-23.2.0-all.deb https://launchpad.net/~mkusb/+archive/ubuntu/ppa/+files/mkusb-plug_23.2.0-1ubuntu1_all.deb -> mkusb-23.2.0-plug.deb https://launchpad.net/~mkusb/+archive/ubuntu/ppa/+files/mkusb-nox_23.2.0-1ubuntu1_all.deb -> mkusb-23.2.0-nox.deb https://launchpad.net/~mkusb/+archive/ubuntu/ppa/+files/usb-pack-efi_23.2.0-1ubuntu1_all.deb -> mkusb-23.2.0-efi.deb
+_eclasses_=multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	unpacker	7b40f3faa3e2e12f5cf6d36d0fbfcd09	xdg-utils	baea6080dd821f5562d715887954c9d3
+_md5_=1a70325f703a005e71236e27ea4ebd44

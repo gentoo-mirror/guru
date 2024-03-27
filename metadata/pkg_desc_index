@@ -135,7 +135,7 @@ app-benchmarks/phoronix-test-suite 9999: Phoronix's comprehensive, cross-platfor
 app-benchmarks/poop 9999: Performance Optimizer Observation Platform
 app-containers/anbox-modules 0_p20240210: Anbox kernel modules
 app-containers/dnsname-cni-plugin 1.3.0 1.3.1 9999: name resolution for containers
-app-containers/nvidia-container-toolkit 1.12.1 1.13.1 1.13.2 9999: NVIDIA container runtime toolkit
+app-containers/nvidia-container-toolkit 1.14.6 9999: NVIDIA container runtime toolkit
 app-containers/pods 2.1.0_pre20240215-r3: Keep track of your podman containers
 app-containers/waydroid 1.4.0 1.4.2 1.4.2-r1: Container-based approach to boot a full Android system on Linux systems
 app-containers/waydroid-images 9999: Manage images for app-containers/waydroid using portage
@@ -379,7 +379,7 @@ dev-cpp/parallel-hashmap 1.3.8: Family of header-only, fast and memory-friendly 
 dev-cpp/pcg-cpp 0.98.1_p20210406-r1: Family of better random number generators
 dev-cpp/qt-jdenticon 0.3.0-r1 0.3.0_p20240107: Qt5 / C++14 Port of Jdenticon
 dev-cpp/rang 3.2: Minimal, header-only, modern C++ library for terminal goodies
-dev-cpp/scnlib 2.0.1 2.0.2: scanf for modern C++
+dev-cpp/scnlib 2.0.2: scanf for modern C++
 dev-cpp/simdutf 4.0.9 5.0.0: simdutf: Unicode validation and transcoding at billions of characters per second
 dev-cpp/sprout 0_pre20190615: C++11/14 constexpr based Containers, Algorithms, Random numbers and others
 dev-cpp/toml11 3.8.1: TOML for Modern C++
@@ -439,7 +439,7 @@ dev-embedded/etlcpp 20.35.8: A C++ template library for embedded applications
 dev-embedded/freertos-gdb 1.0.2 1.0.3: Python module for operating with freeRTOS-kernel objects in GDB
 dev-embedded/idf-component-manager 1.4.1 1.5.2: Tool for installing ESP-IDF components
 dev-embedded/mv88e6xxx-dump 0.2.0_pre20210327: Dump information about Marvell mv88e6xxx Ethernet switches
-dev-embedded/qdl 1.0 9999: Tool to communicate with Qualcomm System On a Chip bootroms
+dev-embedded/qdl 9999 20230411: Tool to communicate with Qualcomm System On a Chip bootroms
 dev-embedded/rauc 1.11.1: Lightweight update client that runs on your Embedded Linux device
 dev-embedded/squareline-studio 1.3.2: Visual drag-and-drop UI editor for LVGL
 dev-erlang/conf 0.2.6: YAML configuration for Erlang applications
@@ -855,7 +855,7 @@ dev-ruby/asciidoctor-pdf 2.3.13: A native PDF converter for AsciiDoc based on As
 dev-ruby/byebug 11.1.3: a Ruby 2 debugger
 dev-ruby/chruby 0.3.9-r3 9999: Changes the current Ruby
 dev-ruby/prawn-icon 3.1.0: Provides support for icons in Prawn
-dev-ruby/prawn-svg 0.32.0: Provides support for SVG in Prawn
+dev-ruby/prawn-svg 0.34.2: Provides support for SVG in Prawn
 dev-ruby/prawn-templates 0.1.2-r1: Provides support for templates in Prawn
 dev-ruby/pry-byebug 3.9.0 3.10.1: Step-by-step debugging and stack navigation in Pry
 dev-ruby/rbspy 0.17.0-r1: Sampling CPU profiler for Ruby
@@ -924,6 +924,7 @@ dev-vcs/gitqlient 1.6.2 9999: Multi-platform Git client written with Qt
 dev-vcs/gitqlient-gitserver-plugin 0.2.0: GitQlient GitServer plugin
 dev-vcs/gitqlient-jenkins-plugin 0.2.0: GitQlient Jenkins plugin
 dev-vcs/gitui 0.25.2: blazing fast terminal-ui for git
+dev-vcs/jj 0.14.0: A Git-compatible VCS that is both simple and powerful
 dev-vcs/lazygit 0.39.4-r1 0.40.2-r1 0.41.0: Simple terminal UI for git commands
 dev-zig/zls 0.10.0-r1 9999: The officially unofficial Ziglang language server
 games-action/ATLauncher 3.4.3.1 3.4.27.0: Minecraft launcher which integrates multiple different ModPacks
@@ -977,7 +978,9 @@ games-rpg/open-adventure 1.16 1.17 1.18: Forward-port of the Crowther/Woods Adve
 games-rpg/snoot-game 1.8 1.8-r1: Visual novel parody of Goodbye Volcano High
 games-server/among-sus 20210519: Among Us, but it's a text adventure
 games-strategy/armies-of-exigo-demo 1.0: Single and multi player demos of Armies of Exigo (like WarCraft III), Windows
+games-strategy/general 4.6: Turn-based, old style with minimum graphic, full game, 5 MB size
 games-strategy/massive-assault-network-2-demo 2.0.270: Turn-based, sci-fi, like a chess, from 2006, any screen resolution, good rating
+games-strategy/massive-assault-network-ii 2.0.270: Turn-based, sci-fi, like a chess, from 2006, any screen resolution, good rating
 games-util/HeroicGamesLauncher-bin 2.13.0: A Native GOG and Epic Games Launcher for Linux, Windows and Mac.
 games-util/NotEnoughProduction 0.0.4: Tool for building production chains for modded minecraft
 games-util/ProtonUp-Qt 2.9.1 9999: Install and manage GE-Proton, Luxtorpeda & more for Steam Lutris and Heroic.
@@ -1371,8 +1374,8 @@ net-misc/gnome-ssh-askpass 9.2_p1: GTK-based passphrase dialog for use with Open
 net-misc/graftcp 0.7.1: A tool for redirecting a given program's TCP traffic to SOCKS5 or HTTP proxy
 net-misc/gsocket 1.4.41 9999: Connect like there is no firewall. Securely.
 net-misc/lyrics-in-terminal 1.5.0: Command Line Lyrics fetcher for MPRIS media players
-net-misc/maestral 1.8.0 1.9.1: Maestral is an open-source Dropbox client written in Python
-net-misc/maestral-qt 1.8.0 1.9.1: Maestral is an open-source Dropbox client written in Python
+net-misc/maestral 1.8.0 1.9.1 1.9.2: Maestral is an open-source Dropbox client written in Python
+net-misc/maestral-qt 1.8.0 1.9.1 1.9.2: Maestral is an open-source Dropbox client written in Python
 net-misc/mastorss 0.13.0 0.13.1 9999: Another RSS to Mastodon bot
 net-misc/megasync 5.2.0.0 9999: The official Qt-based program for syncing your MEGA account in your PC
 net-misc/myip 1.2.1: Get your external IP address using STUN server
@@ -1410,6 +1413,7 @@ net-p2p/p2pool 3.5 3.6.2 3.7 3.8 3.9 3.10 9999: Decentralized pool for Monero mi
 net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
 net-p2p/yggdrasil-go 0.5.5 9999: An experiment in scalable routing as an encrypted IPv6 overlay network
 net-print/hpuld 1.00.39.15.00.23-r1: HP Unified Linux Driver (for samsung hardware)
+net-proxy/MTProxy 3.0.4: Community fork of MTProxy
 net-proxy/ngrok-bin 3.0.0: ngrok is a reverse proxy, firewall, and API gateway
 net-proxy/snowflake 2.7.0 2.8.1: Pluggable Transport using WebRTC, inspired by Flashproxy
 net-voip/baresip 3.7.0 3.8.0 3.9.0 3.10.0 3.10.1: Baresip is a portable and modular SIP User-Agent
@@ -1528,6 +1532,8 @@ sys-boot/boot-repair-iso-download 9999: Ubuntu based ISO to fix GRUB problems - 
 sys-boot/customrescuecd-x86-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/customrescuecd-x86_64-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/limine 7.0.0 7.0.3 7.0.5: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
+sys-boot/mkusb 23.2.0: CLI and GUI for creating bootable live USB, with optional persistent storage
+sys-boot/ubuntu-desktop-amd64-iso-download 22.04.4: Downloaded from Yandex mirror (Russia), to /opt/distribs/ - no other actions
 sys-boot/ventoy-bin 1.0.97: Creator of bootable USBs, with ability to copy ISOs, persistence storage
 sys-boot/woeusb-ng 0.2.10: Create Windows installer USB from ISO (rewrite of WoeUSB)
 sys-boot/zfsbootmenu 1.12.0 2.2.2 2.3.0: ZFS bootloader for root-on-ZFS systems
@@ -1564,7 +1570,7 @@ sys-libs/cyclonedds 0.10.3 9999: Eclipse Cyclone DDS project
 sys-libs/gcompat 1.1.0: The GNU C Library compatibility layer for musl
 sys-libs/iceoryx 2.0.3 9999: Eclipse Iceoryx zero copy IPC
 sys-libs/libfixposix 0.4.3 0.5.1: Thin wrapper over POSIX syscalls
-sys-libs/libnvidia-container 1.12.1 1.13.1 1.13.2 9999: NVIDIA container runtime library
+sys-libs/libnvidia-container 1.14.6 9999: NVIDIA container runtime library
 sys-libs/nss-tls 1.0 1.1 9999: A DNS over HTTPS resolver for glibc
 sys-libs/solo-udev-rules 4.1.5: udev rules for the Solo FIDO2 & U2F USB+NFC security key
 sys-power/amdfan 0.1.27: Updated AMD Fan control utility forked from amdgpu-fan and updated.
@@ -1605,8 +1611,8 @@ www-apps/redlib 0.31.0-r1 0.31.2-r1: Private front-end to Reddit
 www-apps/rimgo 1.2.1: An alternative frontend for Imgur. Originally based on rimgu.
 www-apps/snac 2.25 2.26: A simple, minimalistic ActivityPub instance
 www-apps/uwebsockets 20.11.0 20.14.0 9999: ultra fast, simple, secure & standards compliant web I/O
-www-apps/vaultwarden-web 2024.1.2b: Bitwarden web vault patched to make it work with Vaultwarden
-www-apps/vaultwarden-web-bin 2024.1.2b: Prebuilt Vaultwarden web from upstream
+www-apps/vaultwarden-web 2024.1.2b 2024.3.0: Bitwarden web vault patched to make it work with Vaultwarden
+www-apps/vaultwarden-web-bin 2024.1.2b 2024.3.0: Prebuilt Vaultwarden web from upstream
 www-apps/whoogle-search 0.8.3-r3 0.8.4-r3: A self-hosted, ad-free, privacy-respecting metasearch engine
 www-apps/wiki-js-bin 2.5.301: Modern, lightweight and powerful wiki app built on Nodejs
 www-apps/zola 0.17.2: A fast static site generator with everything built-in

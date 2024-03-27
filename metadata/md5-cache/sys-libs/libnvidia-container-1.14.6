@@ -1,0 +1,13 @@
+BDEPEND=dev-build/bmake dev-lang/go net-libs/rpcsvc-proto sys-apps/lsb-release virtual/pkgconfig
+DEFINED_PHASES=compile install prepare
+DEPEND=net-libs/libtirpc:= sys-libs/libcap sys-libs/libseccomp virtual/libelf:= x11-drivers/nvidia-drivers
+DESCRIPTION=NVIDIA container runtime library
+EAPI=8
+HOMEPAGE=https://github.com/NVIDIA/libnvidia-container
+IUSE=doc static-libs
+KEYWORDS=~amd64
+LICENSE=Apache-2.0
+RDEPEND=net-libs/libtirpc:= sys-libs/libcap sys-libs/libseccomp virtual/libelf:= x11-drivers/nvidia-drivers
+SLOT=0/1.14.6
+SRC_URI=https://github.com/NVIDIA/libnvidia-container/archive/v1.14.6.tar.gz -> libnvidia-container-1.14.6.tar.gz https://github.com/NVIDIA/nvidia-modprobe/archive/550.54.14.tar.gz -> libnvidia-container-nvidia-modprobe-550.54.14.tar.gz
+_md5_=88b5ce9b0ee3c2df64fb899e7c9b2a6b
