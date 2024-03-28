@@ -1,0 +1,15 @@
+BDEPEND=dev-libs/fcgi media-libs/libjpeg-turbo media-libs/tiff memcached? ( dev-libs/libmemcached-awesome ) png? ( media-libs/libpng ) webp? ( media-libs/libwebp ) jpeg2k? ( media-libs/openjpeg ) apache2? ( www-servers/apache[apache2_modules_proxy,apache2_modules_proxy_fcgi] ) lighttpd? ( www-servers/lighttpd ) virtual/pkgconfig
+DEFINED_PHASES=install
+DEPEND=dev-libs/fcgi media-libs/libjpeg-turbo media-libs/tiff memcached? ( dev-libs/libmemcached-awesome ) png? ( media-libs/libpng ) webp? ( media-libs/libwebp ) jpeg2k? ( media-libs/openjpeg ) apache2? ( www-servers/apache[apache2_modules_proxy,apache2_modules_proxy_fcgi] ) lighttpd? ( www-servers/lighttpd )
+DESCRIPTION=High performance image server for high resolution and scientific images
+EAPI=8
+HOMEPAGE=https://iipimage.sourceforge.io
+INHERIT=systemd
+IUSE=zlib png webp jpeg2k memcached lighttpd apache2
+KEYWORDS=~amd64 ~arm ~arm64 ~x86
+LICENSE=GPL-3+
+RDEPEND=acct-user/iipsrv acct-group/iipsrv dev-libs/fcgi media-libs/libjpeg-turbo media-libs/tiff memcached? ( dev-libs/libmemcached-awesome ) png? ( media-libs/libpng ) webp? ( media-libs/libwebp ) jpeg2k? ( media-libs/openjpeg ) apache2? ( www-servers/apache[apache2_modules_proxy,apache2_modules_proxy_fcgi] ) lighttpd? ( www-servers/lighttpd )
+SLOT=0
+SRC_URI=mirror://sourceforge/iipimage/IIP%20Server/iipsrv-1.2/iipsrv-1.2.tar.bz2
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	systemd	c8b03e8df84486aa991d4396686e8942
+_md5_=96d3f37943b5ab6c3a9f66e770785cc2

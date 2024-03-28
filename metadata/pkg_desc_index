@@ -11,6 +11,7 @@ acct-group/gotosocial 0: System group: gotosocial
 acct-group/heisenbridge 0: Group for Heisenbridge
 acct-group/hinsightd 0: A user group for www-servers/hinsightd
 acct-group/honk 0: System group: honk
+acct-group/iipsrv 0-r1: System group: iipsrv
 acct-group/invidious 0: System group: invidious
 acct-group/laminar 0: System group: laminar
 acct-group/libmedium 0: A group for www-apps/libmedium
@@ -49,6 +50,7 @@ acct-user/gotosocial 0: System user: gotosocial
 acct-user/heisenbridge 0: User for Heisenbridge
 acct-user/hinsightd 0: A user account for www-servers/hinsightd
 acct-user/honk 0: System user: honk
+acct-user/iipsrv 0-r1: User for iipsrv
 acct-user/invidious 0: System user: invidious
 acct-user/laminar 0: System user: laminar
 acct-user/libmedium 0: An user for www-apps/libmedium
@@ -325,7 +327,7 @@ app-text/sioyek 9999: Sioyek is a PDF viewer with a focus on textbooks and resea
 app-text/smu 1.5 9999: Simple markup - markdown like syntax
 app-text/the-platinum-searcher-bin 2.2.0: Fast CLI search tool, faster than grep, ack, silver_searcher (ag)
 app-text/tldr 3.2.0: Python command line client for tldr pages
-app-text/typst 0.9.0 0.10.0: A markup-based typesetting system for the sciences
+app-text/typst 0.9.0 0.10.0 0.11.0: A markup-based typesetting system for the sciences
 app-text/vale 2.28.3: A syntax-aware linter for prose built with speed and extensibility in mind
 app-vim/ale 3.3.0: Check syntax in Vim asynchronously and fix files, with LSP support
 app-vim/ansible-vim 3.3 3.4: vim plugin: sytax highlighting for Ansible's common file types
@@ -981,6 +983,7 @@ games-strategy/armies-of-exigo-demo 1.0: Single and multi player demos of Armies
 games-strategy/general 4.6: Turn-based, old style with minimum graphic, full game, 5 MB size
 games-strategy/massive-assault-network-2-demo 2.0.270: Turn-based, sci-fi, like a chess, from 2006, any screen resolution, good rating
 games-strategy/massive-assault-network-ii 2.0.270: Turn-based, sci-fi, like a chess, from 2006, any screen resolution, good rating
+games-strategy/warhammer4000-dawn-of-war-demo 1: RTS with high rating from 2004, like WarCraft III or Armies of Exigo
 games-util/HeroicGamesLauncher-bin 2.13.0: A Native GOG and Epic Games Launcher for Linux, Windows and Mac.
 games-util/NotEnoughProduction 0.0.4: Tool for building production chains for modded minecraft
 games-util/ProtonUp-Qt 2.9.1 9999: Install and manage GE-Proton, Luxtorpeda & more for Steam Lutris and Heroic.
@@ -1056,14 +1059,14 @@ gui-apps/meteo-qt 3.3: A system tray application for the weather status
 gui-apps/mpvpaper 1.4 9999: A video wallpaper program for wlroots based wayland compositors
 gui-apps/nwg 0: meta package package for nwg-shell
 gui-apps/nwg-bar 0.1.5 0.1.6: GTK3-based button bar for wlroots-based compositors
-gui-apps/nwg-displays 0.3.11 0.3.13 0.3.14: Output management utility for sway and Hyprland
+gui-apps/nwg-displays 0.3.14 0.3.15: Output management utility for sway and Hyprland
 gui-apps/nwg-dock 0.3.6 0.3.9: GTK3-based dock for sway
 gui-apps/nwg-dock-hyprland 0.1.4 0.1.7: GTK3-based dock for Hyprland
 gui-apps/nwg-drawer 0.4.3 0.4.4 0.4.5 0.4.6 0.4.7: Application drawer for wlroots-based Wayland compositors
 gui-apps/nwg-icon-picker 0.1.0-r1 0.1.1 9999: GTK icon chooser with a text search option
 gui-apps/nwg-launchers 0.5.0 0.6.3 0.7.1.1 9999: GTK+ launchers for sway, i3 and some other WMs
 gui-apps/nwg-menu 0.1.2 0.1.3: enuStart plugin to nwg-panel, also capable of working standalone
-gui-apps/nwg-panel 0.9.23 0.9.24 0.9.25 9999: GTK3-based panel for sway and Hyprland Wayland compositors
+gui-apps/nwg-panel 0.9.25 0.9.26 0.9.27 9999: GTK3-based panel for sway and Hyprland Wayland compositors
 gui-apps/nwg-shell 0.5.31 0.5.32 0.5.33: libraries an common functions for the nwg-shell project
 gui-apps/nwg-shell-config 0.5.33 0.5.34: nwg-shell configuration utility
 gui-apps/openrefine 3.7.9: Wikidata batch editor, Wikimedia Commons mass upload tool
@@ -1098,12 +1101,13 @@ gui-apps/wl-mirror 0.12.2: A simple Wayland output mirror client
 gui-apps/wl-scripts 1.2.3-r1 9999: A set of utils for wlroots window managers
 gui-apps/wlgreet 0.4.1: Wayland based greeter for greetd
 gui-apps/wlogout 1.1.1: A wayland based logout menu
+gui-apps/wlopm 0.1.0 9999: wlr-output-power-management-v1 client
 gui-apps/wlr-randr 0.4.1 9999: xrandr clone for wlroots compositors
 gui-apps/wlsunset 0.3.0 9999: Day/night gamma adjustments for Wayland
 gui-apps/wob 0.14.2 0.15.1: Lightweight overlay volume/backlight/progress/anything bar for Wayland
 gui-apps/wscreensaver 9999: Xscreensaver screensavers ported to wayland
 gui-apps/wtype 0.4: xdotool type for wayland
-gui-apps/xremap 0.8.15: Dynamic key remap for X and Wayland
+gui-apps/xremap 0.8.18: Dynamic key remap for X and Wayland
 gui-apps/yambar 1.9.0 1.10.0 9999: Simplistic and highly configurable status panel for X and Wayland
 gui-libs/libcprime 4.5.0 9999: Library for managing settings of CoreApps
 gui-libs/libcsys 4.5.0 9999: Library for managing the device
@@ -1260,7 +1264,7 @@ media-video/owncast 0.0.12 0.0.13: A self-hosted live video and web chat server
 media-video/syncplay 1.6.9 1.7.0 1.7.1: Client/server to synchronize media playback
 media-video/tartube 2.4.077 9999: A GUI front-end for youtube-dl
 media-video/uxplay 1.66 1.67: AirPlay Unix mirroring server
-media-video/walksnail-osd-tool 0.2.0 9999: Tool for rendering OSDs over Walksnail DVR recordings
+media-video/walksnail-osd-tool 0.3.0 9999: Tool for rendering OSDs over Walksnail DVR recordings
 media-video/wl-screenrec 0.1.3: High performance screen/audio recorder for wlroots
 media-video/wlrobs 1.0 1.1 9999: OBS plugin that allows you to screen capture on wlroots based compositors
 media-video/ytarchive 0.4.0: Youtube livestream downloader
@@ -1373,6 +1377,7 @@ net-misc/gmid 2.0.1-r1 9999: Simple and secure Gemini server
 net-misc/gnome-ssh-askpass 9.2_p1: GTK-based passphrase dialog for use with OpenSSH
 net-misc/graftcp 0.7.1: A tool for redirecting a given program's TCP traffic to SOCKS5 or HTTP proxy
 net-misc/gsocket 1.4.41 9999: Connect like there is no firewall. Securely.
+net-misc/iipsrv 1.2: High performance image server for high resolution and scientific images
 net-misc/lyrics-in-terminal 1.5.0: Command Line Lyrics fetcher for MPRIS media players
 net-misc/maestral 1.8.0 1.9.1 1.9.2: Maestral is an open-source Dropbox client written in Python
 net-misc/maestral-qt 1.8.0 1.9.1 1.9.2: Maestral is an open-source Dropbox client written in Python
@@ -1528,12 +1533,10 @@ sys-apps/sdate 0.7: Wrapper program to output dates like the Eternal September 1
 sys-apps/systemd-bootchart 234 235: systemd boot performance graphing tool
 sys-auth/pam-gnupg 0.3: Unlock GnuPG keys on login
 sys-block/partclone 0.3.20: Partition cloning tool
-sys-boot/boot-repair-iso-download 9999: Ubuntu based ISO to fix GRUB problems - just downloads to /opt/distribs/
 sys-boot/customrescuecd-x86-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/customrescuecd-x86_64-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/limine 7.0.0 7.0.3 7.0.5: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
 sys-boot/mkusb 23.2.0: CLI and GUI for creating bootable live USB, with optional persistent storage
-sys-boot/ubuntu-desktop-amd64-iso-download 22.04.4: Downloaded from Yandex mirror (Russia), to /opt/distribs/ - no other actions
 sys-boot/ventoy-bin 1.0.97: Creator of bootable USBs, with ability to copy ISOs, persistence storage
 sys-boot/woeusb-ng 0.2.10: Create Windows installer USB from ISO (rewrite of WoeUSB)
 sys-boot/zfsbootmenu 1.12.0 2.2.2 2.3.0: ZFS bootloader for root-on-ZFS systems
