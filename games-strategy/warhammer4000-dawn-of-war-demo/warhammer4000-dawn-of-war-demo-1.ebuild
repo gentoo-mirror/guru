@@ -3,10 +3,10 @@
 
 EAPI=8
 
-DESCRIPTION="Turn-based, old style with minimum graphic, full game, 5 MB size"
-HOMEPAGE="http://akasoft.genliga.ru/index_e.php"
+DESCRIPTION="RTS with high rating from 2004, like WarCraft III or Armies of Exigo"
+HOMEPAGE="https://en.wikipedia.org/wiki/Warhammer_40%2C000%3A_Dawn_of_War"
 
-SRC_URI="https://archive.org/download/general.tar.xz/$P.tar.xz"
+SRC_URI="https://archive.org/download/$PN.tar/$PN.tar.xz"
 
 KEYWORDS="~amd64"
 S="${WORKDIR}"
@@ -34,17 +34,12 @@ src_install() {
 
 	echo "cd /opt/$PN; $conty wine $PN; cd -" > "$ED/usr/bin/$PN" || die
 	fperms +x "/usr/bin/$PN"
-	# I tried this but on run error: "Problems during decoding OGG files" -
-	# because I need to run from the directory of the game,
-	# but cd does not works with exec
-	# make_wrapper "$PN" "$conty wine /opt/$PN/$PN.exe /d /opt/$PN"
 
 }
 
 pkg_postinst() {
 	einfo "More about the game:"
-	einfo "See screenshots at http://akasoft.genliga.ru/rus/about.php"
-	einfo "https://ru.wikipedia.org/wiki/Генерал_(игра)"
-	einfo "https://www.wikidata.org/wiki/Q4043784"
-	einfo "https://www.wikidata.org/wiki/Q4135303"
+	einfo "https://store.steampowered.com/app/4570/Warhammer_40000_Dawn_of_War__Game_of_the_Year_Edition/"
+	einfo "https://www.wikidata.org/wiki/Q1061708"
+	einfo "https://www.pcgamingwiki.com/wiki/Warhammer_40%2C000%3A_Dawn_of_War"
 }
