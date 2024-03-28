@@ -1,0 +1,15 @@
+DEFINED_PHASES=compile install postinst prerm setup
+DEPEND=dev-lang/php[ctype,curl,fileinfo,fpm,jit,mysql?,pdo,postgres?,sqlite?,unicode,xml,zip,zlib] virtual/httpd-php virtual/httpd-fastcgi app-admin/webapp-config
+DESCRIPTION=A free, self-hostable news aggregator
+EAPI=8
+HOMEPAGE=https://freshrss.org/ https://github.com/FreshRSS/FreshRSS
+INHERIT=webapp
+IUSE=mysql +postgres sqlite vhosts
+KEYWORDS=~amd64
+LICENSE=AGPL-3
+RDEPEND=dev-lang/php[ctype,curl,fileinfo,fpm,jit,mysql?,pdo,postgres?,sqlite?,unicode,xml,zip,zlib] virtual/httpd-php app-admin/webapp-config
+REQUIRED_USE=|| ( mysql postgres sqlite )
+SLOT=1.23.1
+SRC_URI=https://github.com/FreshRSS/FreshRSS/archive/1.23.1.tar.gz -> freshrss-1.23.1.gh.tar.gz
+_eclasses_=webapp	de2d3d345b44597c10d7104a7bcdf7b2
+_md5_=67894f31ab078b057481e6da60ef6229
