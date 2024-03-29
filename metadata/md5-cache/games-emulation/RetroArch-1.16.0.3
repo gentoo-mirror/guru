@@ -11,5 +11,5 @@ RDEPEND=alsa? ( media-libs/alsa-lib:0= ) cg? ( media-gfx/nvidia-cg-toolkit:0= ) 
 REQUIRED_USE=|| ( alsa jack openal oss pulseaudio ) || ( opengl sdl sdl2 vulkan dispmanx ) || ( kms X wayland videocore ) || ( materialui ozone rgui xmb ) alsa? ( threads ) arm? ( gles2? ( egl ) ) !arm? ( egl? ( opengl ) gles2? ( opengl ) ) cg? ( opengl ) dispmanx? ( videocore arm ) gles2? ( !cg ) gles3? ( gles2 ) kms? ( egl ) libass? ( ffmpeg ) libusb? ( hid ) sdl? ( rgui ) sdl2? ( rgui !sdl ) videocore? ( arm ) vulkan? ( amd64 ) wayland? ( egl ) xinerama? ( X ) xv? ( X )
 SLOT=0
 SRC_URI=https://github.com/libretro/RetroArch/archive/refs/tags/v1.16.0.3.tar.gz -> RetroArch-1.16.0.3.tar.gz
-_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	24c947ff5f858625cf0b33c15eed4425
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	288c54efeb5e2aa70775e39032695ad4
 _md5_=444dadbe8b0f561afce6b5b83f4c057b
