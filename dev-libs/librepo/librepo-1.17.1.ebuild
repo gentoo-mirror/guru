@@ -31,6 +31,13 @@ BDEPEND="
 	test? ( dev-libs/check )
 "
 
+src_prepare() {
+	cmake_src_prepare
+
+	# respect temp directory during tests, bug #924463
+	sed -i "s|/tmp/|${T}/|" tests/testsys.h || die
+}
+
 src_configure() {
 	local mycmakeargs=(
 		-DENABLE_PYTHON=OFF
