@@ -21,13 +21,14 @@ KEYWORDS="~amd64 ~x86"
 
 BDEPEND="test? ( app-text/poppler )"
 
+# prawn-2.5.0 is not compatible yet
 ruby_add_rdepend "
 	>=dev-ruby/asciidoctor-2.0
 	>=dev-ruby/concurrent-ruby-1.1
 	>=dev-ruby/matrix-0.4
-	>=dev-ruby/prawn-2.4.0
+	~dev-ruby/prawn-2.4.0
 	>=dev-ruby/prawn-icon-3.0.0
-	>=dev-ruby/prawn-svg-0.32.0
+	>=dev-ruby/prawn-svg-0.34.0
 	>=dev-ruby/prawn-table-0.2.0
 	>=dev-ruby/prawn-templates-0.1.0
 	>=dev-ruby/treetop-1.6.0

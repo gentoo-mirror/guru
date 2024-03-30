@@ -10,7 +10,9 @@ inherit distutils-r1
 
 DESCRIPTION="Python dependency injection framework, inspired by Guice"
 HOMEPAGE="https://github.com/python-injector/injector"
-SRC_URI="https://github.com/python-injector/${PN}/archive/refs/tags/${PV}.tar.gz"
+SRC_URI="
+	https://github.com/python-injector/${PN}/archive/refs/tags/${PV}.tar.gz
+		-> ${P}.gh.tar.gz"
 
 SLOT="0"
 LICENSE="BSD"
@@ -27,14 +29,8 @@ DEPEND="${RDEPEND}
 	doc? ( dev-python/sphinx )
 "
 
-
-python_compile_all() {
-	use doc && emake -C docs
-}
-
-python_test() {
-	esetup.py test
-}
+distutils_enable_sphinx docs
+distutils_enable_tests pytest
 
 python_install_all() {
 	use doc && local HTML_DOCS=( docs/. )
