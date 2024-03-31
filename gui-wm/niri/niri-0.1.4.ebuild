@@ -40,7 +40,7 @@ DEPEND="
 	x11-libs/pango
 	x11-libs/pixman
 	screencast? (
-		media-video/pipewire
+		media-video/pipewire:=
 	)
 "
 RDEPEND="${DEPEND}"
