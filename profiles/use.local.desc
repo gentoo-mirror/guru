@@ -78,6 +78,8 @@ app-text/klogg:lto - Build with link time optimization (LTO).
 app-text/libspelling:enchant - Enable spellchecking using app-text/enchant
 app-text/md4c:md2html - Build the md2html cli tool
 dev-build/FoBiS:graphviz - Add support of generation of a dependencies graph
+dev-build/cargo-make:openssl - Enable TLS support with dev-libs/openssl
+dev-build/cargo-make:rustls - Enable TLS support with rustls
 dev-build/fpm:openmp - OpenMP support to build targets in parallel where possible
 dev-cpp/cpptoml:libcxx - Use libc++ for the C++ standard library
 dev-cpp/dpp:voice - Enable voice-chat support
@@ -143,8 +145,6 @@ dev-python/gevent:monitor - Enhancements to gevent’s self-monitoring capabilit
 dev-python/gevent:recommended - A shortcut for installing suggested extras together. This includes the non-test extras defined here, plus additions that improve gevent’s operation on certain platforms (for example, in the past, it has included backports of newer APIs).
 dev-python/python-socketio:asyncio-client - Add async websocket client
 dev-python/python-socketio:client - Add websocket client
-dev-util/cargo-make:openssl - Enable TLS support with dev-libs/openssl
-dev-util/cargo-make:rustls - Enable TLS support with rustls
 dev-util/distribution-gpg-keys:copr - Install GPG keys used by Copr projects
 dev-util/gammaray:3d - Build support for Qt5 3D modules
 dev-util/gammaray:designer - Widget .ui file export

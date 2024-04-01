@@ -1,0 +1,10 @@
+DEFINED_PHASES=install
+DESCRIPTION=Pandoc filter for cross-references
+EAPI=8
+HOMEPAGE=https://github.com/lierdakil/pandoc-crossref
+KEYWORDS=-* ~amd64
+LICENSE=GPL-2
+RDEPEND=|| ( =app-text/pandoc-bin-3.1.12.1 =app-text/pandoc-3.1.12.1 ) !dev-haskell/pandoc-crossref
+SLOT=0
+SRC_URI=https://github.com/lierdakil/pandoc-crossref/releases/download/v0.3.17.0c/pandoc-crossref-Linux.tar.xz -> pandoc-crossref-bin-0.3.17.0c.tar.xz
+_md5_=4de4110247432716a04a51952ceeeaa1
