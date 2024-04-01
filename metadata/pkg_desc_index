@@ -2,7 +2,6 @@ acct-group/1password 0: System group: 1password
 acct-group/_bgpd 0-r1: System group: _bgpd
 acct-group/_rpki-client 0: System group: _rpki-client
 acct-group/blocky 0-r1: A group for net-dns/blocky
-acct-group/canna 0: System group: canna
 acct-group/conduit 0: Group conduit
 acct-group/fedigroup 0: System group: fedigroup
 acct-group/fort 0-r1: System group: fort
@@ -40,7 +39,6 @@ acct-group/yggdrasil 1: System group: yggdrasil
 acct-user/_bgpd 0-r1: User for OpenBGPD
 acct-user/_rpki-client 0: User for rpki-client
 acct-user/blocky 0-r1: A user for net-dns/blocky
-acct-user/canna 0: User for Canna language server
 acct-user/conduit 0: User for conduit
 acct-user/eturnal 0: System user: eturnal
 acct-user/fedigroup 0: System user: fedigroup
@@ -191,7 +189,6 @@ app-eselect/eselect-bluespec 1.0.2: Manages the /usr/bin/bsc (bluespec) symlink
 app-eselect/eselect-ld 1.0.0: Manage the ld symlink
 app-eselect/eselect-vala 1.0.0: Manage the valac symlink
 app-forensics/mvt 2.4.1: Forensic traces to identify a potential compromise of Android and iOS devices
-app-i18n/canna 3.7_p3-r4: A client-server based Kana-Kanji conversion system
 app-i18n/fcitx-skk 0.1.4: An input method engine for Fcitx
 app-metrics/scaphandre 0.5.0: Electrical power consumption measurement agent
 app-misc/1password-cli 2.24.0: The world’s most-loved password manager CLI
@@ -610,6 +607,7 @@ dev-python/betamax-serializers 0.2.1: A set of third-party serializers for Betam
 dev-python/betterproto 2.0.0_beta4 2.0.0_beta5 9999: Better Protobuf / gRPC Support for Python
 dev-python/bidict 0.22.1: The bidirectional mapping library for Python
 dev-python/billiard 4.0.2: Python multiprocessing fork
+dev-python/biplist 1.0.3: A binary plist parser/generator for Python
 dev-python/blurhash 1.1.4: Pure-Python implementation of the blurhash algorithm
 dev-python/cassowary 0.6: Run Windows Applications on Linux as if they are native (Using a VM and FreeRDP)
 dev-python/celery 5.3.6: Asynchronous task queue/job queue based on distributed message passing
@@ -732,6 +730,7 @@ dev-python/praw 7.6.1 7.7.0: Python Reddit API Wrapper
 dev-python/prawcore 2.3.0: Low-level communication layer for PRAW
 dev-python/proselint 0.13.0: A linter for prose
 dev-python/protego 0.3.0: Pure-Python robots.txt parser with support for modern conventions
+dev-python/proxy_tools 0.1.0_p1: Simple proxy (as in the GoF design pattern)
 dev-python/psycopg2cffi 2.9.0-r1: Implementation of the psycopg2 module using cffi. Compatible with Psycopg 2.5.
 dev-python/pure-protobuf 3.0.1: Python implementation of Protocol Buffers data types with dataclasses support
 dev-python/py-nanoid 9999: Python Nanoid
@@ -832,6 +831,7 @@ dev-python/textual-dev 1.5.1: Modern Text User Interface framework
 dev-python/timeslot 0.1.2: Time slots/intervals with an arbitrary start and stop
 dev-python/trailrunner 1.2.1: Walk paths and run things
 dev-python/tulir-telethon 1.34.0_alpha2 1.34.0_alpha3 1.35.0_alpha1: Pure Python 3 MTProto API Telegram client library, for bots too!
+dev-python/tweepy 4.14.0: An easy-to-use Python library for accessing the Twitter API.
 dev-python/types-protobuf 4.24.0.20240311: Typing stubs for protobuf
 dev-python/types-requests 2.31.0.20240311: Typing stubs for requests
 dev-python/typing_inspect 0.7.1 0.9.0: Runtime inspection utilities for Python typing module
