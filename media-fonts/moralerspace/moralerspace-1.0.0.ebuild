@@ -5,15 +5,15 @@ EAPI=8
 
 inherit font
 
-MY_PN="HackGen"
+MY_PN="${PN^}"
 MY_PV="v${PV}"
 MY_P="${MY_PN}_${MY_PV}"
-MY_P_NF="${MY_PN}_NF_${MY_PV}"
+MY_P_NF="${MY_PN}NF_${MY_PV}"
 
-DESCRIPTION="HackGen is a composite font of Hack and GenJyuu-Gothic."
-HOMEPAGE="https://github.com/yuru7/HackGen"
-SRC_URI="https://github.com/yuru7/HackGen/releases/download/${MY_PV}/${MY_P}.zip
-	nerdfonts? ( https://github.com/yuru7/HackGen/releases/download/${MY_PV}/${MY_P_NF}.zip )
+DESCRIPTION="moralerspace is a composite font of Monaspace and IBM Plex Sans JP."
+HOMEPAGE="https://github.com/yuru7/moralerspace"
+SRC_URI="https://github.com/yuru7/moralerspace/releases/download/${MY_PV}/${MY_P}.zip
+	nerdfonts? ( https://github.com/yuru7/moralerspace/releases/download/${MY_PV}/${MY_P_NF}.zip )
 "
 
 S="${WORKDIR}"
