@@ -1,14 +1,13 @@
 BDEPEND=>=virtual/rust-1.71.1-r1 >=virtual/rust-1.53 >=dev-vcs/git-1.8.2.1[curl]
-DEFINED_PHASES=compile configure install test unpack
-DEPEND=x11-libs/gtk+
+DEFINED_PHASES=compile configure install postinst postrm test unpack
 DESCRIPTION=Tool for rendering OSDs over Walksnail DVR recordings
 EAPI=8
 HOMEPAGE=https://github.com/avsaase/walksnail-osd-tool
-INHERIT=cargo desktop git-r3
+INHERIT=cargo desktop git-r3 xdg-utils
 IUSE=debug
 LICENSE=0BSD Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD BSD-2 Boost-1.0 GPL-3 ISC UbuntuFontLicense-1.0 MIT MPL-2.0 OFL-1.1 Unicode-DFS-2016 Unlicense XC ZLIB
 PROPERTIES=live
-RDEPEND=x11-libs/gtk+ media-video/ffmpeg
+RDEPEND=media-video/ffmpeg
 SLOT=0
-_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	288c54efeb5e2aa70775e39032695ad4	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	cargo	4dede41d64d595673f6da62ab5540fa0	desktop	021728fdc1b03b36357dbc89489e0f0d	git-r3	fbb2889c81f3a05910c1524db69425c1
-_md5_=55a5b07138cc9d6931fdd8e82e8233f7
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	288c54efeb5e2aa70775e39032695ad4	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	cargo	4dede41d64d595673f6da62ab5540fa0	desktop	021728fdc1b03b36357dbc89489e0f0d	git-r3	fbb2889c81f3a05910c1524db69425c1	xdg-utils	baea6080dd821f5562d715887954c9d3
+_md5_=a8a957dae94541cdf76f9ae3f7c90234
