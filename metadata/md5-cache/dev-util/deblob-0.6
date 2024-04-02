@@ -1,10 +1,14 @@
-DEFINED_PHASES=install
+BDEPEND=verify-sig? ( sec-keys/signify-keys-lanodan:2023 ) verify-sig? ( app-crypt/signify )
+DEFINED_PHASES=install unpack
 DEPEND=>=dev-lang/hare-0_pre20230615:= <dev-lang/hare-0_pre20231127
 DESCRIPTION=remove binary executables from a directory
 EAPI=8
 HOMEPAGE=https://git.sr.ht/~lanodan/deblob
+INHERIT=verify-sig
+IUSE=verify-sig
 KEYWORDS=~amd64 ~arm64 ~riscv
 LICENSE=BSD
 SLOT=0
-SRC_URI=https://hacktivis.me/releases/deblob-0.6.tar.gz
-_md5_=b29282795f927d8a36f68b876f992af2
+SRC_URI=https://hacktivis.me/releases/deblob-0.6.tar.gz verify-sig? ( https://hacktivis.me/releases/deblob-0.6.tar.gz.sign )
+_eclasses_=verify-sig	a79ba011daaf532d71a219182474d150
+_md5_=3cb26e645894343a2ce58cd94e2c6359
