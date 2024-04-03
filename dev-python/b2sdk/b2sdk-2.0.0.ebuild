@@ -3,37 +3,37 @@
 
 EAPI=7
 
-DISTUTILS_USE_PEP517="setuptools"
-PYTHON_COMPAT=( python3_10 python3_11)
+DISTUTILS_USE_PEP517="pdm-backend"
+PYTHON_COMPAT=( python3_10 python3_11 python3_12 )
 inherit distutils-r1
 
 DESCRIPTION="The client library for BackBlaze's B2 product"
 HOMEPAGE="https://github.com/Backblaze/b2-sdk-python"
-SRC_URI="https://github.com/Backblaze/b2-sdk-python/releases/download/v${PV}/${P}.tar.gz"
+SRC_URI="https://github.com/Backblaze/b2-sdk-python/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
-PATCHES=(
-	"${FILESDIR}/${PN}-1.17.2-disable-requirement-installation.patch"
-)
+export PDM_BUILD_SCM_VERSION=${PV}
 
 RDEPEND="
 	$(python_gen_cond_dep '
-		>=dev-python/arrow-1.0.2[${PYTHON_USEDEP}]
 		>=dev-python/logfury-1.0.1[${PYTHON_USEDEP}]
 		>=dev-python/requests-2.9.1[${PYTHON_USEDEP}]
-		>=dev-python/tqdm-4.5.0[${PYTHON_USEDEP}]
+		>=dev-python/typing-extensions-4.7.1[${PYTHON_USEDEP}]
 	')
 "
 
 distutils_enable_tests pytest
 
+# tqdm dependency is temporary, see
+# https://github.com/Backblaze/b2-sdk-python/issues/489
 BDEPEND+=" test? (
 	$(python_gen_cond_dep '
 		>=dev-python/pytest-mock-3.6.1[${PYTHON_USEDEP}]
 		>=dev-python/pytest-lazy-fixture-0.6.3[${PYTHON_USEDEP}]
+		>=dev-python/tqdm-4.66.2[${PYTHON_USEDEP}]
 	')
 )"
 
@@ -42,6 +42,8 @@ BDEPEND+=" test? (
 python_test() {
 	# note: used to avoid an ExcessiveLineLength lint below.
 	local sqlite_test_path="test/unit/account_info/test_sqlite_account_info.py"
+
+	# https://github.com/Backblaze/b2-sdk-python/issues/488
 	epytest \
 		--deselect test/integration/test_large_files.py::TestLargeFile::test_large_file \
 		--deselect test/integration/test_raw_api.py::test_raw_api \
@@ -58,5 +60,7 @@ python_test() {
 		--deselect ${sqlite_test_path}::TestSqliteAccountProfileFileLocation::test_env_var \
 		--deselect ${sqlite_test_path}::TestSqliteAccountProfileFileLocation::test_default_file_if_exists \
 		--deselect ${sqlite_test_path}::TestSqliteAccountProfileFileLocation::test_xdg_config_env_var \
-		--deselect ${sqlite_test_path}::TestSqliteAccountProfileFileLocation::test_default_file
+		--deselect ${sqlite_test_path}::TestSqliteAccountProfileFileLocation::test_default_file \
+		--deselect test/unit/b2http/test_b2http.py::TestSetLocaleContextManager::test_set_locale_context_manager \
+		test/unit
 }

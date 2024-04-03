@@ -1,31 +1,32 @@
-# Copyright 2021 Gentoo Authors
+# Copyright 2021-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
-inherit cmake desktop xdg-utils
+inherit cmake desktop linux-info xdg-utils
 
 MY_PN="Dwarf-Therapist"
 MY_PV="v${PV}"
 MY_P="${MY_PN}-${PV}"
 
-DESCRIPTION="For managing dwarves in  Dwarf Fortress"
+DESCRIPTION="For managing dwarves in Dwarf Fortress"
 HOMEPAGE="https://github.com/Dwarf-Therapist/Dwarf-Therapist"
 SRC_URI="https://github.com/Dwarf-Therapist/${MY_PN}/archive/refs/tags/${MY_PV}.tar.gz -> ${MY_P}.tar.gz"
+
+S="${WORKDIR}/${MY_P}"
 
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
-S="${WORKDIR}/${MY_P}"
-
-# DEPEND=""
 RDEPEND="
 	dev-qt/qtconcurrent:5
 	dev-qt/qtdeclarative:5
 	dev-qt/qtwidgets:5
 "
-# BDEPEND=""
+
+CONFIG_CHECK="~CROSS_MEMORY_ATTACH"
+WARNING_CROSS_MEMORY_ATTACH="required to interact with Dwarf Fortress"
 
 src_install() {
 	# Install some sort of documentation
