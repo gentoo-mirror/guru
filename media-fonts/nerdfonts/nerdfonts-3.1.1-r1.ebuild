@@ -14,6 +14,14 @@ intelonemono iosevka iosevkaterm iosevkatermslab jetbrainsmono lekton liberation
 martianmono meslo monaspace monofur monoid mononoki mplus nerdfontssymbolsonly noto opendyslexic
 overpass profont proggyclean robotomono sharetechmono sourcecodepro spacemono terminus tinos ubuntu
 ubuntumono victormono"
+REQUIRED_USE="|| ( 0xproto 3270 agave anonymouspro arimo aurulentsansmono bigblueterminal bitstreamverasansmono
+cascadiacode cascadiamono codenewroman comicshannsmono commitmono cousine d2coding daddytimemono
+dejavusansmono droidsansmono envycoder fantasquesansmono firacode firamono geistmono gomono gohu
+hack hasklig heavydata hermit iawriter ibmplexmono inconsolata inconsolatago inconsolatalgc
+intelonemono iosevka iosevkaterm iosevkatermslab jetbrainsmono lekton liberationmono lilex
+martianmono meslo monaspace monofur monoid mononoki mplus nerdfontssymbolsonly noto opendyslexic
+overpass profont proggyclean robotomono sharetechmono sourcecodepro spacemono terminus tinos ubuntu
+ubuntumono victormono )"
 HOMEPAGE="https://github.com/ryanoasis/nerd-fonts"
 SRC_URI="
 	0xproto? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/0xProto.tar.xz -> 0xProto-${PV}.tar.xz )
@@ -95,4 +103,50 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 S="${WORKDIR}"
-FONT_SUFFIX="ttf"
+
+FONT_SUFFIX="ttf otf"
+
+
+# From font.eclass
+src_install() {
+	local dir suffix commondoc
+
+	if [[ -n ${FONT_OPENTYPE_COMPAT} ]] && in_iuse opentype-compat && use opentype-compat ; then
+		font_wrap_opentype_compat
+	fi
+
+	if [[ $(declare -p FONT_S 2>/dev/null) == "declare -a"* ]]; then
+		# recreate the directory structure if FONT_S is an array
+		for dir in "${FONT_S[@]}"; do
+			pushd "${dir}" > /dev/null || die "pushd ${dir} failed"
+			insinto "${FONTDIR}/${dir#"${S}"}"
+			for suffix in ${FONT_SUFFIX}; do
+				if compgen -G "*.${suffix}" > /dev/null; then
+					doins *.${suffix}
+				fi
+			done
+			font_xfont_config "${dir}"
+			popd > /dev/null || die
+		done
+	else
+		pushd "${FONT_S:-${S}}" > /dev/null \
+			|| die "pushd ${FONT_S:-${S}} failed"
+		insinto "${FONTDIR}"
+		for suffix in ${FONT_SUFFIX}; do
+			if compgen -G "*.${suffix}" > /dev/null; then
+				doins *.${suffix}
+			fi
+		done
+		font_xfont_config
+		popd > /dev/null || die
+	fi
+
+	font_fontconfig
+
+	einstalldocs
+
+	# install common docs
+	for commondoc in COPYRIGHT FONTLOG.txt; do
+		[[ -s ${commondoc} ]] && dodoc ${commondoc}
+	done
+}

@@ -16,7 +16,7 @@ DESCRIPTION="Prebuilt Java JDK binaries provided by Amazon Web Services"
 HOMEPAGE="https://aws.amazon.com/corretto"
 LICENSE="GPL-2-with-classpath-exception"
 KEYWORDS="~amd64"
-IUSE="alsa cups headless-awt selinux source"
+IUSE="cups headless-awt selinux source"
 
 RDEPEND="
 	>=sys-apps/baselayout-java-0.1.0-r1
@@ -27,7 +27,6 @@ RDEPEND="
 		elibc_glibc? ( >=sys-libs/glibc-2.2.5:* )
 		elibc_musl? ( sys-libs/musl )
 		sys-libs/zlib
-		alsa? ( media-libs/alsa-lib )
 		cups? ( net-print/cups )
 		selinux? ( sec-policy/selinux-java )
 		!headless-awt? (
@@ -54,17 +53,8 @@ src_install() {
 	local dest="/opt/${P}"
 	local ddest="${ED}/${dest#/}"
 
-	# prefer system copy # https://bugs.gentoo.org/776676
-	rm -vf lib/libharfbuzz.so || die
-
-	# Oracle and IcedTea have libjsoundalsa.so depending on
-	# libasound.so.2 but AdoptOpenJDK only has libjsound.so. Weird.
-	if ! use alsa ; then
-		rm -v lib/libjsound.* || die
-	fi
-
 	if use headless-awt ; then
-		rm -v lib/lib*{[jx]awt,splashscreen}* || die
+		rm -v lib/amd64/libjawt.so || die
 	fi
 
 	if ! use source ; then
