@@ -16,14 +16,14 @@ IUSE="test"
 
 BDEPEND="
 	dev-cpp/fast_float
-	>=dev-cpp/simdutf-4.0.0:=
+	>=dev-cpp/simdutf-5.2.0:=
 	test? ( dev-cpp/gtest )
 "
 
 RESTRICT="!test? ( test )"
 
 PATCHES=(
-	"${FILESDIR}/${P}-accept-newer-simdutf.patch"
+	"${FILESDIR}/${P}-accept-simdutf-5.2.x.patch"
 )
 
 src_prepare() {
