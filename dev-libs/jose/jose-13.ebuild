@@ -12,8 +12,18 @@ SRC_URI="https://github.com/latchset/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64"
+IUSE="doc"
 
-DEPEND="dev-libs/jansson"
+DEPEND="
+	>=dev-libs/jansson-2.10
+	sys-libs/zlib
+"
 RDEPEND="${DEPEND}
-	dev-libs/openssl:=
+	app-misc/jq
+	>=dev-libs/openssl-1.0.2:=
+"
+BDEPEND="
+	virtual/pkgconfig
+
+	doc? ( app-text/asciidoc )
 "
