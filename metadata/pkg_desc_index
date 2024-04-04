@@ -108,7 +108,7 @@ app-admin/oet 0.1.9 0.1.10 9999: Update your system into binpkgs in an overlay s
 app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applications and tmux
 app-admin/pass-audit 1.2 1.2-r1: A pass extension for auditing your password repository.
 app-admin/pass-update 2.2.1: pass extension that provides an easy flow for updating passwords
-app-admin/pulumi-bin 3.109.0 3.110.0 3.111.1: Infrastructure as code in any programming language
+app-admin/pulumi-bin 3.109.0 3.110.0 3.111.1 3.112.0: Infrastructure as code in any programming language
 app-admin/rbw 9999: unofficial bitwarden cli
 app-admin/s-tui 1.1.4: Stress-Terminal UI monitoring tool
 app-admin/synadm 0.43.1 0.44: Command line admin tool for Synapse
@@ -142,7 +142,7 @@ app-containers/waydroid-images 9999: Manage images for app-containers/waydroid u
 app-crypt/PBinCLI 0.3.5: PBinCLI is a command line client for PrivateBin written in Python 3
 app-crypt/autofirma 1.7.1: Spanish government's electronic signature application for online procedures
 app-crypt/certbot-dns-desec 1.2.1: deSEC DNS Authenticator plugin for Certbot
-app-crypt/certbot-dns-rfc2136 2.8.0 2.9.0 9999: RFC 2136 DNS Authenticator plugin for Certbot (Let’s Encrypt client)
+app-crypt/certbot-dns-rfc2136 2.8.0 2.9.0 2.10.0 9999: RFC 2136 DNS Authenticator plugin for Certbot (Let’s Encrypt client)
 app-crypt/clevis 19-r1 20: Automated Encryption Framework
 app-crypt/configuradorfnmt 1.0.1: Spanish government certificate request generator
 app-crypt/gnome-encfs-manager 1.9-r1 1.9-r2: An easy to use manager and mounter for encfs stashes
@@ -380,8 +380,8 @@ dev-cpp/parallel-hashmap 1.3.8: Family of header-only, fast and memory-friendly 
 dev-cpp/pcg-cpp 0.98.1_p20210406-r1: Family of better random number generators
 dev-cpp/qt-jdenticon 0.3.0-r1 0.3.0_p20240107: Qt5 / C++14 Port of Jdenticon
 dev-cpp/rang 3.2: Minimal, header-only, modern C++ library for terminal goodies
-dev-cpp/scnlib 2.0.2: scanf for modern C++
-dev-cpp/simdutf 4.0.9 5.0.0: simdutf: Unicode validation and transcoding at billions of characters per second
+dev-cpp/scnlib 2.0.2-r1: scanf for modern C++
+dev-cpp/simdutf 5.2.2: simdutf: Unicode validation and transcoding at billions of characters per second
 dev-cpp/sprout 0_pre20190615: C++11/14 constexpr based Containers, Algorithms, Random numbers and others
 dev-cpp/toml11 3.8.1: TOML for Modern C++
 dev-cpp/trantor 1.5.14_p1 1.5.15: Non-blocking I/O tcp network lib based on c++14/17
@@ -1242,6 +1242,7 @@ media-sound/pianobooster 1.0.0: A MIDI player/game that displays notes and teach
 media-sound/pipewire-module-xrdp 0.1_pre20230609 0.1_pre20230609-r1: PipeWire module which enables xrdp to use audio redirection
 media-sound/pulseaudio-virtualmic 0.1 9999: Use any offline or online media file or stream as a PulseAudio source
 media-sound/qloud 1.4.2: Tool to measure loudspeaker frequency and step responses and distortions
+media-sound/rsgain 3.5: Really Simple replay Gain calculator for tagging audio files
 media-sound/spot 0.4.0: GTK4 Spotify (Premium) client
 media-sound/spotify-adblock 1.0.1 1.0.2 1.0.3: Adblocker for Spotify
 media-sound/spotify-player 0.17.1 0.17.2 9999: spotify_player is a fast, easy to use, and configurable terminal music player.
@@ -1341,6 +1342,7 @@ net-im/sliding-sync 0.99.15: Proxy implementation of MSC3575's sync protocol.
 net-im/teams-for-linux 1.4.12 1.4.13: Unofficial Microsoft Teams client for Linux. Binary precompiled version.
 net-im/whatsapp-for-linux 1.5.3 1.6.2: An unofficial WhatsApp desktop application for Linux
 net-irc/catgirl 2.0a 2.1 2.2: TLS-only terminal IRC client
+net-irc/halloy 2024.5: IRC application written in Rust
 net-irc/litterbox 1.9: TLS-only IRC logger
 net-irc/pounce 3.0 3.1: Multi-client, TLS-only IRC bouncer
 net-irc/srain 1.6.0: Modern, beautiful IRC client written in GTK+ 3
@@ -1411,7 +1413,7 @@ net-news/gfeeds 2.2.0-r1: An RSS/Atom feed reader for GNOME.
 net-news/newsflash 3.1.6: Feed Reader written in GTK
 net-news/newsraft 0.23 9999: A lightweight feed reader with ncurses user interface inspired by Newsboat.
 net-nntp/inn 2.7.1: InterNetNews - the Internet meets Netnews
-net-nntp/pan 0.154-r1 0.155: A newsreader for GNOME
+net-nntp/pan 0.155 0.157: A newsreader for GNOME
 net-p2p/bisq-bin 1.9.14: The decentralized bitcoin exchange (non-atomic, with arbitration)
 net-p2p/dogecoin-qt 1.14.6 1.14.7: Dogecoin Core Qt for desktop. Downloaded blockchain is under 2.2GB. Much secure.
 net-p2p/feather 2.6.2 9999: A free, open-source Monero wallet
