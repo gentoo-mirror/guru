@@ -489,7 +489,7 @@ declare -A GIT_CRATES=(
 	[winit]='https://github.com/iced-rs/winit;b91e39ece2c0d378c3b80da7f3ab50e17bb798a5;winit-%commit%'
 )
 
-inherit cargo desktop
+inherit cargo desktop xdg
 
 DESCRIPTION="IRC application written in Rust"
 HOMEPAGE="https://halloy.squidowl.org"
