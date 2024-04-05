@@ -1,0 +1,16 @@
+BDEPEND=test? ( dev-cpp/gtest ) app-alternatives/ninja >=dev-build/cmake-3.20.5 virtual/pkgconfig
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=acct-user/lms dev-cpp/wt dev-libs/boost dev-libs/libconfig[cxx] media-libs/taglib media-video/ffmpeg[mp3,opus] !stb? ( media-gfx/graphicsmagick ) stb? ( dev-libs/stb )
+DESCRIPTION=Lightweight Music Server.
+EAPI=8
+HOMEPAGE=http://lms-demo.poupon.dev/ https://github.com/epoupon/lms
+INHERIT=cmake flag-o-matic pam systemd
+IUSE=test stb
+KEYWORDS=~amd64
+LICENSE=GPL-3
+RDEPEND=acct-user/lms dev-cpp/wt dev-libs/boost dev-libs/libconfig[cxx] media-libs/taglib media-video/ffmpeg[mp3,opus] !stb? ( media-gfx/graphicsmagick )
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/epoupon/lms/archive/refs/tags/v3.51.1.tar.gz -> lms-3.51.1.tar.gz
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	288c54efeb5e2aa70775e39032695ad4	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	c7c9a62d6232cac66d4ea32d575c3e7c	pam	b56d0c9c20fc5b553f13c8ae165a10a5	systemd	c8b03e8df84486aa991d4396686e8942
+_md5_=994a906f525a3165a79334c85069c820
