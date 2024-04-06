@@ -13,7 +13,7 @@ DESCRIPTION="A C ABI library which exposes Signal protocol logic"
 HOMEPAGE="https://github.com/signalapp/libsignal"
 SRC_URI="
 	https://github.com/signalapp/libsignal/archive/v${PV}.tar.gz -> ${P}.gh.tar.gz
-	https://jroy.ca/dist/${PN}-vendor-${PV}.tar.xz
+	https://jroy.ca/dist/${P}-vendor.tar.xz
 "
 S="${WORKDIR}/libsignal-${PV}/rust/bridge/ffi"
 
@@ -39,5 +39,11 @@ src_unpack() {
 }
 
 src_install() {
-	dolib.a "${WORKDIR}/${P/-ffi/}/target/release/${PN/-/_}.a"
+	if [ "$(use debug)" ]; then
+		TARGET=debug
+	else
+		TARGET=release
+	fi
+
+	dolib.a "${WORKDIR}/${P/-ffi/}/target/${TARGET}/${PN/-/_}.a"
 }
