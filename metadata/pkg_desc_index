@@ -140,6 +140,7 @@ app-containers/waydroid 1.4.0 1.4.2 1.4.2-r1: Container-based approach to boot a
 app-containers/waydroid-images 9999: Manage images for app-containers/waydroid using portage
 app-crypt/PBinCLI 0.3.5: PBinCLI is a command line client for PrivateBin written in Python 3
 app-crypt/autofirma 1.7.1: Spanish government's electronic signature application for online procedures
+app-crypt/certbot-dns-cloudflare 2.9.0 2.10.0: Cloudflare DNS Authenticator plugin for Certbot (Let's Encrypt Client)
 app-crypt/certbot-dns-desec 1.2.1: deSEC DNS Authenticator plugin for Certbot
 app-crypt/certbot-dns-rfc2136 2.8.0 2.9.0 2.10.0 9999: RFC 2136 DNS Authenticator plugin for Certbot (Let’s Encrypt client)
 app-crypt/clevis 19-r1 20: Automated Encryption Framework
@@ -165,7 +166,7 @@ app-doc/stdman 2022.07.30 9999: Formatted C++ stdlib man pages (cppreference)
 app-doc/sway-wiki 9999: Wiki of gui-wm/sway, rendered to HTML using kramdown-parser-gfm
 app-editors/amp 0.7.0: A complete text editor for your terminal.
 app-editors/imhex 1.33.1-r2: A hex editor for reverse engineers, programmers, and eyesight
-app-editors/kakoune-lsp 16.0.0: Kakoune Language Server Protocol Client
+app-editors/kakoune-lsp 17.0.1: Kakoune Language Server Protocol Client
 app-editors/kitscenarist 0.7.2_rc9: Simple and powerful application for creating screenplays.
 app-editors/lapce 0.3.1 9999: Lightning-fast and Powerful Code Editor written in Rust
 app-editors/mined 2015.25: A powerful text editor with extensive Unicode and CJK support
@@ -292,7 +293,7 @@ app-portage/version 0.19.0_alpha 0.20.1_alpha 0.21.0_alpha: A command line funct
 app-shells/carapace 0.28.5 0.30.2 1.0.0: Multi-shell multi-command argument completer
 app-shells/direnv 2.32.3 9999: Environment variable manager for shell
 app-shells/elvish 0.19.2 0.20.1: Expressive programming language and a versatile interactive shell
-app-shells/fzf-fish 10.2: Augment your fish command line with fzf key bindings
+app-shells/fzf-fish 10.3: Augment your fish command line with fzf key bindings
 app-shells/fzf-tab 0_pre20230611: Replace zsh's default completion selection menu with fzf
 app-shells/mrsh 9999: minimal strictly POSIX compliant shell
 app-shells/ohmyzsh 9999: A framework for managing your zsh configuration.
@@ -319,7 +320,7 @@ app-text/lizard 1.17.10-r1: A simple code complexity analyser, supports most of 
 app-text/lorien-bin 0.6.0: Infinite canvas drawing/whiteboarding. Made with Godot.
 app-text/lsp 0.5.0_rc4: The least significant pager
 app-text/owo 0.1.0: OwO-ifies text via regex
-app-text/pandoc-crossref-bin 0.3.17.0c-r1 0.3.17.0f: Pandoc filter for cross-references
+app-text/pandoc-crossref-bin 0.3.17.0c-r1 0.3.17.0e 0.3.17.0f: Pandoc filter for cross-references
 app-text/sioyek 9999: Sioyek is a PDF viewer with a focus on textbooks and research papers
 app-text/smu 1.5 9999: Simple markup - markdown like syntax
 app-text/the-platinum-searcher-bin 2.2.0: Fast CLI search tool, faster than grep, ack, silver_searcher (ag)
@@ -355,7 +356,7 @@ app-voices/rhvoice-bdl 4.1: RHVoice voice: bdl (en)
 app-voices/rhvoice-clb 4.0: RHVoice voice: clb (en)
 app-voices/rhvoice-slt 4.1: RHVoice voice: slt (en)
 dev-build/FoBiS 3.0.5-r1: FoBiS.py, a Fortran Building System for poor men
-dev-build/cargo-make 0.37.10: Rust task runner and build tool
+dev-build/cargo-make 0.37.11: Rust task runner and build tool
 dev-build/fpm 0.9.0 0.10.0: Fortran Package Manager (fpm)
 dev-build/fypp 3.1 3.2: Fypp - Python powered Fortran preprocessor
 dev-build/just 1.25.0 1.25.2: Just a command runner (with syntax inspired by 'make')
@@ -460,7 +461,7 @@ dev-hare/hare-linux 9999: Extra Linux support for Hare programs
 dev-hare/hare-png 9999: PNG implementation for Hare
 dev-hare/hare-ssh 0.24.0 9999: SSH library for Hare
 dev-hare/hare-xml 9999: XML support for Hare
-dev-java/corretto-bin 8.402.08.1-r1 11.0.22.7.1 17.0.10.8.1 21.0.2.14.1 22.0.0.37.1: Prebuilt Java JDK binaries provided by Amazon Web Services
+dev-java/corretto-bin 8.402.08.1-r2 11.0.22.7.1 17.0.10.8.1 21.0.2.14.1 22.0.0.37.1: Prebuilt Java JDK binaries provided by Amazon Web Services
 dev-java/microsoft-openjdk-bin 11.0.22 17.0.10 21.0.2: Prebuilt Java JDK binaries provided by Microsoft
 dev-lang/cc65 2.19-r3 9999-r1: Cross-development package for 65(C)02 systems
 dev-lang/crystal-bin 1.8.2 1.9.2: The Crystal Programming Language
@@ -621,6 +622,7 @@ dev-python/click-aliases 1.0.4: Add (mutiple) aliases to a click group or comman
 dev-python/click-command-tree 1.1.1: click plugin to show the command tree of your CLI
 dev-python/click-option-group 0.5.5 0.5.6: Option groups missing in Click
 dev-python/click-repl 0.2.0-r1: Subcommand REPL for click apps
+dev-python/cloudflare 2.19.2: Python wrapper for the Cloudflare v4 API
 dev-python/cloup 2.1.2 3.0.3: Click + option groups + constraints + aliases + help themes + ...
 dev-python/clufter 0.77.2: Tool/library for transforming/analyzing cluster configuration formats
 dev-python/codecov 2.1.12: Hosted coverage reports for GitHub, Bitbucket and Gitlab
@@ -691,6 +693,7 @@ dev-python/j1m-sphinxautozconfig 0.1.0: Spinx support for ZConfig
 dev-python/jinja2-cli 0.8.2: CLI for Jinja2
 dev-python/jplephem 2.21: Python version of NASA DE4xx ephemerides for Astronomical Alamanac
 dev-python/jsonfeed 1.1.2: Python package for parsing and generating JSON feeds.
+dev-python/jsonlines 4.0.0: Library with helpers for the jsonlines file format
 dev-python/jsonpath-rw 1.4.0-r1: A robust and significantly extended implementation of JSONPath for Python
 dev-python/jsonpath-rw-ext 1.2.2-r1: Extensions for JSONPath RW
 dev-python/jupyter-sphinx 0.4.0: Jupyter Sphinx Extensions
@@ -1011,8 +1014,8 @@ games-util/steamtinkerlaunch 12.0: Wrapper script for Steam custom launch option
 games-util/xivlauncher 1.0.8: Custom Launcher for Final Fantasy XIV Online (Crossplatform rewrite)
 gnome-extra/commit 4.1-r1: Commit message editor
 gnome-extra/extension-manager 0.4.3 0.5.0 9999: A native tool for browsing, installing, and managing GNOME Shell Extensions
-gnome-extra/iio-sensor-proxy 3.3: IIO sensors to D-Bus proxy
-gnome-extra/junction 1.6-r1: Application/browser chooser
+gnome-extra/iio-sensor-proxy 3.3 3.5: IIO sensors to D-Bus proxy
+gnome-extra/junction 1.6-r1 1.7-r1: Application/browser chooser
 gnome-extra/portfolio 0.9.14: A minimalist file manager for those who want to use Linux mobile devices
 gnome-extra/vvmplayer 1.4: Visual Voicemail Player
 gnome-extra/wike 3.0.0 3.0.1: Wikipedia Reader for the GNOME Desktop
@@ -1703,6 +1706,7 @@ x11-themes/sound-theme-librem5 0.1.0: Sound theme for the Librem 5/PinePhone
 x11-themes/vimix-xcursors 20200224-r3: Theme inspired by Materia design and based on capitaine-cursors
 x11-wm/berry 0.1.11 0.1.12: A byte-sized window manager written in C
 x11-wm/dk 1.7 9999: A list based tiling window manager in the vein of dwm, bspwm, and xmonad.
+x11-wm/firefox-i3-workspaces 0.10: Restore Firefox windowS to correct i3 workspaceS, helper web extension is needed
 x11-wm/i3-rounded 4.21.1: i3-gaps fork with rounded corners support.
 x11-wm/leftwm 0.5.1: A window manager for Adventurers
 x11-wm/qtile-extras 0.23.0: elParaguayo's Qtile Extras
