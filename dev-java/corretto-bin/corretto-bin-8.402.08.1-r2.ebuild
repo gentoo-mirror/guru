@@ -1,4 +1,4 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -24,6 +24,8 @@ RDEPEND="
 		media-libs/fontconfig:1.0
 		media-libs/freetype:2
 		media-libs/harfbuzz
+		media-libs/alsa-lib
+		media-libs/libglvnd
 		elibc_glibc? ( >=sys-libs/glibc-2.2.5:* )
 		elibc_musl? ( sys-libs/musl )
 		sys-libs/zlib
@@ -35,6 +37,7 @@ RDEPEND="
 			x11-libs/libXi
 			x11-libs/libXrender
 			x11-libs/libXtst
+			x11-libs/pango
 		)
 	)"
 
@@ -55,6 +58,8 @@ src_install() {
 
 	if use headless-awt ; then
 		rm -v lib/amd64/libjawt.so || die
+		rm -v lib/amd64/libglassgtk.so || die
+		rm -v lib/amd64/libjavafx_font_pango.so || die
 	fi
 
 	if ! use source ; then

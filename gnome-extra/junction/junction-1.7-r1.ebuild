@@ -1,11 +1,11 @@
-# Copyright 2022 Gentoo Authors
+# Copyright 2022-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 inherit gnome2-utils meson
 
-TROLL_COMMIT="8d7c2be66a4bf1cbb2081121997a33662fc19cd0"
+TROLL_COMMIT="94ced56f1b08e6955f6c8325a04c74736d39b823"
 DESCRIPTION="Application/browser chooser"
 HOMEPAGE="
 	https://apps.gnome.org/app/re.sonny.Junction/
@@ -27,7 +27,7 @@ DEPEND="
 "
 RDEPEND="${DEPEND}
 	dev-libs/gobject-introspection
-	dev-libs/libportal[introspection]
+	dev-libs/libportal[introspection,gtk]
 	gui-libs/gtk:4[introspection]
 	gui-libs/libadwaita:1[introspection]
 	net-libs/libsoup:3.0[introspection]
@@ -37,19 +37,16 @@ BDEPEND="
 	sys-devel/gettext
 "
 
-src_unpack() {
+src_prepare() {
 	default
 
 	rmdir "${S}"/troll || die
 	mv "${WORKDIR}"/troll-${TROLL_COMMIT} "${S}"/troll || die
-}
 
-src_configure() {
-	local mymesonargs=(
-		--datadir=/usr/share
-	)
-
-	meson_src_configure
+	# https://github.com/sonnyp/Junction/issues/115
+	sed \
+		's#XDG_DATA_DIRS=\(.*\) gjs#XDG_DATA_DIRS=\1:/usr/local/share/:/usr/share/ gjs#' \
+		-i src/bin.js || die
 }
 
 # only data files validators, skip them
