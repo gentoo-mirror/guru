@@ -36,7 +36,7 @@ BDEPEND="
 	verify-sig? ( sec-keys/openpgp-keys-phosh )
 "
 
-VERIFY_SIG_OPENPGP_KEY_PATH="${BROOT}/usr/share/openpgp-keys/phosh.asc"
+VERIFY_SIG_OPENPGP_KEY_PATH="/usr/share/openpgp-keys/phosh.asc"
 
 QA_DESKTOP_FILE="usr/share/applications/mobi.phosh.MobileSettings.desktop"
 

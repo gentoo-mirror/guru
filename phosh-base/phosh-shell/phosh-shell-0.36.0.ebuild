@@ -13,9 +13,9 @@ SRC_URI="https://sources.phosh.mobi/releases/${MY_PN}/${MY_P}.tar.xz
 	verify-sig? ( https://sources.phosh.mobi/releases/${MY_PN}/${MY_P}.tar.xz.asc )"
 S="${WORKDIR}/${MY_P}"
 
-KEYWORDS="~amd64 ~arm64"
 LICENSE="CC0-1.0 CC-BY-SA-4.0 GPL-2+ GPL-3+ LGPL-2+ LGPL-2.1+ MIT"
 SLOT="0"
+KEYWORDS="~amd64 ~arm64"
 IUSE="elogind gtk-doc +lockscreen-plugins man test test-full"
 REQUIRED_USE="test? ( lockscreen-plugins )"
 
@@ -77,7 +77,7 @@ BDEPEND="
 	verify-sig? ( sec-keys/openpgp-keys-phosh )
 "
 
-VERIFY_SIG_OPENPGP_KEY_PATH="${BROOT}/usr/share/openpgp-keys/phosh.asc"
+VERIFY_SIG_OPENPGP_KEY_PATH="/usr/share/openpgp-keys/phosh.asc"
 
 src_configure() {
 	local emesonargs=(
