@@ -89,7 +89,7 @@ app-admin/ananicy-cpp 1.1.1-r3: Ananicy rewritten in C++ for much lower CPU and 
 app-admin/antidot 0.6.3: Cleans up your $HOME from those pesky dotfiles
 app-admin/aws-vault 7.2.0: Securely store and access AWS credentials in development environments
 app-admin/bitwarden-cli 2024.2.0 2024.2.1: CLI frontend client connects to Bitwarden comapatible password manager server
-app-admin/bitwarden-cli-bin 2024.2.0 2024.2.1: Precompiled CLI frontend which connects to Bitwarden comapatible servers
+app-admin/bitwarden-cli-bin 2024.2.0 2024.2.1 2024.3.1: Precompiled CLI frontend which connects to Bitwarden comapatible servers
 app-admin/chamber 2.13.2: Managing secrets in AWS SSM Parameter Store
 app-admin/chezmoi 2.39.1: Manage your dotfiles across multiple machines, securely
 app-admin/customrescuecd-x86 0.4.1: A system rescue cd or usbstick for desktop and server based on gentoo
@@ -361,6 +361,7 @@ dev-build/cargo-make 0.37.11: Rust task runner and build tool
 dev-build/fpm 0.9.0 0.10.0: Fortran Package Manager (fpm)
 dev-build/fypp 3.1 3.2: Fypp - Python powered Fortran preprocessor
 dev-build/just 1.25.0 1.25.2: Just a command runner (with syntax inspired by 'make')
+dev-build/xmake 2.8.9 9999: A cross-platform build utility based on Lua
 dev-cpp/blurhash 0.2.0 0.2.0-r1: C++ blurhash encoder/decoder
 dev-cpp/coeurl 0.2.1 0.3.0: A simple async wrapper around CURL for C++
 dev-cpp/cpp-jwt 1.5_pre20220727: JSON Web Token library for C++
@@ -644,7 +645,7 @@ dev-python/decopatch 1.4.10: Create decorators easily in python
 dev-python/defcon 0.10.2: A set of UFO based objects for use in font editing applications
 dev-python/desktop-notifier 3.5.6: desktop-notifier is a Python library for cross-platform desktop notifications
 dev-python/devtools 0.10.0-r1: Dev tools for python
-dev-python/digitalocean 1.17.0 1.17.0-r1: Digitalocean API access library
+dev-python/digitalocean 1.17.0-r1: Digitalocean API access library
 dev-python/django-bleach 3.0.1: Easily use bleach with Django models and templates
 dev-python/django-markdownify 0.9.2: Markdown template filter for Django
 dev-python/django-widget-tweaks 1.4.12: Tweak the form field rendering in templates
@@ -925,7 +926,6 @@ dev-util/vala-language-server 0.48.4: Code Intelligence for Vala & Genie
 dev-util/vscode-langservers-extracted 4.7.0 4.8.0: HTML/CSS/JSON/ESLint/Markdown language servers extracted from vscode.
 dev-util/wakatime-cli 1.27.0 1.28.6: Command line interface to WakaTime used by all WakaTime plugins
 dev-util/wxformbuilder 3.10.1-r1: A wxWidgets GUI Builder
-dev-util/xmake 2.8.8 9999: A cross-platform build utility based on Lua
 dev-util/xxd 8.2.4092: Hexdump utility from vim
 dev-util/yaml-language-server 1.13.0 1.14.0: Language Server for YAML Files
 dev-vcs/gitahead 2.7.1 2.7.1-r1: Graphical Git client to help understand and manage source code history
@@ -1128,7 +1128,7 @@ gui-libs/xdg-desktop-portal-hyprland 1.1.0-r1 1.2.2-r2 1.2.5-r2 1.2.6-r1 1.3.1 1
 gui-wm/cage 0.1.5 9999: A Wayland kiosk
 gui-wm/hyprland-contrib 0.1-r1 9999: Community-maintained extensions for hyprland
 gui-wm/niri 0.1.4: Scrollable-tiling Wayland compositor
-gui-wm/phoc 0.36.0-r1: Wayland compositor for mobile phones
+gui-wm/phoc 0.36.0-r1 0.38.0: Wayland compositor for mobile phones
 gui-wm/swayfx 0.2 0.3: SwayFX: Sway, but with eye candy!
 kde-apps/kwalletcli 3.03: CLI for the KDE Wallet
 kde-apps/plasma-settings 22.11: Settings application for Plasma Mobile
@@ -1305,12 +1305,12 @@ net-client/kristall 0.3-r2 0.4: Visual cross-platform gemini browser
 net-client/lagrange 1.17.5 1.17.6: Desktop GUI client for browsing Geminispace
 net-client/offpunk 1.8 1.9.1: Offline-First Gemini/Web/Gopher/RSS reader and browser
 net-client/starfish 1.2.0 1.3.1: A Gemini browser for elementary OS
-net-client/telescope 0.7.1 0.8.1: w3m-like browser for Gemini
+net-client/telescope 0.8.1 0.9: w3m-like browser for Gemini
 net-dialup/atinout 0.9.1-r1: AT commands as input are sent to modem and responses given as output
 net-dialup/minimodem 0.24-r1 9999: General-purpose software audio FSK modem
 net-dialup/tcpser 1.1.4: Hayes Smartmodem emulator over TCP/IP
 net-dialup/tio 2.7: Simple TTY terminal application
-net-dns/AdGuardHome 0.107.45 0.107.46: Network-wide ads & trackers blocking DNS server like Pi-Hole with web ui
+net-dns/AdGuardHome 0.107.45 0.107.46 0.107.48: Network-wide ads & trackers blocking DNS server like Pi-Hole with web ui
 net-dns/blocky 0.22 0.23 9999: Fast and lightweight DNS proxy as ad-blocker with many features written in Go
 net-fs/httpdirfs 1.2.0: Filesystem to mount HTTP directory listings, with a permanent cache
 net-fs/hubicfuse 3.0.1: Support for mounting HubiC drive in GNU/Linux
@@ -1321,7 +1321,7 @@ net-im/chatterino 2.4.6: Chat client for https://twitch.tv
 net-im/conduit 0.6.0 0.6.0-r1: A Matrix homeserver written in Rust
 net-im/discord-canary-bin 0.0.306: All-in-one voice and text chat
 net-im/discord-ptb-bin 0.0.29: All-in-one voice and text chat
-net-im/eturnal 1.12.0: STUN/TURN server
+net-im/eturnal 1.12.0-r1: STUN/TURN server
 net-im/flare 0.12.0: Chat with your friends on Signal
 net-im/gajim-plugins 9999: Plugins developed fro Gajim XMPP client
 net-im/go-sendxmpp 0.6.1 0.8.3: A tool to send messages or files to an XMPP contact or MUC
@@ -1386,7 +1386,7 @@ net-misc/gemget 1.9.0: Command line downloader for the Gemini protocol
 net-misc/gemserv 0.6.5 0.6.6: A gemini Server written in rust
 net-misc/giara 1.0.1 1.1.0: An app for Reddit
 net-misc/gmcapsule 0.6.1: Extensible Gemini/Titan server
-net-misc/gmid 2.0.1-r1 9999: Simple and secure Gemini server
+net-misc/gmid 2.0.1-r1 2.0.2 9999: Simple and secure Gemini server
 net-misc/gnome-ssh-askpass 9.2_p1: GTK-based passphrase dialog for use with OpenSSH
 net-misc/graftcp 0.7.1: A tool for redirecting a given program's TCP traffic to SOCKS5 or HTTP proxy
 net-misc/gsocket 1.4.41 9999: Connect like there is no firewall. Securely.
@@ -1426,6 +1426,7 @@ net-p2p/bisq-bin 1.9.14: The decentralized bitcoin exchange (non-atomic, with ar
 net-p2p/dogecoin-qt 1.14.6 1.14.7: Dogecoin Core Qt for desktop. Downloaded blockchain is under 2.2GB. Much secure.
 net-p2p/feather 2.6.2 9999: A free, open-source Monero wallet
 net-p2p/fragments 2.1-r1 2.1.1: Fragments is an easy to use BitTorrent client
+net-p2p/gridcoin 5.4.7.0: Proof-of-Stake based cryptocurrency that rewards BOINC computation
 net-p2p/ipfs-cluster 1.0.1 1.0.2: Pinset orchestration for IPFS
 net-p2p/monero 0.17.2.0 0.17.2.3 0.17.3.0 0.17.3.2 0.18.1.2 0.18.2.0 0.18.2.2 0.18.3.1 0.18.3.3 9999: The secure, private, untraceable cryptocurrency
 net-p2p/p2pool 3.5 3.6.2 3.7 3.8 3.9 3.10 9999: Decentralized pool for Monero mining
@@ -1450,11 +1451,11 @@ net-wireless/rtl8192eu 0_pre20240120: Realtek 8192EU driver module for Linux ker
 net-wireless/rtl8723bu 9999: Driver for the rtl8723 wireless chipset
 net-wireless/rtl8821ce 0_pre20240120: Realtek RTL8821CE Driver module for Linux kernel
 net-wireless/rtl8821cu 0_pre20240121: Realtek 8821CU/RTL8811CU module for Linux kernel
-phosh-base/phosh 0.36.0-r1: Meta package for Phosh, merge this package to install
-phosh-base/phosh-mobile-settings 0.36.0: Mobile Settings App for phosh and related components
-phosh-base/phosh-osk-stub 0.36.0: On-screen keyboard stub
-phosh-base/phosh-shell 0.36.0: Pure Wayland shell for mobile devices
-phosh-base/phosh-tour 0.35.0 0.36.0: Introduction to phosh on smartphones
+phosh-base/phosh 0.36.0-r1 0.38.0: Meta package for Phosh, merge this package to install
+phosh-base/phosh-mobile-settings 0.36.0 0.38.0: Mobile Settings App for phosh and related components
+phosh-base/phosh-osk-stub 0.36.0 0.38.0: On-screen keyboard stub
+phosh-base/phosh-shell 0.36.0 0.38.0: Pure Wayland shell for mobile devices
+phosh-base/phosh-tour 0.36.0 0.38.0: Introduction to phosh on smartphones
 phosh-base/squeekboard 1.17.1: Virtual keyboard supporting Wayland, built primarily for the Librem 5 phone
 sci-biology/cmdock 0.2.0 0.2.0-r1: Program for docking ligands to proteins and nucleic acids
 sci-biology/cytoscape-bin 3.10.1: A visualization platform for molecular interaction networks
@@ -1519,7 +1520,7 @@ sec-keys/openpgp-keys-russallbery 20230000: OpenPGP keys used by Russ Allbery (E
 sec-keys/openpgp-keys-skyjake 20211224: OpenPGP keys used by Jaakko Keranen
 sec-keys/signify-keys-gmid 1.8 2.0: Signify keys used to sign gmid releases
 sec-keys/signify-keys-lanodan 2021.04 2023 2024: Signify keys used by Haelwenn (lanodan) Monnier
-sec-keys/signify-keys-telescope 0.7 0.8: Signify keys used to sign telescope releases
+sec-keys/signify-keys-telescope 0.8 0.9 0.10: Signify keys used to sign telescope releases
 sys-apps/0xFFFF 0.10: 0pen Free Fiasco Firmware Flasher for Maemo devices
 sys-apps/asus-numpad 0.1 0.2 9999: User-space driver for Asus numpad
 sys-apps/asus-touchpad-numpad-driver 0_pre20220311 9999: Feature-rich configurable Asus NumPad drivers

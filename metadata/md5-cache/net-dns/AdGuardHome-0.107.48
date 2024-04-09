@@ -1,0 +1,15 @@
+BDEPEND=app-arch/xz-utils app-arch/zstd >=dev-lang/go-1.22.2 web? ( net-libs/nodejs[npm] ) >=dev-lang/go-1.20:= app-arch/unzip virtual/pkgconfig
+DEFINED_PHASES=compile install postinst prepare test unpack
+DESCRIPTION=Network-wide ads & trackers blocking DNS server like Pi-Hole with web ui
+EAPI=8
+HOMEPAGE=https://github.com/AdguardTeam/AdGuardHome/
+IDEPEND=filecaps? ( sys-libs/libcap )
+INHERIT=fcaps go-module readme.gentoo-r1 systemd unpacker
+IUSE=+web +filecaps
+KEYWORDS=~amd64 ~arm64
+LICENSE=GPL-3 Apache-2.0 BSD BSD-2 MIT ZLIB
+RESTRICT=strip
+SLOT=0
+SRC_URI=https://github.com/AdguardTeam/AdGuardHome/archive/refs/tags/v0.107.48.tar.gz -> AdGuardHome-0.107.48.tar.gz https://github.com/rahilarious/gentoo-distfiles/releases/download/AdGuardHome-0.107.48/deps.tar.zst -> AdGuardHome-0.107.48-deps.tar.zst https://github.com/rahilarious/gentoo-distfiles/releases/download/AdGuardHome-0.107.46/wiki.tar.xz -> AdGuardHome-wiki-7964837.tar.xz web? ( https://github.com/rahilarious/gentoo-distfiles/releases/download/AdGuardHome-0.107.48/npm-deps.tar.zst -> AdGuardHome-0.107.48-npm-deps.tar.zst )
+_eclasses_=fcaps	c0a086b957a1b183a8d136eabf02f191	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	288c54efeb5e2aa70775e39032695ad4	go-env	14f8f70fe58c14d7ab44fff15a05ac47	go-module	83fd3ed1657cfc316c93d6a37018290d	readme.gentoo-r1	204091a2cde6179cd9d3db26d09412d3	systemd	c8b03e8df84486aa991d4396686e8942	unpacker	7b40f3faa3e2e12f5cf6d36d0fbfcd09
+_md5_=ccd404180cbc39c0b4dd516434efa9aa

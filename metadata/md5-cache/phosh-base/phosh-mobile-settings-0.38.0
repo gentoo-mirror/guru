@@ -1,6 +1,6 @@
 BDEPEND=dev-libs/glib:2 dev-util/gdbus-codegen dev-util/glib-utils dev-util/wayland-scanner sys-devel/gettext verify-sig? ( sec-keys/openpgp-keys-phosh ) >=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array verify-sig? ( app-crypt/gnupg >=app-portage/gemato-20 )
 DEFINED_PHASES=compile configure install postinst postrm preinst test unpack
-DEPEND=>=dev-libs/glib-2.68:2 >=dev-libs/json-glib-1.6.2 >=dev-libs/wayland-1.14 >=gui-libs/gtk-4.4:4[wayland] >=gui-libs/libadwaita-1.4:1 media-libs/gsound phosh-base/phosh-shell sys-apps/lm-sensors:= >=dev-libs/wayland-protocols-1.12
+DEPEND=>=dev-libs/glib-2.74:2 >=dev-libs/json-glib-1.6.2 >=dev-libs/wayland-1.14 >=gui-libs/gtk-4.12.5:4[wayland] >=gui-libs/libadwaita-1.4:1 media-libs/gsound phosh-base/phosh-shell sys-apps/lm-sensors:= >=dev-libs/wayland-protocols-1.12
 DESCRIPTION=Mobile Settings App for phosh and related components
 EAPI=8
 HOMEPAGE=https://gitlab.gnome.org/guidog/phosh-mobile-settings
@@ -9,8 +9,8 @@ INHERIT=gnome2-utils meson verify-sig xdg
 IUSE=verify-sig
 KEYWORDS=~amd64
 LICENSE=GPL-3+
-RDEPEND=>=dev-libs/glib-2.68:2 >=dev-libs/json-glib-1.6.2 >=dev-libs/wayland-1.14 >=gui-libs/gtk-4.4:4[wayland] >=gui-libs/libadwaita-1.4:1 media-libs/gsound phosh-base/phosh-shell sys-apps/lm-sensors:=
+RDEPEND=>=dev-libs/glib-2.74:2 >=dev-libs/json-glib-1.6.2 >=dev-libs/wayland-1.14 >=gui-libs/gtk-4.12.5:4[wayland] >=gui-libs/libadwaita-1.4:1 media-libs/gsound phosh-base/phosh-shell sys-apps/lm-sensors:=
 SLOT=0
-SRC_URI=https://sources.phosh.mobi/releases/phosh-mobile-settings/phosh-mobile-settings-0.36.0.tar.xz verify-sig? ( https://sources.phosh.mobi/releases/phosh-mobile-settings/phosh-mobile-settings-0.36.0.tar.xz.asc )
+SRC_URI=https://sources.phosh.mobi/releases/phosh-mobile-settings/phosh-mobile-settings-0.38.0.tar.xz verify-sig? ( https://sources.phosh.mobi/releases/phosh-mobile-settings/phosh-mobile-settings-0.38.0.tar.xz.asc )
 _eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	xdg-utils	baea6080dd821f5562d715887954c9d3	gnome2-utils	30dbce54b89e77b86f366548f94419ad	flag-o-matic	288c54efeb5e2aa70775e39032695ad4	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	a1229a86bd0db058e474a2d7d9191cca	meson	92696988eaddba122c4cedc191f59bcb	verify-sig	a79ba011daaf532d71a219182474d150	xdg	4a14c5c24f121e7da66e5aab4a168c6e
-_md5_=77afa8ccda350c7e873aea89eabe719b
+_md5_=0bee7845f98943b4b377792939439e84

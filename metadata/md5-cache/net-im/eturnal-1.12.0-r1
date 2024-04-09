@@ -1,14 +1,14 @@
 BDEPEND=dev-util/rebar:3 >=sys-apps/gawk-4.1 virtual/pkgconfig
 DEFINED_PHASES=compile configure install prepare test
-DEPEND=acct-user/eturnal >=dev-lang/erlang-21[ssl] dev-libs/libyaml dev-libs/openssl:= >=dev-erlang/conf-0.1 dev-erlang/fast_tls dev-erlang/fast_yaml dev-erlang/p1_utils >=dev-erlang/stun-1.2 dev-erlang/yval dev-lang/erlang:=
+DEPEND=acct-user/eturnal >=dev-lang/erlang-21:=[ssl] dev-libs/libyaml dev-libs/openssl:= >=dev-erlang/conf-0.1 dev-erlang/fast_tls dev-erlang/fast_yaml dev-erlang/p1_utils >=dev-erlang/stun-1.2 dev-erlang/yval dev-lang/erlang:=
 DESCRIPTION=STUN/TURN server
 EAPI=8
 HOMEPAGE=https://eturnal.net/ https://github.com/processone/eturnal
 INHERIT=rebar3 systemd
 KEYWORDS=~amd64
 LICENSE=Apache-2.0
-RDEPEND=acct-user/eturnal >=dev-lang/erlang-21[ssl] dev-libs/libyaml dev-libs/openssl:= >=dev-erlang/conf-0.1 dev-erlang/fast_tls dev-erlang/fast_yaml dev-erlang/p1_utils >=dev-erlang/stun-1.2 dev-erlang/yval dev-lang/erlang:=
+RDEPEND=acct-user/eturnal >=dev-lang/erlang-21:=[ssl] dev-libs/libyaml dev-libs/openssl:= >=dev-erlang/conf-0.1 dev-erlang/fast_tls dev-erlang/fast_yaml dev-erlang/p1_utils >=dev-erlang/stun-1.2 dev-erlang/yval dev-lang/erlang:=
 SLOT=0
 SRC_URI=https://eturnal.net/download/eturnal-1.12.0.tar.gz
 _eclasses_=edo	c0eb9cbe6b0bd01fcb4918f12598a4d3	rebar3	78aaea82431aba85a8e5e47210967fae	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	systemd	c8b03e8df84486aa991d4396686e8942
-_md5_=5d7022798855cc6f4d57ed0089678d34
+_md5_=6b6ac156cb52ecd0efdb9b0f3cd0de66

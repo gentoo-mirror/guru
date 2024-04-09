@@ -1,0 +1,18 @@
+BDEPEND=virtual/pkgconfig gui? ( dev-qt/linguist-tools:5 ) test? ( app-editors/vim-core ) app-alternatives/ninja >=dev-build/cmake-3.20.5
+DEFINED_PHASES=compile configure install postinst postrm prepare test
+DEPEND=>=dev-libs/boost-1.63.0:=[zlib(+)] >=dev-libs/libsecp256k1-0.2.0:=[recovery(+)] >=dev-libs/leveldb-1.21:= dev-libs/libzip:= dev-libs/openssl:= dev-libs/univalue net-misc/curl[ssl] sys-libs/db:5.3[cxx] gui? ( dev-qt/qtconcurrent:5 dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtnetwork:5 dev-qt/qtwidgets:5 dbus? ( dev-qt/qtdbus:5 ) qrcode? ( media-gfx/qrencode:= ) ) upnp? ( net-libs/miniupnpc:= ) test? ( gui? ( dev-qt/qttest:5 ) )
+DESCRIPTION=Proof-of-Stake based cryptocurrency that rewards BOINC computation
+EAPI=8
+HOMEPAGE=https://gridcoin.us/ https://gridcoin.world/
+IDEPEND=gui? ( dev-util/desktop-file-utils )
+INHERIT=cmake db-use multilib xdg-utils
+IUSE=+asm dbus gui qrcode test +upnp cpu_flags_arm_neon cpu_flags_x86_avx2 cpu_flags_x86_sha cpu_flags_x86_sse4_1
+KEYWORDS=~amd64
+LICENSE=BSD BSD-2 Boost-1.0 MIT SSLeay
+RDEPEND=>=dev-libs/boost-1.63.0:=[zlib(+)] >=dev-libs/libsecp256k1-0.2.0:=[recovery(+)] >=dev-libs/leveldb-1.21:= dev-libs/libzip:= dev-libs/openssl:= dev-libs/univalue net-misc/curl[ssl] sys-libs/db:5.3[cxx] gui? ( dev-qt/qtconcurrent:5 dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtnetwork:5 dev-qt/qtwidgets:5 dbus? ( dev-qt/qtdbus:5 ) qrcode? ( media-gfx/qrencode:= ) ) upnp? ( net-libs/miniupnpc:= )
+REQUIRED_USE=dbus? ( gui ) qrcode? ( gui )
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/gridcoin-community/Gridcoin-Research/archive/refs/tags/5.4.7.0.tar.gz -> gridcoin-5.4.7.0.tar.gz
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	288c54efeb5e2aa70775e39032695ad4	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	c7c9a62d6232cac66d4ea32d575c3e7c	db-use	3807d3e43e20aaa6e4decedd2bb2db4c
+_md5_=d1a496a1a2a9098413abbada53e1e52e

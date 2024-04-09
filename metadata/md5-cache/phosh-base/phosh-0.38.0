@@ -1,0 +1,10 @@
+DEFINED_PHASES=-
+DESCRIPTION=Meta package for Phosh, merge this package to install
+EAPI=8
+HOMEPAGE=https://phosh.mobi/
+IUSE=cups +desktop-portal geolocation iio
+KEYWORDS=~amd64
+LICENSE=metapackage
+RDEPEND=app-alternatives/phosh-keyboard dev-libs/feedbackd[daemon] gnome-base/gnome-core-libs[cups?] >=gui-wm/phoc-0.38.0 media-fonts/cantarell >=phosh-base/phosh-mobile-settings-0.38.0 >=phosh-base/phosh-shell-0.38.0 >=phosh-base/phosh-tour-0.38.0 x11-themes/gnome-backgrounds x11-themes/sound-theme-freedesktop desktop-portal? ( gui-libs/xdg-desktop-portal-wlr sys-apps/xdg-desktop-portal-gtk ) geolocation? ( app-misc/geoclue:2.0 ) iio? ( gnome-extra/iio-sensor-proxy )
+SLOT=0
+_md5_=d14890d05c51ef00c721f11e2da42104
