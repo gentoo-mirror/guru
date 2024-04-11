@@ -12,16 +12,16 @@ dejavusansmono droidsansmono envycoder fantasquesansmono firacode firamono geist
 hack hasklig heavydata hermit iawriter ibmplexmono inconsolata inconsolatago inconsolatalgc
 intelonemono iosevka iosevkaterm iosevkatermslab jetbrainsmono lekton liberationmono lilex
 martianmono meslo monaspace monofur monoid mononoki mplus nerdfontssymbolsonly noto opendyslexic
-overpass profont proggyclean robotomono sharetechmono sourcecodepro spacemono terminus tinos ubuntu
-ubuntumono victormono"
+overpass profont proggyclean recursive robotomono sharetechmono sourcecodepro spacemono terminus
+tinos ubuntu ubuntumono ubuntusans victormono zedmono"
 REQUIRED_USE="|| ( 0xproto 3270 agave anonymouspro arimo aurulentsansmono bigblueterminal bitstreamverasansmono
 cascadiacode cascadiamono codenewroman comicshannsmono commitmono cousine d2coding daddytimemono
 dejavusansmono droidsansmono envycoder fantasquesansmono firacode firamono geistmono gomono gohu
 hack hasklig heavydata hermit iawriter ibmplexmono inconsolata inconsolatago inconsolatalgc
 intelonemono iosevka iosevkaterm iosevkatermslab jetbrainsmono lekton liberationmono lilex
 martianmono meslo monaspace monofur monoid mononoki mplus nerdfontssymbolsonly noto opendyslexic
-overpass profont proggyclean robotomono sharetechmono sourcecodepro spacemono terminus tinos ubuntu
-ubuntumono victormono )"
+overpass profont proggyclean recursive robotomono sharetechmono sourcecodepro spacemono terminus
+tinos ubuntu ubuntumono ubuntusans victormono zedmono )"
 HOMEPAGE="https://github.com/ryanoasis/nerd-fonts"
 SRC_URI="
 	0xproto? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/0xProto.tar.xz -> 0xProto-${PV}.tar.xz )
@@ -79,6 +79,7 @@ SRC_URI="
 	overpass? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/Overpass.tar.xz -> Overpass-${PV}.tar.xz )
 	profont? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/ProFont.tar.xz -> ProFont-${PV}.tar.xz )
 	proggyclean? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/ProggyClean.tar.xz -> ProggyClean-${PV}.tar.xz )
+	recursive? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/Recursive.tar.xz -> Recursive-${PV}.tar.xz )
 	robotomono? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/RobotoMono.tar.xz -> RobotoMono-${PV}.tar.xz )
 	sharetechmono? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/ShareTechMono.tar.xz -> ShareTechMono-${PV}.tar.xz )
 	sourcecodepro? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/SourceCodePro.tar.xz -> SourceCodePro-${PV}.tar.xz )
@@ -87,7 +88,9 @@ SRC_URI="
 	tinos? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/Tinos.tar.xz -> Tinos-${PV}.tar.xz )
 	ubuntu? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/Ubuntu.tar.xz -> Ubuntu-${PV}.tar.xz )
 	ubuntumono? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/UbuntuMono.tar.xz -> UbuntuMono-${PV}.tar.xz )
+	ubuntusans? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/UbuntuSans.tar.xz -> UbuntuSans-${PV}.tar.xz )
 	victormono? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/VictorMono.tar.xz -> VictorMono-${PV}.tar.xz )
+	zedmono? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/ZedMono.tar.xz -> ZedMono-${PV}.tar.xz )
 "
 
 RDEPEND="
