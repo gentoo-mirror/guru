@@ -36,10 +36,10 @@ DEPEND="
 	x11-libs/libdrm[video_cards_amdgpu]
 	dev-libs/libfmt
 	dev-libs/pugixml
-	dev-cpp/easyloggingpp
+	dev-libs/spdlog
 	dev-cpp/units
 	test? (
-		~dev-cpp/catch-2.13.8
+		>=dev-cpp/catch-3.5.2
 		dev-cpp/trompeloeil
 	)
 "
