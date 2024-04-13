@@ -4,13 +4,13 @@ DEPEND=python_single_target_python3_10? ( >=dev-python/i3ipc-2.0.1[python_target
 DESCRIPTION=Script for sway and i3 to automatically switch the window split orientation
 EAPI=8
 HOMEPAGE=https://github.com/nwg-piotr/autotiling
-INHERIT=distutils-r1
+INHERIT=distutils-r1 pypi
 IUSE=python_single_target_python3_10 python_single_target_python3_11
 KEYWORDS=~amd64
 LICENSE=GPL-3
 RDEPEND=python_single_target_python3_10? ( >=dev-python/i3ipc-2.0.1[python_targets_python3_10(-)] ) python_single_target_python3_11? ( >=dev-python/i3ipc-2.0.1[python_targets_python3_11(-)] ) python_single_target_python3_10? ( dev-lang/python:3.10 ) python_single_target_python3_11? ( dev-lang/python:3.11 )
 REQUIRED_USE=^^ ( python_single_target_python3_10 python_single_target_python3_11 )
 SLOT=0
-SRC_URI=https://github.com/nwg-piotr/autotiling/archive/refs/tags/v1.8.tar.gz -> autotiling-1.8.tar.gz
-_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	288c54efeb5e2aa70775e39032695ad4	out-of-source-utils	1a9007554652a6e627edbccb3c25a439	multibuild	d67e78a235f541871c7dfe4cf7931489	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	a1229a86bd0db058e474a2d7d9191cca	python-single-r1	75118e916668a74c660a13b0ecb22562	distutils-r1	d9a9242b3972ef569e740451da4b90e1
-_md5_=1d5b2367501844e23be767e018e9cd5b
+SRC_URI=https://files.pythonhosted.org/packages/source/a/autotiling/autotiling-1.9.1.tar.gz
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	288c54efeb5e2aa70775e39032695ad4	out-of-source-utils	1a9007554652a6e627edbccb3c25a439	multibuild	d67e78a235f541871c7dfe4cf7931489	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	a1229a86bd0db058e474a2d7d9191cca	python-single-r1	75118e916668a74c660a13b0ecb22562	distutils-r1	d9a9242b3972ef569e740451da4b90e1	pypi	2eecb475512bc76e5ea9192a681b9e6b
+_md5_=ebb3ad6f67ae3b886a3b9d4b862d140a
