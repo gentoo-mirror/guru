@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit cmake toolchain-funcs
+inherit cmake
 
 DESCRIPTION="Hyprland's GPU-accelerated screen locking utility"
 HOMEPAGE="https://github.com/hyprwm/hyprlock"
@@ -46,6 +46,7 @@ BDEPEND="
 
 PATCHES=(
 	"${FILESDIR}/0001-fix-CFLAGS-CXXFLAGS-hyprlock.patch"
+	"${FILESDIR}/0002-cmake-install-pam-file-fix.patch"
 )
 
 src_configure() {
