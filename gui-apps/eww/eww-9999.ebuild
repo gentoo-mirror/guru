@@ -352,7 +352,7 @@ src_configure() {
 		$(usev X x11)
 		$(usev wayland wayland)
 	)
-	cargo_src_configure
+	cargo_src_configure --no-default-features
 }
 
 src_compile() {

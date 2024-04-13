@@ -1,16 +1,13 @@
-# Copyright 2021-2023 Gentoo Authors
+# Copyright 2021-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 inherit cmake
 
-MY_COMMIT="f49cc3e5825812e8191e33da2264c76a75389f24"
-
 DESCRIPTION="Non-blocking I/O tcp network lib based on c++14/17"
 HOMEPAGE="https://github.com/an-tao/trantor"
-SRC_URI="https://github.com/an-tao/trantor/archive/${MY_COMMIT}.tar.gz -> ${P}.tar.gz"
-S="${WORKDIR}/${PN}-${MY_COMMIT}"
+SRC_URI="https://github.com/an-tao/trantor/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0/${PV}"

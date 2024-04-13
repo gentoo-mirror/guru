@@ -1,28 +1,28 @@
-# Copyright 2021-2023 Gentoo Authors
+# Copyright 2021-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 inherit cmake
 
-MY_TRANTOR_V="1.5.14"
+MY_TRANTOR_V="1.5.17" # NOTE: needs to be updated on each bump
 
 DESCRIPTION="C++14/17 based HTTP web application framework"
 HOMEPAGE="https://github.com/drogonframework/drogon"
 SRC_URI="
-	https://github.com/drogonframework/drogon/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
-	test? ( https://github.com/an-tao/trantor/archive/refs/tags/v${MY_TRANTOR_V}.tar.gz -> trantor-${MY_TRANTOR_V}.tar.gz )
+	https://github.com/drogonframework/drogon/archive/v${PV}.tar.gz -> ${P}.tar.gz
+	test? ( https://github.com/an-tao/trantor/archive/v${MY_TRANTOR_V}.tar.gz -> trantor-${MY_TRANTOR_V}.tar.gz )
 "
 
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="+brotli doc examples mariadb postgres redis sqlite test +yaml"
+IUSE="+brotli doc examples mariadb postgres redis sqlite spdlog test +yaml"
 # REQUIRED_USE="test? ( postgres sqlite mariadb )"
 RESTRICT="!test? ( test )"
 
 RDEPEND="
-	>=dev-cpp/trantor-${MY_TRANTOR_V}_p1:=
+	>=dev-cpp/trantor-${MY_TRANTOR_V}:=
 	dev-libs/jsoncpp:=
 	sys-libs/zlib
 	brotli? ( app-arch/brotli:= )
@@ -35,6 +35,10 @@ RDEPEND="
 	!elibc_Darwin? ( !elibc_SunOS? (
 		sys-apps/util-linux
 	) )
+	spdlog? (
+		dev-libs/spdlog:=
+		dev-libs/libfmt:=
+	)
 	yaml? ( dev-cpp/yaml-cpp:= )
 "
 DEPEND="
@@ -74,6 +78,7 @@ src_configure() {
 		-DBUILD_YAML_CONFIG=$(usex yaml)
 		-DUSE_SUBMODULE=NO
 		$(cmake_use_find_package doc Doxygen)
+		-DUSE_SPDLOG=$(usex spdlog)
 	)
 
 	cmake_src_configure
