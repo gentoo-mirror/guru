@@ -1,4 +1,4 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -43,10 +43,6 @@ RDEPEND="
 	${DEPEND}
 "
 
-PATCHES=(
-	"${FILESDIR}/${PN}-1.3.5-disable-xdp.patch"
-)
-
 src_configure() {
 	local mycmakeargs=(
 		-DBUILD_SHARED_LIBS=ON
@@ -55,7 +51,6 @@ src_configure() {
 		-DUA_BUILD_TOOLS=$(usex tools)
 		-DUA_BUILD_UNIT_TESTS=OFF
 		-DUA_ENABLE_PUBSUB=$(usex pubsub)
-		-DUA_ENABLE_PUBSUB_ETH_UADP=$(usex pubsub)
 		-DUA_FORCE_WERROR=OFF
 	)
 
@@ -80,8 +75,6 @@ src_install() {
 		docompress -x /usr/share/doc/${PF}/examples
 		dodoc -r examples/
 	fi
-
-	python_fix_shebang "${ED}"
 }
 
 src_test() {
