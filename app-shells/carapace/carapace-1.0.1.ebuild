@@ -6,8 +6,8 @@ EAPI=8
 inherit go-module
 
 DESCRIPTION="Multi-shell multi-command argument completer"
-HOMEPAGE="https://rsteube.github.io/carapace-bin/"
-SRC_URI="https://github.com/rsteube/${PN}-bin/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
+HOMEPAGE="https://carapace.sh/"
+SRC_URI="https://github.com/${PN}-sh/${PN}-bin/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 
 # Using a dependency tarball as per https://devmanual.gentoo.org/eclass-reference/go-module.eclass/index.html
 DEPS_URI="https://gitlab.com/freijon_gentoo/${CATEGORY}/${PN}/-/raw/main/${P}-deps.tar.xz"
@@ -16,6 +16,13 @@ SRC_URI+=" ${DEPS_URI}"
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64"
+
+DOCS=(
+	"README.md"
+)
+HTML_DOCS=(
+	"docs/book/"
+)
 
 S="${WORKDIR}/${PN}-bin-${PV}"
 
@@ -28,7 +35,6 @@ src_compile() {
 src_install() {
 	dobin "cmd/${PN}/${PN}"
 	mv "docs/src" "docs/book" || die
-	rm -r "docs/book/changelog" || die
-	dodoc "README.md"
-	dodoc -r "docs/book"
+	rm -r "docs/book/release_notes" || die
+	einstalldocs
 }
