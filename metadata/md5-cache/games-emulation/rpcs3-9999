@@ -5,11 +5,11 @@ DESCRIPTION=PS3 emulator/debugger
 EAPI=8
 HOMEPAGE=https://rpcs3.net/
 IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
-INHERIT=cmake flag-o-matic git-r3 xdg
+INHERIT=cmake flag-o-matic xdg git-r3
 IUSE=discord faudio +llvm vulkan wayland
 LICENSE=GPL-2
 PROPERTIES=live
 RDEPEND=app-arch/p7zip dev-libs/flatbuffers dev-libs/hidapi dev-libs/libevdev dev-libs/pugixml dev-libs/xxhash dev-qt/qtbase:6[concurrent,dbus,gui,widgets] dev-qt/qtmultimedia:6 dev-qt/qtsvg:6 media-libs/cubeb media-libs/glew media-libs/libglvnd media-libs/libpng:= media-libs/openal media-video/ffmpeg:= net-misc/curl sys-devel/llvm:= sys-libs/zlib virtual/libusb:1 faudio? ( app-emulation/faudio ) vulkan? ( media-libs/vulkan-loader[wayland?] ) wayland? ( dev-libs/wayland )
 SLOT=0
-_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	288c54efeb5e2aa70775e39032695ad4	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	c7c9a62d6232cac66d4ea32d575c3e7c	git-r3	fbb2889c81f3a05910c1524db69425c1	xdg	4a14c5c24f121e7da66e5aab4a168c6e
-_md5_=1aa41914687f3b700f15e53565ca641a
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	288c54efeb5e2aa70775e39032695ad4	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	c7c9a62d6232cac66d4ea32d575c3e7c	xdg	4a14c5c24f121e7da66e5aab4a168c6e	git-r3	fbb2889c81f3a05910c1524db69425c1
+_md5_=32e0de2925828f043e1e2fe8a33a699f
