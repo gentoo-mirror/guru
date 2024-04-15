@@ -270,7 +270,7 @@ app-misc/wego 2.2: Wego is a weather client for the terminal
 app-misc/x86-64-level 0.2.2 9999: Get the x86-64 Microarchitecture Level on the Current Machine
 app-misc/xplr 0.21.3: A hackable, minimal, fast TUI file explorer
 app-misc/yaf 0.0.3: Yet another system fetch that is minimal and customizable.
-app-misc/yazi 0.2.1 0.2.2 0.2.3: Blazing fast terminal file manager written in Rust, based on async I/O.
+app-misc/yazi 0.2.1 0.2.2 0.2.3 0.2.4: Blazing fast terminal file manager written in Rust, based on async I/O.
 app-misc/zcock 0.1.0 0.2.0: Print an emoji according to traditional chinese calendar and more
 app-mobilephone/flashlight 0.1.1-r2: It's a flashlight, what do you expect?
 app-mobilephone/mobile-config-firefox 2.1.0: Mobile and privacy friendly configuration for Firefox
@@ -293,7 +293,7 @@ app-portage/portage-lostfiles 0.5.5: A simple script to identify files not track
 app-portage/quantum-resolver 9999: A WIP portage dependency resolver
 app-portage/showbuild 0.9.1-r1: Script to follow log of running portage builds
 app-portage/version 0.19.0_alpha 0.20.1_alpha 0.21.0_alpha: A command line function for package version management.
-app-shells/carapace 0.28.5 0.30.2 1.0.0: Multi-shell multi-command argument completer
+app-shells/carapace 0.30.2 1.0.0 1.0.1: Multi-shell multi-command argument completer
 app-shells/direnv 2.32.3 9999: Environment variable manager for shell
 app-shells/elvish 0.19.2 0.20.1: Expressive programming language and a versatile interactive shell
 app-shells/fzf-fish 10.3: Augment your fish command line with fzf key bindings
@@ -508,7 +508,7 @@ dev-libs/libopensmtpd 0.7: Library for creating OpenSMTPD filters
 dev-libs/librepo 1.17.1: Repodata downloading library
 dev-libs/libsignal-ffi 0.44.0: A C ABI library which exposes Signal protocol logic
 dev-libs/libthai 0.1.28 0.1.29: A a set of Thai language support routines
-dev-libs/libtypec 0.5.0: Library to interface with USB Type-c/Power Delivery devices
+dev-libs/libtypec 0.5.0 0.5.0-r1: Library to interface with USB Type-c/Power Delivery devices
 dev-libs/ls-hpack 2.3.0-r1: QPACK compression library for use with HTTP/3
 dev-libs/ls-qpack 2.5.0-r1: QPACK compression library for use with HTTP/3
 dev-libs/lsbcrypt 1.0.0-r1 1.0.0-r2: libcrypt wrapper for LiteSpeedTech
@@ -934,7 +934,7 @@ dev-vcs/gitahead 2.7.1 2.7.1-r1: Graphical Git client to help understand and man
 dev-vcs/gitqlient 1.6.2 9999: Multi-platform Git client written with Qt
 dev-vcs/gitqlient-gitserver-plugin 0.2.0: GitQlient GitServer plugin
 dev-vcs/gitqlient-jenkins-plugin 0.2.0: GitQlient Jenkins plugin
-dev-vcs/gitui 0.25.2: blazing fast terminal-ui for git
+dev-vcs/gitui 0.26.1: blazing fast terminal-ui for git
 dev-vcs/jj 0.16.0: Jujutsu - an experimental version control system
 dev-vcs/lazygit 0.39.4-r1 0.40.2-r1 0.41.0: Simple terminal UI for git commands
 dev-zig/zls 0.10.0-r1 9999: The officially unofficial Ziglang language server
@@ -973,6 +973,7 @@ games-fps/etlegacy 2.81.0: Wolfenstein: Enemy Territory 2.60b compatible client/
 games-fps/far-cry-demo 9999: Famous game from 2004, developed by CryTek
 games-fps/openspades 0.1.3: Open-source voxel FPS
 games-fps/quakespasm 0.94.1 9999: Modern, cross-platform Quake 1 engine based on FitzQuake
+games-fps/the-dark-mod-bin 2.12: Inspired by Thief on Doom 3 libre engine (id Tech 4)
 games-misc/asciiquarium 1.1_p20120823: Asciiquarium is an aquarium/sea animation in ASCII art
 games-misc/cbonsai 1.3.1-r1: grow bonsai trees in your terminal
 games-misc/gay 1.2.9 1.3.4: Colour your text / terminal to be more gay
@@ -1055,7 +1056,7 @@ gui-apps/darkman 1.5.4: Framework for dark and light mode transitions
 gui-apps/espanso 2.1.8 2.2.1: Cross-platform Text Expander written in Rust
 gui-apps/eww 0.5.0-r3 9999: Elkowars Wacky Widgets is a standalone widget system made in Rust
 gui-apps/fnott 1.2.1 1.3.0 1.4.1 9999: Keyboard driven and lightweight Wayland notification daemon.
-gui-apps/fuzzel 1.9.2 1.10.1 9999: Application launcher for wlroots based Wayland compositors.
+gui-apps/fuzzel 1.9.2 1.10.2 9999: Application launcher for wlroots based Wayland compositors.
 gui-apps/gcolor3 2.4.0: A simple color chooser written in GTK3
 gui-apps/gradience 0.3.0-r1: GNOME's main interface to configure various aspects of the desktop
 gui-apps/grimshot 9999: A helper for screenshots within sway
@@ -1413,7 +1414,7 @@ net-misc/warp 0.6.2: Fast and secure file transfer
 net-misc/wayback_machine_downloader 2.3.0 2.3.1: Download an entire website from the Wayback Machine
 net-misc/whatscli 1.0.6 1.0.11: A command line interface for WhatsApp
 net-misc/wsdd 0.7.0 0.7.1 0.8: A Web Service Discovery host daemon.
-net-misc/xh 0.20.1 0.21.0: Friendly and fast tool for sending HTTP requests
+net-misc/xh 0.20.1 0.21.0 0.22.0: Friendly and fast tool for sending HTTP requests
 net-misc/xkcd-handler 1.0.13: A handler for XKCD urls
 net-misc/xmrig-mo 6.21.2: MoneroOcean fork of xmrig that supports algo switching
 net-misc/yacy 1.924.20210209.10069: YaCy - p2p based distributed web-search engine
