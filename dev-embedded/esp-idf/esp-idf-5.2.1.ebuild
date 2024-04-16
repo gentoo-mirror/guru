@@ -1,4 +1,4 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -23,12 +23,14 @@ SRC_URI+=" riscv32? ( ${CROSSTOOL_URL}/riscv32-esp-elf-${VER}-x86_64-linux-gnu.t
 
 #https://dl.espressif.com/dl/toolchains/preview/riscv32-esp-elf-gcc8_4_0-crosstool-ng-1.24.0-123-g64eb9ff-linux-amd64.tar.gz
 
-KEYWORDS="~amd64"
+S="${WORKDIR}/${PN}-v${PV}"
+
 LICENSE="Apache-2.0"
+SLOT="0"
+KEYWORDS="~amd64"
+
 IUSE="riscv32"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
-
-SLOT="0"
 
 BDEPEND="app-arch/unzip"
 RDEPEND="
@@ -41,7 +43,7 @@ RDEPEND="
 	dev-python/pyparsing[${PYTHON_USEDEP}]
 	dev-python/pyelftools[${PYTHON_USEDEP}]
 	dev-embedded/esp-coredump[${PYTHON_USEDEP}]
-	dev-embedded/esptool
+	dev-embedded/esptool[${PYTHON_USEDEP}]
 	dev-embedded/esp-idf-kconfig[${PYTHON_USEDEP}]
 	dev-embedded/esp-idf-monitor[${PYTHON_USEDEP}]
 	dev-embedded/esp-idf-panic-decoder[${PYTHON_USEDEP}]
@@ -58,8 +60,6 @@ QA_PRESTRIPPED="opt/*"
 PATCHES=(
 	"${FILESDIR}/allow-system-install-${PN}-5.1.2.patch"
 )
-
-S="${WORKDIR}/${PN}-v${PV}"
 
 install_tool() {
 	shopt -s globstar
