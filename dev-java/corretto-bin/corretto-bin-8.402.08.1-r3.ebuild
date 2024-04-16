@@ -32,6 +32,10 @@ RDEPEND="
 		cups? ( net-print/cups )
 		selinux? ( sec-policy/selinux-java )
 		!headless-awt? (
+			app-accessibility/at-spi2-core
+			x11-libs/gtk+
+			x11-libs/gdk-pixbuf
+			x11-libs/libXxf86vm
 			x11-libs/libX11
 			x11-libs/libXext
 			x11-libs/libXi
@@ -60,6 +64,8 @@ src_install() {
 		rm -v lib/amd64/libjawt.so || die
 		rm -v lib/amd64/libglassgtk.so || die
 		rm -v lib/amd64/libjavafx_font_pango.so || die
+		rm -v jre/lib/amd64/libglassgtk2.so || die
+		rm -v jre/lib/amd64/libprism_es2.so || die
 	fi
 
 	if ! use source ; then
