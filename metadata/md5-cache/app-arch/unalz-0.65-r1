@@ -1,11 +1,11 @@
 DEFINED_PHASES=compile install
 DEPEND=app-arch/bzip2 sys-libs/zlib virtual/libiconv
 DESCRIPTION=Extract ALZ archives
-EAPI=7
+EAPI=8
 HOMEPAGE=http://kippler.com/win/unalz/
 KEYWORDS=~amd64 ~x86
 LICENSE=ZLIB
 RDEPEND=app-arch/bzip2 sys-libs/zlib virtual/libiconv
 SLOT=0
-SRC_URI=http://kippler.com/win/unalz/unalz-0.65.tgz https://alarmpi.no-ip.org/gentoo/unalz-0.65-use-system-zlib.patch.bz2 https://alarmpi.no-ip.org/gentoo/unalz-0.65-use-system-bz2.patch.bz2
-_md5_=21b040ce139f0daafb1d45a2d7564a9c
+SRC_URI=http://kippler.com/win/unalz/unalz-0.65.tgz https://git.launchpad.net/ubuntu/+source/unalz/patch/?id=b4ade05e7e6dec25fee7d57bac6a055137e332c0 -> unalz-0.65-use-system-zlib.patch https://git.launchpad.net/ubuntu/+source/unalz/patch/?id=00932925e108f186301c5941130fc34c9a76f345 -> unalz-0.65-use-system-bz2.patch
+_md5_=7b38abaa1d049bb8d1c8e6b062606b4e
