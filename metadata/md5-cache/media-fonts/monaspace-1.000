@@ -1,0 +1,14 @@
+BDEPEND=app-arch/unzip X? ( >=x11-apps/mkfontscale-1.2.0 media-fonts/encodings )
+DEFINED_PHASES=install postinst postrm prepare setup
+DESCRIPTION=A free and open-source typeface for developers
+EAPI=8
+HOMEPAGE=https://github.com/githubnext/monaspace
+INHERIT=font
+IUSE=variable +otf X
+KEYWORDS=~amd64
+LICENSE=OFL-1.1
+REQUIRED_USE=|| ( otf variable )
+SLOT=0
+SRC_URI=https://github.com/githubnext/monaspace/releases/download/v1.000/monaspace-v1.000.zip
+_eclasses_=font	aa113a3df9cd0a9693a1c1ee7c34a6eb
+_md5_=23fe60fdfa443b79ee0ddff36b4130a7
