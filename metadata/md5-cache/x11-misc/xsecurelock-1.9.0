@@ -1,0 +1,15 @@
+BDEPEND=virtual/pkgconfig sys-devel/gnuconfig >=app-portage/elt-patches-20240116 || ( >=dev-build/automake-1.16.5:1.16 ) || ( >=dev-build/autoconf-2.72-r1:2.72 >=dev-build/autoconf-2.71-r6:2.71 ) >=dev-build/libtool-2.4.7-r3
+DEFINED_PHASES=configure prepare
+DEPEND=dev-libs/libbsd media-libs/fontconfig sys-libs/pam x11-libs/libX11 x11-libs/libXScrnSaver x11-libs/libXcomposite x11-libs/libXext x11-libs/libXfixes x11-libs/libXft x11-libs/libXmu x11-libs/libXrandr mplayer? ( media-video/mplayer ) mpv? ( media-video/mpv ) xscreensaver? ( x11-misc/xscreensaver )
+DESCRIPTION=X11 screen lock utility with security in mind
+EAPI=8
+HOMEPAGE=https://github.com/google/xsecurelock
+INHERIT=autotools
+IUSE=mplayer mpv xscreensaver
+KEYWORDS=~amd64
+LICENSE=Apache-2.0
+RDEPEND=dev-libs/libbsd media-libs/fontconfig sys-libs/pam x11-libs/libX11 x11-libs/libXScrnSaver x11-libs/libXcomposite x11-libs/libXext x11-libs/libXfixes x11-libs/libXft x11-libs/libXmu x11-libs/libXrandr mplayer? ( media-video/mplayer ) mpv? ( media-video/mpv ) xscreensaver? ( x11-misc/xscreensaver ) x11-base/xorg-proto
+SLOT=0
+SRC_URI=https://github.com/google/xsecurelock/releases/download/v1.9.0/xsecurelock-1.9.0.tar.gz
+_eclasses_=gnuconfig	b6b3e92f8b8c996400074b5f61a59256	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	libtool	5f49a16f67f81bdf873e3d1f10b10001	autotools	3af8f60c4bdb23e738db506a630898ee
+_md5_=6dd8d9ff676b1a4e040b4138ca3f5c7d
