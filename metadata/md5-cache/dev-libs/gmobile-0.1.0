@@ -1,0 +1,16 @@
+BDEPEND=gtk-doc? ( >=dev-util/gi-docgen-2021.1 ) verify-sig? ( sec-keys/openpgp-keys-phosh ) >=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array verify-sig? ( app-crypt/gnupg >=app-portage/gemato-20 )
+DEFINED_PHASES=compile configure install test unpack
+DEPEND=>=dev-libs/glib-2.66:2 >=dev-libs/json-glib-1.6.2 introspection? ( dev-libs/gobject-introspection )
+DESCRIPTION=Mobile related helpers for glib based projects
+EAPI=8
+HOMEPAGE=https://gitlab.gnome.org/World/Phosh/gmobile/
+INHERIT=meson verify-sig
+IUSE=gtk-doc +introspection test verify-sig
+KEYWORDS=~amd64 ~arm ~arm64 ~x86
+LICENSE=LGPL-2.1+
+RDEPEND=>=dev-libs/glib-2.66:2 >=dev-libs/json-glib-1.6.2 introspection? ( dev-libs/gobject-introspection )
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://sources.phosh.mobi/releases/gmobile/gmobile-0.1.0.tar.xz verify-sig? ( https://sources.phosh.mobi/releases/gmobile/gmobile-0.1.0.tar.xz.asc )
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	288c54efeb5e2aa70775e39032695ad4	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	a1229a86bd0db058e474a2d7d9191cca	meson	aecae905c2e0c201d7925fae52a5576d	verify-sig	a79ba011daaf532d71a219182474d150
+_md5_=c9528df15ff45f36cd4feee35a3faae2
