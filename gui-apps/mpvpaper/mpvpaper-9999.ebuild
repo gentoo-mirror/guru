@@ -32,3 +32,8 @@ BDEPEND="
 	dev-util/wayland-scanner
 	virtual/pkgconfig
 "
+
+src_install() {
+	meson_src_install
+	newman mpvpaper.man mpvpaper.1
+}
