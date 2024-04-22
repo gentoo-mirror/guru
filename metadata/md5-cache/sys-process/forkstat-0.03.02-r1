@@ -1,9 +1,11 @@
-DEFINED_PHASES=prepare
+DEFINED_PHASES=compile prepare
 DESCRIPTION=Logs process fork(), exec() and exit() activity
 EAPI=8
 HOMEPAGE=https://github.com/ColinIanKing/forkstat
+INHERIT=toolchain-funcs
 KEYWORDS=~amd64
 LICENSE=GPL-2
 SLOT=0
 SRC_URI=https://github.com/ColinIanKing/forkstat/archive/refs/tags/V0.03.02.tar.gz -> forkstat-0.03.02.tar.gz
-_md5_=ce7f3731d24e854ed2367253de91363a
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0
+_md5_=ed22db4481de05d37e2a5a608f2d049d

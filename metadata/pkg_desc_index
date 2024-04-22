@@ -110,7 +110,7 @@ app-admin/pass-audit 1.2 1.2-r1: A pass extension for auditing your password rep
 app-admin/pass-update 2.2.1: pass extension that provides an easy flow for updating passwords
 app-admin/pulumi-bin 3.111.1 3.112.0 3.113.0: Infrastructure as code in any programming language
 app-admin/rbw 9999: unofficial bitwarden cli
-app-admin/s-tui 1.1.4 1.1.6: Stress-Terminal UI monitoring tool
+app-admin/s-tui 1.1.6: Stress-Terminal UI monitoring tool
 app-admin/synadm 0.43.1 0.44: Command line admin tool for Synapse
 app-admin/terragrunt-bin 0.38.6 0.45.4 0.50.8: A thin wrapper for Terraform
 app-admin/vaultwarden 1.30.3 1.30.4 1.30.5 9999: Unofficial Bitwarden compatible password manager server written in Rust
@@ -362,7 +362,7 @@ dev-build/FoBiS 3.0.5-r1: FoBiS.py, a Fortran Building System for poor men
 dev-build/cargo-make 0.37.11: Rust task runner and build tool
 dev-build/fpm 0.9.0 0.10.0: Fortran Package Manager (fpm)
 dev-build/fypp 3.1 3.2: Fypp - Python powered Fortran preprocessor
-dev-build/just 1.25.0 1.25.2: Just a command runner (with syntax inspired by 'make')
+dev-build/just 1.25.2: Just a command runner (with syntax inspired by 'make')
 dev-build/xmake 2.8.9 9999: A cross-platform build utility based on Lua
 dev-cpp/blurhash 0.2.0 0.2.0-r1: C++ blurhash encoder/decoder
 dev-cpp/coeurl 0.2.1 0.3.0: A simple async wrapper around CURL for C++
@@ -607,7 +607,7 @@ dev-python/asgi-lifespan 2.0.0 2.1.0: Programmatic startup/shutdown of ASGI apps
 dev-python/aspectlib 2.0.0-r1: Aspect-oriented programming, monkey-patch and decorators library
 dev-python/asyncinotify 4.0.1: An async python inotify package
 dev-python/asyncmy 0.2.8: A fast asyncio MySQL driver
-dev-python/asyncpg 0.27.0 0.29.0-r1: PostgreSQL driver for asyncio
+dev-python/asyncpg 0.29.0-r1: PostgreSQL driver for asyncio
 dev-python/auditok 0.1.5 0.2.0-r1: A module for Audio/Acoustic Activity Detection
 dev-python/autoflake 2.2.1: Removes unused imports and unused variables from Python code
 dev-python/avro 1.11.3: Apache Avro is a data serialization system
@@ -803,7 +803,7 @@ dev-python/queuelib 1.6.2: Collection of persistent and non-persistent queues fo
 dev-python/readability-lxml 0.6.1 0.8.1: fast html to text parser (article readability tool)
 dev-python/readmdict 0.1.1-r1: Read mdx/mdd files
 dev-python/rectangle-packer 2.0.2: Pack a set of rectangles into a bounding box with minimum area
-dev-python/repology-client 0.0.2: Asynchronous wrapper for Repology API
+dev-python/repology-client 0.0.2 0.2.0: Asynchronous wrapper for Repology API
 dev-python/rpmautospec-core 0.1.4: Core functionality used by rpmautospec
 dev-python/rst2ansi 0.1.5-r2: Render reStructuredText documents to the terminal
 dev-python/rstcheck 6.2.0 6.2.1: Checks syntax of reStructuredText and code blocks nested within it
@@ -1013,7 +1013,7 @@ games-util/protonup 0.1.5 9999: Install and Update Proton-GE
 games-util/r2modman-bin 3.1.48: A simple and easy to use mod manager for several games using Thunderstore
 games-util/roll 2.6.1: Program to roll dices specified in a simple and intuitive way
 games-util/samrewritten 9999 202008: Steam Achievement Manager For Linux
-games-util/sdl2-gamepad-mapper 0.0.7: GUI application to generate an SDL2 mapping string from a generic controller
+games-util/sdl2-gamepad-mapper 0.0.7-r1: GUI application to generate an SDL2 mapping string from a generic controller
 games-util/steamtinkerlaunch 12.0: Wrapper script for Steam custom launch options
 games-util/xivlauncher 1.0.8: Custom Launcher for Final Fantasy XIV Online (Crossplatform rewrite)
 gnome-extra/commit 4.1-r1: Commit message editor
@@ -1057,7 +1057,7 @@ gui-apps/fuzzel 1.9.2 1.10.2 9999: Application launcher for wlroots based Waylan
 gui-apps/gcolor3 2.4.0: A simple color chooser written in GTK3
 gui-apps/gradience 0.3.0-r1: GNOME's main interface to configure various aspects of the desktop
 gui-apps/grimshot 9999: A helper for screenshots within sway
-gui-apps/gtklock 2.0.1 2.1.0: GTK-based lockscreen for Wayland
+gui-apps/gtklock 3.0.0: GTK-based lockscreen for Wayland
 gui-apps/gtklock-extras 9999: Gtklock modules
 gui-apps/hiprompt-gtk-py 0_pre20221221 9999: GTK+ Himitsu prompter for Wayland
 gui-apps/hypridle 0.1.1 9999: Hyprland's idle daemon
@@ -1121,6 +1121,7 @@ gui-apps/wscreensaver 9999: Xscreensaver screensavers ported to wayland
 gui-apps/wtype 0.4: xdotool type for wayland
 gui-apps/xremap 0.8.18: Dynamic key remap for X and Wayland
 gui-apps/yambar 1.9.0 1.10.0 9999: Simplistic and highly configurable status panel for X and Wayland
+gui-libs/gtk-session-lock 0.2.0-r3: GTK-based lockscreen for Wayland
 gui-libs/libcprime 4.5.0 9999: Library for managing settings of CoreApps
 gui-libs/libcsys 4.5.0 9999: Library for managing the device
 gui-libs/text-engine 0.1.1-r2 9999: A lightweight rich-text framework for GTK 4
@@ -1316,6 +1317,7 @@ net-fs/httpdirfs 1.2.0: Filesystem to mount HTTP directory listings, with a perm
 net-fs/hubicfuse 3.0.1: Support for mounting HubiC drive in GNU/Linux
 net-im/Quaternion 0.0.95.1 0.0.96_beta4: A Qt-based IM client for Matrix
 net-im/abaddon 0.1.12-r1 0.1.13 9999: Alternative Discord client using GTK instead of Electron
+net-im/armcord-bin 3.2.6: ArmCord is a custom client designed to enhance your Discord experience.
 net-im/axolotl-bin 2.0.1: Axolotl is a cross-platform Signal client
 net-im/beeper 3.102.16 3.103.36: Beeper: Unified Messenger
 net-im/chatterino 2.4.6: Chat client for https://twitch.tv
@@ -1599,7 +1601,7 @@ sys-power/fan2go 0.6.2 0.6.2-r1 0.8.1: A simple daemon providing dynamic fan spe
 sys-power/gtherm 0.0.3: A simple daemon to monitor thermal zones and cooling devices
 sys-power/linux-tools-power-x86 5.18 6.1: Linux x86 CPU power tools
 sys-power/nvidia-exec 0.1.2-r1 9999: GPU switching without login out for Nvidia Optimus laptops under Linux
-sys-process/forkstat 0.03.02: Logs process fork(), exec() and exit() activity
+sys-process/forkstat 0.03.02-r1: Logs process fork(), exec() and exit() activity
 sys-process/gotop 4.2.0: A terminal based graphical activity monitor inspired by gtop and vtop
 sys-process/nq 0.4: Unix command line queue utility
 sys-process/nvtop 2.0.3 3.0.1 3.0.2 9999: (h)top like task monitor for AMD, Intel, NVIDIA, … GPUs
