@@ -40,7 +40,7 @@ BDEPEND="
 "
 
 PATCHES=(
-	"${FILESDIR}/${PN}-5.0-fix-gentoo-libfmt-depend.patch"
+	"${FILESDIR}/${PN}-6.0-fix-gentoo-libfmt-depend.patch"
 )
 
 src_configure() {
