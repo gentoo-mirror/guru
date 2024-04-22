@@ -2,14 +2,14 @@
 <!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
 	<maintainer type="person">
-		<email>julien@jroy.ca</email>
-		<name>Julien Roy</name>
-	</maintainer>
-	<maintainer type="person">
 		<email>gonegrier.duarte@gmail.com</email>
 		<name>Gonçalo Negrier Duarte</name>
 	</maintainer>
 	<upstream>
-		<remote-id type="github">jovanlanik/gtklock</remote-id>
+		<remote-id type="github">Cu3PO42/gtk-session-lock</remote-id>
 	</upstream>
+	<use>
+		<flag name="examples">Build example applications</flag>
+		<flag name="docs">Build devhelp API documentation</flag>
+	</use>
 </pkgmetadata>
