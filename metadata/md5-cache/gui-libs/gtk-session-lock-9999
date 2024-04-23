@@ -1,0 +1,16 @@
+BDEPEND=dev-util/wayland-scanner virtual/pkgconfig dev-build/meson gtk-doc? ( dev-util/gtk-doc ) test? ( || ( dev-lang/python:3.12 dev-lang/python:3.11 dev-lang/python:3.10 ) ) vala? ( || ( dev-lang/vala:0.56[vapigen(+)] ) ) >=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile configure install prepare setup test unpack
+DEPEND=x11-libs/gtk+:3[introspection?,wayland] >=dev-libs/wayland-1.22.0 >=dev-libs/wayland-protocols-1.34 test? ( gui-libs/gtk-layer-shell[introspection?] )
+DESCRIPTION=GTK-based lockscreen for Wayland
+EAPI=8
+HOMEPAGE=https://github.com/Cu3PO42/gtk-session-lock
+INHERIT=vala meson python-any-r1 git-r3
+IUSE=examples gtk-doc introspection test vala
+LICENSE=GPL-3
+PROPERTIES=live
+RDEPEND=x11-libs/gtk+:3[introspection?,wayland] >=dev-libs/wayland-1.22.0 >=dev-libs/wayland-protocols-1.34 test? ( gui-libs/gtk-layer-shell[introspection?] ) sys-libs/pam
+REQUIRED_USE=vala? ( introspection )
+RESTRICT=!test? ( test )
+SLOT=0
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	288c54efeb5e2aa70775e39032695ad4	vala	e477903dbe0105930c51f170a592dc16	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	a1229a86bd0db058e474a2d7d9191cca	meson	aecae905c2e0c201d7925fae52a5576d	python-any-r1	f5169813d1619761b459800587005fd2	git-r3	fbb2889c81f3a05910c1524db69425c1
+_md5_=96bbc05224cd3885ea2fab49a6977c0e
