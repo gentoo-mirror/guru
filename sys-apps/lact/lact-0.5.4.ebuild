@@ -9,25 +9,25 @@ CRATES="
 	addr2line@0.21.0
 	adler32@1.2.0
 	adler@1.0.2
-	ahash@0.8.7
+	ahash@0.8.11
 	aho-corasick@1.1.2
 	amdgpu-sysfs@0.14.0
 	android-tzdata@0.1.1
 	android_system_properties@0.1.5
-	anstream@0.6.11
+	anes@0.1.6
+	anstream@0.6.13
 	anstyle-parse@0.2.3
 	anstyle-query@1.0.2
 	anstyle-wincon@3.0.2
-	anstyle@1.0.4
-	anyhow@1.0.79
+	anstyle@1.0.6
+	anyhow@1.0.80
 	ash@0.37.3+1.3.251
-	async-broadcast@0.5.1
-	async-channel@2.1.1
-	async-io@1.13.0
-	async-io@2.3.0
+	async-broadcast@0.7.0
+	async-channel@2.2.0
+	async-io@2.3.1
 	async-lock@2.8.0
 	async-lock@3.3.0
-	async-process@1.8.1
+	async-process@2.1.0
 	async-recursion@1.0.5
 	async-signal@0.2.5
 	async-task@4.7.0
@@ -40,60 +40,83 @@ CRATES="
 	bitflags@2.4.2
 	block-buffer@0.10.4
 	blocking@1.5.1
-	bumpalo@3.14.0
-	bytemuck@1.14.0
+	bumpalo@3.15.3
+	bytemuck@1.14.3
 	bytemuck_derive@1.5.0
 	byteorder@1.5.0
 	bytes@1.5.0
-	cairo-rs@0.19.1
-	cairo-sys-rs@0.19.1
-	cc@1.0.83
-	cfg-expr@0.15.6
+	cairo-rs@0.19.2
+	cairo-sys-rs@0.19.2
+	cast@0.3.0
+	cc@1.0.88
+	cfg-expr@0.15.7
 	cfg-if@1.0.0
-	chrono@0.4.31
-	clap@4.4.18
-	clap_builder@4.4.18
-	clap_derive@4.4.7
-	clap_lex@0.6.0
+	cfg_aliases@0.1.1
+	chrono@0.4.34
+	ciborium-io@0.2.2
+	ciborium-ll@0.2.2
+	ciborium@0.2.2
+	clap@4.5.1
+	clap_builder@4.5.1
+	clap_derive@4.5.0
+	clap_lex@0.7.0
 	colorchoice@1.0.0
 	concurrent-queue@2.4.0
+	const-cstr@0.3.0
 	core-foundation-sys@0.8.6
 	core-foundation@0.9.4
 	core-graphics-types@0.1.3
+	core-graphics@0.22.3
+	core-text@19.2.0
 	core2@0.4.0
 	cpufeatures@0.2.12
-	crc32fast@1.3.2
+	crc32fast@1.4.0
+	criterion-plot@0.5.0
+	criterion@0.5.1
+	crossbeam-deque@0.8.5
+	crossbeam-epoch@0.9.18
 	crossbeam-queue@0.3.11
 	crossbeam-utils@0.8.19
 	crunchy@0.2.2
 	crypto-common@0.1.6
-	darling@0.20.3
-	darling_core@0.20.3
-	darling_macro@0.20.3
+	darling@0.20.8
+	darling_core@0.20.8
+	darling_macro@0.20.8
 	dary_heap@0.3.6
 	deranged@0.3.11
 	derivative@2.2.0
 	diff@0.1.13
 	digest@0.10.7
+	dirs-next@2.0.0
+	dirs-sys-next@0.1.2
+	dlib@0.5.2
+	dwrote@0.11.0
+	either@1.10.0
+	endi@1.1.0
 	enum_dispatch@0.3.12
-	enumflags2@0.7.8
-	enumflags2_derive@0.7.8
+	enumflags2@0.7.9
+	enumflags2_derive@0.7.9
 	equivalent@1.0.1
 	errno@0.3.8
 	event-listener-strategy@0.4.0
+	event-listener-strategy@0.5.0
 	event-listener@2.5.3
-	event-listener@3.1.0
 	event-listener@4.0.3
-	fastrand@1.9.0
+	event-listener@5.2.0
 	fastrand@2.0.1
 	field-offset@0.3.6
 	filetime@0.2.23
+	float-ord@0.2.0
 	fnv@1.0.7
+	font-kit@0.11.0
+	foreign-types-shared@0.1.1
+	foreign-types@0.3.2
+	freetype-sys@0.19.0
+	freetype@0.7.1
 	futures-channel@0.3.30
 	futures-core@0.3.30
 	futures-executor@0.3.30
 	futures-io@0.3.30
-	futures-lite@1.13.0
 	futures-lite@2.2.0
 	futures-macro@0.3.30
 	futures-sink@0.3.30
@@ -101,87 +124,97 @@ CRATES="
 	futures-util@0.3.30
 	futures@0.3.30
 	gdk-pixbuf-sys@0.19.0
-	gdk-pixbuf@0.19.0
-	gdk4-sys@0.8.0
-	gdk4@0.8.0
+	gdk-pixbuf@0.19.2
+	gdk4-sys@0.8.1
+	gdk4@0.8.1
 	generic-array@0.14.7
 	getrandom@0.2.12
 	gimli@0.28.1
 	gio-sys@0.19.0
-	gio@0.19.0
-	glib-macros@0.19.0
+	gio@0.19.3
+	glib-macros@0.19.3
 	glib-sys@0.19.0
-	glib@0.19.0
+	glib@0.19.3
 	gobject-sys@0.19.0
-	graphene-rs@0.19.0
+	graphene-rs@0.19.2
 	graphene-sys@0.19.0
-	gsk4-sys@0.8.0
-	gsk4@0.8.0
-	gtk4-macros@0.8.0
-	gtk4-sys@0.8.0
-	gtk4@0.8.0
-	half@2.3.1
+	gsk4-sys@0.8.1
+	gsk4@0.8.1
+	gtk4-macros@0.8.1
+	gtk4-sys@0.8.1
+	gtk4@0.8.1
+	half@2.4.0
 	hashbrown@0.13.2
 	hashbrown@0.14.3
 	heck@0.4.1
-	hermit-abi@0.3.4
+	heck@0.5.0
+	hermit-abi@0.3.9
 	hex@0.4.3
 	iana-time-zone-haiku@0.1.2
-	iana-time-zone@0.1.59
+	iana-time-zone@0.1.60
 	ident_case@1.0.1
-	indexmap@2.1.0
-	instant@0.1.12
-	io-lifetimes@1.0.11
+	indexmap@2.2.5
+	inotify-sys@0.1.5
+	inotify@0.9.6
+	is-terminal@0.4.12
+	itertools@0.10.5
+	itertools@0.12.1
 	itoa@1.0.10
-	js-sys@0.3.67
+	js-sys@0.3.69
+	kqueue-sys@1.0.4
+	kqueue@1.0.8
 	lazy_static@1.4.0
 	libadwaita-sys@0.6.0
 	libadwaita@0.6.0
-	libc@0.2.152
-	libdrm_amdgpu_sys@0.5.0
+	libc@0.2.153
+	libdrm_amdgpu_sys@0.6.0
 	libflate@2.0.0
 	libflate_lz77@2.0.0
 	libloading@0.7.4
-	libloading@0.8.1
-	linux-raw-sys@0.3.8
+	libloading@0.8.2
+	libredox@0.1.3
 	linux-raw-sys@0.4.13
 	lock_api@0.4.11
-	log@0.4.20
+	log@0.4.21
 	malloc_buf@0.0.6
 	matchers@0.1.0
 	memchr@2.7.1
-	memoffset@0.7.1
 	memoffset@0.9.0
-	miniz_oxide@0.7.1
-	mio@0.8.10
-	nix@0.26.4
-	nix@0.27.1
+	miniz_oxide@0.7.2
+	mio@0.8.11
+	nix@0.28.0
+	notify@6.1.1
 	nu-ansi-term@0.46.0
 	num-conv@0.1.0
-	num-traits@0.2.17
+	num-traits@0.2.18
 	num_threads@0.1.7
 	objc@0.2.7
 	object@0.32.2
 	once_cell@1.19.0
+	oorandom@11.1.3
 	ordered-stream@0.2.0
 	os-release@0.1.0
 	overload@0.1.1
 	pango-sys@0.19.0
-	pango@0.19.0
+	pango@0.19.3
 	parking@2.2.0
 	parking_lot@0.12.1
 	parking_lot_core@0.9.9
-	pciid-parser@0.7.1
+	pathfinder_geometry@0.5.1
+	pathfinder_simd@0.5.2
+	pciid-parser@0.7.2
 	pin-project-lite@0.2.13
 	pin-utils@0.1.0
 	piper@0.2.1
-	pkg-config@0.3.29
-	polling@2.8.0
-	polling@3.3.2
+	pkg-config@0.3.30
+	plotters-backend@0.3.5
+	plotters-cairo@0.6.0
+	plotters-svg@0.3.5
+	plotters@0.3.5
+	polling@3.5.0
 	powerfmt@0.2.0
 	ppv-lite86@0.2.17
 	pretty_assertions@1.4.0
-	proc-macro-crate@1.3.1
 	proc-macro-crate@3.1.0
 	proc-macro-error-attr@1.0.4
 	proc-macro-error@1.0.4
@@ -191,62 +224,67 @@ CRATES="
 	rand_chacha@0.3.1
 	rand_core@0.6.4
 	raw-window-handle@0.5.2
+	rayon-core@1.12.1
+	rayon@1.10.0
 	redox_syscall@0.4.1
+	redox_users@0.4.5
 	regex-automata@0.1.10
-	regex-automata@0.4.3
+	regex-automata@0.4.5
 	regex-syntax@0.6.29
 	regex-syntax@0.8.2
-	regex@1.10.2
+	regex@1.10.3
 	rle-decode-fast@1.0.3
 	rustc-demangle@0.1.23
 	rustc_version@0.4.0
-	rustix@0.37.27
-	rustix@0.38.30
+	rustix@0.38.31
 	rustversion@1.0.14
-	ryu@1.0.16
+	ryu@1.0.17
+	same-file@1.0.6
 	scopeguard@1.2.0
-	semver@1.0.21
-	serde@1.0.195
-	serde_derive@1.0.195
-	serde_json@1.0.111
+	semver@1.0.22
+	serde-error@0.1.2
+	serde@1.0.197
+	serde_derive@1.0.197
+	serde_json@1.0.114
 	serde_repr@0.1.18
 	serde_spanned@0.6.5
-	serde_with@3.5.0
-	serde_with_macros@3.5.0
-	serde_yaml@0.9.30
+	serde_with@3.6.1
+	serde_with_macros@3.6.1
+	serde_yaml@0.9.32
 	sha1@0.10.6
 	sharded-slab@0.1.7
 	signal-hook-registry@1.4.1
 	slab@0.4.9
 	smallvec@1.13.1
-	socket2@0.4.10
-	socket2@0.5.5
+	socket2@0.5.6
 	static_assertions@1.1.0
 	strsim@0.10.0
+	strsim@0.11.0
 	syn@1.0.109
-	syn@2.0.48
+	syn@2.0.52
 	system-deps@6.2.0
 	tar@0.4.40
-	target-lexicon@0.12.13
-	tempfile@3.9.0
-	thiserror-impl@1.0.56
-	thiserror@1.0.56
-	thread_local@1.1.7
+	target-lexicon@0.12.14
+	tempfile@3.10.1
+	thiserror-impl@1.0.57
+	thiserror@1.0.57
+	thread_local@1.1.8
 	time-core@0.1.2
 	time-macros@0.2.17
 	time@0.3.34
+	tinytemplate@1.2.1
 	tokio-macros@2.2.0
-	tokio@1.35.1
-	toml@0.8.2
+	tokio@1.36.0
+	toml@0.8.10
 	toml_datetime@0.6.5
-	toml_edit@0.19.15
-	toml_edit@0.20.2
 	toml_edit@0.21.1
+	toml_edit@0.22.6
 	tracing-attributes@0.1.27
 	tracing-core@0.1.32
 	tracing-log@0.2.0
 	tracing-subscriber@0.3.18
 	tracing@0.1.40
+	ttf-parser@0.17.1
 	typenum@1.17.0
 	uds_windows@1.1.0
 	unicode-ident@1.0.12
@@ -258,48 +296,53 @@ CRATES="
 	version_check@0.9.4
 	vk-parse@0.12.0
 	vulkano@0.34.1
-	waker-fn@1.1.1
+	walkdir@2.5.0
 	wasi@0.11.0+wasi-snapshot-preview1
-	wasm-bindgen-backend@0.2.90
-	wasm-bindgen-macro-support@0.2.90
-	wasm-bindgen-macro@0.2.90
-	wasm-bindgen-shared@0.2.90
-	wasm-bindgen@0.2.90
+	wasm-bindgen-backend@0.2.92
+	wasm-bindgen-macro-support@0.2.92
+	wasm-bindgen-macro@0.2.92
+	wasm-bindgen-shared@0.2.92
+	wasm-bindgen@0.2.92
+	web-sys@0.3.69
 	winapi-i686-pc-windows-gnu@0.4.0
+	winapi-util@0.1.6
 	winapi-x86_64-pc-windows-gnu@0.4.0
 	winapi@0.3.9
 	windows-core@0.52.0
 	windows-sys@0.48.0
 	windows-sys@0.52.0
 	windows-targets@0.48.5
-	windows-targets@0.52.0
+	windows-targets@0.52.4
 	windows_aarch64_gnullvm@0.48.5
-	windows_aarch64_gnullvm@0.52.0
+	windows_aarch64_gnullvm@0.52.4
 	windows_aarch64_msvc@0.48.5
-	windows_aarch64_msvc@0.52.0
+	windows_aarch64_msvc@0.52.4
 	windows_i686_gnu@0.48.5
-	windows_i686_gnu@0.52.0
+	windows_i686_gnu@0.52.4
 	windows_i686_msvc@0.48.5
-	windows_i686_msvc@0.52.0
+	windows_i686_msvc@0.52.4
 	windows_x86_64_gnu@0.48.5
-	windows_x86_64_gnu@0.52.0
+	windows_x86_64_gnu@0.52.4
 	windows_x86_64_gnullvm@0.48.5
-	windows_x86_64_gnullvm@0.52.0
+	windows_x86_64_gnullvm@0.52.4
 	windows_x86_64_msvc@0.48.5
-	windows_x86_64_msvc@0.52.0
-	winnow@0.5.34
+	windows_x86_64_msvc@0.52.4
+	winnow@0.5.40
+	winnow@0.6.5
+	wio@0.2.2
 	xattr@1.3.1
-	xdg-home@1.0.0
+	xdg-home@1.1.0
 	xml-rs@0.8.19
 	yansi@0.5.1
-	zbus@3.14.1
-	zbus_macros@3.14.1
-	zbus_names@2.6.0
+	yeslogic-fontconfig-sys@3.2.0
+	zbus@4.1.2
+	zbus_macros@4.1.2
+	zbus_names@3.0.0
 	zerocopy-derive@0.7.32
 	zerocopy@0.7.32
-	zvariant@3.15.0
-	zvariant_derive@3.15.0
-	zvariant_utils@1.0.1
+	zvariant@4.0.2
+	zvariant_derive@4.0.2
+	zvariant_utils@1.1.0
 "
 
 inherit cargo xdg
@@ -315,9 +358,8 @@ S="${WORKDIR}/${P^^}"
 LICENSE="MIT"
 # Dependent crate licenses
 LICENSE+="
-	Apache-2.0-with-LLVM-exceptions BSD GPL-3 ISC MIT Unicode-DFS-2016
-	ZLIB
-	|| ( Apache-2.0 Boost-1.0 )
+	Apache-2.0 Apache-2.0-with-LLVM-exceptions CC0-1.0 GPL-3 ISC MIT
+	MPL-2.0 Unicode-DFS-2016 ZLIB
 "
 SLOT="0"
 KEYWORDS="~amd64"
@@ -325,7 +367,7 @@ IUSE="+drm gtk libadwaita"
 
 DEPEND="
 	drm? ( x11-libs/libdrm[video_cards_amdgpu] )
-	gtk? ( gui-libs/gtk:4 )
+	gtk? ( gui-libs/gtk:4[introspection] )
 	libadwaita? ( >=gui-libs/libadwaita-1.4.0:1 )
 "
 RDEPEND="
