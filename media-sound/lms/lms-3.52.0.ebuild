@@ -21,7 +21,7 @@ RDEPEND="
 	dev-libs/boost
 	dev-libs/libconfig[cxx]
 	media-libs/taglib
-	media-video/ffmpeg
+	media-video/ffmpeg[mp3,opus]
 
 	!stb? ( media-gfx/graphicsmagick )
 
@@ -38,8 +38,6 @@ BDEPEND="
 "
 
 PATCHES=(
-	"${FILESDIR}/${PN}-fix-lib-dir.patch"
-	"${FILESDIR}/${PN}-optional-tests.patch"
 	"${FILESDIR}/${PN}-respect-ldflags.patch"
 )
 
