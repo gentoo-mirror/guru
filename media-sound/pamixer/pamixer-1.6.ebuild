@@ -1,5 +1,5 @@
 EAPI=8
-PV="1.6"
+
 DESCRIPTION="Pulseaudio command-line mixer like amixer"
 HOMEPAGE="https://github.com/cdemoulins/pamixer"
 SRC_URI="https://github.com/cdemoulins/pamixer/archive/v${PV}.tar.gz -> ${P}.tar.gz"
@@ -22,7 +22,7 @@ src_prepare() {
 }
 
 src_configure() {
-    meson build --prefix=/usr
+    meson setup build --prefix=/usr
 }
 
 src_compile() {
