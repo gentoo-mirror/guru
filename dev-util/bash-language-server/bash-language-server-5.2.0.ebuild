@@ -1,4 +1,4 @@
-# Copyright 2022-2023 Gentoo Authors
+# Copyright 2022-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -9,7 +9,6 @@ DESCRIPTION="A language server for Bash"
 HOMEPAGE="https://github.com/bash-lsp/bash-language-server"
 SRC_URI="
 	mirror://npm/${PN}/-/${P}.tgz
-	https://tastytea.de/files/gentoo/${P}-deps.tar.xz
 "
 S="${WORKDIR}"
 
@@ -21,8 +20,8 @@ LICENSE="BSD-2 ISC MIT"
 SLOT="0"
 KEYWORDS="~amd64"
 
-RDEPEND=">=net-libs/nodejs-18.16.19"
-BDEPEND=">=net-libs/nodejs-18.16.19[npm]"
+RDEPEND=">=net-libs/nodejs-18.19.30"
+BDEPEND=">=net-libs/nodejs-18.19.30[npm]"
 
 src_unpack() {
 	cd "${T}" || die "Could not cd to temporary directory"

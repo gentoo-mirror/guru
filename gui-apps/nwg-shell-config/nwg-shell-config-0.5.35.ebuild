@@ -3,18 +3,16 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{10..11} )
+PYTHON_COMPAT=( python3_{11..12} )
 DISTUTILS_USE_PEP517=setuptools
 inherit desktop distutils-r1 xdg-utils
 
-SRC_URI="https://github.com/nwg-piotr/nwg-shell-config/archive/v${PV}.tar.gz -> ${P}.tar.gz"
-KEYWORDS="~amd64"
-
 DESCRIPTION="nwg-shell configuration utility"
 HOMEPAGE="https://github.com/nwg-piotr/nwg-shell-config"
+SRC_URI="https://github.com/nwg-piotr/nwg-shell-config/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 LICENSE="MIT"
-
 SLOT="0"
+KEYWORDS="~amd64"
 
 RDEPEND="
 	gui-apps/nwg-shell

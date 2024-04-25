@@ -8,9 +8,9 @@ DISTUTILS_USE_PEP517=setuptools
 
 inherit bash-completion-r1 distutils-r1 git-r3
 
-DESCRIPTION="Evernote CLI: CRUD for notes in cloud"
-HOMEPAGE="https://github.com/Evernote/evernote-sdk-python3"
-EGIT_REPO_URI="https://github.com/jeffkowalski/geeknote"
+DESCRIPTION="Evernote CLI: CRUD for notes in cloud, in markdown"
+HOMEPAGE="http://web.archive.org/web/20171008200604/http://www.geeknote.me/"
+EGIT_REPO_URI="https://github.com/vitaly-zdanevich/geeknote"
 
 LICENSE="GPL-3"
 SLOT="0"
@@ -26,6 +26,8 @@ RDEPEND="
 "
 
 PATCHES=( "${FILESDIR}/${P}-remove_completion_from_setup.patch" )
+
+RESTRICT="test"
 
 python_install_all() {
 	dobashcomp completion/bash_completion/_geeknote
