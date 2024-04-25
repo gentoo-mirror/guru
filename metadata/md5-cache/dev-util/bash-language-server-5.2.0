@@ -1,4 +1,4 @@
-BDEPEND=>=net-libs/nodejs-18.16.19[npm]
+BDEPEND=>=net-libs/nodejs-18.19.30[npm]
 DEFINED_PHASES=install postinst unpack
 DESCRIPTION=A language server for Bash
 EAPI=8
@@ -6,8 +6,8 @@ HOMEPAGE=https://github.com/bash-lsp/bash-language-server
 INHERIT=optfeature
 KEYWORDS=~amd64
 LICENSE=BSD-2 ISC MIT
-RDEPEND=>=net-libs/nodejs-18.16.19
+RDEPEND=>=net-libs/nodejs-18.19.30
 SLOT=0
-SRC_URI=mirror://npm/bash-language-server/-/bash-language-server-5.0.0.tgz https://tastytea.de/files/gentoo/bash-language-server-5.0.0-deps.tar.xz
+SRC_URI=mirror://npm/bash-language-server/-/bash-language-server-5.2.0.tgz
 _eclasses_=optfeature	222cb475c5a4f7ae7cfb0bf510a6fe54
-_md5_=0ba41b1aefbf2edbec1b9b471214190e
+_md5_=c5f36da7bbef58f13aa5b46bc01f87ff
