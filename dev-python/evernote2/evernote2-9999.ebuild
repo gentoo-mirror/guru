@@ -13,7 +13,6 @@ HOMEPAGE="
 "
 
 EGIT_REPO_URI="https://github.com/JackonYang/evernote2"
-EGIT_BRANCH="version/$PV"
 inherit git-r3 distutils-r1
 
 LICENSE="Apache-2.0"
@@ -21,6 +20,6 @@ LICENSE="Apache-2.0"
 SLOT="0"
 
 RDEPEND="
-	dev-python/python-oauth2[${PYTHON_USEDEP}]
+	dev-python/oauthlib[${PYTHON_USEDEP}]
 	dev-python/thrift[${PYTHON_USEDEP}]
 "
