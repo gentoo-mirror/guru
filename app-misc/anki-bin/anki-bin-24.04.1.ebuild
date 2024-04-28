@@ -11,57 +11,34 @@ EAPI=8
 PYTHON_COMPAT=( python3_{10..12} )
 inherit desktop optfeature python-single-r1 pypi readme.gentoo-r1 xdg
 
+# bump to latest PV, where any of the miscellaneous files changed
+MY_PV=2.1.50
+MY_P=${PN}-${MY_PV}
+
 DESCRIPTION="A spaced-repetition memory training program (flash cards)"
 HOMEPAGE="https://apps.ankiweb.net/"
 SRC_URI="
 	$(pypi_wheel_url --unpack anki ${PV} cp39 abi3-manylinux_2_28_x86_64)
 	$(pypi_wheel_url --unpack aqt ${PV})
-	https://raw.githubusercontent.com/ankitects/anki/${PV}/qt/bundle/lin/anki.1 -> ${P}.1
-	https://raw.githubusercontent.com/ankitects/anki/${PV}/qt/bundle/lin/anki.desktop -> ${P}.desktop
-	https://raw.githubusercontent.com/ankitects/anki/${PV}/qt/bundle/lin/anki.png -> ${P}.png
-	https://raw.githubusercontent.com/ankitects/anki/${PV}/qt/bundle/lin/anki.xml -> ${P}.xml
-	https://raw.githubusercontent.com/ankitects/anki/${PV}/qt/bundle/lin/anki.xpm -> ${P}.xpm
+	https://raw.githubusercontent.com/ankitects/anki/${MY_PV}/qt/bundle/lin/anki.1 -> ${MY_P}.1
+	https://raw.githubusercontent.com/ankitects/anki/${MY_PV}/qt/bundle/lin/anki.desktop -> ${MY_P}.desktop
+	https://raw.githubusercontent.com/ankitects/anki/${MY_PV}/qt/bundle/lin/anki.png -> ${MY_P}.png
+	https://raw.githubusercontent.com/ankitects/anki/${MY_PV}/qt/bundle/lin/anki.xml -> ${MY_P}.xml
+	https://raw.githubusercontent.com/ankitects/anki/${MY_PV}/qt/bundle/lin/anki.xpm -> ${MY_P}.xpm
 "
 
 S="${WORKDIR}"
 
-# The program itself is licensed under AGPL-3+ with contributed portions licensed
-# under BSD-3.
-# The translation files are licensed under BSD-3 and public-domain.
-# - ftl/
-LICENSE="AGPL-3+ BSD public-domain"
+# How to get an up-to-date summary of runtime JS libs' licenses:
+# ./node_modules/.bin/license-checker-rseidelsohn --production --excludePackages anki --summary
+LICENSE="0BSD AGPL-3+ BSD CC-BY-4.0 GPL-3+ Unlicense public-domain"
 # Dependent crate licenses
 LICENSE+="
 	Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD-2 CC0-1.0 ISC MIT
 	MPL-2.0 Unicode-DFS-2016 ZLIB
 "
 # Manually added crate licenses
-LICENSE+=" openssl Unicode-3.0"
-# The supermemo importer is licensed under GPL-3+ and 0BSD.
-# - pylib/anki/importing/supermemo_xml.py
-#
-# Anki bundles 3rd-party code and assets:
-# The MathJax files are licensed under Apache-2.0.
-# - node_modules/mathjax/es5/
-#
-# The fancy deboss pattern is licensed under CC-BY-4.0.
-# - pylib/anki/statsbg.py
-#
-# The patched MPV controls are licensed under MIT.
-# - qt/aqt/mpv.py
-#
-# The Winpath module is licensed under MIT.
-# - qt/aqt/winpaths.py
-#
-# The licenses for the runtime JS libaries are documented in the source code.
-# - ts/licenses.json
-# How to get an up-to-date summary:
-# ./node_modules/.bin/license-checker-rseidelsohn --production --excludePackages anki --summary
-#
-# The vendored Flot plotting library is licensed under MIT.
-# - qt/aqt/data/web/js/vendor/plot.js
-LICENSE+=" 0BSD CC-BY-4.0 GPL-3+ Unlicense"
-
+LICENSE+=" Unicode-3.0 openssl"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE="qt6"
@@ -117,9 +94,6 @@ https://addon-docs.ankiweb.net/
 
 src_prepare() {
 	default
-	# revert fa771991c in favor of Gentoo's hack to force the system cert
-	# store on dev-python/certifi
-	sed -i '/pip_system_certs/d' aqt/__init__.py || die
 	# Anki's Qt detection mechanism falls back to Qt5 Python bindings, if Qt6
 	# Python bindings don't get imported successfully.
 	if ! use qt6; then
@@ -131,12 +105,12 @@ src_install() {
 	python_domodule anki {,_}aqt *.dist-info
 	printf "#!/usr/bin/python3\nimport sys;from aqt import run;sys.exit(run())" > runanki
 	python_newscript runanki anki
-	newicon "${DISTDIR}"/${P}.png anki.png
-	newicon "${DISTDIR}"/${P}.xpm anki.xpm
-	newmenu "${DISTDIR}"/${P}.desktop anki.desktop
-	newman "${DISTDIR}"/${P}.1 anki.1
+	newicon "${DISTDIR}"/${MY_P}.png anki.png
+	newicon "${DISTDIR}"/${MY_P}.xpm anki.xpm
+	newmenu "${DISTDIR}"/${MY_P}.desktop anki.desktop
+	newman "${DISTDIR}"/${MY_P}.1 anki.1
 	insinto /usr/share/mime/packages
-	newins "${DISTDIR}"/${P}.xml anki.xml
+	newins "${DISTDIR}"/${MY_P}.xml anki.xml
 
 	readme.gentoo_create_doc
 }
@@ -150,7 +124,7 @@ pkg_postinst() {
 	optfeature "faster database operations" dev-python/orjson
 	use qt6 && optfeature "compatibility with Qt5-dependent add-ons" dev-python/PyQt6[dbus,printsupport]
 	use qt6 && optfeature "Vulkan driver" "media-libs/vulkan-loader dev-qt/qtbase[vulkan]
-							  dev-qt/qtdeclarative:6[vulkan] dev-qt/qtwebengine:6[vulkan]"
+		dev-qt/qtdeclarative:6[vulkan] dev-qt/qtwebengine:6[vulkan]"
 
 	einfo "You can customize the LaTeX header for your cards to fit your needs:"
 	einfo "Notes > Manage Note Types > [select a note type] > Options"
