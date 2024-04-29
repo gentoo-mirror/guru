@@ -197,8 +197,9 @@ app-metrics/scaphandre 0.5.0: Electrical power consumption measurement agent
 app-misc/1password-cli 2.24.0: The world’s most-loved password manager CLI
 app-misc/afc 1.1 1.2 9999: Anime File Checker, checks CRC32 contained in filenames
 app-misc/afetch 2.2.0: Simple system info written in C
+app-misc/agg 1.4.3: Command-line tool for generating animated GIF files from asciicast v2 files
 app-misc/ani-cli 4.8 9999: A cli to browse and watch anime.
-app-misc/anki-bin 24.04.1: A spaced-repetition memory training program (flash cards)
+app-misc/anki-bin 24.04.1-r1: A spaced-repetition memory training program (flash cards)
 app-misc/apidb 5.8.0_beta 5.11.0_beta 5.13.1_beta 5.13.4_beta 5.13.6_beta: API Generator for Database access
 app-misc/aw-client 0.11.0: Client library for ActivityWatch
 app-misc/aw-core 0.11.0: Core library for ActivityWatch
@@ -236,7 +237,7 @@ app-misc/lyfetch 1.1: Small system information script for linux systems.
 app-misc/macchina 6.1.8 6.1.8-r1: A system information fetcher, with an (unhealthy) emphasis on performance.
 app-misc/mangadesk 0.7.7 0.7.8: Terminal Client for MangaDex
 app-misc/mat2 0.13.3 0.13.4: Metadata Anonymisation Toolkit: handy tool to trash your metadata
-app-misc/metadata-cleaner 2.5.4: Python GTK application to view and clean metadata in files, using mat2.
+app-misc/metadata-cleaner 2.5.5: Python GTK application to view and clean metadata in files, using mat2.
 app-misc/minder 1.16.2 1.16.3: Mind-mapping application for Elementary OS.
 app-misc/mobile-datovka 1.10.0: Mobile optimized GUI to access the Czech data box e-government system
 app-misc/navi 2.23.0: An interactive cheatsheet tool for the command-line
@@ -370,7 +371,7 @@ dev-cpp/coeurl 0.2.1 0.3.0: A simple async wrapper around CURL for C++
 dev-cpp/cpp-jwt 1.5_pre20220727: JSON Web Token library for C++
 dev-cpp/cpprestsdk 2.10.19-r3: A Microsoft project for cloud-based client-server communication.
 dev-cpp/cpptoml 0.1.1: Header-only library for parsing TOML
-dev-cpp/cpptrace 0.5.2: Simple, portable, and self-contained stacktrace library for C++
+dev-cpp/cpptrace 0.5.2 0.5.2-r1: Simple, portable, and self-contained stacktrace library for C++
 dev-cpp/dpp 10.0.23 10.0.24 10.0.25 10.0.29: Lightweight C++ Discord bot library
 dev-cpp/drogon 1.9.1 1.9.3: C++14/17 based HTTP web application framework
 dev-cpp/easyloggingpp 9.97.0 9.97.1: C++ logging library
@@ -515,7 +516,7 @@ dev-libs/libtypec 0.5.0 0.5.0-r1: Library to interface with USB Type-c/Power Del
 dev-libs/ls-hpack 2.3.0-r1 2.3.3: QPACK compression library for use with HTTP/3
 dev-libs/ls-qpack 2.5.0-r1 2.5.4: QPACK compression library for use with HTTP/3
 dev-libs/lsbcrypt 1.0.0-r1 1.0.0-r2: libcrypt wrapper for LiteSpeedTech
-dev-libs/lsquic 3.2.0 3.2.0-r1 4.0.8: LiteSpeed QUIC (LSQUIC) Library
+dev-libs/lsquic 3.2.0 3.2.0-r1 4.0.8 4.0.8-r1: LiteSpeed QUIC (LSQUIC) Library
 dev-libs/luksmeta 9-r1: LUKSMeta is a simple library for storing metadata in the LUKSv1 header
 dev-libs/md4c 0.4.8_p20220115 0.5.2: C Markdown parser. Fast, SAX-like interface, CommonMark Compliant.
 dev-libs/monero-seed 0.1.0: 14-word mnemonic seed for Monero
@@ -829,7 +830,7 @@ dev-python/sphinx-design 0.5.0: A sphinx extension for designing beautiful, view
 dev-python/sphinx-hoverxref 1.3.0: Sphinx extension to show tooltips with content embedded when hover a reference
 dev-python/sphinx-paramlinks 0.6.0: Allows param links in Sphinx function/method descriptions to be linkable
 dev-python/sphinx-rtd-dark-mode 1.2.4: Dark mode for the Sphinx Read the Docs theme
-dev-python/sphinx-sitemap 2.5.1: Sitemap generator for Sphinx
+dev-python/sphinx-sitemap 2.5.1 2.6.0: Sitemap generator for Sphinx
 dev-python/sphinx-version-warning 1.1.2: Sphinx extension to add a warning banner
 dev-python/sphinxcontrib-katex 0.9.9: KaTeX Sphinx extension for rendering of math in HTML pages
 dev-python/sphinxext-opengraph 0.9.1: Sphinx extension to generate unique OpenGraph metadata
@@ -852,7 +853,7 @@ dev-python/timeslot 0.1.2: Time slots/intervals with an arbitrary start and stop
 dev-python/trailrunner 1.2.1: Walk paths and run things
 dev-python/tulir-telethon 1.34.0_alpha2 1.34.0_alpha3 1.35.0_alpha1: Pure Python 3 MTProto API Telegram client library, for bots too!
 dev-python/tweepy 4.14.0: An easy-to-use Python library for accessing the Twitter API.
-dev-python/types-protobuf 4.24.0.20240311: Typing stubs for protobuf
+dev-python/types-protobuf 4.24.0.20240408: Typing stubs for protobuf
 dev-python/types-requests 2.31.0.20240311: Typing stubs for requests
 dev-python/typing-inspect 0.9.0: Runtime inspection utilities for Python typing module
 dev-python/undervolt 0.4.0 9999: Undervolt Intel CPUs under Linux
@@ -897,7 +898,7 @@ dev-util/distribution-gpg-keys 1.102: Collection of GPG keys used in Linux Distr
 dev-util/dockerfile-language-server 0.10.2 0.11.0: A language server for Dockerfiles
 dev-util/eclipse-parallel-bin 4.27 4.28: Eclipse IDE for Scientific Computing (C, C++, Fortran)
 dev-util/exercism 3.1.0 3.2.0: Command line client for https://exercism.io
-dev-util/find-work 0.6.0 0.6.1 9999: Personal advice utility for Gentoo package maintainers
+dev-util/find-work 0.6.1 0.7.0 9999: Personal advice utility for Gentoo package maintainers
 dev-util/fnm 1.35.1: Fast and simple Node.js version manager
 dev-util/fortls 2.13.0 3.0.0_rc2: Fortran Language Server (fortls)
 dev-util/fortran-test-drive 0.4.0: The simple testing framework (for Fortran)
@@ -929,7 +930,7 @@ dev-util/spi-tools 1.0.2: Simple command line tools to help using Linux spidev d
 dev-util/stripe-cli 9999: A command-line tool for Stripe
 dev-util/stylua 0.20.0: A code formatter for Lua
 dev-util/tflint-bin 0.43.0 0.46.0: A Pluggable Terraform Linter
-dev-util/tokei 12.1.1 12.1.2: Count code, quickly
+dev-util/tokei 12.1.1 12.1.2: Count your code, quickly
 dev-util/typescript-language-server 4.1.2 4.3.3: TypeScript & JavaScript Language Server
 dev-util/upstream-ontologist 0.1.35-r1: Tracking of upstream project metadata
 dev-util/vala-language-server 0.48.4: Code Intelligence for Vala & Genie
@@ -1024,7 +1025,7 @@ games-util/sdl2-gamepad-mapper 0.0.7-r1: GUI application to generate an SDL2 map
 games-util/steamtinkerlaunch 12.0: Wrapper script for Steam custom launch options
 games-util/xivlauncher 1.0.8: Custom Launcher for Final Fantasy XIV Online (Crossplatform rewrite)
 gnome-extra/commit 4.1-r1: Commit message editor
-gnome-extra/extension-manager 0.5.0 9999: A native tool for browsing, installing, and managing GNOME Shell Extensions
+gnome-extra/extension-manager 0.5.0 0.5.1 9999: A native tool for browsing, installing, and managing GNOME Shell Extensions
 gnome-extra/iio-sensor-proxy 3.3 3.5: IIO sensors to D-Bus proxy
 gnome-extra/junction 1.7-r1: Application/browser chooser
 gnome-extra/portfolio 0.9.14: A minimalist file manager for those who want to use Linux mobile devices
@@ -1072,6 +1073,7 @@ gui-apps/hyprlock 0.3.0-r1 9999: Hyprland's GPU-accelerated screen locking utili
 gui-apps/hyprpaper 0.5.0 0.6.0 0.6.0-r1: A blazing fast wayland wallpaper utility
 gui-apps/hyprpicker 0.1.1 0.2.0: A wlroots-compatible Wayland color picker that does not suck
 gui-apps/intiface-central-bin 2.5.5 2.5.7: Buttplug frontend application
+gui-apps/lan-mouse 0.7.3: Software KVM Switch / mouse & keyboard sharing software for Local Area Networks
 gui-apps/lemurs 0.3.1 0.3.1-r1 0.3.2: A TUI Display/Login Manager
 gui-apps/lswt 1.0.4 9999: List Wayland toplevels
 gui-apps/meteo-qt 3.3: A system tray application for the weather status
@@ -1253,6 +1255,7 @@ media-sound/noson-app 5.2.2 5.4.0 5.4.1 5.6.0 5.6.3 5.6.6: The essential to cont
 media-sound/nuclear-bin 0.6.15 0.6.17: Nuclear is a streaming program that pulls content from free sources on internet
 media-sound/nulloy 0.9.5 0.9.8 0.9.8.7 9999: Music player with a waveform progress bar (sound visualization)
 media-sound/opensoundmeter 1.2.1 1.2.2 1.2.2_p20230104: FFT based application for tuning sound systems
+media-sound/openutau 0.1.327 0.1.443 9999: Open source UTAU successor
 media-sound/pianobooster 1.0.0: A MIDI player/game that displays notes and teaches you how to play the piano
 media-sound/pipewire-module-xrdp 0.1_pre20230609-r1 0.2: PipeWire module which enables xrdp to use audio redirection
 media-sound/pulseaudio-virtualmic 0.1 9999: Use any offline or online media file or stream as a PulseAudio source
@@ -1420,7 +1423,7 @@ net-misc/wayback_machine_downloader 2.3.0 2.3.1: Download an entire website from
 net-misc/whatscli 1.0.6 1.0.11: A command line interface for WhatsApp
 net-misc/wsdd 0.7.0 0.7.1 0.8: A Web Service Discovery host daemon.
 net-misc/xh 0.20.1 0.21.0 0.22.0: Friendly and fast tool for sending HTTP requests
-net-misc/xkcd-handler 1.0.13: A handler for XKCD urls
+net-misc/xkcd-handler 1.1.4: A handler for XKCD urls
 net-misc/xmrig-mo 6.21.2: MoneroOcean fork of xmrig that supports algo switching
 net-misc/yacy 1.924.20210209.10069: YaCy - p2p based distributed web-search engine
 net-misc/youtube-dl 2021.12.17: youtube-dl fork with additional features and fixes
@@ -1556,6 +1559,7 @@ sys-apps/sampler 1.1.0: visualizer for shell commands, executions and alerting
 sys-apps/sampler-bin 1.1.0: visualizer for shell commands, executions and alerting
 sys-apps/sd 1.0.0: Intuitive find & replace CLI (sed alternative)
 sys-apps/systemd-bootchart 234 235: systemd boot performance graphing tool
+sys-apps/ugrep 5.1.4: A fast, drop-in replacement for GNU grep
 sys-auth/pam-gnupg 0.3: Unlock GnuPG keys on login
 sys-block/partclone 0.3.20: Partition cloning tool
 sys-boot/customrescuecd-x86-grub 0.1: Grub menu entries for the .iso image of customrescuecd
@@ -1590,7 +1594,7 @@ sys-fs/ufiformat 0.9.9: USB Floppy Disk formatting tool
 sys-fs/zfs-auto-utils 1.0.0: ZFS Automatic Scrub/Trim for Linux
 sys-kernel/dpdk-kmod 23.03: DPDK Kernel Nic Interface module
 sys-kernel/uek-sources 5.15.0.206.149.1 5.15.0.206.153.6: Unbreakable Enterprise Kernel (UEK) sources built from Oracle
-sys-kernel/ugrd 0.12.1-r1 0.19.1 0.19.3 0.20.0 0.21.2 0.22.0 1.0.0 1.1.4: Python based initramfs generator with TOML defintions
+sys-kernel/ugrd 0.12.1-r1 0.19.1 0.19.3 0.20.0 0.21.2 0.22.0 1.0.0 1.1.5: Python based initramfs generator with TOML defintions
 sys-kernel/usermode-kernel 6.0.12: Linux kernel built with Gentoo patches
 sys-kernel/xow 0.5: Linux driver for the Xbox One wireless dongle
 sys-kernel/zenpower3 0.2.0: Linux kernel driver for reading sensors of AMD Zen family CPUs
@@ -1678,7 +1682,7 @@ x11-misc/i3-restore 4.1: A simple bash + python script to restore your i3 sessio
 x11-misc/i3-resurrect 1.4.5: Saving and restoring i3 workspaces
 x11-misc/i3lock-color 2.13.5: The world's most popular non-default computer lockscreen
 x11-misc/i3lock-fancy-rapid 0.0.0_pre20201109-r1 0.0.0_pre20210421: A faster implementation of i3lock-fancy
-x11-misc/i3status-rust 0.32.3 0.33.0: A feature-rich and resource-friendly replacement for i3status, written in Rust.
+x11-misc/i3status-rust 0.32.3 0.33.0 0.33.1: A feature-rich and resource-friendly replacement for i3status, written in Rust.
 x11-misc/input-leap 9999: Share a mouse and keyboard between computers (fork of Barrier)
 x11-misc/ksnip 1.9.2 1.10.0-r1 1.10.1: Ksnip is a Qt based cross-platform screenshot tool
 x11-misc/leftwm-theme 0.1.2_rc1: A theme mangager for LeftWM
@@ -1695,7 +1699,7 @@ x11-terms/dmd5620 1.2.0: GTK+ 3.0 implementation of an AT&T / Teletype DMD 5620 
 x11-terms/rio 0.0.36-r1: A hardware-accelerated GPU terminal emulator powered by WebGPU
 x11-terms/rio-terminfo 0.0.34 0.0.35 0.0.36: Terminfo for Rio, a hardware-accelerated GPU terminal emulator powered by WebGPU
 x11-terms/tabby-bin 1.0.189: A terminal for a more modern age
-x11-terms/tym 3.5.0: Lua-configurable terminal emulator
+x11-terms/tym 3.5.0-r1: Lua-configurable terminal emulator
 x11-themes/adw-gtk3 5.2 5.3: The theme from libadwaita ported to GTK-3
 x11-themes/adwaita-dark-amoled 9999: GTK-3/4 theme: black background, blue accent
 x11-themes/arc-darkest-colors 0_pre20200818 0_pre20201112: Flat, dark-mode theme with transparent elements

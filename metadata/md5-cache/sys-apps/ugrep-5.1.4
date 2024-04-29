@@ -1,0 +1,14 @@
+DEFINED_PHASES=configure install test
+DEPEND=brotli? ( app-arch/brotli ) boost? ( dev-libs/boost ) bzip3? ( app-arch/bzip3 ) lz4? ( app-arch/lz4 ) lzma? ( app-arch/xz-utils ) pcre2? ( dev-libs/libpcre2 ) zlib? ( sys-libs/zlib ) zstd? ( app-arch/zstd ) virtual/pkgconfig
+DESCRIPTION=A fast, drop-in replacement for GNU grep
+EAPI=8
+HOMEPAGE=https://ugrep.com/
+INHERIT=shell-completion
+IUSE=7zip brotli boost bzip3 cpu_flags_arm_neon cpu_flags_x86_avx2 cpu_flags_x86_sse2 +lzma lz4 +mmap +pcre2 +zlib zstd
+KEYWORDS=~amd64 ~arm64
+LICENSE=BSD
+RDEPEND=brotli? ( app-arch/brotli ) boost? ( dev-libs/boost ) bzip3? ( app-arch/bzip3 ) lz4? ( app-arch/lz4 ) lzma? ( app-arch/xz-utils ) pcre2? ( dev-libs/libpcre2 ) zlib? ( sys-libs/zlib ) zstd? ( app-arch/zstd )
+SLOT=0
+SRC_URI=https://github.com/Genivia/ugrep/archive/v5.1.4.tar.gz -> ugrep-5.1.4.tar.gz
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	bash-completion-r1	f5e7a020fd9c741740756aac61bf75ff	shell-completion	bb7eb6bc232cd6c4bf8af739cdd2ee14
+_md5_=0d22c3884c722bd16572882bb7df7e6f
