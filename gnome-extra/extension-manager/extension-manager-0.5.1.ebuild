@@ -39,6 +39,10 @@ DEPEND="
 	${RDEPEND}
 "
 
+PATCHES=(
+	"${FILESDIR}/${PN}-0.5.1-frames_omitted_count.patch"
+)
+
 src_configure() {
 	local emesonargs=(
 		-Dpackage="ebuild"

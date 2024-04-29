@@ -44,7 +44,7 @@ KEYWORDS="~amd64"
 IUSE="qt6"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
-QA_PREBUILT="usr/lib/*"
+PATCHES="${FILESDIR}"/${P}-revert-cert-store-hack.patch
 
 RDEPEND="
 	app-misc/ca-certificates
@@ -79,6 +79,8 @@ RDEPEND="
 	!app-misc/anki
 "
 BDEPEND="app-arch/unzip"
+
+QA_PREBUILT="usr/lib/*"
 
 DOC_CONTENTS="Users with add-ons that still rely on Anki's Qt5 GUI can either switch
 to ${CATEGORY}/${PN}[-qt6], or temporarily set an environment variable
