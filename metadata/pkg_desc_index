@@ -90,6 +90,7 @@ app-admin/antidot 0.6.3: Cleans up your $HOME from those pesky dotfiles
 app-admin/aws-vault 7.2.0: Securely store and access AWS credentials in development environments
 app-admin/bitwarden-cli 2024.2.0 2024.2.1: CLI frontend client connects to Bitwarden comapatible password manager server
 app-admin/bitwarden-cli-bin 2024.2.0 2024.2.1 2024.3.1: Precompiled CLI frontend which connects to Bitwarden comapatible servers
+app-admin/boinctui 2.7.1: Fullscreen text mode manager for the BOINC client
 app-admin/chamber 2.13.2: Managing secrets in AWS SSM Parameter Store
 app-admin/chezmoi 2.47.3: Manage your dotfiles across multiple machines, securely
 app-admin/customrescuecd-x86 0.4.1: A system rescue cd or usbstick for desktop and server based on gentoo
@@ -632,7 +633,7 @@ dev-python/click-aliases 1.0.4: Add (mutiple) aliases to a click group or comman
 dev-python/click-command-tree 1.1.1: click plugin to show the command tree of your CLI
 dev-python/click-option-group 0.5.5 0.5.6: Option groups missing in Click
 dev-python/click-repl 0.2.0-r1: Subcommand REPL for click apps
-dev-python/cloudflare 2.19.2: Python wrapper for the Cloudflare v4 API
+dev-python/cloudflare 2.19.2 2.19.4: Python wrapper for the Cloudflare v4 API
 dev-python/cloup 3.0.5: Click + option groups + constraints + aliases + help themes + ...
 dev-python/clufter 0.77.2: Tool/library for transforming/analyzing cluster configuration formats
 dev-python/codecov 2.1.12: Hosted coverage reports for GitHub, Bitbucket and Gitlab
@@ -868,7 +869,7 @@ dev-python/wrapio 2.0.0: Handling event-based streams in Python
 dev-python/xattr 1.0.0 1.1.0: Python wrapper for extended filesystem attributes
 dev-python/xunitparser 1.3.4: Read JUnit/XUnit XML files and map them to Python objects
 dev-python/yams 0.7.3-r1 9999: Yet Another MPD Scrobbler (for Last.FM)
-dev-python/zenlib 1.2.0-r1 1.3.1 1.4.0 1.6.2 1.7.2 1.7.3 1.7.4 2.0.0 2.0.3: Useful python decorators and utilities
+dev-python/zenlib 1.2.0-r1 1.3.1 1.4.0 1.6.2 1.7.2 1.7.3 1.7.4 2.0.0 2.0.4: Useful python decorators and utilities
 dev-python/zopfli 0.2.2: Zopfli module for Python
 dev-ruby/asciidoctor-pdf 2.3.15: A native PDF converter for AsciiDoc based on Asciidoctor and Prawn
 dev-ruby/byebug 11.1.3: a Ruby 2 debugger
@@ -998,7 +999,7 @@ games-puzzle/superflu-riteurnz 1.5.5: Artisanal video-game about Superflu, the u
 games-puzzle/superflu-riteurnz-data 12: Artisanal video-game about Superflu, the useless super-hero (data files)
 games-rpg/open-adventure 1.16 1.17 1.18: Forward-port of the Crowther/Woods Adventure 2.5
 games-rpg/sacred-demo 1.0.0: Like Diablo, isometric view, good rating, about a two hours of the gameplay
-games-rpg/snoot-game 1.8 1.8-r1: Visual novel parody of Goodbye Volcano High
+games-rpg/snoot-game 1.9.1: Visual novel parody of Goodbye Volcano High
 games-server/among-sus 20210519: Among Us, but it's a text adventure
 games-strategy/general 4.6: Turn-based, old style with minimum graphic, full game, 5 MB size
 games-strategy/ground-control 1011: RTS from 2000 by Massive Entertainment, without resources and buildings
@@ -1360,6 +1361,7 @@ net-im/ruqola 1.3.1: Rocket.Chat client for the KDE desktop
 net-im/session-desktop-bin 1.10.8: Session Desktop - Onion routing based messenger
 net-im/sliding-sync 0.99.15: Proxy implementation of MSC3575's sync protocol.
 net-im/teams-for-linux 1.4.12 1.4.13: Unofficial Microsoft Teams client for Linux. Binary precompiled version.
+net-im/vesktop-bin 1.5.1: All-in-one voice and text chat for gamers with Vencord Preinstalled
 net-im/whatsapp-for-linux 1.5.3 1.6.2: An unofficial WhatsApp desktop application for Linux
 net-irc/catgirl 2.0a 2.1 2.2: TLS-only terminal IRC client
 net-irc/halloy 2024.6: IRC application written in Rust
@@ -1416,6 +1418,7 @@ net-misc/peertube-viewer-rs 1.8.5: Command-line PeerTube viewer inspired by yout
 net-misc/purritobin 0.6.7 9999: minimalistic commandline pastebin
 net-misc/rpki-client 8.0 8.4 8.8: Portability shim for OpenBSD's rpki-client
 net-misc/smcroute 2.5.6: A static multicast routing daemon
+net-misc/sshx 0.2.3: A secure web-based, collaborative terminal.
 net-misc/toot 0.38.1: toot - Mastodon CLI & TUI
 net-misc/tuxi 9999: Tuxi is a cli assistant. Get answers of your questions instantly.
 net-misc/warp 0.6.2: Fast and secure file transfer
@@ -1488,7 +1491,8 @@ sci-electronics/open_pdks 1.0.311: PDK installer for open-source EDA tools and t
 sci-electronics/skywater-pdk 0.0.0_p20220424: Process design kit for usage with SkyWater Technology Foundry's 130nm node
 sci-electronics/slang 4.0 5.0 6.0 9999: SystemVerilog compiler and language services
 sci-electronics/svls 0.2.11: SystemVerilog language server
-sci-electronics/verilator 5.022 9999: The fast free Verilog/SystemVerilog simulator
+sci-electronics/verilator 5.022 5.024 9999: The fast free Verilog/SystemVerilog simulator
+sci-electronics/yosys 0.32 0.40: framework for Verilog RTL synthesis
 sci-mathematics/frama-c 23.1-r1 24.0-r1 25.0-r2: Framework for analysis of source codes written in C
 sci-mathematics/frama-c-aorai 23.1 24.0 25.0: Aorai (automaton annotations) plugin for frama-c
 sci-mathematics/frama-c-callgraph 23.1 24.0 25.0: Callgraph plugin for frama-c
@@ -1594,7 +1598,7 @@ sys-fs/ufiformat 0.9.9: USB Floppy Disk formatting tool
 sys-fs/zfs-auto-utils 1.0.0: ZFS Automatic Scrub/Trim for Linux
 sys-kernel/dpdk-kmod 23.03: DPDK Kernel Nic Interface module
 sys-kernel/uek-sources 5.15.0.206.149.1 5.15.0.206.153.6: Unbreakable Enterprise Kernel (UEK) sources built from Oracle
-sys-kernel/ugrd 0.12.1-r1 0.19.1 0.19.3 0.20.0 0.21.2 0.22.0 1.0.0 1.1.5: Python based initramfs generator with TOML defintions
+sys-kernel/ugrd 0.12.1-r1 0.19.1 0.19.3 0.20.0 0.21.2 0.22.0 1.0.0 1.1.5 1.2.0: Python based initramfs generator with TOML defintions
 sys-kernel/usermode-kernel 6.0.12: Linux kernel built with Gentoo patches
 sys-kernel/xow 0.5: Linux driver for the Xbox One wireless dongle
 sys-kernel/zenpower3 0.2.0: Linux kernel driver for reading sensors of AMD Zen family CPUs

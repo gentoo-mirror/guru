@@ -1,0 +1,16 @@
+BDEPEND=python_single_target_python3_10? ( dev-lang/python:3.10 ) python_single_target_python3_11? ( dev-lang/python:3.11 ) python_single_target_python3_12? ( dev-lang/python:3.12 ) virtual/opengl
+DEFINED_PHASES=install setup
+DESCRIPTION=Visual novel parody of Goodbye Volcano High
+EAPI=8
+HOMEPAGE=https://snootgame.xyz/
+INHERIT=python-single-r1 desktop wrapper
+IUSE=python_single_target_python3_10 python_single_target_python3_11 python_single_target_python3_12
+KEYWORDS=~amd64
+LICENSE=AGPL-3 CC-BY-SA-4.0
+RDEPEND=python_single_target_python3_10? ( dev-lang/python:3.10 ) python_single_target_python3_11? ( dev-lang/python:3.11 ) python_single_target_python3_12? ( dev-lang/python:3.12 ) virtual/opengl
+REQUIRED_USE=^^ ( python_single_target_python3_10 python_single_target_python3_11 python_single_target_python3_12 )
+RESTRICT=strip
+SLOT=0
+SRC_URI=https://snootgame.xyz/bin/SnootGame-Patch9.1-RoastedLaika-linux.tar.bz2
+_eclasses_=multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	a1229a86bd0db058e474a2d7d9191cca	python-single-r1	75118e916668a74c660a13b0ecb22562	desktop	021728fdc1b03b36357dbc89489e0f0d	wrapper	4a1902f969e5718126434fc35f3a0d9c
+_md5_=ba3ac4f2a663f3bbc34c57f29ed85777

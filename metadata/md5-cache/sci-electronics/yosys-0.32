@@ -1,0 +1,12 @@
+BDEPEND=dev-vcs/git
+DEFINED_PHASES=install prepare
+DEPEND=dev-libs/boost media-gfx/xdot sys-devel/clang
+DESCRIPTION=framework for Verilog RTL synthesis
+EAPI=8
+HOMEPAGE=http://www.clifford.at/yosys/
+KEYWORDS=~amd64
+LICENSE=ISC
+RDEPEND=dev-libs/boost media-gfx/xdot sys-devel/clang
+SLOT=0
+SRC_URI=https://github.com/YosysHQ/yosys/archive/yosys-0.32.tar.gz https://github.com/YosysHQ/abc/archive/bb64142b07794ee685494564471e67365a093710.tar.gz -> abc-bb64142b07794ee685494564471e67365a093710.tar.gz
+_md5_=9c8a43f1fbffe94d80e8488434172d6a
