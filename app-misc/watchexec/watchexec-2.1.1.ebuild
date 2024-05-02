@@ -365,6 +365,7 @@ CRATES="
 	tower-layer@0.3.2
 	tower-service@0.3.2
 	tracing@0.1.40
+	tracing-appender@0.2.3
 	tracing-attributes@0.1.27
 	tracing-core@0.1.32
 	tracing-log@0.2.0

@@ -12,10 +12,9 @@ if [[ ${PV} == 9999 ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/uNetworking/uSockets.git"
 else
-	COMMIT="c2c1bbfa1644f1f6eb7fc9375650f41c5f9b7b06"
-	SRC_URI="https://github.com/uNetworking/uSockets/archive/${COMMIT}.tar.gz -> ${P}.tar.gz"
+	SRC_URI="https://github.com/uNetworking/uSockets/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 	KEYWORDS="~amd64 ~arm64 ~x86"
-	S="${WORKDIR}/uSockets-${COMMIT}"
+	S="${WORKDIR}/uSockets-${PV}"
 fi
 
 LICENSE="Apache-2.0"
@@ -25,17 +24,17 @@ REQUIRED_USE="?? ( asio libuv ) test? ( ssl )"
 RESTRICT="!test? ( test )"
 
 DEPEND="
-	asio? ( dev-cpp/asio[ssl(+)?] )
+	asio? ( dev-cpp/asio:=[ssl(+)?] )
 	libuv? ( dev-libs/libuv )
 	ssl? ( >=dev-libs/openssl-1.1.0 )
 "
 RDEPEND="${DEPEND}"
 
 PATCHES=(
-	"${FILESDIR}/${PN}-0.8.1_p20211023-Makefile.patch"
+	"${FILESDIR}/${PN}-0.8.8-Makefile.patch"
 	"${FILESDIR}/${PN}-0.8.1_p20211023-pkg-config.patch"
 	"${FILESDIR}/${PN}-0.8.1_p20211023-gen-ssl-config.patch"
-	"${FILESDIR}/${PN}-0.8.1_p20211023-hammer-test.patch"
+	"${FILESDIR}/${PN}-0.8.8-hammer-test.patch"
 )
 
 src_configure() {
