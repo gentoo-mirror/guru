@@ -266,7 +266,7 @@ app-misc/uwufetch 2.0 2.1: A meme system info tool for Linux
 app-misc/vocabsieve 0.12.0: A simple, effective tool for language learning
 app-misc/vrms-gentoo 0_pre20201102: vrms clone for Gentoo Linux
 app-misc/walld 1.4.4: A Wallpaper daemon
-app-misc/watchexec 1.23.0 1.24.0 1.24.1 1.24.2 1.25.0 1.25.1 2.0.0: Executes commands in response to file modifications
+app-misc/watchexec 1.24.2 1.25.1 2.1.1: Executes commands in response to file modifications
 app-misc/wcal 0.1-r1: ISO weekly calendar
 app-misc/wego 2.2: Wego is a weather client for the terminal
 app-misc/x86-64-level 0.2.2 9999: Get the x86-64 Microarchitecture Level on the Current Machine
@@ -332,7 +332,7 @@ app-text/smu 1.5 9999: Simple markup - markdown like syntax
 app-text/the-platinum-searcher-bin 2.2.0: Fast CLI search tool, faster than grep, ack, silver_searcher (ag)
 app-text/tldr 3.2.0: Python command line client for tldr pages
 app-text/typst 0.11.0: A markup-based typesetting system for the sciences
-app-text/vale 2.28.3 3.4.1: A syntax-aware linter for prose built with speed and extensibility in mind
+app-text/vale 2.28.3 3.4.1 3.4.2: A syntax-aware linter for prose built with speed and extensibility in mind
 app-vim/ale 3.3.0: Check syntax in Vim asynchronously and fix files, with LSP support
 app-vim/ansible-vim 3.3 3.4: vim plugin: sytax highlighting for Ansible's common file types
 app-vim/apkbuild-vim 20210911: vim plugin: edit and work with APKBUILD files
@@ -708,7 +708,6 @@ dev-python/jsonpath-rw-ext 1.2.2-r1: Extensions for JSONPath RW
 dev-python/jupyter-sphinx 0.4.0: Jupyter Sphinx Extensions
 dev-python/kurbopy 0.9.0-r1 0.10.40: Python wrapper around Rust kurbo 2D curves library
 dev-python/langdetect 1.0.9: Port of Google's language-detection library to Python
-dev-python/libcst 0.4.3_p20220607: Concrete syntax tree parser and serializer for Python
 dev-python/libusb1 2.0.1-r1: Pure-python wrapper for libusb-1.0
 dev-python/lru-dict 1.3.0: Dict like LRU container
 dev-python/manhole 1.8.0-r2: Debugging manhole for python application
@@ -945,7 +944,7 @@ dev-vcs/gitqlient 1.6.2 9999: Multi-platform Git client written with Qt
 dev-vcs/gitqlient-gitserver-plugin 0.2.0: GitQlient GitServer plugin
 dev-vcs/gitqlient-jenkins-plugin 0.2.0: GitQlient Jenkins plugin
 dev-vcs/gitui 0.26.1: blazing fast terminal-ui for git
-dev-vcs/jj 0.16.0: Jujutsu - an experimental version control system
+dev-vcs/jj 0.17.0: Jujutsu - an experimental version control system
 dev-vcs/lazygit 0.39.4-r1 0.40.2-r1 0.41.0: Simple terminal UI for git commands
 dev-zig/zls 0.10.0-r1 9999: The officially unofficial Ziglang language server
 games-action/ATLauncher 3.4.3.1 3.4.27.0: Minecraft launcher which integrates multiple different ModPacks
@@ -1081,14 +1080,14 @@ gui-apps/meteo-qt 3.3: A system tray application for the weather status
 gui-apps/mpvpaper 1.5 9999: A video wallpaper program for wlroots based wayland compositors
 gui-apps/nwg 0: meta package package for nwg-shell
 gui-apps/nwg-bar 0.1.5 0.1.6: GTK3-based button bar for wlroots-based compositors
-gui-apps/nwg-displays 0.3.14 0.3.15: Output management utility for sway and Hyprland
+gui-apps/nwg-displays 0.3.16 0.3.17: Output management utility for sway and Hyprland
 gui-apps/nwg-dock 0.3.6 0.3.9: GTK3-based dock for sway
 gui-apps/nwg-dock-hyprland 0.1.4 0.1.7: GTK3-based dock for Hyprland
 gui-apps/nwg-drawer 0.4.3 0.4.4 0.4.5 0.4.6 0.4.7: Application drawer for wlroots-based Wayland compositors
 gui-apps/nwg-icon-picker 0.1.0-r1 0.1.1 9999: GTK icon chooser with a text search option
 gui-apps/nwg-launchers 0.5.0 0.6.3 0.7.1.1 9999: GTK+ launchers for sway, i3 and some other WMs
 gui-apps/nwg-menu 0.1.2 0.1.3: enuStart plugin to nwg-panel, also capable of working standalone
-gui-apps/nwg-panel 0.9.25 0.9.26 0.9.27 9999: GTK3-based panel for sway and Hyprland Wayland compositors
+gui-apps/nwg-panel 0.9.28 0.9.29 9999: GTK3-based panel for sway and Hyprland Wayland compositors
 gui-apps/nwg-shell 0.5.33 0.5.34: libraries an common functions for the nwg-shell project
 gui-apps/nwg-shell-config 0.5.35 0.5.36: nwg-shell configuration utility
 gui-apps/openrefine 3.7.9: Wikidata batch editor, Wikimedia Commons mass upload tool
@@ -1380,7 +1379,7 @@ net-libs/syndication-domination 1.0-r1 9999: An RSS/Atom parser, because there's
 net-libs/td 1.8.0 9999: Cross-platform library for building Telegram clients
 net-libs/telepathy-haze 0.8.1: Telepathy connection manager providing libpurple supported protocols
 net-libs/ulfius 2.7.15: HTTP Framework for REST Applications in C
-net-libs/usockets 0.8.1_p20211023 9999: tiny eventing, networking & crypto for async applications
+net-libs/usockets 0.8.8 9999: tiny eventing, networking & crypto for async applications
 net-libs/yder 1.4.20: Logging library for C applications
 net-mail/dovecot-fts-xapian 1.5.9 1.7.6 1.7.9 1.7.10 9999: Dovecot FTS plugin backed by Xapian
 net-mail/hydroxide 0.2.23 0.2.24 0.2.26 0.2.27 0.2.28 9999: A third-party, open-source ProtonMail CardDAV, IMAP and SMTP bridge
@@ -1664,7 +1663,7 @@ www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and comm
 www-misc/gorss 0.3: Go Terminal Feed Reader
 www-misc/waldl 0.0.1_pre20211112: Browse and download wallpapers from wallhaven.cc using sxiv
 www-misc/wyebadblock 1.0.0: An adblock extension for wyeb, also webkit2gtk browsers.
-www-plugins/firefoxpwa 2.11.0 2.11.1: A tool to install, manage and use PWAs in Mozilla Firefox (native component)
+www-plugins/firefoxpwa 2.11.0 2.11.1 2.12.0: A tool to install, manage and use PWAs in Mozilla Firefox (native component)
 www-servers/hinsightd 0.9.17 9999: hinsightd a http/1.1 webserver with (hopefully) minimal goals
 www-servers/quark 9999: A small, GET-only static HTTP server
 x11-apps/lightdm-gtk-greeter-settings 1.2.2-r2: Configuration tool for the LightDM GTK Greeter
@@ -1713,7 +1712,7 @@ x11-themes/blackandwhite-gtk 9999: GTK-3 theme: simple black-and-white, minimali
 x11-themes/breezex-xcursors 2.0.0: Cursor set highly inspired on KDE Breeze with HiDPi Support
 x11-themes/catppuccin-btop 1.0.0: Soothing pastel theme for btop
 x11-themes/catppuccin-cursors 0.2.0: Soothing pastel mouse cursors
-x11-themes/catppuccin-gtk 0.7.2 0.7.3: Soothing pastel theme for GTK
+x11-themes/catppuccin-gtk 0.7.2 0.7.4: Soothing pastel theme for GTK
 x11-themes/catppuccin-kvantum 9999: Soothing pastel theme for Kvantum
 x11-themes/flat-remix-gtk 9999: Black flat with a colorful palette, some shadows, highlights, gradients
 x11-themes/hackerer 9999: GTK-3 theme: black background, green font
