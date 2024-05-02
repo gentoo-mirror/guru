@@ -4,7 +4,7 @@ EAPI=8
 HOMEPAGE=https://github.com/lierdakil/pandoc-crossref
 KEYWORDS=-* ~amd64
 LICENSE=GPL-2
-RDEPEND=|| ( =app-text/pandoc-bin-3.1.12.3 =app-text/pandoc-3.1.12.3 ) !dev-haskell/pandoc-crossref
+RDEPEND=|| ( ~app-text/pandoc-bin-3.1.12.3 >=app-text/pandoc-3 )
 SLOT=0
 SRC_URI=https://github.com/lierdakil/pandoc-crossref/releases/download/v0.3.17.0f/pandoc-crossref-Linux.tar.xz -> pandoc-crossref-bin-0.3.17.0f.tar.xz
-_md5_=bf1502b621d7c04d873dd705062ae513
+_md5_=49d560022e02cf2d443acaaa10d0e83b
