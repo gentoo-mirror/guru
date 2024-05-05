@@ -436,6 +436,7 @@ dev-db/psequel 0.1.8: Run your SQL query
 dev-db/rum 1.3.13: RUM access method - inverted index with additional information in posting lists
 dev-db/tdscpp 20240212: C++ library to communicate with Microsoft SQL server
 dev-debug/gdb-dashboard 0.17.2: Modular visual interface for GDB in Python
+dev-debug/lldb-mi 0.0.1 9999: LLDB Machine Interface Driver
 dev-dotnet/gtk-sharp 2.99.3-r3 3.22.2-r2: gtk bindings for mono
 dev-elixir/hex 1.0.1-r1: Package manager for the Erlang VM
 dev-embedded/arduino-cli 0.34.2 0.35.2: Next-generation arduino command line tool
@@ -894,7 +895,7 @@ dev-util/cmakelang 0.6.13: Provides Quality Assurance (QA) tools for cmake
 dev-util/deblob 0.6 0.7 9999: remove binary executables from a directory
 dev-util/distribution-gpg-keys 1.102: Collection of GPG keys used in Linux Distributions
 dev-util/dockerfile-language-server 0.10.2 0.11.0: A language server for Dockerfiles
-dev-util/eclipse-parallel-bin 4.27 4.28: Eclipse IDE for Scientific Computing (C, C++, Fortran)
+dev-util/eclipse-parallel-bin 4.28: Eclipse IDE for Scientific Computing (C, C++, Fortran)
 dev-util/exercism 3.1.0 3.2.0: Command line client for https://exercism.io
 dev-util/find-work 0.6.1 0.7.0 9999: Personal advice utility for Gentoo package maintainers
 dev-util/fnm 1.35.1: Fast and simple Node.js version manager
@@ -1130,13 +1131,14 @@ gui-apps/yambar 1.9.0 1.10.0 9999: Simplistic and highly configurable status pan
 gui-libs/gtk-session-lock 0.2.0-r4 9999: GTK-based lockscreen for Wayland
 gui-libs/libcprime 4.5.0 9999: Library for managing settings of CoreApps
 gui-libs/libcsys 4.5.0 9999: Library for managing the device
+gui-libs/scenefx 0.1: A replacement for the wlroots scene API with eye-candy effects.
 gui-libs/text-engine 0.1.1-r2 9999: A lightweight rich-text framework for GTK 4
 gui-libs/xdg-desktop-portal-hyprland 1.1.0-r1 1.2.2-r2 1.2.5-r2 1.2.6-r1 1.3.1 1.3.1-r1 9999: xdg-desktop-portal backend for hyprland
 gui-wm/cage 0.1.5 9999: A Wayland kiosk
 gui-wm/hyprland-contrib 0.1-r1 9999: Community-maintained extensions for hyprland
 gui-wm/niri 0.1.5: Scrollable-tiling Wayland compositor
 gui-wm/phoc 0.36.0-r1 0.38.0: Wayland compositor for mobile phones
-gui-wm/swayfx 0.2 0.3 0.3.2: SwayFX: Sway, but with eye candy!
+gui-wm/swayfx 0.2 0.3 0.3.2 0.4: SwayFX: Sway, but with eye candy!
 kde-apps/kwalletcli 3.03: CLI for the KDE Wallet
 kde-apps/plasma-settings 22.11: Settings application for Plasma Mobile
 kde-misc/geminipart 20221020 20231005: KPart for viewing text/gemini files
@@ -1595,7 +1597,7 @@ sys-fs/ufiformat 0.9.9: USB Floppy Disk formatting tool
 sys-fs/zfs-auto-utils 1.0.0: ZFS Automatic Scrub/Trim for Linux
 sys-kernel/dpdk-kmod 23.03: DPDK Kernel Nic Interface module
 sys-kernel/uek-sources 5.15.0.206.149.1 5.15.0.206.153.6: Unbreakable Enterprise Kernel (UEK) sources built from Oracle
-sys-kernel/ugrd 0.12.1-r1 0.19.1 0.19.3 0.20.0 0.21.2 0.22.0 1.0.0 1.1.5 1.2.0 1.2.2: Python based initramfs generator with TOML defintions
+sys-kernel/ugrd 0.12.1-r1 0.19.1 0.19.3 0.20.0 0.21.2 0.22.0 1.0.0 1.1.5 1.2.0 1.2.2 1.2.4: Python based initramfs generator with TOML defintions
 sys-kernel/usermode-kernel 6.0.12: Linux kernel built with Gentoo patches
 sys-kernel/xow 0.5: Linux driver for the Xbox One wireless dongle
 sys-kernel/zenpower3 0.2.0: Linux kernel driver for reading sensors of AMD Zen family CPUs
@@ -1668,7 +1670,7 @@ x11-apps/lightdm-gtk-greeter-settings 1.2.2-r2: Configuration tool for the Light
 x11-apps/xcur2png 0.7.1 0.7.1-r1: Convert X cursors to PNG images
 x11-drivers/OpenTabletDriver 0.6.3.0 0.6.4.0: A cross-platform open-source tablet driver
 x11-drivers/OpenTabletDriver-bin 0.6.3.0: Cross platform tablet driver (binary package)
-x11-libs/gtk-fortran 3.24.31 4.3.0 4.4.0 4.4.1: A GTK+ binding to build Graphical User Interfaces in Fortran
+x11-libs/gtk-fortran 3.24.31 4.4.1 4.5.0 4.6.0: A GTK+ binding to build Graphical User Interfaces in Fortran
 x11-libs/sdl-fakeqwerty 0_pre20191217: Fixes non-QWERTY keyboards on Prison Architect (and maybe other SDL games)
 x11-misc/aerial-sddm-theme 0_pre20191018-r1 9999: SDDM theme with Apple TV Aerial videos
 x11-misc/autotiling 1.9 1.9.1: Script for sway and i3 to automatically switch the window split orientation
