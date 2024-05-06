@@ -1,0 +1,16 @@
+BDEPEND=virtual/pkgconfig
+DEFINED_PHASES=install unpack
+DEPEND=dev-libs/openssl sys-apps/pcsc-lite app-crypt/ccid virtual/libusb:0 ssl? ( dev-libs/libp11 )
+DESCRIPTION=Thales/Gemalto SafeNet Authentication Client for eToken 5110/5300 & IDPrime (core PKCS#11 modules)
+EAPI=8
+HOMEPAGE=https://cpl.thalesgroup.com/access-management/security-applications/authentication-client-token-management
+INHERIT=systemd
+IUSE=+ssl
+KEYWORDS=~amd64
+LICENSE=no-source-code EULA
+RDEPEND=dev-libs/openssl sys-apps/pcsc-lite app-crypt/ccid virtual/libusb:0 ssl? ( dev-libs/libp11 )
+RESTRICT=strip
+SLOT=0
+SRC_URI=https://nullroute.lt/tmp/2023/pkg/SAC_Linux_10.8.105_R1_GA.zip
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	systemd	c8b03e8df84486aa991d4396686e8942
+_md5_=c690c717356166ac8b1f21a7fddcbdc1
