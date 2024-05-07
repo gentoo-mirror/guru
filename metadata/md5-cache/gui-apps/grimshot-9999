@@ -7,7 +7,7 @@ INHERIT=git-r3
 IUSE=libnotify
 LICENSE=MIT
 PROPERTIES=live
-RDEPEND=app-misc/jq gui-apps/grim gui-apps/slurp gui-apps/wl-clipboard gui-wm/sway !!<=gui-wm/sway-1.8.1[grimshot] libnotify? ( x11-libs/libnotify )
+RDEPEND=app-misc/jq gui-apps/grim gui-apps/slurp gui-apps/wl-clipboard || ( gui-wm/sway gui-wm/swayfx ) !!<=gui-wm/sway-1.8.1[grimshot] libnotify? ( x11-libs/libnotify )
 SLOT=0
 _eclasses_=git-r3	fbb2889c81f3a05910c1524db69425c1
-_md5_=e65fb399a01af86cf93ddaa4723c7b4e
+_md5_=a5f04611241793ba2b31fda0a03721cd

@@ -868,7 +868,7 @@ dev-python/wrapio 2.0.0: Handling event-based streams in Python
 dev-python/xattr 1.0.0 1.1.0: Python wrapper for extended filesystem attributes
 dev-python/xunitparser 1.3.4: Read JUnit/XUnit XML files and map them to Python objects
 dev-python/yams 0.7.3-r1 9999: Yet Another MPD Scrobbler (for Last.FM)
-dev-python/zenlib 1.2.0-r1 1.3.1 1.4.0 1.6.2 1.7.2 1.7.3 1.7.4 2.0.0 2.0.4: Useful python decorators and utilities
+dev-python/zenlib 1.2.0-r1 1.3.1 1.4.0 1.6.2 1.7.2 1.7.3 1.7.4 2.0.0 2.0.4 2.1.1: Useful python decorators and utilities
 dev-python/zopfli 0.2.2: Zopfli module for Python
 dev-ruby/asciidoctor-pdf 2.3.15: A native PDF converter for AsciiDoc based on Asciidoctor and Prawn
 dev-ruby/byebug 11.1.3: a Ruby 2 debugger
@@ -900,7 +900,7 @@ dev-util/eclipse-parallel-bin 4.28: Eclipse IDE for Scientific Computing (C, C++
 dev-util/exercism 3.1.0 3.2.0: Command line client for https://exercism.io
 dev-util/find-work 0.6.1 0.7.0 9999: Personal advice utility for Gentoo package maintainers
 dev-util/fnm 1.35.1: Fast and simple Node.js version manager
-dev-util/fortls 2.13.0 3.0.0_rc2 3.0.0_rc3: Fortran Language Server (fortls)
+dev-util/fortls 2.13.0 3.0.0_rc2 3.0.0_rc3 3.0.0_rc4: Fortran Language Server (fortls)
 dev-util/fortran-test-drive 0.4.0: The simple testing framework (for Fortran)
 dev-util/gammaray 2.11.3: High-level runtime introspection tool for Qt applications
 dev-util/git-bug 0.8.0 9999: distributed, offline-first bug tracker
@@ -944,7 +944,7 @@ dev-vcs/gitqlient-gitserver-plugin 0.2.0: GitQlient GitServer plugin
 dev-vcs/gitqlient-jenkins-plugin 0.2.0: GitQlient Jenkins plugin
 dev-vcs/gitui 0.26.1: blazing fast terminal-ui for git
 dev-vcs/jj 0.17.0: Jujutsu - an experimental version control system
-dev-vcs/lazygit 0.39.4-r1 0.40.2-r1 0.41.0: Simple terminal UI for git commands
+dev-vcs/lazygit 0.40.2-r1 0.41.0: Simple terminal UI for git commands
 dev-zig/zls 0.10.0-r1 9999: The officially unofficial Ziglang language server
 games-action/ATLauncher 3.4.3.1 3.4.27.0: Minecraft launcher which integrates multiple different ModPacks
 games-action/blackvoxel 2.50 9999: Blackvoxel Video Game
@@ -1225,7 +1225,7 @@ media-plugins/alsa-sndio 0.2: ALSA PCM to play audio on sndio servers
 media-plugins/argotlunar-bin 2.06-r1: Argotlunar is a sound granulator. Binary Linux VST
 media-plugins/gimp-avif-plugin 9999: Plug-in for development GIMP 2.99.11 for loading/saving AVIF images.
 media-plugins/gst-plugins-qt5 1.20.3 1.22.11: Qt5 QML video sink plugin for GStreamer
-media-plugins/qt-heif-image-plugin 0.3.3-r3 0.3.4: Qt plugin for HEIF images
+media-plugins/qt-heif-image-plugin 0.3.4: Qt plugin for HEIF images
 media-plugins/qt-jpegxl-image-plugin 9999: Qt plug-in to allow Qt and KDE based applications to read/write JXL images.
 media-plugins/whysynth 20170701_p20180323: A software synthesizer plugin for the DSSI Soft Synth Interface
 media-radio/fllog 1.2.7: Logbook application for amateur radio use
@@ -1492,7 +1492,7 @@ sci-electronics/skywater-pdk 0.0.0_p20220424: Process design kit for usage with 
 sci-electronics/slang 4.0 5.0 6.0 9999: SystemVerilog compiler and language services
 sci-electronics/svls 0.2.11: SystemVerilog language server
 sci-electronics/verilator 5.022 5.024 9999: The fast free Verilog/SystemVerilog simulator
-sci-electronics/yosys 0.40: framework for Verilog RTL synthesis
+sci-electronics/yosys 0.40-r1: framework for Verilog RTL synthesis
 sci-mathematics/frama-c 23.1-r1 24.0-r1 25.0-r2: Framework for analysis of source codes written in C
 sci-mathematics/frama-c-aorai 23.1 24.0 25.0: Aorai (automaton annotations) plugin for frama-c
 sci-mathematics/frama-c-callgraph 23.1 24.0 25.0: Callgraph plugin for frama-c
@@ -1568,7 +1568,7 @@ sys-auth/pam-gnupg 0.3: Unlock GnuPG keys on login
 sys-block/partclone 0.3.20: Partition cloning tool
 sys-boot/customrescuecd-x86-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/customrescuecd-x86_64-grub 0.1: Grub menu entries for the .iso image of customrescuecd
-sys-boot/limine 7.0.0 7.0.3 7.0.5 7.3.0: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
+sys-boot/limine 7.0.0 7.0.3 7.0.5 7.3.0 7.5.0: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
 sys-boot/mkusb 23.2.0: CLI and GUI for creating bootable live USB, with optional persistent storage
 sys-boot/ventoy-bin 1.0.97: Creator of bootable USBs, with ability to copy ISOs, persistence storage
 sys-boot/woeusb-ng 0.2.10: Create Windows installer USB from ISO (rewrite of WoeUSB)
@@ -1598,7 +1598,7 @@ sys-fs/ufiformat 0.9.9: USB Floppy Disk formatting tool
 sys-fs/zfs-auto-utils 1.0.0: ZFS Automatic Scrub/Trim for Linux
 sys-kernel/dpdk-kmod 23.03: DPDK Kernel Nic Interface module
 sys-kernel/uek-sources 5.15.0.206.149.1 5.15.0.206.153.6: Unbreakable Enterprise Kernel (UEK) sources built from Oracle
-sys-kernel/ugrd 0.22.0 1.2.2 1.3.4: Python based initramfs generator with TOML defintions
+sys-kernel/ugrd 0.22.0 1.2.2 1.3.7: Python based initramfs generator with TOML defintions
 sys-kernel/usermode-kernel 6.0.12: Linux kernel built with Gentoo patches
 sys-kernel/xow 0.5: Linux driver for the Xbox One wireless dongle
 sys-kernel/zenpower3 0.2.0: Linux kernel driver for reading sensors of AMD Zen family CPUs
@@ -1616,7 +1616,7 @@ sys-power/fan2go 0.8.1: A simple daemon providing dynamic fan speed control
 sys-power/gtherm 0.0.3: A simple daemon to monitor thermal zones and cooling devices
 sys-power/linux-tools-power-x86 5.18 6.1: Linux x86 CPU power tools
 sys-power/nvidia-exec 0.1.2-r1 9999: GPU switching without login out for Nvidia Optimus laptops under Linux
-sys-process/forkstat 0.03.02-r1: Logs process fork(), exec() and exit() activity
+sys-process/forkstat 0.03.02-r2: Logs process fork(), exec() and exit() activity
 sys-process/gotop 4.2.0: A terminal based graphical activity monitor inspired by gtop and vtop
 sys-process/nq 0.4: Unix command line queue utility
 sys-process/nvtop 2.0.3 3.0.1 3.0.2 9999: (h)top like task monitor for AMD, Intel, NVIDIA, … GPUs
