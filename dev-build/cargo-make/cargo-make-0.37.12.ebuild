@@ -11,13 +11,13 @@ CRATES="
 	android-tzdata@0.1.1
 	android_system_properties@0.1.5
 	attohttpc@0.26.1
-	autocfg@1.2.0
+	autocfg@1.3.0
 	base64@0.21.7
 	bitflags@1.3.2
 	bitflags@2.5.0
 	block-buffer@0.10.4
 	bstr@1.9.1
-	bumpalo@3.15.4
+	bumpalo@3.16.0
 	byteorder@1.5.0
 	bytes@1.6.0
 	bzip2-sys@0.1.11+1.0.8
@@ -25,10 +25,10 @@ CRATES="
 	camino@1.1.6
 	cargo-platform@0.1.8
 	cargo_metadata@0.18.1
-	cc@1.0.90
+	cc@1.0.96
 	cfg-if@1.0.0
 	cfg_aliases@0.1.1
-	chrono@0.4.37
+	chrono@0.4.38
 	ci_info@0.14.14
 	cliparser@0.1.2
 	colored@2.1.0
@@ -45,21 +45,21 @@ CRATES="
 	digest@0.10.7
 	dirs-next@2.0.0
 	dirs-sys-next@0.1.2
-	dissimilar@1.0.7
+	dissimilar@1.0.8
 	duckscript@0.8.0
 	duckscriptsdk@0.9.3
 	dunce@1.0.4
-	either@1.10.0
-	encoding_rs@0.8.33
+	either@1.11.0
+	encoding_rs@0.8.34
 	envmnt@0.10.4
 	equivalent@1.0.1
 	errno@0.3.8
 	evalexpr@11.3.0
 	expect-test@1.5.0
-	fastrand@2.0.2
+	fastrand@2.1.0
 	fern@0.6.2
 	fixedbitset@0.4.2
-	flate2@1.0.28
+	flate2@1.0.30
 	fnv@1.0.7
 	foreign-types-shared@0.1.1
 	foreign-types@0.3.2
@@ -67,12 +67,12 @@ CRATES="
 	fs_extra@1.3.0
 	fsio@0.4.0
 	generic-array@0.14.7
-	getrandom@0.2.12
+	getrandom@0.2.14
 	git_info@0.1.2
 	glob@0.3.1
 	globset@0.4.14
 	hashbrown@0.12.3
-	hashbrown@0.14.3
+	hashbrown@0.14.5
 	heck@0.4.1
 	hermit-abi@0.3.9
 	home@0.5.9
@@ -93,7 +93,7 @@ CRATES="
 	lenient_semver@0.4.2
 	lenient_semver_parser@0.4.2
 	lenient_semver_version_builder@0.4.2
-	libc@0.2.153
+	libc@0.2.154
 	libredox@0.1.3
 	linux-raw-sys@0.4.13
 	log@0.4.21
@@ -103,7 +103,7 @@ CRATES="
 	nix@0.28.0
 	nu-ansi-term@0.50.0
 	num-conv@0.1.0
-	num-traits@0.2.18
+	num-traits@0.2.19
 	num_cpus@1.16.0
 	once_cell@1.19.0
 	openssl-macros@0.1.1
@@ -115,8 +115,8 @@ CRATES="
 	pkg-config@0.3.30
 	powerfmt@0.2.0
 	ppv-lite86@0.2.17
-	proc-macro2@1.0.79
-	quote@1.0.35
+	proc-macro2@1.0.81
+	quote@1.0.36
 	rand@0.8.5
 	rand_chacha@0.3.1
 	rand_core@0.6.4
@@ -128,9 +128,9 @@ CRATES="
 	ring@0.17.8
 	run_script@0.10.1
 	rust_info@0.3.2
-	rustix@0.38.32
+	rustix@0.38.34
 	rustls-webpki@0.101.7
-	rustls@0.21.10
+	rustls@0.21.12
 	ryu@1.0.17
 	same-file@1.0.6
 	schannel@0.1.23
@@ -138,27 +138,27 @@ CRATES="
 	security-framework-sys@2.10.0
 	security-framework@2.10.0
 	semver@1.0.22
-	serde@1.0.197
-	serde_derive@1.0.197
+	serde@1.0.200
+	serde_derive@1.0.200
 	serde_ignored@0.1.10
-	serde_json@1.0.115
+	serde_json@1.0.116
 	serde_spanned@0.6.5
 	sha2@0.10.8
 	shell2batch@0.4.5
 	spin@0.9.8
 	strip-ansi-escapes@0.2.0
 	suppaftp@5.3.1
-	syn@2.0.58
+	syn@2.0.60
 	tempfile@3.10.1
-	thiserror-impl@1.0.58
-	thiserror@1.0.58
+	thiserror-impl@1.0.59
+	thiserror@1.0.59
 	time-core@0.1.2
-	time@0.3.34
+	time@0.3.36
 	tinyvec@1.6.0
 	tinyvec_macros@0.1.1
 	toml@0.8.12
 	toml_datetime@0.6.5
-	toml_edit@0.22.9
+	toml_edit@0.22.12
 	typenum@1.17.0
 	uname@0.1.1
 	unicode-bidi@0.3.15
@@ -184,29 +184,30 @@ CRATES="
 	which@6.0.1
 	whoami@1.5.1
 	winapi-i686-pc-windows-gnu@0.4.0
-	winapi-util@0.1.6
+	winapi-util@0.1.8
 	winapi-x86_64-pc-windows-gnu@0.4.0
 	winapi@0.3.9
 	windows-core@0.52.0
 	windows-sys@0.48.0
 	windows-sys@0.52.0
 	windows-targets@0.48.5
-	windows-targets@0.52.4
+	windows-targets@0.52.5
 	windows_aarch64_gnullvm@0.48.5
-	windows_aarch64_gnullvm@0.52.4
+	windows_aarch64_gnullvm@0.52.5
 	windows_aarch64_msvc@0.48.5
-	windows_aarch64_msvc@0.52.4
+	windows_aarch64_msvc@0.52.5
 	windows_i686_gnu@0.48.5
-	windows_i686_gnu@0.52.4
+	windows_i686_gnu@0.52.5
+	windows_i686_gnullvm@0.52.5
 	windows_i686_msvc@0.48.5
-	windows_i686_msvc@0.52.4
+	windows_i686_msvc@0.52.5
 	windows_x86_64_gnu@0.48.5
-	windows_x86_64_gnu@0.52.4
+	windows_x86_64_gnu@0.52.5
 	windows_x86_64_gnullvm@0.48.5
-	windows_x86_64_gnullvm@0.52.4
+	windows_x86_64_gnullvm@0.52.5
 	windows_x86_64_msvc@0.48.5
-	windows_x86_64_msvc@0.52.4
-	winnow@0.6.5
+	windows_x86_64_msvc@0.52.5
+	winnow@0.6.7
 	winsafe@0.0.19
 	zip@0.6.6
 "
