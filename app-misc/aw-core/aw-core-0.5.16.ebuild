@@ -4,17 +4,13 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=poetry
-PYTHON_COMPAT=( python3_10 )
+PYTHON_COMPAT=( python3_{10..12} )
 
 inherit distutils-r1
 
-COMMIT="8aaa35376a4f0b270a1927dff4b4d34caee7707b"
-
 DESCRIPTION="Core library for ActivityWatch"
 HOMEPAGE="https://activitywatch.net"
-SRC_URI="https://github.com/ActivityWatch/${PN}/archive/${COMMIT}.tar.gz -> ${P}.tar.gz"
-
-S="${WORKDIR}/${PN}-${COMMIT}"
+SRC_URI="https://github.com/ActivityWatch/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MPL-2.0"
 SLOT="0"
