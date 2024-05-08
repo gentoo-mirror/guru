@@ -1,0 +1,16 @@
+BDEPEND=app-arch/unzip virtual/pkgconfig
+DEFINED_PHASES=install unpack
+DEPEND=dev-libs/openssl sys-apps/pcsc-lite app-crypt/ccid virtual/libusb:0 ssl? ( dev-libs/libp11 )
+DESCRIPTION=Thales/Gemalto SafeNet Authentication Client
+EAPI=8
+HOMEPAGE=https://cpl.thalesgroup.com/access-management/security-applications/authentication-client-token-management
+INHERIT=systemd unpacker
+IUSE=+ssl
+KEYWORDS=~amd64
+LICENSE=sac-core-10.8.1050-terms LGPL-2.1 ZLIB
+RDEPEND=dev-libs/openssl sys-apps/pcsc-lite app-crypt/ccid virtual/libusb:0 ssl? ( dev-libs/libp11 )
+RESTRICT=bindist mirror strip
+SLOT=0
+SRC_URI=https://nullroute.lt/tmp/2023/pkg/SAC_Linux_10.8.105_R1_GA.zip
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	systemd	c8b03e8df84486aa991d4396686e8942	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	unpacker	7b40f3faa3e2e12f5cf6d36d0fbfcd09
+_md5_=295886ce37987b8047b190059fdecf38
