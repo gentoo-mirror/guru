@@ -6,7 +6,7 @@ EAPI=8
 CRATES="
 	addr2line@0.20.0
 	adler@1.0.2
-	ahash@0.7.8
+	ahash@0.7.6
 	ahash@0.8.9
 	aho-corasick@1.0.4
 	allocator-api2@0.2.16
@@ -387,6 +387,8 @@ else
 		${CARGO_CRATE_URIS}
 	"
 	KEYWORDS="~amd64"
+
+	PATCHES="${FILESDIR}/eww-0.6.0-fix-version.patch"
 fi
 
 LICENSE="MIT"
