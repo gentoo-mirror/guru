@@ -273,6 +273,9 @@ games-server/among-sus:notifications - Notify players you're moving
 games-util/chiaki:cli - Build CLI interface
 games-util/itch-bin:system-ffmpeg - Use the system-wide media-video/ffmpeg instead of bundled.
 games-util/legendary:webview - Use dev-python/pywebview for the sign-in process
+games-util/mangohud:mangoapp - Build and install mangoapp and mangoapp layer
+games-util/mangohud:mangohudctl - Build and install mangohudctl
+games-util/mangohud:test - Run mangohud tests
 games-util/mangohud:xnvctrl - Use XNVctrl as fall back for older Nvidia devices.
 games-util/samrewritten:zenity - Support for dialog display messages
 games-util/xivlauncher:aria2 - Enable Aria2 support.
@@ -389,15 +392,9 @@ media-libs/alvr:vulkan - Build ALVR vulkan layer
 media-libs/alvr:x264 - Use x264 for h264 software encoding
 media-libs/alvr:x265 - Use x265 for h265 software encoding
 media-libs/amdvlk:raytracing - Enable Vulkan raytracing support in AMDVLK, requires dev-util/DirectXShaderCompiler to build. Disable if you have weak hardware.
-media-libs/imgui:allegro - Enable allegro backend and renderer
 media-libs/imgui:allegro5 - Enable allegro backend and renderer
-media-libs/imgui:bindings - Build the cimgui C bindigs
-media-libs/imgui:freetype - Use FreeType to build and rasterize the font atlas
 media-libs/imgui:glfw - Enable glfw backend
-media-libs/imgui:glut - Enable glut backen
-media-libs/imgui:marmalade - Enable Marmalade backend
 media-libs/imgui:opengl - Enable opengl renderer
-media-libs/imgui:sdl - Enable sdl backend
 media-libs/imgui:sdl2 - Enable SDL2 backend
 media-libs/imgui:vulkan - Enable vulkan renderer
 media-libs/libbpg:bpgview - Compile bpgview (media-libs/libsdl and media-libs/sdl-image needed)
@@ -500,6 +497,7 @@ net-irc/tiny:dbus - Enable desktop notifications
 net-irc/tiny:openssl - Use dev-libs/openssl as TLS backend instead of compiled-in rustls
 net-libs/ixwebsocket:ws - Build the ws utility
 net-libs/picotls:fusion - "fusion" AES-GCM engine, optimized for QUIC and other protocols that use short AEAD blocks
+net-libs/sofia-sip:glib - Add support to dev-libs/glib-based mainloop, to allow using Sofia-SIP on glib-based programs.
 net-libs/syndication-domination:json-binary - Builds a binary executable instead of python bindings
 net-libs/td:abseil - Build with dev-cpp/abseil-cpp
 net-libs/td:dotnet - Add support for .NET
@@ -515,6 +513,7 @@ net-misc/megasync:freeimage - Use freeimage to manage graphic images format.
 net-misc/megasync:nautilus - Upload your files to your Mega account from nautilus.
 net-misc/megasync:nemo - Upload your files to your Mega account from Nemo.
 net-misc/megasync:thunar - Upload your files to your Mega account from Thunar.
+net-misc/warp:qrcode - Enable QR code scanning with media-gfx/zbar
 net-misc/xmrig-mo:donate - Set the default donation level to 1% instead of 0
 net-misc/xmrig-mo:hwloc - Use sys-apps/hwloc for CPU affinity support
 net-misc/xmrig-mo:opencl - Enable OpenCL support
