@@ -139,7 +139,7 @@ app-containers/nvidia-container-toolkit 1.14.6 9999: NVIDIA container runtime to
 app-containers/pods 2.1.0_pre20240215-r3: Keep track of your podman containers
 app-containers/waydroid 1.4.0 1.4.2 1.4.2-r1: Container-based approach to boot a full Android system on Linux systems
 app-containers/waydroid-images 9999: Manage images for app-containers/waydroid using portage
-app-crypt/PBinCLI 0.3.5: PBinCLI is a command line client for PrivateBin written in Python 3
+app-crypt/PBinCLI 0.3.5 0.3.5-r1: PBinCLI is a command line client for PrivateBin written in Python 3
 app-crypt/autofirma 1.8.2: Spanish government's electronic signature application for online procedures
 app-crypt/certbot-dns-cloudflare 2.9.0 2.10.0: Cloudflare DNS Authenticator plugin for Certbot (Let's Encrypt Client)
 app-crypt/certbot-dns-desec 1.2.1: deSEC DNS Authenticator plugin for Certbot
@@ -177,7 +177,9 @@ app-editors/neovide 0.12.2: Neovide: No Nonsense Neovim Gui
 app-editors/neovim-qt 0.2.17-r1 0.2.18: Neovim client library and GUI, in Qt
 app-editors/pulsar-bin 1.114.0 1.115.0: A Community-led Hyper-Hackable Text Editor
 app-editors/typora-bin 1.8.10: a markdown editor,markdown reader.
+app-emacs/envrc 0.11: Emacs support for direnv which operates buffer-locally
 app-emacs/idris-mode 1.0 9999: Idris syntax highlighting, compiler-supported editing, and interactive REPL
+app-emacs/inheritenv 0.2: Emacs support for direnv which operates buffer-locally
 app-emacs/prop-menu 0.1.2: Compute pop-up menus from text and overlay properties
 app-emulation/86BoxManagerX 1.7.6.0e 9999: A (cross-platform) configuration manager for the 86Box emulator
 app-emulation/arnold 20170513: Amstrad CPC emulator
@@ -194,7 +196,7 @@ app-eselect/eselect-ld 1.0.0: Manage the ld symlink
 app-eselect/eselect-vala 1.0.0: Manage the valac symlink
 app-forensics/mvt 2.4.1: Forensic traces to identify a potential compromise of Android and iOS devices
 app-i18n/fcitx-skk 0.1.4: An input method engine for Fcitx
-app-laptop/framework_tool 0.1.0_p20240407 9999: Tool to interact with a Framework Laptop's hardware system
+app-laptop/framework_tool 0.1.0_p20240407 0.1.0_p20240511 9999: Tool to interact with a Framework Laptop's hardware system
 app-metrics/scaphandre 0.5.0: Electrical power consumption measurement agent
 app-misc/1password-cli 2.24.0: The world’s most-loved password manager CLI
 app-misc/afc 1.1 1.2 9999: Anime File Checker, checks CRC32 contained in filenames
@@ -291,7 +293,7 @@ app-office/openoffice-bin 4.1.15: Apache OpenOffice productivity suite
 app-office/pyspread 2.1.1: Pyspread is a non-traditional spreadsheet written in Python
 app-office/standartnotes-bin 3.183.22: End-to-end encrypted note-taking app, alternative to Evernote
 app-portage/appswipe 1.1.14: Application for browsing your local Portage repository files
-app-portage/pacvis 0.4.2-r1: Displays dependency graphs of packages
+app-portage/pacvis 0.4.2: Displays dependency graphs of packages
 app-portage/portage-lostfiles 0.5.5: A simple script to identify files not tracked by Portage package manager
 app-portage/quantum-resolver 9999: A WIP portage dependency resolver
 app-portage/showbuild 0.9.1-r1: Script to follow log of running portage builds
@@ -652,7 +654,7 @@ dev-python/dataclasses-json 0.5.14: Easily serialize Data Classes to and from JS
 dev-python/dateparser 1.2.0: Date parsing library designed to parse dates from HTML pages
 dev-python/decopatch 1.4.10: Create decorators easily in python
 dev-python/defcon 0.10.2: A set of UFO based objects for use in font editing applications
-dev-python/desktop-notifier 3.5.6: desktop-notifier is a Python library for cross-platform desktop notifications
+dev-python/desktop-notifier 4.0.0: desktop-notifier is a Python library for cross-platform desktop notifications
 dev-python/devtools 0.10.0-r1: Dev tools for python
 dev-python/digitalocean 1.17.0-r1: Digitalocean API access library
 dev-python/django-bleach 3.0.1: Easily use bleach with Django models and templates
@@ -803,7 +805,7 @@ dev-python/python-pidfile 3.0.0-r1 3.1.1: PIDFile context processor. Supported p
 dev-python/python-skywater-pdk 0.0.0_p20220424: Python library for working with files found in the SkyWater PDK
 dev-python/python-socketio 5.11.0 5.11.1: Python implementation of the Socket.IO realtime server.
 dev-python/python-statemachine 2.1.2: Python Finite State Machines made easy.
-dev-python/python-telegram-bot 20.3-r1 20.5-r1 20.6-r1 9999: Python wrapper of telegram bots API
+dev-python/python-telegram-bot 20.6-r1 21.1.1 9999: Python wrapper of telegram bots API
 dev-python/pywebview 4.3.3 4.4.1: A lightweight cross-platform wrapper around a webview component
 dev-python/queuelib 1.6.2: Collection of persistent and non-persistent queues for Python
 dev-python/readability-lxml 0.6.1 0.8.1: fast html to text parser (article readability tool)
@@ -821,7 +823,7 @@ dev-python/sendgrid 6.9.7: Twilio SendGrid library for Python
 dev-python/sentence-splitter 1.4-r2: Sentence splitter using heuristic algorithm by Philipp Koehn and Josh Schroeder
 dev-python/signalstickers-client 3.2.0 3.3.0: A Python client for the Signal stickers API
 dev-python/simplemma 0.9.1: A simple multilingual lemmatizer for Python
-dev-python/sjcl 0.2.1: Decrypt and encrypt 'Stanford Javascript Crypto Library'-compatible messages
+dev-python/sjcl 0.2.1 0.2.1-r1: Decrypt and encrypt 'Stanford Javascript Crypto Library'-compatible messages
 dev-python/skia-pathops 0.8.0: Python bindings for the Skia Path Ops
 dev-python/sortedcollections 2.1.0: Apache2 licensed Python sorted collections library
 dev-python/sphinx-argparse-cli 1.11.1: Render CLI arguments (sub-commands friendly) defined by argparse module
@@ -900,7 +902,7 @@ dev-util/eclipse-parallel-bin 4.28: Eclipse IDE for Scientific Computing (C, C++
 dev-util/exercism 3.1.0 3.2.0: Command line client for https://exercism.io
 dev-util/find-work 0.6.1 0.7.0 9999: Personal advice utility for Gentoo package maintainers
 dev-util/fnm 1.35.1: Fast and simple Node.js version manager
-dev-util/fortls 2.13.0 3.0.0_rc2 3.0.0_rc3 3.0.0_rc4: Fortran Language Server (fortls)
+dev-util/fortls 2.13.0 3.0.0: Fortran Language Server (fortls)
 dev-util/fortran-test-drive 0.4.0: The simple testing framework (for Fortran)
 dev-util/gammaray 2.11.3: High-level runtime introspection tool for Qt applications
 dev-util/git-bug 0.8.0 9999: distributed, offline-first bug tracker
@@ -1013,7 +1015,7 @@ games-util/hid-nintendo 9999: A Nintendo HID kernel module
 games-util/itch-bin 25.5.1-r2: itch.io game browser, installer and launcher
 games-util/legendary 0.20.33 0.20.34: A free and open-source replacement for the Epic Games Launcher
 games-util/libtess2 1.0.3: Game and tools oriented refactored version of GLU tesselator
-games-util/mangohud 0.7.1-r3 9999: Vulkan and OpenGL overlay for monitoring FPS, sensors, system load and more
+games-util/mangohud 0.7.1-r4 9999: Vulkan and OpenGL overlay for monitoring FPS, sensors, system load and more
 games-util/minigalaxy 1.2.6: A simple GOG client for Linux
 games-util/pegasus 9999: Graphical frontend for browsing your game library
 games-util/protonup 0.1.5 9999: Install and Update Proton-GE
@@ -1213,8 +1215,8 @@ media-libs/dr_wav 0.13.16-r1: Single-header WAV audio loader and writer library
 media-libs/gl4es 9999: OpenGL 2.1/1.5 to GL ES 2.0/1.1 translation library
 media-libs/glee 5.4.0 5.4.0-r1: OpenGL Easy Extension library
 media-libs/grok 11.0.0: World's Leading Open Source JPEG 2000 Codec
-media-libs/imgui 1.89.9: Bloat-free graphical user interface library for C++
-media-libs/implot 0.16: Immediate Mode Plotting
+media-libs/imgui 1.89.9-r1 1.90.6: Bloat-free graphical user interface library for C++
+media-libs/implot 0.16-r1: Immediate Mode Plotting
 media-libs/libbpg 0.9.8-r1: Better Portable Graphics reference implementation
 media-libs/monado 9999: The open source OpenXR runtime.
 media-libs/openxr-loader 1.0.31 9999: OpenXR loader
@@ -1436,7 +1438,7 @@ net-misc/youtube-dl 2021.12.17: youtube-dl fork with additional features and fix
 net-misc/yt-dlg 2023.08.16: A cross platform front-end GUI of the popular youtube-dl written in wxPython.
 net-news/cliflux 1.4.1: A terminal-ui (TUI) client for the Miniflux RSS reader
 net-news/comitium 1.8.1: feed aggregator for gemini supporting many formats and protocols
-net-news/gfeeds 2.2.0-r1: An RSS/Atom feed reader for GNOME.
+net-news/gfeeds 2.2.0-r1 2.2.0-r2: An RSS/Atom feed reader for GNOME.
 net-news/newsflash 3.1.6: Feed Reader written in GTK
 net-news/newsraft 0.23 9999: A lightweight feed reader with ncurses user interface inspired by Newsboat.
 net-nntp/inn 2.7.1: InterNetNews - the Internet meets Netnews
@@ -1460,11 +1462,11 @@ net-voip/discover-overlay 0.5.4 0.6.9-r1 0.7.0: Yet another Discord overlay for 
 net-voip/gnome-calls 44.2 45.0: Phone dialer and call handler
 net-voip/re 3.7.0 3.8.0 3.9.0 3.10.0 3.11.0: Generic library for real-time communications with async IO support
 net-voip/vvmd 0.8: vvmd is a lower level daemon that retrieves Visual Voicemail
-net-vpn/candy 5.8: A reliable, low-latency, and anti-censorship virtual private network
+net-vpn/candy 5.8.1: A reliable, low-latency, and anti-censorship virtual private network
 net-vpn/cloudflare-warp 2023.3.470 2023.7.40 2024.2.62-r2: Cloudflare Warp Client
 net-vpn/fastd 22: A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
 net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that require SAML
-net-vpn/mullvadvpn-app 2024.1: Tool used to manage daemon setup
+net-vpn/mullvadvpn-app 2024.2: Tool used to manage daemon setup
 net-wireless/bluetuith 0.1.9 0.2.0 0.2.1 0.2.2 9999: A TUI bluetooth manager for Linux written in Go
 net-wireless/rtl8192eu 0_pre20240120: Realtek 8192EU driver module for Linux kernel
 net-wireless/rtl8723bu 9999: Driver for the rtl8723 wireless chipset
@@ -1550,12 +1552,12 @@ sys-apps/corefreq 1.96.3: CPU monitoring software designed for the 64-bits Proce
 sys-apps/dool 1.3.1-r1 9999: Versatile replacement for vmstat, iostat and ifstat (clone of dstat)
 sys-apps/drm_info 2.6.0: Small utility to dump info about DRM devices
 sys-apps/fchroot 0.1.2: Funtoo's franken-chroot tool - chroot from AMD64 to ARM system
-sys-apps/fselect 0.8.5: Find files with SQL-like queries
+sys-apps/fselect 0.8.6: Find files with SQL-like queries
 sys-apps/hex 0.4.2 0.5.0 0.6.0: Futuristic take on hexdump
 sys-apps/lact 0.5.4: Linux AMDGPU Controller
 sys-apps/loclone 0.1.0: A tool for creating CoW snapshots on XFS
 sys-apps/lsplug 4: Replacement for lsusb that shows more useful info and less useless info
-sys-apps/mission-center 0.4.1 0.4.4 9999: Monitor your CPU, Memory, Disk, Network and GPU usage.
+sys-apps/mission-center 0.4.1 0.4.4-r1 9999: Monitor your CPU, Memory, Disk, Network and GPU usage.
 sys-apps/nvimpager 0.12.0: Use nvim as a pager to view manpages, diff, etc with nvim's syntax highlighting.
 sys-apps/openSeaChest 23.03.1 23.12: SeaGate's open source harddrive control utilities
 sys-apps/ov 0.11.2 0.32.0: Feature-rich terminal pager
@@ -1601,7 +1603,7 @@ sys-fs/ufiformat 0.9.9: USB Floppy Disk formatting tool
 sys-fs/zfs-auto-utils 1.0.0: ZFS Automatic Scrub/Trim for Linux
 sys-kernel/dpdk-kmod 23.03: DPDK Kernel Nic Interface module
 sys-kernel/uek-sources 5.15.0.206.149.1 5.15.0.206.153.6: Unbreakable Enterprise Kernel (UEK) sources built from Oracle
-sys-kernel/ugrd 0.22.0 1.2.2 1.3.8 1.4.0: Python based initramfs generator with TOML defintions
+sys-kernel/ugrd 0.22.0 1.2.2 1.3.8 1.4.0 1.4.2: Python based initramfs generator with TOML defintions
 sys-kernel/usermode-kernel 6.0.12: Linux kernel built with Gentoo patches
 sys-kernel/xow 0.5: Linux driver for the Xbox One wireless dongle
 sys-kernel/zenpower3 0.2.0: Linux kernel driver for reading sensors of AMD Zen family CPUs

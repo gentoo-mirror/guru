@@ -396,7 +396,9 @@ media-libs/imgui:allegro5 - Enable allegro backend and renderer
 media-libs/imgui:glfw - Enable glfw backend
 media-libs/imgui:opengl - Enable opengl renderer
 media-libs/imgui:sdl2 - Enable SDL2 backend
+media-libs/imgui:sdl_renderer - Enable SDL renderer backend
 media-libs/imgui:vulkan - Enable vulkan renderer
+media-libs/imgui:webgpu - Enable webgpu renderer backend
 media-libs/libbpg:bpgview - Compile bpgview (media-libs/libsdl and media-libs/sdl-image needed)
 media-libs/libbpg:jctvc - Enable the JCTVC code (best quality but slow) for the encoder
 media-libs/monado:X - Enable xlib/xlib-randr/xcb support
@@ -588,7 +590,7 @@ sci-misc/linuxcnc:rt - Build with RT_PREEMPT threads modules
 sci-misc/linuxcnc:simulator - Build with posix threads (no realtime)
 sys-apps/bustd:glob - Enable excluding processes with glob patterns
 sys-apps/drm_info:pci - Print PCI device names via libpci
-sys-apps/fselect:uzers - Add support for getting system users and groups
+sys-apps/fselect:users - Add support for getting system users and groups
 sys-apps/lact:drm - Use x11-libs/libdrm for more GPU information.
 sys-apps/lact:libadwaita - Build GUI with gui-libs/libadwaita support
 sys-apps/ugrep:7zip - Adds support for 7zip packages.

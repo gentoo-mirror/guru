@@ -1,0 +1,13 @@
+BDEPEND=app-emacs/inheritenv >=app-editors/emacs-25.3:*
+DEFINED_PHASES=compile configure install postinst postrm prepare setup test unpack
+DESCRIPTION=Emacs support for direnv which operates buffer-locally
+EAPI=8
+HOMEPAGE=https://github.com/purcell/envrc
+INHERIT=elisp
+KEYWORDS=~amd64
+LICENSE=GPL-3+
+RDEPEND=>=app-editors/emacs-25.3:*
+SLOT=0
+SRC_URI=https://github.com/purcell/envrc/archive/refs/tags/0.11.tar.gz -> envrc-0.11.tar.gz
+_eclasses_=elisp-common	abb2dda42f680fce87602c8273f832c7	elisp	fbefa95f5e9ab880a34bc69832b7c0d7
+_md5_=948f716402d52b99eb3ddfb6c0f3779f
