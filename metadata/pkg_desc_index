@@ -495,7 +495,7 @@ dev-libs/feedbackd 0.2.0 0.3.0: A daemon to provide haptic feedback on events
 dev-libs/feedbackd-device-themes 0.0.20220523 0.1.0: A daemon to provide haptic feedback on events (themes package)
 dev-libs/fortran-regex 1.1.2: Modern Fortran port of the tiny-regex-c library for regular expressions
 dev-libs/fortran-shlex 1.0.1: Modern Fortran port of the tiny-regex-c library for regular expressions
-dev-libs/fortran-stdlib 0.2.1-r1 0.3.0 0.4.0 0.5.0 9999: A community driven standard library for (modern) Fortran
+dev-libs/fortran-stdlib 0.2.1-r1 0.3.0 0.4.0 0.5.0 0.6.1 9999: A community driven standard library for (modern) Fortran
 dev-libs/fsst 0_pre20200830-r1: Fast Static Symbol Table: fast text compression that allows random access
 dev-libs/ftl 1.0_p20230220: The Fortran Template Library (FTL) is a general purpose library for Fortran 2003
 dev-libs/gbinder 1.1.30-r3 1.1.32 1.1.36 1.1.38 9999: GLib-style interface to binder
@@ -638,14 +638,11 @@ dev-python/click-option-group 0.5.5 0.5.6: Option groups missing in Click
 dev-python/click-repl 0.2.0-r1: Subcommand REPL for click apps
 dev-python/cloudflare 2.19.2 2.19.4: Python wrapper for the Cloudflare v4 API
 dev-python/cloup 3.0.5: Click + option groups + constraints + aliases + help themes + ...
-dev-python/clufter 0.77.2: Tool/library for transforming/analyzing cluster configuration formats
 dev-python/codecov 2.1.12: Hosted coverage reports for GitHub, Bitbucket and Gitlab
 dev-python/colored 2.2.4: Very simple Python library for color and formatting in terminal
 dev-python/colorthief 0.2.1: Module for grabbing the color palette from an image
 dev-python/convertdate 2.4.0: Utils for converting between date formats and calculating holidays
 dev-python/cryptg 0.4: Hachoir is a Python library to view and edit a binary stream field by field
-dev-python/curio 1.6: Curio is a coroutine-based library for concurrent systems programming
-dev-python/cx-oracle 8.3.0-r1: Python interface to Oracle
 dev-python/dacite 1.8.1: This module simplifies creation of data classes (PEP 557) from dictionaries
 dev-python/daff 1.3.46: The daff can produce and apply tabular diffs
 dev-python/daiquiri 3.2.3: Library to configure Python logging easily
@@ -709,7 +706,7 @@ dev-python/jsonlines 4.0.0: Library with helpers for the jsonlines file format
 dev-python/jsonpath-rw 1.4.0-r1: A robust and significantly extended implementation of JSONPath for Python
 dev-python/jsonpath-rw-ext 1.2.2-r1: Extensions for JSONPath RW
 dev-python/jupyter-sphinx 0.4.0: Jupyter Sphinx Extensions
-dev-python/kurbopy 0.9.0-r1 0.10.40: Python wrapper around Rust kurbo 2D curves library
+dev-python/kurbopy 0.10.40: Python wrapper around Rust kurbo 2D curves library
 dev-python/langdetect 1.0.9: Port of Google's language-detection library to Python
 dev-python/libusb1 2.0.1-r1: Pure-python wrapper for libusb-1.0
 dev-python/lru-dict 1.3.0: Dict like LRU container
@@ -822,7 +819,7 @@ dev-python/screeninfo 0.8.1: Fetch location and size of physical screens.
 dev-python/sdnotify 0.3.2: Python implementation of the systemd sd_notify protocol
 dev-python/sendgrid 6.9.7: Twilio SendGrid library for Python
 dev-python/sentence-splitter 1.4-r2: Sentence splitter using heuristic algorithm by Philipp Koehn and Josh Schroeder
-dev-python/signalstickers-client 3.2.0 3.3.0: A Python client for the Signal stickers API
+dev-python/signalstickers-client 3.3.0: A Python client for the Signal stickers API
 dev-python/simplemma 0.9.1: A simple multilingual lemmatizer for Python
 dev-python/sjcl 0.2.1 0.2.1-r1: Decrypt and encrypt 'Stanford Javascript Crypto Library'-compatible messages
 dev-python/skia-pathops 0.8.0: Python bindings for the Skia Path Ops
@@ -854,7 +851,7 @@ dev-python/textual 0.58.1: Modern Text User Interface framework
 dev-python/textual-dev 1.5.1: Modern Text User Interface framework
 dev-python/timeslot 0.1.2: Time slots/intervals with an arbitrary start and stop
 dev-python/trailrunner 1.2.1: Walk paths and run things
-dev-python/tulir-telethon 1.34.0_alpha2 1.34.0_alpha3 1.35.0_alpha1: Pure Python 3 MTProto API Telegram client library, for bots too!
+dev-python/tulir-telethon 1.35.0_alpha1: Pure Python 3 MTProto API Telegram client library, for bots too!
 dev-python/tweepy 4.14.0: An easy-to-use Python library for accessing the Twitter API.
 dev-python/types-protobuf 4.24.0.20240408: Typing stubs for protobuf
 dev-python/types-requests 2.31.0.20240311: Typing stubs for requests
@@ -866,7 +863,6 @@ dev-python/volatile 2.1.0: A small extension for the tempfile module
 dev-python/w3lib 2.1.2: Library of web-related functions
 dev-python/webpy 0.62: A web framework for python that is as simple as it is powerful
 dev-python/webrtcvad 2.0.10-r1: Python interface to the Google WebRTC Voice Activity Detector (VAD)
-dev-python/wheezy-template 3.1.0: lightweight template library
 dev-python/wrapio 2.0.0: Handling event-based streams in Python
 dev-python/xattr 1.0.0 1.1.0: Python wrapper for extended filesystem attributes
 dev-python/xunitparser 1.3.4: Read JUnit/XUnit XML files and map them to Python objects
@@ -1278,7 +1274,6 @@ media-sound/zita-ajbridge 0.8.4 0.8.4-r1: zita-a2j and zita-j2a - bridges betwee
 media-video/avisynth+ 9999: A powerful nonlinear scripting language for video
 media-video/ciano 0.2.4-r1: A multimedia file converter focused on simplicity
 media-video/delfin 0.4.2 0.4.3: Stream movies and TV shows from Jellyfin
-media-video/ffsubsync 0.4.25: Automagically syncronize subtitles with video
 media-video/kikoplay 0.9.3 9999: KikoPlay is a full-featured danmu player
 media-video/kooha 2.2.3: GTK4 screen recorder for Wayland
 media-video/lossless-cut 3.54.0-r1 3.56.0 3.59.1: Lossless video/audio editing: export media without reencoding, powered by ffmpeg
@@ -1299,7 +1294,6 @@ media-video/wl-screenrec 0.1.3: High performance screen/audio recorder for wlroo
 media-video/wlrobs 1.0 1.1 9999: OBS plugin that allows you to screen capture on wlroots based compositors
 media-video/ytarchive 0.4.0: Youtube livestream downloader
 mpv-plugin/SmartCopyPaste 3.1: Gives mpv the capability to copy and paste while being smart and customizable
-mpv-plugin/autosubsync-mpv 20220402: Automatic subtitle synchronization script for mpv media player
 mpv-plugin/kde-do-not-disturb 20230110: Disable the notifications while mpv is running
 mpv-plugin/kde-night-color 20230110: Disable Night Color while mpv is running
 mpv-plugin/kdialog-open-files 20221015: Use KDialog to add files to playlist, subtitles to playing video or open URLs
@@ -1460,7 +1454,7 @@ net-proxy/MTProxy 3.0.4-r1: Community fork of MTProxy
 net-proxy/ngrok-bin 3.0.0: ngrok is a reverse proxy, firewall, and API gateway
 net-proxy/snowflake 2.8.1 2.9.2: Pluggable Transport using WebRTC, inspired by Flashproxy
 net-voip/baresip 3.7.0 3.8.0 3.9.0 3.10.0 3.10.1 3.11.0: Baresip is a portable and modular SIP User-Agent
-net-voip/discover-overlay 0.5.4 0.6.9-r1 0.7.4: Yet another Discord overlay for Linux written in Python using GTK3
+net-voip/discover-overlay 0.6.9-r1 0.7.4: Yet another Discord overlay for Linux written in Python using GTK3
 net-voip/gnome-calls 44.2 45.0: Phone dialer and call handler
 net-voip/re 3.7.0 3.8.0 3.9.0 3.10.0 3.11.0: Generic library for real-time communications with async IO support
 net-voip/vvmd 0.8: vvmd is a lower level daemon that retrieves Visual Voicemail
