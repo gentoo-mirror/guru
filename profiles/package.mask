@@ -14,6 +14,37 @@
 
 # New entries go on top.
 
+# Julien Roy <julien@jroy.ca> (2024-05-13)
+# Mask stale packages
+# These packages are abandoned by their maintainers and/or outdated
+# In addition, they have open (and also abandoned) bugs
+# If anyone is interested in maintaining them:
+# - add yourself as maintainer
+# - bump revisions if needed
+# - bump python compat version (at least to 11, try 12)
+# - try and fix open bugs for these packages
+# Otherwise, they will be removed by 2024-06-13
+dev-python/hypothesmith # Bugs 931377, 921823, 921821
+dev-python/pymorphy2-dicts-uk # Bugs 931405, 921863
+dev-python/pymorphy2-dicts-ru # Bug 921862
+dev-python/pymorphy2-dicts # Bugs 921861
+dev-python/pymorphy2 # Bugs 921860, 931404
+media-video/tartube # Bugs 931465, 922019
+dev-python/python-skywater-pdk # Bugs 931417, 921867
+sys-apps/fchroot # Bugs 931477, 922048
+x11-misc/caffeine-ng # Bugs 931487, 922088
+# Reverse dependencies
+sci-electronics/skywater-pdk
+# Revdep of revdevs
+sci-electronics/open_pdks # Bug 931473
+
+# Julien Roy <julien@jroy.ca> (2024-05-13)
+# Libraries with no reverse dependencies
+# Removal in 30 days
+dev-python/orderedmultidict # Bug 931391
+dev-python/multipart # Bug 931388
+dev-python/portion # Bug 931401
+
 # Viorel Munteanu <ceamac@gentoo.org> (2024-05-10)
 # No upstream activity in 3 years.
 # No revdeps left in tree.
@@ -145,32 +176,6 @@ dev-python/django-bleach
 dev-python/django-markdownify
 dev-python/django-widget-tweaks
 dev-python/inscriptis
-
-# Julien Roy <julien@jroy.ca> (2024-04-13)
-# Mask stale/unmaintained packages for removal in 30 days
-# Unmaintained upstream, runtime failure on >=dev-lang/python-3.9
-dev-python/clufter
-
-# Julien Roy <julien@jroy.ca> (2024-04-13)
-# Mask stale/unmaintained packages for removal in 30 days
-# Deprecated upstream, replaced by oracledb, no revdeps
-dev-python/cx-oracle
-
-# Julien Roy <julien@jroy.ca> (2024-04-13)
-# Mask stale/unmaintained packages for removal in 30 days
-# Library with no revdeps, upstream no longer tagging releases, need to use live ebuild or tag commits
-dev-python/curio
-
-# Julien Roy <julien@jroy.ca> (2024-04-13)
-# Mask stale/unmaintained packages for removal in 30 days
-# Can't be merged due to banned files (bug https://bugs.gentoo.org/884691)
-dev-python/wheezy-template
-
-# Julien Roy <julien@jroy.ca> (2024-04-13)
-# Depends on last rited dev-python/future
-# Masked for removal in 30 days
-media-video/ffsubsync
-mpv-plugin/autosubsync-mpv
 
 # Julien Roy <julien@jroy.ca> (2024-03-21)
 # sys-libs/libucontext is masked in ::gentoo
