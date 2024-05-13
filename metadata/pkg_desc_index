@@ -233,6 +233,7 @@ app-misc/glow 1.4.1 1.5.1: Render markdown on the CLI, with pizzazz!
 app-misc/godedupe 1.5.1: Improved and modern fdupes alternative
 app-misc/gopsuinfo 0.1.5: A gopsutil-based command to display system usage info as text
 app-misc/grit 0.3.0: An personal task manager that represents tasks as multitree nodes
+app-misc/interception-tools 0.6.8-r1: A minimal composable infrastructure on top of libudev and libevdev
 app-misc/kloak 0.2.30: A privacy tool that makes keystroke biometrics less effective
 app-misc/kmon 1.6.4: Linux kernel manager and activity monitor
 app-misc/ledger-live 2.68.1 2.71.1 2.73.0 2.73.1 2.75.0: Manager for the Ledger hardware wallet
@@ -250,7 +251,7 @@ app-misc/nerdfetch 8.1.1: A POSIX *nix fetch script using Nerdfonts
 app-misc/nwg-look 0.2.2 0.2.4 0.2.5: GTK3 settings editor adapted to work in the sway / wlroots environment
 app-misc/nwg-shell-wallpapers 1.3 1.4 1.5: Selection of wallpapers contributed to the nwg-shell project
 app-misc/oddjob 0.34.7: A D-Bus service which runs odd jobs on behalf of client applications
-app-misc/onefetch 2.19.0: Command-line Git information tool
+app-misc/onefetch 2.19.0 2.21.0: Command-line Git information tool
 app-misc/pfetch 0.6.0: A pretty system information tool written in POSIX sh
 app-misc/pipes-rs 1.6.3: An over-engineered rewrite of pipes.sh in Rust
 app-misc/powerpanel 1.4.1-r1: PowerPanel software for CyberPower UPS systems
@@ -298,7 +299,7 @@ app-portage/portage-lostfiles 0.5.5: A simple script to identify files not track
 app-portage/quantum-resolver 9999: A WIP portage dependency resolver
 app-portage/showbuild 0.9.1-r1: Script to follow log of running portage builds
 app-portage/version 0.19.0_alpha 0.20.1_alpha 0.21.0_alpha: A command line function for package version management.
-app-shells/carapace 0.30.2 1.0.0 1.0.1: Multi-shell multi-command argument completer
+app-shells/carapace 1.0.0 1.0.1 1.0.2: Multi-shell multi-command argument completer
 app-shells/direnv 2.32.3 9999: Environment variable manager for shell
 app-shells/elvish 0.19.2 0.20.1: Expressive programming language and a versatile interactive shell
 app-shells/fzf-fish 10.3: Augment your fish command line with fzf key bindings
@@ -542,7 +543,7 @@ dev-libs/randomx 1.1.8 1.1.9 1.2.1: Proof of work algorithm based on random code
 dev-libs/sealcurses 2.0.18_pre20230206 2.0.18_pre20230811: SDL Emulation and Adaptation Layer for Curses
 dev-libs/sirit 0_p20220725: A runtime SPIR-V assembler
 dev-libs/supercop 0_p20200827: Fast cryptographic operations for Monero wallets
-dev-libs/tbtools 0.2.0: Thunderbolt/USB4 debugging tools
+dev-libs/tbtools 0.3.2-r1: Thunderbolt/USB4 debugging tools
 dev-libs/tfdn 1.7.0 1.8.1: Opinionated C11 library for low-level functionality
 dev-libs/toml-f 0.4.0 0.4.1 0.4.2: TOML parser implementation for data serialization and deserialization in Fortran
 dev-libs/tweeny 3.1.1 3.2.0: C++ tweening (inbetweening) library
@@ -758,7 +759,7 @@ dev-python/pure-protobuf 3.0.1: Python implementation of Protocol Buffers data t
 dev-python/py-nanoid 9999: Python Nanoid
 dev-python/pyagentx 0.4-r1: Python AgentX Implementation
 dev-python/pyclip 0.7.0-r1 9999: Python clipboard module
-dev-python/pycpio 0.8.0 0.8.2 0.9.1 0.9.2 1.0.0: Python CPIO library
+dev-python/pycpio 1.0.0 1.1.2: Python CPIO library
 dev-python/pydispatcher 2.0.7: Multi-producer-multi-consumer signal dispatching mechanism
 dev-python/pydub 0.25.1: Manipulate audio with an simple and easy high level interface
 dev-python/pyfiglet 0.8_p1: Pure-python FIGlet implementation
@@ -870,7 +871,7 @@ dev-python/wrapio 2.0.0: Handling event-based streams in Python
 dev-python/xattr 1.0.0 1.1.0: Python wrapper for extended filesystem attributes
 dev-python/xunitparser 1.3.4: Read JUnit/XUnit XML files and map them to Python objects
 dev-python/yams 0.7.3-r1 9999: Yet Another MPD Scrobbler (for Last.FM)
-dev-python/zenlib 1.2.0-r1 1.3.1 1.4.0 1.6.2 1.7.2 1.7.3 1.7.4 2.0.0 2.0.4 2.1.1: Useful python decorators and utilities
+dev-python/zenlib 2.0.0 2.0.4 2.1.1 2.1.2: Useful python decorators and utilities
 dev-python/zopfli 0.2.2: Zopfli module for Python
 dev-ruby/asciidoctor-pdf 2.3.15: A native PDF converter for AsciiDoc based on Asciidoctor and Prawn
 dev-ruby/byebug 11.1.3: a Ruby 2 debugger
@@ -937,6 +938,7 @@ dev-util/upstream-ontologist 0.1.35-r1: Tracking of upstream project metadata
 dev-util/vala-language-server 0.48.4: Code Intelligence for Vala & Genie
 dev-util/vscode-langservers-extracted 4.8.0 4.10.0: HTML/CSS/JSON/ESLint/Markdown language servers extracted from vscode.
 dev-util/wakatime-cli 1.27.0 1.28.6: Command line interface to WakaTime used by all WakaTime plugins
+dev-util/webgpu-headers 9999 20240512: Webgpu Header files
 dev-util/wxformbuilder 3.10.1-r1: A wxWidgets GUI Builder
 dev-util/xxd 8.2.4092: Hexdump utility from vim
 dev-util/yaml-language-server 1.13.0 1.14.0: Language Server for YAML Files
@@ -959,7 +961,7 @@ games-arcade/SpaceCadetPinball 2.0 2.0.1 2.1.0 9999: Decompilation of 3D Pinball
 games-arcade/opensurge 0.5.2.1 9999: fun 2D retro platformer inspired by old-school Sonic games
 games-arcade/shiromino 0.2.1: fast-paced puzzle game with roots in the arcade
 games-arcade/taisei 1.4.1 9999: Clone of the Touhou series, written in C using SDL/OpenGL/OpenAL.
-games-arcade/tetrio-desktop 8: TETR.IO desktop client.
+games-arcade/tetrio-desktop 8 9: TETR.IO desktop client.
 games-board/fairy-stockfish 14.0.1: Chess variant engine derived from Stockfish to support fairy chess variants
 games-board/openriichi 0.2.1.1: OpenRiichi is an open source Japanese Mahjong client
 games-board/rmahjong 0.4_p20201106: Riichi Mahjong, the Japanese variant of the Chinese game Mahjong for 4 players
@@ -1022,7 +1024,7 @@ games-util/protonup 0.1.5 9999: Install and Update Proton-GE
 games-util/r2modman-bin 3.1.48: A simple and easy to use mod manager for several games using Thunderstore
 games-util/roll 2.6.1: Program to roll dices specified in a simple and intuitive way
 games-util/samrewritten 9999 202008: Steam Achievement Manager For Linux
-games-util/sdl2-gamepad-mapper 0.0.7-r1: GUI application to generate an SDL2 mapping string from a generic controller
+games-util/sdl2-gamepad-mapper 0.0.8: GUI application to generate an SDL2 mapping string from a generic controller
 games-util/steamtinkerlaunch 12.0: Wrapper script for Steam custom launch options
 games-util/xivlauncher 1.0.8: Custom Launcher for Final Fantasy XIV Online (Crossplatform rewrite)
 gnome-extra/commit 4.1-r1: Commit message editor
@@ -1076,7 +1078,7 @@ gui-apps/hyprpicker 0.1.1 0.2.0: A wlroots-compatible Wayland color picker that 
 gui-apps/intiface-central-bin 2.5.5 2.5.7: Buttplug frontend application
 gui-apps/lan-mouse 0.7.3: Software KVM Switch / mouse & keyboard sharing software for Local Area Networks
 gui-apps/lemurs 0.3.1 0.3.1-r1 0.3.2: A TUI Display/Login Manager
-gui-apps/lswt 1.0.4 9999: List Wayland toplevels
+gui-apps/lswt 1.0.4-r1 9999: List Wayland toplevels
 gui-apps/meteo-qt 3.3: A system tray application for the weather status
 gui-apps/mpvpaper 1.5 9999: A video wallpaper program for wlroots based wayland compositors
 gui-apps/nwg 0: meta package package for nwg-shell
@@ -1289,7 +1291,7 @@ media-video/obs-streamfx 0.12.0.9999 9999: OBS® Studio plugin which adds many n
 media-video/obs-vaapi 0.4.1 9999: OBS Studio VAAPI support via GStreamer
 media-video/obs-vkcapture 1.4.9 1.5.0 9999: OBS Linux Vulkan/OpenGL game capture
 media-video/olive 9999: Free open-source non-linear video editor
-media-video/syncplay 1.6.9 1.7.0 1.7.1: Client/server to synchronize media playback
+media-video/syncplay 1.6.9 1.7.1 1.7.3: Client/server to synchronize media playback
 media-video/tartube 2.4.077 9999: A GUI front-end for youtube-dl
 media-video/uxplay 1.67 1.68.3: AirPlay Unix mirroring server
 media-video/walksnail-osd-tool 0.3.0 9999: Tool for rendering OSDs over Walksnail DVR recordings
@@ -1387,7 +1389,7 @@ net-libs/telepathy-haze 0.8.1: Telepathy connection manager providing libpurple 
 net-libs/ulfius 2.7.15: HTTP Framework for REST Applications in C
 net-libs/usockets 0.8.8 9999: tiny eventing, networking & crypto for async applications
 net-libs/yder 1.4.20: Logging library for C applications
-net-mail/dovecot-fts-xapian 1.5.9 1.7.6 1.7.9 1.7.10 9999: Dovecot FTS plugin backed by Xapian
+net-mail/dovecot-fts-xapian 1.5.9 1.7.6 1.7.9 1.7.10 1.7.11 9999: Dovecot FTS plugin backed by Xapian
 net-mail/hydroxide 0.2.23 0.2.24 0.2.26 0.2.27 0.2.28 9999: A third-party, open-source ProtonMail CardDAV, IMAP and SMTP bridge
 net-mail/pop 0.2.0: Send emails from your terminal
 net-misc/FORT-validator 1.5.3 1.5.4: FORT validator is an open source RPKI validator
@@ -1458,11 +1460,11 @@ net-proxy/MTProxy 3.0.4-r1: Community fork of MTProxy
 net-proxy/ngrok-bin 3.0.0: ngrok is a reverse proxy, firewall, and API gateway
 net-proxy/snowflake 2.8.1 2.9.2: Pluggable Transport using WebRTC, inspired by Flashproxy
 net-voip/baresip 3.7.0 3.8.0 3.9.0 3.10.0 3.10.1 3.11.0: Baresip is a portable and modular SIP User-Agent
-net-voip/discover-overlay 0.5.4 0.6.9-r1 0.7.0: Yet another Discord overlay for Linux written in Python using GTK3
+net-voip/discover-overlay 0.5.4 0.6.9-r1 0.7.4: Yet another Discord overlay for Linux written in Python using GTK3
 net-voip/gnome-calls 44.2 45.0: Phone dialer and call handler
 net-voip/re 3.7.0 3.8.0 3.9.0 3.10.0 3.11.0: Generic library for real-time communications with async IO support
 net-voip/vvmd 0.8: vvmd is a lower level daemon that retrieves Visual Voicemail
-net-vpn/candy 5.8.1: A reliable, low-latency, and anti-censorship virtual private network
+net-vpn/candy 5.8.2: A reliable, low-latency, and anti-censorship virtual private network
 net-vpn/cloudflare-warp 2023.3.470 2023.7.40 2024.2.62-r2: Cloudflare Warp Client
 net-vpn/fastd 22: A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
 net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that require SAML
@@ -1603,7 +1605,7 @@ sys-fs/ufiformat 0.9.9: USB Floppy Disk formatting tool
 sys-fs/zfs-auto-utils 1.0.0: ZFS Automatic Scrub/Trim for Linux
 sys-kernel/dpdk-kmod 23.03: DPDK Kernel Nic Interface module
 sys-kernel/uek-sources 5.15.0.206.149.1 5.15.0.206.153.6: Unbreakable Enterprise Kernel (UEK) sources built from Oracle
-sys-kernel/ugrd 0.22.0 1.2.2 1.3.8 1.4.0 1.4.2: Python based initramfs generator with TOML defintions
+sys-kernel/ugrd 1.2.2 1.3.8 1.4.0 1.4.2 1.5.1: Python based initramfs generator with TOML defintions
 sys-kernel/usermode-kernel 6.0.12: Linux kernel built with Gentoo patches
 sys-kernel/xow 0.5: Linux driver for the Xbox One wireless dongle
 sys-kernel/zenpower3 0.2.0: Linux kernel driver for reading sensors of AMD Zen family CPUs
@@ -1628,7 +1630,7 @@ sys-process/nvtop 2.0.3 3.0.1 3.0.2 9999: (h)top like task monitor for AMD, Inte
 sys-process/scron 0.4: Simple cron daemon
 sys-process/snooze 0.5 9999: Run a command at a particular time
 sys-process/task-spooler 1.3.0: A scheduler for CPU tasks
-sys-process/xe 1.0: Simple xargs and apply replacement with sane defaults
+sys-process/xe 1.0-r1: Simple xargs and apply replacement with sane defaults
 virtual/crystal-db 0.13: Virtual for Crystal database drivers
 www-apps/castopod 1.4.3 1.4.5: Open-source hosting platform made for podcasters
 www-apps/code-server-bin 4.14.1 4.15.0 4.16.0 4.16.1 4.17.0 4.17.1 4.18.0 4.19.1: VS Code in the browser (binary version with unbundled node and ripgrep)
