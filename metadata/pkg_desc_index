@@ -127,7 +127,7 @@ app-backup/blocksync-fast 1.0.3: Fast block device sync with digest, designed to
 app-backup/grub-btrfs 4.11-r1 4.12 4.13 9999: Improves Grub by adding btrfs snapshots to the Grub menu.
 app-backup/kopia 0.15.0: Kopia - Fast And Secure Open-Source Backup
 app-backup/kopia-ui-bin 0.15.0-r1: Kopia - Fast And Secure Open-Source Backup (Electron UI)
-app-backup/pika-backup 0.7.0 0.7.1: Keep your data safe
+app-backup/pika-backup 0.7.1 0.7.2: Keep your data safe
 app-backup/timeshift 21.09.1-r3 22.06.5-r2 22.11.1-r1 23.07.1: A system restore utility for Linux
 app-backup/timeshift-autosnap 0.9: Automatically creates a timeshift-snapshot when executed
 app-benchmarks/kdiskmark 3.1.4: Disk benchmarking tool
@@ -514,7 +514,7 @@ dev-libs/libdwarf 0.9.1 0.9.2: The DWARF Debugging Information Format
 dev-libs/libglibutil 1.0.68 1.0.76 9999: Library of glib utilities from sailfishos project
 dev-libs/libopensmtpd 0.7: Library for creating OpenSMTPD filters
 dev-libs/librepo 1.17.1: Repodata downloading library
-dev-libs/libsignal-ffi 0.44.0: A C ABI library which exposes Signal protocol logic
+dev-libs/libsignal-ffi 0.44.0 0.46.0: A C ABI library which exposes Signal protocol logic
 dev-libs/libthai 0.1.28 0.1.29: A a set of Thai language support routines
 dev-libs/libtypec 0.5.0 0.5.0-r1: Library to interface with USB Type-c/Power Delivery devices
 dev-libs/ls-hpack 2.3.3: QPACK compression library for use with HTTP/3
@@ -803,7 +803,7 @@ dev-python/python-statemachine 2.1.2: Python Finite State Machines made easy.
 dev-python/python-telegram-bot 20.6-r1 21.1.1 9999: Python wrapper of telegram bots API
 dev-python/pywebview 4.3.3 4.4.1: A lightweight cross-platform wrapper around a webview component
 dev-python/queuelib 1.6.2: Collection of persistent and non-persistent queues for Python
-dev-python/readability-lxml 0.6.1 0.8.1: fast html to text parser (article readability tool)
+dev-python/readability-lxml 0.8.1: fast html to text parser (article readability tool)
 dev-python/readmdict 0.1.1-r1: Read mdx/mdd files
 dev-python/rectangle-packer 2.0.2: Pack a set of rectangles into a bounding box with minimum area
 dev-python/repology-client 0.0.2 0.2.0: Asynchronous wrapper for Repology API
@@ -834,7 +834,7 @@ dev-python/sphinxext-opengraph 0.9.1: Sphinx extension to generate unique OpenGr
 dev-python/srt 3.5.1 3.5.2 3.5.3: A tiny library for parsing, modifying, and composing SRT files
 dev-python/sse-starlette 1.1.6: Server Sent Events for Starlette
 dev-python/starkbank-ecdsa 2.2.0: A lightweight and fast pure python ECDSA library
-dev-python/stdlibs 2022.3.16 2022.6.8: What's in the Python stdlib
+dev-python/stdlibs 2022.6.8: What's in the Python stdlib
 dev-python/steam 1.4.4 9999: Python package for interacting with Steam
 dev-python/stone 3.3.5: The Official Api Spec Language for Dropbox
 dev-python/stringcase 1.2.0-r1: Convert string cases between camel case, pascal case, snake case etc.
@@ -1066,7 +1066,7 @@ gui-apps/gtklock-extras 9999: Gtklock modules
 gui-apps/hiprompt-gtk-py 0_pre20221221 9999: GTK+ Himitsu prompter for Wayland
 gui-apps/hypridle 0.1.1 9999: Hyprland's idle daemon
 gui-apps/hyprlock 0.3.0-r1 9999: Hyprland's GPU-accelerated screen locking utility
-gui-apps/hyprpaper 0.5.0 0.6.0 0.6.0-r1: A blazing fast wayland wallpaper utility
+gui-apps/hyprpaper 0.6.0-r1 0.7.0: A blazing fast wayland wallpaper utility
 gui-apps/hyprpicker 0.1.1 0.2.0: A wlroots-compatible Wayland color picker that does not suck
 gui-apps/intiface-central-bin 2.5.5 2.5.7: Buttplug frontend application
 gui-apps/lan-mouse 0.7.3: Software KVM Switch / mouse & keyboard sharing software for Local Area Networks
@@ -1270,7 +1270,7 @@ media-sound/youtube-music-bin 3.3.6: YouTube Music Desktop App bundled with cust
 media-sound/zita-ajbridge 0.8.4 0.8.4-r1: zita-a2j and zita-j2a - bridges between ALSA and JACK
 media-video/avisynth+ 9999: A powerful nonlinear scripting language for video
 media-video/ciano 0.2.4-r1: A multimedia file converter focused on simplicity
-media-video/delfin 0.4.2 0.4.3: Stream movies and TV shows from Jellyfin
+media-video/delfin 0.4.3 0.4.4: Stream movies and TV shows from Jellyfin
 media-video/kikoplay 0.9.3 9999: KikoPlay is a full-featured danmu player
 media-video/kooha 2.2.3: GTK4 screen recorder for Wayland
 media-video/lossless-cut 3.54.0-r1 3.56.0 3.59.1: Lossless video/audio editing: export media without reencoding, powered by ffmpeg
@@ -1347,8 +1347,8 @@ net-im/mastoposter 0.2: Configurable reposter from Mastodon-compatible Fediverse
 net-im/matterhorn-bin 50200.13.0 50200.19.0 90000.0.0: Terminal based Mattermost client
 net-im/mautrix-discord 0.6.4 0.6.5: A Matrix-Discord puppeting bridge
 net-im/mautrix-facebook 0.4.1 0.5.0: A Matrix-Facebook Messenger puppeting bridge
-net-im/mautrix-meta 0.2.0: A Matrix-Facebook puppeting bridge
-net-im/mautrix-signal 0.5.1: A Matrix-Signal puppeting bridge
+net-im/mautrix-meta 0.2.0 0.3.0: A Matrix-Facebook puppeting bridge
+net-im/mautrix-signal 0.5.1 0.6.0: A Matrix-Signal puppeting bridge
 net-im/mautrix-slack 0_pre20230925 0_pre20240215: A Matrix-Slack puppeting bridge based on slack-go
 net-im/mautrix-telegram 0.14.1 0.14.2 0.15.1: A Matrix-Telegram Messenger puppeting bridge
 net-im/mautrix-whatsapp 0.10.0: A Matrix-WhatsApp puppeting bridge
@@ -1389,7 +1389,7 @@ net-misc/clatd 1.6: A CLAT / SIIT-DC Edge Relay implementation for Linux
 net-misc/commons-downloader 9999: A shell script to bulk download files from Wikimedia Commons, by category
 net-misc/commons-wikimedia-find-by-hash 1.0.0: Search in commons.wikimedia.org by hash (sha1) of provided file
 net-misc/curlie 1.7.2: Curlie is a frontend to curl that adds the ease of use of httpie
-net-misc/cve-client 1.0.5 9999: CLI-based client / toolbox for CVE.org
+net-misc/cve-client 1.1.0 9999: CLI-based client / toolbox for CVE.org
 net-misc/eg25-manager 0.4.2: Daemon for managing the Quectel EG25 modem
 net-misc/fedigroup 1.0.6 1.0.8: Emulate group accounts on Mastodon/Pleroma
 net-misc/freetube-bin 0.19.2 0.20.0: A private YouTube desktop client
@@ -1438,7 +1438,7 @@ net-nntp/pan 0.157 0.158 0.158-r1: A newsreader for GNOME
 net-p2p/bisq-bin 1.9.14: The decentralized bitcoin exchange (non-atomic, with arbitration)
 net-p2p/dogecoin-qt 1.14.6 1.14.7: Dogecoin Core Qt for desktop. Downloaded blockchain is under 2.2GB. Much secure.
 net-p2p/feather 2.6.2 9999: A free, open-source Monero wallet
-net-p2p/fragments 2.1-r1 2.1.1: Fragments is an easy to use BitTorrent client
+net-p2p/fragments 2.1-r1 2.1.1 3.0.0: Fragments is an easy to use BitTorrent client
 net-p2p/gridcoin 5.4.7.0 5.4.8.0: Proof-of-Stake based cryptocurrency that rewards BOINC computation
 net-p2p/ipfs-cluster 1.0.1 1.0.2: Pinset orchestration for IPFS
 net-p2p/monero 0.17.2.0 0.17.2.3 0.17.3.0 0.17.3.2 0.18.1.2 0.18.2.0 0.18.2.2 0.18.3.1 0.18.3.3 9999: The secure, private, untraceable cryptocurrency
