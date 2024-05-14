@@ -16,12 +16,12 @@ fi
 DESCRIPTION="Webgpu Header files"
 HOMEPAGE="https://github.com/webgpu-native/webgpu-headers"
 
-LICENSE="BSD-3"
+LICENSE="BSD"
 SLOT="0"
 
-multilib_src_install() {
+BDEPEND="dev-lang/go"
+
+src_install() {
 	insinto /usr/include/webgpu
 	doins "${S}"/webgpu.h
-	insinto /usr/share/licenses
-	newins "${S}"/LICENSE ${PN}
 }

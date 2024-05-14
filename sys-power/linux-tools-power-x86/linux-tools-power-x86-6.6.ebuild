@@ -1,9 +1,9 @@
-# Copyright 2013-2022 Gentoo Authors
+# Copyright 2013-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{10..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 
 inherit fcaps linux-info python-r1 toolchain-funcs
 
