@@ -1,16 +1,17 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{10..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 
 inherit distutils-r1
 
 DESCRIPTION="Python interface for the GNU scientific library (gsl)"
 HOMEPAGE="https://github.com/pygsl/pygsl"
-SRC_URI="https://github.com/pygsl/pygsl/archive/v${PV}.tar.gz -> ${P}.gh.tar.gz"
+SRC_URI="https://github.com/pygsl/pygsl/archive/v.${PV}.tar.gz -> ${P}.gh.tar.gz"
+S="${WORKDIR}/${PN}-v.${PV}"
 
 LICENSE="GPL-2"
 SLOT="0"
@@ -27,12 +28,7 @@ DEPEND="
 "
 
 distutils_enable_sphinx doc dev-python/sphinx-rtd-theme
-distutils_enable_tests unittest
-
-python_configure() {
-	esetup.py config
-	default
-}
+distutils_enable_tests pytest
 
 src_install() {
 	use examples && dodoc -r examples
