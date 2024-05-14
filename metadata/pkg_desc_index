@@ -276,7 +276,7 @@ app-misc/wego 2.2: Wego is a weather client for the terminal
 app-misc/x86-64-level 0.2.2 9999: Get the x86-64 Microarchitecture Level on the Current Machine
 app-misc/xplr 0.21.3: A hackable, minimal, fast TUI file explorer
 app-misc/yaf 0.0.3: Yet another system fetch that is minimal and customizable.
-app-misc/yazi 0.2.1 0.2.2 0.2.3 0.2.4: Blazing fast terminal file manager written in Rust, based on async I/O.
+app-misc/yazi 0.2.2 0.2.3 0.2.4 0.2.5: Blazing fast terminal file manager written in Rust, based on async I/O.
 app-misc/zcock 0.1.0 0.2.0: Print an emoji according to traditional chinese calendar and more
 app-mobilephone/flashlight 0.1.1-r2: It's a flashlight, what do you expect?
 app-mobilephone/mobile-config-firefox 2.1.0: Mobile and privacy friendly configuration for Firefox
@@ -369,7 +369,7 @@ dev-build/FoBiS 3.0.5-r1: FoBiS.py, a Fortran Building System for poor men
 dev-build/cargo-make 0.37.12: Rust task runner and build tool
 dev-build/fpm 0.9.0 0.10.0: Fortran Package Manager (fpm)
 dev-build/fypp 3.1 3.2: Fypp - Python powered Fortran preprocessor
-dev-build/just 1.25.2: Just a command runner (with syntax inspired by 'make')
+dev-build/just 1.25.2 1.26.0: Just a command runner (with syntax inspired by 'make')
 dev-build/xmake 2.8.9 9999: A cross-platform build utility based on Lua
 dev-cpp/blurhash 0.2.0 0.2.0-r1: C++ blurhash encoder/decoder
 dev-cpp/coeurl 0.2.1 0.3.0: A simple async wrapper around CURL for C++
@@ -655,9 +655,6 @@ dev-python/defcon 0.10.2: A set of UFO based objects for use in font editing app
 dev-python/desktop-notifier 4.0.0: desktop-notifier is a Python library for cross-platform desktop notifications
 dev-python/devtools 0.10.0-r1: Dev tools for python
 dev-python/digitalocean 1.17.0-r1: Digitalocean API access library
-dev-python/django-bleach 3.0.1: Easily use bleach with Django models and templates
-dev-python/django-markdownify 0.9.2: Markdown template filter for Django
-dev-python/django-widget-tweaks 1.4.12: Tweak the form field rendering in templates
 dev-python/doxypypy 0.8.8.6_p20210405-r1: A more Pythonic version of doxypy, a Doxygen filter for Python
 dev-python/dropbox 11.36.2: The offical Dropbox SDK for Python
 dev-python/dtreeviz 2.2.2: A python library for decision tree visualization and model interpretation
@@ -692,7 +689,6 @@ dev-python/i3ipc 2.2.1 2.2.1-r1: An improved Python library to control i3wm and 
 dev-python/iOSbackup 0.9.925: Reads and extracts files from a password-encrypted iOS backup
 dev-python/icecream 2.1.3: Pythonic task execution
 dev-python/injector 0.21.0-r1: Python dependency injection framework, inspired by Guice
-dev-python/inscriptis 2.3.1 2.3.2: HTML to text converter
 dev-python/internetarchive 3.7.0: Lib and CLI for archive.org - for search, uploading, downloading, rename...
 dev-python/invoke 2.2.0: Pythonic task execution
 dev-python/isosurfaces 0.1.0: Construct isolines/isosurfaces of a 2D/3D scalar field defined by a function
@@ -708,7 +704,7 @@ dev-python/jsonpath-rw-ext 1.2.2-r1: Extensions for JSONPath RW
 dev-python/jupyter-sphinx 0.4.0: Jupyter Sphinx Extensions
 dev-python/kurbopy 0.10.40: Python wrapper around Rust kurbo 2D curves library
 dev-python/langdetect 1.0.9: Port of Google's language-detection library to Python
-dev-python/latexify 0.4.3.1: Package to compile a fragment of Python source code to a corresponding LaTeX expression
+dev-python/latexify-py 0.4.3.1: Annotate Python source code to get LaTeX expressions
 dev-python/libusb1 2.0.1-r1: Pure-python wrapper for libusb-1.0
 dev-python/lru-dict 1.3.0: Dict like LRU container
 dev-python/manhole 1.8.0-r2: Debugging manhole for python application
@@ -1422,7 +1418,6 @@ net-misc/rpki-client 8.0 8.4 8.8: Portability shim for OpenBSD's rpki-client
 net-misc/smcroute 2.5.6: A static multicast routing daemon
 net-misc/sshx 0.2.4: A secure web-based, collaborative terminal.
 net-misc/toot 0.38.1: toot - Mastodon CLI & TUI
-net-misc/tuxi 9999: Tuxi is a cli assistant. Get answers of your questions instantly.
 net-misc/warp 0.7.0: Fast and secure file transfer
 net-misc/wayback_machine_downloader 2.3.0 2.3.1: Download an entire website from the Wayback Machine
 net-misc/whatscli 1.0.6 1.0.11: A command line interface for WhatsApp
@@ -1616,7 +1611,7 @@ sys-power/auto-cpufreq 1.9.6 2.1.0 2.1.0-r1: Automatic CPU speed & power optimiz
 sys-power/envycontrol 3.4.0 9999: Easy GPU switching for Nvidia Optimus laptops under Linux
 sys-power/fan2go 0.8.1: A simple daemon providing dynamic fan speed control
 sys-power/gtherm 0.0.3: A simple daemon to monitor thermal zones and cooling devices
-sys-power/linux-tools-power-x86 5.18 6.1: Linux x86 CPU power tools
+sys-power/linux-tools-power-x86 6.1 6.6: Linux x86 CPU power tools
 sys-power/nvidia-exec 0.1.2-r1 9999: GPU switching without login out for Nvidia Optimus laptops under Linux
 sys-process/forkstat 0.03.02-r2: Logs process fork(), exec() and exit() activity
 sys-process/gotop 4.2.0: A terminal based graphical activity monitor inspired by gtop and vtop
