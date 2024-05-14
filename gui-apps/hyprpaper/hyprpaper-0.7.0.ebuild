@@ -14,13 +14,13 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 BDEPEND="
+	dev-libs/hyprlang:=
 	dev-libs/wayland
 	dev-libs/wayland-protocols
 	dev-util/wayland-scanner
 	dev-vcs/git
 "
 RDEPEND="
-	dev-libs/hyprlang
 	gui-libs/wlroots
 	media-libs/libglvnd
 	media-libs/libjpeg-turbo
