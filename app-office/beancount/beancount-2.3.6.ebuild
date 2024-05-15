@@ -1,16 +1,19 @@
-# Copyright 2021-2023 Gentoo Authors
+# Copyright 2021-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{10..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=setuptools
 DISTUTILS_SINGLE_IMPL=1
 
 inherit distutils-r1 toolchain-funcs
 
 DESCRIPTION="A double-entry accounting system that uses text files as input"
-HOMEPAGE="https://beancount.github.io https://github.com/beancount/beancount"
+HOMEPAGE="
+	https://beancount.github.io
+	https://github.com/beancount/beancount
+"
 SRC_URI="https://github.com/${PN}/${PN}/archive/${PV}.tar.gz -> ${P}.gh.tar.gz"
 
 LICENSE="GPL-2"
