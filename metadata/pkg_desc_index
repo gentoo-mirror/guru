@@ -137,7 +137,7 @@ app-containers/anbox-modules 0_p20240210: Anbox kernel modules
 app-containers/dnsname-cni-plugin 1.3.0 1.3.1 9999: name resolution for containers
 app-containers/nvidia-container-toolkit 1.14.6 9999: NVIDIA container runtime toolkit
 app-containers/pods 2.1.0_pre20240215-r3: Keep track of your podman containers
-app-containers/waydroid 1.4.0 1.4.2 1.4.2-r1: Container-based approach to boot a full Android system on Linux systems
+app-containers/waydroid 1.4.2 1.4.2-r1: Container-based approach to boot a full Android system on Linux systems
 app-containers/waydroid-images 9999: Manage images for app-containers/waydroid using portage
 app-crypt/PBinCLI 0.3.5 0.3.5-r1: PBinCLI is a command line client for PrivateBin written in Python 3
 app-crypt/autofirma 1.8.2: Spanish government's electronic signature application for online procedures
@@ -282,7 +282,7 @@ app-mobilephone/flashlight 0.1.1-r2: It's a flashlight, what do you expect?
 app-mobilephone/mobile-config-firefox 2.1.0: Mobile and privacy friendly configuration for Firefox
 app-mobilephone/pinephone-modem-scripts 0.20.8: Modem scripts for the PinePhone
 app-mobilephone/usb-tethering 0.3: USB tethering on Pine64/ConfigFS systems
-app-office/beancount 2.3.5-r2: A double-entry accounting system that uses text files as input
+app-office/beancount 2.3.6: A double-entry accounting system that uses text files as input
 app-office/invoice 0.1.0: Generate invoices from the command line
 app-office/jameica-bin 2.10.4: Local platform for home banking
 app-office/khronos 4.0.0 4.0.1: A GTK4 time tracker for tasks
@@ -776,7 +776,7 @@ dev-python/pypandoc 1.13: Pypandoc provides a thin wrapper for pandoc, a univers
 dev-python/pyperscan 0.3.0: An opinionated Python binding for Hyperscan
 dev-python/pyqtdarktheme 2.1.0: A flat dark theme for PySide and PyQt.
 dev-python/pyrr 0.10.3: A cross platform utility library for ModernGL
-dev-python/pysnooper 1.1.1 1.2.0: Never use print for debugging again
+dev-python/pysnooper 1.2.0: Never use print for debugging again
 dev-python/pystardict 0.8-r1: Library for manipulating StarDict dictionaries from within Python
 dev-python/pysubs2 1.4.4 1.5.0 1.6.1: A library for editing subtitle files
 dev-python/pytest-benchmark 4.0.0: py.test fixture for benchmarking code
@@ -791,7 +791,7 @@ dev-python/pytest-steps 1.8.0: Create step-wise / incremental tests in pytest
 dev-python/pytest-syrupy 4.0.1: The sweeter pytest snapshot plugin
 dev-python/pytest-vcr 1.0.2: Plugin for managing VCR.py cassettes
 dev-python/python-fire 0.6.0: Library for automatically generating command line interfaces from Python objects
-dev-python/python-http-client 3.3.5: HTTP REST client, simplified for Python
+dev-python/python-http-client 3.3.5-r1: HTTP REST client, simplified for Python
 dev-python/python-lsp-isort 0.1: isort plugin for the Python LSP Server
 dev-python/python-lsp-mypy 0.6.8: Mypy plugin for the Python LSP Server
 dev-python/python-oauth2 1.1.1-r1: OAuth 2.0 provider for python
@@ -818,7 +818,7 @@ dev-python/sendgrid 6.9.7: Twilio SendGrid library for Python
 dev-python/sentence-splitter 1.4-r2: Sentence splitter using heuristic algorithm by Philipp Koehn and Josh Schroeder
 dev-python/signalstickers-client 3.3.0: A Python client for the Signal stickers API
 dev-python/simplemma 0.9.1: A simple multilingual lemmatizer for Python
-dev-python/sjcl 0.2.1 0.2.1-r1: Decrypt and encrypt 'Stanford Javascript Crypto Library'-compatible messages
+dev-python/sjcl 0.2.1-r1: Decrypt and encrypt 'Stanford Javascript Crypto Library'-compatible messages
 dev-python/skia-pathops 0.8.0: Python bindings for the Skia Path Ops
 dev-python/sortedcollections 2.1.0: Apache2 licensed Python sorted collections library
 dev-python/sphinx-argparse-cli 1.11.1: Render CLI arguments (sub-commands friendly) defined by argparse module
@@ -833,11 +833,11 @@ dev-python/sphinxcontrib-katex 0.9.9: KaTeX Sphinx extension for rendering of ma
 dev-python/sphinxext-opengraph 0.9.1: Sphinx extension to generate unique OpenGraph metadata
 dev-python/srt 3.5.1 3.5.2 3.5.3: A tiny library for parsing, modifying, and composing SRT files
 dev-python/sse-starlette 1.1.6: Server Sent Events for Starlette
-dev-python/starkbank-ecdsa 2.2.0: A lightweight and fast pure python ECDSA library
+dev-python/starkbank-ecdsa 2.2.0-r1: A lightweight and fast pure python ECDSA library
 dev-python/stdlibs 2022.6.8: What's in the Python stdlib
 dev-python/steam 1.4.4 9999: Python package for interacting with Steam
 dev-python/stone 3.3.6: The Official Api Spec Language for Dropbox
-dev-python/stringcase 1.2.0-r1: Convert string cases between camel case, pascal case, snake case etc.
+dev-python/stringcase 1.2.0-r2: Convert string cases between camel case, pascal case, snake case etc.
 dev-python/survey 4.5.4 5.3.0: A simple library for creating beautiful interactive prompts
 dev-python/svgelements 1.9.6-r1: SVG Parsing for Elements, Paths, and other SVG Objects.
 dev-python/templated-dictionary 1.4: Python dictionary with Jinja2 expansion
@@ -1283,7 +1283,7 @@ media-video/obs-streamfx 0.12.0.9999 9999: OBS® Studio plugin which adds many n
 media-video/obs-vaapi 0.4.1 9999: OBS Studio VAAPI support via GStreamer
 media-video/obs-vkcapture 1.4.9 1.5.0 9999: OBS Linux Vulkan/OpenGL game capture
 media-video/olive 9999: Free open-source non-linear video editor
-media-video/syncplay 1.6.9 1.7.1 1.7.3: Client/server to synchronize media playback
+media-video/syncplay 1.7.3: Client/server to synchronize media playback
 media-video/tartube 2.4.077 9999: A GUI front-end for youtube-dl
 media-video/uxplay 1.67 1.68.3: AirPlay Unix mirroring server
 media-video/walksnail-osd-tool 0.3.0 9999: Tool for rendering OSDs over Walksnail DVR recordings
@@ -1607,7 +1607,7 @@ sys-libs/libnvidia-container 1.14.6 9999: NVIDIA container runtime library
 sys-libs/nss-tls 1.0 1.1-r1 9999: A DNS over HTTPS resolver for glibc
 sys-libs/solo-udev-rules 4.1.5: udev rules for the Solo FIDO2 & U2F USB+NFC security key
 sys-power/amdfan 0.1.28: Updated AMD Fan control utility forked from amdgpu-fan and updated.
-sys-power/auto-cpufreq 1.9.6 2.1.0 2.1.0-r1: Automatic CPU speed & power optimizer for Linux
+sys-power/auto-cpufreq 2.1.0 2.1.0-r1: Automatic CPU speed & power optimizer for Linux
 sys-power/envycontrol 3.4.0 9999: Easy GPU switching for Nvidia Optimus laptops under Linux
 sys-power/fan2go 0.8.1: A simple daemon providing dynamic fan speed control
 sys-power/gtherm 0.0.3: A simple daemon to monitor thermal zones and cooling devices

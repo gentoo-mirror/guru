@@ -4,12 +4,12 @@ DESCRIPTION=Steam Play compatibility tool to run DOS games using native Linux DO
 EAPI=8
 HOMEPAGE=https://github.com/dreamer/boxtron/
 INHERIT=python-single-r1
-IUSE=python_single_target_python3_10 python_single_target_python3_11
+IUSE=python_single_target_python3_10 python_single_target_python3_11 python_single_target_python3_12 python_single_target_python3_13
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
-RDEPEND=python_single_target_python3_10? ( dev-lang/python:3.10 ) python_single_target_python3_11? ( dev-lang/python:3.11 ) >=games-emulation/dosbox-staging-0.75.0 media-sound/fluid-soundfont media-sound/timidity++ sys-fs/inotify-tools
-REQUIRED_USE=^^ ( python_single_target_python3_10 python_single_target_python3_11 )
+RDEPEND=python_single_target_python3_10? ( dev-lang/python:3.10 ) python_single_target_python3_11? ( dev-lang/python:3.11 ) python_single_target_python3_12? ( dev-lang/python:3.12 ) python_single_target_python3_13? ( dev-lang/python:3.13 ) >=games-emulation/dosbox-staging-0.75.0 media-sound/fluid-soundfont media-sound/timidity++ sys-fs/inotify-tools
+REQUIRED_USE=^^ ( python_single_target_python3_10 python_single_target_python3_11 python_single_target_python3_12 python_single_target_python3_13 )
 SLOT=0
 SRC_URI=https://github.com/dreamer/boxtron/archive/v0.5.4.tar.gz -> boxtron-0.5.4.tar.gz
 _eclasses_=multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	e527bb25fc6ab8bb127b889b8f62500a	python-single-r1	75118e916668a74c660a13b0ecb22562
-_md5_=6110da0b93589b95e0c20a0ddba52baa
+_md5_=3bdbd903536f5fc3830b589d8425c8fa
