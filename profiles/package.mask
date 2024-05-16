@@ -12,6 +12,10 @@
 # TODO: Either fix per profile masking in overlays, or move
 # relevant entries to the relevant package.mask files in ::gentoo
 
+# Note: Do not use `Closes:` tag when treecleaning a package. Instead
+# use the `Bug:` tag and use the RESOLVED/PKGREMOVED status on
+# the bug manually if you can, or wait for someone else to do it.
+
 # New entries go on top.
 
 # Julien Roy <julien@jroy.ca> (2024-05-13)
@@ -41,10 +45,21 @@ sci-electronics/open_pdks
 
 # Julien Roy <julien@jroy.ca> (2024-05-13)
 # Libraries with no reverse dependencies
+# Bug 931391
 # Removal in 30 days
-dev-python/orderedmultidict # Bug 931391
-dev-python/multipart # Bug 931388
-dev-python/portion # Bug 931401
+dev-python/orderedmultidict
+
+# Julien Roy <julien@jroy.ca> (2024-05-13)
+# Libraries with no reverse dependencies
+# Bug 931388
+# Removal in 30 days
+dev-python/multipart
+
+# Julien Roy <julien@jroy.ca> (2024-05-13)
+# Libraries with no reverse dependencies
+# Bug 931401
+# Removal in 30 days
+dev-python/portion
 
 # Viorel Munteanu <ceamac@gentoo.org> (2024-05-10)
 # No upstream activity in 3 years.

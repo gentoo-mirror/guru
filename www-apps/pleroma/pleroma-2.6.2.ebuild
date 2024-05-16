@@ -10,7 +10,6 @@ HOMEPAGE="https://pleroma.social/"
 if [[ "${PV}" == *9999 ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://git.pleroma.social/pleroma/pleroma"
-	KEYWORDS=""
 else
 	SRC_URI="https://git.pleroma.social/pleroma/pleroma/-/archive/v${PV}/${PN}-v${PV}.tar.gz"
 	S="${WORKDIR}/${PN}-v${PV}"
@@ -24,7 +23,7 @@ SLOT="otp"
 RESTRICT="network-sandbox"
 
 BDEPEND="
-	<dev-lang/erlang-26:=
+	<dev-lang/erlang-27:=
 	<dev-lang/elixir-1.15:=
 	dev-build/cmake
 	>=dev-util/rebar-3.20.0-r1
