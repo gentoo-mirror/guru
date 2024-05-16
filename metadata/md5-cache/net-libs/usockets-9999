@@ -1,6 +1,6 @@
 BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=configure install unpack
-DEPEND=asio? ( dev-cpp/asio:=[ssl(+)?] ) libuv? ( dev-libs/libuv ) ssl? ( >=dev-libs/openssl-1.1.0 )
+DEPEND=asio? ( dev-cpp/asio:= ) libuv? ( dev-libs/libuv ) ssl? ( >=dev-libs/openssl-1.1.0 )
 DESCRIPTION=tiny eventing, networking & crypto for async applications
 EAPI=7
 HOMEPAGE=https://github.com/uNetworking/uSockets
@@ -8,9 +8,9 @@ INHERIT=toolchain-funcs git-r3
 IUSE=asio libuv +ssl test
 LICENSE=Apache-2.0
 PROPERTIES=live
-RDEPEND=asio? ( dev-cpp/asio:=[ssl(+)?] ) libuv? ( dev-libs/libuv ) ssl? ( >=dev-libs/openssl-1.1.0 )
+RDEPEND=asio? ( dev-cpp/asio:= ) libuv? ( dev-libs/libuv ) ssl? ( >=dev-libs/openssl-1.1.0 )
 REQUIRED_USE=?? ( asio libuv ) test? ( ssl )
 RESTRICT=!test? ( test )
 SLOT=0
 _eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	git-r3	fbb2889c81f3a05910c1524db69425c1
-_md5_=b70603a32fbd194ea4d7b4054024f1ee
+_md5_=865da8290161ccb34413008b753fd8d1
