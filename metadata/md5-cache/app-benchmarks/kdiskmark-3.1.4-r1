@@ -1,14 +1,14 @@
 BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.20.5
 DEFINED_PHASES=compile configure install prepare test
-DEPEND=dev-qt/qtcore:5 dev-qt/qtnetwork:5 dev-qt/qtwidgets:5 dev-qt/linguist-tools:5 dev-qt/qtdbus:5 kde-frameworks/extra-cmake-modules sys-auth/polkit-qt sys-block/fio[aio]
+DEPEND=dev-qt/qtcore:5 dev-qt/qtnetwork:5 dev-qt/qtwidgets:5 dev-qt/linguist-tools:5 dev-qt/qtdbus:5 dev-qt/qtgui:5 kde-frameworks/extra-cmake-modules sys-auth/polkit-qt sys-block/fio[aio]
 DESCRIPTION=Disk benchmarking tool
 EAPI=8
 HOMEPAGE=https://github.com/JonMagon/KDiskMark
 INHERIT=cmake
 KEYWORDS=~amd64
 LICENSE=GPL-3
-RDEPEND=dev-qt/qtcore:5 dev-qt/qtnetwork:5 dev-qt/qtwidgets:5 dev-qt/linguist-tools:5 dev-qt/qtdbus:5 kde-frameworks/extra-cmake-modules sys-auth/polkit-qt sys-block/fio[aio]
+RDEPEND=dev-qt/qtcore:5 dev-qt/qtnetwork:5 dev-qt/qtwidgets:5 dev-qt/linguist-tools:5 dev-qt/qtdbus:5 dev-qt/qtgui:5 kde-frameworks/extra-cmake-modules sys-auth/polkit-qt sys-block/fio[aio]
 SLOT=0
 SRC_URI=https://github.com/JonMagon/KDiskMark/releases/download/3.1.4/KDiskMark-3.1.4-source.tar.gz -> kdiskmark-3.1.4.tar.gz
 _eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	d309b9713dfc18e754cba88d3ba69653	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	c7c9a62d6232cac66d4ea32d575c3e7c
-_md5_=1fe2bb4b3e93d57daf04d2136b43483a
+_md5_=5130ca5551caa12e158b543a880af807
