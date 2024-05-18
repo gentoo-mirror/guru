@@ -41,7 +41,7 @@ CRATES="
 	ciborium-io@0.2.2
 	ciborium-ll@0.2.2
 	ciborium@0.2.2
-	citationberg@0.3.0
+	citationberg@0.3.1
 	clap@4.5.2
 	clap_builder@4.5.2
 	clap_complete@4.5.1
@@ -103,7 +103,7 @@ CRATES="
 	half@2.4.0
 	hashbrown@0.12.3
 	hashbrown@0.14.3
-	hayagriva@0.5.2
+	hayagriva@0.5.3
 	heck@0.4.1
 	hypher@0.1.5
 	iana-time-zone-haiku@0.1.2
@@ -238,6 +238,7 @@ CRATES="
 	serde_spanned@0.6.5
 	serde_yaml@0.8.26
 	serde_yaml@0.9.32
+	shell-escape@0.1.5
 	simd-adler32@0.3.7
 	simplecss@0.2.1
 	siphasher@0.3.11
@@ -277,7 +278,7 @@ CRATES="
 	ttf-parser@0.20.0
 	two-face@0.3.0
 	typed-arena@2.0.2
-	typst-assets@0.11.0
+	typst-assets@0.11.1
 	unic-langid-impl@0.9.4
 	unic-langid@0.9.4
 	unicase@2.7.0
@@ -361,7 +362,7 @@ CRATES="
 "
 
 declare -A GIT_CRATES=(
-	[typst-dev-assets]='https://github.com/typst/typst-dev-assets;e0ef7ad46f28a440c41bc8e78563ace86cc02678;typst-dev-assets-%commit%'
+	[typst-dev-assets]='https://github.com/typst/typst-dev-assets;35caed3a870d46e827cffaa9dc450e38bede2a37;typst-dev-assets-%commit%'
 )
 
 inherit cargo shell-completion
@@ -407,4 +408,8 @@ src_install() {
 	newbashcomp "${ARTIFACTSDIR}/${PN}.bash" "${PN}"
 
 	einstalldocs
+}
+
+src_test() {
+	cargo_src_test --workspace
 }
