@@ -134,6 +134,7 @@ app-benchmarks/kdiskmark 3.1.4-r1: Disk benchmarking tool
 app-benchmarks/phoronix-test-suite 9999: Phoronix's comprehensive, cross-platform testing and benchmark suite
 app-benchmarks/poop 9999: Performance Optimizer Observation Platform
 app-containers/anbox-modules 0_p20240210: Anbox kernel modules
+app-containers/arachsys-containers 1.7: Simple containers using Linux user namespaces
 app-containers/dnsname-cni-plugin 1.3.0 1.3.1 9999: name resolution for containers
 app-containers/nvidia-container-toolkit 1.14.6 9999: NVIDIA container runtime toolkit
 app-containers/pods 2.1.0_pre20240215-r3: Keep track of your podman containers
@@ -325,6 +326,7 @@ app-text/ford 6.2.5 7.0.5 7.0.6: FORD, automatic documentation generator for mod
 app-text/klogg 22.06.0.1289-r1: A GUI application to browse and search through long and complex log files
 app-text/komikku 1.39.0: Manga reader for GNOME
 app-text/koodo-reader-bin 1.5.1 1.6.3: A modern ebook manager and reader with sync and backup capacities
+app-text/lchat 1.0: Line oriented front end for ii-like chat programs
 app-text/libspelling 0.2.0 0.2.1: A GNOME library for spellchecking
 app-text/lizard 1.17.10-r1: A simple code complexity analyser, supports most of the popular languages.
 app-text/lorien-bin 0.6.0: Infinite canvas drawing/whiteboarding. Made with Godot.
@@ -881,7 +883,7 @@ dev-tex/ninecolors 2022.02.13: Select colors with proper WCAG color contrast
 dev-tex/tabularray 2023.03.01: Typeset tabulars and arrays with LATEX3
 dev-tex/tectonic 0.14.1 0.15.0: A modernized, complete, embeddable TeX/LaTeX engine.
 dev-util/DirectXShaderCompiler 1.7.2207-r1 1.7.2212-r1: Microsoft DirectX Shader Compiler which is based on LLVM/Clang
-dev-util/bash-language-server 5.1.2 5.2.0: A language server for Bash
+dev-util/bash-language-server 5.2.0 5.3.3: A language server for Bash
 dev-util/bats-assert 2.1.0: Common assertions for Bats
 dev-util/bats-support 0.3.0: Supporting library for Bats test helpers
 dev-util/bazelisk 1.12.0: A user-friendly launcher for Bazel
@@ -910,8 +912,8 @@ dev-util/lemminx-bin 0.24.0 0.25.0: XML Language Server
 dev-util/lottieconverter 0.2: Simple lottie (telegram animated sticker) converter.
 dev-util/lua-language-server 3.7.3: Lua language server
 dev-util/mh 1.0.3: Generate help for Makefile
-dev-util/mock 5.5: Simple chroot build environment manager for building RPMs
-dev-util/mock-core-configs 40.3: Mock core config files basic chroots
+dev-util/mock 5.6: Simple chroot build environment manager for building RPMs
+dev-util/mock-core-configs 40.4: Mock core config files basic chroots
 dev-util/pcpp 1.30: A C99 preprocessor written in pure Python
 dev-util/pifpaf 3.1.5-r1: Suite of tools and fixtures to manage daemons for testing
 dev-util/pmbootstrap 1.51.0: Helper tool for developing and building postmarketOS
@@ -939,7 +941,7 @@ dev-vcs/gitahead 2.7.1 2.7.1-r1: Graphical Git client to help understand and man
 dev-vcs/gitqlient 1.6.2 9999: Multi-platform Git client written with Qt
 dev-vcs/gitqlient-gitserver-plugin 0.2.0: GitQlient GitServer plugin
 dev-vcs/gitqlient-jenkins-plugin 0.2.0: GitQlient Jenkins plugin
-dev-vcs/gitui 0.26.1: blazing fast terminal-ui for git
+dev-vcs/gitui 0.26.2: blazing fast terminal-ui for git
 dev-vcs/jj 0.17.0 0.17.1: Jujutsu - an experimental version control system
 dev-vcs/lazygit 0.40.2-r1 0.41.0: Simple terminal UI for git commands
 dev-zig/zls 0.10.0-r1 9999: The officially unofficial Ziglang language server
@@ -1076,14 +1078,14 @@ gui-apps/meteo-qt 3.3: A system tray application for the weather status
 gui-apps/mpvpaper 1.5 9999: A video wallpaper program for wlroots based wayland compositors
 gui-apps/nwg 0: meta package package for nwg-shell
 gui-apps/nwg-bar 0.1.5 0.1.6: GTK3-based button bar for wlroots-based compositors
-gui-apps/nwg-displays 0.3.18: Output management utility for sway and Hyprland
+gui-apps/nwg-displays 0.3.18 0.3.19: Output management utility for sway and Hyprland
 gui-apps/nwg-dock 0.3.6 0.3.9: GTK3-based dock for sway
 gui-apps/nwg-dock-hyprland 0.1.7 0.1.8: GTK3-based dock for Hyprland
 gui-apps/nwg-drawer 0.4.3 0.4.4 0.4.5 0.4.6 0.4.7: Application drawer for wlroots-based Wayland compositors
 gui-apps/nwg-icon-picker 0.1.1 9999: GTK icon chooser with a text search option
 gui-apps/nwg-launchers 0.5.0 0.6.3 0.7.1.1 9999: GTK+ launchers for sway, i3 and some other WMs
 gui-apps/nwg-menu 0.1.2 0.1.3: enuStart plugin to nwg-panel, also capable of working standalone
-gui-apps/nwg-panel 0.9.31 9999: GTK3-based panel for sway and Hyprland Wayland compositors
+gui-apps/nwg-panel 0.9.31 0.9.32 9999: GTK3-based panel for sway and Hyprland Wayland compositors
 gui-apps/nwg-shell 0.5.33 0.5.34: libraries an common functions for the nwg-shell project
 gui-apps/nwg-shell-config 0.5.36 0.5.37: nwg-shell configuration utility
 gui-apps/openrefine 3.7.9: Wikidata batch editor, Wikimedia Commons mass upload tool
@@ -1219,7 +1221,7 @@ media-libs/raylib 5.0 9999: A simple and easy-to-use library to learn videogames
 media-libs/svt-vp9 0.3.0 9999: Scalable Video Technology for VP9 (SVT-VP9 Encoder)
 media-libs/vvdec 2.1.2: VVdeC, the Fraunhofer Versatile Video Decoder
 media-libs/vvenc 1.9.1: VVenC, the Fraunhofer Versatile Video Encoder
-media-libs/wivrn 0.13 0.14.1 9999: WiVRn OpenXR streaming
+media-libs/wivrn 0.14.1 0.15 9999: WiVRn OpenXR streaming
 media-plugins/alsa-sndio 0.2: ALSA PCM to play audio on sndio servers
 media-plugins/argotlunar-bin 2.06-r1: Argotlunar is a sound granulator. Binary Linux VST
 media-plugins/gimp-avif-plugin 9999: Plug-in for development GIMP 2.99.11 for loading/saving AVIF images.
