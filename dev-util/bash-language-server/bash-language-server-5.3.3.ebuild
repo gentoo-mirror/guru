@@ -21,8 +21,8 @@ LICENSE="BSD-2 ISC MIT"
 SLOT="0"
 KEYWORDS="~amd64"
 
-RDEPEND=">=net-libs/nodejs-18.19.6"
-BDEPEND=">=net-libs/nodejs-18.19.6[npm]"
+RDEPEND=">=net-libs/nodejs-18.19.30"
+BDEPEND=">=net-libs/nodejs-18.19.30[npm]"
 
 src_unpack() {
 	cd "${T}" || die "Could not cd to temporary directory"
