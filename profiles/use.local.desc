@@ -238,7 +238,6 @@ games-emulation/duckstation:gbm - Support DRM/KMS OpenGL contexts
 games-emulation/duckstation:nogui - Build the NoGUI frontend
 games-emulation/duckstation:qt6 - Build the QT frontend
 games-emulation/duckstation:retroachievements - Build with RetroAchievements supports
-games-emulation/flycast:vulkan - Compile vulkan backend
 games-emulation/np2kai:X - Build support for X
 games-emulation/np2kai:haxm - Enable haxm emulation
 games-emulation/np2kai:i286 - Enable i286 emulation USE="ia32" or USE="haxm" will disable it, unless all 3 emulation USE flags are set
@@ -584,9 +583,6 @@ sci-biology/cmdock:apidoc - Build API documentation using app-text/doxygen
 sci-biology/cmdock:boinc - Use CmDock with SiDock@home BOINC project
 sci-electronics/open_pdks:sky130 - Build the Skywater 130nm PDK.
 sci-mathematics/frama-c-aorai:eva - Build support for the Eva plugin
-sci-misc/linuxcnc:modbus - Build modbus libraries
-sci-misc/linuxcnc:rt - Build with RT_PREEMPT threads modules
-sci-misc/linuxcnc:simulator - Build with posix threads (no realtime)
 sys-apps/bustd:glob - Enable excluding processes with glob patterns
 sys-apps/drm_info:pci - Print PCI device names via libpci
 sys-apps/fselect:users - Add support for getting system users and groups
