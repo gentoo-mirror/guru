@@ -8,7 +8,7 @@ inherit go-module systemd
 DESCRIPTION="A Matrix-Facebook puppeting bridge"
 HOMEPAGE="https://github.com/mautrix/meta"
 SRC_URI="https://github.com/mautrix/meta/archive/v${PV}.tar.gz -> ${P}.gh.tar.gz
-	https://jroy.ca/dist/${P}.tar.xz
+	https://jroy.ca/dist/${P}-deps.tar.xz
 "
 S="${WORKDIR}/meta-${PV}"
 
