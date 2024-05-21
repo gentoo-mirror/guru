@@ -6,7 +6,7 @@ EAPI=8
 inherit cmake
 
 DESCRIPTION="scanf for modern C++ "
-HOMEPAGE="https://scnlib.dev/"
+HOMEPAGE="https://www.scnlib.dev/"
 SRC_URI="https://github.com/eliaskosunen/scnlib/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="Apache-2.0"
@@ -14,22 +14,14 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE="test"
 
+RDEPEND=">=dev-cpp/simdutf-5.2.0:="
+DEPEND="${RDEPEND}"
 BDEPEND="
 	dev-cpp/fast_float
-	>=dev-cpp/simdutf-5.2.0:=
 	test? ( dev-cpp/gtest )
 "
 
 RESTRICT="!test? ( test )"
-
-PATCHES=(
-	"${FILESDIR}/${P}-accept-simdutf-5.2.x.patch"
-)
-
-src_prepare() {
-	use test && eapply "${FILESDIR}/${P}-no-external-test-deps.patch"
-	cmake_src_prepare
-}
 
 src_configure() {
 	local mycmakeargs=(
@@ -40,6 +32,7 @@ src_configure() {
 		-DSCN_EXAMPLES=$(usex test ON OFF)
 		-DSCN_TESTS=$(usex test ON OFF)
 		-DSCN_USE_EXTERNAL_FAST_FLOAT=ON
+		-DSCN_USE_EXTERNAL_GTEST=ON
 		-DSCN_USE_EXTERNAL_SIMDUTF=ON
 	)
 	cmake_src_configure

@@ -17,6 +17,7 @@ IUSE="doc examples pam selinux"
 RESTRICT="test"
 
 RDEPEND="sys-apps/dbus[selinux?]
+	dev-libs/libxml2
 	pam? ( sys-libs/pam )
 	selinux? (
 		sec-policy/selinux-oddjob
