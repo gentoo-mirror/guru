@@ -237,7 +237,7 @@ app-misc/grit 0.3.0: An personal task manager that represents tasks as multitree
 app-misc/interception-tools 0.6.8-r1: A minimal composable infrastructure on top of libudev and libevdev
 app-misc/kloak 0.2.30: A privacy tool that makes keystroke biometrics less effective
 app-misc/kmon 1.6.4: Linux kernel manager and activity monitor
-app-misc/ledger-live 2.68.1 2.71.1 2.73.0 2.73.1 2.75.0 2.79.1: Manager for the Ledger hardware wallet
+app-misc/ledger-live 2.75.0 2.79.1 2.81.2: Manager for the Ledger hardware wallet
 app-misc/lf 27 28-r1 29 30 31: Terminal file manager
 app-misc/lyfetch 1.1: Small system information script for linux systems.
 app-misc/macchina 6.1.8 6.1.8-r1: A system information fetcher, with an (unhealthy) emphasis on performance.
@@ -251,7 +251,7 @@ app-misc/neo 0.6.1 9999: cmatrix clone with 32-bit color and Unicode support
 app-misc/nerdfetch 8.1.1: A POSIX *nix fetch script using Nerdfonts
 app-misc/nwg-look 0.2.2 0.2.4 0.2.5: GTK3 settings editor adapted to work in the sway / wlroots environment
 app-misc/nwg-shell-wallpapers 1.3 1.4 1.5: Selection of wallpapers contributed to the nwg-shell project
-app-misc/oddjob 0.34.7: A D-Bus service which runs odd jobs on behalf of client applications
+app-misc/oddjob 0.34.7-r1: A D-Bus service which runs odd jobs on behalf of client applications
 app-misc/onefetch 2.19.0 2.21.0: Command-line Git information tool
 app-misc/pfetch 0.6.0: A pretty system information tool written in POSIX sh
 app-misc/pipes-rs 1.6.3: An over-engineered rewrite of pipes.sh in Rust
@@ -329,7 +329,7 @@ app-text/koodo-reader-bin 1.5.1 1.6.3: A modern ebook manager and reader with sy
 app-text/lchat 1.0: Line oriented front end for ii-like chat programs
 app-text/libspelling 0.2.0 0.2.1: A GNOME library for spellchecking
 app-text/lizard 1.17.10-r1: A simple code complexity analyser, supports most of the popular languages.
-app-text/lorien-bin 0.6.0: Infinite canvas drawing/whiteboarding. Made with Godot.
+app-text/lorien-bin 0.6.0-r1: Infinite canvas drawing/whiteboarding. Made with Godot.
 app-text/lsp 0.5.0_rc4: The least significant pager
 app-text/owo 0.1.0: OwO-ifies text via regex
 app-text/pandoc-crossref-bin 0.3.17.0f: Pandoc filter for cross-references
@@ -392,7 +392,7 @@ dev-cpp/parallel-hashmap 1.3.8: Family of header-only, fast and memory-friendly 
 dev-cpp/pcg-cpp 0.98.1_p20210406-r1: Family of better random number generators
 dev-cpp/qt-jdenticon 0.3.0-r1 0.3.0_p20240107: Qt5 / C++14 Port of Jdenticon
 dev-cpp/rang 3.2: Minimal, header-only, modern C++ library for terminal goodies
-dev-cpp/scnlib 2.0.2-r1: scanf for modern C++
+dev-cpp/scnlib 2.0.3: scanf for modern C++
 dev-cpp/simdutf 5.2.8: simdutf: Unicode validation and transcoding at billions of characters per second
 dev-cpp/sprout 0_pre20190615: C++11/14 constexpr based Containers, Algorithms, Random numbers and others
 dev-cpp/toml11 3.8.1: TOML for Modern C++
@@ -518,7 +518,8 @@ dev-libs/libopensmtpd 0.7: Library for creating OpenSMTPD filters
 dev-libs/librepo 1.17.1: Repodata downloading library
 dev-libs/libsignal-ffi 0.44.0 0.46.0: A C ABI library which exposes Signal protocol logic
 dev-libs/libthai 0.1.28 0.1.29: A a set of Thai language support routines
-dev-libs/libtypec 0.5.1: Library to interface with USB Type-c/Power Delivery devices
+dev-libs/libtypec 0.5.1-r1: Library to interface with USB Type-C/Power Delivery devices
+dev-libs/libtypec-utils 0.5.1: Library to interface with USB Type-C/Power Delivery devices
 dev-libs/ls-hpack 2.3.3: QPACK compression library for use with HTTP/3
 dev-libs/ls-qpack 2.5.4: QPACK compression library for use with HTTP/3
 dev-libs/lsbcrypt 1.0.0-r2: libcrypt wrapper for LiteSpeedTech
@@ -553,6 +554,7 @@ dev-libs/unordered_dense 4.0.1 4.4.0 9999: A fast and densely stored hashmap and
 dev-libs/weechat-relay 9999: Portable and multi-interface IRC client relay api
 dev-libs/xqilla 2.3.4-r2: An XQuery and XPath 2 library and command line utility written in C++
 dev-libs/zfp 1.0.1: Compressed numerical arrays that support high-speed random access
+dev-lua/multipart-post 1.4: HTTP Multipart Post helper that does just that.
 dev-ml/afl-persistent 1.3: Persistent-mode afl-fuzz for ocaml
 dev-ml/bheap 2.0.0: OCaml binary heap implementation by Jean-Christophe Filliatre
 dev-ml/bigstringaf 0.7.0 0.9.0: Bigstring intrinsics and fast blits based on memcpy/memmove
@@ -846,10 +848,11 @@ dev-python/templated-dictionary 1.4: Python dictionary with Jinja2 expansion
 dev-python/tempus-themes 2.3.0.20220206: Accessible themes for Pygments
 dev-python/tempy 1.4.0: A simple, visually pleasing weather report in your terminal
 dev-python/termynal 0.12.1: A lightweight and modern animated terminal window
-dev-python/textual 0.58.1: Modern Text User Interface framework
+dev-python/textual 0.62.0: Modern Text User Interface framework
 dev-python/textual-dev 1.5.1: Modern Text User Interface framework
 dev-python/timeslot 0.1.2: Time slots/intervals with an arbitrary start and stop
 dev-python/trailrunner 1.2.1: Walk paths and run things
+dev-python/tree-sitter-languages 1.10.2: Python wheels for all tree sitter languages
 dev-python/tulir-telethon 1.35.0_alpha1: Pure Python 3 MTProto API Telegram client library, for bots too!
 dev-python/tweepy 4.14.0: An easy-to-use Python library for accessing the Twitter API.
 dev-python/types-protobuf 4.24.0.20240408: Typing stubs for protobuf
@@ -912,7 +915,7 @@ dev-util/lemminx-bin 0.24.0 0.25.0: XML Language Server
 dev-util/lottieconverter 0.2: Simple lottie (telegram animated sticker) converter.
 dev-util/lua-language-server 3.7.3: Lua language server
 dev-util/mh 1.0.3: Generate help for Makefile
-dev-util/mock 5.6: Simple chroot build environment manager for building RPMs
+dev-util/mock 5.6-r1: Simple chroot build environment manager for building RPMs
 dev-util/mock-core-configs 40.4: Mock core config files basic chroots
 dev-util/pcpp 1.30: A C99 preprocessor written in pure Python
 dev-util/pifpaf 3.1.5-r1: Suite of tools and fixtures to manage daemons for testing
@@ -1080,14 +1083,14 @@ gui-apps/nwg 0: meta package package for nwg-shell
 gui-apps/nwg-bar 0.1.5 0.1.6: GTK3-based button bar for wlroots-based compositors
 gui-apps/nwg-displays 0.3.18 0.3.19: Output management utility for sway and Hyprland
 gui-apps/nwg-dock 0.3.6 0.3.9: GTK3-based dock for sway
-gui-apps/nwg-dock-hyprland 0.1.7 0.1.8: GTK3-based dock for Hyprland
+gui-apps/nwg-dock-hyprland 0.1.8 0.1.9: GTK3-based dock for Hyprland
 gui-apps/nwg-drawer 0.4.3 0.4.4 0.4.5 0.4.6 0.4.7: Application drawer for wlroots-based Wayland compositors
 gui-apps/nwg-icon-picker 0.1.1 9999: GTK icon chooser with a text search option
 gui-apps/nwg-launchers 0.5.0 0.6.3 0.7.1.1 9999: GTK+ launchers for sway, i3 and some other WMs
 gui-apps/nwg-menu 0.1.2 0.1.3: enuStart plugin to nwg-panel, also capable of working standalone
 gui-apps/nwg-panel 0.9.31 0.9.32 9999: GTK3-based panel for sway and Hyprland Wayland compositors
 gui-apps/nwg-shell 0.5.33 0.5.34: libraries an common functions for the nwg-shell project
-gui-apps/nwg-shell-config 0.5.36 0.5.37: nwg-shell configuration utility
+gui-apps/nwg-shell-config 0.5.37 0.5.38: nwg-shell configuration utility
 gui-apps/openrefine 3.7.9: Wikidata batch editor, Wikimedia Commons mass upload tool
 gui-apps/organicmaps 9999: Offline maps and navigation using OpenStreetMap data
 gui-apps/packettracer 8.2.0: Cisco's packet tracer
@@ -1136,7 +1139,7 @@ gui-libs/text-engine 0.1.1-r2 9999: A lightweight rich-text framework for GTK 4
 gui-libs/xdg-desktop-portal-hyprland 1.1.0-r1 1.2.2-r2 1.2.5-r2 1.2.6-r1 1.3.1 1.3.1-r1 9999: xdg-desktop-portal backend for hyprland
 gui-wm/cage 0.1.5 9999: A Wayland kiosk
 gui-wm/hyprland-contrib 0.1-r1 9999: Community-maintained extensions for hyprland
-gui-wm/niri 0.1.5: Scrollable-tiling Wayland compositor
+gui-wm/niri 0.1.6: Scrollable-tiling Wayland compositor
 gui-wm/phoc 0.36.0-r1 0.38.0: Wayland compositor for mobile phones
 gui-wm/swayfx 0.2 0.3.2 0.4: SwayFX: Sway, but with eye candy!
 kde-apps/kwalletcli 3.03: CLI for the KDE Wallet
@@ -1224,6 +1227,7 @@ media-libs/vvenc 1.9.1: VVenC, the Fraunhofer Versatile Video Encoder
 media-libs/wivrn 0.14.1 0.15 9999: WiVRn OpenXR streaming
 media-plugins/alsa-sndio 0.2: ALSA PCM to play audio on sndio servers
 media-plugins/argotlunar-bin 2.06-r1: Argotlunar is a sound granulator. Binary Linux VST
+media-plugins/dtmediawiki 9999: Wikimedia Commons export plugin for Darktable. Every upload is converted
 media-plugins/gimp-avif-plugin 9999: Plug-in for development GIMP 2.99.11 for loading/saving AVIF images.
 media-plugins/gst-plugins-qt5 1.20.3 1.22.11: Qt5 QML video sink plugin for GStreamer
 media-plugins/qt-heif-image-plugin 0.3.4: Qt plugin for HEIF images
@@ -1320,7 +1324,7 @@ net-client/telescope 0.8.1 0.9: w3m-like browser for Gemini
 net-dialup/atinout 0.9.1-r1: AT commands as input are sent to modem and responses given as output
 net-dialup/minimodem 0.24-r1 9999: General-purpose software audio FSK modem
 net-dialup/tcpser 1.1.4: Hayes Smartmodem emulator over TCP/IP
-net-dialup/tio 3.2: Simple TTY terminal application
+net-dialup/tio 3.3: Simple TTY terminal application
 net-dns/AdGuardHome 0.107.45 0.107.46 0.107.48: Network-wide ads & trackers blocking DNS server like Pi-Hole with web ui
 net-dns/blocky 0.22 0.23 9999: Fast and lightweight DNS proxy as ad-blocker with many features written in Go
 net-fs/httpdirfs 1.2.0: Filesystem to mount HTTP directory listings, with a permanent cache
@@ -1382,7 +1386,7 @@ net-libs/telepathy-haze 0.8.1: Telepathy connection manager providing libpurple 
 net-libs/ulfius 2.7.15: HTTP Framework for REST Applications in C
 net-libs/usockets 0.8.8 9999: tiny eventing, networking & crypto for async applications
 net-libs/yder 1.4.20: Logging library for C applications
-net-mail/dovecot-fts-xapian 1.5.9 1.7.6 1.7.9 1.7.10 1.7.11 9999: Dovecot FTS plugin backed by Xapian
+net-mail/dovecot-fts-xapian 1.5.9 1.7.6 1.7.9 1.7.10 1.7.11 1.7.12 9999: Dovecot FTS plugin backed by Xapian
 net-mail/hydroxide 0.2.23 0.2.24 0.2.26 0.2.27 0.2.28 9999: A third-party, open-source ProtonMail CardDAV, IMAP and SMTP bridge
 net-mail/pop 0.2.0: Send emails from your terminal
 net-misc/FORT-validator 1.5.3 1.5.4: FORT validator is an open source RPKI validator
@@ -1417,7 +1421,7 @@ net-misc/openbgpd 6.9_p0 8.0 9999: OpenBGPD is a free implementation of BGPv4
 net-misc/peertube-viewer-rs 1.8.5: Command-line PeerTube viewer inspired by youtube-viewer
 net-misc/purritobin 0.6.7 9999: minimalistic commandline pastebin
 net-misc/rpki-client 8.0 8.4 8.8: Portability shim for OpenBSD's rpki-client
-net-misc/smcroute 2.5.6: A static multicast routing daemon
+net-misc/smcroute 2.5.7: A static multicast routing daemon
 net-misc/sshx 0.2.4: A secure web-based, collaborative terminal.
 net-misc/toot 0.38.1: toot - Mastodon CLI & TUI
 net-misc/warp 0.7.0: Fast and secure file transfer
@@ -1462,10 +1466,10 @@ net-vpn/fastd 22: A very small VPN daemon which tunnels IP packets and Ethernet 
 net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that require SAML
 net-vpn/mullvadvpn-app 2024.3: Tool used to manage daemon setup
 net-wireless/bluetuith 0.1.9 0.2.0 0.2.1 0.2.2 9999: A TUI bluetooth manager for Linux written in Go
-net-wireless/rtl8192eu 0_pre20240120: Realtek 8192EU driver module for Linux kernel
+net-wireless/rtl8192eu 0_pre20240518: Realtek 8192EU driver module for Linux kernel
 net-wireless/rtl8723bu 9999: Driver for the rtl8723 wireless chipset
-net-wireless/rtl8821ce 0_pre20240120: Realtek RTL8821CE Driver module for Linux kernel
-net-wireless/rtl8821cu 0_pre20240121: Realtek 8821CU/RTL8811CU module for Linux kernel
+net-wireless/rtl8821ce 0_pre20240326: Realtek RTL8821CE Driver module for Linux kernel
+net-wireless/rtl8821cu 0_pre20240503: Realtek 8821CU/RTL8811CU module for Linux kernel
 phosh-base/phosh 0.36.0-r1 0.38.0: Meta package for Phosh, merge this package to install
 phosh-base/phosh-mobile-settings 0.36.0 0.38.0: Mobile Settings App for phosh and related components
 phosh-base/phosh-osk-stub 0.36.0 0.38.0: On-screen keyboard stub
@@ -1597,7 +1601,7 @@ sys-fs/ufiformat 0.9.9: USB Floppy Disk formatting tool
 sys-fs/zfs-auto-utils 1.0.0: ZFS Automatic Scrub/Trim for Linux
 sys-kernel/dpdk-kmod 23.03: DPDK Kernel Nic Interface module
 sys-kernel/uek-sources 5.15.0.206.149.1 5.15.0.206.153.6 5.15.0.206.153.7: Unbreakable Enterprise Kernel (UEK) sources built from Oracle
-sys-kernel/ugrd 1.2.2 1.3.8 1.4.0 1.4.2 1.5.1: Python based initramfs generator with TOML defintions
+sys-kernel/ugrd 1.2.2 1.3.8 1.4.0 1.4.2 1.5.1 1.6.0 1.7.0 9999: Python based initramfs generator with TOML defintions
 sys-kernel/usermode-kernel 6.0.12: Linux kernel built with Gentoo patches
 sys-kernel/xow 0.5: Linux driver for the Xbox One wireless dongle
 sys-kernel/zenpower3 0.2.0: Linux kernel driver for reading sensors of AMD Zen family CPUs
@@ -1614,7 +1618,7 @@ sys-power/envycontrol 3.4.0 9999: Easy GPU switching for Nvidia Optimus laptops 
 sys-power/fan2go 0.8.1: A simple daemon providing dynamic fan speed control
 sys-power/gtherm 0.0.3: A simple daemon to monitor thermal zones and cooling devices
 sys-power/linux-tools-power-x86 6.1 6.6: Linux x86 CPU power tools
-sys-power/nvidia-exec 0.1.2-r1 9999: GPU switching without login out for Nvidia Optimus laptops under Linux
+sys-power/nvidia-exec 0.2.1 9999: GPU switching without login out for Nvidia Optimus laptops under Linux
 sys-process/forkstat 0.03.02-r2: Logs process fork(), exec() and exit() activity
 sys-process/gotop 4.2.0: A terminal based graphical activity monitor inspired by gtop and vtop
 sys-process/nq 0.4: Unix command line queue utility
