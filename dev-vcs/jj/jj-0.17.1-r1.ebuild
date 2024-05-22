@@ -385,11 +385,27 @@ LICENSE="0BSD Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD BSD-2 Boost-1.0 CC0
 SLOT="0"
 KEYWORDS="~amd64"
 
+BDEPEND="virtual/pkgconfig"
+DEPEND="
+	>=app-arch/zstd-1.5.5:=
+	dev-libs/libgit2:0/1.7
+	dev-libs/openssl
+	net-libs/libssh2:=
+	sys-libs/zlib
+"
 RDEPEND="${DEPEND}"
 
 # rust does not use *FLAGS from make.conf, silence portage warning
 # update with proper path to binaries this crate installs, omit leading /
 QA_FLAGS_IGNORED="usr/bin/${PN}"
+
+pkg_setup() {
+	export LIBGIT2_NO_VENDOR=1
+	export LIBSSH2_SYS_USE_PKG_CONFIG=1
+	export OPENSSL_NO_VENDOR=1
+	export PKG_CONFIG_ALLOW_CROSS=1
+	export ZSTD_SYS_USE_PKG_CONFIG=1
+}
 
 src_install() {
 	cargo_src_install --path cli
