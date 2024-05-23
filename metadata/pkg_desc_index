@@ -99,7 +99,7 @@ app-admin/dotbot 1.20.1: A tool that bootstraps your dotfiles
 app-admin/enpass-desktop-bin 6.7.4.933: A cross-platform, complete password management solution
 app-admin/gentoo_update 0.2.4: Gentoo Linux updater
 app-admin/grub-customizer 5.2.4-r1: A graphical grub2 settings manager
-app-admin/himitsu 0.4 0.6 9999: Secret storage system for Unix, suitable for storing passwords, keys, ...
+app-admin/himitsu 0.7 9999: Secret storage system for Unix, suitable for storing passwords, keys, ...
 app-admin/himitsu-keyring 0.2.0: graphical frontend for managing a Himitsu key store
 app-admin/himitsu-ssh 0.3 9999: SSH integration for Himitsu
 app-admin/himitsu-totp 0.1 9999: TOTP support for Himitsu
@@ -326,7 +326,7 @@ app-text/ford 6.2.5 7.0.5 7.0.6: FORD, automatic documentation generator for mod
 app-text/klogg 22.06.0.1289-r1: A GUI application to browse and search through long and complex log files
 app-text/komikku 1.39.0: Manga reader for GNOME
 app-text/koodo-reader-bin 1.5.1 1.6.3: A modern ebook manager and reader with sync and backup capacities
-app-text/lchat 1.0: Line oriented front end for ii-like chat programs
+app-text/lchat 1.0-r1: Line oriented front end for ii-like chat programs
 app-text/libspelling 0.2.0 0.2.1: A GNOME library for spellchecking
 app-text/lizard 1.17.10-r1: A simple code complexity analyser, supports most of the popular languages.
 app-text/lorien-bin 0.6.0-r1: Infinite canvas drawing/whiteboarding. Made with Godot.
@@ -436,7 +436,7 @@ dev-crystal/webless 0.1.0: HTTP::Client for testing HTTP::Handlers directly and 
 dev-db/dbeaver-bin 23.0.0 23.2.0 23.3.0: Free universal database tool (community edition).
 dev-db/libpg_query 16.5.1.0: C library for accessing the PostgreSQL parser outside of the server environment
 dev-db/pg_query_vala 0.1.0_pre20240326: Thin wrapper around libpg_query to use with vala
-dev-db/pg_repack 1.4.8: Reorganize tables in PostgreSQL databases with minimal locks
+dev-db/pg_repack 1.5.0: Reorganize tables in PostgreSQL databases with minimal locks
 dev-db/psequel 0.1.8: Run your SQL query
 dev-db/rum 1.3.13: RUM access method - inverted index with additional information in posting lists
 dev-db/tdscpp 20240212: C++ library to communicate with Microsoft SQL server
@@ -1013,7 +1013,7 @@ games-util/hid-nintendo 9999: A Nintendo HID kernel module
 games-util/itch-bin 25.5.1-r2: itch.io game browser, installer and launcher
 games-util/legendary 0.20.33 0.20.34: A free and open-source replacement for the Epic Games Launcher
 games-util/libtess2 1.0.3: Game and tools oriented refactored version of GLU tesselator
-games-util/mangohud 0.7.1-r4 9999: Vulkan and OpenGL overlay for monitoring FPS, sensors, system load and more
+games-util/mangohud 0.7.1-r5 9999: Vulkan and OpenGL overlay for monitoring FPS, sensors, system load and more
 games-util/minigalaxy 1.2.6: A simple GOG client for Linux
 games-util/pegasus 9999: Graphical frontend for browsing your game library
 games-util/protonup 0.1.5 9999: Install and Update Proton-GE
@@ -1032,7 +1032,7 @@ gnome-extra/vvmplayer 1.4: Visual Voicemail Player
 gnome-extra/wike 3.0.0 3.0.1: Wikipedia Reader for the GNOME Desktop
 gnome-extra/yad 13.0: Display GTK+ dialog boxes from command line or shell scripts
 gui-apps/1password 8.10.28: The world’s most-loved password manager
-gui-apps/ReGreet 0.1.1-r5 9999: A clean and customizable GTK-based greetd greeter written in Rust
+gui-apps/ReGreet 0.1.1-r6 9999: A clean and customizable GTK-based greetd greeter written in Rust
 gui-apps/azote 1.12.6 9999: wallpaper manager for wlroots compositors
 gui-apps/clipman 1.6.2 1.6.3: A basic clipboard manager for Wayland.
 gui-apps/coreaction 4.5.0 9999: A side bar for showing widgets for C Suite
@@ -1452,7 +1452,7 @@ net-voip/discover-overlay 0.6.9-r1 0.7.4: Yet another Discord overlay for Linux 
 net-voip/gnome-calls 44.2 45.0: Phone dialer and call handler
 net-voip/re 3.7.0 3.8.0 3.9.0 3.10.0 3.11.0: Generic library for real-time communications with async IO support
 net-voip/vvmd 0.8: vvmd is a lower level daemon that retrieves Visual Voicemail
-net-vpn/candy 5.8.5: A reliable, low-latency, and anti-censorship virtual private network
+net-vpn/candy 5.8.6: A reliable, low-latency, and anti-censorship virtual private network
 net-vpn/cloudflare-warp 2023.3.470 2023.7.40 2024.2.62-r2: Cloudflare Warp Client
 net-vpn/fastd 22: A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
 net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that require SAML
@@ -1609,7 +1609,7 @@ sys-power/envycontrol 3.4.0 9999: Easy GPU switching for Nvidia Optimus laptops 
 sys-power/fan2go 0.8.1: A simple daemon providing dynamic fan speed control
 sys-power/gtherm 0.0.3: A simple daemon to monitor thermal zones and cooling devices
 sys-power/linux-tools-power-x86 6.1 6.6: Linux x86 CPU power tools
-sys-power/nvidia-exec 0.2.1 9999: GPU switching without login out for Nvidia Optimus laptops under Linux
+sys-power/nvidia-exec 0.2.7 9999: GPU switching without login out for Nvidia Optimus laptops under Linux
 sys-process/forkstat 0.03.02-r2: Logs process fork(), exec() and exit() activity
 sys-process/gotop 4.2.0: A terminal based graphical activity monitor inspired by gtop and vtop
 sys-process/nq 0.4: Unix command line queue utility
@@ -1631,7 +1631,7 @@ www-apps/libmedium 20231020: Alternative private front-end to Medium
 www-apps/librarian 2023.05.07: An alternative frontend for LBRY/Odysee. Inspired by Invidious and Libreddit.
 www-apps/mycorrhiza 1.14.0 9999: Git-based wiki engine written in Go using mycomarkup
 www-apps/nitter 2023.05.20 2023.07.12: Alternative front-end for Twitter
-www-apps/pleroma 2.6.2 9999: ActivityPub social networking software compatible with other Fediverse software
+www-apps/pleroma 2.6.3 9999: ActivityPub social networking software compatible with other Fediverse software
 www-apps/pleroma-fe 2.6.1 9999: Main frontend for www-apps/pleroma, inspired by qvitter
 www-apps/redlib 0.31.0-r1 0.31.2-r1: Private front-end to Reddit
 www-apps/rimgo 1.2.1: An alternative frontend for Imgur. Originally based on rimgu.
@@ -1647,7 +1647,7 @@ www-client/browsh 1.8.2: A fully-modern text-based browser, rendering to TTY and
 www-client/nyxt 3.11.3 3.11.4 3.11.5 3.11.6 9999: Nyxt - the hacker's power-browser
 www-client/vimb 3.6.0 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
 www-client/woob 3.1-r1 9999: Web Outside Of Browsers (core, site modules and applications)
-www-client/yandex-browser 24.4.1.941_p1: The web browser from Yandex
+www-client/yandex-browser 24.4.1.951_p1: The web browser from Yandex
 www-misc/dufs 0.40.0: Dufs is a distinctive utility file server
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits
 www-misc/gorss 0.3: Go Terminal Feed Reader
