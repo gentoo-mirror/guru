@@ -3,16 +3,17 @@
 
 EAPI=8
 
-inherit cmake
+inherit cmake toolchain-funcs
 
-DESCRIPTION="Hyprland's GPU-accelerated screen locking utility"
-HOMEPAGE="https://github.com/hyprwm/hyprlock"
+COMMIT="158c52c4a76cff7a1635be8ec1a4a369bc8674ed"
+DESCRIPTION="Hyprland's idle daemon"
+HOMEPAGE="https://github.com/hyprwm/hypridle"
 
 if [[ "${PV}" = *9999 ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/hyprwm/${PN^}.git"
 else
-	SRC_URI="https://github.com/hyprwm/${PN^}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
+	SRC_URI="https://github.com/hyprwm/${PN^}/archive/refs/tags/v${PV}.tar.gz -> ${P}.gh.tar.gz"
 	S="${WORKDIR}/${PN}-${PV}"
 
 	KEYWORDS="~amd64"
@@ -24,9 +25,10 @@ SLOT="0"
 RDEPEND="
 	dev-libs/wayland
 	gui-libs/egl-wayland
-	media-libs/mesa[opengl]
-	sys-libs/pam
+	media-libs/mesa[egl(+),gles2]
 	>=gui-wm/hyprland-0.35.0
+	dev-cpp/sdbus-c++
+    >=dev-libs/hyprlang-0.4.0
 "
 DEPEND="
 	${RDEPEND}
@@ -34,19 +36,12 @@ DEPEND="
 "
 
 BDEPEND="
-	>=dev-libs/hyprlang-0.4.0
-	x11-libs/libxkbcommon
-	x11-libs/libdrm
-	x11-libs/cairo
-	x11-libs/pango
-	dev-build/cmake
-	dev-libs/date
 	virtual/pkgconfig
+	dev-build/cmake
 "
 
 PATCHES=(
-	"${FILESDIR}/0001-fix-CFLAGS-CXXFLAGS-hyprlock.patch"
-	"${FILESDIR}/0002-cmake-install-pam-file-fix.patch"
+	"${FILESDIR}/0001-fix-CFLAGS-CXXFLAGS-hypridle.patch"
 )
 
 src_configure() {
