@@ -322,7 +322,7 @@ CRATES="
 	zvariant_utils@1.0.1
 	zxcvbn@2.2.2
 "
-PYTHON_COMPAT=( python3_{9..12} )
+PYTHON_COMPAT=( python3_{9..13} )
 inherit cargo gnome2-utils meson python-single-r1 xdg
 
 DESCRIPTION="Keep your data safe"
@@ -330,8 +330,6 @@ HOMEPAGE="https://gitlab.gnome.org/World/pika-backup"
 SRC_URI="https://gitlab.gnome.org/World/${PN}/-/archive/v${PV}/${P}.tar.bz2
 	${CARGO_CRATE_URIS}
 "
-COMMIT="f9d416385bb0d1949956c07e0117cba3a9c525dc"
-S="${WORKDIR}/${PN}-v${PV}-${COMMIT}"
 
 LICENSE="GPL-3"
 # Dependent crate licenses
@@ -352,6 +350,11 @@ DEPEND="
 RDEPEND="
 	${DEPEND}
 	${PYTHON_DEPS}
+	dev-libs/glib
+	media-libs/graphene
+	x11-libs/cairo
+	x11-libs/gdk-pixbuf
+	x11-libs/pango
 "
 BDEPEND="
 	>=virtual/rust-1.75.0
@@ -362,17 +365,16 @@ BDEPEND="
 # Rust
 QA_FLAGS_IGNORED="usr/bin/${PN} usr/bin/${PN}-monitor"
 
-PATCHES=(
-	"${FILESDIR}/meson-fixes.patch"
-)
-
 src_prepare() {
-	python_fix_shebang "${S}/build-aux"
+	mv -T "${WORKDIR}/${PN}-v${PV}"* "${S}" || die
+	sed -i -e "/subdir('src')/d" "${S}/meson.build" || die
 	default
 }
 
 src_compile() {
+	python_fix_shebang "${S}/build-aux"
 	meson_src_compile
+	cargo_src_compile
 }
 
 src_install() {
