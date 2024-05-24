@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit cmake toolchain-funcs
+inherit cmake
 
 COMMIT="158c52c4a76cff7a1635be8ec1a4a369bc8674ed"
 DESCRIPTION="Hyprland's idle daemon"
@@ -25,10 +25,13 @@ SLOT="0"
 RDEPEND="
 	dev-libs/wayland
 	gui-libs/egl-wayland
-	media-libs/mesa[egl(+),gles2]
+	|| (
+		>=media-libs/mesa-24.1.0_rc1[opengl]
+		<media-libs/mesa-24.1.0_rc1[egl(+),gles2]
+	)
 	>=gui-wm/hyprland-0.35.0
 	dev-cpp/sdbus-c++
-    >=dev-libs/hyprlang-0.4.0
+	>=dev-libs/hyprlang-0.4.0
 "
 DEPEND="
 	${RDEPEND}
