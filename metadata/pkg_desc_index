@@ -371,7 +371,7 @@ dev-build/FoBiS 3.0.5-r1: FoBiS.py, a Fortran Building System for poor men
 dev-build/cargo-make 0.37.12: Rust task runner and build tool
 dev-build/fpm 0.9.0 0.10.0: Fortran Package Manager (fpm)
 dev-build/fypp 3.1 3.2: Fypp - Python powered Fortran preprocessor
-dev-build/just 1.25.2 1.26.0: Just a command runner (with syntax inspired by 'make')
+dev-build/just 1.26.0 1.27.0: Just a command runner (with syntax inspired by 'make')
 dev-build/pdpmake 1.4.2: Public domain POSIX make
 dev-build/xmake 2.8.9 9999: A cross-platform build utility based on Lua
 dev-cpp/blurhash 0.2.0 0.2.0-r1: C++ blurhash encoder/decoder
@@ -523,7 +523,7 @@ dev-libs/libtypec-utils 0.5.1: Library to interface with USB Type-C/Power Delive
 dev-libs/ls-hpack 2.3.3: QPACK compression library for use with HTTP/3
 dev-libs/ls-qpack 2.5.4: QPACK compression library for use with HTTP/3
 dev-libs/lsbcrypt 1.0.0-r2: libcrypt wrapper for LiteSpeedTech
-dev-libs/lsquic 4.0.8-r1: LiteSpeed QUIC (LSQUIC) Library
+dev-libs/lsquic 4.0.8-r1 4.0.8-r2: LiteSpeed QUIC (LSQUIC) Library
 dev-libs/luksmeta 9-r1: LUKSMeta is a simple library for storing metadata in the LUKSv1 header
 dev-libs/md4c 0.4.8_p20220115 0.5.2: C Markdown parser. Fast, SAX-like interface, CommonMark Compliant.
 dev-libs/monero-seed 0.1.0: 14-word mnemonic seed for Monero
@@ -1072,7 +1072,7 @@ gui-apps/packettracer 8.2.0: Cisco's packet tracer
 gui-apps/paperde 0.1.1_p20210426 9999: Simple, sleek QT based DE for wayland using wayfire
 gui-apps/riverguile 0.1.0 9999: River layout generator powered by guile scheme
 gui-apps/rofi-wayland 1.7.5 1.7.5-r1: A window switcher, run dialog and dmenu replacement
-gui-apps/satty 0.11.3 9999: A screenshot annotation tool inspired by Swappy and Flameshot.
+gui-apps/satty 0.12.0 9999: A screenshot annotation tool inspired by Swappy and Flameshot.
 gui-apps/sfwbar 1.0_beta12 1.0_beta13 1.0_beta14: S* Floating Window Bar
 gui-apps/showmethekey 1.11.1 1.12.0: Show keys you typed on screen.
 gui-apps/somebar 1.0.0 1.0.3 9999: dwm-like bar for dwl
@@ -1092,7 +1092,7 @@ gui-apps/tofi 0.8.1 0.9.1: Fast and simple dmenu/rofi replacement for wlroots-ba
 gui-apps/tootle 9999: Mastodon client written in GTK3
 gui-apps/vicuna 1.25: Tool for uploading files to Wikimedia Commons and other Wikimedia projects
 gui-apps/wbg 1.0.2 1.1.0 9999: Super simple wallpaper application
-gui-apps/wdisplays 1.0-r3 1.1 9999: GUI display configurator for wlroots compositors
+gui-apps/wdisplays 1.1 1.1.1 9999: GUI display configurator for wlroots compositors
 gui-apps/wev 1.0.0: Wayland event viewer
 gui-apps/wl-mirror 0.12.2: A simple Wayland output mirror client
 gui-apps/wl-scripts 1.2.3-r1 9999: A set of utils for wlroots window managers
@@ -1106,14 +1106,16 @@ gui-apps/wscreensaver 9999: Xscreensaver screensavers ported to wayland
 gui-apps/wtype 0.4: xdotool type for wayland
 gui-apps/xremap 0.10.0: Dynamic key remap for X and Wayland
 gui-apps/yambar 1.9.0 1.10.0 9999: Simplistic and highly configurable status panel for X and Wayland
-gui-libs/gtk-session-lock 0.2.0-r4 9999: GTK-based lockscreen for Wayland
+gui-libs/gtk-session-lock 0.2.0-r5 9999: GTK-based lockscreen for Wayland
 gui-libs/libcprime 4.5.0 9999: Library for managing settings of CoreApps
 gui-libs/libcsys 4.5.0 9999: Library for managing the device
+gui-libs/mir 2.17.0: Set of libraries for building Wayland based shells
 gui-libs/scenefx 0.1: A replacement for the wlroots scene API with eye-candy effects.
 gui-libs/text-engine 0.1.1-r2 9999: A lightweight rich-text framework for GTK 4
 gui-libs/xdg-desktop-portal-hyprland 1.1.0-r1 1.2.2-r2 1.2.5-r2 1.2.6-r1 1.3.1 1.3.1-r1 9999: xdg-desktop-portal backend for hyprland
 gui-wm/cage 0.1.5 9999: A Wayland kiosk
 gui-wm/hyprland-contrib 0.1-r1 9999: Community-maintained extensions for hyprland
+gui-wm/miracle-wm 0.2.1: Tiling Wayland compositor based on Mir
 gui-wm/niri 0.1.6: Scrollable-tiling Wayland compositor
 gui-wm/phoc 0.36.0-r1 0.38.0: Wayland compositor for mobile phones
 gui-wm/swayfx 0.2 0.3.2 0.4: SwayFX: Sway, but with eye candy!
@@ -1447,9 +1449,9 @@ phosh-base/phosh-shell 0.36.0 0.38.0: Pure Wayland shell for mobile devices
 phosh-base/phosh-tour 0.36.0 0.38.0: Introduction to phosh on smartphones
 phosh-base/squeekboard 1.17.1: Virtual keyboard supporting Wayland, built primarily for the Librem 5 phone
 sci-biology/cmdock 0.2.0 0.2.0-r1: Program for docking ligands to proteins and nucleic acids
-sci-biology/cytoscape-bin 3.10.1: A visualization platform for molecular interaction networks
+sci-biology/cytoscape-bin 3.10.2: A visualization platform for molecular interaction networks
 sci-biology/geneathome 1.10-r5: BOINC application for expanding Gene Regulatory Networks (GRN)
-sci-biology/jalview-bin 2.11.2.7 2.11.3.2: Editor of multiple sequence alignments.
+sci-biology/jalview-bin 2.11.3.3: Editor of multiple sequence alignments.
 sci-chemistry/vesta-bin 3.5.8: Visualisation for Electronic and STructural Analysis.
 sci-chemistry/xcrysden 1.6.2: For the visualisation of molecular and crystal structures.
 sci-electronics/bluespec 2022.01-r1 2023.01 2023.07 9999: Toolchain for the Bluespec Hardware Definition Language
@@ -1587,7 +1589,7 @@ sys-power/envycontrol 3.4.0 9999: Easy GPU switching for Nvidia Optimus laptops 
 sys-power/fan2go 0.8.1: A simple daemon providing dynamic fan speed control
 sys-power/gtherm 0.0.3: A simple daemon to monitor thermal zones and cooling devices
 sys-power/linux-tools-power-x86 6.1 6.6: Linux x86 CPU power tools
-sys-power/nvidia-exec 0.2.7 9999: GPU switching without login out for Nvidia Optimus laptops under Linux
+sys-power/nvidia-exec 0.2.7-r1 9999: GPU switching without login out for Nvidia Optimus laptops under Linux
 sys-process/forkstat 0.03.02-r2: Logs process fork(), exec() and exit() activity
 sys-process/gotop 4.2.0: A terminal based graphical activity monitor inspired by gtop and vtop
 sys-process/nq 0.4: Unix command line queue utility
