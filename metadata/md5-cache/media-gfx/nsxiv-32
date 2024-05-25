@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst postrm prepare setup
-DEPEND=x11-libs/libX11 >=media-libs/imlib2-1.8.0[X] statusbar? ( x11-libs/libXft ) exif? ( media-libs/libexif )
+DEPEND=x11-libs/libX11 >=media-libs/imlib2-1.8.0[X] statusbar? ( x11-libs/libXft media-libs/fontconfig ) exif? ( media-libs/libexif )
 DESCRIPTION=Neo (or New or Not) Simple (or Small or Suckless) X Image Viewer
 EAPI=8
 HOMEPAGE=https://codeberg.org/nsxiv/nsxiv
@@ -7,8 +7,8 @@ INHERIT=desktop xdg-utils savedconfig toolchain-funcs linux-info
 IUSE=+statusbar +inotify exif debug savedconfig
 KEYWORDS=~amd64
 LICENSE=GPL-2+ public-domain
-RDEPEND=x11-libs/libX11 >=media-libs/imlib2-1.8.0[X] statusbar? ( x11-libs/libXft ) exif? ( media-libs/libexif )
+RDEPEND=x11-libs/libX11 >=media-libs/imlib2-1.8.0[X] statusbar? ( x11-libs/libXft media-libs/fontconfig ) exif? ( media-libs/libexif )
 SLOT=0
 SRC_URI=https://codeberg.org/nsxiv/nsxiv/archive/v32.tar.gz -> nsxiv-32.tar.gz
 _eclasses_=desktop	021728fdc1b03b36357dbc89489e0f0d	xdg-utils	baea6080dd821f5562d715887954c9d3	portability	225656ad6c6594fe3b0187bdd50707fb	savedconfig	8b5f9d995a970e49cd427c55d5840285	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	linux-info	e967b81f54be6f49f4219a57ce7db437
-_md5_=348b34521b1ca63beafcb4d80e674f48
+_md5_=24fc3dd2dd01e21e9e8e9a2699b2c09b
