@@ -1,0 +1,18 @@
+BDEPEND=sys-apps/kmod[tools] modules-sign? ( dev-libs/openssl virtual/pkgconfig )
+DEFINED_PHASES=compile install postinst setup test
+DEPEND=python_single_target_python3_10? ( dev-lang/python:3.10 ) python_single_target_python3_11? ( dev-lang/python:3.11 ) python_single_target_python3_12? ( dev-lang/python:3.12 ) x11-libs/libdrm python? ( python_single_target_python3_10? ( dev-python/pybind11[python_targets_python3_10(-)] test? ( dev-python/pytest-mock[python_targets_python3_10(-)] ) ) python_single_target_python3_11? ( dev-python/pybind11[python_targets_python3_11(-)] test? ( dev-python/pytest-mock[python_targets_python3_11(-)] ) ) python_single_target_python3_12? ( dev-python/pybind11[python_targets_python3_12(-)] test? ( dev-python/pytest-mock[python_targets_python3_12(-)] ) ) ) sys-kernel/linux-headers virtual/linux-sources
+DESCRIPTION=Extensible Virtual Display Interface
+EAPI=8
+HOMEPAGE=https://github.com/DisplayLink/evdi
+IDEPEND=sys-apps/kmod[tools]
+INHERIT=linux-mod-r1 python-single-r1
+IUSE=python test dist-kernel modules-compress modules-sign +strip python_single_target_python3_10 python_single_target_python3_11 python_single_target_python3_12
+KEYWORDS=~amd64 ~arm ~arm64 ~x86
+LICENSE=GPL-2 LGPL-2.1
+RDEPEND=python_single_target_python3_10? ( dev-lang/python:3.10 ) python_single_target_python3_11? ( dev-lang/python:3.11 ) python_single_target_python3_12? ( dev-lang/python:3.12 ) x11-libs/libdrm python? ( python_single_target_python3_10? ( dev-python/pybind11[python_targets_python3_10(-)] test? ( dev-python/pytest-mock[python_targets_python3_10(-)] ) ) python_single_target_python3_11? ( dev-python/pybind11[python_targets_python3_11(-)] test? ( dev-python/pytest-mock[python_targets_python3_11(-)] ) ) python_single_target_python3_12? ( dev-python/pybind11[python_targets_python3_12(-)] test? ( dev-python/pytest-mock[python_targets_python3_12(-)] ) ) ) sys-apps/kmod[tools] dist-kernel? ( virtual/dist-kernel:= )
+REQUIRED_USE=python? ( ^^ ( python_single_target_python3_10 python_single_target_python3_11 python_single_target_python3_12 ) )
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/DisplayLink/evdi/archive/refs/tags/v1.14.4.tar.gz -> evdi-1.14.4.tar.gz
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	dist-kernel-utils	145861da258122cbba5240a850f1a5e8	edo	367e103a74bf77e6a8da7894d999fa3c	linux-info	e967b81f54be6f49f4219a57ce7db437	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	linux-mod-r1	9ccd2b29cd75bd48092f8f46b07fc935	python-utils-r1	8b220bbce5c119fb1d4d5c2f5588f3ea	python-single-r1	75118e916668a74c660a13b0ecb22562
+_md5_=1eb31bc4636c6fd3bdc5ae72a23f2aa5

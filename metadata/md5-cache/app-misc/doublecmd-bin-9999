@@ -1,0 +1,12 @@
+DEFINED_PHASES=install unpack
+DESCRIPTION=Double Commander: file manager with two panels, similar to Total Commander
+EAPI=8
+HOMEPAGE=https://doublecmd.sourceforge.io/
+IUSE=+gtk qt5
+LICENSE=GPL-2
+PROPERTIES=live
+RDEPEND=sys-fs/fuse:0
+REQUIRED_USE=^^ ( gtk qt5 )
+RESTRICT=strip
+SLOT=0
+_md5_=a5ab62b8ac5d0db3a256a913cd9d5915
