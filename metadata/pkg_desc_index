@@ -80,7 +80,7 @@ acct-user/wikijs 0: User for wikijs
 acct-user/wsdd 0: User for net-misc/wsdd
 acct-user/yacy 0: User for net-misc/yacy
 acct-user/yggdrasil 1: Yggdrasil user
-app-accessibility/mimic1 1.3.0.1 9999: Mycroft's TTS engine, based on CMU's Flite (Festival Lite)
+app-accessibility/mimic1 1.3.0.1-r1 9999: Mycroft's TTS engine, based on CMU's Flite (Festival Lite)
 app-accessibility/rhvoice 1.6.0 1.14.0: TTS engine with extended languages support (metapackage)
 app-accessibility/rhvoice-core 1.14.0-r1: TTS engine with extended languages support
 app-accessibility/speakup-tools 20121017: Tools to customize speakup module
@@ -99,6 +99,7 @@ app-admin/dotbot 1.20.1: A tool that bootstraps your dotfiles
 app-admin/enpass-desktop-bin 6.7.4.933: A cross-platform, complete password management solution
 app-admin/gentoo_update 0.2.4: Gentoo Linux updater
 app-admin/grub-customizer 5.2.4-r1: A graphical grub2 settings manager
+app-admin/hardinfo2 2.1.11: System Information and Benchmark for Linux Systems
 app-admin/himitsu 0.7 9999: Secret storage system for Unix, suitable for storing passwords, keys, ...
 app-admin/himitsu-keyring 0.2.0: graphical frontend for managing a Himitsu key store
 app-admin/himitsu-ssh 0.3 9999: SSH integration for Himitsu
@@ -109,7 +110,7 @@ app-admin/oet 0.1.9 0.1.10 9999: Update your system into binpkgs in an overlay s
 app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applications and tmux
 app-admin/pass-audit 1.2 1.2-r1: A pass extension for auditing your password repository.
 app-admin/pass-update 2.2.1: pass extension that provides an easy flow for updating passwords
-app-admin/pulumi-bin 3.113.0 3.114.0 3.115.2: Infrastructure as code in any programming language
+app-admin/pulumi-bin 3.113.0 3.114.0 3.115.2 3.117.0: Infrastructure as code in any programming language
 app-admin/rbw 9999: unofficial bitwarden cli
 app-admin/s-tui 1.1.6: Stress-Terminal UI monitoring tool
 app-admin/synadm 0.43.1 0.44: Command line admin tool for Synapse
@@ -142,7 +143,7 @@ app-containers/waydroid 1.4.2 1.4.2-r1: Container-based approach to boot a full 
 app-containers/waydroid-images 9999: Manage images for app-containers/waydroid using portage
 app-crypt/PBinCLI 0.3.5 0.3.5-r1: PBinCLI is a command line client for PrivateBin written in Python 3
 app-crypt/autofirma 1.8.2: Spanish government's electronic signature application for online procedures
-app-crypt/certbot-dns-cloudflare 2.9.0 2.10.0: Cloudflare DNS Authenticator plugin for Certbot (Let's Encrypt Client)
+app-crypt/certbot-dns-cloudflare 2.9.0-r1 2.10.0: Cloudflare DNS Authenticator plugin for Certbot (Let's Encrypt Client)
 app-crypt/certbot-dns-desec 1.2.1: deSEC DNS Authenticator plugin for Certbot
 app-crypt/certbot-dns-rfc2136 2.10.0 9999: RFC 2136 DNS Authenticator plugin for Certbot (Let’s Encrypt client)
 app-crypt/clevis 19-r2 20-r1: Automated Encryption Framework
@@ -156,6 +157,7 @@ app-crypt/reop 2.1.1: reasonable expectation of privacy
 app-crypt/sac-core 10.8.1050-r1: Thales/Gemalto SafeNet Authentication Client
 app-crypt/tang 14 15-r1: Tang binding daemon
 app-crypt/tomb 2.9-r6: Tomb :: File Encryption on GNU/Linux
+app-crypt/totp-cli-bin 1.8.7: Authy/Google Authenticator like TOTP CLI tool written in Go
 app-crypt/uacme 1.7.1: ACMEv2 client written in plain C with minimal dependencies
 app-dicts/dictd-foldoc 20180405: The Free On-line Dictionary of Computing for dict
 app-dicts/dictd-gcide 0.48.5: Collaborative International Dictionary of English (incl. Webster 1913) for dict
@@ -267,7 +269,6 @@ app-misc/treefetch 2.0.0: 🌲 A plant-based system fetch tool made with Rust.
 app-misc/tty-share-bin 2.4.0: Screen sharing for terminal: ASCII in browser or terminal, without pixels moving
 app-misc/twertlefetch 1.1.0: system fetch written in rust
 app-misc/ufetch 0.3: Tiny system info for Unix-like operating systems
-app-misc/uwufetch 2.0 2.1: A meme system info tool for Linux
 app-misc/vocabsieve 0.12.0: A simple, effective tool for language learning
 app-misc/vrms-gentoo 0_pre20201102: vrms clone for Gentoo Linux
 app-misc/walld 1.4.4: A Wallpaper daemon
@@ -730,7 +731,7 @@ dev-python/pure-protobuf 3.0.1: Python implementation of Protocol Buffers data t
 dev-python/py-nanoid 9999: Python Nanoid
 dev-python/pyagentx 0.4-r1: Python AgentX Implementation
 dev-python/pyclip 0.7.0-r1 9999: Python clipboard module
-dev-python/pycpio 1.0.0 1.1.2: Python CPIO library
+dev-python/pycpio 1.0.0 1.1.2-r1: Python CPIO library
 dev-python/pydispatcher 2.0.7: Multi-producer-multi-consumer signal dispatching mechanism
 dev-python/pydub 0.25.1: Manipulate audio with an simple and easy high level interface
 dev-python/pyfiglet 0.8_p1: Pure-python FIGlet implementation
@@ -883,9 +884,9 @@ dev-util/gshards 0.2: Small helper tools to aid installing Crystal packages in G
 dev-util/haredo 1.0.2 9999: a simple and unix-idiomatic build automator
 dev-util/hut 0.5.0: CLI tool for sourcehut
 dev-util/insomnia-bin 2020.5.2 2023.5.8: HTTP and GraphQL client for developers
-dev-util/lemminx-bin 0.24.0 0.25.0: XML Language Server
+dev-util/lemminx-bin 0.25.0 0.27.0: XML Language Server
 dev-util/lottieconverter 0.2: Simple lottie (telegram animated sticker) converter.
-dev-util/lua-language-server 3.7.3: Lua language server
+dev-util/lua-language-server 3.7.3 3.9.1: Lua language server
 dev-util/mh 1.0.3: Generate help for Makefile
 dev-util/mock 5.6-r1: Simple chroot build environment manager for building RPMs
 dev-util/mock-core-configs 40.4: Mock core config files basic chroots
@@ -911,7 +912,7 @@ dev-util/wakatime-cli 1.27.0 1.28.6: Command line interface to WakaTime used by 
 dev-util/webgpu-headers 9999 20240512: Webgpu Header files
 dev-util/wxformbuilder 3.10.1-r1: A wxWidgets GUI Builder
 dev-util/xxd 8.2.4092: Hexdump utility from vim
-dev-util/yaml-language-server 1.13.0 1.14.0: Language Server for YAML Files
+dev-util/yaml-language-server 1.14.0: Language Server for YAML Files
 dev-vcs/gitahead 2.7.1 2.7.1-r1: Graphical Git client to help understand and manage source code history
 dev-vcs/gitqlient 1.6.2 9999: Multi-platform Git client written with Qt
 dev-vcs/gitqlient-gitserver-plugin 0.2.0: GitQlient GitServer plugin
@@ -954,7 +955,7 @@ games-fps/crispy-doom 5.12.0 6.0: A limit-removing enhanced-resolution Doom sour
 games-fps/etlegacy 2.81.0 2.82.0: Wolfenstein: Enemy Territory 2.60b compatible client/server
 games-fps/openspades 0.1.3: Open-source voxel FPS
 games-fps/quakespasm 0.94.1 9999: Modern, cross-platform Quake 1 engine based on FitzQuake
-games-fps/the-dark-mod-bin 2.12: Inspired by Thief on Doom 3 libre engine (id Tech 4)
+games-fps/the-dark-mod-bin 2.12-r1: Inspired by Thief on Doom 3 libre engine (id Tech 4)
 games-misc/asciiquarium 1.1_p20120823: Asciiquarium is an aquarium/sea animation in ASCII art
 games-misc/cbonsai 1.3.1-r1: grow bonsai trees in your terminal
 games-misc/gay 1.2.9 1.3.4: Colour your text / terminal to be more gay
@@ -970,7 +971,7 @@ games-puzzle/superflu-riteurnz 1.5.5: Artisanal video-game about Superflu, the u
 games-puzzle/superflu-riteurnz-data 12: Artisanal video-game about Superflu, the useless super-hero (data files)
 games-rpg/open-adventure 1.16 1.17 1.18: Forward-port of the Crowther/Woods Adventure 2.5
 games-rpg/sacred-demo 1.0.0: Like Diablo, isometric view, good rating, about a two hours of the gameplay
-games-rpg/snoot-game 1.9.1: Visual novel parody of Goodbye Volcano High
+games-rpg/snoot-game 1.10.0: Visual novel parody of Goodbye Volcano High
 games-server/among-sus 20210519: Among Us, but it's a text adventure
 games-strategy/general 4.6: Turn-based, old style with minimum graphic, full game, 5 MB size
 games-strategy/ground-control 1011: RTS from 2000 by Massive Entertainment, without resources and buildings
@@ -1040,8 +1041,8 @@ gui-apps/grimshot 9999: A helper for screenshots within sway
 gui-apps/gtklock 3.0.0-r1: GTK-based lockscreen for Wayland
 gui-apps/gtklock-extras 9999: Gtklock modules
 gui-apps/hiprompt-gtk-py 0_pre20221221 9999: GTK+ Himitsu prompter for Wayland
-gui-apps/hypridle 0.1.2-r1 9999: Hyprland's idle daemon
-gui-apps/hyprlock 0.3.0-r2 9999: Hyprland's GPU-accelerated screen locking utility
+gui-apps/hypridle 0.1.2-r2 9999: Hyprland's idle daemon
+gui-apps/hyprlock 0.3.0-r3 9999: Hyprland's GPU-accelerated screen locking utility
 gui-apps/hyprpaper 0.6.0-r1 0.7.0: A blazing fast wayland wallpaper utility
 gui-apps/hyprpicker 0.1.1 0.2.0: A wlroots-compatible Wayland color picker that does not suck
 gui-apps/intiface-central-bin 2.5.7: Buttplug frontend application
@@ -1114,7 +1115,7 @@ gui-wm/hyprland-contrib 0.1-r1 9999: Community-maintained extensions for hyprlan
 gui-wm/miracle-wm 0.2.1: Tiling Wayland compositor based on Mir
 gui-wm/niri 0.1.6: Scrollable-tiling Wayland compositor
 gui-wm/phoc 0.36.0-r1 0.38.0: Wayland compositor for mobile phones
-gui-wm/swayfx 0.2 0.3.2 0.4: SwayFX: Sway, but with eye candy!
+gui-wm/swayfx 0.2 0.3.2 0.4 0.4-r1: SwayFX: Sway, but with eye candy!
 kde-apps/kwalletcli 3.03: CLI for the KDE Wallet
 kde-apps/plasma-settings 22.11: Settings application for Plasma Mobile
 kde-misc/geminipart 20221020 20231005: KPart for viewing text/gemini files
@@ -1164,7 +1165,7 @@ media-gfx/grafx2 2.7.2978 2.7.2978-r100: A pixelart-oriented painting program
 media-gfx/libpsautohint 2.4.0: A library for autohinting PostScript fonts
 media-gfx/nsxiv 32 9999: Neo (or New or Not) Simple (or Small or Suckless) X Image Viewer
 media-gfx/oda-file-converter 23.5.0.0: For converting between different versions of .dwg and .dxf
-media-gfx/qview 4.0 5.0: Practical and minimal image viewer
+media-gfx/qview 4.0 5.0 6.1: Practical and minimal image viewer
 media-gfx/sic 0.19.0: Accessible image processing and conversion from the terminal tool.
 media-gfx/silicon 0.5.2: Create beautiful image of your code
 media-gfx/svgcleaner 0.9.5: svgcleaner could help you to clean up your SVG files from the unnecessary data.
@@ -1243,7 +1244,7 @@ media-sound/yewtube 2.10.5 9999: Terminal-based YouTube player and downloader
 media-sound/youtube-music-bin 3.3.6: YouTube Music Desktop App bundled with custom plugins
 media-sound/zita-ajbridge 0.8.4 0.8.4-r1: zita-a2j and zita-j2a - bridges between ALSA and JACK
 media-video/avisynth+ 9999: A powerful nonlinear scripting language for video
-media-video/ciano 0.2.4-r1: A multimedia file converter focused on simplicity
+media-video/ciano 0.2.4-r2: A multimedia file converter focused on simplicity
 media-video/delfin 0.4.3 0.4.4: Stream movies and TV shows from Jellyfin
 media-video/kikoplay 0.9.3 9999: KikoPlay is a full-featured danmu player
 media-video/kooha 2.2.3: GTK4 screen recorder for Wayland
@@ -1279,7 +1280,7 @@ mpv-plugin/mpv_sponsorblock_minimal 2023.08.20: A minimal script to skip sponsor
 mpv-plugin/mpv_thumbnail_script 0.5.1 0.5.2 0.5.3: A Lua script to show preview thumbnails in mpv's OSC seekbar
 mpv-plugin/thumbfast 2023.12.08: High-performance on-the-fly thumbnailer script for mpv.
 net-analyzer/bandwhich 0.22.2: Terminal bandwidth utilization tool
-net-analyzer/gping 1.16.1: Ping, but with a graph
+net-analyzer/gping 1.16.1-r1: Ping, but with a graph
 net-analyzer/munin-contrib 0.2021.04.27 0.2024.03.04 0.2024.03.04-r1: User contributed stuff related to munin
 net-analyzer/netsniff-ng 0.6.8-r1: high performance network sniffer for packet inspection
 net-client/amfora 1.8.0 1.9.2: A fancy terminal browser for the Gemini protocol.
@@ -1291,6 +1292,7 @@ net-client/starfish 1.2.0 1.3.1: A Gemini browser for elementary OS
 net-client/telescope 0.8.1 0.9: w3m-like browser for Gemini
 net-dialup/atinout 0.9.1-r1: AT commands as input are sent to modem and responses given as output
 net-dialup/minimodem 0.24-r1 9999: General-purpose software audio FSK modem
+net-dialup/syncterm 1.1 9999: BBS (bulletin board system) terminal
 net-dialup/tcpser 1.1.4: Hayes Smartmodem emulator over TCP/IP
 net-dialup/tio 3.3: Simple TTY terminal application
 net-dns/AdGuardHome 0.107.45 0.107.46 0.107.48 0.107.49 0.107.50: Network-wide ads & trackers blocking DNS server like Pi-Hole with web ui
@@ -1338,7 +1340,7 @@ net-irc/catgirl 2.0a 2.1 2.2: TLS-only terminal IRC client
 net-irc/halloy 2024.6: IRC application written in Rust
 net-irc/litterbox 1.9: TLS-only IRC logger
 net-irc/pounce 3.0 3.1: Multi-client, TLS-only IRC bouncer
-net-irc/srain 1.6.0: Modern, beautiful IRC client written in GTK+ 3
+net-irc/srain 1.7.0: Modern, beautiful IRC client written in GTK+ 3
 net-irc/thelounge 4.4.1 4.4.2_rc1 4.4.3: ‎Modern, responsive, cross-platform, self-hosted web IRC client
 net-irc/tiny 0.12.0: IRC client written in Rust
 net-libs/dpdk 23.03: Data Plane Development Kit libraries for fast userspace networking
@@ -1357,7 +1359,7 @@ net-libs/yder 1.4.20: Logging library for C applications
 net-mail/dovecot-fts-xapian 1.5.9 1.7.6 1.7.9 1.7.10 1.7.11 1.7.12 9999: Dovecot FTS plugin backed by Xapian
 net-mail/hydroxide 0.2.23 0.2.24 0.2.26 0.2.27 0.2.28 9999: A third-party, open-source ProtonMail CardDAV, IMAP and SMTP bridge
 net-mail/pop 0.2.0: Send emails from your terminal
-net-misc/FORT-validator 1.5.3 1.5.4: FORT validator is an open source RPKI validator
+net-misc/FORT-validator 1.5.3 1.5.4 1.6.1: FORT validator is an open source RPKI validator
 net-misc/can-utils 2021.08.0 2023.03 9999-r3: CAN userspace utilities and tools
 net-misc/clatd 1.6: A CLAT / SIIT-DC Edge Relay implementation for Linux
 net-misc/commons-downloader 9999: A shell script to bulk download files from Wikimedia Commons, by category
@@ -1376,7 +1378,6 @@ net-misc/gmcapsule 0.6.1 0.7.0: Extensible Gemini/Titan server
 net-misc/gmid 2.0.1-r1 2.0.2 9999: Simple and secure Gemini server
 net-misc/gnome-ssh-askpass 9.2_p1: GTK-based passphrase dialog for use with OpenSSH
 net-misc/graftcp 0.7.1: A tool for redirecting a given program's TCP traffic to SOCKS5 or HTTP proxy
-net-misc/gsocket 1.4.41 9999: Connect like there is no firewall. Securely.
 net-misc/iipsrv 1.2: High performance image server for high resolution and scientific images
 net-misc/lyrics-in-terminal 1.5.0: Command Line Lyrics fetcher for MPRIS media players
 net-misc/maestral 1.9.3-r1: Maestral is an open-source Dropbox client written in Python
@@ -1411,7 +1412,7 @@ net-nntp/inn 2.7.1: InterNetNews - the Internet meets Netnews
 net-nntp/pan 0.157 0.158 0.158-r1: A newsreader for GNOME
 net-p2p/bisq-bin 1.9.14: The decentralized bitcoin exchange (non-atomic, with arbitration)
 net-p2p/dogecoin-qt 1.14.6 1.14.7: Dogecoin Core Qt for desktop. Downloaded blockchain is under 2.2GB. Much secure.
-net-p2p/feather 2.6.2 9999: A free, open-source Monero wallet
+net-p2p/feather 2.6.2 2.6.7 9999: A free, open-source Monero wallet
 net-p2p/fragments 2.1-r1 2.1.1 3.0.0: Fragments is an easy to use BitTorrent client
 net-p2p/gridcoin 5.4.7.0 5.4.8.0: Proof-of-Stake based cryptocurrency that rewards BOINC computation
 net-p2p/ipfs-cluster 1.0.1 1.0.2: Pinset orchestration for IPFS
@@ -1568,7 +1569,7 @@ sys-fs/ufiformat 0.9.9: USB Floppy Disk formatting tool
 sys-fs/zfs-auto-utils 1.0.0: ZFS Automatic Scrub/Trim for Linux
 sys-kernel/dpdk-kmod 23.03: DPDK Kernel Nic Interface module
 sys-kernel/uek-sources 5.15.0.206.149.1 5.15.0.206.153.6 5.15.0.206.153.7: Unbreakable Enterprise Kernel (UEK) sources built from Oracle
-sys-kernel/ugrd 1.2.2 1.3.8 1.4.0 1.4.2 1.5.1 1.6.0 1.7.1 9999: Python based initramfs generator with TOML defintions
+sys-kernel/ugrd 1.2.2 1.3.8 1.4.0 1.4.2 1.5.1 1.6.0 1.7.1 1.8.4 1.9.1 9999: Python based initramfs generator with TOML defintions
 sys-kernel/usermode-kernel 6.0.12: Linux kernel built with Gentoo patches
 sys-kernel/xow 0.5: Linux driver for the Xbox One wireless dongle
 sys-kernel/zenpower3 0.2.0: Linux kernel driver for reading sensors of AMD Zen family CPUs
@@ -1639,7 +1640,7 @@ x11-drivers/evdi 1.14.4: Extensible Virtual Display Interface
 x11-libs/gtk-fortran 3.24.31 4.4.1 4.5.0 4.6.0: A GTK+ binding to build Graphical User Interfaces in Fortran
 x11-libs/sdl-fakeqwerty 0_pre20191217: Fixes non-QWERTY keyboards on Prison Architect (and maybe other SDL games)
 x11-misc/aerial-sddm-theme 0_pre20191018-r1 9999: SDDM theme with Apple TV Aerial videos
-x11-misc/autotiling 1.9.1 1.9.2: Script for sway and i3 to automatically switch the window split orientation
+x11-misc/autotiling 1.9.2 1.9.3: Script for sway and i3 to automatically switch the window split orientation
 x11-misc/betterlockscreen 4.2.0: sweet looking lockscreen for linux system
 x11-misc/betterlockscreen_rapid 0.0.0_pre20210701 0.0.0_pre20210708: A rapid and good-looking screen locker
 x11-misc/caffeine-ng 3.5.1: Aplication able to temporarily inhibit the screensaver
@@ -1653,7 +1654,7 @@ x11-misc/i3lock-color 2.13.5: The world's most popular non-default computer lock
 x11-misc/i3lock-fancy-rapid 0.0.0_pre20201109-r1 0.0.0_pre20210421: A faster implementation of i3lock-fancy
 x11-misc/i3status-rust 0.32.3 0.33.0 0.33.1: A feature-rich and resource-friendly replacement for i3status, written in Rust.
 x11-misc/input-leap 9999: Share a mouse and keyboard between computers (fork of Barrier)
-x11-misc/ksnip 1.9.2 1.10.0-r1 1.10.1: Ksnip is a Qt based cross-platform screenshot tool
+x11-misc/ksnip 1.10.1: Ksnip is a Qt based cross-platform screenshot tool
 x11-misc/leftwm-theme 0.1.2_rc1: A theme mangager for LeftWM
 x11-misc/picom-jonaburg 9999: A lightweight compositor for X11 (previously a compton fork)
 x11-misc/pywal 3.3.0: Tool that generates color schemes from images

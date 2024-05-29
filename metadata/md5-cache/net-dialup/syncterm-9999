@@ -1,0 +1,14 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile install unpack
+DEPEND=ncurses? ( sys-libs/ncurses ) sdl? ( media-libs/libsdl2 ) X? ( x11-libs/libX11 )
+DESCRIPTION=BBS (bulletin board system) terminal
+EAPI=8
+HOMEPAGE=https://syncterm.bbsdev.net/
+INHERIT=git-r3 desktop
+IUSE=ncurses sdl X
+LICENSE=GPL-2+
+PROPERTIES=live
+RDEPEND=ncurses? ( sys-libs/ncurses ) sdl? ( media-libs/libsdl2 ) X? ( x11-libs/libX11 )
+SLOT=0
+_eclasses_=git-r3	fbb2889c81f3a05910c1524db69425c1	desktop	021728fdc1b03b36357dbc89489e0f0d
+_md5_=31325d3da842dfb5b167ca50b011f30a
