@@ -23,15 +23,14 @@ SLOT="0"
 
 RDEPEND="
 	dev-libs/wayland
-	gui-libs/wlroots
 	media-libs/libglvnd
 	media-video/mpv:=[libmpv]
 "
-DEPEND="${RDEPEND}"
-BDEPEND="
-	dev-util/wayland-scanner
-	virtual/pkgconfig
+DEPEND="
+	${RDEPEND}
+	dev-libs/wayland-protocols
 "
+BDEPEND="dev-util/wayland-scanner"
 
 src_install() {
 	meson_src_install
