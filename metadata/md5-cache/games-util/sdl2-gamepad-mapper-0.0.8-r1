@@ -1,13 +1,13 @@
 DEFINED_PHASES=configure install postinst
-DEPEND=media-libs/libsdl2 dev-qt/qtdeclarative:6 dev-qt/qttranslations:6
+DEPEND=media-libs/libsdl2 dev-qt/qtbase:6 dev-qt/qtdeclarative:6 dev-qt/qttranslations:6
 DESCRIPTION=GUI application to generate an SDL2 mapping string from a generic controller
 EAPI=8
 HOMEPAGE=https://gitlab.com/ryochan7/sdl2-gamepad-mapper
 INHERIT=qmake-utils xdg-utils desktop
 KEYWORDS=~amd64
 LICENSE=GPL-3
-RDEPEND=media-libs/libsdl2 dev-qt/qtdeclarative:6 dev-qt/qttranslations:6
+RDEPEND=media-libs/libsdl2 dev-qt/qtbase:6 dev-qt/qtdeclarative:6 dev-qt/qttranslations:6
 SLOT=0
 SRC_URI=https://gitlab.com/ryochan7/sdl2-gamepad-mapper/-/archive/v0.0.8/sdl2-gamepad-mapper-v0.0.8.tar.bz2
 _eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	qmake-utils	a8dd17b1d94586164f5e3fc12b1c6b81	xdg-utils	baea6080dd821f5562d715887954c9d3	desktop	021728fdc1b03b36357dbc89489e0f0d
-_md5_=16099930de5add9d6de6bc4833abcedb
+_md5_=fd0acae2a91f3edd7b2ec5689aab7ca6
