@@ -1,6 +1,6 @@
 BDEPEND=>=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install test unpack
-DEPEND=>=media-libs/gst-plugins-bad-1.22.3-r3[vaapi] media-video/obs-studio video_cards_amdgpu? ( media-libs/mesa[vaapi,video_cards_radeonsi] ) video_cards_intel? ( media-libs/libva-intel-media-driver )
+DEPEND=media-video/obs-studio media-libs/gst-plugins-base sys-apps/pciutils
 DESCRIPTION=OBS Studio VAAPI support via GStreamer
 EAPI=8
 HOMEPAGE=https://github.com/fzwoch/obs-vaapi
@@ -8,7 +8,7 @@ INHERIT=meson git-r3
 IUSE=video_cards_amdgpu video_cards_intel
 LICENSE=GPL-2
 PROPERTIES=live
-RDEPEND=>=media-libs/gst-plugins-bad-1.22.3-r3[vaapi] media-video/obs-studio video_cards_amdgpu? ( media-libs/mesa[vaapi,video_cards_radeonsi] ) video_cards_intel? ( media-libs/libva-intel-media-driver )
+RDEPEND=media-video/obs-studio media-libs/gst-plugins-base sys-apps/pciutils dev-libs/glib >=media-libs/gst-plugins-bad-1.22.3-r3[vaapi] video_cards_amdgpu? ( media-libs/mesa[vaapi,video_cards_radeonsi] ) video_cards_intel? ( media-libs/libva-intel-media-driver )
 SLOT=0
 _eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	d309b9713dfc18e754cba88d3ba69653	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	8b220bbce5c119fb1d4d5c2f5588f3ea	meson	aecae905c2e0c201d7925fae52a5576d	git-r3	fbb2889c81f3a05910c1524db69425c1
-_md5_=f7f6c8a65a719f053880d2168c9a6e25
+_md5_=8c820d36c4c809ac7f0c4fbd84090fb5

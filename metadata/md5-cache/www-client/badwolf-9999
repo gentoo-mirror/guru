@@ -1,6 +1,6 @@
 BDEPEND=test? ( app-text/mandoc ) >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install postinst postrm preinst test unpack
-DEPEND=x11-libs/gtk+:3 webkit41? ( net-libs/webkit-gtk:4.1= ) !webkit41? ( net-libs/webkit-gtk:4= )
+DEPEND=dev-libs/glib dev-libs/libxml2 x11-libs/gtk+:3 webkit41? ( net-libs/webkit-gtk:4.1= ) !webkit41? ( net-libs/webkit-gtk:4= )
 DESCRIPTION=Minimalist and privacy-oriented WebKitGTK+ browser
 EAPI=8
 HOMEPAGE=https://hacktivis.me/projects/badwolf
@@ -9,8 +9,8 @@ INHERIT=xdg ninja-utils git-r3
 IUSE=+webkit41 test
 LICENSE=BSD
 PROPERTIES=live
-RDEPEND=x11-libs/gtk+:3 webkit41? ( net-libs/webkit-gtk:4.1= ) !webkit41? ( net-libs/webkit-gtk:4= )
+RDEPEND=dev-libs/glib dev-libs/libxml2 x11-libs/gtk+:3 webkit41? ( net-libs/webkit-gtk:4.1= ) !webkit41? ( net-libs/webkit-gtk:4= )
 RESTRICT=!test? ( test )
 SLOT=0
 _eclasses_=xdg-utils	baea6080dd821f5562d715887954c9d3	xdg	4a14c5c24f121e7da66e5aab4a168c6e	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	git-r3	fbb2889c81f3a05910c1524db69425c1
-_md5_=5f007463f220feb59118f1e258390424
+_md5_=d0c366fe95b7eb5bd6c8e4615f4dfb8e
