@@ -21,13 +21,13 @@ IUSE="test"
 
 RESTRICT="test"
 # Depend on a random server that may or may not be accessible at all times.
-#PROPERTIES="test_network"
+PROPERTIES="test_network"
 
 DEPEND="
 	dev-libs/glib:2
 	dev-libs/gobject-introspection
-	>=gui-libs/gtk-4.12.1:4
-	>=gui-libs/libadwaita-1.4:1[introspection]
+	>=gui-libs/gtk-4.12:4
+	>=gui-libs/libadwaita-1.5:1[introspection]
 	net-libs/webkit-gtk:6[introspection]
 "
 RDEPEND="
@@ -45,7 +45,7 @@ RDEPEND="
 		dev-python/natsort[${PYTHON_USEDEP}]
 		dev-python/piexif[${PYTHON_USEDEP}]
 		dev-python/pillow[${PYTHON_USEDEP}]
-		dev-python/pure-protobuf[${PYTHON_USEDEP}]
+		dev-python/pillow-heif[${PYTHON_USEDEP}]
 		dev-python/pygobject[${PYTHON_USEDEP}]
 		dev-python/python-magic[${PYTHON_USEDEP}]
 		dev-python/rarfile[compressed,${PYTHON_USEDEP}]

@@ -78,7 +78,7 @@ src_prepare() {
 src_install() {
 	doicon -s 256 "${FILESDIR}/${MY_PN}.png"
 
-	make_desktop_entry "/usr/bin/tidal-hifi" "TIDAL Hi-Fi" ${PN} "Network;AudioVideo;Audio;Video"
+	make_desktop_entry "/usr/bin/tidal-hifi" "TIDAL Hi-Fi" ${MY_PN} "Network;AudioVideo;Audio;Video"
 
 	exeinto "${DESTDIR}"
 

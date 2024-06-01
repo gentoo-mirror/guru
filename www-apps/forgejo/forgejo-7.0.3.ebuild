@@ -5,12 +5,11 @@ EAPI=8
 
 inherit fcaps go-module tmpfiles systemd flag-o-matic
 
-MY_PV="$(ver_cut 1-3)-$(ver_cut 4)"
 DESCRIPTION="A self-hosted lightweight software forge"
 HOMEPAGE="https://forgejo.org/ https://codeberg.org/forgejo/forgejo"
 
-SRC_URI="https://codeberg.org/forgejo/forgejo/releases/download/v${MY_PV}/forgejo-src-${MY_PV}.tar.gz -> ${P}.tar.gz"
-S="${WORKDIR}/${PN}-src-${MY_PV}"
+SRC_URI="https://codeberg.org/forgejo/forgejo/releases/download/v${PV}/forgejo-src-${PV}.tar.gz -> ${P}.tar.gz"
+S="${WORKDIR}/${PN}-src-${PV}"
 LICENSE="Apache-2.0 BSD BSD-2 ISC MIT MPL-2.0"
 SLOT="0"
 
@@ -119,19 +118,22 @@ pkg_postinst() {
 	fcaps_pkg_postinst
 	tmpfiles_process forgejo.conf
 
-	ewarn "${PN} ${MY_PV} will continue to use /var/lib/gitea as the default home,"
+	ewarn "${PN} ${PV} will continue to use /var/lib/gitea as the default home,"
 	ewarn "as acct-user/git[gitea] depends on it, and acct-user[forgejo] does not"
 	ewarn "exist yet."
 	ewarn ""
-	ewarn "1.21.x includes changes that may require manual intervention when"
-	ewarn "upgrading from 1.20.x:"
+	ewarn "7.x includes changes that may require manual intervention when"
+	ewarn "upgrading from 1.21.x, most prominently:"
 	ewarn ""
-	ewarn "> Git branches are stored in the databases to reduce the calls to a"
-	ewarn "> git process and improve performances. After upgrading, login as an"
-	ewarn "> admin, go to the /admin page and click run Sync missed branches"
-	ewarn "> from git data to databases. If this is not done there will be"
-	ewarn "> messages such as LoadBranches: branch does not exist in the logs."
+	ewarn "> MySQL 8.0 or PostgreSQL 12 are the minimum supported versions. The"
+	ewarn "> database must be migrated before upgrading. The requirements"
+	ewarn "> regarding SQLite did not change."
+	ewarn ">"
+	ewarn "> The Gitea themes were renamed and the [ui].THEMES setting must be changed as follows:"
+	ewarn "> - gitea is replaced by gitea-light"
+	ewarn "> - arc-green is replaced by gitea-dark"
+	ewarn "> - auto is replaced by gitea-auto"
 	ewarn ""
-	ewarn "See https://codeberg.org/forgejo/forgejo/src/branch/forgejo/RELEASE-NOTES.md#1-21-1-0"
+	ewarn "See https://codeberg.org/forgejo/forgejo/src/branch/forgejo/RELEASE-NOTES.md#7-0-0"
 	ewarn "for more information"
 }
