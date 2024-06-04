@@ -19,7 +19,9 @@ KEYWORDS="~amd64"
 RESTRICT="test"
 
 RDEPEND="
+	dev-python/pyelftools[${PYTHON_USEDEP}]
 	dev-python/pyyaml[${PYTHON_USEDEP}]
+	dev-python/rich[${PYTHON_USEDEP}]
 "
 
 DEPEND="${RDEPEND}"
