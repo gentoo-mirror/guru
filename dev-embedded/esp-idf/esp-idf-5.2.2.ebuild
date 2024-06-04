@@ -6,6 +6,7 @@ EAPI=8
 PYTHON_COMPAT=( python3_{11,12} )
 
 VER="13.2.0_20230928"
+GDB_VER="14.2_20240403"
 
 CROSSTOOL_URL="https://github.com/espressif/crosstool-NG/releases/download/esp-${VER}"
 
@@ -16,10 +17,14 @@ HOMEPAGE="https://www.espressif.com/"
 
 #	https://github.com/espressif/binutils-esp32ulp/releases/download/v2.28.51-esp-20191205/binutils-esp32ulp-linux-amd64-2.28.51-esp-20191205.tar.gz
 SRC_URI="https://dl.espressif.com/github_assets/espressif/${PN}/releases/download/v${PV}/${PN}-v${PV}.zip -> ${P}.zip
-	https://github.com/espressif/openocd-esp32/releases/download/v0.12.0-esp32-20230921/openocd-esp32-linux-amd64-0.12.0-esp32-20230921.tar.gz
-	https://github.com/espressif/binutils-gdb/releases/download/esp-gdb-v12.1_20231023/xtensa-esp-elf-gdb-12.1_20231023-x86_64-linux-gnu.tar.gz
-	${CROSSTOOL_URL}/xtensa-esp-elf-${VER}-x86_64-linux-gnu.tar.xz
-	riscv32? ( ${CROSSTOOL_URL}/riscv32-esp-elf-${VER}-x86_64-linux-gnu.tar.xz )"
+	https://github.com/espressif/openocd-esp32/releases/download/v0.12.0-esp32-20240318/openocd-esp32-linux-amd64-0.12.0-esp32-20240318.tar.gz
+	https://github.com/espressif/binutils-gdb/releases/download/esp-gdb-v${GDB_VER}/xtensa-esp-elf-gdb-${GDB_VER}-x86_64-linux-gnu.tar.gz"
+SRC_URI+=" ${CROSSTOOL_URL}/xtensa-esp-elf-${VER}-x86_64-linux-gnu.tar.xz"
+SRC_URI+=" riscv32? (
+	${CROSSTOOL_URL}/riscv32-esp-elf-${VER}-x86_64-linux-gnu.tar.xz
+	https://github.com/espressif/binutils-gdb/releases/download/esp-gdb-v${GDB_VER}/riscv32-esp-elf-gdb-${GDB_VER}-x86_64-linux-gnu.tar.gz
+)"
+
 #https://dl.espressif.com/dl/toolchains/preview/riscv32-esp-elf-gcc8_4_0-crosstool-ng-1.24.0-123-g64eb9ff-linux-amd64.tar.gz
 
 S="${WORKDIR}/${PN}-v${PV}"
@@ -30,8 +35,6 @@ KEYWORDS="~amd64"
 
 IUSE="riscv32"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
-
-RESTRICT="strip"
 
 BDEPEND="app-arch/unzip"
 RDEPEND="
@@ -51,7 +54,10 @@ RDEPEND="
 	dev-embedded/esp-idf-size[${PYTHON_USEDEP}]
 	dev-embedded/freertos-gdb[${PYTHON_USEDEP}]
 	dev-embedded/idf-component-manager[${PYTHON_USEDEP}]
+	sys-libs/zlib
 "
+
+RESTRICT="strip"
 
 QA_PREBUILT="opt/* usr/lib* usr/share/esp-idf/*"
 QA_PRESTRIPPED="opt/*"
@@ -131,8 +137,12 @@ src_install() {
 	install_tool openocd-esp32
 
 	# Remove unsupported python versions
-	rm "${WORKDIR}"/xtensa-esp-elf-gdb/bin/xtensa-esp-elf-gdb-3.{6..10} || die
+	rm "${WORKDIR}"/xtensa-esp-elf-gdb/bin/xtensa-esp-elf-gdb-3.{8..10} || die
 	install_tool xtensa-esp-elf-gdb
+	if use riscv32; then
+		rm "${WORKDIR}"/riscv32-esp-elf-gdb/bin/xtensa-esp-elf-gdb-3.{8..10} || die
+		install_tool riscv32-esp-elf-gdb
+	fi
 
 	echo "IDF_PATH=/usr/share/${PN}" > 99esp-idf || die
 	doenvd 99esp-idf

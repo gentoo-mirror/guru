@@ -1,4 +1,4 @@
-# Copyright 2020-2021 Gentoo Authors
+# Copyright 2020-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -11,10 +11,15 @@ DESCRIPTION="FORT validator is an open source RPKI validator"
 HOMEPAGE="https://fortproject.net/validator?2"
 SRC_URI="https://github.com/NICMx/${PN}/releases/download/${PV}/fort-${PV}.tar.gz"
 
+S="${WORKDIR}/${MY_PN}-${PV}"
+
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="caps"
+IUSE="caps test"
+RESTRICT="!test? ( test )"
+
+PATCHES="${FILESDIR}"/${PN}-1.5.4-GCC14.patch
 
 DEPEND="
 	acct-group/fort
@@ -25,12 +30,11 @@ DEPEND="
 	dev-libs/openssl[rfc3779]
 	net-misc/curl
 "
-RDEPEND="
-	${DEPEND}
-	net-misc/rsync
+RDEPEND="${DEPEND}"
+BDEPEND="
+	virtual/pkgconfig
+	test? ( dev-libs/check )
 "
-
-S="${WORKDIR}/${MY_PN}-${PV}"
 
 src_prepare() {
 	default
@@ -45,7 +49,7 @@ src_install() {
 	newinitd "${FILESDIR}/${MY_PN}-1.5-initd" ${MY_PN}
 	newconfd "${FILESDIR}/${MY_PN}-1.5-confd" ${MY_PN}
 
-	emake DESTDIR="${ED}" install
+	emake DESTDIR="${D}" install
 	insinto /usr/share/${MY_PN}/
 	insopts -m0644 -o "${MY_PN}"
 	diropts -m0755 -o "${MY_PN}"
