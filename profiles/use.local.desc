@@ -90,6 +90,7 @@ dev-build/cargo-make:openssl - Enable TLS support with dev-libs/openssl
 dev-build/cargo-make:rustls - Enable TLS support with rustls
 dev-build/fpm:openmp - OpenMP support to build targets in parallel where possible
 dev-cpp/cpptoml:libcxx - Use libc++ for the C++ standard library
+dev-cpp/dpp:coro - Enable coroutine support
 dev-cpp/dpp:voice - Enable voice-chat support
 dev-cpp/drogon:brotli - Enable support for brotli compression
 dev-cpp/drogon:mariadb - Add support for the mariadb database
@@ -105,9 +106,6 @@ dev-cpp/xtensor:xsimd - Enable SIMD accelaration using dev-cpp/xsimd
 dev-dotnet/gtk-sharp:atk - Build the ATK bindings.
 dev-dotnet/gtk-sharp:gdk - Build the GDK bindings.
 dev-dotnet/gtk-sharp:pango - Build the Pango bindings.
-dev-embedded/esp-idf:esp32 - Enable support for esp32
-dev-embedded/esp-idf:esp32s2 - Enable support for esp32s2
-dev-embedded/esp-idf:esp32s3 - Enable support for esp32s3
 dev-embedded/esp-idf:riscv32 - Enable support for riscv32
 dev-embedded/rauc:gpt - Add GPT support
 dev-embedded/rauc:json - Add JSON support
@@ -408,7 +406,9 @@ media-libs/imgui:allegro5 - Enable allegro backend and renderer
 media-libs/imgui:glfw - Enable glfw backend
 media-libs/imgui:opengl - Enable opengl renderer
 media-libs/imgui:sdl2 - Enable SDL2 backend
-media-libs/imgui:sdl_renderer - Enable SDL renderer backend
+media-libs/imgui:sdl2-renderer - Enable SDL2 renderer backend
+media-libs/imgui:sdl3 - Enable SDL3 backend
+media-libs/imgui:sdl3-renderer - Enable SDL3 renderer backend
 media-libs/imgui:vulkan - Enable vulkan renderer
 media-libs/imgui:webgpu - Enable webgpu renderer backend
 media-libs/libbpg:bpgview - Compile bpgview (media-libs/libsdl and media-libs/sdl-image needed)

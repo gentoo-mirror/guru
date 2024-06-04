@@ -258,6 +258,7 @@ app-misc/onefetch 2.19.0 2.21.0: Command-line Git information tool
 app-misc/pfetch 0.6.0: A pretty system information tool written in POSIX sh
 app-misc/pipes-rs 1.6.3: An over-engineered rewrite of pipes.sh in Rust
 app-misc/powerpanel 1.4.1-r1: PowerPanel software for CyberPower UPS systems
+app-misc/proctl 9999: small C program that can control processes
 app-misc/pueue 3.3.2 3.3.3 3.4.0: A cli tool for managing long running shell commands.
 app-misc/rememberthemilk 1.3.11-r1: Freemium simple to-do tasks manager
 app-misc/s6-man 9999: mdoc versions of the HTML documentation for the s6 supervision suite
@@ -381,7 +382,7 @@ dev-cpp/cpp-jwt 1.5_pre20220727: JSON Web Token library for C++
 dev-cpp/cpprestsdk 2.10.19-r3: A Microsoft project for cloud-based client-server communication.
 dev-cpp/cpptoml 0.1.1: Header-only library for parsing TOML
 dev-cpp/cpptrace 0.5.2 0.5.2-r1: Simple, portable, and self-contained stacktrace library for C++
-dev-cpp/dpp 10.0.23 10.0.24 10.0.25 10.0.29: Lightweight C++ Discord bot library
+dev-cpp/dpp 10.0.23 10.0.24 10.0.25 10.0.29 10.0.30: Lightweight C++ Discord bot library
 dev-cpp/drogon 1.9.3 1.9.4: C++14/17 based HTTP web application framework
 dev-cpp/fast_float 6.1.1: Fast and exact implementation of the C++ from_chars functions for number types
 dev-cpp/fbthrift 2023.02.06.00 2023.06.19.00: Facebook's branch of Apache Thrift, including a new C++ server
@@ -448,7 +449,7 @@ dev-dotnet/gtk-sharp 2.99.3-r3 3.22.2-r2: gtk bindings for mono
 dev-elixir/hex 1.0.1-r1: Package manager for the Erlang VM
 dev-embedded/arduino-cli 0.34.2 0.35.2: Next-generation arduino command line tool
 dev-embedded/esp-coredump 1.7.0 1.10.0: Utility that helps users to retrieve and analyse core dumps
-dev-embedded/esp-idf 5.2 5.2.1: Espressif IoT Development Framework
+dev-embedded/esp-idf 5.2.1 5.2.2: Espressif IoT Development Framework
 dev-embedded/esp-idf-kconfig 1.4.1 2.1.0: Kconfig tooling for esp-idf
 dev-embedded/esp-idf-monitor 1.3.3 1.4.0: Python object-oriented database
 dev-embedded/esp-idf-panic-decoder 0.2.0 1.0.1: Parses ESP-IDF panic handler output acts as a GDB server over stdin/stdout
@@ -537,7 +538,7 @@ dev-libs/octetos-db 1.3.2_alpha 1.3.3_alpha: C++ library for Database Acces.
 dev-libs/octetos-db-abstract 0.1.2_alpha 0.6.0_alpha: API to access database, abstract component.
 dev-libs/octetos-db-maria 1.4.2_alpha 1.9.2_alpha 9999: C++ library for Database Acces.
 dev-libs/octetos-db-postgresql 1.3.9_alpha 1.3.10_alpha: C++ library for Database Acces.
-dev-libs/open62541 1.4.0: Open source C implementation of OPC UA
+dev-libs/open62541 1.4.1: Open source C implementation of OPC UA
 dev-libs/polyseed 1.0.0 2.0.0 9999: Mnemonic seed library for Monero and other CryptoNote-based currencies.
 dev-libs/properties-cpp 0.0.2: Simple convenience library for handling properties and signals in C++11
 dev-libs/qhttpengine 1.0.1-r1 9999: HTTP server for Qt applications
@@ -637,7 +638,7 @@ dev-python/desktop-notifier 4.0.0: desktop-notifier is a Python library for cros
 dev-python/devtools 0.10.0-r1: Dev tools for python
 dev-python/digitalocean 1.17.0-r1: Digitalocean API access library
 dev-python/doxypypy 0.8.8.6_p20210405-r1: A more Pythonic version of doxypy, a Doxygen filter for Python
-dev-python/dropbox 11.36.2 12.0.0: The offical Dropbox SDK for Python
+dev-python/dropbox 11.36.2 12.0.2: The offical Dropbox SDK for Python
 dev-python/dtreeviz 2.2.2: A python library for decision tree visualization and model interpretation
 dev-python/evernote2 9999: Unofficial Evernote SDK for Python 3
 dev-python/exif 1.6.0: Read and modify image EXIF metadata using Python.
@@ -975,6 +976,7 @@ games-rpg/sacred-demo 1.0.0: Like Diablo, isometric view, good rating, about a t
 games-rpg/snoot-game 1.10.0: Visual novel parody of Goodbye Volcano High
 games-server/among-sus 20210519: Among Us, but it's a text adventure
 games-strategy/general 4.6: Turn-based, old style with minimum graphic, full game, 5 MB size
+games-strategy/gigalomania 1.0.1: Libre clone of Mega-Lo-Mania (original from ~1990), supports original resources
 games-strategy/ground-control 1011: RTS from 2000 by Massive Entertainment, without resources and buildings
 games-strategy/massive-assault-network-ii 2.0.270: Turn-based, sci-fi, like a chess, from 2006, any screen resolution, good rating
 games-strategy/swine 1: Fun RTS from 2001 by Hungarian developer StormRegion, similar to Ground Control
@@ -988,7 +990,7 @@ games-util/hid-nintendo 9999: A Nintendo HID kernel module
 games-util/itch-bin 25.5.1-r2: itch.io game browser, installer and launcher
 games-util/legendary 0.20.33 0.20.34: A free and open-source replacement for the Epic Games Launcher
 games-util/libtess2 1.0.3: Game and tools oriented refactored version of GLU tesselator
-games-util/mangohud 0.7.1-r6 9999: Vulkan and OpenGL overlay for monitoring FPS, sensors, system load and more
+games-util/mangohud 0.7.2 9999: Vulkan and OpenGL overlay for monitoring FPS, sensors, system load and more
 games-util/minigalaxy 1.2.6: A simple GOG client for Linux
 games-util/pegasus 9999: Graphical frontend for browsing your game library
 games-util/protonup 0.1.5 9999: Install and Update Proton-GE
@@ -1073,7 +1075,7 @@ gui-apps/rofi-wayland 1.7.5 1.7.5-r1: A window switcher, run dialog and dmenu re
 gui-apps/satty 0.12.0 9999: A screenshot annotation tool inspired by Swappy and Flameshot.
 gui-apps/sddm-conf 0.2.0: SDDM configuration editor
 gui-apps/sfwbar 1.0_beta12 1.0_beta13 1.0_beta14: S* Floating Window Bar
-gui-apps/showmethekey 1.11.1 1.12.0: Show keys you typed on screen.
+gui-apps/showmethekey 1.12.0: Show keys you typed on screen.
 gui-apps/somebar 1.0.0 1.0.3 9999: dwm-like bar for dwl
 gui-apps/someblocks 1.0.0 1.0.1 9999: Modular status bar for somebar written in c.
 gui-apps/sway-audio-idle-inhibit 9999: Prevents swayidle from idle when an application is outputting or receiving audio
@@ -1186,7 +1188,7 @@ media-libs/dr_wav 0.13.16-r1: Single-header WAV audio loader and writer library
 media-libs/gl4es 9999: OpenGL 2.1/1.5 to GL ES 2.0/1.1 translation library
 media-libs/glee 5.4.0 5.4.0-r1: OpenGL Easy Extension library
 media-libs/grok 11.0.0: World's Leading Open Source JPEG 2000 Codec
-media-libs/imgui 1.89.9-r1 1.90.7: Bloat-free graphical user interface library for C++
+media-libs/imgui 1.89.9-r3 1.90.7-r2: Bloat-free graphical user interface library for C++
 media-libs/implot 0.16-r2: Immediate Mode Plotting
 media-libs/libbpg 0.9.8-r1: Better Portable Graphics reference implementation
 media-libs/monado 9999: The open source OpenXR runtime.
@@ -1361,7 +1363,7 @@ net-libs/yder 1.4.20-r1: Logging library for C applications
 net-mail/dovecot-fts-xapian 1.5.9 1.7.6 1.7.9 1.7.10 1.7.11 1.7.12 9999: Dovecot FTS plugin backed by Xapian
 net-mail/hydroxide 0.2.23 0.2.24 0.2.26 0.2.27 0.2.28 9999: A third-party, open-source ProtonMail CardDAV, IMAP and SMTP bridge
 net-mail/pop 0.2.0: Send emails from your terminal
-net-misc/FORT-validator 1.5.4 1.6.1 1.6.2: FORT validator is an open source RPKI validator
+net-misc/FORT-validator 1.5.4-r1 1.6.1-r1 1.6.2-r1: FORT validator is an open source RPKI validator
 net-misc/can-utils 2021.08.0 2023.03 9999-r3: CAN userspace utilities and tools
 net-misc/clatd 1.6: A CLAT / SIIT-DC Edge Relay implementation for Linux
 net-misc/commons-downloader 9999: A shell script to bulk download files from Wikimedia Commons, by category
@@ -1385,7 +1387,7 @@ net-misc/lyrics-in-terminal 1.5.0: Command Line Lyrics fetcher for MPRIS media p
 net-misc/maestral 1.9.3-r1: Maestral is an open-source Dropbox client written in Python
 net-misc/maestral-qt 1.9.3: Maestral is an open-source Dropbox client written in Python
 net-misc/mastorss 0.13.0 0.13.1 9999: Another RSS to Mastodon bot
-net-misc/megasync 5.2.1.0 9999: The official Qt-based program for syncing your MEGA account in your PC
+net-misc/megasync 5.2.1.0-r1 9999: The official Qt-based program for syncing your MEGA account in your PC
 net-misc/myip 1.2.1: Get your external IP address using STUN server
 net-misc/ooni-probe-cli 3.18.0 3.18.1: OONI Probe network measurement tool for detecting internet censorship
 net-misc/openbgpd 6.9_p0 8.4 9999: OpenBGPD is a free implementation of BGPv4
@@ -1424,7 +1426,7 @@ net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
 net-p2p/yggdrasil-go 0.5.5 9999: An experiment in scalable routing as an encrypted IPv6 overlay network
 net-print/hpuld 1.00.39.15.00.23-r1: HP Unified Linux Driver (for samsung hardware)
 net-proxy/MTProxy 3.0.4-r1: Community fork of MTProxy
-net-proxy/ngrok-bin 3.0.0: ngrok is a reverse proxy, firewall, and API gateway
+net-proxy/ngrok-bin 3.10.0: ngrok is a reverse proxy, firewall, and API gateway
 net-proxy/snowflake 2.8.1 2.9.2: Pluggable Transport using WebRTC, inspired by Flashproxy
 net-voip/baresip 3.7.0 3.8.0 3.9.0 3.10.0 3.10.1 3.11.0: Baresip is a portable and modular SIP User-Agent
 net-voip/discover-overlay 0.6.9-r1 0.7.4: Yet another Discord overlay for Linux written in Python using GTK3
@@ -1459,7 +1461,7 @@ sci-electronics/coil64 2.1.27: Coil64 is inductance coil calculator
 sci-electronics/dsview 1.2.1 1.3.0 9999: An open source multi-function instrument
 sci-electronics/kactus2 3.12.0 3.13.0 3.13.1 9999: A open source IP-XACT-based tool
 sci-electronics/liblxi 1.16 1.18: Implementation of the LAN eXtensions for Instrumentation (LXI)
-sci-electronics/logic-bin 2.4.9 2.4.14: Saleae logic analyzer
+sci-electronics/logic-bin 2.4.14: Saleae logic analyzer
 sci-electronics/lxi-tools 2.1 2.3: Tools to access devices with LXI
 sci-electronics/open_pdks 1.0.311: PDK installer for open-source EDA tools and toolchains
 sci-electronics/skywater-pdk 0.0.0_p20220424: Process design kit for usage with SkyWater Technology Foundry's 130nm node
@@ -1559,8 +1561,8 @@ sys-fs/btrfs-heatmap 9-r1: Python 3 script to draw a heatmap of a btrfs filesyst
 sys-fs/ddrescueview 0.4.5: Graphical viewer for GNU ddrescue mapfiles
 sys-fs/diskonaut 0.10.0 0.11.0 9999: Terminal disk space visual navigator
 sys-fs/dua-cli 2.25.0 2.28.0 2.29.0: A tool to conveniently learn about the disk usage of directories, fast!
-sys-fs/dwarfs 0.9.6 0.9.9: A fast very high compression read-only FUSE file system
-sys-fs/dwarfs-bin 0.9.9: Static version of a fast very high compression read-only FUSE file system
+sys-fs/dwarfs 0.9.9 0.9.10: A fast very high compression read-only FUSE file system
+sys-fs/dwarfs-bin 0.9.10: Static version of a fast very high compression read-only FUSE file system
 sys-fs/fstransform 0.9.4: Tool for in-place filesystem conversion
 sys-fs/gcsfuse 1.2.0: A user-space file system for interacting with Google Cloud Storage
 sys-fs/gdu 5.14.0 5.25.0: Disk usage analyzer with console interface written in Go
@@ -1572,7 +1574,7 @@ sys-fs/ufiformat 0.9.9: USB Floppy Disk formatting tool
 sys-fs/zfs-auto-utils 1.0.0: ZFS Automatic Scrub/Trim for Linux
 sys-kernel/dpdk-kmod 23.03: DPDK Kernel Nic Interface module
 sys-kernel/uek-sources 5.15.0.206.149.1 5.15.0.206.153.6 5.15.0.206.153.7: Unbreakable Enterprise Kernel (UEK) sources built from Oracle
-sys-kernel/ugrd 1.2.2 1.3.8 1.4.0 1.4.2 1.5.1 1.6.0 1.7.1 1.8.4 1.11.1 9999: Python based initramfs generator with TOML defintions
+sys-kernel/ugrd 1.2.2 1.3.8 1.4.0 1.4.2 1.5.1 1.6.0 1.7.1 1.8.4 1.11.2 9999: Python based initramfs generator with TOML defintions
 sys-kernel/usermode-kernel 6.0.12: Linux kernel built with Gentoo patches
 sys-kernel/xow 0.5: Linux driver for the Xbox One wireless dongle
 sys-kernel/zenpower3 0.2.0: Linux kernel driver for reading sensors of AMD Zen family CPUs
