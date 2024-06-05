@@ -603,7 +603,7 @@ dev-python/autoflake 2.3.1: Removes unused imports and unused variables from Pyt
 dev-python/avro 1.11.3: Apache Avro is a data serialization system
 dev-python/azure-core 1.27.1 1.28.0: Microsoft Azure Core Library for Python
 dev-python/azure-storage-blob 12.16.0 12.17.0: Microsoft Azure Blob Storage Client Library for Python
-dev-python/b2sdk 1.21.0 2.0.0-r1 2.3.0: The client library for BackBlaze's B2 product
+dev-python/b2sdk 2.0.0-r1 2.3.0: The client library for BackBlaze's B2 product
 dev-python/baron 0.9: Full Syntax Tree for python to make writing refactoring code a realist task
 dev-python/base58 2.1.1-r1: Base58 and Base58Check implementation
 dev-python/betamax-serializers 0.2.1: A set of third-party serializers for Betamax
@@ -662,6 +662,8 @@ dev-python/guidata 3.3.0 3.5.0: Library for user interfaces for easy dataset edi
 dev-python/guiqwt 4.4.5-r1: Efficient 2D plotting Python library based on PythonQwt
 dev-python/guppy3 3.1.3-r1 3.1.4: A Python Programming Environment & Heap analysis toolset
 dev-python/hachoir 3.3.0: Hachoir is a Python library to view and edit a binary stream field by field
+dev-python/hid_ups 1.0.1: Python-based library for interpreting UPS HID data.
+dev-python/hid_ups_exporter 1.0.1: Python-based library for exporting HID UPS data as metrics for Prometheus.
 dev-python/hijridate 2.4.1: Accurate Hijri-Gregorian date converter based on the Umm al-Qura calendar
 dev-python/http-ece 1.1.0 1.2.0: Encrypted Content Encoding for HTTP
 dev-python/hunter 3.6.1: Hunter is a flexible code tracing toolkit
@@ -725,6 +727,7 @@ dev-python/podman-compose 1.0.6: A script to run docker-compose.yml using Podman
 dev-python/portion 2.4.1 2.4.2: A Python library providing data structure and operations for intervals.
 dev-python/praw 7.6.1 7.7.0: Python Reddit API Wrapper
 dev-python/prawcore 2.3.0: Low-level communication layer for PRAW
+dev-python/prometheus_exporter 1.0.0: Python Prometheus exporter library
 dev-python/proselint 0.13.0: A linter for prose
 dev-python/protego 0.3.0: Pure-Python robots.txt parser with support for modern conventions
 dev-python/proxy_tools 0.1.0_p1: Simple proxy (as in the GoF design pattern)
@@ -880,7 +883,7 @@ dev-util/fortls 2.13.0 3.0.0: Fortran Language Server (fortls)
 dev-util/fortran-test-drive 0.4.0: The simple testing framework (for Fortran)
 dev-util/gammaray 2.11.3: High-level runtime introspection tool for Qt applications
 dev-util/git-bug 0.8.0 9999: distributed, offline-first bug tracker
-dev-util/gitlab-ci-local-bin 4.42.0 4.43.0: Run gitlab pipelines locally as shell executor or docker executor
+dev-util/gitlab-ci-local-bin 4.43.0 4.47.0: Run gitlab pipelines locally as shell executor or docker executor
 dev-util/glsl-language-server 0.3.7: Language server implementation for GLSL
 dev-util/gshards 0.2: Small helper tools to aid installing Crystal packages in Gentoo
 dev-util/haredo 1.0.2 9999: a simple and unix-idiomatic build automator
@@ -1429,7 +1432,7 @@ net-print/hpuld 1.00.39.15.00.23-r1: HP Unified Linux Driver (for samsung hardwa
 net-proxy/MTProxy 3.0.4-r1: Community fork of MTProxy
 net-proxy/ngrok-bin 3.10.0: ngrok is a reverse proxy, firewall, and API gateway
 net-proxy/snowflake 2.8.1 2.9.2: Pluggable Transport using WebRTC, inspired by Flashproxy
-net-voip/baresip 3.7.0 3.8.0 3.9.0 3.10.0 3.10.1 3.11.0 3.12.1: Baresip is a portable and modular SIP User-Agent
+net-voip/baresip 3.7.0 3.8.0 3.9.0 3.10.0 3.10.1 3.11.0 3.12.1 3.12.1-r1: Baresip is a portable and modular SIP User-Agent
 net-voip/discover-overlay 0.6.9-r1 0.7.4: Yet another Discord overlay for Linux written in Python using GTK3
 net-voip/gnome-calls 44.2 45.0: Phone dialer and call handler
 net-voip/re 3.7.0-r1 3.8.0-r1 3.9.0-r1 3.10.0-r1 3.11.0-r1 3.12.0: Generic library for real-time communications with async IO support
@@ -1562,7 +1565,7 @@ sys-fs/btrfs-heatmap 9-r1: Python 3 script to draw a heatmap of a btrfs filesyst
 sys-fs/ddrescueview 0.4.5: Graphical viewer for GNU ddrescue mapfiles
 sys-fs/diskonaut 0.10.0 0.11.0 9999: Terminal disk space visual navigator
 sys-fs/dua-cli 2.25.0 2.28.0 2.29.0: A tool to conveniently learn about the disk usage of directories, fast!
-sys-fs/dwarfs 0.9.9 0.9.10: A fast very high compression read-only FUSE file system
+sys-fs/dwarfs 0.9.9 0.9.10-r1: A fast very high compression read-only FUSE file system
 sys-fs/dwarfs-bin 0.9.10: Static version of a fast very high compression read-only FUSE file system
 sys-fs/fstransform 0.9.4: Tool for in-place filesystem conversion
 sys-fs/gcsfuse 1.2.0: A user-space file system for interacting with Google Cloud Storage
@@ -1683,8 +1686,8 @@ x11-themes/bibata-xcursors 2.0.2 2.0.3: Opensource, compact, and material-design
 x11-themes/blackandwhite-gtk 9999: GTK-3 theme: simple black-and-white, minimalistic
 x11-themes/breezex-xcursors 2.0.0: Cursor set highly inspired on KDE Breeze with HiDPi Support
 x11-themes/catppuccin-btop 1.0.0: Soothing pastel theme for btop
-x11-themes/catppuccin-cursors 0.2.0 0.2.1: Soothing pastel mouse cursors
-x11-themes/catppuccin-gtk 0.7.4 1.0.2: Soothing pastel theme for GTK
+x11-themes/catppuccin-cursors 0.2.1 0.3.0: Soothing pastel mouse cursors
+x11-themes/catppuccin-gtk 1.0.2 1.0.3: Soothing pastel theme for GTK
 x11-themes/catppuccin-kvantum 9999: Soothing pastel theme for Kvantum
 x11-themes/flat-remix-gtk 9999: Black flat with a colorful palette, some shadows, highlights, gradients
 x11-themes/hackerer 9999: GTK-3 theme: black background, green font
