@@ -372,7 +372,7 @@ dev-build/FoBiS 3.0.5-r1: FoBiS.py, a Fortran Building System for poor men
 dev-build/cargo-make 0.37.12: Rust task runner and build tool
 dev-build/fpm 0.9.0 0.10.0: Fortran Package Manager (fpm)
 dev-build/fypp 3.1 3.2: Fypp - Python powered Fortran preprocessor
-dev-build/just 1.26.0 1.27.0: Just a command runner (with syntax inspired by 'make')
+dev-build/just 1.27.0 1.28.0: Just a command runner (with syntax inspired by 'make')
 dev-build/pdpmake 1.4.2: Public domain POSIX make
 dev-build/qtilitools 0.1.2: Scripts/commands used in the Qtilities organization
 dev-build/xmake 2.8.9 9999: A cross-platform build utility based on Lua
@@ -679,6 +679,7 @@ dev-python/itemloaders 1.1.0: Library to populate items using XPath and CSS with
 dev-python/iuliia 0.11.5: Transliterate Cyrillic to Latin in every possible way
 dev-python/jinja2-cli 0.8.2: CLI for Jinja2
 dev-python/jplephem 2.21: Python version of NASA DE4xx ephemerides for Astronomical Alamanac
+dev-python/json_exporter 1.0.2: Python-based library for exporting JSON data as metrics for Prometheus.
 dev-python/jsonfeed 1.1.2: Python package for parsing and generating JSON feeds.
 dev-python/jsonlines 4.0.0: Library with helpers for the jsonlines file format
 dev-python/jsonpath-rw 1.4.0-r1: A robust and significantly extended implementation of JSONPath for Python
@@ -1224,7 +1225,7 @@ media-sound/hushboard 0.0_pre20220518 9999: Mutes your microphone while you are 
 media-sound/ibniz 1.18-r1: virtual machine designed for extremely compact low-level audiovisual programs
 media-sound/jacktrip 1.7.1-r1: Send JACK audio over a network
 media-sound/jriver 31.0.83: A cross-platform media center, famous for high quality of audio.
-media-sound/kew 2.4.4: kew (/kjuː/) is a command-line music player for Linux.
+media-sound/kew 2.4.4-r1: kew (/kjuː/) is a command-line music player for Linux.
 media-sound/lms 3.52.0 3.53.0: Lightweight Music Server.
 media-sound/loudgain 0.6.8-r1: Versatile ReplayGain 2.0 loudness normalizer
 media-sound/mopidy 3.4.2: An extensible music server written in Python.
@@ -1367,7 +1368,7 @@ net-libs/yder 1.4.20-r1: Logging library for C applications
 net-mail/dovecot-fts-xapian 1.5.9 1.7.6 1.7.9 1.7.10 1.7.11 1.7.12 9999: Dovecot FTS plugin backed by Xapian
 net-mail/hydroxide 0.2.23 0.2.24 0.2.26 0.2.27 0.2.28 9999: A third-party, open-source ProtonMail CardDAV, IMAP and SMTP bridge
 net-mail/pop 0.2.0: Send emails from your terminal
-net-misc/FORT-validator 1.5.4-r1 1.6.1-r1 1.6.2-r1: FORT validator is an open source RPKI validator
+net-misc/FORT-validator 1.5.4-r2 1.6.1-r2 1.6.2-r2: FORT validator is an open source RPKI validator
 net-misc/can-utils 2021.08.0 2023.03 9999-r3: CAN userspace utilities and tools
 net-misc/clatd 1.6: A CLAT / SIIT-DC Edge Relay implementation for Linux
 net-misc/commons-downloader 9999: A shell script to bulk download files from Wikimedia Commons, by category
@@ -1432,11 +1433,11 @@ net-print/hpuld 1.00.39.15.00.23-r1: HP Unified Linux Driver (for samsung hardwa
 net-proxy/MTProxy 3.0.4-r1: Community fork of MTProxy
 net-proxy/ngrok-bin 3.10.0: ngrok is a reverse proxy, firewall, and API gateway
 net-proxy/snowflake 2.8.1 2.9.2: Pluggable Transport using WebRTC, inspired by Flashproxy
-net-voip/baresip 3.7.0 3.8.0 3.9.0 3.10.0 3.10.1 3.11.0 3.12.1 3.12.1-r1: Baresip is a portable and modular SIP User-Agent
+net-voip/baresip 3.7.0 3.8.0 3.9.0 3.10.0 3.10.1 3.11.0 3.11.0-r1 3.12.1 3.12.1-r1: Baresip is a portable and modular SIP User-Agent
 net-voip/discover-overlay 0.6.9-r1 0.7.4: Yet another Discord overlay for Linux written in Python using GTK3
 net-voip/gnome-calls 44.2 45.0: Phone dialer and call handler
 net-voip/re 3.7.0-r1 3.8.0-r1 3.9.0-r1 3.10.0-r1 3.11.0-r1 3.12.0: Generic library for real-time communications with async IO support
-net-voip/vvmd 0.8: vvmd is a lower level daemon that retrieves Visual Voicemail
+net-voip/vvmd 0.8-r1: vvmd is a lower level daemon that retrieves Visual Voicemail
 net-vpn/candy 5.8.6: A reliable, low-latency, and anti-censorship virtual private network
 net-vpn/cloudflare-warp 2024.2.62-r2 2024.4.133-r1: Cloudflare Warp Client
 net-vpn/fastd 22: A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
@@ -1688,7 +1689,7 @@ x11-themes/breezex-xcursors 2.0.0: Cursor set highly inspired on KDE Breeze with
 x11-themes/catppuccin-btop 1.0.0: Soothing pastel theme for btop
 x11-themes/catppuccin-cursors 0.2.1 0.3.0: Soothing pastel mouse cursors
 x11-themes/catppuccin-gtk 1.0.2 1.0.3: Soothing pastel theme for GTK
-x11-themes/catppuccin-kvantum 9999: Soothing pastel theme for Kvantum
+x11-themes/catppuccin-kvantum 0_pre20220927 9999: Soothing pastel theme for Kvantum
 x11-themes/flat-remix-gtk 9999: Black flat with a colorful palette, some shadows, highlights, gradients
 x11-themes/hackerer 9999: GTK-3 theme: black background, green font
 x11-themes/juno 9999: GTK-3 themes: dark, inspired by epic vscode themes
