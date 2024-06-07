@@ -61,7 +61,7 @@ src_install() {
 
 	domenu "${FILESDIR}/sioyek.desktop"
 	doicon resources/sioyek-icon-linux.png
-	insinto /usr/share/sioyek && doins tutorial.pdf pdf_viewer/keys.config pdf_viewer/prefs.config
+	insinto /opt/sioyek && doins tutorial.pdf pdf_viewer/keys.config pdf_viewer/prefs.config
 	doman resources/sioyek.1
 }
 
