@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
-inherit autotools gnome2
+inherit cmake gnome2
 
 DESCRIPTION="A newsreader for GNOME"
 HOMEPAGE="https://gitlab.gnome.org/GNOME/pan/"
@@ -11,8 +11,9 @@ S="${WORKDIR}/pan-v${PV}"
 
 LICENSE="GPL-2"
 SLOT="0"
+
 KEYWORDS="~amd64 ~arm64 ~x86"
-IUSE="dbus gnome-keyring libnotify nls spell ssl"
+IUSE="dbus gnome-keyring libnotify spell ssl"
 
 DEPEND="
 	>=dev-libs/glib-2.26:2
@@ -28,6 +29,9 @@ DEPEND="
 		>=app-text/gtkspell-3.0.10:3 )
 	ssl? ( >=net-libs/gnutls-3:0= )
 	>=sys-libs/zlib-1.2.0
+	x11-libs/cairo
+	x11-libs/gdk-pixbuf
+	x11-libs/pango
 "
 RDEPEND="${DEPEND}"
 BDEPEND="
@@ -37,19 +41,31 @@ BDEPEND="
 "
 
 src_prepare() {
-	default
-	eautoreconf
+	cmake_src_prepare
 }
 
 src_configure() {
-	local myconf=(
-		$(use_with dbus) \
-		$(use_enable gnome-keyring gkr) \
-		$(use_enable nls) \
-		$(use_with spell gtkspell) \
-		$(use_enable libnotify) \
-		$(use_with ssl gnutls)
+	local mycmakeargs=(
+		-DWANT_DBUS=$(usex dbus) \
+		-DWANT_GKR=$(usex gnome-keyring) \
+		-DWANT_GTKSPELL=$(usex spell) \
+		-DWANT_NOTIFY=$(usex libnotify) \
+		-DWANT_GNUTLS=$(usex ssl)
 	)
 
-	gnome2_src_configure "${myconf[@]}"
+	cmake_src_configure
+}
+
+src_install() {
+	cmake_src_install
+
+	# Since cmake apparently doesn't include the below automatically
+	local build_dir="${S%/*}/pan-v${PV}_build"
+	dolib.so "${build_dir}/pan/data/libdata.so"
+	dolib.so "${build_dir}/pan/data-impl/libdata-impl.so"
+	dolib.so "${build_dir}/pan/general/libgeneralutils.so"
+	dolib.so "${build_dir}/pan/tasks/libtasks.so"
+	dolib.so "${build_dir}/pan/usenet-utils/libusenet-utils.so"
+
+
 }

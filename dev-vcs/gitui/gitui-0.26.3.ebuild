@@ -21,7 +21,7 @@ CRATES="
 	anstyle-query@1.0.3
 	anstyle-wincon@3.0.3
 	anstyle@1.0.7
-	anyhow@1.0.83
+	anyhow@1.0.86
 	autocfg@1.3.0
 	backtrace@0.3.71
 	base16ct@0.2.0
@@ -44,7 +44,7 @@ CRATES="
 	cassowary@0.3.0
 	castaway@0.2.2
 	cbc@0.1.2
-	cc@1.0.97
+	cc@1.0.98
 	cfg-if@1.0.0
 	chacha20@0.9.1
 	chrono@0.4.38
@@ -57,11 +57,11 @@ CRATES="
 	const-oid@0.9.6
 	core-foundation-sys@0.8.6
 	cpufeatures@0.2.12
-	crc32fast@1.4.0
-	crossbeam-channel@0.5.12
+	crc32fast@1.4.2
+	crossbeam-channel@0.5.13
 	crossbeam-deque@0.8.5
 	crossbeam-epoch@0.9.18
-	crossbeam-utils@0.8.19
+	crossbeam-utils@0.8.20
 	crossterm@0.27.0
 	crossterm_winapi@0.9.1
 	crypto-bigint@0.5.5
@@ -79,7 +79,7 @@ CRATES="
 	ecdsa@0.16.9
 	ed25519-dalek@2.1.1
 	ed25519@2.2.3
-	either@1.11.0
+	either@1.12.0
 	elliptic-curve@0.13.8
 	env_filter@0.1.0
 	env_logger@0.11.3
@@ -121,7 +121,6 @@ CRATES="
 	iana-time-zone@0.1.60
 	idna@0.5.0
 	indexmap@2.2.6
-	indoc@2.0.5
 	inotify-sys@0.1.5
 	inotify@0.9.6
 	inout@0.1.3
@@ -133,18 +132,18 @@ CRATES="
 	kqueue-sys@1.0.4
 	kqueue@1.0.8
 	lazy_static@1.4.0
-	libc@0.2.154
+	libc@0.2.155
 	libgit2-sys@0.16.2+1.7.2
 	libm@0.2.8
 	libredox@0.1.3
 	libssh2-sys@0.3.0
 	libz-sys@1.1.16
-	linux-raw-sys@0.4.13
+	linux-raw-sys@0.4.14
 	lock_api@0.4.12
 	log@0.4.21
 	lru@0.12.3
 	memchr@2.7.2
-	miniz_oxide@0.7.2
+	miniz_oxide@0.7.3
 	mio@0.8.11
 	notify-debouncer-mini@0.4.1
 	notify@6.1.1
@@ -185,12 +184,12 @@ CRATES="
 	ppv-lite86@0.2.17
 	pretty_assertions@1.4.0
 	primeorder@0.13.6
-	proc-macro2@1.0.82
+	proc-macro2@1.0.83
 	quote@1.0.36
 	rand@0.8.5
 	rand_chacha@0.3.1
 	rand_core@0.6.4
-	ratatui@0.26.2
+	ratatui@0.26.3
 	rayon-core@1.12.1
 	rayon@1.10.0
 	redox_syscall@0.4.1
@@ -241,12 +240,12 @@ CRATES="
 	strum@0.26.2
 	strum_macros@0.26.2
 	subtle@2.5.0
-	syn@2.0.63
+	syn@2.0.65
 	syntect@5.2.0
 	sys-info@0.9.1
 	tempfile@3.10.1
-	thiserror-impl@1.0.60
-	thiserror@1.0.60
+	thiserror-impl@1.0.61
+	thiserror@1.0.61
 	thread_local@1.1.8
 	time-core@0.1.2
 	time-macros@0.2.18
