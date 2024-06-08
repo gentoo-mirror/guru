@@ -1,0 +1,13 @@
+DEFINED_PHASES=install postinst
+DESCRIPTION=dmenu based selection menu for chapters, tracks, playlist etc
+EAPI=8
+HOMEPAGE=https://codeberg.org/NRK/mpv-toolbox
+INHERIT=mpv-plugin
+IUSE=custom-cmd +autoload
+KEYWORDS=~amd64
+LICENSE=GPL-3+
+RDEPEND=>=media-video/mpv-0.36.0[lua] !custom-cmd? ( x11-misc/dmenu ) media-video/mpv:=
+SLOT=0
+SRC_URI=https://codeberg.org/NRK/mpv-toolbox/archive/20240215.tar.gz -> mdmenu-20240215.tar.gz
+_eclasses_=mpv-plugin	d5b74b0d4b9aa2b088badc969f11de7a
+_md5_=b410aa44857d221e936c700f835f3236
