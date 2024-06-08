@@ -21,6 +21,7 @@ CRATES="
 	arc-swap@1.6.0
 	async-broadcast@0.5.1
 	async-channel@1.9.0
+	async-channel@2.2.1
 	async-executor@1.5.1
 	async-fs@1.6.0
 	async-io@1.13.0
@@ -35,24 +36,25 @@ CRATES="
 	atomic_refcell@0.1.12
 	autocfg@1.1.0
 	backtrace@0.3.69
-	base64@0.21.4
+	base64@0.22.1
 	bitflags@1.3.2
-	bitflags@2.4.0
+	bitflags@2.5.0
 	block-buffer@0.10.4
 	block@0.1.6
 	blocking@1.4.1
 	bstr@1.7.0
 	bumpalo@3.14.0
+	bytemuck@1.16.0
 	byteorder@1.4.3
 	bytes@1.6.0
-	cairo-rs@0.18.2
-	cairo-sys-rs@0.18.2
+	cairo-rs@0.19.4
+	cairo-sys-rs@0.19.2
 	cc@1.0.83
 	cfg-expr@0.15.5
 	cfg-if@1.0.0
 	chrono-tz-build@0.2.1
 	chrono-tz@0.8.4
-	chrono@0.4.35
+	chrono@0.4.38
 	clap@4.4.8
 	clap_builder@4.4.8
 	clap_lex@0.6.0
@@ -60,14 +62,14 @@ CRATES="
 	cocoa@0.24.1
 	codemap@0.1.3
 	colorchoice@1.0.0
-	concurrent-queue@2.3.0
+	concurrent-queue@2.5.0
 	core-foundation-sys@0.8.6
 	core-foundation@0.9.4
 	core-graphics-types@0.1.3
 	core-graphics@0.22.3
 	cpufeatures@0.2.9
 	crc32fast@1.3.2
-	crossbeam-utils@0.8.16
+	crossbeam-utils@0.8.20
 	crypto-common@0.1.6
 	darling@0.20.6
 	darling_core@0.20.6
@@ -93,8 +95,10 @@ CRATES="
 	equivalent@1.0.1
 	errno-dragonfly@0.1.2
 	errno@0.3.4
+	event-listener-strategy@0.5.2
 	event-listener@2.5.3
 	event-listener@3.0.1
+	event-listener@5.3.0
 	fastrand@1.9.0
 	fastrand@2.0.1
 	field-offset@0.3.6
@@ -112,59 +116,60 @@ CRATES="
 	foreign-types@0.3.2
 	form_urlencoded@1.2.0
 	fragile@2.0.0
-	futures-channel@0.3.28
+	futures-channel@0.3.30
 	futures-core@0.3.30
-	futures-executor@0.3.28
-	futures-io@0.3.28
+	futures-executor@0.3.30
+	futures-io@0.3.30
 	futures-lite@1.13.0
-	futures-macro@0.3.28
-	futures-sink@0.3.28
-	futures-task@0.3.28
-	futures-util@0.3.28
-	futures@0.3.28
-	gdk-pixbuf-sys@0.18.0
-	gdk-pixbuf@0.18.0
-	gdk4-sys@0.7.2
-	gdk4-win32-sys@0.7.2
-	gdk4-win32@0.7.2
-	gdk4@0.7.3
+	futures-macro@0.3.30
+	futures-sink@0.3.30
+	futures-task@0.3.30
+	futures-util@0.3.30
+	futures@0.3.30
+	gdk-pixbuf-sys@0.19.5
+	gdk-pixbuf@0.19.2
+	gdk4-sys@0.8.2
+	gdk4-win32-sys@0.8.2
+	gdk4-win32@0.8.2
+	gdk4@0.8.2
 	generic-array@0.14.7
 	getrandom@0.2.10
 	gimli@0.28.0
-	gio-sys@0.18.1
-	gio@0.18.2
-	glib-macros@0.18.2
-	glib-sys@0.18.1
-	glib@0.18.2
+	gio-sys@0.19.5
+	gio@0.19.5
+	glib-macros@0.19.5
+	glib-sys@0.19.5
+	glib@0.19.5
 	globset@0.4.13
 	globwalk@0.8.1
-	gobject-sys@0.18.0
-	graphene-rs@0.18.1
-	graphene-sys@0.18.1
+	gobject-sys@0.19.5
+	graphene-rs@0.19.2
+	graphene-sys@0.19.5
 	grass@0.13.2
 	grass_compiler@0.13.2
-	gsk4-sys@0.7.3
-	gsk4@0.7.3
-	gst-plugin-gtk4@0.11.0
-	gst-plugin-version-helper@0.7.5
-	gstreamer-base-sys@0.21.0
-	gstreamer-base@0.21.0
-	gstreamer-gl-sys@0.21.0
-	gstreamer-gl@0.21.0
-	gstreamer-play-sys@0.21.0
-	gstreamer-play@0.21.0
-	gstreamer-sys@0.21.0
-	gstreamer-video-sys@0.21.0
-	gstreamer-video@0.21.0
-	gstreamer@0.21.0
-	gtk4-macros@0.7.2
-	gtk4-sys@0.7.3
-	gtk4@0.7.3
-	gvdb@0.5.2
+	gsk4-sys@0.8.2
+	gsk4@0.8.2
+	gst-plugin-gtk4@0.12.5
+	gst-plugin-version-helper@0.8.2
+	gstreamer-base-sys@0.22.0
+	gstreamer-base@0.22.0
+	gstreamer-gl-sys@0.22.0
+	gstreamer-gl@0.22.0
+	gstreamer-play-sys@0.22.0
+	gstreamer-play@0.22.0
+	gstreamer-sys@0.22.2
+	gstreamer-video-sys@0.22.1
+	gstreamer-video@0.22.4
+	gstreamer@0.22.4
+	gtk4-macros@0.8.2
+	gtk4-sys@0.8.2
+	gtk4@0.8.2
+	gvdb@0.5.3
 	h2@0.4.3
 	hashbrown@0.13.2
 	hashbrown@0.14.1
 	heck@0.4.1
+	heck@0.5.0
 	hermit-abi@0.3.3
 	hex@0.4.3
 	http-body-util@0.1.1
@@ -181,20 +186,21 @@ CRATES="
 	ident_case@1.0.1
 	idna@0.4.0
 	ignore@0.4.20
+	image@0.25.1
 	indexmap@2.0.2
 	instant@0.1.12
 	intl-memoizer@0.5.1
 	intl_pluralrules@7.0.2
 	io-lifetimes@1.0.11
 	ipnet@2.8.0
-	itertools@0.11.0
+	itertools@0.12.1
 	itoa@1.0.9
-	jellyfin_api@10.8.13-2
+	jellyfin_api@10.9.2-1
 	js-sys@0.3.64
 	lasso@0.7.2
 	lazy_static@1.4.0
-	libadwaita-sys@0.5.3
-	libadwaita@0.5.3
+	libadwaita-sys@0.6.0
+	libadwaita@0.6.0
 	libc@0.2.153
 	libm@0.2.8
 	linux-raw-sys@0.3.8
@@ -202,7 +208,7 @@ CRATES="
 	lock_api@0.4.10
 	log@0.4.21
 	malloc_buf@0.0.6
-	memchr@2.6.4
+	memchr@2.7.2
 	memoffset@0.7.1
 	memoffset@0.9.0
 	mime@0.3.17
@@ -218,7 +224,7 @@ CRATES="
 	num_cpus@1.16.0
 	objc@0.2.7
 	object@0.32.1
-	once_cell@1.18.0
+	once_cell@1.19.0
 	openssl-macros@0.1.1
 	openssl-probe@0.1.5
 	openssl-sys@0.9.101
@@ -226,8 +232,8 @@ CRATES="
 	option-ext@0.2.0
 	option-operations@0.5.0
 	ordered-stream@0.2.0
-	pango-sys@0.18.0
-	pango@0.18.0
+	pango-sys@0.19.5
+	pango@0.19.5
 	parking@2.2.0
 	parse-zoneinfo@0.3.0
 	paste@1.0.14
@@ -246,19 +252,17 @@ CRATES="
 	pin-project@1.1.5
 	pin-utils@0.1.0
 	piper@0.2.1
-	pkg-config@0.3.27
+	pkg-config@0.3.30
 	polling@2.8.0
 	polling@3.3.0
 	pollster@0.3.0
 	ppv-lite86@0.2.17
-	pretty-hex@0.3.0
 	pretty_assertions@1.4.0
 	proc-macro-crate@1.3.1
-	proc-macro-error-attr@1.0.4
-	proc-macro-error@1.0.4
+	proc-macro-crate@3.1.0
 	proc-macro-hack@0.5.20+deprecated
 	proc-macro2@1.0.78
-	quick-xml@0.30.0
+	quick-xml@0.31.0
 	quote@1.0.35
 	rand@0.8.5
 	rand_chacha@0.3.1
@@ -270,16 +274,17 @@ CRATES="
 	regex-automata@0.4.5
 	regex-syntax@0.8.2
 	regex@1.10.4
-	relm4-icons@0.7.0-alpha.2
-	relm4-macros@0.7.0-rc.1
-	relm4@0.7.0-rc.1
-	reqwest@0.12.2
+	relm4-icons@0.8.2
+	relm4-macros@0.8.1
+	relm4@0.8.1
+	reqwest@0.12.4
 	rustc-demangle@0.1.23
 	rustc-hash@1.1.0
 	rustc_version@0.4.0
 	rustix@0.37.27
 	rustix@0.38.15
-	rustls-pemfile@1.0.4
+	rustls-pemfile@2.1.2
+	rustls-pki-types@1.7.0
 	ryu@1.0.15
 	safe-transmute@0.11.2
 	same-file@1.0.6
@@ -290,9 +295,9 @@ CRATES="
 	self_cell@0.10.3
 	self_cell@1.0.3
 	semver@1.0.19
-	serde@1.0.197
-	serde_derive@1.0.197
-	serde_json@1.0.115
+	serde@1.0.202
+	serde_derive@1.0.202
+	serde_json@1.0.117
 	serde_repr@0.1.18
 	serde_spanned@0.6.5
 	serde_urlencoded@0.7.1
@@ -335,6 +340,7 @@ CRATES="
 	toml@0.8.12
 	toml_datetime@0.6.5
 	toml_edit@0.19.15
+	toml_edit@0.21.1
 	toml_edit@0.22.9
 	tower-layer@0.3.2
 	tower-service@0.3.2
@@ -371,12 +377,12 @@ CRATES="
 	want@0.3.1
 	wasi@0.11.0+wasi-snapshot-preview1
 	wasite@0.1.0
-	wasm-bindgen-backend@0.2.87
+	wasm-bindgen-backend@0.2.92
 	wasm-bindgen-futures@0.4.37
-	wasm-bindgen-macro-support@0.2.87
-	wasm-bindgen-macro@0.2.87
-	wasm-bindgen-shared@0.2.87
-	wasm-bindgen@0.2.87
+	wasm-bindgen-macro-support@0.2.92
+	wasm-bindgen-macro@0.2.92
+	wasm-bindgen-shared@0.2.92
+	wasm-bindgen@0.2.92
 	wasm-streams@0.4.0
 	web-sys@0.3.64
 	whoami@1.5.1
@@ -385,6 +391,7 @@ CRATES="
 	winapi-x86_64-pc-windows-gnu@0.4.0
 	winapi@0.3.9
 	windows-sys@0.48.0
+	windows-sys@0.52.0
 	windows-targets@0.42.2
 	windows-targets@0.48.5
 	windows-targets@0.52.0
@@ -413,7 +420,7 @@ CRATES="
 	windows_x86_64_msvc@0.52.0
 	winnow@0.5.15
 	winnow@0.6.1
-	winreg@0.50.0
+	winreg@0.52.0
 	xdg-home@1.0.0
 	yansi@0.5.1
 	zbus@3.14.1
@@ -421,6 +428,8 @@ CRATES="
 	zbus_names@2.6.0
 	zerocopy-derive@0.7.32
 	zerocopy@0.7.32
+	zune-core@0.4.12
+	zune-jpeg@0.4.11
 	zvariant@3.15.0
 	zvariant_derive@3.15.0
 	zvariant_utils@1.0.1
@@ -446,11 +455,20 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="
+	dev-libs/glib
+	dev-libs/openssl:=
+	>=gui-libs/gtk-4.0.0:4
+	>=gui-libs/libadwaita-1.4.0:1
+	media-libs/graphene
+	media-libs/libepoxy
 	media-video/mpv
+	x11-libs/cairo
+	x11-libs/gdk-pixbuf
+	x11-libs/pango
 "
 DEPEND="
-	gui-libs/gtk
-	gui-libs/libadwaita
+	>=gui-libs/gtk-4.0.0:4
+	>=gui-libs/libadwaita-1.4.0:1
 "
 BDEPEND="
 	>=virtual/rust-1.76.0
