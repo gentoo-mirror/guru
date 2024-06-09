@@ -208,23 +208,22 @@ src_install() {
 
 	cargo_src_install
 
-	mkdir -p man
-	./target/release/just --man > man/just.1
-	./target/release/just --completions $shell > completions/just.$shell
+	mkdir -p man || die
+	./target/$(usex debug debug release)/just --man > man/just.1 || die
 
 	doman man/*
 
 	einstalldocs
 
 	# bash-completion
-	./target/release/just --completions bash > completions/just.bash
+	./target/$(usex debug debug release)/just --completions bash > completions/just.bash || die
 	newbashcomp "completions/${PN}.bash" "${PN}"
 
 	# zsh-completion
-	./target/release/just --completions zsh > completions/just.zsh
+	./target/$(usex debug debug release)/just --completions zsh > completions/just.zsh || die
 	newzshcomp "completions/${PN}.zsh" "_${PN}"
 
 	# fish-completion
-	./target/release/just --completions fish > completions/just.fish
+	./target/$(usex debug debug release)/just --completions fish > completions/just.fish || die
 	dofishcomp "completions/${PN}.fish"
 }

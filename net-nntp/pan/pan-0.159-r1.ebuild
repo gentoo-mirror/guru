@@ -60,12 +60,11 @@ src_install() {
 	cmake_src_install
 
 	# Since cmake apparently doesn't include the below automatically
-	local build_dir="${S%/*}/pan-v${PV}_build"
-	dolib.so "${build_dir}/pan/data/libdata.so"
-	dolib.so "${build_dir}/pan/data-impl/libdata-impl.so"
-	dolib.so "${build_dir}/pan/general/libgeneralutils.so"
-	dolib.so "${build_dir}/pan/tasks/libtasks.so"
-	dolib.so "${build_dir}/pan/usenet-utils/libusenet-utils.so"
+	dolib.so "${BUILD_DIR}/pan/data/libdata.so"
+	dolib.so "${BUILD_DIR}/pan/data-impl/libdata-impl.so"
+	dolib.so "${BUILD_DIR}/pan/general/libgeneralutils.so"
+	dolib.so "${BUILD_DIR}/pan/tasks/libtasks.so"
+	dolib.so "${BUILD_DIR}/pan/usenet-utils/libusenet-utils.so"
 
 
 }
