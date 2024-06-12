@@ -5,11 +5,11 @@ DESCRIPTION=Lightning-fast and Powerful Code Editor written in Rust
 EAPI=8
 HOMEPAGE=https://lapce.dev/
 INHERIT=cargo desktop xdg-utils
-IUSE=debug
+IUSE=abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32 abi_s390_32 abi_s390_64 debug
 KEYWORDS=~amd64
 LICENSE=0BSD Apache-2.0 Apache-2.0-with-LLVM-exceptions Artistic-2 BSD BSD-2 Boost-1.0 CC0-1.0 CeCILL-2.1 GPL-2 ISC MIT MPL-2.0 Unicode-DFS-2016 Unlicense ZLIB
 RDEPEND=x11-libs/gtk+:3 media-libs/fontconfig sys-libs/zlib x11-libs/libxcb:= dev-libs/libgit2:=
 SLOT=0
 SRC_URI=https://github.com/lapce/lapce/archive/v0.3.1.tar.gz -> lapce-0.3.1.tar.gz https://github.com/lapce/lapce/releases/download/v0.3.1/vendor.tar.gz -> lapce-0.3.1-vendor.tar.gz
-_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	d309b9713dfc18e754cba88d3ba69653	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	cargo	172dcb548e750dda201deb8263a17124	desktop	021728fdc1b03b36357dbc89489e0f0d	xdg-utils	baea6080dd821f5562d715887954c9d3
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	d309b9713dfc18e754cba88d3ba69653	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	out-of-source-utils	1a9007554652a6e627edbccb3c25a439	multibuild	d67e78a235f541871c7dfe4cf7931489	multilib-build	e8aed98bd43dbd25694310a660ad562c	rust-toolchain	aa01c724f55c868b0aefd0b24b86b2a7	cargo	b672a677bc11cdf4c7510b906bfa534f	desktop	021728fdc1b03b36357dbc89489e0f0d	xdg-utils	baea6080dd821f5562d715887954c9d3
 _md5_=a3a18133a24b8bbea6bf0f9ae9ad745b
