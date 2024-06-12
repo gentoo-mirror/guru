@@ -20,8 +20,8 @@ KEYWORDS="~amd64"
 IUSE="test"
 
 RESTRICT="test"
-# Depend on a random server that may or may not be accessible at all times.
-PROPERTIES="test_network"
+# Depend on a random server that may or may not be accessible.
+#PROPERTIES="test_network"
 
 DEPEND="
 	dev-libs/glib:2

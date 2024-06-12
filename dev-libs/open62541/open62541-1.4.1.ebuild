@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{10..12} )
+PYTHON_COMPAT=( python3_{10..13} )
 
 inherit cmake python-single-r1
 
@@ -51,6 +51,7 @@ src_configure() {
 		-DUA_BUILD_TOOLS=$(usex tools)
 		-DUA_BUILD_UNIT_TESTS=OFF
 		-DUA_ENABLE_PUBSUB=$(usex pubsub)
+		-DUA_ENABLE_PUBSUB_INFORMATIONMODEL=$(usex pubsub)
 		-DUA_FORCE_WERROR=OFF
 	)
 

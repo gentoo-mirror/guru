@@ -12,17 +12,20 @@ if [[ ${PV} == 9999 ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://gitlab.com/znixian/OpenOVR.git"
 	EGIT_BRANCH="openxr"
-	KEYWORDS=""
 else
 	KEYWORDS="~amd64"
 fi
 
-LICENSE="GPL-3 Apache-2 MIT"
+LICENSE="GPL-3 Apache-2.0 MIT"
 SLOT="0"
 
-DEPEND=""
+DEPEND="
+	dev-lang/python
+	dev-util/vulkan-headers
+	media-libs/libglvnd[X]
+	media-libs/openxr-loader
+"
 RDEPEND="${DEPEND}"
-BDEPEND=""
 
 PATCHES=(
 	"${FILESDIR}/0001-Add-install-target.patch"
@@ -38,6 +41,10 @@ src_configure()
 	# as it does for vulkan and other similar configuration files.
 	local mycmakeargs=(
 		"-DCMAKE_INSTALL_PREFIX=/opt"
+		# Required for Proton: https://gitlab.com/znixian/OpenOVR/-/issues/416
+		"-DUSE_SYSTEM_OPENXR=OFF"
+		# FIXME: fails because GLM_ENABLE_EXPERIMENTAL is unset
+		"-DUSE_SYSTEM_GLM=OFF"
 	)
 	cmake_src_configure
 }
