@@ -106,7 +106,7 @@ app-admin/himitsu-ssh 0.3 9999: SSH integration for Himitsu
 app-admin/himitsu-totp 0.1 9999: TOTP support for Himitsu
 app-admin/i2pd-tools 0.2023.05.26 2023.09.06: Some useful tools for I2P
 app-admin/krapplet 0.3.1-r1: Krapplet (keyring applet): a Linux graphical password manager
-app-admin/oet 0.1.9 0.1.10 9999: Update your system into binpkgs in an overlay sandbox
+app-admin/oet 0.1.9 0.1.10 0.1.11 9999: Update your system into binpkgs in an overlay sandbox
 app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applications and tmux
 app-admin/pass-audit 1.2 1.2-r1: A pass extension for auditing your password repository.
 app-admin/pass-update 2.2.1: pass extension that provides an easy flow for updating passwords
@@ -526,6 +526,7 @@ dev-libs/ls-qpack 2.5.4: QPACK compression library for use with HTTP/3
 dev-libs/lsbcrypt 1.0.0-r2: libcrypt wrapper for LiteSpeedTech
 dev-libs/lsquic 4.0.8-r1 4.0.8-r2: LiteSpeed QUIC (LSQUIC) Library
 dev-libs/luksmeta 9-r1: LUKSMeta is a simple library for storing metadata in the LUKSv1 header
+dev-libs/lzfse 9999: LZFSE compression library and command line tool.
 dev-libs/md4c 0.4.8_p20220115 0.5.2: C Markdown parser. Fast, SAX-like interface, CommonMark Compliant.
 dev-libs/monero-seed 0.1.0: 14-word mnemonic seed for Monero
 dev-libs/mtxclient 0.9.1 0.9.2: Client API library for Matrix, built on top of libcurl
@@ -862,7 +863,7 @@ dev-tex/ninecolors 2022.02.13: Select colors with proper WCAG color contrast
 dev-tex/tabularray 2023.03.01: Typeset tabulars and arrays with LATEX3
 dev-tex/tectonic 0.14.1 0.15.0: A modernized, complete, embeddable TeX/LaTeX engine.
 dev-util/DirectXShaderCompiler 1.7.2207-r1 1.7.2212-r1: Microsoft DirectX Shader Compiler which is based on LLVM/Clang
-dev-util/bash-language-server 5.2.0 5.3.3: A language server for Bash
+dev-util/bash-language-server 5.3.3 5.4.0: A language server for Bash
 dev-util/bats-assert 2.1.0: Common assertions for Bats
 dev-util/bats-support 0.3.0: Supporting library for Bats test helpers
 dev-util/bazelisk 1.12.0: A user-friendly launcher for Bazel
@@ -872,7 +873,8 @@ dev-util/bump2version 1.0.1: Version-bump your software with a single command!
 dev-util/cmakelang 0.6.13: Provides Quality Assurance (QA) tools for cmake
 dev-util/deblob 0.6 0.7 9999: remove binary executables from a directory
 dev-util/distribution-gpg-keys 1.103: Collection of GPG keys used in Linux Distributions
-dev-util/dockerfile-language-server 0.10.2 0.11.0: A language server for Dockerfiles
+dev-util/dmg2img 9999: Convert Apple disk images to IMG format.
+dev-util/dockerfile-language-server 0.11.0 0.12.0: A language server for Dockerfiles
 dev-util/eclipse-parallel-bin 4.28: Eclipse IDE for Scientific Computing (C, C++, Fortran)
 dev-util/exercism 3.1.0 3.2.0: Command line client for https://exercism.io
 dev-util/find-work 0.6.1 0.7.0 9999: Personal advice utility for Gentoo package maintainers
@@ -990,7 +992,7 @@ games-util/dwarf-therapist 41.2.5 42.1.5: For managing dwarves in Dwarf Fortress
 games-util/gamehub 0.16.0.1 0.16.3.2: GameHub is a unified library for all your games
 games-util/grapejuice 7.20.12 9999: A Wine+Roblox management application
 games-util/hid-nintendo 9999: A Nintendo HID kernel module
-games-util/itch-bin 25.5.1-r2: itch.io game browser, installer and launcher
+games-util/itch-bin 25.5.1-r2 26.1.9: itch.io game browser, installer and launcher
 games-util/legendary 0.20.33 0.20.34: A free and open-source replacement for the Epic Games Launcher
 games-util/libtess2 1.0.3: Game and tools oriented refactored version of GLU tesselator
 games-util/mangohud 0.7.2 9999: Vulkan and OpenGL overlay for monitoring FPS, sensors, system load and more
@@ -1040,7 +1042,7 @@ gui-apps/coreuniverse 4.5.0 9999: Shows information about apps for C Suite
 gui-apps/darkman 2.0.1: Framework for dark and light mode transitions
 gui-apps/espanso 2.1.8 2.2.1-r1: Cross-platform Text Expander written in Rust
 gui-apps/eww 0.5.0-r4 0.6.0 9999: Elkowars Wacky Widgets is a standalone widget system made in Rust
-gui-apps/fnott 1.2.1 1.3.0 1.4.1 9999: Keyboard driven and lightweight Wayland notification daemon.
+gui-apps/fnott 1.2.1 1.3.0 1.4.1 1.6.0 9999: Keyboard driven and lightweight Wayland notification daemon.
 gui-apps/fuzzel 1.9.2 1.10.2-r1 9999: Application launcher for wlroots based Wayland compositors.
 gui-apps/gcolor3 2.4.0: A simple color chooser written in GTK3
 gui-apps/gradience 0.3.0-r2: GNOME's main interface to configure various aspects of the desktop
@@ -1096,7 +1098,7 @@ gui-apps/tiramisu 1.0_p20201110 2.0.20211107 9999: minimalistic desktop notifica
 gui-apps/tofi 0.8.1 0.9.1: Fast and simple dmenu/rofi replacement for wlroots-based Wayland compositors
 gui-apps/tootle 9999: Mastodon client written in GTK3
 gui-apps/vicuna 1.25: Tool for uploading files to Wikimedia Commons and other Wikimedia projects
-gui-apps/wbg 1.0.2 1.1.0 9999: Super simple wallpaper application
+gui-apps/wbg 1.0.2 1.1.0 1.2.0 9999: Super simple wallpaper application
 gui-apps/wdisplays 1.1 1.1.1 9999: GUI display configurator for wlroots compositors
 gui-apps/wev 1.0.0: Wayland event viewer
 gui-apps/wl-mirror 0.12.2: A simple Wayland output mirror client
@@ -1174,7 +1176,7 @@ media-gfx/libpsautohint 2.4.0: A library for autohinting PostScript fonts
 media-gfx/nsxiv 32 9999: Neo (or New or Not) Simple (or Small or Suckless) X Image Viewer
 media-gfx/oda-file-converter 23.5.0.0: For converting between different versions of .dwg and .dxf
 media-gfx/qview 4.0 5.0 6.1: Practical and minimal image viewer
-media-gfx/sic 0.19.0: Accessible image processing and conversion from the terminal tool.
+media-gfx/sic 0.22.4: Accessible image processing and conversion from the terminal tool.
 media-gfx/silicon 0.5.2: Create beautiful image of your code
 media-gfx/svgcleaner 0.9.5: svgcleaner could help you to clean up your SVG files from the unnecessary data.
 media-gfx/swayimg 2.1: A lightweight image viewer for Wayland display servers
@@ -1256,6 +1258,8 @@ media-sound/zita-ajbridge 0.8.4 0.8.4-r1: zita-a2j and zita-j2a - bridges betwee
 media-video/avisynth+ 9999: A powerful nonlinear scripting language for video
 media-video/ciano 0.2.4-r2: A multimedia file converter focused on simplicity
 media-video/delfin 0.4.4 0.4.5: Stream movies and TV shows from Jellyfin
+media-video/gpu-screen-recorder 9999: A screen recorder that has minimal impact on system performance, similar to shadowplay on Windows.
+media-video/gpu-screen-recorder-gtk 9999: GTK frontend for gpu-screen-recorder.
 media-video/kikoplay 0.9.3 9999: KikoPlay is a full-featured danmu player
 media-video/kooha 2.2.3: GTK4 screen recorder for Wayland
 media-video/lossless-cut 3.54.0-r1 3.56.0 3.59.1: Lossless video/audio editing: export media without reencoding, powered by ffmpeg
@@ -1463,7 +1467,7 @@ sci-biology/jalview-bin 2.11.3.3: Editor of multiple sequence alignments.
 sci-chemistry/vesta-bin 3.5.8: Visualisation for Electronic and STructural Analysis.
 sci-chemistry/xcrysden 1.6.2: For the visualisation of molecular and crystal structures.
 sci-electronics/bluespec 2022.01-r1 2023.01 2023.07 9999: Toolchain for the Bluespec Hardware Definition Language
-sci-electronics/circt 1.14.0 1.37.0: The fast free Verilog/SystemVerilog simulator
+sci-electronics/circt 1.14.0 1.37.0 1.76.0: The fast free Verilog/SystemVerilog simulator
 sci-electronics/coil64 2.1.27: Coil64 is inductance coil calculator
 sci-electronics/dsview 1.2.1 1.3.0 9999: An open source multi-function instrument
 sci-electronics/kactus2 3.12.0 3.13.0 3.13.1 9999: A open source IP-XACT-based tool
