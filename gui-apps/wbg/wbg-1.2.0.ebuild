@@ -20,13 +20,12 @@ HOMEPAGE="https://codeberg.org/dnkl/wbg"
 # ZLIB for nanosvg
 LICENSE="MIT ZLIB"
 SLOT="0"
-IUSE="jpeg jpegxl png webp"
+IUSE="png jpeg webp"
 
 RDEPEND="
 	dev-libs/wayland
 	x11-libs/pixman
 	jpeg? ( media-libs/libjpeg-turbo:= )
-	jpegxl? ( media-libs/libjxl:= )
 	png? ( media-libs/libpng:= )
 	webp? ( media-libs/libwebp:= )
 "
@@ -42,9 +41,8 @@ BDEPEND="
 
 src_configure() {
 	local emesonargs=(
-		$(meson_feature jpeg)
-		$(meson_feature jpegxl jxl)
 		$(meson_feature png)
+		$(meson_feature jpeg)
 		$(meson_feature webp)
 		-Dsvg=true
 	)

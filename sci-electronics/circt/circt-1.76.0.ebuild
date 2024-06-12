@@ -4,7 +4,7 @@
 EAPI="8"
 
 MY_PV="${PV//./\/}"
-MY_LLVM_PV="d978730d8e2c10c76867b83bec2f1143d895ee7d"
+MY_LLVM_PV="6595e7fa1b5588f860aa057aac47c43623169584"
 CMAKE_BUILD_TYPE="Release"
 PYTHON_COMPAT=( python3_{11..12} )
 inherit cmake python-r1
@@ -68,6 +68,7 @@ src_configure() {
 	local mycmakeargs=(
 		-D Python3_EXECUTABLE="${PYTHON}"
 		-D CMAKE_INSTALL_PREFIX=/usr
+		-D CMAKE_SKIP_RPATH=ON
 		-D LLVM_BINUTILS_INCDIR=/usr/include
 		-D LLVM_ENABLE_PROJECTS=mlir
 		-D BUILD_SHARED_LIBS=OFF
@@ -98,18 +99,22 @@ src_install() {
 	mv "${S_CIRCT}/LICENSE" "${S_CIRCT}/circt-LICENSE" || die
 	einstalldocs
 	exeinto /usr/bin
-	doexe "${BUILD_DIR}"/bin/circt-capi-ir-test
+	doexe "${BUILD_DIR}"/bin/arcilator
+	doexe "${BUILD_DIR}"/bin/circt-as
+	doexe "${BUILD_DIR}"/bin/circt-cocotb-driver.py
+	doexe "${BUILD_DIR}"/bin/circt-dis
+	doexe "${BUILD_DIR}"/bin/circt-lec
 	doexe "${BUILD_DIR}"/bin/circt-lsp-server
 	doexe "${BUILD_DIR}"/bin/circt-opt
 	doexe "${BUILD_DIR}"/bin/circt-reduce
 	doexe "${BUILD_DIR}"/bin/circt-rtl-sim.py
 	doexe "${BUILD_DIR}"/bin/circt-translate
-	doexe "${BUILD_DIR}"/bin/esi_cosim.py
-	doexe "${BUILD_DIR}"/bin/esi-cosim-runner.py
-	doexe "${BUILD_DIR}"/bin/esi-tester
 	doexe "${BUILD_DIR}"/bin/firtool
 	doexe "${BUILD_DIR}"/bin/handshake-runner
+	doexe "${BUILD_DIR}"/bin/hlstool
+	doexe "${BUILD_DIR}"/bin/ibistool
 	doexe "${BUILD_DIR}"/bin/llhd-sim
+	doexe "${BUILD_DIR}"/bin/om-linker
 	doexe "${BUILD_DIR}"/bin/py-split-input-file.py
 	# llhd-sim not static linked
 	dolib.so "${BUILD_DIR}"/lib/libcirct-llhd-signals-runtime-wrappers.so
