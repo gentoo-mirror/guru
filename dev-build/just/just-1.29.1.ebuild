@@ -24,16 +24,17 @@ CRATES="
 	bstr@0.2.17
 	bumpalo@3.16.0
 	camino@1.1.7
-	cc@1.0.98
+	cc@1.0.99
 	cfg-if@1.0.0
 	cfg_aliases@0.1.1
 	chrono@0.4.38
 	clap@2.34.0
-	clap@4.5.4
-	clap_builder@4.5.2
-	clap_complete@4.5.2
-	clap_lex@0.7.0
-	clap_mangen@0.2.20
+	clap@4.5.7
+	clap_builder@4.5.7
+	clap_complete@4.5.5
+	clap_derive@4.5.5
+	clap_lex@0.7.1
+	clap_mangen@0.2.21
 	colorchoice@1.0.1
 	constant_time_eq@0.3.0
 	core-foundation-sys@0.8.6
@@ -77,7 +78,7 @@ CRATES="
 	libredox@0.1.3
 	linux-raw-sys@0.4.14
 	log@0.4.21
-	memchr@2.7.2
+	memchr@2.7.4
 	memmap2@0.9.4
 	nix@0.28.0
 	num-traits@0.2.19
@@ -99,10 +100,10 @@ CRATES="
 	rayon@1.10.0
 	rayon-core@1.12.1
 	redox_users@0.4.5
-	regex@1.10.4
+	regex@1.10.5
 	regex-automata@0.1.10
-	regex-automata@0.4.6
-	regex-syntax@0.8.3
+	regex-automata@0.4.7
+	regex-syntax@0.8.4
 	roff@0.2.1
 	rustix@0.38.34
 	rustversion@1.0.17
@@ -137,7 +138,7 @@ CRATES="
 	unicode-ident@1.0.12
 	unicode-segmentation@1.11.0
 	unicode-width@0.1.13
-	utf8parse@0.2.1
+	utf8parse@0.2.2
 	uuid@1.8.0
 	vec_map@0.8.2
 	version_check@0.9.4
@@ -208,12 +209,14 @@ src_install() {
 
 	cargo_src_install
 
-	mkdir -p man || die
+	mkdir man || die
 	./target/$(usex debug debug release)/just --man > man/just.1 || die
 
 	doman man/*
 
 	einstalldocs
+
+	mkdir completions || die
 
 	# bash-completion
 	./target/$(usex debug debug release)/just --completions bash > completions/just.bash || die

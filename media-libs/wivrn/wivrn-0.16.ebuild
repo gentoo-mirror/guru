@@ -1,3 +1,6 @@
+# Copyright 2024 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
+
 EAPI=7
 
 inherit cmake
@@ -15,7 +18,7 @@ if [[ ${PV} == 9999 ]]; then
 	EGIT_REPO_URI="https://github.com/Meumeu/WiVRn.git"
 	EGIT_BRANCH="dev"
 
-	MONADO_V=ffb71af26f8349952f5f820c268ee4774613e200
+	MONADO_V=598080453545c6bf313829e5780ffb7dde9b79dc
 	PFR_V=2.2.0
 	SRC_URI="
 	https://github.com/boostorg/pfr/archive/refs/tags/${PFR_V}.tar.gz -> boostpfr_${PFR_V}.tar.gz
@@ -104,4 +107,14 @@ src_install() {
 	cmake_src_install
 
 	dosym /usr/share/openxr/1/openxr_wivrn.json /etc/openxr/1/active_runtime.json
+}
+
+pkg_postinst()
+{
+	elog "WiVRn requires a compatible client on VR headset to run."
+	if [[ ${PV} == 9999 ]]; then
+		elog "For most headsets it can be downloaded from CI artifacts on https://github.com/Meumeu/WiVRn/actions/workflows/Build.yml"
+	else
+		elog "For most headsets it can be downloaded on https://github.com/Meumeu/WiVRn/releases/tag/v${PV}"
+	fi
 }
