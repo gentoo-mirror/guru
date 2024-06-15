@@ -151,7 +151,7 @@ app-crypt/configuradorfnmt 1.0.1: Spanish government certificate request generat
 app-crypt/gnome-encfs-manager 1.9-r1 1.9-r2: An easy to use manager and mounter for encfs stashes
 app-crypt/ifcplugin-bin 3.1.1.0: Crypto Interface Web Browser Plugin
 app-crypt/intel-ipsec-mb 1.1 1.2 1.3 1.5 9999: Multi-Buffer Crypto for IPSec from Intel
-app-crypt/lego 4.14.2 4.15.0 4.16.0 4.16.1 9999: Let's Encrypt/ACME client (like certbot or acme.sh) and library written in Go
+app-crypt/lego 4.14.2 4.15.0 4.16.0 4.16.1 4.17.4 9999: Let's Encrypt/ACME client (like certbot or acme.sh) and library written in Go
 app-crypt/pinentry-bemenu 0.13.1: Pinentry based on bemenu
 app-crypt/reop 2.1.1: reasonable expectation of privacy
 app-crypt/sac-core 10.8.1050-r1: Thales/Gemalto SafeNet Authentication Client
@@ -165,7 +165,7 @@ app-dicts/dictd-moby-thesaurus 1.0: Grady Ward's Moby Thesaurus; 35000 root word
 app-dicts/rhvoice-en 2.11: English language support for RHVoice
 app-dicts/rhvoice-ru 2.14: Russian language support for RHVoice
 app-doc/anarchism 15.3: An anarchist FAQ
-app-doc/geeknote 9999: Evernote CLI: CRUD for notes in cloud, in markdown
+app-doc/geeknote 3.0.5 9999: Evernote CLI: CRUD for notes in cloud, in markdown
 app-doc/openbsd-manpages 6.9 7.0: OpenBSD manual pages
 app-doc/stdman 2022.07.30 9999: Formatted C++ stdlib man pages (cppreference)
 app-doc/sway-wiki 9999: Wiki of gui-wm/sway, rendered to HTML using kramdown-parser-gfm
@@ -259,7 +259,7 @@ app-misc/pfetch 0.6.0: A pretty system information tool written in POSIX sh
 app-misc/pipes-rs 1.6.3: An over-engineered rewrite of pipes.sh in Rust
 app-misc/powerpanel 1.4.1-r1: PowerPanel software for CyberPower UPS systems
 app-misc/proctl 9999: small C program that can control processes
-app-misc/pueue 3.3.2 3.3.3 3.4.0: A cli tool for managing long running shell commands.
+app-misc/pueue 3.3.3 3.4.0 3.4.1: A cli tool for managing long running shell commands.
 app-misc/rememberthemilk 1.3.11-r1: Freemium simple to-do tasks manager
 app-misc/s6-man 9999: mdoc versions of the HTML documentation for the s6 supervision suite
 app-misc/tai 0.0.8: tai (Terminal Ascii Images) tool to convert images to ascii
@@ -302,7 +302,7 @@ app-portage/portage-lostfiles 0.5.5: A simple script to identify files not track
 app-portage/quantum-resolver 9999: A WIP portage dependency resolver
 app-portage/showbuild 0.9.1-r1: Script to follow log of running portage builds
 app-portage/version 0.19.0_alpha 0.20.1_alpha 0.21.0_alpha: A command line function for package version management.
-app-shells/carapace 1.0.0 1.0.1 1.0.2: Multi-shell multi-command argument completer
+app-shells/carapace 1.0.1 1.0.2 1.0.3: Multi-shell multi-command argument completer
 app-shells/direnv 2.32.3 9999: Environment variable manager for shell
 app-shells/elvish 0.19.2 0.20.1: Expressive programming language and a versatile interactive shell
 app-shells/fzf-fish 10.3: Augment your fish command line with fzf key bindings
@@ -373,7 +373,7 @@ dev-build/cargo-make 0.37.12: Rust task runner and build tool
 dev-build/fpm 0.9.0 0.10.0: Fortran Package Manager (fpm)
 dev-build/fypp 3.1 3.2: Fypp - Python powered Fortran preprocessor
 dev-build/just 1.29.0 1.29.1: Just a command runner (with syntax inspired by 'make')
-dev-build/pdpmake 1.4.3: Public domain POSIX make
+dev-build/pdpmake 2.0.0: Public domain POSIX make
 dev-build/qtilitools 0.1.2: Scripts/commands used in the Qtilities organization
 dev-build/xmake 2.8.9 9999: A cross-platform build utility based on Lua
 dev-cpp/blurhash 0.2.0 0.2.0-r1: C++ blurhash encoder/decoder
@@ -442,6 +442,7 @@ dev-db/pg_query_vala 0.1.0_pre20240326-r1: Thin wrapper around libpg_query to us
 dev-db/pg_repack 1.5.0: Reorganize tables in PostgreSQL databases with minimal locks
 dev-db/psequel 0.1.8-r1: Run your SQL query
 dev-db/rum 1.3.13: RUM access method - inverted index with additional information in posting lists
+dev-db/sqlcmd 1.7.0: The MSSQL SQLCMD CLI tool
 dev-db/tdscpp 20240212: C++ library to communicate with Microsoft SQL server
 dev-debug/gdb-dashboard 0.17.2: Modular visual interface for GDB in Python
 dev-debug/lldb-mi 0.0.1 9999: LLDB Machine Interface Driver
@@ -642,7 +643,7 @@ dev-python/digitalocean 1.17.0-r1: Digitalocean API access library
 dev-python/doxypypy 0.8.8.6_p20210405-r1: A more Pythonic version of doxypy, a Doxygen filter for Python
 dev-python/dropbox 11.36.2 12.0.2: The offical Dropbox SDK for Python
 dev-python/dtreeviz 2.2.2: A python library for decision tree visualization and model interpretation
-dev-python/evernote2 9999: Unofficial Evernote SDK for Python 3
+dev-python/evernote2 1.0.3 9999: Unofficial Evernote SDK for Python 3
 dev-python/exif 1.6.0: Read and modify image EXIF metadata using Python.
 dev-python/faust-cchardet 2.1.18 2.1.19: universal character encoding detector
 dev-python/flask-restx 1.3.0: Framework API development with Flask
@@ -857,8 +858,10 @@ dev-ruby/prawn-icon 3.1.0: Provides support for icons in Prawn
 dev-ruby/prawn-svg 0.34.2: Provides support for SVG in Prawn
 dev-ruby/prawn-templates 0.1.2-r1: Provides support for templates in Prawn
 dev-ruby/pry-byebug 3.9.0 3.10.1: Step-by-step debugging and stack navigation in Pry
+dev-ruby/rbenv 9999: Seamlessly manage your app's Ruby environment
 dev-ruby/rbspy 0.17.0-r1 0.21.0: Sampling CPU profiler for Ruby
 dev-ruby/rspec-wait 0.0.9: enables time-resilient expectations in your RSpec test suite
+dev-ruby/ruby-build 9999: Installs virtually any version of Ruby, from source
 dev-ruby/ruby-install 0.9.3: Installs Ruby, JRuby, Rubinius, TruffleRuby, or MRuby.
 dev-scheme/sagittarius 0.9.11: R6RS/R7RS Scheme system.
 dev-tex/ninecolors 2022.02.13: Select colors with proper WCAG color contrast
@@ -1312,12 +1315,12 @@ net-dialup/minimodem 0.24-r1 9999: General-purpose software audio FSK modem
 net-dialup/syncterm 1.1 9999: BBS (bulletin board system) terminal
 net-dialup/tcpser 1.1.4: Hayes Smartmodem emulator over TCP/IP
 net-dialup/tio 3.3: Simple TTY terminal application
-net-dns/AdGuardHome 0.107.45 0.107.46 0.107.48 0.107.49 0.107.50: Network-wide ads & trackers blocking DNS server like Pi-Hole with web ui
-net-dns/blocky 0.22 0.23 9999: Fast and lightweight DNS proxy as ad-blocker with many features written in Go
+net-dns/AdGuardHome 0.107.49 0.107.50 0.107.51: Network-wide ads & trackers blocking DNS server like Pi-Hole with web ui
+net-dns/blocky 0.22 0.23 0.24 9999: Fast and lightweight DNS proxy as ad-blocker with many features written in Go
 net-fs/httpdirfs 1.2.0: Filesystem to mount HTTP directory listings, with a permanent cache
 net-fs/hubicfuse 3.0.1: Support for mounting HubiC drive in GNU/Linux
 net-im/Quaternion 0.0.95.1 0.0.96_beta4: A Qt-based IM client for Matrix
-net-im/abaddon 0.1.12-r1 0.1.13 9999: Alternative Discord client using GTK instead of Electron
+net-im/abaddon 0.1.12-r1 0.1.13 0.2.1 9999: Alternative Discord client using GTK instead of Electron
 net-im/armcord-bin 3.2.6 3.2.7: ArmCord is a custom client designed to enhance your Discord experience.
 net-im/axolotl-bin 2.0.1: Axolotl is a cross-platform Signal client
 net-im/beeper 3.103.36 3.104.7: Beeper: Unified Messenger
@@ -1623,7 +1626,7 @@ www-apps/gotosocial 0.9.0 0.10.0: Fast, fun, ActivityPub server, powered by Go
 www-apps/honk 0.9.8 0.9.91: ActivityPub server with minimal setup and support costs
 www-apps/invidious 2024.03.31 2024.04.27: Invidious is an alternative front-end to YouTube
 www-apps/laminar 1.3-r1: Fast and lightweight Continuous Integration
-www-apps/libmedium 20231020: Alternative private front-end to Medium
+www-apps/libmedium 2024.06.10: Alternative private front-end to Medium
 www-apps/librarian 2023.05.07: An alternative frontend for LBRY/Odysee. Inspired by Invidious and Libreddit.
 www-apps/mycorrhiza 1.14.0 9999: Git-based wiki engine written in Go using mycomarkup
 www-apps/pleroma 2.6.3 9999: ActivityPub social networking software compatible with other Fediverse software
