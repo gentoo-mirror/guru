@@ -146,11 +146,6 @@ dev-libs/zfp:openmp - Enable OpenMP parallel compression
 dev-libs/zfp:strided - Enable strided access for progressive zfp streams
 dev-libs/zfp:twoway - Use two-way skew-associative cache
 dev-libs/zfp:utilities - Build command line utilities
-dev-ml/cstruct:async - provide Async Pipe and Bigstring support
-dev-ml/cstruct:lwt - provide Lwt variants of read/write functions
-dev-ml/cstruct:ppx - a PPX syntax extension
-dev-ml/cstruct:sexp - serialisers into s-expression format of Cstructs
-dev-ml/cstruct:unix - provide Unix variations of the read/write functions using file descriptors
 dev-python/gevent:monitor - Enhancements to gevent’s self-monitoring capabilities. This includes the psutil library which is needed to monitor memory usage.
 dev-python/gevent:recommended - A shortcut for installing suggested extras together. This includes the non-test extras defined here, plus additions that improve gevent’s operation on certain platforms (for example, in the past, it has included backports of newer APIs).
 dev-python/python-socketio:asyncio-client - Add async websocket client
@@ -606,7 +601,6 @@ net-vpn/cloudflare-warp:dex - Install warp-dex for Digital Experience Monitoring
 net-vpn/cloudflare-warp:systray - Enable systray indicator of whether WARP is active
 net-vpn/fastd:doc - Build and install manpages
 net-vpn/fastd:offload-l2tp - Offload L2TP traffic to the kernel when using the null@l2tp transport method
-net-wireless/airspyhf:udevrules - Install udev rules
 net-wireless/bluetuith:doc - Install html docs
 net-wireless/sdrpp:airspy - Support for airspy hardware
 net-wireless/sdrpp:airspyhf - Support for airspyhf+ hardware
