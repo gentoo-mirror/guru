@@ -3,17 +3,17 @@
 
 EAPI=8
 
-inherit fcaps go-module readme.gentoo-r1 systemd unpacker
+inherit fcaps go-module readme.gentoo-r1 systemd
 
 DESCRIPTION="Network-wide ads & trackers blocking DNS server like Pi-Hole with web ui"
 HOMEPAGE="https://github.com/AdguardTeam/AdGuardHome/"
 
-WIKI_COMMIT="7964837"
+WIKI_COMMIT="3b27176"
 SRC_URI="
 	https://github.com/AdguardTeam/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
-	https://github.com/rahilarious/gentoo-distfiles/releases/download/${P}/deps.tar.zst -> ${P}-deps.tar.zst
-	https://github.com/rahilarious/gentoo-distfiles/releases/download/${PN}-0.107.46/wiki.tar.xz -> ${PN}-wiki-${WIKI_COMMIT}.tar.xz
-	web? ( https://github.com/rahilarious/gentoo-distfiles/releases/download/${P}/npm-deps.tar.zst -> ${P}-npm-deps.tar.zst )
+	https://github.com/rahilarious/gentoo-distfiles/releases/download/${P}/deps.tar.xz -> ${P}-deps.tar.xz
+	https://github.com/rahilarious/gentoo-distfiles/releases/download/${PN}-0.107.49/wiki.tar.xz -> ${PN}-wiki-${WIKI_COMMIT}.tar.xz
+	web? ( https://github.com/rahilarious/gentoo-distfiles/releases/download/${PN}-0.107.49/npm-deps.tar.xz -> ${PN}-0.107.49-npm-deps.tar.xz )
 "
 
 # main
@@ -28,8 +28,6 @@ IUSE="+web"
 # RESTRICT="test"
 
 BDEPEND="
-	$(unpacker_src_uri_depends)
-	>=dev-lang/go-1.22.2
 	web? ( net-libs/nodejs[npm] )
 "
 
@@ -42,7 +40,7 @@ PATCHES=(
 )
 
 DOCS="
-	../${PN,,}.wiki/*
+	../${PN}.wiki/*
 "
 
 DOC_CONTENTS="\n
@@ -54,7 +52,7 @@ Default config: /var/lib/${PN}/${PN}.yaml
 "
 src_unpack() {
 	# because we're using  vendor/ so we don't need go-module_src_unpack
-	unpacker_src_unpack
+	default
 }
 
 src_prepare() {
