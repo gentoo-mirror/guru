@@ -23,6 +23,10 @@ RDEPEND="${DEPEND}
 
 BDEPEND="virtual/pkgconfig"
 
+PATCHES=(
+	"${FILESDIR}/airspyhf-1.6.8-remove-static.patch"
+)
+
 src_prepare(){
 	sed -i "s@DESTINATION \"/etc/udev/rules.d\"@DESTINATION \"$(get_udevdir)/rules.d\"@" "tools/CMakeLists.txt" || die
 
