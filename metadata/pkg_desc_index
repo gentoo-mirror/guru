@@ -92,7 +92,7 @@ app-admin/bitwarden-cli 2024.2.0 2024.2.1: CLI frontend client connects to Bitwa
 app-admin/bitwarden-cli-bin 2024.2.1 2024.3.1 2024.4.0 2024.6.0: Precompiled CLI frontend which connects to Bitwarden comapatible servers
 app-admin/boinctui 2.7.1: Fullscreen text mode manager for the BOINC client
 app-admin/chamber 2.13.2: Managing secrets in AWS SSM Parameter Store
-app-admin/chezmoi 2.47.3: Manage your dotfiles across multiple machines, securely
+app-admin/chezmoi 2.49.0: Manage your dotfiles across multiple machines, securely
 app-admin/customrescuecd-x86 0.4.1: A system rescue cd or usbstick for desktop and server based on gentoo
 app-admin/customrescuecd-x86_64 0.12.7 0.12.8: A system rescue cd or usbstick for desktop and server based on gentoo
 app-admin/dotbot 1.20.1: A tool that bootstraps your dotfiles
@@ -144,7 +144,7 @@ app-containers/waydroid 1.4.2 1.4.2-r1: Container-based approach to boot a full 
 app-containers/waydroid-images 9999: Manage images for app-containers/waydroid using portage
 app-crypt/PBinCLI 0.3.5 0.3.5-r1: PBinCLI is a command line client for PrivateBin written in Python 3
 app-crypt/autofirma 1.8.2: Spanish government's electronic signature application for online procedures
-app-crypt/certbot-dns-cloudflare 2.9.0-r1 2.10.0: Cloudflare DNS Authenticator plugin for Certbot (Let's Encrypt Client)
+app-crypt/certbot-dns-cloudflare 2.10.0-r1: Cloudflare DNS Authenticator plugin for Certbot (Let's Encrypt Client)
 app-crypt/certbot-dns-desec 1.2.1: deSEC DNS Authenticator plugin for Certbot
 app-crypt/certbot-dns-rfc2136 2.10.0 9999: RFC 2136 DNS Authenticator plugin for Certbot (Let’s Encrypt client)
 app-crypt/clevis 19-r2 20-r1: Automated Encryption Framework
@@ -450,6 +450,7 @@ dev-debug/lldb-mi 0.0.1 9999: LLDB Machine Interface Driver
 dev-dotnet/gtk-sharp 2.99.3-r3 3.22.2-r2: gtk bindings for mono
 dev-elixir/hex 1.0.1-r1: Package manager for the Erlang VM
 dev-embedded/arduino-cli 0.34.2 0.35.2: Next-generation arduino command line tool
+dev-embedded/bcm2-utils 0.9.8: Utilities for Broadcom-based cable modems
 dev-embedded/esp-coredump 1.7.0 1.10.0: Utility that helps users to retrieve and analyse core dumps
 dev-embedded/esp-idf 5.2.1 5.2.2: Espressif IoT Development Framework
 dev-embedded/esp-idf-kconfig 2.1.0 2.2.0: Kconfig tooling for esp-idf
@@ -568,6 +569,7 @@ dev-ml/crowbar 0.2.1: Write tests, let a fuzzer find failing cases
 dev-ml/domain-name 0.4.0: RFC 1035 Internet domain names
 dev-ml/gmap 0.3.0-r2: Heterogenous Map over a GADT
 dev-ml/lwt-dllist 1.0.1: Mutable doubly-linked list with Lwt iterators
+dev-ml/ollama 9999: Get up and running with Llama 3, Mistral, Gemma, and other language models.
 dev-ml/pecu 0.6: Implementation of quoted-printable encoder/decoder from RFC2045
 dev-ml/psq 0.2.0-r2 0.2.1: Functional Priority Search Queues for OCaml
 dev-ml/randomconv 0.1.3: Convert from random bytes to random native numbers
@@ -621,7 +623,7 @@ dev-python/click-aliases 1.0.4: Add (mutiple) aliases to a click group or comman
 dev-python/click-command-tree 1.1.1: click plugin to show the command tree of your CLI
 dev-python/click-option-group 0.5.5 0.5.6: Option groups missing in Click
 dev-python/click-repl 0.2.0-r1: Subcommand REPL for click apps
-dev-python/cloudflare 2.19.2 2.19.4: Python wrapper for the Cloudflare v4 API
+dev-python/cloudflare 2.19.2 2.19.4 3.0.0_beta10: Python wrapper for the Cloudflare v4 API
 dev-python/cloup 3.0.5: Click + option groups + constraints + aliases + help themes + ...
 dev-python/codecov 2.1.12: Hosted coverage reports for GitHub, Bitbucket and Gitlab
 dev-python/colored 2.2.4: Very simple Python library for color and formatting in terminal
@@ -1034,7 +1036,7 @@ gui-apps/coreterminal 4.5.0 9999: A terminal emulator for C Suite
 gui-apps/coretime 4.5.0 9999: A time related task manager for C Suite
 gui-apps/coretoppings 4.5.0 9999: Additional features, plugins, widgets etc for C Suite
 gui-apps/coreuniverse 4.5.0 9999: Shows information about apps for C Suite
-gui-apps/darkman 2.0.1: Framework for dark and light mode transitions
+gui-apps/darkman 2.0.1-r1: Framework for dark and light mode transitions
 gui-apps/espanso 2.1.8 2.2.1-r1: Cross-platform Text Expander written in Rust
 gui-apps/eww 0.5.0-r4 0.6.0 9999: Elkowars Wacky Widgets is a standalone widget system made in Rust
 gui-apps/fnott 1.2.1 1.3.0 1.4.1 1.6.0 9999: Keyboard driven and lightweight Wayland notification daemon.
