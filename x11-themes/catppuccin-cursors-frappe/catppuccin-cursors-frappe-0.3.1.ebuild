@@ -1,14 +1,14 @@
-# Copyright 2024 Omar (somerand0mcat)
+# Copyright 2024 Catppuccin
 
 EAPI=8
 
-DESCRIPTION="Soothing theme for cursors"
-HOMEPAGE="https://catppuccin.com"
+DESCRIPTION="Soothing pastel mouse cursors"
+HOMEPAGE="https://github.com/catppuccin"
 SRC_URI="https://github.com/catppuccin/cursors/archive/refs/tags/v0.3.1.zip"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="~arch"
 
 S="${WORKDIR}/cursors-0.3.1"
 
