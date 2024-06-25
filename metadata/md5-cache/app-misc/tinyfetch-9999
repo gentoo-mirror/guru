@@ -1,11 +1,14 @@
 BDEPEND=>=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install test unpack
+DEPEND=pci? ( sys-apps/pciutils )
 DESCRIPTION=fetch program written in pure C
 EAPI=8
 HOMEPAGE=https://github.com/kernaltrap8/tinyfetch
 INHERIT=meson git-r3
+IUSE=+pci
 LICENSE=GPL-3
 PROPERTIES=live
+RDEPEND=pci? ( sys-apps/pciutils )
 SLOT=0
 _eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	d309b9713dfc18e754cba88d3ba69653	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	8b220bbce5c119fb1d4d5c2f5588f3ea	meson	99466844dd8d4fcfb07578a76f5a9922	git-r3	fbb2889c81f3a05910c1524db69425c1
-_md5_=ca39e6cf2f327a90d9c5d5af0b8ef861
+_md5_=dc21af82b3d65ccf4b4b6483cf52f032
