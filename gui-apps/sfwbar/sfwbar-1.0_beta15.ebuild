@@ -44,6 +44,8 @@ src_configure() {
 		-Didleinhibit=enabled
 		-Dbluez=enabled
 		-Dbsdctl=disabled
+		-Diwd=enabled
+		-Dnm=enabled
 	)
 
 	meson_src_configure

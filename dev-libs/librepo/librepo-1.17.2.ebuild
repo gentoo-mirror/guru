@@ -31,6 +31,11 @@ BDEPEND="
 	test? ( dev-libs/check )
 "
 
+PATCHES=(
+	# make a test failure verbose, bug #928159
+	"${FILESDIR}/${P}-verbose-error.patch"
+)
+
 src_prepare() {
 	cmake_src_prepare
 
@@ -40,6 +45,7 @@ src_prepare() {
 
 src_configure() {
 	local mycmakeargs=(
+		-DENABLE_EXAMPLES=OFF
 		-DENABLE_PYTHON=OFF
 		-DENABLE_SELINUX=OFF
 		-DUSE_GPGME=$(usex gpgme)
