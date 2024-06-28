@@ -1,13 +1,13 @@
 DEFINED_PHASES=configure install
-DEPEND=>=sci-libs/opencascade-7.7.0-r2 dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtwidgets:5 >=media-libs/assimp-5.3.1
+DEPEND=>=sci-libs/opencascade-7.7.0-r2 <sci-libs/opencascade-7.8.0 dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtwidgets:5 >=media-libs/assimp-5.3.1
 DESCRIPTION=Opensource 3D CAD viewer and converter
 EAPI=8
 HOMEPAGE=https://github.com/fougue/mayo
 INHERIT=qmake-utils
 KEYWORDS=~amd64
 LICENSE=BSD-2
-RDEPEND=>=sci-libs/opencascade-7.7.0-r2 dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtwidgets:5 >=media-libs/assimp-5.3.1
+RDEPEND=>=sci-libs/opencascade-7.7.0-r2 <sci-libs/opencascade-7.8.0 dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtwidgets:5 >=media-libs/assimp-5.3.1
 SLOT=0
 SRC_URI=https://github.com/fougue/mayo/archive/refs/tags/v0.8.0.tar.gz -> mayo-0.8.0.tar.gz
 _eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	qmake-utils	a8dd17b1d94586164f5e3fc12b1c6b81
-_md5_=f83d8034102127686d90c86e8eac7a43
+_md5_=0dca55a4c32f9df8b9378a44e9c4f07e
