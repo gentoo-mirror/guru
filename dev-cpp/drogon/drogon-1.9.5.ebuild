@@ -5,7 +5,7 @@ EAPI=8
 
 inherit cmake
 
-MY_TRANTOR_V="1.5.17" # NOTE: needs to be updated on each bump
+MY_TRANTOR_V="1.5.19" # NOTE: needs to be updated on each bump
 
 DESCRIPTION="C++14/17 based HTTP web application framework"
 HOMEPAGE="https://github.com/drogonframework/drogon"
