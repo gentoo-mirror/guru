@@ -1,0 +1,13 @@
+DEFINED_PHASES=install postinst prepare
+DESCRIPTION=Ctrl-Z return to the previous seekbar position, Ctrl-Z again redo
+EAPI=8
+HOMEPAGE=https://github.com/Eisa01/mpv-scripts#simpleundo
+INHERIT=mpv-plugin
+IUSE=+autoload
+KEYWORDS=~amd64
+LICENSE=BSD-2
+RDEPEND=media-video/mpv[lua]
+SLOT=0
+SRC_URI=https://github.com/Eisa01/mpv-scripts/archive/refs/tags/25-09-2023.tar.gz -> SimpleUndo-2023.09.25.tar.gz
+_eclasses_=mpv-plugin	d5b74b0d4b9aa2b088badc969f11de7a
+_md5_=f836f8b30823ca75be1a437027e38959
