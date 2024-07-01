@@ -3,17 +3,14 @@
 
 EAPI=8
 
+SRC_URI="https://github.com/kernaltrap8/${PN}/archive/refs/tags/v${PV}.tar.gz"
+
 DESCRIPTION="Ruin your videos in SECONDS!"
 HOMEPAGE="https://github.com/kernaltrap8/badvideo"
 
-if [[ ${PV} == 9999 ]]; then
-	inherit git-r3
-	EGIT_REPO_URI="https://github.com/kernaltrap8/badvideo"
-	S="${WORKDIR}/${PN}-9999"
-fi
-
 LICENSE="BSD"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RDEPEND="
 	media-video/ffmpeg[opus,x264]
