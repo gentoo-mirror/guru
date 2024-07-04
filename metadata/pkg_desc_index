@@ -111,7 +111,7 @@ app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applicatio
 app-admin/pass-audit 1.2 1.2-r1: A pass extension for auditing your password repository.
 app-admin/pass-update 2.2.1: pass extension that provides an easy flow for updating passwords
 app-admin/pulumi-bin 3.118.0 3.119.0 3.121.0: Infrastructure as code in any programming language
-app-admin/rbw 9999: unofficial bitwarden cli
+app-admin/rbw 1.11.1 9999: Unofficial Bitwarden CLI
 app-admin/s-tui 1.1.6: Stress-Terminal UI monitoring tool
 app-admin/synadm 0.43.1 0.44: Command line admin tool for Synapse
 app-admin/terragrunt-bin 0.38.6 0.45.4 0.50.8: A thin wrapper for Terraform
@@ -207,7 +207,7 @@ app-misc/afc 1.1 1.2 9999: Anime File Checker, checks CRC32 contained in filenam
 app-misc/afetch 2.2.0: Simple system info written in C
 app-misc/agg 1.4.3: Command-line tool for generating animated GIF files from asciicast v2 files
 app-misc/ani-cli 4.8 9999: A cli to browse and watch anime.
-app-misc/anki-bin 24.04.1-r1 24.06.2: A spaced-repetition memory training program (flash cards)
+app-misc/anki-bin 24.04.1-r1 24.06.2 24.06.3: A spaced-repetition memory training program (flash cards)
 app-misc/apidb 5.8.0_beta 5.11.0_beta 5.13.1_beta 5.13.4_beta 5.13.6_beta: API Generator for Database access
 app-misc/aw-client 0.11.0: Client library for ActivityWatch
 app-misc/aw-core 0.5.16: Core library for ActivityWatch
@@ -220,7 +220,7 @@ app-misc/cheat 4.2.3 4.3.3-r1: cheat allows you to create and view interactive c
 app-misc/clifm 1.11 1.13 1.16 1.18 9999: The command line file manager
 app-misc/clipboard 0.9.0.1: Cut, copy, and paste anything in your terminal
 app-misc/cliphist 0.5.0: Wayland clipboard manager with support for multimedia
-app-misc/corectrl 1.4.0 1.4.1 9999: Core control application
+app-misc/corectrl 1.4.1 9999: Core control application
 app-misc/cpufetch 1.05-r1: Simplistic yet fancy CPU architecture fetching tool
 app-misc/dbf 0.9.0: Command line tool to read the content of dBASE III, IV, and 5.0 files
 app-misc/diff-so-fancy 1.4.4: Good-lookin' diffs. Actually... nah... The best-lookin' diffs
@@ -275,7 +275,7 @@ app-misc/ufetch 0.3: Tiny system info for Unix-like operating systems
 app-misc/vocabsieve 0.12.0: A simple, effective tool for language learning
 app-misc/vrms-gentoo 0_pre20201102: vrms clone for Gentoo Linux
 app-misc/walld 1.4.4: A Wallpaper daemon
-app-misc/watchexec 1.24.2 1.25.1 2.1.1: Executes commands in response to file modifications
+app-misc/watchexec 1.24.2 1.25.1 2.1.1 2.1.2: Executes commands in response to file modifications
 app-misc/wcal 0.1-r1: ISO weekly calendar
 app-misc/wego 2.2: Wego is a weather client for the terminal
 app-misc/x86-64-level 0.2.2 9999: Get the x86-64 Microarchitecture Level on the Current Machine
@@ -328,7 +328,7 @@ app-text/epubgrep 0.6.2: Search tool for EPUB e-books
 app-text/ford 6.2.5 7.0.5 7.0.6: FORD, automatic documentation generator for modern Fortran programs
 app-text/jrnl 4.1 9999: Collect your thoughts and notes without leaving the command line
 app-text/klogg 22.06.0.1289-r1: A GUI application to browse and search through long and complex log files
-app-text/komikku 1.49.0: Manga reader for GNOME
+app-text/komikku 1.50.0: Manga reader for GNOME
 app-text/koodo-reader-bin 1.5.1 1.6.3: A modern ebook manager and reader with sync and backup capacities
 app-text/lchat 1.0-r2: Line oriented front end for ii-like chat programs
 app-text/libspelling 0.2.0 0.2.1: A GNOME library for spellchecking
@@ -362,6 +362,7 @@ app-vim/themis 1.6.0 1.7.0: A testing framework for Vim script
 app-vim/vader 0.3.0 0.3.0_p20200213: A simple Vimscript test framework
 app-vim/vala-syntax 20200502: vim plugin: vala language support
 app-vim/vim-crystal 2022.09.04 2023.03.15: vim plugin: Crystal language support
+app-vim/vim-mediawiki 0.10.1: MediaWiki syntax highlight; preview; interlinks autocompletion by coc.nvim
 app-vim/vim-nix 9999: vim plugin: Vim configuration files for Nix
 app-vim/vim-sensible 1.2 2.0: vim plugin: a universal set of defaults that (hopefully) everyone can agree on
 app-vim/vimwiki-cli 1.1.0: Command-line interface for Vimwiki
@@ -526,8 +527,7 @@ dev-libs/libglibutil 1.0.68 1.0.76 9999: Library of glib utilities from sailfish
 dev-libs/librepo 1.17.2: Repodata downloading library
 dev-libs/libsignal-ffi 0.44.0 0.46.0 0.51.0: A C ABI library which exposes Signal protocol logic
 dev-libs/libthai 0.1.28 0.1.29: A a set of Thai language support routines
-dev-libs/libtypec 0.5.2-r1: Library to interface with USB Type-C/Power Delivery devices
-dev-libs/libtypec-utils 0.5.2: Library to interface with USB Type-C/Power Delivery devices
+dev-libs/libtypec 0.5.2-r2: Library to interface with USB Type-C/Power Delivery devices
 dev-libs/ls-hpack 2.3.3: QPACK compression library for use with HTTP/3
 dev-libs/ls-qpack 2.5.4: QPACK compression library for use with HTTP/3
 dev-libs/lsbcrypt 1.0.0-r2: libcrypt wrapper for LiteSpeedTech
@@ -622,6 +622,7 @@ dev-python/biplist 1.0.3: A binary plist parser/generator for Python
 dev-python/blurhash 1.1.4: Pure-Python implementation of the blurhash algorithm
 dev-python/cassowary 0.6: Run Windows Applications on Linux as if they are native (Using a VM and FreeRDP)
 dev-python/celery 5.3.6 5.4.0: Asynchronous task queue/job queue based on distributed message passing
+dev-python/chevron 0.13.1: A Python implementation of mustache
 dev-python/click-aliases 1.0.4: Add (mutiple) aliases to a click group or command
 dev-python/click-command-tree 1.1.1: click plugin to show the command tree of your CLI
 dev-python/click-option-group 0.5.5 0.5.6: Option groups missing in Click
@@ -711,6 +712,7 @@ dev-python/moderngl 5.10.0: Modern OpenGL binding for python
 dev-python/moderngl-window 2.4.6: A cross platform utility library for ModernGL
 dev-python/moreorless 0.4.0: Wrapper to make difflib.unified_diff more fun to use
 dev-python/msrest 0.7.1: AutoRest swagger generator Python client runtime
+dev-python/mwclient 0.10.1: Unofficial lib for MediaWiki API
 dev-python/nkdfu 0.2: Python DFU tool for updating Nitrokeys' firmware
 dev-python/notion-client 2.0.0: Python client for the official Notion API
 dev-python/notofonttools 0.2.17-r1: Noto fonts support tools and scripts plus web site generation
@@ -891,6 +893,7 @@ dev-util/hut 0.6.0: CLI tool for sourcehut
 dev-util/insomnia-bin 2020.5.2 2023.5.8: HTTP and GraphQL client for developers
 dev-util/juliaup 1.14.9: Julia installer and version multiplexer
 dev-util/lemminx-bin 0.27.0 0.27.1: XML Language Server
+dev-util/libtypec-utils 0.5.2: Library to interface with USB Type-C/Power Delivery devices
 dev-util/lottieconverter 0.2: Simple lottie (telegram animated sticker) converter.
 dev-util/lua-language-server 3.9.1-r1 3.9.3: Lua language server
 dev-util/mh 1.0.3: Generate help for Makefile
@@ -944,7 +947,7 @@ games-board/openriichi 0.2.1.1: OpenRiichi is an open source Japanese Mahjong cl
 games-board/rmahjong 0.4_p20201106: Riichi Mahjong, the Japanese variant of the Chinese game Mahjong for 4 players
 games-emulation/RetroArch 1.16.0.3: RetroArch is a frontend for emulators, game engines and media players
 games-emulation/conty 1.25.1 1.25.2: Easy to use unprivileged Linux container packed in a single portable executable
-games-emulation/dosbox-x 2024.03.01 9999: Complete, accurate DOS emulator forked from DOSBox
+games-emulation/dosbox-x 2024.03.01 2024.07.01 9999: Complete, accurate DOS emulator forked from DOSBox
 games-emulation/duckstation 9999: Fast Sony PlayStation (PSX) emulator
 games-emulation/mupen64plus-qt 1.15 9999: A basic launcher for Mupen64Plus
 games-emulation/np2kai 22 22_p20210211: NP2kai is an emulator for the japanese PC-98 series of computers
@@ -975,6 +978,7 @@ games-puzzle/katawa-shoujo 1.4.6 1.4.7: Re-Engineered visual novel with accessib
 games-puzzle/krank 8: Little casual game
 games-puzzle/superflu-riteurnz 1.5.5: Artisanal video-game about Superflu, the useless super-hero
 games-puzzle/superflu-riteurnz-data 12: Artisanal video-game about Superflu, the useless super-hero (data files)
+games-puzzle/xdemineur 2.1.1: Minesweeper clone for the X11 windowing system
 games-rpg/open-adventure 1.16 1.17 1.18: Forward-port of the Crowther/Woods Adventure 2.5
 games-rpg/sacred-demo 1.0.0: Like Diablo, isometric view, good rating, about a two hours of the gameplay
 games-rpg/snoot-game 1.10.0: Visual novel parody of Goodbye Volcano High
@@ -1054,6 +1058,8 @@ gui-apps/hypridle 0.1.2-r2 9999: Hyprland's idle daemon
 gui-apps/hyprlock 0.3.0-r3 9999: Hyprland's GPU-accelerated screen locking utility
 gui-apps/hyprpaper 0.6.0-r1 0.7.0: A blazing fast wayland wallpaper utility
 gui-apps/hyprpicker 0.1.1 0.2.0: A wlroots-compatible Wayland color picker that does not suck
+gui-apps/hyprshade 3.2.1 9999: Hyprland shader configuration tool
+gui-apps/hyprshot 1.2.3 1.3.0 9999: Hyprshot is an utility to easily take screenshot in Hyprland using your mouse
 gui-apps/intiface-central-bin 2.5.7 2.6.0: Buttplug frontend application
 gui-apps/lan-mouse 0.7.3: Software KVM Switch / mouse & keyboard sharing software for Local Area Networks
 gui-apps/lemurs 0.3.1 0.3.1-r1 0.3.2: A TUI Display/Login Manager
@@ -1101,6 +1107,7 @@ gui-apps/vicuna 1.25: Tool for uploading files to Wikimedia Commons and other Wi
 gui-apps/wbg 1.0.2 1.1.0 1.2.0 9999: Super simple wallpaper application
 gui-apps/wdisplays 1.1 1.1.1 9999: GUI display configurator for wlroots compositors
 gui-apps/wev 1.0.0: Wayland event viewer
+gui-apps/wl-clip-persist 0.4.3 9999: Keep Wayland clipboard even after programs close
 gui-apps/wl-mirror 0.12.2: A simple Wayland output mirror client
 gui-apps/wl-scripts 1.2.3-r1 9999: A set of utils for wlroots window managers
 gui-apps/wlgreet 0.4.1 0.5.0: Wayland based greeter for greetd
@@ -1119,10 +1126,10 @@ gui-libs/libcsys 4.5.0 9999: Library for managing the device
 gui-libs/mir 2.17.0-r1: Set of libraries for building Wayland based shells
 gui-libs/scenefx 0.1: A replacement for the wlroots scene API with eye-candy effects.
 gui-libs/text-engine 0.1.1-r2 9999: A lightweight rich-text framework for GTK 4
-gui-libs/xdg-desktop-portal-hyprland 1.1.0-r1 1.2.2-r2 1.2.5-r2 1.2.6-r1 1.3.1 1.3.1-r1 9999: xdg-desktop-portal backend for hyprland
+gui-libs/xdg-desktop-portal-hyprland 1.1.0-r1 1.2.2-r2 1.2.5-r2 1.2.6-r1 1.3.1 1.3.1-r1 1.3.2 9999: xdg-desktop-portal backend for hyprland
 gui-wm/cage 0.1.5 9999: A Wayland kiosk
 gui-wm/hyprland-contrib 0.1-r1 9999: Community-maintained extensions for hyprland
-gui-wm/miracle-wm 0.2.1: Tiling Wayland compositor based on Mir
+gui-wm/miracle-wm 0.3.0: Tiling Wayland compositor based on Mir
 gui-wm/niri 0.1.7: Scrollable-tiling Wayland compositor
 gui-wm/phoc 0.36.0-r1 0.38.0 0.40.0: Wayland compositor for mobile phones
 gui-wm/swayfx 0.2 0.3.2 0.4 0.4-r1: SwayFX: Sway, but with eye candy!
@@ -1132,6 +1139,7 @@ kde-misc/geminipart 20221020 20231005: KPart for viewing text/gemini files
 kde-misc/kio-gemini 20230419 20231005: Gemini KIO worker
 kde-misc/plasma-applet-thermal-monitor 1.3.0: Plasma 5 applet for monitoring CPU, GPU and other available temperature sensors
 kde-misc/plasma5-wallpapers-dynamic 3.3.9 9999: A KDE Plasma wallpaper plugin to set your wallpaper based on the time of day.
+mail-client/betterbird-bin 115.12.0: Betterbird is a fine-tuned version of Mozilla Thunderbird.
 mail-client/heirloom-mailx 12.5: The mailx utility from CentOS
 mail-client/mailspring-bin 1.13.3: A beautiful, fast and fully open source mail client for Mac, Windows and Linux
 mail-client/proton-mail-bin 5.0.126.1: Beta Client for Proton Mail
@@ -1189,7 +1197,7 @@ media-gfx/zwcad 2023.23.0.3.4-r2: CAD software for 2D drawing, reviewing and pri
 media-libs/alsa-ucm-pinephone 1.2.6.3: ALSA ucm configuration files for the PinePhone (Pro)
 media-libs/alvr 16.0.0: ALVR is an open source remote VR display for the Oculus Go/Quest
 media-libs/amdvlk 2023.1.1 2023.1.2 2023.1.3: AMD Open Source Driver for Vulkan
-media-libs/amdvlk-bin 2021.2.5 2023.3.3 2024.2.1: AMD Open Source Driver for Vulkan: official binary version
+media-libs/amdvlk-bin 2021.2.5 2023.3.3 2024.2.3: AMD Open Source Driver for Vulkan: official binary version
 media-libs/dr_flac 0.12.42: Single-header FLAC audio decoder library
 media-libs/dr_mp3 0.6.39-r1: Single-header MP3 audio decoder library
 media-libs/dr_wav 0.13.16-r1: Single-header WAV audio loader and writer library
@@ -1269,7 +1277,7 @@ media-video/lossless-cut 3.54.0-r1 3.56.0 3.59.1: Lossless video/audio editing: 
 media-video/manimgl 9999: Animation engine for explanatory math videos
 media-video/mediaelch 2.10.4 2.10.6 9999: Video metadata scraper
 media-video/megapixels 1.4.3: A GTK3 camera application that knows how to deal with the media request api
-media-video/mpc-qt 23.12: Media Player Classic Qute Theater
+media-video/mpc-qt 24.06: Media Player Classic Qute Theater
 media-video/obs-multi-rtmp 0.5.0.4 9999: OBS Simulcast support plugin
 media-video/obs-streamfx 0.12.0.9999 9999: OBS® Studio plugin which adds many new effects.
 media-video/obs-vaapi 0.4.1 9999: OBS Studio VAAPI support via GStreamer
@@ -1356,7 +1364,7 @@ net-im/teams-for-linux 1.4.12 1.4.13 1.5.2: Unofficial Microsoft Teams client fo
 net-im/vesktop-bin 1.5.2: All-in-one voice and text chat for gamers with Vencord Preinstalled
 net-im/whatsapp-for-linux 1.5.3 1.6.2: An unofficial WhatsApp desktop application for Linux
 net-irc/catgirl 2.2 2.2a: TLS-only terminal IRC client
-net-irc/halloy 2024.6: IRC application written in Rust
+net-irc/halloy 2024.7: IRC application written in Rust
 net-irc/litterbox 1.9: TLS-only IRC logger
 net-irc/pounce 3.0 3.1: Multi-client, TLS-only IRC bouncer
 net-irc/srain 1.7.0: Modern, beautiful IRC client written in GTK+ 3
@@ -1447,7 +1455,7 @@ net-voip/discover-overlay 0.6.9-r1 0.7.4: Yet another Discord overlay for Linux 
 net-voip/gnome-calls 45.0 46.3: Phone dialer and call handler
 net-voip/re 3.8.0-r1 3.9.0-r1 3.10.0-r1 3.11.0-r1 3.12.0 3.13.0: Generic library for real-time communications with async IO support
 net-voip/vvmd 0.8-r1: vvmd is a lower level daemon that retrieves Visual Voicemail
-net-vpn/candy 5.9.2: A reliable, low-latency, and anti-censorship virtual private network
+net-vpn/candy 5.9.3: A reliable, low-latency, and anti-censorship virtual private network
 net-vpn/cloudflare-warp 2024.2.62-r2 2024.4.133-r1: Cloudflare Warp Client
 net-vpn/fastd 22: A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
 net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that require SAML
@@ -1575,7 +1583,7 @@ sys-fs/btrfs-heatmap 9-r1: Python 3 script to draw a heatmap of a btrfs filesyst
 sys-fs/ddrescueview 0.4.5: Graphical viewer for GNU ddrescue mapfiles
 sys-fs/diskonaut 0.10.0 0.11.0 9999: Terminal disk space visual navigator
 sys-fs/dua-cli 2.25.0 2.28.0 2.29.0: A tool to conveniently learn about the disk usage of directories, fast!
-sys-fs/dwarfs 0.9.9 0.9.10-r1: A fast very high compression read-only FUSE file system
+sys-fs/dwarfs 0.9.10-r1: A fast very high compression read-only FUSE file system
 sys-fs/dwarfs-bin 0.9.10: Static version of a fast very high compression read-only FUSE file system
 sys-fs/fstransform 0.9.4: Tool for in-place filesystem conversion
 sys-fs/gcsfuse 1.2.0: A user-space file system for interacting with Google Cloud Storage
@@ -1587,7 +1595,7 @@ sys-fs/ntfs2btrfs 20240115: Conversion tool from NTFS to Btrfs
 sys-fs/ufiformat 0.9.9: USB Floppy Disk formatting tool
 sys-fs/zfs-auto-utils 1.0.0: ZFS Automatic Scrub/Trim for Linux
 sys-kernel/dpdk-kmod 23.03: DPDK Kernel Nic Interface module
-sys-kernel/uek-sources 5.15.0.206.149.1 5.15.0.206.153.6 5.15.0.206.153.7: Unbreakable Enterprise Kernel (UEK) sources built from Oracle
+sys-kernel/uek-sources 5.15.0.206.149.1 5.15.0.206.153.6 5.15.0.206.153.7 5.15.0.300.159.7: Unbreakable Enterprise Kernel (UEK) sources built from Oracle
 sys-kernel/ugrd 1.2.2 1.3.8 1.4.0 1.4.2 1.5.1 1.6.0 1.7.1 1.8.4 1.11.2 1.12.0 1.13.0 9999: Python based initramfs generator with TOML defintions
 sys-kernel/usermode-kernel 6.0.12: Linux kernel built with Gentoo patches
 sys-kernel/xow 0.5: Linux driver for the Xbox One wireless dongle
@@ -1640,6 +1648,7 @@ www-apps/zola 0.18.0: A fast static site generator with everything built-in
 www-client/badwolf 1.3.0-r1 9999: Minimalist and privacy-oriented WebKitGTK+ browser
 www-client/browsh 1.8.2: A fully-modern text-based browser, rendering to TTY and browsers
 www-client/firefox-developer-bin 122.0 128.0: Firefox browser developer edition
+www-client/mullvad-browser-bin 13.5: The Mullvad Browser is developed to minimize tracking and fingerprinting.
 www-client/nyxt 3.11.4 3.11.5 3.11.6 3.11.7 9999: Nyxt - the hacker's power-browser
 www-client/vimb 3.6.0 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
 www-client/woob 3.1-r1 9999: Web Outside Of Browsers (core, site modules and applications)

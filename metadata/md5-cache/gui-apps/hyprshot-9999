@@ -1,0 +1,12 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=install postinst unpack
+DESCRIPTION=Hyprshot is an utility to easily take screenshot in Hyprland using your mouse
+EAPI=8
+HOMEPAGE=https://github.com/Gustash/Hyprshot/
+INHERIT=git-r3 optfeature
+LICENSE=GPL-3
+PROPERTIES=live
+RDEPEND=app-misc/jq app-shells/bash gui-apps/grim gui-apps/slurp gui-apps/wl-clipboard gui-wm/hyprland x11-libs/libnotify
+SLOT=0
+_eclasses_=git-r3	fbb2889c81f3a05910c1524db69425c1	optfeature	222cb475c5a4f7ae7cfb0bf510a6fe54
+_md5_=92604224f1bafc15b207531b74a03231

@@ -1,0 +1,15 @@
+DEFINED_PHASES=install postinst postrm preinst
+DESCRIPTION=The Mullvad Browser is developed to minimize tracking and fingerprinting.
+EAPI=8
+HOMEPAGE=https://github.com/mullvad/mullvad-browser https://mullvad.net/
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=desktop xdg
+IUSE=wayland X
+KEYWORDS=-* ~amd64
+LICENSE=MPL-2.0
+RDEPEND=app-accessibility/at-spi2-core app-misc/mime-types app-shells/bash dev-libs/dbus-glib dev-libs/glib dev-libs/nspr dev-libs/nss gui-libs/gtk media-libs/alsa-lib media-libs/fontconfig media-libs/freetype media-video/ffmpeg sys-apps/dbus wayland? ( sys-apps/xdg-desktop-portal ) X? ( x11-libs/cairo x11-themes/hicolor-icon-theme x11-libs/libX11 x11-libs/libxcb x11-libs/libXcomposite x11-libs/libXcursor x11-libs/libXdamage x11-libs/libXfixes x11-libs/libXi x11-libs/libXrandr x11-libs/libXrender x11-libs/libXt x11-libs/libXtst )
+RESTRICT=bindist mirror test strip
+SLOT=0
+SRC_URI=amd64? ( https://github.com/mullvad/mullvad-browser/releases/download/13.5/mullvad-browser-linux-x86_64-13.5.tar.xz )
+_eclasses_=desktop	021728fdc1b03b36357dbc89489e0f0d	xdg-utils	baea6080dd821f5562d715887954c9d3	xdg	4a14c5c24f121e7da66e5aab4a168c6e
+_md5_=edacdf6eda7f3f3faa880d677d6ee999
