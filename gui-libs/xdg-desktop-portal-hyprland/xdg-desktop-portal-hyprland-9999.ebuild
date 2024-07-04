@@ -9,14 +9,10 @@ DESCRIPTION="xdg-desktop-portal backend for hyprland"
 HOMEPAGE="https://github.com/hyprwm/xdg-desktop-portal-hyprland"
 
 if [[ ${PV} == 9999 ]]; then
-	EGIT_REPO_URI="https://github.com/hyprwm/xdg-desktop-portal-hyprland.git"
+	EGIT_REPO_URI="https://github.com/hyprwm/${PN}.git"
 	inherit git-r3
 else
-	PROTO_COMMIT="4d29e48433270a2af06b8bc711ca1fe5109746cd"
-	SRC_URI="https://github.com/hyprwm/xdg-desktop-portal-hyprland/archive/refs/tags/v${PV}.tar.gz \
-		-> xdg-desktop-hyprland-${PV}.tar.gz
-	https://github.com/hyprwm/hyprland-protocols/archive/${PROTO_COMMIT}.tar.gz \
-		-> proto-subproject-${PV}.tar.gz"
+	SRC_URI="https://github.com/hyprwm/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.gh.tar.gz"
 	KEYWORDS="~amd64"
 fi
 
@@ -72,18 +68,8 @@ pkg_setup() {
 	fi
 }
 
-src_unpack() {
-	if [[ ${PV} == 9999 ]]; then
-		git-r3_src_unpack
-	else
-		default
-		rmdir "${S}/subprojects/hyprland-protocols" || die
-		mv "hyprland-protocols-${PROTO_COMMIT}" "${S}/subprojects/hyprland-protocols" || die
-	fi
-}
-
 src_prepare() {
-	eapply "${FILESDIR}/xdg-desktop-portal-hyprland-9999_use_sys_sdbus-c++.patch"
+	eapply "${FILESDIR}/xdg-desktop-portal-hyprland-1.3.2_use_sys_sdbus-c++.patch"
 	sed -i "/add_compile_options(-O3)/d" "${S}/CMakeLists.txt" || die
 	cmake_src_prepare
 }

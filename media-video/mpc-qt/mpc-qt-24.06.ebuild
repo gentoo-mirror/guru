@@ -9,12 +9,12 @@ DESCRIPTION="Media Player Classic Qute Theater"
 HOMEPAGE="https://mpc-qt.github.io/"
 SRC_URI="https://github.com/${PN}/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 
-LICENSE="GPL-2"
+LICENSE="GPL-2+"
 SLOT="0"
 KEYWORDS="~amd64"
 
 DEPEND="
-	dev-qt/qtbase:6[dbus,gui,network,opengl,widgets]
+	dev-qt/qtbase:6[dbus,gui,network,opengl,wayland,widgets]
 	media-video/mpv:=[libmpv]
 "
 RDEPEND="${DEPEND}"

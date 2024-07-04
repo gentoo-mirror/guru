@@ -11,9 +11,9 @@ SRC_URI="https://github.com/jeremy-rifkin/${PN}/archive/refs/tags/v${PV}.tar.gz 
 
 LICENSE="MIT"
 SLOT="0"
+KEYWORDS="~amd64"
 IUSE="test"
 RESTRICT="!test? ( test )"
-KEYWORDS="~amd64"
 
 DEPEND="dev-libs/libdwarf
 	test? ( dev-cpp/gtest )"
@@ -21,6 +21,7 @@ RDEPEND="${DEPEND}"
 
 PATCHES=( "${FILESDIR}/${PN}-fix-tests.patch" )
 
+QA_FLAGS_IGNORED="unittest"
 
 src_configure() {
 	local mycmakeargs=(

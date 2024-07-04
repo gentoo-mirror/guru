@@ -15,7 +15,7 @@ KEYWORDS="~amd64"
 
 RDEPEND="
 	>=sci-libs/opencascade-7.7.0-r2
-	<sci-libs/opencascade-7.7.1
+	<sci-libs/opencascade-7.8.0
 	dev-qt/qtcore:5
 	dev-qt/qtgui:5
 	dev-qt/qtwidgets:5
@@ -26,6 +26,7 @@ DEPEND="${RDEPEND}"
 
 PATCHES=(
 	"${FILESDIR}"/${P}-nogit.patch
+	"${FILESDIR}"/${P}-gcc14.patch
 )
 
 src_configure() {
