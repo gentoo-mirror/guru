@@ -32,8 +32,8 @@ BDEPEND="
 "
 
 PATCHES=(
-	# make a test failure verbose, bug #928159
-	"${FILESDIR}/${P}-verbose-error.patch"
+	# getxattr does not seem to work well under QA box. bug #934951
+	"${FILESDIR}/${P}-disable-checksum-test.patch"
 )
 
 src_prepare() {
