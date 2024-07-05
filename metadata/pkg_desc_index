@@ -736,7 +736,6 @@ dev-python/proselint 0.13.0: A linter for prose
 dev-python/protego 0.3.0: Pure-Python robots.txt parser with support for modern conventions
 dev-python/proxy_tools 0.1.0_p1: Simple proxy (as in the GoF design pattern)
 dev-python/psycopg2cffi 2.9.0-r1: Implementation of the psycopg2 module using cffi. Compatible with Psycopg 2.5.
-dev-python/pure-protobuf 3.0.1: Python implementation of Protocol Buffers data types with dataclasses support
 dev-python/py-nanoid 9999: Python Nanoid
 dev-python/pyagentx 0.4-r1: Python AgentX Implementation
 dev-python/pyclip 0.7.0-r1 9999: Python clipboard module
@@ -870,6 +869,7 @@ dev-util/bazelisk 1.12.0: A user-friendly launcher for Bazel
 dev-util/bc-ur 0.3.0: Blockchain Commons UR Library
 dev-util/bruno-bin 1.9.0 1.9.0-r1: Opensource IDE For Exploring and Testing Api's
 dev-util/bump2version 1.0.1: Version-bump your software with a single command!
+dev-util/cargo-post 0.1.7: A cargo wrapper that executes a post build script after a successful build.
 dev-util/catppuccin-catwalk 1.3.2: Soothing pastel previews for the high-spirited!
 dev-util/catppuccin-whiskers 2.4.0: Soothing port creation tool for the high-spirited!
 dev-util/cmakelang 0.6.13: Provides Quality Assurance (QA) tools for cmake
@@ -1261,7 +1261,7 @@ media-sound/rsgain 3.5.1: Really Simple replay Gain calculator for tagging audio
 media-sound/spot 0.4.0: GTK4 Spotify (Premium) client
 media-sound/spotify-adblock 1.0.1 1.0.2 1.0.3: Adblocker for Spotify
 media-sound/spotify-player 0.18.1 0.18.2 9999: spotify_player is a fast, easy to use, and configurable terminal music player.
-media-sound/spotifyd 0.3.5: A Spotify daemon
+media-sound/spotifyd 0.3.5_p20240513: A Spotify daemon
 media-sound/tidal-hifi-bin 5.14.1: Web version of Tidal running in electron with Hi-Fi support thanks to Widevine.
 media-sound/yewtube 2.10.5 9999: Terminal-based YouTube player and downloader
 media-sound/youtube-music-bin 3.3.6: YouTube Music Desktop App bundled with custom plugins
@@ -1310,7 +1310,7 @@ net-analyzer/gping 1.16.1-r1: Ping, but with a graph
 net-analyzer/munin-contrib 0.2021.04.27 0.2024.03.04 0.2024.03.04-r1: User contributed stuff related to munin
 net-analyzer/netsniff-ng 0.6.8-r1: high performance network sniffer for packet inspection
 net-client/amfora 1.8.0 1.9.2: A fancy terminal browser for the Gemini protocol.
-net-client/castor 0.8.18 0.9.0: A graphical browser for plain-text protocols
+net-client/castor 0.8.18 0.9.0-r1: A graphical browser for plain-text protocols
 net-client/kristall 0.3-r2 0.4: Visual cross-platform gemini browser
 net-client/lagrange 1.17.5 1.17.6: Desktop GUI client for browsing Geminispace
 net-client/offpunk 1.9.1: Offline-First Gemini/Web/Gopher/RSS reader and browser
@@ -1320,7 +1320,7 @@ net-dialup/atinout 0.9.1-r1: AT commands as input are sent to modem and response
 net-dialup/minimodem 0.24-r1 9999: General-purpose software audio FSK modem
 net-dialup/syncterm 1.1 9999: BBS (bulletin board system) terminal
 net-dialup/tcpser 1.1.4: Hayes Smartmodem emulator over TCP/IP
-net-dialup/tio 3.3: Simple TTY terminal application
+net-dialup/tio 3.5: Simple TTY terminal application
 net-dns/AdGuardHome 0.107.49 0.107.50 0.107.51: Network-wide ads & trackers blocking DNS server like Pi-Hole with web ui
 net-dns/blocky 0.22 0.23 0.24 9999: Fast and lightweight DNS proxy as ad-blocker with many features written in Go
 net-fs/httpdirfs 1.2.0: Filesystem to mount HTTP directory listings, with a permanent cache
@@ -1625,7 +1625,7 @@ sys-process/xe 1.0-r1: Simple xargs and apply replacement with sane defaults
 virtual/crystal-db 0.13: Virtual for Crystal database drivers
 www-apps/castopod 1.4.3 1.4.5: Open-source hosting platform made for podcasters
 www-apps/code-server-bin 4.14.1 4.15.0 4.16.0 4.16.1 4.17.0 4.17.1 4.18.0 4.19.1: VS Code in the browser (binary version with unbundled node and ripgrep)
-www-apps/forgejo 1.21.11.1 7.0.3 7.0.4: A self-hosted lightweight software forge
+www-apps/forgejo 1.21.11.1 7.0.4 7.0.5: A self-hosted lightweight software forge
 www-apps/freshrss 1.23.1 1.24.1: A free, self-hostable news aggregator
 www-apps/gotosocial 0.9.0 0.10.0: Fast, fun, ActivityPub server, powered by Go
 www-apps/honk 0.9.8 0.9.91: ActivityPub server with minimal setup and support costs
