@@ -12,7 +12,7 @@ SRC_URI="https://github.com/artemsen/swayimg/archive/refs/tags/v${PV}.tar.gz -> 
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="avif +exif exr +gif heif +jpeg jpegxl +png svg tiff webp bash-completion"
+IUSE="avif exif exr gif heif jpeg jpegxl png svg tiff webp bash-completion"
 
 RDEPEND="
 	dev-libs/json-c:=
@@ -29,14 +29,16 @@ RDEPEND="
 	jpeg? ( media-libs/libjpeg-turbo:= )
 	jpegxl? ( media-libs/libjxl:= )
 	png? ( media-libs/libpng:= )
-	svg? ( gnome-base/librsvg:2 )
+	svg? (
+		dev-libs/glib:2
+		gnome-base/librsvg:2
+		x11-libs/cairo
+	)
 	tiff? ( media-libs/tiff:= )
 	webp? ( media-libs/libwebp:= )"
 DEPEND="${RDEPEND}
 	dev-libs/wayland-protocols"
 BDEPEND="dev-util/wayland-scanner"
-
-PATCHES=( "${FILESDIR}/${P}-fix-automagic.patch" )
 
 src_configure() {
 	local emesonargs=(

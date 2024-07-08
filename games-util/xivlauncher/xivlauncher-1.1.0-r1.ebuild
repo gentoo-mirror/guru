@@ -3,7 +3,7 @@
 
 EAPI=8
 
-DOTNET_PKG_COMPAT="6.0"
+DOTNET_PKG_COMPAT="8.0"
 NUGETS="
 castle.core@4.4.1
 cheaploc@1.1.6
@@ -237,7 +237,7 @@ vortice.mathematics@1.4.25
 
 inherit dotnet-pkg desktop xdg
 
-XIVQL_COMMIT="020dde9d504f879a56b08fde570bcb4b5772ed3e"
+XIVQL_COMMIT="cdde1fbeb31549dea13bd015e76b0b3964543c12"
 
 DESCRIPTION="Custom Launcher for Final Fantasy XIV Online (Crossplatform rewrite)"
 HOMEPAGE="https://github.com/goatcorp/XIVLauncher.Core/"
@@ -273,9 +273,17 @@ RDEPEND="
 	media-libs/freetype:2
 	media-libs/glu
 	x11-libs/libSM
+	dev-libs/glib
 "
 
-DOTNET_PKG_PROJECTS=( "${S}/XIVLauncher.Core/XIVLauncher.Core.csproj" )
+QA_FLAGS_IGNORED="
+/opt/xivlauncher/libsteam_api64.so
+/opt/xivlauncher/libskeychain.so
+/opt/xivlauncher/libcimgui.so
+/opt/xivlauncher/XIVLauncher.Core
+"
+
+DOTNET_PKG_PROJECTS=("${S}/XIVLauncher.Core/XIVLauncher.Core.csproj")
 
 src_prepare() {
 	rmdir "${WORKDIR}/XIVLauncher.Core-${PV}/lib/FFXIVQuickLauncher" || die
@@ -288,11 +296,7 @@ src_prepare() {
 }
 
 src_install() {
-	# lower openssl security for the launcher due to Square Enix's standards
-	cp "${FILESDIR}/openssl.cnf" "${DOTNET_PKG_OUTPUT}/"
-
 	dotnet-pkg-base_install
-	dotnet-pkg-base_append_launchervar "OPENSSL_CONF=/usr/share/${P}/openssl.cnf"
 	dotnet-pkg-base_dolauncher "/usr/share/${P}/XIVLauncher.Core" "xivlauncher"
 
 	domenu ../misc/linux_distrib/XIVLauncher.desktop

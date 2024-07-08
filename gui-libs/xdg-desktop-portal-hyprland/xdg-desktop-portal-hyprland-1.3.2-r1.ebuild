@@ -1,37 +1,42 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 2022-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-inherit meson toolchain-funcs
+inherit cmake toolchain-funcs
 
 DESCRIPTION="xdg-desktop-portal backend for hyprland"
 HOMEPAGE="https://github.com/hyprwm/xdg-desktop-portal-hyprland"
 
 if [[ ${PV} == 9999 ]]; then
-	EGIT_REPO_URI="https://github.com/hyprwm/xdg-desktop-portal-hyprland.git"
+	EGIT_REPO_URI="https://github.com/hyprwm/${PN}.git"
 	inherit git-r3
 else
-	SRC_URI="https://github.com/hyprwm/xdg-desktop-portal-hyprland/archive/refs/tags/v${PV}.tar.gz \
-		-> xdg-desktop-hyprland-${PV}.tar.gz"
+	SRC_URI="https://github.com/hyprwm/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.gh.tar.gz"
 	KEYWORDS="~amd64"
 fi
 
 LICENSE="MIT"
-SLOT="0/9999"
-IUSE="elogind systemd"
+SLOT="0"
+IUSE="elogind qt6 systemd"
 REQUIRED_USE="?? ( elogind systemd )"
 
 DEPEND="
 	>=media-video/pipewire-0.3.41:=
 	dev-cpp/sdbus-c++
+	dev-libs/hyprlang:=
 	dev-libs/inih
 	dev-libs/wayland
-	dev-qt/qtbase
-	dev-qt/qtcore
-	dev-qt/qtgui
-	dev-qt/qtwayland:6
-	dev-qt/qtwidgets
+	qt6? (
+		dev-qt/qtbase:6[gui,widgets]
+		dev-qt/qtwayland:6
+	)
+	!qt6? (
+		dev-qt/qtcore
+		dev-qt/qtgui
+		dev-qt/qtwidgets
+		dev-qt/qtwayland:5
+	)
 	media-libs/mesa
 	sys-apps/util-linux
 	x11-libs/libdrm
@@ -41,10 +46,12 @@ DEPEND="
 		sys-libs/basu
 	)
 "
+
 RDEPEND="
 	${DEPEND}
 	sys-apps/xdg-desktop-portal
 "
+
 BDEPEND="
 	>=dev-libs/wayland-protocols-1.24
 	dev-libs/hyprland-protocols
@@ -53,7 +60,7 @@ BDEPEND="
 "
 
 pkg_setup() {
-		[[ ${MERGE_TYPE} == binary ]] && return
+	[[ ${MERGE_TYPE} == binary ]] && return
 
 	if tc-is-gcc && ver_test $(gcc-version) -lt 13 ; then
 		eerror "XDPH needs >=gcc-13 or >=clang-17 to compile."
@@ -67,16 +74,8 @@ pkg_setup() {
 }
 
 src_prepare() {
-		eapply "${FILESDIR}/xdg-desktop-portal-hyprland-1.1.0_fix_clang.patch"
-		default
-}
-
-src_compile() {
-	meson_src_compile
-	emake -C hyprland-share-picker all
-}
-
-src_install() {
-	meson_src_install
-	dobin "${S}/hyprland-share-picker/build/hyprland-share-picker"
+	eapply "${FILESDIR}/xdg-desktop-portal-hyprland-1.3.2_use_sys_sdbus-c++.patch"
+	eapply "${FILESDIR}/xdg-desktop-portal-hyprland-1.3.2_fix_pipewire.patch"
+	sed -i "/add_compile_options(-O3)/d" "${S}/CMakeLists.txt" || die
+	cmake_src_prepare
 }
