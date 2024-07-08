@@ -15,6 +15,8 @@ EGO_SUM=(
 	"github.com/dlasky/gotk3-layershell v0.0.0-20221218201547-1f6674a3f872/go.mod"
 	"github.com/dlasky/gotk3-layershell v0.0.0-20230802002603-b0c42cd8474f"
 	"github.com/dlasky/gotk3-layershell v0.0.0-20230802002603-b0c42cd8474f/go.mod"
+	"github.com/dlasky/gotk3-layershell v0.0.0-20240515133811-5c5115f0d774"
+	"github.com/dlasky/gotk3-layershell v0.0.0-20240515133811-5c5115f0d774/go.mod"
 	"github.com/fsnotify/fsnotify v1.6.0"
 	"github.com/fsnotify/fsnotify v1.6.0/go.mod"
 	"github.com/fsnotify/fsnotify v1.7.0"
@@ -24,6 +26,8 @@ EGO_SUM=(
 	"github.com/gotk3/gotk3 v0.6.2/go.mod"
 	"github.com/gotk3/gotk3 v0.6.3"
 	"github.com/gotk3/gotk3 v0.6.3/go.mod"
+	"github.com/gotk3/gotk3 v0.6.4"
+	"github.com/gotk3/gotk3 v0.6.4/go.mod"
 	"github.com/joshuarubin/go-sway v1.2.0"
 	"github.com/joshuarubin/go-sway v1.2.0/go.mod"
 	"github.com/joshuarubin/lifecycle v1.0.0/go.mod"
@@ -48,6 +52,8 @@ EGO_SUM=(
 	"golang.org/x/sync v0.5.0/go.mod"
 	"golang.org/x/sync v0.6.0"
 	"golang.org/x/sync v0.6.0/go.mod"
+	"golang.org/x/sync v0.7.0"
+	"golang.org/x/sync v0.7.0/go.mod"
 	"golang.org/x/sys v0.0.0-20220715151400-c0bba94af5f8/go.mod"
 	"golang.org/x/sys v0.0.0-20220908164124-27713097b956/go.mod"
 	"golang.org/x/sys v0.10.0"
@@ -58,10 +64,12 @@ EGO_SUM=(
 	"golang.org/x/sys v0.16.0/go.mod"
 	"golang.org/x/sys v0.17.0"
 	"golang.org/x/sys v0.17.0/go.mod"
+	"golang.org/x/sys v0.21.0"
+	"golang.org/x/sys v0.21.0/go.mod"
 	"gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod"
 	"gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c/go.mod"
 	"gopkg.in/yaml.v3 v3.0.1"
-	)
+)
 go-module_set_globals
 
 DESCRIPTION="Application drawer for wlroots-based Wayland compositors"
