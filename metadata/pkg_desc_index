@@ -356,6 +356,7 @@ app-vim/nim-syntax 1.1_p20211111: vim plugin: nim language support
 app-vim/openbsd-style 1.1: vim plugin: indent code according to the OpenBSD and FreeBSD style(9)
 app-vim/qt-support 1.1: vim plugin: Qt, qmake, QML, Qbs, QRC, UI and TS support
 app-vim/rainbow 3.4.0_p20211113: vim plugin: Rainbow Parentheses Improved
+app-vim/rainbow_csv 9999: 🌈Rainbow CSV - Vim plugin: Highlight columns in CSV and TSV files and run queries in SQL-like language
 app-vim/tempus 2.0.0.20210514: Accessible themes for Vim
 app-vim/tex-conceal 20210409: vim plugin: extends the Conceal feature for LaTeX
 app-vim/themis 1.6.0 1.7.0: A testing framework for Vim script
@@ -373,7 +374,7 @@ app-voices/rhvoice-bdl 4.1: RHVoice voice: bdl (en)
 app-voices/rhvoice-clb 4.0: RHVoice voice: clb (en)
 app-voices/rhvoice-slt 4.1: RHVoice voice: slt (en)
 dev-build/FoBiS 3.0.5-r1: FoBiS.py, a Fortran Building System for poor men
-dev-build/cargo-make 0.37.12: Rust task runner and build tool
+dev-build/cargo-make 0.37.13: Rust task runner and build tool
 dev-build/fpm 0.9.0 0.10.0: Fortran Package Manager (fpm)
 dev-build/fypp 3.1 3.2: Fypp - Python powered Fortran preprocessor
 dev-build/just 1.29.0 1.29.1: Just a command runner (with syntax inspired by 'make')
@@ -643,7 +644,7 @@ dev-python/dasbus 1.7-r1: DBus library in Python 3
 dev-python/dateparser 1.2.0: Date parsing library designed to parse dates from HTML pages
 dev-python/decopatch 1.4.10: Create decorators easily in python
 dev-python/defcon 0.10.2: A set of UFO based objects for use in font editing applications
-dev-python/desktop-notifier 4.0.0 5.0.0: desktop-notifier is a Python library for cross-platform desktop notifications
+dev-python/desktop-notifier 4.0.0 5.0.1: desktop-notifier is a Python library for cross-platform desktop notifications
 dev-python/devtools 0.10.0-r1: Dev tools for python
 dev-python/digitalocean 1.17.0-r1: Digitalocean API access library
 dev-python/django-browser-reload 1.13.0: Automatically reload your browser in development
@@ -916,7 +917,7 @@ dev-util/qshaderedit 0.1.5: Multiplatform shader editor inspired by Apple's Open
 dev-util/quilttools 0.3-r1: Mailbox to quilt series converter
 dev-util/reflex 0.3.1: A small tool to watch a directory and rerun a command when certain files change
 dev-util/rust-rover 233.15026.24: A feature-rich Rust IDE with timely support by JetBrarins
-dev-util/rye 0.35.0: a Hassle-Free Python Experience
+dev-util/rye 0.36.0: a Hassle-Free Python Experience
 dev-util/spi-tools 1.0.2: Simple command line tools to help using Linux spidev devices
 dev-util/stripe-cli 9999: A command-line tool for Stripe
 dev-util/stylua 0.20.0: A code formatter for Lua
@@ -942,7 +943,7 @@ dev-zig/zls 0.10.0-r1 9999: The officially unofficial Ziglang language server
 games-action/ATLauncher 3.4.3.1 3.4.27.0: Minecraft launcher which integrates multiple different ModPacks
 games-action/blackvoxel 2.50 9999: Blackvoxel Video Game
 games-action/classicube 1.3.6 9999: Reverse-engineered Minecraft Classic client
-games-action/ddnet 18.2 9999: DDraceNetwork, a cooperative racing mod of Teeworlds
+games-action/ddnet 18.3.1 9999: DDraceNetwork, a cooperative racing mod of Teeworlds
 games-action/netrek-brmh 2.6.0: brmh client for netrek
 games-action/netrek-cow 3.3.2: cow client for netrek
 games-action/technic-launcher 4.625 4.768 4.822: Minecraft launcher for community-made modpacks on the Technic Platform
@@ -1017,7 +1018,7 @@ games-util/roll 2.6.1: Program to roll dices specified in a simple and intuitive
 games-util/samrewritten 9999 202008: Steam Achievement Manager For Linux
 games-util/sdl2-gamepad-mapper 0.0.8-r1: GUI application to generate an SDL2 mapping string from a generic controller
 games-util/steamtinkerlaunch 12.0: Wrapper script for Steam custom launch options
-games-util/xivlauncher 1.0.8: Custom Launcher for Final Fantasy XIV Online (Crossplatform rewrite)
+games-util/xivlauncher 1.1.0-r1: Custom Launcher for Final Fantasy XIV Online (Crossplatform rewrite)
 gnome-extra/commit 4.1-r1: Commit message editor
 gnome-extra/extension-manager 0.5.0 0.5.1 9999: A native tool for browsing, installing, and managing GNOME Shell Extensions
 gnome-extra/iio-sensor-proxy 3.3 3.5: IIO sensors to D-Bus proxy
@@ -1128,14 +1129,15 @@ gui-apps/wob 0.14.2 0.15.1-r1: Lightweight overlay volume/backlight/progress/any
 gui-apps/wscreensaver 9999: Xscreensaver screensavers ported to wayland
 gui-apps/wtype 0.4: xdotool type for wayland
 gui-apps/xremap 0.10.0: Dynamic key remap for X and Wayland
+gui-apps/xwayland-satellite 0.4: Xwayland outside your Wayland
 gui-apps/yambar 1.9.0 1.10.0 9999: Simplistic and highly configurable status panel for X and Wayland
 gui-libs/gtk-session-lock 0.2.0-r5 9999: GTK-based lockscreen for Wayland
 gui-libs/libcprime 4.5.0 9999: Library for managing settings of CoreApps
 gui-libs/libcsys 4.5.0 9999: Library for managing the device
 gui-libs/mir 2.17.0-r1: Set of libraries for building Wayland based shells
 gui-libs/scenefx 0.1: A replacement for the wlroots scene API with eye-candy effects.
-gui-libs/text-engine 0.1.1-r2 9999: A lightweight rich-text framework for GTK 4
-gui-libs/xdg-desktop-portal-hyprland 1.1.0-r1 1.2.2-r2 1.2.5-r2 1.2.6-r1 1.3.1 1.3.1-r1 1.3.2 9999: xdg-desktop-portal backend for hyprland
+gui-libs/text-engine 0.1.1-r3 9999: A lightweight rich-text framework for GTK 4
+gui-libs/xdg-desktop-portal-hyprland 1.3.1-r2 1.3.2-r1 9999: xdg-desktop-portal backend for hyprland
 gui-wm/cage 0.1.5 9999: A Wayland kiosk
 gui-wm/hyprland-contrib 0.1-r1 9999: Community-maintained extensions for hyprland
 gui-wm/miracle-wm 0.3.0: Tiling Wayland compositor based on Mir
@@ -1197,7 +1199,7 @@ media-gfx/qview 4.0 5.0 6.1: Practical and minimal image viewer
 media-gfx/sic 0.22.4: Accessible image processing and conversion from the terminal tool.
 media-gfx/silicon 0.5.2: Create beautiful image of your code
 media-gfx/svgcleaner 0.9.5: svgcleaner could help you to clean up your SVG files from the unnecessary data.
-media-gfx/swayimg 2.1: A lightweight image viewer for Wayland display servers
+media-gfx/swayimg 2.2: A lightweight image viewer for Wayland display servers
 media-gfx/timg 1.6.0: Terminal image and video viewer
 media-gfx/vimiv-qt 0.9.0: An image viewer with vim-like keybindings
 media-gfx/vpuppr 0.9.0-r1: VTuber application made with Godot 3.4
@@ -1416,8 +1418,8 @@ net-misc/gnome-ssh-askpass 9.2_p1: GTK-based passphrase dialog for use with Open
 net-misc/graftcp 0.7.1: A tool for redirecting a given program's TCP traffic to SOCKS5 or HTTP proxy
 net-misc/iipsrv 1.2: High performance image server for high resolution and scientific images
 net-misc/lyrics-in-terminal 1.5.0: Command Line Lyrics fetcher for MPRIS media players
-net-misc/maestral 1.9.3-r1: Maestral is an open-source Dropbox client written in Python
-net-misc/maestral-qt 1.9.3: Maestral is an open-source Dropbox client written in Python
+net-misc/maestral 1.9.3-r1 1.9.4_rc1: Maestral is an open-source Dropbox client written in Python
+net-misc/maestral-qt 1.9.3 1.9.4_rc1: Maestral is an open-source Dropbox client written in Python
 net-misc/mastorss 0.13.1 0.13.1-r1 9999: Another RSS to Mastodon bot
 net-misc/megasync 5.2.1.0-r1 9999: The official Qt-based program for syncing your MEGA account in your PC
 net-misc/myip 1.2.1: Get your external IP address using STUN server
@@ -1464,7 +1466,7 @@ net-voip/discover-overlay 0.6.9-r1 0.7.4: Yet another Discord overlay for Linux 
 net-voip/gnome-calls 45.0 46.3: Phone dialer and call handler
 net-voip/re 3.8.0-r1 3.9.0-r1 3.10.0-r1 3.11.0-r1 3.12.0 3.13.0: Generic library for real-time communications with async IO support
 net-voip/vvmd 0.8-r1: vvmd is a lower level daemon that retrieves Visual Voicemail
-net-vpn/candy 5.9.3: A reliable, low-latency, and anti-censorship virtual private network
+net-vpn/candy 5.9.4: A reliable, low-latency, and anti-censorship virtual private network
 net-vpn/cloudflare-warp 2024.2.62-r2 2024.4.133-r1: Cloudflare Warp Client
 net-vpn/fastd 22: A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
 net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that require SAML
@@ -1575,7 +1577,7 @@ sys-block/partclone 0.3.20: Partition cloning tool
 sys-boot/customrescuecd-x86-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/customrescuecd-x86_64-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/grml-rescueboot 0.6.1: grub2 script to add ISO images to the grub2 boot menu
-sys-boot/limine 7.0.0 7.0.3 7.0.5 7.3.0 7.5.0: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
+sys-boot/limine 7.0.0 7.0.3 7.0.5 7.3.0 7.5.0 7.9.2: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
 sys-boot/mkusb 23.2.0: CLI and GUI for creating bootable live USB, with optional persistent storage
 sys-boot/ventoy-bin 1.0.97 1.0.98: Creator of bootable USBs, with ability to copy ISOs, persistence storage
 sys-boot/woeusb-ng 0.2.10 0.2.12: Create Windows installer USB from ISO (rewrite of WoeUSB)
