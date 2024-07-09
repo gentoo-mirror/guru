@@ -13,7 +13,7 @@ inherit distutils-r1
 
 DESCRIPTION="Python bindings for the Plex API."
 HOMEPAGE="
-	https://pypi.org/project/plexapi/
+	https://pypi.org/project/PlexAPI/
 	https://github.com/pkkid/python-plexapi
 "
 
