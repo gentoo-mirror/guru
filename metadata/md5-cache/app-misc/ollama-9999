@@ -1,14 +1,15 @@
 BDEPEND=>=dev-lang/go-1.21.0 >=dev-build/cmake-3.24 >=sys-devel/gcc-11.4.0 nvidia? ( dev-util/nvidia-cuda-toolkit ) amd? ( sci-libs/clblast dev-libs/rocm-opencl-runtime ) >=dev-vcs/git-1.8.2.1[curl] >=dev-lang/go-1.20:= app-arch/unzip
-DEFINED_PHASES=compile install postinst pretend unpack
-DEPEND=>=dev-lang/go-1.21.0 >=dev-build/cmake-3.24 >=sys-devel/gcc-11.4.0 nvidia? ( dev-util/nvidia-cuda-toolkit ) amd? ( sci-libs/clblast dev-libs/rocm-opencl-runtime )
+DEFINED_PHASES=compile install postinst preinst pretend unpack
 DESCRIPTION=Get up and running with Llama 3, Mistral, Gemma, and other language models.
 EAPI=8
 HOMEPAGE=https://ollama.com
+IDEPEND=acct-group/ollama acct-user/ollama
 INHERIT=git-r3 go-module
 IUSE=nvidia amd
 LICENSE=MIT
 PROPERTIES=live
+RDEPEND=acct-group/ollama acct-user/ollama
 RESTRICT=strip
 SLOT=0
 _eclasses_=git-r3	fbb2889c81f3a05910c1524db69425c1	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	e503ea5acc20410237ba33ec3f7c857d	go-env	dbefaac6fd7019213514bccd65949d9a	go-module	83fd3ed1657cfc316c93d6a37018290d
-_md5_=ffa9b59b2518bd41f100e497987ba490
+_md5_=de4e7d5e6f720936b36f92b80dfdd2e4

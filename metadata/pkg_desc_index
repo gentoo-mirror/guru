@@ -21,6 +21,7 @@ acct-group/maubot 0: Group for Maubot Integrations
 acct-group/mautrix 0: Group for Mautrix Bridges
 acct-group/mock 0: System group: mock
 acct-group/monero 0: System group: monero
+acct-group/ollama 0: A group for ollama
 acct-group/owncast 0: Group for media-video/owncast
 acct-group/paludisbuild 0: System group: paludisbuild
 acct-group/pleroma 0: Group for www-apps/pleroma
@@ -64,6 +65,7 @@ acct-user/mautrix-slack 0: User for Mautrix Slack Bridge
 acct-user/mautrix-telegram 0: User for Mautrix Telegram Bridge
 acct-user/mautrix-whatsapp 0: User for Mautrix WhatsApp Bridge
 acct-user/monero 0: System user: monero
+acct-user/ollama 0: A user for ollama
 acct-user/owncast 0: User for media-video/owncast
 acct-user/paludisbuild 0: Build user for sys-apps/paludis
 acct-user/pleroma 0: User for www-apps/pleroma
@@ -154,7 +156,7 @@ app-crypt/ifcplugin-bin 3.1.1.0: Crypto Interface Web Browser Plugin
 app-crypt/intel-ipsec-mb 1.1 1.2 1.3 1.5 9999: Multi-Buffer Crypto for IPSec from Intel
 app-crypt/lego 4.14.2 4.15.0 4.16.0 4.16.1 4.17.4 9999: Let's Encrypt/ACME client (like certbot or acme.sh) and library written in Go
 app-crypt/pinentry-bemenu 0.13.2: Pinentry based on bemenu
-app-crypt/reop 2.1.1: reasonable expectation of privacy
+app-crypt/reop 2.1.1-r1: reasonable expectation of privacy
 app-crypt/sac-core 10.8.1050-r1: Thales/Gemalto SafeNet Authentication Client
 app-crypt/tang 14 15-r1: Tang binding daemon
 app-crypt/tomb 2.9-r6: Tomb :: File Encryption on GNU/Linux
@@ -256,6 +258,7 @@ app-misc/nerdfetch 8.1.2: A POSIX *nix fetch script using Nerdfonts
 app-misc/nwg-look 0.2.2 0.2.4 0.2.5: GTK3 settings editor adapted to work in the sway / wlroots environment
 app-misc/nwg-shell-wallpapers 1.3 1.4 1.5: Selection of wallpapers contributed to the nwg-shell project
 app-misc/oddjob 0.34.7-r1: A D-Bus service which runs odd jobs on behalf of client applications
+app-misc/ollama 9999: Get up and running with Llama 3, Mistral, Gemma, and other language models.
 app-misc/onefetch 2.19.0 2.21.0: Command-line Git information tool
 app-misc/pfetch 0.6.0: A pretty system information tool written in POSIX sh
 app-misc/pipes-rs 1.6.3: An over-engineered rewrite of pipes.sh in Rust
@@ -401,7 +404,7 @@ dev-cpp/pcg-cpp 0.98.1_p20210406-r1: Family of better random number generators
 dev-cpp/qt-jdenticon 0.3.0-r1 0.3.0_p20240107 0.3.1: Qt5 / C++14 Port of Jdenticon
 dev-cpp/rang 3.2: Minimal, header-only, modern C++ library for terminal goodies
 dev-cpp/scnlib 3.0.1: scanf for modern C++
-dev-cpp/simdutf 5.2.8: simdutf: Unicode validation and transcoding at billions of characters per second
+dev-cpp/simdutf 5.3.0-r1: simdutf: Unicode validation and transcoding at billions of characters per second
 dev-cpp/sprout 0_pre20190615: C++11/14 constexpr based Containers, Algorithms, Random numbers and others
 dev-cpp/toml11 3.8.1: TOML for Modern C++
 dev-cpp/trantor 1.5.18 1.5.19: Non-blocking I/O tcp network lib based on c++14/17
@@ -483,7 +486,7 @@ dev-hare/hare-json 9999: JSON support for Hare
 dev-hare/hare-linux 9999: Extra Linux support for Hare programs
 dev-hare/hare-png 9999: PNG implementation for Hare
 dev-hare/hare-ssh 0.24.0 9999: SSH library for Hare
-dev-hare/hare-xml 9999: XML support for Hare
+dev-hare/hare-xml 0_pre20231231 9999: XML support for Hare
 dev-java/corretto-bin 8.412.08.1 11.0.23.9.1 17.0.11.9.1 21.0.3.9.1 22.0.1.8.1: Prebuilt Java JDK binaries provided by Amazon Web Services
 dev-java/microsoft-openjdk-bin 11.0.22 17.0.10 21.0.2: Prebuilt Java JDK binaries provided by Microsoft
 dev-lang/cc65 2.19-r3 9999-r1: Cross-development package for 65(C)02 systems
@@ -574,7 +577,6 @@ dev-ml/crowbar 0.2.1: Write tests, let a fuzzer find failing cases
 dev-ml/domain-name 0.4.0: RFC 1035 Internet domain names
 dev-ml/gmap 0.3.0-r2: Heterogenous Map over a GADT
 dev-ml/lwt-dllist 1.0.1: Mutable doubly-linked list with Lwt iterators
-dev-ml/ollama 9999: Get up and running with Llama 3, Mistral, Gemma, and other language models.
 dev-ml/pecu 0.6: Implementation of quoted-printable encoder/decoder from RFC2045
 dev-ml/psq 0.2.0-r2 0.2.1: Functional Priority Search Queues for OCaml
 dev-ml/randomconv 0.1.3: Convert from random bytes to random native numbers
@@ -617,7 +619,6 @@ dev-python/b2sdk 2.0.0-r1 2.3.0: The client library for BackBlaze's B2 product
 dev-python/baron 0.9: Full Syntax Tree for python to make writing refactoring code a realist task
 dev-python/base58 2.1.1-r1: Base58 and Base58Check implementation
 dev-python/betamax-serializers 0.2.1: A set of third-party serializers for Betamax
-dev-python/betterproto 2.0.0_beta4 2.0.0_beta5 9999: Better Protobuf / gRPC Support for Python
 dev-python/bidict 0.22.1: The bidirectional mapping library for Python
 dev-python/billiard 4.0.2: Python multiprocessing fork
 dev-python/biplist 1.0.3: A binary plist parser/generator for Python
@@ -673,7 +674,6 @@ dev-python/graphene 3.2.2: GraphQL Framework for Python
 dev-python/graphql-core 3.2.3: Python port of GraphQL.js, the JavaScript reference implementation for GraphQL
 dev-python/graphql-relay 3.2.0: Relay library for graphql-core
 dev-python/grpc-stubs 1.53.0.3: gRPC typing stubs for Python
-dev-python/grpclib 0.4.2 0.4.3: Pure-Python gRPC implementation for asyncio
 dev-python/guidata 3.5.0-r1 3.5.2: Library for user interfaces for easy dataset editing and display
 dev-python/guiqwt 4.4.5-r1: Efficient 2D plotting Python library based on PythonQwt
 dev-python/guppy3 3.1.3-r1 3.1.4: A Python Programming Environment & Heap analysis toolset
@@ -812,14 +812,12 @@ dev-python/skia-pathops 0.8.0: Python bindings for the Skia Path Ops
 dev-python/sortedcollections 2.1.0: Apache2 licensed Python sorted collections library
 dev-python/sphinx-argparse-cli 1.11.1: Render CLI arguments (sub-commands friendly) defined by argparse module
 dev-python/sphinx-click 4.2.0: Sphinx plugin to automatically document click-based applications
-dev-python/sphinx-design 0.5.0: A sphinx extension for designing beautiful, view size responsive web components
 dev-python/sphinx-hoverxref 1.3.0: Sphinx extension to show tooltips with content embedded when hover a reference
 dev-python/sphinx-paramlinks 0.6.0: Allows param links in Sphinx function/method descriptions to be linkable
 dev-python/sphinx-rtd-dark-mode 1.2.4: Dark mode for the Sphinx Read the Docs theme
 dev-python/sphinx-sitemap 2.5.1 2.6.0: Sitemap generator for Sphinx
 dev-python/sphinx-version-warning 1.1.2: Sphinx extension to add a warning banner
 dev-python/sphinxcontrib-katex 0.9.9 0.9.10: KaTeX Sphinx extension for rendering of math in HTML pages
-dev-python/sphinxext-opengraph 0.9.1: Sphinx extension to generate unique OpenGraph metadata
 dev-python/srt 3.5.1 3.5.2 3.5.3: A tiny library for parsing, modifying, and composing SRT files
 dev-python/sse-starlette 1.1.6: Server Sent Events for Starlette
 dev-python/starkbank-ecdsa 2.2.0-r1: A lightweight and fast pure python ECDSA library
@@ -1097,7 +1095,7 @@ gui-apps/rofi-wayland 1.7.5 1.7.5-r1: A window switcher, run dialog and dmenu re
 gui-apps/satty 0.12.0 9999: A screenshot annotation tool inspired by Swappy and Flameshot.
 gui-apps/sddm-conf 0.2.0: SDDM configuration editor
 gui-apps/sfwbar 1.0_beta14 1.0_beta15: S* Floating Window Bar
-gui-apps/showmethekey 1.12.0: Show keys you typed on screen.
+gui-apps/showmethekey 1.12.0 1.13.1: Show keys you typed on screen.
 gui-apps/somebar 1.0.0 1.0.3 9999: dwm-like bar for dwl
 gui-apps/someblocks 1.0.0 1.0.1 9999: Modular status bar for somebar written in c.
 gui-apps/sway-audio-idle-inhibit 9999: Prevents swayidle from idle when an application is outputting or receiving audio
@@ -1375,7 +1373,7 @@ net-im/teams-for-linux 1.4.12 1.4.13 1.5.2: Unofficial Microsoft Teams client fo
 net-im/vesktop-bin 1.5.2 1.5.3: All-in-one voice and text chat for gamers with Vencord Preinstalled
 net-im/whatsapp-for-linux 1.5.3 1.6.2: An unofficial WhatsApp desktop application for Linux
 net-irc/catgirl 2.2 2.2a: TLS-only terminal IRC client
-net-irc/halloy 2024.7: IRC application written in Rust
+net-irc/halloy 2024.8: IRC application written in Rust
 net-irc/litterbox 1.9: TLS-only IRC logger
 net-irc/pounce 3.0 3.1: Multi-client, TLS-only IRC bouncer
 net-irc/srain 1.7.0: Modern, beautiful IRC client written in GTK+ 3
@@ -1406,7 +1404,7 @@ net-misc/curlie 1.7.2: Curlie is a frontend to curl that adds the ease of use of
 net-misc/cve-client 1.1.0 9999: CLI-based client / toolbox for CVE.org
 net-misc/eg25-manager 0.4.2: Daemon for managing the Quectel EG25 modem
 net-misc/fedigroup 1.0.6 1.0.8: Emulate group accounts on Mastodon/Pleroma
-net-misc/freetube-bin 0.19.2 0.20.0 0.21.0: A private YouTube desktop client
+net-misc/freetube-bin 0.20.0 0.21.0 0.21.1: A private YouTube desktop client
 net-misc/gdown 5.1.0 5.2.0: Google Drive public file/folder downloader
 net-misc/gdrive 3.9.0 3.9.1: Google Drive CLI Client
 net-misc/gemget 1.9.0: Command line downloader for the Gemini protocol
@@ -1596,7 +1594,7 @@ sys-fs/diskonaut 0.10.0 0.11.0 9999: Terminal disk space visual navigator
 sys-fs/dua-cli 2.25.0 2.28.0 2.29.0: A tool to conveniently learn about the disk usage of directories, fast!
 sys-fs/dwarfs 0.9.10-r1: A fast very high compression read-only FUSE file system
 sys-fs/dwarfs-bin 0.9.10: Static version of a fast very high compression read-only FUSE file system
-sys-fs/ffmpegfs 2.16: FUSE-based transcoding filesystem with support from/to many formats.
+sys-fs/ffmpegfs 2.16-r1: FUSE-based transcoding filesystem with support from/to many formats.
 sys-fs/fstransform 0.9.4: Tool for in-place filesystem conversion
 sys-fs/gcsfuse 1.2.0: A user-space file system for interacting with Google Cloud Storage
 sys-fs/gdu 5.14.0 5.25.0: Disk usage analyzer with console interface written in Go
@@ -1694,7 +1692,7 @@ x11-misc/i3-restore 4.1: A simple bash + python script to restore your i3 sessio
 x11-misc/i3-resurrect 1.4.5: Saving and restoring i3 workspaces
 x11-misc/i3lock-color 2.13.5: The world's most popular non-default computer lockscreen
 x11-misc/i3lock-fancy-rapid 0.0.0_pre20201109-r1 0.0.0_pre20210421: A faster implementation of i3lock-fancy
-x11-misc/i3status-rust 0.32.3 0.33.0 0.33.1: A feature-rich and resource-friendly replacement for i3status, written in Rust.
+x11-misc/i3status-rust 0.33.1: A feature-rich and resource-friendly replacement for i3status, written in Rust.
 x11-misc/input-leap 9999: Share a mouse and keyboard between computers (fork of Barrier)
 x11-misc/ksnip 1.10.1: Ksnip is a Qt based cross-platform screenshot tool
 x11-misc/leftwm-theme 0.1.2_rc1: A theme mangager for LeftWM
