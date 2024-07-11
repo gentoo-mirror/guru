@@ -1,4 +1,4 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -15,35 +15,29 @@ SRC_URI="
 	amd64? ( ${BASE_URI}-amd64.tar.gz -> ${P}-amd64.tar.gz )
 	arm64? ( ${BASE_URI}-arm64.tar.gz -> ${P}-arm64.tar.gz )
 "
-
 S="${WORKDIR}/${MY_P}-linux-${ARCH}"
 
-LICENSE="MIT ISC BSD Apache-2.0 BSD-2 PYTHON GPL-2 0BSD"
-LICENSE+=" LGPL-2.1+
-	|| ( MIT WTFPL )
-	|| ( BSD-2 MIT Apache-2.0 )
-"
+LICENSE="MIT ISC BSD Apache-2.0 BSD-2 PYTHON 0BSD LGPL-2.1+"
+LICENSE+=" LGPL-2.1+"
 SLOT="0"
 KEYWORDS="~amd64 ~arm64"
-
 RESTRICT="test"
 
 RDEPEND="
-	${DEPEND}
-	>=net-libs/nodejs-16.0.0[ssl]
-	sys-apps/ripgrep
 	app-crypt/libsecret
+	>=net-libs/nodejs-20.0.0[ssl]
+	sys-apps/ripgrep
+	virtual/krb5
 "
 
 PATCHES=( "${FILESDIR}/${PN}-node.patch" )
 
-DOCS=( "LICENSE" "README.md" "ThirdPartyNotices.txt" )
+DOCS=( README.md ThirdPartyNotices.txt )
 
 QA_PREBUILT="*"
 
 # Relative
 VSCODE_MODULES="lib/vscode/node_modules"
-
 QA_PRESTRIPPED="
 	opt/${PN}/node_modules/@node-rs/argon2-linux-x64-musl/argon2.linux-x64-musl.node
 	opt/${PN}/${VSCODE_MODULES}/@parcel/watcher/prebuilds/linux-x64/node.napi.musl.node
@@ -87,18 +81,18 @@ src_prepare() {
 src_install() {
 	einstalldocs
 
-	insinto "/opt/${PN}"
+	insinto /opt/"${PN}"
 	doins -r .
-	fperms +x "/opt/${PN}/bin/${MY_PN}"
-	dosym -r "/opt/${PN}/bin/${MY_PN}" "/opt/${PN}/bin/${PN}"
-	dosym -r "/opt/${PN}/bin/${PN}" "${EPREFIX}/usr/bin/${PN}"
+	fperms +x /opt/"${PN}"/bin/"${MY_PN}"
+	dosym -r /opt/"${PN}"/bin/"${MY_PN}" /opt/"${PN}"/bin/"${PN}"
+	dosym -r /opt/"${PN}"/bin/"${PN}" /usr/bin/"${PN}"
 
-	dosym -r "/usr/bin/rg" \
-		"${EPREFIX}/opt/${PN}/${VSCODE_MODULES}/@vscode/ripgrep/bin/rg"
+	dosym -r /usr/bin/rg \
+		/opt/"${PN}"/"${VSCODE_MODULES}"/@vscode/ripgrep/bin/rg
 
-	systemd_douserunit "${FILESDIR}/${PN}.service"
-	newinitd "${FILESDIR}/${PN}.rc" "${PN}"
-	newconfd "${FILESDIR}/${PN}.conf" "${PN}"
+	systemd_douserunit "${FILESDIR}/${PN}".service
+	newinitd "${FILESDIR}/${PN}".rc "${PN}"
+	newconfd "${FILESDIR}/${PN}".conf "${PN}"
 }
 
 pkg_postinst() {
