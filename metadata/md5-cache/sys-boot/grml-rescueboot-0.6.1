@@ -1,12 +1,10 @@
-DEFINED_PHASES=install postinst unpack
+DEFINED_PHASES=install postinst
 DESCRIPTION=grub2 script to add ISO images to the grub2 boot menu
 EAPI=8
 HOMEPAGE=https://wiki.grml.org/doku.php?id=rescueboot
-INHERIT=unpacker
 KEYWORDS=~amd64
 LICENSE=GPL-2
 RDEPEND=sys-boot/grub
 SLOT=0
-SRC_URI=https://deb.grml.org/pool/main/g/grml-rescueboot/grml-rescueboot_0.6.1_all.deb
-_eclasses_=multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	unpacker	7b40f3faa3e2e12f5cf6d36d0fbfcd09
-_md5_=28998ba9ce34c9009d3f74aa578d8ef8
+SRC_URI=https://raw.github.com/grml/grml-rescueboot/master/etc/default/grml-rescueboot https://raw.github.com/grml/grml-rescueboot/master/42_grml
+_md5_=0b761d298fb507edb1f2660f115220b2
