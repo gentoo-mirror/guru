@@ -8,11 +8,12 @@ is_live() {
 }
 
 CRATES="
-	aho-corasick@0.7.20
+	aho-corasick@1.1.3
 	android_system_properties@0.1.5
 	autocfg@1.1.0
 	bit_field@0.10.1
 	bitflags@1.3.2
+	block-buffer@0.10.3
 	built@0.5.2
 	bumpalo@3.12.1
 	cargo-lock@8.0.3
@@ -28,15 +29,19 @@ CRATES="
 	core-foundation@0.6.4
 	core-foundation-sys@0.6.2
 	core-foundation-sys@0.8.4
+	cpufeatures@0.2.5
+	crypto-common@0.1.6
 	cxx@1.0.94
 	cxx-build@1.0.94
 	cxxbridge-flags@1.0.94
 	cxxbridge-macro@1.0.94
 	derive_more@0.99.17
+	digest@0.10.6
 	env_logger@0.10.0
 	errno@0.2.8
 	errno-dragonfly@0.1.2
 	form_urlencoded@1.1.0
+	generic-array@0.14.6
 	getopts@0.2.21
 	git2@0.15.0
 	heck@0.4.0
@@ -53,7 +58,7 @@ CRATES="
 	jobserver@0.1.26
 	js-sys@0.3.61
 	lazy_static@1.4.0
-	libc@0.2.139
+	libc@0.2.155
 	libgit2-sys@0.14.2+1.5.1
 	libusb1-sys@0.6.4
 	libz-sys@1.1.9
@@ -63,7 +68,7 @@ CRATES="
 	log@0.4.17
 	mach@0.2.3
 	mach@0.3.2
-	memchr@2.5.0
+	memchr@2.7.2
 	memoffset@0.6.5
 	nix@0.25.1
 	no-std-compat@0.4.1
@@ -86,9 +91,9 @@ CRATES="
 	ptr_meta@0.2.0
 	ptr_meta_derive@0.2.0
 	quote@1.0.26
-	redox_hwio@0.1.6
-	regex@1.7.0
-	regex-syntax@0.6.28
+	regex@1.10.4
+	regex-automata@0.4.6
+	regex-syntax@0.8.3
 	rusb@0.9.1
 	rustc_version@0.4.0
 	rustix@0.36.5
@@ -99,6 +104,7 @@ CRATES="
 	serde@1.0.151
 	serde_derive@1.0.151
 	serde_json@1.0.91
+	sha2@0.10.6
 	spin@0.5.2
 	spin@0.9.4
 	strsim@0.10.0
@@ -108,6 +114,7 @@ CRATES="
 	tinyvec@1.6.0
 	tinyvec_macros@0.1.1
 	toml@0.5.11
+	typenum@1.16.0
 	ucs2@0.3.2
 	uefi-macros@0.11.0
 	unicode-bidi@0.3.13
@@ -147,13 +154,15 @@ CRATES="
 "
 
 if ! is_live; then
-	GIT_COMMIT_UEFI_RS="76130a0f1c1585012e598b8c514526bac09c68e0"
+	GIT_COMMIT_RUST_HWIO="9e6e7529ffd6caf7aa6a17be1eca6756b302f736"
 	GIT_COMMIT_SMBIOS_LIB="b3e2fff8a6f4b8c2d729467cbbf0c8c41974cd1c"
+	GIT_COMMIT_UEFI_RS="76130a0f1c1585012e598b8c514526bac09c68e0"
 
 	declare -A GIT_CRATES=(
+		[redox_hwio]="https://github.com/FrameworkComputer/rust-hwio;${GIT_COMMIT_RUST_HWIO};rust-hwio-%commit%"
+		[smbios-lib]="https://github.com/FrameworkComputer/smbios-lib;${GIT_COMMIT_SMBIOS_LIB}"
 		[uefi]="https://github.com/FrameworkComputer/uefi-rs;${GIT_COMMIT_UEFI_RS};uefi-rs-%commit%/uefi"
 		[uefi-services]="https://github.com/FrameworkComputer/uefi-rs;${GIT_COMMIT_UEFI_RS};uefi-rs-%commit%/uefi-services"
-		[smbios-lib]="https://github.com/FrameworkComputer/smbios-lib;${GIT_COMMIT_SMBIOS_LIB}"
 	)
 fi
 
@@ -166,7 +175,7 @@ if is_live; then
 	EGIT_REPO_URI="https://github.com/FrameworkComputer/framework-system.git"
 else
 	if [[ ${PV} == *_pre* || ${PV} == *_p* ]]; then
-		GIT_COMMIT="053d6ef283192d4ed3100fc3bc1936f5e9944ea2"
+		GIT_COMMIT="03d72f97bfc213b4c259e6feb33f1d73374afcc6"
 		[[ -n ${GIT_COMMIT} ]] ||
 			die "GIT_COMMIT is not defined for snapshot ebuild"
 		MY_PV="${GIT_COMMIT}"

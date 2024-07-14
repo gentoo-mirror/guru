@@ -17,8 +17,7 @@ KEYWORDS="~amd64"
 RESTRICT="test mirror"
 
 RDEPEND="
-	net-libs/libtelnet
-	dev-libs/dmd_core
+	>=dev-libs/dmd_core-0.7.1
 	x11-libs/gtk+:3
 	x11-libs/gdk-pixbuf
 	x11-libs/cairo
@@ -32,11 +31,10 @@ BDEPEND="
 "
 
 src_prepare() {
-	# remove bundled libraries
-	rm "${S}"/src/libtelnet.c "${S}"/src/libtelnet.h "${S}"/lib/libdmd_core.a || die "failed to remove bundled libraries"
-	rmdir "${S}"/lib
+	# remove leftover of bundled library which is not properly packaged in github releases anyways
+	rmdir "${S}"/dmd_core
 	# apply patches
-	eapply "${FILESDIR}/${PN}-1.2.0-systemlibs-nostrip.patch"
+	eapply "${FILESDIR}/${PN}-2.1.0-consolidated.patch"
 	eapply_user
 	# use system pkgconfig
 	sed -i -e "s:pkgconfig:$(tc-getPKG_CONFIG):" "${S}"/Makefile || die "sed failed"
