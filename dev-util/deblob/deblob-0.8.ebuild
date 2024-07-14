@@ -1,4 +1,4 @@
-# Copyright 2021-2023 Haelwenn (lanodan) Monnier <contact@hacktivis.me>
+# Copyright 2021-2024 Haelwenn (lanodan) Monnier <contact@hacktivis.me>
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -23,8 +23,7 @@ LICENSE="BSD"
 SLOT="0"
 
 DEPEND="
-	>=dev-lang/hare-0_pre20230615:=
-	<dev-lang/hare-0_pre20231127
+	>=dev-lang/hare-0.24.2:=
 "
 
 # built by hare
@@ -32,9 +31,9 @@ QA_FLAGS_IGNORED="usr/bin/deblob"
 
 if [[ "${PV}" != "9999" ]]
 then
-	BDEPEND="${BDEPEND} verify-sig? ( sec-keys/signify-keys-lanodan:2023 )"
+	BDEPEND="${BDEPEND} verify-sig? ( sec-keys/signify-keys-lanodan:2024 )"
 
-	VERIFY_SIG_OPENPGP_KEY_PATH="/usr/share/signify-keys/signify-keys-lanodan-2023.pub"
+	VERIFY_SIG_OPENPGP_KEY_PATH="/usr/share/signify-keys/signify-keys-lanodan-2024.pub"
 
 	src_unpack() {
 		if use verify-sig; then
