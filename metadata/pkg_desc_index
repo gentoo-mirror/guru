@@ -102,10 +102,10 @@ app-admin/enpass-desktop-bin 6.7.4.933: A cross-platform, complete password mana
 app-admin/gentoo_update 0.2.4: Gentoo Linux updater
 app-admin/grub-customizer 5.2.4-r1: A graphical grub2 settings manager
 app-admin/hardinfo2 2.1.11: System Information and Benchmark for Linux Systems
-app-admin/himitsu 0.7 9999: Secret storage system for Unix, suitable for storing passwords, keys, ...
+app-admin/himitsu 0.7 0.8 9999: Secret storage system for Unix, suitable for storing passwords, keys, ...
 app-admin/himitsu-keyring 0.2.0: graphical frontend for managing a Himitsu key store
-app-admin/himitsu-ssh 0.3 9999: SSH integration for Himitsu
-app-admin/himitsu-totp 0.1 9999: TOTP support for Himitsu
+app-admin/himitsu-ssh 0.3 0.4 9999: SSH integration for Himitsu
+app-admin/himitsu-totp 0.1 0.2 9999: TOTP support for Himitsu
 app-admin/i2pd-tools 2023.09.06 2024.05.08: Some useful tools for I2P
 app-admin/krapplet 0.3.1-r1: Krapplet (keyring applet): a Linux graphical password manager
 app-admin/oet 0.1.9 0.1.10 0.1.11 9999: Update your system into binpkgs in an overlay sandbox
@@ -486,7 +486,7 @@ dev-hare/hare-iobus 9999: An asyncronous I/O abstraction for Hare
 dev-hare/hare-json 9999: JSON support for Hare
 dev-hare/hare-linux 9999: Extra Linux support for Hare programs
 dev-hare/hare-png 9999: PNG implementation for Hare
-dev-hare/hare-ssh 0.24.0 9999: SSH library for Hare
+dev-hare/hare-ssh 0.24.0 0.24.2 9999: SSH library for Hare
 dev-hare/hare-xml 0_pre20231231 9999: XML support for Hare
 dev-java/corretto-bin 8.412.08.1 11.0.23.9.1 17.0.11.9.1 21.0.3.9.1 22.0.1.8.1: Prebuilt Java JDK binaries provided by Amazon Web Services
 dev-java/microsoft-openjdk-bin 11.0.22 17.0.10 21.0.2: Prebuilt Java JDK binaries provided by Microsoft
@@ -495,8 +495,8 @@ dev-lang/crystal-bin 1.12.1 1.12.2: The Crystal Programming Language
 dev-lang/fbc 1.07.3 1.08.1: A free/open source, multi-platform BASIC compiler.
 dev-lang/fbc-bootstrap 1.07.3 1.08.1: Bootstrap package for dev-lang/fbc
 dev-lang/gnu-apl 1.8: GNU interpreter for the APL programming language
-dev-lang/hare 0_pre20230813 0_pre20231127-r1 0.24.0 9999: The Hare systems programming language
-dev-lang/harec 0_pre20230807 0_pre20231128 0.24.0 9999: The Hare compiler
+dev-lang/hare 0.24.0 0.24.2 9999: The Hare systems programming language
+dev-lang/harec 0.24.0 0.24.2 9999: The Hare compiler
 dev-lang/opencilk 1.1 2.1: The OpenCilk concurrency platform for parallel programming
 dev-lang/opencilk-bin 1.1 2.1: The OpenCilk concurrency platform for parallel programming
 dev-lang/quickjs 2021.03.27 2024.01.13: Small embeddable Javascript engine
@@ -551,7 +551,7 @@ dev-libs/octetos-db 1.3.2_alpha 1.3.3_alpha: C++ library for Database Acces.
 dev-libs/octetos-db-abstract 0.1.2_alpha 0.6.0_alpha: API to access database, abstract component.
 dev-libs/octetos-db-maria 1.4.2_alpha 1.9.2_alpha 9999: C++ library for Database Acces.
 dev-libs/octetos-db-postgresql 1.3.9_alpha 1.3.10_alpha: C++ library for Database Acces.
-dev-libs/open62541 1.4.1: Open source C implementation of OPC UA
+dev-libs/open62541 1.4.2: Open source C implementation of OPC UA
 dev-libs/polyseed 1.0.0 2.0.0 9999: Mnemonic seed library for Monero and other CryptoNote-based currencies.
 dev-libs/properties-cpp 0.0.2: Simple convenience library for handling properties and signals in C++11
 dev-libs/qhttpengine 1.0.1-r1 9999: HTTP server for Qt applications
@@ -882,7 +882,7 @@ dev-util/cargo-post 0.1.7: A cargo wrapper that executes a post build script aft
 dev-util/catppuccin-catwalk 1.3.2: Soothing pastel previews for the high-spirited!
 dev-util/catppuccin-whiskers 2.4.0: Soothing port creation tool for the high-spirited!
 dev-util/cmakelang 0.6.13: Provides Quality Assurance (QA) tools for cmake
-dev-util/deblob 0.6 0.7 9999: remove binary executables from a directory
+dev-util/deblob 0.7 0.8 9999: remove binary executables from a directory
 dev-util/distribution-gpg-keys 1.104: Collection of GPG keys used in Linux Distributions
 dev-util/dmg2img 9999: Convert Apple disk images to IMG format.
 dev-util/dockerfile-language-server 0.12.0 0.13.0: A language server for Dockerfiles
@@ -1606,7 +1606,7 @@ sys-fs/ntfs2btrfs 20240115: Conversion tool from NTFS to Btrfs
 sys-fs/ufiformat 0.9.9: USB Floppy Disk formatting tool
 sys-fs/zfs-auto-utils 1.0.0: ZFS Automatic Scrub/Trim for Linux
 sys-kernel/dpdk-kmod 23.03: DPDK Kernel Nic Interface module
-sys-kernel/uek-sources 5.15.0.206.149.1 5.15.0.206.153.6 5.15.0.206.153.7 5.15.0.300.159.7: Unbreakable Enterprise Kernel (UEK) sources built from Oracle
+sys-kernel/uek-sources 5.15.0.206.149.1 5.15.0.206.153.6 5.15.0.206.153.7 5.15.0.300.159.7 5.15.0.300.159.7-r1: Unbreakable Enterprise Kernel (UEK) sources built from Oracle
 sys-kernel/ugrd 1.2.2 1.3.8 1.4.0 1.4.2 1.5.1 1.6.0 1.7.1 1.8.4 1.11.2 1.12.0 1.13.0 9999: Python based initramfs generator with TOML defintions
 sys-kernel/usermode-kernel 6.0.12: Linux kernel built with Gentoo patches
 sys-kernel/xow 0.5: Linux driver for the Xbox One wireless dongle

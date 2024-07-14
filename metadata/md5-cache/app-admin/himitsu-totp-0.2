@@ -1,13 +1,12 @@
-BDEPEND=app-text/scdoc >=dev-vcs/git-1.8.2.1[curl]
-DEFINED_PHASES=configure unpack
+BDEPEND=app-text/scdoc
+DEFINED_PHASES=configure
 DEPEND=app-admin/himitsu:= >=dev-lang/hare-0.24.2:=
 DESCRIPTION=TOTP support for Himitsu
 EAPI=8
 HOMEPAGE=https://git.sr.ht/~sircmpwn/himitsu-totp
-INHERIT=git-r3
+KEYWORDS=~amd64 ~arm64 ~riscv
 LICENSE=GPL-3
-PROPERTIES=live
 RDEPEND=app-admin/himitsu:=
 SLOT=0
-_eclasses_=git-r3	875eb471682d3e1f18da124be97dcc81
+SRC_URI=https://git.sr.ht/~sircmpwn/himitsu-totp/archive/0.2.tar.gz -> himitsu-totp-0.2.tar.gz
 _md5_=14234a1b966500cba1c16fc06fbedd11
