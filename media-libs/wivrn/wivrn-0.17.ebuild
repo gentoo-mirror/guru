@@ -16,13 +16,12 @@ REQUIRED_USE="|| ( nvenc vaapi x264 )"
 if [[ ${PV} == 9999 ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/Meumeu/WiVRn.git"
-	EGIT_BRANCH="dev"
 
-	MONADO_V=ffb71af26f8349952f5f820c268ee4774613e200
+	MONADO_V=598080453545c6bf313829e5780ffb7dde9b79dc
 	PFR_V=2.2.0
 	SRC_URI="
 	https://github.com/boostorg/pfr/archive/refs/tags/${PFR_V}.tar.gz -> boostpfr_${PFR_V}.tar.gz
-	https://gitlab.freedesktop.org/monado/monado/-/archive/${MONADO_V}/monado-${MONADO_V}.tar.gz"
+	https://gitlab.freedesktop.org/monado/monado/-/archive/${MONADO_V}/monado-${MONADO_V}.tar.bz2"
 else
 	SRC_URI="
 		https://github.com/Meumeu/WiVRn/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
@@ -56,6 +55,7 @@ RDEPEND="
 
 BDEPEND="
 	${RDEPEND}
+	dev-cpp/cli11
 	dev-cpp/eigen
 	dev-cpp/nlohmann_json
 	dev-util/glslang
