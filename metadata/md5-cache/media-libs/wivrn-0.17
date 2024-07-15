@@ -1,4 +1,4 @@
-BDEPEND=vaapi? ( media-video/ffmpeg[libdrm,vaapi] ) x264? ( media-libs/x264 ) dev-libs/libbsd pipewire? ( media-video/pipewire ) pulseaudio? ( media-libs/libpulse ) media-libs/openxr-loader net-dns/avahi systemd? ( sys-apps/systemd ) wireshark-plugins? ( net-analyzer/wireshark ) dev-cpp/eigen dev-cpp/nlohmann_json dev-util/glslang app-alternatives/ninja >=dev-build/cmake-3.20.5
+BDEPEND=vaapi? ( media-video/ffmpeg[libdrm,vaapi] ) x264? ( media-libs/x264 ) dev-libs/libbsd pipewire? ( media-video/pipewire ) pulseaudio? ( media-libs/libpulse ) media-libs/openxr-loader net-dns/avahi systemd? ( sys-apps/systemd ) wireshark-plugins? ( net-analyzer/wireshark ) dev-cpp/cli11 dev-cpp/eigen dev-cpp/nlohmann_json dev-util/glslang app-alternatives/ninja >=dev-build/cmake-3.20.5
 DEFINED_PHASES=compile configure install postinst prepare test unpack
 DESCRIPTION=WiVRn OpenXR streaming
 EAPI=7
@@ -10,6 +10,6 @@ LICENSE=GPL-3 Apache-2.0 MIT
 RDEPEND=vaapi? ( media-video/ffmpeg[libdrm,vaapi] ) x264? ( media-libs/x264 ) dev-libs/libbsd pipewire? ( media-video/pipewire ) pulseaudio? ( media-libs/libpulse ) media-libs/openxr-loader net-dns/avahi systemd? ( sys-apps/systemd ) wireshark-plugins? ( net-analyzer/wireshark )
 REQUIRED_USE=|| ( nvenc vaapi x264 )
 SLOT=0
-SRC_URI=https://github.com/Meumeu/WiVRn/archive/refs/tags/v0.15.tar.gz -> wivrn-0.15.tar.gz https://github.com/Meumeu/WiVRn/releases/download/v0.15/server-build-deps.tar.xz -> wivrn-0.15-server-build-deps.tar.xz
+SRC_URI=https://github.com/Meumeu/WiVRn/archive/refs/tags/v0.17.tar.gz -> wivrn-0.17.tar.gz https://github.com/Meumeu/WiVRn/releases/download/v0.17/server-build-deps.tar.xz -> wivrn-0.17-server-build-deps.tar.xz
 _eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	e503ea5acc20410237ba33ec3f7c857d	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	258a4691fd43b8cd5814cb1acbb3c7df
-_md5_=8a2540210c5d4ab2ef95499eccf62beb
+_md5_=bca48f4ca43c9513179b16e4b1f867ab

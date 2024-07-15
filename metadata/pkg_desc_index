@@ -146,7 +146,7 @@ app-containers/waydroid 1.4.2 1.4.2-r1: Container-based approach to boot a full 
 app-containers/waydroid-images 9999: Manage images for app-containers/waydroid using portage
 app-crypt/PBinCLI 0.3.5 0.3.5-r1: PBinCLI is a command line client for PrivateBin written in Python 3
 app-crypt/autofirma 1.8.2 1.8.3: Spanish government's electronic signature application for online procedures
-app-crypt/certbot-dns-cloudflare 2.10.0-r1: Cloudflare DNS Authenticator plugin for Certbot (Let's Encrypt Client)
+app-crypt/certbot-dns-cloudflare 2.10.0-r2: Cloudflare DNS Authenticator plugin for Certbot (Let's Encrypt Client)
 app-crypt/certbot-dns-desec 1.2.1: deSEC DNS Authenticator plugin for Certbot
 app-crypt/certbot-dns-rfc2136 2.10.0 9999: RFC 2136 DNS Authenticator plugin for Certbot (Let’s Encrypt client)
 app-crypt/clevis 19-r2 20-r1: Automated Encryption Framework
@@ -381,7 +381,7 @@ dev-build/FoBiS 3.0.5-r1: FoBiS.py, a Fortran Building System for poor men
 dev-build/cargo-make 0.37.13: Rust task runner and build tool
 dev-build/fpm 0.9.0 0.10.0: Fortran Package Manager (fpm)
 dev-build/fypp 3.1 3.2: Fypp - Python powered Fortran preprocessor
-dev-build/just 1.29.0 1.29.1: Just a command runner (with syntax inspired by 'make')
+dev-build/just 1.29.0 1.29.1 1.31.0: Just a command runner (with syntax inspired by 'make')
 dev-build/pdpmake 2.0.0: Public domain POSIX make
 dev-build/qtilitools 0.1.2: Scripts/commands used in the Qtilities organization
 dev-build/xmake 2.9.3 9999: A cross-platform build utility based on Lua
@@ -578,6 +578,7 @@ dev-ml/crowbar 0.2.1: Write tests, let a fuzzer find failing cases
 dev-ml/domain-name 0.4.0: RFC 1035 Internet domain names
 dev-ml/gmap 0.3.0-r2: Heterogenous Map over a GADT
 dev-ml/lwt-dllist 1.0.1: Mutable doubly-linked list with Lwt iterators
+dev-ml/ocaml-syntax-shims 1.0.0: Backport new syntax to older compilers
 dev-ml/pecu 0.6: Implementation of quoted-printable encoder/decoder from RFC2045
 dev-ml/psq 0.2.0-r2 0.2.1: Functional Priority Search Queues for OCaml
 dev-ml/randomconv 0.1.3: Convert from random bytes to random native numbers
@@ -629,7 +630,6 @@ dev-python/celery 5.3.6 5.4.0: Asynchronous task queue/job queue based on distri
 dev-python/chevron 0.13.1: A Python implementation of mustache
 dev-python/click-aliases 1.0.4: Add (mutiple) aliases to a click group or command
 dev-python/click-command-tree 1.1.1: click plugin to show the command tree of your CLI
-dev-python/click-option-group 0.5.5 0.5.6: Option groups missing in Click
 dev-python/click-repl 0.2.0-r1: Subcommand REPL for click apps
 dev-python/cloudflare 2.19.2 2.19.4 3.0.1: Python wrapper for the Cloudflare v4 API
 dev-python/cloup 3.0.5: Click + option groups + constraints + aliases + help themes + ...
@@ -750,7 +750,6 @@ dev-python/psycopg2cffi 2.9.0-r1: Implementation of the psycopg2 module using cf
 dev-python/py-nanoid 9999: Python Nanoid
 dev-python/pyagentx 0.4-r1: Python AgentX Implementation
 dev-python/pyclip 0.7.0-r1 9999: Python clipboard module
-dev-python/pycpio 1.0.0 1.1.2-r1 1.1.4 1.1.6 1.2.1 9999: Python CPIO library
 dev-python/pydispatcher 2.0.7: Multi-producer-multi-consumer signal dispatching mechanism
 dev-python/pydub 0.25.1: Manipulate audio with an simple and easy high level interface
 dev-python/pyfiglet 0.8_p1: Pure-python FIGlet implementation
@@ -771,7 +770,6 @@ dev-python/pyqtdarktheme 2.1.0: A flat dark theme for PySide and PyQt.
 dev-python/pyrr 0.10.3-r1: A cross platform utility library for ModernGL
 dev-python/pysnooper 1.2.0: Never use print for debugging again
 dev-python/pystardict 0.8-r1: Library for manipulating StarDict dictionaries from within Python
-dev-python/pysubs2 1.4.4 1.5.0 1.6.1: A library for editing subtitle files
 dev-python/pytest-benchmark 4.0.0: py.test fixture for benchmarking code
 dev-python/pytest-cases 3.8.2: Separate test code from test cases in pytest
 dev-python/pytest-celery 0.1.0: a shim pytest plugin to enable celery.contrib.pytest
@@ -819,7 +817,6 @@ dev-python/sphinx-rtd-dark-mode 1.2.4: Dark mode for the Sphinx Read the Docs th
 dev-python/sphinx-sitemap 2.5.1 2.6.0: Sitemap generator for Sphinx
 dev-python/sphinx-version-warning 1.1.2: Sphinx extension to add a warning banner
 dev-python/sphinxcontrib-katex 0.9.9 0.9.10: KaTeX Sphinx extension for rendering of math in HTML pages
-dev-python/srt 3.5.1 3.5.2 3.5.3: A tiny library for parsing, modifying, and composing SRT files
 dev-python/sse-starlette 1.1.6: Server Sent Events for Starlette
 dev-python/starkbank-ecdsa 2.2.0-r1: A lightweight and fast pure python ECDSA library
 dev-python/stdlibs 2022.6.8: What's in the Python stdlib
@@ -840,7 +837,7 @@ dev-python/tree-sitter-languages 1.10.2: Python wheels for all tree sitter langu
 dev-python/tulir-telethon 1.35.0_alpha1: Pure Python 3 MTProto API Telegram client library, for bots too!
 dev-python/tweepy 4.14.0: An easy-to-use Python library for accessing the Twitter API.
 dev-python/types-protobuf 4.24.0.20240408 5.27.0.20240626: Typing stubs for protobuf
-dev-python/types-requests 2.32.0.20240622: Typing stubs for requests
+dev-python/types-requests 2.32.0.20240712: Typing stubs for requests
 dev-python/typing-inspect 0.9.0: Runtime inspection utilities for Python typing module
 dev-python/undervolt 0.4.0 9999: Undervolt Intel CPUs under Linux
 dev-python/urlmatch 1.0.1-r2: A Python library for easily pattern matching wildcard URLs
@@ -852,7 +849,6 @@ dev-python/webrtcvad 2.0.10-r1: Python interface to the Google WebRTC Voice Acti
 dev-python/xattr 1.0.0 1.1.0: Python wrapper for extended filesystem attributes
 dev-python/xunitparser 1.3.4: Read JUnit/XUnit XML files and map them to Python objects
 dev-python/yams 0.7.3-r1 9999: Yet Another MPD Scrobbler (for Last.FM)
-dev-python/zenlib 2.0.0 2.0.4 2.1.1 2.1.2: Useful python decorators and utilities
 dev-python/zopfli 0.2.2: Zopfli module for Python
 dev-ruby/asciidoctor-pdf 2.3.17: A native PDF converter for AsciiDoc based on Asciidoctor and Prawn
 dev-ruby/byebug 11.1.3: a Ruby 2 debugger
@@ -1028,7 +1024,7 @@ gnome-extra/wike 3.0.0 3.0.1: Wikipedia Reader for the GNOME Desktop
 gnome-extra/yad 13.0: Display GTK+ dialog boxes from command line or shell scripts
 gui-apps/1password 8.10.28: The world’s most-loved password manager
 gui-apps/ReGreet 0.1.1-r6 9999: A clean and customizable GTK-based greetd greeter written in Rust
-gui-apps/aylurs-gtk-shell 1.8.2: Aylurs's Gtk Shell (AGS), An eww inspired gtk widget system.
+gui-apps/aylurs-gtk-shell 1.8.2-r1: Aylurs's Gtk Shell (AGS), An eww inspired gtk widget system.
 gui-apps/azote 1.12.6 9999: wallpaper manager for wlroots compositors
 gui-apps/clipman 1.6.2 1.6.3: A basic clipboard manager for Wayland.
 gui-apps/coreaction 4.5.0 9999: A side bar for showing widgets for C Suite
@@ -1152,7 +1148,7 @@ kde-misc/plasma5-wallpapers-dynamic 3.3.9 9999: A KDE Plasma wallpaper plugin to
 mail-client/betterbird-bin 115.12.0 115.13.0: Betterbird is a fine-tuned version of Mozilla Thunderbird.
 mail-client/heirloom-mailx 12.5: The mailx utility from CentOS
 mail-client/mailspring-bin 1.13.3: A beautiful, fast and fully open source mail client for Mac, Windows and Linux
-mail-client/proton-mail-bin 5.0.126.1: Beta Client for Proton Mail
+mail-client/proton-mail-bin 5.0.142.4: Beta Client for Proton Mail
 mail-filter/postfix-mta-sts-resolver 1.4.0: Daemon which provides TLS client policy for Postfix via socketmap
 media-fonts/blobmoji 15.0: Noto Emoji with extended Blob support
 media-fonts/dseg 0.46: A free font which imitate LCD Display
@@ -1224,7 +1220,7 @@ media-libs/raylib 5.0 9999: A simple and easy-to-use library to learn videogames
 media-libs/svt-vp9 0.3.0 9999: Scalable Video Technology for VP9 (SVT-VP9 Encoder)
 media-libs/vvdec 2.3.0: VVdeC, the Fraunhofer Versatile Video Decoder
 media-libs/vvenc 1.11.1: VVenC, the Fraunhofer Versatile Video Encoder
-media-libs/wivrn 0.15 0.16 9999: WiVRn OpenXR streaming
+media-libs/wivrn 0.16 0.17 9999: WiVRn OpenXR streaming
 media-plugins/alsa-sndio 0.2: ALSA PCM to play audio on sndio servers
 media-plugins/argotlunar-bin 2.06-r1: Argotlunar is a sound granulator. Binary Linux VST
 media-plugins/dtmediawiki 9999: Wikimedia Commons export plugin for Darktable. Every upload is converted
@@ -1472,6 +1468,7 @@ net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that 
 net-vpn/mullvadvpn-app 2024.3 2024.4_beta1: Tool used to manage daemon setup
 net-wireless/airspyhf 1.6.8: User mode driver for Airspy HF+
 net-wireless/bluetuith 0.1.9 0.2.0 0.2.1 0.2.2 9999: A TUI bluetooth manager for Linux written in Go
+net-wireless/btscreenlocker 1.6.1: Daemon to lock your screen when Bluetooth trusted devices go away.
 net-wireless/rtl8192eu 0_pre20240518: Realtek 8192EU driver module for Linux kernel
 net-wireless/rtl8723bu 9999: Driver for the rtl8723 wireless chipset
 net-wireless/rtl8821ce 0_pre20240326: Realtek RTL8821CE Driver module for Linux kernel
@@ -1535,7 +1532,7 @@ sci-mathematics/frama-c-variadic 23.1 24.0 25.0: Variadic function transformatio
 sci-mathematics/pyromaths 21.8.2: Create maths exercises in LaTeX and PDF format
 sci-mathematics/rstudio-desktop-bin 2023.09.0_p463 2023.09.1_p494: IDE for R and Python
 sci-misc/boinc-wrapper 26018-r1: Wrapper to use non-BOINC apps with BOINC
-sci-physics/ovito 3.10.4 3.10.5: Open Visualization Tool
+sci-physics/ovito 3.10.4 3.10.5 3.10.5-r1: Open Visualization Tool
 sec-keys/openpgp-keys-aepaneshnikov 20221210: OpenPGP keys used by Alexander Epaneshnikov
 sec-keys/openpgp-keys-emersion 20240714: OpenPGP keys used by Simon Ser
 sec-keys/openpgp-keys-jvoisin 20230224: OpenPGP keys used by Julien Voisin
@@ -1607,7 +1604,6 @@ sys-fs/ufiformat 0.9.9: USB Floppy Disk formatting tool
 sys-fs/zfs-auto-utils 1.0.0: ZFS Automatic Scrub/Trim for Linux
 sys-kernel/dpdk-kmod 23.03: DPDK Kernel Nic Interface module
 sys-kernel/uek-sources 5.15.0.206.149.1 5.15.0.206.153.6 5.15.0.206.153.7 5.15.0.300.159.7 5.15.0.300.159.7-r1: Unbreakable Enterprise Kernel (UEK) sources built from Oracle
-sys-kernel/ugrd 1.2.2 1.3.8 1.4.0 1.4.2 1.5.1 1.6.0 1.7.1 1.8.4 1.11.2 1.12.0 1.13.0 9999: Python based initramfs generator with TOML defintions
 sys-kernel/usermode-kernel 6.0.12: Linux kernel built with Gentoo patches
 sys-kernel/xow 0.5: Linux driver for the Xbox One wireless dongle
 sys-kernel/zenpower3 0.2.0: Linux kernel driver for reading sensors of AMD Zen family CPUs
