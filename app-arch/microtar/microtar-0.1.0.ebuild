@@ -1,9 +1,9 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-inherit toolchain-funcs
+inherit edo toolchain-funcs
 
 DESCRIPTION="A lightweight tar library written in ANSI C"
 HOMEPAGE="https://github.com/rxi/microtar"
@@ -14,8 +14,13 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 src_compile() {
-	tc-export CC
-	${CC} ${CFLAGS} ${CPPFLAGS} ${LDFLAGS} -I./src -fPIC -shared -Wl,-soname=libmicrotar.so src/microtar.c -o libmicrotar.so
+	edo $(tc-getCC) ${CFLAGS} ${CPPFLAGS} ${LDFLAGS} \
+		-I./src \
+		-fPIC \
+		-shared \
+		-Wl,-soname=libmicrotar.so \
+		src/microtar.c \
+		-o libmicrotar.so
 }
 
 src_install() {
