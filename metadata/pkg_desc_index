@@ -112,7 +112,7 @@ app-admin/oet 0.1.9 0.1.10 0.1.11 9999: Update your system into binpkgs in an ov
 app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applications and tmux
 app-admin/pass-audit 1.2 1.2-r1: A pass extension for auditing your password repository.
 app-admin/pass-update 2.2.1: pass extension that provides an easy flow for updating passwords
-app-admin/pulumi-bin 3.119.0 3.121.0 3.122.0: Infrastructure as code in any programming language
+app-admin/pulumi-bin 3.121.0 3.122.0 3.124.0: Infrastructure as code in any programming language
 app-admin/rbw 1.11.1 9999: Unofficial Bitwarden CLI
 app-admin/s-tui 1.1.6: Stress-Terminal UI monitoring tool
 app-admin/synadm 0.43.1 0.44: Command line admin tool for Synapse
@@ -276,6 +276,7 @@ app-misc/treefetch 2.0.0: 🌲 A plant-based system fetch tool made with Rust.
 app-misc/tty-share-bin 2.4.0: Screen sharing for terminal: ASCII in browser or terminal, without pixels moving
 app-misc/twertlefetch 1.1.0: system fetch written in rust
 app-misc/ufetch 0.3: Tiny system info for Unix-like operating systems
+app-misc/via 3.0.0: GUI configurator for supported QMK-based keyboards
 app-misc/vocabsieve 0.12.0: A simple, effective tool for language learning
 app-misc/vrms-gentoo 0_pre20201102: vrms clone for Gentoo Linux
 app-misc/walld 1.4.4: A Wallpaper daemon
@@ -381,7 +382,7 @@ dev-build/FoBiS 3.0.5-r1: FoBiS.py, a Fortran Building System for poor men
 dev-build/cargo-make 0.37.13: Rust task runner and build tool
 dev-build/fpm 0.9.0 0.10.0: Fortran Package Manager (fpm)
 dev-build/fypp 3.1 3.2: Fypp - Python powered Fortran preprocessor
-dev-build/just 1.29.0 1.29.1 1.31.0: Just a command runner (with syntax inspired by 'make')
+dev-build/just 1.31.0: Just a command runner (with syntax inspired by 'make')
 dev-build/pdpmake 2.0.0: Public domain POSIX make
 dev-build/qtilitools 0.1.2: Scripts/commands used in the Qtilities organization
 dev-build/xmake 2.9.3 9999: A cross-platform build utility based on Lua
@@ -390,7 +391,7 @@ dev-cpp/coeurl 0.3.0 0.3.1: A simple async wrapper around CURL for C++
 dev-cpp/cpp-jwt 1.5_pre20220727: JSON Web Token library for C++
 dev-cpp/cpprestsdk 2.10.19-r3: A Microsoft project for cloud-based client-server communication.
 dev-cpp/cpptoml 0.1.1: Header-only library for parsing TOML
-dev-cpp/cpptrace 0.5.2-r1 0.6.0 0.6.2: Simple, portable, and self-contained stacktrace library for C++
+dev-cpp/cpptrace 0.6.0 0.6.2 0.6.3: Simple, portable, and self-contained stacktrace library for C++
 dev-cpp/dpp 10.0.23 10.0.24 10.0.25 10.0.29 10.0.30: Lightweight C++ Discord bot library
 dev-cpp/drogon 1.9.4 1.9.5: C++14/17 based HTTP web application framework
 dev-cpp/fast_float 6.1.1: Fast and exact implementation of the C++ from_chars functions for number types
@@ -571,6 +572,7 @@ dev-libs/xqilla 2.3.4-r2: An XQuery and XPath 2 library and command line utility
 dev-libs/zfp 1.0.1: Compressed numerical arrays that support high-speed random access
 dev-lua/multipart-post 1.4: HTTP Multipart Post helper that does just that.
 dev-ml/afl-persistent 1.3: Persistent-mode afl-fuzz for ocaml
+dev-ml/angstrom 0.15.0: Parser combinators built for speed and memory efficiency
 dev-ml/bheap 2.0.0: OCaml binary heap implementation by Jean-Christophe Filliatre
 dev-ml/bigstringaf 0.7.0 0.9.0: Bigstring intrinsics and fast blits based on memcpy/memmove
 dev-ml/cdrom 0.9.4: Query the state and contents of CDROM devices under Linux
@@ -583,6 +585,7 @@ dev-ml/pecu 0.6: Implementation of quoted-printable encoder/decoder from RFC2045
 dev-ml/psq 0.2.0-r2 0.2.1: Functional Priority Search Queues for OCaml
 dev-ml/randomconv 0.1.3: Convert from random bytes to random native numbers
 dev-ml/stringext 1.6.0-r2: Extra string functions for OCaml
+dev-ml/uri 4.4.0: RFC3986 URI parsing library for OCaml
 dev-ml/xmlm 1.4.0: Ocaml XML manipulation module
 dev-nim/cligen 1.6.8 1.7.2: Infer & generate command-line interface/option/argument parser
 dev-nim/inim 0.6.1 1.0.0: Interactive Nim Shell / REPL / Playground
@@ -631,7 +634,7 @@ dev-python/chevron 0.13.1: A Python implementation of mustache
 dev-python/click-aliases 1.0.4: Add (mutiple) aliases to a click group or command
 dev-python/click-command-tree 1.1.1: click plugin to show the command tree of your CLI
 dev-python/click-repl 0.2.0-r1: Subcommand REPL for click apps
-dev-python/cloudflare 2.19.2 2.19.4 3.0.1: Python wrapper for the Cloudflare v4 API
+dev-python/cloudflare 2.19.4 3.1.0: Python wrapper for the Cloudflare v4 API
 dev-python/cloup 3.0.5: Click + option groups + constraints + aliases + help themes + ...
 dev-python/codecov 2.1.12: Hosted coverage reports for GitHub, Bitbucket and Gitlab
 dev-python/colored 2.2.4: Very simple Python library for color and formatting in terminal
@@ -821,7 +824,7 @@ dev-python/sse-starlette 1.1.6: Server Sent Events for Starlette
 dev-python/starkbank-ecdsa 2.2.0-r1: A lightweight and fast pure python ECDSA library
 dev-python/stdlibs 2022.6.8: What's in the Python stdlib
 dev-python/steam 1.4.4 9999: Python package for interacting with Steam
-dev-python/stone 3.3.6: The Official Api Spec Language for Dropbox
+dev-python/stone 3.3.7: The Official Api Spec Language for Dropbox
 dev-python/stringcase 1.2.0-r2: Convert string cases between camel case, pascal case, snake case etc.
 dev-python/survey 5.3.1 5.4.0: A simple library for creating beautiful interactive prompts
 dev-python/svgelements 1.9.6-r1: SVG Parsing for Elements, Paths, and other SVG Objects.
@@ -870,7 +873,6 @@ dev-util/DirectXShaderCompiler 1.7.2207-r1 1.7.2212-r1: Microsoft DirectX Shader
 dev-util/bash-language-server 5.3.3 5.4.0: A language server for Bash
 dev-util/bats-assert 2.1.0: Common assertions for Bats
 dev-util/bats-support 0.3.0: Supporting library for Bats test helpers
-dev-util/bazelisk 1.12.0: A user-friendly launcher for Bazel
 dev-util/bc-ur 0.3.0: Blockchain Commons UR Library
 dev-util/bruno-bin 1.9.0 1.9.0-r1: Opensource IDE For Exploring and Testing Api's
 dev-util/bump2version 1.0.1: Version-bump your software with a single command!
@@ -878,6 +880,7 @@ dev-util/cargo-post 0.1.7: A cargo wrapper that executes a post build script aft
 dev-util/catppuccin-catwalk 1.3.2: Soothing pastel previews for the high-spirited!
 dev-util/catppuccin-whiskers 2.4.0: Soothing port creation tool for the high-spirited!
 dev-util/cmakelang 0.6.13: Provides Quality Assurance (QA) tools for cmake
+dev-util/coq-lsp 0.1.9: Visual Studio Code Extension and Language Server Protocol for Coq
 dev-util/deblob 0.7 0.8 9999: remove binary executables from a directory
 dev-util/distribution-gpg-keys 1.104: Collection of GPG keys used in Linux Distributions
 dev-util/dmg2img 9999: Convert Apple disk images to IMG format.
@@ -1026,7 +1029,7 @@ gui-apps/1password 8.10.28: The world’s most-loved password manager
 gui-apps/ReGreet 0.1.1-r6 9999: A clean and customizable GTK-based greetd greeter written in Rust
 gui-apps/aylurs-gtk-shell 1.8.2-r1: Aylurs's Gtk Shell (AGS), An eww inspired gtk widget system.
 gui-apps/azote 1.12.6 9999: wallpaper manager for wlroots compositors
-gui-apps/clipman 1.6.2 1.6.3: A basic clipboard manager for Wayland.
+gui-apps/clipman 1.6.2 1.6.3 1.6.4: A basic clipboard manager for Wayland.
 gui-apps/coreaction 4.5.0 9999: A side bar for showing widgets for C Suite
 gui-apps/coreapps-meta 4.5.0 9999: Meta package for coreapps
 gui-apps/corearchiver 4.5.0 9999: Archiver for C Suite, to create and extract archives
@@ -1208,6 +1211,7 @@ media-libs/dr_flac 0.12.42: Single-header FLAC audio decoder library
 media-libs/dr_mp3 0.6.39-r1: Single-header MP3 audio decoder library
 media-libs/dr_wav 0.13.16-r1: Single-header WAV audio loader and writer library
 media-libs/gl4es 9999: OpenGL 2.1/1.5 to GL ES 2.0/1.1 translation library
+media-libs/glad 2.0.6: Multi-Language Vulkan/GL/GLES/EGL/GLX/WGL Loader-Generator
 media-libs/glee 5.4.0 5.4.0-r1: OpenGL Easy Extension library
 media-libs/grok 11.0.0: World's Leading Open Source JPEG 2000 Codec
 media-libs/imgui 1.89.9-r3 1.90.7-r2: Bloat-free graphical user interface library for C++
@@ -1237,7 +1241,7 @@ media-sound/amberol 0.10.4_pre20240517: Simple GUI Music Player
 media-sound/bespokesynth 1.2.1: Software modular synth
 media-sound/callaudiod 0.1.7 0.1.9: Call audio routing daemon
 media-sound/drumgizmo 0.9.20 9999: Cross-platform drum plugin and stand-alone application
-media-sound/dzr 231217: DZR: the command line deezer.com player
+media-sound/dzr 240704: DZR: the command line deezer.com player
 media-sound/eartag 0.5.0 0.5.1: GTK4 MusicBrainz audio tagger
 media-sound/furnace 0.6: a multi-system chiptune tracker compatible with DefleMask modules
 media-sound/g4music 3.3 3.4: A GTK4 music player
@@ -1401,7 +1405,7 @@ net-misc/curlie 1.7.2: Curlie is a frontend to curl that adds the ease of use of
 net-misc/cve-client 1.1.0 9999: CLI-based client / toolbox for CVE.org
 net-misc/eg25-manager 0.4.2: Daemon for managing the Quectel EG25 modem
 net-misc/fedigroup 1.0.6 1.0.8: Emulate group accounts on Mastodon/Pleroma
-net-misc/freetube-bin 0.20.0 0.21.0 0.21.1: A private YouTube desktop client
+net-misc/freetube-bin 0.21.1: A private YouTube desktop client
 net-misc/gdown 5.1.0 5.2.0: Google Drive public file/folder downloader
 net-misc/gdrive 3.9.0 3.9.1: Google Drive CLI Client
 net-misc/gemget 1.9.0: Command line downloader for the Gemini protocol
@@ -1445,11 +1449,11 @@ net-nntp/inn 2.7.1: InterNetNews - the Internet meets Netnews
 net-nntp/pan 0.158 0.158-r1 0.159 0.159-r1: A newsreader for GNOME
 net-p2p/bisq-bin 1.9.14: The decentralized bitcoin exchange (non-atomic, with arbitration)
 net-p2p/dogecoin-qt 1.14.6 1.14.7: Dogecoin Core Qt for desktop. Downloaded blockchain is under 2.2GB. Much secure.
-net-p2p/feather 2.6.2 2.6.7 9999: A free, open-source Monero wallet
+net-p2p/feather 2.6.7-r1 9999: A free, open-source Monero wallet
 net-p2p/fragments 3.0.0 3.0.1: Fragments is an easy to use BitTorrent client
 net-p2p/gridcoin 5.4.7.0 5.4.8.0: Proof-of-Stake based cryptocurrency that rewards BOINC computation
 net-p2p/monero 0.17.2.0 0.17.2.3 0.17.3.0 0.17.3.2 0.18.1.2 0.18.2.0 0.18.2.2 0.18.3.1 0.18.3.3 9999: The secure, private, untraceable cryptocurrency
-net-p2p/p2pool 3.5 3.6.2 3.7 3.8 3.9 3.10 9999: Decentralized pool for Monero mining
+net-p2p/p2pool 3.5 3.6.2 3.7 3.8 3.9 3.10 4.0 9999: Decentralized pool for Monero mining
 net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
 net-p2p/yggdrasil-go 0.5.5 9999: An experiment in scalable routing as an encrypted IPv6 overlay network
 net-print/hpuld 1.00.39.15.00.23-r1: HP Unified Linux Driver (for samsung hardware)
@@ -1468,7 +1472,7 @@ net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that 
 net-vpn/mullvadvpn-app 2024.3 2024.4_beta1: Tool used to manage daemon setup
 net-wireless/airspyhf 1.6.8: User mode driver for Airspy HF+
 net-wireless/bluetuith 0.1.9 0.2.0 0.2.1 0.2.2 9999: A TUI bluetooth manager for Linux written in Go
-net-wireless/btscreenlocker 1.6.1: Daemon to lock your screen when Bluetooth trusted devices go away.
+net-wireless/btscreenlocker 1.6.2 1.6.3: Daemon to lock your screen when Bluetooth trusted devices go away.
 net-wireless/rtl8192eu 0_pre20240518: Realtek 8192EU driver module for Linux kernel
 net-wireless/rtl8723bu 9999: Driver for the rtl8723 wireless chipset
 net-wireless/rtl8821ce 0_pre20240326: Realtek RTL8821CE Driver module for Linux kernel
@@ -1535,6 +1539,7 @@ sci-misc/boinc-wrapper 26018-r1: Wrapper to use non-BOINC apps with BOINC
 sci-physics/ovito 3.10.4 3.10.5 3.10.5-r1: Open Visualization Tool
 sec-keys/openpgp-keys-aepaneshnikov 20221210: OpenPGP keys used by Alexander Epaneshnikov
 sec-keys/openpgp-keys-emersion 20240714: OpenPGP keys used by Simon Ser
+sec-keys/openpgp-keys-featherwallet 20201209: OpenPGP keys used to sign Feather Wallet releases
 sec-keys/openpgp-keys-jvoisin 20230224: OpenPGP keys used by Julien Voisin
 sec-keys/openpgp-keys-phosh 2024: OpenPGP keys used to sign Phosh releases
 sec-keys/openpgp-keys-russallbery 20230000: OpenPGP keys used by Russ Allbery (Eagle)
@@ -1560,7 +1565,7 @@ sys-apps/mission-center 0.4.1 0.4.4-r1 9999: Monitor your CPU, Memory, Disk, Net
 sys-apps/nvimpager 0.12.0: Use nvim as a pager to view manpages, diff, etc with nvim's syntax highlighting.
 sys-apps/openSeaChest 23.03.1 23.12: SeaGate's open source harddrive control utilities
 sys-apps/ov 0.11.2 0.32.0: Feature-rich terminal pager
-sys-apps/pnpm-bin 9.0.6: Fast, disk space efficient package manager, alternative to npm and yarn
+sys-apps/pnpm-bin 9.0.6 9.5.0: Fast, disk space efficient package manager, alternative to npm and yarn
 sys-apps/qemu-openrc 0.10.0 0.11.1 9999: OpenRC init script for QEMU/KVM
 sys-apps/qjournalctl 0.6.2: Qt-based GUI for systemd's journalctl command
 sys-apps/sampler 1.1.0: visualizer for shell commands, executions and alerting
@@ -1658,7 +1663,6 @@ www-client/firefox-developer-bin 122.0 128.0: Firefox browser developer edition
 www-client/mullvad-browser-bin 13.5 13.5.1: The Mullvad Browser is developed to minimize tracking and fingerprinting.
 www-client/nyxt 3.11.4 3.11.5 3.11.6 3.11.7 9999: Nyxt - the hacker's power-browser
 www-client/vimb 3.6.0 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
-www-client/woob 3.1-r1 9999: Web Outside Of Browsers (core, site modules and applications)
 www-client/yandex-browser 24.4.1.951_p1: The web browser from Yandex
 www-misc/dufs 0.40.0: Dufs is a distinctive utility file server
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits
@@ -1681,7 +1685,6 @@ x11-misc/aerial-sddm-theme 0_pre20191018-r1 9999: SDDM theme with Apple TV Aeria
 x11-misc/autotiling 1.9.2 1.9.3: Script for sway and i3 to automatically switch the window split orientation
 x11-misc/betterlockscreen 4.2.0: sweet looking lockscreen for linux system
 x11-misc/betterlockscreen_rapid 0.0.0_pre20210701 0.0.0_pre20210708: A rapid and good-looking screen locker
-x11-misc/gammy 0.9.60 0.9.64: Adaptive screen brightness/temperature
 x11-misc/gobble 1.3: Hide current window before launching external program, unhide after quitting
 x11-misc/greenclip-bin 4.2: Simple clipboard manager to be integrated with rofi
 x11-misc/gromit-mpx 1.6.0 9999: Gromit-MPX is a multi-pointer GTK3 port of the Gromit desktop annotation tool
