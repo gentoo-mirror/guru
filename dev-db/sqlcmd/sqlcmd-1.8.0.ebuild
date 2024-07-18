@@ -38,5 +38,6 @@ src_install() {
 		"README.md"
 		"SECURITY.md"
 	)
+
 	einstalldocs
 }

@@ -19,13 +19,13 @@ CRATES="
 	bstr@1.9.1
 	bumpalo@3.16.0
 	byteorder@1.5.0
-	bytes@1.6.0
+	bytes@1.6.1
 	bzip2-sys@0.1.11+1.0.8
 	bzip2@0.4.4
 	camino@1.1.7
 	cargo-platform@0.1.8
 	cargo_metadata@0.18.1
-	cc@1.0.104
+	cc@1.1.5
 	cfg-if@1.0.0
 	cfg_aliases@0.1.1
 	chrono@0.4.38
@@ -77,6 +77,7 @@ CRATES="
 	hashbrown@0.12.3
 	hashbrown@0.14.5
 	heck@0.4.1
+	heck@0.5.0
 	hermit-abi@0.3.9
 	home@0.5.9
 	http@0.2.12
@@ -136,12 +137,13 @@ CRATES="
 	rustix@0.38.34
 	rustls-webpki@0.101.7
 	rustls@0.21.12
+	rustversion@1.0.17
 	ryu@1.0.18
 	same-file@1.0.6
 	schannel@0.1.23
 	sct@0.7.1
-	security-framework-sys@2.11.0
-	security-framework@2.11.0
+	security-framework-sys@2.11.1
+	security-framework@2.11.1
 	semver@1.0.23
 	serde@1.0.204
 	serde_derive@1.0.204
@@ -152,18 +154,19 @@ CRATES="
 	shell2batch@0.4.5
 	spin@0.9.8
 	strip-ansi-escapes@0.2.0
+	strum_macros@0.26.4
 	suppaftp@5.4.0
-	syn@2.0.69
+	syn@2.0.71
 	tempfile@3.10.1
-	thiserror-impl@1.0.61
-	thiserror@1.0.61
+	thiserror-impl@1.0.62
+	thiserror@1.0.62
 	time-core@0.1.2
 	time@0.3.36
-	tinyvec@1.7.0
+	tinyvec@1.8.0
 	tinyvec_macros@0.1.1
 	toml@0.8.14
 	toml_datetime@0.6.6
-	toml_edit@0.22.14
+	toml_edit@0.22.15
 	typenum@1.17.0
 	uname@0.1.1
 	unicode-bidi@0.3.15
