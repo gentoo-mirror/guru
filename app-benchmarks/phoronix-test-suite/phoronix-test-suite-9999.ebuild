@@ -8,7 +8,7 @@ EAPI=8
 inherit bash-completion-r1 git-r3 xdg-utils
 
 DESCRIPTION="Phoronix's comprehensive, cross-platform testing and benchmark suite"
-HOMEPAGE="http://www.phoronix-test-suite.com"
+HOMEPAGE="https://www.phoronix-test-suite.com"
 EGIT_REPO_URI="https://github.com/${PN}/${PN}.git"
 EGIT3_STORE_DIR="${T}"
 
@@ -65,20 +65,21 @@ get_optional_dependencies()
 	(($# == 1)) || die "${FUNCNAME[0]}(): invalid number of arguments: ${#} (1)"
 
 	local -a array_package_names
-	local field_value ifield package_generic_name optional_packages_xmlline package_names installable_packages=""
+	local field_value ifield package_generic_name optional_packages_xmlline packages installable_packages=""
 	local package_close_regexp="</Package>" \
 		  package_generic_name_regexp="^.*<GenericName>|</GenericName>.*$" \
 		  package_names_regexp="^.*<PackageName>|</PackageName>.*$"
+		  reg='s@(^[[:blank:]]+|[[:blank:]]+$)$@@g'
 
 	line=0
 	while IFS=$'\n' read -r optional_packages_xmlline; do
 		if [[ "${optional_packages_xmlline}" =~ ${package_generic_name_regexp} ]]; then
 			package_generic_name="$(echo "${optional_packages_xmlline}" | sed -r "s@${package_generic_name_regexp}@@g")"
 		elif [[ "${optional_packages_xmlline}" =~ ${package_names_regexp} ]]; then
-			package_names="$(echo "${optional_packages_xmlline}" | sed -r -e "s@${package_names_regexp}@@g" -e 's@(^[[:blank:]]+|[[:blank:]]+$)$@@g' )"
+			packages="$(echo "${optional_packages_xmlline}" | sed -r -e "s@${package_names_regexp}@@g" -e "${reg}" )"
 			ifield=0
 			# shellcheck disable=SC2206
-			array_package_names=( ${package_names} )
+			array_package_names=( ${packages} )
 			for (( ifield=0 ; ifield < ${#array_package_names[@]} ; ++ifield )); do
 				field_value="${array_package_names[ifield]}"
 				[[ ${field_value} =~ ^.+/.+$ ]]	|| continue	# skip invalid package atoms
@@ -116,8 +117,13 @@ src_install() {
 pkg_postinst() {
 	xdg_icon_cache_update
 	xdg_mimeinfo_database_update
+	xdg_desktop_database_update
 
 	ewarn "${PN} has the following optional package dependencies:"
 	get_optional_dependencies "${GENTOO_OPTIONAL_PKGS_XML}"
 	unset -v GENTOO_OPTIONAL_PKGS_XML
+}
+
+pkg_postrm() {
+	xdg_desktop_database_update
 }
