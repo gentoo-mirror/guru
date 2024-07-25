@@ -14,13 +14,13 @@ SRC_URI="https://github.com/${PN}/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 LICENSE="MPL-2.0"
 SLOT="0"
 KEYWORDS="~amd64 ~arm64 ~x86"
-IUSE="doc encryption examples mbedtls pubsub openssl tools"
+IUSE="doc examples mbedtls pubsub openssl tools"
 # Requires network access
 RESTRICT="test"
 
 REQUIRED_USE="
 	${PYTHON_REQUIRED_USE}
-	encryption? ( || ( mbedtls openssl ) )
+	?? ( mbedtls openssl )
 "
 
 BDEPEND="
@@ -50,15 +50,14 @@ src_configure() {
 		-DUA_BUILD_EXAMPLES=OFF
 		-DUA_BUILD_TOOLS=$(usex tools)
 		-DUA_BUILD_UNIT_TESTS=OFF
+		-DUA_ENABLE_HARDENING=OFF
 		-DUA_ENABLE_PUBSUB=$(usex pubsub)
 		-DUA_ENABLE_PUBSUB_INFORMATIONMODEL=$(usex pubsub)
 		-DUA_FORCE_WERROR=OFF
 	)
 
-	if use encryption; then
-		use mbedtls && mycmakeargs+=(-DUA_ENABLE_ENCRYPTION=MBEDTLS)
-		use openssl && mycmakeargs+=(-DUA_ENABLE_ENCRYPTION=OPENSSL)
-	fi
+	use mbedtls && mycmakeargs+=(-DUA_ENABLE_ENCRYPTION=MBEDTLS)
+	use openssl && mycmakeargs+=(-DUA_ENABLE_ENCRYPTION=OPENSSL)
 
 	cmake_src_configure
 }

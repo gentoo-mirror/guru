@@ -20,7 +20,7 @@ RDEPEND="
 	x11-libs/gtk+:3[wayland]
 	gui-libs/gtk-session-lock
 "
-DEPEND="${DEPEND}"
+DEPEND="${RDEPEND}"
 BDEPEND="
 	virtual/pkgconfig
 	dev-build/meson
@@ -28,8 +28,8 @@ BDEPEND="
 "
 
 src_configure() {
-        local emesonargs=(
-                $(meson_feature man man-pages)
-		)
-        meson_src_configure
+	local emesonargs=(
+			$(meson_feature man man-pages)
+	)
+	meson_src_configure
 }
