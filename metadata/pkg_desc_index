@@ -290,7 +290,7 @@ app-misc/x86-64-level 0.2.2 9999: Get the x86-64 Microarchitecture Level on the 
 app-misc/xplr 0.21.3: A hackable, minimal, fast TUI file explorer
 app-misc/yaf 0.0.3: Yet another system fetch that is minimal and customizable.
 app-misc/yazi 0.2.2 0.2.3 0.2.4 0.2.5-r1: Blazing fast terminal file manager written in Rust, based on async I/O.
-app-misc/zcock 0.1.0 0.2.0: Print an emoji according to traditional chinese calendar and more
+app-misc/zcock 0.2.0 0.2.1: Print an emoji according to traditional chinese calendar and more
 app-mobilephone/flashlight 0.1.1-r2: It's a flashlight, what do you expect?
 app-mobilephone/mobile-config-firefox 2.1.0: Mobile and privacy friendly configuration for Firefox
 app-mobilephone/pinephone-modem-scripts 0.20.8: Modem scripts for the PinePhone
@@ -309,6 +309,7 @@ app-office/standartnotes-bin 3.183.22: End-to-end encrypted note-taking app, alt
 app-portage/appswipe 1.1.14 1.1.68: Application for browsing your local Portage repository files
 app-portage/pacvis 0.4.2: Displays dependency graphs of packages
 app-portage/portage-lostfiles 0.5.5: A simple script to identify files not tracked by Portage package manager
+app-portage/portagecfg 2.0.0: Utility to write Portage config files in an easy manner.
 app-portage/quantum-resolver 9999: A WIP portage dependency resolver
 app-portage/showbuild 0.9.1-r1: Script to follow log of running portage builds
 app-portage/version 0.19.0_alpha 0.20.1_alpha 0.21.0_alpha: A command line function for package version management.
@@ -464,12 +465,12 @@ dev-dotnet/gtk-sharp 2.99.3-r3 3.22.2-r2: gtk bindings for mono
 dev-elixir/hex 1.0.1-r1: Package manager for the Erlang VM
 dev-embedded/arduino-cli 0.35.2 1.0.2: Next-generation arduino command line tool
 dev-embedded/bcm2-utils 0.9.8: Utilities for Broadcom-based cable modems
-dev-embedded/esp-coredump 1.7.0 1.10.0: Utility that helps users to retrieve and analyse core dumps
+dev-embedded/esp-coredump 1.7.0 1.10.0 1.11.0: Utility that helps users to retrieve and analyse core dumps
 dev-embedded/esp-idf 5.2.2 5.3: Espressif IoT Development Framework
 dev-embedded/esp-idf-kconfig 2.1.0 2.2.0: Kconfig tooling for esp-idf
 dev-embedded/esp-idf-monitor 1.3.3 1.4.0: Python object-oriented database
 dev-embedded/esp-idf-panic-decoder 1.0.1 1.1.0: Parses ESP-IDF panic handler output acts as a GDB server over stdin/stdout
-dev-embedded/esp-idf-size 1.1.1 1.4.0: Firmware size analysis for ESP-IDF
+dev-embedded/esp-idf-size 1.1.1 1.4.0 1.5.0: Firmware size analysis for ESP-IDF
 dev-embedded/freertos-gdb 1.0.2 1.0.3: Python module for operating with freeRTOS-kernel objects in GDB
 dev-embedded/idf-component-manager 1.5.3: Tool for installing ESP-IDF components
 dev-embedded/mv88e6xxx-dump 0.2.0_pre20210327: Dump information about Marvell mv88e6xxx Ethernet switches
@@ -1323,7 +1324,7 @@ mpv-plugin/mpv_sponsorblock_minimal 2023.08.20: A minimal script to skip sponsor
 mpv-plugin/mpv_thumbnail_script 0.5.2 0.5.3 0.5.4: A Lua script to show preview thumbnails in mpv's OSC seekbar
 mpv-plugin/thumbfast 2023.12.08: High-performance on-the-fly thumbnailer script for mpv.
 net-analyzer/bandwhich 0.22.2: Terminal bandwidth utilization tool
-net-analyzer/gping 1.16.1-r1: Ping, but with a graph
+net-analyzer/gping 1.17.3: Ping, but with a graph
 net-analyzer/munin-contrib 0.2021.04.27 0.2024.03.04 0.2024.03.04-r1: User contributed stuff related to munin
 net-analyzer/netsniff-ng 0.6.8-r1: high performance network sniffer for packet inspection
 net-client/amfora 1.8.0 1.9.2: A fancy terminal browser for the Gemini protocol.
@@ -1476,7 +1477,7 @@ net-vpn/candy 5.10.0: A reliable, low-latency, and anti-censorship virtual priva
 net-vpn/cloudflare-warp 2024.2.62-r2 2024.4.133-r1: Cloudflare Warp Client
 net-vpn/fastd 22: A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
 net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that require SAML
-net-vpn/mullvadvpn-app 2024.3 2024.4_beta1: Tool used to manage daemon setup
+net-vpn/mullvadvpn-app 2024.4: Tool used to manage daemon setup
 net-wireless/airspyhf 1.6.8: User mode driver for Airspy HF+
 net-wireless/bluetuith 0.1.9 0.2.0 0.2.1 0.2.2 9999: A TUI bluetooth manager for Linux written in Go
 net-wireless/btscreenlocker 1.6.2 1.6.3 1.6.5: Daemon to lock your screen when Bluetooth trusted devices go away.
@@ -1572,7 +1573,7 @@ sys-apps/mission-center 0.4.1 0.4.4-r1 9999: Monitor your CPU, Memory, Disk, Net
 sys-apps/nvimpager 0.12.0: Use nvim as a pager to view manpages, diff, etc with nvim's syntax highlighting.
 sys-apps/openSeaChest 23.03.1 23.12: SeaGate's open source harddrive control utilities
 sys-apps/ov 0.11.2 0.32.0: Feature-rich terminal pager
-sys-apps/pnpm-bin 9.0.6 9.5.0: Fast, disk space efficient package manager, alternative to npm and yarn
+sys-apps/pnpm-bin 9.0.6 9.5.0 9.6.0: Fast, disk space efficient package manager, alternative to npm and yarn
 sys-apps/qemu-openrc 0.10.0 0.11.1 9999: OpenRC init script for QEMU/KVM
 sys-apps/qjournalctl 0.6.2: Qt-based GUI for systemd's journalctl command
 sys-apps/sampler 1.1.0: visualizer for shell commands, executions and alerting
