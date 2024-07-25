@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install postinst prepare
+DEPEND=x11-libs/libX11 x11-base/xorg-proto
+DESCRIPTION=Status monitor for window managers that use WM_NAME/stdin to fill the status bar
+EAPI=8
+HOMEPAGE=https://tools.suckless.org/slstatus/
+INHERIT=toolchain-funcs savedconfig
+IUSE=savedconfig savedconfig
+KEYWORDS=~amd64
+LICENSE=ISC
+RDEPEND=x11-libs/libX11
+SLOT=0
+SRC_URI=https://dl.suckless.org/tools/slstatus-1.0.tar.gz
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	portability	225656ad6c6594fe3b0187bdd50707fb	savedconfig	8b5f9d995a970e49cd427c55d5840285
+_md5_=874a6611c88c51fcf6c0734abc0665d5

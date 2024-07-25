@@ -1,0 +1,15 @@
+BDEPEND=>=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array
+DEFINED_PHASES=compile configure install test
+DEPEND=pci? ( sys-apps/pciutils )
+DESCRIPTION=fetch program written in pure C
+EAPI=8
+HOMEPAGE=https://github.com/kernaltrap8/tinyfetch
+INHERIT=meson
+IUSE=+pci
+KEYWORDS=~amd64 ~ppc64
+LICENSE=GPL-3
+RDEPEND=pci? ( sys-apps/pciutils )
+SLOT=0
+SRC_URI=https://github.com/kernaltrap8/tinyfetch/archive/refs/tags/v6.1.tar.gz -> tinyfetch-6.1.gh.tar.gz
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	e503ea5acc20410237ba33ec3f7c857d	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	8b220bbce5c119fb1d4d5c2f5588f3ea	meson	99466844dd8d4fcfb07578a76f5a9922
+_md5_=1bf45064e862c274083378a4214b7f4c

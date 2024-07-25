@@ -47,6 +47,8 @@ app-editors/imhex:system-llvm - Use the system LLVM installation
 app-emulation/arnold:inkz80 - Use inkz80 processor emulation
 app-emulation/box64:aot - Enables the dynamic ahead of time recompiler for increased performance on ARM
 app-emulation/box86:aot - Enables the dynamic ahead of time recompiler for increased performance on ARM
+app-emulation/cloud-utils:guest-utils - Installs utilities useful within a guest VM
+app-emulation/cloud-utils:image-utils - Installs utilities useful for manipulating guest images from outside a guest VM
 app-emulation/looking-glass:binutils - build backtrace support
 app-emulation/looking-glass:pipewire - enable media-video/pipewire support
 app-misc/apidb:commands - Build commands
@@ -134,9 +136,8 @@ dev-libs/libdwarf:dwarfgen - enable dwarfgen compilation
 dev-libs/librepo:gpgme - Use GPGME instead of rpm library for OpenPGP key support
 dev-libs/librepo:zchunk - Build with zchunk support
 dev-libs/md4c:md2html - Build the md2html cli tool
-dev-libs/open62541:encryption - Enable encryption support
-dev-libs/open62541:mbedtls - Use mbedtls for encryption
-dev-libs/open62541:openssl - Use openssl for encryption
+dev-libs/open62541:mbedtls - Enable encryption support using net-libs/mbedtls
+dev-libs/open62541:openssl - Enable encryption support using dev-libs/openssl
 dev-libs/open62541:pubsub - Enable OPC/UA Pub/Sub extensions
 dev-libs/open62541:tools - Build additional shell tools
 dev-libs/qschematic:qt6 - Build with Qt6 support
