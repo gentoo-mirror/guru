@@ -1,4 +1,4 @@
-# Copyright 2023 Gentoo Authors
+# Copyright 2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -7,14 +7,17 @@ inherit desktop rpm systemd shell-completion xdg
 
 DESCRIPTION="Tool used to manage daemon setup"
 HOMEPAGE="https://github.com/mullvad/mullvadvpn-app https://mullvad.net/"
-SRC_URI="amd64? ( https://github.com/mullvad/mullvadvpn-app/releases/download/${PV}/MullvadVPN-${PV}_x86_64.rpm )"
+SRC_URI="
+	amd64? ( https://github.com/mullvad/mullvadvpn-app/releases/download/${PV}/MullvadVPN-${PV}_x86_64.rpm )
+	arm64? ( https://github.com/mullvad/mullvadvpn-app/releases/download/${PV}/MullvadVPN-${PV}_aarch64.rpm )
+"
 
 S="${WORKDIR}"
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="-* ~amd64"
+KEYWORDS="-* ~amd64 ~arm64"
 
-RESTRICT="bindist mirror test strip"
+RESTRICT="bindist mirror strip"
 
 RDEPEND="
 	app-accessibility/at-spi2-core
@@ -43,9 +46,6 @@ src_install() {
 	fperms +x "/opt/Mullvad VPN/chrome_crashpad_handler"
 	fperms 4755 "/opt/Mullvad VPN/chrome-sandbox"
 
-	# tbh I don't know if all next lines are needed or we can just do cp -pPR "${S}"/usr "${D}"/"
-
-	local i
 	dobin "${S}"/usr/bin/mullvad
 	dobin "${S}"/usr/bin/mullvad-daemon
 	dobin "${S}"/usr/bin/mullvad-exclude

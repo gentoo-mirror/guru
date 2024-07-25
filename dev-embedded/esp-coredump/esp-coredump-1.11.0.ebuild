@@ -9,21 +9,24 @@ PYTHON_COMPAT=( python3_{11,12} )
 
 inherit distutils-r1 pypi
 
-DESCRIPTION="Kconfig tooling for esp-idf"
-HOMEPAGE="https://github.com/espressif/esp-idf-kconfig"
+DESCRIPTION="Utility that helps users to retrieve and analyse core dumps"
+HOMEPAGE="https://github.com/espressif/esp-coredump"
 
 LICENSE="Apache-2.0"
 SLOT="0"
-
 KEYWORDS="~amd64"
 
+RESTRICT="test"
+
 RDEPEND="
-	dev-python/kconfiglib[${PYTHON_USEDEP}]
+	dev-embedded/esptool
+	dev-python/construct[${PYTHON_USEDEP}]
+	dev-python/pygdbmi[${PYTHON_USEDEP}]
 "
 
 DEPEND="${RDEPEND}"
 
 src_prepare() {
 	default
-	rm -r test || die
+	rm -r tests || die
 }
