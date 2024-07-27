@@ -578,7 +578,7 @@ dev-lua/multipart-post 1.4: HTTP Multipart Post helper that does just that.
 dev-ml/afl-persistent 1.3: Persistent-mode afl-fuzz for ocaml
 dev-ml/angstrom 0.16.0: Parser combinators built for speed and memory efficiency
 dev-ml/bheap 2.0.0: OCaml binary heap implementation by Jean-Christophe Filliatre
-dev-ml/bigstringaf 0.7.0 0.9.0: Bigstring intrinsics and fast blits based on memcpy/memmove
+dev-ml/bigstringaf 0.7.0 0.9.0 0.10.0: Bigstring intrinsics and fast blits based on memcpy/memmove
 dev-ml/cdrom 0.9.4: Query the state and contents of CDROM devices under Linux
 dev-ml/crowbar 0.2.1: Write tests, let a fuzzer find failing cases
 dev-ml/domain-name 0.4.0: RFC 1035 Internet domain names
@@ -586,7 +586,10 @@ dev-ml/either 1.0.0: Compatibility module for Either in OCaml 4.12
 dev-ml/gmap 0.3.0-r2: Heterogenous Map over a GADT
 dev-ml/lwt-dllist 1.0.1: Mutable doubly-linked list with Lwt iterators
 dev-ml/ocaml-syntax-shims 1.0.0: Backport new syntax to older compilers
+dev-ml/ocaml-version 3.6.7: Library to parse and enumerate releases of the OCaml compiler
+dev-ml/ocamlc-loc 3.13.1: Parse ocaml compiler output into structured form
 dev-ml/pecu 0.6: Implementation of quoted-printable encoder/decoder from RFC2045
+dev-ml/ppx_yojson_conv_lib 0.17.0: Runtime lib for ppx_yojson_conv
 dev-ml/psq 0.2.0-r2 0.2.1: Functional Priority Search Queues for OCaml
 dev-ml/randomconv 0.1.3: Convert from random bytes to random native numbers
 dev-ml/stringext 1.6.0-r2: Extra string functions for OCaml
@@ -913,6 +916,7 @@ dev-util/lua-language-server 3.9.1-r1 3.9.3: Lua language server
 dev-util/mh 1.0.3: Generate help for Makefile
 dev-util/mock 5.6-r1: Simple chroot build environment manager for building RPMs
 dev-util/mock-core-configs 40.6: Mock core config files basic chroots
+dev-util/ocamlformat 0.26.2: Auto-formatter for OCaml code
 dev-util/ocp-indent 1.8.2: Indentation tool for OCaml, to be used from editors like Emacs and Vim.
 dev-util/pcpp 1.30: A C99 preprocessor written in pure Python
 dev-util/pifpaf 3.1.5-r1: Suite of tools and fixtures to manage daemons for testing
@@ -1073,7 +1077,7 @@ gui-apps/hiprompt-gtk-py 0_pre20221221 9999: GTK+ Himitsu prompter for Wayland
 gui-apps/hypridle 0.1.2-r2 9999: Hyprland's idle daemon
 gui-apps/hyprlock 0.3.0-r3 0.4.1-r1 9999: Hyprland's GPU-accelerated screen locking utility
 gui-apps/hyprpaper 0.6.0-r1 0.7.0: A blazing fast wayland wallpaper utility
-gui-apps/hyprpicker 0.1.1 0.2.0 0.3.0: A wlroots-compatible Wayland color picker that does not suck
+gui-apps/hyprpicker 0.1.1 0.2.0 0.3.0-r1: A wlroots-compatible Wayland color picker that does not suck
 gui-apps/hyprshade 3.2.1 9999: Hyprland shader configuration tool
 gui-apps/hyprshot 1.2.3 1.3.0 9999: Hyprshot is an utility to easily take screenshot in Hyprland using your mouse
 gui-apps/intiface-central-bin 2.5.7 2.6.0: Buttplug frontend application
@@ -1281,6 +1285,7 @@ media-sound/spot 0.4.0: GTK4 Spotify (Premium) client
 media-sound/spotify-adblock 1.0.1 1.0.2 1.0.3: Adblocker for Spotify
 media-sound/spotify-player 0.18.1 0.18.2 9999: spotify_player is a fast, easy to use, and configurable terminal music player.
 media-sound/spotifyd 0.3.5_p20240513: A Spotify daemon
+media-sound/supersonic 0.12.0: A lightweight and full-featured cross-platform desktop client
 media-sound/tidal-hifi-bin 5.14.1 5.15.0: Web version of Tidal running in electron with Hi-Fi support thanks to Widevine.
 media-sound/yewtube 2.10.5 9999: Terminal-based YouTube player and downloader
 media-sound/youtube-music-bin 3.3.6: YouTube Music Desktop App bundled with custom plugins
@@ -1429,7 +1434,7 @@ net-misc/lyrics-in-terminal 1.5.0: Command Line Lyrics fetcher for MPRIS media p
 net-misc/maestral 1.9.3-r1 1.9.4: Maestral is an open-source Dropbox client written in Python
 net-misc/maestral-qt 1.9.3 1.9.4: Maestral is an open-source Dropbox client written in Python
 net-misc/mastorss 0.13.1 0.13.1-r1 9999: Another RSS to Mastodon bot
-net-misc/megasync 5.3.0.0-r1 9999: The official Qt-based program for syncing your MEGA account in your PC
+net-misc/megasync 5.4.0.0 9999: The official Qt-based program for syncing your MEGA account in your PC
 net-misc/myip 1.2.1: Get your external IP address using STUN server
 net-misc/ooni-probe-cli 3.22.0: OONI Probe network measurement tool for detecting internet censorship
 net-misc/openbgpd 6.9_p0 8.4 9999: OpenBGPD is a free implementation of BGPv4
@@ -1461,7 +1466,7 @@ net-p2p/dogecoin-qt 1.14.6 1.14.7: Dogecoin Core Qt for desktop. Downloaded bloc
 net-p2p/feather 2.6.7-r1 9999: A free, open-source Monero wallet
 net-p2p/fragments 3.0.0 3.0.1: Fragments is an easy to use BitTorrent client
 net-p2p/gridcoin 5.4.7.0 5.4.8.0: Proof-of-Stake based cryptocurrency that rewards BOINC computation
-net-p2p/monero 0.17.2.0 0.17.2.3 0.17.3.0 0.17.3.2 0.18.1.2 0.18.2.0 0.18.2.2 0.18.3.1 0.18.3.3-r1 9999: The secure, private, untraceable cryptocurrency
+net-p2p/monero 0.17.3.2 0.18.3.1 0.18.3.3-r1 0.18.3.3-r2 9999: The secure, private, untraceable cryptocurrency
 net-p2p/p2pool 3.5 3.6.2 3.7 3.8 3.9 3.10 4.0 9999: Decentralized pool for Monero mining
 net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
 net-p2p/yggdrasil-go 0.5.5 9999: An experiment in scalable routing as an encrypted IPv6 overlay network

@@ -1,0 +1,13 @@
+BDEPEND=>=dev-lang/go-1.20:= app-arch/unzip
+DEFINED_PHASES=compile install unpack
+DESCRIPTION=A lightweight and full-featured cross-platform desktop client
+EAPI=8
+HOMEPAGE=https://github.com/dweymouth/supersonic
+INHERIT=go-module
+KEYWORDS=~amd64
+LICENSE=GPL-3
+RESTRICT=strip
+SLOT=0
+SRC_URI=https://github.com/dweymouth/supersonic/archive/refs/tags/v0.12.0.tar.gz -> supersonic-0.12.0.tar.gz https://gentoo.kropotkin.rocks/go-pkgs/supersonic-0.12.0-vendor.tar.xz
+_eclasses_=multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	e503ea5acc20410237ba33ec3f7c857d	go-env	7eb56e61e641d6db098d57fb37477c44	go-module	83fd3ed1657cfc316c93d6a37018290d
+_md5_=a0d8a3c55a79c9b2a1d89a8dae06a4ba
