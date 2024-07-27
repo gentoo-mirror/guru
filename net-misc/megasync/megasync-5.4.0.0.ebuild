@@ -17,7 +17,7 @@ if [[ ${PV} == 9999 ]];then
 	EGIT_BRANCH="master"
 	EGIT_SUBMODULES=( '*' )
 else
-	MEGA_SDK_REV="eb8dba09149e1aad0210c3591f3ef6e50022f714" # commit of src/MEGASync/mega submodule
+	MEGA_SDK_REV="8ffa53c73b8295415f965139daf78cecbac70482" # commit of src/MEGASync/mega submodule
 	MEGA_TAG_SUFFIX="Linux"
 	SRC_URI="
 		https://github.com/meganz/MEGAsync/archive/v${PV}_${MEGA_TAG_SUFFIX}.tar.gz -> ${P}.tar.gz

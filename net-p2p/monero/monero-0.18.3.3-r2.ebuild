@@ -1,4 +1,4 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -19,7 +19,7 @@ fi
 
 LICENSE="BSD MIT"
 SLOT="0"
-IUSE="+daemon readline +tools +wallet-cli +wallet-rpc"
+IUSE="+daemon hw-wallet readline +tools +wallet-cli +wallet-rpc"
 REQUIRED_USE="|| ( daemon tools wallet-cli wallet-rpc )"
 RESTRICT="test"
 
@@ -36,12 +36,18 @@ DEPEND="
 	net-libs/czmq:=
 	net-libs/miniupnpc:=
 	readline? ( sys-libs/readline:0= )
+	hw-wallet? (
+		dev-libs/hidapi
+		dev-libs/protobuf:=
+		virtual/libusb:1
+	)
 "
 RDEPEND="${DEPEND}"
 BDEPEND="virtual/pkgconfig"
 
 PATCHES=(
-	"${FILESDIR}/${PN}-0.17.3.0-unbundle-dependencies.patch"
+	"${FILESDIR}/${PN}-0.18.3.3-unbundle-dependencies.patch"
+	"${FILESDIR}/${PN}-0.18.3.3-miniupnp-api-18.patch"
 )
 
 src_configure() {
@@ -49,8 +55,10 @@ src_configure() {
 		# TODO: Update CMake to install built libraries (help wanted)
 		-DBUILD_SHARED_LIBS=OFF
 		-DMANUAL_SUBMODULES=ON
-		-DUSE_DEVICE_TREZOR=OFF
+		-DUSE_DEVICE_TREZOR=$(usex hw-wallet ON OFF)
 	)
+
+	use elibc_musl && mycmakeargs+=( -DSTACK_TRACE=OFF )
 
 	cmake_src_configure
 }
@@ -107,7 +115,7 @@ pkg_postinst() {
 		elog
 		elog "Run monerod status as any user to get sync status and other stats."
 		elog
-		elog "The Monero blockchain can take up a lot of space (80 GiB) and is stored"
+		elog "The Monero blockchain can take up a lot of space (200 GiB) and is stored"
 		elog "in /var/lib/monero by default. You may want to enable pruning by adding"
 		elog "'prune-blockchain=1' to /etc/monero/monerod.conf to prune the blockchain"
 		elog "or move the data directory to another disk."
