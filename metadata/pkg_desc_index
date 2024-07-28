@@ -114,7 +114,7 @@ app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applicatio
 app-admin/pass-audit 1.2 1.2-r1: A pass extension for auditing your password repository.
 app-admin/pass-update 2.2.1: pass extension that provides an easy flow for updating passwords
 app-admin/pulumi-bin 3.122.0 3.124.0 3.127.0: Infrastructure as code in any programming language
-app-admin/rbw 1.11.1 9999: Unofficial Bitwarden CLI
+app-admin/rbw 1.11.1-r1 1.12.0 9999: Unofficial Bitwarden CLI
 app-admin/s-tui 1.1.6: Stress-Terminal UI monitoring tool
 app-admin/synadm 0.43.1 0.44: Command line admin tool for Synapse
 app-admin/terragrunt-bin 0.38.6 0.45.4 0.50.8: A thin wrapper for Terraform
@@ -589,6 +589,8 @@ dev-ml/lwt-dllist 1.0.1: Mutable doubly-linked list with Lwt iterators
 dev-ml/ocaml-syntax-shims 1.0.0: Backport new syntax to older compilers
 dev-ml/ocaml-version 3.6.7: Library to parse and enumerate releases of the OCaml compiler
 dev-ml/ocamlc-loc 3.13.1: Parse ocaml compiler output into structured form
+dev-ml/ocamlformat-lib 0.26.2: OCamlFormat is a tool to automatically format OCaml code in a uniform style.
+dev-ml/ocamlformat-rpc-lib 0.26.2: Auto-formatter for OCaml code (RPC mode)
 dev-ml/pecu 0.6: Implementation of quoted-printable encoder/decoder from RFC2045
 dev-ml/ppx_yojson_conv_lib 0.17.0: Runtime lib for ppx_yojson_conv
 dev-ml/psq 0.2.0-r2 0.2.1: Functional Priority Search Queues for OCaml
@@ -747,7 +749,7 @@ dev-python/pem 23.1.0: Easy PEM file parsing in Python
 dev-python/persist-queue 0.8.1 1.0.0: A thread-safe disk based persistent queue in Python
 dev-python/pg8000 1.29.4: PostgreSQL interface library
 dev-python/phx-class-registry 4.0.6-r1 4.1.0: An intersection of the Registry and Factory pattern
-dev-python/pillow-heif 0.15.0: Python interface for libheif library
+dev-python/pillow-heif 0.18.0: Python interface for libheif library
 dev-python/playsound 1.3.0: Single function module with no dependencies for playing sounds
 dev-python/plexapi 4.15.14 4.15.15: Python bindings for the Plex API.
 dev-python/plotext 5.3.0: Plotting on terminal
@@ -1420,7 +1422,7 @@ net-misc/curlie 1.7.2: Curlie is a frontend to curl that adds the ease of use of
 net-misc/cve-client 1.1.0 9999: CLI-based client / toolbox for CVE.org
 net-misc/eg25-manager 0.4.2: Daemon for managing the Quectel EG25 modem
 net-misc/fedigroup 1.0.6 1.0.8: Emulate group accounts on Mastodon/Pleroma
-net-misc/freetube-bin 0.21.1: A private YouTube desktop client
+net-misc/freetube-bin 0.21.1_beta 0.21.2_beta: A private YouTube desktop client
 net-misc/gdown 5.1.0 5.2.0: Google Drive public file/folder downloader
 net-misc/gdrive 3.9.0 3.9.1: Google Drive CLI Client
 net-misc/gemget 1.9.0: Command line downloader for the Gemini protocol
@@ -1635,7 +1637,7 @@ sys-libs/libfixposix 0.4.3 0.5.1: Thin wrapper over POSIX syscalls
 sys-libs/libnvidia-container 1.14.6 9999: NVIDIA container runtime library
 sys-libs/nss-tls 1.0 1.1-r1 9999: A DNS over HTTPS resolver for glibc
 sys-libs/solo-udev-rules 4.1.5: udev rules for the Solo FIDO2 & U2F USB+NFC security key
-sys-power/amdfan 0.1.28 0.2.1-r1: Updated AMD Fan control utility forked from amdgpu-fan and updated.
+sys-power/amdfan 0.1.28 0.2.1-r2: Updated AMD Fan control utility forked from amdgpu-fan and updated.
 sys-power/auto-cpufreq 2.1.0 2.1.0-r1: Automatic CPU speed & power optimizer for Linux
 sys-power/envycontrol 3.4.0 9999: Easy GPU switching for Nvidia Optimus laptops under Linux
 sys-power/fan2go 0.8.1: A simple daemon providing dynamic fan speed control
@@ -1717,7 +1719,7 @@ x11-misc/picom-jonaburg 9999: A lightweight compositor for X11 (previously a com
 x11-misc/pywal 3.3.0: Tool that generates color schemes from images
 x11-misc/rofi-emoji 3.3.0 3.4.1: Emoji selector plugin for Rofi
 x11-misc/selx 1.2.0: Minimal X11 rectangle selection tool
-x11-misc/slstatus 1.0: Status monitor for window managers that use WM_NAME/stdin to fill the status bar
+x11-misc/slstatus 1.0-r1: Status monitor for window managers that use WM_NAME/stdin to fill the status bar
 x11-misc/tbsm 0.5 0.6 0.7: A pure bash session or application launcher. Inspired by cdm, tdm and krunner
 x11-misc/xbanish 1.8 1.8_p20230519: Banish the mouse cursor when typing, show it again when the mouse moves
 x11-misc/xob 0.2 0.3: A lightweight overlay volume (or anything) bar for the X Window System
