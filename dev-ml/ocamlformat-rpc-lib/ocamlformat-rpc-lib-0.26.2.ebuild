@@ -5,9 +5,14 @@ EAPI=8
 
 inherit dune
 
-DESCRIPTION="Auto-formatter for OCaml code"
-HOMEPAGE="https://github.com/ocaml-ppx/ocamlformat"
+DESCRIPTION="Auto-formatter for OCaml code (RPC mode)"
+HOMEPAGE="
+	https://opam.ocaml.org/packages/ocamlformat-rpc-lib
+	https://github.com/ocaml-ppx/ocamlformat
+"
 SRC_URI="https://github.com/ocaml-ppx/ocamlformat/archive/${PV}.tar.gz -> ${P}.tar.gz"
+
+S="${WORKDIR}/ocamlformat-${PV}"
 
 LICENSE="MIT"
 
@@ -19,26 +24,17 @@ IUSE="ocamlopt test"
 RESTRICT="!test? ( test )"
 
 RDEPEND="
-	>=dev-ml/cmdliner-1.1.0:=
-	~dev-ml/ocamlformat-lib-${PV}:=
-	>=dev-ml/re-1.10.3:=
+	>=dev-ml/csexp-1.4.0:=
 "
 
 DEPEND="
 	${RDEPEND}
 "
 
-BDEPEND="
-	test? (
-		>=dev-ml/cmdliner-1.2.0:=
-		~dev-ml/ocamlformat-rpc-lib-${PV}:=
-	)
-"
-
 src_compile() {
-	dune-compile ocamlformat
+	dune-compile ocamlformat-rpc-lib
 }
 
 src_install() {
-	dune-install ocamlformat
+	dune-install ocamlformat-rpc-lib
 }

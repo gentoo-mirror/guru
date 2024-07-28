@@ -7,7 +7,9 @@ inherit desktop unpacker xdg
 
 DESCRIPTION="A private YouTube desktop client"
 HOMEPAGE="https://freetubeapp.io/ https://github.com/FreeTubeApp/FreeTube"
-SRC_URI="https://github.com/FreeTubeApp/FreeTube/releases/download/v${PV}-beta/freetube_${PV}_amd64.deb"
+SRC_URI="https://github.com/FreeTubeApp/FreeTube/releases/download/v${PV/_/-}/freetube_${PV%_*}_amd64.deb
+	-> ${P}.deb
+"
 
 S="${WORKDIR}"
 
@@ -61,8 +63,8 @@ src_install() {
 	domenu usr/share/applications/freetube.desktop
 	doicon -s scalable usr/share/icons/hicolor/scalable/apps/freetube.svg
 
-	fperms 4755 /opt/FreeTube/chrome-sandbox || die
-	fperms +x  /opt/FreeTube/freetube || die
+	fperms 4755 /opt/FreeTube/chrome-sandbox
+	fperms +x  /opt/FreeTube/freetube
 
 	dosym -r /opt/FreeTube/freetube /usr/bin/freetube-bin
 }

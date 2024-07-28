@@ -300,7 +300,7 @@ CRATES="
 	zeroize@1.8.1
 "
 
-inherit cargo shell-completion
+inherit cargo optfeature shell-completion
 
 DESCRIPTION="Unofficial Bitwarden CLI"
 HOMEPAGE="https://git.tozt.net/rbw"
@@ -321,10 +321,10 @@ LICENSE+=" Apache-2.0 BSD Boost-1.0 ISC MIT Unicode-DFS-2016"
 LICENSE+=" openssl"
 SLOT="0"
 
-# copypasta crate provides wayland clipboard support via dlopen calls against
-# libwayland-client.so
 RDEPEND="app-crypt/pinentry"
 BDEPEND=">=virtual/rust-1.74"
+
+PATCHES="${FILESDIR}"/${P}-gen-completions.patch
 
 QA_FLAGS_IGNORED="
 	usr/bin/rbw
@@ -351,10 +351,17 @@ src_install() {
 
 	local comp DOCS="CHANGELOG.md README.md"
 	for comp in bash fish zsh; do
-		"$(cargo_target_dir)"/rbw gen-completions ${comp} > rbw.${comp} || die
+		"$(cargo_target_dir)"/rbw gen-completions ${comp} > rbw.${comp} || \
+			die "Failed to generate completions for ${comp}."
 	done
 	newbashcomp rbw.bash rbw
 	dofishcomp rbw.fish
 	newzshcomp rbw.zsh _rbw
 	einstalldocs
+}
+
+pkg_postinst() {
+	# copypasta crate provides wayland clipboard support via dlopen calls against
+	# libwayland-client.so
+	optfeature "Wayland clipboard support" dev-libs/wayland
 }

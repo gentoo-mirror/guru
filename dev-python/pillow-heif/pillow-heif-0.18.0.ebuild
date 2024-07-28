@@ -21,11 +21,11 @@ KEYWORDS="~amd64"
 RDEPEND="
 	!test? (
 		dev-python/pillow[${PYTHON_USEDEP}]
-		media-libs/libheif:=
+		>=media-libs/libheif-1.17.6:=
 	)
 	test? (
 		dev-python/pillow[jpeg,lcms,webp,zlib,${PYTHON_USEDEP}]
-		media-libs/libheif:=[x265]
+		>=media-libs/libheif-1.17.6:=[x265]
 	)
 "
 BDEPEND="
@@ -36,11 +36,6 @@ BDEPEND="
 	)
 "
 
-PATCHES=( "${FILESDIR}/${P}-respect-cflags.patch" )
+PATCHES=( "${FILESDIR}/${PN}-0.15.0-respect-cflags.patch" )
 
 distutils_enable_tests pytest
-
-src_prepare() {
-	distutils-r1_src_prepare
-	sed -i "s/=get_version()/=\"${PV}\"/" setup.py || die
-}
