@@ -3,10 +3,10 @@
 
 EAPI=8
 
-inherit cmake flag-o-matic pam systemd
+inherit cmake pam systemd
 
 DESCRIPTION="Lightweight Music Server."
-HOMEPAGE="http://lms-demo.poupon.dev/ https://github.com/epoupon/lms"
+HOMEPAGE="https://lms-demo.poupon.dev/ https://github.com/epoupon/lms"
 SRC_URI="https://github.com/epoupon/lms/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-3"
