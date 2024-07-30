@@ -1,0 +1,16 @@
+BDEPEND=dev-lang/ocaml dev-ml/dune
+DEFINED_PHASES=compile configure install test
+DEPEND=dev-ml/csexp:= dev-ml/ordering:= dev-ml/dyn:= dev-ml/xdg:= ~dev-ml/stdune-3.13.1:= >=dev-ml/pp-1.1.0:= >=dev-lang/ocaml-4:=[ocamlopt?] dev-ml/dune:=
+DESCRIPTION=Communicate with dune using rpc
+EAPI=8
+HOMEPAGE=https://opam.ocaml.org/packages/dune-rpc/ https://github.com/ocaml/dune/
+INHERIT=dune
+IUSE=ocamlopt
+KEYWORDS=~amd64
+LICENSE=MIT
+RDEPEND=dev-ml/csexp:= dev-ml/ordering:= dev-ml/dyn:= dev-ml/xdg:= ~dev-ml/stdune-3.13.1:= >=dev-ml/pp-1.1.0:= >=dev-lang/ocaml-4:=[ocamlopt?] dev-ml/dune:=
+RESTRICT=test
+SLOT=0/3.13.1
+SRC_URI=https://github.com/ocaml/dune/archive/3.13.1.tar.gz -> dune-rpc-3.13.1.tar.gz
+_eclasses_=edo	367e103a74bf77e6a8da7894d999fa3c	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	dune	339df00cc31668d437589817d093748d
+_md5_=aef5e81e6f44859342fac9574c7c8697

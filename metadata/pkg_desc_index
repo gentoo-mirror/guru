@@ -114,7 +114,7 @@ app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applicatio
 app-admin/pass-audit 1.2 1.2-r1: A pass extension for auditing your password repository.
 app-admin/pass-update 2.2.1: pass extension that provides an easy flow for updating passwords
 app-admin/pulumi-bin 3.122.0 3.124.0 3.127.0: Infrastructure as code in any programming language
-app-admin/rbw 1.11.1-r1 1.12.0 9999: Unofficial Bitwarden CLI
+app-admin/rbw 1.11.1-r1 1.12.0 1.12.1 9999: Unofficial Bitwarden CLI
 app-admin/s-tui 1.1.6: Stress-Terminal UI monitoring tool
 app-admin/synadm 0.43.1 0.44: Command line admin tool for Synapse
 app-admin/terragrunt-bin 0.38.6 0.45.4 0.50.8: A thin wrapper for Terraform
@@ -176,7 +176,7 @@ app-doc/stdman 2022.07.30 2024.07.05 9999: Formatted C++ stdlib man pages (cppre
 app-doc/sway-wiki 9999: Wiki of gui-wm/sway, rendered to HTML using kramdown-parser-gfm
 app-editors/amp 0.7.0: A complete text editor for your terminal.
 app-editors/emacs-lsp-booster 0.2.1: Emacs LSP performance booster
-app-editors/imhex 1.35.3: A hex editor for reverse engineers, programmers, and eyesight
+app-editors/imhex 1.35.4: A hex editor for reverse engineers, programmers, and eyesight
 app-editors/kakoune-lsp 17.0.1: Kakoune Language Server Protocol Client
 app-editors/kitscenarist 0.7.2_rc9: Simple and powerful application for creating screenplays.
 app-editors/lapce 0.3.1 0.4.0 9999: Lightning-fast and Powerful Code Editor written in Rust
@@ -466,7 +466,7 @@ dev-elixir/hex 1.0.1-r1: Package manager for the Erlang VM
 dev-embedded/arduino-cli 1.0.2 1.0.3: Next-generation arduino command line tool
 dev-embedded/bcm2-utils 0.9.8: Utilities for Broadcom-based cable modems
 dev-embedded/esp-coredump 1.7.0 1.10.0 1.11.0: Utility that helps users to retrieve and analyse core dumps
-dev-embedded/esp-idf 5.2.2 5.3: Espressif IoT Development Framework
+dev-embedded/esp-idf 5.2.2 5.3 5.3-r1: Espressif IoT Development Framework
 dev-embedded/esp-idf-kconfig 2.1.0 2.2.0: Kconfig tooling for esp-idf
 dev-embedded/esp-idf-monitor 1.3.3 1.4.0: Python object-oriented database
 dev-embedded/esp-idf-panic-decoder 1.0.1 1.1.0: Parses ESP-IDF panic handler output acts as a GDB server over stdin/stdout
@@ -537,7 +537,7 @@ dev-libs/libdwarf 0.9.1 0.9.2 0.10.1: The DWARF Debugging Information Format
 dev-libs/libglibutil 1.0.68 1.0.76 9999: Library of glib utilities from sailfishos project
 dev-libs/librepo 1.18.0: Repodata downloading library
 dev-libs/libsignal-ffi 0.44.0 0.46.0 0.51.0: A C ABI library which exposes Signal protocol logic
-dev-libs/libsolv 0.7.30: Library for solving packages and reading repositories
+dev-libs/libsolv 0.7.30-r1: Library for solving packages and reading repositories
 dev-libs/libthai 0.1.28 0.1.29: A a set of Thai language support routines
 dev-libs/libtypec 0.5.2-r2: Library to interface with USB Type-C/Power Delivery devices
 dev-libs/ls-hpack 2.3.3: QPACK compression library for use with HTTP/3
@@ -549,7 +549,7 @@ dev-libs/lzfse 9999: LZFSE compression library and command line tool.
 dev-libs/md4c 0.4.8_p20220115 0.5.2: C Markdown parser. Fast, SAX-like interface, CommonMark Compliant.
 dev-libs/monero-seed 0.1.0: 14-word mnemonic seed for Monero
 dev-libs/mtxclient 0.9.2 0.10.0: Client API library for Matrix, built on top of libcurl
-dev-libs/nativefiledialog-extended 1.1.1-r1: File dialog library with C and C++ bindings, based on nativefiledialog
+dev-libs/nativefiledialog-extended 1.2.0: File dialog library with C and C++ bindings, based on nativefiledialog
 dev-libs/octetos-biblion 0.1.1_alpha: Library for reading biblia.
 dev-libs/octetos-core 2.15.0_beta 2.20.0_beta 2.25.0_beta 2.25.1_beta 2.31.2_beta 2.31.3_beta 2.31.5_beta 2.32.0_beta 2.62.1_beta: C/C++ library to mainly provide Semantic Versioned implementation
 dev-libs/octetos-coreutils 0.11.1_alpha 0.13.0_alpha 0.17.0_alpha: Similar to coreutils but is a C++ API.
@@ -581,11 +581,17 @@ dev-ml/angstrom 0.16.0: Parser combinators built for speed and memory efficiency
 dev-ml/bheap 2.0.0: OCaml binary heap implementation by Jean-Christophe Filliatre
 dev-ml/bigstringaf 0.7.0 0.9.0 0.10.0: Bigstring intrinsics and fast blits based on memcpy/memmove
 dev-ml/cdrom 0.9.4: Query the state and contents of CDROM devices under Linux
+dev-ml/chrome-trace 3.16.0: Chrome trace event generation library
 dev-ml/crowbar 0.2.1: Write tests, let a fuzzer find failing cases
 dev-ml/domain-name 0.4.0: RFC 1035 Internet domain names
+dev-ml/dune-rpc 3.13.1: Communicate with dune using rpc
 dev-ml/either 1.0.0: Compatibility module for Either in OCaml 4.12
+dev-ml/fiber 3.7.0: Dune's monadic structured concurrency library
 dev-ml/gmap 0.3.0-r2: Heterogenous Map over a GADT
+dev-ml/jsonrpc 1.18.0: Jsonrpc protocol implementation
+dev-ml/lsp 1.18.0: LSP protocol implementation in OCaml
 dev-ml/lwt-dllist 1.0.1: Mutable doubly-linked list with Lwt iterators
+dev-ml/merlin-lib 4.16: Merlin's libraries
 dev-ml/ocaml-syntax-shims 1.0.0: Backport new syntax to older compilers
 dev-ml/ocaml-version 3.6.7: Library to parse and enumerate releases of the OCaml compiler
 dev-ml/ocamlc-loc 3.13.1: Parse ocaml compiler output into structured form
@@ -802,8 +808,8 @@ dev-python/python-lsp-isort 0.1: isort plugin for the Python LSP Server
 dev-python/python-lsp-mypy 0.6.8: Mypy plugin for the Python LSP Server
 dev-python/python-olm 3.2.16: Python bindings for dev-libs/olm
 dev-python/python-pidfile 3.0.0-r1 3.1.1: PIDFile context processor. Supported py2 and py3
-dev-python/python-socketio 5.11.0 5.11.1: Python implementation of the Socket.IO realtime server.
-dev-python/python-statemachine 2.1.2 2.3.3: Python Finite State Machines made easy.
+dev-python/python-socketio 5.11.1 5.11.3: Python implementation of the Socket.IO realtime server.
+dev-python/python-statemachine 2.1.2 2.3.3 2.3.4: Python Finite State Machines made easy.
 dev-python/python-telegram-bot 20.6-r1 21.1.1 9999: Python wrapper of telegram bots API
 dev-python/pywebview 4.4.1 5.1: A lightweight cross-platform wrapper around a webview component
 dev-python/queuelib 1.6.2: Collection of persistent and non-persistent queues for Python
@@ -1266,7 +1272,7 @@ media-sound/ibniz 1.18-r1: virtual machine designed for extremely compact low-le
 media-sound/jacktrip 1.7.1-r1: Send JACK audio over a network
 media-sound/jriver 31.0.83: A cross-platform media center, famous for high quality of audio.
 media-sound/kew 2.4.4-r1: kew (/kjuː/) is a command-line music player for Linux.
-media-sound/lms 3.54.0 3.55.0: Lightweight Music Server.
+media-sound/lms 3.55.0 3.56.0: Lightweight Music Server.
 media-sound/loudgain 0.6.8-r1: Versatile ReplayGain 2.0 loudness normalizer
 media-sound/mopidy 3.4.2: An extensible music server written in Python.
 media-sound/mpd-mpris 0.3.1 0.4.0 0.4.1: An implementation of the MPRIS protocol for MPD.
@@ -1279,6 +1285,7 @@ media-sound/nuclear-bin 0.6.17 0.6.30: Nuclear is a streaming program that pulls
 media-sound/nulloy 0.9.5 0.9.8 0.9.8.7 0.9.9 9999: Music player with a waveform progress bar (sound visualization)
 media-sound/opensoundmeter 1.2.1 1.2.2 1.2.2_p20230104: FFT based application for tuning sound systems
 media-sound/openutau 0.1.327 0.1.463 9999: Open source UTAU successor
+media-sound/pamixer 1.6 9999: Pulseaudio command line mixer.
 media-sound/pianobooster 1.0.0: A MIDI player/game that displays notes and teaches you how to play the piano
 media-sound/pipewire-module-xrdp 0.1_pre20230609-r1 0.2: PipeWire module which enables xrdp to use audio redirection
 media-sound/pulseaudio-virtualmic 0.1 9999: Use any offline or online media file or stream as a PulseAudio source
@@ -1357,7 +1364,7 @@ net-im/abaddon 0.1.12-r1 0.1.13 0.2.1 9999: Alternative Discord client using GTK
 net-im/armcord-bin 3.2.6 3.2.7: ArmCord is a custom client designed to enhance your Discord experience.
 net-im/axolotl-bin 2.0.1: Axolotl is a cross-platform Signal client
 net-im/beeper 3.104.7 3.107.2: Beeper: Unified Messenger
-net-im/chatterino 2.4.6: Chat client for https://twitch.tv
+net-im/chatterino 2.4.6 2.5.1: Chat client for https://twitch.tv
 net-im/conduit 0.7.0 0.8.0: Matrix homeserver written in Rust
 net-im/discord-canary-bin 0.0.306: All-in-one voice and text chat
 net-im/discord-ptb-bin 0.0.29: All-in-one voice and text chat
@@ -1477,10 +1484,10 @@ net-print/hpuld 1.00.39.15.00.23-r1: HP Unified Linux Driver (for samsung hardwa
 net-proxy/MTProxy 3.0.4-r1: Community fork of MTProxy
 net-proxy/ngrok-bin 3.10.0: ngrok is a reverse proxy, firewall, and API gateway
 net-proxy/snowflake 2.8.1 2.9.2: Pluggable Transport using WebRTC, inspired by Flashproxy
-net-voip/baresip 3.8.0 3.9.0 3.10.0 3.10.1 3.11.0 3.11.0-r1 3.12.1 3.12.1-r1 3.13.0: Baresip is a portable and modular SIP User-Agent
+net-voip/baresip 3.11.0 3.11.0-r1 3.12.1 3.12.1-r1 3.13.0 3.14.0: Baresip is a portable and modular SIP User-Agent
 net-voip/discover-overlay 0.6.9-r1 0.7.4: Yet another Discord overlay for Linux written in Python using GTK3
 net-voip/gnome-calls 45.0 46.3: Phone dialer and call handler
-net-voip/re 3.8.0-r1 3.9.0-r1 3.10.0-r1 3.11.0-r1 3.12.0 3.13.0: Generic library for real-time communications with async IO support
+net-voip/re 3.11.0-r1 3.12.0 3.13.0 3.14.0: Generic library for real-time communications with async IO support
 net-voip/vvmd 0.8-r1: vvmd is a lower level daemon that retrieves Visual Voicemail
 net-vpn/candy 5.10.0: A reliable, low-latency, and anti-censorship virtual private network
 net-vpn/cloudflare-warp 2024.2.62-r2 2024.4.133-r1: Cloudflare Warp Client
@@ -1489,7 +1496,7 @@ net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that 
 net-vpn/mullvadvpn-app 2024.4: Tool used to manage daemon setup
 net-wireless/airspyhf 1.6.8: User mode driver for Airspy HF+
 net-wireless/bluetuith 0.1.9 0.2.0 0.2.1 0.2.2 9999: A TUI bluetooth manager for Linux written in Go
-net-wireless/btscreenlocker 1.6.2 1.6.3 1.6.5: Daemon to lock your screen when Bluetooth trusted devices go away.
+net-wireless/btscreenlocker 1.6.2 1.6.3 1.6.5 1.7.0: Daemon to lock your screen when Bluetooth trusted devices go away.
 net-wireless/rtl8192eu 0_pre20240518: Realtek 8192EU driver module for Linux kernel
 net-wireless/rtl8723bu 9999: Driver for the rtl8723 wireless chipset
 net-wireless/rtl8821ce 0_pre20240326: Realtek RTL8821CE Driver module for Linux kernel
@@ -1553,6 +1560,7 @@ sci-mathematics/frama-c-variadic 23.1 24.0 25.0: Variadic function transformatio
 sci-mathematics/pyromaths 21.8.2: Create maths exercises in LaTeX and PDF format
 sci-mathematics/rstudio-desktop-bin 2023.09.0_p463 2023.09.1_p494: IDE for R and Python
 sci-misc/boinc-wrapper 26018-r1: Wrapper to use non-BOINC apps with BOINC
+sci-physics/openmodelica 1.23.1: Open-source Modelica-based modeling and simulation environment
 sci-physics/ovito 3.10.4 3.10.5 3.10.5-r1: Open Visualization Tool
 sec-keys/openpgp-keys-aepaneshnikov 20221210: OpenPGP keys used by Alexander Epaneshnikov
 sec-keys/openpgp-keys-emersion 20240714: OpenPGP keys used by Simon Ser
