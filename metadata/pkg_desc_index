@@ -958,7 +958,7 @@ dev-vcs/gitqlient-jenkins-plugin 0.2.0: GitQlient Jenkins plugin
 dev-vcs/gitui 0.26.3: blazing fast terminal-ui for git
 dev-vcs/jj 0.17.1-r1 0.18.0 0.19.0 9999: Jujutsu - an experimental version control system
 dev-vcs/lazygit 0.40.2-r1 0.41.0 0.42.0 0.43.1: Simple terminal UI for git commands
-dev-zig/zls 0.10.0-r1 9999: The officially unofficial Ziglang language server
+dev-zig/zls 0.10.0-r1 0.12.0 9999: The officially unofficial Ziglang language server
 games-action/ATLauncher 3.4.3.1 3.4.27.0: Minecraft launcher which integrates multiple different ModPacks
 games-action/blackvoxel 2.50 9999: Blackvoxel Video Game
 games-action/classicube 1.3.6 9999: Reverse-engineered Minecraft Classic client
@@ -976,7 +976,7 @@ games-board/openriichi 0.2.1.1: OpenRiichi is an open source Japanese Mahjong cl
 games-board/rmahjong 0.4_p20201106: Riichi Mahjong, the Japanese variant of the Chinese game Mahjong for 4 players
 games-emulation/RetroArch 1.16.0.3: RetroArch is a frontend for emulators, game engines and media players
 games-emulation/conty 1.25.1 1.25.2: Easy to use unprivileged Linux container packed in a single portable executable
-games-emulation/dosbox-x 2024.03.01 2024.07.01 9999: Complete, accurate DOS emulator forked from DOSBox
+games-emulation/dosbox-x 2024.07.01 9999: Complete, accurate DOS emulator forked from DOSBox
 games-emulation/duckstation 9999: Fast Sony PlayStation (PSX) emulator
 games-emulation/mupen64plus-qt 1.15 9999: A basic launcher for Mupen64Plus
 games-emulation/np2kai 22 22_p20210211: NP2kai is an emulator for the japanese PC-98 series of computers
@@ -1295,7 +1295,7 @@ media-sound/spot 0.4.0: GTK4 Spotify (Premium) client
 media-sound/spotify-adblock 1.0.1 1.0.2 1.0.3: Adblocker for Spotify
 media-sound/spotify-player 0.18.1 0.18.2 9999: spotify_player is a fast, easy to use, and configurable terminal music player.
 media-sound/spotifyd 0.3.5_p20240513: A Spotify daemon
-media-sound/supersonic 0.12.0: A lightweight and full-featured cross-platform desktop client
+media-sound/supersonic 0.12.0 0.13.0: A lightweight and full-featured cross-platform desktop client
 media-sound/tidal-hifi-bin 5.14.1 5.15.0: Web version of Tidal running in electron with Hi-Fi support thanks to Widevine.
 media-sound/yewtube 2.10.5 9999: Terminal-based YouTube player and downloader
 media-sound/youtube-music-bin 3.3.6: YouTube Music Desktop App bundled with custom plugins
@@ -1364,10 +1364,10 @@ net-im/abaddon 0.1.12-r1 0.1.13 0.2.1 9999: Alternative Discord client using GTK
 net-im/armcord-bin 3.2.6 3.2.7: ArmCord is a custom client designed to enhance your Discord experience.
 net-im/axolotl-bin 2.0.1: Axolotl is a cross-platform Signal client
 net-im/beeper 3.104.7 3.107.2: Beeper: Unified Messenger
-net-im/chatterino 2.4.6 2.5.1: Chat client for https://twitch.tv
+net-im/chatterino 2.5.1: Chat client for https://twitch.tv
 net-im/conduit 0.7.0 0.8.0: Matrix homeserver written in Rust
 net-im/discord-canary-bin 0.0.306: All-in-one voice and text chat
-net-im/discord-ptb-bin 0.0.29: All-in-one voice and text chat
+net-im/discord-ptb-bin 0.0.29 0.0.97: All-in-one voice and text chat
 net-im/eturnal 1.12.0-r1: STUN/TURN server
 net-im/flare 0.12.0: Chat with your friends on Signal
 net-im/gajim-plugins 9999: Plugins developed fro Gajim XMPP client
@@ -1479,7 +1479,7 @@ net-p2p/gridcoin 5.4.7.0 5.4.8.0: Proof-of-Stake based cryptocurrency that rewar
 net-p2p/monero 0.17.3.2 0.18.3.1 0.18.3.3-r1 0.18.3.3-r2 9999: The secure, private, untraceable cryptocurrency
 net-p2p/p2pool 3.5 3.6.2 3.7 3.8 3.9 3.10 4.0 9999: Decentralized pool for Monero mining
 net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
-net-p2p/yggdrasil-go 0.5.5 9999: An experiment in scalable routing as an encrypted IPv6 overlay network
+net-p2p/yggdrasil-go 0.5.5 0.5.6 9999: An experiment in scalable routing as an encrypted IPv6 overlay network
 net-print/hpuld 1.00.39.15.00.23-r1: HP Unified Linux Driver (for samsung hardware)
 net-proxy/MTProxy 3.0.4-r1: Community fork of MTProxy
 net-proxy/ngrok-bin 3.10.0: ngrok is a reverse proxy, firewall, and API gateway
@@ -1625,6 +1625,7 @@ sys-fs/dwarfs 0.9.10-r1: A fast very high compression read-only FUSE file system
 sys-fs/dwarfs-bin 0.9.10: Static version of a fast very high compression read-only FUSE file system
 sys-fs/ffmpegfs 2.16-r1: FUSE-based transcoding filesystem with support from/to many formats.
 sys-fs/fstransform 0.9.4: Tool for in-place filesystem conversion
+sys-fs/fsverity-utils 1.6: Userspace utility for file-level integrity/authenticity verification
 sys-fs/gcsfuse 1.2.0: A user-space file system for interacting with Google Cloud Storage
 sys-fs/gdu 5.14.0 5.25.0: Disk usage analyzer with console interface written in Go
 sys-fs/gfs2-utils 3.4.1: Shared-disk cluster file system
@@ -1672,7 +1673,7 @@ www-apps/invidious 2024.03.31 2024.04.27: Invidious is an alternative front-end 
 www-apps/laminar 1.3-r1: Fast and lightweight Continuous Integration
 www-apps/libmedium 2024.06.10: Alternative private front-end to Medium
 www-apps/librarian 2023.05.07: An alternative frontend for LBRY/Odysee. Inspired by Invidious and Libreddit.
-www-apps/mycorrhiza 1.14.0 9999: Git-based wiki engine written in Go using mycomarkup
+www-apps/mycorrhiza 1.14.0 1.15.0 9999: Git-based wiki engine written in Go using mycomarkup
 www-apps/pleroma 2.6.3 9999: ActivityPub social networking software compatible with other Fediverse software
 www-apps/pleroma-fe 2.6.1 9999: Main frontend for www-apps/pleroma, inspired by qvitter
 www-apps/redlib 0.31.2-r1 0.34.0: Private front-end to Reddit
