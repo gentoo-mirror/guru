@@ -1,22 +1,27 @@
-# Copyright 2022-2023 Gentoo Authors
+# Copyright 2022-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-inherit edo git-r3
-
-EGIT_REPO_URI="https://github.com/zigtools/zls"
+inherit edo
 
 DESCRIPTION="The officially unofficial Ziglang language server"
 HOMEPAGE="https://github.com/zigtools/zls"
 
+SRC_URI="
+	https://github.com/zigtools/zls/archive/refs/tags/${PV}.tar.gz -> zls-${PV}.tar.gz
+	https://codeberg.org/BratishkaErik/distfiles/releases/download/zls-${PV}/zls-${PV}-deps.tar.xz
+	https://codeberg.org/BratishkaErik/distfiles/releases/download/zls-${PV}/zls-${PV}-version_data.tar.xz
+"
+
 LICENSE="MIT"
 SLOT="0"
+KEYWORDS="~amd64"
 
-EZIG_MIN="9999"
-EZIG_MAX_EXCLUSIVE="99991"
+EZIG_MIN="0.12"
+EZIG_MAX_EXCLUSIVE="0.13"
 
-DEPEND="dev-lang/zig:${EZIG_MIN}"
+DEPEND="|| ( dev-lang/zig:${EZIG_MIN} dev-lang/zig-bin:${EZIG_MIN} )"
 RDEPEND="${DEPEND}"
 
 # see https://github.com/ziglang/zig/issues/3382
@@ -103,24 +108,26 @@ ezig() {
 	edo "${EZIG}" "${@}"
 }
 
-src_unpack() {
-	git-r3_src_unpack
-	cd "${S}" || die
-	ezig build --fetch || die "Fetching Zig modules failed"
-	local ZLS_GEN_FLAGS="--generate-version-data master --generate-version-data-path version_data_offline.zig"
-	ezig build gen --verbose -- ${ZLS_GEN_FLAGS} || die "Pre-generating Zig version data failed"
+src_configure() {
+	export ZBS_ARGS=(
+		--prefix usr/
+		-Doptimize=ReleaseSafe
+		--system "${WORKDIR}/zig-eclass/p/"
+		-Dversion_data_file_path=version_data.zig
+		--verbose
+	)
 }
 
 src_compile() {
-	ezig build -Doptimize=ReleaseSafe -Dversion_data_file_path=version_data_offline.zig --verbose || die
+	ezig build "${ZBS_ARGS[@]}" || die
 }
 
 src_test() {
-	ezig build test -Doptimize=ReleaseSafe -Dversion_data_file_path=version_data_offline.zig --verbose || die
+	ezig build test "${ZBS_ARGS[@]}" || die
 }
 
 src_install() {
-	DESTDIR="${ED}" ezig build install --prefix /usr -Doptimize=ReleaseSafe -Dversion_data_file_path=version_data_offline.zig --verbose || die
+	DESTDIR="${ED}" ezig build install "${ZBS_ARGS[@]}" || die
 	dodoc README.md
 }
 
