@@ -16,7 +16,7 @@ CRATES="
 	bitflags@1.3.2
 	bitflags@2.6.0
 	block-buffer@0.10.4
-	bstr@1.9.1
+	bstr@1.10.0
 	bumpalo@3.16.0
 	byteorder@1.5.0
 	bytes@1.6.1
@@ -25,7 +25,7 @@ CRATES="
 	camino@1.1.7
 	cargo-platform@0.1.8
 	cargo_metadata@0.18.1
-	cc@1.1.5
+	cc@1.1.6
 	cfg-if@1.0.0
 	cfg_aliases@0.1.1
 	chrono@0.4.38
@@ -91,8 +91,8 @@ CRATES="
 	itoa@1.0.11
 	java-properties@2.0.0
 	js-sys@0.3.69
-	lazy-regex-proc_macros@3.1.0
-	lazy-regex@3.1.0
+	lazy-regex-proc_macros@3.2.0
+	lazy-regex@3.2.0
 	lazy_static@1.5.0
 	lenient_semver@0.4.2
 	lenient_semver_parser@0.4.2
@@ -105,15 +105,15 @@ CRATES="
 	miniz_oxide@0.7.4
 	native-tls@0.2.12
 	nix@0.28.0
-	nu-ansi-term@0.50.0
+	nu-ansi-term@0.50.1
 	num-conv@0.1.0
 	num-traits@0.2.19
 	num_cpus@1.16.0
 	once_cell@1.19.0
 	openssl-macros@0.1.1
 	openssl-probe@0.1.5
-	openssl-sys@0.9.102
-	openssl@0.10.64
+	openssl-sys@0.9.103
+	openssl@0.10.66
 	parking@2.2.0
 	percent-encoding@2.3.1
 	petgraph@0.6.5
@@ -148,25 +148,25 @@ CRATES="
 	serde@1.0.204
 	serde_derive@1.0.204
 	serde_ignored@0.1.10
-	serde_json@1.0.120
-	serde_spanned@0.6.6
+	serde_json@1.0.121
+	serde_spanned@0.6.7
 	sha2@0.10.8
 	shell2batch@0.4.5
 	spin@0.9.8
 	strip-ansi-escapes@0.2.0
 	strum_macros@0.26.4
 	suppaftp@5.4.0
-	syn@2.0.71
+	syn@2.0.72
 	tempfile@3.10.1
-	thiserror-impl@1.0.62
-	thiserror@1.0.62
+	thiserror-impl@1.0.63
+	thiserror@1.0.63
 	time-core@0.1.2
 	time@0.3.36
 	tinyvec@1.8.0
 	tinyvec_macros@0.1.1
-	toml@0.8.14
-	toml_datetime@0.6.6
-	toml_edit@0.22.15
+	toml@0.8.16
+	toml_datetime@0.6.7
+	toml_edit@0.22.17
 	typenum@1.17.0
 	uname@0.1.1
 	unicode-bidi@0.3.15
@@ -176,7 +176,7 @@ CRATES="
 	url@2.5.2
 	utf8parse@0.2.2
 	vcpkg@0.2.15
-	version_check@0.9.4
+	version_check@0.9.5
 	vte@0.11.1
 	vte_generate_state_changes@0.1.2
 	walkdir@2.5.0
@@ -215,7 +215,7 @@ CRATES="
 	windows_x86_64_gnullvm@0.52.6
 	windows_x86_64_msvc@0.48.5
 	windows_x86_64_msvc@0.52.6
-	winnow@0.6.13
+	winnow@0.6.16
 	winsafe@0.0.19
 	zip@0.6.6
 "
@@ -240,7 +240,13 @@ RESTRICT="!test? ( test )"
 
 DEPEND="openssl? ( dev-libs/openssl:= )"
 RDEPEND="${DEPEND}"
-BDEPEND="test? ( dev-build/cargo-make )"
+BDEPEND="
+	virtual/pkgconfig
+	test? (
+		dev-build/cargo-make
+		dev-util/rust-script
+	)
+"
 
 QA_FLAGS_IGNORED="usr/bin/.*"
 
@@ -255,17 +261,13 @@ src_configure() {
 src_test() {
 	local CARGO_SKIP=(
 		# Test checks that S directory name matches PN. This fails as expected.
-		# assertion `left == right` failed
-		# left: "cargo-make-${PV}"
-		# right: "cargo-make"
 		environment::mod_test::get_base_directory_name_valid
 		# Not a git repo
-		# assertion failed: output.is_empty()
 		io::io_test::get_path_list_dirs_with_gitignore
 		# Requires working rustup https://bugs.gentoo.org/834741
-		# Failed to check rustup toolchain: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 		installer::crate_installer::crate_installer_test::install_test_with_toolchain_test
 		installer::crate_installer::crate_installer_test::invoke_cargo_install_with_toolchain_test
+		installer::crate_version_check::crate_version_check_test::get_crate_version_for_rustup_component
 		installer::rustup_component_installer::rustup_component_installer_test::install_with_toolchain_test
 		installer::rustup_component_installer::rustup_component_installer_test::is_installed_with_toolchain_non_zero
 		toolchain::toolchain_test::get_cargo_binary_path_valid
@@ -273,31 +275,23 @@ src_test() {
 		toolchain::toolchain_test::wrap_command_none_args
 		toolchain::toolchain_test::wrap_command_with_args
 		toolchain::toolchain_test::wrap_command_with_args_and_simple_variable_toolchain
-		# assertion failed: version.is_some()
-		installer::crate_version_check::crate_version_check_test::get_crate_version_for_rustup_component
-		# Tries to install crates so most likely a network issue
-		# test error flow: Error while executing command, exit code: 101
+		# Requires network access
 		installer::cargo_plugin_installer::cargo_plugin_installer_test::install_crate_already_installed_cargo_make_without_check
 		installer::crate_installer::crate_installer_test::install_already_installed_crate_only_min_version_equal
 		installer::crate_installer::crate_installer_test::install_already_installed_crate_only_min_version_smaller
 		installer::crate_installer::crate_installer_test::install_already_installed_crate_only_version_equal
-		# Checks crate versions
-		# assertion failed: !valid
+		# cargo.eclass removes .crates.toml, which is needed by crate version checks
 		installer::crate_version_check::crate_version_check_test::is_min_version_valid_newer_version
 		installer::crate_version_check::crate_version_check_test::is_version_valid_newer_version
 		installer::crate_version_check::crate_version_check_test::is_version_valid_old_version
-		# called `Option::unwrap()` on a `None` value
 		installer::crate_version_check::crate_version_check_test::is_min_version_valid_same_version
 		installer::crate_version_check::crate_version_check_test::is_version_valid_same_version
-
-		# test error flow: Unable to execute rust code.
-		scriptengine::mod_test::invoke_rust_runner
 	)
 
 	# https://github.com/sagiegurari/cargo-make/issues/573#issuecomment-886147300
 	set -- cargo make --env CARGO_MAKE_CARGO_BUILD_TEST_FLAGS="-- ${CARGO_SKIP[*]/#/--skip }" test
-	einfo "$@"
-	"$@" || die -n "Failed to run: $@"
+	einfo "${@}"
+	"${@}" || die "cargo make test failed"
 }
 
 src_install() {
