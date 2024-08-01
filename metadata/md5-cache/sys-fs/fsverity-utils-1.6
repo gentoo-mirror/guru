@@ -1,15 +1,14 @@
 BDEPEND=virtual/pkgconfig
-DEFINED_PHASES=compile install setup
+DEFINED_PHASES=compile install prepare setup
 DEPEND=dev-libs/openssl:=
 DESCRIPTION=Userspace utility for file-level integrity/authenticity verification
 EAPI=8
 HOMEPAGE=https://git.kernel.org/pub/scm/fs/fsverity/fsverity-utils.git
 INHERIT=linux-info toolchain-funcs
-IUSE=static-libs
 KEYWORDS=~amd64 ~arm ~arm64 ~riscv ~x86
 LICENSE=MIT
 RDEPEND=dev-libs/openssl:=
 SLOT=0
 SRC_URI=https://git.kernel.org/pub/scm/fs/fsverity/fsverity-utils.git/snapshot/fsverity-utils-1.6.tar.gz
 _eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	linux-info	ea4122ba1d8791a12b78e53f9510a2e3
-_md5_=ded7c8bf8fffe0a6329eceddf8944479
+_md5_=e02a9c409e205a00af9944f202bd07f5

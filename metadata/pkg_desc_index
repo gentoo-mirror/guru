@@ -22,7 +22,6 @@ acct-group/mautrix 0: Group for Mautrix Bridges
 acct-group/mock 0: System group: mock
 acct-group/monero 0: System group: monero
 acct-group/ollama 0: A group for ollama
-acct-group/owncast 0: Group for media-video/owncast
 acct-group/paludisbuild 0: System group: paludisbuild
 acct-group/pleroma 0: Group for www-apps/pleroma
 acct-group/purritobin 0: Group for net-misc/purritobin
@@ -66,7 +65,6 @@ acct-user/mautrix-telegram 0: User for Mautrix Telegram Bridge
 acct-user/mautrix-whatsapp 0: User for Mautrix WhatsApp Bridge
 acct-user/monero 0: System user: monero
 acct-user/ollama 1: A user for ollama
-acct-user/owncast 0: User for media-video/owncast
 acct-user/paludisbuild 0: Build user for sys-apps/paludis
 acct-user/pleroma 0: User for www-apps/pleroma
 acct-user/purritobin 0: User for net-misc/purritobin
@@ -383,7 +381,7 @@ app-voices/rhvoice-bdl 4.1: RHVoice voice: bdl (en)
 app-voices/rhvoice-clb 4.0: RHVoice voice: clb (en)
 app-voices/rhvoice-slt 4.1: RHVoice voice: slt (en)
 dev-build/FoBiS 3.0.5-r1: FoBiS.py, a Fortran Building System for poor men
-dev-build/cargo-make 0.37.14: Rust task runner and build tool
+dev-build/cargo-make 0.37.15: Rust task runner and build tool
 dev-build/fpm 0.9.0 0.10.0: Fortran Package Manager (fpm)
 dev-build/fypp 3.1 3.2: Fypp - Python powered Fortran preprocessor
 dev-build/just 1.31.0 1.32.0: Just a command runner (with syntax inspired by 'make')
@@ -936,6 +934,7 @@ dev-util/quilttools 0.3-r1: Mailbox to quilt series converter
 dev-util/reflex 0.3.1: A small tool to watch a directory and rerun a command when certain files change
 dev-util/rpi-imager 1.8.5: Raspberry Pi Imaging Utility
 dev-util/rust-rover 233.15026.24: A feature-rich Rust IDE with timely support by JetBrarins
+dev-util/rust-script 0.34.0: Command-line tool to run Rust scripts which can make use of crates
 dev-util/rye 0.37.0: a Hassle-Free Python Experience
 dev-util/spi-tools 1.0.2: Simple command line tools to help using Linux spidev devices
 dev-util/stripe-cli 9999: A command-line tool for Stripe
@@ -958,7 +957,7 @@ dev-vcs/gitqlient-jenkins-plugin 0.2.0: GitQlient Jenkins plugin
 dev-vcs/gitui 0.26.3: blazing fast terminal-ui for git
 dev-vcs/jj 0.17.1-r1 0.18.0 0.19.0 9999: Jujutsu - an experimental version control system
 dev-vcs/lazygit 0.40.2-r1 0.41.0 0.42.0 0.43.1: Simple terminal UI for git commands
-dev-zig/zls 0.10.0-r1 0.12.0 9999: The officially unofficial Ziglang language server
+dev-zig/zls 0.10.0-r1 0.10.0-r2 0.12.0 9999: The officially unofficial Ziglang language server
 games-action/ATLauncher 3.4.3.1 3.4.27.0: Minecraft launcher which integrates multiple different ModPacks
 games-action/blackvoxel 2.50 9999: Blackvoxel Video Game
 games-action/classicube 1.3.6 9999: Reverse-engineered Minecraft Classic client
