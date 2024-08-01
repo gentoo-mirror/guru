@@ -305,6 +305,7 @@ gui-apps/fuzzel:svg - enables support for SVG icons
 gui-apps/gtklock-extras:playerctl - gtklock module adding media player controls to the lockscreen
 gui-apps/gtklock-extras:powerbar - gtklock module adding power controls to the lockscreen
 gui-apps/gtklock-extras:userinfo - gtklock module adding user info to the lockscreen
+gui-apps/hyprswitch:libadwaita - The gui should use libadwaita
 gui-apps/nwg:hyprland - Pull in nwg-dock-hyprland instead of nwg-dock for sway
 gui-apps/nwg-launchers:bar - Installs nwgbar, a horizontal or vertical button bar.
 gui-apps/nwg-launchers:dmenu - Installs nwgdmenu, GTK dynamic menu windows.
@@ -354,6 +355,10 @@ gui-apps/yambar:script - Script support
 gui-apps/yambar:sway-xkb - keyboard support for Sway
 gui-apps/yambar:xkb - keyboard support for X11
 gui-apps/yambar:xwindow - XWindow (window tracking for X11) support
+gui-libs/gtk4-layer-shell:examples - Build the example C apps
+gui-libs/gtk4-layer-shell:introspection - Build GObject Introspection data
+gui-libs/gtk4-layer-shell:smoke-tests - Test that all examples can run
+gui-libs/gtk4-layer-shell:vala - Build VAPI data and Vala example. The VAPI file allows this library to be used in Vala. Requires introspection.
 gui-libs/scenefx:X - Enable support for X11 applications (XWayland)
 gui-libs/scenefx:drm - Enable Direct Rendering Management
 gui-libs/scenefx:examples - Build example applications
