@@ -1,15 +1,15 @@
-BDEPEND=<dev-lang/erlang-27:= <dev-lang/elixir-1.15:= dev-build/cmake >=dev-util/rebar-3.20.0-r1 dev-elixir/hex !<www-apps/pleroma-2.7.0 !>www-apps/pleroma-2.7.0
+BDEPEND=<dev-lang/erlang-27:= <dev-lang/elixir-1.16:= dev-build/cmake >=dev-util/rebar-3.20.0-r1 dev-elixir/hex !<www-apps/pleroma-2.7.0 !>www-apps/pleroma-2.7.0-r1
 DEFINED_PHASES=compile install postinst prepare unpack
-DEPEND=sys-libs/ncurses:= sys-apps/file dev-lang/elixir dev-lang/erlang:=
+DEPEND=media-libs/vips:= sys-apps/file sys-libs/ncurses:= dev-lang/elixir dev-lang/erlang:=
 DESCRIPTION=ActivityPub social networking software compatible with other Fediverse software
 EAPI=7
 HOMEPAGE=https://pleroma.social/
 INHERIT=mix optfeature
 KEYWORDS=~amd64
 LICENSE=AGPL-3 CC-BY-SA-4.0 CC-BY-4.0
-RDEPEND=sys-libs/ncurses:= sys-apps/file acct-user/pleroma acct-group/pleroma dev-db/postgresql[uuid] dev-lang/elixir dev-lang/erlang:=
+RDEPEND=media-libs/vips:= sys-apps/file sys-libs/ncurses:= acct-user/pleroma acct-group/pleroma dev-db/postgresql[uuid] dev-lang/elixir dev-lang/erlang:=
 RESTRICT=network-sandbox
 SLOT=otp
 SRC_URI=https://git.pleroma.social/pleroma/pleroma/-/archive/v2.7.0/pleroma-v2.7.0.tar.gz
 _eclasses_=mix	74eb3a6317dfe07373eeb0535ca22770	optfeature	222cb475c5a4f7ae7cfb0bf510a6fe54
-_md5_=9b67338520951ac55279de6c7d4db2af
+_md5_=5a40b49a2bebec73b799451510b36c79
