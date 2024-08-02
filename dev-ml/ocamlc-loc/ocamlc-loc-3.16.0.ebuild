@@ -24,11 +24,16 @@ IUSE="ocamlopt"
 RESTRICT="test"
 
 RDEPEND="
+	>=dev-lang/ocaml-4.08.0:=
 	~dev-ml/dune-private-libs-${PV}:=
 "
 
 DEPEND="
 	${RDEPEND}
+"
+
+BDEPEND="
+	>=dev-ml/dune-3.12:=
 "
 
 src_configure() {
@@ -37,8 +42,4 @@ src_configure() {
 
 src_compile() {
 	dune-compile ocamlc-loc
-}
-
-src_install() {
-	dune-install ocamlc-loc
 }

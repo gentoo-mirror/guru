@@ -5,10 +5,10 @@ EAPI=8
 
 inherit dune
 
-DESCRIPTION="Parse ocaml compiler output into structured form"
+DESCRIPTION="Communicate with dune using rpc"
 HOMEPAGE="
-	https://opam.ocaml.org/packages/ocamlc-loc/
-	https://github.com/ocaml/dune
+	https://opam.ocaml.org/packages/dune-rpc/
+	https://github.com/ocaml/dune/
 "
 SRC_URI="https://github.com/ocaml/dune/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
@@ -24,11 +24,18 @@ IUSE="ocamlopt"
 RESTRICT="test"
 
 RDEPEND="
+	dev-ml/csexp:=
+	dev-ml/xdg:=
 	~dev-ml/dune-private-libs-${PV}:=
+	>=dev-ml/pp-1.1.0:=
 "
 
 DEPEND="
 	${RDEPEND}
+"
+
+BDEPEND="
+	>=dev-ml/dune-3.12:=
 "
 
 src_configure() {
@@ -36,9 +43,5 @@ src_configure() {
 }
 
 src_compile() {
-	dune-compile ocamlc-loc
-}
-
-src_install() {
-	dune-install ocamlc-loc
+	dune-compile dune-rpc
 }
