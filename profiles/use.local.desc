@@ -374,6 +374,7 @@ gui-wm/hyprland-contrib:hyprprop - Install hyprprop, a xprop replacement for hyp
 gui-wm/hyprland-contrib:scratchpad - Install scratchpad script
 gui-wm/hyprland-contrib:shellevents - Install shellevents, invoke hell functions in response to Hyprland socket events
 gui-wm/hyprland-contrib:swap - Install try_swap_workspace, a script to emulate monitor-workspace agnostic behavior of other window managers
+gui-wm/river:llvm - Use LLVM Zig backend
 gui-wm/swayfx:X - Enable support for X11 applications (XWayland)
 gui-wm/swayfx:grimshot - Install 'grimshot': script for taking screenshots
 gui-wm/swayfx:swaybar - Install 'swaybar': sway's status bar component
@@ -667,6 +668,8 @@ sys-firmware/lenovolegionlinux:downgrade-nvidia - Downgrade nvidia for 525 to en
 sys-firmware/lenovolegionlinux:elogind - Enable legiond-onresume openrc support
 sys-firmware/lenovolegionlinux:gui - Build and install legion_gui and legion_cli
 sys-fs/ffmpegfs:bluray - Enable support of Blu-ray
+sys-fs/sanoid:lzop - Enable compression with app-arch/lzop
+sys-fs/sanoid:pigz - Enable compression with app-arch/pigz
 sys-kernel/uek-sources:experimental - apply experimental gentoo genpatches
 sys-kernel/uek-sources:gentoo - apply base gentoo genpatches
 sys-kernel/usermode-kernel:hardened - Use selection of hardening options recommended by Kernel Self Protection Project
@@ -689,7 +692,6 @@ www-client/badwolf:webkit41 - Use net-libs/webkit-gtk:4.1 (uses libsoup3 and so 
 www-client/mullvad-browser-bin:X - Add support for X11
 www-client/mullvad-browser-bin:wayland - Add support for screensharing on wayland
 www-client/vimb:adblock - Use www-misc/wyebadblock for adblocking
-www-client/yandex-browser:ffmpeg-codecs - Use media-video/ffmpeg-chromium for multi-threaded ffmpeg codecs for the HTML5 <audio> and <video> tags
 www-servers/hinsightd:cgi - Enable old/slow cgi support (legacy should not be used)
 www-servers/hinsightd:fcgi - Enable fast cgi support
 www-servers/hinsightd:ffcall - Use ffcall library for better logging format support

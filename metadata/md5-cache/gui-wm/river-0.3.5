@@ -1,0 +1,15 @@
+BDEPEND=|| ( dev-lang/zig-bin:0.12 dev-lang/zig:0.12 ) man? ( app-text/scdoc ) virtual/pkgconfig
+DEFINED_PHASES=compile configure install test unpack
+DEPEND=dev-libs/libevdev dev-libs/wayland dev-libs/wayland-protocols gui-libs/wlroots:0.18=[X?] x11-libs/libxkbcommon:=[X?] x11-libs/pixman
+DESCRIPTION=A dynamic tiling Wayland compositor
+EAPI=8
+HOMEPAGE=https://isaacfreund.com/software/river/
+INHERIT=edo
+IUSE=+X +llvm +man pie
+KEYWORDS=~amd64
+LICENSE=GPL-3+
+RDEPEND=dev-libs/libevdev dev-libs/wayland dev-libs/wayland-protocols gui-libs/wlroots:0.18=[X?] x11-libs/libxkbcommon:=[X?] x11-libs/pixman
+SLOT=0
+SRC_URI=https://codeberg.org/river/river/archive/v0.3.5.tar.gz -> river-0.3.5.tar.gz https://codeberg.org/ifreund/zig-pixman/archive/v0.2.0.tar.gz -> zig-pixman-0.2.0.tar.gz https://codeberg.org/ifreund/zig-wayland/archive/v0.2.0.tar.gz -> zig-wayland-0.2.0.tar.gz https://codeberg.org/ifreund/zig-wlroots/archive/v0.18.0.tar.gz -> zig-wlroots-0.18.0.tar.gz https://codeberg.org/ifreund/zig-xkbcommon/archive/v0.2.0.tar.gz -> zig-xkbcommon-0.2.0.tar.gz
+_eclasses_=edo	367e103a74bf77e6a8da7894d999fa3c
+_md5_=a479d4554dce93cca1f1e76a9778d51f

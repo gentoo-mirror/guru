@@ -1,0 +1,16 @@
+BDEPEND=qt6? ( >=dev-lang/lazarus-3.0[qt6] ) !qt6? ( >=dev-lang/lazarus-3.0[qt5] )
+DEFINED_PHASES=compile install postinst postrm preinst
+DEPEND=!app-misc/doublecmd-bin dev-libs/glib:2 sys-apps/dbus x11-libs/libX11 qt6? ( dev-libs/libqt6pas:= ) !qt6? ( dev-libs/libqt5pas:= ) sys-libs/ncurses:=
+DESCRIPTION=Cross Platform file manager
+EAPI=8
+HOMEPAGE=https://doublecmd.sourceforge.io/ https://github.com/doublecmd/doublecmd
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=xdg
+IUSE=qt6
+KEYWORDS=~amd64
+LICENSE=GPL-2+ LGPL-2.1+ LGPL-3 MPL-1.1 Boost-1.0 BZIP2
+RDEPEND=!app-misc/doublecmd-bin dev-libs/glib:2 sys-apps/dbus x11-libs/libX11 qt6? ( dev-libs/libqt6pas:= ) !qt6? ( dev-libs/libqt5pas:= )
+SLOT=0
+SRC_URI=https://downloads.sourceforge.net/doublecmd/doublecmd-1.1.16-src.tar.gz
+_eclasses_=xdg-utils	baea6080dd821f5562d715887954c9d3	xdg	4a14c5c24f121e7da66e5aab4a168c6e
+_md5_=4ac2ca03fb9002c311770109b6abcfda

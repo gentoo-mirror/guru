@@ -1,6 +1,6 @@
 BDEPEND=>=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array
 DEFINED_PHASES=compile configure install test
-DEPEND=dev-libs/wayland gui-libs/wlroots:0/16[X?] x11-libs/libxkbcommon[X?]
+DEPEND=dev-libs/wayland >=gui-libs/wlroots-0.17.0[X?] x11-libs/libxkbcommon[X?]
 DESCRIPTION=A Wayland kiosk
 EAPI=8
 HOMEPAGE=https://www.hjdskes.nl/projects/cage/ https://github.com/Hjdskes/cage
@@ -8,8 +8,8 @@ INHERIT=meson
 IUSE=X
 KEYWORDS=~amd64 ~x86
 LICENSE=MIT
-RDEPEND=dev-libs/wayland gui-libs/wlroots:0/16[X?] x11-libs/libxkbcommon[X?]
+RDEPEND=dev-libs/wayland >=gui-libs/wlroots-0.17.0[X?] x11-libs/libxkbcommon[X?]
 SLOT=0
-SRC_URI=https://github.com/Hjdskes/cage/archive/v0.1.5.tar.gz -> cage-0.1.5.tar.gz
+SRC_URI=https://github.com/Hjdskes/cage/archive/e7d8780f46277af87881e0be91cb2092541bb1d5/cage-0.1.5_p20240227.tar.gz
 _eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	e503ea5acc20410237ba33ec3f7c857d	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	8b220bbce5c119fb1d4d5c2f5588f3ea	meson	99466844dd8d4fcfb07578a76f5a9922
-_md5_=6ede20fb450d7c777811ea7f4bb6be07
+_md5_=e804c35237d999cf149ccb27c6d3575c

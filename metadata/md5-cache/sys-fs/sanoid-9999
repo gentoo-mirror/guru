@@ -1,0 +1,12 @@
+BDEPEND=dev-lang/perl sys-apps/groff >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile install postinst unpack
+DESCRIPTION=Policy-driven snapshot management and replication tools for OpenZFS.
+EAPI=8
+HOMEPAGE=https://github.com/jimsalterjrs/sanoid
+INHERIT=optfeature git-r3
+LICENSE=GPL-3
+PROPERTIES=live
+RDEPEND=dev-lang/perl dev-perl/Capture-Tiny dev-perl/Config-IniFiles sys-apps/pv sys-block/mbuffer sys-fs/zfs virtual/perl-Data-Dumper virtual/perl-Getopt-Long virtual/ssh
+SLOT=0
+_eclasses_=optfeature	222cb475c5a4f7ae7cfb0bf510a6fe54	git-r3	875eb471682d3e1f18da124be97dcc81
+_md5_=118460673c328780834291816146323d
