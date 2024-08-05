@@ -4,15 +4,15 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{10..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 inherit desktop distutils-r1 xdg
 
 DESCRIPTION="A cross platform front-end GUI of the popular youtube-dl written in wxPython."
 HOMEPAGE="https://yt-dlg.github.io/yt-dlg/"
-# Using latest commit from August 16, 2023 as of November 1, 2023.
+# Using latest commit from Mars 19, 2024 as of August 5, 2024.
 # Latest releases and tags are from 2021 and are probably deprecated and incompatible with current Python versions.
 # Same applies for the dependencies of yt-dlp.
-SHA="692e5c5deee95c721a4ad92ecae7ca86de8bef35"
+SHA="264699bb425efd988523ebb8bbfb8f67d009f884"
 SRC_URI="https://github.com/yt-dlg/yt-dlg/archive/${SHA}.tar.gz -> ${P}.gh.tar.gz"
 
 S="${WORKDIR}/${PN}-${SHA}"
@@ -23,14 +23,9 @@ KEYWORDS="~amd64"
 
 IUSE="ffmpeg"
 
-# net-misc/youtube-dl isn't available in gentoo anymore but I kept it as a dependency option just in case someone still
-# use it or yt-dlp gets merged to youtube-dl.
 DEPEND="${PYTHON_DEPS}
 	>=dev-python/wxpython-4.2.0:*[${PYTHON_USEDEP}]
-	|| (
-		net-misc/youtube-dl[${PYTHON_USEDEP}]
-		net-misc/yt-dlp[${PYTHON_USEDEP}]
-	)
+	net-misc/yt-dlp[${PYTHON_USEDEP}]
 	>=dev-python/PyPubSub-4.0.3
 	ffmpeg? ( media-video/ffmpeg )
 "
