@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 EAPI=8
 
-inherit cmake desktop xdg
+inherit cmake desktop xdg toolchain-funcs fortran-2
 
 DESCRIPTION="Open-source Modelica-based modeling and simulation environment"
 HOMEPAGE="https://openmodelica.org/"
@@ -79,13 +79,13 @@ RDEPEND+="
 BDEPEND="
 	dev-util/ccache
 	app-arch/tar
-	virtual/fortran
 "
 
 DEPEND="${RDEPEND}"
 
 PATCHES=(
 	"${FILESDIR}"/"${P}"-raw_strings.patch
+	"${FILESDIR}"/"${P}"-include_algorithm.patch
 )
 
 src_unpack() {
@@ -106,6 +106,10 @@ src_unpack() {
 	mv "${WORKDIR}/OMSimulator-3rdParty-ca418d7768c036ac15e9894d7f00d2118b3399a6" "${WORKDIR}/${P}/OMSimulator/3rdParty" || die
 	mv "OMBootstrapping-c289e97c41d00939a4a69fe504961b47283a6d8e" "${WORKDIR}/${P}/OMCompiler/Compiler/boot/bomc" || die
 	touch "${WORKDIR}/${P}/OMCompiler/Compiler/boot/bomc/sources.tar.gz" || die
+
+	# Solve https://bugs.gentoo.org/937038
+	rm -fr "${WORKDIR}/${P}/OMCompiler/3rdParty/FMIL/ThirdParty/Minizip/minizip" || die
+	cp -a "${WORKDIR}/${P}/OMSimulator/3rdParty/fmi4c/3rdparty/minizip" "${WORKDIR}/${P}/OMCompiler/3rdParty/FMIL/ThirdParty/Minizip/minizip" || die
 }
 
 src_configure() {
@@ -133,14 +137,14 @@ src_compile() {
 	# OMSens is disabled in "${WORKDIR}/${P}/CMakeLists.txt" (## omc_add_subdirectory(OMSens)) due to lack of a
 	# working "${WORKDIR}/${P}/OMSens/CMakeLists.txt". So, we compile it manually.
 	pushd OMSens/fortran_interface > /dev/null || die
-	gfortran -fPIC -c Rutf.for Rut.for Curvif.for || die
+	$(tc-getFC) -fPIC -c Rutf.for Rut.for Curvif.for || die
 	# BUG: Undefined symbol curvif_ in
 	# ${WORKDIR}/${P}/OMSens/fortran_interface/curvif_simplified.cpython-312-x86_64-linux-gnu.so
 	# See with nm or objdump -tT
 	# ${WORKDIR}/${P}/OMSens/fortran_interface/curvif_simplified.cpython-312-x86_64-linux-gnu.so
 	# This bug causes "Vectorial Parameter Based Sensitivity Analysis" in OMSens to fail.
 	f2py --verbose -c -I. Curvif.o Rutf.o Rut.o -m curvif_simplified curvif_simplified.pyf Curvif_simplified.f90 || die
-	popd || die
+	popd > /dev/null || die
 
 	cmake_src_compile
 }

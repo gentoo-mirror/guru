@@ -41,9 +41,10 @@ DOCS=(
 	translation/tool/about-ja.txt
 )
 
-PATCHES=( "${FILESDIR}/${P}-strict-aliasing.patch" )
+PATCHES=( "${FILESDIR}/${PN}-3.0.7-strict-aliasing.patch" )
 
 src_prepare() {
+	sed -i "s|cc|$(tc-getCC)|" configure || die
 	sed -i "s|ar rc|$(tc-getAR) rc|" build.ninja.in || die
 	sed -i "s|doc/@PACKAGE_NAME@|doc/${PF}|" install.sh.in || die
 	default
