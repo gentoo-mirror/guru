@@ -1,0 +1,16 @@
+DEFINED_PHASES=config install postinst postrm preinst prepare setup
+DEPEND=|| ( virtual/linux-sources virtual/dist-kernel )
+DESCRIPTION=Container-based approach to boot a full Android system on Linux systems
+EAPI=8
+HOMEPAGE=https://waydro.id
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=linux-info xdg python-single-r1
+IUSE=apparmor +clipboard systemd python_single_target_python3_10 python_single_target_python3_11 python_single_target_python3_12
+KEYWORDS=~amd64 ~arm ~arm64 ~x86
+LICENSE=GPL-3
+RDEPEND=systemd? ( sys-apps/systemd ) app-containers/lxc[systemd?,apparmor?,seccomp] python_single_target_python3_10? ( clipboard? ( >=dev-python/pyclip-0.7.0[wayland,python_targets_python3_10(-)] ) dev-python/pygobject[python_targets_python3_10(-)] >=dev-python/gbinder-1.1.1[python_targets_python3_10(-)] dev-python/dbus-python[python_targets_python3_10(-)] ) python_single_target_python3_11? ( clipboard? ( >=dev-python/pyclip-0.7.0[wayland,python_targets_python3_11(-)] ) dev-python/pygobject[python_targets_python3_11(-)] >=dev-python/gbinder-1.1.1[python_targets_python3_11(-)] dev-python/dbus-python[python_targets_python3_11(-)] ) python_single_target_python3_12? ( clipboard? ( >=dev-python/pyclip-0.7.0[wayland,python_targets_python3_12(-)] ) dev-python/pygobject[python_targets_python3_12(-)] >=dev-python/gbinder-1.1.1[python_targets_python3_12(-)] dev-python/dbus-python[python_targets_python3_12(-)] ) net-firewall/nftables net-dns/dnsmasq >=dev-libs/libglibutil-1.0.67 >=dev-libs/gbinder-1.1.21 python_single_target_python3_10? ( dev-lang/python:3.10 ) python_single_target_python3_11? ( dev-lang/python:3.11 ) python_single_target_python3_12? ( dev-lang/python:3.12 )
+REQUIRED_USE=^^ ( python_single_target_python3_10 python_single_target_python3_11 python_single_target_python3_12 )
+SLOT=0
+SRC_URI=https://github.com/waydroid/waydroid/archive/1.4.2.tar.gz -> waydroid-1.4.2.tar.gz
+_eclasses_=toolchain-funcs	e7e7331166166e7a516d19e264b098c2	multilib	c19072c3cd7ac5cb21de013f7e9832e0	linux-info	ea4122ba1d8791a12b78e53f9510a2e3	xdg-utils	baea6080dd821f5562d715887954c9d3	xdg	4a14c5c24f121e7da66e5aab4a168c6e	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	python-utils-r1	6881b056477c23167d9a6b33e146374e	python-single-r1	f7abe75c203a988aa9b5c460b6c7d0f1
+_md5_=3bd27bf8efbb0fc054345ca2597ae8ea
