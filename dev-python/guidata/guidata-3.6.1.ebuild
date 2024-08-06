@@ -18,7 +18,7 @@ IUSE="test"
 
 RDEPEND="
 	dev-python/h5py[${PYTHON_USEDEP}]
-	<dev-python/numpy-2.0.0[${PYTHON_USEDEP}]
+	dev-python/numpy[${PYTHON_USEDEP}]
 	dev-python/PyQt5[${PYTHON_USEDEP}]
 	dev-python/QtPy[${PYTHON_USEDEP}]
 	dev-python/requests[${PYTHON_USEDEP}]
