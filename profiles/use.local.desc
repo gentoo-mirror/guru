@@ -293,8 +293,12 @@ games-util/mangohud:xnvctrl - Use XNVctrl as fall back for older Nvidia devices.
 games-util/samrewritten:zenity - Support for dialog display messages
 games-util/xivlauncher:aria2 - Enable Aria2 support.
 games-util/xivlauncher:libsecret - Enable secrets/password storage support.
-gnome-extra/yad:sourceview - Enable GtkSourceView support with x11-libs/gtksourceview
-gnome-extra/yad:spell - Enable spell check support with app-text/gspell
+gnome-extra/yad:deprecated - Build with deprecated options
+gnome-extra/yad:icon-browser - Build icon browser
+gnome-extra/yad:sourceview - Enable x11-libs/gtksourceview support
+gnome-extra/yad:standalone - Build standalone binary (without gsettings)
+gnome-extra/yad:tools - Build yad-tools utility
+gnome-extra/yad:tray - Build with status icon
 gui-apps/ReGreet:openrc - Manually create cache and logs folder
 gui-apps/ReGreet:systemd - Use system-tmpfiles to create cache and logs folder
 gui-apps/coreapps-meta:location - Enable location discovery
@@ -324,7 +328,6 @@ gui-apps/swaylock-effects:man - Build and install man pages
 gui-apps/swaylock-plugin:gdk-pixbuf - Enable additional image format support via the x11-libs/gdk-pixbuf library
 gui-apps/swww:man - Build and install man pages
 gui-apps/wlogout:bash-completions - Enable completions for bash shell
-gui-apps/wlogout:doc - Install man pages
 gui-apps/wlogout:fish-completions - Enable completions for fish shell
 gui-apps/wlogout:layershell - Enable transparency
 gui-apps/wlogout:zsh-completions - Enable completions for zsh shell
