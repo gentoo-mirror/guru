@@ -3,6 +3,8 @@
 
 EAPI=8
 
+inherit prefix
+
 DESCRIPTION="A full-featured BDD unit testing framework for all POSIX shells"
 HOMEPAGE="https://shellspec.info/"
 
@@ -14,12 +16,12 @@ else
 	KEYWORDS="~amd64"
 fi
 
-LICENSE="MIT-with-advertising"
+LICENSE="MIT"
 SLOT="0"
 IUSE="doc examples test"
-RESTRICT="binchecks strip !test? ( test )"
+RESTRICT="!test? ( test )"
 
-DEPEND="
+RDEPEND="
 	|| (
 		>=app-shells/bash-2.03
 		>=app-shells/dash-0.5.4
@@ -33,8 +35,7 @@ DEPEND="
 	)
 "
 
-BDEPEND="test? ( ${DEPEND} )"
-RDEPEND="${DEPEND}"
+BDEPEND="test? ( ${RDEPEND} )"
 
 DOCS=(
 	CHANGELOG.md
@@ -44,7 +45,24 @@ DOCS=(
 
 src_prepare() {
 	default
+
+	sed -i "s/lib/$(get_libdir)/" stub/shellspec || die
 	sed -i "s/LICENSE//g" Makefile || die
+
+	local to_analyze=(
+		examples
+		helper
+		lib
+		libexec
+		stub/shellspec
+		shellspec
+	)
+
+	local -a to_prefixify
+
+	readarray -t to_prefixify < <(find "${to_analyze[@]}" -type f) || die
+	hprefixify "${to_prefixify[@]}"
+	sed -i "s|#!|#!${EPREFIX}|" README.md || die
 }
 
 src_compile() { :; }
@@ -59,5 +77,5 @@ src_install() {
 	use doc && dodoc -r docs
 	use examples && dodoc -r examples
 
-	emake PREFIX="${ED}/usr" install
+	emake LIBDIR="${ED}/usr/$(get_libdir)" PREFIX="${ED}/usr" install
 }
