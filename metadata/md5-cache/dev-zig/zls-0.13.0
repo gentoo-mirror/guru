@@ -1,0 +1,13 @@
+BDEPEND=|| ( dev-lang/zig:0.13 dev-lang/zig-bin:0.13 )
+DEFINED_PHASES=compile configure install postinst test unpack
+DESCRIPTION=The officially unofficial Ziglang language server
+EAPI=8
+HOMEPAGE=https://github.com/zigtools/zls
+INHERIT=edo
+KEYWORDS=~amd64
+LICENSE=MIT
+RDEPEND=|| ( dev-lang/zig:0.13 dev-lang/zig-bin:0.13 )
+SLOT=0
+SRC_URI=https://github.com/zigtools/zls/archive/refs/tags/0.13.0.tar.gz -> zls-0.13.0.tar.gz https://codeberg.org/BratishkaErik/distfiles/releases/download/zls-0.13.0/zls-0.13.0-deps.tar.xz https://codeberg.org/BratishkaErik/distfiles/releases/download/zls-0.13.0/zls-0.13.0-version_data.tar.xz
+_eclasses_=edo	367e103a74bf77e6a8da7894d999fa3c
+_md5_=3538fe17a8a07ef60e48721e41ca9b65
