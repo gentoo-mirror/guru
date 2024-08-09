@@ -174,6 +174,7 @@ app-editors/emacs-lsp-booster 0.2.1: Emacs LSP performance booster
 app-editors/imhex 1.35.4: A hex editor for reverse engineers, programmers, and eyesight
 app-editors/kakoune-lsp 17.0.1: Kakoune Language Server Protocol Client
 app-editors/kitscenarist 0.7.2_rc9: Simple and powerful application for creating screenplays.
+app-editors/l3afpad 0.8.18.1.11: Simple GTK3 text editor (successor to leafpad)
 app-editors/lapce 0.3.1 0.4.0 9999: Lightning-fast and Powerful Code Editor written in Rust
 app-editors/mined 2015.25: A powerful text editor with extensive Unicode and CJK support
 app-editors/neovide 0.12.2: Neovide: No Nonsense Neovim Gui
@@ -361,7 +362,7 @@ app-vim/nerdtree-git 20210818: vim plugin: display git status flags in NERDTree
 app-vim/nim-syntax 1.1_p20211111: vim plugin: nim language support
 app-vim/openbsd-style 1.1: vim plugin: indent code according to the OpenBSD and FreeBSD style(9)
 app-vim/qt-support 1.1: vim plugin: Qt, qmake, QML, Qbs, QRC, UI and TS support
-app-vim/rainbow 3.4.0_p20211113: vim plugin: Rainbow Parentheses Improved
+app-vim/rainbow 3.4.0_p20211113 3.4.0_p20240727: vim plugin: Rainbow Parentheses Improved
 app-vim/rainbow_csv 1.10.0_pre20240705 9999: 🌈Rainbow CSV - Vim plugin: Highlight columns in CSV and TSV files and run queries in SQL-like language
 app-vim/tempus 2.0.0.20210514: Accessible themes for Vim
 app-vim/tex-conceal 20210409: vim plugin: extends the Conceal feature for LaTeX
@@ -472,7 +473,7 @@ dev-embedded/esp-idf-size 1.1.1 1.4.0 1.5.0: Firmware size analysis for ESP-IDF
 dev-embedded/freertos-gdb 1.0.2 1.0.3: Python module for operating with freeRTOS-kernel objects in GDB
 dev-embedded/idf-component-manager 1.5.3: Tool for installing ESP-IDF components
 dev-embedded/mv88e6xxx-dump 0.2.0_pre20210327: Dump information about Marvell mv88e6xxx Ethernet switches
-dev-embedded/nxp-gui-guider 1.7.2: GUI Guider is a user-friendly GUI development tool for LVGL
+dev-embedded/nxp-gui-guider 1.7.2-r1: GUI Guider is a user-friendly GUI development tool for LVGL
 dev-embedded/qdl 2024.4.9-r1 9999: Tool to communicate with Qualcomm System On a Chip bootroms
 dev-embedded/rauc 1.11.3: Lightweight update client that runs on your Embedded Linux device
 dev-embedded/squareline-studio 1.3.2: Visual drag-and-drop UI editor for LVGL
@@ -494,7 +495,7 @@ dev-hare/hare-xml 0_pre20231231 9999: XML support for Hare
 dev-java/corretto-bin 8.412.08.1 11.0.23.9.1 17.0.11.9.1 21.0.3.9.1 22.0.1.8.1: Prebuilt Java JDK binaries provided by Amazon Web Services
 dev-java/microsoft-openjdk-bin 11.0.22 17.0.10 21.0.2: Prebuilt Java JDK binaries provided by Microsoft
 dev-lang/cc65 2.19-r3 9999-r1: Cross-development package for 65(C)02 systems
-dev-lang/crystal-bin 1.12.1 1.12.2: The Crystal Programming Language
+dev-lang/crystal-bin 1.12.2 1.13.1: The Crystal Programming Language
 dev-lang/fbc 1.07.3 1.08.1: A free/open source, multi-platform BASIC compiler.
 dev-lang/fbc-bootstrap 1.07.3 1.08.1: Bootstrap package for dev-lang/fbc
 dev-lang/gnu-apl 1.8: GNU interpreter for the APL programming language
@@ -584,7 +585,7 @@ dev-ml/crowbar 0.2.1: Write tests, let a fuzzer find failing cases
 dev-ml/domain-name 0.4.0: RFC 1035 Internet domain names
 dev-ml/dune-rpc 3.13.1 3.16.0: Communicate with dune using rpc
 dev-ml/either 1.0.0: Compatibility module for Either in OCaml 4.12
-dev-ml/fiber 3.7.0: Dune's monadic structured concurrency library
+dev-ml/fiber 3.7.0-r1: Dune's monadic structured concurrency library
 dev-ml/gmap 0.3.0-r2: Heterogenous Map over a GADT
 dev-ml/jsonrpc 1.18.0 1.19.0: Jsonrpc protocol implementation
 dev-ml/lsp 1.18.0 1.19.0: LSP protocol implementation in OCaml
@@ -608,6 +609,7 @@ dev-nim/nake 1.9.4-r1: make-like for Nim. Describe your builds as tasks!
 dev-nim/nimbus 1.1.3: A Nim build system
 dev-nim/noise 0.1.6 0.1.8: a Nim implementation of linenoise
 dev-perl/Term-Animation 2.6: Animated ASCII Art support for Perl
+dev-php/fpdf 1.86: FPDF is a PHP class which allows to generate PDF files with pure PHP
 dev-python/DAWG-Python 0.7.2: Pure-python reader for DAWGs (DAFSAs) created by dawgdic C++ library.
 dev-python/EbookLib 0.17.1: Ebook library which can handle EPUB2/EPUB3 and Kindle format
 dev-python/ManimPango 0.4.4 0.5.0-r1: Binding for Pango, to use with Manim.
@@ -729,7 +731,7 @@ dev-python/manhole 1.8.0-r2: Debugging manhole for python application
 dev-python/markdownify 0.11.6: Convert HTML to Markdown
 dev-python/mastodon-py 1.8.1: Python wrapper for the Mastodon API
 dev-python/material-color-utilities 0.1.5 9999: Python port of material-color-utilities used for Material You colors
-dev-python/mautrix 0.20.4-r1 0.20.4-r2: A Python 3 asyncio Matrix framework
+dev-python/mautrix 0.20.4-r2 0.20.6: A Python 3 asyncio Matrix framework
 dev-python/mitype 0.2.5: Typing speed test in terminal
 dev-python/mkdocs-blog-plugin 9999: Plugin for MkDocs to keep a simple blog section inside your documentation.
 dev-python/mkdocs-bootstrap-tables-plugin 0.1.1: A MkDocs plugin to add bootstrap classes to plan markdown generated tables.
@@ -769,6 +771,7 @@ dev-python/psycopg2cffi 2.9.0-r1: Implementation of the psycopg2 module using cf
 dev-python/py-nanoid 9999: Python Nanoid
 dev-python/pyagentx 0.4-r1: Python AgentX Implementation
 dev-python/pyclip 0.7.0-r1 9999: Python clipboard module
+dev-python/pydantic-settings 2.3.4 2.4.0: Settings management using Pydantic
 dev-python/pydispatcher 2.0.7: Multi-producer-multi-consumer signal dispatching mechanism
 dev-python/pydub 0.25.1: Manipulate audio with an simple and easy high level interface
 dev-python/pyfiglet 0.8_p1: Pure-python FIGlet implementation
@@ -853,7 +856,7 @@ dev-python/textual-dev 1.5.1: Modern Text User Interface framework
 dev-python/timeslot 0.1.2: Time slots/intervals with an arbitrary start and stop
 dev-python/trailrunner 1.2.1: Walk paths and run things
 dev-python/tree-sitter-languages 1.10.2: Python wheels for all tree sitter languages
-dev-python/tulir-telethon 1.35.0_alpha1: Pure Python 3 MTProto API Telegram client library, for bots too!
+dev-python/tulir-telethon 1.35.0_alpha1 1.37.0_alpha1: Full-featured Telegram client library for Python 3
 dev-python/tweepy 4.14.0: An easy-to-use Python library for accessing the Twitter API.
 dev-python/types-protobuf 4.24.0.20240408 5.27.0.20240626: Typing stubs for protobuf
 dev-python/types-requests 2.32.0.20240712: Typing stubs for requests
@@ -903,7 +906,10 @@ dev-util/dmg2img 9999: Convert Apple disk images to IMG format.
 dev-util/dockerfile-language-server 0.12.0 0.13.0: A language server for Dockerfiles
 dev-util/eclipse-parallel-bin 4.28: Eclipse IDE for Scientific Computing (C, C++, Fortran)
 dev-util/exercism 3.1.0 3.2.0: Command line client for https://exercism.io
-dev-util/find-work 0.6.1 0.7.0 9999: Personal advice utility for Gentoo package maintainers
+dev-util/find-work 0.6.1 0.7.0 0.91.0 9999: Personal advice utility for Gentoo package maintainers
+dev-util/find-work-bugzilla 0.2.0: Personal advice utility for Gentoo package maintainers: Bugzilla plugin
+dev-util/find-work-pkgcheck 0.2.0: Personal advice utility for Gentoo package maintainers: pkgcheck plugin
+dev-util/find-work-repology 0.2.0: Personal advice utility for Gentoo package maintainers: Repology plugin
 dev-util/fnm 1.35.1: Fast and simple Node.js version manager
 dev-util/fortls 2.13.0 3.0.0 3.1.1 3.1.2: Fortran Language Server (fortls)
 dev-util/fortran-test-drive 0.4.0: The simple testing framework (for Fortran)
@@ -918,7 +924,7 @@ dev-util/insomnia-bin 2020.5.2 2023.5.8: HTTP and GraphQL client for developers
 dev-util/juliaup 1.16.10: Julia installer and version multiplexer
 dev-util/lemminx-bin 0.27.0 0.27.1: XML Language Server
 dev-util/libtypec-utils 0.5.2: Library to interface with USB Type-C/Power Delivery devices
-dev-util/lottieconverter 0.2: Simple lottie (telegram animated sticker) converter.
+dev-util/lottieconverter 0.2 0.2-r1: Simple lottie (telegram animated sticker) converter
 dev-util/lua-language-server 3.9.1-r1 3.9.3: Lua language server
 dev-util/mh 1.0.3: Generate help for Makefile
 dev-util/mock 5.6-r1: Simple chroot build environment manager for building RPMs
@@ -1169,8 +1175,7 @@ gui-wm/swayfx 0.2 0.3.2 0.4 0.4-r1: SwayFX: Sway, but with eye candy!
 kde-apps/kwalletcli 3.03: CLI for the KDE Wallet
 kde-apps/plasma-settings 22.11: Settings application for Plasma Mobile
 kde-misc/geminipart 20221020 20231005: KPart for viewing text/gemini files
-kde-misc/kio-gemini 20230419 20231005: Gemini KIO worker
-kde-misc/plasma-applet-thermal-monitor 1.3.0: Plasma 5 applet for monitoring CPU, GPU and other available temperature sensors
+kde-misc/kio-gemini 20231005 20240801: Gemini KIO worker
 kde-misc/plasma5-wallpapers-dynamic 3.3.9 9999: A KDE Plasma wallpaper plugin to set your wallpaper based on the time of day.
 mail-client/betterbird-bin 115.12.0 115.13.0: Betterbird is a fine-tuned version of Mozilla Thunderbird.
 mail-client/heirloom-mailx 12.5: The mailx utility from CentOS
@@ -1195,7 +1200,7 @@ media-fonts/nerdfonts 3.2.0 3.2.1: Iconic font aggregator, collection, & patcher
 media-fonts/overpass 3.0.4: An open source webfont family inspired by Highway Gothic
 media-fonts/plemoljp 1.7.1: PlemolJP is a composite font of IBM Plex Mono and IBM Plex Sans JP.
 media-fonts/source-han-mono 1.002: Pan-CJK OpenType/CFF mono font family
-media-fonts/source-han-serif 2.001 2.002: Pan-CJK OpenType/CFF font family
+media-fonts/source-han-serif 2.002 2.003: Pan-CJK OpenType/CFF font family
 media-fonts/symbola 7.17 13.00: Unicode font for Latin, IPA Extensions, Greek, Cyrillic and many Symbol Blocks
 media-fonts/twemoji 14.0.2: A color emoji font with a flat visual style, designed and used by Twitter
 media-fonts/udev-gothic 1.3.1-r1: UDEV Gothic is a composite font of BIZ UD Gothic and JetBrains Mono.
@@ -1263,7 +1268,7 @@ media-sound/TauonMusicBox 7.7.2-r2 7.8.0 7.8.0-r1 9999: The desktop music player
 media-sound/add64 3.8.0 3.9.3: Add64 is a realtime additive/subtractive-synthesis softsynth
 media-sound/amberol 0.10.4_pre20240517: Simple GUI Music Player
 media-sound/bespokesynth 1.2.1: Software modular synth
-media-sound/callaudiod 0.1.7 0.1.9: Call audio routing daemon
+media-sound/callaudiod 0.1.9 0.1.10: Call audio routing daemon
 media-sound/corrscope 0.10.0-r1: Advanced oscilloscope audio visualizer specializing in chiptune
 media-sound/drumgizmo 0.9.20 9999: Cross-platform drum plugin and stand-alone application
 media-sound/dzr 240704: DZR: the command line deezer.com player
@@ -1366,7 +1371,7 @@ net-im/Quaternion 0.0.95.1 0.0.96_beta4: A Qt-based IM client for Matrix
 net-im/abaddon 0.1.12-r1 0.1.13 0.2.1 9999: Alternative Discord client using GTK instead of Electron
 net-im/armcord-bin 3.2.6 3.2.7: ArmCord is a custom client designed to enhance your Discord experience.
 net-im/axolotl-bin 2.0.1: Axolotl is a cross-platform Signal client
-net-im/beeper 3.104.7 3.107.2: Beeper: Unified Messenger
+net-im/beeper 3.107.2 3.108.3: Beeper: Unified Messenger
 net-im/chatterino 2.5.1: Chat client for https://twitch.tv
 net-im/conduit 0.7.0 0.8.0: Matrix homeserver written in Rust
 net-im/discord-canary-bin 0.0.306: All-in-one voice and text chat
@@ -1439,7 +1444,7 @@ net-misc/gemget 1.9.0: Command line downloader for the Gemini protocol
 net-misc/gemserv 0.6.5 0.6.6: A gemini Server written in rust
 net-misc/giara 1.0.1 1.1.0: An app for Reddit
 net-misc/gmcapsule 0.6.1 0.7.0: Extensible Gemini/Titan server
-net-misc/gmid 2.0.2 2.0.5 9999: Simple and secure Gemini server
+net-misc/gmid 2.0.5 2.1 9999: Simple and secure Gemini server
 net-misc/gnome-ssh-askpass 9.2_p1: GTK-based passphrase dialog for use with OpenSSH
 net-misc/graftcp 0.7.1: A tool for redirecting a given program's TCP traffic to SOCKS5 or HTTP proxy
 net-misc/iipsrv 1.2: High performance image server for high resolution and scientific images
@@ -1478,7 +1483,7 @@ net-p2p/bisq-bin 1.9.14: The decentralized bitcoin exchange (non-atomic, with ar
 net-p2p/dogecoin-qt 1.14.7 1.14.8: Dogecoin Core Qt for desktop. Downloaded blockchain is under 2.2GB. Much secure.
 net-p2p/feather 2.6.7-r1 9999: A free, open-source Monero wallet
 net-p2p/fragments 3.0.0 3.0.1: Fragments is an easy to use BitTorrent client
-net-p2p/gridcoin 5.4.7.0 5.4.8.0: Proof-of-Stake based cryptocurrency that rewards BOINC computation
+net-p2p/gridcoin 5.4.8.0 5.4.8.0_p1: Proof-of-Stake based cryptocurrency that rewards BOINC computation
 net-p2p/monero 0.17.3.2 0.18.3.1 0.18.3.3-r1 0.18.3.3-r2 9999: The secure, private, untraceable cryptocurrency
 net-p2p/p2pool 4.0 9999: Decentralized pool for Monero mining
 net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
@@ -1574,7 +1579,7 @@ sec-keys/openpgp-keys-phosh 2024: OpenPGP keys used to sign Phosh releases
 sec-keys/openpgp-keys-russallbery 20230000: OpenPGP keys used by Russ Allbery (Eagle)
 sec-keys/openpgp-keys-schernykh 20210409: OpenPGP keys used to sign P2Pool releases
 sec-keys/openpgp-keys-skyjake 20211224: OpenPGP keys used by Jaakko Keranen
-sec-keys/signify-keys-gmid 1.8 2.0: Signify keys used to sign gmid releases
+sec-keys/signify-keys-gmid 2.0 2.1: Signify keys used to sign gmid releases
 sec-keys/signify-keys-lanodan 2021.04 2023 2024: Signify keys used by Haelwenn (lanodan) Monnier
 sec-keys/signify-keys-telescope 0.9 0.10: Signify keys used to sign telescope releases
 sys-apps/0xFFFF 0.10: 0pen Free Fiasco Firmware Flasher for Maemo devices

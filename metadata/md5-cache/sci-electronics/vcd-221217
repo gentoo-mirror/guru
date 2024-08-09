@@ -1,9 +1,11 @@
-DEFINED_PHASES=-
+DEFINED_PHASES=compile install
 DESCRIPTION=VCD file (Value Change Dump) command line viewer
 EAPI=8
 HOMEPAGE=https://github.com/yne/vcd
+INHERIT=toolchain-funcs
 KEYWORDS=~amd64 ~arm64 ~loong ~riscv ~x86
 LICENSE=MIT
 SLOT=0
 SRC_URI=https://github.com/yne/vcd/archive/221217.tar.gz -> vcd-221217.tar.gz
-_md5_=aeb1528e2c6190879d8e3ff48fba56ef
+_eclasses_=toolchain-funcs	e7e7331166166e7a516d19e264b098c2	multilib	c19072c3cd7ac5cb21de013f7e9832e0
+_md5_=45f353d731a71994fbfc2be4a9512b78
