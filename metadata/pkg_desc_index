@@ -502,7 +502,7 @@ dev-lang/hare 0.24.0 0.24.2 9999: The Hare systems programming language
 dev-lang/harec 0.24.0 0.24.2 9999: The Hare compiler
 dev-lang/opencilk 1.1 2.1: The OpenCilk concurrency platform for parallel programming
 dev-lang/opencilk-bin 1.1 2.1: The OpenCilk concurrency platform for parallel programming
-dev-lang/quickjs 2021.03.27 2024.01.13: Small embeddable Javascript engine
+dev-lang/quickjs 2024.01.13-r1: Small embeddable Javascript engine
 dev-lang/swift 5.10.1: A high-level general-purpose, multi-paradigm, compiled programming language
 dev-lang/wabt 1.0.34: The WebAssembly Binary Toolkit
 dev-libs/M_CLI2 3.2.0: M_CLI2 - parse Unix-like command line arguments from Fortran
@@ -518,7 +518,7 @@ dev-libs/fortran-shlex 1.0.1: Modern Fortran port of the tiny-regex-c library fo
 dev-libs/fortran-stdlib 0.2.1-r1 0.3.0 0.4.0 0.5.0 0.6.1 9999: A community driven standard library for (modern) Fortran
 dev-libs/fsst 0_pre20200830-r1: Fast Static Symbol Table: fast text compression that allows random access
 dev-libs/ftl 1.0_p20230220: The Fortran Template Library (FTL) is a general purpose library for Fortran 2003
-dev-libs/gbinder 1.1.30-r3 1.1.32 1.1.36 1.1.38 9999: GLib-style interface to binder
+dev-libs/gbinder 1.1.40 9999: GLib-style interface to binder
 dev-libs/gmobile 0.1.0 0.2.1: Mobile related helpers for glib based projects
 dev-libs/gpds 1.8.4: A general purpose data serializer
 dev-libs/hts_engine 1.10: HMM-based speech synthesis system (HTS) engine and API
@@ -532,7 +532,7 @@ dev-libs/libcli 1.10.7: Shared C library to include Cisco-like CLI into other so
 dev-libs/libdatrie 0.2.13: Double-Array Trie Library
 dev-libs/libdbf 0.0.1: Library to read the content of dBASE III, IV, and 5.0 files
 dev-libs/libdwarf 0.9.1 0.9.2 0.10.1: The DWARF Debugging Information Format
-dev-libs/libglibutil 1.0.68 1.0.76 9999: Library of glib utilities from sailfishos project
+dev-libs/libglibutil 1.0.76 1.0.79 9999: Library of glib utilities from sailfishos project
 dev-libs/librepo 1.18.0: Repodata downloading library
 dev-libs/libsignal-ffi 0.44.0 0.46.0 0.51.0: A C ABI library which exposes Signal protocol logic
 dev-libs/libsolv 0.7.30-r1: Library for solving packages and reading repositories
@@ -869,7 +869,7 @@ dev-python/xattr 1.0.0 1.1.0: Python wrapper for extended filesystem attributes
 dev-python/xunitparser 1.3.4: Read JUnit/XUnit XML files and map them to Python objects
 dev-python/yams 0.7.3-r1 9999: Yet Another MPD Scrobbler (for Last.FM)
 dev-python/zopfli 0.2.2: Zopfli module for Python
-dev-ruby/asciidoctor-pdf 2.3.17: A native PDF converter for AsciiDoc based on Asciidoctor and Prawn
+dev-ruby/asciidoctor-pdf 2.3.18: A native PDF converter for AsciiDoc based on Asciidoctor and Prawn
 dev-ruby/byebug 11.1.3: a Ruby 2 debugger
 dev-ruby/chruby 0.3.9-r3 9999: Changes the current Ruby
 dev-ruby/prawn-icon 3.1.0: Provides support for icons in Prawn
@@ -1230,7 +1230,7 @@ media-gfx/zwcad 2023.23.0.3.4-r2: CAD software for 2D drawing, reviewing and pri
 media-libs/alsa-ucm-pinephone 1.2.6.3: ALSA ucm configuration files for the PinePhone (Pro)
 media-libs/alvr 16.0.0: ALVR is an open source remote VR display for the Oculus Go/Quest
 media-libs/amdvlk 2023.1.1 2023.1.2 2023.1.3: AMD Open Source Driver for Vulkan
-media-libs/amdvlk-bin 2021.2.5 2023.3.3 2024.2.3: AMD Open Source Driver for Vulkan: official binary version
+media-libs/amdvlk-bin 2021.2.5-r1 2023.3.3 2024.2.3: AMD Open Source Driver for Vulkan: official binary version
 media-libs/dr_flac 0.12.42: Single-header FLAC audio decoder library
 media-libs/dr_mp3 0.6.39-r1: Single-header MP3 audio decoder library
 media-libs/dr_wav 0.13.16-r1: Single-header WAV audio loader and writer library
@@ -1475,7 +1475,7 @@ net-news/newsraft 0.25 9999: A lightweight feed reader with ncurses user interfa
 net-nntp/inn 2.7.1: InterNetNews - the Internet meets Netnews
 net-nntp/pan 0.158 0.158-r1 0.159 0.159-r1: A newsreader for GNOME
 net-p2p/bisq-bin 1.9.14: The decentralized bitcoin exchange (non-atomic, with arbitration)
-net-p2p/dogecoin-qt 1.14.6 1.14.7 1.14.8: Dogecoin Core Qt for desktop. Downloaded blockchain is under 2.2GB. Much secure.
+net-p2p/dogecoin-qt 1.14.7 1.14.8: Dogecoin Core Qt for desktop. Downloaded blockchain is under 2.2GB. Much secure.
 net-p2p/feather 2.6.7-r1 9999: A free, open-source Monero wallet
 net-p2p/fragments 3.0.0 3.0.1: Fragments is an easy to use BitTorrent client
 net-p2p/gridcoin 5.4.7.0 5.4.8.0: Proof-of-Stake based cryptocurrency that rewards BOINC computation
@@ -1492,7 +1492,7 @@ net-voip/discover-overlay 0.6.9-r1 0.7.4: Yet another Discord overlay for Linux 
 net-voip/gnome-calls 45.0 46.3: Phone dialer and call handler
 net-voip/re 3.11.0-r1 3.12.0 3.13.0 3.14.0: Generic library for real-time communications with async IO support
 net-voip/vvmd 0.8-r1: vvmd is a lower level daemon that retrieves Visual Voicemail
-net-vpn/candy 5.10.0: A reliable, low-latency, and anti-censorship virtual private network
+net-vpn/candy 5.10.3: A reliable, low-latency, and anti-censorship virtual private network
 net-vpn/cloudflare-warp 2024.2.62-r2 2024.4.133-r1: Cloudflare Warp Client
 net-vpn/fastd 22: A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
 net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that require SAML
@@ -1527,6 +1527,7 @@ sci-electronics/logic-bin 2.4.14: Saleae logic analyzer
 sci-electronics/lxi-tools 2.7: Tools to access devices with LXI
 sci-electronics/slang 4.0 5.0 6.0 9999: SystemVerilog compiler and language services
 sci-electronics/svls 0.2.11: SystemVerilog language server
+sci-electronics/vcd 221217: VCD file (Value Change Dump) command line viewer
 sci-electronics/verilator 5.022 5.024 9999: The fast free Verilog/SystemVerilog simulator
 sci-electronics/yosys 0.40-r1: framework for Verilog RTL synthesis
 sci-mathematics/frama-c 23.1-r1 24.0-r1 25.0-r2: Framework for analysis of source codes written in C
