@@ -14,7 +14,7 @@ S="${WORKDIR}/${MY_P}"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="lto"
+IUSE="lto static-libs"
 
 PATCHES=(
 	"${FILESDIR}/quickjs-2020.11.08_Remove-TTY-check-in-test.patch"
@@ -34,6 +34,10 @@ src_prepare() {
 		|| die "Failed to remove hard-coded tools."
 
 	sed -i 's;$(PREFIX)/lib;$(LIBDIR);' Makefile || die "Failed fixing libdir"
+
+	if ! use static-libs; then
+		sed -i '/install -m644 libquickjs.a "$(DESTDIR)$(LIBDIR)\/quickjs"/d' Makefile || die "Failed fixing static-libs"
+		fi
 }
 
 src_configure() {
@@ -44,5 +48,7 @@ src_configure() {
 	export LIBDIR="/usr/$(get_libdir)"
 
 	export CONFIG_LTO=$(use lto)
-	export CONFIG_SHARED=y
+	if ! use static-libs; then
+		export CONFIG_SHARED=y
+	fi
 }

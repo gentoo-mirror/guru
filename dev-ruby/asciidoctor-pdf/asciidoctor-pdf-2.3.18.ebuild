@@ -45,10 +45,6 @@ all_ruby_prepare() {
 	sed -i -e "s:_relative ': './:" ${RUBY_FAKEGEM_GEMSPEC} || die
 }
 
-all_ruby_install() {
-	all_fakegem_install
-}
-
 each_ruby_test() {
 	RSPEC_VERSION=3 ruby-ng_rspec -t ~network -t ~visual spec
 }
