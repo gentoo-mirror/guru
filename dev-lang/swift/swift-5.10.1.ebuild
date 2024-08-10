@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{6..13} )
+PYTHON_COMPAT=( python3_{10..13} )
 inherit python-single-r1
 
 DESCRIPTION="A high-level, general-purpose, multi-paradigm, compiled programming language"
@@ -46,13 +46,12 @@ SRC_URI="
 	https://github.com/swiftlang/swift-syntax/archive/refs/tags/${P}-RELEASE.tar.gz -> swift-syntax-${PV}.tar.gz
 	https://github.com/swiftlang/swift-tools-support-core/archive/refs/tags/${P}-RELEASE.tar.gz -> swift-tools-support-core-${PV}.tar.gz
 	https://github.com/swiftlang/swift/archive/refs/tags/${P}-RELEASE.tar.gz -> ${P}.tar.gz
-	https://github.com/unicode-org/icu/archive/refs/tags/release-69-1.tar.gz -> icu-69.1.tar.gz
 "
 
-PATCHES="
-	${FILESDIR}/${P}-link-with-lld.patch
-	${FILESDIR}/${P}-llbuild-link-ncurses-tinfo-gentoo.patch
-"
+PATCHES=(
+	"${FILESDIR}/${P}-link-with-lld.patch"
+	"${FILESDIR}/${P}-llbuild-link-ncurses-tinfo-gentoo.patch"
+)
 
 S="${WORKDIR}"
 LICENSE="Apache-2.0"
@@ -64,13 +63,10 @@ RESTRICT="strip"
 
 RDEPEND="
 	${PYTHON_DEPS}
-	>=dev-build/cmake-3.24.2
-	>=dev-build/ninja-1.11
 	>=dev-db/sqlite-3
 	>=dev-libs/icu-69
 	>=dev-libs/libedit-20221030
 	>=dev-libs/libxml2-2.11.5
-	>=dev-vcs/git-2.39
 	>=net-misc/curl-8.4
 	>=sys-devel/lld-15
 	>=sys-libs/ncurses-6
@@ -79,8 +75,21 @@ RDEPEND="
 "
 
 BDEPEND="
+	${PYTHON_DEPS}
+	>=dev-build/cmake-3.24.2
+	>=dev-build/ninja-1.11
+	>=dev-db/sqlite-3
+	>=dev-libs/icu-69
+	>=dev-libs/libedit-20221030
+	>=dev-libs/libxml2-2.11.5
 	>=dev-util/patchelf-0.18
+	>=dev-vcs/git-2.39
 	>=sys-apps/coreutils-9
+	>=sys-devel/clang-15
+	>=sys-devel/lld-15
+	>=sys-libs/ncurses-6
+	>=sys-libs/zlib-1.3
+	dev-lang/python
 "
 
 src_unpack() {
@@ -97,7 +106,6 @@ src_unpack() {
 
 	# Some one-off fixups:
 	pushd "${S}" \
-		&& mv 'icu-release-69' 'icu' \
 		&& mv 'swift-cmark' 'cmark' \
 		&& mv 'swift-llbuild' 'llbuild' \
 		&& mv 'swift-package-manager' 'swiftpm' \
@@ -223,11 +231,6 @@ src_compile() {
 }
 
 src_install() {
-	# `libicudataswift.so.69.1` has an empty `DT_RUNPATH`, which fails
-	# `rpath_security_checks`. It contains only data, so we can remove its rpath
-	# altogether.
-	patchelf --remove-rpath "${S}/stage2/usr/lib/swift/linux/libicudataswift.so.69.1"
-
 	# The Swift build output is intended to be self-contained, and is
 	# _significantly_ easier to leave as-is than attempt to splat onto the
 	# filesystem; we'll install the output versioned into `/usr/lib64` and
@@ -241,6 +244,7 @@ src_install() {
 	# exposed externally, so we'll just symlink Swift-specific binaries into
 	# `/usr/bin`. (The majority of executables don't need to be exposed as
 	# `swift <command>` calls `swift-<command>` directly.)
+	local bin
 	for bin in swift swiftc sourcekit-lsp; do
 		dosym -r "${dest_dir}/usr/bin/${bin}" "/usr/bin/${bin}"
 	done
