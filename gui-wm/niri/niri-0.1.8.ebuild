@@ -5,7 +5,7 @@ EAPI=8
 
 LLVM_COMPAT=( {16..18} )
 
-inherit cargo llvm-r1
+inherit cargo llvm-r1 systemd
 
 DESCRIPTION="Scrollable-tiling Wayland compositor"
 HOMEPAGE="https://github.com/YaLTeR/niri"
@@ -46,7 +46,7 @@ DEPEND="
 RDEPEND="${DEPEND}"
 # Clang is required for bindgen
 BDEPEND="
-	>=virtual/rust-1.72.0
+	>=virtual/rust-1.77.0
 	screencast? ( $(llvm_gen_dep 'sys-devel/clang:${LLVM_SLOT}') )
 "
 
@@ -55,7 +55,7 @@ ECARGO_VENDOR="${WORKDIR}/vendor"
 QA_FLAGS_IGNORED="usr/bin/niri"
 
 src_prepare() {
-	sed -i 's/^git =.*/version = "*"/' Cargo.toml || die
+	sed -i 's/git = "[^ ]*"/version = "*"/' Cargo.toml || die
 	default
 }
 
@@ -72,9 +72,7 @@ src_install() {
 	cargo_src_install
 
 	dobin resources/niri-session
-
-	insinto /usr/lib/systemd/user
-	doins resources/niri{.service,-shutdown.target}
+	systemd_douserunit resources/niri{.service,-shutdown.target}
 
 	insinto /usr/share/wayland-sessions
 	doins resources/niri.desktop
