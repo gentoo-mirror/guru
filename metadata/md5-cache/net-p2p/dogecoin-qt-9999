@@ -1,6 +1,6 @@
 BDEPEND=dev-build/autoconf dev-build/automake >=app-portage/elt-patches-20240116 sys-devel/gnuconfig || ( >=dev-build/automake-1.17-r1:1.17 >=dev-build/automake-1.16.5:1.16 ) >=dev-build/autoconf-2.71-r6:2.71 >=dev-build/libtool-2.4.7-r3 >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=configure install postinst postrm prepare pretend unpack
-DEPEND=dev-libs/libevent:= dev-libs/protobuf dev-libs/openssl dev-build/libtool dev-build/automake:= gui? ( dev-qt/qtcore dev-qt/qtgui dev-qt/qtwidgets dev-qt/qtdbus dev-qt/qtnetwork ev-qt/qtprintsupport dev-qt/linguist-tools:= ) >=dev-libs/boost-1.84.0 wallet? ( sys-libs/db:5.3=[cxx] gui? ( media-gfx/qrencode ) ) zmq? ( net-libs/cppzmq )
+DEPEND=dev-libs/libevent:= dev-libs/protobuf dev-libs/openssl dev-build/libtool dev-build/automake:= gui? ( dev-qt/qtcore dev-qt/qtgui dev-qt/qtwidgets dev-qt/qtdbus dev-qt/qtnetwork dev-qt/qtprintsupport dev-qt/linguist-tools:= ) >=dev-libs/boost-1.84.0 wallet? ( sys-libs/db:5.3=[cxx] gui? ( media-gfx/qrencode ) ) zmq? ( net-libs/cppzmq )
 DESCRIPTION=Dogecoin Core Qt for desktop. Downloaded blockchain is under 2.2GB. Much secure.
 EAPI=8
 HOMEPAGE=https://github.com/dogecoin
@@ -8,8 +8,8 @@ INHERIT=autotools desktop flag-o-matic git-r3 xdg-utils
 IUSE=cpu_flags_x86_avx2 cpu_flags_x86_sse2 intel-avx2 dogecoind experimental +gui +pie +prune scrypt-sse2 +ssp tests utils +wallet zmq
 LICENSE=MIT
 PROPERTIES=live
-RDEPEND=dev-libs/libevent:= dev-libs/protobuf dev-libs/openssl dev-build/libtool dev-build/automake:= gui? ( dev-qt/qtcore dev-qt/qtgui dev-qt/qtwidgets dev-qt/qtdbus dev-qt/qtnetwork ev-qt/qtprintsupport dev-qt/linguist-tools:= ) >=dev-libs/boost-1.84.0 wallet? ( sys-libs/db:5.3=[cxx] gui? ( media-gfx/qrencode ) ) zmq? ( net-libs/cppzmq ) dev-vcs/git dev-cpp/abseil-cpp cpu_flags_x86_avx2? ( intel-avx2? ( ~app-crypt/intel-ipsec-mb-1.3 ) )
+RDEPEND=dev-libs/libevent:= dev-libs/protobuf dev-libs/openssl dev-build/libtool dev-build/automake:= gui? ( dev-qt/qtcore dev-qt/qtgui dev-qt/qtwidgets dev-qt/qtdbus dev-qt/qtnetwork dev-qt/qtprintsupport dev-qt/linguist-tools:= ) >=dev-libs/boost-1.84.0 wallet? ( sys-libs/db:5.3=[cxx] gui? ( media-gfx/qrencode ) ) zmq? ( net-libs/cppzmq ) dev-vcs/git dev-cpp/abseil-cpp cpu_flags_x86_avx2? ( intel-avx2? ( ~app-crypt/intel-ipsec-mb-1.3 ) )
 REQUIRED_USE=!gui? ( dogecoind utils ) dogecoind? ( utils ) intel-avx2? ( experimental ) scrypt-sse2? ( experimental ) experimental? ( || ( intel-avx2 scrypt-sse2 ) )
 SLOT=0
 _eclasses_=gnuconfig	a397adda6984a4c423e28ac274c1ba98	toolchain-funcs	0c713337f7872f1a002cecaaea9bef73	multilib	c19072c3cd7ac5cb21de013f7e9832e0	libtool	5f49a16f67f81bdf873e3d1f10b10001	autotools	d12ccbad07b44642a75ac97a3334d8e0	desktop	021728fdc1b03b36357dbc89489e0f0d	flag-o-matic	e503ea5acc20410237ba33ec3f7c857d	git-r3	875eb471682d3e1f18da124be97dcc81	xdg-utils	baea6080dd821f5562d715887954c9d3
-_md5_=d08957fb436e971c1a20cd2a2663c61b
+_md5_=38fd7bd50b66e0daad9e5250e9c18e17
