@@ -1,16 +1,16 @@
-BDEPEND=>=virtual/rust-1.72.0 screencast? ( llvm_slot_16? ( sys-devel/clang:16 ) llvm_slot_17? ( sys-devel/clang:17 ) llvm_slot_18? ( sys-devel/clang:18 ) ) >=virtual/rust-1.53
+BDEPEND=>=virtual/rust-1.77.0 screencast? ( llvm_slot_16? ( sys-devel/clang:16 ) llvm_slot_17? ( sys-devel/clang:17 ) llvm_slot_18? ( sys-devel/clang:18 ) ) >=virtual/rust-1.53 virtual/pkgconfig
 DEFINED_PHASES=compile configure install prepare setup test unpack
 DEPEND=dev-libs/glib:2 dev-libs/libinput:= dev-libs/wayland media-libs/mesa sys-auth/seatd:= virtual/libudev:= x11-libs/cairo x11-libs/libxkbcommon x11-libs/pango x11-libs/pixman screencast? ( media-video/pipewire:= )
 DESCRIPTION=Scrollable-tiling Wayland compositor
 EAPI=8
 HOMEPAGE=https://github.com/YaLTeR/niri
-INHERIT=cargo llvm-r1
+INHERIT=cargo llvm-r1 systemd
 IUSE=+dbus screencast systemd debug +llvm_slot_18 llvm_slot_16 llvm_slot_17
 KEYWORDS=~amd64
 LICENSE=GPL-3+ Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD-2 BSD ISC MIT MPL-2.0 Unicode-DFS-2016
 RDEPEND=dev-libs/glib:2 dev-libs/libinput:= dev-libs/wayland media-libs/mesa sys-auth/seatd:= virtual/libudev:= x11-libs/cairo x11-libs/libxkbcommon x11-libs/pango x11-libs/pixman screencast? ( media-video/pipewire:= )
 REQUIRED_USE=screencast? ( dbus ) systemd? ( dbus ) ^^ ( llvm_slot_16 llvm_slot_17 llvm_slot_18 )
 SLOT=0
-SRC_URI=https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.7.tar.gz -> niri-0.1.7.tar.gz https://github.com/YaLTeR/niri/releases/download/v0.1.7/niri-0.1.7-vendored-dependencies.tar.xz
-_eclasses_=toolchain-funcs	0c713337f7872f1a002cecaaea9bef73	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	e503ea5acc20410237ba33ec3f7c857d	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	rust-toolchain	2170de6b588d2626aaf369dbd57d7a0c	cargo	c806360bab90e2b49223df1810172c2b	llvm-utils	e59dc622da7e7e7f16879105bed34858	llvm-r1	aee9ccb15d2aee00819d8784fa242ac3
-_md5_=e0a6f145e67fec88f739f92f0cd2eb40
+SRC_URI=https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.8.tar.gz -> niri-0.1.8.tar.gz https://github.com/YaLTeR/niri/releases/download/v0.1.8/niri-0.1.8-vendored-dependencies.tar.xz
+_eclasses_=toolchain-funcs	0c713337f7872f1a002cecaaea9bef73	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	e503ea5acc20410237ba33ec3f7c857d	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	rust-toolchain	2170de6b588d2626aaf369dbd57d7a0c	cargo	c806360bab90e2b49223df1810172c2b	llvm-utils	e59dc622da7e7e7f16879105bed34858	llvm-r1	aee9ccb15d2aee00819d8784fa242ac3	systemd	c8b03e8df84486aa991d4396686e8942
+_md5_=126f004e6264df4ccdd24e81315ce6f2
