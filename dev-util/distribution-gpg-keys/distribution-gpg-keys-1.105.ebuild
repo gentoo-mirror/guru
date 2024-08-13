@@ -6,8 +6,8 @@ EAPI=8
 MY_P="${P}-1"
 
 DESCRIPTION="Collection of GPG keys used in Linux Distributions"
-HOMEPAGE="https://github.com/xsuchy/distribution-gpg-keys"
-SRC_URI="https://github.com/xsuchy/distribution-gpg-keys/archive/${MY_P}.tar.gz"
+HOMEPAGE="https://github.com/rpm-software-management/distribution-gpg-keys"
+SRC_URI="https://github.com/rpm-software-management/distribution-gpg-keys/archive/${MY_P}.tar.gz"
 S="${WORKDIR}/${PN}-${MY_P}"
 
 LICENSE="CC0-1.0"

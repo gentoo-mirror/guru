@@ -19,9 +19,9 @@ DEPEND="test? ( dev-cpp/doctest )"
 
 PATCHES=(
 	# unbundle doctest
-	"${FILESDIR}/${P}-system-doctest.patch"
+	"${FILESDIR}/${PN}-4.1.0-system-doctest.patch"
 	# unset Werror
-	"${FILESDIR}/${P}-werror.patch"
+	"${FILESDIR}/${PN}-4.1.0-werror.patch"
 )
 
 src_configure() {
