@@ -1,4 +1,4 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -18,17 +18,17 @@ FETCH_URI="https://github.com/GPUOpen-Drivers"
 ## and place commits in the desired variables
 ## EXAMPLE: XGL_COMMIT="80e5a4b11ad2058097e77746772ddc9ab2118e07"
 ## SRC_URI="... ${FETCH_URI}/$PART/archive/$COMMIT.zip -> $PART-$COMMIT.zip ..."
-XGL_COMMIT="67cd9d1d3016c0522ddf83ba0a0b2bda0de27d4c"
-PAL_COMMIT="042362399cdac1019fbc7f0ace8489aee2907883"
-LLPC_COMMIT="ffc49b2a07dea2754c1f7f3457a4ab5b4129c422"
-GPURT_COMMIT="e19c8ceca056f0b0d24ca4ecd654ef21d40ea063"
-LLVM_PROJECT_COMMIT="916f05c15939f5c94a3ec95d5b1fd6dbaf6c1ee4"
+XGL_COMMIT="8bf20dd1ca8b6b773ff0a773c09a845a9be42a96"
+PAL_COMMIT="d3bfe509cd335b06d1276a5bb3ceb8dce622ca34"
+LLPC_COMMIT="5278a3ff4f184ac76060892671c88d539be084c8"
+GPURT_COMMIT="c5b10793bd96432609de2d5945a03ed54b7ebbe8"
+LLVM_PROJECT_COMMIT="eb619c26c273559f0512aea704a4b0821c80b318"
 METROHASH_COMMIT="18893fb28601bb9af1154cd1a671a121fff6d8d3"
 CWPACK_COMMIT="4f8cf0584442a91d829d269158567d7ed926f026"
 # Submodule of LLPC, also updates often. Grab commit version from
-# https://github.com/GPUOpen-Drivers/llpc/tree/dev/imported
-LLVM_DIALECTS_COMMIT="d12df4e895733e0adf8364f22349d92a000ae30d"
-# end of variables
+# https://github.com/GPUOpen-Drivers/llpc/tree/${LLPC_COMMIT}/imported
+LLVM_DIALECTS_COMMIT="6ff7d39046e280e446fd69aa08c6c6524c68c728"
+### end of variables
 SRC_URI="${FETCH_URI}/xgl/archive/${XGL_COMMIT}.tar.gz -> amdvlk-xgl-${XGL_COMMIT}.tar.gz
 ${FETCH_URI}/pal/archive/${PAL_COMMIT}.tar.gz -> amdvlk-pal-${PAL_COMMIT}.tar.gz
 ${FETCH_URI}/llpc/archive/${LLPC_COMMIT}.tar.gz -> amdvlk-llpc-${LLPC_COMMIT}.tar.gz
@@ -37,8 +37,6 @@ ${FETCH_URI}/llvm-project/archive/${LLVM_PROJECT_COMMIT}.tar.gz -> amdvlk-llvm-p
 ${FETCH_URI}/MetroHash/archive/${METROHASH_COMMIT}.tar.gz -> amdvlk-MetroHash-${METROHASH_COMMIT}.tar.gz
 ${FETCH_URI}/CWPack/archive/${CWPACK_COMMIT}.tar.gz -> amdvlk-CWPack-${CWPACK_COMMIT}.tar.gz
 ${FETCH_URI}/llvm-dialects/archive/${LLVM_DIALECTS_COMMIT}.tar.gz -> amdvlk-LLVM-dialects-${LLVM_DIALECTS_COMMIT}.tar.gz"
-
-S="${WORKDIR}"
 
 LICENSE="MIT"
 SLOT="0"
@@ -49,33 +47,35 @@ REQUIRED_USE="|| ( abi_x86_32 abi_x86_64 )"
 BUNDLED_LLVM_DEPEND="sys-libs/zlib:0=[${MULTILIB_USEDEP}]"
 DEPEND="wayland? ( dev-libs/wayland[${MULTILIB_USEDEP}] )
 	${BUNDLED_LLVM_DEPEND}
-	>=dev-util/vulkan-headers-1.3.224
+	>=dev-util/vulkan-headers-1.3.283
 	raytracing? ( dev-util/DirectXShaderCompiler )
 	dev-util/glslang[${MULTILIB_USEDEP}]"
 BDEPEND="${BUNDLED_LLVM_DEPEND}
 	${PYTHON_DEPS}
+	dev-python/ruamel-yaml
 	virtual/linux-sources"
 RDEPEND=" ${DEPEND}
 	x11-libs/libdrm[${MULTILIB_USEDEP}]
 	x11-libs/libXrandr[${MULTILIB_USEDEP}]
 	x11-libs/libxcb[${MULTILIB_USEDEP}]
 	x11-libs/libxshmfence[${MULTILIB_USEDEP}]
-	>=media-libs/vulkan-loader-1.3.224[${MULTILIB_USEDEP}]
+	>=media-libs/vulkan-loader-1.3.283[${MULTILIB_USEDEP}]
 	dev-util/glslang[${MULTILIB_USEDEP}]
 	dev-libs/openssl[${MULTILIB_USEDEP}]" #890449
 
 CHECKREQS_MEMORY="7G"
 CHECKREQS_DISK_BUILD="4G"
+S="${WORKDIR}"
 CMAKE_USE_DIR="${S}/xgl"
+CMAKE_MAKEFILE_GENERATOR=ninja
 
 PATCHES=(
 	"${FILESDIR}/amdvlk-2022.3.5-no-compiler-presets.patch" #875821
 	"${FILESDIR}/amdvlk-2022.4.1-proper-libdir.patch"
 	"${FILESDIR}/amdvlk-2022.4.2-license-path.patch" #878803
-	"${FILESDIR}/amdvlk-2022.4.2-reduced-llvm-installations.patch"
-	"${FILESDIR}/amdvlk-2022.4.2-reduced-llvm-installations-part2.patch"
-	"${FILESDIR}/amdvlk-2022.4.4-r1-disable-Werror.patch" #887777
-	"${FILESDIR}/amdvlk-2023.1.2-gcc13-cstdint.patch" #905174
+	#"${FILESDIR}/amdvlk-2022.4.2-reduced-llvm-installations.patch"
+	#"${FILESDIR}/amdvlk-2022.4.2-reduced-llvm-installations-part2.patch"
+	"${FILESDIR}/amdvlk-2024.3.1-disable-Werror.patch"
 )
 
 pkg_pretend(){
@@ -122,6 +122,7 @@ multilib_src_configure() {
 		)
 	cmake_src_configure
 }
+
 multilib_check_headers() {
 	einfo "Checking headers skipped: there is no headers"
 }

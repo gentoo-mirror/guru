@@ -200,7 +200,6 @@ CRATES="
 	net2@0.2.39
 	notify@6.1.1
 	num-traits@0.2.18
-	num_cpus@1.16.0
 	num_enum@0.7.2
 	num_enum_derive@0.7.2
 	objc-foundation@0.1.1
@@ -317,8 +316,8 @@ CRATES="
 	tinytemplate@1.2.1
 	tinyvec@1.6.0
 	tinyvec_macros@0.1.1
-	tokio-macros@2.3.0
-	tokio@1.38.1
+	tokio-macros@2.4.0
+	tokio@1.39.2
 	toml@0.8.12
 	toml_datetime@0.6.5
 	toml_edit@0.21.1
@@ -420,7 +419,7 @@ CRATES="
 	zerocopy-derive@0.7.32
 	zerocopy@0.7.32
 	zune-inflate@0.2.54
-"
+	"
 
 inherit cargo desktop
 
