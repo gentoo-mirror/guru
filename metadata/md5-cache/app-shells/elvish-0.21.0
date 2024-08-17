@@ -1,0 +1,13 @@
+BDEPEND=>=dev-lang/go-1.20:= app-arch/unzip
+DEFINED_PHASES=compile install unpack
+DESCRIPTION=Expressive programming language and a versatile interactive shell
+EAPI=8
+HOMEPAGE=https://elv.sh/
+INHERIT=go-module
+KEYWORDS=~amd64
+LICENSE=BSD-2 BSD EPL-1.0 CC-BY-SA-4.0
+RESTRICT=test strip
+SLOT=0
+SRC_URI=https://github.com/elves/elvish/archive/refs/tags/v0.21.0.tar.gz -> elvish-0.21.0.tar.gz https://gitlab.com/freijon_gentoo/app-shells/elvish/-/raw/main/elvish-0.21.0-deps.tar.xz
+_eclasses_=multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	toolchain-funcs	5f8f1dc0c94e007fa08af4e98a19d0e5	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	e503ea5acc20410237ba33ec3f7c857d	go-env	90efbc8636d2f02d9654183330e84cf7	go-module	83fd3ed1657cfc316c93d6a37018290d
+_md5_=ccd7f6d3f7e4b1f330d5521f87311413

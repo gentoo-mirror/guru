@@ -196,7 +196,7 @@ app-emulation/proton-ge-custom-bin 7.27 7.28 7.29: A fancy custom distribution o
 app-emulation/quickemu 4.9.1 4.9.2: Create and run optimised Windows, macOS and Linux desktop virtual machines
 app-emulation/rars 1.6-r1: RARS -- RISC-V Assembler and Runtime Simulator
 app-emulation/wslu 4.1.1 4.1.3: A collection of utilities for Windows Subsystem for Linux
-app-emulation/x48ng 0.37.99_pre20240812: HP48 emulator
+app-emulation/x48ng 0.37.99_p20240812 0.38.0: HP48 emulator
 app-eselect/eselect-autostart 1.0.0: Manage symlinks in $XDG_CONFIG_HOME/autostart
 app-eselect/eselect-bluespec 1.0.2: Manages the /usr/bin/bsc (bluespec) symlink
 app-eselect/eselect-ld 1.0.0: Manage the ld symlink
@@ -269,6 +269,7 @@ app-misc/proctl 1.5 9999: small C program that can control processes
 app-misc/pueue 3.3.3 3.4.0 3.4.1: A cli tool for managing long running shell commands.
 app-misc/rememberthemilk 1.3.11-r1: Freemium simple to-do tasks manager
 app-misc/s6-man 9999: mdoc versions of the HTML documentation for the s6 supervision suite
+app-misc/sherlock 0.15.0 9999: Hunt down social media accounts by username across social networks
 app-misc/tai 0.0.8: tai (Terminal Ascii Images) tool to convert images to ascii
 app-misc/tealdeer 1.6.1: A very fast implementation of tldr in Rust.
 app-misc/termdown 1.18.0: Countdown timer and stopwatch in your terminal
@@ -313,7 +314,7 @@ app-portage/showbuild 0.9.1-r1: Script to follow log of running portage builds
 app-portage/version 0.19.0_alpha 0.20.1_alpha 0.21.0_alpha: A command line function for package version management.
 app-shells/carapace 1.0.3 1.0.4 1.0.5: Multi-shell multi-command argument completer
 app-shells/direnv 2.32.3 9999: Environment variable manager for shell
-app-shells/elvish 0.19.2 0.20.1: Expressive programming language and a versatile interactive shell
+app-shells/elvish 0.19.2 0.20.1 0.21.0: Expressive programming language and a versatile interactive shell
 app-shells/fre 0.4.1: A command line frecency tracking tool
 app-shells/fzf-fish 10.3: Augment your fish command line with fzf key bindings
 app-shells/fzf-tab 0_pre20230611: Replace zsh's default completion selection menu with fzf
@@ -322,6 +323,7 @@ app-shells/mrsh 9999: minimal strictly POSIX compliant shell
 app-shells/ohmyzsh 9999: A framework for managing your zsh configuration.
 app-shells/pokemon-colorscripts 9999: Pokemon unicode sprites for your terminal!
 app-shells/powerline-go 1.21.0 1.22.1: A powerline like prompt for Bash, Zsh, Fish written in Go lang.
+app-shells/shox 2024.01.25: A customisable, universally compatible terminal status bar
 app-shells/silver 2.0.0-r1: A cross-shell customizable powerline-like prompt with icons
 app-shells/vivid 0.9.0: A themeable LS_COLORS generator with a rich filetype datebase
 app-shells/zsh-async 1.8.5_p20211005 1.8.6: Run multiple asynchronous jobs with callbacks
@@ -535,7 +537,7 @@ dev-libs/libdatrie 0.2.13: Double-Array Trie Library
 dev-libs/libdbf 0.0.1: Library to read the content of dBASE III, IV, and 5.0 files
 dev-libs/libdwarf 0.9.1 0.9.2 0.10.1: The DWARF Debugging Information Format
 dev-libs/libglibutil 1.0.76 1.0.79 9999: Library of glib utilities from sailfishos project
-dev-libs/librepo 1.18.0: Repodata downloading library
+dev-libs/librepo 1.18.1: Repodata downloading library
 dev-libs/libsignal-ffi 0.44.0 0.46.0 0.51.0: A C ABI library which exposes Signal protocol logic
 dev-libs/libsolv 0.7.30-r1: Library for solving packages and reading repositories
 dev-libs/libthai 0.1.28 0.1.29: A a set of Thai language support routines
@@ -924,14 +926,14 @@ dev-util/gshards 0.2: Small helper tools to aid installing Crystal packages in G
 dev-util/haredo 1.0.2 9999: a simple and unix-idiomatic build automator
 dev-util/hut 0.6.0: CLI tool for sourcehut
 dev-util/insomnia-bin 2020.5.2 2023.5.8: HTTP and GraphQL client for developers
-dev-util/juliaup 1.16.10: Julia installer and version multiplexer
+dev-util/juliaup 1.17.1: Julia installer and version multiplexer
 dev-util/lemminx-bin 0.27.0 0.27.1: XML Language Server
 dev-util/libtypec-utils 0.5.2: Library to interface with USB Type-C/Power Delivery devices
 dev-util/lottieconverter 0.2 0.2-r1: Simple lottie (telegram animated sticker) converter
 dev-util/lua-language-server 3.9.1-r1 3.9.3: Lua language server
 dev-util/mh 1.0.3: Generate help for Makefile
 dev-util/mock 5.6-r1: Simple chroot build environment manager for building RPMs
-dev-util/mock-core-configs 40.6: Mock core config files basic chroots
+dev-util/mock-core-configs 41.2: Mock core config files basic chroots
 dev-util/ocamlformat 0.26.2: Auto-formatter for OCaml code
 dev-util/ocp-indent 1.8.2: Indentation tool for OCaml, to be used from editors like Emacs and Vim.
 dev-util/pcpp 1.30: A C99 preprocessor written in pure Python
@@ -1168,13 +1170,13 @@ gui-libs/mir 2.17.0-r1: Set of libraries for building Wayland based shells
 gui-libs/scenefx 0.1: A replacement for the wlroots scene API with eye-candy effects.
 gui-libs/text-engine 0.1.1-r3 9999: A lightweight rich-text framework for GTK 4
 gui-libs/xdg-desktop-portal-hyprland 1.3.3-r2 9999: xdg-desktop-portal backend for hyprland
-gui-wm/cage 0.1.5 0.1.5_p20240227 9999: A Wayland kiosk
+gui-wm/cage 0.1.5_p20240227 9999: A Wayland kiosk
 gui-wm/hyprland-contrib 0.1-r1 9999: Community-maintained extensions for hyprland
-gui-wm/miracle-wm 0.3.0: Tiling Wayland compositor based on Mir
+gui-wm/miracle-wm 0.3.2: Tiling Wayland compositor based on Mir
 gui-wm/niri 0.1.8: Scrollable-tiling Wayland compositor
 gui-wm/phoc 0.36.0-r1 0.38.0 0.40.0: Wayland compositor for mobile phones
-gui-wm/river 0.3.5: A dynamic tiling Wayland compositor
-gui-wm/swayfx 0.2 0.3.2 0.4 0.4-r1: SwayFX: Sway, but with eye candy!
+gui-wm/river 0.3.5 0.3.5-r1: A dynamic tiling Wayland compositor
+gui-wm/swayfx 0.4 0.4-r1: SwayFX: Sway, but with eye candy!
 kde-apps/kwalletcli 3.03: CLI for the KDE Wallet
 kde-apps/plasma-settings 22.11: Settings application for Plasma Mobile
 kde-misc/geminipart 20221020 20231005: KPart for viewing text/gemini files
@@ -1329,6 +1331,7 @@ media-video/obs-streamfx 0.12.0.9999 9999: OBS® Studio plugin which adds many n
 media-video/obs-vaapi 0.4.1 9999: OBS Studio VAAPI support via GStreamer
 media-video/obs-vkcapture 1.5.0 1.5.1 9999: OBS Linux Vulkan/OpenGL game capture
 media-video/olive 9999: Free open-source non-linear video editor
+media-video/stremio 4.4.168: Stremio is a modern media center for your video entertainment.
 media-video/syncplay 1.7.3: Client/server to synchronize media playback
 media-video/uxplay 1.67 1.68.3: AirPlay Unix mirroring server
 media-video/walksnail-osd-tool 0.3.0 9999: Tool for rendering OSDs over Walksnail DVR recordings
@@ -1469,6 +1472,7 @@ net-misc/toot 0.38.1: toot - Mastodon CLI & TUI
 net-misc/warp 0.7.0: Fast and secure file transfer
 net-misc/wayback_machine_downloader 2.3.0 2.3.1: Download an entire website from the Wayback Machine
 net-misc/whatscli 1.0.6 1.0.11: A command line interface for WhatsApp
+net-misc/wlvncc 9999: A Wayland Native VNC Client
 net-misc/wsdd 0.7.0 0.7.1 0.8: A Web Service Discovery host daemon.
 net-misc/xh 0.21.0 0.22.0-r1 0.22.2: Friendly and fast tool for sending HTTP requests
 net-misc/xkcd-handler 1.1.4: A handler for XKCD urls
@@ -1476,7 +1480,7 @@ net-misc/xmrig-mo 6.21.2: MoneroOcean fork of xmrig that supports algo switching
 net-misc/yacy 1.924.20210209.10069: YaCy - p2p based distributed web-search engine
 net-misc/youtube-dl 2021.12.17: youtube-dl fork with additional features and fixes
 net-misc/yt-dlg 2024.03.19: A cross platform front-end GUI of the popular youtube-dl written in wxPython.
-net-news/cliflux 1.4.1: A terminal-ui (TUI) client for the Miniflux RSS reader
+net-news/cliflux 1.4.1 1.4.4: A terminal-ui (TUI) client for the Miniflux RSS reader
 net-news/comitium 1.8.1: feed aggregator for gemini supporting many formats and protocols
 net-news/gfeeds 2.2.0-r1 2.2.0-r2 2.2.0-r3: An RSS/Atom feed reader for GNOME.
 net-news/newsflash 3.1.6: Feed Reader written in GTK
@@ -1488,8 +1492,8 @@ net-p2p/dogecoin-qt 1.14.7 1.14.8 9999: Dogecoin Core Qt for desktop. Downloaded
 net-p2p/feather 2.6.7-r1 9999: A free, open-source Monero wallet
 net-p2p/fragments 3.0.0 3.0.1: Fragments is an easy to use BitTorrent client
 net-p2p/gridcoin 5.4.8.0 5.4.8.0_p1: Proof-of-Stake based cryptocurrency that rewards BOINC computation
-net-p2p/monero 0.17.3.2 0.18.3.1 0.18.3.3-r1 0.18.3.3-r2 9999: The secure, private, untraceable cryptocurrency
-net-p2p/p2pool 4.0 9999: Decentralized pool for Monero mining
+net-p2p/monero 0.17.3.2 0.18.3.1 0.18.3.3-r1 0.18.3.3-r2 0.18.3.4 9999: The secure, private, untraceable cryptocurrency
+net-p2p/p2pool 4.0 4.1 9999: Decentralized pool for Monero mining
 net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
 net-p2p/yggdrasil-go 0.5.7 9999: An experiment in scalable routing as an encrypted IPv6 overlay network
 net-print/hpuld 1.00.39.15.00.23-r1: HP Unified Linux Driver (for samsung hardware)
@@ -1652,7 +1656,7 @@ sys-fs/sanoid 2.2.0 9999: Policy-driven snapshot management and replication tool
 sys-fs/ufiformat 0.9.9: USB Floppy Disk formatting tool
 sys-fs/zfs-auto-utils 1.0.0: ZFS Automatic Scrub/Trim for Linux
 sys-kernel/dpdk-kmod 23.03: DPDK Kernel Nic Interface module
-sys-kernel/uek-sources 5.15.0.206.149.1 5.15.0.206.153.6 5.15.0.206.153.7 5.15.0.300.159.7 5.15.0.300.159.7-r1: Unbreakable Enterprise Kernel (UEK) sources built from Oracle
+sys-kernel/uek-sources 5.15.0.206.149.1 5.15.0.206.153.6 5.15.0.206.153.7 5.15.0.300.159.7 5.15.0.300.159.7-r1 5.15.0.300.161.13: Unbreakable Enterprise Kernel (UEK) sources built from Oracle
 sys-kernel/usermode-kernel 6.0.12: Linux kernel built with Gentoo patches
 sys-kernel/xow 0.5: Linux driver for the Xbox One wireless dongle
 sys-kernel/zenpower3 0.2.0: Linux kernel driver for reading sensors of AMD Zen family CPUs
