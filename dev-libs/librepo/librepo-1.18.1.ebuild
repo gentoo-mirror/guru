@@ -33,7 +33,7 @@ BDEPEND="
 
 PATCHES=(
 	# getxattr does not seem to work well under QA box. bug #934951
-	"${FILESDIR}/${P}-disable-checksum-test.patch"
+	"${FILESDIR}/${PN}-1.18.0-disable-checksum-test.patch"
 )
 
 src_prepare() {

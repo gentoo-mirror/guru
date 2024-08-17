@@ -23,9 +23,13 @@ RDEPEND="
 	gui-libs/mir
 	dev-libs/libpcre2:=
 	media-libs/libglvnd
+	x11-base/xwayland
 	x11-libs/libnotify
 "
-DEPEND="${RDEPEND}"
+DEPEND="
+	${RDEPEND}
+	media-libs/glm
+"
 BDEPEND="
 	virtual/pkgconfig
 	test? ( dev-cpp/gtest )
