@@ -161,7 +161,6 @@ dev-python/gevent:recommended - A shortcut for installing suggested extras toget
 dev-python/python-socketio:asyncio-client - Add async websocket client
 dev-python/python-socketio:client - Add websocket client
 dev-util/distribution-gpg-keys:copr - Install GPG keys used by Copr projects
-dev-util/dmg2img:lzfse - Enable support for Apple's LZFSE compression
 dev-util/gammaray:3d - Build support for Qt5 3D modules
 dev-util/gammaray:designer - Widget .ui file export
 dev-util/gammaray:geolocation - Physical position determination support from Qt5 framework
@@ -669,6 +668,7 @@ sys-boot/limine:cd-efi - Enable building cd-efi.bin using sys-fs/mtools. This fl
 sys-boot/limine:uefi32 - Enable 32-bit UEFI support.
 sys-boot/limine:uefi64 - Enable 64-bit UEFI support.
 sys-boot/limine:uefiaa64 - Enable AArch64 UEFI support.
+sys-boot/limine:uefiloong64 - Enable 64-bit LoongArch UEFI support.
 sys-boot/limine:uefirv64 - Enable 64-bit RISC-V UEFI support.
 sys-cluster/booth:glue - Use libraries from sys-cluster/cluster-glue
 sys-firmware/lenovolegionlinux:downgrade-nvidia - Downgrade nvidia for 525 to enable TDP control (systemd-service)

@@ -178,7 +178,7 @@ app-editors/l3afpad 0.8.18.1.11: Simple GTK3 text editor (successor to leafpad)
 app-editors/lapce 0.3.1 0.4.0 9999: Lightning-fast and Powerful Code Editor written in Rust
 app-editors/mined 2015.25: A powerful text editor with extensive Unicode and CJK support
 app-editors/neovide 0.12.2: Neovide: No Nonsense Neovim Gui
-app-editors/neovim-qt 0.2.17-r1 0.2.18: Neovim client library and GUI, in Qt
+app-editors/neovim-qt 0.2.17-r1 0.2.18-r1: Neovim client library and GUI, in Qt
 app-editors/pulsar-bin 1.118.0 1.119.0: A Community-led Hyper-Hackable Text Editor
 app-editors/typora-bin 1.8.10: a markdown editor,markdown reader.
 app-emacs/catppuccin-emacs 9999: Soothing pastel theme for Emacs
@@ -196,7 +196,7 @@ app-emulation/proton-ge-custom-bin 7.27 7.28 7.29: A fancy custom distribution o
 app-emulation/quickemu 4.9.1 4.9.2: Create and run optimised Windows, macOS and Linux desktop virtual machines
 app-emulation/rars 1.6-r1: RARS -- RISC-V Assembler and Runtime Simulator
 app-emulation/wslu 4.1.1 4.1.3: A collection of utilities for Windows Subsystem for Linux
-app-emulation/x48ng 0.37.99_p20240812 0.38.0: HP48 emulator
+app-emulation/x48ng 0.38.0: HP48 emulator
 app-eselect/eselect-autostart 1.0.0: Manage symlinks in $XDG_CONFIG_HOME/autostart
 app-eselect/eselect-bluespec 1.0.2: Manages the /usr/bin/bsc (bluespec) symlink
 app-eselect/eselect-ld 1.0.0: Manage the ld symlink
@@ -325,7 +325,7 @@ app-shells/pokemon-colorscripts 9999: Pokemon unicode sprites for your terminal!
 app-shells/powerline-go 1.21.0 1.22.1: A powerline like prompt for Bash, Zsh, Fish written in Go lang.
 app-shells/shox 2024.01.25: A customisable, universally compatible terminal status bar
 app-shells/silver 2.0.0-r1: A cross-shell customizable powerline-like prompt with icons
-app-shells/vivid 0.9.0: A themeable LS_COLORS generator with a rich filetype datebase
+app-shells/vivid 0.9.0 0.10.1: A themeable LS_COLORS generator with a rich filetype datebase
 app-shells/zsh-async 1.8.5_p20211005 1.8.6: Run multiple asynchronous jobs with callbacks
 app-shells/zsh-autocomplete 23.07.13 9999: Real-time type-ahead completion for Zsh.
 app-shells/zsh-autosuggestions 0.7.0-r2: Fish-like autosuggestions for zsh
@@ -650,7 +650,7 @@ dev-python/biplist 1.0.3: A binary plist parser/generator for Python
 dev-python/blurhash 1.1.4: Pure-Python implementation of the blurhash algorithm
 dev-python/cassowary 0.6: Run Windows Applications on Linux as if they are native (Using a VM and FreeRDP)
 dev-python/celery 5.3.6 5.4.0: Asynchronous task queue/job queue based on distributed message passing
-dev-python/chevron 0.13.1: A Python implementation of mustache
+dev-python/chevron 0.13.1 0.14.0-r1: A Python implementation of mustache
 dev-python/click-aliases 1.0.4: Add (mutiple) aliases to a click group or command
 dev-python/click-command-tree 1.1.1: click plugin to show the command tree of your CLI
 dev-python/click-repl 0.2.0-r1: Subcommand REPL for click apps
@@ -907,7 +907,7 @@ dev-util/cmakelang 0.6.13: Provides Quality Assurance (QA) tools for cmake
 dev-util/coq-lsp 0.1.9: Visual Studio Code Extension and Language Server Protocol for Coq
 dev-util/deblob 0.7 0.8 9999: remove binary executables from a directory
 dev-util/distribution-gpg-keys 1.105: Collection of GPG keys used in Linux Distributions
-dev-util/dmg2img 9999: Convert Apple disk images to IMG format.
+dev-util/dmg2img 9999 20201227: Convert Apple disk images to IMG format.
 dev-util/dockerfile-language-server 0.12.0 0.13.0: A language server for Dockerfiles
 dev-util/eclipse-parallel-bin 4.28: Eclipse IDE for Scientific Computing (C, C++, Fortran)
 dev-util/exercism 3.1.0 3.2.0: Command line client for https://exercism.io
@@ -915,7 +915,7 @@ dev-util/find-work 0.6.1 0.7.0 0.91.0 9999: Personal advice utility for Gentoo p
 dev-util/find-work-bugzilla 0.2.0: Personal advice utility for Gentoo package maintainers: Bugzilla plugin
 dev-util/find-work-pkgcheck 0.2.0: Personal advice utility for Gentoo package maintainers: pkgcheck plugin
 dev-util/find-work-repology 0.2.0: Personal advice utility for Gentoo package maintainers: Repology plugin
-dev-util/fnm 1.35.1: Fast and simple Node.js version manager
+dev-util/fnm 1.37.1: Fast and simple Node.js version manager
 dev-util/fortls 2.13.0 3.0.0 3.1.1 3.1.2: Fortran Language Server (fortls)
 dev-util/fortran-test-drive 0.4.0: The simple testing framework (for Fortran)
 dev-util/gammaray 2.11.3: High-level runtime introspection tool for Qt applications
@@ -986,7 +986,6 @@ games-board/fairy-stockfish 14.0.1: Chess variant engine derived from Stockfish 
 games-board/openriichi 0.2.1.1: OpenRiichi is an open source Japanese Mahjong client
 games-board/rmahjong 0.4_p20201106: Riichi Mahjong, the Japanese variant of the Chinese game Mahjong for 4 players
 games-emulation/RetroArch 1.16.0.3: RetroArch is a frontend for emulators, game engines and media players
-games-emulation/conty 1.25.1 1.25.2: Easy to use unprivileged Linux container packed in a single portable executable
 games-emulation/dosbox-x 2024.07.01 9999: Complete, accurate DOS emulator forked from DOSBox
 games-emulation/duckstation 9999: Fast Sony PlayStation (PSX) emulator
 games-emulation/mupen64plus-qt 1.15 9999: A basic launcher for Mupen64Plus
@@ -1022,10 +1021,8 @@ games-rpg/open-adventure 1.16 1.17 1.18: Forward-port of the Crowther/Woods Adve
 games-rpg/sacred-demo 1.0.0: Like Diablo, isometric view, good rating, about a two hours of the gameplay
 games-rpg/snoot-game 1.10.0: Visual novel parody of Goodbye Volcano High
 games-server/among-sus 20210519: Among Us, but it's a text adventure
-games-strategy/general 4.6: Turn-based, old style with minimum graphic, full game, 5 MB size
 games-strategy/gigalomania 1.0.1: Libre clone of Mega-Lo-Mania (original from ~1990), supports original resources
 games-strategy/ground-control 1011: RTS from 2000 by Massive Entertainment, without resources and buildings
-games-strategy/massive-assault-network-ii 2.0.270: Turn-based, sci-fi, like a chess, from 2006, any screen resolution, good rating
 games-strategy/swine 1: Fun RTS from 2001 by Hungarian developer StormRegion, similar to Ground Control
 games-strategy/zedonline-bin 0.3.2: A remake of the 1996 classic game Z, with network play
 games-util/NotEnoughProduction 0.0.4: Tool for building production chains for modded minecraft
@@ -1185,7 +1182,7 @@ kde-misc/plasma5-wallpapers-dynamic 3.3.9 9999: A KDE Plasma wallpaper plugin to
 mail-client/betterbird-bin 115.12.0 115.13.0 115.14.0: Betterbird is a fine-tuned version of Mozilla Thunderbird.
 mail-client/heirloom-mailx 12.5: The mailx utility from CentOS
 mail-client/mailspring-bin 1.13.3: A beautiful, fast and fully open source mail client for Mac, Windows and Linux
-mail-client/proton-mail-bin 5.0.142.4: Beta Client for Proton Mail
+mail-client/proton-mail-bin 5.0.157.4: Beta Client for Proton Mail
 mail-filter/postfix-mta-sts-resolver 1.4.0: Daemon which provides TLS client policy for Postfix via socketmap
 media-fonts/blobmoji 15.0: Noto Emoji with extended Blob support
 media-fonts/dseg 0.46: A free font which imitate LCD Display
@@ -1276,7 +1273,7 @@ media-sound/bespokesynth 1.2.1: Software modular synth
 media-sound/callaudiod 0.1.9 0.1.10: Call audio routing daemon
 media-sound/corrscope 0.10.0-r1: Advanced oscilloscope audio visualizer specializing in chiptune
 media-sound/drumgizmo 0.9.20 9999: Cross-platform drum plugin and stand-alone application
-media-sound/dzr 240704: DZR: the command line deezer.com player
+media-sound/dzr 240817: DZR: the command line deezer.com player
 media-sound/eartag 0.5.0 0.5.1: GTK4 MusicBrainz audio tagger
 media-sound/furnace 0.6 0.6.5: a multi-system chiptune tracker compatible with DefleMask modules
 media-sound/g4music 3.3 3.4: A GTK4 music player
@@ -1330,7 +1327,6 @@ media-video/obs-multi-rtmp 0.5.0.4 9999: OBS Simulcast support plugin
 media-video/obs-streamfx 0.12.0.9999 9999: OBS® Studio plugin which adds many new effects.
 media-video/obs-vaapi 0.4.1 9999: OBS Studio VAAPI support via GStreamer
 media-video/obs-vkcapture 1.5.0 1.5.1 9999: OBS Linux Vulkan/OpenGL game capture
-media-video/olive 9999: Free open-source non-linear video editor
 media-video/stremio 4.4.168: Stremio is a modern media center for your video entertainment.
 media-video/syncplay 1.7.3: Client/server to synchronize media playback
 media-video/uxplay 1.67 1.68.3: AirPlay Unix mirroring server
@@ -1354,7 +1350,7 @@ mpv-plugin/mpv_sponsorblock 20211223 20220924 20230130: mpv script to skip spons
 mpv-plugin/mpv_sponsorblock_minimal 2023.08.20: A minimal script to skip sponsored segments of YouTube videos
 mpv-plugin/mpv_thumbnail_script 0.5.2 0.5.3 0.5.4: A Lua script to show preview thumbnails in mpv's OSC seekbar
 mpv-plugin/thumbfast 2023.12.08: High-performance on-the-fly thumbnailer script for mpv.
-net-analyzer/bandwhich 0.22.2: Terminal bandwidth utilization tool
+net-analyzer/bandwhich 0.23.0: Terminal bandwidth utilization tool
 net-analyzer/gping 1.17.3: Ping, but with a graph
 net-analyzer/munin-contrib 0.2021.04.27 0.2024.03.04 0.2024.03.04-r1: User contributed stuff related to munin
 net-analyzer/netsniff-ng 0.6.8-r1: high performance network sniffer for packet inspection
@@ -1472,7 +1468,7 @@ net-misc/toot 0.38.1: toot - Mastodon CLI & TUI
 net-misc/warp 0.7.0: Fast and secure file transfer
 net-misc/wayback_machine_downloader 2.3.0 2.3.1: Download an entire website from the Wayback Machine
 net-misc/whatscli 1.0.6 1.0.11: A command line interface for WhatsApp
-net-misc/wlvncc 9999: A Wayland Native VNC Client
+net-misc/wlvncc 9999 20240817: A Wayland Native VNC Client
 net-misc/wsdd 0.7.0 0.7.1 0.8: A Web Service Discovery host daemon.
 net-misc/xh 0.21.0 0.22.0-r1 0.22.2: Friendly and fast tool for sending HTTP requests
 net-misc/xkcd-handler 1.1.4: A handler for XKCD urls
@@ -1513,7 +1509,7 @@ net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that 
 net-vpn/mullvadvpn-app 2024.4: Tool used to manage daemon setup
 net-wireless/airspyhf 1.6.8: User mode driver for Airspy HF+
 net-wireless/bluetuith 0.1.9 0.2.0 0.2.1 0.2.2 9999: A TUI bluetooth manager for Linux written in Go
-net-wireless/btscreenlocker 1.6.2 1.6.3 1.6.5 1.7.0-r1: Daemon to lock your screen when Bluetooth trusted devices go away.
+net-wireless/btscreenlocker 1.6.3 1.6.5 1.7.0-r1 1.8.0: Daemon to lock your screen when Bluetooth trusted devices go away.
 net-wireless/rtl8192eu 0_pre20240518: Realtek 8192EU driver module for Linux kernel
 net-wireless/rtl8723bu 9999: Driver for the rtl8723 wireless chipset
 net-wireless/rtl8821ce 0_pre20240326: Realtek RTL8821CE Driver module for Linux kernel
@@ -1624,7 +1620,7 @@ sys-block/partclone 0.3.20: Partition cloning tool
 sys-boot/customrescuecd-x86-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/customrescuecd-x86_64-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/grml-rescueboot 0.6.1: grub2 script to add ISO images to the grub2 boot menu
-sys-boot/limine 7.0.0 7.0.3 7.0.5 7.3.0 7.5.0 7.9.2: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
+sys-boot/limine 7.0.0 7.0.3 7.0.5 7.3.0 7.5.0 7.9.2 8.0.5: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
 sys-boot/mkusb 23.2.0: CLI and GUI for creating bootable live USB, with optional persistent storage
 sys-boot/ventoy-bin 1.0.97 1.0.98: Creator of bootable USBs, with ability to copy ISOs, persistence storage
 sys-boot/woeusb-ng 0.2.10 0.2.12: Create Windows installer USB from ISO (rewrite of WoeUSB)
@@ -1710,7 +1706,7 @@ www-client/badwolf 1.3.0-r1 9999: Minimalist and privacy-oriented WebKitGTK+ bro
 www-client/browsh 1.8.2: A fully-modern text-based browser, rendering to TTY and browsers
 www-client/firefox-developer-bin 122.0 128.0: Firefox browser developer edition
 www-client/mullvad-browser-bin 13.5.2: The Mullvad Browser is developed to minimize tracking and fingerprinting.
-www-client/nyxt 3.11.4 3.11.5 3.11.6 3.11.7 3.11.8 9999: Nyxt - the hacker's power-browser
+www-client/nyxt 3.11.5 3.11.6 3.11.7 3.11.8 9999: Nyxt - the hacker's power-browser
 www-client/vimb 3.6.0 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
 www-client/yandex-browser 24.6.1.852_p1: The web browser from Yandex
 www-misc/dufs 0.40.0: Dufs is a distinctive utility file server
@@ -1758,7 +1754,7 @@ x11-misc/xscreensaver-anclock 2.2.1: Analog clock hack for the xscreensaver prog
 x11-misc/xsecurelock 1.9.0: X11 screen lock utility with security in mind
 x11-plugins/purple-mm-sms 0.1.7: Purple SMS plugin using ModemManager
 x11-terms/dmd5620 2.1.0: GTK+ 3.0 implementation of an AT&T / Teletype DMD 5620 emulator.
-x11-terms/rio 0.1.6: A hardware-accelerated GPU terminal emulator powered by WebGPU
+x11-terms/rio 0.1.7: A hardware-accelerated GPU terminal emulator powered by WebGPU
 x11-terms/tabby-bin 1.0.189: A terminal for a more modern age
 x11-terms/tym 3.5.1: Lua-configurable terminal emulator
 x11-themes/adw-gtk3 5.2 5.3: The theme from libadwaita ported to GTK-3
