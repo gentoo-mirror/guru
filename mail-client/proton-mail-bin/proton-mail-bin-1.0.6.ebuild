@@ -5,20 +5,40 @@ EAPI=8
 
 inherit rpm xdg-utils
 
+MY_PN="${PN%-bin}"
+
 DESCRIPTION="Beta Client for Proton Mail"
 HOMEPAGE="https://proton.me/mail"
-SRC_URI="https://proton.me/download/mail/linux/ProtonMail-desktop-beta.rpm -> ${P}.rpm"
-
+SRC_URI="https://github.com/ProtonMail/inbox-desktop/releases/download/${PV}/${MY_PN}-${PV}-1.x86_64.rpm"
 S="${WORKDIR}"
 
-LICENSE="freedist"
+# https://github.com/NixOS/nixpkgs/pull/296127#discussion_r1528184212
+LICENSE="GPL-3+"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64"
 
 RDEPEND="
+	app-accessibility/at-spi2-core:2
+	dev-libs/expat
+	dev-libs/glib:2
+	dev-libs/nspr
+	dev-libs/nss
+	media-libs/alsa-lib
+	media-libs/mesa
+	net-print/cups
+	sys-apps/dbus
+	x11-libs/cairo
+	x11-libs/gtk+:3
+	x11-libs/libdrm
 	x11-libs/libX11
+	x11-libs/libXcomposite
+	x11-libs/libXdamage
 	x11-libs/libXext
+	x11-libs/libXfixes
+	x11-libs/libXrandr
 	x11-libs/libxcb
+	x11-libs/libxkbcommon
+	x11-libs/pango
 "
 
 QA_PREBUILT="opt/proton-mail/*"
