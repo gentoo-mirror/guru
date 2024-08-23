@@ -1,0 +1,16 @@
+BDEPEND=python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 ) >=dev-python/gpep517-15[python_targets_python3_11(-)?,python_targets_python3_12(-)?] >=dev-python/setuptools-69.0.3[python_targets_python3_11(-)?,python_targets_python3_12(-)?] virtual/pkgconfig
+DEFINED_PHASES=compile configure install postinst postrm prepare test
+DEPEND=x11-libs/gtk+:3 dev-python/pygobject[python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/psutil[python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/i3ipc[python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/dasbus[python_targets_python3_11(-)?,python_targets_python3_12(-)?] gui-apps/nwg-icon-picker media-sound/playerctl gui-libs/gtk-layer-shell
+DESCRIPTION=GTK3-based panel for sway and Hyprland Wayland compositors
+EAPI=8
+HOMEPAGE=https://github.com/nwg-piotr/nwg-panel
+INHERIT=desktop distutils-r1 systemd xdg-utils
+IUSE=python_targets_python3_11 python_targets_python3_12
+KEYWORDS=~amd64
+LICENSE=MIT
+RDEPEND=x11-libs/gtk+:3 dev-python/pygobject[python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/psutil[python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/i3ipc[python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/dasbus[python_targets_python3_11(-)?,python_targets_python3_12(-)?] gui-apps/nwg-icon-picker media-sound/playerctl gui-libs/gtk-layer-shell python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 )
+REQUIRED_USE=|| ( python_targets_python3_11 python_targets_python3_12 )
+SLOT=0
+SRC_URI=https://github.com/nwg-piotr/nwg-panel/archive/v0.9.37.tar.gz -> nwg-panel-0.9.37.tar.gz
+_eclasses_=desktop	021728fdc1b03b36357dbc89489e0f0d	toolchain-funcs	333970c740aa7b1a92e4fcdc52f612bd	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	e503ea5acc20410237ba33ec3f7c857d	out-of-source-utils	1a9007554652a6e627edbccb3c25a439	multibuild	d67e78a235f541871c7dfe4cf7931489	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	6881b056477c23167d9a6b33e146374e	python-r1	c1fc393cd1e72f093b4838e29d27918c	distutils-r1	39c571155ace3dd926fe0d6440cf0a50	systemd	c8b03e8df84486aa991d4396686e8942	xdg-utils	baea6080dd821f5562d715887954c9d3
+_md5_=ca453ec91e90815283c64938b7df4a59

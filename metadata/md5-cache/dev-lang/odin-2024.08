@@ -1,0 +1,15 @@
+DEFINED_PHASES=compile install setup
+DEPEND=llvm_slot_17? ( sys-devel/clang:= sys-devel/llvm:= ) llvm_slot_18? ( sys-devel/clang:= sys-devel/llvm:= )
+DESCRIPTION=The Data-Oriented Language for Sane Software Development.
+EAPI=8
+HOMEPAGE=https://odin-lang.org/
+INHERIT=llvm-r1
+IUSE=+llvm_slot_18 llvm_slot_17
+KEYWORDS=~amd64
+LICENSE=BSD
+RDEPEND=llvm_slot_17? ( sys-devel/clang:= sys-devel/llvm:= ) llvm_slot_18? ( sys-devel/clang:= sys-devel/llvm:= )
+REQUIRED_USE=^^ ( llvm_slot_17 llvm_slot_18 )
+SLOT=0
+SRC_URI=https://github.com/odin-lang/Odin/archive/refs/tags/dev-2024-08.tar.gz
+_eclasses_=llvm-utils	e59dc622da7e7e7f16879105bed34858	llvm-r1	aee9ccb15d2aee00819d8784fa242ac3
+_md5_=134c5888a4b705de238dfc542b9aef5c

@@ -116,7 +116,7 @@ app-admin/terragrunt-bin 0.38.6 0.45.4 0.50.8: A thin wrapper for Terraform
 app-admin/vaultwarden 1.30.3 1.30.4 1.30.5 9999: Unofficial Bitwarden compatible password manager server written in Rust
 app-alternatives/phosh-keyboard 0: sm.puri.OSK0.desktop symlinks
 app-arch/fuse-archive 0.1.14: Read-only FUSE file system for mounting archives and compressed files
-app-arch/libarchive-qt 2.0.6-r1 2.0.7 9999: A Qt based archiving solution with libarchive backend
+app-arch/libarchive-qt 2.0.8: Qt based archiving solution with libarchive backend
 app-arch/libzim 9.2.1: ZIM file format: an offline storage solution for content coming from the Web
 app-arch/microtar 0.1.0: A lightweight tar library written in ANSI C
 app-arch/ouch 0.4.2 0.5.1: A cli utility for easily compressing and decompressing files and directories.
@@ -179,7 +179,7 @@ app-editors/lapce 0.3.1 0.4.0 9999: Lightning-fast and Powerful Code Editor writ
 app-editors/mined 2015.25: A powerful text editor with extensive Unicode and CJK support
 app-editors/neovide 0.12.2: Neovide: No Nonsense Neovim Gui
 app-editors/neovim-qt 0.2.17-r1 0.2.18-r1: Neovim client library and GUI, in Qt
-app-editors/pulsar-bin 1.118.0 1.119.0: A Community-led Hyper-Hackable Text Editor
+app-editors/pulsar-bin 1.118.0 1.119.0 1.120.0: A Community-led Hyper-Hackable Text Editor
 app-editors/typora-bin 1.8.10: a markdown editor,markdown reader.
 app-emacs/catppuccin-emacs 9999: Soothing pastel theme for Emacs
 app-emacs/envrc 0.11: Emacs support for direnv which operates buffer-locally
@@ -504,6 +504,7 @@ dev-lang/fbc-bootstrap 1.07.3 1.08.1: Bootstrap package for dev-lang/fbc
 dev-lang/gnu-apl 1.8: GNU interpreter for the APL programming language
 dev-lang/hare 0.24.0 0.24.2 9999: The Hare systems programming language
 dev-lang/harec 0.24.0 0.24.2 9999: The Hare compiler
+dev-lang/odin 2024.08: The Data-Oriented Language for Sane Software Development.
 dev-lang/opencilk 1.1 2.1: The OpenCilk concurrency platform for parallel programming
 dev-lang/opencilk-bin 1.1 2.1: The OpenCilk concurrency platform for parallel programming
 dev-lang/quickjs 2024.01.13-r1: Small embeddable Javascript engine
@@ -747,7 +748,7 @@ dev-python/moderngl 5.10.0: Modern OpenGL binding for python
 dev-python/moderngl-window 2.4.6: A cross platform utility library for ModernGL
 dev-python/mollie-api-python 3.6.0: Mollie API client for Python
 dev-python/moreorless 0.4.0: Wrapper to make difflib.unified_diff more fun to use
-dev-python/mpxj 13.1.0: Read/Write project management files (MPP, MSPDI, MPX, PMXML, etc)
+dev-python/mpxj 13.3.0: Read/Write project management files (MPP, MSPDI, MPX, PMXML, etc)
 dev-python/msrest 0.7.1: AutoRest swagger generator Python client runtime
 dev-python/mwclient 0.10.1: Unofficial lib for MediaWiki API
 dev-python/nkdfu 0.2: Python DFU tool for updating Nitrokeys' firmware
@@ -912,9 +913,9 @@ dev-util/dockerfile-language-server 0.12.0 0.13.0: A language server for Dockerf
 dev-util/eclipse-parallel-bin 4.28: Eclipse IDE for Scientific Computing (C, C++, Fortran)
 dev-util/exercism 3.1.0 3.2.0: Command line client for https://exercism.io
 dev-util/find-work 0.7.0 0.91.0 0.91.1 9999: Personal advice utility for Gentoo package maintainers
-dev-util/find-work-bugzilla 0.2.0: Personal advice utility for Gentoo package maintainers: Bugzilla plugin
-dev-util/find-work-pkgcheck 0.2.0: Personal advice utility for Gentoo package maintainers: pkgcheck plugin
-dev-util/find-work-repology 0.2.0: Personal advice utility for Gentoo package maintainers: Repology plugin
+dev-util/find-work-bugzilla 0.2.0 0.2.1: Personal advice utility for Gentoo package maintainers: Bugzilla plugin
+dev-util/find-work-pkgcheck 0.2.0 0.2.1: Personal advice utility for Gentoo package maintainers: pkgcheck plugin
+dev-util/find-work-repology 0.2.0 0.2.1: Personal advice utility for Gentoo package maintainers: Repology plugin
 dev-util/fnm 1.37.1: Fast and simple Node.js version manager
 dev-util/fortls 2.13.0 3.0.0 3.1.1 3.1.2: Fortran Language Server (fortls)
 dev-util/fortran-test-drive 0.4.0: The simple testing framework (for Fortran)
@@ -926,10 +927,10 @@ dev-util/gshards 0.2: Small helper tools to aid installing Crystal packages in G
 dev-util/haredo 1.0.2 9999: a simple and unix-idiomatic build automator
 dev-util/hut 0.6.0: CLI tool for sourcehut
 dev-util/insomnia-bin 2020.5.2 2023.5.8: HTTP and GraphQL client for developers
-dev-util/juliaup 1.17.1: Julia installer and version multiplexer
+dev-util/juliaup 1.17.4: Julia installer and version multiplexer
 dev-util/lemminx-bin 0.27.0 0.27.1: XML Language Server
 dev-util/libtypec-utils 0.5.2: Library to interface with USB Type-C/Power Delivery devices
-dev-util/lottieconverter 0.2 0.2-r1: Simple lottie (telegram animated sticker) converter
+dev-util/lottieconverter 0.2-r1 0.2-r2: Simple lottie (telegram animated sticker) converter
 dev-util/lua-language-server 3.9.1-r1 3.9.3 3.10.5: Lua language server
 dev-util/mh 1.0.3: Generate help for Makefile
 dev-util/mock 5.6-r1: Simple chroot build environment manager for building RPMs
@@ -946,7 +947,7 @@ dev-util/reflex 0.3.1: A small tool to watch a directory and rerun a command whe
 dev-util/rpi-imager 1.8.5: Raspberry Pi Imaging Utility
 dev-util/rust-rover 233.15026.24: A feature-rich Rust IDE with timely support by JetBrarins
 dev-util/rust-script 0.34.0: Command-line tool to run Rust scripts which can make use of crates
-dev-util/rye 0.38.0: a Hassle-Free Python Experience
+dev-util/rye 0.39.0: a Hassle-Free Python Experience
 dev-util/shellspec 0.28.1-r3 9999: A full-featured BDD unit testing framework for all POSIX shells
 dev-util/spi-tools 1.0.2: Simple command line tools to help using Linux spidev devices
 dev-util/stripe-cli 9999: A command-line tool for Stripe
@@ -1107,19 +1108,20 @@ gui-apps/mpvpaper 1.7 9999: A video wallpaper program for wlroots based wayland 
 gui-apps/nwg 0: meta package package for nwg-shell
 gui-apps/nwg-bar 0.1.5 0.1.6: GTK3-based button bar for wlroots-based compositors
 gui-apps/nwg-displays 0.3.19 0.3.20: Output management utility for sway and Hyprland
-gui-apps/nwg-dock 0.3.6 0.3.9: GTK3-based dock for sway
-gui-apps/nwg-dock-hyprland 0.1.8 0.1.9: GTK3-based dock for Hyprland
+gui-apps/nwg-dock 0.3.6 0.3.9 0.4.1: GTK3-based dock for sway
+gui-apps/nwg-dock-hyprland 0.1.8 0.1.9 0.2.2: GTK3-based dock for Hyprland
 gui-apps/nwg-drawer 0.4.8 0.4.9: Application drawer for wlroots-based Wayland compositors
 gui-apps/nwg-icon-picker 0.1.1 9999: GTK icon chooser with a text search option
 gui-apps/nwg-launchers 0.5.0 0.6.3 0.7.1.1 9999: GTK+ launchers for sway, i3 and some other WMs
 gui-apps/nwg-menu 0.1.2 0.1.3: enuStart plugin to nwg-panel, also capable of working standalone
-gui-apps/nwg-panel 0.9.32 0.9.33 0.9.34 9999: GTK3-based panel for sway and Hyprland Wayland compositors
-gui-apps/nwg-shell 0.5.35 0.5.36: libraries an common functions for the nwg-shell project
-gui-apps/nwg-shell-config 0.5.41 0.5.42: nwg-shell configuration utility
+gui-apps/nwg-panel 0.9.32 0.9.33 0.9.34 0.9.37 9999: GTK3-based panel for sway and Hyprland Wayland compositors
+gui-apps/nwg-shell 0.5.35 0.5.36 0.5.38: libraries an common functions for the nwg-shell project
+gui-apps/nwg-shell-config 0.5.41 0.5.42 0.5.46: nwg-shell configuration utility
 gui-apps/openrefine 3.7.9: Wikidata batch editor, Wikimedia Commons mass upload tool
 gui-apps/organicmaps 9999: Offline maps and navigation using OpenStreetMap data
 gui-apps/packettracer 8.2.0: Cisco's packet tracer
 gui-apps/paperde 0.1.1_p20210426 9999: Simple, sleek QT based DE for wayland using wayfire
+gui-apps/pop-launcher 1.2.1: Modular IPC-based desktop launcher service
 gui-apps/riverguile 0.1.0-r1 9999: River layout generator powered by guile scheme
 gui-apps/rofi-wayland 1.7.5 1.7.5-r1: A window switcher, run dialog and dmenu replacement
 gui-apps/satty 0.12.0 9999: A screenshot annotation tool inspired by Swappy and Flameshot.
@@ -1368,6 +1370,7 @@ net-dialup/tcpser 1.1.4: Hayes Smartmodem emulator over TCP/IP
 net-dialup/tio 3.6: Simple TTY terminal application
 net-dns/AdGuardHome 0.107.49 0.107.50 0.107.51: Network-wide ads & trackers blocking DNS server like Pi-Hole with web ui
 net-dns/blocky 0.22 0.23 0.24 9999: Fast and lightweight DNS proxy as ad-blocker with many features written in Go
+net-dns/noip-duc 3.1.1: No-IP Dynamic Update Client (https://www.noip.com)
 net-fs/httpdirfs 1.2.0: Filesystem to mount HTTP directory listings, with a permanent cache
 net-fs/hubicfuse 3.0.1: Support for mounting HubiC drive in GNU/Linux
 net-im/Quaternion 0.0.95.1 0.0.96_beta4: A Qt-based IM client for Matrix
@@ -1485,7 +1488,7 @@ net-nntp/inn 2.7.1: InterNetNews - the Internet meets Netnews
 net-nntp/pan 0.158 0.158-r1 0.159 0.159-r1: A newsreader for GNOME
 net-p2p/bisq-bin 1.9.14-r1: The decentralized bitcoin exchange (non-atomic, with arbitration)
 net-p2p/dogecoin-qt 1.14.7 1.14.8 9999: Dogecoin Core Qt for desktop. Downloaded blockchain is under 2.2GB. Much secure.
-net-p2p/feather 2.6.7-r1 9999: A free, open-source Monero wallet
+net-p2p/feather 2.6.7-r1 2.6.8 9999: A free, open-source Monero wallet
 net-p2p/fragments 3.0.0 3.0.1: Fragments is an easy to use BitTorrent client
 net-p2p/gridcoin 5.4.8.0 5.4.8.0_p1: Proof-of-Stake based cryptocurrency that rewards BOINC computation
 net-p2p/monero 0.17.3.2 0.18.3.1 0.18.3.3-r1 0.18.3.3-r2 0.18.3.4 9999: The secure, private, untraceable cryptocurrency
@@ -1506,10 +1509,10 @@ net-vpn/candy 5.10.3: A reliable, low-latency, and anti-censorship virtual priva
 net-vpn/cloudflare-warp 2024.2.62-r2 2024.4.133-r1: Cloudflare Warp Client
 net-vpn/fastd 22: A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
 net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that require SAML
-net-vpn/mullvadvpn-app 2024.4: Tool used to manage daemon setup
+net-vpn/mullvadvpn-app 2024.4 2024.5_beta1: Tool used to manage daemon setup
 net-wireless/airspyhf 1.6.8: User mode driver for Airspy HF+
 net-wireless/bluetuith 0.1.9 0.2.0 0.2.1 0.2.2 9999: A TUI bluetooth manager for Linux written in Go
-net-wireless/btscreenlocker 1.6.3 1.6.5 1.7.0-r1 1.8.0: Daemon to lock your screen when Bluetooth trusted devices go away.
+net-wireless/btscreenlocker 1.6.3 1.6.5 1.7.0-r1 1.8.1: Daemon to lock your screen when Bluetooth trusted devices go away.
 net-wireless/rtl8192eu 0_pre20240518: Realtek 8192EU driver module for Linux kernel
 net-wireless/rtl8723bu 9999: Driver for the rtl8723 wireless chipset
 net-wireless/rtl8821ce 0_pre20240326: Realtek RTL8821CE Driver module for Linux kernel
@@ -1517,11 +1520,11 @@ net-wireless/rtl8821cu 0_pre20240503: Realtek 8821CU/RTL8811CU module for Linux 
 net-wireless/sdrpp 1.2.0_pre20240607: Cross-Platform SDR Software
 phosh-base/phosh 0.40.0 0.41.0: Meta package for Phosh, merge this package to install
 phosh-base/phosh-mobile-settings 0.38.0 0.40.0 0.41.0: Mobile Settings App for phosh and related components
-phosh-base/phosh-osk-stub 0.38.0 0.41.0: On-screen keyboard stub
+phosh-base/phosh-osk-stub 0.38.0 0.41.0 0.41.1: On-screen keyboard stub
 phosh-base/phosh-shell 0.38.0 0.40.0 0.41.0: Pure Wayland shell for mobile devices
 phosh-base/phosh-tour 0.38.0 0.39.0 0.41.0: Introduction to phosh on smartphones
 phosh-base/squeekboard 1.17.1: Virtual keyboard supporting Wayland, built primarily for the Librem 5 phone
-sci-biology/cmdock 0.2.0-r2: Program for docking ligands to proteins and nucleic acids
+sci-biology/cmdock 0.2.0-r2 0.2.0-r3: Program for docking ligands to proteins and nucleic acids
 sci-biology/cytoscape-bin 3.10.2: A visualization platform for molecular interaction networks
 sci-biology/geneathome 1.10-r5: BOINC application for expanding Gene Regulatory Networks (GRN)
 sci-biology/jalview-bin 2.11.3.3: Editor of multiple sequence alignments.
@@ -1682,7 +1685,7 @@ sys-process/xe 1.0-r1: Simple xargs and apply replacement with sane defaults
 virtual/crystal-db 0.13: Virtual for Crystal database drivers
 www-apps/castopod 1.4.3 1.4.5: Open-source hosting platform made for podcasters
 www-apps/code-server-bin 4.18.0 4.19.1 4.90.3: VS Code in the browser (binary version with unbundled node and ripgrep)
-www-apps/forgejo 1.21.11.1 7.0.4 7.0.5: A self-hosted lightweight software forge
+www-apps/forgejo 1.21.11.1 7.0.5 7.0.7: A self-hosted lightweight software forge
 www-apps/freshrss 1.23.1 1.24.1: A free, self-hostable news aggregator
 www-apps/gotosocial 0.9.0 0.10.0: Fast, fun, ActivityPub server, powered by Go
 www-apps/honk 0.9.8 0.9.91: ActivityPub server with minimal setup and support costs
@@ -1767,7 +1770,7 @@ x11-themes/breezex-xcursors 2.0.0: Cursor set highly inspired on KDE Breeze with
 x11-themes/candy-icons 9999: 🍭 Sweet gradient icons
 x11-themes/catppuccin-btop 1.0.0: Soothing pastel theme for btop
 x11-themes/catppuccin-cursors 0.3.0 0.3.1: Soothing pastel mouse cursors
-x11-themes/catppuccin-gtk 1.0.2 1.0.3: Soothing pastel theme for GTK
+x11-themes/catppuccin-gtk 0.7.5 1.0.3: Soothing pastel theme for GTK
 x11-themes/catppuccin-kvantum 0_pre20220927 9999: Soothing pastel theme for Kvantum
 x11-themes/catppuccin-neovim 1.7.0: Soothing pastel theme for Neovim
 x11-themes/flat-remix-gtk 9999: Black flat with a colorful palette, some shadows, highlights, gradients
@@ -1780,6 +1783,7 @@ x11-themes/obsidian-icon-theme 4.15-r1 9999: Obsidian Icon Theme is intuitive Fa
 x11-themes/obsidian2-gtk-theme 2.22 9999: Obsidian Gnome Theme, based upon Adwaita-Maia dark skin
 x11-themes/papirus-claws-mail-theme 0_pre20181023 0_pre20201019: Papirus icon theme for Claws Mail
 x11-themes/phosh-wallpapers 0.40.0 0.41.0: Phosh wallpapers and other artwork
+x11-themes/pop-icon-theme 3.5.0: System76 Pop icon theme for Linux
 x11-themes/qogir-icon-theme 2020.11.22: A flat colorful design icon theme for linux desktops
 x11-themes/razor-sharp-gtk 9999: GTK-3/4 theme: very dark background, red font
 x11-themes/solarized-black 1.0: GTK theme Solarized, multiple colors

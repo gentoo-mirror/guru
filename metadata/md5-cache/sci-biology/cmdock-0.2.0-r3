@@ -1,0 +1,16 @@
+BDEPEND=apidoc? ( app-text/doxygen dev-texlive/texlive-fontutils ) doc? ( || ( ( dev-lang/python:3.12 dev-python/insipid-sphinx-theme[python_targets_python3_12(-)] dev-python/sphinx[python_targets_python3_12(-)] ) ( dev-lang/python:3.11 dev-python/insipid-sphinx-theme[python_targets_python3_11(-)] dev-python/sphinx[python_targets_python3_11(-)] ) ( dev-lang/python:3.10 dev-python/insipid-sphinx-theme[python_targets_python3_10(-)] dev-python/sphinx[python_targets_python3_10(-)] ) ) ) test? ( || ( dev-lang/python:3.12 dev-lang/python:3.11 dev-lang/python:3.10 ) ) >=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array
+DEFINED_PHASES=compile configure install postinst postrm prepare setup test
+DEPEND=dev-cpp/eigen:3 >=dev-cpp/indicators-2.3-r1 >=dev-cpp/pcg-cpp-0.98.1_p20210406-r1 >=dev-libs/cxxopts-3 boinc? ( acct-user/boinc )
+DESCRIPTION=Program for docking ligands to proteins and nucleic acids
+EAPI=8
+HOMEPAGE=https://gitlab.com/Jukic/cmdock
+INHERIT=boinc-app flag-o-matic meson optfeature python-any-r1
+IUSE=apidoc cpu_flags_x86_sse2 doc test boinc
+KEYWORDS=~amd64
+LICENSE=LGPL-3 ZLIB
+RDEPEND=boinc? ( sci-misc/boinc-wrapper acct-user/boinc )
+RESTRICT=test
+SLOT=0/0.2.0
+SRC_URI=https://gitlab.com/Jukic/cmdock/-/archive/v0.2.0/cmdock-v0.2.0.tar.bz2
+_eclasses_=boinc-app	0d7f72b88d91948c19dbbf7a8ca3833a	toolchain-funcs	333970c740aa7b1a92e4fcdc52f612bd	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	e503ea5acc20410237ba33ec3f7c857d	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	6881b056477c23167d9a6b33e146374e	meson	99466844dd8d4fcfb07578a76f5a9922	optfeature	222cb475c5a4f7ae7cfb0bf510a6fe54	python-any-r1	5af215c3da6aef17a2d5e02968df1d5a
+_md5_=8a9b6795e91fd322d0f85a8cc5f0c7a4
