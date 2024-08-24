@@ -1,0 +1,14 @@
+BDEPEND=dev-build/libtool virtual/pkgconfig
+DEFINED_PHASES=install postinst
+DEPEND=!!net-misc/frr acct-group/_bgpd acct-user/_bgpd dev-libs/libevent net-libs/libmnl
+DESCRIPTION=OpenBGPD is a free implementation of BGPv4
+EAPI=8
+HOMEPAGE=http://www.openbgpd.org/index.html
+INHERIT=systemd
+KEYWORDS=~amd64 ~x86
+LICENSE=ISC
+RDEPEND=!!net-misc/frr acct-group/_bgpd acct-user/_bgpd dev-libs/libevent net-libs/libmnl
+SLOT=0
+SRC_URI=mirror://openbsd/OpenBGPD/openbgpd-8.5.tar.gz
+_eclasses_=toolchain-funcs	333970c740aa7b1a92e4fcdc52f612bd	multilib	c19072c3cd7ac5cb21de013f7e9832e0	systemd	c8b03e8df84486aa991d4396686e8942
+_md5_=468d820ee512fd3e0205015f65e1cc5a
