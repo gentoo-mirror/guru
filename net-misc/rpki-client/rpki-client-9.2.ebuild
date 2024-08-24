@@ -1,7 +1,7 @@
-# Copyright 2020-2021 Gentoo Authors
+# Copyright 2020-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 MY_PV="${PV/_p/p}"
 MY_P="${PN}-${MY_PV}"
@@ -20,8 +20,10 @@ KEYWORDS="~amd64 ~x86"
 DEPEND="
 	acct-group/_rpki-client
 	acct-user/_rpki-client
+	dev-libs/expat
 	dev-libs/libretls
 	dev-libs/openssl[rfc3779]
+	sys-libs/zlib
 "
 RDEPEND="${DEPEND}"
 BDEPEND="
@@ -42,6 +44,7 @@ src_install() {
 
 	insinto /etc/rpki
 	doins *.tal
+	doins *.constraints
 	keepdir "/var/db/${PN}/"
 	fowners -R _rpki-client "/var/db/${PN}/"
 

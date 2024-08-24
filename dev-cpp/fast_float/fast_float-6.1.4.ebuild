@@ -6,7 +6,7 @@ EAPI=8
 inherit cmake
 
 DESCRIPTION="Fast and exact implementation of the C++ from_chars functions for number types"
-HOMEPAGE="https://github.com/fastfloat/fast_float.git"
+HOMEPAGE="https://github.com/fastfloat/fast_float"
 SRC_URI="https://github.com/fastfloat/fast_float/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="|| ( Apache-2.0 Boost-1.0 MIT )"

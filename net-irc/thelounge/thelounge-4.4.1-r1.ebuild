@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{10..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 
 inherit python-any-r1 readme.gentoo-r1 systemd tmpfiles
 
@@ -25,13 +25,13 @@ IUSE="+sqlite"
 RDEPEND="
 	acct-user/${PN}
 	acct-group/${PN}
-	>=net-libs/nodejs-18
+	>=net-libs/nodejs-16
 	sqlite? ( dev-db/sqlite:3= )
 "
 DEPEND="${RDEPEND}"
 BDEPEND="
 	sqlite? ( ${PYTHON_DEPS} )
-	>=net-libs/nodejs-18[npm]
+	>=net-libs/nodejs-16[npm]
 	sys-apps/yarn
 "
 
