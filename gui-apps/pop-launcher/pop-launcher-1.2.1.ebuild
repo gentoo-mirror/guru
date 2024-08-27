@@ -239,7 +239,11 @@ DEPENDS="
 	media-libs/libglvnd
 	x11-libs/libxkbcommon
 "
-RDEPEND="${DEPEND}"
+RDEPEND="
+	${DEPEND}
+	sci-libs/libqalculate
+	sys-apps/fd
+"
 BDEPEND="
 	dev-build/just
 	virtual/pkgconfig
@@ -258,4 +262,12 @@ src_install() {
 	just rootdir="${D}" target="../$(cargo_target_dir)" install || die
 
 	einstalldocs
+}
+
+src_test() {
+	local mytestargs=(
+		# The following tests require network access.
+		--skip web::test
+	)
+	cargo_src_test -- "${mytestargs[@]}"
 }
