@@ -1,3 +1,4 @@
+
 # Copyright 2023-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
@@ -7,7 +8,7 @@ inherit meson xdg
 
 DESCRIPTION="A lightweight image viewer for Wayland display servers"
 HOMEPAGE="https://github.com/artemsen/swayimg"
-SRC_URI="https://github.com/artemsen/swayimg/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/artemsen/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"

@@ -4,7 +4,7 @@
 EAPI=8
 
 MY_PN="${PN%-bin}"
-MY_P="${MY_PN}-${PV}-fedora-29-x86_64"
+MY_P="${MY_PN}-${PV}-ubuntu-22.04-jammy-x86_64"
 
 DESCRIPTION="Terminal based Mattermost client"
 HOMEPAGE="https://github.com/matterhorn-chat/matterhorn"
