@@ -1,15 +1,14 @@
 BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.20.5
 DEFINED_PHASES=compile configure install prepare test
-DEPEND=test? ( dev-libs/boost )
-DESCRIPTION=TOML for Modern C++
+DEPEND=dev-libs/libmodbus
+DESCRIPTION=command line utility to communicate with ModBus slave (RTU or TCP)
 EAPI=8
-HOMEPAGE=https://github.com/ToruNiina/toml11
+HOMEPAGE=https://github.com/epsilonrt/mbpoll
 INHERIT=cmake
-IUSE=test
 KEYWORDS=~amd64
-LICENSE=MIT
-RESTRICT=!test? ( test )
+LICENSE=GPL-3
+RDEPEND=dev-libs/libmodbus
 SLOT=0
-SRC_URI=https://github.com/ToruNiina/toml11/archive/refs/tags/v3.8.1.tar.gz -> toml11-3.8.1.tar.gz https://github.com/toml-lang/toml/archive/refs/tags/v0.5.0.tar.gz -> toml-0.5.0.tar.gz
+SRC_URI=https://github.com/epsilonrt/mbpoll/archive/refs/tags/v1.5.2.tar.gz -> mbpoll-1.5.2.tar.gz
 _eclasses_=toolchain-funcs	333970c740aa7b1a92e4fcdc52f612bd	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	e503ea5acc20410237ba33ec3f7c857d	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	10a50dfaf728b802fcfd37f8d0da9056
-_md5_=f0918e36f5d7447e12667b4ae326f117
+_md5_=5a9a90385315758a73a1db2e404a9021
