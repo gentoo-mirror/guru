@@ -171,13 +171,13 @@ app-doc/geeknote 3.0.5 9999: Evernote CLI: CRUD for notes in cloud, in markdown
 app-doc/openbsd-manpages 7.5: OpenBSD manual pages
 app-doc/stdman 2022.07.30 2024.07.05 9999: Formatted C++ stdlib man pages (cppreference)
 app-doc/sway-wiki 9999: Wiki of gui-wm/sway, rendered to HTML using kramdown-parser-gfm
-app-editors/amp 0.7.0: A complete text editor for your terminal.
+app-editors/amp 0.7.0-r1: A complete text editor for your terminal.
 app-editors/emacs-lsp-booster 0.2.1: Emacs LSP performance booster
 app-editors/imhex 1.35.4: A hex editor for reverse engineers, programmers, and eyesight
 app-editors/kakoune-lsp 17.0.1: Kakoune Language Server Protocol Client
 app-editors/kitscenarist 0.7.2_rc9: Simple and powerful application for creating screenplays.
 app-editors/l3afpad 0.8.18.1.11: Simple GTK3 text editor (successor to leafpad)
-app-editors/lapce 0.3.1 0.4.0 9999: Lightning-fast and Powerful Code Editor written in Rust
+app-editors/lapce 0.4.2 9999: Lightning-fast and Powerful Code Editor written in Rust
 app-editors/mined 2015.25: A powerful text editor with extensive Unicode and CJK support
 app-editors/neovide 0.12.2: Neovide: No Nonsense Neovim Gui
 app-editors/neovim-qt 0.2.17-r1 0.2.18-r1: Neovim client library and GUI, in Qt
@@ -234,7 +234,7 @@ app-misc/doublecmd-bin 1.0.11 1.1.11_beta 1.1.17 9999: Double Commander: file ma
 app-misc/dpscreenocr 1.4.0: Program to recognize text on screen
 app-misc/dragon 1.1.1 1.1.1_p20210820 1.2.0: Simple drag-and-drop source/sink for X and Wayland
 app-misc/electricsheep 3.0.2_p20191005 3.0.2_p20191005-r1: Realize the collective dream of sleeping computers from all over the internet
-app-misc/far2l 2.5.3_beta 9999: Linux port of FAR Manager v2
+app-misc/far2l 2.5.3_beta 2.6.3_beta 9999: Linux port of FAR Manager v2
 app-misc/fetsh 1.8 1.9 9999: A fetch written in POSIX shell without any external commands
 app-misc/fff 2.2: A simple file manager written in bash
 app-misc/gentodo 0.2.1 1.1.0 1.1.1 9999: Todo program to help enhance your Gentoo workflow
@@ -290,7 +290,7 @@ app-misc/wego 2.2: Wego is a weather client for the terminal
 app-misc/x86-64-level 0.2.2 9999: Get the x86-64 Microarchitecture Level on the Current Machine
 app-misc/xplr 0.21.3: A hackable, minimal, fast TUI file explorer
 app-misc/yaf 0.0.3: Yet another system fetch that is minimal and customizable.
-app-misc/yazi 0.2.2 0.2.3 0.2.4 0.2.5-r1: Blazing fast terminal file manager written in Rust, based on async I/O.
+app-misc/yazi 0.2.5-r1: Blazing fast terminal file manager written in Rust, based on async I/O.
 app-misc/zcock 0.2.0 0.2.1: Print an emoji according to traditional chinese calendar and more
 app-mobilephone/flashlight 0.1.1-r2: It's a flashlight, what do you expect?
 app-mobilephone/mobile-config-firefox 2.1.0: Mobile and privacy friendly configuration for Firefox
@@ -389,7 +389,7 @@ dev-build/FoBiS 3.0.5-r1: FoBiS.py, a Fortran Building System for poor men
 dev-build/cargo-make 0.37.15: Rust task runner and build tool
 dev-build/fpm 0.9.0 0.10.0: Fortran Package Manager (fpm)
 dev-build/fypp 3.1 3.2: Fypp - Python powered Fortran preprocessor
-dev-build/just 1.31.0 1.32.0 1.34.0: Just a command runner (with syntax inspired by 'make')
+dev-build/just 1.34.0 1.35.0: Just a command runner (with syntax inspired by 'make')
 dev-build/pdpmake 2.0.0: Public domain POSIX make
 dev-build/qtilitools 0.1.2: Scripts/commands used in the Qtilities organization
 dev-build/xmake 2.9.3 9999: A cross-platform build utility based on Lua
@@ -810,10 +810,13 @@ dev-python/pytest-relaxed 2.0.2: Relaxed test discovery for pytest
 dev-python/pytest-steps 1.8.0: Create step-wise / incremental tests in pytest
 dev-python/pytest-syrupy 4.0.1: The sweeter pytest snapshot plugin
 dev-python/pytest-vcr 1.0.2: Plugin for managing VCR.py cassettes
+dev-python/python-barbicanclient 7.0.0: Client library for Barbican API.
 dev-python/python-fire 0.6.0: Library for automatically generating command line interfaces from Python objects
 dev-python/python-http-client 3.3.5-r1: HTTP REST client, simplified for Python
 dev-python/python-lsp-isort 0.1: isort plugin for the Python LSP Server
 dev-python/python-lsp-mypy 0.6.8: Mypy plugin for the Python LSP Server
+dev-python/python-magnumclient 4.6.0: A client for the OpenStack Magnum API
+dev-python/python-octaviaclient 3.7.0: A client for the OpenStack Octavia API
 dev-python/python-olm 3.2.16: Python bindings for dev-libs/olm
 dev-python/python-pidfile 3.0.0-r1 3.1.1: PIDFile context processor. Supported py2 and py3
 dev-python/python-socketio 5.11.1 5.11.3: Python implementation of the Socket.IO realtime server.
@@ -1058,7 +1061,7 @@ gnome-extra/yad 13.0 14.1 9999: Display GTK+ dialog boxes from command line or s
 gui-apps/1password 8.10.28: The world’s most-loved password manager
 gui-apps/ReGreet 0.1.1-r7 9999: A clean and customizable GTK-based greetd greeter written in Rust
 gui-apps/aylurs-gtk-shell 1.8.2-r1: Aylurs's Gtk Shell (AGS), An eww inspired gtk widget system.
-gui-apps/azote 1.12.6 9999: wallpaper manager for wlroots compositors
+gui-apps/azote 1.13.0 9999: wallpaper manager for wlroots compositors
 gui-apps/clipman 1.6.2 1.6.3 1.6.4: A basic clipboard manager for Wayland.
 gui-apps/coreaction 4.5.0 9999: A side bar for showing widgets for C Suite
 gui-apps/coreapps-meta 4.5.0 9999: Meta package for coreapps
@@ -1102,7 +1105,7 @@ gui-apps/hyprshot 1.2.3 1.3.0 9999: Hyprshot is an utility to easily take screen
 gui-apps/hyprswitch 1.3.1: A CLI/GUI that allows switching between windows in Hyprland
 gui-apps/intiface-central-bin 2.5.7 2.6.0: Buttplug frontend application
 gui-apps/lan-mouse 0.7.3: Software KVM Switch / mouse & keyboard sharing software for Local Area Networks
-gui-apps/lemurs 0.3.1 0.3.1-r1 0.3.2: A TUI Display/Login Manager
+gui-apps/lemurs 0.3.2: A TUI Display/Login Manager
 gui-apps/lswt 1.0.4-r1 2.0.0 9999: List Wayland toplevels
 gui-apps/meteo-qt 3.3 3.4: A system tray application for the weather status
 gui-apps/mpvpaper 1.7 9999: A video wallpaper program for wlroots based wayland compositors
@@ -1403,7 +1406,7 @@ net-im/mautrix-meta 0.3.0 0.3.1: A Matrix-Facebook puppeting bridge
 net-im/mautrix-signal 0.6.0 0.6.1 0.6.2: A Matrix-Signal puppeting bridge
 net-im/mautrix-slack 0_pre20230925 0_pre20240215: A Matrix-Slack puppeting bridge based on slack-go
 net-im/mautrix-telegram 0.15.1 0.15.2: A Matrix-Telegram Messenger puppeting bridge
-net-im/mautrix-whatsapp 0.10.0 0.10.7: A Matrix-WhatsApp puppeting bridge
+net-im/mautrix-whatsapp 0.10.9: A Matrix-WhatsApp puppeting bridge
 net-im/nheko 0.11.3-r2 0.12.0-r1 9999: Native desktop client for Matrix using Qt
 net-im/pop 8.0.21: Screen sharing with multiplayer control, with voice
 net-im/ruqola 1.3.1: Rocket.Chat client for the KDE desktop
@@ -1487,7 +1490,7 @@ net-news/gfeeds 2.2.0-r1 2.2.0-r2 2.2.0-r3: An RSS/Atom feed reader for GNOME.
 net-news/newsflash 3.1.6: Feed Reader written in GTK
 net-news/newsraft 0.25 9999: A lightweight feed reader with ncurses user interface inspired by Newsboat.
 net-nntp/inn 2.7.1: InterNetNews - the Internet meets Netnews
-net-nntp/pan 0.158 0.158-r1 0.159 0.159-r1: A newsreader for GNOME
+net-nntp/pan 0.159-r1 0.160: A newsreader for GNOME
 net-p2p/bisq-bin 1.9.14-r1: The decentralized bitcoin exchange (non-atomic, with arbitration)
 net-p2p/dogecoin-qt 1.14.7 1.14.8 9999: Dogecoin Core Qt for desktop. Downloaded blockchain is under 2.2GB. Much secure.
 net-p2p/feather 2.6.7-r1 2.6.8 9999: A free, open-source Monero wallet
@@ -1514,6 +1517,7 @@ net-vpn/mullvadvpn-app 2024.4 2024.5_beta1: Tool used to manage daemon setup
 net-wireless/airspyhf 1.6.8: User mode driver for Airspy HF+
 net-wireless/bluetuith 0.1.9 0.2.0 0.2.1 0.2.2 9999: A TUI bluetooth manager for Linux written in Go
 net-wireless/btscreenlocker 1.6.3 1.6.5 1.7.0-r1 1.8.1: Daemon to lock your screen when Bluetooth trusted devices go away.
+net-wireless/gr-lora_sdr 9999: GNU Radio SRT implementation of a LoRa transceiver.
 net-wireless/rtl8192eu 0_pre20240518: Realtek 8192EU driver module for Linux kernel
 net-wireless/rtl8723bu 9999: Driver for the rtl8723 wireless chipset
 net-wireless/rtl8821ce 0_pre20240326: Realtek RTL8821CE Driver module for Linux kernel
@@ -1624,7 +1628,7 @@ sys-block/partclone 0.3.20: Partition cloning tool
 sys-boot/customrescuecd-x86-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/customrescuecd-x86_64-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/grml-rescueboot 0.6.1: grub2 script to add ISO images to the grub2 boot menu
-sys-boot/limine 7.0.0 7.0.3 7.0.5 7.3.0 7.5.0 7.9.2 8.0.5: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
+sys-boot/limine 7.0.0 7.0.3 7.0.5 7.3.0 7.5.0 7.9.2 8.0.5 8.0.6: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
 sys-boot/mkusb 23.2.0: CLI and GUI for creating bootable live USB, with optional persistent storage
 sys-boot/ventoy-bin 1.0.97 1.0.98: Creator of bootable USBs, with ability to copy ISOs, persistence storage
 sys-boot/woeusb-ng 0.2.10 0.2.12: Create Windows installer USB from ISO (rewrite of WoeUSB)
@@ -1674,7 +1678,7 @@ sys-power/fan2go 0.8.1: A simple daemon providing dynamic fan speed control
 sys-power/gtherm 0.0.3: A simple daemon to monitor thermal zones and cooling devices
 sys-power/linux-tools-power-x86 6.1 6.6: Linux x86 CPU power tools
 sys-power/nvidia-exec 0.2.7-r1 9999: GPU switching without login out for Nvidia Optimus laptops under Linux
-sys-power/system76-power 9999: System76 Power Management Tool for systemd
+sys-power/system76-power 1.2.0 1.2.1 9999: System76 Power Management Tool for systemd
 sys-process/forkstat 0.03.02-r2: Logs process fork(), exec() and exit() activity
 sys-process/gotop 4.2.0: A terminal based graphical activity monitor inspired by gtop and vtop
 sys-process/nq 0.4: Unix command line queue utility
@@ -1735,6 +1739,7 @@ x11-misc/aerial-sddm-theme 0_pre20191018-r1 9999: SDDM theme with Apple TV Aeria
 x11-misc/autotiling 1.9.2 1.9.3: Script for sway and i3 to automatically switch the window split orientation
 x11-misc/betterlockscreen 4.3.0: sweet looking lockscreen for linux system
 x11-misc/betterlockscreen_rapid 0.0.0_pre20210701 0.0.0_pre20210708: A rapid and good-looking screen locker
+x11-misc/dotool 1.5: Command to simulate input anywhere
 x11-misc/gobble 1.3: Hide current window before launching external program, unhide after quitting
 x11-misc/greenclip-bin 4.2: Simple clipboard manager to be integrated with rofi
 x11-misc/gromit-mpx 1.6.0-r1 9999: Gromit-MPX is a multi-pointer GTK3 port of the Gromit desktop annotation tool
@@ -1745,7 +1750,7 @@ x11-misc/i3lock-fancy-rapid 0.0.0_pre20201109-r1 0.0.0_pre20210421: A faster imp
 x11-misc/i3status-rust 0.33.1: A feature-rich and resource-friendly replacement for i3status, written in Rust.
 x11-misc/input-leap 9999: Share a mouse and keyboard between computers (fork of Barrier)
 x11-misc/ksnip 1.10.1: Ksnip is a Qt based cross-platform screenshot tool
-x11-misc/leftwm-theme 0.1.2_rc1: A theme mangager for LeftWM
+x11-misc/leftwm-theme 0.1.2: Theme mangager for LeftWM
 x11-misc/ly 1.0.2 9999: Ly - a TUI display manager (live ebuild)
 x11-misc/picom-jonaburg 9999: A lightweight compositor for X11 (previously a compton fork)
 x11-misc/pywal 3.3.0: Tool that generates color schemes from images

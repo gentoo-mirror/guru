@@ -1,0 +1,16 @@
+BDEPEND=man? ( app-text/scdoc ) >=dev-lang/go-1.20:= app-arch/unzip virtual/pkgconfig virtual/pkgconfig
+DEFINED_PHASES=compile install postinst postrm unpack
+DEPEND=dev-libs/libinput
+DESCRIPTION=Command to simulate input anywhere
+EAPI=8
+HOMEPAGE=https://git.sr.ht/~geb/dotool
+INHERIT=go-module systemd udev
+IUSE=+man
+KEYWORDS=~amd64
+LICENSE=AGPL-3
+RDEPEND=dev-libs/libinput
+RESTRICT=strip
+SLOT=0
+SRC_URI=https://git.sr.ht/~geb/dotool/archive/945a7daedeef076db91261266b802498096f6f91.tar.gz -> dotool-1.5.tar.gz https://gitlab.com/fictitiousexistence-public/gentoo-gofiles/-/raw/main/dotool/dotool-1.5-deps.tar.xz
+_eclasses_=multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	toolchain-funcs	333970c740aa7b1a92e4fcdc52f612bd	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	e503ea5acc20410237ba33ec3f7c857d	go-env	90efbc8636d2f02d9654183330e84cf7	go-module	83fd3ed1657cfc316c93d6a37018290d	systemd	c8b03e8df84486aa991d4396686e8942	udev	eec0bbab06977f1cfc5597269c1fa152
+_md5_=65e30a92e9715964de5cdd1af9ee711c
