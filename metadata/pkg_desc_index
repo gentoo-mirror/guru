@@ -173,7 +173,7 @@ app-doc/stdman 2022.07.30 2024.07.05 9999: Formatted C++ stdlib man pages (cppre
 app-doc/sway-wiki 9999: Wiki of gui-wm/sway, rendered to HTML using kramdown-parser-gfm
 app-editors/amp 0.7.0-r1: A complete text editor for your terminal.
 app-editors/emacs-lsp-booster 0.2.1: Emacs LSP performance booster
-app-editors/imhex 1.35.4: A hex editor for reverse engineers, programmers, and eyesight
+app-editors/imhex 1.35.4-r1: A hex editor for reverse engineers, programmers, and eyesight
 app-editors/kakoune-lsp 17.0.1: Kakoune Language Server Protocol Client
 app-editors/kitscenarist 0.7.2_rc9: Simple and powerful application for creating screenplays.
 app-editors/l3afpad 0.8.18.1.11: Simple GTK3 text editor (successor to leafpad)
@@ -253,7 +253,7 @@ app-misc/lyfetch 1.1: Small system information script for linux systems.
 app-misc/macchina 6.1.8 6.1.8-r1: A system information fetcher, with an (unhealthy) emphasis on performance.
 app-misc/mangadesk 0.7.7 0.7.8: Terminal Client for MangaDex
 app-misc/mat2 0.13.4: Metadata Anonymisation Toolkit: handy tool to trash your metadata
-app-misc/metadata-cleaner 2.5.5: Python GTK application to view and clean metadata in files, using mat2.
+app-misc/metadata-cleaner 2.5.6: Python GTK application to view and clean metadata in files, using mat2.
 app-misc/minder 1.16.2 1.16.3: Mind-mapping application for Elementary OS.
 app-misc/mobile-datovka 1.10.0: Mobile optimized GUI to access the Czech data box e-government system
 app-misc/navi 2.23.0: An interactive cheatsheet tool for the command-line
@@ -1096,9 +1096,9 @@ gui-apps/gtklock 3.0.0-r1: GTK-based lockscreen for Wayland
 gui-apps/gtklock-extras 9999: Gtklock modules
 gui-apps/hiprompt-gtk-py 0_pre20221221 9999: GTK+ Himitsu prompter for Wayland
 gui-apps/hypridle 0.1.2-r2 9999: Hyprland's idle daemon
-gui-apps/hyprlock 0.3.0-r3 0.4.1-r1 9999: Hyprland's GPU-accelerated screen locking utility
+gui-apps/hyprlock 0.4.1-r2 9999: Hyprland's GPU-accelerated screen locking utility
 gui-apps/hyprnome 0.3.0: GNOME-like workspace switching in Hyprland.
-gui-apps/hyprpaper 0.6.0-r1 0.7.0: A blazing fast wayland wallpaper utility
+gui-apps/hyprpaper 0.7.0: A blazing fast wayland wallpaper utility
 gui-apps/hyprpicker 0.1.1 0.2.0 0.3.0-r1 9999: A wlroots-compatible Wayland color picker that does not suck
 gui-apps/hyprshade 3.2.1 9999: Hyprland shader configuration tool
 gui-apps/hyprshot 1.2.3 1.3.0 9999: Hyprshot is an utility to easily take screenshot in Hyprland using your mouse
@@ -1175,7 +1175,7 @@ gui-libs/text-engine 0.1.1-r3 9999: A lightweight rich-text framework for GTK 4
 gui-libs/xdg-desktop-portal-hyprland 1.3.3-r2 9999: xdg-desktop-portal backend for hyprland
 gui-wm/cage 0.1.5_p20240227 9999: A Wayland kiosk
 gui-wm/hyprland-contrib 0.1-r1 9999: Community-maintained extensions for hyprland
-gui-wm/miracle-wm 0.3.2: Tiling Wayland compositor based on Mir
+gui-wm/miracle-wm 0.3.4: Tiling Wayland compositor based on Mir
 gui-wm/niri 0.1.8: Scrollable-tiling Wayland compositor
 gui-wm/phoc 0.38.0 0.40.0 0.41.0: Wayland compositor for mobile phones
 gui-wm/river 0.3.5-r1: A dynamic tiling Wayland compositor
@@ -1505,10 +1505,10 @@ net-proxy/MTProxy 3.0.4-r1: Community fork of MTProxy
 net-proxy/byedpi 0.12 0.13 9999: Bypass DPI SOCKS proxy
 net-proxy/ngrok-bin 3.10.0: ngrok is a reverse proxy, firewall, and API gateway
 net-proxy/snowflake 2.8.1 2.9.2: Pluggable Transport using WebRTC, inspired by Flashproxy
-net-voip/baresip 3.11.0 3.11.0-r1 3.12.1 3.12.1-r1 3.13.0 3.14.0: Baresip is a portable and modular SIP User-Agent
+net-voip/baresip 3.12.1-r1 3.13.0 3.14.0 3.15.0: Baresip is a portable and modular SIP User-Agent
 net-voip/discover-overlay 0.6.9-r1 0.7.4: Yet another Discord overlay for Linux written in Python using GTK3
 net-voip/gnome-calls 45.0 46.3: Phone dialer and call handler
-net-voip/re 3.11.0-r1 3.12.0 3.13.0 3.14.0: Generic library for real-time communications with async IO support
+net-voip/re 3.12.0 3.13.0 3.14.0 3.15.0: Generic library for real-time communications with async IO support
 net-voip/vvmd 0.8-r1: vvmd is a lower level daemon that retrieves Visual Voicemail
 net-vpn/cloudflare-warp 2024.2.62-r2 2024.4.133-r1: Cloudflare Warp Client
 net-vpn/fastd 22: A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
@@ -1672,7 +1672,7 @@ sys-libs/libnvidia-container 1.14.6 9999: NVIDIA container runtime library
 sys-libs/nss-tls 1.0 1.1-r1 9999: A DNS over HTTPS resolver for glibc
 sys-libs/solo-udev-rules 4.1.5: udev rules for the Solo FIDO2 & U2F USB+NFC security key
 sys-power/amdfan 0.1.28 0.2.3: Updated AMD Fan control utility forked from amdgpu-fan and updated.
-sys-power/auto-cpufreq 2.1.0 2.1.0-r1 2.2.0 2.3.0: Automatic CPU speed & power optimizer for Linux
+sys-power/auto-cpufreq 2.1.0-r1 2.2.0 2.3.0: Automatic CPU speed & power optimizer for Linux
 sys-power/envycontrol 3.4.0 9999: Easy GPU switching for Nvidia Optimus laptops under Linux
 sys-power/fan2go 0.8.1: A simple daemon providing dynamic fan speed control
 sys-power/gtherm 0.0.3: A simple daemon to monitor thermal zones and cooling devices
@@ -1715,9 +1715,10 @@ www-client/badwolf 1.3.0-r1 9999: Minimalist and privacy-oriented WebKitGTK+ bro
 www-client/browsh 1.8.2: A fully-modern text-based browser, rendering to TTY and browsers
 www-client/firefox-developer-bin 122.0 128.0: Firefox browser developer edition
 www-client/mullvad-browser-bin 13.5.2: The Mullvad Browser is developed to minimize tracking and fingerprinting.
-www-client/nyxt 3.11.5 3.11.6 3.11.7 3.11.8 9999: Nyxt - the hacker's power-browser
+www-client/nyxt 3.11.7 3.11.8 9999: Nyxt - the hacker's power-browser
 www-client/vimb 3.6.0 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
 www-client/yandex-browser 24.7.1.1120_p1: The web browser from Yandex
+www-client/zen-bin 1.0.0: Zen Browser - A Firefox-based browser focused on privacy
 www-misc/dufs 0.40.0: Dufs is a distinctive utility file server
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits
 www-misc/gorss 0.3: Go Terminal Feed Reader

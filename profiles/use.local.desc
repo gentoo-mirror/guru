@@ -43,6 +43,7 @@ app-crypt/uacme:gnutls - Use net-libs/gnutls instead of dev-libs/openssl
 app-crypt/uacme:man - Build and install man pages
 app-crypt/uacme:mbedtls - Use net-libs/mbedtls instead of dev-libs/openssl
 app-crypt/uacme:ualpn - Build the ualpn proxy that transparently handles tls-alpn-01
+app-editors/imhex:desktop-portal - Use sys-apps/xdg-desktop-portal file picker instead of the GTK one
 app-editors/imhex:system-llvm - Use the system LLVM installation
 app-editors/l3afpad:emacs - Implement Emacs key theme (experimental).
 app-emulation/arnold:inkz80 - Use inkz80 processor emulation
@@ -594,7 +595,6 @@ net-voip/baresip:console - UDP/TCP console UI driver
 net-voip/baresip:dbus - Control interface using DBUS. ctrl_dbus module
 net-voip/baresip:echo - Echo server module
 net-voip/baresip:evdev - Input event device UI module
-net-voip/baresip:gst - Add support for media-libs/gstreamer (Streaming media)
 net-voip/baresip:gtk3 - GTK+ 3 menu-based UI
 net-voip/baresip:httpd - HTTP webserver UI-module
 net-voip/baresip:httpreq - HTTP request module
