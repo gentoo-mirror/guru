@@ -16,12 +16,14 @@ IUSE="test stb"
 RESTRICT="!test? ( test )"
 
 RDEPEND="
+	app-arch/libarchive
 	acct-user/lms
 	dev-cpp/wt
 	dev-libs/boost
 	dev-libs/libconfig[cxx]
 	media-libs/taglib
 	media-video/ffmpeg[mp3,opus]
+	sys-libs/pam
 
 	!stb? ( media-gfx/graphicsmagick )
 
@@ -36,10 +38,6 @@ DEPEND="
 BDEPEND="
 	test? ( dev-cpp/gtest )
 "
-
-PATCHES=(
-	"${FILESDIR}/${PN}-respect-ldflags.patch"
-)
 
 src_configure() {
 	local mycmakeargs=(
