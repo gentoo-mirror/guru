@@ -6,8 +6,8 @@ EAPI=8
 inherit cmake
 
 DESCRIPTION="Tiling Wayland compositor based on Mir"
-HOMEPAGE="https://github.com/mattkae/miracle-wm"
-SRC_URI="https://github.com/mattkae/miracle-wm/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
+HOMEPAGE="https://github.com/miracle-window-manager/miracle-wm"
+SRC_URI="https://github.com/miracle-window-manager/miracle-wm/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-3+"
 SLOT="0"
