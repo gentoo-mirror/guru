@@ -1,6 +1,6 @@
 BDEPEND=>=dev-lang/go-1.20:= app-arch/unzip
 DEFINED_PHASES=compile install postinst postrm preinst unpack
-DEPEND=media-video/mpv[libmpv] x11-libs/libXcursor x11-libs/libXi x11-libs/libXinerama
+DEPEND=media-libs/libglvnd media-video/mpv[libmpv] x11-libs/libX11 x11-libs/libXcursor x11-libs/libXi x11-libs/libXinerama
 DESCRIPTION=A lightweight and full-featured cross-platform desktop client
 EAPI=8
 HOMEPAGE=https://github.com/dweymouth/supersonic
@@ -8,9 +8,9 @@ IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
 INHERIT=desktop go-module xdg
 KEYWORDS=~amd64
 LICENSE=GPL-3
-RDEPEND=media-video/mpv[libmpv] x11-libs/libXcursor x11-libs/libXi x11-libs/libXinerama
+RDEPEND=media-libs/libglvnd media-video/mpv[libmpv] x11-libs/libX11 x11-libs/libXcursor x11-libs/libXi x11-libs/libXinerama
 RESTRICT=strip
 SLOT=0
-SRC_URI=https://github.com/dweymouth/supersonic/archive/refs/tags/v0.13.0.tar.gz -> supersonic-0.13.0.tar.gz https://gentoo.kropotkin.rocks/go-pkgs/supersonic-0.13.0-vendor.tar.xz
+SRC_URI=https://github.com/dweymouth/supersonic/archive/refs/tags/v0.13.1.tar.gz -> supersonic-0.13.1.tar.gz https://gentoo.kropotkin.rocks/go-pkgs/supersonic-0.13.1-vendor.tar.xz
 _eclasses_=desktop	021728fdc1b03b36357dbc89489e0f0d	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	toolchain-funcs	333970c740aa7b1a92e4fcdc52f612bd	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	e503ea5acc20410237ba33ec3f7c857d	go-env	90efbc8636d2f02d9654183330e84cf7	go-module	83fd3ed1657cfc316c93d6a37018290d	xdg-utils	baea6080dd821f5562d715887954c9d3	xdg	4a14c5c24f121e7da66e5aab4a168c6e
-_md5_=6c8bf73310664f3db69bb867d24d113a
+_md5_=e666584b84b0cd90caf567d5396d3f3c

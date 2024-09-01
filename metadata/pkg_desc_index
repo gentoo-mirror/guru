@@ -112,6 +112,7 @@ app-admin/pulumi-bin 3.128.0 3.129.0 3.130.0: Infrastructure as code in any prog
 app-admin/rbw 1.11.1-r1 1.12.0 1.12.1 9999: Unofficial Bitwarden CLI
 app-admin/s-tui 1.1.6: Stress-Terminal UI monitoring tool
 app-admin/synadm 0.43.1 0.44: Command line admin tool for Synapse
+app-admin/talosctl-bin 1.7.6: Pre-compiled talosctl is an tool for interacting with the Talos API
 app-admin/terragrunt-bin 0.38.6 0.45.4 0.50.8: A thin wrapper for Terraform
 app-admin/vaultwarden 1.30.3 1.30.4 1.30.5 9999: Unofficial Bitwarden compatible password manager server written in Rust
 app-alternatives/phosh-keyboard 0: sm.puri.OSK0.desktop symlinks
@@ -136,7 +137,6 @@ app-benchmarks/poop 9999: Performance Optimizer Observation Platform
 app-benchmarks/unigine-superposition 1.1: Game like benchmark (CPU, GPU), for ~5 minutes
 app-containers/anbox-modules 0_p20240210: Anbox kernel modules
 app-containers/arachsys-containers 1.7: Simple containers using Linux user namespaces
-app-containers/dnsname-cni-plugin 1.3.0 1.3.1 9999: name resolution for containers
 app-containers/nvidia-container-toolkit 1.14.6 9999: NVIDIA container runtime toolkit
 app-containers/pods 2.1.0_pre20240215-r4: Keep track of your podman containers
 app-containers/waydroid 1.4.2 1.4.2-r1 1.4.2-r2: Container-based approach to boot a full Android system on Linux systems
@@ -537,7 +537,7 @@ dev-libs/libchardet 1.0.6: Mozilla's Universal Charset Detector C/C++ API
 dev-libs/libcli 1.10.7: Shared C library to include Cisco-like CLI into other software
 dev-libs/libdatrie 0.2.13: Double-Array Trie Library
 dev-libs/libdbf 0.0.1: Library to read the content of dBASE III, IV, and 5.0 files
-dev-libs/libdwarf 0.9.1 0.9.2 0.10.1: The DWARF Debugging Information Format
+dev-libs/libdwarf 0.9.1 0.10.1 0.11.0: The DWARF Debugging Information Format
 dev-libs/libglibutil 1.0.76 1.0.79 9999: Library of glib utilities from sailfishos project
 dev-libs/librepo 1.18.1: Repodata downloading library
 dev-libs/libsignal-ffi 0.44.0 0.46.0 0.51.0: A C ABI library which exposes Signal protocol logic
@@ -688,7 +688,6 @@ dev-python/exif 1.6.0: Read and modify image EXIF metadata using Python.
 dev-python/faust-cchardet 2.1.18 2.1.19: universal character encoding detector
 dev-python/flask-restx 1.3.0: Framework API development with Flask
 dev-python/fontawesomefree 6.5.1: Font Awesome Free
-dev-python/funcsigs 0.4: Python function signatures package for Python 2.6, 2.7 and 3.2+
 dev-python/gbinder 1.1.2-r1 9999: Python bindings for libgbinder
 dev-python/gemcall 0.9.1 0.9.2: A library and CLI tool for making gemini requests
 dev-python/gevent 23.9.1: Coroutine-based network library
@@ -927,6 +926,7 @@ dev-util/gammaray 2.11.3: High-level runtime introspection tool for Qt applicati
 dev-util/git-bug 0.8.0 9999: distributed, offline-first bug tracker
 dev-util/gitlab-ci-local-bin 4.43.0 4.47.0: Run gitlab pipelines locally as shell executor or docker executor
 dev-util/glsl-language-server 0.3.7: Language server implementation for GLSL
+dev-util/go-task 3.38.0-r1: A task runner / simpler Make alternative written in Go
 dev-util/gshards 0.2: Small helper tools to aid installing Crystal packages in Gentoo
 dev-util/haredo 1.0.2 9999: a simple and unix-idiomatic build automator
 dev-util/hut 0.6.0: CLI tool for sourcehut
@@ -1146,7 +1146,6 @@ gui-apps/szyszka 3.0.0: Simple, powerful and easy to use file renamer
 gui-apps/tessen 2.2.1-r1: an interactive menu to autotype and copy pass and gopass data
 gui-apps/tiramisu 1.0_p20201110 2.0.20211107 9999: minimalistic desktop notifications provider
 gui-apps/tofi 0.8.1 0.9.1: Fast and simple dmenu/rofi replacement for wlroots-based Wayland compositors
-gui-apps/tootle 9999: Mastodon client written in GTK3
 gui-apps/vicuna 1.25: Tool for uploading files to Wikimedia Commons and other Wikimedia projects
 gui-apps/wbg 1.0.2 1.1.0 1.2.0 9999: Super simple wallpaper application
 gui-apps/wdisplays 1.1 1.1.1 9999: GUI display configurator for wlroots compositors
@@ -1312,7 +1311,7 @@ media-sound/spotify-adblock 1.0.1 1.0.2 1.0.3: Adblocker for Spotify
 media-sound/spotify-player 0.18.1 0.18.2 9999: spotify_player is a fast, easy to use, and configurable terminal music player.
 media-sound/spotifyd 0.3.5_p20240513: A Spotify daemon
 media-sound/spotube-bin 3.8.0: An open source, cross-platform Spotify client
-media-sound/supersonic 0.12.0 0.13.0 0.13.0-r1: A lightweight and full-featured cross-platform desktop client
+media-sound/supersonic 0.13.0-r1 0.13.1: A lightweight and full-featured cross-platform desktop client
 media-sound/tidal-hifi-bin 5.15.0 5.16.0: Web version of Tidal running in electron with Hi-Fi support thanks to Widevine.
 media-sound/yewtube 2.10.5 9999: Terminal-based YouTube player and downloader
 media-sound/youtube-music-bin 3.3.6: YouTube Music Desktop App bundled with custom plugins
@@ -1492,7 +1491,7 @@ net-news/newsraft 0.25 9999: A lightweight feed reader with ncurses user interfa
 net-nntp/inn 2.7.1: InterNetNews - the Internet meets Netnews
 net-nntp/pan 0.159-r1 0.160: A newsreader for GNOME
 net-p2p/bisq-bin 1.9.14-r1: The decentralized bitcoin exchange (non-atomic, with arbitration)
-net-p2p/dogecoin-qt 1.14.7 1.14.8 9999: Dogecoin Core Qt for desktop. Downloaded blockchain is under 2.2GB. Much secure.
+net-p2p/dogecoin-qt 1.14.8 9999: Dogecoin Core Qt for desktop. Downloaded blockchain is under 2.2GB. Much secure.
 net-p2p/feather 2.6.7-r1 2.6.8 9999: A free, open-source Monero wallet
 net-p2p/fragments 3.0.0 3.0.1: Fragments is an easy to use BitTorrent client
 net-p2p/gridcoin 5.4.8.0 5.4.8.0_p1: Proof-of-Stake based cryptocurrency that rewards BOINC computation
