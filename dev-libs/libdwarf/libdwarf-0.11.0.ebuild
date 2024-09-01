@@ -8,7 +8,7 @@ inherit cmake
 DESCRIPTION="The DWARF Debugging Information Format"
 HOMEPAGE="
 	https://www.prevanders.net/dwarf.html
-	https://www.dwarfstd.org
+	https://dwarfstd.org/
 	https://github.com/davea42/libdwarf-code
 "
 SRC_URI="https://www.prevanders.net/${P}.tar.xz"
@@ -27,7 +27,7 @@ RDEPEND="${DEPEND}"
 
 DOCS=( AUTHORS NEWS README.md )
 
-PATCHES=( "${FILESDIR}/${P}-fix-include-patch.patch" )
+PATCHES=( "${FILESDIR}/${PN}-0.9.2-fix-include-patch.patch" )
 
 src_configure() {
 	local mycmakeargs=(
