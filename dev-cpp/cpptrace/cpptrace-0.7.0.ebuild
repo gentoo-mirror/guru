@@ -19,8 +19,6 @@ DEPEND="dev-libs/libdwarf
 	test? ( dev-cpp/gtest )"
 RDEPEND="${DEPEND}"
 
-PATCHES=( "${FILESDIR}/${PN}-fix-tests.patch" )
-
 QA_FLAGS_IGNORED="unittest"
 
 src_configure() {
