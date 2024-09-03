@@ -1,13 +1,11 @@
-BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
-DEFINED_PHASES=install unpack
+DEFINED_PHASES=install
 DEPEND=dev-libs/libxml2:2 x11-libs/gtk+:3 dev-libs/glib:2 x11-libs/gdk-pixbuf:2
 DESCRIPTION=Obsidian Gnome Theme, based upon Adwaita-Maia dark skin
 EAPI=8
 HOMEPAGE=https://github.com/madmaxms/theme-obsidian-2
-INHERIT=git-r3
+KEYWORDS=~amd64 ~arm ~arm64 ~ppc64 ~riscv ~x86
 LICENSE=GPL-3
-PROPERTIES=live
 RDEPEND=dev-libs/libxml2:2 x11-libs/gtk+:3
 SLOT=0
-_eclasses_=git-r3	875eb471682d3e1f18da124be97dcc81
+SRC_URI=https://github.com/madmaxms/theme-obsidian-2/archive/v2.24.tar.gz -> obsidian2-gtk-theme-2.24.tar.gz
 _md5_=a463f7b8fa98f52dc0db1a485a2ca1a1
