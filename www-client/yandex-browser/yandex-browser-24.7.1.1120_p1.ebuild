@@ -26,10 +26,11 @@ LICENSE="Yandex-EULA"
 SLOT="0"
 KEYWORDS="~amd64"
 
-IUSE="+ffmpeg-codecs"
+IUSE="+ffmpeg-codecs qt6"
 RESTRICT="bindist mirror strip"
 
 RDEPEND="
+	app-accessibility/at-spi2-core
 	dev-libs/expat
 	dev-libs/glib:2
 	dev-libs/nspr
@@ -42,6 +43,7 @@ RDEPEND="
 	net-print/cups
 	sys-apps/dbus
 	sys-libs/libcap
+	sys-libs/libudev-compat
 	virtual/libudev
 	x11-libs/cairo
 	x11-libs/libdrm
@@ -56,11 +58,7 @@ RDEPEND="
 	x11-libs/pango[X]
 	x11-misc/xdg-utils
 	ffmpeg-codecs? ( media-video/ffmpeg-chromium:${FFMPEG} )
-	sys-libs/libudev-compat
-	dev-qt/qtcore
-	dev-qt/qtgui
-	dev-qt/qtwidgets
-	app-accessibility/at-spi2-core
+	qt6? ( dev-qt/qtbase:6[gui,widgets] )
 "
 DEPEND="
 	>=dev-util/patchelf-0.9
@@ -125,6 +123,11 @@ src_install() {
 		dodir "/usr/share/icons/hicolor/${size}x${size}/apps"
 		newicon -s "${size}" "$icon" "${MY_PN}.png"
 	done
+
+	rm "${ED}/${YANDEX_HOME}/libqt5_shim.so" || die
+	if ! use qt6; then
+		rm "${ED}/${YANDEX_HOME}/libqt6_shim.so" || die
+	fi
 
 	fowners root:root "/${YANDEX_HOME}/yandex_browser-sandbox"
 	fperms 4711 "/${YANDEX_HOME}/yandex_browser-sandbox"
