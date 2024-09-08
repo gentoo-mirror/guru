@@ -7,8 +7,8 @@ The network and squashfs tests won't work within portage. Disable them.
 
 Signed-off-by: Kurt Kanzenbach <kurt@kmk-computers.de>
 ---
- test/meson.build |   19 -------------------
- 1 file changed, 19 deletions(-)
+ test/meson.build |    5 -----
+ 1 file changed, 5 deletions(-)
 
 --- a/test/meson.build
 +++ b/test/meson.build
@@ -31,21 +31,3 @@ Signed-off-by: Kurt Kanzenbach <kurt@kmk-computers.de>
  if get_option('streaming')
    tests += 'nbd'
  endif
-@@ -63,17 +58,3 @@ fakerand = executable(
-   'fakerand',
-   'fakerand.c',
- )
--
--rauc_t = find_program(
--  'rauc.t'
--)
--
--test(
--  'rauc.t',
--  rauc_t,
--  args : '-v',
--  is_parallel : false,
--  timeout : 360,
--  env : ['SHARNESS_BUILD_DIRECTORY=' + meson.build_root()],
--  workdir : meson.current_source_dir(),
--)

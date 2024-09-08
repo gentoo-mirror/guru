@@ -1,9 +1,10 @@
-# Copyright 2023 Gentoo Authors
+# Copyright 2023-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 CRATES="
+
 	adler32@1.2.0
 	adler@1.0.2
 	ahash@0.3.8
@@ -20,6 +21,7 @@ CRATES="
 	atomic-waker@1.1.2
 	autocfg@1.1.0
 	base64@0.21.5
+	bincode@1.3.3
 	bitflags@1.3.2
 	bitflags@2.4.1
 	block-buffer@0.10.4
@@ -115,7 +117,6 @@ CRATES="
 	hashbrown@0.7.2
 	hashlink@0.8.4
 	heck@0.4.1
-	hermit-abi@0.3.3
 	hex@0.4.3
 	idna@0.4.0
 	image@0.23.14
@@ -150,12 +151,12 @@ CRATES="
 	miniz_oxide@0.7.1
 	miow@0.6.0
 	nix@0.26.4
+	nix@0.27.1
 	ntapi@0.4.1
 	num-integer@0.1.45
 	num-iter@0.1.43
 	num-rational@0.3.2
 	num-traits@0.2.17
-	num_cpus@1.16.0
 	objc-foundation@0.1.1
 	objc@0.2.7
 	objc_id@0.1.1
@@ -280,7 +281,7 @@ CRATES="
 	zerocopy@0.7.25
 "
 
-PYTHON_COMPAT=( python3_{9..12} )
+PYTHON_COMPAT=( python3_{9..13} )
 
 PATHFINDER_COMMIT=ec56924f660e6faa83c81c6b62b3c69b9a9fa00e
 NVTOP_COMMIT=45a1796375cd617d16167869bb88e5e69c809468
@@ -318,14 +319,20 @@ IUSE="debug"
 DEPEND="
 	>=dev-libs/appstream-0.16.4
 	>=x11-libs/pango-1.51.0
-	>=dev-libs/glib-2.77
+	>=dev-libs/glib-2.77:2
 	>=dev-util/gdbus-codegen-2.77
 	dev-libs/wayland
-	>=gui-libs/libadwaita-1.4.0
-	>=gui-libs/gtk-4.12.3
+	>=gui-libs/libadwaita-1.4.0:1
+	>=gui-libs/gtk-4.12.3:4
 	gui-libs/egl-gbm
+	media-libs/graphene
+	media-libs/libglvnd
+	media-libs/mesa
+	sys-apps/dbus
 	virtual/rust
 	virtual/udev
+	x11-libs/cairo
+	x11-libs/gdk-pixbuf:2
 	x11-libs/libdrm
 "
 RDEPEND="
@@ -352,12 +359,15 @@ src_prepare() {
 	eapply_user
 	GATHERER_BUILD_DIR=$(usex debug debug release)
 	cd "${BUILD_DIR}/src/sys_info_v2/gatherer/src/${GATHERER_BUILD_DIR}/build/native/nvtop-${NVTOP_COMMIT}" || die
-	find "${S}/src/sys_info_v2/gatherer/3rdparty/nvtop/patches" -type f -name 'nvtop-*' -exec sh -c 'patch -p1 < {}' \; || die
+	find "${S}/src/sys_info_v2/gatherer/3rdparty/nvtop/patches" \
+		-type f \
+		-name 'nvtop-*' \
+		-exec sh -c 'patch -p1 < {}' \; || die
 }
 
 src_configure() {
+	EMESON_BUILDTYPE=$(usex debug debug release)
 	local emesonargs=(
-		--buildtype $(usex debug debug release)
 		--prefix=/usr
 	)
 	meson_src_configure
@@ -372,10 +382,12 @@ src_test() {
 
 pkg_postinst() {
 	gnome2_schemas_update
+	xdg_pkg_postinst
 }
 
 pkg_postrm() {
 	gnome2_schemas_update
+	xdg_pkg_postrm
 }
 
 # rust does not use *FLAGS from make.conf, silence portage warning
