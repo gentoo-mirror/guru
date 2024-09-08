@@ -95,7 +95,7 @@ app-admin/dotbot 1.20.1: A tool that bootstraps your dotfiles
 app-admin/enpass-desktop-bin 6.7.4.933: A cross-platform, complete password management solution
 app-admin/gentoo_update 0.2.4: Gentoo Linux updater
 app-admin/grub-customizer 5.2.4-r1: A graphical grub2 settings manager
-app-admin/hardinfo2 2.1.11-r1: System Information and Benchmark for Linux Systems
+app-admin/hardinfo2 2.1.14: System Information and Benchmark for Linux Systems
 app-admin/himitsu 0.7 0.8 9999: Secret storage system for Unix, suitable for storing passwords, keys, ...
 app-admin/himitsu-keyring 0.2.0: graphical frontend for managing a Himitsu key store
 app-admin/himitsu-ssh 0.3 0.4 9999: SSH integration for Himitsu
@@ -135,7 +135,7 @@ app-benchmarks/poop 9999: Performance Optimizer Observation Platform
 app-benchmarks/unigine-superposition 1.1: Game like benchmark (CPU, GPU), for ~5 minutes
 app-containers/anbox-modules 0_p20240210: Anbox kernel modules
 app-containers/arachsys-containers 1.7: Simple containers using Linux user namespaces
-app-containers/nvidia-container-toolkit 1.14.6 9999: NVIDIA container runtime toolkit
+app-containers/nvidia-container-toolkit 1.14.6 1.16.1 9999: NVIDIA container runtime toolkit
 app-containers/pods 2.1.0_pre20240215-r4: Keep track of your podman containers
 app-containers/waydroid 1.4.2 1.4.2-r1 1.4.2-r2: Container-based approach to boot a full Android system on Linux systems
 app-containers/waydroid-images 9999: Manage images for app-containers/waydroid using portage
@@ -209,7 +209,7 @@ app-misc/1password-cli 2.24.0: The world’s most-loved password manager CLI
 app-misc/afc 1.1 1.2 9999: Anime File Checker, checks CRC32 contained in filenames
 app-misc/afetch 2.2.0: Simple system info written in C
 app-misc/agg 1.4.3: Command-line tool for generating animated GIF files from asciicast v2 files
-app-misc/ani-cli 4.8 9999: A cli to browse and watch anime.
+app-misc/ani-cli 4.8 4.9 9999: A cli to browse and watch anime.
 app-misc/anki-bin 24.06.3-r1: A spaced-repetition memory training program (flash cards)
 app-misc/apidb 5.8.0_beta 5.11.0_beta 5.13.1_beta 5.13.4_beta 5.13.6_beta: API Generator for Database access
 app-misc/aw-client 0.11.0: Client library for ActivityWatch
@@ -288,7 +288,7 @@ app-misc/wego 2.2: Wego is a weather client for the terminal
 app-misc/x86-64-level 0.2.2 9999: Get the x86-64 Microarchitecture Level on the Current Machine
 app-misc/xplr 0.21.3: A hackable, minimal, fast TUI file explorer
 app-misc/yaf 0.0.3: Yet another system fetch that is minimal and customizable.
-app-misc/yazi 0.2.5-r1: Blazing fast terminal file manager written in Rust, based on async I/O.
+app-misc/yazi 0.2.5-r1 0.3.3: Blazing fast terminal file manager written in Rust, based on async I/O.
 app-misc/zcock 0.2.0 0.2.1: Print an emoji according to traditional chinese calendar and more
 app-mobilephone/flashlight 0.1.1-r2: It's a flashlight, what do you expect?
 app-mobilephone/mobile-config-firefox 2.1.0: Mobile and privacy friendly configuration for Firefox
@@ -308,7 +308,7 @@ app-office/standartnotes-bin 3.183.22: End-to-end encrypted note-taking app, alt
 app-portage/appswipe 1.1.14 1.1.68: Application for browsing your local Portage repository files
 app-portage/pacvis 0.4.2: Displays dependency graphs of packages
 app-portage/portage-lostfiles 0.5.5: A simple script to identify files not tracked by Portage package manager
-app-portage/portagecfg 2.0.0 2.1.1 2.1.3: Utility to write Portage config files in an easy manner.
+app-portage/portagecfg 2.0.0 2.1.1 2.1.3 2.2.0: Utility to write Portage config files in an easy manner.
 app-portage/quantum-resolver 9999: A WIP portage dependency resolver
 app-portage/showbuild 0.9.1-r1: Script to follow log of running portage builds
 app-portage/version 0.19.0_alpha 0.20.1_alpha 0.21.0_alpha: A command line function for package version management.
@@ -477,7 +477,7 @@ dev-embedded/idf-component-manager 1.5.3 2.0.3: Tool for installing ESP-IDF comp
 dev-embedded/mv88e6xxx-dump 0.2.0_pre20210327: Dump information about Marvell mv88e6xxx Ethernet switches
 dev-embedded/nxp-gui-guider 1.7.2-r1: GUI Guider is a user-friendly GUI development tool for LVGL
 dev-embedded/qdl 2.0 9999: Tool to communicate with Qualcomm System On a Chip bootroms
-dev-embedded/rauc 1.11.3: Lightweight update client that runs on your Embedded Linux device
+dev-embedded/rauc 1.12: Lightweight update client that runs on your Embedded Linux device
 dev-embedded/squareline-studio 1.3.2: Visual drag-and-drop UI editor for LVGL
 dev-erlang/conf 0.2.6: YAML configuration for Erlang applications
 dev-erlang/cowboy 2.9.0: Small, fast, modern HTTP server for Erlang/OTP.
@@ -559,7 +559,7 @@ dev-libs/octetos-db 1.3.2_alpha 1.3.3_alpha: C++ library for Database Acces.
 dev-libs/octetos-db-abstract 0.1.2_alpha 0.6.0_alpha: API to access database, abstract component.
 dev-libs/octetos-db-maria 1.4.2_alpha 1.9.2_alpha 9999: C++ library for Database Acces.
 dev-libs/octetos-db-postgresql 1.3.9_alpha 1.3.10_alpha: C++ library for Database Acces.
-dev-libs/open62541 1.4.3: Open source C implementation of OPC UA
+dev-libs/open62541 1.4.4: Open source C implementation of OPC UA
 dev-libs/polyseed 1.0.0 2.0.0 9999: Mnemonic seed library for Monero and other CryptoNote-based currencies.
 dev-libs/properties-cpp 0.0.2: Simple convenience library for handling properties and signals in C++11
 dev-libs/qhttpengine 1.0.1-r1 9999: HTTP server for Qt applications
@@ -1216,7 +1216,7 @@ media-fonts/victor-mono 1.5.4 1.5.5 1.5.6: A free programming font with cursive 
 media-fonts/warframe-fonts 0_pre20191111: Fonts from the Warframe game
 media-gfx/WebPlotDigitizer-bin 4.7: Web based tool to extract data from plots, images, and maps
 media-gfx/akira 0.0.13 9999: Native Linux App for UI and UX Design built in Vala and GTK.
-media-gfx/azpainter 3.0.8: Full color painting software for Linux for illustration drawing
+media-gfx/azpainter 3.0.9a: Full color painting software for Linux for illustration drawing
 media-gfx/bambustudio-bin 01.09.03.50: Bambu Studio is a cutting-edge, feature-rich slicing software
 media-gfx/beeref 0.3.2: A Simple Reference Image Viewer
 media-gfx/bonzomatic 2022.02.05 2022.08.20 9999: Live shader coding tool and Shader Showdown workhorse
@@ -1518,7 +1518,7 @@ net-wireless/gr-lora_sdr 9999: GNU Radio SRT implementation of a LoRa transceive
 net-wireless/rtl8192eu 0_pre20240518: Realtek 8192EU driver module for Linux kernel
 net-wireless/rtl8723bu 9999: Driver for the rtl8723 wireless chipset
 net-wireless/rtl8821ce 0_pre20240326: Realtek RTL8821CE Driver module for Linux kernel
-net-wireless/rtl8821cu 0_pre20240503: Realtek 8821CU/RTL8811CU module for Linux kernel
+net-wireless/rtl8821cu 0_pre20240821: Realtek 8821CU/RTL8811CU module for Linux kernel
 net-wireless/sdrpp 1.2.0_pre20240607: Cross-Platform SDR Software
 phosh-base/phosh 0.40.0 0.41.0: Meta package for Phosh, merge this package to install
 phosh-base/phosh-mobile-settings 0.38.0 0.40.0 0.41.0: Mobile Settings App for phosh and related components
@@ -1607,7 +1607,7 @@ sys-apps/lact 0.5.5: Linux AMDGPU Controller
 sys-apps/loclone 0.1.0: A tool for creating CoW snapshots on XFS
 sys-apps/lr 1.6: list files, recursively
 sys-apps/lsplug 4: Replacement for lsusb that shows more useful info and less useless info
-sys-apps/mission-center 0.4.1 0.4.4-r1 9999: Monitor your CPU, Memory, Disk, Network and GPU usage.
+sys-apps/mission-center 0.4.4-r2 0.5.2-r1 9999: Monitor your CPU, Memory, Disk, Network and GPU usage.
 sys-apps/nvimpager 0.12.0: Use nvim as a pager to view manpages, diff, etc with nvim's syntax highlighting.
 sys-apps/openSeaChest 23.12 24.08: SeaGate's open source harddrive control utilities
 sys-apps/ov 0.11.2 0.32.0: Feature-rich terminal pager
@@ -1665,7 +1665,7 @@ sys-libs/cyclonedds 0.10.3 9999: Eclipse Cyclone DDS project
 sys-libs/gcompat 1.1.0: The GNU C Library compatibility layer for musl
 sys-libs/iceoryx 2.0.3 9999: Eclipse Iceoryx zero copy IPC
 sys-libs/libfixposix 0.4.3 0.5.1: Thin wrapper over POSIX syscalls
-sys-libs/libnvidia-container 1.14.6 9999: NVIDIA container runtime library
+sys-libs/libnvidia-container 1.14.6 1.16.1 9999: NVIDIA container runtime library
 sys-libs/nss-tls 1.0 1.1-r1 9999: A DNS over HTTPS resolver for glibc
 sys-libs/solo-udev-rules 4.1.5: udev rules for the Solo FIDO2 & U2F USB+NFC security key
 sys-power/amdfan 0.1.28 0.2.3: Updated AMD Fan control utility forked from amdgpu-fan and updated.
@@ -1722,7 +1722,7 @@ www-misc/kiwix-desktop 2.3.1: cross-platform viewer/manager for ZIM archives
 www-misc/libkiwix 12.1.0-r1 13.1.0: Kiwix software suite core: code shared by all Kiwix ports
 www-misc/waldl 0.0.1_pre20211112: Browse and download wallpapers from wallhaven.cc using sxiv
 www-misc/wyebadblock 1.0.0: An adblock extension for wyeb, also webkit2gtk browsers.
-www-plugins/firefoxpwa 2.12.0-r1 2.12.1: A tool to install, manage and use PWAs in Mozilla Firefox (native component)
+www-plugins/firefoxpwa 2.12.0-r1 2.12.1 2.12.2: A tool to install, manage and use PWAs in Mozilla Firefox (native component)
 www-servers/hinsightd 0.9.17 9999: hinsightd a http/1.1 webserver with (hopefully) minimal goals
 www-servers/quark 9999: A small, GET-only static HTTP server
 x11-apps/lightdm-gtk-greeter-settings 1.2.2-r2: Configuration tool for the LightDM GTK Greeter

@@ -1,6 +1,6 @@
-BDEPEND=|| ( dev-lang/python:3.12 dev-lang/python:3.11 dev-lang/python:3.10 ) dev-libs/gobject-introspection >=dev-build/meson-0.63 dev-util/blueprint-compiler >=dev-vcs/git-1.8.2.1[curl] >=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array
+BDEPEND=|| ( dev-lang/python:3.13 dev-lang/python:3.12 dev-lang/python:3.11 dev-lang/python:3.10 ) dev-libs/gobject-introspection >=dev-build/meson-0.63 dev-util/blueprint-compiler >=dev-vcs/git-1.8.2.1[curl] >=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup test unpack
-DEPEND=>=dev-libs/appstream-0.16.4 >=x11-libs/pango-1.51.0 >=dev-libs/glib-2.77 >=dev-util/gdbus-codegen-2.77 dev-libs/wayland >=gui-libs/libadwaita-1.4.0 >=gui-libs/gtk-4.12.3 gui-libs/egl-gbm virtual/rust virtual/udev x11-libs/libdrm
+DEPEND=>=dev-libs/appstream-0.16.4 >=dev-libs/glib-2.80:2 dev-libs/wayland gui-libs/egl-gbm >=dev-util/gdbus-codegen-2.80 >=gui-libs/gtk-4.14:4 >=gui-libs/libadwaita-1.5.0:1 media-libs/graphene media-libs/libglvnd media-libs/mesa sys-apps/dbus virtual/rust virtual/udev x11-libs/cairo x11-libs/gdk-pixbuf:2 x11-libs/libdrm >=x11-libs/pango-1.51.0
 DESCRIPTION=Monitor your CPU, Memory, Disk, Network and GPU usage.
 EAPI=8
 HOMEPAGE=https://missioncenter.io/
@@ -9,9 +9,8 @@ INHERIT=git-r3 gnome2-utils meson python-any-r1 xdg
 IUSE=debug
 LICENSE=Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD BSD-2 Boost-1.0 CC0-1.0 CeCILL-2 MIT Unicode-DFS-2016 Unlicense ZLIB
 PROPERTIES=live
-RDEPEND=>=dev-libs/appstream-0.16.4 >=x11-libs/pango-1.51.0 >=dev-libs/glib-2.77 >=dev-util/gdbus-codegen-2.77 dev-libs/wayland >=gui-libs/libadwaita-1.4.0 >=gui-libs/gtk-4.12.3 gui-libs/egl-gbm virtual/rust virtual/udev x11-libs/libdrm sys-apps/dmidecode
-RESTRICT=network-sandbox
+RDEPEND=>=dev-libs/appstream-0.16.4 >=dev-libs/glib-2.80:2 dev-libs/wayland gui-libs/egl-gbm >=dev-util/gdbus-codegen-2.80 >=gui-libs/gtk-4.14:4 >=gui-libs/libadwaita-1.5.0:1 media-libs/graphene media-libs/libglvnd media-libs/mesa sys-apps/dbus virtual/rust virtual/udev x11-libs/cairo x11-libs/gdk-pixbuf:2 x11-libs/libdrm >=x11-libs/pango-1.51.0 sys-apps/dmidecode
 SLOT=0
 SRC_URI=https://github.com/Syllo/nvtop/archive/45a1796375cd617d16167869bb88e5e69c809468.tar.gz -> nvtop-45a1796375cd617d16167869bb88e5e69c809468.tar.gz
 _eclasses_=git-r3	875eb471682d3e1f18da124be97dcc81	toolchain-funcs	333970c740aa7b1a92e4fcdc52f612bd	multilib	c19072c3cd7ac5cb21de013f7e9832e0	xdg-utils	baea6080dd821f5562d715887954c9d3	gnome2-utils	a8cf148ec7f5ae0b1f1d33ae5f7f9e88	flag-o-matic	e503ea5acc20410237ba33ec3f7c857d	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	6881b056477c23167d9a6b33e146374e	meson	99466844dd8d4fcfb07578a76f5a9922	python-any-r1	5af215c3da6aef17a2d5e02968df1d5a	xdg	4a14c5c24f121e7da66e5aab4a168c6e
-_md5_=3bf881bdd58e09d5aabd377def6922ab
+_md5_=fdc5d4860e2f9cbdedb6760f29eff9c1
