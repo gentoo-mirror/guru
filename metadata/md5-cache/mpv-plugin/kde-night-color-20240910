@@ -1,0 +1,14 @@
+BDEPEND=dev-qt/qtdbus:5 virtual/pkgconfig
+DEFINED_PHASES=compile install postinst
+DESCRIPTION=Disable Night Color while mpv is running
+EAPI=8
+HOMEPAGE=https://gitlab.com/smaniottonicola/kde-night-color
+INHERIT=mpv-plugin toolchain-funcs
+IUSE=+autoload
+KEYWORDS=~amd64
+LICENSE=Unlicense
+RDEPEND=media-video/mpv:=[cplugins(+),libmpv]
+SLOT=0
+SRC_URI=https://gitlab.com/smaniottonicola/kde-night-color/-/archive/287f8cf168e1ead4706f32c92b0c06aacc25e4fa/kde-night-color-287f8cf168e1ead4706f32c92b0c06aacc25e4fa.tar.bz2 -> kde-night-color-20240910.tar.bz2
+_eclasses_=mpv-plugin	d5b74b0d4b9aa2b088badc969f11de7a	toolchain-funcs	948855ec7ad9f11351edf9066708dfa9	multilib	7e1347c006a76bb812f3a9f663b79991
+_md5_=ee852b3635da17ddad8a159d460bfad6
