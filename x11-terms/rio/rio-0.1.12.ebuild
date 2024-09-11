@@ -8,15 +8,12 @@ EAPI=8
 CRATES="
 	ab_glyph@0.2.28
 	ab_glyph_rasterizer@0.1.8
-	addr2line@0.22.0
 	adler2@2.0.0
 	adler32@1.2.0
 	adler@1.0.2
 	ahash@0.8.11
 	aho-corasick@1.1.3
 	allocator-api2@0.2.18
-	android-activity@0.6.0
-	android-properties@0.2.2
 	android_system_properties@0.1.5
 	anes@0.1.6
 	anstream@0.6.15
@@ -31,7 +28,6 @@ CRATES="
 	ash@0.38.0+1.3.281
 	atomic-waker@1.1.2
 	autocfg@1.3.0
-	backtrace@0.3.73
 	base64@0.22.1
 	bit-set@0.6.0
 	bit-vec@0.7.0
@@ -43,14 +39,13 @@ CRATES="
 	bumpalo@3.16.0
 	bytemuck@1.17.0
 	bytemuck_derive@1.7.1
+	byteorder-lite@0.1.0
 	byteorder@1.5.0
 	bytes@0.3.0
-	bytes@1.7.1
 	calloop-wayland-source@0.3.0
 	calloop@0.13.0
 	cast@0.3.0
 	cc@1.1.14
-	cesu8@1.1.0
 	cfg-if@0.1.10
 	cfg-if@1.0.0
 	cfg_aliases@0.1.1
@@ -71,7 +66,6 @@ CRATES="
 	com@0.6.0
 	com_macros@0.6.0
 	com_macros_support@0.6.0
-	combine@4.6.7
 	concurrent-queue@2.5.0
 	console_error_panic_hook@0.1.7
 	console_log@0.2.2
@@ -91,6 +85,7 @@ CRATES="
 	crossfont@0.8.0
 	crunchy@0.2.2
 	cstr@0.2.12
+	ctor-lite@0.1.0
 	cursor-icon@1.1.0
 	d3d12@22.0.0
 	deflate@1.0.0
@@ -108,6 +103,7 @@ CRATES="
 	errno@0.3.9
 	euclid@0.22.10
 	exr@1.72.0
+	fastrand@2.1.1
 	fdeflate@0.3.4
 	filetime@0.2.24
 	flate2@1.0.33
@@ -137,7 +133,6 @@ CRATES="
 	gethostname@0.4.3
 	getrandom@0.2.15
 	gif@0.13.1
-	gimli@0.29.0
 	gl_generator@0.14.0
 	glow@0.13.1
 	glutin_wgl_sys@0.6.0
@@ -155,6 +150,7 @@ CRATES="
 	hexf-parse@0.2.1
 	idna@0.5.0
 	image@0.24.9
+	image@0.25.2
 	indexmap@2.4.0
 	inotify-sys@0.1.5
 	inotify@0.9.6
@@ -164,8 +160,6 @@ CRATES="
 	itertools@0.10.5
 	itoa@1.0.11
 	jni-sys@0.3.0
-	jni@0.21.1
-	jobserver@0.1.32
 	jpeg-decoder@0.3.1
 	js-sys@0.3.70
 	khronos-egl@6.0.0
@@ -186,6 +180,7 @@ CRATES="
 	log@0.3.9
 	log@0.4.22
 	malloc_buf@0.0.6
+	matchers@0.1.0
 	memchr@2.7.4
 	memmap2@0.9.4
 	metal@0.29.0
@@ -196,41 +191,29 @@ CRATES="
 	miow@0.5.0
 	miow@0.6.0
 	naga@22.1.0
-	ndk-context@0.1.1
 	ndk-sys@0.5.0+25.2.9519653
-	ndk-sys@0.6.0+11769913
-	ndk@0.9.0
 	net2@0.2.39
 	notify@6.1.1
+	nu-ansi-term@0.46.0
 	num-traits@0.2.19
-	num_enum@0.7.3
-	num_enum_derive@0.7.3
 	objc-foundation@0.1.1
 	objc-sys@0.3.5
 	objc2-app-kit@0.2.2
-	objc2-cloud-kit@0.2.2
-	objc2-contacts@0.2.2
 	objc2-core-data@0.2.2
 	objc2-core-image@0.2.2
-	objc2-core-location@0.2.2
 	objc2-encode@4.0.3
 	objc2-foundation@0.2.2
-	objc2-link-presentation@0.2.2
 	objc2-metal@0.2.2
 	objc2-quartz-core@0.2.2
-	objc2-symbols@0.2.2
-	objc2-ui-kit@0.2.2
-	objc2-uniform-type-identifiers@0.2.2
-	objc2-user-notifications@0.2.2
 	objc2@0.5.2
 	objc@0.2.7
 	objc_id@0.1.1
-	object@0.36.3
 	once_cell@1.19.0
 	oorandom@11.1.4
 	option-ext@0.2.0
 	orbclient@0.3.47
 	ordered-float@4.2.2
+	overload@0.1.1
 	owned_ttf_parser@0.24.0
 	parking_lot@0.12.3
 	parking_lot_core@0.9.10
@@ -248,7 +231,6 @@ CRATES="
 	polling@3.7.3
 	ppv-lite86@0.2.20
 	presser@0.3.1
-	proc-macro-crate@3.1.0
 	proc-macro2@1.0.86
 	profiling@1.0.15
 	qoi@0.4.1
@@ -269,14 +251,14 @@ CRATES="
 	redox_syscall@0.4.1
 	redox_syscall@0.5.3
 	redox_users@0.4.6
+	regex-automata@0.1.10
 	regex-automata@0.4.7
+	regex-syntax@0.6.29
 	regex-syntax@0.8.4
 	regex@1.10.6
 	remove_dir_all@0.5.3
 	renderdoc-sys@1.1.0
-	rio-winit-fork@0.30.9
 	roxmltree@0.20.0
-	rustc-demangle@0.1.24
 	rustc-hash@1.1.0
 	rustc-hash@2.0.0
 	rustix@0.38.34
@@ -289,6 +271,7 @@ CRATES="
 	serde_derive@1.0.209
 	serde_json@1.0.127
 	serde_spanned@0.6.7
+	sharded-slab@0.1.7
 	shlex@1.3.0
 	signal-hook-registry@1.4.2
 	signal-hook@0.3.17
@@ -300,32 +283,34 @@ CRATES="
 	smithay-client-toolkit@0.19.2
 	smithay-clipboard@0.7.2
 	smol_str@0.2.2
+	softbuffer@0.4.5
 	spin@0.9.8
 	spirv@0.3.0+sdk-1.3.268.0
 	static_assertions@1.1.0
 	strict-num@0.1.1
 	strsim@0.11.1
 	svg_fmt@0.4.3
-	swash@0.1.18
 	syn@1.0.109
 	syn@2.0.76
 	tempdir@0.3.7
 	termcolor@1.4.1
 	thiserror-impl@1.0.63
 	thiserror@1.0.63
+	thread_local@1.1.8
 	tiff@0.9.1
 	tiny-skia-path@0.11.4
 	tiny-skia@0.11.4
+	tiny-xlib@0.2.3
 	tinytemplate@1.2.1
 	tinyvec@1.8.0
 	tinyvec_macros@0.1.1
-	tokio-macros@2.4.0
-	tokio@1.39.3
 	toml@0.8.19
 	toml_datetime@0.6.8
-	toml_edit@0.21.1
 	toml_edit@0.22.20
 	tracing-core@0.1.32
+	tracing-log@0.2.0
+	tracing-subscriber@0.3.18
+	tracing-web@0.1.3
 	tracing@0.1.40
 	ttf-parser@0.21.1
 	ttf-parser@0.24.1
@@ -338,6 +323,7 @@ CRATES="
 	unicode-xid@0.2.5
 	url@2.5.2
 	utf8parse@0.2.2
+	valuable@0.1.0
 	version_check@0.9.5
 	walkdir@2.5.0
 	wasi@0.11.0+wasi-snapshot-preview1
@@ -372,11 +358,9 @@ CRATES="
 	winapi@0.3.9
 	windows-core@0.52.0
 	windows-sys@0.42.0
-	windows-sys@0.45.0
 	windows-sys@0.48.0
 	windows-sys@0.52.0
 	windows-sys@0.59.0
-	windows-targets@0.42.2
 	windows-targets@0.48.5
 	windows-targets@0.52.6
 	windows@0.42.0
@@ -403,7 +387,6 @@ CRATES="
 	windows_x86_64_msvc@0.42.2
 	windows_x86_64_msvc@0.48.5
 	windows_x86_64_msvc@0.52.6
-	winnow@0.5.40
 	winnow@0.6.18
 	wio@0.2.2
 	x11-clipboard@0.9.2
@@ -421,7 +404,7 @@ CRATES="
 	zerocopy-derive@0.7.35
 	zerocopy@0.7.35
 	zune-inflate@0.2.54
-"
+	"
 
 inherit cargo desktop
 
