@@ -7,7 +7,7 @@ inherit unpacker desktop xdg
 
 DESCRIPTION="ArmCord is a custom client designed to enhance your Discord experience."
 HOMEPAGE="https://armcord.app/"
-SRC_URI="https://github.com/ArmCord/ArmCord/releases/download/v${PV}/ArmCord_${PV}_amd64.deb -> ${P}.deb"
+SRC_URI="https://github.com/ArmCord/ArmCord/releases/download/v${PV}/ArmCord-${PV}-linux-amd64.deb -> ${P}.deb"
 S="${WORKDIR}"
 
 LICENSE="MIT BSD OSL-3.0"
