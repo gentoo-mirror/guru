@@ -90,6 +90,9 @@ BDEPEND="
 	>=sys-libs/ncurses-6
 	>=sys-libs/zlib-1.3
 	dev-lang/python
+	$(python_gen_cond_dep '
+		dev-python/setuptools[${PYTHON_USEDEP}]
+	' python3_{12..13})
 "
 
 src_unpack() {
@@ -111,6 +114,13 @@ src_unpack() {
 		&& mv 'swift-package-manager' 'swiftpm' \
 		&& popd \
 		|| die
+}
+
+src_configure() {
+	default
+
+	# Necessary to respect PYTHON_SINGLE_TARGET, if defined.
+	python_setup
 }
 
 src_compile() {
