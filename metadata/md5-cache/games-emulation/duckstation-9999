@@ -6,10 +6,10 @@ EAPI=7
 HOMEPAGE=https://github.com/stenzek/duckstation
 INHERIT=xdg cmake desktop git-r3
 IUSE=+dbus discord +egl +evdev fbdev +gamepad gbm +nogui qt6 retroachievements wayland X
-LICENSE=GPL-3
+LICENSE=CC-BY-NC-ND-4.0
 PROPERTIES=live
 RDEPEND=media-libs/cubeb evdev? ( dev-libs/libevdev ) dbus? ( sys-apps/dbus ) gamepad? ( >=media-libs/libsdl2-2.28.5 ) gbm? ( x11-libs/libdrm ) qt6? ( dev-qt/qtbase:6[gui,network,widgets] dev-qt/qttools:6[linguist] ) retroachievements? ( net-misc/curl[curl_ssl_gnutls] ) X? ( x11-libs/libX11 x11-libs/libXrandr )
 REQUIRED_USE=?? ( fbdev gbm ) gbm? ( egl ) wayland? ( egl )
 SLOT=0
 _eclasses_=xdg-utils	5465aed08f1dfc2a75f14cbea4272961	xdg	8d7d90c01b1b1c2602dab6fc6b177097	toolchain-funcs	948855ec7ad9f11351edf9066708dfa9	multilib	7e1347c006a76bb812f3a9f663b79991	flag-o-matic	fa33e3696fe4689dda7e9affe92e2c94	multiprocessing	e644caa6eb7ce7e5ab0864383ac13ad9	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	cmake	10a50dfaf728b802fcfd37f8d0da9056	desktop	56973babb9c5f19cab0eeb53ece644c6	git-r3	875eb471682d3e1f18da124be97dcc81
-_md5_=fb2b3e146e07966e76c3845284f73b97
+_md5_=73bb4bc7ccf14d24281e19db12598ffe
