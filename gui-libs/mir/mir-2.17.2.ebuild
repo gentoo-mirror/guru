@@ -12,7 +12,7 @@ SRC_URI="https://github.com/canonical/mir/archive/refs/tags/v${PV}.tar.gz -> ${P
 LICENSE="|| ( GPL-2 GPL-3 ) || ( LGPL-2.1 LGPL-3 )"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="examples test"
+IUSE="test X"
 RESTRICT="!test? ( test )"
 
 RDEPEND="
@@ -29,12 +29,12 @@ RDEPEND="
 	media-libs/libglvnd
 	media-libs/mesa
 	sys-apps/util-linux
-	x11-libs/libX11
 	x11-libs/libXcursor
 	x11-libs/libdrm
 	x11-libs/libxcb:=
 	x11-libs/libxkbcommon
 	virtual/libudev:=
+	X? ( x11-libs/libX11 )
 "
 DEPEND="
 	${RDEPEND}
@@ -43,7 +43,6 @@ DEPEND="
 BDEPEND="
 	dev-util/gdbus-codegen
 	virtual/pkgconfig
-	examples? ( dev-util/wayland-scanner )
 	test? (
 		dev-cpp/gtest
 		dev-util/umockdev
@@ -53,20 +52,24 @@ BDEPEND="
 
 PATCHES=(
 	# bug 932786
-	"${FILESDIR}/${P}-remove-debug-flags.patch"
+	"${FILESDIR}/${PN}-2.17.0-remove-debug-flags.patch"
 )
 
 src_prepare() {
 	cmake_src_prepare
-	use examples || cmake_comment_add_subdirectory examples/
+	cmake_comment_add_subdirectory examples/
 }
 
 src_configure() {
+	local platforms="gbm-kms;wayland"
+	use X && platforms="${platforms};x11"
+
 	local mycmakeargs=(
 		# wlcs is not packaged
 		-DMIR_ENABLE_WLCS_TESTS=OFF
 		-DMIR_ENABLE_TESTS="$(usex test)"
 		-DMIR_FATAL_COMPILE_WARNINGS=OFF
+		-DMIR_PLATFORM="${platforms}"
 	)
 	use test && mycmakeargs+=(
 		# likely will not work in build environment
