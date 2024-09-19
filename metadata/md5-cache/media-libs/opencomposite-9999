@@ -1,13 +1,13 @@
 BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.20.5 >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install postinst prepare test unpack
-DEPEND=dev-lang/python dev-util/vulkan-headers media-libs/libglvnd[X] media-libs/openxr-loader
+DEPEND=dev-lang/python dev-util/vulkan-headers media-libs/glm media-libs/libglvnd[X] media-libs/openxr-loader
 DESCRIPTION=OpenVR over OpenXR compatibility layer
 EAPI=8
 HOMEPAGE=https://gitlab.com/znixian/OpenOVR
 INHERIT=cmake git-r3
 LICENSE=GPL-3 Apache-2.0 MIT
 PROPERTIES=live
-RDEPEND=dev-lang/python dev-util/vulkan-headers media-libs/libglvnd[X] media-libs/openxr-loader
+RDEPEND=dev-lang/python dev-util/vulkan-headers media-libs/glm media-libs/libglvnd[X] media-libs/openxr-loader
 SLOT=0
 _eclasses_=toolchain-funcs	948855ec7ad9f11351edf9066708dfa9	multilib	7e1347c006a76bb812f3a9f663b79991	flag-o-matic	fa33e3696fe4689dda7e9affe92e2c94	multiprocessing	e644caa6eb7ce7e5ab0864383ac13ad9	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	5465aed08f1dfc2a75f14cbea4272961	cmake	10a50dfaf728b802fcfd37f8d0da9056	git-r3	875eb471682d3e1f18da124be97dcc81
-_md5_=e8fbc17621d451ac7c58700820c426d1
+_md5_=e9171b535a22b2bd4c476bd10a5544e0

@@ -137,6 +137,7 @@ app-containers/anbox-modules 0_p20240210: Anbox kernel modules
 app-containers/arachsys-containers 1.7: Simple containers using Linux user namespaces
 app-containers/nvidia-container-toolkit 1.14.6 1.16.1 9999: NVIDIA container runtime toolkit
 app-containers/pods 2.1.0_pre20240215-r4: Keep track of your podman containers
+app-containers/slim 1.40.11: Inspect, optimize and debug containers
 app-containers/waydroid 1.4.2 1.4.2-r1 1.4.2-r2: Container-based approach to boot a full Android system on Linux systems
 app-containers/waydroid-images 9999: Manage images for app-containers/waydroid using portage
 app-crypt/PBinCLI 0.3.5 0.3.5-r1: PBinCLI is a command line client for PrivateBin written in Python 3
@@ -223,7 +224,7 @@ app-misc/cheat 4.2.3 4.3.3-r1: cheat allows you to create and view interactive c
 app-misc/clifm 1.11 1.13 1.16 1.18 9999: The command line file manager
 app-misc/clipboard 0.9.0.1: Cut, copy, and paste anything in your terminal
 app-misc/cliphist 0.5.0: Wayland clipboard manager with support for multimedia
-app-misc/corectrl 1.4.1 9999: Core control application
+app-misc/corectrl 1.4.1 1.4.2 9999: Core control application
 app-misc/cpufetch 1.05-r1: Simplistic yet fancy CPU architecture fetching tool
 app-misc/dbf 0.9.0: Command line tool to read the content of dBASE III, IV, and 5.0 files
 app-misc/diff-so-fancy 1.4.4: Good-lookin' diffs. Actually... nah... The best-lookin' diffs
@@ -308,7 +309,7 @@ app-office/standartnotes-bin 3.183.22: End-to-end encrypted note-taking app, alt
 app-portage/appswipe 1.1.14 1.1.68: Application for browsing your local Portage repository files
 app-portage/pacvis 0.4.2: Displays dependency graphs of packages
 app-portage/portage-lostfiles 0.5.5: A simple script to identify files not tracked by Portage package manager
-app-portage/portagecfg 2.1.1 2.1.3 2.2.2 2.3.0: Utility to write Portage config files in an easy manner.
+app-portage/portagecfg 2.1.3 2.2.2 2.3.0 2.4.0: Utility to write Portage config files in an easy manner.
 app-portage/quantum-resolver 9999: A WIP portage dependency resolver
 app-portage/showbuild 0.9.1-r1: Script to follow log of running portage builds
 app-portage/version 0.19.0_alpha 0.20.1_alpha 0.21.0_alpha: A command line function for package version management.
@@ -564,7 +565,7 @@ dev-libs/polyseed 1.0.0 2.0.0 9999: Mnemonic seed library for Monero and other C
 dev-libs/properties-cpp 0.0.2: Simple convenience library for handling properties and signals in C++11
 dev-libs/qhttpengine 1.0.1-r1 9999: HTTP server for Qt applications
 dev-libs/qschematic 1.6.0: Library for creating flowcharts and engineering diagrams
-dev-libs/randomx 1.1.8 1.1.9 1.2.1: Proof of work algorithm based on random code execution
+dev-libs/randomx 1.2.1 1.2.1-r1: Proof of work algorithm based on random code execution
 dev-libs/sealcurses 2.0.18_pre20230206 2.0.18_pre20230811: SDL Emulation and Adaptation Layer for Curses
 dev-libs/sirit 0_p20220725: A runtime SPIR-V assembler
 dev-libs/supercop 0_p20200827: Fast cryptographic operations for Monero wallets
@@ -920,7 +921,7 @@ dev-util/find-work-pkgcheck 0.2.0 0.2.1: Personal advice utility for Gentoo pack
 dev-util/find-work-repology 0.2.0 0.2.1: Personal advice utility for Gentoo package maintainers: Repology plugin
 dev-util/fnm 1.37.1: Fast and simple Node.js version manager
 dev-util/fortls 2.13.0 3.0.0 3.1.1 3.1.2: Fortran Language Server (fortls)
-dev-util/fortran-test-drive 0.4.0: The simple testing framework (for Fortran)
+dev-util/fortran-test-drive 0.4.0 0.5.0: The simple testing framework (for Fortran)
 dev-util/gammaray 2.11.3: High-level runtime introspection tool for Qt applications
 dev-util/git-bug 0.8.0 9999: distributed, offline-first bug tracker
 dev-util/gitlab-ci-local-bin 4.43.0 4.47.0: Run gitlab pipelines locally as shell executor or docker executor
@@ -957,6 +958,7 @@ dev-util/stripe-cli 9999: A command-line tool for Stripe
 dev-util/stylua 0.20.0: A code formatter for Lua
 dev-util/tflint-bin 0.43.0 0.46.0: A Pluggable Terraform Linter
 dev-util/tokei 12.1.1 12.1.2: Count your code, quickly
+dev-util/trivy 0.55.2: Vulnerability scanner for container images, file systems, and Git repos
 dev-util/typescript-language-server 4.1.2 4.3.3: TypeScript & JavaScript Language Server
 dev-util/upstream-ontologist 0.1.35-r1: Tracking of upstream project metadata
 dev-util/vala-language-server 0.48.4: Code Intelligence for Vala & Genie
@@ -972,7 +974,7 @@ dev-vcs/gitqlient-gitserver-plugin 0.2.0: GitQlient GitServer plugin
 dev-vcs/gitqlient-jenkins-plugin 0.2.0: GitQlient Jenkins plugin
 dev-vcs/gitui 0.26.3: blazing fast terminal-ui for git
 dev-vcs/jj 0.21.0 9999: Jujutsu - an experimental version control system
-dev-vcs/lazygit 0.42.0 0.43.1 0.44.0: Simple terminal UI for git commands
+dev-vcs/lazygit 0.42.0 0.43.1 0.44.1: Simple terminal UI for git commands
 dev-vcs/pijul 1.0.0_beta9: A distributed version control system based on a theory of patches
 dev-zig/zls 0.10.0-r2 0.13.0 9999: The officially unofficial Ziglang language server
 games-action/ATLauncher 3.4.3.1 3.4.27.0: Minecraft launcher which integrates multiple different ModPacks
@@ -1059,7 +1061,7 @@ gnome-extra/vvmplayer 1.4: Visual Voicemail Player
 gnome-extra/wike 3.0.0 3.0.1: Wikipedia Reader for the GNOME Desktop
 gnome-extra/yad 13.0 14.1 9999: Display GTK+ dialog boxes from command line or shell scripts
 gui-apps/1password 8.10.28: The world’s most-loved password manager
-gui-apps/ReGreet 0.1.1-r7 9999: A clean and customizable GTK-based greetd greeter written in Rust
+gui-apps/ReGreet 0.1.1-r8 9999: A clean and customizable GTK-based greetd greeter written in Rust
 gui-apps/aylurs-gtk-shell 1.8.2-r1: Aylurs's Gtk Shell (AGS), An eww inspired gtk widget system.
 gui-apps/azote 1.13.0 9999: wallpaper manager for wlroots compositors
 gui-apps/clipman 1.6.2 1.6.3 1.6.4: A basic clipboard manager for Wayland.
@@ -1162,7 +1164,7 @@ gui-apps/wlsunset 0.4.0 9999: Day/night gamma adjustments for Wayland
 gui-apps/wob 0.14.2 0.15.1-r1: Lightweight overlay volume/backlight/progress/anything bar for Wayland
 gui-apps/wscreensaver 9999: Xscreensaver screensavers ported to wayland
 gui-apps/wtype 0.4: xdotool type for wayland
-gui-apps/xremap 0.10.0: Dynamic key remap for X and Wayland
+gui-apps/xremap 0.10.1: Dynamic key remap for X and Wayland
 gui-apps/xwayland-satellite 0.4: Xwayland outside your Wayland
 gui-apps/yambar 1.11.0 9999: Simplistic and highly configurable status panel for X and Wayland
 gui-libs/gtk-session-lock 0.2.0-r5 9999: GTK-based lockscreen for Wayland
@@ -1314,7 +1316,7 @@ media-sound/spotifyd 0.3.5_p20240513: A Spotify daemon
 media-sound/spotube-bin 3.8.0: An open source, cross-platform Spotify client
 media-sound/supersonic 0.13.0-r1 0.13.1: A lightweight and full-featured cross-platform desktop client
 media-sound/tidal-hifi-bin 5.16.0 5.16.0-r1: Web version of Tidal running in electron with Hi-Fi support thanks to Widevine.
-media-sound/yewtube 2.10.5-r1 9999: Terminal-based YouTube player and downloader
+media-sound/yewtube 2.12.0 9999: Terminal-based YouTube player and downloader
 media-sound/youtube-music-bin 3.3.6: YouTube Music Desktop App bundled with custom plugins
 media-sound/zita-ajbridge 0.8.4 0.8.4-r1: zita-a2j and zita-j2a - bridges between ALSA and JACK
 media-video/avisynth+ 9999: A powerful nonlinear scripting language for video
@@ -1494,13 +1496,13 @@ net-p2p/dogecoin-qt 1.14.8 9999: Dogecoin Core Qt for desktop. Downloaded blockc
 net-p2p/feather 2.6.7-r1 2.6.8 9999: A free, open-source Monero wallet
 net-p2p/fragments 3.0.0 3.0.1: Fragments is an easy to use BitTorrent client
 net-p2p/gridcoin 5.4.8.0 5.4.8.0_p1: Proof-of-Stake based cryptocurrency that rewards BOINC computation
-net-p2p/monero 0.17.3.2 0.18.3.1 0.18.3.3-r1 0.18.3.3-r2 0.18.3.4 9999: The secure, private, untraceable cryptocurrency
+net-p2p/monero 0.17.3.2 0.18.3.3-r2 0.18.3.4 9999: The secure, private, untraceable cryptocurrency
 net-p2p/p2pool 4.0 4.1 9999: Decentralized pool for Monero mining
 net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
 net-p2p/yggdrasil-go 0.5.7 9999: An experiment in scalable routing as an encrypted IPv6 overlay network
 net-print/hpuld 1.00.39.15.00.23-r1: HP Unified Linux Driver (for samsung hardware)
 net-proxy/MTProxy 3.0.4-r1: Community fork of MTProxy
-net-proxy/byedpi 0.12 0.13 9999: Bypass DPI SOCKS proxy
+net-proxy/byedpi 0.12 0.13 0.14.1 9999: Bypass DPI SOCKS proxy
 net-proxy/ngrok-bin 3.10.0: ngrok is a reverse proxy, firewall, and API gateway
 net-proxy/snowflake 2.8.1 2.9.2: Pluggable Transport using WebRTC, inspired by Flashproxy
 net-voip/baresip 3.12.1-r1 3.13.0 3.14.0 3.15.0: Baresip is a portable and modular SIP User-Agent
@@ -1626,7 +1628,7 @@ sys-block/partclone 0.3.20: Partition cloning tool
 sys-boot/customrescuecd-x86-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/customrescuecd-x86_64-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/grml-rescueboot 0.6.1: grub2 script to add ISO images to the grub2 boot menu
-sys-boot/limine 7.0.0 7.0.3 7.0.5 7.3.0 7.5.0 7.9.2 8.0.5 8.0.6 8.0.7 8.0.9 8.0.11: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
+sys-boot/limine 7.0.0 7.0.3 7.0.5 7.3.0 7.5.0 7.9.2 8.0.5 8.0.6 8.0.7 8.0.9 8.0.11 8.0.12 8.0.13: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
 sys-boot/mkusb 23.2.0: CLI and GUI for creating bootable live USB, with optional persistent storage
 sys-boot/ventoy-bin 1.0.97 1.0.98: Creator of bootable USBs, with ability to copy ISOs, persistence storage
 sys-boot/woeusb-ng 0.2.10 0.2.12: Create Windows installer USB from ISO (rewrite of WoeUSB)
@@ -1735,7 +1737,7 @@ x11-libs/gtk-fortran 3.24.31 4.4.1 4.5.0 4.6.0: A GTK+ binding to build Graphica
 x11-libs/sdl-fakeqwerty 0_pre20191217: Fixes non-QWERTY keyboards on Prison Architect (and maybe other SDL games)
 x11-misc/aerial-sddm-theme 0_pre20191018-r1 9999: SDDM theme with Apple TV Aerial videos
 x11-misc/autotiling 1.9.2 1.9.3: Script for sway and i3 to automatically switch the window split orientation
-x11-misc/betterlockscreen 4.3.0: sweet looking lockscreen for linux system
+x11-misc/betterlockscreen 4.4.0: sweet looking lockscreen for linux system
 x11-misc/betterlockscreen_rapid 0.0.0_pre20210701 0.0.0_pre20210708: A rapid and good-looking screen locker
 x11-misc/dotool 1.5: Command to simulate input anywhere
 x11-misc/gobble 1.3: Hide current window before launching external program, unhide after quitting

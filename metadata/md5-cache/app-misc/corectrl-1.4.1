@@ -1,6 +1,6 @@
 BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.20.5 dev-libs/libpcre2:* >=kde-frameworks/extra-cmake-modules-5.106.0:*
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup test
-DEPEND=dev-libs/botan dev-libs/pugixml dev-libs/spdlog:= dev-libs/quazip dev-qt/qtcharts:5[qml] dev-qt/qtdbus:5 dev-qt/qtdeclarative:5 dev-qt/qtgui:5 dev-qt/qtnetwork:5 dev-qt/qtwidgets:5 sys-auth/polkit dev-cpp/units dev-qt/linguist-tools:5 dev-qt/qtsvg:5 x11-libs/libdrm[video_cards_amdgpu] test? ( >=dev-cpp/catch-3.5.2 dev-cpp/trompeloeil ) dev-qt/qtcore:5
+DEPEND=dev-libs/botan:= dev-libs/pugixml dev-libs/spdlog:= >=dev-libs/quazip-1.3:=[qt5] dev-qt/qtcharts:5[qml] dev-qt/qtdbus:5 dev-qt/qtdeclarative:5 dev-qt/qtgui:5 dev-qt/qtnetwork:5 dev-qt/qtwidgets:5 sys-auth/polkit[introspection] dev-cpp/units dev-qt/linguist-tools:5 dev-qt/qtsvg:5 x11-libs/libdrm[video_cards_amdgpu] test? ( >=dev-cpp/catch-3.5.2 dev-cpp/trompeloeil ) dev-qt/qtcore:5
 DESCRIPTION=Core control application
 EAPI=8
 HOMEPAGE=https://gitlab.com/corectrl/corectrl
@@ -9,9 +9,9 @@ INHERIT=ecm
 IUSE=test debug
 KEYWORDS=~amd64
 LICENSE=GPL-3
-RDEPEND=dev-libs/botan dev-libs/pugixml dev-libs/spdlog:= dev-libs/quazip dev-qt/qtcharts:5[qml] dev-qt/qtdbus:5 dev-qt/qtdeclarative:5 dev-qt/qtgui:5 dev-qt/qtnetwork:5 dev-qt/qtwidgets:5 sys-auth/polkit dev-libs/glib dev-libs/libfmt dev-qt/qtquickcontrols2 || ( kde-frameworks/breeze-icons:* kde-frameworks/oxygen-icons:* ) >=kde-frameworks/kf-env-4 dev-qt/qtcore:5
+RDEPEND=dev-libs/botan:= dev-libs/pugixml dev-libs/spdlog:= >=dev-libs/quazip-1.3:=[qt5] dev-qt/qtcharts:5[qml] dev-qt/qtdbus:5 dev-qt/qtdeclarative:5 dev-qt/qtgui:5 dev-qt/qtnetwork:5 dev-qt/qtwidgets:5 sys-auth/polkit[introspection] dev-libs/glib dev-libs/libfmt:= dev-qt/qtquickcontrols2 || ( kde-frameworks/breeze-icons:* kde-frameworks/oxygen-icons:* ) >=kde-frameworks/kf-env-4 dev-qt/qtcore:5
 RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://gitlab.com/corectrl/corectrl/-/archive/v1.4.1/corectrl-v1.4.1.tar.bz2
 _eclasses_=toolchain-funcs	948855ec7ad9f11351edf9066708dfa9	multilib	7e1347c006a76bb812f3a9f663b79991	flag-o-matic	fa33e3696fe4689dda7e9affe92e2c94	multiprocessing	e644caa6eb7ce7e5ab0864383ac13ad9	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	5465aed08f1dfc2a75f14cbea4272961	cmake	10a50dfaf728b802fcfd37f8d0da9056	virtualx	53fb93b5555470a64f14fde25cf1ad2c	xdg	8d7d90c01b1b1c2602dab6fc6b177097	ecm	fe5d0f686a62c5a29db9433ce94c2e31
-_md5_=d5c1161b4ce804eafb9060219297a6af
+_md5_=3186fb9974ee5259249f14e7b4d2ea0c
