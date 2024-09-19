@@ -51,11 +51,3 @@ src_prepare() {
 
 	distutils-r1_src_prepare
 }
-
-src_compile() {
-	distutils-r1_src_compile --build-dir "${WORKDIR}/${P}"
-}
-
-src_install() {
-	distutils-r1_src_install --build-dir "${WORKDIR}/${P}"
-}
