@@ -1,6 +1,6 @@
 BDEPEND=app-arch/unzip app-alternatives/ninja >=dev-build/cmake-3.20.5
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare test unpack
-DEPEND=dev-db/sqlite:3 dev-libs/cJSON opengl? ( media-libs/glew:= media-libs/libsdl2[sound,video,X] media-libs/libogg media-libs/libjpeg-turbo:0 virtual/opengl sys-libs/zlib:=[minizip] curl? ( net-misc/curl ) freetype? ( media-libs/freetype ) gettext? ( sys-devel/gettext ) renderer-gles? ( media-libs/mesa[gles1] ) openal? ( media-libs/openal ) png? ( media-libs/libpng:0= ) ssl? ( dev-libs/openssl:0= ) theora? ( media-libs/libtheora ) vorbis? ( media-libs/libvorbis ) lua? ( >=dev-lang/lua-5.4:* ) )
+DEPEND=dev-db/sqlite:3 dev-libs/cJSON opengl? ( media-libs/glew:= media-libs/libsdl2[sound,video,X] media-libs/libogg media-libs/libjpeg-turbo:0 virtual/opengl sys-libs/zlib:=[minizip] curl? ( net-misc/curl ) freetype? ( media-libs/freetype ) gettext? ( sys-devel/gettext ) renderer-gles? ( media-libs/mesa[opengl] ) openal? ( media-libs/openal ) png? ( media-libs/libpng:0= ) ssl? ( dev-libs/openssl:0= ) theora? ( media-libs/libtheora ) vorbis? ( media-libs/libvorbis ) lua? ( >=dev-lang/lua-5.4:* ) )
 DESCRIPTION=Wolfenstein: Enemy Territory 2.60b compatible client/server
 EAPI=8
 HOMEPAGE=https://www.etlegacy.com/
@@ -9,9 +9,9 @@ INHERIT=cmake unpacker xdg
 IUSE=autoupdate +curl dedicated +freetype +gettext ipv6 irc +lua omnibot +openal +opengl +png renderer2 renderer-gles +ssl +theora +vorbis
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-3 RTCW-ETEULA
-RDEPEND=dev-db/sqlite:3 dev-libs/cJSON opengl? ( media-libs/glew:= media-libs/libsdl2[sound,video,X] media-libs/libogg media-libs/libjpeg-turbo:0 virtual/opengl sys-libs/zlib:=[minizip] curl? ( net-misc/curl ) freetype? ( media-libs/freetype ) gettext? ( sys-devel/gettext ) renderer-gles? ( media-libs/mesa[gles1] ) openal? ( media-libs/openal ) png? ( media-libs/libpng:0= ) ssl? ( dev-libs/openssl:0= ) theora? ( media-libs/libtheora ) vorbis? ( media-libs/libvorbis ) lua? ( >=dev-lang/lua-5.4:* ) )
+RDEPEND=dev-db/sqlite:3 dev-libs/cJSON opengl? ( media-libs/glew:= media-libs/libsdl2[sound,video,X] media-libs/libogg media-libs/libjpeg-turbo:0 virtual/opengl sys-libs/zlib:=[minizip] curl? ( net-misc/curl ) freetype? ( media-libs/freetype ) gettext? ( sys-devel/gettext ) renderer-gles? ( media-libs/mesa[opengl] ) openal? ( media-libs/openal ) png? ( media-libs/libpng:0= ) ssl? ( dev-libs/openssl:0= ) theora? ( media-libs/libtheora ) vorbis? ( media-libs/libvorbis ) lua? ( >=dev-lang/lua-5.4:* ) )
 RESTRICT=bindist mirror
 SLOT=0
 SRC_URI=https://cdn.splashdamage.com/downloads/games/wet/et260b.x86_full.zip https://github.com/etlegacy/etlegacy/archive/v2.82.0.tar.gz -> etlegacy-2.82.0.tar.gz
 _eclasses_=toolchain-funcs	948855ec7ad9f11351edf9066708dfa9	multilib	7e1347c006a76bb812f3a9f663b79991	flag-o-matic	fa33e3696fe4689dda7e9affe92e2c94	multiprocessing	e644caa6eb7ce7e5ab0864383ac13ad9	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	5465aed08f1dfc2a75f14cbea4272961	cmake	10a50dfaf728b802fcfd37f8d0da9056	unpacker	fb4b84181244b3b9990fa0bf40232dd2	xdg	8d7d90c01b1b1c2602dab6fc6b177097
-_md5_=97d93219d21a8d480790b83f9ed8c099
+_md5_=1ef814be9152e6d4d3cdc3cba816062b
