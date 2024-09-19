@@ -39,10 +39,6 @@ BDEPEND="
 	test? ( dev-cpp/gtest )
 "
 
-PATCHES=(
-	"${FILESDIR}/${PN}-respect-ldflags.patch"
-)
-
 src_configure() {
 	local mycmakeargs=(
 		-DLMS_IMAGE_BACKEND=$(usex stb stb graphicsmagick)
