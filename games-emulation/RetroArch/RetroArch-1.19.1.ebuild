@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit flag-o-matic
+inherit flag-o-matic toolchain-funcs
 
 DESCRIPTION="RetroArch is a frontend for emulators, game engines and media players"
 HOMEPAGE="https://www.retroarch.com"
@@ -14,12 +14,10 @@ LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
 
-IUSE="7zip alsa cg cpu_flags_arm_neon cpu_flags_arm_vfp cpu_flags_x86_sse2 cheevos debug dispmanx +egl filters ffmpeg gles2 gles3 hid jack kms libass libusb materialui network openal +opengl osmesa oss +ozone +pulseaudio +rgui sdl sdl2 +truetype +threads udev v4l2 videocore vulkan wayland +X xinerama xmb xv zlib"
+IUSE="7zip alsa cg cpu_flags_arm_neon cpu_flags_arm_vfp cpu_flags_x86_sse2 cheevos debug dispmanx +egl filters ffmpeg gles2 gles3 hid jack kms libass libusb materialui network openal +opengl osmesa oss +ozone pulseaudio +rgui sdl +truetype +threads udev v4l2 videocore vulkan wayland X xinerama xmb xv zlib"
 
 REQUIRED_USE="
-	|| ( alsa jack openal oss pulseaudio )
-	|| ( opengl sdl sdl2 vulkan dispmanx )
-	|| ( kms X wayland videocore )
+	|| ( opengl sdl vulkan dispmanx )
 	|| ( materialui ozone rgui xmb )
 	alsa? ( threads )
 	arm? ( gles2? ( egl ) )
@@ -34,17 +32,16 @@ REQUIRED_USE="
 	kms? ( egl )
 	libass? ( ffmpeg )
 	libusb? ( hid )
-	sdl? ( rgui )
-	sdl2? ( rgui !sdl )
 	videocore? ( arm )
 	vulkan? ( amd64 )
 	wayland? ( egl )
 	xinerama? ( X )
 	xv? ( X )
 "
-
 RDEPEND="
-	alsa? ( media-libs/alsa-lib:0= )
+	app-arch/xz-utils
+	x11-libs/libxkbcommon
+	alsa? ( media-libs/alsa-lib )
 	cg? ( media-gfx/nvidia-cg-toolkit:0= )
 	arm? ( dispmanx? ( || ( media-libs/raspberrypi-userland:0 media-libs/raspberrypi-userland-bin:0 ) ) )
 	ffmpeg? ( >=media-video/ffmpeg-2.1.3:0= )
@@ -52,30 +49,43 @@ RDEPEND="
 	libass? ( media-libs/libass:0= )
 	libusb? ( virtual/libusb:1= )
 	openal? ( media-libs/openal:0= )
-	opengl? ( media-libs/mesa:0=[gles2(+)?] )
+	opengl? ( media-libs/libglvnd )
 	osmesa? ( media-libs/mesa:0=[osmesa?] )
-	pulseaudio? ( media-libs/libpulse:0= )
-	sdl? ( >=media-libs/libsdl-1.2.10:0=[joystick] )
-	sdl2? ( media-libs/libsdl2:0=[joystick] )
-	truetype? ( media-libs/freetype:2= )
-	udev? ( virtual/udev:0=
+	pulseaudio? ( media-libs/libpulse )
+	sdl? ( media-libs/libsdl2[joystick] )
+	truetype? (
+		media-libs/fontconfig
+		media-libs/freetype:2
+	)
+	udev? ( virtual/udev
 		X? ( x11-drivers/xf86-input-evdev:0= )
 	)
-	amd64? ( vulkan? ( media-libs/vulkan-loader:0= ) )
+	amd64? ( vulkan? ( media-libs/vulkan-loader ) )
 	v4l2? ( media-libs/libv4l:0= )
-	wayland? ( media-libs/mesa:0=[wayland?] )
+	wayland? (
+		dev-libs/wayland
+		dev-libs/wayland-protocols
+	)
 	X? (
-		x11-base/xorg-server:0=
-		>=x11-libs/libxkbcommon-0.4.0:0=
+		x11-libs/libX11
+		x11-libs/libXext
+		x11-libs/libXrandr
+		x11-libs/libXxf86vm
+		x11-libs/libxcb:=
 	)
 	xinerama? ( x11-libs/libXinerama:0= )
-	xv? ( x11-libs/libXv:0= )
+	xv? ( x11-libs/libXv )
 	zlib? ( sys-libs/zlib:0= )
 "
-
-DEPEND="${RDEPEND}
+DEPEND="${RDEPEND}"
+BDEPEND="
 	virtual/pkgconfig
+	wayland? ( dev-util/wayland-scanner )
 "
+
+PATCHES=(
+	"${FILESDIR}/${PN}-1.16.0.3-int-conversion.patch"
+)
 
 src_configure() {
 	if use cg; then
@@ -95,10 +105,13 @@ src_configure() {
 	fi
 
 	# Note that OpenVG support is hard-disabled. (See ${RDEPEND} above.)
-	./configure \
+	CC="$(tc-getCC)" CXX="$(tc-getCXX)" ./configure \
 		--prefix="${EPREFIX}/usr" \
 		--docdir="${EPREFIX}/usr/share/doc/${PF}" \
 		--enable-dynamic \
+		--disable-builtinzlib \
+		--disable-qt \
+		--disable-sdl \
 		--disable-vg \
 		$(use_enable 7zip) \
 		$(use_enable alsa) \
@@ -126,8 +139,7 @@ src_configure() {
 		$(use_enable ozone) \
 		$(use_enable pulseaudio pulse) \
 		$(use_enable rgui) \
-		$(use_enable sdl) \
-		$(use_enable sdl2) \
+		$(use_enable sdl sdl2) \
 		$(use_enable threads) \
 		$(use_enable truetype freetype) \
 		$(use_enable udev) \
@@ -139,14 +151,15 @@ src_configure() {
 		$(use_enable xinerama) \
 		$(use_enable xmb) \
 		$(use_enable xv xvideo) \
-		$(use_enable zlib)
+		$(use_enable zlib) \
+		|| die
 }
 
 src_compile() {
-	emake $(usex debug "DEBUG=1" "")
+	emake V=1 $(usex debug "DEBUG=1" "")
 	if use filters; then
-		emake $(usex debug "build=debug" "build=release") -C gfx/video_filters/
-		emake $(usex debug "build=debug" "build=release") -C libretro-common/audio/dsp_filters/
+		emake CC="$(tc-getCC)" $(usex debug "build=debug" "build=release") -C gfx/video_filters/
+		emake CC="$(tc-getCC)" $(usex debug "build=debug" "build=release") -C libretro-common/audio/dsp_filters/
 	fi
 }
 
