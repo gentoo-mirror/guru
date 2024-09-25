@@ -1,0 +1,13 @@
+BDEPEND=app-arch/unzip X? ( >=x11-apps/mkfontscale-1.2.0 media-fonts/encodings )
+DEFINED_PHASES=install postinst postrm setup
+DESCRIPTION=Libertinus font
+EAPI=8
+HOMEPAGE=https://github.com/alerque/libertinus
+INHERIT=font
+IUSE=X
+KEYWORDS=~amd64 ~x86
+LICENSE=OFL-1.1
+SLOT=0
+SRC_URI=https://github.com/alerque/libertinus/releases/download/v7.050/Libertinus-7.050.zip -> libertinus-7.050.tar.zip
+_eclasses_=font	aa113a3df9cd0a9693a1c1ee7c34a6eb
+_md5_=c2c7644e537168f6eaa5125f65a7e8c3

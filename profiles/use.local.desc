@@ -9,6 +9,7 @@ app-accessibility/rhvoice:speech-dispatcher - Build a speech-dispatcher middlewa
 app-accessibility/rhvoice-core:speech-dispatcher - Build a speech-dispatcher middleware module
 app-admin/ananicy-cpp:bpf - Use eBPF for processing
 app-admin/ananicy-cpp:clang - Use Clang compiler instead of GCC
+app-admin/blahajdots:gsettings - Enable the gsettings backend.
 app-admin/hardinfo2:benchmark - sysbench for benchmarking
 app-admin/hardinfo2:dmi - dmidecode for DMI
 app-admin/hardinfo2:fwupd - fwupd
@@ -454,12 +455,15 @@ media-libs/wivrn:pipewire - Enable support for audio sink/source through native 
 media-libs/wivrn:pulseaudio - Enable support for audio sink/source through pulseaudio modules
 media-libs/wivrn:wireshark-plugins - Build the net-analyzer/wireshark plugin for the WiVRn protocol
 media-plugins/gst-plugins-qt5:eglfs - Enable EGL support for embedded devices
+media-plugins/gst-plugins-qt6:eglfs - Enable EGL support for embedded devices
 media-sound/6pm:midimaps - Install midi maps for that synth. Recommended
 media-sound/6pm:nls - Add support for localization
 media-sound/6pm:presets - Install presets. Recommended
 media-sound/add64:presets - Install presets. Recommended
 media-sound/drumgizmo:lv2 - Build LV2 plugin
 media-sound/drumgizmo:vst - Build VST plugin
+media-sound/fooyin:archive - Build the libarchive input plugin using app-arch/libarchive
+media-sound/fooyin:openmpt - Build the OpenMPT input plugin using media-libs/libopenmpt
 media-sound/fooyin:pipewire - Enable sound support via native PipeWire backend
 media-sound/g4music:pipewire - Enable support for the PipeWire audio sink
 media-sound/jacktrip:rtaudio - Enable rtaudio backend
@@ -645,7 +649,6 @@ sci-mathematics/frama-c-aorai:eva - Build support for the Eva plugin
 sys-apps/bustd:glob - Enable excluding processes with glob patterns
 sys-apps/drm_info:pci - Print PCI device names via libpci
 sys-apps/fselect:users - Add support for getting system users and groups
-sys-apps/lact:drm - Use x11-libs/libdrm for more GPU information.
 sys-apps/lact:libadwaita - Build GUI with gui-libs/libadwaita support
 sys-apps/ugrep:7zip - Adds support for 7zip packages.
 sys-apps/ugrep:boost - Uses dev-libs/boost for regular expression parsing.
@@ -680,6 +683,12 @@ sys-cluster/booth:glue - Use libraries from sys-cluster/cluster-glue
 sys-firmware/lenovolegionlinux:downgrade-nvidia - Downgrade nvidia for 525 to enable TDP control (systemd-service)
 sys-firmware/lenovolegionlinux:elogind - Enable legiond-onresume openrc support
 sys-firmware/lenovolegionlinux:gui - Build and install legion_gui and legion_cli
+sys-fs/dwarfs:flac - Add support for FLAC: Free Lossless Audio Codec as compression algorithm
+sys-fs/dwarfs:fuse - Build dwarfs Fuse driver for image mounting
+sys-fs/dwarfs:perfmon - Simple dwarfs performance monitoring. See https://github.com/mhx/dwarfs?tab=readme-ov-file#performance-monitoring . It has no impact on performance
+sys-fs/dwarfs:ricepp - Enable ricepp compression algorithm, which builds on the basic idea of Rice compression (see the https://en.wikipedia.org/wiki/Golomb_coding ) with a few enhancements.
+sys-fs/dwarfs:stacktrace - Enable support for debug build with stacktracing
+sys-fs/dwarfs:tools - Build dwarfs tools for creating and extracting images
 sys-fs/ffmpegfs:bluray - Enable support of Blu-ray
 sys-kernel/uek-sources:experimental - apply experimental gentoo genpatches
 sys-kernel/uek-sources:gentoo - apply base gentoo genpatches

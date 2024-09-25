@@ -1,0 +1,16 @@
+BDEPEND=virtual/pkgconfig app-alternatives/ninja >=dev-build/cmake-3.20.5
+DEFINED_PHASES=compile configure install postinst prepare pretend setup test
+DEPEND=>=app-arch/libarchive-3.6.0 >=app-arch/brotli-1.0.9 >=app-arch/lz4-1.9.3 >=app-arch/xz-utils-5.2.5 >=app-arch/zstd-1.4.8 dev-cpp/gflags dev-cpp/glog[gflags] >=dev-cpp/parallel-hashmap-1.3.8 dev-libs/boost[context] dev-libs/double-conversion dev-libs/libevent >=dev-libs/libfmt-9.1.0 dev-libs/utfcpp >=dev-libs/xxhash-0.8.1 flac? ( >=media-libs/flac-1.4.2 ) fuse? ( sys-fs/fuse:3 ) sys-libs/binutils-libs stacktrace? ( sys-libs/libunwind ) sys-libs/zlib jemalloc? ( >=dev-libs/jemalloc-5.2.1 ) test? ( >=dev-cpp/gtest-1.13.0 )
+DESCRIPTION=A fast high compression read-only file system for Linux, Windows and macOS
+EAPI=8
+HOMEPAGE=https://github.com/mhx/dwarfs
+INHERIT=check-reqs cmake flag-o-matic
+IUSE=+jemalloc test +tools +fuse +perfmon flac ricepp stacktrace
+KEYWORDS=~amd64
+LICENSE=GPL-3
+RDEPEND=>=app-arch/libarchive-3.6.0 >=app-arch/brotli-1.0.9 >=app-arch/lz4-1.9.3 >=app-arch/xz-utils-5.2.5 >=app-arch/zstd-1.4.8 dev-cpp/gflags dev-cpp/glog[gflags] >=dev-cpp/parallel-hashmap-1.3.8 dev-libs/boost[context] dev-libs/double-conversion dev-libs/libevent >=dev-libs/libfmt-9.1.0 dev-libs/utfcpp >=dev-libs/xxhash-0.8.1 flac? ( >=media-libs/flac-1.4.2 ) fuse? ( sys-fs/fuse:3 ) sys-libs/binutils-libs stacktrace? ( sys-libs/libunwind ) sys-libs/zlib jemalloc? ( >=dev-libs/jemalloc-5.2.1 ) test? ( >=dev-cpp/gtest-1.13.0 )
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/mhx/dwarfs/releases/download/v0.10.1/dwarfs-0.10.1.tar.xz
+_eclasses_=check-reqs	f5db0b1ec36d0899adc2b41f8c447823	toolchain-funcs	948855ec7ad9f11351edf9066708dfa9	multilib	7e1347c006a76bb812f3a9f663b79991	flag-o-matic	fa33e3696fe4689dda7e9affe92e2c94	multiprocessing	e644caa6eb7ce7e5ab0864383ac13ad9	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	5465aed08f1dfc2a75f14cbea4272961	cmake	10a50dfaf728b802fcfd37f8d0da9056
+_md5_=840bd0359e2f8cda28e0f523c6b529c0
