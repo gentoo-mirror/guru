@@ -503,7 +503,7 @@ dev-lang/fbc-bootstrap 1.07.3 1.08.1: Bootstrap package for dev-lang/fbc
 dev-lang/gnu-apl 1.8: GNU interpreter for the APL programming language
 dev-lang/hare 0.24.0 0.24.2 9999: The Hare systems programming language
 dev-lang/harec 0.24.0 0.24.2 9999: The Hare compiler
-dev-lang/odin 2024.08: The Data-Oriented Language for Sane Software Development.
+dev-lang/odin 2024.08 2024.09: The Data-Oriented Language for Sane Software Development.
 dev-lang/opencilk 1.1 2.1: The OpenCilk concurrency platform for parallel programming
 dev-lang/opencilk-bin 1.1 2.1: The OpenCilk concurrency platform for parallel programming
 dev-lang/quickjs 2024.01.13-r1: Small embeddable Javascript engine
@@ -1113,7 +1113,7 @@ gui-apps/meteo-qt 3.3 3.4: A system tray application for the weather status
 gui-apps/mpvpaper 1.7 9999: A video wallpaper program for wlroots based wayland compositors
 gui-apps/nwg 0: meta package package for nwg-shell
 gui-apps/nwg-bar 0.1.5 0.1.6: GTK3-based button bar for wlroots-based compositors
-gui-apps/nwg-displays 0.3.19 0.3.20: Output management utility for sway and Hyprland
+gui-apps/nwg-displays 0.3.20-r1: Output management utility for sway and Hyprland
 gui-apps/nwg-dock 0.3.6 0.3.9 0.4.1: GTK3-based dock for sway
 gui-apps/nwg-dock-hyprland 0.1.8 0.1.9 0.2.2: GTK3-based dock for Hyprland
 gui-apps/nwg-drawer 0.4.8 0.4.9-r1: Application drawer for wlroots-based Wayland compositors
@@ -1283,7 +1283,7 @@ media-sound/corrscope 0.10.0-r1: Advanced oscilloscope audio visualizer speciali
 media-sound/drumgizmo 0.9.20 9999: Cross-platform drum plugin and stand-alone application
 media-sound/dzr 240909: DZR: the command line deezer.com player
 media-sound/eartag 0.5.0 0.5.1: GTK4 MusicBrainz audio tagger
-media-sound/fooyin 0.7.0 0.7.1 9999: A customizable music player, Qt clone of foobar2000
+media-sound/fooyin 0.7.0 0.7.1 0.7.2 9999: A customizable music player, Qt clone of foobar2000
 media-sound/furnace 0.6 0.6.5-r1 0.6.7: a multi-system chiptune tracker compatible with DefleMask modules
 media-sound/g4music 3.3 3.4: A GTK4 music player
 media-sound/hushboard 0.0_pre20220518 9999: Mutes your microphone while you are typing
@@ -1334,7 +1334,7 @@ media-video/megapixels 1.4.3: A GTK3 camera application that knows how to deal w
 media-video/mpc-qt 24.06: Media Player Classic Qute Theater
 media-video/obs-multi-rtmp 0.5.0.4 9999: OBS Simulcast support plugin
 media-video/obs-streamfx 0.12.0.9999 9999: OBS® Studio plugin which adds many new effects.
-media-video/obs-vaapi 0.4.1 9999: OBS Studio VAAPI support via GStreamer
+media-video/obs-vaapi 0.4.1 0.4.2 9999: OBS Studio VAAPI support via GStreamer
 media-video/obs-vkcapture 1.5.0 1.5.1 9999: OBS Linux Vulkan/OpenGL game capture
 media-video/stremio 4.4.168: Stremio is a modern media center for your video entertainment.
 media-video/syncplay 1.7.3: Client/server to synchronize media playback
@@ -1421,6 +1421,7 @@ net-irc/catgirl 2.2 2.2a: TLS-only terminal IRC client
 net-irc/halloy 2024.12: IRC application written in Rust
 net-irc/litterbox 1.9: TLS-only IRC logger
 net-irc/pounce 3.0 3.1: Multi-client, TLS-only IRC bouncer
+net-irc/quarg 1.0.0: Search Quassel logs for matching messages and print them
 net-irc/srain 1.7.0: Modern, beautiful IRC client written in GTK+ 3
 net-irc/thelounge 4.4.1-r1 4.4.3-r1: ‎Modern, responsive, cross-platform, self-hosted web IRC client
 net-irc/tiny 0.12.0: IRC client written in Rust
@@ -1514,7 +1515,7 @@ net-voip/vvmd 0.8-r1: vvmd is a lower level daemon that retrieves Visual Voicema
 net-vpn/cloudflare-warp 2024.2.62-r2 2024.4.133-r1: Cloudflare Warp Client
 net-vpn/fastd 22: A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
 net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that require SAML
-net-vpn/mullvadvpn-app 2024.5: Tool used to manage daemon setup
+net-vpn/mullvadvpn-app 2024.5 2024.6_beta1: Tool used to manage daemon setup
 net-wireless/airspyhf 1.6.8: User mode driver for Airspy HF+
 net-wireless/bluetuith 0.1.9 0.2.0 0.2.1 0.2.2 9999: A TUI bluetooth manager for Linux written in Go
 net-wireless/btscreenlocker 1.6.3 1.6.5 1.7.0-r1 1.8.1: Daemon to lock your screen when Bluetooth trusted devices go away.
@@ -1595,6 +1596,7 @@ sec-keys/openpgp-keys-schernykh 20210409: OpenPGP keys used to sign P2Pool relea
 sec-keys/openpgp-keys-skyjake 20211224: OpenPGP keys used by Jaakko Keranen
 sec-keys/signify-keys-gmid 2.0 2.1: Signify keys used to sign gmid releases
 sec-keys/signify-keys-lanodan 2021.04 2023 2024: Signify keys used by Haelwenn (lanodan) Monnier
+sec-keys/signify-keys-oriole-systems 20240330: Signify keys used to sign oriole.systems releases
 sec-keys/signify-keys-telescope 0.9 0.10: Signify keys used to sign telescope releases
 sys-apps/0xFFFF 0.10: 0pen Free Fiasco Firmware Flasher for Maemo devices
 sys-apps/asus-numpad 0.2-r1 9999: User-space driver for Asus numpad
@@ -1719,7 +1721,7 @@ www-client/mullvad-browser-bin 13.5.3: The Mullvad Browser is developed to minim
 www-client/nyxt 3.11.7 3.11.8 9999: Nyxt - the hacker's power-browser
 www-client/vimb 3.6.0 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
 www-client/yandex-browser 24.7.3.1253_p1: The web browser from Yandex
-www-client/zen-bin 1.0.0_alpha34 1.0.0_alpha35 1.0.0_alpha37 1.0.0_alpha39 1.0.1_alpha2 1.0.1_alpha3: Zen Browser - A Firefox-based browser focused on privacy
+www-client/zen-bin 1.0.0_alpha34 1.0.0_alpha35 1.0.0_alpha37 1.0.0_alpha39 1.0.1_alpha2 1.0.1_alpha3 1.0.1_alpha4 1.0.1_alpha5: Zen Browser - A Firefox-based browser focused on privacy
 www-misc/dufs 0.40.0: Dufs is a distinctive utility file server
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits
 www-misc/gorss 0.3: Go Terminal Feed Reader
@@ -1727,7 +1729,7 @@ www-misc/kiwix-desktop 2.3.1: cross-platform viewer/manager for ZIM archives
 www-misc/libkiwix 12.1.0-r1 13.1.0: Kiwix software suite core: code shared by all Kiwix ports
 www-misc/waldl 0.0.1_pre20211112: Browse and download wallpapers from wallhaven.cc using sxiv
 www-misc/wyebadblock 1.0.0: An adblock extension for wyeb, also webkit2gtk browsers.
-www-plugins/firefoxpwa 2.12.0-r1 2.12.1 2.12.2 2.12.3 2.12.4: A tool to install, manage and use PWAs in Mozilla Firefox (native component)
+www-plugins/firefoxpwa 2.12.4 2.12.5: A tool to install, manage and use PWAs in Mozilla Firefox (native component)
 www-servers/hinsightd 0.9.17 9999: hinsightd a http/1.1 webserver with (hopefully) minimal goals
 www-servers/quark 9999: A small, GET-only static HTTP server
 x11-apps/lightdm-gtk-greeter-settings 1.2.2-r2: Configuration tool for the LightDM GTK Greeter
