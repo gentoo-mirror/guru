@@ -39,7 +39,11 @@ RDEPEND="
 "
 BDEPEND="
 	${PYTHON_DEPS}
-	test? ( $(python_gen_cond_dep 'dev-python/pytest[${PYTHON_USEDEP}]') )
+	$(python_gen_cond_dep 'dev-python/argparse-manpage[${PYTHON_USEDEP}]')
+	test? ( $(python_gen_cond_dep '
+		dev-python/jsonschema[${PYTHON_USEDEP}]
+		dev-python/pytest[${PYTHON_USEDEP}]
+	') )
 "
 
 src_prepare() {
@@ -60,11 +64,14 @@ src_prepare() {
 	sed -i -e "s/ mock.py//" -e "s/ mock-parse-buildlog.py//" etc/bash_completion.d/mock || die
 }
 
-src_compile() { :; }
+src_compile() {
+	argparse-manpage --pyfile py/mock-hermetic-repo.py --function _argparser > mock-hermetic-repo.1 || die
+}
 
 src_install() {
 	python_domodule py/mockbuild
 	python_newscript py/mock.py mock
+	python_newscript py/mock-hermetic-repo.py mock-hermetic-repo
 	python_newscript py/mock-parse-buildlog.py mock-parse-buildlog
 	dobin mockchain
 
@@ -74,7 +81,7 @@ src_install() {
 	dobashcomp etc/bash_completion.d/mock
 	bashcomp_alias mock mock-parse-buildlog
 	dodoc docs/site-defaults.cfg
-	doman docs/mock.1 docs/mock-parse-buildlog.1
+	doman docs/mock.1 docs/mock-parse-buildlog.1 mock-hermetic-repo.1
 
 	insinto /etc/mock
 	doins etc/mock/*
