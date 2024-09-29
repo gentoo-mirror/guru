@@ -255,6 +255,7 @@ app-misc/mangadesk 0.7.7 0.7.8: Terminal Client for MangaDex
 app-misc/mat2 0.13.4: Metadata Anonymisation Toolkit: handy tool to trash your metadata
 app-misc/metadata-cleaner 2.5.6: Python GTK application to view and clean metadata in files, using mat2.
 app-misc/minder 1.16.2 1.16.3: Mind-mapping application for Elementary OS.
+app-misc/mirafetch 0.1.0 9999: A Rust reimplementation of Hyfetch wih a focus on speed
 app-misc/mobile-datovka 1.10.0: Mobile optimized GUI to access the Czech data box e-government system
 app-misc/navi 2.23.0: An interactive cheatsheet tool for the command-line
 app-misc/neo 0.6.1 9999: cmatrix clone with 32-bit color and Unicode support
@@ -281,7 +282,7 @@ app-misc/tty-share-bin 2.4.0: Screen sharing for terminal: ASCII in browser or t
 app-misc/twertlefetch 1.1.0: system fetch written in rust
 app-misc/ufetch 0.3: Tiny system info for Unix-like operating systems
 app-misc/via 3.0.0: GUI configurator for supported QMK-based keyboards
-app-misc/vocabsieve 0.12.0: A simple, effective tool for language learning
+app-misc/vocabsieve 0.12.2: A simple, effective tool for language learning
 app-misc/vrms-gentoo 0_pre20201102: vrms clone for Gentoo Linux
 app-misc/walld 1.4.4: A Wallpaper daemon
 app-misc/watchexec 1.24.2 1.25.1 2.1.1 2.1.2: Executes commands in response to file modifications
@@ -578,10 +579,10 @@ dev-ml/angstrom 0.16.0 0.16.1: Parser combinators built for speed and memory eff
 dev-ml/bheap 2.0.0: OCaml binary heap implementation by Jean-Christophe Filliatre
 dev-ml/bigstringaf 0.7.0 0.9.0 0.10.0: Bigstring intrinsics and fast blits based on memcpy/memmove
 dev-ml/cdrom 0.9.4: Query the state and contents of CDROM devices under Linux
-dev-ml/chrome-trace 3.16.0: Chrome trace event generation library
+dev-ml/chrome-trace 3.16.0-r1: Chrome trace event generation library
 dev-ml/crowbar 0.2.1: Write tests, let a fuzzer find failing cases
 dev-ml/domain-name 0.4.0: RFC 1035 Internet domain names
-dev-ml/dune-rpc 3.16.0: Communicate with dune using rpc
+dev-ml/dune-rpc 3.16.0-r1: Communicate with dune using rpc
 dev-ml/either 1.0.0: Compatibility module for Either in OCaml 4.12
 dev-ml/fiber 3.7.0-r1: Dune's monadic structured concurrency library
 dev-ml/gmap 0.3.0-r2: Heterogenous Map over a GADT
@@ -591,7 +592,7 @@ dev-ml/lwt-dllist 1.0.1: Mutable doubly-linked list with Lwt iterators
 dev-ml/merlin-lib 4.16: Merlin's libraries
 dev-ml/ocaml-syntax-shims 1.0.0: Backport new syntax to older compilers
 dev-ml/ocaml-version 3.6.7 3.6.8: Library to parse and enumerate releases of the OCaml compiler
-dev-ml/ocamlc-loc 3.16.0: Parse ocaml compiler output into structured form
+dev-ml/ocamlc-loc 3.16.0-r1: Parse ocaml compiler output into structured form
 dev-ml/ocamlformat-lib 0.26.2: OCamlFormat is a tool to automatically format OCaml code in a uniform style.
 dev-ml/ocamlformat-rpc-lib 0.26.2: Auto-formatter for OCaml code (RPC mode)
 dev-ml/pecu 0.6: Implementation of quoted-printable encoder/decoder from RFC2045
@@ -934,6 +935,7 @@ dev-util/lua-language-server 3.9.1-r1 3.9.3 3.10.5: Lua language server
 dev-util/mh 1.0.3: Generate help for Makefile
 dev-util/mock 5.7: Simple chroot build environment manager for building RPMs
 dev-util/mock-core-configs 41.3: Mock core config files basic chroots
+dev-util/ocaml-lsp-server 1.18.0: LSP Server for OCaml
 dev-util/ocamlformat 0.26.2: Auto-formatter for OCaml code
 dev-util/ocp-indent 1.8.2: Indentation tool for OCaml, to be used from editors like Emacs and Vim.
 dev-util/pcpp 1.30: A C99 preprocessor written in pure Python
@@ -1166,13 +1168,13 @@ gui-libs/gtk-session-lock 0.2.0-r5 9999: GTK-based lockscreen for Wayland
 gui-libs/gtk4-layer-shell 1.0.2: A library for using the Layer Shell Wayland protocol with GTK4.
 gui-libs/libcprime 4.5.0 9999: Library for managing settings of CoreApps
 gui-libs/libcsys 4.5.0 9999: Library for managing the device
-gui-libs/mir 2.17.2: Set of libraries for building Wayland based shells
+gui-libs/mir 2.18.2: Set of libraries for building Wayland based shells
 gui-libs/scenefx 0.1: A replacement for the wlroots scene API with eye-candy effects.
 gui-libs/text-engine 0.1.1-r3 9999: A lightweight rich-text framework for GTK 4
 gui-libs/xdg-desktop-portal-hyprland 1.3.3-r2 9999: xdg-desktop-portal backend for hyprland
 gui-wm/cage 0.1.5_p20240227 9999: A Wayland kiosk
 gui-wm/hyprland-contrib 0.1-r1 9999: Community-maintained extensions for hyprland
-gui-wm/miracle-wm 0.3.5: Tiling Wayland compositor based on Mir
+gui-wm/miracle-wm 0.3.6: Tiling Wayland compositor based on Mir
 gui-wm/niri 0.1.9: Scrollable-tiling Wayland compositor
 gui-wm/phoc 0.40.0 0.41.0: Wayland compositor for mobile phones
 gui-wm/river 0.3.5-r1: A dynamic tiling Wayland compositor
@@ -1245,7 +1247,7 @@ media-libs/dr_flac 0.12.42: Single-header FLAC audio decoder library
 media-libs/dr_mp3 0.6.39-r1: Single-header MP3 audio decoder library
 media-libs/dr_wav 0.13.16-r1: Single-header WAV audio loader and writer library
 media-libs/gl4es 9999: OpenGL 2.1/1.5 to GL ES 2.0/1.1 translation library
-media-libs/glad 2.0.6 2.0.7: Multi-Language Vulkan/GL/GLES/EGL/GLX/WGL Loader-Generator
+media-libs/glad 2.0.7 2.0.8: Multi-Language Vulkan/GL/GLES/EGL/GLX/WGL Loader-Generator
 media-libs/glee 5.4.0 5.4.0-r1: OpenGL Easy Extension library
 media-libs/grok 11.0.0: World's Leading Open Source JPEG 2000 Codec
 media-libs/imgui 1.89.9-r3 1.91.1: Bloat-free graphical user interface library for C++
@@ -1279,7 +1281,7 @@ media-sound/corrscope 0.10.0-r1: Advanced oscilloscope audio visualizer speciali
 media-sound/drumgizmo 0.9.20 9999: Cross-platform drum plugin and stand-alone application
 media-sound/dzr 240909: DZR: the command line deezer.com player
 media-sound/eartag 0.5.0 0.5.1: GTK4 MusicBrainz audio tagger
-media-sound/fooyin 0.7.0 0.7.1 0.7.2 9999: A customizable music player, Qt clone of foobar2000
+media-sound/fooyin 0.7.1 0.7.2 0.7.3 9999: A customizable music player, Qt clone of foobar2000
 media-sound/furnace 0.6 0.6.5-r1 0.6.7: a multi-system chiptune tracker compatible with DefleMask modules
 media-sound/g4music 3.3 3.4: A GTK4 music player
 media-sound/hushboard 0.0_pre20220518 9999: Mutes your microphone while you are typing
