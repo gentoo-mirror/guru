@@ -10,22 +10,22 @@ CRATES="
 	aho-corasick@1.1.3
 	android-tzdata@0.1.1
 	android_system_properties@0.1.5
-	attohttpc@0.26.1
-	autocfg@1.3.0
-	base64@0.21.7
-	bitflags@1.3.2
+	arbitrary@1.3.2
+	attohttpc@0.28.0
+	autocfg@1.4.0
+	base64@0.22.1
 	bitflags@2.6.0
 	block-buffer@0.10.4
 	bstr@1.10.0
 	bumpalo@3.16.0
 	byteorder@1.5.0
-	bytes@1.7.1
+	bytes@1.7.2
 	bzip2-sys@0.1.11+1.0.8
 	bzip2@0.4.4
 	camino@1.1.9
 	cargo-platform@0.1.8
 	cargo_metadata@0.18.1
-	cc@1.1.15
+	cc@1.1.22
 	cfg-if@1.0.0
 	cfg_aliases@0.2.1
 	chrono@0.4.38
@@ -34,7 +34,7 @@ CRATES="
 	colored@2.1.0
 	core-foundation-sys@0.8.7
 	core-foundation@0.9.4
-	cpufeatures@0.2.13
+	cpufeatures@0.2.14
 	crc32fast@1.4.2
 	crossbeam-deque@0.8.5
 	crossbeam-epoch@0.9.18
@@ -42,12 +42,14 @@ CRATES="
 	crypto-common@0.1.6
 	ctrlc@3.4.5
 	deranged@0.3.11
+	derive_arbitrary@1.3.2
 	digest@0.10.7
 	dirs-next@2.0.0
 	dirs-sys-next@0.1.2
+	displaydoc@0.2.5
 	dissimilar@1.0.9
-	duckscript@0.8.0
-	duckscriptsdk@0.9.3
+	duckscript@0.8.1
+	duckscriptsdk@0.9.4
 	dunce@1.0.5
 	either@1.13.0
 	encoding_rs@0.8.34
@@ -59,7 +61,7 @@ CRATES="
 	fastrand@2.1.1
 	fern@0.6.2
 	fixedbitset@0.4.2
-	flate2@1.0.33
+	flate2@1.0.34
 	fnv@1.0.7
 	foreign-types-shared@0.1.1
 	foreign-types@0.3.2
@@ -73,20 +75,19 @@ CRATES="
 	getrandom@0.2.15
 	git_info@0.1.3
 	glob@0.3.1
-	globset@0.4.14
+	globset@0.4.15
 	hashbrown@0.12.3
 	hashbrown@0.14.5
-	heck@0.4.1
 	heck@0.5.0
 	hermit-abi@0.3.9
 	home@0.5.9
-	http@0.2.12
+	http@1.1.0
 	iana-time-zone-haiku@0.1.2
-	iana-time-zone@0.1.60
+	iana-time-zone@0.1.61
 	idna@0.5.0
-	ignore@0.4.22
+	ignore@0.4.23
 	indexmap@1.9.3
-	indexmap@2.4.0
+	indexmap@2.5.0
 	itertools@0.13.0
 	itoa@1.0.11
 	java-properties@2.0.0
@@ -97,10 +98,11 @@ CRATES="
 	lenient_semver@0.4.2
 	lenient_semver_parser@0.4.2
 	lenient_semver_version_builder@0.4.2
-	libc@0.2.158
+	libc@0.2.159
 	libredox@0.1.3
 	linux-raw-sys@0.4.14
 	log@0.4.22
+	md5@0.7.0
 	memchr@2.7.4
 	miniz_oxide@0.8.0
 	native-tls@0.2.12
@@ -109,24 +111,27 @@ CRATES="
 	num-conv@0.1.0
 	num-traits@0.2.19
 	num_cpus@1.16.0
+	num_enum@0.7.3
+	num_enum_derive@0.7.3
 	once_cell@1.19.0
 	openssl-macros@0.1.1
 	openssl-probe@0.1.5
 	openssl-sys@0.9.103
 	openssl@0.10.66
-	parking@2.2.0
+	parking@2.2.1
 	percent-encoding@2.3.1
 	petgraph@0.6.5
 	pin-project-lite@0.2.14
-	pkg-config@0.3.30
+	pkg-config@0.3.31
 	powerfmt@0.2.0
 	ppv-lite86@0.2.20
+	proc-macro-crate@3.2.0
 	proc-macro2@1.0.86
 	quote@1.0.37
 	rand@0.8.5
 	rand_chacha@0.3.1
 	rand_core@0.6.4
-	redox_syscall@0.4.1
+	redox_syscall@0.5.6
 	redox_users@0.4.6
 	regex-automata@0.4.7
 	regex-syntax@0.8.4
@@ -134,45 +139,46 @@ CRATES="
 	ring@0.17.8
 	run_script@0.10.1
 	rust_info@0.3.3
-	rustix@0.38.35
-	rustls-webpki@0.101.7
-	rustls@0.21.12
+	rustix@0.38.37
+	rustls-pki-types@1.9.0
+	rustls-webpki@0.102.8
+	rustls@0.22.4
 	rustversion@1.0.17
 	ryu@1.0.18
 	same-file@1.0.6
-	schannel@0.1.23
-	sct@0.7.1
-	security-framework-sys@2.11.1
+	schannel@0.1.24
+	security-framework-sys@2.12.0
 	security-framework@2.11.1
 	semver@1.0.23
-	serde@1.0.209
-	serde_derive@1.0.209
+	serde@1.0.210
+	serde_derive@1.0.210
 	serde_ignored@0.1.10
-	serde_json@1.0.127
-	serde_spanned@0.6.7
+	serde_json@1.0.128
+	serde_spanned@0.6.8
 	sha2@0.10.8
 	shell2batch@0.4.5
 	shlex@1.3.0
 	spin@0.9.8
 	strip-ansi-escapes@0.2.0
 	strum_macros@0.26.4
-	suppaftp@5.4.0
-	syn@2.0.76
-	tempfile@3.12.0
-	thiserror-impl@1.0.63
-	thiserror@1.0.63
+	subtle@2.6.1
+	suppaftp@6.0.1
+	syn@2.0.79
+	tempfile@3.13.0
+	thiserror-impl@1.0.64
+	thiserror@1.0.64
 	time-core@0.1.2
 	time@0.3.36
 	tinyvec@1.8.0
 	tinyvec_macros@0.1.1
 	toml@0.8.19
 	toml_datetime@0.6.8
-	toml_edit@0.22.20
+	toml_edit@0.22.22
 	typenum@1.17.0
 	uname@0.1.1
 	unicode-bidi@0.3.15
-	unicode-ident@1.0.12
-	unicode-normalization@0.1.23
+	unicode-ident@1.0.13
+	unicode-normalization@0.1.24
 	untrusted@0.9.0
 	url@2.5.2
 	utf8parse@0.2.2
@@ -189,9 +195,9 @@ CRATES="
 	wasm-bindgen-shared@0.2.93
 	wasm-bindgen@0.2.93
 	web-sys@0.3.70
-	webpki-roots@0.25.4
+	webpki-roots@0.26.6
 	which@6.0.3
-	whoami@1.5.1
+	whoami@1.5.2
 	winapi-i686-pc-windows-gnu@0.4.0
 	winapi-util@0.1.9
 	winapi-x86_64-pc-windows-gnu@0.4.0
@@ -217,11 +223,12 @@ CRATES="
 	windows_x86_64_gnullvm@0.52.6
 	windows_x86_64_msvc@0.48.5
 	windows_x86_64_msvc@0.52.6
-	winnow@0.6.18
+	winnow@0.6.20
 	winsafe@0.0.19
 	zerocopy-derive@0.7.35
 	zerocopy@0.7.35
-	zip@0.6.6
+	zeroize@1.8.1
+	zip@1.1.4
 "
 
 inherit cargo
