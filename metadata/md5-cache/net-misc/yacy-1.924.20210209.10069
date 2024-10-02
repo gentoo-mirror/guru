@@ -1,5 +1,5 @@
 BDEPEND=virtual/pkgconfig
-DEFINED_PHASES=compile configure install postinst preinst prepare setup
+DEFINED_PHASES=configure install postinst preinst prepare setup
 DEPEND=>=virtual/jdk-1.8 acct-group/yacy acct-user/yacy >=dev-java/java-config-2.2.0-r3 >=dev-java/ant-1.10.14-r2:0 dev-java/javatoolkit
 DESCRIPTION=YaCy - p2p based distributed web-search engine
 EAPI=7
@@ -11,5 +11,5 @@ LICENSE=GPL-2
 RDEPEND=>=virtual/jdk-1.8 acct-group/yacy acct-user/yacy >=dev-java/java-config-2.2.0-r3
 SLOT=0
 SRC_URI=https://www.yacy.net/release/yacy_v1.924_20210209_10069.tar.gz
-_eclasses_=java-utils-2	505f237da61d30569dcc6d5df8c51262	java-pkg-2	72587187cd548a5dcdb6a13453a3614d	multilib	7e1347c006a76bb812f3a9f663b79991	toolchain-funcs	948855ec7ad9f11351edf9066708dfa9	java-ant-2	ad653f6ce057f94c49254ace4f0f8335	systemd	0f241b5c9f3758c3d3423df59a7f655a
+_eclasses_=java-utils-2	f1da644b1cb86c9aca40b31a544a9906	java-pkg-2	cc4b7c2e885aaf57a8bbea685bd9fbe3	multilib	7e1347c006a76bb812f3a9f663b79991	toolchain-funcs	948855ec7ad9f11351edf9066708dfa9	java-ant-2	ad653f6ce057f94c49254ace4f0f8335	systemd	0f241b5c9f3758c3d3423df59a7f655a
 _md5_=70fc6d9fb736c3015dde73e1a2650ac6
