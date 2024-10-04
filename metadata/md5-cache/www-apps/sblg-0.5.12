@@ -1,12 +1,14 @@
-DEFINED_PHASES=configure install
+DEFINED_PHASES=configure install prepare
 DEPEND=dev-libs/expat
 DESCRIPTION=A utility for creating static blogs
 EAPI=8
 HOMEPAGE=https://kristaps.bsd.lv/sblg/
+INHERIT=toolchain-funcs
 IUSE=examples
 KEYWORDS=~amd64 ~x86
 LICENSE=ISC
 RDEPEND=dev-libs/expat
 SLOT=0
 SRC_URI=https://kristaps.bsd.lv/sblg/snapshots/sblg-0.5.12.tar.gz
-_md5_=156a217c5a2b94773e8c67a635c4029d
+_eclasses_=toolchain-funcs	948855ec7ad9f11351edf9066708dfa9	multilib	7e1347c006a76bb812f3a9f663b79991
+_md5_=a423bdc923f19858b15673d13a5b429e
