@@ -17,7 +17,7 @@ if [[ ${PV} == 9999 ]];then
 	EGIT_BRANCH="master"
 	EGIT_SUBMODULES=( '*' )
 else
-	MEGA_SDK_REV="159dcc4a61d43dfdf5997cf8113755fbe2452bd7" # commit of src/MEGASync/mega submodule
+	MEGA_SDK_REV="eb86660026272d62a547099d2fed3a7d46fc64e7" # commit of src/MEGASync/mega submodule
 	MEGA_TAG_SUFFIX="Linux"
 	SRC_URI="
 		https://github.com/meganz/MEGAsync/archive/v${PV}_${MEGA_TAG_SUFFIX}.tar.gz -> ${P}.tar.gz
@@ -77,22 +77,15 @@ RDEPEND="
 "
 BDEPEND="
 	dev-qt/linguist-tools:5
+	virtual/pkgconfig
 "
 
 PATCHES=(
 	"${FILESDIR}/${PN}-4.10.0.0_ffmpeg6.patch"
-	"${FILESDIR}/${PN}-4.10.0.0_fix-build.patch"
 	"${FILESDIR}/${PN}-5.3.0.0-link-zlib.patch"
 	"${FILESDIR}/${PN}-5.3.0.0-fix-install-dir.patch"
 	"${FILESDIR}/${PN}-5.3.0.0-rename-libcryptopp.patch"
 )
-
-nautilus_run() {
-	if use nautilus; then
-		cd "${S}/src/MEGAShellExtNautilus" || die
-		"$@"
-	fi
-}
 
 nemo_run() {
 	if use nemo; then
@@ -125,7 +118,9 @@ src_configure() {
 		# build internal libs as static
 		-DBUILD_SHARED_LIBS=OFF
 		-DCMAKE_MODULE_PATH="${S}/src/MEGASync/mega/contrib/cmake/modules/packages"
+		-DENABLE_DESKTOP_APP_WERROR=OFF
 		-DENABLE_DESKTOP_UPDATE_GEN=OFF
+		-DENABLE_LINUX_EXT=$(usex nautilus)
 		-DUSE_FFMPEG=$(usex thumbnail)
 		-DUSE_FREEIMAGE=$(usex thumbnail)
 		-DUSE_MEDIAINFO=$(usex mediainfo)
@@ -135,7 +130,6 @@ src_configure() {
 	cmake_src_configure
 
 	unset mycmakeargs
-	nautilus_run eqmake5
 	nemo_run eqmake5
 	thunar_run eqmake5
 }
@@ -143,7 +137,6 @@ src_configure() {
 src_compile() {
 	cmake_src_compile
 
-	nautilus_run emake
 	nemo_run emake
 	thunar_run emake
 }
@@ -151,7 +144,6 @@ src_compile() {
 src_install() {
 	cmake_src_install
 
-	nautilus_run emake INSTALL_ROOT="${D}" install
 	nemo_run emake INSTALL_ROOT="${D}" install
 	thunar_run emake INSTALL_ROOT="${D}" install
 }
