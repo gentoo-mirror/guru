@@ -15,9 +15,13 @@ SRC_URI+=" ${DEPS_URI}"
 
 S="${WORKDIR}/${PN}-bin-${PV}"
 
-LICENSE="Apache-2.0"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
+
+BDEPEND="
+	>=dev-lang/go-1.23.0
+"
 
 DOCS=(
 	"README.md"

@@ -1,23 +1,23 @@
 # Copyright 2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
-inherit cmake
+inherit cmake fcaps xdg
 
 DESCRIPTION="WiVRn OpenXR streaming"
 HOMEPAGE="https://github.com/WiVRn/WiVRn"
 
 LICENSE="GPL-3 Apache-2.0 MIT"
 SLOT="0"
-IUSE="nvenc +pipewire pulseaudio systemd vaapi wireshark-plugins x264"
+IUSE="gui nvenc +pipewire pulseaudio systemd vaapi wireshark-plugins x264"
 REQUIRED_USE="|| ( nvenc vaapi x264 )"
 
 if [[ ${PV} == 9999 ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/WiVRn/WiVRn.git"
 
-	MONADO_V=bcbe19ddd795f182df42051e5495e9727db36c1c
+	MONADO_V=01806a3ffa62a2440da83d94e7a9297645d9d95a
 	PFR_V=2.2.0
 	SRC_URI="
 	https://github.com/boostorg/pfr/archive/refs/tags/${PFR_V}.tar.gz -> boostpfr_${PFR_V}.tar.gz
@@ -51,13 +51,18 @@ RDEPEND="
 	wireshark-plugins? (
 		net-analyzer/wireshark
 	)
+	gui? (
+		dev-qt/qtbase:6
+	)
 "
-
-BDEPEND="
+DEPEND="
 	${RDEPEND}
 	dev-cpp/cli11
 	dev-cpp/eigen
 	dev-cpp/nlohmann_json
+	dev-libs/boost
+"
+BDEPEND="
 	dev-util/glslang
 "
 
@@ -96,6 +101,7 @@ src_configure() {
 		-DGIT_DESC=${GIT_DESC}
 		-DWIVRN_BUILD_CLIENT=OFF
 		-DWIVRN_BUILD_SERVER=ON
+		-DWIVRN_BUILD_DASHBOARD=$(usex gui)
 		-DWIVRN_BUILD_DISSECTOR=$(usex wireshark-plugins)
 		-DWIVRN_USE_PIPEWIRE=$(usex pipewire)
 		-DWIVRN_USE_PULSEAUDIO=$(usex pulseaudio)
@@ -103,6 +109,8 @@ src_configure() {
 		-DWIVRN_USE_VAAPI=$(usex vaapi)
 		-DWIVRN_USE_X264=$(usex x264)
 		-DWIVRN_USE_SYSTEMD=$(usex systemd)
+		-DWIVRN_USE_SYSTEM_OPENXR=ON
+		-DWIVRN_USE_SYSTEM_BOOST=ON
 		-DCMAKE_INTERPROCEDURAL_OPTIMIZATION=ON
 		-DFETCHCONTENT_FULLY_DISCONNECTED=ON
 		-DFETCHCONTENT_BASE_DIR="${WORKDIR}"
@@ -115,11 +123,13 @@ src_configure() {
 src_install() {
 	cmake_src_install
 
-	dosym /usr/share/openxr/1/openxr_wivrn.json /etc/openxr/1/active_runtime.json
+	dosym -r /usr/share/openxr/1/openxr_wivrn.json /etc/openxr/1/active_runtime.json
 }
 
 pkg_postinst()
 {
+	fcaps cap_sys_nice bin/wivrn-server
+	xdg_pkg_postinst
 	elog "WiVRn requires a compatible client on VR headset to run."
 	if [[ ${PV} == 9999 ]]; then
 		elog "For most headsets it can be downloaded from CI artifacts on https://github.com/WiVRn/WiVRn/actions/workflows/Build.yml"
