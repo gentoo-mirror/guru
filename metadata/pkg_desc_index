@@ -291,7 +291,7 @@ app-misc/x86-64-level 0.2.2 9999: Get the x86-64 Microarchitecture Level on the 
 app-misc/xplr 0.21.3: A hackable, minimal, fast TUI file explorer
 app-misc/yaf 0.0.3: Yet another system fetch that is minimal and customizable.
 app-misc/yazi 0.2.5-r1 0.3.3: Blazing fast terminal file manager written in Rust, based on async I/O.
-app-misc/zcock 0.2.0 0.2.1: Print an emoji according to traditional chinese calendar and more
+app-misc/zcock 0.2.1 0.2.2: Print an emoji according to traditional chinese calendar and more
 app-mobilephone/flashlight 0.1.1-r2: It's a flashlight, what do you expect?
 app-mobilephone/mobile-config-firefox 2.1.0: Mobile and privacy friendly configuration for Firefox
 app-mobilephone/pinephone-modem-scripts 0.20.8: Modem scripts for the PinePhone
@@ -314,7 +314,7 @@ app-portage/portagecfg 2.1.3 2.2.2 2.3.0 2.4.0: Utility to write Portage config 
 app-portage/quantum-resolver 9999: A WIP portage dependency resolver
 app-portage/showbuild 0.9.1-r1: Script to follow log of running portage builds
 app-portage/version 0.19.0_alpha 0.20.1_alpha 0.21.0_alpha: A command line function for package version management.
-app-shells/carapace 1.0.5 1.0.6: Multi-shell multi-command argument completer
+app-shells/carapace 1.0.6-r1 1.0.7: Multi-shell multi-command argument completer
 app-shells/direnv 2.32.3 9999: Environment variable manager for shell
 app-shells/elvish 0.19.2 0.20.1 0.21.0: Expressive programming language and a versatile interactive shell
 app-shells/fre 0.4.1: A command line frecency tracking tool
@@ -466,7 +466,7 @@ dev-elixir/hex 1.0.1-r1: Package manager for the Erlang VM
 dev-embedded/arduino-cli 1.0.3 1.0.4: Next-generation arduino command line tool
 dev-embedded/bcm2-utils 0.9.8: Utilities for Broadcom-based cable modems
 dev-embedded/esp-coredump 1.10.0 1.11.0: Utility that helps users to retrieve and analyse core dumps
-dev-embedded/esp-idf 5.3-r1 5.3.1-r1: Espressif IoT Development Framework
+dev-embedded/esp-idf 5.3.1-r1: Espressif IoT Development Framework
 dev-embedded/esp-idf-kconfig 2.2.0 2.3.0: Kconfig tooling for esp-idf
 dev-embedded/esp-idf-monitor 1.3.3 1.4.0: Python object-oriented database
 dev-embedded/esp-idf-nvs-partition-gen 0.1.3: Parses ESP-IDF panic handler output acts as a GDB server over stdin/stdout
@@ -934,8 +934,7 @@ dev-util/lua-language-server 3.9.1-r1 3.9.3 3.10.5: Lua language server
 dev-util/mh 1.0.3: Generate help for Makefile
 dev-util/mock 5.9: Simple chroot build environment manager for building RPMs
 dev-util/mock-core-configs 41.4: Mock core config files basic chroots
-dev-util/ocaml-lsp-server 1.18.0: LSP Server for OCaml
-dev-util/ocamlformat 0.26.2: Auto-formatter for OCaml code
+dev-util/ocamlformat 0.26.2 0.26.2-r1: Auto-formatter for OCaml code
 dev-util/ocp-indent 1.8.2: Indentation tool for OCaml, to be used from editors like Emacs and Vim.
 dev-util/pcpp 1.30: A C99 preprocessor written in pure Python
 dev-util/pifpaf 3.1.5-r1 3.2.1: Suite of tools and fixtures to manage daemons for testing
@@ -1057,7 +1056,7 @@ gnome-extra/vvmplayer 1.4: Visual Voicemail Player
 gnome-extra/wike 3.0.0 3.0.1: Wikipedia Reader for the GNOME Desktop
 gnome-extra/yad 13.0 14.1 9999: Display GTK+ dialog boxes from command line or shell scripts
 gui-apps/1password 8.10.28: The world’s most-loved password manager
-gui-apps/ReGreet 0.1.1-r8 9999: A clean and customizable GTK-based greetd greeter written in Rust
+gui-apps/ReGreet 0.1.1-r9 9999: A clean and customizable GTK-based greetd greeter written in Rust
 gui-apps/aylurs-gtk-shell 1.8.2-r1: Aylurs's Gtk Shell (AGS), An eww inspired gtk widget system.
 gui-apps/azote 1.13.1 9999: wallpaper manager for wlroots compositors
 gui-apps/clipman 1.6.2 1.6.3 1.6.4: A basic clipboard manager for Wayland.
@@ -1183,7 +1182,7 @@ kde-apps/plasma-settings 22.11: Settings application for Plasma Mobile
 kde-misc/geminipart 20221020 20231005: KPart for viewing text/gemini files
 kde-misc/kio-gemini 20231005 20240801: Gemini KIO worker
 kde-misc/plasma5-wallpapers-dynamic 3.3.9 9999: A KDE Plasma wallpaper plugin to set your wallpaper based on the time of day.
-mail-client/betterbird-bin 115.15.0: Betterbird is a fine-tuned version of Mozilla Thunderbird.
+mail-client/betterbird-bin 115.16.0: Betterbird is a fine-tuned version of Mozilla Thunderbird.
 mail-client/heirloom-mailx 12.5: The mailx utility from CentOS
 mail-client/mailspring-bin 1.13.3: A beautiful, fast and fully open source mail client for Mac, Windows and Linux
 mail-client/proton-mail-bin 1.0.6: Beta Client for Proton Mail
@@ -1283,7 +1282,6 @@ media-sound/eartag 0.5.0 0.5.1: GTK4 MusicBrainz audio tagger
 media-sound/fooyin 0.7.1 0.7.2 0.7.3 9999: A customizable music player, Qt clone of foobar2000
 media-sound/furnace 0.6 0.6.5-r1 0.6.7: a multi-system chiptune tracker compatible with DefleMask modules
 media-sound/g4music 3.3 3.4: A GTK4 music player
-media-sound/hushboard 0.0_pre20220518 9999: Mutes your microphone while you are typing
 media-sound/ibniz 1.18-r1: virtual machine designed for extremely compact low-level audiovisual programs
 media-sound/jacktrip 1.7.1-r1 2.4.0: Send JACK audio over a network
 media-sound/jriver 31.0.83: A cross-platform media center, famous for high quality of audio.
@@ -1381,7 +1379,7 @@ net-im/Quaternion 0.0.95.1 0.0.96_beta4: A Qt-based IM client for Matrix
 net-im/abaddon 0.1.12-r1 0.1.13 0.2.1 9999: Alternative Discord client using GTK instead of Electron
 net-im/armcord-bin 3.2.7 3.3.1: ArmCord is a custom client designed to enhance your Discord experience.
 net-im/axolotl-bin 2.0.1: Axolotl is a cross-platform Signal client
-net-im/beeper 3.107.2 3.108.3: Beeper: Unified Messenger
+net-im/beeper 3.108.3 3.109.1: Beeper: Unified Messenger
 net-im/chatterino 2.5.1: Chat client for https://twitch.tv
 net-im/conduit 0.7.0 0.8.0 9999: Matrix homeserver written in Rust
 net-im/discord-canary-bin 0.0.306: All-in-one voice and text chat
@@ -1391,7 +1389,6 @@ net-im/flare 0.12.0: Chat with your friends on Signal
 net-im/gajim-plugins 9999: Plugins developed fro Gajim XMPP client
 net-im/go-sendxmpp 0.6.1 0.8.3: A tool to send messages or files to an XMPP contact or MUC
 net-im/gomuks 0.3.0 0.3.1: A terminal based Matrix client written in Go
-net-im/guilded-bin 1.0.9105465: Drop Discord, get Guilded
 net-im/heisenbridge 1.14.6-r1 1.15.0: A bouncer-style Matrix IRC bridge
 net-im/iamb 0.0.8 0.0.9: A Matrix chat client that uses Vim keybindings
 net-im/jitsi-meet 2022.3.1-r1: Desktop application for Jitsi Meet built with Electron
@@ -1487,7 +1484,7 @@ net-news/cliflux 1.4.1 1.4.4: A terminal-ui (TUI) client for the Miniflux RSS re
 net-news/comitium 1.8.1: feed aggregator for gemini supporting many formats and protocols
 net-news/gfeeds 2.2.0-r1 2.2.0-r2 2.2.0-r3: An RSS/Atom feed reader for GNOME.
 net-news/newsflash 3.1.6: Feed Reader written in GTK
-net-news/newsraft 0.25 0.26 9999: A lightweight feed reader with ncurses user interface inspired by Newsboat.
+net-news/newsraft 0.25 0.26 0.27 9999: A lightweight feed reader with ncurses user interface inspired by Newsboat.
 net-nntp/inn 2.7.1: InterNetNews - the Internet meets Netnews
 net-nntp/pan 0.159-r1 0.160: A newsreader for GNOME
 net-p2p/bisq-bin 1.9.14-r1: The decentralized bitcoin exchange (non-atomic, with arbitration)
@@ -1496,7 +1493,7 @@ net-p2p/feather 2.6.7-r1 2.6.8 9999: A free, open-source Monero wallet
 net-p2p/fragments 3.0.0 3.0.1: Fragments is an easy to use BitTorrent client
 net-p2p/gridcoin 5.4.8.0 5.4.8.0_p1: Proof-of-Stake based cryptocurrency that rewards BOINC computation
 net-p2p/monero 0.17.3.2 0.18.3.3-r2 0.18.3.4-r1 9999: The secure, private, untraceable cryptocurrency
-net-p2p/p2pool 4.0 4.1 9999: Decentralized pool for Monero mining
+net-p2p/p2pool 4.0 4.1.1 9999: Decentralized pool for Monero mining
 net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
 net-p2p/yggdrasil-go 0.5.7 9999: An experiment in scalable routing as an encrypted IPv6 overlay network
 net-print/hpuld 1.00.39.15.00.23-r1: HP Unified Linux Driver (for samsung hardware)
@@ -1581,7 +1578,7 @@ sci-mathematics/frama-c-variadic 25.0: Variadic function transformation plugin f
 sci-mathematics/pyromaths 21.8.2: Create maths exercises in LaTeX and PDF format
 sci-mathematics/rink 0.8.0 9999: Unit conversion tool, similar to frink
 sci-mathematics/rstudio-desktop-bin 2023.09.0_p463 2023.09.1_p494: IDE for R and Python
-sci-misc/boinc-wrapper 26018-r1: Wrapper to use non-BOINC apps with BOINC
+sci-misc/boinc-wrapper 26018-r1 26018-r2: Wrapper to use non-BOINC apps with BOINC
 sci-physics/openmodelica 1.23.1-r1: Open-source Modelica-based modeling and simulation environment
 sci-physics/ovito 3.10.4 3.10.5 3.10.5-r1: Open Visualization Tool
 sec-keys/openpgp-keys-aepaneshnikov 20221210: OpenPGP keys used by Alexander Epaneshnikov
@@ -1661,7 +1658,6 @@ sys-fs/sanoid 2.2.0 9999: Policy-driven snapshot management and replication tool
 sys-fs/ufiformat 0.9.9: USB Floppy Disk formatting tool
 sys-fs/zfs-auto-utils 1.0.0: ZFS Automatic Scrub/Trim for Linux
 sys-kernel/dpdk-kmod 23.03: DPDK Kernel Nic Interface module
-sys-kernel/scx 1.0.4: sched_ext schedulers and tools
 sys-kernel/uek-sources 5.15.0.300.159.7-r1 5.15.0.300.161.13: Unbreakable Enterprise Kernel (UEK) sources built from Oracle
 sys-kernel/usermode-kernel 6.0.12: Linux kernel built with Gentoo patches
 sys-kernel/xow 0.5: Linux driver for the Xbox One wireless dongle
@@ -1769,6 +1765,7 @@ x11-plugins/purple-mm-sms 0.1.7: Purple SMS plugin using ModemManager
 x11-terms/dmd5620 2.1.0: GTK+ 3.0 implementation of an AT&T / Teletype DMD 5620 emulator.
 x11-terms/rio 0.1.15: A hardware-accelerated GPU terminal emulator powered by WebGPU
 x11-terms/tabby-bin 1.0.189: A terminal for a more modern age
+x11-terms/terminal-simulator 0.2 9999: VT100 and VT52 terminal hardware simulator
 x11-terms/tym 3.5.1: Lua-configurable terminal emulator
 x11-themes/adw-gtk3 5.2 5.3: The theme from libadwaita ported to GTK-3
 x11-themes/adwaita-dark-amoled 9999: GTK-3/4 theme: black background, blue accent
