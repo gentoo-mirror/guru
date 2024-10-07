@@ -25,7 +25,7 @@ CRATES="
 	camino@1.1.9
 	cargo-platform@0.1.8
 	cargo_metadata@0.18.1
-	cc@1.1.22
+	cc@1.1.24
 	cfg-if@1.0.0
 	cfg_aliases@0.2.1
 	chrono@0.4.38
@@ -48,8 +48,8 @@ CRATES="
 	dirs-sys-next@0.1.2
 	displaydoc@0.2.5
 	dissimilar@1.0.9
-	duckscript@0.8.1
-	duckscriptsdk@0.9.4
+	duckscript@0.10.0
+	duckscriptsdk@0.11.0
 	dunce@1.0.5
 	either@1.13.0
 	encoding_rs@0.8.34
@@ -77,7 +77,7 @@ CRATES="
 	glob@0.3.1
 	globset@0.4.15
 	hashbrown@0.12.3
-	hashbrown@0.14.5
+	hashbrown@0.15.0
 	heck@0.5.0
 	hermit-abi@0.3.9
 	home@0.5.9
@@ -87,7 +87,7 @@ CRATES="
 	idna@0.5.0
 	ignore@0.4.23
 	indexmap@1.9.3
-	indexmap@2.5.0
+	indexmap@2.6.0
 	itertools@0.13.0
 	itoa@1.0.11
 	java-properties@2.0.0
@@ -101,6 +101,7 @@ CRATES="
 	libc@0.2.159
 	libredox@0.1.3
 	linux-raw-sys@0.4.14
+	lockfree-object-pool@0.1.6
 	log@0.4.22
 	md5@0.7.0
 	memchr@2.7.4
@@ -111,9 +112,7 @@ CRATES="
 	num-conv@0.1.0
 	num-traits@0.2.19
 	num_cpus@1.16.0
-	num_enum@0.7.3
-	num_enum_derive@0.7.3
-	once_cell@1.19.0
+	once_cell@1.20.1
 	openssl-macros@0.1.1
 	openssl-probe@0.1.5
 	openssl-sys@0.9.103
@@ -123,21 +122,21 @@ CRATES="
 	petgraph@0.6.5
 	pin-project-lite@0.2.14
 	pkg-config@0.3.31
+	portable-atomic@1.9.0
 	powerfmt@0.2.0
 	ppv-lite86@0.2.20
-	proc-macro-crate@3.2.0
 	proc-macro2@1.0.86
 	quote@1.0.37
 	rand@0.8.5
 	rand_chacha@0.3.1
 	rand_core@0.6.4
-	redox_syscall@0.5.6
+	redox_syscall@0.5.7
 	redox_users@0.4.6
-	regex-automata@0.4.7
-	regex-syntax@0.8.4
-	regex@1.10.6
+	regex-automata@0.4.8
+	regex-syntax@0.8.5
+	regex@1.11.0
 	ring@0.17.8
-	run_script@0.10.1
+	run_script@0.11.0
 	rust_info@0.3.3
 	rustix@0.38.37
 	rustls-pki-types@1.9.0
@@ -158,6 +157,7 @@ CRATES="
 	sha2@0.10.8
 	shell2batch@0.4.5
 	shlex@1.3.0
+	simd-adler32@0.3.7
 	spin@0.9.8
 	strip-ansi-escapes@0.2.0
 	strum_macros@0.26.4
@@ -176,7 +176,7 @@ CRATES="
 	toml_edit@0.22.22
 	typenum@1.17.0
 	uname@0.1.1
-	unicode-bidi@0.3.15
+	unicode-bidi@0.3.17
 	unicode-ident@1.0.13
 	unicode-normalization@0.1.24
 	untrusted@0.9.0
@@ -228,7 +228,8 @@ CRATES="
 	zerocopy-derive@0.7.35
 	zerocopy@0.7.35
 	zeroize@1.8.1
-	zip@1.1.4
+	zip@2.2.0
+	zopfli@0.8.1
 "
 
 inherit cargo
@@ -242,7 +243,9 @@ SRC_URI="
 
 LICENSE="Apache-2.0"
 # Dependent crate licenses
-LICENSE+=" Apache-2.0 BSD ISC MIT MPL-2.0 openssl Unicode-DFS-2016"
+LICENSE+=" Apache-2.0 BSD Boost-1.0 ISC MIT MPL-2.0 Unicode-DFS-2016"
+# ring
+LICENSE+=" openssl"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE="openssl +rustls test"
