@@ -15,47 +15,27 @@ S="${WORKDIR}/${PN}-${GITHUB_PV}"
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="qt6"
 
 RDEPEND="
-	qt6? (
-		dev-qt/qtbase:6[widgets,network,gui]
-		dev-qt/qttools:6[linguist]
-		dev-qt/qtdeclarative:6[widgets]
-		>=net-libs/libquotient-0.8.0:=[qt6(-)]
-		dev-libs/qtkeychain:=[qt6]
-	)
-	!qt6? (
-		>=dev-qt/qtcore-5.15.0:5
-		>=dev-qt/qtdeclarative-5.15.0:5[widgets(+)]
-		>=dev-qt/qtgui-5.15.0:5
-		>=dev-qt/qtnetwork-5.15.0:5
-		>=dev-qt/qtquickcontrols2-5.15.0:5[widgets(+)]
-		>=dev-qt/qtwidgets-5.15.0:5
-		>=net-libs/libquotient-0.8.0:=[qt5(+)]
-		dev-libs/qtkeychain:=[qt5]
-	)
+	dev-qt/qtbase:6[widgets,network,gui]
+	dev-qt/qttools:6[linguist]
+	dev-qt/qtdeclarative:6[widgets]
+	>=net-libs/libquotient-0.8.0:=
+	dev-libs/qtkeychain:=[qt6]
 "
 DEPEND="
 	${RDEPEND}
-	qt6? (
-		dev-qt/qtmultimedia:6
-	)
-	!qt6? (
-		>=dev-qt/qtdbus-5.15.0
-		>=dev-qt/qtmultimedia-5.15.0:5
-	)
+	dev-qt/qtmultimedia:6
 "
 BDEPEND="
-	qt6? ( dev-qt/qttools:6[linguist] )
-	!qt6? ( >=dev-qt/linguist-tools-5.15.0:5 )
+	dev-qt/qttools:6[linguist]
 "
 
 DOCS=( {README,SECURITY}.md )
 
 src_configure() {
 	local mycmakeargs=(
-		-DBUILD_WITH_QT6=$(usex qt6)
+		-DBUILD_WITH_QT6=On
 	)
 
 	cmake_src_configure
