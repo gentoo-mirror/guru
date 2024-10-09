@@ -107,7 +107,7 @@ app-admin/oet 0.1.9 0.1.10 0.1.11 9999: Update your system into binpkgs in an ov
 app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applications and tmux
 app-admin/pass-audit 1.2 1.2-r1: A pass extension for auditing your password repository.
 app-admin/pass-update 2.2.1: pass extension that provides an easy flow for updating passwords
-app-admin/pulumi-bin 3.131.0 3.133.0 3.135.0: Infrastructure as code in any programming language
+app-admin/pulumi-bin 3.133.0 3.135.0 3.136.0: Infrastructure as code in any programming language
 app-admin/rbw 1.11.1-r1 1.12.0 1.12.1 9999: Unofficial Bitwarden CLI
 app-admin/s-tui 1.1.6: Stress-Terminal UI monitoring tool
 app-admin/synadm 0.43.1 0.44: Command line admin tool for Synapse
@@ -240,7 +240,7 @@ app-misc/gentodo 0.2.1 1.1.0 1.1.1 9999: Todo program to help enhance your Gento
 app-misc/ghq 1.1.0 1.1.5: Remote repository management made easy
 app-misc/github-desktop-bin 3.3.1_rc1: Linux fork of GitHub Desktop
 app-misc/glow 1.5.1 2.0.0: Render markdown on the CLI, with pizzazz!
-app-misc/godedupe 1.5.1: Improved and modern fdupes alternative
+app-misc/godedupe 1.5.1 1.5.2: Improved and modern fdupes alternative
 app-misc/gopsuinfo 0.1.5: A gopsutil-based command to display system usage info as text
 app-misc/grit 0.3.0: An personal task manager that represents tasks as multitree nodes
 app-misc/interception-tools 0.6.8-r1: A minimal composable infrastructure on top of libudev and libevdev
@@ -398,7 +398,7 @@ dev-cpp/coeurl 0.3.0 0.3.1: A simple async wrapper around CURL for C++
 dev-cpp/cpp-jwt 1.5_pre20220727: JSON Web Token library for C++
 dev-cpp/cpprestsdk 2.10.19-r3: A Microsoft project for cloud-based client-server communication.
 dev-cpp/cpptoml 0.1.1: Header-only library for parsing TOML
-dev-cpp/cpptrace 0.6.3 0.7.0: Simple, portable, and self-contained stacktrace library for C++
+dev-cpp/cpptrace 0.6.3 0.7.0 0.7.2: Simple, portable, and self-contained stacktrace library for C++
 dev-cpp/dpp 10.0.23 10.0.24 10.0.25 10.0.29 10.0.30: Lightweight C++ Discord bot library
 dev-cpp/drogon 1.9.5 1.9.6: C++14/17 based HTTP web application framework
 dev-cpp/fast_float 6.1.5: Fast and exact implementation of the C++ from_chars functions for number types
@@ -981,7 +981,7 @@ games-action/technic-launcher 4.625 4.768 4.822: Minecraft launcher for communit
 games-arcade/SpaceCadetPinball 2.0 2.0.1 2.1.0 9999: Decompilation of 3D Pinball for Windows - Space Cadet
 games-arcade/opensurge 0.5.2.1 9999: fun 2D retro platformer inspired by old-school Sonic games
 games-arcade/shiromino 0.2.1: fast-paced puzzle game with roots in the arcade
-games-arcade/taisei 1.4.1 9999: Clone of the Touhou series, written in C using SDL/OpenGL/OpenAL.
+games-arcade/taisei 1.4.1 1.4.2 9999: Clone of the Touhou series, written in C using SDL/OpenGL/OpenAL.
 games-arcade/tetrio-desktop 8 9: TETR.IO desktop client.
 games-board/fairy-stockfish 14.0.1: Chess variant engine derived from Stockfish to support fairy chess variants
 games-board/openriichi 0.2.1.1: OpenRiichi is an open source Japanese Mahjong client
@@ -1538,7 +1538,7 @@ sci-electronics/kactus2 3.12.0 3.13.0 3.13.1 9999: A open source IP-XACT-based t
 sci-electronics/liblxi 1.20: Implementation of the LAN eXtensions for Instrumentation (LXI)
 sci-electronics/logic-bin 2.4.14: Saleae logic analyzer
 sci-electronics/lxi-tools 2.7: Tools to access devices with LXI
-sci-electronics/slang 4.0 5.0 6.0 9999: SystemVerilog compiler and language services
+sci-electronics/slang 7.0 9999: SystemVerilog compiler and language services
 sci-electronics/svls 0.2.11: SystemVerilog language server
 sci-electronics/vcd 221217: VCD file (Value Change Dump) command line viewer
 sci-electronics/verilator 5.022 5.024 9999: The fast free Verilog/SystemVerilog simulator
@@ -1711,7 +1711,7 @@ www-apps/zola 0.19.2: A fast static site generator with everything built-in
 www-client/badwolf 1.3.0-r1 9999: Minimalist and privacy-oriented WebKitGTK+ browser
 www-client/browsh 1.8.2: A fully-modern text-based browser, rendering to TTY and browsers
 www-client/firefox-developer-bin 122.0 128.0: Firefox browser developer edition
-www-client/mullvad-browser-bin 13.5.3: The Mullvad Browser is developed to minimize tracking and fingerprinting.
+www-client/mullvad-browser-bin 13.5.6: The Mullvad Browser is developed to minimize tracking and fingerprinting.
 www-client/nyxt 3.11.7 3.11.8 9999: Nyxt - the hacker's power-browser
 www-client/vimb 3.6.0 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
 www-client/yandex-browser 24.7.3.1253_p1: The web browser from Yandex
@@ -1730,7 +1730,7 @@ x11-apps/lightdm-gtk-greeter-settings 1.2.2-r2: Configuration tool for the Light
 x11-apps/xcur2png 0.7.1-r3: Convert X cursors to PNG images
 x11-drivers/OpenTabletDriver 0.6.4.0: A cross-platform open-source tablet driver
 x11-drivers/OpenTabletDriver-bin 0.6.3.0: Cross platform tablet driver (binary package)
-x11-drivers/evdi 1.14.5 1.14.6: Extensible Virtual Display Interface
+x11-drivers/evdi 1.14.6 1.14.7: Extensible Virtual Display Interface
 x11-libs/gtk-fortran 3.24.31 4.4.1 4.5.0 4.6.0: A GTK+ binding to build Graphical User Interfaces in Fortran
 x11-libs/sdl-fakeqwerty 0_pre20191217: Fixes non-QWERTY keyboards on Prison Architect (and maybe other SDL games)
 x11-misc/aerial-sddm-theme 0_pre20191018-r1 9999: SDDM theme with Apple TV Aerial videos
