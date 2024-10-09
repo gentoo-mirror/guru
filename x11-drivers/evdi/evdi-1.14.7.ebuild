@@ -4,7 +4,7 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{10..13} )
-inherit linux-mod-r1 python-single-r1
+inherit linux-mod-r1 python-single-r1 flag-o-matic
 
 DESCRIPTION="Extensible Virtual Display Interface"
 HOMEPAGE="https://github.com/DisplayLink/evdi"
@@ -49,6 +49,8 @@ pkg_setup() {
 }
 
 src_compile() {
+	filter-lto
+
 	local modlist=(
 		"evdi=video:module"
 	)

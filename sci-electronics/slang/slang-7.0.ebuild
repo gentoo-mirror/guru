@@ -3,7 +3,7 @@
 
 EAPI="8"
 
-PYTHON_COMPAT=( python3_{10..12} )
+PYTHON_COMPAT=( python3_{10..13} )
 inherit cmake python-single-r1
 
 DESCRIPTION="SystemVerilog compiler and language services"
@@ -39,9 +39,14 @@ BDEPEND="
 	test? ( >=dev-cpp/catch-3.0.1 )
 "
 
-PATCHES=(
-	"${FILESDIR}/${PN}-5.0-fix-gentoo-libfmt-depend.patch"
-)
+src_prepare() {
+	default
+	# In order to compile smoothly, the minimum version of fmt must be lowered.
+	sed -i \
+		-e 's/set(fmt_min_version.*)/set(fmt_min_version "9.0")/' \
+		"${S}/external/CMakeLists.txt" || die
+	cmake_src_prepare
+}
 
 src_configure() {
 	python_setup
