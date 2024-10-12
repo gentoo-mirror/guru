@@ -1,0 +1,15 @@
+DEFINED_PHASES=compile install prepare setup test
+DEPEND=postgres_targets_postgres17? ( dev-db/postgresql:17=[server] ) postgres_targets_postgres16? ( dev-db/postgresql:16=[server] ) postgres_targets_postgres15? ( dev-db/postgresql:15=[server] ) postgres_targets_postgres14? ( dev-db/postgresql:14=[server] ) postgres_targets_postgres13? ( dev-db/postgresql:13=[server] ) postgres_targets_postgres12? ( dev-db/postgresql:12=[server] )
+DESCRIPTION=RUM access method - inverted index with additional information in posting lists
+EAPI=7
+HOMEPAGE=https://github.com/postgrespro/rum
+INHERIT=postgres-multi
+IUSE=postgres_targets_postgres17 postgres_targets_postgres16 postgres_targets_postgres15 postgres_targets_postgres14 postgres_targets_postgres13 postgres_targets_postgres12
+KEYWORDS=~amd64 ~x86
+LICENSE=POSTGRESQL
+RDEPEND=postgres_targets_postgres17? ( dev-db/postgresql:17=[server] ) postgres_targets_postgres16? ( dev-db/postgresql:16=[server] ) postgres_targets_postgres15? ( dev-db/postgresql:15=[server] ) postgres_targets_postgres14? ( dev-db/postgresql:14=[server] ) postgres_targets_postgres13? ( dev-db/postgresql:13=[server] ) postgres_targets_postgres12? ( dev-db/postgresql:12=[server] )
+RESTRICT=test
+SLOT=0
+SRC_URI=https://github.com/postgrespro/rum/archive/1.3.14.tar.gz -> rum-1.3.14.tar.gz
+_eclasses_=out-of-source-utils	dbf9e34ee8964084651e25907fa8f52c	multibuild	4650a65187015567b4e041bb9bfdb364	postgres	2ad3e67607a9b24fe6973ddf464c5258	postgres-multi	ccad35d745ce66b41837db8a6ee94601
+_md5_=ddeaf4f058866edd07208a2db5735f25
