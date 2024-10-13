@@ -3,8 +3,9 @@
 
 EAPI=8
 
+LLVM_COMPAT=( {15..18} )
 PYTHON_COMPAT=( python3_{10..13} )
-inherit python-single-r1
+inherit llvm-r1 python-single-r1
 
 DESCRIPTION="A high-level, general-purpose, multi-paradigm, compiled programming language"
 HOMEPAGE="https://www.swift.org"
@@ -56,7 +57,7 @@ PATCHES=(
 
 S="${WORKDIR}"
 LICENSE="Apache-2.0"
-SLOT="0"
+SLOT="5/10"
 KEYWORDS="~amd64"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
@@ -64,15 +65,16 @@ RESTRICT="strip"
 
 RDEPEND="
 	${PYTHON_DEPS}
+	>=app-eselect/eselect-swift-1.0
 	>=dev-db/sqlite-3
 	>=dev-libs/icu-69
 	>=dev-libs/libedit-20221030
 	>=dev-libs/libxml2-2.11.5
 	>=net-misc/curl-8.4
-	>=sys-devel/lld-15
 	>=sys-libs/ncurses-6
 	>=sys-libs/zlib-1.3
 	dev-lang/python
+	$(llvm_gen_dep 'sys-devel/lld:${LLVM_SLOT}=')
 "
 
 BDEPEND="
@@ -83,18 +85,62 @@ BDEPEND="
 	>=dev-libs/icu-69
 	>=dev-libs/libedit-20221030
 	>=dev-libs/libxml2-2.11.5
-	>=dev-util/patchelf-0.18
 	>=dev-vcs/git-2.39
 	>=sys-apps/coreutils-9
-	>=sys-devel/clang-15
-	>=sys-devel/lld-15
 	>=sys-libs/ncurses-6
 	>=sys-libs/zlib-1.3
+	$(llvm_gen_dep '
+		sys-devel/clang:${LLVM_SLOT}=
+		sys-devel/lld:${LLVM_SLOT}=
+	')
 	dev-lang/python
 	$(python_gen_cond_dep '
 		dev-python/setuptools[${PYTHON_USEDEP}]
 	' python3_{12..13})
 "
+
+# Adapted from `flag-o-matic.eclass`'s `raw-ldflags`: turns GCC-style flags
+# (`-Wl,-foo`) into Clang-style flags (`-Xlinker -foo`).
+clang-ldflags() {
+	local flag input="$@"
+	[[ -z ${input} ]] && input=${LDFLAGS}
+	set --
+	for flag in ${input//,/ } ; do
+		case ${flag} in
+			-Wl) ;;
+			*) set -- "$@" "-Xlinker ${flag}" ;;
+		esac
+	done
+	echo "$@"
+}
+
+pkg_setup() {
+	# Sets `${EPYTHON}` according to `PYTHON_SINGLE_TARGET`, sets up
+	# `${T}/${EPYTHON}` with that version, and adds it to the `PATH`.
+	python_setup
+
+	# Sets up `PATH` to point to the appropriate LLVM toolchain.
+	llvm-r1_pkg_setup
+
+	# `llvm-r1_pkg_setup` sets these tools to their absolute paths, but we need
+	# to still pick them up dynamically based on `PATH` for stage1 and stage2
+	# builds below (to keep all parts of the Swift toolchain compiling with the
+	# same internal tools).
+	export CC="clang"
+	export CXX="clang++"
+	export LD="ld.lld"
+
+	# Swift builds with CMake, which picks up `LDFLAGS` from the environment and
+	# populates `CMAKE_EXE_LINKER_FLAGS` with them. `LDFLAGS` are typically
+	# given as GCC-style flags (), which Clang understands;
+	# unfortunately, CMake passes these flags to all compilers under the
+	# assumption they support the same syntax, but `swiftc` _only_ understands
+	# Clang-style flags (`-Xlinker -foo`). In order to pass `LDFLAGS` in, we
+	# have to turn them into a format that `swiftc` will understand.
+	#
+	# We can do this because we know we're compiling with Clang specifically.
+	export LDFLAGS="$(clang-ldflags)"
+}
 
 src_unpack() {
 	default
@@ -115,14 +161,6 @@ src_unpack() {
 		&& mv 'swift-package-manager' 'swiftpm' \
 		&& popd \
 		|| die
-}
-
-src_configure() {
-	default
-
-	# Sets `${EPYTHON}` according to `PYTHON_SINGLE_TARGET`, sets up
-	# `${T}/${EPYTHON}` with that version, and adds it to the `PATH`.
-	python_setup
 }
 
 src_compile() {
@@ -184,6 +222,8 @@ src_compile() {
 	"${S}/swift/utils/build-script" \
 		--verbose-build \
 		--release \
+		--no-assertions \
+		--build-subdir="Ninja-Release" \
 		--install-destdir="${S}/stage0" \
 		--extra-cmake-options="${extra_cmake_options}" \
 		--bootstrapping=off \
@@ -199,7 +239,7 @@ src_compile() {
 		|| die
 
 	# stage1:
-	# * Base Swift compiler and driver (bootstrapping from stage1; with macros)
+	# * Base Swift compiler and driver (bootstrapping from stage0; with macros)
 	# * Base libs: swift-driver depends on llbuild + swiftpm, which depend on
 	#   Foundation + libdispatch + XCTest
 	local original_path="${PATH}"
@@ -207,6 +247,8 @@ src_compile() {
 	"${S}/swift/utils/build-script" \
 		--verbose-build \
 		--release \
+		--no-assertions \
+		--build-subdir="Ninja-Release" \
 		--install-destdir="${S}/stage1" \
 		--extra-cmake-options="${extra_cmake_options}" \
 		--build-swift-libexec=false \
@@ -224,11 +266,13 @@ src_compile() {
 		--install-all \
 		|| die
 
-	# stage2: full Swift toolchain (bootstrapping from stage2)
+	# stage2: full Swift toolchain (bootstrapping from stage1)
 	export PATH="${S}/stage1/usr/bin:${original_path}"
 	"${S}/swift/utils/build-script" \
 		--verbose-build \
 		--release \
+		--no-assertions \
+		--build-subdir="Ninja-Release" \
 		--install-destdir="${S}/stage2" \
 		--extra-cmake-options="${extra_cmake_options}" \
 		--build-swift-libexec=false \
@@ -269,6 +313,27 @@ src_install() {
 	# `swift <command>` calls `swift-<command>` directly.)
 	local bin
 	for bin in swift swiftc sourcekit-lsp; do
-		dosym -r "${dest_dir}/usr/bin/${bin}" "/usr/bin/${bin}"
+		# We only install versioned symlinks; non-versioned links are maanged
+		# via `eselect swift`.
+		dosym -r "${dest_dir}/usr/bin/${bin}" "/usr/bin/${bin}-${PV}"
 	done
+}
+
+pkg_postinst() {
+	# If we're installing the latest version of Swift, then update symlinks to
+	# it. (We don't want to call `eselect swift update` unconditionally in case
+	# we're installing an older version of Swift, and the user has intentionally
+	# selected a version other than the latest.)
+	if ! has_version ">${CATEGORY}/${P}"; then
+		eselect swift update
+	fi
+}
+
+pkg_postrm() {
+	# We don't want to leave behind symlinks pointing to this Swift version on
+	# removal.
+	local eselect_swift_version="$(eselect swift show)"
+	if [[ "${eselect_swift_version}" == *"${P}" ]]; then
+		eselect swift update
+	fi
 }
