@@ -201,6 +201,7 @@ app-emulation/x48ng 0.38.0: HP48 emulator
 app-eselect/eselect-autostart 1.0.0: Manage symlinks in $XDG_CONFIG_HOME/autostart
 app-eselect/eselect-bluespec 1.0.2: Manages the /usr/bin/bsc (bluespec) symlink
 app-eselect/eselect-ld 1.0.0: Manage the ld symlink
+app-eselect/eselect-swift 1.0: Manages Swift symlinks
 app-eselect/eselect-vala 1.0.0: Manage the valac symlink
 app-forensics/mvt 2.4.1: Forensic traces to identify a potential compromise of Android and iOS devices
 app-i18n/fcitx-skk 0.1.4: An input method engine for Fcitx
@@ -507,7 +508,7 @@ dev-lang/odin 2024.08 2024.09: The Data-Oriented Language for Sane Software Deve
 dev-lang/opencilk 1.1 2.1: The OpenCilk concurrency platform for parallel programming
 dev-lang/opencilk-bin 1.1 2.1: The OpenCilk concurrency platform for parallel programming
 dev-lang/quickjs 2024.01.13-r1: Small embeddable Javascript engine
-dev-lang/swift 5.10.1: A high-level, general-purpose, multi-paradigm, compiled programming language
+dev-lang/swift 5.10.1 5.10.1-r1 6.0.1: A high-level, general-purpose, multi-paradigm, compiled programming language
 dev-lang/wabt 1.0.34: The WebAssembly Binary Toolkit
 dev-libs/M_CLI2 3.2.0: M_CLI2 - parse Unix-like command line arguments from Fortran
 dev-libs/StringiFor 1.1.4: StringiFor, Strings Fortran Manipulator, yet another strings Fortran module
@@ -1272,7 +1273,7 @@ media-radio/fllog 1.2.7: Logbook application for amateur radio use
 media-sound/6pm 0.9: 6PM is a polyphonic, touch-sensitive, realtime phase modulation synthesizer
 media-sound/TauonMusicBox 7.8.0-r1 7.8.3 9999: The desktop music player of today!
 media-sound/add64 3.8.0 3.9.3: Add64 is a realtime additive/subtractive-synthesis softsynth
-media-sound/amberol 0.10.4_pre20240517: Simple GUI Music Player
+media-sound/amberol 2024.1: Simple GUI Music Player
 media-sound/bespokesynth 1.2.1: Software modular synth
 media-sound/callaudiod 0.1.9 0.1.10: Call audio routing daemon
 media-sound/corrscope 0.10.0-r1: Advanced oscilloscope audio visualizer specializing in chiptune
@@ -1286,7 +1287,7 @@ media-sound/ibniz 1.18-r1: virtual machine designed for extremely compact low-le
 media-sound/jacktrip 1.7.1-r1 2.4.0: Send JACK audio over a network
 media-sound/jriver 31.0.83: A cross-platform media center, famous for high quality of audio.
 media-sound/kew 2.4.4-r1: kew (/kjuː/) is a command-line music player for Linux.
-media-sound/lms 3.57.0 3.58.0: Lightweight Music Server.
+media-sound/lms 3.58.0 3.59.1: Lightweight Music Server.
 media-sound/loudgain 0.6.8-r1: Versatile ReplayGain 2.0 loudness normalizer
 media-sound/mopidy 3.4.2: An extensible music server written in Python.
 media-sound/mpd-mpris 0.3.1 0.4.0 0.4.1: An implementation of the MPRIS protocol for MPD.
@@ -1399,7 +1400,7 @@ net-im/matterhorn-bin 90000.0.0 90000.0.1: Terminal based Mattermost client
 net-im/maubot 0.4.2: Plugin-based Matrix bot system
 net-im/mautrix-discord 0.6.4 0.6.5: A Matrix-Discord puppeting bridge
 net-im/mautrix-meta 0.3.0 0.3.1: A Matrix-Facebook puppeting bridge
-net-im/mautrix-signal 0.6.0 0.6.1 0.6.2: A Matrix-Signal puppeting bridge
+net-im/mautrix-signal 0.6.0 0.6.1: A Matrix-Signal puppeting bridge
 net-im/mautrix-slack 0_pre20230925 0_pre20240215: A Matrix-Slack puppeting bridge based on slack-go
 net-im/mautrix-telegram 0.15.1 0.15.2: A Matrix-Telegram Messenger puppeting bridge
 net-im/mautrix-whatsapp 0.10.9: A Matrix-WhatsApp puppeting bridge
@@ -1466,7 +1467,7 @@ net-misc/ooni-probe-cli 3.22.0 3.23.0: OONI Probe network measurement tool for d
 net-misc/openbgpd 8.4 8.5 8.6 9999: OpenBGPD is a free implementation of BGPv4
 net-misc/peertube-viewer-rs 1.8.5: Command-line PeerTube viewer inspired by youtube-viewer
 net-misc/purritobin 0.6.7 9999: minimalistic commandline pastebin
-net-misc/rpki-client 8.8 9.2 9.3: Portability shim for OpenBSD's rpki-client
+net-misc/rpki-client 9.2 9.3: Portability shim for OpenBSD's rpki-client
 net-misc/smcroute 2.5.7: A static multicast routing daemon
 net-misc/sshx 0.2.4: A secure web-based, collaborative terminal.
 net-misc/toot 0.38.1: toot - Mastodon CLI & TUI
