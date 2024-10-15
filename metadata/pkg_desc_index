@@ -404,7 +404,7 @@ dev-cpp/cpptoml 0.1.1: Header-only library for parsing TOML
 dev-cpp/cpptrace 0.6.3 0.7.0 0.7.2 9999: Simple, portable, and self-contained stacktrace library for C++
 dev-cpp/dpp 10.0.23 10.0.24 10.0.25 10.0.29 10.0.30: Lightweight C++ Discord bot library
 dev-cpp/drogon 1.9.5 1.9.6: C++14/17 based HTTP web application framework
-dev-cpp/fast_float 6.1.5: Fast and exact implementation of the C++ from_chars functions for number types
+dev-cpp/fast_float 6.1.6: Fast and exact implementation of the C++ from_chars functions for number types
 dev-cpp/finalcut 0.9.1-r1 9999: A text-based widget toolkit
 dev-cpp/gsl-lite 0.38.0: C++ Guideline Support Library implementation
 dev-cpp/indicators 2.3 2.3-r1: Activity indicators for modern C++
@@ -415,7 +415,7 @@ dev-cpp/pcg-cpp 0.98.1_p20210406-r1: Family of better random number generators
 dev-cpp/qt-jdenticon 0.3.0-r1 0.3.0_p20240107 0.3.1: Qt5 / C++14 Port of Jdenticon
 dev-cpp/rang 3.2: Minimal, header-only, modern C++ library for terminal goodies
 dev-cpp/scnlib 3.0.1: scanf for modern C++
-dev-cpp/simdutf 5.5.0: simdutf: Unicode validation and transcoding at billions of characters per second
+dev-cpp/simdutf 5.6.0: simdutf: Unicode validation and transcoding at billions of characters per second
 dev-cpp/sprout 0_pre20190615: C++11/14 constexpr based Containers, Algorithms, Random numbers and others
 dev-cpp/trantor 1.5.19 1.5.20: Non-blocking I/O tcp network lib based on c++14/17
 dev-cpp/trompeloeil 47: Header only C++14 mocking framework
@@ -454,7 +454,7 @@ dev-crystal/temel 0.1.0_p20171024: Extensible Markup DSL for Crystal
 dev-crystal/water 1.0.0: A library for writing HTML in plain Crystal
 dev-crystal/webdrivers 0.4.2 0.4.3: Helps manage drivers for Selenium, such as the Chromedriver
 dev-crystal/webless 0.1.0: HTTP::Client for testing HTTP::Handlers directly and maintaining cookies
-dev-db/dbeaver-bin 23.0.0 23.2.0 23.3.0: Free universal database tool (community edition).
+dev-db/dbeaver-bin 23.3.0 24.2.2: Free universal database tool (community edition).
 dev-db/libpg_query 16.5.1.0: C library for accessing the PostgreSQL parser outside of the server environment
 dev-db/pg_query_vala 0.1.0_pre20240326-r1: Thin wrapper around libpg_query to use with vala
 dev-db/pg_repack 1.5.0: Reorganize tables in PostgreSQL databases with minimal locks
@@ -536,14 +536,14 @@ dev-libs/jose 13 14: C-language implementation of Javascript Object Signing and 
 dev-libs/lexbor 2.3.0: Modular web engine (HTML/CSS parser, renderer, ...)
 dev-libs/libchardet 1.0.6: Mozilla's Universal Charset Detector C/C++ API
 dev-libs/libcli 1.10.7: Shared C library to include Cisco-like CLI into other software
-dev-libs/libdatrie 0.2.13: Double-Array Trie Library
+dev-libs/libdatrie 0.2.13-r1: Double-Array Trie Library
 dev-libs/libdbf 0.0.1: Library to read the content of dBASE III, IV, and 5.0 files
 dev-libs/libdwarf 0.9.1 0.10.1 0.11.0: The DWARF Debugging Information Format
 dev-libs/libglibutil 1.0.76 1.0.79 9999: Library of glib utilities from sailfishos project
 dev-libs/librepo 1.18.1: Repodata downloading library
 dev-libs/libsignal-ffi 0.44.0 0.46.0 0.51.0: A C ABI library which exposes Signal protocol logic
 dev-libs/libsolv 0.7.30-r1: Library for solving packages and reading repositories
-dev-libs/libthai 0.1.28 0.1.29: A a set of Thai language support routines
+dev-libs/libthai 0.1.29: A a set of Thai language support routines
 dev-libs/libtypec 0.5.2-r2: Library to interface with USB Type-C/Power Delivery devices
 dev-libs/ls-hpack 2.3.3: QPACK compression library for use with HTTP/3
 dev-libs/ls-qpack 2.5.4: QPACK compression library for use with HTTP/3
@@ -732,6 +732,7 @@ dev-python/markdownify 0.11.6: Convert HTML to Markdown
 dev-python/mastodon-py 1.8.1: Python wrapper for the Mastodon API
 dev-python/material-color-utilities 0.1.5 9999: Python port of material-color-utilities used for Material You colors
 dev-python/mautrix 0.20.4-r2 0.20.6: A Python 3 asyncio Matrix framework
+dev-python/mininet 2.3.0: Emulator for rapid prototyping of Software Defined Networks
 dev-python/mitype 0.2.6: Typing speed test in terminal
 dev-python/mkdocs-blog-plugin 9999: Plugin for MkDocs to keep a simple blog section inside your documentation.
 dev-python/mkdocs-bootstrap-tables-plugin 0.1.1: A MkDocs plugin to add bootstrap classes to plan markdown generated tables.
@@ -896,7 +897,7 @@ dev-tex/ninecolors 2022.02.13: Select colors with proper WCAG color contrast
 dev-tex/tabularray 2023.03.01: Typeset tabulars and arrays with LATEX3
 dev-tex/tectonic 0.14.1 0.15.0: A modernized, complete, embeddable TeX/LaTeX engine.
 dev-util/DirectXShaderCompiler 1.8.2407: Microsoft DirectX Shader Compiler which is based on LLVM/Clang
-dev-util/bash-language-server 5.3.3 5.4.0: A language server for Bash
+dev-util/bash-language-server 5.3.3 5.4.0 5.4.2: A language server for Bash
 dev-util/bats-assert 2.1.0: Common assertions for Bats
 dev-util/bats-support 0.3.0: Supporting library for Bats test helpers
 dev-util/bc-ur 0.3.0: Blockchain Commons UR Library
@@ -1119,7 +1120,7 @@ gui-apps/nwg-drawer 0.4.9-r1 0.5.0 0.5.1: Application drawer for wlroots-based W
 gui-apps/nwg-icon-picker 0.1.1 9999: GTK icon chooser with a text search option
 gui-apps/nwg-launchers 0.5.0 0.6.3 0.7.1.1 9999: GTK+ launchers for sway, i3 and some other WMs
 gui-apps/nwg-menu 0.1.4 0.1.5 0.1.6: enuStart plugin to nwg-panel, also capable of working standalone
-gui-apps/nwg-panel 0.9.39 0.9.40 0.9.41 9999: GTK3-based panel for sway and Hyprland Wayland compositors
+gui-apps/nwg-panel 0.9.41 0.9.42 0.9.43 0.9.44 9999: GTK3-based panel for sway and Hyprland Wayland compositors
 gui-apps/nwg-shell 0.5.35 0.5.36 0.5.38: libraries an common functions for the nwg-shell project
 gui-apps/nwg-shell-config 0.5.41 0.5.42 0.5.46: nwg-shell configuration utility
 gui-apps/openrefine 3.7.9: Wikidata batch editor, Wikimedia Commons mass upload tool
@@ -1163,7 +1164,7 @@ gui-apps/wob 0.14.2 0.15.1-r1: Lightweight overlay volume/backlight/progress/any
 gui-apps/wscreensaver 9999: Xscreensaver screensavers ported to wayland
 gui-apps/wtype 0.4: xdotool type for wayland
 gui-apps/xremap 0.10.1: Dynamic key remap for X and Wayland
-gui-apps/xwayland-satellite 0.4: Xwayland outside your Wayland
+gui-apps/xwayland-satellite 0.4-r1: Xwayland outside your Wayland
 gui-apps/yambar 1.11.0 9999: Simplistic and highly configurable status panel for X and Wayland
 gui-libs/gtk-session-lock 0.2.0-r5 9999: GTK-based lockscreen for Wayland
 gui-libs/gtk4-layer-shell 1.0.2: A library for using the Layer Shell Wayland protocol with GTK4.
@@ -1261,7 +1262,7 @@ media-libs/raylib 5.0 9999: A simple and easy-to-use library to learn videogames
 media-libs/svt-vp9 0.3.0 9999: Scalable Video Technology for VP9 (SVT-VP9 Encoder)
 media-libs/vvdec 2.3.0: VVdeC, the Fraunhofer Versatile Video Decoder
 media-libs/vvenc 1.11.1: VVenC, the Fraunhofer Versatile Video Encoder
-media-libs/wivrn 0.18 0.19 9999: WiVRn OpenXR streaming
+media-libs/wivrn 0.19 0.20 9999: WiVRn OpenXR streaming
 media-plugins/alsa-sndio 0.2: ALSA PCM to play audio on sndio servers
 media-plugins/argotlunar-bin 2.06-r1: Argotlunar is a sound granulator. Binary Linux VST
 media-plugins/dtmediawiki 9999: Wikimedia Commons export plugin for Darktable. Every upload is converted
@@ -1282,7 +1283,7 @@ media-sound/corrscope 0.10.0-r1: Advanced oscilloscope audio visualizer speciali
 media-sound/drumgizmo 0.9.20 9999: Cross-platform drum plugin and stand-alone application
 media-sound/dzr 240909: DZR: the command line deezer.com player
 media-sound/eartag 0.5.0 0.5.1: GTK4 MusicBrainz audio tagger
-media-sound/fooyin 0.7.1 0.7.2 0.7.3 9999: A customizable music player, Qt clone of foobar2000
+media-sound/fooyin 0.7.3 0.8.1 9999: A customizable music player, Qt clone of foobar2000
 media-sound/furnace 0.6 0.6.5-r1 0.6.7: a multi-system chiptune tracker compatible with DefleMask modules
 media-sound/g4music 3.3 3.4: A GTK4 music player
 media-sound/ibniz 1.18-r1: virtual machine designed for extremely compact low-level audiovisual programs
@@ -1481,7 +1482,7 @@ net-misc/wayback_machine_downloader 2.3.0 2.3.1: Download an entire website from
 net-misc/whatscli 1.0.6 1.0.11: A command line interface for WhatsApp
 net-misc/wlvncc 9999 20240817: A Wayland Native VNC Client
 net-misc/wsdd 0.7.0 0.7.1 0.8: A Web Service Discovery host daemon.
-net-misc/xh 0.21.0 0.22.0-r1 0.22.2: Friendly and fast tool for sending HTTP requests
+net-misc/xh 0.23.0: Friendly and fast tool for sending HTTP requests
 net-misc/xkcd-handler 1.1.4: A handler for XKCD urls
 net-misc/xmrig-mo 6.21.2: MoneroOcean fork of xmrig that supports algo switching
 net-misc/yacy 1.924.20210209.10069: YaCy - p2p based distributed web-search engine
@@ -1763,6 +1764,7 @@ x11-misc/rofi-emoji 3.3.0 3.4.1: Emoji selector plugin for Rofi
 x11-misc/selx 1.2.0: Minimal X11 rectangle selection tool
 x11-misc/slstatus 1.0-r1: Status monitor for window managers that use WM_NAME/stdin to fill the status bar
 x11-misc/tbsm 0.5 0.6 0.7: A pure bash session or application launcher. Inspired by cdm, tdm and krunner
+x11-misc/wallust 3.1.0: Generate a 16 color scheme based on an image.
 x11-misc/xbanish 1.8 1.8_p20230519: Banish the mouse cursor when typing, show it again when the mouse moves
 x11-misc/xob 0.2 0.3: A lightweight overlay volume (or anything) bar for the X Window System
 x11-misc/xscreensaver-anclock 2.2.1: Analog clock hack for the xscreensaver program
