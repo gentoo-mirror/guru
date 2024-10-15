@@ -1,4 +1,4 @@
-# Copyright 2019-2023 Gentoo Authors
+# Copyright 2019-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -9,14 +9,16 @@ MY_PN="${PN%-bin*}"
 
 DESCRIPTION="Free universal database tool (community edition)."
 HOMEPAGE="https://dbeaver.io/"
-SRC_URI="amd64? ( https://dbeaver.io/files/${PV}/${MY_PN}-ce-${PV}-linux.gtk.x86_64-nojdk.tar.gz -> ${P}-amd64.tar.gz )
-	arm64? ( https://dbeaver.io/files/${PV}/${MY_PN}-ce-${PV}-linux.gtk.aarch64-nojdk.tar.gz  -> ${P}-arm64.tar.gz )"
+SRC_URI="
+	amd64? ( https://dbeaver.io/files/${PV}/${MY_PN}-ce-${PV}-linux.gtk.x86_64-nojdk.tar.gz -> ${P}-amd64.tar.gz )
+	arm64? ( https://dbeaver.io/files/${PV}/${MY_PN}-ce-${PV}-linux.gtk.aarch64-nojdk.tar.gz  -> ${P}-arm64.tar.gz )
+"
 
 S="${WORKDIR}/${MY_PN}"
 
 LICENSE="Apache-2.0 EPL-1.0 BSD"
 SLOT="0"
-KEYWORDS="~amd64 ~arm64"
+KEYWORDS="-* ~amd64 ~arm64"
 
 RDEPEND="virtual/jre:17"
 DEPEND="${RDEPEND}"
