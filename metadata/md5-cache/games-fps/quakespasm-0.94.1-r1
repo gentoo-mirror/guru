@@ -1,14 +1,12 @@
-BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
-DEFINED_PHASES=compile install prepare unpack
+DEFINED_PHASES=compile install
 DEPEND=media-libs/libglvnd media-libs/libmad media-libs/libvorbis sdl2? ( media-libs/libsdl2[opengl] ) !sdl2? ( media-libs/libsdl[opengl] )
 DESCRIPTION=Modern, cross-platform Quake 1 engine based on FitzQuake
 EAPI=8
 HOMEPAGE=https://quakespasm.sourceforge.net
-INHERIT=git-r3
 IUSE=sdl2
+KEYWORDS=~amd64
 LICENSE=GPL-2
-PROPERTIES=live
 RDEPEND=media-libs/libglvnd media-libs/libmad media-libs/libvorbis sdl2? ( media-libs/libsdl2[opengl] ) !sdl2? ( media-libs/libsdl[opengl] )
 SLOT=0
-_eclasses_=git-r3	875eb471682d3e1f18da124be97dcc81
-_md5_=8c21c7083d7634b2b335e9e0bc7cf40a
+SRC_URI=https://downloads.sourceforge.net/project/quakespasm/Source/quakespasm-0.94.1.tar.gz
+_md5_=2d1d3ea125a2af20b5057f2e9cc7133f
