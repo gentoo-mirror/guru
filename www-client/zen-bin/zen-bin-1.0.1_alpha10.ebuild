@@ -5,7 +5,7 @@ EAPI=8
 
 inherit xdg-utils desktop
 
-MY_PV="1.0.0-a.34"
+MY_PV="1.0.1-a.10"
 MY_P="zen"
 
 DESCRIPTION="Zen Browser - A Firefox-based browser focused on privacy"
@@ -13,7 +13,6 @@ HOMEPAGE="https://github.com/zen-browser/desktop"
 SRC_URI="https://github.com/zen-browser/desktop/releases/download/${MY_PV}/${MY_P}.linux-specific.tar.bz2 -> ${P}.tar.bz2"
 
 S="${WORKDIR}"
-
 LICENSE="MPL-2.0"
 SLOT="0"
 
