@@ -18,6 +18,49 @@
 
 # New entries go on top.
 
+# Takuya Wakazono <pastalian46@gmail.com> (2024-10-18)
+# Outdated prebuilt binary. Unmaintained since 2022.
+# Removal on 2024-11-18.
+app-admin/enpass-desktop-bin
+
+# Takuya Wakazono <pastalian46@gmail.com> (2024-10-18)
+# Doesn't build with GCC 14 and upstream is inactive.
+# Removal on 2024-11-18. Bug #922024.
+media-sound/ibniz
+
+# Takuya Wakazono <pastalian46@gmail.com> (2024-10-18)
+# It has been broken ever since its first submission in 2022.
+# Removal on 2024-11-18. Bug #836143.
+app-misc/yaf
+
+# Takuya Wakazono <pastalian46@gmail.com> (2024-10-18)
+# Unmaintained in guru and depends on a dead eclass.
+# Removal on 2024-11-18.
+net-misc/yacy
+
+# Takuya Wakazono <pastalian46@gmail.com> (2024-10-18)
+# Depends on <dev-python/tree-sitter-0.22, which has been dropped.
+# Upstream does not support newer treesitter yet.
+# https://github.com/grantjenks/py-tree-sitter-languages/issues/71
+dev-python/tree-sitter-languages
+
+# Takuya Wakazono <pastalian46@gmail.com> (2024-10-18)
+# Unmaintained in guru and it doesn't build since 2022.
+# Removal on 2024-11-18. Bug #831138.
+media-gfx/akira
+
+# Lucio Sauer <watermanpaint@posteo.net> (2024-10-17)
+# Doesn't build since 2024-08 and its sole consumer is up for removal.
+# Open bugs 937251, 937252
+# Removal on 2024-11-17
+dev-games/liblcf
+
+# Lucio Sauer <watermanpaint@posteo.net> (2024-10-17)
+# Doesn't build since 2024-03 and package maintainer lost interest in it.
+# Open bugs 932475, 927882
+# Removal on 2024-11-17
+games-engines/easyrpg-player
+
 # Takuya Wakazono <pastalian46@gmail.com> (2024-10-13)
 # Archived upstream. Mismatched src filesize.
 # Removal on 2024-11-13.
