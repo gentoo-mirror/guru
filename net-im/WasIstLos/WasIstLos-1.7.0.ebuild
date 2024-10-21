@@ -13,9 +13,9 @@ LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
 
-LANGUAGES="es it ka nl pt-BR ru tr"
+LANGUAGES="bn cs de es fr hu it ka nl pl pt_BR ru si tr uk"
 for lang in ${LANGUAGES}; do
-	IUSE+=" +l10n_${lang}"
+	IUSE+=" +l10n_${lang/_/-}"
 done
 
 RDEPEND="
@@ -27,7 +27,6 @@ RDEPEND="
 	dev-libs/libsigc++:2
 	media-libs/libcanberra
 	|| (
-		net-libs/webkit-gtk:4
 		net-libs/webkit-gtk:4.1
 	)
 	x11-libs/gtk+:3
@@ -36,12 +35,16 @@ DEPEND="${RDEPEND}"
 
 BDEPEND="dev-util/intltool"
 
+#PATCHES=(
+#	"${FILESDIR}/${PN}-1.6.5-webkitgtk.patch"
+#)
+
 src_prepare() {
 	cmake_src_prepare
 	for lang in ${LANGUAGES}; do
-		if ! use l10n_${lang}; then
-			rm "${S}/po/${lang,,}.po" || die "Failed to remove localization"
-			sed -i -e "/${lang,,}/d" "${S}/po/LINGUAS" || die
+		if ! use l10n_${lang/_/-}; then
+			rm -v "${S}/po/${lang}.po" || die "Failed to remove localization"
+			sed -i -e "/${lang}/d" "${S}/po/LINGUAS" || die
 		fi
 	done
 }

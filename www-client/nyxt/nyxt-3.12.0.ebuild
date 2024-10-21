@@ -37,7 +37,6 @@ RDEPEND="
 DEPEND="${RDEPEND}"
 BDEPEND="
 	>=dev-lisp/sbcl-2.0.0[threads,unicode]
-	<=dev-lisp/sbcl-2.4.4[threads,unicode]
 "
 QA_FLAGS_IGNORED="usr/bin/${PN}"
 
