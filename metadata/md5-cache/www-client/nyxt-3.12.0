@@ -1,4 +1,4 @@
-BDEPEND=>=dev-lisp/sbcl-2.0.0[threads,unicode] <=dev-lisp/sbcl-2.4.4[threads,unicode]
+BDEPEND=>=dev-lisp/sbcl-2.0.0[threads,unicode]
 DEFINED_PHASES=compile install postinst postrm preinst unpack
 DEPEND=dev-libs/gobject-introspection gnome-base/gsettings-desktop-schemas net-libs/glib-networking net-libs/webkit-gtk:4.1 sys-libs/libfixposix
 DESCRIPTION=Nyxt - the hacker's power-browser
@@ -12,6 +12,6 @@ LICENSE=BSD CC-BY-SA-3.0
 RDEPEND=dev-libs/gobject-introspection gnome-base/gsettings-desktop-schemas net-libs/glib-networking net-libs/webkit-gtk:4.1 sys-libs/libfixposix
 RESTRICT=mirror strip
 SLOT=0
-SRC_URI=https://github.com/atlas-engineer/nyxt/releases/download/3.11.7/nyxt-3.11.7-source-with-submodules.tar.xz -> nyxt-3.11.7.gh.tar.xz
+SRC_URI=https://github.com/atlas-engineer/nyxt/releases/download/3.12.0/nyxt-3.12.0-source-with-submodules.tar.xz -> nyxt-3.12.0.gh.tar.xz
 _eclasses_=desktop	3a72ffe0d8e1dd73af3a1c8c15a59fed	optfeature	222cb475c5a4f7ae7cfb0bf510a6fe54	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575
-_md5_=dcf31be45d3f471e5374a35c5b9cbfdf
+_md5_=5a2ed2e00ac494851ae78d0ab40d78dd
