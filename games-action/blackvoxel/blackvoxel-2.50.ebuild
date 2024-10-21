@@ -18,7 +18,7 @@ KEYWORDS="~amd64"
 DEPEND="
 	dev-libs/expat
 	media-libs/alsa-lib
-	media-libs/glew:0
+	media-libs/glew
 	media-libs/libsdl
 	x11-libs/libX11
 	virtual/opengl
@@ -27,6 +27,7 @@ RDEPEND="${DEPEND}"
 
 PATCHES=(
 	"${FILESDIR}"/${P}-makefile.patch
+	"${FILESDIR}"/${P}-makeopts.patch
 	"${FILESDIR}"/${P}-savedir.patch
 	"${FILESDIR}"/${P}-strict-aliasing.patch
 )

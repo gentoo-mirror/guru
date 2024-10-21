@@ -1,0 +1,14 @@
+--- a/Makefile
++++ b/Makefile
+@@ -64,7 +64,9 @@
+   KERNELNAME =$(shell uname -s)
+ 
+   ifeq ($(KERNELNAME),Linux)
+-    CXXFLAGS+= -O3 -c -fmessage-length=0
++    UCXXFLAGS:= $(shell emerge --info | grep -w CXXFLAGS=".*" | cut -d '"' -f2)
++    CXXFLAGS+= $(UCXXFLAGS) -c -fmessage-length=0 
++    ULDFLAGS:= $(shell emerge --info | grep -w LDFLAGS=".*" | cut -d '"' -f2)
++    LDFLAGS+= $(ULDFLAGS) -L"src/sc_Squirrel3/lib" -lGLU -lSDL -lGLEW -lGL -lsquirrel -lsqstdlib
+-    LDFLAGS+=-L"src/sc_Squirrel3/lib" -lGLU -lSDL -lGLEW -lGL -lsquirrel -lsqstdlib
+   else ifeq ($(KERNELNAME), FreeBSD)
+     # To be done...
