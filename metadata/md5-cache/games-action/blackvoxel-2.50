@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install postinst postrm preinst
-DEPEND=dev-libs/expat media-libs/alsa-lib media-libs/glew:0 media-libs/libsdl x11-libs/libX11 virtual/opengl
+DEPEND=dev-libs/expat media-libs/alsa-lib media-libs/glew media-libs/libsdl x11-libs/libX11 virtual/opengl
 DESCRIPTION=Blackvoxel Video Game
 EAPI=8
 HOMEPAGE=https://www.blackvoxel.com/
@@ -7,8 +7,8 @@ IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
 INHERIT=desktop toolchain-funcs xdg
 KEYWORDS=~amd64
 LICENSE=GPL-3
-RDEPEND=dev-libs/expat media-libs/alsa-lib media-libs/glew:0 media-libs/libsdl x11-libs/libX11 virtual/opengl
+RDEPEND=dev-libs/expat media-libs/alsa-lib media-libs/glew media-libs/libsdl x11-libs/libX11 virtual/opengl
 SLOT=0
 SRC_URI=https://www.blackvoxel.com/dm_download.php?file=170&key=1 -> blackvoxel-2.50.tar.bz2
 _eclasses_=desktop	3a72ffe0d8e1dd73af3a1c8c15a59fed	toolchain-funcs	d3d42b22a610ce81c267b644bcec9b87	multilib	b2a329026f2e404e9e371097dda47f96	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575
-_md5_=b9b1f249aea16be61323eba0d40a065a
+_md5_=31113909ccff51cfa675613276c73a77
