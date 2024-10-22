@@ -1,14 +1,15 @@
-BDEPEND=kde-frameworks/extra-cmake-modules app-alternatives/ninja >=dev-build/cmake-3.20.5
+BDEPEND=dev-qt/qtwaylandscanner:5 kde-frameworks/extra-cmake-modules app-alternatives/ninja >=dev-build/cmake-3.20.5
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare test
-DEPEND=dev-libs/libdbusmenu-qt dev-libs/wayland dev-libs/wayland-protocols dev-qt/designer:5 dev-qt/qtcore:5 dev-qt/qtgui:5[wayland,X] dev-qt/qtnetwork:5 dev-qt/qtsvg:5 dev-qt/qtwidgets:5[X] gui-libs/libcprime gui-libs/libcsys dev-util/desktop-file-utils x11-misc/shared-mime-info
+DEPEND=dev-libs/libdbusmenu-qt dev-libs/wayland dev-libs/wayland-protocols dev-qt/designer:5 dev-qt/qtcore:5 dev-qt/qtdbus:5 dev-qt/qtgui:5[wayland,X] dev-qt/qtnetwork:5 dev-qt/qtsvg:5 dev-qt/qtwidgets:5[X] gui-libs/libcprime gui-libs/libcsys
 DESCRIPTION=Simple, sleek QT based DE for wayland using wayfire
-EAPI=7
+EAPI=8
 HOMEPAGE=https://gitlab.com/cubocore/paper/paperde
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
 INHERIT=cmake xdg
 KEYWORDS=~amd64
 LICENSE=GPL-3
-RDEPEND=dev-libs/libdbusmenu-qt dev-libs/wayland dev-libs/wayland-protocols dev-qt/designer:5 dev-qt/qtcore:5 dev-qt/qtgui:5[wayland,X] dev-qt/qtnetwork:5 dev-qt/qtsvg:5 dev-qt/qtwidgets:5[X] gui-libs/libcprime gui-libs/libcsys gui-libs/wlroots gui-wm/wayfire[X] sys-apps/xdg-desktop-portal x11-misc/qt5ct
+RDEPEND=dev-libs/libdbusmenu-qt dev-libs/wayland dev-libs/wayland-protocols dev-qt/designer:5 dev-qt/qtcore:5 dev-qt/qtdbus:5 dev-qt/qtgui:5[wayland,X] dev-qt/qtnetwork:5 dev-qt/qtsvg:5 dev-qt/qtwidgets:5[X] gui-libs/libcprime gui-libs/libcsys gui-libs/wlroots gui-wm/wayfire[X] sys-apps/xdg-desktop-portal x11-misc/qt5ct
 SLOT=0
 SRC_URI=https://gitlab.com/cubocore/paper/paperde/-/archive/15018307192107e2915671d412f3fc900ac5af4b/paperde-15018307192107e2915671d412f3fc900ac5af4b.tar.gz -> paperde-0.1.1_p20210426.tar.gz
 _eclasses_=toolchain-funcs	d3d42b22a610ce81c267b644bcec9b87	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	f14aba975c94ccaa9f357a27e3b17ffe	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	10a50dfaf728b802fcfd37f8d0da9056	xdg	3ef49a87c52c8b77c476351195dfe575
-_md5_=a7acf23b76601565bd441d2c268fe36b
+_md5_=620329e6cb6afde7117e48f377b68465

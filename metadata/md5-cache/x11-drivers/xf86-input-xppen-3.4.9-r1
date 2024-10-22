@@ -1,6 +1,6 @@
 BDEPEND=virtual/pkgconfig
 DEFINED_PHASES=install postinst postrm preinst pretend setup
-DEPEND=dev-qt/qtcore:5 dev-qt/qtdbus:5 dev-qt/qtgui:5[X] dev-qt/qtnetwork:5 dev-qt/qtwidgets:5[X] dev-qt/qtx11extras:5 dev-qt/qtxml:5 dev-libs/icu virtual/libudev:=
+DEPEND=dev-qt/qtcore:5 dev-qt/qtdbus:5 dev-qt/qtgui:5[X] dev-qt/qtnetwork:5 dev-qt/qtwidgets:5[X] dev-qt/qtx11extras:5 dev-qt/qtxml:5 dev-libs/icu dev-libs/libusb x11-libs/libxcb virtual/libudev:=
 DESCRIPTION=Driver for XP-PEN tablets and drawing devices
 EAPI=8
 HOMEPAGE=https://www.xp-pen.com
@@ -8,8 +8,8 @@ IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
 INHERIT=desktop linux-info udev xdg
 KEYWORDS=~amd64 ~x86
 LICENSE=HANVON-UGEE-EULA
-RDEPEND=dev-qt/qtcore:5 dev-qt/qtdbus:5 dev-qt/qtgui:5[X] dev-qt/qtnetwork:5 dev-qt/qtwidgets:5[X] dev-qt/qtx11extras:5 dev-qt/qtxml:5 dev-libs/icu virtual/libudev:=
+RDEPEND=dev-qt/qtcore:5 dev-qt/qtdbus:5 dev-qt/qtgui:5[X] dev-qt/qtnetwork:5 dev-qt/qtwidgets:5[X] dev-qt/qtx11extras:5 dev-qt/qtxml:5 dev-libs/icu dev-libs/libusb x11-libs/libxcb virtual/libudev:=
 SLOT=0
 SRC_URI=https://download01.xp-pen.com/file/2024/07/XPPenLinux3.4.9-240607.tar.gz -> XPPenLinux3.4.9-240607.tar.gz
 _eclasses_=desktop	3a72ffe0d8e1dd73af3a1c8c15a59fed	toolchain-funcs	d3d42b22a610ce81c267b644bcec9b87	multilib	b2a329026f2e404e9e371097dda47f96	linux-info	ea4122ba1d8791a12b78e53f9510a2e3	udev	f3d9a4376ebd22131726a68e1a0a058f	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575
-_md5_=fdfdd30fa24bc46237885d0346f6f121
+_md5_=9c945ac8088d530c84c77568e4ca4445

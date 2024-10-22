@@ -92,7 +92,6 @@ app-admin/blahajdots 0.3.0 9999: Bespoke dotfile management for sharkgirls.
 app-admin/boinctui 2.7.1: Fullscreen text mode manager for the BOINC client
 app-admin/chamber 2.13.2: Managing secrets in AWS SSM Parameter Store
 app-admin/chezmoi 2.49.0: Manage your dotfiles across multiple machines, securely
-app-admin/customrescuecd-x86 0.4.1: A system rescue cd or usbstick for desktop and server based on gentoo
 app-admin/customrescuecd-x86_64 0.12.7 0.12.8: A system rescue cd or usbstick for desktop and server based on gentoo
 app-admin/dotbot 1.20.1: A tool that bootstraps your dotfiles
 app-admin/enpass-desktop-bin 6.7.4.933: A cross-platform, complete password management solution
@@ -275,7 +274,6 @@ app-misc/pueue 3.3.3 3.4.0 3.4.1: A cli tool for managing long running shell com
 app-misc/rememberthemilk 1.3.11-r1: Freemium simple to-do tasks manager
 app-misc/s6-man 9999: mdoc versions of the HTML documentation for the s6 supervision suite
 app-misc/sherlock 0.15.0 9999: Hunt down social media accounts by username across social networks
-app-misc/tai 0.0.8: tai (Terminal Ascii Images) tool to convert images to ascii
 app-misc/tealdeer 1.6.1: A very fast implementation of tldr in Rust.
 app-misc/termdown 1.18.0: Countdown timer and stopwatch in your terminal
 app-misc/tinyfetch 5.2 6.1 6.2 9999: fetch program written in pure C
@@ -742,7 +740,7 @@ dev-python/moderngl 5.11.1: Modern OpenGL binding for python
 dev-python/moderngl-window 2.4.6: A cross platform utility library for ModernGL
 dev-python/mollie-api-python 3.6.0: Mollie API client for Python
 dev-python/moreorless 0.4.0: Wrapper to make difflib.unified_diff more fun to use
-dev-python/mpxj 13.3.0: Read/Write project management files (MPP, MSPDI, MPX, PMXML, etc)
+dev-python/mpxj 13.5.0: Read/Write project management files (MPP, MSPDI, MPX, PMXML, etc)
 dev-python/msrest 0.7.1: AutoRest swagger generator Python client runtime
 dev-python/mwclient 0.10.1: Unofficial lib for MediaWiki API
 dev-python/nkdfu 0.2: Python DFU tool for updating Nitrokeys' firmware
@@ -948,7 +946,7 @@ dev-util/reflex 0.3.1: A small tool to watch a directory and rerun a command whe
 dev-util/rpi-imager 1.8.5: Raspberry Pi Imaging Utility
 dev-util/rust-rover 2024.2.1: A feature-rich Rust IDE with timely support by JetBrarins
 dev-util/rust-script 0.35.0: Command-line tool to run Rust scripts which can make use of crates
-dev-util/rye 0.41.0: a Hassle-Free Python Experience
+dev-util/rye 0.42.0: a Hassle-Free Python Experience
 dev-util/shellspec 0.28.1-r3 9999: A full-featured BDD unit testing framework for all POSIX shells
 dev-util/spi-tools 1.0.2: Simple command line tools to help using Linux spidev devices
 dev-util/stripe-cli 9999: A command-line tool for Stripe
@@ -1124,7 +1122,7 @@ gui-apps/nwg-shell-config 0.5.41 0.5.42 0.5.46: nwg-shell configuration utility
 gui-apps/openrefine 3.7.9: Wikidata batch editor, Wikimedia Commons mass upload tool
 gui-apps/organicmaps 9999: Offline maps and navigation using OpenStreetMap data
 gui-apps/packettracer 8.2.0 8.2.2: Cisco's packet tracer
-gui-apps/paperde 0.1.1_p20210426 9999: Simple, sleek QT based DE for wayland using wayfire
+gui-apps/paperde 0.1.1_p20210426: Simple, sleek QT based DE for wayland using wayfire
 gui-apps/pop-launcher 1.2.1: Modular IPC-based desktop launcher service
 gui-apps/riverguile 0.1.0-r1 9999: River layout generator powered by guile scheme
 gui-apps/rofi-wayland 1.7.5_p3: A window switcher, run dialog and dmenu replacement
@@ -1185,7 +1183,6 @@ kde-misc/geminipart 20221020 20231005: KPart for viewing text/gemini files
 kde-misc/kio-gemini 20231005 20240801: Gemini KIO worker
 kde-misc/plasma5-wallpapers-dynamic 3.3.9 9999: A KDE Plasma wallpaper plugin to set your wallpaper based on the time of day.
 mail-client/betterbird-bin 115.16.1: Betterbird is a fine-tuned version of Mozilla Thunderbird.
-mail-client/heirloom-mailx 12.5: The mailx utility from CentOS
 mail-client/mailspring-bin 1.13.3: A beautiful, fast and fully open source mail client for Mac, Windows and Linux
 mail-client/proton-mail-bin 1.0.6: Beta Client for Proton Mail
 mail-filter/postfix-mta-sts-resolver 1.4.0: Daemon which provides TLS client policy for Postfix via socketmap
@@ -1395,7 +1392,6 @@ net-im/gomuks 0.3.0 0.3.1: A terminal based Matrix client written in Go
 net-im/heisenbridge 1.14.6-r1 1.15.0: A bouncer-style Matrix IRC bridge
 net-im/iamb 0.0.8 0.0.9: A Matrix chat client that uses Vim keybindings
 net-im/jitsi-meet 2022.3.1-r1: Desktop application for Jitsi Meet built with Electron
-net-im/kaidan 0.9.1: User-friendly and modern chat app for every device
 net-im/manyverse-bin 0.2310.9: A social network off the grid with append-only protocol (no edits) on blockchain
 net-im/mastoposter 0.2: Configurable reposter from Mastodon-compatible Fediverse servers
 net-im/matterhorn-bin 90000.0.0 90000.0.1: Terminal based Mattermost client
@@ -1540,7 +1536,7 @@ sci-electronics/bluespec 2022.01-r1 2023.01 2023.07 9999: Toolchain for the Blue
 sci-electronics/circt 1.14.0 1.37.0 1.76.0: The fast free Verilog/SystemVerilog simulator
 sci-electronics/coil64 2.1.27: Coil64 is inductance coil calculator
 sci-electronics/dsview 1.3.0 9999: An open source multi-function instrument
-sci-electronics/kactus2 3.12.0 3.13.0 3.13.1 9999: A open source IP-XACT-based tool
+sci-electronics/kactus2 3.13.3 9999: A open source IP-XACT-based tool
 sci-electronics/liblxi 1.20: Implementation of the LAN eXtensions for Instrumentation (LXI)
 sci-electronics/logic-bin 2.4.14: Saleae logic analyzer
 sci-electronics/lxi-tools 2.7: Tools to access devices with LXI
@@ -1628,7 +1624,6 @@ sys-apps/systemd-bootchart 234 235: systemd boot performance graphing tool
 sys-apps/ugrep 5.1.4: A fast, drop-in replacement for GNU grep
 sys-auth/pam-gnupg 0.4: Unlock GnuPG keys on login
 sys-block/partclone 0.3.20: Partition cloning tool
-sys-boot/customrescuecd-x86-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/customrescuecd-x86_64-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/grml-rescueboot 0.6.1: grub2 script to add ISO images to the grub2 boot menu
 sys-boot/limine 7.0.0 7.0.3 7.0.5 7.3.0 7.5.0 7.9.2 8.0.5 8.0.6 8.0.7 8.0.9 8.0.11 8.0.12 8.0.13 8.0.14 8.1.1 8.1.2: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
@@ -1737,7 +1732,7 @@ x11-apps/xcur2png 0.7.1-r3: Convert X cursors to PNG images
 x11-drivers/OpenTabletDriver 0.6.4.0: A cross-platform open-source tablet driver
 x11-drivers/OpenTabletDriver-bin 0.6.3.0: Cross platform tablet driver (binary package)
 x11-drivers/evdi 1.14.6 1.14.7: Extensible Virtual Display Interface
-x11-drivers/xf86-input-xppen 3.4.9: Driver for XP-PEN tablets and drawing devices
+x11-drivers/xf86-input-xppen 3.4.9-r1: Driver for XP-PEN tablets and drawing devices
 x11-libs/gtk-fortran 3.24.31 4.4.1 4.5.0 4.6.0: A GTK+ binding to build Graphical User Interfaces in Fortran
 x11-libs/sdl-fakeqwerty 0_pre20191217: Fixes non-QWERTY keyboards on Prison Architect (and maybe other SDL games)
 x11-misc/aerial-sddm-theme 0_pre20191018-r1 9999: SDDM theme with Apple TV Aerial videos
