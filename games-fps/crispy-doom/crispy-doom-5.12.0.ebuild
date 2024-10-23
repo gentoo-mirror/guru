@@ -42,6 +42,10 @@ DOCS=(
 	"README.Strife.md"
 )
 
+PATCHES=(
+	${FILESDIR}/${P}-cflags.patch
+)
+
 src_prepare() {
 	default
 
@@ -49,10 +53,6 @@ src_prepare() {
 
 	eautoreconf
 }
-
-PATCHES=(
-	"${FILESDIR}"/${P}-makeopts.patch
-)
 
 src_configure() {
 	econf \

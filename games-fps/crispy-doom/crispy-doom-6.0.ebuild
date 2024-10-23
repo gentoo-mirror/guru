@@ -44,7 +44,7 @@ DOCS=(
 )
 
 PATCHES=(
-	"${FILESDIR}"/"${P}"-makeopts.patch
+	${FILESDIR}/${P}-cflags.patch
 )
 
 src_prepare() {
