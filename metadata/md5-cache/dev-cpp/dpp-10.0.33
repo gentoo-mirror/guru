@@ -1,0 +1,15 @@
+BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.20.5
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=dev-libs/openssl:= sys-libs/zlib:= voice? ( dev-libs/libsodium:= media-libs/opus ) dev-cpp/nlohmann_json
+DESCRIPTION=Lightweight C++ Discord bot library
+EAPI=8
+HOMEPAGE=https://dpp.dev/ https://github.com/brainboxdotcc/DPP
+INHERIT=cmake
+IUSE=voice coro
+KEYWORDS=~amd64
+LICENSE=Apache-2.0
+RDEPEND=dev-libs/openssl:= sys-libs/zlib:= voice? ( dev-libs/libsodium:= media-libs/opus )
+SLOT=0/10.0.33
+SRC_URI=https://github.com/brainboxdotcc/DPP/archive/refs/tags/v10.0.33.tar.gz -> dpp-10.0.33.tar.gz
+_eclasses_=toolchain-funcs	d3d42b22a610ce81c267b644bcec9b87	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	f14aba975c94ccaa9f357a27e3b17ffe	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	10a50dfaf728b802fcfd37f8d0da9056
+_md5_=9bb7728729ec37874ff0411f0e1d70c8
