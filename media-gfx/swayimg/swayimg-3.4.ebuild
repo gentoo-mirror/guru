@@ -13,7 +13,8 @@ SRC_URI="https://github.com/artemsen/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="avif exif exr gif heif jpeg jpegxl png svg tiff webp bash-completion"
+IUSE="avif exif exr gif heif jpeg jpegxl png svg test tiff webp bash-completion"
+RESTRICT="!test? ( test )"
 
 RDEPEND="
 	dev-libs/json-c:=
@@ -45,6 +46,7 @@ BDEPEND="
 		dev-build/cmake
 		x11-base/xorg-proto
 	)
+	test? ( dev-cpp/gtest )
 "
 
 src_configure() {
@@ -58,6 +60,7 @@ src_configure() {
 		$(meson_feature jpegxl jxl)
 		$(meson_feature png)
 		$(meson_feature svg)
+		$(meson_feature test tests)
 		$(meson_feature tiff)
 		$(meson_feature webp)
 		$(meson_feature bash-completion bash)

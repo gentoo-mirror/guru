@@ -7,24 +7,40 @@ inherit go-module
 
 DESCRIPTION="Git-based wiki engine written in Go using mycomarkup"
 HOMEPAGE="https://mycorrhiza.wiki"
-SRC_URI="
-	https://github.com/bouncepaw/mycorrhiza/archive/v${PV}.tar.gz -> ${P}.tar.gz
-	https://codeberg.org/BratishkaErik/distfiles/releases/download/mycorrhiza-${PV}/mycorrhiza-${PV}-vendor.tar.xz
-"
+
+if [[ ${PV} == 9999 ]]; then
+	EGIT_REPO_URI="https://github.com/bouncepaw/mycorrhiza"
+	inherit git-r3
+else
+	SRC_URI="
+		https://github.com/bouncepaw/mycorrhiza/archive/v${PV}.tar.gz -> ${P}.tar.gz
+		https://codeberg.org/BratishkaErik/distfiles/releases/download/mycorrhiza-${PV}/mycorrhiza-${PV}-vendor.tar.xz
+	"
+	KEYWORDS="~amd64 ~x86"
+fi
 
 LICENSE="AGPL-3 MIT Apache-2.0 BSD BSD-2 CC-BY-4.0"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
 
 RESTRICT="mirror"
 
 BDEPEND=">=dev-lang/go-1.22"
 RDEPEND="dev-vcs/git"
 
-DOCS=( Boilerplate.md README.md )
+DOCS=( "README.md" )
+
+src_unpack() {
+	if [[ ${PV} == 9999 ]]; then
+		git-r3_src_unpack
+		go-module_live_vendor
+	fi
+	go-module_src_unpack
+}
 
 src_compile() {
-	ego build -buildmode=pie -ldflags "-s -linkmode external -extldflags '${LDFLAGS}'" -trimpath .
+	GOFLAGS+=" -mod=vendor -trimpath"
+	local go_ldflags="-s -linkmode external -extldflags \"${LDFLAGS}\""
+	ego build ${GOFLAGS} -ldflags="${go_ldflags}" .
 }
 
 src_install() {

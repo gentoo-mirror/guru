@@ -11,12 +11,12 @@ CRATES="
 	aho-corasick@1.1.3
 	android-tzdata@0.1.1
 	android_system_properties@0.1.5
-	anstream@0.6.15
-	anstyle-parse@0.2.5
-	anstyle-query@1.1.1
-	anstyle-wincon@3.0.4
-	anstyle@1.0.8
-	anyhow@1.0.89
+	anstream@0.6.17
+	anstyle-parse@0.2.6
+	anstyle-query@1.1.2
+	anstyle-wincon@3.0.6
+	anstyle@1.0.9
+	anyhow@1.0.91
 	assert_cmd@2.0.16
 	assert_fs@1.1.2
 	autocfg@1.4.0
@@ -24,23 +24,23 @@ CRATES="
 	base64@0.22.1
 	bitflags@2.6.0
 	bstr@1.10.0
-	built@0.7.4
+	built@0.7.5
 	bumpalo@3.16.0
 	byteorder@1.5.0
-	bytes@1.7.2
-	cc@1.1.24
+	bytes@1.8.0
+	cc@1.1.31
 	cfg-if@1.0.0
 	cfg_aliases@0.2.1
 	chrono@0.4.38
-	clap@4.5.19
-	clap_builder@4.5.19
-	clap_complete@4.5.32
+	clap@4.5.20
+	clap_builder@4.5.20
+	clap_complete@4.5.35
 	clap_derive@4.5.18
 	clap_lex@0.7.2
 	cli-table-derive@0.4.6
 	cli-table@0.4.9
 	cluFlock@1.2.7
-	colorchoice@1.0.2
+	colorchoice@1.0.3
 	console@0.15.8
 	core-foundation-sys@0.8.7
 	core-foundation@0.9.4
@@ -73,12 +73,12 @@ CRATES="
 	foreign-types@0.3.2
 	form_urlencoded@1.2.1
 	fs_extra@1.3.0
-	futures-channel@0.3.30
-	futures-core@0.3.30
-	futures-io@0.3.30
-	futures-sink@0.3.30
-	futures-task@0.3.30
-	futures-util@0.3.30
+	futures-channel@0.3.31
+	futures-core@0.3.31
+	futures-io@0.3.31
+	futures-sink@0.3.31
+	futures-task@0.3.31
+	futures-util@0.3.31
 	getrandom@0.2.15
 	gimli@0.31.1
 	globset@0.4.15
@@ -91,13 +91,13 @@ CRATES="
 	http-body@1.0.1
 	http@1.1.0
 	httparse@1.9.5
-	human-panic@2.0.1
+	human-panic@2.0.2
 	human-sort@0.2.2
 	humantime@2.1.0
 	hyper-rustls@0.27.3
 	hyper-tls@0.6.0
 	hyper-util@0.1.9
-	hyper@1.4.1
+	hyper@1.5.0
 	iana-time-zone-haiku@0.1.2
 	iana-time-zone@0.1.61
 	idna@0.5.0
@@ -111,9 +111,9 @@ CRATES="
 	is_terminal_polyfill@1.70.1
 	itertools@0.13.0
 	itoa@1.0.11
-	js-sys@0.3.70
+	js-sys@0.3.72
 	lazy_static@1.5.0
-	libc@0.2.159
+	libc@0.2.161
 	libredox@0.1.3
 	linux-raw-sys@0.4.14
 	log@0.4.22
@@ -128,17 +128,17 @@ CRATES="
 	num-traits@0.2.19
 	number_prefix@0.4.0
 	object@0.36.5
-	once_cell@1.20.1
+	once_cell@1.20.2
 	openssl-macros@0.1.1
 	openssl-probe@0.1.5
-	openssl-sys@0.9.103
-	openssl@0.10.66
+	openssl-sys@0.9.104
+	openssl@0.10.68
 	option-ext@0.2.0
 	os_info@3.8.2
 	path-absolutize@3.1.1
 	path-dedot@3.1.1
 	percent-encoding@2.3.1
-	pin-project-lite@0.2.14
+	pin-project-lite@0.2.15
 	pin-utils@0.1.0
 	pkg-config@0.3.31
 	portable-atomic@1.9.0
@@ -146,7 +146,7 @@ CRATES="
 	predicates-core@1.0.8
 	predicates-tree@1.0.11
 	predicates@3.1.2
-	proc-macro2@1.0.86
+	proc-macro2@1.0.89
 	quinn-proto@0.11.8
 	quinn-udp@0.5.5
 	quinn@0.11.5
@@ -158,7 +158,7 @@ CRATES="
 	redox_users@0.4.6
 	regex-automata@0.4.8
 	regex-syntax@0.8.5
-	regex@1.11.0
+	regex@1.11.1
 	reqwest@0.12.8
 	ring@0.17.8
 	rustc-demangle@0.1.24
@@ -166,18 +166,18 @@ CRATES="
 	rustix@0.38.37
 	rustls-native-certs@0.8.0
 	rustls-pemfile@2.2.0
-	rustls-pki-types@1.9.0
+	rustls-pki-types@1.10.0
 	rustls-webpki@0.102.8
-	rustls@0.23.14
+	rustls@0.23.15
 	ryu@1.0.18
 	same-file@1.0.6
-	schannel@0.1.24
+	schannel@0.1.26
 	security-framework-sys@2.12.0
 	security-framework@2.11.1
 	semver@1.0.23
-	serde@1.0.210
-	serde_derive@1.0.210
-	serde_json@1.0.128
+	serde@1.0.213
+	serde_derive@1.0.213
+	serde_json@1.0.132
 	serde_spanned@0.6.8
 	serde_urlencoded@0.7.1
 	shell-words@1.1.0
@@ -190,20 +190,20 @@ CRATES="
 	strsim@0.11.1
 	subtle@2.6.1
 	syn@1.0.109
-	syn@2.0.79
+	syn@2.0.85
 	sync_wrapper@1.0.1
 	tar@0.4.42
 	tempfile@3.13.0
 	termcolor@1.4.1
 	termtree@0.4.1
-	thiserror-impl@1.0.64
-	thiserror@1.0.64
+	thiserror-impl@1.0.65
+	thiserror@1.0.65
 	tinyvec@1.8.0
 	tinyvec_macros@0.1.1
 	tokio-native-tls@0.3.1
 	tokio-rustls@0.26.0
 	tokio-socks@0.5.2
-	tokio@1.40.0
+	tokio@1.41.0
 	toml@0.5.11
 	toml@0.8.19
 	toml_datetime@0.6.8
@@ -219,19 +219,19 @@ CRATES="
 	untrusted@0.9.0
 	url@2.5.2
 	utf8parse@0.2.2
-	uuid@1.10.0
+	uuid@1.11.0
 	vcpkg@0.2.15
 	wait-timeout@0.2.0
 	walkdir@2.5.0
 	want@0.3.1
 	wasi@0.11.0+wasi-snapshot-preview1
-	wasm-bindgen-backend@0.2.93
-	wasm-bindgen-futures@0.4.43
-	wasm-bindgen-macro-support@0.2.93
-	wasm-bindgen-macro@0.2.93
-	wasm-bindgen-shared@0.2.93
-	wasm-bindgen@0.2.93
-	web-sys@0.3.70
+	wasm-bindgen-backend@0.2.95
+	wasm-bindgen-futures@0.4.45
+	wasm-bindgen-macro-support@0.2.95
+	wasm-bindgen-macro@0.2.95
+	wasm-bindgen-shared@0.2.95
+	wasm-bindgen@0.2.95
+	web-sys@0.3.72
 	winapi-i686-pc-windows-gnu@0.4.0
 	winapi-util@0.1.9
 	winapi-x86_64-pc-windows-gnu@0.4.0
