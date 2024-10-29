@@ -331,10 +331,11 @@ gui-apps/wlogout:fish-completions - Enable completions for fish shell
 gui-apps/wlogout:layershell - Enable transparency
 gui-apps/wlogout:zsh-completions - Enable completions for zsh shell
 gui-apps/wob:seccomp - Linux kernel syscall filtering
-gui-apps/xremap:gnome - GNOME Wayland
-gui-apps/xremap:kde - KDE-Plasma Wayland
-gui-apps/xremap:wlroots - Sway, Hyprland, etc.
-gui-apps/xremap:x11 - X11
+gui-apps/xremap:gnome - build client for GNOME Wayland
+gui-apps/xremap:hyprland - build client for Hyprland
+gui-apps/xremap:kde - build client for KDE-Plasma Wayland
+gui-apps/xremap:wlroots - build client for Sway, Wayfire, etc.
+gui-apps/xremap:x11 - build client for X11
 gui-apps/yambar:alsa - ALSA support
 gui-apps/yambar:backlight - Backlight support
 gui-apps/yambar:battery - Battery support
@@ -586,6 +587,10 @@ net-p2p/monero:hw-wallet - Enable Trezor hardware wallet support.
 net-p2p/monero:tools - Build tools used to manipulate the blockchain as it is stored on disk.
 net-p2p/monero:wallet-cli - Build the command line wallet, monero-wallet-cli.
 net-p2p/monero:wallet-rpc - Build the RPC wallet, monero-wallet-rpc.
+net-p2p/monero-gui-bin:daemon - Install the Monero daemon used to connect to the P2P network.
+net-p2p/monero-gui-bin:tools - Install tools used to manipulate the blockchain as it is stored on disk.
+net-p2p/monero-gui-bin:wallet-cli - Install the command line wallet, monero-wallet-cli.
+net-p2p/monero-gui-bin:wallet-rpc - Install the RPC wallet, monero-wallet-rpc.
 net-p2p/trezord-go:systemd - Install systemd service file
 net-p2p/trezord-go:udev - Install udev rules
 net-print/hpuld:scanner - Enable scanner on multifunction devices which support it

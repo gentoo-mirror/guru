@@ -354,7 +354,7 @@ app-text/sioyek 9999: Sioyek is a PDF viewer with a focus on textbooks and resea
 app-text/smu 1.5 9999: Simple markup - markdown like syntax
 app-text/the-platinum-searcher-bin 2.2.0: Fast CLI search tool, faster than grep, ack, silver_searcher (ag)
 app-text/tldr 3.2.0: Python command line client for tldr pages
-app-text/typst 0.11.1: A markup-based typesetting system for the sciences
+app-text/typst 0.12.0: A markup-based typesetting system for the sciences
 app-text/vale 3.7.0 3.7.1: A syntax-aware linter for prose built with speed and extensibility in mind
 app-vim/ale 3.3.0: Check syntax in Vim asynchronously and fix files, with LSP support
 app-vim/ansible-vim 3.3 3.4: vim plugin: sytax highlighting for Ansible's common file types
@@ -741,7 +741,7 @@ dev-python/moderngl 5.11.1: Modern OpenGL binding for python
 dev-python/moderngl-window 2.4.6: A cross platform utility library for ModernGL
 dev-python/mollie-api-python 3.6.0: Mollie API client for Python
 dev-python/moreorless 0.4.0: Wrapper to make difflib.unified_diff more fun to use
-dev-python/mpxj 13.5.0: Read/Write project management files (MPP, MSPDI, MPX, PMXML, etc)
+dev-python/mpxj 13.5.1: Read/Write project management files (MPP, MSPDI, MPX, PMXML, etc)
 dev-python/msrest 0.7.1: AutoRest swagger generator Python client runtime
 dev-python/mwclient 0.10.1: Unofficial lib for MediaWiki API
 dev-python/nkdfu 0.2: Python DFU tool for updating Nitrokeys' firmware
@@ -821,6 +821,7 @@ dev-python/readability-lxml 0.8.1: fast html to text parser (article readability
 dev-python/readmdict 0.1.1-r1: Read mdx/mdd files
 dev-python/rectangle-packer 2.0.2: Pack a set of rectangles into a bounding box with minimum area
 dev-python/repology-client 0.0.2 0.2.0: Asynchronous wrapper for Repology API
+dev-python/rich-click 1.8.3: Format click help output nicely with rich
 dev-python/rpmautospec-core 0.1.5: Core functionality used by rpmautospec
 dev-python/rst2ansi 0.1.5-r2: Render reStructuredText documents to the terminal
 dev-python/rstcheck 6.2.0 6.2.1: Checks syntax of reStructuredText and code blocks nested within it
@@ -928,7 +929,7 @@ dev-util/gshards 0.2: Small helper tools to aid installing Crystal packages in G
 dev-util/haredo 1.0.2 9999: a simple and unix-idiomatic build automator
 dev-util/hut 0.6.0: CLI tool for sourcehut
 dev-util/insomnia-bin 2023.5.8: HTTP and GraphQL client for developers
-dev-util/juliaup 1.17.8: Julia installer and version multiplexer
+dev-util/juliaup 1.17.10: Julia installer and version multiplexer
 dev-util/lemminx-bin 0.27.0 0.27.1: XML Language Server
 dev-util/libtypec-utils 0.5.2: Library to interface with USB Type-C/Power Delivery devices
 dev-util/lottieconverter 0.2-r1 0.2-r2: Simple lottie (telegram animated sticker) converter
@@ -1043,7 +1044,7 @@ games-util/mangohud 0.7.2 9999: Vulkan and OpenGL overlay for monitoring FPS, se
 games-util/minigalaxy 1.2.6: A simple GOG client for Linux
 games-util/pegasus 9999: Graphical frontend for browsing your game library
 games-util/protonup 0.1.5 9999: Install and Update Proton-GE
-games-util/r2modman-bin 3.1.49-r1: A simple and easy to use mod manager for several games using Thunderstore
+games-util/r2modman-bin 3.1.51: A simple and easy to use mod manager for several games using Thunderstore
 games-util/roll 2.6.1: Program to roll dices specified in a simple and intuitive way
 games-util/samrewritten 9999 202008: Steam Achievement Manager For Linux
 games-util/sdl2-gamepad-mapper 0.0.8-r1: GUI application to generate an SDL2 mapping string from a generic controller
@@ -1161,7 +1162,7 @@ gui-apps/wlsunset 0.4.0 9999: Day/night gamma adjustments for Wayland
 gui-apps/wob 0.14.2 0.15.1-r1: Lightweight overlay volume/backlight/progress/anything bar for Wayland
 gui-apps/wscreensaver 9999: Xscreensaver screensavers ported to wayland
 gui-apps/wtype 0.4: xdotool type for wayland
-gui-apps/xremap 0.10.1: Dynamic key remap for X and Wayland
+gui-apps/xremap 0.10.2: Dynamic key remap for X and Wayland
 gui-apps/xwayland-satellite 0.4-r1: Xwayland outside your Wayland
 gui-apps/yambar 1.11.0 9999: Simplistic and highly configurable status panel for X and Wayland
 gui-libs/gtk-session-lock 0.2.0-r5 9999: GTK-based lockscreen for Wayland
@@ -1214,6 +1215,7 @@ media-fonts/udev-gothic 1.3.1-r1: UDEV Gothic is a composite font of BIZ UD Goth
 media-fonts/unscii 2.1: Set of bitmapped Unicode fonts based on classic system fonts
 media-fonts/victor-mono 1.5.4 1.5.5 1.5.6: A free programming font with cursive italics and ligatures
 media-fonts/warframe-fonts 0_pre20191111: Fonts from the Warframe game
+media-gfx/KTX-Software 4.3.2: KTX (Khronos Texture) Library and Tools
 media-gfx/WebPlotDigitizer-bin 4.7: Web based tool to extract data from plots, images, and maps
 media-gfx/akira 0.0.13 9999: Native Linux App for UI and UX Design built in Vala and GTK.
 media-gfx/azpainter 3.0.9a: Full color painting software for Linux for illustration drawing
@@ -1233,7 +1235,7 @@ media-gfx/sic 0.22.4: Accessible image processing and conversion from the termin
 media-gfx/silicon 0.5.2: Create beautiful image of your code
 media-gfx/superpaper 2.2.1: Advanced multi monitor wallpaper manager
 media-gfx/svgcleaner 0.9.5: svgcleaner could help you to clean up your SVG files from the unnecessary data.
-media-gfx/swayimg 3.2: A lightweight image viewer for Wayland display servers
+media-gfx/swayimg 3.2 3.4: A lightweight image viewer for Wayland display servers
 media-gfx/timg 1.6.0: Terminal image and video viewer
 media-gfx/vimiv-qt 0.9.0: An image viewer with vim-like keybindings
 media-gfx/vpuppr 0.9.0-r1: VTuber application made with Godot 3.4
@@ -1374,13 +1376,12 @@ net-dialup/tcpser 1.1.4: Hayes Smartmodem emulator over TCP/IP
 net-dialup/tio 3.7: Simple TTY terminal application
 net-dns/AdGuardHome 0.107.49 0.107.50 0.107.51: Network-wide ads & trackers blocking DNS server like Pi-Hole with web ui
 net-dns/blocky 0.22 0.23 0.24 9999: Fast and lightweight DNS proxy as ad-blocker with many features written in Go
-net-dns/noip-duc 3.1.1: No-IP Dynamic Update Client (https://www.noip.com)
+net-dns/noip-duc 3.3.0: No-IP Dynamic Update Client (https://www.noip.com)
 net-fs/httpdirfs 1.2.0: Filesystem to mount HTTP directory listings, with a permanent cache
 net-fs/hubicfuse 3.0.1: Support for mounting HubiC drive in GNU/Linux
 net-im/Quaternion 0.0.96.1: A Qt-based IM client for Matrix
 net-im/WasIstLos 1.6.5 1.7.0: An unofficial WhatsApp desktop application for Linux
 net-im/abaddon 0.1.12-r1 0.1.13 0.2.1 9999: Alternative Discord client using GTK instead of Electron
-net-im/armcord-bin 3.2.7 3.3.1: ArmCord is a custom client designed to enhance your Discord experience.
 net-im/axolotl-bin 2.0.1: Axolotl is a cross-platform Signal client
 net-im/beeper 3.108.3 3.109.1: Beeper: Unified Messenger
 net-im/chatterino 2.5.1: Chat client for https://twitch.tv
@@ -1395,6 +1396,7 @@ net-im/gomuks 0.3.0 0.3.1: A terminal based Matrix client written in Go
 net-im/heisenbridge 1.14.6-r1 1.15.0: A bouncer-style Matrix IRC bridge
 net-im/iamb 0.0.8 0.0.9: A Matrix chat client that uses Vim keybindings
 net-im/jitsi-meet 2022.3.1-r1: Desktop application for Jitsi Meet built with Electron
+net-im/legcord-bin 1.0.2: Legcord is a custom client designed to enhance your Discord experience.
 net-im/manyverse-bin 0.2310.9: A social network off the grid with append-only protocol (no edits) on blockchain
 net-im/mastoposter 0.2: Configurable reposter from Mastodon-compatible Fediverse servers
 net-im/matterhorn-bin 90000.0.0 90000.0.1: Terminal based Mattermost client
@@ -1421,7 +1423,7 @@ net-irc/thelounge 4.4.1-r1 4.4.3-r1: ‎Modern, responsive, cross-platform, self
 net-irc/tiny 0.12.0: IRC client written in Rust
 net-libs/dpdk 23.03: Data Plane Development Kit libraries for fast userspace networking
 net-libs/ixwebsocket 11.4.4: C++ websocket client and server library
-net-libs/kcgi 0.12.5 0.13.0 0.13.3: Minimal CGI library for web applications
+net-libs/kcgi 0.13.3 0.13.4: Minimal CGI library for web applications
 net-libs/libuecc 7: a very small Elliptic Curve Cryptography library compatible with Ed25519.
 net-libs/orcania 2.3.3: Library for angharad programs
 net-libs/picotls 0_pre20220721 9999: TLS 1.3 implementation in C
@@ -1497,9 +1499,10 @@ net-p2p/feather 2.6.7-r1 2.6.8 9999: A free, open-source Monero wallet
 net-p2p/fragments 3.0.0 3.0.1: Fragments is an easy to use BitTorrent client
 net-p2p/gridcoin 5.4.8.0 5.4.8.0_p1: Proof-of-Stake based cryptocurrency that rewards BOINC computation
 net-p2p/monero 0.17.3.2 0.18.3.3-r2 0.18.3.4-r1 9999: The secure, private, untraceable cryptocurrency
+net-p2p/monero-gui-bin 0.18.3.4: An open-source GUI wallet developed by the Monero community.
 net-p2p/p2pool 4.0 4.1.1 9999: Decentralized pool for Monero mining
 net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
-net-p2p/yggdrasil-go 0.5.7 9999: An experiment in scalable routing as an encrypted IPv6 overlay network
+net-p2p/yggdrasil-go 0.5.9 9999: An experiment in scalable routing as an encrypted IPv6 overlay network
 net-print/hpuld 1.00.39.15.00.23-r1: HP Unified Linux Driver (for samsung hardware)
 net-proxy/MTProxy 3.0.4-r1: Community fork of MTProxy
 net-proxy/byedpi 0.12 0.13 0.14.1 9999: Bypass DPI SOCKS proxy
@@ -1626,7 +1629,7 @@ sys-apps/sd 1.0.0: Intuitive find & replace CLI (sed alternative)
 sys-apps/systemd-bootchart 234 235: systemd boot performance graphing tool
 sys-apps/ugrep 5.1.4: A fast, drop-in replacement for GNU grep
 sys-auth/pam-gnupg 0.4: Unlock GnuPG keys on login
-sys-block/partclone 0.3.20: Partition cloning tool
+sys-block/partclone 0.3.20 0.3.32: Partition cloning tool
 sys-boot/customrescuecd-x86_64-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/grml-rescueboot 0.6.1: grub2 script to add ISO images to the grub2 boot menu
 sys-boot/limine 7.0.0 7.0.3 7.0.5 7.3.0 7.5.0 7.9.2 8.0.5 8.0.6 8.0.7 8.0.9 8.0.11 8.0.12 8.0.13 8.0.14 8.1.1 8.1.2: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
@@ -1698,7 +1701,7 @@ www-apps/invidious 2024.04.27 2024.08.25.1: Invidious is an alternative front-en
 www-apps/laminar 1.3-r1: Fast and lightweight Continuous Integration
 www-apps/libmedium 2024.06.10: Alternative private front-end to Medium
 www-apps/librarian 2023.05.07: An alternative frontend for LBRY/Odysee. Inspired by Invidious and Libreddit.
-www-apps/mycorrhiza 1.15.0 9999: Git-based wiki engine written in Go using mycomarkup
+www-apps/mycorrhiza 1.15.1 9999: Git-based wiki engine written in Go using mycomarkup
 www-apps/pleroma 2.7.0-r1 9999: ActivityPub social networking software compatible with other Fediverse software
 www-apps/pleroma-fe 2.7.0 9999: Main frontend for www-apps/pleroma, inspired by qvitter
 www-apps/redlib 0.31.2-r1 0.34.0: Private front-end to Reddit
