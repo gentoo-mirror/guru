@@ -1,0 +1,14 @@
+BDEPEND=app-arch/unzip X? ( >=x11-apps/mkfontscale-1.2.0 media-fonts/encodings )
+DEFINED_PHASES=install postinst postrm setup
+DESCRIPTION=Braille Institute's Atkinson Hyperlegible font.
+EAPI=8
+HOMEPAGE=https://www.brailleinstitute.org/freefont/
+INHERIT=font
+IUSE=otf +ttf X
+KEYWORDS=~amd64 ~arm64 ~loong ~riscv ~x86
+LICENSE=OFL-1.1
+REQUIRED_USE=^^ ( otf ttf )
+SLOT=0
+SRC_URI=https://www.brailleinstitute.org/atkinson-hyperlegible-font/Atkinson-Hyperlegible-Font-Print-and-Web-2020-0514.zip -> atkinson-hyperlegible-20200514.zip
+_eclasses_=font	aa113a3df9cd0a9693a1c1ee7c34a6eb
+_md5_=31a6b9f323badbb8ee16c220c44f56db

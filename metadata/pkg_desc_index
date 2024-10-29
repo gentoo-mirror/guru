@@ -88,7 +88,7 @@ app-admin/antidot 0.6.3: Cleans up your $HOME from those pesky dotfiles
 app-admin/aws-vault 7.2.0: Securely store and access AWS credentials in development environments
 app-admin/bitwarden-cli 2024.2.0 2024.2.1: CLI frontend client connects to Bitwarden comapatible password manager server
 app-admin/bitwarden-cli-bin 2024.2.1 2024.3.1 2024.4.0 2024.6.0: Precompiled CLI frontend which connects to Bitwarden comapatible servers
-app-admin/blahajdots 0.3.0 9999: Bespoke dotfile management for sharkgirls.
+app-admin/blahajdots 0.4.0 9999: Bespoke dotfile management for sharkgirls.
 app-admin/boinctui 2.7.1: Fullscreen text mode manager for the BOINC client
 app-admin/chamber 2.13.2: Managing secrets in AWS SSM Parameter Store
 app-admin/chezmoi 2.49.0: Manage your dotfiles across multiple machines, securely
@@ -182,7 +182,7 @@ app-editors/lapce 0.4.2 9999: Lightning-fast and Powerful Code Editor written in
 app-editors/mined 2015.25: A powerful text editor with extensive Unicode and CJK support
 app-editors/neovide 0.12.2: Neovide: No Nonsense Neovim Gui
 app-editors/neovim-qt 0.2.17-r1 0.2.18-r1: Neovim client library and GUI, in Qt
-app-editors/pulsar-bin 1.118.0 1.119.0 1.120.0: A Community-led Hyper-Hackable Text Editor
+app-editors/pulsar-bin 1.118.0 1.119.0 1.120.0 1.122.0: A Community-led Hyper-Hackable Text Editor
 app-editors/typora-bin 1.8.10: a markdown editor,markdown reader.
 app-emacs/catppuccin-emacs 9999: Soothing pastel theme for Emacs
 app-emacs/envrc 0.11: Emacs support for direnv which operates buffer-locally
@@ -211,7 +211,7 @@ app-metrics/scaphandre 0.5.0: Electrical power consumption measurement agent
 app-misc/1password-cli 2.24.0: The world’s most-loved password manager CLI
 app-misc/afc 1.1 1.2 9999: Anime File Checker, checks CRC32 contained in filenames
 app-misc/afetch 2.2.0: Simple system info written in C
-app-misc/agg 1.4.3: Command-line tool for generating animated GIF files from asciicast v2 files
+app-misc/agg 1.4.3 1.5.0: Command-line tool for generating animated GIF files from asciicast v2 files
 app-misc/ani-cli 4.8 4.9 9999: A cli to browse and watch anime.
 app-misc/anki-bin 24.06.3-r1: A spaced-repetition memory training program (flash cards)
 app-misc/aw-client 0.11.0: Client library for ActivityWatch
@@ -231,7 +231,7 @@ app-misc/cpufetch 1.05-r1: Simplistic yet fancy CPU architecture fetching tool
 app-misc/dbf 0.9.0: Command line tool to read the content of dBASE III, IV, and 5.0 files
 app-misc/diff-so-fancy 1.4.4: Good-lookin' diffs. Actually... nah... The best-lookin' diffs
 app-misc/doublecmd 1.1.16: Cross Platform file manager
-app-misc/doublecmd-bin 1.0.11 1.1.11_beta 1.1.18 9999: Double Commander: file manager with two panels, similar to Total Commander
+app-misc/doublecmd-bin 1.0.11 1.1.11_beta 1.1.19 9999: Double Commander: file manager with two panels, similar to Total Commander
 app-misc/dpscreenocr 1.4.0: Program to recognize text on screen
 app-misc/dragon 1.1.1 1.1.1_p20210820 1.2.0: Simple drag-and-drop source/sink for X and Wayland
 app-misc/electricsheep 3.0.2_p20191005 3.0.2_p20191005-r1: Realize the collective dream of sleeping computers from all over the internet
@@ -656,7 +656,7 @@ dev-python/colored 2.2.4: Very simple Python library for color and formatting in
 dev-python/colorspacious 1.1.2: Python library for doing colorspace conversions
 dev-python/colorthief 0.2.1: Module for grabbing the color palette from an image
 dev-python/convertdate 2.4.0: Utils for converting between date formats and calculating holidays
-dev-python/cryptg 0.4 0.5.0: Cryptographic utilities for Telegram
+dev-python/cryptg 0.4 0.5.0 0.5.0_p0: Cryptographic utilities for Telegram
 dev-python/dacite 1.8.1: This module simplifies creation of data classes (PEP 557) from dictionaries
 dev-python/daff 1.3.46: The daff can produce and apply tabular diffs
 dev-python/daiquiri 3.2.3: Library to configure Python logging easily
@@ -1028,7 +1028,7 @@ games-server/among-sus 20210519: Among Us, but it's a text adventure
 games-strategy/gigalomania 1.0.1: Libre clone of Mega-Lo-Mania (original from ~1990), supports original resources
 games-strategy/ground-control 1011: RTS from 2000 by Massive Entertainment, without resources and buildings
 games-strategy/swine 1: Fun RTS from 2001 by Hungarian developer StormRegion, similar to Ground Control
-games-strategy/zedonline-bin 0.3.2: A remake of the 1996 classic game Z, with network play
+games-strategy/zedonline-bin 0.3.2-r1: A remake of the 1996 classic game Z, with network play
 games-util/NotEnoughProduction 0.0.4: Tool for building production chains for modded minecraft
 games-util/ProtonUp-Qt 2.9.2 9999: Install and manage GE-Proton, Luxtorpeda & more for Steam Lutris and Heroic.
 games-util/chiaki 2.1.1-r2 9999: Client for PlayStation 4 and PlayStation 5 Remote Play
@@ -1174,7 +1174,7 @@ gui-libs/text-engine 0.1.1-r3 9999: A lightweight rich-text framework for GTK 4
 gui-libs/xdg-desktop-portal-hyprland 1.3.3-r2 9999: xdg-desktop-portal backend for hyprland
 gui-wm/cage 0.2.0 9999: A Wayland kiosk
 gui-wm/hyprland-contrib 0.1-r1 9999: Community-maintained extensions for hyprland
-gui-wm/miracle-wm 0.3.6: Tiling Wayland compositor based on Mir
+gui-wm/miracle-wm 0.3.7: Tiling Wayland compositor based on Mir
 gui-wm/niri 0.1.9: Scrollable-tiling Wayland compositor
 gui-wm/phoc 0.41.0 0.42.0 0.42.1: Wayland compositor for mobile phones
 gui-wm/river 0.3.5-r1: A dynamic tiling Wayland compositor
@@ -1188,6 +1188,7 @@ mail-client/betterbird-bin 115.16.1: Betterbird is a fine-tuned version of Mozil
 mail-client/mailspring-bin 1.13.3: A beautiful, fast and fully open source mail client for Mac, Windows and Linux
 mail-client/proton-mail-bin 1.0.6: Beta Client for Proton Mail
 mail-filter/postfix-mta-sts-resolver 1.4.0: Daemon which provides TLS client policy for Postfix via socketmap
+media-fonts/atkinson-hyperlegible 20200514: Braille Institute's Atkinson Hyperlegible font.
 media-fonts/blobmoji 15.0: Noto Emoji with extended Blob support
 media-fonts/dseg 0.46: A free font which imitate LCD Display
 media-fonts/firago 1.001: A continuation of FiraSans
@@ -1224,7 +1225,7 @@ media-gfx/dustr 9999: light and interactive tool your crops need
 media-gfx/fontpreview 1.0.6: Highly customizable and minimal font previewer written in bash
 media-gfx/gephi-bin 0.9.6 0.10.1: The Open Graph Viz Platform
 media-gfx/grafx2 2.7.2978 2.7.2978-r100: A pixelart-oriented painting program
-media-gfx/mayo 0.8.0 0.8.0-r1: Opensource 3D CAD viewer and converter
+media-gfx/mayo 0.8.0 0.8.0-r2: Opensource 3D CAD viewer and converter
 media-gfx/nsxiv 32 9999: Neo (or New or Not) Simple (or Small or Suckless) X Image Viewer
 media-gfx/oda-file-converter 23.5.0.0: For converting between different versions of .dwg and .dxf
 media-gfx/qview 5.0 6.1-r1: Practical and minimal image viewer
@@ -1325,7 +1326,7 @@ media-video/kikoplay 0.9.3 9999: KikoPlay is a full-featured danmu player
 media-video/kooha 2.2.3: GTK4 screen recorder for Wayland
 media-video/lossless-cut 3.59.1-r1: Lossless video/audio editing: export media without reencoding, powered by ffmpeg
 media-video/manimgl 9999: Animation engine for explanatory math videos
-media-video/mediaelch 2.10.4 2.10.6 9999: Video metadata scraper
+media-video/mediaelch 2.10.6 2.12.0 9999: Video metadata scraper
 media-video/megapixels 1.4.3: A GTK3 camera application that knows how to deal with the media request api
 media-video/mpc-qt 24.06: Media Player Classic Qute Theater
 media-video/obs-multi-rtmp 0.5.0.4 9999: OBS Simulcast support plugin
@@ -1716,7 +1717,7 @@ www-client/mullvad-browser-bin 13.5.7: The Mullvad Browser is developed to minim
 www-client/nyxt 3.11.8 3.12.0 9999: Nyxt - the hacker's power-browser
 www-client/vimb 3.6.0 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
 www-client/yandex-browser 24.7.6.1042_p1: The web browser from Yandex
-www-client/zen-bin 1.0.1_alpha10: Zen Browser - A Firefox-based browser focused on privacy
+www-client/zen-bin 1.0.1_alpha10 1.0.1_alpha12: Zen Browser - A Firefox-based browser focused on privacy
 www-misc/dufs 0.40.0: Dufs is a distinctive utility file server
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits
 www-misc/gorss 0.3: Go Terminal Feed Reader

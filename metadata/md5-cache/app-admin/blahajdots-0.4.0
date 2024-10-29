@@ -1,0 +1,15 @@
+BDEPEND=>=virtual/rust-1.53
+DEFINED_PHASES=compile configure install test unpack
+DEPEND=gtk? ( dev-libs/glib:2= )
+DESCRIPTION=Bespoke dotfile management for sharkgirls.
+EAPI=8
+HOMEPAGE=https://codeberg.org/vimproved/blahajdots
+INHERIT=cargo
+IUSE=+gtk debug
+KEYWORDS=~amd64
+LICENSE=GPL-3+ Apache-2.0-with-LLVM-exceptions MIT Unicode-DFS-2016 || ( Apache-2.0 Boost-1.0 )
+RDEPEND=gtk? ( dev-libs/glib:2= )
+SLOT=0
+SRC_URI=https://codeberg.org/vimproved/blahajdots/releases/download/v0.4.0/blahajdots-0.4.0.tar.xz
+_eclasses_=toolchain-funcs	d3d42b22a610ce81c267b644bcec9b87	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	f14aba975c94ccaa9f357a27e3b17ffe	multiprocessing	1e32df7deee68372153dca65f4a7c21f	rust-toolchain	3f822985d9297438ed2443aa1fbdf33e	cargo	aed68000b8e49b4c4dd13a256149971f
+_md5_=363966459c88dfb4831217a12bcba059
