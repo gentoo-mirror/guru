@@ -11,24 +11,17 @@ HOMEPAGE="
 	https://github.com/meganz/MEGAsync
 "
 
-if [[ ${PV} == 9999 ]];then
-	inherit git-r3
-	EGIT_REPO_URI="https://github.com/meganz/MEGAsync"
-	EGIT_BRANCH="master"
-	EGIT_SUBMODULES=( '*' )
-else
-	MEGA_SDK_REV="eb86660026272d62a547099d2fed3a7d46fc64e7" # commit of src/MEGASync/mega submodule
-	MEGA_TAG_SUFFIX="Linux"
-	SRC_URI="
-		https://github.com/meganz/MEGAsync/archive/v${PV}_${MEGA_TAG_SUFFIX}.tar.gz -> ${P}.tar.gz
-		https://github.com/meganz/sdk/archive/${MEGA_SDK_REV}.tar.gz -> ${PN}-sdk-${PV}.tar.gz
-	"
-	KEYWORDS="~amd64 ~x86"
-	S="${WORKDIR}"/MEGAsync-${PV}_${MEGA_TAG_SUFFIX}
-fi
+MEGA_SDK_REV="60732886854198bbe11ebef897e93b36757f0913" # commit of src/MEGASync/mega submodule
+MEGA_TAG_SUFFIX="Linux"
+SRC_URI="
+	https://github.com/meganz/MEGAsync/archive/v${PV}_${MEGA_TAG_SUFFIX}.tar.gz -> ${P}.tar.gz
+	https://github.com/meganz/sdk/archive/${MEGA_SDK_REV}.tar.gz -> ${PN}-sdk-${PV}.tar.gz
+"
+S="${WORKDIR}"/MEGAsync-${PV}_${MEGA_TAG_SUFFIX}
 
 LICENSE="MEGA"
 SLOT="0"
+KEYWORDS="~amd64 ~x86"
 IUSE="mediainfo nautilus nemo thumbnail thunar"
 
 DEPEND="
@@ -85,6 +78,7 @@ PATCHES=(
 	"${FILESDIR}/${PN}-5.3.0.0-link-zlib.patch"
 	"${FILESDIR}/${PN}-5.3.0.0-fix-install-dir.patch"
 	"${FILESDIR}/${PN}-5.3.0.0-rename-libcryptopp.patch"
+	"${FILESDIR}/${P}-remove-clang-format.patch"
 )
 
 nemo_run() {
@@ -120,6 +114,7 @@ src_configure() {
 		-DCMAKE_MODULE_PATH="${S}/src/MEGASync/mega/contrib/cmake/modules/packages"
 		-DENABLE_DESKTOP_APP_WERROR=OFF
 		-DENABLE_DESKTOP_UPDATE_GEN=OFF
+		-DENABLE_DESIGN_TOKENS_IMPORTER=OFF
 		-DENABLE_LINUX_EXT=$(usex nautilus)
 		-DUSE_FFMPEG=$(usex thumbnail)
 		-DUSE_FREEIMAGE=$(usex thumbnail)

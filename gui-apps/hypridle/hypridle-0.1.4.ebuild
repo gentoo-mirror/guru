@@ -20,9 +20,8 @@ LICENSE="BSD"
 SLOT="0"
 
 RDEPEND="
-	>=dev-cpp/sdbus-c++-0.2.0
+	dev-cpp/sdbus-c++:0/2
 	>=dev-libs/hyprlang-0.4.0
-	>=gui-libs/hyprutils-0.2.0
 	dev-libs/wayland
 "
 DEPEND="
@@ -36,5 +35,5 @@ BDEPEND="
 "
 
 PATCHES=(
-	"${FILESDIR}/hypridle-9999-fix-CFLAGS-CXXFLAGS.patch"
+	"${FILESDIR}/hypridle-0.1.4-fix-CFLAGS-CXXFLAGS.patch"
 )

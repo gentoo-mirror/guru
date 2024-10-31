@@ -23,7 +23,7 @@ REQUIRED_USE="?? ( elogind systemd )"
 
 DEPEND="
 	>=media-video/pipewire-1.2.0:=
-	>=dev-cpp/sdbus-c++-2.0.0
+	dev-cpp/sdbus-c++:0/1
 	dev-libs/hyprlang:=
 	dev-libs/inih
 	dev-libs/wayland
@@ -46,7 +46,6 @@ RDEPEND="
 
 BDEPEND="
 	>=dev-libs/wayland-protocols-1.24
-	>=dev-util/hyprwayland-scanner-0.4.2
 	dev-libs/hyprland-protocols
 	virtual/pkgconfig
 	|| ( >=sys-devel/gcc-13:* >=sys-devel/clang-17:* )
@@ -67,6 +66,7 @@ pkg_setup() {
 }
 
 src_prepare() {
+	eapply "${FILESDIR}/xdg-desktop-portal-hyprland-1.3.2_use_sys_sdbus-c++.patch"
 	sed -i "/add_compile_options(-O3)/d" "${S}/CMakeLists.txt" || die
 	cmake_src_prepare
 }
