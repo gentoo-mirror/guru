@@ -190,7 +190,7 @@ app-emacs/idris-mode 1.0 9999: Idris syntax highlighting, compiler-supported edi
 app-emacs/inheritenv 0.2: Emacs support for direnv which operates buffer-locally
 app-emacs/prop-menu 0.1.2: Compute pop-up menus from text and overlay properties
 app-emulation/86BoxManagerX 1.7.6.0e 9999: A (cross-platform) configuration manager for the 86Box emulator
-app-emulation/arnold 20170513: Amstrad CPC emulator
+app-emulation/arnold 20170513-r1: Amstrad CPC emulator
 app-emulation/box64 0.2.2 0.3.0 9999: Linux Userspace x86_64 Emulator with a twist
 app-emulation/box86 0.3.0 0.3.6 9999: Linux Userspace x86 Emulator with a twist
 app-emulation/cloud-utils 0.33: Useful set of utilities for interacting with a cloud.
@@ -345,7 +345,7 @@ app-text/komikku 1.57.0: Manga reader for GNOME
 app-text/koodo-reader-bin 1.5.1 1.6.3: A modern ebook manager and reader with sync and backup capacities
 app-text/lchat 1.0-r2: Line oriented front end for ii-like chat programs
 app-text/libspelling 0.2.0 0.2.1: A GNOME library for spellchecking
-app-text/lizard 1.17.10-r1: A simple code complexity analyser, supports most of the popular languages.
+app-text/lizard 1.17.10-r1 1.17.13: A simple code complexity analyser, supports most of the popular languages.
 app-text/lorien-bin 0.6.0-r2: Infinite canvas drawing/whiteboarding. Made with Godot.
 app-text/lsp 0.5.0_rc4: The least significant pager
 app-text/owo 0.1.0: OwO-ifies text via regex
@@ -393,7 +393,7 @@ dev-build/fypp 3.1 3.2: Fypp - Python powered Fortran preprocessor
 dev-build/just 1.35.0 1.36.0: Just a command runner (with syntax inspired by 'make')
 dev-build/pdpmake 2.0.1: Public domain POSIX make
 dev-build/qtilitools 0.1.2: Scripts/commands used in the Qtilities organization
-dev-build/xmake 2.9.5 9999: A cross-platform build utility based on Lua
+dev-build/xmake 2.9.6 9999: A cross-platform build utility based on Lua
 dev-cpp/blurhash 0.2.0 0.2.0-r1: C++ blurhash encoder/decoder
 dev-cpp/coeurl 0.3.0 0.3.1: A simple async wrapper around CURL for C++
 dev-cpp/cpp-jwt 1.5_pre20220727: JSON Web Token library for C++
@@ -823,7 +823,7 @@ dev-python/rectangle-packer 2.0.2: Pack a set of rectangles into a bounding box 
 dev-python/repology-client 0.0.2 0.2.0: Asynchronous wrapper for Repology API
 dev-python/rich-click 1.8.3: Format click help output nicely with rich
 dev-python/rpmautospec-core 0.1.5: Core functionality used by rpmautospec
-dev-python/rst2ansi 0.1.5-r2: Render reStructuredText documents to the terminal
+dev-python/rst2ansi 0.1.5-r2 0.1.5-r3: Render reStructuredText documents to the terminal
 dev-python/rstcheck 6.2.0 6.2.1: Checks syntax of reStructuredText and code blocks nested within it
 dev-python/scramp 1.4.4: A pure-Python implementation of the SCRAM authentication protocol.
 dev-python/scrapy 2.11.0-r1: A high-level Web Crawling and Web Scraping framework
@@ -901,6 +901,7 @@ dev-util/bats-assert 2.1.0: Common assertions for Bats
 dev-util/bats-support 0.3.0: Supporting library for Bats test helpers
 dev-util/bc-ur 0.3.0: Blockchain Commons UR Library
 dev-util/bruno-bin 1.9.0 1.9.0-r1: Opensource IDE For Exploring and Testing Api's
+dev-util/bump-my-version 0.28.0: Version bump your Python project
 dev-util/bump2version 1.0.1: Version-bump your software with a single command!
 dev-util/cargo-post 0.1.7: A cargo wrapper that executes a post build script after a successful build.
 dev-util/catppuccin-catwalk 1.3.2: Soothing pastel previews for the high-spirited!
@@ -1058,7 +1059,7 @@ gnome-extra/portfolio 0.9.14: A minimalist file manager for those who want to us
 gnome-extra/vvmplayer 1.4: Visual Voicemail Player
 gnome-extra/wike 3.0.0 3.0.1: Wikipedia Reader for the GNOME Desktop
 gnome-extra/yad 13.0 14.1 9999: Display GTK+ dialog boxes from command line or shell scripts
-gui-apps/1password 8.10.28: The world’s most-loved password manager
+gui-apps/1password 8.10.28 8.10.48: The world’s most-loved password manager
 gui-apps/ReGreet 0.1.1-r9 9999: A clean and customizable GTK-based greetd greeter written in Rust
 gui-apps/aylurs-gtk-shell 1.8.2-r1: Aylurs's Gtk Shell (AGS), An eww inspired gtk widget system.
 gui-apps/azote 1.13.1 9999: wallpaper manager for wlroots compositors
@@ -1095,8 +1096,8 @@ gui-apps/grimshot 9999: A helper for screenshots within sway
 gui-apps/gtklock 3.0.0-r1: GTK-based lockscreen for Wayland
 gui-apps/gtklock-extras 9999: Gtklock modules
 gui-apps/hiprompt-gtk-py 0_pre20221221 9999: GTK+ Himitsu prompter for Wayland
-gui-apps/hypridle 0.1.2-r2 9999: Hyprland's idle daemon
-gui-apps/hyprlock 0.4.1-r2 9999: Hyprland's GPU-accelerated screen locking utility
+gui-apps/hypridle 0.1.2-r2 0.1.4 9999: Hyprland's idle daemon
+gui-apps/hyprlock 0.4.1-r2 0.5.0 9999: Hyprland's GPU-accelerated screen locking utility
 gui-apps/hyprnome 0.3.0: GNOME-like workspace switching in Hyprland.
 gui-apps/hyprpaper 0.7.0: A blazing fast wayland wallpaper utility
 gui-apps/hyprpicker 0.1.1 0.2.0 0.3.0-r1 9999: A wlroots-compatible Wayland color picker that does not suck
@@ -1163,7 +1164,7 @@ gui-apps/wob 0.14.2 0.15.1-r1: Lightweight overlay volume/backlight/progress/any
 gui-apps/wscreensaver 9999: Xscreensaver screensavers ported to wayland
 gui-apps/wtype 0.4: xdotool type for wayland
 gui-apps/xremap 0.10.2: Dynamic key remap for X and Wayland
-gui-apps/xwayland-satellite 0.4-r1: Xwayland outside your Wayland
+gui-apps/xwayland-satellite 0.5: Xwayland outside your Wayland
 gui-apps/yambar 1.11.0 9999: Simplistic and highly configurable status panel for X and Wayland
 gui-libs/gtk-session-lock 0.2.0-r5 9999: GTK-based lockscreen for Wayland
 gui-libs/gtk4-layer-shell 1.0.2: A library for using the Layer Shell Wayland protocol with GTK4.
@@ -1172,7 +1173,7 @@ gui-libs/libcsys 4.5.0 9999: Library for managing the device
 gui-libs/mir 2.18.2: Set of libraries for building Wayland based shells
 gui-libs/scenefx 0.1: A replacement for the wlroots scene API with eye-candy effects.
 gui-libs/text-engine 0.1.1-r3 9999: A lightweight rich-text framework for GTK 4
-gui-libs/xdg-desktop-portal-hyprland 1.3.3-r2 9999: xdg-desktop-portal backend for hyprland
+gui-libs/xdg-desktop-portal-hyprland 1.3.3-r2 1.3.3-r3 1.3.8 9999: xdg-desktop-portal backend for hyprland
 gui-wm/cage 0.2.0 9999: A Wayland kiosk
 gui-wm/hyprland-contrib 0.1-r1 9999: Community-maintained extensions for hyprland
 gui-wm/miracle-wm 0.3.7: Tiling Wayland compositor based on Mir
@@ -1239,7 +1240,7 @@ media-gfx/swayimg 3.2 3.4: A lightweight image viewer for Wayland display server
 media-gfx/timg 1.6.0: Terminal image and video viewer
 media-gfx/vimiv-qt 0.9.0: An image viewer with vim-like keybindings
 media-gfx/vpuppr 0.9.0-r1: VTuber application made with Godot 3.4
-media-gfx/zw3d 2022.0.3.1-r3 2023.0.3.1: CAD/CAM software for 3D design and processing
+media-gfx/zw3d 2023.0.3.1-r1: CAD/CAM software for 3D design and processing
 media-gfx/zwcad 2023.23.0.3.4-r2: CAD software for 2D drawing, reviewing and printing work
 media-libs/alsa-ucm-pinephone 1.2.6.3: ALSA ucm configuration files for the PinePhone (Pro)
 media-libs/alvr 16.0.0: ALVR is an open source remote VR display for the Oculus Go/Quest
@@ -1290,7 +1291,7 @@ media-sound/ibniz 1.18-r1: virtual machine designed for extremely compact low-le
 media-sound/jacktrip 1.7.1-r1 2.4.0: Send JACK audio over a network
 media-sound/jriver 31.0.83: A cross-platform media center, famous for high quality of audio.
 media-sound/kew 2.4.4-r1: kew (/kjuː/) is a command-line music player for Linux.
-media-sound/lms 3.58.0 3.59.1: Lightweight Music Server.
+media-sound/lms 3.59.1 3.60.0: Lightweight Music Server.
 media-sound/loudgain 0.6.8-r1: Versatile ReplayGain 2.0 loudness normalizer
 media-sound/mopidy 3.4.2: An extensible music server written in Python.
 media-sound/mpd-mpris 0.3.1 0.4.0 0.4.1: An implementation of the MPRIS protocol for MPD.
@@ -1466,7 +1467,7 @@ net-misc/maestral 1.9.3-r1 1.9.4: Maestral is an open-source Dropbox client writ
 net-misc/maestral-qt 1.9.3 1.9.4: Maestral is an open-source Dropbox client written in Python
 net-misc/mastorss 0.13.1 0.13.1-r1 9999: Another RSS to Mastodon bot
 net-misc/mbpoll 1.5.2 9999: command line utility to communicate with ModBus slave (RTU or TCP)
-net-misc/megasync 5.5.0.0 9999: The official Qt-based program for syncing your MEGA account in your PC
+net-misc/megasync 5.5.0.0 5.6.0.0: The official Qt-based program for syncing your MEGA account in your PC
 net-misc/myip 1.2.1: Get your external IP address using STUN server
 net-misc/ooni-probe-cli 3.22.0 3.23.0: OONI Probe network measurement tool for detecting internet censorship
 net-misc/openbgpd 8.4 8.5 8.6 9999: OpenBGPD is a free implementation of BGPv4
@@ -1505,7 +1506,7 @@ net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
 net-p2p/yggdrasil-go 0.5.9 9999: An experiment in scalable routing as an encrypted IPv6 overlay network
 net-print/hpuld 1.00.39.15.00.23-r1: HP Unified Linux Driver (for samsung hardware)
 net-proxy/MTProxy 3.0.4-r1: Community fork of MTProxy
-net-proxy/byedpi 0.12 0.13 0.14.1 9999: Bypass DPI SOCKS proxy
+net-proxy/byedpi 0.14.1 0.15 9999: Bypass DPI SOCKS proxy
 net-proxy/ngrok-bin 3.10.0: ngrok is a reverse proxy, firewall, and API gateway
 net-proxy/snowflake 2.8.1 2.9.2: Pluggable Transport using WebRTC, inspired by Flashproxy
 net-voip/baresip 3.14.0 3.15.0 3.16.0: Baresip is a portable and modular SIP User-Agent
@@ -1660,6 +1661,7 @@ sys-fs/mountpoint-s3-bin 1.1.1: Fuse for AWS S3 (Simple Storage Service), offici
 sys-fs/ntfs2btrfs 20240115: Conversion tool from NTFS to Btrfs
 sys-fs/sanoid 2.2.0 9999: Policy-driven snapshot management and replication tools for OpenZFS.
 sys-fs/ufiformat 0.9.9: USB Floppy Disk formatting tool
+sys-fs/xva-img 1.5: XVA virtual disk tool, supports exporting XVA to RAW.
 sys-fs/zfs-auto-utils 1.0.0: ZFS Automatic Scrub/Trim for Linux
 sys-kernel/dpdk-kmod 23.03: DPDK Kernel Nic Interface module
 sys-kernel/uek-sources 5.15.0.300.159.7-r1 5.15.0.300.161.13: Unbreakable Enterprise Kernel (UEK) sources built from Oracle

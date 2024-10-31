@@ -1,0 +1,14 @@
+BDEPEND=dev-util/wayland-scanner virtual/pkgconfig app-alternatives/ninja >=dev-build/cmake-3.20.5
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=dev-cpp/sdbus-c++:0/2 >=dev-libs/hyprlang-0.4.0 >=gui-libs/hyprutils-0.2.0 dev-libs/date dev-libs/glib:2 dev-libs/wayland media-libs/libglvnd media-libs/libjpeg-turbo:= media-libs/libwebp:= media-libs/mesa[opengl] sys-libs/pam x11-libs/cairo x11-libs/libxkbcommon x11-libs/libdrm x11-libs/pango dev-libs/wayland-protocols
+DESCRIPTION=Hyprland's GPU-accelerated screen locking utility
+EAPI=8
+HOMEPAGE=https://github.com/hyprwm/hyprlock
+INHERIT=cmake
+KEYWORDS=~amd64
+LICENSE=BSD
+RDEPEND=dev-cpp/sdbus-c++:0/2 >=dev-libs/hyprlang-0.4.0 >=gui-libs/hyprutils-0.2.0 dev-libs/date dev-libs/glib:2 dev-libs/wayland media-libs/libglvnd media-libs/libjpeg-turbo:= media-libs/libwebp:= media-libs/mesa[opengl] sys-libs/pam x11-libs/cairo x11-libs/libxkbcommon x11-libs/libdrm x11-libs/pango
+SLOT=0
+SRC_URI=https://github.com/hyprwm/Hyprlock/archive/refs/tags/v0.5.0.tar.gz -> hyprlock-0.5.0.tar.gz
+_eclasses_=toolchain-funcs	d3d42b22a610ce81c267b644bcec9b87	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	f14aba975c94ccaa9f357a27e3b17ffe	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	10a50dfaf728b802fcfd37f8d0da9056
+_md5_=9172225b2f09041a2ff07799f6e0b750
