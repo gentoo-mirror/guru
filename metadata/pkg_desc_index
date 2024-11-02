@@ -97,7 +97,7 @@ app-admin/dotbot 1.20.1: A tool that bootstraps your dotfiles
 app-admin/enpass-desktop-bin 6.7.4.933: A cross-platform, complete password management solution
 app-admin/gentoo_update 0.2.4: Gentoo Linux updater
 app-admin/grub-customizer 5.2.4-r1: A graphical grub2 settings manager
-app-admin/hardinfo2 2.1.17: System Information and Benchmark for Linux Systems
+app-admin/hardinfo2 2.2.1: System Information and Benchmark for Linux Systems
 app-admin/himitsu 0.7 0.8 9999: Secret storage system for Unix, suitable for storing passwords, keys, ...
 app-admin/himitsu-keyring 0.2.0: graphical frontend for managing a Himitsu key store
 app-admin/himitsu-ssh 0.3 0.4 9999: SSH integration for Himitsu
@@ -507,7 +507,8 @@ dev-lang/odin 2024.08 2024.09: The Data-Oriented Language for Sane Software Deve
 dev-lang/opencilk 1.1 2.1: The OpenCilk concurrency platform for parallel programming
 dev-lang/opencilk-bin 1.1 2.1: The OpenCilk concurrency platform for parallel programming
 dev-lang/quickjs 2024.01.13-r1: Small embeddable Javascript engine
-dev-lang/swift 5.10.1 5.10.1-r1 6.0.1: A high-level, general-purpose, multi-paradigm, compiled programming language
+dev-lang/swift 5.10.1 5.10.1-r1 5.10.1-r2 6.0.1 6.0.1-r1 6.0.2: A high-level, general-purpose, multi-paradigm, compiled programming language
+dev-lang/swift-bootstrap 1.0: A virtual package providing a base Swift to bootstrap future versions with.
 dev-lang/wabt 1.0.34: The WebAssembly Binary Toolkit
 dev-libs/M_CLI2 3.2.0: M_CLI2 - parse Unix-like command line arguments from Fortran
 dev-libs/StringiFor 1.1.4: StringiFor, Strings Fortran Manipulator, yet another strings Fortran module
@@ -737,7 +738,7 @@ dev-python/mkdocs-exclude 1.0.2-r1: Lets you exclude files or trees from your ou
 dev-python/mkdocs-git-committers-plugin 0.2.3: A mkdocs plugin for displaying the last commit and a list of contributors.
 dev-python/mkdocs-rss-plugin 1.15.0: MkDocs plugin to generate a RSS feeds.
 dev-python/mobi 0.3.3: Unpack unencrypted mobi files
-dev-python/moderngl 5.11.1: Modern OpenGL binding for python
+dev-python/moderngl 5.12.0: Modern OpenGL binding for python
 dev-python/moderngl-window 2.4.6: A cross platform utility library for ModernGL
 dev-python/mollie-api-python 3.6.0: Mollie API client for Python
 dev-python/moreorless 0.4.0: Wrapper to make difflib.unified_diff more fun to use
@@ -968,7 +969,7 @@ dev-util/wxformbuilder 3.10.1-r1: A wxWidgets GUI Builder
 dev-util/xxd 8.2.4092: Hexdump utility from vim
 dev-util/yaml-language-server 1.14.0 1.15.0: Language Server for YAML Files
 dev-vcs/gitahead 2.7.1 2.7.1-r1: Graphical Git client to help understand and manage source code history
-dev-vcs/gitqlient 1.6.2 9999: Multi-platform Git client written with Qt
+dev-vcs/gitqlient 1.6.2 1.6.3 9999: Multi-platform Git client written with Qt
 dev-vcs/gitqlient-gitserver-plugin 0.2.0: GitQlient GitServer plugin
 dev-vcs/gitqlient-jenkins-plugin 0.2.0: GitQlient Jenkins plugin
 dev-vcs/gitui 0.26.3: blazing fast terminal-ui for git
@@ -1050,7 +1051,7 @@ games-util/roll 2.6.1: Program to roll dices specified in a simple and intuitive
 games-util/samrewritten 9999 202008: Steam Achievement Manager For Linux
 games-util/sdl2-gamepad-mapper 0.0.8-r1: GUI application to generate an SDL2 mapping string from a generic controller
 games-util/steamtinkerlaunch 12.0: Wrapper script for Steam custom launch options
-games-util/xivlauncher 1.1.0-r1: Custom Launcher for Final Fantasy XIV Online (Crossplatform rewrite)
+games-util/xivlauncher 1.1.1: Custom Launcher for Final Fantasy XIV Online (Crossplatform rewrite)
 gnome-extra/commit 4.1-r1: Commit message editor
 gnome-extra/extension-manager 0.5.1 9999: A native tool for browsing, installing, and managing GNOME Shell Extensions
 gnome-extra/iio-sensor-proxy 3.3 3.5: IIO sensors to D-Bus proxy
@@ -1059,7 +1060,7 @@ gnome-extra/portfolio 0.9.14: A minimalist file manager for those who want to us
 gnome-extra/vvmplayer 1.4: Visual Voicemail Player
 gnome-extra/wike 3.0.0 3.0.1: Wikipedia Reader for the GNOME Desktop
 gnome-extra/yad 13.0 14.1 9999: Display GTK+ dialog boxes from command line or shell scripts
-gui-apps/1password 8.10.28 8.10.48: The world’s most-loved password manager
+gui-apps/1password 8.10.28 8.10.48-r1: The world’s most-loved password manager
 gui-apps/ReGreet 0.1.1-r9 9999: A clean and customizable GTK-based greetd greeter written in Rust
 gui-apps/aylurs-gtk-shell 1.8.2-r1: Aylurs's Gtk Shell (AGS), An eww inspired gtk widget system.
 gui-apps/azote 1.13.1 9999: wallpaper manager for wlroots compositors
@@ -1104,7 +1105,7 @@ gui-apps/hyprpicker 0.1.1 0.2.0 0.3.0-r1 9999: A wlroots-compatible Wayland colo
 gui-apps/hyprshade 3.2.1 9999: Hyprland shader configuration tool
 gui-apps/hyprshot 1.2.3 1.3.0 9999: Hyprshot is an utility to easily take screenshot in Hyprland using your mouse
 gui-apps/hyprswitch 1.3.1: A CLI/GUI that allows switching between windows in Hyprland
-gui-apps/intiface-central-bin 2.5.7 2.6.0: Buttplug frontend application
+gui-apps/intiface-central-bin 2.6.0 2.6.4: Buttplug frontend application
 gui-apps/ironbar 0.16.0-r1: Customisable Wayland gtk bar written in Rust
 gui-apps/lan-mouse 0.7.3-r1: Software KVM Switch / mouse & keyboard sharing software for Local Area Networks
 gui-apps/lemurs 0.3.2: A TUI Display/Login Manager
@@ -1173,7 +1174,7 @@ gui-libs/libcsys 4.5.0 9999: Library for managing the device
 gui-libs/mir 2.18.2: Set of libraries for building Wayland based shells
 gui-libs/scenefx 0.1: A replacement for the wlroots scene API with eye-candy effects.
 gui-libs/text-engine 0.1.1-r3 9999: A lightweight rich-text framework for GTK 4
-gui-libs/xdg-desktop-portal-hyprland 1.3.3-r2 1.3.3-r3 1.3.8 9999: xdg-desktop-portal backend for hyprland
+gui-libs/xdg-desktop-portal-hyprland 1.3.3-r3 1.3.8 9999: xdg-desktop-portal backend for hyprland
 gui-wm/cage 0.2.0 9999: A Wayland kiosk
 gui-wm/hyprland-contrib 0.1-r1 9999: Community-maintained extensions for hyprland
 gui-wm/miracle-wm 0.3.7: Tiling Wayland compositor based on Mir
@@ -1182,7 +1183,6 @@ gui-wm/phoc 0.41.0 0.42.0 0.42.1: Wayland compositor for mobile phones
 gui-wm/river 0.3.5-r1: A dynamic tiling Wayland compositor
 gui-wm/swayfx 0.4-r1: SwayFX: Sway, but with eye candy!
 kde-apps/kwalletcli 3.03: CLI for the KDE Wallet
-kde-apps/plasma-settings 22.11: Settings application for Plasma Mobile
 kde-misc/geminipart 20221020 20231005: KPart for viewing text/gemini files
 kde-misc/kio-gemini 20231005 20240801: Gemini KIO worker
 kde-misc/plasma5-wallpapers-dynamic 3.3.9 9999: A KDE Plasma wallpaper plugin to set your wallpaper based on the time of day.
@@ -1221,7 +1221,7 @@ media-gfx/WebPlotDigitizer-bin 4.7: Web based tool to extract data from plots, i
 media-gfx/akira 0.0.13 9999: Native Linux App for UI and UX Design built in Vala and GTK.
 media-gfx/azpainter 3.0.9a: Full color painting software for Linux for illustration drawing
 media-gfx/bambustudio-bin 01.09.03.50: Bambu Studio is a cutting-edge, feature-rich slicing software
-media-gfx/beeref 0.3.2: A Simple Reference Image Viewer
+media-gfx/beeref 0.3.3: A Simple Reference Image Viewer
 media-gfx/bonzomatic 2022.02.05 2022.08.20 9999: Live shader coding tool and Shader Showdown workhorse
 media-gfx/dnglab 0.6.0 0.6.1: Command line tool to convert camera RAW files to Digital Negative Format (DNG).
 media-gfx/dustr 9999: light and interactive tool your crops need
@@ -1265,7 +1265,7 @@ media-libs/vvdec 2.3.0: VVdeC, the Fraunhofer Versatile Video Decoder
 media-libs/vvenc 1.11.1: VVenC, the Fraunhofer Versatile Video Encoder
 media-libs/wivrn 0.19 0.20 9999: WiVRn OpenXR streaming
 media-plugins/alsa-sndio 0.2: ALSA PCM to play audio on sndio servers
-media-plugins/argotlunar-bin 2.06-r1: Argotlunar is a sound granulator. Binary Linux VST
+media-plugins/argotlunar-bin 2.06-r2: Argotlunar is a sound granulator. Binary Linux VST
 media-plugins/dtmediawiki 9999: Wikimedia Commons export plugin for Darktable. Every upload is converted
 media-plugins/gimp-avif-plugin 9999: Plug-in for development GIMP 2.99.11 for loading/saving AVIF images.
 media-plugins/gst-plugins-qt5 1.20.3 1.22.11: Qt5 QML video sink plugin for GStreamer
@@ -1382,7 +1382,7 @@ net-fs/httpdirfs 1.2.0: Filesystem to mount HTTP directory listings, with a perm
 net-fs/hubicfuse 3.0.1: Support for mounting HubiC drive in GNU/Linux
 net-im/Quaternion 0.0.96.1: A Qt-based IM client for Matrix
 net-im/WasIstLos 1.6.5 1.7.0: An unofficial WhatsApp desktop application for Linux
-net-im/abaddon 0.1.12-r1 0.1.13 0.2.1 9999: Alternative Discord client using GTK instead of Electron
+net-im/abaddon 0.2.1 9999: Alternative Discord client using GTK instead of Electron
 net-im/axolotl-bin 2.0.1: Axolotl is a cross-platform Signal client
 net-im/beeper 3.108.3 3.109.1: Beeper: Unified Messenger
 net-im/chatterino 2.5.1: Chat client for https://twitch.tv
@@ -1500,7 +1500,7 @@ net-p2p/feather 2.6.7-r1 2.6.8 9999: A free, open-source Monero wallet
 net-p2p/fragments 3.0.0 3.0.1: Fragments is an easy to use BitTorrent client
 net-p2p/gridcoin 5.4.8.0 5.4.8.0_p1: Proof-of-Stake based cryptocurrency that rewards BOINC computation
 net-p2p/monero 0.17.3.2 0.18.3.3-r2 0.18.3.4-r1 9999: The secure, private, untraceable cryptocurrency
-net-p2p/monero-gui-bin 0.18.3.4: An open-source GUI wallet developed by the Monero community.
+net-p2p/monero-gui-bin 0.18.3.4-r1: An open-source GUI wallet developed by the Monero community.
 net-p2p/p2pool 4.0 4.1.1 9999: Decentralized pool for Monero mining
 net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
 net-p2p/yggdrasil-go 0.5.9 9999: An experiment in scalable routing as an encrypted IPv6 overlay network
@@ -1542,7 +1542,7 @@ sci-chemistry/xcrysden 1.6.2: For the visualisation of molecular and crystal str
 sci-electronics/bluespec 2022.01-r1 2023.01 2023.07 9999: Toolchain for the Bluespec Hardware Definition Language
 sci-electronics/circt 1.14.0 1.37.0 1.76.0: The fast free Verilog/SystemVerilog simulator
 sci-electronics/coil64 2.1.27: Coil64 is inductance coil calculator
-sci-electronics/dsview 1.3.0 9999: An open source multi-function instrument
+sci-electronics/dsview 1.3.0 1.3.2 9999: An open source multi-function instrument
 sci-electronics/kactus2 3.13.3 9999: A open source IP-XACT-based tool
 sci-electronics/liblxi 1.20: Implementation of the LAN eXtensions for Instrumentation (LXI)
 sci-electronics/logic-bin 2.4.14: Saleae logic analyzer
@@ -1633,7 +1633,7 @@ sys-auth/pam-gnupg 0.4: Unlock GnuPG keys on login
 sys-block/partclone 0.3.20 0.3.32: Partition cloning tool
 sys-boot/customrescuecd-x86_64-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/grml-rescueboot 0.6.1: grub2 script to add ISO images to the grub2 boot menu
-sys-boot/limine 7.0.0 7.0.3 7.0.5 7.3.0 7.5.0 7.9.2 8.0.5 8.0.6 8.0.7 8.0.9 8.0.11 8.0.12 8.0.13 8.0.14 8.1.1 8.1.2: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
+sys-boot/limine 7.0.0 7.0.3 7.0.5 7.3.0 7.5.0 7.9.2 8.0.5 8.0.6 8.0.7 8.0.9 8.0.11 8.0.12 8.0.13 8.0.14 8.1.1 8.1.2 8.3.2: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
 sys-boot/mkusb 23.2.0: CLI and GUI for creating bootable live USB, with optional persistent storage
 sys-boot/ventoy-bin 1.0.97 1.0.98: Creator of bootable USBs, with ability to copy ISOs, persistence storage
 sys-boot/woeusb-ng 0.2.10 0.2.12: Create Windows installer USB from ISO (rewrite of WoeUSB)
@@ -1648,7 +1648,7 @@ sys-fs/btrfs-heatmap 9-r1: Python 3 script to draw a heatmap of a btrfs filesyst
 sys-fs/ddrescueview 0.4.5: Graphical viewer for GNU ddrescue mapfiles
 sys-fs/diskonaut 0.10.0 0.11.0 9999: Terminal disk space visual navigator
 sys-fs/dua-cli 2.28.0 2.29.0 2.29.1: A tool to conveniently learn about the disk usage of directories, fast!
-sys-fs/dwarfs 0.9.10-r1 0.10.1 0.10.1-r1: A fast high compression read-only file system for Linux, Windows and macOS
+sys-fs/dwarfs 0.9.10-r1 0.10.1 0.10.1-r1 0.10.1-r2: A fast high compression read-only file system for Linux, Windows and macOS
 sys-fs/dwarfs-bin 0.9.10 0.10.1: Static version of a fast very high compression read-only FUSE file system
 sys-fs/ffmpegfs 2.16-r1: FUSE-based transcoding filesystem with support from/to many formats.
 sys-fs/fstransform 0.9.4: Tool for in-place filesystem conversion
@@ -1668,7 +1668,7 @@ sys-kernel/uek-sources 5.15.0.300.159.7-r1 5.15.0.300.161.13: Unbreakable Enterp
 sys-kernel/usermode-kernel 6.0.12: Linux kernel built with Gentoo patches
 sys-kernel/xow 0.5: Linux driver for the Xbox One wireless dongle
 sys-kernel/zenpower3 0.2.0: Linux kernel driver for reading sensors of AMD Zen family CPUs
-sys-libs/cyclonedds 0.10.3 9999: Eclipse Cyclone DDS project
+sys-libs/cyclonedds 0.10.3-r1 9999: Eclipse Cyclone DDS project
 sys-libs/gcompat 1.1.0: The GNU C Library compatibility layer for musl
 sys-libs/iceoryx 2.0.3 9999: Eclipse Iceoryx zero copy IPC
 sys-libs/libfixposix 0.4.3 0.5.1: Thin wrapper over POSIX syscalls
@@ -1713,7 +1713,7 @@ www-apps/snac 2.25 2.26: A simple, minimalistic ActivityPub instance
 www-apps/uwebsockets 20.14.0 20.62.0 9999: ultra fast, simple, secure & standards compliant web I/O
 www-apps/vaultwarden-web 2024.1.2b 2024.3.0 2024.3.1: Bitwarden web vault patched to make it work with Vaultwarden
 www-apps/vaultwarden-web-bin 2024.1.2b 2024.3.0 2024.3.1 2024.5.0: Prebuilt Vaultwarden web from upstream
-www-apps/whoogle-search 0.9.0: A self-hosted, ad-free, privacy-respecting metasearch engine
+www-apps/whoogle-search 0.9.1: A self-hosted, ad-free, privacy-respecting metasearch engine
 www-apps/zola 0.19.2: A fast static site generator with everything built-in
 www-client/badwolf 1.3.0-r1 9999: Minimalist and privacy-oriented WebKitGTK+ browser
 www-client/browsh 1.8.2: A fully-modern text-based browser, rendering to TTY and browsers
