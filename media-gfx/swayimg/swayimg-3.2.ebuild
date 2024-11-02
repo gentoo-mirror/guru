@@ -1,4 +1,3 @@
-
 # Copyright 2023-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
@@ -13,7 +12,7 @@ SRC_URI="https://github.com/artemsen/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="avif exif exr gif heif jpeg jpegxl png svg tiff webp bash-completion"
+IUSE="avif bash-completion exif exr gif heif jpeg jpegxl png svg tiff webp X"
 
 RDEPEND="
 	dev-libs/json-c:=
@@ -33,18 +32,16 @@ RDEPEND="
 	svg? (
 		dev-libs/glib:2
 		gnome-base/librsvg:2
-		x11-libs/cairo
+		x11-libs/cairo[X=]
 	)
 	tiff? ( media-libs/tiff:= )
 	webp? ( media-libs/libwebp:= )"
 DEPEND="${RDEPEND}
-	dev-libs/wayland-protocols"
+	dev-libs/wayland-protocols
+	svg? ( X? ( x11-base/xorg-proto ) )
+"
 BDEPEND="
 	dev-util/wayland-scanner
-	svg? (
-		dev-build/cmake
-		x11-base/xorg-proto
-	)
 "
 
 src_configure() {

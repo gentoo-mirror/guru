@@ -18,6 +18,13 @@
 
 # New entries go on top.
 
+# Takuya Wakazono <pastalian46@gmail.com> (2024-10-31)
+# Unmaintained in guru since 2020 and the upstream suggests using their
+# new project.
+# It also depends on dev-qt/qtwebengine:5, which will soon be removed.
+# Removal on 2024-11-30. Bug #780705.
+app-editors/kitscenarist
+
 # Takuya Wakazono <pastalian46@gmail.com> (2024-10-19)
 # Doesn't build anymore. Unmaintained since 2022.
 # Removal on 2024-11-19. Bug #927878.
@@ -86,16 +93,9 @@ dev-libs/octetos-coreutils
 
 # Takuya Wakazono <pastalian46@gmail.com> (2024-10-02)
 # Depends on <media-libs/kimageannotator-0.7, which has been dropped.
-# The latest upstream tree supports Qt6 (not released yet).
-# Removal on 2024-11-02.
+# Upstream is working on Qt6 port.
+# Removal on 2025-02-02.
 x11-misc/ksnip
-
-# Takuya Wakazono <pastalian46@gmail.com> (2024-10-02)
-# Depends on dev-libs/kirigami-addons:5, which has been dropped.
-# The latest upstream release supports Qt6, but there's no maintainer
-# in guru.
-# Removal on 2024-11-02.
-kde-apps/plasma-settings
 
 # Julien Roy <julien@jroy.ca> (2024-03-21)
 # sys-libs/libucontext is masked in ::gentoo

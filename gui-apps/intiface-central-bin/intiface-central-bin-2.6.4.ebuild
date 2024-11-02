@@ -7,7 +7,7 @@ inherit desktop xdg
 
 DESCRIPTION="Buttplug frontend application"
 HOMEPAGE="https://github.com/intiface/intiface-central"
-SRC_URI="https://github.com/intiface/intiface-central/releases/download/v${PV}/intiface-central-v${PV}-linux-ubuntu-22.04-x64.zip"
+SRC_URI="https://github.com/intiface/intiface-central/releases/download/v${PV}/intiface-central-v${PV}-ubuntu-22.04-x64.zip"
 S="${WORKDIR}/${PN/-bin/}"
 
 LICENSE="GPL-3"

@@ -16,7 +16,6 @@ SRC_URI="
 	https://github.com/apple/swift-atomics/archive/refs/tags/1.2.0.tar.gz -> swift-atomics-1.2.0.tar.gz
 	https://github.com/apple/swift-certificates/archive/refs/tags/1.0.1.tar.gz -> swift-certificates-1.0.1.tar.gz
 	https://github.com/apple/swift-collections/archive/refs/tags/1.1.2.tar.gz -> swift-collections-1.1.2.tar.gz
-	https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/${P}-RELEASE.tar.gz -> swift-corelibs-libdispatch-${PV}.tar.gz
 	https://github.com/apple/swift-crypto/archive/refs/tags/3.0.0.tar.gz -> swift-crypto-3.0.0.tar.gz
 	https://github.com/apple/swift-nio-ssl/archive/refs/tags/2.15.0.tar.gz -> swift-nio-ssl-2.15.0.tar.gz
 	https://github.com/apple/swift-nio/archive/refs/tags/2.31.2.tar.gz -> swift-nio-2.31.2.tar.gz
@@ -28,6 +27,7 @@ SRC_URI="
 	https://github.com/swiftlang/sourcekit-lsp/archive/refs/tags/${P}-RELEASE.tar.gz -> sourcekit-lsp-${PV}.tar.gz
 	https://github.com/swiftlang/swift-cmark/archive/refs/tags/${P}-RELEASE.tar.gz -> swift-cmark-${PV}.tar.gz
 	https://github.com/swiftlang/swift-corelibs-foundation/archive/refs/tags/${P}-RELEASE.tar.gz -> swift-corelibs-foundation-${PV}.tar.gz
+	https://github.com/swiftlang/swift-corelibs-libdispatch/archive/refs/tags/${P}-RELEASE.tar.gz -> swift-corelibs-libdispatch-${PV}.tar.gz
 	https://github.com/swiftlang/swift-corelibs-xctest/archive/refs/tags/${P}-RELEASE.tar.gz -> swift-corelibs-xctest-${PV}.tar.gz
 	https://github.com/swiftlang/swift-docc-render-artifact/archive/refs/tags/${P}-RELEASE.tar.gz -> swift-docc-render-artifact-${PV}.tar.gz
 	https://github.com/swiftlang/swift-docc-symbolkit/archive/refs/tags/${P}-RELEASE.tar.gz -> swift-docc-symbolkit-${PV}.tar.gz
@@ -52,10 +52,10 @@ SRC_URI="
 "
 
 PATCHES=(
-	"${FILESDIR}/${P}-link-with-lld.patch"
-	"${FILESDIR}/${P}-swift-backtracing-noexecstack-gentoo.patch"
-	"${FILESDIR}/${P}-swift-build-preset-gentoo.patch"
-	"${FILESDIR}/${P}-swift-link-ncurses-tinfo-gentoo.patch"
+	"${FILESDIR}/${PF}/backtracing-noexecstack.patch"
+	"${FILESDIR}/${PF}/gentoo-build-preset.patch"
+	"${FILESDIR}/${PF}/link-ncurses-tinfo.patch"
+	"${FILESDIR}/${PF}/link-with-lld.patch"
 )
 
 S="${WORKDIR}"
