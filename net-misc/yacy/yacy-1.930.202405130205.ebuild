@@ -3,22 +3,21 @@
 
 EAPI=7
 
-inherit java-pkg-2 java-ant-2 systemd
+inherit java-pkg-2 systemd
 
 MAJOR_PV="$(ver_cut 1-2)"
 REL_PV="$(ver_cut 3)"
-SVN_PV="$(ver_cut 4)"
+COMMIT="59c0cb0f3"
 
 DESCRIPTION="YaCy - p2p based distributed web-search engine"
 HOMEPAGE="https://www.yacy.net/"
-SRC_URI="https://www.yacy.net/release/yacy_v${MAJOR_PV}_${REL_PV}_${SVN_PV}.tar.gz"
+SRC_URI="https://download.yacy.net/yacy_v${MAJOR_PV}_${REL_PV}_${COMMIT}.tar.gz"
 
 S="${WORKDIR}/${PN}"
 
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="systemd +openrc"
 
 DEPEND="
 	>=virtual/jdk-1.8
@@ -51,16 +50,13 @@ src_install() {
 	chown yacy:yacy "${D}/var/log/yacy" || die
 	keepdir /var/log/yacy
 
-	rmdir "${D}/${yacy_home}/DATA" || die
 	dosym /var/lib/yacy /${yacy_home}/DATA
 
-	use openrc && {
-		exeinto /etc/init.d
-		newexe "${FILESDIR}/yacy.rc" yacy
-		doconfd "${FILESDIR}/yacy.confd"
-	}
+	exeinto /etc/init.d
+	newexe "${FILESDIR}/yacy.rc" yacy
+	doconfd "${FILESDIR}/yacy.confd"
 
-	use systemd && systemd_newunit "${FILESDIR}"/${PN}-ipv6.service ${PN}.service
+	systemd_newunit "${FILESDIR}"/${PN}-ipv6.service ${PN}.service
 }
 
 pkg_postinst() {
