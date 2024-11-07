@@ -12,18 +12,18 @@ SRC_URI="https://github.com/emweb/wt/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc firebird mysql opengl pdf postgres ssl"
+IUSE="doc firebird mysql opengl +pango pdf postgres ssl"
 
 DEPEND="
 	firebird? ( dev-db/firebird )
 	mysql? ( virtual/mysql )
 	opengl? ( virtual/opengl )
+	pango? ( x11-libs/pango )
 	postgres? ( dev-db/postgresql )
 	ssl? ( dev-libs/openssl )
-	<dev-libs/boost-1.85.0:=
+	dev-libs/boost:=
 	media-libs/libharu
 	media-gfx/graphicsmagick[jpeg,png]
-	x11-libs/pango
 	sys-libs/zlib
 "
 RDEPEND="${DEPEND}"
@@ -31,18 +31,13 @@ RDEPEND="${DEPEND}"
 BDEPEND="
 	doc? (
 		app-text/doxygen[dot]
-		dev-qt/qtchooser
-		dev-qt/qthelp
+		dev-qt/qttools[qdoc]
 	)
 "
-# for qt6 dev-qt/qttools[qdoc]
 
 PATCHES=( "${FILESDIR}/wt-no-rundir.patch")
 
 src_configure() {
-	# TODO
-	#-DENABLE_QT6=$(usex qt6)
-
 	local mycmakeargs=(
 		-DLIB_INSTALL_DIR=$(get_libdir)
 		-DBUILD_EXAMPLES=OFF
@@ -50,13 +45,14 @@ src_configure() {
 		-DDOCUMENTATION_DESTINATION="share/doc/${PF}"
 		-DENABLE_SSL=$(usex ssl)
 		-DENABLE_HARU=$(usex pdf)
-		-DENABLE_PANGO=ON
+		-DENABLE_PANGO=$(usex pango)
 		-DENABLE_SQLITE=ON
 		-DENABLE_POSTGRES=$(usex postgres)
 		-DENABLE_FIREBIRD=$(usex firebird)
 		-DENABLE_MYSQL=$(usex mysql)
 		-DENABLE_QT4=OFF
-		-DENABLE_QT5=ON
+		-DENABLE_QT5=OFF
+		-DENABLE_QT6=ON
 		-DENABLE_SAML=ON
 		-DENABLE_OPENGL=$(usex opengl)
 	)

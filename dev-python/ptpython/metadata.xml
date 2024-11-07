@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+        <maintainer type="person">
+                <email>wuzhenyu@ustc.edu</email>
+                <name>Wu, Zhenyu</name>
+        </maintainer>
+        <use>
+                <flag name="black">Add support for dev-python/black. Black not always possible on PyPy</flag>
+                <flag name="ipython">Add support for dev-python/ipython for ptipython</flag>
+        </use>
+        <upstream>
+                <remote-id type="pypi">ptpython</remote-id>
+                <remote-id type="github">prompt-toolkit/ptpython</remote-id>
+        </upstream>
+</pkgmetadata>
