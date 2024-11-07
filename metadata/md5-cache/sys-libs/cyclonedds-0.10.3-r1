@@ -1,16 +1,16 @@
-BDEPEND=test? ( dev-util/cunit ) app-alternatives/ninja >=dev-build/cmake-3.20.5
-DEFINED_PHASES=compile configure install prepare test
-DEPEND=doc? ( app-text/doxygen ) ssl? ( dev-libs/openssl:= ) shm? ( sys-libs/iceoryx:= ) parser? ( sys-devel/bison )
+BDEPEND=doc? ( app-text/doxygen || ( ( dev-lang/python:3.13 dev-python/breathe[python_targets_python3_13(-)] dev-python/sphinx[python_targets_python3_13(-)] ) ( dev-lang/python:3.12 dev-python/breathe[python_targets_python3_12(-)] dev-python/sphinx[python_targets_python3_12(-)] ) ) ) test? ( dev-util/cunit ) app-alternatives/ninja >=dev-build/cmake-3.20.5
+DEFINED_PHASES=compile configure install prepare setup test
+DEPEND=ssl? ( dev-libs/openssl:= ) shm? ( sys-libs/iceoryx:= ) parser? ( sys-devel/bison )
 DESCRIPTION=Eclipse Cyclone DDS project
 EAPI=8
 HOMEPAGE=https://cyclonedds.io/
-INHERIT=cmake
+INHERIT=cmake python-any-r1
 IUSE=test ssl shm parser doc examples ipv6 idlc get-kind
 KEYWORDS=~amd64
 LICENSE=EPL-2.0
-RDEPEND=doc? ( app-text/doxygen ) ssl? ( dev-libs/openssl:= ) shm? ( sys-libs/iceoryx:= ) parser? ( sys-devel/bison )
+RDEPEND=ssl? ( dev-libs/openssl:= ) shm? ( sys-libs/iceoryx:= ) parser? ( sys-devel/bison )
 RESTRICT=!test? ( test )
 SLOT=0/0.10
 SRC_URI=https://github.com/eclipse-cyclonedds/cyclonedds/archive/0.10.3.tar.gz -> cyclonedds-0.10.3.tar.gz
-_eclasses_=toolchain-funcs	d3d42b22a610ce81c267b644bcec9b87	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	f14aba975c94ccaa9f357a27e3b17ffe	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	10a50dfaf728b802fcfd37f8d0da9056
-_md5_=79787a5e90914c99667d631ed6a0d62c
+_eclasses_=toolchain-funcs	d3d42b22a610ce81c267b644bcec9b87	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	f14aba975c94ccaa9f357a27e3b17ffe	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	10a50dfaf728b802fcfd37f8d0da9056	python-utils-r1	2fee95c11e5f883024588d4837db6802	python-any-r1	f7b9a2fa38c69a9c2a7ad8fc9283ccf7
+_md5_=fa44b6f0a4ca6d011c16a15bc298c803

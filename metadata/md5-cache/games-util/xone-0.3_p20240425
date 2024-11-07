@@ -1,0 +1,17 @@
+BDEPEND=app-arch/cabextract dev-util/pahole sys-apps/kmod[tools] modules-sign? ( dev-libs/openssl virtual/pkgconfig )
+DEFINED_PHASES=compile install postinst prepare setup unpack
+DEPEND=virtual/linux-sources
+DESCRIPTION=Linux kernel driver for Xbox One and Xbox Series X|S accessories
+EAPI=8
+HOMEPAGE=https://github.com/medusalix/xone
+IDEPEND=sys-apps/kmod[tools]
+INHERIT=linux-mod-r1
+IUSE=dist-kernel modules-compress modules-sign +strip
+KEYWORDS=~amd64
+LICENSE=GPL-2+ MS-TOU
+RDEPEND=sys-apps/kmod[tools] dist-kernel? ( virtual/dist-kernel:= )
+RESTRICT=bindist mirror test
+SLOT=0
+SRC_URI=mirror+https://github.com/medusalix/xone/archive/29ec3577e52a50f876440c81267f609575c5161e.tar.gz -> xone-0.3_p20240425.tar.gz http://download.windowsupdate.com/c/msdownload/update/driver/drvs/2017/07/1cd6a87c-623f-4407-a52d-c31be49e925c_e19f60808bdcbfbd3c3df6be3e71ffc52e43261e.cab -> xone-driver-201707-1cd6a87c-623f-4407-a52d-c31be49e925c_e19f60808bdcbfbd3c3df6be3e71ffc52e43261e.cab
+_eclasses_=mount-boot-utils	69218c024651aa10db01df7e8a5b63e0	toolchain-funcs	d3d42b22a610ce81c267b644bcec9b87	multilib	b2a329026f2e404e9e371097dda47f96	dist-kernel-utils	f7cc6a540e8b78cd3fd09f1afc4ded23	edo	367e103a74bf77e6a8da7894d999fa3c	linux-info	ea4122ba1d8791a12b78e53f9510a2e3	multiprocessing	1e32df7deee68372153dca65f4a7c21f	linux-mod-r1	33598fe1cdd6706395fecdc59df35f64
+_md5_=33da5c2d38cebdc77936ccc0b5e93c03

@@ -1,0 +1,15 @@
+BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.20.5
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=dev-libs/openssl:0= =net-voip/re-3.17* sys-libs/zlib aac? ( media-libs/fdk-aac ) alsa? ( media-libs/alsa-lib ) amr? ( media-libs/opencore-amr ) aom? ( media-libs/libaom ) aptx? ( media-libs/libopenaptx ) codec2? ( media-libs/codec2 ) dbus? ( dev-util/gdbus-codegen sys-apps/dbus ) ffmpeg? ( media-video/ffmpeg ) gstreamer? ( media-libs/gstreamer:1.0 media-libs/gst-plugins-base:1.0 media-libs/gst-plugins-good:1.0 ) gtk3? ( x11-libs/gtk+:3 ) jack? ( virtual/jack ) mpa? ( media-sound/twolame media-sound/mpg123 media-libs/speexdsp ) mqtt? ( app-misc/mosquitto ) opus? ( media-libs/opus ) pipewire? ( media-video/pipewire ) snapshot? ( media-libs/libpng ) portaudio? ( media-libs/portaudio ) pulseaudio? ( media-libs/libpulse ) sdl? ( media-libs/libsdl2 ) sndfile? ( media-libs/libsndfile ) spandsp? ( media-libs/spandsp ) v4l? ( media-libs/libv4l ) vpx? ( media-libs/libvpx ) webrtc? ( media-plugins/gst-plugins-webrtc ) X? ( x11-libs/libX11 )
+DESCRIPTION=Baresip is a portable and modular SIP User-Agent
+EAPI=8
+HOMEPAGE=https://github.com/baresip/baresip
+INHERIT=cmake
+IUSE=aac acip alsa amr aptx aom codec2 console dbus echo evdev ffmpeg gstreamer gtk3 jack httpd httpreq mpa mqtt opus pipewire portaudio pulseaudio sdl serreg snapshot sndfile spandsp static-libs syslog tcpcontrol v4l video vpx webrtc X
+KEYWORDS=~amd64
+LICENSE=BSD
+RDEPEND=dev-libs/openssl:0= =net-voip/re-3.17* sys-libs/zlib aac? ( media-libs/fdk-aac ) alsa? ( media-libs/alsa-lib ) amr? ( media-libs/opencore-amr ) aom? ( media-libs/libaom ) aptx? ( media-libs/libopenaptx ) codec2? ( media-libs/codec2 ) dbus? ( dev-util/gdbus-codegen sys-apps/dbus ) ffmpeg? ( media-video/ffmpeg ) gstreamer? ( media-libs/gstreamer:1.0 media-libs/gst-plugins-base:1.0 media-libs/gst-plugins-good:1.0 ) gtk3? ( x11-libs/gtk+:3 ) jack? ( virtual/jack ) mpa? ( media-sound/twolame media-sound/mpg123 media-libs/speexdsp ) mqtt? ( app-misc/mosquitto ) opus? ( media-libs/opus ) pipewire? ( media-video/pipewire ) snapshot? ( media-libs/libpng ) portaudio? ( media-libs/portaudio ) pulseaudio? ( media-libs/libpulse ) sdl? ( media-libs/libsdl2 ) sndfile? ( media-libs/libsndfile ) spandsp? ( media-libs/spandsp ) v4l? ( media-libs/libv4l ) vpx? ( media-libs/libvpx ) webrtc? ( media-plugins/gst-plugins-webrtc ) X? ( x11-libs/libX11 )
+SLOT=0
+SRC_URI=https://github.com/baresip/baresip/archive/v3.17.0.tar.gz -> baresip-3.17.0.tar.gz
+_eclasses_=toolchain-funcs	d3d42b22a610ce81c267b644bcec9b87	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	f14aba975c94ccaa9f357a27e3b17ffe	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	10a50dfaf728b802fcfd37f8d0da9056
+_md5_=4ace983764df237c2efd3bfc633d078c

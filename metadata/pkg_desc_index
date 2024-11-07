@@ -97,7 +97,7 @@ app-admin/dotbot 1.20.1: A tool that bootstraps your dotfiles
 app-admin/enpass-desktop-bin 6.7.4.933: A cross-platform, complete password management solution
 app-admin/gentoo_update 0.2.4: Gentoo Linux updater
 app-admin/grub-customizer 5.2.4-r1: A graphical grub2 settings manager
-app-admin/hardinfo2 2.2.1: System Information and Benchmark for Linux Systems
+app-admin/hardinfo2 2.2.4: System Information and Benchmark for Linux Systems
 app-admin/himitsu 0.7 0.8 9999: Secret storage system for Unix, suitable for storing passwords, keys, ...
 app-admin/himitsu-keyring 0.2.0: graphical frontend for managing a Himitsu key store
 app-admin/himitsu-ssh 0.3 0.4 9999: SSH integration for Himitsu
@@ -129,6 +129,7 @@ app-backup/grub-btrfs 4.11-r1 4.12 4.13 9999: Improves Grub by adding btrfs snap
 app-backup/kopia 0.15.0: Kopia - Fast And Secure Open-Source Backup
 app-backup/kopia-ui-bin 0.15.0-r1: Kopia - Fast And Secure Open-Source Backup (Electron UI)
 app-backup/pika-backup 0.7.2-r1: Keep your data safe
+app-backup/restic-browser 0.3.1-r1: A GUI to browse and restore from restic backup repositories
 app-backup/timeshift 23.07.1: A system restore utility for Linux
 app-backup/timeshift-autosnap 0.9-r1: Automatically creates a timeshift-snapshot when executed
 app-benchmarks/kdiskmark 3.1.4-r1: Disk benchmarking tool
@@ -182,6 +183,7 @@ app-editors/lapce 0.4.2 9999: Lightning-fast and Powerful Code Editor written in
 app-editors/mined 2015.25: A powerful text editor with extensive Unicode and CJK support
 app-editors/neovide 0.12.2: Neovide: No Nonsense Neovim Gui
 app-editors/neovim-qt 0.2.17-r1 0.2.18-r1: Neovim client library and GUI, in Qt
+app-editors/notepadnext 0.8_p20240828: A cross-platform reimplementation of Notepad++ based on Qt
 app-editors/pulsar-bin 1.118.0 1.119.0 1.120.0 1.122.0: A Community-led Hyper-Hackable Text Editor
 app-editors/typora-bin 1.8.10: a markdown editor,markdown reader.
 app-emacs/catppuccin-emacs 9999: Soothing pastel theme for Emacs
@@ -278,6 +280,7 @@ app-misc/sherlock 0.15.0 9999: Hunt down social media accounts by username acros
 app-misc/tealdeer 1.6.1: A very fast implementation of tldr in Rust.
 app-misc/termdown 1.18.0: Countdown timer and stopwatch in your terminal
 app-misc/tinyfetch 5.2 6.1 6.2 9999: fetch program written in pure C
+app-misc/tmux-rime 0.0.3: rime for tmux
 app-misc/treefetch 2.0.0: 🌲 A plant-based system fetch tool made with Rust.
 app-misc/tty-share-bin 2.4.0: Screen sharing for terminal: ASCII in browser or terminal, without pixels moving
 app-misc/twertlefetch 1.1.0: system fetch written in rust
@@ -322,6 +325,7 @@ app-shells/fre 0.4.1: A command line frecency tracking tool
 app-shells/fzf-fish 10.3: Augment your fish command line with fzf key bindings
 app-shells/fzf-tab 0_pre20230611: Replace zsh's default completion selection menu with fzf
 app-shells/igr 9999: Interactive rg (ripgrep) wrapper in fzf: Interactive GRep (search)
+app-shells/manpager 0.0.3: colorize man pages
 app-shells/mrsh 9999: minimal strictly POSIX compliant shell
 app-shells/ohmyzsh 9999: A framework for managing your zsh configuration.
 app-shells/pokemon-colorscripts 9999: Pokemon unicode sprites for your terminal!
@@ -418,7 +422,7 @@ dev-cpp/trantor 1.5.19 1.5.20: Non-blocking I/O tcp network lib based on c++14/1
 dev-cpp/trompeloeil 47: Header only C++14 mocking framework
 dev-cpp/units 2.3.3: A compile-time, header-only, dimensional analysis and unit conversion library
 dev-cpp/workflow 0.10.2-r1 0.10.3 0.10.5 9999: C++ Parallel Computing and Asynchronous Networking Engine
-dev-cpp/wt 4.10.4 4.11.0: Wt, C++ Web Toolkit
+dev-cpp/wt 4.11.0 4.11.1: Wt, C++ Web Toolkit
 dev-cpp/xtensor 0.24.4: header-only C++ library for numerical analysis with multi-dimensional arrays
 dev-cpp/xtl 0.7.5: Algorithms and containers used by the xtensor stack and the xeus stack
 dev-crystal/athena-negotiation 0.1.3 0.1.5: Framework agnostic content negotiation library
@@ -765,6 +769,7 @@ dev-python/proselint 0.13.0: A linter for prose
 dev-python/protego 0.3.0: Pure-Python robots.txt parser with support for modern conventions
 dev-python/proxy_tools 0.1.0_p1: Simple proxy (as in the GoF design pattern)
 dev-python/psycopg2cffi 2.9.0-r1: Implementation of the psycopg2 module using cffi. Compatible with Psycopg 2.5.
+dev-python/ptpython 3.0.29: Python REPL build on top of prompt-toolkit
 dev-python/py-nanoid 9999: Python Nanoid
 dev-python/pyagentx 0.4-r1: Python AgentX Implementation
 dev-python/pyclip 0.7.0-r1 9999: Python clipboard module
@@ -786,6 +791,7 @@ dev-python/pyodbc 5.1.0: Python ODBC library
 dev-python/pypandoc 1.14: Pypandoc provides a thin wrapper for pandoc, a universal document converter
 dev-python/pyperscan 0.3.0: An opinionated Python binding for Hyperscan
 dev-python/pyqtdarktheme 2.1.0: A flat dark theme for PySide and PyQt.
+dev-python/pyrime 0.0.3: rime for python
 dev-python/pyrr 0.10.3-r1: A cross platform utility library for ModernGL
 dev-python/pysnooper 1.2.0: Never use print for debugging again
 dev-python/pystardict 0.8-r1: Library for manipulating StarDict dictionaries from within Python
@@ -912,10 +918,10 @@ dev-util/dmg2img 9999 20201227: Convert Apple disk images to IMG format.
 dev-util/dockerfile-language-server 0.12.0 0.13.0: A language server for Dockerfiles
 dev-util/eclipse-parallel-bin 4.28: Eclipse IDE for Scientific Computing (C, C++, Fortran)
 dev-util/exercism 3.1.0 3.2.0: Command line client for https://exercism.io
-dev-util/find-work 0.7.0 0.91.0 0.91.1 9999: Personal advice utility for Gentoo package maintainers
-dev-util/find-work-bugzilla 0.2.0 0.2.1: Personal advice utility for Gentoo package maintainers: Bugzilla plugin
-dev-util/find-work-pkgcheck 0.2.0 0.2.1: Personal advice utility for Gentoo package maintainers: pkgcheck plugin
-dev-util/find-work-repology 0.2.0 0.2.1: Personal advice utility for Gentoo package maintainers: Repology plugin
+dev-util/find-work 0.91.1 0.91.2 9999: Personal advice utility for Gentoo package maintainers
+dev-util/find-work-bugzilla 0.2.1 0.2.2: Personal advice utility for Gentoo package maintainers: Bugzilla plugin
+dev-util/find-work-pkgcheck 0.2.1 0.2.1-r1: Personal advice utility for Gentoo package maintainers: pkgcheck plugin
+dev-util/find-work-repology 0.2.1 0.2.1-r1: Personal advice utility for Gentoo package maintainers: Repology plugin
 dev-util/fnm 1.37.1: Fast and simple Node.js version manager
 dev-util/fortls 2.13.0 3.0.0 3.1.1 3.1.2: Fortran Language Server (fortls)
 dev-util/fortran-test-drive 0.4.0 0.5.0: The simple testing framework (for Fortran)
@@ -940,7 +946,7 @@ dev-util/ocamlformat 0.26.2 0.26.2-r1: Auto-formatter for OCaml code
 dev-util/ocp-indent 1.8.2: Indentation tool for OCaml, to be used from editors like Emacs and Vim.
 dev-util/pcpp 1.30: A C99 preprocessor written in pure Python
 dev-util/pifpaf 3.2.1 3.2.3: Suite of tools and fixtures to manage daemons for testing
-dev-util/pmbootstrap 2.3.1: Helper tool for developing and building postmarketOS
+dev-util/pmbootstrap 2.3.3: Helper tool for developing and building postmarketOS
 dev-util/prysk 0.20.0: Functional testing framework for command line applications (cram fork)
 dev-util/qshaderedit 0.1.5: Multiplatform shader editor inspired by Apple's OpenGL Shader Builder
 dev-util/quilttools 0.3-r1: Mailbox to quilt series converter
@@ -949,6 +955,7 @@ dev-util/rpi-imager 1.8.5: Raspberry Pi Imaging Utility
 dev-util/rust-rover 2024.2.1: A feature-rich Rust IDE with timely support by JetBrarins
 dev-util/rust-script 0.35.0: Command-line tool to run Rust scripts which can make use of crates
 dev-util/rye 0.42.0: a Hassle-Free Python Experience
+dev-util/scc 3.4.0: scc is a very fast accurate code counter
 dev-util/shellspec 0.28.1-r3 9999: A full-featured BDD unit testing framework for all POSIX shells
 dev-util/spi-tools 1.0.2: Simple command line tools to help using Linux spidev devices
 dev-util/stripe-cli 9999: A command-line tool for Stripe
@@ -1001,7 +1008,7 @@ games-engines/fs2_open 23.2.1-r1 24.0.2: FreeSpace2 Source Code Project game eng
 games-engines/instead 3.3.5 3.4.1 9999: INSTEAD text-based quest game engine
 games-engines/nxengine-evo 2.6.5_p1-r1: rewrite of the jump-and-run platformer Doukutsu Monogatari(Cave Story)
 games-engines/ponscripter-fork 3.0.2: Fork of the Ponscripter visual novel engine to take advantage of SDL2
-games-fps/assaultcube 1.3.0.2: Free multiplayer FPS based on the Cube engine
+games-fps/assaultcube 1.3.0.2-r1: Free multiplayer FPS based on the Cube engine
 games-fps/crispy-doom 5.12.0 6.0: A limit-removing enhanced-resolution Doom source port based on Chocolate Doom
 games-fps/etlegacy 2.82.0: Wolfenstein: Enemy Territory 2.60b compatible client/server
 games-fps/openspades 0.1.3: Open-source voxel FPS
@@ -1049,6 +1056,7 @@ games-util/samrewritten 9999 202008: Steam Achievement Manager For Linux
 games-util/sdl2-gamepad-mapper 0.0.8-r1: GUI application to generate an SDL2 mapping string from a generic controller
 games-util/steamtinkerlaunch 12.0: Wrapper script for Steam custom launch options
 games-util/xivlauncher 1.1.1: Custom Launcher for Final Fantasy XIV Online (Crossplatform rewrite)
+games-util/xone 0.3_p20240425: Linux kernel driver for Xbox One and Xbox Series X|S accessories
 gnome-extra/commit 4.1-r1: Commit message editor
 gnome-extra/extension-manager 0.5.1 9999: A native tool for browsing, installing, and managing GNOME Shell Extensions
 gnome-extra/iio-sensor-proxy 3.3 3.5: IIO sensors to D-Bus proxy
@@ -1105,6 +1113,7 @@ gui-apps/hyprsunset 9999: An application to enable a blue-light filter on Hyprla
 gui-apps/hyprswitch 1.3.1: A CLI/GUI that allows switching between windows in Hyprland
 gui-apps/intiface-central-bin 2.6.0 2.6.4: Buttplug frontend application
 gui-apps/ironbar 0.16.0-r1: Customisable Wayland gtk bar written in Rust
+gui-apps/koi 0.3.1: Theme scheduling for the KDE Plasma Desktop
 gui-apps/lan-mouse 0.7.3-r1: Software KVM Switch / mouse & keyboard sharing software for Local Area Networks
 gui-apps/lemurs 0.3.2: A TUI Display/Login Manager
 gui-apps/lswt 1.0.4-r1 2.0.0 9999: List Wayland toplevels
@@ -1434,7 +1443,7 @@ net-libs/ulfius 2.7.15: HTTP Framework for REST Applications in C
 net-libs/usockets 0.8.8 9999: tiny eventing, networking & crypto for async applications
 net-libs/yder 1.4.20-r1: Logging library for C applications
 net-mail/dovecot-fts-flatcurve 1.0.5: Dovecot FTS plugin to enable message indexing using Xapian
-net-mail/dovecot-fts-xapian 1.5.9 1.7.6 1.7.9 1.7.10 1.7.11 1.7.12 1.7.14 9999: Dovecot FTS plugin backed by Xapian
+net-mail/dovecot-fts-xapian 1.5.9 1.7.6 1.7.9 1.7.10 1.7.11 1.7.12 1.7.14 1.7.17 9999: Dovecot FTS plugin backed by Xapian
 net-mail/hydroxide 0.2.27 0.2.28 0.2.29 9999: A third-party, open-source ProtonMail CardDAV, IMAP and SMTP bridge
 net-mail/pop 0.2.0: Send emails from your terminal
 net-misc/FORT-validator 1.5.4-r2 1.6.1-r2 1.6.2-r2: FORT validator is an open source RPKI validator
@@ -1491,6 +1500,7 @@ net-news/gfeeds 2.2.0-r1 2.2.0-r2 2.2.0-r3: An RSS/Atom feed reader for GNOME.
 net-news/newsflash 3.1.6: Feed Reader written in GTK
 net-news/newsraft 0.25 0.26 0.27 9999: A lightweight feed reader with ncurses user interface inspired by Newsboat.
 net-nntp/inn 2.7.1: InterNetNews - the Internet meets Netnews
+net-nntp/nzb-monkey-go 0.1.16: Golang version of the NZB Monkey with included NZB direct search
 net-nntp/pan 0.159-r1 0.160: A newsreader for GNOME
 net-p2p/bisq-bin 1.9.14-r1: The decentralized bitcoin exchange (non-atomic, with arbitration)
 net-p2p/dogecoin-qt 1.14.8 9999: Dogecoin Core Qt for desktop. Downloaded blockchain is under 2.2GB. Much secure.
@@ -1507,10 +1517,10 @@ net-proxy/MTProxy 3.0.4-r1: Community fork of MTProxy
 net-proxy/byedpi 0.14.1 0.15 9999: Bypass DPI SOCKS proxy
 net-proxy/ngrok-bin 3.10.0: ngrok is a reverse proxy, firewall, and API gateway
 net-proxy/snowflake 2.8.1 2.9.2: Pluggable Transport using WebRTC, inspired by Flashproxy
-net-voip/baresip 3.14.0 3.15.0 3.16.0: Baresip is a portable and modular SIP User-Agent
+net-voip/baresip 3.15.0 3.16.0 3.17.0: Baresip is a portable and modular SIP User-Agent
 net-voip/discover-overlay 0.6.9-r1 0.7.4: Yet another Discord overlay for Linux written in Python using GTK3
 net-voip/gnome-calls 45.0 46.3: Phone dialer and call handler
-net-voip/re 3.14.0 3.15.0 3.16.0: Generic library for real-time communications with async IO support
+net-voip/re 3.15.0 3.16.0 3.17.0: Generic library for real-time communications with async IO support
 net-voip/vvmd 0.8-r1: vvmd is a lower level daemon that retrieves Visual Voicemail
 net-vpn/cloudflare-warp 2024.2.62-r2 2024.4.133-r1: Cloudflare Warp Client
 net-vpn/fastd 22: A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
@@ -1611,6 +1621,7 @@ sys-apps/drm_info 2.6.0: Small utility to dump info about DRM devices
 sys-apps/flashprog 1.2: Utility for identifying, reading, writing, verifying and erasing flash chips.
 sys-apps/fselect 0.8.6: Find files with SQL-like queries
 sys-apps/hex 0.4.2 0.5.0 0.6.0: Futuristic take on hexdump
+sys-apps/hexyl 0.15.0: A command-line hex viewer
 sys-apps/lact 0.5.6: Linux AMDGPU Controller
 sys-apps/loclone 0.1.0: A tool for creating CoW snapshots on XFS
 sys-apps/lr 1.6: list files, recursively
@@ -1620,6 +1631,7 @@ sys-apps/nvimpager 0.12.0: Use nvim as a pager to view manpages, diff, etc with 
 sys-apps/openSeaChest 23.12 24.08.1: SeaGate's open source harddrive control utilities
 sys-apps/ov 0.11.2 0.32.0: Feature-rich terminal pager
 sys-apps/pnpm-bin 9.0.6 9.5.0 9.6.0: Fast, disk space efficient package manager, alternative to npm and yarn
+sys-apps/qdiskinfo 0.3: CrystalDiskInfo alternative for Linux
 sys-apps/qemu-openrc 0.10.0 0.11.1 9999: OpenRC init script for QEMU/KVM
 sys-apps/qjournalctl 0.6.2: Qt-based GUI for systemd's journalctl command
 sys-apps/sampler 1.1.0: visualizer for shell commands, executions and alerting
@@ -1729,7 +1741,7 @@ www-misc/kiwix-desktop 2.3.1: cross-platform viewer/manager for ZIM archives
 www-misc/libkiwix 12.1.0-r1 13.1.0: Kiwix software suite core: code shared by all Kiwix ports
 www-misc/waldl 0.0.1_pre20211112: Browse and download wallpapers from wallhaven.cc using sxiv
 www-misc/wyebadblock 1.0.0: An adblock extension for wyeb, also webkit2gtk browsers.
-www-plugins/firefoxpwa 2.12.4 2.12.5: A tool to install, manage and use PWAs in Mozilla Firefox (native component)
+www-plugins/firefoxpwa 2.12.4 2.12.5 2.13.1: A tool to install, manage and use PWAs in Mozilla Firefox (native component)
 www-servers/hinsightd 0.9.17 9999: hinsightd a http/1.1 webserver with (hopefully) minimal goals
 www-servers/quark 9999: A small, GET-only static HTTP server
 x11-apps/lightdm-gtk-greeter-settings 1.2.2-r2: Configuration tool for the LightDM GTK Greeter

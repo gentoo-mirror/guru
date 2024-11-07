@@ -1,0 +1,15 @@
+BDEPEND=dev-qt/qttools:6
+DEFINED_PHASES=configure install postinst postrm preinst prepare
+DEPEND=x11-libs/libxcb:= dev-qt/qtbase:6[gui,network,widgets] dev-qt/qt5compat:6
+DESCRIPTION=A cross-platform reimplementation of Notepad++ based on Qt
+EAPI=8
+HOMEPAGE=https://github.com/dail8859/NotepadNext
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=qmake-utils xdg
+KEYWORDS=~amd64
+LICENSE=GPL-3 MIT LGPL-2.1 MIT-no-machine-learning || ( MPL-1.1 GPL-2+ LGPL-2.1+ )
+RDEPEND=x11-libs/libxcb:= dev-qt/qtbase:6[gui,network,widgets] dev-qt/qt5compat:6
+SLOT=0
+SRC_URI=https://github.com/dail8859/NotepadNext/archive/08c49fe91c013dd8a9608a2e8501e5e29a02eb81.tar.gz -> notepadnext-0.8_p20240828.tar.gz https://github.com/itay-grudev/SingleApplication/archive/494772e98cef0aa88124f154feb575cc60b08b38.tar.gz -> SingleApplication-494772e98cef0aa88124f154feb575cc60b08b38.tar.gz https://gitlab.freedesktop.org/uchardet/uchardet/-/archive/edae8e81cfb8092496f94da1a306c4c9f0ce32bb.tar.gz -> uchardet-edae8e81cfb8092496f94da1a306c4c9f0ce32bb.tar.gz https://github.com/editorconfig/editorconfig-core-qt/archive/ee967262db4fdbd735f9971cc0c90cf4f3100d3a.tar.gz -> editorconfig-core-qt-ee967262db4fdbd735f9971cc0c90cf4f3100d3a.tar.gz https://github.com/githubuser0xFFFF/Qt-Advanced-Docking-System/archive/952131a1e9730636e0ee87e99fcc8bdb259f6451.tar.gz -> Qt-Advanced-Docking-System-952131a1e9730636e0ee87e99fcc8bdb259f6451.tar.gz https://github.com/alex-spataru/QSimpleUpdater/archive/791c8e2d148943f1f3147753591e9d5bcf637c15.tar.gz -> QSimpleUpdater-791c8e2d148943f1f3147753591e9d5bcf637c15.tar.gz
+_eclasses_=toolchain-funcs	d3d42b22a610ce81c267b644bcec9b87	multilib	b2a329026f2e404e9e371097dda47f96	qmake-utils	a8dd17b1d94586164f5e3fc12b1c6b81	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575
+_md5_=9309e47eb46b26732c90fd72b602c743
