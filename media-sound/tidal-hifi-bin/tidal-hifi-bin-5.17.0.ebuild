@@ -22,6 +22,7 @@ S="${WORKDIR}/${MY_PN}-${PV}"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
+IUSE="wayland"
 
 RDEPEND="
 	>=app-accessibility/at-spi2-core-2.46.0:2
@@ -77,7 +78,16 @@ src_prepare() {
 src_install() {
 	doicon -s 256 "${FILESDIR}/${MY_PN}.png"
 
-	make_desktop_entry "/usr/bin/tidal-hifi" "TIDAL Hi-Fi" ${MY_PN} "Network;AudioVideo;Audio;Video"
+	local EXEC_EXTRA_FLAGS=()
+	if use wayland; then
+		EXEC_EXTRA_FLAGS+=( "--ozone-platform-hint=auto" )
+	fi
+
+	sed "s|@exec_extra_flags@|${EXEC_EXTRA_FLAGS[*]}|g" \
+		"${FILESDIR}/tidal-hifi.desktop" \
+		> "${T}/tidal-hifi.desktop" || die
+
+	domenu "${T}/tidal-hifi.desktop"
 
 	exeinto "${DESTDIR}"
 
