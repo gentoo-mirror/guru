@@ -1,6 +1,6 @@
-BDEPEND=clang? ( sys-devel/clang:= ) app-alternatives/ninja >=dev-build/cmake-3.20.5
+BDEPEND=clang? ( sys-devel/clang ) app-alternatives/ninja >=dev-build/cmake-3.20.5
 DEFINED_PHASES=compile configure install postinst prepare test unpack
-DEPEND=app-arch/lz4 <dev-lang/lua-5.1.6:5.1 dev-libs/jansson media-libs/freetype:2 media-libs/glu media-libs/libjpeg-turbo media-libs/libpng media-libs/libsdl2 media-libs/libtheora media-libs/libvorbis media-libs/mesa media-libs/openal media-video/ffmpeg
+DEPEND=app-arch/lz4:= <dev-lang/lua-5.1.6:5.1 dev-libs/jansson:= media-libs/freetype:2 media-libs/glu media-libs/libjpeg-turbo:= media-libs/libpng:= media-libs/libsdl2[X] media-libs/libtheora media-libs/libvorbis media-libs/mesa media-libs/openal media-video/ffmpeg:= x11-libs/libX11
 DESCRIPTION=FreeSpace2 Source Code Project game engine
 EAPI=8
 HOMEPAGE=https://github.com/scp-fs2open/fs2open.github.com/
@@ -8,7 +8,8 @@ INHERIT=cmake
 IUSE=clang debug discord
 KEYWORDS=~amd64
 LICENSE=Unlicense MIT Boost-1.0
+RDEPEND=app-arch/lz4:= <dev-lang/lua-5.1.6:5.1 dev-libs/jansson:= media-libs/freetype:2 media-libs/glu media-libs/libjpeg-turbo:= media-libs/libpng:= media-libs/libsdl2[X] media-libs/libtheora media-libs/libvorbis media-libs/mesa media-libs/openal media-video/ffmpeg:= x11-libs/libX11
 SLOT=0
 SRC_URI=https://github.com/scp-fs2open/fs2open.github.com/archive/refs/tags/release_24_0_2.tar.gz -> fs2_open-24.0.2.tar.gz https://github.com/scp-fs2open/libRocket/archive/ecd648a43aff8a9f3daf064d75ca5725237d5b38.tar.gz -> fs2_open-24.0.2-ext_libRocket.tar.gz https://github.com/asarium/cmake-modules/archive/7cef9577d6fc35057ea57f46b4986a8a28aeff50.tar.gz -> fs2_open-24.0.2-ext_rpavlik-cmake-modules.tar.gz
 _eclasses_=toolchain-funcs	d3d42b22a610ce81c267b644bcec9b87	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	f14aba975c94ccaa9f357a27e3b17ffe	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	10a50dfaf728b802fcfd37f8d0da9056
-_md5_=30af56c8bd09ead839e936fded970fa8
+_md5_=8811e70180840dbd2fae7ae231d2cc13
