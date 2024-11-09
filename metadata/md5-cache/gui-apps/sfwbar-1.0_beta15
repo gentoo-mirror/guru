@@ -9,8 +9,8 @@ INHERIT=meson xdg
 IUSE=X mpd pulseaudio alsa
 KEYWORDS=~amd64
 LICENSE=GPL-3
-RDEPEND=dev-libs/glib:2 dev-libs/json-c:= dev-libs/wayland gui-libs/gtk-layer-shell >=x11-libs/gtk+-3.22.0:3[introspection,wayland] X? ( x11-libs/libxkbcommon ) mpd? ( media-libs/libmpdclient ) pulseaudio? ( media-libs/libpulse[glib] ) alsa? ( media-libs/alsa-lib ) virtual/freedesktop-icon-theme
+RDEPEND=dev-libs/glib:2 dev-libs/json-c:= dev-libs/wayland gui-libs/gtk-layer-shell >=x11-libs/gtk+-3.22.0:3[introspection,wayland] X? ( x11-libs/libxkbcommon ) mpd? ( media-libs/libmpdclient ) pulseaudio? ( media-libs/libpulse[glib] ) alsa? ( media-libs/alsa-lib ) virtual/freedesktop-icon-theme x11-libs/cairo x11-libs/gdk-pixbuf x11-libs/pango
 SLOT=0
 SRC_URI=https://github.com/LBCrion/sfwbar/archive/v1.0_beta15.tar.gz -> sfwbar-1.0_beta15.tar.gz
 _eclasses_=toolchain-funcs	d3d42b22a610ce81c267b644bcec9b87	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	f14aba975c94ccaa9f357a27e3b17ffe	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	2fee95c11e5f883024588d4837db6802	meson	99466844dd8d4fcfb07578a76f5a9922	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575
-_md5_=5d3ced49137113e8a9b95ec162773500
+_md5_=c6c9545ae3fc4929b356e1d17e056ad1
