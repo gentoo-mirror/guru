@@ -16,23 +16,24 @@ S="${WORKDIR}/${MY_P}"
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="X wayland lto debug"
+IUSE="alsa debug lto wayland X"
 
 RDEPEND="X? ( x11-libs/libXext )
 		wayland? ( dev-libs/wayland-protocols )
-		media-libs/alsa-lib
+		alsa? ( media-libs/alsa-lib )
 "
 
 DEPEND="${RDEPEND}"
 
 src_configure() {
 	local mycmakeargs=(
-	"-DCMAKE_INSTALL_LIBDIR=$(get_libdir)"
-	"-DCMAKE_DISABLE_FIND_PACKAGE_X11=$(usex !X)"
-	"-DCMAKE_C_FLAGS=$(usex debug "${CFLAGS}" "${CFLAGS} -DNDEBUG")"
-	"-DCMAKE_CXX_FLAGS=$(usex debug "${CXXFLAGS}" "${CXXFLAGS} -DNDEBUG")"
-	"-DNO_WAYLAND=$(usex !wayland)"
-	"-DNO_LTO=$(usex !lto)"
+		"-DCMAKE_INSTALL_LIBDIR=$(get_libdir)"
+		"-DCMAKE_C_FLAGS=$(usex debug "${CFLAGS}" "${CFLAGS} -DNDEBUG")"
+		"-DCMAKE_CXX_FLAGS=$(usex debug "${CXXFLAGS}" "${CXXFLAGS} -DNDEBUG")"
+		"-DNO_WAYLAND=$(usex !wayland)"
+		"-DNO_X11=$(usex !X)"
+		"-DNO_LTO=$(usex !lto)"
+		"-DNO_ALSA=$(usex !alsa)"
 	)
 	cmake_src_configure
 }

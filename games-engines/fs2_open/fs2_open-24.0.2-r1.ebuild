@@ -1,9 +1,12 @@
-# Copyright 2022 Gentoo Authors
+# Copyright 2022-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 inherit cmake
+
+DESCRIPTION="FreeSpace2 Source Code Project game engine"
+HOMEPAGE="https://github.com/scp-fs2open/fs2open.github.com/"
 
 # Replace "." with "_" in version
 _PV=${PV//./_}
@@ -12,11 +15,9 @@ _PV=${PV//./_}
 HASH_LIBROCKET="ecd648a43aff8a9f3daf064d75ca5725237d5b38"
 HASH_CMAKE_MODULES="7cef9577d6fc35057ea57f46b4986a8a28aeff50"
 
-DESCRIPTION="FreeSpace2 Source Code Project game engine"
-HOMEPAGE="https://github.com/scp-fs2open/fs2open.github.com/"
 SRC_URI="
 	https://github.com/scp-fs2open/fs2open.github.com/archive/refs/tags/release_${_PV}.tar.gz -> ${P}.tar.gz
-	https://github.com/asarium/libRocket/archive/${HASH_LIBROCKET}.tar.gz -> ${P}-ext_libRocket.tar.gz
+	https://github.com/scp-fs2open/libRocket/archive/${HASH_LIBROCKET}.tar.gz -> ${P}-ext_libRocket.tar.gz
 	https://github.com/asarium/cmake-modules/archive/${HASH_CMAKE_MODULES}.tar.gz -> ${P}-ext_rpavlik-cmake-modules.tar.gz
 "
 
@@ -25,29 +26,37 @@ S="${WORKDIR}/fs2open.github.com-release_${_PV}"
 LICENSE="Unlicense MIT Boost-1.0"
 SLOT="0"
 KEYWORDS="~amd64"
+
 IUSE="clang debug discord"
 
 DEPEND="
-	app-arch/lz4
+	app-arch/lz4:=
 	<dev-lang/lua-5.1.6:5.1
-	dev-libs/jansson
+	dev-libs/jansson:=
 	media-libs/freetype:2
 	media-libs/glu
-	media-libs/libjpeg-turbo
-	media-libs/libpng
-	media-libs/libsdl2
+	media-libs/libjpeg-turbo:=
+	media-libs/libpng:=
+	media-libs/libsdl2[X]
 	media-libs/libtheora
 	media-libs/libvorbis
 	media-libs/mesa
 	media-libs/openal
-	media-video/ffmpeg
+	media-video/ffmpeg:=
+	x11-libs/libX11
 "
 RDEPEND="${DEPEND}"
-BDEPEND="clang? ( sys-devel/clang )"
+BDEPEND="
+	clang? ( sys-devel/clang )
+"
 PATCHES=(
+	"${FILESDIR}/${P}-deps-fix.patch"
 	"${FILESDIR}/${P}-dont-build-lz4.patch"
-	"${FILESDIR}/${P}-dont-ignore-user-cflags.patch"
 	"${FILESDIR}/${P}-make-arch-independent.patch"
+	# bug 859982
+	"${FILESDIR}/${P}-fix-odr.patch"
+	# bug 917418
+	"${FILESDIR}/${P}-respect-flags.patch"
 )
 
 CMAKE_BUILD_TYPE=Release

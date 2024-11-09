@@ -15,7 +15,6 @@ KEYWORDS="~amd64"
 IUSE="test"
 
 BDEPEND="
-	dev-cpp/fast_float
 	test? ( dev-cpp/gtest )
 "
 
@@ -26,6 +25,7 @@ src_configure() {
 		-DSCN_BENCHMARKS=OFF
 		-DSCN_BENCHMARKS_BINARYSIZE=OFF
 		-DSCN_BENCHMARKS_BUILDTIME=OFF
+		-DSCN_DISABLE_FAST_FLOAT=ON
 		-DSCN_DOCS=OFF
 		-DSCN_EXAMPLES=$(usex test ON OFF)
 		-DSCN_TESTS=$(usex test ON OFF)
