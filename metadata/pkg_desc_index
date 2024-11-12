@@ -141,7 +141,7 @@ app-containers/arachsys-containers 1.7: Simple containers using Linux user names
 app-containers/nvidia-container-toolkit 1.14.6 1.16.1 9999: NVIDIA container runtime toolkit
 app-containers/pods 2.1.0_pre20240215-r4: Keep track of your podman containers
 app-containers/slim 1.40.11: Inspect, optimize and debug containers
-app-containers/waydroid 1.4.2 1.4.2-r1 1.4.2-r2: Container-based approach to boot a full Android system on Linux systems
+app-containers/waydroid 1.4.2 1.4.2-r1 1.4.2-r2 1.4.3: Container-based approach to boot a full Android system on Linux systems
 app-containers/waydroid-images 9999: Manage images for app-containers/waydroid using portage
 app-crypt/PBinCLI 0.3.5 0.3.5-r1: PBinCLI is a command line client for PrivateBin written in Python 3
 app-crypt/autofirma 1.8.2 1.8.3: Spanish government's electronic signature application for online procedures
@@ -226,7 +226,7 @@ app-misc/catt 0.12.12 0.12.12-r1: Send videos from many, many online sources to 
 app-misc/chayang 0.1.0: Gradually dim the screen.
 app-misc/cheat 4.2.3 4.3.3-r1: cheat allows you to create and view interactive cheatsheets on the command-line
 app-misc/clifm 1.11 1.13 1.16 1.18 9999: The command line file manager
-app-misc/clipboard 0.9.1: Cut, copy, and paste anything in your terminal
+app-misc/clipboard 0.9.1-r1: Cut, copy, and paste anything in your terminal
 app-misc/cliphist 0.6.1: Wayland clipboard manager with support for multimedia
 app-misc/corectrl 1.4.1 1.4.2 9999: Core control application
 app-misc/cpufetch 1.05-r1: Simplistic yet fancy CPU architecture fetching tool
@@ -402,7 +402,6 @@ dev-cpp/blurhash 0.2.0 0.2.0-r1: C++ blurhash encoder/decoder
 dev-cpp/coeurl 0.3.0 0.3.1: A simple async wrapper around CURL for C++
 dev-cpp/cpp-jwt 1.5_pre20220727: JSON Web Token library for C++
 dev-cpp/cpprestsdk 2.10.19-r3: A Microsoft project for cloud-based client-server communication.
-dev-cpp/cpptoml 0.1.1: Header-only library for parsing TOML
 dev-cpp/cpptrace 0.6.3 0.7.0 0.7.2 9999: Simple, portable, and self-contained stacktrace library for C++
 dev-cpp/dpp 10.0.23 10.0.24 10.0.25 10.0.29 10.0.30 10.0.33: Lightweight C++ Discord bot library
 dev-cpp/drogon 1.9.5 1.9.6: C++14/17 based HTTP web application framework
@@ -473,7 +472,7 @@ dev-embedded/esp-coredump 1.10.0 1.11.0: Utility that helps users to retrieve an
 dev-embedded/esp-idf 5.3.1-r1: Espressif IoT Development Framework
 dev-embedded/esp-idf-kconfig 2.2.0 2.3.0: Kconfig tooling for esp-idf
 dev-embedded/esp-idf-monitor 1.4.0 1.5.0: Python object-oriented database
-dev-embedded/esp-idf-nvs-partition-gen 0.1.3: Parses ESP-IDF panic handler output acts as a GDB server over stdin/stdout
+dev-embedded/esp-idf-nvs-partition-gen 0.1.3 0.1.4: Parses ESP-IDF panic handler output acts as a GDB server over stdin/stdout
 dev-embedded/esp-idf-panic-decoder 1.1.0 1.2.1 1.2.1-r1: Parses ESP-IDF panic handler output acts as a GDB server over stdin/stdout
 dev-embedded/esp-idf-size 1.5.0 1.6.0: Firmware size analysis for ESP-IDF
 dev-embedded/freertos-gdb 1.0.2 1.0.3: Python module for operating with freeRTOS-kernel objects in GDB
@@ -502,8 +501,8 @@ dev-java/corretto-bin 8.412.08.1 11.0.23.9.1 17.0.11.9.1 21.0.3.9.1 22.0.1.8.1: 
 dev-java/microsoft-openjdk-bin 11.0.22 17.0.10 21.0.2: Prebuilt Java JDK binaries provided by Microsoft
 dev-lang/cc65 2.19-r3 9999-r1: Cross-development package for 65(C)02 systems
 dev-lang/crystal-bin 1.13.1 1.14.0: The Crystal Programming Language
-dev-lang/fbc 1.07.3 1.08.1: A free/open source, multi-platform BASIC compiler.
-dev-lang/fbc-bootstrap 1.07.3 1.08.1: Bootstrap package for dev-lang/fbc
+dev-lang/fbc 1.10.1: A free/open source, multi-platform BASIC compiler.
+dev-lang/fbc-bootstrap 1.10.1: Bootstrap package for dev-lang/fbc
 dev-lang/gnu-apl 1.8: GNU interpreter for the APL programming language
 dev-lang/hare 0.24.0 0.24.2 9999: The Hare systems programming language
 dev-lang/harec 0.24.0 0.24.2 9999: The Hare compiler
@@ -527,7 +526,7 @@ dev-libs/fortran-shlex 1.0.1: Modern Fortran port of the tiny-regex-c library fo
 dev-libs/fortran-stdlib 0.2.1-r1 0.3.0 0.4.0 0.5.0 0.6.1 0.7.0 9999: A community driven standard library for (modern) Fortran
 dev-libs/fsst 0_pre20200830-r1: Fast Static Symbol Table: fast text compression that allows random access
 dev-libs/ftl 1.0_p20230220: The Fortran Template Library (FTL) is a general purpose library for Fortran 2003
-dev-libs/gbinder 1.1.40 9999: GLib-style interface to binder
+dev-libs/gbinder 1.1.40 1.1.41 9999: GLib-style interface to binder
 dev-libs/gmobile 0.1.0 0.2.1: Mobile related helpers for glib based projects
 dev-libs/gpds 1.9.0: A general purpose data serializer
 dev-libs/hts_engine 1.10: HMM-based speech synthesis system (HTS) engine and API
@@ -541,7 +540,7 @@ dev-libs/libcli 1.10.7: Shared C library to include Cisco-like CLI into other so
 dev-libs/libdatrie 0.2.13-r1: Double-Array Trie Library
 dev-libs/libdbf 0.0.1: Library to read the content of dBASE III, IV, and 5.0 files
 dev-libs/libdwarf 0.9.1 0.10.1 0.11.0: The DWARF Debugging Information Format
-dev-libs/libglibutil 1.0.76 1.0.79 9999: Library of glib utilities from sailfishos project
+dev-libs/libglibutil 1.0.79 9999: Library of glib utilities from sailfishos project
 dev-libs/librepo 1.18.1: Repodata downloading library
 dev-libs/libsignal-ffi 0.44.0 0.46.0 0.51.0: A C ABI library which exposes Signal protocol logic
 dev-libs/libsolv 0.7.30-r1: Library for solving packages and reading repositories
@@ -683,7 +682,7 @@ dev-python/exif 1.6.0: Read and modify image EXIF metadata using Python.
 dev-python/faust-cchardet 2.1.18 2.1.19: universal character encoding detector
 dev-python/flask-restx 1.3.0: Framework API development with Flask
 dev-python/fontawesomefree 6.5.1: Font Awesome Free
-dev-python/gbinder 1.1.2-r1 9999: Python bindings for libgbinder
+dev-python/gbinder 1.1.2-r2 9999: Python bindings for libgbinder
 dev-python/gemcall 0.9.1 0.9.2: A library and CLI tool for making gemini requests
 dev-python/glcontext 3.0.0: Modern OpenGL binding for python
 dev-python/glfw 2.7.0: Python bindings for GLFW
@@ -772,7 +771,7 @@ dev-python/psycopg2cffi 2.9.0-r1: Implementation of the psycopg2 module using cf
 dev-python/ptpython 3.0.29: Python REPL build on top of prompt-toolkit
 dev-python/py-nanoid 9999: Python Nanoid
 dev-python/pyagentx 0.4-r1: Python AgentX Implementation
-dev-python/pyclip 0.7.0-r1 9999: Python clipboard module
+dev-python/pyclip 0.7.0-r2 9999: Python clipboard module
 dev-python/pydantic-settings 2.6.0 2.6.1: Settings management using Pydantic
 dev-python/pydispatcher 2.0.7: Multi-producer-multi-consumer signal dispatching mechanism
 dev-python/pydub 0.25.1: Manipulate audio with an simple and easy high level interface
@@ -946,7 +945,7 @@ dev-util/ocamlformat 0.26.2 0.26.2-r1: Auto-formatter for OCaml code
 dev-util/ocp-indent 1.8.2: Indentation tool for OCaml, to be used from editors like Emacs and Vim.
 dev-util/pcpp 1.30: A C99 preprocessor written in pure Python
 dev-util/pifpaf 3.2.1 3.2.3: Suite of tools and fixtures to manage daemons for testing
-dev-util/pmbootstrap 2.3.3: Helper tool for developing and building postmarketOS
+dev-util/pmbootstrap 3.0.0: Helper tool for developing and building postmarketOS
 dev-util/prysk 0.20.0: Functional testing framework for command line applications (cram fork)
 dev-util/qshaderedit 0.1.5: Multiplatform shader editor inspired by Apple's OpenGL Shader Builder
 dev-util/quilttools 0.3-r1: Mailbox to quilt series converter
@@ -1238,7 +1237,7 @@ media-gfx/grafx2 2.7.2978 2.7.2978-r100: A pixelart-oriented painting program
 media-gfx/mayo 0.8.0 0.8.0-r2: Opensource 3D CAD viewer and converter
 media-gfx/nsxiv 32 9999: Neo (or New or Not) Simple (or Small or Suckless) X Image Viewer
 media-gfx/oda-file-converter 23.5.0.0: For converting between different versions of .dwg and .dxf
-media-gfx/pdf4qt 1.4.0.0 9999: Open source PDF WYSIWYG editor based on Qt
+media-gfx/pdf4qt 1.4.0.0-r1 9999: Open source PDF WYSIWYG editor based on Qt
 media-gfx/qview 5.0 6.1-r1: Practical and minimal image viewer
 media-gfx/sic 0.22.4: Accessible image processing and conversion from the terminal tool.
 media-gfx/silicon 0.5.2: Create beautiful image of your code
@@ -1254,12 +1253,12 @@ media-libs/alsa-ucm-pinephone 1.2.6.3: ALSA ucm configuration files for the Pine
 media-libs/alvr 16.0.0: ALVR is an open source remote VR display for the Oculus Go/Quest
 media-libs/amdvlk 2024.3.3: AMD Open Source Driver for Vulkan
 media-libs/amdvlk-bin 2021.2.5-r1 2023.3.3 2024.4.1: AMD Open Source Driver for Vulkan: official binary version
-media-libs/blend2d 0.11.4-r1 9999: 2D vector graphics library powered by a JIT compiler.
+media-libs/blend2d 0.11.4-r2 9999: 2D vector graphics library powered by a JIT compiler.
 media-libs/dr_flac 0.12.42: Single-header FLAC audio decoder library
 media-libs/dr_mp3 0.6.39-r1: Single-header MP3 audio decoder library
 media-libs/dr_wav 0.13.16-r1: Single-header WAV audio loader and writer library
 media-libs/gl4es 9999: OpenGL 2.1/1.5 to GL ES 2.0/1.1 translation library
-media-libs/glad 2.0.7 2.0.8: Multi-Language Vulkan/GL/GLES/EGL/GLX/WGL Loader-Generator
+media-libs/glad 2.0.8: Multi-Language Vulkan/GL/GLES/EGL/GLX/WGL Loader-Generator
 media-libs/glee 5.4.0 5.4.0-r1: OpenGL Easy Extension library
 media-libs/grok 11.0.0: World's Leading Open Source JPEG 2000 Codec
 media-libs/imgui 1.89.9-r3 1.91.1: Bloat-free graphical user interface library for C++
@@ -1300,7 +1299,7 @@ media-sound/ibniz 1.18-r1: virtual machine designed for extremely compact low-le
 media-sound/jacktrip 1.7.1-r1 2.4.0: Send JACK audio over a network
 media-sound/jriver 31.0.83: A cross-platform media center, famous for high quality of audio.
 media-sound/kew 2.4.4-r1: kew (/kjuː/) is a command-line music player for Linux.
-media-sound/lms 3.59.1 3.60.0: Lightweight Music Server.
+media-sound/lms 3.59.1 3.60.0 3.60.1: Lightweight Music Server.
 media-sound/loudgain 0.6.8-r1: Versatile ReplayGain 2.0 loudness normalizer
 media-sound/mopidy 3.4.2: An extensible music server written in Python.
 media-sound/mpd-mpris 0.3.1 0.4.0 0.4.1: An implementation of the MPRIS protocol for MPD.
@@ -1507,8 +1506,9 @@ net-nntp/pan 0.159-r1 0.160: A newsreader for GNOME
 net-p2p/bisq-bin 1.9.14-r1: The decentralized bitcoin exchange (non-atomic, with arbitration)
 net-p2p/dogecoin-qt 1.14.8 9999: Dogecoin Core Qt for desktop. Downloaded blockchain is under 2.2GB. Much secure.
 net-p2p/feather 2.6.7-r1 2.6.8 9999: A free, open-source Monero wallet
-net-p2p/fragments 3.0.0 3.0.1: Fragments is an easy to use BitTorrent client
+net-p2p/fragments 3.0.1: Fragments is an easy to use BitTorrent client
 net-p2p/gridcoin 5.4.8.0 5.4.8.0_p1: Proof-of-Stake based cryptocurrency that rewards BOINC computation
+net-p2p/ipfs-desktop-bin 0.39.0: A desktop client for IPFS. The IPFS's Native Application
 net-p2p/monero 0.17.3.2 0.18.3.3-r2 0.18.3.4-r1 9999: The secure, private, untraceable cryptocurrency
 net-p2p/monero-gui-bin 0.18.3.4-r1: An open-source GUI wallet developed by the Monero community.
 net-p2p/p2pool 4.0 4.1.1 9999: Decentralized pool for Monero mining
@@ -1521,7 +1521,7 @@ net-proxy/ngrok-bin 3.10.0: ngrok is a reverse proxy, firewall, and API gateway
 net-proxy/snowflake 2.8.1 2.9.2: Pluggable Transport using WebRTC, inspired by Flashproxy
 net-voip/baresip 3.15.0 3.16.0 3.17.0: Baresip is a portable and modular SIP User-Agent
 net-voip/discover-overlay 0.6.9-r1 0.7.4: Yet another Discord overlay for Linux written in Python using GTK3
-net-voip/gnome-calls 45.0 46.3: Phone dialer and call handler
+net-voip/gnome-calls 46.3 47.0: Phone dialer and call handler
 net-voip/re 3.15.0 3.16.0 3.17.0: Generic library for real-time communications with async IO support
 net-voip/vvmd 0.8-r1: vvmd is a lower level daemon that retrieves Visual Voicemail
 net-vpn/cloudflare-warp 2024.2.62-r2 2024.4.133-r1: Cloudflare Warp Client
@@ -1616,6 +1616,7 @@ sys-apps/asus-numpad 0.2-r1 9999: User-space driver for Asus numpad
 sys-apps/asus-touchpad-numpad-driver 0_pre20220311 9999: Feature-rich configurable Asus NumPad drivers
 sys-apps/bat-extras 2023.09.19 2023.09.19-r1 9999: Bash scripts that integrate bat with various command line tools.
 sys-apps/bustd 0.1.1: Process killer daemon for out-of-memory scenarios
+sys-apps/colortail 0.3.3 9999: tail command with colors
 sys-apps/corefreq 1.96.3: CPU monitoring software designed for the 64-bits Processors, like top
 sys-apps/dnf5 5.2.6.0: Command-line package manager
 sys-apps/dool 1.3.1-r1 1.3.2-r2 9999: Versatile replacement for vmstat, iostat and ifstat (clone of dstat)
@@ -1632,7 +1633,7 @@ sys-apps/mission-center 0.4.4-r2 0.5.2-r1: Monitor your CPU, Memory, Disk, Netwo
 sys-apps/nvimpager 0.12.0: Use nvim as a pager to view manpages, diff, etc with nvim's syntax highlighting.
 sys-apps/openSeaChest 23.12 24.08.1: SeaGate's open source harddrive control utilities
 sys-apps/ov 0.11.2 0.32.0: Feature-rich terminal pager
-sys-apps/pnpm-bin 9.0.6 9.5.0 9.6.0: Fast, disk space efficient package manager, alternative to npm and yarn
+sys-apps/pnpm-bin 9.5.0 9.6.0 9.12.3: Fast, disk space efficient package manager, alternative to npm and yarn
 sys-apps/qdiskinfo 0.3: CrystalDiskInfo alternative for Linux
 sys-apps/qemu-openrc 0.10.0 0.11.1 9999: OpenRC init script for QEMU/KVM
 sys-apps/qjournalctl 0.6.2: Qt-based GUI for systemd's journalctl command
@@ -1721,7 +1722,7 @@ www-apps/pleroma 2.7.0-r1 9999: ActivityPub social networking software compatibl
 www-apps/pleroma-fe 2.7.0 9999: Main frontend for www-apps/pleroma, inspired by qvitter
 www-apps/redlib 0.31.2-r1 0.34.0: Private front-end to Reddit
 www-apps/rimgo 1.2.1: An alternative frontend for Imgur. Originally based on rimgu.
-www-apps/sblg 0.5.12: A utility for creating static blogs
+www-apps/sblg 0.6.0: A utility for creating static blogs
 www-apps/snac 2.25 2.26: A simple, minimalistic ActivityPub instance
 www-apps/uwebsockets 20.14.0 20.62.0 9999: ultra fast, simple, secure & standards compliant web I/O
 www-apps/vaultwarden-web 2024.1.2b 2024.3.0 2024.3.1: Bitwarden web vault patched to make it work with Vaultwarden
@@ -1766,7 +1767,7 @@ x11-misc/i3-restore 4.1: A simple bash + python script to restore your i3 sessio
 x11-misc/i3-resurrect 1.4.5: Saving and restoring i3 workspaces
 x11-misc/i3lock-color 2.13.5: The world's most popular non-default computer lockscreen
 x11-misc/i3lock-fancy-rapid 0.0.0_pre20201109-r1 0.0.0_pre20210421: A faster implementation of i3lock-fancy
-x11-misc/i3status-rust 0.33.1: A feature-rich and resource-friendly replacement for i3status, written in Rust.
+x11-misc/i3status-rust 0.33.1-r1: A feature-rich and resource-friendly replacement for i3status, written in Rust.
 x11-misc/input-leap 9999: Share a mouse and keyboard between computers (fork of Barrier)
 x11-misc/ksnip 1.10.1: Ksnip is a Qt based cross-platform screenshot tool
 x11-misc/leftwm-theme 0.1.2: Theme mangager for LeftWM
