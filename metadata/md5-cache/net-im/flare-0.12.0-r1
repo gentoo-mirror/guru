@@ -1,0 +1,15 @@
+BDEPEND=dev-libs/glib:2 dev-util/blueprint-compiler sys-devel/gettext >=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array || ( dev-lang/rust-bin:1.82.0 dev-lang/rust:1.82.0 dev-lang/rust-bin:1.81.0 dev-lang/rust:1.81.0 dev-lang/rust-bin:1.80.1 dev-lang/rust:1.80.1 dev-lang/rust-bin:1.79.0 dev-lang/rust:1.79.0 dev-lang/rust-bin:1.77.1 dev-lang/rust:1.77.1 dev-lang/rust-bin:1.75.0 dev-lang/rust:1.75.0 dev-lang/rust-bin:1.74.1 dev-lang/rust:1.74.1 dev-lang/rust-bin:1.71.1 dev-lang/rust:1.71.1 )
+DEFINED_PHASES=compile configure install postinst postrm preinst setup test
+DEPEND=app-text/libspelling:1 >=dev-libs/glib-2.66:2 >=gui-libs/gtk-4.12:4[X] gui-libs/gtksourceview:5 >=gui-libs/libadwaita-1.4:1 media-libs/graphene x11-libs/cairo x11-libs/gdk-pixbuf:2 x11-libs/pango
+DESCRIPTION=Chat with your friends on Signal
+EAPI=8
+HOMEPAGE=https://mobile.schmidhuberj.de/flare https://gitlab.com/schmiddi-on-mobile/flare
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=gnome2-utils meson rust xdg
+KEYWORDS=~amd64
+LICENSE=AGPL-3 || ( 0BSD Apache-2.0 MIT ) || ( Apache-2.0 Apache-2.0-with-LLVM-exceptions MIT ) || ( Apache-2.0 BSD MIT ) || ( Apache-2.0 BSD-1 MIT ) || ( Apache-2.0 Boost-1.0 ) || ( Apache-2.0 CC0-1.0 ) || ( Apache-2.0 CC0-1.0 MIT-0 ) || ( Apache-2.0 ISC MIT ) || ( Apache-2.0 MIT ) || ( Apache-2.0 MIT ZLIB ) || ( MIT Unlicense ) Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD BSD-2 ISC MIT Unicode-DFS-2016 ZLIB openssl
+RDEPEND=app-text/libspelling:1 >=dev-libs/glib-2.66:2 >=gui-libs/gtk-4.12:4[X] gui-libs/gtksourceview:5 >=gui-libs/libadwaita-1.4:1 media-libs/graphene x11-libs/cairo x11-libs/gdk-pixbuf:2 x11-libs/pango
+SLOT=0
+SRC_URI=https://gitlab.com/schmiddi-on-mobile/flare/-/package_files/112823190/download -> flare-0.12.0.tar.xz
+_eclasses_=toolchain-funcs	d3d42b22a610ce81c267b644bcec9b87	multilib	b2a329026f2e404e9e371097dda47f96	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	gnome2-utils	a8cf148ec7f5ae0b1f1d33ae5f7f9e88	flag-o-matic	f14aba975c94ccaa9f357a27e3b17ffe	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	2fee95c11e5f883024588d4837db6802	meson	99466844dd8d4fcfb07578a76f5a9922	rust	6bbdec0f6ec3630603ce517902d10430	xdg	3ef49a87c52c8b77c476351195dfe575
+_md5_=0d054c0dde291a97123a79cc0d060711

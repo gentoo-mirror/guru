@@ -1,13 +1,14 @@
-BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile install postinst prepare test unpack
 DEPEND=app-shells/bash sys-apps/bat dev-util/sh
 DESCRIPTION=Bash scripts that integrate bat with various command line tools.
 EAPI=8
 HOMEPAGE=https://github.com/eth-p/bat-extras
-INHERIT=optfeature git-r3
+INHERIT=optfeature
+KEYWORDS=~amd64
 LICENSE=MIT
-PROPERTIES=live
 RDEPEND=app-shells/bash sys-apps/bat dev-util/sh app-admin/entr app-shells/fzf dev-python/black dev-util/git-delta dev-vcs/git sys-apps/eza sys-apps/ripgrep sys-devel/clang[extra(+)] sys-libs/ncurses
+RESTRICT=test
 SLOT=0
-_eclasses_=optfeature	222cb475c5a4f7ae7cfb0bf510a6fe54	git-r3	875eb471682d3e1f18da124be97dcc81
+SRC_URI=https://github.com/eth-p/bat-extras/archive/v2023.09.19.tar.gz -> bat-extras-2023.09.19.tar.gz
+_eclasses_=optfeature	222cb475c5a4f7ae7cfb0bf510a6fe54
 _md5_=66cf880f5110ad4d8c86423a051834e5
