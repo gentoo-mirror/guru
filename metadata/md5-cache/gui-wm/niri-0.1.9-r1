@@ -1,4 +1,4 @@
-BDEPEND=screencast? ( llvm_slot_16? ( sys-devel/clang:16 ) llvm_slot_17? ( sys-devel/clang:17 ) llvm_slot_18? ( sys-devel/clang:18 ) ) || ( >=dev-lang/rust-bin-1.77.1:* >=dev-lang/rust-1.77.1:* ) virtual/pkgconfig
+BDEPEND=screencast? ( llvm_slot_16? ( sys-devel/clang:16 ) llvm_slot_17? ( sys-devel/clang:17 ) llvm_slot_18? ( sys-devel/clang:18 ) ) || ( dev-lang/rust-bin:1.82.0 dev-lang/rust:1.82.0 dev-lang/rust-bin:1.81.0 dev-lang/rust:1.81.0 dev-lang/rust-bin:1.80.1 dev-lang/rust:1.80.1 dev-lang/rust-bin:1.79.0 dev-lang/rust:1.79.0 dev-lang/rust-bin:1.77.1 dev-lang/rust:1.77.1 ) virtual/pkgconfig
 DEFINED_PHASES=compile configure install prepare setup test unpack
 DEPEND=dev-libs/glib:2 dev-libs/libinput:= dev-libs/wayland media-libs/libdisplay-info:= media-libs/mesa sys-auth/seatd:= virtual/libudev:= x11-libs/cairo x11-libs/libxkbcommon x11-libs/pango x11-libs/pixman screencast? ( media-video/pipewire:= )
 DESCRIPTION=Scrollable-tiling Wayland compositor
@@ -12,5 +12,5 @@ RDEPEND=dev-libs/glib:2 dev-libs/libinput:= dev-libs/wayland media-libs/libdispl
 REQUIRED_USE=screencast? ( dbus ) systemd? ( dbus ) ^^ ( llvm_slot_16 llvm_slot_17 llvm_slot_18 )
 SLOT=0
 SRC_URI=https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.9.tar.gz -> niri-0.1.9.tar.gz https://github.com/YaLTeR/niri/releases/download/v0.1.9/niri-0.1.9-vendored-dependencies.tar.xz
-_eclasses_=llvm-utils	c989cff79c0976415f459e367a83dff9	llvm-r1	c6f5dcc9d729a7028f3884ff342d280c	toolchain-funcs	d3d42b22a610ce81c267b644bcec9b87	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	f14aba975c94ccaa9f357a27e3b17ffe	multiprocessing	1e32df7deee68372153dca65f4a7c21f	rust	9b27fb7957f7b51ed1bb3e3ad2e900db	rust-toolchain	3f822985d9297438ed2443aa1fbdf33e	cargo	a7d3cf80f6ccf4d2e90c98e162bb5828	systemd	54bd206bb5c4efac6ae28b6b006713b0
+_eclasses_=llvm-utils	c989cff79c0976415f459e367a83dff9	llvm-r1	c6f5dcc9d729a7028f3884ff342d280c	toolchain-funcs	d3d42b22a610ce81c267b644bcec9b87	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	f14aba975c94ccaa9f357a27e3b17ffe	multiprocessing	1e32df7deee68372153dca65f4a7c21f	rust	6bbdec0f6ec3630603ce517902d10430	rust-toolchain	3f822985d9297438ed2443aa1fbdf33e	cargo	a7d3cf80f6ccf4d2e90c98e162bb5828	systemd	54bd206bb5c4efac6ae28b6b006713b0
 _md5_=c7e1045667b5abdd3662cc3795659e1a
