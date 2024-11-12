@@ -1,7 +1,7 @@
-# Copyright 2021 Gentoo Authors
+# Copyright 2021-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 inherit toolchain-funcs
 
@@ -15,15 +15,18 @@ LICENSE="FDL-1.2 GPL-2+ LGPL-2.1+"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
-PATCHES=( "${FILESDIR}"/fbc-1.07.0-Pass-ltinfo-to-linker.patch )
+RDEPEND="sys-libs/ncurses:="
+DEPEND="${RDEPEND}"
+
+PATCHES=( "${FILESDIR}/${P}-fix-ldflags.patch" )
 
 src_compile() {
 	emake bootstrap-minimal \
-		AR=$(tc-getAR) AS=$(tc-getAS) CC=$(tc-getCC) CFLAGS="${CFLAGS}" V=1
+		AR="$(tc-getAR)" AS="$(tc-getAS)" CC="$(tc-getCC)" CFLAGS="${CFLAGS}" V=1
 }
 
 src_install() {
 	newbin bin/fbc fbc-bootstrap
-	emake DESTDIR="${D}" prefix="/usr/share/freebasic-bootstrap" TARGET=${CHOST} install-includes
-	emake DESTDIR="${D}" prefix="/usr/share/freebasic-bootstrap" TARGET=${CHOST} install-rtlib
+	emake DESTDIR="${D}" prefix="${EPREFIX}/usr/share/freebasic-bootstrap" TARGET=${CHOST} install-includes
+	emake DESTDIR="${D}" prefix="${EPREFIX}/usr/share/freebasic-bootstrap" TARGET=${CHOST} install-rtlib
 }

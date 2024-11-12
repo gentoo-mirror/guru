@@ -1,7 +1,9 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
+
+inherit toolchain-funcs
 
 DESCRIPTION="A free/open source, multi-platform BASIC compiler."
 HOMEPAGE="https://www.freebasic.net"
@@ -43,7 +45,9 @@ src_compile() {
 	local fbc="fbc"
 	local fbcflags=""
 	# fbc requires a space after the -Wl option
-	local fblflags="${LDFLAGS//-Wl,/-Wl }"
+	# Additionally, this includes a stupid attempt to avoid a false
+	# positive in bug 901169.
+	local fblflags="$(echo "$LDFLAGS" | sed 's/-Wl,\([^ ]*\)/-Wl \1,/g')"
 
 	if has_version -b dev-lang/fbc-bootstrap; then
 		fbc="fbc-bootstrap"
@@ -52,10 +56,12 @@ src_compile() {
 	fi
 
 	# Build fbc
-	emake CFLAGS="${CFLAGS} ${xcflags[*]} -I/usr/$(get_libdir)/libffi/include" FBC="${fbc}" FBCFLAGS="${fbcflags}" FBLFLAGS="${fblflags}" TARGET="${CHOST}"
+	emake AR="$(tc-getAR)" AS="$(tc-getAS)" CC="$(tc-getCC)" \
+		CFLAGS="${CFLAGS} ${xcflags[*]} -I/usr/$(get_libdir)/libffi/include" \
+		FBC="${fbc}" FBCFLAGS="${fbcflags}" FBLFLAGS="${fblflags}" TARGET="${CHOST}" V=1
 }
 
 src_install() {
-	emake DESTDIR="${D}" prefix="/usr" TARGET="${CHOST}" install
+	emake DESTDIR="${D}" prefix="${EPREFIX}/usr" TARGET="${CHOST}" install
 	einstalldocs
 }
