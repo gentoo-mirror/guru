@@ -1,0 +1,16 @@
+BDEPEND=virtual/pkgconfig doc? ( app-text/doxygen ) test? ( dev-libs/check ) app-alternatives/ninja >=dev-build/cmake-3.20.5
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=>=dev-libs/glib-2.66:2 dev-libs/libxml2 dev-libs/openssl:= >=net-misc/curl-7.52.0 gpgme? ( app-crypt/gpgme:1= ) !gpgme? ( >=app-arch/rpm-4.18.0 ) zchunk? ( >=app-arch/zchunk-0.9.11 )
+DESCRIPTION=Repodata downloading library
+EAPI=8
+HOMEPAGE=https://github.com/rpm-software-management/librepo
+INHERIT=cmake
+IUSE=doc gpgme test +zchunk
+KEYWORDS=~amd64
+LICENSE=LGPL-2.1+
+RDEPEND=>=dev-libs/glib-2.66:2 dev-libs/libxml2 dev-libs/openssl:= >=net-misc/curl-7.52.0 gpgme? ( app-crypt/gpgme:1= ) !gpgme? ( >=app-arch/rpm-4.18.0 ) zchunk? ( >=app-arch/zchunk-0.9.11 )
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/rpm-software-management/librepo/archive/refs/tags/1.19.0.tar.gz -> librepo-1.19.0.tar.gz
+_eclasses_=toolchain-funcs	d3d42b22a610ce81c267b644bcec9b87	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	f14aba975c94ccaa9f357a27e3b17ffe	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	10a50dfaf728b802fcfd37f8d0da9056
+_md5_=2454bfe1a389e0750167160595d67335

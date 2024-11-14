@@ -15,7 +15,6 @@ acct-group/iipsrv 0-r1: System group: iipsrv
 acct-group/invidious 0: System group: invidious
 acct-group/laminar 0: System group: laminar
 acct-group/libmedium 0: A group for www-apps/libmedium
-acct-group/librarian 0: A group for www-apps/librarian
 acct-group/lms 0: Group for LMS
 acct-group/mastoposter 0: System group: mastoposter
 acct-group/maubot 0: Group for Maubot Integrations
@@ -52,7 +51,6 @@ acct-user/iipsrv 0-r1: User for iipsrv
 acct-user/invidious 0: System user: invidious
 acct-user/laminar 0: System user: laminar
 acct-user/libmedium 0: An user for www-apps/libmedium
-acct-user/librarian 0: An user for www-apps/librarian
 acct-user/lms 0: User for LMS
 acct-user/mastoposter 0: System user: mastoposter
 acct-user/maubot 0: User for Maubot Matrix Integrations
@@ -138,7 +136,7 @@ app-benchmarks/poop 9999: Performance Optimizer Observation Platform
 app-benchmarks/unigine-superposition 1.1: Game like benchmark (CPU, GPU), for ~5 minutes
 app-containers/anbox-modules 0_p20240210: Anbox kernel modules
 app-containers/arachsys-containers 1.7: Simple containers using Linux user namespaces
-app-containers/nvidia-container-toolkit 1.14.6 1.16.1 9999: NVIDIA container runtime toolkit
+app-containers/nvidia-container-toolkit 1.16.1 9999: NVIDIA container runtime toolkit
 app-containers/pods 2.1.0_pre20240215-r4: Keep track of your podman containers
 app-containers/slim 1.40.11: Inspect, optimize and debug containers
 app-containers/waydroid 1.4.2 1.4.2-r1 1.4.2-r2 1.4.3: Container-based approach to boot a full Android system on Linux systems
@@ -542,9 +540,9 @@ dev-libs/libdatrie 0.2.13-r1: Double-Array Trie Library
 dev-libs/libdbf 0.0.1: Library to read the content of dBASE III, IV, and 5.0 files
 dev-libs/libdwarf 0.9.1 0.10.1 0.11.0: The DWARF Debugging Information Format
 dev-libs/libglibutil 1.0.79 9999: Library of glib utilities from sailfishos project
-dev-libs/librepo 1.18.1: Repodata downloading library
+dev-libs/librepo 1.18.1 1.19.0: Repodata downloading library
 dev-libs/libsignal-ffi 0.44.0-r1 0.46.0-r1 0.51.0-r1: A C ABI library which exposes Signal protocol logic
-dev-libs/libsolv 0.7.30-r1: Library for solving packages and reading repositories
+dev-libs/libsolv 0.7.30-r1 0.7.31: Library for solving packages and reading repositories
 dev-libs/libthai 0.1.29: A a set of Thai language support routines
 dev-libs/libtypec 0.5.2-r2: Library to interface with USB Type-C/Power Delivery devices
 dev-libs/ls-hpack 2.3.3: QPACK compression library for use with HTTP/3
@@ -617,7 +615,7 @@ dev-python/NSKeyedUnArchiver 1.5: Unserializes binary|text|file|memory plist dat
 dev-python/PyPubSub 4.0.3-r1: Python Publish-Subscribe Package
 dev-python/PyQt5-stubs 5.15.2.0 5.15.6.0: Stubs for PyQt5
 dev-python/PyWavefront 1.3.3-r1: Python library for importing Wavefront .obj files
-dev-python/PythonQwt 0.12.6 0.12.7: Qt plotting widgets for Python
+dev-python/PythonQwt 0.12.7 0.14.1: Qt plotting widgets for Python
 dev-python/SLPP 1.2.3: Simple lua-python parser
 dev-python/TakeTheTime 0.3.1: Take The Time, a super-neat Python library for timing chunks of code
 dev-python/adb-shell 0.4.3 0.4.4 0.4.4-r1: A Python implementation of ADB with shell and FileSync functionality.
@@ -680,7 +678,6 @@ dev-python/dropbox 11.36.2 12.0.2: The offical Dropbox SDK for Python
 dev-python/dtreeviz 2.2.2: A python library for decision tree visualization and model interpretation
 dev-python/evernote2 1.0.3 9999: Unofficial Evernote SDK for Python 3
 dev-python/exif 1.6.0: Read and modify image EXIF metadata using Python.
-dev-python/faust-cchardet 2.1.18 2.1.19: universal character encoding detector
 dev-python/flask-restx 1.3.0: Framework API development with Flask
 dev-python/fontawesomefree 6.5.1: Font Awesome Free
 dev-python/gbinder 1.1.2-r2 9999: Python bindings for libgbinder
@@ -694,7 +691,7 @@ dev-python/graphene 3.2.2: GraphQL Framework for Python
 dev-python/graphql-core 3.2.3: Python port of GraphQL.js, the JavaScript reference implementation for GraphQL
 dev-python/graphql-relay 3.2.0: Relay library for graphql-core
 dev-python/grpc-stubs 1.53.0.3: gRPC typing stubs for Python
-dev-python/guidata 3.6.2 3.6.3: Library for user interfaces for easy dataset editing and display
+dev-python/guidata 3.6.3 3.7.1: Library for user interfaces for easy dataset editing and display
 dev-python/guiqwt 4.4.5-r1: Efficient 2D plotting Python library based on PythonQwt
 dev-python/guppy3 3.1.3-r1 3.1.4: A Python Programming Environment & Heap analysis toolset
 dev-python/hachoir 3.3.0: Hachoir is a Python library to view and edit a binary stream field by field
@@ -716,7 +713,7 @@ dev-python/itemloaders 1.1.0: Library to populate items using XPath and CSS with
 dev-python/iuliia 0.11.5: Transliterate Cyrillic to Latin in every possible way
 dev-python/jinja2-cli 0.8.2: CLI for Jinja2
 dev-python/jplephem 2.21 2.22: Python version of NASA DE4xx ephemerides for Astronomical Alamanac
-dev-python/jpype 1.5.0: Bridge to allow Python programs full access to Java class libraries
+dev-python/jpype 1.5.0-r1: Bridge to allow Python programs full access to Java class libraries
 dev-python/json_exporter 1.0.2: Python-based library for exporting JSON data as metrics for Prometheus.
 dev-python/jsonfeed 1.1.2: Python package for parsing and generating JSON feeds.
 dev-python/jsonlines 4.0.0: Library with helpers for the jsonlines file format
@@ -743,7 +740,7 @@ dev-python/moderngl 5.12.0: Modern OpenGL binding for python
 dev-python/moderngl-window 2.4.6: A cross platform utility library for ModernGL
 dev-python/mollie-api-python 3.6.0: Mollie API client for Python
 dev-python/moreorless 0.4.0: Wrapper to make difflib.unified_diff more fun to use
-dev-python/mpxj 13.5.1-r2: Read/Write project management files (MPP, MSPDI, MPX, PMXML, etc)
+dev-python/mpxj 13.6.0-r1: Read/Write project management files (MPP, MSPDI, MPX, PMXML, etc)
 dev-python/msrest 0.7.1: AutoRest swagger generator Python client runtime
 dev-python/mwclient 0.10.1: Unofficial lib for MediaWiki API
 dev-python/nkdfu 0.2: Python DFU tool for updating Nitrokeys' firmware
@@ -817,7 +814,7 @@ dev-python/python-octaviaclient 3.7.0: A client for the OpenStack Octavia API
 dev-python/python-olm 3.2.16: Python bindings for dev-libs/olm
 dev-python/python-pidfile 3.0.0-r1 3.1.1: PIDFile context processor. Supported py2 and py3
 dev-python/python-socketio 5.11.3 5.11.4: Python implementation of the Socket.IO realtime server.
-dev-python/python-statemachine 2.3.5 2.3.6: Python Finite State Machines made easy.
+dev-python/python-statemachine 2.3.6 2.4.0: Python Finite State Machines made easy.
 dev-python/python-telegram-bot 20.6-r1 21.1.1 9999: Python wrapper of telegram bots API
 dev-python/pywebview 4.4.1-r1 5.1-r1: A lightweight cross-platform wrapper around a webview component
 dev-python/questionary 2.0.1: Python library to build pretty command line user prompts
@@ -1186,7 +1183,7 @@ gui-libs/xdg-desktop-portal-hyprland 1.3.3-r3 1.3.8 9999: xdg-desktop-portal bac
 gui-wm/cage 0.2.0 9999: A Wayland kiosk
 gui-wm/hyprland-contrib 0.1-r1 9999: Community-maintained extensions for hyprland
 gui-wm/miracle-wm 0.3.7: Tiling Wayland compositor based on Mir
-gui-wm/niri 0.1.9-r1: Scrollable-tiling Wayland compositor
+gui-wm/niri 0.1.9-r1 0.1.10.1: Scrollable-tiling Wayland compositor
 gui-wm/phoc 0.41.0 0.42.0 0.42.1: Wayland compositor for mobile phones
 gui-wm/river 0.3.5-r1: A dynamic tiling Wayland compositor
 gui-wm/swayfx 0.4-r1: SwayFX: Sway, but with eye candy!
@@ -1620,7 +1617,7 @@ sys-apps/bat-extras 2023.09.19-r2 9999: Bash scripts that integrate bat with var
 sys-apps/bustd 0.1.1: Process killer daemon for out-of-memory scenarios
 sys-apps/colortail 0.3.3 9999: tail command with colors
 sys-apps/corefreq 1.96.3: CPU monitoring software designed for the 64-bits Processors, like top
-sys-apps/dnf5 5.2.6.0: Command-line package manager
+sys-apps/dnf5 5.2.6.0-r1 5.2.7.0: Command-line package manager
 sys-apps/dool 1.3.1-r1 1.3.2-r2 9999: Versatile replacement for vmstat, iostat and ifstat (clone of dstat)
 sys-apps/drm_info 2.6.0: Small utility to dump info about DRM devices
 sys-apps/flashprog 1.2: Utility for identifying, reading, writing, verifying and erasing flash chips.
@@ -1688,7 +1685,7 @@ sys-libs/cyclonedds 0.10.3-r1 9999: Eclipse Cyclone DDS project
 sys-libs/gcompat 1.1.0: The GNU C Library compatibility layer for musl
 sys-libs/iceoryx 2.0.3 9999: Eclipse Iceoryx zero copy IPC
 sys-libs/libfixposix 0.4.3 0.5.1: Thin wrapper over POSIX syscalls
-sys-libs/libnvidia-container 1.14.6 1.16.1 9999: NVIDIA container runtime library
+sys-libs/libnvidia-container 1.16.1 1.17.0 9999: NVIDIA container runtime library
 sys-libs/nss-tls 1.0 1.1-r1 9999: A DNS over HTTPS resolver for glibc
 sys-libs/solo-udev-rules 4.1.5: udev rules for the Solo FIDO2 & U2F USB+NFC security key
 sys-power/amdfan 0.1.28 0.2.3: Updated AMD Fan control utility forked from amdgpu-fan and updated.
@@ -1718,7 +1715,6 @@ www-apps/honk 0.9.8 0.9.91: ActivityPub server with minimal setup and support co
 www-apps/invidious 2024.04.27 2024.08.25.1 2024.11.10.0: Invidious is an alternative front-end to YouTube
 www-apps/laminar 1.3-r1: Fast and lightweight Continuous Integration
 www-apps/libmedium 2024.06.10: Alternative private front-end to Medium
-www-apps/librarian 2023.05.07: An alternative frontend for LBRY/Odysee. Inspired by Invidious and Libreddit.
 www-apps/mycorrhiza 1.15.1 9999: Git-based wiki engine written in Go using mycomarkup
 www-apps/pleroma 2.7.0-r1 9999: ActivityPub social networking software compatible with other Fediverse software
 www-apps/pleroma-fe 2.7.0 9999: Main frontend for www-apps/pleroma, inspired by qvitter
