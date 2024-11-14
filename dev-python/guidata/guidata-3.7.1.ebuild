@@ -9,17 +9,21 @@ PYTHON_COMPAT=( python3_{11..12} )
 inherit distutils-r1 pypi
 
 DESCRIPTION="Library for user interfaces for easy dataset editing and display"
-HOMEPAGE="https://pypi.python.org/pypi/guidata"
+HOMEPAGE="https://pypi.org/project/guidata/"
 LICENSE="BSD"
 
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
-IUSE="test"
+KEYWORDS="~amd64"
+IUSE="test +pyqt5 pyqt6"
+
+REQUIRED_USE="|| ( pyqt5 pyqt6 )"
 
 RDEPEND="
+	pyqt5? ( dev-python/PyQt5[${PYTHON_USEDEP}] )
+	pyqt6? ( dev-python/PyQt6[${PYTHON_USEDEP}] )
+
 	dev-python/h5py[${PYTHON_USEDEP}]
 	dev-python/numpy[${PYTHON_USEDEP}]
-	dev-python/PyQt5[${PYTHON_USEDEP}]
 	dev-python/QtPy[${PYTHON_USEDEP}]
 	dev-python/requests[${PYTHON_USEDEP}]
 	dev-python/tomli[${PYTHON_USEDEP}]
