@@ -126,7 +126,7 @@ app-backup/blocksync-fast 1.0.3 1.0.4 1.0.6: Fast block device sync with digest,
 app-backup/grub-btrfs 4.11-r1 4.12 4.13 9999: Improves Grub by adding btrfs snapshots to the Grub menu.
 app-backup/kopia 0.15.0: Kopia - Fast And Secure Open-Source Backup
 app-backup/kopia-ui-bin 0.15.0-r1: Kopia - Fast And Secure Open-Source Backup (Electron UI)
-app-backup/pika-backup 0.7.2-r2: Keep your data safe
+app-backup/pika-backup 0.7.2-r2 0.7.4: Keep your data safe
 app-backup/restic-browser 0.3.1-r1: A GUI to browse and restore from restic backup repositories
 app-backup/timeshift 23.07.1: A system restore utility for Linux
 app-backup/timeshift-autosnap 0.9-r1: Automatically creates a timeshift-snapshot when executed
@@ -540,7 +540,7 @@ dev-libs/libdatrie 0.2.13-r1: Double-Array Trie Library
 dev-libs/libdbf 0.0.1: Library to read the content of dBASE III, IV, and 5.0 files
 dev-libs/libdwarf 0.9.1 0.10.1 0.11.0: The DWARF Debugging Information Format
 dev-libs/libglibutil 1.0.79 9999: Library of glib utilities from sailfishos project
-dev-libs/librepo 1.18.1 1.19.0: Repodata downloading library
+dev-libs/librepo 1.18.1 1.19.0-r1: Repodata downloading library
 dev-libs/libsignal-ffi 0.44.0-r1 0.46.0-r1 0.51.0-r1: A C ABI library which exposes Signal protocol logic
 dev-libs/libsolv 0.7.30-r1 0.7.31: Library for solving packages and reading repositories
 dev-libs/libthai 0.1.29: A a set of Thai language support routines
@@ -718,7 +718,7 @@ dev-python/json_exporter 1.0.2: Python-based library for exporting JSON data as 
 dev-python/jsonfeed 1.1.2: Python package for parsing and generating JSON feeds.
 dev-python/jsonlines 4.0.0: Library with helpers for the jsonlines file format
 dev-python/jupyter-sphinx 0.4.0: Jupyter Sphinx Extensions
-dev-python/kurbopy 0.10.40: Python wrapper around Rust kurbo 2D curves library
+dev-python/kurbopy 0.10.40 0.11.0: Python wrapper around Rust kurbo 2D curves library
 dev-python/langdetect 1.0.9: Port of Google's language-detection library to Python
 dev-python/latexify-py 0.4.3.1: Annotate Python source code to get LaTeX expressions
 dev-python/libusb1 3.1.0: Pure-python wrapper for libusb-1.0
@@ -1055,7 +1055,7 @@ games-util/sdl2-gamepad-mapper 0.0.8-r1: GUI application to generate an SDL2 map
 games-util/steamtinkerlaunch 12.0: Wrapper script for Steam custom launch options
 games-util/xivlauncher 1.1.1: Custom Launcher for Final Fantasy XIV Online (Crossplatform rewrite)
 games-util/xone 0.3_p20240425: Linux kernel driver for Xbox One and Xbox Series X|S accessories
-gnome-extra/commit 4.1-r1: Commit message editor
+gnome-extra/commit 4.1-r1 4.2: Commit message editor
 gnome-extra/extension-manager 0.5.1 9999: A native tool for browsing, installing, and managing GNOME Shell Extensions
 gnome-extra/iio-sensor-proxy 3.3 3.5: IIO sensors to D-Bus proxy
 gnome-extra/junction 1.7-r1: Application/browser chooser
@@ -1090,7 +1090,7 @@ gui-apps/coretime 4.5.0 9999: A time related task manager for C Suite
 gui-apps/coretoppings 4.5.0 9999: Additional features, plugins, widgets etc for C Suite
 gui-apps/coreuniverse 4.5.0 9999: Shows information about apps for C Suite
 gui-apps/darkman 2.0.1-r1: Framework for dark and light mode transitions
-gui-apps/espanso 2.1.8-r1 2.2.1-r2: Cross-platform Text Expander written in Rust
+gui-apps/espanso 2.2.2: Cross-platform Text Expander written in Rust
 gui-apps/eww 0.6.0-r3 9999: Elkowars Wacky Widgets is a standalone widget system made in Rust
 gui-apps/fnott 1.6.0 9999: Keyboard driven and lightweight Wayland notification daemon.
 gui-apps/fuzzel 1.10.2-r1 1.11.1: Application launcher for wlroots based Wayland compositors.
@@ -1328,7 +1328,7 @@ media-sound/youtube-music-bin 3.3.6 3.6.2: YouTube Music Desktop App bundled wit
 media-sound/zita-ajbridge 0.8.4 0.8.4-r1: zita-a2j and zita-j2a - bridges between ALSA and JACK
 media-video/avisynth+ 9999: A powerful nonlinear scripting language for video
 media-video/ciano 0.2.4-r2: A multimedia file converter focused on simplicity
-media-video/delfin 0.4.4-r1 0.4.5-r1: Stream movies and TV shows from Jellyfin
+media-video/delfin 0.4.5-r1 0.4.7: Stream movies and TV shows from Jellyfin
 media-video/gpu-screen-recorder 9999: A screen recorder that has minimal impact on system performance
 media-video/gpu-screen-recorder-gtk 9999: GTK frontend for gpu-screen-recorder.
 media-video/kikoplay 0.9.3 9999: KikoPlay is a full-featured danmu player
@@ -1501,7 +1501,7 @@ net-news/newsflash 3.1.6: Feed Reader written in GTK
 net-news/newsraft 0.25 0.26 0.27 9999: A lightweight feed reader with ncurses user interface inspired by Newsboat.
 net-nntp/inn 2.7.1: InterNetNews - the Internet meets Netnews
 net-nntp/nzb-monkey-go 0.1.16: Golang version of the NZB Monkey with included NZB direct search
-net-nntp/pan 0.159-r1 0.160: A newsreader for GNOME
+net-nntp/pan 0.159-r1 0.160 0.161: A newsreader for GNOME
 net-p2p/bisq-bin 1.9.14-r1: The decentralized bitcoin exchange (non-atomic, with arbitration)
 net-p2p/dogecoin-qt 1.14.8 9999: Dogecoin Core Qt for desktop. Downloaded blockchain is under 2.2GB. Much secure.
 net-p2p/feather 2.6.7-r1 2.6.8 9999: A free, open-source Monero wallet
@@ -1625,7 +1625,7 @@ sys-apps/flashprog 1.2: Utility for identifying, reading, writing, verifying and
 sys-apps/fselect 0.8.6: Find files with SQL-like queries
 sys-apps/hex 0.4.2 0.5.0 0.6.0: Futuristic take on hexdump
 sys-apps/hexyl 0.15.0-r1: A command-line hex viewer
-sys-apps/lact 0.5.6: Linux AMDGPU Controller
+sys-apps/lact 0.5.6 0.6.0: Linux AMDGPU Controller
 sys-apps/loclone 0.1.0: A tool for creating CoW snapshots on XFS
 sys-apps/lr 1.6: list files, recursively
 sys-apps/lsplug 4: Replacement for lsusb that shows more useful info and less useless info
@@ -1669,7 +1669,7 @@ sys-fs/fstransform 0.9.4: Tool for in-place filesystem conversion
 sys-fs/fsverity-utils 1.6: Userspace utility for file-level integrity/authenticity verification
 sys-fs/gcsfuse 1.2.0: A user-space file system for interacting with Google Cloud Storage
 sys-fs/gdu 5.14.0 5.25.0: Disk usage analyzer with console interface written in Go
-sys-fs/gfs2-utils 3.4.1: Shared-disk cluster file system
+sys-fs/gfs2-utils 3.4.1 3.5.1: Shared-disk cluster file system
 sys-fs/jefferson 0.4.5: JFFS2 filesystem extraction tool
 sys-fs/mountpoint-s3-bin 1.1.1: Fuse for AWS S3 (Simple Storage Service), official
 sys-fs/ntfs2btrfs 20240115: Conversion tool from NTFS to Btrfs
@@ -1784,11 +1784,11 @@ x11-misc/xscreensaver-anclock 2.2.1: Analog clock hack for the xscreensaver prog
 x11-misc/xsecurelock 1.9.0: X11 screen lock utility with security in mind
 x11-plugins/purple-mm-sms 0.1.7: Purple SMS plugin using ModemManager
 x11-terms/dmd5620 2.1.0: GTK+ 3.0 implementation of an AT&T / Teletype DMD 5620 emulator.
-x11-terms/rio 0.1.17-r1: A hardware-accelerated GPU terminal emulator powered by WebGPU
+x11-terms/rio 0.2.0: A hardware-accelerated GPU terminal emulator powered by WebGPU
 x11-terms/tabby-bin 1.0.189: A terminal for a more modern age
 x11-terms/terminal-simulator 0.2 9999: VT100 and VT52 terminal hardware simulator
 x11-terms/tym 3.5.1: Lua-configurable terminal emulator
-x11-themes/adw-gtk3 5.2 5.3: The theme from libadwaita ported to GTK-3
+x11-themes/adw-gtk3 5.2 5.3 5.5: The theme from libadwaita ported to GTK-3
 x11-themes/adwaita-dark-amoled 9999: GTK-3/4 theme: black background, blue accent
 x11-themes/arc-darkest-colors 0_pre20200818 0_pre20201112: Flat, dark-mode theme with transparent elements
 x11-themes/arc-kde 20220908: Port of the popular GTK theme Arc for Plasma 5
