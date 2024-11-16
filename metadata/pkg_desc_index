@@ -139,7 +139,7 @@ app-containers/arachsys-containers 1.7: Simple containers using Linux user names
 app-containers/nvidia-container-toolkit 1.16.1 9999: NVIDIA container runtime toolkit
 app-containers/pods 2.1.0_pre20240215-r4: Keep track of your podman containers
 app-containers/slim 1.40.11: Inspect, optimize and debug containers
-app-containers/waydroid 1.4.2 1.4.2-r1 1.4.2-r2 1.4.3: Container-based approach to boot a full Android system on Linux systems
+app-containers/waydroid 1.4.3: Container-based approach to boot a full Android system on Linux systems
 app-containers/waydroid-images 9999: Manage images for app-containers/waydroid using portage
 app-crypt/PBinCLI 0.3.5 0.3.5-r1: PBinCLI is a command line client for PrivateBin written in Python 3
 app-crypt/autofirma 1.8.2 1.8.3: Spanish government's electronic signature application for online procedures
@@ -525,7 +525,7 @@ dev-libs/fortran-shlex 1.0.1: Modern Fortran port of the tiny-regex-c library fo
 dev-libs/fortran-stdlib 0.2.1-r1 0.3.0 0.4.0 0.5.0 0.6.1 0.7.0 9999: A community driven standard library for (modern) Fortran
 dev-libs/fsst 0_pre20200830-r1: Fast Static Symbol Table: fast text compression that allows random access
 dev-libs/ftl 1.0_p20230220: The Fortran Template Library (FTL) is a general purpose library for Fortran 2003
-dev-libs/gbinder 1.1.40 1.1.41 9999: GLib-style interface to binder
+dev-libs/gbinder 1.1.41 9999: GLib-style interface to binder
 dev-libs/gmobile 0.1.0 0.2.1: Mobile related helpers for glib based projects
 dev-libs/gpds 1.9.0: A general purpose data serializer
 dev-libs/hts_engine 1.10: HMM-based speech synthesis system (HTS) engine and API
@@ -1061,7 +1061,7 @@ gnome-extra/iio-sensor-proxy 3.3 3.5: IIO sensors to D-Bus proxy
 gnome-extra/junction 1.7-r1: Application/browser chooser
 gnome-extra/portfolio 0.9.14: A minimalist file manager for those who want to use Linux mobile devices
 gnome-extra/vvmplayer 1.4: Visual Voicemail Player
-gnome-extra/wike 3.0.0 3.0.1: Wikipedia Reader for the GNOME Desktop
+gnome-extra/wike 3.0.0 3.0.1 3.1.0: Wikipedia Reader for the GNOME Desktop
 gnome-extra/yad 13.0 14.1 9999: Display GTK+ dialog boxes from command line or shell scripts
 gui-apps/1password 8.10.28 8.10.48-r1: The world’s most-loved password manager
 gui-apps/ReGreet 0.1.1-r10 9999: A clean and customizable GTK-based greetd greeter written in Rust
@@ -1407,17 +1407,17 @@ net-im/legcord-bin 1.0.2: Legcord is a custom client designed to enhance your Di
 net-im/manyverse-bin 0.2310.9: A social network off the grid with append-only protocol (no edits) on blockchain
 net-im/mastoposter 0.2: Configurable reposter from Mastodon-compatible Fediverse servers
 net-im/matterhorn-bin 90000.0.0 90000.0.1: Terminal based Mattermost client
-net-im/maubot 0.4.2: Plugin-based Matrix bot system
-net-im/mautrix-discord 0.6.4 0.6.5: A Matrix-Discord puppeting bridge
-net-im/mautrix-meta 0.3.0 0.3.1: A Matrix-Facebook puppeting bridge
+net-im/maubot 0.4.2 0.5.0: Plugin-based Matrix bot system
+net-im/mautrix-discord 0.6.5 0.7.1: A Matrix-Discord puppeting bridge
+net-im/mautrix-meta 0.3.1 0.4.1: A Matrix-Facebook puppeting bridge
 net-im/mautrix-signal 0.6.0 0.6.1: A Matrix-Signal puppeting bridge
-net-im/mautrix-slack 0_pre20230925 0_pre20240215: A Matrix-Slack puppeting bridge based on slack-go
+net-im/mautrix-slack 0_pre20240215 0.1.3: A Matrix-Slack puppeting bridge based on slack-go
 net-im/mautrix-telegram 0.15.1 0.15.2: A Matrix-Telegram Messenger puppeting bridge
 net-im/mautrix-whatsapp 0.10.9: A Matrix-WhatsApp puppeting bridge
 net-im/nheko 0.12.0-r1 9999: Native desktop client for Matrix using Qt
 net-im/pop 8.0.21: Screen sharing with multiplayer control, with voice
 net-im/session-desktop-bin 1.10.8: Session Desktop - Onion routing based messenger
-net-im/sliding-sync 0.99.15: Proxy implementation of MSC3575's sync protocol.
+net-im/sliding-sync 0.99.15 0.99.19: Proxy implementation of MSC3575's sync protocol.
 net-im/teams-for-linux 1.11.1 1.11.3: Unofficial Microsoft Teams client for Linux. Binary precompiled version.
 net-im/vesktop-bin 1.5.2 1.5.3: All-in-one voice and text chat for gamers with Vencord Preinstalled
 net-irc/catgirl 2.2 2.2a: TLS-only terminal IRC client
