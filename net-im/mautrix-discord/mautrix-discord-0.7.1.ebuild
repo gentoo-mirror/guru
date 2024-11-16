@@ -1,4 +1,4 @@
-# Copyright 2022-2023 Gentoo Authors
+# Copyright 2022-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -8,7 +8,7 @@ inherit go-module systemd
 DESCRIPTION="A Matrix-Discord puppeting bridge"
 HOMEPAGE="https://github.com/mautrix/discord"
 SRC_URI="https://github.com/mautrix/discord/archive/v${PV}.tar.gz -> ${P}.gh.tar.gz
-	https://jroy.ca/dist/${P}.tar.xz
+	https://jroy.ca/dist/${P}-deps.tar.xz
 "
 S="${WORKDIR}/discord-${PV}"
 
