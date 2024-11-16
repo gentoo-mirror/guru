@@ -12,7 +12,8 @@ SRC_URI="https://github.com/artemsen/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="avif bash-completion exif exr gif heif jpeg jpegxl png svg tiff webp X"
+IUSE="avif bash-completion exif exr gif heif jpeg jpegxl png svg test tiff webp X"
+RESTRICT="!test? ( test )"
 
 RDEPEND="
 	dev-libs/json-c:=
@@ -42,6 +43,7 @@ DEPEND="${RDEPEND}
 "
 BDEPEND="
 	dev-util/wayland-scanner
+	test? ( dev-cpp/gtest )
 "
 
 src_configure() {
@@ -55,6 +57,7 @@ src_configure() {
 		$(meson_feature jpegxl jxl)
 		$(meson_feature png)
 		$(meson_feature svg)
+		$(meson_feature test tests)
 		$(meson_feature tiff)
 		$(meson_feature webp)
 		$(meson_feature bash-completion bash)
