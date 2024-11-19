@@ -111,7 +111,7 @@ app-admin/s-tui 1.1.6: Stress-Terminal UI monitoring tool
 app-admin/synadm 0.43.1 0.44: Command line admin tool for Synapse
 app-admin/talosctl-bin 1.7.6: Pre-compiled talosctl is an tool for interacting with the Talos API
 app-admin/terragrunt-bin 0.38.6 0.45.4 0.50.8: A thin wrapper for Terraform
-app-admin/vaultwarden 1.30.3-r1 1.30.4-r1 1.30.5-r1 1.32.4 9999: Unofficial Bitwarden compatible password manager server written in Rust
+app-admin/vaultwarden 1.30.3-r1 1.30.4-r1 1.30.5-r1 1.32.4 1.32.5 9999: Unofficial Bitwarden compatible password manager server written in Rust
 app-alternatives/phosh-keyboard 0: sm.puri.OSK0.desktop symlinks
 app-arch/fuse-archive 0.1.14: Read-only FUSE file system for mounting archives and compressed files
 app-arch/libarchive-qt 2.0.8: Qt based archiving solution with libarchive backend
@@ -225,7 +225,7 @@ app-misc/cheat 4.2.3 4.3.3-r1: cheat allows you to create and view interactive c
 app-misc/clifm 1.11 1.13 1.16 1.18 9999: The command line file manager
 app-misc/clipboard 0.10.0: Cut, copy, and paste anything in your terminal
 app-misc/cliphist 0.6.1: Wayland clipboard manager with support for multimedia
-app-misc/corectrl 1.4.1 1.4.2 9999: Core control application
+app-misc/corectrl 1.4.2 1.4.3 9999: Core control application
 app-misc/cpufetch 1.05-r1: Simplistic yet fancy CPU architecture fetching tool
 app-misc/dbf 0.9.0: Command line tool to read the content of dBASE III, IV, and 5.0 files
 app-misc/diff-so-fancy 1.4.4: Good-lookin' diffs. Actually... nah... The best-lookin' diffs
@@ -1190,8 +1190,8 @@ gui-wm/phoc 0.41.0 0.42.1 0.43.0: Wayland compositor for mobile phones
 gui-wm/river 0.3.5-r1: A dynamic tiling Wayland compositor
 gui-wm/swayfx 0.4-r1: SwayFX: Sway, but with eye candy!
 kde-apps/kwalletcli 3.03: CLI for the KDE Wallet
-kde-misc/geminipart 20221020 20231005: KPart for viewing text/gemini files
-kde-misc/kio-gemini 20231005 20240801: Gemini KIO worker
+kde-misc/geminipart 20231005 20241110: KPart for viewing text/gemini files
+kde-misc/kio-gemini 20240801 20241109: Gemini KIO worker
 mail-client/betterbird-bin 115.16.1: Betterbird is a fine-tuned version of Mozilla Thunderbird.
 mail-client/mailspring-bin 1.13.3: A beautiful, fast and fully open source mail client for Mac, Windows and Linux
 mail-client/proton-mail-bin 1.0.6: Beta Client for Proton Mail
@@ -1644,6 +1644,7 @@ sys-apps/save-backlight 1.1.2-r1 9999: An OpenRC service for restoring the last 
 sys-apps/sd 1.0.0: Intuitive find & replace CLI (sed alternative)
 sys-apps/systemd-bootchart 234 235: systemd boot performance graphing tool
 sys-apps/ugrep 5.1.4: A fast, drop-in replacement for GNU grep
+sys-apps/zmem 0.2.1: Memory monitoring tool focusing on swap, zswap and zram
 sys-auth/hyprpolkitagent 0.1.1: Polkit authentication agent for Hyprland, written in Qt/QML
 sys-auth/pam-gnupg 0.4-r1: Unlock GnuPG keys on login
 sys-block/partclone 0.3.20 0.3.32: Partition cloning tool
