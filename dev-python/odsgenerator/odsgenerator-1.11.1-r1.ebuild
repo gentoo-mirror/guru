@@ -8,12 +8,11 @@ PYTHON_COMPAT=( python3_{12..13} )
 
 inherit distutils-r1
 
-DESCRIPTION="Python library for OpenDocument format (ODF)"
-HOMEPAGE="https://github.com/jdum/odfdo"
-SRC_URI="https://github.com/jdum/odfdo/archive/refs/tags/v${PV}.tar.gz -> odfdo-${PV}.tar.gz"
-S="${WORKDIR}/odfdo-${PV}"
+DESCRIPTION="Generate an OpenDocument Format .ods file from a .json or .yaml file."
+HOMEPAGE="https://github.com/jdum/odsgenerator"
+SRC_URI="https://github.com/jdum/odsgenerator/archive/refs/tags/v${PV}.tar.gz -> odsgenerator-${PV}.tar.gz"
 
-LICENSE="Apache-2.0"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
 
