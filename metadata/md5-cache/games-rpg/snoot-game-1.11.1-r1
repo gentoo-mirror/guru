@@ -1,5 +1,5 @@
 BDEPEND=python_single_target_python3_10? ( dev-lang/python:3.10 ) python_single_target_python3_11? ( dev-lang/python:3.11 ) python_single_target_python3_12? ( dev-lang/python:3.12 ) virtual/opengl
-DEFINED_PHASES=install setup
+DEFINED_PHASES=install prepare setup
 DESCRIPTION=Visual novel parody of Goodbye Volcano High
 EAPI=8
 HOMEPAGE=https://snootgame.xyz/en
@@ -13,4 +13,4 @@ RESTRICT=strip
 SLOT=0
 SRC_URI=https://snootgame.xyz/en/bin/SnootGame-Patch11.1-MoldyBuenoAlDante-linux.tar.bz2
 _eclasses_=multiprocessing	1e32df7deee68372153dca65f4a7c21f	toolchain-funcs	d3d42b22a610ce81c267b644bcec9b87	multilib	b2a329026f2e404e9e371097dda47f96	python-utils-r1	2fee95c11e5f883024588d4837db6802	python-single-r1	47d8ac9be330c9366112b78fd4f8ce57	desktop	3a72ffe0d8e1dd73af3a1c8c15a59fed	wrapper	11a2a3bd712784986679b60a0cab34a0
-_md5_=9a877e4b6ab6c0bd3fcc71a8683dcda8
+_md5_=915723fcfc018c48c8ebe44c83d8b766
