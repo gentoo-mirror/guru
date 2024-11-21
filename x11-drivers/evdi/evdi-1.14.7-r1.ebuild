@@ -41,6 +41,7 @@ CONFIG_CHECK="~FB_VIRTUAL ~I2C ~DRM ~USB_SUPPORT ~USB_ARCH_HAS_HCD MODULES"
 
 PATCHES=(
 	"${FILESDIR}/${PN}-1.14.4-format-truncation.patch"
+	"${FILESDIR}/${PN}-1.14.7-removed-output_poll_changed.patch"
 )
 
 pkg_setup() {
@@ -67,6 +68,8 @@ src_compile() {
 }
 
 src_test() {
+	local -x PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+
 	use python && emake -C pyevdi tests
 }
 
