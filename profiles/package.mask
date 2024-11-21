@@ -18,6 +18,13 @@
 
 # New entries go on top.
 
+# Takuya Wakazono <pastalian46@gmail.com> (2024-11-21)
+# SRC_URI is 410. No maintainer.
+# x11-misc/xscreensaver is available in ::gentoo and users can apply
+# patches themselves.
+# Removal on 2024-12-21.
+x11-misc/xscreensaver-anclock
+
 # Nicolas PARLANT <nicolas.parhuet@parhuet.fr> (2024-11-21)
 # No maintener and SRC_URI / license issue #262
 # Replaced by media-fonts/ttf-ancient-fonts wich includes
@@ -27,7 +34,7 @@ media-fonts/symbola
 
 # Julien Roy <julien@jroy.ca> (2024-11-20)
 # Dependency with no revdeps
-# Removal in 30 days
+# Removal on 2024-12-20
 dev-python/kurbopy
 
 # Takuya Wakazono <pastalian46@gmail.com> (2024-11-18)
@@ -82,11 +89,6 @@ dev-util/rpi-imager
 # It also depends on dev-qt/qtwebengine:5, which will soon be removed.
 # Removal on 2024-11-30. Bug #780705.
 app-editors/kitscenarist
-
-# Takuya Wakazono <pastalian46@gmail.com> (2024-10-19)
-# Doesn't build anymore. Unmaintained since 2022.
-# Removal on 2024-11-19. Bug #927878.
-dev-util/glsl-language-server
 
 # Takuya Wakazono <pastalian46@gmail.com> (2024-10-18)
 # Depends on <dev-python/tree-sitter-0.22, which has been dropped.
