@@ -114,7 +114,6 @@ dev-embedded/rauc:gpt - Add GPT support
 dev-embedded/rauc:json - Add JSON support
 dev-embedded/rauc:network - Add network update support
 dev-embedded/rauc:service - Add dbus service
-dev-games/liblcf:tools - Build and install additional command line tools, including lcf2xml and lcfstrings.
 dev-java/corretto-bin:headless-awt - Don't install the X backend for AWT, needed by some GUIs
 dev-java/microsoft-openjdk-bin:headless-awt - Don't install the X backend for AWT, needed by some GUIs
 dev-lang/gnu-apl:erlang - Build the Erlang interface
@@ -259,9 +258,6 @@ games-emulation/rpcs3:discord - Enables Discord Rich Presence
 games-emulation/rpcs3:faudio - Add faudio sound backend support
 games-emulation/rpcs3:llvm - Use llvm backend for PPU cache generation
 games-emulation/rpcs3:vulkan - Build vulkan renderer
-games-engines/easyrpg-player:fluidsynth - Support FluidSynth as a MIDI synthesizer backend. Support the `--soundfont` command line option for custom soundfonts
-games-engines/easyrpg-player:harfbuzz - Use media-libs/harfbuzz for Unicode text shaping. Depends on external font support by means of the truetype USE flag
-games-engines/easyrpg-player:wildmidi - Support WildMIDI as a MIDI synthesizer backend
 games-engines/fs2_open:clang - Use Clang compiler instead of GCC
 games-engines/fs2_open:debug - Debug build to collect logfiles
 games-engines/fs2_open:discord - Enable Discord RPC support
