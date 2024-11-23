@@ -124,7 +124,7 @@ CRATES="
 	flate2@1.0.34
 	fnv@1.0.7
 	foldhash@0.1.3
-	font-types@0.7.3
+	font-types@0.8.0
 	fontconfig-parser@0.5.7
 	foreign-types-macros@0.2.3
 	foreign-types-shared@0.3.1
@@ -297,7 +297,7 @@ CRATES="
 	rayon-core@1.12.1
 	rayon@1.10.0
 	rdrand@0.4.0
-	read-fonts@0.23.2
+	read-fonts@0.24.0
 	redox_syscall@0.4.1
 	redox_syscall@0.5.7
 	redox_users@0.4.6
@@ -327,7 +327,7 @@ CRATES="
 	signal-hook-registry@1.4.2
 	signal-hook@0.3.17
 	simd-adler32@0.3.7
-	skrifa@0.24.1
+	skrifa@0.25.0
 	slab@0.4.9
 	slotmap@1.0.7
 	smallvec@1.13.2
