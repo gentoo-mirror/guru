@@ -1,0 +1,17 @@
+BDEPEND=>=dev-build/meson-0.51.0 >=dev-build/ninja-1.8.2 >=dev-libs/wayland-1.10.0 >=dev-libs/wayland-protocols-1.16 >=dev-util/wayland-scanner-1.10.0 introspection? ( dev-libs/gobject-introspection ) doc? ( dev-util/gtk-doc ) test? ( >=dev-lang/python-3.8.19 ) vala? ( dev-lang/vala ) smoke-tests? ( dev-lang/luajit dev-lua/lgi ) >=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array
+DEFINED_PHASES=compile configure install setup test
+DEPEND=>=gui-libs/gtk-4.10.5[wayland]
+DESCRIPTION=A library for using the Layer Shell Wayland protocol with GTK4.
+EAPI=8
+HOMEPAGE=https://github.com/wmww/gtk4-layer-shell
+INHERIT=meson python-any-r1
+IUSE=examples doc test smoke-tests introspection vala
+KEYWORDS=~amd64
+LICENSE=MIT
+RDEPEND=>=gui-libs/gtk-4.10.5[wayland]
+REQUIRED_USE=vala? ( introspection )
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/wmww/gtk4-layer-shell/archive/refs/tags/v1.0.4.tar.gz -> gtk4-layer-shell-1.0.4.tar.gz
+_eclasses_=toolchain-funcs	d3d42b22a610ce81c267b644bcec9b87	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	f14aba975c94ccaa9f357a27e3b17ffe	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	2fee95c11e5f883024588d4837db6802	meson	99466844dd8d4fcfb07578a76f5a9922	python-any-r1	f7b9a2fa38c69a9c2a7ad8fc9283ccf7
+_md5_=903c8e37625a25d602dd3df4c7287a9a
