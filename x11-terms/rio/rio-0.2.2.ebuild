@@ -9,10 +9,9 @@ CRATES="
 	ab_glyph@0.2.29
 	ab_glyph_rasterizer@0.1.8
 	adler2@2.0.0
-	adler32@1.2.0
 	ahash@0.8.11
 	aho-corasick@1.1.3
-	allocator-api2@0.2.19
+	allocator-api2@0.2.20
 	android_system_properties@0.1.5
 	anes@0.1.6
 	anstream@0.6.18
@@ -32,19 +31,17 @@ CRATES="
 	base64@0.22.1
 	bincode@2.0.0-rc.3
 	bincode_derive@2.0.0-rc.3
-	bit-set@0.6.0
 	bit-set@0.8.0
-	bit-vec@0.7.0
 	bit-vec@0.8.0
 	bitflags@1.3.2
 	bitflags@2.6.0
 	blake3@1.5.4
 	block2@0.5.1
 	block@0.1.6
-	borsh@1.5.2
+	borsh@1.5.3
 	bumpalo@3.16.0
 	bytecount@0.6.8
-	bytemuck@1.19.0
+	bytemuck@1.20.0
 	bytemuck_derive@1.8.0
 	byteorder-lite@0.1.0
 	byteorder@1.5.0
@@ -52,7 +49,7 @@ CRATES="
 	calloop-wayland-source@0.3.0
 	calloop@0.13.0
 	cast@0.3.0
-	cc@1.1.37
+	cc@1.2.1
 	cfg-if@0.1.10
 	cfg-if@1.0.0
 	cfg_aliases@0.1.1
@@ -60,10 +57,10 @@ CRATES="
 	ciborium-io@0.2.2
 	ciborium-ll@0.2.2
 	ciborium@0.2.2
-	clap@4.5.20
-	clap_builder@4.5.20
+	clap@4.5.21
+	clap_builder@4.5.21
 	clap_derive@4.5.18
-	clap_lex@0.7.2
+	clap_lex@0.7.3
 	clipboard-win@3.1.1
 	cocoa-foundation@0.1.2
 	cocoa@0.25.0
@@ -98,7 +95,6 @@ CRATES="
 	ctor-lite@0.1.0
 	cursor-icon@1.1.0
 	data-encoding@2.6.0
-	deflate@1.0.0
 	diff@0.1.13
 	dirs-next@1.0.2
 	dirs-sys-next@0.1.2
@@ -121,10 +117,10 @@ CRATES="
 	fdeflate@0.3.6
 	filetime@0.2.25
 	fixedbitset@0.4.2
-	flate2@1.0.34
+	flate2@1.0.35
 	fnv@1.0.7
 	foldhash@0.1.3
-	font-types@0.8.0
+	font-types@0.8.1
 	fontconfig-parser@0.5.7
 	foreign-types-macros@0.2.3
 	foreign-types-shared@0.3.1
@@ -191,7 +187,7 @@ CRATES="
 	is-terminal@0.4.13
 	is_terminal_polyfill@1.70.1
 	itertools@0.10.5
-	itoa@1.0.11
+	itoa@1.0.13
 	jni-sys@0.3.0
 	jobserver@0.1.32
 	jpeg-decoder@0.3.1
@@ -202,19 +198,19 @@ CRATES="
 	kqueue@1.0.8
 	lazy-bytes-cast@5.0.1
 	lazy_static@1.5.0
-	libc@0.2.162
+	libc@0.2.164
 	libloading@0.8.5
-	librashader-cache@0.5.1
-	librashader-common@0.5.1
-	librashader-pack@0.5.1
-	librashader-preprocess@0.5.1
-	librashader-presets@0.5.1
-	librashader-reflect@0.5.1
-	librashader-runtime@0.5.1
+	librashader-cache@0.6.2
+	librashader-common@0.6.2
+	librashader-pack@0.6.2
+	librashader-preprocess@0.6.2
+	librashader-presets@0.6.2
+	librashader-reflect@0.6.2
+	librashader-runtime@0.6.2
 	libredox@0.1.3
 	linked-hash-map@0.5.6
 	linux-raw-sys@0.4.14
-	litemap@0.7.3
+	litemap@0.7.4
 	litrs@0.4.1
 	lock_api@0.4.12
 	log@0.3.9
@@ -231,7 +227,6 @@ CRATES="
 	mio@1.0.2
 	miow@0.5.0
 	miow@0.6.0
-	naga@22.1.0
 	naga@23.0.0
 	ndk-sys@0.5.0+25.2.9519653
 	net2@0.2.39
@@ -281,7 +276,7 @@ CRATES="
 	ppv-lite86@0.2.20
 	presser@0.3.1
 	pretty_assertions@1.4.1
-	proc-macro2@1.0.89
+	proc-macro2@1.0.92
 	profiling@1.0.16
 	quick-error@2.0.1
 	quick-xml@0.36.2
@@ -302,7 +297,7 @@ CRATES="
 	redox_syscall@0.5.7
 	redox_users@0.4.6
 	regex-automata@0.1.10
-	regex-automata@0.4.8
+	regex-automata@0.4.9
 	regex-syntax@0.6.29
 	regex-syntax@0.8.5
 	regex@1.11.1
@@ -312,15 +307,15 @@ CRATES="
 	rspirv@0.12.0+sdk-1.3.268.0
 	rustc-hash@1.1.0
 	rustc-hash@2.0.0
-	rustix@0.38.39
+	rustix@0.38.41
 	ryu@1.0.18
 	same-file@1.0.6
 	scoped-tls@1.0.1
 	scopeguard@1.2.0
 	sctk-adwaita@0.10.1
-	serde@1.0.214
-	serde_derive@1.0.214
-	serde_json@1.0.132
+	serde@1.0.215
+	serde_derive@1.0.215
+	serde_json@1.0.133
 	serde_spanned@0.6.8
 	sharded-slab@0.1.7
 	shlex@1.3.0
@@ -344,15 +339,16 @@ CRATES="
 	static_assertions@1.1.0
 	strict-num@0.1.1
 	strsim@0.11.1
+	sugarloaf@0.2.2
 	svg_fmt@0.4.4
-	syn@2.0.87
+	syn@2.0.89
 	synstructure@0.13.1
 	tempdir@0.3.7
 	termcolor@1.4.1
-	thiserror-impl@1.0.68
-	thiserror-impl@2.0.1
-	thiserror@1.0.68
-	thiserror@2.0.1
+	thiserror-impl@1.0.69
+	thiserror-impl@2.0.3
+	thiserror@1.0.69
+	thiserror@2.0.3
 	thread_local@1.1.8
 	tiff@0.9.1
 	tiny-skia-path@0.11.4
@@ -373,13 +369,13 @@ CRATES="
 	tracing@0.1.40
 	ttf-parser@0.25.0
 	twox-hash@1.6.3
-	unicode-ident@1.0.13
+	unicode-ident@1.0.14
 	unicode-segmentation@1.12.0
 	unicode-width@0.1.14
 	unicode-width@0.2.0
 	unicode-xid@0.2.6
 	unsigned-varint@0.8.0
-	url@2.5.3
+	url@2.5.4
 	utf16_iter@1.0.5
 	utf8_iter@1.0.4
 	utf8parse@0.2.2
@@ -468,13 +464,13 @@ CRATES="
 	yansi@1.0.1
 	yazi@0.2.0
 	yeslogic-fontconfig-sys@5.0.0
-	yoke-derive@0.7.4
-	yoke@0.7.4
+	yoke-derive@0.7.5
+	yoke@0.7.5
 	zeno@0.2.3
 	zerocopy-derive@0.7.35
 	zerocopy@0.7.35
-	zerofrom-derive@0.1.4
-	zerofrom@0.1.4
+	zerofrom-derive@0.1.5
+	zerofrom@0.1.5
 	zerovec-derive@0.10.3
 	zerovec@0.10.4
 	zigzag@0.1.0
