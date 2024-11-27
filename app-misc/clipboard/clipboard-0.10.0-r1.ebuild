@@ -18,12 +18,13 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE="debug lto wayland X"
 
-RDEPEND="X? ( x11-libs/libXext )
+DEPEND="X? ( x11-libs/libXext )
 		wayland? ( dev-libs/wayland-protocols )
+		dev-libs/openssl
 		media-libs/alsa-lib
 "
 
-DEPEND="${RDEPEND}"
+RDEPEND="${DEPEND}"
 
 src_configure() {
 	local mycmakeargs=(

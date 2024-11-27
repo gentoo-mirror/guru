@@ -44,6 +44,8 @@ RDEPEND="
 BDEPEND="virtual/pkgconfig"
 
 src_configure() {
+	filter-flags -O*
+
 	local mycmakeargs=(
 		-DHARDINFO2_GTK3=$(usex gtk3)
 		-DHARDINFO2_QT5=0
