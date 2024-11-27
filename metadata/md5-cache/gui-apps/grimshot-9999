@@ -3,11 +3,11 @@ DEFINED_PHASES=install unpack
 DESCRIPTION=A helper for screenshots within sway
 EAPI=8
 HOMEPAGE=https://github.com/OctopusET/sway-contrib
-INHERIT=git-r3
+INHERIT=bash-completion-r1 git-r3
 IUSE=libnotify
 LICENSE=MIT
 PROPERTIES=live
-RDEPEND=app-misc/jq gui-apps/grim gui-apps/slurp gui-apps/wl-clipboard || ( gui-wm/sway gui-wm/swayfx ) !!<=gui-wm/sway-1.8.1[grimshot] libnotify? ( x11-libs/libnotify )
+RDEPEND=app-misc/jq gui-apps/grim gui-apps/slurp gui-apps/wl-clipboard || ( gui-wm/sway gui-wm/swayfx ) libnotify? ( x11-libs/libnotify )
 SLOT=0
-_eclasses_=git-r3	875eb471682d3e1f18da124be97dcc81
-_md5_=a5f04611241793ba2b31fda0a03721cd
+_eclasses_=toolchain-funcs	d3d42b22a610ce81c267b644bcec9b87	multilib	b2a329026f2e404e9e371097dda47f96	bash-completion-r1	767861f3744f589ee5291c1698b1c082	git-r3	875eb471682d3e1f18da124be97dcc81
+_md5_=1b630ea86145fc566f71905bcb0eac85

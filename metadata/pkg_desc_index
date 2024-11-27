@@ -126,7 +126,7 @@ app-backup/grub-btrfs 4.11-r1 4.12 4.13 9999: Improves Grub by adding btrfs snap
 app-backup/kopia 0.15.0: Kopia - Fast And Secure Open-Source Backup
 app-backup/kopia-ui-bin 0.15.0-r1: Kopia - Fast And Secure Open-Source Backup (Electron UI)
 app-backup/pika-backup 0.7.4-r1: Keep your data safe
-app-backup/restic-browser 0.3.1-r1: A GUI to browse and restore from restic backup repositories
+app-backup/restic-browser 0.3.1-r1 0.3.1-r2: A GUI to browse and restore from restic backup repositories
 app-backup/timeshift 23.07.1: A system restore utility for Linux
 app-backup/timeshift-autosnap 0.9-r1: Automatically creates a timeshift-snapshot when executed
 app-benchmarks/kdiskmark 3.1.4-r1: Disk benchmarking tool
@@ -252,7 +252,7 @@ app-misc/kmon 1.6.5: Linux kernel manager and activity monitor
 app-misc/ledger-live-bin 2.84.1: Manager for the Ledger hardware wallet
 app-misc/lf 27 28-r1 29 30 31 32 33: Terminal file manager
 app-misc/lyfetch 1.1: Small system information script for linux systems.
-app-misc/macchina 6.1.8 6.1.8-r1: A system information fetcher, with an (unhealthy) emphasis on performance.
+app-misc/macchina 6.4.0: A system information fetcher with an emphasis on performance.
 app-misc/mangadesk 0.7.7 0.7.8: Terminal Client for MangaDex
 app-misc/mat2 0.13.4: Metadata Anonymisation Toolkit: handy tool to trash your metadata
 app-misc/metadata-cleaner 2.5.6: Python GTK application to view and clean metadata in files, using mat2.
@@ -334,7 +334,7 @@ app-shells/zsh-async 1.8.5_p20211005 1.8.6: Run multiple asynchronous jobs with 
 app-shells/zsh-autocomplete 24.09.04 9999: Real-time type-ahead completion for Zsh.
 app-shells/zsh-autosuggestions 0.7.0-r2: Fish-like autosuggestions for zsh
 app-shells/zsh-history-substring-search 1.0.2 1.1.0: ZSH port of Fish history search (up arrow)
-app-text/OCRmyPDF 16.3.1 16.5.0: OCRmyPDF adds an OCR text layer to scanned PDF files
+app-text/OCRmyPDF 16.5.0 16.6.2: OCRmyPDF adds an OCR text layer to scanned PDF files
 app-text/cmark-gfm 0.29.0.13: GitHub's fork of cmark
 app-text/code-minimap 0.6.4 0.6.7: A high performance code minimap generator
 app-text/dooit 3.0.4: A TUI todo manager
@@ -422,19 +422,19 @@ dev-cpp/wt 4.11.0 4.11.1: Wt, C++ Web Toolkit
 dev-cpp/xtensor 0.24.4: header-only C++ library for numerical analysis with multi-dimensional arrays
 dev-cpp/xtl 0.7.5: Algorithms and containers used by the xtensor stack and the xeus stack
 dev-crystal/athena-negotiation 0.1.3 0.1.5: Framework agnostic content negotiation library
-dev-crystal/athena-spec 0.3.5 0.3.7: Common/helpful Spec compliant testing utilities
+dev-crystal/athena-spec 0.3.7 0.3.8: Common/helpful Spec compliant testing utilities
 dev-crystal/backtracer 1.2.2: Crystal shard aiming to assist with parsing backtraces into a structured form
 dev-crystal/crikey 0.1.0_p20170404: Data structure view templates for Crystal
 dev-crystal/crustache 2.4.4: {{Mustache}} for Crystal
 dev-crystal/crystal-db 0.11.0 0.13.1: Common DB API for Crystal
 dev-crystal/crystal-fnv 0.1.3: Crystal Implementation of Fowler–Noll–Vo hash
 dev-crystal/crystal-html5 0.4.0 0.5.0: Pure Crystal implementation of an HTML5-compliant Tokenizer and Parser
-dev-crystal/crystal-pg 0.26.0 0.28.0: A native, non-blocking Postgres driver for Crystal
+dev-crystal/crystal-pg 0.26.0 0.28.0 0.29.0: A native, non-blocking Postgres driver for Crystal
 dev-crystal/crystal-sqlite3 0.19.0 0.21.0: SQLite3 bindings for Crystal
 dev-crystal/crystal-xpath2 0.1.3: XPath implementation in Crystal
-dev-crystal/crystar 0.3.0 0.3.1: Crystal language Tar Module implements access to tar archives
-dev-crystal/exception_page 0.3.1 0.4.1: A library for displaying exceptional exception pages for easier debugging
-dev-crystal/habitat 0.4.7 0.4.8: Easily configure settings for Crystal projects
+dev-crystal/crystar 0.3.1 0.4.0: Crystal language Tar Module implements access to tar archives
+dev-crystal/exception_page 0.4.1 0.5.0: A library for displaying exceptional exception pages for easier debugging
+dev-crystal/habitat 0.4.9: Easily configure settings for Crystal projects
 dev-crystal/http_proxy 0.12.0: HTTP Proxy server and client written in Crystal
 dev-crystal/inflector 1.0.0: String inflectors for Crystal
 dev-crystal/jbuilder 1.0.0: Generate JSON objects with a Builder-style DSL
@@ -442,15 +442,15 @@ dev-crystal/json_mapping 0.1.1: Provides the legacy JSON.mapping macro method
 dev-crystal/kemal 1.1.2 1.6.0: Lightning Fast, Super Simple web framework
 dev-crystal/kilt 0.6.1: Generic template interface for Crystal
 dev-crystal/liquid 0.4.1: Liquid template engine for Crystal
-dev-crystal/lucky_flow 0.9.1 0.10.0: LuckyFlow is a library for testing user flows in the browser
+dev-crystal/lucky_flow 0.10.0-r1: LuckyFlow is a library for testing user flows in the browser
 dev-crystal/protodec 0.1.4 0.1.5: Command-line tool to encode and decode arbitrary protobuf data
 dev-crystal/radix 0.4.1: Radix tree implementation for Crystal language
 dev-crystal/selenium 0.12.0 0.12.1: Selenium library for Crystal
 dev-crystal/slang 1.7.3: Slim-inspired templating language for Crystal
-dev-crystal/spectator 0.11.6 0.12.0: Feature-rich testing framework for Crystal inspired by RSpec
+dev-crystal/spectator 0.12.0 0.12.1: Feature-rich testing framework for Crystal inspired by RSpec
 dev-crystal/temel 0.1.0_p20171024: Extensible Markup DSL for Crystal
 dev-crystal/water 1.0.0: A library for writing HTML in plain Crystal
-dev-crystal/webdrivers 0.4.2 0.4.3: Helps manage drivers for Selenium, such as the Chromedriver
+dev-crystal/webdrivers 0.4.3-r1: Helps manage drivers for Selenium, such as the Chromedriver
 dev-crystal/webless 0.1.0: HTTP::Client for testing HTTP::Handlers directly and maintaining cookies
 dev-crystal/webmock 0.14.0: Mock HTTP client
 dev-db/dbeaver-bin 23.3.0 24.2.2: Free universal database tool (community edition).
@@ -618,7 +618,7 @@ dev-python/PythonQwt 0.12.7 0.14.1: Qt plotting widgets for Python
 dev-python/SLPP 1.2.3: Simple lua-python parser
 dev-python/TakeTheTime 0.3.1: Take The Time, a super-neat Python library for timing chunks of code
 dev-python/adb-shell 0.4.3 0.4.4 0.4.4-r1: A Python implementation of ADB with shell and FileSync functionality.
-dev-python/ahocorasick 2.0.0: Python module implementing Aho-Corasick algorithm
+dev-python/ahocorasick 2.0.0 2.1.0: Python module implementing Aho-Corasick algorithm
 dev-python/aiomysql 0.1.1: aiomysql is a library for accessing a MySQL database from the asyncio
 dev-python/aiopg 1.4.0: Postgres integration with asyncio
 dev-python/anytree 2.12.0: Powerful and Lightweight Python Tree Data Structure with various plugins
@@ -1197,7 +1197,7 @@ gui-wm/swayfx 0.4-r1: SwayFX: Sway, but with eye candy!
 kde-apps/kwalletcli 3.03: CLI for the KDE Wallet
 kde-misc/geminipart 20231005 20241110: KPart for viewing text/gemini files
 kde-misc/kio-gemini 20240801 20241109: Gemini KIO worker
-mail-client/betterbird-bin 115.16.1: Betterbird is a fine-tuned version of Mozilla Thunderbird.
+mail-client/betterbird-bin 115.18.0: Betterbird is a fine-tuned version of Mozilla Thunderbird.
 mail-client/mailspring-bin 1.13.3: A beautiful, fast and fully open source mail client for Mac, Windows and Linux
 mail-client/proton-mail-bin 1.0.6: Beta Client for Proton Mail
 mail-filter/postfix-mta-sts-resolver 1.4.0: Daemon which provides TLS client policy for Postfix via socketmap
@@ -1715,7 +1715,7 @@ sys-process/scron 0.4: Simple cron daemon
 sys-process/snooze 0.5 9999: Run a command at a particular time
 sys-process/task-spooler 1.3.0: A scheduler for CPU tasks
 sys-process/xe 1.0-r1: Simple xargs and apply replacement with sane defaults
-virtual/crystal-db 0.13: Virtual for Crystal database drivers
+virtual/crystal-db 0.13-r1: Virtual for Crystal database drivers
 www-apps/castopod 1.4.3 1.4.5: Open-source hosting platform made for podcasters
 www-apps/code-server-bin 4.18.0 4.19.1 4.90.3: VS Code in the browser (binary version with unbundled node and ripgrep)
 www-apps/forgejo 7.0.9 8.0.3: A self-hosted lightweight software forge
@@ -1726,7 +1726,7 @@ www-apps/invidious 2024.04.27 2024.08.25.1 2024.11.10.0: Invidious is an alterna
 www-apps/laminar 1.3-r1: Fast and lightweight Continuous Integration
 www-apps/libmedium 2024.06.10: Alternative private front-end to Medium
 www-apps/mycorrhiza 1.15.1 9999: Git-based wiki engine written in Go using mycomarkup
-www-apps/pleroma 2.7.0-r1 9999: ActivityPub social networking software compatible with other Fediverse software
+www-apps/pleroma 2.7.1 9999: ActivityPub social networking software compatible with other Fediverse software
 www-apps/pleroma-fe 2.7.0 9999: Main frontend for www-apps/pleroma, inspired by qvitter
 www-apps/redlib 0.34.0 0.35.1: Private front-end to Reddit
 www-apps/rimgo 1.2.1: An alternative frontend for Imgur. Originally based on rimgu.
@@ -1740,7 +1740,7 @@ www-apps/zola 0.19.2-r1: A fast static site generator with everything built-in
 www-client/badwolf 1.3.0-r1 9999: Minimalist and privacy-oriented WebKitGTK+ browser
 www-client/browsh 1.8.2: A fully-modern text-based browser, rendering to TTY and browsers
 www-client/firefox-developer-bin 122.0 128.0: Firefox browser developer edition
-www-client/mullvad-browser-bin 13.5.9: The Mullvad Browser is developed to minimize tracking and fingerprinting.
+www-client/mullvad-browser-bin 14.0: The Mullvad Browser is developed to minimize tracking and fingerprinting.
 www-client/nyxt 3.11.8 3.12.0 9999: Nyxt - the hacker's power-browser
 www-client/vimb 3.6.0 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
 www-client/yandex-browser 24.10.2.723_p1: The web browser from Yandex
