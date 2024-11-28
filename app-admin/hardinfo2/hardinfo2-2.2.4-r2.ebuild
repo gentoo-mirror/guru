@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit cmake xdg-utils
+inherit cmake flag-o-matic xdg-utils
 
 DESCRIPTION="System Information and Benchmark for Linux Systems"
 HOMEPAGE="https://www.hardinfo2.org"
@@ -42,6 +42,11 @@ RDEPEND="
 	fwupd? ( sys-apps/fwupd )
 "
 BDEPEND="virtual/pkgconfig"
+
+src_prepare() {
+	sed -i -e 's:-O0 ::' CMakeLists.txt || die
+	cmake_src_prepare
+}
 
 src_configure() {
 	filter-flags -O*
