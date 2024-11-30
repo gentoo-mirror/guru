@@ -10,7 +10,7 @@ inherit distutils-r1
 
 DESCRIPTION="Quickly generate HTML documentation from a JSON schema "
 HOMEPAGE="
-	https://github.com/coveoss/json-schema-for-humans/
+	https://github.com/coveooss/json-schema-for-humans/
 	https://pypi.org/project/json-schema-for-humans/
 "
 SRC_URI="https://github.com/coveooss/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.gh.tar.gz"

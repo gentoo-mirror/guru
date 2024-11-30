@@ -390,12 +390,16 @@ IUSE="test"
 RESTRICT="test"
 
 DEPEND="
-		>=dev-libs/glib-2.76.3
-		>=gui-libs/gtk-4.10.4
-		>=gui-libs/libadwaita-1.3.3
-		>=media-libs/libpulse-15.0[glib]
-		>=dev-libs/openssl-3.0.10
+		>=dev-libs/glib-2.76.3:2
+		>=dev-libs/openssl-3.0.10:=
+		>=gui-libs/gtk-4.10.4:4
+		>=gui-libs/libadwaita-1.3.3:1
 		>=media-libs/alsa-lib-1.2.9
+		>=media-libs/libpulse-15.0[glib]
+		sys-libs/zlib
+		x11-libs/cairo
+		x11-libs/gdk-pixbuf:2
+		x11-libs/pango
 "
 RDEPEND="${DEPEND}"
 BDEPEND="
@@ -416,10 +420,8 @@ src_unpack() {
 
 src_configure() {
 	# handled by xdg & gnome2-utils eclass
-	sed -i \
-		-e '/^gnome.post_install(/,/)/d' \
-		src/meson.build \
-		|| die
+	sed -i '/^meson.add_install_script/d' meson.build || die
+	sed -i '/^gnome.post_install(/,/)/d' src/meson.build || die
 
 	# appdata dir is deprecated
 	sed -i \
