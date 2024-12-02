@@ -12,14 +12,14 @@ SRC_URI="https://github.com/fulhax/ncpamixer/archive/${PV}.tar.gz -> ${P}.tar.gz
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc +wide"
+IUSE="+wide"
 
 DEPEND="
 	media-libs/libpulse
 	sys-libs/ncurses:=
 "
 RDEPEND="${DEPEND}"
-BDEPEND="doc? ( virtual/pandoc )"
+BDEPEND="virtual/pandoc"
 
 CMAKE_USE_DIR="${S}/src"
 
@@ -38,10 +38,10 @@ src_configure() {
 
 src_compile() {
 	cmake_src_compile
-	use doc && { pandoc -s -t man src/man/ncpamixer.1.md -o ncpamixer.1 || die; }
+	pandoc -s -t man src/man/ncpamixer.1.md -o ncpamixer.1 || die
 }
 
 src_install() {
 	cmake_src_install
-	use doc && doman ncpamixer.1
+	doman ncpamixer.1
 }

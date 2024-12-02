@@ -193,7 +193,7 @@ CRATES="
 	yeslogic-fontconfig-sys@3.2.0
 "
 
-PYTHON_COMPAT=( python3_{10..12} )
+PYTHON_COMPAT=( python3_{10..13} )
 # <time@0.3.35
 # https://github.com/time-rs/time/issues/693
 RUST_MAX_VER="1.79.0"
@@ -216,6 +216,7 @@ BDEPEND="
 	virtual/pkgconfig
 	${PYTHON_DEPS}"
 DEPEND="
+	dev-libs/oniguruma
 	media-libs/fontconfig
 	media-libs/freetype
 	media-libs/harfbuzz
@@ -231,11 +232,20 @@ pkg_setup() {
 }
 
 src_prepare() {
+	cargo_src_unpack
+
 	# Apply patch <https://github.com/rust-x-bindings/rust-xcb/pull/87> for python 3.9 and above.
-	( cd "${WORKDIR}"/cargo_home/gentoo/xcb-0.8.2 && \
-		eapply "${FILESDIR}"/rust-xcb-0.8.2-python-3.9.patch )
+	( cd "${WORKDIR}"/cargo_home/gentoo/xcb-0.8.2 \
+		&& eapply "${FILESDIR}"/rust-xcb-0.8.2-python-3.9.patch )
 
 	default_src_prepare
+}
+
+src_compile() {
+	# onig_sys crate (as of silicon-0.5.2-r1 and onig_sys 69.8.1) does not support
+	# gcc-15. See #945303.
+	export RUSTONIG_SYSTEM_LIBONIG=1
+	cargo_src_compile
 }
 
 src_install() {
