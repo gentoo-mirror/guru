@@ -7,10 +7,10 @@ PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=flit
 inherit distutils-r1 pypi
 
-DESCRIPTION="Personal advice utility for Gentoo package maintainers: Repology plugin"
+DESCRIPTION="Personal advice utility for Gentoo package maintainers: pkgcheck plugin"
 HOMEPAGE="
 	https://find-work.sysrq.in/
-	https://pypi.org/project/find-work-repology/
+	https://pypi.org/project/find-work-pkgcheck/
 "
 
 LICENSE="WTFPL-2"
@@ -18,15 +18,15 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="
-	<app-portage/gentoopm-2[${PYTHON_USEDEP}]
 	dev-python/click[${PYTHON_USEDEP}]
 	dev-python/click-aliases[${PYTHON_USEDEP}]
 	>=dev-python/pydantic-2[${PYTHON_USEDEP}]
 	<dev-python/pydantic-3[${PYTHON_USEDEP}]
-	>=dev-python/repology-client-0.0.2[${PYTHON_USEDEP}]
-	<dev-python/repology-client-2[${PYTHON_USEDEP}]
 	dev-python/sortedcontainers[${PYTHON_USEDEP}]
-	>=dev-util/find-work-0.91[${PYTHON_USEDEP}]
+	>=dev-util/find-work-1[${PYTHON_USEDEP}]
+	<dev-util/find-work-2[${PYTHON_USEDEP}]
+	dev-util/pkgcheck[${PYTHON_USEDEP}]
+	sys-apps/pkgcore[${PYTHON_USEDEP}]
 "
 BDEPEND="
 	test? (
@@ -35,12 +35,6 @@ BDEPEND="
 "
 
 distutils_enable_tests pytest
-
-python_test() {
-	cd "${BUILD_DIR}/install$(python_get_sitedir)" || die
-	distutils_write_namespace find_work
-	epytest "${S}"
-}
 
 src_install() {
 	distutils-r1_src_install
