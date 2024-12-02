@@ -5,7 +5,7 @@ EAPI=8
 
 inherit xdg-utils desktop
 
-MY_PV="1.0.1-a.17"
+MY_PV="${PV/_alpha/-a.}"
 MY_P="zen"
 
 DESCRIPTION="Zen Browser - A Firefox-based browser focused on privacy"
