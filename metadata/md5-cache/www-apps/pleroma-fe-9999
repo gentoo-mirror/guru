@@ -1,4 +1,4 @@
-BDEPEND=net-libs/nodejs sys-apps/yarn >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=net-libs/nodejs[npm] sys-apps/yarn >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile install postinst unpack
 DESCRIPTION=Main frontend for www-apps/pleroma, inspired by qvitter
 EAPI=8
@@ -9,4 +9,4 @@ PROPERTIES=live
 RESTRICT=network-sandbox
 SLOT=0
 _eclasses_=git-r3	875eb471682d3e1f18da124be97dcc81
-_md5_=48c0aaf38d3a7d2b51a2ef0fd2870999
+_md5_=8d2bc5e92326e2e63fa04ca4b063bc00

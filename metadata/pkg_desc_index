@@ -174,7 +174,6 @@ app-editors/amp 0.7.1: A complete text editor for your terminal.
 app-editors/emacs-lsp-booster 0.2.1: Emacs LSP performance booster
 app-editors/imhex 1.35.4-r1: A hex editor for reverse engineers, programmers, and eyesight
 app-editors/kakoune-lsp 18.0.3: Kakoune Language Server Protocol Client
-app-editors/kitscenarist 0.7.2_rc9: Simple and powerful application for creating screenplays.
 app-editors/l3afpad 0.8.18.1.11: Simple GTK3 text editor (successor to leafpad)
 app-editors/lapce 0.4.2-r1 9999: Lightning-fast and Powerful Code Editor written in Rust
 app-editors/mined 2015.25: A powerful text editor with extensive Unicode and CJK support
@@ -555,7 +554,7 @@ dev-libs/lzfse 9999: LZFSE compression library and command line tool.
 dev-libs/md4c 0.4.8_p20220115 0.5.2: C Markdown parser. Fast, SAX-like interface, CommonMark Compliant.
 dev-libs/mtxclient 0.9.2 0.10.0: Client API library for Matrix, built on top of libcurl
 dev-libs/nativefiledialog-extended 1.2.0: File dialog library with C and C++ bindings, based on nativefiledialog
-dev-libs/open62541 1.4.6: Open source C implementation of OPC UA
+dev-libs/open62541 1.4.8: Open source C implementation of OPC UA
 dev-libs/polyseed 1.0.0 2.0.0 9999: Mnemonic seed library for Monero and other CryptoNote-based currencies.
 dev-libs/properties-cpp 0.0.2-r1: Simple convenience library for handling properties and signals in C++11
 dev-libs/qschematic 1.6.0: Library for creating flowcharts and engineering diagrams
@@ -622,6 +621,7 @@ dev-python/adb-shell 0.4.3 0.4.4 0.4.4-r1: A Python implementation of ADB with s
 dev-python/ahocorasick 2.0.0 2.1.0: Python module implementing Aho-Corasick algorithm
 dev-python/aiomysql 0.1.1: aiomysql is a library for accessing a MySQL database from the asyncio
 dev-python/aiopg 1.4.0: Postgres integration with asyncio
+dev-python/aisuite 0.1.6: Simple, unified interface to multiple Generative AI providers
 dev-python/anytree 2.12.0: Powerful and Lightweight Python Tree Data Structure with various plugins
 dev-python/arpy 2.3.0: Library for accessing ar files
 dev-python/ascim 0.1.1: Manipulate ASCII art as you would do with raster images
@@ -742,7 +742,7 @@ dev-python/moderngl 5.12.0: Modern OpenGL binding for python
 dev-python/moderngl-window 2.4.6: A cross platform utility library for ModernGL
 dev-python/mollie-api-python 3.6.0: Mollie API client for Python
 dev-python/moreorless 0.4.0: Wrapper to make difflib.unified_diff more fun to use
-dev-python/mpxj 13.6.0-r1: Read/Write project management files (MPP, MSPDI, MPX, PMXML, etc)
+dev-python/mpxj 13.7.0: Read/Write project management files (MPP, MSPDI, MPX, PMXML, etc)
 dev-python/msrest 0.7.1: AutoRest swagger generator Python client runtime
 dev-python/mwclient 0.10.1: Unofficial lib for MediaWiki API
 dev-python/nkdfu 0.2: Python DFU tool for updating Nitrokeys' firmware
@@ -915,13 +915,13 @@ dev-util/catppuccin-catwalk 1.3.2: Soothing pastel previews for the high-spirite
 dev-util/catppuccin-whiskers 2.4.0: Soothing port creation tool for the high-spirited!
 dev-util/cmakelang 0.6.13: Provides Quality Assurance (QA) tools for cmake
 dev-util/coq-lsp 0.1.9: Visual Studio Code Extension and Language Server Protocol for Coq
-dev-util/deblob 0.7 0.8 9999: remove binary executables from a directory
+dev-util/deblob 0.8 0.9 9999: remove binary executables from a directory
 dev-util/distribution-gpg-keys 1.105: Collection of GPG keys used in Linux Distributions
 dev-util/dmg2img 9999 20201227: Convert Apple disk images to IMG format.
 dev-util/dockerfile-language-server 0.12.0 0.13.0: A language server for Dockerfiles
 dev-util/eclipse-parallel-bin 4.28: Eclipse IDE for Scientific Computing (C, C++, Fortran)
 dev-util/exercism 3.1.0 3.2.0: Command line client for https://exercism.io
-dev-util/find-work 0.91.2 0.990.0 9999: Personal advice utility for Gentoo package maintainers
+dev-util/find-work 0.990.0 1.0.0 9999: Personal advice utility for Gentoo package maintainers
 dev-util/find-work-bugzilla 0.2.2 0.3.0: Personal advice utility for Gentoo package maintainers: Bugzilla plugin
 dev-util/find-work-pkgcheck 0.2.1-r1 0.3.0: Personal advice utility for Gentoo package maintainers: pkgcheck plugin
 dev-util/find-work-repology 0.2.1-r1 0.3.0: Personal advice utility for Gentoo package maintainers: Repology plugin
@@ -1173,7 +1173,7 @@ gui-apps/wl-mirror 0.12.2 0.16.5: A simple Wayland output mirror client
 gui-apps/wl-scripts 1.2.3-r1 9999: A set of utils for wlroots window managers
 gui-apps/wlgreet 0.4.1 0.5.0: Wayland based greeter for greetd
 gui-apps/wlogout 1.1.1 1.2.2-r1 9999: A wayland based logout menu
-gui-apps/wlopm 0.1.0 9999: wlr-output-power-management-v1 client
+gui-apps/wlopm 0.1.0-r1 9999: wlr-output-power-management-v1 client
 gui-apps/wlr-randr 0.4.1 9999: xrandr clone for wlroots compositors
 gui-apps/wlsunset 0.4.0 9999: Day/night gamma adjustments for Wayland
 gui-apps/wob 0.14.2 0.15.1-r1: Lightweight overlay volume/backlight/progress/anything bar for Wayland
@@ -1248,7 +1248,7 @@ media-gfx/oda-file-converter 23.5.0.0: For converting between different versions
 media-gfx/pdf4qt 1.4.0.0-r1 9999: Open source PDF WYSIWYG editor based on Qt
 media-gfx/qview 5.0 6.1-r1: Practical and minimal image viewer
 media-gfx/sic 0.22.4: Accessible image processing and conversion from the terminal tool.
-media-gfx/silicon 0.5.2-r1: Create beautiful image of your code
+media-gfx/silicon 0.5.2-r1 0.5.2-r2 0.5.3: Create beautiful image of your code
 media-gfx/superpaper 2.2.1: Advanced multi monitor wallpaper manager
 media-gfx/svgcleaner 0.9.5: svgcleaner could help you to clean up your SVG files from the unnecessary data.
 media-gfx/swayimg 3.4 3.5: A lightweight image viewer for Wayland display servers
@@ -1312,7 +1312,7 @@ media-sound/mopidy 3.4.2: An extensible music server written in Python.
 media-sound/mpd-mpris 0.3.1 0.4.0 0.4.1: An implementation of the MPRIS protocol for MPD.
 media-sound/mpvc 1.1.4-r1: mpc-like tool which connects to existing mpv instances through sockets.
 media-sound/musikcube 3.0.1 3.0.2: Excellent terminal music player, support almost every known sound system.
-media-sound/ncpamixer 1.3.7: A ncurses mixer for PulseAudio inspired by pavucontrol
+media-sound/ncpamixer 1.3.8: A ncurses mixer for PulseAudio inspired by pavucontrol
 media-sound/netcat-cpi 2014.04.29-r1: Kernel module edition of the Cycles Per Instruction (2014) album
 media-sound/noson-app 5.6.6-r1 5.6.8: The essential to control music from your SONOS devices on Linux platforms
 media-sound/nuclear-bin 0.6.30: Nuclear is a streaming program that pulls content from free sources on internet
@@ -1345,7 +1345,7 @@ media-video/kooha 2.2.3-r2: GTK4 screen recorder for Wayland
 media-video/lossless-cut 3.59.1-r1: Lossless video/audio editing: export media without reencoding, powered by ffmpeg
 media-video/manimgl 9999: Animation engine for explanatory math videos
 media-video/mediaelch 2.10.6 2.12.0 9999: Video metadata scraper
-media-video/megapixels 1.4.3: A GTK3 camera application that knows how to deal with the media request api
+media-video/megapixels 1.4.3-r1: GTK4 camera application that knows how to deal with the media request api
 media-video/mpc-qt 24.06: Media Player Classic Qute Theater
 media-video/obs-multi-rtmp 0.5.0.4 9999: OBS Simulcast support plugin
 media-video/obs-streamfx 0.12.0.9999 9999: OBS® Studio plugin which adds many new effects.
@@ -1356,7 +1356,7 @@ media-video/syncplay 1.7.3: Client/server to synchronize media playback
 media-video/uxplay 1.67-r1 1.68.3-r1 1.70-r1: AirPlay Unix mirroring server
 media-video/walksnail-osd-tool 0.3.0-r1 9999: Tool for rendering OSDs over Walksnail DVR recordings
 media-video/wl-screenrec 0.1.6-r2: High performance screen/audio recorder for wlroots
-media-video/wlrobs 1.0 1.1 9999: OBS plugin that allows you to screen capture on wlroots based compositors
+media-video/wlrobs 1.1 9999: OBS plugin that allows you to screen capture on wlroots based compositors
 media-video/ytarchive 0.4.0 0.5.0: Youtube livestream downloader
 mpv-plugin/SimpleUndo 2023.09.25: Ctrl-Z return to the previous seekbar position, Ctrl-Z again redo
 mpv-plugin/SmartCopyPaste 3.1: Gives mpv the capability to copy and paste while being smart and customizable
@@ -1389,11 +1389,11 @@ net-dialup/atinout 0.9.1-r1: AT commands as input are sent to modem and response
 net-dialup/minimodem 0.24-r2 9999-r1: General-purpose software audio FSK modem
 net-dialup/syncterm 1.1 9999: BBS (bulletin board system) terminal
 net-dialup/tcpser 1.1.4: Hayes Smartmodem emulator over TCP/IP
-net-dialup/tio 3.7: Simple TTY terminal application
+net-dialup/tio 3.8: Simple TTY terminal application
 net-dns/AdGuardHome 0.107.49 0.107.50 0.107.51: Network-wide ads & trackers blocking DNS server like Pi-Hole with web ui
 net-dns/blocky 0.22 0.23 0.24 9999: Fast and lightweight DNS proxy as ad-blocker with many features written in Go
 net-dns/noip-duc 3.3.0: No-IP Dynamic Update Client (https://www.noip.com)
-net-fs/httpdirfs 1.2.0: Filesystem to mount HTTP directory listings, with a permanent cache
+net-fs/httpdirfs 1.2.7: Filesystem to mount HTTP directory listings, with a permanent cache
 net-fs/hubicfuse 3.0.1: Support for mounting HubiC drive in GNU/Linux
 net-im/Quaternion 0.0.96.1: A Qt-based IM client for Matrix
 net-im/WasIstLos 1.6.5 1.7.0: An unofficial WhatsApp desktop application for Linux
@@ -1513,7 +1513,7 @@ net-nntp/inn 2.7.1: InterNetNews - the Internet meets Netnews
 net-nntp/nzb-monkey-go 0.1.16: Golang version of the NZB Monkey with included NZB direct search
 net-nntp/pan 0.159-r1 0.160 0.161: A newsreader for GNOME
 net-p2p/bisq-bin 1.9.14-r1: The decentralized bitcoin exchange (non-atomic, with arbitration)
-net-p2p/dogecoin-qt 1.14.8 9999: Dogecoin Core Qt for desktop. Downloaded blockchain is under 2.2GB. Much secure.
+net-p2p/dogecoin-qt 1.14.8 1.14.9 9999: Dogecoin Core Qt for desktop. Downloaded blockchain is under 2.2GB. Much secure.
 net-p2p/feather 2.6.7-r1 2.6.8 9999: A free, open-source Monero wallet
 net-p2p/fragments 3.0.1-r1: Fragments is an easy to use BitTorrent client
 net-p2p/gridcoin 5.4.8.0 5.4.8.0_p1: Proof-of-Stake based cryptocurrency that rewards BOINC computation
@@ -1605,7 +1605,7 @@ sci-mathematics/frama-c-studia 25.0: Studia plugin for frama-c
 sci-mathematics/frama-c-users 25.0: Users plugin for frama-c
 sci-mathematics/frama-c-variadic 25.0: Variadic function transformation plugin for frama-c
 sci-mathematics/pyromaths 21.8.2-r1: Create maths exercises in LaTeX and PDF format
-sci-mathematics/rink 0.8.0 9999: Unit conversion tool, similar to frink
+sci-mathematics/rink 0.8.0-r1 9999: Unit conversion tool, similar to frink
 sci-mathematics/rstudio-desktop-bin 2023.09.0_p463 2023.09.1_p494: IDE for R and Python
 sci-misc/boinc-wrapper 26018-r2 26018-r3: Wrapper to use non-BOINC apps with BOINC
 sci-physics/openmodelica 1.23.1-r1 1.24.0: Open-source Modelica-based modeling and simulation environment
@@ -1660,7 +1660,7 @@ sys-auth/pam-gnupg 0.4-r1: Unlock GnuPG keys on login
 sys-block/partclone 0.3.20 0.3.32: Partition cloning tool
 sys-boot/customrescuecd-x86_64-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/grml-rescueboot 0.6.1: grub2 script to add ISO images to the grub2 boot menu
-sys-boot/limine 7.0.0 7.0.3 7.0.5 7.3.0 7.5.0 7.9.2 8.0.5 8.0.6 8.0.7 8.0.9 8.0.11 8.0.12 8.0.13 8.0.14 8.1.1 8.1.2 8.3.2 8.4.0: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
+sys-boot/limine 7.0.0 7.0.3 7.0.5 7.3.0 7.5.0 7.9.2 8.0.5 8.0.6 8.0.7 8.0.9 8.0.11 8.0.12 8.0.13 8.0.14 8.1.1 8.1.2 8.3.2 8.4.0 8.5.0: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
 sys-boot/mkusb 23.2.0: CLI and GUI for creating bootable live USB, with optional persistent storage
 sys-boot/ventoy-bin 1.0.97 1.0.98: Creator of bootable USBs, with ability to copy ISOs, persistence storage
 sys-boot/zfsbootmenu 1.12.0 2.2.2 2.3.0: ZFS bootloader for root-on-ZFS systems
@@ -1712,7 +1712,7 @@ sys-power/system76-power 1.2.0-r1 1.2.1-r1 9999: System76 Power Management Tool 
 sys-process/forkstat 0.03.02-r2: Logs process fork(), exec() and exit() activity
 sys-process/gotop 4.2.0: A terminal based graphical activity monitor inspired by gtop and vtop
 sys-process/nq 0.4: Unix command line queue utility
-sys-process/nvtop 2.0.3 3.0.1 3.0.2 9999: (h)top like task monitor for AMD, Intel, NVIDIA, … GPUs
+sys-process/nvtop 2.0.3 3.0.2 9999: (h)top like task monitor for AMD, Intel, NVIDIA, … GPUs
 sys-process/pipectl 0.5.0: a simple named pipe management utility
 sys-process/scron 0.4: Simple cron daemon
 sys-process/snooze 0.5 9999: Run a command at a particular time
