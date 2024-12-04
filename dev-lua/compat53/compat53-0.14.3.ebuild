@@ -3,7 +3,7 @@
 
 EAPI=8
 
-LUA_COMPAT=( lua5-1 luajit )
+LUA_COMPAT=( lua5-{1..4} luajit )
 
 inherit edo lua toolchain-funcs
 
@@ -39,8 +39,8 @@ lua_src_compile() {
 	local u=""
 	for u in *.c; do
 		edo $(tc-getCC) -shared -fPIC \
-		${CPPFLAGS} -DCOMPAT53_PREFIX="compat53" \
-		${CFLAGS} $(lua_get_CFLAGS) -Ic-api \
+		${CPPFLAGS} \
+		${CFLAGS} $(lua_get_CFLAGS) \
 		${SOFLAGS} \
 		${LDFLAGS} $(lua_get_LIBS) \
 		-o "${u/.c/.so}" ${u} c-api/compat-5.3.c
@@ -61,5 +61,6 @@ lua_src_install() {
 
 src_install() {
 	lua_foreach_impl lua_src_install
+	doheader c-api/*
 	einstalldocs
 }

@@ -61,7 +61,7 @@ src_prepare() {
 }
 
 src_configure() {
-	local platforms="gbm-kms;wayland"
+	local platforms="gbm-kms;atomic-kms;wayland"
 	use X && platforms="${platforms};x11"
 
 	local mycmakeargs=(
