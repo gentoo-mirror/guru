@@ -1,0 +1,14 @@
+BDEPEND=dev-util/wayland-scanner
+DEFINED_PHASES=compile install prepare
+DEPEND=dev-libs/wayland
+DESCRIPTION=wlr-output-power-management-v1 client
+EAPI=8
+HOMEPAGE=https://git.sr.ht/~leon_plickat/wlopm/
+INHERIT=bash-completion-r1 toolchain-funcs
+KEYWORDS=~amd64 ~arm64
+LICENSE=GPL-3
+RDEPEND=dev-libs/wayland
+SLOT=0
+SRC_URI=https://git.sr.ht/~leon_plickat/wlopm/archive/v1.0.0.tar.gz -> wlopm-1.0.0.tar.gz
+_eclasses_=toolchain-funcs	d3d42b22a610ce81c267b644bcec9b87	multilib	b2a329026f2e404e9e371097dda47f96	bash-completion-r1	767861f3744f589ee5291c1698b1c082
+_md5_=bb273e866edb085ac0c5466f1468bd9e
