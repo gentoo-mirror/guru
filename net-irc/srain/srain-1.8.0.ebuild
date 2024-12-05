@@ -37,7 +37,7 @@ BDEPEND="
 "
 
 PATCHES=(
-	"${FILESDIR}/${P}-gcc15.patch"
+	"${FILESDIR}/${PN}-1.7.0-gcc15.patch"
 )
 
 python_check_deps() {
