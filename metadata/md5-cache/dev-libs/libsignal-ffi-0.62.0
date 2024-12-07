@@ -1,4 +1,4 @@
-BDEPEND=dev-libs/protobuf llvm_slot_18? ( sys-devel/clang:18 ) llvm_slot_19? ( sys-devel/clang:19 ) llvm_slot_18? ( || ( dev-lang/rust-bin:1.81.0[llvm_slot_18] dev-lang/rust:1.81.0[llvm_slot_18] dev-lang/rust-bin:1.80.1[llvm_slot_18] dev-lang/rust:1.80.1[llvm_slot_18] dev-lang/rust-bin:1.79.0[llvm_slot_18] dev-lang/rust:1.79.0[llvm_slot_18] ) ) llvm_slot_19? ( || ( dev-lang/rust-bin:1.83.0[llvm_slot_19] dev-lang/rust:1.83.0[llvm_slot_19] dev-lang/rust-bin:1.82.0[llvm_slot_19] dev-lang/rust:1.82.0[llvm_slot_19] ) )
+BDEPEND=dev-libs/protobuf llvm_slot_18? ( sys-devel/clang:18 ) llvm_slot_19? ( sys-devel/clang:19 ) llvm_slot_18? ( || ( dev-lang/rust-bin:1.81.0[llvm_slot_18] dev-lang/rust:1.81.0[llvm_slot_18] dev-lang/rust-bin:1.80.1[llvm_slot_18] dev-lang/rust:1.80.1[llvm_slot_18] dev-lang/rust-bin:1.79.0[llvm_slot_18] dev-lang/rust:1.79.0[llvm_slot_18] dev-lang/rust-bin:1.78.0[llvm_slot_18] dev-lang/rust:1.78.0[llvm_slot_18] ) ) llvm_slot_19? ( || ( dev-lang/rust-bin:1.83.0[llvm_slot_19] dev-lang/rust:1.83.0[llvm_slot_19] dev-lang/rust-bin:1.82.0[llvm_slot_19] dev-lang/rust:1.82.0[llvm_slot_19] ) )
 DEFINED_PHASES=compile configure install setup test unpack
 DESCRIPTION=A C ABI library which exposes Signal protocol logic
 EAPI=8
@@ -10,5 +10,5 @@ LICENSE=AGPL-3 AGPL-3 Apache-2.0 BSD-2 BSD ISC MIT Unicode-DFS-2016
 REQUIRED_USE=^^ ( llvm_slot_18 llvm_slot_19 )
 SLOT=0
 SRC_URI=https://github.com/signalapp/libsignal/archive/v0.62.0.tar.gz -> libsignal-ffi-0.62.0.gh.tar.gz https://jroy.ca/dist/libsignal-ffi-0.62.0-vendor.tar.xz
-_eclasses_=llvm-utils	c989cff79c0976415f459e367a83dff9	llvm-r1	46caa2e787d84171daa2bb798034426e	toolchain-funcs	d3d42b22a610ce81c267b644bcec9b87	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	f14aba975c94ccaa9f357a27e3b17ffe	multiprocessing	1e32df7deee68372153dca65f4a7c21f	rust	34c01e04a384273d9460a608f9191d9f	rust-toolchain	3f822985d9297438ed2443aa1fbdf33e	cargo	e6cfec50f283cbb9c8ffcbeaeb4aaf0f
+_eclasses_=llvm-utils	c989cff79c0976415f459e367a83dff9	llvm-r1	46caa2e787d84171daa2bb798034426e	toolchain-funcs	d3d42b22a610ce81c267b644bcec9b87	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	f14aba975c94ccaa9f357a27e3b17ffe	multiprocessing	1e32df7deee68372153dca65f4a7c21f	rust	1fb4c4490469d2989085a52c6216eb61	rust-toolchain	3f822985d9297438ed2443aa1fbdf33e	cargo	e6cfec50f283cbb9c8ffcbeaeb4aaf0f
 _md5_=9fe0269c5d0ad293ca84871e456c0065
