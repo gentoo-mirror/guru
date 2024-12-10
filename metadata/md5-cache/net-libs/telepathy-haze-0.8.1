@@ -1,6 +1,6 @@
-BDEPEND=virtual/pkgconfig test? ( dev-python/pygobject:3 || ( ( dev-lang/python:3.12 dev-python/twisted[python_targets_python3_12(-)] ) ( dev-lang/python:3.11 dev-python/twisted[python_targets_python3_11(-)] ) ( dev-lang/python:3.10 dev-python/twisted[python_targets_python3_10(-)] ) ) )
+BDEPEND=virtual/pkgconfig test? ( dev-python/pygobject:3 || ( ( dev-lang/python:3.13 dev-python/twisted[python_targets_python3_13(-)] ) ( dev-lang/python:3.12 dev-python/twisted[python_targets_python3_12(-)] ) ( dev-lang/python:3.11 dev-python/twisted[python_targets_python3_11(-)] ) ( dev-lang/python:3.10 dev-python/twisted[python_targets_python3_10(-)] ) ) )
 DEFINED_PHASES=setup
-DEPEND=dev-libs/dbus-glib dev-libs/glib:2 net-im/pidgin[dbus] net-libs/telepathy-glib || ( dev-lang/python:3.12 dev-lang/python:3.11 dev-lang/python:3.10 ) dev-libs/libxslt dev-util/glib-utils
+DEPEND=dev-libs/dbus-glib dev-libs/glib:2 net-im/pidgin:=[dbus] net-libs/telepathy-glib sys-apps/dbus || ( dev-lang/python:3.13 dev-lang/python:3.12 dev-lang/python:3.11 dev-lang/python:3.10 ) dev-libs/libxslt dev-util/glib-utils
 DESCRIPTION=Telepathy connection manager providing libpurple supported protocols
 EAPI=8
 HOMEPAGE=https://telepathy.freedesktop.org https://developer.pidgin.im/wiki/TelepathyHaze
@@ -8,9 +8,9 @@ INHERIT=python-any-r1
 IUSE=test
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
-RDEPEND=dev-libs/dbus-glib dev-libs/glib:2 net-im/pidgin[dbus] net-libs/telepathy-glib
+RDEPEND=dev-libs/dbus-glib dev-libs/glib:2 net-im/pidgin:=[dbus] net-libs/telepathy-glib sys-apps/dbus
 RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://telepathy.freedesktop.org/releases/telepathy-haze/telepathy-haze-0.8.1.tar.gz
 _eclasses_=multiprocessing	1e32df7deee68372153dca65f4a7c21f	toolchain-funcs	d3d42b22a610ce81c267b644bcec9b87	multilib	b2a329026f2e404e9e371097dda47f96	python-utils-r1	42c5abe4a656a4993a06a4fc61dbdd12	python-any-r1	6ddb5e75c10db046f89ebe39c85e1d82
-_md5_=cf7f86da196b4fd877616fa0581c63cc
+_md5_=4584df13db5782254f985ee707f6b230
