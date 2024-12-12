@@ -23,9 +23,9 @@ BDEPEND="
 	dev-lang/nasm
 	sys-apps/findutils
 	$(llvm_gen_dep "
-		sys-devel/llvm:\${LLVM_SLOT}[${MY_LLVM_FLAGS}]
-		sys-devel/clang:\${LLVM_SLOT}[${MY_LLVM_FLAGS}]
-		sys-devel/lld:\${LLVM_SLOT}
+		llvm-core/llvm:\${LLVM_SLOT}[${MY_LLVM_FLAGS}]
+		llvm-core/clang:\${LLVM_SLOT}[${MY_LLVM_FLAGS}]
+		llvm-core/lld:\${LLVM_SLOT}
 	")
 	cd-efi? ( sys-fs/mtools )
 "

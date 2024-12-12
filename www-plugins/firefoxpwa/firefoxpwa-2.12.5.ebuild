@@ -429,8 +429,8 @@ RDEPEND="${DEPEND}"
 BDEPEND="
 	lto? (
 		!custom-cflags? (
-			sys-devel/clang
-			sys-devel/lld
+			llvm-core/clang
+			llvm-core/lld
 		)
 	)
 	!static? ( virtual/pkgconfig )

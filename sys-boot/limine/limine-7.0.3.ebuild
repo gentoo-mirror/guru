@@ -19,9 +19,9 @@ BDEPEND="
 	app-alternatives/gzip
 	dev-lang/nasm
 	sys-apps/findutils
-	sys-devel/clang[${MY_LLVM_FLAGS}]
-	sys-devel/lld
-	sys-devel/llvm[${MY_LLVM_FLAGS}]
+	llvm-core/clang[${MY_LLVM_FLAGS}]
+	llvm-core/lld
+	llvm-core/llvm[${MY_LLVM_FLAGS}]
 
 	cd-efi? ( sys-fs/mtools )
 "
