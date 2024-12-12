@@ -389,7 +389,7 @@ dev-build/FoBiS 3.0.5-r1 3.0.6: FoBiS.py, a Fortran Building System for poor men
 dev-build/cargo-make 0.37.23: Rust task runner and build tool
 dev-build/fpm 0.9.0 0.10.0: Fortran Package Manager (fpm)
 dev-build/fypp 3.1 3.2: Fypp - Python powered Fortran preprocessor
-dev-build/just 1.36.0 1.37.0: Just a command runner (with syntax inspired by 'make')
+dev-build/just 1.37.0 1.38.0: Just a command runner (with syntax inspired by 'make')
 dev-build/pdpmake 2.0.1: Public domain POSIX make
 dev-build/qtilitools 0.1.2: Scripts/commands used in the Qtilities organization
 dev-build/xmake 2.9.6 9999: A cross-platform build utility based on Lua
@@ -466,12 +466,12 @@ dev-elixir/hex 1.0.1-r1: Package manager for the Erlang VM
 dev-embedded/arduino-cli 1.0.3 1.0.4: Next-generation arduino command line tool
 dev-embedded/bcm2-utils 0.9.8: Utilities for Broadcom-based cable modems
 dev-embedded/esp-coredump 1.10.0 1.11.0: Utility that helps users to retrieve and analyse core dumps
-dev-embedded/esp-idf 5.3.1-r1: Espressif IoT Development Framework
+dev-embedded/esp-idf 5.3.1-r1 5.3.2: Espressif IoT Development Framework
 dev-embedded/esp-idf-kconfig 2.2.0 2.3.0: Kconfig tooling for esp-idf
 dev-embedded/esp-idf-monitor 1.4.0 1.5.0: Python object-oriented database
-dev-embedded/esp-idf-nvs-partition-gen 0.1.3 0.1.4: Parses ESP-IDF panic handler output acts as a GDB server over stdin/stdout
+dev-embedded/esp-idf-nvs-partition-gen 0.1.4 0.1.6: Parses ESP-IDF panic handler output acts as a GDB server over stdin/stdout
 dev-embedded/esp-idf-panic-decoder 1.1.0 1.2.1 1.2.1-r1: Parses ESP-IDF panic handler output acts as a GDB server over stdin/stdout
-dev-embedded/esp-idf-size 1.5.0 1.6.0: Firmware size analysis for ESP-IDF
+dev-embedded/esp-idf-size 1.5.0 1.6.0 1.6.1: Firmware size analysis for ESP-IDF
 dev-embedded/freertos-gdb 1.0.2 1.0.3: Python module for operating with freeRTOS-kernel objects in GDB
 dev-embedded/idf-component-manager 2.0.3 2.0.4: Tool for installing ESP-IDF components
 dev-embedded/mv88e6xxx-dump 0.2.0_pre20210327: Dump information about Marvell mv88e6xxx Ethernet switches
@@ -598,10 +598,10 @@ dev-ml/psq 0.2.0-r2 0.2.1: Functional Priority Search Queues for OCaml
 dev-ml/randomconv 0.1.3: Convert from random bytes to random native numbers
 dev-ml/stringext 1.6.0-r2: Extra string functions for OCaml
 dev-ml/uri 4.4.0: RFC3986 URI parsing library for OCaml
-dev-nim/cligen 1.7.2 1.7.8: Infer & generate command-line interface/option/argument parser
+dev-nim/cligen 1.7.8: Infer & generate command-line interface/option/argument parser
 dev-nim/inim 0.6.1 1.0.0: Interactive Nim Shell / REPL / Playground
 dev-nim/nake 1.9.4-r1: make-like for Nim. Describe your builds as tasks!
-dev-nim/nimbus 1.1.3: A Nim build system
+dev-nim/nimbus 1.1.3 1.1.4: Packaging-friendly Nim build system
 dev-nim/noise 0.1.8 0.1.10: Nim implementation of linenoise
 dev-perl/File-Util 4.131591: Easy, versatile, portable file handling
 dev-perl/Term-Animation 2.6: Animated ASCII Art support for Perl
@@ -612,7 +612,7 @@ dev-python/ManimPango 0.4.4 0.6.0: Binding for Pango, to use with Manim.
 dev-python/NSKeyedUnArchiver 1.5: Unserializes binary|text|file|memory plist data to Python dict
 dev-python/PyPubSub 4.0.3-r1: Python Publish-Subscribe Package
 dev-python/PyQt5-stubs 5.15.2.0 5.15.6.0: Stubs for PyQt5
-dev-python/PythonQwt 0.12.7 0.14.1: Qt plotting widgets for Python
+dev-python/PythonQwt 0.12.7 0.14.1 0.14.2: Qt plotting widgets for Python
 dev-python/SLPP 1.2.3: Simple lua-python parser
 dev-python/TakeTheTime 0.3.1: Take The Time, a super-neat Python library for timing chunks of code
 dev-python/adb-shell 0.4.3 0.4.4 0.4.4-r1: A Python implementation of ADB with shell and FileSync functionality.
@@ -811,8 +811,8 @@ dev-python/python-fire 0.6.0: Library for automatically generating command line 
 dev-python/python-http-client 3.3.5-r1: HTTP REST client, simplified for Python
 dev-python/python-lsp-isort 0.1: isort plugin for the Python LSP Server
 dev-python/python-lsp-mypy 0.6.9: Mypy plugin for the Python LSP Server
-dev-python/python-magnumclient 4.6.0: A client for the OpenStack Magnum API
-dev-python/python-octaviaclient 3.7.0: A client for the OpenStack Octavia API
+dev-python/python-magnumclient 4.7.0: A client for the OpenStack Magnum API
+dev-python/python-octaviaclient 3.9.0: A client for the OpenStack Octavia API
 dev-python/python-olm 3.2.16: Python bindings for dev-libs/olm
 dev-python/python-pidfile 3.0.0-r1 3.1.1: PIDFile context processor. Supported py2 and py3
 dev-python/python-socketio 5.11.3 5.11.4: Python implementation of the Socket.IO realtime server.
@@ -912,6 +912,7 @@ dev-util/bruno-bin 1.9.0 1.9.0-r1: Opensource IDE For Exploring and Testing Api'
 dev-util/bump-my-version 0.28.0 0.28.1: Version bump your Python project
 dev-util/bump2version 1.0.1: Version-bump your software with a single command!
 dev-util/cargo-post 0.1.7: A cargo wrapper that executes a post build script after a successful build.
+dev-util/catalyst-lab 1.6.0: An automation tool for building Gentoo release stages and binhost packages.
 dev-util/catppuccin-catwalk 1.3.2: Soothing pastel previews for the high-spirited!
 dev-util/catppuccin-whiskers 2.4.0: Soothing port creation tool for the high-spirited!
 dev-util/cmakelang 0.6.13: Provides Quality Assurance (QA) tools for cmake
@@ -1029,6 +1030,7 @@ games-puzzle/krank 8: Little casual game
 games-puzzle/superflu-riteurnz 1.5.5: Artisanal video-game about Superflu, the useless super-hero
 games-puzzle/superflu-riteurnz-data 12: Artisanal video-game about Superflu, the useless super-hero (data files)
 games-puzzle/xdemineur 2.1.1-r1: Minesweeper clone for the X11 windowing system
+games-roguelike/cataclysm-dda 0h 9999: A turn-based survival game set in a post-apocalyptic world
 games-rpg/open-adventure 1.16 1.17 1.18: Forward-port of the Crowther/Woods Adventure 2.5
 games-rpg/primordia 3.6.70667: A cyberpunk point-and-click adventure game
 games-rpg/sacred-demo 1.0.0: Like Diablo, isometric view, good rating, about a two hours of the gameplay
@@ -1745,7 +1747,7 @@ www-client/mullvad-browser-bin 14.0.3: The Mullvad Browser is developed to minim
 www-client/nyxt 3.11.8 3.12.0 9999: Nyxt - the hacker's power-browser
 www-client/vimb 3.6.0 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
 www-client/yandex-browser 24.10.4.808_p1: The web browser from Yandex
-www-client/zen-bin 1.0.1_alpha19 1.0.1_alpha22: Zen Browser - A Firefox-based browser focused on privacy
+www-client/zen-bin 1.0.1_alpha19 1.0.1_alpha22 1.0.2_beta0 1.0.2_beta1: Zen Browser - A Firefox-based browser focused on privacy
 www-misc/dufs 0.40.0: Dufs is a distinctive utility file server
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits
 www-misc/gorss 0.3: Go Terminal Feed Reader

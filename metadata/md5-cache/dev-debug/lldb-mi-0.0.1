@@ -1,6 +1,6 @@
 BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.20.5
 DEFINED_PHASES=compile configure install prepare setup test
-DEPEND=dev-debug/lldb:= llvm_slot_15? ( sys-devel/llvm:15 ) llvm_slot_16? ( sys-devel/llvm:16 ) llvm_slot_17? ( sys-devel/llvm:17 ) llvm_slot_18? ( sys-devel/llvm:18 ) llvm_slot_19? ( sys-devel/llvm:19 ) test? ( dev-cpp/gtest )
+DEPEND=llvm-core/lldb:= llvm_slot_15? ( llvm-core/llvm:15 ) llvm_slot_16? ( llvm-core/llvm:16 ) llvm_slot_17? ( llvm-core/llvm:17 ) llvm_slot_18? ( llvm-core/llvm:18 ) llvm_slot_19? ( llvm-core/llvm:19 ) test? ( dev-cpp/gtest )
 DESCRIPTION=LLDB Machine Interface Driver
 EAPI=8
 HOMEPAGE=https://github.com/lldb-tools/lldb-mi
@@ -8,10 +8,10 @@ INHERIT=cmake llvm-r1
 IUSE=test +llvm_slot_19 llvm_slot_15 llvm_slot_16 llvm_slot_17 llvm_slot_18
 KEYWORDS=~amd64 ~x86
 LICENSE=Apache-2.0-with-LLVM-exceptions
-RDEPEND=dev-debug/lldb:= llvm_slot_15? ( sys-devel/llvm:15 ) llvm_slot_16? ( sys-devel/llvm:16 ) llvm_slot_17? ( sys-devel/llvm:17 ) llvm_slot_18? ( sys-devel/llvm:18 ) llvm_slot_19? ( sys-devel/llvm:19 )
+RDEPEND=llvm-core/lldb:= llvm_slot_15? ( llvm-core/llvm:15 ) llvm_slot_16? ( llvm-core/llvm:16 ) llvm_slot_17? ( llvm-core/llvm:17 ) llvm_slot_18? ( llvm-core/llvm:18 ) llvm_slot_19? ( llvm-core/llvm:19 )
 REQUIRED_USE=^^ ( llvm_slot_15 llvm_slot_16 llvm_slot_17 llvm_slot_18 llvm_slot_19 )
 RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://github.com/lldb-tools/lldb-mi/archive/refs/tags/0.0.1.tar.gz -> lldb-mi-0.0.1.tar.gz
 _eclasses_=toolchain-funcs	fa554cc3cff825d21dfe3f24841e29cf	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	f14aba975c94ccaa9f357a27e3b17ffe	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	10a50dfaf728b802fcfd37f8d0da9056	llvm-utils	c989cff79c0976415f459e367a83dff9	llvm-r1	82e169a45855e1a973292c8208318140
-_md5_=9029fd8c591c0f36028ccb6fe8c990d9
+_md5_=6c20de8df97b57b542fb2b8e1f2bca08
