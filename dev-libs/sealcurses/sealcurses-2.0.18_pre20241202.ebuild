@@ -5,7 +5,7 @@ EAPI=8
 
 inherit cmake flag-o-matic
 
-COMMIT="fa54118f11e373e787835d440095bd7537cea5e5"
+COMMIT="310348a6b88678a47d371c7edfcc1e8c76ca1677"
 DESCRIPTION="SDL Emulation and Adaptation Layer for Curses"
 HOMEPAGE="https://git.skyjake.fi/skyjake/sealcurses"
 SRC_URI="https://git.skyjake.fi/skyjake/${PN}/archive/${COMMIT}.tar.gz -> ${P}.tar.gz"

@@ -5,7 +5,7 @@ EAPI=8
 
 inherit cmake xdg
 
-DESCRIPTION="(h)top like task monitor for AMD, Intel, NVIDIA, … GPUs"
+DESCRIPTION="(h)top like task monitor for AMD, NVIDIA, Intel and other GPUs"
 HOMEPAGE="https://github.com/Syllo/nvtop"
 
 if [[ "${PV}" == "9999" ]] ; then
@@ -26,7 +26,7 @@ RDEPEND="
 	video_cards_amdgpu? ( x11-libs/libdrm[video_cards_amdgpu] )
 	video_cards_nvidia? ( x11-drivers/nvidia-drivers )
 	video_cards_freedreno? ( x11-libs/libdrm[video_cards_freedreno] )
-	sys-libs/ncurses:0=
+	sys-libs/ncurses[unicode(+)?]
 "
 
 DEPEND="${RDEPEND}"
@@ -35,9 +35,12 @@ BDEPEND="
 	virtual/pkgconfig
 "
 
+PATCHES=(
+	"${FILESDIR}/${PN}-3.1.0-fix-drm-missing.patch"
+)
+
 src_configure() {
 	local mycmakeargs=(
-		-DCMAKE_INSTALL_PREFIX="${EPREFIX}/usr"
 		-DCURSES_NEED_WIDE=$(usex unicode)
 		-DINTEL_SUPPORT=$(usex video_cards_intel)
 		-DNVIDIA_SUPPORT=$(usex video_cards_nvidia)
