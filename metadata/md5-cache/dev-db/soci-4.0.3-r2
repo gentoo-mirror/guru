@@ -5,13 +5,12 @@ DESCRIPTION=SOCI - The C++ Database Access Library
 EAPI=8
 HOMEPAGE=https://sourceforge.net/projects/soci/
 INHERIT=cmake
-IUSE=odbc sqlite oracle postgres mysql +shared +static test ubsan lto cxx11
+IUSE=odbc sqlite oracle postgres mysql +static test ubsan lto +cxx11
 KEYWORDS=~amd64
 LICENSE=Boost-1.0
 RDEPEND=>=dev-libs/boost-1.85.0-r1 odbc? ( dev-db/unixODBC ) sqlite? ( dev-db/sqlite ) oracle? ( dev-db/oracle-instantclient[sdk] ) postgres? ( dev-db/postgresql ) mysql? ( dev-db/mysql )
-REQUIRED_USE=|| ( shared static )
 RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://sourceforge.net/projects/soci/files/soci/soci-4.0.3/soci-4.0.3.tar.gz/download -> soci-4.0.3.tar.gz
 _eclasses_=toolchain-funcs	fa554cc3cff825d21dfe3f24841e29cf	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	f14aba975c94ccaa9f357a27e3b17ffe	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	10a50dfaf728b802fcfd37f8d0da9056
-_md5_=2ea23a490bb5294bb0a05c94f2c84498
+_md5_=02dd89d21830d0040f4c8ae58868da0a
