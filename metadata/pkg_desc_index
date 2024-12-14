@@ -313,7 +313,7 @@ app-portage/portage-lostfiles 0.5.5: A simple script to identify files not track
 app-portage/portagecfg 2.1.3 2.2.2 2.3.0 2.4.0: Utility to write Portage config files in an easy manner.
 app-portage/quantum-resolver 9999: A WIP portage dependency resolver
 app-portage/showbuild 0.9.1-r1: Script to follow log of running portage builds
-app-shells/carapace 1.0.6-r1 1.0.7: Multi-shell multi-command argument completer
+app-shells/carapace 1.1.0: Multi-shell multi-command argument completer
 app-shells/direnv 2.32.3 9999: Environment variable manager for shell
 app-shells/elvish 0.19.2 0.20.1 0.21.0: Expressive programming language and a versatile interactive shell
 app-shells/fre 0.4.1: A command line frecency tracking tool
@@ -354,7 +354,7 @@ app-text/smu 1.5 9999: Simple markup - markdown like syntax
 app-text/the-platinum-searcher-bin 2.2.0: Fast CLI search tool, faster than grep, ack, silver_searcher (ag)
 app-text/tldr 3.2.0: Python command line client for tldr pages
 app-text/typst 0.12.0: A markup-based typesetting system for the sciences
-app-text/vale 3.7.0 3.7.1: A syntax-aware linter for prose built with speed and extensibility in mind
+app-text/vale 3.7.1 3.9.1: A syntax-aware linter for prose built with speed and extensibility in mind
 app-vim/ale 3.3.0: Check syntax in Vim asynchronously and fix files, with LSP support
 app-vim/ansible-vim 3.3 3.4: vim plugin: sytax highlighting for Ansible's common file types
 app-vim/apkbuild-vim 20210911: vim plugin: edit and work with APKBUILD files
@@ -372,7 +372,7 @@ app-vim/rainbow_csv 1.10.0_pre20240705 9999: 🌈Rainbow CSV - Vim plugin: Highl
 app-vim/tempus 2.0.0.20210514: Accessible themes for Vim
 app-vim/tex-conceal 20210409: vim plugin: extends the Conceal feature for LaTeX
 app-vim/themis 1.6.0 1.7.0: A testing framework for Vim script
-app-vim/vader 0.3.0 0.3.0_p20200213: A simple Vimscript test framework
+app-vim/vader 0.3.0 0.3.0_p20240430: A simple Vimscript test framework
 app-vim/vala-syntax 20200502: vim plugin: vala language support
 app-vim/vim-crystal 2022.09.04 2023.03.15: vim plugin: Crystal language support
 app-vim/vim-mediawiki 0.10.1: MediaWiki syntax highlight; preview; interlinks autocompletion by coc.nvim
@@ -380,7 +380,7 @@ app-vim/vim-nix 9999: vim plugin: Vim configuration files for Nix
 app-vim/vim-sensible 1.2 2.0: vim plugin: a universal set of defaults that (hopefully) everyone can agree on
 app-vim/vimwiki-cli 1.1.0: Command-line interface for Vimwiki
 app-vim/wayland-clipboard 0.2.1: vim plugin:
-app-vim/yats 2023.08.24 2024.05.31: vim plugin: Yet Another TypeScript Syntax
+app-vim/yats 2024.05.31 2024.08.17: vim plugin: Yet Another TypeScript Syntax
 app-voices/rhvoice-arina 4.0: RHVoice voice: arina (ru)
 app-voices/rhvoice-bdl 4.1: RHVoice voice: bdl (en)
 app-voices/rhvoice-clb 4.0: RHVoice voice: clb (en)
@@ -457,7 +457,8 @@ dev-db/pg_query_vala 0.1.0_pre20240326-r1 0.1.0_pre20241001: Thin wrapper around
 dev-db/pg_repack 1.5.0: Reorganize tables in PostgreSQL databases with minimal locks
 dev-db/psequel 0.2.0-r1: Run your SQL query
 dev-db/rum 1.3.13-r1 1.3.14: RUM access method - inverted index with additional information in posting lists
-dev-db/sqlcmd 1.8.0 1.8.1: The MSSQL SQLCMD CLI tool
+dev-db/soci 4.0.3-r1: SOCI - The C++ Database Access Library
+dev-db/sqlcmd 1.8.2: The MSSQL SQLCMD CLI tool
 dev-db/tdscpp 20240707: C++ library to communicate with Microsoft SQL server
 dev-debug/gdb-dashboard 0.17.2 0.17.3: Modular visual interface for GDB in Python
 dev-debug/lldb-mi 0.0.1 9999: LLDB Machine Interface Driver
@@ -507,7 +508,7 @@ dev-lang/odin 2024.08 2024.09: The Data-Oriented Language for Sane Software Deve
 dev-lang/opencilk 1.1 2.1: The OpenCilk concurrency platform for parallel programming
 dev-lang/opencilk-bin 1.1 2.1: The OpenCilk concurrency platform for parallel programming
 dev-lang/quickjs 2024.01.13-r1: Small embeddable Javascript engine
-dev-lang/swift 5.10.1 5.10.1-r1 5.10.1-r2 6.0.1 6.0.1-r1 6.0.2: A high-level, general-purpose, multi-paradigm, compiled programming language
+dev-lang/swift 5.10.1 5.10.1-r1 5.10.1-r2 6.0.1 6.0.1-r1 6.0.2 6.0.3: A high-level, general-purpose, multi-paradigm, compiled programming language
 dev-lang/swift-bootstrap 1.0: A virtual package providing a base Swift to bootstrap future versions with.
 dev-lang/wabt 1.0.34: The WebAssembly Binary Toolkit
 dev-libs/M_CLI2 3.2.0: M_CLI2 - parse Unix-like command line arguments from Fortran
@@ -558,7 +559,7 @@ dev-libs/polyseed 1.0.0 2.0.0 9999: Mnemonic seed library for Monero and other C
 dev-libs/properties-cpp 0.0.2-r1: Simple convenience library for handling properties and signals in C++11
 dev-libs/qschematic 1.6.0: Library for creating flowcharts and engineering diagrams
 dev-libs/randomx 1.2.1 1.2.1-r1: Proof of work algorithm based on random code execution
-dev-libs/sealcurses 2.0.18_pre20240921 2.0.18_pre20241014: SDL Emulation and Adaptation Layer for Curses
+dev-libs/sealcurses 2.0.18_pre20241014 2.0.18_pre20241202: SDL Emulation and Adaptation Layer for Curses
 dev-libs/sirit 0_p20220725: A runtime SPIR-V assembler
 dev-libs/supercop 0_p20200827: Fast cryptographic operations for Monero wallets
 dev-libs/tbtools 0.3.2-r2: Thunderbolt/USB4 debugging tools
@@ -658,7 +659,7 @@ dev-python/convertdate 2.4.0: Utils for converting between date formats and calc
 dev-python/cryptg 0.4 0.5.0 0.5.0_p0: Cryptographic utilities for Telegram
 dev-python/dacite 1.8.1: This module simplifies creation of data classes (PEP 557) from dictionaries
 dev-python/daff 1.3.46: The daff can produce and apply tabular diffs
-dev-python/daiquiri 3.2.3: Library to configure Python logging easily
+dev-python/daiquiri 3.2.3 3.3.0: Library to configure Python logging easily
 dev-python/darkdetect 0.8.0: Detect OS dark mode from Python
 dev-python/dasbus 1.7-r1: DBus library in Python 3
 dev-python/dataclasses-json 0.6.7: Easily serialize Data Classes to and from JSON
@@ -773,7 +774,7 @@ dev-python/ptpython 3.0.29: Python REPL build on top of prompt-toolkit
 dev-python/py-nanoid 9999: Python Nanoid
 dev-python/pyagentx 0.4-r1: Python AgentX Implementation
 dev-python/pyclip 0.7.0-r2 9999: Python clipboard module
-dev-python/pydantic-settings 2.6.0 2.6.1: Settings management using Pydantic
+dev-python/pydantic-settings 2.6.1 2.7.0: Settings management using Pydantic
 dev-python/pydispatcher 2.0.7: Multi-producer-multi-consumer signal dispatching mechanism
 dev-python/pydub 0.25.1: Manipulate audio with an simple and easy high level interface
 dev-python/pyfiglet 0.8_p1: Pure-python FIGlet implementation
@@ -1129,14 +1130,14 @@ gui-apps/nwg 0: meta package package for nwg-shell
 gui-apps/nwg-bar 0.1.5 0.1.6: GTK3-based button bar for wlroots-based compositors
 gui-apps/nwg-displays 0.3.21 0.3.22: Output management utility for sway and Hyprland
 gui-apps/nwg-dock 0.3.6 0.3.9 0.4.1: GTK3-based dock for sway
-gui-apps/nwg-dock-hyprland 0.3.0 0.3.1 0.3.2: GTK3-based dock for Hyprland
+gui-apps/nwg-dock-hyprland 0.3.2 0.3.3: GTK3-based dock for Hyprland
 gui-apps/nwg-drawer 0.5.1 0.5.2: Application drawer for wlroots-based Wayland compositors
 gui-apps/nwg-icon-picker 0.1.1 9999: GTK icon chooser with a text search option
 gui-apps/nwg-launchers 0.5.0 0.6.3 0.7.1.1 9999: GTK+ launchers for sway, i3 and some other WMs
 gui-apps/nwg-menu 0.1.4 0.1.5 0.1.6: enuStart plugin to nwg-panel, also capable of working standalone
-gui-apps/nwg-panel 0.9.44 0.9.45 0.9.46 0.9.47 0.9.48 0.9.49 0.9.50 9999: GTK3-based panel for sway and Hyprland Wayland compositors
-gui-apps/nwg-shell 0.5.38 0.5.39: libraries an common functions for the nwg-shell project
-gui-apps/nwg-shell-config 0.5.46 0.5.47 0.5.48 0.5.49 0.5.50 0.5.51: nwg-shell configuration utility
+gui-apps/nwg-panel 0.9.50 0.9.51 0.9.52 0.9.53 0.9.54 9999: GTK3-based panel for sway and Hyprland Wayland compositors
+gui-apps/nwg-shell 0.5.39 0.5.40 0.5.41 0.5.42 0.5.43: libraries an common functions for the nwg-shell project
+gui-apps/nwg-shell-config 0.5.51 0.5.52 0.5.53 0.5.54: nwg-shell configuration utility
 gui-apps/openrefine 3.7.9: Wikidata batch editor, Wikimedia Commons mass upload tool
 gui-apps/organicmaps 9999: Offline maps and navigation using OpenStreetMap data
 gui-apps/packettracer 8.2.0 8.2.2: Cisco's packet tracer
@@ -1194,13 +1195,13 @@ gui-libs/text-engine 0.1.1-r3 9999: A lightweight rich-text framework for GTK 4
 gui-libs/xdg-desktop-portal-hyprland 1.3.3-r3 1.3.8 9999: xdg-desktop-portal backend for hyprland
 gui-wm/cage 0.2.0 9999: A Wayland kiosk
 gui-wm/hyprland-contrib 0.1-r1 9999: Community-maintained extensions for hyprland
-gui-wm/miracle-wm 0.3.7-r1: Tiling Wayland compositor based on Mir
+gui-wm/miracle-wm 0.3.7-r1 0.4.0: Tiling Wayland compositor based on Mir
 gui-wm/niri 0.1.9-r1 0.1.10.1: Scrollable-tiling Wayland compositor
 gui-wm/phoc 0.41.0 0.42.1 0.43.0: Wayland compositor for mobile phones
 gui-wm/river 0.3.5-r1: A dynamic tiling Wayland compositor
 gui-wm/swayfx 0.4-r1: SwayFX: Sway, but with eye candy!
 kde-apps/kwalletcli 3.03: CLI for the KDE Wallet
-kde-misc/geminipart 20231005 20241110: KPart for viewing text/gemini files
+kde-misc/geminipart 20241110 20241121: KPart for viewing text/gemini files
 kde-misc/kio-gemini 20240801 20241109: Gemini KIO worker
 mail-client/betterbird-bin 115.18.0: Betterbird is a fine-tuned version of Mozilla Thunderbird.
 mail-client/mailspring-bin 1.13.3: A beautiful, fast and fully open source mail client for Mac, Windows and Linux
@@ -1314,7 +1315,6 @@ media-sound/mopidy 3.4.2: An extensible music server written in Python.
 media-sound/mpd-mpris 0.3.1 0.4.0 0.4.1: An implementation of the MPRIS protocol for MPD.
 media-sound/mpvc 1.1.4-r1: mpc-like tool which connects to existing mpv instances through sockets.
 media-sound/musikcube 3.0.1 3.0.2: Excellent terminal music player, support almost every known sound system.
-media-sound/ncpamixer 1.3.8: A ncurses mixer for PulseAudio inspired by pavucontrol
 media-sound/netcat-cpi 2014.04.29-r1: Kernel module edition of the Cycles Per Instruction (2014) album
 media-sound/noson-app 5.6.6-r1 5.6.8: The essential to control music from your SONOS devices on Linux platforms
 media-sound/nuclear-bin 0.6.30: Nuclear is a streaming program that pulls content from free sources on internet
@@ -1382,7 +1382,7 @@ net-analyzer/netsniff-ng 0.6.8-r1: high performance network sniffer for packet i
 net-client/amfora 1.8.0 1.9.2: A fancy terminal browser for the Gemini protocol.
 net-client/castor 0.8.18 0.9.0-r1: A graphical browser for plain-text protocols
 net-client/kristall 0.3-r2 0.4: Visual cross-platform gemini browser
-net-client/lagrange 1.18.0 1.18.3: Desktop GUI client for browsing Geminispace
+net-client/lagrange 1.18.3 1.18.4: Desktop GUI client for browsing Geminispace
 net-client/offpunk 1.9.1: Offline-First Gemini/Web/Gopher/RSS reader and browser
 net-client/starfish 1.2.0 1.3.1: A Gemini browser for elementary OS
 net-client/telescope 0.9 0.10.1: w3m-like browser for Gemini
@@ -1661,7 +1661,7 @@ sys-auth/pam-gnupg 0.4-r1: Unlock GnuPG keys on login
 sys-block/partclone 0.3.20 0.3.32: Partition cloning tool
 sys-boot/customrescuecd-x86_64-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/grml-rescueboot 0.6.1: grub2 script to add ISO images to the grub2 boot menu
-sys-boot/limine 7.0.0 7.0.3 7.0.5 7.3.0 7.5.0 7.9.2 8.0.5 8.0.6 8.0.7 8.0.9 8.0.11 8.0.12 8.0.13 8.0.14 8.1.1 8.1.2 8.3.2 8.4.0 8.5.0: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
+sys-boot/limine 7.0.0 7.0.3 7.0.5 7.3.0 7.5.0 7.9.2 8.0.5 8.0.6 8.0.7 8.0.9 8.0.11 8.0.12 8.0.13 8.0.14 8.1.1 8.1.2 8.3.2 8.4.0 8.5.0 8.6.0: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
 sys-boot/mkusb 23.2.0: CLI and GUI for creating bootable live USB, with optional persistent storage
 sys-boot/ventoy-bin 1.0.97 1.0.98: Creator of bootable USBs, with ability to copy ISOs, persistence storage
 sys-boot/zfsbootmenu 1.12.0 2.2.2 2.3.0: ZFS bootloader for root-on-ZFS systems
@@ -1712,7 +1712,7 @@ sys-power/system76-power 1.2.0-r1 1.2.1-r1 9999: System76 Power Management Tool 
 sys-process/forkstat 0.03.02-r2: Logs process fork(), exec() and exit() activity
 sys-process/gotop 4.2.0: A terminal based graphical activity monitor inspired by gtop and vtop
 sys-process/nq 0.4: Unix command line queue utility
-sys-process/nvtop 2.0.3 3.0.2 9999: (h)top like task monitor for AMD, Intel, NVIDIA, … GPUs
+sys-process/nvtop 3.1.0 9999: (h)top like task monitor for AMD, NVIDIA, Intel and other GPUs
 sys-process/pipectl 0.5.0: a simple named pipe management utility
 sys-process/scron 0.4: Simple cron daemon
 sys-process/snooze 0.5 9999: Run a command at a particular time

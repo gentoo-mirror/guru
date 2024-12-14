@@ -106,6 +106,9 @@ dev-cpp/wt:pango - Enable x11-libs/pango, wich is used for improved font support
 dev-cpp/xtensor:openmp - Enable parallel assignment loop using OpenMP
 dev-cpp/xtensor:tbb - Enable parallel assignment loop using dev-cpp/tbb
 dev-cpp/xtensor:xsimd - Enable SIMD accelaration using dev-cpp/xsimd
+dev-db/soci:cxx11 - Enable c++11 support
+dev-db/soci:shared - Enable dynamic linking with shared objects
+dev-db/soci:ubsan - Enable running with UB sanitizer
 dev-dotnet/gtk-sharp:atk - Build the ATK bindings.
 dev-dotnet/gtk-sharp:gdk - Build the GDK bindings.
 dev-dotnet/gtk-sharp:pango - Build the Pango bindings.
@@ -474,7 +477,6 @@ media-sound/musikcube:portaudio - Build plugin to support portaudio
 media-sound/musikcube:pulseaudio - Build plugin to support pulseaudio.
 media-sound/musikcube:sndio - Build plugin to support sndio
 media-sound/musikcube:systemd - Build plugin to support MPRIS using systemd.
-media-sound/ncpamixer:wide - Add ncurses wide characters support
 media-sound/nulloy:skins - Without this flag - you can choose qt5 themes not only for preferences
 media-sound/spotify-player:daemon - Enables running the app as a daemon
 media-sound/spotify-player:image - Enables basic image support for album artwork
@@ -706,6 +708,7 @@ sys-libs/iceoryx:ccache - Enable ccache support
 sys-power/linux-tools-power-x86:pstate-tracer - Install utility to debug and tune the performance of the {amd,intel}_pstate drivers
 sys-process/nq:shell - Use shell implementation
 sys-process/nq:tq - Install tq, a tmux & screen wrapper
+sys-process/nvtop:unicode - Enable support for ncurses Unicode choice
 www-apps/forgejo:acct - User and group management via acct-*/git packages
 www-client/badwolf:webkit41 - Use net-libs/webkit-gtk:4.1 (uses libsoup3 and so allows HTTP/2) instead of net-libs/webkit-gtk:4
 www-client/mullvad-browser-bin:X - Add support for X11
