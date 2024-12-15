@@ -5,7 +5,7 @@ EAPI=8
 
 inherit xdg-utils desktop
 
-MY_PV="1.0.1-a.22"
+MY_PV="${PV/_beta/-b.}"
 MY_P="zen"
 
 DESCRIPTION="Zen Browser - A Firefox-based browser focused on privacy"
@@ -15,6 +15,7 @@ SRC_URI="https://github.com/zen-browser/desktop/releases/download/${MY_PV}/${MY_
 S="${WORKDIR}"
 LICENSE="MPL-2.0"
 SLOT="0"
+KEYWORDS="~amd64"
 
 RDEPEND="
 	dev-libs/expat
