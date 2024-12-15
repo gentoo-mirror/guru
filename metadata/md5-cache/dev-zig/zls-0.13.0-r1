@@ -1,0 +1,13 @@
+BDEPEND=|| ( dev-lang/zig:0.13 dev-lang/zig-bin:0.13 ) virtual/pkgconfig
+DEFINED_PHASES=compile configure install postinst prepare setup test unpack
+DESCRIPTION=The officially unofficial Ziglang language server
+EAPI=8
+HOMEPAGE=https://zigtools.org/zls/ https://github.com/zigtools/zls
+INHERIT=zig
+KEYWORDS=~amd64
+LICENSE=MIT
+RDEPEND=|| ( >=dev-lang/zig-0.12.0 >=dev-lang/zig-bin-0.12.0 )
+SLOT=0
+SRC_URI=https://github.com/zigtools/zls/archive/refs/tags/0.13.0.tar.gz -> zls-0.13.0.tar.gz https://codeberg.org/BratishkaErik/distfiles/releases/download/zls-0.13.0/zls-0.13.0-version_data.tar.xz https://github.com/ziglibs/known-folders/archive/0ad514dcfb7525e32ae349b9acc0a53976f3a9fa.tar.gz -> known_folders-12209cde192558f8b3dc098ac2330fc2a14fdd211c5433afd33085af75caa9183147.tar.gz https://github.com/ziglibs/diffz/archive/ef45c00d655e5e40faf35afbbde81a1fa5ed7ffb.tar.gz -> diffz-1220102cb2c669d82184fb1dc5380193d37d68b54e8d75b76b2d155b9af7d7e2e76d.tar.gz
+_eclasses_=multiprocessing	1e32df7deee68372153dca65f4a7c21f	edo	367e103a74bf77e6a8da7894d999fa3c	toolchain-funcs	fa554cc3cff825d21dfe3f24841e29cf	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	f14aba975c94ccaa9f357a27e3b17ffe	linux-info	ea4122ba1d8791a12b78e53f9510a2e3	zig-utils	52d461a2abcfdeb90344b40e902c0f6e	zig	f80fe3fcec92cab551ff46f36f74ca77
+_md5_=53acdfc047d27232d609f6f094b7adae
