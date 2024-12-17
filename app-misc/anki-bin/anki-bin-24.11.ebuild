@@ -35,10 +35,10 @@ LICENSE="0BSD AGPL-3+ BSD CC-BY-4.0 GPL-3+ Unlicense public-domain"
 # Dependent crate licenses
 LICENSE+="
 	Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD-2 CC0-1.0 ISC MIT
-	MPL-2.0 Unicode-DFS-2016 ZLIB
+	MPL-2.0 Unicode-3.0 Unicode-DFS-2016 ZLIB
 "
 # Manually added crate licenses
-LICENSE+=" Unicode-3.0 openssl"
+LICENSE+=" openssl"
 SLOT="0"
 KEYWORDS="~amd64"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"

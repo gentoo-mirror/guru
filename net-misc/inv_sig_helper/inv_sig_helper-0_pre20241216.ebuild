@@ -84,8 +84,6 @@ CRATES="
 	once_cell@1.19.0
 	openssl-macros@0.1.1
 	openssl-probe@0.1.5
-	openssl-sys@0.9.103
-	openssl@0.10.66
 	parking_lot@0.12.2
 	parking_lot_core@0.9.10
 	percent-encoding@2.3.1
@@ -176,9 +174,14 @@ CRATES="
 	winreg@0.52.0
 "
 
+CRATE_PATHS_OVERRIDE="
+	openssl-sys@0.9.104
+	openssl@0.10.68
+"
+
 inherit cargo systemd
 
-COMMIT="5025e49e6106f93ec06d0e3fd542a51e1c44c25a"
+COMMIT="23932bfa05397e5dfa2844128f0bee7207aabb0a"
 DESCRIPTION="Rust service that decrypts YouTube signatures and manages player information"
 HOMEPAGE="https://github.com/iv-org/inv_sig_helper"
 SRC_URI="
@@ -192,6 +195,11 @@ LICENSE="AGPL-3"
 LICENSE+=" Apache-2.0 BSD MIT Unicode-DFS-2016"
 SLOT="0"
 KEYWORDS="~amd64"
+
+src_prepare() {
+	default
+	cargo_update_crates
+}
 
 src_install() {
 	cargo_src_install
