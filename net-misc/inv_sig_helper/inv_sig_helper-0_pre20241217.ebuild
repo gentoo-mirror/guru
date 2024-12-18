@@ -181,7 +181,7 @@ CRATE_PATHS_OVERRIDE="
 
 inherit cargo systemd
 
-COMMIT="ac0269f1586df5a853c4321256866bcbea89802b"
+COMMIT="74e879b54e46831e31c09fd08fe672ca58e9cb2d"
 DESCRIPTION="Rust service that decrypts YouTube signatures and manages player information"
 HOMEPAGE="https://github.com/iv-org/inv_sig_helper"
 SRC_URI="
