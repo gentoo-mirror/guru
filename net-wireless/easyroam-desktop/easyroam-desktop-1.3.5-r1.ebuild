@@ -3,17 +3,23 @@
 
 EAPI=8
 
-inherit unpacker
+inherit unpacker xdg-utils
 
 DESCRIPTION="Easily connect your device to eduroam®."
 HOMEPAGE="https://www.easyroam.de/"
 SRC_URI="https://packages.easyroam.de/repos/easyroam-desktop/pool/main/e/easyroam-desktop/easyroam_connect_desktop-${PV}+${PV}-linux.deb"
+
+QA_FLAGS_IGNORED=".*"
 
 S="${WORKDIR}"
 
 LICENSE="all-rights-reserved"
 SLOT="0"
 KEYWORDS="-* amd64"
+
+PATCHES=(
+	"${FILESDIR}"/0001-fix-desktop-file.patch
+)
 
 RDEPEND="
 	dev-libs/glib
@@ -38,4 +44,12 @@ src_prepare() {
 
 src_install() {
 	mv "${S}/usr" "${D}/"
+}
+
+pkg_postinst() {
+	xdg_icon_cache_update
+}
+
+pkg_postrm() {
+	xdg_icon_cache_update
 }
