@@ -1,0 +1,14 @@
+DEFINED_PHASES=configure install postinst postrm preinst prepare
+DEPEND=app-arch/libzim dev-qt/qtbase:6[gui,network,widgets] dev-qt/qtimageformats:6 dev-qt/qtsvg:6 dev-qt/qtwebchannel:6 dev-qt/qtwebengine:6[widgets] >=www-misc/libkiwix-14.0.0:=
+DESCRIPTION=cross-platform viewer/manager for ZIM archives
+EAPI=8
+HOMEPAGE=https://kiwix.org/
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=qmake-utils xdg
+KEYWORDS=~amd64
+LICENSE=GPL-3+
+RDEPEND=app-arch/libzim dev-qt/qtbase:6[gui,network,widgets] dev-qt/qtimageformats:6 dev-qt/qtsvg:6 dev-qt/qtwebchannel:6 dev-qt/qtwebengine:6[widgets] >=www-misc/libkiwix-14.0.0:=
+SLOT=0
+SRC_URI=https://github.com/kiwix/kiwix-desktop/archive/2.4.0.tar.gz -> kiwix-desktop-2.4.0.tar.gz
+_eclasses_=toolchain-funcs	14648d8795f7779e11e1bc7cf08b7536	multilib	b2a329026f2e404e9e371097dda47f96	qmake-utils	a8dd17b1d94586164f5e3fc12b1c6b81	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575
+_md5_=17bec1d5b62e2c50aac95f5a36bd7132
