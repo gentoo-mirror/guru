@@ -20,7 +20,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 BDEPEND="
-	>=dev-lang/go-1.23.0
+	>=dev-lang/go-1.23.1
 "
 
 DOCS=(

@@ -14,14 +14,10 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="
-	dev-qt/qtcore:5
-	dev-qt/qtgui:5
-	dev-qt/qttranslations:5
-	dev-qt/qtwidgets:5
+	dev-qt/qttranslations:6
 	dev-qt/qtbase:6[opengl]
 	>=media-libs/assimp-5.3.1
-	>=sci-libs/opencascade-7.7.0-r2
-	<sci-libs/opencascade-7.8.0
+	>=sci-libs/opencascade-7.8.0
 "
 
 DEPEND="${RDEPEND}"
@@ -29,10 +25,11 @@ DEPEND="${RDEPEND}"
 PATCHES=(
 	"${FILESDIR}"/${P}-nogit.patch
 	"${FILESDIR}"/${P}-gcc14.patch
+	"${FILESDIR}"/${P}-opencascade7_8.patch
 )
 
 src_configure() {
-	eqmake5 "CASCADE_INC_DIR=/usr/include/opencascade" "CASCADE_LIB_DIR=/usr/$(get_libdir)/opencascade" "ASSIMP_INC_DIR=/usr/include/assimp" "ASSIMP_LIB_DIR=/usr/$(get_libdir)" mayo.pro
+	eqmake6 "CASCADE_INC_DIR=/usr/include/opencascade" "CASCADE_LIB_DIR=/usr/$(get_libdir)/opencascade" "ASSIMP_INC_DIR=/usr/include/assimp" "ASSIMP_LIB_DIR=/usr/$(get_libdir)" mayo.pro
 }
 
 src_install() {
