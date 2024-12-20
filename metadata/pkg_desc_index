@@ -303,7 +303,7 @@ app-office/khronos 4.0.0 4.0.1: A GTK4 time tracker for tasks
 app-office/lotus123r3 1.0.0_rc4: A native port of Lotus 1-2-3 to Linux.
 app-office/nixnote-bin 2.1.10: Free and open source note taking app, compatible with Evernote sync server
 app-office/notesnook-bin 2.6.12: End-to-end encrypted note taking alternative to Evernote
-app-office/obsidian 1.6.7 1.7.4: A second brain, for you, forever.
+app-office/obsidian 1.6.7 1.7.4 1.7.7: A second brain, for you, forever.
 app-office/openoffice-bin 4.1.15: Apache OpenOffice productivity suite
 app-office/pyspread 2.1.1: Pyspread is a non-traditional spreadsheet written in Python
 app-office/standartnotes-bin 3.183.22: End-to-end encrypted note-taking app, alternative to Evernote
@@ -453,7 +453,7 @@ dev-crystal/webless 0.1.0: HTTP::Client for testing HTTP::Handlers directly and 
 dev-crystal/webmock 0.14.0: Mock HTTP client
 dev-db/dbeaver-bin 23.3.0 24.2.2: Free universal database tool (community edition).
 dev-db/libpg_query 16.5.1.0 17.6.0.0: C library for accessing the PostgreSQL parser outside of the server environment
-dev-db/limbo 0.0.9: The Limbo interactive SQL shell
+dev-db/limbo 0.0.10: The Limbo interactive SQL shell
 dev-db/pg_query_vala 0.1.0_pre20240326-r1 0.1.0_pre20241001: Thin wrapper around libpg_query to use with vala
 dev-db/pg_repack 1.5.0: Reorganize tables in PostgreSQL databases with minimal locks
 dev-db/psequel 0.2.0-r1: Run your SQL query
@@ -874,7 +874,7 @@ dev-python/types-requests 2.32.0.20240712: Typing stubs for requests
 dev-python/typing-inspect 0.9.0: Runtime inspection utilities for Python typing module
 dev-python/undervolt 0.4.0 9999: Undervolt Intel CPUs under Linux
 dev-python/urlmatch 1.0.1-r2: A Python library for easily pattern matching wildcard URLs
-dev-python/validator-collection 1.5.0-r1: Python library of 60+ commonly-used validator functions.
+dev-python/validator-collection 1.5.0-r2: Collection of 60+ Python functions for validating data
 dev-python/volatile 2.1.0: A small extension for the tempfile module
 dev-python/w3lib 2.1.2: Library of web-related functions
 dev-python/webpy 0.62: A web framework for python that is as simple as it is powerful
@@ -1305,7 +1305,7 @@ media-sound/g4music 3.3 3.4: A GTK4 music player
 media-sound/jacktrip 1.7.1-r1 2.4.0: Send JACK audio over a network
 media-sound/jriver 31.0.83: A cross-platform media center, famous for high quality of audio.
 media-sound/kew 2.4.4-r1: kew (/kjuː/) is a command-line music player for Linux.
-media-sound/lms 3.60.1 3.61.0: Lightweight Music Server.
+media-sound/lms 3.60.1 3.61.0 3.62.0: Lightweight Music Server.
 media-sound/loudgain 0.6.8-r1: Versatile ReplayGain 2.0 loudness normalizer
 media-sound/mopidy 3.4.2: An extensible music server written in Python.
 media-sound/mpd-mpris 0.3.1 0.4.0 0.4.1: An implementation of the MPRIS protocol for MPD.
@@ -1372,7 +1372,7 @@ mpv-plugin/mpv_sponsorblock 20211223 20220924 20230130: mpv script to skip spons
 mpv-plugin/mpv_sponsorblock_minimal 2023.08.20: A minimal script to skip sponsored segments of YouTube videos
 mpv-plugin/mpv_thumbnail_script 0.5.2 0.5.3 0.5.4: A Lua script to show preview thumbnails in mpv's OSC seekbar
 mpv-plugin/thumbfast 2023.12.08: High-performance on-the-fly thumbnailer script for mpv.
-net-analyzer/gping 1.18.0: Ping, but with a graph
+net-analyzer/gping 1.19.0: Ping, but with a graph
 net-analyzer/munin-contrib 0.2021.04.27 0.2024.03.04 0.2024.03.04-r1: User contributed stuff related to munin
 net-analyzer/netsniff-ng 0.6.8-r1: high performance network sniffer for packet inspection
 net-client/amfora 1.8.0 1.9.2: A fancy terminal browser for the Gemini protocol.
@@ -1399,7 +1399,7 @@ net-im/axolotl-bin 2.0.1: Axolotl is a cross-platform Signal client
 net-im/beeper 3.109.1 3.110.1: Beeper: Unified Messenger
 net-im/chatterino 2.5.1: Chat client for https://twitch.tv
 net-im/conduit 0.8.0-r1 0.9.0-r1 9999: Matrix homeserver written in Rust
-net-im/discord-canary-bin 0.0.306: All-in-one voice and text chat
+net-im/discord-canary-bin 0.0.549: All-in-one voice and text chat
 net-im/discord-ptb-bin 0.0.97: All-in-one voice and text chat
 net-im/eturnal 1.12.0-r1: STUN/TURN server
 net-im/flare 0.12.0-r1: Chat with your friends on Signal
@@ -1723,7 +1723,7 @@ www-apps/invidious 2024.11.10.0: Invidious is an alternative front-end to YouTub
 www-apps/laminar 1.3-r1: Fast and lightweight Continuous Integration
 www-apps/libmedium 2024.06.10: Alternative private front-end to Medium
 www-apps/mycorrhiza 1.15.1 9999: Git-based wiki engine written in Go using mycomarkup
-www-apps/pleroma 2.7.1 9999: ActivityPub social networking software compatible with other Fediverse software
+www-apps/pleroma 2.8.0 9999: ActivityPub social networking software compatible with other Fediverse software
 www-apps/pleroma-fe 2.7.0 9999: Main frontend for www-apps/pleroma, inspired by qvitter
 www-apps/redlib 0.34.0 0.35.1: Private front-end to Reddit
 www-apps/rimgo 1.2.1: An alternative frontend for Imgur. Originally based on rimgu.
@@ -1754,7 +1754,7 @@ www-servers/hinsightd 0.9.17 9999: hinsightd a http/1.1 webserver with (hopefull
 www-servers/quark 9999: A small, GET-only static HTTP server
 x11-apps/lightdm-gtk-greeter-settings 1.2.2-r3: Configuration tool for the LightDM GTK Greeter
 x11-apps/xcur2png 0.7.1-r3: Convert X cursors to PNG images
-x11-drivers/OpenTabletDriver 0.6.4.0: A cross-platform open-source tablet driver
+x11-drivers/OpenTabletDriver 0.6.4.0 0.6.5.0: A cross-platform open-source tablet driver
 x11-drivers/OpenTabletDriver-bin 0.6.3.0: Cross platform tablet driver (binary package)
 x11-drivers/evdi 1.14.7-r1: Extensible Virtual Display Interface
 x11-drivers/xf86-input-xppen 3.4.9-r2: Driver for XP-PEN tablets and drawing devices
