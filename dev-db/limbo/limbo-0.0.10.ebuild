@@ -32,7 +32,6 @@ EAPI=8
 	bytemuck@1.20.0
 	byteorder@1.5.0
 	cast@0.3.0
-	cbindgen@0.27.0
 	cc@1.2.3
 	cfg-if@1.0.0
 	cfg_aliases@0.2.1
@@ -105,7 +104,6 @@ EAPI=8
 	hashbrown@0.14.5
 	hashbrown@0.15.2
 	hashlink@0.8.4
-	heck@0.4.1
 	heck@0.5.0
 	hermit-abi@0.4.0
 	hex@0.4.3
@@ -209,7 +207,6 @@ EAPI=8
 	serde@1.0.216
 	serde_derive@1.0.216
 	serde_json@1.0.133
-	serde_spanned@0.6.8
 	sha2@0.10.8
 	shlex@1.3.0
 	sieve-cache@0.1.4
@@ -233,9 +230,6 @@ EAPI=8
 	thiserror@1.0.69
 	thiserror@2.0.6
 	tinytemplate@1.2.1
-	toml@0.8.19
-	toml_datetime@0.6.8
-	toml_edit@0.22.22
 	tracing-core@0.1.33
 	tracing@0.1.41
 	typenum@1.17.0
@@ -282,12 +276,11 @@ EAPI=8
 	windows_x86_64_gnullvm@0.52.6
 	windows_x86_64_msvc@0.48.5
 	windows_x86_64_msvc@0.52.6
-	winnow@0.6.20
 	zerocopy-derive@0.7.35
 	zerocopy@0.7.35
-"
+	"
 
-inherit cargo
+inherit cargo linux-info
 
 DESCRIPTION="The Limbo interactive SQL shell"
 HOMEPAGE="https://github.com/tursodatabase/limbo"
@@ -305,6 +298,14 @@ LICENSE+="
 SLOT="0"
 KEYWORDS="~amd64"
 
+pkg_setup() {
+	CONFIG_CHECK="~IO_URING"
+	WARNING_IO_URING="limbo needs IO_URING to be enabled to work properly."
+
+	linux-info_pkg_setup
+	rust_pkg_setup
+}
+
 src_install() {
 	cargo_src_install --path cli
 
@@ -315,9 +316,4 @@ src_install() {
 	)
 
 	einstalldocs
-}
-
-src_test() {
-	export RUST_BACKTRACE=full
-	cargo_src_test
 }
