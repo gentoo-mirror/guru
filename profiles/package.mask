@@ -18,6 +18,11 @@
 
 # New entries go on top.
 
+# Takuya Wakazono <pastalian46@gmail.com> (2024-12-21)
+# Fails to build since fcitx:5 was added. No maintainer.
+# Removal on 2024-01-21. Bug #927492.
+app-i18n/fcitx-skk
+
 # Anna (cybertailor) Vyalkova <cyber+gentoo@sysrq.in> (2024-12-19)
 # pytest-benchmark is unmaintained in ::guru, should not be used in tests.
 # https://public-inbox.gentoo.org/gentoo-guru/Z2L4IZBNBJEMqnbj@sysrq.in/
@@ -68,13 +73,6 @@ dev-libs/fsst
 # Depends on <sci-libs/opencascade-7.8.0 which was removed from ::gentoo
 # Removal on 2025-12-17
 media-gfx/mayo
-
-# Takuya Wakazono <pastalian46@gmail.com> (2024-11-21)
-# SRC_URI is 410. No maintainer.
-# x11-misc/xscreensaver is available in ::gentoo and users can apply
-# patches themselves.
-# Removal on 2024-12-21.
-x11-misc/xscreensaver-anclock
 
 # Nicolas PARLANT <nicolas.parhuet@parhuet.fr> (2024-11-21)
 # No maintener and SRC_URI / license issue #262

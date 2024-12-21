@@ -75,9 +75,6 @@ src_install() {
 	python_newscript py/mock-parse-buildlog.py mock-parse-buildlog
 	dobin mockchain
 
-	exeinto /usr/libexec/mock
-	doexe create_default_route_in_container.sh
-
 	dobashcomp etc/bash_completion.d/mock
 	bashcomp_alias mock mock-parse-buildlog
 	dodoc docs/site-defaults.cfg
