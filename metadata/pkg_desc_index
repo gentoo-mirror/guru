@@ -155,12 +155,13 @@ app-crypt/lego 4.14.2 4.15.0 4.16.0 4.16.1 4.17.4 9999: Let's Encrypt/ACME clien
 app-crypt/pinentry-bemenu 0.13.2: Pinentry based on bemenu
 app-crypt/reop 2.1.1-r1: reasonable expectation of privacy
 app-crypt/sac-core 10.8.1050-r1: Thales/Gemalto SafeNet Authentication Client
+app-crypt/sops 3.9.2: Simple And Flexible Tool For Managing Secrets
 app-crypt/tang 14 15-r1: Tang binding daemon
 app-crypt/tomb 2.9-r6: Tomb :: File Encryption on GNU/Linux
 app-crypt/totp-cli-bin 1.8.7: Authy/Google Authenticator like TOTP CLI tool written in Go
 app-crypt/uacme 1.7.1: ACMEv2 client written in plain C with minimal dependencies
 app-dicts/dictd-foldoc 20180405: The Free On-line Dictionary of Computing for dict
-app-dicts/dictd-gcide 0.48.5: Collaborative International Dictionary of English (incl. Webster 1913) for dict
+app-dicts/dictd-gcide 0.48.5_p3: Collaborative International Dictionary of English (incl. Webster 1913) for dict
 app-dicts/dictd-moby-thesaurus 1.0: Grady Ward's Moby Thesaurus; 35000 root words and 2.5 million synonyms
 app-dicts/rhvoice-en 2.11: English language support for RHVoice
 app-dicts/rhvoice-ru 2.14 2.15: Russian language support for RHVoice
@@ -285,7 +286,7 @@ app-misc/via 3.0.0: GUI configurator for supported QMK-based keyboards
 app-misc/vocabsieve 0.12.2: A simple, effective tool for language learning
 app-misc/vrms-gentoo 0_pre20201102: vrms clone for Gentoo Linux
 app-misc/walld 1.4.4: A Wallpaper daemon
-app-misc/watchexec 1.24.2 1.25.1 2.1.1 2.1.2: Executes commands in response to file modifications
+app-misc/watchexec 1.24.2 1.25.1 2.1.1 2.1.2 2.2.1: Executes commands in response to file modifications
 app-misc/wcal 0.1-r1: ISO weekly calendar
 app-misc/wego 2.2: Wego is a weather client for the terminal
 app-misc/x86-64-level 0.2.2 9999: Get the x86-64 Microarchitecture Level on the Current Machine
@@ -354,6 +355,7 @@ app-text/smu 1.5 9999: Simple markup - markdown like syntax
 app-text/the-platinum-searcher-bin 2.2.0: Fast CLI search tool, faster than grep, ack, silver_searcher (ag)
 app-text/tldr 3.2.0: Python command line client for tldr pages
 app-text/typst 0.12.0: A markup-based typesetting system for the sciences
+app-text/typstyle 0.12.12: A beautiful and reliable code formatter for Typst
 app-text/vale 3.7.1 3.9.1: A syntax-aware linter for prose built with speed and extensibility in mind
 app-vim/ale 3.3.0: Check syntax in Vim asynchronously and fix files, with LSP support
 app-vim/ansible-vim 3.3 3.4: vim plugin: sytax highlighting for Ansible's common file types
@@ -391,7 +393,7 @@ dev-build/fpm 0.9.0 0.10.0: Fortran Package Manager (fpm)
 dev-build/fypp 3.1 3.2: Fypp - Python powered Fortran preprocessor
 dev-build/pdpmake 2.0.1: Public domain POSIX make
 dev-build/qtilitools 0.1.2: Scripts/commands used in the Qtilities organization
-dev-build/xmake 2.9.6 9999: A cross-platform build utility based on Lua
+dev-build/xmake 2.9.7 9999: A cross-platform build utility based on Lua
 dev-cpp/blurhash 0.2.0 0.2.0-r1: C++ blurhash encoder/decoder
 dev-cpp/coeurl 0.3.0 0.3.1: A simple async wrapper around CURL for C++
 dev-cpp/cpp-jwt 1.5_pre20220727: JSON Web Token library for C++
@@ -940,8 +942,8 @@ dev-util/libtypec-utils 0.5.2: Library to interface with USB Type-C/Power Delive
 dev-util/lottieconverter 0.2-r1 0.2-r2: Simple lottie (telegram animated sticker) converter
 dev-util/lua-language-server 3.9.1-r1 3.9.3 3.10.5: Lua language server
 dev-util/mh 1.4.1: Generate help for Makefile
-dev-util/mock 5.9: Simple chroot build environment manager for building RPMs
-dev-util/mock-core-configs 41.4: Mock core config files basic chroots
+dev-util/mock 6.0: Simple chroot build environment manager for building RPMs
+dev-util/mock-core-configs 41.5: Mock core config files basic chroots
 dev-util/ocamlformat 0.26.2 0.26.2-r1: Auto-formatter for OCaml code
 dev-util/ocp-indent 1.8.2: Indentation tool for OCaml, to be used from editors like Emacs and Vim.
 dev-util/pcpp 1.30: A C99 preprocessor written in pure Python
@@ -1030,7 +1032,7 @@ games-roguelike/cataclysm-dda 0h 9999: A turn-based survival game set in a post-
 games-rpg/open-adventure 1.16 1.17 1.18: Forward-port of the Crowther/Woods Adventure 2.5
 games-rpg/primordia 3.6.70667: A cyberpunk point-and-click adventure game
 games-rpg/sacred-demo 1.0.0: Like Diablo, isometric view, good rating, about a two hours of the gameplay
-games-rpg/snoot-game 1.11.1-r1: Visual novel parody of Goodbye Volcano High
+games-rpg/snoot-game 1.12.0: Visual novel parody of Goodbye Volcano High
 games-server/among-sus 20210519: Among Us, but it's a text adventure
 games-strategy/gigalomania 1.0.1: Libre clone of Mega-Lo-Mania (original from ~1990), supports original resources
 games-strategy/ground-control 1011: RTS from 2000 by Massive Entertainment, without resources and buildings
@@ -1135,7 +1137,7 @@ gui-apps/nwg-shell 0.5.39 0.5.40 0.5.41 0.5.42 0.5.43: libraries an common funct
 gui-apps/nwg-shell-config 0.5.51 0.5.52 0.5.53 0.5.54: nwg-shell configuration utility
 gui-apps/openrefine 3.7.9: Wikidata batch editor, Wikimedia Commons mass upload tool
 gui-apps/organicmaps 9999: Offline maps and navigation using OpenStreetMap data
-gui-apps/packettracer 8.2.0 8.2.2: Cisco's packet tracer
+gui-apps/packettracer 8.2.2-r1: Cisco's packet tracer
 gui-apps/paperde 0.1.1_p20210426: Simple, sleek QT based DE for wayland using wayfire
 gui-apps/pop-launcher 1.2.1: Modular IPC-based desktop launcher service
 gui-apps/riverguile 0.1.0-r1 9999: River layout generator powered by guile scheme
@@ -1521,7 +1523,7 @@ net-p2p/yggdrasil-go 0.5.9 0.5.10 9999: An experiment in scalable routing as an 
 net-print/hpuld 1.00.39.15.00.23-r1: HP Unified Linux Driver (for samsung hardware)
 net-proxy/MTProxy 3.0.4-r1: Community fork of MTProxy
 net-proxy/byedpi 0.14.1 0.15 9999: Bypass DPI SOCKS proxy
-net-proxy/ngrok-bin 3.18.4: ngrok is a reverse proxy, firewall, and API gateway
+net-proxy/ngrok-bin 3.19.0: ngrok is a reverse proxy, firewall, and API gateway
 net-proxy/snowflake 2.9.2 2.10.1: Pluggable Transport using WebRTC, inspired by Flashproxy
 net-voip/baresip 3.16.0 3.17.0 3.18.0: Baresip is a portable and modular SIP User-Agent
 net-voip/discover-overlay 0.6.9-r1 0.7.4: Yet another Discord overlay for Linux written in Python using GTK3
@@ -1786,7 +1788,6 @@ x11-misc/tbsm 0.5 0.6 0.7: A pure bash session or application launcher. Inspired
 x11-misc/wallust 3.1.0: Generate a 16 color scheme based on an image.
 x11-misc/xbanish 1.8 1.8_p20230519: Banish the mouse cursor when typing, show it again when the mouse moves
 x11-misc/xob 0.2 0.3: A lightweight overlay volume (or anything) bar for the X Window System
-x11-misc/xscreensaver-anclock 2.2.1: Analog clock hack for the xscreensaver program
 x11-misc/xsecurelock 1.9.0: X11 screen lock utility with security in mind
 x11-plugins/purple-mm-sms 0.1.7: Purple SMS plugin using ModemManager
 x11-terms/dmd5620 2.1.0: GTK+ 3.0 implementation of an AT&T / Teletype DMD 5620 emulator.
