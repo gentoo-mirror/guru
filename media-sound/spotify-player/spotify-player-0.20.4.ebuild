@@ -26,6 +26,7 @@ CRATES="
 	anstyle-wincon@3.0.6
 	anstyle@1.0.10
 	anyhow@1.0.93
+	anyhow@1.0.94
 	arbitrary@1.4.1
 	arg_enum_proc_macro@0.3.4
 	arrayref@0.3.9
@@ -66,6 +67,7 @@ CRATES="
 	cassowary@0.3.0
 	castaway@0.2.3
 	cc@1.2.2
+	cc@1.2.4
 	cesu8@1.1.0
 	cexpr@0.6.0
 	cfg-expr@0.15.8
@@ -73,13 +75,17 @@ CRATES="
 	cfg-if@1.0.0
 	cfg_aliases@0.2.1
 	chrono@0.4.38
+	chrono@0.4.39
 	cipher@0.4.4
 	clang-sys@1.8.1
 	clap@4.5.21
+	clap@4.5.23
 	clap_builder@4.5.21
+	clap_builder@4.5.23
 	clap_complete@4.5.38
 	clap_derive@4.5.18
 	clap_lex@0.7.3
+	clap_lex@0.7.4
 	clipboard-win@5.4.0
 	cmake@0.1.52
 	cocoa-foundation@0.1.2
@@ -105,8 +111,10 @@ CRATES="
 	cpufeatures@0.2.16
 	crc32fast@1.4.2
 	crossbeam-deque@0.8.5
+	crossbeam-deque@0.8.6
 	crossbeam-epoch@0.9.18
 	crossbeam-utils@0.8.20
+	crossbeam-utils@0.8.21
 	crossterm@0.28.1
 	crossterm_winapi@0.9.1
 	crunchy@0.2.2
@@ -147,7 +155,9 @@ CRATES="
 	error-code@3.3.1
 	exr@1.73.0
 	fastrand@2.2.0
+	fastrand@2.3.0
 	fdeflate@0.3.6
+	fdeflate@0.3.7
 	fixedbitset@0.4.2
 	flate2@1.0.35
 	flume@0.11.1
@@ -209,6 +219,7 @@ CRATES="
 	http-body@1.0.1
 	http@0.2.12
 	http@1.1.0
+	http@1.2.0
 	httparse@1.9.5
 	httpdate@1.0.3
 	hyper-proxy2@0.1.0
@@ -254,10 +265,12 @@ CRATES="
 	jobserver@0.1.32
 	jpeg-decoder@0.3.1
 	js-sys@0.3.74
+	js-sys@0.3.76
 	lazy_static@1.5.0
 	lazycell@1.3.0
 	lebe@0.5.2
 	libc@0.2.167
+	libc@0.2.168
 	libdbus-sys@0.2.5
 	libfuzzer-sys@0.4.8
 	libloading@0.7.4
@@ -380,6 +393,7 @@ CRATES="
 	pkcs8@0.10.2
 	pkg-config@0.3.31
 	png@0.17.14
+	png@0.17.15
 	polling@3.7.4
 	portable-atomic@1.10.0
 	portaudio-rs@0.3.2
@@ -404,6 +418,7 @@ CRATES="
 	quick-xml@0.36.2
 	quinn-proto@0.11.9
 	quinn-udp@0.5.7
+	quinn-udp@0.5.8
 	quinn@0.11.6
 	quote@1.0.37
 	rand@0.8.5
@@ -418,6 +433,7 @@ CRATES="
 	rayon@1.10.0
 	redox_syscall@0.4.1
 	redox_syscall@0.5.7
+	redox_syscall@0.5.8
 	redox_users@0.4.6
 	regex-automata@0.1.10
 	regex-automata@0.4.9
@@ -438,16 +454,19 @@ CRATES="
 	rustc-hash@1.1.0
 	rustc-hash@2.1.0
 	rustix@0.38.41
+	rustix@0.38.42
 	rustls-native-certs@0.7.3
 	rustls-native-certs@0.8.1
 	rustls-pemfile@1.0.4
 	rustls-pemfile@2.2.0
 	rustls-pki-types@1.10.0
+	rustls-pki-types@1.10.1
 	rustls-webpki@0.101.7
 	rustls-webpki@0.102.8
 	rustls@0.21.12
 	rustls@0.22.4
 	rustls@0.23.19
+	rustls@0.23.20
 	rustversion@1.0.18
 	ryu@1.0.18
 	same-file@1.0.6
@@ -462,7 +481,9 @@ CRATES="
 	security-framework@2.11.1
 	security-framework@3.0.1
 	serde@1.0.215
+	serde@1.0.216
 	serde_derive@1.0.215
+	serde_derive@1.0.216
 	serde_json@1.0.133
 	serde_path_to_error@0.1.16
 	serde_spanned@0.6.8
@@ -526,14 +547,18 @@ CRATES="
 	termcolor@1.4.1
 	thiserror-impl@1.0.69
 	thiserror-impl@2.0.3
+	thiserror-impl@2.0.7
 	thiserror@1.0.69
 	thiserror@2.0.3
+	thiserror@2.0.7
 	thread-id@4.2.2
 	thread_local@1.1.8
 	tiff@0.9.1
 	time-core@0.1.2
 	time-macros@0.2.18
+	time-macros@0.2.19
 	time@0.3.36
+	time@0.3.37
 	tiny-skia-path@0.11.4
 	tiny-skia@0.11.4
 	tinystr@0.7.6
@@ -544,11 +569,15 @@ CRATES="
 	tokio-rustls@0.24.1
 	tokio-rustls@0.25.0
 	tokio-rustls@0.26.0
+	tokio-rustls@0.26.1
 	tokio-socks@0.5.2
 	tokio-stream@0.1.16
+	tokio-stream@0.1.17
 	tokio-tungstenite@0.24.0
 	tokio-util@0.7.12
+	tokio-util@0.7.13
 	tokio@1.41.1
+	tokio@1.42.0
 	toml@0.8.19
 	toml_datetime@0.6.8
 	toml_edit@0.22.22
@@ -590,11 +619,17 @@ CRATES="
 	want@0.3.1
 	wasi@0.11.0+wasi-snapshot-preview1
 	wasm-bindgen-backend@0.2.97
+	wasm-bindgen-backend@0.2.99
 	wasm-bindgen-futures@0.4.47
+	wasm-bindgen-futures@0.4.49
 	wasm-bindgen-macro-support@0.2.97
+	wasm-bindgen-macro-support@0.2.99
 	wasm-bindgen-macro@0.2.97
+	wasm-bindgen-macro@0.2.99
 	wasm-bindgen-shared@0.2.97
+	wasm-bindgen-shared@0.2.99
 	wasm-bindgen@0.2.97
+	wasm-bindgen@0.2.99
 	wayland-backend@0.3.7
 	wayland-client@0.31.7
 	wayland-csd-frame@0.3.0
@@ -605,6 +640,7 @@ CRATES="
 	wayland-scanner@0.31.5
 	wayland-sys@0.31.5
 	web-sys@0.3.74
+	web-sys@0.3.76
 	web-time@1.1.0
 	webpki-roots@0.25.4
 	webpki-roots@0.26.7
@@ -692,6 +728,7 @@ CRATES="
 	zune-core@0.4.12
 	zune-inflate@0.2.54
 	zune-jpeg@0.4.13
+	zune-jpeg@0.4.14
 "
 
 inherit cargo
@@ -706,7 +743,7 @@ LICENSE="0BSD Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD BSD-2 Boost-1.0 ISC
 SLOT="0"
 KEYWORDS="~amd64"
 
-IUSE="daemon image +libnotify lyrics +media-control pulseaudio sixel +streaming"
+IUSE="daemon image +libnotify +media-control pulseaudio sixel +streaming"
 REQUIRED_USE="
 	sixel? ( image )
 	daemon? ( streaming )
@@ -726,7 +763,6 @@ src_configure() {
 		"$(usex daemon daemon '')"
 		"$(usex image image '')"
 		"$(usex libnotify notify '')"
-		"$(usex lyrics lyric-finder '')"
 		"$(usex media-control media-control '')"
 		"$(usex pulseaudio pulseaudio-backend alsa-backend)"
 		"$(usex sixel sixel '')"
