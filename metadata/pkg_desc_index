@@ -232,7 +232,7 @@ app-misc/doublecmd 1.1.16: Cross Platform file manager
 app-misc/doublecmd-bin 1.0.11 1.1.21 9999: Double Commander: file manager with two panels, similar to Total Commander
 app-misc/dpscreenocr 1.4.0-r1: Program to recognize text on screen
 app-misc/dragon 1.1.1 1.1.1_p20210820 1.2.0: Simple drag-and-drop source/sink for X and Wayland
-app-misc/electricsheep 3.0.2_p20191005 3.0.2_p20191005-r1: Realize the collective dream of sleeping computers from all over the internet
+app-misc/electricsheep 3.0.2_p20191005-r1 3.0.2_p20191005-r2: Realize the collective dream of sleeping computers from all over the internet
 app-misc/far2l 2.6.3_beta 2.6.4_beta 9999: Linux port of FAR Manager v2
 app-misc/fetsh 1.8 1.9 9999: A fetch written in POSIX shell without any external commands
 app-misc/fff 2.2: A simple file manager written in bash
@@ -311,7 +311,7 @@ app-office/pyspread 2.1.1: Pyspread is a non-traditional spreadsheet written in 
 app-office/standartnotes-bin 3.183.22: End-to-end encrypted note-taking app, alternative to Evernote
 app-portage/appswipe 1.1.14 1.1.68: Application for browsing your local Portage repository files
 app-portage/pacvis 0.4.2: Displays dependency graphs of packages
-app-portage/portage-lostfiles 0.5.5: A simple script to identify files not tracked by Portage package manager
+app-portage/portage-lostfiles 0.5.6: A simple script to identify files not tracked by Portage package manager
 app-portage/portagecfg 2.1.3 2.2.2 2.3.0 2.4.0: Utility to write Portage config files in an easy manner.
 app-portage/quantum-resolver 9999: A WIP portage dependency resolver
 app-portage/showbuild 0.9.1-r1: Script to follow log of running portage builds
@@ -412,7 +412,7 @@ dev-cpp/pcg-cpp 0.98.1_p20210406-r1: Family of better random number generators
 dev-cpp/qt-jdenticon 0.3.0-r1 0.3.0_p20240107 0.3.1: Qt5 / C++14 Port of Jdenticon
 dev-cpp/rang 3.2: Minimal, header-only, modern C++ library for terminal goodies
 dev-cpp/scnlib 4.0.1: scanf for modern C++
-dev-cpp/simdutf 5.6.0: simdutf: Unicode validation and transcoding at billions of characters per second
+dev-cpp/simdutf 5.7.1: simdutf: Unicode validation and transcoding at billions of characters per second
 dev-cpp/sprout 0_pre20190615: C++11/14 constexpr based Containers, Algorithms, Random numbers and others
 dev-cpp/trantor 1.5.19 1.5.20: Non-blocking I/O tcp network lib based on c++14/17
 dev-cpp/trompeloeil 47: Header only C++14 mocking framework
@@ -556,7 +556,6 @@ dev-libs/luksmeta 9-r2: LUKSMeta is a simple library for storing metadata in the
 dev-libs/lzfse 9999: LZFSE compression library and command line tool.
 dev-libs/md4c 0.4.8_p20220115 0.5.2: C Markdown parser. Fast, SAX-like interface, CommonMark Compliant.
 dev-libs/mtxclient 0.10.0-r1 0.10.0-r2: Client API library for Matrix, built on top of libcurl
-dev-libs/nativefiledialog-extended 1.2.0: File dialog library with C and C++ bindings, based on nativefiledialog
 dev-libs/open62541 1.4.8: Open source C implementation of OPC UA
 dev-libs/polyseed 1.0.0 2.0.0 9999: Mnemonic seed library for Monero and other CryptoNote-based currencies.
 dev-libs/qschematic 1.6.0: Library for creating flowcharts and engineering diagrams
@@ -1039,6 +1038,7 @@ games-strategy/gigalomania 1.0.1: Libre clone of Mega-Lo-Mania (original from ~1
 games-strategy/ground-control 1011: RTS from 2000 by Massive Entertainment, without resources and buildings
 games-strategy/slay-the-spire 2.2: Deck-building roguelike game with four playable characters
 games-strategy/swine 1: Fun RTS from 2001 by Hungarian developer StormRegion, similar to Ground Control
+games-strategy/unciv-bin 4.14.17: Turn-based historical strategy game, a remake of Civ V
 games-strategy/zedonline-bin 0.3.2-r1: A remake of the 1996 classic game Z, with network play
 games-util/NotEnoughProduction 0.0.4: Tool for building production chains for modded minecraft
 games-util/ProtonUp-Qt 2.9.2 9999: Install and manage GE-Proton, Luxtorpeda & more for Steam Lutris and Heroic.
@@ -1133,9 +1133,9 @@ gui-apps/nwg-drawer 0.5.1 0.5.2 0.6.0: Application drawer for wlroots-based Wayl
 gui-apps/nwg-icon-picker 0.1.1 9999: GTK icon chooser with a text search option
 gui-apps/nwg-launchers 0.5.0 0.6.3 0.7.1.1 9999: GTK+ launchers for sway, i3 and some other WMs
 gui-apps/nwg-menu 0.1.4 0.1.5 0.1.6: enuStart plugin to nwg-panel, also capable of working standalone
-gui-apps/nwg-panel 0.9.50 0.9.51 0.9.52 0.9.53 0.9.54 9999: GTK3-based panel for sway and Hyprland Wayland compositors
-gui-apps/nwg-shell 0.5.39 0.5.40 0.5.41 0.5.42 0.5.43: libraries an common functions for the nwg-shell project
-gui-apps/nwg-shell-config 0.5.51 0.5.52 0.5.53 0.5.54: nwg-shell configuration utility
+gui-apps/nwg-panel 0.9.54 0.9.55 0.9.56 0.9.57 0.9.58 9999: GTK3-based panel for sway and Hyprland Wayland compositors
+gui-apps/nwg-shell 0.5.43 0.5.44: libraries an common functions for the nwg-shell project
+gui-apps/nwg-shell-config 0.5.54 0.5.55: nwg-shell configuration utility
 gui-apps/openrefine 3.7.9: Wikidata batch editor, Wikimedia Commons mass upload tool
 gui-apps/organicmaps 9999: Offline maps and navigation using OpenStreetMap data
 gui-apps/packettracer 8.2.2-r1: Cisco's packet tracer
@@ -1144,7 +1144,7 @@ gui-apps/pop-launcher 1.2.1: Modular IPC-based desktop launcher service
 gui-apps/riverguile 0.1.0-r1 9999: River layout generator powered by guile scheme
 gui-apps/rofi-wayland 1.7.5_p3: A window switcher, run dialog and dmenu replacement
 gui-apps/satty 0.14.0-r1 9999: A screenshot annotation tool inspired by Swappy and Flameshot.
-gui-apps/sddm-conf 0.2.0: SDDM configuration editor
+gui-apps/sddm-conf 0.2.0-r1: SDDM configuration editor
 gui-apps/sfwbar 1.0_beta15 1.0_beta16: S* Floating Window Bar
 gui-apps/showmethekey 1.12.0 1.13.1: Show keys you typed on screen.
 gui-apps/somebar 1.0.0 1.0.3 9999: dwm-like bar for dwl
@@ -1260,7 +1260,7 @@ media-gfx/zw3d 2023.0.3.1-r1: CAD/CAM software for 3D design and processing
 media-gfx/zwcad 2023.23.0.3.4-r2: CAD software for 2D drawing, reviewing and printing work
 media-libs/alsa-ucm-pinephone 1.2.6.3: ALSA ucm configuration files for the PinePhone (Pro)
 media-libs/alvr 16.0.0: ALVR is an open source remote VR display for the Oculus Go/Quest
-media-libs/amdvlk 2024.4.2: AMD Open Source Driver for Vulkan
+media-libs/amdvlk 2024.4.3: AMD Open Source Driver for Vulkan
 media-libs/amdvlk-bin 2021.2.5-r1 2023.3.3 2024.4.2: AMD Open Source Driver for Vulkan: official binary version
 media-libs/blend2d 0.11.4-r2 9999: 2D vector graphics library powered by a JIT compiler.
 media-libs/dr_flac 0.12.42: Single-header FLAC audio decoder library
