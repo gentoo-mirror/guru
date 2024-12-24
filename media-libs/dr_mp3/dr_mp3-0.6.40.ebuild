@@ -5,7 +5,7 @@ EAPI=8
 
 inherit edo toolchain-funcs
 
-COMMIT="da35f9d6c7374a95353fd1df1d394d44ab66cf01"
+COMMIT="37a5ffb671a4465cfefc7ba8ce7e8ae298612e5a"
 
 DESCRIPTION="Single-header MP3 audio decoder library"
 HOMEPAGE="https://github.com/mackron/dr_libs/"
@@ -26,8 +26,7 @@ TESTCASES=(
 )
 
 src_prepare() {
-	sed 's/Introducation/Introduction/' -i dr_mp3.h || die
-	awk '/Introduction/,/\*\//' dr_mp3.h | sed '$d' > README.md
+	awk '/Introduction/,/\*\//' dr_mp3.h | sed '$d' > README
 	assert
 	awk '/REVISION HISTORY/,/\*\//' dr_mp3.h | sed '$d' > CHANGELOG
 	assert

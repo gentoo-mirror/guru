@@ -5,7 +5,7 @@ EAPI=8
 
 inherit edo toolchain-funcs
 
-COMMIT="4ec70a37c4450b021a6653f0813f1b9ceaae65fb"
+COMMIT="660795b2834aebb2217c9849d668b6e4bd4ef810"
 
 DESCRIPTION="Single-header WAV audio loader and writer library"
 HOMEPAGE="https://github.com/mackron/dr_libs/"
@@ -40,7 +40,7 @@ src_prepare() {
 		mkdir tests/testvectors/wav/tests || die
 	fi
 
-	awk '/Introduction/,/\*\//' dr_wav.h | sed '$d' > README.md
+	awk '/Introduction/,/\*\//' dr_wav.h | sed '$d' > README
 	assert
 	awk '/REVISION HISTORY/,/\*\//' dr_wav.h | sed '$d' > CHANGELOG
 	assert

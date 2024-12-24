@@ -6,7 +6,7 @@ EAPI=8
 inherit edo toolchain-funcs
 
 declare -A COMMITS=(
-	[dr_flac]="39ce69188eab79a913aa23423eef9da5f3dcd142"
+	[dr_flac]="a1dd66cb680522a753bac7dff306b4a1cfd75e26"
 	[testbench]="aa7b0c6cf32994c106ae517a08134c28a96ff5b2"
 )
 
@@ -14,7 +14,7 @@ DESCRIPTION="Single-header FLAC audio decoder library"
 HOMEPAGE="https://github.com/mackron/dr_libs/"
 SRC_URI="https://github.com/mackron/dr_libs/archive/${COMMITS[dr_flac]}.tar.gz -> ${P}.gh.tar.gz
 test? ( https://github.com/ietf-wg-cellar/flac-test-files/archive/${COMMITS[testbench]}.tar.gz
-		-> ${P}-testbench.gh.tar.gz )"
+		-> flac-test-files-${COMMITS[testbench]}.gh.tar.gz )"
 
 S="${WORKDIR}/dr_libs-${COMMITS[dr_flac]}"
 
@@ -48,7 +48,7 @@ src_prepare() {
 
 	fi
 
-	awk '/Introduction/,/\*\//' dr_flac.h | sed '$d' > README.md
+	awk '/Introduction/,/\*\//' dr_flac.h | sed '$d' > README
 	assert
 	awk '/REVISION HISTORY/,/\*\//' dr_flac.h | sed '$d' > CHANGELOG
 	assert
