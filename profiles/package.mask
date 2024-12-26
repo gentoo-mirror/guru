@@ -18,9 +18,14 @@
 
 # New entries go on top.
 
+# Anna (cybertailor) Vyalkova <cyber+gentoo@sysrq.in> (2024-12-19)
+# GStreamer plugin with no revdeps left, since Nheko was ported to Qt6.
+# Removal on 2025-01-25.
+media-plugins/gst-plugins-qt5
+
 # Takuya Wakazono <pastalian46@gmail.com> (2024-12-21)
 # Fails to build since fcitx:5 was added. No maintainer.
-# Removal on 2024-01-21. Bug #927492.
+# Removal on 2025-01-21. Bug #927492.
 app-i18n/fcitx-skk
 
 # Anna (cybertailor) Vyalkova <cyber+gentoo@sysrq.in> (2024-12-19)
@@ -44,13 +49,13 @@ sci-physics/openmodelica
 # Takuya Wakazono <pastalian46@gmail.com> (2024-12-08)
 # One of the Qt5 dependencies has been dropped from ::gentoo.
 # No maintainer.
-# Removal on 2024-01-08.
+# Removal on 2025-01-08.
 gui-apps/coreterminal
 gui-apps/coreapps-meta
 
 # Takuya Wakazono <pastalian46@gmail.com> (2024-12-07)
 # No reverse dependencies left.
-# Removal on 2024-01-07. Bug #929981.
+# Removal on 2025-01-07. Bug #929981.
 dev-python/colored
 
 # Gasc Henri <gasc@eurecom.fr> (2024-12-05)
@@ -73,18 +78,6 @@ dev-libs/fsst
 # Depends on <sci-libs/opencascade-7.8.0 which was removed from ::gentoo
 # Removal on 2025-12-17
 media-gfx/mayo
-
-# Nicolas PARLANT <nicolas.parhuet@parhuet.fr> (2024-11-21)
-# No maintener and SRC_URI / license issue #262
-# Replaced by media-fonts/ttf-ancient-fonts wich includes
-# this font and few others by authors
-# Removal on 2024-12-22
-media-fonts/symbola
-
-# Julien Roy <julien@jroy.ca> (2024-11-20)
-# Dependency with no revdeps
-# Removal on 2024-12-20
-dev-python/kurbopy
 
 # Julien Roy <julien@jroy.ca> (2024-11-15)
 # >=x11-themes/adw-gtk3-5.4 requires >=gui-libs/gtk-4.16
