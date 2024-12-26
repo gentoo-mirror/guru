@@ -311,7 +311,7 @@ app-office/pyspread 2.1.1: Pyspread is a non-traditional spreadsheet written in 
 app-office/standartnotes-bin 3.183.22: End-to-end encrypted note-taking app, alternative to Evernote
 app-portage/appswipe 1.1.14 1.1.68: Application for browsing your local Portage repository files
 app-portage/pacvis 0.4.2: Displays dependency graphs of packages
-app-portage/portage-lostfiles 0.5.6: A simple script to identify files not tracked by Portage package manager
+app-portage/portage-lostfiles 0.5.6-r1: A simple script to identify files not tracked by Portage package manager
 app-portage/portagecfg 2.1.3 2.2.2 2.3.0 2.4.0: Utility to write Portage config files in an easy manner.
 app-portage/quantum-resolver 9999: A WIP portage dependency resolver
 app-portage/showbuild 0.9.1-r1: Script to follow log of running portage builds
@@ -334,7 +334,7 @@ app-shells/zsh-async 1.8.5_p20211005 1.8.6: Run multiple asynchronous jobs with 
 app-shells/zsh-autocomplete 24.09.04 9999: Real-time type-ahead completion for Zsh.
 app-shells/zsh-autosuggestions 0.7.0-r2: Fish-like autosuggestions for zsh
 app-shells/zsh-history-substring-search 1.0.2 1.1.0: ZSH port of Fish history search (up arrow)
-app-text/OCRmyPDF 16.5.0 16.6.2: OCRmyPDF adds an OCR text layer to scanned PDF files
+app-text/OCRmyPDF 16.6.2 16.7.0: OCRmyPDF adds an OCR text layer to scanned PDF files
 app-text/cmark-gfm 0.29.0.13: GitHub's fork of cmark
 app-text/code-minimap 0.6.4 0.6.7: A high performance code minimap generator
 app-text/dooit 3.1.0: A TUI todo manager
@@ -721,7 +721,6 @@ dev-python/json_exporter 1.0.2: Python-based library for exporting JSON data as 
 dev-python/jsonfeed 1.1.2: Python package for parsing and generating JSON feeds.
 dev-python/jsonlines 4.0.0: Library with helpers for the jsonlines file format
 dev-python/jupyter-sphinx 0.4.0: Jupyter Sphinx Extensions
-dev-python/kurbopy 0.10.40 0.11.0: Python wrapper around Rust kurbo 2D curves library
 dev-python/langdetect 1.0.9: Port of Google's language-detection library to Python
 dev-python/latexify-py 0.4.3.1: Annotate Python source code to get LaTeX expressions
 dev-python/libusb1 3.1.0: Pure-python wrapper for libusb-1.0
@@ -907,7 +906,7 @@ dev-util/bats-assert 2.1.0: Common assertions for Bats
 dev-util/bats-support 0.3.0: Supporting library for Bats test helpers
 dev-util/bc-ur 0.3.0: Blockchain Commons UR Library
 dev-util/bruno-bin 1.9.0 1.9.0-r1: Opensource IDE For Exploring and Testing Api's
-dev-util/bump-my-version 0.28.1 0.28.2: Version bump your Python project
+dev-util/bump-my-version 0.28.2 0.29.0: Version bump your Python project
 dev-util/bump2version 1.0.1: Version-bump your software with a single command!
 dev-util/cargo-post 0.1.7: A cargo wrapper that executes a post build script after a successful build.
 dev-util/catalyst-lab 1.6.0: An automation tool for building Gentoo release stages and binhost packages.
@@ -1050,7 +1049,7 @@ games-util/hid-nintendo 9999: A Nintendo HID kernel module
 games-util/itch-bin 25.5.1-r2 26.1.9: itch.io game browser, installer and launcher
 games-util/legendary 0.20.33-r1 0.20.34-r1: A free and open-source replacement for the Epic Games Launcher
 games-util/libtess2 1.0.2: Game and tools oriented refactored version of GLU tesselator
-games-util/mangohud 0.7.2 9999: Vulkan and OpenGL overlay for monitoring FPS, sensors, system load and more
+games-util/mangohud 0.7.2-r1 9999: Vulkan and OpenGL overlay for monitoring FPS, sensors, system load and more
 games-util/minigalaxy 1.2.6: A simple GOG client for Linux
 games-util/pegasus 9999: Graphical frontend for browsing your game library
 games-util/protonup 0.1.5 9999: Install and Update Proton-GE
@@ -1066,7 +1065,7 @@ gnome-extra/extension-manager 0.5.1 9999: A native tool for browsing, installing
 gnome-extra/iio-sensor-proxy 3.3 3.5: IIO sensors to D-Bus proxy
 gnome-extra/junction 1.7-r1: Application/browser chooser
 gnome-extra/portfolio 0.9.14: A minimalist file manager for those who want to use Linux mobile devices
-gnome-extra/vvmplayer 1.4: Visual Voicemail Player
+gnome-extra/vvmplayer 1.4-r1: Visual Voicemail Player
 gnome-extra/wike 3.0.0 3.0.1 3.1.0: Wikipedia Reader for the GNOME Desktop
 gnome-extra/yad 13.0 14.1 9999: Display GTK+ dialog boxes from command line or shell scripts
 gui-apps/1password 8.10.28 8.10.48-r1: The world’s most-loved password manager
@@ -1130,6 +1129,7 @@ gui-apps/nwg-displays 0.3.21 0.3.22: Output management utility for sway and Hypr
 gui-apps/nwg-dock 0.3.6 0.3.9 0.4.1: GTK3-based dock for sway
 gui-apps/nwg-dock-hyprland 0.3.2 0.3.3 0.4.0: GTK3-based dock for Hyprland
 gui-apps/nwg-drawer 0.5.1 0.5.2 0.6.0: Application drawer for wlroots-based Wayland compositors
+gui-apps/nwg-hello 0.3.0: GTK3-based greeter for greetd written in python
 gui-apps/nwg-icon-picker 0.1.1 9999: GTK icon chooser with a text search option
 gui-apps/nwg-launchers 0.5.0 0.6.3 0.7.1.1 9999: GTK+ launchers for sway, i3 and some other WMs
 gui-apps/nwg-menu 0.1.4 0.1.5 0.1.6: enuStart plugin to nwg-panel, also capable of working standalone
@@ -1225,7 +1225,6 @@ media-fonts/overpass 3.0.4: An open source webfont family inspired by Highway Go
 media-fonts/plemoljp 1.7.1-r1: PlemolJP is a composite font of IBM Plex Mono and IBM Plex Sans JP.
 media-fonts/source-han-mono 1.002: Pan-CJK OpenType/CFF mono font family
 media-fonts/source-han-serif 2.002 2.003: Pan-CJK OpenType/CFF font family
-media-fonts/symbola 7.17 13.00: Unicode font for Latin, IPA Extensions, Greek, Cyrillic and many Symbol Blocks
 media-fonts/ttf-ancient-fonts 2.60: Unicode font for Latin, IPA Extensions, Greek, Cyrillic and many Symbol Blocks
 media-fonts/twemoji 14.0.2: A color emoji font with a flat visual style, designed and used by Twitter
 media-fonts/udev-gothic 2.0.0: UDEV Gothic is a composite font of BIZ UD Gothic and JetBrains Mono.
@@ -1261,7 +1260,7 @@ media-gfx/zwcad 2023.23.0.3.4-r2: CAD software for 2D drawing, reviewing and pri
 media-libs/alsa-ucm-pinephone 1.2.6.3: ALSA ucm configuration files for the PinePhone (Pro)
 media-libs/alvr 16.0.0: ALVR is an open source remote VR display for the Oculus Go/Quest
 media-libs/amdvlk 2024.4.3: AMD Open Source Driver for Vulkan
-media-libs/amdvlk-bin 2021.2.5-r1 2023.3.3 2024.4.2: AMD Open Source Driver for Vulkan: official binary version
+media-libs/amdvlk-bin 2021.2.5-r1 2023.3.3 2024.4.3: AMD Open Source Driver for Vulkan: official binary version
 media-libs/blend2d 0.11.4-r2 9999: 2D vector graphics library powered by a JIT compiler.
 media-libs/dr_flac 0.12.43: Single-header FLAC audio decoder library
 media-libs/dr_mp3 0.6.40: Single-header MP3 audio decoder library
@@ -1286,7 +1285,7 @@ media-plugins/argotlunar-bin 2.06-r2: Argotlunar is a sound granulator. Binary L
 media-plugins/dtmediawiki 9999: Wikimedia Commons export plugin for Darktable. Every upload is converted
 media-plugins/gimp-avif-plugin 9999: Plug-in for development GIMP 2.99.11 for loading/saving AVIF images.
 media-plugins/gst-plugins-qt5 1.20.3 1.22.11: Qt5 QML video sink plugin for GStreamer
-media-plugins/gst-plugins-qt6 1.22.11 1.22.11-r1: Qt6 QML video sink plugin for GStreamer
+media-plugins/gst-plugins-qt6 1.22.11-r1 1.22.12: Qt6 QML video sink plugin for GStreamer
 media-plugins/qt-heif-image-plugin 0.3.4: Qt plugin for HEIF images
 media-plugins/qt-jpegxl-image-plugin 9999: Qt plug-in to allow Qt and KDE based applications to read/write JXL images.
 media-plugins/whysynth 20170701_p20180323-r1: A software synthesizer plugin for the DSSI Soft Synth Interface
@@ -1354,7 +1353,7 @@ media-video/obs-vkcapture 1.5.0 1.5.1 9999: OBS Linux Vulkan/OpenGL game capture
 media-video/stremio 4.4.168: Stremio is a modern media center for your video entertainment.
 media-video/syncplay 1.7.3: Client/server to synchronize media playback
 media-video/uxplay 1.67-r1 1.68.3-r1 1.70-r1: AirPlay Unix mirroring server
-media-video/walksnail-osd-tool 0.3.0-r1 9999: Tool for rendering OSDs over Walksnail DVR recordings
+media-video/walksnail-osd-tool 0.3.0-r2 9999: Tool for rendering OSDs over Walksnail DVR recordings
 media-video/wl-screenrec 0.1.6-r2: High performance screen/audio recorder for wlroots
 media-video/wlrobs 1.1 9999: OBS plugin that allows you to screen capture on wlroots based compositors
 media-video/ytarchive 0.4.0 0.5.0: Youtube livestream downloader
@@ -1743,7 +1742,7 @@ www-client/mullvad-browser-bin 14.0.3: The Mullvad Browser is developed to minim
 www-client/nyxt 3.11.8 3.12.0 9999: Nyxt - the hacker's power-browser
 www-client/vimb 3.6.0 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
 www-client/yandex-browser 24.10.4.808_p1: The web browser from Yandex
-www-client/zen-bin 1.0.2_beta3 1.0.2_beta4: Zen Browser - A Firefox-based browser focused on privacy
+www-client/zen-bin 1.0.2_beta4 1.0.2_beta5: Zen Browser - A Firefox-based browser focused on privacy
 www-misc/dufs 0.40.0: Dufs is a distinctive utility file server
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits
 www-misc/gorss 0.3: Go Terminal Feed Reader
