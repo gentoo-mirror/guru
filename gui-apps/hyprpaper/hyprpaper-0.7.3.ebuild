@@ -1,12 +1,12 @@
-# Copyright 2024 Gentoo Authors
+# Copyright 2023-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 inherit cmake
 
-DESCRIPTION="A wlroots-compatible Wayland color picker that does not suck"
-HOMEPAGE="https://github.com/hyprwm/hyprpicker"
+DESCRIPTION="A blazing fast wayland wallpaper utility"
+HOMEPAGE="https://github.com/hyprwm/hyprpaper"
 SRC_URI="https://github.com/hyprwm/${PN}/archive/v${PV}.tar.gz -> ${P}.gh.tar.gz"
 
 LICENSE="BSD"
@@ -14,18 +14,25 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="
+	dev-libs/hyprgraphics
+	>=dev-libs/hyprlang-0.6.0
 	dev-libs/wayland
+	>=gui-libs/hyprutils-0.2.4:=
+	media-libs/libglvnd
+	media-libs/libjpeg-turbo:=
+	media-libs/libwebp:=
 	x11-libs/cairo
 	x11-libs/pango
 "
-
-BDEPEND="
+DEPEND="
 	${RDEPEND}
 	dev-libs/wayland-protocols
+"
+BDEPEND="
+	>=dev-util/hyprwayland-scanner-0.4.0
 	dev-util/wayland-scanner
-	media-libs/libglvnd
-	media-libs/libjpeg-turbo
-	x11-libs/libxkbcommon
+	dev-vcs/git
+	virtual/pkgconfig
 "
 
 src_compile() {
