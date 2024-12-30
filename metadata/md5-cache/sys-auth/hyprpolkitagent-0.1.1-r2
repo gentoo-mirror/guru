@@ -1,14 +1,14 @@
 BDEPEND=virtual/pkgconfig app-alternatives/ninja >=dev-build/cmake-3.20.5
 DEFINED_PHASES=compile configure install prepare test
-DEPEND=dev-qt/qtbase:6[gui,widgets] dev-qt/qtdeclarative:6 gui-libs/hyprutils sys-auth/polkit sys-auth/polkit-qt[qt6]
+DEPEND=dev-qt/qtbase:6[gui,widgets] dev-qt/qtdeclarative:6 gui-libs/hyprutils:= sys-auth/polkit sys-auth/polkit-qt[qt6]
 DESCRIPTION=Polkit authentication agent for Hyprland, written in Qt/QML
 EAPI=8
 HOMEPAGE=https://wiki.hyprland.org/Hypr-Ecosystem/hyprpolkitagent
 INHERIT=cmake toolchain-funcs
 KEYWORDS=~amd64
 LICENSE=BSD
-RDEPEND=dev-qt/qtbase:6[gui,widgets] dev-qt/qtdeclarative:6 gui-libs/hyprutils sys-auth/polkit sys-auth/polkit-qt[qt6] kde-frameworks/qqc2-desktop-style:6
+RDEPEND=dev-qt/qtbase:6[gui,widgets] dev-qt/qtdeclarative:6 gui-libs/hyprutils:= sys-auth/polkit sys-auth/polkit-qt[qt6] kde-frameworks/qqc2-desktop-style:6
 SLOT=0
 SRC_URI=https://github.com/hyprwm/hyprpolkitagent/archive/refs/tags/v0.1.1.tar.gz -> hyprpolkitagent-0.1.1.tar.gz
 _eclasses_=toolchain-funcs	14648d8795f7779e11e1bc7cf08b7536	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	f14aba975c94ccaa9f357a27e3b17ffe	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	10a50dfaf728b802fcfd37f8d0da9056
-_md5_=813c85f634561081d668adbb44396a53
+_md5_=ec7c92f2fe8fb2b8b997a564b0290cfe
