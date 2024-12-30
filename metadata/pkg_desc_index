@@ -172,7 +172,7 @@ app-doc/stdman 2022.07.30 2024.07.05 9999: Formatted C++ stdlib man pages (cppre
 app-doc/sway-wiki 9999: Wiki of gui-wm/sway, rendered to HTML using kramdown-parser-gfm
 app-editors/amp 0.7.1: A complete text editor for your terminal.
 app-editors/emacs-lsp-booster 0.2.1: Emacs LSP performance booster
-app-editors/imhex 1.35.4-r1: A hex editor for reverse engineers, programmers, and eyesight
+app-editors/imhex 1.36.2: A hex editor for reverse engineers, programmers, and eyesight
 app-editors/kakoune-lsp 18.1.0: Kakoune Language Server Protocol Client
 app-editors/l3afpad 0.8.18.1.11: Simple GTK3 text editor (successor to leafpad)
 app-editors/lapce 0.4.2-r1 9999: Lightning-fast and Powerful Code Editor written in Rust
@@ -353,6 +353,7 @@ app-text/owo 0.1.0: OwO-ifies text via regex
 app-text/pandoc-crossref-bin 0.3.17.0f: Pandoc filter for cross-references
 app-text/sioyek 9999: Sioyek is a PDF viewer with a focus on textbooks and research papers
 app-text/smu 1.5 9999: Simple markup - markdown like syntax
+app-text/texlab 5.21.0: LaTeX Language Server
 app-text/the-platinum-searcher-bin 2.2.0: Fast CLI search tool, faster than grep, ack, silver_searcher (ag)
 app-text/tldr 3.2.0: Python command line client for tldr pages
 app-text/typst 0.12.0: A markup-based typesetting system for the sciences
@@ -412,7 +413,7 @@ dev-cpp/pcg-cpp 0.98.1_p20210406-r1: Family of better random number generators
 dev-cpp/qt-jdenticon 0.3.0-r1 0.3.0_p20240107 0.3.1: Qt5 / C++14 Port of Jdenticon
 dev-cpp/rang 3.2: Minimal, header-only, modern C++ library for terminal goodies
 dev-cpp/scnlib 4.0.1: scanf for modern C++
-dev-cpp/simdutf 5.7.1: simdutf: Unicode validation and transcoding at billions of characters per second
+dev-cpp/simdutf 5.7.2: simdutf: Unicode validation and transcoding at billions of characters per second
 dev-cpp/sprout 0_pre20190615: C++11/14 constexpr based Containers, Algorithms, Random numbers and others
 dev-cpp/trantor 1.5.19 1.5.20: Non-blocking I/O tcp network lib based on c++14/17
 dev-cpp/trompeloeil 47: Header only C++14 mocking framework
@@ -525,7 +526,6 @@ dev-libs/feedbackd-device-themes 0.1.0 0.4.0: A daemon to provide haptic feedbac
 dev-libs/fortran-regex 1.1.2: Modern Fortran port of the tiny-regex-c library for regular expressions
 dev-libs/fortran-shlex 1.0.1: Modern Fortran port of the tiny-regex-c library for regular expressions
 dev-libs/fortran-stdlib 0.2.1-r1 0.3.0 0.4.0 0.5.0 0.6.1 0.7.0 9999: A community driven standard library for (modern) Fortran
-dev-libs/fsst 0_pre20200830-r1: Fast Static Symbol Table: fast text compression that allows random access
 dev-libs/ftl 1.0_p20230220: The Fortran Template Library (FTL) is a general purpose library for Fortran 2003
 dev-libs/gbinder 1.1.41 9999: GLib-style interface to binder
 dev-libs/gmobile 0.1.0 0.2.1: Mobile related helpers for glib based projects
@@ -736,7 +736,7 @@ dev-python/mkdocs-blog-plugin 9999: Plugin for MkDocs to keep a simple blog sect
 dev-python/mkdocs-bootstrap-tables-plugin 0.1.1: A MkDocs plugin to add bootstrap classes to plan markdown generated tables.
 dev-python/mkdocs-exclude 1.0.2-r1: Lets you exclude files or trees from your output
 dev-python/mkdocs-git-committers-plugin 0.2.3: A mkdocs plugin for displaying the last commit and a list of contributors.
-dev-python/mkdocs-rss-plugin 1.15.0: MkDocs plugin to generate a RSS feeds.
+dev-python/mkdocs-rss-plugin 1.17.1: MkDocs plugin to generate a RSS feeds.
 dev-python/mobi 0.3.3: Unpack unencrypted mobi files
 dev-python/moderngl 5.12.0-r1: Modern OpenGL binding for python
 dev-python/moderngl-window 3.0.3-r1: A cross platform utility library for ModernGL
@@ -818,7 +818,7 @@ dev-python/python-statemachine 2.3.6 2.4.0 2.5.0: Python Finite State Machines m
 dev-python/python-telegram-bot 20.6-r1 21.1.1 9999: Python wrapper of telegram bots API
 dev-python/pywavefront 1.3.3: Python library for importing Wavefront .obj files
 dev-python/pywebview 4.4.1-r1 5.1-r1: A lightweight cross-platform wrapper around a webview component
-dev-python/questionary 2.0.1: Python library to build pretty command line user prompts
+dev-python/questionary 2.0.1 2.1.0: Python library to build pretty command line user prompts
 dev-python/queuelib 1.6.2: Collection of persistent and non-persistent queues for Python
 dev-python/readability-lxml 0.8.1: fast html to text parser (article readability tool)
 dev-python/readmdict 0.1.1-r1: Read mdx/mdd files
@@ -1393,7 +1393,6 @@ net-dns/AdGuardHome 0.107.49 0.107.50 0.107.51: Network-wide ads & trackers bloc
 net-dns/blocky 0.22 0.23 0.24 9999: Fast and lightweight DNS proxy as ad-blocker with many features written in Go
 net-dns/noip-duc 3.3.0: No-IP Dynamic Update Client (https://www.noip.com)
 net-fs/httpdirfs 1.2.7: Filesystem to mount HTTP directory listings, with a permanent cache
-net-fs/hubicfuse 3.0.1: Support for mounting HubiC drive in GNU/Linux
 net-im/Quaternion 0.0.96.1: A Qt-based IM client for Matrix
 net-im/WasIstLos 1.6.5 1.7.0: An unofficial WhatsApp desktop application for Linux
 net-im/abaddon 0.2.1 9999: Alternative Discord client using GTK instead of Electron
