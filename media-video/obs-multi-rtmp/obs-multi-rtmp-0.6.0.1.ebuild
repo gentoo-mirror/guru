@@ -1,9 +1,9 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-inherit cmake flag-o-matic
+inherit cmake
 
 DESCRIPTION="OBS Simulcast support plugin"
 HOMEPAGE="https://github.com/sorayuki/obs-multi-rtmp"
@@ -11,20 +11,26 @@ if [[ ${PV} == 9999 ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/sorayuki/obs-multi-rtmp.git"
 else
-	SRC_URI="https://github.com/sorayuki/obs-multi-rtmp/archive/refs/tags/$PV.tar.gz -> ${P}.tar.gz"
+	SRC_URI="https://github.com/sorayuki/obs-multi-rtmp/archive/refs/tags/$PV-obs31.tar.gz -> ${P}-obs31.tar.gz"
 	KEYWORDS="~amd64"
 fi
+
+S="${WORKDIR}/${P}-obs31"
 
 LICENSE="GPL-2"
 SLOT="0"
 IUSE="+obs-frontend-api +qt"
 DEPEND="
 	qt? ( dev-qt/qtbase:6 )
-	media-video/obs-studio
+	>=media-video/obs-studio-31
 "
 RDEPEND="
 	${DEPEND}
 "
+
+PATCHES=(
+	"${FILESDIR}/cmake.patch"
+)
 
 src_unpack() {
 	default
@@ -39,10 +45,6 @@ src_configure() {
 		-DENABLE_FRONTEND_API=$(usex obs-frontend-api ON OFF)
 		-DENABLE_QT=$(usex qt ON OFF)
 	)
-
-	# code base is not clean
-	# opened bug https://github.com/sorayuki/obs-multi-rtmp/issues/378
-	append-cppflags -Wno-error=shadow -Wno-error=conversion -Wno-error=float-conversion -Wno-error=sign-compare
 
 	cmake_src_configure
 }
