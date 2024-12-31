@@ -928,6 +928,7 @@ dev-util/fnm 1.37.1: Fast and simple Node.js version manager
 dev-util/fortls 2.13.0 3.0.0 3.1.1 3.1.2: Fortran Language Server (fortls)
 dev-util/fortran-test-drive 0.4.0 0.5.0: The simple testing framework (for Fortran)
 dev-util/gammaray 2.11.3: High-level runtime introspection tool for Qt applications
+dev-util/genTree 0.1.0 9999: Gentoo rootfs tree generator
 dev-util/git-bug 0.8.0 9999: distributed, offline-first bug tracker
 dev-util/gitlab-ci-local-bin 4.43.0 4.47.0 4.56.0: Run gitlab pipelines locally as shell executor or docker executor
 dev-util/go-task 3.38.0-r1: A task runner / simpler Make alternative written in Go
@@ -1072,7 +1073,7 @@ gui-apps/1password 8.10.28 8.10.48-r1: The world’s most-loved password manager
 gui-apps/ReGreet 0.1.1-r10 9999: A clean and customizable GTK-based greetd greeter written in Rust
 gui-apps/ashell 0.2.0-r1 0.3.0: A ready to go Wayland status bar for Hyprland
 gui-apps/aylurs-gtk-shell 1.8.2-r1: Aylurs's Gtk Shell (AGS), An eww inspired gtk widget system.
-gui-apps/azote 1.14.0 9999: wallpaper manager for wlroots compositors
+gui-apps/azote 1.14.1 9999: wallpaper manager for wlroots compositors
 gui-apps/clipman 1.6.2 1.6.3 1.6.4: A basic clipboard manager for Wayland.
 gui-apps/coreaction 4.5.0 9999: A side bar for showing widgets for C Suite
 gui-apps/coreapps-meta 4.5.0 9999: Meta package for coreapps
@@ -1109,7 +1110,7 @@ gui-apps/hiprompt-gtk-py 0.8.0 9999: GTK+ Himitsu prompter for Wayland
 gui-apps/hypridle 0.1.5-r2 9999: Hyprland's idle daemon
 gui-apps/hyprlock 0.5.0-r1 9999: Hyprland's GPU-accelerated screen locking utility
 gui-apps/hyprnome 0.3.0: GNOME-like workspace switching in Hyprland.
-gui-apps/hyprpaper 0.7.1-r1 0.7.3: A blazing fast wayland wallpaper utility
+gui-apps/hyprpaper 0.7.1-r1 0.7.3-r1: A blazing fast wayland wallpaper utility
 gui-apps/hyprpicker 0.3.0-r2 9999: A wlroots-compatible Wayland color picker that does not suck
 gui-apps/hyprshade 3.2.1 9999: Hyprland shader configuration tool
 gui-apps/hyprshot 1.2.3 1.3.0 9999: Hyprshot is an utility to easily take screenshot in Hyprland using your mouse
@@ -1181,7 +1182,7 @@ gui-apps/wlsunset 0.4.0 9999: Day/night gamma adjustments for Wayland
 gui-apps/wob 0.14.2 0.15.1-r1: Lightweight overlay volume/backlight/progress/anything bar for Wayland
 gui-apps/wscreensaver 9999: Xscreensaver screensavers ported to wayland
 gui-apps/wtype 0.4: xdotool type for wayland
-gui-apps/xremap 0.10.2: Dynamic key remap for X and Wayland
+gui-apps/xremap 0.10.3: Dynamic key remap for X and Wayland
 gui-apps/xwayland-satellite 0.5-r1: Xwayland outside your Wayland
 gui-apps/yambar 1.11.0 9999: Simplistic and highly configurable status panel for X and Wayland
 gui-libs/gtk-session-lock 0.2.0-r6 9999: GTK-based lockscreen for Wayland
@@ -1212,7 +1213,7 @@ media-fonts/dseg 0.46: A free font which imitate LCD Display
 media-fonts/firago 1.001: A continuation of FiraSans
 media-fonts/firge 0.3.0-r1: Firge is a composite font of Fira Mono and GenShin-Gothic.
 media-fonts/gohufont 2.1_p20170627: A monospace bitmap font
-media-fonts/hackgen 2.9.1: HackGen is a composite font of Hack and GenJyuu-Gothic.
+media-fonts/hackgen 2.10.0: HackGen is a composite font of Hack and GenJyuu-Gothic.
 media-fonts/inconsolata_dz 20201205: A beautiful sans-serif monotype font designed for code listings
 media-fonts/last-resort 15.100 16.000: A collection of glyphs used as the backup of "last resort" to any other font
 media-fonts/lato 2: Lato font
@@ -1223,12 +1224,12 @@ media-fonts/monaspace 1.000: A free and open-source typeface for developers
 media-fonts/moralerspace 1.0.2: moralerspace is a composite font of Monaspace and IBM Plex Sans JP.
 media-fonts/nerdfonts 3.2.0 3.2.1: Iconic font aggregator, collection, & patcher. 3,600+ icons, 50+ patched fonts: Hack, Source Code Pro, more. Glyph collections: Font Awesome, Material Design Icons, Octicons, & more
 media-fonts/overpass 3.0.4: An open source webfont family inspired by Highway Gothic
-media-fonts/plemoljp 1.7.1-r1: PlemolJP is a composite font of IBM Plex Mono and IBM Plex Sans JP.
+media-fonts/plemoljp 2.0.0: PlemolJP is a composite font of IBM Plex Mono and IBM Plex Sans JP.
 media-fonts/source-han-mono 1.002: Pan-CJK OpenType/CFF mono font family
 media-fonts/source-han-serif 2.002 2.003: Pan-CJK OpenType/CFF font family
 media-fonts/ttf-ancient-fonts 2.60: Unicode font for Latin, IPA Extensions, Greek, Cyrillic and many Symbol Blocks
 media-fonts/twemoji 14.0.2: A color emoji font with a flat visual style, designed and used by Twitter
-media-fonts/udev-gothic 2.0.0: UDEV Gothic is a composite font of BIZ UD Gothic and JetBrains Mono.
+media-fonts/udev-gothic 2.1.0: UDEV Gothic is a composite font of BIZ UD Gothic and JetBrains Mono.
 media-fonts/unscii 2.1: Set of bitmapped Unicode fonts based on classic system fonts
 media-fonts/victor-mono 1.5.4 1.5.5 1.5.6: A free programming font with cursive italics and ligatures
 media-fonts/warframe-fonts 0_pre20191111: Fonts from the Warframe game
@@ -1298,6 +1299,7 @@ media-sound/amberol 2024.1: Simple GUI Music Player
 media-sound/bespokesynth 1.2.1: Software modular synth
 media-sound/callaudiod 0.1.9 0.1.10: Call audio routing daemon
 media-sound/corrscope 0.10.0-r1 0.10.1: Advanced oscilloscope audio visualizer specializing in chiptune
+media-sound/deep-filter 0.5.6: Noise supression using deep filtering
 media-sound/drumgizmo 0.9.20 9999: Cross-platform drum plugin and stand-alone application
 media-sound/dzr 240909: DZR: the command line deezer.com player
 media-sound/eartag 0.5.0 0.5.1: GTK4 MusicBrainz audio tagger
@@ -1308,7 +1310,7 @@ media-sound/jacktrip 1.7.1-r1 2.4.0: Send JACK audio over a network
 media-sound/jriver 31.0.83: A cross-platform media center, famous for high quality of audio.
 media-sound/kew 2.4.4-r1: kew (/kjuː/) is a command-line music player for Linux.
 media-sound/lms 3.60.1 3.61.0 3.62.0: Lightweight Music Server.
-media-sound/loudgain 0.6.8-r1: Versatile ReplayGain 2.0 loudness normalizer
+media-sound/loudgain 0.6.8-r1 0.6.8_p20240128: Versatile ReplayGain 2.0 loudness normalizer
 media-sound/mopidy 3.4.2: An extensible music server written in Python.
 media-sound/mpd-mpris 0.3.1 0.4.0 0.4.1: An implementation of the MPRIS protocol for MPD.
 media-sound/mpvc 1.1.4-r1: mpc-like tool which connects to existing mpv instances through sockets.
@@ -1337,6 +1339,7 @@ media-sound/youtube-music-bin 3.6.2-r1: YouTube Music Desktop App bundled with c
 media-sound/zita-ajbridge 0.8.4 0.8.4-r1: zita-a2j and zita-j2a - bridges between ALSA and JACK
 media-video/avisynth+ 9999: A powerful nonlinear scripting language for video
 media-video/ciano 0.2.4-r2: A multimedia file converter focused on simplicity
+media-video/clapper 0.6.1: Modern and user-friendly media player
 media-video/delfin 0.4.7 0.4.8: Stream movies and TV shows from Jellyfin
 media-video/gpu-screen-recorder 9999: A screen recorder that has minimal impact on system performance
 media-video/gpu-screen-recorder-gtk 9999: GTK frontend for gpu-screen-recorder.
@@ -1347,7 +1350,7 @@ media-video/manimgl 1.7.2 9999: Animation engine for explanatory math videos
 media-video/mediaelch 2.10.6 2.12.0 9999: Video metadata scraper
 media-video/megapixels 1.4.3-r1: GTK4 camera application that knows how to deal with the media request api
 media-video/mpc-qt 24.06 24.12: Media Player Classic Qute Theater
-media-video/obs-multi-rtmp 0.5.0.4 9999: OBS Simulcast support plugin
+media-video/obs-multi-rtmp 0.6.0.1 9999: OBS Simulcast support plugin
 media-video/obs-streamfx 0.12.0.9999 9999: OBS® Studio plugin which adds many new effects.
 media-video/obs-vaapi 0.4.1 0.4.2 9999: OBS Studio VAAPI support via GStreamer
 media-video/obs-vkcapture 1.5.0 1.5.1 9999: OBS Linux Vulkan/OpenGL game capture
@@ -1504,7 +1507,7 @@ net-misc/yt-dlg 2024.03.19: A cross platform front-end GUI of the popular youtub
 net-news/cliflux 1.4.1 1.4.4: A terminal-ui (TUI) client for the Miniflux RSS reader
 net-news/comitium 1.8.1: feed aggregator for gemini supporting many formats and protocols
 net-news/gfeeds 2.2.0-r1 2.2.0-r2 2.2.0-r3: An RSS/Atom feed reader for GNOME.
-net-news/newsflash 3.1.6 3.1.6-r1: Feed Reader written in GTK
+net-news/newsflash 3.1.6 3.1.6-r1 3.3.5: Feed Reader written in GTK
 net-news/newsraft 0.25 0.26 0.27 9999: A lightweight feed reader with ncurses user interface inspired by Newsboat.
 net-nntp/inn 2.7.1: InterNetNews - the Internet meets Netnews
 net-nntp/nzb-monkey-go 0.1.16: Golang version of the NZB Monkey with included NZB direct search
@@ -1605,7 +1608,7 @@ sci-mathematics/pyromaths 21.8.2-r1: Create maths exercises in LaTeX and PDF for
 sci-mathematics/rink 0.8.0-r1 9999: Unit conversion tool, similar to frink
 sci-mathematics/rstudio-desktop-bin 2023.09.0_p463 2023.09.1_p494: IDE for R and Python
 sci-misc/boinc-wrapper 26018-r2 26018-r3: Wrapper to use non-BOINC apps with BOINC
-sci-physics/openmodelica 1.23.1-r1 1.24.0: Open-source Modelica-based modeling and simulation environment
+sci-physics/openmodelica 1.24.0-r1: Open-source Modelica-based modeling and simulation environment
 sci-physics/ovito 3.10.4 3.10.5 3.10.5-r1: Open Visualization Tool
 sec-keys/openpgp-keys-aepaneshnikov 20221210: OpenPGP keys used by Alexander Epaneshnikov
 sec-keys/openpgp-keys-emersion 20240714: OpenPGP keys used by Simon Ser
@@ -1741,7 +1744,7 @@ www-client/firefox-developer-bin 122.0 128.0: Firefox browser developer edition
 www-client/mullvad-browser-bin 14.0.3: The Mullvad Browser is developed to minimize tracking and fingerprinting.
 www-client/nyxt 3.11.8 3.12.0 9999: Nyxt - the hacker's power-browser
 www-client/vimb 3.6.0 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
-www-client/yandex-browser 24.10.4.808_p1: The web browser from Yandex
+www-client/yandex-browser 24.12.1.712_p1: The web browser from Yandex
 www-client/zen-bin 1.0.2_beta4 1.0.2_beta5: Zen Browser - A Firefox-based browser focused on privacy
 www-misc/dufs 0.40.0: Dufs is a distinctive utility file server
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits
