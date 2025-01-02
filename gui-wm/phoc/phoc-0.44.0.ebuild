@@ -1,4 +1,4 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -20,7 +20,7 @@ RESTRICT="!test? ( test )"
 WLROOTS_DEPEND="
 	>=dev-libs/libinput-1.14.0:=
 	>=dev-libs/wayland-1.22.0
-	media-libs/libdisplay-info
+	media-libs/libdisplay-info:=
 	media-libs/libglvnd
 	|| (
 		>=media-libs/mesa-24.1.0_rc1[opengl]

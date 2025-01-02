@@ -1,4 +1,4 @@
-# Copyright 2022-2024 Gentoo Authors
+# Copyright 2022-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -28,6 +28,7 @@ RESTRICT="!test? ( test )"
 PATCHES=(
 	"${FILESDIR}/linux.ninja.patch"
 	"${FILESDIR}/build.ninja.patch"
+	"${FILESDIR}/${PN}-3.10.5-uint32_t-fix.patch"
 )
 
 src_prepare() {
@@ -60,6 +61,7 @@ src_compile() {
 		build/build.ninja || die
 
 	eapply "${FILESDIR}/build.ninja.patch"
+	eapply "${FILESDIR}/${PN}-3.10.5-uint32_t-fix.patch"
 	sed -i -e "s/REPLACE_ME/$(tc-getCC)/" \
 		-e "s/REPLACE_AR/$(tc-getAR)/" \
 		-e "s|LUAMAKE_PATH|${S}/3rd/luamake/luamake|" \
