@@ -292,7 +292,7 @@ app-misc/wcal 0.1-r1: ISO weekly calendar
 app-misc/wego 2.2: Wego is a weather client for the terminal
 app-misc/x86-64-level 0.2.2 9999: Get the x86-64 Microarchitecture Level on the Current Machine
 app-misc/xplr 0.21.3-r1: A hackable, minimal, fast TUI file explorer
-app-misc/yazi 0.2.5-r1 0.3.3-r1: Blazing fast terminal file manager written in Rust, based on async I/O.
+app-misc/yazi 0.4.2: Blazing fast terminal file manager written in Rust, based on async I/O.
 app-misc/zcock 0.2.1 0.2.2: Print an emoji according to traditional chinese calendar and more
 app-mobilephone/flashlight 0.1.1-r2: It's a flashlight, what do you expect?
 app-mobilephone/mobile-config-firefox 2.1.0: Mobile and privacy friendly configuration for Firefox
@@ -326,7 +326,7 @@ app-shells/manpager 0.0.3: colorize man pages
 app-shells/mrsh 9999: minimal strictly POSIX compliant shell
 app-shells/ohmyzsh 9999: A framework for managing your zsh configuration.
 app-shells/pokemon-colorscripts 9999: Pokemon unicode sprites for your terminal!
-app-shells/powerline-go 1.21.0 1.22.1: A powerline like prompt for Bash, Zsh, Fish written in Go lang.
+app-shells/powerline-go 1.25: A powerline like prompt for Bash, Zsh, Fish written in Go lang.
 app-shells/shox 2024.01.25: A customisable, universally compatible terminal status bar
 app-shells/silver 2.0.0-r1: A cross-shell customizable powerline-like prompt with icons
 app-shells/vivid 0.9.0 0.10.1: A themeable LS_COLORS generator with a rich filetype datebase
@@ -772,7 +772,7 @@ dev-python/ptpython 3.0.29: Python REPL build on top of prompt-toolkit
 dev-python/py-nanoid 9999: Python Nanoid
 dev-python/pyagentx 0.4-r1: Python AgentX Implementation
 dev-python/pyclip 0.7.0-r2 9999: Python clipboard module
-dev-python/pydantic-settings 2.6.1 2.7.0: Settings management using Pydantic
+dev-python/pydantic-settings 2.7.0 2.7.1: Settings management using Pydantic
 dev-python/pydispatcher 2.0.7: Multi-producer-multi-consumer signal dispatching mechanism
 dev-python/pydub 0.25.1: Manipulate audio with an simple and easy high level interface
 dev-python/pyfiglet 0.8_p1: Pure-python FIGlet implementation
@@ -794,7 +794,7 @@ dev-python/pyperscan 0.3.0: An opinionated Python binding for Hyperscan
 dev-python/pyqtdarktheme 2.1.0: A flat dark theme for PySide and PyQt.
 dev-python/pyrime 0.0.7: rime for python
 dev-python/pyrr 0.10.3-r1: A cross platform utility library for ModernGL
-dev-python/pysnooper 1.2.0: Never use print for debugging again
+dev-python/pysnooper 1.2.0 1.2.1: Never use print for debugging again
 dev-python/pystardict 0.8-r1: Library for manipulating StarDict dictionaries from within Python
 dev-python/pytest-benchmark 4.0.0: py.test fixture for benchmarking code
 dev-python/pytest-cases 3.8.2: Separate test code from test cases in pytest
@@ -940,7 +940,7 @@ dev-util/juliaup 1.17.10: Julia installer and version multiplexer
 dev-util/lemminx-bin 0.27.0 0.27.1: XML Language Server
 dev-util/libtypec-utils 0.5.2: Library to interface with USB Type-C/Power Delivery devices
 dev-util/lottieconverter 0.2-r1 0.2-r2: Simple lottie (telegram animated sticker) converter
-dev-util/lua-language-server 3.9.1-r1 3.9.3 3.10.5: Lua language server
+dev-util/lua-language-server 3.9.3 3.10.5 3.13.5: Lua language server
 dev-util/mh 1.4.1: Generate help for Makefile
 dev-util/mock 6.0: Simple chroot build environment manager for building RPMs
 dev-util/mock-core-configs 41.5: Mock core config files basic chroots
@@ -1135,7 +1135,7 @@ gui-apps/nwg-hello 0.3.0: GTK3-based greeter for greetd written in python
 gui-apps/nwg-icon-picker 0.1.1 9999: GTK icon chooser with a text search option
 gui-apps/nwg-launchers 0.5.0 0.6.3 0.7.1.1 9999: GTK+ launchers for sway, i3 and some other WMs
 gui-apps/nwg-menu 0.1.4 0.1.5 0.1.6: enuStart plugin to nwg-panel, also capable of working standalone
-gui-apps/nwg-panel 0.9.54 0.9.55 0.9.56 0.9.57 0.9.58 9999: GTK3-based panel for sway and Hyprland Wayland compositors
+gui-apps/nwg-panel 0.9.58 0.9.59 9999: GTK3-based panel for sway and Hyprland Wayland compositors
 gui-apps/nwg-shell 0.5.43 0.5.44: libraries an common functions for the nwg-shell project
 gui-apps/nwg-shell-config 0.5.54 0.5.55: nwg-shell configuration utility
 gui-apps/openrefine 3.7.9: Wikidata batch editor, Wikimedia Commons mass upload tool
@@ -1155,7 +1155,7 @@ gui-apps/sway-audio-idle-inhibit 9999: Prevents swayidle from idle when an appli
 gui-apps/sway-launcher-desktop 1.7.0: TUI Application launcher with Desktop Entry support
 gui-apps/swaykbdd 1.4: Per-window keyboard layout switcher for Sway
 gui-apps/swaylock-effects 1.7.0.0 9999: Swaylock, with fancy effects
-gui-apps/swaylock-plugin 9999: Fork of Swaylock that supports animated backgrounds
+gui-apps/swaylock-plugin 1.8.0 9999: Fork of Swaylock that supports animated backgrounds
 gui-apps/swaync 0.9.0 0.10.1-r1: A simple notification daemon with a GTK gui for notifications and control center
 gui-apps/swayosd 0.1.0: GTK based on screen display for keyboard shortcuts like caps-lock and volume
 gui-apps/swayr 0.27.4: A LRU window-switcher (and more) for the sway window manager
@@ -1197,7 +1197,7 @@ gui-wm/cage 0.2.0 9999: A Wayland kiosk
 gui-wm/hyprland-contrib 0.1-r1 9999: Community-maintained extensions for hyprland
 gui-wm/miracle-wm 0.3.7-r1 0.4.0: Tiling Wayland compositor based on Mir
 gui-wm/niri 0.1.9-r1 0.1.10.1: Scrollable-tiling Wayland compositor
-gui-wm/phoc 0.41.0 0.42.1 0.43.0: Wayland compositor for mobile phones
+gui-wm/phoc 0.42.1 0.43.0 0.44.0: Wayland compositor for mobile phones
 gui-wm/river 0.3.6: A dynamic tiling Wayland compositor
 gui-wm/swayfx 0.4-r1: SwayFX: Sway, but with eye candy!
 kde-apps/kwalletcli 3.03: CLI for the KDE Wallet
@@ -1299,7 +1299,7 @@ media-sound/amberol 2024.1: Simple GUI Music Player
 media-sound/bespokesynth 1.2.1: Software modular synth
 media-sound/callaudiod 0.1.9 0.1.10: Call audio routing daemon
 media-sound/corrscope 0.10.0-r1 0.10.1: Advanced oscilloscope audio visualizer specializing in chiptune
-media-sound/deep-filter 0.5.6: Noise supression using deep filtering
+media-sound/deep-filter 0.5.6-r1: Noise supression using deep filtering
 media-sound/drumgizmo 0.9.20 9999: Cross-platform drum plugin and stand-alone application
 media-sound/dzr 240909: DZR: the command line deezer.com player
 media-sound/eartag 0.5.0 0.5.1: GTK4 MusicBrainz audio tagger
@@ -1314,7 +1314,7 @@ media-sound/loudgain 0.6.8-r1 0.6.8_p20240128: Versatile ReplayGain 2.0 loudness
 media-sound/mopidy 3.4.2: An extensible music server written in Python.
 media-sound/mpd-mpris 0.3.1 0.4.0 0.4.1: An implementation of the MPRIS protocol for MPD.
 media-sound/mpvc 1.1.4-r1: mpc-like tool which connects to existing mpv instances through sockets.
-media-sound/musikcube 3.0.1 3.0.2: Excellent terminal music player, support almost every known sound system.
+media-sound/musikcube 3.0.2 3.0.4: Excellent terminal music player, support almost every known sound system.
 media-sound/netcat-cpi 2014.04.29-r1: Kernel module edition of the Cycles Per Instruction (2014) album
 media-sound/noson-app 5.6.6-r1 5.6.8: The essential to control music from your SONOS devices on Linux platforms
 media-sound/nuclear-bin 0.6.30: Nuclear is a streaming program that pulls content from free sources on internet
@@ -1429,7 +1429,7 @@ net-im/pop 8.0.21: Screen sharing with multiplayer control, with voice
 net-im/revolt-desktop 1.0.8 1.0.8-r2: Revolt Desktop App
 net-im/session-desktop-bin 1.10.8: Session Desktop - Onion routing based messenger
 net-im/sliding-sync 0.99.15 0.99.19: Proxy implementation of MSC3575's sync protocol.
-net-im/teams-for-linux 1.11.5 1.12.3: Unofficial Microsoft Teams client for Linux. Binary precompiled version.
+net-im/teams-for-linux 1.11.5 1.12.3 1.12.5: Unofficial Microsoft Teams client for Linux. Binary precompiled version.
 net-im/vesktop-bin 1.5.2 1.5.3: All-in-one voice and text chat for gamers with Vencord Preinstalled
 net-irc/catgirl 2.2 2.2a: TLS-only terminal IRC client
 net-irc/halloy 2024.14: IRC application written in Rust
@@ -1484,7 +1484,7 @@ net-misc/maestral 1.9.3-r1 1.9.4: Maestral is an open-source Dropbox client writ
 net-misc/maestral-qt 1.9.3 1.9.4: Maestral is an open-source Dropbox client written in Python
 net-misc/mastorss 0.13.1 0.13.1-r1 9999: Another RSS to Mastodon bot
 net-misc/mbpoll 1.5.2 9999: command line utility to communicate with ModBus slave (RTU or TCP)
-net-misc/megasync 5.6.0.0 5.6.1.0: The official Qt-based program for syncing your MEGA account in your PC
+net-misc/megasync 5.6.1.0 5.7.0.0: The official Qt-based program for syncing your MEGA account in your PC
 net-misc/myip 1.2.1: Get your external IP address using STUN server
 net-misc/ooni-probe-cli 3.23.0 3.24.0: OONI Probe network measurement tool for detecting internet censorship
 net-misc/openbgpd 8.4 8.5 8.6 9999: OpenBGPD is a free implementation of BGPv4
@@ -1549,11 +1549,11 @@ net-wireless/rtl8723bu 9999: Driver for the rtl8723 wireless chipset
 net-wireless/rtl8821ce 0_pre20240326: Realtek RTL8821CE Driver module for Linux kernel
 net-wireless/rtl8821cu 0_pre20240821: Realtek 8821CU/RTL8811CU module for Linux kernel
 net-wireless/sdrpp 1.2.0_pre20240607: Cross-Platform SDR Software
-phosh-base/phosh 0.41.0 0.42.0: Meta package for Phosh, merge this package to install
-phosh-base/phosh-mobile-settings 0.41.0 0.42.0 0.43.0: Mobile Settings App for phosh and related components
-phosh-base/phosh-osk-stub 0.41.0 0.41.1 0.42.0: On-screen keyboard stub
-phosh-base/phosh-shell 0.41.0 0.42.0: Pure Wayland shell for mobile devices
-phosh-base/phosh-tour 0.41.0 0.43.0: Introduction to phosh on smartphones
+phosh-base/phosh 0.42.0: Meta package for Phosh, merge this package to install
+phosh-base/phosh-mobile-settings 0.42.0 0.43.0: Mobile Settings App for phosh and related components
+phosh-base/phosh-osk-stub 0.41.1 0.42.0: On-screen keyboard stub
+phosh-base/phosh-shell 0.42.0: Pure Wayland shell for mobile devices
+phosh-base/phosh-tour 0.43.0 0.44.0: Introduction to phosh on smartphones
 sci-biology/cmdock 0.2.0-r2 0.2.0-r3: Program for docking ligands to proteins and nucleic acids
 sci-biology/cytoscape-bin 3.10.3: A visualization platform for molecular interaction networks
 sci-biology/geneathome 1.10-r5: BOINC application for expanding Gene Regulatory Networks (GRN)
@@ -1753,7 +1753,7 @@ www-misc/kiwix-desktop 2.4.0: cross-platform viewer/manager for ZIM archives
 www-misc/libkiwix 14.0.0: Kiwix software suite core: code shared by all Kiwix ports
 www-misc/waldl 0.0.1_pre20211112: Browse and download wallpapers from wallhaven.cc using sxiv
 www-misc/wyebadblock 1.0.0: An adblock extension for wyeb, also webkit2gtk browsers.
-www-plugins/firefoxpwa 2.12.4 2.12.5 2.13.1: A tool to install, manage and use PWAs in Mozilla Firefox (native component)
+www-plugins/firefoxpwa 2.12.4 2.12.5 2.13.1 2.13.2: A tool to install, manage and use PWAs in Mozilla Firefox (native component)
 www-servers/hinsightd 0.9.17 9999: hinsightd a http/1.1 webserver with (hopefully) minimal goals
 www-servers/quark 9999: A small, GET-only static HTTP server
 x11-apps/lightdm-gtk-greeter-settings 1.2.2-r3: Configuration tool for the LightDM GTK Greeter

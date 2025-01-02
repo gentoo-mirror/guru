@@ -1,0 +1,16 @@
+BDEPEND=dev-util/patchelf app-alternatives/ninja >=dev-build/cmake-3.20.5
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=net-libs/libmicrohttpd:= sys-libs/ncurses:= media-libs/libogg media-video/ffmpeg:= sys-libs/zlib:= media-libs/libvorbis net-misc/curl dev-libs/openssl:= media-sound/lame dev-libs/libev media-libs/taglib dev-cpp/asio libopenmpt? ( media-libs/libopenmpt media-sound/mpg123 ) mpris? ( || ( elogind? ( >=sys-auth/elogind-239 ) systemd? ( sys-apps/systemd ) basu? ( sys-libs/basu ) ) ) pipewire? ( media-video/pipewire:= ) portaudio? ( media-libs/portaudio ) pulseaudio? ( media-libs/libpulse ) sndio? ( media-sound/sndio:= ) alsa? ( media-libs/alsa-lib )
+DESCRIPTION=Excellent terminal music player, support almost every known sound system.
+EAPI=8
+HOMEPAGE=https://github.com/clangen/musikcube
+INHERIT=cmake
+IUSE=+alsa +libopenmpt pipewire pulseaudio +mpris portaudio sndio systemd elogind basu
+KEYWORDS=~amd64
+LICENSE=BSD
+RDEPEND=net-libs/libmicrohttpd:= sys-libs/ncurses:= media-libs/libogg media-video/ffmpeg:= sys-libs/zlib:= media-libs/libvorbis net-misc/curl dev-libs/openssl:= media-sound/lame dev-libs/libev media-libs/taglib dev-cpp/asio libopenmpt? ( media-libs/libopenmpt media-sound/mpg123 ) mpris? ( || ( elogind? ( >=sys-auth/elogind-239 ) systemd? ( sys-apps/systemd ) basu? ( sys-libs/basu ) ) ) pipewire? ( media-video/pipewire:= ) portaudio? ( media-libs/portaudio ) pulseaudio? ( media-libs/libpulse ) sndio? ( media-sound/sndio:= ) alsa? ( media-libs/alsa-lib )
+REQUIRED_USE=mpris? ( ^^ ( systemd elogind basu ) )
+SLOT=0
+SRC_URI=https://github.com/clangen/musikcube/archive/refs/tags/3.0.4.tar.gz -> musikcube-3.0.4.tar.gz
+_eclasses_=toolchain-funcs	14648d8795f7779e11e1bc7cf08b7536	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	f14aba975c94ccaa9f357a27e3b17ffe	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	10a50dfaf728b802fcfd37f8d0da9056
+_md5_=051d7f2c63c16cedbfd080666345c61c
