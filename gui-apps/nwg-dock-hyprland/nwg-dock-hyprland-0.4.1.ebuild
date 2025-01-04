@@ -1,4 +1,4 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -6,16 +6,17 @@ EAPI=8
 inherit go-module
 
 EGO_SUM=(
+	"github.com/KarpelesLab/weak v0.1.1"
+	"github.com/KarpelesLab/weak v0.1.1/go.mod"
 	"github.com/allan-simon/go-singleinstance v0.0.0-20210120080615-d0997106ab37"
 	"github.com/allan-simon/go-singleinstance v0.0.0-20210120080615-d0997106ab37/go.mod"
 	"github.com/davecgh/go-spew v1.1.0/go.mod"
 	"github.com/davecgh/go-spew v1.1.1"
 	"github.com/davecgh/go-spew v1.1.1/go.mod"
-	"github.com/dlasky/gotk3-layershell v0.0.0-20240515133811-5c5115f0d774"
-	"github.com/dlasky/gotk3-layershell v0.0.0-20240515133811-5c5115f0d774/go.mod"
-	"github.com/gotk3/gotk3 v0.6.1/go.mod"
-	"github.com/gotk3/gotk3 v0.6.5-0.20240618185848-ff349ae13f56"
-	"github.com/gotk3/gotk3 v0.6.5-0.20240618185848-ff349ae13f56/go.mod"
+	"github.com/diamondburned/gotk4-layer-shell/pkg v0.0.0-20240109211357-6efa9f6dc438"
+	"github.com/diamondburned/gotk4-layer-shell/pkg v0.0.0-20240109211357-6efa9f6dc438/go.mod"
+	"github.com/diamondburned/gotk4/pkg v0.3.1"
+	"github.com/diamondburned/gotk4/pkg v0.3.1/go.mod"
 	"github.com/pmezard/go-difflib v1.0.0"
 	"github.com/pmezard/go-difflib v1.0.0/go.mod"
 	"github.com/sirupsen/logrus v1.9.3"
@@ -23,11 +24,17 @@ EGO_SUM=(
 	"github.com/stretchr/objx v0.1.0/go.mod"
 	"github.com/stretchr/testify v1.7.0"
 	"github.com/stretchr/testify v1.7.0/go.mod"
+	"go4.org/unsafe/assume-no-moving-gc v0.0.0-20231121144256-b99613f794b6"
+	"go4.org/unsafe/assume-no-moving-gc v0.0.0-20231121144256-b99613f794b6/go.mod"
+	"golang.org/x/sync v0.8.0"
+	"golang.org/x/sync v0.8.0/go.mod"
+	"golang.org/x/sync v0.10.0"
+	"golang.org/x/sync v0.10.0/go.mod"
 	"golang.org/x/sys v0.0.0-20220715151400-c0bba94af5f8/go.mod"
-	"golang.org/x/sys v0.24.0"
-	"golang.org/x/sys v0.24.0/go.mod"
 	"golang.org/x/sys v0.26.0"
 	"golang.org/x/sys v0.26.0/go.mod"
+	"golang.org/x/sys v0.28.0"
+	"golang.org/x/sys v0.28.0/go.mod"
 	"gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod"
 	"gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c"
 	"gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c/go.mod"
@@ -47,7 +54,7 @@ RDEPEND="
 	gui-wm/hyprland
 	x11-libs/gtk+:3
 	app-accessibility/at-spi2-core:2
-	dev-libs/glib:2
+	>=dev-libs/glib-2.82.2:2
 	media-libs/fontconfig
 	media-libs/freetype
 	media-libs/harfbuzz:=
