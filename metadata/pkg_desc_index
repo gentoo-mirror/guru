@@ -113,7 +113,7 @@ app-admin/talosctl-bin 1.7.6: Pre-compiled talosctl is an tool for interacting w
 app-admin/terragrunt-bin 0.38.6 0.45.4 0.50.8: A thin wrapper for Terraform
 app-admin/vaultwarden 1.30.3-r1 1.30.4-r1 1.30.5-r1 1.32.4 1.32.5 9999: Unofficial Bitwarden compatible password manager server written in Rust
 app-alternatives/phosh-keyboard 0: sm.puri.OSK0.desktop symlinks
-app-arch/fuse-archive 0.1.14: Read-only FUSE file system for mounting archives and compressed files
+app-arch/fuse-archive 0.1.14 1.4: Read-only FUSE file system for mounting archives and compressed files
 app-arch/libarchive-qt 2.0.8: Qt based archiving solution with libarchive backend
 app-arch/libzim 9.2.1-r1: ZIM file format: an offline storage solution for content coming from the Web
 app-arch/microtar 0.1.0: A lightweight tar library written in ANSI C
@@ -218,7 +218,7 @@ app-misc/badvideo 5.2 9999: Ruin your videos in SECONDS!
 app-misc/blahaj 2.2.0-r1: Gay sharks at your local terminal
 app-misc/brightness-control 2.4: Qt Brightness Controller in Python
 app-misc/brightnessctl 0.5.1: A program to read and control device brightness
-app-misc/catt 0.12.12 0.12.12-r1: Send videos from many, many online sources to your Chromecast
+app-misc/catt 0.12.12-r1 0.12.13: Send videos from many, many online sources to your Chromecast
 app-misc/chayang 0.1.0: Gradually dim the screen.
 app-misc/cheat 4.2.3 4.3.3-r1: cheat allows you to create and view interactive cheatsheets on the command-line
 app-misc/clifm 1.11 1.13 1.16 1.18 9999: The command line file manager
@@ -401,7 +401,7 @@ dev-cpp/blurhash 0.2.0 0.2.0-r1: C++ blurhash encoder/decoder
 dev-cpp/coeurl 0.3.0 0.3.1: A simple async wrapper around CURL for C++
 dev-cpp/cpp-jwt 1.5_pre20220727: JSON Web Token library for C++
 dev-cpp/cpprestsdk 2.10.19-r3: A Microsoft project for cloud-based client-server communication.
-dev-cpp/cpptrace 0.6.3 0.7.2 0.7.3 9999: Simple, portable, and self-contained stacktrace library for C++
+dev-cpp/cpptrace 0.6.3 0.7.3 0.7.5 9999: Simple, portable, and self-contained stacktrace library for C++
 dev-cpp/dpp 10.0.23 10.0.24 10.0.25 10.0.29 10.0.30 10.0.33: Lightweight C++ Discord bot library
 dev-cpp/drogon 1.9.5 1.9.6: C++14/17 based HTTP web application framework
 dev-cpp/finalcut 0.9.1-r1 9999: A text-based widget toolkit
@@ -1226,7 +1226,7 @@ media-fonts/monaspace 1.000: A free and open-source typeface for developers
 media-fonts/moralerspace 1.0.2: moralerspace is a composite font of Monaspace and IBM Plex Sans JP.
 media-fonts/nerdfonts 3.2.0 3.2.1: Iconic font aggregator, collection, & patcher. 3,600+ icons, 50+ patched fonts: Hack, Source Code Pro, more. Glyph collections: Font Awesome, Material Design Icons, Octicons, & more
 media-fonts/overpass 3.0.4: An open source webfont family inspired by Highway Gothic
-media-fonts/plemoljp 2.0.0: PlemolJP is a composite font of IBM Plex Mono and IBM Plex Sans JP.
+media-fonts/plemoljp 2.0.1: PlemolJP is a composite font of IBM Plex Mono and IBM Plex Sans JP.
 media-fonts/source-han-mono 1.002: Pan-CJK OpenType/CFF mono font family
 media-fonts/source-han-serif 2.002 2.003: Pan-CJK OpenType/CFF font family
 media-fonts/ttf-ancient-fonts 2.60: Unicode font for Latin, IPA Extensions, Greek, Cyrillic and many Symbol Blocks
@@ -1311,7 +1311,7 @@ media-sound/g4music 3.3 3.4: A GTK4 music player
 media-sound/jacktrip 1.7.1-r1 2.4.0: Send JACK audio over a network
 media-sound/jriver 31.0.83: A cross-platform media center, famous for high quality of audio.
 media-sound/kew 2.4.4-r1: kew (/kjuː/) is a command-line music player for Linux.
-media-sound/lms 3.60.1 3.61.0 3.62.0: Lightweight Music Server.
+media-sound/lms 3.60.1 3.62.0 3.62.1: Lightweight Music Server.
 media-sound/loudgain 0.6.8-r1 0.6.8_p20240128: Versatile ReplayGain 2.0 loudness normalizer
 media-sound/mopidy 3.4.2: An extensible music server written in Python.
 media-sound/mpd-mpris 0.3.1 0.4.0 0.4.1: An implementation of the MPRIS protocol for MPD.
@@ -1518,7 +1518,7 @@ net-p2p/bisq-bin 1.9.14-r1: The decentralized bitcoin exchange (non-atomic, with
 net-p2p/dogecoin-qt 1.14.8 1.14.9 9999: Dogecoin Core Qt for desktop. Downloaded blockchain is under 2.2GB. Much secure.
 net-p2p/feather 2.6.7-r1 2.6.8 2.7.0 9999: A free, open-source Monero wallet
 net-p2p/fragments 3.0.1-r1: Fragments is an easy to use BitTorrent client
-net-p2p/gridcoin 5.4.8.0 5.4.8.0_p1: Proof-of-Stake based cryptocurrency that rewards BOINC computation
+net-p2p/gridcoin 5.4.8.0_p1 5.4.8.0_p1-r1: Proof-of-Stake based cryptocurrency that rewards BOINC computation
 net-p2p/ipfs-desktop-bin 0.39.0: A desktop client for IPFS. The IPFS's Native Application
 net-p2p/monero 0.18.3.4-r1 9999: The secure, private, untraceable cryptocurrency
 net-p2p/monero-gui-bin 0.18.3.4-r1: An open-source GUI wallet developed by the Monero community.
@@ -1535,7 +1535,7 @@ net-voip/discover-overlay 0.6.9-r1 0.7.4: Yet another Discord overlay for Linux 
 net-voip/gnome-calls 46.3 47.0 47.0-r1: Phone dialer and call handler
 net-voip/re 3.16.0 3.17.0 3.18.0: Generic library for real-time communications with async IO support
 net-voip/vvmd 0.8-r1: vvmd is a lower level daemon that retrieves Visual Voicemail
-net-vpn/GlobalProtect-openconnect 2.3.9: Unofficial GlobalProtect VPN client for Linux
+net-vpn/GlobalProtect-openconnect 2.3.9-r1: Unofficial GlobalProtect VPN client for Linux
 net-vpn/cloudflare-warp 2024.2.62-r2 2024.4.133-r1 2024.11.309: Cloudflare Warp Client
 net-vpn/fastd 22: A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
 net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that require SAML
