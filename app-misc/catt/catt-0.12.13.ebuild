@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{10..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1
 
@@ -20,7 +20,7 @@ RESTRICT="test"
 
 DEPEND="
 	dev-python/click[${PYTHON_USEDEP}]
-	dev-python/pychromecast[${PYTHON_USEDEP}]
+	<dev-python/pychromecast-15.0.0[${PYTHON_USEDEP}]
 	dev-python/ifaddr[${PYTHON_USEDEP}]
 	dev-python/requests[${PYTHON_USEDEP}]
 	net-misc/yt-dlp[${PYTHON_USEDEP}]
