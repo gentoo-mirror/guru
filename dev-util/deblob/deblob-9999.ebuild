@@ -5,7 +5,7 @@ EAPI=8
 
 if [[ "$PV" == 9999 ]]; then
 	inherit git-r3
-	EGIT_REPO_URI="https://git.sr.ht/~lanodan/deblob"
+	EGIT_REPO_URI="https://anongit.hacktivis.me/git/deblob"
 else
 	VERIFY_SIG_METHOD=signify
 	inherit verify-sig
@@ -18,7 +18,8 @@ else
 fi
 
 DESCRIPTION="remove binary executables from a directory"
-HOMEPAGE="https://git.sr.ht/~lanodan/deblob"
+# permalink
+HOMEPAGE="https://hacktivis.me/projects/deblob"
 LICENSE="BSD"
 SLOT="0"
 
