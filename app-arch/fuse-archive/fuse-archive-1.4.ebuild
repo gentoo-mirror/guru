@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit toolchain-funcs
+inherit toolchain-funcs flag-o-matic
 
 DESCRIPTION="Read-only FUSE file system for mounting archives and compressed files"
 HOMEPAGE="https://github.com/google/fuse-archive"
@@ -29,23 +29,26 @@ DEPEND="
 BDEPEND="virtual/pkgconfig"
 RDEPEND="${DEPEND}"
 
-# TODO(NRK): enable tests. requires python.
-# also takes a lot of disk space (and time) by generating big.zip.
-src_test() {
-	:
+src_configure() {
+	sed -i 's|-O2||g' Makefile || die "sed failed"
+	sed -i 's|-O0 -g||g' Makefile || die "sed failed"
 }
 
 src_compile() {
-	local incpath=""
-	incpath="${incpath} -I../intrusive-${BOOST_VERSION}/include"
-	incpath="${incpath} -I../config-${BOOST_VERSION}/include"
-	incpath="${incpath} -I../assert-${BOOST_VERSION}/include"
-	incpath="${incpath} -I../move-${BOOST_VERSION}/include"
-	emake CXX="$(tc-getCXX)" PKG_CONFIG="$(tc-getPKG_CONFIG)" \
-		CPPFLAGS="${incpath} ${CPPFLAGS}"
+	append-cppflags "-I../intrusive-${BOOST_VERSION}/include"
+	append-cppflags "-I../config-${BOOST_VERSION}/include"
+	append-cppflags "-I../assert-${BOOST_VERSION}/include"
+	append-cppflags "-I../move-${BOOST_VERSION}/include"
+	emake CXX="$(tc-getCXX)" PKG_CONFIG="$(tc-getPKG_CONFIG)"
 }
 
 src_install() {
 	dobin out/fuse-archive
 	doman fuse-archive.1
+}
+
+# TODO(NRK): enable tests. requires python.
+# also takes a lot of disk space (and time) by generating big.zip.
+src_test() {
+	:
 }
