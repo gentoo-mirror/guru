@@ -5,8 +5,9 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{11,12} )
 
-VER="13.2.0_20240530"
+VER="14.2.0_20241119"
 GDB_VER="14.2_20240403"
+OPENOCD_VER="0.12.0-esp32-20241016"
 
 CROSSTOOL_URL="https://github.com/espressif/crosstool-NG/releases/download/esp-${VER}"
 
@@ -18,7 +19,7 @@ HOMEPAGE="https://www.espressif.com/"
 # See https://dl.espressif.com/dl/esp-idf/espidf.constraints.v5.3.txt for information about version dependencies
 
 SRC_URI="https://dl.espressif.com/github_assets/espressif/${PN}/releases/download/v${PV}/${PN}-v${PV}.zip -> ${P}.zip
-	https://github.com/espressif/openocd-esp32/releases/download/v0.12.0-esp32-20240318/openocd-esp32-linux-amd64-0.12.0-esp32-20240318.tar.gz
+	https://github.com/espressif/openocd-esp32/releases/download/v${OPENOCD_VER}/openocd-esp32-linux-amd64-${OPENOCD_VER}.tar.gz
 	https://github.com/espressif/binutils-gdb/releases/download/esp-gdb-v${GDB_VER}/xtensa-esp-elf-gdb-${GDB_VER}-x86_64-linux-gnu.tar.gz"
 SRC_URI+=" ${CROSSTOOL_URL}/xtensa-esp-elf-${VER}-x86_64-linux-gnu.tar.xz"
 SRC_URI+=" riscv32? (
@@ -64,7 +65,6 @@ QA_PRESTRIPPED="opt/*"
 
 PATCHES=(
 	"${FILESDIR}/allow-system-install-${PN}-5.3.patch"
-	"${FILESDIR}/${PN}-5.3-fix-cpp-build-eth.patch"
 )
 
 install_tool() {
