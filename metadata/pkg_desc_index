@@ -335,7 +335,7 @@ app-shells/zsh-async 1.8.5_p20211005 1.8.6: Run multiple asynchronous jobs with 
 app-shells/zsh-autocomplete 24.09.04 9999: Real-time type-ahead completion for Zsh.
 app-shells/zsh-autosuggestions 0.7.0-r2: Fish-like autosuggestions for zsh
 app-shells/zsh-history-substring-search 1.0.2 1.1.0: ZSH port of Fish history search (up arrow)
-app-text/OCRmyPDF 16.6.2 16.7.0: OCRmyPDF adds an OCR text layer to scanned PDF files
+app-text/OCRmyPDF 16.7.0 16.8.0: OCRmyPDF adds an OCR text layer to scanned PDF files
 app-text/cmark-gfm 0.29.0.13: GitHub's fork of cmark
 app-text/code-minimap 0.6.8: A high performance code minimap generator
 app-text/dooit 3.1.0: A TUI todo manager
@@ -472,14 +472,14 @@ dev-elixir/hex 1.0.1-r1: Package manager for the Erlang VM
 dev-embedded/arduino-cli 1.0.3 1.0.4: Next-generation arduino command line tool
 dev-embedded/bcm2-utils 0.9.8: Utilities for Broadcom-based cable modems
 dev-embedded/esp-coredump 1.10.0 1.11.0: Utility that helps users to retrieve and analyse core dumps
-dev-embedded/esp-idf 5.3.1-r1 5.3.2: Espressif IoT Development Framework
-dev-embedded/esp-idf-kconfig 2.2.0 2.3.0: Kconfig tooling for esp-idf
+dev-embedded/esp-idf 5.3.2 5.4: Espressif IoT Development Framework
+dev-embedded/esp-idf-kconfig 2.2.0 2.3.0 2.4.1: Kconfig tooling for esp-idf
 dev-embedded/esp-idf-monitor 1.4.0 1.5.0: Python object-oriented database
 dev-embedded/esp-idf-nvs-partition-gen 0.1.4 0.1.6: Parses ESP-IDF panic handler output acts as a GDB server over stdin/stdout
 dev-embedded/esp-idf-panic-decoder 1.1.0 1.2.1 1.2.1-r1: Parses ESP-IDF panic handler output acts as a GDB server over stdin/stdout
 dev-embedded/esp-idf-size 1.5.0 1.6.0 1.6.1: Firmware size analysis for ESP-IDF
 dev-embedded/freertos-gdb 1.0.2 1.0.3: Python module for operating with freeRTOS-kernel objects in GDB
-dev-embedded/idf-component-manager 2.0.3 2.0.4: Tool for installing ESP-IDF components
+dev-embedded/idf-component-manager 2.0.3 2.0.4 2.1.1: Tool for installing ESP-IDF components
 dev-embedded/mv88e6xxx-dump 0.2.0_pre20210327: Dump information about Marvell mv88e6xxx Ethernet switches
 dev-embedded/nxp-gui-guider 1.7.2-r1: GUI Guider is a user-friendly GUI development tool for LVGL
 dev-embedded/qdl 2.0 9999: Tool to communicate with Qualcomm System On a Chip bootroms
@@ -730,7 +730,7 @@ dev-python/manhole 1.8.0-r2: Debugging manhole for python application
 dev-python/markdownify 0.11.6: Convert HTML to Markdown
 dev-python/mastodon-py 1.8.1: Python wrapper for the Mastodon API
 dev-python/material-color-utilities 0.1.5 9999: Python port of material-color-utilities used for Material You colors
-dev-python/mautrix 0.20.4-r2 0.20.6: A Python 3 asyncio Matrix framework
+dev-python/mautrix 0.20.6 0.20.7: A Python 3 asyncio Matrix framework
 dev-python/mininet 2.3.0: Emulator for rapid prototyping of Software Defined Networks
 dev-python/mitype 0.2.6: Typing speed test in terminal
 dev-python/mkdocs-blog-plugin 9999: Plugin for MkDocs to keep a simple blog section inside your documentation.
@@ -1237,6 +1237,7 @@ media-fonts/victor-mono 1.5.4 1.5.5 1.5.6: A free programming font with cursive 
 media-fonts/warframe-fonts 0_pre20191111: Fonts from the Warframe game
 media-gfx/KTX-Software 4.3.2: KTX (Khronos Texture) Library and Tools
 media-gfx/WebPlotDigitizer-bin 4.7: Web based tool to extract data from plots, images, and maps
+media-gfx/airsane 0.4.3: Publish SANE scanners via Apple Airscan/eSCL
 media-gfx/azpainter 3.0.9a: Full color painting software for Linux for illustration drawing
 media-gfx/bambustudio-bin 01.10.01.50: Bambu Studio is a cutting-edge, feature-rich slicing software
 media-gfx/beeref 0.3.3: A Simple Reference Image Viewer
@@ -1289,7 +1290,7 @@ media-plugins/argotlunar-bin 2.06-r2: Argotlunar is a sound granulator. Binary L
 media-plugins/dtmediawiki 9999: Wikimedia Commons export plugin for Darktable. Every upload is converted
 media-plugins/gimp-avif-plugin 9999: Plug-in for development GIMP 2.99.11 for loading/saving AVIF images.
 media-plugins/gst-plugins-qt5 1.20.3 1.22.11: Qt5 QML video sink plugin for GStreamer
-media-plugins/gst-plugins-qt6 1.22.11-r1 1.22.12: Qt6 QML video sink plugin for GStreamer
+media-plugins/gst-plugins-qt6 1.22.12 1.24.10: Qt6 QML video sink plugin for GStreamer
 media-plugins/qt-heif-image-plugin 0.3.4: Qt plugin for HEIF images
 media-plugins/qt-jpegxl-image-plugin 9999: Qt plug-in to allow Qt and KDE based applications to read/write JXL images.
 media-plugins/whysynth 20170701_p20180323-r1: A software synthesizer plugin for the DSSI Soft Synth Interface
@@ -1407,13 +1408,13 @@ net-im/chatterino 2.5.1: Chat client for https://twitch.tv
 net-im/conduit 0.8.0-r1 0.9.0-r1 9999: Matrix homeserver written in Rust
 net-im/discord-canary-bin 0.0.549: All-in-one voice and text chat
 net-im/discord-ptb-bin 0.0.97: All-in-one voice and text chat
-net-im/eturnal 1.12.0-r1: STUN/TURN server
+net-im/eturnal 1.12.0-r1 1.12.1: STUN/TURN server
 net-im/flare 0.12.0-r1: Chat with your friends on Signal
 net-im/gajim-plugins 9999: Plugins developed fro Gajim XMPP client
 net-im/go-sendxmpp 0.6.1 0.8.3: A tool to send messages or files to an XMPP contact or MUC
 net-im/gomuks 0.3.0 0.3.1: A terminal based Matrix client written in Go
 net-im/heisenbridge 1.14.6-r1 1.15.0: A bouncer-style Matrix IRC bridge
-net-im/iamb 0.0.8 0.0.9: A Matrix chat client that uses Vim keybindings
+net-im/iamb 0.0.8 0.0.9 0.0.10: A Matrix chat client that uses Vim keybindings
 net-im/jitsi-meet 2022.3.1-r1: Desktop application for Jitsi Meet built with Electron
 net-im/legcord-bin 1.0.2: Legcord is a custom client designed to enhance your Discord experience.
 net-im/manyverse-bin 0.2310.9: A social network off the grid with append-only protocol (no edits) on blockchain
@@ -1473,7 +1474,7 @@ net-misc/gdown 5.1.0 5.2.0: Google Drive public file/folder downloader
 net-misc/gdrive 3.9.0-r1 3.9.1-r1: Google Drive CLI Client
 net-misc/gemget 1.9.0: Command line downloader for the Gemini protocol
 net-misc/gemserv 0.6.5 0.6.6: A gemini Server written in rust
-net-misc/gmcapsule 0.6.1 0.7.0: Extensible Gemini/Titan server
+net-misc/gmcapsule 0.7.0 0.9.7: Extensible Gemini/Titan server
 net-misc/gmid 2.1 2.1.1 9999: Simple and secure Gemini server
 net-misc/gnome-ssh-askpass 9.2_p1: GTK-based passphrase dialog for use with OpenSSH
 net-misc/graftcp 0.7.1: A tool for redirecting a given program's TCP traffic to SOCKS5 or HTTP proxy
@@ -1481,7 +1482,7 @@ net-misc/iipsrv 1.2: High performance image server for high resolution and scien
 net-misc/inv_sig_helper 0_pre20241216 0_pre20241217: Rust service that decrypts YouTube signatures and manages player information
 net-misc/jool 4.1.13: Required tools for Jool
 net-misc/jool-modules 4.1.13: Jool is an Open Source SIIT and NAT64 for linux
-net-misc/lyrics-in-terminal 1.5.0: Command Line Lyrics fetcher for MPRIS media players
+net-misc/lyrics-in-terminal 1.5.0 1.7.0: Command Line Lyrics fetcher for MPRIS media players
 net-misc/maestral 1.9.3-r1 1.9.4: Maestral is an open-source Dropbox client written in Python
 net-misc/maestral-qt 1.9.3 1.9.4: Maestral is an open-source Dropbox client written in Python
 net-misc/mastorss 0.13.1 0.13.1-r1 9999: Another RSS to Mastodon bot
@@ -1539,7 +1540,7 @@ net-vpn/GlobalProtect-openconnect 2.3.9-r1: Unofficial GlobalProtect VPN client 
 net-vpn/cloudflare-warp 2024.2.62-r2 2024.4.133-r1 2024.11.309: Cloudflare Warp Client
 net-vpn/fastd 22: A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
 net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that require SAML
-net-vpn/mullvadvpn-app 2025.1: Tool used to manage daemon setup
+net-vpn/mullvadvpn-app 2025.2: Tool used to manage daemon setup
 net-wireless/airspyhf 1.6.8: User mode driver for Airspy HF+
 net-wireless/bluetuith 0.1.9 0.2.0 0.2.1 0.2.2 9999: A TUI bluetooth manager for Linux written in Go
 net-wireless/btscreenlocker 1.6.3 1.6.5 1.7.0-r1 1.8.1: Daemon to lock your screen when Bluetooth trusted devices go away.
