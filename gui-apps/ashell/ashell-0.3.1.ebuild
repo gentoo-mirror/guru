@@ -472,7 +472,10 @@ declare -A GIT_CRATES=(
 	[smithay-clipboard]='https://github.com/pop-os/smithay-clipboard;ab422ddcc95a9a1717df094f9c8fe69e2fdb2a27;smithay-clipboard-%commit%'
 )
 
-inherit cargo
+LLVM_COMPAT=( 18 19 )
+RUST_NEEDS_LLVM=1
+
+inherit cargo llvm-r1
 
 DESCRIPTION="A ready to go Wayland status bar for Hyprland"
 HOMEPAGE="https://github.com/MalpenZibo/ashell"
@@ -491,11 +494,18 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="
-	dev-libs/wayland
 	dev-libs/wayland-protocols
 	media-fonts/symbols-nerd-font
 	media-libs/libpulse
-	media-video/pipewire
-	sys-apps/dbus
+	media-video/pipewire:=
 	x11-libs/libxkbcommon
 "
+# libclang is required for bindgen
+BDEPEND="
+	$(llvm_gen_dep 'llvm-core/clang:${LLVM_SLOT}')
+"
+
+pkg_setup() {
+	llvm-r1_pkg_setup
+	rust_pkg_setup
+}
