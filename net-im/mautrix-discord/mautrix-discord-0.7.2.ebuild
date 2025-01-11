@@ -1,16 +1,16 @@
-# Copyright 2022-2024 Gentoo Authors
+# Copyright 2022-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 inherit go-module systemd
 
-DESCRIPTION="A Matrix-Facebook puppeting bridge"
-HOMEPAGE="https://github.com/mautrix/meta"
-SRC_URI="https://github.com/mautrix/meta/archive/v${PV}.tar.gz -> ${P}.gh.tar.gz
+DESCRIPTION="A Matrix-Discord puppeting bridge"
+HOMEPAGE="https://github.com/mautrix/discord"
+SRC_URI="https://github.com/mautrix/discord/archive/v${PV}.tar.gz -> ${P}.gh.tar.gz
 	https://jroy.ca/dist/${P}-deps.tar.xz
 "
-S="${WORKDIR}/meta-${PV}"
+S="${WORKDIR}/discord-${PV}"
 
 LICENSE="AGPL-3"
 SLOT="0"
@@ -19,27 +19,26 @@ KEYWORDS="~amd64"
 RDEPEND="
 	acct-user/${PN}
 	dev-libs/olm
+	dev-util/lottieconverter
 "
 DEPEND="${RDEPEND}"
+BDEPEND=">=dev-lang/go-1.20.0"
 
 src_compile() {
 	ego build
 }
 
 src_install() {
-	dobin mautrix-meta
+	dobin mautrix-discord
 
-	keepdir /var/log/mautrix/meta
+	keepdir /var/log/mautrix/discord
 	fowners -R root:mautrix /var/log/mautrix
 	fperms -R 770 /var/log/mautrix
-	sed -i -e "s/\.\/logs/\/var\/log\/${PN/-/\\\/}/" "example-config.yaml" || die
-
-	insinto "/etc/mautrix"
-	newins "example-config.yaml" "${PN/-/_}.yaml"
 
 	newinitd "${FILESDIR}/${PN}.initd" "${PN}"
 	systemd_dounit "${FILESDIR}/${PN}.service"
 
+	keepdir /etc/mautrix
 	fowners -R root:mautrix /etc/mautrix
 	fperms -R 770 /etc/mautrix
 }
@@ -48,7 +47,10 @@ pkg_postinst() {
 	einfo
 	elog ""
 	elog "Before you can use ${PN}, you must configure it correctly"
-	elog "The configuration file is located at \"/etc/mautrix/${PN/-/_}.yaml\""
+	elog "To generate the configuration file, use the following command:"
+	elog "mautrix-signal -e"
+	elog "Then move the config.yaml file to /etc/mautrix/${PN/-/_}.yaml"
+	elog "Configure the file according to your homeserver"
 	elog "When done, run the following command: emerge --config ${CATEGORY}/${PN}"
 	elog "Then, you must register the bridge with your homeserver"
 	elog "Refer your homeserver's documentation for instructions"

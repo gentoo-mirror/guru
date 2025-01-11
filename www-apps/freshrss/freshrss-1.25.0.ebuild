@@ -1,4 +1,4 @@
-# Copyright 2023-2024 Gentoo Authors
+# Copyright 2023-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -27,7 +27,7 @@ DEPEND="${RDEPEND}"
 need_httpd_fastcgi
 
 PATCHES=(
-	"${FILESDIR}"/disable-network-tests-1.24.1.patch
+	"${FILESDIR}"/disable-network-tests-1.25.0.patch
 )
 
 src_compile() {
