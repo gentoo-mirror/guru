@@ -105,7 +105,7 @@ app-admin/oet 0.1.9 0.1.10 0.1.11 9999: Update your system into binpkgs in an ov
 app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applications and tmux
 app-admin/pass-audit 1.2 1.2-r1: A pass extension for auditing your password repository.
 app-admin/pass-update 2.2.1: pass extension that provides an easy flow for updating passwords
-app-admin/pulumi-bin 3.141.0 3.142.0 3.144.1: Infrastructure as code in any programming language
+app-admin/pulumi-bin 3.142.0 3.144.1 3.145.0: Infrastructure as code in any programming language
 app-admin/rbw 1.11.1-r2 1.12.0-r1 1.12.1-r1 9999: Unofficial Bitwarden CLI
 app-admin/s-tui 1.1.6: Stress-Terminal UI monitoring tool
 app-admin/synadm 0.43.1 0.44: Command line admin tool for Synapse
@@ -135,7 +135,7 @@ app-benchmarks/poop 9999: Performance Optimizer Observation Platform
 app-benchmarks/unigine-superposition 1.1: Game like benchmark (CPU, GPU), for ~5 minutes
 app-containers/anbox-modules 0_p20240210: Anbox kernel modules
 app-containers/arachsys-containers 1.7: Simple containers using Linux user namespaces
-app-containers/pods 2.1.0_pre20240215-r4: Keep track of your podman containers
+app-containers/pods 2.1.0_pre20240215-r4 2.1.2: Keep track of your podman containers
 app-containers/slim 1.40.11: Inspect, optimize and debug containers
 app-containers/waydroid 1.4.3 1.4.3-r1: Container-based approach to boot a full Android system on Linux systems
 app-containers/waydroid-images 9999: Manage images for app-containers/waydroid using portage
@@ -545,7 +545,7 @@ dev-libs/libdbf 0.0.1: Library to read the content of dBASE III, IV, and 5.0 fil
 dev-libs/libdwarf 0.9.1 0.11.0 0.11.1: The DWARF Debugging Information Format
 dev-libs/libglibutil 1.0.79 9999: Library of glib utilities from sailfishos project
 dev-libs/librepo 1.18.1 1.19.0-r1: Repodata downloading library
-dev-libs/libsignal-ffi 0.44.0-r1 0.51.0-r1 0.62.0: A C ABI library which exposes Signal protocol logic
+dev-libs/libsignal-ffi 0.51.0-r1 0.62.0 0.64.1: A C ABI library which exposes Signal protocol logic
 dev-libs/libsolv 0.7.30-r1 0.7.31: Library for solving packages and reading repositories
 dev-libs/libthai 0.1.29: A a set of Thai language support routines
 dev-libs/libtypec 0.5.2-r2: Library to interface with USB Type-C/Power Delivery devices
@@ -1419,11 +1419,11 @@ net-im/legcord-bin 1.0.2: Legcord is a custom client designed to enhance your Di
 net-im/manyverse-bin 0.2310.9: A social network off the grid with append-only protocol (no edits) on blockchain
 net-im/mastoposter 0.2: Configurable reposter from Mastodon-compatible Fediverse servers
 net-im/matterhorn-bin 90000.0.0 90000.0.1: Terminal based Mattermost client
-net-im/maubot 0.5.0-r1: Plugin-based Matrix bot system
-net-im/mautrix-discord 0.6.5 0.7.1: A Matrix-Discord puppeting bridge
-net-im/mautrix-meta 0.3.1 0.4.2: A Matrix-Facebook puppeting bridge
-net-im/mautrix-signal 0.6.1 0.7.3-r2: A Matrix-Signal puppeting bridge
-net-im/mautrix-slack 0_pre20240215 0.1.3: A Matrix-Slack puppeting bridge based on slack-go
+net-im/maubot 0.5.0-r1 0.5.1: Plugin-based Matrix bot system
+net-im/mautrix-discord 0.7.1 0.7.2: A Matrix-Discord puppeting bridge
+net-im/mautrix-meta 0.4.2 0.4.3: A Matrix-Facebook puppeting bridge
+net-im/mautrix-signal 0.7.3-r2 0.7.4: A Matrix-Signal puppeting bridge
+net-im/mautrix-slack 0.1.3 0.1.4: A Matrix-Slack puppeting bridge based on slack-go
 net-im/mautrix-telegram 0.15.1 0.15.2: A Matrix-Telegram Messenger puppeting bridge
 net-im/mautrix-whatsapp 0.10.9: A Matrix-WhatsApp puppeting bridge
 net-im/nheko 0.12.0-r1 0.12.0-r2 9999: Native desktop client for Matrix using Qt
@@ -1455,7 +1455,7 @@ net-libs/ulfius 2.7.15: HTTP Framework for REST Applications in C
 net-libs/usockets 0.8.8 9999: tiny eventing, networking & crypto for async applications
 net-libs/yder 1.4.20-r1: Logging library for C applications
 net-mail/dovecot-fts-flatcurve 1.0.5: Dovecot FTS plugin to enable message indexing using Xapian
-net-mail/dovecot-fts-xapian 1.7.17 1.7.18 1.8 1.8.1 1.8.3 9999: Dovecot FTS plugin backed by Xapian
+net-mail/dovecot-fts-xapian 1.7.17 1.7.18 1.8 1.8.1 1.8.3 1.8.4 9999: Dovecot FTS plugin backed by Xapian
 net-mail/hydroxide 0.2.27 0.2.28 0.2.29 9999: A third-party, open-source ProtonMail CardDAV, IMAP and SMTP bridge
 net-mail/pop 0.2.0: Send emails from your terminal
 net-misc/FORT-validator 1.5.4-r2 1.6.1-r2 1.6.2-r2: FORT validator is an open source RPKI validator
@@ -1478,7 +1478,7 @@ net-misc/gmid 2.1 2.1.1 9999: Simple and secure Gemini server
 net-misc/gnome-ssh-askpass 9.2_p1: GTK-based passphrase dialog for use with OpenSSH
 net-misc/graftcp 0.7.1: A tool for redirecting a given program's TCP traffic to SOCKS5 or HTTP proxy
 net-misc/iipsrv 1.2: High performance image server for high resolution and scientific images
-net-misc/inv_sig_helper 0_pre20241216 0_pre20241217: Rust service that decrypts YouTube signatures and manages player information
+net-misc/inv_sig_helper 0_pre20241217 0_pre20250103: Rust service that decrypts YouTube signatures and manages player information
 net-misc/jool 4.1.13: Required tools for Jool
 net-misc/jool-modules 4.1.13: Jool is an Open Source SIIT and NAT64 for linux
 net-misc/lyrics-in-terminal 1.5.0 1.7.0: Command Line Lyrics fetcher for MPRIS media players
@@ -1517,7 +1517,7 @@ net-nntp/pan 0.159-r1 0.160 0.161: A newsreader for GNOME
 net-p2p/bisq-bin 1.9.14-r1: The decentralized bitcoin exchange (non-atomic, with arbitration)
 net-p2p/dogecoin-qt 1.14.8 1.14.9 9999: Dogecoin Core Qt for desktop. Downloaded blockchain is under 2.2GB. Much secure.
 net-p2p/feather 2.6.7-r1 2.6.8 2.7.0 9999: A free, open-source Monero wallet
-net-p2p/fragments 3.0.1-r1: Fragments is an easy to use BitTorrent client
+net-p2p/fragments 3.0.1-r1 3.0.1-r2: Fragments is an easy to use BitTorrent client
 net-p2p/gridcoin 5.4.8.0_p1 5.4.8.0_p1-r1: Proof-of-Stake based cryptocurrency that rewards BOINC computation
 net-p2p/ipfs-desktop-bin 0.39.0: A desktop client for IPFS. The IPFS's Native Application
 net-p2p/monero 0.18.3.4-r1 9999: The secure, private, untraceable cryptocurrency
@@ -1722,7 +1722,7 @@ virtual/crystal-db 0.13-r1: Virtual for Crystal database drivers
 www-apps/castopod 1.4.3 1.4.5: Open-source hosting platform made for podcasters
 www-apps/code-server-bin 4.18.0 4.19.1 4.90.3: VS Code in the browser (binary version with unbundled node and ripgrep)
 www-apps/forgejo 7.0.9 8.0.3 9.0.3: A self-hosted lightweight software forge
-www-apps/freshrss 1.24.1 1.24.3: A free, self-hostable news aggregator
+www-apps/freshrss 1.24.3 1.25.0: A free, self-hostable news aggregator
 www-apps/gotosocial 0.9.0 0.10.0: Fast, fun, ActivityPub server, powered by Go
 www-apps/honk 0.9.8 0.9.91: ActivityPub server with minimal setup and support costs
 www-apps/invidious 2024.11.10.0: Invidious is an alternative front-end to YouTube
@@ -1747,7 +1747,7 @@ www-client/mullvad-browser-bin 14.0.3: The Mullvad Browser is developed to minim
 www-client/nyxt 3.11.8 3.12.0 9999: Nyxt - the hacker's power-browser
 www-client/vimb 3.6.0 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
 www-client/yandex-browser 24.12.1.712_p1: The web browser from Yandex
-www-client/zen-bin 1.0.2_beta5 1.6_beta: Zen Browser - A Firefox-based browser focused on privacy
+www-client/zen-bin 1.0.2_beta5 1.6_beta-r1: Zen Browser - A Firefox-based browser focused on privacy
 www-misc/dufs 0.40.0: Dufs is a distinctive utility file server
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits
 www-misc/gorss 0.3: Go Terminal Feed Reader
@@ -1785,7 +1785,7 @@ x11-misc/leftwm-theme 0.1.2: Theme mangager for LeftWM
 x11-misc/ly 1.0.2 9999: Ly - a TUI display manager (live ebuild)
 x11-misc/picom-jonaburg 9999: A lightweight compositor for X11 (previously a compton fork)
 x11-misc/pywal 3.3.0: Tool that generates color schemes from images
-x11-misc/pywal16 3.6.0: 16 colors fork of pywal
+x11-misc/pywal16 3.6.0 3.7.2: 16 colors fork of pywal
 x11-misc/rofi-emoji 3.3.0 3.4.1: Emoji selector plugin for Rofi
 x11-misc/selx 1.2.0: Minimal X11 rectangle selection tool
 x11-misc/slstatus 1.0-r1: Status monitor for window managers that use WM_NAME/stdin to fill the status bar
@@ -1800,7 +1800,7 @@ x11-terms/rio 0.2.2: A hardware-accelerated GPU terminal emulator powered by Web
 x11-terms/tabby-bin 1.0.189: A terminal for a more modern age
 x11-terms/terminal-simulator 0.2 9999-r1: VT100 and VT52 terminal hardware simulator
 x11-terms/tym 3.5.1-r2: Lua-configurable terminal emulator
-x11-themes/adw-gtk3 5.2 5.3 5.5: The theme from libadwaita ported to GTK-3
+x11-themes/adw-gtk3 5.3 5.5 5.6: The theme from libadwaita ported to GTK-3
 x11-themes/adwaita-dark-amoled 9999: GTK-3/4 theme: black background, blue accent
 x11-themes/arc-darkest-colors 0_pre20200818 0_pre20201112: Flat, dark-mode theme with transparent elements
 x11-themes/arc-kde 20220908: Port of the popular GTK theme Arc for Plasma 5
