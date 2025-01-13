@@ -1,10 +1,10 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 # https://github.com/dani-garcia/vaultwarden/issues/4649
-RUST_MAX_VER="1.77.1"
+RUST_MAX_VER="1.83.0"
 
 inherit cargo check-reqs readme.gentoo-r1 systemd tmpfiles
 
@@ -16,25 +16,25 @@ if [[ ${PV} == 9999* ]]; then
 	EGIT_REPO_URI="https://github.com/dani-garcia/vaultwarden.git"
 else
 	SRC_URI="
-	https://github.com/dani-garcia/vaultwarden/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz
-	https://github.com/rahilarious/gentoo-distfiles/releases/download/${P}/deps.tar.xz -> ${P}-deps.tar.xz
-	https://github.com/rahilarious/gentoo-distfiles/releases/download/${P}/wiki.tar.xz -> ${P}-docs.tar.xz
-"
+		https://github.com/dani-garcia/vaultwarden/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz
+		https://jroy.ca/dist/${P}-vendor.tar.xz
+		https://jroy.ca/dist/${P}-wiki.tar.xz -> ${P}-docs.tar.xz
+	"
 	KEYWORDS="~amd64"
 fi
 
-# main
 LICENSE="AGPL-3"
-# deps
-LICENSE+=" 0BSD Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD-2 BSD ISC MIT MPL-2.0 Unicode-DFS-2016"
+# Dependent crate licenses
+LICENSE+=" 0BSD Apache-2.0 BSD ISC MIT MPL-2.0 Unicode-3.0"
 
 SLOT="0"
-IUSE="cli mysql postgres sqlite web"
+IUSE="cli mysql postgres +sqlite web"
 REQUIRED_USE="|| ( mysql postgres sqlite )"
 
 RDEPEND="
 	acct-user/vaultwarden
 	acct-group/vaultwarden
+	dev-libs/openssl:=
 	cli? ( || ( app-admin/bitwarden-cli app-admin/bitwarden-cli-bin  ) )
 	mysql? ( dev-db/mysql-connector-c:= )
 	postgres? ( dev-db/postgresql:* )
@@ -84,6 +84,15 @@ src_unpack() {
 		cargo_live_src_unpack
 	else
 		cargo_src_unpack
+		mkdir "${CARGO_HOME}/gentoo" || die
+		ln -s "${WORKDIR}/vendor/"* "${CARGO_HOME}/gentoo/" || die
+		sed -i "${ECARGO_HOME}/config.toml" \
+			-e 's/work\/vendor/work\/cargo_home\/gentoo/' \
+			-e '/source.crates-io/d' \
+			-e '/replace-with = "gentoo"/d' \
+			-e '/local-registry = "\/nonexistent"/d' \
+			|| die
+		cat "${WORKDIR}/vendor/vendor-config.toml" >> "${ECARGO_HOME}/config.toml" || die
 	fi
 }
 
@@ -104,11 +113,11 @@ src_configure() {
 src_compile() {
 	# https://github.com/dani-garcia/vaultwarden/blob/main/build.rs
 	[[ ${PV} != 9999* ]] && export VW_VERSION="${PV}"
-	cargo_src_compile
+	cargo_src_compile --no-default-features
 }
 
 src_install() {
-	dobin target/*/"${PN}"
+	dobin target/*/*/"${PN}"
 	systemd_newunit "${FILESDIR}"/vaultwarden-1.30.3.service "${PN}".service
 	newinitd "${FILESDIR}"/vaultwarden-1.30.3.initd "${PN}"
 	newtmpfiles "${FILESDIR}"/vaultwarden-tmpfiles-1.30.3.conf "${PN}".conf
