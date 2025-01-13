@@ -1,4 +1,4 @@
-# Copyright 2023-2024 Gentoo Authors
+# Copyright 2023-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -21,8 +21,9 @@ SLOT="0"
 
 RDEPEND="
 	dev-cpp/sdbus-c++:0/2
+	dev-libs/hyprgraphics
 	>=dev-libs/hyprlang-0.4.0
-	>=gui-libs/hyprutils-0.2.0:=
+	>=gui-libs/hyprutils-0.2.6:=
 	dev-libs/date
 	dev-libs/glib:2
 	dev-libs/wayland
@@ -47,5 +48,7 @@ BDEPEND="
 "
 
 PATCHES=(
-	"${FILESDIR}/hyprlock-0.4.1-fix-CFLAGS-CXXFLAGS.patch"
+	"${FILESDIR}/${PN}-0.4.1-fix-CFLAGS-CXXFLAGS.patch"
+	# bug #947781
+	"${FILESDIR}/${P}-explicitly-require-gles3.patch"
 )

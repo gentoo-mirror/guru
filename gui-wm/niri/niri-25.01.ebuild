@@ -1,12 +1,15 @@
-# Copyright 2024 Gentoo Authors
+# Copyright 2024-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-LLVM_COMPAT=( {16..18} )
-RUST_MIN_VER="1.77.0"
+LLVM_COMPAT=( {16..19} )
+RUST_MIN_VER="1.80.0"
 
-inherit llvm-r1 cargo systemd
+# used for version string
+export NIRI_BUILD_COMMIT="e05bc26"
+
+inherit cargo llvm-r2 systemd
 
 DESCRIPTION="Scrollable-tiling Wayland compositor"
 HOMEPAGE="https://github.com/YaLTeR/niri"
@@ -19,7 +22,7 @@ LICENSE="GPL-3+"
 # Dependent crate licenses
 LICENSE+="
 	Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD-2 BSD ISC MIT MPL-2.0
-	Unicode-DFS-2016
+	Unicode-3.0 Unicode-DFS-2016
 "
 SLOT="0"
 KEYWORDS="~amd64"
@@ -46,7 +49,7 @@ DEPEND="
 	)
 "
 RDEPEND="${DEPEND}"
-# Clang is required for bindgen
+# libclang is required for bindgen
 BDEPEND="
 	screencast? ( $(llvm_gen_dep 'llvm-core/clang:${LLVM_SLOT}') )
 "
@@ -56,7 +59,7 @@ ECARGO_VENDOR="${WORKDIR}/vendor"
 QA_FLAGS_IGNORED="usr/bin/niri"
 
 pkg_setup() {
-	llvm-r1_pkg_setup
+	llvm-r2_pkg_setup
 	rust_pkg_setup
 }
 
@@ -85,4 +88,17 @@ src_install() {
 
 	insinto /usr/share/xdg-desktop-portal
 	doins resources/niri-portals.conf
+}
+
+src_test() {
+	# tests create a wayland socket in the xdg runtime dir
+	export XDG_RUNTIME_DIR="${T}/xdg"
+	mkdir "${XDG_RUNTIME_DIR}" || die
+	chmod 0700 "${XDG_RUNTIME_DIR}" || die
+
+	# tests might fail when executed in parallel
+	# https://github.com/YaLTeR/niri/issues/953
+	export RAYON_NUM_THREADS=1
+
+	cargo_src_test
 }
