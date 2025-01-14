@@ -1,4 +1,4 @@
-# Copyright 2024 Gentoo Authors
+# Copyright 2024-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -17,9 +17,15 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="
-	gui-libs/gtk
+	dev-libs/glib:2
+	gui-libs/gtk:4
 	>=gui-libs/gtk4-layer-shell-1.0.4
 	dev-libs/gobject-introspection
+	media-libs/graphene
+	media-libs/vips:=
+	x11-libs/cairo
+	x11-libs/gdk-pixbuf:2
+	x11-libs/pango
 "
 DEPEND="${RDEPEND}"
 BDEPEND="
