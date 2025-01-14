@@ -1,4 +1,4 @@
-# Copyright 2022-2024 Gentoo Authors
+# Copyright 2022-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -22,7 +22,6 @@ IUSE="elogind systemd"
 REQUIRED_USE="?? ( elogind systemd )"
 
 DEPEND="
-	>=media-video/pipewire-1.2.0:=
 	>=dev-cpp/sdbus-c++-2.0.0
 	dev-libs/hyprlang:=
 	dev-libs/inih
@@ -30,12 +29,13 @@ DEPEND="
 	dev-qt/qtbase:6[gui,widgets]
 	dev-qt/qtwayland:6
 	media-libs/mesa
+	>=media-video/pipewire-1.2.0:=
 	sys-apps/util-linux
 	x11-libs/libdrm
 	|| (
-		systemd? ( >=sys-apps/systemd-237 )
-		elogind? ( >=sys-auth/elogind-237 )
 		sys-libs/basu
+		elogind? ( >=sys-auth/elogind-237 )
+		systemd? ( >=sys-apps/systemd-237 )
 	)
 "
 
@@ -45,22 +45,22 @@ RDEPEND="
 "
 
 BDEPEND="
+	dev-libs/hyprland-protocols
 	>=dev-libs/wayland-protocols-1.24
 	>=dev-util/hyprwayland-scanner-0.4.2
-	dev-libs/hyprland-protocols
 	virtual/pkgconfig
-	|| ( >=sys-devel/gcc-13:* >=llvm-core/clang-17:* )
+	|| ( >=sys-devel/gcc-14:* >=llvm-core/clang-17:* )
 "
 
 pkg_setup() {
 	[[ ${MERGE_TYPE} == binary ]] && return
 
-	if tc-is-gcc && ver_test $(gcc-version) -lt 13 ; then
-		eerror "XDPH needs >=gcc-13 or >=clang-17 to compile."
+	if tc-is-gcc && ver_test $(gcc-version) -lt 14 ; then
+		eerror "XDPH needs >=gcc-14 or >=clang-17 to compile."
 		eerror "Please upgrade GCC: emerge -v1 sys-devel/gcc"
 		die "GCC version is too old to compile XDPH!"
 	elif tc-is-clang && ver_test $(clang-version) -lt 17 ; then
-		eerror "XDPH needs >=gcc-13 or >=clang-17 to compile."
+		eerror "XDPH needs >=gcc-14 or >=clang-17 to compile."
 		eerror "Please upgrade Clang: emerge -v1 llvm-core/clang"
 		die "Clang version is too old to compile XDPH!"
 	fi
