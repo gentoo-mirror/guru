@@ -13,15 +13,16 @@ HOMEPAGE="https://www.swift.org"
 SRC_URI="
 	https://github.com/apple/swift-argument-parser/archive/refs/tags/1.2.3.tar.gz -> swift-argument-parser-1.2.3.tar.gz
 	https://github.com/apple/swift-asn1/archive/refs/tags/1.0.0.tar.gz -> swift-asn1-1.0.0.tar.gz
-	https://github.com/apple/swift-atomics/archive/refs/tags/1.2.0.tar.gz -> swift-atomics-1.2.0.tar.gz
+	https://github.com/apple/swift-atomics/archive/refs/tags/1.0.2.tar.gz -> swift-atomics-1.0.2.tar.gz
 	https://github.com/apple/swift-certificates/archive/refs/tags/1.0.1.tar.gz -> swift-certificates-1.0.1.tar.gz
-	https://github.com/apple/swift-collections/archive/refs/tags/1.1.2.tar.gz -> swift-collections-1.1.2.tar.gz
+	https://github.com/apple/swift-collections/archive/refs/tags/1.0.5.tar.gz -> swift-collections-1.0.5.tar.gz
 	https://github.com/apple/swift-crypto/archive/refs/tags/3.0.0.tar.gz -> swift-crypto-3.0.0.tar.gz
 	https://github.com/apple/swift-nio-ssl/archive/refs/tags/2.15.0.tar.gz -> swift-nio-ssl-2.15.0.tar.gz
 	https://github.com/apple/swift-nio/archive/refs/tags/2.31.2.tar.gz -> swift-nio-2.31.2.tar.gz
-	https://github.com/apple/swift-numerics/archive/refs/tags/1.0.2.tar.gz -> swift-numerics-1.0.2.tar.gz
-	https://github.com/apple/swift-system/archive/refs/tags/1.3.0.tar.gz -> swift-system-1.3.0.tar.gz
-	https://github.com/jpsim/Yams/archive/refs/tags/5.0.6.tar.gz -> Yams-5.0.6.tar.gz
+	https://github.com/apple/swift-numerics/archive/refs/tags/1.0.1.tar.gz -> swift-numerics-1.0.1.tar.gz
+	https://github.com/apple/swift-system/archive/refs/tags/1.1.1.tar.gz -> swift-system-1.1.1.tar.gz
+	https://github.com/apple/swift-xcode-playground-support/archive/refs/tags/${P}-RELEASE.tar.gz -> swift-xcode-playground-support-${PV}.tar.gz
+	https://github.com/jpsim/Yams/archive/refs/tags/5.0.1.tar.gz -> Yams-5.0.1.tar.gz
 	https://github.com/swiftlang/indexstore-db/archive/refs/tags/${P}-RELEASE.tar.gz -> indexstore-db-${PV}.tar.gz
 	https://github.com/swiftlang/llvm-project/archive/refs/tags/${P}-RELEASE.tar.gz -> llvm-project-${PV}.tar.gz
 	https://github.com/swiftlang/sourcekit-lsp/archive/refs/tags/${P}-RELEASE.tar.gz -> sourcekit-lsp-${PV}.tar.gz
@@ -35,8 +36,6 @@ SRC_URI="
 	https://github.com/swiftlang/swift-driver/archive/refs/tags/${P}-RELEASE.tar.gz -> swift-driver-${PV}.tar.gz
 	https://github.com/swiftlang/swift-experimental-string-processing/archive/refs/tags/${P}-RELEASE.tar.gz -> swift-experimental-string-processing-${PV}.tar.gz
 	https://github.com/swiftlang/swift-format/archive/refs/tags/${P}-RELEASE.tar.gz -> swift-format-${PV}.tar.gz
-	https://github.com/swiftlang/swift-foundation-icu/archive/refs/tags/${P}-RELEASE.tar.gz -> swift-foundation-icu-${PV}.tar.gz
-	https://github.com/swiftlang/swift-foundation/archive/refs/tags/${P}-RELEASE.tar.gz -> swift-foundation-${PV}.tar.gz
 	https://github.com/swiftlang/swift-installer-scripts/archive/refs/tags/${P}-RELEASE.tar.gz -> swift-installer-scripts-${PV}.tar.gz
 	https://github.com/swiftlang/swift-integration-tests/archive/refs/tags/${P}-RELEASE.tar.gz -> swift-integration-tests-${PV}.tar.gz
 	https://github.com/swiftlang/swift-llbuild/archive/refs/tags/${P}-RELEASE.tar.gz -> swift-llbuild-${PV}.tar.gz
@@ -46,21 +45,22 @@ SRC_URI="
 	https://github.com/swiftlang/swift-package-manager/archive/refs/tags/${P}-RELEASE.tar.gz -> swift-package-manager-${PV}.tar.gz
 	https://github.com/swiftlang/swift-stress-tester/archive/refs/tags/${P}-RELEASE.tar.gz -> swift-stress-tester-${PV}.tar.gz
 	https://github.com/swiftlang/swift-syntax/archive/refs/tags/${P}-RELEASE.tar.gz -> swift-syntax-${PV}.tar.gz
-	https://github.com/swiftlang/swift-testing/archive/refs/tags/${P}-RELEASE.tar.gz -> swift-testing-${PV}.tar.gz
 	https://github.com/swiftlang/swift-tools-support-core/archive/refs/tags/${P}-RELEASE.tar.gz -> swift-tools-support-core-${PV}.tar.gz
 	https://github.com/swiftlang/swift/archive/refs/tags/${P}-RELEASE.tar.gz -> ${P}.tar.gz
 "
 
 PATCHES=(
+	"${FILESDIR}/${PF}/backport-swift-75662.patch"
 	"${FILESDIR}/${PF}/backtracing-noexecstack.patch"
-	"${FILESDIR}/${PF}/gentoo-build-preset.patch"
+	"${FILESDIR}/${PF}/disable-libdispatch-werror.patch"
 	"${FILESDIR}/${PF}/link-ncurses-tinfo.patch"
 	"${FILESDIR}/${PF}/link-with-lld.patch"
+	"${FILESDIR}/${PF}/lldb-cmake-minimum-version.patch"
 )
 
 S="${WORKDIR}"
 LICENSE="Apache-2.0"
-SLOT="6/0"
+SLOT="5/10"
 KEYWORDS="~amd64"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
@@ -68,7 +68,6 @@ RESTRICT="strip"
 
 RDEPEND="
 	${PYTHON_DEPS}
-	!~dev-lang/swift-5.10.1:0
 	>=app-eselect/eselect-swift-1.0
 	>=dev-db/sqlite-3
 	>=dev-libs/icu-69
@@ -84,21 +83,16 @@ RDEPEND="
 BDEPEND="
 	${PYTHON_DEPS}
 	>=dev-build/cmake-3.24.2
-	>=dev-build/ninja-1.11.1
+	>=dev-build/ninja-1.11
 	>=dev-db/sqlite-3
 	>=dev-libs/icu-69
 	>=dev-libs/libedit-20221030
 	>=dev-libs/libxml2-2.11.5
-	>=dev-util/patchelf-0.18
 	>=dev-vcs/git-2.39
 	>=sys-apps/coreutils-9
 	>=sys-devel/gcc-11
 	>=sys-libs/ncurses-6
 	>=sys-libs/zlib-1.3
-	|| (
-		<dev-lang/swift-${PV}:*
-		>dev-lang/swift-${PV}:*
-	)
 	$(llvm_gen_dep '
 		llvm-core/clang:${LLVM_SLOT}=
 		llvm-core/lld:${LLVM_SLOT}=
@@ -129,12 +123,16 @@ pkg_setup() {
 	# `${T}/${EPYTHON}` with that version, and adds it to the `PATH`.
 	python_setup
 
-	# Sets up `PATH` to point to the appropriate LLVM toolchain, and ensure
-	# we're using the toolchain for compilation.
+	# Sets up `PATH` to point to the appropriate LLVM toolchain.
 	llvm-r1_pkg_setup
-	CC="$(type -P clang)"
-	CXX="$(type -P clang++)"
-	LD="$(type -P ld.lld)"
+
+	# `llvm-r1_pkg_setup` sets these tools to their absolute paths, but we need
+	# to still pick them up dynamically based on `PATH` for stage1 and stage2
+	# builds below (to keep all parts of the Swift toolchain compiling with the
+	# same internal tools).
+	export CC="clang"
+	export CXX="clang++"
+	export LD="ld.lld"
 
 	# Swift builds with CMake, which picks up `LDFLAGS` from the environment and
 	# populates `CMAKE_EXE_LINKER_FLAGS` with them. `LDFLAGS` are typically
@@ -157,7 +155,7 @@ src_unpack() {
 	find "${S}" \
 		-mindepth 1 -maxdepth 1 \
 		-execdir sh -c \
-			"mv '{}' \"\$(echo '{}' | sed -e 's_-\(swift-${PV}-RELEASE\|\([0-9]\+\.\)*[0-9]\+\)\$__' | tr '[:upper:]' '[:lower:]')\"" ';' \
+			"mv '{}' \"\$(echo '{}' | sed -e 's_-\(swift-5\.10\.1-RELEASE\|\([0-9]\+\.\)*[0-9]\+\)\$__' | tr '[:upper:]' '[:lower:]')\"" ';' \
 		|| die
 
 	# Some one-off fixups:
@@ -170,40 +168,144 @@ src_unpack() {
 }
 
 src_compile() {
+	# The Swift 5.10 compiler is partially written in Swift itself (the new
+	# `swift-driver` + macro support via `swift-syntax`), which requires
+	# bootstrapping with an existing Swift compiler.
+	#
+	# We don't have an existing Swift compiler, but we can bootstrap it with
+	# itself in a 3-stage process:
+	#
+	# 0. We'll build LLVM+Clang and a bare Swift compiler with the old C++-based
+	#    driver and no macro support
+	# 1. We'll use that bare compiler to build a base compiler with the new
+	#    Swift-based driver and macro support, with some base libs
+	# 2. We'll then use that base compiler to build a full Swift toolchain with
+	#    all necessary libs
+	#
+	# Build products will be intentionally shared between stages as much as
+	# possible to avoid unnecessary repeated compilation.
+
 	# Building swift-driver writes to this directory for some reason, but the
 	# contents are irrelevant.
 	addpredict /var/lib/portage/home/.swiftpm
 
-	# Versions of Swift 6.0 and later require an existing Swift compiler to
-	# bootstrap from. We can use any version from 5.10.1 and on.
-	local swift_version="$(best_version -b "${CATEGORY}/${PN}")"
-	swift_version="${swift_version#${CATEGORY}/}" # reduce to ${PVR} form
-	swift_version="${swift_version%-r[[:digit:]]*}" # reduce to ${P} form
+	local _extra_cmake_options=(
+		# BFD doesn't link Swift symbols properly, so we have to ensure Swift is
+		# built with LLD.
+		'-DSWIFT_USE_LINKER=lld',
 
-	local original_path="${PATH}"
-	export PATH="/usr/lib64/${swift_version}/usr/bin:${original_path}"
+		# We don't need to build any test code or test executables, which Swift
+		# (and some components) does by default.
+		'-DBUILD_TESTING:BOOL=NO',
+		'-DSWIFT_INCLUDE_TESTS:BOOL=NO',
+		'-DSWIFT_INCLUDE_TEST_BINARIES:BOOL=NO',
+
+		# The Clang `compiler-rt` library builds the LLVM ORC JIT component by
+		# default, which we don't need; the component builds with an executable
+		# stack, which we'd like to avoid.
+		'-DCOMPILER_RT_BUILD_ORC:BOOL=NO',
+
+		# LLDB ships with Python bindings, and uses CMake to search for Python.
+		# By default, CMake tries to find the latest version of Python available
+		# on disk (currently `python3.13`, then `python3.12`, then...). This
+		# might not be the version of Python the rest of the system uses, or
+		# which is specified by `PYTHON_SINGLE_TARGET`.
+		#
+		# Since `python_setup` already places `${EPYTHON}` in the `PATH`, we can
+		# tell CMake to use the unversioned `python` rather than a versioned
+		# one to end up respecting `PYTHON_SINGLE_TARGET`.
+		'-DPython3_FIND_UNVERSIONED_NAMES=FIRST'
+	)
+	local extra_cmake_options="$(IFS=,; echo "${_extra_cmake_options[*]}")"
+
+	# stage0:
+	# * Bare Swift compiler (no bootstrapping; no Swift driver or macros)
+	# * LLVM+Clang; this is the only stage where these are built because as a
+	#   base dependency, their flags never change, and the build products can be
+	#   reused
 	"${S}/swift/utils/build-script" \
-		--preset=gentoo \
-		install_destdir="${S}/${P}" \
-		installable_package="" \
+		--verbose-build \
+		--release \
+		--no-assertions \
+		--build-subdir="Ninja-Release" \
+		--install-destdir="${S}/stage0" \
+		--extra-cmake-options="${extra_cmake_options}" \
+		--bootstrapping=off \
+		--llvm-install-components='llvm-ar;llvm-cov;llvm-profdata;IndexStore;clang;clang-resource-headers;compiler-rt;clangd;lld;LTO;clang-features-file' \
+		--llvm-targets-to-build=host \
+		--skip-build-benchmarks \
+		--skip-early-swift-driver --skip-early-swiftsyntax \
+		--skip-test-cmark \
+		--skip-test-linux \
+		--skip-test-swift \
+		--install-all \
+		|| die
+
+	# stage1:
+	# * Base Swift compiler and driver (bootstrapping from stage0; with macros)
+	# * Base libs: swift-driver depends on llbuild + swiftpm, which depend on
+	#   Foundation + libdispatch + XCTest
+	local original_path="${PATH}"
+	export PATH="${S}/stage0/usr/bin:${original_path}"
+	"${S}/swift/utils/build-script" \
+		--verbose-build \
+		--release \
+		--no-assertions \
+		--build-subdir="Ninja-Release" \
+		--install-destdir="${S}/stage1" \
+		--extra-cmake-options="${extra_cmake_options}" \
+		--cmark --skip-test-cmark \
+		--foundation --skip-test-foundation \
+		--libdispatch --skip-test-libdispatch \
+		--llbuild --skip-test-llbuild \
+		--skip-build-benchmarks \
+		--skip-build-llvm \
+		--skip-test-linux \
+		--skip-test-swift \
+		--swift-driver --skip-test-swift-driver \
+		--swiftpm --skip-test-swiftpm \
+		--xctest --skip-test-xctest \
+		--install-all \
+		|| die
+
+	# stage2: full Swift toolchain (bootstrapping from stage1)
+	export PATH="${S}/stage1/usr/bin:${original_path}"
+	"${S}/swift/utils/build-script" \
+		--verbose-build \
+		--release \
+		--no-assertions \
+		--build-subdir="Ninja-Release" \
+		--install-destdir="${S}/stage2" \
+		--extra-cmake-options="${extra_cmake_options}" \
+		--foundation --skip-test-foundation \
+		--indexstore-db --skip-test-indexstore-db \
+		--libdispatch --skip-test-libdispatch \
+		--llbuild --skip-test-llbuild \
+		--lldb --skip-test-lldb \
+		--skip-build-benchmarks \
+		--skip-build-llvm \
+		--skip-test-linux \
+		--skip-test-swift \
+		--sourcekit-lsp --skip-test-sourcekit-lsp \
+		--swift-driver --skip-test-swift-driver \
+		--swift-install-components='autolink-driver;compiler;clang-resource-dir-symlink;stdlib;swift-remote-mirror;sdk-overlay;static-mirror-lib;toolchain-tools;license;sourcekit-inproc' \
+		--swiftdocc --skip-test-swiftdocc \
+		--swiftpm --skip-test-swiftpm \
+		--xctest --skip-test-xctest \
+		--install-all \
 		|| die
 
 	export PATH="${original_path}"
 }
 
 src_install() {
-	# `libTesting` as built has its RPATH set to the absolute path to its
-	# containing dir, which is in the build sandbox. This directory won't exist
-	# after installation, and is the same as '$ORIGIN'.
-	patchelf --set-rpath '$ORIGIN' "${S}/${P}/usr/lib/swift/linux/libTesting.so" || die
-
 	# The Swift build output is intended to be self-contained, and is
 	# _significantly_ easier to leave as-is than attempt to splat onto the
 	# filesystem; we'll install the output versioned into `/usr/lib64` and
 	# expose the relevant binaries via linking.
 	local dest_dir="/usr/lib64/${P}"
 	mkdir -p "${ED}/${dest_dir}" \
-		&& cp -pPR "${S}/${P}/." "${ED}/${dest_dir}" \
+		&& cp -pPR "${S}/stage2/." "${ED}/${dest_dir}" \
 		|| die
 
 	# Swift ships with its own `clang`, `lldb`, etc.; we don't want these to be
@@ -236,3 +338,4 @@ pkg_postrm() {
 		eselect swift update
 	fi
 }
+
