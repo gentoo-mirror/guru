@@ -1,4 +1,4 @@
-# Copyright 2023-2024 Gentoo Authors
+# Copyright 2023-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -11,8 +11,8 @@ HOMEPAGE="
 	https://github.com/meganz/MEGAsync
 "
 
-MEGA_SDK_REV="ecc873026fcc0355f6d490b8529c9f22d5a4fd8c" # commit of src/MEGASync/mega submodule
-MEGA_TAG_SUFFIX="Linux"
+MEGA_SDK_REV="d6a5d2078d1e51394dab205a48bff58d2b130d6b" # commit of src/MEGASync/mega submodule
+MEGA_TAG_SUFFIX="Win"
 SRC_URI="
 	https://github.com/meganz/MEGAsync/archive/v${PV}_${MEGA_TAG_SUFFIX}.tar.gz -> ${P}.tar.gz
 	https://github.com/meganz/sdk/archive/${MEGA_SDK_REV}.tar.gz -> ${PN}-sdk-${PV}.tar.gz
@@ -61,7 +61,10 @@ DEPEND="
 		media-libs/freeimage
 		media-video/ffmpeg:=
 	)
-	thunar? ( xfce-base/thunar:= )
+	thunar? (
+		dev-libs/glib:2
+		xfce-base/thunar:=
+	)
 "
 RDEPEND="
 	${DEPEND}
@@ -75,10 +78,11 @@ BDEPEND="
 
 PATCHES=(
 	"${FILESDIR}/${PN}-4.10.0.0_ffmpeg6.patch"
-	"${FILESDIR}/${PN}-5.3.0.0-link-zlib.patch"
-	"${FILESDIR}/${PN}-5.3.0.0-fix-install-dir.patch"
-	"${FILESDIR}/${PN}-5.3.0.0-rename-libcryptopp.patch"
 	"${FILESDIR}/${PN}-5.6.0.0-remove-clang-format.patch"
+	"${FILESDIR}/${PN}-5.7.0.0-disable-forced-options.patch"
+	"${FILESDIR}/${PN}-5.7.0.0-fix-install-dir.patch"
+	"${FILESDIR}/${PN}-5.7.0.0-link-zlib.patch"
+	"${FILESDIR}/${PN}-5.7.0.0-rename-libcryptopp.patch"
 )
 
 nemo_run() {
@@ -96,10 +100,8 @@ thunar_run() {
 }
 
 src_prepare() {
-	if [[ ${PV} != 9999 ]]; then
-		rmdir src/MEGASync/mega || die
-		mv "${WORKDIR}/sdk-${MEGA_SDK_REV}" src/MEGASync/mega || die
-	fi
+	rmdir src/MEGASync/mega || die
+	mv "${WORKDIR}/sdk-${MEGA_SDK_REV}" src/MEGASync/mega || die
 
 	cmake_src_prepare
 }
@@ -111,10 +113,11 @@ src_configure() {
 	local mycmakeargs=(
 		# build internal libs as static
 		-DBUILD_SHARED_LIBS=OFF
-		-DCMAKE_MODULE_PATH="${S}/src/MEGASync/mega/contrib/cmake/modules/packages"
+		-DCMAKE_MODULE_PATH="${S}/src/MEGASync/mega/cmake/modules/packages"
 		-DENABLE_DESKTOP_APP_WERROR=OFF
 		-DENABLE_DESKTOP_UPDATE_GEN=OFF
 		-DENABLE_DESIGN_TOKENS_IMPORTER=OFF
+		-DENABLE_ISOLATED_GFX=$(usex thumbnail)
 		-DENABLE_LINUX_EXT=$(usex nautilus)
 		-DUSE_FFMPEG=$(usex thumbnail)
 		-DUSE_FREEIMAGE=$(usex thumbnail)
@@ -125,7 +128,7 @@ src_configure() {
 	cmake_src_configure
 
 	unset mycmakeargs
-	nemo_run eqmake5
+	nemo_run eqmake5 DEFINES=no_desktop
 	thunar_run eqmake5
 }
 
