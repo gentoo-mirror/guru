@@ -1,4 +1,4 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -23,6 +23,8 @@ EGO_SUM=(
 	"github.com/joshuarubin/lifecycle v1.1.4/go.mod"
 	"github.com/pmezard/go-difflib v1.0.0"
 	"github.com/pmezard/go-difflib v1.0.0/go.mod"
+	"github.com/sirupsen/logrus v1.9.3"
+	"github.com/sirupsen/logrus v1.9.3/go.mod"
 	"github.com/stretchr/objx v0.1.0/go.mod"
 	"github.com/stretchr/testify v1.3.0/go.mod"
 	"github.com/stretchr/testify v1.7.0"
@@ -32,16 +34,29 @@ EGO_SUM=(
 	"go.uber.org/multierr v1.11.0"
 	"go.uber.org/multierr v1.11.0/go.mod"
 	"golang.org/x/sync v0.0.0-20190412183630-56d357773e84/go.mod"
+	"golang.org/x/sync v0.3.0"
+	"golang.org/x/sync v0.3.0/go.mod"
 	"golang.org/x/sync v0.8.0"
 	"golang.org/x/sync v0.8.0/go.mod"
+	"golang.org/x/sync v0.10.0"
+	"golang.org/x/sync v0.10.0/go.mod"
+	"golang.org/x/sys v0.0.0-20220715151400-c0bba94af5f8/go.mod"
+	"golang.org/x/sys v0.11.0"
+	"golang.org/x/sys v0.11.0/go.mod"
+	"golang.org/x/sys v0.24.0"
+	"golang.org/x/sys v0.24.0/go.mod"
+	"golang.org/x/sys v0.29.0"
+	"golang.org/x/sys v0.29.0/go.mod"
+	"gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod"
+	"gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c/go.mod"
 	"gopkg.in/yaml.v3 v3.0.1"
 	"gopkg.in/yaml.v3 v3.0.1/go.mod"
-	)
+)
 go-module_set_globals
 
-DESCRIPTION="enuStart plugin to nwg-panel, also capable of working standalone"
-HOMEPAGE="https://github.com/nwg-piotr/nwg-menu"
-SRC_URI="https://github.com/nwg-piotr/nwg-menu/archive/v${PV}.tar.gz -> ${P}.tar.gz
+DESCRIPTION="GTK3-based dock for sway"
+HOMEPAGE="https://github.com/nwg-piotr/nwg-dock"
+SRC_URI="https://github.com/nwg-piotr/nwg-dock/archive/v${PV}.tar.gz -> ${P}.tar.gz
 	${EGO_SUM_SRC_URI}"
 
 LICENSE="MIT"
@@ -49,16 +64,26 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="
-	dev-libs/glib:2
 	gui-libs/gtk-layer-shell
+	gui-wm/sway
+	x11-libs/gtk+:3
+	dev-libs/glib:2
 	media-libs/fontconfig
 	x11-libs/cairo
 	x11-libs/gdk-pixbuf:2
-	x11-libs/gtk+:3
 	x11-libs/pango
 "
+
 DEPEND="
 	>=dev-lang/go-1.20
+	app-accessibility/at-spi2-core:2
+	dev-libs/glib:2
+	media-libs/fontconfig
+	media-libs/freetype
+	media-libs/harfbuzz:=
+	x11-libs/cairo
+	x11-libs/gdk-pixbuf:2
+	x11-libs/pango
 	${RDEPEND}
 "
 
@@ -67,8 +92,8 @@ src_compile() {
 }
 
 src_install() {
-	insinto /usr/share/nwg-menu
-	doins -r desktop-directories
-	doins menu-start.css
-	dobin bin/nwg-menu
+	insinto /usr/share/nwg-dock
+	doins -r images
+	doins config/*
+	dobin bin/nwg-dock
 }

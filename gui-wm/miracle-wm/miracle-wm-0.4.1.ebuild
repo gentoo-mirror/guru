@@ -1,4 +1,4 @@
-# Copyright 2024 Gentoo Authors
+# Copyright 2024-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -21,11 +21,10 @@ RDEPEND="
 	dev-libs/glib:2
 	dev-libs/json-c:=
 	dev-libs/libevdev
-	<gui-libs/mir-2.19:=
 	dev-libs/libpcre2:=
+	>=gui-libs/mir-2.18:=
 	media-libs/libglvnd
 	x11-base/xwayland
-	x11-libs/libnotify
 "
 DEPEND="
 	${RDEPEND}
