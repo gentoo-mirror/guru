@@ -1,4 +1,4 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -24,15 +24,14 @@ else
 fi
 LICENSE="MIT test? ( ISC Apache-2.0 MIT BSD CC0-1.0 0BSD )"
 # nodejs module and deps used to test
-SLOT="3"
+SLOT="0"
 RDEPEND=" ${DEPEND}
 	>=dev-python/httpx-0.23.0[${PYTHON_USEDEP}]
-	=dev-python/pydantic-2.9*[${PYTHON_USEDEP}]
+	>=dev-python/pydantic-2.9.2[${PYTHON_USEDEP}]
 	>=dev-python/typing-extensions-4.7.0[${PYTHON_USEDEP}]
 	>=dev-python/anyio-4.3.0[${PYTHON_USEDEP}]
 	>=dev-python/distro-1.7.0[${PYTHON_USEDEP}]
 	>=dev-python/sniffio-1.3.1[${PYTHON_USEDEP}]
-	<dev-python/httpx-0.28.0[${PYTHON_USEDEP}]
 	 "
 
 BDEPEND="test? (
@@ -83,7 +82,7 @@ src_test() {
 }
 start_mock() {
 # Run prism mock api server, this is what needs nodejs
-	node --no-warnings node_modules/@stoplight/prism-cli/dist/index.js mock \
+	node --no-warnings node_modules/@stainless-api/prism-cli/dist/index.js mock \
 		"cloudflare-spec.yml" >prism.log || die "Failed starting prism" &
 	echo $! >"${T}/mock.pid" || die
 	# Wait for server to come online
