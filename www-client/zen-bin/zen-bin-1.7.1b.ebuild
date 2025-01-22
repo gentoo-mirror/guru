@@ -1,16 +1,15 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 inherit xdg-utils desktop
 
-MY_PV="${PV/_beta/-b.}"
 MY_P="zen"
 
 DESCRIPTION="Zen Browser - A Firefox-based browser focused on privacy"
 HOMEPAGE="https://github.com/zen-browser/desktop"
-SRC_URI="https://github.com/zen-browser/desktop/releases/download/${MY_PV}/${MY_P}.linux-x86_64.tar.bz2 -> ${P}.tar.bz2"
+SRC_URI="https://github.com/zen-browser/desktop/releases/download/${PV}/${MY_P}.linux-x86_64.tar.bz2 -> ${P}.tar.bz2"
 
 S="${WORKDIR}"
 LICENSE="MPL-2.0"
@@ -18,6 +17,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="
+	app-accessibility/at-spi2-core:2
 	dev-libs/expat
 	dev-libs/glib:2
 	dev-libs/nspr
@@ -30,9 +30,10 @@ RDEPEND="
 	sys-apps/dbus
 	sys-libs/glibc
 	x11-libs/cairo
-	x11-libs/gdk-pixbuf
+	x11-libs/gdk-pixbuf:2
 	x11-libs/gtk+:3
 	x11-libs/libX11
+	x11-libs/libxcb
 	x11-libs/libXcomposite
 	x11-libs/libXcursor
 	x11-libs/libXdamage
