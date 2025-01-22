@@ -1,0 +1,12 @@
+BDEPEND=app-arch/unzip
+DEFINED_PHASES=install
+DESCRIPTION=An automation tool for building Gentoo release stages and binhost packages.
+EAPI=8
+HOMEPAGE=https://github.com/damiandudycz/catalyst-lab
+IUSE=qemu git binhost
+KEYWORDS=~amd64 ~arm64
+LICENSE=GPL-2
+RDEPEND=dev-util/catalyst app-misc/yq binhost? ( sys-fs/squashfs-tools ) qemu? ( app-emulation/qemu[static-user] ) git? ( dev-vcs/git dev-vcs/git-lfs )
+SLOT=0
+SRC_URI=https://github.com/damiandudycz/catalyst-lab/archive/refs/tags/catalyst-lab-v1.6.1.tar.gz
+_md5_=8fe4fe2b01ff05339b71fb23c33b7e1b
