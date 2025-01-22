@@ -1,4 +1,4 @@
-# Copyright 2018-2024 Gentoo Authors
+# Copyright 2018-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -6,8 +6,10 @@ EAPI=8
 inherit edo ninja-utils toolchain-funcs xdg
 
 DESCRIPTION="Full color painting software for Linux for illustration drawing"
-HOMEPAGE="http://azsky2.html.xdomain.jp/soft/azpainter.html
-	https://gitlab.com/azelpg/azpainter"
+HOMEPAGE="
+	https://azelpg.gitlab.io/azsky2/soft/azpainter.html
+	https://gitlab.com/azelpg/azpainter
+"
 SRC_URI="https://gitlab.com/azelpg/${PN}/-/archive/v${PV}/${PN}-v${PV}.tar.bz2"
 S="${WORKDIR}/${PN}-v${PV}"
 

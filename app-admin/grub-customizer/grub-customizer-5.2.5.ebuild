@@ -1,4 +1,4 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -15,8 +15,15 @@ KEYWORDS="~amd64"
 
 DEPEND="
 	app-arch/libarchive:=
+	dev-cpp/atkmm
+	dev-cpp/cairomm
+	dev-cpp/glibmm:2
 	dev-cpp/gtkmm:3.0
+	dev-cpp/pangomm:1.4
+	dev-libs/glib:2
+	dev-libs/libsigc++:2
 	dev-libs/openssl:=
+	x11-libs/gtk+:3
 "
 RDEPEND="
 	${DEPEND}
@@ -26,7 +33,7 @@ BDEPEND="virtual/pkgconfig"
 
 PATCHES=(
 	# prevent -fPIE being added
-	"${FILESDIR}/${P}-fix-flags.patch"
+	"${FILESDIR}/${PN}-5.2.4-fix-flags.patch"
 )
 
 src_prepare() {
