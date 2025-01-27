@@ -81,8 +81,7 @@ app-misc/far2l:wxwidgets - GUI backend support
 app-misc/kanata:cmd - Enable potentially dangerous "cmd" action to be able run arbitrary commands.
 app-misc/kloak:apparmor - Install AppArmor profile
 app-misc/kloak:systemd - Install systemd service file
-app-misc/ollama:amd - Add support of amd
-app-misc/ollama:nvidia - Add support of nvidia
+app-misc/ollama:cuda - Enable NVIDIA CUDA support
 app-misc/tinyfetch:pci - Enables the use of pciutils to detect GPU names
 app-misc/wlx-overlay-s:openvr - Support Valve's SteamVR SDK.
 app-misc/wlx-overlay-s:openxr - Support Khronos Group's OpenXR API.
@@ -168,9 +167,7 @@ dev-util/distribution-gpg-keys:copr - Install GPG keys used by Copr projects
 dev-util/gammaray:3d - Build support for Qt5 3D modules
 dev-util/gammaray:designer - Widget .ui file export
 dev-util/gammaray:geolocation - Physical position determination support from Qt5 framework
-dev-util/gammaray:printsupport - Printing support library from the Qt5 framework. Required for widget PDF export
 dev-util/gammaray:qml - Build with Qt5 Quick support
-dev-util/gammaray:script - Enable scripting support from the Qt5 framework
 dev-util/gammaray:scxml - Build support for Qt5 State Chart XML (SCXML)
 dev-util/gammaray:webengine - Enable support for dev-qt/qtwebengine
 dev-util/rust-rover:bundled-jdk - Use bundled jdk

@@ -217,7 +217,7 @@ app-misc/badvideo 5.2 9999: Ruin your videos in SECONDS!
 app-misc/blahaj 2.2.0-r1: Gay sharks at your local terminal
 app-misc/brightness-control 2.4: Qt Brightness Controller in Python
 app-misc/brightnessctl 0.5.1: A program to read and control device brightness
-app-misc/catt 0.12.12-r1 0.12.13: Send videos from many, many online sources to your Chromecast
+app-misc/catt 0.12.13: Send videos from many, many online sources to your Chromecast
 app-misc/chayang 0.1.0: Gradually dim the screen.
 app-misc/cheat 4.2.3 4.3.3-r1: cheat allows you to create and view interactive cheatsheets on the command-line
 app-misc/clifm 1.11 1.13 1.16 1.18 9999: The command line file manager
@@ -466,7 +466,7 @@ dev-debug/gdb-dashboard 0.17.2 0.17.3: Modular visual interface for GDB in Pytho
 dev-debug/lldb-mi 0.0.1 9999: LLDB Machine Interface Driver
 dev-dotnet/gtk-sharp 2.99.3-r3 3.22.2-r2: gtk bindings for mono
 dev-elixir/hex 1.0.1-r1: Package manager for the Erlang VM
-dev-embedded/arduino-cli 1.0.3 1.0.4: Next-generation arduino command line tool
+dev-embedded/arduino-cli 1.0.4 1.1.1: Next-generation arduino command line tool
 dev-embedded/bcm2-utils 0.9.8: Utilities for Broadcom-based cable modems
 dev-embedded/esp-coredump 1.10.0 1.11.0: Utility that helps users to retrieve and analyse core dumps
 dev-embedded/esp-idf 5.3.2 5.4: Espressif IoT Development Framework
@@ -803,8 +803,8 @@ dev-python/pytest-vcr 1.0.2: Plugin for managing VCR.py cassettes
 dev-python/python-barbicanclient 7.0.0: Client library for Barbican API.
 dev-python/python-fire 0.6.0: Library for automatically generating command line interfaces from Python objects
 dev-python/python-http-client 3.3.5-r1: HTTP REST client, simplified for Python
-dev-python/python-lsp-isort 0.1: isort plugin for the Python LSP Server
-dev-python/python-lsp-mypy 0.6.9: Mypy plugin for the Python LSP Server
+dev-python/python-lsp-isort 0.2.0: isort plugin for the Python LSP Server
+dev-python/python-lsp-mypy 0.7.0: Mypy plugin for the Python LSP Server
 dev-python/python-magnumclient 4.7.0: A client for the OpenStack Magnum API
 dev-python/python-octaviaclient 3.9.0: A client for the OpenStack Octavia API
 dev-python/python-olm 3.2.16: Python bindings for dev-libs/olm
@@ -922,7 +922,7 @@ dev-util/find-work-repology 0.3.0 1.0.0: Personal advice utility for Gentoo pack
 dev-util/fnm 1.37.1: Fast and simple Node.js version manager
 dev-util/fortls 2.13.0 3.0.0 3.1.1 3.1.2: Fortran Language Server (fortls)
 dev-util/fortran-test-drive 0.4.0 0.5.0: The simple testing framework (for Fortran)
-dev-util/gammaray 2.11.3: High-level runtime introspection tool for Qt applications
+dev-util/gammaray 3.1.0: High-level runtime introspection tool for Qt applications
 dev-util/genTree 0.1.0 9999: Gentoo rootfs tree generator
 dev-util/git-bug 0.8.0 9999: distributed, offline-first bug tracker
 dev-util/gitlab-ci-local-bin 4.43.0 4.47.0 4.56.0: Run gitlab pipelines locally as shell executor or docker executor
@@ -1153,7 +1153,7 @@ gui-apps/swaylock-effects 1.7.0.0 9999: Swaylock, with fancy effects
 gui-apps/swaylock-plugin 1.8.0 9999: Fork of Swaylock that supports animated backgrounds
 gui-apps/swaync 0.9.0 0.10.1-r1: A simple notification daemon with a GTK gui for notifications and control center
 gui-apps/swayosd 0.1.0: GTK based on screen display for keyboard shortcuts like caps-lock and volume
-gui-apps/swayr 0.27.4: A LRU window-switcher (and more) for the sway window manager
+gui-apps/swayr 0.27.4 0.28.0: A LRU window-switcher (and more) for the sway window manager
 gui-apps/swayrbar 0.4.2: A swaybar-protocol implementation for sway/swaybar
 gui-apps/sworkstyle 1.3.5: Map workspace names to icons for Sway
 gui-apps/swww 0.9.5-r2 9999: Efficient animated wallpaper daemon for wayland, controlled at runtime
@@ -1195,12 +1195,12 @@ gui-wm/hyprland-contrib 0.1-r1 9999: Community-maintained extensions for hyprlan
 gui-wm/miracle-wm 0.4.0 0.4.1: Tiling Wayland compositor based on Mir
 gui-wm/niri 0.1.10.1 25.01: Scrollable-tiling Wayland compositor
 gui-wm/phoc 0.42.1 0.43.0 0.44.0: Wayland compositor for mobile phones
-gui-wm/river 0.3.6: A dynamic tiling Wayland compositor
+gui-wm/river 0.3.6 0.3.7: A dynamic tiling Wayland compositor
 gui-wm/swayfx 0.4-r1: SwayFX: Sway, but with eye candy!
 kde-apps/kwalletcli 3.03: CLI for the KDE Wallet
 kde-misc/geminipart 20241121 20241215: KPart for viewing text/gemini files
 kde-misc/kio-gemini 20240801 20241109: Gemini KIO worker
-mail-client/betterbird-bin 128.6.0: Betterbird is a fine-tuned version of Mozilla Thunderbird.
+mail-client/betterbird-bin 128.6.1: Betterbird is a fine-tuned version of Mozilla Thunderbird.
 mail-client/mailspring-bin 1.13.3: A beautiful, fast and fully open source mail client for Mac, Windows and Linux
 mail-client/proton-mail-bin 1.0.6: Beta Client for Proton Mail
 mail-filter/postfix-mta-sts-resolver 1.4.0: Daemon which provides TLS client policy for Postfix via socketmap
@@ -1352,7 +1352,6 @@ media-video/mpc-qt 24.06 24.12: Media Player Classic Qute Theater
 media-video/obs-multi-rtmp 0.6.0.1 9999: OBS Simulcast support plugin
 media-video/obs-streamfx 0.12.0.9999 9999: OBS® Studio plugin which adds many new effects.
 media-video/obs-vaapi 0.4.1 0.4.2 9999: OBS Studio VAAPI support via GStreamer
-media-video/obs-vkcapture 1.5.0 1.5.1 9999: OBS Linux Vulkan/OpenGL game capture
 media-video/stremio 4.4.168: Stremio is a modern media center for your video entertainment.
 media-video/syncplay 1.7.3: Client/server to synchronize media playback
 media-video/uxplay 1.67-r1 1.68.3-r1 1.70-r1: AirPlay Unix mirroring server
@@ -1412,7 +1411,7 @@ net-im/gomuks 0.3.0 0.3.1: A terminal based Matrix client written in Go
 net-im/heisenbridge 1.14.6-r1 1.15.0: A bouncer-style Matrix IRC bridge
 net-im/iamb 0.0.8 0.0.9 0.0.10: A Matrix chat client that uses Vim keybindings
 net-im/jitsi-meet 2022.3.1-r1: Desktop application for Jitsi Meet built with Electron
-net-im/legcord-bin 1.0.2: Legcord is a custom client designed to enhance your Discord experience.
+net-im/legcord-bin 1.0.8: Legcord is a custom client designed to enhance your Discord experience.
 net-im/manyverse-bin 0.2310.9: A social network off the grid with append-only protocol (no edits) on blockchain
 net-im/mastoposter 0.2: Configurable reposter from Mastodon-compatible Fediverse servers
 net-im/matterhorn-bin 90000.0.0 90000.0.1: Terminal based Mattermost client
@@ -1524,7 +1523,7 @@ net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
 net-p2p/yggdrasil-go 0.5.9 0.5.10 9999: An experiment in scalable routing as an encrypted IPv6 overlay network
 net-print/hpuld 1.00.39.15.00.23-r1: HP Unified Linux Driver (for samsung hardware)
 net-proxy/MTProxy 3.0.4-r1: Community fork of MTProxy
-net-proxy/byedpi 0.14.1 0.15 0.16 9999: Bypass DPI SOCKS proxy
+net-proxy/byedpi 0.14.1 0.15 0.16 0.16.1 9999: Bypass DPI SOCKS proxy
 net-proxy/ngrok-bin 3.19.0: ngrok is a reverse proxy, firewall, and API gateway
 net-proxy/snowflake 2.9.2 2.10.1: Pluggable Transport using WebRTC, inspired by Flashproxy
 net-voip/baresip 3.17.0 3.18.0 3.19.0: Baresip is a portable and modular SIP User-Agent
@@ -1536,7 +1535,7 @@ net-vpn/GlobalProtect-openconnect 2.3.9-r1: Unofficial GlobalProtect VPN client 
 net-vpn/cloudflare-warp 2024.2.62-r2 2024.4.133-r1 2024.11.309: Cloudflare Warp Client
 net-vpn/fastd 22: A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
 net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that require SAML
-net-vpn/mullvadvpn-app 2025.2 2025.3_beta1: Tool used to manage daemon setup
+net-vpn/mullvadvpn-app 2025.2 2025.3_beta1 2025.3_beta1-r1: Tool used to manage daemon setup
 net-wireless/airspyhf 1.6.8: User mode driver for Airspy HF+
 net-wireless/bluetuith 0.1.9 0.2.0 0.2.1 0.2.2 9999: A TUI bluetooth manager for Linux written in Go
 net-wireless/btscreenlocker 1.8.1-r1: Daemon to lock your screen when Bluetooth trusted devices go away.
@@ -1558,7 +1557,7 @@ sci-biology/cytoscape-bin 3.10.3: A visualization platform for molecular interac
 sci-biology/geneathome 1.10-r5: BOINC application for expanding Gene Regulatory Networks (GRN)
 sci-biology/jalview-bin 2.11.4.1: Editor of multiple sequence alignments.
 sci-chemistry/vesta-bin 3.5.8: Visualisation for Electronic and STructural Analysis.
-sci-chemistry/xcrysden 1.6.2: For the visualisation of molecular and crystal structures.
+sci-chemistry/xcrysden 1.6.2-r2: For the visualisation of molecular and crystal structures.
 sci-electronics/bluespec 2022.01-r1 2023.01 2023.07 9999: Toolchain for the Bluespec Hardware Definition Language
 sci-electronics/circt 1.14.0 1.37.0 1.76.0: The fast free Verilog/SystemVerilog simulator
 sci-electronics/coil64 2.1.27: Coil64 is inductance coil calculator
@@ -1652,11 +1651,11 @@ sys-apps/sampler-bin 1.1.0: visualizer for shell commands, executions and alerti
 sys-apps/save-backlight 1.1.2-r1 9999: An OpenRC service for restoring the last brightness level on reboot
 sys-apps/sd 1.0.0: Intuitive find & replace CLI (sed alternative)
 sys-apps/systemd-bootchart 234 235: systemd boot performance graphing tool
-sys-apps/ugrep 5.1.4: A fast, drop-in replacement for GNU grep
+sys-apps/ugrep 5.1.4 7.2.0: A fast, drop-in replacement for GNU grep
 sys-apps/zmem 0.2.1: Memory monitoring tool focusing on swap, zswap and zram
 sys-auth/hyprpolkitagent 0.1.1-r2 0.1.2: Polkit authentication agent for Hyprland, written in Qt/QML
 sys-auth/pam-gnupg 0.4-r1: Unlock GnuPG keys on login
-sys-block/partclone 0.3.20 0.3.32: Partition cloning tool
+sys-block/partclone 0.3.33: Partition cloning tool
 sys-boot/customrescuecd-x86_64-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/grml-rescueboot 0.6.1: grub2 script to add ISO images to the grub2 boot menu
 sys-boot/limine 7.0.0 7.0.3 7.0.5 7.3.0 7.5.0 7.9.2 8.0.5 8.0.6 8.0.7 8.0.9 8.0.11 8.0.12 8.0.13 8.0.14 8.1.1 8.1.2 8.3.2 8.4.0 8.5.0 8.6.0 8.7.0: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
@@ -1718,7 +1717,7 @@ sys-process/xe 1.0-r1: Simple xargs and apply replacement with sane defaults
 virtual/crystal-db 0.13-r1: Virtual for Crystal database drivers
 www-apps/castopod 1.4.3 1.4.5: Open-source hosting platform made for podcasters
 www-apps/code-server-bin 4.18.0 4.19.1 4.90.3: VS Code in the browser (binary version with unbundled node and ripgrep)
-www-apps/forgejo 7.0.9 8.0.3 9.0.3: A self-hosted lightweight software forge
+www-apps/forgejo 8.0.3 9.0.3 10.0.0: A self-hosted lightweight software forge
 www-apps/freshrss 1.24.3 1.25.0: A free, self-hostable news aggregator
 www-apps/gotosocial 0.9.0 0.10.0: Fast, fun, ActivityPub server, powered by Go
 www-apps/honk 0.9.8 0.9.91: ActivityPub server with minimal setup and support costs
@@ -1735,7 +1734,7 @@ www-apps/snac 2.25 2.26: A simple, minimalistic ActivityPub instance
 www-apps/uwebsockets 20.14.0 20.62.0 9999: ultra fast, simple, secure & standards compliant web I/O
 www-apps/vaultwarden-web 2024.1.2b 2024.3.0 2024.3.1: Bitwarden web vault patched to make it work with Vaultwarden
 www-apps/vaultwarden-web-bin 2024.1.2b 2024.3.0 2024.3.1 2024.5.0: Prebuilt Vaultwarden web from upstream
-www-apps/whoogle-search 0.9.1: A self-hosted, ad-free, privacy-respecting metasearch engine
+www-apps/whoogle-search 0.9.3: A self-hosted, ad-free, privacy-respecting metasearch engine
 www-apps/zola 0.19.2-r1: A fast static site generator with everything built-in
 www-client/badwolf 1.3.0-r1 9999: Minimalist and privacy-oriented WebKitGTK+ browser
 www-client/browsh 1.8.2: A fully-modern text-based browser, rendering to TTY and browsers
