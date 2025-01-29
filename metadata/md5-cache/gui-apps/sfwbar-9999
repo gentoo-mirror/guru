@@ -1,15 +1,14 @@
-BDEPEND=dev-util/wayland-scanner >=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array
-DEFINED_PHASES=compile configure install postinst postrm test
+BDEPEND=dev-util/wayland-scanner >=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile configure install postinst postrm test unpack
 DEPEND=dev-libs/glib:2 dev-libs/json-c:= dev-libs/wayland gui-libs/gtk-layer-shell >=x11-libs/gtk+-3.22.0:3[introspection,wayland] X? ( x11-libs/libxkbcommon ) mpd? ( media-libs/libmpdclient ) pulseaudio? ( media-libs/libpulse[glib] ) alsa? ( media-libs/alsa-lib ) >=dev-libs/wayland-protocols-1.17
 DESCRIPTION=S* Floating Window Bar
 EAPI=8
 HOMEPAGE=https://github.com/LBCrion/sfwbar
-INHERIT=meson xdg-utils
+INHERIT=meson xdg-utils git-r3
 IUSE=+menu X mpd pulseaudio alsa network networkmanager iwd bluetooth notification man idleinhibit bsdctl
-KEYWORDS=~amd64
 LICENSE=GPL-3
+PROPERTIES=live
 RDEPEND=dev-libs/glib:2 dev-libs/json-c:= dev-libs/wayland gui-libs/gtk-layer-shell >=x11-libs/gtk+-3.22.0:3[introspection,wayland] X? ( x11-libs/libxkbcommon ) mpd? ( media-libs/libmpdclient ) pulseaudio? ( media-libs/libpulse[glib] ) alsa? ( media-libs/alsa-lib ) virtual/freedesktop-icon-theme x11-libs/cairo x11-libs/gdk-pixbuf x11-libs/pango
 SLOT=0
-SRC_URI=https://github.com/LBCrion/sfwbar/archive/v1.0_beta16.tar.gz -> sfwbar-1.0_beta16.tar.gz
-_eclasses_=toolchain-funcs	14648d8795f7779e11e1bc7cf08b7536	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	357f1a896fbedcd06e5ce55419c49eb9	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	42c5abe4a656a4993a06a4fc61dbdd12	meson	99466844dd8d4fcfb07578a76f5a9922	xdg-utils	42869b3c8d86a70ef3cf75165a395e09
+_eclasses_=toolchain-funcs	14648d8795f7779e11e1bc7cf08b7536	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	357f1a896fbedcd06e5ce55419c49eb9	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	42c5abe4a656a4993a06a4fc61dbdd12	meson	99466844dd8d4fcfb07578a76f5a9922	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	git-r3	875eb471682d3e1f18da124be97dcc81
 _md5_=6f13d100ac9752870623ac54c60fd3d5

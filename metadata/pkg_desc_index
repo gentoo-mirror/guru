@@ -113,7 +113,7 @@ app-admin/talosctl-bin 1.7.6: Pre-compiled talosctl is an tool for interacting w
 app-admin/terragrunt-bin 0.38.6 0.45.4 0.50.8: A thin wrapper for Terraform
 app-admin/vaultwarden 1.32.5 1.32.7 9999: Unofficial Bitwarden compatible password manager server written in Rust
 app-alternatives/phosh-keyboard 0: sm.puri.OSK0.desktop symlinks
-app-arch/fuse-archive 0.1.14 1.4: Read-only FUSE file system for mounting archives and compressed files
+app-arch/fuse-archive 0.1.14 1.6: Read-only FUSE file system for mounting archives and compressed files
 app-arch/libarchive-qt 2.0.8: Qt based archiving solution with libarchive backend
 app-arch/libzim 9.2.1-r1: ZIM file format: an offline storage solution for content coming from the Web
 app-arch/microtar 0.1.0: A lightweight tar library written in ANSI C
@@ -315,7 +315,7 @@ app-portage/portage-lostfiles 0.5.6-r1: A simple script to identify files not tr
 app-portage/portagecfg 2.1.3 2.2.2 2.3.0 2.4.0: Utility to write Portage config files in an easy manner.
 app-portage/quantum-resolver 9999: A WIP portage dependency resolver
 app-portage/showbuild 0.9.1-r1: Script to follow log of running portage builds
-app-shells/carapace 1.1.1: Multi-shell multi-command argument completer
+app-shells/carapace 1.2.1: Multi-shell multi-command argument completer
 app-shells/direnv 2.32.3 9999: Environment variable manager for shell
 app-shells/elvish 0.19.2 0.20.1 0.21.0: Expressive programming language and a versatile interactive shell
 app-shells/fre 0.4.1: A command line frecency tracking tool
@@ -931,7 +931,7 @@ dev-util/gshards 0.2: Small helper tools to aid installing Crystal packages in G
 dev-util/haredo 1.0.2 9999: a simple and unix-idiomatic build automator
 dev-util/hut 0.6.0: CLI tool for sourcehut
 dev-util/insomnia-bin 2023.5.8: HTTP and GraphQL client for developers
-dev-util/juliaup 1.17.11: Julia installer and version multiplexer
+dev-util/juliaup 1.17.13: Julia installer and version multiplexer
 dev-util/lemminx-bin 0.27.0 0.27.1: XML Language Server
 dev-util/libtypec-utils 0.5.2: Library to interface with USB Type-C/Power Delivery devices
 dev-util/lottieconverter 0.2-r1 0.2-r2: Simple lottie (telegram animated sticker) converter
@@ -973,7 +973,7 @@ dev-vcs/gitqlient 1.6.2 1.6.3 9999: Multi-platform Git client written with Qt
 dev-vcs/gitqlient-gitserver-plugin 0.2.0: GitQlient GitServer plugin
 dev-vcs/gitqlient-jenkins-plugin 0.2.0: GitQlient Jenkins plugin
 dev-vcs/gitui 0.26.3 0.27.0: blazing fast terminal-ui for git
-dev-vcs/jj 0.24.0 9999: Jujutsu - an experimental version control system
+dev-vcs/jj 0.25.0 9999: Jujutsu - an experimental version control system
 dev-vcs/lazygit 0.42.0 0.43.1 0.44.1 0.45.2: Simple terminal UI for git commands
 dev-vcs/pijul 1.0.0_beta9: A distributed version control system based on a theory of patches
 dev-zig/zls 0.10.0-r2 0.13.0-r1 9999: The officially unofficial Ziglang language server
@@ -1038,6 +1038,7 @@ games-strategy/zedonline-bin 0.3.2-r1: A remake of the 1996 classic game Z, with
 games-util/NotEnoughProduction 0.0.4: Tool for building production chains for modded minecraft
 games-util/ProtonUp-Qt 2.11.1 9999: Install and manage GE-Proton, Luxtorpeda & more for Steam Lutris and Heroic.
 games-util/chiaki 2.1.1-r2 9999: Client for PlayStation 4 and PlayStation 5 Remote Play
+games-util/curseforge 1.269.2.22204: The CurseForge Electron App
 games-util/dwarf-therapist 41.2.5 42.1.5: For managing dwarves in Dwarf Fortress
 games-util/gamehub 0.16.3.2-r1: GameHub is a unified library for all your games
 games-util/grapejuice 7.20.12 9999: A Wine+Roblox management application
@@ -1125,12 +1126,12 @@ gui-apps/nwg-clipman 0.2.4: nwg-shell clipboard manager - a GTK3-based GUI for c
 gui-apps/nwg-displays 0.3.21 0.3.22: Output management utility for sway and Hyprland
 gui-apps/nwg-dock 0.4.1 0.4.3: GTK3-based dock for sway
 gui-apps/nwg-dock-hyprland 0.4.2 0.4.3: GTK3-based dock for Hyprland
-gui-apps/nwg-drawer 0.5.1 0.5.2 0.6.0: Application drawer for wlroots-based Wayland compositors
+gui-apps/nwg-drawer 0.6.0 0.6.2: Application drawer for wlroots-based Wayland compositors
 gui-apps/nwg-hello 0.3.0: GTK3-based greeter for greetd written in python
 gui-apps/nwg-icon-picker 0.1.1 9999: GTK icon chooser with a text search option
 gui-apps/nwg-launchers 0.5.0 0.6.3 0.7.1.1 9999: GTK+ launchers for sway, i3 and some other WMs
 gui-apps/nwg-menu 0.1.6 0.1.7: enuStart plugin to nwg-panel, also capable of working standalone
-gui-apps/nwg-panel 0.9.60 0.9.61 9999: GTK3-based panel for sway and Hyprland Wayland compositors
+gui-apps/nwg-panel 0.9.61 0.9.62 9999: GTK3-based panel for sway and Hyprland Wayland compositors
 gui-apps/nwg-shell 0.5.43 0.5.44: libraries an common functions for the nwg-shell project
 gui-apps/nwg-shell-config 0.5.54 0.5.55: nwg-shell configuration utility
 gui-apps/openrefine 3.7.9: Wikidata batch editor, Wikimedia Commons mass upload tool
@@ -1141,7 +1142,7 @@ gui-apps/pop-launcher 1.2.1: Modular IPC-based desktop launcher service
 gui-apps/rofi-wayland 1.7.5_p3: A window switcher, run dialog and dmenu replacement
 gui-apps/satty 0.14.0-r1 9999: A screenshot annotation tool inspired by Swappy and Flameshot.
 gui-apps/sddm-conf 0.2.0-r1: SDDM configuration editor
-gui-apps/sfwbar 1.0_beta15 1.0_beta16: S* Floating Window Bar
+gui-apps/sfwbar 1.0_beta15 1.0_beta16 9999: S* Floating Window Bar
 gui-apps/shikane 1.0.1: A wayland dynamic output config tool focusing on accuracy and determinism
 gui-apps/showmethekey 1.12.0 1.13.1: Show keys you typed on screen.
 gui-apps/somebar 1.0.3-r1 9999: dwm-like bar for dwl
@@ -1178,7 +1179,7 @@ gui-apps/wlsunset 0.4.0 9999: Day/night gamma adjustments for Wayland
 gui-apps/wob 0.14.2 0.15.1-r1: Lightweight overlay volume/backlight/progress/anything bar for Wayland
 gui-apps/wscreensaver 9999: Xscreensaver screensavers ported to wayland
 gui-apps/wtype 0.4: xdotool type for wayland
-gui-apps/xremap 0.10.3: Dynamic key remap for X and Wayland
+gui-apps/xremap 0.10.4: Dynamic key remap for X and Wayland
 gui-apps/xwayland-satellite 0.5-r1: Xwayland outside your Wayland
 gui-apps/yambar 1.11.0 9999: Simplistic and highly configurable status panel for X and Wayland
 gui-libs/gtk-session-lock 0.2.0-r6 9999: GTK-based lockscreen for Wayland
@@ -1243,7 +1244,7 @@ media-gfx/dustr 9999: light and interactive tool your crops need
 media-gfx/fontpreview 1.0.6: Highly customizable and minimal font previewer written in bash
 media-gfx/gephi-bin 0.9.6 0.10.1: The Open Graph Viz Platform
 media-gfx/mayo 0.8.0-r3: Opensource 3D CAD viewer and converter
-media-gfx/nsxiv 32 9999: Neo (or New or Not) Simple (or Small or Suckless) X Image Viewer
+media-gfx/nsxiv 32 33 9999: Neo (or New or Not) Simple (or Small or Suckless) X Image Viewer
 media-gfx/oda-file-converter 23.5.0.0: For converting between different versions of .dwg and .dxf
 media-gfx/pdf4qt 1.4.0.0-r1 9999: Open source PDF WYSIWYG editor based on Qt
 media-gfx/qview 5.0 6.1-r1: Practical and minimal image viewer
@@ -1524,7 +1525,7 @@ net-p2p/yggdrasil-go 0.5.9 0.5.10 9999: An experiment in scalable routing as an 
 net-print/hpuld 1.00.39.15.00.23-r1: HP Unified Linux Driver (for samsung hardware)
 net-proxy/MTProxy 3.0.4-r1: Community fork of MTProxy
 net-proxy/byedpi 0.14.1 0.15 0.16 0.16.1 9999: Bypass DPI SOCKS proxy
-net-proxy/ngrok-bin 3.19.0: ngrok is a reverse proxy, firewall, and API gateway
+net-proxy/ngrok-bin 3.19.1: ngrok is a reverse proxy, firewall, and API gateway
 net-proxy/snowflake 2.9.2 2.10.1: Pluggable Transport using WebRTC, inspired by Flashproxy
 net-voip/baresip 3.17.0 3.18.0 3.19.0: Baresip is a portable and modular SIP User-Agent
 net-voip/discover-overlay 0.6.9-r1 0.7.4 0.7.8: Yet another Discord overlay for Linux written in Python using GTK3
@@ -1655,8 +1656,10 @@ sys-apps/ugrep 5.1.4 7.2.0: A fast, drop-in replacement for GNU grep
 sys-apps/zmem 0.2.1: Memory monitoring tool focusing on swap, zswap and zram
 sys-auth/hyprpolkitagent 0.1.1-r2 0.1.2: Polkit authentication agent for Hyprland, written in Qt/QML
 sys-auth/pam-gnupg 0.4-r1: Unlock GnuPG keys on login
+sys-block/clonezilla 5.8.9: Clonezilla is a partition and disk imaging/cloning program
 sys-block/partclone 0.3.33: Partition cloning tool
 sys-boot/customrescuecd-x86_64-grub 0.1: Grub menu entries for the .iso image of customrescuecd
+sys-boot/drbl 5.4.2: Diskless Remote Boot in Linux
 sys-boot/grml-rescueboot 0.6.1: grub2 script to add ISO images to the grub2 boot menu
 sys-boot/limine 7.0.0 7.0.3 7.0.5 7.3.0 7.5.0 7.9.2 8.0.5 8.0.6 8.0.7 8.0.9 8.0.11 8.0.12 8.0.13 8.0.14 8.1.1 8.1.2 8.3.2 8.4.0 8.5.0 8.6.0 8.7.0: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
 sys-boot/mkusb 23.2.0: CLI and GUI for creating bootable live USB, with optional persistent storage
@@ -1671,7 +1674,7 @@ sys-firmware/lenovolegionlinux 9999: Lenovo Legion Linux kernel module
 sys-fs/btrfs-heatmap 9-r1: Python 3 script to draw a heatmap of a btrfs filesystem
 sys-fs/ddrescueview 0.4.5: Graphical viewer for GNU ddrescue mapfiles
 sys-fs/diskonaut 0.10.0 0.11.0 9999: Terminal disk space visual navigator
-sys-fs/dua-cli 2.29.4: A tool to conveniently learn about the disk usage of directories, fast!
+sys-fs/dua-cli 2.30.0: A tool to conveniently learn about the disk usage of directories, fast!
 sys-fs/dwarfs 0.10.2: A fast high compression read-only file system for Linux, Windows and macOS
 sys-fs/dwarfs-bin 0.10.2: Static version of a fast very high compression read-only FUSE file system
 sys-fs/ffmpegfs 2.16-r1 2.17: FUSE-based transcoding filesystem with support from/to many formats.

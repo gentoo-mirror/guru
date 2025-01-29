@@ -330,7 +330,16 @@ gui-apps/nwg-launchers:layershell - Enable Wayland layer shell support
 gui-apps/openrefine:commons - Download and install plugin for Wikimedia Commons
 gui-apps/rofi-wayland:drun - Desktop file mode
 gui-apps/rofi-wayland:windowmode - Window switcher mode
-gui-apps/sfwbar:mpd - Add support for Music Player Daemon
+gui-apps/sfwbar:bluetooth - Enable support for bluetooth with the bluez module
+gui-apps/sfwbar:bsdctl - Enable support for BSD sysctl module. Default disabled by upstream
+gui-apps/sfwbar:idleinhibit - Enable support for Idle inhibit protocol. Prevents screenlockers (e.g swaylock) from popping up by inhibiting idle mode
+gui-apps/sfwbar:iwd - Enable support for the iwd wifi module
+gui-apps/sfwbar:man - Rebuild man pages from rst files
+gui-apps/sfwbar:menu - Enable support for application menu generator. Default enabled by upstream
+gui-apps/sfwbar:mpd - Enable support for Music Player Daemon
+gui-apps/sfwbar:network - Enable support for network related features
+gui-apps/sfwbar:networkmanager - Enable support for the networkmanager wifi module
+gui-apps/sfwbar:notification - Enable support for notification center and idle notifications
 gui-apps/swaylock-effects:fish-completion - Enable fish completion support
 gui-apps/swaylock-effects:gdk-pixbuf - Enable additional image format support via the x11-libs/gdk-pixbuf library
 gui-apps/swaylock-effects:man - Build and install man pages
@@ -654,6 +663,21 @@ sys-apps/ugrep:7zip - Adds support for 7zip packages.
 sys-apps/ugrep:boost - Uses dev-libs/boost for regular expression parsing.
 sys-apps/ugrep:bzip3 - Adds support for bzip3 packages using app-arch/bzip3.
 sys-apps/ugrep:pcre2 - Uses dev-libs/libpcre2 for regular expression parsing.
+sys-block/clonezilla:apfs - Support apfs by partclone
+sys-block/clonezilla:btrfs - Support btrfs by partclone
+sys-block/clonezilla:e2fs - Support e2fs by partclone
+sys-block/clonezilla:exfat - Support exfat by partclone
+sys-block/clonezilla:f2fs - Support f2fs by partclone
+sys-block/clonezilla:fat - Support fat by partclone
+sys-block/clonezilla:fuse - Support fuse by partclone
+sys-block/clonezilla:hfs - Support hfs by partclone
+sys-block/clonezilla:minix - Support minix by partclone
+sys-block/clonezilla:nilfs2 - Support nilfs2 by partclone
+sys-block/clonezilla:ntfs - Support ntfs by partclone
+sys-block/clonezilla:reiserfs - Support reiserfs by partclone
+sys-block/clonezilla:ufs - Support ufs by partclone
+sys-block/clonezilla:vmfs - Support vmfs by partclone
+sys-block/clonezilla:xfs - Support xfs by partclone
 sys-block/partclone:apfs - Compile partclone apfs tool
 sys-block/partclone:btrfs - Compile partclone btrfs tool
 sys-block/partclone:e2fs - Compile partclone e2fs tool
@@ -662,7 +686,6 @@ sys-block/partclone:f2fs - Compile partclone f2fs tool
 sys-block/partclone:fat - Compile partclone fat tool
 sys-block/partclone:fuse - Compile partclone fuse tool
 sys-block/partclone:hfs - Compile partclone hfs tool
-sys-block/partclone:jfs - Compile partclone jfs tool
 sys-block/partclone:minix - Compile partclone minix tool
 sys-block/partclone:nilfs2 - Compile partclone nilfs2 tool
 sys-block/partclone:ntfs - Compile partclone ntfs tool

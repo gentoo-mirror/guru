@@ -1,0 +1,11 @@
+DEFINED_PHASES=-
+DESCRIPTION=Clonezilla is a partition and disk imaging/cloning program
+EAPI=8
+HOMEPAGE=https://clonezilla.org
+IUSE=apfs btrfs +e2fs exfat f2fs fat fuse hfs minix nilfs2 ntfs reiserfs ufs vmfs xfs
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=sys-apps/file sys-block/parted sys-boot/drbl sys-apps/gptfdisk net-misc/wget sys-block/partclone sys-block/partimage sys-fs/ntfs3g[ntfsprogs] net-misc/udpcast sys-apps/smartmontools app-text/html2text app-arch/pigz app-arch/zstd sys-libs/ncurses apfs? ( sys-block/partclone[apfs] ) btrfs? ( sys-block/partclone[btrfs] ) e2fs? ( sys-block/partclone[e2fs] ) exfat? ( sys-block/partclone[exfat] ) f2fs? ( sys-block/partclone[f2fs] ) fat? ( sys-block/partclone[fat] ) fuse? ( sys-block/partclone[fuse] ) hfs? ( sys-block/partclone[hfs] ) minix? ( sys-block/partclone[minix] ) nilfs2? ( sys-block/partclone[nilfs2] ) ntfs? ( sys-block/partclone[ntfs] ) reiserfs? ( sys-block/partclone[reiserfs] ) ufs? ( sys-block/partclone[ufs] ) vmfs? ( sys-block/partclone[vmfs] ) xfs? ( sys-block/partclone[xfs] )
+SLOT=0
+SRC_URI=https://github.com/stevenshiau/clonezilla/archive/refs/tags/v5.8.9.tar.gz -> clonezilla-5.8.9.tar.gz
+_md5_=bcf2e0c9419efa27615ef071d1bbb427
