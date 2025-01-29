@@ -1,4 +1,4 @@
-# Copyright 2024 Gentoo Authors
+# Copyright 2024-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -9,8 +9,7 @@ DESCRIPTION="Multi-shell multi-command argument completer"
 HOMEPAGE="https://carapace.sh/"
 SRC_URI="https://github.com/${PN}-sh/${PN}-bin/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 
-# Using a dependency tarball as per https://devmanual.gentoo.org/eclass-reference/go-module.eclass/index.html
-DEPS_URI="https://gitlab.com/freijon_gentoo/${CATEGORY}/${PN}/-/raw/main/${P}-deps.tar.xz"
+DEPS_URI="https://github.com/freijon/${PN}-bin/releases/download/v${PV}/${P}-deps.tar.xz"
 SRC_URI+=" ${DEPS_URI}"
 
 S="${WORKDIR}/${PN}-bin-${PV}"

@@ -3,17 +3,21 @@
 
 EAPI=8
 
-inherit meson xdg
+inherit meson xdg-utils
 
 DESCRIPTION="S* Floating Window Bar"
 HOMEPAGE="https://github.com/LBCrion/sfwbar"
-SRC_URI="https://github.com/LBCrion/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
-
+if [ "${PV}" == 9999 ] ; then
+	inherit git-r3
+	EGIT_REPO_URI="https://github.com/LBCrion/${PN}"
+else
+	SRC_URI="https://github.com/LBCrion/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+	KEYWORDS="~amd64"
+fi
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~amd64"
 
-IUSE="X mpd pulseaudio alsa"
+IUSE="X mpd pulseaudio alsa network networkmanager iwd bluetooth man idleinhibit bsdctl"
 
 COMMON_DEPEND="
 	dev-libs/glib:2
@@ -43,13 +47,22 @@ src_configure() {
 		$(meson_feature mpd)
 		$(meson_feature pulseaudio pulse)
 		$(meson_feature X xkb)
-		-Dnetwork=enabled
-		-Didleinhibit=enabled
-		-Dbluez=enabled
-		-Dbsdctl=disabled
-		-Diwd=enabled
-		-Dnm=enabled
+		$(meson_feature network)
+		$(meson_feature networkmanager nm)
+		$(meson_feature iwd)
+		$(meson_feature bluetooth bluez)
+		$(meson_feature bsdctl)
+		$(meson_feature man build-docs)
+		$(meson_feature idleinhibit)
 	)
 
 	meson_src_configure
+}
+
+pkg_postinst() {
+	xdg_icon_cache_update
+}
+
+pkg_postrm() {
+	xdg_icon_cache_update
 }
