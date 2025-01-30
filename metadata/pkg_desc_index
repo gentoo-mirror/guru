@@ -37,6 +37,7 @@ acct-group/yggdrasil 1: System group: yggdrasil
 acct-user/_bgpd 0-r1: User for OpenBGPD
 acct-user/_rpki-client 0: User for rpki-client
 acct-user/blocky 0-r1: A user for net-dns/blocky
+acct-user/byedpi 0: System user: byedpi
 acct-user/conduit 0: User for conduit
 acct-user/eturnal 0: System user: eturnal
 acct-user/fedigroup 0: System user: fedigroup
@@ -180,7 +181,7 @@ app-editors/mined 2015.25: A powerful text editor with extensive Unicode and CJK
 app-editors/neovide 0.12.2: Neovide: No Nonsense Neovim Gui
 app-editors/neovim-qt 0.2.17-r1 0.2.18-r1: Neovim client library and GUI, in Qt
 app-editors/notepadnext 0.8_p20240828 0.9 0.9_p20241128: A cross-platform reimplementation of Notepad++ based on Qt
-app-editors/pulsar-bin 1.120.0 1.122.0 1.124.0: A Community-led Hyper-Hackable Text Editor
+app-editors/pulsar-bin 1.124.0 1.125.0: A Community-led Hyper-Hackable Text Editor
 app-editors/typora-bin 1.8.10: a markdown editor,markdown reader.
 app-emacs/catppuccin-emacs 9999: Soothing pastel theme for Emacs
 app-emacs/envrc 0.11: Emacs support for direnv which operates buffer-locally
@@ -252,7 +253,7 @@ app-misc/lf 27 28-r1 29 30 31 32 33: Terminal file manager
 app-misc/lyfetch 1.1: Small system information script for linux systems.
 app-misc/macchina 6.4.0: A system information fetcher with an emphasis on performance.
 app-misc/mangadesk 0.7.7 0.7.8: Terminal Client for MangaDex
-app-misc/mat2 0.13.4: Metadata Anonymisation Toolkit: handy tool to trash your metadata
+app-misc/mat2 0.13.4 0.13.5: Metadata Anonymisation Toolkit: handy tool to trash your metadata
 app-misc/metadata-cleaner 2.5.6: Python GTK application to view and clean metadata in files, using mat2.
 app-misc/minder 1.16.2 1.16.3: Mind-mapping application for Elementary OS.
 app-misc/mirafetch 0.1.0 9999: A Rust reimplementation of Hyfetch wih a focus on speed
@@ -421,7 +422,7 @@ dev-cpp/workflow 0.10.2-r1 0.10.3 0.10.5 9999: C++ Parallel Computing and Asynch
 dev-cpp/wt 4.11.1 4.11.2: Wt, C++ Web Toolkit
 dev-cpp/xtensor 0.24.4: header-only C++ library for numerical analysis with multi-dimensional arrays
 dev-cpp/xtl 0.7.5: Algorithms and containers used by the xtensor stack and the xeus stack
-dev-crystal/athena-negotiation 0.1.3 0.1.5: Framework agnostic content negotiation library
+dev-crystal/athena-negotiation 0.1.5 0.2.0: Framework agnostic content negotiation library
 dev-crystal/athena-spec 0.3.7 0.3.8: Common/helpful Spec compliant testing utilities
 dev-crystal/backtracer 1.2.2: Crystal shard aiming to assist with parsing backtraces into a structured form
 dev-crystal/crikey 0.1.0_p20170404: Data structure view templates for Crystal
@@ -441,7 +442,7 @@ dev-crystal/jbuilder 1.0.0: Generate JSON objects with a Builder-style DSL
 dev-crystal/json_mapping 0.1.1: Provides the legacy JSON.mapping macro method
 dev-crystal/kemal 1.1.2-r1 1.6.0-r1: Lightning Fast, Super Simple web framework
 dev-crystal/kilt 0.6.1: Generic template interface for Crystal
-dev-crystal/liquid 0.4.1: Liquid template engine for Crystal
+dev-crystal/liquid 0.4.1 1.0.0: Liquid template engine for Crystal
 dev-crystal/lucky_flow 0.10.0-r1: LuckyFlow is a library for testing user flows in the browser
 dev-crystal/protodec 0.1.5-r1 0.1.5-r2: Command-line tool to encode and decode arbitrary protobuf data
 dev-crystal/radix 0.4.1: Radix tree implementation for Crystal language
@@ -500,7 +501,7 @@ dev-hare/hare-xml 0_pre20231231 9999: XML support for Hare
 dev-java/corretto-bin 8.412.08.1 11.0.23.9.1 17.0.11.9.1 21.0.3.9.1 22.0.1.8.1: Prebuilt Java JDK binaries provided by Amazon Web Services
 dev-java/microsoft-openjdk-bin 11.0.22 17.0.10 21.0.2: Prebuilt Java JDK binaries provided by Microsoft
 dev-lang/cc65 2.19-r3 9999-r1: Cross-development package for 65(C)02 systems
-dev-lang/crystal-bin 1.13.1 1.14.0: The Crystal Programming Language
+dev-lang/crystal-bin 1.14.0 1.15.0: The Crystal Programming Language
 dev-lang/fbc 1.10.1: A free/open source, multi-platform BASIC compiler.
 dev-lang/fbc-bootstrap 1.10.1: Bootstrap package for dev-lang/fbc
 dev-lang/gnu-apl 1.8: GNU interpreter for the APL programming language
@@ -901,7 +902,7 @@ dev-util/bats-assert 2.1.0: Common assertions for Bats
 dev-util/bats-support 0.3.0: Supporting library for Bats test helpers
 dev-util/bc-ur 0.3.0: Blockchain Commons UR Library
 dev-util/bruno-bin 1.9.0 1.9.0-r1: Opensource IDE For Exploring and Testing Api's
-dev-util/bump-my-version 0.28.2 0.29.0: Version bump your Python project
+dev-util/bump-my-version 0.29.0 0.30.0: Version bump your Python project
 dev-util/bump2version 1.0.1: Version-bump your software with a single command!
 dev-util/cargo-post 0.1.7: A cargo wrapper that executes a post build script after a successful build.
 dev-util/catalyst-lab 1.6.0 1.6.1: An automation tool for building Gentoo release stages and binhost packages.
@@ -1187,15 +1188,17 @@ gui-libs/gtk4-layer-shell 1.0.2 1.0.4: A library for using the Layer Shell Wayla
 gui-libs/hyprland-qt-support 0.1.0: Qt6 Qml style provider for hypr* apps
 gui-libs/libcprime 4.5.0 5.0.0_pre20240921 9999: Library for managing settings of CoreApps
 gui-libs/libcsys 4.5.0 9999: Library for managing the device
+gui-libs/libsfdo 0.1.3: A collection of libraries which implement some freedesktop.org specifications
 gui-libs/mir 2.19.2 2.19.3: Set of libraries for building Wayland based shells
 gui-libs/scenefx 0.1: A replacement for the wlroots scene API with eye-candy effects.
 gui-libs/text-engine 0.1.1-r3 9999: A lightweight rich-text framework for GTK 4
 gui-libs/xdg-desktop-portal-hyprland 1.3.8 1.3.9 9999: xdg-desktop-portal backend for hyprland
 gui-wm/cage 0.2.0 9999: A Wayland kiosk
 gui-wm/hyprland-contrib 0.1-r1 9999: Community-maintained extensions for hyprland
+gui-wm/labwc 0.8.1 0.8.2 9999: Openbox alternative for wayland
 gui-wm/miracle-wm 0.4.0 0.4.1: Tiling Wayland compositor based on Mir
 gui-wm/niri 0.1.10.1 25.01: Scrollable-tiling Wayland compositor
-gui-wm/phoc 0.42.1 0.43.0 0.44.0: Wayland compositor for mobile phones
+gui-wm/phoc 0.42.1 0.43.0 0.44.0 0.44.1: Wayland compositor for mobile phones
 gui-wm/river 0.3.6 0.3.7: A dynamic tiling Wayland compositor
 gui-wm/swayfx 0.4-r1: SwayFX: Sway, but with eye candy!
 kde-apps/kwalletcli 3.03: CLI for the KDE Wallet
@@ -1287,7 +1290,7 @@ media-plugins/argotlunar-bin 2.06-r2: Argotlunar is a sound granulator. Binary L
 media-plugins/dtmediawiki 9999: Wikimedia Commons export plugin for Darktable. Every upload is converted
 media-plugins/gimp-avif-plugin 9999: Plug-in for development GIMP 2.99.11 for loading/saving AVIF images.
 media-plugins/gst-plugins-qt5 1.20.3 1.22.11: Qt5 QML video sink plugin for GStreamer
-media-plugins/gst-plugins-qt6 1.22.12 1.24.10: Qt6 QML video sink plugin for GStreamer
+media-plugins/gst-plugins-qt6 1.22.12 1.24.10 1.24.11: Qt6 QML video sink plugin for GStreamer
 media-plugins/qt-heif-image-plugin 0.3.4: Qt plugin for HEIF images
 media-plugins/qt-jpegxl-image-plugin 9999: Qt plug-in to allow Qt and KDE based applications to read/write JXL images.
 media-plugins/whysynth 20170701_p20180323-r1: A software synthesizer plugin for the DSSI Soft Synth Interface
@@ -1326,7 +1329,7 @@ media-sound/pianobooster 1.0.0: A MIDI player/game that displays notes and teach
 media-sound/pipewire-module-xrdp 0.1_pre20230609-r1 0.2: PipeWire module which enables xrdp to use audio redirection
 media-sound/pulseaudio-virtualmic 0.1 9999: Use any offline or online media file or stream as a PulseAudio source
 media-sound/qloud 1.4.2: Tool to measure loudspeaker frequency and step responses and distortions
-media-sound/rsgain 3.5.1: Really Simple replay Gain calculator for tagging audio files
+media-sound/rsgain 3.5.1 3.5.3: Really Simple replay Gain calculator for tagging audio files
 media-sound/spot 0.4.0-r2: GTK4 Spotify (Premium) client
 media-sound/spotify-adblock 1.0.1 1.0.2 1.0.3: Adblocker for Spotify
 media-sound/spotify-player 0.19.1 0.20.4 9999: spotify_player is a fast, easy to use, and configurable terminal music player.
@@ -1402,7 +1405,7 @@ net-im/axolotl-bin 2.0.1: Axolotl is a cross-platform Signal client
 net-im/beeper 3.109.1 3.110.1: Beeper: Unified Messenger
 net-im/chatterino 2.5.1: Chat client for https://twitch.tv
 net-im/conduit 0.8.0-r1 0.9.0-r1 9999: Matrix homeserver written in Rust
-net-im/discord-canary-bin 0.0.549: All-in-one voice and text chat
+net-im/discord-canary-bin 0.0.574: All-in-one voice and text chat
 net-im/discord-ptb-bin 0.0.97: All-in-one voice and text chat
 net-im/eturnal 1.12.0-r1 1.12.1: STUN/TURN server
 net-im/flare 0.12.0-r1: Chat with your friends on Signal
@@ -1516,7 +1519,7 @@ net-p2p/dogecoin-qt 1.14.8 1.14.9 9999: Dogecoin Core Qt for desktop. Downloaded
 net-p2p/feather 2.6.7-r1 2.6.8 2.7.0 9999: A free, open-source Monero wallet
 net-p2p/fragments 3.0.1-r1 3.0.1-r2: Fragments is an easy to use BitTorrent client
 net-p2p/gridcoin 5.4.8.0_p1 5.4.8.0_p1-r1: Proof-of-Stake based cryptocurrency that rewards BOINC computation
-net-p2p/ipfs-desktop-bin 0.39.0: A desktop client for IPFS. The IPFS's Native Application
+net-p2p/ipfs-desktop-bin 0.39.0 0.40.0: A desktop client for IPFS. The IPFS's Native Application
 net-p2p/monero 0.18.3.4-r1 9999: The secure, private, untraceable cryptocurrency
 net-p2p/monero-gui-bin 0.18.3.4-r1: An open-source GUI wallet developed by the Monero community.
 net-p2p/p2pool 4.0 4.1.1 9999: Decentralized pool for Monero mining
@@ -1524,7 +1527,7 @@ net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
 net-p2p/yggdrasil-go 0.5.9 0.5.10 9999: An experiment in scalable routing as an encrypted IPv6 overlay network
 net-print/hpuld 1.00.39.15.00.23-r1: HP Unified Linux Driver (for samsung hardware)
 net-proxy/MTProxy 3.0.4-r1: Community fork of MTProxy
-net-proxy/byedpi 0.14.1 0.15 0.16 0.16.1 9999: Bypass DPI SOCKS proxy
+net-proxy/byedpi 0.16.1 0.16.2 9999: Bypass DPI SOCKS proxy
 net-proxy/ngrok-bin 3.19.1: ngrok is a reverse proxy, firewall, and API gateway
 net-proxy/snowflake 2.9.2 2.10.1: Pluggable Transport using WebRTC, inspired by Flashproxy
 net-voip/baresip 3.17.0 3.18.0 3.19.0: Baresip is a portable and modular SIP User-Agent
@@ -1534,7 +1537,7 @@ net-voip/re 3.17.0 3.18.0 3.19.0: Generic library for real-time communications w
 net-voip/vvmd 0.8-r1: vvmd is a lower level daemon that retrieves Visual Voicemail
 net-vpn/GlobalProtect-openconnect 2.3.9-r1: Unofficial GlobalProtect VPN client for Linux
 net-vpn/cloudflare-warp 2024.2.62-r2 2024.4.133-r1 2024.11.309: Cloudflare Warp Client
-net-vpn/fastd 22: A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
+net-vpn/fastd 22 23: A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
 net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that require SAML
 net-vpn/mullvadvpn-app 2025.2 2025.3_beta1 2025.3_beta1-r1: Tool used to manage daemon setup
 net-wireless/airspyhf 1.6.8: User mode driver for Airspy HF+
@@ -1607,6 +1610,7 @@ sci-mathematics/pyromaths 21.8.2-r1: Create maths exercises in LaTeX and PDF for
 sci-mathematics/rink 0.8.0-r1 9999: Unit conversion tool, similar to frink
 sci-mathematics/rstudio-desktop-bin 2023.09.0_p463 2023.09.1_p494: IDE for R and Python
 sci-misc/boinc-wrapper 26018-r2 26018-r3: Wrapper to use non-BOINC apps with BOINC
+sci-misc/llama-cpp 0_pre4576 9999: Port of Facebook's LLaMA model in C/C++
 sci-physics/openmodelica 1.24.0-r1: Open-source Modelica-based modeling and simulation environment
 sci-physics/ovito 3.10.4 3.10.5 3.10.5-r1: Open Visualization Tool
 sec-keys/openpgp-keys-aepaneshnikov 20221210: OpenPGP keys used by Alexander Epaneshnikov
