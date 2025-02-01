@@ -439,6 +439,15 @@ media-libs/imgui:vulkan - Enable vulkan renderer
 media-libs/imgui:webgpu - Enable webgpu renderer backend
 media-libs/libbpg:bpgview - Compile bpgview (media-libs/libsdl and media-libs/sdl-image needed)
 media-libs/libbpg:jctvc - Enable the JCTVC code (best quality but slow) for the encoder
+media-libs/libsdl3:fcitx - Enable support for app-i18n/fcitx
+media-libs/libsdl3:haptic - Enable the haptic (force feedback) subsystem
+media-libs/libsdl3:ibus - Enable support for app-i18n/ibus
+media-libs/libsdl3:joystick - Control joystick support (disable at your own risk)
+media-libs/libsdl3:kms - Build the KMSDRM video driver
+media-libs/libsdl3:pipewire - Enable support for the media-video/pipewire audio backend
+media-libs/libsdl3:sndio - Enable support for the media-sound/sndio backend
+media-libs/libsdl3:sound - Control audio support (disable at your own risk)
+media-libs/libsdl3:video - Control video support (disable at your own risk)
 media-libs/monado:X - Enable xlib/xlib-randr/xcb support
 media-libs/monado:dbus - Enable dbus support (for BLE support)
 media-libs/monado:ffmpeg - Enable ffmpeg testing video driver

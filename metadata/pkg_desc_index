@@ -106,7 +106,7 @@ app-admin/oet 0.1.9 0.1.10 0.1.11 9999: Update your system into binpkgs in an ov
 app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applications and tmux
 app-admin/pass-audit 1.2 1.2-r1: A pass extension for auditing your password repository.
 app-admin/pass-update 2.2.1: pass extension that provides an easy flow for updating passwords
-app-admin/pulumi-bin 3.144.1 3.145.0 3.146.0: Infrastructure as code in any programming language
+app-admin/pulumi-bin 3.145.0 3.146.0 3.148.0: Infrastructure as code in any programming language
 app-admin/rbw 1.11.1-r2 1.12.0-r1 1.12.1-r1 9999: Unofficial Bitwarden CLI
 app-admin/s-tui 1.1.6: Stress-Terminal UI monitoring tool
 app-admin/synadm 0.43.1 0.44: Command line admin tool for Synapse
@@ -156,7 +156,7 @@ app-crypt/lego 4.14.2 4.15.0 4.16.0 4.16.1 4.17.4 9999: Let's Encrypt/ACME clien
 app-crypt/pinentry-bemenu 0.13.2: Pinentry based on bemenu
 app-crypt/reop 2.1.1-r1: reasonable expectation of privacy
 app-crypt/sac-core 10.8.1050-r1: Thales/Gemalto SafeNet Authentication Client
-app-crypt/sops 3.9.2: Simple And Flexible Tool For Managing Secrets
+app-crypt/sops 3.9.2 3.9.4: Simple And Flexible Tool For Managing Secrets
 app-crypt/tang 14 15-r1: Tang binding daemon
 app-crypt/tomb 2.9-r6: Tomb :: File Encryption on GNU/Linux
 app-crypt/totp-cli-bin 1.8.7: Authy/Google Authenticator like TOTP CLI tool written in Go
@@ -204,7 +204,7 @@ app-eselect/eselect-ld 1.0.0: Manage the ld symlink
 app-eselect/eselect-swift 1.0: Manages Swift symlinks
 app-eselect/eselect-vala 1.0.0: Manage the valac symlink
 app-forensics/mvt 2.4.1: Forensic traces to identify a potential compromise of Android and iOS devices
-app-laptop/framework_tool 0.1.0_p20240710 0.1.0_p20240930 9999: Tool to interact with a Framework Laptop's hardware system
+app-laptop/framework_tool 0.1.0_p20240930 0.2.0_pre20250129 9999: Tool to interact with a Framework Laptop's hardware system
 app-metrics/scaphandre 0.5.0-r1: Electrical power consumption measurement agent
 app-misc/1password-cli 2.24.0: The world’s most-loved password manager CLI
 app-misc/afc 1.1 1.2 9999: Anime File Checker, checks CRC32 contained in filenames
@@ -224,7 +224,7 @@ app-misc/cheat 4.2.3 4.3.3-r1: cheat allows you to create and view interactive c
 app-misc/clifm 1.11 1.13 1.16 1.18 9999: The command line file manager
 app-misc/clipboard 0.10.0-r1: Cut, copy, and paste anything in your terminal
 app-misc/cliphist 0.6.1: Wayland clipboard manager with support for multimedia
-app-misc/corectrl 1.4.2 1.4.3 9999: Core control application
+app-misc/corectrl 1.4.3 9999: Core control application
 app-misc/cpufetch 1.05-r1: Simplistic yet fancy CPU architecture fetching tool
 app-misc/dbf 0.9.0: Command line tool to read the content of dBASE III, IV, and 5.0 files
 app-misc/diff-so-fancy 1.4.4: Good-lookin' diffs. Actually... nah... The best-lookin' diffs
@@ -265,7 +265,7 @@ app-misc/nerdfetch 8.2.1: A POSIX *nix fetch script using Nerdfonts
 app-misc/nwg-look 0.2.4 0.2.5-r1: GTK3 settings editor adapted to work in the sway / wlroots environment
 app-misc/nwg-shell-wallpapers 1.3 1.4 1.5: Selection of wallpapers contributed to the nwg-shell project
 app-misc/oddjob 0.34.7-r1: A D-Bus service which runs odd jobs on behalf of client applications
-app-misc/ollama 9999: Get up and running with Llama 3, Mistral, Gemma, and other language models.
+app-misc/ollama 0.5.7 9999: Get up and running with Llama 3, Mistral, Gemma, and other language models.
 app-misc/onefetch 2.23.1: Command-line Git information tool
 app-misc/pfetch 0.6.0 1.3.0: A pretty system information tool written in POSIX sh
 app-misc/pipes-rs 1.6.3: An over-engineered rewrite of pipes.sh in Rust
@@ -346,7 +346,7 @@ app-text/klogg 22.06.0.1289-r1: A GUI application to browse and search through l
 app-text/komikku 1.57.0 1.67.0: Manga reader for GNOME
 app-text/koodo-reader-bin 1.5.1 1.6.3: A modern ebook manager and reader with sync and backup capacities
 app-text/lchat 1.0-r2: Line oriented front end for ii-like chat programs
-app-text/lizard 1.17.10-r1 1.17.13: A simple code complexity analyser, supports most of the popular languages.
+app-text/lizard 1.17.13 1.17.14: A simple code complexity analyser, supports most of the popular languages.
 app-text/lorien-bin 0.6.0-r2: Infinite canvas drawing/whiteboarding. Made with Godot.
 app-text/lsp 0.5.0_rc4 9999: The least significant pager
 app-text/owo 0.1.0: OwO-ifies text via regex
@@ -465,6 +465,7 @@ dev-db/sqlcmd 1.8.2: The MSSQL SQLCMD CLI tool
 dev-db/tdscpp 20240707: C++ library to communicate with Microsoft SQL server
 dev-debug/gdb-dashboard 0.17.2 0.17.3: Modular visual interface for GDB in Python
 dev-debug/lldb-mi 0.0.1 9999: LLDB Machine Interface Driver
+dev-debug/uscope 9999: Native code graphical debugger and introspection toolchain
 dev-dotnet/gtk-sharp 2.99.3-r3 3.22.2-r2: gtk bindings for mono
 dev-elixir/hex 1.0.1-r1: Package manager for the Erlang VM
 dev-embedded/arduino-cli 1.0.4 1.1.1: Next-generation arduino command line tool
@@ -911,7 +912,7 @@ dev-util/catppuccin-whiskers 2.4.0: Soothing port creation tool for the high-spi
 dev-util/cmakelang 0.6.13: Provides Quality Assurance (QA) tools for cmake
 dev-util/coq-lsp 0.1.9: Visual Studio Code Extension and Language Server Protocol for Coq
 dev-util/deblob 0.8 0.9 9999: remove binary executables from a directory
-dev-util/distribution-gpg-keys 1.107: Collection of GPG keys used in Linux Distributions
+dev-util/distribution-gpg-keys 1.108: Collection of GPG keys used in Linux Distributions
 dev-util/dmg2img 9999 20201227: Convert Apple disk images to IMG format.
 dev-util/dockerfile-language-server 0.12.0 0.13.0: A language server for Dockerfiles
 dev-util/eclipse-parallel-bin 4.28: Eclipse IDE for Scientific Computing (C, C++, Fortran)
@@ -927,7 +928,7 @@ dev-util/gammaray 3.1.0: High-level runtime introspection tool for Qt applicatio
 dev-util/genTree 0.1.0 9999: Gentoo rootfs tree generator
 dev-util/git-bug 0.8.0 9999: distributed, offline-first bug tracker
 dev-util/gitlab-ci-local-bin 4.43.0 4.47.0 4.56.0: Run gitlab pipelines locally as shell executor or docker executor
-dev-util/go-task 3.38.0-r1: A task runner / simpler Make alternative written in Go
+dev-util/go-task 3.38.0-r1 3.41.0-r1: A task runner / simpler Make alternative written in Go
 dev-util/gshards 0.2: Small helper tools to aid installing Crystal packages in Gentoo
 dev-util/haredo 1.0.2 9999: a simple and unix-idiomatic build automator
 dev-util/hut 0.6.0: CLI tool for sourcehut
@@ -1034,7 +1035,7 @@ games-strategy/gigalomania 1.0.1: Libre clone of Mega-Lo-Mania (original from ~1
 games-strategy/ground-control 1011: RTS from 2000 by Massive Entertainment, without resources and buildings
 games-strategy/slay-the-spire 2.2: Deck-building roguelike game with four playable characters
 games-strategy/swine 1: Fun RTS from 2001 by Hungarian developer StormRegion, similar to Ground Control
-games-strategy/unciv-bin 4.15.2: Turn-based historical strategy game, a remake of Civ V
+games-strategy/unciv-bin 4.15.2 4.15.6_p1: Turn-based historical strategy game, a remake of Civ V
 games-strategy/zedonline-bin 0.3.2-r1: A remake of the 1996 classic game Z, with network play
 games-util/NotEnoughProduction 0.0.4: Tool for building production chains for modded minecraft
 games-util/ProtonUp-Qt 2.11.1 9999: Install and manage GE-Proton, Luxtorpeda & more for Steam Lutris and Heroic.
@@ -1255,7 +1256,7 @@ media-gfx/sic 0.22.4: Accessible image processing and conversion from the termin
 media-gfx/silicon 0.5.2-r1 0.5.2-r2 0.5.3: Create beautiful image of your code
 media-gfx/superpaper 2.2.1: Advanced multi monitor wallpaper manager
 media-gfx/svgcleaner 0.9.5: svgcleaner could help you to clean up your SVG files from the unnecessary data.
-media-gfx/swayimg 3.6 3.7: A lightweight image viewer for Wayland display servers
+media-gfx/swayimg 3.7 3.8: A lightweight image viewer for Wayland display servers
 media-gfx/timg 1.6.0: Terminal image and video viewer
 media-gfx/vimiv-qt 0.9.0-r1: An image viewer with vim-like keybindings
 media-gfx/vpuppr 0.9.0-r1: VTuber application made with Godot 3.4
@@ -1276,6 +1277,7 @@ media-libs/grok 11.0.0: World's Leading Open Source JPEG 2000 Codec
 media-libs/imgui 1.89.9-r4 1.91.1: Bloat-free graphical user interface library for C++
 media-libs/implot 0.16-r2: Immediate Mode Plotting
 media-libs/libbpg 0.9.8-r1: Better Portable Graphics reference implementation
+media-libs/libsdl3 3.2.0: Simple Direct Media Layer
 media-libs/monado 9999: The open source OpenXR runtime.
 media-libs/opencomposite 9999: OpenVR over OpenXR compatibility layer
 media-libs/openvr 1.23.8: OpenVR SDK

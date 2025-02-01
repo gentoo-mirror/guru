@@ -1,0 +1,11 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl] || ( dev-lang/zig:9999 dev-lang/zig-bin:9999 ) virtual/pkgconfig
+DEFINED_PHASES=compile configure install prepare setup test unpack
+DESCRIPTION=Native code graphical debugger and introspection toolchain
+EAPI=8
+HOMEPAGE=https://calabro.io/uscope https://github.com/jcalabro/uscope
+INHERIT=git-r3 zig
+LICENSE=MIT
+PROPERTIES=live
+SLOT=0
+_eclasses_=git-r3	875eb471682d3e1f18da124be97dcc81	multiprocessing	1e32df7deee68372153dca65f4a7c21f	edo	367e103a74bf77e6a8da7894d999fa3c	toolchain-funcs	14648d8795f7779e11e1bc7cf08b7536	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	357f1a896fbedcd06e5ce55419c49eb9	linux-info	ea4122ba1d8791a12b78e53f9510a2e3	zig-utils	2cc5a6c85266162fa5afdbc6c68f4895	zig	1dedc2f01be682d4a76e3f24b00c9252
+_md5_=a8236c7f870397af96346c2bb9a70559
