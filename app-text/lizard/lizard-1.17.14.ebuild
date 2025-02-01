@@ -17,12 +17,11 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 DEPEND="
+	dev-python/pygments[${PYTHON_USEDEP}]
 	test? (
 		dev-python/jinja2[${PYTHON_USEDEP}]
 		dev-python/mock[${PYTHON_USEDEP}]
 	)
 "
-
-PATCHES=( "${FILESDIR}/${P}-py3.11.patch" "${FILESDIR}/${P}-py3.12.patch" )
 
 distutils_enable_tests pytest
