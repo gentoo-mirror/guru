@@ -1,4 +1,4 @@
-# Copyright 2022-2024 Gentoo Authors
+# Copyright 2022-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -151,6 +151,7 @@ src_compile() {
 }
 
 src_test() {
+	xdg_environment_reset # Tests may create config files in XDG_CONFIG_HOME
 	set -- src/dosbox-x -tests
 	echo "${@}" >&2
 	"${@}" || die "Unit tests failed"

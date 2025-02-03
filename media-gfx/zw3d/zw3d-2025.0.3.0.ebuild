@@ -1,14 +1,14 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-MY_PGK_NAME="com.zwsoft.zw3dprofessional"
+MY_PGK_NAME="com.zwsoft.zw3d2025"
 inherit unpacker xdg
 
 DESCRIPTION="CAD/CAM software for 3D design and processing"
 HOMEPAGE="https://www.zwsoft.cn/product/zw3d/linux"
-SRC_URI="https://home-store-packages.uniontech.com/appstore/pool/appstore/c/${MY_PGK_NAME}/${MY_PGK_NAME}_${PV}_amd64.deb -> ${P}.deb"
+SRC_URI="signed_com.zwsoft.zw3d2025_2025.0.3.0_amd64.deb"
 
 S="${WORKDIR}"
 
@@ -16,7 +16,7 @@ LICENSE="all-rights-reserved"
 SLOT="0"
 KEYWORDS="-* ~amd64"
 
-RESTRICT="strip mirror bindist"
+RESTRICT="strip mirror bindist fetch"
 
 RDEPEND="
 	app-arch/bzip2
@@ -65,41 +65,7 @@ BDEPEND="
 
 QA_PREBUILT="*"
 
-src_compile() {
-	default
-	# Fix zw3d coredump when run
-cat >> "${T}"/zw3d.c <<- EOF || die
-#include <stdint.h>
-extern int DiModuleEntryPoint(uint64_t argc, uint64_t argv, uint64_t envp);
-int main(int argc, char* argv[], char* envp[])
-{
-return DiModuleEntryPoint((uint64_t)(uintptr_t)&argc, (uint64_t)(uintptr_t)argv, (uint64_t)(uintptr_t)envp);
-}
-	EOF
-
-TAB=$'\t'
-cat >> "${T}"/Makefile <<- EOF || die
-.PHONY: all
-all:
-${TAB}\$(CC) \$(LDFLAGS) \
--o "\$(S)/opt/apps/\$(MY_PGK_NAME)/files/zw3d" \
-zw3d.c \
--L"\$(S)/opt/apps/\$(MY_PGK_NAME)/files/lib" \
--lDrawingInstance \
--lstdc++ \
--lm \
--lgcc_s \
--Wl,--unresolved-symbols=ignore-all
-	EOF
-
-	emake S="${S}" MY_PGK_NAME="${MY_PGK_NAME}" -C "${T}" || die
-}
-
 src_install() {
-	# Install scalable icons, desktop files, mimes
-	mkdir -p "${S}"/usr/share || die
-	mv "${S}"/opt/apps/${MY_PGK_NAME}/entries/* "${S}"/usr/share || die
-
 	# Set RPATH for preserve-libs handling
 	pushd "${S}"/opt/apps/${MY_PGK_NAME}/files || die
 	local x
@@ -107,30 +73,27 @@ src_install() {
 		# Use \x7fELF header to separate ELF executables and libraries
 		[[ -f ${x} && $(od -t x1 -N 4 "${x}") == *"7f 45 4c 46"* ]] || continue
 		local RPATH_ROOT="/opt/apps/${MY_PGK_NAME}/files"
-		local RPATH_S="${RPATH_ROOT}/:${RPATH_ROOT}/lib/:${RPATH_ROOT}/lib/xlator/:${RPATH_ROOT}/lib/xlator/InterOp/:${RPATH_ROOT}/libqt/:${RPATH_ROOT}/libqt/plugins/designer/:${RPATH_ROOT}/lib3rd/:/usr/lib64/"
+		local RPATH_S="${RPATH_ROOT}/:${RPATH_ROOT}/xlator/:${RPATH_ROOT}/xlator/InterOp/:${RPATH_ROOT}/libqt/:${RPATH_ROOT}/libqt/plugins/designer/:${RPATH_ROOT}/lib3rd/:/usr/lib64/"
 		patchelf --set-rpath "${RPATH_S}" "${x}" || \
 			die "patchelf failed on ${x}"
-		# patchelf --replace-needed libMagickCore-6.Q16.so.7 libMagickCore-7.Q16.so "${x}" || \
-		# 	die "patchelf failed on ${x}"
 		patchelf --replace-needed libjbig.so.0 libjbig.so "${x}" || \
+			die "patchelf failed on ${x}"
+		patchelf --replace-needed libwebp.so.6 libwebp.so "${x}" || \
 			die "patchelf failed on ${x}"
 	done
 	popd || die
 
+	# Use system libtiff
+	rm -rf "${S}"/opt/apps/${MY_PGK_NAME}/files/lib3rd/libtiff* || die
+
 	# Fix desktop files
-	sed -E -i 's/^Exec=.*$/Exec=zw3d %F/g' "${S}/usr/share/applications/${MY_PGK_NAME}.desktop" || die
-	sed -E -i 's/^Icon=.*$/Icon=ZW3Dprofessional/g' "${S}/usr/share/applications/${MY_PGK_NAME}.desktop" || die
-	sed -E -i 's/Application;//g' "${S}/usr/share/applications/${MY_PGK_NAME}.desktop" || die
+	sed -E -i "s/^Icon=.*$/Icon=${MY_PGK_NAME}/g" "${S}/usr/share/applications/${MY_PGK_NAME}.desktop" || die
+	sed -E -i "s/Application;//g" "${S}/usr/share/applications/${MY_PGK_NAME}.desktop" || die
 
 	# Add zw3d command
 	mkdir -p "${S}"/usr/bin/ || die
 
-	cat >> "${S}"/opt/apps/${MY_PGK_NAME}/zw3d <<- EOF || die
-#!/bin/sh
-sh /opt/apps/${MY_PGK_NAME}/files/zw3drun.sh \$*
-	EOF
-
-	ln -s /opt/apps/${MY_PGK_NAME}/zw3d "${S}"/usr/bin/zw3d || die
+	ln -s /opt/apps/${MY_PGK_NAME}/files/zw3drun.sh "${S}"/usr/bin/zw3d || die
 
 	# Fix zw3d startup file
 cat >> insert.txt <<- EOF || die
@@ -146,6 +109,9 @@ export IBUS_USE_PORTAL=1
 		-e '/export LD_LIBRARY_PATH/r insert.txt' \
 		"${S}"/opt/apps/${MY_PGK_NAME}/files/zw3drun.sh || die
 
+	sed -E -i "s|^script_dir=.*$|script_dir=/opt/apps/${MY_PGK_NAME}/files|g" \
+		"${S}"/opt/apps/${MY_PGK_NAME}/files/zw3drun.sh || die
+
 	# Use system libraries
 	rm -rf "${S}"/opt/apps/${MY_PGK_NAME}/files/lib3rd/libfreetype* || die
 
@@ -154,9 +120,9 @@ export IBUS_USE_PORTAL=1
 	# and should use /usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc
 	local MY_FONT_PATH_OLD="/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc"
 	local MY_FONT_PATH_NEW="//////usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc"
-	bbe -e "s|${MY_FONT_PATH_OLD}|${MY_FONT_PATH_NEW}|" "${S}/opt/apps/${MY_PGK_NAME}/files/lib/libdisp.so" \
-		> "${S}/opt/apps/${MY_PGK_NAME}/files/lib/libdisp.so.tmp" && \
-	mv "${S}/opt/apps/${MY_PGK_NAME}/files/lib/libdisp.so.tmp" "${S}/opt/apps/${MY_PGK_NAME}/files/lib/libdisp.so" || die
+	bbe -e "s|${MY_FONT_PATH_OLD}|${MY_FONT_PATH_NEW}|" "${S}/opt/apps/${MY_PGK_NAME}/files/libdisp.so" \
+		> "${S}/opt/apps/${MY_PGK_NAME}/files/libdisp.so.tmp" && \
+	mv "${S}/opt/apps/${MY_PGK_NAME}/files/libdisp.so.tmp" "${S}/opt/apps/${MY_PGK_NAME}/files/libdisp.so" || die
 
 	# Install package and fix permissions
 	insinto /opt/apps
@@ -164,7 +130,7 @@ export IBUS_USE_PORTAL=1
 	insinto /usr
 	doins -r usr/*
 
-	fperms 0755 /opt/apps/${MY_PGK_NAME}/zw3d
+	fperms 0755 /opt/apps/${MY_PGK_NAME}/files/zw3drun.sh
 
 	pushd "${S}" || die
 	for x in $(find "opt/apps/${MY_PGK_NAME}") ; do
@@ -174,4 +140,10 @@ export IBUS_USE_PORTAL=1
 		[[ -f ${x} && $(od -t x1 -N 4 "${x}") == *"7f 45 4c 46"* ]] && fperms 0755 "/${x}"
 	done
 	popd || die
+}
+
+pkg_nofetch() {
+	einfo "Please download the installation file ${SRC_URI}"
+	einfo "and place the file in your DISTDIR directory."
+	einfo "Note that to actually run and use ${P} you need a valid license."
 }

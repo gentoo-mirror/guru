@@ -29,8 +29,8 @@ else
 	KEYWORDS="~amd64"
 fi
 
-# CC-BY-SA-4.0 for soundpack
-LICENSE="Apache-2.0 CC-BY-SA-3.0 CC-BY-SA-4.0 MIT OFL-1.1 Unicode-3.0"
+# NOTE: Add BSD license on bump
+LICENSE="CC-BY-SA-3.0 Apache-2.0 soundpack? ( CC-BY-SA-4.0 ) MIT OFL-1.1 Unicode-3.0"
 IUSE="debug doc ncurses nls +sound +soundpack test +tiles"
 REQUIRED_USE="soundpack? ( sound ) sound? ( tiles ) \
 	|| ( tiles ncurses )"
@@ -51,9 +51,10 @@ RDEPEND="
 DEPEND="${RDEPEND}"
 BDEPEND="
 	doc? ( app-text/doxygen[dot] )
-	soundpack? ( app-arch/unzip )
 	nls? ( sys-devel/gettext )
 	"
+
+[[ ${PV} != 9999 ]] && BDEPEND+=" soundpack? ( app-arch/unzip )"
 
 src_unpack() {
 	if [[ ${PV} == 9999 ]]; then
@@ -92,12 +93,15 @@ src_prepare() {
 		"src/translation_manager_impl.cpp" \
 		"tests/translation_system_test.cpp" || die
 
+	sed -i "s#data#${EPREFIX}/usr/share/${PN}-${SLOT}#" \
+		"data/fontdata.json" || die
+
 	# from upstream 1ab7d17
 	# NOTE: remove when bumping
-	sed -i -e "s/const size_type/size_type/" \
+	sed -i "s/const size_type/size_type/" \
 		"src/third-party/flatbuffers/stl_emulation.h" || die
 
-	sed -i -e "s/cataclysm-tiles/cataclysm-tiles-${SLOT}/g" \
+	sed -i "s/cataclysm-tiles/cataclysm-tiles-${SLOT}/g" \
 		"data/xdg/org.cataclysmdda.CataclysmDDA.desktop" || die
 
 	local f="org.cataclysmdda.CataclysmDDA"
@@ -113,7 +117,6 @@ src_compile() {
 	myemakeargs=(
 		BACKTRACE=$(usex debug 1 0)
 		CXX="$(tc-getCXX)"
-		DESTDIR="${D}"
 		LINTJSON=0
 		PCH=0
 		PREFIX="${EPREFIX}/usr"
@@ -152,6 +155,7 @@ src_install() {
 		"TILES=$(usex tiles 1 0)" \
 		"SOUND=$(usex sound 1 0)" \
 		"${myemakeargs[@]}" \
+		DESTDIR="${D}" \
 		install
 
 	[[ -e "${WORKDIR}/cataclysm-${SLOT}" ]] && dobin "${WORKDIR}/cataclysm-${SLOT}"
