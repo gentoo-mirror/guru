@@ -8,8 +8,9 @@ INHERIT=cmake
 IUSE=static-libs test
 KEYWORDS=~amd64 ~arm64
 LICENSE=MIT
+RDEPEND=dev-lang/go dev-libs/ls-qpack:=[static-libs=] dev-libs/ls-hpack:=[static-libs=] sys-libs/zlib
 RESTRICT=!test? ( test )
 SLOT=0
-SRC_URI=https://github.com/litespeedtech/lsquic/archive/refs/tags/v4.0.8.tar.gz -> lsquic-4.0.8.tar.gz https://github.com/google/boringssl/archive/15655052e8701f908937204785eaa8cd4363099f.tar.gz -> boringssl-fips-20230428.tar.gz
+SRC_URI=https://github.com/litespeedtech/lsquic/archive/refs/tags/v4.0.12.tar.gz -> lsquic-4.0.12.tar.gz https://github.com/google/boringssl/archive/9fc1c33e9c21439ce5f87855a6591a9324e569fd.tar.gz -> boringssl-9fc1c.tar.gz
 _eclasses_=toolchain-funcs	14648d8795f7779e11e1bc7cf08b7536	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	357f1a896fbedcd06e5ce55419c49eb9	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	10a50dfaf728b802fcfd37f8d0da9056
-_md5_=64c7bdb33c0f8cfc1786b2587734ec80
+_md5_=7c97448054fefb47bad807c70760fbf9
