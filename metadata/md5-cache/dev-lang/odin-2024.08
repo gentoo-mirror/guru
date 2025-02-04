@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install setup
-DEPEND=llvm_slot_17? ( llvm-core/clang:= llvm-core/llvm:= ) llvm_slot_18? ( llvm-core/clang:= llvm-core/llvm:= )
+DEPEND=llvm_slot_17? ( llvm-core/clang:17= llvm-core/llvm:17= ) llvm_slot_18? ( llvm-core/clang:18= llvm-core/llvm:18= )
 DESCRIPTION=The Data-Oriented Language for Sane Software Development.
 EAPI=8
 HOMEPAGE=https://odin-lang.org/
@@ -7,9 +7,9 @@ INHERIT=llvm-r1
 IUSE=+llvm_slot_18 llvm_slot_17
 KEYWORDS=~amd64
 LICENSE=BSD
-RDEPEND=llvm_slot_17? ( llvm-core/clang:= llvm-core/llvm:= ) llvm_slot_18? ( llvm-core/clang:= llvm-core/llvm:= )
+RDEPEND=llvm_slot_17? ( llvm-core/clang:17= llvm-core/llvm:17= ) llvm_slot_18? ( llvm-core/clang:18= llvm-core/llvm:18= )
 REQUIRED_USE=^^ ( llvm_slot_17 llvm_slot_18 )
 SLOT=0
 SRC_URI=https://github.com/odin-lang/Odin/archive/refs/tags/dev-2024-08.tar.gz
 _eclasses_=llvm-utils	7f49c40879f833f9d07e2d5a9643077b	llvm-r1	0bd586d3786517cd63802a520b404dda
-_md5_=2066386b0ff0646370450e8bf1ac5e2a
+_md5_=a6d97b957e7532a7f508608e28bfe742
