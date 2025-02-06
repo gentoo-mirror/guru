@@ -99,12 +99,15 @@ fi
 
 src_configure() {
 	if [[ ${PV} == 9999 ]]; then
-		GIT_DESC=$(git describe --always)
+		GIT_DESC=$(git describe --tags --always)
+		GIT_COMMIT=$(git rev-parse HEAD)
 	else
-		GIT_DESC=${PV}
+		GIT_DESC=v${PV}
+		GIT_COMMIT=v${PV}
 	fi
 	local mycmakeargs=(
 		-DGIT_DESC=${GIT_DESC}
+		-DGIT_COMMIT=${GIT_COMMIT}
 		-DWIVRN_BUILD_CLIENT=OFF
 		-DWIVRN_BUILD_SERVER=ON
 		-DWIVRN_OPENXR_MANIFEST_TYPE=relative

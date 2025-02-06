@@ -7,21 +7,26 @@ The network and squashfs tests won't work within portage. Disable them.
 
 Signed-off-by: Kurt Kanzenbach <kurt@kmk-computers.de>
 ---
- test/meson.build |    5 -----
- 1 file changed, 5 deletions(-)
+ test/meson.build |    6 ------
+ 1 file changed, 6 deletions(-)
 
 --- a/test/meson.build
 +++ b/test/meson.build
-@@ -9,7 +9,6 @@ tests = [
+@@ -6,12 +6,10 @@ tests = [
+   'artifacts',
+   'boot_raw_fallback',
+   'bootchooser',
+-  'bundle',
+   'checksum',
    'config_file',
    'context',
    'dm',
 -  'event_log',
    'hash_index',
+   'install',
    'manifest',
-   'signature',
-@@ -24,10 +23,6 @@ tests = [
-   'stats',
+@@ -25,10 +23,6 @@ tests = [
+   'utils',
  ]
  
 -if get_option('network')

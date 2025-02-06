@@ -13,9 +13,9 @@ if [[ ${PV} == 9999 ]]; then
 	inherit git-r3
 else
 	SRC_URI="
-		https://github.com/yggdrasil-network/yggdrasil-go/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
-		https://codeberg.org/BratishkaErik/distfiles/releases/download/yggdrasil-go-${PV}/yggdrasil-go-${PV}-vendor.tar.xz
+		https://github.com/yggdrasil-network/yggdrasil-go/releases/download/v${PV}/yggdrasil-${PV}-vendored.tar.gz
 	"
+	S="${WORKDIR}"
 	KEYWORDS="~amd64 ~arm64"
 fi
 
