@@ -1,4 +1,4 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -47,11 +47,15 @@ EGO_SUM=(
 	"golang.org/x/sync v0.8.0/go.mod"
 	"golang.org/x/sync v0.9.0"
 	"golang.org/x/sync v0.9.0/go.mod"
+	"golang.org/x/sync v0.10.0"
+	"golang.org/x/sync v0.10.0/go.mod"
 	"golang.org/x/sys v0.0.0-20220715151400-c0bba94af5f8/go.mod"
 	"golang.org/x/sys v0.26.0"
 	"golang.org/x/sys v0.26.0/go.mod"
 	"golang.org/x/sys v0.27.0"
 	"golang.org/x/sys v0.27.0/go.mod"
+	"golang.org/x/sys v0.29.0"
+	"golang.org/x/sys v0.29.0/go.mod"
 	"gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod"
 	"gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c/go.mod"
 	"gopkg.in/yaml.v3 v3.0.1"
@@ -61,7 +65,7 @@ go-module_set_globals
 
 DESCRIPTION="Application drawer for wlroots-based Wayland compositors"
 HOMEPAGE="https://github.com/nwg-piotr/nwg-drawer"
-SRC_URI="https://github.com/nwg-piotr/nwg-drawer/archive/${PV}.tar.gz -> ${P}.tar.gz
+SRC_URI="https://github.com/nwg-piotr/nwg-drawer/archive/v${PV}.tar.gz -> ${P}.tar.gz
 	${EGO_SUM_SRC_URI}"
 
 LICENSE="MIT"

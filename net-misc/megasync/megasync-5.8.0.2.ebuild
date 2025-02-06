@@ -11,8 +11,8 @@ HOMEPAGE="
 	https://github.com/meganz/MEGAsync
 "
 
-MEGA_SDK_REV="81f2d1cde975859ff264c66b808cfa855f79ae82" # commit of src/MEGASync/mega submodule
-MEGA_TAG_SUFFIX="Win"
+MEGA_SDK_REV="ddaaf5e587055897f3054a52d4a6dc74d52bb732" # commit of src/MEGASync/mega submodule
+MEGA_TAG_SUFFIX="Linux"
 SRC_URI="
 	https://github.com/meganz/MEGAsync/archive/v${PV}_${MEGA_TAG_SUFFIX}.tar.gz -> ${P}.tar.gz
 	https://github.com/meganz/sdk/archive/${MEGA_SDK_REV}.tar.gz -> ${PN}-sdk-${PV}.tar.gz
@@ -79,10 +79,10 @@ BDEPEND="
 PATCHES=(
 	"${FILESDIR}/${PN}-4.10.0.0_ffmpeg6.patch"
 	"${FILESDIR}/${PN}-5.6.0.0-remove-clang-format.patch"
-	"${FILESDIR}/${P}-disable-forced-options.patch"
-	"${FILESDIR}/${P}-fix-install-dir.patch"
-	"${FILESDIR}/${P}-link-zlib.patch"
-	"${FILESDIR}/${P}-rename-libcryptopp.patch"
+	"${FILESDIR}/${PN}-5.7.0.0-disable-forced-options.patch"
+	"${FILESDIR}/${PN}-5.7.0.0-fix-install-dir.patch"
+	"${FILESDIR}/${PN}-5.7.0.0-link-zlib.patch"
+	"${FILESDIR}/${PN}-5.7.0.0-rename-libcryptopp.patch"
 )
 
 nemo_run() {

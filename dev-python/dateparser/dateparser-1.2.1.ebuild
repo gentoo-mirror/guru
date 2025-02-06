@@ -1,4 +1,4 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -31,22 +31,28 @@ BDEPEND="test? (
 	dev-python/parameterized[${PYTHON_USEDEP}]
 )"
 
-PATCHES=( "${FILESDIR}/${P}-migrate-hijridate.patch" )
-
-EPYTEST_IGNORE=(
-	# tests that require network
-	tests/test_dateparser_data_integrity.py
-)
-
-EPYTEST_DESELECT=(
-	# tests that require network
-	tests/test_language_detect.py::CustomLangDetectParserTest::test_custom_language_detect_fast_text_{0,1}
-)
-
 distutils_enable_tests pytest
 
 distutils_enable_sphinx docs \
 	dev-python/sphinx-rtd-theme
+
+python_test() {
+	# Need to set TZ when testing with gentoo docker images.
+	# Their /etc/{timezone,localtime} are inconsistent, which causes
+	# to tests to fail.
+	local -x TZ=UTC
+
+	local EPYTEST_IGNORE=(
+		# tests that require network
+		tests/test_dateparser_data_integrity.py
+	)
+	local EPYTEST_DESELECT=(
+		# tests that require network
+		tests/test_language_detect.py::CustomLangDetectParserTest::test_custom_language_detect_fast_text_{0,1}
+	)
+
+	epytest
+}
 
 pkg_postinst() {
 	optfeature "calendars support" "dev-python/hijridate dev-python/convertdate"
