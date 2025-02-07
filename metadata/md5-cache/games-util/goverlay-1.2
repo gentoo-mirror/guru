@@ -1,13 +1,14 @@
-DEFINED_PHASES=compile postinst postrm prepare
-DEPEND=dev-lang/lazarus
-DESCRIPTION=Graphical UI to help manage Linux overlays.
+BDEPEND=>=dev-lang/lazarus-3.0[qt6]
+DEFINED_PHASES=compile postinst postrm preinst prepare
+DESCRIPTION=Graphical UI to help manage Linux game overlays (MangoHud).
 EAPI=8
 HOMEPAGE=https://github.com/benjamimgois/goverlay
-INHERIT=xdg-utils
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=xdg
 KEYWORDS=~amd64
 LICENSE=GPL-3
-RDEPEND=dev-lang/lazarus games-util/mangohud
+RDEPEND=games-util/mangohud
 SLOT=0
 SRC_URI=https://github.com/benjamimgois/goverlay/archive/refs/tags/1.2.tar.gz -> goverlay-1.2.gh.tar.gz
-_eclasses_=xdg-utils	42869b3c8d86a70ef3cf75165a395e09
-_md5_=41d294c0e9241421bedc4d4a6b14f361
+_eclasses_=xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575
+_md5_=3a36a3f90b77072c92d93b2719369b11
