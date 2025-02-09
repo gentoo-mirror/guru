@@ -1,0 +1,16 @@
+BDEPEND=>=dev-lang/go-1.20:= app-arch/unzip
+DEFINED_PHASES=compile install postinst postrm preinst unpack
+DEPEND=dev-libs/glib media-libs/fontconfig media-libs/freetype media-libs/harfbuzz x11-apps/xcur2png x11-libs/cairo x11-libs/gdk-pixbuf x11-libs/gtk+:3 x11-libs/pango
+DESCRIPTION=GTK settings editor adapted to work on wlroots-based compositors
+EAPI=8
+HOMEPAGE=https://github.com/nwg-piotr/nwg-look
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=desktop go-module xdg
+KEYWORDS=~amd64
+LICENSE=MIT
+RDEPEND=dev-libs/glib media-libs/fontconfig media-libs/freetype media-libs/harfbuzz x11-apps/xcur2png x11-libs/cairo x11-libs/gdk-pixbuf x11-libs/gtk+:3 x11-libs/pango
+RESTRICT=strip
+SLOT=0
+SRC_URI=https://github.com/nwg-piotr/nwg-look/archive/refs/tags/v1.0.2.tar.gz -> nwg-look-1.0.2.tar.gz https://slackware.lngn.net/pub/source/nwg-look/nwg-look-vendor-1.0.2.tar.xz
+_eclasses_=desktop	3a72ffe0d8e1dd73af3a1c8c15a59fed	multiprocessing	1e32df7deee68372153dca65f4a7c21f	toolchain-funcs	14648d8795f7779e11e1bc7cf08b7536	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	357f1a896fbedcd06e5ce55419c49eb9	go-env	90efbc8636d2f02d9654183330e84cf7	go-module	df32d29550d40a92da723d3b8e17b467	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575
+_md5_=4f59d76b293ecf08e2979475b0a7aaf9

@@ -179,7 +179,7 @@ app-editors/l3afpad 0.8.18.1.11: Simple GTK3 text editor (successor to leafpad)
 app-editors/lapce 0.4.2-r1 9999: Lightning-fast and Powerful Code Editor written in Rust
 app-editors/mined 2015.25: A powerful text editor with extensive Unicode and CJK support
 app-editors/neovide 0.12.2: Neovide: No Nonsense Neovim Gui
-app-editors/neovim-qt 0.2.17-r1 0.2.18-r1: Neovim client library and GUI, in Qt
+app-editors/neovim-qt 0.2.19: Neovim client library and GUI, in Qt
 app-editors/notepadnext 0.8_p20240828 0.9 0.9_p20241128: A cross-platform reimplementation of Notepad++ based on Qt
 app-editors/pulsar-bin 1.124.0 1.125.0: A Community-led Hyper-Hackable Text Editor
 app-editors/typora-bin 1.8.10: a markdown editor,markdown reader.
@@ -261,11 +261,11 @@ app-misc/mobile-datovka 1.10.0: Mobile optimized GUI to access the Czech data bo
 app-misc/morgen 3.6.3: Morgen simplifies time management by consolidating all your calendars.
 app-misc/navi 2.23.0: An interactive cheatsheet tool for the command-line
 app-misc/neo 0.6.1 9999: cmatrix clone with 32-bit color and Unicode support
-app-misc/nerdfetch 8.2.1: A POSIX *nix fetch script using Nerdfonts
-app-misc/nwg-look 0.2.4 0.2.5-r1: GTK3 settings editor adapted to work in the sway / wlroots environment
+app-misc/nerdfetch 8.3.1: A POSIX *nix fetch script using Nerdfonts
+app-misc/nwg-look 0.2.4 0.2.5-r1 1.0.2: GTK settings editor adapted to work on wlroots-based compositors
 app-misc/nwg-shell-wallpapers 1.3 1.4 1.5: Selection of wallpapers contributed to the nwg-shell project
 app-misc/oddjob 0.34.7-r1: A D-Bus service which runs odd jobs on behalf of client applications
-app-misc/ollama 0.5.7 9999: Get up and running with Llama 3, Mistral, Gemma, and other language models.
+app-misc/ollama 0.5.7-r1 9999: Get up and running with Llama 3, Mistral, Gemma, and other language models.
 app-misc/onefetch 2.23.1: Command-line Git information tool
 app-misc/pfetch 0.6.0 1.3.0: A pretty system information tool written in POSIX sh
 app-misc/pipes-rs 1.6.3: An over-engineered rewrite of pipes.sh in Rust
@@ -396,7 +396,7 @@ dev-build/fpm 0.9.0 0.10.0: Fortran Package Manager (fpm)
 dev-build/fypp 3.1 3.2: Fypp - Python powered Fortran preprocessor
 dev-build/pdpmake 2.0.3: Public domain POSIX make
 dev-build/qtilitools 0.1.2: Scripts/commands used in the Qtilities organization
-dev-build/xmake 2.9.7 9999: A cross-platform build utility based on Lua
+dev-build/xmake 2.9.8 9999: A cross-platform build utility based on Lua
 dev-cpp/blurhash 0.2.0 0.2.0-r1: C++ blurhash encoder/decoder
 dev-cpp/coeurl 0.3.0 0.3.1: A simple async wrapper around CURL for C++
 dev-cpp/cpp-jwt 1.5_pre20220727: JSON Web Token library for C++
@@ -916,7 +916,7 @@ dev-util/catppuccin-whiskers 2.4.0: Soothing port creation tool for the high-spi
 dev-util/cmakelang 0.6.13: Provides Quality Assurance (QA) tools for cmake
 dev-util/coq-lsp 0.1.9: Visual Studio Code Extension and Language Server Protocol for Coq
 dev-util/deblob 0.8 0.9 9999: remove binary executables from a directory
-dev-util/distribution-gpg-keys 1.108: Collection of GPG keys used in Linux Distributions
+dev-util/distribution-gpg-keys 1.109: Collection of GPG keys used in Linux Distributions
 dev-util/dmg2img 9999 20201227: Convert Apple disk images to IMG format.
 dev-util/dockerfile-language-server 0.12.0 0.13.0: A language server for Dockerfiles
 dev-util/eclipse-parallel-bin 4.28: Eclipse IDE for Scientific Computing (C, C++, Fortran)
@@ -1291,7 +1291,7 @@ media-libs/raylib 5.0 9999: A simple and easy-to-use library to learn videogames
 media-libs/svt-vp9 0.3.0 9999: Scalable Video Technology for VP9 (SVT-VP9 Encoder)
 media-libs/vvdec 2.3.0: VVdeC, the Fraunhofer Versatile Video Decoder
 media-libs/vvenc 1.11.1: VVenC, the Fraunhofer Versatile Video Encoder
-media-libs/wivrn 0.22-r1 9999: WiVRn OpenXR streaming
+media-libs/wivrn 0.22-r1 0.23 9999: WiVRn OpenXR streaming
 media-plugins/alsa-sndio 0.2: ALSA PCM to play audio on sndio servers
 media-plugins/argotlunar-bin 2.06-r2: Argotlunar is a sound granulator. Binary Linux VST
 media-plugins/dtmediawiki 9999: Wikimedia Commons export plugin for Darktable. Every upload is converted
@@ -1639,7 +1639,7 @@ sys-apps/bat-extras 2023.09.19-r2 9999: Bash scripts that integrate bat with var
 sys-apps/bustd 0.1.1: Process killer daemon for out-of-memory scenarios
 sys-apps/colortail 0.3.3 9999: tail command with colors
 sys-apps/corefreq 1.96.3: CPU monitoring software designed for the 64-bits Processors, like top
-sys-apps/dnf5 5.2.7.0 5.2.8.1: Command-line package manager
+sys-apps/dnf5 5.2.10.0: Command-line package manager
 sys-apps/dool 1.3.1-r1 1.3.2-r2 9999: Versatile replacement for vmstat, iostat and ifstat (clone of dstat)
 sys-apps/drm_info 2.7.0: Small utility to dump info about DRM devices
 sys-apps/flashprog 1.2: Utility for identifying, reading, writing, verifying and erasing flash chips.
@@ -1651,7 +1651,7 @@ sys-apps/loclone 0.1.0: A tool for creating CoW snapshots on XFS
 sys-apps/lr 1.6: list files, recursively
 sys-apps/lsplug 6: Replacement for lsusb that shows more useful info and less useless info
 sys-apps/mission-center 0.4.4-r3 0.5.2-r2: Monitor your CPU, Memory, Disk, Network and GPU usage.
-sys-apps/nvimpager 0.12.0: Use nvim as a pager to view manpages, diff, etc with nvim's syntax highlighting.
+sys-apps/nvimpager 0.13.0: Use nvim as a pager to view manpages, diff, etc with nvim's syntax highlighting.
 sys-apps/openSeaChest 23.12 24.08.1: SeaGate's open source harddrive control utilities
 sys-apps/ov 0.11.2 0.32.0: Feature-rich terminal pager
 sys-apps/pnpm-bin 9.12.3 9.15.5 10.2.0: Fast, disk space efficient package manager, alternative to npm and yarn

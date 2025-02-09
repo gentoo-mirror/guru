@@ -1,16 +1,15 @@
-BDEPEND=>=dev-lang/go-1.23.4 >=dev-build/cmake-3.24 >=sys-devel/gcc-11.4.0 cuda? ( dev-util/nvidia-cuda-toolkit ) video_cards_amdgpu? ( =sci-libs/hipBLAS-6.1* ) >=dev-vcs/git-1.8.2.1[curl] >=dev-lang/go-1.20:= app-arch/unzip
-DEFINED_PHASES=compile install postinst preinst prepare pretend unpack
+BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.20.5 >=dev-lang/go-1.20:= app-arch/unzip >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile configure install postinst preinst prepare test unpack
+DEPEND=cuda? ( dev-util/nvidia-cuda-toolkit:= ) blas? ( !mkl? ( virtual/blas ) mkl? ( sci-libs/mkl ) ) rocm? ( >=sci-libs/hipBLAS-6.1:=[amdgpu_targets_gfx906(-)?,amdgpu_targets_gfx908(-)?,amdgpu_targets_gfx90a(-)?,amdgpu_targets_gfx942(-)?,amdgpu_targets_gfx1030(-)?,amdgpu_targets_gfx1100(-)?,amdgpu_targets_gfx803(-)?,amdgpu_targets_gfx900(-)?,amdgpu_targets_gfx940(-)?,amdgpu_targets_gfx941(-)?,amdgpu_targets_gfx1010(-)?,amdgpu_targets_gfx1011(-)?,amdgpu_targets_gfx1012(-)?,amdgpu_targets_gfx1031(-)?,amdgpu_targets_gfx1101(-)?,amdgpu_targets_gfx1102(-)?] ) >=dev-lang/go-1.23.4
 DESCRIPTION=Get up and running with Llama 3, Mistral, Gemma, and other language models.
 EAPI=8
 HOMEPAGE=https://ollama.com
-IDEPEND=acct-group/ollama acct-user/ollama
-INHERIT=git-r3 go-module rocm
-IUSE=cuda video_cards_amdgpu cpu_flags_x86_avx cpu_flags_x86_avx2 cpu_flags_x86_avx512f cpu_flags_x86_avx512vbmi cpu_flags_x86_avx512_vnni cpu_flags_x86_avx512_bf16 +amdgpu_targets_gfx906 +amdgpu_targets_gfx908 +amdgpu_targets_gfx90a +amdgpu_targets_gfx942 +amdgpu_targets_gfx1030 +amdgpu_targets_gfx1100 amdgpu_targets_gfx803 amdgpu_targets_gfx900 amdgpu_targets_gfx940 amdgpu_targets_gfx941 amdgpu_targets_gfx1010 amdgpu_targets_gfx1011 amdgpu_targets_gfx1012 amdgpu_targets_gfx1031 amdgpu_targets_gfx1101 amdgpu_targets_gfx1102
+INHERIT=cuda rocm cmake go-module toolchain-funcs git-r3
+IUSE=cpu_flags_x86_avx cpu_flags_x86_f16c cpu_flags_x86_avx2 cpu_flags_x86_fma3 cpu_flags_x86_avx512f cpu_flags_x86_avx512vbmi cpu_flags_x86_avx512_vnni cpu_flags_x86_avx512_bf16 cpu_flags_x86_avx_vnni cpu_flags_x86_amx_tile cpu_flags_x86_amx_int8 cuda blas mkl rocm +amdgpu_targets_gfx906 +amdgpu_targets_gfx908 +amdgpu_targets_gfx90a +amdgpu_targets_gfx942 +amdgpu_targets_gfx1030 +amdgpu_targets_gfx1100 amdgpu_targets_gfx803 amdgpu_targets_gfx900 amdgpu_targets_gfx940 amdgpu_targets_gfx941 amdgpu_targets_gfx1010 amdgpu_targets_gfx1011 amdgpu_targets_gfx1012 amdgpu_targets_gfx1031 amdgpu_targets_gfx1101 amdgpu_targets_gfx1102
 LICENSE=MIT
 PROPERTIES=live
-RDEPEND=acct-group/ollama acct-user/ollama
-REQUIRED_USE=cpu_flags_x86_avx2? ( cpu_flags_x86_avx ) cpu_flags_x86_avx512f? ( cpu_flags_x86_avx2 ) cpu_flags_x86_avx512vbmi? ( cpu_flags_x86_avx512f ) cpu_flags_x86_avx512_vnni? ( cpu_flags_x86_avx512f ) cpu_flags_x86_avx512_bf16? ( cpu_flags_x86_avx512f )
+RDEPEND=cuda? ( dev-util/nvidia-cuda-toolkit:= ) blas? ( !mkl? ( virtual/blas ) mkl? ( sci-libs/mkl ) ) rocm? ( >=sci-libs/hipBLAS-6.1:=[amdgpu_targets_gfx906(-)?,amdgpu_targets_gfx908(-)?,amdgpu_targets_gfx90a(-)?,amdgpu_targets_gfx942(-)?,amdgpu_targets_gfx1030(-)?,amdgpu_targets_gfx1100(-)?,amdgpu_targets_gfx803(-)?,amdgpu_targets_gfx900(-)?,amdgpu_targets_gfx940(-)?,amdgpu_targets_gfx941(-)?,amdgpu_targets_gfx1010(-)?,amdgpu_targets_gfx1011(-)?,amdgpu_targets_gfx1012(-)?,amdgpu_targets_gfx1031(-)?,amdgpu_targets_gfx1101(-)?,amdgpu_targets_gfx1102(-)?] ) acct-group/ollama acct-user/ollama
 RESTRICT=strip
 SLOT=0
-_eclasses_=git-r3	875eb471682d3e1f18da124be97dcc81	multiprocessing	1e32df7deee68372153dca65f4a7c21f	toolchain-funcs	14648d8795f7779e11e1bc7cf08b7536	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	357f1a896fbedcd06e5ce55419c49eb9	go-env	90efbc8636d2f02d9654183330e84cf7	go-module	df32d29550d40a92da723d3b8e17b467	rocm	826765f795a41b937d1bfe8e709346cd
-_md5_=b490350b7e2d7244593bb37fcaa8290d
+_eclasses_=toolchain-funcs	14648d8795f7779e11e1bc7cf08b7536	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	357f1a896fbedcd06e5ce55419c49eb9	cuda	283d0f298f6c196c755a0f8d50daca85	rocm	826765f795a41b937d1bfe8e709346cd	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	10a50dfaf728b802fcfd37f8d0da9056	go-env	90efbc8636d2f02d9654183330e84cf7	go-module	df32d29550d40a92da723d3b8e17b467	git-r3	875eb471682d3e1f18da124be97dcc81
+_md5_=ecbc8fd79e2d44f4f56b856d873a1e99

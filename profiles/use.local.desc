@@ -82,6 +82,8 @@ app-misc/kanata:cmd - Enable potentially dangerous "cmd" action to be able run a
 app-misc/kloak:apparmor - Install AppArmor profile
 app-misc/kloak:systemd - Install systemd service file
 app-misc/ollama:cuda - Enable NVIDIA CUDA support
+app-misc/ollama:mkl - Use sci-libs/mkl for blas, lapack and sparse blas routines
+app-misc/ollama:rocm - Enable ROCm gpu computing support
 app-misc/tinyfetch:pci - Enables the use of pciutils to detect GPU names
 app-misc/wlx-overlay-s:openvr - Support Valve's SteamVR SDK.
 app-misc/wlx-overlay-s:openxr - Support Khronos Group's OpenXR API.
@@ -668,6 +670,7 @@ sci-biology/cmdock:apidoc - Build API documentation using app-text/doxygen
 sci-biology/cmdock:boinc - Use CmDock with SiDock@home BOINC project
 sci-mathematics/frama-c-aorai:eva - Build support for the Eva plugin
 sys-apps/bustd:glob - Enable excluding processes with glob patterns
+sys-apps/dnf5:appstream - Build an appstream metadata plugin
 sys-apps/drm_info:pci - Print PCI device names via libpci
 sys-apps/fselect:users - Add support for getting system users and groups
 sys-apps/lact:libadwaita - Build GUI with gui-libs/libadwaita support
