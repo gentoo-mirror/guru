@@ -1,4 +1,4 @@
-# Copyright 2020-2024 Gentoo Authors
+# Copyright 2020-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -32,4 +32,10 @@ src_compile() { :; }
 
 src_install() {
 	emake DESTDIR="${D}" PREFIX="${EPREFIX}/usr" install
+}
+
+src_test() {
+	# some tests are broken on neovim-0.10.0
+	# https://github.com/lucc/nvimpager/issues/99
+	emake test BUSTED='busted --exclude-tags=nix,v10'
 }

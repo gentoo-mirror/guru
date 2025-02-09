@@ -1,4 +1,4 @@
-# Copyright 2024 Gentoo Authors
+# Copyright 2024-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -12,8 +12,7 @@ SRC_URI="https://github.com/rpm-software-management/dnf5/archive/refs/tags/${PV}
 LICENSE="GPL-2+ LGPL-2.1+"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="nls systemd test"
-PROPERTIES="test_network"
+IUSE="appstream nls systemd test"
 RESTRICT="!test? ( test )"
 
 RDEPEND="
@@ -29,11 +28,11 @@ RDEPEND="
 	dev-libs/libxml2
 	sys-apps/util-linux
 	>=sys-libs/libmodulemd-2.11.2
+	appstream? ( >=dev-libs/appstream-0.16:= )
 	systemd? ( sys-apps/systemd:= )
 "
 DEPEND="${RDEPEND}"
 BDEPEND="
-	dev-python/breathe
 	dev-python/sphinx
 	virtual/pkgconfig
 	test? (
@@ -46,8 +45,6 @@ BDEPEND="
 PATCHES=(
 	# Prevent test suite from writing to system files.
 	"${FILESDIR}/${PN}-5.2.5.0-sandbox-test.patch"
-	# bug #939518
-	"${FILESDIR}/${PN}-5.2.6.0-remove-buggy-tests.patch"
 )
 
 src_prepare() {
@@ -55,7 +52,9 @@ src_prepare() {
 	# Replace hardcoded TMPDIR.
 	sed -i "s|/tmp/|${T}/|" test/libdnf5/utils/test_fs.cpp || die
 	# remove -Werror{,=unused-result}; bug 936870
-	sed 's/-Werror[^[:space:])]*//' -i CMakeLists.txt || die
+	sed -i 's/-Werror[^[:space:])]*//' CMakeLists.txt || die
+	# breathe is only needed for api doc
+	sed -i "/'breathe',/d" doc/conf.py.in || die
 }
 
 src_configure() {
@@ -65,6 +64,7 @@ src_configure() {
 		-DWITH_PYTHON3=OFF
 		-DWITH_RUBY=OFF
 		-DWITH_ZCHUNK=OFF
+		-DWITH_PLUGIN_APPSTREAM=$(usex appstream)
 		-DWITH_SYSTEMD=$(usex systemd)
 		-DWITH_TESTS=$(usex test)
 		-DWITH_TRANSLATIONS=$(usex nls)
