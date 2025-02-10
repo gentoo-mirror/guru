@@ -90,7 +90,7 @@ app-admin/bitwarden-cli-bin 2024.2.1 2024.3.1 2024.4.0 2024.6.0: Precompiled CLI
 app-admin/blahajdots 0.5.0 9999: Bespoke dotfile management for sharkgirls.
 app-admin/boinctui 2.7.1 2.7.1-r1: Fullscreen text mode manager for the BOINC client
 app-admin/chamber 2.13.2: Managing secrets in AWS SSM Parameter Store
-app-admin/chezmoi 2.59.0: Manage your dotfiles across multiple machines, securely
+app-admin/chezmoi 2.59.0 2.59.1: Manage your dotfiles across multiple machines, securely
 app-admin/customrescuecd-x86_64 0.12.7 0.12.8: A system rescue cd or usbstick for desktop and server based on gentoo
 app-admin/dotbot 1.20.1: A tool that bootstraps your dotfiles
 app-admin/gentoo_update 0.2.4: Gentoo Linux updater
@@ -204,7 +204,7 @@ app-eselect/eselect-ld 1.0.0: Manage the ld symlink
 app-eselect/eselect-swift 1.0: Manages Swift symlinks
 app-eselect/eselect-vala 1.0.0: Manage the valac symlink
 app-forensics/mvt 2.4.1: Forensic traces to identify a potential compromise of Android and iOS devices
-app-laptop/framework_tool 0.1.0_p20240930 0.2.0_pre20250129 9999: Tool to interact with a Framework Laptop's hardware system
+app-laptop/framework_tool 0.1.0_p20240930 0.2.0 9999: Tool to interact with a Framework Laptop's hardware system
 app-metrics/scaphandre 0.5.0-r1: Electrical power consumption measurement agent
 app-misc/1password-cli 2.30.3: The world’s most-loved password manager CLI
 app-misc/afc 1.1 1.2 9999: Anime File Checker, checks CRC32 contained in filenames
@@ -245,7 +245,7 @@ app-misc/gopsuinfo 0.1.5: A gopsutil-based command to display system usage info 
 app-misc/grit 0.3.0: An personal task manager that represents tasks as multitree nodes
 app-misc/interception-caps2esc 0.3.2: Interception tools plugin switching CAPS and ESC
 app-misc/interception-tools 0.6.8-r1: A minimal composable infrastructure on top of libudev and libevdev
-app-misc/kanata 1.7.0: Multi-layer keyboard customization
+app-misc/kanata 1.7.0 1.8.0: Multi-layer keyboard customization
 app-misc/kloak 0.2.30 0.3.7_p1 9999: A privacy tool that makes keystroke biometrics less effective
 app-misc/kmon 1.6.5 1.7.1: Linux kernel manager and activity monitor
 app-misc/ledger-live-bin 2.84.1: Manager for the Ledger hardware wallet
@@ -288,7 +288,7 @@ app-misc/via 3.0.0: GUI configurator for supported QMK-based keyboards
 app-misc/vocabsieve 0.12.2: A simple, effective tool for language learning
 app-misc/vrms-gentoo 0_pre20201102: vrms clone for Gentoo Linux
 app-misc/walld 1.4.4: A Wallpaper daemon
-app-misc/watchexec 1.24.2 1.25.1 2.1.1 2.1.2 2.2.1: Executes commands in response to file modifications
+app-misc/watchexec 2.1.2 2.2.1 2.3.0: Executes commands in response to file modifications
 app-misc/wcal 0.1-r1: ISO weekly calendar
 app-misc/wego 2.2: Wego is a weather client for the terminal
 app-misc/wlx-overlay-s 0.6.0-r1: A lightweight OpenXR/OpenVR overlay for Wayland and X11 desktops
@@ -309,7 +309,7 @@ app-office/nixnote-bin 2.1.10: Free and open source note taking app, compatible 
 app-office/notesnook-bin 2.6.12: End-to-end encrypted note taking alternative to Evernote
 app-office/obsidian 1.6.7 1.7.4 1.7.7: A second brain, for you, forever.
 app-office/openoffice-bin 4.1.15: Apache OpenOffice productivity suite
-app-office/pyspread 2.1.1: Pyspread is a non-traditional spreadsheet written in Python
+app-office/pyspread 2.3.1: Pyspread is a non-traditional spreadsheet written in Python
 app-office/standartnotes-bin 3.183.22: End-to-end encrypted note-taking app, alternative to Evernote
 app-portage/appswipe 1.1.14 1.1.68: Application for browsing your local Portage repository files
 app-portage/pacvis 0.4.2: Displays dependency graphs of packages
@@ -456,7 +456,7 @@ dev-crystal/webdrivers 0.4.3-r1: Helps manage drivers for Selenium, such as the 
 dev-crystal/webless 0.1.0: HTTP::Client for testing HTTP::Handlers directly and maintaining cookies
 dev-crystal/webmock 0.14.0: Mock HTTP client
 dev-db/libpg_query 16.5.1.0 17.6.0.0: C library for accessing the PostgreSQL parser outside of the server environment
-dev-db/limbo 0.0.13: The Limbo interactive SQL shell
+dev-db/limbo 0.0.14: The Limbo interactive SQL shell
 dev-db/pg_query_vala 0.1.0_pre20240326-r1 0.1.0_pre20241001: Thin wrapper around libpg_query to use with vala
 dev-db/pg_repack 1.5.0: Reorganize tables in PostgreSQL databases with minimal locks
 dev-db/psequel 0.2.0-r1: Run your SQL query
@@ -1269,7 +1269,7 @@ media-gfx/zw3d 2023.0.3.1-r1 2025.0.3.0: CAD/CAM software for 3D design and proc
 media-gfx/zwcad 2023.23.0.3.4-r2: CAD software for 2D drawing, reviewing and printing work
 media-libs/alsa-ucm-pinephone 1.2.6.3: ALSA ucm configuration files for the PinePhone (Pro)
 media-libs/alvr 16.0.0: ALVR is an open source remote VR display for the Oculus Go/Quest
-media-libs/amdvlk 2024.4.3: AMD Open Source Driver for Vulkan
+media-libs/amdvlk 2025.1.1: AMD Open Source Driver for Vulkan
 media-libs/amdvlk-bin 2021.2.5-r1 2023.3.3 2024.4.3: AMD Open Source Driver for Vulkan: official binary version
 media-libs/blend2d 0.11.4-r2 9999: 2D vector graphics library powered by a JIT compiler.
 media-libs/dr_flac 0.12.43: Single-header FLAC audio decoder library
@@ -1412,7 +1412,7 @@ net-im/axolotl-bin 2.0.1: Axolotl is a cross-platform Signal client
 net-im/beeper 3.109.1 3.110.1: Beeper: Unified Messenger
 net-im/chatterino 2.5.1: Chat client for https://twitch.tv
 net-im/conduit 0.8.0-r1 0.9.0-r1 9999: Matrix homeserver written in Rust
-net-im/discord-canary-bin 0.0.574: All-in-one voice and text chat
+net-im/discord-canary-bin 0.0.585: All-in-one voice and text chat
 net-im/discord-ptb-bin 0.0.97: All-in-one voice and text chat
 net-im/eturnal 1.12.0-r1 1.12.1: STUN/TURN server
 net-im/flare 0.12.0-r1: Chat with your friends on Signal
