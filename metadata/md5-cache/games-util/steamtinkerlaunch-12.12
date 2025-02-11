@@ -1,4 +1,4 @@
-BDEPEND=app-alternatives/awk app-shells/bash dev-vcs/git app-arch/unzip net-misc/wget x11-misc/xdotool x11-apps/xprop x11-apps/xrandr dev-util/xxd x11-apps/xwininfo >=gnome-extra/yad-7.2
+BDEPEND=app-alternatives/awk app-shells/bash dev-vcs/git app-arch/unzip net-misc/wget x11-misc/xdotool x11-apps/xprop x11-apps/xrandr || ( app-editors/vim-core dev-util/xxd ) x11-apps/xwininfo >=gnome-extra/yad-7.2
 DEFINED_PHASES=postinst postrm preinst prepare
 DESCRIPTION=Wrapper script for Steam custom launch options
 EAPI=8
@@ -11,4 +11,4 @@ RESTRICT=test
 SLOT=0
 SRC_URI=https://github.com/sonic2kk/steamtinkerlaunch/archive/v12.12.tar.gz -> steamtinkerlaunch-12.12.tar.gz
 _eclasses_=optfeature	538bce96e5589935b57e178e8635f301	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575
-_md5_=7b98aec9d4a82e5479e03c5046f75628
+_md5_=a4c96b1c8c77d188c8e8200efa8fd3ce

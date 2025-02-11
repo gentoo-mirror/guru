@@ -1,4 +1,4 @@
-BDEPEND=app-alternatives/awk app-shells/bash dev-vcs/git app-arch/unzip net-misc/wget x11-misc/xdotool x11-apps/xprop x11-apps/xrandr dev-util/xxd x11-apps/xwininfo >=gnome-extra/yad-7.2 >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=app-alternatives/awk app-shells/bash dev-vcs/git app-arch/unzip net-misc/wget x11-misc/xdotool x11-apps/xprop x11-apps/xrandr || ( app-editors/vim-core dev-util/xxd ) x11-apps/xwininfo >=gnome-extra/yad-7.2 >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=postinst postrm preinst prepare unpack
 DESCRIPTION=Wrapper script for Steam custom launch options
 EAPI=8
@@ -10,4 +10,4 @@ PROPERTIES=live
 RESTRICT=test
 SLOT=0
 _eclasses_=optfeature	538bce96e5589935b57e178e8635f301	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575	git-r3	875eb471682d3e1f18da124be97dcc81
-_md5_=000e061c8a02726249062108ca85f87e
+_md5_=3a15750cbcc1bf71fdd387ee77a64208
