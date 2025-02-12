@@ -106,7 +106,7 @@ app-admin/oet 0.1.9 0.1.10 0.1.11 9999: Update your system into binpkgs in an ov
 app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applications and tmux
 app-admin/pass-audit 1.2 1.2-r1: A pass extension for auditing your password repository.
 app-admin/pass-update 2.2.1: pass extension that provides an easy flow for updating passwords
-app-admin/pulumi-bin 3.145.0 3.146.0 3.148.0: Infrastructure as code in any programming language
+app-admin/pulumi-bin 3.146.0 3.148.0 3.150.0: Infrastructure as code in any programming language
 app-admin/rbw 1.11.1-r2 1.12.0-r1 1.12.1-r1 9999: Unofficial Bitwarden CLI
 app-admin/s-tui 1.1.6: Stress-Terminal UI monitoring tool
 app-admin/synadm 0.43.1 0.44: Command line admin tool for Synapse
@@ -259,6 +259,7 @@ app-misc/minder 1.16.2 1.16.3: Mind-mapping application for Elementary OS.
 app-misc/mirafetch 0.1.0 9999: A Rust reimplementation of Hyfetch wih a focus on speed
 app-misc/mobile-datovka 1.10.0: Mobile optimized GUI to access the Czech data box e-government system
 app-misc/morgen 3.6.3: Morgen simplifies time management by consolidating all your calendars.
+app-misc/mymefetch 1.1.1: Neofetch-like Bash script with small ASCII art of MymeType's robot OC, MYME
 app-misc/navi 2.23.0: An interactive cheatsheet tool for the command-line
 app-misc/neo 0.6.1 9999: cmatrix clone with 32-bit color and Unicode support
 app-misc/nerdfetch 8.3.1: A POSIX *nix fetch script using Nerdfonts
@@ -1187,7 +1188,7 @@ gui-apps/wob 0.14.2 0.15.1-r1: Lightweight overlay volume/backlight/progress/any
 gui-apps/wscreensaver 9999: Xscreensaver screensavers ported to wayland
 gui-apps/wtype 0.4: xdotool type for wayland
 gui-apps/xremap 0.10.4: Dynamic key remap for X and Wayland
-gui-apps/xwayland-satellite 0.5-r1: Xwayland outside your Wayland
+gui-apps/xwayland-satellite 0.5.1: Xwayland outside your Wayland
 gui-apps/yambar 1.11.0 9999: Simplistic and highly configurable status panel for X and Wayland
 gui-libs/gtk-session-lock 0.2.0-r6 9999: GTK-based lockscreen for Wayland
 gui-libs/gtk4-layer-shell 1.0.2 1.0.4: A library for using the Layer Shell Wayland protocol with GTK4.
@@ -1196,7 +1197,7 @@ gui-libs/libcprime 4.5.0 5.0.0_pre20240921 9999: Library for managing settings o
 gui-libs/libcsys 4.5.0 9999: Library for managing the device
 gui-libs/libsfdo 0.1.3: A collection of libraries which implement some freedesktop.org specifications
 gui-libs/mir 2.19.2 2.19.3: Set of libraries for building Wayland based shells
-gui-libs/scenefx 0.1: A replacement for the wlroots scene API with eye-candy effects.
+gui-libs/scenefx 0.1 0.2: A replacement for the wlroots scene API with eye-candy effects.
 gui-libs/text-engine 0.1.1-r3 9999: A lightweight rich-text framework for GTK 4
 gui-libs/xdg-desktop-portal-hyprland 1.3.8 1.3.9 9999: xdg-desktop-portal backend for hyprland
 gui-wm/cage 0.2.0 9999: A Wayland kiosk
@@ -1206,7 +1207,7 @@ gui-wm/miracle-wm 0.4.0 0.4.1: Tiling Wayland compositor based on Mir
 gui-wm/niri 0.1.10.1 25.01: Scrollable-tiling Wayland compositor
 gui-wm/phoc 0.42.1 0.43.0 0.44.0 0.44.1: Wayland compositor for mobile phones
 gui-wm/river 0.3.6 0.3.7: A dynamic tiling Wayland compositor
-gui-wm/swayfx 0.4-r1: SwayFX: Sway, but with eye candy!
+gui-wm/swayfx 0.4-r2: SwayFX: Sway, but with eye candy!
 kde-apps/kwalletcli 3.03: CLI for the KDE Wallet
 kde-misc/geminipart 20241121 20241215: KPart for viewing text/gemini files
 kde-misc/kio-gemini 20240801 20241109: Gemini KIO worker
@@ -1529,7 +1530,7 @@ net-p2p/gridcoin 5.4.8.0_p1 5.4.8.0_p1-r1: Proof-of-Stake based cryptocurrency t
 net-p2p/ipfs-desktop-bin 0.39.0 0.40.0: A desktop client for IPFS. The IPFS's Native Application
 net-p2p/monero 0.18.3.4-r1 9999: The secure, private, untraceable cryptocurrency
 net-p2p/monero-gui-bin 0.18.3.4-r1: An open-source GUI wallet developed by the Monero community.
-net-p2p/p2pool 4.0 4.1.1 9999: Decentralized pool for Monero mining
+net-p2p/p2pool 4.1.1 4.3 9999: Decentralized pool for Monero mining
 net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
 net-p2p/yggdrasil-go 0.5.12 9999: An experiment in scalable routing as an encrypted IPv6 overlay network
 net-print/hpuld 1.00.39.15.00.23-r1: HP Unified Linux Driver (for samsung hardware)
@@ -1766,7 +1767,7 @@ www-misc/kiwix-desktop 2.4.0: cross-platform viewer/manager for ZIM archives
 www-misc/libkiwix 14.0.0: Kiwix software suite core: code shared by all Kiwix ports
 www-misc/waldl 0.0.1_pre20211112: Browse and download wallpapers from wallhaven.cc using sxiv
 www-misc/wyebadblock 1.0.0: An adblock extension for wyeb, also webkit2gtk browsers.
-www-plugins/firefoxpwa 2.12.4 2.12.5 2.13.1 2.13.2 2.13.3: A tool to install, manage and use PWAs in Mozilla Firefox (native component)
+www-plugins/firefoxpwa 2.13.2 2.13.3 2.14.0: A tool to install, manage and use PWAs in Mozilla Firefox (native component)
 www-servers/hinsightd 0.9.17 9999: hinsightd a http/1.1 webserver with (hopefully) minimal goals
 www-servers/quark 9999: A small, GET-only static HTTP server
 x11-apps/lightdm-gtk-greeter-settings 1.2.2-r3: Configuration tool for the LightDM GTK Greeter
@@ -1807,7 +1808,7 @@ x11-misc/xob 0.2 0.3: A lightweight overlay volume (or anything) bar for the X W
 x11-misc/xsecurelock 1.9.0: X11 screen lock utility with security in mind
 x11-plugins/purple-mm-sms 0.1.7: Purple SMS plugin using ModemManager
 x11-terms/dmd5620 2.1.0: GTK+ 3.0 implementation of an AT&T / Teletype DMD 5620 emulator.
-x11-terms/rio 0.2.5: A hardware-accelerated GPU terminal emulator powered by WebGPU
+x11-terms/rio 0.2.7: A hardware-accelerated GPU terminal emulator powered by WebGPU
 x11-terms/tabby-bin 1.0.189: A terminal for a more modern age
 x11-terms/terminal-simulator 0.2 9999-r1: VT100 and VT52 terminal hardware simulator
 x11-terms/tym 3.5.1-r2: Lua-configurable terminal emulator

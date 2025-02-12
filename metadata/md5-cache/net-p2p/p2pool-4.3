@@ -1,6 +1,6 @@
 BDEPEND=verify-sig? ( sec-keys/openpgp-keys-schernykh ) app-alternatives/ninja >=dev-build/cmake-3.20.5 verify-sig? ( app-crypt/gnupg >=app-portage/gemato-20 )
 DEFINED_PHASES=compile configure install postinst prepare test unpack
-DEPEND=dev-libs/libsodium net-libs/czmq
+DEPEND=dev-libs/openssl net-libs/czmq dev-libs/libuv net-misc/curl
 DESCRIPTION=Decentralized pool for Monero mining
 EAPI=8
 HOMEPAGE=https://p2pool.io
@@ -9,6 +9,6 @@ IUSE=verify-sig
 KEYWORDS=~amd64 ~arm64 ~x86
 LICENSE=BSD GPL-3+ ISC LGPL-3+ MIT
 SLOT=0
-SRC_URI=https://github.com/SChernykh/p2pool/releases/download/v4.0/p2pool_source.tar.xz -> p2pool-4.0.tar.xz verify-sig? ( https://github.com/SChernykh/p2pool/releases/download/v4.0/sha256sums.txt.asc -> p2pool-4.0_shasums.asc )
+SRC_URI=https://github.com/SChernykh/p2pool/releases/download/v4.3/p2pool_source.tar.xz -> p2pool-4.3.tar.xz verify-sig? ( https://github.com/SChernykh/p2pool/releases/download/v4.3/sha256sums.txt.asc -> p2pool-4.3_shasums.asc )
 _eclasses_=toolchain-funcs	14648d8795f7779e11e1bc7cf08b7536	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	357f1a896fbedcd06e5ce55419c49eb9	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	10a50dfaf728b802fcfd37f8d0da9056	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	verify-sig	7433426b6b28bf2737ba4b82c8aa8c53
-_md5_=1ce891719ff87c8c4d6197718cc3208d
+_md5_=cf96f7fa9852cdaa04bb75e19fe453dd
