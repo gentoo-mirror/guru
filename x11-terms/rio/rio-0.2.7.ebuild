@@ -11,9 +11,7 @@ inherit cargo desktop
 
 DESCRIPTION="A hardware-accelerated GPU terminal emulator powered by WebGPU"
 HOMEPAGE="https://raphamorim.io/rio/"
-SRC_URI="
-	https://github.com/raphamorim/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
-"
+SRC_URI="https://github.com/raphamorim/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 DEPS_URI="https://github.com/freijon/${PN}/releases/download/v${PV}/${P}-crates.tar.xz"
 SRC_URI+=" ${DEPS_URI}"
 
