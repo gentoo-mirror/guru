@@ -142,6 +142,7 @@ dev-libs/librepo:zchunk - Build with zchunk support
 dev-libs/libsolv:zchunk - Build with zchunk support
 dev-libs/ls-qpack:tools - Build testing tools
 dev-libs/md4c:md2html - Build the md2html cli tool
+dev-libs/nanopb:pb-malloc - Enable dynamic allocation support in the decoder
 dev-libs/open62541:mbedtls - Enable encryption support using net-libs/mbedtls
 dev-libs/open62541:openssl - Enable encryption support using dev-libs/openssl
 dev-libs/open62541:pubsub - Enable OPC/UA Pub/Sub extensions
@@ -258,6 +259,7 @@ games-emulation/duckstation:gbm - Support DRM/KMS OpenGL contexts
 games-emulation/duckstation:nogui - Build the NoGUI frontend
 games-emulation/duckstation:qt6 - Build the QT frontend
 games-emulation/duckstation:retroachievements - Build with RetroAchievements supports
+games-emulation/flycast:vulkan - Compile vulkan backend
 games-emulation/np2kai:X - Build support for X
 games-emulation/np2kai:haxm - Enable haxm emulation
 games-emulation/np2kai:i286 - Enable i286 emulation USE="ia32" or USE="haxm" will disable it, unless all 3 emulation USE flags are set
@@ -294,6 +296,11 @@ games-rpg/open-adventure:autosave - Build with auto-save/resume enabled
 games-rpg/open-adventure:nosave - Build with save/resume disabled
 games-server/among-sus:notifications - Notify players you're moving
 games-util/chiaki:cli - Build CLI interface
+games-util/chiaki:gui - Build Qt GUI interface
+games-util/chiaki:mbedtls - Use mbedtls instead of OpenSSL as part of Chiaki lib
+games-util/chiaki:sdl - Add support for touchpad and sensor handling via SDL. Adds support for any controller supported by SDL
+games-util/chiaki:system-jerasure - Use system-provided jerasure instead of submodule
+games-util/chiaki:system-nanopb - Use system-provided nanopb instead of submodule
 games-util/itch-bin:system-ffmpeg - Use the system-wide media-video/ffmpeg instead of bundled.
 games-util/legendary:webview - Use dev-python/pywebview for the sign-in process
 games-util/mangohud:mangoapp - Build and install mangoapp and mangoapp layer

@@ -1,17 +1,18 @@
-BDEPEND=python_single_target_python3_10? ( dev-lang/python:3.10 ) python_single_target_python3_11? ( dev-lang/python:3.11 ) python_single_target_python3_12? ( dev-lang/python:3.12 ) python_single_target_python3_13? ( dev-lang/python:3.13 ) python_single_target_python3_10? ( dev-python/protobuf[python_targets_python3_10(-)] ) python_single_target_python3_11? ( dev-python/protobuf[python_targets_python3_11(-)] ) python_single_target_python3_12? ( dev-python/protobuf[python_targets_python3_12(-)] ) python_single_target_python3_13? ( dev-python/protobuf[python_targets_python3_13(-)] ) dev-libs/protobuf virtual/pkgconfig app-alternatives/ninja >=dev-build/cmake-3.20.5 >=dev-vcs/git-1.8.2.1[curl]
-DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup test unpack
+BDEPEND=python_single_target_python3_10? ( dev-lang/python:3.10 ) python_single_target_python3_11? ( dev-lang/python:3.11 ) python_single_target_python3_12? ( dev-lang/python:3.12 ) python_single_target_python3_13? ( dev-lang/python:3.13 ) python_single_target_python3_10? ( dev-python/protobuf[python_targets_python3_10(-)] ) python_single_target_python3_11? ( dev-python/protobuf[python_targets_python3_11(-)] ) python_single_target_python3_12? ( dev-python/protobuf[python_targets_python3_12(-)] ) python_single_target_python3_13? ( dev-python/protobuf[python_targets_python3_13(-)] ) dev-libs/protobuf virtual/pkgconfig app-alternatives/ninja >=dev-build/cmake-3.20.5
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup test
 DEPEND=python_single_target_python3_10? ( dev-lang/python:3.10 ) python_single_target_python3_11? ( dev-lang/python:3.11 ) python_single_target_python3_12? ( dev-lang/python:3.12 ) python_single_target_python3_13? ( dev-lang/python:3.13 ) dev-libs/libevdev media-libs/opus sdl? ( media-libs/libsdl2[joystick,haptic] ) gui? ( dev-qt/qtcore:5 ) gui? ( dev-qt/qtwidgets:5 ) gui? ( dev-qt/qtgui:5 ) gui? ( dev-qt/qtconcurrent:5 ) gui? ( dev-qt/qtmultimedia:5 ) gui? ( dev-qt/qtopengl:5 ) gui? ( dev-qt/qtsvg:5 ) !mbedtls? ( dev-libs/openssl:= ) mbedtls? ( net-libs/mbedtls ) ffmpeg? ( media-video/ffmpeg:= ) system-jerasure? ( dev-libs/jerasure ) system-nanopb? ( dev-libs/nanopb )
 DESCRIPTION=Client for PlayStation 4 and PlayStation 5 Remote Play
 EAPI=8
 HOMEPAGE=https://git.sr.ht/~thestr4ng3r/chiaki
 IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
-INHERIT=cmake python-single-r1 xdg git-r3
+INHERIT=cmake python-single-r1 xdg
 IUSE=+cli +gui +sdl +ffmpeg system-jerasure system-nanopb mbedtls test python_single_target_python3_10 python_single_target_python3_11 python_single_target_python3_12 python_single_target_python3_13
+KEYWORDS=~amd64
 LICENSE=GPL-3
-PROPERTIES=live
 RDEPEND=python_single_target_python3_10? ( dev-lang/python:3.10 ) python_single_target_python3_11? ( dev-lang/python:3.11 ) python_single_target_python3_12? ( dev-lang/python:3.12 ) python_single_target_python3_13? ( dev-lang/python:3.13 ) dev-libs/libevdev media-libs/opus sdl? ( media-libs/libsdl2[joystick,haptic] ) gui? ( dev-qt/qtcore:5 ) gui? ( dev-qt/qtwidgets:5 ) gui? ( dev-qt/qtgui:5 ) gui? ( dev-qt/qtconcurrent:5 ) gui? ( dev-qt/qtmultimedia:5 ) gui? ( dev-qt/qtopengl:5 ) gui? ( dev-qt/qtsvg:5 ) !mbedtls? ( dev-libs/openssl:= ) mbedtls? ( net-libs/mbedtls ) ffmpeg? ( media-video/ffmpeg:= ) system-jerasure? ( dev-libs/jerasure ) system-nanopb? ( dev-libs/nanopb )
 REQUIRED_USE=^^ ( python_single_target_python3_10 python_single_target_python3_11 python_single_target_python3_12 python_single_target_python3_13 ) gui? ( ffmpeg )
 RESTRICT=!test? ( test )
 SLOT=0
-_eclasses_=toolchain-funcs	6afdb6107430c1832ca7e16aacbf8fa1	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	357f1a896fbedcd06e5ce55419c49eb9	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	10a50dfaf728b802fcfd37f8d0da9056	python-utils-r1	b7726144f5af59e186d66746d0f513e5	python-single-r1	47d8ac9be330c9366112b78fd4f8ce57	xdg	3ef49a87c52c8b77c476351195dfe575	git-r3	875eb471682d3e1f18da124be97dcc81
+SRC_URI=https://git.sr.ht/~thestr4ng3r/chiaki/refs/download/v2.2.0/chiaki-v2.2.0-src.tar.gz -> chiaki-2.2.0.tar.gz
+_eclasses_=toolchain-funcs	6afdb6107430c1832ca7e16aacbf8fa1	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	357f1a896fbedcd06e5ce55419c49eb9	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	10a50dfaf728b802fcfd37f8d0da9056	python-utils-r1	b7726144f5af59e186d66746d0f513e5	python-single-r1	47d8ac9be330c9366112b78fd4f8ce57	xdg	3ef49a87c52c8b77c476351195dfe575
 _md5_=cb0b72692d06fecd01024530d0f0b74b

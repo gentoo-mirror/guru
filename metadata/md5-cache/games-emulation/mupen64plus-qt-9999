@@ -1,13 +1,13 @@
-BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
-DEFINED_PHASES=configure install prepare unpack
-DEPEND=>=games-emulation/mupen64plus-core-2.5 dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtnetwork:5 dev-qt/qtxml:5 dev-qt/qtsql:5 dev-qt/qtwidgets:5 dev-libs/quazip:=[qt5(+)]
+BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.20.5 >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=>=games-emulation/mupen64plus-core-2.5 dev-libs/quazip[qt6] dev-qt/qtbase:6[gui,network,sql,widgets,xml]
 DESCRIPTION=A basic launcher for Mupen64Plus
 EAPI=8
 HOMEPAGE=https://github.com/dh4/mupen64plus-qt
-INHERIT=desktop git-r3 qmake-utils
+INHERIT=cmake git-r3
 LICENSE=BSD
 PROPERTIES=live
-RDEPEND=dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtnetwork:5 dev-qt/qtxml:5 dev-qt/qtsql:5 dev-qt/qtwidgets:5 dev-libs/quazip:=[qt5(+)]
+RDEPEND=dev-libs/quazip[qt6] dev-qt/qtbase:6[gui,network,sql,widgets,xml]
 SLOT=0
-_eclasses_=desktop	3a72ffe0d8e1dd73af3a1c8c15a59fed	git-r3	875eb471682d3e1f18da124be97dcc81	toolchain-funcs	6afdb6107430c1832ca7e16aacbf8fa1	multilib	b2a329026f2e404e9e371097dda47f96	qmake-utils	a8dd17b1d94586164f5e3fc12b1c6b81
-_md5_=c156409c33b7ab1f43d0124a3f00f95c
+_eclasses_=toolchain-funcs	6afdb6107430c1832ca7e16aacbf8fa1	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	357f1a896fbedcd06e5ce55419c49eb9	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	10a50dfaf728b802fcfd37f8d0da9056	git-r3	875eb471682d3e1f18da124be97dcc81
+_md5_=10c508b33056bf5c9e40cb1b5108b886
