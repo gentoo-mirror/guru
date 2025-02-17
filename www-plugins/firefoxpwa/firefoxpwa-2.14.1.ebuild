@@ -18,7 +18,7 @@ CRATES="
 	anstream@0.6.18
 	anstyle-parse@0.2.6
 	anstyle-query@1.1.2
-	anstyle-wincon@3.0.6
+	anstyle-wincon@3.0.7
 	anstyle@1.0.10
 	anyhow@1.0.95
 	arbitrary@1.4.1
@@ -34,28 +34,28 @@ CRATES="
 	base64@0.22.1
 	bit_field@0.10.2
 	bitflags@1.3.2
-	bitflags@2.6.0
+	bitflags@2.8.0
 	bitstream-io@2.6.0
 	blake3@1.5.5
-	brotli-decompressor@4.0.1
+	brotli-decompressor@4.0.2
 	brotli@7.0.0
-	built@0.7.5
-	bumpalo@3.16.0
+	built@0.7.6
+	bumpalo@3.17.0
 	bytemuck@1.21.0
 	byteorder-lite@0.1.0
 	byteorder@1.5.0
-	bytes@1.9.0
-	bzip2-sys@0.1.11+1.0.8
-	bzip2@0.5.0
-	cc@1.2.6
+	bytes@1.10.0
+	bzip2-sys@0.1.12+1.0.8
+	bzip2@0.5.1
+	cc@1.2.13
 	cfg-expr@0.15.8
 	cfg-if@1.0.0
 	cfg_aliases@0.2.1
 	chrono@0.4.39
-	clap@4.5.23
-	clap_builder@4.5.23
-	clap_complete@4.5.40
-	clap_derive@4.5.18
+	clap@4.5.29
+	clap_builder@4.5.29
+	clap_complete@4.5.44
+	clap_derive@4.5.28
 	clap_lex@0.7.4
 	color_quant@1.1.0
 	colorchoice@1.0.3
@@ -65,12 +65,12 @@ CRATES="
 	constant_time_eq@0.3.1
 	core-foundation-sys@0.8.7
 	core-foundation@0.9.4
-	core_maths@0.1.0
+	core_maths@0.1.1
 	crc32fast@1.4.2
 	crossbeam-deque@0.8.6
 	crossbeam-epoch@0.9.18
 	crossbeam-utils@0.8.21
-	crunchy@0.2.2
+	crunchy@0.2.3
 	csscolorparser@0.6.2
 	darling@0.20.10
 	darling_core@0.20.10
@@ -78,8 +78,8 @@ CRATES="
 	data-url@0.3.1
 	deflate@0.8.6
 	deranged@0.3.11
-	directories@5.0.1
-	dirs-sys@0.4.1
+	directories@6.0.0
+	dirs-sys@0.5.0
 	displaydoc@0.2.5
 	dmg@0.1.2
 	either@1.13.0
@@ -89,7 +89,7 @@ CRATES="
 	exr@1.73.0
 	fastrand@2.3.0
 	fdeflate@0.3.7
-	filedescriptor@0.8.2
+	filedescriptor@0.8.3
 	filetime@0.2.25
 	flate2@1.0.35
 	float-cmp@0.9.0
@@ -108,6 +108,7 @@ CRATES="
 	futures-util@0.3.31
 	gag@1.0.0
 	getrandom@0.2.15
+	getrandom@0.3.1
 	gif@0.13.1
 	gimli@0.31.1
 	glob@0.3.2
@@ -120,11 +121,11 @@ CRATES="
 	http-body-util@0.1.2
 	http-body@1.0.1
 	http@1.2.0
-	httparse@1.9.5
+	httparse@1.10.0
 	hyper-rustls@0.27.5
 	hyper-tls@0.6.0
 	hyper-util@0.1.10
-	hyper@1.5.2
+	hyper@1.6.0
 	iana-time-zone-haiku@0.1.2
 	iana-time-zone@0.1.61
 	icns@0.3.1
@@ -142,40 +143,41 @@ CRATES="
 	idna@1.0.3
 	idna_adapter@1.2.0
 	image-webp@0.1.3
-	image-webp@0.2.0
+	image-webp@0.2.1
 	image@0.25.5
 	imagesize@0.13.0
 	imgref@1.11.0
 	indexmap@1.9.3
-	indexmap@2.7.0
+	indexmap@2.7.1
 	interpolate_name@0.2.4
-	ipnet@2.10.1
+	ipnet@2.11.0
 	is_terminal_polyfill@1.70.1
 	itertools@0.12.1
 	itoa@1.0.14
 	jobserver@0.1.32
 	jpeg-decoder@0.3.1
-	js-sys@0.3.76
+	js-sys@0.3.77
 	kurbo@0.11.1
 	language-tags@0.3.2
 	lebe@0.5.2
 	libc@0.2.169
-	libfuzzer-sys@0.4.8
+	libfuzzer-sys@0.4.9
 	libm@0.2.11
 	libredox@0.1.3
-	linux-raw-sys@0.4.14
+	linux-raw-sys@0.4.15
 	litemap@0.7.4
-	log@0.4.22
+	log@0.4.25
 	loop9@0.1.5
+	lzma-sys@0.1.20
 	maybe-rayon@0.1.1
 	memchr@2.7.4
 	memmap2@0.9.5
 	mime@0.3.17
 	minimal-lexical@0.2.1
 	miniz_oxide@0.3.7
-	miniz_oxide@0.8.2
+	miniz_oxide@0.8.4
 	mio@1.0.3
-	native-tls@0.2.12
+	native-tls@0.2.13
 	new_debug_unreachable@1.0.6
 	nom@7.1.3
 	noop_proc_macro@0.3.0
@@ -187,24 +189,24 @@ CRATES="
 	num-traits@0.2.19
 	num_threads@0.1.7
 	object@0.36.7
-	once_cell@1.20.2
+	once_cell@1.20.3
 	openssl-macros@0.1.1
-	openssl-probe@0.1.5
-	openssl-src@300.4.1+3.4.0
-	openssl-sys@0.9.104
-	openssl@0.10.68
+	openssl-probe@0.1.6
+	openssl-src@300.4.2+3.4.1
+	openssl-sys@0.9.105
+	openssl@0.10.70
 	option-ext@0.2.0
 	owned_ttf_parser@0.25.0
 	parse-display-derive@0.8.2
 	parse-display@0.8.2
 	paste@1.0.15
 	percent-encoding@2.3.1
-	phf@0.11.2
-	phf_generator@0.11.2
-	phf_macros@0.11.2
-	phf_shared@0.11.2
+	phf@0.11.3
+	phf_generator@0.11.3
+	phf_macros@0.11.3
+	phf_shared@0.11.3
 	pico-args@0.5.0
-	pin-project-lite@0.2.15
+	pin-project-lite@0.2.16
 	pin-utils@0.1.0
 	pix@0.13.4
 	pkg-config@0.3.31
@@ -213,7 +215,7 @@ CRATES="
 	png@0.17.16
 	powerfmt@0.2.0
 	ppv-lite86@0.2.20
-	proc-macro2@1.0.92
+	proc-macro2@1.0.93
 	profiling-procmacros@1.0.16
 	profiling@1.0.16
 	qoi@0.4.1
@@ -223,38 +225,42 @@ CRATES="
 	quote@1.0.38
 	quoted-string@0.2.2
 	rand@0.8.5
+	rand@0.9.0
 	rand_chacha@0.3.1
+	rand_chacha@0.9.0
 	rand_core@0.6.4
+	rand_core@0.9.0
 	rav1e@0.7.1
 	ravif@0.11.11
 	rayon-core@1.12.1
 	rayon@1.10.0
 	redox_syscall@0.5.8
-	redox_users@0.4.6
+	redox_users@0.5.0
 	regex-automata@0.4.9
 	regex-syntax@0.7.5
 	regex-syntax@0.8.5
 	regex@1.11.1
-	reqwest@0.12.11
+	reqwest@0.12.12
 	resvg@0.44.0
 	rgb@0.8.50
 	ring@0.17.8
 	roxmltree@0.20.0
 	rustc-demangle@0.1.24
-	rustix@0.38.42
+	rustix@0.38.44
 	rustls-pemfile@2.2.0
-	rustls-pki-types@1.10.1
+	rustls-pki-types@1.11.0
 	rustls-webpki@0.102.8
-	rustls@0.23.20
+	rustls@0.23.23
+	rustversion@1.0.19
 	rustybuzz@0.18.0
-	ryu@1.0.18
+	ryu@1.0.19
 	sanitize-filename@0.6.0
 	schannel@0.1.27
-	security-framework-sys@2.13.0
+	security-framework-sys@2.14.0
 	security-framework@2.11.1
 	serde@1.0.217
 	serde_derive@1.0.217
-	serde_json@1.0.134
+	serde_json@1.0.138
 	serde_spanned@0.6.8
 	serde_urlencoded@0.7.1
 	serde_with@3.12.0
@@ -262,9 +268,8 @@ CRATES="
 	shlex@1.3.0
 	simd-adler32@0.3.7
 	simd_helpers@0.1.0
-	simplecss@0.2.1
+	simplecss@0.2.2
 	simplelog@0.12.2
-	siphasher@0.3.11
 	siphasher@1.0.1
 	slab@0.4.9
 	slotmap@1.0.7
@@ -278,8 +283,8 @@ CRATES="
 	structmeta-derive@0.2.0
 	structmeta@0.2.0
 	subtle@2.6.1
-	svgtypes@0.15.2
-	syn@2.0.93
+	svgtypes@0.15.3
+	syn@2.0.98
 	sync_wrapper@1.0.2
 	synstructure@0.13.1
 	system-configuration-sys@0.6.0
@@ -287,10 +292,12 @@ CRATES="
 	system-deps@6.2.2
 	tar@0.4.43
 	target-lexicon@0.12.16
-	tempfile@3.14.0
+	tempfile@3.16.0
 	termcolor@1.4.1
 	thiserror-impl@1.0.69
+	thiserror-impl@2.0.11
 	thiserror@1.0.69
+	thiserror@2.0.11
 	tiff@0.9.1
 	time-core@0.1.2
 	time-macros@0.2.19
@@ -304,10 +311,10 @@ CRATES="
 	tokio-rustls@0.26.1
 	tokio-socks@0.5.2
 	tokio-util@0.7.13
-	tokio@1.42.0
-	toml@0.8.19
+	tokio@1.43.0
+	toml@0.8.20
 	toml_datetime@0.6.8
-	toml_edit@0.22.22
+	toml_edit@0.22.24
 	tower-layer@0.3.3
 	tower-service@0.3.3
 	tower@0.5.2
@@ -316,11 +323,11 @@ CRATES="
 	try-lock@0.2.5
 	ttf-parser@0.24.1
 	ttf-parser@0.25.1
-	ulid@1.1.3
+	ulid@1.2.0
 	unicode-bidi-mirroring@0.3.0
 	unicode-bidi@0.3.18
 	unicode-ccc@0.3.0
-	unicode-ident@1.0.14
+	unicode-ident@1.0.16
 	unicode-properties@0.1.3
 	unicode-script@0.5.7
 	unicode-vo@0.1.0
@@ -338,13 +345,14 @@ CRATES="
 	version_check@0.9.5
 	want@0.3.1
 	wasi@0.11.0+wasi-snapshot-preview1
-	wasm-bindgen-backend@0.2.99
-	wasm-bindgen-futures@0.4.49
-	wasm-bindgen-macro-support@0.2.99
-	wasm-bindgen-macro@0.2.99
-	wasm-bindgen-shared@0.2.99
-	wasm-bindgen@0.2.99
-	web-sys@0.3.76
+	wasi@0.13.3+wasi-0.2.2
+	wasm-bindgen-backend@0.2.100
+	wasm-bindgen-futures@0.4.50
+	wasm-bindgen-macro-support@0.2.100
+	wasm-bindgen-macro@0.2.100
+	wasm-bindgen-shared@0.2.100
+	wasm-bindgen@0.2.100
+	web-sys@0.3.77
 	web-time@1.1.0
 	weezl@0.1.8
 	winapi-i686-pc-windows-gnu@0.4.0
@@ -352,44 +360,49 @@ CRATES="
 	winapi-x86_64-pc-windows-gnu@0.4.0
 	winapi@0.3.9
 	windows-core@0.52.0
-	windows-core@0.58.0
-	windows-implement@0.58.0
-	windows-interface@0.58.0
+	windows-core@0.59.0
+	windows-implement@0.59.0
+	windows-interface@0.59.0
 	windows-registry@0.2.0
-	windows-registry@0.3.0
+	windows-registry@0.4.0
 	windows-result@0.2.0
+	windows-result@0.3.0
 	windows-strings@0.1.0
-	windows-strings@0.2.0
-	windows-sys@0.48.0
+	windows-strings@0.3.0
 	windows-sys@0.52.0
 	windows-sys@0.59.0
-	windows-targets@0.48.5
 	windows-targets@0.52.6
-	windows@0.58.0
-	windows_aarch64_gnullvm@0.48.5
+	windows-targets@0.53.0
+	windows@0.59.0
 	windows_aarch64_gnullvm@0.52.6
-	windows_aarch64_msvc@0.48.5
+	windows_aarch64_gnullvm@0.53.0
 	windows_aarch64_msvc@0.52.6
-	windows_i686_gnu@0.48.5
+	windows_aarch64_msvc@0.53.0
 	windows_i686_gnu@0.52.6
+	windows_i686_gnu@0.53.0
 	windows_i686_gnullvm@0.52.6
-	windows_i686_msvc@0.48.5
+	windows_i686_gnullvm@0.53.0
 	windows_i686_msvc@0.52.6
-	windows_x86_64_gnu@0.48.5
+	windows_i686_msvc@0.53.0
 	windows_x86_64_gnu@0.52.6
-	windows_x86_64_gnullvm@0.48.5
+	windows_x86_64_gnu@0.53.0
 	windows_x86_64_gnullvm@0.52.6
-	windows_x86_64_msvc@0.48.5
+	windows_x86_64_gnullvm@0.53.0
 	windows_x86_64_msvc@0.52.6
-	winnow@0.6.20
+	windows_x86_64_msvc@0.53.0
+	winnow@0.7.2
+	wit-bindgen-rt@0.33.0
 	write16@1.0.0
 	writeable@0.5.5
-	xattr@1.3.1
+	xattr@1.4.0
 	xmlwriter@0.1.0
+	xz2@0.1.7
 	yoke-derive@0.7.5
 	yoke@0.7.5
 	zerocopy-derive@0.7.35
+	zerocopy-derive@0.8.17
 	zerocopy@0.7.35
+	zerocopy@0.8.17
 	zerofrom-derive@0.1.5
 	zerofrom@0.1.5
 	zeroize@1.8.1
@@ -427,17 +440,18 @@ LICENSE="MPL-2.0"
 # Dependent crate licenses
 LICENSE+="
 	Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD-2 BSD ISC MIT MPL-2.0
-	Unicode-3.0 ZLIB
+	UoI-NCSA Unicode-3.0 ZLIB
 "
 
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64"
 IUSE="custom-cflags lto static"
 
-# Add app-arch/bzip2 when it finally get pkg-config file
 DEPEND="
 	!static? (
 		app-arch/zstd:=
+		app-arch/bzip2:=
+		app-arch/xz-utils:=
 		dev-libs/openssl:=
 	)
 "
@@ -466,7 +480,7 @@ src_prepare() {
 	# Set version in source files as per build instructions
 	sed -i "s/version = \"0.0.0\"/version = \"${PV}\"/g" Cargo.toml || die
 	sed -i "s/DISTRIBUTION_VERSION = '0.0.0'/DISTRIBUTION_VERSION = '${PV}'/g" \
-		userchrome/profile/chrome/pwa/chrome.jsm || die
+		userchrome/profile/chrome/pwa/chrome.sys.mjs || die
 }
 
 src_configure() {
@@ -480,7 +494,7 @@ src_configure() {
 			CXX="${CHOST}-clang++"
 			RUSTFLAGS="-Clinker=clang -Clink-arg=-fuse-ld=lld ${RUSTFLAGS}"
 
-			# Fix -flto[=n] not being recognized by clang.
+			# Fix -flto[=n] not being recognized by clang
 			if tc-is-clang && is-flag "-flto=*"; then
 				replace-flags "-flto=*" "-flto"
 			fi
