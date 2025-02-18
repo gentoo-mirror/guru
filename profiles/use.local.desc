@@ -295,12 +295,10 @@ games-roguelike/cataclysm-dda:tiles - Build graphical (tiles) variant
 games-rpg/open-adventure:autosave - Build with auto-save/resume enabled
 games-rpg/open-adventure:nosave - Build with save/resume disabled
 games-server/among-sus:notifications - Notify players you're moving
-games-util/chiaki:cli - Build CLI interface
-games-util/chiaki:gui - Build Qt GUI interface
-games-util/chiaki:mbedtls - Use mbedtls instead of OpenSSL as part of Chiaki lib
-games-util/chiaki:sdl - Add support for touchpad and sensor handling via SDL. Adds support for any controller supported by SDL
-games-util/chiaki:system-jerasure - Use system-provided jerasure instead of submodule
-games-util/chiaki:system-nanopb - Use system-provided nanopb instead of submodule
+games-util/chiaki-ng:cli - Build CLI interface
+games-util/chiaki-ng:gui - Build Qt GUI interface
+games-util/chiaki-ng:mbedtls - Use mbedtls instead of OpenSSL as part of Chiaki lib
+games-util/chiaki-ng:sdl - Add support for touchpad and sensor handling via SDL. Adds support for any controller supported by SDL
 games-util/itch-bin:system-ffmpeg - Use the system-wide media-video/ffmpeg instead of bundled.
 games-util/legendary:webview - Use dev-python/pywebview for the sign-in process
 games-util/mangohud:mangoapp - Build and install mangoapp and mangoapp layer
@@ -474,7 +472,6 @@ media-libs/wivrn:pipewire - Enable support for audio sink/source through native 
 media-libs/wivrn:pulseaudio - Enable support for audio sink/source through pulseaudio modules
 media-libs/wivrn:vulkan-encode - Enable support for encoding with vulkan video
 media-libs/wivrn:wireshark-plugins - Build the net-analyzer/wireshark plugin for the WiVRn protocol
-media-plugins/gst-plugins-qt5:eglfs - Enable EGL support for embedded devices
 media-plugins/gst-plugins-qt6:eglfs - Enable EGL support for embedded devices
 media-sound/6pm:midimaps - Install midi maps for that synth. Recommended
 media-sound/6pm:nls - Add support for localization

@@ -1,15 +1,15 @@
 BDEPEND=doc? ( app-text/doxygen[dot] dev-qt/qttools[qdoc] ) app-alternatives/ninja >=dev-build/cmake-3.20.5
 DEFINED_PHASES=compile configure install prepare test
-DEPEND=firebird? ( dev-db/firebird ) mysql? ( virtual/mysql ) opengl? ( virtual/opengl ) pango? ( x11-libs/pango ) postgres? ( dev-db/postgresql ) ssl? ( dev-libs/openssl ) <=dev-libs/boost-1.86.0:= media-libs/libharu media-gfx/graphicsmagick[jpeg,png] sys-libs/zlib
+DEPEND=mysql? ( virtual/mysql ) opengl? ( virtual/opengl ) pango? ( x11-libs/pango ) postgres? ( dev-db/postgresql ) ssl? ( dev-libs/openssl ) <=dev-libs/boost-1.86.0:= media-libs/libharu media-gfx/graphicsmagick[jpeg,png] sys-libs/zlib
 DESCRIPTION=Wt, C++ Web Toolkit
 EAPI=8
 HOMEPAGE=https://www.webtoolkit.eu/wt https://github.com/emweb/wt
 INHERIT=cmake
-IUSE=doc firebird mysql opengl +pango pdf postgres ssl
+IUSE=doc mysql opengl +pango pdf postgres ssl
 KEYWORDS=~amd64
 LICENSE=GPL-2
-RDEPEND=firebird? ( dev-db/firebird ) mysql? ( virtual/mysql ) opengl? ( virtual/opengl ) pango? ( x11-libs/pango ) postgres? ( dev-db/postgresql ) ssl? ( dev-libs/openssl ) <=dev-libs/boost-1.86.0:= media-libs/libharu media-gfx/graphicsmagick[jpeg,png] sys-libs/zlib
+RDEPEND=mysql? ( virtual/mysql ) opengl? ( virtual/opengl ) pango? ( x11-libs/pango ) postgres? ( dev-db/postgresql ) ssl? ( dev-libs/openssl ) <=dev-libs/boost-1.86.0:= media-libs/libharu media-gfx/graphicsmagick[jpeg,png] sys-libs/zlib
 SLOT=0/4.11.1
 SRC_URI=https://github.com/emweb/wt/archive/refs/tags/4.11.1.tar.gz -> wt-4.11.1.tar.gz
 _eclasses_=toolchain-funcs	6afdb6107430c1832ca7e16aacbf8fa1	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	357f1a896fbedcd06e5ce55419c49eb9	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	10a50dfaf728b802fcfd37f8d0da9056
-_md5_=9f7a94b7a32d97406cf8580c1dd4ea2b
+_md5_=d366a6fe2edd7405f2992b196168b5b4

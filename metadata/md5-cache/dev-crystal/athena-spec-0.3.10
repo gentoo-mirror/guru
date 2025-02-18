@@ -1,13 +1,13 @@
 BDEPEND=|| ( dev-lang/crystal dev-lang/crystal-bin ) || ( dev-util/shards dev-lang/crystal-bin ) >=dev-util/gshards-0.2
-DEFINED_PHASES=compile configure install prepare test
+DEFINED_PHASES=compile configure install test
 DESCRIPTION=Common/helpful Spec compliant testing utilities
 EAPI=8
-HOMEPAGE=https://github.com/athena-framework/spec https://athenaframework.org/Spec
+HOMEPAGE=https://github.com/athena-framework/spec https://athenaframework.org/Spec/
 INHERIT=shards
 IUSE=debug doc
 KEYWORDS=~amd64
 LICENSE=MIT
 SLOT=0
-SRC_URI=https://github.com/athena-framework/spec/archive/refs/tags/v0.3.7.tar.gz -> athena-spec-0.3.7.tar.gz
+SRC_URI=https://github.com/athena-framework/spec/archive/refs/tags/v0.3.10.tar.gz -> athena-spec-0.3.10.tar.gz
 _eclasses_=edo	367e103a74bf77e6a8da7894d999fa3c	toolchain-funcs	6afdb6107430c1832ca7e16aacbf8fa1	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	357f1a896fbedcd06e5ce55419c49eb9	multiprocessing	1e32df7deee68372153dca65f4a7c21f	crystal-utils	25e840513c93fc4f0194e6240a0d756d	shards	19e21a696fe66db90959968325a9c97f
-_md5_=6e2011d98bcd7971b8cd2f6dec65321a
+_md5_=92915e40dd2e79e345a767b97d8f4ffd

@@ -338,7 +338,7 @@ app-shells/zsh-async 1.8.5_p20211005 1.8.6: Run multiple asynchronous jobs with 
 app-shells/zsh-autocomplete 24.09.04 9999: Real-time type-ahead completion for Zsh.
 app-shells/zsh-autosuggestions 0.7.0-r2: Fish-like autosuggestions for zsh
 app-shells/zsh-history-substring-search 1.0.2 1.1.0: ZSH port of Fish history search (up arrow)
-app-text/OCRmyPDF 16.7.0 16.8.0: OCRmyPDF adds an OCR text layer to scanned PDF files
+app-text/OCRmyPDF 16.8.0 16.9.0: OCRmyPDF adds an OCR text layer to scanned PDF files
 app-text/cmark-gfm 0.29.0.13: GitHub's fork of cmark
 app-text/code-minimap 0.6.8: A high performance code minimap generator
 app-text/dooit 3.1.0: A TUI todo manager
@@ -349,7 +349,7 @@ app-text/klogg 22.06.0.1289-r1: A GUI application to browse and search through l
 app-text/komikku 1.70.0: Manga reader for GNOME
 app-text/koodo-reader-bin 1.5.1 1.6.3: A modern ebook manager and reader with sync and backup capacities
 app-text/lchat 1.0-r2: Line oriented front end for ii-like chat programs
-app-text/lizard 1.17.13 1.17.14 1.17.17: A simple code complexity analyser, supports most of the popular languages.
+app-text/lizard 1.17.13 1.17.19: A simple code complexity analyser, supports most of the popular languages.
 app-text/lorien-bin 0.6.0-r2: Infinite canvas drawing/whiteboarding. Made with Godot.
 app-text/lsp 0.5.0_rc4 9999: The least significant pager
 app-text/owo 0.1.0: OwO-ifies text via regex
@@ -426,7 +426,7 @@ dev-cpp/wt 4.11.1 4.11.2: Wt, C++ Web Toolkit
 dev-cpp/xtensor 0.24.4: header-only C++ library for numerical analysis with multi-dimensional arrays
 dev-cpp/xtl 0.7.5: Algorithms and containers used by the xtensor stack and the xeus stack
 dev-crystal/athena-negotiation 0.1.5 0.2.0: Framework agnostic content negotiation library
-dev-crystal/athena-spec 0.3.7 0.3.8: Common/helpful Spec compliant testing utilities
+dev-crystal/athena-spec 0.3.8 0.3.10: Common/helpful Spec compliant testing utilities
 dev-crystal/backtracer 1.2.2: Crystal shard aiming to assist with parsing backtraces into a structured form
 dev-crystal/crikey 0.1.0_p20170404: Data structure view templates for Crystal
 dev-crystal/crustache 2.4.4: {{Mustache}} for Crystal
@@ -561,7 +561,7 @@ dev-libs/lzfse 9999: LZFSE compression library and command line tool.
 dev-libs/md4c 0.4.8_p20220115 0.5.2: C Markdown parser. Fast, SAX-like interface, CommonMark Compliant.
 dev-libs/mtxclient 0.10.0-r1 0.10.0-r2: Client API library for Matrix, built on top of libcurl
 dev-libs/nanopb 0.4.9.1 9999: plain-C Protocol Buffers for embedded/memory-constrained systems
-dev-libs/open62541 1.4.9: Open source C implementation of OPC UA
+dev-libs/open62541 1.4.10: Open source C implementation of OPC UA
 dev-libs/polyseed 1.0.0 2.0.0 9999: Mnemonic seed library for Monero and other CryptoNote-based currencies.
 dev-libs/qschematic 1.6.0: Library for creating flowcharts and engineering diagrams
 dev-libs/randomx 1.2.1-r1: Proof of work algorithm based on random code execution
@@ -632,7 +632,6 @@ dev-python/anytree 2.12.0: Powerful and Lightweight Python Tree Data Structure w
 dev-python/arpy 2.3.0: Library for accessing ar files
 dev-python/ascim 0.1.1: Manipulate ASCII art as you would do with raster images
 dev-python/asgi-lifespan 2.1.0: Programmatic startup/shutdown of ASGI apps
-dev-python/aspectlib 2.0.0-r1: Aspect-oriented programming, monkey-patch and decorators library
 dev-python/asyncinotify 4.0.1: An async python inotify package
 dev-python/asyncmy 0.2.8: A fast asyncio MySQL driver
 dev-python/asyncpg 0.29.0-r1 0.30.0: An asyncio PostgreSQL driver
@@ -707,7 +706,6 @@ dev-python/hid_ups 1.0.1: Python-based library for interpreting UPS HID data.
 dev-python/hid_ups_exporter 1.0.1: Python-based library for exporting HID UPS data as metrics for Prometheus.
 dev-python/hijridate 2.5.0: Accurate Hijri-Gregorian date converter based on the Umm al-Qura calendar
 dev-python/http-ece 1.2.1: Encrypted Content Encoding for HTTP
-dev-python/hunter 3.6.1: Hunter is a flexible code tracing toolkit
 dev-python/i3ipc 2.2.1 2.2.1-r1: An improved Python library to control i3wm and sway.
 dev-python/iOSbackup 0.9.925: Reads and extracts files from a password-encrypted iOS backup
 dev-python/icecream 2.1.4: Pythonic task execution
@@ -730,7 +728,6 @@ dev-python/langdetect 1.0.9: Port of Google's language-detection library to Pyth
 dev-python/latexify-py 0.4.3.1: Annotate Python source code to get LaTeX expressions
 dev-python/libusb1 3.1.0: Pure-python wrapper for libusb-1.0
 dev-python/lru-dict 1.3.0: Dict like LRU container
-dev-python/manhole 1.8.0-r2: Debugging manhole for python application
 dev-python/markdownify 0.11.6: Convert HTML to Markdown
 dev-python/markovify 0.9.4: Simple, extensible Markov chain generator
 dev-python/mastodon-py 1.8.1: Python wrapper for the Mastodon API
@@ -784,7 +781,6 @@ dev-python/pydispatcher 2.0.7: Multi-producer-multi-consumer signal dispatching 
 dev-python/pydub 0.25.1: Manipulate audio with an simple and easy high level interface
 dev-python/pyfiglet 0.8_p1: Pure-python FIGlet implementation
 dev-python/pyftdi 0.55.4: PyFtdi provides a user-space driver for FTDI devices
-dev-python/pygaljs 1.0.2-r1: Python package providing assets from https://github.com/Kozea/pygal.js
 dev-python/pyglm 2.7.3: Fast OpenGL Mathematics (GLM) for Python
 dev-python/pygments-promql 0.0.9-r1: A PromQL lexer for Pygments
 dev-python/pygsl 2.3.4: Python interface for the GNU scientific library (gsl)
@@ -802,7 +798,6 @@ dev-python/pyqtdarktheme 2.1.0: A flat dark theme for PySide and PyQt.
 dev-python/pyrime 0.0.7: rime for python
 dev-python/pysnooper 1.2.0 1.2.1: Never use print for debugging again
 dev-python/pystardict 0.8-r1: Library for manipulating StarDict dictionaries from within Python
-dev-python/pytest-benchmark 4.0.0: py.test fixture for benchmarking code
 dev-python/pytest-cases 3.8.2: Separate test code from test cases in pytest
 dev-python/pytest-celery 0.1.0: a shim pytest plugin to enable celery.contrib.pytest
 dev-python/pytest-harvest 1.10.4: Store and retrieve data created during your pytest tests execution
@@ -884,7 +879,7 @@ dev-python/volatile 2.1.0: A small extension for the tempfile module
 dev-python/w3lib 2.1.2: Library of web-related functions
 dev-python/webpy 0.62: A web framework for python that is as simple as it is powerful
 dev-python/webrtcvad 2.0.10-r1: Python interface to the Google WebRTC Voice Activity Detector (VAD)
-dev-python/xattr 1.0.0 1.1.0: Python wrapper for extended filesystem attributes
+dev-python/xattr 1.1.0-r1: Python wrapper for extended filesystem attributes
 dev-python/xpybutil 0.0.6: Abstraction layer for xpyb
 dev-python/xunitparser 1.3.4: Read JUnit/XUnit XML files and map them to Python objects
 dev-python/yams 0.7.3-r1 9999: Yet Another MPD Scrobbler (for Last.FM)
@@ -906,12 +901,12 @@ dev-tex/ninecolors 2022.02.13: Select colors with proper WCAG color contrast
 dev-tex/tabularray 2023.03.01: Typeset tabulars and arrays with LATEX3
 dev-tex/tectonic 0.15.0: A modernized, complete, embeddable TeX/LaTeX engine.
 dev-util/DirectXShaderCompiler 1.8.2407: Microsoft DirectX Shader Compiler which is based on LLVM/Clang
-dev-util/bash-language-server 5.3.3 5.4.0 5.4.2: A language server for Bash
+dev-util/bash-language-server 5.3.3 5.4.0 5.4.2 5.4.3: A language server for Bash
 dev-util/bats-assert 2.1.0: Common assertions for Bats
 dev-util/bats-support 0.3.0: Supporting library for Bats test helpers
 dev-util/bc-ur 0.3.0: Blockchain Commons UR Library
 dev-util/bruno-bin 1.9.0 1.9.0-r1: Opensource IDE For Exploring and Testing Api's
-dev-util/bump-my-version 0.29.0 0.30.0: Version bump your Python project
+dev-util/bump-my-version 0.30.0 0.32.1: Version bump your Python project
 dev-util/bump2version 1.0.1: Version-bump your software with a single command!
 dev-util/cargo-post 0.1.7: A cargo wrapper that executes a post build script after a successful build.
 dev-util/catalyst-lab 1.6.0 1.6.1: An automation tool for building Gentoo release stages and binhost packages.
@@ -945,14 +940,14 @@ dev-util/juliaup 1.17.13: Julia installer and version multiplexer
 dev-util/lemminx-bin 0.27.0 0.27.1: XML Language Server
 dev-util/libtypec-utils 0.5.2: Library to interface with USB Type-C/Power Delivery devices
 dev-util/lottieconverter 0.2-r1 0.2-r2: Simple lottie (telegram animated sticker) converter
-dev-util/lua-language-server 3.9.3 3.10.5 3.13.5: Lua language server
+dev-util/lua-language-server 3.9.3 3.10.5 3.13.5 3.13.6: Lua language server
 dev-util/mh 1.4.1: Generate help for Makefile
 dev-util/mock 6.0: Simple chroot build environment manager for building RPMs
 dev-util/mock-core-configs 42.1: Mock core config files basic chroots
 dev-util/ocamlformat 0.26.2 0.26.2-r1: Auto-formatter for OCaml code
 dev-util/ocp-indent 1.8.2: Indentation tool for OCaml, to be used from editors like Emacs and Vim.
 dev-util/pcpp 1.30: A C99 preprocessor written in pure Python
-dev-util/pifpaf 3.2.1 3.2.3: Suite of tools and fixtures to manage daemons for testing
+dev-util/pifpaf 3.2.3 3.3.0: Suite of tools and fixtures to manage daemons for testing
 dev-util/pmbootstrap 3.0.0: Helper tool for developing and building postmarketOS
 dev-util/prysk 0.20.0: Functional testing framework for command line applications (cram fork)
 dev-util/qshaderedit 0.1.5: Multiplatform shader editor inspired by Apple's OpenGL Shader Builder
@@ -984,7 +979,7 @@ dev-vcs/gitqlient-gitserver-plugin 0.2.0: GitQlient GitServer plugin
 dev-vcs/gitqlient-jenkins-plugin 0.2.0: GitQlient Jenkins plugin
 dev-vcs/gitui 0.26.3 0.27.0: blazing fast terminal-ui for git
 dev-vcs/jj 0.26.0 9999: Jujutsu - an experimental version control system
-dev-vcs/lazygit 0.42.0 0.43.1 0.44.1 0.45.2: Simple terminal UI for git commands
+dev-vcs/lazygit 0.42.0 0.43.1 0.44.1 0.45.2 0.46.0: Simple terminal UI for git commands
 dev-vcs/pijul 1.0.0_beta9: A distributed version control system based on a theory of patches
 dev-zig/zls 0.10.0-r2 0.13.0-r1 9999: The officially unofficial Ziglang language server
 games-action/ATLauncher 3.4.27.0: Minecraft launcher which integrates multiple different ModPacks
@@ -1048,7 +1043,7 @@ games-strategy/unciv-bin 4.15.2 4.15.6_p1: Turn-based historical strategy game, 
 games-strategy/zedonline-bin 0.3.2-r1: A remake of the 1996 classic game Z, with network play
 games-util/NotEnoughProduction 0.0.4: Tool for building production chains for modded minecraft
 games-util/ProtonUp-Qt 2.11.1 9999: Install and manage GE-Proton, Luxtorpeda & more for Steam Lutris and Heroic.
-games-util/chiaki 2.2.0 9999: Client for PlayStation 4 and PlayStation 5 Remote Play
+games-util/chiaki-ng 1.9.5 9999: Client for PlayStation 4 and PlayStation 5 Remote Play
 games-util/curseforge 1.269.2.22204: The CurseForge Electron App
 games-util/dwarf-therapist 41.2.5 42.1.5: For managing dwarves in Dwarf Fortress
 games-util/gamehub 0.16.3.2-r1: GameHub is a unified library for all your games
@@ -1124,6 +1119,7 @@ gui-apps/hyprshade 3.2.1 9999: Hyprland shader configuration tool
 gui-apps/hyprshot 1.2.3 1.3.0 9999: Hyprshot is an utility to easily take screenshot in Hyprland using your mouse
 gui-apps/hyprsunset 0.1.0-r1 9999: An application to enable a blue-light filter on Hyprland
 gui-apps/hyprswitch 1.3.1: A CLI/GUI that allows switching between windows in Hyprland
+gui-apps/hyprsysteminfo 0.1.3: Hyprland's system information GUI application
 gui-apps/intiface-central-bin 2.6.0 2.6.4: Buttplug frontend application
 gui-apps/ironbar 0.16.0-r1 0.16.1 0.16.1-r1: Customisable Wayland gtk bar written in Rust
 gui-apps/koi 0.3.1: Theme scheduling for the KDE Plasma Desktop
@@ -1209,7 +1205,7 @@ gui-wm/hyprland-contrib 0.1-r1 9999: Community-maintained extensions for hyprlan
 gui-wm/labwc 0.8.1 0.8.2 9999: Openbox alternative for wayland
 gui-wm/miracle-wm 0.4.0 0.4.1: Tiling Wayland compositor based on Mir
 gui-wm/niri 0.1.10.1 25.01: Scrollable-tiling Wayland compositor
-gui-wm/phoc 0.42.1 0.43.0 0.44.0 0.44.1: Wayland compositor for mobile phones
+gui-wm/phoc 0.42.1 0.43.0 0.44.0 0.44.1 0.45.0: Wayland compositor for mobile phones
 gui-wm/river 0.3.6 0.3.7: A dynamic tiling Wayland compositor
 gui-wm/swayfx 0.4-r2: SwayFX: Sway, but with eye candy!
 kde-apps/kwalletcli 3.03: CLI for the KDE Wallet
@@ -1291,17 +1287,16 @@ media-libs/libsdl3 3.2.0: Simple Direct Media Layer
 media-libs/monado 9999: The open source OpenXR runtime.
 media-libs/opencomposite 9999: OpenVR over OpenXR compatibility layer
 media-libs/openvr 1.23.8: OpenVR SDK
-media-libs/openxr-loader 1.1.40-r1 1.1.43 9999: OpenXR loader
+media-libs/openxr-loader 1.1.43 1.1.45 9999: OpenXR loader
 media-libs/raylib 5.0 9999: A simple and easy-to-use library to learn videogames programming
 media-libs/svt-vp9 0.3.0 9999: Scalable Video Technology for VP9 (SVT-VP9 Encoder)
 media-libs/vvdec 2.3.0: VVdeC, the Fraunhofer Versatile Video Decoder
 media-libs/vvenc 1.11.1: VVenC, the Fraunhofer Versatile Video Encoder
-media-libs/wivrn 0.22-r1 0.23 0.23.1 0.23.2 9999: WiVRn OpenXR streaming
+media-libs/wivrn 0.22-r1 0.23 0.23.1 0.23.2-r1 9999: WiVRn OpenXR streaming
 media-plugins/alsa-sndio 0.2: ALSA PCM to play audio on sndio servers
 media-plugins/argotlunar-bin 2.06-r2: Argotlunar is a sound granulator. Binary Linux VST
 media-plugins/dtmediawiki 9999: Wikimedia Commons export plugin for Darktable. Every upload is converted
 media-plugins/gimp-avif-plugin 9999: Plug-in for development GIMP 2.99.11 for loading/saving AVIF images.
-media-plugins/gst-plugins-qt5 1.20.3 1.22.11: Qt5 QML video sink plugin for GStreamer
 media-plugins/gst-plugins-qt6 1.22.12 1.24.10 1.24.11: Qt6 QML video sink plugin for GStreamer
 media-plugins/qt-heif-image-plugin 0.3.4: Qt plugin for HEIF images
 media-plugins/qt-jpegxl-image-plugin 9999: Qt plug-in to allow Qt and KDE based applications to read/write JXL images.
@@ -1415,7 +1410,7 @@ net-im/WasIstLos 1.6.5 1.7.0: An unofficial WhatsApp desktop application for Lin
 net-im/abaddon 0.2.1 9999: Alternative Discord client using GTK instead of Electron
 net-im/axolotl-bin 2.0.1: Axolotl is a cross-platform Signal client
 net-im/beeper 3.109.1 3.110.1: Beeper: Unified Messenger
-net-im/chatterino 2.5.1: Chat client for https://twitch.tv
+net-im/chatterino 2.5.2: Chat client for https://twitch.tv
 net-im/conduit 0.8.0-r1 0.9.0-r1 9999: Matrix homeserver written in Rust
 net-im/discord-canary-bin 0.0.585: All-in-one voice and text chat
 net-im/discord-ptb-bin 0.0.97: All-in-one voice and text chat
@@ -1446,7 +1441,7 @@ net-im/sliding-sync 0.99.15 0.99.19: Proxy implementation of MSC3575's sync prot
 net-im/teams-for-linux 1.11.5 1.12.3 1.12.5 1.12.6: Unofficial Microsoft Teams client for Linux. Binary precompiled version.
 net-im/vesktop-bin 1.5.4 1.5.5: All-in-one voice and text chat for gamers with Vencord Preinstalled
 net-irc/catgirl 2.2 2.2a: TLS-only terminal IRC client
-net-irc/halloy 2024.14: IRC application written in Rust
+net-irc/halloy 2024.14-r1: IRC application written in Rust
 net-irc/litterbox 1.9: TLS-only IRC logger
 net-irc/pounce 3.0 3.1: Multi-client, TLS-only IRC bouncer
 net-irc/quarg 1.0.0: Search Quassel logs for matching messages and print them
@@ -1525,12 +1520,12 @@ net-news/newsflash 3.1.6 3.1.6-r1 3.3.5: Feed Reader written in GTK
 net-news/newsraft 0.27 0.28 9999: A lightweight feed reader with ncurses user interface inspired by Newsboat.
 net-nntp/inn 2.7.1: InterNetNews - the Internet meets Netnews
 net-nntp/nzb-monkey-go 0.1.16: Golang version of the NZB Monkey with included NZB direct search
-net-nntp/pan 0.159-r1 0.160 0.161: A newsreader for GNOME
+net-nntp/pan 0.161 0.162: A newsreader for GNOME
 net-p2p/bisq-bin 1.9.14-r1: The decentralized bitcoin exchange (non-atomic, with arbitration)
-net-p2p/dogecoin-qt 1.14.8 1.14.9 9999: Dogecoin Core Qt for desktop. Downloaded blockchain is under 2.2GB. Much secure.
+net-p2p/dogecoin-qt 1.14.9 9999: Dogecoin Core Qt for desktop. Downloaded blockchain is under 2.2GB. Much secure.
 net-p2p/feather 2.6.7-r1 2.6.8 2.7.0 9999: A free, open-source Monero wallet
 net-p2p/fragments 3.0.1-r1 3.0.1-r2: Fragments is an easy to use BitTorrent client
-net-p2p/gridcoin 5.4.8.0_p1 5.4.8.0_p1-r1: Proof-of-Stake based cryptocurrency that rewards BOINC computation
+net-p2p/gridcoin 5.4.8.0_p1-r1 5.4.9.0: Proof-of-Stake based cryptocurrency that rewards BOINC computation
 net-p2p/ipfs-desktop-bin 0.39.0 0.40.0: A desktop client for IPFS. The IPFS's Native Application
 net-p2p/monero 0.18.3.4-r1 9999: The secure, private, untraceable cryptocurrency
 net-p2p/monero-gui-bin 0.18.3.4-r1: An open-source GUI wallet developed by the Monero community.
@@ -1539,7 +1534,7 @@ net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
 net-p2p/yggdrasil-go 0.5.12 9999: An experiment in scalable routing as an encrypted IPv6 overlay network
 net-print/hpuld 1.00.39.15.00.23-r1: HP Unified Linux Driver (for samsung hardware)
 net-proxy/MTProxy 3.0.4-r1: Community fork of MTProxy
-net-proxy/byedpi 0.16.1 0.16.2 9999: Bypass DPI SOCKS proxy
+net-proxy/byedpi 0.16.2 0.16.6 9999: Bypass DPI SOCKS proxy
 net-proxy/ngrok-bin 3.19.1: ngrok is a reverse proxy, firewall, and API gateway
 net-proxy/snowflake 2.9.2 2.10.1: Pluggable Transport using WebRTC, inspired by Flashproxy
 net-voip/baresip 3.17.0 3.18.0 3.19.0: Baresip is a portable and modular SIP User-Agent
@@ -1567,7 +1562,7 @@ phosh-base/phosh 0.42.0: Meta package for Phosh, merge this package to install
 phosh-base/phosh-mobile-settings 0.42.0 0.43.0: Mobile Settings App for phosh and related components
 phosh-base/phosh-osk-stub 0.41.1 0.42.0: On-screen keyboard stub
 phosh-base/phosh-shell 0.42.0: Pure Wayland shell for mobile devices
-phosh-base/phosh-tour 0.43.0 0.44.0: Introduction to phosh on smartphones
+phosh-base/phosh-tour 0.43.0 0.44.0 0.45.0: Introduction to phosh on smartphones
 sci-biology/cmdock 0.2.0-r2 0.2.0-r3: Program for docking ligands to proteins and nucleic acids
 sci-biology/cytoscape-bin 3.10.3: A visualization platform for molecular interaction networks
 sci-biology/geneathome 1.10-r5: BOINC application for expanding Gene Regulatory Networks (GRN)
@@ -1677,7 +1672,7 @@ sys-block/partclone 0.3.33: Partition cloning tool
 sys-boot/customrescuecd-x86_64-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/drbl 5.4.2: Diskless Remote Boot in Linux
 sys-boot/grml-rescueboot 0.6.1: grub2 script to add ISO images to the grub2 boot menu
-sys-boot/limine 7.0.0 7.0.3 7.0.5 7.3.0 7.5.0 7.9.2 8.0.5 8.0.6 8.0.7 8.0.9 8.0.11 8.0.12 8.0.13 8.0.14 8.1.1 8.1.2 8.3.2 8.4.0 8.5.0 8.6.0 8.7.0: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
+sys-boot/limine 7.0.0 7.0.3 7.0.5 7.3.0 7.5.0 7.9.2 8.0.5 8.0.6 8.0.7 8.0.9 8.0.11 8.0.12 8.0.13 8.0.14 8.1.1 8.1.2 8.3.2 8.4.0 8.5.0 8.6.0 8.7.0 9.0.0: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
 sys-boot/mkusb 23.2.0: CLI and GUI for creating bootable live USB, with optional persistent storage
 sys-boot/ventoy-bin 1.0.97 1.0.98: Creator of bootable USBs, with ability to copy ISOs, persistence storage
 sys-boot/zfsbootmenu 1.12.0 2.2.2 2.3.0: ZFS bootloader for root-on-ZFS systems
