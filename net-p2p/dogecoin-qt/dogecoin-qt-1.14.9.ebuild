@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
-WANT_AUTOCONF="2.5"
+WANT_AUTOCONF="2.71"
 inherit autotools desktop xdg-utils
 DESCRIPTION="Dogecoin Core Qt for desktop. Downloaded blockchain is under 2.2GB. Much secure."
 HOMEPAGE="https://github.com/dogecoin"
@@ -50,11 +50,6 @@ RDEPEND="${DEPEND}
 	cpu_flags_x86_avx2? (
 		intel-avx2? ( ~app-crypt/intel-ipsec-mb-1.3 )
 	)
-"
-
-BDEPEND="
-	dev-build/autoconf
-	dev-build/automake
 "
 
 pkg_pretend() {
@@ -109,15 +104,15 @@ src_install() {
 	insinto "${DOGEDIR}/bin"
 
 	if use gui ; then
-        insinto /usr/share/pixmaps
-        doins src/qt/res/icons/dogecoin.png
-        dosym "${DOGEDIR}/bin/${PN}" "/usr/bin/${PN}"
+	insinto /usr/share/pixmaps
+	doins src/qt/res/icons/dogecoin.png
+	dosym "${DOGEDIR}/bin/${PN}" "/usr/bin/${PN}"
 
-        if use prune ; then
-            domenu "${FILESDIR}"/"${PN}-prune.desktop"
-        else
-            domenu "${FILESDIR}"/"${PN}.desktop"
-        fi
+	if use prune ; then
+		domenu "${FILESDIR}"/"${PN}-prune.desktop"
+	else
+		domenu "${FILESDIR}"/"${PN}.desktop"
+	fi
 	fi
 
 	if use dogecoind ; then
