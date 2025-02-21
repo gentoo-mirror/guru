@@ -15,6 +15,8 @@ SRC_URI="
 DEPS_URI="https://github.com/freijon/${PN}/releases/download/v${PV}/${P}-crates.tar.xz"
 SRC_URI+=" ${DEPS_URI}"
 
+S="${WORKDIR}/${PN}_cli-${PV}"
+
 LICENSE="MIT"
 # Dependent crate licenses
 LICENSE+="
@@ -41,7 +43,7 @@ src_configure() {
 }
 
 src_compile() {
-	cargo_src_compile --package "${PN}" --bin "${PN}"
+	cargo_src_compile --package "${PN}_cli" --bin "${PN}"
 }
 
 src_install() {

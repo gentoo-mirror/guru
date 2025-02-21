@@ -1,4 +1,4 @@
-# Copyright 2022-2024 Gentoo Authors
+# Copyright 2022-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -23,21 +23,29 @@ SLOT="0"
 RDEPEND="
 	dev-libs/wayland
 	media-libs/fcft
+	media-libs/fontconfig
 	media-libs/freetype
-	media-libs/libpng
+	media-libs/libpng:=
+	media-libs/nanosvg
 	sys-apps/dbus
 	x11-libs/pixman
-	media-libs/fontconfig
 "
 DEPEND="
 	${RDEPEND}
 	dev-libs/tllist
+	>=dev-libs/wayland-protocols-1.32
 "
 BDEPEND="
 	dev-util/wayland-scanner
-	>=dev-libs/wayland-protocols-1.32
 	app-text/scdoc
 "
+
+src_configure() {
+	local emesonargs=(
+		-Dsystem-nanosvg=enabled
+	)
+	meson_src_configure
+}
 
 src_install() {
 	local DOCS=( CHANGELOG.md README.md )
