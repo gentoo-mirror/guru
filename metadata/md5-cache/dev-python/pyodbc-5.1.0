@@ -1,17 +1,17 @@
-BDEPEND=test? ( virtual/mysql[server] dev-db/myodbc:8.0 ) test? ( >=dev-db/unixODBC-2.3.0 >=dev-python/pytest-7.4.4[python_targets_python3_10(-)?,python_targets_python3_11(-)?,python_targets_python3_12(-)?] ) python_targets_python3_10? ( dev-lang/python:3.10 ) python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 ) >=dev-python/gpep517-15[python_targets_python3_10(-)?,python_targets_python3_11(-)?,python_targets_python3_12(-)?] >=dev-python/setuptools-69.0.3[python_targets_python3_10(-)?,python_targets_python3_11(-)?,python_targets_python3_12(-)?]
+BDEPEND=test? ( virtual/mysql[server] dev-db/myodbc:8.0 ) test? ( >=dev-db/unixODBC-2.3.0 >=dev-python/pytest-7.4.4[python_targets_python3_11(-)?,python_targets_python3_12(-)?] ) python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 ) >=dev-python/gpep517-15[python_targets_python3_11(-)?,python_targets_python3_12(-)?] >=dev-python/setuptools-69.0.3[python_targets_python3_11(-)?,python_targets_python3_12(-)?]
 DEFINED_PHASES=compile configure install postinst prepare test
-DEPEND=>=dev-db/unixODBC-2.3.0 python_targets_python3_10? ( dev-lang/python:3.10 ) python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 )
+DEPEND=>=dev-db/unixODBC-2.3.0 python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 )
 DESCRIPTION=Python ODBC library
 EAPI=8
 HOMEPAGE=https://pypi.org/project/pyodbc/ https://github.com/mkleehammer/pyodbc
 INHERIT=databases distutils-r1 optfeature pypi
-IUSE=mssql test python_targets_python3_10 python_targets_python3_11 python_targets_python3_12 debug
+IUSE=mssql test python_targets_python3_11 python_targets_python3_12 debug
 KEYWORDS=~amd64
 LICENSE=MIT
-RDEPEND=>=dev-db/unixODBC-2.3.0 python_targets_python3_10? ( dev-lang/python:3.10 ) python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 )
-REQUIRED_USE=|| ( python_targets_python3_10 python_targets_python3_11 python_targets_python3_12 )
+RDEPEND=>=dev-db/unixODBC-2.3.0 python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 )
+REQUIRED_USE=|| ( python_targets_python3_11 python_targets_python3_12 )
 RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://files.pythonhosted.org/packages/source/p/pyodbc/pyodbc-5.1.0.tar.gz
 _eclasses_=databases	dfd453b90c157a5152c390d2d3166f3c	toolchain-funcs	6afdb6107430c1832ca7e16aacbf8fa1	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	357f1a896fbedcd06e5ce55419c49eb9	out-of-source-utils	dbf9e34ee8964084651e25907fa8f52c	multibuild	4650a65187015567b4e041bb9bfdb364	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	b7726144f5af59e186d66746d0f513e5	python-r1	fa2daad0051275fa416115c76e53b1de	distutils-r1	85ccd3b54a6533fb120ee52b7c76a3df	optfeature	538bce96e5589935b57e178e8635f301	pypi	ad1b21f87d117ae9bb089bdb65b8f013
-_md5_=7a87c56b79e562f0fac4ce0b5f27e267
+_md5_=2305198d32b7d65490a24052f940d55b

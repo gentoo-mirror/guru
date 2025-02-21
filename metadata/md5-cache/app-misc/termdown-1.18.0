@@ -1,15 +1,15 @@
-BDEPEND=python_targets_pypy3? ( dev-lang/pypy:3.10=[symlink,ncurses(+)] ) python_targets_python3_10? ( dev-lang/python:3.10[ncurses(+)] ) python_targets_python3_11? ( dev-lang/python:3.11[ncurses(+)] ) >=dev-python/gpep517-15[python_targets_pypy3(-)?,python_targets_python3_10(-)?,python_targets_python3_11(-)?] >=dev-python/setuptools-69.0.3[python_targets_pypy3(-)?,python_targets_python3_10(-)?,python_targets_python3_11(-)?]
+BDEPEND=python_targets_pypy3? ( dev-lang/pypy:3.10=[symlink,ncurses(+)] ) python_targets_python3_11? ( dev-lang/python:3.11[ncurses(+)] ) >=dev-python/gpep517-15[python_targets_pypy3(-)?,python_targets_python3_11(-)?] >=dev-python/setuptools-69.0.3[python_targets_pypy3(-)?,python_targets_python3_11(-)?]
 DEFINED_PHASES=compile configure install postinst prepare test
 DESCRIPTION=Countdown timer and stopwatch in your terminal
 EAPI=8
 HOMEPAGE=https://github.com/trehn/termdown
 INHERIT=distutils-r1 optfeature
-IUSE=python_targets_pypy3 python_targets_python3_10 python_targets_python3_11
+IUSE=python_targets_pypy3 python_targets_python3_11
 KEYWORDS=~amd64
 LICENSE=GPL-3
-RDEPEND=dev-python/click[python_targets_pypy3(-)?,python_targets_python3_10(-)?,python_targets_python3_11(-)?] dev-python/python-dateutil[python_targets_pypy3(-)?,python_targets_python3_10(-)?,python_targets_python3_11(-)?] dev-python/pyfiglet[python_targets_pypy3(-)?,python_targets_python3_10(-)?,python_targets_python3_11(-)?] python_targets_pypy3? ( dev-lang/pypy:3.10=[symlink,ncurses(+)] ) python_targets_python3_10? ( dev-lang/python:3.10[ncurses(+)] ) python_targets_python3_11? ( dev-lang/python:3.11[ncurses(+)] )
-REQUIRED_USE=|| ( python_targets_pypy3 python_targets_python3_10 python_targets_python3_11 )
+RDEPEND=dev-python/click[python_targets_pypy3(-)?,python_targets_python3_11(-)?] dev-python/python-dateutil[python_targets_pypy3(-)?,python_targets_python3_11(-)?] dev-python/pyfiglet[python_targets_pypy3(-)?,python_targets_python3_11(-)?] python_targets_pypy3? ( dev-lang/pypy:3.10=[symlink,ncurses(+)] ) python_targets_python3_11? ( dev-lang/python:3.11[ncurses(+)] )
+REQUIRED_USE=|| ( python_targets_pypy3 python_targets_python3_11 )
 SLOT=0
 SRC_URI=https://github.com/trehn/termdown/archive/1.18.0.tar.gz -> termdown-1.18.0.gh.tar.gz
 _eclasses_=toolchain-funcs	6afdb6107430c1832ca7e16aacbf8fa1	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	357f1a896fbedcd06e5ce55419c49eb9	out-of-source-utils	dbf9e34ee8964084651e25907fa8f52c	multibuild	4650a65187015567b4e041bb9bfdb364	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	b7726144f5af59e186d66746d0f513e5	python-r1	fa2daad0051275fa416115c76e53b1de	distutils-r1	85ccd3b54a6533fb120ee52b7c76a3df	optfeature	538bce96e5589935b57e178e8635f301
-_md5_=589b9c1d61f5ceb03da44b475d72f1e9
+_md5_=86f2c3634d0b536d8f6774159da833f5

@@ -1,17 +1,17 @@
 BDEPEND=dev-lang/swig dev-qt/qttools:6[linguist,qdoc]
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare
-DEPEND=python_targets_python3_10? ( dev-lang/python:3.10 ) python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 ) python_targets_python3_13? ( dev-lang/python:3.13 ) dev-qt/qtbase:6=[cups,gui,network,opengl,widgets,xml] dev-qt/qtsvg:6
+DEPEND=python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 ) python_targets_python3_13? ( dev-lang/python:3.13 ) dev-qt/qtbase:6=[cups,gui,network,opengl,widgets,xml] dev-qt/qtsvg:6
 DESCRIPTION=A open source IP-XACT-based tool
 EAPI=8
 HOMEPAGE=https://research.tuni.fi/system-on-chip/tools/ https://github.com/kactus2/kactus2dev
 IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
 INHERIT=python-r1 qmake-utils xdg
-IUSE=python_targets_python3_10 python_targets_python3_11 python_targets_python3_12 python_targets_python3_13
+IUSE=python_targets_python3_11 python_targets_python3_12 python_targets_python3_13
 KEYWORDS=~amd64
 LICENSE=GPL-2
-RDEPEND=python_targets_python3_10? ( dev-lang/python:3.10 ) python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 ) python_targets_python3_13? ( dev-lang/python:3.13 ) dev-qt/qtbase:6=[cups,gui,network,opengl,widgets,xml] dev-qt/qtsvg:6
-REQUIRED_USE=|| ( python_targets_python3_10 python_targets_python3_11 python_targets_python3_12 python_targets_python3_13 )
+RDEPEND=python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 ) python_targets_python3_13? ( dev-lang/python:3.13 ) dev-qt/qtbase:6=[cups,gui,network,opengl,widgets,xml] dev-qt/qtsvg:6
+REQUIRED_USE=|| ( python_targets_python3_11 python_targets_python3_12 python_targets_python3_13 )
 SLOT=0
 SRC_URI=https://github.com/kactus2/kactus2dev/archive/v3.13.3.tar.gz -> kactus2-3.13.3.tar.gz
 _eclasses_=out-of-source-utils	dbf9e34ee8964084651e25907fa8f52c	multibuild	4650a65187015567b4e041bb9bfdb364	multiprocessing	1e32df7deee68372153dca65f4a7c21f	toolchain-funcs	6afdb6107430c1832ca7e16aacbf8fa1	multilib	b2a329026f2e404e9e371097dda47f96	python-utils-r1	b7726144f5af59e186d66746d0f513e5	python-r1	fa2daad0051275fa416115c76e53b1de	qmake-utils	a8dd17b1d94586164f5e3fc12b1c6b81	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575
-_md5_=3f2d3b6cb8b59b4fe59723c54aaa1684
+_md5_=765c64cbb386fa4f9393b92be4a9a6de

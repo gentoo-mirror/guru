@@ -1,4 +1,4 @@
-BDEPEND=apidoc? ( app-text/doxygen dev-texlive/texlive-fontutils ) doc? ( || ( ( dev-lang/python:3.12 dev-python/insipid-sphinx-theme[python_targets_python3_12(-)] dev-python/sphinx[python_targets_python3_12(-)] ) ( dev-lang/python:3.11 dev-python/insipid-sphinx-theme[python_targets_python3_11(-)] dev-python/sphinx[python_targets_python3_11(-)] ) ( dev-lang/python:3.10 dev-python/insipid-sphinx-theme[python_targets_python3_10(-)] dev-python/sphinx[python_targets_python3_10(-)] ) ) ) test? ( || ( dev-lang/python:3.12 dev-lang/python:3.11 dev-lang/python:3.10 ) ) >=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array
+BDEPEND=apidoc? ( app-text/doxygen dev-texlive/texlive-fontutils ) doc? ( || ( ( dev-lang/python:3.12 dev-python/insipid-sphinx-theme[python_targets_python3_12(-)] dev-python/sphinx[python_targets_python3_12(-)] ) ( dev-lang/python:3.11 dev-python/insipid-sphinx-theme[python_targets_python3_11(-)] dev-python/sphinx[python_targets_python3_11(-)] ) ) ) test? ( || ( dev-lang/python:3.12 dev-lang/python:3.11 ) ) >=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array
 DEFINED_PHASES=compile configure install postinst postrm prepare setup test
 DEPEND=dev-cpp/eigen:3 >=dev-cpp/indicators-2.3-r1 >=dev-cpp/pcg-cpp-0.98.1_p20210406-r1 >=dev-libs/cxxopts-3 boinc? ( acct-user/boinc )
 DESCRIPTION=Program for docking ligands to proteins and nucleic acids
@@ -13,4 +13,4 @@ RESTRICT=test
 SLOT=0/0.2.0
 SRC_URI=https://gitlab.com/Jukic/cmdock/-/archive/v0.2.0/cmdock-v0.2.0.tar.bz2
 _eclasses_=boinc-app	2f7bf3214f79a932351f3a6c6afebd58	toolchain-funcs	6afdb6107430c1832ca7e16aacbf8fa1	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	357f1a896fbedcd06e5ce55419c49eb9	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	b7726144f5af59e186d66746d0f513e5	meson	99466844dd8d4fcfb07578a76f5a9922	optfeature	538bce96e5589935b57e178e8635f301	python-any-r1	891415dfe39ad9b41b461f2b86354af0	wrapper	11a2a3bd712784986679b60a0cab34a0
-_md5_=8a9b6795e91fd322d0f85a8cc5f0c7a4
+_md5_=aba1499f9ea4a74082a2daa4f757f7bb

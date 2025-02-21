@@ -1,4 +1,4 @@
-BDEPEND=|| ( ( dev-lang/python:3.12 dev-python/pyyaml[python_targets_python3_12(-)] ) ( dev-lang/python:3.11 dev-python/pyyaml[python_targets_python3_11(-)] ) ( dev-lang/python:3.10 dev-python/pyyaml[python_targets_python3_10(-)] ) ) doc? ( dev-ruby/asciidoctor )
+BDEPEND=|| ( ( dev-lang/python:3.12 dev-python/pyyaml[python_targets_python3_12(-)] ) ( dev-lang/python:3.11 dev-python/pyyaml[python_targets_python3_11(-)] ) ) doc? ( dev-ruby/asciidoctor )
 DEFINED_PHASES=compile install prepare setup test
 DEPEND=dev-libs/libedit
 DESCRIPTION=Forward-port of the Crowther/Woods Adventure 2.5
@@ -14,4 +14,4 @@ RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://gitlab.com/esr/open-adventure/-/archive/1.20/open-adventure-1.20.tar.bz2
 _eclasses_=desktop	3a72ffe0d8e1dd73af3a1c8c15a59fed	toolchain-funcs	6afdb6107430c1832ca7e16aacbf8fa1	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	357f1a896fbedcd06e5ce55419c49eb9	multiprocessing	1e32df7deee68372153dca65f4a7c21f	python-utils-r1	b7726144f5af59e186d66746d0f513e5	python-any-r1	891415dfe39ad9b41b461f2b86354af0
-_md5_=0cbe8ad87f41161b60f79b0a9ac40cf9
+_md5_=30d0461d305b775c0cc419c36ebcd415

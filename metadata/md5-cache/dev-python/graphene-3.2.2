@@ -1,16 +1,16 @@
-BDEPEND=doc? ( app-arch/unzip ) test? ( dev-python/iso8601[python_targets_python3_10(-)?,python_targets_python3_11(-)?] dev-python/pytest-asyncio[python_targets_python3_10(-)?,python_targets_python3_11(-)?] dev-python/pytest-mock[python_targets_python3_10(-)?,python_targets_python3_11(-)?] dev-python/pytz[python_targets_python3_10(-)?,python_targets_python3_11(-)?] dev-python/snapshottest[python_targets_python3_10(-)?,python_targets_python3_11(-)?] ) test? ( >=dev-python/aniso8601-8[python_targets_python3_10(-)?,python_targets_python3_11(-)?] >=dev-python/graphql-core-3.1[python_targets_python3_10(-)?,python_targets_python3_11(-)?] >=dev-python/graphql-relay-3.1[python_targets_python3_10(-)?,python_targets_python3_11(-)?] >=dev-python/pytest-7.4.4[python_targets_python3_10(-)?,python_targets_python3_11(-)?] ) doc? ( || ( ( dev-lang/python:3.11 >=dev-python/sphinx-7.2.6[python_targets_python3_11(-)] ) ( dev-lang/python:3.10 >=dev-python/sphinx-7.2.6[python_targets_python3_10(-)] ) ) ) python_targets_python3_10? ( dev-lang/python:3.10 ) python_targets_python3_11? ( dev-lang/python:3.11 ) >=dev-python/gpep517-15[python_targets_python3_10(-)?,python_targets_python3_11(-)?] >=dev-python/setuptools-69.0.3[python_targets_python3_10(-)?,python_targets_python3_11(-)?]
+BDEPEND=doc? ( app-arch/unzip ) test? ( dev-python/iso8601[python_targets_python3_11(-)?] dev-python/pytest-asyncio[python_targets_python3_11(-)?] dev-python/pytest-mock[python_targets_python3_11(-)?] dev-python/pytz[python_targets_python3_11(-)?] dev-python/snapshottest[python_targets_python3_11(-)?] ) test? ( >=dev-python/aniso8601-8[python_targets_python3_11(-)?] >=dev-python/graphql-core-3.1[python_targets_python3_11(-)?] >=dev-python/graphql-relay-3.1[python_targets_python3_11(-)?] >=dev-python/pytest-7.4.4[python_targets_python3_11(-)?] ) doc? ( || ( ( dev-lang/python:3.11 >=dev-python/sphinx-7.2.6[python_targets_python3_11(-)] ) ) ) python_targets_python3_11? ( dev-lang/python:3.11 ) >=dev-python/gpep517-15[python_targets_python3_11(-)?] >=dev-python/setuptools-69.0.3[python_targets_python3_11(-)?]
 DEFINED_PHASES=compile configure install prepare test unpack
 DESCRIPTION=GraphQL Framework for Python
 EAPI=8
 HOMEPAGE=https://graphene-python.org https://pypi.org/project/graphene/ https://github.com/graphql-python/graphene
 INHERIT=distutils-r1
-IUSE=test doc python_targets_python3_10 python_targets_python3_11
+IUSE=test doc python_targets_python3_11
 KEYWORDS=~amd64
 LICENSE=MIT
-RDEPEND=>=dev-python/aniso8601-8[python_targets_python3_10(-)?,python_targets_python3_11(-)?] >=dev-python/graphql-core-3.1[python_targets_python3_10(-)?,python_targets_python3_11(-)?] >=dev-python/graphql-relay-3.1[python_targets_python3_10(-)?,python_targets_python3_11(-)?] python_targets_python3_10? ( dev-lang/python:3.10 ) python_targets_python3_11? ( dev-lang/python:3.11 )
-REQUIRED_USE=|| ( python_targets_python3_10 python_targets_python3_11 )
+RDEPEND=>=dev-python/aniso8601-8[python_targets_python3_11(-)?] >=dev-python/graphql-core-3.1[python_targets_python3_11(-)?] >=dev-python/graphql-relay-3.1[python_targets_python3_11(-)?] python_targets_python3_11? ( dev-lang/python:3.11 )
+REQUIRED_USE=|| ( python_targets_python3_11 )
 RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://github.com/graphql-python/graphene/archive/v3.2.2.tar.gz -> graphene-3.2.2.gh.tar.gz doc? ( https://graphene-python.org/sphinx_graphene_theme.zip -> sphinx-graphene-3.2.2.zip )
 _eclasses_=toolchain-funcs	6afdb6107430c1832ca7e16aacbf8fa1	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	357f1a896fbedcd06e5ce55419c49eb9	out-of-source-utils	dbf9e34ee8964084651e25907fa8f52c	multibuild	4650a65187015567b4e041bb9bfdb364	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	b7726144f5af59e186d66746d0f513e5	python-r1	fa2daad0051275fa416115c76e53b1de	distutils-r1	85ccd3b54a6533fb120ee52b7c76a3df
-_md5_=246f40fd5eb6046f16be252a35f35a7f
+_md5_=ecf49d7a0029840c9b956db817dafadd

@@ -1,17 +1,17 @@
 BDEPEND=utilities? ( app-admin/chrpath ) app-alternatives/ninja >=dev-build/cmake-3.20.5 virtual/fortran
 DEFINED_PHASES=compile configure install prepare setup test
-DEPEND=python? ( python_single_target_python3_10? ( dev-lang/python:3.10 ) python_single_target_python3_11? ( dev-lang/python:3.11 ) python_single_target_python3_12? ( dev-lang/python:3.12 ) ) virtual/fortran
+DEPEND=python? ( python_single_target_python3_11? ( dev-lang/python:3.11 ) python_single_target_python3_12? ( dev-lang/python:3.12 ) ) virtual/fortran
 DESCRIPTION=Compressed numerical arrays that support high-speed random access
 EAPI=8
 HOMEPAGE=https://computing.llnl.gov/projects/zfp https://zfp.io https://github.com/LLNL/ZFP
 INHERIT=cmake fortran-2 python-single-r1
-IUSE=aligned cfp fasthash examples fortran openmp profile python strided test twoway +utilities python_single_target_python3_10 python_single_target_python3_11 python_single_target_python3_12
+IUSE=aligned cfp fasthash examples fortran openmp profile python strided test twoway +utilities python_single_target_python3_11 python_single_target_python3_12
 KEYWORDS=~amd64
 LICENSE=BSD
-RDEPEND=python? ( python_single_target_python3_10? ( dev-lang/python:3.10 ) python_single_target_python3_11? ( dev-lang/python:3.11 ) python_single_target_python3_12? ( dev-lang/python:3.12 ) ) virtual/fortran
-REQUIRED_USE=python? ( ^^ ( python_single_target_python3_10 python_single_target_python3_11 python_single_target_python3_12 ) )
+RDEPEND=python? ( python_single_target_python3_11? ( dev-lang/python:3.11 ) python_single_target_python3_12? ( dev-lang/python:3.12 ) ) virtual/fortran
+REQUIRED_USE=python? ( ^^ ( python_single_target_python3_11 python_single_target_python3_12 ) )
 RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://github.com/LLNL/zfp/archive/refs/tags/1.0.1.tar.gz -> zfp-1.0.1.gh.tar.gz
 _eclasses_=toolchain-funcs	6afdb6107430c1832ca7e16aacbf8fa1	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	357f1a896fbedcd06e5ce55419c49eb9	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	10a50dfaf728b802fcfd37f8d0da9056	fortran-2	54fcb693257134adae26819685891ecc	python-utils-r1	b7726144f5af59e186d66746d0f513e5	python-single-r1	47d8ac9be330c9366112b78fd4f8ce57
-_md5_=eac23c71cf61039bad3af16313e06c6e
+_md5_=9d9d383a570675dfe03c9d905593dc53

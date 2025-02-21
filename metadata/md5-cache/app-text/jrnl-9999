@@ -1,17 +1,17 @@
-BDEPEND=test? ( dev-python/rich dev-python/colorama dev-python/cryptography dev-python/keyring dev-python/parsedatetime dev-python/python-dateutil dev-python/pyxdg dev-python/ruamel-yaml dev-python/tzlocal test? ( dev-python/pytest dev-python/pytest-bdd dev-python/pytest-xdist dev-python/tomli ) >=dev-python/pytest-7.4.4[python_targets_python3_10(-)?,python_targets_python3_11(-)?,python_targets_python3_12(-)?] ) python_targets_python3_10? ( dev-lang/python:3.10 ) python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 ) >=dev-python/gpep517-15[python_targets_python3_10(-)?,python_targets_python3_11(-)?,python_targets_python3_12(-)?] >=dev-python/poetry-core-1.9.0[python_targets_python3_10(-)?,python_targets_python3_11(-)?,python_targets_python3_12(-)?]
+BDEPEND=test? ( dev-python/rich dev-python/colorama dev-python/cryptography dev-python/keyring dev-python/parsedatetime dev-python/python-dateutil dev-python/pyxdg dev-python/ruamel-yaml dev-python/tzlocal test? ( dev-python/pytest dev-python/pytest-bdd dev-python/pytest-xdist dev-python/tomli ) >=dev-python/pytest-7.4.4[python_targets_python3_11(-)?,python_targets_python3_12(-)?] ) python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 ) >=dev-python/gpep517-15[python_targets_python3_11(-)?,python_targets_python3_12(-)?] >=dev-python/poetry-core-1.9.0[python_targets_python3_11(-)?,python_targets_python3_12(-)?]
 DEFINED_PHASES=compile configure install prepare test
 DEPEND=dev-python/rich dev-python/colorama dev-python/cryptography dev-python/keyring dev-python/parsedatetime dev-python/python-dateutil dev-python/pyxdg dev-python/ruamel-yaml dev-python/tzlocal test? ( dev-python/pytest dev-python/pytest-bdd dev-python/pytest-xdist dev-python/tomli )
 DESCRIPTION=Collect your thoughts and notes without leaving the command line
 EAPI=8
 HOMEPAGE=https://jrnl.sh
 INHERIT=distutils-r1
-IUSE=test test python_targets_python3_10 python_targets_python3_11 python_targets_python3_12
+IUSE=test test python_targets_python3_11 python_targets_python3_12
 KEYWORDS=~amd64
 LICENSE=GPL-3
-RDEPEND=dev-python/rich dev-python/colorama dev-python/cryptography dev-python/keyring dev-python/parsedatetime dev-python/python-dateutil dev-python/pyxdg dev-python/ruamel-yaml dev-python/tzlocal test? ( dev-python/pytest dev-python/pytest-bdd dev-python/pytest-xdist dev-python/tomli ) python_targets_python3_10? ( dev-lang/python:3.10 ) python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 )
-REQUIRED_USE=|| ( python_targets_python3_10 python_targets_python3_11 python_targets_python3_12 )
+RDEPEND=dev-python/rich dev-python/colorama dev-python/cryptography dev-python/keyring dev-python/parsedatetime dev-python/python-dateutil dev-python/pyxdg dev-python/ruamel-yaml dev-python/tzlocal test? ( dev-python/pytest dev-python/pytest-bdd dev-python/pytest-xdist dev-python/tomli ) python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 )
+REQUIRED_USE=|| ( python_targets_python3_11 python_targets_python3_12 )
 RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://github.com/jrnl-org/jrnl/archive/refs/heads/develop.tar.gz -> jrnl-9999.tar.gz
 _eclasses_=toolchain-funcs	6afdb6107430c1832ca7e16aacbf8fa1	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	357f1a896fbedcd06e5ce55419c49eb9	out-of-source-utils	dbf9e34ee8964084651e25907fa8f52c	multibuild	4650a65187015567b4e041bb9bfdb364	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	b7726144f5af59e186d66746d0f513e5	python-r1	fa2daad0051275fa416115c76e53b1de	distutils-r1	85ccd3b54a6533fb120ee52b7c76a3df
-_md5_=7003f6c805038a14e593579d06f35e94
+_md5_=f8ce7c1f3c3291134f5cd3f2cbb04ef0

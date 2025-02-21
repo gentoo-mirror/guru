@@ -1,17 +1,17 @@
-BDEPEND=dev-python/hatch-fancy-pypi-readme[python_targets_python3_10(-)?,python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/hatch-vcs[python_targets_python3_10(-)?,python_targets_python3_11(-)?,python_targets_python3_12(-)?] test? ( dev-python/beautifulsoup4[python_targets_python3_10(-)?,python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/filelock[python_targets_python3_10(-)?,python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/requests[socks5,python_targets_python3_10(-)?,python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/tqdm[python_targets_python3_10(-)?,python_targets_python3_11(-)?,python_targets_python3_12(-)?] >=dev-python/pytest-7.4.4[python_targets_python3_10(-)?,python_targets_python3_11(-)?,python_targets_python3_12(-)?] ) python_targets_python3_10? ( dev-lang/python:3.10 ) python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 ) >=dev-python/gpep517-15[python_targets_python3_10(-)?,python_targets_python3_11(-)?,python_targets_python3_12(-)?] >=dev-python/hatchling-1.21.1[python_targets_python3_10(-)?,python_targets_python3_11(-)?,python_targets_python3_12(-)?]
+BDEPEND=dev-python/hatch-fancy-pypi-readme[python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/hatch-vcs[python_targets_python3_11(-)?,python_targets_python3_12(-)?] test? ( dev-python/beautifulsoup4[python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/filelock[python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/requests[socks5,python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/tqdm[python_targets_python3_11(-)?,python_targets_python3_12(-)?] >=dev-python/pytest-7.4.4[python_targets_python3_11(-)?,python_targets_python3_12(-)?] ) python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 ) >=dev-python/gpep517-15[python_targets_python3_11(-)?,python_targets_python3_12(-)?] >=dev-python/hatchling-1.21.1[python_targets_python3_11(-)?,python_targets_python3_12(-)?]
 DEFINED_PHASES=compile configure install prepare test
 DESCRIPTION=Google Drive public file/folder downloader
 EAPI=8
 HOMEPAGE=https://pypi.org/project/gdown/ https://github.com/wkentaro/gdown
 INHERIT=distutils-r1
-IUSE=test python_targets_python3_10 python_targets_python3_11 python_targets_python3_12
+IUSE=test python_targets_python3_11 python_targets_python3_12
 KEYWORDS=~amd64
 LICENSE=MIT
 PROPERTIES=test_network
-RDEPEND=dev-python/beautifulsoup4[python_targets_python3_10(-)?,python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/filelock[python_targets_python3_10(-)?,python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/requests[socks5,python_targets_python3_10(-)?,python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/tqdm[python_targets_python3_10(-)?,python_targets_python3_11(-)?,python_targets_python3_12(-)?] python_targets_python3_10? ( dev-lang/python:3.10 ) python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 )
-REQUIRED_USE=|| ( python_targets_python3_10 python_targets_python3_11 python_targets_python3_12 )
+RDEPEND=dev-python/beautifulsoup4[python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/filelock[python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/requests[socks5,python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/tqdm[python_targets_python3_11(-)?,python_targets_python3_12(-)?] python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 )
+REQUIRED_USE=|| ( python_targets_python3_11 python_targets_python3_12 )
 RESTRICT=test !test? ( test )
 SLOT=0
 SRC_URI=https://github.com/wkentaro/gdown/archive/refs/tags/v5.1.0.tar.gz -> gdown-5.1.0.gh.tar.gz
 _eclasses_=toolchain-funcs	6afdb6107430c1832ca7e16aacbf8fa1	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	357f1a896fbedcd06e5ce55419c49eb9	out-of-source-utils	dbf9e34ee8964084651e25907fa8f52c	multibuild	4650a65187015567b4e041bb9bfdb364	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	b7726144f5af59e186d66746d0f513e5	python-r1	fa2daad0051275fa416115c76e53b1de	distutils-r1	85ccd3b54a6533fb120ee52b7c76a3df
-_md5_=65f4f78b648e29b47c48d785128e81e1
+_md5_=93c6d788f65cd747922155f6189f995e

@@ -1,4 +1,4 @@
-BDEPEND=|| ( dev-lang/python:3.12 dev-lang/python:3.11 dev-lang/python:3.10 ) app-arch/zopfli media-gfx/pngquant x11-libs/cairo || ( media-gfx/imagemagick[png] media-gfx/graphicsmagick[png] ) || ( ( dev-lang/python:3.12 >=dev-python/fonttools-4.7.0[python_targets_python3_12(-)] >=dev-python/notofonttools-0.2.13[python_targets_python3_12(-)] ) ( dev-lang/python:3.11 >=dev-python/fonttools-4.7.0[python_targets_python3_11(-)] >=dev-python/notofonttools-0.2.13[python_targets_python3_11(-)] ) ( dev-lang/python:3.10 >=dev-python/fonttools-4.7.0[python_targets_python3_10(-)] >=dev-python/notofonttools-0.2.13[python_targets_python3_10(-)] ) ) X? ( >=x11-apps/mkfontscale-1.2.0 media-fonts/encodings )
+BDEPEND=|| ( dev-lang/python:3.12 dev-lang/python:3.11 ) app-arch/zopfli media-gfx/pngquant x11-libs/cairo || ( media-gfx/imagemagick[png] media-gfx/graphicsmagick[png] ) || ( ( dev-lang/python:3.12 >=dev-python/fonttools-4.7.0[python_targets_python3_12(-)] >=dev-python/notofonttools-0.2.13[python_targets_python3_12(-)] ) ( dev-lang/python:3.11 >=dev-python/fonttools-4.7.0[python_targets_python3_11(-)] >=dev-python/notofonttools-0.2.13[python_targets_python3_11(-)] ) ) X? ( >=x11-apps/mkfontscale-1.2.0 media-fonts/encodings )
 DEFINED_PHASES=compile install postinst postrm prepare setup unpack
 DESCRIPTION=A color emoji font with a flat visual style, designed and used by Twitter
 EAPI=8
@@ -11,4 +11,4 @@ RESTRICT=binchecks strip
 SLOT=0
 SRC_URI=https://github.com/googlefonts/noto-emoji/archive/refs/tags/v2.034.tar.gz -> twemoji-14.0.2-noto.tar.gz https://github.com/twitter/twemoji/archive/refs/tags/v14.0.2.tar.gz -> twemoji-14.0.2.tar.gz
 _eclasses_=font	aa113a3df9cd0a9693a1c1ee7c34a6eb	multiprocessing	1e32df7deee68372153dca65f4a7c21f	toolchain-funcs	6afdb6107430c1832ca7e16aacbf8fa1	multilib	b2a329026f2e404e9e371097dda47f96	python-utils-r1	b7726144f5af59e186d66746d0f513e5	python-any-r1	891415dfe39ad9b41b461f2b86354af0
-_md5_=df5eb9127d6b86edbfc9694baa9f9d95
+_md5_=9c693bb2ade542eb0d211e978fe061b4

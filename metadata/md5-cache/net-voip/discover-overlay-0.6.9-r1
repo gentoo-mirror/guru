@@ -1,16 +1,16 @@
-BDEPEND=python_targets_python3_10? ( dev-lang/python:3.10 ) python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 ) >=dev-python/gpep517-15[python_targets_python3_10(-)?,python_targets_python3_11(-)?,python_targets_python3_12(-)?] >=dev-python/setuptools-69.0.3[python_targets_python3_10(-)?,python_targets_python3_11(-)?,python_targets_python3_12(-)?]
+BDEPEND=python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 ) >=dev-python/gpep517-15[python_targets_python3_11(-)?,python_targets_python3_12(-)?] >=dev-python/setuptools-69.0.3[python_targets_python3_11(-)?,python_targets_python3_12(-)?]
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare test
 DESCRIPTION=Yet another Discord overlay for Linux written in Python using GTK3
 EAPI=8
 HOMEPAGE=https://github.com/trigg/Discover
 IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
 INHERIT=distutils-r1 xdg
-IUSE=wayland python_targets_python3_10 python_targets_python3_11 python_targets_python3_12
+IUSE=wayland python_targets_python3_11 python_targets_python3_12
 KEYWORDS=~amd64
 LICENSE=GPL-3
-RDEPEND=>=dev-python/pygobject-3.22[python_targets_python3_10(-)?,python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/websocket-client[python_targets_python3_10(-)?,python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/pyxdg[python_targets_python3_10(-)?,python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/requests[python_targets_python3_10(-)?,python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/pillow[python_targets_python3_10(-)?,python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/python-xlib[python_targets_python3_10(-)?,python_targets_python3_11(-)?,python_targets_python3_12(-)?] wayland? ( gui-libs/gtk-layer-shell[introspection(+)] ) python_targets_python3_10? ( dev-lang/python:3.10 ) python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 )
-REQUIRED_USE=|| ( python_targets_python3_10 python_targets_python3_11 python_targets_python3_12 )
+RDEPEND=>=dev-python/pygobject-3.22[python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/websocket-client[python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/pyxdg[python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/requests[python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/pillow[python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/python-xlib[python_targets_python3_11(-)?,python_targets_python3_12(-)?] wayland? ( gui-libs/gtk-layer-shell[introspection(+)] ) python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 )
+REQUIRED_USE=|| ( python_targets_python3_11 python_targets_python3_12 )
 SLOT=0
 SRC_URI=https://github.com/trigg/Discover/archive/refs/tags/v0.6.9.tar.gz -> discover-overlay-0.6.9.gh.tar.gz
 _eclasses_=toolchain-funcs	6afdb6107430c1832ca7e16aacbf8fa1	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	357f1a896fbedcd06e5ce55419c49eb9	out-of-source-utils	dbf9e34ee8964084651e25907fa8f52c	multibuild	4650a65187015567b4e041bb9bfdb364	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	b7726144f5af59e186d66746d0f513e5	python-r1	fa2daad0051275fa416115c76e53b1de	distutils-r1	85ccd3b54a6533fb120ee52b7c76a3df	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575
-_md5_=371af8550b8f580ef66b5cacda41bd47
+_md5_=0c08b30ab9daeb36e25639f1b8edc2cd
