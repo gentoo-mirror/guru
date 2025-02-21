@@ -359,7 +359,7 @@ app-text/smu 1.5 9999: Simple markup - markdown like syntax
 app-text/texlab 5.21.0: LaTeX Language Server
 app-text/the-platinum-searcher-bin 2.2.0: Fast CLI search tool, faster than grep, ack, silver_searcher (ag)
 app-text/tldr 3.2.0 3.3.0: Python command line client for tldr pages
-app-text/typst 0.12.0: A markup-based typesetting system for the sciences
+app-text/typst 0.13.0 9999: A markup-based typesetting system for the sciences
 app-text/typstyle 0.12.12: A beautiful and reliable code formatter for Typst
 app-text/vale 3.7.1 3.9.1: A syntax-aware linter for prose built with speed and extensibility in mind
 app-vim/ale 3.3.0: Check syntax in Vim asynchronously and fix files, with LSP support
@@ -458,7 +458,7 @@ dev-crystal/webdrivers 0.4.3-r1: Helps manage drivers for Selenium, such as the 
 dev-crystal/webless 0.1.0: HTTP::Client for testing HTTP::Handlers directly and maintaining cookies
 dev-crystal/webmock 0.14.0: Mock HTTP client
 dev-db/libpg_query 16.5.1.0 17.6.0.0: C library for accessing the PostgreSQL parser outside of the server environment
-dev-db/limbo 0.0.14: The Limbo interactive SQL shell
+dev-db/limbo 0.0.15: The Limbo interactive SQL shell
 dev-db/pg_query_vala 0.1.0_pre20240326-r1 0.1.0_pre20241001: Thin wrapper around libpg_query to use with vala
 dev-db/pg_repack 1.5.0: Reorganize tables in PostgreSQL databases with minimal locks
 dev-db/psequel 0.2.0-r1: Run your SQL query
@@ -842,7 +842,7 @@ dev-python/sortedcollections 2.1.0: Apache2 licensed Python sorted collections l
 dev-python/sphinx-argparse-cli 1.11.1: Render CLI arguments (sub-commands friendly) defined by argparse module
 dev-python/sphinx-click 4.2.0: Sphinx plugin to automatically document click-based applications
 dev-python/sphinx-design 0.6.1: A sphinx extension for designing beautiful responsive web components
-dev-python/sphinx-hoverxref 1.3.0: Sphinx extension to show tooltips with content embedded when hover a reference
+dev-python/sphinx-hoverxref 1.4.2: Sphinx extension to show tooltips with content embedded when hover a reference
 dev-python/sphinx-paramlinks 0.6.0: Allows param links in Sphinx function/method descriptions to be linkable
 dev-python/sphinx-sitemap 2.5.1 2.6.0: Sitemap generator for Sphinx
 dev-python/sphinxcontrib-katex 0.9.9 0.9.10: KaTeX Sphinx extension for rendering of math in HTML pages
@@ -896,7 +896,7 @@ dev-ruby/rbspy 0.17.0-r1 0.21.0: Sampling CPU profiler for Ruby
 dev-ruby/rspec-wait 0.0.9: enables time-resilient expectations in your RSpec test suite
 dev-ruby/ruby-build 9999: Installs virtually any version of Ruby, from source
 dev-ruby/ruby-install 0.9.3: Installs Ruby, JRuby, Rubinius, TruffleRuby, or MRuby.
-dev-scheme/sagittarius 0.9.11: R6RS/R7RS Scheme system.
+dev-scheme/sagittarius 0.9.12: R6RS/R7RS Scheme system.
 dev-tex/ninecolors 2022.02.13: Select colors with proper WCAG color contrast
 dev-tex/tabularray 2023.03.01: Typeset tabulars and arrays with LATEX3
 dev-tex/tectonic 0.15.0: A modernized, complete, embeddable TeX/LaTeX engine.
@@ -924,7 +924,7 @@ dev-util/find-work 0.990.0 1.0.0 9999: Personal advice utility for Gentoo packag
 dev-util/find-work-bugzilla 0.3.0 1.0.0: Personal advice utility for Gentoo package maintainers: Bugzilla plugin
 dev-util/find-work-pkgcheck 0.3.0 1.0.0: Personal advice utility for Gentoo package maintainers: pkgcheck plugin
 dev-util/find-work-repology 0.3.0 1.0.0: Personal advice utility for Gentoo package maintainers: Repology plugin
-dev-util/fnm 1.37.1: Fast and simple Node.js version manager
+dev-util/fnm 1.38.1: Fast and simple Node.js version manager
 dev-util/fortls 2.13.0 3.0.0 3.1.1 3.1.2: Fortran Language Server (fortls)
 dev-util/fortran-test-drive 0.4.0 0.5.0: The simple testing framework (for Fortran)
 dev-util/gammaray 3.1.0: High-level runtime introspection tool for Qt applications
@@ -1102,7 +1102,7 @@ gui-apps/coreuniverse 4.5.0 9999: Shows information about apps for C Suite
 gui-apps/darkman 2.0.1-r1: Framework for dark and light mode transitions
 gui-apps/espanso 2.2.2: Cross-platform Text Expander written in Rust
 gui-apps/eww 0.6.0-r3 9999: Elkowars Wacky Widgets is a standalone widget system made in Rust
-gui-apps/fnott 1.6.0 9999: Keyboard driven and lightweight Wayland notification daemon.
+gui-apps/fnott 1.7.1 9999: Keyboard driven and lightweight Wayland notification daemon.
 gui-apps/fuzzel 1.10.2-r1 1.11.1: Application launcher for wlroots based Wayland compositors.
 gui-apps/gcolor3 2.4.0: A simple color chooser written in GTK3
 gui-apps/gradience 0.3.0-r2 0.4.1: Change the look of Adwaita with ease
@@ -1412,7 +1412,7 @@ net-im/axolotl-bin 2.0.1: Axolotl is a cross-platform Signal client
 net-im/beeper 3.109.1 3.110.1: Beeper: Unified Messenger
 net-im/chatterino 2.5.2: Chat client for https://twitch.tv
 net-im/conduit 0.8.0-r1 0.9.0-r1 9999: Matrix homeserver written in Rust
-net-im/discord-canary-bin 0.0.585: All-in-one voice and text chat
+net-im/discord-canary-bin 0.0.593: All-in-one voice and text chat
 net-im/discord-ptb-bin 0.0.97: All-in-one voice and text chat
 net-im/eturnal 1.12.0-r1 1.12.1: STUN/TURN server
 net-im/flare 0.12.0-r1: Chat with your friends on Signal
@@ -1508,12 +1508,12 @@ net-misc/wayback_machine_downloader 2.3.0 2.3.1: Download an entire website from
 net-misc/whatscli 1.0.6 1.0.11: A command line interface for WhatsApp
 net-misc/wlvncc 20240817 20250122 99999999: A Wayland Native VNC Client
 net-misc/wsdd 0.7.0 0.7.1 0.8: A Web Service Discovery host daemon.
-net-misc/xh 0.23.1: Friendly and fast tool for sending HTTP requests
+net-misc/xh 0.24.0: Friendly and fast tool for sending HTTP requests
 net-misc/xkcd-handler 1.1.4: A handler for XKCD urls
 net-misc/xmrig-mo 6.21.2: MoneroOcean fork of xmrig that supports algo switching
 net-misc/yacy 1.930.202405130205: YaCy - p2p based distributed web-search engine
 net-misc/yt-dlg 2024.03.19: A cross platform front-end GUI of the popular youtube-dl written in wxPython.
-net-news/cliflux 1.4.4 1.5.0: A terminal-ui (TUI) client for the Miniflux RSS reader
+net-news/cliflux 1.5.0 1.6.0: A terminal-ui (TUI) client for the Miniflux RSS reader
 net-news/comitium 1.8.1: feed aggregator for gemini supporting many formats and protocols
 net-news/gfeeds 2.2.0-r1 2.2.0-r2 2.2.0-r3: An RSS/Atom feed reader for GNOME.
 net-news/newsflash 3.1.6 3.1.6-r1 3.3.5: Feed Reader written in GTK
@@ -1537,10 +1537,10 @@ net-proxy/MTProxy 3.0.4-r1: Community fork of MTProxy
 net-proxy/byedpi 0.16.2 0.16.6 9999: Bypass DPI SOCKS proxy
 net-proxy/ngrok-bin 3.19.1: ngrok is a reverse proxy, firewall, and API gateway
 net-proxy/snowflake 2.9.2 2.10.1: Pluggable Transport using WebRTC, inspired by Flashproxy
-net-voip/baresip 3.17.0 3.18.0 3.19.0: Baresip is a portable and modular SIP User-Agent
+net-voip/baresip 3.18.0 3.19.0 3.20.0: Baresip is a portable and modular SIP User-Agent
 net-voip/discover-overlay 0.6.9-r1 0.7.4 0.7.8: Yet another Discord overlay for Linux written in Python using GTK3
 net-voip/gnome-calls 46.3 47.0 47.0-r1: Phone dialer and call handler
-net-voip/re 3.17.0 3.18.0 3.19.0: Generic library for real-time communications with async IO support
+net-voip/re 3.18.0 3.19.0 3.20.0: Generic library for real-time communications with async IO support
 net-voip/vvmd 0.8-r1: vvmd is a lower level daemon that retrieves Visual Voicemail
 net-vpn/GlobalProtect-openconnect 2.3.9-r1: Unofficial GlobalProtect VPN client for Linux
 net-vpn/cloudflare-warp 2024.2.62-r2 2024.4.133-r1 2024.11.309: Cloudflare Warp Client
@@ -1569,6 +1569,7 @@ sci-biology/geneathome 1.10-r5: BOINC application for expanding Gene Regulatory 
 sci-biology/jalview-bin 2.11.4.1: Editor of multiple sequence alignments.
 sci-chemistry/vesta-bin 3.5.8: Visualisation for Electronic and STructural Analysis.
 sci-chemistry/xcrysden 1.6.2-r2: For the visualisation of molecular and crystal structures.
+sci-electronics/bender 0.28.1: A dependency management tool for hardware projects
 sci-electronics/bluespec 2022.01-r1 2023.01 2023.07 9999: Toolchain for the Bluespec Hardware Definition Language
 sci-electronics/circt 1.14.0 1.37.0 1.76.0: The fast free Verilog/SystemVerilog simulator
 sci-electronics/coil64 2.1.27: Coil64 is inductance coil calculator
