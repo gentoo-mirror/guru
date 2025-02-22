@@ -1,0 +1,13 @@
+DEFINED_PHASES=install postinst postrm preinst setup unpack
+DESCRIPTION=Package for UnityHub
+EAPI=8
+HOMEPAGE=https://unity.com/unity-hub
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=desktop linux-info unpacker xdg
+KEYWORDS=~amd64
+LICENSE=Unity-TOS
+RDEPEND=app-accessibility/at-spi2-core:2 dev-libs/expat dev-libs/glib:2 dev-libs/nspr dev-util/lttng-ust media-libs/alsa-lib media-libs/mesa net-print/cups sys-apps/dbus sys-libs/zlib x11-libs/cairo dev-libs/nss x11-libs/gtk+:3 app-alternatives/cpio x11-libs/libdrm x11-libs/libX11 x11-libs/libxcb x11-libs/libXcomposite x11-libs/libXdamage x11-libs/libXext x11-libs/libXfixes x11-libs/libxkbcommon x11-libs/libXrandr x11-libs/pango
+SLOT=0
+SRC_URI=amd64? ( https://hub.unity3d.com/linux/repos/deb/pool/main/u/unity/unityhub_amd64/unityhub-amd64-3.10.0.deb )
+_eclasses_=desktop	3a72ffe0d8e1dd73af3a1c8c15a59fed	toolchain-funcs	6afdb6107430c1832ca7e16aacbf8fa1	multilib	b2a329026f2e404e9e371097dda47f96	linux-info	ea4122ba1d8791a12b78e53f9510a2e3	multiprocessing	1e32df7deee68372153dca65f4a7c21f	unpacker	fb4b84181244b3b9990fa0bf40232dd2	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575
+_md5_=da6aed07e32d61cfb27c6e5e1fa6decf
