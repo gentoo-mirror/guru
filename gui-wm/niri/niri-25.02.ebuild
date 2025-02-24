@@ -3,11 +3,11 @@
 
 EAPI=8
 
-LLVM_COMPAT=( {16..19} )
-RUST_MIN_VER="1.80.0"
+LLVM_COMPAT=( 18 19 )
+RUST_MIN_VER="1.80.1"
 
 # used for version string
-export NIRI_BUILD_COMMIT="e05bc26"
+export NIRI_BUILD_COMMIT="b94a5db"
 
 inherit cargo llvm-r2 systemd
 
@@ -95,10 +95,6 @@ src_test() {
 	export XDG_RUNTIME_DIR="${T}/xdg"
 	mkdir "${XDG_RUNTIME_DIR}" || die
 	chmod 0700 "${XDG_RUNTIME_DIR}" || die
-
-	# tests might fail when executed in parallel
-	# https://github.com/YaLTeR/niri/issues/953
-	export RAYON_NUM_THREADS=1
 
 	cargo_src_test
 }

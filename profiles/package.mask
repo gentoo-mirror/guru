@@ -18,6 +18,11 @@
 
 # New entries go on top.
 
+# David Roman <davidroman96@gmail.com> (2025-01-30)
+# Depends on qtpy[pyqt5] but pyqt5 USE has been removed from it
+# Removal on 2025-03-24
+app-misc/brightness-control
+
 # Skyler Mäntysaari <sm+gentoo@skym.fi> (2025-02-11)
 # No maintainer
 # Bugs: 945712, 928370
@@ -31,12 +36,6 @@ www-apps/honk
 # ebuild author, it "keep itself up-to-date", so an ebuild for it is useless.
 # Removal on 2025-02-28
 games-util/curseforge
-
-# Takuya Wakazono <pastalian46@gmail.com> (2025-01-23)
-# Depends on dev-qt/qtbluetooth:5, which is masked in ::gentoo and will
-# be removed.
-# Removal on 2025-02-23.
-gui-apps/coretoppings
 
 # Julien Roy <julien@jroy.ca> (2024-03-21)
 # sys-libs/libucontext is masked in ::gentoo

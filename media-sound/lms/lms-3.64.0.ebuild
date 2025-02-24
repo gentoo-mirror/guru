@@ -12,7 +12,7 @@ SRC_URI="https://github.com/epoupon/lms/archive/refs/tags/v${PV}.tar.gz -> ${P}.
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="test stb"
+IUSE="test +stb"
 RESTRICT="!test? ( test )"
 
 RDEPEND="
