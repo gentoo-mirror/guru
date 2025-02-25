@@ -4,7 +4,7 @@
 EAPI=8
 
 DESCRIPTION="ngrok is a reverse proxy, firewall, and API gateway"
-HOMEPAGE="https://ngrok.com"
+HOMEPAGE="https://ngrok.org"
 # Each supported arch should get their own bins
 SRC_URI="
 	amd64? ( https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz -> ${P}-amd64.tgz )

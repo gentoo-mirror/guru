@@ -13,26 +13,26 @@ inherit chromium-2 desktop unpacker linux-info xdg
 
 DESCRIPTION="The CurseForge Electron App"
 HOMEPAGE="https://www.curseforge.com/"
-SRC_URI="https://curseforge.overwolf.com/downloads/curseforge-latest-linux.deb"
+SRC_URI="
+	amd64? ( https://${PN}.overwolf.com/downloads/${PN}-latest-linux.deb -> ${P}.deb )"
 S="${WORKDIR}/"
 
-LICENSE="Overwolf MIT Apache-2.0"
+LICENSE="Overwolf Apache-2.0 BSD BSD-2 GPL-2 LGPL-2+ LGPL-2.1 MPL-2.0 MIT"
 SLOT="0"
 KEYWORDS="~amd64"
 RESTRICT="bindist mirror strip test"
 
 RDEPEND="
-	app-accessibility/at-spi2-core
+	app-accessibility/at-spi2-core:2
 	dev-libs/expat
-	dev-libs/glib
+	dev-libs/glib:2
 	dev-libs/nspr
 	dev-libs/nss
 	media-libs/alsa-lib
-	media-libs/fontconfig
 	media-libs/mesa[gbm(+)]
 	net-print/cups
 	sys-apps/dbus
-	sys-libs/glibc
+	sys-libs/zlib
 	x11-libs/cairo
 	x11-libs/libdrm
 	x11-libs/gdk-pixbuf:2
@@ -45,11 +45,10 @@ RDEPEND="
 	x11-libs/libdrm
 	x11-libs/libxcb
 	x11-libs/libxkbcommon
+	x11-libs/libX11
 	x11-libs/pango
 	x11-misc/xdg-utils
 "
-DEPEND="${RDEPEND}"
-
 DESTDIR="/opt/${PN}"
 
 QA_PREBUILT="*"
@@ -62,16 +61,16 @@ src_configure() {
 }
 
 src_install() {
-	sed -i 's/Exec=.*/Exec=\/usr\/bin\/curseforge %U/'  \
-		"usr/share/applications/curseforge.desktop" \
+	sed -i "s|Exec=.*|Exec=/usr/bin/${PN} %U|"  \
+		"usr/share/applications/${PN}.desktop" \
 		|| die "Failed correcting .desktop file"
 
-	doicon -s 256 "usr/share/icons/hicolor/256x256/apps/curseforge.png"
-	domenu "usr/share/applications/curseforge.desktop"
+	doicon -s 256 "usr/share/icons/hicolor/256x256/apps/${PN}.png"
+	domenu "usr/share/applications/${PN}.desktop"
 
 	exeinto "${DESTDIR}"
 	cd opt/CurseForge/ || die "Failed changing directory to unpacked source"
-	doexe curseforge chrome-sandbox libEGL.so libGLESv2.so libffmpeg.so libvk_swiftshader.so libvulkan.so.1
+	doexe ${PN} chrome-sandbox libEGL.so libffmpeg.so libGLESv2.so libvk_swiftshader.so libvulkan.so.1
 
 	insinto "${DESTDIR}"
 	doins chrome_100_percent.pak chrome_200_percent.pak icudtl.dat resources.pak snapshot_blob.bin v8_context_snapshot.bin
@@ -83,16 +82,5 @@ src_install() {
 
 	[[ -x chrome_crashpad_handler ]] && doins chrome_crashpad_handler
 
-	dosym "${DESTDIR}/curseforge" "/usr/bin/curseforge"
-}
-
-pkg_postinst() {
-	elog "This package will keep itself up-to-date."
-	elog "No need to download any ebuilds in the future."
-	elog "CurseForge is not open-source."
-	xdg_pkg_postinst
-}
-
-pkg_postrm() {
-	xdg_pkg_postrm
+	dosym "${DESTDIR}/${PN}" "/usr/bin/${PN}"
 }

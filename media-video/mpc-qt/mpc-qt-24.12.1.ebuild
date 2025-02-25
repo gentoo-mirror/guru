@@ -1,4 +1,4 @@
-# Copyright 2023-2024 Gentoo Authors
+# Copyright 2023-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -15,6 +15,7 @@ KEYWORDS="~amd64"
 
 DEPEND="
 	dev-qt/qtbase:6[dbus,gui,network,opengl,wayland,widgets]
+	dev-qt/qtsvg:6
 	media-video/mpv:=[libmpv]
 "
 RDEPEND="${DEPEND}"

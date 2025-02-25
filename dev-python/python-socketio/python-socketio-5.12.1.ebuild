@@ -4,7 +4,7 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{11..12} )
+PYTHON_COMPAT=( python3_{11..13} )
 inherit distutils-r1 pypi
 
 DESCRIPTION="Python implementation of the Socket.IO realtime server."
@@ -15,7 +15,6 @@ HOMEPAGE="
 
 LICENSE="MIT"
 SLOT="0"
-#wait for dev-python/python-engineio
 KEYWORDS="~amd64"
 IUSE="client asyncio-client"
 
