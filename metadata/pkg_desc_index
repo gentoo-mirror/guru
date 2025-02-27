@@ -95,7 +95,7 @@ app-admin/customrescuecd-x86_64 0.12.7 0.12.8: A system rescue cd or usbstick fo
 app-admin/dotbot 1.20.1: A tool that bootstraps your dotfiles
 app-admin/gentoo_update 0.2.4: Gentoo Linux updater
 app-admin/grub-customizer 5.2.5: A graphical grub2 settings manager
-app-admin/hardinfo2 2.2.4-r2: System Information and Benchmark for Linux Systems
+app-admin/hardinfo2 2.2.7: System Information and Benchmark for Linux Systems
 app-admin/himitsu 0.7 0.8 9999: Secret storage system for Unix, suitable for storing passwords, keys, ...
 app-admin/himitsu-keyring 0.2.0: graphical frontend for managing a Himitsu key store
 app-admin/himitsu-ssh 0.3 0.4 9999: SSH integration for Himitsu
@@ -112,6 +112,7 @@ app-admin/s-tui 1.1.6: Stress-Terminal UI monitoring tool
 app-admin/synadm 0.43.1 0.44: Command line admin tool for Synapse
 app-admin/talosctl-bin 1.7.6 1.9.2: Pre-compiled talosctl is an tool for interacting with the Talos API
 app-admin/terragrunt-bin 0.38.6 0.45.4 0.50.8: A thin wrapper for Terraform
+app-admin/tflint 0.55.1: Terraform linter
 app-admin/vaultwarden 1.32.5 1.32.7 9999: Unofficial Bitwarden compatible password manager server written in Rust
 app-alternatives/phosh-keyboard 0: sm.puri.OSK0.desktop symlinks
 app-arch/fuse-archive 0.1.14 1.6: Read-only FUSE file system for mounting archives and compressed files
@@ -487,7 +488,7 @@ dev-embedded/freertos-gdb 1.0.2 1.0.3: Python module for operating with freeRTOS
 dev-embedded/idf-component-manager 2.0.3 2.0.4 2.1.1: Tool for installing ESP-IDF components
 dev-embedded/mv88e6xxx-dump 0.2.0_pre20210327: Dump information about Marvell mv88e6xxx Ethernet switches
 dev-embedded/nxp-gui-guider 1.7.2-r1: GUI Guider is a user-friendly GUI development tool for LVGL
-dev-embedded/qdl 2.0 9999: Tool to communicate with Qualcomm System On a Chip bootroms
+dev-embedded/qdl 2.1 9999: Tool to communicate with Qualcomm System On a Chip bootroms
 dev-embedded/rauc 1.13: Lightweight update client that runs on your Embedded Linux device
 dev-embedded/squareline-studio 1.3.2: Visual drag-and-drop UI editor for LVGL
 dev-erlang/conf 0.2.6: YAML configuration for Erlang applications
@@ -647,6 +648,7 @@ dev-python/azure-storage-blob 12.16.0 12.17.0: Microsoft Azure Blob Storage Clie
 dev-python/b2sdk 2.3.0: The client library for BackBlaze's B2 product
 dev-python/baron 0.9: Full Syntax Tree for python to make writing refactoring code a realist task
 dev-python/base58 2.1.1-r1: Base58 and Base58Check implementation
+dev-python/baseline 1.2.1: Easy string baseline
 dev-python/bidict 0.23.1: The bidirectional mapping library for Python
 dev-python/billiard 4.0.2: Python multiprocessing fork
 dev-python/biplist 1.0.3: A binary plist parser/generator for Python
@@ -959,7 +961,7 @@ dev-util/quilttools 0.3-r1: Mailbox to quilt series converter
 dev-util/reflex 0.3.1: A small tool to watch a directory and rerun a command when certain files change
 dev-util/rust-rover 2024.2.1-r1: A feature-rich Rust IDE with timely support by JetBrarins
 dev-util/rust-script 0.35.0-r1: Command-line tool to run Rust scripts which can make use of crates
-dev-util/rye 0.43.0: a Hassle-Free Python Experience
+dev-util/rye 0.44.0: a Hassle-Free Python Experience
 dev-util/scc 3.4.0: scc is a very fast accurate code counter
 dev-util/shellspec 0.28.1-r3 9999: A full-featured BDD unit testing framework for all POSIX shells
 dev-util/spi-tools 1.0.2: Simple command line tools to help using Linux spidev devices
@@ -1001,7 +1003,7 @@ games-arcade/tetrio-desktop 8 9: TETR.IO desktop client.
 games-board/fairy-stockfish 14.0.1: Chess variant engine derived from Stockfish to support fairy chess variants
 games-board/openriichi 0.2.1.1: OpenRiichi is an open source Japanese Mahjong client
 games-board/rmahjong 0.4_p20201106: Riichi Mahjong, the Japanese variant of the Chinese game Mahjong for 4 players
-games-emulation/RetroArch 1.19.1: RetroArch is a frontend for emulators, game engines and media players
+games-emulation/RetroArch 1.19.1 1.20.0: RetroArch is a frontend for emulators, game engines and media players
 games-emulation/dosbox-x 2025.01.01 2025.02.01 9999: Complete, accurate DOS emulator forked from DOSBox
 games-emulation/duckstation 9999: Fast Sony PlayStation (PSX) emulator
 games-emulation/flycast 9999: Sega Dreamcast, Naomi and Atomiswave emulator
@@ -1248,7 +1250,7 @@ media-gfx/KTX-Software 4.3.2: KTX (Khronos Texture) Library and Tools
 media-gfx/WebPlotDigitizer-bin 4.7: Web based tool to extract data from plots, images, and maps
 media-gfx/airsane 0.4.3: Publish SANE scanners via Apple Airscan/eSCL
 media-gfx/azpainter 3.0.11: Full color painting software for Linux for illustration drawing
-media-gfx/bambustudio-bin 01.10.02.75: Bambu Studio is a cutting-edge, feature-rich slicing software
+media-gfx/bambustudio-bin 01.10.02.76: Bambu Studio is a cutting-edge, feature-rich slicing software
 media-gfx/beeref 0.3.3: A Simple Reference Image Viewer
 media-gfx/bonzomatic 2022.02.05 2022.08.20 9999: Live shader coding tool and Shader Showdown workhorse
 media-gfx/czkawka 8.0.0: App to find duplicates, empty folders and similar images
@@ -1388,6 +1390,7 @@ mpv-plugin/mpv-youtube-upnext 20240513: A userscript that allows you to play "up
 mpv-plugin/mpv_sponsorblock 20211223 20220924 20230130: mpv script to skip sponsored segments of YouTube videos
 mpv-plugin/mpv_sponsorblock_minimal 2023.08.20: A minimal script to skip sponsored segments of YouTube videos
 mpv-plugin/mpv_thumbnail_script 0.5.2 0.5.3 0.5.4: A Lua script to show preview thumbnails in mpv's OSC seekbar
+mpv-plugin/open-in-mpv 2.4.1 2.4.3: Simple host script (in Go) for simple web extension to open videos in mpv
 mpv-plugin/thumbfast 2023.12.08: High-performance on-the-fly thumbnailer script for mpv.
 net-analyzer/gping 1.19.0: Ping, but with a graph
 net-analyzer/munin-contrib 0.2021.04.27 0.2024.03.04 0.2024.03.04-r1: User contributed stuff related to munin
@@ -1549,7 +1552,7 @@ net-vpn/GlobalProtect-openconnect 2.3.9-r1: Unofficial GlobalProtect VPN client 
 net-vpn/cloudflare-warp 2024.2.62-r2 2024.4.133-r1 2024.11.309: Cloudflare Warp Client
 net-vpn/fastd 22 23: A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
 net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that require SAML
-net-vpn/mullvadvpn-app 2025.3 2025.4_beta1: Tool used to manage daemon setup
+net-vpn/mullvadvpn-app 2025.4: Tool used to manage daemon setup
 net-wireless/airspyhf 1.6.8: User mode driver for Airspy HF+
 net-wireless/bluetuith 0.1.9 0.2.0 0.2.1 0.2.2 9999: A TUI bluetooth manager for Linux written in Go
 net-wireless/btscreenlocker 1.8.1-r1: Daemon to lock your screen when Bluetooth trusted devices go away.
@@ -1640,6 +1643,7 @@ sys-apps/0xFFFF 0.10: 0pen Free Fiasco Firmware Flasher for Maemo devices
 sys-apps/asus-numpad 0.2-r1 9999: User-space driver for Asus numpad
 sys-apps/asus-touchpad-numpad-driver 0_pre20220311 9999: Feature-rich configurable Asus NumPad drivers
 sys-apps/bat-extras 2023.09.19-r2 9999: Bash scripts that integrate bat with various command line tools.
+sys-apps/bpftune 9999: bpftune uses BPF to auto-tune Linux systems
 sys-apps/bustd 0.1.1: Process killer daemon for out-of-memory scenarios
 sys-apps/colortail 0.3.3 9999: tail command with colors
 sys-apps/corefreq 1.96.3: CPU monitoring software designed for the 64-bits Processors, like top
@@ -1735,7 +1739,7 @@ sys-process/xe 1.0-r1: Simple xargs and apply replacement with sane defaults
 virtual/crystal-db 0.13-r1: Virtual for Crystal database drivers
 www-apps/castopod 1.4.3 1.4.5: Open-source hosting platform made for podcasters
 www-apps/code-server-bin 4.18.0 4.19.1 4.90.3: VS Code in the browser (binary version with unbundled node and ripgrep)
-www-apps/forgejo 8.0.3 9.0.3 10.0.0: A self-hosted lightweight software forge
+www-apps/forgejo 9.0.3 10.0.0 10.0.1: A self-hosted lightweight software forge
 www-apps/freshrss 1.24.3 1.25.0: A free, self-hostable news aggregator
 www-apps/gotosocial 0.9.0 0.10.0: Fast, fun, ActivityPub server, powered by Go
 www-apps/honk 0.9.8 0.9.91: ActivityPub server with minimal setup and support costs
@@ -1812,7 +1816,7 @@ x11-misc/xsecurelock 1.9.0: X11 screen lock utility with security in mind
 x11-plugins/purple-mm-sms 0.1.7: Purple SMS plugin using ModemManager
 x11-terms/dmd5620 2.1.0: GTK+ 3.0 implementation of an AT&T / Teletype DMD 5620 emulator.
 x11-terms/rio 0.2.7: A hardware-accelerated GPU terminal emulator powered by WebGPU
-x11-terms/tabby-bin 1.0.189: A terminal for a more modern age
+x11-terms/tabby-bin 1.0.221: A terminal for a more modern age
 x11-terms/terminal-simulator 0.2 9999-r1: VT100 and VT52 terminal hardware simulator
 x11-terms/tym 3.5.1-r2: Lua-configurable terminal emulator
 x11-themes/adw-gtk3 5.3 5.5 5.6: The theme from libadwaita ported to GTK-3
