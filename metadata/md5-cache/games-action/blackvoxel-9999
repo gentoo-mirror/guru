@@ -1,13 +1,13 @@
 BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile install prepare unpack
-DEPEND=dev-libs/expat media-libs/alsa-lib media-libs/glew:0 media-libs/libsdl x11-libs/libX11 virtual/opengl
+DEPEND=media-libs/glew:0= media-libs/glu media-libs/libglvnd[X] media-libs/libsdl[sound]
 DESCRIPTION=Blackvoxel Video Game
 EAPI=8
 HOMEPAGE=https://www.blackvoxel.com/
 INHERIT=git-r3 toolchain-funcs
 LICENSE=GPL-3
 PROPERTIES=live
-RDEPEND=dev-libs/expat media-libs/alsa-lib media-libs/glew:0 media-libs/libsdl x11-libs/libX11 virtual/opengl
+RDEPEND=media-libs/glew:0= media-libs/glu media-libs/libglvnd[X] media-libs/libsdl[sound]
 SLOT=0
 _eclasses_=git-r3	875eb471682d3e1f18da124be97dcc81	toolchain-funcs	6afdb6107430c1832ca7e16aacbf8fa1	multilib	b2a329026f2e404e9e371097dda47f96
-_md5_=d5ce6f710092ebfc4673225d8182e2eb
+_md5_=a869a2f65fd10a20966c7d1a23847659
