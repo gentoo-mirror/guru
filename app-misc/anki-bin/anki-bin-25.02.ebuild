@@ -1,4 +1,4 @@
-# Copyright 2021-2024 Gentoo Authors
+# Copyright 2021-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -8,7 +8,7 @@ EAPI=8
 # that is not linked against libpython.
 # The configuration with Python 3.{10..13} was tested on a limited number of machines and is not guaranteed to work.
 
-PYTHON_COMPAT=( python3_{11..13} )
+PYTHON_COMPAT=( python3_{10..13} )
 inherit desktop optfeature python-single-r1 pypi readme.gentoo-r1 xdg
 
 # bump to latest PV, where any of the miscellaneous files changed
@@ -18,7 +18,7 @@ MY_P=${PN}-${MY_PV}
 DESCRIPTION="A spaced-repetition memory training program (flash cards)"
 HOMEPAGE="https://apps.ankiweb.net/"
 SRC_URI="
-	$(pypi_wheel_url --unpack anki ${PV} cp39 abi3-manylinux_2_28_x86_64)
+	$(pypi_wheel_url --unpack anki ${PV} cp39 abi3-manylinux_2_35_x86_64)
 	$(pypi_wheel_url --unpack aqt ${PV})
 	https://raw.githubusercontent.com/ankitects/anki/${MY_PV}/qt/bundle/lin/anki.1 -> ${MY_P}.1
 	https://raw.githubusercontent.com/ankitects/anki/${MY_PV}/qt/bundle/lin/anki.desktop -> ${MY_P}.desktop
@@ -31,11 +31,11 @@ S="${WORKDIR}"
 
 # How to get an up-to-date summary of runtime JS libs' licenses:
 # ./node_modules/.bin/license-checker-rseidelsohn --production --excludePackages anki --summary
-LICENSE="0BSD AGPL-3+ BSD CC-BY-4.0 GPL-3+ Unlicense public-domain"
+LICENSE="0BSD AGPL-3+ BSD CC-BY-4.0 GPL-3+ public-domain"
 # Dependent crate licenses
 LICENSE+="
 	Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD-2 CC0-1.0 ISC MIT
-	MPL-2.0 Unicode-3.0 Unicode-DFS-2016 ZLIB
+	MPL-2.0 Unicode-3.0 Unicode-DFS-2016 Unlicense ZLIB
 "
 # Manually added crate licenses
 LICENSE+=" openssl"
@@ -72,8 +72,12 @@ QA_PREBUILT="usr/lib/*"
 
 src_install() {
 	python_domodule anki {,_}aqt *.dist-info
-	printf "#!/usr/bin/python3\nimport sys;from aqt import run;sys.exit(run())" > runanki
-	python_newscript runanki anki
+	python_newscript - anki <<-EOF
+		#!${EPREFIX}/usr/bin/python
+		import sys
+		from aqt import run
+		sys.exit(run())
+	EOF
 	newicon "${DISTDIR}"/${MY_P}.png anki.png
 	newicon "${DISTDIR}"/${MY_P}.xpm anki.xpm
 	newmenu "${DISTDIR}"/${MY_P}.desktop anki.desktop
