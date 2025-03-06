@@ -13,6 +13,7 @@ acct-group/hinsightd 0: A user group for www-servers/hinsightd
 acct-group/honk 0: System group: honk
 acct-group/iipsrv 0-r1: System group: iipsrv
 acct-group/invidious 0: System group: invidious
+acct-group/keyd 2.5.0: Group for app-misc/keyd
 acct-group/laminar 0: System group: laminar
 acct-group/libmedium 0: A group for www-apps/libmedium
 acct-group/lms 0: Group for LMS
@@ -100,7 +101,7 @@ app-admin/himitsu 0.7 0.8 9999: Secret storage system for Unix, suitable for sto
 app-admin/himitsu-keyring 0.2.0: graphical frontend for managing a Himitsu key store
 app-admin/himitsu-ssh 0.3 0.4 9999: SSH integration for Himitsu
 app-admin/himitsu-totp 0.1 0.2 9999: TOTP support for Himitsu
-app-admin/i2pd-tools 2024.05.08 2024.09.25: Some useful tools for I2P
+app-admin/i2pd-tools 2024.09.25 2025.02.26: Some useful tools for I2P
 app-admin/krapplet 0.3.1-r1: Krapplet (keyring applet): a Linux graphical password manager
 app-admin/oet 0.1.9 0.1.10 0.1.11 9999: Update your system into binpkgs in an overlay sandbox
 app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applications and tmux
@@ -249,6 +250,7 @@ app-misc/grit 0.3.0: An personal task manager that represents tasks as multitree
 app-misc/interception-caps2esc 0.3.2: Interception tools plugin switching CAPS and ESC
 app-misc/interception-tools 0.6.8-r1: A minimal composable infrastructure on top of libudev and libevdev
 app-misc/kanata 1.7.0 1.8.0: Multi-layer keyboard customization
+app-misc/keyd 2.5.0: A key remapping daemon for linux
 app-misc/kloak 0.2.30 0.3.7_p1 9999: A privacy tool that makes keystroke biometrics less effective
 app-misc/kmon 1.6.5 1.7.1: Linux kernel manager and activity monitor
 app-misc/ledger-live-bin 2.84.1: Manager for the Ledger hardware wallet
@@ -262,7 +264,7 @@ app-misc/minder 1.16.2 1.16.3: Mind-mapping application for Elementary OS.
 app-misc/mirafetch 0.1.0 9999: A Rust reimplementation of Hyfetch wih a focus on speed
 app-misc/mobile-datovka 1.10.0: Mobile optimized GUI to access the Czech data box e-government system
 app-misc/morgen 3.6.3: Morgen simplifies time management by consolidating all your calendars.
-app-misc/mymefetch 1.1.1: Neofetch-like Bash script with small ASCII art of MymeType's robot OC, MYME
+app-misc/mymefetch 1.2: MymeType's own neofetch-like Bash script
 app-misc/navi 2.23.0: An interactive cheatsheet tool for the command-line
 app-misc/neo 0.6.1 9999: cmatrix clone with 32-bit color and Unicode support
 app-misc/nerdfetch 8.3.1: A POSIX *nix fetch script using Nerdfonts
@@ -347,7 +349,7 @@ app-text/code-minimap 0.6.8: A high performance code minimap generator
 app-text/dooit 3.1.0: A TUI todo manager
 app-text/epubgrep 0.6.2: Search tool for EPUB e-books
 app-text/ford 6.2.5 7.0.8 7.0.9: FORD, automatic documentation generator for modern Fortran programs
-app-text/jrnl 4.1 4.2 9999: Collect your thoughts and notes without leaving the command line
+app-text/jrnl 4.1 4.2: Collect your thoughts and notes without leaving the command line
 app-text/klogg 22.06.0.1289-r1: A GUI application to browse and search through long and complex log files
 app-text/komikku 1.70.0: Manga reader for GNOME
 app-text/koodo-reader-bin 1.5.1 1.6.3: A modern ebook manager and reader with sync and backup capacities
@@ -896,6 +898,7 @@ dev-python/zopfli 0.2.2: Zopfli module for Python
 dev-ruby/asciidoctor-pdf 2.3.18 2.3.19: A native PDF converter for AsciiDoc based on Asciidoctor and Prawn
 dev-ruby/byebug 11.1.3: a Ruby 2 debugger
 dev-ruby/chruby 0.3.9-r3 9999: Changes the current Ruby
+dev-ruby/language_server-protocol 3.17.0.4: Language Server SDK Gem for Ruby
 dev-ruby/prawn-icon 3.1.0: Provides support for icons in Prawn
 dev-ruby/prawn-svg 0.35.1: Provides support for SVG in Prawn
 dev-ruby/prawn-templates 0.1.2-r1: Provides support for templates in Prawn
@@ -905,6 +908,8 @@ dev-ruby/rbspy 0.17.0-r1 0.21.0: Sampling CPU profiler for Ruby
 dev-ruby/rspec-wait 0.0.9: enables time-resilient expectations in your RSpec test suite
 dev-ruby/ruby-build 9999: Installs virtually any version of Ruby, from source
 dev-ruby/ruby-install 0.9.3: Installs Ruby, JRuby, Rubinius, TruffleRuby, or MRuby.
+dev-ruby/ruby-lsp 0.23.11: An opinionated language server for Ruby
+dev-ruby/sorbet-runtime 0.5.11882: Sorbet's runtime static type checker component
 dev-scheme/sagittarius 0.9.12: R6RS/R7RS Scheme system.
 dev-tex/ninecolors 2022.02.13: Select colors with proper WCAG color contrast
 dev-tex/tabularray 2023.03.01: Typeset tabulars and arrays with LATEX3
@@ -915,7 +920,7 @@ dev-util/bats-assert 2.1.0: Common assertions for Bats
 dev-util/bats-support 0.3.0: Supporting library for Bats test helpers
 dev-util/bc-ur 0.3.0: Blockchain Commons UR Library
 dev-util/bruno-bin 1.9.0 1.9.0-r1: Opensource IDE For Exploring and Testing Api's
-dev-util/bump-my-version 0.30.0 0.32.1: Version bump your Python project
+dev-util/bump-my-version 0.32.1 1.0.1: Version bump your Python project
 dev-util/bump2version 1.0.1: Version-bump your software with a single command!
 dev-util/cargo-post 0.1.7: A cargo wrapper that executes a post build script after a successful build.
 dev-util/catalyst-lab 1.6.0 1.6.1: An automation tool for building Gentoo release stages and binhost packages.
@@ -987,8 +992,9 @@ dev-vcs/gitqlient 1.6.2 1.6.3 9999: Multi-platform Git client written with Qt
 dev-vcs/gitqlient-gitserver-plugin 0.2.0: GitQlient GitServer plugin
 dev-vcs/gitqlient-jenkins-plugin 0.2.0: GitQlient Jenkins plugin
 dev-vcs/gitui 0.26.3 0.27.0: blazing fast terminal-ui for git
-dev-vcs/jj 0.26.0 9999: Jujutsu - an experimental version control system
+dev-vcs/jj 0.26.0 0.27.0 9999: Jujutsu - an experimental version control system
 dev-vcs/lazygit 0.45.2 0.46.0 0.47.1 0.47.2 0.48.0: Simple terminal UI for git commands
+dev-vcs/lazyjj 0.5.0: TUI for Jujutsu/jj
 dev-vcs/pijul 1.0.0_beta9: A distributed version control system based on a theory of patches
 dev-zig/zls 0.10.0-r2 0.13.0-r1 9999: The officially unofficial Ziglang language server
 games-action/ATLauncher 3.4.27.0: Minecraft launcher which integrates multiple different ModPacks
@@ -1180,6 +1186,7 @@ gui-apps/tiramisu 1.0_p20201110 2.0.20211107 9999: minimalistic desktop notifica
 gui-apps/tofi 0.8.1 0.9.1: Fast and simple dmenu/rofi replacement for wlroots-based Wayland compositors
 gui-apps/vicuna 1.25: Tool for uploading files to Wikimedia Commons and other Wikimedia projects
 gui-apps/walker 0.10.3 0.12.0: Multi-Purpose Launcher with a lot of features. Highly Customizable and fast
+gui-apps/waylock 1.3.0: Small screenlocker for Wayland compositors
 gui-apps/wbg 1.0.2 1.1.0 1.2.0 9999: Super simple wallpaper application
 gui-apps/wdisplays 1.1 1.1.1 9999: GUI display configurator for wlroots compositors
 gui-apps/wev 1.0.0: Wayland event viewer
@@ -1291,7 +1298,6 @@ media-libs/grok 11.0.0: World's Leading Open Source JPEG 2000 Codec
 media-libs/imgui 1.89.9-r4 1.91.1: Bloat-free graphical user interface library for C++
 media-libs/implot 0.16-r2: Immediate Mode Plotting
 media-libs/libbpg 0.9.8-r1: Better Portable Graphics reference implementation
-media-libs/libsdl3 3.2.0: Simple Direct Media Layer
 media-libs/monado 9999: The open source OpenXR runtime.
 media-libs/opencomposite 9999: OpenVR over OpenXR compatibility layer
 media-libs/openvr 1.23.8: OpenVR SDK
@@ -1327,7 +1333,7 @@ media-sound/g4music 3.3 3.4: A GTK4 music player
 media-sound/jacktrip 1.7.1-r1 2.4.0: Send JACK audio over a network
 media-sound/jriver 31.0.83: A cross-platform media center, famous for high quality of audio.
 media-sound/kew 2.4.4-r1: kew (/kjuː/) is a command-line music player for Linux.
-media-sound/lms 3.62.1 3.63.0 3.64.0: Lightweight Music Server.
+media-sound/lms 3.62.1 3.63.0 3.64.0 3.64.0-r1: Lightweight Music Server.
 media-sound/loudgain 0.6.8-r1 0.6.8_p20240128: Versatile ReplayGain 2.0 loudness normalizer
 media-sound/mopidy 3.4.2: An extensible music server written in Python.
 media-sound/mpd-mpris 0.3.1 0.4.0 0.4.1: An implementation of the MPRIS protocol for MPD.
@@ -1579,7 +1585,7 @@ sci-biology/geneathome 1.10-r5: BOINC application for expanding Gene Regulatory 
 sci-biology/jalview-bin 2.11.4.1: Editor of multiple sequence alignments.
 sci-chemistry/vesta-bin 3.5.8: Visualisation for Electronic and STructural Analysis.
 sci-chemistry/xcrysden 1.6.2-r2: For the visualisation of molecular and crystal structures.
-sci-electronics/bender 0.28.1: A dependency management tool for hardware projects
+sci-electronics/bender 0.28.1-r1: A dependency management tool for hardware projects
 sci-electronics/bluespec 2022.01-r1 2023.01 2023.07 9999: Toolchain for the Bluespec Hardware Definition Language
 sci-electronics/circt 1.14.0 1.37.0 1.76.0: The fast free Verilog/SystemVerilog simulator
 sci-electronics/coil64 2.1.27: Coil64 is inductance coil calculator
@@ -1588,7 +1594,7 @@ sci-electronics/kactus2 3.13.3 9999: A open source IP-XACT-based tool
 sci-electronics/liblxi 1.20: Implementation of the LAN eXtensions for Instrumentation (LXI)
 sci-electronics/logic-bin 2.4.14: Saleae logic analyzer
 sci-electronics/lxi-tools 2.7: Tools to access devices with LXI
-sci-electronics/slang 8.0 9999: SystemVerilog compiler and language services
+sci-electronics/slang 8.0-r1 9999: SystemVerilog compiler and language services
 sci-electronics/svls 0.2.11: SystemVerilog language server
 sci-electronics/vcd 221217: VCD file (Value Change Dump) command line viewer
 sci-electronics/verilator 5.026-r1 5.028-r1 9999: The fast free Verilog/SystemVerilog simulator
@@ -1626,7 +1632,7 @@ sci-mathematics/frama-c-users 25.0: Users plugin for frama-c
 sci-mathematics/frama-c-variadic 25.0: Variadic function transformation plugin for frama-c
 sci-mathematics/pyromaths 21.8.2-r1: Create maths exercises in LaTeX and PDF format
 sci-mathematics/rink 0.8.0-r1 9999: Unit conversion tool, similar to frink
-sci-mathematics/rstudio-desktop-bin 2023.09.1_p494 2024.12.0_p467: IDE for R and Python
+sci-mathematics/rstudio-desktop-bin 2023.09.1_p494 2024.12.0_p467 2024.12.0_p467-r1: IDE for R and Python
 sci-misc/boinc-wrapper 26018-r2 26018-r3: Wrapper to use non-BOINC apps with BOINC
 sci-misc/llama-cpp 0_pre4576 0_pre4763 9999: Port of Facebook's LLaMA model in C/C++
 sci-physics/openmodelica 1.24.0-r1: Open-source Modelica-based modeling and simulation environment
@@ -1658,7 +1664,7 @@ sys-apps/flashprog 1.2 1.3: Utility for identifying, reading, writing, verifying
 sys-apps/fselect 0.8.6: Find files with SQL-like queries
 sys-apps/hex 0.4.2 0.5.0 0.6.0: Futuristic take on hexdump
 sys-apps/hexyl 0.16.0: A command-line hex viewer
-sys-apps/lact 0.6.0 0.7.0: Linux GPU Control Application
+sys-apps/lact 0.7.0 0.7.1: Linux GPU Control Application
 sys-apps/loclone 0.1.0: A tool for creating CoW snapshots on XFS
 sys-apps/lr 1.6: list files, recursively
 sys-apps/lsplug 6: Replacement for lsusb that shows more useful info and less useless info
@@ -1766,7 +1772,7 @@ www-apps/zola 0.19.2-r1: A fast static site generator with everything built-in
 www-client/badwolf 1.3.0-r1 9999: Minimalist and privacy-oriented WebKitGTK+ browser
 www-client/browsh 1.8.2: A fully-modern text-based browser, rendering to TTY and browsers
 www-client/firefox-developer-bin 122.0 128.0: Firefox browser developer edition
-www-client/mullvad-browser-bin 14.0.5: The Mullvad Browser is developed to minimize tracking and fingerprinting.
+www-client/mullvad-browser-bin 14.0.7: The Mullvad Browser is developed to minimize tracking and fingerprinting.
 www-client/nyxt 3.11.8 3.12.0 9999: Nyxt - the hacker's power-browser
 www-client/vimb 3.6.0 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
 www-client/yandex-browser 25.2.1.824_p1: The web browser from Yandex
