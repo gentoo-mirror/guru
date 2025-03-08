@@ -492,13 +492,15 @@ KEYWORDS="~amd64 ~arm64"
 
 BDEPEND="virtual/pkgconfig"
 DEPEND="
-	>=app-arch/zstd-1.5.5:=
 	>=dev-libs/libgit2-1.8.1:0/1.8
 	dev-libs/openssl:=
 	net-libs/libssh2:=
 	sys-libs/zlib
 "
-RDEPEND="${DEPEND}"
+RDEPEND="
+	${DEPEND}
+	dev-vcs/git
+"
 
 QA_FLAGS_IGNORED="usr/bin/${PN}"
 
@@ -507,7 +509,6 @@ pkg_setup() {
 	export LIBSSH2_SYS_USE_PKG_CONFIG=1
 	export OPENSSL_NO_VENDOR=1
 	export PKG_CONFIG_ALLOW_CROSS=1
-	export ZSTD_SYS_USE_PKG_CONFIG=1
 	rust_pkg_setup
 }
 

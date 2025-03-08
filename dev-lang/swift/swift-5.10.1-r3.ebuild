@@ -3,7 +3,7 @@
 
 EAPI=8
 
-LLVM_COMPAT=( {15..18} )
+LLVM_COMPAT=( {15..19} )
 PYTHON_COMPAT=( python3_{11..13} )
 inherit llvm-r1 python-single-r1
 
@@ -52,6 +52,7 @@ SRC_URI="
 PATCHES=(
 	"${FILESDIR}/${PF}/backport-swift-75662.patch"
 	"${FILESDIR}/${PF}/backtracing-noexecstack.patch"
+	"${FILESDIR}/${PF}/clang-indexstore-exports.patch"
 	"${FILESDIR}/${PF}/disable-libdispatch-werror.patch"
 	"${FILESDIR}/${PF}/link-ncurses-tinfo.patch"
 	"${FILESDIR}/${PF}/link-with-lld.patch"
