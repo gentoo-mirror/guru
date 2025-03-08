@@ -146,7 +146,7 @@ app-containers/waydroid 1.4.3 1.4.3-r1: Container-based approach to boot a full 
 app-containers/waydroid-images 9999: Manage images for app-containers/waydroid using portage
 app-crypt/PBinCLI 0.3.5 0.3.5-r1: PBinCLI is a command line client for PrivateBin written in Python 3
 app-crypt/autofirma 1.8.2 1.8.3-r1: Spanish government's electronic signature application for online procedures
-app-crypt/certbot-dns-cloudflare 2.10.0-r2: Cloudflare DNS Authenticator plugin for Certbot (Let's Encrypt Client)
+app-crypt/certbot-dns-cloudflare 2.10.0-r2 3.2.0: Cloudflare DNS Authenticator plugin for Certbot (Let's Encrypt Client)
 app-crypt/certbot-dns-desec 1.2.1: deSEC DNS Authenticator plugin for Certbot
 app-crypt/certbot-dns-rfc2136 2.10.0 2.11.0 3.0.1 3.1.0 3.2.0: RFC 2136 DNS Authenticator plugin for Certbot (Let’s Encrypt client)
 app-crypt/clevis 19-r2 20-r1 21: Automated Encryption Framework
@@ -177,7 +177,7 @@ app-doc/stdman 2022.07.30 2024.07.05 9999: Formatted C++ stdlib man pages (cppre
 app-doc/sway-wiki 9999: Wiki of gui-wm/sway, rendered to HTML using kramdown-parser-gfm
 app-editors/amp 0.7.1: A complete text editor for your terminal.
 app-editors/emacs-lsp-booster 0.2.1: Emacs LSP performance booster
-app-editors/imhex 1.37.1: A hex editor for reverse engineers, programmers, and eyesight
+app-editors/imhex 1.37.4: A hex editor for reverse engineers, programmers, and eyesight
 app-editors/kakoune-lsp 18.1.0: Kakoune Language Server Protocol Client
 app-editors/l3afpad 0.8.18.1.11: Simple GTK3 text editor (successor to leafpad)
 app-editors/lapce 0.4.2-r1 9999: Lightning-fast and Powerful Code Editor written in Rust
@@ -185,7 +185,7 @@ app-editors/mined 2015.25: A powerful text editor with extensive Unicode and CJK
 app-editors/neovide 0.12.2: Neovide: No Nonsense Neovim Gui
 app-editors/neovim-qt 0.2.19: Neovim client library and GUI, in Qt
 app-editors/notepadnext 0.8_p20240828 0.9 0.9_p20241128: A cross-platform reimplementation of Notepad++ based on Qt
-app-editors/pulsar-bin 1.124.0 1.125.0: A Community-led Hyper-Hackable Text Editor
+app-editors/pulsar-bin 1.124.0 1.125.0 1.126.0: A Community-led Hyper-Hackable Text Editor
 app-editors/typora-bin 1.10.8: a markdown editor,markdown reader.
 app-emacs/catppuccin-emacs 9999: Soothing pastel theme for Emacs
 app-emacs/envrc 0.11: Emacs support for direnv which operates buffer-locally
@@ -301,7 +301,7 @@ app-misc/wego 2.2: Wego is a weather client for the terminal
 app-misc/wlx-overlay-s 0.6.0-r1 9999: A lightweight OpenXR/OpenVR overlay for Wayland and X11 desktops
 app-misc/x86-64-level 0.2.2 9999: Get the x86-64 Microarchitecture Level on the Current Machine
 app-misc/xplr 0.21.3-r1: A hackable, minimal, fast TUI file explorer
-app-misc/yazi 25.2.11-r1: Blazing fast terminal file manager written in Rust, based on async I/O.
+app-misc/yazi 25.2.11-r1 25.3.2: Blazing fast terminal file manager written in Rust, based on async I/O.
 app-misc/zcock 0.2.1 0.2.2: Print an emoji according to traditional chinese calendar and more
 app-mobilephone/flashlight 0.1.1-r2: It's a flashlight, what do you expect?
 app-mobilephone/mobile-config-firefox 2.1.0: Mobile and privacy friendly configuration for Firefox
@@ -365,7 +365,7 @@ app-text/smu 1.5 9999: Simple markup - markdown like syntax
 app-text/texlab 5.22.1: LaTeX Language Server
 app-text/the-platinum-searcher-bin 2.2.0: Fast CLI search tool, faster than grep, ack, silver_searcher (ag)
 app-text/tldr 3.2.0 3.3.0: Python command line client for tldr pages
-app-text/typst 0.13.0 9999: A markup-based typesetting system for the sciences
+app-text/typst 0.13.1 9999: A markup-based typesetting system for the sciences
 app-text/typstyle 0.12.12: A beautiful and reliable code formatter for Typst
 app-text/vale 3.7.1 3.9.1: A syntax-aware linter for prose built with speed and extensibility in mind
 app-vim/ale 3.3.0: Check syntax in Vim asynchronously and fix files, with LSP support
@@ -585,6 +585,7 @@ dev-libs/unordered_dense 4.0.1 4.4.0 9999: A fast and densely stored hashmap and
 dev-libs/weechat-relay 9999: Portable and multi-interface IRC client relay api
 dev-libs/xqilla 2.3.4-r3: An XQuery and XPath 2 library and command line utility written in C++
 dev-libs/zfp 1.0.1: Compressed numerical arrays that support high-speed random access
+dev-lua/ldbus 0_p20250222: Lua library to access dbus.
 dev-lua/lua-psl 0.3_p20201126: Lua bindings to libpsl
 dev-lua/multipart-post 1.4: HTTP Multipart Post helper that does just that.
 dev-ml/afl-persistent 1.3: Persistent-mode afl-fuzz for ocaml
@@ -737,7 +738,6 @@ dev-python/jsonlines 4.0.0: Library with helpers for the jsonlines file format
 dev-python/jupyter-sphinx 0.4.0: Jupyter Sphinx Extensions
 dev-python/langdetect 1.0.9: Port of Google's language-detection library to Python
 dev-python/latexify-py 0.4.3.1: Annotate Python source code to get LaTeX expressions
-dev-python/libusb1 3.1.0: Pure-python wrapper for libusb-1.0
 dev-python/lru-dict 1.3.0: Dict like LRU container
 dev-python/markdownify 0.11.6: Convert HTML to Markdown
 dev-python/markovify 0.9.4: Simple, extensible Markov chain generator
@@ -992,11 +992,11 @@ dev-vcs/gitqlient 1.6.2 1.6.3 9999: Multi-platform Git client written with Qt
 dev-vcs/gitqlient-gitserver-plugin 0.2.0: GitQlient GitServer plugin
 dev-vcs/gitqlient-jenkins-plugin 0.2.0: GitQlient Jenkins plugin
 dev-vcs/gitui 0.26.3 0.27.0: blazing fast terminal-ui for git
-dev-vcs/jj 0.26.0 0.27.0 9999: Jujutsu - an experimental version control system
+dev-vcs/jj 0.27.0-r1 9999: Jujutsu - an experimental version control system
 dev-vcs/lazygit 0.45.2 0.46.0 0.47.1 0.47.2 0.48.0: Simple terminal UI for git commands
 dev-vcs/lazyjj 0.5.0: TUI for Jujutsu/jj
 dev-vcs/pijul 1.0.0_beta9: A distributed version control system based on a theory of patches
-dev-zig/zls 0.10.0-r2 0.13.0-r1 9999: The officially unofficial Ziglang language server
+dev-zig/zls 0.10.0-r2 0.13.0-r1 0.14.0 9999: The officially unofficial Ziglang language server
 games-action/ATLauncher 3.4.27.0: Minecraft launcher which integrates multiple different ModPacks
 games-action/blackvoxel 2.50 9999: Blackvoxel Video Game
 games-action/classicube 1.3.7 9999: Reverse-engineered Minecraft Classic client
@@ -1186,7 +1186,7 @@ gui-apps/tiramisu 1.0_p20201110 2.0.20211107 9999: minimalistic desktop notifica
 gui-apps/tofi 0.8.1 0.9.1: Fast and simple dmenu/rofi replacement for wlroots-based Wayland compositors
 gui-apps/vicuna 1.25: Tool for uploading files to Wikimedia Commons and other Wikimedia projects
 gui-apps/walker 0.10.3 0.12.0: Multi-Purpose Launcher with a lot of features. Highly Customizable and fast
-gui-apps/waylock 1.3.0: Small screenlocker for Wayland compositors
+gui-apps/waylock 1.3.0 1.4.0: Small screenlocker for Wayland compositors
 gui-apps/wbg 1.0.2 1.1.0 1.2.0 9999: Super simple wallpaper application
 gui-apps/wdisplays 1.1 1.1.1 9999: GUI display configurator for wlroots compositors
 gui-apps/wev 1.0.0: Wayland event viewer
@@ -1221,12 +1221,12 @@ gui-wm/labwc 0.8.2 0.8.3 9999: Openbox alternative for wayland
 gui-wm/miracle-wm 0.4.0 0.4.1: Tiling Wayland compositor based on Mir
 gui-wm/niri 25.02: Scrollable-tiling Wayland compositor
 gui-wm/phoc 0.42.1 0.43.0 0.44.0 0.44.1 0.45.0: Wayland compositor for mobile phones
-gui-wm/river 0.3.6 0.3.7: A dynamic tiling Wayland compositor
+gui-wm/river 0.3.6 0.3.7 0.3.8: A dynamic tiling Wayland compositor
 gui-wm/swayfx 0.4-r2 0.5: SwayFX: Sway, but with eye candy!
 kde-apps/kwalletcli 3.03: CLI for the KDE Wallet
 kde-misc/geminipart 20241121 20241215: KPart for viewing text/gemini files
 kde-misc/kio-gemini 20240801 20241109: Gemini KIO worker
-mail-client/betterbird-bin 128.7.0: Betterbird is a fine-tuned version of Mozilla Thunderbird.
+mail-client/betterbird-bin 128.8.0: Betterbird is a fine-tuned version of Mozilla Thunderbird.
 mail-client/mailspring-bin 1.13.3: A beautiful, fast and fully open source mail client for Mac, Windows and Linux
 mail-client/proton-mail-bin 1.0.6: Beta Client for Proton Mail
 mail-filter/postfix-mta-sts-resolver 1.4.0: Daemon which provides TLS client policy for Postfix via socketmap
@@ -1390,8 +1390,8 @@ mpv-plugin/SmartCopyPaste 3.1: Gives mpv the capability to copy and paste while 
 mpv-plugin/kde-do-not-disturb 20230110: Disable the notifications while mpv is running
 mpv-plugin/kde-night-color 20230110 20240910: Disable Night Color while mpv is running
 mpv-plugin/kdialog-open-files 20221015: Use KDialog to add files to playlist, subtitles to playing video or open URLs
-mpv-plugin/mdmenu 20240215: dmenu based selection menu for chapters, tracks, playlist etc
-mpv-plugin/mfpbar 20240215: A minimalistic progressbar and osc replacement
+mpv-plugin/mdmenu 20240215 20250307: dmenu based selection menu for chapters, tracks, playlist etc
+mpv-plugin/mfpbar 20240215 20250307: A minimalistic progressbar and osc replacement
 mpv-plugin/mpv-autosub 20210629: Fully automatic subtitle downloading for the MPV media player
 mpv-plugin/mpv-kscreen-doctor 0.2.1 0.2.2: Set the display refresh rate that best approximates the content fps
 mpv-plugin/mpv-mpris 1.0 1.1 9999: MPRIS plugin for mpv
@@ -1401,7 +1401,7 @@ mpv-plugin/mpv_sponsorblock 20211223 20220924 20230130: mpv script to skip spons
 mpv-plugin/mpv_sponsorblock_minimal 2023.08.20: A minimal script to skip sponsored segments of YouTube videos
 mpv-plugin/mpv_thumbnail_script 0.5.2 0.5.3 0.5.4: A Lua script to show preview thumbnails in mpv's OSC seekbar
 mpv-plugin/open-in-mpv 2.4.1 2.4.3: Simple host script (in Go) for simple web extension to open videos in mpv
-mpv-plugin/thumbfast 2023.12.08: High-performance on-the-fly thumbnailer script for mpv.
+mpv-plugin/thumbfast 2023.12.08 2025.02.04: High-performance on-the-fly thumbnailer script for mpv.
 net-analyzer/gping 1.19.0: Ping, but with a graph
 net-analyzer/munin-contrib 0.2021.04.27 0.2024.03.04 0.2024.03.04-r1: User contributed stuff related to munin
 net-analyzer/netsniff-ng 0.6.8-r1 0.6.9: high performance network sniffer for packet inspection
@@ -1409,7 +1409,7 @@ net-client/amfora 1.8.0 1.9.2: A fancy terminal browser for the Gemini protocol.
 net-client/castor 0.8.18 0.9.0-r1: A graphical browser for plain-text protocols
 net-client/kristall 0.3-r2 0.4: Visual cross-platform gemini browser
 net-client/lagrange 1.18.3 1.18.4: Desktop GUI client for browsing Geminispace
-net-client/offpunk 1.9.1: Offline-First Gemini/Web/Gopher/RSS reader and browser
+net-client/offpunk 1.9.1 2.6: Offline-First Gemini/Web/Gopher/RSS reader and browser
 net-client/starfish 1.2.0 1.3.1: A Gemini browser for elementary OS
 net-client/telescope 0.9 0.10.1: w3m-like browser for Gemini
 net-dialup/atinout 0.9.1-r1: AT commands as input are sent to modem and responses given as output
@@ -1522,7 +1522,7 @@ net-misc/toot 0.38.1-r1: toot - Mastodon CLI & TUI
 net-misc/warp 0.8.0 0.8.1: Fast and secure file transfer
 net-misc/wayback_machine_downloader 2.3.0 2.3.1: Download an entire website from the Wayback Machine
 net-misc/whatscli 1.0.6 1.0.11: A command line interface for WhatsApp
-net-misc/wlvncc 20240817 20250122 99999999: A Wayland Native VNC Client
+net-misc/wlvncc 20250122 20250307 99999999: A Wayland Native VNC Client
 net-misc/wsdd 0.7.0 0.7.1 0.8: A Web Service Discovery host daemon.
 net-misc/xh 0.24.0: Friendly and fast tool for sending HTTP requests
 net-misc/xkcd-handler 1.1.4: A handler for XKCD urls
@@ -1587,7 +1587,7 @@ sci-biology/jalview-bin 2.11.4.1: Editor of multiple sequence alignments.
 sci-chemistry/vesta-bin 3.5.8: Visualisation for Electronic and STructural Analysis.
 sci-chemistry/xcrysden 1.6.2-r2: For the visualisation of molecular and crystal structures.
 sci-electronics/bender 0.28.1-r1: A dependency management tool for hardware projects
-sci-electronics/bluespec 2022.01-r1 2023.01 2023.07 9999: Toolchain for the Bluespec Hardware Definition Language
+sci-electronics/bluespec 2022.01-r1 2023.01 2023.07 2024.01 2024.07 9999: Toolchain for the Bluespec Hardware Definition Language
 sci-electronics/circt 1.14.0 1.37.0 1.76.0: The fast free Verilog/SystemVerilog simulator
 sci-electronics/coil64 2.1.27: Coil64 is inductance coil calculator
 sci-electronics/dsview 1.3.0 1.3.2 9999: An open source multi-function instrument
@@ -1635,7 +1635,7 @@ sci-mathematics/pyromaths 21.8.2-r1: Create maths exercises in LaTeX and PDF for
 sci-mathematics/rink 0.8.0-r1 9999: Unit conversion tool, similar to frink
 sci-mathematics/rstudio-desktop-bin 2023.09.1_p494 2024.12.0_p467 2024.12.0_p467-r1: IDE for R and Python
 sci-misc/boinc-wrapper 26018-r2 26018-r3: Wrapper to use non-BOINC apps with BOINC
-sci-misc/llama-cpp 0_pre4576 0_pre4763 9999: Port of Facebook's LLaMA model in C/C++
+sci-misc/llama-cpp 0_pre4576 0_pre4763 0_pre4848 9999: Port of Facebook's LLaMA model in C/C++
 sci-physics/openmodelica 1.24.0-r1: Open-source Modelica-based modeling and simulation environment
 sci-physics/ovito 3.10.4 3.10.5 3.10.5-r1: Open Visualization Tool
 sec-keys/openpgp-keys-aepaneshnikov 20221210: OpenPGP keys used by Alexander Epaneshnikov
@@ -1647,7 +1647,7 @@ sec-keys/openpgp-keys-russallbery 20230000: OpenPGP keys used by Russ Allbery (E
 sec-keys/openpgp-keys-schernykh 20210409: OpenPGP keys used to sign P2Pool releases
 sec-keys/openpgp-keys-skyjake 20211224: OpenPGP keys used by Jaakko Keranen
 sec-keys/signify-keys-gmid 2.0 2.1: Signify keys used to sign gmid releases
-sec-keys/signify-keys-lanodan 2021.04 2023 2024: Signify keys used by Haelwenn (lanodan) Monnier
+sec-keys/signify-keys-lanodan 2021.04 2023 2024 2025: Signify keys used by Haelwenn (lanodan) Monnier
 sec-keys/signify-keys-oriole-systems 20240330: Signify keys used to sign oriole.systems releases
 sec-keys/signify-keys-telescope 0.9 0.10: Signify keys used to sign telescope releases
 sys-apps/0xFFFF 0.10: 0pen Free Fiasco Firmware Flasher for Maemo devices
@@ -1661,7 +1661,7 @@ sys-apps/corefreq 1.96.3: CPU monitoring software designed for the 64-bits Proce
 sys-apps/dnf5 5.2.10.0: Command-line package manager
 sys-apps/dool 1.3.1-r1 1.3.2-r2 9999: Versatile replacement for vmstat, iostat and ifstat (clone of dstat)
 sys-apps/drm_info 2.7.0: Small utility to dump info about DRM devices
-sys-apps/flashprog 1.2 1.3: Utility for identifying, reading, writing, verifying and erasing flash chips.
+sys-apps/flashprog 1.2 1.3: Utility for identifying, reading, writing, verifying and erasing flash chips
 sys-apps/fselect 0.8.6: Find files with SQL-like queries
 sys-apps/hex 0.4.2 0.5.0 0.6.0: Futuristic take on hexdump
 sys-apps/hexyl 0.16.0: A command-line hex viewer
