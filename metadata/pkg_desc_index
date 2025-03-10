@@ -101,15 +101,16 @@ app-admin/himitsu 0.7 0.8 9999: Secret storage system for Unix, suitable for sto
 app-admin/himitsu-keyring 0.2.0: graphical frontend for managing a Himitsu key store
 app-admin/himitsu-ssh 0.3 0.4 9999: SSH integration for Himitsu
 app-admin/himitsu-totp 0.1 0.2 9999: TOTP support for Himitsu
-app-admin/i2pd-tools 2024.09.25 2025.02.26: Some useful tools for I2P
+app-admin/i2pd-tools 2024.09.25 2025.02.26-r1: Some useful tools for I2P
 app-admin/krapplet 0.3.1-r1: Krapplet (keyring applet): a Linux graphical password manager
 app-admin/oet 0.1.9 0.1.10 0.1.11 9999: Update your system into binpkgs in an overlay sandbox
 app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applications and tmux
 app-admin/pass-audit 1.2 1.2-r1: A pass extension for auditing your password repository.
 app-admin/pass-update 2.2.1: pass extension that provides an easy flow for updating passwords
 app-admin/passage 1.7.4.2: A fork of password-store using age as encryption backend
-app-admin/pulumi-bin 3.150.0 3.152.0 3.153.1: Infrastructure as code in any programming language
+app-admin/pulumi-bin 3.152.0 3.153.1 3.154.0: Infrastructure as code in any programming language
 app-admin/rbw 1.13.2 9999: Unofficial Bitwarden CLI
+app-admin/ripasso 0.7.0: A password manager that uses the file format of 'pass'
 app-admin/s-tui 1.1.6: Stress-Terminal UI monitoring tool
 app-admin/synadm 0.43.1 0.44: Command line admin tool for Synapse
 app-admin/talosctl-bin 1.7.6 1.9.2: Pre-compiled talosctl is an tool for interacting with the Talos API
@@ -277,12 +278,12 @@ app-misc/pfetch 0.6.0 1.3.0: A pretty system information tool written in POSIX s
 app-misc/pipes-rs 1.6.3: An over-engineered rewrite of pipes.sh in Rust
 app-misc/powerpanel 1.4.1-r1: PowerPanel software for CyberPower UPS systems
 app-misc/proctl 1.5 9999: small C program that can control processes
-app-misc/pueue 3.3.3 3.4.0 3.4.1: A cli tool for managing long running shell commands.
+app-misc/pueue 3.4.1 4.0.0: A cli tool for managing long running shell commands.
 app-misc/qman 1.2.1-r1 9999: A more modern manual page viewer for our terminals
 app-misc/rememberthemilk 1.3.11-r1: Freemium simple to-do tasks manager
 app-misc/s6-man 9999: mdoc versions of the HTML documentation for the s6 supervision suite
 app-misc/sherlock 0.15.0 9999: Hunt down social media accounts by username across social networks
-app-misc/superfile 1.1.7.1: Pretty fancy and modern terminal file manager
+app-misc/superfile 1.1.7.1 1.2.0.0: Pretty fancy and modern terminal file manager
 app-misc/tealdeer 1.6.1-r1: A very fast implementation of tldr in Rust.
 app-misc/termdown 1.18.0: Countdown timer and stopwatch in your terminal
 app-misc/tinyfetch 5.2 6.1 6.2 9999: fetch program written in pure C
@@ -301,7 +302,7 @@ app-misc/wego 2.2: Wego is a weather client for the terminal
 app-misc/wlx-overlay-s 0.6.0-r1 9999: A lightweight OpenXR/OpenVR overlay for Wayland and X11 desktops
 app-misc/x86-64-level 0.2.2 9999: Get the x86-64 Microarchitecture Level on the Current Machine
 app-misc/xplr 0.21.3-r1: A hackable, minimal, fast TUI file explorer
-app-misc/yazi 25.2.11-r1 25.3.2: Blazing fast terminal file manager written in Rust, based on async I/O.
+app-misc/yazi 25.2.11-r1 25.3.2 9999: Blazing fast terminal file manager written in Rust, based on async I/O.
 app-misc/zcock 0.2.1 0.2.2: Print an emoji according to traditional chinese calendar and more
 app-mobilephone/flashlight 0.1.1-r2: It's a flashlight, what do you expect?
 app-mobilephone/mobile-config-firefox 2.1.0: Mobile and privacy friendly configuration for Firefox
@@ -473,7 +474,7 @@ dev-db/rum 1.3.13-r1 1.3.14: RUM access method - inverted index with additional 
 dev-db/soci 4.0.3-r3: SOCI - The C++ Database Access Library
 dev-db/sqlcmd 1.8.2: The MSSQL SQLCMD CLI tool
 dev-db/tdscpp 20250301: C++ library to communicate with Microsoft SQL server
-dev-debug/gdb-dashboard 0.17.2 0.17.3: Modular visual interface for GDB in Python
+dev-debug/gdb-dashboard 0.17.3 0.17.4: Modular visual interface for GDB in Python
 dev-debug/gdbgui 0.15.2.0: Browser-based frontend to gdb
 dev-debug/lldb-mi 0.0.1 9999: LLDB Machine Interface Driver
 dev-debug/uscope 9999: Native code graphical debugger and introspection toolchain
@@ -836,7 +837,7 @@ dev-python/readability-lxml 0.8.1: fast html to text parser (article readability
 dev-python/readmdict 0.1.1-r1: Read mdx/mdd files
 dev-python/rectangle-packer 2.0.2: Pack a set of rectangles into a bounding box with minimum area
 dev-python/repology-client 0.2.0 0.3.0: Asynchronous wrapper for Repology API
-dev-python/rich-click 1.8.5 1.8.6: Format click help output nicely with rich
+dev-python/rich-click 1.8.6 1.8.7: Format click help output nicely with rich
 dev-python/rpmautospec-core 0.1.5: Core functionality used by rpmautospec
 dev-python/rst2ansi 0.1.5-r2 0.1.5-r3: Render reStructuredText documents to the terminal
 dev-python/rstcheck 6.2.0 6.2.1: Checks syntax of reStructuredText and code blocks nested within it
@@ -920,7 +921,7 @@ dev-util/bats-assert 2.1.0: Common assertions for Bats
 dev-util/bats-support 0.3.0: Supporting library for Bats test helpers
 dev-util/bc-ur 0.3.0: Blockchain Commons UR Library
 dev-util/bruno-bin 1.9.0 1.9.0-r1: Opensource IDE For Exploring and Testing Api's
-dev-util/bump-my-version 0.32.1 1.0.1: Version bump your Python project
+dev-util/bump-my-version 1.0.1 1.0.2: Version bump your Python project
 dev-util/bump2version 1.0.1: Version-bump your software with a single command!
 dev-util/cargo-post 0.1.7: A cargo wrapper that executes a post build script after a successful build.
 dev-util/catalyst-lab 1.6.0 1.6.1: An automation tool for building Gentoo release stages and binhost packages.
@@ -967,6 +968,7 @@ dev-util/prysk 0.20.0: Functional testing framework for command line application
 dev-util/qshaderedit 0.1.5: Multiplatform shader editor inspired by Apple's OpenGL Shader Builder
 dev-util/quilttools 0.3-r1: Mailbox to quilt series converter
 dev-util/reflex 0.3.1: A small tool to watch a directory and rerun a command when certain files change
+dev-util/rexxd 2025.02.17: Drop-in replacement for the original xxd
 dev-util/rust-rover 2024.2.1-r1: A feature-rich Rust IDE with timely support by JetBrarins
 dev-util/rust-script 0.35.0-r1: Command-line tool to run Rust scripts which can make use of crates
 dev-util/rye 0.44.0: a Hassle-Free Python Experience
@@ -979,6 +981,7 @@ dev-util/tflint-bin 0.43.0 0.46.0: A Pluggable Terraform Linter
 dev-util/tokei 12.1.1 12.1.2: Count your code, quickly
 dev-util/trivy 0.55.2: Vulnerability scanner for container images, file systems, and Git repos
 dev-util/typescript-language-server 4.1.2 4.3.3: TypeScript & JavaScript Language Server
+dev-util/u-config 0.33.3: Lean and mean pkg-config replacement
 dev-util/upstream-ontologist 0.1.35-r1: Tracking of upstream project metadata
 dev-util/vala-language-server 0.48.4: Code Intelligence for Vala & Genie
 dev-util/vscode-langservers-extracted 4.8.0 4.10.0: HTML/CSS/JSON/ESLint/Markdown language servers extracted from vscode.
@@ -1068,7 +1071,7 @@ games-util/hid-nintendo 9999: A Nintendo HID kernel module
 games-util/itch-bin 25.5.1-r2 26.1.9: itch.io game browser, installer and launcher
 games-util/legendary 0.20.33-r1 0.20.34-r1: A free and open-source replacement for the Epic Games Launcher
 games-util/libtess2 1.0.2: Game and tools oriented refactored version of GLU tesselator
-games-util/mangohud 0.7.2-r1 0.8.0 9999: Vulkan and OpenGL overlay for monitoring FPS, sensors, system load and more
+games-util/mangohud 0.7.2-r1 0.8.0 0.8.1 9999: Vulkan and OpenGL overlay for monitoring FPS, sensors, system load and more
 games-util/minigalaxy 1.2.6: A simple GOG client for Linux
 games-util/modrinth-app-bin 0.9.2 0.9.3: A unique, open source launcher that allows you to play your favorite Minecraft mods, and keep them up to date, all in one neat little package.
 games-util/pegasus 9999: Graphical frontend for browsing your game library
@@ -1272,7 +1275,7 @@ media-gfx/gephi-bin 0.9.6 0.10.1: The Open Graph Viz Platform
 media-gfx/mayo 0.8.0-r3: Opensource 3D CAD viewer and converter
 media-gfx/nsxiv 32 33 9999: Neo (or New or Not) Simple (or Small or Suckless) X Image Viewer
 media-gfx/oda-file-converter 23.5.0.0: For converting between different versions of .dwg and .dxf
-media-gfx/pdf4qt 1.4.0.0-r1 9999: Open source PDF WYSIWYG editor based on Qt
+media-gfx/pdf4qt 1.4.0.0-r1 1.5.0.0 9999: Open source PDF WYSIWYG editor based on Qt
 media-gfx/qview 5.0 6.1-r1: Practical and minimal image viewer
 media-gfx/sic 0.22.4: Accessible image processing and conversion from the terminal tool.
 media-gfx/silicon 0.5.2-r1 0.5.2-r2 0.5.3: Create beautiful image of your code
@@ -1696,7 +1699,7 @@ sys-boot/mkusb 23.2.0: CLI and GUI for creating bootable live USB, with optional
 sys-boot/ventoy-bin 1.0.97 1.0.98: Creator of bootable USBs, with ability to copy ISOs, persistence storage
 sys-boot/zfsbootmenu 1.12.0 2.2.2 2.3.0: ZFS bootloader for root-on-ZFS systems
 sys-cluster/genders 1.28.1-r1: Static cluster configuration database used for cluster configuration management
-sys-cluster/kops-bin 1.25.3: Kubernetes Operations
+sys-cluster/kops-bin 1.25.3 1.31.0: Kubernetes Operations
 sys-cluster/opencoarrays 2.9.3-r1 2.10.0-r1 2.10.1-r1 2.10.2: A parallel application binary interface for Fortran 2018 compilers
 sys-devel/fcode-utils 1.0.3: Set of utilities to process FCODE, OpenFirmware's byte code
 sys-devel/lcc 2021.01.11-r1: The lcc retargetable ANSI C compiler

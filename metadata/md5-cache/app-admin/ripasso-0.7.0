@@ -1,0 +1,16 @@
+BDEPEND=virtual/pkgconfig || ( dev-lang/rust-bin:9999 dev-lang/rust:9999 dev-lang/rust-bin:1.86.0 dev-lang/rust:1.86.0 dev-lang/rust-bin:1.85.0 dev-lang/rust:1.85.0 dev-lang/rust-bin:1.84.1 dev-lang/rust:1.84.1 dev-lang/rust-bin:1.84.0 dev-lang/rust:1.84.0 dev-lang/rust-bin:1.83.0 dev-lang/rust:1.83.0 dev-lang/rust-bin:1.82.0 dev-lang/rust:1.82.0 dev-lang/rust-bin:1.81.0 dev-lang/rust:1.81.0 dev-lang/rust-bin:1.80.1 dev-lang/rust:1.80.1 dev-lang/rust-bin:1.79.0 dev-lang/rust:1.79.0 dev-lang/rust-bin:1.78.0 dev-lang/rust:1.78.0 dev-lang/rust-bin:1.77.1 dev-lang/rust:1.77.1 dev-lang/rust-bin:1.76.0 dev-lang/rust:1.76.0 dev-lang/rust-bin:1.75.0 dev-lang/rust:1.75.0 dev-lang/rust-bin:1.74.1 dev-lang/rust:1.74.1 dev-lang/rust-bin:1.71.1 dev-lang/rust:1.71.1 )
+DEFINED_PHASES=compile configure install setup test unpack
+DEPEND=app-crypt/gpgme dev-libs/gmp dev-libs/libgit2:= dev-libs/libgpg-error dev-libs/nettle dev-libs/openssl:0= sys-libs/zlib gtk? ( gui-libs/gtk )
+DESCRIPTION=A password manager that uses the file format of 'pass'
+EAPI=8
+HOMEPAGE=https://github.com/cortex/ripasso
+INHERIT=cargo plocale
+IUSE=gtk debug
+KEYWORDS=~amd64
+LICENSE=GPL-3 Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD Boost-1.0 CC0-1.0 ISC LGPL-2+ LGPL-2.1 MIT MPL-2.0 Unicode-3.0 Unicode-DFS-2016 Unlicense || ( GPL-2 GPL-3 LGPL-3 )
+RDEPEND=app-crypt/gpgme dev-libs/gmp dev-libs/libgit2:= dev-libs/libgpg-error dev-libs/nettle dev-libs/openssl:0= sys-libs/zlib gtk? ( gui-libs/gtk )
+RESTRICT=test
+SLOT=0
+SRC_URI=https://github.com/cortex/ripasso/archive/refs/tags/release-0.7.0.tar.gz -> ripasso-0.7.0.tar.gz https://github.com/freijon/ripasso/releases/download/release-0.7.0/ripasso-0.7.0-crates.tar.xz
+_eclasses_=toolchain-funcs	6afdb6107430c1832ca7e16aacbf8fa1	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	357f1a896fbedcd06e5ce55419c49eb9	multiprocessing	1e32df7deee68372153dca65f4a7c21f	rust	969e004a4a07d654b01c6b15e2c66080	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	eb4315c13bbb1d5195ce27f8934644f9	plocale	950fbaec7deeba41b5bcc0572cca99b9
+_md5_=bb8d6b6ad1bb7a0761d23bf87afb1b3e
