@@ -1,21 +1,16 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
+PYTHON_COMPAT=( python3_{11..13} )
 
 inherit distutils-r1
 
-PARENT_PN="${PN%-dns-rfc2136}"
+PARENT_PN="certbot"
 PARENT_P="${PARENT_PN}-${PV}"
 
-DESCRIPTION="RFC 2136 DNS Authenticator plugin for Certbot (Let’s Encrypt client)"
-HOMEPAGE="
-	https://github.com/certbot/certbot
-	https://letsencrypt.org/
-"
 if [[ "${PV}" == *9999 ]]; then
 	inherit git-r3
 
@@ -30,23 +25,33 @@ else
 	KEYWORDS="~amd64 ~arm ~arm64 ~ppc64 ~riscv"
 fi
 
-S="${WORKDIR}/${PARENT_P}/${PN}"
+DESCRIPTION="RFC 2136 DNS Authenticator plugin for Certbot (Let’s Encrypt client)"
+HOMEPAGE="
+	https://github.com/certbot/certbot
+	https://certbot-dns-rfc2136.readthedocs.io/en/stable/
+	https://pypi.org/project/certbot-dns-rfc2136/
+	https://letsencrypt.org/
+"
 
+S="${WORKDIR}/${PARENT_P}/${PN}"
 LICENSE="Apache-2.0"
 SLOT="0"
 
 BDEPEND="
-	test? ( dev-python/pytest[${PYTHON_USEDEP}] )
+	test? (
+		dev-python/pytest[${PYTHON_USEDEP}]
+	)
 "
 
+# See module setup.py for dependencies
 RDEPEND="
-	${PYTHON_DEPS}
 	>=app-crypt/acme-${PV}[${PYTHON_USEDEP}]
 	>=app-crypt/certbot-${PV}[${PYTHON_USEDEP}]
 	>=dev-python/dnspython-1.15.0[${PYTHON_USEDEP}]
 "
 
-distutils_enable_sphinx docs dev-python/sphinx-rtd-theme
+distutils_enable_sphinx docs \
+	dev-python/sphinx-rtd-theme
 distutils_enable_tests pytest
 
 # Same than PATCHES but from repository's root directory,
@@ -66,4 +71,9 @@ python_prepare_all() {
 	popd > /dev/null || die
 
 	distutils-r1_python_prepare_all
+}
+
+python_test() {
+	local -x PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+	epytest
 }
