@@ -248,6 +248,7 @@ app-misc/glow 1.5.1 2.0.0: Render markdown on the CLI, with pizzazz!
 app-misc/godedupe 1.5.1 1.5.2: Improved and modern fdupes alternative
 app-misc/gopsuinfo 0.1.5: A gopsutil-based command to display system usage info as text
 app-misc/grit 0.3.0: An personal task manager that represents tasks as multitree nodes
+app-misc/infnoise 0.3.3: infinite noise TRNG program
 app-misc/interception-caps2esc 0.3.2: Interception tools plugin switching CAPS and ESC
 app-misc/interception-tools 0.6.8-r1: A minimal composable infrastructure on top of libudev and libevdev
 app-misc/kanata 1.7.0 1.8.0: Multi-layer keyboard customization
@@ -1097,7 +1098,7 @@ gui-apps/ashell 0.3.0 0.3.1: A ready to go Wayland status bar for Hyprland
 gui-apps/aylurs-gtk-shell 1.8.2-r1: Aylurs's Gtk Shell (AGS), An eww inspired gtk widget system.
 gui-apps/azote 1.14.1 9999: wallpaper manager for wlroots compositors
 gui-apps/clipman 1.6.2 1.6.3 1.6.4: A basic clipboard manager for Wayland.
-gui-apps/coreaction 4.5.0 9999: A side bar for showing widgets for C Suite
+gui-apps/coreaction 4.5.0 5.0.0: A side bar for showing widgets for C Suite
 gui-apps/corearchiver 4.5.0 9999: Archiver for C Suite, to create and extract archives
 gui-apps/corefm 4.5.0 9999: A lightweight file-manager for C Suite
 gui-apps/coregarage 4.5.0 9999: A settings manager for C Suite
@@ -1211,8 +1212,8 @@ gui-apps/yambar 1.11.0 9999: Simplistic and highly configurable status panel for
 gui-libs/gtk-session-lock 0.2.0-r6 9999: GTK-based lockscreen for Wayland
 gui-libs/gtk4-layer-shell 1.0.2 1.0.4: A library for using the Layer Shell Wayland protocol with GTK4.
 gui-libs/hyprland-qt-support 0.1.0: Qt6 Qml style provider for hypr* apps
-gui-libs/libcprime 4.5.0 5.0.0_pre20240921 9999: Library for managing settings of CoreApps
-gui-libs/libcsys 4.5.0 9999: Library for managing the device
+gui-libs/libcprime 4.5.0 5.0.0: Library for managing settings of CoreApps
+gui-libs/libcsys 4.5.0 5.0.0: Library for managing the device
 gui-libs/libsfdo 0.1.3: A collection of libraries which implement some freedesktop.org specifications
 gui-libs/mir 2.19.2 2.19.3: Set of libraries for building Wayland based shells
 gui-libs/scenefx 0.1 0.2 0.2.1: A replacement for the wlroots scene API with eye-candy effects.
@@ -1662,7 +1663,7 @@ sys-apps/bpftune 9999: bpftune uses BPF to auto-tune Linux systems
 sys-apps/bustd 0.1.1: Process killer daemon for out-of-memory scenarios
 sys-apps/colortail 0.3.3 9999: tail command with colors
 sys-apps/corefreq 1.96.3: CPU monitoring software designed for the 64-bits Processors, like top
-sys-apps/dnf5 5.2.10.0: Command-line package manager
+sys-apps/dnf5 5.2.10.0 5.2.11.0: Command-line package manager
 sys-apps/dool 1.3.1-r1 1.3.2-r2 9999: Versatile replacement for vmstat, iostat and ifstat (clone of dstat)
 sys-apps/drm_info 2.7.0: Small utility to dump info about DRM devices
 sys-apps/flashprog 1.2 1.3: Utility for identifying, reading, writing, verifying and erasing flash chips
@@ -1717,7 +1718,7 @@ sys-fs/fsverity-utils 1.6: Userspace utility for file-level integrity/authentici
 sys-fs/gcsfuse 1.2.0: A user-space file system for interacting with Google Cloud Storage
 sys-fs/gdu 5.14.0 5.25.0: Disk usage analyzer with console interface written in Go
 sys-fs/gfs2-utils 3.4.1 3.5.1-r1: Shared-disk cluster file system
-sys-fs/jefferson 0.4.5 0.4.6: JFFS2 filesystem extraction tool
+sys-fs/jefferson 0.4.6: JFFS2 filesystem extraction tool
 sys-fs/mountpoint-s3-bin 1.1.1: Fuse for AWS S3 (Simple Storage Service), official
 sys-fs/ntfs2btrfs 20240115: Conversion tool from NTFS to Btrfs
 sys-fs/sanoid 2.2.0 9999: Policy-driven snapshot management and replication tools for OpenZFS.
@@ -1752,18 +1753,15 @@ sys-process/snooze 0.5 9999: Run a command at a particular time
 sys-process/task-spooler 1.3.0: A scheduler for CPU tasks
 sys-process/xe 1.0-r1: Simple xargs and apply replacement with sane defaults
 virtual/crystal-db 0.13-r1: Virtual for Crystal database drivers
-www-apps/castopod 1.4.3 1.4.5: Open-source hosting platform made for podcasters
 www-apps/code-server-bin 4.18.0 4.19.1 4.90.3: VS Code in the browser (binary version with unbundled node and ripgrep)
 www-apps/forgejo 9.0.3 10.0.0 10.0.1: A self-hosted lightweight software forge
 www-apps/freshrss 1.24.3 1.25.0: A free, self-hostable news aggregator
-www-apps/gotosocial 0.9.0 0.10.0: Fast, fun, ActivityPub server, powered by Go
-www-apps/honk 0.9.8 0.9.91: ActivityPub server with minimal setup and support costs
 www-apps/invidious 2024.11.10.0: Invidious is an alternative front-end to YouTube
 www-apps/jackett 0.22.1363: API Support for your favorite torrent trackers
 www-apps/laminar 1.3-r1: Fast and lightweight Continuous Integration
 www-apps/libmedium 2024.06.10: Alternative private front-end to Medium
 www-apps/mycorrhiza 1.15.1 9999: Git-based wiki engine written in Go using mycomarkup
-www-apps/pleroma 2.9.0 9999: ActivityPub social networking software compatible with other Fediverse software
+www-apps/pleroma 2.9.1 9999: ActivityPub social networking software compatible with other Fediverse software
 www-apps/pleroma-fe 2.7.0 9999: Main frontend for www-apps/pleroma, inspired by qvitter
 www-apps/redlib 0.34.0 0.35.1: Private front-end to Reddit
 www-apps/rimgo 1.2.1: An alternative frontend for Imgur. Originally based on rimgu.
