@@ -1,4 +1,4 @@
-# Copyright 2024 Gentoo Authors
+# Copyright 2024-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -53,6 +53,7 @@ BDEPEND="
 PATCHES=(
 	# bug 932786
 	"${FILESDIR}/${PN}-2.17.0-remove-debug-flags.patch"
+	"${FILESDIR}/${P}-remove-tests.patch"
 )
 
 src_prepare() {
@@ -78,13 +79,4 @@ src_configure() {
 		-DMIR_BUILD_UNIT_TESTS=OFF
 	)
 	cmake_src_configure
-}
-
-src_install() {
-	cmake_src_install
-
-	if use test; then
-		# remove dummy libraries
-		rm -f "${ED}/usr/$(get_libdir)/mir/server-platform/"{graphics-dummy.so,input-stub.so} || die
-	fi
 }

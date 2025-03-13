@@ -1,4 +1,4 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -8,7 +8,7 @@ inherit fcaps go-module systemd shell-completion
 DESCRIPTION="Fast and lightweight DNS proxy as ad-blocker with many features written in Go"
 HOMEPAGE="https://github.com/0xERR0R/blocky/"
 
-DOCUMENTATION_COMMIT=8c38c181ca6600328847f3c9856df99b0c3ad04b
+DOCUMENTATION_COMMIT=d58f16a83c51f47ed033a8447527fd6e7b9af135
 
 if [[ ${PV} == 9999* ]]; then
 	inherit git-r3
@@ -72,7 +72,8 @@ src_compile() {
 
 src_test() {
 	# mimcking make test
-	ego run github.com/onsi/ginkgo/v2/ginkgo --label-filter="!e2e" --coverprofile=coverage.txt --covermode=atomic --cover -r -p
+	ego run github.com/onsi/ginkgo/v2/ginkgo --label-filter="!e2e" --coverprofile=coverage.txt --covermode=atomic \
+		--cover -r -p
 	ego tool cover -html coverage.txt -o coverage.html
 }
 

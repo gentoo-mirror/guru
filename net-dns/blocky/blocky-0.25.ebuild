@@ -1,4 +1,4 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -8,7 +8,7 @@ inherit fcaps go-module systemd shell-completion
 DESCRIPTION="Fast and lightweight DNS proxy as ad-blocker with many features written in Go"
 HOMEPAGE="https://github.com/0xERR0R/blocky/"
 
-DOCUMENTATION_COMMIT=9c6a86eb163e758686c5d6d4d5259deb086a8aa9
+DOCUMENTATION_COMMIT=d58f16a83c51f47ed033a8447527fd6e7b9af135
 
 if [[ ${PV} == 9999* ]]; then
 	inherit git-r3
@@ -19,7 +19,7 @@ else
 	https://github.com/rahilarious/gentoo-distfiles/releases/download/${P}/deps.tar.xz -> ${P}-deps.tar.xz
 	doc? ( https://github.com/0xERR0R/blocky/archive/${DOCUMENTATION_COMMIT}.tar.gz -> ${P}-docs.tar.gz )
 "
-	KEYWORDS="~amd64"
+	KEYWORDS="~amd64 ~arm64"
 fi
 
 # main
@@ -29,16 +29,16 @@ LICENSE+=" AGPL-3 BSD-2 BSD ISC MIT MPL-2.0"
 SLOT="0"
 IUSE="doc"
 
-# RESTRICT="test"
+RESTRICT="test"
 
 RDEPEND="
 	acct-user/blocky
 	acct-group/blocky
 "
 
-PATCHES=(
-	"${FILESDIR}"/disable-failed-tests-0.22.patch
-)
+# PATCHES=(
+# 	"${FILESDIR}"/disable-failed-tests-0.22.patch
+# )
 
 FILECAPS=(
 	-m 755 'cap_net_bind_service=+ep' usr/bin/"${PN}"
@@ -54,12 +54,12 @@ src_unpack() {
 			git-r3_src_unpack
 		fi
 	else
-		go-module_src_unpack
+		default
 	fi
 }
 
 src_compile() {
-	[[ ${PV} != 9999* ]] && export VERSION="${PV}"
+	[[ ${PV} != 9999* ]] && { export VERSION="${PV}" && ln -sv ../vendor ./ || die ; }
 
 	# mimicking project's Dockerfile
 	emake GO_SKIP_GENERATE=yes GO_BUILD_FLAGS="-tags static -v " build
@@ -72,7 +72,8 @@ src_compile() {
 
 src_test() {
 	# mimcking make test
-	ego run github.com/onsi/ginkgo/v2/ginkgo --label-filter="!e2e" --coverprofile=coverage.txt --covermode=atomic --cover -r -p
+	ego run github.com/onsi/ginkgo/v2/ginkgo --label-filter="!e2e" --coverprofile=coverage.txt --covermode=atomic \
+		--cover -r -p
 	ego tool cover -html coverage.txt -o coverage.html
 }
 
