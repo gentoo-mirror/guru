@@ -1,4 +1,4 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -8,7 +8,7 @@ inherit go-module
 DESCRIPTION="Let's Encrypt/ACME client (like certbot or acme.sh) and library written in Go"
 HOMEPAGE="https://github.com/go-acme/lego/"
 
-DOCUMENTATION_COMMIT=9fcb88b9d6914c456d6800cc84c3cd0a6ac93f18
+DOCUMENTATION_COMMIT=f1411f1b397b637903fd2e62769d50b3974b97ec
 
 if [[ ${PV} == 9999* ]]; then
 	inherit git-r3
@@ -41,12 +41,20 @@ src_unpack() {
 		go-module_live_vendor
 		if use doc; then
 			EGIT_BRANCH="gh-pages"
-			EGIT_CHECKOUT_DIR="${WORKDIR}/${P}-doc"
+			EGIT_CHECKOUT_DIR="${WORKDIR}/${PN}-${DOCUMENTATION_COMMIT}"
 			git-r3_src_unpack
 		fi
 	else
-		go-module_src_unpack
+		default
 	fi
+}
+
+src_prepare() {
+	default
+	if use doc; then
+		find ../"${PN}"-"${DOCUMENTATION_COMMIT}"/ -type f -not -name '*.html' -delete || die
+	fi
+
 }
 
 src_compile() {
@@ -57,6 +65,7 @@ src_compile() {
 		VERSION="$(git rev-parse HEAD)" || die
 	else
 		VERSION="${PV}"
+		ln -sv ../vendor ./ || die
 	fi
 
 	ego build -trimpath -ldflags "-X main.version=${VERSION}" -o dist/"${PN}" ./cmd/lego/
@@ -73,10 +82,6 @@ src_install() {
 	# docs
 	einstalldocs
 	if use doc; then
-		if [[ ${PV} == 9999* ]]; then
-			dodoc -r ../"${P}"-doc/*
-		else
-			dodoc -r ../"${PN}"-"${DOCUMENTATION_COMMIT}"/*
-		fi
+		dodoc -r ../"${PN}"-"${DOCUMENTATION_COMMIT}"/*
 	fi
 }

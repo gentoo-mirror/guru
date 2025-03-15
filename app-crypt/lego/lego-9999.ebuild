@@ -1,4 +1,4 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -8,7 +8,7 @@ inherit go-module
 DESCRIPTION="Let's Encrypt/ACME client (like certbot or acme.sh) and library written in Go"
 HOMEPAGE="https://github.com/go-acme/lego/"
 
-DOCUMENTATION_COMMIT=5b9931c1cf7c95b3e6bd5bf37126701d0327a08f
+DOCUMENTATION_COMMIT=f1411f1b397b637903fd2e62769d50b3974b97ec
 
 if [[ ${PV} == 9999* ]]; then
 	inherit git-r3

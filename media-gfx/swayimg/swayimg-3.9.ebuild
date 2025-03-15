@@ -12,7 +12,7 @@ SRC_URI="https://github.com/artemsen/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="avif bash-completion exif exr gif heif jpeg jpegxl png sixel svg test tiff webp X"
+IUSE="avif bash-completion exif exr gif heif jpeg jpegxl png raw sixel svg test tiff webp X"
 RESTRICT="!test? ( test )"
 
 RDEPEND="
@@ -30,6 +30,7 @@ RDEPEND="
 	jpeg? ( media-libs/libjpeg-turbo:= )
 	jpegxl? ( media-libs/libjxl:= )
 	png? ( media-libs/libpng:= )
+	raw? ( media-libs/libraw:= )
 	sixel? ( media-libs/libsixel )
 	svg? (
 		dev-libs/glib:2
@@ -47,11 +48,6 @@ BDEPEND="
 	test? ( dev-cpp/gtest )
 "
 
-PATCHES=(
-	# bug #948480
-	"${FILESDIR}/${P}-fix-build-without-libpng.patch"
-)
-
 src_configure() {
 	local emesonargs=(
 		$(meson_feature avif)
@@ -62,6 +58,7 @@ src_configure() {
 		$(meson_feature jpeg)
 		$(meson_feature jpegxl jxl)
 		$(meson_feature png)
+		$(meson_feature raw)
 		$(meson_feature sixel)
 		$(meson_feature svg)
 		$(meson_feature test tests)

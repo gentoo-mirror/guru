@@ -1,16 +1,16 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-inherit go-module
+inherit go-module unpacker
 
 DESCRIPTION="A TUI bluetooth manager for Linux written in Go"
 HOMEPAGE="https://darkhz.github.io/bluetuith"
 
 # MAKE SURE to change these on every update
 [[ ${PV} != 9999* ]] && \
-GIT_COMMIT="ffe8681"
+GIT_COMMIT="5780d74"
 GIT_DOCUMENTATION_COMMIT="3b2ebf5a6bc8a9ed2dc48e1fa7f0df5851ddb84b"
 
 if [[ ${PV} == 9999* ]]; then
@@ -34,6 +34,9 @@ RESTRICT="test"
 RDEPEND="
 	net-wireless/bluez
 "
+BDEPEND="
+	$(unpacker_src_uri_depends)
+"
 
 src_unpack() {
 	if [[ ${PV} == 9999* ]]; then
@@ -48,10 +51,14 @@ src_unpack() {
 
 		go-module_live_vendor
 	else
-		go-module_src_unpack
+		unpacker_src_unpack
 	fi
 }
 
+src_prepare() {
+	[[ ${PV} != 9999* ]] && { ln -sv ../vendor ./ || die ; }
+	default
+}
 src_compile() {
 	# mimicking behavior from https://github.com/darkhz/bluetuith/blob/master/.goreleaser.yml
 	[[ ${PV} == 9999* ]] && GIT_COMMIT=$(git rev-parse --short HEAD)
