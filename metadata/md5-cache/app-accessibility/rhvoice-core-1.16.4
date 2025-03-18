@@ -1,0 +1,16 @@
+BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.20.5
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=dev-libs/boost:= ao? ( media-libs/libao ) dbus? ( dev-libs/glib:2[dbus] dev-libs/libsigc++:2 >=dev-cpp/glibmm-2.66.1:2 ) portaudio? ( media-libs/portaudio ) pulseaudio? ( media-libs/libpulse ) speech-dispatcher? ( app-accessibility/speech-dispatcher ) dev-cpp/cli11 <dev-libs/utfcpp-4.0
+DESCRIPTION=Multilingual text-to-speech engine
+EAPI=8
+HOMEPAGE=https://rhvoice.org https://github.com/RHVoice/RHVoice
+INHERIT=cmake flag-o-matic
+IUSE=ao dbus portaudio +pulseaudio +speech-dispatcher l10n_en l10n_ru
+KEYWORDS=~amd64 ~x86
+LICENSE=BSD GPL-2+ GPL-3+ LGPL-2.1+
+RDEPEND=dev-libs/boost:= ao? ( media-libs/libao ) dbus? ( dev-libs/glib:2[dbus] dev-libs/libsigc++:2 >=dev-cpp/glibmm-2.66.1:2 ) portaudio? ( media-libs/portaudio ) pulseaudio? ( media-libs/libpulse ) speech-dispatcher? ( app-accessibility/speech-dispatcher ) !<app-accessibility/rhvoice-1.14.0 l10n_en? ( app-dicts/rhvoice-en ) l10n_ru? ( app-dicts/rhvoice-ru )
+REQUIRED_USE=|| ( ao portaudio pulseaudio )
+SLOT=0
+SRC_URI=https://github.com/RHVoice/RHVoice/archive/refs/tags/1.16.4.tar.gz -> RHVoice-1.16.4.tar.gz https://github.com/arsenm/sanitizers-cmake/archive/99e159ec9bc8dd362b08d18436bd40ff0648417b.tar.gz -> RHVoice-1.16.4-sanitizers.tar.gz
+_eclasses_=toolchain-funcs	6afdb6107430c1832ca7e16aacbf8fa1	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	357f1a896fbedcd06e5ce55419c49eb9	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	10a50dfaf728b802fcfd37f8d0da9056
+_md5_=7da0d83a4a86e4cd3ab238f0a0fd2079

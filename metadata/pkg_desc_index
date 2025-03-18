@@ -78,8 +78,8 @@ acct-user/wsdd 0: User for net-misc/wsdd
 acct-user/yacy 0: User for net-misc/yacy
 acct-user/yggdrasil 1: Yggdrasil user
 app-accessibility/mimic1 1.3.0.1-r1 9999: Mycroft's TTS engine, based on CMU's Flite (Festival Lite)
-app-accessibility/rhvoice 1.6.0 1.14.0: TTS engine with extended languages support (metapackage)
-app-accessibility/rhvoice-core 1.14.0-r1: TTS engine with extended languages support
+app-accessibility/rhvoice 1.14.0: Multilingual text-to-speech engine (metapackage)
+app-accessibility/rhvoice-core 1.14.0-r1 1.16.4: Multilingual text-to-speech engine
 app-accessibility/speakup-tools 20121017: Tools to customize speakup module
 app-admin/agru 0.1.10: A tool for managing GitLab groups and projects
 app-admin/akita 0.1.4: An HTTP log monitoring tool for your terminal
@@ -87,11 +87,11 @@ app-admin/ananicy-cpp 1.1.1-r3: Ananicy rewritten in C++ for much lower CPU and 
 app-admin/antidot 0.6.3: Cleans up your $HOME from those pesky dotfiles
 app-admin/aws-vault 7.2.0: Securely store and access AWS credentials in development environments
 app-admin/bitwarden-cli 2024.2.0 2024.2.1: CLI frontend client connects to Bitwarden comapatible password manager server
-app-admin/bitwarden-cli-bin 2024.2.1 2024.3.1 2024.4.0 2024.6.0: Precompiled CLI frontend which connects to Bitwarden comapatible servers
+app-admin/bitwarden-cli-bin 2024.4.0 2024.6.0 2025.2.0: Precompiled CLI frontend which connects to Bitwarden comapatible servers
 app-admin/blahajdots 0.5.0 9999: Bespoke dotfile management for sharkgirls.
 app-admin/boinctui 2.7.1 2.7.1-r1: Fullscreen text mode manager for the BOINC client
 app-admin/chamber 2.13.2: Managing secrets in AWS SSM Parameter Store
-app-admin/chezmoi 2.59.0 2.59.1: Manage your dotfiles across multiple machines, securely
+app-admin/chezmoi 2.59.1 2.60.1: Manage your dotfiles across multiple machines, securely
 app-admin/customrescuecd-x86_64 0.12.7 0.12.8: A system rescue cd or usbstick for desktop and server based on gentoo
 app-admin/dotbot 1.20.1: A tool that bootstraps your dotfiles
 app-admin/gentoo_update 0.2.4: Gentoo Linux updater
@@ -116,7 +116,7 @@ app-admin/synadm 0.43.1 0.44: Command line admin tool for Synapse
 app-admin/talosctl-bin 1.7.6 1.9.2: Pre-compiled talosctl is an tool for interacting with the Talos API
 app-admin/terragrunt-bin 0.38.6 0.45.4 0.50.8: A thin wrapper for Terraform
 app-admin/tflint 0.55.1: Terraform linter
-app-admin/vaultwarden 1.32.5 1.32.7 9999: Unofficial Bitwarden compatible password manager server written in Rust
+app-admin/vaultwarden 1.32.5 1.32.7 1.33.2 9999: Unofficial Bitwarden compatible password manager server written in Rust
 app-alternatives/phosh-keyboard 0: sm.puri.OSK0.desktop symlinks
 app-arch/fuse-archive 0.1.14 1.6 1.10: Read-only FUSE file system for mounting archives and compressed files
 app-arch/libarchive-qt 2.0.8: Qt based archiving solution with libarchive backend
@@ -169,8 +169,8 @@ app-crypt/uacme 1.7.1: ACMEv2 client written in plain C with minimal dependencie
 app-dicts/dictd-foldoc 20180405: The Free On-line Dictionary of Computing for dict
 app-dicts/dictd-gcide 0.48.5_p3: Collaborative International Dictionary of English (incl. Webster 1913) for dict
 app-dicts/dictd-moby-thesaurus 1.0: Grady Ward's Moby Thesaurus; 35000 root words and 2.5 million synonyms
-app-dicts/rhvoice-en 2.11: English language support for RHVoice
-app-dicts/rhvoice-ru 2.14 2.15: Russian language support for RHVoice
+app-dicts/rhvoice-en 2.11 2.16: English language support for RHVoice
+app-dicts/rhvoice-ru 2.14 2.15 2.16: Russian language support for RHVoice
 app-doc/anarchism 15.3: An anarchist FAQ
 app-doc/geeknote 3.0.5 3.0.6 9999: Evernote CLI: CRUD for notes in cloud, in markdown
 app-doc/openbsd-manpages 7.5: OpenBSD manual pages
@@ -209,7 +209,7 @@ app-eselect/eselect-ld 1.0.0: Manage the ld symlink
 app-eselect/eselect-swift 1.0: Manages Swift symlinks
 app-eselect/eselect-vala 1.0.0: Manage the valac symlink
 app-forensics/mvt 2.4.1: Forensic traces to identify a potential compromise of Android and iOS devices
-app-laptop/framework_tool 0.1.0_p20240930 0.2.0 0.2.1 9999: Tool to interact with a Framework Laptop's hardware system
+app-laptop/framework_tool 0.2.1 9999: Tool to interact with a Framework Laptop's hardware system
 app-metrics/scaphandre 0.5.0-r1: Electrical power consumption measurement agent
 app-misc/1password-cli 2.30.3: The world’s most-loved password manager CLI
 app-misc/afc 1.1 1.2 9999: Anime File Checker, checks CRC32 contained in filenames
@@ -316,7 +316,7 @@ app-office/khronos 4.0.0 4.0.1: A GTK4 time tracker for tasks
 app-office/lotus123r3 1.0.0_rc4: A native port of Lotus 1-2-3 to Linux.
 app-office/nixnote-bin 2.1.10: Free and open source note taking app, compatible with Evernote sync server
 app-office/notesnook-bin 2.6.12: End-to-end encrypted note taking alternative to Evernote
-app-office/obsidian 1.7.7 1.8.7: A second brain, for you, forever.
+app-office/obsidian 1.8.9: A second brain, for you, forever.
 app-office/openoffice-bin 4.1.15: Apache OpenOffice productivity suite
 app-office/pyspread 2.3.1: Pyspread is a non-traditional spreadsheet written in Python
 app-office/standartnotes-bin 3.183.22: End-to-end encrypted note-taking app, alternative to Evernote
@@ -370,7 +370,7 @@ app-text/tldr 3.2.0 3.3.0: Python command line client for tldr pages
 app-text/typst 0.13.1 9999: A markup-based typesetting system for the sciences
 app-text/typstyle 0.12.12: A beautiful and reliable code formatter for Typst
 app-text/vale 3.7.1 3.9.1: A syntax-aware linter for prose built with speed and extensibility in mind
-app-vim/ale 3.3.0: Check syntax in Vim asynchronously and fix files, with LSP support
+app-vim/ale 3.3.0 4.0.0: Check syntax in Vim asynchronously and fix files, with LSP support
 app-vim/ansible-vim 3.3 3.4: vim plugin: sytax highlighting for Ansible's common file types
 app-vim/apkbuild-vim 20210911: vim plugin: edit and work with APKBUILD files
 app-vim/bracketed-paste 20180522: vim plugin: handles bracketed-paste-mode in vim (aka. automatic `:set paste`)
@@ -436,7 +436,7 @@ dev-cpp/xtensor 0.24.4: header-only C++ library for numerical analysis with mult
 dev-cpp/xtl 0.7.5: Algorithms and containers used by the xtensor stack and the xeus stack
 dev-crystal/athena-negotiation 0.1.5 0.2.0: Framework agnostic content negotiation library
 dev-crystal/athena-spec 0.3.8 0.3.10: Common/helpful Spec compliant testing utilities
-dev-crystal/backtracer 1.2.2: Crystal shard aiming to assist with parsing backtraces into a structured form
+dev-crystal/backtracer 1.2.2 1.2.3: Crystal shard aiming to assist with parsing backtraces into a structured form
 dev-crystal/crikey 0.1.0_p20170404: Data structure view templates for Crystal
 dev-crystal/crustache 2.4.4: {{Mustache}} for Crystal
 dev-crystal/crystal-db 0.11.0 0.13.1: Common DB API for Crystal
@@ -572,7 +572,7 @@ dev-libs/lzfse 9999: LZFSE compression library and command line tool.
 dev-libs/md4c 0.4.8_p20220115 0.5.2: C Markdown parser. Fast, SAX-like interface, CommonMark Compliant.
 dev-libs/mtxclient 0.10.0-r1 0.10.0-r2: Client API library for Matrix, built on top of libcurl
 dev-libs/nanopb 0.4.9.1 9999: plain-C Protocol Buffers for embedded/memory-constrained systems
-dev-libs/open62541 1.4.10: Open source C implementation of OPC UA
+dev-libs/open62541 1.4.11.1: Open source C implementation of OPC UA
 dev-libs/polyseed 1.0.0 2.0.0 9999: Mnemonic seed library for Monero and other CryptoNote-based currencies.
 dev-libs/qschematic 1.6.0: Library for creating flowcharts and engineering diagrams
 dev-libs/randomx 1.2.1-r1: Proof of work algorithm based on random code execution
@@ -617,7 +617,7 @@ dev-ml/psq 0.2.0-r2 0.2.1: Functional Priority Search Queues for OCaml
 dev-ml/randomconv 0.1.3: Convert from random bytes to random native numbers
 dev-ml/stringext 1.6.0-r2: Extra string functions for OCaml
 dev-ml/uri 4.4.0: RFC3986 URI parsing library for OCaml
-dev-nim/cligen 1.7.8: Infer & generate command-line interface/option/argument parser
+dev-nim/cligen 1.7.8 1.8.0: Infer & generate command-line interface/option/argument parser
 dev-nim/inim 0.6.1 1.0.0: Interactive Nim Shell / REPL / Playground
 dev-nim/nake 1.9.4-r1: make-like for Nim. Describe your builds as tasks!
 dev-nim/nimbus 1.1.3 1.1.4: Packaging-friendly Nim build system
@@ -667,7 +667,7 @@ dev-python/chevron 0.13.1 0.14.0-r1: A Python implementation of mustache
 dev-python/click-aliases 1.0.4 1.0.5: Add (mutiple) aliases to a click group or command
 dev-python/click-command-tree 1.1.1: click plugin to show the command tree of your CLI
 dev-python/click-repl 0.2.0-r1: Subcommand REPL for click apps
-dev-python/cloudflare 2.19.4 4.0.0: Python wrapper for the Cloudflare v4 API
+dev-python/cloudflare 2.19.4 4.0.0 4.1.0: Python wrapper for the Cloudflare v4 API
 dev-python/cloup 3.0.6: Click + option groups + constraints + aliases + help themes + ...
 dev-python/codecov 2.1.12: Hosted coverage reports for GitHub, Bitbucket and Gitlab
 dev-python/cogapp 3.4.1: Cog content generation tool. Small bits of computation for static files
@@ -775,7 +775,7 @@ dev-python/pem 23.1.0: Easy PEM file parsing in Python
 dev-python/persist-queue 0.8.1 1.0.0: A thread-safe disk based persistent queue in Python
 dev-python/pg8000 1.29.4: PostgreSQL interface library
 dev-python/phx-class-registry 4.0.6-r1 4.1.0: An intersection of the Registry and Factory pattern
-dev-python/pillow-heif 0.21.0: Python interface for libheif library
+dev-python/pillow-heif 0.21.0 0.22.0: Python interface for libheif library
 dev-python/playsound 1.3.0: Single function module with no dependencies for playing sounds
 dev-python/plexapi 4.16.0 4.16.1: Python bindings for the Plex API.
 dev-python/plotext 5.3.0 5.3.2: Plotting on terminal
@@ -838,7 +838,7 @@ dev-python/readability-lxml 0.8.1: fast html to text parser (article readability
 dev-python/readmdict 0.1.1-r1: Read mdx/mdd files
 dev-python/rectangle-packer 2.0.2: Pack a set of rectangles into a bounding box with minimum area
 dev-python/repology-client 0.2.0 0.3.0: Asynchronous wrapper for Repology API
-dev-python/rich-click 1.8.6 1.8.7: Format click help output nicely with rich
+dev-python/rich-click 1.8.7 1.8.8: Format click help output nicely with rich
 dev-python/rpmautospec-core 0.1.5: Core functionality used by rpmautospec
 dev-python/rst2ansi 0.1.5-r2 0.1.5-r3: Render reStructuredText documents to the terminal
 dev-python/rstcheck 6.2.0 6.2.1: Checks syntax of reStructuredText and code blocks nested within it
@@ -1017,7 +1017,7 @@ games-board/fairy-stockfish 14.0.1: Chess variant engine derived from Stockfish 
 games-board/openriichi 0.2.1.1: OpenRiichi is an open source Japanese Mahjong client
 games-board/rmahjong 0.4_p20201106: Riichi Mahjong, the Japanese variant of the Chinese game Mahjong for 4 players
 games-emulation/RetroArch 1.19.1 1.20.0: RetroArch is a frontend for emulators, game engines and media players
-games-emulation/dosbox-x 2025.01.01 2025.02.01 9999: Complete, accurate DOS emulator forked from DOSBox
+games-emulation/dosbox-x 2025.02.01 9999: Complete, accurate DOS emulator forked from DOSBox
 games-emulation/duckstation 9999: Fast Sony PlayStation (PSX) emulator
 games-emulation/flycast 9999: Sega Dreamcast, Naomi and Atomiswave emulator
 games-emulation/mupen64plus-qt 1.17 9999: A basic launcher for Mupen64Plus
@@ -1413,7 +1413,7 @@ net-analyzer/netsniff-ng 0.6.8-r1 0.6.9: high performance network sniffer for pa
 net-client/amfora 1.8.0 1.9.2: A fancy terminal browser for the Gemini protocol.
 net-client/castor 0.8.18 0.9.0-r1: A graphical browser for plain-text protocols
 net-client/kristall 0.3-r2 0.4: Visual cross-platform gemini browser
-net-client/lagrange 1.18.3 1.18.4: Desktop GUI client for browsing Geminispace
+net-client/lagrange 1.18.4 1.18.5: Desktop GUI client for browsing Geminispace
 net-client/offpunk 1.9.1 2.6: Offline-First Gemini/Web/Gopher/RSS reader and browser
 net-client/starfish 1.2.0 1.3.1: A Gemini browser for elementary OS
 net-client/telescope 0.9 0.10.1: w3m-like browser for Gemini
@@ -1515,7 +1515,7 @@ net-misc/maestral 1.9.3-r1 1.9.4: Maestral is an open-source Dropbox client writ
 net-misc/maestral-qt 1.9.3 1.9.4: Maestral is an open-source Dropbox client written in Python
 net-misc/mastorss 0.13.1 0.13.1-r1 9999: Another RSS to Mastodon bot
 net-misc/mbpoll 1.5.2 9999: command line utility to communicate with ModBus slave (RTU or TCP)
-net-misc/megasync 5.8.0.2: The official Qt-based program for syncing your MEGA account in your PC
+net-misc/megasync 5.8.0.2 5.9.0.3: The official Qt-based program for syncing your MEGA account in your PC
 net-misc/myip 1.2.1: Get your external IP address using STUN server
 net-misc/ooni-probe-cli 3.23.0 3.24.0: OONI Probe network measurement tool for detecting internet censorship
 net-misc/openbgpd 8.4 8.5 8.6 9999: OpenBGPD is a free implementation of BGPv4
@@ -1593,7 +1593,7 @@ sci-biology/jalview-bin 2.11.4.1: Editor of multiple sequence alignments.
 sci-chemistry/vesta-bin 3.5.8: Visualisation for Electronic and STructural Analysis.
 sci-chemistry/xcrysden 1.6.2-r2: For the visualisation of molecular and crystal structures.
 sci-electronics/bender 0.28.1-r1: A dependency management tool for hardware projects
-sci-electronics/bluespec 2022.01-r1 2023.01 2023.07 2024.01 2024.07 9999: Toolchain for the Bluespec Hardware Definition Language
+sci-electronics/bluespec 2022.01-r1 2023.01 2023.07 2024.01 2024.07 2025.01.1 9999: Toolchain for the Bluespec Hardware Definition Language
 sci-electronics/circt 1.14.0 1.37.0 1.76.0: The fast free Verilog/SystemVerilog simulator
 sci-electronics/coil64 2.1.27: Coil64 is inductance coil calculator
 sci-electronics/dsview 1.3.0 1.3.2 9999: An open source multi-function instrument
@@ -1689,6 +1689,7 @@ sys-apps/save-backlight 1.1.2-r1 9999: An OpenRC service for restoring the last 
 sys-apps/sd 1.0.0: Intuitive find & replace CLI (sed alternative)
 sys-apps/systemd-bootchart 234 235: systemd boot performance graphing tool
 sys-apps/ugrep 5.1.4 7.2.0: A fast, drop-in replacement for GNU grep
+sys-apps/utils-extra 0.0.1 9999: Collection of extra tools for Unixes
 sys-apps/zmem 0.2.1: Memory monitoring tool focusing on swap, zswap and zram
 sys-auth/hyprpolkitagent 0.1.1-r2 0.1.2: Polkit authentication agent for Hyprland, written in Qt/QML
 sys-auth/pam-gnupg 0.4-r1: Unlock GnuPG keys on login
@@ -1697,7 +1698,7 @@ sys-block/partclone 0.3.33: Partition cloning tool
 sys-boot/customrescuecd-x86_64-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/drbl 5.4.2: Diskless Remote Boot in Linux
 sys-boot/grml-rescueboot 0.6.1: grub2 script to add ISO images to the grub2 boot menu
-sys-boot/limine 7.0.0 7.0.3 7.0.5 7.3.0 7.5.0 7.9.2 8.0.5 8.0.6 8.0.7 8.0.9 8.0.11 8.0.12 8.0.13 8.0.14 8.1.1 8.1.2 8.3.2 8.4.0 8.5.0 8.6.0 8.7.0 9.0.0 9.0.1 9.1.3: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
+sys-boot/limine 7.0.0 7.0.3 7.0.5 7.3.0 7.5.0 7.9.2 8.0.5 8.0.6 8.0.7 8.0.9 8.0.11 8.0.12 8.0.13 8.0.14 8.1.1 8.1.2 8.3.2 8.4.0 8.5.0 8.6.0 8.7.0 9.0.0 9.0.1 9.1.3 9.2.0: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
 sys-boot/mkusb 23.2.0: CLI and GUI for creating bootable live USB, with optional persistent storage
 sys-boot/ventoy-bin 1.0.97 1.0.98: Creator of bootable USBs, with ability to copy ISOs, persistence storage
 sys-boot/zfsbootmenu 1.12.0 2.2.2 2.3.0: ZFS bootloader for root-on-ZFS systems
@@ -1770,7 +1771,7 @@ www-apps/sblg 0.6.1: A utility for creating static blogs
 www-apps/snac 2.25 2.26: A simple, minimalistic ActivityPub instance
 www-apps/uwebsockets 20.14.0 20.62.0 9999: ultra fast, simple, secure & standards compliant web I/O
 www-apps/vaultwarden-web 2024.1.2b 2024.3.0 2024.3.1: Bitwarden web vault patched to make it work with Vaultwarden
-www-apps/vaultwarden-web-bin 2024.1.2b 2024.3.0 2024.3.1 2024.5.0: Prebuilt Vaultwarden web from upstream
+www-apps/vaultwarden-web-bin 2024.3.1 2024.5.0 2025.1.1: Prebuilt Vaultwarden web from upstream
 www-apps/whoogle-search 0.9.3: A self-hosted, ad-free, privacy-respecting metasearch engine
 www-apps/zola 0.19.2-r1: A fast static site generator with everything built-in
 www-client/badwolf 1.3.0-r1 9999: Minimalist and privacy-oriented WebKitGTK+ browser
