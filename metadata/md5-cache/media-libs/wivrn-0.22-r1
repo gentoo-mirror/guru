@@ -1,6 +1,6 @@
 BDEPEND=dev-util/glslang dev-util/gdbus-codegen gui? ( gnome-base/librsvg ) dev-util/vulkan-headers app-alternatives/ninja >=dev-build/cmake-3.20.5
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare test unpack
-DEPEND=dev-libs/glib dev-libs/libbsd dev-libs/openssl media-libs/openxr-loader net-dns/avahi x11-libs/libnotify || ( sys-apps/systemd sys-auth/elogind ) gui? ( dev-qt/qtbase:6 ) pipewire? ( media-video/pipewire ) pulseaudio? ( media-libs/libpulse ) systemd? ( sys-apps/systemd ) vaapi? ( media-video/ffmpeg[libdrm,vaapi] ) wireshark-plugins? ( net-analyzer/wireshark ) x264? ( media-libs/x264 ) dev-cpp/cli11 dev-cpp/eigen dev-cpp/nlohmann_json dev-libs/boost
+DEPEND=dev-libs/glib dev-libs/libbsd dev-libs/openssl media-libs/openxr-loader net-dns/avahi x11-libs/libnotify || ( sys-apps/systemd sys-auth/elogind ) gui? ( dev-qt/qtbase:6 ) pipewire? ( media-video/pipewire ) pulseaudio? ( media-libs/libpulse ) systemd? ( sys-apps/systemd ) vaapi? ( || ( media-video/ffmpeg[libdrm(-),vaapi] media-video/ffmpeg[drm(-),vaapi] ) ) wireshark-plugins? ( net-analyzer/wireshark ) x264? ( media-libs/x264 ) dev-cpp/cli11 dev-cpp/eigen dev-cpp/nlohmann_json dev-libs/boost
 DESCRIPTION=WiVRn OpenXR streaming
 EAPI=8
 HOMEPAGE=https://github.com/WiVRn/WiVRn
@@ -9,9 +9,9 @@ INHERIT=cmake fcaps xdg
 IUSE=gui nvenc +pipewire pulseaudio systemd vaapi vulkan-encode wireshark-plugins x264 +filecaps
 KEYWORDS=~amd64
 LICENSE=GPL-3 Apache-2.0 MIT
-RDEPEND=dev-libs/glib dev-libs/libbsd dev-libs/openssl media-libs/openxr-loader net-dns/avahi x11-libs/libnotify || ( sys-apps/systemd sys-auth/elogind ) gui? ( dev-qt/qtbase:6 ) pipewire? ( media-video/pipewire ) pulseaudio? ( media-libs/libpulse ) systemd? ( sys-apps/systemd ) vaapi? ( media-video/ffmpeg[libdrm,vaapi] ) wireshark-plugins? ( net-analyzer/wireshark ) x264? ( media-libs/x264 )
+RDEPEND=dev-libs/glib dev-libs/libbsd dev-libs/openssl media-libs/openxr-loader net-dns/avahi x11-libs/libnotify || ( sys-apps/systemd sys-auth/elogind ) gui? ( dev-qt/qtbase:6 ) pipewire? ( media-video/pipewire ) pulseaudio? ( media-libs/libpulse ) systemd? ( sys-apps/systemd ) vaapi? ( || ( media-video/ffmpeg[libdrm(-),vaapi] media-video/ffmpeg[drm(-),vaapi] ) ) wireshark-plugins? ( net-analyzer/wireshark ) x264? ( media-libs/x264 )
 REQUIRED_USE=|| ( nvenc vaapi x264 )
 SLOT=0
 SRC_URI=https://github.com/WiVRn/WiVRn/archive/refs/tags/v0.22.tar.gz -> wivrn-0.22.tar.gz https://github.com/WiVRn/WiVRn/releases/download/v0.22/server-build-deps.tar.xz -> wivrn-0.22-server-build-deps.tar.xz
 _eclasses_=toolchain-funcs	6afdb6107430c1832ca7e16aacbf8fa1	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	357f1a896fbedcd06e5ce55419c49eb9	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	10a50dfaf728b802fcfd37f8d0da9056	fcaps	27152c9e4da035accb14a2d7879744ef	xdg	3ef49a87c52c8b77c476351195dfe575
-_md5_=d2f04e64900a654542bac022d5df477f
+_md5_=05449e6b09d5e5a02e59d2c6e6fabdfb

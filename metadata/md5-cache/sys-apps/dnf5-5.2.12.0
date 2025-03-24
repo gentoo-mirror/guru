@@ -1,0 +1,17 @@
+BDEPEND=dev-python/sphinx virtual/pkgconfig python? ( dev-lang/swig ) test? ( app-arch/rpm app-arch/createrepo_c dev-util/cppunit ) app-alternatives/ninja >=dev-build/cmake-3.20.5
+DEFINED_PHASES=compile configure install prepare setup test
+DEPEND=>=app-arch/rpm-4.17.0 dev-cpp/sdbus-c++:0/2 dev-cpp/toml11 >=dev-db/sqlite-3.35.0:3 >=dev-libs/glib-2.46.0:2 dev-libs/json-c:= dev-libs/libfmt:= >=dev-libs/librepo-1.17.1 >=dev-libs/libsolv-0.7.25 dev-libs/libxml2 sys-apps/util-linux >=sys-libs/libmodulemd-2.11.2 sys-libs/zlib appstream? ( >=dev-libs/appstream-0.16:= ) python? ( python_single_target_python3_12? ( dev-lang/python:3.12 ) python_single_target_python3_13? ( dev-lang/python:3.13 ) ) systemd? ( sys-apps/systemd:= )
+DESCRIPTION=Command-line package manager
+EAPI=8
+HOMEPAGE=https://github.com/rpm-software-management/dnf5
+INHERIT=cmake python-single-r1
+IUSE=appstream nls python systemd test python_single_target_python3_12 python_single_target_python3_13
+KEYWORDS=~amd64
+LICENSE=GPL-2+ LGPL-2.1+
+RDEPEND=>=app-arch/rpm-4.17.0 dev-cpp/sdbus-c++:0/2 dev-cpp/toml11 >=dev-db/sqlite-3.35.0:3 >=dev-libs/glib-2.46.0:2 dev-libs/json-c:= dev-libs/libfmt:= >=dev-libs/librepo-1.17.1 >=dev-libs/libsolv-0.7.25 dev-libs/libxml2 sys-apps/util-linux >=sys-libs/libmodulemd-2.11.2 sys-libs/zlib appstream? ( >=dev-libs/appstream-0.16:= ) python? ( python_single_target_python3_12? ( dev-lang/python:3.12 ) python_single_target_python3_13? ( dev-lang/python:3.13 ) ) systemd? ( sys-apps/systemd:= )
+REQUIRED_USE=^^ ( python_single_target_python3_12 python_single_target_python3_13 )
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/rpm-software-management/dnf5/archive/refs/tags/5.2.12.0.tar.gz -> dnf5-5.2.12.0.tar.gz
+_eclasses_=toolchain-funcs	6afdb6107430c1832ca7e16aacbf8fa1	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	357f1a896fbedcd06e5ce55419c49eb9	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	10a50dfaf728b802fcfd37f8d0da9056	python-utils-r1	b7726144f5af59e186d66746d0f513e5	python-single-r1	47d8ac9be330c9366112b78fd4f8ce57
+_md5_=72abcfd29fa1c04450742886772623a1

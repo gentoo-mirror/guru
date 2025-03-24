@@ -91,7 +91,7 @@ app-admin/bitwarden-cli-bin 2024.4.0 2024.6.0 2025.2.0: Precompiled CLI frontend
 app-admin/blahajdots 0.5.0 9999: Bespoke dotfile management for sharkgirls.
 app-admin/boinctui 2.7.1 2.7.1-r1: Fullscreen text mode manager for the BOINC client
 app-admin/chamber 2.13.2: Managing secrets in AWS SSM Parameter Store
-app-admin/chezmoi 2.59.1 2.60.1: Manage your dotfiles across multiple machines, securely
+app-admin/chezmoi 2.59.1 2.60.1 2.61.0: Manage your dotfiles across multiple machines, securely
 app-admin/customrescuecd-x86_64 0.12.7 0.12.8: A system rescue cd or usbstick for desktop and server based on gentoo
 app-admin/dotbot 1.20.1: A tool that bootstraps your dotfiles
 app-admin/gentoo_update 0.2.4: Gentoo Linux updater
@@ -105,7 +105,7 @@ app-admin/i2pd-tools 2024.09.25 2025.02.26-r1: Some useful tools for I2P
 app-admin/krapplet 0.3.1-r1: Krapplet (keyring applet): a Linux graphical password manager
 app-admin/oet 0.1.9 0.1.10 0.1.11 9999: Update your system into binpkgs in an overlay sandbox
 app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applications and tmux
-app-admin/pass-audit 1.2 1.2-r1: A pass extension for auditing your password repository.
+app-admin/pass-audit 1.2-r1: A pass extension for auditing your password repository.
 app-admin/pass-update 2.2.1: pass extension that provides an easy flow for updating passwords
 app-admin/passage 1.7.4.2: A fork of password-store using age as encryption backend
 app-admin/pulumi-bin 3.154.0 3.155.0 3.156.0: Infrastructure as code in any programming language
@@ -118,7 +118,7 @@ app-admin/terragrunt-bin 0.38.6 0.45.4 0.50.8: A thin wrapper for Terraform
 app-admin/tflint 0.55.1: Terraform linter
 app-admin/vaultwarden 1.32.5 1.32.7 1.33.2 9999: Unofficial Bitwarden compatible password manager server written in Rust
 app-alternatives/phosh-keyboard 0: sm.puri.OSK0.desktop symlinks
-app-arch/fuse-archive 0.1.14 1.6 1.10: Read-only FUSE file system for mounting archives and compressed files
+app-arch/fuse-archive 0.1.14 1.6 1.10 1.12: Read-only FUSE file system for mounting archives and compressed files
 app-arch/libarchive-qt 2.0.8: Qt based archiving solution with libarchive backend
 app-arch/libzim 9.2.1-r1: ZIM file format: an offline storage solution for content coming from the Web
 app-arch/microtar 0.1.0: A lightweight tar library written in ANSI C
@@ -485,13 +485,13 @@ dev-embedded/arduino-cli 1.0.4 1.1.1: Next-generation arduino command line tool
 dev-embedded/bcm2-utils 0.9.8: Utilities for Broadcom-based cable modems
 dev-embedded/esp-coredump 1.10.0 1.11.0: Utility that helps users to retrieve and analyse core dumps
 dev-embedded/esp-idf 5.3.2 5.4 5.4-r1: Espressif IoT Development Framework
-dev-embedded/esp-idf-kconfig 2.2.0 2.3.0 2.4.1: Kconfig tooling for esp-idf
+dev-embedded/esp-idf-kconfig 2.2.0 2.3.0 2.4.1 2.5.0: Kconfig tooling for esp-idf
 dev-embedded/esp-idf-monitor 1.4.0 1.5.0: Python object-oriented database
 dev-embedded/esp-idf-nvs-partition-gen 0.1.4 0.1.6: Parses ESP-IDF panic handler output acts as a GDB server over stdin/stdout
 dev-embedded/esp-idf-panic-decoder 1.1.0 1.2.1 1.2.1-r1: Parses ESP-IDF panic handler output acts as a GDB server over stdin/stdout
 dev-embedded/esp-idf-size 1.5.0 1.6.0 1.6.1: Firmware size analysis for ESP-IDF
 dev-embedded/freertos-gdb 1.0.2 1.0.3: Python module for operating with freeRTOS-kernel objects in GDB
-dev-embedded/idf-component-manager 2.0.3 2.0.4 2.1.1: Tool for installing ESP-IDF components
+dev-embedded/idf-component-manager 2.0.4 2.1.1: Tool for installing ESP-IDF components
 dev-embedded/mv88e6xxx-dump 0.2.0_pre20210327: Dump information about Marvell mv88e6xxx Ethernet switches
 dev-embedded/nxp-gui-guider 1.7.2-r1: GUI Guider is a user-friendly GUI development tool for LVGL
 dev-embedded/qdl 2.1 9999: Tool to communicate with Qualcomm System On a Chip bootroms
@@ -819,11 +819,13 @@ dev-python/pytest-relaxed 2.0.2: Relaxed test discovery for pytest
 dev-python/pytest-steps 1.8.0: Create step-wise / incremental tests in pytest
 dev-python/pytest-vcr 1.0.2: Plugin for managing VCR.py cassettes
 dev-python/python-barbicanclient 7.0.0 7.1.0: Client library for Barbican API.
+dev-python/python-designateclient 6.2.0: OpenStack DNS-as-a-Service - Client
 dev-python/python-fire 0.6.0: Library for automatically generating command line interfaces from Python objects
 dev-python/python-http-client 3.3.5-r1: HTTP REST client, simplified for Python
 dev-python/python-lsp-isort 0.2.0: isort plugin for the Python LSP Server
 dev-python/python-lsp-mypy 0.7.0: Mypy plugin for the Python LSP Server
 dev-python/python-magnumclient 4.7.0 4.8.0: A client for the OpenStack Magnum API
+dev-python/python-manilaclient 5.4.0: Python bindings to the OpenStack Manila API
 dev-python/python-octaviaclient 3.9.0 3.10.0: A client for the OpenStack Octavia API
 dev-python/python-olm 3.2.16: Python bindings for dev-libs/olm
 dev-python/python-pidfile 3.0.0-r1 3.1.1: PIDFile context processor. Supported py2 and py3
@@ -832,6 +834,7 @@ dev-python/python-statemachine 2.3.6 2.4.0 2.5.0: Python Finite State Machines m
 dev-python/python-telegram-bot 20.6-r1 21.1.1 9999: Python wrapper of telegram bots API
 dev-python/pywavefront 1.3.3: Python library for importing Wavefront .obj files
 dev-python/pywebview 4.4.1-r1 5.1-r1: A lightweight cross-platform wrapper around a webview component
+dev-python/pyzstd 0.16.2: Python bindings to Zstandard (zstd) compression library
 dev-python/questionary 2.0.1 2.1.0: Python library to build pretty command line user prompts
 dev-python/queuelib 1.6.2: Collection of persistent and non-persistent queues for Python
 dev-python/readability-lxml 0.8.1: fast html to text parser (article readability tool)
@@ -941,7 +944,7 @@ dev-util/find-work-bugzilla 0.3.0 1.0.0: Personal advice utility for Gentoo pack
 dev-util/find-work-pkgcheck 0.3.0 1.0.0: Personal advice utility for Gentoo package maintainers: pkgcheck plugin
 dev-util/find-work-repology 0.3.0 1.0.0: Personal advice utility for Gentoo package maintainers: Repology plugin
 dev-util/fnm 1.38.1: Fast and simple Node.js version manager
-dev-util/fortls 2.13.0 3.0.0 3.1.1 3.1.2: Fortran Language Server (fortls)
+dev-util/fortls 2.13.0 3.0.0 3.1.1 3.1.2 3.2.2: Fortran Language Server (fortls)
 dev-util/fortran-test-drive 0.4.0 0.5.0: The simple testing framework (for Fortran)
 dev-util/gammaray 3.1.0: High-level runtime introspection tool for Qt applications
 dev-util/genTree 0.1.0 9999: Gentoo rootfs tree generator
@@ -964,7 +967,7 @@ dev-util/ocamlformat 0.26.2 0.26.2-r1: Auto-formatter for OCaml code
 dev-util/ocp-indent 1.8.2: Indentation tool for OCaml, to be used from editors like Emacs and Vim.
 dev-util/pcpp 1.30: A C99 preprocessor written in pure Python
 dev-util/pifpaf 3.2.3 3.3.0: Suite of tools and fixtures to manage daemons for testing
-dev-util/pmbootstrap 3.0.0: Helper tool for developing and building postmarketOS
+dev-util/pmbootstrap 3.0.0 3.3.1: Helper tool for developing and building postmarketOS
 dev-util/prysk 0.20.0: Functional testing framework for command line applications (cram fork)
 dev-util/qshaderedit 0.1.5: Multiplatform shader editor inspired by Apple's OpenGL Shader Builder
 dev-util/quilttools 0.3-r1: Mailbox to quilt series converter
@@ -1083,6 +1086,7 @@ games-util/roll 2.6.1: Program to roll dices specified in a simple and intuitive
 games-util/samrewritten 9999 202008: Steam Achievement Manager For Linux
 games-util/sdl2-gamepad-mapper 0.0.8-r1: GUI application to generate an SDL2 mapping string from a generic controller
 games-util/steamtinkerlaunch 12.12 9999: Wrapper script for Steam custom launch options
+games-util/umu-launcher 1.2.6: Unified launcher for Windows games on Linux
 games-util/xivlauncher 1.1.1: Custom Launcher for Final Fantasy XIV Online (Crossplatform rewrite)
 games-util/xone 0.3_p20240425: Linux kernel driver for Xbox One and Xbox Series X|S accessories
 gnome-extra/commit 4.1-r1 4.2: Commit message editor
@@ -1216,14 +1220,14 @@ gui-libs/hyprland-qt-support 0.1.0: Qt6 Qml style provider for hypr* apps
 gui-libs/libcprime 4.5.0 5.0.0: Library for managing settings of CoreApps
 gui-libs/libcsys 4.5.0 5.0.0: Library for managing the device
 gui-libs/libsfdo 0.1.3: A collection of libraries which implement some freedesktop.org specifications
-gui-libs/mir 2.19.3 2.20.0: Set of libraries for building Wayland based shells
+gui-libs/mir 2.19.3 2.20.0 2.20.1: Set of libraries for building Wayland based shells
 gui-libs/scenefx 0.1 0.2 0.2.1: A replacement for the wlroots scene API with eye-candy effects.
 gui-libs/text-engine 0.1.1-r3 9999: A lightweight rich-text framework for GTK 4
 gui-libs/xdg-desktop-portal-hyprland 1.3.8 1.3.9 9999: xdg-desktop-portal backend for hyprland
 gui-wm/cage 0.2.0 9999: A Wayland kiosk
 gui-wm/hyprland-contrib 0.1-r1 9999: Community-maintained extensions for hyprland
 gui-wm/labwc 0.8.2 0.8.3 9999: Openbox alternative for wayland
-gui-wm/miracle-wm 0.4.0 0.4.1: Tiling Wayland compositor based on Mir
+gui-wm/miracle-wm 0.4.1 0.5.1: Tiling Wayland compositor based on Mir
 gui-wm/niri 25.02: Scrollable-tiling Wayland compositor
 gui-wm/phoc 0.42.1 0.43.0 0.44.0 0.44.1 0.45.0: Wayland compositor for mobile phones
 gui-wm/river 0.3.6 0.3.7 0.3.8: A dynamic tiling Wayland compositor
@@ -1340,7 +1344,7 @@ media-sound/jacktrip 1.7.1-r1 2.4.0: Send JACK audio over a network
 media-sound/jriver 31.0.83: A cross-platform media center, famous for high quality of audio.
 media-sound/kew 2.4.4-r1: kew (/kjuː/) is a command-line music player for Linux.
 media-sound/lms 3.62.1 3.63.0 3.64.0 3.64.0-r1: Lightweight Music Server.
-media-sound/loudgain 0.6.8-r1 0.6.8_p20240128: Versatile ReplayGain 2.0 loudness normalizer
+media-sound/loudgain 0.6.8-r1 0.6.8_p20240128 0.6.8_p20240128-r1: Versatile ReplayGain 2.0 loudness normalizer
 media-sound/mopidy 3.4.2: An extensible music server written in Python.
 media-sound/mpd-mpris 0.3.1 0.4.0 0.4.1: An implementation of the MPRIS protocol for MPD.
 media-sound/mpvc 1.1.4-r1: mpc-like tool which connects to existing mpv instances through sockets.
@@ -1427,7 +1431,7 @@ net-dns/AdGuardHome 0.107.51 0.107.57 0.107.58: Network-wide ads & trackers bloc
 net-dns/blocky 0.23 0.24 0.25 9999: Fast and lightweight DNS proxy as ad-blocker with many features written in Go
 net-dns/noip-duc 3.3.0: No-IP Dynamic Update Client (https://www.noip.com)
 net-fs/httpdirfs 1.2.7: Filesystem to mount HTTP directory listings, with a permanent cache
-net-im/Quaternion 0.0.96.1: A Qt-based IM client for Matrix
+net-im/Quaternion 0.0.97.1: A Qt-based IM client for Matrix
 net-im/WasIstLos 1.6.5 1.7.0: An unofficial WhatsApp desktop application for Linux
 net-im/abaddon 0.2.1 9999: Alternative Discord client using GTK instead of Electron
 net-im/axolotl-bin 2.0.1: Axolotl is a cross-platform Signal client
@@ -1489,6 +1493,7 @@ net-mail/dovecot-fts-xapian 1.7.17 1.7.18 1.8 1.8.1 1.8.3 1.8.4 1.8.6 1.9 1.9.1 
 net-mail/hydroxide 0.2.27 0.2.28 0.2.29 9999: A third-party, open-source ProtonMail CardDAV, IMAP and SMTP bridge
 net-mail/pop 0.2.0: Send emails from your terminal
 net-misc/FORT-validator 1.5.4-r2 1.6.1-r2 1.6.2-r2: FORT validator is an open source RPKI validator
+net-misc/brickd 2.4.7: Network Daemon bridging API bindings to Tinkerforge hardware bricks
 net-misc/can-utils 2021.08.0 2023.03 9999-r3: CAN userspace utilities and tools
 net-misc/clatd 1.6: A CLAT / SIIT-DC Edge Relay implementation for Linux
 net-misc/commons-downloader 9999: A shell script to bulk download files from Wikimedia Commons, by category
@@ -1595,7 +1600,7 @@ sci-chemistry/vesta-bin 3.5.8: Visualisation for Electronic and STructural Analy
 sci-chemistry/xcrysden 1.6.2-r2: For the visualisation of molecular and crystal structures.
 sci-electronics/bender 0.28.1-r1: A dependency management tool for hardware projects
 sci-electronics/bluespec 2022.01-r1 2023.01 2023.07 2024.01 2024.07 2025.01.1 9999: Toolchain for the Bluespec Hardware Definition Language
-sci-electronics/circt 1.14.0 1.37.0 1.76.0: The fast free Verilog/SystemVerilog simulator
+sci-electronics/circt 1.37.0 1.76.0 1.110.0: The fast free Verilog/SystemVerilog simulator
 sci-electronics/coil64 2.1.27: Coil64 is inductance coil calculator
 sci-electronics/dsview 1.3.0 1.3.2 9999: An open source multi-function instrument
 sci-electronics/kactus2 3.13.3 9999: A open source IP-XACT-based tool
@@ -1665,7 +1670,7 @@ sys-apps/bpftune 9999: bpftune uses BPF to auto-tune Linux systems
 sys-apps/bustd 0.1.1: Process killer daemon for out-of-memory scenarios
 sys-apps/colortail 0.3.3 9999: tail command with colors
 sys-apps/corefreq 1.96.3: CPU monitoring software designed for the 64-bits Processors, like top
-sys-apps/dnf5 5.2.10.0 5.2.11.0: Command-line package manager
+sys-apps/dnf5 5.2.11.0 5.2.12.0: Command-line package manager
 sys-apps/dool 1.3.1-r1 1.3.2-r2 9999: Versatile replacement for vmstat, iostat and ifstat (clone of dstat)
 sys-apps/drm_info 2.7.0: Small utility to dump info about DRM devices
 sys-apps/flashprog 1.2 1.3 1.4: Utility for identifying, reading, writing, verifying and erasing flash chips
@@ -1713,7 +1718,7 @@ sys-fs/btrfs-heatmap 9-r1: Python 3 script to draw a heatmap of a btrfs filesyst
 sys-fs/ddrescueview 0.4.5: Graphical viewer for GNU ddrescue mapfiles
 sys-fs/diskonaut 0.10.0 0.11.0 9999: Terminal disk space visual navigator
 sys-fs/dua-cli 2.30.0: A tool to conveniently learn about the disk usage of directories, fast!
-sys-fs/dwarfs 0.10.2 0.11.0: A fast high compression read-only file system for Linux, Windows and macOS
+sys-fs/dwarfs 0.10.2 0.11.2-r1: A fast high compression read-only file system for Linux, Windows and macOS
 sys-fs/dwarfs-bin 0.10.2 0.11.0: Static version of a fast very high compression read-only FUSE file system
 sys-fs/ffmpegfs 2.16-r1 2.17: FUSE-based transcoding filesystem with support from/to many formats.
 sys-fs/fstransform 0.9.4: Tool for in-place filesystem conversion
@@ -1732,7 +1737,7 @@ sys-kernel/dpdk-kmod 23.03: DPDK Kernel Nic Interface module
 sys-kernel/uek-sources 5.15.0.300.159.7-r1 5.15.0.300.161.13: Unbreakable Enterprise Kernel (UEK) sources built from Oracle
 sys-kernel/usermode-kernel 6.0.12: Linux kernel built with Gentoo patches
 sys-kernel/xow 0.5: Linux driver for the Xbox One wireless dongle
-sys-kernel/zenpower3 0.2.0-r1 9999: Linux kernel driver for reading sensors of AMD Zen family CPUs
+sys-kernel/zenpower3 0.2.0-r2 9999: Linux kernel driver for reading sensors of AMD Zen family CPUs
 sys-libs/cyclonedds 0.10.3-r1 9999: Eclipse Cyclone DDS project
 sys-libs/gcompat 1.1.0 9999: The GNU C Library compatibility layer for musl
 sys-libs/iceoryx 2.0.3 9999: Eclipse Iceoryx zero copy IPC
@@ -1781,7 +1786,7 @@ www-client/firefox-developer-bin 122.0 128.0: Firefox browser developer edition
 www-client/mullvad-browser-bin 14.0.7: The Mullvad Browser is developed to minimize tracking and fingerprinting.
 www-client/nyxt 3.11.8 3.12.0 9999: Nyxt - the hacker's power-browser
 www-client/vimb 3.6.0 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
-www-client/yandex-browser 25.2.1.824_p1: The web browser from Yandex
+www-client/yandex-browser 25.2.1.939_p1: The web browser from Yandex
 www-client/zen-bin 1.7.2b 1.9b: Zen Browser - A Firefox-based browser focused on privacy
 www-misc/dufs 0.40.0: Dufs is a distinctive utility file server
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits
