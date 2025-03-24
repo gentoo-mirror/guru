@@ -2,12 +2,11 @@
 <!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
 	<maintainer type="person">
-		<email>nrk@disroot.org</email>
+		<email>gentoo-bugzilla@vimja.email</email>
+		<name>Niklaus 'vimja' Hofer</name>
 	</maintainer>
-	<use>
-		<flag name="fuse2">Build with fuse2 instead of fuse3</flag>
-	</use>
 	<upstream>
-		<remote-id type="github">google/fuse-archive</remote-id>
+		<remote-id type="pypi">python-manilaclient</remote-id>
+		<remote-id type="github">openstack/python-manilaclient</remote-id>
 	</upstream>
 </pkgmetadata>

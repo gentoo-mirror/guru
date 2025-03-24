@@ -1,12 +1,12 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="8"
 
 MY_PV="${PV//./\/}"
-MY_LLVM_PV="fe0f72d5c55a9b95c5564089e946e8f08112e995"
+MY_LLVM_PV="4d5a963eaf6ad209487a321dee7f0cd2a0f98477"
 CMAKE_BUILD_TYPE="Release"
-PYTHON_COMPAT=( python3_{11..12} )
+PYTHON_COMPAT=( python3_{11..13} )
 inherit cmake python-r1
 
 DESCRIPTION="The fast free Verilog/SystemVerilog simulator"
@@ -23,11 +23,11 @@ if [[ "${PV}" == "9999" ]] ; then
 	S="${S_LLVM}/llvm"
 else
 	SRC_URI="
-		https://github.com/llvm/circt/archive/refs/tags/sifive/${MY_PV}.tar.gz -> ${P}.tar.gz
+		https://github.com/llvm/circt/archive/refs/tags/firtool-${PV}.tar.gz -> ${P}.tar.gz
 		https://github.com/llvm/llvm-project/archive/${MY_LLVM_PV}.tar.gz -> llvm-project-${MY_LLVM_PV}.tar.gz
 	"
 	KEYWORDS="~amd64 ~arm64 ~riscv ~x86"
-	S_CIRCT="${WORKDIR}/${PN}-sifive-$(ver_cut 1)-$(ver_cut 2)-$(ver_cut 3)"
+	S_CIRCT="${WORKDIR}/${PN}-firtool-${PV}"
 	S_LLVM="${WORKDIR}/llvm-project-${MY_LLVM_PV}"
 	S="${S_LLVM}/llvm"
 fi
@@ -68,6 +68,7 @@ src_configure() {
 	local mycmakeargs=(
 		-D Python3_EXECUTABLE="${PYTHON}"
 		-D CMAKE_INSTALL_PREFIX=/usr
+		-D CMAKE_SKIP_RPATH=ON
 		-D LLVM_BINUTILS_INCDIR=/usr/include
 		-D LLVM_ENABLE_PROJECTS=mlir
 		-D BUILD_SHARED_LIBS=OFF
@@ -98,19 +99,23 @@ src_install() {
 	mv "${S_CIRCT}/LICENSE" "${S_CIRCT}/circt-LICENSE" || die
 	einstalldocs
 	exeinto /usr/bin
-	doexe "${BUILD_DIR}"/bin/circt-capi-ir-test
+	doexe "${BUILD_DIR}"/bin/arcilator
+	doexe "${BUILD_DIR}"/bin/circt-as
+	doexe "${BUILD_DIR}"/bin/circt-bmc
+	doexe "${BUILD_DIR}"/bin/circt-cocotb-driver.py
+	doexe "${BUILD_DIR}"/bin/circt-dis
+	doexe "${BUILD_DIR}"/bin/circt-lec
 	doexe "${BUILD_DIR}"/bin/circt-lsp-server
 	doexe "${BUILD_DIR}"/bin/circt-opt
 	doexe "${BUILD_DIR}"/bin/circt-reduce
 	doexe "${BUILD_DIR}"/bin/circt-rtl-sim.py
+	doexe "${BUILD_DIR}"/bin/circt-synth
 	doexe "${BUILD_DIR}"/bin/circt-translate
-	doexe "${BUILD_DIR}"/bin/esi_cosim.py
-	doexe "${BUILD_DIR}"/bin/esi-cosim-runner.py
-	doexe "${BUILD_DIR}"/bin/esi-tester
 	doexe "${BUILD_DIR}"/bin/firtool
 	doexe "${BUILD_DIR}"/bin/handshake-runner
-	doexe "${BUILD_DIR}"/bin/llhd-sim
+	doexe "${BUILD_DIR}"/bin/hlstool
+	doexe "${BUILD_DIR}"/bin/kanagawatool
+	doexe "${BUILD_DIR}"/bin/om-linker
 	doexe "${BUILD_DIR}"/bin/py-split-input-file.py
-	# llhd-sim not static linked
-	dolib.so "${BUILD_DIR}"/lib/libcirct-llhd-signals-runtime-wrappers.so
+	# llhd-sim doesn't exist anymore
 }

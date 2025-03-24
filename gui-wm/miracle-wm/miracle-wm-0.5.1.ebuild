@@ -1,9 +1,9 @@
-# Copyright 2024 Gentoo Authors
+# Copyright 2024-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-inherit cmake systemd
+inherit cmake
 
 DESCRIPTION="Tiling Wayland compositor based on Mir"
 HOMEPAGE="https://github.com/miracle-wm-org/miracle-wm"
@@ -22,7 +22,7 @@ RDEPEND="
 	dev-libs/json-c:=
 	dev-libs/libevdev
 	dev-libs/libpcre2:=
-	gui-libs/mir:=
+	>=gui-libs/mir-2.18:=
 	media-libs/libglvnd
 	x11-base/xwayland
 "
@@ -38,8 +38,6 @@ BDEPEND="
 src_prepare() {
 	cmake_src_prepare
 	use test || cmake_comment_add_subdirectory tests/
-
-	sed -i "s| /usr/lib/systemd/user| $(systemd_get_userunitdir)|" CMakeLists.txt || die
 }
 
 src_configure() {
