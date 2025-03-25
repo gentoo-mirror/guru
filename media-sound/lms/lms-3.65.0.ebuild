@@ -12,16 +12,16 @@ SRC_URI="https://github.com/epoupon/lms/archive/refs/tags/v${PV}.tar.gz -> ${P}.
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="test stb"
+IUSE="test +stb"
 RESTRICT="!test? ( test )"
 
 RDEPEND="
 	app-arch/libarchive
 	acct-user/lms
-	dev-cpp/wt
-	dev-libs/boost
+	dev-cpp/wt:=
+	dev-libs/boost:=
 	dev-libs/libconfig[cxx]
-	media-libs/taglib
+	media-libs/taglib:=
 	media-video/ffmpeg[mp3,opus]
 	sys-libs/pam
 
@@ -31,7 +31,7 @@ RDEPEND="
 
 DEPEND="
 	${RDEPEND}
-
+	dev-libs/xxhash
 	stb? ( dev-libs/stb )
 "
 
