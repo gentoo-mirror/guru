@@ -18,6 +18,22 @@
 
 # New entries go on top.
 
+# Anna (cybertailor) Vyalkova <cyber+gentoo@sysrq.in> (2025-03-27)
+# Superseded by Beeper v4, which has only AppImage builds available.
+# Removal on 2025-04-27.
+net-im/beeper
+
+# Anna (cybertailor) Vyalkova <cyber+gentoo@sysrq.in> (2025-03-25)
+# Unmaintained in GURU, no revdeps left.
+# Removal on 2025-04-25.
+dev-python/defcon
+
+# Anna (cybertailor) Vyalkova <cyber+gentoo@sysrq.in> (2025-03-25)
+# Unmaintained in GURU, no revdeps left. No working tests, because test
+# dependencies are not worth packaging and maintaining.
+# Removal on 2025-04-25.
+dev-python/notofonttools
+
 # Rahil Bhimjiani <me@rahil.rocks> (2025-03-17)
 # Not worth the hassle of maintaining
 # Removal on 2025-04-17
@@ -55,11 +71,6 @@ www-misc/gorss
 # stable and 9999). Gentoo does not provide such versions.
 # Removal on 2025-04-05.
 dev-debug/uscope
-
-# Anna (cybertailor) Vyalkova <cyber+gentoo@sysrq.in> (2025-03-05)
-# Unmaintained in GURU.
-# Removal on 2025-04-05.
-media-fonts/twemoji
 
 # Anna (cybertailor) Vyalkova <cyber+gentoo@sysrq.in> (2025-03-05)
 # Unmaintained in GURU, no revdeps left. Open bugs: #901337.
@@ -147,17 +158,6 @@ dev-python/aiomysql
 # Open bugs: #945117.
 # Removal on 2025-04-05.
 dev-util/bump2version
-
-# Takuya Wakazono <pastalian46@gmail.com> (2025-02-24)
-# No reverse dependencies left. (The last one was removed in e17a1e7.)
-# One of its test dependencies, dev-python/zstd, is being removed.
-# Removal on 2025-03-24. Bug #928259.
-dev-python/pymemcache
-
-# David Roman <davidroman96@gmail.com> (2025-01-30)
-# Depends on qtpy[pyqt5] but pyqt5 USE has been removed from it
-# Removal on 2025-03-24
-app-misc/brightness-control
 
 # Julien Roy <julien@jroy.ca> (2024-03-21)
 # sys-libs/libucontext is masked in ::gentoo
