@@ -1,0 +1,17 @@
+BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.20.5
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare test
+DEPEND=dev-cpp/boxed-cpp dev-cpp/ms-gsl dev-cpp/range-v3 dev-cpp/reflection-cpp dev-cpp/yaml-cpp:= dev-qt/qtbase:6[opengl] dev-qt/qt5compat dev-qt/qtdeclarative:6 dev-qt/qtmultimedia:6 media-libs/freetype media-libs/harfbuzz:= media-libs/libunicode sys-libs/libutempter test? ( dev-cpp/catch:0 )
+DESCRIPTION=Modern C++ Terminal Emulator
+EAPI=8
+HOMEPAGE=https://contour-terminal.org/ https://github.com/contour-terminal/contour
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=cmake xdg
+IUSE=test
+KEYWORDS=~amd64
+LICENSE=Apache-2.0
+RDEPEND=dev-cpp/boxed-cpp dev-cpp/ms-gsl dev-cpp/range-v3 dev-cpp/reflection-cpp dev-cpp/yaml-cpp:= dev-qt/qtbase:6[opengl] dev-qt/qt5compat dev-qt/qtdeclarative:6 dev-qt/qtmultimedia:6 media-libs/freetype media-libs/harfbuzz:= media-libs/libunicode sys-libs/libutempter test? ( dev-cpp/catch:0 )
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/contour-terminal/contour/archive/refs/tags/v0.6.1.7494.tar.gz -> contour-0.6.1.7494.tar.gz
+_eclasses_=toolchain-funcs	6afdb6107430c1832ca7e16aacbf8fa1	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	357f1a896fbedcd06e5ce55419c49eb9	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	10a50dfaf728b802fcfd37f8d0da9056	xdg	3ef49a87c52c8b77c476351195dfe575
+_md5_=e4ef37a311a41c376c750e409aed320b

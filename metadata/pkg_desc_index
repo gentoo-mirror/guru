@@ -206,7 +206,7 @@ app-emulation/x48ng 0.38.0: HP48 emulator
 app-eselect/eselect-autostart 1.0.0: Manage symlinks in $XDG_CONFIG_HOME/autostart
 app-eselect/eselect-bluespec 1.0.2: Manages the /usr/bin/bsc (bluespec) symlink
 app-eselect/eselect-ld 1.0.0: Manage the ld symlink
-app-eselect/eselect-swift 1.0: Manages Swift symlinks
+app-eselect/eselect-swift 1.0 1.0-r1: Manages Swift symlinks
 app-eselect/eselect-vala 1.0.0: Manage the valac symlink
 app-forensics/mvt 2.4.1: Forensic traces to identify a potential compromise of Android and iOS devices
 app-laptop/framework_tool 0.2.1 9999: Tool to interact with a Framework Laptop's hardware system
@@ -221,7 +221,6 @@ app-misc/aw-client 0.11.0: Client library for ActivityWatch
 app-misc/aw-core 0.5.16: Core library for ActivityWatch
 app-misc/badvideo 5.2 9999: Ruin your videos in SECONDS!
 app-misc/blahaj 2.2.0-r1: Gay sharks at your local terminal
-app-misc/brightness-control 2.4: Qt Brightness Controller in Python
 app-misc/brightnessctl 0.5.1: A program to read and control device brightness
 app-misc/catt 0.12.13: Send videos from many, many online sources to your Chromecast
 app-misc/chayang 0.1.0: Gradually dim the screen.
@@ -408,6 +407,7 @@ dev-build/pdpmake 2.0.3: Public domain POSIX make
 dev-build/qtilitools 0.1.2: Scripts/commands used in the Qtilities organization
 dev-build/xmake 2.9.8 9999: A cross-platform build utility based on Lua
 dev-cpp/blurhash 0.2.0 0.2.0-r1: C++ blurhash encoder/decoder
+dev-cpp/boxed-cpp 1.4.3: Boxing primitive types in C++
 dev-cpp/coeurl 0.3.0 0.3.1: A simple async wrapper around CURL for C++
 dev-cpp/cpp-jwt 1.5_pre20220727: JSON Web Token library for C++
 dev-cpp/cpprestsdk 2.10.19-r3: A Microsoft project for cloud-based client-server communication.
@@ -424,6 +424,7 @@ dev-cpp/parallel-hashmap 1.3.8 1.4.1: Family of header-only, fast and memory-fri
 dev-cpp/pcg-cpp 0.98.1_p20210406-r1: Family of better random number generators
 dev-cpp/qt-jdenticon 0.3.0-r1 0.3.0_p20240107 0.3.1: Qt5 / C++14 Port of Jdenticon
 dev-cpp/rang 3.2: Minimal, header-only, modern C++ library for terminal goodies
+dev-cpp/reflection-cpp 0.1.0: Boxing primitive types in C++
 dev-cpp/scnlib 4.0.1: scanf for modern C++
 dev-cpp/simdutf 5.7.2 6.2.0: simdutf: Unicode validation and transcoding at billions of characters per second
 dev-cpp/sprout 0_pre20190615: C++11/14 constexpr based Containers, Algorithms, Random numbers and others
@@ -491,6 +492,7 @@ dev-embedded/esp-idf-nvs-partition-gen 0.1.4 0.1.6: Parses ESP-IDF panic handler
 dev-embedded/esp-idf-panic-decoder 1.1.0 1.2.1 1.2.1-r1: Parses ESP-IDF panic handler output acts as a GDB server over stdin/stdout
 dev-embedded/esp-idf-size 1.5.0 1.6.0 1.6.1: Firmware size analysis for ESP-IDF
 dev-embedded/freertos-gdb 1.0.2 1.0.3: Python module for operating with freeRTOS-kernel objects in GDB
+dev-embedded/fwup 1.12.0: Configurable embedded Linux firmware update creator and runner
 dev-embedded/idf-component-manager 2.0.4 2.1.1: Tool for installing ESP-IDF components
 dev-embedded/mv88e6xxx-dump 0.2.0_pre20210327: Dump information about Marvell mv88e6xxx Ethernet switches
 dev-embedded/nxp-gui-guider 1.7.2-r1: GUI Guider is a user-friendly GUI development tool for LVGL
@@ -525,7 +527,7 @@ dev-lang/odin 2024.08 2024.09: The Data-Oriented Language for Sane Software Deve
 dev-lang/opencilk 1.1 2.1: The OpenCilk concurrency platform for parallel programming
 dev-lang/opencilk-bin 1.1 2.1: The OpenCilk concurrency platform for parallel programming
 dev-lang/quickjs 2024.01.13-r1: Small embeddable Javascript engine
-dev-lang/swift 5.10.1 5.10.1-r1 5.10.1-r2 5.10.1-r3 6.0.1 6.0.1-r1 6.0.2 6.0.3: A high-level, general-purpose, multi-paradigm, compiled programming language
+dev-lang/swift 5.10.1 5.10.1-r1 5.10.1-r2 5.10.1-r3 5.10.1-r4 6.0.1 6.0.1-r1 6.0.2 6.0.3 6.0.3-r1: A high-level, general-purpose, multi-paradigm, compiled programming language
 dev-lang/swift-bootstrap 1.0: A virtual package providing a base Swift to bootstrap future versions with.
 dev-lang/wabt 1.0.34: The WebAssembly Binary Toolkit
 dev-libs/M_CLI2 3.2.0: M_CLI2 - parse Unix-like command line arguments from Fortran
@@ -535,14 +537,14 @@ dev-libs/cusparselt 0.7.1.0: A High-Performance CUDA Library for Sparse Matrix-M
 dev-libs/cyrus-sasl-xoauth2 0.2: XOAUTH2 mechanism plugin for cyrus-sasl
 dev-libs/dmd_core 0.7.2-r1: Core logic for an AT&T / Teletype DMD 5620 terminal emulator
 dev-libs/fastText 0.9.2: Library for fast text representation and classification
-dev-libs/feedbackd 0.6.0 0.7.0: DBus activated daemon that provides haptic/visual/audio feedback based on events
-dev-libs/feedbackd-device-themes 0.1.0 0.4.0: A daemon to provide haptic feedback on events (themes package)
+dev-libs/feedbackd 0.7.0 0.8.0: DBus activated daemon that provides haptic/visual/audio feedback based on events
+dev-libs/feedbackd-device-themes 0.4.0 0.8.0: A daemon to provide haptic feedback on events (themes package)
 dev-libs/fortran-regex 1.1.2: Modern Fortran port of the tiny-regex-c library for regular expressions
 dev-libs/fortran-shlex 1.0.1: Modern Fortran port of the tiny-regex-c library for regular expressions
 dev-libs/fortran-stdlib 0.2.1-r1 0.3.0 0.4.0 0.5.0 0.6.1 0.7.0 9999: A community driven standard library for (modern) Fortran
 dev-libs/ftl 1.0_p20230220: The Fortran Template Library (FTL) is a general purpose library for Fortran 2003
 dev-libs/gbinder 1.1.42 9999: GLib-style interface to binder
-dev-libs/gmobile 0.1.0 0.2.1: Mobile related helpers for glib based projects
+dev-libs/gmobile 0.2.1 0.2.2: Mobile related helpers for glib based projects
 dev-libs/gpds 1.9.0: A general purpose data serializer
 dev-libs/hts_engine 1.10: HMM-based speech synthesis system (HTS) engine and API
 dev-libs/imsg-compat 8.0.0 9999: linux port of OpenBSD imsg
@@ -799,7 +801,6 @@ dev-python/pygments-promql 0.0.9-r1: A PromQL lexer for Pygments
 dev-python/pygsl 2.3.4: Python interface for the GNU scientific library (gsl)
 dev-python/pykeepass 4.0.7: Python library to interact with keepass databases (supports KDBX3 and KDBX4)
 dev-python/pymeeus 0.5.12: Python implementation of Jean Meeus astronomical routines
-dev-python/pymemcache 4.0.0: A comprehensive, fast, pure-Python memcached client
 dev-python/pymorphy3 1.2.0: Morphological analyzer (POS tagger + inflection engine) for Russian language.
 dev-python/pymorphy3-dicts-ru 2.4.417150.4580142: Russian dictionary for PyMorphy3
 dev-python/pymorphy3-dicts-uk 2.4.1.1.1663094765: Ukrainian dictionary for PyMorphy3
@@ -925,7 +926,7 @@ dev-util/bats-assert 2.1.0: Common assertions for Bats
 dev-util/bats-support 0.3.0: Supporting library for Bats test helpers
 dev-util/bc-ur 0.3.0: Blockchain Commons UR Library
 dev-util/bruno-bin 1.9.0 1.9.0-r1: Opensource IDE For Exploring and Testing Api's
-dev-util/bump-my-version 1.0.1 1.0.2: Version bump your Python project
+dev-util/bump-my-version 1.0.2 1.1.1: Version bump your Python project
 dev-util/bump2version 1.0.1: Version-bump your software with a single command!
 dev-util/cargo-post 0.1.7: A cargo wrapper that executes a post build script after a successful build.
 dev-util/catalyst-lab 1.6.0 1.6.1: An automation tool for building Gentoo release stages and binhost packages.
@@ -1067,7 +1068,7 @@ games-strategy/zedonline-bin 0.3.2-r1: A remake of the 1996 classic game Z, with
 games-util/NotEnoughProduction 0.0.4: Tool for building production chains for modded minecraft
 games-util/ProtonUp-Qt 2.11.1 9999: Install and manage GE-Proton, Luxtorpeda & more for Steam Lutris and Heroic.
 games-util/chiaki-ng 1.9.5 9999: Client for PlayStation 4 and PlayStation 5 Remote Play
-games-util/curseforge 1.274.1_p24051: The CurseForge Electron App
+games-util/curseforge 1.275.0_p24463: The CurseForge Electron App
 games-util/dwarf-therapist 41.2.5 42.1.5: For managing dwarves in Dwarf Fortress
 games-util/gamehub 0.16.3.2-r1: GameHub is a unified library for all your games
 games-util/goverlay 1.2: Graphical UI to help manage Linux game overlays (MangoHud).
@@ -1101,8 +1102,9 @@ gui-apps/1password 8.10.28 8.10.48-r1: The world’s most-loved password manager
 gui-apps/ReGreet 0.1.1-r10 9999: A clean and customizable GTK-based greetd greeter written in Rust
 gui-apps/ashell 0.3.0 0.3.1: A ready to go Wayland status bar for Hyprland
 gui-apps/aylurs-gtk-shell 1.8.2-r1: Aylurs's Gtk Shell (AGS), An eww inspired gtk widget system.
-gui-apps/azote 1.14.1 9999: wallpaper manager for wlroots compositors
+gui-apps/azote 1.14.2 9999: wallpaper manager for wlroots compositors
 gui-apps/clipman 1.6.2 1.6.3 1.6.4: A basic clipboard manager for Wayland.
+gui-apps/contour 0.6.1.7494: Modern C++ Terminal Emulator
 gui-apps/coreaction 4.5.0 5.0.0: A side bar for showing widgets for C Suite
 gui-apps/corearchiver 4.5.0 9999: Archiver for C Suite, to create and extract archives
 gui-apps/corefm 4.5.0 9999: A lightweight file-manager for C Suite
@@ -1261,7 +1263,7 @@ media-fonts/plemoljp 2.0.3: PlemolJP is a composite font of IBM Plex Mono and IB
 media-fonts/source-han-mono 1.002: Pan-CJK OpenType/CFF mono font family
 media-fonts/source-han-serif 2.002 2.003: Pan-CJK OpenType/CFF font family
 media-fonts/ttf-ancient-fonts 2.60: Unicode font for Latin, IPA Extensions, Greek, Cyrillic and many Symbol Blocks
-media-fonts/twemoji 14.0.2: A color emoji font with a flat visual style, designed and used by Twitter
+media-fonts/twemoji 15.1.0: Color emoji font with a flat visual style, designed and used by Twitter
 media-fonts/udev-gothic 2.1.0: UDEV Gothic is a composite font of BIZ UD Gothic and JetBrains Mono.
 media-fonts/unscii 2.1: Set of bitmapped Unicode fonts based on classic system fonts
 media-fonts/victor-mono 1.5.4 1.5.5 1.5.6: A free programming font with cursive italics and ligatures
@@ -1270,7 +1272,7 @@ media-gfx/KTX-Software 4.3.2: KTX (Khronos Texture) Library and Tools
 media-gfx/WebPlotDigitizer-bin 4.7: Web based tool to extract data from plots, images, and maps
 media-gfx/airsane 0.4.3: Publish SANE scanners via Apple Airscan/eSCL
 media-gfx/azpainter 3.0.11: Full color painting software for Linux for illustration drawing
-media-gfx/bambustudio-bin 01.10.02.76: Bambu Studio is a cutting-edge, feature-rich slicing software
+media-gfx/bambustudio-bin 02.00.00.95: Bambu Studio is a cutting-edge, feature-rich slicing software
 media-gfx/beeref 0.3.3: A Simple Reference Image Viewer
 media-gfx/bonzomatic 2022.02.05 2022.08.20 9999: Live shader coding tool and Shader Showdown workhorse
 media-gfx/czkawka 8.0.0: App to find duplicates, empty folders and similar images
@@ -1308,6 +1310,7 @@ media-libs/grok 11.0.0: World's Leading Open Source JPEG 2000 Codec
 media-libs/imgui 1.89.9-r4 1.91.1: Bloat-free graphical user interface library for C++
 media-libs/implot 0.16-r2: Immediate Mode Plotting
 media-libs/libbpg 0.9.8-r1: Better Portable Graphics reference implementation
+media-libs/libunicode 0.6.0: Modern C++20 Unicode library
 media-libs/monado 9999: The open source OpenXR runtime.
 media-libs/opencomposite 9999: OpenVR over OpenXR compatibility layer
 media-libs/openvr 1.23.8: OpenVR SDK
@@ -1344,7 +1347,7 @@ media-sound/jacktrip 1.7.1-r1 2.4.0: Send JACK audio over a network
 media-sound/jriver 31.0.83: A cross-platform media center, famous for high quality of audio.
 media-sound/kew 2.4.4-r1: kew (/kjuː/) is a command-line music player for Linux.
 media-sound/lms 3.63.0 3.64.0-r1 3.65.0: Lightweight Music Server.
-media-sound/loudgain 0.6.8-r1 0.6.8_p20240128 0.6.8_p20240128-r1: Versatile ReplayGain 2.0 loudness normalizer
+media-sound/loudgain 0.6.8-r1 0.6.8_p20240128 0.6.8_p20240128-r2: Versatile ReplayGain 2.0 loudness normalizer
 media-sound/mopidy 3.4.2: An extensible music server written in Python.
 media-sound/mpd-mpris 0.3.1 0.4.0 0.4.1: An implementation of the MPRIS protocol for MPD.
 media-sound/mpvc 1.1.4-r1: mpc-like tool which connects to existing mpv instances through sockets.
@@ -1427,7 +1430,7 @@ net-dialup/minimodem 0.24-r2 9999-r1: General-purpose software audio FSK modem
 net-dialup/syncterm 1.1 9999: BBS (bulletin board system) terminal
 net-dialup/tcpser 1.1.4: Hayes Smartmodem emulator over TCP/IP
 net-dialup/tio 3.8: Simple TTY terminal application
-net-dns/AdGuardHome 0.107.51 0.107.57 0.107.58: Network-wide ads & trackers blocking DNS server like Pi-Hole with web ui
+net-dns/AdGuardHome 0.107.57 0.107.58 0.107.59: Network-wide ads & trackers blocking DNS server like Pi-Hole with web ui
 net-dns/blocky 0.23 0.24 0.25 9999: Fast and lightweight DNS proxy as ad-blocker with many features written in Go
 net-dns/noip-duc 3.3.0: No-IP Dynamic Update Client (https://www.noip.com)
 net-fs/httpdirfs 1.2.7: Filesystem to mount HTTP directory listings, with a permanent cache
@@ -1513,7 +1516,7 @@ net-misc/gmid 2.1 2.1.1 9999: Simple and secure Gemini server
 net-misc/gnome-ssh-askpass 9.2_p1: GTK-based passphrase dialog for use with OpenSSH
 net-misc/graftcp 0.7.1: A tool for redirecting a given program's TCP traffic to SOCKS5 or HTTP proxy
 net-misc/iipsrv 1.2: High performance image server for high resolution and scientific images
-net-misc/inv_sig_helper 0_pre20241217 0_pre20250103: Rust service that decrypts YouTube signatures and manages player information
+net-misc/inv_sig_helper 0_pre20250103 9999: Rust service that decrypts YouTube signatures and manages player information
 net-misc/jool 4.1.13: Required tools for Jool
 net-misc/jool-modules 4.1.13: Jool is an Open Source SIIT and NAT64 for linux
 net-misc/lyrics-in-terminal 1.5.0 1.7.0: Command Line Lyrics fetcher for MPRIS media players
@@ -1575,7 +1578,7 @@ net-vpn/GlobalProtect-openconnect 2.3.9-r1: Unofficial GlobalProtect VPN client 
 net-vpn/cloudflare-warp 2024.2.62-r2 2024.4.133-r1 2024.11.309: Cloudflare Warp Client
 net-vpn/fastd 22 23: A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
 net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that require SAML
-net-vpn/mullvadvpn-app 2025.4 2025.5_beta1: Tool used to manage daemon setup
+net-vpn/mullvadvpn-app 2025.5: Tool used to manage daemon setup
 net-wireless/airspyhf 1.6.8: User mode driver for Airspy HF+
 net-wireless/bluetuith 0.2.1 0.2.2 0.2.3 9999: A TUI bluetooth manager for Linux written in Go
 net-wireless/btscreenlocker 1.8.1-r1: Daemon to lock your screen when Bluetooth trusted devices go away.

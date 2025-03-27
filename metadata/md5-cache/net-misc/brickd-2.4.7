@@ -1,12 +1,13 @@
 BDEPEND=>=virtual/pkgconfig-3 >=dev-build/make-4.4.1 >=sys-devel/gcc-14.2.1
-DEFINED_PHASES=compile configure
-DEPEND=>=dev-libs/libusb-1.0.27 >=dev-libs/libgpiod-1.6.4
+DEFINED_PHASES=configure install prepare
+DEPEND=>=dev-libs/libusb-1.0.27:1 >=dev-libs/libgpiod-1.6.4:=
 DESCRIPTION=Network Daemon bridging API bindings to Tinkerforge hardware bricks
 EAPI=8
 HOMEPAGE=https://www.tinkerforge.com/en/doc/Software/Brickd.html https://github.com/Tinkerforge/brickd https://github.com/Tinkerforge/daemonlib
+IUSE=systemd
 KEYWORDS=~amd64
 LICENSE=GPL-2
-RDEPEND=>=dev-libs/libusb-1.0.27 >=dev-libs/libgpiod-1.6.4
+RDEPEND=>=dev-libs/libusb-1.0.27:1 >=dev-libs/libgpiod-1.6.4:=
 SLOT=0
 SRC_URI=https://github.com/Tinkerforge/brickd/archive/refs/tags/v2.4.7.tar.gz -> brickd-2.4.7.tar.gz https://github.com/Tinkerforge/daemonlib/archive/refs/tags/brickd-2.4.7.tar.gz -> daemonlib-brickd-2.4.7.tar.gz
-_md5_=b8d2f664404cbcd8bb41d00b5e65ad1d
+_md5_=079f188d14b1428fc21a7bf7d61a9048
