@@ -1,12 +1,9 @@
-# Copyright 2023-2024 Gentoo Authors
+# Copyright 2023-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-# required because of manual install in src_install
-CMAKE_MAKEFILE_GENERATOR="emake"
-
-PYTHON_COMPAT=( python3_{11..12} )
+PYTHON_COMPAT=( python3_{11..13} )
 
 inherit cmake python-any-r1
 
@@ -52,21 +49,11 @@ src_configure() {
 }
 
 src_compile() {
-	if use doc; then
-		cd "${WORKDIR}/${P}/docs" || die
-		emake html BUILDDIR="${BUILD_DIR}"
-		HTML_DOCS=( "${BUILD_DIR}/html/." )
-	fi
-}
-
-src_test() {
-	cmake_src_compile xtest
+	cmake_src_compile
+	use doc && emake -C docs html
 }
 
 src_install() {
-	# Default install target depends on tests with USE=test enabled.
-	# However, this is a header-only library.
-	DESTDIR="${D}" cmake_build install/fast "$@"
-
-	einstalldocs
+	use doc && HTML_DOCS=( docs/build/html/* )
+	cmake_src_install
 }

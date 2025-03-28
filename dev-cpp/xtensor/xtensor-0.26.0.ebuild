@@ -1,12 +1,9 @@
-# Copyright 2023-2024 Gentoo Authors
+# Copyright 2023-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-# required because of manual install in src_install
-CMAKE_MAKEFILE_GENERATOR="emake"
-
-PYTHON_COMPAT=( python3_{11..12} )
+PYTHON_COMPAT=( python3_{11..13} )
 
 inherit cmake python-any-r1 optfeature toolchain-funcs
 
@@ -18,12 +15,11 @@ LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64"
 
-IUSE="doc openmp tbb test xsimd"
+IUSE="doc openmp tbb test"
 
 DEPEND="
-	dev-cpp/xtl
+	>=dev-cpp/xtl-0.8.0
 	tbb? ( dev-cpp/tbb )
-	xsimd? ( dev-cpp/xsimd )
 "
 RDEPEND="${DEPEND}"
 BDEPEND="
@@ -61,11 +57,6 @@ src_prepare() {
 	# Skipping test due to https://github.com/xtensor-stack/xtensor/issues/2653
 	sed -i -e '/test_xoptional\.cpp/d' test/CMakeLists.txt || die
 
-	# Current version of xsimd in tree is 11.1.0 (announcing itself as 11.0.1)
-	# Version appears to be compatible (compiles & tests succeed)
-	sed -i -e 's/xsimd_REQUIRED_VERSION 10.0.0/xsimd_REQUIRED_VERSION 11.0.1/' \
-		CMakeLists.txt || die
-
 	cmake_src_prepare
 }
 
@@ -74,30 +65,21 @@ src_configure() {
 		-DBUILD_TESTS=$(usex test)
 		-DXTENSOR_USE_OPENMP=$(usex openmp)
 		-DXTENSOR_USE_TBB=$(usex tbb)
-		-DXTENSOR_USE_XSIMD=$(usex xsimd)
+		# A specific verions of dev-cpp/xsimd is needed, so it requires ongoing maintenance.
+		-DXTENSOR_USE_XSIMD=OFF
 	)
 
 	cmake_src_configure
 }
 
 src_compile() {
-	if use doc; then
-		cd "${WORKDIR}/${P}/docs" || die
-		emake html BUILDDIR="${BUILD_DIR}"
-		HTML_DOCS=( "${BUILD_DIR}/html/." )
-	fi
-}
-
-src_test() {
-	cmake_src_compile xtest
+	cmake_src_compile
+	use doc && emake -C docs html
 }
 
 src_install() {
-	# Default install target depends on tests with USE=test enabled.
-	# However, this is a header-only library.
-	DESTDIR="${D}" cmake_build install/fast "$@"
-
-	einstalldocs
+	use doc && HTML_DOCS=( docs/build/html/* )
+	cmake_src_install
 }
 
 pkg_postinst() {
