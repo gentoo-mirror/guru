@@ -1,0 +1,15 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile install test unpack
+DESCRIPTION=Lean and mean pkg-config replacement
+EAPI=8
+HOMEPAGE=https://github.com/skeeto/u-config
+INHERIT=edo toolchain-funcs git-r3
+IUSE=symlink test
+LICENSE=Unlicense symlink? ( GPL-2+ )
+PROPERTIES=live
+RDEPEND=symlink? ( !dev-util/pkgconfig !dev-util/pkgconf )
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=symlink? ( https://github.com/pkgconf/pkgconf/raw/refs/tags/pkgconf-1.9.5/pkg.m4 -> u-config-1.9.5-pkg.m4 )
+_eclasses_=edo	367e103a74bf77e6a8da7894d999fa3c	toolchain-funcs	6afdb6107430c1832ca7e16aacbf8fa1	multilib	b2a329026f2e404e9e371097dda47f96	git-r3	875eb471682d3e1f18da124be97dcc81
+_md5_=a30ff4d544fe1cc8ba0d32cb36b48246

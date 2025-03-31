@@ -186,7 +186,7 @@ app-editors/mined 2015.25: A powerful text editor with extensive Unicode and CJK
 app-editors/neovide 0.12.2: Neovide: No Nonsense Neovim Gui
 app-editors/neovim-qt 0.2.19: Neovim client library and GUI, in Qt
 app-editors/notepadnext 0.8_p20240828 0.9 0.9_p20241128: A cross-platform reimplementation of Notepad++ based on Qt
-app-editors/pulsar-bin 1.126.0 1.127.0: A Community-led Hyper-Hackable Text Editor
+app-editors/pulsar-bin 1.126.0 1.127.0 1.127.1: A Community-led Hyper-Hackable Text Editor
 app-editors/typora-bin 1.10.8: a markdown editor,markdown reader.
 app-emacs/catppuccin-emacs 9999: Soothing pastel theme for Emacs
 app-emacs/envrc 0.11: Emacs support for direnv which operates buffer-locally
@@ -355,7 +355,7 @@ app-text/klogg 22.06.0.1289-r1: A GUI application to browse and search through l
 app-text/komikku 1.70.0 1.72.0: Manga reader for GNOME
 app-text/koodo-reader-bin 1.5.1 1.6.3: A modern ebook manager and reader with sync and backup capacities
 app-text/lchat 1.0-r2: Line oriented front end for ii-like chat programs
-app-text/lizard 1.17.13 1.17.19 1.17.20: A simple code complexity analyser, supports most of the popular languages.
+app-text/lizard 1.17.13 1.17.19 1.17.20 1.17.23: A simple code complexity analyser, supports most of the popular languages.
 app-text/lorien-bin 0.6.0-r2: Infinite canvas drawing/whiteboarding. Made with Godot.
 app-text/lsp 0.5.0_rc4 9999: The least significant pager
 app-text/owo 0.1.0: OwO-ifies text via regex
@@ -571,7 +571,6 @@ dev-libs/lsbcrypt 1.0.0-r2: libcrypt wrapper for LiteSpeedTech
 dev-libs/lsquic 4.0.8-r2 4.0.12: LiteSpeed QUIC (LSQUIC) Library
 dev-libs/luksmeta 9-r2: LUKSMeta is a simple library for storing metadata in the LUKSv1 header
 dev-libs/lzfse 9999: LZFSE compression library and command line tool.
-dev-libs/md4c 0.4.8_p20220115 0.5.2: C Markdown parser. Fast, SAX-like interface, CommonMark Compliant.
 dev-libs/mtxclient 0.10.0-r1 0.10.0-r2: Client API library for Matrix, built on top of libcurl
 dev-libs/nanopb 0.4.9.1 9999: plain-C Protocol Buffers for embedded/memory-constrained systems
 dev-libs/open62541 1.4.11.1: Open source C implementation of OPC UA
@@ -986,7 +985,7 @@ dev-util/tflint-bin 0.43.0 0.46.0: A Pluggable Terraform Linter
 dev-util/tokei 12.1.1 12.1.2: Count your code, quickly
 dev-util/trivy 0.55.2: Vulnerability scanner for container images, file systems, and Git repos
 dev-util/typescript-language-server 4.1.2 4.3.3: TypeScript & JavaScript Language Server
-dev-util/u-config 0.33.3: Lean and mean pkg-config replacement
+dev-util/u-config 0.33.3 9999: Lean and mean pkg-config replacement
 dev-util/upstream-ontologist 0.1.35-r1: Tracking of upstream project metadata
 dev-util/vala-language-server 0.48.4: Code Intelligence for Vala & Genie
 dev-util/vscode-langservers-extracted 4.8.0 4.10.0: HTML/CSS/JSON/ESLint/Markdown language servers extracted from vscode.
@@ -1009,7 +1008,7 @@ dev-zig/zls 0.10.0-r2 0.13.0-r1 0.14.0 9999: The officially unofficial Ziglang l
 games-action/ATLauncher 3.4.27.0: Minecraft launcher which integrates multiple different ModPacks
 games-action/blackvoxel 2.50 9999: Blackvoxel Video Game
 games-action/classicube 1.3.7 9999: Reverse-engineered Minecraft Classic client
-games-action/ddnet 19.0 9999: DDraceNetwork, a cooperative racing mod of Teeworlds
+games-action/ddnet 19.1 9999: DDraceNetwork, a cooperative racing mod of Teeworlds
 games-action/netrek-brmh 2.6.0: brmh client for netrek
 games-action/netrek-cow 3.3.2: cow client for netrek
 games-action/technic-launcher 4.768 4.822: Minecraft launcher for community-made modpacks on the Technic Platform
@@ -1068,7 +1067,7 @@ games-strategy/zedonline-bin 0.3.2-r1: A remake of the 1996 classic game Z, with
 games-util/NotEnoughProduction 0.0.4: Tool for building production chains for modded minecraft
 games-util/ProtonUp-Qt 2.11.1 9999: Install and manage GE-Proton, Luxtorpeda & more for Steam Lutris and Heroic.
 games-util/chiaki-ng 1.9.5 9999: Client for PlayStation 4 and PlayStation 5 Remote Play
-games-util/curseforge 1.275.0_p24463: The CurseForge Electron App
+games-util/curseforge 1.275.1_p24561: The CurseForge Electron App
 games-util/dwarf-therapist 41.2.5 42.1.5: For managing dwarves in Dwarf Fortress
 games-util/gamehub 0.16.3.2-r1: GameHub is a unified library for all your games
 games-util/goverlay 1.2: Graphical UI to help manage Linux game overlays (MangoHud).
@@ -1138,7 +1137,7 @@ gui-apps/hiprompt-gtk-py 0.8.0 9999: GTK+ Himitsu prompter for Wayland
 gui-apps/hypridle 0.1.5-r2 9999: Hyprland's idle daemon
 gui-apps/hyprlock 0.6.0 9999: Hyprland's GPU-accelerated screen locking utility
 gui-apps/hyprnome 0.3.0: GNOME-like workspace switching in Hyprland.
-gui-apps/hyprpaper 0.7.1-r1 0.7.3-r1 0.7.3-r2: A blazing fast wayland wallpaper utility
+gui-apps/hyprpaper 0.7.3-r2 0.7.4: A blazing fast wayland wallpaper utility
 gui-apps/hyprpicker 0.3.0-r2 0.4.2 9999: A wlroots-compatible Wayland color picker that does not suck
 gui-apps/hyprshade 3.2.1 9999: Hyprland shader configuration tool
 gui-apps/hyprshot 1.2.3 1.3.0 9999: Hyprshot is an utility to easily take screenshot in Hyprland using your mouse
@@ -1151,7 +1150,7 @@ gui-apps/koi 0.3.1: Theme scheduling for the KDE Plasma Desktop
 gui-apps/lan-mouse 0.7.3-r1: Software KVM Switch / mouse & keyboard sharing software for Local Area Networks
 gui-apps/lemurs 0.3.2: A TUI Display/Login Manager
 gui-apps/lswt 1.0.4-r1 2.0.0 9999: List Wayland toplevels
-gui-apps/meteo-qt 3.4 4.1: A system tray application for the weather status
+gui-apps/meteo-qt 4.1 4.2: A system tray application for the weather status
 gui-apps/mpvpaper 1.7 9999: A video wallpaper program for wlroots based wayland compositors
 gui-apps/nwg 0: meta package package for nwg-shell
 gui-apps/nwg-bar 0.1.5 0.1.6: GTK3-based button bar for wlroots-based compositors
@@ -1272,7 +1271,7 @@ media-gfx/KTX-Software 4.3.2: KTX (Khronos Texture) Library and Tools
 media-gfx/WebPlotDigitizer-bin 4.7: Web based tool to extract data from plots, images, and maps
 media-gfx/airsane 0.4.3: Publish SANE scanners via Apple Airscan/eSCL
 media-gfx/azpainter 3.0.11: Full color painting software for Linux for illustration drawing
-media-gfx/bambustudio-bin 02.00.00.95: Bambu Studio is a cutting-edge, feature-rich slicing software
+media-gfx/bambustudio-bin 02.00.01.50: Bambu Studio is a cutting-edge, feature-rich slicing software
 media-gfx/beeref 0.3.3: A Simple Reference Image Viewer
 media-gfx/bonzomatic 2022.02.05 2022.08.20 9999: Live shader coding tool and Shader Showdown workhorse
 media-gfx/czkawka 8.0.0: App to find duplicates, empty folders and similar images
@@ -1373,7 +1372,7 @@ media-sound/spotube-bin 3.8.0: An open source, cross-platform Spotify client
 media-sound/supersonic 0.13.1 0.13.2 0.14.0: A lightweight and full-featured cross-platform desktop client
 media-sound/tidal-hifi-bin 5.16.0-r1 5.17.0: Web version of Tidal running in electron with Hi-Fi support thanks to Widevine.
 media-sound/yewtube 2.12.0 9999: Terminal-based YouTube player and downloader
-media-sound/youtube-music-bin 3.6.2-r1: YouTube Music Desktop App bundled with custom plugins
+media-sound/youtube-music-bin 3.6.2-r1 3.8.0: YouTube Music Desktop App bundled with custom plugins
 media-sound/zita-ajbridge 0.8.4 0.8.4-r1: zita-a2j and zita-j2a - bridges between ALSA and JACK
 media-video/avisynth+ 9999: A powerful nonlinear scripting language for video
 media-video/ciano 0.2.4-r2: A multimedia file converter focused on simplicity
@@ -1438,10 +1437,10 @@ net-im/Quaternion 0.0.97.1: A Qt-based IM client for Matrix
 net-im/WasIstLos 1.6.5 1.7.0: An unofficial WhatsApp desktop application for Linux
 net-im/abaddon 0.2.1 9999: Alternative Discord client using GTK instead of Electron
 net-im/axolotl-bin 2.0.1: Axolotl is a cross-platform Signal client
-net-im/beeper 3.109.1 3.110.1: Beeper: Unified Messenger
+net-im/beeper 3.109.1 3.110.1 4.0.570: Beeper: Unified Messenger
 net-im/chatterino 2.5.2-r1: Chat client for https://twitch.tv
 net-im/conduit 0.8.0-r1 0.9.0-r1 9999: Matrix homeserver written in Rust
-net-im/discord-canary-bin 0.0.593: All-in-one voice and text chat
+net-im/discord-canary-bin 0.0.621: All-in-one voice and text chat
 net-im/discord-ptb-bin 0.0.97: All-in-one voice and text chat
 net-im/eturnal 1.12.0-r1 1.12.1: STUN/TURN server
 net-im/flare 0.12.0-r1: Chat with your friends on Signal
@@ -1467,9 +1466,9 @@ net-im/pop 8.0.21: Screen sharing with multiplayer control, with voice
 net-im/revolt-desktop 1.0.8-r2: Revolt Desktop App
 net-im/session-desktop-bin 1.10.8: Session Desktop - Onion routing based messenger
 net-im/sliding-sync 0.99.15 0.99.19: Proxy implementation of MSC3575's sync protocol.
-net-im/teams-for-linux 1.12.7 1.13.1: Unofficial Microsoft Teams client for Linux. Binary precompiled version.
+net-im/teams-for-linux 1.12.7 1.13.1 1.13.2: Unofficial Microsoft Teams client for Linux. Binary precompiled version.
 net-im/vesktop-bin 1.5.4 1.5.5: All-in-one voice and text chat for gamers with Vencord Preinstalled
-net-im/zulip-desktop-bin 5.11.1: Organized chat for distributed teams.
+net-im/zulip-desktop-bin 5.11.1 5.12.0: Organized chat for distributed teams.
 net-irc/catgirl 2.2 2.2a: TLS-only terminal IRC client
 net-irc/halloy 2025.2: IRC application written in Rust
 net-irc/litterbox 1.9: TLS-only IRC logger
@@ -1506,7 +1505,7 @@ net-misc/cve-client 1.1.1 9999: CLI-based client / toolbox for CVE.org
 net-misc/eg25-manager 0.4.2: Daemon for managing the Quectel EG25 modem
 net-misc/fedigroup 1.0.6 1.0.8: Emulate group accounts on Mastodon/Pleroma
 net-misc/fileshelter 6.2.0: FileShelter is a “one-click” file sharing web application
-net-misc/freetube-bin 0.21.3_beta 0.22.0_beta 0.22.1_beta 0.23.1_beta 0.23.2_beta: A private YouTube desktop client
+net-misc/freetube-bin 0.21.3_beta 0.22.0_beta 0.22.1_beta 0.23.1_beta 0.23.2_beta 0.23.3_beta: A private YouTube desktop client
 net-misc/gdown 5.1.0 5.2.0: Google Drive public file/folder downloader
 net-misc/gdrive 3.9.0-r1 3.9.1-r1: Google Drive CLI Client
 net-misc/gemget 1.9.0: Command line downloader for the Gemini protocol
@@ -1558,7 +1557,7 @@ net-p2p/feather 2.6.7-r1 2.6.8 2.7.0 9999: A free, open-source Monero wallet
 net-p2p/fragments 3.0.1-r1 3.0.1-r2: Fragments is an easy to use BitTorrent client
 net-p2p/gridcoin 5.4.8.0_p1-r1 5.4.9.0: Proof-of-Stake based cryptocurrency that rewards BOINC computation
 net-p2p/ipfs-desktop-bin 0.39.0 0.40.0: A desktop client for IPFS. The IPFS's Native Application
-net-p2p/monero 0.18.3.4-r1 9999: The secure, private, untraceable cryptocurrency
+net-p2p/monero 0.18.3.4-r1 0.18.4.0 9999: The secure, private, untraceable cryptocurrency
 net-p2p/monero-gui-bin 0.18.3.4-r1: An open-source GUI wallet developed by the Monero community.
 net-p2p/p2pool 4.1.1 4.3 4.4 9999: Decentralized pool for Monero mining
 net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
@@ -1569,10 +1568,10 @@ net-proxy/byedpi 0.16.2 0.16.6 9999: Bypass DPI SOCKS proxy
 net-proxy/ngrok-bin 3.20.0: ngrok is a reverse proxy, firewall, and API gateway
 net-proxy/shadowsocks-rust 1.22.0: A Rust port of shadowsocks
 net-proxy/snowflake 2.10.1 2.11.0: Pluggable Transport using WebRTC, inspired by Flashproxy
-net-voip/baresip 3.18.0 3.19.0 3.20.0: Baresip is a portable and modular SIP User-Agent
+net-voip/baresip 3.19.0 3.20.0 3.21.0: Baresip is a portable and modular SIP User-Agent
 net-voip/discover-overlay 0.6.9-r1 0.7.4 0.7.8: Yet another Discord overlay for Linux written in Python using GTK3
 net-voip/gnome-calls 47.0-r1: Phone dialer and call handler
-net-voip/re 3.18.0 3.19.0 3.20.0: Generic library for real-time communications with async IO support
+net-voip/re 3.19.0 3.20.0 3.21.0: Generic library for real-time communications with async IO support
 net-voip/vvmd 0.8-r1: vvmd is a lower level daemon that retrieves Visual Voicemail
 net-vpn/GlobalProtect-openconnect 2.3.9-r1: Unofficial GlobalProtect VPN client for Linux
 net-vpn/cloudflare-warp 2024.2.62-r2 2024.4.133-r1 2024.11.309: Cloudflare Warp Client
