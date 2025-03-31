@@ -73,9 +73,9 @@ src_configure() {
 }
 
 src_install() {
-	for size in {16,32,64,128,512,1024}; do
-		doicon -s ${size} "usr/share/icons/hicolor/${size}x${size}/apps/zulip.png"
-	done
+	# why does this release only have one icon size?!?
+	size=512
+	doicon -s ${size} "usr/share/icons/hicolor/${size}x${size}/apps/zulip.png"
 
 	domenu usr/share/applications/zulip.desktop
 

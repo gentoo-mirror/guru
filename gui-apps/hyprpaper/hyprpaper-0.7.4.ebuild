@@ -1,4 +1,4 @@
-# Copyright 2023-2024 Gentoo Authors
+# Copyright 2023-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -14,9 +14,10 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="
-	dev-libs/hyprlang
+	dev-libs/hyprgraphics
+	>=dev-libs/hyprlang-0.6.0
 	dev-libs/wayland
-	gui-libs/hyprutils:=
+	>=gui-libs/hyprutils-0.2.4:=
 	media-libs/libglvnd
 	media-libs/libjpeg-turbo:=
 	media-libs/libwebp:=
@@ -28,17 +29,15 @@ DEPEND="
 	dev-libs/wayland-protocols
 "
 BDEPEND="
-	>=dev-util/hyprwayland-scanner-0.4.0
+	>=dev-util/hyprwayland-scanner-0.4.4
 	dev-util/wayland-scanner
 	dev-vcs/git
 	virtual/pkgconfig
 "
 
+DOCS=( README.md )
+
 src_compile() {
 	emake protocols
 	cmake_src_compile
-}
-
-src_install() {
-	dobin "${BUILD_DIR}/${PN}"
 }
