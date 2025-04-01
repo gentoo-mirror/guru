@@ -6,7 +6,7 @@ EAPI=8
 inherit cmake flag-o-matic xdg-utils
 
 DESCRIPTION="System Information and Benchmark for Linux Systems"
-HOMEPAGE="https://www.hardinfo2.org"
+HOMEPAGE="https://hardinfo2.org"
 SRC_URI="https://github.com/hardinfo2/hardinfo2/archive/refs/tags/release-${PV}.tar.gz -> ${P}.tar.gz"
 
 S="${WORKDIR}/${PN}-release-${PV}"

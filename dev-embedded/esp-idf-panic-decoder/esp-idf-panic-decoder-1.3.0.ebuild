@@ -4,13 +4,12 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYPI_NO_NORMALIZE=1
-PYTHON_COMPAT=( python3_{11..12} )
+PYTHON_COMPAT=( python3_{11..13} )
 
 inherit distutils-r1 pypi
 
-DESCRIPTION="Firmware size analysis for ESP-IDF"
-HOMEPAGE="https://github.com/espressif/esp-idf-size"
+DESCRIPTION="Parses ESP-IDF panic handler output acts as a GDB server over stdin/stdout"
+HOMEPAGE="https://github.com/espressif/esp-idf-panic-decoder"
 
 LICENSE="Apache-2.0"
 SLOT="0"
@@ -20,8 +19,5 @@ RESTRICT="test"
 
 RDEPEND="
 	dev-python/pyelftools[${PYTHON_USEDEP}]
-	dev-python/pyyaml[${PYTHON_USEDEP}]
-	dev-python/rich[${PYTHON_USEDEP}]
 "
-
 DEPEND="${RDEPEND}"

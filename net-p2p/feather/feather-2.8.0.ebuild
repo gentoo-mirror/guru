@@ -1,5 +1,6 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
+# RavFX (2025) Bump version and remove deprecated plugins
 
 EAPI=8
 
@@ -8,8 +9,8 @@ inherit cmake desktop verify-sig xdg
 DESCRIPTION="A free, open-source Monero wallet"
 HOMEPAGE="https://featherwallet.org"
 SRC_URI="
-	https://github.com/feather-wallet/feather/releases/download/${PV}/${P}.tar.gz
-	verify-sig? ( https://github.com/feather-wallet/feather/releases/download/${PV}/${P}.tar.gz.asc )
+	https://featherwallet.org/files/releases/source/${P}.tar.gz
+	verify-sig? ( https://featherwallet.org/files/releases/source/${P}.tar.gz.asc )
 "
 
 # Feather is released under the terms of the BSD license, but it vendors
@@ -17,7 +18,7 @@ SRC_URI="
 LICENSE="BSD MIT"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="bounties calc crowdfunding exchange home localmonero qrcode reddit revuo tickers xmrig"
+IUSE="bounties calc crowdfunding home qrcode revuo tickers xmrig"
 DEPEND="
 	dev-libs/libsodium:=
 	media-gfx/qrencode:=
@@ -25,10 +26,10 @@ DEPEND="
 	~dev-libs/polyseed-1.0.0
 	dev-libs/libzip:=
 	dev-libs/boost:=[nls]
-	>=dev-qt/qtbase-6.5.2:6
-	>=dev-qt/qtsvg-6.5.2:6
-	>=dev-qt/qtmultimedia-6.5.2:6
-	>=dev-qt/qtwebsockets-6.5.2:6
+	>=dev-qt/qtbase-6.7.3:6
+	>=dev-qt/qtsvg-6.7.3:6
+	>=dev-qt/qtmultimedia-6.7.3:6
+	>=dev-qt/qtwebsockets-6.7.3:6
 	dev-libs/libgcrypt:=
 	sys-libs/zlib
 	dev-libs/openssl:=
@@ -67,11 +68,8 @@ src_configure() {
 		-DWITH_PLUGIN_TICKERS=$(usex tickers)
 		-DWITH_PLUGIN_CROWDFUNDING=$(usex crowdfunding)
 		-DWITH_PLUGIN_BOUNTIES=$(usex bounties)
-		-DWITH_PLUGIN_REDDIT=$(usex reddit)
 		-DWITH_PLUGIN_REVUO=$(usex revuo)
 		-DWITH_PLUGIN_CALC=$(usex calc)
-		-DWITH_PLUGIN_EXCHANGE=$(usex exchange)
-		-DWITH_PLUGIN_LOCALMONERO=$(usex localmonero)
 		-DWITH_PLUGIN_XMRIG=$(usex xmrig)
 		-DCHECK_UPDATES=OFF
 		-DPLATFORM_INSTALLER=OFF
@@ -103,4 +101,8 @@ pkg_postinst() {
 
 	einfo "Ensure that Tor is running with 'rc-service tor start' before"
 	einfo "using Feather."
+	einfo ""
+	einfo "Donation popup has been disabled in this build."
+	einfo "Consider donating to upstream developers here:"
+	einfo "https://docs.featherwallet.org/guides/donate"
 }

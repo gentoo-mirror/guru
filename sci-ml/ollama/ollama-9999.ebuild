@@ -3,6 +3,7 @@
 
 EAPI=8
 
+# supports ROCM/HIP >=5.5, but we define 6.1 due to the eclass
 ROCM_VERSION=6.1
 inherit cuda rocm
 inherit cmake
@@ -15,6 +16,10 @@ if [[ ${PV} == *9999* ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/ollama/ollama.git"
 else
+	SRC_URI="
+		https://github.com/ollama/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.gh.tar.gz
+		https://github.com/negril/gentoo-overlay-vendored/raw/refs/heads/blobs/${P}-vendor.tar.xz
+	"
 	KEYWORDS="~amd64"
 fi
 
@@ -34,7 +39,7 @@ X86_CPU_FLAGS=(
 	amx_tile
 	amx_int8
 )
-CPU_FLAGS=("${X86_CPU_FLAGS[@]/#/cpu_flags_x86_}")
+CPU_FLAGS=( "${X86_CPU_FLAGS[@]/#/cpu_flags_x86_}" )
 IUSE="${CPU_FLAGS[*]} cuda blas mkl rocm"
 # IUSE+=" opencl vulkan"
 
@@ -51,7 +56,7 @@ COMMON_DEPEND="
 		)
 	)
 	rocm? (
-		>=sci-libs/hipBLAS-${ROCM_VERSION}:=[${ROCM_USEDEP}]
+		>=sci-libs/hipBLAS-5.5:=[${ROCM_USEDEP}]
 	)
 "
 
@@ -63,8 +68,12 @@ DEPEND="
 RDEPEND="
 	${COMMON_DEPEND}
 	acct-group/${PN}
-	acct-user/${PN}
+	acct-user/${PN}[cuda?]
 "
+
+PATCHES=(
+	"${FILESDIR}/${PN}-0.6.3-use-GNUInstallDirs.patch"
+)
 
 src_unpack() {
 	if [[ "${PV}" == *9999* ]]; then
@@ -78,7 +87,11 @@ src_unpack() {
 src_prepare() {
 	cmake_src_prepare
 
-	sed -e "/set(GGML_CCACHE/s/ON/OFF/g" -i CMakeLists.txt || die
+	sed \
+		-e "/set(GGML_CCACHE/s/ON/OFF/g" \
+		-e "/PRE_INCLUDE_REGEXES.*cu/d" \
+		-e "/PRE_INCLUDE_REGEXES.*hip/d" \
+		-i CMakeLists.txt || die sed
 
 	if use amd64; then
 		if ! use cpu_flags_x86_avx; then
@@ -87,58 +100,53 @@ src_prepare() {
 		fi
 		if
 			! use cpu_flags_x86_avx ||
-				! use cpu_flags_x86_f16c ||
-				! use cpu_flags_x86_avx2 ||
-				! use cpu_flags_x86_fma3
-		then
+			! use cpu_flags_x86_f16c ||
+			! use cpu_flags_x86_avx2 ||
+			! use cpu_flags_x86_fma3; then
 			sed -e "/ggml_add_cpu_backend_variant(haswell/s/^/# /g" -i ml/backend/ggml/ggml/src/CMakeLists.txt || die
 			# AVX F16C AVX2 FMA)
 		fi
 		if
 			! use cpu_flags_x86_avx ||
-				! use cpu_flags_x86_f16c ||
-				! use cpu_flags_x86_avx2 ||
-				! use cpu_flags_x86_fma3 ||
-				! use cpu_flags_x86_avx512f
-		then
-			sed -e "/ggml_add_cpu_backend_variant(skylakex/s/^/# /g" -i ml/backend/ggml/ggml/src/CMakeLists.txt || die
+			! use cpu_flags_x86_f16c ||
+			! use cpu_flags_x86_avx2 ||
+			! use cpu_flags_x86_fma3 ||
+			! use cpu_flags_x86_avx512f; then
+			sed -e "/ggml_add_cpu_backend_variant(skylakex/s/^/# /g" -i ml/backend/ggml/ggml/src/CMakeLists.txt ||  die
 			# AVX F16C AVX2 FMA AVX512)
 		fi
 		if
 			! use cpu_flags_x86_avx ||
-				! use cpu_flags_x86_f16c ||
-				! use cpu_flags_x86_avx2 ||
-				! use cpu_flags_x86_fma3 ||
-				! use cpu_flags_x86_avx512f ||
-				! use cpu_flags_x86_avx512vbmi ||
-				! use cpu_flags_x86_avx512_vnni
-		then
+			! use cpu_flags_x86_f16c ||
+			! use cpu_flags_x86_avx2 ||
+			! use cpu_flags_x86_fma3 ||
+			! use cpu_flags_x86_avx512f ||
+			! use cpu_flags_x86_avx512vbmi ||
+			! use cpu_flags_x86_avx512_vnni; then
 			sed -e "/ggml_add_cpu_backend_variant(icelake/s/^/# /g" -i ml/backend/ggml/ggml/src/CMakeLists.txt || die
 			# AVX F16C AVX2 FMA AVX512 AVX512_VBMI AVX512_VNNI)
 		fi
 		if
 			! use cpu_flags_x86_avx ||
-				! use cpu_flags_x86_f16c ||
-				! use cpu_flags_x86_avx2 ||
-				! use cpu_flags_x86_fma3 ||
-				! use cpu_flags_x86_avx_vnni
-		then
+			! use cpu_flags_x86_f16c ||
+			! use cpu_flags_x86_avx2 ||
+			! use cpu_flags_x86_fma3 ||
+			! use cpu_flags_x86_avx_vnni; then
 			sed -e "/ggml_add_cpu_backend_variant(alderlake/s/^/# /g" -i ml/backend/ggml/ggml/src/CMakeLists.txt || die
 			# AVX F16C AVX2 FMA AVX_VNNI)
 		fi
 
 		if
 			! use cpu_flags_x86_avx ||
-				! use cpu_flags_x86_f16c ||
-				! use cpu_flags_x86_avx2 ||
-				! use cpu_flags_x86_fma3 ||
-				! use cpu_flags_x86_avx512f ||
-				! use cpu_flags_x86_avx512vbmi ||
-				! use cpu_flags_x86_avx512_vnni ||
-				! use cpu_flags_x86_avx512_bf16 ||
-				! use cpu_flags_x86_amx_tile ||
-				! use cpu_flags_x86_amx_int8
-		then
+			! use cpu_flags_x86_f16c ||
+			! use cpu_flags_x86_avx2 ||
+			! use cpu_flags_x86_fma3 ||
+			! use cpu_flags_x86_avx512f ||
+			! use cpu_flags_x86_avx512vbmi ||
+			! use cpu_flags_x86_avx512_vnni ||
+			! use cpu_flags_x86_avx512_bf16 ||
+			! use cpu_flags_x86_amx_tile ||
+			! use cpu_flags_x86_amx_int8 ; then
 			sed -e "/ggml_add_cpu_backend_variant(sapphirerapids/s/^/# /g" -i ml/backend/ggml/ggml/src/CMakeLists.txt || die
 			#AVX F16C AVX2 FMA AVX512 AVX512_VBMI AVX512_VNNI AVX512_BF16 AMX_TILE AMX_INT8)
 		fi
@@ -164,6 +172,7 @@ src_configure() {
 	local mycmakeargs=(
 		-DGGML_CCACHE="no"
 
+		# -DGGML_CPU="yes"
 		-DGGML_BLAS="$(usex blas)"
 		# -DGGML_CUDA="$(usex cuda)"
 		# -DGGML_HIP="$(usex rocm)"
@@ -206,8 +215,10 @@ src_configure() {
 		mycmakeargs+=(
 			-DCMAKE_HIP_PLATFORM="amd"
 		)
-		local -x HIP_ARCHS=$(get_amdgpu_flags)
-		local -x HIP_PATH="/usr"
+
+		local -x HIP_ARCHS HIP_PATH
+		HIP_ARCHS="$(get_amdgpu_flags)"
+		HIP_PATH="${ESYSROOT}/usr"
 
 		check_amdgpu
 	else
@@ -266,24 +277,24 @@ src_install() {
 
 	cmake_src_install
 
-	if use cuda; then
-		# remove the copied cuda files...
-		rm "${ED}/usr/lib/ollama"/cuda_*/libcu*.so* || die
-	fi
+	newinitd "${FILESDIR}/ollama.init" "${PN}"
+	newconfd "${FILESDIR}/ollama.confd" "${PN}"
 
-	doinitd "${FILESDIR}"/ollama.init
-	systemd_dounit "${FILESDIR}"/ollama.service
+	systemd_dounit "${FILESDIR}/ollama.service"
 }
 
 pkg_preinst() {
 	keepdir /var/log/ollama
-	# fowners ollama:ollama /var/log/ollama
-	fperms 777 /var/log/ollama
+	fperms 750 /var/log/ollama
+	fowners "${PN}:${PN}" /var/log/ollama
 }
 
 pkg_postinst() {
-	einfo "Quick guide:"
-	einfo "ollama serve"
-	einfo "ollama run llama3:70b"
-	einfo "See available models at https://ollama.com/library"
+	if [[ -z ${REPLACING_VERSIONS} ]] ; then
+		einfo "Quick guide:"
+		einfo "\tollama serve"
+		einfo "\tollama run llama3:70b"
+		einfo
+		einfo "See available models at https://ollama.com/library"
+	fi
 }
