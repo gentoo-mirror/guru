@@ -80,9 +80,6 @@ app-misc/far2l:wxwidgets - GUI backend support
 app-misc/kanata:cmd - Enable potentially dangerous "cmd" action to be able run arbitrary commands.
 app-misc/kloak:apparmor - Install AppArmor profile
 app-misc/kloak:systemd - Install systemd service file
-app-misc/ollama:cuda - Enable NVIDIA CUDA support
-app-misc/ollama:mkl - Use sci-libs/mkl for blas, lapack and sparse blas routines
-app-misc/ollama:rocm - Enable ROCm gpu computing support
 app-misc/tinyfetch:pci - Enables the use of pciutils to detect GPU names
 app-misc/wlx-overlay-s:openvr - Support Valve's SteamVR SDK.
 app-misc/wlx-overlay-s:openxr - Support Khronos Group's OpenXR API.
@@ -590,11 +587,8 @@ net-p2p/dogecoin-qt:zmq - Enables ZeroMQ notifications
 net-p2p/feather:bounties - Enable bounties page plugin
 net-p2p/feather:calc - Enable price calculator page plugin
 net-p2p/feather:crowdfunding - Enable crowdfunding page plugin
-net-p2p/feather:exchange - Enable exchange plugin
 net-p2p/feather:home - Enable home page plugin
-net-p2p/feather:localmonero - Enable LocalMonero.com support
 net-p2p/feather:qrcode - Enable QR code scanning with media-gfx/zbar
-net-p2p/feather:reddit - Enable reddit.com page plugin
 net-p2p/feather:revuo - Enable revuo plugin
 net-p2p/feather:tickers - Enable price tickers plugin
 net-p2p/feather:xmrig - Enable mining support using a user specified xmrig binary
@@ -664,6 +658,9 @@ sci-mathematics/frama-c-aorai:eva - Build support for the Eva plugin
 sci-misc/llama-cpp:blis - Build a BLIS backend
 sci-misc/llama-cpp:hip - Build a HIP (ROCm) backend
 sci-misc/llama-cpp:openblas - Build an OpenBLAS backend
+sci-ml/ollama:cuda - Enable NVIDIA CUDA support
+sci-ml/ollama:mkl - Use sci-libs/mkl for blas, lapack and sparse blas routines
+sci-ml/ollama:rocm - Enable ROCm gpu computing support
 sys-apps/bustd:glob - Enable excluding processes with glob patterns
 sys-apps/dnf5:appstream - Build an appstream metadata plugin
 sys-apps/drm_info:pci - Print PCI device names via libpci
