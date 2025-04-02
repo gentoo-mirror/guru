@@ -8,13 +8,15 @@ inherit toolchain-funcs verify-sig
 MY_P="openssh-${PV/_p/p}"
 DESCRIPTION="GTK-based passphrase dialog for use with OpenSSH"
 HOMEPAGE="https://www.openssh.com/"
-SRC_URI="mirror://openbsd/OpenSSH/portable/${MY_P}.tar.gz
+SRC_URI="
+	mirror://openbsd/OpenSSH/portable/${MY_P}.tar.gz
 	verify-sig? ( mirror://openbsd/OpenSSH/portable/${MY_P}.tar.gz.asc )
 "
 S="${WORKDIR}/${MY_P}/contrib"
 
 LICENSE="BSD GPL-2"
 SLOT="0"
+KEYWORDS="~amd64"
 RESTRICT="test"
 
 RDEPEND="

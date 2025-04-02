@@ -7,47 +7,48 @@
 --- a/swift/utils/test-prefix-map/Makefile
 +++ b/swift/utils/test-prefix-map/Makefile
 @@ -11,7 +11,7 @@ CXXFLAGS = -std=c++11 \
-           -I$(objroot)/tools/clang/include \
-           -D__STDC_LIMIT_MACROS -D__STDC_CONSTANT_MACROS
-
+       -I$(objroot)/tools/clang/include \
+       -D__STDC_LIMIT_MACROS -D__STDC_CONSTANT_MACROS
+ 
 -LDFLAGS = -L$(objroot)/lib -lswiftBasic -lLLVMSupport -lcurses
 +LDFLAGS = -L$(objroot)/lib -lswiftBasic -lLLVMSupport -lncurses -ltinfo
-
+ 
  main: main.cpp $(srcroot)/tools/swift/include/swift/Basic/PrefixMap.h
-        $(CXX) $(CXXFLAGS) $(LDFLAGS) -o main main.cpp
+    $(CXX) $(CXXFLAGS) $(LDFLAGS) -o main main.cpp
 --- a/swift/utils/test-successor-map/Makefile
 +++ b/swift/utils/test-successor-map/Makefile
 @@ -11,7 +11,7 @@ CXXFLAGS = -std=c++11 \
-           -I$(objroot)/tools/clang/include \
-           -D__STDC_LIMIT_MACROS -D__STDC_CONSTANT_MACROS
-
+       -I$(objroot)/tools/clang/include \
+       -D__STDC_LIMIT_MACROS -D__STDC_CONSTANT_MACROS
+ 
 -LDFLAGS = -L$(objroot)/Debug+Asserts/lib -lLLVMSupport -lcurses
 +LDFLAGS = -L$(objroot)/Debug+Asserts/lib -lLLVMSupport -lncurses -ltinfo
-
+ 
  main: main.cpp $(srcroot)/tools/swift/include/swift/Basic/SuccessorMap.h
-        $(CXX) $(CXXFLAGS) $(LDFLAGS) -o main main.cpp
+    $(CXX) $(CXXFLAGS) $(LDFLAGS) -o main main.cpp
 --- a/llbuild/Package.swift
 +++ b/llbuild/Package.swift
-@@ -227,7 +227,8 @@ let package = Package(
-             path: "lib/llvm/Support",
-             linkerSettings: [
-                 .linkedLibrary("m", .when(platforms: [.linux])),
--                .linkedLibrary("ncurses", .when(platforms: [.linux, .macOS, .android]))]
-+                .linkedLibrary("ncurses", .when(platforms: [.linux, .macOS, .android])),
-+                .linkedLibrary("tinfo", .when(platforms: [.linux]))]
-         ),
-     ],
-     cxxLanguageStandard: .cxx14
+@@ -28,7 +28,10 @@ let terminfoLibraries: [LinkerSetting] = {
+     if !useTerminfo {
+         return []
+     }
+-    return [.linkedLibrary("ncurses", .when(platforms: [.linux, .macOS]))]
++    return [
++        .linkedLibrary("ncurses", .when(platforms: [.linux, .macOS])),
++        .linkedLibrary("tinfo", .when(platforms: [.linux])),
++    ]
+ }()
+ 
+ let package = Package(
 --- a/llbuild/lib/llvm/Support/CMakeLists.txt
 +++ b/llbuild/lib/llvm/Support/CMakeLists.txt
-@@ -64,6 +64,4 @@ if(${CMAKE_SYSTEM_NAME} MATCHES "FreeBSD")
-     execinfo)
+@@ -65,5 +65,5 @@ if(${CMAKE_SYSTEM_NAME} MATCHES "FreeBSD")
  endif()
  
--if(${CMAKE_SYSTEM_NAME} MATCHES "Android|Darwin|Linux")
+ if(${CMAKE_SYSTEM_NAME} MATCHES "Android|Darwin|Linux")
 -  target_link_libraries(llvmSupport PRIVATE curses)
--endif()
-+target_link_libraries(llvmSupport PRIVATE ncurses tinfo)
++  target_link_libraries(llvmSupport PRIVATE ncurses tinfo)
+ endif()
 --- a/llbuild/perftests/Xcode/PerfTests/CMakeLists.txt
 +++ b/llbuild/perftests/Xcode/PerfTests/CMakeLists.txt
 @@ -33,7 +33,8 @@ target_link_libraries(XcodePerfTests PRIVATE
@@ -138,32 +139,12 @@
 -    curses)
 +    ncurses tinfo)
  endif()
---- a/llbuild/unittests/CAS/CMakeLists.txt
-+++ b/llbuild/unittests/CAS/CMakeLists.txt
-@@ -8,6 +8,6 @@ target_link_libraries(CASTests PRIVATE
- 
- if(NOT ${CMAKE_SYSTEM_NAME} STREQUAL "Windows")
-   target_link_libraries(CASTests PRIVATE
--    curses)
-+    ncurses tinfo)
- endif()
- 
 --- a/llbuild/unittests/Core/CMakeLists.txt
 +++ b/llbuild/unittests/Core/CMakeLists.txt
 @@ -15,6 +15,6 @@ target_link_libraries(CoreTests PRIVATE
  
  if(NOT ${CMAKE_SYSTEM_NAME} STREQUAL "Windows")
    target_link_libraries(CoreTests PRIVATE
--    curses)
-+    ncurses tinfo)
- endif()
- 
---- a/llbuild/unittests/Evo/CMakeLists.txt
-+++ b/llbuild/unittests/Evo/CMakeLists.txt
-@@ -11,6 +11,6 @@ target_link_libraries(EvoTests PRIVATE
- 
- if(NOT ${CMAKE_SYSTEM_NAME} STREQUAL "Windows")
-   target_link_libraries(EvoTests PRIVATE
 -    curses)
 +    ncurses tinfo)
  endif()
