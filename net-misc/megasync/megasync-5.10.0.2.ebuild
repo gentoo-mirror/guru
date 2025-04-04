@@ -11,8 +11,8 @@ HOMEPAGE="
 	https://github.com/meganz/MEGAsync
 "
 
-MEGA_SDK_REV="ddaaf5e587055897f3054a52d4a6dc74d52bb732" # commit of src/MEGASync/mega submodule
-MEGA_TAG_SUFFIX="Linux"
+MEGA_SDK_REV="b28f39fd6d98d3d30bb1b6a52dd1941cbc7a4e90" # commit of src/MEGASync/mega submodule
+MEGA_TAG_SUFFIX="Win"
 SRC_URI="
 	https://github.com/meganz/MEGAsync/archive/v${PV}_${MEGA_TAG_SUFFIX}.tar.gz -> ${P}.tar.gz
 	https://github.com/meganz/sdk/archive/${MEGA_SDK_REV}.tar.gz -> ${PN}-sdk-${PV}.tar.gz
@@ -22,7 +22,7 @@ S="${WORKDIR}"/MEGAsync-${PV}_${MEGA_TAG_SUFFIX}
 LICENSE="MEGA"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="mediainfo nautilus nemo thumbnail thunar"
+IUSE="dolphin mediainfo nautilus nemo thumbnail thunar"
 
 DEPEND="
 	dev-db/sqlite:3
@@ -45,6 +45,13 @@ DEPEND="
 	net-misc/curl[ssl]
 	sys-libs/zlib
 	x11-libs/libxcb:=
+	dolphin? (
+		dev-qt/qtbase:6[network,widgets]
+		kde-apps/dolphin:6
+		kde-frameworks/kcoreaddons:6
+		kde-frameworks/kio:6
+		kde-frameworks/kwidgetsaddons:6
+	)
 	mediainfo? (
 		media-libs/libmediainfo
 		media-libs/libzen
@@ -74,6 +81,7 @@ RDEPEND="
 BDEPEND="
 	dev-qt/linguist-tools:5
 	virtual/pkgconfig
+	dolphin? ( kde-frameworks/extra-cmake-modules )
 "
 
 PATCHES=(
@@ -81,10 +89,18 @@ PATCHES=(
 	"${FILESDIR}/${PN}-5.6.0.0-remove-clang-format.patch"
 	"${FILESDIR}/${PN}-5.7.0.0-disable-forced-options.patch"
 	"${FILESDIR}/${PN}-5.7.0.0-fix-install-dir.patch"
-	"${FILESDIR}/${PN}-5.7.0.0-link-zlib.patch"
 	"${FILESDIR}/${PN}-5.7.0.0-rename-libcryptopp.patch"
-	"${FILESDIR}/${PN}-5.8.0.2-clang.patch"
+	"${FILESDIR}/${P}-link-zlib.patch"
 )
+
+BUILD_DIR_DOLPHIN="${S}_dolphin"
+
+dolphin_run() {
+	if use dolphin; then
+		cd "${S}/src/MEGAShellExtDolphin" || die
+		BUILD_DIR="${BUILD_DIR_DOLPHIN}" CMAKE_USE_DIR="${S}/src/MEGAShellExtDolphin" "$@"
+	fi
+}
 
 nemo_run() {
 	if use nemo; then
@@ -115,6 +131,7 @@ src_configure() {
 		# build internal libs as static
 		-DBUILD_SHARED_LIBS=OFF
 		-DCMAKE_MODULE_PATH="${S}/src/MEGASync/mega/cmake/modules/packages"
+		-DENABLE_DESKTOP_APP_TESTS=OFF
 		-DENABLE_DESKTOP_APP_WERROR=OFF
 		-DENABLE_DESKTOP_UPDATE_GEN=OFF
 		-DENABLE_DESIGN_TOKENS_IMPORTER=OFF
@@ -128,7 +145,11 @@ src_configure() {
 	)
 	cmake_src_configure
 
-	unset mycmakeargs
+	mycmakeargs=(
+		-DKF_VER=6
+		-DQt_VER=6
+	)
+	dolphin_run cmake_src_configure
 	nemo_run eqmake5 DEFINES=no_desktop
 	thunar_run eqmake5
 }
@@ -136,6 +157,7 @@ src_configure() {
 src_compile() {
 	cmake_src_compile
 
+	dolphin_run cmake_src_compile
 	nemo_run emake
 	thunar_run emake
 }
@@ -143,6 +165,7 @@ src_compile() {
 src_install() {
 	cmake_src_install
 
+	dolphin_run cmake_src_install
 	nemo_run emake INSTALL_ROOT="${D}" install
 	thunar_run emake INSTALL_ROOT="${D}" install
 }

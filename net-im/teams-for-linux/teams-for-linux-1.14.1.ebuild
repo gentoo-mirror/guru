@@ -54,6 +54,7 @@ RDEPEND="
 "
 
 QA_PREBUILT="opt/teams-for-linux/*"
+QA_DESKTOP_FILE="usr/share/applications/teams-for-linux.desktop"
 
 pkg_pretend() {
 	chromium_suid_sandbox_check_kernel_config
