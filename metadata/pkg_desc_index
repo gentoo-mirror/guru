@@ -87,7 +87,7 @@ app-admin/ananicy-cpp 1.1.1-r3: Ananicy rewritten in C++ for much lower CPU and 
 app-admin/antidot 0.6.3: Cleans up your $HOME from those pesky dotfiles
 app-admin/aws-vault 7.2.0: Securely store and access AWS credentials in development environments
 app-admin/bitwarden-cli 2024.2.0 2024.2.1: CLI frontend client connects to Bitwarden comapatible password manager server
-app-admin/bitwarden-cli-bin 2024.4.0 2024.6.0 2025.2.0: Precompiled CLI frontend which connects to Bitwarden comapatible servers
+app-admin/bitwarden-cli-bin 2024.6.0 2025.2.0 2025.3.0: Precompiled CLI frontend which connects to Bitwarden comapatible servers
 app-admin/blahajdots 0.5.0 9999: Bespoke dotfile management for sharkgirls.
 app-admin/boinctui 2.7.1 2.7.1-r1: Fullscreen text mode manager for the BOINC client
 app-admin/chamber 2.13.2: Managing secrets in AWS SSM Parameter Store
@@ -116,7 +116,7 @@ app-admin/synadm 0.43.1 0.44: Command line admin tool for Synapse
 app-admin/talosctl-bin 1.7.6 1.9.2: Pre-compiled talosctl is an tool for interacting with the Talos API
 app-admin/terragrunt-bin 0.38.6 0.45.4 0.50.8: A thin wrapper for Terraform
 app-admin/tflint 0.55.1: Terraform linter
-app-admin/vaultwarden 1.32.5 1.32.7 1.33.2 9999: Unofficial Bitwarden compatible password manager server written in Rust
+app-admin/vaultwarden 1.33.2 9999: Unofficial Bitwarden compatible password manager server written in Rust
 app-alternatives/phosh-keyboard 0: sm.puri.OSK0.desktop symlinks
 app-arch/fuse-archive 0.1.14 1.6 1.10 1.12: Read-only FUSE file system for mounting archives and compressed files
 app-arch/libarchive-qt 2.0.8: Qt based archiving solution with libarchive backend
@@ -158,7 +158,7 @@ app-crypt/ifcplugin-bin 3.1.1.0: Crypto Interface Web Browser Plugin
 app-crypt/intel-ipsec-mb 1.1 1.2 1.3 1.5 9999: Multi-Buffer Crypto for IPSec from Intel
 app-crypt/keepass-diff 1.1.3-r1: A CLI tool to diff Keepass (.kdbx) files
 app-crypt/lego 4.16.1 4.17.4 4.22.2 9999: Let's Encrypt/ACME client (like certbot or acme.sh) and library written in Go
-app-crypt/pinentry-bemenu 0.13.2: Pinentry based on bemenu
+app-crypt/pinentry-bemenu 0.13.2 0.14.0: Pinentry based on bemenu
 app-crypt/reop 2.1.1-r1: reasonable expectation of privacy
 app-crypt/sac-core 10.8.1050-r1: Thales/Gemalto SafeNet Authentication Client
 app-crypt/sops 3.9.2 3.9.4: Simple And Flexible Tool For Managing Secrets
@@ -185,7 +185,7 @@ app-editors/lapce 0.4.2-r1 9999: Lightning-fast and Powerful Code Editor written
 app-editors/mined 2015.25: A powerful text editor with extensive Unicode and CJK support
 app-editors/neovide 0.12.2: Neovide: No Nonsense Neovim Gui
 app-editors/neovim-qt 0.2.19: Neovim client library and GUI, in Qt
-app-editors/notepadnext 0.8_p20240828 0.9 0.9_p20241128: A cross-platform reimplementation of Notepad++ based on Qt
+app-editors/notepadnext 0.9 0.9_p20241128 0.11: A cross-platform reimplementation of Notepad++ based on Qt
 app-editors/pulsar-bin 1.126.0 1.127.0 1.127.1: A Community-led Hyper-Hackable Text Editor
 app-editors/typora-bin 1.10.8: a markdown editor,markdown reader.
 app-emacs/catppuccin-emacs 9999: Soothing pastel theme for Emacs
@@ -265,7 +265,7 @@ app-misc/minder 1.16.2 1.16.3: Mind-mapping application for Elementary OS.
 app-misc/mirafetch 0.1.0 9999: A Rust reimplementation of Hyfetch wih a focus on speed
 app-misc/mobile-datovka 1.10.0: Mobile optimized GUI to access the Czech data box e-government system
 app-misc/morgen 3.6.10: Morgen simplifies time management by consolidating all your calendars.
-app-misc/mymefetch 1.2: MymeType's own neofetch-like Bash script
+app-misc/mymefetch 1.3: MymeType's own neofetch-like Bash script
 app-misc/navi 2.23.0: An interactive cheatsheet tool for the command-line
 app-misc/neo 0.6.1 9999: cmatrix clone with 32-bit color and Unicode support
 app-misc/nerdfetch 8.3.1: A POSIX *nix fetch script using Nerdfonts
@@ -364,6 +364,7 @@ app-text/sioyek 9999: Sioyek is a PDF viewer with a focus on textbooks and resea
 app-text/smu 1.5 9999: Simple markup - markdown like syntax
 app-text/texlab 5.22.1: LaTeX Language Server
 app-text/the-platinum-searcher-bin 2.2.0: Fast CLI search tool, faster than grep, ack, silver_searcher (ag)
+app-text/tinymist 9999: Fast lsp implementation for typst.
 app-text/tldr 3.2.0 3.3.0: Python command line client for tldr pages
 app-text/typst 0.13.1 9999: A markup-based typesetting system for the sciences
 app-text/typstyle 0.12.12: A beautiful and reliable code formatter for Typst
@@ -697,6 +698,7 @@ dev-python/dropbox 11.36.2 12.0.2: The offical Dropbox SDK for Python
 dev-python/dtreeviz 2.2.2: A python library for decision tree visualization and model interpretation
 dev-python/evernote2 1.0.3 9999: Unofficial Evernote SDK for Python 3
 dev-python/exif 1.6.0: Read and modify image EXIF metadata using Python.
+dev-python/find-libpython 0.4.0: Finds the libpython associated with the current Python environment
 dev-python/flask-restx 1.3.0: Framework API development with Flask
 dev-python/flask-socketio 5.5.1: Socket.IO integration for Flask applications.
 dev-python/fontawesomefree 6.5.1: Font Awesome Free
@@ -1086,7 +1088,7 @@ games-util/samrewritten 9999 202008: Steam Achievement Manager For Linux
 games-util/sdl2-gamepad-mapper 0.0.8-r1: GUI application to generate an SDL2 mapping string from a generic controller
 games-util/steamtinkerlaunch 12.12 9999: Wrapper script for Steam custom launch options
 games-util/umu-launcher 1.2.6: Unified launcher for Windows games on Linux
-games-util/xivlauncher 1.1.1: Custom Launcher for Final Fantasy XIV Online (Crossplatform rewrite)
+games-util/xivlauncher 1.1.2: Custom Launcher for Final Fantasy XIV Online (Crossplatform rewrite)
 games-util/xone 0.3_p20240425: Linux kernel driver for Xbox One and Xbox Series X|S accessories
 gnome-extra/commit 4.1-r1 4.2: Commit message editor
 gnome-extra/extension-manager 0.5.1 0.6.1 9999: A native tool for browsing, installing, and managing GNOME Shell Extensions
@@ -1100,7 +1102,7 @@ gui-apps/1password 8.10.28 8.10.48-r1: The world’s most-loved password manager
 gui-apps/ReGreet 0.1.1-r10 9999: A clean and customizable GTK-based greetd greeter written in Rust
 gui-apps/ashell 0.3.0 0.3.1: A ready to go Wayland status bar for Hyprland
 gui-apps/aylurs-gtk-shell 1.8.2-r1: Aylurs's Gtk Shell (AGS), An eww inspired gtk widget system.
-gui-apps/azote 1.14.2 9999: wallpaper manager for wlroots compositors
+gui-apps/azote 1.15.0 9999: wallpaper manager for wlroots compositors
 gui-apps/clipman 1.6.2 1.6.3 1.6.4: A basic clipboard manager for Wayland.
 gui-apps/contour 0.6.1.7494: Modern C++ Terminal Emulator
 gui-apps/coreaction 4.5.0 5.0.0: A side bar for showing widgets for C Suite
@@ -1145,7 +1147,7 @@ gui-apps/hyprswitch 1.3.1: A CLI/GUI that allows switching between windows in Hy
 gui-apps/hyprsysteminfo 0.1.3: Hyprland's system information GUI application
 gui-apps/intiface-central-bin 2.6.0 2.6.4: Buttplug frontend application
 gui-apps/ironbar 0.16.0-r1 0.16.1 0.16.1-r1: Customisable Wayland gtk bar written in Rust
-gui-apps/koi 0.3.1: Theme scheduling for the KDE Plasma Desktop
+gui-apps/koi 0.3.1 0.4: Theme scheduling for the KDE Plasma Desktop
 gui-apps/lan-mouse 0.7.3-r1: Software KVM Switch / mouse & keyboard sharing software for Local Area Networks
 gui-apps/lemurs 0.3.2: A TUI Display/Login Manager
 gui-apps/lswt 1.0.4-r1 2.0.0 9999: List Wayland toplevels
@@ -1235,7 +1237,7 @@ gui-wm/swayfx 0.4-r2 0.5: SwayFX: Sway, but with eye candy!
 kde-apps/kwalletcli 3.03: CLI for the KDE Wallet
 kde-misc/geminipart 20241121 20241215: KPart for viewing text/gemini files
 kde-misc/kio-gemini 20240801 20241109: Gemini KIO worker
-mail-client/betterbird-bin 128.8.0: Betterbird is a fine-tuned version of Mozilla Thunderbird.
+mail-client/betterbird-bin 128.9.0: Betterbird is a fine-tuned version of Mozilla Thunderbird.
 mail-client/mailspring-bin 1.13.3: A beautiful, fast and fully open source mail client for Mac, Windows and Linux
 mail-client/proton-mail-bin 1.0.6: Beta Client for Proton Mail
 mail-filter/postfix-mta-sts-resolver 1.4.0: Daemon which provides TLS client policy for Postfix via socketmap
@@ -1257,7 +1259,7 @@ media-fonts/moralerspace 1.1.0: moralerspace is a composite font of Monaspace an
 media-fonts/nerdfonts 3.2.1 3.3.0: Iconic font aggregator, collection, & patcher. 3,600+ icons, 50+ patched fonts: Hack, Source Code Pro, more. Glyph collections: Font Awesome, Material Design Icons, Octicons, & more
 media-fonts/overpass 3.0.4: An open source webfont family inspired by Highway Gothic
 media-fonts/piazzolla 2.005: Piazzolla font family
-media-fonts/plemoljp 2.0.3: PlemolJP is a composite font of IBM Plex Mono and IBM Plex Sans JP.
+media-fonts/plemoljp 2.0.4: PlemolJP is a composite font of IBM Plex Mono and IBM Plex Sans JP.
 media-fonts/source-han-mono 1.002: Pan-CJK OpenType/CFF mono font family
 media-fonts/source-han-serif 2.002 2.003: Pan-CJK OpenType/CFF font family
 media-fonts/ttf-ancient-fonts 2.60: Unicode font for Latin, IPA Extensions, Greek, Cyrillic and many Symbol Blocks
@@ -1344,6 +1346,7 @@ media-sound/gapless 4.3.1: A GTK4 music player
 media-sound/jacktrip 1.7.1-r1 2.4.0: Send JACK audio over a network
 media-sound/jriver 31.0.83: A cross-platform media center, famous for high quality of audio.
 media-sound/kew 2.4.4-r1: kew (/kjuː/) is a command-line music player for Linux.
+media-sound/listenbrainz-mpd 2.3.8: ListenBrainz submission client for MPD
 media-sound/lms 3.64.0-r1 3.65.0: Lightweight Music Server.
 media-sound/loudgain 0.6.8-r1 0.6.8_p20240128 0.6.8_p20240128-r2: Versatile ReplayGain 2.0 loudness normalizer
 media-sound/mopidy 3.4.2: An extensible music server written in Python.
@@ -1363,6 +1366,7 @@ media-sound/plexamp 4.11.5: A dedicated music player for your Plex media library
 media-sound/pulseaudio-virtualmic 0.1 9999: Use any offline or online media file or stream as a PulseAudio source
 media-sound/qloud 1.4.2: Tool to measure loudspeaker frequency and step responses and distortions
 media-sound/rsgain 3.5.1 3.5.3: Really Simple replay Gain calculator for tagging audio files
+media-sound/spct 1.1.1: A CLI program to play back or render SPC files.
 media-sound/spot 0.4.0-r2: GTK4 Spotify (Premium) client
 media-sound/spotify-adblock 1.0.1 1.0.2 1.0.3: Adblocker for Spotify
 media-sound/spotify-player 0.19.1 0.20.4 9999: spotify_player is a fast, easy to use, and configurable terminal music player.
@@ -1439,7 +1443,7 @@ net-im/axolotl-bin 2.0.1: Axolotl is a cross-platform Signal client
 net-im/beeper 3.109.1 3.110.1 4.0.570: Beeper: Unified Messenger
 net-im/chatterino 2.5.2-r1: Chat client for https://twitch.tv
 net-im/conduit 0.8.0-r1 0.9.0-r1 9999: Matrix homeserver written in Rust
-net-im/discord-canary-bin 0.0.621: All-in-one voice and text chat
+net-im/discord-canary-bin 0.0.623: All-in-one voice and text chat
 net-im/discord-ptb-bin 0.0.97: All-in-one voice and text chat
 net-im/eturnal 1.12.0-r1 1.12.1: STUN/TURN server
 net-im/flare 0.12.0-r1: Chat with your friends on Signal
@@ -1465,7 +1469,7 @@ net-im/pop 8.0.21: Screen sharing with multiplayer control, with voice
 net-im/revolt-desktop 1.0.8-r2: Revolt Desktop App
 net-im/session-desktop-bin 1.10.8: Session Desktop - Onion routing based messenger
 net-im/sliding-sync 0.99.15 0.99.19: Proxy implementation of MSC3575's sync protocol.
-net-im/teams-for-linux 1.12.7 1.13.1 1.13.2: Unofficial Microsoft Teams client for Linux. Binary precompiled version.
+net-im/teams-for-linux 1.13.2 1.14.1: Unofficial Microsoft Teams client for Linux. Binary precompiled version.
 net-im/vesktop-bin 1.5.4 1.5.5: All-in-one voice and text chat for gamers with Vencord Preinstalled
 net-im/zulip-desktop-bin 5.11.1 5.12.0: Organized chat for distributed teams.
 net-irc/catgirl 2.2 2.2a: TLS-only terminal IRC client
@@ -1522,7 +1526,7 @@ net-misc/maestral 1.9.3-r1 1.9.4: Maestral is an open-source Dropbox client writ
 net-misc/maestral-qt 1.9.3 1.9.4: Maestral is an open-source Dropbox client written in Python
 net-misc/mastorss 0.13.1 0.13.1-r1 9999: Another RSS to Mastodon bot
 net-misc/mbpoll 1.5.2 9999: command line utility to communicate with ModBus slave (RTU or TCP)
-net-misc/megasync 5.8.0.2 5.9.0.3: The official Qt-based program for syncing your MEGA account in your PC
+net-misc/megasync 5.9.0.3 5.10.0.2: The official Qt-based program for syncing your MEGA account in your PC
 net-misc/myip 1.2.1: Get your external IP address using STUN server
 net-misc/ooni-probe-cli 3.23.0 3.24.0: OONI Probe network measurement tool for detecting internet censorship
 net-misc/openbgpd 8.4 8.5 8.6 9999: OpenBGPD is a free implementation of BGPv4
@@ -1602,6 +1606,7 @@ sci-chemistry/xcrysden 1.6.2-r2: For the visualisation of molecular and crystal 
 sci-electronics/bender 0.28.1-r1: A dependency management tool for hardware projects
 sci-electronics/bluespec 2022.01-r1 2023.01 2023.07 2024.01 2024.07 2025.01.1 9999: Toolchain for the Bluespec Hardware Definition Language
 sci-electronics/circt 1.37.0 1.76.0 1.110.0: The fast free Verilog/SystemVerilog simulator
+sci-electronics/cocotb 1.9.2: Python-based chip (RTL) verification
 sci-electronics/coil64 2.1.27: Coil64 is inductance coil calculator
 sci-electronics/dsview 1.3.0 1.3.2 9999: An open source multi-function instrument
 sci-electronics/kactus2 3.13.3 9999: A open source IP-XACT-based tool
@@ -1772,14 +1777,14 @@ www-apps/laminar 1.3-r1: Fast and lightweight Continuous Integration
 www-apps/libmedium 2024.06.10: Alternative private front-end to Medium
 www-apps/mycorrhiza 1.15.1 9999: Git-based wiki engine written in Go using mycomarkup
 www-apps/pleroma 2.9.1 9999: ActivityPub social networking software compatible with other Fediverse software
-www-apps/pleroma-fe 2.7.0 9999: Main frontend for www-apps/pleroma, inspired by qvitter
+www-apps/pleroma-fe 2.7.0 2.8.0 9999: Main frontend for www-apps/pleroma, inspired by qvitter
 www-apps/redlib 0.34.0 0.35.1: Private front-end to Reddit
 www-apps/rimgo 1.2.1: An alternative frontend for Imgur. Originally based on rimgu.
 www-apps/sblg 0.6.1: A utility for creating static blogs
 www-apps/snac 2.25 2.26: A simple, minimalistic ActivityPub instance
 www-apps/uwebsockets 20.14.0 20.62.0 9999: ultra fast, simple, secure & standards compliant web I/O
 www-apps/vaultwarden-web 2024.1.2b 2024.3.0 2024.3.1: Bitwarden web vault patched to make it work with Vaultwarden
-www-apps/vaultwarden-web-bin 2024.3.1 2024.5.0 2025.1.1: Prebuilt Vaultwarden web from upstream
+www-apps/vaultwarden-web-bin 2024.5.0 2025.1.1 2025.3.1: Prebuilt Vaultwarden web from upstream
 www-apps/whoogle-search 0.9.3: A self-hosted, ad-free, privacy-respecting metasearch engine
 www-apps/zola 0.19.2-r1: A fast static site generator with everything built-in
 www-client/badwolf 1.3.0-r1 9999: Minimalist and privacy-oriented WebKitGTK+ browser
@@ -1789,7 +1794,7 @@ www-client/mullvad-browser-bin 14.0.9: The Mullvad Browser is developed to minim
 www-client/nyxt 3.11.8 3.12.0 9999: Nyxt - the hacker's power-browser
 www-client/vimb 3.6.0 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
 www-client/yandex-browser 25.2.1.939_p1: The web browser from Yandex
-www-client/zen-bin 1.7.2b 1.9b: Zen Browser - A Firefox-based browser focused on privacy
+www-client/zen-bin 1.9b 1.10.3b: Zen Browser - A Firefox-based browser focused on privacy
 www-misc/dufs 0.40.0: Dufs is a distinctive utility file server
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits
 www-misc/gorss 0.3: Go Terminal Feed Reader
