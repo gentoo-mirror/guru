@@ -11,7 +11,7 @@ HOMEPAGE="
 	https://github.com/meganz/MEGAsync
 "
 
-MEGA_SDK_REV="b28f39fd6d98d3d30bb1b6a52dd1941cbc7a4e90" # commit of src/MEGASync/mega submodule
+MEGA_SDK_REV="b53514e72d569be8993cbe4b2c991da0ded08b78" # commit of src/MEGASync/mega submodule
 MEGA_TAG_SUFFIX="Win"
 SRC_URI="
 	https://github.com/meganz/MEGAsync/archive/v${PV}_${MEGA_TAG_SUFFIX}.tar.gz -> ${P}.tar.gz
@@ -90,7 +90,7 @@ PATCHES=(
 	"${FILESDIR}/${PN}-5.7.0.0-disable-forced-options.patch"
 	"${FILESDIR}/${PN}-5.7.0.0-fix-install-dir.patch"
 	"${FILESDIR}/${PN}-5.7.0.0-rename-libcryptopp.patch"
-	"${FILESDIR}/${P}-link-zlib.patch"
+	"${FILESDIR}/${PN}-5.10.0.2-link-zlib.patch"
 )
 
 BUILD_DIR_DOLPHIN="${S}_dolphin"
