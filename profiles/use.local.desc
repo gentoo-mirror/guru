@@ -351,6 +351,8 @@ gui-apps/swaylock-effects:fish-completion - Enable fish completion support
 gui-apps/swaylock-effects:gdk-pixbuf - Enable additional image format support via the x11-libs/gdk-pixbuf library
 gui-apps/swaylock-effects:man - Build and install man pages
 gui-apps/swaylock-plugin:gdk-pixbuf - Enable additional image format support via the x11-libs/gdk-pixbuf library
+gui-apps/wl-mirror:examples - Also install wl-present
+gui-apps/wl-mirror:gbm - Enable capturing with libgbm (generally more efficient).
 gui-apps/wlogout:bash-completions - Enable completions for bash shell
 gui-apps/wlogout:fish-completions - Enable completions for fish shell
 gui-apps/wlogout:layershell - Enable transparency
@@ -542,9 +544,6 @@ net-libs/ixwebsocket:ws - Build the ws utility
 net-libs/picotls:fusion - "fusion" AES-GCM engine, optimized for QUIC and other protocols that use short AEAD blocks
 net-libs/sofia-sip:glib - Add support to dev-libs/glib-based mainloop, to allow using Sofia-SIP on glib-based programs.
 net-libs/syndication-domination:json-binary - Builds a binary executable instead of python bindings
-net-libs/td:abseil - Build with dev-cpp/abseil-cpp
-net-libs/td:dotnet - Add support for .NET
-net-libs/td:jumbo-build - Combine source files to speed up build process
 net-libs/ulfius:jansson - Jansson support for JSON
 net-libs/ulfius:websocket - websocket support
 net-libs/usockets:asio - Enable bindings to use the boost asio dispatcher

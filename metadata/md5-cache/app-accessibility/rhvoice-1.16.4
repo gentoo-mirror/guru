@@ -1,0 +1,10 @@
+DEFINED_PHASES=-
+DESCRIPTION=Multilingual text-to-speech engine (metapackage)
+EAPI=8
+HOMEPAGE=https://rhvoice.org https://github.com/RHVoice/RHVoice
+IUSE=redistributable l10n_ru l10n_en
+KEYWORDS=~amd64 ~x86
+LICENSE=metapackage
+RDEPEND=l10n_ru? ( redistributable? ( app-voices/rhvoice-arina ) ) l10n_en? ( redistributable? ( app-voices/rhvoice-bdl app-voices/rhvoice-clb app-voices/rhvoice-slt ) ) >=app-accessibility/rhvoice-core-1.16.4[l10n_ru?,l10n_en?]
+SLOT=0
+_md5_=e69f1a4c88cd2a88e902118c82b0154b
