@@ -157,7 +157,6 @@ app-crypt/gnome-encfs-manager 1.9-r2: An easy to use manager and mounter for enc
 app-crypt/ifcplugin-bin 3.1.1.0: Crypto Interface Web Browser Plugin
 app-crypt/intel-ipsec-mb 1.1 1.2 1.3 1.5 9999: Multi-Buffer Crypto for IPSec from Intel
 app-crypt/keepass-diff 1.1.3-r1: A CLI tool to diff Keepass (.kdbx) files
-app-crypt/lego 4.16.1 4.17.4 4.22.2 9999: Let's Encrypt/ACME client (like certbot or acme.sh) and library written in Go
 app-crypt/pinentry-bemenu 0.13.2 0.14.0: Pinentry based on bemenu
 app-crypt/reop 2.1.1-r1: reasonable expectation of privacy
 app-crypt/sac-core 10.8.1050-r1: Thales/Gemalto SafeNet Authentication Client
@@ -278,7 +277,7 @@ app-misc/pipes-rs 1.6.3: An over-engineered rewrite of pipes.sh in Rust
 app-misc/powerpanel 1.4.1-r1: PowerPanel software for CyberPower UPS systems
 app-misc/proctl 1.5 9999: small C program that can control processes
 app-misc/pueue 3.4.1 4.0.0: A cli tool for managing long running shell commands.
-app-misc/qman 1.2.1-r1 9999: A more modern manual page viewer for our terminals
+app-misc/qman 1.2.1-r1 1.4.0 9999: A more modern manual page viewer for our terminals
 app-misc/rememberthemilk 1.3.11-r1: Freemium simple to-do tasks manager
 app-misc/s6-man 9999: mdoc versions of the HTML documentation for the s6 supervision suite
 app-misc/sherlock 0.15.0 9999: Hunt down social media accounts by username across social networks
@@ -558,17 +557,16 @@ dev-libs/libcli 1.10.7: Shared C library to include Cisco-like CLI into other so
 dev-libs/libcsv 3.0.4_pre20240316: Fast and flexible CSV library that can read and write CSV data
 dev-libs/libdatrie 0.2.13-r1: Double-Array Trie Library
 dev-libs/libdbf 0.0.1: Library to read the content of dBASE III, IV, and 5.0 files
-dev-libs/libdwarf 0.9.1 0.11.0 0.11.1: The DWARF Debugging Information Format
+dev-libs/libdwarf 0.9.1 0.11.1 0.12.0: The DWARF Debugging Information Format
 dev-libs/libglibutil 1.0.79 9999: Library of glib utilities from sailfishos project
 dev-libs/librepo 1.18.1 1.19.0-r1: Repodata downloading library
 dev-libs/libsignal-ffi 0.51.0-r1 0.62.0 0.64.1: A C ABI library which exposes Signal protocol logic
-dev-libs/libsolv 0.7.30-r1 0.7.31: Library for solving packages and reading repositories
+dev-libs/libsolv 0.7.31 0.7.32: Library for solving packages and reading repositories
 dev-libs/libthai 0.1.29: A a set of Thai language support routines
 dev-libs/libtypec 0.5.2-r2: Library to interface with USB Type-C/Power Delivery devices
 dev-libs/ls-hpack 2.3.4: QPACK compression library for use with HTTP/3
-dev-libs/ls-qpack 2.5.4 2.6.0: QPACK compression library for use with HTTP/3
 dev-libs/lsbcrypt 1.0.0-r2: libcrypt wrapper for LiteSpeedTech
-dev-libs/lsquic 4.0.8-r2 4.0.12: LiteSpeed QUIC (LSQUIC) Library
+dev-libs/lsquic 4.0.12: LiteSpeed QUIC (LSQUIC) Library
 dev-libs/luksmeta 9-r2: LUKSMeta is a simple library for storing metadata in the LUKSv1 header
 dev-libs/lzfse 9999: LZFSE compression library and command line tool.
 dev-libs/mtxclient 0.10.0-r1 0.10.0-r2: Client API library for Matrix, built on top of libcurl
@@ -682,7 +680,7 @@ dev-python/dataclasses-json 0.6.7: Easily serialize Data Classes to and from JSO
 dev-python/dateparser 1.2.1: Date parsing library designed to parse dates from HTML pages
 dev-python/decopatch 1.4.10: Create decorators easily in python
 dev-python/defcon 0.10.2: A set of UFO based objects for use in font editing applications
-dev-python/desktop-notifier 4.0.0 5.0.1: desktop-notifier is a Python library for cross-platform desktop notifications
+dev-python/desktop-notifier 4.0.0 5.0.1 6.0.0 6.1.0: desktop-notifier is a Python library for cross-platform desktop notifications
 dev-python/devtools 0.12.2: Dev tools for python
 dev-python/digitalocean 1.17.0-r1: Digitalocean API access library
 dev-python/django-browser-reload 1.13.0: Automatically reload your browser in development
@@ -758,7 +756,7 @@ dev-python/mollie-api-python 3.6.0: Mollie API client for Python
 dev-python/moreorless 0.4.0: Wrapper to make difflib.unified_diff more fun to use
 dev-python/mpxj 13.7.0: Read/Write project management files (MPP, MSPDI, MPX, PMXML, etc)
 dev-python/msrest 0.7.1: AutoRest swagger generator Python client runtime
-dev-python/mwclient 0.10.1: Unofficial lib for MediaWiki API
+dev-python/mwclient 0.11.0: Unofficial lib for MediaWiki API
 dev-python/nkdfu 0.2: Python DFU tool for updating Nitrokeys' firmware
 dev-python/notofonttools 0.2.17-r1: Noto fonts support tools and scripts plus web site generation
 dev-python/odfdo 3.13.3: Python library for OpenDocument format (ODF)
@@ -989,7 +987,7 @@ dev-vcs/jj 0.27.0-r1 0.28.1 9999: Jujutsu - an experimental version control syst
 dev-vcs/lazygit 0.45.2 0.46.0 0.47.1 0.47.2 0.48.0: Simple terminal UI for git commands
 dev-vcs/lazyjj 0.5.0: TUI for Jujutsu/jj
 dev-vcs/pijul 1.0.0_beta9: A distributed version control system based on a theory of patches
-dev-zig/zls 0.10.0-r2 0.13.0-r1 0.14.0 9999: The officially unofficial Ziglang language server
+dev-zig/zls 0.10.0-r2 0.13.0-r1 0.14.0 0.14.0-r1 9999: The officially unofficial Ziglang language server
 games-action/ATLauncher 3.4.27.0: Minecraft launcher which integrates multiple different ModPacks
 games-action/blackvoxel 2.50 9999: Blackvoxel Video Game
 games-action/classicube 1.3.7 9999: Reverse-engineered Minecraft Classic client
@@ -1356,7 +1354,7 @@ media-sound/spotify-adblock 1.0.1 1.0.2 1.0.3: Adblocker for Spotify
 media-sound/spotify-player 0.19.1 0.20.4 9999: spotify_player is a fast, easy to use, and configurable terminal music player.
 media-sound/spotifyd 0.3.5_p20240513: A Spotify daemon
 media-sound/spotube-bin 3.8.0: An open source, cross-platform Spotify client
-media-sound/supersonic 0.13.1 0.13.2 0.14.0: A lightweight and full-featured cross-platform desktop client
+media-sound/supersonic 0.14.0 0.15.0: A lightweight and full-featured cross-platform desktop client
 media-sound/tidal-hifi-bin 5.16.0-r1 5.17.0: Web version of Tidal running in electron with Hi-Fi support thanks to Widevine.
 media-sound/yewtube 2.12.0 9999: Terminal-based YouTube player and downloader
 media-sound/youtube-music-bin 3.6.2-r1 3.8.0: YouTube Music Desktop App bundled with custom plugins
@@ -1427,7 +1425,7 @@ net-im/axolotl-bin 2.0.1: Axolotl is a cross-platform Signal client
 net-im/beeper 3.109.1 3.110.1 4.0.570 4.0.584: Beeper: Unified Messenger
 net-im/chatterino 2.5.2-r1: Chat client for https://twitch.tv
 net-im/conduit 0.8.0-r1 0.9.0-r1 9999: Matrix homeserver written in Rust
-net-im/discord-canary-bin 0.0.623: All-in-one voice and text chat
+net-im/discord-canary-bin 0.0.626: All-in-one voice and text chat
 net-im/discord-ptb-bin 0.0.97: All-in-one voice and text chat
 net-im/eturnal 1.12.0-r1 1.12.1: STUN/TURN server
 net-im/flare 0.12.0-r1: Chat with your friends on Signal
@@ -1524,6 +1522,7 @@ net-misc/wayback_machine_downloader 2.3.0 2.3.1: Download an entire website from
 net-misc/whatscli 1.0.6 1.0.11: A command line interface for WhatsApp
 net-misc/wlvncc 20250122 20250307 99999999: A Wayland Native VNC Client
 net-misc/wsdd 0.7.0 0.7.1 0.8: A Web Service Discovery host daemon.
+net-misc/wstunnel 10.1.10: Tunnel all your traffic over Websocket or HTTP2 - Bypass firewalls/DPI
 net-misc/xh 0.24.0: Friendly and fast tool for sending HTTP requests
 net-misc/xkcd-handler 1.1.4: A handler for XKCD urls
 net-misc/xmrig-mo 6.21.2: MoneroOcean fork of xmrig that supports algo switching
@@ -1544,7 +1543,7 @@ net-p2p/fragments 3.0.1-r1 3.0.1-r2: Fragments is an easy to use BitTorrent clie
 net-p2p/gridcoin 5.4.8.0_p1-r1 5.4.9.0: Proof-of-Stake based cryptocurrency that rewards BOINC computation
 net-p2p/ipfs-desktop-bin 0.39.0 0.40.0: A desktop client for IPFS. The IPFS's Native Application
 net-p2p/monero 0.18.3.4-r1 0.18.4.0 9999: The secure, private, untraceable cryptocurrency
-net-p2p/monero-gui-bin 0.18.3.4-r1: An open-source GUI wallet developed by the Monero community.
+net-p2p/monero-gui-bin 0.18.4.0: An open-source GUI wallet developed by the Monero community.
 net-p2p/p2pool 4.1.1 4.3 4.4 9999: Decentralized pool for Monero mining
 net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
 net-p2p/yggdrasil-go 0.5.12 9999: An experiment in scalable routing as an encrypted IPv6 overlay network
@@ -1808,7 +1807,7 @@ x11-misc/i3-resurrect 1.4.5: Saving and restoring i3 workspaces
 x11-misc/i3lock-color 2.13.5: The world's most popular non-default computer lockscreen
 x11-misc/i3lock-fancy-rapid 0.0.0_pre20201109-r1 0.0.0_pre20210421: A faster implementation of i3lock-fancy
 x11-misc/i3status-rust 0.33.2: A feature-rich and resource-friendly replacement for i3status, written in Rust.
-x11-misc/input-leap 9999: Share a mouse and keyboard between computers (fork of Barrier)
+x11-misc/input-leap 3.0.2 9999: Share a mouse and keyboard between computers (fork of Barrier)
 x11-misc/ksnip 1.11.0_pre20250130: Ksnip is a Qt based cross-platform screenshot tool
 x11-misc/leftwm-theme 0.1.2: Theme mangager for LeftWM
 x11-misc/ly 1.0.3 9999: Ly - a TUI display manager (live ebuild)

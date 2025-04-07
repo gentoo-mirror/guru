@@ -1,13 +1,16 @@
 BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.20.5
 DEFINED_PHASES=compile configure install prepare test
-DESCRIPTION=QPACK compression library for use with HTTP/3
+DEPEND=app-arch/zstd:= sys-libs/zlib:=
+DESCRIPTION=The DWARF Debugging Information Format
 EAPI=8
-HOMEPAGE=https://github.com/litespeedtech/ls-qpack/
+HOMEPAGE=https://www.prevanders.net/dwarf.html https://dwarfstd.org/ https://github.com/davea42/libdwarf-code
 INHERIT=cmake
-IUSE=static-libs
-KEYWORDS=~amd64 ~arm64
-LICENSE=MIT
+IUSE=test dwarfexample dwarfgen
+KEYWORDS=~amd64
+LICENSE=BSD GPL-2 LGPL-2.1
+RDEPEND=app-arch/zstd:= sys-libs/zlib:=
+RESTRICT=!test? ( test )
 SLOT=0
-SRC_URI=https://github.com/litespeedtech/ls-qpack/archive/v2.5.4.tar.gz -> ls-qpack-2.5.4.gh.tar.gz
+SRC_URI=https://www.prevanders.net/libdwarf-0.12.0.tar.xz
 _eclasses_=toolchain-funcs	6afdb6107430c1832ca7e16aacbf8fa1	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	16d3941ed2dc39f4819368ae51bc0b72	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	c0c9c21d01b8a96d2d736c554daedc57
-_md5_=d26573f3211611a293a242784b1d427c
+_md5_=f4bd284a1a9848852106434f5bebe25c
