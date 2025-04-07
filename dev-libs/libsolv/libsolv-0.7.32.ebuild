@@ -1,4 +1,4 @@
-# Copyright 2024 Gentoo Authors
+# Copyright 2024-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -36,16 +36,18 @@ src_prepare() {
 
 src_configure() {
 	local mycmakeargs=(
-		-DENABLE_COMPLEX_DEPS=ON
-		-DENABLE_COMPS=ON
 		-DENABLE_RPMDB=ON
 		-DENABLE_RPMMD=ON
 		-DENABLE_RPMPKG_LIBRPM=ON
-		-DENABLE_BZIP2_COMPRESSION=ON
+		-DENABLE_COMPS=ON
+		-DENABLE_DEBIAN=OFF
+		-DENABLE_APK=OFF
 		-DENABLE_LZMA_COMPRESSION=ON
+		-DENABLE_BZIP2_COMPRESSION=ON
 		-DENABLE_ZSTD_COMPRESSION=ON
-		-DWITH_LIBXML2=$(usex !expat)
 		-DWITH_SYSTEM_ZCHUNK=$(usex zchunk)
+		-DWITH_LIBXML2=$(usex !expat)
+		-DENABLE_COMPLEX_DEPS=ON
 	)
 	cmake_src_configure
 }

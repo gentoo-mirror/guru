@@ -3,14 +3,15 @@
 
 EAPI=8
 
-inherit virtualx xdg cmake git-r3
+inherit cmake virtualx xdg
 
 DESCRIPTION="Share a mouse and keyboard between computers (fork of Barrier)"
 HOMEPAGE="https://github.com/input-leap/input-leap"
-EGIT_REPO_URI="https://github.com/input-leap/input-leap.git"
+SRC_URI="https://github.com/input-leap/input-leap/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
+KEYWORDS="~amd64"
 IUSE="gui test wayland"
 RESTRICT="!test? ( test )"
 
