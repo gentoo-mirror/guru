@@ -3,17 +3,16 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..12} )
+PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
-inherit distutils-r1
+inherit distutils-r1 pypi
 
 DESCRIPTION="A high-level Web Crawling and Web Scraping framework"
 HOMEPAGE="https://scrapy.org/"
-SRC_URI="https://github.com/scrapy/scrapy/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="BSD"
 SLOT=0
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~arm64"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
@@ -41,12 +40,13 @@ RDEPEND="dev-python/cssselect[${PYTHON_USEDEP}]
 BDEPEND="
 	test? (
 		${RDEPEND}
+		dev-python/botocore[${PYTHON_USEDEP}]
+		dev-python/defusedxml[${PYTHON_USEDEP}]
+		dev-python/pexpect[${PYTHON_USEDEP}]
 		dev-python/testfixtures[${PYTHON_USEDEP}]
 		dev-python/uvloop[${PYTHON_USEDEP}]
 	)
 "
-
-PATCHES="${FILESDIR}"/${P}-lift-twisted-restriction.patch
 
 distutils_enable_tests pytest
 
@@ -57,5 +57,7 @@ EPYTEST_DESELECT=(
 	tests/test_pipeline_files.py::TestFTPFileStore::test_persist
 	# Flaky test: https://github.com/scrapy/scrapy/issues/6193
 	tests/test_crawl.py::CrawlTestCase::test_start_requests_laziness
+	# Missing dependencies
+	tests/test_spidermiddleware_output_chain.py
 	)
 EPYTEST_IGNORE=( docs )

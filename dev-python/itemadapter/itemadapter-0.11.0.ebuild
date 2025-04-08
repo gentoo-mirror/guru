@@ -3,16 +3,16 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..12} )
-inherit distutils-r1
+PYTHON_COMPAT=( python3_{11..13} )
+DISTUTILS_USE_PEP517=setuptools
+inherit distutils-r1 pypi
 
 DESCRIPTION="Common interface for scrapy data container classes"
 HOMEPAGE="https://scrapy.org/"
-SRC_URI="https://github.com/scrapy/itemadapter/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="BSD"
 SLOT=0
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~arm64"
 
 RDEPEND="${PYTHON_DEPS}"
 DEPEND="${RDEPEND}"
