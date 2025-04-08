@@ -91,7 +91,7 @@ app-admin/bitwarden-cli-bin 2024.6.0 2025.2.0 2025.3.0: Precompiled CLI frontend
 app-admin/blahajdots 0.5.0 9999: Bespoke dotfile management for sharkgirls.
 app-admin/boinctui 2.7.1 2.7.1-r1: Fullscreen text mode manager for the BOINC client
 app-admin/chamber 2.13.2: Managing secrets in AWS SSM Parameter Store
-app-admin/chezmoi 2.59.1 2.60.1 2.61.0: Manage your dotfiles across multiple machines, securely
+app-admin/chezmoi 2.60.1 2.61.0 2.62.0: Manage your dotfiles across multiple machines, securely
 app-admin/customrescuecd-x86_64 0.12.7 0.12.8: A system rescue cd or usbstick for desktop and server based on gentoo
 app-admin/dotbot 1.20.1: A tool that bootstraps your dotfiles
 app-admin/gentoo_update 0.2.4: Gentoo Linux updater
@@ -108,7 +108,7 @@ app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applicatio
 app-admin/pass-audit 1.2-r1: A pass extension for auditing your password repository.
 app-admin/pass-update 2.2.1: pass extension that provides an easy flow for updating passwords
 app-admin/passage 1.7.4.2: A fork of password-store using age as encryption backend
-app-admin/pulumi-bin 3.154.0 3.155.0 3.156.0: Infrastructure as code in any programming language
+app-admin/pulumi-bin 3.155.0 3.156.0 3.160.0: Infrastructure as code in any programming language
 app-admin/rbw 1.13.2 9999: Unofficial Bitwarden CLI
 app-admin/ripasso 0.7.0: A password manager that uses the file format of 'pass'
 app-admin/s-tui 1.1.6: Stress-Terminal UI monitoring tool
@@ -325,7 +325,7 @@ app-portage/quantum-resolver 9999: A WIP portage dependency resolver
 app-portage/showbuild 0.9.1-r1: Script to follow log of running portage builds
 app-portage/zig-ebuilder 9999: Semi-automatic generator for Zig ebuilds
 app-shells/carapace 1.2.1: Multi-shell multi-command argument completer
-app-shells/direnv 2.32.3 9999: Environment variable manager for shell
+app-shells/direnv 2.32.3 2.35.0 9999: Environment variable manager for shell
 app-shells/elvish 0.19.2 0.20.1 0.21.0: Expressive programming language and a versatile interactive shell
 app-shells/fre 0.4.1: A command line frecency tracking tool
 app-shells/fzf-fish 10.3: Augment your fish command line with fzf key bindings
@@ -405,7 +405,7 @@ dev-build/fpm 0.9.0 0.10.0: Fortran Package Manager (fpm)
 dev-build/fypp 3.1 3.2: Fypp - Python powered Fortran preprocessor
 dev-build/pdpmake 2.0.3: Public domain POSIX make
 dev-build/qtilitools 0.1.2: Scripts/commands used in the Qtilities organization
-dev-build/xmake 2.9.8 9999: A cross-platform build utility based on Lua
+dev-build/xmake 2.9.9 9999: A cross-platform build utility based on Lua
 dev-cpp/blurhash 0.2.0 0.2.0-r1: C++ blurhash encoder/decoder
 dev-cpp/boxed-cpp 1.4.3: Boxing primitive types in C++
 dev-cpp/coeurl 0.3.0 0.3.1: A simple async wrapper around CURL for C++
@@ -724,8 +724,8 @@ dev-python/injector 0.21.0-r1: Python dependency injection framework, inspired b
 dev-python/internetarchive 3.7.0: Lib and CLI for archive.org - for search, uploading, downloading, rename...
 dev-python/invoke 2.2.0: Pythonic task execution
 dev-python/isosurfaces 0.1.2: Construct isolines/isosurfaces of a 2D/3D scalar field defined by a function
-dev-python/itemadapter 0.8.0: Common interface for scrapy data container classes
-dev-python/itemloaders 1.1.0: Library to populate items using XPath and CSS with a convenient API
+dev-python/itemadapter 0.11.0: Common interface for scrapy data container classes
+dev-python/itemloaders 1.3.2: Library to populate items using XPath and CSS with a convenient API
 dev-python/iuliia 0.13.0: Transliterate Cyrillic to Latin in every possible way
 dev-python/jinja2-cli 0.8.2: CLI for Jinja2
 dev-python/jplephem 2.21 2.22: Python version of NASA DE4xx ephemerides for Astronomical Alamanac
@@ -764,7 +764,7 @@ dev-python/odsgenerator 1.11.1-r1: Generate an OpenDocument Format .ods file fro
 dev-python/odsparsator 1.12.1-r2: Generate a JSON file from an OpenDocument Format .ods file.
 dev-python/osc-placement 4.5.0 4.6.0: OpenStackClient plugin for Placement service
 dev-python/oscrypto 1.3.0-r2: TLS sockets, key generation, encryption, decryption, signing, verification
-dev-python/parsel 1.8.1: Utility to extract data from XML/HTML documents using XPath or CSS selectors
+dev-python/parsel 1.10.0: Utility to extract data from XML/HTML documents using XPath or CSS selectors
 dev-python/pem 23.1.0: Easy PEM file parsing in Python
 dev-python/persist-queue 0.8.1 1.0.0: A thread-safe disk based persistent queue in Python
 dev-python/phx-class-registry 4.0.6-r1 4.1.0: An intersection of the Registry and Factory pattern
@@ -775,7 +775,7 @@ dev-python/plotext 5.3.0 5.3.2: Plotting on terminal
 dev-python/plum 0.8.7: Pack/Unpack Memory
 dev-python/prometheus_exporter 1.0.0 1.1.0 9999: Python Prometheus exporter library
 dev-python/proselint 0.13.0 0.14.0: A linter for prose
-dev-python/protego 0.3.0: Pure-Python robots.txt parser with support for modern conventions
+dev-python/protego 0.4.0: Pure-Python robots.txt parser with support for modern conventions
 dev-python/proxy_tools 0.1.0_p1: Simple proxy (as in the GoF design pattern)
 dev-python/psycopg2cffi 2.9.0-r1: Implementation of the psycopg2 module using cffi. Compatible with Psycopg 2.5.
 dev-python/ptpython 3.0.29: Python REPL build on top of prompt-toolkit
@@ -826,7 +826,7 @@ dev-python/pywavefront 1.3.3: Python library for importing Wavefront .obj files
 dev-python/pywebview 4.4.1-r1 5.1-r1: A lightweight cross-platform wrapper around a webview component
 dev-python/pyzstd 0.16.2: Python bindings to Zstandard (zstd) compression library
 dev-python/questionary 2.1.0: Python library to build pretty command line user prompts
-dev-python/queuelib 1.6.2: Collection of persistent and non-persistent queues for Python
+dev-python/queuelib 1.8.0: Collection of persistent and non-persistent queues for Python
 dev-python/readability-lxml 0.8.1: fast html to text parser (article readability tool)
 dev-python/readmdict 0.1.1-r1: Read mdx/mdd files
 dev-python/rectangle-packer 2.0.2: Pack a set of rectangles into a bounding box with minimum area
@@ -835,7 +835,7 @@ dev-python/rich-click 1.8.8: Format click help output nicely with rich
 dev-python/rpmautospec-core 0.1.5: Core functionality used by rpmautospec
 dev-python/rst2ansi 0.1.5-r3: Render reStructuredText documents to the terminal
 dev-python/rstcheck 6.2.0 6.2.1: Checks syntax of reStructuredText and code blocks nested within it
-dev-python/scrapy 2.11.0-r1: A high-level Web Crawling and Web Scraping framework
+dev-python/scrapy 2.12.0: A high-level Web Crawling and Web Scraping framework
 dev-python/screeninfo 0.8.1: Fetch location and size of physical screens.
 dev-python/sendgrid 6.11.0: Twilio SendGrid library for Python
 dev-python/sentence-splitter 1.4-r2: Sentence splitter using heuristic algorithm by Philipp Koehn and Josh Schroeder
@@ -878,7 +878,7 @@ dev-python/undervolt 0.4.0 9999: Undervolt Intel CPUs under Linux
 dev-python/urlmatch 1.0.1-r2: A Python library for easily pattern matching wildcard URLs
 dev-python/validator-collection 1.5.0-r2: Collection of 60+ Python functions for validating data
 dev-python/volatile 2.1.0: A small extension for the tempfile module
-dev-python/w3lib 2.1.2: Library of web-related functions
+dev-python/w3lib 2.3.1: Library of web-related functions
 dev-python/webrtcvad 2.0.10-r1: Python interface to the Google WebRTC Voice Activity Detector (VAD)
 dev-python/xattr 1.1.0-r1: Python wrapper for extended filesystem attributes
 dev-python/xpybutil 0.0.6: Abstraction layer for xpyb
@@ -983,11 +983,11 @@ dev-vcs/gitqlient 1.6.2 1.6.3 9999: Multi-platform Git client written with Qt
 dev-vcs/gitqlient-gitserver-plugin 0.2.0: GitQlient GitServer plugin
 dev-vcs/gitqlient-jenkins-plugin 0.2.0: GitQlient Jenkins plugin
 dev-vcs/gitui 0.26.3 0.27.0: blazing fast terminal-ui for git
-dev-vcs/jj 0.27.0-r1 0.28.1 9999: Jujutsu - an experimental version control system
+dev-vcs/jj 0.27.0-r1 0.28.1 0.28.2 9999: Jujutsu - an experimental version control system
 dev-vcs/lazygit 0.45.2 0.46.0 0.47.1 0.47.2 0.48.0: Simple terminal UI for git commands
 dev-vcs/lazyjj 0.5.0: TUI for Jujutsu/jj
 dev-vcs/pijul 1.0.0_beta9: A distributed version control system based on a theory of patches
-dev-zig/zls 0.10.0-r2 0.13.0-r1 0.14.0 0.14.0-r1 9999: The officially unofficial Ziglang language server
+dev-zig/zls 0.10.0-r2 0.13.0-r1 0.14.0 9999: The officially unofficial Ziglang language server
 games-action/ATLauncher 3.4.27.0: Minecraft launcher which integrates multiple different ModPacks
 games-action/blackvoxel 2.50 9999: Blackvoxel Video Game
 games-action/classicube 1.3.7 9999: Reverse-engineered Minecraft Classic client
@@ -1348,7 +1348,7 @@ media-sound/plexamp 4.11.5: A dedicated music player for your Plex media library
 media-sound/pulseaudio-virtualmic 0.1 9999: Use any offline or online media file or stream as a PulseAudio source
 media-sound/qloud 1.4.2: Tool to measure loudspeaker frequency and step responses and distortions
 media-sound/rsgain 3.5.1 3.5.3: Really Simple replay Gain calculator for tagging audio files
-media-sound/spct 1.1.1: A CLI program to play back or render SPC files.
+media-sound/spct 1.1.3: A CLI program to play back or render SPC files.
 media-sound/spot 0.4.0-r2: GTK4 Spotify (Premium) client
 media-sound/spotify-adblock 1.0.1 1.0.2 1.0.3: Adblocker for Spotify
 media-sound/spotify-player 0.19.1 0.20.4 9999: spotify_player is a fast, easy to use, and configurable terminal music player.
@@ -1451,7 +1451,7 @@ net-im/pop 8.0.21: Screen sharing with multiplayer control, with voice
 net-im/revolt-desktop 1.0.8-r2: Revolt Desktop App
 net-im/session-desktop-bin 1.10.8: Session Desktop - Onion routing based messenger
 net-im/sliding-sync 0.99.15 0.99.19: Proxy implementation of MSC3575's sync protocol.
-net-im/teams-for-linux 1.14.1 2.0.2 2.0.3: Unofficial Microsoft Teams client for Linux. Binary precompiled version.
+net-im/teams-for-linux 2.0.2 2.0.3 2.0.4: Unofficial Microsoft Teams client for Linux. Binary precompiled version.
 net-im/vesktop-bin 1.5.4 1.5.5: All-in-one voice and text chat for gamers with Vencord Preinstalled
 net-im/zulip-desktop-bin 5.11.1 5.12.0: Organized chat for distributed teams.
 net-irc/catgirl 2.2 2.2a: TLS-only terminal IRC client
@@ -1589,6 +1589,7 @@ sci-electronics/bender 0.28.1-r1: A dependency management tool for hardware proj
 sci-electronics/bluespec 2022.01-r1 2023.01 2023.07 2024.01 2024.07 2025.01.1 9999: Toolchain for the Bluespec Hardware Definition Language
 sci-electronics/circt 1.37.0 1.76.0 1.110.0: The fast free Verilog/SystemVerilog simulator
 sci-electronics/cocotb 1.9.2: Python-based chip (RTL) verification
+sci-electronics/cocotb-bus 0.2.1: Reusable testbenching tools and bus interfaces for cocotb
 sci-electronics/coil64 2.1.27: Coil64 is inductance coil calculator
 sci-electronics/dsview 1.3.0 1.3.2 9999: An open source multi-function instrument
 sci-electronics/kactus2 3.13.3 9999: A open source IP-XACT-based tool
@@ -1636,7 +1637,7 @@ sci-mathematics/rink 0.8.0-r1 9999: Unit conversion tool, similar to frink
 sci-mathematics/rstudio-desktop-bin 2023.09.1_p494 2024.12.0_p467 2024.12.0_p467-r1: IDE for R and Python
 sci-misc/boinc-wrapper 26018-r2 26018-r3: Wrapper to use non-BOINC apps with BOINC
 sci-misc/llama-cpp 0_pre4576 0_pre4763 0_pre4848 9999: Port of Facebook's LLaMA model in C/C++
-sci-ml/ollama 0.6.3 9999: Get up and running with Llama 3, Mistral, Gemma, and other language models.
+sci-ml/ollama 0.6.3 0.6.4 9999: Get up and running with Llama 3, Mistral, Gemma, and other language models.
 sci-physics/openmodelica 1.24.0-r1: Open-source Modelica-based modeling and simulation environment
 sci-physics/ovito 3.10.4 3.10.5 3.10.5-r1: Open Visualization Tool
 sec-keys/openpgp-keys-aepaneshnikov 20221210: OpenPGP keys used by Alexander Epaneshnikov
@@ -1666,7 +1667,7 @@ sys-apps/flashprog 1.2 1.3 1.4: Utility for identifying, reading, writing, verif
 sys-apps/fselect 0.8.6: Find files with SQL-like queries
 sys-apps/hex 0.4.2 0.5.0 0.6.0: Futuristic take on hexdump
 sys-apps/hexyl 0.16.0: A command-line hex viewer
-sys-apps/lact 0.7.1 0.7.2: Linux GPU Control Application
+sys-apps/lact 0.7.2 0.7.3: Linux GPU Control Application
 sys-apps/loclone 0.1.0: A tool for creating CoW snapshots on XFS
 sys-apps/lr 1.6: list files, recursively
 sys-apps/lsplug 6: Replacement for lsusb that shows more useful info and less useless info
@@ -1690,6 +1691,7 @@ sys-auth/hyprpolkitagent 0.1.1-r2 0.1.2: Polkit authentication agent for Hyprlan
 sys-auth/pam-gnupg 0.4-r1: Unlock GnuPG keys on login
 sys-block/clonezilla 5.8.9: Clonezilla is a partition and disk imaging/cloning program
 sys-block/partclone 0.3.33: Partition cloning tool
+sys-block/ublksrv 1.4: Userspace block device driver
 sys-boot/customrescuecd-x86_64-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/drbl 5.4.2: Diskless Remote Boot in Linux
 sys-boot/grml-rescueboot 0.6.1: grub2 script to add ISO images to the grub2 boot menu
