@@ -108,7 +108,7 @@ app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applicatio
 app-admin/pass-audit 1.2-r1: A pass extension for auditing your password repository.
 app-admin/pass-update 2.2.1: pass extension that provides an easy flow for updating passwords
 app-admin/passage 1.7.4.2: A fork of password-store using age as encryption backend
-app-admin/pulumi-bin 3.155.0 3.156.0 3.160.0: Infrastructure as code in any programming language
+app-admin/pulumi-bin 3.156.0 3.160.0 3.162.0: Infrastructure as code in any programming language
 app-admin/rbw 1.13.2 9999: Unofficial Bitwarden CLI
 app-admin/ripasso 0.7.0: A password manager that uses the file format of 'pass'
 app-admin/s-tui 1.1.6: Stress-Terminal UI monitoring tool
@@ -122,6 +122,7 @@ app-arch/fuse-archive 0.1.14 1.6 1.10 1.12: Read-only FUSE file system for mount
 app-arch/libarchive-qt 2.0.8: Qt based archiving solution with libarchive backend
 app-arch/libzim 9.2.1-r1: ZIM file format: an offline storage solution for content coming from the Web
 app-arch/microtar 0.1.0: A lightweight tar library written in ANSI C
+app-arch/nix-compress 0.3.0: Modern implementation of the ancient unix compress(1) tool
 app-arch/ouch 0.4.2 0.5.1: A cli utility for easily compressing and decompressing files and directories.
 app-arch/unalz 0.65-r1 0.65-r2: Extract ALZ archives
 app-arch/zarchive 0.1.2: Library for creating and reading zstd-compressed file archives (.zar)
@@ -231,7 +232,7 @@ app-misc/corectrl 1.4.3 9999: Core control application
 app-misc/cpufetch 1.06: Simplistic yet fancy CPU architecture fetching tool
 app-misc/dbf 0.9.0: Command line tool to read the content of dBASE III, IV, and 5.0 files
 app-misc/diff-so-fancy 1.4.4: Good-lookin' diffs. Actually... nah... The best-lookin' diffs
-app-misc/doublecmd 1.1.16-r1 1.1.21: Cross Platform file manager
+app-misc/doublecmd 1.1.23: Cross Platform file manager
 app-misc/doublecmd-bin 1.0.11 1.1.21 9999: Double Commander: file manager with two panels, similar to Total Commander
 app-misc/dpscreenocr 1.4.1: Program to recognize text on screen
 app-misc/dragon 1.1.1 1.1.1_p20210820 1.2.0: Simple drag-and-drop source/sink for X and Wayland
@@ -297,7 +298,7 @@ app-misc/walld 1.4.4: A Wallpaper daemon
 app-misc/watchexec 2.1.2 2.2.1 2.3.0: Executes commands in response to file modifications
 app-misc/wcal 0.1-r1: ISO weekly calendar
 app-misc/wego 2.2: Wego is a weather client for the terminal
-app-misc/wlx-overlay-s 25.4.0 9999: A lightweight OpenXR/OpenVR overlay for Wayland and X11 desktops
+app-misc/wlx-overlay-s 25.4.1 9999: A lightweight OpenXR/OpenVR overlay for Wayland and X11 desktops
 app-misc/x86-64-level 0.2.2 9999: Get the x86-64 Microarchitecture Level on the Current Machine
 app-misc/xplr 0.21.3-r1: A hackable, minimal, fast TUI file explorer
 app-misc/yazi 25.2.11-r1 25.3.2 9999: Blazing fast terminal file manager written in Rust, based on async I/O.
@@ -325,7 +326,7 @@ app-portage/quantum-resolver 9999: A WIP portage dependency resolver
 app-portage/showbuild 0.9.1-r1: Script to follow log of running portage builds
 app-portage/zig-ebuilder 9999: Semi-automatic generator for Zig ebuilds
 app-shells/carapace 1.2.1: Multi-shell multi-command argument completer
-app-shells/direnv 2.32.3 2.35.0 9999: Environment variable manager for shell
+app-shells/direnv 2.36.0 9999: Environment variable manager for shell
 app-shells/elvish 0.19.2 0.20.1 0.21.0: Expressive programming language and a versatile interactive shell
 app-shells/fre 0.4.1: A command line frecency tracking tool
 app-shells/fzf-fish 10.3: Augment your fish command line with fzf key bindings
@@ -369,6 +370,7 @@ app-text/tldr 3.2.0 3.3.0: Python command line client for tldr pages
 app-text/typst 0.13.1 9999: A markup-based typesetting system for the sciences
 app-text/typstyle 0.12.12: A beautiful and reliable code formatter for Typst
 app-text/vale 3.7.1 3.9.1: A syntax-aware linter for prose built with speed and extensibility in mind
+app-text/xan 0.48.0: The CSV magician
 app-vim/ale 3.3.0 4.0.0: Check syntax in Vim asynchronously and fix files, with LSP support
 app-vim/ansible-vim 3.3 3.4: vim plugin: sytax highlighting for Ansible's common file types
 app-vim/apkbuild-vim 20210911: vim plugin: edit and work with APKBUILD files
@@ -1038,13 +1040,10 @@ games-puzzle/xdemineur 2.1.1-r1: Minesweeper clone for the X11 windowing system
 games-roguelike/cataclysm-dda 0h 9999: A turn-based survival game set in a post-apocalyptic world
 games-rpg/open-adventure 1.17 1.18 1.20: Forward-port of the Crowther/Woods Adventure 2.5
 games-rpg/primordia 3.6.70667: A cyberpunk point-and-click adventure game
-games-rpg/sacred-demo 1.0.0: Like Diablo, isometric view, good rating, about a two hours of the gameplay
 games-rpg/snoot-game 1.12.0: Visual novel parody of Goodbye Volcano High
 games-server/among-sus 20210519: Among Us, but it's a text adventure
 games-strategy/gigalomania 1.0.1: Libre clone of Mega-Lo-Mania (original from ~1990), supports original resources
-games-strategy/ground-control 1011: RTS from 2000 by Massive Entertainment, without resources and buildings
 games-strategy/slay-the-spire 2.2: Deck-building roguelike game with four playable characters
-games-strategy/swine 1: Fun RTS from 2001 by Hungarian developer StormRegion, similar to Ground Control
 games-strategy/unciv-bin 4.15.2 4.15.6_p1: Turn-based historical strategy game, a remake of Civ V
 games-strategy/zedonline-bin 0.3.2-r1: A remake of the 1996 classic game Z, with network play
 games-util/NotEnoughProduction 0.0.4: Tool for building production chains for modded minecraft
@@ -1211,7 +1210,7 @@ gui-libs/xdg-desktop-portal-hyprland 1.3.8 1.3.9 1.3.9-r1 9999: xdg-desktop-port
 gui-wm/cage 0.2.0 9999: A Wayland kiosk
 gui-wm/hyprland-contrib 0.1-r1 9999: Community-maintained extensions for hyprland
 gui-wm/labwc 0.8.2 0.8.3 9999: Openbox alternative for wayland
-gui-wm/miracle-wm 0.4.1 0.5.1: Tiling Wayland compositor based on Mir
+gui-wm/miracle-wm 0.4.1 0.5.2: Tiling Wayland compositor based on Mir
 gui-wm/niri 25.02: Scrollable-tiling Wayland compositor
 gui-wm/phoc 0.42.1 0.43.0 0.44.0 0.44.1 0.45.0 0.46.0: Wayland compositor for mobile phones
 gui-wm/river 0.3.6 0.3.7 0.3.8: A dynamic tiling Wayland compositor
@@ -1301,7 +1300,7 @@ media-libs/raylib 5.0 9999: A simple and easy-to-use library to learn videogames
 media-libs/svt-vp9 0.3.0 9999: Scalable Video Technology for VP9 (SVT-VP9 Encoder)
 media-libs/vvdec 2.3.0: VVdeC, the Fraunhofer Versatile Video Decoder
 media-libs/vvenc 1.11.1: VVenC, the Fraunhofer Versatile Video Encoder
-media-libs/wivrn 0.23.2-r1 0.24 9999: WiVRn OpenXR streaming
+media-libs/wivrn 0.23.2-r1 0.24.1 9999: WiVRn OpenXR streaming
 media-plugins/alsa-sndio 0.2: ALSA PCM to play audio on sndio servers
 media-plugins/argotlunar-bin 2.06-r2: Argotlunar is a sound granulator. Binary Linux VST
 media-plugins/dtmediawiki 9999: Wikimedia Commons export plugin for Darktable. Every upload is converted
@@ -1328,7 +1327,7 @@ media-sound/gapless 4.3.1: A GTK4 music player
 media-sound/jacktrip 1.7.1-r1 2.4.0: Send JACK audio over a network
 media-sound/jriver 31.0.83: A cross-platform media center, famous for high quality of audio.
 media-sound/kew 2.4.4-r1: kew (/kjuː/) is a command-line music player for Linux.
-media-sound/listenbrainz-mpd 2.3.8: ListenBrainz submission client for MPD
+media-sound/listenbrainz-mpd 2.3.8-r1: ListenBrainz submission client for MPD
 media-sound/lms 3.64.0-r1 3.65.0: Lightweight Music Server.
 media-sound/loudgain 0.6.8-r1 0.6.8_p20240128 0.6.8_p20240128-r2: Versatile ReplayGain 2.0 loudness normalizer
 media-sound/mopidy 3.4.2: An extensible music server written in Python.
@@ -1425,7 +1424,7 @@ net-im/axolotl-bin 2.0.1: Axolotl is a cross-platform Signal client
 net-im/beeper 3.109.1 3.110.1 4.0.570 4.0.584: Beeper: Unified Messenger
 net-im/chatterino 2.5.2-r1: Chat client for https://twitch.tv
 net-im/conduit 0.8.0-r1 0.9.0-r1 9999: Matrix homeserver written in Rust
-net-im/discord-canary-bin 0.0.626: All-in-one voice and text chat
+net-im/discord-canary-bin 0.0.633: All-in-one voice and text chat
 net-im/discord-ptb-bin 0.0.97: All-in-one voice and text chat
 net-im/eturnal 1.12.0-r1 1.12.1: STUN/TURN server
 net-im/flare 0.12.0-r1: Chat with your friends on Signal
@@ -1451,7 +1450,7 @@ net-im/pop 8.0.21: Screen sharing with multiplayer control, with voice
 net-im/revolt-desktop 1.0.8-r2: Revolt Desktop App
 net-im/session-desktop-bin 1.10.8: Session Desktop - Onion routing based messenger
 net-im/sliding-sync 0.99.15 0.99.19: Proxy implementation of MSC3575's sync protocol.
-net-im/teams-for-linux 2.0.2 2.0.3 2.0.4: Unofficial Microsoft Teams client for Linux. Binary precompiled version.
+net-im/teams-for-linux 2.0.3 2.0.4 2.0.8: Unofficial Microsoft Teams client for Linux. Binary precompiled version.
 net-im/vesktop-bin 1.5.4 1.5.5: All-in-one voice and text chat for gamers with Vencord Preinstalled
 net-im/zulip-desktop-bin 5.11.1 5.12.0: Organized chat for distributed teams.
 net-irc/catgirl 2.2 2.2a: TLS-only terminal IRC client
@@ -1636,8 +1635,8 @@ sci-mathematics/pyromaths 21.8.2-r1: Create maths exercises in LaTeX and PDF for
 sci-mathematics/rink 0.8.0-r1 9999: Unit conversion tool, similar to frink
 sci-mathematics/rstudio-desktop-bin 2023.09.1_p494 2024.12.0_p467 2024.12.0_p467-r1: IDE for R and Python
 sci-misc/boinc-wrapper 26018-r2 26018-r3: Wrapper to use non-BOINC apps with BOINC
-sci-misc/llama-cpp 0_pre4576 0_pre4763 0_pre4848 9999: Port of Facebook's LLaMA model in C/C++
-sci-ml/ollama 0.6.3 0.6.4 9999: Get up and running with Llama 3, Mistral, Gemma, and other language models.
+sci-misc/llama-cpp 0_pre4576 0_pre4763 0_pre4848 0_pre5097 9999: Port of Facebook's LLaMA model in C/C++
+sci-ml/ollama 0.6.3 0.6.4 0.6.5 9999: Get up and running with Llama 3, Mistral, Gemma, and other language models.
 sci-physics/openmodelica 1.24.0-r1: Open-source Modelica-based modeling and simulation environment
 sci-physics/ovito 3.10.4 3.10.5 3.10.5-r1: Open Visualization Tool
 sec-keys/openpgp-keys-aepaneshnikov 20221210: OpenPGP keys used by Alexander Epaneshnikov
@@ -1680,8 +1679,6 @@ sys-apps/pnpm-bin 9.12.3 9.15.5 10.2.0: Fast, disk space efficient package manag
 sys-apps/qdiskinfo 0.3: CrystalDiskInfo alternative for Linux
 sys-apps/qemu-openrc 0.10.0 0.11.1 9999: OpenRC init script for QEMU/KVM
 sys-apps/qjournalctl 0.6.2: Qt-based GUI for systemd's journalctl command
-sys-apps/sampler 1.1.0: visualizer for shell commands, executions and alerting
-sys-apps/sampler-bin 1.1.0: visualizer for shell commands, executions and alerting
 sys-apps/save-backlight 1.1.2-r1 9999: An OpenRC service for restoring the last brightness level on reboot
 sys-apps/sd 1.0.0: Intuitive find & replace CLI (sed alternative)
 sys-apps/systemd-bootchart 234 235: systemd boot performance graphing tool
