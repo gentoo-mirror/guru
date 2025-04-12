@@ -11,10 +11,15 @@ SRC_URI="https://github.com/direnv/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz
 	 https://files.demize.dev/gentoo/${CATEGORY}/${PN}/${P}-deps.tar.xz"
 
 LICENSE="MIT"
+# dependency licenses
+LICENSE+=" BSD"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 # test dependencies are unreasonable, and tests fail without patches
 RESTRICT="test"
+
+# Upstream requires Go >=1.24
+BDEPEND+=">=dev-lang/go-1.24:="
 
 DOCS=( {CHANGELOG,README}.md )
 
