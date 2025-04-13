@@ -1,0 +1,16 @@
+BDEPEND=virtual/fortran
+DEFINED_PHASES=compile install setup test
+DEPEND=virtual/fortran
+DESCRIPTION=Modern Fortran port of the tiny-regex-c library for regular expressions
+EAPI=8
+HOMEPAGE=https://github.com/perazz/fortran-shlex
+INHERIT=fortran-2 toolchain-funcs
+IUSE=test
+KEYWORDS=~amd64 ~x86
+LICENSE=MIT
+RDEPEND=virtual/fortran
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/perazz/fortran-shlex/archive/refs/tags/1.2.1.tar.gz -> fortran-shlex-1.2.1.tar.gz
+_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	fortran-2	54fcb693257134adae26819685891ecc
+_md5_=3cf15e2e890b2dc733946f4c731e273e

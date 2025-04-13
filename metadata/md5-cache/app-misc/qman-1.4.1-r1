@@ -1,15 +1,16 @@
-BDEPEND=dev-python/cogapp >=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array
+BDEPEND=dev-python/cogapp test? ( dev-util/cunit ) >=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array
 DEFINED_PHASES=compile configure install test
 DEPEND=sys-libs/ncurses:= dev-libs/inih sys-libs/zlib
 DESCRIPTION=A more modern manual page viewer for our terminals
 EAPI=8
 HOMEPAGE=https://github.com/plp13/qman
 INHERIT=meson
-IUSE=+doc
+IUSE=+doc test
 KEYWORDS=~amd64
 LICENSE=BSD-2
 RDEPEND=sys-libs/ncurses:= dev-libs/inih sys-libs/zlib
+RESTRICT=!test? ( test )
 SLOT=0
-SRC_URI=https://github.com/plp13/qman/archive/refs/tags/v1.4.0.tar.gz -> qman-1.4.0.tar.gz
+SRC_URI=https://github.com/plp13/qman/archive/refs/tags/v1.4.1.tar.gz -> qman-1.4.1.tar.gz
 _eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	e8de74bac929ba17427e740e95707d00	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	b7726144f5af59e186d66746d0f513e5	meson	99466844dd8d4fcfb07578a76f5a9922
-_md5_=11157903079e47417468c55120e25f4a
+_md5_=8c777be5859b2f00a7703ba247970c2d
