@@ -13,7 +13,8 @@ EGIT_BRANCH="devel"
 LICENSE="BSD-2"
 SLOT="0"
 KEYWORDS=""
-IUSE="+doc"
+IUSE="+doc test"
+RESTRICT="!test? ( test )"
 
 DEPEND="
 	sys-libs/ncurses:=
@@ -22,12 +23,16 @@ DEPEND="
 "
 BDEPEND="
 	dev-python/cogapp
+	test? (
+		dev-util/cunit
+	)
 "
 RDEPEND="${DEPEND}"
 
 src_configure() {
 	local emesonargs=(
 		$(meson_feature doc docs)
+		$(meson_feature test tests)
 		-Ddocdir="/usr/share/doc/${PF}"
 	)
 	meson_src_configure
