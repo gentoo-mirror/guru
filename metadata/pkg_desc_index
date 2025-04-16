@@ -63,7 +63,7 @@ acct-user/mautrix-slack 0: User for Mautrix Slack Bridge
 acct-user/mautrix-telegram 0: User for Mautrix Telegram Bridge
 acct-user/mautrix-whatsapp 0: User for Mautrix WhatsApp Bridge
 acct-user/monero 0: System user: monero
-acct-user/ollama 2: A user for ollama
+acct-user/ollama 3: A user for ollama
 acct-user/pleroma 0: User for www-apps/pleroma
 acct-user/purritobin 0: User for net-misc/purritobin
 acct-user/redlib 0: User for Redlib
@@ -298,7 +298,7 @@ app-misc/walld 1.4.4: A Wallpaper daemon
 app-misc/watchexec 2.1.2 2.2.1 2.3.0: Executes commands in response to file modifications
 app-misc/wcal 0.1-r1: ISO weekly calendar
 app-misc/wego 2.2: Wego is a weather client for the terminal
-app-misc/wlx-overlay-s 25.4.1 9999: A lightweight OpenXR/OpenVR overlay for Wayland and X11 desktops
+app-misc/wlx-overlay-s 25.4.2 9999: A lightweight OpenXR/OpenVR overlay for Wayland and X11 desktops
 app-misc/x86-64-level 0.2.2 9999: Get the x86-64 Microarchitecture Level on the Current Machine
 app-misc/xplr 0.21.3-r1: A hackable, minimal, fast TUI file explorer
 app-misc/yazi 25.2.11-r1 25.3.2 9999: Blazing fast terminal file manager written in Rust, based on async I/O.
@@ -352,7 +352,7 @@ app-text/epubgrep 0.6.2: Search tool for EPUB e-books
 app-text/ford 6.2.5 7.0.8-r1 7.0.9-r1 7.0.10: FORD, automatic documentation generator for modern Fortran programs
 app-text/jrnl 4.1 4.2: Collect your thoughts and notes without leaving the command line
 app-text/klogg 22.06.0.1289-r1: A GUI application to browse and search through long and complex log files
-app-text/komikku 1.70.0 1.72.0: Manga reader for GNOME
+app-text/komikku 1.72.0: Manga reader for GNOME
 app-text/koodo-reader-bin 1.5.1 1.6.3: A modern ebook manager and reader with sync and backup capacities
 app-text/lchat 1.0-r2: Line oriented front end for ii-like chat programs
 app-text/lizard 1.17.13 1.17.19 1.17.20 1.17.23: A simple code complexity analyser, supports most of the popular languages.
@@ -803,9 +803,9 @@ dev-python/pyqtdarktheme 2.1.0: A flat dark theme for PySide and PyQt.
 dev-python/pyrime 0.0.7: rime for python
 dev-python/pysnooper 1.2.0 1.2.1: Never use print for debugging again
 dev-python/pystardict 0.8-r1: Library for manipulating StarDict dictionaries from within Python
-dev-python/pytest-cases 3.8.2: Separate test code from test cases in pytest
+dev-python/pytest-cases 3.8.6: Separate test code from test cases in pytest
 dev-python/pytest-celery 0.1.0: a shim pytest plugin to enable celery.contrib.pytest
-dev-python/pytest-harvest 1.10.4: Store and retrieve data created during your pytest tests execution
+dev-python/pytest-harvest 1.10.5: Store and retrieve data created during your pytest tests execution
 dev-python/pytest-mypy-plugins 3.1.0: pytest plugin for testing mypy types, stubs, plugins
 dev-python/pytest-relaxed 2.0.2: Relaxed test discovery for pytest
 dev-python/pytest-steps 1.8.0: Create step-wise / incremental tests in pytest
@@ -918,7 +918,7 @@ dev-util/catppuccin-catwalk 1.3.2: Soothing pastel previews for the high-spirite
 dev-util/catppuccin-whiskers 2.4.0: Soothing port creation tool for the high-spirited!
 dev-util/cmakelang 0.6.13: Provides Quality Assurance (QA) tools for cmake
 dev-util/coq-lsp 0.1.9: Visual Studio Code Extension and Language Server Protocol for Coq
-dev-util/deblob 0.8 0.9 9999: remove binary executables from a directory
+dev-util/deblob 0.9 0.10 9999: remove binary executables from a directory
 dev-util/distribution-gpg-keys 1.110: Collection of GPG keys used in Linux Distributions
 dev-util/dmg2img 9999 20201227: Convert Apple disk images to IMG format.
 dev-util/dockerfile-language-server 0.12.0 0.13.0: A language server for Dockerfiles
@@ -986,7 +986,7 @@ dev-vcs/gitqlient-gitserver-plugin 0.2.0: GitQlient GitServer plugin
 dev-vcs/gitqlient-jenkins-plugin 0.2.0: GitQlient Jenkins plugin
 dev-vcs/gitui 0.26.3 0.27.0: blazing fast terminal-ui for git
 dev-vcs/jj 0.27.0-r1 0.28.1 0.28.2 9999: Jujutsu - an experimental version control system
-dev-vcs/lazygit 0.45.2 0.46.0 0.47.1 0.47.2 0.48.0: Simple terminal UI for git commands
+dev-vcs/lazygit 0.47.2 0.48.0 0.49.0: Simple terminal UI for git commands
 dev-vcs/lazyjj 0.5.0: TUI for Jujutsu/jj
 dev-vcs/pijul 1.0.0_beta9: A distributed version control system based on a theory of patches
 dev-zig/zls 0.10.0-r2 0.13.0-r1 0.14.0 9999: The officially unofficial Ziglang language server
@@ -1253,7 +1253,7 @@ media-gfx/KTX-Software 4.3.2: KTX (Khronos Texture) Library and Tools
 media-gfx/WebPlotDigitizer-bin 4.7: Web based tool to extract data from plots, images, and maps
 media-gfx/airsane 0.4.3: Publish SANE scanners via Apple Airscan/eSCL
 media-gfx/azpainter 3.0.11: Full color painting software for Linux for illustration drawing
-media-gfx/bambustudio-bin 02.00.01.50: Bambu Studio is a cutting-edge, feature-rich slicing software
+media-gfx/bambustudio-bin 02.00.02.57: Bambu Studio is a cutting-edge, feature-rich slicing software
 media-gfx/beeref 0.3.3: A Simple Reference Image Viewer
 media-gfx/bonzomatic 2022.02.05 2022.08.20 9999: Live shader coding tool and Shader Showdown workhorse
 media-gfx/czkawka 8.0.0: App to find duplicates, empty folders and similar images
@@ -1421,11 +1421,11 @@ net-im/Quaternion 0.0.97.1: A Qt-based IM client for Matrix
 net-im/WasIstLos 1.6.5 1.7.0: An unofficial WhatsApp desktop application for Linux
 net-im/abaddon 0.2.1 9999: Alternative Discord client using GTK instead of Electron
 net-im/axolotl-bin 2.0.1: Axolotl is a cross-platform Signal client
-net-im/beeper 3.109.1 3.110.1 4.0.570 4.0.584: Beeper: Unified Messenger
+net-im/beeper 3.109.1 3.110.1 4.0.584 4.0.604: Beeper: Unified Messenger
 net-im/chatterino 2.5.2-r1: Chat client for https://twitch.tv
 net-im/conduit 0.8.0-r1 0.9.0-r1 9999: Matrix homeserver written in Rust
-net-im/discord-canary-bin 0.0.633: All-in-one voice and text chat
-net-im/discord-ptb-bin 0.0.97: All-in-one voice and text chat
+net-im/discord-canary-bin 0.0.642: All-in-one voice and text chat
+net-im/discord-ptb-bin 0.0.137: All-in-one voice and text chat
 net-im/eturnal 1.12.0-r1 1.12.1: STUN/TURN server
 net-im/flare 0.12.0-r1: Chat with your friends on Signal
 net-im/gajim-plugins 9999: Plugins developed fro Gajim XMPP client
@@ -1434,7 +1434,7 @@ net-im/gomuks 0.3.0 0.3.1: A terminal based Matrix client written in Go
 net-im/heisenbridge 1.15.0 1.15.2: A bouncer-style Matrix IRC bridge
 net-im/iamb 0.0.8 0.0.9 0.0.10: A Matrix chat client that uses Vim keybindings
 net-im/jitsi-meet 2022.3.1-r1 2025.2.0: Desktop application for Jitsi Meet built with Electron
-net-im/legcord-bin 1.0.8 1.1.0: Legcord is a custom client designed to enhance your Discord experience.
+net-im/legcord-bin 1.1.0 1.1.1: Legcord is a custom client designed to enhance your Discord experience.
 net-im/manyverse-bin 0.2310.9: A social network off the grid with append-only protocol (no edits) on blockchain
 net-im/mastoposter 0.2: Configurable reposter from Mastodon-compatible Fediverse servers
 net-im/matterhorn-bin 90000.0.1 90000.1.0: Terminal based Mattermost client
@@ -1448,10 +1448,10 @@ net-im/mautrix-whatsapp 0.10.9: A Matrix-WhatsApp puppeting bridge
 net-im/nheko 0.12.0-r1 0.12.0-r2 9999: Native desktop client for Matrix using Qt
 net-im/pop 8.0.21: Screen sharing with multiplayer control, with voice
 net-im/revolt-desktop 1.0.8-r2: Revolt Desktop App
-net-im/session-desktop-bin 1.10.8: Session Desktop - Onion routing based messenger
+net-im/session-desktop-bin 1.15.1 1.15.2: Session Desktop - Onion routing based messenger
 net-im/sliding-sync 0.99.15 0.99.19: Proxy implementation of MSC3575's sync protocol.
 net-im/teams-for-linux 2.0.3 2.0.4 2.0.8: Unofficial Microsoft Teams client for Linux. Binary precompiled version.
-net-im/vesktop-bin 1.5.4 1.5.5: All-in-one voice and text chat for gamers with Vencord Preinstalled
+net-im/vesktop-bin 1.5.5 1.5.6: All-in-one voice and text chat for gamers with Vencord Preinstalled
 net-im/zulip-desktop-bin 5.11.1 5.12.0: Organized chat for distributed teams.
 net-irc/catgirl 2.2 2.2a: TLS-only terminal IRC client
 net-irc/halloy 2025.2: IRC application written in Rust
@@ -1636,7 +1636,7 @@ sci-mathematics/rink 0.8.0-r1 9999: Unit conversion tool, similar to frink
 sci-mathematics/rstudio-desktop-bin 2023.09.1_p494 2024.12.0_p467 2024.12.0_p467-r1: IDE for R and Python
 sci-misc/boinc-wrapper 26018-r2 26018-r3: Wrapper to use non-BOINC apps with BOINC
 sci-misc/llama-cpp 0_pre4576 0_pre4763 0_pre4848 0_pre5097 9999: Port of Facebook's LLaMA model in C/C++
-sci-ml/ollama 0.6.3 0.6.4 0.6.5 9999: Get up and running with Llama 3, Mistral, Gemma, and other language models.
+sci-ml/ollama 0.6.5-r1 9999: Get up and running with Llama 3, Mistral, Gemma, and other language models.
 sci-physics/openmodelica 1.24.0-r1: Open-source Modelica-based modeling and simulation environment
 sci-physics/ovito 3.10.4 3.10.5 3.10.5-r1: Open Visualization Tool
 sec-keys/openpgp-keys-aepaneshnikov 20221210: OpenPGP keys used by Alexander Epaneshnikov
@@ -1693,7 +1693,7 @@ sys-block/ublksrv 1.4: Userspace block device driver
 sys-boot/customrescuecd-x86_64-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/drbl 5.4.2: Diskless Remote Boot in Linux
 sys-boot/grml-rescueboot 0.6.1: grub2 script to add ISO images to the grub2 boot menu
-sys-boot/limine 7.0.0 7.0.3 7.0.5 7.3.0 7.5.0 7.9.2 8.0.5 8.0.6 8.0.7 8.0.9 8.0.11 8.0.12 8.0.13 8.0.14 8.1.1 8.1.2 8.3.2 8.4.0 8.5.0 8.6.0 8.7.0 9.0.0 9.0.1 9.1.3 9.2.0 9.2.2: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
+sys-boot/limine 7.0.0 7.0.3 7.0.5 7.3.0 7.5.0 7.9.2 8.0.5 8.0.6 8.0.7 8.0.9 8.0.11 8.0.12 8.0.13 8.0.14 8.1.1 8.1.2 8.3.2 8.4.0 8.5.0 8.6.0 8.7.0 9.0.0 9.0.1 9.1.3 9.2.0 9.2.2 9.2.3: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
 sys-boot/mkusb 23.2.0: CLI and GUI for creating bootable live USB, with optional persistent storage
 sys-boot/ventoy-bin 1.0.97 1.0.98: Creator of bootable USBs, with ability to copy ISOs, persistence storage
 sys-boot/zfsbootmenu 1.12.0 2.2.2 2.3.0: ZFS bootloader for root-on-ZFS systems
@@ -1790,7 +1790,7 @@ x11-apps/lightdm-gtk-greeter-settings 1.2.2-r3: Configuration tool for the Light
 x11-apps/xcur2png 0.7.1-r3: Convert X cursors to PNG images
 x11-drivers/OpenTabletDriver 0.6.5.1: A cross-platform open-source tablet driver
 x11-drivers/OpenTabletDriver-bin 0.6.3.0: Cross platform tablet driver (binary package)
-x11-drivers/evdi 1.14.7-r2 1.14.8: Extensible Virtual Display Interface
+x11-drivers/evdi 1.14.8 1.14.9: Extensible Virtual Display Interface
 x11-drivers/xf86-input-xppen 3.4.9-r2: Driver for XP-PEN tablets and drawing devices
 x11-libs/gtk-fortran 3.24.31 4.6.0 4.7.1: A GTK+ binding to build Graphical User Interfaces in Fortran
 x11-libs/sdl-fakeqwerty 0_pre20191217: Fixes non-QWERTY keyboards on Prison Architect (and maybe other SDL games)
