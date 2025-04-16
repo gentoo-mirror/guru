@@ -1,4 +1,4 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -17,7 +17,6 @@ KEYWORDS="~amd64 ~arm ~arm64 ~x86"
 IUSE="python test"
 
 RDEPEND="${PYTHON_DEPS}
-	x11-libs/libdrm
 	python? (
 		$(python_gen_cond_dep '
 			dev-python/pybind11[${PYTHON_USEDEP}]
@@ -29,6 +28,7 @@ RDEPEND="${PYTHON_DEPS}
 "
 
 DEPEND="${RDEPEND}
+	x11-libs/libdrm
 	sys-kernel/linux-headers
 "
 
@@ -41,8 +41,6 @@ CONFIG_CHECK="~FB_VIRTUAL ~I2C ~DRM ~USB_SUPPORT ~USB_ARCH_HAS_HCD MODULES"
 
 PATCHES=(
 	"${FILESDIR}/${PN}-1.14.4-format-truncation.patch"
-	"${FILESDIR}/${PN}-1.14.7-removed-output_poll_changed.patch"
-	"${FILESDIR}/${PN}-1.14.7-drm_fb_helper.info.patch" # backport from 1.14.8
 )
 
 pkg_setup() {

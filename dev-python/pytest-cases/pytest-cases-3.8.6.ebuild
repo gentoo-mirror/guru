@@ -1,11 +1,10 @@
-# Copyright 2022-2024 Gentoo Authors
+# Copyright 2022-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..12} )
+PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
-PYPI_NO_NORMALIZE=1
 
 DOCS_BUILDER="mkdocs"
 DOCS_DEPEND=(
@@ -31,11 +30,9 @@ RDEPEND="
 	dev-python/packaging[${PYTHON_USEDEP}]
 	dev-python/six[${PYTHON_USEDEP}]
 "
-# https://github.com/smarie/python-pytest-cases/issues/330
 BDEPEND="
 	dev-python/setuptools-scm[${PYTHON_USEDEP}]
 	test? (
-		<dev-python/pytest-8[${PYTHON_USEDEP}]
 		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 		dev-python/pytest-harvest[${PYTHON_USEDEP}]
 		dev-python/pytest-steps[${PYTHON_USEDEP}]
