@@ -1,0 +1,13 @@
+BDEPEND=dev-lang/nim doc? ( || ( ( dev-lang/python:3.13 dev-python/insipid-sphinx-theme[python_targets_python3_13(-)] dev-python/sphinx-prompt[python_targets_python3_13(-)] ) ( dev-lang/python:3.12 dev-python/insipid-sphinx-theme[python_targets_python3_12(-)] dev-python/sphinx-prompt[python_targets_python3_12(-)] ) ( dev-lang/python:3.11 dev-python/insipid-sphinx-theme[python_targets_python3_11(-)] dev-python/sphinx-prompt[python_targets_python3_11(-)] ) ) ) doc? ( || ( ( dev-lang/python:3.13 dev-python/sphinx[python_targets_python3_13(-)] ) ( dev-lang/python:3.12 dev-python/sphinx[python_targets_python3_12(-)] ) ( dev-lang/python:3.11 dev-python/sphinx[python_targets_python3_11(-)] ) ) ) >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile configure install setup test unpack
+DESCRIPTION=Packaging-friendly Nim build system
+EAPI=8
+HOMEPAGE=https://nimbus.sysrq.in/ https://git.sysrq.in/nimbus/about/
+INHERIT=python-any-r1 docs nim-utils git-r3
+IUSE=debug doc
+LICENSE=Apache-2.0 BSD
+PROPERTIES=live
+RDEPEND=dev-lang/nim
+SLOT=0
+_eclasses_=multiprocessing	1e32df7deee68372153dca65f4a7c21f	toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	python-utils-r1	d1be7a6de225276141d669742d56f3f3	python-any-r1	891415dfe39ad9b41b461f2b86354af0	docs	006125f2158d2f16904ebd9114336058	edo	367e103a74bf77e6a8da7894d999fa3c	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	nim-utils	6548190660274fddf428c46e69463e89	git-r3	875eb471682d3e1f18da124be97dcc81
+_md5_=72d3d326e0681977647902bf2ffc5baf

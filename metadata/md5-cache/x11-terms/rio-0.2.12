@@ -1,0 +1,16 @@
+BDEPEND=dev-build/cmake virtual/pkgconfig || ( dev-lang/rust-bin:9999 dev-lang/rust:9999 dev-lang/rust-bin:1.86.0 dev-lang/rust:1.86.0 dev-lang/rust-bin:1.85.1 dev-lang/rust:1.85.1 dev-lang/rust-bin:1.85.0 dev-lang/rust:1.85.0 dev-lang/rust-bin:1.84.1 dev-lang/rust:1.84.1 dev-lang/rust-bin:1.84.0 dev-lang/rust:1.84.0 dev-lang/rust-bin:1.83.0 dev-lang/rust:1.83.0 dev-lang/rust-bin:1.82.0 dev-lang/rust:1.82.0 dev-lang/rust-bin:1.81.0 dev-lang/rust:1.81.0 dev-lang/rust-bin:1.80.1 dev-lang/rust:1.80.1 )
+DEFINED_PHASES=compile configure install prepare setup test unpack
+DEPEND=media-libs/freetype:2 media-libs/fontconfig wayland? ( dev-libs/wayland ) wayland? ( x11-libs/libxkbcommon[wayland] ) X? ( x11-libs/libxkbcommon[X] ) >=sys-libs/ncurses-6.4_p20240330
+DESCRIPTION=A hardware-accelerated GPU terminal emulator powered by WebGPU
+EAPI=8
+HOMEPAGE=https://raphamorim.io/rio/
+INHERIT=cargo desktop
+IUSE=+wayland +X debug
+KEYWORDS=~amd64
+LICENSE=MIT Apache-2.0 BSD-2 BSD Boost-1.0 CC0-1.0 ISC MIT MPL-2.0 Unicode-DFS-2016 ZLIB
+RDEPEND=media-libs/freetype:2 media-libs/fontconfig wayland? ( dev-libs/wayland ) wayland? ( x11-libs/libxkbcommon[wayland] ) X? ( x11-libs/libxkbcommon[X] ) >=sys-libs/ncurses-6.4_p20240330
+REQUIRED_USE=|| ( wayland X )
+SLOT=0
+SRC_URI=https://github.com/raphamorim/rio/archive/refs/tags/v0.2.12.tar.gz -> rio-0.2.12.tar.gz https://github.com/freijon/rio/releases/download/v0.2.12/rio-0.2.12-crates.tar.xz
+_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	e8de74bac929ba17427e740e95707d00	multiprocessing	1e32df7deee68372153dca65f4a7c21f	rust	e9d31591b9b0251018cd5c60a43bafa1	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	df2b134de0bbaddf4c0d660969d80029	desktop	3a72ffe0d8e1dd73af3a1c8c15a59fed
+_md5_=b3bb28b2d71620a4b457c79f81563710

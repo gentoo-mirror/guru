@@ -1,0 +1,17 @@
+BDEPEND=app-admin/chrpath gnome-base/librsvg lz4? ( app-arch/lz4 ) system-llvm? ( llvm-core/llvm ) app-alternatives/ninja >=dev-build/cmake-3.20.5
+DEFINED_PHASES=compile configure install postinst postrm prepare pretend setup test unpack
+DEPEND=app-arch/bzip2 app-arch/xz-utils app-arch/zstd:= >=app-forensics/yara-4.2.0:= >=dev-cpp/nlohmann_json-3.10.2 dev-libs/boost >=dev-libs/capstone-5.0.3:= >=dev-libs/nativefiledialog-extended-1.2.1[desktop-portal?] >=dev-libs/libfmt-11.0.2:= media-libs/fontconfig media-libs/freetype >=media-libs/glfw-3.4[X] media-libs/glm media-libs/libglvnd net-libs/mbedtls:= net-misc/curl sys-apps/file sys-libs/zlib virtual/libiconv virtual/libintl
+DESCRIPTION=A hex editor for reverse engineers, programmers, and eyesight
+EAPI=8
+HOMEPAGE=https://github.com/WerWolv/ImHex
+INHERIT=cmake llvm-r1 toolchain-funcs flag-o-matic xdg-utils
+IUSE=+system-llvm test lto +desktop-portal lz4 +llvm_slot_19 llvm_slot_15 llvm_slot_16 llvm_slot_17 llvm_slot_18 llvm_slot_20
+KEYWORDS=~amd64
+LICENSE=GPL-2
+RDEPEND=app-arch/bzip2 app-arch/xz-utils app-arch/zstd:= >=app-forensics/yara-4.2.0:= >=dev-cpp/nlohmann_json-3.10.2 dev-libs/boost >=dev-libs/capstone-5.0.3:= >=dev-libs/nativefiledialog-extended-1.2.1[desktop-portal?] >=dev-libs/libfmt-11.0.2:= media-libs/fontconfig media-libs/freetype >=media-libs/glfw-3.4[X] media-libs/glm media-libs/libglvnd net-libs/mbedtls:= net-misc/curl sys-apps/file sys-libs/zlib virtual/libiconv virtual/libintl
+REQUIRED_USE=^^ ( llvm_slot_15 llvm_slot_16 llvm_slot_17 llvm_slot_18 llvm_slot_19 llvm_slot_20 )
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/WerWolv/ImHex/releases/download/v1.37.4/Full.Sources.tar.gz -> imhex-1.37.4.gh.tar.gz https://github.com/WerWolv/ImHex-Patterns/archive/refs/tags/ImHex-v1.37.4.tar.gz -> imhex-patterns-1.37.4.gh.tar.gz
+_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	e8de74bac929ba17427e740e95707d00	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	c0c9c21d01b8a96d2d736c554daedc57	llvm-utils	846280a994c1843d9c21248c188bd147	llvm-r1	0bd586d3786517cd63802a520b404dda
+_md5_=a8289b7a93efc1a7781ec8cb55b8bda6
