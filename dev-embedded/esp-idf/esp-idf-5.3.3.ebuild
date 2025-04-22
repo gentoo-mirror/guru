@@ -5,7 +5,7 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{11..13} )
 
-VER="14.2.0_20241119"
+VER="13.2.0_20240530"
 GDB_VER="14.2_20240403"
 OPENOCD_VER="0.12.0-esp32-20241016"
 
@@ -30,7 +30,7 @@ SRC_URI+=" riscv32? (
 S="${WORKDIR}/${PN}-v${PV}"
 
 LICENSE="Apache-2.0"
-SLOT="0"
+SLOT="0/$(ver_cut 1-2)"
 KEYWORDS="~amd64"
 
 IUSE="riscv32"
