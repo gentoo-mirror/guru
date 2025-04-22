@@ -18,6 +18,42 @@
 
 # New entries go on top.
 
+# Anna (cybertailor) Vyalkova <cyber+gentoo@sysrq.in> (2025-04-21)
+# Unmaintained in GURU, no revdeps left.
+# Removal on 2025-05-21.
+dev-ml/bheap
+dev-ml/cdrom
+dev-ml/domain-name
+dev-ml/gmap
+dev-ml/pecu
+dev-ml/randomconv
+
+# Anna (cybertailor) Vyalkova <cyber+gentoo@sysrq.in> (2025-04-21)
+# Unmaintained upstream, no revdeps left. Breaks dev-python/pytest-recording.
+# Removal on 2025-05-21.
+dev-python/pytest-vcr
+
+# Anna (cybertailor) Vyalkova <cyber+gentoo@sysrq.in> (2025-04-21)
+# Unmaintained upstream, not compatible with Mastodon.py v2.
+# Removal on 2025-05-21.
+net-misc/fedigroup
+acct-user/fedigroup
+acct-group/fedigroup
+
+# Anna (cybertailor) Vyalkova <cyber+gentoo@sysrq.in> (2025-04-21)
+# Unmaintained in GURU, no revdeps left.
+# Removal on 2025-05-21.
+dev-python/glicko2
+
+# Vivian Heisz (demize) <demize@unstable.systems> (2025-04-20)
+# Depends on ~dev-ruby/prawn-2.34.0, which was removed in
+# ::gentoo, making this unable to build.
+#
+# This update will likely happen in asciidoctor-pdf 3.0.0.
+# Please unmask when appropriate.
+# Bug #954116.
+dev-ruby/asciidoctor-pdf
+
 # Yuan Liao <liaoyuan@gmail.com> (2025-04-16)
 # No reverse dependencies left.  Was added only for
 # <gnome-extra/extension-manager-0.6.0; not widely used by
@@ -25,7 +61,7 @@
 # Removal on 2025-05-16.
 gui-libs/text-engine
 
-# Haelwenn (lanodan) Monnier <contact@hacktivis.me>
+# Haelwenn (lanodan) Monnier <contact@hacktivis.me> (2025-04-09)
 # Package hasn't been maintained for almost a year.
 # As I dropped myself as maintainer on 2024-05-25 21:54:47 with
 # commit d72436666f91bf44a2478674a19b51fa614b5833
@@ -36,7 +72,7 @@ games-emulation/duckstation
 # Vivian Heisz (demize) <demize@unstable.systems> (2025-04-04)
 # Unmaintained in GURU. Current versions are very old and have security
 # issues.
-# Removal on 2025-05-04. Bugs #937552, #937552.
+# Removal on 2025-05-04. Bugs #934956, #937552.
 www-client/firefox-developer-bin
 
 # Anna (cybertailor) Vyalkova <cyber+gentoo@sysrq.in> (2025-03-27)
