@@ -1,16 +1,16 @@
 BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.20.5
 DEFINED_PHASES=compile configure install prepare test
-DEPEND=dev-libs/libdwarf test? ( dev-cpp/gtest )
-DESCRIPTION=Simple, portable, and self-contained stacktrace library for C++
+DEPEND=test? ( dev-cpp/catch:0 )
+DESCRIPTION=Boxing primitive types in C++
 EAPI=8
-HOMEPAGE=https://github.com/jeremy-rifkin/cpptrace
+HOMEPAGE=https://github.com/contour-terminal/reflection-cpp
 INHERIT=cmake
 IUSE=test
 KEYWORDS=~amd64
-LICENSE=MIT
-RDEPEND=dev-libs/libdwarf test? ( dev-cpp/gtest )
+LICENSE=Apache-2.0
+RDEPEND=test? ( dev-cpp/catch:0 )
 RESTRICT=!test? ( test )
 SLOT=0
-SRC_URI=https://github.com/jeremy-rifkin/cpptrace/archive/refs/tags/v0.6.3.tar.gz -> cpptrace-0.6.3.tar.gz
+SRC_URI=https://github.com/contour-terminal/reflection-cpp/archive/refs/tags/v0.2.0.tar.gz -> reflection-cpp-0.2.0.tar.gz
 _eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	e8de74bac929ba17427e740e95707d00	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	c0c9c21d01b8a96d2d736c554daedc57
-_md5_=9ed70493c21c20af54c760de23873293
+_md5_=0e1709cbe3bd178865be0a32192e9ae7
