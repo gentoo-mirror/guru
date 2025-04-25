@@ -1,4 +1,4 @@
-# Copyright 2024 Gentoo Authors
+# Copyright 2024-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -13,6 +13,7 @@ S="${WORKDIR}/jool-${PV}"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64"
+IUSE="iptables"
 
 src_configure() {
 	true
@@ -24,10 +25,12 @@ src_compile() {
 		jool=:src/mod/nat64:src/mod/nat64
 		jool_siit=:src/mod/siit:src/mod/siit
 	)
-	local modargs=( KERNEL_DIR="${KV_OUT_DIR}" MODULES_DIR="/lib/modules/${KV_FULL}" )
+	local modargs=(
+		KERNEL_DIR="${KV_OUT_DIR}"
+		MODULES_DIR="/lib/modules/${KV_FULL}"
+	)
+	use iptables || modargs+=(
+		CFLAGS_MODULE="-DXTABLES_DISABLED"
+	)
 	linux-mod-r1_src_compile
-}
-
-src_install() {
-	linux-mod-r1_src_install
 }

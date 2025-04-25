@@ -1,9 +1,9 @@
-# Copyright 2021-2024 Gentoo Authors
+# Copyright 2021-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..12} )
+PYTHON_COMPAT=( python3_{11..13} )
 inherit python-single-r1
 
 DESCRIPTION="Create and run optimised Windows, macOS and Linux desktop virtual machines"
@@ -17,7 +17,7 @@ REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 DEPEND="
 	${PYTHON_DEPS}
-	>=app-emulation/qemu-6.0.0[gtk,sdl,spice]
+	>=app-emulation/qemu-6.0.0[gtk,sdl,spice,virtfs]
 	>=app-shells/bash-4.0:=
 	app-cdr/cdrtools
 	app-crypt/swtpm
@@ -35,7 +35,7 @@ DEPEND="
 RDEPEND="${DEPEND}"
 
 src_install() {
-	python_doscript macrecovery macrecovery
-	dobin quickemu
-	dobin quickget
+	python_doscript chunkcheck
+	dobin quick{emu,get,report}
+	doman docs/*.{1,5}
 }

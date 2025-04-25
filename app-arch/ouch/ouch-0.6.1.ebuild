@@ -5,7 +5,10 @@ EAPI=8
 
 CRATES=""
 
-inherit cargo shell-completion
+LLVM_COMPAT=( {17..19} )
+RUST_NEEDS_LLVM=1
+
+inherit llvm-r1 cargo shell-completion
 
 DESCRIPTION="A cli utility for easily compressing and decompressing files and directories."
 HOMEPAGE="https://github.com/ouch-org/ouch"
@@ -26,6 +29,9 @@ DEPEND="
 	sys-libs/zlib
 "
 RDEPEND="${DEPEND}"
+BDEPEND="
+	$(llvm_gen_dep 'llvm-core/clang:${LLVM_SLOT}=')
+"
 
 QA_FLAGS_IGNORED="usr/bin/${PN}"
 QA_PRESTRIPPED="usr/bin/${PN}"
