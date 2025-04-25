@@ -1,0 +1,16 @@
+BDEPEND=llvm_slot_17? ( llvm-core/clang:17= ) llvm_slot_18? ( llvm-core/clang:18= ) llvm_slot_19? ( llvm-core/clang:19= ) llvm_slot_17? ( || ( dev-lang/rust-bin:1.77.1[llvm_slot_17] dev-lang/rust:1.77.1[llvm_slot_17] dev-lang/rust-bin:1.76.0[llvm_slot_17] dev-lang/rust:1.76.0[llvm_slot_17] dev-lang/rust-bin:1.75.0[llvm_slot_17] dev-lang/rust:1.75.0[llvm_slot_17] dev-lang/rust-bin:1.74.1[llvm_slot_17] dev-lang/rust:1.74.1[llvm_slot_17] ) ) llvm_slot_18? ( || ( dev-lang/rust-bin:1.81.0[llvm_slot_18] dev-lang/rust:1.81.0[llvm_slot_18] dev-lang/rust-bin:1.80.1[llvm_slot_18] dev-lang/rust:1.80.1[llvm_slot_18] dev-lang/rust-bin:1.79.0[llvm_slot_18] dev-lang/rust:1.79.0[llvm_slot_18] dev-lang/rust-bin:1.78.0[llvm_slot_18] dev-lang/rust:1.78.0[llvm_slot_18] ) ) llvm_slot_19? ( || ( dev-lang/rust-bin:1.86.0[llvm_slot_19] dev-lang/rust:1.86.0[llvm_slot_19] dev-lang/rust-bin:1.85.1[llvm_slot_19] dev-lang/rust:1.85.1[llvm_slot_19] dev-lang/rust-bin:1.85.0[llvm_slot_19] dev-lang/rust:1.85.0[llvm_slot_19] dev-lang/rust-bin:1.84.1[llvm_slot_19] dev-lang/rust:1.84.1[llvm_slot_19] dev-lang/rust-bin:1.84.0[llvm_slot_19] dev-lang/rust:1.84.0[llvm_slot_19] dev-lang/rust-bin:1.83.0[llvm_slot_19] dev-lang/rust:1.83.0[llvm_slot_19] dev-lang/rust-bin:1.82.0[llvm_slot_19] dev-lang/rust:1.82.0[llvm_slot_19] ) )
+DEFINED_PHASES=compile configure install setup test unpack
+DEPEND=app-arch/bzip2 app-arch/bzip3 app-arch/xz-utils sys-libs/zlib
+DESCRIPTION=A cli utility for easily compressing and decompressing files and directories.
+EAPI=8
+HOMEPAGE=https://github.com/ouch-org/ouch
+INHERIT=llvm-r1 cargo shell-completion
+IUSE=+llvm_slot_19 llvm_slot_17 llvm_slot_18 debug
+KEYWORDS=~amd64
+LICENSE=MIT Apache-2.0 BSD MIT Unicode-DFS-2016 ZLIB
+RDEPEND=app-arch/bzip2 app-arch/bzip3 app-arch/xz-utils sys-libs/zlib
+REQUIRED_USE=^^ ( llvm_slot_17 llvm_slot_18 llvm_slot_19 )
+SLOT=0
+SRC_URI=https://github.com/ouch-org/ouch/archive/refs/tags/0.6.1.tar.gz -> ouch-0.6.1.tar.gz https://github.com/freijon/ouch/releases/download/0.6.1/ouch-0.6.1-crates.tar.xz
+_eclasses_=llvm-utils	846280a994c1843d9c21248c188bd147	llvm-r1	0bd586d3786517cd63802a520b404dda	toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	e8de74bac929ba17427e740e95707d00	multiprocessing	1e32df7deee68372153dca65f4a7c21f	rust	2bf0d74b817e3f30aaee805df74cbfc8	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	5da01b45ec362e78575502b4fb82773a	bash-completion-r1	767861f3744f589ee5291c1698b1c082	shell-completion	0b655d0d825e157a5e99c463bddaac16
+_md5_=e73332a9b7132d0d398694a81f41bd8a
