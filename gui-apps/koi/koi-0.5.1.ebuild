@@ -1,4 +1,4 @@
-# Copyright 2024 Gentoo Authors
+# Copyright 2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -11,14 +11,14 @@ SRC_URI="
 	https://github.com/baduhai/Koi/archive/refs/tags/${PV}.tar.gz
 		-> ${P}.tar.gz
 "
-S="${WORKDIR}/Koi-${PV}/src"
+S="${WORKDIR}/Koi-${PV}"
 
 LICENSE="LGPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
 
 DEPEND="
-	dev-qt/qtbase:6[dbus,gui,network,widgets,xml]
+	dev-qt/qtbase:6[dbus,gui,widgets,xml]
 	kde-frameworks/kconfigwidgets:6
 	kde-frameworks/kconfig:6
 	kde-frameworks/kcoreaddons:6

@@ -23,6 +23,7 @@ KEYWORDS="~amd64"
 RDEPEND="
 	dev-python/dbus-fast[${PYTHON_USEDEP}]
 	dev-python/packaging[${PYTHON_USEDEP}]
+	dev-python/typing-extensions[${PYTHON_USEDEP}]
 "
 BDEPEND="
 	dev-python/build[${PYTHON_USEDEP}]
