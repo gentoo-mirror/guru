@@ -16,6 +16,7 @@ app-alternatives/phosh-keyboard:phosh-osk-stub - Symlink to phosh-base/phosh-osk
 app-arch/fuse-archive:fuse2 - Build with fuse2 instead of fuse3
 app-backup/blocksync-fast:xxhash - Enable dev-libs/xxhash support for very high speed hashing
 app-backup/kopia-ui-bin:system-kopia - Use the system-wide app-backup/kopia instead of bundled.
+app-benchmarks/occt-bin:msr-user-access - Allow non-root access to /dev/cpu/*/msr to read CPU power/voltage
 app-containers/arachsys-containers:suid - allow unprivileged users to have multiple UIDs/GIDs in the container (see CVE-2014-8989 for implications)
 app-containers/waydroid:clipboard - Enable clipboard manager service using dev-python/pyclip
 app-containers/waydroid-images:system-gapps - Use the GAPPS variant of system.img
@@ -602,6 +603,7 @@ net-p2p/monero-gui-bin:daemon - Install the Monero daemon used to connect to the
 net-p2p/monero-gui-bin:tools - Install tools used to manipulate the blockchain as it is stored on disk.
 net-p2p/monero-gui-bin:wallet-cli - Install the command line wallet, monero-wallet-cli.
 net-p2p/monero-gui-bin:wallet-rpc - Install the RPC wallet, monero-wallet-rpc.
+net-p2p/p2pool:daemon - Install OpenRC scripts allowing for running p2pool as a system service
 net-p2p/trezord-go:systemd - Install systemd service file
 net-p2p/trezord-go:udev - Install udev rules
 net-print/hpuld:scanner - Enable scanner on multifunction devices which support it

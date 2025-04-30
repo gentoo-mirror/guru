@@ -133,6 +133,7 @@ app-backup/restic-browser 0.3.1-r1 0.3.1-r2: A GUI to browse and restore from re
 app-backup/timeshift 23.07.1: A system restore utility for Linux
 app-backup/timeshift-autosnap 0.9-r1: Automatically creates a timeshift-snapshot when executed
 app-benchmarks/kdiskmark 3.1.4-r1: Disk benchmarking tool
+app-benchmarks/occt-bin 14.0.8: All-in-one stability, stress test, benchmark and monitoring tool
 app-benchmarks/phoronix-test-suite 10.8.4 9999: Phoronix's comprehensive, cross-platform testing and benchmark suite
 app-benchmarks/poop 0.5.0 9999: Performance Optimizer Observation Platform
 app-benchmarks/unigine-superposition 1.1: Game like benchmark (CPU, GPU), for ~5 minutes
@@ -565,7 +566,7 @@ dev-libs/libthai 0.1.29: A a set of Thai language support routines
 dev-libs/libtypec 0.5.2-r2: Library to interface with USB Type-C/Power Delivery devices
 dev-libs/ls-hpack 2.3.4: QPACK compression library for use with HTTP/3
 dev-libs/lsbcrypt 1.0.0-r2: libcrypt wrapper for LiteSpeedTech
-dev-libs/lsquic 4.0.12: LiteSpeed QUIC (LSQUIC) Library
+dev-libs/lsquic 4.0.12 4.2.0: LiteSpeed QUIC (LSQUIC) Library
 dev-libs/luksmeta 9-r2: LUKSMeta is a simple library for storing metadata in the LUKSv1 header
 dev-libs/lzfse 9999: LZFSE compression library and command line tool.
 dev-libs/mtxclient 0.10.0-r1 0.10.0-r2: Client API library for Matrix, built on top of libcurl
@@ -702,7 +703,7 @@ dev-python/graphene 3.2.2: GraphQL Framework for Python
 dev-python/graphql-core 3.2.3: Python port of GraphQL.js, the JavaScript reference implementation for GraphQL
 dev-python/graphql-relay 3.2.0: Relay library for graphql-core
 dev-python/grpc-stubs 1.53.0.3: gRPC typing stubs for Python
-dev-python/guidata 3.6.3 3.7.1: Library for user interfaces for easy dataset editing and display
+dev-python/guidata 3.6.3 3.7.1 3.9.0: Library for user interfaces for easy dataset editing and display
 dev-python/guiqwt 4.4.5-r1: Efficient 2D plotting Python library based on PythonQwt
 dev-python/guppy3 3.1.4 3.1.5: A Python Programming Environment & Heap analysis toolset
 dev-python/hachoir 3.3.0: Hachoir is a Python library to view and edit a binary stream field by field
@@ -762,6 +763,7 @@ dev-python/pem 23.1.0: Easy PEM file parsing in Python
 dev-python/persist-queue 0.8.1 1.0.0: A thread-safe disk based persistent queue in Python
 dev-python/phx-class-registry 4.0.6-r1 4.1.0: An intersection of the Registry and Factory pattern
 dev-python/pillow-heif 0.21.0 0.22.0: Python interface for libheif library
+dev-python/pillow-jxl-plugin 1.3.2: Pillow plugin for JPEG-XL, using Rust for bindings.
 dev-python/playsound 1.3.0-r1: Single function module with no dependencies for playing sounds
 dev-python/plexapi 4.16.1 4.17.0: Python bindings for the Plex API.
 dev-python/plotext 5.3.0 5.3.2: Plotting on terminal
@@ -795,6 +797,7 @@ dev-python/pymorphy3-dicts-uk 2.4.1.1.1663094765: Ukrainian dictionary for PyMor
 dev-python/pynput 1.7.6: Sends virtual input commands
 dev-python/pypandoc 1.15: Pypandoc provides a thin wrapper for pandoc, a universal document converter
 dev-python/pyperscan 0.3.0: An opinionated Python binding for Hyperscan
+dev-python/pyproject2ebuild 0.0.1: Convert pyproject.toml to Gentoo ebuilds automatically.
 dev-python/pyqtdarktheme 2.1.0: A flat dark theme for PySide and PyQt.
 dev-python/pyrime 0.0.7: rime for python
 dev-python/pysnooper 1.2.0 1.2.1: Never use print for debugging again
@@ -1081,12 +1084,12 @@ gui-apps/1password 8.10.28 8.10.48-r1: The world’s most-loved password manager
 gui-apps/ReGreet 0.1.1-r10 9999: A clean and customizable GTK-based greetd greeter written in Rust
 gui-apps/ashell 0.3.0 0.3.1: A ready to go Wayland status bar for Hyprland
 gui-apps/aylurs-gtk-shell 1.8.2-r1: Aylurs's Gtk Shell (AGS), An eww inspired gtk widget system.
-gui-apps/azote 1.15.1 9999: wallpaper manager for wlroots compositors
+gui-apps/azote 1.16.0 9999: wallpaper manager for wlroots compositors
 gui-apps/clipman 1.6.2 1.6.3 1.6.4: A basic clipboard manager for Wayland.
 gui-apps/contour 0.6.1.7494: Modern C++ Terminal Emulator
 gui-apps/coreaction 4.5.0 5.0.0: A side bar for showing widgets for C Suite
-gui-apps/corearchiver 4.5.0 9999: Archiver for C Suite, to create and extract archives
-gui-apps/corefm 4.5.0 9999: A lightweight file-manager for C Suite
+gui-apps/corearchiver 5.0.0: Archiver for C Suite, to create and extract archives
+gui-apps/corefm 5.0.0: A lightweight file-manager for C Suite
 gui-apps/coregarage 4.5.0 9999: A settings manager for C Suite
 gui-apps/corehunt 4.5.0 9999: A file finder utility for C Suite
 gui-apps/coreimage 4.5.0 9999: An image viewer for C Suite
@@ -1126,6 +1129,7 @@ gui-apps/hyprswitch 1.3.1: A CLI/GUI that allows switching between windows in Hy
 gui-apps/hyprsysteminfo 0.1.3: Hyprland's system information GUI application
 gui-apps/intiface-central-bin 2.6.0 2.6.4: Buttplug frontend application
 gui-apps/ironbar 0.16.0-r1 0.16.1 0.16.1-r1: Customisable Wayland gtk bar written in Rust
+gui-apps/klassy 6.2 9999: Klassy QT6 window decoration theme for KDE Plasma 6.3+
 gui-apps/koi 0.4 0.5 0.5.1: Theme scheduling for the KDE Plasma Desktop
 gui-apps/lan-mouse 0.7.3-r1: Software KVM Switch / mouse & keyboard sharing software for Local Area Networks
 gui-apps/lemurs 0.3.2: A TUI Display/Login Manager
@@ -1321,12 +1325,12 @@ media-sound/dzr 240909: DZR: the command line deezer.com player
 media-sound/eartag 0.5.0 0.5.1: GTK4 MusicBrainz audio tagger
 media-sound/fooyin 0.7.3 0.8.1 9999: A customizable music player, Qt clone of foobar2000
 media-sound/furnace 0.6 0.6.5-r1 0.6.7: a multi-system chiptune tracker compatible with DefleMask modules
-media-sound/gapless 4.3.1: A GTK4 music player
+media-sound/gapless 4.3.1 4.4: A GTK4 music player
 media-sound/jacktrip 1.7.1-r1 2.4.0: Send JACK audio over a network
 media-sound/jriver 31.0.83: A cross-platform media center, famous for high quality of audio.
 media-sound/kew 2.4.4-r1: kew (/kjuː/) is a command-line music player for Linux.
 media-sound/listenbrainz-mpd 2.3.8-r2: ListenBrainz submission client for MPD
-media-sound/lms 3.64.0-r1 3.65.0: Lightweight Music Server.
+media-sound/lms 3.64.0-r1 3.65.0 3.66.0: Lightweight Music Server.
 media-sound/loudgain 0.6.8-r1 0.6.8_p20240128 0.6.8_p20240128-r2: Versatile ReplayGain 2.0 loudness normalizer
 media-sound/mopidy 3.4.2: An extensible music server written in Python.
 media-sound/mpd-mpris 0.3.1 0.4.0 0.4.1: An implementation of the MPRIS protocol for MPD.
@@ -1351,7 +1355,7 @@ media-sound/spotify-adblock 1.0.1 1.0.2 1.0.3: Adblocker for Spotify
 media-sound/spotify-player 0.19.1 0.20.4 9999: spotify_player is a fast, easy to use, and configurable terminal music player.
 media-sound/spotifyd 0.3.5_p20240513: A Spotify daemon
 media-sound/spotube-bin 3.8.0: An open source, cross-platform Spotify client
-media-sound/supersonic 0.14.0 0.15.0 0.15.1: A lightweight and full-featured cross-platform desktop client
+media-sound/supersonic 0.15.1 0.15.2: A lightweight and full-featured cross-platform desktop client
 media-sound/tidal-hifi-bin 5.16.0-r1 5.17.0: Web version of Tidal running in electron with Hi-Fi support thanks to Widevine.
 media-sound/yewtube 2.12.0 9999: Terminal-based YouTube player and downloader
 media-sound/youtube-music-bin 3.6.2-r1 3.8.0: YouTube Music Desktop App bundled with custom plugins
@@ -1452,7 +1456,7 @@ net-im/teams-for-linux 2.0.3 2.0.4 2.0.8: Unofficial Microsoft Teams client for 
 net-im/vesktop-bin 1.5.5 1.5.6: All-in-one voice and text chat for gamers with Vencord Preinstalled
 net-im/zulip-desktop-bin 5.11.1 5.12.0: Organized chat for distributed teams.
 net-irc/catgirl 2.2 2.2a: TLS-only terminal IRC client
-net-irc/halloy 2025.2: IRC application written in Rust
+net-irc/halloy 2025.2 2025.4: IRC application written in Rust
 net-irc/litterbox 1.9: TLS-only IRC logger
 net-irc/pounce 3.0 3.1 3.1-r1: Multi-client, TLS-only IRC bouncer
 net-irc/quarg 1.0.0: Search Quassel logs for matching messages and print them
@@ -1541,7 +1545,7 @@ net-p2p/gridcoin 5.4.8.0_p1-r1 5.4.9.0: Proof-of-Stake based cryptocurrency that
 net-p2p/ipfs-desktop-bin 0.39.0 0.40.0: A desktop client for IPFS. The IPFS's Native Application
 net-p2p/monero 0.18.3.4-r1 0.18.4.0 9999: The secure, private, untraceable cryptocurrency
 net-p2p/monero-gui-bin 0.18.4.0: An open-source GUI wallet developed by the Monero community.
-net-p2p/p2pool 4.1.1 4.3 4.4 9999: Decentralized pool for Monero mining
+net-p2p/p2pool 4.1.1 4.3 4.4 4.4-r1 9999: Decentralized pool for Monero mining
 net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
 net-p2p/yggdrasil-go 0.5.12 9999: An experiment in scalable routing as an encrypted IPv6 overlay network
 net-print/hpuld 1.00.39.15.00.23-r1: HP Unified Linux Driver (for samsung hardware)
@@ -1635,7 +1639,7 @@ sci-mathematics/rink 0.8.0-r1 9999: Unit conversion tool, similar to frink
 sci-mathematics/rstudio-desktop-bin 2023.09.1_p494 2024.12.0_p467 2024.12.0_p467-r1: IDE for R and Python
 sci-misc/boinc-wrapper 26018-r2 26018-r3: Wrapper to use non-BOINC apps with BOINC
 sci-misc/llama-cpp 0_pre4576 0_pre4763 0_pre4848 0_pre5097 9999: Port of Facebook's LLaMA model in C/C++
-sci-ml/ollama 0.6.5-r1 9999: Get up and running with Llama 3, Mistral, Gemma, and other language models.
+sci-ml/ollama 0.6.5-r1 0.6.6 9999: Get up and running with Llama 3, Mistral, Gemma, and other language models.
 sci-physics/openmodelica 1.24.0-r1: Open-source Modelica-based modeling and simulation environment
 sci-physics/ovito 3.10.4 3.10.5 3.10.5-r1: Open Visualization Tool
 sec-keys/openpgp-keys-aepaneshnikov 20221210: OpenPGP keys used by Alexander Epaneshnikov
@@ -1725,7 +1729,7 @@ sys-kernel/dpdk-kmod 23.03: DPDK Kernel Nic Interface module
 sys-kernel/uek-sources 5.15.0.300.159.7-r1 5.15.0.300.161.13: Unbreakable Enterprise Kernel (UEK) sources built from Oracle
 sys-kernel/usermode-kernel 6.0.12: Linux kernel built with Gentoo patches
 sys-kernel/xow 0.5: Linux driver for the Xbox One wireless dongle
-sys-kernel/zenpower3 0.2.0-r2 9999: Linux kernel driver for reading sensors of AMD Zen family CPUs
+sys-kernel/zenpower3 0.2.0-r3 9999: Linux kernel driver for reading sensors of AMD Zen family CPUs
 sys-libs/cyclonedds 0.10.3-r1 9999: Eclipse Cyclone DDS project
 sys-libs/gcompat 1.1.0 9999: The GNU C Library compatibility layer for musl
 sys-libs/iceoryx 2.0.3 9999: Eclipse Iceoryx zero copy IPC
@@ -1749,7 +1753,7 @@ sys-process/snooze 0.5 9999: Run a command at a particular time
 sys-process/task-spooler 1.3.0: A scheduler for CPU tasks
 sys-process/xe 1.0-r1: Simple xargs and apply replacement with sane defaults
 virtual/crystal-db 0.13-r1: Virtual for Crystal database drivers
-www-apps/anubis 1.16.0: Weighs the soul of incoming HTTP requests to stop AI crawlers
+www-apps/anubis 1.16.0 1.17.0: Weighs the soul of incoming HTTP requests to stop AI crawlers
 www-apps/code-server-bin 4.18.0 4.19.1 4.90.3: VS Code in the browser (binary version with unbundled node and ripgrep)
 www-apps/forgejo 9.0.3 10.0.0 10.0.1: A self-hosted lightweight software forge
 www-apps/freshrss 1.24.3 1.25.0: A free, self-hostable news aggregator
