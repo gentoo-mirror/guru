@@ -124,7 +124,7 @@ app-arch/ouch 0.6.1: A cli utility for easily compressing and decompressing file
 app-arch/unalz 0.65-r1 0.65-r2: Extract ALZ archives
 app-arch/zarchive 0.1.2: Library for creating and reading zstd-compressed file archives (.zar)
 app-backup/b2 3.18.0 4.0.1: Command-line tool for BackBlaze's B2 product
-app-backup/blocksync-fast 1.0.3 1.0.4 1.0.6: Fast block device sync with digest, designed to improve block-based backups.
+app-backup/blocksync-fast 1.0.3 1.0.4 1.0.6 1.0.7: Fast block device sync with digest, designed to improve block-based backups.
 app-backup/grub-btrfs 4.11-r1 4.12 4.13 9999: Improves Grub by adding btrfs snapshots to the Grub menu.
 app-backup/kopia 0.15.0: Kopia - Fast And Secure Open-Source Backup
 app-backup/kopia-ui-bin 0.15.0-r1: Kopia - Fast And Secure Open-Source Backup (Electron UI)
@@ -142,7 +142,7 @@ app-containers/arachsys-containers 1.7: Simple containers using Linux user names
 app-containers/kind 0.27.0: Kind is a tool for running local Kubernetes clusters using Docker
 app-containers/pods 2.1.0_pre20240215-r4 2.1.2: Keep track of your podman containers
 app-containers/slim 1.40.11: Inspect, optimize and debug containers
-app-containers/waydroid 1.4.3 1.4.3-r1: Container-based approach to boot a full Android system on Linux systems
+app-containers/waydroid 1.4.3 1.4.3-r1 1.5.1: Container-based approach to boot a full Android system on Linux systems
 app-containers/waydroid-images 9999: Manage images for app-containers/waydroid using portage
 app-crypt/PBinCLI 0.3.5-r1: PBinCLI is a command line client for PrivateBin written in Python 3
 app-crypt/autofirma 1.8.2 1.8.3-r1: Spanish government's electronic signature application for online procedures
@@ -234,7 +234,7 @@ app-misc/doublecmd-bin 1.0.11 1.1.21 1.1.23 1.1.24 9999: Double Commander: file 
 app-misc/dpscreenocr 1.4.1: Program to recognize text on screen
 app-misc/dragon 1.1.1 1.1.1_p20210820 1.2.0: Simple drag-and-drop source/sink for X and Wayland
 app-misc/electricsheep 3.0.2_p20191005-r1 3.0.2_p20191005-r2: Realize the collective dream of sleeping computers from all over the internet
-app-misc/far2l 2.6.3_beta 2.6.4_beta 9999: Linux port of FAR Manager v2
+app-misc/far2l 2.6.4_beta 2.6.5_beta 9999: Linux port of FAR Manager v2
 app-misc/fetsh 1.8 1.9 9999: A fetch written in POSIX shell without any external commands
 app-misc/fff 2.2: A simple file manager written in bash
 app-misc/gentodo 0.2.1 1.1.0 1.1.1 9999: Todo program to help enhance your Gentoo workflow
@@ -642,6 +642,7 @@ dev-python/asgi-lifespan 2.1.0: Programmatic startup/shutdown of ASGI apps
 dev-python/asyncinotify 4.0.1: An async python inotify package
 dev-python/asyncpg 0.30.0: An asyncio PostgreSQL driver
 dev-python/auditok 0.1.5 0.2.0-r1: A module for Audio/Acoustic Activity Detection
+dev-python/authlib 1.5.2: A Python library in building OAuth and OpenID Connect servers and clients.
 dev-python/autoflake 2.3.1: Removes unused imports and unused variables from Python code
 dev-python/autopxd 2.5.0: generates .pxd files automatically from .h files
 dev-python/avro 1.11.3: Apache Avro is a data serialization system
@@ -798,9 +799,10 @@ dev-python/pymorphy3-dicts-uk 2.4.1.1.1663094765: Ukrainian dictionary for PyMor
 dev-python/pynput 1.7.6: Sends virtual input commands
 dev-python/pypandoc 1.15: Pypandoc provides a thin wrapper for pandoc, a universal document converter
 dev-python/pyperscan 0.3.0: An opinionated Python binding for Hyperscan
-dev-python/pyproject2ebuild 0.0.1: Convert pyproject.toml to Gentoo ebuilds automatically.
+dev-python/pyproject2ebuild 0.0.2: Convert pyproject.toml to Gentoo ebuilds automatically.
 dev-python/pyqtdarktheme 2.1.0: A flat dark theme for PySide and PyQt.
 dev-python/pyrime 0.0.7: rime for python
+dev-python/pysdl3 0.9.8_beta1: A pure Python wrapper for SDL3
 dev-python/pysnooper 1.2.0 1.2.1: Never use print for debugging again
 dev-python/pystardict 0.8-r1: Library for manipulating StarDict dictionaries from within Python
 dev-python/pytest-cases 3.8.6: Separate test code from test cases in pytest
@@ -837,6 +839,7 @@ dev-python/rich-click 1.8.8: Format click help output nicely with rich
 dev-python/rpmautospec-core 0.1.5: Core functionality used by rpmautospec
 dev-python/rst2ansi 0.1.5-r3: Render reStructuredText documents to the terminal
 dev-python/rstcheck 6.2.0 6.2.1: Checks syntax of reStructuredText and code blocks nested within it
+dev-python/safety-schemas 0.0.14: Schemas for Safety tools
 dev-python/scrapy 2.12.0: A high-level Web Crawling and Web Scraping framework
 dev-python/screeninfo 0.8.1: Fetch location and size of physical screens.
 dev-python/sendgrid 6.11.0: Twilio SendGrid library for Python
@@ -874,6 +877,7 @@ dev-python/textual-serve 1.1.1: Serve Textual apps locally
 dev-python/timeslot 0.1.2: Time slots/intervals with an arbitrary start and stop
 dev-python/tulir-telethon 1.35.0_alpha1 1.37.0_alpha1: Full-featured Telegram client library for Python 3
 dev-python/tweepy 4.14.0: An easy-to-use Python library for accessing the Twitter API.
+dev-python/typer 0.15.3: Typer, build great CLIs. Easy to code. Based on Python type hints.
 dev-python/types-protobuf 4.24.0.20240408 5.27.0.20240626: Typing stubs for protobuf
 dev-python/types-requests 2.32.0.20240712: Typing stubs for requests
 dev-python/typing-inspect 0.9.0: Runtime inspection utilities for Python typing module
@@ -1008,7 +1012,7 @@ games-board/fairy-stockfish 14.0.1: Chess variant engine derived from Stockfish 
 games-board/openriichi 0.2.1.1: OpenRiichi is an open source Japanese Mahjong client
 games-board/rmahjong 0.4_p20201106: Riichi Mahjong, the Japanese variant of the Chinese game Mahjong for 4 players
 games-emulation/RetroArch 1.19.1 1.20.0: RetroArch is a frontend for emulators, game engines and media players
-games-emulation/dosbox-x 2025.02.01 9999: Complete, accurate DOS emulator forked from DOSBox
+games-emulation/dosbox-x 2025.02.01 2025.05.03 9999: Complete, accurate DOS emulator forked from DOSBox
 games-emulation/duckstation 9999: Fast Sony PlayStation (PSX) emulator
 games-emulation/flycast 9999: Sega Dreamcast, Naomi and Atomiswave emulator
 games-emulation/mupen64plus-qt 1.17 9999: A basic launcher for Mupen64Plus
@@ -1212,7 +1216,7 @@ gui-libs/text-engine 0.1.1-r3 9999: A lightweight rich-text framework for GTK 4
 gui-libs/xdg-desktop-portal-hyprland 1.3.8 1.3.9 1.3.9-r1 9999: xdg-desktop-portal backend for hyprland
 gui-wm/cage 0.2.0 9999: A Wayland kiosk
 gui-wm/hyprland-contrib 0.1-r1 9999: Community-maintained extensions for hyprland
-gui-wm/labwc 0.8.2 0.8.3 9999: Openbox alternative for wayland
+gui-wm/labwc 0.8.3 0.8.4 9999: Openbox alternative for wayland
 gui-wm/miracle-wm 0.4.1 0.5.2: Tiling Wayland compositor based on Mir
 gui-wm/niri 25.02: Scrollable-tiling Wayland compositor
 gui-wm/phoc 0.42.1 0.43.0 0.44.0 0.44.1 0.45.0 0.46.0: Wayland compositor for mobile phones
@@ -1282,7 +1286,7 @@ media-gfx/zwcad 2023.23.0.3.4-r2: CAD software for 2D drawing, reviewing and pri
 media-libs/alsa-ucm-pinephone 1.2.6.3: ALSA ucm configuration files for the PinePhone (Pro)
 media-libs/alvr 16.0.0: ALVR is an open source remote VR display for the Oculus Go/Quest
 media-libs/amdvlk 2025.2.1: AMD Open Source Driver for Vulkan
-media-libs/amdvlk-bin 2021.2.5-r1 2023.3.3 2025.1.3: AMD Open Source Driver for Vulkan: official binary version
+media-libs/amdvlk-bin 2021.2.5-r1 2023.3.3 2025.2.1: AMD Open Source Driver for Vulkan: official binary version
 media-libs/blend2d 0.11.4-r2 9999: 2D vector graphics library powered by a JIT compiler.
 media-libs/dr_flac 0.12.43: Single-header FLAC audio decoder library
 media-libs/dr_mp3 0.6.40: Single-header MP3 audio decoder library
@@ -1314,7 +1318,7 @@ media-plugins/qt-jpegxl-image-plugin 9999: Qt plug-in to allow Qt and KDE based 
 media-plugins/whysynth 20170701_p20180323-r1: A software synthesizer plugin for the DSSI Soft Synth Interface
 media-radio/fllog 1.2.8: Logbook application for amateur radio use
 media-sound/6pm 0.9: 6PM is a polyphonic, touch-sensitive, realtime phase modulation synthesizer
-media-sound/TauonMusicBox 7.8.0-r1 7.8.3 7.9.0 9999: The desktop music player of today!
+media-sound/TauonMusicBox 7.9.0 8.0.1 9999: The desktop music player of today!
 media-sound/add64 3.8.0 3.9.3: Add64 is a realtime additive/subtractive-synthesis softsynth
 media-sound/amberol 2024.2: Simple GUI Music Player
 media-sound/bespokesynth 1.2.1 1.3.0: Software modular synth
