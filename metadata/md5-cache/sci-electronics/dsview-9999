@@ -1,16 +1,16 @@
 BDEPEND=virtual/pkgconfig app-alternatives/ninja >=dev-build/cmake-3.20.5 virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare test unpack
-DEPEND=python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 ) dev-cpp/glibmm:2 dev-libs/boost dev-libs/glib dev-libs/libzip dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtwidgets:5 dev-qt/qtsvg:5 dev-qt/qtconcurrent:5 sci-libs/fftw:3.0 virtual/libusb:1
+DEPEND=python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 ) python_targets_python3_13? ( dev-lang/python:3.13 ) dev-cpp/glibmm:2 dev-libs/boost dev-libs/glib dev-libs/libzip dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtwidgets:5 dev-qt/qtsvg:5 dev-qt/qtconcurrent:5 sci-libs/fftw:3.0 virtual/libusb:1
 DESCRIPTION=An open source multi-function instrument
 EAPI=8
 HOMEPAGE=https://www.dreamsourcelab.com https://github.com/DreamSourceLab/DSView
 IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
 INHERIT=cmake python-r1 udev xdg git-r3
-IUSE=python_targets_python3_11 python_targets_python3_12
+IUSE=python_targets_python3_11 python_targets_python3_12 python_targets_python3_13
 LICENSE=GPL-3
 PROPERTIES=live
-RDEPEND=python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 ) dev-cpp/glibmm:2 dev-libs/boost dev-libs/glib dev-libs/libzip dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtwidgets:5 dev-qt/qtsvg:5 dev-qt/qtconcurrent:5 sci-libs/fftw:3.0 virtual/libusb:1
-REQUIRED_USE=|| ( python_targets_python3_11 python_targets_python3_12 )
+RDEPEND=python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 ) python_targets_python3_13? ( dev-lang/python:3.13 ) dev-cpp/glibmm:2 dev-libs/boost dev-libs/glib dev-libs/libzip dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtwidgets:5 dev-qt/qtsvg:5 dev-qt/qtconcurrent:5 sci-libs/fftw:3.0 virtual/libusb:1
+REQUIRED_USE=|| ( python_targets_python3_11 python_targets_python3_12 python_targets_python3_13 )
 SLOT=0
 _eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	e8de74bac929ba17427e740e95707d00	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	b05c1b7b3c9213c155f128f4eadaa49f	out-of-source-utils	dbf9e34ee8964084651e25907fa8f52c	multibuild	4650a65187015567b4e041bb9bfdb364	python-utils-r1	de71d9571aa267f353b9e8ab4666732e	python-r1	0e15b2ab9cfc87d7474678201d6bca38	udev	f3d9a4376ebd22131726a68e1a0a058f	xdg	3ef49a87c52c8b77c476351195dfe575	git-r3	875eb471682d3e1f18da124be97dcc81
-_md5_=4c62e6c1b244643be4931bcba090e96f
+_md5_=4da43a5011ef1603ed413f41874e807b
