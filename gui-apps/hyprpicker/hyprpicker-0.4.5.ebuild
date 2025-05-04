@@ -5,26 +5,31 @@ EAPI=8
 
 inherit cmake
 
-DESCRIPTION="wlroots-compatible Wayland color picker that does not suck"
+DESCRIPTION="A wlroots-compatible Wayland color picker that does not suck"
 HOMEPAGE="https://github.com/hyprwm/hyprpicker"
-SRC_URI="https://github.com/hyprwm/${PN}/archive/v${PV}.tar.gz -> ${P}.gh.tar.gz"
+
+if [[ "${PV}" = *9999 ]]; then
+	inherit git-r3
+	EGIT_REPO_URI="https://github.com/hyprwm/${PN^}.git"
+else
+	SRC_URI="https://github.com/hyprwm/${PN^}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
+	KEYWORDS="~amd64"
+fi
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~amd64"
 
 RDEPEND="
 	dev-libs/wayland
+	>=dev-util/hyprwayland-scanner-0.4.2
 	gui-libs/hyprutils:=
 	x11-libs/cairo
 	x11-libs/libxkbcommon
 	x11-libs/pango
-	>=dev-util/hyprwayland-scanner-0.4.2
-	>=gui-libs/hyprutils-0.2.0
 "
+DEPEND="${RDEPEND}"
 
 BDEPEND="
-	${RDEPEND}
 	dev-libs/wayland-protocols
 	dev-util/wayland-scanner
 	media-libs/libglvnd

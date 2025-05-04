@@ -36,5 +36,5 @@ BDEPEND="
 "
 
 PATCHES=(
-	"${FILESDIR}/${P}-fix-CFLAGS-CXXFLAGS.patch"
+	"${FILESDIR}/${PN}-0.1.5-fix-CFLAGS-CXXFLAGS.patch"
 )

@@ -21,20 +21,21 @@ SLOT="0"
 
 RDEPEND="
 	dev-cpp/sdbus-c++:0/2
-	dev-libs/hyprgraphics
-	>=dev-libs/hyprlang-0.4.0
-	>=gui-libs/hyprutils-0.2.6:=
 	dev-libs/date
 	dev-libs/glib:2
+	dev-libs/hyprgraphics
+	>=dev-libs/hyprlang-0.6.0
 	dev-libs/wayland
+	>=dev-util/hyprwayland-scanner-0.4.4
+	>=gui-libs/hyprutils-0.2.6:=
 	media-libs/libglvnd
 	media-libs/libjpeg-turbo:=
 	media-libs/libwebp:=
 	media-libs/mesa[opengl]
 	sys-libs/pam
 	x11-libs/cairo
-	x11-libs/libxkbcommon
 	x11-libs/libdrm
+	x11-libs/libxkbcommon
 	x11-libs/pango
 "
 DEPEND="
@@ -49,6 +50,4 @@ BDEPEND="
 
 PATCHES=(
 	"${FILESDIR}/${PN}-0.4.1-fix-CFLAGS-CXXFLAGS.patch"
-	# bug #947781
-	"${FILESDIR}/${P}-explicitly-require-gles3.patch"
 )

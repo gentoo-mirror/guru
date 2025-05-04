@@ -22,14 +22,12 @@ else
 	KEYWORDS="~amd64"
 fi
 
-S="${WORKDIR}/Tauon-${PV}"
-
 LICENSE="GPL-3"
 SLOT="0"
 
 PHAZOR_DEPS="
 	dev-libs/miniaudio
-	media-libs/flac
+	media-libs/flac:=
 	media-libs/game-music-emu
 	media-libs/libopenmpt
 	media-libs/opus
@@ -94,6 +92,7 @@ python_install() {
 
 	plocale_for_each_locale install_locale
 
+	sed -i 's/Exec=tauon/Exec=tauonmb/g' extra/tauonmb.desktop || die
 	domenu extra/tauonmb.desktop
 	doicon -s scalable extra/tauonmb.svg
 
