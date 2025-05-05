@@ -1,0 +1,16 @@
+BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.20.5
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare test
+DEPEND=app-arch/zstd dev-libs/flatbuffers dev-libs/hidapi dev-libs/libevdev dev-libs/pugixml dev-libs/xxhash dev-qt/qtbase:6[concurrent,dbus,gui,widgets] dev-qt/qtmultimedia:6 dev-qt/qtsvg:6 media-libs/alsa-lib media-libs/cubeb media-libs/glew media-libs/libglvnd media-libs/libpng:= media-libs/openal media-libs/vulkan-loader[wayland?] media-video/ffmpeg:= net-misc/curl llvm-core/llvm:= sys-libs/zlib virtual/libusb:1 x11-libs/libX11 faudio? ( app-emulation/faudio ) opencv? ( media-libs/opencv ) wayland? ( dev-libs/wayland ) dev-libs/stb
+DESCRIPTION=PS3 emulator/debugger
+EAPI=8
+HOMEPAGE=https://rpcs3.net/
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=cmake flag-o-matic xdg
+IUSE=discord faudio +llvm opencv wayland
+KEYWORDS=~amd64
+LICENSE=GPL-2
+RDEPEND=app-arch/zstd dev-libs/flatbuffers dev-libs/hidapi dev-libs/libevdev dev-libs/pugixml dev-libs/xxhash dev-qt/qtbase:6[concurrent,dbus,gui,widgets] dev-qt/qtmultimedia:6 dev-qt/qtsvg:6 media-libs/alsa-lib media-libs/cubeb media-libs/glew media-libs/libglvnd media-libs/libpng:= media-libs/openal media-libs/vulkan-loader[wayland?] media-video/ffmpeg:= net-misc/curl llvm-core/llvm:= sys-libs/zlib virtual/libusb:1 x11-libs/libX11 faudio? ( app-emulation/faudio ) opencv? ( media-libs/opencv ) wayland? ( dev-libs/wayland )
+SLOT=0
+SRC_URI=https://github.com/RPCS3/rpcs3/archive/v0.0.34.tar.gz -> rpcs3-0.0.34.tar.gz https://github.com/asmjit/asmjit/archive/416f7356967c1f66784dc1580fe157f9406d8bff.tar.gz -> rpcs3-asmjit-416f7356967c1f66784dc1580fe157f9406d8bff.tar.gz https://github.com/KhronosGroup/glslang/archive/36d08c0d940cf307a23928299ef52c7970d8cee6.tar.gz -> rpcs3-glslang-36d08c0d940cf307a23928299ef52c7970d8cee6.tar.gz https://github.com/miniupnp/miniupnp/archive/7f189988a0decca0ab7da89000051ab91751f70d.tar.gz -> rpcs3-miniupnp-7f189988a0decca0ab7da89000051ab91751f70d.tar.gz https://github.com/thestk/rtmidi/archive/1e5b49925aa60065db52de44c366d446a902547b.tar.gz -> rpcs3-rtmidi-1e5b49925aa60065db52de44c366d446a902547b.tar.gz https://github.com/wolfSSL/wolfssl/archive/00e42151ca061463ba6a95adb2290f678cbca472.tar.gz -> rpcs3-wolfssl-00e42151ca061463ba6a95adb2290f678cbca472.tar.gz https://github.com/RPCS3/soundtouch/archive/394e1f58b23dc80599214d2e9b6a5e0dfd0bbe07.tar.gz -> rpcs3-soundtouch-394e1f58b23dc80599214d2e9b6a5e0dfd0bbe07.tar.gz https://github.com/RPCS3/yaml-cpp/archive/456c68f452da09d8ca84b375faa2b1397713eaba.tar.gz -> rpcs3-yaml-cpp-456c68f452da09d8ca84b375faa2b1397713eaba.tar.gz
+_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	e8de74bac929ba17427e740e95707d00	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	b05c1b7b3c9213c155f128f4eadaa49f	xdg	3ef49a87c52c8b77c476351195dfe575
+_md5_=c2c8cc2bfb0fe8efef27a68508060fe8

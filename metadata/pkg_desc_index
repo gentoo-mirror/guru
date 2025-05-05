@@ -281,7 +281,7 @@ app-misc/s6-man 9999: mdoc versions of the HTML documentation for the s6 supervi
 app-misc/sherlock 0.15.0 9999: Hunt down social media accounts by username across social networks
 app-misc/superfile 1.1.7.1 1.2.0.0: Pretty fancy and modern terminal file manager
 app-misc/tealdeer 1.6.1-r1: A very fast implementation of tldr in Rust.
-app-misc/termdown 1.18.0: Countdown timer and stopwatch in your terminal
+app-misc/termdown 1.18.0-r1: Countdown timer and stopwatch in your terminal
 app-misc/tinyfetch 5.2 6.1 6.2 9999: fetch program written in pure C
 app-misc/tmux-rime 0.0.4: rime for tmux
 app-misc/treefetch 2.0.0: 🌲 A plant-based system fetch tool made with Rust.
@@ -613,7 +613,7 @@ dev-ml/pecu 0.6: Implementation of quoted-printable encoder/decoder from RFC2045
 dev-ml/ppx_yojson_conv_lib 0.17.0: Runtime lib for ppx_yojson_conv
 dev-ml/psq 0.2.0-r2 0.2.1: Functional Priority Search Queues for OCaml
 dev-ml/randomconv 0.1.3: Convert from random bytes to random native numbers
-dev-nim/cligen 1.8.1 1.8.3: Infer & generate command-line interface/option/argument parser
+dev-nim/cligen 1.8.3 1.8.4: Infer & generate command-line interface/option/argument parser
 dev-nim/inim 0.6.1 1.0.0: Interactive Nim Shell / REPL / Playground
 dev-nim/nake 1.9.4-r1: make-like for Nim. Describe your builds as tasks!
 dev-nim/nimbus 1.1.4 1.1.5 9999: Packaging-friendly Nim build system
@@ -756,10 +756,11 @@ dev-python/mpxj 13.7.0: Read/Write project management files (MPP, MSPDI, MPX, PM
 dev-python/msrest 0.7.1: AutoRest swagger generator Python client runtime
 dev-python/mwclient 0.11.0: Unofficial lib for MediaWiki API
 dev-python/nkdfu 0.2: Python DFU tool for updating Nitrokeys' firmware
+dev-python/nltk 3.9.1: Python package for natural language processing.
 dev-python/odfdo 3.13.3: Python library for OpenDocument format (ODF)
 dev-python/odsgenerator 1.11.1-r1: Generate an OpenDocument Format .ods file from a .json or .yaml file.
 dev-python/odsparsator 1.12.1-r2: Generate a JSON file from an OpenDocument Format .ods file.
-dev-python/osc-placement 4.5.0 4.6.0: OpenStackClient plugin for Placement service
+dev-python/osc-placement 4.6.0-r1: OpenStackClient plugin for Placement service
 dev-python/oscrypto 1.3.0-r2: TLS sockets, key generation, encryption, decryption, signing, verification
 dev-python/parsel 1.10.0: Utility to extract data from XML/HTML documents using XPath or CSS selectors
 dev-python/pem 23.1.0: Easy PEM file parsing in Python
@@ -788,7 +789,7 @@ dev-python/pyclip 0.7.0-r2 9999: Python clipboard module
 dev-python/pydantic-settings 2.8.1 2.9.1: Settings management using Pydantic
 dev-python/pydispatcher 2.0.7: Multi-producer-multi-consumer signal dispatching mechanism
 dev-python/pydub 0.25.1: Manipulate audio with an simple and easy high level interface
-dev-python/pyfiglet 0.8_p1: Pure-python FIGlet implementation
+dev-python/pyfiglet 1.0.2: Pure-python FIGlet implementation
 dev-python/pyftdi 0.55.4: PyFtdi provides a user-space driver for FTDI devices
 dev-python/pyglm 2.8.1: Fast OpenGL Mathematics (GLM) for Python
 dev-python/pygments-promql 0.0.9-r1: A PromQL lexer for Pygments
@@ -800,7 +801,7 @@ dev-python/pymorphy3-dicts-uk 2.4.1.1.1663094765: Ukrainian dictionary for PyMor
 dev-python/pynput 1.7.6: Sends virtual input commands
 dev-python/pypandoc 1.15: Pypandoc provides a thin wrapper for pandoc, a universal document converter
 dev-python/pyperscan 0.3.0: An opinionated Python binding for Hyperscan
-dev-python/pyproject2ebuild 0.0.2: Convert pyproject.toml to Gentoo ebuilds automatically.
+dev-python/pyproject2ebuild 0.0.3: Convert pyproject.toml to Gentoo ebuilds automatically.
 dev-python/pyqtdarktheme 2.1.0: A flat dark theme for PySide and PyQt.
 dev-python/pyrime 0.0.7: rime for python
 dev-python/pysdl3 0.9.8_beta1: A pure Python wrapper for SDL3
@@ -819,9 +820,9 @@ dev-python/python-fire 0.6.0 0.7.0: Library for automatically generating command
 dev-python/python-http-client 3.3.5-r1: HTTP REST client, simplified for Python
 dev-python/python-lsp-isort 0.2.1: isort plugin for the Python LSP Server
 dev-python/python-lsp-mypy 0.7.0: Mypy plugin for the Python LSP Server
-dev-python/python-magnumclient 4.7.0 4.8.0: A client for the OpenStack Magnum API
+dev-python/python-magnumclient 4.8.1: A client for the OpenStack Magnum API
 dev-python/python-manilaclient 5.4.0: Python bindings to the OpenStack Manila API
-dev-python/python-octaviaclient 3.10.0: A client for the OpenStack Octavia API
+dev-python/python-octaviaclient 3.10.0-r1: A client for the OpenStack Octavia API
 dev-python/python-olm 3.2.16: Python bindings for dev-libs/olm
 dev-python/python-pidfile 3.1.1: PIDFile context processor. Supported py2 and py3
 dev-python/python-socketio 5.11.4 5.12.1: Python implementation of the Socket.IO realtime server.
@@ -840,6 +841,7 @@ dev-python/rich-click 1.8.8: Format click help output nicely with rich
 dev-python/rpmautospec-core 0.1.5: Core functionality used by rpmautospec
 dev-python/rst2ansi 0.1.5-r3: Render reStructuredText documents to the terminal
 dev-python/rstcheck 6.2.0 6.2.1: Checks syntax of reStructuredText and code blocks nested within it
+dev-python/safety 3.4.0: Scan dependencies for known vulnerabilities and licenses.
 dev-python/safety-schemas 0.0.14: Schemas for Safety tools
 dev-python/scrapy 2.12.0: A high-level Web Crawling and Web Scraping framework
 dev-python/screeninfo 0.8.1: Fetch location and size of physical screens.
@@ -878,7 +880,7 @@ dev-python/textual-serve 1.1.1: Serve Textual apps locally
 dev-python/timeslot 0.1.2: Time slots/intervals with an arbitrary start and stop
 dev-python/tulir-telethon 1.35.0_alpha1 1.37.0_alpha1: Full-featured Telegram client library for Python 3
 dev-python/tweepy 4.14.0: An easy-to-use Python library for accessing the Twitter API.
-dev-python/typer 0.15.3: Typer, build great CLIs. Easy to code. Based on Python type hints.
+dev-python/typer 0.15.3: Build great CLIs. Easy to code. Based on Python type hints.
 dev-python/types-protobuf 4.24.0.20240408 5.27.0.20240626: Typing stubs for protobuf
 dev-python/types-requests 2.32.0.20240712: Typing stubs for requests
 dev-python/typing-inspect 0.9.0: Runtime inspection utilities for Python typing module
@@ -1018,7 +1020,7 @@ games-emulation/duckstation 9999: Fast Sony PlayStation (PSX) emulator
 games-emulation/flycast 9999: Sega Dreamcast, Naomi and Atomiswave emulator
 games-emulation/mupen64plus-qt 1.17 9999: A basic launcher for Mupen64Plus
 games-emulation/np2kai 22 22_p20210211: NP2kai is an emulator for the japanese PC-98 series of computers
-games-emulation/rpcs3 9999: PS3 emulator/debugger
+games-emulation/rpcs3 0.0.34 9999: PS3 emulator/debugger
 games-engines/boxtron 0.5.4-r2: Steam Play compatibility tool to run DOS games using native Linux DOSBox
 games-engines/fs2_open 24.0.2-r1: FreeSpace2 Source Code Project game engine
 games-engines/instead 3.4.1 3.5.2 9999: INSTEAD text-based quest game engine
@@ -1054,7 +1056,7 @@ games-strategy/slay-the-spire 2.2: Deck-building roguelike game with four playab
 games-strategy/unciv-bin 4.15.2 4.15.6_p1: Turn-based historical strategy game, a remake of Civ V
 games-strategy/zedonline-bin 0.3.2-r1: A remake of the 1996 classic game Z, with network play
 games-util/NotEnoughProduction 0.0.4: Tool for building production chains for modded minecraft
-games-util/ProtonUp-Qt 2.11.1 9999: Install and manage GE-Proton, Luxtorpeda & more for Steam Lutris and Heroic.
+games-util/ProtonUp-Qt 2.11.1 2.12.0 9999: Install and manage GE-Proton, Luxtorpeda & more for Steam Lutris and Heroic.
 games-util/chiaki-ng 1.9.5 9999: Client for PlayStation 4 and PlayStation 5 Remote Play
 games-util/curseforge 1.276.2_p25131: The CurseForge Electron App
 games-util/dwarf-therapist 41.2.5 42.1.5: For managing dwarves in Dwarf Fortress
@@ -1108,10 +1110,10 @@ gui-apps/corepins 4.5.0 9999: A bookmarking app for C Suite
 gui-apps/corerenamer 4.5.0 9999: A batch file renamer for C Suite
 gui-apps/coreshot 5.0.0: A screen capture utility for C Suite
 gui-apps/corestats 4.5.0 9999: A system resource viewer for C Suite
-gui-apps/corestuff 4.5.0 9999: An activity viewer for C Suite
+gui-apps/corestuff 5.0.0: An activity viewer for C Suite
 gui-apps/coreterminal 5.0.0: Terminal emulator for C Suite
-gui-apps/coretime 4.5.0 9999: A time related task manager for C Suite
-gui-apps/coreuniverse 4.5.0 9999: Shows information about apps for C Suite
+gui-apps/coretime 5.0.0: A time related task manager for C Suite
+gui-apps/coreuniverse 5.0.0: Shows information about apps for C Suite
 gui-apps/darkman 2.0.1-r1: Framework for dark and light mode transitions
 gui-apps/espanso 2.2.3: Cross-platform Text Expander written in Rust
 gui-apps/eww 0.6.0-r3 9999: Elkowars Wacky Widgets is a standalone widget system made in Rust
@@ -1259,7 +1261,7 @@ media-fonts/victor-mono 1.5.4 1.5.5 1.5.6: A free programming font with cursive 
 media-fonts/warframe-fonts 0_pre20191111: Fonts from the Warframe game
 media-gfx/KTX-Software 4.3.2: KTX (Khronos Texture) Library and Tools
 media-gfx/WebPlotDigitizer-bin 4.7: Web based tool to extract data from plots, images, and maps
-media-gfx/airsane 0.4.3: Publish SANE scanners via Apple Airscan/eSCL
+media-gfx/airsane 0.4.5: Publish SANE scanners via Apple Airscan/eSCL
 media-gfx/azpainter 3.0.11: Full color painting software for Linux for illustration drawing
 media-gfx/bambustudio-bin 02.00.03.54: Bambu Studio is a cutting-edge, feature-rich slicing software
 media-gfx/beeref 0.3.3: A Simple Reference Image Viewer
@@ -1462,7 +1464,8 @@ net-im/teams-for-linux 2.0.3 2.0.4 2.0.8: Unofficial Microsoft Teams client for 
 net-im/vesktop-bin 1.5.5 1.5.6: All-in-one voice and text chat for gamers with Vencord Preinstalled
 net-im/zulip-desktop-bin 5.11.1 5.12.0: Organized chat for distributed teams.
 net-irc/catgirl 2.2 2.2a: TLS-only terminal IRC client
-net-irc/halloy 2025.2 2025.4: IRC application written in Rust
+net-irc/halloy 2025.2 2025.3 2025.4: IRC application written in Rust
+net-irc/limnoria-plugins-bugzilla 4.0: Bugzilla integration plugin for the Limnoria IRC Bot
 net-irc/litterbox 1.9: TLS-only IRC logger
 net-irc/pounce 3.0 3.1 3.1-r1: Multi-client, TLS-only IRC bouncer
 net-irc/quarg 1.0.0: Search Quassel logs for matching messages and print them
@@ -1551,7 +1554,7 @@ net-p2p/gridcoin 5.4.8.0_p1-r1 5.4.9.0: Proof-of-Stake based cryptocurrency that
 net-p2p/ipfs-desktop-bin 0.39.0 0.40.0: A desktop client for IPFS. The IPFS's Native Application
 net-p2p/monero 0.18.3.4-r1 0.18.4.0 9999: The secure, private, untraceable cryptocurrency
 net-p2p/monero-gui-bin 0.18.4.0: An open-source GUI wallet developed by the Monero community.
-net-p2p/p2pool 4.1.1 4.3 4.4 4.4-r1 9999: Decentralized pool for Monero mining
+net-p2p/p2pool 4.1.1 4.3 4.4 4.4-r1 4.5 9999: Decentralized pool for Monero mining
 net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
 net-p2p/yggdrasil-go 0.5.12 9999: An experiment in scalable routing as an encrypted IPv6 overlay network
 net-print/hpuld 1.00.39.15.00.23-r1: HP Unified Linux Driver (for samsung hardware)
@@ -1763,7 +1766,7 @@ www-apps/anubis 1.16.0 1.17.0: Weighs the soul of incoming HTTP requests to stop
 www-apps/code-server-bin 4.18.0 4.19.1 4.90.3: VS Code in the browser (binary version with unbundled node and ripgrep)
 www-apps/forgejo 9.0.3 10.0.0 10.0.1: A self-hosted lightweight software forge
 www-apps/freshrss 1.24.3 1.25.0: A free, self-hostable news aggregator
-www-apps/invidious 2024.11.10.0 2025.03.14.0: Invidious is an alternative front-end to YouTube
+www-apps/invidious 2025.03.14.0 2025.05.04.0: Invidious is an alternative front-end to YouTube
 www-apps/jackett 0.22.1363: API Support for your favorite torrent trackers
 www-apps/laminar 1.3-r1: Fast and lightweight Continuous Integration
 www-apps/libmedium 2024.06.10: Alternative private front-end to Medium
@@ -1783,7 +1786,7 @@ www-client/mullvad-browser-bin 14.5.1: The Mullvad Browser is developed to minim
 www-client/nyxt 3.11.8 3.12.0 9999: Nyxt - the hacker's power-browser
 www-client/vimb 3.6.0 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
 www-client/yandex-browser 25.2.6.724_p1: The web browser from Yandex
-www-client/zen-bin 1.11b 1.11.5b: Zen Browser - A Firefox-based browser focused on privacy
+www-client/zen-bin 1.11.5b 1.12.1b: Zen Browser - A Firefox-based browser focused on privacy
 www-misc/dufs 0.40.0: Dufs is a distinctive utility file server
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits
 www-misc/gorss 0.3: Go Terminal Feed Reader
