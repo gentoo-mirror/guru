@@ -271,6 +271,7 @@ CRATES="
 	hashlink@0.9.1
 	heck@0.4.1
 	heck@0.5.0
+	hermit-abi@0.3.9
 	hermit-abi@0.4.0
 	hex@0.4.3
 	hexf-parse@0.2.1
@@ -397,6 +398,7 @@ CRATES="
 	num-iter@0.1.45
 	num-rational@0.4.2
 	num-traits@0.2.19
+	num_cpus@1.16.0
 	num_enum@0.7.3
 	num_enum_derive@0.7.3
 	objc-foundation@0.1.1
@@ -568,6 +570,7 @@ CRATES="
 	simd-adler32@0.3.7
 	simd_helpers@0.1.0
 	siphasher@1.0.1
+	sipper@0.1.0
 	skrifa@0.26.6
 	slab@0.4.9
 	slotmap-careful@0.2.3
@@ -862,16 +865,16 @@ declare -A GIT_CRATES=(
 	[cryoglyph]='https://github.com/iced-rs/cryoglyph;be2defe4a13fd7c97c6f4c81e8e085463eb578dc;cryoglyph-%commit%'
 	[dark-light]='https://github.com/rust-dark-light/dark-light;8e1f745f91e1e805fa772a83e4744afe95d70aa1;dark-light-%commit%'
 	[dpi]='https://github.com/iced-rs/winit;11414b6aa45699f038114e61b4ddf5102b2d3b4b;winit-%commit%/dpi'
-	[iced]='https://github.com/iced-rs/iced;1b22d7d5fcdf519a3cac7a3cfd14398a3108c3b8;iced-%commit%'
-	[iced_core]='https://github.com/iced-rs/iced;1b22d7d5fcdf519a3cac7a3cfd14398a3108c3b8;iced-%commit%/core'
-	[iced_futures]='https://github.com/iced-rs/iced;1b22d7d5fcdf519a3cac7a3cfd14398a3108c3b8;iced-%commit%/futures'
-	[iced_graphics]='https://github.com/iced-rs/iced;1b22d7d5fcdf519a3cac7a3cfd14398a3108c3b8;iced-%commit%/graphics'
-	[iced_renderer]='https://github.com/iced-rs/iced;1b22d7d5fcdf519a3cac7a3cfd14398a3108c3b8;iced-%commit%/renderer'
-	[iced_runtime]='https://github.com/iced-rs/iced;1b22d7d5fcdf519a3cac7a3cfd14398a3108c3b8;iced-%commit%/runtime'
-	[iced_tiny_skia]='https://github.com/iced-rs/iced;1b22d7d5fcdf519a3cac7a3cfd14398a3108c3b8;iced-%commit%/tiny_skia'
-	[iced_wgpu]='https://github.com/iced-rs/iced;1b22d7d5fcdf519a3cac7a3cfd14398a3108c3b8;iced-%commit%/wgpu'
-	[iced_widget]='https://github.com/iced-rs/iced;1b22d7d5fcdf519a3cac7a3cfd14398a3108c3b8;iced-%commit%/widget'
-	[iced_winit]='https://github.com/iced-rs/iced;1b22d7d5fcdf519a3cac7a3cfd14398a3108c3b8;iced-%commit%/winit'
+	[iced]='https://github.com/iced-rs/iced;fd5ed0d0a6e84b3c036ff8e1f0d62d383d4b1e82;iced-%commit%'
+	[iced_core]='https://github.com/iced-rs/iced;fd5ed0d0a6e84b3c036ff8e1f0d62d383d4b1e82;iced-%commit%/core'
+	[iced_futures]='https://github.com/iced-rs/iced;fd5ed0d0a6e84b3c036ff8e1f0d62d383d4b1e82;iced-%commit%/futures'
+	[iced_graphics]='https://github.com/iced-rs/iced;fd5ed0d0a6e84b3c036ff8e1f0d62d383d4b1e82;iced-%commit%/graphics'
+	[iced_renderer]='https://github.com/iced-rs/iced;fd5ed0d0a6e84b3c036ff8e1f0d62d383d4b1e82;iced-%commit%/renderer'
+	[iced_runtime]='https://github.com/iced-rs/iced;fd5ed0d0a6e84b3c036ff8e1f0d62d383d4b1e82;iced-%commit%/runtime'
+	[iced_tiny_skia]='https://github.com/iced-rs/iced;fd5ed0d0a6e84b3c036ff8e1f0d62d383d4b1e82;iced-%commit%/tiny_skia'
+	[iced_wgpu]='https://github.com/iced-rs/iced;fd5ed0d0a6e84b3c036ff8e1f0d62d383d4b1e82;iced-%commit%/wgpu'
+	[iced_widget]='https://github.com/iced-rs/iced;fd5ed0d0a6e84b3c036ff8e1f0d62d383d4b1e82;iced-%commit%/widget'
+	[iced_winit]='https://github.com/iced-rs/iced;fd5ed0d0a6e84b3c036ff8e1f0d62d383d4b1e82;iced-%commit%/winit'
 	[winit]='https://github.com/iced-rs/winit;11414b6aa45699f038114e61b4ddf5102b2d3b4b;winit-%commit%'
 )
 
@@ -942,7 +945,7 @@ src_unpack() {
 src_configure() {
 	if [[ ${PV} != *9999* ]] ; then
 		# Fix cargo.eclass handling of patched dependencies
-		# https://github.com/squidowl/halloy/blob/2025.4/Cargo.toml#L97-L98
+		# https://github.com/squidowl/halloy/blob/2025.3/Cargo.toml#L92-L94
 		sed -i "s,'https://github.com/iced-rs/iced',crates-io,g" \
 			"${ECARGO_HOME}/config.toml" || die
 	fi

@@ -4,7 +4,7 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{11..12} )
+PYTHON_COMPAT=( python3_{12..13} )
 
 inherit desktop distutils-r1 git-r3 xdg
 
@@ -26,7 +26,7 @@ RDEPEND="
 "
 
 PATCHES=(
-	"${FILESDIR}/${P}-add-entrypoint.patch"
+	"${FILESDIR}/${PN}-2.11.1-add-entrypoint.patch"
 )
 
 distutils_enable_tests pytest
@@ -43,4 +43,9 @@ src_install() {
 	for size in 64 128 256; do
 		doicon -s ${size} share/icons/hicolor/${size}x${size}/apps/net.davidotek.pupgui2.png
 	done
+}
+
+src_test() {
+	local -x QT_QPA_PLATFORM=offscreen
+	distutils-r1_src_test
 }
