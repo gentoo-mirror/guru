@@ -1,18 +1,20 @@
-# Copyright 2023-2024 Gentoo Authors
+# Copyright 2023-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 inherit font
 
-DESCRIPTION="Iconic font aggregator, collection, & patcher. 3,600+ icons, 50+ patched fonts: Hack, Source Code Pro, more. Glyph collections: Font Awesome, Material Design Icons, Octicons, & more"
+DESCRIPTION="Patched font collection with a high number of glyphs (icons)"
 HOMEPAGE="https://github.com/ryanoasis/nerd-fonts"
 SRC_URI="
 	0xproto? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/0xProto.tar.xz -> 0xProto-${PV}.tar.xz )
 	3270? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/3270.tar.xz -> 3270-${PV}.tar.xz )
+	adwaitamono? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/AdwaitaMono.tar.xz -> -AdwaitaMono-${PV}.tar.xz )
 	agave? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/Agave.tar.xz -> Agave-${PV}.tar.xz )
 	anonymouspro? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/AnonymousPro.tar.xz -> AnonymousPro-${PV}.tar.xz )
 	arimo? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/Arimo.tar.xz -> Arimo-${PV}.tar.xz )
+	atkinsonhyperlegiblemono? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/AtkinsonHyperlegibleMono.tar.xz -> AtkinsonHyperlegibleMono-${PV}.tar.xz )
 	aurulentsansmono? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/AurulentSansMono.tar.xz -> AurulentSansMono-${PV}.tar.xz )
 	bigblueterminal? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/BigBlueTerminal.tar.xz -> BigBlueTerminal-${PV}.tar.xz )
 	bitstreamverasansmono? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/BitstreamVeraSansMono.tar.xz -> BitstreamVeraSansMono-${PV}.tar.xz )
@@ -25,6 +27,7 @@ SRC_URI="
 	d2coding? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/D2Coding.tar.xz -> D2Coding-${PV}.tar.xz )
 	daddytimemono? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/DaddyTimeMono.tar.xz -> DaddyTimeMono-${PV}.tar.xz )
 	dejavusansmono? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/DejaVuSansMono.tar.xz -> DejaVuSansMono-${PV}.tar.xz )
+	departuremono? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/DepartureMono.tar.xz -> DepartureMono-${PV}.tar.xz )
 	droidsansmono? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/DroidSansMono.tar.xz -> DroidSansMono-${PV}.tar.xz )
 	envycoder? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/EnvyCodeR.tar.xz -> EnvyCodeR-${PV}.tar.xz )
 	fantasquesansmono? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/FantasqueSansMono.tar.xz -> FantasqueSansMono-${PV}.tar.xz )
@@ -83,24 +86,19 @@ LICENSE="OFL-1.1"
 SLOT="0"
 KEYWORDS="~amd64"
 
-IUSE_FONTS="0xproto 3270 agave anonymouspro arimo aurulentsansmono bigblueterminal bitstreamverasansmono
-cascadiacode cascadiamono codenewroman comicshannsmono commitmono cousine d2coding daddytimemono
-dejavusansmono droidsansmono envycoder fantasquesansmono firacode firamono geistmono gomono gohu
-hack hasklig heavydata hermit iawriter ibmplexmono inconsolata inconsolatago inconsolatalgc
-intelonemono iosevka iosevkaterm iosevkatermslab jetbrainsmono lekton liberationmono lilex
-martianmono meslo monaspace monofur monoid mononoki mplus nerdfontssymbolsonly noto opendyslexic
-overpass profont proggyclean recursive robotomono sharetechmono sourcecodepro spacemono terminus
-tinos ubuntu ubuntumono ubuntusans victormono zedmono"
+IUSE_FONTS="0xproto 3270 adwaitamono agave anonymouspro arimo
+atkinsonhyperlegiblemono aurulentsansmono bigblueterminal bitstreamverasansmono
+cascadiacode cascadiamono codenewroman comicshannsmono commitmono cousine
+d2coding daddytimemono dejavusansmono departuremono droidsansmono envycoder
+fantasquesansmono firacode firamono geistmono gomono gohu hack hasklig
+heavydata hermit iawriter ibmplexmono inconsolata inconsolatago inconsolatalgc
+intelonemono iosevka iosevkaterm iosevkatermslab jetbrainsmono lekton
+liberationmono lilex martianmono meslo monaspace monofur monoid mononoki mplus
+nerdfontssymbolsonly noto opendyslexic overpass profont proggyclean recursive
+robotomono sharetechmono sourcecodepro spacemono terminus tinos ubuntu
+ubuntumono ubuntusans victormono zedmono"
 IUSE="${IUSE_FONTS}"
 REQUIRED_USE="|| ( ${IUSE_FONTS} )"
-
-RDEPEND="
-	firacode? ( !media-fonts/firacode-nerdfont )
-	iosevka? ( !media-fonts/iosevka-nerdfont )
-	jetbrainsmono? ( !media-fonts/jetbrainsmono-nerdfont )
-	robotomono? ( !media-fonts/robotomono-nerdfont )
-	ubuntumono? ( !media-fonts/ubuntumono-nerdfont )
-"
 
 FONT_SUFFIX=""
 

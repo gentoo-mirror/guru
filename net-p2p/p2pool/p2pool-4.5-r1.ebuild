@@ -1,7 +1,9 @@
-# Copyright 2022-2024 Gentoo Authors
+# Copyright 2022-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-#TODO: enable/fix GRPC dependency and add it as USE flag (https://github.com/SChernykh/p2pool/issues/313)
+#TODO: enable/fix GRPC/TLS dependency and add it as USE flag (https://github.com/SChernykh/p2pool/issues/313)
+#	These features build fine in cmake outside of portage, I can't figure out how to link them here for the life of me.
+#	It's probably better to just re-write the CMakeLists.txt to dynamicially link with gRPC
 
 EAPI=8
 
@@ -17,15 +19,22 @@ SRC_URI="
 LICENSE="BSD GPL-3+ ISC LGPL-3+ MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~arm64 ~x86"
-#IUSE="grpc"
+#IUSE="grpc tls"
+IUSE="daemon"
 
 DEPEND="
-	dev-libs/libsodium
-	net-libs/czmq
+	dev-libs/libsodium:=
+	dev-libs/libuv:=
+	dev-libs/randomx
+	net-libs/zeromq:=
+	net-misc/curl
+	daemon? (
+		acct-group/monero
+		acct-user/monero
+	)
 "
-BDEPEND="
-	verify-sig? ( sec-keys/openpgp-keys-schernykh )
-"
+RDEPEND="${DEPEND}"
+BDEPEND="verify-sig? ( sec-keys/openpgp-keys-schernykh )"
 
 src_unpack() {
 	if use verify-sig; then
@@ -42,27 +51,32 @@ src_unpack() {
 		popd || die
 	fi
 	unpack ${P}.tar.xz
-	mv -T "${WORKDIR}"/${PN} "${WORKDIR}"/${P} || die
-}
-
-src_prepare(){
-	rm "${S}/cmake/flags.cmake" || die
-	cp "${FILESDIR}/flags.cmake" "${S}/cmake/flags.cmake" || die
-	cmake_src_prepare
-	default_src_prepare
+	mv -T "${WORKDIR}"/{${PN},${P}} || die
 }
 
 src_configure() {
 	local mycmakeargs=(
-		-DWITH_RANDOMX=OFF
-		-DWITH_GRPC=OFF
-		#-DWITH_GRPC=$(usex grpc)
+		-DSTATIC_BINARY=OFF
+		-DSTATIC_LIBS=OFF
+		-DWITH_GRPC=OFF #$(usex grpc)
+		-DWITH_TLS=OFF #$(usex tls)
 	)
 	cmake_src_configure
 }
 
 src_install(){
 	dobin "${BUILD_DIR}/p2pool"
+
+	if use daemon; then
+		# data-dir
+		keepdir /var/lib/${PN}
+		fowners monero:monero /var/lib/${PN}
+		fperms 0755 /var/lib/${PN}
+
+		# OpenRC
+		newconfd "${FILESDIR}"/${PN}-4.5-r1.confd ${PN}
+		newinitd "${FILESDIR}"/${PN}-4.5-r1.initd ${PN}
+	fi
 }
 
 pkg_postinst() {
@@ -79,4 +93,10 @@ pkg_postinst() {
 	ewarn ""
 	ewarn "Rewards will not be visible unless you use a wallet that supports P2Pool."
 	ewarn "See https://p2pool.io/#help and https://github.com/SChernykh/p2pool for more information."
+
+	if use daemon; then
+		einfo "p2pool supports just OpenRC daemon right now."
+		einfo "To launch it set your wallet address in /etc/conf.d/${PN} and run"
+		einfo "  # rc-service p2pool start"
+	fi
 }

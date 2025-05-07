@@ -10,8 +10,7 @@ inherit cargo shell-completion
 DESCRIPTION="Friendly and fast tool for sending HTTP requests"
 HOMEPAGE="https://github.com/ducaale/xh"
 SRC_URI="https://github.com/ducaale/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
-DEPS_URI="https://github.com/freijon/${PN}/releases/download/v${PV}/${P}-crates.tar.xz"
-SRC_URI+=" ${DEPS_URI}"
+SRC_URI+=" https://github.com/freijon/${PN}/releases/download/v${PV}/${P}-crates.tar.xz"
 
 LICENSE="MIT"
 # Dependent crate licenses

@@ -5,7 +5,7 @@ EAPI=8
 
 CRATES=""
 
-RUST_MIN_VER="1.80.1"
+RUST_MIN_VER="1.85.0"
 
 inherit cargo desktop
 
