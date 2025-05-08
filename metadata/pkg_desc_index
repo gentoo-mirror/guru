@@ -347,7 +347,7 @@ app-text/code-minimap 0.6.8: A high performance code minimap generator
 app-text/dooit 3.1.0: A TUI todo manager
 app-text/epubgrep 0.6.2: Search tool for EPUB e-books
 app-text/ford 6.2.5 7.0.8-r1 7.0.9-r1 7.0.10: FORD, automatic documentation generator for modern Fortran programs
-app-text/harper 0.33.0: The language checker for developers.
+app-text/harper 0.34.0: The language checker for developers.
 app-text/jrnl 4.1 4.2: Collect your thoughts and notes without leaving the command line
 app-text/klogg 22.06.0.1289-r1: A GUI application to browse and search through long and complex log files
 app-text/komikku 1.72.0: Manga reader for GNOME
@@ -689,6 +689,7 @@ dev-python/dropbox 11.36.2 12.0.2: The offical Dropbox SDK for Python
 dev-python/dtreeviz 2.2.2: A python library for decision tree visualization and model interpretation
 dev-python/evernote2 1.0.3 9999: Unofficial Evernote SDK for Python 3
 dev-python/exif 1.6.0: Read and modify image EXIF metadata using Python.
+dev-python/fastapi 0.115.12: FastAPI framework, high performance, easy to learn, ready for production
 dev-python/find-libpython 0.4.0: Finds the libpython associated with the current Python environment
 dev-python/flask-restx 1.3.0: Framework API development with Flask
 dev-python/flask-socketio 5.5.1: Socket.IO integration for Flask applications.
@@ -755,7 +756,6 @@ dev-python/mpxj 13.7.0: Read/Write project management files (MPP, MSPDI, MPX, PM
 dev-python/msrest 0.7.1: AutoRest swagger generator Python client runtime
 dev-python/mwclient 0.11.0: Unofficial lib for MediaWiki API
 dev-python/nkdfu 0.2: Python DFU tool for updating Nitrokeys' firmware
-dev-python/nltk 3.9.1: Python package for natural language processing.
 dev-python/odfdo 3.13.3: Python library for OpenDocument format (ODF)
 dev-python/odsgenerator 1.11.1-r1: Generate an OpenDocument Format .ods file from a .json or .yaml file.
 dev-python/odsparsator 1.12.1-r2: Generate a JSON file from an OpenDocument Format .ods file.
@@ -840,7 +840,6 @@ dev-python/rich-click 1.8.8: Format click help output nicely with rich
 dev-python/rpmautospec-core 0.1.5: Core functionality used by rpmautospec
 dev-python/rst2ansi 0.1.5-r3: Render reStructuredText documents to the terminal
 dev-python/rstcheck 6.2.0 6.2.1: Checks syntax of reStructuredText and code blocks nested within it
-dev-python/safety 3.4.0: Scan dependencies for known vulnerabilities and licenses.
 dev-python/safety-schemas 0.0.14: Schemas for Safety tools
 dev-python/scrapy 2.12.0: A high-level Web Crawling and Web Scraping framework
 dev-python/screeninfo 0.8.1: Fetch location and size of physical screens.
@@ -860,6 +859,7 @@ dev-python/sphinx-sitemap 2.6.0: Sitemap generator for Sphinx
 dev-python/sphinxcontrib-katex 0.9.9 0.9.10: KaTeX Sphinx extension for rendering of math in HTML pages
 dev-python/sphinxext-opengraph 0.10.0: Sphinx extension to generate unique OpenGraph metadata
 dev-python/sphinxnotes-mock 1.0.2: Sphinx extension for mocking directives and roles without modifying documents
+dev-python/sqlmodel 0.0.24: SQL databases in Python, designed for simplicity, compatibility, and robustness.
 dev-python/sse-starlette 1.1.6: Server Sent Events for Starlette
 dev-python/starkbank-ecdsa 2.2.0-r1: A lightweight and fast pure python ECDSA library
 dev-python/steam 1.6.1: Python package for interacting with Steam
@@ -993,7 +993,7 @@ dev-vcs/gitqlient 1.6.2 1.6.3 9999: Multi-platform Git client written with Qt
 dev-vcs/gitqlient-gitserver-plugin 0.2.0: GitQlient GitServer plugin
 dev-vcs/gitqlient-jenkins-plugin 0.2.0: GitQlient Jenkins plugin
 dev-vcs/gitui 0.26.3 0.27.0: blazing fast terminal-ui for git
-dev-vcs/jj 0.27.0-r1 0.28.1 0.28.2 9999: Jujutsu - an experimental version control system
+dev-vcs/jj 0.28.2 0.29.0 9999: Jujutsu - an experimental version control system
 dev-vcs/lazygit 0.47.2 0.48.0 0.49.0: Simple terminal UI for git commands
 dev-vcs/lazyjj 0.5.0: TUI for Jujutsu/jj
 dev-vcs/pijul 1.0.0_beta9: A distributed version control system based on a theory of patches
@@ -1127,7 +1127,7 @@ gui-apps/hiprompt-gtk-py 0.8.0 9999: GTK+ Himitsu prompter for Wayland
 gui-apps/hypridle 0.1.5-r2 0.1.6 9999: Hyprland's idle daemon
 gui-apps/hyprlock 0.7.0 0.8.2 9999: Hyprland's GPU-accelerated screen locking utility
 gui-apps/hyprnome 0.3.0: GNOME-like workspace switching in Hyprland.
-gui-apps/hyprpaper 0.7.3-r2 0.7.4: A blazing fast wayland wallpaper utility
+gui-apps/hyprpaper 0.7.4 0.7.5: A blazing fast wayland wallpaper utility
 gui-apps/hyprpicker 0.4.5 9999: A wlroots-compatible Wayland color picker that does not suck
 gui-apps/hyprshade 3.2.1 9999: Hyprland shader configuration tool
 gui-apps/hyprshot 1.3.0-r1 9999: Utility to easily take screenshots in Hyprland using your mouse
@@ -1241,7 +1241,7 @@ media-fonts/hackgen 2.10.0: HackGen is a composite font of Hack and GenJyuu-Goth
 media-fonts/inconsolata_dz 20201205: A beautiful sans-serif monotype font designed for code listings
 media-fonts/last-resort 15.100 16.000: A collection of glyphs used as the backup of "last resort" to any other font
 media-fonts/lato 2: Lato font
-media-fonts/libertinus 7.040 7.050: Libertinus font
+media-fonts/libertinus 7.050 7.051: Libertinus font
 media-fonts/linja-pona 4.2 4.9: Font for sitelen pona, a script for toki pona
 media-fonts/linja-wawa 1.21: Font for sitelen pona, a script for toki pona
 media-fonts/monaspace 1.000: A free and open-source typeface for developers
@@ -1554,7 +1554,7 @@ net-p2p/gridcoin 5.4.8.0_p1-r1 5.4.9.0: Proof-of-Stake based cryptocurrency that
 net-p2p/ipfs-desktop-bin 0.39.0 0.40.0: A desktop client for IPFS. The IPFS's Native Application
 net-p2p/monero 0.18.3.4-r1 0.18.4.0 0.18.4.0-r1 9999: The secure, private, untraceable cryptocurrency
 net-p2p/monero-gui-bin 0.18.4.0: An open-source GUI wallet developed by the Monero community.
-net-p2p/p2pool 4.5 4.5-r1 9999: Decentralized pool for Monero mining
+net-p2p/p2pool 4.5 4.5-r1 4.5-r2 9999: Decentralized pool for Monero mining
 net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
 net-p2p/yggdrasil-go 0.5.12 9999: An experiment in scalable routing as an encrypted IPv6 overlay network
 net-print/hpuld 1.00.39.15.00.23-r1: HP Unified Linux Driver (for samsung hardware)
@@ -1670,6 +1670,9 @@ sys-apps/bat-extras 2023.09.19-r2 9999: Bash scripts that integrate bat with var
 sys-apps/bpftune 9999: bpftune uses BPF to auto-tune Linux systems
 sys-apps/bustd 0.1.1: Process killer daemon for out-of-memory scenarios
 sys-apps/colortail 0.3.3 9999: tail command with colors
+sys-apps/coolercontrol 2.1.0: Monitor and control your cooling and other devices
+sys-apps/coolercontrol-liqctld 2.1.0: Monitor and control your cooling and other devices (liqctld)
+sys-apps/coolercontrold 2.1.0: Monitor and control your cooling and other devices (daemon)
 sys-apps/corefreq 1.96.3: CPU monitoring software designed for the 64-bits Processors, like top
 sys-apps/dnf5 5.2.11.0 5.2.12.0: Command-line package manager
 sys-apps/dool 1.3.1-r1 1.3.2-r2 9999: Versatile replacement for vmstat, iostat and ifstat (clone of dstat)
