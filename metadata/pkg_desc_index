@@ -88,7 +88,7 @@ app-admin/bitwarden-cli-bin 2024.6.0 2025.2.0 2025.3.0: Precompiled CLI frontend
 app-admin/blahajdots 0.5.0 9999: Bespoke dotfile management for sharkgirls.
 app-admin/boinctui 2.7.1 2.7.1-r1: Fullscreen text mode manager for the BOINC client
 app-admin/chamber 2.13.2: Managing secrets in AWS SSM Parameter Store
-app-admin/chezmoi 2.60.1 2.61.0 2.62.0: Manage your dotfiles across multiple machines, securely
+app-admin/chezmoi 2.61.0 2.62.3: Manage your dotfiles across multiple machines, securely
 app-admin/customrescuecd-x86_64 0.12.7 0.12.8: A system rescue cd or usbstick for desktop and server based on gentoo
 app-admin/dotbot 1.20.1: A tool that bootstraps your dotfiles
 app-admin/gentoo_update 0.2.4: Gentoo Linux updater
@@ -533,7 +533,6 @@ dev-lang/wabt 1.0.34: The WebAssembly Binary Toolkit
 dev-libs/M_CLI2 3.2.0: M_CLI2 - parse Unix-like command line arguments from Fortran
 dev-libs/StringiFor 1.1.4: StringiFor, Strings Fortran Manipulator, yet another strings Fortran module
 dev-libs/cgicc 3.2.19 3.2.20: A C++ class library for writing CGI applications
-dev-libs/cusparselt 0.7.1.0: A High-Performance CUDA Library for Sparse Matrix-Matrix Multiplication
 dev-libs/cyrus-sasl-xoauth2 0.2: XOAUTH2 mechanism plugin for cyrus-sasl
 dev-libs/dmd_core 0.7.2-r1: Core logic for an AT&T / Teletype DMD 5620 terminal emulator
 dev-libs/fastText 0.9.2: Library for fast text representation and classification
@@ -874,9 +873,9 @@ dev-python/templated-dictionary 1.5: Python dictionary with Jinja2 expansion
 dev-python/tempus-themes 2.3.0.20220206: Accessible themes for Pygments
 dev-python/tempy 1.4.0: A simple, visually pleasing weather report in your terminal
 dev-python/termynal 0.13.0: A lightweight and modern animated terminal window
-dev-python/textual 0.88.1 3.0.0: Modern Text User Interface framework
+dev-python/textual 0.88.1 3.2.0: Modern Text User Interface framework
 dev-python/textual-dev 1.7.0: Modern Text User Interface framework
-dev-python/textual-serve 1.1.1: Serve Textual apps locally
+dev-python/textual-serve 1.1.2: Serve Textual apps locally
 dev-python/timeslot 0.1.2: Time slots/intervals with an arbitrary start and stop
 dev-python/tulir-telethon 1.35.0_alpha1 1.37.0_alpha1: Full-featured Telegram client library for Python 3
 dev-python/tweepy 4.14.0: An easy-to-use Python library for accessing the Twitter API.
@@ -1069,7 +1068,7 @@ games-util/legendary 0.20.33-r2 0.20.34-r2: A free and open-source replacement f
 games-util/libtess2 1.0.2: Game and tools oriented refactored version of GLU tesselator
 games-util/mangohud 0.7.2-r1 0.8.0 0.8.1 9999: Vulkan and OpenGL overlay for monitoring FPS, sensors, system load and more
 games-util/minigalaxy 1.2.6: A simple GOG client for Linux
-games-util/modrinth-app-bin 0.9.2 0.9.3 0.9.4: A unique, open source launcher that allows you to play your favorite Minecraft mods, and keep them up to date, all in one neat little package.
+games-util/modrinth-app-bin 0.9.3 0.9.4 0.9.5: A unique, open source launcher that allows you to play your favorite Minecraft mods, and keep them up to date, all in one neat little package.
 games-util/pegasus 9999: Graphical frontend for browsing your game library
 games-util/protonup 0.1.5 9999: Install and Update Proton-GE
 games-util/r2modman-bin 3.1.51: A simple and easy to use mod manager for several games using Thunderstore
@@ -1137,7 +1136,7 @@ gui-apps/hyprswitch 1.3.1: A CLI/GUI that allows switching between windows in Hy
 gui-apps/hyprsysteminfo 0.1.3: Hyprland's system information GUI application
 gui-apps/intiface-central-bin 2.6.0 2.6.4: Buttplug frontend application
 gui-apps/ironbar 0.16.0-r1 0.16.1 0.16.1-r1: Customisable Wayland gtk bar written in Rust
-gui-apps/klassy 9999: Klassy QT6 window decoration theme for KDE Plasma 6.3+
+gui-apps/klassy 6.3 9999: Klassy QT6 window decoration theme for KDE Plasma 6.3+
 gui-apps/koi 0.4 0.5 0.5.1: Theme scheduling for the KDE Plasma Desktop
 gui-apps/lan-mouse 0.7.3-r1: Software KVM Switch / mouse & keyboard sharing software for Local Area Networks
 gui-apps/lemurs 0.3.2: A TUI Display/Login Manager
@@ -1385,7 +1384,7 @@ media-video/obs-multi-rtmp 0.6.0.1 9999: OBS Simulcast support plugin
 media-video/obs-streamfx 0.12.0.9999 9999: OBS® Studio plugin which adds many new effects.
 media-video/obs-vaapi 0.4.1 0.4.2 9999: OBS Studio VAAPI support via GStreamer
 media-video/stremio 4.4.168: Stremio is a modern media center for your video entertainment.
-media-video/syncplay 1.7.3: Client/server to synchronize media playback
+media-video/syncplay 1.7.3 1.7.4: Client/server to synchronize media playback
 media-video/uxplay 1.67-r1 1.68.3-r1 1.70-r1: AirPlay Unix mirroring server
 media-video/walksnail-osd-tool 0.3.0-r2 9999: Tool for rendering OSDs over Walksnail DVR recordings
 media-video/wl-screenrec 0.1.7: High performance screen/audio recorder for wlroots
@@ -1498,6 +1497,7 @@ net-misc/curlie 1.8.2: Curlie is a frontend to curl that adds the ease of use of
 net-misc/cve-client 1.1.1 9999: CLI-based client / toolbox for CVE.org
 net-misc/eg25-manager 0.4.2: Daemon for managing the Quectel EG25 modem
 net-misc/fedigroup 1.0.6 1.0.8: Emulate group accounts on Mastodon/Pleroma
+net-misc/ffsend 0.2.77: Easily and securely share files from the command line
 net-misc/fileshelter 6.2.0: FileShelter is a “one-click” file sharing web application
 net-misc/freetube-bin 0.23.4_beta 0.23.5_beta: A private YouTube desktop client
 net-misc/gdown 5.1.0 5.2.0: Google Drive public file/folder downloader
@@ -1517,7 +1517,7 @@ net-misc/maestral 1.9.4: Maestral is an open-source Dropbox client written in Py
 net-misc/maestral-qt 1.9.4: Maestral is an open-source Dropbox client written in Python
 net-misc/mastorss 0.13.1 0.13.1-r1 9999: Another RSS to Mastodon bot
 net-misc/mbpoll 1.5.2 9999: command line utility to communicate with ModBus slave (RTU or TCP)
-net-misc/megasync 5.9.0.3 5.10.1.0: The official Qt-based program for syncing your MEGA account in your PC
+net-misc/megasync 5.10.1.0 5.11.0.3: The official Qt-based program for syncing your MEGA account in your PC
 net-misc/myip 1.2.1: Get your external IP address using STUN server
 net-misc/ooni-probe-cli 3.23.0 3.24.0: OONI Probe network measurement tool for detecting internet censorship
 net-misc/openbgpd 8.4 8.5 8.6 9999: OpenBGPD is a free implementation of BGPv4
@@ -1818,7 +1818,6 @@ x11-misc/i3-resurrect 1.4.5: Saving and restoring i3 workspaces
 x11-misc/i3lock-color 2.13.5: The world's most popular non-default computer lockscreen
 x11-misc/i3lock-fancy-rapid 0.0.0_pre20201109-r1 0.0.0_pre20210421: A faster implementation of i3lock-fancy
 x11-misc/i3status-rust 0.33.2: A feature-rich and resource-friendly replacement for i3status, written in Rust.
-x11-misc/input-leap 3.0.2-r1 9999: Share a mouse and keyboard between computers (fork of Barrier)
 x11-misc/ksnip 1.11.0_pre20250130: Ksnip is a Qt based cross-platform screenshot tool
 x11-misc/leftwm-theme 0.1.2: Theme mangager for LeftWM
 x11-misc/ly 1.0.3 9999: Ly - a TUI display manager (live ebuild)

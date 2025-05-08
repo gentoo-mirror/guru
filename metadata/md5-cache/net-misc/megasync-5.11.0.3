@@ -1,0 +1,16 @@
+BDEPEND=dev-qt/linguist-tools:5 virtual/pkgconfig dolphin? ( kde-frameworks/extra-cmake-modules ) app-alternatives/ninja >=dev-build/cmake-3.20.5
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare test
+DEPEND=dev-db/sqlite:3 dev-libs/crypto++:= dev-libs/icu:= dev-libs/libsodium:= dev-libs/libuv:= dev-libs/openssl:0= dev-qt/qtconcurrent:5 dev-qt/qtcore:5 dev-qt/qtdbus:5 dev-qt/qtdeclarative:5 dev-qt/qtgui:5 dev-qt/qtnetwork:5 dev-qt/qtimageformats:5 dev-qt/qtsvg:5 dev-qt/qtwidgets:5 dev-qt/qtx11extras:5 net-misc/curl[ssl] sys-libs/zlib x11-libs/libxcb:= dolphin? ( dev-qt/qtbase:6[network,widgets] kde-apps/dolphin:6 kde-frameworks/kcoreaddons:6 kde-frameworks/kio:6 kde-frameworks/kwidgetsaddons:6 ) mediainfo? ( media-libs/libmediainfo media-libs/libzen ) nautilus? ( dev-libs/glib:2 >=gnome-base/nautilus-43 ) nemo? ( dev-libs/glib:2 gnome-extra/nemo ) thumbnail? ( media-libs/freeimage media-video/ffmpeg:= ) thunar? ( dev-libs/glib:2 xfce-base/thunar:= )
+DESCRIPTION=The official Qt-based program for syncing your MEGA account in your PC
+EAPI=8
+HOMEPAGE=https://mega.io https://github.com/meganz/MEGAsync
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=cmake flag-o-matic qmake-utils xdg
+IUSE=dolphin mediainfo nautilus nemo thumbnail thunar
+KEYWORDS=~amd64 ~x86
+LICENSE=MEGA
+RDEPEND=dev-db/sqlite:3 dev-libs/crypto++:= dev-libs/icu:= dev-libs/libsodium:= dev-libs/libuv:= dev-libs/openssl:0= dev-qt/qtconcurrent:5 dev-qt/qtcore:5 dev-qt/qtdbus:5 dev-qt/qtdeclarative:5 dev-qt/qtgui:5 dev-qt/qtnetwork:5 dev-qt/qtimageformats:5 dev-qt/qtsvg:5 dev-qt/qtwidgets:5 dev-qt/qtx11extras:5 net-misc/curl[ssl] sys-libs/zlib x11-libs/libxcb:= dolphin? ( dev-qt/qtbase:6[network,widgets] kde-apps/dolphin:6 kde-frameworks/kcoreaddons:6 kde-frameworks/kio:6 kde-frameworks/kwidgetsaddons:6 ) mediainfo? ( media-libs/libmediainfo media-libs/libzen ) nautilus? ( dev-libs/glib:2 >=gnome-base/nautilus-43 ) nemo? ( dev-libs/glib:2 gnome-extra/nemo ) thumbnail? ( media-libs/freeimage media-video/ffmpeg:= ) thunar? ( dev-libs/glib:2 xfce-base/thunar:= ) dev-qt/qtquickcontrols:5 dev-qt/qtquickcontrols2:5
+SLOT=0
+SRC_URI=https://github.com/meganz/MEGAsync/archive/v5.11.0.3_Win.tar.gz -> megasync-5.11.0.3.tar.gz https://github.com/meganz/sdk/archive/f60237a8d46cec993137065d39138fd42c043271.tar.gz -> megasync-sdk-5.11.0.3.tar.gz
+_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	b892042b2667b8ac69ec8a2571dc290a	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	b05c1b7b3c9213c155f128f4eadaa49f	qmake-utils	a8dd17b1d94586164f5e3fc12b1c6b81	xdg	3ef49a87c52c8b77c476351195dfe575
+_md5_=89e94bbae082247746fdc18bd753b4a7
