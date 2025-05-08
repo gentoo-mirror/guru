@@ -8,7 +8,9 @@ inherit font
 
 DESCRIPTION="Libertinus font"
 HOMEPAGE="https://github.com/alerque/libertinus"
-SRC_URI="https://github.com/alerque/libertinus/releases/download/v${PV}/${MY_PN}-${PV}.tar.xz -> ${P}.tar.xz"
+SRC_URI="https://github.com/alerque/libertinus/releases/download/v${PV}/${MY_PN}-${PV}.zip -> ${P}.tar.zip"
+
+BDEPEND="app-arch/unzip"
 
 S="${WORKDIR}/${MY_PN}-${PV}"
 

@@ -29,17 +29,13 @@ DEPEND="
 	dev-libs/wayland-protocols
 "
 BDEPEND="
-	>=dev-util/hyprwayland-scanner-0.4.2
+	>=dev-util/hyprwayland-scanner-0.4.4
 	dev-util/wayland-scanner
 	dev-vcs/git
 	virtual/pkgconfig
 "
 
 DOCS=( README.md )
-
-PATCHES=(
-	"${FILESDIR}/hyprpaper-0.7.3-fix-wayland-scanner.patch"
-)
 
 src_compile() {
 	emake protocols
