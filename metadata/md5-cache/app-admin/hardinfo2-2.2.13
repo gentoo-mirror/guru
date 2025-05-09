@@ -1,0 +1,16 @@
+BDEPEND=virtual/pkgconfig app-alternatives/ninja >=dev-build/cmake-3.20.5
+DEFINED_PHASES=compile configure install postinst postrm prepare test
+DEPEND=x11-libs/gtk+:3[wayland?] >=dev-libs/glib-2.24 sys-libs/zlib dev-libs/json-glib net-libs/libsoup:3.0 x11-libs/cairo x11-libs/gdk-pixbuf x11-libs/libX11 x11-libs/pango vulkan? ( dev-util/glslang media-libs/shaderc wayland? ( gui-libs/libdecor ) )
+DESCRIPTION=System Information and Benchmark for Linux Systems
+EAPI=8
+HOMEPAGE=https://hardinfo2.org
+INHERIT=cmake flag-o-matic xdg-utils
+IUSE=X fwupd wayland vulkan
+KEYWORDS=~amd64
+LICENSE=GPL-2+ GPL-3+ LGPL-2.1+
+RDEPEND=x11-libs/gtk+:3[wayland?] >=dev-libs/glib-2.24 sys-libs/zlib dev-libs/json-glib net-libs/libsoup:3.0 x11-libs/cairo x11-libs/gdk-pixbuf x11-libs/libX11 x11-libs/pango vulkan? ( dev-util/glslang media-libs/shaderc wayland? ( gui-libs/libdecor ) ) dev-util/vulkan-tools net-misc/iperf:3 sys-apps/dmidecode sys-apps/lm-sensors sys-fs/lsscsi sys-fs/udisks:2 x11-apps/mesa-progs x11-apps/xrandr x11-misc/xdg-utils app-benchmarks/sysbench fwupd? ( sys-apps/fwupd )
+REQUIRED_USE=wayland? ( vulkan ) X? ( vulkan )
+SLOT=0
+SRC_URI=https://github.com/hardinfo2/hardinfo2/archive/refs/tags/release-2.2.13.tar.gz -> hardinfo2-2.2.13.tar.gz
+_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	b892042b2667b8ac69ec8a2571dc290a	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	b05c1b7b3c9213c155f128f4eadaa49f
+_md5_=ee4c7c6f4c322d135c143f239ba2d372

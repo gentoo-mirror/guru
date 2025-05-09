@@ -1,0 +1,16 @@
+BDEPEND=virtual/pkgconfig app-alternatives/ninja >=dev-build/cmake-3.20.5
+DEFINED_PHASES=compile configure install postinst prepare pretend setup test
+DEPEND=>=app-arch/libarchive-3.7.9 >=app-arch/brotli-1.1.0 >=app-arch/lz4-1.10.0 >=app-arch/xz-utils-5.8.1 >=app-arch/zstd-1.5.7 dev-cpp/gflags dev-cpp/glog[gflags] >=dev-cpp/parallel-hashmap-1.4.1 dev-libs/boost[context] dev-libs/double-conversion dev-libs/libevent >=dev-libs/libfmt-11.0.2 dev-libs/utfcpp >=dev-libs/xxhash-0.8.2 flac? ( >=media-libs/flac-1.5.0 ) fuse? ( sys-fs/fuse:3 ) sys-libs/binutils-libs stacktrace? ( >=dev-cpp/cpptrace-0.8.0 ) sys-libs/zlib jemalloc? ( >=dev-libs/jemalloc-5.3.0 ) test? ( >=dev-cpp/gtest-1.15.2 ) >=dev-cpp/range-v3-0.12.0 dev-libs/date >=dev-libs/openssl-1.1 dev-cpp/nlohmann_json
+DESCRIPTION=A fast high compression read-only file system for Linux, Windows and macOS
+EAPI=8
+HOMEPAGE=https://github.com/mhx/dwarfs
+INHERIT=check-reqs cmake flag-o-matic
+IUSE=+jemalloc test +tools +fuse +perfmon flac ricepp stacktrace
+KEYWORDS=~amd64
+LICENSE=GPL-3 MIT
+RDEPEND=>=app-arch/libarchive-3.7.9 >=app-arch/brotli-1.1.0 >=app-arch/lz4-1.10.0 >=app-arch/xz-utils-5.8.1 >=app-arch/zstd-1.5.7 dev-cpp/gflags dev-cpp/glog[gflags] >=dev-cpp/parallel-hashmap-1.4.1 dev-libs/boost[context] dev-libs/double-conversion dev-libs/libevent >=dev-libs/libfmt-11.0.2 dev-libs/utfcpp >=dev-libs/xxhash-0.8.2 flac? ( >=media-libs/flac-1.5.0 ) fuse? ( sys-fs/fuse:3 ) sys-libs/binutils-libs stacktrace? ( >=dev-cpp/cpptrace-0.8.0 ) sys-libs/zlib jemalloc? ( >=dev-libs/jemalloc-5.3.0 ) test? ( >=dev-cpp/gtest-1.15.2 ) >=dev-cpp/range-v3-0.12.0 dev-libs/date >=dev-libs/openssl-1.1 dev-cpp/nlohmann_json
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/mhx/dwarfs/releases/download/v0.12.3/dwarfs-0.12.3.tar.xz
+_eclasses_=check-reqs	2a9731073c152554078a9a8df8fc0f1b	toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	b892042b2667b8ac69ec8a2571dc290a	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	b05c1b7b3c9213c155f128f4eadaa49f
+_md5_=6a66f1490684fc5901586677ff94b0db

@@ -93,7 +93,7 @@ app-admin/customrescuecd-x86_64 0.12.7 0.12.8: A system rescue cd or usbstick fo
 app-admin/dotbot 1.20.1: A tool that bootstraps your dotfiles
 app-admin/gentoo_update 0.2.4: Gentoo Linux updater
 app-admin/grub-customizer 5.2.5: A graphical grub2 settings manager
-app-admin/hardinfo2 2.2.10: System Information and Benchmark for Linux Systems
+app-admin/hardinfo2 2.2.13: System Information and Benchmark for Linux Systems
 app-admin/himitsu 0.7 0.8 9999: Secret storage system for Unix, suitable for storing passwords, keys, ...
 app-admin/himitsu-keyring 0.2.0: graphical frontend for managing a Himitsu key store
 app-admin/himitsu-ssh 0.3 0.4 9999: SSH integration for Himitsu
@@ -366,7 +366,7 @@ app-text/the-platinum-searcher-bin 2.2.0: Fast CLI search tool, faster than grep
 app-text/tinymist 0.13.12 9999: An integrated language service for Typst.
 app-text/tldr 3.3.0 3.4.1: Python command line client for tldr pages
 app-text/typst 0.13.1 9999: A markup-based typesetting system for the sciences
-app-text/typstyle 0.12.12: A beautiful and reliable code formatter for Typst
+app-text/typstyle 0.13.5: A beautiful and reliable code formatter for Typst
 app-text/vale 3.7.1 3.9.1: A syntax-aware linter for prose built with speed and extensibility in mind
 app-text/xan 0.48.0: The CSV magician
 app-vim/ale 3.3.0 4.0.0: Check syntax in Vim asynchronously and fix files, with LSP support
@@ -805,6 +805,7 @@ dev-python/pyqtdarktheme 2.1.0: A flat dark theme for PySide and PyQt.
 dev-python/pyrime 0.0.7: rime for python
 dev-python/pysdl3 0.9.8_beta1: A pure Python wrapper for SDL3
 dev-python/pysnooper 1.2.0 1.2.1: Never use print for debugging again
+dev-python/pyspellchecker 0.8.2: Pure python spell checker based on work by Peter Norvig
 dev-python/pystardict 0.8-r1: Library for manipulating StarDict dictionaries from within Python
 dev-python/pytest-cases 3.8.6: Separate test code from test cases in pytest
 dev-python/pytest-celery 0.1.0: a shim pytest plugin to enable celery.contrib.pytest
@@ -1015,7 +1016,6 @@ games-board/openriichi 0.2.1.1: OpenRiichi is an open source Japanese Mahjong cl
 games-board/rmahjong 0.4_p20201106: Riichi Mahjong, the Japanese variant of the Chinese game Mahjong for 4 players
 games-emulation/RetroArch 1.19.1 1.20.0: RetroArch is a frontend for emulators, game engines and media players
 games-emulation/dosbox-x 2025.02.01 2025.05.03 9999: Complete, accurate DOS emulator forked from DOSBox
-games-emulation/duckstation 9999: Fast Sony PlayStation (PSX) emulator
 games-emulation/flycast 9999: Sega Dreamcast, Naomi and Atomiswave emulator
 games-emulation/mupen64plus-qt 1.17 9999: A basic launcher for Mupen64Plus
 games-emulation/np2kai 22 22_p20210211: NP2kai is an emulator for the japanese PC-98 series of computers
@@ -1722,7 +1722,7 @@ sys-fs/btrfs-heatmap 9-r1: Python 3 script to draw a heatmap of a btrfs filesyst
 sys-fs/ddrescueview 0.4.5: Graphical viewer for GNU ddrescue mapfiles
 sys-fs/diskonaut 0.10.0 0.11.0 9999: Terminal disk space visual navigator
 sys-fs/dua-cli 2.30.0: A tool to conveniently learn about the disk usage of directories, fast!
-sys-fs/dwarfs 0.12.3: A fast high compression read-only file system for Linux, Windows and macOS
+sys-fs/dwarfs 0.12.3-r1: A fast high compression read-only file system for Linux, Windows and macOS
 sys-fs/dwarfs-bin 0.12.3: Static version of a fast very high compression read-only FUSE file system
 sys-fs/ffmpegfs 2.16-r1 2.17: FUSE-based transcoding filesystem with support from/to many formats.
 sys-fs/fstransform 0.9.4: Tool for in-place filesystem conversion
@@ -1751,7 +1751,7 @@ sys-libs/solo-udev-rules 4.1.5: udev rules for the Solo FIDO2 & U2F USB+NFC secu
 sys-power/amdfan 0.1.28 0.2.3 0.2.5: Updated AMD Fan control utility forked from amdgpu-fan and updated.
 sys-power/auto-cpufreq 2.3.0 2.4.0: Automatic CPU speed & power optimizer for Linux
 sys-power/envycontrol 3.4.0 9999: Easy GPU switching for Nvidia Optimus laptops under Linux
-sys-power/fan2go 0.8.1 0.9.0: A simple daemon providing dynamic fan speed control
+sys-power/fan2go 0.9.0 0.9.1: A simple daemon providing dynamic fan speed control
 sys-power/gtherm 0.0.3: A simple daemon to monitor thermal zones and cooling devices
 sys-power/linux-tools-power-x86 6.1 6.6: Linux x86 CPU power tools
 sys-power/nvidia-exec 0.2.7-r1 9999: GPU switching without login out for Nvidia Optimus laptops under Linux
