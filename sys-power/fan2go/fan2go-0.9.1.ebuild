@@ -49,5 +49,5 @@ src_install() {
 }
 
 src_test() {
-	go test -v ./... || die
+	ego test -v ./... || die
 }

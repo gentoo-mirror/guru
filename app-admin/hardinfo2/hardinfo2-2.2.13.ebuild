@@ -14,10 +14,11 @@ S="${WORKDIR}/${PN}-release-${PV}"
 LICENSE="GPL-2+ GPL-3+ LGPL-2.1+"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="benchmark fwupd +gtk3"
+IUSE="X fwupd wayland vulkan"
+REQUIRED_USE="wayland? ( vulkan ) X? ( vulkan )"
 
 DEPEND="
-	gtk3? ( x11-libs/gtk+:3 ) !gtk3? ( x11-libs/gtk+:2 )
+	x11-libs/gtk+:3[wayland?]
 	>=dev-libs/glib-2.24
 	sys-libs/zlib
 	dev-libs/json-glib
@@ -26,6 +27,11 @@ DEPEND="
 	x11-libs/gdk-pixbuf
 	x11-libs/libX11
 	x11-libs/pango
+	vulkan? (
+		dev-util/glslang
+		media-libs/shaderc
+		wayland? ( gui-libs/libdecor )
+	)
 "
 RDEPEND="
 	${DEPEND}
@@ -38,7 +44,7 @@ RDEPEND="
 	x11-apps/mesa-progs
 	x11-apps/xrandr
 	x11-misc/xdg-utils
-	benchmark? ( app-benchmarks/sysbench )
+	app-benchmarks/sysbench
 	fwupd? ( sys-apps/fwupd )
 "
 BDEPEND="virtual/pkgconfig"
@@ -52,8 +58,10 @@ src_configure() {
 	filter-flags -O*
 
 	local mycmakeargs=(
-		-DHARDINFO2_GTK3=$(usex gtk3)
 		-DHARDINFO2_QT5=0
+		-DHARDINFO2_VK=$(usex vulkan 1 0)
+		-DHARDINFO2_VK_WAYLAND=$(usex wayland)
+		-DHARDINFO2_VK_X11=$(usex X)
 	)
 	cmake_src_configure
 }
