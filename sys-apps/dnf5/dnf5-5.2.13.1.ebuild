@@ -3,7 +3,8 @@
 
 EAPI=8
 
-inherit cmake
+PYTHON_COMPAT=( python3_{12..14} )
+inherit cmake python-single-r1
 
 DESCRIPTION="Command-line package manager"
 HOMEPAGE="https://github.com/rpm-software-management/dnf5"
@@ -12,7 +13,8 @@ SRC_URI="https://github.com/rpm-software-management/dnf5/archive/refs/tags/${PV}
 LICENSE="GPL-2+ LGPL-2.1+"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="appstream nls systemd test"
+IUSE="appstream nls python systemd test"
+REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 RESTRICT="!test? ( test )"
 
 RDEPEND="
@@ -30,12 +32,14 @@ RDEPEND="
 	>=sys-libs/libmodulemd-2.11.2
 	sys-libs/zlib
 	appstream? ( >=dev-libs/appstream-0.16:= )
+	python? ( ${PYTHON_DEPS} )
 	systemd? ( sys-apps/systemd:= )
 "
 DEPEND="${RDEPEND}"
 BDEPEND="
 	dev-python/sphinx
 	virtual/pkgconfig
+	python? ( dev-lang/swig )
 	test? (
 		app-arch/rpm
 		app-arch/createrepo_c
@@ -47,6 +51,10 @@ PATCHES=(
 	# Prevent test suite from writing to system files.
 	"${FILESDIR}/${PN}-5.2.5.0-sandbox-test.patch"
 )
+
+pkg_setup() {
+	use python && python-single-r1_pkg_setup
+}
 
 src_prepare() {
 	cmake_src_prepare
@@ -62,10 +70,10 @@ src_configure() {
 	local mycmakeargs=(
 		-DWITH_HTML=OFF
 		-DWITH_PERL5=OFF
-		-DWITH_PYTHON3=OFF
 		-DWITH_RUBY=OFF
 		-DWITH_ZCHUNK=OFF
 		-DWITH_PLUGIN_APPSTREAM=$(usex appstream)
+		-DWITH_PYTHON3=$(usex python)
 		-DWITH_SYSTEMD=$(usex systemd)
 		-DWITH_TESTS=$(usex test)
 		-DWITH_TRANSLATIONS=$(usex nls)
@@ -76,4 +84,9 @@ src_configure() {
 src_compile() {
 	cmake_src_compile
 	cmake_src_compile doc-man
+}
+
+src_install() {
+	cmake_src_install
+	use python && python_optimize
 }

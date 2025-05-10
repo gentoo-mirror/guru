@@ -31,9 +31,14 @@ PATCHES=(
 	"${FILESDIR}/cmake_mbedtls.patch"
 	# Set boost components to regex
 	"${FILESDIR}/cmake_boost_regex.patch"
+	# Temporary (until the next update) patch
+	"${FILESDIR}/${P}-update-libfmt.patch"
 )
 
 DOCS+=( LICENSE PLUGINS.md )
+
+# libfmt can not be >= 11.2.0
+# See https://github.com/WerWolv/ImHex/issues/2225
 
 DEPEND="
 	app-arch/bzip2
