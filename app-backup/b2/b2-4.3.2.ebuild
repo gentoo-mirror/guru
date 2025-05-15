@@ -3,7 +3,7 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{11..12} )
+PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517="pdm-backend"
 DISTUTILS_SINGLE_IMPL=1
 
@@ -19,16 +19,16 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
 PATCHES=(
-	"${FILESDIR}/${P}-nameclash.patch"
+	"${FILESDIR}/b2-4.0.1-nameclash.patch"
 )
 
 export PDM_BUILD_SCM_VERSION=${PV}
 
 RDEPEND="
 	$(python_gen_cond_dep '
-		>=dev-python/argcomplete-2.1.2[${PYTHON_USEDEP}]
+		>=dev-python/argcomplete-3.6.2[${PYTHON_USEDEP}]
 		>=dev-python/arrow-1.3.0[${PYTHON_USEDEP}]
-		>=dev-python/b2sdk-1.21.0[${PYTHON_USEDEP}]
+		>=dev-python/b2sdk-2.8.1[${PYTHON_USEDEP}]
 		>=dev-python/docutils-0.19[${PYTHON_USEDEP}]
 		>=dev-python/phx-class-registry-4.0.6[${PYTHON_USEDEP}]
 		>=dev-python/rst2ansi-0.1.5[${PYTHON_USEDEP}]
@@ -41,7 +41,7 @@ DEPEND="
 	test? (
 		$(python_gen_cond_dep '
 			>=dev-python/backoff-2.2.1[${PYTHON_USEDEP}]
-			>=dev-python/pexpect-4.8.0[${PYTHON_USEDEP}]
+			>=dev-python/pexpect-4.9.0[${PYTHON_USEDEP}]
 		')
 	)
 "

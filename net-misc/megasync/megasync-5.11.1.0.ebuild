@@ -11,8 +11,8 @@ HOMEPAGE="
 	https://github.com/meganz/MEGAsync
 "
 
-MEGA_SDK_REV="b53514e72d569be8993cbe4b2c991da0ded08b78" # commit of src/MEGASync/mega submodule
-MEGA_TAG_SUFFIX="Win"
+MEGA_SDK_REV="f60237a8d46cec993137065d39138fd42c043271" # commit of src/MEGASync/mega submodule
+MEGA_TAG_SUFFIX="Linux"
 SRC_URI="
 	https://github.com/meganz/MEGAsync/archive/v${PV}_${MEGA_TAG_SUFFIX}.tar.gz -> ${P}.tar.gz
 	https://github.com/meganz/sdk/archive/${MEGA_SDK_REV}.tar.gz -> ${PN}-sdk-${PV}.tar.gz
@@ -41,7 +41,6 @@ DEPEND="
 	dev-qt/qtsvg:5
 	dev-qt/qtwidgets:5
 	dev-qt/qtx11extras:5
-	net-dns/c-ares:=
 	net-misc/curl[ssl]
 	sys-libs/zlib
 	x11-libs/libxcb:=

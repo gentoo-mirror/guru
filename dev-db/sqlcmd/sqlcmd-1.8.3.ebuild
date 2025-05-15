@@ -8,9 +8,7 @@ inherit go-module shell-completion
 DESCRIPTION="The MSSQL SQLCMD CLI tool"
 HOMEPAGE="https://learn.microsoft.com/sql/tools/sqlcmd/go-sqlcmd-utility"
 SRC_URI="https://github.com/microsoft/go-${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
-
-# Using a dependency tarball as per https://devmanual.gentoo.org/eclass-reference/go-module.eclass/index.html
-DEPS_URI="https://gitlab.com/freijon_gentoo/${CATEGORY}/${PN}/-/raw/main/${P}-deps.tar.xz"
+DEPS_URI="https://github.com/freijon/go-${PN}/releases/download/v${PV}/${P}-deps.tar.xz"
 SRC_URI+=" ${DEPS_URI}"
 
 S="${WORKDIR}/go-${P}"
