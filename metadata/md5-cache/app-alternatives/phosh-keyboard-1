@@ -1,0 +1,13 @@
+DEFINED_PHASES=install
+DESCRIPTION=sm.puri.OSK0.desktop symlinks
+EAPI=8
+HOMEPAGE=https://wiki.gentoo.org/wiki/Project:Base/Alternatives
+INHERIT=app-alternatives
+IUSE=+phosh-osk-stub
+KEYWORDS=~amd64
+LICENSE=CC0-1.0
+RDEPEND=phosh-osk-stub? ( >=phosh-base/phosh-osk-stub-0.47.0 )
+REQUIRED_USE=^^ ( phosh-osk-stub )
+SLOT=0
+_eclasses_=app-alternatives	a02ee0b741e1dde4e28b2b83d2fc28a7
+_md5_=c6e851e3c1fa3a44a3f63b946c2c08a9

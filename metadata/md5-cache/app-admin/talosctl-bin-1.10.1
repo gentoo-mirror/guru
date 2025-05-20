@@ -1,0 +1,9 @@
+DEFINED_PHASES=install
+DESCRIPTION=Pre-compiled talosctl is an tool for interacting with the Talos API
+EAPI=8
+HOMEPAGE=https://www.talos.dev/v1.10/
+KEYWORDS=~amd64 ~arm ~arm64
+LICENSE=MPL-2.0
+SLOT=0
+SRC_URI=amd64? ( https://github.com/siderolabs/talos/releases/download/v1.10.1/talosctl-linux-amd64 -> talosctl-amd64-v1.10.1 ) arm64? ( https://github.com/siderolabs/talos/releases/download/v1.10.1/talosctl-linux-arm64 -> talosctl-arm64-v1.10.1 ) arm? ( https://github.com/siderolabs/talos/releases/download/v1.10.1/talosctl-linux-armv7 -> talosctl-armv7-v1.10.1 )
+_md5_=47682cadb4fc73344a6af501fb0b4670

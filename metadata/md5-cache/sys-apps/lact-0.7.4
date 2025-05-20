@@ -1,0 +1,18 @@
+BDEPEND=virtual/pkgconfig llvm_slot_18? ( llvm-core/clang:18 ) llvm_slot_19? ( llvm-core/clang:19 ) llvm_slot_20? ( llvm-core/clang:20 ) || ( >=dev-lang/rust-bin-1.76.0:* >=dev-lang/rust-1.76.0:* )
+DEFINED_PHASES=compile configure install postinst postrm preinst setup test unpack
+DEPEND=virtual/opencl x11-libs/libdrm[video_cards_amdgpu] gui? ( dev-libs/glib:2 gui-libs/gtk:4[introspection] media-libs/fontconfig media-libs/freetype media-libs/graphene x11-libs/cairo x11-libs/pango ) libadwaita? ( >=gui-libs/libadwaita-1.4.0:1 ) test? ( sys-fs/fuse:3 )
+DESCRIPTION=Linux GPU Control Application
+EAPI=8
+HOMEPAGE=https://github.com/ilya-zlobintsev/LACT
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=cargo llvm-r2 xdg
+IUSE=gui libadwaita test video_cards_nvidia debug +llvm_slot_19 llvm_slot_18 llvm_slot_20
+KEYWORDS=~amd64
+LICENSE=MIT Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD CC0-1.0 GPL-3 GPL-3+ ISC MIT Unicode-3.0 ZLIB
+RDEPEND=virtual/opencl x11-libs/libdrm[video_cards_amdgpu] gui? ( dev-libs/glib:2 gui-libs/gtk:4[introspection] media-libs/fontconfig media-libs/freetype media-libs/graphene x11-libs/cairo x11-libs/pango ) libadwaita? ( >=gui-libs/libadwaita-1.4.0:1 ) dev-util/vulkan-tools sys-apps/hwdata
+REQUIRED_USE=libadwaita? ( gui ) test? ( gui ) ^^ ( llvm_slot_18 llvm_slot_19 llvm_slot_20 )
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/ilya-zlobintsev/LACT/archive/refs/tags/v0.7.4.tar.gz -> lact-0.7.4.tar.gz https://github.com/kenba/cl3/archive/cb019aac330ab8243804be02b7183a1c5a211caa.tar.gz -> cl3-cb019aac330ab8243804be02b7183a1c5a211caa.gh.tar.gz https://github.com/ilya-zlobintsev/nvml-wrapper/archive/d245c3010c72466cfb572f5baf91c91f7294bb36.tar.gz -> nvml-wrapper-d245c3010c72466cfb572f5baf91c91f7294bb36.gh.tar.gz https://github.com/ilya-zlobintsev/nvml-wrapper/archive/d245c3010c72466cfb572f5baf91c91f7294bb36.tar.gz -> nvml-wrapper-d245c3010c72466cfb572f5baf91c91f7294bb36.gh.tar.gz https://gitlab.com/corectrl/copes/-/archive/1bc002a030345787f0e11e0317975a2e4f2a22ee/copes-1bc002a030345787f0e11e0317975a2e4f2a22ee.tar.gz -> copes-1bc002a030345787f0e11e0317975a2e4f2a22ee.gl.tar.gz https://github.com/Umio-Yasuno/libdrm-amdgpu-sys-rs/archive/c6d85fce871f79f763162ba15accdfcae74b2d40.tar.gz -> libdrm-amdgpu-sys-rs-c6d85fce871f79f763162ba15accdfcae74b2d40.gh.tar.gz https://github.com/pastalian/distfiles/releases/download/lact-0.7.4/lact-0.7.4-crates.tar.xz
+_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	b892042b2667b8ac69ec8a2571dc290a	multiprocessing	1e32df7deee68372153dca65f4a7c21f	rust	3b042096236a464b8bd9dd7a1120ad23	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	5da01b45ec362e78575502b4fb82773a	llvm-utils	846280a994c1843d9c21248c188bd147	multilib	b2a329026f2e404e9e371097dda47f96	llvm-r2	a5ef1fdf58800ef46a588e7780784437	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575
+_md5_=60ea0a8e8e6fe36c89adf27540ae597c

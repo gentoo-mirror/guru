@@ -1,0 +1,16 @@
+BDEPEND=dev-libs/libxml2 sys-devel/gettext verify-sig? ( sec-keys/openpgp-keys-phosh ) >=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array verify-sig? ( app-crypt/gnupg >=app-portage/gemato-20 )
+DEFINED_PHASES=compile configure install postinst postrm preinst test unpack
+DEPEND=>=dev-libs/glib-2.74:2 dev-libs/gmobile >=gui-libs/gtk-4.12:4 >=gui-libs/libadwaita-1.4:1
+DESCRIPTION=Introduction to phosh on smartphones
+EAPI=8
+HOMEPAGE=https://gitlab.gnome.org/World/Phosh/phosh-tour
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=gnome2-utils meson verify-sig xdg
+IUSE=verify-sig
+KEYWORDS=~amd64
+LICENSE=GPL-3+
+RDEPEND=>=dev-libs/glib-2.74:2 dev-libs/gmobile >=gui-libs/gtk-4.12:4 >=gui-libs/libadwaita-1.4:1
+SLOT=0
+SRC_URI=https://sources.phosh.mobi/releases/phosh-tour/phosh-tour-0.47.0.tar.xz verify-sig? ( https://sources.phosh.mobi/releases/phosh-tour/phosh-tour-0.47.0.tar.xz.asc )
+_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	gnome2-utils	a8cf148ec7f5ae0b1f1d33ae5f7f9e88	flag-o-matic	b892042b2667b8ac69ec8a2571dc290a	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	e6fe2c451b7e577e827165580e5bdd64	meson	99466844dd8d4fcfb07578a76f5a9922	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	verify-sig	7433426b6b28bf2737ba4b82c8aa8c53	xdg	3ef49a87c52c8b77c476351195dfe575
+_md5_=7347115560f7767cd73a2d9fc2498ba2

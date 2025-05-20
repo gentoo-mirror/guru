@@ -1,4 +1,4 @@
-BDEPEND=|| ( >=dev-lang/rust-bin-1.74.1:* >=dev-lang/rust-1.74.1:* ) >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=|| ( >=dev-lang/rust-bin-1.85.0:* >=dev-lang/rust-1.85.0:* ) >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install setup test unpack
 DEPEND=gtk? ( dev-libs/glib:2= )
 DESCRIPTION=Bespoke dotfile management for sharkgirls.
@@ -11,4 +11,4 @@ PROPERTIES=live
 RDEPEND=gtk? ( dev-libs/glib:2= )
 SLOT=0
 _eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	b892042b2667b8ac69ec8a2571dc290a	multiprocessing	1e32df7deee68372153dca65f4a7c21f	rust	3b042096236a464b8bd9dd7a1120ad23	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	5da01b45ec362e78575502b4fb82773a	git-r3	875eb471682d3e1f18da124be97dcc81
-_md5_=363966459c88dfb4831217a12bcba059
+_md5_=3818850dca5ec5ad14131c3a2e355c70

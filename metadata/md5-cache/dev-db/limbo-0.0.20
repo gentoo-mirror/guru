@@ -1,0 +1,15 @@
+BDEPEND=|| ( >=dev-lang/rust-bin-1.74.1:* >=dev-lang/rust-1.74.1:* )
+DEFINED_PHASES=compile configure install setup test unpack
+DEPEND=>=dev-libs/libgit2-0.99:= dev-libs/oniguruma:=
+DESCRIPTION=The Limbo interactive SQL shell
+EAPI=8
+HOMEPAGE=https://github.com/tursodatabase/limbo
+INHERIT=cargo linux-info
+IUSE=+uring debug
+KEYWORDS=~amd64
+LICENSE=MIT Apache-2.0 Apache-2.0-with-LLVM-exceptions Boost-1.0 CC0-1.0 CDDL GPL-2.0-with-bison-exception MIT MPL-2.0 Unicode-DFS-2016
+RDEPEND=>=dev-libs/libgit2-0.99:= dev-libs/oniguruma:=
+SLOT=0
+SRC_URI=https://github.com/tursodatabase/limbo/releases/download/v0.0.20/source.tar.gz -> limbo-0.0.20.tar.gz https://github.com/freijon/limbo/releases/download/v0.0.20/limbo-0.0.20-crates.tar.xz
+_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	b892042b2667b8ac69ec8a2571dc290a	multiprocessing	1e32df7deee68372153dca65f4a7c21f	rust	3b042096236a464b8bd9dd7a1120ad23	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	5da01b45ec362e78575502b4fb82773a	linux-info	ea4122ba1d8791a12b78e53f9510a2e3
+_md5_=0694ac4947c57ebb9d97a1ed8ae3613c
