@@ -272,7 +272,7 @@ app-misc/nwg-shell-wallpapers 1.3 1.4 1.5: Selection of wallpapers contributed t
 app-misc/oddjob 0.34.7-r1: A D-Bus service which runs odd jobs on behalf of client applications
 app-misc/onefetch 2.23.1: Command-line Git information tool
 app-misc/pfetch 0.6.0 1.3.0: A pretty system information tool written in POSIX sh
-app-misc/pipes-rs 1.6.3: An over-engineered rewrite of pipes.sh in Rust
+app-misc/pipes-rs 1.6.3 9999: An over-engineered rewrite of pipes.sh in Rust
 app-misc/powerpanel 1.4.1-r1: PowerPanel software for CyberPower UPS systems
 app-misc/proctl 1.5 9999: small C program that can control processes
 app-misc/pueue 3.4.1 4.0.0: A cli tool for managing long running shell commands.
@@ -280,7 +280,7 @@ app-misc/qman 1.4.1-r1 1.4.2 9999: A more modern manual page viewer for our term
 app-misc/rememberthemilk 1.3.11-r1: Freemium simple to-do tasks manager
 app-misc/s6-man 9999: mdoc versions of the HTML documentation for the s6 supervision suite
 app-misc/sherlock 0.15.0 9999: Hunt down social media accounts by username across social networks
-app-misc/superfile 1.1.7.1 1.2.0.0: Pretty fancy and modern terminal file manager
+app-misc/superfile 1.1.7.1 1.2.0.0 1.2.1 9999: Pretty fancy and modern terminal file manager
 app-misc/tealdeer 1.6.1-r1: A very fast implementation of tldr in Rust.
 app-misc/termdown 1.18.0-r1: Countdown timer and stopwatch in your terminal
 app-misc/tinyfetch 5.2 6.1 6.2 9999: fetch program written in pure C
@@ -300,7 +300,7 @@ app-misc/wlx-overlay-s 25.4.2 9999: A lightweight OpenXR/OpenVR overlay for Wayl
 app-misc/wtf 0.43.0: The personal information dashboard for your terminal
 app-misc/x86-64-level 0.2.2 9999: Get the x86-64 Microarchitecture Level on the Current Machine
 app-misc/xplr 0.21.3-r1: A hackable, minimal, fast TUI file explorer
-app-misc/yazi 25.2.11-r1 25.3.2 9999: Blazing fast terminal file manager written in Rust, based on async I/O.
+app-misc/yazi 25.2.11-r1 25.3.2 25.4.8 9999: Blazing fast terminal file manager written in Rust, based on async I/O.
 app-misc/zcock 0.2.1 0.2.2: Print an emoji according to traditional chinese calendar and more
 app-mobilephone/flashlight 0.1.1-r2: It's a flashlight, what do you expect?
 app-mobilephone/mobile-config-firefox 2.1.0: Mobile and privacy friendly configuration for Firefox
@@ -997,7 +997,7 @@ dev-vcs/gitqlient-gitserver-plugin 0.2.0: GitQlient GitServer plugin
 dev-vcs/gitqlient-jenkins-plugin 0.2.0: GitQlient Jenkins plugin
 dev-vcs/gitui 0.26.3 0.27.0: blazing fast terminal-ui for git
 dev-vcs/jj 0.28.2 0.29.0 9999: Jujutsu - an experimental version control system
-dev-vcs/lazygit 0.47.2 0.48.0 0.49.0 0.50.0: Simple terminal UI for git commands
+dev-vcs/lazygit 0.47.2 0.48.0 0.49.0 0.50.0 9999: Simple terminal UI for git commands
 dev-vcs/lazyjj 0.5.0: TUI for Jujutsu/jj
 dev-vcs/pijul 1.0.0_beta9: A distributed version control system based on a theory of patches
 dev-zig/zls 0.10.0-r2 0.13.0-r1 0.14.0 9999: Non-official language server for Zig
@@ -1089,7 +1089,7 @@ gnome-extra/portfolio 0.9.14: A minimalist file manager for those who want to us
 gnome-extra/vvmplayer 1.4-r1: Visual Voicemail Player
 gnome-extra/wike 3.0.0 3.0.1 3.1.0 3.1.1: Wikipedia Reader for the GNOME Desktop
 gnome-extra/yad 13.0 14.1 9999: Display GTK+ dialog boxes from command line or shell scripts
-gui-apps/1password 8.10.72 8.10.76: Password Manager
+gui-apps/1password 8.10.76: Password Manager
 gui-apps/ReGreet 0.1.1-r10 9999: A clean and customizable GTK-based greetd greeter written in Rust
 gui-apps/ashell 0.3.0 0.3.1: A ready to go Wayland status bar for Hyprland
 gui-apps/aylurs-gtk-shell 1.8.2-r1: Aylurs's Gtk Shell (AGS), An eww inspired gtk widget system.
@@ -1210,7 +1210,6 @@ gui-apps/xwayland-satellite 0.5.1: Xwayland outside your Wayland
 gui-apps/yambar 1.11.0 9999: Simplistic and highly configurable status panel for X and Wayland
 gui-libs/gtk-session-lock 0.2.0-r6 9999: GTK-based lockscreen for Wayland
 gui-libs/gtk4-layer-shell 1.0.2 1.0.4: A library for using the Layer Shell Wayland protocol with GTK4.
-gui-libs/hyprland-qt-support 0.1.0: Qt6 Qml style provider for hypr* apps
 gui-libs/libcprime 5.0.0: Library for managing settings of CoreApps
 gui-libs/libcsys 5.0.0: Library for managing the device
 gui-libs/libsfdo 0.1.3 0.1.4: A collection of libraries which implement some freedesktop.org specifications
@@ -1356,7 +1355,7 @@ media-sound/pianobooster 1.0.0: A MIDI player/game that displays notes and teach
 media-sound/pipewire-module-xrdp 0.1_pre20230609-r1 0.2: PipeWire module which enables xrdp to use audio redirection
 media-sound/plexamp 4.11.5: A dedicated music player for your Plex media library.
 media-sound/pulseaudio-virtualmic 0.1 9999: Use any offline or online media file or stream as a PulseAudio source
-media-sound/qbitmplayer 2.7.0-r2: Music Player written in C++ & Qt.
+media-sound/qbitmplayer 2.7.0-r2 2.8.0: Music Player written in C++ & Qt.
 media-sound/qloud 1.4.2: Tool to measure loudspeaker frequency and step responses and distortions
 media-sound/rsgain 3.5.1 3.5.3: Really Simple replay Gain calculator for tagging audio files
 media-sound/spct 1.1.3: A CLI program to play back or render SPC files.

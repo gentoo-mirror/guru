@@ -1,4 +1,4 @@
-BDEPEND=virtual/pkgconfig || ( >=dev-lang/rust-bin-1.74.1:* >=dev-lang/rust-1.74.1:* )
+BDEPEND=virtual/pkgconfig || ( >=dev-lang/rust-bin-1.84.0:* >=dev-lang/rust-1.84.0:* )
 DEFINED_PHASES=compile configure install postinst setup test unpack
 DEPEND=git2? ( >=dev-libs/libgit2-1.9.0:0/1.9 dev-libs/openssl:= net-libs/libssh2:= )
 DESCRIPTION=Jujutsu - an experimental version control system
@@ -12,4 +12,4 @@ RDEPEND=git2? ( >=dev-libs/libgit2-1.9.0:0/1.9 dev-libs/openssl:= net-libs/libss
 SLOT=0
 SRC_URI=https://github.com/jj-vcs/jj/archive/refs/tags/v0.29.0.tar.gz -> jj-0.29.0.tar.gz https://files.demize.dev/gentoo/dev-vcs/jj/jj-0.29.0-crates.tar.xz
 _eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	b892042b2667b8ac69ec8a2571dc290a	multiprocessing	1e32df7deee68372153dca65f4a7c21f	rust	3b042096236a464b8bd9dd7a1120ad23	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	5da01b45ec362e78575502b4fb82773a
-_md5_=236098dca28aafac37d5b2fd6804b1a0
+_md5_=3a0f914c65d66f828b8c1b3fb907a2cb
