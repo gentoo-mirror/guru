@@ -8,7 +8,7 @@ inherit go-module
 DESCRIPTION="Pretty fancy and modern terminal file manager"
 HOMEPAGE="https://superfile.netlify.app/"
 SRC_URI="https://github.com/yorukot/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
-SRC_URI+=" https://github.com/ingenarel/guru-depfiles/releases/download/0.4/${P}-vendor.tar.xz"
+SRC_URI+=" https://github.com/ingenarel/guru-depfiles/releases/download/0.5/${P}-vendor.tar.xz"
 
 LICENSE="MIT"
 SLOT="0"

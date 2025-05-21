@@ -3,16 +3,19 @@
 
 EAPI=8
 
-inherit go-module
+inherit go-module git-r3
 
 DESCRIPTION="Pretty fancy and modern terminal file manager"
 HOMEPAGE="https://superfile.netlify.app/"
-SRC_URI="https://github.com/yorukot/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
-SRC_URI+=" https://github.com/ingenarel/guru-depfiles/releases/download/0.4/${P}-vendor.tar.xz"
+EGIT_REPO_URI="https://github.com/yorukot/superfile.git"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64"
+
+src_unpack() {
+	git-r3_src_unpack
+	go-module_live_vendor
+}
 
 src_compile() {
 	ego build -o bin/spf
