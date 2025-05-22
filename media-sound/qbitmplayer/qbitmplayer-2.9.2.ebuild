@@ -13,10 +13,13 @@ S="${WORKDIR}/QBitMPlayer-${PV}"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
+IUSE="dbus +libnotify"
 
 DEPEND="
 	dev-qt/qtmultimedia:6
 	dev-qt/qtbase:6[widgets]
+	dbus? ( dev-qt/qtbase:6[dbus] )
+	libnotify? ( x11-libs/libnotify )
 "
 RDEPEND="${DEPEND}"
 BDEPEND="
@@ -33,5 +36,18 @@ src_configure() {
 	local mycmakeargs=(
 		-DQT_VERSION_MAJOR=6
 	)
+
+	if use dbus; then
+		mycmakeargs+=(
+			-DUSE_IPC=1
+		)
+	fi
+
+	if use libnotify; then
+		mycmakeargs+=(
+			-DUSE_NOTIFICATIONS=1
+		)
+	fi
+
 	cmake_src_configure
 }
