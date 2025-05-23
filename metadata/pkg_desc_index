@@ -4,7 +4,6 @@ acct-group/_rpki-client 0: System group: _rpki-client
 acct-group/anubis 0: System group: anubis
 acct-group/blocky 0-r1: A group for net-dns/blocky
 acct-group/conduit 0: Group conduit
-acct-group/fedigroup 0: System group: fedigroup
 acct-group/fileshelter 0: Group for fileshelter
 acct-group/fort 0-r1: System group: fort
 acct-group/gemini 0: System group: gemini
@@ -41,7 +40,6 @@ acct-user/blocky 0-r1: A user for net-dns/blocky
 acct-user/byedpi 0: System user: byedpi
 acct-user/conduit 0: User for conduit
 acct-user/eturnal 0: System user: eturnal
-acct-user/fedigroup 0: System user: fedigroup
 acct-user/fileshelter 0: User for fileshelter
 acct-user/fort 0-r1: User for FORT RPKI validator
 acct-user/gemini 0: System user: gemini
@@ -130,7 +128,7 @@ app-backup/grub-btrfs 4.11-r1 4.12 4.13 9999: Improves Grub by adding btrfs snap
 app-backup/kopia 0.15.0: Kopia - Fast And Secure Open-Source Backup
 app-backup/kopia-ui-bin 0.15.0-r1: Kopia - Fast And Secure Open-Source Backup (Electron UI)
 app-backup/pika-backup 0.7.4-r1: Keep your data safe
-app-backup/restic-browser 0.3.1-r1 0.3.1-r2: A GUI to browse and restore from restic backup repositories
+app-backup/restic-browser 0.3.1-r2 0.3.2_p20250523: A GUI to browse and restore from restic backup repositories
 app-backup/timeshift 23.07.1: A system restore utility for Linux
 app-backup/timeshift-autosnap 0.9-r1: Automatically creates a timeshift-snapshot when executed
 app-benchmarks/kdiskmark 3.1.4-r1: Disk benchmarking tool
@@ -349,7 +347,7 @@ app-text/code-minimap 0.6.8: A high performance code minimap generator
 app-text/dooit 3.1.0: A TUI todo manager
 app-text/epubgrep 0.6.2: Search tool for EPUB e-books
 app-text/ford 6.2.5 7.0.8-r1 7.0.9-r1 7.0.10 7.0.11: FORD, automatic documentation generator for modern Fortran programs
-app-text/harper 0.37.0: The language checker for developers.
+app-text/harper 0.38.0: The language checker for developers.
 app-text/jrnl 4.1 4.2: Collect your thoughts and notes without leaving the command line
 app-text/klogg 22.06.0.1289-r1: A GUI application to browse and search through long and complex log files
 app-text/komikku 1.72.0: Manga reader for GNOME
@@ -592,15 +590,11 @@ dev-lua/ldbus 0_p20250222: Lua library to access dbus.
 dev-lua/lua-psl 0.3_p20201126: Lua bindings to libpsl
 dev-lua/multipart-post 1.4: HTTP Multipart Post helper that does just that.
 dev-ml/afl-persistent 1.3: Persistent-mode afl-fuzz for ocaml
-dev-ml/bheap 2.0.0: OCaml binary heap implementation by Jean-Christophe Filliatre
-dev-ml/cdrom 0.9.4: Query the state and contents of CDROM devices under Linux
 dev-ml/chrome-trace 3.16.0-r1: Chrome trace event generation library
 dev-ml/crowbar 0.2.1: Write tests, let a fuzzer find failing cases
-dev-ml/domain-name 0.4.0: RFC 1035 Internet domain names
 dev-ml/dune-rpc 3.16.0-r1: Communicate with dune using rpc
 dev-ml/either 1.0.0: Compatibility module for Either in OCaml 4.12
 dev-ml/fiber 3.7.0-r1: Dune's monadic structured concurrency library
-dev-ml/gmap 0.3.0-r2: Heterogenous Map over a GADT
 dev-ml/jsonrpc 1.18.0 1.19.0: Jsonrpc protocol implementation
 dev-ml/lsp 1.18.0 1.19.0: LSP protocol implementation in OCaml
 dev-ml/lwt-dllist 1.0.1: Mutable doubly-linked list with Lwt iterators
@@ -610,10 +604,8 @@ dev-ml/ocaml-version 3.6.7 3.6.8 3.6.9: Library to parse and enumerate releases 
 dev-ml/ocamlc-loc 3.16.0-r1: Parse ocaml compiler output into structured form
 dev-ml/ocamlformat-lib 0.26.2: OCamlFormat is a tool to automatically format OCaml code in a uniform style.
 dev-ml/ocamlformat-rpc-lib 0.26.2: Auto-formatter for OCaml code (RPC mode)
-dev-ml/pecu 0.6: Implementation of quoted-printable encoder/decoder from RFC2045
 dev-ml/ppx_yojson_conv_lib 0.17.0: Runtime lib for ppx_yojson_conv
 dev-ml/psq 0.2.0-r2 0.2.1: Functional Priority Search Queues for OCaml
-dev-ml/randomconv 0.1.3: Convert from random bytes to random native numbers
 dev-nim/cligen 1.8.3 1.8.4: Infer & generate command-line interface/option/argument parser
 dev-nim/inim 0.6.1 1.0.0: Interactive Nim Shell / REPL / Playground
 dev-nim/nake 1.9.4-r1: make-like for Nim. Describe your builds as tasks!
@@ -700,7 +692,6 @@ dev-python/gbinder 1.1.2-r2 9999: Python bindings for libgbinder
 dev-python/gemcall 0.9.2: A library and CLI tool for making gemini requests
 dev-python/glcontext 3.0.0: Modern OpenGL binding for python
 dev-python/glfw 2.8.0 2.9.0: Python bindings for GLFW
-dev-python/glicko2 2.0.0-r2: glicko2 implementation in python
 dev-python/gnuplot-py 1.8_p8-r1: A python wrapper for Gnuplot
 dev-python/googletrans 4.0.0_rc1-r1: Free Google Translate API for Python. Translates totally free of charge.
 dev-python/graphene 3.2.2: GraphQL Framework for Python
@@ -815,7 +806,6 @@ dev-python/pytest-harvest 1.10.5: Store and retrieve data created during your py
 dev-python/pytest-mypy-plugins 3.1.0: pytest plugin for testing mypy types, stubs, plugins
 dev-python/pytest-relaxed 2.0.2: Relaxed test discovery for pytest
 dev-python/pytest-steps 1.8.0: Create step-wise / incremental tests in pytest
-dev-python/pytest-vcr 1.0.2: Plugin for managing VCR.py cassettes
 dev-python/python-barbicanclient 7.0.0 7.1.0: Client library for Barbican API.
 dev-python/python-designateclient 6.2.0: OpenStack DNS-as-a-Service - Client
 dev-python/python-fire 0.6.0 0.7.0: Library for automatically generating command line interfaces from Python objects
@@ -964,10 +954,8 @@ dev-util/ocp-indent 1.8.2: Indentation tool for OCaml, to be used from editors l
 dev-util/pcpp 1.30: A C99 preprocessor written in pure Python
 dev-util/pifpaf 3.2.3 3.3.0: Suite of tools and fixtures to manage daemons for testing
 dev-util/pmbootstrap 3.0.0 3.3.1: Helper tool for developing and building postmarketOS
-dev-util/prysk 0.20.0: Functional testing framework for command line applications (cram fork)
 dev-util/qshaderedit 0.1.5: Multiplatform shader editor inspired by Apple's OpenGL Shader Builder
 dev-util/quilttools 0.3-r1: Mailbox to quilt series converter
-dev-util/reflex 0.3.1: A small tool to watch a directory and rerun a command when certain files change
 dev-util/rexxd 2025.02.17: Drop-in replacement for the original xxd
 dev-util/rust-rover 2024.2.1-r1: A feature-rich Rust IDE with timely support by JetBrarins
 dev-util/rust-script 0.35.0-r1: Command-line tool to run Rust scripts which can make use of crates
@@ -1061,7 +1049,7 @@ games-util/ProtonUp-Qt 2.11.1 2.12.0 9999: Install and manage GE-Proton, Luxtorp
 games-util/chiaki-ng 1.9.5 9999: Client for PlayStation 4 and PlayStation 5 Remote Play
 games-util/curseforge 1.278.0_p25906: The CurseForge Electron App
 games-util/dwarf-therapist 41.2.5 42.1.5: For managing dwarves in Dwarf Fortress
-games-util/gamehub 0.16.3.2-r1: GameHub is a unified library for all your games
+games-util/gamehub 0.16.3.2-r2: GameHub is a unified library for all your games
 games-util/goverlay 1.2: Graphical UI to help manage Linux game overlays (MangoHud).
 games-util/grapejuice 7.20.12 9999: A Wine+Roblox management application
 games-util/hid-nintendo 9999: A Nintendo HID kernel module
@@ -1126,7 +1114,7 @@ gui-apps/grimshot 9999: A helper for screenshots within sway
 gui-apps/gtklock 4.0.0: GTK-based lockscreen for Wayland
 gui-apps/gtklock-extras 9999: Gtklock modules
 gui-apps/hiprompt-gtk-py 0.8.0 9999: GTK+ Himitsu prompter for Wayland
-gui-apps/hypridle 0.1.5-r2 0.1.6 9999: Hyprland's idle daemon
+gui-apps/hypridle 0.1.6 9999: Hyprland's idle daemon
 gui-apps/hyprlock 0.7.0 0.8.2 9999: Hyprland's GPU-accelerated screen locking utility
 gui-apps/hyprnome 0.3.0: GNOME-like workspace switching in Hyprland.
 gui-apps/hyprpaper 0.7.4 0.7.5: A blazing fast wayland wallpaper utility
@@ -1334,7 +1322,7 @@ media-sound/eartag 0.5.0 0.5.1: GTK4 MusicBrainz audio tagger
 media-sound/fooyin 0.7.3 0.8.1 9999: A customizable music player, Qt clone of foobar2000
 media-sound/furnace 0.6 0.6.5-r1 0.6.7: a multi-system chiptune tracker compatible with DefleMask modules
 media-sound/gapless 4.3.1 4.4: A GTK4 music player
-media-sound/jacktrip 1.7.1-r1 2.4.0: Send JACK audio over a network
+media-sound/jacktrip 2.4.0: Send JACK audio over a network
 media-sound/jriver 31.0.83: A cross-platform media center, famous for high quality of audio.
 media-sound/kew 2.4.4-r1: kew (/kjuː/) is a command-line music player for Linux.
 media-sound/listenbrainz-mpd 2.3.8-r2: ListenBrainz submission client for MPD
@@ -1420,7 +1408,7 @@ net-client/kristall 0.3-r2 0.4: Visual cross-platform gemini browser
 net-client/lagrange 1.18.4 1.18.5: Desktop GUI client for browsing Geminispace
 net-client/offpunk 2.6 2.7.1: Offline-First Gemini/Web/Gopher/RSS reader and browser
 net-client/starfish 1.2.0 1.3.1: A Gemini browser for elementary OS
-net-client/telescope 0.9 0.10.1: w3m-like browser for Gemini
+net-client/telescope 0.10.1 0.11: w3m-like browser for Gemini
 net-dialup/atinout 0.9.1-r1: AT commands as input are sent to modem and responses given as output
 net-dialup/minimodem 0.24-r2 9999-r1: General-purpose software audio FSK modem
 net-dialup/syncterm 1.1 9999: BBS (bulletin board system) terminal
@@ -1434,7 +1422,7 @@ net-im/Quaternion 0.0.97.1: A Qt-based IM client for Matrix
 net-im/WasIstLos 1.6.5 1.7.0: An unofficial WhatsApp desktop application for Linux
 net-im/abaddon 0.2.1 9999: Alternative Discord client using GTK instead of Electron
 net-im/axolotl-bin 2.0.1: Axolotl is a cross-platform Signal client
-net-im/beeper 4.0.688 4.0.693: Beeper: Unified Messenger
+net-im/beeper 4.0.693 4.0.710: Beeper: Unified Messenger
 net-im/chatterino 2.5.2-r1 2.5.3: Chat client for https://twitch.tv
 net-im/conduit 0.9.0-r1 0.10.2 9999: Matrix homeserver written in Rust
 net-im/discord-canary-bin 0.0.643: All-in-one voice and text chat
@@ -1500,7 +1488,6 @@ net-misc/commons-wikimedia-find-by-hash 1.0.0: Search in commons.wikimedia.org b
 net-misc/curlie 1.8.2: Curlie is a frontend to curl that adds the ease of use of httpie
 net-misc/cve-client 1.1.1 9999: CLI-based client / toolbox for CVE.org
 net-misc/eg25-manager 0.4.2: Daemon for managing the Quectel EG25 modem
-net-misc/fedigroup 1.0.6 1.0.8: Emulate group accounts on Mastodon/Pleroma
 net-misc/ffsend 0.2.77: Easily and securely share files from the command line
 net-misc/fileshelter 6.2.0: FileShelter is a “one-click” file sharing web application
 net-misc/freetube-bin 0.23.4_beta 0.23.5_beta: A private YouTube desktop client
@@ -1548,7 +1535,7 @@ net-news/gfeeds 2.2.0-r3: An RSS/Atom feed reader for GNOME.
 net-news/newsflash 3.1.6 3.1.6-r1 3.3.5: Feed Reader written in GTK
 net-news/newsraft 0.27 0.28 9999: A lightweight feed reader with ncurses user interface inspired by Newsboat.
 net-nntp/inn 2.7.1: InterNetNews - the Internet meets Netnews
-net-nntp/nzb-monkey-go 0.1.16: Golang version of the NZB Monkey with included NZB direct search
+net-nntp/nzb-monkey-go 0.1.16 0.1.17: Golang version of the NZB Monkey with included NZB direct search
 net-nntp/pan 0.161 0.162: A newsreader for GNOME
 net-p2p/bisq-bin 1.9.14-r1: The decentralized bitcoin exchange (non-atomic, with arbitration)
 net-p2p/dogecoin-qt 1.14.9 9999: Dogecoin Core Qt for desktop. Downloaded blockchain is under 2.2GB. Much secure.
@@ -1668,7 +1655,7 @@ sec-keys/openpgp-keys-skyjake 20211224: OpenPGP keys used by Jaakko Keranen
 sec-keys/signify-keys-gmid 2.0 2.1: Signify keys used to sign gmid releases
 sec-keys/signify-keys-lanodan 2021.04 2023 2024 2025: Signify keys used by Haelwenn (lanodan) Monnier
 sec-keys/signify-keys-oriole-systems 20240330: Signify keys used to sign oriole.systems releases
-sec-keys/signify-keys-telescope 0.9 0.10: Signify keys used to sign telescope releases
+sec-keys/signify-keys-telescope 0.10 0.11 0.12: Signify keys used to sign telescope releases
 sys-apps/0xFFFF 0.10: 0pen Free Fiasco Firmware Flasher for Maemo devices
 sys-apps/asus-numpad 0.2-r1 9999: User-space driver for Asus numpad
 sys-apps/asus-touchpad-numpad-driver 0_pre20220311 9999: Feature-rich configurable Asus NumPad drivers
@@ -1715,7 +1702,7 @@ sys-block/ublksrv 1.4: Userspace block device driver
 sys-boot/customrescuecd-x86_64-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/drbl 5.4.2: Diskless Remote Boot in Linux
 sys-boot/grml-rescueboot 0.6.1: grub2 script to add ISO images to the grub2 boot menu
-sys-boot/limine 7.0.0 7.0.3 7.0.5 7.3.0 7.5.0 7.9.2 8.0.5 8.0.6 8.0.7 8.0.9 8.0.11 8.0.12 8.0.13 8.0.14 8.1.1 8.1.2 8.3.2 8.4.0 8.5.0 8.6.0 8.7.0 9.0.0 9.0.1 9.1.3 9.2.0 9.2.2 9.2.3 9.3.0: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
+sys-boot/limine 9.3.0 9.3.2: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
 sys-boot/mkusb 23.2.0: CLI and GUI for creating bootable live USB, with optional persistent storage
 sys-boot/ventoy-bin 1.0.97 1.0.98: Creator of bootable USBs, with ability to copy ISOs, persistence storage
 sys-boot/zfsbootmenu 1.12.0 2.2.2 2.3.0: ZFS bootloader for root-on-ZFS systems
@@ -1796,7 +1783,7 @@ www-client/mullvad-browser-bin 14.5.1: The Mullvad Browser is developed to minim
 www-client/nyxt 3.11.8 3.12.0 9999: Nyxt - the hacker's power-browser
 www-client/vimb 3.6.0 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
 www-client/yandex-browser 25.2.6.724_p1: The web browser from Yandex
-www-client/zen-bin 1.12.6b 1.12.7b: Zen Browser - A Firefox-based browser focused on privacy
+www-client/zen-bin 1.12.7b 1.12.8b: Zen Browser - A Firefox-based browser focused on privacy
 www-misc/dufs 0.40.0: Dufs is a distinctive utility file server
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits
 www-misc/kiwix-desktop 2.4.0: cross-platform viewer/manager for ZIM archives
