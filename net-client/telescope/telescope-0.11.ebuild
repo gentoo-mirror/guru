@@ -1,31 +1,33 @@
-# Copyright 2021-2024 Gentoo Authors
+# Copyright 2021-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 VERIFY_SIG_METHOD="signify"
-inherit toolchain-funcs verify-sig
+inherit optfeature toolchain-funcs verify-sig
 
 DESCRIPTION="w3m-like browser for Gemini"
-HOMEPAGE="https://www.telescope-browser.org/"
-SRC_URI="https://ftp.omarpolo.com/${P}.tar.gz
-	verify-sig? ( https://ftp.omarpolo.com/${P}.tar.gz.sha256.sig )"
+HOMEPAGE="https://telescope-browser.org/"
+SRC_URI="https://ftp.telescope-browser.org/${P}.tar.gz
+	verify-sig? ( https://ftp.telescope-browser.org/${P}.tar.gz.sha256.sig )"
 
 LICENSE="ISC"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="unicode"
 
 DEPEND="
+	dev-libs/imsg-compat
 	dev-libs/libbsd
 	dev-libs/libgrapheme:=
 	dev-libs/libretls:=
 	sys-libs/ncurses:=
 "
-RDEPEND="${DEPEND}"
+RDEPEND="${DEPEND}
+	app-misc/editor-wrapper
+	net-mail/mailbase
+"
 BDEPEND="
 	app-alternatives/yacc
-	virtual/pkgconfig
 	verify-sig? ( sec-keys/signify-keys-telescope:$(ver_cut 1-2) )
 "
 
@@ -47,9 +49,14 @@ src_configure() {
 	local econf_args=(
 		HOSTCC="${BUILD_CC}"
 		HOSTCFLAGS="${BUILD_CFLAGS}"
+		--with-default-editor="${EPREFIX}"/usr/libexec/editor
 		--with-libbsd
-		--without-libimsg
+		--with-libimsg
 	)
 
 	econf "${econf_args[@]}"
+}
+
+pkg_postinst() {
+	optfeature "file opener support" x11-misc/xdg-utils
 }
