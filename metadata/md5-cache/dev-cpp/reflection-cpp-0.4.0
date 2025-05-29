@@ -1,14 +1,16 @@
 BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.20.5
 DEFINED_PHASES=compile configure install prepare test
-DEPEND=dev-libs/libmodbus
-DESCRIPTION=command line utility to communicate with ModBus slave (RTU or TCP)
+DEPEND=test? ( dev-cpp/catch:0 )
+DESCRIPTION=Boxing primitive types in C++
 EAPI=8
-HOMEPAGE=https://github.com/epsilonrt/mbpoll
+HOMEPAGE=https://github.com/contour-terminal/reflection-cpp
 INHERIT=cmake
-KEYWORDS=~amd64 ~arm64
-LICENSE=GPL-3
-RDEPEND=dev-libs/libmodbus
+IUSE=test
+KEYWORDS=~amd64
+LICENSE=Apache-2.0
+RDEPEND=test? ( dev-cpp/catch:0 )
+RESTRICT=!test? ( test )
 SLOT=0
-SRC_URI=https://github.com/epsilonrt/mbpoll/archive/refs/tags/v1.5.2.tar.gz -> mbpoll-1.5.2.tar.gz
+SRC_URI=https://github.com/contour-terminal/reflection-cpp/archive/refs/tags/v0.4.0.tar.gz -> reflection-cpp-0.4.0.tar.gz
 _eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	b892042b2667b8ac69ec8a2571dc290a	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	b05c1b7b3c9213c155f128f4eadaa49f
-_md5_=c3ef9710d22bb11483a5b2c224b03e0a
+_md5_=0e1709cbe3bd178865be0a32192e9ae7

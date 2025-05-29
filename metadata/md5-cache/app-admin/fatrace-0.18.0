@@ -1,0 +1,11 @@
+DEFINED_PHASES=install
+DESCRIPTION=report system wide file access events
+EAPI=8
+HOMEPAGE=https://github.com/martinpitt/fatrace
+IUSE=powertop
+KEYWORDS=~amd64
+LICENSE=GPL-3
+RDEPEND=powertop? ( sys-power/powertop )
+SLOT=0
+SRC_URI=https://github.com/martinpitt/fatrace/archive/0.18.0/fatrace-0.18.0.tar.gz
+_md5_=19620a4e1e448ebe660d951e8760d03f
