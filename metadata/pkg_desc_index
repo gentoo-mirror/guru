@@ -133,7 +133,7 @@ app-backup/restic-browser 0.3.2_p20250523: A GUI to browse and restore from rest
 app-backup/timeshift 23.07.1: A system restore utility for Linux
 app-backup/timeshift-autosnap 0.9-r1: Automatically creates a timeshift-snapshot when executed
 app-benchmarks/kdiskmark 3.1.4-r1: Disk benchmarking tool
-app-benchmarks/occt-bin 14.0.12 14.0.12-r1: All-in-one stability, stress test, benchmark and monitoring tool
+app-benchmarks/occt-bin 14.0.13: All-in-one stability, stress test, benchmark and monitoring tool
 app-benchmarks/phoronix-test-suite 10.8.4 9999: Phoronix's comprehensive, cross-platform testing and benchmark suite
 app-benchmarks/poop 0.5.0 9999: Performance Optimizer Observation Platform
 app-benchmarks/unigine-superposition 1.1: Game like benchmark (CPU, GPU), for ~5 minutes
@@ -348,7 +348,7 @@ app-text/code-minimap 0.6.8: A high performance code minimap generator
 app-text/dooit 3.1.0: A TUI todo manager
 app-text/epubgrep 0.6.2: Search tool for EPUB e-books
 app-text/ford 6.2.5 7.0.8-r1 7.0.9-r1 7.0.10 7.0.11: FORD, automatic documentation generator for modern Fortran programs
-app-text/harper 0.39.0: The language checker for developers.
+app-text/harper 0.40.0: The language checker for developers.
 app-text/jrnl 4.1 4.2: Collect your thoughts and notes without leaving the command line
 app-text/klogg 22.06.0.1289-r1: A GUI application to browse and search through long and complex log files
 app-text/komikku 1.72.0: Manga reader for GNOME
@@ -528,7 +528,7 @@ dev-lang/odin 2024.08 2024.09: The Data-Oriented Language for Sane Software Deve
 dev-lang/opencilk 1.1 2.1: The OpenCilk concurrency platform for parallel programming
 dev-lang/opencilk-bin 1.1 2.1: The OpenCilk concurrency platform for parallel programming
 dev-lang/quickjs 2024.01.13-r1: Small embeddable Javascript engine
-dev-lang/swift 5.10.1 5.10.1-r1 5.10.1-r2 5.10.1-r3 5.10.1-r4 6.0.3 6.0.3-r1 6.1 6.1.1: A high-level, general-purpose, multi-paradigm, compiled programming language
+dev-lang/swift 5.10.1 5.10.1-r1 5.10.1-r2 5.10.1-r3 5.10.1-r4 6.0.3 6.0.3-r1 6.1 6.1.1 6.1.2: A high-level, general-purpose, multi-paradigm, compiled programming language
 dev-lang/swift-bootstrap 1.0: A virtual package providing a base Swift to bootstrap future versions with.
 dev-lang/wabt 1.0.34: The WebAssembly Binary Toolkit
 dev-libs/M_CLI2 3.2.0: M_CLI2 - parse Unix-like command line arguments from Fortran
@@ -587,6 +587,7 @@ dev-libs/unordered_dense 4.0.1 4.4.0 9999: A fast and densely stored hashmap and
 dev-libs/weechat-relay 9999: Portable and multi-interface IRC client relay api
 dev-libs/xqilla 2.3.4-r3: An XQuery and XPath 2 library and command line utility written in C++
 dev-libs/zfp 1.0.1: Compressed numerical arrays that support high-speed random access
+dev-lua/hump 0.4.2: Helper Utilities for a Multitude of Problems
 dev-lua/ldbus 0_p20250222: Lua library to access dbus.
 dev-lua/lua-psl 0.3_p20201126: Lua bindings to libpsl
 dev-lua/multipart-post 1.4: HTTP Multipart Post helper that does just that.
@@ -840,7 +841,7 @@ dev-python/scrapy 2.12.0: A high-level Web Crawling and Web Scraping framework
 dev-python/screeninfo 0.8.1: Fetch location and size of physical screens.
 dev-python/sendgrid 6.11.0: Twilio SendGrid library for Python
 dev-python/sentence-splitter 1.4-r2: Sentence splitter using heuristic algorithm by Philipp Koehn and Josh Schroeder
-dev-python/sentry-sdk 2.28.0: Python client for Sentry
+dev-python/sentry-sdk 2.29.0: Python client for Sentry
 dev-python/signalstickers-client 3.3.0: A Python client for the Signal stickers API
 dev-python/simplemma 0.9.1: A simple multilingual lemmatizer for Python
 dev-python/sjcl 0.2.1-r1: Decrypt and encrypt 'Stanford Javascript Crypto Library'-compatible messages
@@ -1141,13 +1142,13 @@ gui-apps/nwg-bar 0.1.5 0.1.6: GTK3-based button bar for wlroots-based compositor
 gui-apps/nwg-clipman 0.2.4-r1 0.2.5: nwg-shell clipboard manager - a GTK3-based GUI for cliphist
 gui-apps/nwg-displays 0.3.22 0.3.25: Output management utility for sway and Hyprland
 gui-apps/nwg-dock 0.4.1 0.4.3: GTK3-based dock for sway
-gui-apps/nwg-dock-hyprland 0.4.3 0.4.4: GTK3-based dock for Hyprland
-gui-apps/nwg-drawer 0.6.3 0.6.5: Application drawer for wlroots-based Wayland compositors
+gui-apps/nwg-dock-hyprland 0.4.4 0.4.6: GTK3-based dock for Hyprland
+gui-apps/nwg-drawer 0.6.5 0.7.0: Application drawer for wlroots-based Wayland compositors
 gui-apps/nwg-hello 0.3.0 0.4.0: GTK3-based greeter for greetd written in python
 gui-apps/nwg-icon-picker 0.1.1 0.1.1-r1 9999: GTK icon chooser with a text search option
 gui-apps/nwg-launchers 0.5.0 0.6.3 0.7.1.1 9999: GTK+ launchers for sway, i3 and some other WMs
 gui-apps/nwg-menu 0.1.6 0.1.7: enuStart plugin to nwg-panel, also capable of working standalone
-gui-apps/nwg-panel 0.9.61 0.10.2 9999: GTK3-based panel for sway and Hyprland Wayland compositors
+gui-apps/nwg-panel 0.10.2 0.10.3 0.10.4 9999: GTK3-based panel for sway and Hyprland Wayland compositors
 gui-apps/nwg-shell 0.5.44 0.5.48: libraries an common functions for the nwg-shell project
 gui-apps/nwg-shell-config 0.5.55 0.5.56 0.5.58: nwg-shell configuration utility
 gui-apps/openrefine 3.7.9: Wikidata batch editor, Wikimedia Commons mass upload tool
@@ -1346,7 +1347,7 @@ media-sound/pianobooster 1.0.0: A MIDI player/game that displays notes and teach
 media-sound/pipewire-module-xrdp 0.1_pre20230609-r1 0.2: PipeWire module which enables xrdp to use audio redirection
 media-sound/plexamp 4.11.5: A dedicated music player for your Plex media library.
 media-sound/pulseaudio-virtualmic 0.1 9999: Use any offline or online media file or stream as a PulseAudio source
-media-sound/qbitmplayer 2.9.0 2.9.2 2.9.5: Music Player written in C++ & Qt.
+media-sound/qbitmplayer 2.9.2 2.9.5 3.0.2: Music Player written in C++ & Qt.
 media-sound/qloud 1.4.2: Tool to measure loudspeaker frequency and step responses and distortions
 media-sound/rsgain 3.5.1 3.5.3: Really Simple replay Gain calculator for tagging audio files
 media-sound/spct 1.1.3: A CLI program to play back or render SPC files.
@@ -1502,7 +1503,7 @@ net-misc/gmcapsule 0.9.7: Extensible Gemini/Titan server
 net-misc/gmid 2.1 2.1.1 9999: Simple and secure Gemini server
 net-misc/gnome-ssh-askpass 9.9_p2 10.0_p1: GTK-based passphrase dialog for use with OpenSSH
 net-misc/graftcp 0.7.1: A tool for redirecting a given program's TCP traffic to SOCKS5 or HTTP proxy
-net-misc/iipsrv 1.2: High performance image server for high resolution and scientific images
+net-misc/iipsrv 1.2 1.3: High performance image server for high resolution and scientific images
 net-misc/inv_sig_helper 0_pre20250103 9999: Rust service that decrypts YouTube signatures and manages player information
 net-misc/jool 4.1.14: Required tools for Jool
 net-misc/jool-modules 4.1.14: Jool is an Open Source SIIT and NAT64 for linux
@@ -1689,7 +1690,7 @@ sys-apps/openSeaChest 23.12 24.08.1: SeaGate's open source harddrive control uti
 sys-apps/openpt 1.0.1: start program in a new pseudo-terminal
 sys-apps/ov 0.11.2 0.32.0: Feature-rich terminal pager
 sys-apps/pnpm-bin 9.12.3 9.15.5 10.2.0: Fast, disk space efficient package manager, alternative to npm and yarn
-sys-apps/qdiskinfo 0.3: CrystalDiskInfo alternative for Linux
+sys-apps/qdiskinfo 0.3 0.4: CrystalDiskInfo alternative for Linux
 sys-apps/qemu-openrc 0.10.0 0.11.1 9999: OpenRC init script for QEMU/KVM
 sys-apps/qjournalctl 0.6.2: Qt-based GUI for systemd's journalctl command
 sys-apps/save-backlight 1.1.2-r1 9999: An OpenRC service for restoring the last brightness level on reboot
@@ -1750,7 +1751,7 @@ sys-libs/solo-udev-rules 4.1.5: udev rules for the Solo FIDO2 & U2F USB+NFC secu
 sys-power/amdfan 0.1.28 0.2.3 0.2.5: Updated AMD Fan control utility forked from amdgpu-fan and updated.
 sys-power/auto-cpufreq 2.3.0 2.4.0: Automatic CPU speed & power optimizer for Linux
 sys-power/envycontrol 3.4.0 9999: Easy GPU switching for Nvidia Optimus laptops under Linux
-sys-power/fan2go 0.9.0 0.9.1: A simple daemon providing dynamic fan speed control
+sys-power/fan2go 0.9.1 0.9.2: A simple daemon providing dynamic fan speed control
 sys-power/gtherm 0.0.3: A simple daemon to monitor thermal zones and cooling devices
 sys-power/linux-tools-power-x86 6.1 6.6: Linux x86 CPU power tools
 sys-power/nvidia-exec 0.2.7-r1 9999: GPU switching without login out for Nvidia Optimus laptops under Linux

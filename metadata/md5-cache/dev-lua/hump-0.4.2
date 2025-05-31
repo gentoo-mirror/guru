@@ -1,0 +1,16 @@
+BDEPEND=doc? ( dev-python/sphinx dev-python/sphinx-rtd-theme )
+DEFINED_PHASES=compile install
+DEPEND=lua_targets_luajit? ( dev-lang/luajit:= ) lua_targets_lua5-1? ( dev-lang/lua:5.1 ) lua_targets_lua5-3? ( dev-lang/lua:5.3 ) lua_targets_lua5-4? ( dev-lang/lua:5.4 )
+DESCRIPTION=Helper Utilities for a Multitude of Problems
+EAPI=8
+HOMEPAGE=http://hump.readthedocs.org/ https://github.com/vrld/hump/
+INHERIT=lua
+IUSE=doc lua_targets_luajit lua_targets_lua5-1 lua_targets_lua5-3 lua_targets_lua5-4
+KEYWORDS=~amd64
+LICENSE=MIT
+RDEPEND=lua_targets_luajit? ( dev-lang/luajit:= ) lua_targets_lua5-1? ( dev-lang/lua:5.1 ) lua_targets_lua5-3? ( dev-lang/lua:5.3 ) lua_targets_lua5-4? ( dev-lang/lua:5.4 )
+REQUIRED_USE=|| ( lua_targets_luajit lua_targets_lua5-1 lua_targets_lua5-3 lua_targets_lua5-4 )
+SLOT=0
+SRC_URI=https://github.com/vrld/hump/archive/08937cc0ecf72d1a964a8de6cd552c5e136bf0d4.tar.gz -> hump-0.4.2.tar.gz
+_eclasses_=out-of-source-utils	dbf9e34ee8964084651e25907fa8f52c	multibuild	4650a65187015567b4e041bb9bfdb364	toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	lua-utils	7c89927eda6f21c4c48136247077ab37	lua	3414f66fe14a8c3ffdb5a894097068c6
+_md5_=7b039baffc071d5e2e35a748345bb8b2
