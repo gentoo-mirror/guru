@@ -17,8 +17,6 @@ KEYWORDS="~amd64"
 DEPEND="sys-apps/lm-sensors"
 RDEPEND="${DEPEND}"
 
-PATCHES=( "${FILESDIR}/${P}-fix-tests.patch" )
-
 src_compile() {
 	SOURCE_DATE_EPOCH=$(date +%s || die)
 	DATE=$(date -u -d @${SOURCE_DATE_EPOCH} +"%Y-%m-%dT%H:%M:%SZ" || die)
