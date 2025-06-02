@@ -1,16 +1,16 @@
-# Copyright 2024 Gentoo Authors
+# Copyright 2024-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 inherit go-module
 
 DESCRIPTION="A tool for managing GitLab groups and projects"
-HOMEPAGE="https://gitlab.com/etke.cc/tools/agru"
+HOMEPAGE="https://github.com/etkecc/agru"
 
-SRC_URI="https://gitlab.com/etke.cc/tools/agru/-/archive/v${PV}/v${PV}.tar.bz2 -> ${P}.tar.bz2
-https://xwaretech.info/agru-${PV}-deps.tar.xz"
-
-S="${WORKDIR}/${PN}-v${PV}-d6a2bd6d8a4fca3dbb0201c020e4f70ce9a90c39"
+SRC_URI="
+	https://github.com/etkecc/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
+	https://xwaretech.info/agru-${PV}-deps.tar.xz
+"
 
 LICENSE="AGPL-3"
 SLOT="0"

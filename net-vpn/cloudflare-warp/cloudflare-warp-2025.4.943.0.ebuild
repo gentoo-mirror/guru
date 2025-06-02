@@ -1,4 +1,4 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -6,8 +6,8 @@ EAPI=8
 inherit unpacker systemd xdg desktop
 
 DESCRIPTION="Cloudflare Warp Client"
-HOMEPAGE="https://one.one.one.one"
-SRC_URI="https://pkg.cloudflareclient.com/pool/jammy/main/c/cloudflare-warp/cloudflare-warp_${PV}.0_amd64.deb"
+HOMEPAGE="https://1.1.1.1"
+SRC_URI="https://pkg.cloudflareclient.com/pool/jammy/main/c/cloudflare-warp/cloudflare-warp_${PV}_amd64.deb"
 
 S="${WORKDIR}"
 
@@ -16,7 +16,10 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE="systemd +systray dex"
 RESTRICT="bindist mirror"
-RDEPEND="net-firewall/nftables
+RDEPEND="dev-libs/glib
+	net-firewall/nftables
+	sys-apps/dbus
+	x11-libs/cairo
 	dex? ( net-libs/libpcap )
 	systray? (
 		x11-libs/gdk-pixbuf:2
