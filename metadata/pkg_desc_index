@@ -119,6 +119,7 @@ app-arch/nix-compress 0.3.0: Modern implementation of the ancient unix compress(
 app-arch/ouch 0.6.1: A cli utility for easily compressing and decompressing files and directories.
 app-arch/unalz 0.65-r1 0.65-r2: Extract ALZ archives
 app-arch/zarchive 0.1.2: Library for creating and reading zstd-compressed file archives (.zar)
+app-backup/b2 4.3.2: Command-line tool for BackBlaze's B2 product
 app-backup/blocksync-fast 1.0.3 1.0.4 1.0.6 1.0.7: Fast block device sync with digest, designed to improve block-based backups.
 app-backup/grub-btrfs 4.11-r1 4.12 4.13 9999: Improves Grub by adding btrfs snapshots to the Grub menu.
 app-backup/kopia 0.15.0: Kopia - Fast And Secure Open-Source Backup
@@ -701,6 +702,7 @@ dev-python/hid_ups_exporter 1.0.1: Python-based library for exporting HID UPS da
 dev-python/hijridate 2.5.0: Accurate Hijri-Gregorian date converter based on the Umm al-Qura calendar
 dev-python/http-ece 1.2.1: Encrypted Content Encoding for HTTP
 dev-python/i3ipc 2.2.1-r1 2.2.1-r2: An improved Python library to control i3wm and sway.
+dev-python/iOSbackup 0.9.925: Reads and extracts files from a password-encrypted iOS backup
 dev-python/icecream 2.1.4: Pythonic task execution
 dev-python/injector 0.21.0-r1: Python dependency injection framework, inspired by Guice
 dev-python/internetarchive 3.7.0: Lib and CLI for archive.org - for search, uploading, downloading, rename...
@@ -712,7 +714,7 @@ dev-python/iuliia 0.13.0: Transliterate Cyrillic to Latin in every possible way
 dev-python/jinja2-cli 0.8.2: CLI for Jinja2
 dev-python/jplephem 2.21 2.22: Python version of NASA DE4xx ephemerides for Astronomical Alamanac
 dev-python/jpype 1.5.1: Bridge to allow Python programs full access to Java class libraries
-dev-python/json-schema-for-humans 1.3.4: Quickly generate HTML documentation from a JSON schema
+dev-python/json-schema-for-humans 1.3.4 1.4.1: Quickly generate HTML documentation from a JSON schema
 dev-python/json_exporter 1.0.2: Python-based library for exporting JSON data as metrics for Prometheus.
 dev-python/jsonfeed 1.1.2: Python package for parsing and generating JSON feeds.
 dev-python/jsonlines 4.0.0: Library with helpers for the jsonlines file format
@@ -750,6 +752,7 @@ dev-python/oscrypto 1.3.0-r2: TLS sockets, key generation, encryption, decryptio
 dev-python/parsel 1.10.0: Utility to extract data from XML/HTML documents using XPath or CSS selectors
 dev-python/pem 23.1.0: Easy PEM file parsing in Python
 dev-python/persist-queue 0.8.1 1.0.0: A thread-safe disk based persistent queue in Python
+dev-python/phx-class-registry 4.1.0-r1: An intersection of the Registry and Factory pattern
 dev-python/pillow-heif 0.21.0 0.22.0: Python interface for libheif library
 dev-python/pillow-jxl-plugin 1.3.2: Pillow plugin for JPEG-XL, using Rust for bindings.
 dev-python/plexapi 4.16.1 4.17.0: Python bindings for the Plex API.
@@ -778,10 +781,14 @@ dev-python/pygls 1.3.1: A pythonic generic language server
 dev-python/pygments-promql 0.0.9-r1: A PromQL lexer for Pygments
 dev-python/pygsl 2.3.4: Python interface for the GNU scientific library (gsl)
 dev-python/pymeeus 0.5.12: Python implementation of Jean Meeus astronomical routines
+dev-python/pymorphy3 1.2.0: Morphological analyzer (POS tagger + inflection engine) for Russian language.
+dev-python/pymorphy3-dicts-ru 2.4.417150.4580142: Russian dictionary for PyMorphy3
+dev-python/pymorphy3-dicts-uk 2.4.1.1.1663094765: Ukrainian dictionary for PyMorphy3
 dev-python/pynput 1.7.6: Sends virtual input commands
 dev-python/pypandoc 1.15: Pypandoc provides a thin wrapper for pandoc, a universal document converter
 dev-python/pyperscan 0.3.0: An opinionated Python binding for Hyperscan
 dev-python/pyproject2ebuild 0.0.3: Convert pyproject.toml to Gentoo ebuilds automatically.
+dev-python/pyqtdarktheme 2.1.0: A flat dark theme for PySide and PyQt.
 dev-python/pyrime 0.0.7: rime for python
 dev-python/pysdl3 0.9.8_beta1 0.9.8_beta2: A pure Python wrapper for SDL3
 dev-python/pysnooper 1.2.0 1.2.1: Never use print for debugging again
@@ -905,7 +912,7 @@ dev-util/catppuccin-whiskers 2.4.0: Soothing port creation tool for the high-spi
 dev-util/cmakelang 0.6.13: Provides Quality Assurance (QA) tools for cmake
 dev-util/coq-lsp 0.1.9: Visual Studio Code Extension and Language Server Protocol for Coq
 dev-util/deblob 0.9 0.10 9999: remove binary executables from a directory
-dev-util/distribution-gpg-keys 1.110: Collection of GPG keys used in Linux Distributions
+dev-util/distribution-gpg-keys 1.111: Collection of GPG keys used in Linux Distributions
 dev-util/dmg2img 9999 20201227: Convert Apple disk images to IMG format.
 dev-util/dockerfile-language-server 0.12.0 0.13.0: A language server for Dockerfiles
 dev-util/eclipse-parallel-bin 4.28: Eclipse IDE for Scientific Computing (C, C++, Fortran)
@@ -1126,6 +1133,7 @@ gui-apps/nwg-dock 0.4.1 0.4.3: GTK3-based dock for sway
 gui-apps/nwg-dock-hyprland 0.4.4 0.4.6: GTK3-based dock for Hyprland
 gui-apps/nwg-drawer 0.6.5 0.7.0: Application drawer for wlroots-based Wayland compositors
 gui-apps/nwg-hello 0.3.0 0.4.0: GTK3-based greeter for greetd written in python
+gui-apps/nwg-icon-picker 0.1.1 0.1.1-r1 9999: GTK icon chooser with a text search option
 gui-apps/nwg-launchers 0.5.0 0.6.3 0.7.1.1 9999: GTK+ launchers for sway, i3 and some other WMs
 gui-apps/nwg-menu 0.1.6 0.1.7: enuStart plugin to nwg-panel, also capable of working standalone
 gui-apps/nwg-panel 0.10.2 0.10.3 0.10.4 9999: GTK3-based panel for sway and Hyprland Wayland compositors
@@ -1139,7 +1147,7 @@ gui-apps/pop-launcher 1.2.1: Modular IPC-based desktop launcher service
 gui-apps/rofi-wayland 1.7.5_p3 1.7.8_p1: A window switcher, run dialog and dmenu replacement
 gui-apps/satty 0.14.0-r1 9999: A screenshot annotation tool inspired by Swappy and Flameshot.
 gui-apps/sddm-conf 0.3.0: SDDM configuration editor
-gui-apps/sfwbar 1.0_beta15 1.0_beta16 9999: S* Floating Window Bar
+gui-apps/sfwbar 1.0_beta15 1.0_beta16 1.0_beta16_p1 9999: S* Floating Window Bar
 gui-apps/shikane 1.0.1: A wayland dynamic output config tool focusing on accuracy and determinism
 gui-apps/showmethekey 1.12.0 1.13.1: Show keys you typed on screen.
 gui-apps/somebar 1.0.3-r1 9999: dwm-like bar for dwl
@@ -1195,7 +1203,7 @@ gui-wm/labwc 0.8.3 0.8.4 9999: Openbox alternative for wayland
 gui-wm/miracle-wm 0.4.1 0.5.2: Tiling Wayland compositor based on Mir
 gui-wm/niri 25.02 25.05.1: Scrollable-tiling Wayland compositor
 gui-wm/phoc 0.42.1 0.43.0 0.44.0 0.44.1 0.45.0 0.46.0 0.47.0: Wayland compositor for mobile phones
-gui-wm/river 0.3.6 0.3.7 0.3.8 0.3.9: A dynamic tiling Wayland compositor
+gui-wm/river 0.3.7 0.3.9: A dynamic tiling Wayland compositor
 gui-wm/swayfx 0.4-r2 0.5: SwayFX: Sway, but with eye candy!
 kde-apps/kwalletcli 3.03: CLI for the KDE Wallet
 kde-misc/geminipart 20241121 20241215: KPart for viewing text/gemini files
@@ -1507,7 +1515,7 @@ net-misc/wayback_machine_downloader 2.3.0 2.3.1: Download an entire website from
 net-misc/whatscli 1.0.6 1.0.11: A command line interface for WhatsApp
 net-misc/wlvncc 20250122 20250307 99999999: A Wayland Native VNC Client
 net-misc/wsdd 0.8 0.9: A Web Service Discovery host daemon.
-net-misc/wstunnel 10.3.0 10.4.0: Tunnel all your traffic over Websocket or HTTP2 - Bypass firewalls/DPI
+net-misc/wstunnel 10.4.0 10.4.1: Tunnel all your traffic over Websocket or HTTP2 - Bypass firewalls/DPI
 net-misc/xh 0.24.1: Friendly and fast tool for sending HTTP requests
 net-misc/xkcd-handler 1.1.4: A handler for XKCD urls
 net-misc/xmrig-mo 6.21.2 6.22.2: MoneroOcean fork of xmrig that supports algo switching
@@ -1548,7 +1556,7 @@ net-vpn/GlobalProtect-openconnect 2.4.4-r1: Unofficial GlobalProtect VPN client 
 net-vpn/cloudflare-warp 2025.4.943.0: Cloudflare Warp Client
 net-vpn/fastd 22 23: A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
 net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that require SAML
-net-vpn/mullvadvpn-app 2025.6: Tool used to manage daemon setup
+net-vpn/mullvadvpn-app 2025.6 2025.7_beta1: Tool used to manage daemon setup
 net-vpn/proton-vpn-gtk-app 4.9.6-r1: Proton VPN GTK app
 net-wireless/airspyhf 1.6.8: User mode driver for Airspy HF+
 net-wireless/bluetuith 0.2.1 0.2.2 0.2.3 9999: A TUI bluetooth manager for Linux written in Go
