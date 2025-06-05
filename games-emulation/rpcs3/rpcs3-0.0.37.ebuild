@@ -1,4 +1,4 @@
-# Copyright 2021-2025 Gentoo Authors
+# Copyright 2021-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -6,12 +6,17 @@ EAPI=8
 inherit cmake flag-o-matic xdg
 
 ASMJIT_COMMIT="416f7356967c1f66784dc1580fe157f9406d8bff"
-GLSLANG_COMMIT="36d08c0d940cf307a23928299ef52c7970d8cee6"
-MINIUPNP_COMMIT="7f189988a0decca0ab7da89000051ab91751f70d"
+GLSLANG_COMMIT="fc9889c889561c5882e83819dcaffef5ed45529b"
+MINIUPNP_COMMIT="d66872e34d9ff83a07f8b71371b13419b2089953"
 RTMIDI_COMMIT="1e5b49925aa60065db52de44c366d446a902547b"
-WOLFSSL_COMMIT="00e42151ca061463ba6a95adb2290f678cbca472"
-SOUNDTOUCH_COMMIT="394e1f58b23dc80599214d2e9b6a5e0dfd0bbe07"
+WOLFSSL_COMMIT="b077c81eb635392e694ccedbab8b644297ec0285"
+SOUNDTOUCH_COMMIT="3982730833b6daefe77dcfb32b5c282851640c17"
+ZSTD_COMMIT="f8745da6ff1ad1e7bab384bd1f9d742439278e99"
+STB_COMMIT="013ac3beddff3dbffafd5177e7972067cd2b5083"
 YAMLCPP_COMMIT="456c68f452da09d8ca84b375faa2b1397713eaba"
+OPENAL_COMMIT="dc7d7054a5b4f3bec1dc23a42fd616a0847af948"
+FUSION_COMMIT="066d4a63b2c714b20b0a8073a01fda7c5c6763f6"
+VULKANMEMORYALLOCATOR_COMMIT="6ec8481c8a13db586d7b3ba58f4eb9bbf017edf0"
 
 DESCRIPTION="PS3 emulator/debugger"
 HOMEPAGE="https://rpcs3.net/"
@@ -20,7 +25,7 @@ if [[ ${PV} == "9999" ]]; then
 	EGIT_SUBMODULES=(
 	'asmjit' '3rdparty/glslang' '3rdparty/miniupnp/miniupnp' '3rdparty/rtmidi/rtmidi' '3rdparty/wolfssl'
 	'3rdparty/SoundTouch/soundtouch' '3rdparty/zstd/zstd' '3rdparty/stblib/stb' '3rdparty/OpenAL/openal-soft'
-	'3rdparty/fusion/fusion'
+	'3rdparty/fusion/fusion' '3rdparty/GPUOpen/VulkanMemoryAllocator'
 	)
 	# Delete sources when ensuring yaml-cpp compiled with fexceptions
 	EGIT_SUBMODULES+=( '3rdparty/yaml-cpp' )
@@ -33,23 +38,29 @@ else
 		https://github.com/miniupnp/miniupnp/archive/${MINIUPNP_COMMIT}.tar.gz -> ${PN}-miniupnp-${MINIUPNP_COMMIT}.tar.gz
 		https://github.com/thestk/rtmidi/archive/${RTMIDI_COMMIT}.tar.gz -> ${PN}-rtmidi-${RTMIDI_COMMIT}.tar.gz
 		https://github.com/wolfSSL/wolfssl/archive/${WOLFSSL_COMMIT}.tar.gz -> ${PN}-wolfssl-${WOLFSSL_COMMIT}.tar.gz
-		https://github.com/RPCS3/soundtouch/archive/${SOUNDTOUCH_COMMIT}.tar.gz -> ${PN}-soundtouch-${SOUNDTOUCH_COMMIT}.tar.gz
-		https://github.com/RPCS3/yaml-cpp/archive/${YAMLCPP_COMMIT}.tar.gz -> ${PN}-yaml-cpp-${YAMLCPP_COMMIT}.tar.gz
+		https://github.com/RPCS3/soundtouch/archive/${SOUNDTOUCH_COMMIT}.tar.gz
+			-> ${PN}-soundtouch-${SOUNDTOUCH_COMMIT}.tar.gz
+		https://github.com/facebook/zstd/archive/${ZSTD_COMMIT}.tar.gz -> ${PN}-zstd-${ZSTD_COMMIT}.tar.gz
+		https://github.com/nothings/stb/archive/${STB_COMMIT}.tar.gz -> ${PN}-stb-${STB_COMMIT}.tar.gz
+		https://github.com/RPCS3/yaml-cpp/archive/${YAMLCPP_COMMIT}.tar.gz -> ${PN}-yaml-cpp-${SOUNDTOUCH_COMMIT}-.tar.gz
+		https://github.com/kcat/openal-soft/archive/${OPENAL_COMMIT}.tar.gz -> ${PN}-openal-${OPENAL_COMMIT}.tar.gz
+		https://github.com/xioTechnologies/Fusion/archive/${FUSION_COMMIT}.tar.gz -> ${PN}-fusion-${FUSION_COMMIT}.tar.gz
+		https://github.com/GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator/archive/${VULKANMEMORYALLOCATOR_COMMIT}.tar.gz
+			-> ${PN}-VulkanMemoryAllocator-${VULKANMEMORYALLOCATOR_COMMIT}.tar.gz
 	"
 	KEYWORDS="~amd64"
 fi
 
 LICENSE="GPL-2"
 SLOT="0"
-IUSE="discord faudio +llvm opencv wayland"
+IUSE="discord faudio +llvm opencv vulkan wayland"
 
-COMMON_DEPEND="
-	app-arch/zstd
+DEPEND="
+	app-arch/p7zip
 	dev-libs/flatbuffers
 	dev-libs/hidapi
 	dev-libs/libevdev
 	dev-libs/pugixml
-	dev-libs/xxhash
 	dev-qt/qtbase:6[concurrent,dbus,gui,widgets]
 	dev-qt/qtmultimedia:6
 	dev-qt/qtsvg:6
@@ -59,7 +70,6 @@ COMMON_DEPEND="
 	media-libs/libglvnd
 	media-libs/libpng:=
 	media-libs/openal
-	media-libs/vulkan-loader[wayland?]
 	media-video/ffmpeg:=
 	net-misc/curl
 	llvm-core/llvm:=
@@ -68,22 +78,13 @@ COMMON_DEPEND="
 	x11-libs/libX11
 	faudio? ( app-emulation/faudio )
 	opencv? ( media-libs/opencv )
+	vulkan? ( media-libs/vulkan-loader[wayland?] )
 	wayland? ( dev-libs/wayland )
 "
-RDEPEND="${COMMON_DEPEND}"
-DEPEND="
-	${COMMON_DEPEND}
-	dev-libs/stb
-"
+RDEPEND="${DEPEND}"
 
 QA_PREBUILT="usr/share/rpcs3/test/.*"
 QA_WX_LOAD="usr/share/rpcs3/test/*"
-
-PATCHES=(
-	"${FILESDIR}/${P}-system-openal.patch"
-	"${FILESDIR}/${P}-system-stb.patch"
-	"${FILESDIR}/${P}-system-zstd.patch"
-)
 
 src_prepare() {
 	if [[ ${PV} != "9999" ]]; then
@@ -105,8 +106,24 @@ src_prepare() {
 		rmdir "${S}/3rdparty/SoundTouch/soundtouch" || die
 		mv "${WORKDIR}/soundtouch-${SOUNDTOUCH_COMMIT}" "${S}/3rdparty/SoundTouch/soundtouch" || die
 
+		rmdir "${S}/3rdparty/zstd/zstd" || die
+		mv "${WORKDIR}/zstd-${ZSTD_COMMIT}" "${S}/3rdparty/zstd/zstd" || die
+
+		rmdir "${S}/3rdparty/stblib/stb" || die
+		mv "${WORKDIR}/stb-${STB_COMMIT}" "${S}/3rdparty/stblib/stb" || die
+
 		rmdir "${S}/3rdparty/yaml-cpp/yaml-cpp" || die
 		mv "${WORKDIR}/yaml-cpp-${YAMLCPP_COMMIT}" "${S}/3rdparty/yaml-cpp/yaml-cpp" || die
+
+		rmdir "${S}/3rdparty/fusion/fusion" || die
+		mv "${WORKDIR}/Fusion-${FUSION_COMMIT}" "${S}/3rdparty/fusion/fusion" || die
+
+		rmdir "${S}/3rdparty/OpenAL/openal-soft" || die
+		mv "${WORKDIR}/openal-soft-${OPENAL_COMMIT}" "${S}/3rdparty/OpenAL/openal-soft" || die
+
+		rmdir "${S}/3rdparty/GPUOpen/VulkanMemoryAllocator" || die
+		mv "${WORKDIR}/VulkanMemoryAllocator-${VULKANMEMORYALLOCATOR_COMMIT}" \
+			"${S}/3rdparty/GPUOpen/VulkanMemoryAllocator" || die
 
 		#Define RPCS3 Version
 		{ echo "#define RPCS3_GIT_VERSION \"${PV}\""
@@ -119,7 +136,7 @@ src_prepare() {
 	sed -i -e '/find_program(CCACHE_FOUND ccache)/d' CMakeLists.txt || die
 
 	# Unbundle hidapi
-	sed -i -e '/hidapi\.h/{s:":<hidapi/:;s/"/>/}' rpcs3/Input/hid_pad_handler.h || die
+	sed -i -e '/hidapi\.h/{s:<:<hidapi/:;s/>/>/}' rpcs3/Input/hid_pad_handler.h || die
 	sed -i -e '/hidapi/d' 3rdparty/CMakeLists.txt || die
 	sed -i -e '1afind_package(PkgConfig REQUIRED)\npkg_check_modules(hidapi-hidraw REQUIRED hidapi-hidraw)' \
 		rpcs3/CMakeLists.txt || die
@@ -157,12 +174,11 @@ src_configure() {
 		-DUSE_SYSTEM_LIBPNG=ON
 		-DUSE_SYSTEM_LIBUSB=ON
 		-DUSE_SYSTEM_PUGIXML=ON
-		-DUSE_SYSTEM_XXHASH=ON
 		-DUSE_SYSTEM_ZLIB=ON
-		-DUSE_VULKAN=ON
 		-DUSE_DISCORD_RPC=$(usex discord)
 		-DUSE_FAUDIO=$(usex faudio)
 		-DUSE_SYSTEM_OPENCV=$(usex opencv)
+		-DUSE_VULKAN=$(usex vulkan)
 		-DWITH_LLVM=$(usex llvm)
 		$(cmake_use_find_package wayland Wayland)
 	)
