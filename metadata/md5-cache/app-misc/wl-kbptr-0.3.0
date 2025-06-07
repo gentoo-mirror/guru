@@ -1,0 +1,12 @@
+BDEPEND=app-alternatives/ninja dev-build/meson >=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array
+DEFINED_PHASES=compile configure install test
+DESCRIPTION=Control the mouse pointer with the keyboard on Wayland
+EAPI=8
+HOMEPAGE=https://github.com/moverest/wl-kbptr
+INHERIT=meson
+KEYWORDS=~amd64
+LICENSE=GPL-3
+SLOT=0
+SRC_URI=https://github.com/moverest/wl-kbptr/archive/refs/tags/v0.3.0.tar.gz -> wl-kbptr-0.3.0.tar.gz
+_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	b892042b2667b8ac69ec8a2571dc290a	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	b043191f3a82642545249acea7318e03	meson	99466844dd8d4fcfb07578a76f5a9922
+_md5_=95ece018f66ca0321c3459a859053064

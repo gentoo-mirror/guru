@@ -101,7 +101,7 @@ app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applicatio
 app-admin/pass-audit 1.2-r1: A pass extension for auditing your password repository.
 app-admin/pass-update 2.2.1: pass extension that provides an easy flow for updating passwords
 app-admin/passage 1.7.4.2: A fork of password-store using age as encryption backend
-app-admin/pulumi-bin 3.162.0 3.167.0 3.171.0: Infrastructure as code in any programming language
+app-admin/pulumi-bin 3.167.0 3.171.0 3.175.0: Infrastructure as code in any programming language
 app-admin/rbw 1.13.2 9999: Unofficial Bitwarden CLI
 app-admin/ripasso 0.7.0: A password manager that uses the file format of 'pass'
 app-admin/s-tui 1.1.6 1.2.0: Stress-Terminal UI monitoring tool
@@ -109,7 +109,7 @@ app-admin/sudo-rs 0.2.6: A memory safe implementation of sudo and su.
 app-admin/synadm 0.43.1 0.44: Command line admin tool for Synapse
 app-admin/talosctl-bin 1.7.6 1.9.5 1.10.1: Pre-compiled talosctl is an tool for interacting with the Talos API
 app-admin/terragrunt-bin 0.38.6 0.45.4 0.50.8: A thin wrapper for Terraform
-app-admin/tflint 0.55.1: Terraform linter
+app-admin/tflint 0.58.0: Terraform linter
 app-alternatives/phosh-keyboard 0 1: sm.puri.OSK0.desktop symlinks
 app-arch/fuse-archive 0.1.14 1.6 1.10 1.12: Read-only FUSE file system for mounting archives and compressed files
 app-arch/libarchive-qt 2.0.8: Qt based archiving solution with libarchive backend
@@ -138,7 +138,7 @@ app-containers/arachsys-containers 1.7: Simple containers using Linux user names
 app-containers/kind 0.27.0: Kind is a tool for running local Kubernetes clusters using Docker
 app-containers/pods 2.1.0_pre20240215-r4 2.1.2: Keep track of your podman containers
 app-containers/slim 1.40.11: Inspect, optimize and debug containers
-app-containers/waydroid 1.4.3 1.4.3-r1 1.5.1: Container-based approach to boot a full Android system on Linux systems
+app-containers/waydroid 1.4.3 1.4.3-r1 1.5.1 1.5.2: Container-based approach to boot a full Android system on Linux systems
 app-containers/waydroid-images 9999: Manage images for app-containers/waydroid using portage
 app-crypt/PBinCLI 0.3.5-r1: PBinCLI is a command line client for PrivateBin written in Python 3
 app-crypt/autofirma 1.8.2 1.8.3-r1: Spanish government's electronic signature application for online procedures
@@ -153,6 +153,7 @@ app-crypt/ifcplugin-bin 3.1.1.0: Crypto Interface Web Browser Plugin
 app-crypt/intel-ipsec-mb 1.1 1.2 1.3 1.5 9999: Multi-Buffer Crypto for IPSec from Intel
 app-crypt/keepass-diff 1.1.3-r1: A CLI tool to diff Keepass (.kdbx) files
 app-crypt/pinentry-bemenu 0.13.2 0.14.0: Pinentry based on bemenu
+app-crypt/pinentry-fuzzel 1.0.0: Simple passphrase entry dialog via 'fuzzel'.
 app-crypt/reop 2.1.1-r2: reasonable expectation of privacy
 app-crypt/sac-core 10.8.1050-r1: Thales/Gemalto SafeNet Authentication Client
 app-crypt/sops 3.9.2 3.9.4: Simple And Flexible Tool For Managing Secrets
@@ -210,6 +211,7 @@ app-misc/afetch 2.2.0: Simple system info written in C
 app-misc/agg 1.5.0 1.5.0-r1: Command-line tool for generating animated GIF files from asciicast v2 files
 app-misc/ani-cli 4.9 4.10 9999: A cli to browse and watch anime.
 app-misc/anki-bin 25.02: A spaced-repetition memory training program (flash cards)
+app-misc/arttime 2.3.4: CLI application that blends beauty of ASCII
 app-misc/aw-client 0.11.0: Client library for ActivityWatch
 app-misc/aw-core 0.5.16: Core library for ActivityWatch
 app-misc/badvideo 5.2 9999: Ruin your videos in SECONDS!
@@ -291,6 +293,7 @@ app-misc/walld 1.4.4: A Wallpaper daemon
 app-misc/watchexec 2.1.2 2.2.1 2.3.0: Executes commands in response to file modifications
 app-misc/wcal 0.1-r1: ISO weekly calendar
 app-misc/wego 2.2: Wego is a weather client for the terminal
+app-misc/wl-kbptr 0.3.0: Control the mouse pointer with the keyboard on Wayland
 app-misc/wlx-overlay-s 25.4.2 9999: A lightweight OpenXR/OpenVR overlay for Wayland and X11 desktops
 app-misc/wtf 0.43.0: The personal information dashboard for your terminal
 app-misc/x86-64-level 0.2.2 9999: Get the x86-64 Microarchitecture Level on the Current Machine
@@ -347,7 +350,7 @@ app-text/ford 6.2.5 7.0.8-r1 7.0.9-r1 7.0.10 7.0.11: FORD, automatic documentati
 app-text/harper 0.40.0: The language checker for developers.
 app-text/jrnl 4.1 4.2: Collect your thoughts and notes without leaving the command line
 app-text/klogg 22.06.0.1289-r1: A GUI application to browse and search through long and complex log files
-app-text/komikku 1.72.0: Manga reader for GNOME
+app-text/komikku 1.78.0: Manga reader for GNOME
 app-text/koodo-reader-bin 1.5.1 1.6.3: A modern ebook manager and reader with sync and backup capacities
 app-text/lchat 1.0-r2: Line oriented front end for ii-like chat programs
 app-text/lizard 1.17.13 1.17.28 1.17.31: A simple code complexity analyser, supports most of the popular languages.
@@ -407,7 +410,7 @@ dev-cpp/blurhash 0.2.0 0.2.0-r1: C++ blurhash encoder/decoder
 dev-cpp/boxed-cpp 1.4.3: Boxing primitive types in C++
 dev-cpp/coeurl 0.3.0 0.3.1: A simple async wrapper around CURL for C++
 dev-cpp/cpp-jwt 1.5_pre20220727: JSON Web Token library for C++
-dev-cpp/cpprestsdk 2.10.19-r3 2.10.19-r4: A Microsoft project for cloud-based client-server communication.
+dev-cpp/cpprestsdk 2.10.19-r4 2.10.19-r5: A Microsoft project for cloud-based client-server communication.
 dev-cpp/cpptrace 0.7.5 0.8.2 0.8.3 9999: Simple, portable, and self-contained stacktrace library for C++
 dev-cpp/dpp 10.0.23 10.0.24 10.0.25 10.0.29 10.0.30 10.0.33: Lightweight C++ Discord bot library
 dev-cpp/drogon 1.9.5 1.9.6: C++14/17 based HTTP web application framework
@@ -470,7 +473,7 @@ dev-db/pg_query_vala 0.1.0_pre20240326-r1 0.1.0_pre20241001: Thin wrapper around
 dev-db/pg_repack 1.5.0: Reorganize tables in PostgreSQL databases with minimal locks
 dev-db/psequel 0.2.0-r1: Run your SQL query
 dev-db/rum 1.3.13-r1 1.3.14: RUM access method - inverted index with additional information in posting lists
-dev-db/soci 4.0.3-r3 4.0.3-r4 4.1.2: SOCI - The C++ Database Access Library
+dev-db/soci 4.0.3-r4 4.1.2: SOCI - The C++ Database Access Library
 dev-db/sqlcmd 1.8.3: The MSSQL SQLCMD CLI tool
 dev-db/tdscpp 20250301: C++ library to communicate with Microsoft SQL server
 dev-debug/gdb-dashboard 0.17.3 0.17.4: Modular visual interface for GDB in Python
@@ -555,7 +558,7 @@ dev-libs/libcsv 3.0.4_pre20240316: Fast and flexible CSV library that can read a
 dev-libs/libdatrie 0.2.13-r1: Double-Array Trie Library
 dev-libs/libdbf 0.0.1: Library to read the content of dBASE III, IV, and 5.0 files
 dev-libs/libdwarf 0.9.1 0.12.0 2.0.0: The DWARF Debugging Information Format
-dev-libs/libglibutil 1.0.79 9999: Library of glib utilities from sailfishos project
+dev-libs/libglibutil 1.0.80 9999: Library of glib utilities from sailfishos project
 dev-libs/librepo 1.18.1 1.19.0-r1: Repodata downloading library
 dev-libs/libsignal-ffi 0.51.0-r1 0.62.0 0.64.1: A C ABI library which exposes Signal protocol logic
 dev-libs/libsolv 0.7.31 0.7.32: Library for solving packages and reading repositories
@@ -736,6 +739,7 @@ dev-python/mkdocs-exclude 1.0.2-r1: Lets you exclude files or trees from your ou
 dev-python/mkdocs-git-committers-plugin 0.2.3: A mkdocs plugin for displaying the last commit and a list of contributors.
 dev-python/mkdocs-rss-plugin 1.17.1: MkDocs plugin to generate a RSS feeds.
 dev-python/mobi 0.3.3: Unpack unencrypted mobi files
+dev-python/modern-colorthief 0.1.7: Colorthief but with modern codes
 dev-python/moderngl 5.12.0-r1: Modern OpenGL binding for python
 dev-python/moderngl-window 3.1.1: A cross platform utility library for ModernGL
 dev-python/mollie-api-python 3.6.0: Mollie API client for Python
@@ -1226,7 +1230,7 @@ media-fonts/lato 2: Lato font
 media-fonts/libertinus 7.050 7.051: Libertinus font
 media-fonts/linja-pona 4.2 4.9: Font for sitelen pona, a script for toki pona
 media-fonts/linja-wawa 1.21: Font for sitelen pona, a script for toki pona
-media-fonts/monaspace 1.000: A free and open-source typeface for developers
+media-fonts/monaspace 1.200: A free and open-source typeface for developers
 media-fonts/moralerspace 1.1.0: moralerspace is a composite font of Monaspace and IBM Plex Sans JP.
 media-fonts/nerdfonts 3.3.0 3.4.0: Patched font collection with a high number of glyphs (icons)
 media-fonts/overpass 3.0.4: An open source webfont family inspired by Highway Gothic
@@ -1336,7 +1340,7 @@ media-sound/pianobooster 1.0.0: A MIDI player/game that displays notes and teach
 media-sound/pipewire-module-xrdp 0.1_pre20230609-r1 0.2: PipeWire module which enables xrdp to use audio redirection
 media-sound/plexamp 4.11.5: A dedicated music player for your Plex media library.
 media-sound/pulseaudio-virtualmic 0.1 9999: Use any offline or online media file or stream as a PulseAudio source
-media-sound/qbitmplayer 2.9.2 2.9.5 3.0.2: Music Player written in C++ & Qt.
+media-sound/qbitmplayer 2.9.5 3.0.2 3.1.2: Music Player written in C++ & Qt.
 media-sound/qloud 1.4.2: Tool to measure loudspeaker frequency and step responses and distortions
 media-sound/rsgain 3.5.1 3.5.3: Really Simple replay Gain calculator for tagging audio files
 media-sound/spct 1.1.3: A CLI program to play back or render SPC files.
@@ -1533,6 +1537,7 @@ net-nntp/pan 0.162 0.163: A newsreader for GNOME
 net-p2p/bisq-bin 1.9.14-r1: The decentralized bitcoin exchange (non-atomic, with arbitration)
 net-p2p/dogecoin-qt 1.14.9 9999: Dogecoin Core Qt for desktop. Downloaded blockchain is under 2.2GB. Much secure.
 net-p2p/feather 2.7.0-r1 2.8.0 2.8.1 9999: A free, open-source Monero wallet
+net-p2p/fopnu 1.67: P2P file sharing system
 net-p2p/fragments 3.0.1-r1 3.0.1-r2: Fragments is an easy to use BitTorrent client
 net-p2p/gridcoin 5.4.8.0_p1-r1 5.4.9.0: Proof-of-Stake based cryptocurrency that rewards BOINC computation
 net-p2p/ipfs-desktop-bin 0.39.0 0.40.0: A desktop client for IPFS. The IPFS's Native Application
@@ -1664,6 +1669,7 @@ sys-apps/corefreq 1.96.3: CPU monitoring software designed for the 64-bits Proce
 sys-apps/dnf5 5.2.12.0 5.2.13.1: Command-line package manager
 sys-apps/dool 1.3.1-r1 1.3.2-r2 9999: Versatile replacement for vmstat, iostat and ifstat (clone of dstat)
 sys-apps/drm_info 2.7.0: Small utility to dump info about DRM devices
+sys-apps/dysk 2.10.1: give information on mounted filesystems
 sys-apps/flashprog 1.2 1.3 1.4: Utility for identifying, reading, writing, verifying and erasing flash chips
 sys-apps/fselect 0.8.6: Find files with SQL-like queries
 sys-apps/gat 0.23.1: Cat alternative written in Go
@@ -1715,7 +1721,7 @@ sys-fs/dwarfs-bin 0.12.4: Static version of a fast very high compression read-on
 sys-fs/ffmpegfs 2.16-r1 2.17: FUSE-based transcoding filesystem with support from/to many formats.
 sys-fs/fstransform 0.9.4: Tool for in-place filesystem conversion
 sys-fs/fsverity-utils 1.6: Userspace utility for file-level integrity/authenticity verification
-sys-fs/gcsfuse 1.2.0: A user-space file system for interacting with Google Cloud Storage
+sys-fs/gcsfuse 2.11.2: A user-space file system for interacting with Google Cloud Storage
 sys-fs/gdu 5.14.0 5.25.0: Disk usage analyzer with console interface written in Go
 sys-fs/gfs2-utils 3.4.1 3.5.1-r1: Shared-disk cluster file system
 sys-fs/jefferson 0.4.6: JFFS2 filesystem extraction tool
@@ -1813,7 +1819,6 @@ x11-misc/ksnip 1.11.0_pre20250130: Ksnip is a Qt based cross-platform screenshot
 x11-misc/leftwm-theme 0.1.2: Theme mangager for LeftWM
 x11-misc/ly 1.0.3 9999: Ly - a TUI display manager (live ebuild)
 x11-misc/picom-jonaburg 9999: A lightweight compositor for X11 (previously a compton fork)
-x11-misc/pywal 3.3.0: Tool that generates color schemes from images
 x11-misc/pywal16 3.6.0 3.7.2: 16 colors fork of pywal
 x11-misc/rofi-emoji 3.3.0 3.4.1 4.1.0: Emoji selector plugin for Rofi
 x11-misc/selx 1.2.0: Minimal X11 rectangle selection tool
