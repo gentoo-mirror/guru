@@ -14,7 +14,7 @@ HOMEPAGE="https://apps.gnome.org/Komikku/"
 SRC_URI="https://codeberg.org/valos/Komikku/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 S="${WORKDIR}/${PN}"
 
-LICENSE="CC-BY-4.0 GPL-3+"
+LICENSE="CC0-1.0 CC-BY-4.0 GPL-3+ OFL-1.1"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE="test"
@@ -27,7 +27,7 @@ DEPEND="
 	dev-libs/glib:2
 	dev-libs/gobject-introspection
 	>=gui-libs/gtk-4.12:4
-	>=gui-libs/libadwaita-1.6:1[introspection]
+	>=gui-libs/libadwaita-1.7:1[introspection]
 	net-libs/webkit-gtk:6[introspection]
 "
 RDEPEND="
@@ -36,7 +36,7 @@ RDEPEND="
 	$(python_gen_cond_dep '
 		app-arch/brotli[python,${PYTHON_USEDEP}]
 		dev-python/beautifulsoup4[${PYTHON_USEDEP}]
-		dev-python/colorthief[${PYTHON_USEDEP}]
+		dev-python/modern-colorthief[${PYTHON_USEDEP}]
 		dev-python/cryptography[${PYTHON_USEDEP}]
 		dev-python/dateparser[${PYTHON_USEDEP}]
 		dev-python/emoji[${PYTHON_USEDEP}]

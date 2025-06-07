@@ -8,7 +8,7 @@ inherit go-module
 DESCRIPTION="Terraform linter"
 HOMEPAGE="https://github.com/terraform-linters/tflint"
 SRC_URI="https://github.com/terraform-linters/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
-SRC_URI+=" https://gentoo.nulldutra.me/${PN}-v${PV}-vendor.tar.gz"
+SRC_URI+=" https://dev.gentoo.org/~ceamac/${CATEGORY}/${PN}/${P}-vendor.tar.xz"
 
 LICENSE="Apache-2.0 BSD BSD-2 MPL-2.0 MIT"
 SLOT="0"

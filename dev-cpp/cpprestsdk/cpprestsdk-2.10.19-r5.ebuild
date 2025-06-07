@@ -1,4 +1,4 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -29,6 +29,8 @@ PATCHES=(
 	"${FILESDIR}"/cpprestsdk-${PV}-warnings.patch
 	"${FILESDIR}"/cpprestsdk-${PV}-disabl-int-tests.patch
 	"${FILESDIR}"/cpprestsdk-${PV}-disable-werror-default.patch
+	"${FILESDIR}"/cpprestsdk-${PV}-boost-1.87-compat.patch
+	"${FILESDIR}"/cpprestsdk-${PV}-cmake-4.patch
 )
 
 src_configure() {

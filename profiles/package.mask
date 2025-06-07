@@ -18,6 +18,12 @@
 
 # New entries go on top.
 
+# Takuya Wakazono <pastalian46@gmail.com> (2025-06-05)
+# app-text/komikku, the only reverse dependency, has migrated to
+# dev-python/modern-colorthief.
+# Removal on 2025-07-05.
+dev-python/colorthief
+
 # Vivian Heisz (vhz) <demize@unstable.systems> (2025-06-05)
 # Unmaintained in GURU. Non-PEP517 build that requires manual
 # setup.py invocation, and which triggers multiple setuptools
@@ -58,12 +64,6 @@ www-apps/whoogle-search
 # Removal on 2025-06-24.
 media-sound/nulloy
 x11-themes/nulloy-theme-night
-
-# Takuya Wakazono <pastalian46@gmail.com> (2025-05-05)
-# Upstream has been archived.
-# An active fork is packaged as x11-misc/pywal16.
-# Removal on 2025-06-05. Bug #955253.
-x11-misc/pywal
 
 # David (stkw0) Roman <davidroman96@gmail.com> (2025-04-30)
 # Depends on removed dev-qt/qtwebengine:5, they should be moved to qtwebengine:6
