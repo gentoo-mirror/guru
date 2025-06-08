@@ -1,4 +1,4 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -36,15 +36,31 @@ EGO_SUM=(
 	"golang.org/x/sync v0.0.0-20190412183630-56d357773e84/go.mod"
 	"golang.org/x/sync v0.8.0"
 	"golang.org/x/sync v0.8.0/go.mod"
+	"golang.org/x/sync v0.10.0"
+	"golang.org/x/sync v0.10.0/go.mod"
+	"golang.org/x/sync v0.11.0"
+	"golang.org/x/sync v0.11.0/go.mod"
+	"golang.org/x/sync v0.13.0"
+	"golang.org/x/sync v0.13.0/go.mod"
+	"golang.org/x/sync v0.14.0"
+	"golang.org/x/sync v0.14.0/go.mod"
 	"golang.org/x/sys v0.0.0-20220715151400-c0bba94af5f8"
 	"golang.org/x/sys v0.0.0-20220715151400-c0bba94af5f8/go.mod"
 	"golang.org/x/sys v0.25.0"
 	"golang.org/x/sys v0.25.0/go.mod"
+	"golang.org/x/sys v0.29.0"
+	"golang.org/x/sys v0.29.0/go.mod"
+	"golang.org/x/sys v0.30.0"
+	"golang.org/x/sys v0.30.0/go.mod"
+	"golang.org/x/sys v0.32.0"
+	"golang.org/x/sys v0.32.0/go.mod"
+	"golang.org/x/sys v0.33.0"
+	"golang.org/x/sys v0.33.0/go.mod"
 	"gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod"
 	"gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c/go.mod"
 	"gopkg.in/yaml.v3 v3.0.1"
 	"gopkg.in/yaml.v3 v3.0.1/go.mod"
-	)
+)
 go-module_set_globals
 
 DESCRIPTION="enuStart plugin to nwg-panel, also capable of working standalone"
