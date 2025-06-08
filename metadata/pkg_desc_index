@@ -144,7 +144,7 @@ app-crypt/PBinCLI 0.3.5-r1: PBinCLI is a command line client for PrivateBin writ
 app-crypt/autofirma 1.8.2 1.8.3-r1: Spanish government's electronic signature application for online procedures
 app-crypt/certbot-dns-cloudflare 3.2.0: Cloudflare DNS Authenticator plugin for Certbot (Let's Encrypt Client)
 app-crypt/certbot-dns-desec 1.2.1: deSEC DNS Authenticator plugin for Certbot
-app-crypt/certbot-dns-rfc2136 2.11.1 3.2.0 3.2.0-r100: RFC 2136 DNS Authenticator plugin for Certbot (Let’s Encrypt Client)
+app-crypt/certbot-dns-rfc2136 2.11.1 3.2.0-r100: RFC 2136 DNS Authenticator plugin for Certbot (Let’s Encrypt Client)
 app-crypt/clevis 19-r2 20-r1 21: Automated Encryption Framework
 app-crypt/configuradorfnmt 1.0.1: Spanish government certificate request generator
 app-crypt/firefox-decrypt 1.1.1: Tool to extract passwords from Mozilla (Firefox, Thunderbird, etc.) profiles
@@ -1001,7 +1001,7 @@ games-arcade/tetrio-desktop 8 9: TETR.IO desktop client.
 games-board/fairy-stockfish 14.0.1: Chess variant engine derived from Stockfish to support fairy chess variants
 games-board/openriichi 0.2.1.1: OpenRiichi is an open source Japanese Mahjong client
 games-board/rmahjong 0.4_p20201106: Riichi Mahjong, the Japanese variant of the Chinese game Mahjong for 4 players
-games-emulation/RetroArch 1.19.1 1.20.0: RetroArch is a frontend for emulators, game engines and media players
+games-emulation/RetroArch 1.19.1 1.20.0 1.21.0: RetroArch is a frontend for emulators, game engines and media players
 games-emulation/dosbox-x 2025.02.01 2025.05.03 9999: Complete, accurate DOS emulator forked from DOSBox
 games-emulation/flycast 9999: Sega Dreamcast, Naomi and Atomiswave emulator
 games-emulation/mupen64plus-qt 1.17 9999: A basic launcher for Mupen64Plus
@@ -1140,10 +1140,10 @@ gui-apps/nwg-drawer 0.6.5 0.7.0: Application drawer for wlroots-based Wayland co
 gui-apps/nwg-hello 0.3.0 0.4.0: GTK3-based greeter for greetd written in python
 gui-apps/nwg-icon-picker 0.1.1 0.1.1-r1 9999: GTK icon chooser with a text search option
 gui-apps/nwg-launchers 0.5.0 0.6.3 0.7.1.1 9999: GTK+ launchers for sway, i3 and some other WMs
-gui-apps/nwg-menu 0.1.6 0.1.7: enuStart plugin to nwg-panel, also capable of working standalone
-gui-apps/nwg-panel 0.10.2 0.10.3 0.10.4 9999: GTK3-based panel for sway and Hyprland Wayland compositors
-gui-apps/nwg-shell 0.5.44 0.5.48: libraries an common functions for the nwg-shell project
-gui-apps/nwg-shell-config 0.5.55 0.5.56 0.5.58: nwg-shell configuration utility
+gui-apps/nwg-menu 0.1.7 0.1.9: enuStart plugin to nwg-panel, also capable of working standalone
+gui-apps/nwg-panel 0.10.4 0.10.5 0.10.6 9999: GTK3-based panel for sway and Hyprland Wayland compositors
+gui-apps/nwg-shell 0.5.48 0.5.49: libraries an common functions for the nwg-shell project
+gui-apps/nwg-shell-config 0.5.58 0.5.59: nwg-shell configuration utility
 gui-apps/openrefine 3.9.3: Wikidata batch editor, Wikimedia Commons mass upload tool
 gui-apps/organicmaps 9999: Offline maps and navigation using OpenStreetMap data
 gui-apps/packettracer 8.2.2-r1: Cisco's packet tracer
@@ -1201,7 +1201,7 @@ gui-libs/libsfdo 0.1.3 0.1.4: A collection of libraries which implement some fre
 gui-libs/mir 2.20.1 2.20.2: Set of libraries for building Wayland based shells
 gui-libs/qdocumentview 0.3.0.1: Widget to render multi-page documents
 gui-libs/scenefx 0.1 0.2 0.2.1: A replacement for the wlroots scene API with eye-candy effects.
-gui-libs/xdg-desktop-portal-hyprland 1.3.8 1.3.9 1.3.9-r1 9999: xdg-desktop-portal backend for hyprland
+gui-libs/xdg-desktop-portal-hyprland 1.3.9-r1 9999: xdg-desktop-portal backend for Hyprland
 gui-wm/cage 0.2.0 9999: A Wayland kiosk
 gui-wm/hyprland-contrib 0.1-r1 9999: Community-maintained extensions for hyprland
 gui-wm/labwc 0.8.3 0.8.4 9999: Openbox alternative for wayland
@@ -1429,6 +1429,7 @@ net-im/flare 0.12.0-r1: Chat with your friends on Signal
 net-im/gajim-plugins 9999: Plugins developed fro Gajim XMPP client
 net-im/go-sendxmpp 0.6.1 0.8.3: A tool to send messages or files to an XMPP contact or MUC
 net-im/gomuks 0.3.0 0.3.1: A terminal based Matrix client written in Go
+net-im/gurk-rs 0.7.1: Signal messenger client for terminal
 net-im/heisenbridge 1.15.0 1.15.2 1.15.3: Bouncer-style Matrix IRC bridge
 net-im/iamb 0.0.8 0.0.9 0.0.10: A Matrix chat client that uses Vim keybindings
 net-im/jitsi-meet 2025.2.0 2025.4.0: Desktop application for Jitsi Meet built with Electron
@@ -1541,7 +1542,7 @@ net-p2p/fopnu 1.67: P2P file sharing system
 net-p2p/fragments 3.0.1-r1 3.0.1-r2: Fragments is an easy to use BitTorrent client
 net-p2p/gridcoin 5.4.8.0_p1-r1 5.4.9.0: Proof-of-Stake based cryptocurrency that rewards BOINC computation
 net-p2p/ipfs-desktop-bin 0.39.0 0.40.0: A desktop client for IPFS. The IPFS's Native Application
-net-p2p/monero 0.18.3.4-r1 0.18.4.0-r3 9999: The secure, private, untraceable cryptocurrency
+net-p2p/monero 0.18.4.0-r3 0.18.4.0-r4 9999: The secure, private, untraceable cryptocurrency
 net-p2p/monero-gui-bin 0.18.4.0: An open-source GUI wallet developed by the Monero community.
 net-p2p/p2pool 4.5 4.5-r1 4.5-r2 9999: Decentralized pool for Monero mining
 net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
