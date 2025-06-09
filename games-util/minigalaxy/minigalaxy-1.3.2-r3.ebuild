@@ -5,7 +5,7 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{11..13} )
 
-inherit edo optfeature python-single-r1 xdg
+inherit desktop optfeature python-single-r1 xdg
 
 DESCRIPTION="A simple GOG client for Linux"
 HOMEPAGE="https://github.com/sharkwouter/minigalaxy"
@@ -34,29 +34,47 @@ RDEPEND="
 	x11-libs/libnotify[introspection]
 	x11-misc/xdg-utils
 "
-# sys-devel/gettext dependency in scripts/compile-translation.py
 BDEPEND="
 	${PYTHON_DEPS}
+	sys-apps/help2man
+	sys-devel/gettext
 	test? (
 		$(python_gen_cond_dep '
 			dev-python/simplejson[${PYTHON_USEDEP}]
 		')
 	)
-	sys-devel/gettext
 "
-
-src_compile() {
-	edo "${EPYTHON}" setup.py build
-}
 
 src_test() {
 	eunittest tests
 }
 
 src_install() {
-	edo "${EPYTHON}" setup.py install --root="${D}" --prefix="${EPREFIX}/usr"
-	python_optimize
+	sed -e "s:os.path.dirname(sys.argv\[0\]):'${EPREFIX}/usr/share/':" \
+		-e "s:minigalaxy/translations:locale:" \
+		-i minigalaxy/paths.py || die
+
+	insinto /usr/share/minigalaxy
+	doins -r data/images data/ui data/style.css
+	insinto /usr/share/metainfo
+	doins data/io.github.sharkwouter.Minigalaxy.metainfo.xml
+
+	help2man -N -s 6 -n "a simple GTK-based GOG Linux client" bin/minigalaxy > minigalaxy.6 || die
+	doman minigalaxy.6
+
+	domo data/po/*.po
+
+	local x
+	for x in 128 192; do
+		doicon -s ${x} data/icons/${x}x${x}/io.github.sharkwouter.Minigalaxy.png
+	done
+
+	domenu data/io.github.sharkwouter.Minigalaxy.desktop
+
 	dodoc README.md CHANGELOG.md
+
+	python_domodule minigalaxy
+	python_doscript bin/minigalaxy
 }
 
 pkg_postinst() {
