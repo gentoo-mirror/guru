@@ -212,6 +212,7 @@ app-misc/agg 1.5.0 1.5.0-r1: Command-line tool for generating animated GIF files
 app-misc/ani-cli 4.9 4.10 9999: A cli to browse and watch anime.
 app-misc/anki-bin 25.02: A spaced-repetition memory training program (flash cards)
 app-misc/arttime 2.3.4: CLI application that blends beauty of ASCII
+app-misc/astroterm 1.0.7: A planetarium for your terminal!
 app-misc/aw-client 0.11.0: Client library for ActivityWatch
 app-misc/aw-core 0.5.16: Core library for ActivityWatch
 app-misc/badvideo 5.2 9999: Ruin your videos in SECONDS!
@@ -1004,6 +1005,7 @@ games-board/rmahjong 0.4_p20201106: Riichi Mahjong, the Japanese variant of the 
 games-emulation/RetroArch 1.19.1 1.20.0 1.21.0: RetroArch is a frontend for emulators, game engines and media players
 games-emulation/dosbox-x 2025.02.01 2025.05.03 9999: Complete, accurate DOS emulator forked from DOSBox
 games-emulation/flycast 9999: Sega Dreamcast, Naomi and Atomiswave emulator
+games-emulation/libretro-dolphin 0.0.1_pre20250517: Dolphin libretro port
 games-emulation/mupen64plus-qt 1.17 9999: A basic launcher for Mupen64Plus
 games-emulation/np2kai 22 22_p20210211: NP2kai is an emulator for the japanese PC-98 series of computers
 games-emulation/rpcs3 0.0.37 9999: PS3 emulator/debugger
@@ -1054,7 +1056,7 @@ games-util/itch-bin 25.5.1-r2 26.1.9: itch.io game browser, installer and launch
 games-util/legendary 0.20.33-r2 0.20.34-r2: A free and open-source replacement for the Epic Games Launcher
 games-util/libtess2 1.0.2: Game and tools oriented refactored version of GLU tesselator
 games-util/mangohud 0.7.2-r1 0.8.0 0.8.1 9999: Vulkan and OpenGL overlay for monitoring FPS, sensors, system load and more
-games-util/minigalaxy 1.3.2-r2: A simple GOG client for Linux
+games-util/minigalaxy 1.3.2-r3: A simple GOG client for Linux
 games-util/modrinth-app-bin 0.9.3 0.9.4 0.9.5: A unique, open source launcher that allows you to play your favorite Minecraft mods, and keep them up to date, all in one neat little package.
 games-util/pegasus 9999: Graphical frontend for browsing your game library
 games-util/protonup 0.1.5 9999: Install and Update Proton-GE
@@ -1374,7 +1376,7 @@ media-video/stremio 4.4.168: Stremio is a modern media center for your video ent
 media-video/syncplay 1.7.3 1.7.4: Client/server to synchronize media playback
 media-video/uxplay 1.67-r1 1.68.3-r1 1.70-r1: AirPlay Unix mirroring server
 media-video/walksnail-osd-tool 0.3.0-r2 9999: Tool for rendering OSDs over Walksnail DVR recordings
-media-video/webcamize 1.2.0: Use almost any camera as a webcam—DSLRs, mirrorless, camcorders, and even point-and-shoots
+media-video/webcamize 2.0.0: Use almost any camera as a webcam—DSLRs, mirrorless, camcorders, and more
 media-video/wl-screenrec 0.1.7: High performance screen/audio recorder for wlroots
 media-video/wlrobs 1.1 9999: OBS plugin that allows you to screen capture on wlroots based compositors
 media-video/ytarchive 0.4.0 0.5.0: Youtube livestream downloader
@@ -1429,7 +1431,7 @@ net-im/flare 0.12.0-r1: Chat with your friends on Signal
 net-im/gajim-plugins 9999: Plugins developed fro Gajim XMPP client
 net-im/go-sendxmpp 0.6.1 0.8.3: A tool to send messages or files to an XMPP contact or MUC
 net-im/gomuks 0.3.0 0.3.1: A terminal based Matrix client written in Go
-net-im/gurk-rs 0.7.1: Signal messenger client for terminal
+net-im/gurk-rs 0.7.1 9999: Signal messenger client for terminal
 net-im/heisenbridge 1.15.0 1.15.2 1.15.3: Bouncer-style Matrix IRC bridge
 net-im/iamb 0.0.8 0.0.9 0.0.10: A Matrix chat client that uses Vim keybindings
 net-im/jitsi-meet 2025.2.0 2025.4.0: Desktop application for Jitsi Meet built with Electron
@@ -1486,7 +1488,7 @@ net-misc/commons-wikimedia-find-by-hash 1.0.0: Search in commons.wikimedia.org b
 net-misc/curlie 1.8.2: Curlie is a frontend to curl that adds the ease of use of httpie
 net-misc/cve-client 1.1.1 9999: CLI-based client / toolbox for CVE.org
 net-misc/eg25-manager 0.4.2: Daemon for managing the Quectel EG25 modem
-net-misc/ffsend 0.2.77: Easily and securely share files from the command line
+net-misc/ffsend 0.2.77 9999: Easily and securely share files from the command line
 net-misc/fileshelter 6.2.0: FileShelter is a “one-click” file sharing web application
 net-misc/freetube-bin 0.23.4_beta 0.23.5_beta: A private YouTube desktop client
 net-misc/gdown 5.1.0 5.2.0: Google Drive public file/folder downloader
@@ -1554,10 +1556,10 @@ net-proxy/nekoray 4.3.5-r1: Qt based cross-platform GUI proxy configuration mana
 net-proxy/ngrok-bin 3.20.0: ngrok is a reverse proxy, firewall, and API gateway
 net-proxy/shadowsocks-rust 1.22.0: A Rust port of shadowsocks
 net-proxy/snowflake 2.10.1 2.11.0: Pluggable Transport using WebRTC, inspired by Flashproxy
-net-voip/baresip 3.20.0 3.21.0 3.22.0: Baresip is a portable and modular SIP User-Agent
+net-voip/baresip 3.21.0 3.22.0 3.23.0: Baresip is a portable and modular SIP User-Agent
 net-voip/discover-overlay 0.6.9-r1 0.7.4 0.7.8: Yet another Discord overlay for Linux written in Python using GTK3
 net-voip/gnome-calls 47.0-r1 48.1 48.2: Phone dialer and call handler
-net-voip/re 3.20.0 3.21.0 3.22.0: Generic library for real-time communications with async IO support
+net-voip/re 3.21.0 3.22.0 3.23.0: Generic library for real-time communications with async IO support
 net-voip/vvmd 0.8-r1: vvmd is a lower level daemon that retrieves Visual Voicemail
 net-vpn/GlobalProtect-openconnect 2.4.4-r1: Unofficial GlobalProtect VPN client for Linux
 net-vpn/cloudflare-warp 2025.4.943.0: Cloudflare Warp Client
@@ -1766,7 +1768,6 @@ www-apps/code-server-bin 4.18.0 4.19.1 4.90.3: VS Code in the browser (binary ve
 www-apps/forgejo 9.0.3 10.0.0 10.0.1: A self-hosted lightweight software forge
 www-apps/freshrss 1.24.3 1.25.0: A free, self-hostable news aggregator
 www-apps/invidious 2025.05.04.0 2025.05.17.0: Invidious is an alternative front-end to YouTube
-www-apps/jackett 0.22.1363: API Support for your favorite torrent trackers
 www-apps/laminar 1.3-r1: Fast and lightweight Continuous Integration
 www-apps/libmedium 2024.06.10: Alternative private front-end to Medium
 www-apps/mycorrhiza 1.15.1 9999: Git-based wiki engine written in Go using mycomarkup
