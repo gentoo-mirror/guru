@@ -41,6 +41,7 @@ app-emulation/cloud-utils:guest-utils - Installs utilities useful within a guest
 app-emulation/cloud-utils:image-utils - Installs utilities useful for manipulating guest images from outside a guest VM
 app-emulation/looking-glass:binutils - build backtrace support
 app-emulation/looking-glass:pipewire - enable media-video/pipewire support
+app-emulation/tinyemu:http - Support fetching disks over HTTP using
 app-emulation/x48ng:X - X11 frontend
 app-emulation/x48ng:sdl - SDL fronted
 app-misc/clifm:arc4random - Use arc4random instead of random, requires 'posix' to be unset
@@ -554,6 +555,7 @@ media-sound/musikcube:pulseaudio - Build plugin to support pulseaudio.
 media-sound/musikcube:sndio - Build plugin to support sndio
 media-sound/musikcube:systemd - Build plugin to support MPRIS using systemd.
 media-sound/nulloy:skins - Without this flag - you can choose qt5 themes not only for preferences
+media-sound/qbitmplayer:network - Allow a single instance of itself, thus subsequent calls to media-sound/qbitmplayer will just open the already opened instance of it.
 media-sound/qbitmplayer:video - Make media-sound/qbitmplayer not just a Music Player, but a Media Player by enabling its ability to play video files as well.
 media-sound/spotify-player:daemon - Enables running the app as a daemon
 media-sound/spotify-player:image - Enables basic image support for album artwork

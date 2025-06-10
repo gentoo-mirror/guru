@@ -173,7 +173,7 @@ app-doc/stdman 2022.07.30 2024.07.05 9999: Formatted C++ stdlib man pages (cppre
 app-doc/sway-wiki 9999: Wiki of gui-wm/sway, rendered to HTML using kramdown-parser-gfm
 app-editors/amp 0.7.1: A complete text editor for your terminal.
 app-editors/emacs-lsp-booster 0.2.1: Emacs LSP performance booster
-app-editors/imhex 1.37.4-r3: A hex editor for reverse engineers, programmers, and eyesight
+app-editors/imhex 1.37.4-r4: A hex editor for reverse engineers, programmers, and eyesight
 app-editors/kakoune-lsp 18.1.0: Kakoune Language Server Protocol Client
 app-editors/l3afpad 0.8.18.1.11: Simple GTK3 text editor (successor to leafpad)
 app-editors/lapce 0.4.2-r1 9999: Lightning-fast and Powerful Code Editor written in Rust
@@ -196,6 +196,7 @@ app-emulation/cloud-utils 0.33: Useful set of utilities for interacting with a c
 app-emulation/looking-glass 1_beta6 9999: A low latency KVM FrameRelay implementation for guests with VGA PCI Passthrough
 app-emulation/quickemu 4.9.7: Create and run optimised Windows, macOS and Linux desktop virtual machines
 app-emulation/rars 1.6-r1: RARS -- RISC-V Assembler and Runtime Simulator
+app-emulation/tinyemu 0.2019.12.21: small and simple system emulator for the RISC-V and x86 architectures
 app-emulation/wslu 4.1.1 4.1.3: A collection of utilities for Windows Subsystem for Linux
 app-emulation/x48ng 0.38.0: HP48 emulator
 app-eselect/eselect-autostart 1.0.0: Manage symlinks in $XDG_CONFIG_HOME/autostart
@@ -1056,7 +1057,7 @@ games-util/itch-bin 25.5.1-r2 26.1.9: itch.io game browser, installer and launch
 games-util/legendary 0.20.33-r2 0.20.34-r2: A free and open-source replacement for the Epic Games Launcher
 games-util/libtess2 1.0.2: Game and tools oriented refactored version of GLU tesselator
 games-util/mangohud 0.7.2-r1 0.8.0 0.8.1 9999: Vulkan and OpenGL overlay for monitoring FPS, sensors, system load and more
-games-util/minigalaxy 1.3.2-r3: A simple GOG client for Linux
+games-util/minigalaxy 1.3.2-r4: A simple GOG client for Linux
 games-util/modrinth-app-bin 0.9.3 0.9.4 0.9.5: A unique, open source launcher that allows you to play your favorite Minecraft mods, and keep them up to date, all in one neat little package.
 games-util/pegasus 9999: Graphical frontend for browsing your game library
 games-util/protonup 0.1.5 9999: Install and Update Proton-GE
@@ -1187,6 +1188,7 @@ gui-apps/wl-scripts 1.2.3-r1 9999: A set of utils for wlroots window managers
 gui-apps/wlgreet 0.4.1 0.5.0: Wayland based greeter for greetd
 gui-apps/wlogout 1.1.1 1.2.2-r1 9999: A wayland based logout menu
 gui-apps/wlopm 1.0.0 9999: wlr-output-power-management-v1 client
+gui-apps/wlr-dpms 0_p20240130: change output power modes in wlroots compositors
 gui-apps/wlr-randr 0.4.1 9999: xrandr clone for wlroots compositors
 gui-apps/wlsunset 0.4.0 9999: Day/night gamma adjustments for Wayland
 gui-apps/wob 0.15.1-r1 0.16: Lightweight overlay volume/backlight/progress/anything bar for Wayland
@@ -1234,7 +1236,7 @@ media-fonts/linja-pona 4.2 4.9: Font for sitelen pona, a script for toki pona
 media-fonts/linja-wawa 1.21: Font for sitelen pona, a script for toki pona
 media-fonts/monaspace 1.200: A free and open-source typeface for developers
 media-fonts/moralerspace 1.1.0: moralerspace is a composite font of Monaspace and IBM Plex Sans JP.
-media-fonts/nerdfonts 3.3.0 3.4.0: Patched font collection with a high number of glyphs (icons)
+media-fonts/nerdfonts 3.4.0: Patched font collection with a high number of glyphs (icons)
 media-fonts/overpass 3.0.4: An open source webfont family inspired by Highway Gothic
 media-fonts/piazzolla 2.005: Piazzolla font family
 media-fonts/plemoljp 2.0.4: PlemolJP is a composite font of IBM Plex Mono and IBM Plex Sans JP.
@@ -1342,7 +1344,7 @@ media-sound/pianobooster 1.0.0: A MIDI player/game that displays notes and teach
 media-sound/pipewire-module-xrdp 0.1_pre20230609-r1 0.2: PipeWire module which enables xrdp to use audio redirection
 media-sound/plexamp 4.11.5: A dedicated music player for your Plex media library.
 media-sound/pulseaudio-virtualmic 0.1 9999: Use any offline or online media file or stream as a PulseAudio source
-media-sound/qbitmplayer 2.9.5 3.0.2 3.1.2: Music Player written in C++ & Qt.
+media-sound/qbitmplayer 3.0.2 3.1.2 3.2.0: Music Player written in C++ & Qt.
 media-sound/qloud 1.4.2: Tool to measure loudspeaker frequency and step responses and distortions
 media-sound/rsgain 3.5.1 3.5.3: Really Simple replay Gain calculator for tagging audio files
 media-sound/spct 1.1.3: A CLI program to play back or render SPC files.
@@ -1671,7 +1673,7 @@ sys-apps/coolercontrold 2.1.0: Monitor and control your cooling and other device
 sys-apps/corefreq 1.96.3: CPU monitoring software designed for the 64-bits Processors, like top
 sys-apps/dnf5 5.2.12.0 5.2.13.1: Command-line package manager
 sys-apps/dool 1.3.1-r1 1.3.2-r2 9999: Versatile replacement for vmstat, iostat and ifstat (clone of dstat)
-sys-apps/drm_info 2.7.0: Small utility to dump info about DRM devices
+sys-apps/drm_info 2.7.0 2.8.0: Small utility to dump info about DRM devices
 sys-apps/dysk 2.10.1: give information on mounted filesystems
 sys-apps/flashprog 1.2 1.3 1.4: Utility for identifying, reading, writing, verifying and erasing flash chips
 sys-apps/fselect 0.8.6: Find files with SQL-like queries

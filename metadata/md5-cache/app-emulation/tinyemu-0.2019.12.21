@@ -1,0 +1,12 @@
+DEFINED_PHASES=configure install prepare
+DEPEND=http? ( net-misc/curl dev-libs/openssl:= ) sdl? ( media-libs/libsdl )
+DESCRIPTION=small and simple system emulator for the RISC-V and x86 architectures
+EAPI=8
+HOMEPAGE=https://bellard.org/tinyemu/
+IUSE=http +sdl
+KEYWORDS=~amd64
+LICENSE=MIT
+RDEPEND=http? ( net-misc/curl dev-libs/openssl:= ) sdl? ( media-libs/libsdl )
+SLOT=0
+SRC_URI=https://bellard.org/tinyemu/tinyemu-2019-12-21.tar.gz
+_md5_=bb91e8447b93d2874effaa4279ef3fb9
