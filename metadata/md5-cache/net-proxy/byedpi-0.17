@@ -1,0 +1,13 @@
+BDEPEND=virtual/pkgconfig
+DEFINED_PHASES=configure install prepare
+DESCRIPTION=Bypass DPI SOCKS proxy
+EAPI=8
+HOMEPAGE=https://github.com/hufrea/byedpi
+INHERIT=systemd toolchain-funcs
+KEYWORDS=~amd64
+LICENSE=MIT
+RDEPEND=acct-user/byedpi
+SLOT=0
+SRC_URI=https://github.com/hufrea/byedpi/archive/refs/tags/v0.17.tar.gz -> byedpi-0.17.tar.gz
+_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	systemd	a964c0cbe818b5729da1dbfcee5be861
+_md5_=25eab4fdf8d749ea50c8ae0de35b7cc1
