@@ -5,7 +5,7 @@ DESCRIPTION=A hex editor for reverse engineers, programmers, and eyesight
 EAPI=8
 HOMEPAGE=https://github.com/WerWolv/ImHex
 INHERIT=cmake llvm-r1 toolchain-funcs flag-o-matic xdg-utils
-IUSE=+system-llvm test lto +desktop-portal lz4 +llvm_slot_19 llvm_slot_15 llvm_slot_16 llvm_slot_17 llvm_slot_18 llvm_slot_20
+IUSE=+system-llvm test lto +desktop-portal lz4 +llvm_slot_20 llvm_slot_15 llvm_slot_16 llvm_slot_17 llvm_slot_18 llvm_slot_19
 KEYWORDS=~amd64
 LICENSE=GPL-2
 RDEPEND=app-arch/bzip2 app-arch/xz-utils app-arch/zstd:= >=app-forensics/yara-4.2.0:= >=dev-cpp/nlohmann_json-3.10.2 dev-libs/boost >=dev-libs/capstone-5.0.3:= >=dev-libs/nativefiledialog-extended-1.2.1[desktop-portal?] >=dev-libs/libfmt-11.0.2:= media-libs/fontconfig media-libs/freetype >=media-libs/glfw-3.4[X] media-libs/glm media-libs/libglvnd net-libs/mbedtls:= net-misc/curl sys-apps/file sys-libs/zlib virtual/libiconv virtual/libintl
@@ -13,5 +13,5 @@ REQUIRED_USE=^^ ( llvm_slot_15 llvm_slot_16 llvm_slot_17 llvm_slot_18 llvm_slot_
 RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://github.com/WerWolv/ImHex/releases/download/v1.37.4/Full.Sources.tar.gz -> imhex-1.37.4.gh.tar.gz https://github.com/WerWolv/ImHex-Patterns/archive/refs/tags/ImHex-v1.37.4.tar.gz -> imhex-patterns-1.37.4.gh.tar.gz
-_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	b892042b2667b8ac69ec8a2571dc290a	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	90d8ee8393c5c815637fd3cb87828c9b	llvm-utils	64536677f4b4365e25e9b739163bed58	llvm-r1	0bd586d3786517cd63802a520b404dda
+_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	b892042b2667b8ac69ec8a2571dc290a	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	90d8ee8393c5c815637fd3cb87828c9b	llvm-utils	64536677f4b4365e25e9b739163bed58	llvm-r1	5a1fde9f55315992645818a877837527
 _md5_=720952b4133b6970a5a2c78f4c8dc6d1
