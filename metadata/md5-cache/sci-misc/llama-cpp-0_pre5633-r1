@@ -1,15 +1,16 @@
-BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.20.5 >=dev-vcs/git-1.8.2.1[curl]
-DEFINED_PHASES=compile configure install prepare test unpack
+BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.20.5
+DEFINED_PHASES=compile configure install prepare test
 DEPEND=curl? ( net-misc/curl:= ) openblas? ( sci-libs/openblas:= ) blis? ( sci-libs/blis:= ) hip? ( >=dev-util/hip-6.3:= ) cuda? ( dev-util/nvidia-cuda-toolkit:= )
 DESCRIPTION=Port of Facebook's LLaMA model in C/C++
 EAPI=8
 HOMEPAGE=https://github.com/ggml-org/llama.cpp
-INHERIT=cmake cuda rocm git-r3
+INHERIT=cmake cuda rocm
 IUSE=curl openblas blis hip cuda +amdgpu_targets_gfx908 +amdgpu_targets_gfx90a +amdgpu_targets_gfx942 +amdgpu_targets_gfx1030 +amdgpu_targets_gfx1100 amdgpu_targets_gfx803 amdgpu_targets_gfx900 amdgpu_targets_gfx906 amdgpu_targets_gfx940 amdgpu_targets_gfx941 amdgpu_targets_gfx1010 amdgpu_targets_gfx1011 amdgpu_targets_gfx1012 amdgpu_targets_gfx1031 amdgpu_targets_gfx1101 amdgpu_targets_gfx1102 amdgpu_targets_gfx1200 amdgpu_targets_gfx1201
+KEYWORDS=~amd64
 LICENSE=MIT
-PROPERTIES=live
 RDEPEND=curl? ( net-misc/curl:= ) openblas? ( sci-libs/openblas:= ) blis? ( sci-libs/blis:= ) hip? ( >=dev-util/hip-6.3:= ) cuda? ( dev-util/nvidia-cuda-toolkit:= ) dev-python/numpy
 REQUIRED_USE=?? ( openblas blis )
 SLOT=0
-_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	b892042b2667b8ac69ec8a2571dc290a	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	90d8ee8393c5c815637fd3cb87828c9b	cuda	283d0f298f6c196c755a0f8d50daca85	rocm	ceb8f84b6d9c14021b983faab573ef93	git-r3	875eb471682d3e1f18da124be97dcc81
+SRC_URI=https://github.com/ggml-org/llama.cpp/archive/refs/tags/b5633.tar.gz -> llama-cpp-0_pre5633.tar.gz
+_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	b892042b2667b8ac69ec8a2571dc290a	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	90d8ee8393c5c815637fd3cb87828c9b	cuda	283d0f298f6c196c755a0f8d50daca85	rocm	ceb8f84b6d9c14021b983faab573ef93
 _md5_=07af1f3ab5097c20d85add901d68bfb0

@@ -1,0 +1,14 @@
+DEFINED_PHASES=install test
+DEPEND=lua_targets_lua5-3? ( dev-lang/lua:5.3 )
+DESCRIPTION=Lua 5.3 compatible pure-Lua UTF-8 implementation
+EAPI=8
+HOMEPAGE=https://dromozoa.github.io/dromozoa-utf8/ https://github.com/dromozoa/dromozoa-utf8
+INHERIT=lua
+IUSE=lua_targets_lua5-3
+KEYWORDS=~amd64
+LICENSE=GPL-3
+RDEPEND=lua_targets_lua5-3? ( dev-lang/lua:5.3 )
+SLOT=0
+SRC_URI=https://github.com/dromozoa/dromozoa-utf8/archive/refs/tags/v1.19.tar.gz -> dromozoa-utf8-1.19.tar.gz
+_eclasses_=out-of-source-utils	dbf9e34ee8964084651e25907fa8f52c	multibuild	4650a65187015567b4e041bb9bfdb364	toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	lua-utils	7c89927eda6f21c4c48136247077ab37	lua	3414f66fe14a8c3ffdb5a894097068c6
+_md5_=14f69739db20c3b33e944df03fd82f2b

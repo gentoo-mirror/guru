@@ -1,0 +1,16 @@
+BDEPEND=net-libs/nodejs[npm] || ( >=dev-lang/rust-bin-1.74.1:* >=dev-lang/rust-1.74.1:* )
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup test unpack
+DEPEND=app-backup/restic dev-libs/glib:2 net-libs/libsoup:3.0 net-libs/webkit-gtk:4.1 x11-base/xorg-server x11-libs/cairo x11-libs/gdk-pixbuf:2 x11-libs/gtk+:3[wayland] x11-libs/pango
+DESCRIPTION=A GUI to browse and restore from restic backup repositories
+EAPI=8
+HOMEPAGE=https://github.com/emuell/restic-browser
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=cargo desktop xdg
+IUSE=debug
+KEYWORDS=~amd64
+LICENSE=MIT Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD ISC MIT MPL-2.0 Unicode-3.0
+RDEPEND=app-backup/restic dev-libs/glib:2 net-libs/libsoup:3.0 net-libs/webkit-gtk:4.1 x11-base/xorg-server x11-libs/cairo x11-libs/gdk-pixbuf:2 x11-libs/gtk+:3[wayland] x11-libs/pango
+SLOT=0
+SRC_URI=https://github.com/emuell/restic-browser/archive/1e604033788c01bae4008fe07479472765f3390d.tar.gz -> restic-browser-0.3.2_p20250523.tar.gz https://gitlab.com/api/v4/projects/64331580/packages/generic/restic-browser/0.3.2_p20250523/restic-browser-0.3.2_p20250523-node_modules.tar.xz https://gitlab.com/api/v4/projects/64331580/packages/generic/restic-browser/0.3.2_p20250523/restic-browser-0.3.2_p20250523-crates.tar.xz https://github.com/tauri-apps/fix-path-env-rs/archive/8481725b7ebfc56cdb052d522517421242eac36b.tar.gz -> fix-path-env-rs-8481725b7ebfc56cdb052d522517421242eac36b.gh.tar.gz
+_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	b892042b2667b8ac69ec8a2571dc290a	multiprocessing	1e32df7deee68372153dca65f4a7c21f	rust	205f396579fe93ffb2775ef7e36a1b20	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	5da01b45ec362e78575502b4fb82773a	desktop	3a72ffe0d8e1dd73af3a1c8c15a59fed	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575
+_md5_=39c69bc5745dc8a23e19526e108d9412

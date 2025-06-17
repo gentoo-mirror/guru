@@ -79,6 +79,8 @@ app-misc/far2l:wxwidgets - GUI backend support
 app-misc/kanata:cmd - Enable potentially dangerous "cmd" action to be able run arbitrary commands.
 app-misc/kloak:apparmor - Install AppArmor profile
 app-misc/kloak:systemd - Install systemd service file
+app-misc/navi:command-execution - Enable support for command execution
+app-misc/navi:repo-management - Allow management of cheatsheet repository
 app-misc/tinyfetch:pci - Enables the use of pciutils to detect GPU names
 app-misc/wlx-overlay-s:openvr - Support Valve's SteamVR SDK.
 app-misc/wlx-overlay-s:openxr - Support Khronos Group's OpenXR API.
@@ -150,10 +152,6 @@ dev-libs/zfp:openmp - Enable OpenMP parallel compression
 dev-libs/zfp:strided - Enable strided access for progressive zfp streams
 dev-libs/zfp:twoway - Use two-way skew-associative cache
 dev-libs/zfp:utilities - Build command line utilities
-dev-python/anytree:dot - allow to create dot graphs using media-gfx/graphviz
-dev-python/authlib:django - Enable Django framework support
-dev-python/authlib:flask - Enable Flask framework support
-dev-python/authlib:jose - Enable JSON Object Signing and Encryption (JOSE) support via dev-python/pycryptodome
 dev-python/guidata:pyqt5 - Use dev-python/pyqt5 as Qt for Python implementation
 dev-python/guidata:pyqt6 - Use dev-python/pyqt6 as Qt for Python implementation
 dev-python/ptpython:black - Add support for dev-python/black. Black not always possible on PyPy
@@ -271,6 +269,12 @@ games-engines/fs2_open:discord - Enable Discord RPC support
 games-engines/instead:doc - Include some additional documentation on how to create games for the instead engine
 games-engines/instead:harfbuzz - Use media-libs/harfbuzz for better support of RTL languages
 games-engines/instead:sdl2 - Use libsdl2 instead of libsdl
+games-engines/system3-sdl2:debug - Enable debug build with debugging symbols and debugger support
+games-engines/system3-sdl2:rtmidi - Enable real-time MIDI support via rtmidi library
+games-engines/xsystem35-sdl2:debug - Enable debug build and built-in debugger
+games-engines/xsystem35-sdl2:portmidi - Enable MIDI support via PortMidi
+games-engines/xsystem4:debug - Enable Chibi Scheme debugger support for game development and troubleshooting
+games-engines/xsystem4:gles2 - Use OpenGL ES 2.0 backend instead of desktop OpenGL for better compatibility on embedded systems
 games-fps/crispy-doom:fluidsynth - Use media-sound/fluidsynth for MIDI support
 games-fps/crispy-doom:midi - Basic support for MIDI files
 games-fps/crispy-doom:truecolor - Enable true-color rendering (experimental)
@@ -542,6 +546,7 @@ media-sound/fooyin:openmpt - Build the OpenMPT input plugin using media-libs/lib
 media-sound/fooyin:pipewire - Enable sound support via native PipeWire backend
 media-sound/fooyin:replaygain - Enable support for Replay Gain scanning using media-libs/libebur128 instead of using ffmpeg
 media-sound/gapless:pipewire - Enable support for the PipeWire audio sink
+media-sound/goxlr-utility:tts - Accessibility feature adding TTS capabilities to report button presses.
 media-sound/jacktrip:rtaudio - Enable rtaudio backend
 media-sound/jacktrip:virtualstudio - Enable VirtualStudio extension
 media-sound/lms:stb - Use dev-libs/stb graphic library instead of media-gfx/graphicsmagick
@@ -665,11 +670,11 @@ net-p2p/feather:revuo - Enable revuo plugin
 net-p2p/feather:tickers - Enable price tickers plugin
 net-p2p/feather:xmrig - Enable mining support using a user specified xmrig binary
 net-p2p/gridcoin:qrcode - Enable generation of QR Codes for receiving payments
-net-p2p/monero:daemon - Build the Monero daemon used to connect to the P2P network.
-net-p2p/monero:hw-wallet - Enable Trezor hardware wallet support.
-net-p2p/monero:tools - Build tools used to manipulate the blockchain as it is stored on disk.
-net-p2p/monero:wallet-cli - Build the command line wallet, monero-wallet-cli.
-net-p2p/monero:wallet-rpc - Build the RPC wallet, monero-wallet-rpc.
+net-p2p/monero:daemon - Build the Monero daemon used to connect to the P2P network
+net-p2p/monero:hw-wallet - Enable Trezor hardware wallet support
+net-p2p/monero:tools - Build tools used to manipulate the blockchain as it is stored on disk
+net-p2p/monero:wallet-cli - Build the command line wallet, monero-wallet-cli
+net-p2p/monero:wallet-rpc - Build the RPC wallet, monero-wallet-rpc
 net-p2p/monero-gui-bin:daemon - Install the Monero daemon used to connect to the P2P network.
 net-p2p/monero-gui-bin:tools - Install tools used to manipulate the blockchain as it is stored on disk.
 net-p2p/monero-gui-bin:wallet-cli - Install the command line wallet, monero-wallet-cli.
@@ -727,6 +732,7 @@ phosh-base/phosh-shell:lockscreen-plugins - Build lockscreen plugins and widgets
 phosh-base/phosh-shell:test-full - Run integration tests
 sci-biology/cmdock:apidoc - Build API documentation using app-text/doxygen
 sci-biology/cmdock:boinc - Use CmDock with SiDock@home BOINC project
+sci-electronics/qucs-s:ngspice - Add support for ngspice backend (recommended simulation backend)
 sci-mathematics/frama-c-aorai:eva - Build support for the Eva plugin
 sci-misc/llama-cpp:blis - Build a BLIS backend
 sci-misc/llama-cpp:hip - Build a HIP (ROCm) backend

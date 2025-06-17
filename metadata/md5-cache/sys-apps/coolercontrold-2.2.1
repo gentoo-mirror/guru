@@ -1,0 +1,15 @@
+BDEPEND=|| ( >=dev-lang/rust-bin-1.74.1:* >=dev-lang/rust-1.74.1:* ) virtual/pkgconfig
+DEFINED_PHASES=compile configure install postinst prepare setup test unpack
+DEPEND=app-arch/zstd:= video_cards_amdgpu? ( x11-libs/libdrm[video_cards_amdgpu] )
+DESCRIPTION=Monitor and control your cooling and other devices (daemon)
+EAPI=8
+HOMEPAGE=https://gitlab.com/coolercontrol/coolercontrol
+INHERIT=cargo optfeature systemd
+IUSE=video_cards_amdgpu debug
+KEYWORDS=~amd64
+LICENSE=GPL-3+ AGPL-3+ Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD-2 BSD GPL-3+ ISC MIT MPL-2.0 UoI-NCSA Unicode-3.0 ZLIB
+RDEPEND=app-arch/zstd:= video_cards_amdgpu? ( x11-libs/libdrm[video_cards_amdgpu] )
+SLOT=0
+SRC_URI=https://gitlab.com/coolercontrol/coolercontrol/-/archive/2.2.1/coolercontrol-2.2.1.tar.bz2 https://gitlab.com/api/v4/projects/32909921/packages/generic/coolercontrol/2.2.1/coolercontrol-2.2.1-dist.tar.xz https://gitlab.com/api/v4/projects/32909921/packages/generic/coolercontrol/2.2.1/coolercontrold-2.2.1-crates.tar.xz https://github.com/codifryed/nvml-wrapper/archive/572095f631da93be8d243c73820e581676969897.tar.gz -> nvml-wrapper-572095f631da93be8d243c73820e581676969897.gh.tar.gz https://github.com/codifryed/nvml-wrapper/archive/572095f631da93be8d243c73820e581676969897.tar.gz -> nvml-wrapper-572095f631da93be8d243c73820e581676969897.gh.tar.gz https://github.com/codifryed/tower-governor/archive/fd799d86418e58179468953c80ad7094a81a9e37.tar.gz -> tower-governor-fd799d86418e58179468953c80ad7094a81a9e37.gh.tar.gz
+_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	b892042b2667b8ac69ec8a2571dc290a	multiprocessing	1e32df7deee68372153dca65f4a7c21f	rust	205f396579fe93ffb2775ef7e36a1b20	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	5da01b45ec362e78575502b4fb82773a	optfeature	538bce96e5589935b57e178e8635f301	systemd	a964c0cbe818b5729da1dbfcee5be861
+_md5_=6127757920dc41d70d9d002ea977777f
