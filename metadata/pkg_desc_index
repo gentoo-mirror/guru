@@ -80,7 +80,7 @@ app-admin/akita 0.1.4: An HTTP log monitoring tool for your terminal
 app-admin/ananicy-cpp 1.1.1-r3: Ananicy rewritten in C++ for much lower CPU and memory usage
 app-admin/antidot 0.6.3: Cleans up your $HOME from those pesky dotfiles
 app-admin/aws-vault 7.2.0: Securely store and access AWS credentials in development environments
-app-admin/blahajdots 0.5.0 9999: Bespoke dotfile management for sharkgirls.
+app-admin/blahajdots 0.6.0 9999: Bespoke dotfile management for sharkgirls.
 app-admin/boinctui 2.7.1 2.7.1-r1: Fullscreen text mode manager for the BOINC client
 app-admin/chamber 2.13.2: Managing secrets in AWS SSM Parameter Store
 app-admin/chezmoi 2.61.0 2.62.3: Manage your dotfiles across multiple machines, securely
@@ -326,7 +326,7 @@ app-portage/portagecfg 2.1.3 2.2.2 2.3.0 2.4.0: Utility to write Portage config 
 app-portage/quantum-resolver 9999: A WIP portage dependency resolver
 app-portage/showbuild 0.9.1-r1: Script to follow log of running portage builds
 app-portage/zig-ebuilder 9999: Semi-automatic generator for Zig ebuilds
-app-shells/carapace 1.3.2: Multi-shell multi-command argument completer
+app-shells/carapace 1.3.3: Multi-shell multi-command argument completer
 app-shells/direnv 2.36.0 9999: Environment variable manager for shell
 app-shells/elvish 0.19.2 0.20.1 0.21.0: Expressive programming language and a versatile interactive shell
 app-shells/fre 0.4.1: A command line frecency tracking tool
@@ -469,10 +469,10 @@ dev-crystal/spectator 0.12.0 0.12.1: Feature-rich testing framework for Crystal 
 dev-crystal/temel 0.1.0_p20171024: Extensible Markup DSL for Crystal
 dev-crystal/water 1.0.0: A library for writing HTML in plain Crystal
 dev-crystal/webdrivers 0.4.3-r1: Helps manage drivers for Selenium, such as the Chromedriver
-dev-crystal/webless 0.1.0: HTTP::Client for testing HTTP::Handlers directly and maintaining cookies
+dev-crystal/webless 0.1.0 0.2.0: HTTP::Client for testing HTTP::Handlers directly and maintaining cookies
 dev-crystal/webmock 0.14.0: Mock HTTP client
 dev-db/libpg_query 16.5.1.0 17.6.0.0: C library for accessing the PostgreSQL parser outside of the server environment
-dev-db/limbo 0.0.19 0.0.20: The Limbo interactive SQL shell
+dev-db/limbo 0.0.19 0.0.22: The Limbo interactive SQL shell
 dev-db/pg_query_vala 0.1.0_pre20240326-r1 0.1.0_pre20241001: Thin wrapper around libpg_query to use with vala
 dev-db/pg_repack 1.5.0: Reorganize tables in PostgreSQL databases with minimal locks
 dev-db/psequel 0.2.0-r1: Run your SQL query
@@ -502,6 +502,7 @@ dev-embedded/nxp-gui-guider 1.7.2-r1: GUI Guider is a user-friendly GUI developm
 dev-embedded/pico-sdk 2.1.1: Libraries and tools for C/C++ development on RP2040 and RP2350 microcontrollers.
 dev-embedded/qdl 2.1 9999: Tool to communicate with Qualcomm System On a Chip bootroms
 dev-embedded/rauc 1.14: Lightweight update client that runs on your Embedded Linux device
+dev-embedded/rpi-openocd 9999: OpenOCD - Open On-Chip Debugger (Raspberry Pi Fork)
 dev-embedded/squareline-studio 1.3.2: Visual drag-and-drop UI editor for LVGL
 dev-erlang/conf 0.2.6: YAML configuration for Erlang applications
 dev-erlang/cowboy 2.9.0: Small, fast, modern HTTP server for Erlang/OTP.
@@ -537,6 +538,19 @@ dev-lang/swift-bootstrap 1.0: A virtual package providing a base Swift to bootst
 dev-lang/wabt 1.0.34: The WebAssembly Binary Toolkit
 dev-libs/M_CLI2 3.2.0: M_CLI2 - parse Unix-like command line arguments from Fortran
 dev-libs/StringiFor 1.1.4: StringiFor, Strings Fortran Manipulator, yet another strings Fortran module
+dev-libs/aws-c-auth 0.9.0: C99 library implementation of AWS client-side authentication: standard credentials providers and signing
+dev-libs/aws-c-cal 0.9.2: Crypto Abstraction Layer: Cross-Platform C99 wrapper for cryptography primitives
+dev-libs/aws-c-common 0.12.3: Core c99 package for AWS SDK for C
+dev-libs/aws-c-compression 0.3.1: C99 implementation of huffman encoding/decoding
+dev-libs/aws-c-event-stream 0.5.4: C99 implementation of the vnd.amazon.eventstream content-type
+dev-libs/aws-c-http 0.10.2: C99 implementation of the HTTP/1.1 and HTTP/2 specifications
+dev-libs/aws-c-io 0.19.1: AWS SDK for C module, handles IO and TLS work for application protocols
+dev-libs/aws-c-mqtt 0.13.1: C99 implementation of the MQTT 3.1.1 specification
+dev-libs/aws-c-s3 0.8.1: AWS C S3 Library
+dev-libs/aws-c-sdkutils 0.2.4: AWS SDK Utilities Library
+dev-libs/aws-checksums 0.2.7: Cross-Platform HW accelerated CRC32c and CRC32 with software fallbacks
+dev-libs/aws-crt-cpp 0.32.8: Core CRT package for AWS SDK for C
+dev-libs/aws-sdk-cpp 1.11.586: AWS SDK for C++
 dev-libs/cgicc 3.2.19 3.2.20: A C++ class library for writing CGI applications
 dev-libs/cyrus-sasl-xoauth2 0.2: XOAUTH2 mechanism plugin for cyrus-sasl
 dev-libs/dmd_core 0.7.2-r1: Core logic for an AT&T / Teletype DMD 5620 terminal emulator
@@ -580,6 +594,7 @@ dev-libs/open62541 1.4.11.1: Open source C implementation of OPC UA
 dev-libs/polyseed 1.0.0 2.0.0 9999: Mnemonic seed library for Monero and other CryptoNote-based currencies.
 dev-libs/qschematic 1.6.0: Library for creating flowcharts and engineering diagrams
 dev-libs/randomx 1.2.1-r1: Proof of work algorithm based on random code execution
+dev-libs/s2n 1.5.21: Simple, small, fast and secure C99 implementation of the TLS/SSL protocols
 dev-libs/sealcurses 2.0.18_pre20241014 2.0.18_pre20241202: SDL Emulation and Adaptation Layer for Curses
 dev-libs/sirit 0_p20220725: A runtime SPIR-V assembler
 dev-libs/supercop 0_p20200827: Fast cryptographic operations for Monero wallets
@@ -872,7 +887,6 @@ dev-python/textual-serve 1.1.2: Serve Textual apps locally
 dev-python/timeslot 0.1.2: Time slots/intervals with an arbitrary start and stop
 dev-python/tulir-telethon 1.35.0_alpha1 1.37.0_alpha1: Full-featured Telegram client library for Python 3
 dev-python/tweepy 4.14.0: An easy-to-use Python library for accessing the Twitter API.
-dev-python/typer 0.15.3: Build great CLIs. Easy to code. Based on Python type hints.
 dev-python/types-protobuf 4.24.0.20240408 5.27.0.20240626: Typing stubs for protobuf
 dev-python/types-requests 2.32.0.20240712: Typing stubs for requests
 dev-python/typing-inspect 0.9.0: Runtime inspection utilities for Python typing module
@@ -920,7 +934,7 @@ dev-util/catppuccin-whiskers 2.4.0: Soothing port creation tool for the high-spi
 dev-util/cmakelang 0.6.13: Provides Quality Assurance (QA) tools for cmake
 dev-util/coq-lsp 0.1.9: Visual Studio Code Extension and Language Server Protocol for Coq
 dev-util/deblob 0.9 0.10 9999: remove binary executables from a directory
-dev-util/distribution-gpg-keys 1.111: Collection of GPG keys used in Linux Distributions
+dev-util/distribution-gpg-keys 1.113: Collection of GPG keys used in Linux Distributions
 dev-util/dmg2img 9999 20201227: Convert Apple disk images to IMG format.
 dev-util/dockerfile-language-server 0.12.0 0.13.0: A language server for Dockerfiles
 dev-util/eclipse-parallel-bin 4.28: Eclipse IDE for Scientific Computing (C, C++, Fortran)
@@ -949,8 +963,8 @@ dev-util/libtypec-utils 0.5.2: Library to interface with USB Type-C/Power Delive
 dev-util/lottieconverter 0.2-r1 0.2-r2: Simple lottie (telegram animated sticker) converter
 dev-util/lua-language-server 3.13.6 3.13.9 3.14.0: Lua language server
 dev-util/mh 1.4.1: Generate help for Makefile
-dev-util/mock 6.2: Simple chroot build environment manager for building RPMs
-dev-util/mock-core-configs 42.3: Mock core config files basic chroots
+dev-util/mock 6.3: Simple chroot build environment manager for building RPMs
+dev-util/mock-core-configs 42.4: Mock core config files basic chroots
 dev-util/ocamlformat 0.26.2 0.26.2-r1: Auto-formatter for OCaml code
 dev-util/ocp-indent 1.8.2: Indentation tool for OCaml, to be used from editors like Emacs and Vim.
 dev-util/pcpp 1.30: A C99 preprocessor written in pure Python
@@ -1133,7 +1147,7 @@ gui-apps/hyprsunset 0.2.0 9999: An application to enable a blue-light filter on 
 gui-apps/hyprswitch 1.3.1: A CLI/GUI that allows switching between windows in Hyprland
 gui-apps/hyprsysteminfo 0.1.3: Hyprland's system information GUI application
 gui-apps/intiface-central-bin 2.6.0 2.6.4: Buttplug frontend application
-gui-apps/ironbar 0.16.0-r1 0.16.1 0.16.1-r1: Customisable Wayland gtk bar written in Rust
+gui-apps/ironbar 0.16.0-r1 0.16.1 0.16.1-r1 9999: Customisable Wayland gtk bar written in Rust
 gui-apps/klassy 6.4 9999: Klassy QT6 window decoration theme for KDE Plasma 6.3+
 gui-apps/koi 0.5.1: Theme scheduling for the KDE Plasma Desktop
 gui-apps/lan-mouse 0.7.3-r1: Software KVM Switch / mouse & keyboard sharing software for Local Area Networks
@@ -1188,7 +1202,7 @@ gui-apps/walker 0.10.3 0.12.0 9999: Multi-Purpose Launcher with a lot of feature
 gui-apps/waylock 1.3.0 1.4.0: Small screenlocker for Wayland compositors
 gui-apps/wbg 1.0.2 1.1.0 1.2.0 9999: Super simple wallpaper application
 gui-apps/wdisplays 1.1 1.1.1 9999: GUI display configurator for wlroots compositors
-gui-apps/wev 1.0.0: Wayland event viewer
+gui-apps/wev 1.0.0 1.1.0: Wayland event viewer
 gui-apps/windowtolayer 0.1.0 9999: Display existing Wayland applications as a wallpaper
 gui-apps/wl-clip-persist 0.4.3-r1 9999: Keep Wayland clipboard even after programs close
 gui-apps/wl-mirror 0.18.0-r1 0.18.1-r2 9999: A simple Wayland output mirror client
@@ -1219,7 +1233,7 @@ gui-wm/hyprland-contrib 0.1-r1 9999: Community-maintained extensions for hyprlan
 gui-wm/labwc 0.8.3-r1 0.8.4-r1 9999: Openbox alternative for wayland
 gui-wm/miracle-wm 0.4.1 0.5.2: Tiling Wayland compositor based on Mir
 gui-wm/niri 25.02 25.05.1: Scrollable-tiling Wayland compositor
-gui-wm/phoc 0.42.1 0.43.0 0.44.0 0.44.1 0.45.0 0.46.0 0.47.0: Wayland compositor for mobile phones
+gui-wm/phoc 0.46.0 0.47.0: Wayland compositor for mobile phones
 gui-wm/river 0.3.7 0.3.9: A dynamic tiling Wayland compositor
 gui-wm/swayfx 0.4-r2 0.5: SwayFX: Sway, but with eye candy!
 kde-apps/kwalletcli 3.03: CLI for the KDE Wallet
@@ -1311,6 +1325,7 @@ media-libs/wivrn 0.25 9999: WiVRn OpenXR streaming
 media-plugins/alsa-sndio 0.2: ALSA PCM to play audio on sndio servers
 media-plugins/argotlunar-bin 2.06-r2: Argotlunar is a sound granulator. Binary Linux VST
 media-plugins/dtmediawiki 9999: Wikimedia Commons export plugin for Darktable
+media-plugins/eq10q 2.2: An LV2 audio plugin implementing a powerful and flexible parametric equalizer
 media-plugins/gimp-avif-plugin 9999: Plug-in for development GIMP 2.99.11 for loading/saving AVIF images.
 media-plugins/gst-plugins-qt6 1.22.12 1.24.10 1.24.11: Qt6 QML video sink plugin for GStreamer
 media-plugins/qt-heif-image-plugin 0.3.4: Qt plugin for HEIF images
@@ -1434,7 +1449,7 @@ net-im/abaddon 0.2.1 9999: Alternative Discord client using GTK instead of Elect
 net-im/axolotl-bin 2.0.1: Axolotl is a cross-platform Signal client
 net-im/beeper 4.0.732 4.0.747: Beeper: Unified Messenger
 net-im/chatterino 2.5.2-r1 2.5.3: Chat client for https://twitch.tv
-net-im/conduit 0.9.0-r1 0.10.3 9999: Matrix homeserver written in Rust
+net-im/conduit 0.9.0-r1 0.10.3 0.10.4 9999: Matrix homeserver written in Rust
 net-im/discord-canary-bin 0.0.643: All-in-one voice and text chat
 net-im/discord-ptb-bin 0.0.137: All-in-one voice and text chat
 net-im/eturnal 1.12.1 1.12.2: STUN/TURN server
@@ -1514,7 +1529,7 @@ net-misc/iipsrv 1.2 1.3: High performance image server for high resolution and s
 net-misc/inv_sig_helper 0_pre20250103 9999: Rust service that decrypts YouTube signatures and manages player information
 net-misc/jool 4.1.14: Required tools for Jool
 net-misc/jool-modules 4.1.14: Jool is an Open Source SIIT and NAT64 for linux
-net-misc/lyrics-in-terminal 1.5.0 1.7.0: Command Line Lyrics fetcher for MPRIS media players
+net-misc/lyrics-in-terminal 1.7.0 1.8.0: Command Line Lyrics fetcher for MPRIS media players
 net-misc/maestral 1.9.4: Maestral is an open-source Dropbox client written in Python
 net-misc/maestral-qt 1.9.4: Maestral is an open-source Dropbox client written in Python
 net-misc/mastorss 0.13.1 0.13.1-r1 9999: Another RSS to Mastodon bot
@@ -1590,10 +1605,10 @@ net-wireless/rtl8821ce 0_pre20240326: Realtek RTL8821CE Driver module for Linux 
 net-wireless/rtl8821cu 0_pre20240821: Realtek 8821CU/RTL8811CU module for Linux kernel
 net-wireless/sdrpp 1.2.0_pre20240607: Cross-Platform SDR Software
 phosh-base/pfs 0.0.3: Phosh File Selector library for selecting files
-phosh-base/phosh 0.42.0: Meta package for Phosh, merge this package to install
+phosh-base/phosh 0.42.0 0.47.0: Meta package for Phosh, merge this package to install
 phosh-base/phosh-mobile-settings 0.42.0 0.43.0 0.47.0: Phosh and related settings for mobile
 phosh-base/phosh-osk-stub 0.42.0 0.47.0: Alternative on screen keyboard for Phosh
-phosh-base/phosh-shell 0.42.0: Pure Wayland shell for mobile devices
+phosh-base/phosh-shell 0.42.0 0.47.0-r1: Pure Wayland shell for mobile devices
 phosh-base/phosh-tour 0.43.0 0.44.0 0.45.0 0.46.0 0.47.0: Introduction to phosh on smartphones
 phosh-base/xdg-desktop-portal-phosh 0.47.0: Phosh portal backend for xdg-desktop-portal
 sci-biology/cmdock 0.2.0-r2 0.2.0-r3: Program for docking ligands to proteins and nucleic acids
@@ -1845,7 +1860,7 @@ x11-misc/xob 0.2 0.3: A lightweight overlay volume (or anything) bar for the X W
 x11-misc/xsecurelock 1.9.0: X11 screen lock utility with security in mind
 x11-plugins/purple-mm-sms 0.1.7: Purple SMS plugin using ModemManager
 x11-terms/dmd5620 2.1.0: GTK+ 3.0 implementation of an AT&T / Teletype DMD 5620 emulator.
-x11-terms/rio 0.2.15: A hardware-accelerated GPU terminal emulator powered by WebGPU
+x11-terms/rio 0.2.20: A hardware-accelerated GPU terminal emulator powered by WebGPU
 x11-terms/tabby-bin 1.0.221: A terminal for a more modern age
 x11-terms/terminal-simulator 0.2 9999-r1: VT100 and VT52 terminal hardware simulator
 x11-terms/tym 3.5.1-r2: Lua-configurable terminal emulator

@@ -117,6 +117,15 @@ dev-embedded/rauc:gpt - Add GPT support
 dev-embedded/rauc:json - Add JSON support
 dev-embedded/rauc:network - Add network update support
 dev-embedded/rauc:service - Add dbus service
+dev-embedded/rpi-openocd:capstone - Support for ARM disassembly via dev-libs/capstone
+dev-embedded/rpi-openocd:cmsis-dap - Support for CMSIS-DAP adapter driver via dev-libs/hidapi
+dev-embedded/rpi-openocd:dummy - Build the dummy port driver
+dev-embedded/rpi-openocd:ftdi - Support for USB FTDI chips via dev-embedded/libftdi
+dev-embedded/rpi-openocd:gpiod - Support for linuxgpiod driver via dev-libs/libgpiod
+dev-embedded/rpi-openocd:jlink - Support for J-Link driver via dev-embedded/libjaylink
+dev-embedded/rpi-openocd:parport - Support for parport JTAG devices
+dev-embedded/rpi-openocd:usb - Support for the USB-based drivers
+dev-embedded/rpi-openocd:verbose-io - Verbose IO and comm JTAG and USB messages
 dev-java/corretto-bin:headless-awt - Don't install the X backend for AWT, needed by some GUIs
 dev-java/microsoft-openjdk-bin:headless-awt - Don't install the X backend for AWT, needed by some GUIs
 dev-lang/gnu-apl:erlang - Build the Erlang interface
@@ -128,6 +137,22 @@ dev-lang/gnu-apl:python - Build the Python extension lib_gnu_apl.so
 dev-lang/gnu-apl:sqlite3 - Use sqlite3
 dev-lang/quickjs:lto - Enable Link Time Optimizations (improves performance and decreases size of executables)
 dev-lang/swift:libcxx - Use llvm-runtimes/libcxx as the default C++ runtime library.
+dev-libs/aws-sdk-cpp:analytics - Adds access to big data and analysis related services.
+dev-libs/aws-sdk-cpp:compute - Adds access to Compute and Auto Scaling related services.
+dev-libs/aws-sdk-cpp:database - Adds access functionality to RDB, NoSQL, TimeStream, and Ledger related services.
+dev-libs/aws-sdk-cpp:devops - Adds access to CI/CD and developer related services.
+dev-libs/aws-sdk-cpp:full - Adds access to all supported services. Enabling this will significantly increase build times.
+dev-libs/aws-sdk-cpp:http - If ON, prevents the default platform-specific HTTP client from being built into the library. If ON, you will need to provide your own platform-specific HTTP client implementation.
+dev-libs/aws-sdk-cpp:iot - Adds access to IoT and edge services.
+dev-libs/aws-sdk-cpp:media - Adds access to media processing related services.
+dev-libs/aws-sdk-cpp:messaging - Adds access to messaging and notification services.
+dev-libs/aws-sdk-cpp:mgmt - Adds access to operational management related services.
+dev-libs/aws-sdk-cpp:ml - Adds access to machine learning and AI related services.
+dev-libs/aws-sdk-cpp:monitor - Adds access to monitoring and operation related services.
+dev-libs/aws-sdk-cpp:networking - Adds access to network and CDN related services.
+dev-libs/aws-sdk-cpp:other - Add access to services that do not easily fit into existing groups.
+dev-libs/aws-sdk-cpp:security - Adds access to services related to ID management and security auditing.
+dev-libs/aws-sdk-cpp:storage - Adds access to services related to object, block, and file storage.
 dev-libs/feedbackd:daemon - Build the feedbackd daemon
 dev-libs/hts_engine:speech-tools - use memory allocation/free functions of app-accessibility/speech-tools
 dev-libs/libdbf:doc - Include documentation
@@ -162,8 +187,6 @@ dev-python/pyrime:prompt-toolkit - Add support for dev-python/prompt-toolkit
 dev-python/pyrime:ptpython - Add support for dev-python/ptpython
 dev-python/python-socketio:asyncio-client - Add async websocket client
 dev-python/python-socketio:client - Add websocket client
-dev-python/typer:rich - Rich text output via dev-python/rich
-dev-python/typer:shell-detection - detect current shell with dev-python/shellingham for completions
 dev-util/catalyst-lab:binhost - Binhost targets support to build selected packages.
 dev-util/catalyst-lab:git - Uploading binpkgs and releases to git repository.
 dev-util/catalyst-lab:qemu - Building stages for different architecture using QEMU.
@@ -725,10 +748,12 @@ net-wireless/sdrpp:rtlsdr - Support for rtlsdr dongles
 net-wireless/sdrpp:sdrplay - Support for sdrplay hardware
 net-wireless/sdrpp:soapy - Support for hardware supported by SoapySDR
 net-wireless/sdrpp:uhd - Support for uhd hardware
+phosh-base/phosh:calls - Enable calls support via net-voip/gnome-calls
 phosh-base/phosh:desktop-portal - Enable sys-apps/xdg-desktop-portal backend implementation
 phosh-base/phosh:iio - Enable support for IIO sensors via gnome-extra/iio-sensor-proxy
 phosh-base/phosh:screenshot - Enable screenshot manager support via gui-apps/slurp
 phosh-base/phosh-shell:lockscreen-plugins - Build lockscreen plugins and widgets
+phosh-base/phosh-shell:plugins - Build Phosh plugins and widgets
 phosh-base/phosh-shell:test-full - Run integration tests
 sci-biology/cmdock:apidoc - Build API documentation using app-text/doxygen
 sci-biology/cmdock:boinc - Use CmDock with SiDock@home BOINC project
