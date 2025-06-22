@@ -22,7 +22,7 @@ LICENSE="MPL-2.0 GPL-3"
 
 # release policy: https://git.sr.ht/~sircmpwn/hare/tree/master/item/docs/release.md
 DEPEND="
-	~dev-lang/harec-0.24.0
+	~dev-lang/harec-0.25.2
 	>=sys-devel/qbe-1.2
 "
 BDEPEND="app-text/scdoc"
@@ -30,10 +30,6 @@ RDEPEND="${DEPEND}"
 
 # hare and haredoc are built by hare
 QA_FLAGS_IGNORED="usr/bin/hare usr/bin/haredoc"
-
-PATCHES=(
-	"${FILESDIR}/hare-0.24.0-riscv64-comment-syntax.patch"
-)
 
 src_configure() {
 	local target_arch

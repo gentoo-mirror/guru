@@ -1,4 +1,4 @@
-# Copyright 2022-2024 Gentoo Authors
+# Copyright 2022-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -18,7 +18,7 @@ DESCRIPTION="SSH library for Hare"
 HOMEPAGE="https://git.sr.ht/~sircmpwn/hare-ssh"
 LICENSE="MPL-2.0"
 
-RDEPEND=">=dev-lang/hare-0.24.0"
+RDEPEND=">=dev-lang/hare-0.25.2"
 DEPEND="${RDEPEND}"
 
 src_prepare() {

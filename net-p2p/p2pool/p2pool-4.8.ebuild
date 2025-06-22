@@ -23,7 +23,6 @@ KEYWORDS="~amd64 ~arm64 ~x86"
 IUSE="daemon"
 
 DEPEND="
-	dev-libs/libsodium:=
 	dev-libs/libuv:=
 	dev-libs/randomx
 	net-libs/zeromq:=
@@ -34,7 +33,10 @@ DEPEND="
 	)
 "
 RDEPEND="${DEPEND}"
-BDEPEND="verify-sig? ( sec-keys/openpgp-keys-schernykh )"
+BDEPEND="
+	dev-util/patchelf
+	verify-sig? ( sec-keys/openpgp-keys-schernykh )
+"
 
 src_unpack() {
 	if use verify-sig; then
@@ -65,7 +67,9 @@ src_configure() {
 }
 
 src_install(){
-	dobin "${BUILD_DIR}/p2pool"
+	# remove insecure RUNPATHs
+	patchelf --remove-rpath "${BUILD_DIR}"/p2pool || die
+	dobin "${BUILD_DIR}"/p2pool
 
 	if use daemon; then
 		# data-dir
@@ -84,13 +88,13 @@ pkg_postinst() {
 	ewarn "P2Pool for Monero is now installed."
 	ewarn "You can run it by doing 'p2pool --host 127.0.0.1 --wallet YOUR_PRIMARY_ADDRESS'"
 	ewarn "Where 127.0.0.1 is the address of a local monero node (e.g. monerod)"
-	ewarn ""
+	ewarn
 	ewarn "Once configured, point your RandomX miner (e.g. XMRig) at p2pool"
 	ewarn "For example 'xmrig -o 127.0.0.1:3333'"
-	ewarn ""
+	ewarn
 	ewarn "You MUST use your primary address when using p2pool, just like solo mining."
 	ewarn "If you want privacy, create a new mainnet wallet for P2Pool mining."
-	ewarn ""
+	ewarn
 	ewarn "Rewards will not be visible unless you use a wallet that supports P2Pool."
 	ewarn "See https://p2pool.io/#help and https://github.com/SChernykh/p2pool for more information."
 
