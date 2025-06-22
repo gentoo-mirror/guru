@@ -92,7 +92,7 @@ app-admin/grub-customizer 5.2.5: A graphical grub2 settings manager
 app-admin/hardinfo2 2.2.13: System Information and Benchmark for Linux Systems
 app-admin/himitsu 0.7 0.8 9999: Secret storage system for Unix, suitable for storing passwords, keys, ...
 app-admin/himitsu-keyring 0.2.0: graphical frontend for managing a Himitsu key store
-app-admin/himitsu-ssh 0.3 0.4 9999: SSH integration for Himitsu
+app-admin/himitsu-ssh 0.4 9999: SSH integration for Himitsu
 app-admin/himitsu-totp 0.1 0.2 9999: TOTP support for Himitsu
 app-admin/i2pd-tools 2024.09.25 2025.02.26-r1: Some useful tools for I2P
 app-admin/krapplet 0.3.1-r1: Krapplet (keyring applet): a Linux graphical password manager
@@ -225,7 +225,7 @@ app-misc/cheat 4.2.3 4.3.3-r1: cheat allows you to create and view interactive c
 app-misc/clifm 1.11 1.13 1.16 1.18 9999: The command line file manager
 app-misc/clipboard 0.10.0-r1: Cut, copy, and paste anything in your terminal
 app-misc/cliphist 0.6.1: Wayland clipboard manager with support for multimedia
-app-misc/corectrl 1.4.3 1.5.1 9999: Core control application
+app-misc/corectrl 1.5.1 9999: Core control application
 app-misc/cpufetch 1.06: Simplistic yet fancy CPU architecture fetching tool
 app-misc/dbf 0.9.0: Command line tool to read the content of dBASE III, IV, and 5.0 files
 app-misc/diff-so-fancy 1.4.4: Good-lookin' diffs. Actually... nah... The best-lookin' diffs
@@ -422,7 +422,6 @@ dev-cpp/fast_double_parser 0.8.0: Parse strings into double floating-point value
 dev-cpp/finalcut 0.9.1-r1 9999: A text-based widget toolkit
 dev-cpp/gsl-lite 0.38.0: C++ Guideline Support Library implementation
 dev-cpp/indicators 2.3 2.3-r1: Activity indicators for modern C++
-dev-cpp/mastodonpp 0.5.7-r1 9999: C++ wrapper for the Mastodon and Pleroma APIs.
 dev-cpp/mustache 4.1 4.1_p20211210: Mustache implementation for modern C++
 dev-cpp/parallel-hashmap 1.3.8 1.4.1: Family of header-only, fast and memory-friendly hashmap and btree containers
 dev-cpp/pcg-cpp 0.98.1_p20210406-r1: Family of better random number generators
@@ -460,7 +459,7 @@ dev-crystal/json_mapping 0.1.1: Provides the legacy JSON.mapping macro method
 dev-crystal/kemal 1.1.2-r1 1.7.1: Lightning Fast, Super Simple web framework
 dev-crystal/kilt 0.6.1: Generic template interface for Crystal
 dev-crystal/liquid 0.4.1 1.0.0: Liquid template engine for Crystal
-dev-crystal/lucky_flow 0.10.0-r1: LuckyFlow is a library for testing user flows in the browser
+dev-crystal/lucky_flow 0.10.1: LuckyFlow is a library for testing user flows in the browser
 dev-crystal/protodec 0.1.5-r1 0.1.5-r2: Command-line tool to encode and decode arbitrary protobuf data
 dev-crystal/radix 0.4.1: Radix tree implementation for Crystal language
 dev-crystal/selenium 0.12.0 0.12.1: Selenium library for Crystal
@@ -518,7 +517,7 @@ dev-hare/hare-iobus 9999: An asyncronous I/O abstraction for Hare
 dev-hare/hare-json 0.24.2 9999: JSON support for Hare
 dev-hare/hare-linux 9999: Extra Linux support for Hare programs
 dev-hare/hare-png 9999: PNG implementation for Hare
-dev-hare/hare-ssh 0.24.0 0.24.2 9999: SSH library for Hare
+dev-hare/hare-ssh 0.24.2 0.25.2 9999: SSH library for Hare
 dev-hare/hare-xml 0_pre20231231 9999: XML support for Hare
 dev-java/corretto-bin 8.412.08.1 11.0.23.9.1 17.0.11.9.1 21.0.3.9.1 22.0.1.8.1: Prebuilt Java JDK binaries provided by Amazon Web Services
 dev-java/microsoft-openjdk-bin 11.0.22 17.0.10 21.0.2: Prebuilt Java JDK binaries provided by Microsoft
@@ -527,13 +526,13 @@ dev-lang/crystal-bin 1.16.2 1.16.3: The Crystal Programming Language
 dev-lang/fbc 1.10.1: A free/open source, multi-platform BASIC compiler.
 dev-lang/fbc-bootstrap 1.10.1: Bootstrap package for dev-lang/fbc
 dev-lang/gnu-apl 1.8: GNU interpreter for the APL programming language
-dev-lang/hare 0.24.0 0.24.2 9999: The Hare systems programming language
-dev-lang/harec 0.24.0 0.24.2 9999: The Hare compiler
+dev-lang/hare 0.24.2 0.25.2-r1 9999: The Hare systems programming language
+dev-lang/harec 0.24.2 0.25.2 9999: The Hare compiler
 dev-lang/odin 2024.08 2024.09: The Data-Oriented Language for Sane Software Development.
 dev-lang/opencilk 1.1 2.1: The OpenCilk concurrency platform for parallel programming
 dev-lang/opencilk-bin 1.1 2.1: The OpenCilk concurrency platform for parallel programming
 dev-lang/quickjs 2024.01.13-r1: Small embeddable Javascript engine
-dev-lang/swift 5.10.1 5.10.1-r1 5.10.1-r2 5.10.1-r3 5.10.1-r4 6.0.3 6.0.3-r1 6.1 6.1.1 6.1.2: A high-level, general-purpose, multi-paradigm, compiled programming language
+dev-lang/swift 5.10.1 5.10.1-r1 5.10.1-r2 5.10.1-r3 5.10.1-r4 5.10.1-r5 6.0.3 6.0.3-r1 6.0.3-r2 6.1 6.1.1 6.1.2 6.1.2-r1: A high-level, general-purpose, multi-paradigm, compiled programming language
 dev-lang/swift-bootstrap 1.0: A virtual package providing a base Swift to bootstrap future versions with.
 dev-lang/wabt 1.0.34: The WebAssembly Binary Toolkit
 dev-libs/M_CLI2 3.2.0: M_CLI2 - parse Unix-like command line arguments from Fortran
@@ -562,7 +561,7 @@ dev-libs/fortran-shlex 1.0.1 1.2.1 2.0.0: Modern Fortran port of the tiny-regex-
 dev-libs/fortran-stdlib 0.5.0 0.6.1 0.7.0 9999: A community driven standard library for (modern) Fortran
 dev-libs/ftl 1.0_p20230220: The Fortran Template Library (FTL) is a general purpose library for Fortran 2003
 dev-libs/gbinder 1.1.42 9999: GLib-style interface to binder
-dev-libs/gmobile 0.3.0 0.3.1: Mobile related helpers for glib based projects
+dev-libs/gmobile 0.3.1 0.4.0: Mobile related helpers for glib based projects
 dev-libs/gpds 1.9.0: A general purpose data serializer
 dev-libs/hts_engine 1.10: HMM-based speech synthesis system (HTS) engine and API
 dev-libs/imsg-compat 8.0.0 9999: linux port of OpenBSD imsg
@@ -794,7 +793,7 @@ dev-python/psycopg2cffi 2.9.0-r1: Implementation of the psycopg2 module using cf
 dev-python/ptpython 3.0.29: Python REPL build on top of prompt-toolkit
 dev-python/py-nanoid 9999: Python Nanoid
 dev-python/pyclip 0.7.0-r2 9999: Python clipboard module
-dev-python/pydantic-settings 2.8.1 2.9.1: Settings management using Pydantic
+dev-python/pydantic-settings 2.9.1 2.10.0: Settings management using Pydantic
 dev-python/pydispatcher 2.0.7: Multi-producer-multi-consumer signal dispatching mechanism
 dev-python/pydub 0.25.1: Manipulate audio with an simple and easy high level interface
 dev-python/pyfiglet 1.0.2: Pure-python FIGlet implementation
@@ -814,7 +813,7 @@ dev-python/pyproject2ebuild 0.0.3: Convert pyproject.toml to Gentoo ebuilds auto
 dev-python/pyqtdarktheme 2.1.0: A flat dark theme for PySide and PyQt.
 dev-python/pyrime 0.0.7: rime for python
 dev-python/pysdl3 0.9.8_beta2 0.9.8_beta3: A pure Python wrapper for SDL3
-dev-python/pysnooper 1.2.0 1.2.1: Never use print for debugging again
+dev-python/pysnooper 1.2.1 1.2.3: Never use print for debugging again
 dev-python/pystardict 0.8-r1: Library for manipulating StarDict dictionaries from within Python
 dev-python/pytest-cases 3.8.6: Separate test code from test cases in pytest
 dev-python/pytest-celery 0.1.0: a shim pytest plugin to enable celery.contrib.pytest
@@ -864,8 +863,9 @@ dev-python/sortedcollections 2.1.0: Apache2 licensed Python sorted collections l
 dev-python/sphinx-click 4.2.0: Sphinx plugin to automatically document click-based applications
 dev-python/sphinx-design 0.6.1: A sphinx extension for designing beautiful responsive web components
 dev-python/sphinx-hoverxref 1.4.2: Sphinx extension to show tooltips with content embedded when hover a reference
+dev-python/sphinx-last-updated-by-git 0.3.8: Get the "last updated" time for each Sphinx page from Git
 dev-python/sphinx-paramlinks 0.6.0: Allows param links in Sphinx function/method descriptions to be linkable
-dev-python/sphinx-sitemap 2.6.0: Sitemap generator for Sphinx
+dev-python/sphinx-sitemap 2.6.0 2.7.1: Sitemap generator for Sphinx
 dev-python/sphinxcontrib-katex 0.9.9 0.9.10: KaTeX Sphinx extension for rendering of math in HTML pages
 dev-python/sphinxext-opengraph 0.10.0: Sphinx extension to generate unique OpenGraph metadata
 dev-python/sphinxnotes-mock 1.0.2: Sphinx extension for mocking directives and roles without modifying documents
@@ -952,6 +952,7 @@ dev-util/git-bug 0.8.0 9999: distributed, offline-first bug tracker
 dev-util/gitlab-ci-local-bin 4.43.0 4.47.0 4.56.0: Run gitlab pipelines locally as shell executor or docker executor
 dev-util/go-task 3.38.0-r1 3.41.0-r1: A task runner / simpler Make alternative written in Go
 dev-util/gshards 0.2: Small helper tools to aid installing Crystal packages in Gentoo
+dev-util/hare-update 0.25.2.0 9999: assist in upgrading a codebase to a newer Hare release
 dev-util/haredo 1.0.2 9999: a simple and unix-idiomatic build automator
 dev-util/hut 0.6.0: CLI tool for sourcehut
 dev-util/insomnia-bin 2023.5.8: HTTP and GraphQL client for developers
@@ -1174,6 +1175,7 @@ gui-apps/organicmaps 9999: Offline maps and navigation using OpenStreetMap data
 gui-apps/packettracer 8.2.2-r1: Cisco's packet tracer
 gui-apps/paperde 0.1.1_p20210426: Simple, sleek QT based DE for wayland using wayfire
 gui-apps/pop-launcher 1.2.1: Modular IPC-based desktop launcher service
+gui-apps/quickshell 0.1.0: Toolkit for building desktop widgets using QtQuick
 gui-apps/rofi-wayland 1.7.5_p3 1.7.8_p1: A window switcher, run dialog and dmenu replacement
 gui-apps/satty 0.14.0-r1 9999: A screenshot annotation tool inspired by Swappy and Flameshot.
 gui-apps/sddm-conf 0.3.0: SDDM configuration editor
@@ -1192,7 +1194,7 @@ gui-apps/swayosd 0.1.0: GTK based on screen display for keyboard shortcuts like 
 gui-apps/swayr 0.28.0 0.28.1: A LRU window-switcher (and more) for the sway window manager
 gui-apps/swayrbar 0.4.2: A swaybar-protocol implementation for sway/swaybar
 gui-apps/sworkstyle 1.3.5: Map workspace names to icons for Sway
-gui-apps/swww 0.9.5-r2 9999: Efficient animated wallpaper daemon for wayland, controlled at runtime
+gui-apps/swww 0.10.3 9999: Efficient animated wallpaper daemon for wayland, controlled at runtime
 gui-apps/szyszka 3.0.0: Simple, powerful and easy to use file renamer
 gui-apps/tessen 2.2.1-r1: an interactive menu to autotype and copy pass and gopass data
 gui-apps/tiramisu 1.0_p20201110 2.0.20211107 9999: minimalistic desktop notifications provider
@@ -1508,7 +1510,7 @@ net-mail/pop 0.2.0: Send emails from your terminal
 net-misc/FORT-validator 1.5.4-r2 1.6.1-r2 1.6.2-r2: FORT validator is an open source RPKI validator
 net-misc/brickd 2.4.7: Network Daemon bridging API bindings to Tinkerforge hardware bricks
 net-misc/can-utils 2021.08.0 2023.03 9999-r3: CAN userspace utilities and tools
-net-misc/clatd 1.6: A CLAT / SIIT-DC Edge Relay implementation for Linux
+net-misc/clatd 1.6-r1 2.1.0: A CLAT / SIIT-DC Edge Relay implementation for Linux
 net-misc/commons-downloader 9999: A shell script to bulk download files from Wikimedia Commons, by category
 net-misc/commons-wikimedia-find-by-hash 1.0.0: Search in commons.wikimedia.org by hash (sha1) of provided file
 net-misc/curlie 1.8.2: Curlie is a frontend to curl that adds the ease of use of httpie
@@ -1532,7 +1534,6 @@ net-misc/jool-modules 4.1.14: Jool is an Open Source SIIT and NAT64 for linux
 net-misc/lyrics-in-terminal 1.7.0 1.8.0: Command Line Lyrics fetcher for MPRIS media players
 net-misc/maestral 1.9.4: Maestral is an open-source Dropbox client written in Python
 net-misc/maestral-qt 1.9.4: Maestral is an open-source Dropbox client written in Python
-net-misc/mastorss 0.13.1 0.13.1-r1 9999: Another RSS to Mastodon bot
 net-misc/mbpoll 1.5.2 9999: command line utility to communicate with ModBus slave (RTU or TCP)
 net-misc/megasync 5.11.1.0 5.12.0.1: The official Qt-based program for syncing your MEGA account in your PC
 net-misc/myip 1.2.1: Get your external IP address using STUN server
@@ -1570,9 +1571,9 @@ net-p2p/fopnu 1.67: P2P file sharing system
 net-p2p/fragments 3.0.1-r1 3.0.1-r2: Fragments is an easy to use BitTorrent client
 net-p2p/gridcoin 5.4.8.0_p1-r1 5.4.9.0: Proof-of-Stake based cryptocurrency that rewards BOINC computation
 net-p2p/ipfs-desktop-bin 0.39.0 0.40.0: A desktop client for IPFS. The IPFS's Native Application
-net-p2p/monero 0.18.4.0-r3 0.18.4.0-r4 9999: The secure, private, untraceable cryptocurrency
+net-p2p/monero 0.18.4.0-r5 9999: The secure, private, untraceable cryptocurrency
 net-p2p/monero-gui-bin 0.18.4.0: An open-source GUI wallet developed by the Monero community.
-net-p2p/p2pool 4.5 4.5-r1 4.5-r2 9999: Decentralized pool for Monero mining
+net-p2p/p2pool 4.5-r2 4.8 9999: Decentralized pool for Monero mining
 net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
 net-p2p/yggdrasil-go 0.5.12 9999: An experiment in scalable routing as an encrypted IPv6 overlay network
 net-print/hpuld 1.00.39.15.00.23-r1: HP Unified Linux Driver (for samsung hardware)
@@ -1604,7 +1605,7 @@ net-wireless/rtl8723bu 9999: Driver for the rtl8723 wireless chipset
 net-wireless/rtl8821ce 0_pre20240326: Realtek RTL8821CE Driver module for Linux kernel
 net-wireless/rtl8821cu 0_pre20240821: Realtek 8821CU/RTL8811CU module for Linux kernel
 net-wireless/sdrpp 1.2.0_pre20240607: Cross-Platform SDR Software
-phosh-base/pfs 0.0.3: Phosh File Selector library for selecting files
+phosh-base/pfs 0.0.3 0.0.4: Phosh File Selector library for selecting files
 phosh-base/phosh 0.42.0 0.47.0: Meta package for Phosh, merge this package to install
 phosh-base/phosh-mobile-settings 0.42.0 0.43.0 0.47.0: Phosh and related settings for mobile
 phosh-base/phosh-osk-stub 0.42.0 0.47.0: Alternative on screen keyboard for Phosh

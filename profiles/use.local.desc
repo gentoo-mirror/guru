@@ -181,6 +181,7 @@ dev-python/guidata:pyqt5 - Use dev-python/pyqt5 as Qt for Python implementation
 dev-python/guidata:pyqt6 - Use dev-python/pyqt6 as Qt for Python implementation
 dev-python/ptpython:black - Add support for dev-python/black. Black not always possible on PyPy
 dev-python/ptpython:ipython - Add support for dev-python/ipython for ptipython
+dev-python/pydantic-settings:aws - Enable Amazon AWS Secrets Manager support
 dev-python/pydantic-settings:yaml - Enable YAML support
 dev-python/pyfiglet:contrib - Install fonts that don't have a clear license
 dev-python/pyrime:prompt-toolkit - Add support for dev-python/prompt-toolkit
@@ -357,6 +358,20 @@ gui-apps/nwg-launchers:dmenu - Installs nwgdmenu, GTK dynamic menu windows.
 gui-apps/nwg-launchers:grid - Installs nwggrid, a GNOME-like application grid.
 gui-apps/nwg-launchers:layershell - Enable Wayland layer shell support
 gui-apps/openrefine:commons - Download and install plugin for Wikimedia Commons
+gui-apps/quickshell:breakpad - Enable Google's dev-util/breakpad crash reporter
+gui-apps/quickshell:hyprland - Enable gui-wm/hyprland specific integrations
+gui-apps/quickshell:hyprland-focus-grab - Enables windows to grab focus on gui-wm/hyprland through the hyprland-focus-grab-v1 protocol
+gui-apps/quickshell:hyprland-global-shortcuts - Enable creation of global shortcuts under gui-wm/hyprland through the hyprland-global-shortcuts-v1 protocol
+gui-apps/quickshell:i3 - Enable x11-wm/i3 and gui-wm/sway specific features
+gui-apps/quickshell:i3-ipc - Enable interfacing with x11-wm/i3 and gui-wm/sway's IPC
+gui-apps/quickshell:layer-shell - Enable wlroots layershell integration through the zwlr-layer-shell-v1 protocol
+gui-apps/quickshell:mpris - Enable access to MPRIS compatible media players using its dbus protocol
+gui-apps/quickshell:pipewire - Enable viewing and management of media-video/pipewire nodes
+gui-apps/quickshell:screencopy - Enable streaming video from monitors and toplevel windows through various protocols
+gui-apps/quickshell:session-lock - Enable session lock support through the ext-session-lock-v1 protocol
+gui-apps/quickshell:sockets - Enable Unix Sockets (WARNING: Disabling is unsafe!)
+gui-apps/quickshell:toplevel-management - Enable management of windows through zwlr-foreign-toplevel-management-v1 protocol
+gui-apps/quickshell:tray - Enable system tray support using the status notifier dbus protocol
 gui-apps/rofi-wayland:drun - Desktop file mode
 gui-apps/rofi-wayland:windowmode - Window switcher mode
 gui-apps/sfwbar:bluetooth - Enable support for bluetooth with the bluez module

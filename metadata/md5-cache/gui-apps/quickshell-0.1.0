@@ -1,0 +1,15 @@
+BDEPEND=|| ( >=sys-devel/gcc-14:* >=llvm-core/clang-17:* ) dev-build/cmake dev-build/ninja virtual/pkgconfig dev-cpp/cli11 dev-util/spirv-tools dev-qt/qtshadertools:6 breakpad? ( dev-util/breakpad ) wayland? ( dev-util/wayland-scanner dev-libs/wayland-protocols ) app-alternatives/ninja >=dev-build/cmake-3.20.5
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=dev-qt/qtbase:6 dev-qt/qtsvg:6 jemalloc? ( dev-libs/jemalloc ) wayland? ( dev-libs/wayland dev-qt/qtwayland:6 ) screencopy? ( x11-libs/libdrm media-libs/mesa ) X? ( x11-libs/libxcb ) pipewire? ( media-video/pipewire ) mpris? ( dev-qt/qtdbus ) pam? ( sys-libs/pam )
+DESCRIPTION=Toolkit for building desktop widgets using QtQuick
+EAPI=8
+HOMEPAGE=https://quickshell.outfoxxed.me/
+INHERIT=cmake
+IUSE=+breakpad +jemalloc +sockets +wayland +layer-shell +session-lock +toplevel-management +screencopy +X +pipewire +tray +mpris +pam +hyprland +hyprland-global-shortcuts +hyprland-focus-grab +i3 +i3-ipc
+KEYWORDS=~amd64
+LICENSE=LGPL-3
+RDEPEND=dev-qt/qtbase:6 dev-qt/qtsvg:6 jemalloc? ( dev-libs/jemalloc ) wayland? ( dev-libs/wayland dev-qt/qtwayland:6 ) screencopy? ( x11-libs/libdrm media-libs/mesa ) X? ( x11-libs/libxcb ) pipewire? ( media-video/pipewire ) mpris? ( dev-qt/qtdbus ) pam? ( sys-libs/pam )
+SLOT=0
+SRC_URI=https://github.com/quickshell-mirror/quickshell/archive/refs/tags/v0.1.0.tar.gz -> quickshell-0.1.0.tar.gz
+_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	b892042b2667b8ac69ec8a2571dc290a	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	02a4b2b45c23260fb969448904a8d9d9
+_md5_=5ad6d9a7344cd9f36df27a12c73ef03d
