@@ -112,7 +112,7 @@ app-admin/terragrunt-bin 0.38.6 0.45.4 0.50.8: A thin wrapper for Terraform
 app-admin/tflint 0.58.0: Terraform linter
 app-alternatives/phosh-keyboard 0 1: sm.puri.OSK0.desktop symlinks
 app-arch/fuse-archive 0.1.14 1.6 1.10 1.12: Read-only FUSE file system for mounting archives and compressed files
-app-arch/libarchive-qt 2.0.8: Qt based archiving solution with libarchive backend
+app-arch/libarchive-qt 2.0.8-r1: Qt based archiving solution with libarchive backend
 app-arch/libzim 9.2.1-r1: ZIM file format: an offline storage solution for content coming from the Web
 app-arch/microtar 0.1.0: A lightweight tar library written in ANSI C
 app-arch/nix-compress 0.3.0: Modern implementation of the ancient unix compress(1) tool
@@ -128,7 +128,7 @@ app-backup/pika-backup 0.7.4-r1: Keep your data safe
 app-backup/restic-browser 0.3.2_p20250523 0.3.2_p20250523-r1: A GUI to browse and restore from restic backup repositories
 app-backup/timeshift 23.07.1: A system restore utility for Linux
 app-backup/timeshift-autosnap 0.9-r1: Automatically creates a timeshift-snapshot when executed
-app-benchmarks/kdiskmark 3.1.4-r1: Disk benchmarking tool
+app-benchmarks/kdiskmark 3.2.0: Disk benchmarking tool
 app-benchmarks/occt-bin 14.0.13: All-in-one stability, stress test, benchmark and monitoring tool
 app-benchmarks/phoronix-test-suite 10.8.4 9999: Phoronix's comprehensive, cross-platform testing and benchmark suite
 app-benchmarks/poop 0.5.0 9999: Performance Optimizer Observation Platform
@@ -138,7 +138,7 @@ app-containers/arachsys-containers 1.7: Simple containers using Linux user names
 app-containers/kind 0.27.0: Kind is a tool for running local Kubernetes clusters using Docker
 app-containers/pods 2.1.0_pre20240215-r4 2.1.2: Keep track of your podman containers
 app-containers/slim 1.40.11: Inspect, optimize and debug containers
-app-containers/waydroid 1.4.3 1.4.3-r1 1.5.1 1.5.2: Container-based approach to boot a full Android system on Linux systems
+app-containers/waydroid 1.4.3 1.4.3-r1 1.5.1 1.5.2 1.5.3: Container-based approach to boot a full Android system on Linux systems
 app-containers/waydroid-images 9999: Manage images for app-containers/waydroid using portage
 app-crypt/PBinCLI 0.3.5-r1: PBinCLI is a command line client for PrivateBin written in Python 3
 app-crypt/autofirma 1.8.2 1.8.3-r1: Spanish government's electronic signature application for online procedures
@@ -489,13 +489,13 @@ dev-embedded/bcm2-utils 0.9.8: Utilities for Broadcom-based cable modems
 dev-embedded/esp-coredump 1.11.0 1.13.1: Utility that helps users to retrieve and analyse core dumps
 dev-embedded/esp-idf 5.3.2 5.3.3 5.4-r1 5.4.1: Espressif IoT Development Framework
 dev-embedded/esp-idf-kconfig 2.4.1 2.5.0: Kconfig tooling for esp-idf
-dev-embedded/esp-idf-monitor 1.5.0 1.6.0: Python object-oriented database
-dev-embedded/esp-idf-nvs-partition-gen 0.1.4 0.1.6: Parses ESP-IDF panic handler output acts as a GDB server over stdin/stdout
+dev-embedded/esp-idf-monitor 1.5.0 1.6.0 1.6.2: Python object-oriented database
+dev-embedded/esp-idf-nvs-partition-gen 0.1.6 0.1.9: Parses ESP-IDF panic handler output acts as a GDB server over stdin/stdout
 dev-embedded/esp-idf-panic-decoder 1.2.1-r1 1.3.0: Parses ESP-IDF panic handler output acts as a GDB server over stdin/stdout
-dev-embedded/esp-idf-size 1.6.1: Firmware size analysis for ESP-IDF
+dev-embedded/esp-idf-size 1.6.1 1.7.1: Firmware size analysis for ESP-IDF
 dev-embedded/freertos-gdb 1.0.3 1.0.4: Python module for operating with freeRTOS-kernel objects in GDB
 dev-embedded/fwup 1.12.0 1.13.0: Configurable embedded Linux firmware update creator and runner
-dev-embedded/idf-component-manager 2.0.4 2.1.1 2.1.2: Tool for installing ESP-IDF components
+dev-embedded/idf-component-manager 2.1.2 2.2.2: Tool for installing ESP-IDF components
 dev-embedded/mv88e6xxx-dump 0.2.0_pre20210327: Dump information about Marvell mv88e6xxx Ethernet switches
 dev-embedded/nxp-gui-guider 1.7.2-r1: GUI Guider is a user-friendly GUI development tool for LVGL
 dev-embedded/pico-sdk 2.1.1: Libraries and tools for C/C++ development on RP2040 and RP2350 microcontrollers.
@@ -512,13 +512,13 @@ dev-games/surgescript 0.5.5 9999: scripting language made for opensurge
 dev-games/unityhub 3.9.1 3.10.0 3.11.0 3.11.1: Official Unity tool for managing Unity Engines and projects
 dev-go/get-ego-vendor 0.2.0: Utility to generate EGO_SUM data for ebuilds
 dev-go/staticcheck 0.3.3 9999: The advanced Go linter
-dev-hare/hare-compress 9999: Compression algorithms for Hare
+dev-hare/hare-compress 0.25.2.0 9999: Compression algorithms for Hare
 dev-hare/hare-iobus 9999: An asyncronous I/O abstraction for Hare
-dev-hare/hare-json 0.24.2 9999: JSON support for Hare
+dev-hare/hare-json 0.24.2 0.25.2.0 9999: JSON support for Hare
 dev-hare/hare-linux 9999: Extra Linux support for Hare programs
 dev-hare/hare-png 9999: PNG implementation for Hare
 dev-hare/hare-ssh 0.24.2 0.25.2 9999: SSH library for Hare
-dev-hare/hare-xml 0_pre20231231 9999: XML support for Hare
+dev-hare/hare-xml 0_pre20231231 0.25.2.0 9999: XML support for Hare
 dev-java/corretto-bin 8.412.08.1 11.0.23.9.1 17.0.11.9.1 21.0.3.9.1 22.0.1.8.1: Prebuilt Java JDK binaries provided by Amazon Web Services
 dev-java/microsoft-openjdk-bin 11.0.22 17.0.10 21.0.2: Prebuilt Java JDK binaries provided by Microsoft
 dev-lang/cc65 2.19-r3 9999-r1: Cross-development package for 65(C)02 systems
@@ -1042,7 +1042,7 @@ games-fps/assaultcube 1.3.0.2-r1: Free multiplayer FPS based on the Cube engine
 games-fps/crispy-doom 5.12.0 6.0: A limit-removing enhanced-resolution Doom source port based on Chocolate Doom
 games-fps/etlegacy 2.82.0 2.83.2: Wolfenstein: Enemy Territory 2.60b compatible client/server
 games-fps/openspades 0.1.3: Open-source voxel FPS
-games-fps/quakespasm 0.94.1-r1 9999: Modern, cross-platform Quake 1 engine based on FitzQuake
+games-fps/quakespasm 0.94.1-r1 0.96.3 9999: A modern, cross-platform Quake game engine based on FitzQuake
 games-fps/the-dark-mod-bin 2.12-r1: Inspired by Thief on Doom 3 libre engine (id Tech 4)
 games-misc/asciiquarium 1.1_p20120823: Asciiquarium is an aquarium/sea animation in ASCII art
 games-misc/cbonsai 1.3.1-r1: grow bonsai trees in your terminal
@@ -1449,7 +1449,7 @@ net-im/Quaternion 0.0.97.1: A Qt-based IM client for Matrix
 net-im/WasIstLos 1.6.5 1.7.0: An unofficial WhatsApp desktop application for Linux
 net-im/abaddon 0.2.1 9999: Alternative Discord client using GTK instead of Electron
 net-im/axolotl-bin 2.0.1: Axolotl is a cross-platform Signal client
-net-im/beeper 4.0.732 4.0.747: Beeper: Unified Messenger
+net-im/beeper 4.0.747 4.0.779: Beeper: Unified Messenger
 net-im/chatterino 2.5.2-r1 2.5.3: Chat client for https://twitch.tv
 net-im/conduit 0.9.0-r1 0.10.3 0.10.4 9999: Matrix homeserver written in Rust
 net-im/discord-canary-bin 0.0.643: All-in-one voice and text chat
@@ -1627,7 +1627,7 @@ sci-electronics/coil64 2.1.27: Coil64 is inductance coil calculator
 sci-electronics/dsview 1.3.0 1.3.2 9999: An open source multi-function instrument
 sci-electronics/kactus2 3.13.3 9999: A open source IP-XACT-based tool
 sci-electronics/liblxi 1.20: Implementation of the LAN eXtensions for Instrumentation (LXI)
-sci-electronics/logic-bin 2.4.14: Saleae logic analyzer
+sci-electronics/logic-bin 2.4.14 2.4.29: Saleae logic analyzer
 sci-electronics/lxi-tools 2.7: Tools to access devices with LXI
 sci-electronics/qucs-s 25.1.2: Quite universal circuit simulator with SPICE
 sci-electronics/slang 8.1 9999: SystemVerilog compiler and language services

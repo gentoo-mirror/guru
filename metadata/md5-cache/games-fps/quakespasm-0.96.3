@@ -1,14 +1,15 @@
-BDEPEND=virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
-DEFINED_PHASES=compile install postinst unpack
+BDEPEND=virtual/pkgconfig
+DEFINED_PHASES=compile install postinst
 DEPEND=media-libs/libsdl2[opengl] media-libs/libglvnd flac? ( media-libs/flac:= ) mikmod? ( media-libs/libmikmod ) modplug? ( media-libs/libmodplug ) mp3? ( media-sound/mpg123 ) opus? ( media-libs/opusfile ) vorbis? ( media-libs/libvorbis )
 DESCRIPTION=A modern, cross-platform Quake game engine based on FitzQuake
 EAPI=8
 HOMEPAGE=https://quakespasm.sourceforge.net/
-INHERIT=git-r3 desktop eapi9-ver
+INHERIT=desktop eapi9-ver
 IUSE=flac mikmod modplug mp3 opus vorbis
+KEYWORDS=~amd64
 LICENSE=GPL-2+
-PROPERTIES=live
 RDEPEND=media-libs/libsdl2[opengl] media-libs/libglvnd flac? ( media-libs/flac:= ) mikmod? ( media-libs/libmikmod ) modplug? ( media-libs/libmodplug ) mp3? ( media-sound/mpg123 ) opus? ( media-libs/opusfile ) vorbis? ( media-libs/libvorbis )
 SLOT=0
-_eclasses_=git-r3	875eb471682d3e1f18da124be97dcc81	desktop	3a72ffe0d8e1dd73af3a1c8c15a59fed	eapi9-ver	6a71fa30cdb3fe445114fdeab156c1f0
-_md5_=f2799eff2af8a9a73c4ea50c85cbc8bb
+SRC_URI=https://download.sourceforge.net/quakespasm/Source/quakespasm-0.96.3.tar.gz
+_eclasses_=desktop	3a72ffe0d8e1dd73af3a1c8c15a59fed	eapi9-ver	6a71fa30cdb3fe445114fdeab156c1f0
+_md5_=28d6607a1a135b672b205924a73999a3
