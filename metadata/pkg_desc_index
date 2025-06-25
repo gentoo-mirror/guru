@@ -138,7 +138,7 @@ app-containers/arachsys-containers 1.7: Simple containers using Linux user names
 app-containers/kind 0.27.0: Kind is a tool for running local Kubernetes clusters using Docker
 app-containers/pods 2.1.0_pre20240215-r4 2.1.2: Keep track of your podman containers
 app-containers/slim 1.40.11: Inspect, optimize and debug containers
-app-containers/waydroid 1.4.3 1.4.3-r1 1.5.1 1.5.2 1.5.3: Container-based approach to boot a full Android system on Linux systems
+app-containers/waydroid 1.5.2 1.5.4: Container-based approach to boot a full Android system on Linux systems
 app-containers/waydroid-images 9999: Manage images for app-containers/waydroid using portage
 app-crypt/PBinCLI 0.3.5-r1: PBinCLI is a command line client for PrivateBin written in Python 3
 app-crypt/autofirma 1.8.2 1.8.3-r1: Spanish government's electronic signature application for online procedures
@@ -351,7 +351,7 @@ app-text/code-minimap 0.6.8: A high performance code minimap generator
 app-text/dooit 3.1.0: A TUI todo manager
 app-text/epubgrep 0.6.2: Search tool for EPUB e-books
 app-text/ford 6.2.5 7.0.8-r1 7.0.9-r1 7.0.10 7.0.11: FORD, automatic documentation generator for modern Fortran programs
-app-text/harper 0.40.0: The language checker for developers.
+app-text/harper 0.44.0: The language checker for developers.
 app-text/jrnl 4.1 4.2: Collect your thoughts and notes without leaving the command line
 app-text/klogg 22.06.0.1289-r1: A GUI application to browse and search through long and complex log files
 app-text/komikku 1.78.0: Manga reader for GNOME
@@ -367,7 +367,7 @@ app-text/sioyek 9999: Sioyek is a PDF viewer with a focus on textbooks and resea
 app-text/smu 1.5 9999: Simple markup - markdown like syntax
 app-text/texlab 5.22.1: LaTeX Language Server
 app-text/the-platinum-searcher-bin 2.2.0: Fast CLI search tool, faster than grep, ack, silver_searcher (ag)
-app-text/tinymist 0.13.12 9999: An integrated language service for Typst.
+app-text/tinymist 0.13.14 9999: An integrated language service for Typst.
 app-text/tldr 3.3.0 3.4.1: Python command line client for tldr pages
 app-text/typst 0.13.1 9999: A markup-based typesetting system for the sciences
 app-text/typstyle 0.13.5: A beautiful and reliable code formatter for Typst
@@ -435,7 +435,7 @@ dev-cpp/trantor 1.5.19 1.5.20: Non-blocking I/O tcp network lib based on c++14/1
 dev-cpp/trompeloeil 47: Header only C++14 mocking framework
 dev-cpp/units 2.3.3 2.3.4: A compile-time, header-only, dimensional analysis and unit conversion library
 dev-cpp/workflow 0.10.2-r1 0.10.3 0.10.5 9999: C++ Parallel Computing and Asynchronous Networking Engine
-dev-cpp/wt 4.11.2 4.11.3 4.11.4: Wt, C++ Web Toolkit
+dev-cpp/wt 4.11.3 4.11.4 4.11.4-r1: Wt, C++ Web Toolkit
 dev-cpp/xtensor 0.26.0: header-only C++ library for numerical analysis with multi-dimensional arrays
 dev-cpp/xtl 0.8.0: Algorithms and containers used by the xtensor stack and the xeus stack
 dev-crystal/athena-negotiation 0.1.5 0.2.0: Framework agnostic content negotiation library
@@ -699,7 +699,7 @@ dev-python/dropbox 12.0.2: The offical Dropbox SDK for Python
 dev-python/dtreeviz 2.2.2: A python library for decision tree visualization and model interpretation
 dev-python/evernote2 1.0.3 9999: Unofficial Evernote SDK for Python 3
 dev-python/exif 1.6.0: Read and modify image EXIF metadata using Python.
-dev-python/fastapi 0.115.12-r1: FastAPI framework, high performance, easy to learn, ready for production
+dev-python/fastapi 0.115.12-r1 0.115.13: FastAPI framework, high performance, easy to learn, ready for production
 dev-python/find-libpython 0.4.0: Finds the libpython associated with the current Python environment
 dev-python/flask-restx 1.3.0: Framework API development with Flask
 dev-python/flask-socketio 5.5.1: Socket.IO integration for Flask applications.
@@ -1345,7 +1345,7 @@ media-sound/deep-filter 0.5.6-r2: Noise supression using deep filtering
 media-sound/drumgizmo 0.9.20 9999: Cross-platform drum plugin and stand-alone application
 media-sound/dzr 240909: DZR: the command line deezer.com player
 media-sound/eartag 0.5.0 0.5.1: GTK4 MusicBrainz audio tagger
-media-sound/fooyin 0.8.1 9999: A customizable music player, Qt clone of foobar2000
+media-sound/fooyin 0.8.1 0.8.1_p20250622 9999: A customizable music player, Qt clone of foobar2000
 media-sound/furnace 0.6 0.6.5-r1 0.6.7: a multi-system chiptune tracker compatible with DefleMask modules
 media-sound/gapless 4.3.1 4.4: A GTK4 music player
 media-sound/goxlr-utility 1.2.2 9999: A utility for monitoring and controlling a TC-Helicon GoXLR or GoXLR Mini
@@ -1353,7 +1353,7 @@ media-sound/jacktrip 2.4.0: Send JACK audio over a network
 media-sound/jriver 31.0.83: A cross-platform media center, famous for high quality of audio.
 media-sound/kew 2.4.4-r1: kew (/kjuː/) is a command-line music player for Linux.
 media-sound/listenbrainz-mpd 2.3.8-r2: ListenBrainz submission client for MPD
-media-sound/lms 3.65.0 3.66.0 3.66.1: Lightweight Music Server.
+media-sound/lms 3.66.0 3.66.1: Lightweight Music Server.
 media-sound/loudgain 0.6.8-r1 0.6.8_p20240128 0.6.8_p20240128-r2: Versatile ReplayGain 2.0 loudness normalizer
 media-sound/mopidy 3.4.2: An extensible music server written in Python.
 media-sound/mpd-mpris 0.3.1 0.4.0 0.4.1: An implementation of the MPRIS protocol for MPD.
@@ -1383,7 +1383,7 @@ media-sound/supersonic 0.15.2 0.16.0: A lightweight and full-featured cross-plat
 media-sound/tidal-hifi-bin 5.16.0-r1 5.17.0: Web version of Tidal running in electron with Hi-Fi support thanks to Widevine.
 media-sound/yewtube 2.12.0 9999: Terminal-based YouTube player and downloader
 media-sound/youtube-music-bin 3.6.2-r1 3.8.0: YouTube Music Desktop App bundled with custom plugins
-media-sound/zita-ajbridge 0.8.4 0.8.4-r1: zita-a2j and zita-j2a - bridges between ALSA and JACK
+media-sound/zita-ajbridge 0.8.4-r1 0.8.4-r2: zita-a2j and zita-j2a - bridges between ALSA and JACK
 media-video/avisynth+ 9999: A powerful nonlinear scripting language for video
 media-video/ciano 0.2.4-r2: A multimedia file converter focused on simplicity
 media-video/clapper 0.6.1 0.8.0: Modern and user-friendly media player
@@ -1544,7 +1544,7 @@ net-misc/purritobin 0.6.7 9999: minimalistic commandline pastebin
 net-misc/rpki-client 9.2 9.3: Portability shim for OpenBSD's rpki-client
 net-misc/smcroute 2.5.7: A static multicast routing daemon
 net-misc/sshx 0.2.4: A secure web-based, collaborative terminal.
-net-misc/toot 0.38.1-r1: toot - Mastodon CLI & TUI
+net-misc/toot 0.38.1-r1 0.48.1: toot - Mastodon CLI & TUI
 net-misc/warp 0.9.2: Fast and secure file transfer
 net-misc/wayback_machine_downloader 2.3.0 2.3.1: Download an entire website from the Wayback Machine
 net-misc/whatscli 1.0.6 1.0.11: A command line interface for WhatsApp
@@ -1592,7 +1592,7 @@ net-vpn/GlobalProtect-openconnect 2.4.4-r1: Unofficial GlobalProtect VPN client 
 net-vpn/cloudflare-warp 2025.4.943.0: Cloudflare Warp Client
 net-vpn/fastd 22 23: A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
 net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that require SAML
-net-vpn/mullvadvpn-app 2025.6 2025.7_beta1: Tool used to manage daemon setup
+net-vpn/mullvadvpn-app 2025.7: Tool used to manage daemon setup
 net-vpn/proton-vpn-gtk-app 4.9.6-r2: Proton VPN GTK app
 net-wireless/airspyhf 1.6.8: User mode driver for Airspy HF+
 net-wireless/bluetuith 0.2.1 0.2.2 0.2.3 9999: A TUI bluetooth manager for Linux written in Go
@@ -1671,7 +1671,7 @@ sci-mathematics/rink 0.8.0-r1 9999: Unit conversion tool, similar to frink
 sci-mathematics/rstudio-desktop-bin 2023.09.1_p494 2024.12.0_p467 2024.12.0_p467-r1: IDE for R and Python
 sci-misc/boinc-wrapper 26018-r2 26018-r3: Wrapper to use non-BOINC apps with BOINC
 sci-misc/llama-cpp 0_pre4576 0_pre4848 0_pre5097 0_pre5332 0_pre5633-r1 9999: Port of Facebook's LLaMA model in C/C++
-sci-ml/ollama 0.7.1 0.8.0 0.9.0 9999: Get up and running with Llama 3, Mistral, Gemma, and other language models.
+sci-ml/ollama 0.7.1 0.8.0 0.9.0 0.9.1 0.9.2 9999: Get up and running with Llama 3, Mistral, Gemma, and other language models.
 sci-physics/openmodelica 1.24.0-r1: Open-source Modelica-based modeling and simulation environment
 sci-physics/ovito 3.10.4 3.10.5 3.10.5-r1: Open Visualization Tool
 sec-keys/openpgp-keys-aepaneshnikov 20221210: OpenPGP keys used by Alexander Epaneshnikov
@@ -1693,9 +1693,9 @@ sys-apps/bat-extras 2023.09.19-r2 9999: Bash scripts that integrate bat with var
 sys-apps/bpftune 9999: bpftune uses BPF to auto-tune Linux systems
 sys-apps/bustd 0.1.1: Process killer daemon for out-of-memory scenarios
 sys-apps/colortail 0.3.3 9999: tail command with colors
-sys-apps/coolercontrol 2.1.0 2.2.0 2.2.1: Monitor and control your cooling and other devices
-sys-apps/coolercontrol-liqctld 2.1.0 2.2.0 2.2.1: Monitor and control your cooling and other devices (liqctld)
-sys-apps/coolercontrold 2.1.0 2.2.0 2.2.1: Monitor and control your cooling and other devices (daemon)
+sys-apps/coolercontrol 2.2.1: Monitor and control your cooling and other devices
+sys-apps/coolercontrol-liqctld 2.2.1: Monitor and control your cooling and other devices (liqctld)
+sys-apps/coolercontrold 2.2.1: Monitor and control your cooling and other devices (daemon)
 sys-apps/corefreq 1.96.3: CPU monitoring software designed for the 64-bits Processors, like top
 sys-apps/dnf5 5.2.12.0 5.2.13.1: Command-line package manager
 sys-apps/dool 1.3.1-r1 1.3.2-r2 9999: Versatile replacement for vmstat, iostat and ifstat (clone of dstat)
@@ -1733,7 +1733,7 @@ sys-block/ublksrv 1.4: Userspace block device driver
 sys-boot/customrescuecd-x86_64-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/drbl 5.4.2: Diskless Remote Boot in Linux
 sys-boot/grml-rescueboot 0.6.1: grub2 script to add ISO images to the grub2 boot menu
-sys-boot/limine 9.3.0 9.3.2: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
+sys-boot/limine 9.3.0 9.3.2 9.3.4: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
 sys-boot/mkusb 23.2.0: CLI and GUI for creating bootable live USB, with optional persistent storage
 sys-boot/ventoy-bin 1.0.97 1.0.98: Creator of bootable USBs, with ability to copy ISOs, persistence storage
 sys-boot/zfsbootmenu 1.12.0 2.2.2 2.3.0: ZFS bootloader for root-on-ZFS systems
