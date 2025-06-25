@@ -15,22 +15,24 @@ KEYWORDS="~amd64"
 IUSE="doc mysql opengl +pango pdf postgres ssl"
 
 DEPEND="
+	dev-qt/qtbase:6
+	<=dev-libs/boost-1.86.0:=
+	media-libs/libharu
+	media-gfx/graphicsmagick[jpeg,png]
+	sys-libs/zlib
+
 	mysql? ( virtual/mysql )
 	opengl? ( virtual/opengl )
 	pango? ( x11-libs/pango )
 	postgres? ( dev-db/postgresql )
 	ssl? ( dev-libs/openssl )
-	<=dev-libs/boost-1.86.0:=
-	media-libs/libharu
-	media-gfx/graphicsmagick[jpeg,png]
-	sys-libs/zlib
 "
 RDEPEND="${DEPEND}"
 
 BDEPEND="
 	doc? (
 		app-text/doxygen[dot]
-		dev-qt/qttools[qdoc]
+		dev-qt/qttools:6[qdoc]
 	)
 "
 
