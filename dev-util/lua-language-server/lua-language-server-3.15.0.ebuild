@@ -27,7 +27,7 @@ BDEPEND="
 RESTRICT="!test? ( test )"
 PATCHES=(
 	"${FILESDIR}/linux.ninja.patch"
-	"${FILESDIR}/build.ninja.patch"
+	"${FILESDIR}/${PV}-build.ninja.patch"
 	"${FILESDIR}/${PN}-3.10.5-uint32_t-fix.patch"
 )
 
@@ -60,7 +60,7 @@ src_compile() {
 		-e "s/^ar =.*./ar = REPLACE_AR/" \
 		build/build.ninja || die
 
-	eapply "${FILESDIR}/build.ninja.patch"
+	eapply "${FILESDIR}/${PV}-build.ninja.patch"
 	eapply "${FILESDIR}/${PN}-3.10.5-uint32_t-fix.patch"
 	sed -i -e "s/REPLACE_ME/$(tc-getCC)/" \
 		-e "s/REPLACE_AR/$(tc-getAR)/" \

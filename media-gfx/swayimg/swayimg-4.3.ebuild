@@ -12,7 +12,7 @@ SRC_URI="https://github.com/artemsen/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="avif bash-completion exif exr gif heif jpeg jpegxl png raw sixel svg +sway test tiff webp X"
+IUSE="avif bash-completion exif exr gif heif jpeg jpegxl png raw sixel svg test tiff +wayland webp X"
 RESTRICT="!test? ( test )"
 
 RDEPEND="
@@ -36,8 +36,8 @@ RDEPEND="
 		gnome-base/librsvg:2
 		x11-libs/cairo[X=]
 	)
-	sway? ( dev-libs/json-c:= )
 	tiff? ( media-libs/tiff:= )
+	wayland? ( dev-libs/json-c:= )
 	webp? ( media-libs/libwebp:= )
 "
 DEPEND="${RDEPEND}
@@ -62,15 +62,22 @@ src_configure() {
 		$(meson_feature raw)
 		$(meson_feature sixel)
 		$(meson_feature svg)
-		$(meson_feature sway)
 		$(meson_feature test tests)
 		$(meson_feature tiff)
+		$(meson_feature wayland compositor)
 		$(meson_feature webp)
 		$(meson_feature bash-completion bash)
 		-Dversion=${PV}
 		-Ddesktop=true
-		-Dman=true
+		# avoid automagic building with scdoc
+		-Dman=false
 		-Dzsh=enabled
 	)
 	meson_src_configure
+}
+
+src_install() {
+	meson_src_install
+
+	doman extra/*.{1,5}
 }
