@@ -1,4 +1,4 @@
-BDEPEND=test? ( >=dev-python/lxml-5.3.0[python_targets_python3_12(-)?,python_targets_python3_13(-)?] >=dev-python/pytest-7.4.4[python_targets_python3_12(-)?,python_targets_python3_13(-)?] ) python_targets_python3_12? ( dev-lang/python:3.12 ) python_targets_python3_13? ( dev-lang/python:3.13 ) >=dev-python/gpep517-16[python_targets_python3_12(-)?,python_targets_python3_13(-)?] >=dev-python/poetry-core-2.1.1[python_targets_python3_12(-)?,python_targets_python3_13(-)?]
+BDEPEND=test? ( >=dev-python/lxml-5.3.0[python_targets_python3_12(-)?,python_targets_python3_13(-)?] >=dev-python/pytest-7.4.4[python_targets_python3_12(-)?,python_targets_python3_13(-)?] ) python_targets_python3_12? ( dev-lang/python:3.12 ) python_targets_python3_13? ( dev-lang/python:3.13 ) >=dev-python/gpep517-16[python_targets_python3_12(-)?,python_targets_python3_13(-)?] >=dev-python/hatchling-1.27.0[python_targets_python3_12(-)?,python_targets_python3_13(-)?]
 DEFINED_PHASES=compile configure install prepare test
 DESCRIPTION=Python library for OpenDocument format (ODF)
 EAPI=8
@@ -11,6 +11,6 @@ RDEPEND=>=dev-python/lxml-5.3.0[python_targets_python3_12(-)?,python_targets_pyt
 REQUIRED_USE=|| ( python_targets_python3_12 python_targets_python3_13 )
 RESTRICT=!test? ( test )
 SLOT=0
-SRC_URI=https://github.com/jdum/odfdo/archive/refs/tags/v3.13.3.tar.gz -> odfdo-3.13.3.gh.tar.gz
+SRC_URI=https://github.com/jdum/odfdo/archive/refs/tags/v3.14.4.tar.gz -> odfdo-3.14.4.gh.tar.gz
 _eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	b892042b2667b8ac69ec8a2571dc290a	out-of-source-utils	dbf9e34ee8964084651e25907fa8f52c	multibuild	4650a65187015567b4e041bb9bfdb364	multilib	b2a329026f2e404e9e371097dda47f96	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	5ffe8ec396a751540949b565de0f048c	python-r1	0e15b2ab9cfc87d7474678201d6bca38	distutils-r1	be1082db72eb0381081ef946a26e3a71
-_md5_=56f3f79d13e1d8c2385faa3a1c4ff85d
+_md5_=af5f2a82c743f291b98b8c8109394391

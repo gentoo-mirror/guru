@@ -104,7 +104,9 @@ dev-cpp/drogon:yaml - Add support for yaml config file
 dev-cpp/sprout:texconv - Install texconv from subproject compost
 dev-cpp/sprout:wavconv - Install texconv from subproject darkroom
 dev-cpp/trantor:spdlog - enable dev-libs/spdlog logging backend
-dev-cpp/wt:pango - Enable x11-libs/pango, wich is used for improved font support (WPdfImage and WRasterImage)
+dev-cpp/wt:graphicsmagick - Enable media-gfx/graphicsmagick, which is used for creating raster images (WRasterImage)
+dev-cpp/wt:pango - Enable x11-libs/pango, which is used for improved font support (WPdfImage and WRasterImage)
+dev-cpp/wt:wttest - Build Wt::Test for automated (integration/unit) tests
 dev-cpp/xtensor:openmp - Enable parallel assignment loop using OpenMP
 dev-cpp/xtensor:tbb - Enable parallel assignment loop using dev-cpp/tbb
 dev-db/limbo:uring - Use uring I/O backend
@@ -529,7 +531,6 @@ media-gfx/nsxiv:statusbar - Add statusbar support
 media-gfx/swayimg:exr - Enable support for EXR image format
 media-gfx/swayimg:jpegxl - Enable support for JPEG XL image format
 media-gfx/swayimg:sixel - Enable support for Sixel image format
-media-gfx/swayimg:sway - Enable Sway WM integration
 media-gfx/swayimg:wayland - Integration with Wayland compositors (Sway and Hyprland only)
 media-gfx/vpuppr:ifm-tracker - Enable the iFacialMocap tracker.
 media-gfx/vpuppr:meowface-tracker - Enable the MeowFace tracker.
@@ -577,7 +578,10 @@ media-sound/6pm:midimaps - Install midi maps for that synth. Recommended
 media-sound/6pm:nls - Add support for localization
 media-sound/6pm:presets - Install presets. Recommended
 media-sound/add64:presets - Install presets. Recommended
+media-sound/drumgizmo:cli - Build stand-alone CLI application
+media-sound/drumgizmo:jack - Enable jack output and jackmidi input (CLI only)
 media-sound/drumgizmo:lv2 - Build LV2 plugin
+media-sound/drumgizmo:midi - Enable midifile input via media-libs/libsmf (CLI only)
 media-sound/drumgizmo:vst - Build VST plugin
 media-sound/fooyin:archive - Build the libarchive input plugin using app-arch/libarchive
 media-sound/fooyin:openmpt - Build the OpenMPT input plugin using media-libs/libopenmpt
@@ -773,6 +777,7 @@ phosh-base/phosh-shell:test-full - Run integration tests
 sci-biology/cmdock:apidoc - Build API documentation using app-text/doxygen
 sci-biology/cmdock:boinc - Use CmDock with SiDock@home BOINC project
 sci-electronics/qucs-s:ngspice - Add support for ngspice backend (recommended simulation backend)
+sci-libs/poselib:benchmark - Build the benchmark binary.
 sci-mathematics/frama-c-aorai:eva - Build support for the Eva plugin
 sci-misc/llama-cpp:blis - Build a BLIS backend
 sci-misc/llama-cpp:hip - Build a HIP (ROCm) backend
