@@ -60,7 +60,7 @@ BDEPEND="
 
 PATCHES=(
 	"${FILESDIR}/${PN}-0.115.6-httpx-0.28-test-fix.patch"
-	"${FILESDIR}/${PN}-0.115.12-starlette-0.48.0.patch"
+	"${FILESDIR}/${PN}-0.115.14-starlette-bump.patch"
 )
 
 distutils_enable_tests pytest

@@ -6,7 +6,7 @@ EAPI=8
 DISTUTILS_USE_PEP517=pdm-backend
 PYTHON_COMPAT=( python3_{12..13} )
 
-inherit distutils-r1 optfeature pypi
+inherit distutils-r1 optfeature
 
 DESCRIPTION="FastAPI framework, high performance, easy to learn, ready for production"
 HOMEPAGE="
@@ -15,9 +15,16 @@ HOMEPAGE="
 	https://github.com/fastapi/fastapi
 "
 
+if [[ ${PV} == 9999 ]]; then
+	inherit git-r3
+	EGIT_REPO_URI="https://github.com/fastapi/fastapi.git"
+else
+	inherit pypi
+	KEYWORDS="~amd64"
+fi
+
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64"
 
 RDEPEND="
 	<dev-python/pydantic-3.0.0[${PYTHON_USEDEP}]
@@ -30,10 +37,11 @@ BDEPEND="
 	test? (
 		dev-python/aiosqlite[${PYTHON_USEDEP}]
 		>=dev-python/anyio-3.2.1[${PYTHON_USEDEP}]
+		dev-python/bcrypt[${PYTHON_USEDEP}]
 		dev-python/dirty-equals[${PYTHON_USEDEP}]
 		dev-python/email-validator[${PYTHON_USEDEP}]
 		>=dev-python/flask-1.1.2[${PYTHON_USEDEP}]
-		dev-python/inline-snapshot[${PYTHON_USEDEP}]
+		>=dev-python/inline-snapshot-0.21.1[${PYTHON_USEDEP}]
 		>=dev-python/jinja2-3.1.5[${PYTHON_USEDEP}]
 		dev-python/orjson[${PYTHON_USEDEP}]
 		<dev-python/passlib-2.0.0[${PYTHON_USEDEP}]
@@ -52,7 +60,7 @@ BDEPEND="
 
 PATCHES=(
 	"${FILESDIR}/${PN}-0.115.6-httpx-0.28-test-fix.patch"
-	"${FILESDIR}/${PN}-0.115.12-starlette-0.48.0.patch"
+	"${FILESDIR}/${PN}-0.115.14-starlette-bump.patch"
 )
 
 distutils_enable_tests pytest
@@ -63,6 +71,8 @@ EPYTEST_DESELECT=(
 	# Test result affected by unrelated packages such as brotli and zstd
 	# https://github.com/fastapi/fastapi/blob/7c6f2f8fde68f488163376c9e92a59d46c491298/tests/test_tutorial/test_header_param_models/test_tutorial001.py#L77
 	"tests/test_tutorial/test_header_param_models/test_tutorial001.py::test_header_param_model_invalid"
+	"tests/test_tutorial/test_header_param_models/test_tutorial003.py::test_header_param_model_invalid"
+	"tests/test_tutorial/test_header_param_models/test_tutorial003.py::test_header_param_model_no_underscore"
 	# https://gitweb.gentoo.org/repo/gentoo.git/commit/?id=6afa196ca0cb1604875847b1b84fa64896a06f6e
 	"tests/test_multipart_installation.py::test_incorrect_multipart_installed_form"
 	"tests/test_multipart_installation.py::test_incorrect_multipart_installed_file_upload"
@@ -75,10 +85,9 @@ EPYTEST_DESELECT=(
 	"tests/test_multipart_installation.py::test_no_multipart_installed_multi_form"
 	"tests/test_multipart_installation.py::test_no_multipart_installed_form_file"
 	"tests/test_multipart_installation.py::test_old_multipart_installed"
+	# Hangs with network-sandbox
+	"tests/test_tutorial/test_websockets/test_tutorial003_py39.py::test_websocket_handle_disconnection"
 
-	# formatting changes?
-	"tests/test_tutorial/test_header_param_models/test_tutorial003.py::test_header_param_model_no_underscore"
-	"tests/test_tutorial/test_header_param_models/test_tutorial003.py::test_header_param_model_invalid"
 )
 
 python_prepare_all() {
