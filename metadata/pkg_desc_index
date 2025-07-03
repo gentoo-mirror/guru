@@ -105,7 +105,7 @@ app-admin/pulumi-bin 3.167.0 3.171.0 3.175.0: Infrastructure as code in any prog
 app-admin/rbw 1.13.2 9999: Unofficial Bitwarden CLI
 app-admin/ripasso 0.7.0: A password manager that uses the file format of 'pass'
 app-admin/s-tui 1.1.6 1.2.0: Stress-Terminal UI monitoring tool
-app-admin/sudo-rs 0.2.6: A memory safe implementation of sudo and su.
+app-admin/sudo-rs 0.2.7: A memory safe implementation of sudo and su.
 app-admin/synadm 0.43.1 0.44: Command line admin tool for Synapse
 app-admin/talosctl-bin 1.7.6 1.9.5 1.10.1: Pre-compiled talosctl is an tool for interacting with the Talos API
 app-admin/terragrunt-bin 0.38.6 0.45.4 0.50.8: A thin wrapper for Terraform
@@ -234,6 +234,7 @@ app-misc/doublecmd 1.1.24 1.1.25 1.1.26: Cross Platform file manager
 app-misc/doublecmd-bin 1.1.26-r1 9999: Double Commander: file manager with two panels, similar to Total Commander
 app-misc/dpscreenocr 1.4.1: Program to recognize text on screen
 app-misc/dragon 1.1.1 1.1.1_p20210820 1.2.0: Simple drag-and-drop source/sink for X and Wayland
+app-misc/durdraw 0.29.0: Versatile ASCII and ANSI Art text editor for drawing
 app-misc/electricsheep 3.0.4_p20240213: Realize the collective dream of sleeping computers from all over the internet
 app-misc/far2l 2.6.4_beta 2.6.5_beta 9999: Linux port of FAR Manager v2
 app-misc/fetsh 1.8 1.9 9999: A fetch written in POSIX shell without any external commands
@@ -328,7 +329,7 @@ app-portage/quantum-resolver 9999: A WIP portage dependency resolver
 app-portage/showbuild 0.9.1-r1: Script to follow log of running portage builds
 app-portage/zig-ebuilder 9999: Semi-automatic generator for Zig ebuilds
 app-shells/carapace 1.3.3: Multi-shell multi-command argument completer
-app-shells/direnv 2.36.0 9999: Environment variable manager for shell
+app-shells/direnv 2.36.0 2.37.0 9999: Environment variable manager for shell
 app-shells/elvish 0.19.2 0.20.1 0.21.0: Expressive programming language and a versatile interactive shell
 app-shells/fre 0.4.1: A command line frecency tracking tool
 app-shells/fzf-fish 10.3: Augment your fish command line with fzf key bindings
@@ -416,7 +417,7 @@ dev-cpp/boxed-cpp 1.4.3: Boxing primitive types in C++
 dev-cpp/coeurl 0.3.0 0.3.1: A simple async wrapper around CURL for C++
 dev-cpp/cpp-jwt 1.5_pre20220727: JSON Web Token library for C++
 dev-cpp/cpprestsdk 2.10.19-r5: A Microsoft project for cloud-based client-server communication.
-dev-cpp/cpptrace 0.8.3 1.0.0 1.0.1 9999: Simple, portable, and self-contained stacktrace library for C++
+dev-cpp/cpptrace 1.0.0 1.0.1 1.0.2 9999: Simple, portable, and self-contained stacktrace library for C++
 dev-cpp/dpp 10.0.23 10.0.24 10.0.25 10.0.29 10.0.30 10.0.33: Lightweight C++ Discord bot library
 dev-cpp/drogon 1.9.5 1.9.6: C++14/17 based HTTP web application framework
 dev-cpp/fast_double_parser 0.8.0: Parse strings into double floating-point values
@@ -472,7 +473,6 @@ dev-crystal/webdrivers 0.4.3-r1: Helps manage drivers for Selenium, such as the 
 dev-crystal/webless 0.1.0 0.2.0: HTTP::Client for testing HTTP::Handlers directly and maintaining cookies
 dev-crystal/webmock 0.14.0: Mock HTTP client
 dev-db/libpg_query 16.5.1.0 17.6.0.0: C library for accessing the PostgreSQL parser outside of the server environment
-dev-db/limbo 0.0.19 0.0.22: The Limbo interactive SQL shell
 dev-db/pg_query_vala 0.1.0_pre20240326-r1 0.1.0_pre20241001: Thin wrapper around libpg_query to use with vala
 dev-db/pg_repack 1.5.0: Reorganize tables in PostgreSQL databases with minimal locks
 dev-db/psequel 0.2.0-r1: Run your SQL query
@@ -480,8 +480,9 @@ dev-db/rum 1.3.13-r1 1.3.14: RUM access method - inverted index with additional 
 dev-db/soci 4.0.3-r4 4.1.2: SOCI - The C++ Database Access Library
 dev-db/sqlcmd 1.8.3: The MSSQL SQLCMD CLI tool
 dev-db/tdscpp 20250301: C++ library to communicate with Microsoft SQL server
+dev-db/turso 0.0.22 0.1.1: Turso Database is an in-process OLTP database engine library with a CLI
 dev-debug/gdb-dashboard 0.17.3 0.17.4: Modular visual interface for GDB in Python
-dev-debug/gdbgui 0.15.2.0 0.15.2.0-r1: Browser-based frontend to gdb
+dev-debug/gdbgui 0.15.2.0 0.15.2.0-r1 0.15.3.0: Browser-based frontend to gdb
 dev-debug/lldb-mi 0.0.1 9999: LLDB Machine Interface Driver
 dev-dotnet/gtk-sharp 3.22.2-r2: gtk bindings for mono
 dev-elixir/hex 1.0.1-r1: Package manager for the Erlang VM
@@ -734,7 +735,7 @@ dev-python/itemadapter 0.11.0: Common interface for scrapy data container classe
 dev-python/itemloaders 1.3.2: Library to populate items using XPath and CSS with a convenient API
 dev-python/iuliia 0.13.0: Transliterate Cyrillic to Latin in every possible way
 dev-python/jinja2-cli 0.8.2: CLI for Jinja2
-dev-python/jplephem 2.21 2.22: Python version of NASA DE4xx ephemerides for Astronomical Alamanac
+dev-python/jplephem 2.22 2.23: Python version of NASA DE4xx ephemerides for Astronomical Alamanac
 dev-python/jpype 1.6.0: Bridge to allow Python programs full access to Java class libraries
 dev-python/json-schema-for-humans 1.3.4 1.4.1: Quickly generate HTML documentation from a JSON schema
 dev-python/json_exporter 1.0.2: Python-based library for exporting JSON data as metrics for Prometheus.
@@ -975,7 +976,7 @@ dev-util/pmbootstrap 3.0.0 3.3.1: Helper tool for developing and building postma
 dev-util/qshaderedit 0.1.5: Multiplatform shader editor inspired by Apple's OpenGL Shader Builder
 dev-util/quilttools 0.3-r1: Mailbox to quilt series converter
 dev-util/rexxd 2025.02.17: Drop-in replacement for the original xxd
-dev-util/riffdiff 3.3.10: A diff filter highlighting changed line parts
+dev-util/riffdiff 3.3.10 3.4.0: A diff filter highlighting changed line parts
 dev-util/rust-rover 2024.2.1-r1: A feature-rich Rust IDE with timely support by JetBrarins
 dev-util/rust-script 0.35.0-r1: Command-line tool to run Rust scripts which can make use of crates
 dev-util/rye 0.44.0: a Hassle-Free Python Experience
@@ -1005,7 +1006,7 @@ dev-vcs/gitqlient 1.6.2 1.6.3 9999: Multi-platform Git client written with Qt
 dev-vcs/gitqlient-gitserver-plugin 0.2.0: GitQlient GitServer plugin
 dev-vcs/gitqlient-jenkins-plugin 0.2.0: GitQlient Jenkins plugin
 dev-vcs/gitui 0.26.3 0.27.0: blazing fast terminal-ui for git
-dev-vcs/jj 0.29.0 0.30.0 9999: Jujutsu - an experimental version control system
+dev-vcs/jj 0.29.0 0.30.0 0.31.0 9999: Jujutsu - an experimental version control system
 dev-vcs/lazygit 0.50.0 0.51.1 0.52.0 9999: Simple terminal UI for git commands
 dev-vcs/lazyjj 0.5.0: TUI for Jujutsu/jj
 dev-vcs/pijul 1.0.0_beta9: A distributed version control system based on a theory of patches
@@ -1072,7 +1073,7 @@ games-strategy/zedonline-bin 0.3.2-r1: A remake of the 1996 classic game Z, with
 games-util/NotEnoughProduction 0.0.4: Tool for building production chains for modded minecraft
 games-util/ProtonUp-Qt 2.11.1 2.12.0 9999: Install and manage GE-Proton, Luxtorpeda & more for Steam Lutris and Heroic.
 games-util/chiaki-ng 1.9.5 9999: Client for PlayStation 4 and PlayStation 5 Remote Play
-games-util/curseforge 1.279.0_p26201: The CurseForge Electron App
+games-util/curseforge 1.281.2_p27023: The CurseForge Electron App
 games-util/dwarf-therapist 41.2.5 42.1.5: For managing dwarves in Dwarf Fortress
 games-util/gamehub 0.16.3.2-r2: GameHub is a unified library for all your games
 games-util/goverlay 1.2: Graphical UI to help manage Linux game overlays (MangoHud).
@@ -1337,7 +1338,7 @@ media-plugins/qt-jpegxl-image-plugin 9999: Qt plug-in to allow Qt and KDE based 
 media-plugins/whysynth 20170701_p20180323-r1: A software synthesizer plugin for the DSSI Soft Synth Interface
 media-radio/fllog 1.2.8: Logbook application for amateur radio use
 media-sound/6pm 0.9: 6PM is a polyphonic, touch-sensitive, realtime phase modulation synthesizer
-media-sound/Tauon 7.9.0 8.0.1 8.0.1-r1 9999: The desktop music player of today!
+media-sound/Tauon 8.0.1-r1 8.1.0 9999: The desktop music player of today!
 media-sound/add64 3.8.0 3.9.3: Add64 is a realtime additive/subtractive-synthesis softsynth
 media-sound/amberol 2024.2: Simple GUI Music Player
 media-sound/bespokesynth 1.2.1 1.3.0: Software modular synth
@@ -1374,6 +1375,7 @@ media-sound/plexamp 4.11.5: A dedicated music player for your Plex media library
 media-sound/pulseaudio-virtualmic 0.1 9999: Use any offline or online media file or stream as a PulseAudio source
 media-sound/qbitmplayer 3.1.2 3.2.0-r1 3.3.1: Music Player written in C++ & Qt.
 media-sound/qloud 1.4.2: Tool to measure loudspeaker frequency and step responses and distortions
+media-sound/rmpc 0.9.0: A beautiful and configurable TUI client for MPD
 media-sound/rsgain 3.5.1 3.5.3: Really Simple replay Gain calculator for tagging audio files
 media-sound/spct 1.1.3: A CLI program to play back or render SPC files.
 media-sound/spot 0.4.0-r2: GTK4 Spotify (Premium) client
@@ -1552,7 +1554,7 @@ net-misc/wayback_machine_downloader 2.3.0 2.3.1: Download an entire website from
 net-misc/whatscli 1.0.6 1.0.11: A command line interface for WhatsApp
 net-misc/wlvncc 20250122 20250307 20250626 99999999: A Wayland Native VNC Client
 net-misc/wsdd 0.8 0.9: A Web Service Discovery host daemon.
-net-misc/wstunnel 10.4.2 10.4.3: Tunnel all your traffic over Websocket or HTTP2 - Bypass firewalls/DPI
+net-misc/wstunnel 10.4.3 10.4.4: Tunnel all your traffic over Websocket or HTTP2 - Bypass firewalls/DPI
 net-misc/xh 0.24.1: Friendly and fast tool for sending HTTP requests
 net-misc/xkcd-handler 1.1.4: A handler for XKCD urls
 net-misc/xmrig-mo 6.21.2 6.22.2: MoneroOcean fork of xmrig that supports algo switching
