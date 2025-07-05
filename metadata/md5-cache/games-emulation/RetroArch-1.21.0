@@ -13,5 +13,5 @@ RDEPEND=app-arch/xz-utils x11-libs/libxkbcommon x11-libs/libXScrnSaver alsa? ( m
 REQUIRED_USE=|| ( opengl sdl vulkan dispmanx ) || ( materialui ozone rgui xmb ) alsa? ( threads ) arm? ( gles2? ( egl ) ) !arm? ( egl? ( opengl ) gles2? ( opengl ) ) cg? ( opengl ) dispmanx? ( videocore arm ) gles2? ( !cg ) gles3? ( gles2 ) kms? ( egl ) libass? ( ffmpeg ) libusb? ( hid ) videocore? ( arm ) vulkan? ( amd64 ) wayland? ( egl ) xinerama? ( X ) xv? ( X )
 SLOT=0
 SRC_URI=https://github.com/libretro/RetroArch/archive/refs/tags/v1.21.0.tar.gz -> RetroArch-1.21.0.tar.gz
-_eclasses_=edo	a5e294016aa84979fcb2459749eb80b2	toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	b892042b2667b8ac69ec8a2571dc290a	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575
+_eclasses_=edo	a5e294016aa84979fcb2459749eb80b2	toolchain-funcs	a6df79c1e9bc84369dbf3d44206ac772	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575
 _md5_=1d941858484d6dfb13c789f13c3fb607
