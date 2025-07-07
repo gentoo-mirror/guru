@@ -10,6 +10,7 @@ app-admin/fatrace:powertop - Install power-usage-report script
 app-admin/hardinfo2:fwupd - fwupd
 app-admin/krapplet:pass - Add support for pass compatible storage
 app-alternatives/phosh-keyboard:phosh-osk-stub - Symlink to phosh-base/phosh-osk-stub
+app-alternatives/phosh-keyboard:stevia - Symlink to phosh-base/phosh-osk-stevia
 app-arch/fuse-archive:fuse2 - Build with fuse2 instead of fuse3
 app-backup/blocksync-fast:xxhash - Enable dev-libs/xxhash support for very high speed hashing
 app-backup/kopia-ui-bin:system-kopia - Use the system-wide app-backup/kopia instead of bundled.
@@ -81,6 +82,9 @@ app-misc/kloak:apparmor - Install AppArmor profile
 app-misc/kloak:systemd - Install systemd service file
 app-misc/navi:command-execution - Enable support for command execution
 app-misc/navi:repo-management - Allow management of cheatsheet repository
+app-misc/opentrack:neuralnet - Build NeuralNet face tracker using a webcam as input device (requires opencv openmp)
+app-misc/opentrack:opencv - Enable webcam video driver via computer vision (required for NeuralNet to work)
+app-misc/opentrack:wine - Support injecting a FreeTrack driver into a running wine prefix
 app-misc/tinyfetch:pci - Enables the use of pciutils to detect GPU names
 app-misc/wlx-overlay-s:openvr - Support Valve's SteamVR SDK.
 app-misc/wlx-overlay-s:openxr - Support Khronos Group's OpenXR API.
@@ -169,7 +173,6 @@ dev-libs/open62541:mbedtls - Enable encryption support using net-libs/mbedtls
 dev-libs/open62541:openssl - Enable encryption support using dev-libs/openssl
 dev-libs/open62541:pubsub - Enable OPC/UA Pub/Sub extensions
 dev-libs/open62541:tools - Build additional shell tools
-dev-libs/qschematic:qt6 - Build with Qt6 support
 dev-libs/xqilla:tidy - Add Tidy-HTML5 support
 dev-libs/zfp:aligned - Enable aligned memory allocation
 dev-libs/zfp:cfp - Build CFP arrays library
@@ -201,7 +204,9 @@ dev-util/gammaray:geolocation - Physical position determination support from Qt5
 dev-util/gammaray:qml - Build with Qt5 Quick support
 dev-util/gammaray:scxml - Build support for Qt5 State Chart XML (SCXML)
 dev-util/gammaray:webengine - Enable support for dev-qt/qtwebengine
+dev-util/rtc-testbench:mqtt - Enable logging via app-misc/mosquitto
 dev-util/rust-rover:bundled-jdk - Use bundled jdk
+dev-util/rz-ghidra:cutter-plugin - Build as dev-util/cutter's plugin
 dev-util/stylua:lua52 - Build support for Lua 5.2
 dev-util/stylua:lua53 - Build support for Lua 5.3
 dev-util/stylua:lua54 - Build support for Lua 5.4
@@ -440,6 +445,7 @@ gui-wm/hyprland-contrib:shellevents - Install shellevents, invoke hell functions
 gui-wm/hyprland-contrib:swap - Install try_swap_workspace, a script to emulate monitor-workspace agnostic behavior of other window managers
 gui-wm/labwc:icons - Add support for window icons. Icons will only be displayed with USE=svg enabled
 gui-wm/labwc:static-analyzer - Run gcc static analyzer
+gui-wm/maomaowm:X - Enable support for X11 applications (XWayland)
 gui-wm/river:llvm - Use LLVM Zig backend
 gui-wm/swayfx:X - Enable support for X11 applications (XWayland)
 gui-wm/swayfx:swaybar - Install 'swaybar': sway's status bar component
@@ -528,6 +534,8 @@ media-gfx/bonzomatic:system-glfw - Use the systems installed version of GLFW (up
 media-gfx/bonzomatic:system-miniaudio - Use the systems installed version of Miniaudio (upstream-unsupported)
 media-gfx/bonzomatic:system-stb - Use the systems installed version of STB (upstream-unsupported)
 media-gfx/bonzomatic:wayland - Build non-system-glfw for wayland instead of X11
+media-gfx/glslViewer:ffmpeg - Enable ffmpeg/libav-based audio/video codec support
+media-gfx/glslViewer:xvfb - Enable support for thumbnail creation via Xvfb
 media-gfx/nsxiv:statusbar - Add statusbar support
 media-gfx/swayimg:exr - Enable support for EXR image format
 media-gfx/swayimg:jpegxl - Enable support for JPEG XL image format

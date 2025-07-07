@@ -1,0 +1,15 @@
+BDEPEND=>=dev-libs/wayland-protocols-1.32 >=dev-util/wayland-scanner-1.23 >=dev-build/meson-0.60.0 virtual/pkgconfig >=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array
+DEFINED_PHASES=compile configure install test
+DEPEND=>=gui-libs/wlroots-0.19:=[libinput,session,X?] <gui-libs/wlroots-0.20:=[X?] dev-libs/libinput:= dev-libs/wayland >=gui-libs/scenefx-0.4.1 dev-libs/libpcre2 x11-libs/libxkbcommon X? ( x11-libs/libxcb:= x11-libs/xcb-util-wm ) sys-kernel/linux-headers
+DESCRIPTION=wayland compositor based on wlroots and scenefx(dwl but no suckless)
+EAPI=8
+HOMEPAGE=https://github.com/DreamMaoMao/maomaowm.git
+INHERIT=meson
+IUSE=X
+KEYWORDS=~amd64 ~arm64
+LICENSE=CC0-1.0 GPL-3+ MIT
+RDEPEND=>=gui-libs/wlroots-0.19:=[libinput,session,X?] <gui-libs/wlroots-0.20:=[X?] dev-libs/libinput:= dev-libs/wayland >=gui-libs/scenefx-0.4.1 dev-libs/libpcre2 x11-libs/libxkbcommon X? ( x11-libs/libxcb:= x11-libs/xcb-util-wm ) X? ( x11-base/xwayland )
+SLOT=0
+SRC_URI=https://github.com/DreamMaoMao/maomaowm/archive/0.7.1.tar.gz -> maomaowm-0.7.1.tar.gz
+_eclasses_=toolchain-funcs	a6df79c1e9bc84369dbf3d44206ac772	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	5ffe8ec396a751540949b565de0f048c	meson	99466844dd8d4fcfb07578a76f5a9922
+_md5_=05530812ec9cd3ca4d84cb213a44b88f

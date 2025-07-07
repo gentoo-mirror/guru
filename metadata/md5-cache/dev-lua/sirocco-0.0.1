@@ -1,0 +1,15 @@
+DEFINED_PHASES=compile install
+DEPEND=lua_targets_luajit? ( dev-lang/luajit:= ) lua_targets_lua5-1? ( dev-lang/lua:5.1 )
+DESCRIPTION=A collection of interactive command line prompts for Lua
+EAPI=8
+HOMEPAGE=https://github.com/giann/sirocco
+INHERIT=lua toolchain-funcs
+IUSE=examples lua_targets_luajit lua_targets_lua5-1
+KEYWORDS=~amd64
+LICENSE=MIT
+RDEPEND=dev-lua/lua-term[lua_targets_luajit(-)?,lua_targets_lua5-1(-)?] dev-lua/hump[lua_targets_luajit(-)?,lua_targets_lua5-1(-)?] dev-lua/lua-wcwidth[lua_targets_luajit(-)?,lua_targets_lua5-1(-)?] dev-lua/compat53[lua_targets_luajit(-)?,lua_targets_lua5-1(-)?] dev-lua/lua-bit32[lua_targets_luajit(-)?,lua_targets_lua5-1(-)?] lua_targets_luajit? ( dev-lang/luajit:= ) lua_targets_lua5-1? ( dev-lang/lua:5.1 )
+REQUIRED_USE=|| ( lua_targets_luajit lua_targets_lua5-1 )
+SLOT=0
+SRC_URI=https://github.com/giann/sirocco/archive/b2af2d336e808e763b424d2ea42e6a2c2b4aa24d.tar.gz -> sirocco-0.0.1.tar.gz
+_eclasses_=out-of-source-utils	dbf9e34ee8964084651e25907fa8f52c	multibuild	4650a65187015567b4e041bb9bfdb364	toolchain-funcs	a6df79c1e9bc84369dbf3d44206ac772	lua-utils	7c89927eda6f21c4c48136247077ab37	lua	3414f66fe14a8c3ffdb5a894097068c6
+_md5_=3904641c28370c0f200c714d1074da68

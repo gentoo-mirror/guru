@@ -1,6 +1,6 @@
 BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.20.5 >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare test unpack
-DEPEND=app-arch/p7zip dev-libs/flatbuffers dev-libs/hidapi dev-libs/libevdev dev-libs/pugixml dev-qt/qtbase:6[concurrent,dbus,gui,widgets] dev-qt/qtmultimedia:6 dev-qt/qtsvg:6 media-libs/alsa-lib media-libs/cubeb media-libs/glew media-libs/libglvnd media-libs/libpng:= media-libs/openal media-video/ffmpeg:= net-misc/curl llvm-core/llvm:= sys-libs/zlib virtual/libusb:1 x11-libs/libX11 faudio? ( app-emulation/faudio ) opencv? ( media-libs/opencv ) vulkan? ( media-libs/vulkan-loader[wayland?] ) wayland? ( dev-libs/wayland )
+DEPEND=app-arch/p7zip app-arch/zstd dev-libs/flatbuffers dev-libs/hidapi dev-libs/libevdev dev-libs/pugixml dev-libs/stb dev-qt/qtbase:6[concurrent,dbus,gui,widgets] dev-qt/qtmultimedia:6 dev-qt/qtsvg:6 media-libs/alsa-lib media-libs/cubeb media-libs/glew media-libs/libglvnd media-libs/libpng:= media-libs/openal media-video/ffmpeg:= net-misc/curl llvm-core/llvm:= sys-libs/zlib virtual/libusb:1 x11-libs/libX11 faudio? ( app-emulation/faudio ) opencv? ( media-libs/opencv ) vulkan? ( media-libs/vulkan-loader[wayland?] ) wayland? ( dev-libs/wayland )
 DESCRIPTION=PS3 emulator/debugger
 EAPI=8
 HOMEPAGE=https://rpcs3.net/
@@ -9,7 +9,7 @@ INHERIT=cmake flag-o-matic xdg git-r3
 IUSE=discord faudio +llvm opencv vulkan wayland
 LICENSE=GPL-2
 PROPERTIES=live
-RDEPEND=app-arch/p7zip dev-libs/flatbuffers dev-libs/hidapi dev-libs/libevdev dev-libs/pugixml dev-qt/qtbase:6[concurrent,dbus,gui,widgets] dev-qt/qtmultimedia:6 dev-qt/qtsvg:6 media-libs/alsa-lib media-libs/cubeb media-libs/glew media-libs/libglvnd media-libs/libpng:= media-libs/openal media-video/ffmpeg:= net-misc/curl llvm-core/llvm:= sys-libs/zlib virtual/libusb:1 x11-libs/libX11 faudio? ( app-emulation/faudio ) opencv? ( media-libs/opencv ) vulkan? ( media-libs/vulkan-loader[wayland?] ) wayland? ( dev-libs/wayland )
+RDEPEND=app-arch/p7zip app-arch/zstd dev-libs/flatbuffers dev-libs/hidapi dev-libs/libevdev dev-libs/pugixml dev-libs/stb dev-qt/qtbase:6[concurrent,dbus,gui,widgets] dev-qt/qtmultimedia:6 dev-qt/qtsvg:6 media-libs/alsa-lib media-libs/cubeb media-libs/glew media-libs/libglvnd media-libs/libpng:= media-libs/openal media-video/ffmpeg:= net-misc/curl llvm-core/llvm:= sys-libs/zlib virtual/libusb:1 x11-libs/libX11 faudio? ( app-emulation/faudio ) opencv? ( media-libs/opencv ) vulkan? ( media-libs/vulkan-loader[wayland?] ) wayland? ( dev-libs/wayland )
 SLOT=0
 _eclasses_=toolchain-funcs	a6df79c1e9bc84369dbf3d44206ac772	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	460729dc36f68cf03b044bc1d367e34a	xdg	3ef49a87c52c8b77c476351195dfe575	git-r3	875eb471682d3e1f18da124be97dcc81
-_md5_=0d09710304e5c2725fb47ca392239590
+_md5_=ea525a9d39973a3fd78750bd8c55d65c

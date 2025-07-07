@@ -2,10 +2,11 @@ BDEPEND=virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=configure install prepare unpack
 DESCRIPTION=Bypass DPI SOCKS proxy
 EAPI=8
-HOMEPAGE=https://github.com/hufrea/byedpi/
+HOMEPAGE=https://github.com/hufrea/byedpi
 INHERIT=systemd toolchain-funcs git-r3
 LICENSE=MIT
 PROPERTIES=live
+RDEPEND=acct-user/byedpi
 SLOT=0
 _eclasses_=toolchain-funcs	a6df79c1e9bc84369dbf3d44206ac772	systemd	a964c0cbe818b5729da1dbfcee5be861	git-r3	875eb471682d3e1f18da124be97dcc81
-_md5_=1d2c060f712175603e9be6f6a43833ff
+_md5_=fdd39092f5660750edae335f0ace1c53

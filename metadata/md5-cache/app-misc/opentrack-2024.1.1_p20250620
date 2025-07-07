@@ -1,0 +1,16 @@
+BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.20.5
+DEFINED_PHASES=compile configure install prepare pretend setup test
+DEPEND=dev-libs/libevdev dev-libs/libusb:1 dev-qt/qtbase:6[gui,network,widgets] sys-process/procps:= x11-libs/libX11 neuralnet? ( sci-libs/onnxruntime-bin ) opencv? ( media-libs/opencv:= ) wine? ( virtual/wine )
+DESCRIPTION=Head tracking software for MS Windows, Linux, and Apple OSX
+EAPI=8
+HOMEPAGE=https://github.com/opentrack/opentrack
+INHERIT=cmake desktop flag-o-matic toolchain-funcs
+IUSE=neuralnet opencv openmp wine
+KEYWORDS=~amd64
+LICENSE=ISC
+RDEPEND=dev-libs/libevdev dev-libs/libusb:1 dev-qt/qtbase:6[gui,network,widgets] sys-process/procps:= x11-libs/libX11 neuralnet? ( sci-libs/onnxruntime-bin ) opencv? ( media-libs/opencv:= ) wine? ( virtual/wine )
+REQUIRED_USE=neuralnet? ( openmp opencv )
+SLOT=0
+SRC_URI=https://github.com/opentrack/opentrack/archive/a47cbd05214787640bbeffa289b4d932905d213f.tar.gz -> opentrack-2024.1.1_p20250620.tar.gz
+_eclasses_=toolchain-funcs	a6df79c1e9bc84369dbf3d44206ac772	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	460729dc36f68cf03b044bc1d367e34a	desktop	3a72ffe0d8e1dd73af3a1c8c15a59fed
+_md5_=97225b776f2a6516573b4aa08cacd379

@@ -1,0 +1,17 @@
+BDEPEND=dev-util/gdbus-codegen gtk-doc? ( dev-util/gi-docgen ) man? ( dev-python/docutils ) vala? ( || ( dev-lang/vala:0.56[vapigen(+)] ) ) verify-sig? ( sec-keys/openpgp-keys-phosh ) >=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array virtual/pkgconfig virtual/pkgconfig verify-sig? ( app-crypt/gnupg >=app-portage/gemato-20 )
+DEFINED_PHASES=compile configure install postinst postrm prepare test unpack
+DEPEND=dev-libs/glib:2 dev-libs/gmobile daemon? ( dev-libs/json-glib dev-libs/libgudev media-libs/gsound ) introspection? ( dev-libs/gobject-introspection ) test? ( dev-util/umockdev )
+DESCRIPTION=DBus service for haptic/visual/audio feedback
+EAPI=8
+HOMEPAGE=https://gitlab.freedesktop.org/agx/feedbackd
+INHERIT=meson systemd udev vala verify-sig
+IUSE=+daemon gtk-doc +introspection man test +vala verify-sig
+KEYWORDS=~amd64 ~arm ~arm64 ~x86
+LICENSE=LGPL-3
+RDEPEND=dev-libs/glib:2 dev-libs/gmobile daemon? ( dev-libs/json-glib dev-libs/libgudev media-libs/gsound ) introspection? ( dev-libs/gobject-introspection ) test? ( dev-util/umockdev ) acct-group/video >=dev-libs/feedbackd-device-themes-0.8.0
+REQUIRED_USE=vala? ( introspection )
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://sources.phosh.mobi/releases/feedbackd/feedbackd-0.8.3.tar.xz verify-sig? ( https://sources.phosh.mobi/releases/feedbackd/feedbackd-0.8.3.tar.xz.asc )
+_eclasses_=toolchain-funcs	a6df79c1e9bc84369dbf3d44206ac772	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	5ffe8ec396a751540949b565de0f048c	meson	99466844dd8d4fcfb07578a76f5a9922	systemd	a964c0cbe818b5729da1dbfcee5be861	udev	f3d9a4376ebd22131726a68e1a0a058f	vala	e477903dbe0105930c51f170a592dc16	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	verify-sig	4e83419d7fb5d336f6a4de8193968319
+_md5_=4d977795986ef769bfe6b74a8b7f2507
