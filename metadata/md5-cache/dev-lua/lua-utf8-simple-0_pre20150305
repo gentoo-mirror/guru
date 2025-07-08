@@ -1,0 +1,15 @@
+DEFINED_PHASES=install test
+DEPEND=lua_targets_luajit? ( dev-lang/luajit:= ) lua_targets_lua5-1? ( dev-lang/lua:5.1 ) lua_targets_lua5-3? ( dev-lang/lua:5.3 )
+DESCRIPTION=Basic UTF8-handling functions for Lua
+EAPI=8
+HOMEPAGE=https://github.com/blitmap/lua-utf8-simple
+INHERIT=lua
+IUSE=lua_targets_luajit lua_targets_lua5-1 lua_targets_lua5-3
+KEYWORDS=~amd64
+LICENSE=MIT
+RDEPEND=lua_targets_luajit? ( dev-lang/luajit:= ) lua_targets_lua5-1? ( dev-lang/lua:5.1 ) lua_targets_lua5-3? ( dev-lang/lua:5.3 )
+REQUIRED_USE=|| ( lua_targets_luajit lua_targets_lua5-1 lua_targets_lua5-3 )
+SLOT=0
+SRC_URI=https://github.com/blitmap/lua-utf8-simple/archive/7ef030750d8e408ac5d724aefab2ec8769731005.tar.gz -> lua-utf8-simple-0_pre20150305.tar.gz
+_eclasses_=out-of-source-utils	dbf9e34ee8964084651e25907fa8f52c	multibuild	4650a65187015567b4e041bb9bfdb364	toolchain-funcs	a6df79c1e9bc84369dbf3d44206ac772	lua-utils	7c89927eda6f21c4c48136247077ab37	lua	3414f66fe14a8c3ffdb5a894097068c6
+_md5_=921076dd37c03bb75f46eb1bdb3811c4
