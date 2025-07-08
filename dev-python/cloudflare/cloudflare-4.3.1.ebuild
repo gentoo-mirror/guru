@@ -44,6 +44,7 @@ BDEPEND="test? (
 	${RDEPEND}
 )"
 
+EPYTEST_XDIST=1
 distutils_enable_tests pytest
 RESTRICT+=" !test? ( test )"
 
@@ -74,6 +75,11 @@ python_test() {
 		tests/test_client.py::TestAsyncCloudflare::test_copy_build_request
 		tests/test_client.py::TestCloudflare::test_copy_build_request
 		tests/test_client.py::TestAsyncCloudflare::test_get_platform
+)
+	# Doesn't have authentication setup correctly, broken upstream too
+	local EPYTEST_IGNORE=(
+		tests/api_resources/cloudforce_one/threat_events/datasets/test_health.py
+		tests/api_resources/radar/
 )
 	epytest
 }
