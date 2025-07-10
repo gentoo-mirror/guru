@@ -724,7 +724,7 @@ dev-python/googletrans 4.0.0_rc1-r1: Free Google Translate API for Python. Trans
 dev-python/graphql-core 3.2.3: Python port of GraphQL.js, the JavaScript reference implementation for GraphQL
 dev-python/graphql-relay 3.2.0: Relay library for graphql-core
 dev-python/grpc-stubs 1.53.0.3: gRPC typing stubs for Python
-dev-python/guidata 3.7.1 3.9.0 3.10.0: Library for user interfaces for easy dataset editing and display
+dev-python/guidata 3.9.0 3.10.0 3.11.0: Library for user interfaces for easy dataset editing and display
 dev-python/guiqwt 4.4.5-r1: Efficient 2D plotting Python library based on PythonQwt
 dev-python/guppy3 3.1.4 3.1.5: A Python Programming Environment & Heap analysis toolset
 dev-python/hachoir 3.3.0: Hachoir is a Python library to view and edit a binary stream field by field
@@ -958,6 +958,7 @@ dev-util/fnm 1.38.1: Fast and simple Node.js version manager
 dev-util/fortls 2.13.0 3.0.0 3.1.1 3.1.2 3.2.2: Fortran Language Server (fortls)
 dev-util/fortran-test-drive 0.4.0 0.5.0: The simple testing framework (for Fortran)
 dev-util/gammaray 3.1.0: High-level runtime introspection tool for Qt applications
+dev-util/gemini-cli 0.1.9_pre20250709: Gemini CLI - a command-line AI workflow tool by Google
 dev-util/genTree 0.1.0 9999: Gentoo rootfs tree generator
 dev-util/git-bug 0.8.0 9999: distributed, offline-first bug tracker
 dev-util/gitlab-ci-local-bin 4.43.0 4.47.0 4.56.0: Run gitlab pipelines locally as shell executor or docker executor
@@ -1232,7 +1233,7 @@ gui-apps/wlsunset 0.4.0 9999: Day/night gamma adjustments for Wayland
 gui-apps/wob 0.15.1-r1 0.16: Lightweight overlay volume/backlight/progress/anything bar for Wayland
 gui-apps/wscreensaver 9999: Xscreensaver screensavers ported to wayland
 gui-apps/wtype 0.4: xdotool type for wayland
-gui-apps/xremap 0.10.12: Dynamic key remap for X and Wayland
+gui-apps/xremap 0.10.13: Dynamic key remap for X and Wayland
 gui-apps/xwayland-satellite 0.5.1 0.6: Xwayland outside your Wayland
 gui-apps/yambar 1.11.0 9999: Simplistic and highly configurable status panel for X and Wayland
 gui-libs/gtk-session-lock 0.2.0-r6 9999: GTK-based lockscreen for Wayland
@@ -1309,7 +1310,7 @@ media-gfx/sic 0.22.4: Accessible image processing and conversion from the termin
 media-gfx/silicon 0.5.2-r1 0.5.2-r2 0.5.3: Create beautiful image of your code
 media-gfx/superpaper 2.2.1: Advanced multi monitor wallpaper manager
 media-gfx/svgcleaner 0.9.5: svgcleaner could help you to clean up your SVG files from the unnecessary data.
-media-gfx/swayimg 4.2 4.3: A lightweight image viewer for Wayland display servers
+media-gfx/swayimg 4.3 4.5: A lightweight image viewer for Wayland display servers
 media-gfx/timg 1.6.2: Terminal image and video viewer
 media-gfx/vimiv-qt 0.9.0-r1: An image viewer with vim-like keybindings
 media-gfx/vpuppr 0.9.0-r1: VTuber application made with Godot 3.4
@@ -1345,13 +1346,12 @@ media-plugins/argotlunar-bin 2.06-r2: Argotlunar is a sound granulator. Binary L
 media-plugins/dtmediawiki 9999: Wikimedia Commons export plugin for Darktable
 media-plugins/eq10q 2.2: An LV2 audio plugin implementing a powerful and flexible parametric equalizer
 media-plugins/gimp-avif-plugin 9999: Plug-in for development GIMP 2.99.11 for loading/saving AVIF images.
-media-plugins/gst-plugins-qt6 1.22.12 1.24.10 1.24.11: Qt6 QML video sink plugin for GStreamer
 media-plugins/qt-heif-image-plugin 0.3.4: Qt plugin for HEIF images
 media-plugins/qt-jpegxl-image-plugin 9999: Qt plug-in to allow Qt and KDE based applications to read/write JXL images.
 media-plugins/whysynth 20170701_p20180323-r1: A software synthesizer plugin for the DSSI Soft Synth Interface
 media-radio/fllog 1.2.8: Logbook application for amateur radio use
 media-sound/6pm 0.9: 6PM is a polyphonic, touch-sensitive, realtime phase modulation synthesizer
-media-sound/Tauon 8.0.1-r1 8.1.0 9999: The desktop music player of today!
+media-sound/Tauon 8.1.0 8.1.2 9999: The desktop music player of today!
 media-sound/add64 3.8.0 3.9.3: Add64 is a realtime additive/subtractive-synthesis softsynth
 media-sound/amberol 2024.2: Simple GUI Music Player
 media-sound/bespokesynth 1.2.1 1.3.0: Software modular synth
@@ -1469,7 +1469,7 @@ net-im/abaddon 0.2.1 9999: Alternative Discord client using GTK instead of Elect
 net-im/axolotl-bin 2.0.1: Axolotl is a cross-platform Signal client
 net-im/beeper 4.0.779 4.0.821: Beeper: Unified Messenger
 net-im/chatterino 2.5.2-r1 2.5.3: Chat client for https://twitch.tv
-net-im/conduit 0.10.4 0.10.5 9999: Matrix homeserver written in Rust
+net-im/conduit 0.10.4 0.10.5 0.10.6 9999: Matrix homeserver written in Rust
 net-im/discord-canary-bin 0.0.643: All-in-one voice and text chat
 net-im/discord-ptb-bin 0.0.137: All-in-one voice and text chat
 net-im/eturnal 1.12.1 1.12.2: STUN/TURN server
@@ -1597,7 +1597,7 @@ net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
 net-p2p/yggdrasil-go 0.5.12 9999: An experiment in scalable routing as an encrypted IPv6 overlay network
 net-print/hpuld 1.00.39.15.00.23-r1: HP Unified Linux Driver (for samsung hardware)
 net-proxy/MTProxy 3.0.4-r1: Community fork of MTProxy
-net-proxy/byedpi 0.16.6 0.17 0.17.1 9999: Bypass DPI SOCKS proxy
+net-proxy/byedpi 0.16.6 0.17 0.17.1 0.17.2 9999: Bypass DPI SOCKS proxy
 net-proxy/nekoray 4.3.5-r1: Qt based cross-platform GUI proxy configuration manager
 net-proxy/ngrok-bin 3.20.0: ngrok is a reverse proxy, firewall, and API gateway
 net-proxy/shadowsocks-rust 1.22.0: A Rust port of shadowsocks
@@ -1692,8 +1692,8 @@ sci-mathematics/pyromaths 21.8.2-r1: Create maths exercises in LaTeX and PDF for
 sci-mathematics/rink 0.8.0-r1 9999: Unit conversion tool, similar to frink
 sci-mathematics/rstudio-desktop-bin 2023.09.1_p494 2024.12.0_p467 2024.12.0_p467-r1: IDE for R and Python
 sci-misc/boinc-wrapper 26018-r2 26018-r3: Wrapper to use non-BOINC apps with BOINC
-sci-misc/llama-cpp 0_pre4576 0_pre4848 0_pre5097 0_pre5332 0_pre5633-r1 0_pre5821 9999: Port of Facebook's LLaMA model in C/C++
-sci-ml/ollama 0.9.3 9999: Get up and running with Llama 3, Mistral, Gemma, and other language models.
+sci-misc/llama-cpp 0_pre4576 0_pre5097 0_pre5332 0_pre5633-r1 0_pre5821 0_pre5857 9999: Port of Facebook's LLaMA model in C/C++
+sci-ml/ollama 0.9.3 0.9.5 9999: Get up and running with Llama 3, Mistral, Gemma, and other language models.
 sci-physics/openmodelica 1.24.0-r1: Open-source Modelica-based modeling and simulation environment
 sci-physics/ovito 3.10.4 3.10.5 3.10.5-r1: Open Visualization Tool
 sec-keys/openpgp-keys-aepaneshnikov 20221210: OpenPGP keys used by Alexander Epaneshnikov
@@ -1867,7 +1867,7 @@ x11-misc/i3-restore 4.1: A simple bash + python script to restore your i3 sessio
 x11-misc/i3-resurrect 1.4.5: Saving and restoring i3 workspaces
 x11-misc/i3lock-color 2.13.5: The world's most popular non-default computer lockscreen
 x11-misc/i3lock-fancy-rapid 0.0.0_pre20201109-r1 0.0.0_pre20210421: A faster implementation of i3lock-fancy
-x11-misc/i3status-rust 0.33.2: A feature-rich and resource-friendly replacement for i3status, written in Rust.
+x11-misc/i3status-rust 0.34.0: A feature-rich and resource-friendly replacement for i3status, written in Rust.
 x11-misc/ksnip 1.11.0_pre20250130: Ksnip is a Qt based cross-platform screenshot tool
 x11-misc/leftwm-theme 0.1.2: Theme mangager for LeftWM
 x11-misc/ly 1.0.3 9999: Ly - a TUI display manager (live ebuild)
