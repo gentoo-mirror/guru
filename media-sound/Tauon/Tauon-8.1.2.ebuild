@@ -69,7 +69,7 @@ BDEPEND="sys-devel/gettext"
 
 PATCHES=(
 	"${FILESDIR}/${PN}-7.9.0-phazor-build.patch"
-	"${FILESDIR}/${PN}-8.0.1-fix-locale-path.patch"
+	"${FILESDIR}/${PN}-8.1.0-fix-locale-path.patch"
 )
 
 src_compile() {
