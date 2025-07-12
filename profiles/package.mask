@@ -18,9 +18,10 @@
 
 # New entries go on top.
 
-# Rahil Bhimjiani <me@rahil.rocks> (2025-07-07)
-# package renamed to www-apps/vaultwarden-web and moved to ::gentoo
-www-apps/vaultwarden-web-bin
+# David (stkw0) Roman <davidroman96@gmail.com> (2025-07-11)
+# Almost not maintained, fails to compile (bug #921934)
+# Removal on 2025-08-11
+gui-apps/tiramisu
 
 # David (stkw0) Roman <davidroman96@gmail.com> (2025-06-25)
 # Depends on masked dev-libs/libdbusmenu-qt
@@ -43,12 +44,6 @@ app-misc/mobile-datovka
 # Masked until upstream supports running without backoff.
 app-backup/b2
 dev-util/mock
-
-# Takuya Wakazono <pastalian46@gmail.com> (2025-06-05)
-# app-text/komikku, the only reverse dependency, has migrated to
-# dev-python/modern-colorthief.
-# Removal on 2025-07-05.
-dev-python/colorthief
 
 # Lucio Sauer <watermanpaint@posteo.net> (2025-06-04)
 # Ebuild effectively unmaintained since 2021. I was unable to find the origin
