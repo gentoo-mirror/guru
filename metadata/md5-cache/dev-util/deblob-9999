@@ -1,6 +1,6 @@
 BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=install unpack
-DEPEND=>=dev-lang/hare-0.24.2:= dev-hare/hare-json
+DEPEND=>=dev-lang/hare-0.25.2:= >=dev-hare/hare-json-0.25.2.0
 DESCRIPTION=remove binary executables from a directory
 EAPI=8
 HOMEPAGE=https://hacktivis.me/projects/deblob
@@ -11,4 +11,4 @@ PROPERTIES=live
 RESTRICT=!test? ( test )
 SLOT=0
 _eclasses_=git-r3	875eb471682d3e1f18da124be97dcc81
-_md5_=74b9602bb9c5e4f22e4d6af0fdeced15
+_md5_=24e2360de66d4a1336d3246cf52f2015

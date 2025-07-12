@@ -311,7 +311,6 @@ games-fps/etlegacy:irc - Enable built-in IRC client
 games-fps/etlegacy:omnibot - Built with Omnibot
 games-fps/etlegacy:renderer-gles - Enable renderer-gles
 games-fps/etlegacy:renderer2 - Enable renderer2
-games-fps/quakespasm:sdl2 - Use media-libs/libsdl2 instead of media-libs/libsdl
 games-puzzle/atris:sound - Enable atris sound pack
 games-roguelike/cataclysm-dda:ncurses - Build console (ncurses) variant
 games-roguelike/cataclysm-dda:soundpack - Install complete soundpack (as opposed to only menu sounds)
@@ -533,7 +532,6 @@ media-gfx/glslViewer:xvfb - Enable support for thumbnail creation via Xvfb
 media-gfx/nsxiv:statusbar - Add statusbar support
 media-gfx/swayimg:drm - Enable DRM renderig support (DRM UI)
 media-gfx/swayimg:exr - Enable support for EXR image format
-media-gfx/swayimg:jpegxl - Enable support for JPEG XL image format
 media-gfx/swayimg:sixel - Enable support for Sixel image format
 media-gfx/swayimg:wayland - Enable Wayland UI and some compositors (Sway and Hyprland only)
 media-gfx/vpuppr:ifm-tracker - Enable the iFacialMocap tracker.
@@ -585,7 +583,6 @@ media-sound/drumgizmo:cli - Build stand-alone CLI application
 media-sound/drumgizmo:jack - Enable jack output and jackmidi input (CLI only)
 media-sound/drumgizmo:lv2 - Build LV2 plugin
 media-sound/drumgizmo:midi - Enable midifile input via media-libs/libsmf (CLI only)
-media-sound/drumgizmo:vst - Build VST plugin
 media-sound/fooyin:archive - Build the libarchive input plugin using app-arch/libarchive
 media-sound/fooyin:openmpt - Build the OpenMPT input plugin using media-libs/libopenmpt
 media-sound/fooyin:pipewire - Enable sound support via native PipeWire backend
@@ -608,6 +605,7 @@ media-sound/musikcube:systemd - Build plugin to support MPRIS using systemd.
 media-sound/nulloy:skins - Without this flag - you can choose qt5 themes not only for preferences
 media-sound/qbitmplayer:network - Allow a single instance of itself, thus subsequent calls to media-sound/qbitmplayer will just open the already opened instance of it.
 media-sound/qbitmplayer:video - Make media-sound/qbitmplayer not just a Music Player, but a Media Player by enabling its ability to play video files as well.
+media-sound/spct:libspct - Build spct as a shared library (libspct) for use in other applications.
 media-sound/spotify-player:daemon - Enables running the app as a daemon
 media-sound/spotify-player:image - Enables basic image support for album artwork
 media-sound/spotify-player:lyrics - Enables lyrics support for playing songs

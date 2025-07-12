@@ -1,0 +1,13 @@
+BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.20.5
+DEFINED_PHASES=compile configure install prepare test
+DESCRIPTION=3DS shader assembler and disassembler
+EAPI=8
+HOMEPAGE=https://github.com/neobrain/nihstro
+INHERIT=cmake
+KEYWORDS=~amd64
+LICENSE=BSD
+RDEPEND=dev-libs/boost:=
+SLOT=0
+SRC_URI=https://github.com/neobrain/nihstro/archive/f4d8659decbfe5d234f04134b5002b82dc515a44.tar.gz -> nihstro-0_pre20250505.tar.gz
+_eclasses_=toolchain-funcs	a6df79c1e9bc84369dbf3d44206ac772	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	460729dc36f68cf03b044bc1d367e34a
+_md5_=0043615d631c1be421aec3e7f236a9e2

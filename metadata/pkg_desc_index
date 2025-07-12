@@ -148,7 +148,6 @@ app-crypt/certbot-dns-cloudflare 3.2.0: Cloudflare DNS Authenticator plugin for 
 app-crypt/certbot-dns-desec 1.2.1: deSEC DNS Authenticator plugin for Certbot
 app-crypt/certbot-dns-rfc2136 2.11.1 3.2.0-r100: RFC 2136 DNS Authenticator plugin for Certbot (Let’s Encrypt Client)
 app-crypt/clevis 19-r2 20-r1 21: Automated Encryption Framework
-app-crypt/configuradorfnmt 1.0.1: Spanish government certificate request generator
 app-crypt/firefox-decrypt 1.1.1: Tool to extract passwords from Mozilla (Firefox, Thunderbird, etc.) profiles
 app-crypt/gnome-encfs-manager 1.9-r2: An easy to use manager and mounter for encfs stashes
 app-crypt/ifcplugin-bin 3.1.1.0: Crypto Interface Web Browser Plugin
@@ -357,7 +356,7 @@ app-text/code-minimap 0.6.8: A high performance code minimap generator
 app-text/dooit 3.1.0: A TUI todo manager
 app-text/epubgrep 0.6.2: Search tool for EPUB e-books
 app-text/ford 6.2.5 7.0.8-r1 7.0.9-r1 7.0.10 7.0.11: FORD, automatic documentation generator for modern Fortran programs
-app-text/harper 0.44.0: The language checker for developers.
+app-text/harper 0.50.0: The language checker for developers.
 app-text/jrnl 4.1 4.2: Collect your thoughts and notes without leaving the command line
 app-text/klogg 22.06.0.1289-r1: A GUI application to browse and search through long and complex log files
 app-text/komikku 1.78.0: Manga reader for GNOME
@@ -437,6 +436,7 @@ dev-cpp/reflection-cpp 0.2.0 0.3.0 0.4.0: Boxing primitive types in C++
 dev-cpp/scnlib 4.0.1: scanf for modern C++
 dev-cpp/simdutf 5.7.2 6.2.0: simdutf: Unicode validation and transcoding at billions of characters per second
 dev-cpp/sprout 0_pre20190615: C++11/14 constexpr based Containers, Algorithms, Random numbers and others
+dev-cpp/tinygltf 2.9.6: Header only C++11 tiny glTF 2.0 library
 dev-cpp/trantor 1.5.19 1.5.20: Non-blocking I/O tcp network lib based on c++14/17
 dev-cpp/trompeloeil 47: Header only C++14 mocking framework
 dev-cpp/units 2.3.3 2.3.4: A compile-time, header-only, dimensional analysis and unit conversion library
@@ -525,9 +525,9 @@ dev-hare/hare-linux 9999: Extra Linux support for Hare programs
 dev-hare/hare-png 9999: PNG implementation for Hare
 dev-hare/hare-ssh 0.24.2 0.25.2 9999: SSH library for Hare
 dev-hare/hare-xml 0_pre20231231 0.25.2.0 9999: XML support for Hare
-dev-java/corretto-bin 8.412.08.1 11.0.23.9.1 17.0.11.9.1 21.0.3.9.1 22.0.1.8.1: Prebuilt Java JDK binaries provided by Amazon Web Services
+dev-java/corretto-bin 8.452.09.1 11.0.27.6.1 17.0.15.6.1 21.0.7.6.1 24.0.1.9.1: Prebuilt Java JDK binaries provided by Amazon Web Services
 dev-java/jdtls-bin 1.49.0_p202507030451: Java language server
-dev-java/microsoft-openjdk-bin 11.0.22 17.0.10 21.0.2: Prebuilt Java JDK binaries provided by Microsoft
+dev-java/microsoft-openjdk-bin 11.0.27 17.0.15 21.0.7: Prebuilt Java JDK binaries provided by Microsoft
 dev-lang/cc65 2.19-r3 9999-r1: Cross-development package for 65(C)02 systems
 dev-lang/crystal-bin 1.16.2 1.16.3: The Crystal Programming Language
 dev-lang/fbc 1.10.1: A free/open source, multi-platform BASIC compiler.
@@ -593,25 +593,33 @@ dev-libs/ls-hpack 2.3.4: QPACK compression library for use with HTTP/3
 dev-libs/lsbcrypt 1.0.0-r2: libcrypt wrapper for LiteSpeedTech
 dev-libs/lsquic 4.0.12 4.2.0: LiteSpeed QUIC (LSQUIC) Library
 dev-libs/luksmeta 9-r2: LUKSMeta is a simple library for storing metadata in the LUKSv1 header
+dev-libs/lygia 1.3.0: LYGIA is a shader library of reusable functions.
 dev-libs/lzfse 9999: LZFSE compression library and command line tool.
+dev-libs/mcl 0.1.13: merry's common library
+dev-libs/microprofile 4.0: An embeddable profiler
 dev-libs/mtxclient 0.10.0-r1 0.10.0-r2: Client API library for Matrix, built on top of libcurl
 dev-libs/nanopb 0.4.9.1 9999: plain-C Protocol Buffers for embedded/memory-constrained systems
+dev-libs/nihstro 0_pre20250505: 3DS shader assembler and disassembler
+dev-libs/oaknut 2.0.2: Yet another AArch64 emitter
 dev-libs/open62541 1.4.12: Open source C implementation of OPC UA
 dev-libs/polyseed 1.0.0 2.0.0 9999: Mnemonic seed library for Monero and other CryptoNote-based currencies.
 dev-libs/qschematic 3.0.2: Library for creating flowcharts and engineering diagrams
 dev-libs/randomx 1.2.1-r1: Proof of work algorithm based on random code execution
 dev-libs/s2n 1.5.21: Simple, small, fast and secure C99 implementation of the TLS/SSL protocols
 dev-libs/sealcurses 2.0.18_pre20241014 2.0.18_pre20241202: SDL Emulation and Adaptation Layer for Curses
-dev-libs/sirit 0_p20220725: A runtime SPIR-V assembler
+dev-libs/sirit 0_p20230510: A runtime SPIR-V assembler
 dev-libs/supercop 0_p20200827: Fast cryptographic operations for Monero wallets
 dev-libs/tbtools 0.3.2-r2: Thunderbolt/USB4 debugging tools
 dev-libs/tfdn 1.9.0 1.9.1: Opinionated C11 library for low-level functionality
 dev-libs/toml-f 0.4.0 0.4.1 0.4.2: TOML parser implementation for data serialization and deserialization in Fortran
 dev-libs/tweeny 3.1.1 3.2.0: C++ tweening (inbetweening) library
 dev-libs/unordered_dense 4.0.1 4.4.0 9999: A fast and densely stored hashmap and hashset
+dev-libs/vera 20240804-r1: C++/WASM GL Framework
 dev-libs/weechat-relay 9999: Portable and multi-interface IRC client relay api
 dev-libs/xqilla 2.3.4-r3: An XQuery and XPath 2 library and command line utility written in C++
 dev-libs/zfp 1.0.1: Compressed numerical arrays that support high-speed random access
+dev-libs/zycore-c 1.5.2: Zyan Core Library for C
+dev-libs/zydis 4.1.1: Fast and lightweight x86/x86-64 disassembler and code generation library
 dev-lua/croissant 0.0.1: A Lua REPL and debugger
 dev-lua/dromozoa-utf8 1.19: Lua 5.3 compatible pure-Lua UTF-8 implementation
 dev-lua/hump 0.4.2: Helper Utilities for a Multitude of Problems
@@ -686,7 +694,6 @@ dev-python/cloudflare 2.19.4 4.2.0 4.3.1: Python wrapper for the Cloudflare v4 A
 dev-python/cloup 3.0.7: Click + option groups + constraints + aliases + help themes + ...
 dev-python/cogapp 3.4.1: Cog content generation tool. Small bits of computation for static files
 dev-python/colorspacious 1.1.2: Python library for doing colorspace conversions
-dev-python/colorthief 0.2.1: Module for grabbing the color palette from an image
 dev-python/convertdate 2.4.0: Utils for converting between date formats and calculating holidays
 dev-python/cryptg 0.5.0_p0: Cryptographic utilities for Telegram
 dev-python/dacite 1.8.1: This module simplifies creation of data classes (PEP 557) from dictionaries
@@ -710,7 +717,7 @@ dev-python/dropbox 12.0.2: The offical Dropbox SDK for Python
 dev-python/dtreeviz 2.2.2: A python library for decision tree visualization and model interpretation
 dev-python/evernote2 1.0.3 9999: Unofficial Evernote SDK for Python 3
 dev-python/exif 1.6.0: Read and modify image EXIF metadata using Python.
-dev-python/fastapi 0.115.13 0.115.14: FastAPI framework, high performance, easy to learn, ready for production
+dev-python/fastapi 0.115.13 0.115.14 0.116.0: FastAPI framework, high performance, easy to learn, ready for production
 dev-python/find-libpython 0.4.0: Finds the libpython associated with the current Python environment
 dev-python/flask-restx 1.3.0: Framework API development with Flask
 dev-python/flask-socketio 5.5.1: Socket.IO integration for Flask applications.
@@ -849,7 +856,6 @@ dev-python/python-statemachine 2.3.6 2.4.0 2.5.0: Python Finite State Machines m
 dev-python/python-telegram-bot 20.6-r1 21.1.1 9999: Python wrapper of telegram bots API
 dev-python/pywavefront 1.3.3: Python library for importing Wavefront .obj files
 dev-python/pywebview 4.4.1-r2 5.1-r2: A lightweight cross-platform wrapper around a webview component
-dev-python/pyzstd 0.17.0: Python bindings to Zstandard (zstd) compression library
 dev-python/questionary 2.1.0: Python library to build pretty command line user prompts
 dev-python/queuelib 1.8.0: Collection of persistent and non-persistent queues for Python
 dev-python/readability-lxml 0.8.1 0.8.4.1: Fast html to text parser (article readability tool)
@@ -877,7 +883,7 @@ dev-python/sphinx-hoverxref 1.4.2: Sphinx extension to show tooltips with conten
 dev-python/sphinx-last-updated-by-git 0.3.8: Get the "last updated" time for each Sphinx page from Git
 dev-python/sphinx-paramlinks 0.6.0: Allows param links in Sphinx function/method descriptions to be linkable
 dev-python/sphinx-sitemap 2.6.0 2.7.1 2.7.2: Sitemap generator for Sphinx
-dev-python/sphinxcontrib-katex 0.9.9 0.9.10: KaTeX Sphinx extension for rendering of math in HTML pages
+dev-python/sphinxcontrib-katex 0.9.10 0.9.11: KaTeX Sphinx extension for rendering of math in HTML pages
 dev-python/sphinxext-opengraph 0.10.0: Sphinx extension to generate unique OpenGraph metadata
 dev-python/sphinxnotes-mock 1.0.2: Sphinx extension for mocking directives and roles without modifying documents
 dev-python/sqlmodel 0.0.24: SQL databases in Python, designed for simplicity, compatibility, and robustness.
@@ -944,7 +950,7 @@ dev-util/catppuccin-catwalk 1.3.2: Soothing pastel previews for the high-spirite
 dev-util/catppuccin-whiskers 2.4.0: Soothing port creation tool for the high-spirited!
 dev-util/cmakelang 0.6.13: Provides Quality Assurance (QA) tools for cmake
 dev-util/coq-lsp 0.1.9: Visual Studio Code Extension and Language Server Protocol for Coq
-dev-util/deblob 0.9 0.10 9999: remove binary executables from a directory
+dev-util/deblob 0.10 0.11 9999: remove binary executables from a directory
 dev-util/distribution-gpg-keys 1.113: Collection of GPG keys used in Linux Distributions
 dev-util/dmg2img 9999 20201227: Convert Apple disk images to IMG format.
 dev-util/dockerfile-language-server 0.12.0 0.13.0: A language server for Dockerfiles
@@ -1020,7 +1026,7 @@ dev-vcs/gitqlient-gitserver-plugin 0.2.0: GitQlient GitServer plugin
 dev-vcs/gitqlient-jenkins-plugin 0.2.0: GitQlient Jenkins plugin
 dev-vcs/gitui 0.26.3 0.27.0: blazing fast terminal-ui for git
 dev-vcs/jj 0.29.0 0.30.0 0.31.0 9999: Jujutsu - an experimental version control system
-dev-vcs/lazygit 0.50.0 0.51.1 0.52.0 9999: Simple terminal UI for git commands
+dev-vcs/lazygit 0.50.0 0.51.1 0.52.0 0.53.0 9999: Simple terminal UI for git commands
 dev-vcs/lazyjj 0.5.0: TUI for Jujutsu/jj
 dev-vcs/pijul 1.0.0_beta9: A distributed version control system based on a theory of patches
 dev-zig/zls 0.10.0-r2 0.13.0-r1 0.14.0 9999: Non-official language server for Zig
@@ -1034,7 +1040,7 @@ games-action/technic-launcher 4.768 4.822: Minecraft launcher for community-made
 games-arcade/SpaceCadetPinball 2.0 2.0.1 2.1.0 9999: Decompilation of 3D Pinball for Windows - Space Cadet
 games-arcade/opensurge 0.5.2.1 9999: fun 2D retro platformer inspired by old-school Sonic games
 games-arcade/shiromino 0.2.1: fast-paced puzzle game with roots in the arcade
-games-arcade/taisei 1.4.1 1.4.2 9999: Clone of the Touhou series, written in C using SDL/OpenGL/OpenAL.
+games-arcade/taisei 1.4.2 1.4.3 9999: Clone of the Touhou series, written in C using SDL/OpenGL/OpenAL.
 games-arcade/tetrio-desktop 8 9: TETR.IO desktop client.
 games-board/fairy-stockfish 14.0.1: Chess variant engine derived from Stockfish to support fairy chess variants
 games-board/openriichi 0.2.1.1: OpenRiichi is an open source Japanese Mahjong client
@@ -1057,7 +1063,7 @@ games-fps/assaultcube 1.3.0.2-r1: Free multiplayer FPS based on the Cube engine
 games-fps/crispy-doom 5.12.0 6.0: A limit-removing enhanced-resolution Doom source port based on Chocolate Doom
 games-fps/etlegacy 2.82.0 2.83.2: Wolfenstein: Enemy Territory 2.60b compatible client/server
 games-fps/openspades 0.1.3: Open-source voxel FPS
-games-fps/quakespasm 0.94.1-r1 0.96.3 9999: A modern, cross-platform Quake game engine based on FitzQuake
+games-fps/quakespasm 0.96.3 9999: A modern, cross-platform Quake game engine based on FitzQuake
 games-fps/the-dark-mod-bin 2.12-r1: Inspired by Thief on Doom 3 libre engine (id Tech 4)
 games-misc/asciiquarium 1.1_p20120823: Asciiquarium is an aquarium/sea animation in ASCII art
 games-misc/cbonsai 1.3.1-r1: grow bonsai trees in your terminal
@@ -1104,7 +1110,7 @@ games-util/roll 2.6.1: Program to roll dices specified in a simple and intuitive
 games-util/samrewritten 9999 202008: Steam Achievement Manager For Linux
 games-util/sdl2-gamepad-mapper 0.0.8-r1: GUI application to generate an SDL2 mapping string from a generic controller
 games-util/steamtinkerlaunch 12.12 9999: Wrapper script for Steam custom launch options
-games-util/umu-launcher 1.2.6: Unified launcher for Windows games on Linux
+games-util/umu-launcher 1.2.9: Unified launcher for Windows games on Linux
 games-util/xivlauncher 1.2.1: Custom Launcher for Final Fantasy XIV Online (Crossplatform rewrite)
 games-util/xone 0.3_p20240425 0.3.1: Linux kernel driver for Xbox One and Xbox Series X|S accessories
 gnome-extra/commit 4.1-r1 4.2: Commit message editor
@@ -1310,12 +1316,13 @@ media-gfx/sic 0.22.4: Accessible image processing and conversion from the termin
 media-gfx/silicon 0.5.2-r1 0.5.2-r2 0.5.3: Create beautiful image of your code
 media-gfx/superpaper 2.2.1: Advanced multi monitor wallpaper manager
 media-gfx/svgcleaner 0.9.5: svgcleaner could help you to clean up your SVG files from the unnecessary data.
-media-gfx/swayimg 4.3 4.5: A lightweight image viewer for Wayland display servers
+media-gfx/swayimg 4.3 4.5: Lightweight image viewer for Wayland display servers
 media-gfx/timg 1.6.2: Terminal image and video viewer
 media-gfx/vimiv-qt 0.9.0-r1: An image viewer with vim-like keybindings
 media-gfx/vpuppr 0.9.0-r1: VTuber application made with Godot 3.4
 media-gfx/zw3d 2023.0.3.1-r1 2025.0.3.0: CAD/CAM software for 3D design and processing
 media-gfx/zwcad 2023.23.0.3.4-r2: CAD software for 2D drawing, reviewing and printing work
+media-libs/VulkanMemoryAllocator 3.3.0: Easy to integrate Vulkan memory allocation library
 media-libs/alsa-ucm-pinephone 1.2.6.3: ALSA ucm configuration files for the PinePhone (Pro)
 media-libs/alvr 16.0.0: ALVR is an open source remote VR display for the Oculus Go/Quest
 media-libs/amdvlk 2025.2.1: AMD Open Source Driver for Vulkan
@@ -1358,7 +1365,7 @@ media-sound/bespokesynth 1.2.1 1.3.0: Software modular synth
 media-sound/callaudiod 0.1.9 0.1.10: Call audio routing daemon
 media-sound/corrscope 0.10.0-r1 0.10.1: Advanced oscilloscope audio visualizer specializing in chiptune
 media-sound/deep-filter 0.5.6-r2: Noise supression using deep filtering
-media-sound/drumgizmo 0.9.20 0.9.20-r1 9999: Audio sampler plugin and stand-alone app that simulates a real drum kit
+media-sound/drumgizmo 0.9.20-r1 9999: Audio sampler plugin and stand-alone app that simulates a real drum kit
 media-sound/dzr 240909: DZR: the command line deezer.com player
 media-sound/eartag 0.5.0 0.5.1: GTK4 MusicBrainz audio tagger
 media-sound/fooyin 0.8.1 0.8.1_p20250622 9999: A customizable music player, Qt clone of foobar2000
@@ -1390,7 +1397,8 @@ media-sound/qbitmplayer 3.1.2 3.2.0-r1 3.3.1: Music Player written in C++ & Qt.
 media-sound/qloud 1.4.2: Tool to measure loudspeaker frequency and step responses and distortions
 media-sound/rmpc 0.9.0: A beautiful and configurable TUI client for MPD
 media-sound/rsgain 3.5.1 3.5.3: Really Simple replay Gain calculator for tagging audio files
-media-sound/spct 1.1.3: A CLI program to play back or render SPC files.
+media-sound/shortwave 5.0.0: An internet radio player
+media-sound/spct 1.1.3 1.1.7: CLI program for playing back and rendering SPC files.
 media-sound/spot 0.4.0-r2: GTK4 Spotify (Premium) client
 media-sound/spotify-adblock 1.0.1 1.0.2 1.0.3: Adblocker for Spotify
 media-sound/spotify-player 0.19.1 0.20.4 0.20.5 9999: spotify_player is a fast, easy to use, and configurable terminal music player.
@@ -1693,7 +1701,7 @@ sci-mathematics/rink 0.8.0-r1 9999: Unit conversion tool, similar to frink
 sci-mathematics/rstudio-desktop-bin 2023.09.1_p494 2024.12.0_p467 2024.12.0_p467-r1: IDE for R and Python
 sci-misc/boinc-wrapper 26018-r2 26018-r3: Wrapper to use non-BOINC apps with BOINC
 sci-misc/llama-cpp 0_pre4576 0_pre5097 0_pre5332 0_pre5633-r1 0_pre5821 0_pre5857 9999: Port of Facebook's LLaMA model in C/C++
-sci-ml/ollama 0.9.3 0.9.5 9999: Get up and running with Llama 3, Mistral, Gemma, and other language models.
+sci-ml/ollama 0.9.3 0.9.5 0.9.6 9999: Get up and running with Llama 3, Mistral, Gemma, and other language models.
 sci-physics/openmodelica 1.24.0-r1: Open-source Modelica-based modeling and simulation environment
 sci-physics/ovito 3.10.4 3.10.5 3.10.5-r1: Open Visualization Tool
 sec-keys/openpgp-keys-aepaneshnikov 20221210: OpenPGP keys used by Alexander Epaneshnikov
@@ -1836,8 +1844,8 @@ www-client/browsh 1.8.2: A fully-modern text-based browser, rendering to TTY and
 www-client/mullvad-browser-bin 14.5.4: The Mullvad Browser is developed to minimize tracking and fingerprinting.
 www-client/nyxt 3.11.8 3.12.0 9999: Nyxt - the hacker's power-browser
 www-client/vimb 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
-www-client/yandex-browser 25.4.1.1132_p1: The web browser from Yandex
-www-client/zen-bin 1.12.8b 1.12.10b 1.14.2b: Zen Browser - A fast, privacy-focused Firefox fork
+www-client/yandex-browser 25.4.1.1213_p1: The web browser from Yandex
+www-client/zen-bin 1.14.2b 1.14.3b: Zen Browser - A fast, privacy-focused Firefox fork
 www-misc/dufs 0.40.0: Dufs is a distinctive utility file server
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits
 www-misc/kiwix-desktop 2.4.0: cross-platform viewer/manager for ZIM archives
