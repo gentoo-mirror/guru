@@ -1,0 +1,13 @@
+BDEPEND=>=net-libs/nodejs-18.19.30[npm]
+DEFINED_PHASES=install postinst unpack
+DESCRIPTION=A language server for Bash
+EAPI=8
+HOMEPAGE=https://github.com/bash-lsp/bash-language-server
+INHERIT=optfeature
+KEYWORDS=~amd64
+LICENSE=BSD-2 ISC MIT
+RDEPEND=>=net-libs/nodejs-18.19.30
+SLOT=0
+SRC_URI=mirror://npm/bash-language-server/-/bash-language-server-5.6.0.tgz https://github.com/ingenarel/guru-depfiles/releases/download/bash-language-server-5.6.0-deps.tar.xz/bash-language-server-5.6.0-deps.tar.xz
+_eclasses_=optfeature	538bce96e5589935b57e178e8635f301
+_md5_=a922fc524be7da865f7d8fff3d08fec0

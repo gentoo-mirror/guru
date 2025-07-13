@@ -77,6 +77,7 @@ app-accessibility/mimic1 1.3.0.1-r1 9999: Mycroft's TTS engine, based on CMU's F
 app-accessibility/rhvoice 1.14.0 1.16.4: Multilingual text-to-speech engine (metapackage)
 app-accessibility/rhvoice-core 1.14.0-r1 1.16.4: Multilingual text-to-speech engine
 app-accessibility/speakup-tools 20121017: Tools to customize speakup module
+app-accessibility/whisper-cpp 1.7.6: Port of OpenAI's Whisper model in C/C++
 app-admin/agru 0.1.15: A tool for managing GitLab groups and projects
 app-admin/akita 0.1.4: An HTTP log monitoring tool for your terminal
 app-admin/ananicy-cpp 1.1.1-r3: Ananicy rewritten in C++ for much lower CPU and memory usage
@@ -131,7 +132,7 @@ app-backup/restic-browser 0.3.2_p20250523 0.3.2_p20250523-r1: A GUI to browse an
 app-backup/timeshift 23.07.1: A system restore utility for Linux
 app-backup/timeshift-autosnap 0.9-r1: Automatically creates a timeshift-snapshot when executed
 app-benchmarks/kdiskmark 3.2.0: Disk benchmarking tool
-app-benchmarks/occt-bin 14.0.13: All-in-one stability, stress test, benchmark and monitoring tool
+app-benchmarks/occt-bin 14.2.1: All-in-one stability, stress test, benchmark and monitoring tool
 app-benchmarks/phoronix-test-suite 10.8.4 9999: Phoronix's comprehensive, cross-platform testing and benchmark suite
 app-benchmarks/poop 0.5.0 9999: Performance Optimizer Observation Platform
 app-benchmarks/unigine-superposition 1.1: Game like benchmark (CPU, GPU), for ~5 minutes
@@ -243,7 +244,7 @@ app-misc/fff 2.2: A simple file manager written in bash
 app-misc/gentodo 0.2.1 1.1.0 1.1.1 9999: Todo program to help enhance your Gentoo workflow
 app-misc/ghq 1.1.0 1.1.5: Remote repository management made easy
 app-misc/github-desktop-bin 3.3.1_rc1: Linux fork of GitHub Desktop
-app-misc/glow 1.5.1 2.0.0: Render markdown on the CLI, with pizzazz!
+app-misc/glow 1.5.1 2.0.0 2.1.1: Render markdown on the CLI, with pizzazz!
 app-misc/godedupe 1.5.1 1.5.2: Improved and modern fdupes alternative
 app-misc/gopsuinfo 0.1.5: A gopsutil-based command to display system usage info as text
 app-misc/grit 0.3.0: An personal task manager that represents tasks as multitree nodes
@@ -286,7 +287,7 @@ app-misc/qman 1.4.1-r1 1.4.2 9999: A more modern manual page viewer for our term
 app-misc/rememberthemilk 1.3.11-r1: Freemium simple to-do tasks manager
 app-misc/s6-man 9999: mdoc versions of the HTML documentation for the s6 supervision suite
 app-misc/sherlock 0.15.0 9999: Hunt down social media accounts by username across social networks
-app-misc/superfile 1.1.7.1 1.2.0.0 1.2.1 9999: Pretty fancy and modern terminal file manager
+app-misc/superfile 1.1.7.1 1.2.0.0 1.2.1 1.3.1 9999: Pretty fancy and modern terminal file manager
 app-misc/tealdeer 1.6.1-r1: A very fast implementation of tldr in Rust.
 app-misc/termdown 1.18.0-r1: Countdown timer and stopwatch in your terminal
 app-misc/tinyfetch 5.2 6.1 6.2 9999: fetch program written in pure C
@@ -307,7 +308,7 @@ app-misc/wlx-overlay-s 25.4.2 9999: A lightweight OpenXR/OpenVR overlay for Wayl
 app-misc/wtf 0.43.0: The personal information dashboard for your terminal
 app-misc/x86-64-level 0.2.2 9999: Get the x86-64 Microarchitecture Level on the Current Machine
 app-misc/xplr 0.21.3-r1: A hackable, minimal, fast TUI file explorer
-app-misc/yazi 25.2.11-r1 25.3.2 25.4.8 9999: Blazing fast terminal file manager written in Rust, based on async I/O.
+app-misc/yazi 25.2.11-r1 25.3.2 25.4.8 25.5.31 9999: Blazing fast terminal file manager written in Rust, based on async I/O.
 app-misc/zcock 0.2.1 0.2.2: Print an emoji according to traditional chinese calendar and more
 app-mobilephone/flashlight 0.1.1-r2: It's a flashlight, what do you expect?
 app-mobilephone/mobile-config-firefox 2.1.0: Mobile and privacy friendly configuration for Firefox
@@ -425,6 +426,7 @@ dev-cpp/dpp 10.0.23 10.0.24 10.0.25 10.0.29 10.0.30 10.0.33: Lightweight C++ Dis
 dev-cpp/drogon 1.9.5 1.9.6: C++14/17 based HTTP web application framework
 dev-cpp/fast_double_parser 0.8.0: Parse strings into double floating-point values
 dev-cpp/finalcut 0.9.1-r1 9999: A text-based widget toolkit
+dev-cpp/fkYAML 0.4.2 0.4.2_p20250522: A C++ header-only YAML library
 dev-cpp/gsl-lite 0.38.0: C++ Guideline Support Library implementation
 dev-cpp/indicators 2.3 2.3-r1: Activity indicators for modern C++
 dev-cpp/mustache 4.1 4.1_p20211210: Mustache implementation for modern C++
@@ -938,7 +940,7 @@ dev-tex/ninecolors 2022.02.13: Select colors with proper WCAG color contrast
 dev-tex/tabularray 2023.03.01: Typeset tabulars and arrays with LATEX3
 dev-tex/tectonic 0.15.0 0.15.0-r1: A modernized, complete, embeddable TeX/LaTeX engine.
 dev-util/DirectXShaderCompiler 1.8.2502: Microsoft DirectX Shader Compiler which is based on LLVM/Clang
-dev-util/bash-language-server 5.3.3 5.4.0 5.4.2 5.4.3: A language server for Bash
+dev-util/bash-language-server 5.3.3 5.4.0 5.4.2 5.4.3 5.6.0: A language server for Bash
 dev-util/bats-assert 2.1.0: Common assertions for Bats
 dev-util/bats-support 0.3.0: Supporting library for Bats test helpers
 dev-util/bc-ur 0.3.0: Blockchain Commons UR Library
@@ -1509,7 +1511,7 @@ net-im/teams-for-linux 2.0.3 2.0.4 2.0.8: Unofficial Microsoft Teams client for 
 net-im/vesktop-bin 1.5.6 1.5.7: All-in-one voice and text chat for gamers with Vencord Preinstalled
 net-im/zulip-desktop-bin 5.11.1 5.12.0: Organized chat for distributed teams.
 net-irc/catgirl 2.2 2.2a: TLS-only terminal IRC client
-net-irc/halloy 2025.3 2025.4 2025.5 2025.6: IRC application written in Rust
+net-irc/halloy 2025.4 2025.5 2025.6: IRC application written in Rust
 net-irc/limnoria-plugins-bugzilla 4.0: Bugzilla integration plugin for the Limnoria IRC Bot
 net-irc/litterbox 1.9: TLS-only IRC logger
 net-irc/pounce 3.0 3.1 3.1-r1: Multi-client, TLS-only IRC bouncer
@@ -1606,7 +1608,7 @@ net-p2p/yggdrasil-go 0.5.12 9999: An experiment in scalable routing as an encryp
 net-print/hpuld 1.00.39.15.00.23-r1: HP Unified Linux Driver (for samsung hardware)
 net-proxy/MTProxy 3.0.4-r1: Community fork of MTProxy
 net-proxy/byedpi 0.16.6 0.17 0.17.1 0.17.2 9999: Bypass DPI SOCKS proxy
-net-proxy/nekoray 4.3.5-r1: Qt based cross-platform GUI proxy configuration manager
+net-proxy/nekoray 4.3.7: Qt based cross-platform GUI proxy configuration manager
 net-proxy/ngrok-bin 3.20.0: ngrok is a reverse proxy, firewall, and API gateway
 net-proxy/shadowsocks-rust 1.22.0: A Rust port of shadowsocks
 net-proxy/snowflake 2.10.1 2.11.0: Pluggable Transport using WebRTC, inspired by Flashproxy
@@ -1764,7 +1766,7 @@ sys-block/ublksrv 1.4: Userspace block device driver
 sys-boot/customrescuecd-x86_64-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/drbl 5.4.2: Diskless Remote Boot in Linux
 sys-boot/grml-rescueboot 0.6.1: grub2 script to add ISO images to the grub2 boot menu
-sys-boot/limine 9.3.0 9.3.2 9.3.4: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
+sys-boot/limine 9.3.0 9.3.2 9.3.4 9.4.0: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
 sys-boot/mkusb 23.2.0: CLI and GUI for creating bootable live USB, with optional persistent storage
 sys-boot/ventoy-bin 1.0.97 1.0.98: Creator of bootable USBs, with ability to copy ISOs, persistence storage
 sys-boot/zfsbootmenu 1.12.0 2.2.2 2.3.0: ZFS bootloader for root-on-ZFS systems
@@ -1845,7 +1847,7 @@ www-client/mullvad-browser-bin 14.5.4: The Mullvad Browser is developed to minim
 www-client/nyxt 3.11.8 3.12.0 9999: Nyxt - the hacker's power-browser
 www-client/vimb 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
 www-client/yandex-browser 25.4.1.1213_p1: The web browser from Yandex
-www-client/zen-bin 1.14.2b 1.14.3b: Zen Browser - A fast, privacy-focused Firefox fork
+www-client/zen-bin 1.14.2b 1.14.3b 1.14.4b: Zen Browser - A fast, privacy-focused Firefox fork
 www-misc/dufs 0.40.0: Dufs is a distinctive utility file server
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits
 www-misc/kiwix-desktop 2.4.0: cross-platform viewer/manager for ZIM archives

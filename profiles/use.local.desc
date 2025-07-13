@@ -4,6 +4,8 @@
 
 app-accessibility/rhvoice:redistributable - Install also non-free (but redistributable) voices
 app-accessibility/rhvoice-core:speech-dispatcher - Build a speech-dispatcher middleware module
+app-accessibility/whisper-cpp:hip - Build a HIP (ROCm) backend
+app-accessibility/whisper-cpp:sdl2 - Build and install example applications that use media-libs/libsdl2
 app-admin/ananicy-cpp:bpf - Use eBPF for processing
 app-admin/ananicy-cpp:clang - Use Clang compiler instead of GCC
 app-admin/fatrace:powertop - Install power-usage-report script
@@ -530,7 +532,7 @@ media-gfx/bonzomatic:wayland - Build non-system-glfw for wayland instead of X11
 media-gfx/glslViewer:ffmpeg - Enable ffmpeg/libav-based audio/video codec support
 media-gfx/glslViewer:xvfb - Enable support for thumbnail creation via Xvfb
 media-gfx/nsxiv:statusbar - Add statusbar support
-media-gfx/swayimg:drm - Enable DRM renderig support (DRM UI)
+media-gfx/swayimg:drm - Enable support for Direct Rendering Manager (DRM UI)
 media-gfx/swayimg:exr - Enable support for EXR image format
 media-gfx/swayimg:sixel - Enable support for Sixel image format
 media-gfx/swayimg:wayland - Enable Wayland UI and some compositors (Sway and Hyprland only)
