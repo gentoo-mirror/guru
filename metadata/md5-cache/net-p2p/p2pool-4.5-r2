@@ -11,5 +11,5 @@ LICENSE=BSD GPL-3+ ISC LGPL-3+ MIT
 RDEPEND=dev-libs/libsodium:= dev-libs/libuv:= dev-libs/randomx net-libs/zeromq:= net-misc/curl daemon? ( acct-group/monero acct-user/monero )
 SLOT=0
 SRC_URI=https://github.com/SChernykh/p2pool/releases/download/v4.5/p2pool_source.tar.xz -> p2pool-4.5.tar.xz verify-sig? ( https://github.com/SChernykh/p2pool/releases/download/v4.5/sha256sums.txt.asc -> p2pool-4.5_shasums.asc )
-_eclasses_=toolchain-funcs	a6df79c1e9bc84369dbf3d44206ac772	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	460729dc36f68cf03b044bc1d367e34a	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	verify-sig	4e83419d7fb5d336f6a4de8193968319
+_eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	460729dc36f68cf03b044bc1d367e34a	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	verify-sig	4e83419d7fb5d336f6a4de8193968319
 _md5_=9fd57101bf28a54f5a8d5c82dc3c790d
