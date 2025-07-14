@@ -214,7 +214,6 @@ app-misc/afc 1.1 1.2 9999: Anime File Checker, checks CRC32 contained in filenam
 app-misc/afetch 2.2.0: Simple system info written in C
 app-misc/agg 1.5.0 1.5.0-r1: Command-line tool for generating animated GIF files from asciicast v2 files
 app-misc/ani-cli 4.9 4.10 9999: A cli to browse and watch anime.
-app-misc/anki-bin 25.02: A spaced-repetition memory training program (flash cards)
 app-misc/arttime 2.3.4: CLI application that blends beauty of ASCII
 app-misc/astroterm 1.0.7: A planetarium for your terminal!
 app-misc/aw-client 0.11.0: Client library for ActivityWatch
@@ -313,7 +312,6 @@ app-misc/zcock 0.2.1 0.2.2: Print an emoji according to traditional chinese cale
 app-mobilephone/flashlight 0.1.1-r2: It's a flashlight, what do you expect?
 app-mobilephone/mobile-config-firefox 2.1.0: Mobile and privacy friendly configuration for Firefox
 app-mobilephone/pinephone-modem-scripts 0.20.8: Modem scripts for the PinePhone
-app-mobilephone/usb-tethering 0.3: USB tethering on Pine64/ConfigFS systems
 app-office/beancount 2.3.6: A double-entry accounting system that uses text files as input
 app-office/invoice 0.1.0: Generate invoices from the command line
 app-office/jameica-bin 2.10.4: Local platform for home banking
@@ -420,7 +418,7 @@ dev-cpp/blurhash 0.2.0 0.2.0-r1: C++ blurhash encoder/decoder
 dev-cpp/boxed-cpp 1.4.3: Boxing primitive types in C++
 dev-cpp/coeurl 0.3.0 0.3.1: A simple async wrapper around CURL for C++
 dev-cpp/cpp-jwt 1.5_pre20220727: JSON Web Token library for C++
-dev-cpp/cpprestsdk 2.10.19-r5: A Microsoft project for cloud-based client-server communication.
+dev-cpp/cpprestsdk 2.10.19-r5 2.10.19-r6: A Microsoft project for cloud-based client-server communication.
 dev-cpp/cpptrace 1.0.0 1.0.1 1.0.2 9999: Simple, portable, and self-contained stacktrace library for C++
 dev-cpp/dpp 10.0.23 10.0.24 10.0.25 10.0.29 10.0.30 10.0.33: Lightweight C++ Discord bot library
 dev-cpp/drogon 1.9.5 1.9.6: C++14/17 based HTTP web application framework
@@ -843,14 +841,14 @@ dev-python/pytest-mypy-plugins 3.1.0: pytest plugin for testing mypy types, stub
 dev-python/pytest-relaxed 2.0.2: Relaxed test discovery for pytest
 dev-python/pytest-steps 1.8.0: Create step-wise / incremental tests in pytest
 dev-python/python-barbicanclient 7.0.0 7.1.0: Client library for Barbican API.
-dev-python/python-designateclient 6.2.0: OpenStack DNS-as-a-Service - Client
+dev-python/python-designateclient 6.3.0: OpenStack DNS-as-a-Service - Client
 dev-python/python-fire 0.6.0 0.7.0: Library for automatically generating command line interfaces from Python objects
 dev-python/python-http-client 3.3.5-r1: HTTP REST client, simplified for Python
 dev-python/python-lsp-isort 0.2.1: isort plugin for the Python LSP Server
 dev-python/python-lsp-mypy 0.7.0: Mypy plugin for the Python LSP Server
 dev-python/python-magnumclient 4.8.1: A client for the OpenStack Magnum API
-dev-python/python-manilaclient 5.4.0: Python bindings to the OpenStack Manila API
-dev-python/python-octaviaclient 3.10.0-r1: A client for the OpenStack Octavia API
+dev-python/python-manilaclient 5.5.0: Python bindings to the OpenStack Manila API
+dev-python/python-octaviaclient 3.11.1: A client for the OpenStack Octavia API
 dev-python/python-olm 3.2.16: Python bindings for dev-libs/olm
 dev-python/python-pidfile 3.1.1: PIDFile context processor. Supported py2 and py3
 dev-python/python-socketio 5.11.4 5.12.1: Python implementation of the Socket.IO realtime server.
@@ -1024,8 +1022,6 @@ dev-util/xxd 9.1.0895: Hexdump utility from vim
 dev-util/yaml-language-server 1.14.0 1.15.0: Language Server for YAML Files
 dev-vcs/gitahead 2.7.1 2.7.1-r1: Graphical Git client to help understand and manage source code history
 dev-vcs/gitqlient 1.6.2 1.6.3 9999: Multi-platform Git client written with Qt
-dev-vcs/gitqlient-gitserver-plugin 0.2.0: GitQlient GitServer plugin
-dev-vcs/gitqlient-jenkins-plugin 0.2.0: GitQlient Jenkins plugin
 dev-vcs/gitui 0.26.3 0.27.0: blazing fast terminal-ui for git
 dev-vcs/jj 0.29.0 0.30.0 0.31.0 9999: Jujutsu - an experimental version control system
 dev-vcs/lazygit 0.50.0 0.51.1 0.52.0 0.53.0 9999: Simple terminal UI for git commands
@@ -1249,7 +1245,7 @@ gui-libs/gtk4-layer-shell 1.0.2 1.0.4 1.1.1: A library for using the Layer Shell
 gui-libs/libcprime 5.0.0: Library for managing settings of CoreApps
 gui-libs/libcsys 5.0.0: Library for managing the device
 gui-libs/libsfdo 0.1.3 0.1.4: A collection of libraries which implement some freedesktop.org specifications
-gui-libs/mir 2.20.1 2.20.2: Set of libraries for building Wayland based shells
+gui-libs/mir 2.20.2 2.21.1: Set of libraries for building Wayland based shells
 gui-libs/qdocumentview 0.3.0.1: Widget to render multi-page documents
 gui-libs/scenefx 0.1 0.2 0.2.1 0.3 0.4.1: A replacement for the wlroots scene API with eye-candy effects.
 gui-libs/xdg-desktop-portal-hyprland 1.3.9-r1 9999: xdg-desktop-portal backend for Hyprland
@@ -1257,10 +1253,10 @@ gui-wm/cage 0.2.0 9999: A Wayland kiosk
 gui-wm/hyprland-contrib 0.1-r1 9999: Community-maintained extensions for hyprland
 gui-wm/labwc 0.8.3-r1 0.8.4-r1 9999: Openbox alternative for wayland
 gui-wm/maomaowm 0.7.1 9999: wayland compositor based on wlroots and scenefx(dwl but no suckless)
-gui-wm/miracle-wm 0.4.1 0.5.2: Tiling Wayland compositor based on Mir
+gui-wm/miracle-wm 0.5.2 0.6.1: Tiling Wayland compositor based on Mir
 gui-wm/niri 25.02 25.05.1: Scrollable-tiling Wayland compositor
 gui-wm/phoc 0.46.0 0.47.0 0.48.0: Wayland compositor for mobile phones
-gui-wm/river 0.3.7 0.3.9: A dynamic tiling Wayland compositor
+gui-wm/river 0.3.7 0.3.9 0.3.11: A dynamic tiling Wayland compositor
 gui-wm/swayfx 0.4-r2 0.5 0.5.3: SwayFX: Sway, but with eye candy!
 kde-apps/kwalletcli 3.03: CLI for the KDE Wallet
 kde-misc/geminipart 20241121 20241215: KPart for viewing text/gemini files
@@ -1387,7 +1383,6 @@ media-sound/musikcube 3.0.2 3.0.4: Excellent terminal music player, support almo
 media-sound/netcat-cpi 2014.04.29-r1: Kernel module edition of the Cycles Per Instruction (2014) album
 media-sound/noson-app 5.6.6-r1 5.6.8: The essential to control music from your SONOS devices on Linux platforms
 media-sound/nuclear-bin 0.6.30: Nuclear is a streaming program that pulls content from free sources on internet
-media-sound/nulloy 0.9.5 0.9.8 0.9.8.7 0.9.9-r1 9999: Music player with a waveform progress bar (sound visualization)
 media-sound/opensoundmeter 1.2.1 1.2.2 1.2.2_p20230104: FFT based application for tuning sound systems
 media-sound/openutau 0.1.327 0.1.463 0.1.529 9999: Open source UTAU successor
 media-sound/pamixer 1.6 9999: Pulseaudio command line mixer.
@@ -1508,7 +1503,7 @@ net-im/revolt-desktop 1.0.8-r2: Revolt Desktop App
 net-im/session-desktop-bin 1.15.1 1.15.2: Session Desktop - Onion routing based messenger
 net-im/sliding-sync 0.99.15 0.99.19: Proxy implementation of MSC3575's sync protocol.
 net-im/teams-for-linux 2.0.3 2.0.4 2.0.8: Unofficial Microsoft Teams client for Linux. Binary precompiled version.
-net-im/vesktop-bin 1.5.6 1.5.7: All-in-one voice and text chat for gamers with Vencord Preinstalled
+net-im/vesktop-bin 1.5.6 1.5.7 1.5.8: All-in-one voice and text chat for gamers with Vencord Preinstalled
 net-im/zulip-desktop-bin 5.11.1 5.12.0: Organized chat for distributed teams.
 net-irc/catgirl 2.2 2.2a: TLS-only terminal IRC client
 net-irc/halloy 2025.4 2025.5 2025.6: IRC application written in Rust
@@ -1769,7 +1764,7 @@ sys-boot/grml-rescueboot 0.6.1: grub2 script to add ISO images to the grub2 boot
 sys-boot/limine 9.3.0 9.3.2 9.3.4 9.4.0: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
 sys-boot/mkusb 23.2.0: CLI and GUI for creating bootable live USB, with optional persistent storage
 sys-boot/ventoy-bin 1.0.97 1.0.98: Creator of bootable USBs, with ability to copy ISOs, persistence storage
-sys-boot/zfsbootmenu 1.12.0 2.2.2 2.3.0: ZFS bootloader for root-on-ZFS systems
+sys-boot/zfsbootmenu 1.12.0 2.2.2 2.3.0 3.0.1: ZFS bootloader for root-on-ZFS systems
 sys-cluster/genders 1.28.1-r1: Static cluster configuration database used for cluster configuration management
 sys-cluster/kops-bin 1.25.3 1.31.0: Kubernetes Operations
 sys-cluster/opencoarrays 2.9.3-r1 2.10.0-r1 2.10.1-r1 2.10.2: A parallel application binary interface for Fortran 2018 compilers
@@ -1918,7 +1913,6 @@ x11-themes/materia-theme 20210322: A Material Design theme for GNOME/GTK based d
 x11-themes/midnight 9999: Dark GTK-2, GTK-3, Gnome Shell, Cinnamon & Xfwm4 themes base on Arc-Theme
 x11-themes/neonly-cursor 1.0.0 2.0.0: Cursor theme using a custom color palette inspired by boreal colors
 x11-themes/nordzy-cursors 2.3.0: Cursor theme using the Nord color palette and based on Vimix and cz-Viator
-x11-themes/nulloy-theme-night 1.1.5: Black minimal theme for Nulloy music player (that one with the waveform)
 x11-themes/obsidian-icon-theme 4.15-r1 9999: Obsidian Icon Theme is intuitive Faenza-like icon theme
 x11-themes/obsidian2-gtk-theme 2.24 9999: Obsidian Gnome Theme, based upon Adwaita-Maia dark skin
 x11-themes/papirus-claws-mail-theme 0_pre20181023 0_pre20201019: Papirus icon theme for Claws Mail

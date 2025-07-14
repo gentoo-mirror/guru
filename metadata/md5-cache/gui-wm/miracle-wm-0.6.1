@@ -1,0 +1,17 @@
+BDEPEND=virtual/pkgconfig test? ( dev-cpp/gtest ) app-alternatives/ninja >=dev-build/cmake-3.20.5
+DEFINED_PHASES=compile configure install prepare setup test
+DEPEND=dev-cpp/yaml-cpp:= dev-cpp/nlohmann_json dev-libs/glib:2 dev-libs/json-c:= dev-libs/libevdev dev-libs/libpcre2:= dev-libs/wayland >=gui-libs/mir-2.18:= media-libs/libglvnd x11-base/xwayland media-libs/glm
+DESCRIPTION=Tiling Wayland compositor based on Mir
+EAPI=8
+HOMEPAGE=https://github.com/miracle-wm-org/miracle-wm
+INHERIT=cmake python-single-r1
+IUSE=systemd test +python_single_target_python3_13
+KEYWORDS=~amd64
+LICENSE=GPL-3+ MIT
+RDEPEND=dev-cpp/yaml-cpp:= dev-cpp/nlohmann_json dev-libs/glib:2 dev-libs/json-c:= dev-libs/libevdev dev-libs/libpcre2:= dev-libs/wayland >=gui-libs/mir-2.18:= media-libs/libglvnd x11-base/xwayland systemd? ( python_single_target_python3_13? ( dev-lang/python:3.13 ) python_single_target_python3_13? ( dev-python/dbus-next[python_targets_python3_13(-)] dev-python/tenacity[python_targets_python3_13(-)] ) )
+REQUIRED_USE=systemd? ( ^^ ( python_single_target_python3_13 ) )
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/miracle-wm-org/miracle-wm/archive/refs/tags/v0.6.1.tar.gz -> miracle-wm-0.6.1.tar.gz
+_eclasses_=toolchain-funcs	a6df79c1e9bc84369dbf3d44206ac772	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	460729dc36f68cf03b044bc1d367e34a	python-utils-r1	bb392d69d55c48a5483d356933a26d57	python-single-r1	47d8ac9be330c9366112b78fd4f8ce57
+_md5_=50b1c49784a2be3fa512a2027ce36a9c
