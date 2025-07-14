@@ -3,13 +3,15 @@
 
 EAPI=8
 
-inherit cmake vcs-snapshot
+inherit cmake
 
 EGIT_COMMIT="721edb3e1a817e527fd9e1e18a3bea300822522e"
 
 DESCRIPTION="A C++ header-only YAML library"
 HOMEPAGE="https://fktn-k.github.io/fkYAML/"
 SRC_URI="https://github.com/fktn-k/fkYAML/archive/${EGIT_COMMIT}.tar.gz -> ${P}.tar.gz"
+
+S="${WORKDIR}/${PN}-${EGIT_COMMIT}"
 
 LICENSE="MIT"
 SLOT="0"
@@ -26,7 +28,7 @@ PATCHES=(
 )
 
 src_prepare() {
-	find thirdparty -mindepth 1 -not -name imapdl -delete
+	find thirdparty -mindepth 1 -not -name imapdl -delete || die
 
 	cmake_src_prepare
 }

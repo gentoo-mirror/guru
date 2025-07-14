@@ -33,6 +33,7 @@ RDEPEND="
 	x11-libs/libdrm
 	x11-libs/libxcb:=
 	x11-libs/libxkbcommon
+	x11-libs/pixman
 	virtual/libudev:=
 	X? ( x11-libs/libX11 )
 "
@@ -58,7 +59,7 @@ PATCHES=(
 
 src_prepare() {
 	cmake_src_prepare
-	cmake_comment_add_subdirectory examples/
+	cmake_comment_add_subdirectory examples/ examples/tests/
 }
 
 src_configure() {

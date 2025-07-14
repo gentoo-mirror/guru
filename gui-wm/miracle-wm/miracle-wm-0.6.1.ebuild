@@ -3,7 +3,9 @@
 
 EAPI=8
 
-inherit cmake systemd
+PYTHON_COMPAT=( python3_13 )
+
+inherit cmake python-single-r1
 
 DESCRIPTION="Tiling Wayland compositor based on Mir"
 HOMEPAGE="https://github.com/miracle-wm-org/miracle-wm"
@@ -13,21 +15,33 @@ LICENSE="GPL-3+ MIT"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE="systemd test"
+REQUIRED_USE="systemd? ( ${PYTHON_REQUIRED_USE} )"
 RESTRICT="!test? ( test )"
 
-RDEPEND="
+COMMON_DEPEND="
 	dev-cpp/yaml-cpp:=
 	dev-cpp/nlohmann_json
 	dev-libs/glib:2
 	dev-libs/json-c:=
 	dev-libs/libevdev
 	dev-libs/libpcre2:=
+	dev-libs/wayland
 	>=gui-libs/mir-2.18:=
 	media-libs/libglvnd
 	x11-base/xwayland
 "
+RDEPEND="
+	${COMMON_DEPEND}
+	systemd? (
+		${PYTHON_DEPS}
+		$(python_gen_cond_dep '
+			dev-python/dbus-next[${PYTHON_USEDEP}]
+			dev-python/tenacity[${PYTHON_USEDEP}]
+		')
+	)
+"
 DEPEND="
-	${RDEPEND}
+	${COMMON_DEPEND}
 	media-libs/glm
 "
 BDEPEND="
@@ -35,20 +49,29 @@ BDEPEND="
 	test? ( dev-cpp/gtest )
 "
 
+PATCHES=(
+	"${FILESDIR}/${P}-conditional-tests.patch"
+)
+
+pkg_setup() {
+	use systemd && python-single-r1_pkg_setup
+}
+
 src_prepare() {
 	cmake_src_prepare
 	use test || cmake_comment_add_subdirectory tests/
-
-	sed -i "s| /usr/lib/systemd/user| $(systemd_get_userunitdir)|" CMakeLists.txt || die
+	use systemd && python_fix_shebang session/usr/bin/libexec/miracle-wm-wait-sni-ready
 }
 
 src_configure() {
 	local mycmakeargs=(
 		-DSYSTEMD_INTEGRATION=$(usex systemd)
+		-DWITH_TESTS=$(usex test)
 	)
 	cmake_src_configure
 }
 
 src_test() {
-	"${BUILD_DIR}/bin/miracle-wm-tests" || die
+	"${BUILD_DIR}/tests/miracle-wm-tests" || die
+	"${BUILD_DIR}/miracle-wm-config/test_miracle_wm_config_c_api" || die
 }

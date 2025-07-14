@@ -45,18 +45,6 @@ app-misc/mobile-datovka
 app-backup/b2
 dev-util/mock
 
-# Lucio Sauer <watermanpaint@posteo.net> (2025-06-04)
-# Ebuild effectively unmaintained since 2021. I was unable to find the origin
-# of the installed files, so I don't see a reason to keep this.
-# Removal on 2025-07-04
-app-mobilephone/usb-tethering
-
-# Lucio Sauer <watermanpaint@posteo.net> (2025-06-03)
-# Superseded by app-misc/anki::gentoo and poses extra maintenance burden with
-# little to no benefit.
-# Removal on 2025-07-03
-app-misc/anki-bin
-
 # David (stkw0) Roman <davidroman96@gmail.com> (2025-06-03)
 # Unmaintained since 2021, fails to compile. Bug #859643
 # Removal on 2025-07-30
@@ -67,16 +55,8 @@ app-crypt/uacme
 # Masked until upstream supports running without stem.
 www-apps/whoogle-search
 
-# Anna (cybertailor) Vyalkova <cyber+gentoo@sysrq.in> (2025-05-24)
-# Poor quality ebuild with incorrect deps, including masked dev-qt/linguist.
-# Removal on 2025-06-24.
-media-sound/nulloy
-x11-themes/nulloy-theme-night
-
 # David (stkw0) Roman <davidroman96@gmail.com> (2025-04-30)
 # Depends on removed dev-qt/qtwebengine:5, they should be moved to qtwebengine:6
-dev-vcs/gitqlient-gitserver-plugin
-dev-vcs/gitqlient-jenkins-plugin
 media-video/stremio
 sci-physics/openmodelica
 
