@@ -4,12 +4,11 @@
 EAPI=8
 
 declare -A GIT_CRATES=(
-	[copes]='https://gitlab.com/corectrl/copes;1bc002a030345787f0e11e0317975a2e4f2a22ee;copes-%commit%'
-	[nvml-wrapper-sys]='https://github.com/ilya-zlobintsev/nvml-wrapper;d245c3010c72466cfb572f5baf91c91f7294bb36;nvml-wrapper-%commit%/nvml-wrapper-sys'
-	[nvml-wrapper]='https://github.com/ilya-zlobintsev/nvml-wrapper;d245c3010c72466cfb572f5baf91c91f7294bb36;nvml-wrapper-%commit%/nvml-wrapper'
+	[cl3]='https://github.com/kenba/cl3;cb019aac330ab8243804be02b7183a1c5a211caa;cl3-%commit%'
+	[libdrm_amdgpu_sys]='https://github.com/Umio-Yasuno/libdrm-amdgpu-sys-rs;c6d85fce871f79f763162ba15accdfcae74b2d40;libdrm-amdgpu-sys-rs-%commit%'
 )
 
-LLVM_COMPAT=( {18..19} )
+LLVM_COMPAT=( {18..20} )
 RUST_MIN_VER="1.76.0"
 
 inherit cargo llvm-r2 xdg
@@ -30,16 +29,17 @@ S="${WORKDIR}/${P^^}"
 LICENSE="MIT"
 # Dependent crate licenses
 LICENSE+="
-	Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD CC0-1.0 GPL-3 GPL-3+
-	ISC MIT Unicode-3.0 ZLIB
+	Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD CC0-1.0 GPL-3 ISC MIT
+	MPL-2.0 Unicode-3.0 ZLIB
 "
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="gui libadwaita test"
+IUSE="gui libadwaita test video_cards_nvidia"
 REQUIRED_USE="libadwaita? ( gui ) test? ( gui )"
 RESTRICT="!test? ( test )"
 
 COMMON_DEPEND="
+	virtual/opencl
 	x11-libs/libdrm[video_cards_amdgpu]
 	gui? (
 		dev-libs/glib:2
@@ -81,6 +81,7 @@ src_configure() {
 	local myfeatures=(
 		$(usev gui lact-gui)
 		$(usev libadwaita adw)
+		$(usev video_cards_nvidia nvidia)
 	)
 	cargo_src_configure --no-default-features -p lact
 }
