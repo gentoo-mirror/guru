@@ -197,6 +197,7 @@ app-emulation/box64 0.2.2 0.3.0 0.3.0-r1 9999: Linux Userspace x86_64 Emulator w
 app-emulation/box86 0.3.0 0.3.6 9999: Linux Userspace x86 Emulator with a twist
 app-emulation/cloud-utils 0.33: Useful set of utilities for interacting with a cloud.
 app-emulation/looking-glass 1_beta6 9999: A low latency KVM FrameRelay implementation for guests with VGA PCI Passthrough
+app-emulation/lsfg-vk 9999: Lossless Scaling Frame Generation on Linux via DXVK/Vulkan
 app-emulation/quickemu 4.9.7: Create and run optimised Windows, macOS and Linux desktop virtual machines
 app-emulation/rars 1.6-r1: RARS -- RISC-V Assembler and Runtime Simulator
 app-emulation/tinyemu 0.2019.12.21: small and simple system emulator for the RISC-V and x86 architectures
@@ -493,7 +494,7 @@ dev-elixir/hex 1.0.1-r1: Package manager for the Erlang VM
 dev-embedded/arduino-cli 1.0.4 1.1.1: Next-generation arduino command line tool
 dev-embedded/bcm2-utils 0.9.8: Utilities for Broadcom-based cable modems
 dev-embedded/esp-coredump 1.11.0 1.13.1: Utility that helps users to retrieve and analyse core dumps
-dev-embedded/esp-idf 5.3.2 5.3.3 5.4.1 5.4.2: Espressif IoT Development Framework
+dev-embedded/esp-idf 5.3.3-r1 5.4.2-r1: Espressif IoT Development Framework
 dev-embedded/esp-idf-kconfig 2.4.1 2.5.0 2.5.0-r1: Kconfig tooling for esp-idf
 dev-embedded/esp-idf-monitor 1.5.0 1.6.0 1.6.2: Python object-oriented database
 dev-embedded/esp-idf-nvs-partition-gen 0.1.6 0.1.9: Parses ESP-IDF panic handler output acts as a GDB server over stdin/stdout
@@ -526,7 +527,7 @@ dev-hare/hare-png 9999: PNG implementation for Hare
 dev-hare/hare-ssh 0.24.2 0.25.2 9999: SSH library for Hare
 dev-hare/hare-xml 0_pre20231231 0.25.2.0 9999: XML support for Hare
 dev-java/corretto-bin 8.452.09.1 11.0.27.6.1 17.0.15.6.1 21.0.7.6.1 24.0.1.9.1: Prebuilt Java JDK binaries provided by Amazon Web Services
-dev-java/jdtls-bin 1.49.0_p202507030451: Java language server
+dev-java/jdtls-bin 1.49.0_p202507030451 1.49.0_p202507102148: Java language server
 dev-java/microsoft-openjdk-bin 11.0.27 17.0.15 21.0.7: Prebuilt Java JDK binaries provided by Microsoft
 dev-lang/cc65 2.19-r3 9999-r1: Cross-development package for 65(C)02 systems
 dev-lang/crystal-bin 1.16.2 1.16.3: The Crystal Programming Language
@@ -1038,7 +1039,7 @@ games-action/technic-launcher 4.768 4.822: Minecraft launcher for community-made
 games-arcade/SpaceCadetPinball 2.0 2.0.1 2.1.0 9999: Decompilation of 3D Pinball for Windows - Space Cadet
 games-arcade/opensurge 0.5.2.1 9999: fun 2D retro platformer inspired by old-school Sonic games
 games-arcade/shiromino 0.2.1: fast-paced puzzle game with roots in the arcade
-games-arcade/taisei 1.4.2 1.4.3 9999: Clone of the Touhou series, written in C using SDL/OpenGL/OpenAL.
+games-arcade/taisei 1.4.2 1.4.3 1.4.4 9999: Clone of the Touhou series, written in C using SDL/OpenGL/OpenAL.
 games-arcade/tetrio-desktop 8 9: TETR.IO desktop client.
 games-board/fairy-stockfish 14.0.1: Chess variant engine derived from Stockfish to support fairy chess variants
 games-board/openriichi 0.2.1.1: OpenRiichi is an open source Japanese Mahjong client
@@ -1252,7 +1253,7 @@ gui-libs/xdg-desktop-portal-hyprland 1.3.9-r1 9999: xdg-desktop-portal backend f
 gui-wm/cage 0.2.0 9999: A Wayland kiosk
 gui-wm/hyprland-contrib 0.1-r1 9999: Community-maintained extensions for hyprland
 gui-wm/labwc 0.8.3-r1 0.8.4-r1 9999: Openbox alternative for wayland
-gui-wm/maomaowm 0.7.1 9999: wayland compositor based on wlroots and scenefx(dwl but no suckless)
+gui-wm/maomaowm 0.7.1 0.7.2 9999: wayland compositor based on wlroots and scenefx(dwl but no suckless)
 gui-wm/miracle-wm 0.5.2 0.6.1: Tiling Wayland compositor based on Mir
 gui-wm/niri 25.02 25.05.1: Scrollable-tiling Wayland compositor
 gui-wm/phoc 0.46.0 0.47.0 0.48.0: Wayland compositor for mobile phones
@@ -1734,7 +1735,7 @@ sys-apps/gat 0.23.1: Cat alternative written in Go
 sys-apps/hex 0.4.2 0.5.0 0.6.0: Futuristic take on hexdump
 sys-apps/hexyl 0.16.0: A command-line hex viewer
 sys-apps/killport 1.1.0: A command-line tool to easily kill processes on a specified port.
-sys-apps/lact 0.7.3 0.7.4: Linux GPU Control Application
+sys-apps/lact 0.7.4 0.8.0: Linux GPU Control Application
 sys-apps/loclone 0.1.0: A tool for creating CoW snapshots on XFS
 sys-apps/lr 1.6: list files, recursively
 sys-apps/lsplug 6: Replacement for lsusb that shows more useful info and less useless info
@@ -1771,6 +1772,7 @@ sys-cluster/opencoarrays 2.9.3-r1 2.10.0-r1 2.10.1-r1 2.10.2: A parallel applica
 sys-devel/fcode-utils 1.0.3: Set of utilities to process FCODE, OpenFirmware's byte code
 sys-devel/lcc 2021.01.11-r1: The lcc retargetable ANSI C compiler
 sys-firmware/lenovolegionlinux 9999: Lenovo Legion Linux kernel module
+sys-fs/btrd 0.5.4: The btrfs debugger
 sys-fs/btrfs-heatmap 9-r1: Python 3 script to draw a heatmap of a btrfs filesystem
 sys-fs/ddrescueview 0.4.5: Graphical viewer for GNU ddrescue mapfiles
 sys-fs/diskonaut 0.10.0 0.11.0 9999: Terminal disk space visual navigator

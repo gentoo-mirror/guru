@@ -1,6 +1,6 @@
 BDEPEND=>=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array
 DEFINED_PHASES=compile configure install test
-DEPEND=dev-libs/wayland-protocols x11-libs/libdrm
+DEPEND=dev-libs/lzo dev-libs/wayland-protocols x11-libs/libdrm
 DESCRIPTION=A Wayland Native VNC Client
 EAPI=8
 HOMEPAGE=https://github.com/any1/wlvncc
@@ -11,4 +11,4 @@ RDEPEND=dev-libs/aml x11-libs/libxkbcommon x11-libs/pixman dev-libs/wayland
 SLOT=0
 SRC_URI=https://github.com/any1/wlvncc/archive/a6a5463a9c69ce4db04d8d699dd58e1ba8560a0a.tar.gz -> wlvncc-20250626.gh.tar.gz
 _eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	bb392d69d55c48a5483d356933a26d57	meson	99466844dd8d4fcfb07578a76f5a9922
-_md5_=e63791d70322e6af39724fabcf93b5f9
+_md5_=06cc8411d349db8a15572dfbb9701b61

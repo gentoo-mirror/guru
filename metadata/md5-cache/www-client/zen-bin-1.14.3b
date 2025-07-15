@@ -1,14 +1,13 @@
 DEFINED_PHASES=install postinst postrm
-DEPEND=upower? ( sys-power/upower ) opengl? ( virtual/opengl ) app-accessibility/at-spi2-core:2 dev-libs/expat dev-libs/glib:2 dev-libs/nspr dev-libs/nss media-libs/alsa-lib media-libs/fontconfig media-libs/freetype media-libs/mesa net-print/cups sys-apps/dbus sys-libs/glibc x11-libs/cairo x11-libs/gdk-pixbuf:2 x11-libs/gtk+:3 x11-libs/libX11 x11-libs/libxcb x11-libs/libXcomposite x11-libs/libXcursor x11-libs/libXdamage x11-libs/libXext x11-libs/libXfixes x11-libs/libXi x11-libs/libXrandr x11-libs/libXrender x11-libs/libXtst x11-libs/pango
+DEPEND=app-accessibility/at-spi2-core:2 dev-libs/expat dev-libs/glib:2 dev-libs/nspr dev-libs/nss media-libs/alsa-lib media-libs/fontconfig media-libs/freetype media-libs/mesa net-print/cups sys-apps/dbus sys-libs/glibc x11-libs/cairo x11-libs/gdk-pixbuf:2 x11-libs/gtk+:3 x11-libs/libX11 x11-libs/libxcb x11-libs/libXcomposite x11-libs/libXcursor x11-libs/libXdamage x11-libs/libXext x11-libs/libXfixes x11-libs/libXi x11-libs/libXrandr x11-libs/libXrender x11-libs/libXtst x11-libs/pango
 DESCRIPTION=Zen Browser - A fast, privacy-focused Firefox fork
 EAPI=8
 HOMEPAGE=https://zen-browser.app/
 INHERIT=desktop xdg-utils
-IUSE=upower opengl
 KEYWORDS=~amd64
 LICENSE=MPL-2.0
-RDEPEND=upower? ( sys-power/upower ) opengl? ( virtual/opengl ) app-accessibility/at-spi2-core:2 dev-libs/expat dev-libs/glib:2 dev-libs/nspr dev-libs/nss media-libs/alsa-lib media-libs/fontconfig media-libs/freetype media-libs/mesa net-print/cups sys-apps/dbus sys-libs/glibc x11-libs/cairo x11-libs/gdk-pixbuf:2 x11-libs/gtk+:3 x11-libs/libX11 x11-libs/libxcb x11-libs/libXcomposite x11-libs/libXcursor x11-libs/libXdamage x11-libs/libXext x11-libs/libXfixes x11-libs/libXi x11-libs/libXrandr x11-libs/libXrender x11-libs/libXtst x11-libs/pango
+RDEPEND=app-accessibility/at-spi2-core:2 dev-libs/expat dev-libs/glib:2 dev-libs/nspr dev-libs/nss media-libs/alsa-lib media-libs/fontconfig media-libs/freetype media-libs/mesa net-print/cups sys-apps/dbus sys-libs/glibc x11-libs/cairo x11-libs/gdk-pixbuf:2 x11-libs/gtk+:3 x11-libs/libX11 x11-libs/libxcb x11-libs/libXcomposite x11-libs/libXcursor x11-libs/libXdamage x11-libs/libXext x11-libs/libXfixes x11-libs/libXi x11-libs/libXrandr x11-libs/libXrender x11-libs/libXtst x11-libs/pango
 SLOT=0
 SRC_URI=https://github.com/zen-browser/desktop/releases/download/1.14.3b/zen.linux-x86_64.tar.xz -> zen-bin-1.14.3b.tar.xz
 _eclasses_=desktop	3a72ffe0d8e1dd73af3a1c8c15a59fed	xdg-utils	42869b3c8d86a70ef3cf75165a395e09
-_md5_=3c54a01d5dee02a89d07f51d797b04ad
+_md5_=e1c44b3f34d9b00d9b3a031646c4a5fd
