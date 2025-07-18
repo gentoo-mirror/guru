@@ -1,9 +1,9 @@
-# Copyright 2023-2024 Gentoo Authors
+# Copyright 2023-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-inherit qmake-utils xdg
+inherit cmake xdg
 
 DESCRIPTION="Media Player Classic Qute Theater"
 HOMEPAGE="https://mpc-qt.github.io/"
@@ -13,27 +13,32 @@ LICENSE="GPL-2+"
 SLOT="0"
 KEYWORDS="~amd64"
 
-DEPEND="
+RDEPEND="
 	dev-qt/qtbase:6[dbus,gui,network,opengl,wayland,widgets]
 	dev-qt/qtsvg:6
 	media-video/mpv:=[libmpv]
 "
-RDEPEND="${DEPEND}"
+DEPEND="
+	${RDEPEND}
+	dev-libs/boost
+"
 BDEPEND="
 	dev-qt/qttools:6[linguist]
 	virtual/pkgconfig
 "
 
 src_prepare() {
-	default
+	cmake_src_prepare
 
-	sed -i "s|doc/mpc-qt/|doc/${PF}|" mpc-qt.pro || die
+	# drop forced optimization
+	sed -i -e "s/ -O2//" \
+		-e "s|share/doc/${PN}|share/doc/${PF}|" \
+		CMakeLists.txt || die
 }
 
 src_configure() {
-	eqmake6 MPCQT_VERSION="${PV}" PREFIX="${EPREFIX}/usr" mpc-qt.pro
-}
-
-src_install() {
-	emake INSTALL_ROOT="${D}" install
+	local mycmakeargs=(
+		-DMPCQT_VERSION="${PV}"
+	)
+	cmake_src_configure
 }

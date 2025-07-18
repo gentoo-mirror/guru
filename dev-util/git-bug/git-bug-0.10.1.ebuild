@@ -7,18 +7,14 @@ inherit go-module
 
 DESCRIPTION="distributed, offline-first bug tracker"
 HOMEPAGE="https://github.com/git-bug/git-bug"
-
-inherit git-r3
-EGIT_REPO_URI="https://github.com/git-bug/${PN}"
+SRC_URI="https://github.com/git-bug/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz
+	http://joecool.ftfuchs.com/godeps/${P}-deps.tar.xz"
 
 LICENSE="GPL-3"
 SLOT="0"
+KEYWORDS="~amd64 ~arm64 ~x86"
 
-src_unpack() {
-	default
-	git-r3_src_unpack
-	go-module_live_vendor
-}
+RESTRICT="strip"
 
 src_compile() {
 	ego generate

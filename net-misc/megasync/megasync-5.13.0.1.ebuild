@@ -11,7 +11,7 @@ HOMEPAGE="
 	https://github.com/meganz/MEGAsync
 "
 
-MEGA_SDK_REV="f60237a8d46cec993137065d39138fd42c043271" # commit of src/MEGASync/mega submodule
+MEGA_SDK_REV="e6691ac87e4551e950ee5cbff04a4c291181606b" # commit of src/MEGASync/mega submodule
 MEGA_TAG_SUFFIX="Linux"
 SRC_URI="
 	https://github.com/meganz/MEGAsync/archive/v${PV}_${MEGA_TAG_SUFFIX}.tar.gz -> ${P}.tar.gz
@@ -84,7 +84,6 @@ BDEPEND="
 "
 
 PATCHES=(
-	"${FILESDIR}/${PN}-4.10.0.0_ffmpeg6.patch"
 	"${FILESDIR}/${PN}-5.6.0.0-remove-clang-format.patch"
 	"${FILESDIR}/${PN}-5.7.0.0-disable-forced-options.patch"
 	"${FILESDIR}/${PN}-5.7.0.0-fix-install-dir.patch"
@@ -134,6 +133,7 @@ src_configure() {
 		-DENABLE_DESKTOP_APP_WERROR=OFF
 		-DENABLE_DESKTOP_UPDATE_GEN=OFF
 		-DENABLE_DESIGN_TOKENS_IMPORTER=OFF
+		-DUSE_BREAKPAD=OFF
 		-DENABLE_ISOLATED_GFX=$(usex thumbnail)
 		-DENABLE_LINUX_EXT=$(usex nautilus)
 		-DUSE_FFMPEG=$(usex thumbnail)

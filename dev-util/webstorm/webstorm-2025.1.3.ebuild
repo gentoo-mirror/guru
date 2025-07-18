@@ -7,7 +7,10 @@ inherit desktop wrapper toolchain-funcs
 
 DESCRIPTION="An integrated development environment for JavaScript and related technologies."
 HOMEPAGE="https://www.jetbrains.com/webstorm/"
-SRC_URI="https://download-cdn.jetbrains.com/${PN}/WebStorm-${PV}.tar.gz"
+SRC_URI="
+	amd64? ( https://download-cdn.jetbrains.com/${PN}/WebStorm-${PV}.tar.gz )
+	arm64? ( https://download-cdn.jetbrains.com/${PN}/WebStorm-${PV}-aarch64.tar.gz )
+"
 
 LICENSE="|| ( JetBrains-business JetBrains-classroom JetBrains-educational JetBrains-individual )
 		Apache-2.0
@@ -27,7 +30,7 @@ LICENSE="|| ( JetBrains-business JetBrains-classroom JetBrains-educational JetBr
 		ZLIB
 "
 SLOT="0/2025"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~arm64"
 IUSE="wayland"
 
 RESTRICT="bindist mirror"
@@ -45,7 +48,11 @@ RDEPEND="
 
 src_unpack() {
 		# WebStorm unarchived directory is in format WebStorm-xxx.yyy.zzz, not ${P}
-		cp "${DISTDIR}"/WebStorm-${PV}.tar.gz "${WORKDIR}"/ || die
+		if use amd64 ; then
+			cp "${DISTDIR}"/WebStorm-${PV}.tar.gz "${WORKDIR}"/ || die
+		elif use arm64 ; then
+			cp "${DISTDIR}"/WebStorm-${PV}-aarch64.tar.gz "${WORKDIR}"/ || die
+		fi		
 		mkdir -p "${P}" || die
 		tar --strip-components=1 -xzf "WebStorm-${PV}".tar.gz -C "${P}" || die
 }
@@ -54,22 +61,43 @@ src_prepare() {
 		tc-export OBJCOPY
 		default
 
+	if ! use arm64; then
 		local remove_me=(
 			lib/async-profiler/aarch64
-			plugins/platform-ijent-impl/ijent-aarch64-unknown-linux-musl-release
 		)
+	elif ! use amd64; then
+		local remove_me=(
+			lib/async-profiler/amd64
+		)
+	fi
 
-		rm -rv "${remove_me[@]}" || die
+	rm -rv "${remove_me[@]}" || die
 
-		# removing debug symbols and relocating debug files as per #876295
-		# we're escaping all the files that contain $() in their name
-		# as they should not be executed
-		find . -type f ! -name '*$(*)*' -exec sh -c '
-			if file "{}" | grep -qE "ELF (32|64)-bit"; then
-				${OBJCOPY} --remove-section .note.gnu.build-id "{}"
-				debugedit -b "${EPREFIX}/opt/${PN}" -d "/usr/lib/debug" -i "{}"
-			fi
-		' \;
+	# excepting files that should be kept for remote plugins
+	if ! use arm64 ; then
+		local skip_remote_files=(
+			"plugins/platform-ijent-impl/ijent-aarch64-unknown-linux-musl-release"
+			"plugins/gateway-plugin/lib/remote-dev-workers/remote-dev-worker-linux-arm64"
+		)
+	elif ! use amd64; then
+		local skip_remote_files=(
+			"plugins/platform-ijent-impl/ijent-x86_64-unknown-linux-musl-release"
+			"plugins/gateway-plugin/lib/remote-dev-workers/remote-dev-worker-linux-amd64"
+		)
+	fi
+
+	# removing debug symbols and relocating debug files as per #876295
+	# we're escaping all the files that contain $() in their name
+	# as they should not be executed
+	find . -type f ! -name '*$(*)*' -print0 | while IFS= read -r -d '' file; do
+		for skip in "${skip_remote_files[@]}"; do
+			[[ ${file} == ./"${skip}" ]] && continue 2
+		done
+		if file "${file}" | grep -qE "ELF (32|64)-bit"; then
+			${OBJCOPY} --remove-section .note.gnu.build-id "${file}" || die
+			debugedit -b "${EPREFIX}/opt/${PN}" -d "/usr/lib/debug" -i "${file}" || die
+		fi
+	done
 
 		patchelf --set-rpath '$ORIGIN' "jbr/lib/libjcef.so" || die
 		patchelf --set-rpath '$ORIGIN' "jbr/lib/jcef_helper" || die

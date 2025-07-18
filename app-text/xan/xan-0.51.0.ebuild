@@ -11,9 +11,20 @@ inherit cargo
 
 DESCRIPTION="The CSV magician"
 HOMEPAGE="https://github.com/medialab/xan"
-SRC_URI="https://github.com/medialab/xan/archive/${PV}.tar.gz -> ${P}.tar.gz"
-SRC_URI+=" https://github.com/ingenarel/guru-depfiles/releases/download/${P}-deps.tar.xz/${P}-deps.tar.xz"
-ECARGO_VENDOR="${WORKDIR}/vendor"
+
+if [[ "${PV}" == *9999* ]]; then
+	inherit git-r3
+	EGIT_REPO_URI="https://github.com/medialab/xan"
+	src_unpack() {
+		git-r3_src_unpack
+		cargo_live_src_unpack
+	}
+else
+	SRC_URI="https://github.com/medialab/xan/archive/${PV}.tar.gz -> ${P}.tar.gz"
+	SRC_URI+=" https://github.com/ingenarel/guru-depfiles/releases/download/${P}-deps.tar.xz/${P}-deps.tar.xz"
+	KEYWORDS="~amd64"
+	ECARGO_VENDOR="${WORKDIR}/vendor"
+fi
 
 LICENSE="|| ( MIT Unlicense )"
 # Dependent crate licenses
@@ -22,11 +33,10 @@ LICENSE+="
 	Unicode-3.0 Unlicense ZLIB
 "
 SLOT="0"
-KEYWORDS="~amd64"
 
 QA_FLAGS_IGNORED="usr/bin/xan"
 
-DOCS=( README.md )
+DOCS=( README.md docs )
 
 src_install() {
 	cargo_src_install

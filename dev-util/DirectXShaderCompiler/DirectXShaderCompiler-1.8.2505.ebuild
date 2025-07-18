@@ -9,13 +9,19 @@ inherit cmake check-reqs python-any-r1
 DESCRIPTION="Microsoft DirectX Shader Compiler which is based on LLVM/Clang"
 HOMEPAGE="https://github.com/microsoft/DirectXShaderCompiler"
 # ToDo: unbundle spirv headers/tools and directx headers
-SPIRV_HEADERS_COMMIT_MAGIC="3f17b2af6784bfa2c5aa5dbb8e0e74a607dd8b3b"
-SPIRV_TOOLS_COMMIT_MAGIC="4d2f0b40bfe290dea6c6904dafdf7fd8328ba346"
+SPIRV_HEADERS_COMMIT_MAGIC="aa6cef192b8e693916eb713e7a9ccadf06062ceb"
+SPIRV_TOOLS_COMMIT_MAGIC="a62abcb402009b9ca5975e6167c09f237f630e0e"
 DIRECTX_HEADERS_COMMIT_MAGIC="980971e835876dc0cde415e8f9bc646e64667bf7"
-SRC_URI="https://github.com/microsoft/DirectXShaderCompiler/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
-https://github.com/KhronosGroup/SPIRV-Headers/archive/${SPIRV_HEADERS_COMMIT_MAGIC}.tar.gz -> DirectXShaderCompiler-headers-${SPIRV_HEADERS_COMMIT_MAGIC}.tar.gz
-https://github.com/KhronosGroup/SPIRV-Tools/archive/${SPIRV_TOOLS_COMMIT_MAGIC}.tar.gz -> DirectXShaderCompiler-tools-${SPIRV_TOOLS_COMMIT_MAGIC}.tar.gz
-https://github.com/microsoft/DirectX-Headers/archive/${DIRECTX_HEADERS_COMMIT_MAGIC}.tar.gz -> DirectXShaderCompiler-directxheaders-${DIRECTX_HEADERS_COMMIT_MAGIC}.tar.gz"
+SRC_URI="
+	https://github.com/microsoft/DirectXShaderCompiler/archive/refs/tags/v${PV}.tar.gz
+		-> ${P}.tar.gz
+	https://github.com/KhronosGroup/SPIRV-Headers/archive/${SPIRV_HEADERS_COMMIT_MAGIC}.tar.gz
+		-> DirectXShaderCompiler-headers-${SPIRV_HEADERS_COMMIT_MAGIC}.tar.gz
+	https://github.com/KhronosGroup/SPIRV-Tools/archive/${SPIRV_TOOLS_COMMIT_MAGIC}.tar.gz
+		-> DirectXShaderCompiler-tools-${SPIRV_TOOLS_COMMIT_MAGIC}.tar.gz
+	https://github.com/microsoft/DirectX-Headers/archive/${DIRECTX_HEADERS_COMMIT_MAGIC}.tar.gz
+		-> DirectXShaderCompiler-directxheaders-${DIRECTX_HEADERS_COMMIT_MAGIC}.tar.gz
+"
 
 LICENSE="Apache-2.0-with-LLVM-exceptions UoI-NCSA BSD public-domain rc"
 SLOT="0"
@@ -34,7 +40,6 @@ BDEPEND="sys-devel/gnuconfig"
 
 CHECKREQS_MEMORY="4G"
 CHECKREQS_DISK_BUILD="4G"
-CMAKE_EXTRA_CACHE_FILE="${S}/cmake/caches/PredefinedParams.cmake"
 
 src_prepare() {
 	rm -d "${S}"/external/SPIRV* || die
@@ -58,6 +63,7 @@ src_configure() {
 		-DSPIRV_WARN_EVERYTHING=0
 		-DBUILD_SHARED_LIBS=OFF
 		-DLLVM_VERSION_SUFFIX=dxc
+		-C "${S}/cmake/caches/PredefinedParams.cmake"
 	)
 	cmake_src_configure
 }
