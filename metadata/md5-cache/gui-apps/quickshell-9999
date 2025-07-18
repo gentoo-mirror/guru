@@ -1,15 +1,14 @@
-BDEPEND=|| ( >=sys-devel/gcc-14:* >=llvm-core/clang-17:* ) dev-build/cmake dev-build/ninja virtual/pkgconfig dev-cpp/cli11 dev-util/spirv-tools dev-qt/qtshadertools:6 breakpad? ( dev-util/breakpad ) wayland? ( dev-util/wayland-scanner dev-libs/wayland-protocols ) app-alternatives/ninja >=dev-build/cmake-3.20.5
-DEFINED_PHASES=compile configure install prepare test
+BDEPEND=|| ( >=sys-devel/gcc-14:* >=llvm-core/clang-17:* ) dev-build/cmake dev-build/ninja virtual/pkgconfig dev-cpp/cli11 dev-util/spirv-tools dev-qt/qtshadertools:6 breakpad? ( dev-util/breakpad ) wayland? ( dev-util/wayland-scanner dev-libs/wayland-protocols ) app-alternatives/ninja >=dev-build/cmake-3.20.5 >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile configure install prepare test unpack
 DEPEND=dev-qt/qtbase:6 dev-qt/qtsvg:6 jemalloc? ( dev-libs/jemalloc ) wayland? ( dev-libs/wayland dev-qt/qtwayland:6 ) screencopy? ( x11-libs/libdrm media-libs/mesa ) X? ( x11-libs/libxcb ) pipewire? ( media-video/pipewire ) mpris? ( dev-qt/qtdbus ) pam? ( sys-libs/pam )
 DESCRIPTION=Toolkit for building desktop widgets using QtQuick
 EAPI=8
 HOMEPAGE=https://quickshell.org/
-INHERIT=cmake
+INHERIT=cmake git-r3
 IUSE=+breakpad +jemalloc +sockets +wayland +layer-shell +session-lock +toplevel-management +screencopy +X +pipewire +tray +mpris +pam +hyprland +hyprland-global-shortcuts +hyprland-focus-grab +i3 +i3-ipc
-KEYWORDS=~amd64
 LICENSE=LGPL-3
+PROPERTIES=live
 RDEPEND=dev-qt/qtbase:6 dev-qt/qtsvg:6 jemalloc? ( dev-libs/jemalloc ) wayland? ( dev-libs/wayland dev-qt/qtwayland:6 ) screencopy? ( x11-libs/libdrm media-libs/mesa ) X? ( x11-libs/libxcb ) pipewire? ( media-video/pipewire ) mpris? ( dev-qt/qtdbus ) pam? ( sys-libs/pam )
 SLOT=0
-SRC_URI=https://github.com/quickshell-mirror/quickshell/archive/refs/tags/v0.1.0.tar.gz -> quickshell-0.1.0.tar.gz
-_eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	460729dc36f68cf03b044bc1d367e34a
+_eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	460729dc36f68cf03b044bc1d367e34a	git-r3	875eb471682d3e1f18da124be97dcc81
 _md5_=d3fa94cb50bd72e2df53ed2ef055e9e1

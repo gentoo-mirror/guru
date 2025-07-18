@@ -377,7 +377,7 @@ app-text/tldr 3.3.0 3.4.1: Python command line client for tldr pages
 app-text/typst 0.13.1 9999: A markup-based typesetting system for the sciences
 app-text/typstyle 0.13.5: A beautiful and reliable code formatter for Typst
 app-text/vale 3.7.1 3.9.1: A syntax-aware linter for prose built with speed and extensibility in mind
-app-text/xan 0.48.0: The CSV magician
+app-text/xan 0.48.0 0.51.0 9999: The CSV magician
 app-vim/ale 3.3.0 4.0.0: Check syntax in Vim asynchronously and fix files, with LSP support
 app-vim/ansible-vim 3.3 3.4: vim plugin: sytax highlighting for Ansible's common file types
 app-vim/apkbuild-vim 20210911: vim plugin: edit and work with APKBUILD files
@@ -420,7 +420,7 @@ dev-cpp/boxed-cpp 1.4.3: Boxing primitive types in C++
 dev-cpp/coeurl 0.3.0 0.3.1: A simple async wrapper around CURL for C++
 dev-cpp/cpp-jwt 1.5_pre20220727: JSON Web Token library for C++
 dev-cpp/cpprestsdk 2.10.19-r5 2.10.19-r6: A Microsoft project for cloud-based client-server communication.
-dev-cpp/cpptrace 1.0.0 1.0.1 1.0.2 9999: Simple, portable, and self-contained stacktrace library for C++
+dev-cpp/cpptrace 1.0.2 1.0.3 9999: Simple, portable, and self-contained stacktrace library for C++
 dev-cpp/dpp 10.0.23 10.0.24 10.0.25 10.0.29 10.0.30 10.0.33: Lightweight C++ Discord bot library
 dev-cpp/drogon 1.9.5 1.9.6: C++14/17 based HTTP web application framework
 dev-cpp/fast_double_parser 0.8.0: Parse strings into double floating-point values
@@ -547,17 +547,17 @@ dev-libs/M_CLI2 3.2.0: M_CLI2 - parse Unix-like command line arguments from Fort
 dev-libs/StringiFor 1.1.4: StringiFor, Strings Fortran Manipulator, yet another strings Fortran module
 dev-libs/aws-c-auth 0.9.0: C99 library implementation of AWS client-side authentication: standard credentials providers and signing
 dev-libs/aws-c-cal 0.9.2: Crypto Abstraction Layer: Cross-Platform C99 wrapper for cryptography primitives
-dev-libs/aws-c-common 0.12.3: Core c99 package for AWS SDK for C
+dev-libs/aws-c-common 0.12.3 0.12.4: Core c99 package for AWS SDK for C
 dev-libs/aws-c-compression 0.3.1: C99 implementation of huffman encoding/decoding
 dev-libs/aws-c-event-stream 0.5.4 0.5.5: C99 implementation of the vnd.amazon.eventstream content-type
 dev-libs/aws-c-http 0.10.2: C99 implementation of the HTTP/1.1 and HTTP/2 specifications
-dev-libs/aws-c-io 0.19.1 0.20.1: AWS SDK for C module, handles IO and TLS work for application protocols
+dev-libs/aws-c-io 0.19.1 0.20.1 0.21.0: AWS SDK for C module, handles IO and TLS work for application protocols
 dev-libs/aws-c-mqtt 0.13.1 0.13.2: C99 implementation of the MQTT 3.1.1 specification
-dev-libs/aws-c-s3 0.8.1 0.8.3: AWS C S3 Library
+dev-libs/aws-c-s3 0.8.1 0.8.3 0.8.4: AWS C S3 Library
 dev-libs/aws-c-sdkutils 0.2.4: AWS SDK Utilities Library
 dev-libs/aws-checksums 0.2.7: Cross-Platform HW accelerated CRC32c and CRC32 with software fallbacks
-dev-libs/aws-crt-cpp 0.32.8 0.32.10: Core CRT package for AWS SDK for C
-dev-libs/aws-sdk-cpp 1.11.586 1.11.596: AWS SDK for C++
+dev-libs/aws-crt-cpp 0.32.8 0.32.10 0.33.0: Core CRT package for AWS SDK for C
+dev-libs/aws-sdk-cpp 1.11.586 1.11.596 1.11.603: AWS SDK for C++
 dev-libs/cgicc 3.2.19 3.2.20: A C++ class library for writing CGI applications
 dev-libs/cyrus-sasl-xoauth2 0.2: XOAUTH2 mechanism plugin for cyrus-sasl
 dev-libs/dmd_core 0.7.2-r1: Core logic for an AT&T / Teletype DMD 5620 terminal emulator
@@ -606,7 +606,7 @@ dev-libs/open62541 1.4.12: Open source C implementation of OPC UA
 dev-libs/polyseed 1.0.0 2.0.0 9999: Mnemonic seed library for Monero and other CryptoNote-based currencies.
 dev-libs/qschematic 3.0.2: Library for creating flowcharts and engineering diagrams
 dev-libs/randomx 1.2.1-r1: Proof of work algorithm based on random code execution
-dev-libs/s2n 1.5.21: Simple, small, fast and secure C99 implementation of the TLS/SSL protocols
+dev-libs/s2n 1.5.21 1.5.22: Simple, small, fast and secure C99 implementation of the TLS/SSL protocols
 dev-libs/sealcurses 2.0.18_pre20241014 2.0.18_pre20241202: SDL Emulation and Adaptation Layer for Curses
 dev-libs/sirit 0_p20230510: A runtime SPIR-V assembler
 dev-libs/supercop 0_p20200827: Fast cryptographic operations for Monero wallets
@@ -676,7 +676,7 @@ dev-python/asyncpg 0.30.0: An asyncio PostgreSQL driver
 dev-python/auditok 0.1.5 0.2.0-r1: A module for Audio/Acoustic Activity Detection
 dev-python/autoflake 2.3.1: Removes unused imports and unused variables from Python code
 dev-python/autopxd 2.5.0: generates .pxd files automatically from .h files
-dev-python/avro 1.11.3: Apache Avro is a data serialization system
+dev-python/avro 1.12.0: Apache Avro is a data serialization system
 dev-python/azure-core 1.27.1 1.28.0: Microsoft Azure Core Library for Python
 dev-python/azure-storage-blob 12.17.0: Microsoft Azure Blob Storage Client Library for Python
 dev-python/base58 2.1.1-r1: Base58 and Base58Check implementation
@@ -732,7 +732,7 @@ dev-python/googletrans 4.0.0_rc1-r1: Free Google Translate API for Python. Trans
 dev-python/graphql-core 3.2.3: Python port of GraphQL.js, the JavaScript reference implementation for GraphQL
 dev-python/graphql-relay 3.2.0: Relay library for graphql-core
 dev-python/grpc-stubs 1.53.0.3: gRPC typing stubs for Python
-dev-python/guidata 3.9.0 3.10.0 3.11.0: Library for user interfaces for easy dataset editing and display
+dev-python/guidata 3.11.0 3.12.0: Library for user interfaces for easy dataset editing and display
 dev-python/guiqwt 4.4.5-r1: Efficient 2D plotting Python library based on PythonQwt
 dev-python/guppy3 3.1.4 3.1.5: A Python Programming Environment & Heap analysis toolset
 dev-python/hachoir 3.3.0: Hachoir is a Python library to view and edit a binary stream field by field
@@ -804,9 +804,9 @@ dev-python/proselint 0.14.0: A linter for prose
 dev-python/protego 0.4.0: Pure-Python robots.txt parser with support for modern conventions
 dev-python/proton-core 0.4.0: Proton Technologies API wrapper
 dev-python/proton-keyring-linux 0.2.0: Proton Technologies keyring plugins for linux
-dev-python/proton-vpn-api-core 0.42.4-r1: Proton AG VPN Core API
+dev-python/proton-vpn-api-core 0.42.5: Proton AG VPN Core API
 dev-python/proton-vpn-local-agent 1.4.5: Proton VPN local agent written in Rust
-dev-python/proton-vpn-network-manager 0.12.13-r3: Proton VPN Network Manager handler
+dev-python/proton-vpn-network-manager 0.12.14: Proton VPN Network Manager handler
 dev-python/proxy_tools 0.1.0_p1: Simple proxy (as in the GoF design pattern)
 dev-python/psycopg2cffi 2.9.0-r1: Implementation of the psycopg2 module using cffi. Compatible with Psycopg 2.5.
 dev-python/ptpython 3.0.29: Python REPL build on top of prompt-toolkit
@@ -831,7 +831,7 @@ dev-python/pyperscan 0.3.0: An opinionated Python binding for Hyperscan
 dev-python/pyproject2ebuild 0.0.3: Convert pyproject.toml to Gentoo ebuilds automatically.
 dev-python/pyqtdarktheme 2.1.0: A flat dark theme for PySide and PyQt.
 dev-python/pyrime 0.0.7: rime for python
-dev-python/pysdl3 0.9.8_beta3 0.9.8_beta5: A pure Python wrapper for SDL3
+dev-python/pysdl3 0.9.8_beta5 0.9.8_beta6: A pure Python wrapper for SDL3
 dev-python/pysnooper 1.2.1 1.2.3: Never use print for debugging again
 dev-python/pystardict 0.8-r1: Library for manipulating StarDict dictionaries from within Python
 dev-python/pytest-cases 3.8.6: Separate test code from test cases in pytest
@@ -938,7 +938,7 @@ dev-scheme/sagittarius 0.9.12: R6RS/R7RS Scheme system.
 dev-tex/ninecolors 2022.02.13: Select colors with proper WCAG color contrast
 dev-tex/tabularray 2023.03.01: Typeset tabulars and arrays with LATEX3
 dev-tex/tectonic 0.15.0 0.15.0-r1: A modernized, complete, embeddable TeX/LaTeX engine.
-dev-util/DirectXShaderCompiler 1.8.2502: Microsoft DirectX Shader Compiler which is based on LLVM/Clang
+dev-util/DirectXShaderCompiler 1.8.2502 1.8.2505: Microsoft DirectX Shader Compiler which is based on LLVM/Clang
 dev-util/bash-language-server 5.3.3 5.4.0 5.4.2 5.4.3 5.6.0: A language server for Bash
 dev-util/bats-assert 2.1.0: Common assertions for Bats
 dev-util/bats-support 0.3.0: Supporting library for Bats test helpers
@@ -967,7 +967,7 @@ dev-util/fortran-test-drive 0.4.0 0.5.0: The simple testing framework (for Fortr
 dev-util/gammaray 3.1.0: High-level runtime introspection tool for Qt applications
 dev-util/gemini-cli 0.1.9_pre20250709: Gemini CLI - a command-line AI workflow tool by Google
 dev-util/genTree 0.1.0 9999: Gentoo rootfs tree generator
-dev-util/git-bug 0.8.0 9999: distributed, offline-first bug tracker
+dev-util/git-bug 0.10.1 9999: distributed, offline-first bug tracker
 dev-util/gitlab-ci-local-bin 4.43.0 4.47.0 4.56.0: Run gitlab pipelines locally as shell executor or docker executor
 dev-util/go-task 3.38.0-r1 3.41.0-r1: A task runner / simpler Make alternative written in Go
 dev-util/gshards 0.2: Small helper tools to aid installing Crystal packages in Gentoo
@@ -1007,6 +1007,7 @@ dev-util/stylua 2.1.0: A code formatter for Lua
 dev-util/tailspin 5.4.5: A log file highlighter
 dev-util/termux-language-server 0.0.27: A language server for some specific Bash scripts
 dev-util/tflint-bin 0.43.0 0.46.0: A Pluggable Terraform Linter
+dev-util/tinyxxd 1.3.7 9999: Drop-in replacement and standalone version of xxd
 dev-util/tokei 12.1.1 12.1.2: Count your code, quickly
 dev-util/topiary 0.6.1: CLI app for Topiary, the universal code formatter.
 dev-util/trivy 0.55.2: Vulnerability scanner for container images, file systems, and Git repos
@@ -1017,7 +1018,7 @@ dev-util/vala-language-server 0.48.4: Code Intelligence for Vala & Genie
 dev-util/vscode-langservers-extracted 4.8.0 4.10.0: HTML/CSS/JSON/ESLint/Markdown language servers extracted from vscode.
 dev-util/wakatime-cli 1.27.0 1.28.6: Command line interface to WakaTime used by all WakaTime plugins
 dev-util/webgpu-headers 9999 20240512: Webgpu Header files
-dev-util/webstorm 2024.3.5 2025.1 2025.1.2: An integrated development environment for JavaScript and related technologies.
+dev-util/webstorm 2024.3.5 2025.1.2 2025.1.3: An integrated development environment for JavaScript and related technologies.
 dev-util/wxformbuilder 3.10.1-r1 4.2.1: A wxWidgets GUI Builder
 dev-util/xxd 9.1.0895: Hexdump utility from vim
 dev-util/yaml-language-server 1.14.0 1.15.0: Language Server for YAML Files
@@ -1195,7 +1196,7 @@ gui-apps/organicmaps 9999: Offline maps and navigation using OpenStreetMap data
 gui-apps/packettracer 8.2.2-r1: Cisco's packet tracer
 gui-apps/paperde 0.1.1_p20210426: Simple, sleek QT based DE for wayland using wayfire
 gui-apps/pop-launcher 1.2.1: Modular IPC-based desktop launcher service
-gui-apps/quickshell 0.1.0: Toolkit for building desktop widgets using QtQuick
+gui-apps/quickshell 0.1.0 9999: Toolkit for building desktop widgets using QtQuick
 gui-apps/rofi-wayland 1.7.5_p3 1.7.8_p1: A window switcher, run dialog and dmenu replacement
 gui-apps/satty 0.14.0-r1 9999: A screenshot annotation tool inspired by Swappy and Flameshot.
 gui-apps/sddm-conf 0.3.0: SDDM configuration editor
@@ -1263,8 +1264,8 @@ kde-apps/kwalletcli 3.03: CLI for the KDE Wallet
 kde-misc/geminipart 20241121 20241215: KPart for viewing text/gemini files
 kde-misc/kio-gemini 20240801 20241109: Gemini KIO worker
 mail-client/betterbird-bin 128.11.0: Betterbird is a fine-tuned version of Mozilla Thunderbird.
-mail-client/mailspring-bin 1.15.1: A beautiful, fast and fully open source mail client for Mac, Windows and Linux
-mail-client/proton-mail-bin 1.0.6 1.8.0: Beta Client for Proton Mail
+mail-client/mailspring-bin 1.16.0: A beautiful, fast and fully open source mail client for Mac, Windows and Linux
+mail-client/proton-mail-bin 1.8.0: Beta Client for Proton Mail
 mail-filter/postfix-mta-sts-resolver 1.4.0: Daemon which provides TLS client policy for Postfix via socketmap
 media-fonts/atkinson-hyperlegible 20200514: Braille Institute's Atkinson Hyperlegible font.
 media-fonts/blobmoji 15.0: Noto Emoji with extended Blob support
@@ -1402,7 +1403,7 @@ media-sound/spotify-adblock 1.0.1 1.0.2 1.0.3: Adblocker for Spotify
 media-sound/spotify-player 0.19.1 0.20.4 0.20.5 9999: spotify_player is a fast, easy to use, and configurable terminal music player.
 media-sound/spotifyd 0.3.5_p20240513 0.4.1: A Spotify daemon
 media-sound/spotube-bin 3.8.0: An open source, cross-platform Spotify client
-media-sound/supersonic 0.15.2 0.16.0: A lightweight and full-featured cross-platform desktop client
+media-sound/supersonic 0.16.0 0.17.0: A lightweight and full-featured cross-platform desktop client
 media-sound/tidal-hifi-bin 5.16.0-r1 5.17.0: Web version of Tidal running in electron with Hi-Fi support thanks to Widevine.
 media-sound/yewtube 2.12.0 9999: Terminal-based YouTube player and downloader
 media-sound/youtube-music-bin 3.6.2-r1 3.8.0: YouTube Music Desktop App bundled with custom plugins
@@ -1419,7 +1420,7 @@ media-video/lossless-cut 3.59.1-r1: Lossless video/audio editing: export media w
 media-video/manimgl 1.7.2 9999: Animation engine for explanatory math videos
 media-video/mediaelch 2.10.6 2.12.0 9999: Video metadata scraper
 media-video/megapixels 1.4.3-r1: GTK4 camera application that knows how to deal with the media request api
-media-video/mpc-qt 24.12 24.12.1: Media Player Classic Qute Theater
+media-video/mpc-qt 24.12.1 25.07: Media Player Classic Qute Theater
 media-video/obs-multi-rtmp 0.6.0.1 9999: OBS Simulcast support plugin
 media-video/obs-streamfx 0.12.0.9999 9999: OBS® Studio plugin which adds many new effects.
 media-video/obs-vaapi 0.4.1 0.4.2 9999: OBS Studio VAAPI support via GStreamer
@@ -1473,7 +1474,7 @@ net-im/Quaternion 0.0.97.1: A Qt-based IM client for Matrix
 net-im/WasIstLos 1.6.5 1.7.0: An unofficial WhatsApp desktop application for Linux
 net-im/abaddon 0.2.1 9999: Alternative Discord client using GTK instead of Electron
 net-im/axolotl-bin 2.0.1: Axolotl is a cross-platform Signal client
-net-im/beeper 4.0.779 4.0.821: Beeper: Unified Messenger
+net-im/beeper 4.0.821 4.1.1: Beeper: Unified Messenger
 net-im/chatterino 2.5.2-r1 2.5.3: Chat client for https://twitch.tv
 net-im/conduit 0.10.4 0.10.5 0.10.6 9999: Matrix homeserver written in Rust
 net-im/discord-canary-bin 0.0.643: All-in-one voice and text chat
@@ -1512,7 +1513,7 @@ net-irc/limnoria-plugins-bugzilla 4.0: Bugzilla integration plugin for the Limno
 net-irc/litterbox 1.9: TLS-only IRC logger
 net-irc/pounce 3.0 3.1 3.1-r1: Multi-client, TLS-only IRC bouncer
 net-irc/quarg 1.0.0: Search Quassel logs for matching messages and print them
-net-irc/srain 1.8.0: Modern, beautiful IRC client written in GTK+ 3
+net-irc/srain 1.8.0 1.8.1: Modern, beautiful IRC client written in GTK+ 3
 net-irc/thelounge 4.4.1-r1 4.4.3-r2: ‎Modern, responsive, cross-platform, self-hosted web IRC client
 net-irc/tiny 0.12.0: IRC client written in Rust
 net-libs/dpdk 23.03: Data Plane Development Kit libraries for fast userspace networking
@@ -1560,7 +1561,7 @@ net-misc/lyrics-in-terminal 1.7.0 1.8.0: Command Line Lyrics fetcher for MPRIS m
 net-misc/maestral 1.9.4: Maestral is an open-source Dropbox client written in Python
 net-misc/maestral-qt 1.9.4: Maestral is an open-source Dropbox client written in Python
 net-misc/mbpoll 1.5.2 9999: command line utility to communicate with ModBus slave (RTU or TCP)
-net-misc/megasync 5.11.1.0 5.12.0.1: The official Qt-based program for syncing your MEGA account in your PC
+net-misc/megasync 5.12.0.1 5.13.0.1: The official Qt-based program for syncing your MEGA account in your PC
 net-misc/myip 1.2.1: Get your external IP address using STUN server
 net-misc/ooni-probe-cli 3.23.0 3.24.0: OONI Probe network measurement tool for detecting internet censorship
 net-misc/openbgpd 8.4 8.5 8.6 9999: OpenBGPD is a free implementation of BGPv4
@@ -1596,7 +1597,7 @@ net-p2p/fopnu 1.68: P2P file sharing system
 net-p2p/fragments 3.0.1-r1 3.0.1-r2: Fragments is an easy to use BitTorrent client
 net-p2p/gridcoin 5.4.8.0_p1-r1 5.4.9.0: Proof-of-Stake based cryptocurrency that rewards BOINC computation
 net-p2p/ipfs-desktop-bin 0.39.0 0.40.0 0.43.0: A desktop client for IPFS. The IPFS's Native Application
-net-p2p/monero 0.18.4.0-r5 9999: The secure, private, untraceable cryptocurrency
+net-p2p/monero 0.18.4.1 9999: The secure, private, untraceable cryptocurrency
 net-p2p/monero-gui-bin 0.18.4.0: An open-source GUI wallet developed by the Monero community.
 net-p2p/p2pool 4.5-r2 4.8 9999: Decentralized pool for Monero mining
 net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
@@ -1608,17 +1609,17 @@ net-proxy/nekoray 4.3.7: Qt based cross-platform GUI proxy configuration manager
 net-proxy/ngrok-bin 3.20.0: ngrok is a reverse proxy, firewall, and API gateway
 net-proxy/shadowsocks-rust 1.22.0: A Rust port of shadowsocks
 net-proxy/snowflake 2.10.1 2.11.0: Pluggable Transport using WebRTC, inspired by Flashproxy
-net-voip/baresip 3.21.0 3.22.0 3.23.0: Baresip is a portable and modular SIP User-Agent
+net-voip/baresip 3.22.0 3.23.0 3.24.0: Baresip is a portable and modular SIP User-Agent
 net-voip/discover-overlay 0.6.9-r1 0.7.4 0.7.8: Yet another Discord overlay for Linux written in Python using GTK3
 net-voip/gnome-calls 47.0-r1 48.1 48.2: Phone dialer and call handler
-net-voip/re 3.21.0 3.22.0 3.23.0: Generic library for real-time communications with async IO support
+net-voip/re 3.22.0 3.23.0 3.24.0: Generic library for real-time communications with async IO support
 net-voip/vvmd 0.8-r1: vvmd is a lower level daemon that retrieves Visual Voicemail
 net-vpn/GlobalProtect-openconnect 2.4.4-r1: Unofficial GlobalProtect VPN client for Linux
-net-vpn/cloudflare-warp 2025.4.943.0: Cloudflare Warp Client
+net-vpn/cloudflare-warp 2025.4.943.0 2025.5.893.0: Cloudflare Warp Client
 net-vpn/fastd 22 23: A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
 net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that require SAML
-net-vpn/mullvadvpn-app 2025.7: Tool used to manage daemon setup
-net-vpn/proton-vpn-gtk-app 4.9.6-r2: Proton VPN GTK app
+net-vpn/mullvadvpn-app 2025.7 2025.8_beta1: Tool used to manage daemon setup
+net-vpn/proton-vpn-gtk-app 4.9.7: Proton VPN GTK app
 net-wireless/airspyhf 1.6.8: User mode driver for Airspy HF+
 net-wireless/bluetuith 0.2.1 0.2.2 0.2.3 9999: A TUI bluetooth manager for Linux written in Go
 net-wireless/btscreenlocker 1.8.1-r1: Daemon to lock your screen when Bluetooth trusted devices go away.
@@ -1762,7 +1763,7 @@ sys-block/ublksrv 1.4: Userspace block device driver
 sys-boot/customrescuecd-x86_64-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/drbl 5.4.2: Diskless Remote Boot in Linux
 sys-boot/grml-rescueboot 0.6.1: grub2 script to add ISO images to the grub2 boot menu
-sys-boot/limine 9.3.0 9.3.2 9.3.4 9.4.0: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
+sys-boot/limine 9.3.0 9.3.2 9.3.4 9.4.0 9.5.0: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
 sys-boot/mkusb 23.2.0: CLI and GUI for creating bootable live USB, with optional persistent storage
 sys-boot/ventoy-bin 1.0.97 1.0.98: Creator of bootable USBs, with ability to copy ISOs, persistence storage
 sys-boot/zfsbootmenu 1.12.0 2.2.2 2.3.0 3.0.1: ZFS bootloader for root-on-ZFS systems
@@ -1824,7 +1825,7 @@ virtual/crystal-db 0.13-r1: Virtual for Crystal database drivers
 www-apps/anubis 1.19.1 1.20.0: Weighs the soul of incoming HTTP requests to stop AI crawlers
 www-apps/code-server-bin 4.18.0 4.19.1 4.90.3: VS Code in the browser (binary version with unbundled node and ripgrep)
 www-apps/forgejo 9.0.3 10.0.0 10.0.1: A self-hosted lightweight software forge
-www-apps/freshrss 1.24.3 1.25.0: A free, self-hostable news aggregator
+www-apps/freshrss 1.26.3: A free, self-hostable news aggregator
 www-apps/invidious 2025.05.04.0 2025.05.17.0: Invidious is an alternative front-end to YouTube
 www-apps/jackett 0.22.1363: API Support for your favorite torrent trackers
 www-apps/laminar 1.3-r1: Fast and lightweight Continuous Integration
@@ -1844,7 +1845,7 @@ www-client/mullvad-browser-bin 14.5.4: The Mullvad Browser is developed to minim
 www-client/nyxt 3.11.8 3.12.0 9999: Nyxt - the hacker's power-browser
 www-client/vimb 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
 www-client/yandex-browser 25.4.1.1213_p1: The web browser from Yandex
-www-client/zen-bin 1.14.2b 1.14.3b 1.14.4b: Zen Browser - A fast, privacy-focused Firefox fork
+www-client/zen-bin 1.14.2b 1.14.3b 1.14.4b 1.14.5b: Zen Browser - A fast, privacy-focused Firefox fork
 www-misc/dufs 0.40.0: Dufs is a distinctive utility file server
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits
 www-misc/kiwix-desktop 2.4.0: cross-platform viewer/manager for ZIM archives

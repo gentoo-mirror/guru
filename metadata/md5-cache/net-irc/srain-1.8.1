@@ -1,0 +1,16 @@
+BDEPEND=doc? ( || ( ( dev-lang/python:3.13 dev-python/sphinx[python_targets_python3_13(-)] dev-python/sphinxnotes-mock[python_targets_python3_13(-)] ) ( dev-lang/python:3.12 dev-python/sphinx[python_targets_python3_12(-)] dev-python/sphinxnotes-mock[python_targets_python3_12(-)] ) ( dev-lang/python:3.11 dev-python/sphinx[python_targets_python3_11(-)] dev-python/sphinxnotes-mock[python_targets_python3_11(-)] ) ) ) man? ( || ( ( dev-lang/python:3.13 dev-python/sphinx[python_targets_python3_13(-)] dev-python/sphinxnotes-mock[python_targets_python3_13(-)] ) ( dev-lang/python:3.12 dev-python/sphinx[python_targets_python3_12(-)] dev-python/sphinxnotes-mock[python_targets_python3_12(-)] ) ( dev-lang/python:3.11 dev-python/sphinx[python_targets_python3_11(-)] dev-python/sphinxnotes-mock[python_targets_python3_11(-)] ) ) ) sys-devel/gettext virtual/pkgconfig || ( dev-lang/python:3.13 dev-lang/python:3.12 dev-lang/python:3.11 ) >=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup test
+DEPEND=app-crypt/libsecret dev-libs/glib:2 dev-libs/libconfig:= dev-libs/openssl:= net-libs/libsoup:3.0 x11-libs/cairo x11-libs/gdk-pixbuf:2 x11-libs/gtk+:3 appindicator? ( dev-libs/libayatana-appindicator )
+DESCRIPTION=Modern, beautiful IRC client written in GTK+ 3
+EAPI=8
+HOMEPAGE=https://github.com/SrainApp/srain
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=meson python-any-r1 xdg
+IUSE=appindicator doc man
+KEYWORDS=~amd64 ~arm ~arm64 ~x86
+LICENSE=GPL-3
+RDEPEND=app-crypt/libsecret dev-libs/glib:2 dev-libs/libconfig:= dev-libs/openssl:= net-libs/libsoup:3.0 x11-libs/cairo x11-libs/gdk-pixbuf:2 x11-libs/gtk+:3 appindicator? ( dev-libs/libayatana-appindicator )
+SLOT=0
+SRC_URI=https://github.com/SrainApp/srain/archive/1.8.1.tar.gz -> srain-1.8.1.tar.gz
+_eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	601de75299d1a5fb14b475836969af0f	meson	99466844dd8d4fcfb07578a76f5a9922	python-any-r1	891415dfe39ad9b41b461f2b86354af0	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575
+_md5_=ab2aacfe97cbe99084e2e6717e721025
