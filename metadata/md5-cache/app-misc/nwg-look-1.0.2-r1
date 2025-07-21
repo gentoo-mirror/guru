@@ -1,6 +1,6 @@
 BDEPEND=>=dev-lang/go-1.20:= app-arch/unzip
 DEFINED_PHASES=compile install postinst postrm preinst unpack
-DEPEND=dev-libs/glib media-libs/fontconfig media-libs/freetype media-libs/harfbuzz x11-apps/xcur2png x11-libs/cairo x11-libs/gdk-pixbuf x11-libs/gtk+:3 x11-libs/pango
+DEPEND=app-accessibility/at-spi2-core dev-libs/glib media-libs/fontconfig media-libs/freetype media-libs/harfbuzz x11-apps/xcur2png x11-libs/cairo x11-libs/gdk-pixbuf x11-libs/gtk+:3 x11-libs/pango
 DESCRIPTION=GTK settings editor adapted to work on wlroots-based compositors
 EAPI=8
 HOMEPAGE=https://github.com/nwg-piotr/nwg-look
@@ -8,8 +8,8 @@ IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
 INHERIT=desktop go-module xdg
 KEYWORDS=~amd64
 LICENSE=MIT
-RDEPEND=dev-libs/glib media-libs/fontconfig media-libs/freetype media-libs/harfbuzz x11-apps/xcur2png x11-libs/cairo x11-libs/gdk-pixbuf x11-libs/gtk+:3 x11-libs/pango
+RDEPEND=app-accessibility/at-spi2-core dev-libs/glib media-libs/fontconfig media-libs/freetype media-libs/harfbuzz x11-apps/xcur2png x11-libs/cairo x11-libs/gdk-pixbuf x11-libs/gtk+:3 x11-libs/pango
 SLOT=0
 SRC_URI=https://github.com/nwg-piotr/nwg-look/archive/refs/tags/v1.0.2.tar.gz -> nwg-look-1.0.2.tar.gz https://slackware.lngn.net/pub/source/nwg-look/nwg-look-vendor-1.0.2.tar.xz
 _eclasses_=desktop	3a72ffe0d8e1dd73af3a1c8c15a59fed	multiprocessing	1e32df7deee68372153dca65f4a7c21f	toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	go-env	0e2babf96e7d0b045fc07ad199eb2399	go-module	d96f2a2fd6d8fbad6d94516bf238f885	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575
-_md5_=4f59d76b293ecf08e2979475b0a7aaf9
+_md5_=db0de7885074f1614dfc31fa105fb304

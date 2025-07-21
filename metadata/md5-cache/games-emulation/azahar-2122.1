@@ -1,0 +1,17 @@
+BDEPEND=test? ( >=dev-cpp/catch-3:0 ) app-alternatives/ninja >=dev-build/cmake-3.20.5
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare test
+DEPEND=app-arch/zstd dev-cpp/nlohmann_json dev-cpp/robin-map dev-libs/boost:= dev-libs/crypto++:= dev-libs/dynarmic dev-libs/inih dev-libs/libfmt:= dev-libs/microprofile dev-libs/nihstro dev-libs/openssl:= dev-libs/sirit dev-libs/teakra dev-qt/qtbase:6[concurrent,dbus,widgets] dev-qt/qtmultimedia:6 dev-util/glslang media-libs/cubeb media-libs/faad2 media-libs/libsdl2 media-libs/libsoundtouch:= media-libs/openal media-video/ffmpeg net-libs/enet virtual/libusb dev-util/vulkan-headers media-libs/VulkanMemoryAllocator amd64? ( dev-libs/xbyak ) arm64? ( dev-libs/oaknut )
+DESCRIPTION=An open-source 3DS emulator project based on Citra
+EAPI=8
+HOMEPAGE=https://azahar-emu.org
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=cmake xdg
+IUSE=cpu_flags_x86_sse4_2 test
+KEYWORDS=~amd64
+LICENSE=GPL-2+ MIT BSD-2 ZLIB MIT GPL-2+ Boost-1.0 BSD
+RDEPEND=app-arch/zstd dev-cpp/nlohmann_json dev-cpp/robin-map dev-libs/boost:= dev-libs/crypto++:= dev-libs/dynarmic dev-libs/inih dev-libs/libfmt:= dev-libs/microprofile dev-libs/nihstro dev-libs/openssl:= dev-libs/sirit dev-libs/teakra dev-qt/qtbase:6[concurrent,dbus,widgets] dev-qt/qtmultimedia:6 dev-util/glslang media-libs/cubeb media-libs/faad2 media-libs/libsdl2 media-libs/libsoundtouch:= media-libs/openal media-video/ffmpeg net-libs/enet virtual/libusb
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/azahar-emu/azahar/releases/download/2122.1/azahar-unified-source-2122.1.tar.xz -> azahar-2122.1.tar.xz
+_eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	460729dc36f68cf03b044bc1d367e34a	xdg	3ef49a87c52c8b77c476351195dfe575
+_md5_=26781718e989324fad1a28d44c59aa15

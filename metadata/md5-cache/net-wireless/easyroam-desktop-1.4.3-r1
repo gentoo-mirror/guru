@@ -1,0 +1,13 @@
+DEFINED_PHASES=install postinst postrm prepare unpack
+DEPEND=app-accessibility/at-spi2-core app-crypt/libsecret dev-libs/glib media-libs/harfbuzz net-misc/networkmanager net-libs/glib-networking net-libs/libsoup:3.0 net-libs/webkit-gtk:4.1[keyring] sys-libs/zlib x11-libs/cairo x11-libs/gdk-pixbuf:2 x11-libs/gtk+:3 x11-libs/pango
+DESCRIPTION=Easily connect your device to eduroam®
+EAPI=8
+HOMEPAGE=https://www.easyroam.de
+INHERIT=unpacker xdg-utils
+KEYWORDS=-* ~amd64
+LICENSE=all-rights-reserved
+RDEPEND=app-accessibility/at-spi2-core app-crypt/libsecret dev-libs/glib media-libs/harfbuzz net-misc/networkmanager net-libs/glib-networking net-libs/libsoup:3.0 net-libs/webkit-gtk:4.1[keyring] sys-libs/zlib x11-libs/cairo x11-libs/gdk-pixbuf:2 x11-libs/gtk+:3 x11-libs/pango
+SLOT=0
+SRC_URI=https://packages.easyroam.de/repos/easyroam-desktop/pool/main/e/easyroam-desktop/easyroam_connect_desktop-1.4.3+1.4.3-linux.deb
+_eclasses_=multiprocessing	1e32df7deee68372153dca65f4a7c21f	toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	unpacker	3b4ee72d1e2e0374fd8cd3eddfa00627	xdg-utils	42869b3c8d86a70ef3cf75165a395e09
+_md5_=cb4a180d85833cff71b676c8062eb416

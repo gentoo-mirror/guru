@@ -1,0 +1,16 @@
+BDEPEND=test? ( dev-cpp/catch dev-libs/oaknut ) app-alternatives/ninja >=dev-build/cmake-3.20.5
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=dev-cpp/robin-map dev-libs/boost:= dev-libs/libfmt:= dev-libs/mcl amd64? ( dev-libs/zydis ) amd64? ( >=dev-libs/xbyak-7.25 ) arm64? ( dev-libs/oaknut )
+DESCRIPTION=An ARM dynamic recompiler
+EAPI=8
+HOMEPAGE=https://github.com/lioncash/dynarmic
+INHERIT=cmake
+IUSE=test
+KEYWORDS=~amd64
+LICENSE=0BSD
+RDEPEND=dev-cpp/robin-map dev-libs/boost:= dev-libs/libfmt:= dev-libs/mcl amd64? ( dev-libs/zydis )
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/lioncash/dynarmic/archive/fa6cc2e4b2a2954f2298b6548174479c5b106c2a.tar.gz -> dynarmic-6.7.0.tar.gz
+_eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	460729dc36f68cf03b044bc1d367e34a
+_md5_=2a5270fe32e2138ab8b8747b14e7baaa
