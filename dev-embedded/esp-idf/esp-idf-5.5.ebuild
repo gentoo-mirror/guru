@@ -6,7 +6,7 @@ EAPI=8
 PYTHON_COMPAT=( python3_{11..13} )
 PYTHON_GDB_USE=( python_targets_python3_{11,12} )
 VER="14.2.0_20241119"
-GDB_VER="14.2_20240403"
+GDB_VER="16.2_20250324"
 OPENOCD_VER="0.12.0-esp32-20250422"
 
 CROSSTOOL_URL="https://github.com/espressif/crosstool-NG/releases/download/esp-${VER}"
