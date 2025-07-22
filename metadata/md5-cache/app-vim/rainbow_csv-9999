@@ -1,7 +1,7 @@
 BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=install postinst postrm prepare unpack
 DEPEND=|| ( >=app-editors/vim-7.3 >=app-editors/gvim-7.3 )
-DESCRIPTION=🌈Rainbow CSV - Vim plugin: Highlight columns in CSV and TSV files and run queries in SQL-like language
+DESCRIPTION=A vim plugin for CSV and TSV highlighting and running queries
 EAPI=8
 HOMEPAGE=https://github.com/mechatroner/rainbow_csv
 INHERIT=vim-plugin git-r3
@@ -10,4 +10,4 @@ PROPERTIES=live
 RDEPEND=app-editors/vim || ( >=app-editors/vim-7.3 >=app-editors/gvim-7.3 )
 SLOT=0
 _eclasses_=vim-doc	bea02829eae182f569e6e9a5dc2fe08f	vim-plugin	4acc7611306b8fdbeac907d572ccac21	git-r3	875eb471682d3e1f18da124be97dcc81
-_md5_=072daaef094b3f497e30c059fddc5010
+_md5_=ddf631e2a8dfad80cc6aaa10569896ee
