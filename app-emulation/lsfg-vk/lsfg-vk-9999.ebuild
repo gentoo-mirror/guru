@@ -3,12 +3,14 @@
 
 EAPI=8
 
-inherit cmake
+CARGO_OPTIONAL=1
+inherit cargo cmake flag-o-matic toolchain-funcs
 
 DESCRIPTION="Lossless Scaling Frame Generation on Linux via DXVK/Vulkan"
 HOMEPAGE="https://github.com/PancakeTAS/lsfg-vk"
 LICENSE="MIT"
 SLOT="0"
+IUSE="+gui"
 
 if [[ ${PV} == 9999 ]]; then
 	inherit git-r3
@@ -18,7 +20,7 @@ if [[ ${PV} == 9999 ]]; then
 		thirdparty/pe-parse
 	)
 else
-	HASH_DXBC="04ca5e9ae5fef6c0c65ea72bbaa7375327f11454"
+	HASH_DXBC="80e316fd13d7e8938d99a08f1f405a0679c3ccfa"
 	PEPARSE_VERSION="2.1.1"
 	SRC_URI="
 		https://github.com/PancakeTAS/lsfg-vk/archive/refs/tags/v${PV}.tar.gz
@@ -30,11 +32,17 @@ fi
 BDEPEND="
 	dev-util/spirv-headers
 	dev-util/vulkan-headers
+	gui? ( ${RUST_DEPEND} )
 	>=media-libs/raylib-9999
 "
 DEPEND="
 	dev-cpp/toml11
 	dev-util/glslang
+	gui? (
+		dev-libs/glib:2
+		gui-libs/gtk:4
+		gui-libs/libadwaita
+	)
 	|| (
 		media-libs/glfw
 		media-libs/libsdl2
@@ -43,6 +51,26 @@ DEPEND="
 	media-libs/vulkan-loader
 "
 RDEPEND="${DEPEND}"
+
+src_unpack() {
+	if [[ ${PV} != 9999 ]]; then
+		default
+	else
+		git-r3_src_unpack
+	fi
+
+	if use gui; then
+		oldS="${S}"
+		S="${S}/ui"
+		if [[ ${PV} != 9999 ]]; then
+			A=$(printf '%s\n' "${A[@]}" | grep '\.crate$' || true) # Workaroud to avoid unpacking twice
+			cargo_src_unpack
+		else
+			cargo_live_src_unpack
+		fi
+		S="${oldS}"
+	fi
+}
 
 src_prepare() {
 	if [[ ${PV} != 9999 ]]; then
@@ -93,8 +121,20 @@ target_include_directories(dxbc\
 	cmake_src_prepare
 }
 
+src_configure() {
+	tc-is-gcc && filter-lto # LTO with gcc causes segfaults at runtime
+	cmake_src_configure
+	use gui && { pushd ui > /dev/null || die; cargo_src_configure; }
+}
+
+src_compile() {
+	cmake_src_compile
+	use gui && { pushd ui > /dev/null || die; cargo_src_compile; }
+}
+
 src_install() {
 	insinto "/usr/share/vulkan/implicit_layer.d/"
 	doins "${S}/VkLayer_LS_frame_generation.json"
 	dolib.so "${WORKDIR}/${P}_build/liblsfg-vk.so"
+	use gui && newbin "${S}/ui/$(cargo_target_dir)/ui" "lsfg-vk-gui"
 }
