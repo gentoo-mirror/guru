@@ -1,9 +1,9 @@
 BDEPEND=ruby_targets_ruby32? ( dev-lang/ruby:3.2 ) ruby_targets_ruby33? ( dev-lang/ruby:3.3 ) ruby_targets_ruby34? ( dev-lang/ruby:3.4 ) ruby_targets_ruby32? ( doc? ( dev-ruby/rdoc[ruby_targets_ruby32(-)] ) ) ruby_targets_ruby33? ( doc? ( dev-ruby/rdoc[ruby_targets_ruby33(-)] ) ) ruby_targets_ruby34? ( doc? ( dev-ruby/rdoc[ruby_targets_ruby34(-)] ) ) ruby_targets_ruby32? ( test? ( dev-ruby/rake[ruby_targets_ruby32(-)] ) ) ruby_targets_ruby33? ( test? ( dev-ruby/rake[ruby_targets_ruby33(-)] ) ) ruby_targets_ruby34? ( test? ( dev-ruby/rake[ruby_targets_ruby34(-)] ) ) ruby_targets_ruby32? ( virtual/rubygems[ruby_targets_ruby32(-)] ) ruby_targets_ruby33? ( virtual/rubygems[ruby_targets_ruby33(-)] ) ruby_targets_ruby34? ( virtual/rubygems[ruby_targets_ruby34(-)] ) test? ( ruby_targets_ruby32? ( virtual/rubygems[ruby_targets_ruby32(-)] ) ruby_targets_ruby33? ( virtual/rubygems[ruby_targets_ruby33(-)] ) ruby_targets_ruby34? ( virtual/rubygems[ruby_targets_ruby34(-)] ) )
 DEFINED_PHASES=compile configure install prepare setup test unpack
-DEPEND=ruby_targets_ruby32? ( dev-lang/ruby:3.2 ) ruby_targets_ruby33? ( dev-lang/ruby:3.3 ) ruby_targets_ruby34? ( dev-lang/ruby:3.4 ) ruby_targets_ruby32? ( virtual/rubygems[ruby_targets_ruby32(-)] ) ruby_targets_ruby33? ( virtual/rubygems[ruby_targets_ruby33(-)] ) ruby_targets_ruby34? ( virtual/rubygems[ruby_targets_ruby34(-)] )
-DESCRIPTION=Language Server SDK Gem for Ruby
+DEPEND=>=dev-ruby/prism-1.2 <dev-ruby/prism-2 >=dev-ruby/rbs-3 <dev-ruby/rbs-4 =dev-ruby/language_server-protocol-3.17* >=dev-ruby/sorbet-runtime-0.5.10782 ruby_targets_ruby32? ( dev-lang/ruby:3.2 ) ruby_targets_ruby33? ( dev-lang/ruby:3.3 ) ruby_targets_ruby34? ( dev-lang/ruby:3.4 ) ruby_targets_ruby32? ( virtual/rubygems[ruby_targets_ruby32(-)] ) ruby_targets_ruby33? ( virtual/rubygems[ruby_targets_ruby33(-)] ) ruby_targets_ruby34? ( virtual/rubygems[ruby_targets_ruby34(-)] )
+DESCRIPTION=An opinionated language server for Ruby
 EAPI=8
-HOMEPAGE=https://github.com/mtsmfm/language_server-protocol-ruby
+HOMEPAGE=https://shopify.github.io/ruby-lsp
 INHERIT=ruby-fakegem
 IUSE=ruby_targets_ruby32 ruby_targets_ruby33 ruby_targets_ruby34 doc test test
 KEYWORDS=~amd64
@@ -12,6 +12,6 @@ RDEPEND=ruby_targets_ruby32? ( dev-lang/ruby:3.2 ) ruby_targets_ruby33? ( dev-la
 REQUIRED_USE=|| ( ruby_targets_ruby32 ruby_targets_ruby33 ruby_targets_ruby34 )
 RESTRICT=!test? ( test ) !test? ( test )
 SLOT=0
-SRC_URI=https://github.com/mtsmfm/language_server-protocol-ruby/archive/refs/tags/v3.17.0.4.tar.gz -> language_server-protocol-3.17.0.4.tar.gz
+SRC_URI=https://github.com/Shopify/ruby-lsp/archive/refs/tags/v0.23.11.tar.gz -> ruby-lsp-0.23.11.tar.gz
 _eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	multilib	b2a329026f2e404e9e371097dda47f96	ruby-utils	cb2cdbbce7fae7a6b2b1021219b0680d	ruby-ng	960d5adaf301da1ef0ab9bdba5018a6d	ruby-fakegem	bc37b1e2fa23e795fae856dd70a23846
-_md5_=ac36cf81f1671ff580cf97e633e65d01
+_md5_=a1c1e18d86e923dad1357052f5043912
