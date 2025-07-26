@@ -104,7 +104,7 @@ app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applicatio
 app-admin/pass-audit 1.2-r1: A pass extension for auditing your password repository.
 app-admin/pass-update 2.2.1: pass extension that provides an easy flow for updating passwords
 app-admin/passage 1.7.4.2: A fork of password-store using age as encryption backend
-app-admin/pulumi-bin 3.175.0 3.184.0 3.185.0-r1: Infrastructure as code in any programming language
+app-admin/pulumi-bin 3.184.0 3.185.0-r1 3.186.0: Infrastructure as code in any programming language
 app-admin/rbw 1.13.2 9999: Unofficial Bitwarden CLI
 app-admin/ripasso 0.7.0: A password manager that uses the file format of 'pass'
 app-admin/s-tui 1.1.6 1.2.0: Stress-Terminal UI monitoring tool
@@ -266,7 +266,6 @@ app-misc/mat2 0.13.4 0.13.5: Metadata Anonymisation Toolkit: handy tool to trash
 app-misc/metadata-cleaner 2.5.6: Python GTK application to view and clean metadata in files, using mat2.
 app-misc/minder 1.16.2 1.16.3: Mind-mapping application for Elementary OS.
 app-misc/mirafetch 0.1.0 9999: A Rust reimplementation of Hyfetch wih a focus on speed
-app-misc/mobile-datovka 1.10.0: Mobile optimized GUI to access the Czech data box e-government system
 app-misc/morgen 3.6.10: Morgen simplifies time management by consolidating all your calendars.
 app-misc/mxw 0.1.2: CLI tool for Glorious wireless mice
 app-misc/mymefetch 1.3: MymeType's own neofetch-like Bash script
@@ -499,7 +498,7 @@ dev-embedded/esp-idf 5.3.3-r1 5.4.2-r1 5.5: Espressif IoT Development Framework
 dev-embedded/esp-idf-kconfig 2.4.1 2.5.0 2.5.0-r1: Kconfig tooling for esp-idf
 dev-embedded/esp-idf-monitor 1.6.2 1.7.0: Python object-oriented database
 dev-embedded/esp-idf-nvs-partition-gen 0.1.6 0.1.9: Parses ESP-IDF panic handler output acts as a GDB server over stdin/stdout
-dev-embedded/esp-idf-panic-decoder 1.2.1-r1 1.3.0: Parses ESP-IDF panic handler output acts as a GDB server over stdin/stdout
+dev-embedded/esp-idf-panic-decoder 1.2.1-r1 1.3.0 1.4.1: Parses ESP-IDF panic handler output acts as a GDB server over stdin/stdout
 dev-embedded/esp-idf-size 1.6.1 1.7.1: Firmware size analysis for ESP-IDF
 dev-embedded/freertos-gdb 1.0.3 1.0.4: Python module for operating with freeRTOS-kernel objects in GDB
 dev-embedded/fwup 1.12.0 1.13.0 1.13.1 1.13.2: Configurable embedded Linux firmware update creator and runner
@@ -587,9 +586,9 @@ dev-libs/libdatrie 0.2.13-r1: Double-Array Trie Library
 dev-libs/libdbf 0.0.1: Library to read the content of dBASE III, IV, and 5.0 files
 dev-libs/libdwarf 2.0.0 2.1.0: The DWARF Debugging Information Format
 dev-libs/libglibutil 1.0.80 9999: Library of glib utilities from sailfishos project
-dev-libs/librepo 1.19.0-r1: Repodata downloading library
+dev-libs/librepo 1.19.0-r1 1.20.0: Repodata downloading library
 dev-libs/libsignal-ffi 0.51.0-r1 0.62.0 0.64.1: A C ABI library which exposes Signal protocol logic
-dev-libs/libsolv 0.7.32 0.7.33: Library for solving packages and reading repositories
+dev-libs/libsolv 0.7.33 0.7.34: Library for solving packages and reading repositories
 dev-libs/libthai 0.1.29: A a set of Thai language support routines
 dev-libs/libtypec 0.5.2-r2: Library to interface with USB Type-C/Power Delivery devices
 dev-libs/ls-hpack 2.3.4: QPACK compression library for use with HTTP/3
@@ -997,7 +996,6 @@ dev-util/ocp-indent 1.8.2: Indentation tool for OCaml, to be used from editors l
 dev-util/pcpp 1.30: A C99 preprocessor written in pure Python
 dev-util/pifpaf 3.3.0: Suite of tools and fixtures to manage daemons for testing
 dev-util/pmbootstrap 3.0.0 3.3.1: Helper tool for developing and building postmarketOS
-dev-util/qshaderedit 0.1.5: Multiplatform shader editor inspired by Apple's OpenGL Shader Builder
 dev-util/quilttools 0.3-r1: Mailbox to quilt series converter
 dev-util/rexxd 2025.02.17: Drop-in replacement for the original xxd
 dev-util/riffdiff 3.3.10 3.4.0: A diff filter highlighting changed line parts
@@ -1269,11 +1267,11 @@ gui-wm/niri 25.02 25.05.1-r1: Scrollable-tiling Wayland compositor
 gui-wm/phoc 0.46.0 0.47.0 0.48.0: Wayland compositor for mobile phones
 gui-wm/river 0.3.7 0.3.9 0.3.11: A dynamic tiling Wayland compositor
 gui-wm/swayfx 0.5 0.5.3: SwayFX: Sway, but with eye candy!
-gui-wm/wayback 0.1: X11 compatibility layer levaraging wlroots and Xwayland
+gui-wm/wayback 0.2: X11 compatibility layer levaraging wlroots and Xwayland
 kde-apps/kwalletcli 3.03: CLI for the KDE Wallet
 kde-misc/geminipart 20241121 20241215: KPart for viewing text/gemini files
 kde-misc/kio-gemini 20240801 20241109: Gemini KIO worker
-mail-client/betterbird-bin 128.11.0: Betterbird is a fine-tuned version of Mozilla Thunderbird.
+mail-client/betterbird-bin 128.13.0: Betterbird is a fine-tuned version of Mozilla Thunderbird.
 mail-client/mailspring-bin 1.16.0: A beautiful, fast and fully open source mail client for Mac, Windows and Linux
 mail-client/proton-mail-bin 1.8.0: Beta Client for Proton Mail
 mail-filter/postfix-mta-sts-resolver 1.4.0: Daemon which provides TLS client policy for Postfix via socketmap
@@ -1431,7 +1429,7 @@ media-video/manimgl 1.7.2 9999: Animation engine for explanatory math videos
 media-video/mediaelch 2.10.6 2.12.0 9999: Video metadata scraper
 media-video/megapixels 1.4.3-r1: GTK4 camera application that knows how to deal with the media request api
 media-video/mpc-qt 24.12.1 25.07: Media Player Classic Qute Theater
-media-video/obs-cmd 0.18.5: A minimal obs CLI for obs-websocket v5
+media-video/obs-cmd 0.18.5 0.19.2: A minimal obs CLI for obs-websocket v5
 media-video/obs-multi-rtmp 0.6.0.1 9999: OBS Simulcast support plugin
 media-video/obs-streamfx 0.12.0.9999 9999: OBS® Studio plugin which adds many new effects.
 media-video/obs-vaapi 0.4.1 0.4.2 9999: OBS Studio VAAPI support via GStreamer
@@ -1493,7 +1491,7 @@ net-im/discord-ptb-bin 0.0.137: All-in-one voice and text chat
 net-im/discordo 9999: A lightweight, secure, and feature-rich Discord TUI client.
 net-im/eturnal 1.12.1 1.12.2: STUN/TURN server
 net-im/flare 0.12.0-r1: Chat with your friends on Signal
-net-im/gajim-plugins 9999: Plugins developed fro Gajim XMPP client
+net-im/gajim-plugins 9999: Plugins developed for Gajim XMPP client
 net-im/go-sendxmpp 0.6.1 0.8.3: A tool to send messages or files to an XMPP contact or MUC
 net-im/gomuks 0.3.0 0.3.1: A terminal based Matrix client written in Go
 net-im/gurk-rs 0.7.1 9999: Signal messenger client for terminal
@@ -1586,7 +1584,7 @@ net-misc/toot 0.38.1-r1 0.48.1: toot - Mastodon CLI & TUI
 net-misc/warp 0.9.2: Fast and secure file transfer
 net-misc/wayback_machine_downloader 2.3.0 2.3.1: Download an entire website from the Wayback Machine
 net-misc/whatscli 1.0.6 1.0.11: A command line interface for WhatsApp
-net-misc/wlvncc 20250122 20250307 20250626 99999999: A Wayland Native VNC Client
+net-misc/wlvncc 20250307 20250626 20250725 99999999: A Wayland Native VNC Client
 net-misc/wsdd 0.8 0.9: A Web Service Discovery host daemon.
 net-misc/wstunnel 10.4.3 10.4.4: Tunnel all your traffic over Websocket or HTTP2 - Bypass firewalls/DPI
 net-misc/xh 0.24.1: Friendly and fast tool for sending HTTP requests
@@ -1621,6 +1619,7 @@ net-proxy/nekoray 4.3.7: Qt based cross-platform GUI proxy configuration manager
 net-proxy/ngrok-bin 3.20.0: ngrok is a reverse proxy, firewall, and API gateway
 net-proxy/shadowsocks-rust 1.22.0: A Rust port of shadowsocks
 net-proxy/snowflake 2.10.1 2.11.0: Pluggable Transport using WebRTC, inspired by Flashproxy
+net-proxy/wireproxy 1.0.9: Wireguard client that exposes itself as a proxy
 net-voip/baresip 3.22.0 3.23.0 3.24.0: Baresip is a portable and modular SIP User-Agent
 net-voip/discover-overlay 0.6.9-r1 0.7.4 0.7.8: Yet another Discord overlay for Linux written in Python using GTK3
 net-voip/gnome-calls 47.0-r1 48.1 48.2: Phone dialer and call handler
@@ -1738,7 +1737,7 @@ sys-apps/coolercontrol 2.2.1 2.2.2: Monitor and control your cooling and other d
 sys-apps/coolercontrol-liqctld 2.2.1 2.2.2: Monitor and control your cooling and other devices (liqctld)
 sys-apps/coolercontrold 2.2.1 2.2.2: Monitor and control your cooling and other devices (daemon)
 sys-apps/corefreq 1.96.3: CPU monitoring software designed for the 64-bits Processors, like top
-sys-apps/dnf5 5.2.12.0 5.2.13.1: Command-line package manager
+sys-apps/dnf5 5.2.13.1 5.2.15.0: Command-line package manager
 sys-apps/dool 1.3.1-r1 1.3.2-r2 9999: Versatile replacement for vmstat, iostat and ifstat (clone of dstat)
 sys-apps/drm_info 2.7.0 2.8.0: Small utility to dump info about DRM devices
 sys-apps/dysk 2.10.1: give information on mounted filesystems
@@ -1855,7 +1854,7 @@ www-apps/whoogle-search 0.9.3: A self-hosted, ad-free, privacy-respecting metase
 www-apps/zola 0.20.0: A fast static site generator with everything built-in
 www-client/badwolf 1.3.0-r2 9999: Minimalist and privacy-oriented WebKitGTK+ browser
 www-client/browsh 1.8.2: A fully-modern text-based browser, rendering to TTY and browsers
-www-client/mullvad-browser-bin 14.5.4: The Mullvad Browser is developed to minimize tracking and fingerprinting.
+www-client/mullvad-browser-bin 14.5.5: The Mullvad Browser is developed to minimize tracking and fingerprinting.
 www-client/nyxt 3.11.8 3.12.0 9999: Nyxt - the hacker's power-browser
 www-client/vimb 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
 www-client/yandex-browser 25.4.1.1213_p1: The web browser from Yandex
