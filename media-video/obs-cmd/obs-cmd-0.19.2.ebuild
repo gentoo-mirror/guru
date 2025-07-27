@@ -203,8 +203,8 @@ KEYWORDS="~amd64"
 
 RESTRICT="mirror"
 
-BDEPEND="|| ( >=dev-lang/rust-bin-1.88.0:* >=dev-lang/rust-1.88.0:* )"
+RUST_MIN_VER=1.88.0
 
 src_install() {
-	dobin target/release/obs-cmd
+	dobin "$(cargo_target_dir)"/obs-cmd
 }
