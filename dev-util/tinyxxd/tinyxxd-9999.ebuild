@@ -3,6 +3,8 @@
 
 EAPI=8
 
+inherit edo toolchain-funcs
+
 DESCRIPTION="Drop-in replacement and standalone version of xxd"
 HOMEPAGE="https://github.com/xyproto/tinyxxd"
 if [[ ${PV} == *9999* ]]; then
@@ -13,12 +15,30 @@ else
 	KEYWORDS="~amd64"
 fi
 
-RDEPEND="!dev-util/xxd"
+LICENSE="|| ( GPL-2 MIT )"
 
-LICENSE="GPL-2"
 SLOT="0"
 
+IUSE="xxd"
+
+RDEPEND="xxd? ( !dev-util/xxd !app-editors/vim-core )"
+
+PATCHES=( "${FILESDIR}"/${PN}-1.3.7-fix-flags.patch )
+
+src_compile() {
+	export CFLAGS LDFLAGS
+	tc-export CC
+	emake
+}
+
+src_test() {
+	edo ./testfiles/test13.sh
+	edo ./testfiles/test14.sh
+}
+
 src_install(){
-	default
-	dosym /usr/bin/tinyxxd /usr/bin/xxd
+	emake DESTDIR="${D}" PREFIX="${EPREFIX}"/usr install
+	if use xxd; then
+		dosym -r /usr/bin/tinyxxd /usr/bin/xxd
+	fi
 }
