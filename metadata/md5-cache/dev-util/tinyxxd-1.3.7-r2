@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install test
+DESCRIPTION=Drop-in replacement and standalone version of xxd
+EAPI=8
+HOMEPAGE=https://github.com/xyproto/tinyxxd
+INHERIT=edo toolchain-funcs
+IUSE=xxd
+KEYWORDS=~amd64
+LICENSE=|| ( GPL-2 MIT )
+RDEPEND=xxd? ( !dev-util/xxd !app-editors/vim-core )
+SLOT=0
+SRC_URI=https://github.com/xyproto/tinyxxd/archive/refs/tags/v1.3.7.tar.gz -> tinyxxd-1.3.7.tar.gz
+_eclasses_=edo	a5e294016aa84979fcb2459749eb80b2	toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0
+_md5_=b766f3e91b6a9a8ac1a7707ed2097275
