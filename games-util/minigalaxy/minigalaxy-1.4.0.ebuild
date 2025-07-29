@@ -39,6 +39,7 @@ BDEPEND="
 	sys-apps/help2man
 	sys-devel/gettext
 	test? (
+		${RDEPEND}
 		$(python_gen_cond_dep '
 			dev-python/simplejson[${PYTHON_USEDEP}]
 		')

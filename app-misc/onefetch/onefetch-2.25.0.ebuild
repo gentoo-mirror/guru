@@ -3,7 +3,7 @@
 
 EAPI=8
 
-RUST_MIN_VER="1.81.0"
+RUST_MIN_VER="1.82.0"
 
 inherit cargo shell-completion
 
@@ -15,7 +15,7 @@ SRC_URI="https://github.com/o2sh/onefetch/archive/refs/tags/${PV}.tar.gz -> ${P}
 "
 LICENSE="MIT"
 # Dependent crate licenses
-LICENSE+=" Apache-2.0 BSD ISC MPL-2.0 Unicode-3.0"
+LICENSE+=" Apache-2.0 BSD ISC MPL-2.0 Unicode-3.0 ZLIB"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE="test"
@@ -24,12 +24,8 @@ RESTRICT="!test? ( test )"
 RDEPEND="app-arch/zstd:="
 DEPEND="${RDEPEND}"
 BDEPEND="
-	dev-build/cmake
 	virtual/pkgconfig
-	test? (
-		dev-vcs/git
-		${RDEPEND}
-	)
+	test? ( dev-vcs/git )
 "
 
 QA_FLAGS_IGNORED="usr/bin/onefetch"
