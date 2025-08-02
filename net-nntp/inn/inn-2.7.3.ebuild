@@ -1,9 +1,9 @@
-# Copyright 2022-2024 Gentoo Authors
+# Copyright 2022-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..13} )
+PYTHON_COMPAT=( python3_{11..14} )
 inherit optfeature perl-functions python-single-r1 tmpfiles verify-sig
 
 DESCRIPTION="InterNetNews - the Internet meets Netnews"
@@ -50,7 +50,7 @@ BDEPEND="
 	dev-lang/perl
 	virtual/pkgconfig
 	test? ( dev-perl/Test-Pod )
-	verify-sig? ( >=sec-keys/openpgp-keys-russallbery-20230000 )
+	verify-sig? ( >=sec-keys/openpgp-keys-russallbery-20250000 )
 "
 
 DOCS=( CONTRIBUTORS HACKING INSTALL NEWS README TODO )
