@@ -1,0 +1,16 @@
+BDEPEND=test? ( >app-vim/vader-0.3.0 )
+DEFINED_PHASES=compile install postinst postrm prepare test
+DEPEND=|| ( >=app-editors/vim-7.3 >=app-editors/gvim-7.3 )
+DESCRIPTION=vim plugin: Yet Another TypeScript Syntax
+EAPI=8
+HOMEPAGE=https://github.com/HerringtonDarkholme/yats.vim
+INHERIT=vim-plugin
+IUSE=test
+KEYWORDS=~amd64
+LICENSE=vim
+RDEPEND=|| ( >=app-editors/vim-7.3 >=app-editors/gvim-7.3 )
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/HerringtonDarkholme/yats.vim/archive/c3d71452154a12ccf9f6e4219ccbd625474602e5.tar.gz -> yats-2025.08.05.tar.gz
+_eclasses_=vim-doc	bea02829eae182f569e6e9a5dc2fe08f	vim-plugin	4acc7611306b8fdbeac907d572ccac21
+_md5_=ff1330e4ee00ea2476908c84d927646e
