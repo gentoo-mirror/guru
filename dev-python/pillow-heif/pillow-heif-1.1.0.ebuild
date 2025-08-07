@@ -19,29 +19,20 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="
-	!test? (
-		dev-python/pillow[${PYTHON_USEDEP}]
-		>=media-libs/libheif-1.17.6:=
-	)
-	test? (
-		dev-python/pillow[jpeg,lcms,webp,zlib,${PYTHON_USEDEP}]
-		>=media-libs/libheif-1.17.6:=[x265]
-	)
+	dev-python/pillow[${PYTHON_USEDEP}]
+	>=media-libs/libheif-1.19.5:=
 "
 BDEPEND="
 	test? (
 		dev-python/defusedxml[${PYTHON_USEDEP}]
 		dev-python/numpy[${PYTHON_USEDEP}]
+		dev-python/pillow[jpeg,lcms,webp,zlib,${PYTHON_USEDEP}]
+		>=media-libs/libheif-1.19.5:=[x265]
 		media-libs/opencv[png,python,${PYTHON_USEDEP}]
 	)
 "
 
 PATCHES=( "${FILESDIR}/${PN}-0.21.0-respect-cflags.patch" )
 
-EPYTEST_DESELECT=(
-	# only works with libeif-1.19.5
-	# https://github.com/bigcat88/pillow_heif/pull/312/commits/d740dcce7d967d025c4100611cc7a4632aa3fc3a
-	"tests/read_test.py::test_heif_read_images"
-)
-
+EPYTEST_PLUGINS=()
 distutils_enable_tests pytest

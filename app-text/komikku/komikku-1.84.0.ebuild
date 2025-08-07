@@ -44,8 +44,7 @@ RDEPEND="
 		dev-python/lxml[${PYTHON_USEDEP}]
 		dev-python/natsort[${PYTHON_USEDEP}]
 		dev-python/piexif[${PYTHON_USEDEP}]
-		dev-python/pillow[${PYTHON_USEDEP}]
-		dev-python/pillow-heif[${PYTHON_USEDEP}]
+		>=dev-python/pillow-11.3.0[${PYTHON_USEDEP}]
 		dev-python/pygobject[${PYTHON_USEDEP}]
 		dev-python/python-magic[${PYTHON_USEDEP}]
 		dev-python/rarfile[compressed,${PYTHON_USEDEP}]
@@ -56,13 +55,9 @@ RDEPEND="
 BDEPEND="
 	dev-util/blueprint-compiler
 	sys-devel/gettext
-	test? (
-		$(python_gen_cond_dep '
-			dev-python/pytest-steps[${PYTHON_USEDEP}]
-		')
-	)
 "
 
+EPYTEST_PLUGINS=( pytest-steps )
 distutils_enable_tests pytest
 
 src_prepare() {
