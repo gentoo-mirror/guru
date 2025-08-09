@@ -95,7 +95,7 @@ app-admin/grub-customizer 5.2.5: A graphical grub2 settings manager
 app-admin/hardinfo2 2.2.13: System Information and Benchmark for Linux Systems
 app-admin/himitsu 0.7 0.8 0.9 9999: Secret storage system for Unix, suitable for storing passwords, keys, ...
 app-admin/himitsu-keyring 0.2.0: graphical frontend for managing a Himitsu key store
-app-admin/himitsu-ssh 0.4 0.9 9999: SSH integration for Himitsu
+app-admin/himitsu-ssh 0.4 0.9.1 9999: SSH integration for Himitsu
 app-admin/himitsu-totp 0.2 0.9 9999: TOTP support for Himitsu
 app-admin/hiprompt-gtk 0.9-r1: GTK4 prompter for Himitsu
 app-admin/i2pd-tools 2024.09.25 2025.02.26-r1: Some useful tools for I2P
@@ -230,6 +230,7 @@ app-misc/clifm 1.11 1.13 1.16 1.18 9999: The command line file manager
 app-misc/clipboard 0.10.0-r1: Cut, copy, and paste anything in your terminal
 app-misc/cliphist 0.6.1: Wayland clipboard manager with support for multimedia
 app-misc/corectrl 1.5.1 9999: Core control application
+app-misc/countryfetch 0.2.0: A Command-line tool similar to Neofetch for obtaining information about your country
 app-misc/cpufetch 1.06: Simplistic yet fancy CPU architecture fetching tool
 app-misc/dbf 0.9.0: Command line tool to read the content of dBASE III, IV, and 5.0 files
 app-misc/diff-so-fancy 1.4.4: Good-lookin' diffs. Actually... nah... The best-lookin' diffs
@@ -590,7 +591,6 @@ dev-libs/libcli 1.10.7: Shared C library to include Cisco-like CLI into other so
 dev-libs/libcsv 3.0.4_pre20240316: Fast and flexible CSV library that can read and write CSV data
 dev-libs/libdatrie 0.2.13-r1: Double-Array Trie Library
 dev-libs/libdbf 0.0.1: Library to read the content of dBASE III, IV, and 5.0 files
-dev-libs/libdwarf 2.0.0 2.1.0: The DWARF Debugging Information Format
 dev-libs/libglibutil 1.0.80 9999: Library of glib utilities from sailfishos project
 dev-libs/librepo 1.19.0-r1 1.20.0: Repodata downloading library
 dev-libs/libsignal-ffi 0.51.0-r1 0.62.0 0.64.1: A C ABI library which exposes Signal protocol logic
@@ -687,6 +687,7 @@ dev-python/autopxd 2.5.0: generates .pxd files automatically from .h files
 dev-python/avro 1.12.0: Apache Avro is a data serialization system
 dev-python/azure-core 1.27.1 1.28.0: Microsoft Azure Core Library for Python
 dev-python/azure-storage-blob 12.17.0: Microsoft Azure Blob Storage Client Library for Python
+dev-python/backoff 2.2.1: Function decoration for backoff and retry
 dev-python/base58 2.1.1-r1: Base58 and Base58Check implementation
 dev-python/baseline 1.2.1: Easy string baseline
 dev-python/bidict 0.23.1: The bidirectional mapping library for Python
@@ -1189,7 +1190,7 @@ gui-apps/intiface-central-bin 2.6.0 2.6.4: Buttplug frontend application
 gui-apps/ironbar 0.16.0-r1 0.16.1 0.16.1-r1 9999: Customisable Wayland gtk bar written in Rust
 gui-apps/klassy 6.4 9999: Klassy QT6 window decoration theme for KDE Plasma 6.3+
 gui-apps/koi 0.5.1: Theme scheduling for the KDE Plasma Desktop
-gui-apps/lan-mouse 0.7.3-r1 0.10.0: Software KVM Switch / mouse & keyboard sharing software for Local Area Networks
+gui-apps/lan-mouse 0.7.3-r1 0.10.0 0.10.0_p202507120: Software KVM Switch / mouse & keyboard sharing software for Local Area Networks
 gui-apps/lemurs 0.3.2: A TUI Display/Login Manager
 gui-apps/lswt 1.0.4-r1 2.0.0 9999: List Wayland toplevels
 gui-apps/meteo-qt 4.1 4.2: A system tray application for the weather status
@@ -1759,7 +1760,7 @@ sys-apps/gat 0.23.1: Cat alternative written in Go
 sys-apps/hex 0.4.2 0.5.0 0.6.0: Futuristic take on hexdump
 sys-apps/hexyl 0.16.0: A command-line hex viewer
 sys-apps/killport 1.1.0: A command-line tool to easily kill processes on a specified port.
-sys-apps/lact 0.7.4 0.8.0: Linux GPU Control Application
+sys-apps/lact 0.8.0 0.8.1: Linux GPU Control Application
 sys-apps/loclone 0.1.0: A tool for creating CoW snapshots on XFS
 sys-apps/lr 1.6: list files, recursively
 sys-apps/lsplug 6: Replacement for lsusb that shows more useful info and less useless info
@@ -1786,7 +1787,7 @@ sys-block/ublksrv 1.4: Userspace block device driver
 sys-boot/customrescuecd-x86_64-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/drbl 5.4.2: Diskless Remote Boot in Linux
 sys-boot/grml-rescueboot 0.6.1: grub2 script to add ISO images to the grub2 boot menu
-sys-boot/limine 9.3.0 9.3.2 9.3.4 9.4.0 9.5.0: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
+sys-boot/limine 9.3.0 9.3.2 9.3.4 9.4.0 9.5.0 9.6.0: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
 sys-boot/mkusb 23.2.0: CLI and GUI for creating bootable live USB, with optional persistent storage
 sys-boot/ventoy-bin 1.0.97 1.0.98: Creator of bootable USBs, with ability to copy ISOs, persistence storage
 sys-boot/zfsbootmenu 1.12.0 2.2.2 2.3.0 3.0.1: ZFS bootloader for root-on-ZFS systems
@@ -1917,7 +1918,7 @@ x11-misc/xob 0.2 0.3: A lightweight overlay volume (or anything) bar for the X W
 x11-misc/xsecurelock 1.9.0: X11 screen lock utility with security in mind
 x11-plugins/purple-mm-sms 0.1.7: Purple SMS plugin using ModemManager
 x11-terms/dmd5620 2.1.0: GTK+ 3.0 implementation of an AT&T / Teletype DMD 5620 emulator.
-x11-terms/rio 0.2.25: A hardware-accelerated GPU terminal emulator powered by WebGPU
+x11-terms/rio 0.2.27: A hardware-accelerated GPU terminal emulator powered by WebGPU
 x11-terms/tabby-bin 1.0.221: A terminal for a more modern age
 x11-terms/terminal-simulator 0.2 9999-r1: VT100 and VT52 terminal hardware simulator
 x11-terms/tym 3.5.1-r2: Lua-configurable terminal emulator
@@ -1957,4 +1958,4 @@ x11-wm/dk 1.7 9999: A list based tiling window manager in the vein of dwm, bspwm
 x11-wm/firefox-i3-workspaces 0.10: Restore Firefox windows to correct i3 workspaces, helper web extension is needed
 x11-wm/i3-rounded 4.21.1: i3-gaps fork with rounded corners support.
 x11-wm/leftwm 0.5.1 0.5.4: A window manager for Adventurers
-x11-wm/qtile-extras 0.23.0: elParaguayo's Qtile Extras
+x11-wm/qtile-extras 0.33.0: elParaguayo's Qtile Extras
