@@ -3,12 +3,11 @@
 
 EAPI=8
 
+CRATES="
+"
+
 declare -A GIT_CRATES=(
-	[cl3]='https://github.com/kenba/cl3;cb019aac330ab8243804be02b7183a1c5a211caa;cl3-%commit%'
-	[copes]='https://gitlab.com/corectrl/copes;1bc002a030345787f0e11e0317975a2e4f2a22ee;copes-%commit%'
-	[libdrm_amdgpu_sys]='https://github.com/Umio-Yasuno/libdrm-amdgpu-sys-rs;c6d85fce871f79f763162ba15accdfcae74b2d40;libdrm-amdgpu-sys-rs-%commit%'
-	[nvml-wrapper-sys]='https://github.com/ilya-zlobintsev/nvml-wrapper;d245c3010c72466cfb572f5baf91c91f7294bb36;nvml-wrapper-%commit%/nvml-wrapper-sys'
-	[nvml-wrapper]='https://github.com/ilya-zlobintsev/nvml-wrapper;d245c3010c72466cfb572f5baf91c91f7294bb36;nvml-wrapper-%commit%/nvml-wrapper'
+	[cl3]='https://github.com/kenba/cl3;7e742c96146890f33fc9d1f9e0251f814d3b87aa;cl3-%commit%'
 )
 
 LLVM_COMPAT=( {18..20} )
@@ -32,8 +31,8 @@ S="${WORKDIR}/${P^^}"
 LICENSE="MIT"
 # Dependent crate licenses
 LICENSE+="
-	Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD CC0-1.0 GPL-3 GPL-3+
-	ISC MIT Unicode-3.0 ZLIB
+	Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD CC0-1.0 GPL-3 ISC MIT
+	MPL-2.0 Unicode-3.0 ZLIB
 "
 SLOT="0"
 KEYWORDS="~amd64"
