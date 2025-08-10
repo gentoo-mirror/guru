@@ -109,7 +109,7 @@ app-admin/pulumi-bin 3.184.0 3.185.0-r1 3.186.0: Infrastructure as code in any p
 app-admin/rbw 1.13.2 9999: Unofficial Bitwarden CLI
 app-admin/ripasso 0.7.0: A password manager that uses the file format of 'pass'
 app-admin/s-tui 1.1.6 1.2.0: Stress-Terminal UI monitoring tool
-app-admin/sudo-rs 0.2.7: A memory safe implementation of sudo and su.
+app-admin/sudo-rs 0.2.7 0.2.8: A memory safe implementation of sudo and su.
 app-admin/synadm 0.43.1 0.44: Command line admin tool for Synapse
 app-admin/talosctl-bin 1.7.6 1.9.5 1.10.1: Pre-compiled talosctl is an tool for interacting with the Talos API
 app-admin/terragrunt-bin 0.38.6 0.45.4 0.50.8: A thin wrapper for Terraform
@@ -129,7 +129,7 @@ app-backup/grub-btrfs 4.11-r1 4.12 4.13 9999: Improves Grub by adding btrfs snap
 app-backup/kopia 0.15.0: Kopia - Fast And Secure Open-Source Backup
 app-backup/kopia-ui-bin 0.15.0-r1: Kopia - Fast And Secure Open-Source Backup (Electron UI)
 app-backup/pika-backup 0.7.4-r1: Keep your data safe
-app-backup/restic-browser 0.3.2_p20250523 0.3.2_p20250523-r1: A GUI to browse and restore from restic backup repositories
+app-backup/restic-browser 0.3.2_p20250523-r1: A GUI to browse and restore from restic backup repositories
 app-backup/timeshift 23.07.1: A system restore utility for Linux
 app-backup/timeshift-autosnap 0.9-r1: Automatically creates a timeshift-snapshot when executed
 app-benchmarks/kdiskmark 3.2.0: Disk benchmarking tool
@@ -714,7 +714,7 @@ dev-python/dasbus 1.7-r1 1.7-r2: DBus library in Python 3
 dev-python/dataclasses-json 0.6.7-r1: Easily serialize Data Classes to and from JSON
 dev-python/dateparser 1.2.1 1.2.2: Date parsing library designed to parse dates from HTML pages
 dev-python/decopatch 1.4.10: Create decorators easily in python
-dev-python/desktop-notifier 6.1.1: desktop-notifier is a Python library for cross-platform desktop notifications
+dev-python/desktop-notifier 6.1.1 6.2.0: desktop-notifier is a Python library for cross-platform desktop notifications
 dev-python/devtools 0.12.2: Dev tools for python
 dev-python/digitalocean 1.17.0-r1: Digitalocean API access library
 dev-python/django-browser-reload 1.13.0: Automatically reload your browser in development
@@ -1130,7 +1130,7 @@ games-util/sdl2-gamepad-mapper 0.0.8-r1: GUI application to generate an SDL2 map
 games-util/steamtinkerlaunch 12.12 9999: Wrapper script for Steam custom launch options
 games-util/umu-launcher 1.2.9: Unified launcher for Windows games on Linux
 games-util/xivlauncher 1.2.1: Custom Launcher for Final Fantasy XIV Online (Crossplatform rewrite)
-games-util/xone 0.3_p20240425 0.3.1: Linux kernel driver for Xbox One and Xbox Series X|S accessories
+games-util/xone 0.3.1 0.3.3 0.4.2: Linux kernel driver for Xbox One and Xbox Series X|S accessories
 gnome-extra/commit 4.1-r1 4.2: Commit message editor
 gnome-extra/extension-manager 0.6.1 0.6.3 9999: A native tool for browsing, installing, and managing GNOME Shell Extensions
 gnome-extra/iio-sensor-proxy 3.3 3.5 3.7: IIO sensors to D-Bus proxy
@@ -1229,7 +1229,7 @@ gui-apps/swaykbdd 1.4: Per-window keyboard layout switcher for Sway
 gui-apps/swaylock-effects 1.7.0.0 9999: Swaylock, with fancy effects
 gui-apps/swaylock-plugin 1.8.0 9999: Fork of Swaylock that supports animated backgrounds
 gui-apps/swaync 0.11.0 0.12.1: A simple notification daemon with a GTK gui for notifications and control center
-gui-apps/swayosd 0.1.0: GTK based on screen display for keyboard shortcuts like caps-lock and volume
+gui-apps/swayosd 0.1.0 0.2.1: GTK based on screen display for keyboard shortcuts like caps-lock and volume
 gui-apps/swayr 0.28.0 0.28.1: A LRU window-switcher (and more) for the sway window manager
 gui-apps/swayrbar 0.4.2: A swaybar-protocol implementation for sway/swaybar
 gui-apps/sworkstyle 1.3.5: Map workspace names to icons for Sway
@@ -1272,7 +1272,7 @@ gui-libs/xdg-desktop-portal-hyprland 1.3.9-r1 9999: xdg-desktop-portal backend f
 gui-wm/cage 0.2.0 9999: A Wayland kiosk
 gui-wm/hyprland-contrib 0.1-r1 9999: Community-maintained extensions for hyprland
 gui-wm/labwc 0.8.4-r1 0.9.0 0.9.1 9999: Openbox alternative for wayland
-gui-wm/mangowc 0.8.0 9999: wayland compositor based on wlroots and scenefx(dwl but no suckless)
+gui-wm/mangowc 0.8.0 0.8.1 9999: wayland compositor based on wlroots and scenefx(dwl but no suckless)
 gui-wm/miracle-wm 0.6.1 0.6.2: Tiling Wayland compositor based on Mir
 gui-wm/niri 25.02 25.05.1-r1: Scrollable-tiling Wayland compositor
 gui-wm/phoc 0.46.0 0.47.0 0.48.0: Wayland compositor for mobile phones
@@ -1315,7 +1315,7 @@ media-fonts/victor-mono 1.5.4 1.5.5 1.5.6: A free programming font with cursive 
 media-fonts/warframe-fonts 0_pre20191111: Fonts from the Warframe game
 media-gfx/KTX-Software 4.3.2: KTX (Khronos Texture) Library and Tools
 media-gfx/WebPlotDigitizer-bin 4.7: Web based tool to extract data from plots, images, and maps
-media-gfx/airsane 0.4.5: Publish SANE scanners via Apple Airscan/eSCL
+media-gfx/airsane 0.4.6: Publish SANE scanners via Apple Airscan/eSCL
 media-gfx/azpainter 3.0.12: Full color painting software for Linux for illustration drawing
 media-gfx/bambustudio-bin 02.01.01.52: Bambu Studio is a cutting-edge, feature-rich slicing software
 media-gfx/beeref 0.3.3: A Simple Reference Image Viewer
@@ -1366,7 +1366,7 @@ media-libs/raylib 5.0 5.5 9999: A simple and easy-to-use library to learn videog
 media-libs/svt-vp9 0.3.0 9999: Scalable Video Technology for VP9 (SVT-VP9 Encoder)
 media-libs/vvdec 2.3.0: VVdeC, the Fraunhofer Versatile Video Decoder
 media-libs/vvenc 1.11.1: VVenC, the Fraunhofer Versatile Video Encoder
-media-libs/wivrn 0.25 25.6.1 9999: WiVRn OpenXR streaming
+media-libs/wivrn 0.25 25.6.1 25.8 9999: WiVRn OpenXR streaming
 media-plugins/alsa-sndio 0.2: ALSA PCM to play audio on sndio servers
 media-plugins/argotlunar-bin 2.06-r2: Argotlunar is a sound granulator. Binary Linux VST
 media-plugins/dtmediawiki 9999: Wikimedia Commons export plugin for Darktable
@@ -1564,7 +1564,7 @@ net-misc/cve-client 1.1.1 9999: CLI-based client / toolbox for CVE.org
 net-misc/eg25-manager 0.4.2: Daemon for managing the Quectel EG25 modem
 net-misc/ffsend 0.2.77 9999: Easily and securely share files from the command line
 net-misc/fileshelter 6.2.0: FileShelter is a “one-click” file sharing web application
-net-misc/freetube-bin 0.23.4_beta 0.23.5_beta: A private YouTube desktop client
+net-misc/freetube-bin 0.23.6_beta: A private YouTube desktop client
 net-misc/gdown 5.2.0: Google Drive public file/folder downloader
 net-misc/gdrive 3.9.0-r1 3.9.1-r1: Google Drive CLI Client
 net-misc/gemget 1.9.0: Command line downloader for the Gemini protocol
@@ -1607,7 +1607,7 @@ net-news/cliflux 1.5.0 1.6.0: A terminal-ui (TUI) client for the Miniflux RSS re
 net-news/comitium 1.8.1: feed aggregator for gemini supporting many formats and protocols
 net-news/gfeeds 2.2.0-r3: An RSS/Atom feed reader for GNOME.
 net-news/newsflash 3.1.6 3.1.6-r1 3.3.5: Feed Reader written in GTK
-net-news/newsraft 0.28 0.30 9999: A lightweight feed reader with ncurses user interface inspired by Newsboat.
+net-news/newsraft 0.30 0.32 9999: A lightweight feed reader with ncurses user interface inspired by Newsboat.
 net-nntp/inn 2.7.1 2.7.3: InterNetNews - the Internet meets Netnews
 net-nntp/nzb-monkey-go 0.1.17: Golang version of the NZB Monkey with included NZB direct search
 net-nntp/pan 0.162 0.163: A newsreader for GNOME
@@ -1724,7 +1724,7 @@ sci-mathematics/rstudio-desktop-bin 2023.09.1_p494 2024.12.0_p467 2024.12.0_p467
 sci-misc/boinc-wrapper 26018-r2 26018-r3: Wrapper to use non-BOINC apps with BOINC
 sci-misc/llama-cpp 0_pre4576 0_pre5097 0_pre5332 0_pre5633-r1 0_pre6002 0_pre6092 9999: Port of Facebook's LLaMA model in C/C++
 sci-ml/aichat 0.30.0: All-in-one LLM CLI Tool
-sci-ml/ollama 0.9.6 0.10.0 0.10.1 9999: Get up and running with Llama 3, Mistral, Gemma, and other language models.
+sci-ml/ollama 0.9.6 0.10.0 0.10.1 0.11.4 9999: Get up and running with Llama 3, Mistral, Gemma, and other language models.
 sci-physics/openmodelica 1.24.0-r1: Open-source Modelica-based modeling and simulation environment
 sci-physics/ovito 3.10.4 3.10.5 3.10.5-r1: Open Visualization Tool
 sec-keys/openpgp-keys-aepaneshnikov 20221210: OpenPGP keys used by Alexander Epaneshnikov
