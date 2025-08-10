@@ -25,7 +25,7 @@ RDEPEND="
 	>=dev-libs/glib-2.46.0:2
 	dev-libs/json-c:=
 	dev-libs/libfmt:=
-	>=dev-libs/librepo-1.17.1
+	>=dev-libs/librepo-1.20.0
 	>=dev-libs/libsolv-0.7.25
 	dev-libs/libxml2
 	sys-apps/util-linux
@@ -71,7 +71,6 @@ src_configure() {
 		-DWITH_HTML=OFF
 		-DWITH_PERL5=OFF
 		-DWITH_RUBY=OFF
-		-DWITH_ZCHUNK=OFF
 		-DWITH_PLUGIN_APPSTREAM=$(usex appstream)
 		-DWITH_PYTHON3=$(usex python)
 		-DWITH_SYSTEMD=$(usex systemd)
