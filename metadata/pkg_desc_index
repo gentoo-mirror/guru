@@ -145,7 +145,6 @@ app-containers/slim 1.40.11: Inspect, optimize and debug containers
 app-containers/waydroid 1.5.2 1.5.4: Container-based approach to boot a full Android system on Linux systems
 app-containers/waydroid-images 9999: Manage images for app-containers/waydroid using portage
 app-crypt/PBinCLI 0.3.5-r1: PBinCLI is a command line client for PrivateBin written in Python 3
-app-crypt/autofirma 1.8.2 1.8.3-r1: Spanish government's electronic signature application for online procedures
 app-crypt/certbot-dns-cloudflare 3.2.0: Cloudflare DNS Authenticator plugin for Certbot (Let's Encrypt Client)
 app-crypt/certbot-dns-desec 1.2.1: deSEC DNS Authenticator plugin for Certbot
 app-crypt/certbot-dns-rfc2136 2.11.1 3.2.0-r100: RFC 2136 DNS Authenticator plugin for Certbot (Let’s Encrypt Client)
@@ -377,7 +376,7 @@ app-text/the-platinum-searcher-bin 2.2.0: Fast CLI search tool, faster than grep
 app-text/tinymist 0.13.16 9999: An integrated language service for Typst.
 app-text/tldr 3.3.0 3.4.1: Python command line client for tldr pages
 app-text/typst 0.13.1 9999: A markup-based typesetting system for the sciences
-app-text/typstyle 0.13.5: A beautiful and reliable code formatter for Typst
+app-text/typstyle 0.13.17: A beautiful and reliable code formatter for Typst
 app-text/vale 3.7.1 3.9.1: A syntax-aware linter for prose built with speed and extensibility in mind
 app-text/xan 0.48.0 0.51.0 0.52.0 9999: The CSV magician
 app-vim/ale 3.3.0 4.0.0: Check syntax in Vim asynchronously and fix files, with LSP support
@@ -431,7 +430,7 @@ dev-cpp/fkYAML 0.4.2 0.4.2_p20250522: A C++ header-only YAML library
 dev-cpp/gsl-lite 0.38.0: C++ Guideline Support Library implementation
 dev-cpp/indicators 2.3 2.3-r1: Activity indicators for modern C++
 dev-cpp/mustache 4.1 4.1_p20211210: Mustache implementation for modern C++
-dev-cpp/parallel-hashmap 1.3.8 1.4.1: Family of header-only, fast and memory-friendly hashmap and btree containers
+dev-cpp/parallel-hashmap 1.4.1 2.0.0: Family of header-only, fast and memory-friendly hashmap and btree containers
 dev-cpp/pcg-cpp 0.98.1_p20210406-r1: Family of better random number generators
 dev-cpp/qt-jdenticon 0.3.0-r1 0.3.0_p20240107 0.3.1: Qt5 / C++14 Port of Jdenticon
 dev-cpp/rang 3.2: Minimal, header-only, modern C++ library for terminal goodies
@@ -455,8 +454,8 @@ dev-crystal/crustache 2.4.4: {{Mustache}} for Crystal
 dev-crystal/crystal-db 0.11.0 0.13.1: Common DB API for Crystal
 dev-crystal/crystal-fnv 0.1.3: Crystal Implementation of Fowler–Noll–Vo hash
 dev-crystal/crystal-html5 0.4.0 0.5.0: Pure Crystal implementation of an HTML5-compliant Tokenizer and Parser
-dev-crystal/crystal-pg 0.26.0 0.28.0 0.29.0: A native, non-blocking Postgres driver for Crystal
-dev-crystal/crystal-sqlite3 0.19.0 0.21.0: SQLite3 bindings for Crystal
+dev-crystal/crystal-pg 0.28.0 0.29.0: A native, non-blocking Postgres driver for Crystal
+dev-crystal/crystal-sqlite3 0.21.0: SQLite3 bindings for Crystal
 dev-crystal/crystal-xpath2 0.1.3: XPath implementation in Crystal
 dev-crystal/crystar 0.3.1 0.4.0: Crystal language Tar Module implements access to tar archives
 dev-crystal/exception_page 0.4.1 0.5.0: A library for displaying exceptional exception pages for easier debugging
@@ -877,7 +876,6 @@ dev-python/readability-lxml 0.8.1 0.8.4.1: Fast html to text parser (article rea
 dev-python/readmdict 0.1.1-r1: Read mdx/mdd files
 dev-python/rectangle-packer 2.0.2: Pack a set of rectangles into a bounding box with minimum area
 dev-python/repology-client 0.3.0 0.4.0: Asynchronous wrapper for Repology API
-dev-python/rich-click 1.8.8 1.8.9: Format click help output nicely with rich
 dev-python/rpmautospec-core 0.1.5: Core functionality used by rpmautospec
 dev-python/rst2ansi 0.1.5-r3: Render reStructuredText documents to the terminal
 dev-python/rstcheck 6.2.0 6.2.1: Checks syntax of reStructuredText and code blocks nested within it
@@ -994,6 +992,7 @@ dev-util/hut 0.6.0: CLI tool for sourcehut
 dev-util/insomnia-bin 2023.5.8: HTTP and GraphQL client for developers
 dev-util/ios-safari-remote-debug 0_pre20250506: A remote debugger for iOS Safari
 dev-util/ios-webkit-debug-proxy 1.9.2: A DevTools proxy for iOS devices
+dev-util/istyle 1.23_pre20220127: Fast and Free Automatic Formatter for Verilog Source Code
 dev-util/juliaup 1.17.21: Julia installer and version multiplexer
 dev-util/lemminx-bin 0.27.0 0.27.1: XML Language Server
 dev-util/libtypec-utils 0.5.2: Library to interface with USB Type-C/Power Delivery devices
@@ -1034,7 +1033,7 @@ dev-util/vala-language-server 0.48.4: Code Intelligence for Vala & Genie
 dev-util/vscode-langservers-extracted 4.8.0 4.10.0: HTML/CSS/JSON/ESLint/Markdown language servers extracted from vscode.
 dev-util/wakatime-cli 1.27.0 1.28.6: Command line interface to WakaTime used by all WakaTime plugins
 dev-util/webgpu-headers 9999 20240512: Webgpu Header files
-dev-util/webstorm 2024.3.5 2025.1.2 2025.1.3: An integrated development environment for JavaScript and related technologies.
+dev-util/webstorm 2024.3.5 2025.1.2 2025.1.3 2025.1.4.1 2025.2: An integrated development environment for JavaScript and related technologies.
 dev-util/wxformbuilder 3.10.1-r1 4.2.1: A wxWidgets GUI Builder
 dev-util/xxd 9.1.0895: Hexdump utility from vim
 dev-util/yaml-language-server 1.14.0 1.15.0: Language Server for YAML Files
@@ -1398,6 +1397,7 @@ media-sound/listenbrainz-mpd 2.3.8-r2: ListenBrainz submission client for MPD
 media-sound/lms 3.67.0 3.68.0 3.68.1: Lightweight Music Server.
 media-sound/loudgain 0.6.8-r1 0.6.8_p20240128 0.6.8_p20240128-r2: Versatile ReplayGain 2.0 loudness normalizer
 media-sound/mopidy 3.4.2: An extensible music server written in Python.
+media-sound/mousai 0.7.8: Identify songs in seconds
 media-sound/mpd-mpris 0.3.1 0.4.0 0.4.1: An implementation of the MPRIS protocol for MPD.
 media-sound/mpvc 1.1.4-r1: mpc-like tool which connects to existing mpv instances through sockets.
 media-sound/musikcube 3.0.2 3.0.4: Excellent terminal music player, support almost every known sound system.
@@ -1416,13 +1416,14 @@ media-sound/qloud 1.4.2: Tool to measure loudspeaker frequency and step response
 media-sound/rmpc 0.9.0: A beautiful and configurable TUI client for MPD
 media-sound/rsgain 3.5.1 3.5.3: Really Simple replay Gain calculator for tagging audio files
 media-sound/shortwave 5.0.0: An internet radio player
-media-sound/spct 1.1.3 1.1.7: CLI program for playing back and rendering SPC files.
+media-sound/spct 1.1.8: CLI program for playing back and rendering SPC files.
 media-sound/spot 0.4.0-r2: GTK4 Spotify (Premium) client
 media-sound/spotify-adblock 1.0.1 1.0.2 1.0.3: Adblocker for Spotify
 media-sound/spotify-player 0.19.1 0.20.4 0.20.5 9999: spotify_player is a fast, easy to use, and configurable terminal music player.
 media-sound/spotifyd 0.3.5_p20240513 0.4.1: A Spotify daemon
 media-sound/spotube-bin 3.8.0: An open source, cross-platform Spotify client
 media-sound/supersonic 0.16.0 0.17.0: A lightweight and full-featured cross-platform desktop client
+media-sound/tenacity 1.3.4: Easy-to-use, privacy-friendly, FLOSS, cross-platform multi-track audio editor
 media-sound/tidal-hifi-bin 5.16.0-r1 5.17.0: Web version of Tidal running in electron with Hi-Fi support thanks to Widevine.
 media-sound/yewtube 2.12.0 9999: Terminal-based YouTube player and downloader
 media-sound/youtube-music-bin 3.6.2-r1 3.8.0: YouTube Music Desktop App bundled with custom plugins
@@ -1582,7 +1583,7 @@ net-misc/lyrics-in-terminal 1.7.0 1.8.0: Command Line Lyrics fetcher for MPRIS m
 net-misc/maestral 1.9.4: Maestral is an open-source Dropbox client written in Python
 net-misc/maestral-qt 1.9.4: Maestral is an open-source Dropbox client written in Python
 net-misc/mbpoll 1.5.2 9999: command line utility to communicate with ModBus slave (RTU or TCP)
-net-misc/megasync 5.13.0.1 5.14.0.2: The official Qt-based program for syncing your MEGA account in your PC
+net-misc/megasync 5.14.0.2 5.15.0.1: The official Qt-based program for syncing your MEGA account in your PC
 net-misc/myip 1.2.1: Get your external IP address using STUN server
 net-misc/ooni-probe-cli 3.23.0 3.24.0: OONI Probe network measurement tool for detecting internet censorship
 net-misc/openbgpd 8.4 8.5 8.6 9999: OpenBGPD is a free implementation of BGPv4
@@ -1591,7 +1592,7 @@ net-misc/purritobin 0.6.7 9999: minimalistic commandline pastebin
 net-misc/rpki-client 9.2 9.3: Portability shim for OpenBSD's rpki-client
 net-misc/smcroute 2.5.7: A static multicast routing daemon
 net-misc/sshx 0.2.4: A secure web-based, collaborative terminal.
-net-misc/toot 0.38.1-r1 0.48.1: toot - Mastodon CLI & TUI
+net-misc/toot 0.38.1-r1 0.48.1 0.50.0: toot - Mastodon CLI & TUI
 net-misc/warp 0.9.2: Fast and secure file transfer
 net-misc/wayback_machine_downloader 2.3.0 2.3.1: Download an entire website from the Wayback Machine
 net-misc/whatscli 1.0.6 1.0.11: A command line interface for WhatsApp
@@ -1640,9 +1641,9 @@ net-vpn/GlobalProtect-openconnect 2.4.4-r1: Unofficial GlobalProtect VPN client 
 net-vpn/cloudflare-warp 2025.4.943.0 2025.5.893.0: Cloudflare Warp Client
 net-vpn/fastd 22 23: A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
 net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that require SAML
-net-vpn/mullvadvpn-app 2025.7 2025.8_beta2: Tool used to manage daemon setup
+net-vpn/mullvadvpn-app 2025.7 2025.8_beta3: Tool used to manage daemon setup
 net-vpn/proton-vpn-gtk-app 4.9.7: Proton VPN GTK app
-net-vpn/vtun-ng 3.0.18: Create tunnels over TCP/IP networks with shaping, encryption, and compression
+net-vpn/vtun-ng 3.0.18 3.0.19: Create tunnels over TCP/IP networks with shaping, encryption, and compression
 net-wireless/airspyhf 1.6.8: User mode driver for Airspy HF+
 net-wireless/bluetuith 0.2.1 0.2.2 0.2.3 9999: A TUI bluetooth manager for Linux written in Go
 net-wireless/btscreenlocker 1.8.1-r1: Daemon to lock your screen when Bluetooth trusted devices go away.
@@ -1685,6 +1686,7 @@ sci-electronics/svls 0.2.11: SystemVerilog language server
 sci-electronics/vcd 221217-r1: VCD file (Value Change Dump) command line viewer
 sci-electronics/verilator 5.026-r1 5.028-r1 9999: The fast free Verilog/SystemVerilog simulator
 sci-electronics/yosys 0.40-r1: framework for Verilog RTL synthesis
+sci-geosciences/google-earth-pro 7.3.6: Google's 3D planet viewer
 sci-libs/onnxruntime-bin 1.22.0: cross-platform, high performance ML inferencing and training accelerator
 sci-libs/poselib 2.0.4: Minimal solvers for calibrated camera pose estimation
 sci-mathematics/frama-c 25.0-r2: Framework for analysis of source codes written in C
@@ -1722,7 +1724,7 @@ sci-mathematics/pyromaths 21.8.2-r1: Create maths exercises in LaTeX and PDF for
 sci-mathematics/rink 0.8.0-r1 9999: Unit conversion tool, similar to frink
 sci-mathematics/rstudio-desktop-bin 2023.09.1_p494 2024.12.0_p467 2024.12.0_p467-r1: IDE for R and Python
 sci-misc/boinc-wrapper 26018-r2 26018-r3: Wrapper to use non-BOINC apps with BOINC
-sci-misc/llama-cpp 0_pre4576 0_pre5097 0_pre5332 0_pre5633-r1 0_pre6002 0_pre6092 9999: Port of Facebook's LLaMA model in C/C++
+sci-misc/llama-cpp 0_pre4576 0_pre5097 0_pre5332 0_pre5633-r1 0_pre6092 0_pre6140 9999: Port of Facebook's LLaMA model in C/C++
 sci-ml/aichat 0.30.0: All-in-one LLM CLI Tool
 sci-ml/ollama 0.9.6 0.10.0 0.10.1 0.11.4 9999: Get up and running with Llama 3, Mistral, Gemma, and other language models.
 sci-physics/openmodelica 1.24.0-r1: Open-source Modelica-based modeling and simulation environment
@@ -1749,7 +1751,7 @@ sys-apps/colortail 0.3.3 9999: tail command with colors
 sys-apps/coolercontrol 2.2.1 2.2.2: Monitor and control your cooling and other devices
 sys-apps/coolercontrol-liqctld 2.2.1 2.2.2: Monitor and control your cooling and other devices (liqctld)
 sys-apps/coolercontrold 2.2.1 2.2.2: Monitor and control your cooling and other devices (daemon)
-sys-apps/corefreq 1.96.3: CPU monitoring software designed for the 64-bits Processors, like top
+sys-apps/corefreq 2.0.8: CPU monitoring and tuning software designed for 64-bit processors
 sys-apps/dnf5 5.2.15.0 5.2.16.0: Command-line package manager
 sys-apps/dool 1.3.1-r1 1.3.2-r2 9999: Versatile replacement for vmstat, iostat and ifstat (clone of dstat)
 sys-apps/drm_info 2.7.0 2.8.0: Small utility to dump info about DRM devices
@@ -1872,7 +1874,7 @@ www-client/mullvad-browser-bin 14.5.5: The Mullvad Browser is developed to minim
 www-client/nyxt 3.11.8 3.12.0 9999: Nyxt - the hacker's power-browser
 www-client/vimb 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
 www-client/yandex-browser 25.4.1.1213_p1: The web browser from Yandex
-www-client/zen-bin 1.14.2b 1.14.3b 1.14.4b 1.14.5b 1.14.6b 1.14.7b 1.14.8b 1.14.9b 1.14.10b: Zen Browser - A fast, privacy-focused Firefox fork
+www-client/zen-bin 1.14.8b 1.14.9b 1.14.10b 1.14.11b: Zen Browser - A fast, privacy-focused Firefox fork
 www-misc/dufs 0.40.0: Dufs is a distinctive utility file server
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits
 www-misc/kiwix-desktop 2.4.0: cross-platform viewer/manager for ZIM archives
