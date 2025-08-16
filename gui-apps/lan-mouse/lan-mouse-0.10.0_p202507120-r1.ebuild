@@ -418,17 +418,24 @@ CRATES="
 	zvariant_utils@3.0.2
 "
 
+RUST_MIN_VER="1.80"
+
 inherit cargo desktop systemd xdg
 
 DEPEND="
 	dev-libs/glib:2
 	gui-libs/gtk:4
 	gui-libs/libadwaita:1
-	x11-libs/cairo
 	x11-libs/libX11
 	x11-libs/libXtst
-	x11-libs/pango
 	x11-themes/hicolor-icon-theme
+	debug? (
+		x11-libs/cairo
+		x11-libs/pango
+		x11-libs/gdk-pixbuf:2
+		media-libs/graphene
+		dev-libs/libgit2:=
+	)
 "
 RDEPEND="${DEPEND}"
 BDEPEND="virtual/pkgconfig"
@@ -451,6 +458,8 @@ LICENSE+="
 "
 SLOT="0"
 KEYWORDS="~amd64"
+
+RESTRICT="mirror"
 
 QA_FLAGS_IGNORED="usr/bin/lan-mouse"
 
