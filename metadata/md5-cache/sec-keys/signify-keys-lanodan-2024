@@ -1,13 +1,9 @@
-BDEPEND=verify-sig? ( sec-keys/signify-keys-lanodan:2023 ) verify-sig? ( app-crypt/signify )
-DEFINED_PHASES=install unpack
+DEFINED_PHASES=install
 DESCRIPTION=Signify keys used by Haelwenn (lanodan) Monnier
 EAPI=8
 HOMEPAGE=https://distfiles.hacktivis.me/releases/signify/
-INHERIT=verify-sig
-IUSE=verify-sig
 KEYWORDS=~amd64 ~arm ~arm64 ~hppa ~ppc ~ppc64 ~riscv ~sparc ~x86
 LICENSE=public-domain
 SLOT=2024
-SRC_URI=https://distfiles.hacktivis.me/releases/signify/2024.pub -> signify-keys-lanodan-2024.pub verify-sig? ( https://distfiles.hacktivis.me/releases/signify/2024.pub.2023.sig -> signify-keys-lanodan-2024.pub.2023.sig )
-_eclasses_=eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	verify-sig	4e83419d7fb5d336f6a4de8193968319
-_md5_=64985cd634836a7a4157f7ec16ef8307
+SRC_URI=https://distfiles.hacktivis.me/releases/signify/2024.pub -> signify-keys-lanodan-2024.pub
+_md5_=46b59bc00e013e177c2d26b0a64ccc03

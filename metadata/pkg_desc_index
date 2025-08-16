@@ -228,6 +228,7 @@ app-misc/cheat 4.2.3 4.3.3-r1: cheat allows you to create and view interactive c
 app-misc/clifm 1.11 1.13 1.16 1.18 9999: The command line file manager
 app-misc/clipboard 0.10.0-r1: Cut, copy, and paste anything in your terminal
 app-misc/cliphist 0.6.1: Wayland clipboard manager with support for multimedia
+app-misc/cmd-timer 2.0.1 9999: run command at a specific interval
 app-misc/corectrl 1.5.1 9999: Core control application
 app-misc/countryfetch 0.2.0: A Command-line tool similar to Neofetch for obtaining information about your country
 app-misc/cpufetch 1.06: Simplistic yet fancy CPU architecture fetching tool
@@ -584,7 +585,7 @@ dev-libs/imsg-compat 8.0.0 9999: linux port of OpenBSD imsg
 dev-libs/ip2loc 8.6.1: IP2Location C Library
 dev-libs/jonquil 0.2.0-r1: Jonquil: Bringing TOML blooms to JSON land
 dev-libs/jose 13 14: C-language implementation of Javascript Object Signing and Encryption
-dev-libs/lexbor 2.4.0: Modular web engine (HTML/CSS parser, renderer, ...)
+dev-libs/lexbor 2.5.0: Modular web engine (HTML/CSS parser, renderer, ...)
 dev-libs/libchardet 1.0.6: Mozilla's Universal Charset Detector C/C++ API
 dev-libs/libchdr 0_p20230230: Standalone library for reading MAME's CHDv1-v5 formats
 dev-libs/libcli 1.10.7: Shared C library to include Cisco-like CLI into other software
@@ -846,7 +847,7 @@ dev-python/pyrime 0.0.7: rime for python
 dev-python/pysdl3 0.9.8_beta6 0.9.8_beta7: A pure Python wrapper for SDL3
 dev-python/pysnooper 1.2.1 1.2.3: Never use print for debugging again
 dev-python/pystardict 0.8-r1: Library for manipulating StarDict dictionaries from within Python
-dev-python/pytest-cases 3.8.6: Separate test code from test cases in pytest
+dev-python/pytest-cases 3.9.1: Separate test code from test cases in pytest
 dev-python/pytest-celery 0.1.0: a shim pytest plugin to enable celery.contrib.pytest
 dev-python/pytest-embedded 1.16.1 1.16.2: A pytest plugin for embedded systems
 dev-python/pytest-harvest 1.10.5: Store and retrieve data created during your pytest tests execution
@@ -901,7 +902,7 @@ dev-python/sphinxext-opengraph 0.10.0: Sphinx extension to generate unique OpenG
 dev-python/sphinxnotes-mock 1.0.2: Sphinx extension for mocking directives and roles without modifying documents
 dev-python/sqlmodel 0.0.24: SQL databases in Python, designed for simplicity, compatibility, and robustness.
 dev-python/starkbank-ecdsa 2.2.0-r1: A lightweight and fast pure python ECDSA library
-dev-python/steam 1.6.1: Python package for interacting with Steam
+dev-python/steam 2.0.0-r1: Python package for interacting with Steam
 dev-python/stone 3.3.9: The Official Api Spec Language for Dropbox
 dev-python/survey 5.4.2: A simple library for creating beautiful interactive prompts
 dev-python/svgelements 1.9.6-r1: SVG Parsing for Elements, Paths, and other SVG Objects.
@@ -966,7 +967,7 @@ dev-util/catppuccin-whiskers 2.4.0: Soothing port creation tool for the high-spi
 dev-util/cmakelang 0.6.13: Provides Quality Assurance (QA) tools for cmake
 dev-util/coq-lsp 0.1.9: Visual Studio Code Extension and Language Server Protocol for Coq
 dev-util/deblob 0.10 0.11 9999: remove binary executables from a directory
-dev-util/distribution-gpg-keys 1.113: Collection of GPG keys used in Linux Distributions
+dev-util/distribution-gpg-keys 1.114: Collection of GPG keys used in Linux Distributions
 dev-util/dmg2img 9999 20201227: Convert Apple disk images to IMG format.
 dev-util/dockerfile-language-server 0.12.0 0.13.0: A language server for Dockerfiles
 dev-util/eclipse-parallel-bin 4.28: Eclipse IDE for Scientific Computing (C, C++, Fortran)
@@ -1000,7 +1001,7 @@ dev-util/lottieconverter 0.2-r1 0.2-r2: Simple lottie (telegram animated sticker
 dev-util/lua-language-server 3.13.9 3.14.0 3.15.0: Lua language server
 dev-util/mh 1.4.1: Generate help for Makefile
 dev-util/mock 6.3: Simple chroot build environment manager for building RPMs
-dev-util/mock-core-configs 42.4: Mock core config files basic chroots
+dev-util/mock-core-configs 43.1: Mock core config files basic chroots
 dev-util/ocamlformat 0.26.2 0.26.2-r1: Auto-formatter for OCaml code
 dev-util/ocp-indent 1.8.2: Indentation tool for OCaml, to be used from editors like Emacs and Vim.
 dev-util/pcpp 1.30: A C99 preprocessor written in pure Python
@@ -1131,7 +1132,7 @@ games-util/steamtinkerlaunch 12.12 9999: Wrapper script for Steam custom launch 
 games-util/umu-launcher 1.2.9: Unified launcher for Windows games on Linux
 games-util/xivlauncher 1.2.1: Custom Launcher for Final Fantasy XIV Online (Crossplatform rewrite)
 games-util/xone 0.3.1 0.3.3 0.4.2: Linux kernel driver for Xbox One and Xbox Series X|S accessories
-gnome-extra/commit 4.1-r1 4.2: Commit message editor
+gnome-extra/commit 4.1-r1 4.2 4.3: Commit message editor
 gnome-extra/extension-manager 0.6.1 0.6.3 9999: A native tool for browsing, installing, and managing GNOME Shell Extensions
 gnome-extra/iio-sensor-proxy 3.3 3.5 3.7: IIO sensors to D-Bus proxy
 gnome-extra/junction 1.7-r1: Application/browser chooser
@@ -1190,7 +1191,7 @@ gui-apps/intiface-central-bin 2.6.0 2.6.4: Buttplug frontend application
 gui-apps/ironbar 0.16.0-r1 0.16.1 0.16.1-r1 9999: Customisable Wayland gtk bar written in Rust
 gui-apps/klassy 6.4 9999: Klassy QT6 window decoration theme for KDE Plasma 6.3+
 gui-apps/koi 0.5.1: Theme scheduling for the KDE Plasma Desktop
-gui-apps/lan-mouse 0.7.3-r1 0.10.0 0.10.0_p202507120: Software KVM Switch / mouse & keyboard sharing software for Local Area Networks
+gui-apps/lan-mouse 0.10.0 0.10.0_p202507120-r1: Software KVM Switch / mouse & keyboard sharing software for Local Area Networks
 gui-apps/lemurs 0.3.2: A TUI Display/Login Manager
 gui-apps/lswt 1.0.4-r1 2.0.0 9999: List Wayland toplevels
 gui-apps/meteo-qt 4.1 4.2: A system tray application for the weather status
@@ -1238,7 +1239,7 @@ gui-apps/szyszka 3.0.0: Simple, powerful and easy to use file renamer
 gui-apps/tessen 2.2.1-r1: an interactive menu to autotype and copy pass and gopass data
 gui-apps/tofi 0.8.1 0.9.1: Fast and simple dmenu/rofi replacement for wlroots-based Wayland compositors
 gui-apps/vicuna 1.25: Tool for uploading files to Wikimedia Commons and other Wikimedia projects
-gui-apps/walker 0.10.3 0.12.0 9999: Multi-Purpose Launcher with a lot of features. Highly Customizable and fast
+gui-apps/walker 0.10.3 0.12.0 0.13.26 9999: Multi-Purpose Launcher with a lot of features. Highly Customizable and fast
 gui-apps/waylock 1.3.0 1.4.0: Small screenlocker for Wayland compositors
 gui-apps/wbg 1.0.2 1.1.0 1.2.0 9999: Super simple wallpaper application
 gui-apps/wdisplays 1.1.1 1.1.3 9999: GUI display configurator for wlroots compositors
@@ -1256,7 +1257,7 @@ gui-apps/wlsunset 0.4.0 9999: Day/night gamma adjustments for Wayland
 gui-apps/wob 0.15.1-r1 0.16: Lightweight overlay volume/backlight/progress/anything bar for Wayland
 gui-apps/wscreensaver 9999: Xscreensaver screensavers ported to wayland
 gui-apps/wtype 0.4: xdotool type for wayland
-gui-apps/xremap 0.10.14: Dynamic key remap for X and Wayland
+gui-apps/xremap 0.10.15: Dynamic key remap for X and Wayland
 gui-apps/xwayland-satellite 0.5.1 0.6: Xwayland outside your Wayland
 gui-apps/yambar 1.11.0 9999: Simplistic and highly configurable status panel for X and Wayland
 gui-libs/gtk-session-lock 0.2.0-r6 9999: GTK-based lockscreen for Wayland
@@ -1611,7 +1612,7 @@ net-news/newsflash 3.1.6 3.1.6-r1 3.3.5: Feed Reader written in GTK
 net-news/newsraft 0.30 0.32 9999: A lightweight feed reader with ncurses user interface inspired by Newsboat.
 net-nntp/inn 2.7.1 2.7.3: InterNetNews - the Internet meets Netnews
 net-nntp/nzb-monkey-go 0.1.17: Golang version of the NZB Monkey with included NZB direct search
-net-nntp/pan 0.162 0.163: A newsreader for GNOME
+net-nntp/pan 0.163 0.164: A newsreader for GNOME
 net-p2p/bisq-bin 1.9.14-r1: The decentralized bitcoin exchange (non-atomic, with arbitration)
 net-p2p/dogecoin-qt 1.14.9 9999: Dogecoin Core Qt for desktop. Downloaded blockchain is under 2.2GB. Much secure.
 net-p2p/feather 2.7.0-r1 2.8.0 2.8.1 9999: A free, open-source Monero wallet
@@ -1681,7 +1682,7 @@ sci-electronics/liblxi 1.20: Implementation of the LAN eXtensions for Instrument
 sci-electronics/logic-bin 2.4.14 2.4.29: Saleae logic analyzer
 sci-electronics/lxi-tools 2.7: Tools to access devices with LXI
 sci-electronics/qucs-s 25.1.2: Quite universal circuit simulator with SPICE
-sci-electronics/slang 8.1 9999: SystemVerilog compiler and language services
+sci-electronics/slang 9.0 9999: SystemVerilog compiler and language services
 sci-electronics/svls 0.2.11: SystemVerilog language server
 sci-electronics/vcd 221217-r1: VCD file (Value Change Dump) command line viewer
 sci-electronics/verilator 5.026-r1 5.028-r1 9999: The fast free Verilog/SystemVerilog simulator
@@ -1738,7 +1739,7 @@ sec-keys/openpgp-keys-russallbery 20250000: OpenPGP keys used by Russ Allbery (E
 sec-keys/openpgp-keys-schernykh 20210409: OpenPGP keys used to sign P2Pool releases
 sec-keys/openpgp-keys-skyjake 20211224: OpenPGP keys used by Jaakko Keranen
 sec-keys/signify-keys-gmid 2.0 2.1: Signify keys used to sign gmid releases
-sec-keys/signify-keys-lanodan 2021.04 2023 2024 2025: Signify keys used by Haelwenn (lanodan) Monnier
+sec-keys/signify-keys-lanodan 2024 2025: Signify keys used by Haelwenn (lanodan) Monnier
 sec-keys/signify-keys-oriole-systems 20240330: Signify keys used to sign oriole.systems releases
 sec-keys/signify-keys-telescope 0.10 0.11 0.12: Signify keys used to sign telescope releases
 sys-apps/0xFFFF 0.10: 0pen Free Fiasco Firmware Flasher for Maemo devices
@@ -1868,7 +1869,7 @@ www-apps/sblg 0.6.1: A utility for creating static blogs
 www-apps/uwebsockets 20.14.0 20.62.0 9999: ultra fast, simple, secure & standards compliant web I/O
 www-apps/whoogle-search 0.9.3: A self-hosted, ad-free, privacy-respecting metasearch engine
 www-apps/zola 0.20.0: A fast static site generator with everything built-in
-www-client/badwolf 1.3.0-r2 9999: Minimalist and privacy-oriented WebKitGTK+ browser
+www-client/badwolf 1.4.0 9999: Minimalist and privacy-oriented WebKitGTK+ browser
 www-client/browsh 1.8.2: A fully-modern text-based browser, rendering to TTY and browsers
 www-client/mullvad-browser-bin 14.5.5: The Mullvad Browser is developed to minimize tracking and fingerprinting.
 www-client/nyxt 3.11.8 3.12.0 9999: Nyxt - the hacker's power-browser
@@ -1908,6 +1909,7 @@ x11-misc/i3status-rust 0.34.0: A feature-rich and resource-friendly replacement 
 x11-misc/ksnip 1.11.0_pre20250130: Ksnip is a Qt based cross-platform screenshot tool
 x11-misc/leftwm-theme 0.1.2: Theme mangager for LeftWM
 x11-misc/ly 1.0.3 9999: Ly - a TUI display manager (live ebuild)
+x11-misc/matugen 2.4.1: A material you color generation tool with templates
 x11-misc/picom-jonaburg 9999: A lightweight compositor for X11 (previously a compton fork)
 x11-misc/pywal16 3.6.0 3.7.2: 16 colors fork of pywal
 x11-misc/rofi-emoji 3.3.0 3.4.1 4.1.0: Emoji selector plugin for Rofi
