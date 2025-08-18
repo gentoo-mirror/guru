@@ -16,7 +16,7 @@ if [[ ${PV} == 9999 ]]; then
 	EGIT_REPO_URI="https://github.com/bloomberg/clang-p2996.git"
 	EGIT_BRANCH="p2996"
 else
-	GIT_COMMIT=""
+	GIT_COMMIT="d77eff1cbd78fd065668acf93b1f5f400d39134d"
 	SRC_URI="https://github.com/bloomberg/clang-p2996/archive/${GIT_COMMIT}.tar.gz -> ${P}.tar.gz"
 	S="${WORKDIR}/clang-p2996-${GIT_COMMIT}"
 	KEYWORDS="~amd64"
