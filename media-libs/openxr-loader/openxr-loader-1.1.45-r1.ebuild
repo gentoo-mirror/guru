@@ -1,7 +1,7 @@
 # Copyright 2020-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 MY_PN=OpenXR-SDK
 inherit cmake-multilib
@@ -25,12 +25,10 @@ LICENSE="Apache-2.0"
 IUSE="+wayland +X"
 REQUIRED_USE="|| ( wayland X )"
 
-# dev-libs/jsoncpp-1.9.6: https://bugs.gentoo.org/940262
 DEPEND="
 	media-libs/vulkan-loader[${MULTILIB_USEDEP}]
 	media-libs/mesa[${MULTILIB_USEDEP}]
 	dev-libs/jsoncpp:=[${MULTILIB_USEDEP}]
-	!=dev-libs/jsoncpp-1.9.6
 	wayland? (
 		dev-libs/wayland[${MULTILIB_USEDEP}]
 		dev-libs/wayland-protocols
@@ -46,7 +44,7 @@ RDEPEND="${DEPEND}"
 BDEPEND="wayland? ( dev-util/wayland-scanner )"
 
 src_prepare() {
-	sed -i 's;DESTINATION share/doc/openxr;DESTINATION ${CMAKE_INSTALL_DOCDIR};' CMakeLists.txt || die
+	sed -i 's;LICENSE_DEST share/doc/openxr;LICENSE_DEST ${CMAKE_INSTALL_DOCDIR};' CMakeLists.txt || die
 
 	cmake_src_prepare
 }
@@ -57,6 +55,7 @@ multilib_src_configure() {
 		-DBUILD_WITH_XLIB_HEADERS=$(usex X)
 		-DBUILD_WITH_XCB_HEADERS=$(usex X)
 		-DBUILD_WITH_WAYLAND_HEADERS=$(usex wayland)
+		-DBUILD_WITH_SYSTEM_JSONCPP=YES
 		-DPRESENTATION_BACKEND=$(usex X xlib wayland)
 	)
 
