@@ -235,7 +235,7 @@ app-misc/cpufetch 1.06: Simplistic yet fancy CPU architecture fetching tool
 app-misc/dbf 0.9.0: Command line tool to read the content of dBASE III, IV, and 5.0 files
 app-misc/diff-so-fancy 1.4.4: Good-lookin' diffs. Actually... nah... The best-lookin' diffs
 app-misc/doublecmd 1.1.27 1.1.28: Cross Platform file manager
-app-misc/doublecmd-bin 1.1.26-r1 9999: Double Commander: file manager with two panels, similar to Total Commander
+app-misc/doublecmd-bin 1.1.26-r1 1.1.28 9999: Double Commander: file manager with two panels, similar to Total Commander
 app-misc/dpscreenocr 1.4.1: Program to recognize text on screen
 app-misc/dragon 1.2.0-r1: Simple drag-and-drop source/sink for X and Wayland
 app-misc/durdraw 0.29.0: Versatile ASCII and ANSI Art text editor for drawing
@@ -345,6 +345,7 @@ app-shells/mrsh 9999: minimal strictly POSIX compliant shell
 app-shells/ohmyzsh 9999: A framework for managing your zsh configuration.
 app-shells/pokemon-colorscripts 9999: Pokemon unicode sprites for your terminal!
 app-shells/powerline-go 1.25: A powerline like prompt for Bash, Zsh, Fish written in Go lang.
+app-shells/sheldon 0.8.5: Fast, configurable, shell plugin manager.
 app-shells/shox 2024.01.25: A customisable, universally compatible terminal status bar
 app-shells/silver 2.0.0-r1: A cross-shell customizable powerline-like prompt with icons
 app-shells/vivid 0.9.0 0.10.1: A themeable LS_COLORS generator with a rich filetype datebase
@@ -1043,7 +1044,7 @@ dev-vcs/gitahead 2.7.1 2.7.1-r1: Graphical Git client to help understand and man
 dev-vcs/gitqlient 1.6.2 1.6.3 9999: Multi-platform Git client written with Qt
 dev-vcs/gitui 0.26.3 0.27.0: blazing fast terminal-ui for git
 dev-vcs/jj 0.29.0 0.31.0 0.32.0 9999: Jujutsu - an experimental version control system
-dev-vcs/lazygit 0.50.0 0.51.1 0.52.0 0.53.0 0.54.0 9999: Simple terminal UI for git commands
+dev-vcs/lazygit 0.50.0 0.51.1 0.52.0 0.53.0 0.54.0 0.54.2 9999: Simple terminal UI for git commands
 dev-vcs/lazyjj 0.5.0: TUI for Jujutsu/jj
 dev-vcs/pijul 1.0.0_beta9: A distributed version control system based on a theory of patches
 dev-zig/zls 0.10.0-r2 0.13.0-r1 0.14.0 9999: Non-official language server for Zig
@@ -1063,7 +1064,7 @@ games-board/fairy-stockfish 14.0.1: Chess variant engine derived from Stockfish 
 games-board/openriichi 0.2.1.1: OpenRiichi is an open source Japanese Mahjong client
 games-board/rmahjong 0.4_p20201106: Riichi Mahjong, the Japanese variant of the Chinese game Mahjong for 4 players
 games-emulation/RetroArch 1.19.1 1.20.0 1.21.0: RetroArch is a frontend for emulators, game engines and media players
-games-emulation/azahar 2122.1: An open-source 3DS emulator project based on Citra
+games-emulation/azahar 2123: An open-source 3DS emulator project based on Citra
 games-emulation/dosbox-x 2025.02.01 2025.05.03 9999: Complete, accurate DOS emulator forked from DOSBox
 games-emulation/eden 0.0.3_rc2: Nintendo Switch Emulator
 games-emulation/flycast 9999: Sega Dreamcast, Naomi and Atomiswave emulator
@@ -1132,7 +1133,7 @@ games-util/sdl2-gamepad-mapper 0.0.8-r1: GUI application to generate an SDL2 map
 games-util/steamtinkerlaunch 12.12 9999: Wrapper script for Steam custom launch options
 games-util/umu-launcher 1.2.9: Unified launcher for Windows games on Linux
 games-util/xivlauncher 1.2.1: Custom Launcher for Final Fantasy XIV Online (Crossplatform rewrite)
-games-util/xone 0.3.1 0.3.3 0.4.2: Linux kernel driver for Xbox One and Xbox Series X|S accessories
+games-util/xone 0.3.1 0.3.3 0.4.2 0.4.3: Linux kernel driver for Xbox One and Xbox Series X|S accessories
 gnome-extra/commit 4.1-r1 4.2 4.3: Commit message editor
 gnome-extra/extension-manager 0.6.1 0.6.3 9999: A native tool for browsing, installing, and managing GNOME Shell Extensions
 gnome-extra/iio-sensor-proxy 3.7: IIO sensors to D-Bus proxy
@@ -1321,7 +1322,7 @@ media-gfx/azpainter 3.0.12: Full color painting software for Linux for illustrat
 media-gfx/bambustudio-bin 02.02.00.85: Bambu Studio is a cutting-edge, feature-rich slicing software
 media-gfx/beeref 0.3.3: A Simple Reference Image Viewer
 media-gfx/bonzomatic 2023.06.15 9999: Live shader coding tool and Shader Showdown workhorse
-media-gfx/czkawka 8.0.0 9.0.0: App to find duplicates, empty folders and similar images
+media-gfx/czkawka 8.0.0 9.0.0 10.0.0: App to find duplicates, empty folders and similar images
 media-gfx/dnglab 0.6.0 0.6.1: Command line tool to convert camera RAW files to Digital Negative Format (DNG).
 media-gfx/dustr 9999: light and interactive tool your crops need
 media-gfx/fontpreview 1.0.6: Highly customizable and minimal font previewer written in bash
@@ -1427,7 +1428,7 @@ media-sound/spotify-player 0.19.1 0.20.4 0.20.5 9999: spotify_player is a fast, 
 media-sound/spotifyd 0.3.5_p20240513 0.4.1: A Spotify daemon
 media-sound/spotube-bin 3.8.0: An open source, cross-platform Spotify client
 media-sound/supersonic 0.17.0 0.18.0: A lightweight and full-featured cross-platform desktop client
-media-sound/tenacity 1.3.4: Easy-to-use, privacy-friendly, FLOSS, cross-platform multi-track audio editor
+media-sound/tenacity 1.3.4 1.3.4-r1: Easy-to-use, privacy-friendly, FLOSS, cross-platform multi-track audio editor
 media-sound/tidal-hifi-bin 5.16.0-r1 5.17.0: Web version of Tidal running in electron with Hi-Fi support thanks to Widevine.
 media-sound/yewtube 2.12.0 9999: Terminal-based YouTube player and downloader
 media-sound/youtube-music-bin 3.6.2-r1 3.8.0: YouTube Music Desktop App bundled with custom plugins
@@ -1630,7 +1631,7 @@ net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
 net-p2p/yggdrasil-go 0.5.12 9999: An experiment in scalable routing as an encrypted IPv6 overlay network
 net-print/hpuld 1.00.39.15.00.23-r1: HP Unified Linux Driver (for samsung hardware)
 net-proxy/MTProxy 3.0.4-r1: Community fork of MTProxy
-net-proxy/Throne 1.0.0: Qt based cross-platform GUI proxy configuration manager
+net-proxy/Throne 1.0.2: Qt based cross-platform GUI proxy configuration manager
 net-proxy/byedpi 0.16.6 0.17 0.17.1 0.17.2 9999: Bypass DPI SOCKS proxy
 net-proxy/ngrok-bin 3.20.0: ngrok is a reverse proxy, firewall, and API gateway
 net-proxy/shadowsocks-rust 1.22.0: A Rust port of shadowsocks
@@ -1801,7 +1802,7 @@ sys-boot/ventoy-bin 1.0.97 1.0.98: Creator of bootable USBs, with ability to cop
 sys-boot/zfsbootmenu 1.12.0 2.2.2 2.3.0 3.0.1: ZFS bootloader for root-on-ZFS systems
 sys-cluster/genders 1.28.1-r1: Static cluster configuration database used for cluster configuration management
 sys-cluster/kops-bin 1.25.3 1.31.0: Kubernetes Operations
-sys-cluster/opencoarrays 2.9.3-r1 2.10.0-r1 2.10.1-r1 2.10.2: A parallel application binary interface for Fortran 2018 compilers
+sys-cluster/opencoarrays 2.9.3-r1 2.10.0-r1 2.10.1-r1 2.10.2 2.10.3: A parallel application binary interface for Fortran 2018 compilers
 sys-devel/clang-bloomberg-p2996 21.0.0_p20250702 9999: Clang fork implementing experimental support for P2996 (Reflection for C++26)
 sys-devel/fcode-utils 1.0.3: Set of utilities to process FCODE, OpenFirmware's byte code
 sys-devel/lcc 2021.01.11-r1: The lcc retargetable ANSI C compiler
@@ -1880,7 +1881,7 @@ www-client/browsh 1.8.2: A fully-modern text-based browser, rendering to TTY and
 www-client/mullvad-browser-bin 14.5.5: The Mullvad Browser is developed to minimize tracking and fingerprinting.
 www-client/nyxt 3.11.8 3.12.0 9999: Nyxt - the hacker's power-browser
 www-client/vimb 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
-www-client/yandex-browser 25.4.1.1213_p1: The web browser from Yandex
+www-client/yandex-browser 25.6.1.1039_p1: The web browser from Yandex
 www-client/zen-bin 1.14.8b 1.14.9b 1.14.10b 1.14.11b: Zen Browser - A fast, privacy-focused Firefox fork
 www-misc/dufs 0.40.0: Dufs is a distinctive utility file server
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits
