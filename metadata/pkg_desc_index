@@ -105,7 +105,7 @@ app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applicatio
 app-admin/pass-audit 1.2-r1: A pass extension for auditing your password repository.
 app-admin/pass-update 2.2.1: pass extension that provides an easy flow for updating passwords
 app-admin/passage 1.7.4.2: A fork of password-store using age as encryption backend
-app-admin/pulumi-bin 3.184.0 3.185.0-r1 3.186.0: Infrastructure as code in any programming language
+app-admin/pulumi-bin 3.185.0-r1 3.186.0 3.191.0: Infrastructure as code in any programming language
 app-admin/rbw 1.13.2 9999: Unofficial Bitwarden CLI
 app-admin/ripasso 0.7.0: A password manager that uses the file format of 'pass'
 app-admin/s-tui 1.1.6 1.2.0: Stress-Terminal UI monitoring tool
@@ -222,7 +222,8 @@ app-misc/aw-core 0.5.16: Core library for ActivityWatch
 app-misc/badvideo 5.2 9999: Ruin your videos in SECONDS!
 app-misc/blahaj 2.2.0-r1: Gay sharks at your local terminal
 app-misc/brightnessctl 0.5.1: A program to read and control device brightness
-app-misc/catt 0.12.13: Send videos from many, many online sources to your Chromecast
+app-misc/catt 0.12.13 0.13.0: Send videos from many, many online sources to your Chromecast
+app-misc/cepl 9.0.2: A readline C and C++ REPL with history, tab-completion, and undo.
 app-misc/chayang 0.1.0: Gradually dim the screen.
 app-misc/cheat 4.2.3 4.3.3-r1: cheat allows you to create and view interactive cheatsheets on the command-line
 app-misc/clifm 1.11 1.13 1.16 1.18 9999: The command line file manager
@@ -259,7 +260,7 @@ app-misc/kloak 0.2.30 0.3.7_p1 9999: A privacy tool that makes keystroke biometr
 app-misc/kmon 1.6.5 1.7.1: Linux kernel manager and activity monitor
 app-misc/krabby 0.3.0 9999: Print pokemon sprites in your terminal
 app-misc/ledger-live-bin 2.84.1: Manager for the Ledger hardware wallet
-app-misc/lf 33-r1: Terminal file manager
+app-misc/lf 33-r1 36: Terminal file manager
 app-misc/lyfetch 1.1: Small system information script for linux systems.
 app-misc/macchina 6.4.0: A system information fetcher with an emphasis on performance.
 app-misc/mangadesk 0.7.7 0.7.8: Terminal Client for MangaDex
@@ -550,6 +551,7 @@ dev-lang/opencilk-bin 1.1 2.1: The OpenCilk concurrency platform for parallel pr
 dev-lang/quickjs 2024.01.13-r1: Small embeddable Javascript engine
 dev-lang/swift 5.10.1 5.10.1-r1 5.10.1-r2 5.10.1-r3 5.10.1-r4 5.10.1-r5 6.0.3 6.0.3-r1 6.0.3-r2 6.1 6.1.1 6.1.2 6.1.2-r1: A high-level, general-purpose, multi-paradigm, compiled programming language
 dev-lang/swift-bootstrap 1.0: A virtual package providing a base Swift to bootstrap future versions with.
+dev-lang/uiua 0.16.2: A stack-based array programming language
 dev-lang/wabt 1.0.37: The WebAssembly Binary Toolkit
 dev-libs/M_CLI2 3.2.0: M_CLI2 - parse Unix-like command line arguments from Fortran
 dev-libs/StringiFor 1.1.4: StringiFor, Strings Fortran Manipulator, yet another strings Fortran module
@@ -612,7 +614,7 @@ dev-libs/mtxclient 0.10.0-r1 0.10.0-r2: Client API library for Matrix, built on 
 dev-libs/nanopb 0.4.9.1 9999: plain-C Protocol Buffers for embedded/memory-constrained systems
 dev-libs/nihstro 0_pre20250505: 3DS shader assembler and disassembler
 dev-libs/oaknut 2.0.2: Yet another AArch64 emitter
-dev-libs/open62541 1.4.12: Open source C implementation of OPC UA
+dev-libs/open62541 1.4.13: Open source C implementation of OPC UA
 dev-libs/polyseed 1.0.0 2.0.0 9999: Mnemonic seed library for Monero and other CryptoNote-based currencies.
 dev-libs/qschematic 3.0.2: Library for creating flowcharts and engineering diagrams
 dev-libs/randomx 1.2.1-r1: Proof of work algorithm based on random code execution
@@ -773,7 +775,7 @@ dev-python/jsonlines 4.0.0: Library with helpers for the jsonlines file format
 dev-python/langdetect 1.0.9: Port of Google's language-detection library to Python
 dev-python/latexify-py 0.4.3.1 0.4.4.1: Annotate Python source code to get LaTeX expressions
 dev-python/lru-dict 1.3.0: Dict like LRU container
-dev-python/lsp-tree-sitter 0.0.17: A library to create language servers
+dev-python/lsp-tree-sitter 0.0.18: A library to create language servers
 dev-python/lsprotocol 2023.0.1: Language Server Protocol types code generator & packages
 dev-python/markdownify 0.11.6: Convert HTML to Markdown
 dev-python/markovify 0.9.4: Simple, extensible Markov chain generator
@@ -1066,7 +1068,7 @@ games-board/rmahjong 0.4_p20201106: Riichi Mahjong, the Japanese variant of the 
 games-emulation/RetroArch 1.19.1 1.20.0 1.21.0: RetroArch is a frontend for emulators, game engines and media players
 games-emulation/azahar 2123.1: An open-source 3DS emulator project based on Citra
 games-emulation/dosbox-x 2025.02.01 2025.05.03 9999: Complete, accurate DOS emulator forked from DOSBox
-games-emulation/eden 0.0.3_rc2: Nintendo Switch Emulator
+games-emulation/eden 0.0.3_rc3: Nintendo Switch Emulator
 games-emulation/flycast 9999: Sega Dreamcast, Naomi and Atomiswave emulator
 games-emulation/libretro-dolphin 0.0.1_pre20250517: Dolphin libretro port
 games-emulation/mupen64plus-qt 1.17 9999: A basic launcher for Mupen64Plus
@@ -1104,6 +1106,7 @@ games-rpg/open-adventure 1.17 1.18 1.20: Forward-port of the Crowther/Woods Adve
 games-rpg/primordia 3.6.70667: A cyberpunk point-and-click adventure game
 games-rpg/snoot-game 1.12.0: Visual novel parody of Goodbye Volcano High
 games-server/among-sus 20210519: Among Us, but it's a text adventure
+games-strategy/7k-ambition 3.2.2 9999: Seven Kingdoms: Ambition
 games-strategy/gigalomania 1.0.1: Libre clone of Mega-Lo-Mania (original from ~1990), supports original resources
 games-strategy/slay-the-spire 2.2: Deck-building roguelike game with four playable characters
 games-strategy/unciv-bin 4.15.2 4.15.6_p1: Turn-based historical strategy game, a remake of Civ V
@@ -1274,9 +1277,9 @@ gui-libs/xdg-desktop-portal-hyprland 1.3.9-r1 9999: xdg-desktop-portal backend f
 gui-wm/cage 0.2.0 9999: A Wayland kiosk
 gui-wm/hyprland-contrib 0.1-r1 9999: Community-maintained extensions for hyprland
 gui-wm/labwc 0.8.4-r1 0.9.0 0.9.1 9999: Openbox alternative for wayland
-gui-wm/mangowc 0.8.0 0.8.1 9999: wayland compositor based on wlroots and scenefx(dwl but no suckless)
+gui-wm/mangowc 0.8.1 0.8.2 9999: wayland compositor based on wlroots and scenefx(dwl but no suckless)
 gui-wm/miracle-wm 0.6.1 0.6.2: Tiling Wayland compositor based on Mir
-gui-wm/niri 25.02 25.05.1-r1: Scrollable-tiling Wayland compositor
+gui-wm/niri 25.05.1-r1: Scrollable-tiling Wayland compositor
 gui-wm/phoc 0.46.0 0.47.0 0.48.0: Wayland compositor for mobile phones
 gui-wm/river 0.3.7 0.3.9 0.3.11: A dynamic tiling Wayland compositor
 gui-wm/swayfx 0.5 0.5.3: SwayFX: Sway, but with eye candy!
@@ -1401,7 +1404,7 @@ media-sound/listenbrainz-mpd 2.3.8-r2: ListenBrainz submission client for MPD
 media-sound/lms 3.68.1 3.69.0: Lightweight Music Server.
 media-sound/loudgain 0.6.8-r1 0.6.8_p20240128 0.6.8_p20240128-r2: Versatile ReplayGain 2.0 loudness normalizer
 media-sound/mopidy 3.4.2: An extensible music server written in Python.
-media-sound/mousai 0.7.8: Identify songs in seconds
+media-sound/mousai 0.7.9: Identify songs in seconds
 media-sound/mpd-mpris 0.3.1 0.4.0 0.4.1: An implementation of the MPRIS protocol for MPD.
 media-sound/mpvc 1.1.4-r1: mpc-like tool which connects to existing mpv instances through sockets.
 media-sound/musikcube 3.0.2 3.0.4: Excellent terminal music player, support almost every known sound system.
@@ -1479,6 +1482,7 @@ mpv-plugin/thumbfast 2023.12.08 2025.02.04: High-performance on-the-fly thumbnai
 net-analyzer/gping 1.20.1: Ping, but with a graph
 net-analyzer/munin-contrib 0.2021.04.27 0.2024.03.04 0.2024.03.04-r1: User contributed stuff related to munin
 net-analyzer/netsniff-ng 0.6.8-r1 0.6.9: high performance network sniffer for packet inspection
+net-analyzer/reaction 2.2.0: Scan logs and take action
 net-client/amfora 1.8.0 1.9.2: A fancy terminal browser for the Gemini protocol.
 net-client/castor 0.8.18 0.9.0-r1: A graphical browser for plain-text protocols
 net-client/kristall 0.3-r2 0.4: Visual cross-platform gemini browser
@@ -1503,7 +1507,7 @@ net-im/axolotl-bin 2.0.1: Axolotl is a cross-platform Signal client
 net-im/beeper 4.1.41 4.1.111: Beeper: Unified Messenger
 net-im/chatterino 2.5.3: Chat client for https://twitch.tv
 net-im/conduit 0.10.6 0.10.7 0.10.8 9999: Matrix homeserver written in Rust
-net-im/discord-canary-bin 0.0.643: All-in-one voice and text chat
+net-im/discord-canary-bin 0.0.744: All-in-one voice and text chat
 net-im/discord-ptb-bin 0.0.137: All-in-one voice and text chat
 net-im/discordo 9999: A lightweight, secure, and feature-rich Discord TUI client.
 net-im/eturnal 1.12.1 1.12.2: STUN/TURN server
@@ -1609,7 +1613,7 @@ net-misc/xkcd-handler 1.1.4: A handler for XKCD urls
 net-misc/xmrig-mo 6.21.2 6.22.2: MoneroOcean fork of xmrig that supports algo switching
 net-misc/yacy 1.930.202405130205: YaCy - p2p based distributed web-search engine
 net-misc/yt-dlg 2024.03.19: A cross platform front-end GUI of the popular youtube-dl written in wxPython.
-net-news/cliflux 1.5.0 1.6.0: A terminal-ui (TUI) client for the Miniflux RSS reader
+net-news/cliflux 1.6.0 1.9.0: A terminal-ui (TUI) client for the Miniflux RSS reader
 net-news/comitium 1.8.1: feed aggregator for gemini supporting many formats and protocols
 net-news/gfeeds 2.2.0-r3: An RSS/Atom feed reader for GNOME.
 net-news/newsflash 3.1.6 3.1.6-r1 3.3.5: Feed Reader written in GTK
