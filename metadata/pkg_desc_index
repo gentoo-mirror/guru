@@ -89,7 +89,7 @@ app-admin/chamber 2.13.2: Managing secrets in AWS SSM Parameter Store
 app-admin/chezmoi 2.62.3 2.64.0: Manage your dotfiles across multiple machines, securely
 app-admin/customrescuecd-x86_64 0.12.7 0.12.8: A system rescue cd or usbstick for desktop and server based on gentoo
 app-admin/dotbot 1.20.1: A tool that bootstraps your dotfiles
-app-admin/fatrace 0.18.0: report system wide file access events
+app-admin/fatrace 0.19.0: report system wide file access events
 app-admin/gentoo_update 0.2.4: Gentoo Linux updater
 app-admin/grub-customizer 5.2.5: A graphical grub2 settings manager
 app-admin/hardinfo2 2.2.13: System Information and Benchmark for Linux Systems
@@ -98,7 +98,7 @@ app-admin/himitsu-keyring 0.2.0: graphical frontend for managing a Himitsu key s
 app-admin/himitsu-ssh 0.4 0.9.1 9999: SSH integration for Himitsu
 app-admin/himitsu-totp 0.2 0.9 9999: TOTP support for Himitsu
 app-admin/hiprompt-gtk 0.9-r1: GTK4 prompter for Himitsu
-app-admin/i2pd-tools 2024.09.25 2025.02.26-r1: Some useful tools for I2P
+app-admin/i2pd-tools 2025.02.26-r1 2025.08.21: Some useful tools for I2P
 app-admin/krapplet 0.3.1-r1: Krapplet (keyring applet): a Linux graphical password manager
 app-admin/oet 0.1.9 0.1.10 0.1.11 9999: Update your system into binpkgs in an overlay sandbox
 app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applications and tmux
@@ -574,8 +574,8 @@ dev-libs/discord-rpc 3.4.0: Library for interfacing a game with a locally runnin
 dev-libs/dmd_core 0.7.2-r1: Core logic for an AT&T / Teletype DMD 5620 terminal emulator
 dev-libs/dynarmic 6.7.0: An ARM dynamic recompiler
 dev-libs/fastText 0.9.2: Library for fast text representation and classification
-dev-libs/feedbackd 0.8.2 0.8.3: DBus service for haptic/visual/audio feedback
-dev-libs/feedbackd-device-themes 0.8.3 0.8.4: Device specific themes for Feedbackd
+dev-libs/feedbackd 0.8.3 0.8.4: DBus service for haptic/visual/audio feedback
+dev-libs/feedbackd-device-themes 0.8.4 0.8.5: Device specific themes for Feedbackd
 dev-libs/fortran-regex 1.1.2: Modern Fortran port of the tiny-regex-c library for regular expressions
 dev-libs/fortran-shlex 1.0.1 1.2.1 2.0.0: Modern Fortran port of the tiny-regex-c library for regular expressions
 dev-libs/fortran-stdlib 0.5.0 0.6.1 0.7.0 9999: A community driven standard library for (modern) Fortran
@@ -660,7 +660,7 @@ dev-ml/ocamlformat-lib 0.26.2: OCamlFormat is a tool to automatically format OCa
 dev-ml/ocamlformat-rpc-lib 0.26.2: Auto-formatter for OCaml code (RPC mode)
 dev-ml/ppx_yojson_conv_lib 0.17.0: Runtime lib for ppx_yojson_conv
 dev-ml/psq 0.2.0-r2 0.2.1: Functional Priority Search Queues for OCaml
-dev-nim/cligen 1.8.6 1.8.9: Infer & generate command-line interface/option/argument parser
+dev-nim/cligen 1.8.9 1.9.0: Infer & generate command-line interface/option/argument parser
 dev-nim/inim 0.6.1 1.0.0: Interactive Nim Shell / REPL / Playground
 dev-nim/nake 1.9.4-r1: make-like for Nim. Describe your builds as tasks!
 dev-nim/nimbus 1.1.4 1.1.5 9999: Packaging-friendly Nim build system
@@ -900,7 +900,7 @@ dev-python/sphinx-design 0.6.1: A sphinx extension for designing beautiful respo
 dev-python/sphinx-hoverxref 1.4.2: Sphinx extension to show tooltips with content embedded when hover a reference
 dev-python/sphinx-last-updated-by-git 0.3.8: Get the "last updated" time for each Sphinx page from Git
 dev-python/sphinx-paramlinks 0.6.0: Allows param links in Sphinx function/method descriptions to be linkable
-dev-python/sphinx-sitemap 2.6.0 2.7.1 2.7.2: Sitemap generator for Sphinx
+dev-python/sphinx-sitemap 2.7.2 2.8.0: Sitemap generator for Sphinx
 dev-python/sphinxcontrib-katex 0.9.10 0.9.11: KaTeX Sphinx extension for rendering of math in HTML pages
 dev-python/sphinxext-opengraph 0.10.0: Sphinx extension to generate unique OpenGraph metadata
 dev-python/sphinxnotes-mock 1.0.2: Sphinx extension for mocking directives and roles without modifying documents
@@ -1106,7 +1106,7 @@ games-rpg/open-adventure 1.17 1.18 1.20: Forward-port of the Crowther/Woods Adve
 games-rpg/primordia 3.6.70667: A cyberpunk point-and-click adventure game
 games-rpg/snoot-game 1.12.0: Visual novel parody of Goodbye Volcano High
 games-server/among-sus 20210519: Among Us, but it's a text adventure
-games-strategy/7k-ambition 3.2.2 9999: Seven Kingdoms: Ambition
+games-strategy/7k-ambition 3.2.3 9999: Seven Kingdoms: Ambition
 games-strategy/gigalomania 1.0.1: Libre clone of Mega-Lo-Mania (original from ~1990), supports original resources
 games-strategy/slay-the-spire 2.2: Deck-building roguelike game with four playable characters
 games-strategy/unciv-bin 4.15.2 4.15.6_p1: Turn-based historical strategy game, a remake of Civ V
@@ -1280,7 +1280,7 @@ gui-wm/labwc 0.8.4-r1 0.9.0 0.9.1 9999: Openbox alternative for wayland
 gui-wm/mangowc 0.8.1 0.8.2 9999: wayland compositor based on wlroots and scenefx(dwl but no suckless)
 gui-wm/miracle-wm 0.6.1 0.6.2: Tiling Wayland compositor based on Mir
 gui-wm/niri 25.05.1-r1: Scrollable-tiling Wayland compositor
-gui-wm/phoc 0.46.0 0.47.0 0.48.0: Wayland compositor for mobile phones
+gui-wm/phoc 0.47.0 0.48.0 0.49.0: Wayland compositor for mobile phones
 gui-wm/river 0.3.7 0.3.9 0.3.11: A dynamic tiling Wayland compositor
 gui-wm/swayfx 0.5 0.5.3: SwayFX: Sway, but with eye candy!
 gui-wm/wayback 0.2: X11 compatibility layer levaraging wlroots and Xwayland
@@ -1486,7 +1486,7 @@ net-analyzer/reaction 2.2.0: Scan logs and take action
 net-client/amfora 1.8.0 1.9.2: A fancy terminal browser for the Gemini protocol.
 net-client/castor 0.8.18 0.9.0-r1: A graphical browser for plain-text protocols
 net-client/kristall 0.3-r2 0.4: Visual cross-platform gemini browser
-net-client/lagrange 1.18.4 1.18.5: Desktop GUI client for browsing Geminispace
+net-client/lagrange 1.18.5 1.18.8: Desktop GUI client for browsing Geminispace
 net-client/offpunk 2.6 2.7.1: Offline-First Gemini/Web/Gopher/RSS reader and browser
 net-client/starfish 1.2.0 1.3.1: A Gemini browser for elementary OS
 net-client/telescope 0.10.1 0.11: w3m-like browser for Gemini
@@ -1566,6 +1566,7 @@ net-mail/pop 0.2.0: Send emails from your terminal
 net-misc/FORT-validator 1.5.4-r2 1.6.1-r2 1.6.2-r2: FORT validator is an open source RPKI validator
 net-misc/brickd 2.4.7: Network Daemon bridging API bindings to Tinkerforge hardware bricks
 net-misc/can-utils 2021.08.0 2023.03 9999-r3: CAN userspace utilities and tools
+net-misc/cellbroadcastd 0.0.2: DBus service for cellular broadcast messages
 net-misc/clatd 1.6-r1 2.1.0: A CLAT / SIIT-DC Edge Relay implementation for Linux
 net-misc/commons-downloader 9999: A shell script to bulk download files from Wikimedia Commons, by category
 net-misc/commons-wikimedia-find-by-hash 1.0.0: Search in commons.wikimedia.org by hash (sha1) of provided file
@@ -1574,7 +1575,7 @@ net-misc/cve-client 1.1.1 9999: CLI-based client / toolbox for CVE.org
 net-misc/eg25-manager 0.4.2: Daemon for managing the Quectel EG25 modem
 net-misc/ffsend 0.2.77 9999: Easily and securely share files from the command line
 net-misc/fileshelter 6.2.0: FileShelter is a “one-click” file sharing web application
-net-misc/freetube-bin 0.23.7_beta: A private YouTube desktop client
+net-misc/freetube-bin 0.23.8_beta: A private YouTube desktop client
 net-misc/gdown 5.2.0: Google Drive public file/folder downloader
 net-misc/gdrive 3.9.0-r1 3.9.1-r1: Google Drive CLI Client
 net-misc/gemget 1.9.0: Command line downloader for the Gemini protocol
@@ -1630,7 +1631,7 @@ net-p2p/gridcoin 5.4.9.0-r1: Proof-of-Stake based cryptocurrency that rewards BO
 net-p2p/ipfs-desktop-bin 0.39.0 0.40.0 0.43.0: A desktop client for IPFS. The IPFS's Native Application
 net-p2p/monero 0.18.4.1 9999: The secure, private, untraceable cryptocurrency
 net-p2p/monero-gui-bin 0.18.4.0: An open-source GUI wallet developed by the Monero community.
-net-p2p/p2pool 4.5-r2 4.8 4.9 9999: Decentralized pool for Monero mining
+net-p2p/p2pool 4.5-r2 4.8 4.9 4.9.1 9999: Decentralized pool for Monero mining
 net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
 net-p2p/yggdrasil-go 0.5.12 9999: An experiment in scalable routing as an encrypted IPv6 overlay network
 net-print/hpuld 1.00.39.15.00.23-r1: HP Unified Linux Driver (for samsung hardware)
@@ -1665,13 +1666,13 @@ net-wireless/rtl8821ce 0_pre20240326: Realtek RTL8821CE Driver module for Linux 
 net-wireless/rtl8821cu 0_pre20240821: Realtek 8821CU/RTL8811CU module for Linux kernel
 net-wireless/sdrpp 1.2.0_pre20240607: Cross-Platform SDR Software
 phosh-base/pfs 0.0.3 0.0.4: Phosh File Selector library for selecting files
-phosh-base/phosh 0.42.0 0.47.0 0.48.0: Meta package for Phosh, merge this package to install
-phosh-base/phosh-mobile-settings 0.42.0 0.43.0 0.47.0 0.48.0: Phosh and related settings for mobile
-phosh-base/phosh-osk-stevia 0.48.0: Alternative on screen keyboard for Phosh
+phosh-base/phosh 0.47.0 0.48.0 0.49.0: Meta package for Phosh, merge this package to install
+phosh-base/phosh-mobile-settings 0.47.0 0.48.0 0.49.0: Phosh and related settings for mobile
+phosh-base/phosh-osk-stevia 0.48.0 0.49.0: Alternative on screen keyboard for Phosh
 phosh-base/phosh-osk-stub 0.42.0 0.47.0: Alternative on screen keyboard for Phosh
-phosh-base/phosh-shell 0.42.0 0.47.0-r1 0.48.0: Pure Wayland shell for mobile devices
+phosh-base/phosh-shell 0.47.0-r1 0.48.0 0.49.0: Pure Wayland shell for mobile devices
 phosh-base/phosh-tour 0.43.0 0.44.0 0.45.0 0.46.0 0.47.0: Introduction to phosh on smartphones
-phosh-base/xdg-desktop-portal-phosh 0.47.0: Phosh portal backend for xdg-desktop-portal
+phosh-base/xdg-desktop-portal-phosh 0.47.0 0.48.0 0.49.0: Phosh portal backend for xdg-desktop-portal
 sci-biology/cmdock 0.2.0-r2 0.2.0-r3: Program for docking ligands to proteins and nucleic acids
 sci-biology/cytoscape-bin 3.10.3: A visualization platform for molecular interaction networks
 sci-biology/geneathome 1.10-r5: BOINC application for expanding Gene Regulatory Networks (GRN)
@@ -1753,6 +1754,7 @@ sec-keys/signify-keys-lanodan 2024 2025: Signify keys used by Haelwenn (lanodan)
 sec-keys/signify-keys-oriole-systems 20240330: Signify keys used to sign oriole.systems releases
 sec-keys/signify-keys-telescope 0.10 0.11 0.12: Signify keys used to sign telescope releases
 sys-apps/0xFFFF 0.10: 0pen Free Fiasco Firmware Flasher for Maemo devices
+sys-apps/amd-debug-tools 0.2.7: Helpful tools for debugging AMD Zen systems
 sys-apps/asus-numpad 0.2-r1 9999: User-space driver for Asus numpad
 sys-apps/asus-touchpad-numpad-driver 0_pre20220311 9999: Feature-rich configurable Asus NumPad drivers
 sys-apps/bat-extras 2023.09.19-r2 9999: Bash scripts that integrate bat with various command line tools.
