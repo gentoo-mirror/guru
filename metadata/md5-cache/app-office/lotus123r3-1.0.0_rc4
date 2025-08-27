@@ -1,9 +1,9 @@
-BDEPEND=app-alternatives/gzip[reference] sys-devel/binutils[multitarget] sys-libs/ncurses[abi_x86_32(-)]
+BDEPEND=app-alternatives/cpio app-alternatives/gzip[reference] sys-devel/binutils[multitarget] sys-libs/ncurses[abi_x86_32(-)]
 DEFINED_PHASES=prepare
 DEPEND=sys-libs/ncurses-compat:5
 DESCRIPTION=A native port of Lotus 1-2-3 to Linux.
 EAPI=8
-HOMEPAGE=https://123r3.net/
+HOMEPAGE=https://github.com/taviso/123elf
 IUSE=+abi_x86_32
 KEYWORDS=-* ~amd64 ~x86
 LICENSE=all-rights-reserved
@@ -11,4 +11,4 @@ RDEPEND=sys-libs/ncurses-compat:5
 RESTRICT=bindist mirror
 SLOT=0
 SRC_URI=https://github.com/taviso/123elf/archive/refs/tags/v1.0.0rc4.tar.gz https://archive.org/download/123-unix/123UNIX1.IMG https://archive.org/download/123-unix/123UNIX2.IMG https://archive.org/download/123-unix/123UNIX3.IMG https://archive.org/download/123-unix/123UNIX4.IMG https://archive.org/download/123-unix/123UNIX5.IMG
-_md5_=8be7aea962a50db282a9fa0d27f936e8
+_md5_=c98dd3e8c480131ee212db397f76c266

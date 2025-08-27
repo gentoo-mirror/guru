@@ -363,7 +363,7 @@ app-text/ford 6.2.5 7.0.8-r1 7.0.9-r1 7.0.10 7.0.11: FORD, automatic documentati
 app-text/harper 0.54.0: The language checker for developers.
 app-text/jrnl 4.1 4.2: Collect your thoughts and notes without leaving the command line
 app-text/klogg 22.06.0.1289-r1: A GUI application to browse and search through long and complex log files
-app-text/komikku 1.84.0: Manga reader for GNOME
+app-text/komikku 1.86.0: Manga reader for GNOME
 app-text/koodo-reader-bin 1.5.1 1.6.3: A modern ebook manager and reader with sync and backup capacities
 app-text/lchat 1.0-r2: Line oriented front end for ii-like chat programs
 app-text/lizard 1.17.13 1.17.28 1.17.31: A simple code complexity analyser, supports most of the popular languages.
@@ -717,7 +717,7 @@ dev-python/daiquiri 3.3.0: Library to configure Python logging easily
 dev-python/darkdetect 0.8.0: Detect OS dark mode from Python
 dev-python/dasbus 1.7-r1 1.7-r2: DBus library in Python 3
 dev-python/dataclasses-json 0.6.7-r1: Easily serialize Data Classes to and from JSON
-dev-python/dateparser 1.2.1 1.2.2: Date parsing library designed to parse dates from HTML pages
+dev-python/dateparser 1.2.2: Date parsing library designed to parse dates from HTML pages
 dev-python/decopatch 1.4.10: Create decorators easily in python
 dev-python/desktop-notifier 6.1.1 6.2.0: desktop-notifier is a Python library for cross-platform desktop notifications
 dev-python/devtools 0.12.2: Dev tools for python
@@ -958,6 +958,7 @@ dev-tex/ninecolors 2022.02.13: Select colors with proper WCAG color contrast
 dev-tex/tabularray 2023.03.01: Typeset tabulars and arrays with LATEX3
 dev-tex/tectonic 0.15.0 0.15.0-r1: A modernized, complete, embeddable TeX/LaTeX engine.
 dev-util/DirectXShaderCompiler 1.8.2502 1.8.2505: Microsoft DirectX Shader Compiler which is based on LLVM/Clang
+dev-util/addlicense 1.2.0: A program which ensures source code files have copyright license headers
 dev-util/bash-language-server 5.3.3 5.4.0 5.4.2 5.4.3 5.6.0: A language server for Bash
 dev-util/bats-assert 2.1.0: Common assertions for Bats
 dev-util/bats-support 0.3.0: Supporting library for Bats test helpers
@@ -1222,7 +1223,7 @@ gui-apps/paperde 0.1.1_p20210426: Simple, sleek QT based DE for wayland using wa
 gui-apps/pop-launcher 1.2.1: Modular IPC-based desktop launcher service
 gui-apps/quickshell 0.2.0 9999: Toolkit for building desktop widgets using QtQuick
 gui-apps/rofi-wayland 1.7.5_p3 1.7.8_p1: A window switcher, run dialog and dmenu replacement
-gui-apps/satty 0.14.0-r1 9999: A screenshot annotation tool inspired by Swappy and Flameshot.
+gui-apps/satty 0.19.0 9999: A screenshot annotation tool inspired by Swappy and Flameshot.
 gui-apps/sddm-conf 0.3.0: SDDM configuration editor
 gui-apps/sfwbar 1.0_beta15 1.0_beta16 1.0_beta16_p1 9999: S* Floating Window Bar
 gui-apps/shikane 1.0.1: A wayland dynamic output config tool focusing on accuracy and determinism
@@ -1234,7 +1235,7 @@ gui-apps/sway-launcher-desktop 1.7.0: TUI Application launcher with Desktop Entr
 gui-apps/swaykbdd 1.4: Per-window keyboard layout switcher for Sway
 gui-apps/swaylock-effects 1.7.0.0 9999: Swaylock, with fancy effects
 gui-apps/swaylock-plugin 1.8.0 9999: Fork of Swaylock that supports animated backgrounds
-gui-apps/swaync 0.11.0 0.12.1-r1: A simple notification daemon with a GTK gui for notifications and control center
+gui-apps/swaync 0.11.0 0.12.2: A simple notification daemon with a GTK gui for notifications and control center
 gui-apps/swayosd 0.1.0 0.2.1: GTK based on screen display for keyboard shortcuts like caps-lock and volume
 gui-apps/swayr 0.28.0 0.28.1: A LRU window-switcher (and more) for the sway window manager
 gui-apps/swayrbar 0.4.2: A swaybar-protocol implementation for sway/swaybar
@@ -1262,7 +1263,7 @@ gui-apps/wlsunset 0.4.0 9999: Day/night gamma adjustments for Wayland
 gui-apps/wob 0.15.1-r1 0.16: Lightweight overlay volume/backlight/progress/anything bar for Wayland
 gui-apps/wscreensaver 9999: Xscreensaver screensavers ported to wayland
 gui-apps/wtype 0.4: xdotool type for wayland
-gui-apps/xremap 0.10.15: Dynamic key remap for X and Wayland
+gui-apps/xremap 0.10.13 0.10.15: Dynamic key remap for X and Wayland
 gui-apps/xwayland-satellite 0.5.1 0.7: Xwayland outside your Wayland
 gui-apps/yambar 1.11.0 9999: Simplistic and highly configurable status panel for X and Wayland
 gui-libs/gtk-session-lock 0.2.0-r6 9999: GTK-based lockscreen for Wayland
@@ -1373,6 +1374,7 @@ media-libs/svt-vp9 0.3.0 9999: Scalable Video Technology for VP9 (SVT-VP9 Encode
 media-libs/vvdec 2.3.0: VVdeC, the Fraunhofer Versatile Video Decoder
 media-libs/vvenc 1.11.1: VVenC, the Fraunhofer Versatile Video Encoder
 media-libs/wivrn 0.25 25.6.1 25.8 9999: WiVRn OpenXR streaming
+media-libs/xrizer 0.3.0 9999: OpenVR over OpenXR compatibility layer
 media-plugins/alsa-sndio 0.2: ALSA PCM to play audio on sndio servers
 media-plugins/argotlunar-bin 2.06-r2: Argotlunar is a sound granulator. Binary Linux VST
 media-plugins/dtmediawiki 9999: Wikimedia Commons export plugin for Darktable
@@ -1444,7 +1446,7 @@ media-video/gpu-screen-recorder 5.5.3 9999: A screen recorder that has minimal i
 media-video/gpu-screen-recorder-gtk 5.7.8 9999: GTK frontend for gpu-screen-recorder.
 media-video/kikoplay 0.9.3 9999: KikoPlay is a full-featured danmu player
 media-video/kooha 2.2.3-r2: GTK4 screen recorder for Wayland
-media-video/lossless-cut 3.59.1-r1: Lossless video/audio editing: export media without reencoding, powered by ffmpeg
+media-video/lossless-cut 3.59.1-r1 3.64.0: Lossless video/audio editing: export media without reencoding, powered by ffmpeg
 media-video/manimgl 1.7.2 9999: Animation engine for explanatory math videos
 media-video/mediaelch 2.10.6 2.12.0 9999: Video metadata scraper
 media-video/megapixels 1.4.3-r1: GTK4 camera application that knows how to deal with the media request api
@@ -1802,7 +1804,7 @@ sys-block/ublksrv 1.4: Userspace block device driver
 sys-boot/customrescuecd-x86_64-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/drbl 5.4.2: Diskless Remote Boot in Linux
 sys-boot/grml-rescueboot 0.6.1: grub2 script to add ISO images to the grub2 boot menu
-sys-boot/limine 9.3.0 9.3.2 9.3.4 9.4.0 9.5.0 9.6.0: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
+sys-boot/limine 9.3.0 9.3.2 9.3.4 9.4.0 9.5.0 9.6.0 9.6.1: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
 sys-boot/mkusb 23.2.0: CLI and GUI for creating bootable live USB, with optional persistent storage
 sys-boot/ventoy-bin 1.0.97 1.0.98: Creator of bootable USBs, with ability to copy ISOs, persistence storage
 sys-boot/zfsbootmenu 1.12.0 2.2.2 2.3.0 3.0.1: ZFS bootloader for root-on-ZFS systems
