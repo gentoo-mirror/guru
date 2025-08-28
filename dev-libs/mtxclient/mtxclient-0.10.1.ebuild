@@ -1,4 +1,4 @@
-# Copyright 2020-2024 Gentoo Authors
+# Copyright 2020-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -21,7 +21,7 @@ RDEPEND="
 	dev-libs/libfmt:=
 	dev-libs/olm
 	dev-libs/openssl:=
-	dev-libs/re2:=
+	dev-libs/re2:0/10
 	dev-libs/spdlog:=
 "
 DEPEND="
@@ -32,7 +32,6 @@ DEPEND="
 
 PATCHES=(
 	"${FILESDIR}"/${PN}-0.6.0-remove-network-tests.patch
-	"${FILESDIR}"/${PN}-0.10.0-fmt11.patch
 )
 
 src_configure() {

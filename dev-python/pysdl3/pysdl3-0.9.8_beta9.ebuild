@@ -32,11 +32,11 @@ RDEPEND="
 src_install() {
 	distutils-r1_src_install
 
-	cat - > 99pysdl3 <<EOF
-SDL_DISABLE_METADATA=1
-SDL_DOC_GENERATOR=0
-SDL_BINARY_PATH=/usr/$(get_libdir)
-EOF
+	cat - > 99pysdl3 <<-EOF
+	SDL_DISABLE_METADATA=1
+	SDL_DOC_GENERATOR=0
+	SDL_BINARY_PATH=/usr/$(get_libdir)
+	EOF
 
 	# Workaround for https://github.com/Aermoss/PySDL3/issues/27
 	doenvd 99pysdl3

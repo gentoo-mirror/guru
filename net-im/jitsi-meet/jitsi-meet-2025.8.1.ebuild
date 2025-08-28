@@ -3,8 +3,8 @@
 
 EAPI=8
 
-CHROMIUM_LANGS="am ar bg bn ca cs da de el en-GB en-US es-419 es et fa fil fi fr gu he hi hr hu id it
-ja kn ko lt lv ml mr ms nb nl pl pt-BR pt-PT ro ru sk sl sr sv sw ta te th tr uk vi zh-CN zh-TW"
+CHROMIUM_LANGS="af am ar bg bn ca cs da de el en-GB en-US es-419 es et fa fil fi fr gu he hi hr hu id it
+ja kn ko lt lv ml mr ms nb nl pl pt-BR pt-PT ro ru sk sl sr sv sw ta te th tr uk ur vi zh-CN zh-TW"
 
 inherit desktop xdg unpacker chromium-2
 
@@ -34,6 +34,7 @@ QA_PREBUILT="*"
 
 src_install() {
 	rm "opt/Jitsi Meet/chrome-sandbox" || die
+	rm "opt/Jitsi Meet/resources/app.asar.unpacked/node_modules/@jitsi/robotjs/prebuilds/linux-arm64/@jitsi+robotjs.node" || die
 
 	insinto /opt
 	doins -r "opt/Jitsi Meet"
