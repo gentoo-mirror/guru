@@ -208,7 +208,6 @@ app-eselect/eselect-bluespec 1.0.2: Manages the /usr/bin/bsc (bluespec) symlink
 app-eselect/eselect-ld 1.0.0: Manage the ld symlink
 app-eselect/eselect-swift 1.0 1.0-r1: Manages Swift symlinks
 app-eselect/eselect-vala 1.0.0: Manage the valac symlink
-app-forensics/mvt 2.4.1: Forensic traces to identify a potential compromise of Android and iOS devices
 app-metrics/scaphandre 0.5.0-r1: Electrical power consumption measurement agent
 app-misc/1password-cli 2.30.3: The world’s most-loved password manager CLI
 app-misc/afc 1.1 1.2 9999: Anime File Checker, checks CRC32 contained in filenames
@@ -610,7 +609,7 @@ dev-libs/lygia 1.3.0: LYGIA is a shader library of reusable functions.
 dev-libs/lzfse 9999: LZFSE compression library and command line tool.
 dev-libs/mcl 0.1.13: merry's common library
 dev-libs/microprofile 4.0: An embeddable profiler
-dev-libs/mtxclient 0.10.0-r1 0.10.0-r2: Client API library for Matrix, built on top of libcurl
+dev-libs/mtxclient 0.10.0-r2 0.10.1: Client API library for Matrix, built on top of libcurl
 dev-libs/nanopb 0.4.9.1 9999: plain-C Protocol Buffers for embedded/memory-constrained systems
 dev-libs/nihstro 0_pre20250505: 3DS shader assembler and disassembler
 dev-libs/oaknut 2.0.2: Yet another AArch64 emitter
@@ -666,13 +665,12 @@ dev-nim/nake 1.9.4-r1: make-like for Nim. Describe your builds as tasks!
 dev-nim/nimbus 1.1.4 1.1.5 9999: Packaging-friendly Nim build system
 dev-nim/noise 0.1.8 0.1.10: Nim implementation of linenoise
 dev-nim/parsetoml 0.7.2: TOML parser library for Nim
-dev-perl/File-Util 4.131591: Easy, versatile, portable file handling
+dev-perl/File-Util 4.201.720: Easy, versatile, portable file handling
 dev-perl/Term-Animation 2.6: Animated ASCII Art support for Perl
 dev-php/fpdf 1.86: FPDF is a PHP class which allows to generate PDF files with pure PHP
 dev-python/DAWG-Python 0.7.2: Pure-python reader for DAWGs (DAFSAs) created by dawgdic C++ library.
 dev-python/EbookLib 0.17.1: Ebook library which can handle EPUB2/EPUB3 and Kindle format
 dev-python/ManimPango 0.4.4 0.6.0: Binding for Pango, to use with Manim.
-dev-python/NSKeyedUnArchiver 1.5: Unserializes binary|text|file|memory plist data to Python dict
 dev-python/PyPubSub 4.0.3-r1: Python Publish-Subscribe Package
 dev-python/PythonQwt 0.12.7 0.14.4 0.14.5: Qt plotting widgets for Python
 dev-python/SLPP 1.2.3: Simple lua-python parser
@@ -697,7 +695,6 @@ dev-python/base58 2.1.1-r1: Base58 and Base58Check implementation
 dev-python/baseline 1.2.1: Easy string baseline
 dev-python/bidict 0.23.1: The bidirectional mapping library for Python
 dev-python/billiard 4.0.2: Python multiprocessing fork
-dev-python/biplist 1.0.3: A binary plist parser/generator for Python
 dev-python/blurhash 1.1.4: Pure-Python implementation of the blurhash algorithm
 dev-python/cassowary 0.6: Run Windows Applications on Linux as if they are native (Using a VM and FreeRDP)
 dev-python/celery 5.4.0: Asynchronous task queue/job queue based on distributed message passing
@@ -745,7 +742,6 @@ dev-python/gnuplot-py 1.8_p8-r1: A python wrapper for Gnuplot
 dev-python/googletrans 4.0.0_rc1-r1: Free Google Translate API for Python. Translates totally free of charge.
 dev-python/graphql-core 3.2.3: Python port of GraphQL.js, the JavaScript reference implementation for GraphQL
 dev-python/graphql-relay 3.2.0: Relay library for graphql-core
-dev-python/grpc-stubs 1.53.0.3: gRPC typing stubs for Python
 dev-python/guidata 3.11.0 3.12.0: Library for user interfaces for easy dataset editing and display
 dev-python/guiqwt 4.4.5-r1: Efficient 2D plotting Python library based on PythonQwt
 dev-python/guppy3 3.1.4 3.1.5: A Python Programming Environment & Heap analysis toolset
@@ -756,7 +752,6 @@ dev-python/hid_ups_exporter 1.0.1: Python-based library for exporting HID UPS da
 dev-python/hijridate 2.5.0: Accurate Hijri-Gregorian date converter based on the Umm al-Qura calendar
 dev-python/http-ece 1.2.1: Encrypted Content Encoding for HTTP
 dev-python/i3ipc 2.2.1-r1 2.2.1-r2: An improved Python library to control i3wm and sway.
-dev-python/iOSbackup 0.9.925-r1: Reads and extracts files from a password-encrypted iOS backup
 dev-python/icecream 2.1.4: Pythonic task execution
 dev-python/injector 0.21.0-r1: Python dependency injection framework, inspired by Guice
 dev-python/internetarchive 3.7.0 5.3.0: Lib and CLI for archive.org - for search, uploading, downloading, rename etc
@@ -848,7 +843,7 @@ dev-python/pyperscan 0.3.0: An opinionated Python binding for Hyperscan
 dev-python/pyproject2ebuild 0.0.3: Convert pyproject.toml to Gentoo ebuilds automatically.
 dev-python/pyqtdarktheme 2.1.0: A flat dark theme for PySide and PyQt.
 dev-python/pyrime 0.0.7: rime for python
-dev-python/pysdl3 0.9.8_beta7 0.9.8_beta8: A pure Python wrapper for SDL3
+dev-python/pysdl3 0.9.8_beta8 0.9.8_beta9: A pure Python wrapper for SDL3
 dev-python/pysnooper 1.2.1 1.2.3: Never use print for debugging again
 dev-python/pystardict 0.8-r1: Library for manipulating StarDict dictionaries from within Python
 dev-python/pytest-cases 3.9.1: Separate test code from test cases in pytest
@@ -1043,6 +1038,7 @@ dev-util/webstorm 2024.3.5 2025.1.2 2025.1.3 2025.1.4.1 2025.2: An integrated de
 dev-util/wxformbuilder 3.10.1-r1 4.2.1: A wxWidgets GUI Builder
 dev-util/xxd 9.1.0895: Hexdump utility from vim
 dev-util/yaml-language-server 1.14.0 1.15.0: Language Server for YAML Files
+dev-vcs/ghorg 1.11.0: Mass repository cloning tool for GitHub/GitLab/Bitbucket
 dev-vcs/gitahead 2.7.1 2.7.1-r1: Graphical Git client to help understand and manage source code history
 dev-vcs/gitqlient 1.6.2 1.6.3 9999: Multi-platform Git client written with Qt
 dev-vcs/gitui 0.26.3 0.27.0: blazing fast terminal-ui for git
@@ -1248,7 +1244,7 @@ gui-apps/vicuna 1.25: Tool for uploading files to Wikimedia Commons and other Wi
 gui-apps/walker 0.10.3 0.12.0 0.13.26 9999: Multi-Purpose Launcher with a lot of features. Highly Customizable and fast
 gui-apps/waylock 1.3.0 1.4.0: Small screenlocker for Wayland compositors
 gui-apps/wbg 1.0.2 1.1.0 1.2.0 9999: Super simple wallpaper application
-gui-apps/wdisplays 1.1.1 1.1.3 9999: GUI display configurator for wlroots compositors
+gui-apps/wdisplays 1.1.3 9999: GUI display configurator for wlroots compositors
 gui-apps/wev 1.0.0 1.1.0: Wayland event viewer
 gui-apps/windowtolayer 0.1.0 9999: Display existing Wayland applications as a wallpaper
 gui-apps/wl-clip-persist 0.4.3-r1 9999: Keep Wayland clipboard even after programs close
@@ -1520,7 +1516,7 @@ net-im/gomuks 0.3.0 0.3.1: A terminal based Matrix client written in Go
 net-im/gurk-rs 0.7.1 9999: Signal messenger client for terminal
 net-im/heisenbridge 1.15.0 1.15.2 1.15.3: Bouncer-style Matrix IRC bridge
 net-im/iamb 0.0.8 0.0.9 0.0.10: A Matrix chat client that uses Vim keybindings
-net-im/jitsi-meet 2025.2.0 2025.4.0: Desktop application for Jitsi Meet built with Electron
+net-im/jitsi-meet 2025.4.0 2025.8.1: Desktop application for Jitsi Meet built with Electron
 net-im/legcord-bin 1.1.4 1.1.5: Legcord is a custom client designed to enhance your Discord experience.
 net-im/manyverse-bin 0.2310.9: A social network off the grid with append-only protocol (no edits) on blockchain
 net-im/mastoposter 0.2: Configurable reposter from Mastodon-compatible Fediverse servers
@@ -1532,7 +1528,7 @@ net-im/mautrix-signal 0.7.4 0.7.5: A Matrix-Signal puppeting bridge
 net-im/mautrix-slack 0.1.3 0.1.4: A Matrix-Slack puppeting bridge based on slack-go
 net-im/mautrix-telegram 0.15.2 0.15.3: A Matrix-Telegram Messenger puppeting bridge
 net-im/mautrix-whatsapp 0.12.3: A Matrix-WhatsApp puppeting bridge
-net-im/nheko 0.12.0-r2 9999: Native desktop client for Matrix using Qt
+net-im/nheko 0.12.0-r2 0.12.1 9999: Native desktop client for Matrix using Qt
 net-im/pop 8.0.21: Screen sharing with multiplayer control, with voice
 net-im/revolt-desktop 1.0.8-r2: Revolt Desktop App
 net-im/session-desktop-bin 1.15.1 1.15.2: Session Desktop - Onion routing based messenger
@@ -1930,6 +1926,7 @@ x11-misc/rofi-emoji 3.3.0 3.4.1 4.1.0: Emoji selector plugin for Rofi
 x11-misc/selx 1.2.0: Minimal X11 rectangle selection tool
 x11-misc/slstatus 1.0-r1: Status monitor for window managers that use WM_NAME/stdin to fill the status bar
 x11-misc/tbsm 0.5 0.6 0.7: A pure bash session or application launcher. Inspired by cdm, tdm and krunner
+x11-misc/vimouse 0.11: Move mouse pointer with keyboard
 x11-misc/wallust 3.1.0 3.3.0: Generate a 16 color scheme based on an image.
 x11-misc/xbanish 1.8 1.8_p20230519: Banish the mouse cursor when typing, show it again when the mouse moves
 x11-misc/xob 0.2 0.3: A lightweight overlay volume (or anything) bar for the X Window System

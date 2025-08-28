@@ -1,4 +1,4 @@
-BDEPEND=dev-perl/Module-Build dev-perl/Unicode-UTF8 dev-perl/Test-NoWarnings >=dev-lang/perl-5.38.2-r3[perl_features_debug=,perl_features_ithreads=,perl_features_quadmath=] test? ( >=virtual/perl-Test-Simple-1 )
+BDEPEND=dev-perl/Module-Build virtual/perl-ExtUtils-MakeMaker test? ( dev-perl/Unicode-UTF8 virtual/perl-Exporter dev-perl/Test-NoWarnings ) >=dev-lang/perl-5.38.2-r3[perl_features_debug=,perl_features_ithreads=,perl_features_quadmath=] test? ( >=virtual/perl-Test-Simple-1 )
 DEFINED_PHASES=compile configure install prepare test
 DEPEND=>=dev-lang/perl-5.38.2-r3[perl_features_debug=,perl_features_ithreads=,perl_features_quadmath=]
 DESCRIPTION=Easy, versatile, portable file handling
@@ -8,9 +8,9 @@ INHERIT=perl-module
 IUSE=perl_features_debug perl_features_ithreads perl_features_quadmath test examples
 KEYWORDS=~amd64
 LICENSE=|| ( Artistic GPL-1+ )
-RDEPEND=virtual/perl-Exporter >=dev-lang/perl-5.38.2-r3[perl_features_debug=,perl_features_ithreads=,perl_features_quadmath=] dev-lang/perl:=
+RDEPEND=dev-perl/Unicode-UTF8 virtual/perl-Exporter >=dev-lang/perl-5.38.2-r3[perl_features_debug=,perl_features_ithreads=,perl_features_quadmath=] dev-lang/perl:=
 RESTRICT=!test? ( test )
 SLOT=0
-SRC_URI=mirror://cpan/authors/id/T/TO/TOMMY/File-Util-4.131591.tar.gz
+SRC_URI=mirror://cpan/authors/id/T/TO/TOMMY/File-Util-4.201720.tar.gz
 _eclasses_=multiprocessing	1e32df7deee68372153dca65f4a7c21f	perl-functions	1863acf0982afafc67797e3ce7275b4c	readme.gentoo-r1	b045f3acf546393ab6b3170781875358	toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	perl-module	41920449ca174fe9b9b303dfcbdb37a3
-_md5_=3e8406f50b7486341015b71a820f2ee6
+_md5_=219cde035992d240a5596c66160dff41
