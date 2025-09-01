@@ -222,7 +222,7 @@ app-misc/badvideo 5.2 9999: Ruin your videos in SECONDS!
 app-misc/blahaj 2.2.0-r1: Gay sharks at your local terminal
 app-misc/brightnessctl 0.5.1: A program to read and control device brightness
 app-misc/catt 0.12.13 0.13.0: Send videos from many, many online sources to your Chromecast
-app-misc/cepl 9.0.2: A readline C and C++ REPL with history, tab-completion, and undo.
+app-misc/cepl 12.0.0: A readline C and C++ REPL with history, tab-completion, and undo.
 app-misc/chayang 0.1.0: Gradually dim the screen.
 app-misc/cheat 4.2.3 4.3.3-r1: cheat allows you to create and view interactive cheatsheets on the command-line
 app-misc/clifm 1.11 1.13 1.16 1.18 9999: The command line file manager
@@ -359,7 +359,7 @@ app-text/code-minimap 0.6.8: A high performance code minimap generator
 app-text/dooit 3.1.0: A TUI todo manager
 app-text/epubgrep 0.6.2: Search tool for EPUB e-books
 app-text/ford 6.2.5 7.0.8-r1 7.0.9-r1 7.0.10 7.0.11: FORD, automatic documentation generator for modern Fortran programs
-app-text/harper 0.54.0: The language checker for developers.
+app-text/harper 0.59.0: The language checker for developers.
 app-text/jrnl 4.1 4.2: Collect your thoughts and notes without leaving the command line
 app-text/klogg 22.06.0.1289-r1: A GUI application to browse and search through long and complex log files
 app-text/komikku 1.86.0: Manga reader for GNOME
@@ -519,6 +519,7 @@ dev-erlang/cowboy 2.9.0: Small, fast, modern HTTP server for Erlang/OTP.
 dev-erlang/cowlib 2.11.0: Support library for manipulating Web protocols.
 dev-erlang/ranch 1.7.1 1.8.0 2.0.0: Socket acceptor pool for TCP protocols.
 dev-erlang/yval 1.0.10: YAML validator
+dev-games/godot-dotnet 4.4.1-r1: Multi-platform 2D and 3D game engine with a feature-rich editor
 dev-games/surgescript 0.5.5 9999: scripting language made for opensurge
 dev-games/unityhub 3.9.1 3.10.0 3.11.0 3.11.1: Official Unity tool for managing Unity Engines and projects
 dev-go/get-ego-vendor 0.2.0: Utility to generate EGO_SUM data for ebuilds
@@ -695,6 +696,7 @@ dev-python/base58 2.1.1-r1: Base58 and Base58Check implementation
 dev-python/baseline 1.2.1: Easy string baseline
 dev-python/bidict 0.23.1: The bidirectional mapping library for Python
 dev-python/billiard 4.0.2: Python multiprocessing fork
+dev-python/bleak 1.1.0: Bluetooth Low Energy platform Agnostic Klient (BLEAK) for Python
 dev-python/blurhash 1.1.4: Pure-Python implementation of the blurhash algorithm
 dev-python/cassowary 0.6: Run Windows Applications on Linux as if they are native (Using a VM and FreeRDP)
 dev-python/celery 5.4.0: Asynchronous task queue/job queue based on distributed message passing
@@ -1076,7 +1078,7 @@ games-engines/instead 3.4.1 3.5.2 9999: INSTEAD text-based quest game engine
 games-engines/nxengine-evo 2.6.5_p1-r1: rewrite of the jump-and-run platformer Doukutsu Monogatari(Cave Story)
 games-engines/ponscripter-fork 3.0.2: Fork of the Ponscripter visual novel engine to take advantage of SDL2
 games-engines/system3-sdl2 1.6.1: SDL2 port of AliceSoft's System3 for Win32 by Takeda Toshiya.
-games-engines/xsystem35-sdl2 2.15.1 2.16.0: Port of xsystem35, a free implementation of AliceSoft's System 3.x game engine.
+games-engines/xsystem35-sdl2 2.15.1 2.16.0 2.16.1: Port of xsystem35, a free implementation of AliceSoft's System 3.x game engine.
 games-engines/xsystem4 9999: Cross-platform implementation of AliceSoft's System 4 game engine
 games-fps/assaultcube 1.3.0.2-r1: Free multiplayer FPS based on the Cube engine
 games-fps/crispy-doom 5.12.0 6.0: A limit-removing enhanced-resolution Doom source port based on Chocolate Doom
@@ -1215,7 +1217,6 @@ gui-apps/nwg-shell-config 0.5.59-r1 0.5.62-r1: nwg-shell configuration utility
 gui-apps/openrefine 3.9.3: Wikidata batch editor, Wikimedia Commons mass upload tool
 gui-apps/organicmaps 9999: Offline maps and navigation using OpenStreetMap data
 gui-apps/packettracer 8.2.2-r1: Cisco's packet tracer
-gui-apps/paperde 0.1.1_p20210426: Simple, sleek QT based DE for wayland using wayfire
 gui-apps/pop-launcher 1.2.1: Modular IPC-based desktop launcher service
 gui-apps/quickshell 0.2.0 9999: Toolkit for building desktop widgets using QtQuick
 gui-apps/rofi-wayland 1.7.5_p3 1.7.8_p1: A window switcher, run dialog and dmenu replacement
@@ -1429,16 +1430,16 @@ media-sound/spotify-player 0.19.1 0.20.4 0.20.5 9999: spotify_player is a fast, 
 media-sound/spotifyd 0.3.5_p20240513 0.4.1: A Spotify daemon
 media-sound/spotube-bin 3.8.0: An open source, cross-platform Spotify client
 media-sound/supersonic 0.17.0 0.18.0: A lightweight and full-featured cross-platform desktop client
-media-sound/tenacity 1.3.4 1.3.4-r1: Easy-to-use, privacy-friendly, FLOSS, cross-platform multi-track audio editor
+media-sound/tenacity 1.3.4 1.3.4-r1 1.3.4-r3: Easy-to-use, privacy-friendly, FLOSS, cross-platform multi-track audio editor
 media-sound/tidal-hifi-bin 5.16.0-r1 5.17.0: Web version of Tidal running in electron with Hi-Fi support thanks to Widevine.
 media-sound/yewtube 2.12.0 9999: Terminal-based YouTube player and downloader
-media-sound/youtube-music-bin 3.6.2-r1 3.8.0: YouTube Music Desktop App bundled with custom plugins
+media-sound/youtube-music-bin 3.8.0 3.10.0: YouTube Music Desktop App bundled with custom plugins
 media-sound/zita-ajbridge 0.8.4-r2: zita-a2j and zita-j2a - bridges between ALSA and JACK
 media-video/avisynth+ 9999: A powerful nonlinear scripting language for video
 media-video/ciano 0.2.4-r2: A multimedia file converter focused on simplicity
 media-video/clapper 0.6.1 0.8.0: Modern and user-friendly media player
 media-video/delfin 0.4.7 0.4.8: Stream movies and TV shows from Jellyfin
-media-video/gpu-screen-recorder 5.5.3 9999: A screen recorder that has minimal impact on system performance
+media-video/gpu-screen-recorder 5.5.3 5.6.6 9999: A screen recorder that has minimal impact on system performance
 media-video/gpu-screen-recorder-gtk 5.7.8 9999: GTK frontend for gpu-screen-recorder.
 media-video/kikoplay 0.9.3 9999: KikoPlay is a full-featured danmu player
 media-video/kooha 2.2.3-r2: GTK4 screen recorder for Wayland
@@ -1502,7 +1503,7 @@ net-im/Quaternion 0.0.97.1: A Qt-based IM client for Matrix
 net-im/WasIstLos 1.6.5 1.7.0: An unofficial WhatsApp desktop application for Linux
 net-im/abaddon 0.2.1 9999: Alternative Discord client using GTK instead of Electron
 net-im/axolotl-bin 2.0.1: Axolotl is a cross-platform Signal client
-net-im/beeper 4.1.41 4.1.111: Beeper: Unified Messenger
+net-im/beeper 4.1.111 4.1.145: Beeper: Unified Messenger
 net-im/chatterino 2.5.3: Chat client for https://twitch.tv
 net-im/conduit 0.10.6 0.10.7 0.10.8 9999: Matrix homeserver written in Rust
 net-im/discord-canary-bin 0.0.744: All-in-one voice and text chat
@@ -1535,7 +1536,7 @@ net-im/session-desktop-bin 1.15.1 1.15.2: Session Desktop - Onion routing based 
 net-im/sliding-sync 0.99.15 0.99.19: Proxy implementation of MSC3575's sync protocol.
 net-im/teams-for-linux 2.0.3 2.0.4 2.0.8: Unofficial Microsoft Teams client for Linux. Binary precompiled version.
 net-im/vesktop-bin 1.5.6 1.5.7 1.5.8: All-in-one voice and text chat for gamers with Vencord Preinstalled
-net-im/zulip-desktop-bin 5.11.1 5.12.0: Organized chat for distributed teams.
+net-im/zulip-desktop-bin 5.11.1 5.12.0 5.12.1: Organized chat for distributed teams.
 net-irc/catgirl 2.2 2.2a: TLS-only terminal IRC client
 net-irc/halloy 2025.6 2025.7 2025.8: IRC application written in Rust
 net-irc/limnoria-plugins-bugzilla 4.0: Bugzilla integration plugin for the Limnoria IRC Bot
@@ -1634,7 +1635,7 @@ net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
 net-p2p/yggdrasil-go 0.5.12 9999: An experiment in scalable routing as an encrypted IPv6 overlay network
 net-print/hpuld 1.00.39.15.00.23-r1: HP Unified Linux Driver (for samsung hardware)
 net-proxy/MTProxy 3.0.4-r1: Community fork of MTProxy
-net-proxy/Throne 1.0.2: Qt based cross-platform GUI proxy configuration manager
+net-proxy/Throne 1.0.5: Qt based cross-platform GUI proxy configuration manager
 net-proxy/byedpi 0.16.6 0.17 0.17.1 0.17.2 9999: Bypass DPI SOCKS proxy
 net-proxy/ngrok-bin 3.20.0: ngrok is a reverse proxy, firewall, and API gateway
 net-proxy/shadowsocks-rust 1.22.0: A Rust port of shadowsocks
@@ -1734,7 +1735,7 @@ sci-mathematics/pyromaths 21.8.2-r1: Create maths exercises in LaTeX and PDF for
 sci-mathematics/rink 0.8.0-r1 9999: Unit conversion tool, similar to frink
 sci-mathematics/rstudio-desktop-bin 2023.09.1_p494 2024.12.0_p467 2024.12.0_p467-r1: IDE for R and Python
 sci-misc/boinc-wrapper 26018-r2 26018-r3: Wrapper to use non-BOINC apps with BOINC
-sci-misc/llama-cpp 0_pre4576 0_pre5097 0_pre5332 0_pre5633-r1 0_pre6092 0_pre6140 9999: Port of Facebook's LLaMA model in C/C++
+sci-misc/llama-cpp 0_pre4576 0_pre5097 0_pre5332 0_pre5633-r1 0_pre6140 0_pre6318 9999: Port of Facebook's LLaMA model in C/C++
 sci-ml/aichat 0.30.0: All-in-one LLM CLI Tool
 sci-ml/ollama 0.9.6 0.10.0 0.10.1 0.11.4 9999: Get up and running with Llama 3, Mistral, Gemma, and other language models.
 sci-physics/openmodelica 1.24.0-r1: Open-source Modelica-based modeling and simulation environment
@@ -1796,11 +1797,11 @@ sys-auth/hyprpolkitagent 0.1.1-r2 0.1.2: Polkit authentication agent for Hyprlan
 sys-auth/pam-gnupg 0.4-r1: Unlock GnuPG keys on login
 sys-block/clonezilla 5.8.9: Clonezilla is a partition and disk imaging/cloning program
 sys-block/partclone 0.3.33 0.3.36 0.3.37: Partition cloning tool
-sys-block/ublksrv 1.4: Userspace block device driver
+sys-block/ublksrv 1.6: Userspace block device driver
 sys-boot/customrescuecd-x86_64-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/drbl 5.4.2: Diskless Remote Boot in Linux
 sys-boot/grml-rescueboot 0.6.1: grub2 script to add ISO images to the grub2 boot menu
-sys-boot/limine 9.3.0 9.3.2 9.3.4 9.4.0 9.5.0 9.6.0 9.6.1: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
+sys-boot/limine 9.3.0 9.3.2 9.3.4 9.4.0 9.5.0 9.6.0 9.6.1 9.6.5: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
 sys-boot/mkusb 23.2.0: CLI and GUI for creating bootable live USB, with optional persistent storage
 sys-boot/ventoy-bin 1.0.97 1.0.98: Creator of bootable USBs, with ability to copy ISOs, persistence storage
 sys-boot/zfsbootmenu 1.12.0 2.2.2 2.3.0 3.0.1: ZFS bootloader for root-on-ZFS systems
@@ -1885,7 +1886,7 @@ www-client/mullvad-browser-bin 14.5.5: The Mullvad Browser is developed to minim
 www-client/nyxt 3.11.8 3.12.0 9999: Nyxt - the hacker's power-browser
 www-client/vimb 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
 www-client/yandex-browser 25.6.1.1039_p1: The web browser from Yandex
-www-client/zen-bin 1.14.8b 1.14.9b 1.14.10b 1.14.11b: Zen Browser - A fast, privacy-focused Firefox fork
+www-client/zen-bin 1.14.8b 1.14.9b 1.14.10b 1.14.11b 1.15b: Zen Browser - A fast, privacy-focused Firefox fork
 www-misc/dufs 0.40.0: Dufs is a distinctive utility file server
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits
 www-misc/kiwix-desktop 2.4.0: cross-platform viewer/manager for ZIM archives
