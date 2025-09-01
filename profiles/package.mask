@@ -18,6 +18,16 @@
 
 # New entries go on top.
 
+# David (stkw0) Roman <davidroman96@gmail.com> (2025-08-29)
+# EAPI 7. Depends on masked media-sound/pulseaudio. Archived upstream
+# Removal on 2025-09-29
+media-sound/pulseaudio-virtualmic
+
+# David (stkw0) Roman <davidroman96@gmail.com> (2025-08-29)
+# The dependency robin-hood-hashing::gentoo was masked for removal.
+# Removal on 2025-09-29
+app-text/klogg
+
 # Florian Albrechtskirchinger <falbrechtskirchinger@gmail.com> (2025-08-18)
 # Unwanted and unmaintained. Live ebuild only.
 # Removal on 2025-09-18
@@ -48,12 +58,6 @@ games-util/samrewritten
 # Fails to compile, tests seems to fail and it has not been maintained since 2022.
 # Removal on 2025-09-14, bug #886631
 sys-kernel/usermode-kernel
-
-# Lucio Sauer <watermanpaint@posteo.net> (2025-07-29)
-# Packaged version depends on treecleaned dev-libs/libdbusmenu-qt. Gentoo
-# maintainer inactive and several versions out of date.
-# Removal on 2025-08-29, Bug #960098
-gui-apps/paperde
 
 # Anna (cybertailor) Vyalkova <cyber+gentoo@sysrq.in> (2025-07-27)
 # Vulnerable to a cross-site scripting attack.
