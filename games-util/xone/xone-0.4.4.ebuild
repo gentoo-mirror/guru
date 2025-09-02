@@ -5,20 +5,18 @@ EAPI=8
 
 inherit linux-mod-r1
 
-COMMIT="197b160f7806d7d27117b12198cacb7656a07f1f"
 XONE_DRIVER_VERSION="201707-1cd6a87c-623f-4407-a52d-c31be49e925c_e19f60808bdcbfbd3c3df6be3e71ffc52e43261e"
 XONE_DRIVER_VERSION_045E_02E6="201512-20810869_8ce2975a7fbaa06bcfb0d8762a6275a1cf7c1dd3"
 
 DESCRIPTION="Linux kernel driver for Xbox One and Xbox Series X|S accessories"
 HOMEPAGE="https://github.com/dlundqvist/xone"
 SRC_URI="
-	mirror+https://github.com/dlundqvist/xone/archive/${COMMIT}.tar.gz -> ${P}.tar.gz
+	mirror+https://github.com/dlundqvist/xone/archive/v${PV}.tar.gz -> ${P}.tar.gz
 	https://catalog.s.download.windowsupdate.com/c/msdownload/update/driver/drvs/${XONE_DRIVER_VERSION:0:4}/${XONE_DRIVER_VERSION:4:2}/${XONE_DRIVER_VERSION:7}.cab
 		-> ${PN}-driver-${XONE_DRIVER_VERSION}.cab
 	https://catalog.s.download.windowsupdate.com/d/msdownload/update/driver/drvs/${XONE_DRIVER_VERSION_045E_02E6:0:4}/${XONE_DRIVER_VERSION_045E_02E6:4:2}/${XONE_DRIVER_VERSION_045E_02E6:7}.cab
 		-> ${PN}-driver-${XONE_DRIVER_VERSION_045E_02E6}.cab
 "
-S="${WORKDIR}/${PN}-${COMMIT}"
 
 LICENSE="GPL-2+ MS-TOU"
 SLOT="0"
@@ -47,15 +45,15 @@ src_prepare() {
 
 src_compile() {
 	local modlist=(
-		xone-wired=kernel/drivers/input/joystick
-		xone-dongle=kernel/drivers/input/joystick
-		xone-gip=kernel/drivers/input/joystick
-		xone-gip-gamepad=kernel/drivers/input/joystick
-		xone-gip-headset=kernel/drivers/input/joystick
-		xone-gip-chatpad=kernel/drivers/input/joystick
-		xone-gip-madcatz-strat=kernel/drivers/input/joystick
-		xone-gip-madcatz-glam=kernel/drivers/input/joystick
-		xone-gip-pdp-jaguar=kernel/drivers/input/joystick
+		xone_wired=kernel/drivers/input/joystick
+		xone_dongle=kernel/drivers/input/joystick
+		xone_gip=kernel/drivers/input/joystick
+		xone_gip_gamepad=kernel/drivers/input/joystick
+		xone_gip_headset=kernel/drivers/input/joystick
+		xone_gip_chatpad=kernel/drivers/input/joystick
+		xone_gip_madcatz_strat=kernel/drivers/input/joystick
+		xone_gip_madcatz_glam=kernel/drivers/input/joystick
+		xone_gip_pdp_jaguar=kernel/drivers/input/joystick
 
 	)
 
