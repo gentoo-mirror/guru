@@ -222,7 +222,7 @@ app-misc/badvideo 5.2 9999: Ruin your videos in SECONDS!
 app-misc/blahaj 2.2.0-r1: Gay sharks at your local terminal
 app-misc/brightnessctl 0.5.1: A program to read and control device brightness
 app-misc/catt 0.12.13 0.13.0: Send videos from many, many online sources to your Chromecast
-app-misc/cepl 12.0.0: A readline C and C++ REPL with history, tab-completion, and undo.
+app-misc/cepl 20.0.0: A readline C and C++ REPL with history, tab-completion, and undo.
 app-misc/chayang 0.1.0: Gradually dim the screen.
 app-misc/cheat 4.2.3 4.3.3-r1: cheat allows you to create and view interactive cheatsheets on the command-line
 app-misc/clifm 1.11 1.13 1.16 1.18 9999: The command line file manager
@@ -365,7 +365,7 @@ app-text/klogg 22.06.0.1289-r1: A GUI application to browse and search through l
 app-text/komikku 1.86.0: Manga reader for GNOME
 app-text/koodo-reader-bin 1.5.1 1.6.3: A modern ebook manager and reader with sync and backup capacities
 app-text/lchat 1.0-r2: Line oriented front end for ii-like chat programs
-app-text/lizard 1.17.13 1.17.28 1.17.31: A simple code complexity analyser, supports most of the popular languages.
+app-text/lizard 1.17.31: A simple code complexity analyser, supports most of the popular languages.
 app-text/lorien-bin 0.6.0-r2: Infinite canvas drawing/whiteboarding. Made with Godot.
 app-text/lsp 0.5.0_rc4 9999: The least significant pager
 app-text/owo 0.1.0: OwO-ifies text via regex
@@ -437,6 +437,8 @@ dev-cpp/pcg-cpp 0.98.1_p20210406-r1: Family of better random number generators
 dev-cpp/qt-jdenticon 0.3.0-r1 0.3.0_p20240107 0.3.1: Qt5 / C++14 Port of Jdenticon
 dev-cpp/rang 3.2: Minimal, header-only, modern C++ library for terminal goodies
 dev-cpp/reflection-cpp 0.2.0 0.3.0 0.4.0: Boxing primitive types in C++
+dev-cpp/robotraconteur 1.2.6: Robot Raconteur C++ library with Python bindings
+dev-cpp/robotraconteur-companion 0.4.2: Robot Raconteur C++ Companion Library
 dev-cpp/safeint 3.0.28a: A class library for C++ that manages integer overflows
 dev-cpp/scnlib 4.0.1: scanf for modern C++
 dev-cpp/simdutf 5.7.2 6.2.0: simdutf: Unicode validation and transcoding at billions of characters per second
@@ -498,7 +500,7 @@ dev-elixir/hex 1.0.1-r1: Package manager for the Erlang VM
 dev-embedded/arduino-cli 1.0.4 1.1.1: Next-generation arduino command line tool
 dev-embedded/bcm2-utils 0.9.8: Utilities for Broadcom-based cable modems
 dev-embedded/esp-coredump 1.13.1: Utility that helps users to retrieve and analyse core dumps
-dev-embedded/esp-idf 5.3.3-r1 5.3.4 5.4.2-r1 5.5: Espressif IoT Development Framework
+dev-embedded/esp-idf 5.3.4 5.4.2-r1 5.5 5.5.1: Espressif IoT Development Framework
 dev-embedded/esp-idf-kconfig 2.5.0 2.5.0-r1: Kconfig tooling for esp-idf
 dev-embedded/esp-idf-monitor 1.6.2 1.7.0: Python object-oriented database
 dev-embedded/esp-idf-nvs-partition-gen 0.1.9: Parses ESP-IDF panic handler output acts as a GDB server over stdin/stdout
@@ -808,7 +810,7 @@ dev-python/persist-queue 0.8.1 1.0.0: A thread-safe disk based persistent queue 
 dev-python/phx-class-registry 4.1.0-r1: An intersection of the Registry and Factory pattern
 dev-python/pillow-heif 1.0.0 1.1.0: Python interface for libheif library
 dev-python/pillow-jxl-plugin 1.3.2: Pillow plugin for JPEG-XL, using Rust for bindings.
-dev-python/plexapi 4.16.1 4.17.0: Python bindings for the Plex API.
+dev-python/plexapi 4.16.1 4.17.0 4.17.1: Python bindings for the Plex API.
 dev-python/plotext 5.3.0 5.3.2: Plotting on terminal
 dev-python/plum 0.8.7: Pack/Unpack Memory
 dev-python/prometheus_exporter 1.0.0 1.1.0 9999: Python Prometheus exporter library
@@ -948,7 +950,7 @@ dev-ruby/rbspy 0.17.0-r1 0.21.0: Sampling CPU profiler for Ruby
 dev-ruby/rspec-wait 0.0.9: enables time-resilient expectations in your RSpec test suite
 dev-ruby/ruby-build 9999: Installs virtually any version of Ruby, from source
 dev-ruby/ruby-install 0.9.3: Installs Ruby, JRuby, Rubinius, TruffleRuby, or MRuby.
-dev-ruby/ruby-lsp 0.23.11-r1 0.23.23-r1 0.26.0 0.26.1: An opinionated language server for Ruby
+dev-ruby/ruby-lsp 0.26.0 0.26.1: An opinionated language server for Ruby
 dev-ruby/sorbet-runtime 0.5.11882 0.5.12134 0.5.12356 0.5.12414: Sorbet's runtime static type checker component
 dev-scheme/sagittarius 0.9.12: R6RS/R7RS Scheme system.
 dev-tex/ninecolors 2022.02.13: Select colors with proper WCAG color contrast
@@ -1135,7 +1137,7 @@ games-util/sdl2-gamepad-mapper 0.0.8-r1: GUI application to generate an SDL2 map
 games-util/steamtinkerlaunch 12.12 9999: Wrapper script for Steam custom launch options
 games-util/umu-launcher 1.2.9: Unified launcher for Windows games on Linux
 games-util/xivlauncher 1.2.1: Custom Launcher for Final Fantasy XIV Online (Crossplatform rewrite)
-games-util/xone 0.3.1 0.3.3 0.4.2 0.4.3: Linux kernel driver for Xbox One and Xbox Series X|S accessories
+games-util/xone 0.3.3 0.4.2 0.4.3 0.4.4: Linux kernel driver for Xbox One and Xbox Series X|S accessories
 gnome-extra/commit 4.1-r1 4.2 4.3: Commit message editor
 gnome-extra/extension-manager 0.6.1 0.6.3 9999: A native tool for browsing, installing, and managing GNOME Shell Extensions
 gnome-extra/iio-sensor-proxy 3.7: IIO sensors to D-Bus proxy
@@ -1886,7 +1888,7 @@ www-client/mullvad-browser-bin 14.5.5: The Mullvad Browser is developed to minim
 www-client/nyxt 3.11.8 3.12.0 9999: Nyxt - the hacker's power-browser
 www-client/vimb 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
 www-client/yandex-browser 25.6.1.1039_p1: The web browser from Yandex
-www-client/zen-bin 1.14.8b 1.14.9b 1.14.10b 1.14.11b 1.15b: Zen Browser - A fast, privacy-focused Firefox fork
+www-client/zen-bin 1.14.11b 1.15b 1.15.2b: Zen Browser - A fast, privacy-focused Firefox fork
 www-misc/dufs 0.40.0: Dufs is a distinctive utility file server
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits
 www-misc/kiwix-desktop 2.4.0: cross-platform viewer/manager for ZIM archives
