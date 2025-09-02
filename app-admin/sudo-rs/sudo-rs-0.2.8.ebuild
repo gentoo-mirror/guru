@@ -45,12 +45,22 @@ RDEPEND="
 
 DOCS=( README.md CHANGELOG.md )
 
+src_test() {
+	local skip=(
+		# Tests failing due to sandbox violations
+		--skip test_traverse_secure_open_positive
+		--skip permission_test
+	)
+
+	cargo_src_test -- "${skip[@]}"
+}
+
 src_install() {
-	dobin "$(cargo_target_dir)/sudo" || die
-	dobin "$(cargo_target_dir)/visudo" || die
+	dobin "$(cargo_target_dir)/sudo"
+	dobin "$(cargo_target_dir)/visudo"
 
 	if use su ; then
-		dobin "$(cargo_target_dir)/su" || die
+		dobin "$(cargo_target_dir)/su"
 	fi
 
 	fowners 0:0 /usr/bin/sudo
