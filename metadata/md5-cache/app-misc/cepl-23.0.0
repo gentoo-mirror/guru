@@ -4,10 +4,11 @@ DESCRIPTION=A readline C and C++ REPL with history, tab-completion, and undo.
 EAPI=8
 HOMEPAGE=https://github.com/alyptik/cepl
 INHERIT=toolchain-funcs
+IUSE=debug
 KEYWORDS=~amd64
 LICENSE=MIT
 RDEPEND=sys-libs/readline:= virtual/libelf:=
 SLOT=0
-SRC_URI=https://github.com/alyptik/cepl/releases/download/v20.0.0/cepl-20.0.0.tar.gz
+SRC_URI=https://github.com/alyptik/cepl/releases/download/v23.0.0/cepl-23.0.0.tar.gz
 _eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0
-_md5_=68169d1b856cf503c76941da42a9dc25
+_md5_=b9376e1d878eddae5e0de3da414f7d86

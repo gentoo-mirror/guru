@@ -106,10 +106,9 @@ app-admin/pass-audit 1.2-r1: A pass extension for auditing your password reposit
 app-admin/pass-update 2.2.1: pass extension that provides an easy flow for updating passwords
 app-admin/passage 1.7.4.2: A fork of password-store using age as encryption backend
 app-admin/pulumi-bin 3.185.0-r1 3.186.0 3.191.0: Infrastructure as code in any programming language
-app-admin/rbw 1.13.2 1.14.0 9999: Unofficial Bitwarden CLI
+app-admin/rbw 1.14.0 1.14.1 9999: Unofficial Bitwarden CLI
 app-admin/ripasso 0.7.0: A password manager that uses the file format of 'pass'
 app-admin/s-tui 1.1.6 1.2.0: Stress-Terminal UI monitoring tool
-app-admin/sudo-rs 0.2.7 0.2.8: A memory safe implementation of sudo and su.
 app-admin/synadm 0.43.1 0.44: Command line admin tool for Synapse
 app-admin/talosctl-bin 1.7.6 1.9.5 1.10.1: Pre-compiled talosctl is an tool for interacting with the Talos API
 app-admin/terragrunt-bin 0.38.6 0.45.4 0.50.8: A thin wrapper for Terraform
@@ -222,7 +221,7 @@ app-misc/badvideo 5.2 9999: Ruin your videos in SECONDS!
 app-misc/blahaj 2.2.0-r1: Gay sharks at your local terminal
 app-misc/brightnessctl 0.5.1: A program to read and control device brightness
 app-misc/catt 0.12.13 0.13.0: Send videos from many, many online sources to your Chromecast
-app-misc/cepl 20.0.0: A readline C and C++ REPL with history, tab-completion, and undo.
+app-misc/cepl 23.0.0 9999: A readline C and C++ REPL with history, tab-completion, and undo.
 app-misc/chayang 0.1.0: Gradually dim the screen.
 app-misc/cheat 4.2.3 4.3.3-r1: cheat allows you to create and view interactive cheatsheets on the command-line
 app-misc/clifm 1.11 1.13 1.16 1.18 9999: The command line file manager
@@ -1107,7 +1106,7 @@ games-rpg/open-adventure 1.17 1.18 1.20: Forward-port of the Crowther/Woods Adve
 games-rpg/primordia 3.6.70667: A cyberpunk point-and-click adventure game
 games-rpg/snoot-game 1.12.0: Visual novel parody of Goodbye Volcano High
 games-server/among-sus 20210519: Among Us, but it's a text adventure
-games-strategy/7k-ambition 3.2.3 9999: Seven Kingdoms: Ambition
+games-strategy/7k-ambition 3.2.4 9999: Seven Kingdoms: Ambition
 games-strategy/gigalomania 1.0.1: Libre clone of Mega-Lo-Mania (original from ~1990), supports original resources
 games-strategy/slay-the-spire 2.2: Deck-building roguelike game with four playable characters
 games-strategy/unciv-bin 4.15.2 4.15.6_p1: Turn-based historical strategy game, a remake of Civ V
@@ -1279,7 +1278,7 @@ gui-wm/hyprland-contrib 0.1-r1 9999: Community-maintained extensions for hyprlan
 gui-wm/labwc 0.8.4-r1 0.9.0 0.9.1 9999: Openbox alternative for wayland
 gui-wm/mangowc 0.8.1 0.8.2 9999: wayland compositor based on wlroots and scenefx(dwl but no suckless)
 gui-wm/miracle-wm 0.6.1 0.6.2: Tiling Wayland compositor based on Mir
-gui-wm/niri 25.05.1-r1: Scrollable-tiling Wayland compositor
+gui-wm/niri 25.05.1-r1 25.08: Scrollable-tiling Wayland compositor
 gui-wm/phoc 0.47.0 0.48.0 0.49.0: Wayland compositor for mobile phones
 gui-wm/river 0.3.7 0.3.9 0.3.11: A dynamic tiling Wayland compositor
 gui-wm/swayfx 0.5 0.5.3: SwayFX: Sway, but with eye candy!
@@ -1432,7 +1431,7 @@ media-sound/spotify-player 0.19.1 0.20.4 0.20.5 9999: spotify_player is a fast, 
 media-sound/spotifyd 0.3.5_p20240513 0.4.1: A Spotify daemon
 media-sound/spotube-bin 3.8.0: An open source, cross-platform Spotify client
 media-sound/supersonic 0.17.0 0.18.0: A lightweight and full-featured cross-platform desktop client
-media-sound/tenacity 1.3.4 1.3.4-r1 1.3.4-r3: Easy-to-use, privacy-friendly, FLOSS, cross-platform multi-track audio editor
+media-sound/tenacity 1.3.4-r4: Easy-to-use, privacy-friendly, FLOSS, cross-platform multi-track audio editor
 media-sound/tidal-hifi-bin 5.16.0-r1 5.17.0: Web version of Tidal running in electron with Hi-Fi support thanks to Widevine.
 media-sound/yewtube 2.12.0 9999: Terminal-based YouTube player and downloader
 media-sound/youtube-music-bin 3.8.0 3.10.0: YouTube Music Desktop App bundled with custom plugins
@@ -1449,6 +1448,7 @@ media-video/lossless-cut 3.59.1-r1 3.64.0: Lossless video/audio editing: export 
 media-video/manimgl 1.7.2 9999: Animation engine for explanatory math videos
 media-video/mediaelch 2.10.6 2.12.0 9999: Video metadata scraper
 media-video/megapixels 1.4.3-r1: GTK4 camera application that knows how to deal with the media request api
+media-video/motioneye 0.43.1_beta4: A web frontend for the motion daemon, Python 3
 media-video/mpc-qt 24.12.1 25.07: Media Player Classic Qute Theater
 media-video/obs-cmd 0.18.5 0.19.2: A minimal obs CLI for obs-websocket v5
 media-video/obs-multi-rtmp 0.6.0.1 9999: OBS Simulcast support plugin
@@ -1511,6 +1511,7 @@ net-im/conduit 0.10.6 0.10.7 0.10.8 9999: Matrix homeserver written in Rust
 net-im/discord-canary-bin 0.0.744: All-in-one voice and text chat
 net-im/discord-ptb-bin 0.0.137: All-in-one voice and text chat
 net-im/discordo 9999: A lightweight, secure, and feature-rich Discord TUI client.
+net-im/dissent 0.0.35: Tiny native Discord client for Linux
 net-im/eturnal 1.12.1 1.12.2: STUN/TURN server
 net-im/flare 0.12.0-r1: Chat with your friends on Signal
 net-im/gajim-plugins 9999: Plugins developed for Gajim XMPP client
@@ -1519,7 +1520,7 @@ net-im/gomuks 0.3.0 0.3.1: A terminal based Matrix client written in Go
 net-im/gurk-rs 0.7.1 9999: Signal messenger client for terminal
 net-im/heisenbridge 1.15.0 1.15.2 1.15.3: Bouncer-style Matrix IRC bridge
 net-im/iamb 0.0.8 0.0.9 0.0.10: A Matrix chat client that uses Vim keybindings
-net-im/jitsi-meet 2025.4.0 2025.8.1: Desktop application for Jitsi Meet built with Electron
+net-im/jitsi-meet 2025.8.1 2025.9.1: Desktop application for Jitsi Meet built with Electron
 net-im/legcord-bin 1.1.4 1.1.5: Legcord is a custom client designed to enhance your Discord experience.
 net-im/manyverse-bin 0.2310.9: A social network off the grid with append-only protocol (no edits) on blockchain
 net-im/mastoposter 0.2: Configurable reposter from Mastodon-compatible Fediverse servers
@@ -1766,7 +1767,7 @@ sys-apps/coolercontrol 2.2.1 2.2.2: Monitor and control your cooling and other d
 sys-apps/coolercontrol-liqctld 2.2.1 2.2.2: Monitor and control your cooling and other devices (liqctld)
 sys-apps/coolercontrold 2.2.1 2.2.2: Monitor and control your cooling and other devices (daemon)
 sys-apps/corefreq 2.0.8: CPU monitoring and tuning software designed for 64-bit processors
-sys-apps/dnf5 5.2.15.0 5.2.16.0: Command-line package manager
+sys-apps/dnf5 5.2.16.0 5.2.17.0: Command-line package manager
 sys-apps/dool 1.3.1-r1 1.3.2-r2 9999: Versatile replacement for vmstat, iostat and ifstat (clone of dstat)
 sys-apps/drm_info 2.7.0 2.8.0: Small utility to dump info about DRM devices
 sys-apps/dysk 2.10.1: give information on mounted filesystems
@@ -1888,7 +1889,7 @@ www-client/mullvad-browser-bin 14.5.5: The Mullvad Browser is developed to minim
 www-client/nyxt 3.11.8 3.12.0 9999: Nyxt - the hacker's power-browser
 www-client/vimb 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
 www-client/yandex-browser 25.6.1.1039_p1: The web browser from Yandex
-www-client/zen-bin 1.14.11b 1.15b 1.15.2b: Zen Browser - A fast, privacy-focused Firefox fork
+www-client/zen-bin 1.14.11b 1.15b 1.15.2b 1.15.3b: Zen Browser - A fast, privacy-focused Firefox fork
 www-misc/dufs 0.40.0: Dufs is a distinctive utility file server
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits
 www-misc/kiwix-desktop 2.4.0: cross-platform viewer/manager for ZIM archives
