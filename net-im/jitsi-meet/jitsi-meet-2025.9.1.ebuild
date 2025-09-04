@@ -34,6 +34,7 @@ QA_PREBUILT="*"
 
 src_install() {
 	rm "opt/Jitsi Meet/chrome-sandbox" || die
+	rm "opt/Jitsi Meet/resources/app.asar.unpacked/node_modules/@jitsi/robotjs/prebuilds/linux-arm64/@jitsi+robotjs.node" || die
 
 	insinto /opt
 	doins -r "opt/Jitsi Meet"
