@@ -1,5 +1,5 @@
-DEFINED_PHASES=configure postinst
-DEPEND=dev-libs/glib >=gui-libs/gtk-4.18:4 gui-libs/libadwaita gui-libs/gtk4-layer-shell !gui-apps/hiprompt-gtk-py >=dev-lang/hare-0.25.2:= dev-hare/hare-gi dev-hare/hare-adwaita dev-hare/hare-gtk4-layer-shell
+DEFINED_PHASES=configure
+DEPEND=dev-libs/glib >=gui-libs/gtk-4.18:4 gui-libs/libadwaita gui-libs/gtk4-layer-shell >=dev-lang/hare-0.25.2:= app-admin/himitsu dev-hare/hare-gi dev-hare/hare-adwaita dev-hare/hare-gtk4-layer-shell
 DESCRIPTION=GTK4 prompter for Himitsu
 EAPI=8
 HOMEPAGE=https://git.sr.ht/~sircmpwn/hiprompt-gtk
@@ -8,4 +8,4 @@ LICENSE=GPL-3
 RDEPEND=dev-libs/glib >=gui-libs/gtk-4.18:4 gui-libs/libadwaita gui-libs/gtk4-layer-shell !gui-apps/hiprompt-gtk-py
 SLOT=0
 SRC_URI=https://git.sr.ht/~sircmpwn/hiprompt-gtk/archive/0.9.tar.gz -> hiprompt-gtk-0.9.tar.gz
-_md5_=18ad7ac604cc1706789e34b1154aaba0
+_md5_=da3a1ef25d9d6d058e57c28756f4c3cd

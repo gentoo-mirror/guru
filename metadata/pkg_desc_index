@@ -93,8 +93,9 @@ app-admin/fatrace 0.19.0: report system wide file access events
 app-admin/gentoo_update 0.2.4: Gentoo Linux updater
 app-admin/grub-customizer 5.2.5: A graphical grub2 settings manager
 app-admin/hardinfo2 2.2.13: System Information and Benchmark for Linux Systems
-app-admin/himitsu 0.7 0.8 0.9 9999: Secret storage system for Unix, suitable for storing passwords, keys, ...
+app-admin/himitsu 0.7 0.8 0.9-r1 9999: Secret storage system for Unix, suitable for storing passwords, keys, ...
 app-admin/himitsu-keyring 0.2.0: graphical frontend for managing a Himitsu key store
+app-admin/himitsu-secret-service 0.1: himitsu secret-service integration
 app-admin/himitsu-ssh 0.4 0.9.1 9999: SSH integration for Himitsu
 app-admin/himitsu-totp 0.2 0.9 9999: TOTP support for Himitsu
 app-admin/hiprompt-gtk 0.9-r1: GTK4 prompter for Himitsu
@@ -221,7 +222,7 @@ app-misc/badvideo 5.2 9999: Ruin your videos in SECONDS!
 app-misc/blahaj 2.2.0-r1: Gay sharks at your local terminal
 app-misc/brightnessctl 0.5.1: A program to read and control device brightness
 app-misc/catt 0.12.13 0.13.0: Send videos from many, many online sources to your Chromecast
-app-misc/cepl 23.0.0 9999: A readline C and C++ REPL with history, tab-completion, and undo.
+app-misc/cepl 26.0.0 9999: A readline C and C++ REPL with history, tab-completion, and undo.
 app-misc/chayang 0.1.0: Gradually dim the screen.
 app-misc/cheat 4.2.3 4.3.3-r1: cheat allows you to create and view interactive cheatsheets on the command-line
 app-misc/clifm 1.11 1.13 1.16 1.18 9999: The command line file manager
@@ -822,6 +823,7 @@ dev-python/proton-vpn-network-manager 0.12.14: Proton VPN Network Manager handle
 dev-python/proxy_tools 0.1.0_p1: Simple proxy (as in the GoF design pattern)
 dev-python/psycopg2cffi 2.9.0-r1: Implementation of the psycopg2 module using cffi. Compatible with Psycopg 2.5.
 dev-python/ptpython 3.0.29: Python REPL build on top of prompt-toolkit
+dev-python/py-himitsu 0.0.9: A python client library for himitsu
 dev-python/py-nanoid 9999: Python Nanoid
 dev-python/pyclip 0.7.0-r2 9999: Python clipboard module
 dev-python/pydantic-settings 2.10.0 2.10.1: Settings management using Pydantic
@@ -1105,7 +1107,7 @@ games-rpg/open-adventure 1.17 1.18 1.20: Forward-port of the Crowther/Woods Adve
 games-rpg/primordia 3.6.70667: A cyberpunk point-and-click adventure game
 games-rpg/snoot-game 1.12.0: Visual novel parody of Goodbye Volcano High
 games-server/among-sus 20210519: Among Us, but it's a text adventure
-games-strategy/7k-ambition 3.2.4 9999: Seven Kingdoms: Ambition
+games-strategy/7k-ambition 3.2.4 3.2.4-r1 9999: Seven Kingdoms: Ambition
 games-strategy/gigalomania 1.0.1: Libre clone of Mega-Lo-Mania (original from ~1990), supports original resources
 games-strategy/slay-the-spire 2.2: Deck-building roguelike game with four playable characters
 games-strategy/unciv-bin 4.15.2 4.15.6_p1: Turn-based historical strategy game, a remake of Civ V
@@ -1510,7 +1512,7 @@ net-im/conduit 0.10.6 0.10.7 0.10.8 9999: Matrix homeserver written in Rust
 net-im/discord-canary-bin 0.0.744: All-in-one voice and text chat
 net-im/discord-ptb-bin 0.0.137: All-in-one voice and text chat
 net-im/discordo 9999: A lightweight, secure, and feature-rich Discord TUI client.
-net-im/dissent 0.0.35: Tiny native Discord client for Linux
+net-im/dissent 0.0.37: Tiny native Discord app
 net-im/eturnal 1.12.1 1.12.2: STUN/TURN server
 net-im/flare 0.12.0-r1: Chat with your friends on Signal
 net-im/gajim-plugins 9999: Plugins developed for Gajim XMPP client
@@ -1798,7 +1800,7 @@ sys-apps/zmem 0.2.1: Memory monitoring tool focusing on swap, zswap and zram
 sys-auth/hyprpolkitagent 0.1.1-r2 0.1.2: Polkit authentication agent for Hyprland, written in Qt/QML
 sys-auth/pam-gnupg 0.4-r1: Unlock GnuPG keys on login
 sys-block/clonezilla 5.8.9: Clonezilla is a partition and disk imaging/cloning program
-sys-block/partclone 0.3.33 0.3.36 0.3.37: Partition cloning tool
+sys-block/partclone 0.3.37: Partition cloning tool
 sys-block/ublksrv 1.6: Userspace block device driver
 sys-boot/customrescuecd-x86_64-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/drbl 5.4.2: Diskless Remote Boot in Linux
@@ -1887,7 +1889,7 @@ www-client/browsh 1.8.2: A fully-modern text-based browser, rendering to TTY and
 www-client/mullvad-browser-bin 14.5.5: The Mullvad Browser is developed to minimize tracking and fingerprinting.
 www-client/nyxt 3.11.8 3.12.0 9999: Nyxt - the hacker's power-browser
 www-client/vimb 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
-www-client/yandex-browser 25.6.1.1039_p1: The web browser from Yandex
+www-client/yandex-browser 25.8.1.844_p1: The web browser from Yandex
 www-client/zen-bin 1.14.11b 1.15b 1.15.2b 1.15.3b: Zen Browser - A fast, privacy-focused Firefox fork
 www-misc/dufs 0.40.0: Dufs is a distinctive utility file server
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits
