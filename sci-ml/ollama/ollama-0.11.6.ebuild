@@ -250,9 +250,6 @@ src_configure() {
 	fi
 
 	if use rocm; then
-		# 962445
-		rocm_use_hipcc
-
 		mycmakeargs+=(
 			-DCMAKE_HIP_ARCHITECTURES="$(get_amdgpu_flags)"
 			-DCMAKE_HIP_PLATFORM="amd"
