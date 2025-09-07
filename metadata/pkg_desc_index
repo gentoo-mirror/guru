@@ -222,7 +222,7 @@ app-misc/badvideo 5.2 9999: Ruin your videos in SECONDS!
 app-misc/blahaj 2.2.0-r1: Gay sharks at your local terminal
 app-misc/brightnessctl 0.5.1: A program to read and control device brightness
 app-misc/catt 0.12.13 0.13.0: Send videos from many, many online sources to your Chromecast
-app-misc/cepl 26.0.0 9999: A readline C and C++ REPL with history, tab-completion, and undo.
+app-misc/cepl 27.0.0 9999: A readline C and C++ REPL with history, tab-completion, and undo.
 app-misc/chayang 0.1.0: Gradually dim the screen.
 app-misc/cheat 4.2.3 4.3.3-r1: cheat allows you to create and view interactive cheatsheets on the command-line
 app-misc/clifm 1.11 1.13 1.16 1.18 9999: The command line file manager
@@ -260,6 +260,7 @@ app-misc/kmon 1.6.5 1.7.1: Linux kernel manager and activity monitor
 app-misc/krabby 0.3.0 9999: Print pokemon sprites in your terminal
 app-misc/ledger-live-bin 2.84.1: Manager for the Ledger hardware wallet
 app-misc/lf 33-r1 36 37: Terminal file manager
+app-misc/libation 12.5.3: Libation: Free, open-source Audible library manager
 app-misc/lyfetch 1.1: Small system information script for linux systems.
 app-misc/macchina 6.4.0: A system information fetcher with an emphasis on performance.
 app-misc/mangadesk 0.7.7 0.7.8: Terminal Client for MangaDex
@@ -417,7 +418,7 @@ dev-build/fpm 0.9.0 0.10.0 0.11.0 0.12.0: Fortran Package Manager (fpm)
 dev-build/fypp 3.1 3.2: Fypp - Python powered Fortran preprocessor
 dev-build/pdpmake 2.0.3: Public domain POSIX make
 dev-build/qtilitools 0.1.2: Scripts/commands used in the Qtilities organization
-dev-build/xmake 3.0.1 9999: A cross-platform build utility based on Lua
+dev-build/xmake 3.0.2 9999: A cross-platform build utility based on Lua
 dev-cpp/blurhash 0.2.0 0.2.0-r1: C++ blurhash encoder/decoder
 dev-cpp/boxed-cpp 1.4.3: Boxing primitive types in C++
 dev-cpp/coeurl 0.3.0 0.3.1: A simple async wrapper around CURL for C++
@@ -589,7 +590,6 @@ dev-libs/hts_engine 1.10: HMM-based speech synthesis system (HTS) engine and API
 dev-libs/imsg-compat 8.0.0 9999: linux port of OpenBSD imsg
 dev-libs/ip2loc 8.6.1: IP2Location C Library
 dev-libs/jonquil 0.2.0-r1: Jonquil: Bringing TOML blooms to JSON land
-dev-libs/jose 13 14: C-language implementation of Javascript Object Signing and Encryption
 dev-libs/lexbor 2.5.0: Modular web engine (HTML/CSS parser, renderer, ...)
 dev-libs/libchardet 1.0.6: Mozilla's Universal Charset Detector C/C++ API
 dev-libs/libchdr 0_p20230230: Standalone library for reading MAME's CHDv1-v5 formats
@@ -876,7 +876,7 @@ dev-python/pywavefront 1.3.3: Python library for importing Wavefront .obj files
 dev-python/pywebview 4.4.1-r2 5.1-r2: A lightweight cross-platform wrapper around a webview component
 dev-python/questionary 2.1.0: Python library to build pretty command line user prompts
 dev-python/queuelib 1.8.0: Collection of persistent and non-persistent queues for Python
-dev-python/readability-lxml 0.8.1 0.8.4.1: Fast html to text parser (article readability tool)
+dev-python/readability-lxml 0.8.4.1: Fast html to text parser (article readability tool)
 dev-python/readmdict 0.1.1-r1: Read mdx/mdd files
 dev-python/rectangle-packer 2.0.2: Pack a set of rectangles into a bounding box with minimum area
 dev-python/repology-client 0.3.0 0.4.0: Asynchronous wrapper for Repology API
@@ -1069,7 +1069,7 @@ games-board/rmahjong 0.4_p20201106: Riichi Mahjong, the Japanese variant of the 
 games-emulation/RetroArch 1.19.1 1.20.0 1.21.0: RetroArch is a frontend for emulators, game engines and media players
 games-emulation/azahar 2123.1: An open-source 3DS emulator project based on Citra
 games-emulation/dosbox-x 2025.02.01 2025.05.03 9999: Complete, accurate DOS emulator forked from DOSBox
-games-emulation/eden 0.0.3_rc3: Nintendo Switch Emulator
+games-emulation/eden 0.0.3: Nintendo Switch Emulator
 games-emulation/flycast 9999: Sega Dreamcast, Naomi and Atomiswave emulator
 games-emulation/libretro-dolphin 0.0.1_pre20250517: Dolphin libretro port
 games-emulation/mupen64plus-qt 1.17 9999: A basic launcher for Mupen64Plus
@@ -1262,7 +1262,7 @@ gui-apps/wlsunset 0.4.0 9999: Day/night gamma adjustments for Wayland
 gui-apps/wob 0.15.1-r1 0.16: Lightweight overlay volume/backlight/progress/anything bar for Wayland
 gui-apps/wscreensaver 9999: Xscreensaver screensavers ported to wayland
 gui-apps/wtype 0.4: xdotool type for wayland
-gui-apps/xremap 0.10.13 0.10.15: Dynamic key remap for X and Wayland
+gui-apps/xremap 0.10.16: Dynamic key remap for X and Wayland
 gui-apps/xwayland-satellite 0.5.1 0.7: Xwayland outside your Wayland
 gui-apps/yambar 1.11.0 9999: Simplistic and highly configurable status panel for X and Wayland
 gui-libs/gtk-session-lock 0.2.0-r6 9999: GTK-based lockscreen for Wayland
@@ -1270,7 +1270,7 @@ gui-libs/gtk4-layer-shell 1.0.2 1.0.4 1.1.1 1.1.1-r1: A library for using the La
 gui-libs/libcprime 5.0.0: Library for managing settings of CoreApps
 gui-libs/libcsys 5.0.0: Library for managing the device
 gui-libs/libsfdo 0.1.3 0.1.4: A collection of libraries which implement some freedesktop.org specifications
-gui-libs/mir 2.20.2 2.21.1: Set of libraries for building Wayland based shells
+gui-libs/mir 2.21.1 2.22.0: Set of libraries for building Wayland based shells
 gui-libs/qdocumentview 0.3.0.1: Widget to render multi-page documents
 gui-libs/scenefx 0.2 0.2.1 0.3 0.4.1: A replacement for the wlroots scene API with eye-candy effects.
 gui-libs/xdg-desktop-portal-hyprland 1.3.9-r1 9999: xdg-desktop-portal backend for Hyprland
@@ -1278,7 +1278,7 @@ gui-wm/cage 0.2.0 9999: A Wayland kiosk
 gui-wm/hyprland-contrib 0.1-r1 9999: Community-maintained extensions for hyprland
 gui-wm/labwc 0.8.4-r1 0.9.0 0.9.1 9999: Openbox alternative for wayland
 gui-wm/mangowc 0.8.1 0.8.2 9999: wayland compositor based on wlroots and scenefx(dwl but no suckless)
-gui-wm/miracle-wm 0.6.1 0.6.2: Tiling Wayland compositor based on Mir
+gui-wm/miracle-wm 0.6.2 0.7.0: Tiling Wayland compositor based on Mir
 gui-wm/niri 25.05.1-r1 25.08: Scrollable-tiling Wayland compositor
 gui-wm/phoc 0.47.0 0.48.0 0.49.0: Wayland compositor for mobile phones
 gui-wm/river 0.3.7 0.3.9 0.3.11: A dynamic tiling Wayland compositor
@@ -1287,7 +1287,7 @@ gui-wm/wayback 0.2: X11 compatibility layer levaraging wlroots and Xwayland
 kde-apps/kwalletcli 3.03: CLI for the KDE Wallet
 kde-misc/geminipart 20250730: KPart for viewing text/gemini files
 kde-misc/kio-gemini 20241109 20250730: Gemini KIO worker
-mail-client/betterbird-bin 128.13.0: Betterbird is a fine-tuned version of Mozilla Thunderbird.
+mail-client/betterbird-bin 140.2.1: Betterbird is a fine-tuned version of Mozilla Thunderbird.
 mail-client/mailspring-bin 1.16.0: A beautiful, fast and fully open source mail client for Mac, Windows and Linux
 mail-client/proton-mail-bin 1.8.0: Beta Client for Proton Mail
 mail-filter/postfix-mta-sts-resolver 1.4.0: Daemon which provides TLS client policy for Postfix via socketmap
@@ -1563,7 +1563,7 @@ net-libs/ulfius 2.7.15: HTTP Framework for REST Applications in C
 net-libs/usockets 0.8.8 9999: tiny eventing, networking & crypto for async applications
 net-libs/yder 1.4.20-r1: Logging library for C applications
 net-mail/dovecot-fts-flatcurve 1.0.5: Dovecot FTS plugin to enable message indexing using Xapian
-net-mail/dovecot-fts-xapian 1.7.17 1.7.18 1.8 1.8.1 1.8.3 1.8.4 1.8.6 1.9 1.9.1 9999: Dovecot FTS plugin backed by Xapian
+net-mail/dovecot-fts-xapian 1.7.17 1.7.18 1.8 1.8.1 1.8.3 1.8.4 1.8.6 1.9 1.9.1 1.9.3 9999: Dovecot FTS plugin backed by Xapian
 net-mail/hydroxide 0.2.27 0.2.28 0.2.29 9999: A third-party, open-source ProtonMail CardDAV, IMAP and SMTP bridge
 net-mail/pop 0.2.0: Send emails from your terminal
 net-misc/FORT-validator 1.5.4-r2 1.6.1-r2 1.6.2-r2: FORT validator is an open source RPKI validator
@@ -1741,7 +1741,7 @@ sci-mathematics/rstudio-desktop-bin 2023.09.1_p494 2024.12.0_p467 2024.12.0_p467
 sci-misc/boinc-wrapper 26018-r2 26018-r3: Wrapper to use non-BOINC apps with BOINC
 sci-misc/llama-cpp 0_pre4576 0_pre5097 0_pre5332 0_pre5633-r1 0_pre6140 0_pre6318 9999: Port of Facebook's LLaMA model in C/C++
 sci-ml/aichat 0.30.0: All-in-one LLM CLI Tool
-sci-ml/ollama 0.9.6 0.10.0 0.10.1 0.11.4 9999: Get up and running with Llama 3, Mistral, Gemma, and other language models.
+sci-ml/ollama 0.9.6 0.10.0 0.10.1 0.11.4 0.11.5 0.11.6 0.11.10 9999: Get up and running with Llama 3, Mistral, Gemma, and other language models.
 sci-physics/openmodelica 1.24.0-r1: Open-source Modelica-based modeling and simulation environment
 sci-physics/ovito 3.10.4 3.10.5 3.10.5-r1: Open Visualization Tool
 sec-keys/openpgp-keys-aepaneshnikov 20221210: OpenPGP keys used by Alexander Epaneshnikov
@@ -1904,7 +1904,7 @@ x11-apps/lightdm-gtk-greeter-settings 1.2.2-r3: Configuration tool for the Light
 x11-apps/xcur2png 0.7.1-r3: Convert X cursors to PNG images
 x11-drivers/OpenTabletDriver 0.6.5.1: A cross-platform open-source tablet driver
 x11-drivers/OpenTabletDriver-bin 0.6.3.0: Cross platform tablet driver (binary package)
-x11-drivers/evdi 1.14.10: Extensible Virtual Display Interface
+x11-drivers/evdi 1.14.10 1.14.11: Extensible Virtual Display Interface
 x11-drivers/xf86-input-xppen 3.4.9-r2: Driver for XP-PEN tablets and drawing devices
 x11-libs/gtk-fortran 3.24.49 4.7.1 4.8.0: A GTK+ binding to build Graphical User Interfaces in Fortran
 x11-libs/sdl-fakeqwerty 0_pre20191217: Fixes non-QWERTY keyboards on Prison Architect (and maybe other SDL games)
