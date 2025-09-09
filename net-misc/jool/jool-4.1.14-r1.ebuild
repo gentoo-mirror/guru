@@ -16,6 +16,7 @@ IUSE="iptables"
 
 DEPEND="
 	dev-libs/libnl:3
+	elibc_musl? ( sys-libs/argp-standalone )
 	iptables? ( net-firewall/iptables )
 "
 RDEPEND="${DEPEND}
