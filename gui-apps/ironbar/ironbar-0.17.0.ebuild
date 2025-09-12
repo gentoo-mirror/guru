@@ -3,11 +3,14 @@
 
 EAPI=8
 
-inherit cargo git-r3
+inherit cargo
+
+RUST_MIN_VER="1.88"
 
 DESCRIPTION="Customisable Wayland gtk bar written in Rust"
 HOMEPAGE="https://crates.io/crates/ironbar"
-EGIT_REPO_URI="https://github.com/JakeStanger/${PN}"
+SRC_URI="https://github.com/JakeStanger/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI+=" https://github.com/freijon/${PN}/releases/download/v${PV}/${P}-crates.tar.xz"
 
 LICENSE="MIT"
 # Dependent crate licenses
@@ -15,6 +18,7 @@ LICENSE+="
 	Apache-2.0 BSD CC0-1.0 GPL-3+ ISC MIT MPL-2.0 Unicode-DFS-2016
 "
 SLOT="0"
+KEYWORDS="~amd64"
 IUSE="cairo +http +keyboard +music notifications +tray +volume"
 
 DEPEND="
@@ -34,11 +38,6 @@ BDEPEND="
 "
 
 QA_FLAGS_IGNORED="usr/bin/${PN}"
-
-src_unpack() {
-	git-r3_src_unpack
-	cargo_live_src_unpack
-}
 
 src_configure() {
 	# high magic to allow system-libs
