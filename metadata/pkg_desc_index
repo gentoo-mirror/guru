@@ -376,7 +376,7 @@ app-text/sioyek 9999: Sioyek is a PDF viewer with a focus on textbooks and resea
 app-text/smu 1.5 9999: Simple markup - markdown like syntax
 app-text/texlab 5.22.1: LaTeX Language Server
 app-text/the-platinum-searcher-bin 2.2.0: Fast CLI search tool, faster than grep, ack, silver_searcher (ag)
-app-text/tinymist 0.13.16 9999: An integrated language service for Typst.
+app-text/tinymist 0.13.24 9999: An integrated language service for Typst.
 app-text/tldr 3.3.0 3.4.1: Python command line client for tldr pages
 app-text/typst 0.13.1 9999: A markup-based typesetting system for the sciences
 app-text/typstyle 0.13.17: A beautiful and reliable code formatter for Typst
@@ -488,7 +488,6 @@ dev-db/pg_query_vala 0.1.0_pre20240326-r1 0.1.0_pre20241001: Thin wrapper around
 dev-db/pg_repack 1.5.0: Reorganize tables in PostgreSQL databases with minimal locks
 dev-db/psequel 0.2.0-r1: Run your SQL query
 dev-db/rum 1.3.13-r1 1.3.14: RUM access method - inverted index with additional information in posting lists
-dev-db/soci 4.0.3-r4 4.1.2: SOCI - The C++ Database Access Library
 dev-db/sqlcmd 1.8.3: The MSSQL SQLCMD CLI tool
 dev-db/tdscpp 20250301: C++ library to communicate with Microsoft SQL server
 dev-db/turso 0.0.22 0.1.4: Turso Database is an in-process OLTP database engine library with a CLI
@@ -852,7 +851,7 @@ dev-python/pysnooper 1.2.1 1.2.3: Never use print for debugging again
 dev-python/pystardict 0.8-r1: Library for manipulating StarDict dictionaries from within Python
 dev-python/pytest-cases 3.9.1: Separate test code from test cases in pytest
 dev-python/pytest-celery 0.1.0: a shim pytest plugin to enable celery.contrib.pytest
-dev-python/pytest-embedded 1.16.1 1.16.2: A pytest plugin for embedded systems
+dev-python/pytest-embedded 1.16.2 1.17.0: A pytest plugin for embedded systems
 dev-python/pytest-harvest 1.10.5: Store and retrieve data created during your pytest tests execution
 dev-python/pytest-mypy-plugins 3.2.0: pytest plugin for testing mypy types, stubs, plugins
 dev-python/pytest-relaxed 2.0.2: Relaxed test discovery for pytest
@@ -1046,9 +1045,9 @@ dev-vcs/ghorg 1.11.0: Mass repository cloning tool for GitHub/GitLab/Bitbucket
 dev-vcs/gitahead 2.7.1 2.7.1-r1: Graphical Git client to help understand and manage source code history
 dev-vcs/gitqlient 1.6.2 1.6.3 9999: Multi-platform Git client written with Qt
 dev-vcs/gitui 0.26.3 0.27.0: blazing fast terminal-ui for git
-dev-vcs/jj 0.29.0 0.31.0 0.32.0 9999: Jujutsu - an experimental version control system
+dev-vcs/jj 0.29.0 0.31.0 0.32.0 0.33.0 9999: Jujutsu - an experimental version control system
 dev-vcs/lazygit 0.53.0 0.54.0 0.54.2 0.55.0 9999: Simple terminal UI for git commands
-dev-vcs/lazyjj 0.5.0: TUI for Jujutsu/jj
+dev-vcs/lazyjj 0.5.0 0.6.1: TUI for Jujutsu/jj
 dev-vcs/pijul 1.0.0_beta9: A distributed version control system based on a theory of patches
 dev-zig/zls 0.10.0-r2 0.13.0-r1 0.14.0 0.15.0 9999: Non-official language server for Zig
 games-action/ATLauncher 3.4.40.1: Minecraft launcher which integrates multiple different ModPacks
@@ -1064,7 +1063,7 @@ games-arcade/shiromino 0.2.1: fast-paced puzzle game with roots in the arcade
 games-arcade/taisei 1.4.2 1.4.3 1.4.4 9999: Clone of the Touhou series, written in C using SDL/OpenGL/OpenAL.
 games-arcade/tetrio-desktop 8 9: TETR.IO desktop client.
 games-board/fairy-stockfish 14.0.1: Chess variant engine derived from Stockfish to support fairy chess variants
-games-board/openriichi 0.2.1.1: OpenRiichi is an open source Japanese Mahjong client
+games-board/openriichi 0.2.1.1-r1: OpenRiichi is an open source Japanese Mahjong client
 games-board/rmahjong 0.4_p20201106: Riichi Mahjong, the Japanese variant of the Chinese game Mahjong for 4 players
 games-emulation/RetroArch 1.19.1 1.20.0 1.21.0: RetroArch is a frontend for emulators, game engines and media players
 games-emulation/azahar 2123.1: An open-source 3DS emulator project based on Citra
@@ -1107,7 +1106,7 @@ games-rpg/open-adventure 1.17 1.18 1.20: Forward-port of the Crowther/Woods Adve
 games-rpg/primordia 3.6.70667: A cyberpunk point-and-click adventure game
 games-rpg/snoot-game 1.12.0: Visual novel parody of Goodbye Volcano High
 games-server/among-sus 20210519: Among Us, but it's a text adventure
-games-strategy/7k-ambition 3.2.5 9999: Seven Kingdoms: Ambition
+games-strategy/7k-ambition 3.2.5 3.2.5-r1 9999: Seven Kingdoms: Ambition
 games-strategy/gigalomania 1.0.1: Libre clone of Mega-Lo-Mania (original from ~1990), supports original resources
 games-strategy/slay-the-spire 2.2: Deck-building roguelike game with four playable characters
 games-strategy/unciv-bin 4.15.2 4.15.6_p1: Turn-based historical strategy game, a remake of Civ V
@@ -1195,7 +1194,7 @@ gui-apps/hyprsunset 0.2.0 9999: An application to enable a blue-light filter on 
 gui-apps/hyprswitch 1.3.1: A CLI/GUI that allows switching between windows in Hyprland
 gui-apps/hyprsysteminfo 0.1.3: Hyprland's system information GUI application
 gui-apps/intiface-central-bin 2.6.0 2.6.4: Buttplug frontend application
-gui-apps/ironbar 0.16.0-r1 0.16.1 0.16.1-r1 9999: Customisable Wayland gtk bar written in Rust
+gui-apps/ironbar 0.16.1-r1 0.17.0 9999: Customisable Wayland gtk bar written in Rust
 gui-apps/klassy 6.4 9999: Klassy QT6 window decoration theme for KDE Plasma 6.3+
 gui-apps/koi 0.5.1: Theme scheduling for the KDE Plasma Desktop
 gui-apps/lan-mouse 0.10.0 0.10.0_p202507120-r1: Software KVM Switch / mouse & keyboard sharing software for Local Area Networks
@@ -1240,7 +1239,7 @@ gui-apps/swayosd 0.1.0 0.2.1: GTK based on screen display for keyboard shortcuts
 gui-apps/swayr 0.28.0 0.28.1: A LRU window-switcher (and more) for the sway window manager
 gui-apps/swayrbar 0.4.2: A swaybar-protocol implementation for sway/swaybar
 gui-apps/sworkstyle 1.3.5: Map workspace names to icons for Sway
-gui-apps/swww 0.10.3 9999: Efficient animated wallpaper daemon for wayland, controlled at runtime
+gui-apps/swww 0.11.0 9999: Efficient animated wallpaper daemon for wayland, controlled at runtime
 gui-apps/szyszka 3.0.0: Simple, powerful and easy to use file renamer
 gui-apps/tessen 2.2.1-r1: an interactive menu to autotype and copy pass and gopass data
 gui-apps/tofi 0.8.1 0.9.1: Fast and simple dmenu/rofi replacement for wlroots-based Wayland compositors
@@ -1510,7 +1509,7 @@ net-im/axolotl-bin 2.0.1: Axolotl is a cross-platform Signal client
 net-im/beeper 4.1.111 4.1.145: Beeper: Unified Messenger
 net-im/chatterino 2.5.3: Chat client for https://twitch.tv
 net-im/conduit 0.10.6 0.10.7 0.10.8 9999: Matrix homeserver written in Rust
-net-im/discord-canary-bin 0.0.744: All-in-one voice and text chat
+net-im/discord-canary-bin 0.0.755: All-in-one voice and text chat
 net-im/discord-ptb-bin 0.0.137: All-in-one voice and text chat
 net-im/discordo 9999: A lightweight, secure, and feature-rich Discord TUI client.
 net-im/dissent 0.0.37: Tiny native Discord app
@@ -1692,7 +1691,7 @@ sci-electronics/coil64 2.1.27: Coil64 is inductance coil calculator
 sci-electronics/dsview 1.3.0 1.3.2 9999: An open source multi-function instrument
 sci-electronics/kactus2 3.13.3 9999: A open source IP-XACT-based tool
 sci-electronics/liblxi 1.20: Implementation of the LAN eXtensions for Instrumentation (LXI)
-sci-electronics/logic-bin 2.4.14 2.4.29: Saleae logic analyzer
+sci-electronics/logic-bin 2.4.29 2.4.36: Saleae logic analyzer
 sci-electronics/lxi-tools 2.7: Tools to access devices with LXI
 sci-electronics/qucs-s 25.1.2: Quite universal circuit simulator with SPICE
 sci-electronics/slang 9.0 9999: SystemVerilog compiler and language services

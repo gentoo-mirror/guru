@@ -1,4 +1,4 @@
-BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.20.5
+BDEPEND=media-libs/shaderc app-alternatives/ninja >=dev-build/cmake-3.20.5
 DEFINED_PHASES=compile configure install prepare setup test
 DEPEND=curl? ( net-misc/curl:= ) openblas? ( sci-libs/openblas:= ) openmp? ( llvm-runtimes/openmp:= ) blis? ( sci-libs/blis:= ) hip? ( >=dev-util/hip-6.3:= >=sci-libs/hipBLAS-6.3:= ) cuda? ( dev-util/nvidia-cuda-toolkit:= ) opencl? ( dev-util/opencl-headers ) vulkan? ( dev-util/vulkan-headers )
 DESCRIPTION=Port of Facebook's LLaMA model in C/C++
@@ -13,4 +13,4 @@ REQUIRED_USE=?? ( openblas blis )
 SLOT=0
 SRC_URI=https://github.com/ggml-org/llama.cpp/archive/refs/tags/b6318.tar.gz -> llama-cpp-0_pre6318.tar.gz
 _eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	460729dc36f68cf03b044bc1d367e34a	cuda	8b660e223a1695e3884ee4c7dc2c5059	rocm	7de97922067bdf9517649882c94f507d	linux-info	efd923656513c879204fec6638eadee5
-_md5_=a92bfb72188390e11d55729209ccbf8e
+_md5_=be4e8d5949702b10691d317e2e26edaf
