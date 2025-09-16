@@ -1,4 +1,4 @@
-BDEPEND=dev-build/cmake virtual/pkgconfig || ( >=dev-lang/rust-bin-1.88.0:* >=dev-lang/rust-1.88.0:* )
+BDEPEND=dev-build/cmake virtual/pkgconfig || ( >=dev-lang/rust-bin-1.89.0:* >=dev-lang/rust-1.89.0:* )
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup test unpack
 DEPEND=media-libs/freetype:2 media-libs/fontconfig wayland? ( dev-libs/wayland ) wayland? ( x11-libs/libxkbcommon[wayland] ) X? ( x11-libs/libxkbcommon[X] ) >=sys-libs/ncurses-6.4_p20240330
 DESCRIPTION=A hardware-accelerated GPU terminal emulator powered by WebGPU
@@ -12,6 +12,6 @@ LICENSE=MIT Apache-2.0 BSD-2 BSD Boost-1.0 CC0-1.0 ISC MIT MPL-2.0 Unicode-DFS-2
 RDEPEND=media-libs/freetype:2 media-libs/fontconfig wayland? ( dev-libs/wayland ) wayland? ( x11-libs/libxkbcommon[wayland] ) X? ( x11-libs/libxkbcommon[X] ) >=sys-libs/ncurses-6.4_p20240330
 REQUIRED_USE=|| ( wayland X )
 SLOT=0
-SRC_URI=https://github.com/raphamorim/rio/archive/refs/tags/v0.2.29.tar.gz -> rio-0.2.29.tar.gz https://github.com/freijon/rio/releases/download/v0.2.29/rio-0.2.29-crates.tar.xz
+SRC_URI=https://github.com/raphamorim/rio/archive/refs/tags/v0.2.30.tar.gz -> rio-0.2.30.tar.gz https://github.com/freijon/rio/releases/download/v0.2.30/rio-0.2.30-crates.tar.xz
 _eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	rust	2c958ff95a0fd21c1cb19e961cb2946d	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	a1af74aa9e34cd73aeac642cd0dd54d8	desktop	3a72ffe0d8e1dd73af3a1c8c15a59fed	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575
-_md5_=6a812bb1ca7bd47b229d635524b0bd0d
+_md5_=e5d3fa16defae58e33348cd576e278a2

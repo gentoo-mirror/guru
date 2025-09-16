@@ -334,7 +334,7 @@ app-portage/portagecfg 2.1.3 2.2.2 2.3.0 2.4.0: Utility to write Portage config 
 app-portage/quantum-resolver 9999: A WIP portage dependency resolver
 app-portage/showbuild 0.9.1-r2: Script to follow log of running portage builds
 app-portage/zig-ebuilder 9999: Semi-automatic generator for Zig ebuilds
-app-shells/carapace 1.4.1: Multi-shell multi-command argument completer
+app-shells/carapace 1.5.0: Multi-shell multi-command argument completer
 app-shells/direnv 2.36.0 2.37.1 9999: Environment variable manager for shell
 app-shells/elvish 0.19.2 0.20.1 0.21.0: Expressive programming language and a versatile interactive shell
 app-shells/fre 0.4.1: A command line frecency tracking tool
@@ -375,7 +375,6 @@ app-text/simplenote-desktop-bin 2.23.0 2.23.2: The simplest way to keep notes
 app-text/sioyek 9999: Sioyek is a PDF viewer with a focus on textbooks and research papers
 app-text/smu 1.5 9999: Simple markup - markdown like syntax
 app-text/texlab 5.22.1: LaTeX Language Server
-app-text/the-platinum-searcher-bin 2.2.0: Fast CLI search tool, faster than grep, ack, silver_searcher (ag)
 app-text/tinymist 0.13.24 9999: An integrated language service for Typst.
 app-text/tldr 3.3.0 3.4.1: Python command line client for tldr pages
 app-text/typst 0.13.1 9999: A markup-based typesetting system for the sciences
@@ -490,7 +489,7 @@ dev-db/psequel 0.2.0-r1: Run your SQL query
 dev-db/rum 1.3.13-r1 1.3.14: RUM access method - inverted index with additional information in posting lists
 dev-db/sqlcmd 1.8.3: The MSSQL SQLCMD CLI tool
 dev-db/tdscpp 20250301: C++ library to communicate with Microsoft SQL server
-dev-db/turso 0.0.22 0.1.4: Turso Database is an in-process OLTP database engine library with a CLI
+dev-db/turso 0.0.22 0.1.5: Turso Database is an in-process OLTP database engine library with a CLI
 dev-debug/gdb-dashboard 0.17.3 0.17.4: Modular visual interface for GDB in Python
 dev-debug/gdbgui 0.15.2.0 0.15.2.0-r1 0.15.3.0: Browser-based frontend to gdb
 dev-debug/lldb-mi 0.0.1 9999: LLDB Machine Interface Driver
@@ -801,7 +800,7 @@ dev-python/nkdfu 0.2: Python DFU tool for updating Nitrokeys' firmware
 dev-python/odfdo 3.14.4: Python library for OpenDocument format (ODF)
 dev-python/odsgenerator 1.11.3: Generate an OpenDocument Format .ods file from a .json or .yaml file.
 dev-python/odsparsator 1.12.1-r2: Generate a JSON file from an OpenDocument Format .ods file.
-dev-python/osc-placement 4.6.0-r1: OpenStackClient plugin for Placement service
+dev-python/osc-placement 4.6.0-r1 4.7.0: OpenStackClient plugin for Placement service
 dev-python/oscrypto 1.3.0-r2: TLS sockets, key generation, encryption, decryption, signing, verification
 dev-python/parsel 1.10.0: Utility to extract data from XML/HTML documents using XPath or CSS selectors
 dev-python/pem 23.1.0: Easy PEM file parsing in Python
@@ -857,15 +856,15 @@ dev-python/pytest-harvest 1.10.5: Store and retrieve data created during your py
 dev-python/pytest-mypy-plugins 3.2.0: pytest plugin for testing mypy types, stubs, plugins
 dev-python/pytest-relaxed 2.0.2: Relaxed test discovery for pytest
 dev-python/pytest-steps 1.8.0: Create step-wise / incremental tests in pytest
-dev-python/python-barbicanclient 7.0.0 7.1.0: Client library for Barbican API.
+dev-python/python-barbicanclient 7.1.0 7.2.0: Client library for Barbican API.
 dev-python/python-designateclient 6.3.0: OpenStack DNS-as-a-Service - Client
 dev-python/python-fire 0.6.0 0.7.0: Library for automatically generating command line interfaces from Python objects
 dev-python/python-http-client 3.3.5-r1: HTTP REST client, simplified for Python
 dev-python/python-lsp-isort 0.2.1: isort plugin for the Python LSP Server
 dev-python/python-lsp-mypy 0.7.0: Mypy plugin for the Python LSP Server
-dev-python/python-magnumclient 4.8.1: A client for the OpenStack Magnum API
-dev-python/python-manilaclient 5.5.0: Python bindings to the OpenStack Manila API
-dev-python/python-octaviaclient 3.11.1: A client for the OpenStack Octavia API
+dev-python/python-magnumclient 4.8.1 4.9.0: A client for the OpenStack Magnum API
+dev-python/python-manilaclient 5.5.0 5.6.0: Python bindings to the OpenStack Manila API
+dev-python/python-octaviaclient 3.11.1 3.12.0: A client for the OpenStack Octavia API
 dev-python/python-olm 3.2.16: Python bindings for dev-libs/olm
 dev-python/python-pidfile 3.1.1: PIDFile context processor. Supported py2 and py3
 dev-python/python-socketio 5.11.4 5.12.1: Python implementation of the Socket.IO realtime server.
@@ -1015,7 +1014,7 @@ dev-util/quilttools 0.3-r1: Mailbox to quilt series converter
 dev-util/rexxd 2025.02.17: Drop-in replacement for the original xxd
 dev-util/riffdiff 3.4.0 3.4.1: A diff filter highlighting changed line parts
 dev-util/rtc-testbench 5.3: RTC Testbench is a set of tools for validating Ethernet networks
-dev-util/rust-rover 2024.2.1-r1: A feature-rich Rust IDE with timely support by JetBrarins
+dev-util/rust-rover 2024.2.1-r1 2025.2.1: A feature-rich Rust IDE with timely support by JetBrarins
 dev-util/rust-script 0.36.0: Command-line tool to run Rust scripts which can make use of crates
 dev-util/rye 0.44.0: a Hassle-Free Python Experience
 dev-util/rz-ghidra 0.8.0: An integration of the Ghidra decompiler and Sleigh Disassembler for Rizin.
@@ -1133,7 +1132,6 @@ games-util/protonup 0.1.5 9999: Install and Update Proton-GE
 games-util/qzdl 20250103 99999999: Qt version of the ZDL ZDoom launcher
 games-util/r2modman-bin 3.1.51: A simple and easy to use mod manager for several games using Thunderstore
 games-util/roll 2.6.1: Program to roll dices specified in a simple and intuitive way
-games-util/samrewritten 9999 202008: Steam Achievement Manager For Linux
 games-util/sdl2-gamepad-mapper 0.0.8-r1: GUI application to generate an SDL2 mapping string from a generic controller
 games-util/steamtinkerlaunch 12.12 9999: Wrapper script for Steam custom launch options
 games-util/umu-launcher 1.2.9: Unified launcher for Windows games on Linux
@@ -1174,7 +1172,7 @@ gui-apps/coreterminal 5.0.0: Terminal emulator for C Suite
 gui-apps/coretime 5.0.0: A time related task manager for C Suite
 gui-apps/coreuniverse 5.0.0: Shows information about apps for C Suite
 gui-apps/darkman 2.0.1-r1: Framework for dark and light mode transitions
-gui-apps/espanso 2.2.3: Cross-platform Text Expander written in Rust
+gui-apps/espanso 2.2.5: Cross-platform Text Expander written in Rust
 gui-apps/eww 0.6.0-r3 9999: Elkowars Wacky Widgets is a standalone widget system made in Rust
 gui-apps/fnott 1.7.1 9999: Keyboard driven and lightweight Wayland notification daemon.
 gui-apps/fuzzel 1.13.0: Application launcher for wlroots based Wayland compositors.
@@ -1197,7 +1195,7 @@ gui-apps/hyprsysteminfo 0.1.3: Hyprland's system information GUI application
 gui-apps/intiface-central-bin 2.6.0 2.6.4: Buttplug frontend application
 gui-apps/ironbar 0.16.1-r1 0.17.0 9999: Customisable Wayland gtk bar written in Rust
 gui-apps/klassy 6.4 9999: Klassy QT6 window decoration theme for KDE Plasma 6.3+
-gui-apps/koi 0.5.1: Theme scheduling for the KDE Plasma Desktop
+gui-apps/koi 0.5.1 0.6: Theme scheduling for the KDE Plasma Desktop
 gui-apps/lan-mouse 0.10.0 0.10.0_p202507120-r1: Software KVM Switch / mouse & keyboard sharing software for Local Area Networks
 gui-apps/lemurs 0.3.2: A TUI Display/Login Manager
 gui-apps/lswt 1.0.4-r1 2.0.0 9999: List Wayland toplevels
@@ -1250,6 +1248,7 @@ gui-apps/waylock 1.3.0 1.4.0 1.5.0: Small screenlocker for Wayland compositors
 gui-apps/wbg 1.0.2 1.1.0 1.2.0 9999: Super simple wallpaper application
 gui-apps/wdisplays 1.1.3 9999: GUI display configurator for wlroots compositors
 gui-apps/wev 1.0.0 1.1.0: Wayland event viewer
+gui-apps/wideriver 1.3.0: Tiling window manager for the river wayland compositor
 gui-apps/windowtolayer 0.1.0 9999: Display existing Wayland applications as a wallpaper
 gui-apps/wl-clip-persist 0.4.3-r1 9999: Keep Wayland clipboard even after programs close
 gui-apps/wl-mirror 0.18.1-r2 0.18.3 9999: A simple Wayland output mirror client
@@ -1282,7 +1281,7 @@ gui-wm/mangowc 0.8.1 0.8.2 9999: wayland compositor based on wlroots and scenefx
 gui-wm/miracle-wm 0.6.2 0.7.0: Tiling Wayland compositor based on Mir
 gui-wm/niri 25.05.1-r1 25.08: Scrollable-tiling Wayland compositor
 gui-wm/phoc 0.47.0 0.48.0 0.49.0: Wayland compositor for mobile phones
-gui-wm/river 0.3.7 0.3.9 0.3.11: A dynamic tiling Wayland compositor
+gui-wm/river 0.3.11 0.3.12: A dynamic tiling Wayland compositor
 gui-wm/swayfx 0.5 0.5.3: SwayFX: Sway, but with eye candy!
 gui-wm/wayback 0.2: X11 compatibility layer levaraging wlroots and Xwayland
 kde-apps/kwalletcli 3.03: CLI for the KDE Wallet
@@ -1432,7 +1431,7 @@ media-sound/spotify-adblock 1.0.1 1.0.2 1.0.3: Adblocker for Spotify
 media-sound/spotify-player 0.20.4 0.20.5 0.21.0 9999: spotify_player is a fast, easy to use, and configurable terminal music player.
 media-sound/spotifyd 0.3.5_p20240513 0.4.1: A Spotify daemon
 media-sound/spotube-bin 3.8.0: An open source, cross-platform Spotify client
-media-sound/supersonic 0.17.0 0.18.0: A lightweight and full-featured cross-platform desktop client
+media-sound/supersonic 0.17.0 0.18.0 0.18.1: A lightweight and full-featured cross-platform desktop client
 media-sound/tenacity 1.3.4-r4: Easy-to-use, privacy-friendly, FLOSS, cross-platform multi-track audio editor
 media-sound/tidal-hifi-bin 5.16.0-r1 5.17.0: Web version of Tidal running in electron with Hi-Fi support thanks to Widevine.
 media-sound/yewtube 2.12.0 9999: Terminal-based YouTube player and downloader
@@ -1442,7 +1441,7 @@ media-video/avisynth+ 9999: A powerful nonlinear scripting language for video
 media-video/ciano 0.2.4-r2: A multimedia file converter focused on simplicity
 media-video/clapper 0.6.1 0.8.0: Modern and user-friendly media player
 media-video/delfin 0.4.7 0.4.8: Stream movies and TV shows from Jellyfin
-media-video/gpu-screen-recorder 5.5.3 5.6.6 9999: A screen recorder that has minimal impact on system performance
+media-video/gpu-screen-recorder 5.5.3 5.6.6 5.6.8 9999: A screen recorder that has minimal impact on system performance
 media-video/gpu-screen-recorder-gtk 5.7.8 9999: GTK frontend for gpu-screen-recorder.
 media-video/kikoplay 0.9.3 9999: KikoPlay is a full-featured danmu player
 media-video/kooha 2.2.3-r2: GTK4 screen recorder for Wayland
@@ -1821,7 +1820,7 @@ sys-firmware/lenovolegionlinux 9999: Lenovo Legion Linux kernel module
 sys-fs/btrd 0.5.4: The btrfs debugger
 sys-fs/btrfs-heatmap 9-r1: Python 3 script to draw a heatmap of a btrfs filesystem
 sys-fs/diskonaut 0.10.0 0.11.0 9999: Terminal disk space visual navigator
-sys-fs/dua-cli 2.31.0: A tool to conveniently learn about the disk usage of directories, fast!
+sys-fs/dua-cli 2.32.0: A tool to conveniently learn about the disk usage of directories, fast!
 sys-fs/dwarfs 0.12.4 0.13.0: A fast high compression read-only file system for Linux, Windows and macOS
 sys-fs/dwarfs-bin 0.12.4 0.13.0: Static version of a fast very high compression read-only FUSE file system
 sys-fs/ffmpegfs 2.16-r1 2.17: FUSE-based transcoding filesystem with support from/to many formats.
@@ -1842,7 +1841,6 @@ sys-fs/xva-img 1.5-r1: XVA virtual disk tool, supports exporting XVA to RAW.
 sys-fs/zfs-auto-utils 1.0.0: ZFS Automatic Scrub/Trim for Linux
 sys-kernel/dpdk-kmod 23.03: DPDK Kernel Nic Interface module
 sys-kernel/uek-sources 5.15.0.300.159.7-r1 5.15.0.300.161.13: Unbreakable Enterprise Kernel (UEK) sources built from Oracle
-sys-kernel/usermode-kernel 6.0.12: Linux kernel built with Gentoo patches
 sys-kernel/xow 0.5: Linux driver for the Xbox One wireless dongle
 sys-kernel/zenpower3 0.2.0-r3 9999: Linux kernel driver for reading sensors of AMD Zen family CPUs
 sys-libs/cyclonedds 0.10.3-r1 9999: Eclipse Cyclone DDS project
@@ -1915,6 +1913,7 @@ x11-misc/autotiling 1.9.3: Script for sway and i3 to automatically switch the wi
 x11-misc/betterlockscreen 4.4.0: sweet looking lockscreen for linux system
 x11-misc/betterlockscreen_rapid 0.0.0_pre20210701 0.0.0_pre20210708: A rapid and good-looking screen locker
 x11-misc/dotool 1.5: Command to simulate input anywhere
+x11-misc/exit-options 20250830: Pop-up with exit options for MX Fluxbox
 x11-misc/gobble 1.3: Hide current window before launching external program, unhide after quitting
 x11-misc/greenclip-bin 4.2: Simple clipboard manager to be integrated with rofi
 x11-misc/gromit-mpx 1.6.0-r1 1.7.0 9999: Gromit-MPX is a multi-pointer GTK3 port of the Gromit desktop annotation tool
@@ -1940,7 +1939,7 @@ x11-misc/xob 0.2 0.3: A lightweight overlay volume (or anything) bar for the X W
 x11-misc/xsecurelock 1.9.0: X11 screen lock utility with security in mind
 x11-plugins/purple-mm-sms 0.1.7: Purple SMS plugin using ModemManager
 x11-terms/dmd5620 2.1.0: GTK+ 3.0 implementation of an AT&T / Teletype DMD 5620 emulator.
-x11-terms/rio 0.2.29: A hardware-accelerated GPU terminal emulator powered by WebGPU
+x11-terms/rio 0.2.30: A hardware-accelerated GPU terminal emulator powered by WebGPU
 x11-terms/tabby-bin 1.0.221: A terminal for a more modern age
 x11-terms/terminal-simulator 0.2 9999-r1: VT100 and VT52 terminal hardware simulator
 x11-terms/tym 3.5.1-r2: Lua-configurable terminal emulator
@@ -1975,7 +1974,6 @@ x11-themes/razor-sharp-gtk 9999: GTK-3/4 theme: very dark background, red font
 x11-themes/solarized-black 1.0: GTK theme Solarized, multiple colors
 x11-themes/sound-theme-librem5 0.1.0: Sound theme for the Librem 5/PinePhone
 x11-themes/vimix-xcursors 20200224-r3: Theme inspired by Materia design and based on capitaine-cursors
-x11-wm/berry 0.1.11 0.1.12: A byte-sized window manager written in C
 x11-wm/dk 1.7 9999: A list based tiling window manager in the vein of dwm, bspwm, and xmonad.
 x11-wm/firefox-i3-workspaces 0.10: Restore Firefox windows to correct i3 workspaces, helper web extension is needed
 x11-wm/i3-rounded 4.21.1: i3-gaps fork with rounded corners support.
