@@ -18,6 +18,11 @@
 
 # New entries go on top.
 
+# David (stkw0) Roman <davidroman96@gmail.com> (2025-09-16)
+# Depends on sys-fs/encfs which is masked in ::gentoo.
+# Removal on 2025-10-16
+app-crypt/gnome-encfs-manager
+
 # Bryce Copeland (truffle) <truffle074@gmail.com> (2025-09-03)
 # Only created to satisfy a no-longer-required dependency for dev-ruby/ruby-lsp
 # Package is just a small component of Sorbet, installed via rubygems
@@ -45,27 +50,6 @@ media-video/avisynth+
 # No maintainer nor metadata.xml file. src_test fails. Live ebuild only.
 # Removal on 2025-09-18
 games-util/pegasus
-
-# David (stkw0) Roman <davidroman96@gmail.com> (2025-08-16)
-# Upstream have been dead for 7 years.
-# Removal on 2025-09-16, bug #886057, #886055
-app-text/the-platinum-searcher-bin
-
-# David (stkw0) Roman <davidroman96@gmail.com> (2025-08-16)
-# No maintainer listed. Seems to be abandoned since 2022
-# Removal on 2025-09-16, bug #878807, #875827, #875824
-x11-wm/berry
-
-# David (stkw0) Roman <davidroman96@gmail.com> (2025-08-16)
-# SRC_URI does not exist anymore and can not be fetched. Even if it did, there
-# was open bug due to a compilation failure.
-# Removal on 2025-09-16, bug #927884
-games-util/samrewritten
-
-# David (stkw0) Roman <davidroman96@gmail.com> (2025-08-14)
-# Fails to compile, tests seems to fail and it has not been maintained since 2022.
-# Removal on 2025-09-14, bug #886631
-sys-kernel/usermode-kernel
 
 # Anna (cybertailor) Vyalkova <cyber+gentoo@sysrq.in> (2025-07-27)
 # Vulnerable to a cross-site scripting attack.

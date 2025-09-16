@@ -3,7 +3,8 @@
 
 EAPI=8
 
-CRATES=""
+RUST_MIN_VER="1.85.0"
+
 declare -A GIT_CRATES=(
 	[syntect]="https://github.com/trishume/syntect;64644ffe064457265cbcee12a0c1baf9485ba6ee;syntect-%commit%"
 )
