@@ -1,5 +1,5 @@
-DEFINED_PHASES=compile install postinst prepare test unpack
-DEPEND=app-shells/bash sys-apps/bat dev-util/sh
+BDEPEND=app-shells/bash sys-apps/bat dev-util/sh
+DEFINED_PHASES=compile install postinst test
 DESCRIPTION=Bash scripts that integrate bat with various command line tools.
 EAPI=8
 HOMEPAGE=https://github.com/eth-p/bat-extras
@@ -9,6 +9,6 @@ LICENSE=MIT
 RDEPEND=app-shells/bash sys-apps/bat dev-util/sh app-admin/entr app-shells/fzf dev-python/black dev-util/git-delta dev-vcs/git sys-apps/eza sys-apps/ripgrep llvm-core/clang[extra(+)] sys-libs/ncurses
 RESTRICT=test
 SLOT=0
-SRC_URI=https://github.com/eth-p/bat-extras/archive/v2023.09.19.tar.gz -> bat-extras-2023.09.19.tar.gz
+SRC_URI=https://github.com/eth-p/bat-extras/archive/v2024.08.24.tar.gz -> bat-extras-2024.08.24.tar.gz
 _eclasses_=optfeature	538bce96e5589935b57e178e8635f301
-_md5_=847c4cdec4bc06e471ebed2bed06529c
+_md5_=64f162bb8eb8af09d3cf3ad48e7d54f4

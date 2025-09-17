@@ -1,13 +1,13 @@
 BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=install unpack
-DEPEND=app-shells/fzf media-video/mpv net-misc/aria2 net-misc/curl net-misc/yt-dlp
+DEPEND=app-shells/fzf media-video/mpv net-misc/aria2[adns] net-misc/curl net-misc/yt-dlp
 DESCRIPTION=A cli to browse and watch anime.
 EAPI=8
 HOMEPAGE=https://github.com/pystardust/ani-cli
 INHERIT=git-r3
 LICENSE=GPL-3
 PROPERTIES=live
-RDEPEND=app-shells/fzf media-video/mpv net-misc/aria2 net-misc/curl net-misc/yt-dlp
+RDEPEND=app-shells/fzf media-video/mpv net-misc/aria2[adns] net-misc/curl net-misc/yt-dlp
 SLOT=0
 _eclasses_=git-r3	875eb471682d3e1f18da124be97dcc81
-_md5_=2efa868abcd1a56d1007deb7f311775d
+_md5_=d3834342be24967570d3b5a51c28441e

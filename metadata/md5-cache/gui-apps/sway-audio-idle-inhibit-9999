@@ -1,13 +1,14 @@
 BDEPEND=>=dev-vcs/git-1.8.2.1[curl] >=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array
 DEFINED_PHASES=compile configure install test unpack
-DEPEND=dev-libs/wayland dev-libs/wayland-protocols media-libs/libpulse
+DEPEND=dev-libs/wayland dev-libs/wayland-protocols media-libs/libpulse systemd? ( sys-apps/systemd ) !systemd? ( sys-auth/elogind )
 DESCRIPTION=Prevents swayidle from idle when an application is outputting or receiving audio
 EAPI=8
 HOMEPAGE=https://github.com/ErikReider/SwayAudioIdleInhibit
 INHERIT=git-r3 meson
+IUSE=systemd
 LICENSE=GPL-3
 PROPERTIES=live
-RDEPEND=dev-libs/wayland dev-libs/wayland-protocols media-libs/libpulse
+RDEPEND=dev-libs/wayland dev-libs/wayland-protocols media-libs/libpulse systemd? ( sys-apps/systemd ) !systemd? ( sys-auth/elogind )
 SLOT=0/9999
-_eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	b7eb9c3a6dc6662368634584aab44a2c	meson	99466844dd8d4fcfb07578a76f5a9922	git-r3	875eb471682d3e1f18da124be97dcc81
-_md5_=a224699e42c23e30092066b21fbe5bab
+_eclasses_=git-r3	875eb471682d3e1f18da124be97dcc81	toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	b7eb9c3a6dc6662368634584aab44a2c	meson	99466844dd8d4fcfb07578a76f5a9922
+_md5_=3daf80c6119578890dada7ec2f844c21
