@@ -4,7 +4,7 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{11..13} )
+PYTHON_COMPAT=( python3_{11..14} )
 
 inherit distutils-r1 pypi
 
@@ -18,6 +18,6 @@ KEYWORDS="~amd64 ~x86"
 RESTRICT="test"
 
 RDEPEND="
-	dev-python/pyqt5[${PYTHON_USEDEP},svg]
+	dev-python/pyqt6[${PYTHON_USEDEP},svg]
 	dev-python/numpy[${PYTHON_USEDEP}]
 "

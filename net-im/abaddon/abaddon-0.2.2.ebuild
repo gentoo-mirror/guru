@@ -1,4 +1,4 @@
-# Copyright 2021-2024 Gentoo Authors
+# Copyright 2021-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -23,28 +23,31 @@ SLOT="0"
 IUSE="+libhandy +rnnoise qrcodegen"
 
 RDEPEND="
-	dev-cpp/gtkmm:3.0=
+	dev-cpp/atkmm
+	dev-cpp/cairomm
+	dev-cpp/glibmm:2
+	dev-cpp/gtkmm:3.0
+	dev-cpp/pangomm:1.4
 	dev-db/sqlite:3
-	dev-libs/libsodium
-	dev-libs/miniaudio
-	dev-libs/spdlog
+	dev-libs/glib:2
+	dev-libs/libfmt:=
+	dev-libs/libsigc++:2
+	dev-libs/libsodium:=
+	dev-libs/spdlog:=
 	media-libs/opus
-	>=net-libs/ixwebsocket-11.0.8
+	>=net-libs/ixwebsocket-11.0.8:=
 	net-misc/curl
 	sys-libs/zlib:=
-	libhandy? ( gui-libs/libhandy:= )
+	x11-libs/gtk+:3
+	libhandy? ( gui-libs/libhandy:1 )
 	qrcodegen? ( dev-libs/qr-code-generator )
 	rnnoise? ( media-libs/rnnoise )
 "
 DEPEND="
 	${RDEPEND}
 	dev-cpp/nlohmann_json
+	dev-libs/miniaudio
 "
-
-PATCHES=(
-	# Add missing includes
-	"${FILESDIR}/${P}-missing-include.patch"
-)
 
 src_configure() {
 	# Disable keychain because there's currently
@@ -59,10 +62,6 @@ src_configure() {
 }
 
 src_install() {
-	dobin "${BUILD_DIR}"/abaddon
-
-	insinto /usr/share/${PN}
-	doins -r res/*
-
+	cmake_src_install
 	make_desktop_entry /usr/bin/${PN}
 }

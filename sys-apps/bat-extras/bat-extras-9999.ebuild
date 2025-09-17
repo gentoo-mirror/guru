@@ -1,4 +1,4 @@
-# Copyright 2022-2024 Gentoo Authors
+# Copyright 2022-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -20,13 +20,13 @@ fi
 LICENSE="MIT"
 SLOT="0"
 
-DEPEND="
+BDEPEND="
 	app-shells/bash
 	sys-apps/bat
 	dev-util/sh
 "
 RDEPEND="
-	${DEPEND}
+	${BDEPEND}
 	app-admin/entr
 	app-shells/fzf
 	dev-python/black
@@ -37,21 +37,6 @@ RDEPEND="
 	llvm-core/clang[extra(+)]
 	sys-libs/ncurses
 "
-
-src_unpack() {
-	default
-	if [[ ${PV} == *9999 ]]; then
-		git-r3_checkout
-	fi
-}
-
-src_prepare() {
-	# remove license
-	rm LICENSE.md || die
-	# remove contribution document
-	rm CONTRIBUTING.md || die
-	default
-}
 
 src_compile() {
 	./build.sh --compress --minify=all --manuals --no-verify || die "build failed"
