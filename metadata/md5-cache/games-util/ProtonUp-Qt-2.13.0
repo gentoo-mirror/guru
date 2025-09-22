@@ -1,0 +1,17 @@
+BDEPEND=test? ( dev-python/responses[python_targets_python3_12(-)?,python_targets_python3_13(-)?] ) test? ( >=dev-python/pyaml-6.0[python_targets_python3_12(-)?,python_targets_python3_13(-)?] >=dev-python/pyside-6.3.0[dbus,gui,uitools,widgets,python_targets_python3_12(-)?,python_targets_python3_13(-)?] >=dev-python/pyxdg-0.27[python_targets_python3_12(-)?,python_targets_python3_13(-)?] >=dev-python/requests-2.27.0[python_targets_python3_12(-)?,python_targets_python3_13(-)?] >=dev-python/steam-1.6.1[python_targets_python3_12(-)?,python_targets_python3_13(-)?] >=dev-python/vdf-4.0[python_targets_python3_12(-)?,python_targets_python3_13(-)?] >=dev-python/zstandard-0.19.0[python_targets_python3_12(-)?,python_targets_python3_13(-)?] >=dev-python/pytest-7.4.4[python_targets_python3_12(-)?,python_targets_python3_13(-)?] ) python_targets_python3_12? ( dev-lang/python:3.12 ) python_targets_python3_13? ( dev-lang/python:3.13 ) >=dev-python/gpep517-16[python_targets_python3_12(-)?,python_targets_python3_13(-)?] >=dev-python/setuptools-78.1.0[python_targets_python3_12(-)?,python_targets_python3_13(-)?]
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare test
+DESCRIPTION=Install and manage GE-Proton, Luxtorpeda & more for Steam Lutris and Heroic.
+EAPI=8
+HOMEPAGE=https://davidotek.github.io/protonup-qt/
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=desktop distutils-r1 xdg
+IUSE=test python_targets_python3_12 python_targets_python3_13
+KEYWORDS=~amd64
+LICENSE=GPL-3
+RDEPEND=>=dev-python/pyaml-6.0[python_targets_python3_12(-)?,python_targets_python3_13(-)?] >=dev-python/pyside-6.3.0[dbus,gui,uitools,widgets,python_targets_python3_12(-)?,python_targets_python3_13(-)?] >=dev-python/pyxdg-0.27[python_targets_python3_12(-)?,python_targets_python3_13(-)?] >=dev-python/requests-2.27.0[python_targets_python3_12(-)?,python_targets_python3_13(-)?] >=dev-python/steam-1.6.1[python_targets_python3_12(-)?,python_targets_python3_13(-)?] >=dev-python/vdf-4.0[python_targets_python3_12(-)?,python_targets_python3_13(-)?] >=dev-python/zstandard-0.19.0[python_targets_python3_12(-)?,python_targets_python3_13(-)?] python_targets_python3_12? ( dev-lang/python:3.12 ) python_targets_python3_13? ( dev-lang/python:3.13 )
+REQUIRED_USE=|| ( python_targets_python3_12 python_targets_python3_13 )
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/DavidoTek/ProtonUp-Qt/archive/refs/tags/v2.13.0.tar.gz -> ProtonUp-Qt-2.13.0.tar.gz
+_eclasses_=desktop	3a72ffe0d8e1dd73af3a1c8c15a59fed	toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	out-of-source-utils	dbf9e34ee8964084651e25907fa8f52c	multibuild	4650a65187015567b4e041bb9bfdb364	multilib	a199af442898963433d6f038a88cce9c	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	b7eb9c3a6dc6662368634584aab44a2c	python-r1	0e15b2ab9cfc87d7474678201d6bca38	distutils-r1	37143302bc375f4878f7b5f7497da8cc	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575
+_md5_=a4805c67db3ab14c2e4f7cae38b0d116

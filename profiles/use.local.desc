@@ -92,9 +92,9 @@ app-misc/wlx-overlay-s:wayvr - Enable WayVR, a Wayland server for a VR environme
 app-misc/yazi:cli - Install CLI Data Distribution Service
 app-text/klogg:lto - Build with link time optimization (LTO).
 app-text/lchat:examples - install the example indent .filter
-dev-build/FoBiS:graphviz - Add support of generation of a dependencies graph
 dev-build/cargo-make:openssl - Enable TLS support with dev-libs/openssl
 dev-build/cargo-make:rustls - Enable TLS support with rustls
+dev-build/fobis:graphviz - Add support of generation of a dependencies graph
 dev-build/fpm:openmp - OpenMP support to build targets in parallel where possible
 dev-cpp/dpp:coro - Enable coroutine support
 dev-cpp/dpp:voice - Enable voice-chat support
@@ -575,9 +575,8 @@ media-libs/libbpg:bpgview - Compile bpgview (media-libs/libsdl and media-libs/sd
 media-libs/libbpg:jctvc - Enable the JCTVC code (best quality but slow) for the encoder
 media-libs/monado:X - Enable xlib/xlib-randr/xcb support
 media-libs/monado:dbus - Enable dbus support (for BLE support)
-media-libs/monado:ffmpeg - Enable ffmpeg testing video driver
-media-libs/monado:gles - Enable OpenGL-ES Graphics API support
 media-libs/monado:gstreamer - Enable gstreamer
+media-libs/monado:onnxruntime - Enable handtracking support via sci-libs/onnxruntime
 media-libs/monado:opencv - Enable OpenCV backend
 media-libs/monado:opengl - Enable OpenGL Graphics API support
 media-libs/monado:psvr - Enable PSVR HMD driver
