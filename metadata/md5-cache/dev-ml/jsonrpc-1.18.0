@@ -1,6 +1,6 @@
 BDEPEND=dev-lang/ocaml dev-ml/dune
 DEFINED_PHASES=compile install test
-DEPEND=>=dev-lang/ocaml-4:=[ocamlopt?] dev-ml/dune:=
+DEPEND=dev-lang/ocaml:=[ocamlopt?] dev-ml/dune:=
 DESCRIPTION=Jsonrpc protocol implementation
 EAPI=8
 HOMEPAGE=https://opam.ocaml.org/packages/jsonrpc/ https://github.com/ocaml/ocaml-lsp
@@ -8,9 +8,9 @@ INHERIT=dune
 IUSE=ocamlopt
 KEYWORDS=~amd64
 LICENSE=ISC
-RDEPEND=>=dev-lang/ocaml-4:=[ocamlopt?] dev-ml/dune:=
+RDEPEND=dev-lang/ocaml:=[ocamlopt?] dev-ml/dune:=
 RESTRICT=test
 SLOT=0/1.18.0
 SRC_URI=https://github.com/ocaml/ocaml-lsp/archive/1.18.0.tar.gz -> jsonrpc-1.18.0.tar.gz
-_eclasses_=edo	a5e294016aa84979fcb2459749eb80b2	multiprocessing	1e32df7deee68372153dca65f4a7c21f	dune	21c2970666b517829dc7b963ca1f4a4a
+_eclasses_=edo	a5e294016aa84979fcb2459749eb80b2	multiprocessing	1e32df7deee68372153dca65f4a7c21f	dune	4304f35da0fafecd98eb149d0b7ed4d4
 _md5_=028e6f46f9ae2365c0c1b205ffb0ea3f
