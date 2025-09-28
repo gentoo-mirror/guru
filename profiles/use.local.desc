@@ -595,6 +595,13 @@ media-libs/wivrn:pipewire - Enable support for audio sink/source through native 
 media-libs/wivrn:pulseaudio - Enable support for audio sink/source through pulseaudio modules
 media-libs/wivrn:vulkan-encode - Enable support for encoding with vulkan video
 media-libs/wivrn:wireshark-plugins - Build the net-analyzer/wireshark plugin for the WiVRn protocol
+media-plugins/gimp-resynthesizer:animate - Enable animation of the synthesis process for debugging. You may see a 'brushfire front' of pixels being synthesized. Note: may not work with threading enabled
+media-plugins/gimp-resynthesizer:debug - Enable debug logging, call tree tracing, and algorithm statistics. Currently depends on GLib
+media-plugins/gimp-resynthesizer:deep-progress - Enable detailed progress reporting (percent processed) instead of shallow progress (per pass). Useful for slow motion animation
+media-plugins/gimp-resynthesizer:glib - Use GLib library for platform independence instead of direct system calls
+media-plugins/gimp-resynthesizer:libheal - Build the simple API library that only provides healing functionality. Not needed for GIMP, only for external test harnesses
+media-plugins/gimp-resynthesizer:threads - Enable threading support for approximately 2x performance speedup. Thread limit is hardcoded to 12
+media-plugins/gimp-resynthesizer:translations - Install translation files.
 media-sound/6pm:midimaps - Install midi maps for that synth. Recommended
 media-sound/6pm:nls - Add support for localization
 media-sound/6pm:presets - Install presets. Recommended
