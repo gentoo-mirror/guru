@@ -19,10 +19,14 @@ app-backup/kopia-ui-bin:system-kopia - Use the system-wide app-backup/kopia inst
 app-benchmarks/occt-bin:msr-user-access - Allow non-root access to /dev/cpu/*/msr to read CPU power/voltage
 app-containers/arachsys-containers:suid - allow unprivileged users to have multiple UIDs/GIDs in the container (see CVE-2014-8989 for implications)
 app-containers/waydroid:clipboard - Enable clipboard manager service using dev-python/pyclip
+app-containers/waydroid-images:android-10 - Install Android version 10
+app-containers/waydroid-images:android-11 - Install Android version 11
+app-containers/waydroid-images:android-13 - Install Android version 13
 app-containers/waydroid-images:system-gapps - Use the GAPPS variant of system.img
 app-containers/waydroid-images:system-vanilla - Use the VANILLA variant of system.img
-app-containers/waydroid-images:vendor-halium - Use the HALIUM_11 variant of vendor.img
+app-containers/waydroid-images:vendor-halium - Use the HALIUM variant of vendor.img
 app-containers/waydroid-images:vendor-mainline - Use the MAINLINE variant of vendor.img
+app-containers/waydroid-x11:drm - Install a standalone Waydroid session
 app-crypt/clevis:luks - Enable LUKS support
 app-crypt/clevis:tpm - Enable TPM support
 app-crypt/intel-ipsec-mb:safe-data - sensitive information is cleared on completion of a function call
@@ -786,7 +790,6 @@ net-vpn/cloudflare-warp:systray - Enable systray indicator of whether WARP is ac
 net-vpn/fastd:doc - Build and install manpages
 net-vpn/fastd:offload-l2tp - Offload L2TP traffic to the kernel when using the null@l2tp transport method
 net-wireless/bluetuith:doc - Install html docs
-net-wireless/iwmenu:nerdfonts - Using nerdfonts icons
 net-wireless/sdrpp:airspy - Support for airspy hardware
 net-wireless/sdrpp:airspyhf - Support for airspyhf+ hardware
 net-wireless/sdrpp:bladerf - Support for bladerf hardware
@@ -885,6 +888,10 @@ sys-libs/gcompat:libucontext - Add support for ucontext functions via sys-libs/l
 sys-libs/gcompat:obstack - Use sys-libs/obstack-standalone for greater compatibility
 sys-libs/iceoryx:ccache - Enable ccache support
 sys-power/linux-tools-power-x86:pstate-tracer - Install utility to debug and tune the performance of the {amd,intel}_pstate drivers
+sys-power/rog-daemon:fan-curve - Enable support for custom fan curves
+sys-power/rog-daemon:mux - Enable support for MUX switch
+sys-power/rog-daemon:panel-od - Enable support for Panel Overdrive
+sys-power/rog-daemon:profile - Enable support for controlling profile
 sys-process/nohang:systemd - Install systemd service file
 sys-process/nq:shell - Use shell implementation
 sys-process/nq:tq - Install tq, a tmux & screen wrapper

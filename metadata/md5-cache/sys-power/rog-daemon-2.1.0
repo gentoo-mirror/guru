@@ -1,0 +1,13 @@
+BDEPEND=>=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array
+DEFINED_PHASES=compile configure install test
+DESCRIPTION=Lightweight and modular ASUS ROG control daemon
+EAPI=8
+HOMEPAGE=https://github.com/mechakotik/rog-daemon
+INHERIT=meson
+IUSE=systemd +profile +fan-curve +mux +panel-od
+KEYWORDS=~amd64
+LICENSE=GPL-3
+SLOT=0
+SRC_URI=https://github.com/mechakotik/rog-daemon/archive/refs/tags/v2.1.0.tar.gz -> rog-daemon-2.1.0.tar.gz
+_eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	b7eb9c3a6dc6662368634584aab44a2c	meson	99466844dd8d4fcfb07578a76f5a9922
+_md5_=27df71fc9d1d9ebd4853f8d8c84b202a
