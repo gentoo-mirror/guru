@@ -3,7 +3,7 @@
 
 EAPI=8
 
-CRATES=""
+RUST_MIN_VER=1.82.0
 
 inherit cargo shell-completion
 

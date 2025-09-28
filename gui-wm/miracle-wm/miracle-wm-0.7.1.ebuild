@@ -29,6 +29,7 @@ COMMON_DEPEND="
 	>=gui-libs/mir-2.18:=
 	media-libs/libglvnd
 	x11-base/xwayland
+	x11-libs/libxkbcommon
 "
 RDEPEND="
 	${COMMON_DEPEND}
@@ -51,6 +52,8 @@ BDEPEND="
 
 PATCHES=(
 	"${FILESDIR}/${PN}-0.6.1-conditional-tests.patch"
+	"${FILESDIR}/${PN}-0.7.0-disable-mirtest.patch"
+	"${FILESDIR}/${PN}-0.7.0-no-automagic.patch"
 )
 
 pkg_setup() {

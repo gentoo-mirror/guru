@@ -52,7 +52,7 @@
  #include "mission/missioncampaign.h"
  #include "mission/missionload.h"
  #include "mission/missionmessage.h"
-@@ -135,7 +134,6 @@
+@@ -139,7 +138,6 @@ leadIndicatorBehavior Lead_indicator_behavior;
  shadow_disable_overrides Shadow_disable_overrides {false, false, false, false};
  float Thruster_easing;
  bool Always_use_distant_firepoints;
@@ -60,14 +60,14 @@
  bool Hotkey_always_hide_hidden_ships;
  bool Use_weapon_class_sounds_for_hits_to_player;
  bool SCPUI_loads_hi_res_animations;
-@@ -145,29 +143,6 @@
- std::array<std::tuple<float, float>, 6> Fred_spacemouse_nonlinearity;
- bool Randomize_particle_rotation;
+@@ -156,29 +154,6 @@ bool Lua_API_returns_nil_instead_of_invalid_object;
+ bool Dont_show_callsigns_in_escort_list;
+ bool Fix_scripted_velocity;
  
 -static auto DiscordOption __UNUSED = options::OptionBuilder<bool>("Game.Discord",
 -                     std::pair<const char*, int>{"Discord Presence", 1754},
 -                     std::pair<const char*, int>{"Toggle Discord Rich Presence", 1755})
--                     .category("Game")
+-                     .category(std::make_pair("Game", 1824))
 -                     .default_val(Discord_presence)
 -                     .level(options::ExpertLevel::Advanced)
 -                     .importance(55)
@@ -89,19 +89,19 @@
 -
  void mod_table_set_version_flags();
  
- SCP_vector<std::pair<SCP_string, gr_capability>> req_render_ext_pairs = {
-@@ -1264,10 +1239,6 @@
- 			stuff_boolean(&Always_use_distant_firepoints);
- 		}
+ void parse_mod_table(const char *filename)
+@@ -1372,10 +1347,6 @@ void parse_mod_table(const char *filename)
+ 				stuff_boolean(&Always_use_distant_firepoints);
+ 			}
  
--		if (optional_string("$Enable Discord rich presence:")) {
--			stuff_boolean(&Discord_presence);
--		}
+-			if (optional_string("$Enable Discord rich presence:")) {
+-				stuff_boolean(&Discord_presence);
+-			}
 -
- 		if (optional_string("$Always hide hidden ships in hotkey list:")) {
- 			stuff_boolean(&Hotkey_always_hide_hidden_ships);
- 		}
-@@ -1440,7 +1411,6 @@
+ 			if (optional_string("$Always hide hidden ships in hotkey list:")) {
+ 				stuff_boolean(&Hotkey_always_hide_hidden_ships);
+ 			}
+@@ -1595,7 +1566,6 @@ void mod_table_reset()
  	Lead_indicator_behavior = leadIndicatorBehavior::DEFAULT;
  	Thruster_easing = 0;
  	Always_use_distant_firepoints = false;

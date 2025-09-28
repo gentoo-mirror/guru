@@ -5,7 +5,7 @@ EAPI=8
 
 RUST_MIN_VER="1.77.0"
 
-inherit cargo desktop fcaps linux-info systemd xdg-utils
+inherit cargo desktop fcaps linux-info systemd xdg
 
 DESCRIPTION="Cross-platform Text Expander written in Rust"
 HOMEPAGE="https://espanso.org"
@@ -77,12 +77,4 @@ src_install() {
 pkg_postinst() {
 	# See https://espanso.org/docs/install/linux/#adding-the-required-capabilities
 	use wayland && fcaps cap_dac_override "usr/bin/${PN}"
-
-	xdg_icon_cache_update
-	xdg_desktop_database_update
-}
-
-pkg_postrm() {
-	xdg_icon_cache_update
-	xdg_desktop_database_update
 }

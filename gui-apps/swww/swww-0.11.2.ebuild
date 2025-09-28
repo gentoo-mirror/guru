@@ -29,11 +29,11 @@ CRATES="
 	byteorder-lite@0.1.0
 	byteorder@1.5.0
 	bytes@1.10.1
-	cfg-expr@0.20.2
+	cfg-expr@0.20.3
 	cfg-if@1.0.3
-	clap@4.5.47
-	clap_builder@4.5.47
-	clap_complete@4.5.57
+	clap@4.5.48
+	clap_builder@4.5.48
+	clap_complete@4.5.58
 	clap_derive@4.5.47
 	clap_lex@0.7.5
 	color_quant@1.1.0
@@ -67,12 +67,12 @@ CRATES="
 	gif@0.13.3
 	half@2.6.0
 	hashbrown@0.13.2
-	hashbrown@0.15.5
+	hashbrown@0.16.0
 	heck@0.5.0
 	image-webp@0.2.4
 	image@0.25.8
 	imagesize@0.13.0
-	indexmap@2.11.1
+	indexmap@2.11.4
 	is_terminal_polyfill@1.70.1
 	keyframe@1.1.1
 	kurbo@0.11.3
@@ -80,7 +80,6 @@ CRATES="
 	libc@0.2.175
 	libm@0.2.15
 	linux-raw-sys@0.11.0
-	linux-raw-sys@0.9.4
 	litrs@0.4.2
 	log@0.4.28
 	memchr@2.7.5
@@ -104,7 +103,7 @@ CRATES="
 	predicates-tree@1.0.12
 	predicates@3.1.3
 	proc-macro2@1.0.101
-	pxfm@0.1.23
+	pxfm@0.1.24
 	qoi@0.4.1
 	quick-error@2.0.1
 	quick-xml@0.38.3
@@ -114,11 +113,12 @@ CRATES="
 	resvg@0.45.1
 	rgb@0.8.52
 	roxmltree@0.20.0
-	rustix@1.1.1
+	rustix@1.1.2
 	rustybuzz@0.20.1
 	sd-notify@0.4.5
-	serde@1.0.219
-	serde_derive@1.0.219
+	serde@1.0.225
+	serde_core@1.0.225
+	serde_derive@1.0.225
 	serde_spanned@0.6.9
 	simd-adler32@0.3.7
 	simplecss@0.2.2
@@ -149,7 +149,7 @@ CRATES="
 	unicode-bidi-mirroring@0.4.0
 	unicode-bidi@0.3.18
 	unicode-ccc@0.4.0
-	unicode-ident@1.0.18
+	unicode-ident@1.0.19
 	unicode-properties@0.1.3
 	unicode-script@0.5.7
 	unicode-vo@0.1.0
@@ -158,8 +158,8 @@ CRATES="
 	version-compare@0.2.0
 	version_check@0.9.5
 	wait-timeout@0.2.1
-	waybackend-scanner@0.5.0
-	waybackend@0.5.0
+	waybackend-scanner@0.6.2
+	waybackend@0.6.2
 	weezl@0.1.10
 	windows-link@0.1.3
 	windows-link@0.2.0

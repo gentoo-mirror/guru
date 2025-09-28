@@ -1,4 +1,4 @@
-# Copyright 2022-2024 Gentoo Authors
+# Copyright 2022-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -53,8 +53,6 @@ PATCHES=(
 	"${FILESDIR}/${P}-deps-fix.patch"
 	"${FILESDIR}/${P}-dont-build-lz4.patch"
 	"${FILESDIR}/${P}-make-arch-independent.patch"
-	# bug 859982
-	"${FILESDIR}/${P}-fix-odr.patch"
 	# bug 917418
 	"${FILESDIR}/${P}-respect-flags.patch"
 )
