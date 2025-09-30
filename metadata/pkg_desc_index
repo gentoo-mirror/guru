@@ -80,7 +80,7 @@ app-accessibility/rhvoice 1.14.0 1.16.4: Multilingual text-to-speech engine (met
 app-accessibility/rhvoice-core 1.14.0-r1 1.16.4: Multilingual text-to-speech engine
 app-accessibility/speakup-tools 20121017: Tools to customize speakup module
 app-accessibility/whisper-cpp 1.7.6: Port of OpenAI's Whisper model in C/C++
-app-admin/agru 0.1.15 0.1.16: A tool for managing GitLab groups and projects
+app-admin/agru 0.1.16 0.1.17: A tool for managing GitLab groups and projects
 app-admin/akita 0.1.4: An HTTP log monitoring tool for your terminal
 app-admin/ananicy-cpp 1.1.1-r3: Ananicy rewritten in C++ for much lower CPU and memory usage
 app-admin/antidot 0.6.3: Cleans up your $HOME from those pesky dotfiles
@@ -365,7 +365,6 @@ app-text/epubgrep 0.6.2: Search tool for EPUB e-books
 app-text/ford 6.2.5 7.0.8-r1 7.0.9-r1 7.0.10 7.0.11: FORD, automatic documentation generator for modern Fortran programs
 app-text/harper 0.59.0: The language checker for developers.
 app-text/jrnl 4.1 4.2: Collect your thoughts and notes without leaving the command line
-app-text/klogg 22.06.0.1289-r1: A GUI application to browse and search through long and complex log files
 app-text/komikku 1.86.0: Manga reader for GNOME
 app-text/koodo-reader-bin 1.5.1 1.6.3: A modern ebook manager and reader with sync and backup capacities
 app-text/lchat 1.0-r2: Line oriented front end for ii-like chat programs
@@ -736,7 +735,7 @@ dev-python/evernote2 1.0.3 9999: Unofficial Evernote SDK for Python 3
 dev-python/exif 1.6.0: Read and modify image EXIF metadata using Python.
 dev-python/fastapi 0.115.13 0.115.14 0.116.0: FastAPI framework, high performance, easy to learn, ready for production
 dev-python/find-libpython 0.4.0: Finds the libpython associated with the current Python environment
-dev-python/flask-restx 1.3.0: Framework API development with Flask
+dev-python/flask-restx 1.3.0 1.3.2: Framework API development with Flask
 dev-python/flask-socketio 5.5.1: Socket.IO integration for Flask applications.
 dev-python/fontawesomefree 6.5.1: Font Awesome Free
 dev-python/gbinder 1.1.2-r2 9999: Python bindings for libgbinder
@@ -1085,7 +1084,7 @@ games-engines/nxengine-evo 2.6.5_p1-r1: rewrite of the jump-and-run platformer D
 games-engines/ponscripter-fork 3.0.2: Fork of the Ponscripter visual novel engine to take advantage of SDL2
 games-engines/system3-sdl2 1.6.1: SDL2 port of AliceSoft's System3 for Win32 by Takeda Toshiya.
 games-engines/xsystem35-sdl2 2.15.1 2.16.0 2.16.1: Port of xsystem35, a free implementation of AliceSoft's System 3.x game engine.
-games-engines/xsystem4 9999: Cross-platform implementation of AliceSoft's System 4 game engine
+games-engines/xsystem4 1.0.0 9999: Cross-platform implementation of AliceSoft's System 4 game engine
 games-fps/assaultcube 1.3.0.2-r1: Free multiplayer FPS based on the Cube engine
 games-fps/crispy-doom 5.12.0 6.0: A limit-removing enhanced-resolution Doom source port based on Chocolate Doom
 games-fps/etlegacy 2.82.0 2.83.2: Wolfenstein: Enemy Territory 2.60b compatible client/server
@@ -1248,6 +1247,7 @@ gui-apps/tessen 2.2.1-r1: an interactive menu to autotype and copy pass and gopa
 gui-apps/tofi 0.8.1 0.9.1: Fast and simple dmenu/rofi replacement for wlroots-based Wayland compositors
 gui-apps/vicuna 1.25: Tool for uploading files to Wikimedia Commons and other Wikimedia projects
 gui-apps/walker 0.10.3 0.12.0 0.13.26 9999: Multi-Purpose Launcher with a lot of features. Highly Customizable and fast
+gui-apps/wayidle 1.0.1: Wayland idle timeout waiter
 gui-apps/waylock 1.3.0 1.4.0 1.5.0 1.5.0-r2: Small screenlocker for Wayland compositors
 gui-apps/wbg 1.0.2 1.1.0 1.2.0 9999: Super simple wallpaper application
 gui-apps/wdisplays 1.1.3 9999: GUI display configurator for wlroots compositors
@@ -1423,7 +1423,6 @@ media-sound/pianobooster 1.0.0: A MIDI player/game that displays notes and teach
 media-sound/piper 1.3.0: Fast and local neural text-to-speech engine
 media-sound/pipewire-module-xrdp 0.1_pre20230609-r1 0.2: PipeWire module which enables xrdp to use audio redirection
 media-sound/plexamp 4.12.4: A dedicated music player for your Plex media library.
-media-sound/pulseaudio-virtualmic 0.1 9999: Use any offline or online media file or stream as a PulseAudio source
 media-sound/qbitmplayer 3.1.2 3.2.0-r1 3.3.1: Music Player written in C++ & Qt.
 media-sound/qloud 1.4.2: Tool to measure loudspeaker frequency and step responses and distortions
 media-sound/rmpc 0.9.0: A beautiful and configurable TUI client for MPD
@@ -1639,6 +1638,7 @@ net-p2p/ipfs-desktop-bin 0.39.0 0.40.0 0.43.0: A desktop client for IPFS. The IP
 net-p2p/monero 0.18.4.1 0.18.4.2 9999: The secure, private, untraceable cryptocurrency
 net-p2p/monero-gui-bin 0.18.4.0: An open-source GUI wallet developed by the Monero community.
 net-p2p/p2pool 4.5-r2 4.8 4.9 4.9.1 9999: Decentralized pool for Monero mining
+net-p2p/persepolis 5.2.0: Persepolis is a download manager written in Python.
 net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
 net-p2p/yggdrasil-go 0.5.12 9999: An experiment in scalable routing as an encrypted IPv6 overlay network
 net-print/hpuld 1.00.39.15.00.23-r1: HP Unified Linux Driver (for samsung hardware)
@@ -1896,7 +1896,7 @@ www-client/browsh 1.8.2: A fully-modern text-based browser, rendering to TTY and
 www-client/mullvad-browser-bin 14.5.6: The Mullvad Browser is developed to minimize tracking and fingerprinting.
 www-client/nyxt 3.11.8 3.12.0 9999: Nyxt - the hacker's power-browser
 www-client/vimb 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
-www-client/yandex-browser 25.8.1.844_p1: The web browser from Yandex
+www-client/yandex-browser 25.8.1.890_p1: The web browser from Yandex
 www-client/zen-bin 1.14.11b 1.15b 1.15.2b 1.15.3b 1.15.4b 1.15.5b 1.16b: Zen Browser - A fast, privacy-focused Firefox fork
 www-misc/dufs 0.40.0: Dufs is a distinctive utility file server
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits
