@@ -84,3 +84,8 @@ src_configure() {
 	)
 	cmake_src_configure
 }
+
+src_test() {
+	xdg_environment_reset
+	cmake_src_test
+}

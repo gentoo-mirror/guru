@@ -19,19 +19,15 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="
-	!test? (
-		dev-python/pillow[${PYTHON_USEDEP}]
-		>=media-libs/libheif-1.19.5:0/1.19
-	)
-	test? (
-		dev-python/pillow[jpeg,lcms,webp,zlib,${PYTHON_USEDEP}]
-		>=media-libs/libheif-1.19.5:0/1.19[x265]
-	)
+	dev-python/pillow[${PYTHON_USEDEP}]
+	>=media-libs/libheif-1.19.5:=
 "
 BDEPEND="
 	test? (
 		dev-python/defusedxml[${PYTHON_USEDEP}]
 		dev-python/numpy[${PYTHON_USEDEP}]
+		dev-python/pillow[jpeg,lcms,webp,zlib,${PYTHON_USEDEP}]
+		>=media-libs/libheif-1.19.5:=[x265]
 		media-libs/opencv[png,python,${PYTHON_USEDEP}]
 	)
 "
