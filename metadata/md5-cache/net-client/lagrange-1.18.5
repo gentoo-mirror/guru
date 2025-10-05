@@ -1,4 +1,4 @@
-BDEPEND=app-arch/zip virtual/pkgconfig verify-sig? ( sec-keys/openpgp-keys-skyjake ) app-alternatives/ninja >=dev-build/cmake-3.20.5 verify-sig? ( app-crypt/gnupg >=app-portage/gemato-20 )
+BDEPEND=app-arch/zip virtual/pkgconfig verify-sig? ( sec-keys/openpgp-keys-skyjake ) app-alternatives/ninja >=dev-build/cmake-3.28.5 verify-sig? ( app-crypt/gnupg >=app-portage/gemato-20 )
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare test unpack
 DEPEND=>=dev-libs/tfdn-1.9.0:=[ssl] media-libs/libsdl2[X?,sound(+),video(+)] gui? ( X? ( x11-libs/libX11 ) bidi? ( dev-libs/fribidi ) harfbuzz? ( media-libs/harfbuzz:=[truetype(+)] ) mp3? ( media-sound/mpg123-base ) opus? ( media-libs/opusfile ) webp? ( media-libs/libwebp:= ) ) ncurses? ( >=dev-libs/sealcurses-2.0.18_pre20230206:= ) gui? ( X? ( x11-base/xorg-proto ) )
 DESCRIPTION=Desktop GUI client for browsing Geminispace
@@ -13,5 +13,5 @@ RDEPEND=>=dev-libs/tfdn-1.9.0:=[ssl] media-libs/libsdl2[X?,sound(+),video(+)] gu
 REQUIRED_USE=|| ( gui ncurses )
 SLOT=0
 SRC_URI=https://git.skyjake.fi/gemini/lagrange/releases/download/v1.18.5/lagrange-1.18.5.tar.gz verify-sig? ( https://git.skyjake.fi/gemini/lagrange/releases/download/v1.18.5/lagrange-1.18.5.tar.gz.sig )
-_eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	460729dc36f68cf03b044bc1d367e34a	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	verify-sig	4e83419d7fb5d336f6a4de8193968319	xdg	3ef49a87c52c8b77c476351195dfe575
+_eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	cf95ad72ab207889c1668fc0d1bee181	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	verify-sig	4e83419d7fb5d336f6a4de8193968319	xdg	3ef49a87c52c8b77c476351195dfe575
 _md5_=51fc95142b65ea1ec02bced632d5e580

@@ -1,4 +1,4 @@
-BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.20.5 >=dev-lang/go-1.20:= app-arch/unzip virtual/pkgconfig
+BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.28.5 >=dev-lang/go-1.20:= app-arch/unzip virtual/pkgconfig
 DEFINED_PHASES=compile configure install postinst preinst prepare pretend test unpack
 DEPEND=cuda? ( dev-util/nvidia-cuda-toolkit:= ) blas? ( !mkl? ( virtual/blas ) mkl? ( sci-libs/mkl ) ) rocm? ( >=sci-libs/hipBLAS-5.5:=[amdgpu_targets_gfx908(-)?,amdgpu_targets_gfx90a(-)?,amdgpu_targets_gfx942(-)?,amdgpu_targets_gfx1030(-)?,amdgpu_targets_gfx1100(-)?,amdgpu_targets_gfx1101(-)?,amdgpu_targets_gfx1200(-)?,amdgpu_targets_gfx1201(-)?,amdgpu_targets_gfx803(-)?,amdgpu_targets_gfx900(-)?,amdgpu_targets_gfx906(-)?,amdgpu_targets_gfx940(-)?,amdgpu_targets_gfx941(-)?,amdgpu_targets_gfx1010(-)?,amdgpu_targets_gfx1011(-)?,amdgpu_targets_gfx1012(-)?,amdgpu_targets_gfx1031(-)?,amdgpu_targets_gfx1102(-)?,amdgpu_targets_gfx1103(-)?,amdgpu_targets_gfx1150(-)?,amdgpu_targets_gfx1151(-)?] ) >=dev-lang/go-1.23.4
 DESCRIPTION=Get up and running with Llama 3, Mistral, Gemma, and other language models.
@@ -12,5 +12,5 @@ RDEPEND=cuda? ( dev-util/nvidia-cuda-toolkit:= ) blas? ( !mkl? ( virtual/blas ) 
 RESTRICT=test
 SLOT=0
 SRC_URI=https://github.com/ollama/ollama/archive/refs/tags/v0.11.6.tar.gz -> ollama-0.11.6.gh.tar.gz https://github.com/negril/gentoo-overlay-vendored/raw/refs/heads/blobs/ollama-0.11.6-vendor.tar.xz
-_eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	cuda	8b660e223a1695e3884ee4c7dc2c5059	rocm	7de97922067bdf9517649882c94f507d	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	460729dc36f68cf03b044bc1d367e34a	go-env	0e2babf96e7d0b045fc07ad199eb2399	go-module	d96f2a2fd6d8fbad6d94516bf238f885	systemd	a964c0cbe818b5729da1dbfcee5be861
+_eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	cuda	8b660e223a1695e3884ee4c7dc2c5059	rocm	7de97922067bdf9517649882c94f507d	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	cf95ad72ab207889c1668fc0d1bee181	go-env	0e2babf96e7d0b045fc07ad199eb2399	go-module	d96f2a2fd6d8fbad6d94516bf238f885	systemd	a964c0cbe818b5729da1dbfcee5be861
 _md5_=dc32b0197a070cd63dbc502117a4bed3

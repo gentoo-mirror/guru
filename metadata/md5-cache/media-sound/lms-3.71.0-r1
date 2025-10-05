@@ -1,4 +1,4 @@
-BDEPEND=test? ( dev-cpp/gtest ) app-alternatives/ninja >=dev-build/cmake-3.20.5 virtual/pkgconfig
+BDEPEND=test? ( dev-cpp/gtest ) app-alternatives/ninja >=dev-build/cmake-3.28.5 virtual/pkgconfig
 DEFINED_PHASES=compile configure install prepare test
 DEPEND=app-arch/libarchive acct-user/lms dev-cpp/wt:= dev-libs/boost:= dev-libs/libconfig[cxx] dev-libs/pugixml:= media-libs/taglib:= media-video/ffmpeg[lame,opus] sys-libs/pam !stb? ( media-gfx/graphicsmagick ) dev-libs/xxhash stb? ( dev-libs/stb )
 DESCRIPTION=Lightweight Music Server.
@@ -12,5 +12,5 @@ RDEPEND=app-arch/libarchive acct-user/lms dev-cpp/wt:= dev-libs/boost:= dev-libs
 RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://github.com/epoupon/lms/archive/refs/tags/v3.71.0.tar.gz -> lms-3.71.0.tar.gz
-_eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	460729dc36f68cf03b044bc1d367e34a	pam	b56d0c9c20fc5b553f13c8ae165a10a5	systemd	a964c0cbe818b5729da1dbfcee5be861
+_eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	cf95ad72ab207889c1668fc0d1bee181	pam	b56d0c9c20fc5b553f13c8ae165a10a5	systemd	a964c0cbe818b5729da1dbfcee5be861
 _md5_=a2f6d49414ba9769355ca08848fb9ae0

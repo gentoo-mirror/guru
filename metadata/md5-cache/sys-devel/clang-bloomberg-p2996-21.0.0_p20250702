@@ -1,4 +1,4 @@
-BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.20.5
+BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.28.5
 DEFINED_PHASES=compile configure install postinst prepare test
 DEPEND=sys-libs/zlib:0=
 DESCRIPTION=Clang fork implementing experimental support for P2996 (Reflection for C++26)
@@ -11,5 +11,5 @@ LICENSE=Apache-2.0-with-LLVM-exceptions UoI-NCSA BSD MIT public-domain rc
 RDEPEND=sys-libs/zlib:0=
 SLOT=0
 SRC_URI=https://github.com/bloomberg/clang-p2996/archive/d77eff1cbd78fd065668acf93b1f5f400d39134d.tar.gz -> clang-bloomberg-p2996-21.0.0_p20250702.tar.gz
-_eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	460729dc36f68cf03b044bc1d367e34a	prefix	c3c4c93ebda319c0fa7ed6f942ba1010	python-utils-r1	0b620dd604ab8af0bc9cd1bcc66d4f7c
+_eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	cf95ad72ab207889c1668fc0d1bee181	prefix	c3c4c93ebda319c0fa7ed6f942ba1010	python-utils-r1	0b620dd604ab8af0bc9cd1bcc66d4f7c
 _md5_=484912ab9247ba73bc2c4f321f5ad6ab
