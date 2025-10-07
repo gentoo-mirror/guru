@@ -9,7 +9,7 @@ DESCRIPTION="Nintendo Switch Emulator"
 HOMEPAGE="https://eden-emu.dev"
 SRC_URI="
 	https://git.eden-emu.dev/eden-emu/eden/archive/v${PV/_/-}.tar.gz -> ${P}.tar.gz
-	https://github.com/crueter-archive/tzdb_to_nx/releases/download/250725/250725.zip -> nx-tzdb-250725.zip
+	https://git.crueter.xyz/misc/tzdb_to_nx/releases/download/250725/250725.zip -> nx-tzdb-250725.zip
 "
 
 S="${WORKDIR}/${PN}"
@@ -98,7 +98,6 @@ PATCHES=(
 	"${FILESDIR}/${PN}-0.0.3-use-the-bundled-dynarmic-library.patch"
 	"${FILESDIR}/${PN}-0.0.3-use-the-system-discord-rpc-library.patch"
 	"${FILESDIR}/${PN}-0.0.3-use-the-system-mbedtls-library.patch"
-	"${FILESDIR}/${PN}-0.0.3-use-the-system-sirit-library.patch"
 )
 
 # [directory]=license

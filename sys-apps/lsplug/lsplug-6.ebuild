@@ -4,7 +4,7 @@
 EAPI=8
 
 PYTHON_REQ_USE=sqlite
-PYTHON_COMPAT=( python3_{11..12} )
+PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
 DISTUTILS_SINGLE_IMPL=1
 
@@ -15,7 +15,7 @@ HOMEPAGE="https://git.sr.ht/~martijnbraam/lsplug"
 SRC_URI="https://git.sr.ht/~martijnbraam/lsplug/archive/${PV}.tar.gz -> ${P}.tar.gz"
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~arm64"
 
 # For /usr/share/hwdata/usb.ids
 RDEPEND="sys-apps/hwdata"
