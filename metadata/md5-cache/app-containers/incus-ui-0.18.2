@@ -1,0 +1,14 @@
+BDEPEND=net-libs/nodejs[npm] sys-apps/yarn virtual/pkgconfig
+DEFINED_PHASES=compile install postinst postrm prepare
+DEPEND=app-containers/incus net-libs/nodejs[npm]
+DESCRIPTION=Incus web UI module
+EAPI=8
+HOMEPAGE=https://github.com/zabbly/incus-ui-canonical
+INHERIT=systemd
+KEYWORDS=~amd64
+LICENSE=GPL-3
+RDEPEND=app-containers/incus net-libs/nodejs[npm]
+SLOT=0
+SRC_URI=https://github.com/zabbly/incus-ui-canonical/archive/refs/tags/incus-0.18.2.tar.gz -> incus-ui-0.18.2.tar.gz https://github.com/AdelKS/gentoo-distfiles/releases/download/app-containers/incus-ui-0.18.2/incus-ui-0.18.2-deps.tar.xz
+_eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	systemd	a964c0cbe818b5729da1dbfcee5be861
+_md5_=b9ffe5fb3f9f94257b8ea90985e88a7e
