@@ -1,5 +1,4 @@
 DEFINED_PHASES=install postinst postrm preinst prepare
-DEPEND=sys-fs/dosfstools sys-fs/exfat-utils sys-fs/fuse-exfat sys-block/parted
 DESCRIPTION=Creator of bootable USBs, with ability to copy ISOs, persistence storage
 EAPI=8
 HOMEPAGE=https://www.ventoy.net
@@ -7,8 +6,9 @@ IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
 INHERIT=desktop xdg
 KEYWORDS=~amd64
 LICENSE=GPL-3
+RDEPEND=app-accessibility/at-spi2-core:2 dev-libs/glib:2 sys-fs/dosfstools || ( sys-fs/exfatprogs sys-fs/exfat-utils ) sys-fs/fuse-exfat sys-block/parted x11-libs/cairo x11-libs/gdk-pixbuf:2 x11-libs/gtk+:3 x11-libs/pango
 RESTRICT=strip mirror
 SLOT=0
 SRC_URI=https://github.com/ventoy/Ventoy/releases/download/v1.0.98/ventoy-1.0.98-linux.tar.gz
 _eclasses_=desktop	3a72ffe0d8e1dd73af3a1c8c15a59fed	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575
-_md5_=3d135cb9fea848f76d881126c3f232bf
+_md5_=8fbae2525f0102666d41e7217edf1102

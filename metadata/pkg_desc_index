@@ -79,7 +79,7 @@ app-accessibility/mimic1 1.3.0.1-r1 9999: Mycroft's TTS engine, based on CMU's F
 app-accessibility/rhvoice 1.14.0 1.16.4: Multilingual text-to-speech engine (metapackage)
 app-accessibility/rhvoice-core 1.14.0-r1 1.16.4: Multilingual text-to-speech engine
 app-accessibility/speakup-tools 20121017: Tools to customize speakup module
-app-accessibility/whisper-cpp 1.7.6 1.8.0: Port of OpenAI's Whisper model in C/C++
+app-accessibility/whisper-cpp 1.7.6 1.8.1: Port of OpenAI's Whisper model in C/C++
 app-admin/agru 0.1.16 0.1.17: A tool for managing GitLab groups and projects
 app-admin/akita 0.1.4: An HTTP log monitoring tool for your terminal
 app-admin/ananicy-cpp 1.1.1-r3: Ananicy rewritten in C++ for much lower CPU and memory usage
@@ -88,7 +88,7 @@ app-admin/aws-vault 7.2.0: Securely store and access AWS credentials in developm
 app-admin/blahajdots 0.6.0 9999: Bespoke dotfile management for sharkgirls.
 app-admin/boinctui 2.7.1 2.7.1-r1: Fullscreen text mode manager for the BOINC client
 app-admin/chamber 2.13.2: Managing secrets in AWS SSM Parameter Store
-app-admin/chezmoi 2.64.0 2.65.2: Manage your dotfiles across multiple machines, securely
+app-admin/chezmoi 2.64.0 2.65.2 2.66.0: Manage your dotfiles across multiple machines, securely
 app-admin/customrescuecd-x86_64 0.12.7 0.12.8: A system rescue cd or usbstick for desktop and server based on gentoo
 app-admin/dotbot 1.20.1: A tool that bootstraps your dotfiles
 app-admin/fatrace 0.19.0: report system wide file access events
@@ -125,7 +125,7 @@ app-arch/nix-compress 0.3.0: Modern implementation of the ancient unix compress(
 app-arch/ouch 0.6.1: A cli utility for easily compressing and decompressing files and directories.
 app-arch/unalz 0.65-r1 0.65-r2: Extract ALZ archives
 app-arch/zarchive 0.1.2: Library for creating and reading zstd-compressed file archives (.zar)
-app-backup/b2 4.3.2: Command-line tool for BackBlaze's B2 product
+app-backup/b2 4.4.2: Command-line tool for BackBlaze's B2 product
 app-backup/blocksync-fast 1.0.3 1.0.4 1.0.6 1.0.7: Fast block device sync with digest, designed to improve block-based backups.
 app-backup/grub-btrfs 4.11-r1 4.12 4.13 9999: Improves Grub by adding btrfs snapshots to the Grub menu.
 app-backup/kopia 0.21.1: Kopia - Fast And Secure Open-Source Backup
@@ -226,7 +226,7 @@ app-misc/badvideo 5.2 9999: Ruin your videos in SECONDS!
 app-misc/blahaj 2.2.0-r1: Gay sharks at your local terminal
 app-misc/brightnessctl 0.5.1: A program to read and control device brightness
 app-misc/catt 0.12.13 0.13.0: Send videos from many, many online sources to your Chromecast
-app-misc/cepl 27.0.0 9999: A readline C and C++ REPL with history, tab-completion, and undo.
+app-misc/cepl 27.0.1 9999: A readline C and C++ REPL with history, tab-completion, and undo.
 app-misc/chayang 0.1.0: Gradually dim the screen.
 app-misc/cheat 4.2.3 4.3.3-r1: cheat allows you to create and view interactive cheatsheets on the command-line
 app-misc/clifm 1.11 1.13 1.16 1.18 9999: The command line file manager
@@ -513,7 +513,7 @@ dev-embedded/idf-component-manager 2.1.2 2.2.2: Tool for installing ESP-IDF comp
 dev-embedded/mv88e6xxx-dump 0.2.0_pre20210327: Dump information about Marvell mv88e6xxx Ethernet switches
 dev-embedded/nxp-gui-guider 1.7.2-r1: GUI Guider is a user-friendly GUI development tool for LVGL
 dev-embedded/pico-sdk 2.1.1: Libraries and tools for C/C++ development on RP2040 and RP2350 microcontrollers.
-dev-embedded/qdl 2.1 9999: Tool to communicate with Qualcomm System On a Chip bootroms
+dev-embedded/qdl 2.2 9999: Tool to communicate with Qualcomm System On a Chip bootroms
 dev-embedded/rauc 1.14: Lightweight update client that runs on your Embedded Linux device
 dev-embedded/rpi-openocd 9999: OpenOCD - Open On-Chip Debugger (Raspberry Pi Fork)
 dev-embedded/squareline-studio 1.3.2: Visual drag-and-drop UI editor for LVGL
@@ -524,7 +524,7 @@ dev-erlang/ranch 1.7.1 1.8.0 2.0.0: Socket acceptor pool for TCP protocols.
 dev-erlang/yval 1.0.10: YAML validator
 dev-games/godot-dotnet 4.4.1-r1 4.5: Multi-platform 2D and 3D game engine with a feature-rich editor
 dev-games/surgescript 0.5.5 9999: scripting language made for opensurge
-dev-games/unityhub 3.9.1 3.10.0 3.11.0 3.11.1: Official Unity tool for managing Unity Engines and projects
+dev-games/unityhub 3.9.1 3.10.0 3.11.0 3.11.1 3.14.3: Official Unity tool for managing Unity Engines and projects
 dev-go/get-ego-vendor 0.2.0: Utility to generate EGO_SUM data for ebuilds
 dev-go/protorpc 1.1.4: Google Protocol Protobufs RPC for Go
 dev-go/staticcheck 0.3.3 9999: The advanced Go linter
@@ -1349,6 +1349,7 @@ media-gfx/fontpreview 1.0.6: Highly customizable and minimal font previewer writ
 media-gfx/gephi-bin 0.9.6 0.10.1: The Open Graph Viz Platform
 media-gfx/glslViewer 3.2.4: Console-based GLSL live-coding viewer
 media-gfx/mayo 0.9.0: Opensource 3D CAD viewer and converter
+media-gfx/mirage 0.11.2: Fast and simple image viewer based on Python and GTK
 media-gfx/nsxiv 32 33 9999: Neo (or New or Not) Simple (or Small or Suckless) X Image Viewer
 media-gfx/oda-file-converter 23.5.0.0: For converting between different versions of .dwg and .dxf
 media-gfx/pdf4qt 1.5.1.0 9999: Open source PDF WYSIWYG editor based on Qt
@@ -1415,7 +1416,7 @@ media-sound/eartag 0.5.0 0.5.1: GTK4 MusicBrainz audio tagger
 media-sound/fooyin 0.9.1 0.9.2 9999: A customizable music player, Qt clone of foobar2000
 media-sound/furnace 0.6 0.6.5-r1 0.6.7: a multi-system chiptune tracker compatible with DefleMask modules
 media-sound/gapless 4.3.1 4.4: A GTK4 music player
-media-sound/goxlr-utility 1.2.2 9999: A utility for monitoring and controlling a TC-Helicon GoXLR or GoXLR Mini
+media-sound/goxlr-utility 1.2.3 9999: A utility for monitoring and controlling a TC-Helicon GoXLR or GoXLR Mini
 media-sound/jacktrip 2.4.0: Send JACK audio over a network
 media-sound/jriver 31.0.83: A cross-platform media center, famous for high quality of audio.
 media-sound/kew 2.4.4-r1: kew (/kjuː/) is a command-line music player for Linux.
@@ -1452,6 +1453,7 @@ media-sound/supersonic 0.17.0 0.18.0 0.18.1: A lightweight and full-featured cro
 media-sound/tenacity 1.3.4-r4: Easy-to-use, privacy-friendly, FLOSS, cross-platform multi-track audio editor
 media-sound/tidal-hifi-bin 5.16.0-r1 5.17.0: Web version of Tidal running in electron with Hi-Fi support thanks to Widevine.
 media-sound/yewtube 2.12.0 9999: Terminal-based YouTube player and downloader
+media-sound/ymuse 0.22: GTK client for Music Player Daemon (MPD) written in Go
 media-sound/youtube-music-bin 3.10.0 3.11.0: YouTube Music Desktop App bundled with custom plugins
 media-sound/zita-ajbridge 0.8.4-r2: zita-a2j and zita-j2a - bridges between ALSA and JACK
 media-video/ciano 0.2.4-r2: A multimedia file converter focused on simplicity
@@ -1584,7 +1586,7 @@ net-mail/dovecot-fts-xapian 1.7.17 1.7.18 1.8 1.8.1 1.8.3 1.8.4 1.8.6 1.9 1.9.1 
 net-mail/hydroxide 0.2.27 0.2.28 0.2.29 9999: A third-party, open-source ProtonMail CardDAV, IMAP and SMTP bridge
 net-mail/pop 0.2.0: Send emails from your terminal
 net-misc/FORT-validator 1.5.4-r2 1.6.1-r2 1.6.2-r2: FORT validator is an open source RPKI validator
-net-misc/brickd 2.4.7: Network Daemon bridging API bindings to Tinkerforge hardware bricks
+net-misc/brickd 2.4.7 2.4.8: Network Daemon bridging API bindings to Tinkerforge hardware bricks
 net-misc/can-utils 2021.08.0 2023.03 9999-r3: CAN userspace utilities and tools
 net-misc/cellbroadcastd 0.0.2: DBus service for cellular broadcast messages
 net-misc/clatd 1.6-r1 2.1.0: A CLAT / SIIT-DC Edge Relay implementation for Linux
@@ -1595,7 +1597,7 @@ net-misc/cve-client 1.1.1 9999: CLI-based client / toolbox for CVE.org
 net-misc/eg25-manager 0.4.2: Daemon for managing the Quectel EG25 modem
 net-misc/ffsend 0.2.77 9999: Easily and securely share files from the command line
 net-misc/fileshelter 6.2.0 6.3.0: FileShelter is a “one-click” file sharing web application
-net-misc/freetube-bin 0.23.9_beta: A private YouTube desktop client
+net-misc/freetube-bin 0.23.10_beta 0.23.11_beta: A private YouTube desktop client
 net-misc/gdown 5.2.0: Google Drive public file/folder downloader
 net-misc/gdrive 3.9.0-r1 3.9.1-r1: Google Drive CLI Client
 net-misc/gemget 1.9.0: Command line downloader for the Gemini protocol
@@ -1695,9 +1697,9 @@ phosh-base/phosh-shell 0.47.0-r1 0.48.0 0.49.0: Pure Wayland shell for mobile de
 phosh-base/phosh-tour 0.43.0 0.44.0 0.45.0 0.46.0 0.47.0: Introduction to phosh on smartphones
 phosh-base/xdg-desktop-portal-phosh 0.47.0 0.48.0 0.49.0: Phosh portal backend for xdg-desktop-portal
 sci-biology/cmdock 0.2.0-r2 0.2.0-r3: Program for docking ligands to proteins and nucleic acids
-sci-biology/cytoscape-bin 3.10.3 3.10.4: A visualization platform for molecular interaction networks
+sci-biology/cytoscape-bin 3.10.4: A visualization platform for molecular interaction networks
 sci-biology/geneathome 1.10-r5: BOINC application for expanding Gene Regulatory Networks (GRN)
-sci-biology/jalview-bin 2.11.4.1 2.11.5.0: Editor of multiple sequence alignments.
+sci-biology/jalview-bin 2.11.5.0: Editor of multiple sequence alignments.
 sci-chemistry/vesta-bin 3.5.8: Visualisation for Electronic and STructural Analysis.
 sci-chemistry/xcrysden 1.6.2-r2: For the visualisation of molecular and crystal structures.
 sci-electronics/bender 0.28.1-r1: A dependency management tool for hardware projects
@@ -1826,7 +1828,7 @@ sys-boot/drbl 5.4.2: Diskless Remote Boot in Linux
 sys-boot/etcher-bin 2.1.4: Flash OS images to SD cards & USB drives, safely and easily.
 sys-boot/grml-rescueboot 0.6.1: grub2 script to add ISO images to the grub2 boot menu
 sys-boot/mkusb 23.2.0: CLI and GUI for creating bootable live USB, with optional persistent storage
-sys-boot/ventoy-bin 1.0.97 1.0.98: Creator of bootable USBs, with ability to copy ISOs, persistence storage
+sys-boot/ventoy-bin 1.0.98-r1: Creator of bootable USBs, with ability to copy ISOs, persistence storage
 sys-boot/zfsbootmenu 1.12.0 2.2.2 2.3.0 3.0.1: ZFS bootloader for root-on-ZFS systems
 sys-cluster/genders 1.28.1-r1: Static cluster configuration database used for cluster configuration management
 sys-cluster/kops-bin 1.25.3 1.31.0: Kubernetes Operations
@@ -1835,7 +1837,7 @@ sys-devel/clang-bloomberg-p2996 21.0.0_p20250702 9999: Clang fork implementing e
 sys-devel/fcode-utils 1.0.3: Set of utilities to process FCODE, OpenFirmware's byte code
 sys-devel/lcc 2021.01.11-r1: The lcc retargetable ANSI C compiler
 sys-firmware/lenovolegionlinux 9999: Lenovo Legion Linux kernel module
-sys-fs/bcachefs-kmod 1.31.5: Linux bcachefs kernel module for sys-fs/bcachefs-tools
+sys-fs/bcachefs-kmod 1.31.8: Linux bcachefs kernel module for sys-fs/bcachefs-tools
 sys-fs/btrd 0.5.4: The btrfs debugger
 sys-fs/btrfs-dump 20250918: Metadata dumper for btrfs
 sys-fs/btrfs-heatmap 9-r1: Python 3 script to draw a heatmap of a btrfs filesystem
@@ -1853,7 +1855,6 @@ sys-fs/jefferson 0.4.6: JFFS2 filesystem extraction tool
 sys-fs/mdevd 0.1.7.0: small daemon managing kernel hotplug events, similarly to udevd
 sys-fs/mountpoint-s3-bin 1.1.1: Fuse for AWS S3 (Simple Storage Service), official
 sys-fs/ntfs2btrfs 20250616: Conversion tool from NTFS to Btrfs
-sys-fs/sanoid 2.2.0 9999: Policy-driven snapshot management and replication tools for OpenZFS.
 sys-fs/ufiformat 0.9.9: USB Floppy Disk formatting tool
 sys-fs/vramfs 0_p20221214: VRAM based file system for Linux
 sys-fs/xfs_undelete 15.0: An undelete tool for the XFS filesystem
