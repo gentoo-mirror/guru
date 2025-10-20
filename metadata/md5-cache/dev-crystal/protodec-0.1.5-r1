@@ -1,4 +1,4 @@
-BDEPEND=|| ( dev-lang/crystal dev-lang/crystal-bin ) || ( dev-util/shards dev-lang/crystal-bin ) >=dev-util/gshards-0.2
+BDEPEND=|| ( >=dev-lang/crystal-1.16.3 >=dev-lang/crystal-bin-1.16.3 ) || ( dev-util/shards dev-lang/crystal-bin ) >=dev-util/gshards-0.2
 DEFINED_PHASES=compile configure install prepare test
 DEPEND=dev-libs/boehm-gc dev-libs/libevent:= dev-libs/libpcre
 DESCRIPTION=Command-line tool to encode and decode arbitrary protobuf data
@@ -11,5 +11,5 @@ LICENSE=GPL-3
 RDEPEND=dev-libs/boehm-gc dev-libs/libevent:= dev-libs/libpcre
 SLOT=0
 SRC_URI=https://github.com/iv-org/protodec/archive/refs/tags/v0.1.5.tar.gz -> protodec-0.1.5.tar.gz
-_eclasses_=edo	a5e294016aa84979fcb2459749eb80b2	toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	crystal-utils	25e840513c93fc4f0194e6240a0d756d	shards	19e21a696fe66db90959968325a9c97f
+_eclasses_=edo	a5e294016aa84979fcb2459749eb80b2	toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	crystal-utils	ad02a0a13b9cbfb512929b949a8e5b2d	shards	19e21a696fe66db90959968325a9c97f
 _md5_=63d6699083779f6ebd1c8531422fa1f5
