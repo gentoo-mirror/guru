@@ -6,9 +6,11 @@ EAPI=8
 CRATES="
 "
 
+RUST_MIN_VER="1.82.0"
+
 inherit cargo
 
-DESCRIPTION="A diff filter highlighting changed line parts"
+DESCRIPTION="Diff filter highlighting changed line parts"
 HOMEPAGE="https://github.com/walles/riff/"
 SRC_URI="https://github.com/walles/riff/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
 SRC_URI+=" https://raw.githubusercontent.com/PPN-SD/vendor/refs/tags/${P}/${P}-crates.tar.xz"
