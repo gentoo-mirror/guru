@@ -1,15 +1,16 @@
 BDEPEND=dev-lang/ocaml dev-ml/dune
 DEFINED_PHASES=compile install test
-DEPEND=>=dev-lang/ocaml-4.8:=[ocamlopt?] dev-ml/eqaf:=[ocamlopt?] dev-lang/ocaml:=[ocamlopt?] dev-ml/dune:=
+DEPEND=>=dev-lang/ocaml-4.8:=[ocamlopt?] dev-ml/eqaf:=[ocamlopt?] test? ( >=dev-ml/fmt-0.8.7:=[ocamlopt?] dev-ml/alcotest:=[ocamlopt?] dev-ml/bos dev-ml/astring dev-ml/fpath dev-ml/rresult dev-ml/findlib:=[ocamlopt?] dev-ml/crowbar:=[ocamlopt?] ) dev-lang/ocaml:=[ocamlopt?] dev-ml/dune:=
 DESCRIPTION=Hashes implementations (SHA*, RIPEMD160, BLAKE2* and MD5)
 EAPI=8
 HOMEPAGE=https://github.com/mirage/digestif
 INHERIT=dune
-IUSE=+ocamlopt
+IUSE=+ocamlopt test
 KEYWORDS=~amd64
 LICENSE=MIT
 RDEPEND=>=dev-lang/ocaml-4.8:=[ocamlopt?] dev-ml/eqaf:=[ocamlopt?] dev-lang/ocaml:=[ocamlopt?] dev-ml/dune:=
-SLOT=0
+RESTRICT=!test? ( test )
+SLOT=0/1.3.0
 SRC_URI=https://github.com/mirage/digestif/archive/v1.3.0.tar.gz -> digestif-1.3.0.gh.tar.gz
 _eclasses_=edo	a5e294016aa84979fcb2459749eb80b2	multiprocessing	1e32df7deee68372153dca65f4a7c21f	dune	4304f35da0fafecd98eb149d0b7ed4d4
-_md5_=5926be2908ad222f50db026922dd78df
+_md5_=3760093af94f9960736f5c2400df64f2
