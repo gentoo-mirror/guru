@@ -3,13 +3,15 @@
 
 EAPI=8
 
+CRATES="
+"
+
 declare -A GIT_CRATES=(
-	[cl3]='https://github.com/kenba/cl3;cb019aac330ab8243804be02b7183a1c5a211caa;cl3-%commit%'
-	[libdrm_amdgpu_sys]='https://github.com/Umio-Yasuno/libdrm-amdgpu-sys-rs;c6d85fce871f79f763162ba15accdfcae74b2d40;libdrm-amdgpu-sys-rs-%commit%'
+	[cl3]='https://github.com/kenba/cl3;4da03b19d19ce2ca735e09dc5e2a1bcfa133beff;cl3-%commit%'
 )
 
-LLVM_COMPAT=( {18..20} )
-RUST_MIN_VER="1.76.0"
+LLVM_COMPAT=( {18..21} )
+RUST_MIN_VER="1.85.0"
 
 inherit cargo llvm-r2 xdg
 
@@ -29,8 +31,8 @@ S="${WORKDIR}/${P^^}"
 LICENSE="MIT"
 # Dependent crate licenses
 LICENSE+="
-	Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD CC0-1.0 GPL-3 ISC MIT
-	MPL-2.0 Unicode-3.0 ZLIB
+	Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD CC0-1.0
+	CDLA-Permissive-2.0 ISC LGPL-3+ MIT MPL-2.0 Unicode-3.0 ZLIB
 "
 SLOT="0"
 KEYWORDS="~amd64"
