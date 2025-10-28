@@ -1,4 +1,4 @@
-BDEPEND=gtk-doc? ( >=dev-util/gi-docgen-2021.1 ) man? ( dev-python/docutils ) vala? ( || ( dev-lang/vala:0.56[vapigen(+)] ) ) verify-sig? ( sec-keys/openpgp-keys-phosh ) >=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array virtual/pkgconfig verify-sig? ( app-crypt/gnupg >=app-portage/gemato-20 )
+BDEPEND=gtk-doc? ( >=dev-util/gi-docgen-2021.1 ) man? ( dev-python/docutils ) vala? ( || ( dev-lang/vala:0.56[vapigen(+)] ) ) verify-sig? ( sec-keys/openpgp-keys-phosh ) >=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array virtual/pkgconfig verify-sig? ( app-alternatives/gpg >=app-portage/gemato-20 )
 DEFINED_PHASES=compile configure install postinst postrm prepare test unpack
 DEPEND=>=dev-libs/glib-2.78:2 >=dev-libs/json-glib-1.6.2 introspection? ( dev-libs/gobject-introspection )
 DESCRIPTION=Mobile related helpers for glib based projects
@@ -14,5 +14,5 @@ REQUIRED_USE=gtk-doc? ( introspection ) vala? ( introspection )
 RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://sources.phosh.mobi/releases/gmobile/gmobile-0.3.1.tar.xz verify-sig? ( https://sources.phosh.mobi/releases/gmobile/gmobile-0.3.1.tar.xz.asc )
-_eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	dbb8c4d794033ad7e7221eaf567a6c90	meson	99466844dd8d4fcfb07578a76f5a9922	udev	f3d9a4376ebd22131726a68e1a0a058f	vala	e477903dbe0105930c51f170a592dc16	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	verify-sig	8e2e065056335c16cb9f4ab83673c939
+_eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	dbb8c4d794033ad7e7221eaf567a6c90	meson	99466844dd8d4fcfb07578a76f5a9922	udev	f3d9a4376ebd22131726a68e1a0a058f	vala	e477903dbe0105930c51f170a592dc16	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	verify-sig	2cbcfd9aec371384bdcd6f99e8692a45
 _md5_=f7af9d197f6775cfce87677435efc422
