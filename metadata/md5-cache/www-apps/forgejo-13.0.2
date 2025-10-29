@@ -1,0 +1,17 @@
+BDEPEND=>=dev-lang/go-1.25.0 >=dev-lang/go-1.20:= app-arch/unzip virtual/pkgconfig
+DEFINED_PHASES=compile configure install postinst prepare unpack
+DEPEND=acct? ( acct-group/git acct-user/git[gitea] ) pam? ( sys-libs/pam )
+DESCRIPTION=A self-hosted lightweight software forge
+EAPI=8
+HOMEPAGE=https://forgejo.org/ https://codeberg.org/forgejo/forgejo
+IDEPEND=filecaps? ( sys-libs/libcap )
+INHERIT=fcaps go-module tmpfiles systemd flag-o-matic eapi9-ver
+IUSE=+acct pam sqlite pie +filecaps
+KEYWORDS=~amd64 ~arm ~arm64 ~riscv ~x86
+LICENSE=Apache-2.0 BSD BSD-2 ISC MIT MPL-2.0
+RDEPEND=acct? ( acct-group/git acct-user/git[gitea] ) pam? ( sys-libs/pam ) >=dev-vcs/git-2.34.1 !www-apps/gitea virtual/tmpfiles
+RESTRICT=test
+SLOT=0
+SRC_URI=https://codeberg.org/forgejo/forgejo/releases/download/v13.0.2/forgejo-src-13.0.2.tar.gz -> forgejo-13.0.2.tar.gz
+_eclasses_=fcaps	e868eb04ddde039c83f6505a0cd0a4ac	multiprocessing	1e32df7deee68372153dca65f4a7c21f	toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	go-env	0e2babf96e7d0b045fc07ad199eb2399	go-module	d96f2a2fd6d8fbad6d94516bf238f885	tmpfiles	9a9814db5a3fbd4f1e921c05297e7735	systemd	a964c0cbe818b5729da1dbfcee5be861	eapi9-ver	6a71fa30cdb3fe445114fdeab156c1f0
+_md5_=178e9234f01d4dae3a2f720bf259af90
