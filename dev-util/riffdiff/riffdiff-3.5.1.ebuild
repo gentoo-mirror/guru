@@ -8,12 +8,14 @@ CRATES="
 
 RUST_MIN_VER="1.82.0"
 
-inherit cargo
+inherit cargo optfeature
 
+# last update of Cargo.lock
+CRATES_PV="3.4.0"
 DESCRIPTION="Diff filter highlighting changed line parts"
 HOMEPAGE="https://github.com/walles/riff/"
 SRC_URI="https://github.com/walles/riff/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
-SRC_URI+=" https://raw.githubusercontent.com/PPN-SD/vendor/refs/tags/${P}/${P}-crates.tar.xz"
+SRC_URI+=" https://raw.githubusercontent.com/PPN-SD/vendor/refs/tags/${PN}-${CRATES_PV}/${PN}-${CRATES_PV}-crates.tar.xz"
 S="${WORKDIR}/${P/diff/}"
 
 LICENSE="MIT"
@@ -24,3 +26,12 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 QA_FLAGS_IGNORED="usr/bin/riff"
+
+src_install() {
+	cargo_src_install
+	dodoc README.md
+}
+
+pkg_postinst() {
+	optfeature "a nice pager with extra rendering" sys-apps/moor
+}
