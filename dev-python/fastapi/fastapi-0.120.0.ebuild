@@ -27,9 +27,10 @@ LICENSE="MIT"
 SLOT="0"
 
 RDEPEND="
+	>=dev-python/annotated-doc-0.0.2[${PYTHON_USEDEP}]
 	<dev-python/pydantic-3.0.0[${PYTHON_USEDEP}]
 	>=dev-python/pydantic-1.7.4[${PYTHON_USEDEP}]
-	<dev-python/starlette-0.48.0[${PYTHON_USEDEP}]
+	<dev-python/starlette-0.49.0[${PYTHON_USEDEP}]
 	>=dev-python/starlette-0.40.0[${PYTHON_USEDEP}]
 	>=dev-python/typing-extensions-4.8.0[${PYTHON_USEDEP}]
 "
@@ -37,15 +38,14 @@ BDEPEND="
 	test? (
 		dev-python/aiosqlite[${PYTHON_USEDEP}]
 		>=dev-python/anyio-3.2.1[${PYTHON_USEDEP}]
-		dev-python/bcrypt[${PYTHON_USEDEP}]
+		dev-python/argon2-cffi[${PYTHON_USEDEP}]
 		dev-python/dirty-equals[${PYTHON_USEDEP}]
 		dev-python/email-validator[${PYTHON_USEDEP}]
 		>=dev-python/flask-1.1.2[${PYTHON_USEDEP}]
 		>=dev-python/inline-snapshot-0.21.1[${PYTHON_USEDEP}]
 		>=dev-python/jinja2-3.1.5[${PYTHON_USEDEP}]
 		dev-python/orjson[${PYTHON_USEDEP}]
-		<dev-python/passlib-2.0.0[${PYTHON_USEDEP}]
-		>=dev-python/passlib-1.7.2[${PYTHON_USEDEP}]
+		>=dev-python/pwdlib-0.2.1[${PYTHON_USEDEP}]
 		dev-python/pydantic-settings[${PYTHON_USEDEP}]
 		dev-python/pyjwt[${PYTHON_USEDEP}]
 		>=dev-python/python-multipart-0.0.18[${PYTHON_USEDEP}]
@@ -60,9 +60,9 @@ BDEPEND="
 
 PATCHES=(
 	"${FILESDIR}/${PN}-0.115.6-httpx-0.28-test-fix.patch"
-	"${FILESDIR}/${PN}-0.115.14-starlette-bump.patch"
 )
 
+EPYTEST_PLUGINS=( anyio )
 distutils_enable_tests pytest
 
 EPYTEST_DESELECT=(
