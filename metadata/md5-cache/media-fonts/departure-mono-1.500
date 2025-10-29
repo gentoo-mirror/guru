@@ -1,0 +1,13 @@
+BDEPEND=app-arch/unzip X? ( >=x11-apps/mkfontscale-1.2.0 media-fonts/encodings )
+DEFINED_PHASES=install postinst postrm setup
+DESCRIPTION=A monospaced pixel font with a lo-fi, techy vibe
+EAPI=8
+HOMEPAGE=https://departuremono.com/
+INHERIT=font
+IUSE=X
+KEYWORDS=amd64 ~arm arm64 ~loong ~ppc ~ppc64 ~riscv x86 ~amd64-linux ~x86-linux ~x64-macos
+LICENSE=MIT
+SLOT=0
+SRC_URI=https://github.com/rektdeckard/departure-mono/releases/download/v1.500/DepartureMono-1.500.zip
+_eclasses_=font	aa113a3df9cd0a9693a1c1ee7c34a6eb
+_md5_=05263b64c1c68340aec11e46f4c7f809

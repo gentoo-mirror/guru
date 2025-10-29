@@ -1,0 +1,14 @@
+BDEPEND=dev-util/wayland-scanner virtual/pkgconfig
+DEFINED_PHASES=compile install
+DEPEND=dev-libs/wayland dev-cpp/yaml-cpp:= dev-libs/libinput:= virtual/libudev:=
+DESCRIPTION=Auto Manage Your Wayland Displays
+EAPI=8
+HOMEPAGE=https://github.com/alex-courtis/way-displays
+INHERIT=toolchain-funcs
+KEYWORDS=~amd64
+LICENSE=MIT
+RDEPEND=dev-libs/wayland dev-cpp/yaml-cpp:= dev-libs/libinput:= virtual/libudev:=
+SLOT=0
+SRC_URI=https://github.com/alex-courtis/way-displays/archive/refs/tags/1.15.0.tar.gz -> way-displays-1.15.0.tar.gz
+_eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db
+_md5_=d802a686bcf0e75e790781d20923b5ed

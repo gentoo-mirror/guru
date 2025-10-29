@@ -1,0 +1,16 @@
+BDEPEND=verify-sig? ( sec-keys/signify-keys-oriole-systems ) python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 ) python_targets_python3_13? ( dev-lang/python:3.13 ) python_targets_python3_14? ( dev-lang/python:3.14 ) >=dev-python/gpep517-16[python_targets_python3_11(-)?,python_targets_python3_12(-)?,python_targets_python3_13(-)?,python_targets_python3_14(-)?] >=dev-python/hatchling-1.27.0[python_targets_python3_11(-)?,python_targets_python3_12(-)?,python_targets_python3_13(-)?,python_targets_python3_14(-)?] verify-sig? ( app-crypt/signify )
+DEFINED_PHASES=compile configure install prepare test unpack
+DESCRIPTION=Search Quassel logs for matching messages and print them
+EAPI=8
+HOMEPAGE=https://git.oriole.systems/quarg
+INHERIT=distutils-r1 verify-sig
+IUSE=sqlite postgres python_targets_python3_11 python_targets_python3_12 python_targets_python3_13 python_targets_python3_14 verify-sig
+KEYWORDS=~amd64 ~x86
+LICENSE=MIT
+RDEPEND=python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 ) python_targets_python3_13? ( dev-lang/python:3.13 ) python_targets_python3_14? ( dev-lang/python:3.14 ) dev-python/python-dateutil[python_targets_python3_11(-)?,python_targets_python3_12(-)?,python_targets_python3_13(-)?,python_targets_python3_14(-)?] postgres? ( dev-python/psycopg:0[python_targets_python3_11(-)?,python_targets_python3_12(-)?,python_targets_python3_13(-)?,python_targets_python3_14(-)?] ) >=dev-python/sqlalchemy-2.0[python_targets_python3_11(-)?,python_targets_python3_12(-)?,python_targets_python3_13(-)?,python_targets_python3_14(-)?,sqlite?] python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 ) python_targets_python3_13? ( dev-lang/python:3.13 ) python_targets_python3_14? ( dev-lang/python:3.14 )
+REQUIRED_USE=|| ( python_targets_python3_11 python_targets_python3_12 python_targets_python3_13 python_targets_python3_14 )
+RESTRICT=test
+SLOT=0
+SRC_URI=https://git.oriole.systems/quarg/snapshot/quarg-1.1.0.tar.gz verify-sig? ( https://git.oriole.systems/quarg/snapshot/quarg-1.1.0.tar.gz.asc -> quarg-1.1.0.sha.sig )
+_eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	out-of-source-utils	dbf9e34ee8964084651e25907fa8f52c	multibuild	4650a65187015567b4e041bb9bfdb364	multilib	a199af442898963433d6f038a88cce9c	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	dbb8c4d794033ad7e7221eaf567a6c90	python-r1	0e15b2ab9cfc87d7474678201d6bca38	distutils-r1	da0e0aad39afe02500c5b3dee253f4c0	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	verify-sig	103bd85bd89e7550554d65afe22e8d04
+_md5_=fffa6b03a7b9900dbd108d500bfb16ba
