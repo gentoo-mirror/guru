@@ -1,0 +1,8 @@
+DEFINED_PHASES=-
+DESCRIPTION=Virtual for Crystal database drivers
+EAPI=8
+IUSE=postgres sqlite
+KEYWORDS=~amd64
+RDEPEND=>=dev-crystal/crystal-db-0.14 <dev-crystal/crystal-db-0.15 postgres? ( >=dev-crystal/crystal-pg-0.29 <dev-crystal/crystal-pg-0.30 ) sqlite? ( >=dev-crystal/crystal-sqlite3-0.22.0 <dev-crystal/crystal-sqlite3-0.23.0 )
+SLOT=0
+_md5_=54ef1dc2f55476d4b4a2176f4423b5a3
