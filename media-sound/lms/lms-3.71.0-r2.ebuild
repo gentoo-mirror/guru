@@ -18,9 +18,10 @@ RESTRICT="!test? ( test )"
 RDEPEND="
 	app-arch/libarchive
 	acct-user/lms
-	dev-cpp/wt:=
+	<=dev-cpp/wt-4.12.0:=
 	dev-libs/boost:=
 	dev-libs/libconfig[cxx]
+	dev-libs/pugixml:=
 	media-libs/taglib:=
 	media-video/ffmpeg[lame,opus]
 	sys-libs/pam
