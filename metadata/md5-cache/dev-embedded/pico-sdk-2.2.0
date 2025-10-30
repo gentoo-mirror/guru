@@ -1,0 +1,9 @@
+DEFINED_PHASES=install postinst prepare
+DESCRIPTION=Libraries and tools for C/C++ development on RP2040 and RP2350 microcontrollers.
+EAPI=8
+HOMEPAGE=https://github.com/raspberrypi/pico-sdk
+KEYWORDS=~amd64
+LICENSE=BSD
+SLOT=0
+SRC_URI=https://github.com/raspberrypi/pico-sdk/releases/download/2.2.0/pico-sdk-2.2.0.tar.gz -> pico-sdk-2.2.0.tar.gz https://github.com/bluekitchen/btstack/archive/501e6d2b86e6c92bfb9c390bcf55709938e25ac1.tar.gz -> btstack-501e6d2b86e6c92bfb9c390bcf55709938e25ac1.tar.gz https://github.com/georgerobotics/cyw43-driver/archive/refs/tags/v1.1.0.tar.gz -> cyw43-driver-1.1.0.tar.gz https://github.com/lwip-tcpip/lwip/archive/refs/tags/STABLE-2_2_1_RELEASE.tar.gz -> lwip-STABLE-2_2_1_RELEASE.tar.gz https://github.com/Mbed-TLS/mbedtls/releases/download/mbedtls-3.6.2/mbedtls-3.6.2.tar.bz2 -> mbedtls-3.6.2.tar.bz2 https://github.com/hathach/tinyusb/archive/refs/tags/0.18.0.tar.gz -> tinyusb-0.18.0.tar.gz
+_md5_=4933ad16a0b1729ed66ba766294e97a4
