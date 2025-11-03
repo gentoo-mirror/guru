@@ -1,14 +1,14 @@
 BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.28.5
 DEFINED_PHASES=compile configure install prepare test
-DEPEND=dev-libs/rapidjson
-DESCRIPTION=Library for interfacing a game with a locally running Discord desktop client
+DESCRIPTION=A header-only, constexpr alternative to gperf for C++14 users
 EAPI=8
-HOMEPAGE=https://github.com/discord/discord-rpc
+HOMEPAGE=https://github.com/serge-sans-paille/frozen
 INHERIT=cmake
-IUSE=examples
+IUSE=test
 KEYWORDS=~amd64
-LICENSE=MIT
+LICENSE=Apache-2.0
+RESTRICT=!test? ( test )
 SLOT=0
-SRC_URI=https://github.com/discord/discord-rpc/archive/refs/tags/v3.4.0.tar.gz -> discord-rpc-3.4.0.tar.gz
+SRC_URI=https://github.com/serge-sans-paille/frozen/archive/refs/tags/1.2.0.tar.gz -> frozen-1.2.0.tar.gz
 _eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	29a000891e576f0392730bb6834b67f5
-_md5_=0c27a77fd689650801d03cf3894ea47b
+_md5_=293ba6863df2c7213a57945631c60e7a

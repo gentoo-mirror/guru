@@ -192,6 +192,8 @@ dev-ml/ezjsonm:lwt - Provides an Lwt variant of the serialisation functions in t
 dev-nim/cligen:toml - Enable TOML config file support via dev-nim/parsetoml
 dev-python/guidata:pyqt5 - Use dev-python/pyqt5 as Qt for Python implementation
 dev-python/guidata:pyqt6 - Use dev-python/pyqt6 as Qt for Python implementation
+dev-python/mastodon-py:blurhash - Install dependencies required for decoding blurhash strings to images
+dev-python/mastodon-py:grapheme - Install dependencies required for grapheme-aware string handling
 dev-python/ptpython:black - Add support for dev-python/black. Black not always possible on PyPy
 dev-python/ptpython:ipython - Add support for dev-python/ipython for ptipython
 dev-python/pydantic-settings:aws - Enable Amazon AWS Secrets Manager support
@@ -212,6 +214,7 @@ dev-util/gammaray:geolocation - Physical position determination support from Qt5
 dev-util/gammaray:qml - Build with Qt5 Quick support
 dev-util/gammaray:scxml - Build support for Qt5 State Chart XML (SCXML)
 dev-util/gammaray:webengine - Enable support for dev-qt/qtwebengine
+dev-util/nvchecker:aiohttp - use dev-python/aiohttp instead of dev-python/tornado for the fetching backend (not recommended)
 dev-util/rtc-testbench:mqtt - Enable logging via app-misc/mosquitto
 dev-util/rust-rover:bundled-jdk - Use bundled jdk
 dev-util/rz-ghidra:cutter-plugin - Build as dev-util/cutter's plugin
@@ -296,6 +299,7 @@ games-emulation/eden:discord - Enable Discord Rich Presence
 games-emulation/eden:opengl - Enable the OpenGL frontend
 games-emulation/eden:sdl - Enable the SDL2 frontend
 games-emulation/eden:ssl - Enable OpenSSL backend for ISslConnection
+games-emulation/eden:usb - Enable the use of LibUSB
 games-emulation/eden:web-applet - Enable web applet support
 games-emulation/eden:web-service - Enable web services (telemetry, etc.)
 games-emulation/eden:wifi - Enable Wi-Fi scanning
@@ -763,6 +767,8 @@ net-p2p/monero-gui-bin:tools - Install tools used to manipulate the blockchain a
 net-p2p/monero-gui-bin:wallet-cli - Install the command line wallet, monero-wallet-cli.
 net-p2p/monero-gui-bin:wallet-rpc - Install the RPC wallet, monero-wallet-rpc.
 net-p2p/p2pool:daemon - Install OpenRC scripts allowing for running p2pool as a system service
+net-p2p/syncthingtray:kio - Enable file item action plugin in kde-apps/dolphin
+net-p2p/syncthingtray:plasmoid - Enable plasmoid for KDE Plasma
 net-p2p/trezord-go:systemd - Install systemd service file
 net-p2p/trezord-go:udev - Install udev rules
 net-print/hpuld:scanner - Enable scanner on multifunction devices which support it

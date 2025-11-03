@@ -1,0 +1,12 @@
+BDEPEND=>=dev-lang/go-1.24.7
+DEFINED_PHASES=compile install
+DESCRIPTION=Real-time logging dashboard for Kubernetes
+EAPI=8
+HOMEPAGE=https://github.com/kubetail-org/kubetail
+INHERIT=shell-completion
+KEYWORDS=~amd64 ~arm64
+LICENSE=Apache-2.0
+SLOT=0
+SRC_URI=https://github.com/kubetail-org/kubetail/releases/download/cli%2Fv0.10.0/kubetail-cli.orig.tar.xz -> kubetail-cli_0.10.0.orig.tar.xz
+_eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	bash-completion-r1	767861f3744f589ee5291c1698b1c082	shell-completion	0b655d0d825e157a5e99c463bddaac16
+_md5_=9184229b1be705525a1ed6c4a3e0f3e8
