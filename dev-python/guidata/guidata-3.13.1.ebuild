@@ -14,16 +14,12 @@ LICENSE="BSD"
 
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="test +pyqt5 pyqt6"
-
-REQUIRED_USE="|| ( pyqt5 pyqt6 )"
+IUSE="test"
 
 RDEPEND="
-	pyqt5? ( dev-python/pyqt5[${PYTHON_USEDEP}] )
-	pyqt6? ( dev-python/pyqt6[${PYTHON_USEDEP}] )
-
 	dev-python/h5py[${PYTHON_USEDEP}]
 	dev-python/numpy[${PYTHON_USEDEP}]
+	dev-python/pyqt6[${PYTHON_USEDEP}]
 	dev-python/qtpy[${PYTHON_USEDEP}]
 	dev-python/requests[${PYTHON_USEDEP}]
 	dev-python/tomli[${PYTHON_USEDEP}]
