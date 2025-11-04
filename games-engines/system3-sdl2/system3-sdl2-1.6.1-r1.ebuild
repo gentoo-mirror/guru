@@ -23,7 +23,8 @@ DEPEND="
 	media-libs/sdl2-mixer
 	media-libs/sdl2-ttf
 	rtmidi? ( media-libs/rtmidi )"
-RDEPEND="${DEPEND}"
+RDEPEND="${DEPEND}
+	|| ( gnome-extra/zenity kde-apps/kdialog x11-misc/xdialog )"
 BDEPEND="virtual/pkgconfig"
 
 src_unpack() {
