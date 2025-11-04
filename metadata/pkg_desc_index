@@ -80,7 +80,7 @@ app-accessibility/rhvoice 1.14.0 1.16.4: Multilingual text-to-speech engine (met
 app-accessibility/rhvoice-core 1.14.0-r1 1.16.4: Multilingual text-to-speech engine
 app-accessibility/speakup-tools 20121017: Tools to customize speakup module
 app-accessibility/whisper-cpp 1.7.6 1.8.2: Port of OpenAI's Whisper model in C/C++
-app-admin/agru 0.1.16 0.1.17: A tool for managing GitLab groups and projects
+app-admin/agru 0.1.17 0.1.18: A tool for managing GitLab groups and projects
 app-admin/akita 0.1.4: An HTTP log monitoring tool for your terminal
 app-admin/ananicy-cpp 1.1.1-r3: Ananicy rewritten in C++ for much lower CPU and memory usage
 app-admin/antidot 0.6.3: Cleans up your $HOME from those pesky dotfiles
@@ -335,7 +335,7 @@ app-office/openoffice-bin 4.1.15 4.1.16_rc3: Apache OpenOffice productivity suit
 app-office/pyspread 2.4: Pyspread is a non-traditional spreadsheet written in Python
 app-office/standartnotes-bin 3.183.22: End-to-end encrypted note-taking app, alternative to Evernote
 app-portage/appswipe 1.1.14 1.1.68: Application for browsing your local Portage repository files
-app-portage/carnage 1.0: TUI front-end for Portage and eix
+app-portage/carnage 1.0 9999: TUI front-end for Portage and eix
 app-portage/pacvis 0.4.2: Displays dependency graphs of packages
 app-portage/portage-lostfiles 0.5.6-r1: A simple script to identify files not tracked by Portage package manager
 app-portage/portagecfg 2.1.3 2.2.2 2.3.0 2.4.0: Utility to write Portage config files in an easy manner.
@@ -513,7 +513,7 @@ dev-embedded/esp-idf-nvs-partition-gen 0.1.9: Parses ESP-IDF panic handler outpu
 dev-embedded/esp-idf-panic-decoder 1.4.1: Parses ESP-IDF panic handler output acts as a GDB server over stdin/stdout
 dev-embedded/esp-idf-size 1.7.1: Firmware size analysis for ESP-IDF
 dev-embedded/freertos-gdb 1.0.4: Python module for operating with freeRTOS-kernel objects in GDB
-dev-embedded/fwup 1.12.0 1.13.0 1.13.1 1.13.2: Configurable embedded Linux firmware update creator and runner
+dev-embedded/fwup 1.12.0 1.13.0 1.13.1 1.13.2 1.14.0: Configurable embedded Linux firmware update creator and runner
 dev-embedded/idf-component-manager 2.1.2 2.2.2: Tool for installing ESP-IDF components
 dev-embedded/mv88e6xxx-dump 0.2.0_pre20210327: Dump information about Marvell mv88e6xxx Ethernet switches
 dev-embedded/nxp-gui-guider 1.7.2-r1: GUI Guider is a user-friendly GUI development tool for LVGL
@@ -942,7 +942,7 @@ dev-python/templated-dictionary 1.6: Python dictionary with Jinja2 expansion
 dev-python/tempus-themes 2.3.0.20220206: Accessible themes for Pygments
 dev-python/tempy 1.4.0: A simple, visually pleasing weather report in your terminal
 dev-python/termynal 0.13.1: A lightweight and modern animated terminal window
-dev-python/textual 5.3.0 6.3.0 6.4.0: Modern Text User Interface framework
+dev-python/textual 5.3.0 6.3.0 6.4.0 6.5.0: Modern Text User Interface framework
 dev-python/textual-dev 1.7.0 1.8.0: Modern Text User Interface framework
 dev-python/textual-serve 1.1.2: Serve Textual apps locally
 dev-python/timeslot 0.1.2: Time slots/intervals with an arbitrary start and stop
@@ -1110,7 +1110,7 @@ games-engines/fs2_open 24.2.0: FreeSpace2 Source Code Project game engine
 games-engines/instead 3.4.1 3.5.2 9999: INSTEAD text-based quest game engine
 games-engines/nxengine-evo 2.6.5_p1-r1: rewrite of the jump-and-run platformer Doukutsu Monogatari(Cave Story)
 games-engines/ponscripter-fork 3.0.2: Fork of the Ponscripter visual novel engine to take advantage of SDL2
-games-engines/system3-sdl2 1.6.1: SDL2 port of AliceSoft's System3 for Win32 by Takeda Toshiya.
+games-engines/system3-sdl2 1.6.1-r1: SDL2 port of AliceSoft's System3 for Win32 by Takeda Toshiya.
 games-engines/xsystem35-sdl2 2.15.1 2.16.0 2.16.1: Port of xsystem35, a free implementation of AliceSoft's System 3.x game engine.
 games-engines/xsystem4 1.0.0 9999: Cross-platform implementation of AliceSoft's System 4 game engine
 games-fps/assaultcube 1.3.0.2-r1: Free multiplayer FPS based on the Cube engine
@@ -1277,7 +1277,7 @@ gui-apps/tessen 2.2.1-r1: an interactive menu to autotype and copy pass and gopa
 gui-apps/tofi 0.8.1 0.9.1: Fast and simple dmenu/rofi replacement for wlroots-based Wayland compositors
 gui-apps/vicuna 1.25: Tool for uploading files to Wikimedia Commons and other Wikimedia projects
 gui-apps/walker 0.10.3 0.12.0 0.13.26 9999: Multi-Purpose Launcher with a lot of features. Highly Customizable and fast
-gui-apps/way-displays 1.15.0: Auto Manage Your Wayland Displays
+gui-apps/way-displays 1.15.0 9999: Auto Manage Your Wayland Displays
 gui-apps/wayidle 1.0.1: Wayland idle timeout waiter
 gui-apps/waylock 1.3.0 1.4.0 1.5.0 1.5.0-r2: Small screenlocker for Wayland compositors
 gui-apps/wbg 1.0.2 1.1.0 1.2.0 9999: Super simple wallpaper application
@@ -1369,7 +1369,7 @@ media-gfx/fontpreview 1.0.6: Highly customizable and minimal font previewer writ
 media-gfx/gephi-bin 0.9.6 0.10.1: The Open Graph Viz Platform
 media-gfx/glslViewer 3.2.4: Console-based GLSL live-coding viewer
 media-gfx/mayo 0.9.0: Opensource 3D CAD viewer and converter
-media-gfx/mirage 0.11.2: Fast and simple image viewer based on Python and GTK
+media-gfx/mirage 0.11.2 9999: Fast and simple image viewer based on Python and GTK
 media-gfx/nsxiv 32 33 9999: Neo (or New or Not) Simple (or Small or Suckless) X Image Viewer
 media-gfx/oda-file-converter 23.5.0.0: For converting between different versions of .dwg and .dxf
 media-gfx/pdf4qt 1.5.1.0 9999: Open source PDF WYSIWYG editor based on Qt
@@ -1679,6 +1679,7 @@ net-p2p/persepolis 5.2.0: Persepolis is a download manager written in Python.
 net-p2p/syncthingtray 2.0.2: Tray application and Dolphin/Plasma integration for Syncthing
 net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
 net-p2p/yggdrasil-go 0.5.12 9999: An experiment in scalable routing as an encrypted IPv6 overlay network
+net-print/captdriver 0.1.4: Alternative driver for Canon CAPT printers
 net-print/hpuld 1.00.39.15.00.23-r1: HP Unified Linux Driver (for samsung hardware)
 net-proxy/MTProxy 3.0.4-r1: Community fork of MTProxy
 net-proxy/Throne 1.0.8: Qt based cross-platform GUI proxy configuration manager
@@ -1937,6 +1938,7 @@ www-client/badwolf 1.4.0-r1 9999-r1: Minimalist and privacy-oriented WebKitGTK+ 
 www-client/browsh 1.8.2 1.8.3: A fully-modern text-based browser, rendering to TTY and browsers
 www-client/mullvad-browser-bin 15.0: The Mullvad Browser is developed to minimize tracking and fingerprinting.
 www-client/nyxt 3.11.8 3.12.0 9999: Nyxt - the hacker's power-browser
+www-client/torbrowser-launcher 0.3.9: A program to help you securely download and run Tor Browser
 www-client/vimb 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
 www-client/yandex-browser 25.8.5.854_p1: The web browser from Yandex
 www-client/zen-bin 1.15.5b 1.16b 1.16.3b 1.16.4b 1.17b 1.17.1b 1.17.2b 1.17.3b 1.17.4b: Zen Browser - A fast, privacy-focused Firefox fork
