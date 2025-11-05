@@ -3,7 +3,7 @@
 
 EAPI=8
 
-RUST_MIN_VER="1.83.0"
+RUST_MIN_VER="1.88.0"
 
 inherit cargo
 
