@@ -292,15 +292,19 @@ games-emulation/dosbox-x:opengl - Enable OpenGL as a video system to use for out
 games-emulation/dosbox-x:png - Enable screenshot and video capture support via media-libs/libpng
 games-emulation/dosbox-x:slirp - Enable the SLIRP back-end for network adapter emulation
 games-emulation/dosbox-x:truetype - Enable TrueType font (TTF) output and printing support via media-libs/freetype
-games-emulation/eden:camera - Enable camera support
+games-emulation/eden:camera - Enable camera support through dev-qt/qtmultimedia
 games-emulation/eden:cubeb - Enable the cubeb audio backend
 games-emulation/eden:discord - Enable Discord Rich Presence
-games-emulation/eden:opengl - Enable the OpenGL frontend
-games-emulation/eden:sdl - Enable the SDL2 frontend
-games-emulation/eden:ssl - Enable OpenSSL backend for ISslConnection
-games-emulation/eden:usb - Enable the use of LibUSB
-games-emulation/eden:web-applet - Enable web applet support
-games-emulation/eden:web-service - Enable web services (telemetry, etc.)
+games-emulation/eden:gamemode - Enable the Feral Gamemode client for better performance
+games-emulation/eden:llvm - Enable the LLVM backend for disassembly and symbol demangling
+games-emulation/eden:opengl - Enable the OpenGL graphics backend
+games-emulation/eden:renderdoc - Enable the RenderDoc API for graphics debugging
+games-emulation/eden:room - Compile the dedicated room executable
+games-emulation/eden:sdl - Enable the SDL2 frontend (eden-cli, controller backend...)
+games-emulation/eden:ssl - Enable the OpenSSL backend for ISslConnection
+games-emulation/eden:usb - Enable the LibUSB controller backend
+games-emulation/eden:web-applet - Enable the custom web applet frontend through dev-qt/qtwebengine
+games-emulation/eden:web-service - Enable multiplayer support
 games-emulation/eden:wifi - Enable Wi-Fi scanning
 games-emulation/flycast:vulkan - Compile vulkan backend
 games-emulation/libretro-dolphin:evdev - Enable evdev input support
