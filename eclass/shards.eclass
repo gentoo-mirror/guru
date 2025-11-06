@@ -1,4 +1,4 @@
-# Copyright 2022 Gentoo Authors
+# Copyright 2022-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 # @ECLASS: shards.eclass
@@ -14,6 +14,63 @@
 # Shards as a build system.
 #
 # If the package has no shard.yml(5) file, use crystal-utils.eclass(5) instead.
+# @EXAMPLE:
+# Typical ebuild for a Crystal application:
+#
+# @CODE@
+# EAPI=8
+#
+# inherit shards
+#
+# ...
+#
+# DEPEND="dev-crystal/foo"
+#
+# CRYSTAL_DEFINES=( -Denable_cli )
+#
+# src_install() {
+# 	dobin hello-world
+# 	einstalldocs
+# }
+# @CODE@
+#
+#
+# Typical ebuild for a Crystal library:
+#
+# @CODE@
+# EAPI=8
+#
+# inherit shards
+#
+# ...
+#
+# RDEPEND="
+# 	dev-crystal/bar
+# 	dev-crystal/baz
+# "
+# @CODE@
+#
+#
+# Typical ebuild for a hybrid Crystal library/applicaton:
+#
+# @CODE@
+# EAPI=8
+#
+# inherit shards
+#
+# ...
+#
+# DEPEND="
+# 	dev-crystal/bar
+# 	dev-crystal/baz
+# "
+# RDEPEND="${DEPEND}"
+#
+# src_install() {
+# 	dobin helper-util
+# 	shards_src_install  # install library sources
+# }
+# @CODE@
 
 case ${EAPI} in
 	8) ;;
@@ -31,6 +88,12 @@ BDEPEND="
 	>=dev-util/gshards-0.2
 "
 IUSE="debug doc"
+
+if [[ ${CATEGORY} == dev-crystal ]]; then
+	# To build a correct dependency graph, add Crystal version
+	# restrictions to runtime dependencies of Crystal libraries.
+	RDEPEND="${CRYSTAL_DEPS}"
+fi
 
 # Crystal packages do not use CFLAGS
 QA_FLAGS_IGNORED='.*'
