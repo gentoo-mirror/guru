@@ -102,7 +102,7 @@ app-admin/himitsu-secret-service 0.1: himitsu secret-service integration
 app-admin/himitsu-ssh 0.4 0.9.1 9999: SSH integration for Himitsu
 app-admin/himitsu-totp 0.2 0.9 9999: TOTP support for Himitsu
 app-admin/hiprompt-gtk 0.9-r1: GTK4 prompter for Himitsu
-app-admin/i2pd-tools 2025.08.21 2025.10.16: Some useful tools for I2P
+app-admin/i2pd-tools 2025.08.21 2025.10.16 2025.10.16-r1: Some useful tools for I2P
 app-admin/krapplet 0.3.1-r1: Krapplet (keyring applet): a Linux graphical password manager
 app-admin/oet 0.1.9 0.1.10 0.1.11 9999: Update your system into binpkgs in an overlay sandbox
 app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applications and tmux
@@ -458,38 +458,38 @@ dev-cpp/workflow 0.10.2-r1 0.10.3 0.10.5 9999: C++ Parallel Computing and Asynch
 dev-cpp/wt 4.11.4-r3 4.12.0 4.12.1: Wt, C++ Web Toolkit
 dev-cpp/xtensor 0.26.0: header-only C++ library for numerical analysis with multi-dimensional arrays
 dev-cpp/xtl 0.8.0: Algorithms and containers used by the xtensor stack and the xeus stack
-dev-crystal/athena-negotiation 0.1.5 0.2.0: Framework agnostic content negotiation library
-dev-crystal/athena-spec 0.3.11 0.4.0: Common/helpful Spec compliant testing utilities
-dev-crystal/backtracer 1.2.2 1.2.4: Crystal shard aiming to assist with parsing backtraces into a structured form
+dev-crystal/athena-negotiation 0.1.5-r1 0.2.0-r1: Framework agnostic content negotiation library
+dev-crystal/athena-spec 0.3.11-r1 0.4.0-r1: Common/helpful Spec compliant testing utilities
+dev-crystal/backtracer 1.2.2-r1 1.2.4-r1: Crystal shard aiming to assist with parsing backtraces into a structured form
 dev-crystal/crikey 0.1.0_p20170404: Data structure view templates for Crystal
 dev-crystal/crustache 2.4.4: {{Mustache}} for Crystal
-dev-crystal/crystal-db 0.13.1 0.14.0: Common DB API for Crystal
-dev-crystal/crystal-fnv 0.1.3: Crystal Implementation of Fowler–Noll–Vo hash
-dev-crystal/crystal-html5 0.4.0 0.5.0: Pure Crystal implementation of an HTML5-compliant Tokenizer and Parser
-dev-crystal/crystal-pg 0.28.0 0.29.0-r1: A native, non-blocking Postgres driver for Crystal
-dev-crystal/crystal-sqlite3 0.21.0 0.22.0: SQLite3 bindings for Crystal
-dev-crystal/crystal-xpath2 0.1.3: XPath implementation in Crystal
-dev-crystal/crystar 0.3.1 0.4.0: Crystal language Tar Module implements access to tar archives
-dev-crystal/exception_page 0.4.1 0.5.0: A library for displaying exceptional exception pages for easier debugging
-dev-crystal/habitat 0.4.9: Easily configure settings for Crystal projects
-dev-crystal/http_proxy 0.12.0: HTTP Proxy server and client written in Crystal
+dev-crystal/crystal-db 0.13.1-r1 0.14.0-r1: Common DB API for Crystal
+dev-crystal/crystal-fnv 0.1.3-r1: Crystal Implementation of Fowler–Noll–Vo hash
+dev-crystal/crystal-html5 0.4.0-r1 0.5.0-r1: Pure Crystal implementation of an HTML5-compliant Tokenizer and Parser
+dev-crystal/crystal-pg 0.28.0-r1 0.29.0-r2: A native, non-blocking Postgres driver for Crystal
+dev-crystal/crystal-sqlite3 0.21.0-r1 0.22.0-r1: SQLite3 bindings for Crystal
+dev-crystal/crystal-xpath2 0.1.3-r1: XPath implementation in Crystal
+dev-crystal/crystar 0.3.1-r1 0.4.0-r1: Crystal language Tar Module implements access to tar archives
+dev-crystal/exception_page 0.4.1-r1 0.5.0-r1: A library for displaying exceptional exception pages for easier debugging
+dev-crystal/habitat 0.4.9-r1: Easily configure settings for Crystal projects
+dev-crystal/http_proxy 0.12.0-r1: HTTP Proxy server and client written in Crystal
 dev-crystal/inflector 1.0.0: String inflectors for Crystal
 dev-crystal/jbuilder 1.0.0: Generate JSON objects with a Builder-style DSL
 dev-crystal/json_mapping 0.1.1: Provides the legacy JSON.mapping macro method
-dev-crystal/kemal 1.1.2-r1 1.7.2 1.7.3: Lightning Fast, Super Simple web framework
+dev-crystal/kemal 1.7.2-r1 1.7.3-r1: Lightning Fast, Super Simple web framework
 dev-crystal/kilt 0.6.1: Generic template interface for Crystal
 dev-crystal/liquid 0.4.1 1.0.0: Liquid template engine for Crystal
-dev-crystal/lucky_flow 0.10.1: LuckyFlow is a library for testing user flows in the browser
-dev-crystal/protodec 0.1.5-r1 0.1.5-r2: Command-line tool to encode and decode arbitrary protobuf data
-dev-crystal/radix 0.4.1: Radix tree implementation for Crystal language
-dev-crystal/selenium 0.12.0 0.12.1: Selenium library for Crystal
+dev-crystal/lucky_flow 0.10.1-r1: LuckyFlow is a library for testing user flows in the browser
+dev-crystal/protodec 0.1.5-r2 0.1.5-r3: Command-line tool to encode and decode arbitrary protobuf data
+dev-crystal/radix 0.4.1-r1: Radix tree implementation for Crystal language
+dev-crystal/selenium 0.12.0-r1 0.12.1-r1: Selenium library for Crystal
 dev-crystal/slang 1.7.3: Slim-inspired templating language for Crystal
-dev-crystal/spectator 0.12.1 0.12.2: Feature-rich testing framework for Crystal inspired by RSpec
+dev-crystal/spectator 0.12.1-r1 0.12.2-r1: Feature-rich testing framework for Crystal inspired by RSpec
 dev-crystal/temel 0.1.0_p20171024: Extensible Markup DSL for Crystal
 dev-crystal/water 1.0.0: A library for writing HTML in plain Crystal
-dev-crystal/webdrivers 0.4.3-r1: Helps manage drivers for Selenium, such as the Chromedriver
-dev-crystal/webless 0.1.0 0.2.0: HTTP::Client for testing HTTP::Handlers directly and maintaining cookies
-dev-crystal/webmock 0.14.0: Mock HTTP client
+dev-crystal/webdrivers 0.4.3-r2: Helps manage drivers for Selenium, such as the Chromedriver
+dev-crystal/webless 0.1.0-r1 0.2.0-r1: HTTP::Client for testing HTTP::Handlers directly and maintaining cookies
+dev-crystal/webmock 0.14.0-r1: Mock HTTP client
 dev-db/libpg_query 16.5.1.0 17.6.0.0: C library for accessing the PostgreSQL parser outside of the server environment
 dev-db/pg_query_vala 0.1.0_pre20240326-r1 0.1.0_pre20241001: Thin wrapper around libpg_query to use with vala
 dev-db/pg_repack 1.5.2: Reorganize tables in PostgreSQL databases with minimal locks
@@ -538,7 +538,6 @@ dev-hare/hare-adwaita 0.1.0: Hare bindings for libadwaita
 dev-hare/hare-compress 0.25.2.0 9999: Compression algorithms for Hare
 dev-hare/hare-gi 0.1.0: GObject Introspection code generator for Hare
 dev-hare/hare-gtk4-layer-shell 0.1.0: gtk4-layer-shell bindings for Hare
-dev-hare/hare-iobus 9999: An asyncronous I/O abstraction for Hare
 dev-hare/hare-json 0.24.2 0.25.2.0 9999: JSON support for Hare
 dev-hare/hare-png 9999: PNG implementation for Hare
 dev-hare/hare-ssh 0.24.2 0.25.2 9999: SSH library for Hare
@@ -558,7 +557,7 @@ dev-lang/odin 2025.06 9999: The Data-Oriented Language for Sane Software Develop
 dev-lang/opencilk 1.1 2.1: The OpenCilk concurrency platform for parallel programming
 dev-lang/opencilk-bin 1.1 2.1: The OpenCilk concurrency platform for parallel programming
 dev-lang/quickjs 2024.01.13-r1: Small embeddable Javascript engine
-dev-lang/swift 5.10.1 5.10.1-r1 5.10.1-r2 5.10.1-r3 5.10.1-r4 5.10.1-r5 6.0.3 6.0.3-r1 6.0.3-r2 6.1.3 6.2: A high-level, general-purpose, multi-paradigm, compiled programming language
+dev-lang/swift 5.10.1 5.10.1-r1 5.10.1-r2 5.10.1-r3 5.10.1-r4 5.10.1-r5 6.0.3 6.0.3-r1 6.0.3-r2 6.1.3 6.2 6.2.1: A high-level, general-purpose, multi-paradigm, compiled programming language
 dev-lang/swift-bootstrap 1.0: A virtual package providing a base Swift to bootstrap future versions with.
 dev-lang/uiua 0.16.2: A stack-based array programming language
 dev-lang/wabt 1.0.37: The WebAssembly Binary Toolkit
@@ -633,7 +632,7 @@ dev-libs/sirit 1.0.1: A runtime SPIR-V assembler
 dev-libs/stringifor 1.1.4-r2: StringiFor, Strings Fortran Manipulator, yet another strings Fortran module
 dev-libs/supercop 0_p20200827: Fast cryptographic operations for Monero wallets
 dev-libs/tbtools 0.3.2-r2: Thunderbolt/USB4 debugging tools
-dev-libs/tfdn 1.9.1 1.10.1: Opinionated C11 library for low-level functionality
+dev-libs/tfdn 1.9.1 1.10.1 1.10.1-r1: Opinionated C11 library for low-level functionality
 dev-libs/toml-f 0.4.0 0.4.1 0.4.2: TOML parser implementation for data serialization and deserialization in Fortran
 dev-libs/tweeny 3.1.1 3.2.0: C++ tweening (inbetweening) library
 dev-libs/unordered_dense 4.0.1 4.4.0 9999: A fast and densely stored hashmap and hashset
@@ -804,6 +803,7 @@ dev-python/markdownify 0.11.6: Convert HTML to Markdown
 dev-python/markovify 0.9.4: Simple, extensible Markov chain generator
 dev-python/mastodon-py 2.0.1 2.1.4: Python wrapper for the Mastodon API
 dev-python/material-color-utilities 0.1.5 9999: Python port of material-color-utilities used for Material You colors
+dev-python/materialyoucolor 2.0.10 9999: Material You color algorithms for python!
 dev-python/mautrix 0.20.7 0.20.8: A Python 3 asyncio Matrix framework
 dev-python/mininet 2.3.0: Emulator for rapid prototyping of Software Defined Networks
 dev-python/mitype 0.2.6: Typing speed test in terminal
@@ -1029,7 +1029,7 @@ dev-util/kubetail 0.9.0 0.9.0-r1 0.9.0-r2 0.10.0: Real-time logging dashboard fo
 dev-util/kubetail-bin 0.7.5 0.8.2 0.9.0 0.10.0: Real-time logging dashboard for Kubernetes
 dev-util/lemminx-bin 0.27.0 0.27.1: XML Language Server
 dev-util/libtypec-utils 0.5.2: Library to interface with USB Type-C/Power Delivery devices
-dev-util/lottieconverter 0.2-r1 0.2-r2: Simple lottie (telegram animated sticker) converter
+dev-util/lottieconverter 0.2-r2 0.2-r3: Simple lottie (telegram animated sticker) converter
 dev-util/lua-language-server 3.13.9 3.14.0 3.15.0: Lua language server
 dev-util/mh 1.4.1: Generate help for Makefile
 dev-util/minify-bin 2.24.4: Minifier package that provides HTML5, CSS3, JS, JSON, SVG, and XML minifiers.
@@ -1044,9 +1044,9 @@ dev-util/pifpaf 3.3.0: Suite of tools and fixtures to manage daemons for testing
 dev-util/pmbootstrap 3.6.0: Helper tool for developing and building postmarketOS
 dev-util/quilttools 0.3-r1: Mailbox to quilt series converter
 dev-util/rexxd 2025.02.17: Drop-in replacement for the original xxd
-dev-util/riffdiff 3.5.1: Diff filter highlighting changed line parts
+dev-util/riffdiff 3.6.0: Diff filter highlighting changed line parts
 dev-util/rtc-testbench 5.3: RTC Testbench is a set of tools for validating Ethernet networks
-dev-util/rust-rover 2024.2.1-r1 2025.2.1 2025.2.2 2025.2.3: A feature-rich Rust IDE with timely support by JetBrarins
+dev-util/rust-rover 2024.2.1-r1 2025.2.1 2025.2.2 2025.2.3 2025.2.4.1: A feature-rich Rust IDE with timely support by JetBrarins
 dev-util/rust-script 0.36.0: Command-line tool to run Rust scripts which can make use of crates
 dev-util/rye 0.44.0: a Hassle-Free Python Experience
 dev-util/rz-ghidra 0.8.0: An integration of the Ghidra decompiler and Sleigh Disassembler for Rizin.
@@ -1110,7 +1110,7 @@ games-engines/fs2_open 24.2.0: FreeSpace2 Source Code Project game engine
 games-engines/instead 3.4.1 3.5.2 9999: INSTEAD text-based quest game engine
 games-engines/nxengine-evo 2.6.5_p1-r1: rewrite of the jump-and-run platformer Doukutsu Monogatari(Cave Story)
 games-engines/ponscripter-fork 3.0.2: Fork of the Ponscripter visual novel engine to take advantage of SDL2
-games-engines/system3-sdl2 1.6.1-r1: SDL2 port of AliceSoft's System3 for Win32 by Takeda Toshiya.
+games-engines/system3-sdl2 1.6.1-r1 1.6.2: SDL2 port of AliceSoft's System3 for Win32 by Takeda Toshiya.
 games-engines/xsystem35-sdl2 2.15.1 2.16.0 2.16.1: Port of xsystem35, a free implementation of AliceSoft's System 3.x game engine.
 games-engines/xsystem4 1.0.0 9999: Cross-platform implementation of AliceSoft's System 4 game engine
 games-fps/assaultcube 1.3.0.2-r1: Free multiplayer FPS based on the Cube engine
@@ -1341,6 +1341,7 @@ media-fonts/lato 2: Lato font
 media-fonts/libertinus 7.050 7.051: Libertinus font
 media-fonts/linja-pona 4.2 4.9: Font for sitelen pona, a script for toki pona
 media-fonts/linja-wawa 1.21: Font for sitelen pona, a script for toki pona
+media-fonts/maple-mono 7.7 7.8: Open source monospace font with round corners
 media-fonts/monaspace 1.200: A free and open-source typeface for developers
 media-fonts/moralerspace 2.0.0: moralerspace is a composite font of Monaspace and IBM Plex Sans JP.
 media-fonts/nerdfonts 3.4.0: Patched font collection with a high number of glyphs (icons)
@@ -1425,6 +1426,7 @@ media-radio/fllog 1.2.8: Logbook application for amateur radio use
 media-sound/6pm 0.9: 6PM is a polyphonic, touch-sensitive, realtime phase modulation synthesizer
 media-sound/Tauon 8.1.4 8.2.0 8.2.1 9999: The desktop music player of today!
 media-sound/add64 3.8.0 3.9.3: Add64 is a realtime additive/subtractive-synthesis softsynth
+media-sound/aimp 6.00.3017_alpha4: AIMP - Free Audio Player
 media-sound/amberol 2024.2: Simple GUI Music Player
 media-sound/bespokesynth 1.2.1 1.3.0: Software modular synth
 media-sound/callaudiod 0.1.10 0.1.99: Call audio routing daemon
@@ -1440,6 +1442,7 @@ media-sound/goxlr-utility 1.2.3 9999: A utility for monitoring and controlling a
 media-sound/jacktrip 2.4.0: Send JACK audio over a network
 media-sound/jriver 31.0.83: A cross-platform media center, famous for high quality of audio.
 media-sound/kew 2.4.4-r1: kew (/kjuː/) is a command-line music player for Linux.
+media-sound/libcava 0.10.2: Console-based Audio Visualizer for Alsa
 media-sound/listenbrainz-mpd 2.3.9: ListenBrainz submission client for MPD
 media-sound/lms 3.68.1 3.69.0 3.71.0-r1 3.71.0-r2: Lightweight Music Server.
 media-sound/loudgain 0.6.8-r1 0.6.8_p20240128 0.6.8_p20240128-r2: Versatile ReplayGain 2.0 loudness normalizer
@@ -1546,7 +1549,7 @@ net-im/Quaternion 0.0.97.1: A Qt-based IM client for Matrix
 net-im/WasIstLos 1.6.5 1.7.0: An unofficial WhatsApp desktop application for Linux
 net-im/abaddon 0.2.2 9999: Alternative Discord client using GTK instead of Electron
 net-im/axolotl-bin 2.0.1: Axolotl is a cross-platform Signal client
-net-im/beeper 4.1.289 4.1.311: Beeper: Unified Messenger
+net-im/beeper 4.1.289 4.1.311 4.1.311-r1: Beeper: Unified Messenger
 net-im/chatterino 2.5.3: Chat client for https://twitch.tv
 net-im/conduit 0.10.8 0.10.9 9999: Matrix homeserver written in Rust
 net-im/discord-canary-bin 0.0.786: All-in-one voice and text chat
@@ -1619,6 +1622,7 @@ net-misc/eg25-manager 0.4.2: Daemon for managing the Quectel EG25 modem
 net-misc/ffsend 0.2.77 9999: Easily and securely share files from the command line
 net-misc/fileshelter 6.2.0 6.3.0: FileShelter is a “one-click” file sharing web application
 net-misc/freetube-bin 0.23.10_beta 0.23.11_beta 0.23.12_beta: A private YouTube desktop client
+net-misc/gazelle-tui 1.7.0 1.7.2: Minimal NetworkManager TUI with complete 802.1X enterprise WiFi support
 net-misc/gdown 5.2.0: Google Drive public file/folder downloader
 net-misc/gdrive 3.9.0-r1 3.9.1-r1: Google Drive CLI Client
 net-misc/gemget 1.9.0: Command line downloader for the Gemini protocol
@@ -1784,7 +1788,7 @@ sci-mathematics/frama-c-variadic 25.0: Variadic function transformation plugin f
 sci-mathematics/pyromaths 21.8.2-r1: Create maths exercises in LaTeX and PDF format
 sci-mathematics/rink 0.8.0-r1 9999: Unit conversion tool, similar to frink
 sci-mathematics/rstudio-desktop-bin 2023.09.1_p494 2024.12.0_p467 2024.12.0_p467-r1: IDE for R and Python
-sci-misc/boinc-wrapper 26018-r3 26019: Wrapper to use non-BOINC apps with BOINC
+sci-misc/boinc-wrapper 26018-r3 26019 26019-r1: Wrapper to use non-BOINC apps with BOINC
 sci-misc/llama-cpp 0_pre4576 0_pre5332 0_pre5633-r1 0_pre6140 0_pre6318 0_pre6710 9999: Port of Facebook's LLaMA model in C/C++
 sci-ml/aichat 0.30.0: All-in-one LLM CLI Tool
 sci-ml/ollama 0.12.3 0.12.6 9999: Get up and running with Llama 3, Mistral, Gemma, and other language models.
@@ -1919,7 +1923,7 @@ www-apps/anubis 1.22.0 1.23.0: Weighs the soul of incoming HTTP requests to stop
 www-apps/code-server-bin 4.18.0 4.19.1 4.90.3: VS Code in the browser (binary version with unbundled node and ripgrep)
 www-apps/forgejo 11.0.7 12.0.4 13.0.2: A self-hosted lightweight software forge
 www-apps/freshrss 1.26.3: A free, self-hostable news aggregator
-www-apps/invidious 2025.05.17.0 2025.09.13.0: Invidious is an alternative front-end to YouTube
+www-apps/invidious 2025.09.13.0 2025.09.13.0-r1: Invidious is an alternative front-end to YouTube
 www-apps/jackett 0.22.1363: API Support for your favorite torrent trackers
 www-apps/laminar 1.3-r1: Fast and lightweight Continuous Integration
 www-apps/libmedium 2024.06.10: Alternative private front-end to Medium
@@ -1941,7 +1945,7 @@ www-client/nyxt 3.11.8 3.12.0 9999: Nyxt - the hacker's power-browser
 www-client/torbrowser-launcher 0.3.9: A program to help you securely download and run Tor Browser
 www-client/vimb 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
 www-client/yandex-browser 25.8.5.854_p1: The web browser from Yandex
-www-client/zen-bin 1.15.5b 1.16b 1.16.3b 1.16.4b 1.17b 1.17.1b 1.17.2b 1.17.3b 1.17.4b: Zen Browser - A fast, privacy-focused Firefox fork
+www-client/zen-bin 1.15.5b 1.16b 1.16.3b 1.16.4b 1.17b 1.17.1b 1.17.2b 1.17.3b 1.17.4b 1.17.5b: Zen Browser - A fast, privacy-focused Firefox fork
 www-misc/dufs 0.40.0: Dufs is a distinctive utility file server
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits
 www-misc/kiwix-desktop 2.4.0: cross-platform viewer/manager for ZIM archives

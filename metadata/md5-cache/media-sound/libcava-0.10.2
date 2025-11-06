@@ -1,0 +1,15 @@
+BDEPEND=>=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array
+DEFINED_PHASES=compile configure install postinst prepare test
+DEPEND=dev-libs/iniparser sci-libs/fftw:3.0= alsa? ( media-libs/alsa-lib ) jack? ( virtual/jack ) ncurses? ( sys-libs/ncurses:= ) pipewire? ( media-video/pipewire:= ) portaudio? ( media-libs/portaudio ) pulseaudio? ( media-libs/libpulse ) sdl? ( media-libs/libglvnd media-libs/libsdl2[opengl,video] ) sndio? ( media-sound/sndio:= ) virtual/pkgconfig
+DESCRIPTION=Console-based Audio Visualizer for Alsa
+EAPI=8
+HOMEPAGE=https://github.com/LukashonakV/cava/
+INHERIT=meson
+IUSE=alsa jack +ncurses pipewire portaudio pulseaudio sdl sndio
+KEYWORDS=~amd64 ~arm64
+LICENSE=MIT Unlicense
+RDEPEND=dev-libs/iniparser sci-libs/fftw:3.0= alsa? ( media-libs/alsa-lib ) jack? ( virtual/jack ) ncurses? ( sys-libs/ncurses:= ) pipewire? ( media-video/pipewire:= ) portaudio? ( media-libs/portaudio ) pulseaudio? ( media-libs/libpulse ) sdl? ( media-libs/libglvnd media-libs/libsdl2[opengl,video] ) sndio? ( media-sound/sndio:= )
+SLOT=0
+SRC_URI=https://github.com/LukashonakV/cava/archive/refs/tags/0.10.2.tar.gz -> libcava-0.10.2.tar.gz
+_eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	dbb8c4d794033ad7e7221eaf567a6c90	meson	99466844dd8d4fcfb07578a76f5a9922
+_md5_=2fa080f6f01251e551825d654c5a875c
