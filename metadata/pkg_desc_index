@@ -136,7 +136,7 @@ app-backup/restic-browser 0.3.2_p20250523-r1 0.3.3: A GUI to browse and restore 
 app-backup/timeshift 23.07.1: A system restore utility for Linux
 app-backup/timeshift-autosnap 0.9-r1: Automatically creates a timeshift-snapshot when executed
 app-benchmarks/kdiskmark 3.2.0: Disk benchmarking tool
-app-benchmarks/occt-bin 14.2.1 15.0.1: All-in-one stability, stress test, benchmark and monitoring tool
+app-benchmarks/occt-bin 15.0.7: All-in-one stability, stress test, benchmark and monitoring tool
 app-benchmarks/phoronix-test-suite 10.8.4-r1 9999: Phoronix's comprehensive, cross-platform testing and benchmark suite
 app-benchmarks/poop 0.5.0 9999: Performance Optimizer Observation Platform
 app-benchmarks/unigine-superposition 1.1: Game like benchmark (CPU, GPU), for ~5 minutes
@@ -476,7 +476,7 @@ dev-crystal/http_proxy 0.12.0-r1: HTTP Proxy server and client written in Crysta
 dev-crystal/inflector 1.0.0: String inflectors for Crystal
 dev-crystal/jbuilder 1.0.0: Generate JSON objects with a Builder-style DSL
 dev-crystal/json_mapping 0.1.1: Provides the legacy JSON.mapping macro method
-dev-crystal/kemal 1.7.2-r1 1.7.3-r1: Lightning Fast, Super Simple web framework
+dev-crystal/kemal 1.7.3-r1 1.8.0: Lightning Fast, Super Simple web framework
 dev-crystal/kilt 0.6.1: Generic template interface for Crystal
 dev-crystal/liquid 0.4.1 1.0.0: Liquid template engine for Crystal
 dev-crystal/lucky_flow 0.10.1-r1: LuckyFlow is a library for testing user flows in the browser
@@ -503,7 +503,7 @@ dev-debug/gdbgui 0.15.2.0 0.15.2.0-r1 0.15.3.0: Browser-based frontend to gdb
 dev-debug/lldb-mi 0.0.1 9999: LLDB Machine Interface Driver
 dev-dotnet/gtk-sharp 3.22.2-r2: gtk bindings for mono
 dev-elixir/hex 1.0.1-r1: Package manager for the Erlang VM
-dev-embedded/arduino-cli 1.0.4 1.1.1: Next-generation arduino command line tool
+dev-embedded/arduino-cli 1.0.4 1.1.1 1.3.1: Next-generation arduino command line tool
 dev-embedded/bcm2-utils 0.9.8: Utilities for Broadcom-based cable modems
 dev-embedded/esp-coredump 1.13.1: Utility that helps users to retrieve and analyse core dumps
 dev-embedded/esp-idf 5.3.4 5.4.2-r1 5.5 5.5.1: Espressif IoT Development Framework
@@ -606,7 +606,7 @@ dev-libs/libdatrie 0.2.13-r1: Double-Array Trie Library
 dev-libs/libdbf 0.0.1: Library to read the content of dBASE III, IV, and 5.0 files
 dev-libs/libglibutil 1.0.80 9999: Library of glib utilities from sailfishos project
 dev-libs/librepo 1.19.0-r1 1.20.0: Repodata downloading library
-dev-libs/libsignal-ffi 0.64.1 0.80.3: C ABI library which exposes Signal protocol logic
+dev-libs/libsignal-ffi 0.64.1 0.80.3 0.84.0: C ABI library which exposes Signal protocol logic
 dev-libs/libsolv 0.7.34 0.7.35: Library for solving packages and reading repositories
 dev-libs/libthai 0.1.29: A a set of Thai language support routines
 dev-libs/libtypec 0.5.2-r2: Library to interface with USB Type-C/Power Delivery devices
@@ -685,7 +685,7 @@ dev-ml/otoml 1.0.5: TOML parsing, manipulation, and pretty-printing library
 dev-ml/ppx_yojson_conv_lib 0.17.0: Runtime lib for ppx_yojson_conv
 dev-ml/psq 0.2.0-r2 0.2.1: Functional Priority Search Queues for OCaml
 dev-ml/spelll 0.4: Fuzzy string searching, using Levenshtein automaton
-dev-nim/cligen 1.9.0 1.9.3: Infer & generate command-line interface/option/argument parser
+dev-nim/cligen 1.9.3 1.9.5: Infer & generate command-line interface/option/argument parser
 dev-nim/inim 0.6.1 1.0.0: Interactive Nim Shell / REPL / Playground
 dev-nim/nake 1.9.4-r1: make-like for Nim. Describe your builds as tasks!
 dev-nim/nimbus 1.1.4 1.1.5 9999: Packaging-friendly Nim build system
@@ -756,7 +756,7 @@ dev-python/dropbox 12.0.2: The offical Dropbox SDK for Python
 dev-python/dtreeviz 2.2.2: A python library for decision tree visualization and model interpretation
 dev-python/evernote2 1.0.3 9999: Unofficial Evernote SDK for Python 3
 dev-python/exif 1.6.0: Read and modify image EXIF metadata using Python.
-dev-python/fastapi 0.120.0: FastAPI framework, high performance, easy to learn, ready for production
+dev-python/fastapi 0.120.0 0.120.2 0.121.0: FastAPI framework, high performance, easy to learn, ready for production
 dev-python/find-libpython 0.4.0: Finds the libpython associated with the current Python environment
 dev-python/flask-restx 1.3.0 1.3.2: Framework API development with Flask
 dev-python/flask-socketio 5.5.1: Socket.IO integration for Flask applications.
@@ -797,8 +797,8 @@ dev-python/jsonfeed 1.1.2: Python package for parsing and generating JSON feeds.
 dev-python/jsonlines 4.0.0: Library with helpers for the jsonlines file format
 dev-python/langdetect 1.0.9: Port of Google's language-detection library to Python
 dev-python/latexify-py 0.4.3.1 0.4.4.1: Annotate Python source code to get LaTeX expressions
-dev-python/lru-dict 1.3.0: Dict like LRU container
-dev-python/lsp-tree-sitter 0.0.18: A library to create language servers
+dev-python/lru-dict 1.3.0 1.4.1: Dict like LRU container
+dev-python/lsp-tree-sitter 0.1.1: A library to create language servers
 dev-python/markdownify 0.11.6: Convert HTML to Markdown
 dev-python/markovify 0.9.4: Simple, extensible Markov chain generator
 dev-python/mastodon-py 2.0.1 2.1.4: Python wrapper for the Mastodon API
@@ -929,7 +929,7 @@ dev-python/sphinx-paramlinks 0.6.0: Allows param links in Sphinx function/method
 dev-python/sphinx-sitemap 2.8.0 2.9.0: Sitemap generator for Sphinx
 dev-python/sphinxcontrib-katex 0.9.10 0.9.11: KaTeX Sphinx extension for rendering of math in HTML pages
 dev-python/sphinxext-opengraph 0.13.0: Sphinx extension to generate unique OpenGraph metadata
-dev-python/sphinxnotes-mock 1.0.2: Sphinx extension for mocking directives and roles without modifying documents
+dev-python/sphinxnotes-mock 1.1: Sphinx extension for mocking directives and roles without modifying documents
 dev-python/sqlmodel 0.0.24: SQL databases in Python, designed for simplicity, compatibility, and robustness.
 dev-python/starkbank-ecdsa 2.2.0-r1: A lightweight and fast pure python ECDSA library
 dev-python/steam 2.0.0-r1: Python package for interacting with Steam
@@ -953,7 +953,7 @@ dev-python/types-protobuf 6.30.2.20250703: Typing stubs for protobuf
 dev-python/types-requests 2.32.0.20240712: Typing stubs for requests
 dev-python/typing-inspect 0.9.0: Runtime inspection utilities for Python typing module
 dev-python/undervolt 0.4.0 9999: Undervolt Intel CPUs under Linux
-dev-python/upstream-ontologist 0.2.4 0.2.5: Tracking of upstream project metadata
+dev-python/upstream-ontologist 0.2.5 0.2.7: Tracking of upstream project metadata
 dev-python/urlmatch 1.0.1-r2: A Python library for easily pattern matching wildcard URLs
 dev-python/usb-monitor 1.23: An easy-to-use cross-platform library for USB device monitoring
 dev-python/validator-collection 1.5.0-r2: Collection of 60+ Python functions for validating data
@@ -1056,7 +1056,7 @@ dev-util/spi-tools 1.0.2: Simple command line tools to help using Linux spidev d
 dev-util/stripe-cli 9999: A command-line tool for Stripe
 dev-util/stylua 2.3.0: A code formatter for Lua
 dev-util/tailspin 5.4.5: A log file highlighter
-dev-util/termux-language-server 0.0.28: A language server for some specific Bash scripts
+dev-util/termux-language-server 0.0.31: A language server for some specific Bash scripts
 dev-util/tflint-bin 0.43.0 0.46.0: A Pluggable Terraform Linter
 dev-util/tinyxxd 1.3.7-r2 9999: Drop-in replacement and standalone version of xxd
 dev-util/tokei 12.1.2: Count your code, quickly
@@ -1064,7 +1064,7 @@ dev-util/topiary 0.6.1: CLI app for Topiary, the universal code formatter.
 dev-util/trivy 0.55.2: Vulnerability scanner for container images, file systems, and Git repos
 dev-util/typescript-language-server 4.1.2 4.3.3: TypeScript & JavaScript Language Server
 dev-util/u-config 0.34.0 9999: Lean and mean pkg-config replacement
-dev-util/upstream-ontologist 0.2.9 0.2.10: Tracking of upstream project metadata
+dev-util/upstream-ontologist 0.2.10 0.3.2: Tracking of upstream project metadata
 dev-util/vala-language-server 0.48.4: Code Intelligence for Vala & Genie
 dev-util/vscode-langservers-extracted 4.8.0 4.10.0: HTML/CSS/JSON/ESLint/Markdown language servers extracted from vscode.
 dev-util/wakatime-cli 1.27.0 1.28.6: Command line interface to WakaTime used by all WakaTime plugins
@@ -1077,7 +1077,7 @@ dev-vcs/ghorg 1.11.0: Mass repository cloning tool for GitHub/GitLab/Bitbucket
 dev-vcs/gitahead 2.7.1 2.7.1-r1: Graphical Git client to help understand and manage source code history
 dev-vcs/gitqlient 1.6.2 1.6.3 9999: Multi-platform Git client written with Qt
 dev-vcs/gitui 0.26.3 0.27.0: blazing fast terminal-ui for git
-dev-vcs/jj 0.33.0 0.34.0 9999: Jujutsu - an experimental version control system
+dev-vcs/jj 0.34.0 0.35.0 9999: Jujutsu - an experimental version control system
 dev-vcs/lazygit 0.54.2 0.55.0 0.55.1 0.56.0 9999: Simple terminal UI for git commands
 dev-vcs/lazyjj 0.5.0 0.6.1: TUI for Jujutsu/jj
 dev-vcs/pijul 1.0.0_beta9: A distributed version control system based on a theory of patches
@@ -1475,7 +1475,7 @@ media-sound/spotube-bin 3.8.0: An open source, cross-platform Spotify client
 media-sound/supersonic 0.17.0 0.18.1 0.19.0: A lightweight and full-featured cross-platform desktop client
 media-sound/tenacity 1.3.4-r4: Easy-to-use, privacy-friendly, FLOSS, cross-platform multi-track audio editor
 media-sound/tidal-hifi-bin 5.16.0-r1 5.17.0: Web version of Tidal running in electron with Hi-Fi support thanks to Widevine.
-media-sound/yandex-music 5.72.5 5.73.1 5.74.1: Yandex Music streaming service
+media-sound/yandex-music 5.72.5 5.73.1 5.74.1 5.75.2: Yandex Music streaming service
 media-sound/yewtube 2.12.0 9999: Terminal-based YouTube player and downloader
 media-sound/ymuse 0.22: GTK client for Music Player Daemon (MPD) written in Go
 media-sound/youtube-music-bin 3.10.0 3.11.0: YouTube Music Desktop App bundled with custom plugins
@@ -1527,8 +1527,9 @@ net-analyzer/gping 1.20.1: Ping, but with a graph
 net-analyzer/munin-contrib 0.2021.04.27 0.2024.03.04 0.2024.03.04-r1: User contributed stuff related to munin
 net-analyzer/netsniff-ng 0.6.8-r1 0.6.9: high performance network sniffer for packet inspection
 net-analyzer/reaction 2.2.0 2.2.1: Scan logs and take action
-net-client/amfora 1.8.0 1.9.2: A fancy terminal browser for the Gemini protocol.
+net-client/amfora 1.9.2 1.11.0: A fancy terminal browser for the Gemini protocol.
 net-client/castor 0.8.18 0.9.0-r1: A graphical browser for plain-text protocols
+net-client/geopard 1.7.0: GTK 4 Gemini browser written in Rust
 net-client/kristall 0.3-r2 0.4: Visual cross-platform gemini browser
 net-client/lagrange 1.18.8 1.19.3: Desktop GUI client for browsing Geminispace
 net-client/offpunk 2.6 2.7.1: Offline-First Gemini/Web/Gopher/RSS reader and browser
@@ -1572,7 +1573,7 @@ net-im/matterhorn-bin 90000.1.0 90000.1.1: Terminal based Mattermost client
 net-im/maubot 0.5.0-r1 0.5.1: Plugin-based Matrix bot system
 net-im/mautrix-discord 0.7.1 0.7.2: A Matrix-Discord puppeting bridge
 net-im/mautrix-meta 0.4.2 0.4.3 0.2510.0: A Matrix-Facebook puppeting bridge
-net-im/mautrix-signal 0.7.4 0.7.5 0.8.7: Matrix-Signal puppeting bridge
+net-im/mautrix-signal 0.8.7 25.10: Matrix-Signal puppeting bridge
 net-im/mautrix-slack 0.1.3 0.1.4: A Matrix-Slack puppeting bridge based on slack-go
 net-im/mautrix-telegram 0.15.2 0.15.3: A Matrix-Telegram Messenger puppeting bridge
 net-im/mautrix-whatsapp 0.12.5: A Matrix-WhatsApp puppeting bridge
@@ -1612,7 +1613,7 @@ net-mail/pop 0.2.0: Send emails from your terminal
 net-misc/FORT-validator 1.5.4-r2 1.6.1-r2 1.6.2-r2: FORT validator is an open source RPKI validator
 net-misc/brickd 2.4.7 2.4.8: Network Daemon bridging API bindings to Tinkerforge hardware bricks
 net-misc/can-utils 2021.08.0 2023.03 9999-r3: CAN userspace utilities and tools
-net-misc/cellbroadcastd 0.0.2: DBus service for cellular broadcast messages
+net-misc/cellbroadcastd 0.0.2 0.0.3: DBus service for cellular broadcast messages
 net-misc/clatd 1.6-r1 2.1.0: A CLAT / SIIT-DC Edge Relay implementation for Linux
 net-misc/commons-downloader 9999: A shell script to bulk download files from Wikimedia Commons, by category
 net-misc/commons-wikimedia-find-by-hash 1.0.0: Search in commons.wikimedia.org by hash (sha1) of provided file
@@ -1694,7 +1695,7 @@ net-proxy/snowflake 2.10.1 2.11.0: Pluggable Transport using WebRTC, inspired by
 net-proxy/wireproxy 1.0.9: Wireguard client that exposes itself as a proxy
 net-voip/baresip 3.23.0 3.24.0 4.2.0: Baresip is a portable and modular SIP User-Agent
 net-voip/discover-overlay 0.6.9-r1 0.7.4 0.7.8: Yet another Discord overlay for Linux written in Python using GTK3
-net-voip/gnome-calls 47.0-r1 48.1 48.2: Phone dialer and call handler
+net-voip/gnome-calls 48.2 49.1.1: Phone dialer and call handler
 net-voip/re 3.23.0 3.24.0 4.2.0: Generic library for real-time communications with async IO support
 net-voip/vvmd 0.8-r1: vvmd is a lower level daemon that retrieves Visual Voicemail
 net-vpn/GlobalProtect-openconnect 2.4.4-r1: Unofficial GlobalProtect VPN client for Linux
@@ -1719,13 +1720,13 @@ net-wireless/rtl8821ce 0_pre20240326: Realtek RTL8821CE Driver module for Linux 
 net-wireless/rtl8821cu 0_pre20240821: Realtek 8821CU/RTL8811CU module for Linux kernel
 net-wireless/sdrpp 1.2.0_pre20240607: Cross-Platform SDR Software
 phosh-base/pfs 0.0.4 0.0.5: Phosh File Selector library for selecting files
-phosh-base/phosh 0.48.0 0.49.0: Meta package for Phosh, merge this package to install
-phosh-base/phosh-mobile-settings 0.47.0 0.48.0 0.49.0: Phosh and related settings for mobile
-phosh-base/phosh-osk-stevia 0.48.0 0.49.0: Alternative on screen keyboard for Phosh
+phosh-base/phosh 0.48.0 0.49.0 0.50.1: Meta package for Phosh, merge this package to install
+phosh-base/phosh-mobile-settings 0.48.0 0.49.0 0.50.1: Phosh and related settings for mobile
+phosh-base/phosh-osk-stevia 0.48.0 0.49.0 0.50.0: Alternative on screen keyboard for Phosh
 phosh-base/phosh-osk-stub 0.42.0 0.47.0: Alternative on screen keyboard for Phosh
-phosh-base/phosh-shell 0.47.0-r1 0.48.0 0.49.0: Pure Wayland shell for mobile devices
+phosh-base/phosh-shell 0.48.0 0.49.0 0.50.1: Pure Wayland shell for mobile devices
 phosh-base/phosh-tour 0.47.0 0.50.0: Introduction to phosh on smartphones
-phosh-base/xdg-desktop-portal-phosh 0.47.0 0.48.0 0.49.0: Phosh portal backend for xdg-desktop-portal
+phosh-base/xdg-desktop-portal-phosh 0.48.0 0.49.0 0.50.0: Phosh portal backend for xdg-desktop-portal
 sci-biology/cmdock 0.2.0-r2 0.2.0-r3: Program for docking ligands to proteins and nucleic acids
 sci-biology/cytoscape-bin 3.10.4: A visualization platform for molecular interaction networks
 sci-biology/geneathome 1.10-r5: BOINC application for expanding Gene Regulatory Networks (GRN)
@@ -1789,16 +1790,16 @@ sci-mathematics/pyromaths 21.8.2-r1: Create maths exercises in LaTeX and PDF for
 sci-mathematics/rink 0.8.0-r1 9999: Unit conversion tool, similar to frink
 sci-mathematics/rstudio-desktop-bin 2023.09.1_p494 2024.12.0_p467 2024.12.0_p467-r1: IDE for R and Python
 sci-misc/boinc-wrapper 26018-r3 26019 26019-r1: Wrapper to use non-BOINC apps with BOINC
-sci-misc/llama-cpp 0_pre4576 0_pre5332 0_pre5633-r1 0_pre6140 0_pre6318 0_pre6710 9999: Port of Facebook's LLaMA model in C/C++
+sci-misc/llama-cpp 0_pre5332 0_pre5633-r1 0_pre6140 0_pre6318 0_pre6710 0_pre6980 9999: Port of Facebook's LLaMA model in C/C++
 sci-ml/aichat 0.30.0: All-in-one LLM CLI Tool
-sci-ml/ollama 0.12.3 0.12.6 9999: Get up and running with Llama 3, Mistral, Gemma, and other language models.
+sci-ml/ollama 0.12.6 0.12.9 9999: Get up and running with Llama 3, Mistral, Gemma, and other language models.
 sci-physics/openmodelica 1.24.0-r1: Open-source Modelica-based modeling and simulation environment
 sci-physics/ovito 3.10.4 3.10.5 3.10.5-r1: Open Visualization Tool
 sec-keys/openpgp-keys-aepaneshnikov 20221210: OpenPGP keys used by Alexander Epaneshnikov
 sec-keys/openpgp-keys-emersion 20240714: OpenPGP keys used by Simon Ser
 sec-keys/openpgp-keys-featherwallet 20201209: OpenPGP keys used to sign Feather Wallet releases
 sec-keys/openpgp-keys-jvoisin 20230224 20251029: OpenPGP keys used by Julien Voisin
-sec-keys/openpgp-keys-phosh 2024: OpenPGP keys used to sign Phosh releases
+sec-keys/openpgp-keys-phosh 2024 2025: OpenPGP keys used to sign Phosh releases
 sec-keys/openpgp-keys-russallbery 20250000: OpenPGP keys used by Russ Allbery (Eagle)
 sec-keys/openpgp-keys-schernykh 20210409: OpenPGP keys used to sign P2Pool releases
 sec-keys/openpgp-keys-skyjake 20211224: OpenPGP keys used by Jaakko Keranen
@@ -1815,9 +1816,9 @@ sys-apps/bpftune 9999: bpftune uses BPF to auto-tune Linux systems
 sys-apps/bustd 0.1.1: Process killer daemon for out-of-memory scenarios
 sys-apps/cctv 9999: Terminal interface for CoolerControl
 sys-apps/colortail 0.3.3 9999: tail command with colors
-sys-apps/coolercontrol 2.2.2 3.0.1: Monitor and control your cooling and other devices
+sys-apps/coolercontrol 2.2.2 3.0.1 3.0.2: Monitor and control your cooling and other devices
 sys-apps/coolercontrol-liqctld 2.2.2: Monitor and control your cooling and other devices (liqctld)
-sys-apps/coolercontrold 2.2.2 3.0.1: Monitor and control your cooling and other devices (daemon)
+sys-apps/coolercontrold 2.2.2 3.0.1 3.0.2: Monitor and control your cooling and other devices (daemon)
 sys-apps/corefreq 2.0.8: CPU monitoring and tuning software designed for 64-bit processors
 sys-apps/dnf5 5.2.16.0 5.2.17.0: Command-line package manager
 sys-apps/dool 1.3.1-r1 1.3.2-r2 9999: Versatile replacement for vmstat, iostat and ifstat (clone of dstat)
@@ -1867,7 +1868,7 @@ sys-devel/clang-bloomberg-p2996 21.0.0_p20250702 9999: Clang fork implementing e
 sys-devel/fcode-utils 1.0.3: Set of utilities to process FCODE, OpenFirmware's byte code
 sys-devel/lcc 2021.01.11-r1: The lcc retargetable ANSI C compiler
 sys-firmware/lenovolegionlinux 9999: Lenovo Legion Linux kernel module
-sys-fs/bcachefs-kmod 1.31.11: Linux bcachefs kernel module for sys-fs/bcachefs-tools
+sys-fs/bcachefs-kmod 1.31.13: Linux bcachefs kernel module for sys-fs/bcachefs-tools
 sys-fs/btrd 0.5.4: The btrfs debugger
 sys-fs/btrfs-dump 20250918: Metadata dumper for btrfs
 sys-fs/btrfs-heatmap 9-r1: Python 3 script to draw a heatmap of a btrfs filesystem
@@ -1923,7 +1924,7 @@ www-apps/anubis 1.22.0 1.23.0: Weighs the soul of incoming HTTP requests to stop
 www-apps/code-server-bin 4.18.0 4.19.1 4.90.3: VS Code in the browser (binary version with unbundled node and ripgrep)
 www-apps/forgejo 11.0.7 12.0.4 13.0.2: A self-hosted lightweight software forge
 www-apps/freshrss 1.26.3: A free, self-hostable news aggregator
-www-apps/invidious 2025.09.13.0 2025.09.13.0-r1: Invidious is an alternative front-end to YouTube
+www-apps/invidious 2025.09.13.0-r2: Invidious is an alternative front-end to YouTube
 www-apps/jackett 0.22.1363: API Support for your favorite torrent trackers
 www-apps/laminar 1.3-r1: Fast and lightweight Continuous Integration
 www-apps/libmedium 2024.06.10: Alternative private front-end to Medium
@@ -1944,8 +1945,8 @@ www-client/mullvad-browser-bin 15.0: The Mullvad Browser is developed to minimiz
 www-client/nyxt 3.11.8 3.12.0 9999: Nyxt - the hacker's power-browser
 www-client/torbrowser-launcher 0.3.9: A program to help you securely download and run Tor Browser
 www-client/vimb 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
-www-client/yandex-browser 25.8.5.854_p1: The web browser from Yandex
-www-client/zen-bin 1.15.5b 1.16b 1.16.3b 1.16.4b 1.17b 1.17.1b 1.17.2b 1.17.3b 1.17.4b 1.17.5b: Zen Browser - A fast, privacy-focused Firefox fork
+www-client/yandex-browser 25.8.5.993_p1: The web browser from Yandex
+www-client/zen-bin 1.15.5b 1.16b 1.16.3b 1.16.4b 1.17b 1.17.1b 1.17.2b 1.17.3b 1.17.4b 1.17.5b 1.17.6b: Zen Browser - A fast, privacy-focused Firefox fork
 www-misc/dufs 0.40.0: Dufs is a distinctive utility file server
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits
 www-misc/kiwix-desktop 2.4.0: cross-platform viewer/manager for ZIM archives

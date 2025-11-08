@@ -1,0 +1,16 @@
+BDEPEND=|| ( >=dev-lang/rust-bin-1.86:* >=dev-lang/rust-1.86:* ) virtual/pkgconfig
+DEFINED_PHASES=compile configure install postinst prepare setup test unpack
+DEPEND=app-arch/zstd:= liquidctl? ( python_single_target_python3_11? ( dev-lang/python:3.11 ) python_single_target_python3_12? ( dev-lang/python:3.12 ) python_single_target_python3_13? ( dev-lang/python:3.13 ) python_single_target_python3_11? ( app-misc/liquidctl[python_targets_python3_11(-)] ) python_single_target_python3_12? ( app-misc/liquidctl[python_targets_python3_12(-)] ) python_single_target_python3_13? ( app-misc/liquidctl[python_targets_python3_13(-)] ) )
+DESCRIPTION=Monitor and control your cooling and other devices (daemon)
+EAPI=8
+HOMEPAGE=https://gitlab.com/coolercontrol/coolercontrol
+INHERIT=cargo eapi9-ver optfeature python-single-r1 systemd
+IUSE=liquidctl debug python_single_target_python3_11 python_single_target_python3_12 python_single_target_python3_13
+KEYWORDS=~amd64
+LICENSE=GPL-3+ AGPL-3+ Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD-2 BSD GPL-3+ ISC MIT UoI-NCSA Unicode-3.0 ZLIB
+RDEPEND=app-arch/zstd:= liquidctl? ( python_single_target_python3_11? ( dev-lang/python:3.11 ) python_single_target_python3_12? ( dev-lang/python:3.12 ) python_single_target_python3_13? ( dev-lang/python:3.13 ) python_single_target_python3_11? ( app-misc/liquidctl[python_targets_python3_11(-)] ) python_single_target_python3_12? ( app-misc/liquidctl[python_targets_python3_12(-)] ) python_single_target_python3_13? ( app-misc/liquidctl[python_targets_python3_13(-)] ) )
+REQUIRED_USE=liquidctl? ( ^^ ( python_single_target_python3_11 python_single_target_python3_12 python_single_target_python3_13 ) )
+SLOT=0
+SRC_URI=https://gitlab.com/coolercontrol/coolercontrol/-/releases/3.0.2/downloads/packages/coolercontrol-3.0.2.tar.gz https://gitlab.com/coolercontrol/coolercontrol/-/releases/3.0.2/downloads/packages/coolercontrold-vendor.tar.gz -> coolercontrold-3.0.2-vendor.tar.gz
+_eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	rust	86c81efc08f3f4c1104dbcb8df8e2885	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	a1af74aa9e34cd73aeac642cd0dd54d8	eapi9-ver	6a71fa30cdb3fe445114fdeab156c1f0	optfeature	538bce96e5589935b57e178e8635f301	python-utils-r1	dbb8c4d794033ad7e7221eaf567a6c90	python-single-r1	47d8ac9be330c9366112b78fd4f8ce57	systemd	a964c0cbe818b5729da1dbfcee5be861
+_md5_=9a6fa06a575ea92f3e665b14072e0e92

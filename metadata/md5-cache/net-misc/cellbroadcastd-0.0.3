@@ -1,0 +1,16 @@
+BDEPEND=dev-util/gdbus-codegen dev-util/glib-utils sys-devel/gettext verify-sig? ( >=sec-keys/openpgp-keys-phosh-2025 ) >=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array virtual/pkgconfig verify-sig? ( || ( app-alternatives/gpg app-crypt/gnupg[-alternatives(-)] ) >=app-portage/gemato-20 )
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=vala? ( || ( dev-lang/vala:0.56 ) )
+DESCRIPTION=DBus service for cellular broadcast messages
+EAPI=8
+HOMEPAGE=https://gitlab.freedesktop.org/devrtz/cellbroadcastd
+INHERIT=meson systemd vala verify-sig
+IUSE=+introspection vala verify-sig
+KEYWORDS=~amd64
+LICENSE=GPL-3+ LGPL-2.1+
+RDEPEND=>=dev-libs/glib-2.76.0:2 >=dev-libs/gmobile-0.4.0 gnome-base/gsettings-desktop-schemas net-misc/mobile-broadband-provider-info >=net-misc/modemmanager-1.24.0:= sys-apps/dbus introspection? ( dev-libs/gobject-introspection )
+REQUIRED_USE=vala? ( introspection )
+SLOT=0
+SRC_URI=https://sources.phosh.mobi/releases/cellbroadcastd/cellbroadcastd-0.0.3.tar.xz verify-sig? ( https://sources.phosh.mobi/releases/cellbroadcastd/cellbroadcastd-0.0.3.tar.xz.asc )
+_eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	dbb8c4d794033ad7e7221eaf567a6c90	meson	99466844dd8d4fcfb07578a76f5a9922	systemd	a964c0cbe818b5729da1dbfcee5be861	vala	e477903dbe0105930c51f170a592dc16	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	verify-sig	2cf23b136af9fd4c3fceadc34d0f98ad
+_md5_=cabba41adec86b7ac929c54296bdce5c
