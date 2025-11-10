@@ -1,9 +1,9 @@
-# Copyright 2020-2021 Gentoo Authors
+# Copyright 2020-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
-inherit cmake
+inherit cmake flag-o-matic
 
 DESCRIPTION="The open source OpenXR runtime."
 HOMEPAGE="https://monado.dev"
@@ -55,7 +55,7 @@ DEPEND="
 	sdl? ( media-libs/libsdl2 )
 	gstreamer? ( media-libs/gstreamer )
 	psvr? ( dev-libs/hidapi )
-	vive? ( sys-libs/zlib:= )
+	vive? ( virtual/zlib:= )
 	onnxruntime? ( sci-libs/onnxruntime )
 "
 RDEPEND="${DEPEND}"
@@ -96,6 +96,10 @@ src_configure() {
 		-DXRT_BUILD_DRIVER_SURVIVE=OFF
 		-DXRT_BUILD_DRIVER_QWERTY=$(usex sdl)
 	)
+
+	# Causes Werror-incompatible-pointer-types-discards-qualifiers
+	# with some string literals used in struct initialization
+	filter-flags -Wwrite-strings
 
 	cmake_src_configure
 }
