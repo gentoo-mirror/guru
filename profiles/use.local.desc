@@ -151,22 +151,6 @@ dev-lang/gnu-apl:python - Build the Python extension lib_gnu_apl.so
 dev-lang/gnu-apl:sqlite3 - Use sqlite3
 dev-lang/quickjs:lto - Enable Link Time Optimizations (improves performance and decreases size of executables)
 dev-lang/swift:libcxx - Use llvm-runtimes/libcxx as the default C++ runtime library.
-dev-libs/aws-sdk-cpp:analytics - Adds access to big data and analysis related services.
-dev-libs/aws-sdk-cpp:compute - Adds access to Compute and Auto Scaling related services.
-dev-libs/aws-sdk-cpp:database - Adds access functionality to RDB, NoSQL, TimeStream, and Ledger related services.
-dev-libs/aws-sdk-cpp:devops - Adds access to CI/CD and developer related services.
-dev-libs/aws-sdk-cpp:full - Adds access to all supported services. Enabling this will significantly increase build times.
-dev-libs/aws-sdk-cpp:http - If ON, prevents the default platform-specific HTTP client from being built into the library. If ON, you will need to provide your own platform-specific HTTP client implementation.
-dev-libs/aws-sdk-cpp:iot - Adds access to IoT and edge services.
-dev-libs/aws-sdk-cpp:media - Adds access to media processing related services.
-dev-libs/aws-sdk-cpp:messaging - Adds access to messaging and notification services.
-dev-libs/aws-sdk-cpp:mgmt - Adds access to operational management related services.
-dev-libs/aws-sdk-cpp:ml - Adds access to machine learning and AI related services.
-dev-libs/aws-sdk-cpp:monitor - Adds access to monitoring and operation related services.
-dev-libs/aws-sdk-cpp:networking - Adds access to network and CDN related services.
-dev-libs/aws-sdk-cpp:other - Add access to services that do not easily fit into existing groups.
-dev-libs/aws-sdk-cpp:security - Adds access to services related to ID management and security auditing.
-dev-libs/aws-sdk-cpp:storage - Adds access to services related to object, block, and file storage.
 dev-libs/feedbackd:daemon - Build the feedbackd daemon
 dev-libs/hts_engine:speech-tools - use memory allocation/free functions of app-accessibility/speech-tools
 dev-libs/libdbf:doc - Include documentation
