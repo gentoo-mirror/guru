@@ -1,11 +1,11 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="8"
 
 inherit desktop pax-utils prefix rpm xdg
 
-BUILDID="9813"
+BUILDID="9816"
 BVER="${PV/_rc*/}-${BUILDID}"
 BVER2=${PV}-${BUILDID}
 BASIS="ooobasis4.1"
@@ -35,7 +35,7 @@ LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
-IUSE="gnome java"
+IUSE="gnome java kde"
 
 # TODO: supports ca_XR (Valencian RACV) locale too
 LANGS="ast eu bg ca ca-valencia zh-CN zh-TW cs da nl en-GB fi fr gd gl de el he hi hu it ja km ko lt nb pl pt-BR pt ru sr sk sl es sv ta th tr vi"
@@ -48,6 +48,7 @@ for X in ${LANGS} ; do
 done
 
 RDEPEND="
+	kde? ( kde-plasma/breeze-gtk )
 	!prefix? ( sys-libs/glibc )
 	>=app-accessibility/at-spi2-core-2.50.1:2
 	app-arch/unzip
@@ -74,6 +75,7 @@ DEPEND="
 	${RDEPEND}
 	sys-apps/findutils
 "
+BDEPEND="dev-util/patchelf"
 PDEPEND="java? ( || ( >=virtual/jre-1.8.0 dev-java/openjdk-jre-bin:11 dev-java/openjdk-bin dev-java/openjdk:11 ) )"
 
 RESTRICT="mirror strip"
@@ -102,7 +104,7 @@ src_unpack() {
 		rpm_unpack "./${UP}/${NM1}-${j}-${BVER}.${XARCH}.rpm"
 	done
 
-	rpm_unpack "./${UP}/desktop-integration/${NM3}-freedesktop-menus-${BVER2}.noarch.rpm"
+	rpm_unpack "./${UP}/desktop-integration/${NM3}-freedesktop-menus-${BVER}.noarch.rpm"
 
 	use gnome && rpm_unpack "./${UP}/${NM}-gnome-integration-${BVER}.${XARCH}.rpm"
 	use java && rpm_unpack "./${UP}/${NM}-javafilter-${BVER}.${XARCH}.rpm"
@@ -183,6 +185,9 @@ src_install() {
 
 	# remove obsolete gstreamer-0.10 plugin
 	rm "${ED}${INSTDIR}/program/libavmediagst.so" || die
+
+	# scanelf: rpath_security_checks(): Security problem with relative DT_RPATH '.'
+	patchelf --set-rpath '$ORIGIN' "${ED}"/usr/$(get_libdir)/openoffice/program/libicudata.so.42.1 || die
 }
 
 pkg_preinst() {

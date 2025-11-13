@@ -6,13 +6,13 @@ EAPI=8
 inherit cmake xdg
 
 DESCRIPTION="Set of libraries for building Wayland based shells"
-HOMEPAGE="https://mir-server.io/"
+HOMEPAGE="https://canonical.com/mir"
 SRC_URI="https://github.com/canonical/mir/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="|| ( GPL-2 GPL-3 ) || ( LGPL-2.1 LGPL-3 )"
-SLOT="0/${PV}"
+SLOT="0/$(ver_cut 1-2)"
 KEYWORDS="~amd64"
-IUSE="test X"
+IUSE="examples test wayland X"
 RESTRICT="!test? ( test )"
 
 RDEPEND="
@@ -25,6 +25,7 @@ RDEPEND="
 	dev-libs/wayland
 	dev-util/lttng-ust:=
 	media-libs/freetype
+	media-libs/libdisplay-info:=
 	media-libs/libepoxy
 	media-libs/libglvnd
 	media-libs/mesa
@@ -59,19 +60,21 @@ PATCHES=(
 
 src_prepare() {
 	cmake_src_prepare
-	cmake_comment_add_subdirectory examples/ examples/tests/
+	use examples || cmake_comment_add_subdirectory examples/ examples/tests/
 }
 
 src_configure() {
-	local platforms="gbm-kms;atomic-kms;wayland"
-	use X && platforms="${platforms};x11"
+	local platforms=( gbm-kms atomic-kms )
+	use wayland && platforms+=( wayland )
+	use X && platforms+=( x11 )
 
 	local mycmakeargs=(
 		# wlcs is not packaged
 		-DMIR_ENABLE_WLCS_TESTS=OFF
 		-DMIR_ENABLE_TESTS="$(usex test)"
 		-DMIR_FATAL_COMPILE_WARNINGS=OFF
-		-DMIR_PLATFORM="${platforms}"
+		-DMIR_PLATFORM="$(IFS=';'; echo "${platforms[*]}")"
+		-DMIR_ENABLE_RUST=OFF
 	)
 	use test && mycmakeargs+=(
 		# likely will not work in build environment
@@ -80,4 +83,9 @@ src_configure() {
 		-DMIR_BUILD_UNIT_TESTS=OFF
 	)
 	cmake_src_configure
+}
+
+src_test() {
+	xdg_environment_reset
+	cmake_src_test
 }

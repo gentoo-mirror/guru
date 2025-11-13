@@ -52,8 +52,8 @@ BDEPEND="
 
 PATCHES=(
 	"${FILESDIR}/${PN}-0.6.1-conditional-tests.patch"
-	"${FILESDIR}/${P}-disable-mirtest.patch"
-	"${FILESDIR}/${P}-no-automagic.patch"
+	"${FILESDIR}/${PN}-0.7.0-disable-mirtest.patch"
+	"${FILESDIR}/${PN}-0.7.0-no-automagic.patch"
 )
 
 pkg_setup() {
