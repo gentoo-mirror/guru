@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install
+DESCRIPTION=Real-time logging dashboard for Kubernetes
+EAPI=8
+HOMEPAGE=https://github.com/kubetail-org/kubetail
+INHERIT=shell-completion
+KEYWORDS=~amd64 ~arm64
+LICENSE=Apache-2.0
+SLOT=0
+SRC_URI=amd64? ( https://github.com/kubetail-org/kubetail/releases/download/cli%2Fv0.10.1/kubetail-linux-amd64.tar.gz -> kubetail-bin-0.10.1-linux-amd64.tar.gz ) arm64? ( https://github.com/kubetail-org/kubetail/releases/download/cli%2Fv0.10.1/kubetail-linux-arm64.tar.gz -> kubetail-bin-0.10.1-linux-arm64.tar.gz )
+_eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	bash-completion-r1	767861f3744f589ee5291c1698b1c082	shell-completion	0b655d0d825e157a5e99c463bddaac16
+_md5_=fc5922f5478656441be62a7a720f8a75

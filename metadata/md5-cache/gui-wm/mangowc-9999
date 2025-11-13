@@ -1,6 +1,6 @@
 BDEPEND=>=dev-libs/wayland-protocols-1.32 >=dev-util/wayland-scanner-1.23 >=dev-build/meson-0.60.0 virtual/pkgconfig >=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install postinst test unpack
-DEPEND=>=gui-libs/wlroots-0.19:=[libinput,session,X?] <gui-libs/wlroots-0.20:=[X?] dev-libs/libinput:= dev-libs/wayland >=gui-libs/scenefx-0.4.1 dev-libs/libpcre2 x11-libs/libxkbcommon X? ( x11-libs/libxcb:= x11-libs/xcb-util-wm ) sys-kernel/linux-headers
+DEPEND=>=gui-libs/wlroots-0.19:=[libinput,session,X?] <gui-libs/wlroots-0.20:=[X?] dev-libs/libinput:= dev-libs/wayland ~gui-libs/scenefx-9999 dev-libs/libpcre2 x11-libs/libxkbcommon X? ( x11-libs/libxcb:= x11-libs/xcb-util-wm ) sys-kernel/linux-headers
 DESCRIPTION=wayland compositor based on wlroots and scenefx(dwl but no suckless)
 EAPI=8
 HOMEPAGE=https://github.com/DreamMaoMao/maomaowm.git
@@ -8,7 +8,7 @@ INHERIT=meson git-r3
 IUSE=X
 LICENSE=CC0-1.0 GPL-3+ MIT
 PROPERTIES=live
-RDEPEND=>=gui-libs/wlroots-0.19:=[libinput,session,X?] <gui-libs/wlroots-0.20:=[X?] dev-libs/libinput:= dev-libs/wayland >=gui-libs/scenefx-0.4.1 dev-libs/libpcre2 x11-libs/libxkbcommon X? ( x11-libs/libxcb:= x11-libs/xcb-util-wm ) X? ( x11-base/xwayland )
+RDEPEND=>=gui-libs/wlroots-0.19:=[libinput,session,X?] <gui-libs/wlroots-0.20:=[X?] dev-libs/libinput:= dev-libs/wayland ~gui-libs/scenefx-9999 dev-libs/libpcre2 x11-libs/libxkbcommon X? ( x11-libs/libxcb:= x11-libs/xcb-util-wm ) X? ( x11-base/xwayland )
 SLOT=0
 _eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	3a59a39e97af0f7c03f49cf3c22f262b	python-utils-r1	dbb8c4d794033ad7e7221eaf567a6c90	meson	99466844dd8d4fcfb07578a76f5a9922	git-r3	875eb471682d3e1f18da124be97dcc81
-_md5_=8c855e042b642de2860fb507793b368d
+_md5_=cdfe359ca9732907f1b06b0a41df1757
