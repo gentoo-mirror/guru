@@ -1,6 +1,6 @@
 BDEPEND=virtual/pkgconfig lua_single_target_luajit? ( dev-lang/luajit:= ) lua_single_target_lua5-1? ( dev-lang/lua:5.1 ) app-alternatives/ninja >=dev-build/cmake-3.28.5
 DEFINED_PHASES=compile configure install postinst prepare setup test
-DEPEND=lua_single_target_luajit? ( dev-lang/luajit:= ) lua_single_target_lua5-1? ( dev-lang/lua:5.1 ) media-libs/libsdl2[sound,video] media-libs/sdl2-image media-libs/sdl2-mixer media-libs/sdl2-ttf sys-libs/zlib x11-libs/gtk+:3 iconv? ( >=virtual/libiconv-0-r1 ) harfbuzz? ( media-libs/harfbuzz media-libs/sdl2-ttf[harfbuzz] )
+DEPEND=lua_single_target_luajit? ( dev-lang/luajit:= ) lua_single_target_lua5-1? ( dev-lang/lua:5.1 ) media-libs/libsdl2[sound,video] media-libs/sdl2-image media-libs/sdl2-mixer media-libs/sdl2-ttf virtual/zlib:= x11-libs/gtk+:3 iconv? ( >=virtual/libiconv-0-r1 ) harfbuzz? ( media-libs/harfbuzz media-libs/sdl2-ttf[harfbuzz] )
 DESCRIPTION=INSTEAD text-based quest game engine
 EAPI=8
 HOMEPAGE=https://instead.hugeping.ru/
@@ -8,9 +8,9 @@ INHERIT=cmake lua-single plocale
 IUSE=doc +iconv +harfbuzz lua_single_target_luajit lua_single_target_lua5-1
 KEYWORDS=~amd64 ~x86
 LICENSE=MIT
-RDEPEND=lua_single_target_luajit? ( dev-lang/luajit:= ) lua_single_target_lua5-1? ( dev-lang/lua:5.1 ) media-libs/libsdl2[sound,video] media-libs/sdl2-image media-libs/sdl2-mixer media-libs/sdl2-ttf sys-libs/zlib x11-libs/gtk+:3 iconv? ( >=virtual/libiconv-0-r1 ) harfbuzz? ( media-libs/harfbuzz media-libs/sdl2-ttf[harfbuzz] )
+RDEPEND=lua_single_target_luajit? ( dev-lang/luajit:= ) lua_single_target_lua5-1? ( dev-lang/lua:5.1 ) media-libs/libsdl2[sound,video] media-libs/sdl2-image media-libs/sdl2-mixer media-libs/sdl2-ttf virtual/zlib:= x11-libs/gtk+:3 iconv? ( >=virtual/libiconv-0-r1 ) harfbuzz? ( media-libs/harfbuzz media-libs/sdl2-ttf[harfbuzz] )
 REQUIRED_USE=^^ ( lua_single_target_luajit lua_single_target_lua5-1 )
 SLOT=0
 SRC_URI=https://github.com/instead-hub/instead/archive/3.5.2.tar.gz -> instead-3.5.2.tar.gz
 _eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	3a59a39e97af0f7c03f49cf3c22f262b	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	a36a2a340635cb293524229ee6d2ef7a	lua-utils	7c89927eda6f21c4c48136247077ab37	lua-single	75fe955a36b18e199213c8739eaebdbb	plocale	950fbaec7deeba41b5bcc0572cca99b9
-_md5_=62f1207d2beb35073c521384bd175055
+_md5_=986cbf1b568bc90e1722cd9c3a1608d2

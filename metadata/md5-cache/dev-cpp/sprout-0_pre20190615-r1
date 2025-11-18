@@ -1,14 +1,16 @@
 BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.28.5
 DEFINED_PHASES=compile configure install prepare test
-DESCRIPTION=Modular web engine (HTML/CSS parser, renderer, ...)
+DEPEND=dev-libs/boost:=
+DESCRIPTION=C++11/14 constexpr based Containers, Algorithms, Random numbers and others
 EAPI=8
-HOMEPAGE=https://lexbor.com/ https://github.com/lexbor/lexbor
+HOMEPAGE=http://bolero-murakami.github.io/Sprout/
 INHERIT=cmake
-IUSE=examples static-libs test
-KEYWORDS=~amd64
-LICENSE=Apache-2.0
+IUSE=test texconv wavconv
+KEYWORDS=~amd64 ~x86
+LICENSE=Boost-1.0
+RDEPEND=dev-libs/boost:=
 RESTRICT=!test? ( test )
 SLOT=0
-SRC_URI=https://github.com/lexbor/lexbor/archive/refs/tags/v2.5.0.tar.gz -> lexbor-2.5.0.tar.gz
+SRC_URI=https://github.com/bolero-MURAKAMI/Sprout/archive/6b5addba9face0a6403e66e7db2aa94d87387f61.tar.gz -> sprout-0_pre20190615.tar.gz
 _eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	3a59a39e97af0f7c03f49cf3c22f262b	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	a36a2a340635cb293524229ee6d2ef7a
-_md5_=71121e4a585e42284d02751947cb557e
+_md5_=8991a8044d4a8f2ebcf03afbfdc2a1bd

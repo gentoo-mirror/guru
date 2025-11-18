@@ -1,0 +1,13 @@
+BDEPEND=virtual/pkgconfig app-alternatives/ninja >=dev-build/cmake-3.28.5
+DEFINED_PHASES=compile configure install prepare test
+DESCRIPTION=Convert SUP graphic subtitles to text-based SRT format
+EAPI=8
+HOMEPAGE=https://github.com/retrontology/sup2srt
+INHERIT=cmake
+KEYWORDS=~amd64
+LICENSE=GPL-3+
+RDEPEND=app-text/tesseract media-libs/leptonica media-libs/tiff[cxx] media-video/ffmpeg:=
+SLOT=0
+SRC_URI=https://github.com/retrontology/sup2srt/archive/b40c5aa8022772d977006417ac60bd067ce5504e.tar.gz -> sup2srt-1.0.6_p20250518.tar.gz
+_eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	3a59a39e97af0f7c03f49cf3c22f262b	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	a36a2a340635cb293524229ee6d2ef7a
+_md5_=536ede0eb58d4ebb7232d7246deb93b3
