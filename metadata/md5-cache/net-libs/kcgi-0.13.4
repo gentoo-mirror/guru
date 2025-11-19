@@ -1,6 +1,6 @@
 BDEPEND=dev-build/bmake virtual/pkgconfig kernel_linux? ( sys-kernel/linux-headers ) test? ( net-misc/curl )
 DEFINED_PHASES=compile configure install prepare test
-DEPEND=app-crypt/libmd dev-libs/libbsd virtual/libcrypt test? ( net-misc/curl virtual/zlib )
+DEPEND=app-crypt/libmd dev-libs/libbsd virtual/libcrypt test? ( net-misc/curl virtual/zlib:= )
 DESCRIPTION=Minimal CGI library for web applications
 EAPI=8
 HOMEPAGE=https://kristaps.bsd.lv/kcgi/
@@ -13,4 +13,4 @@ RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://kristaps.bsd.lv/kcgi/snapshots/kcgi-0.13.4.tgz
 _eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	flag-o-matic	a7afe42e95fb46ce9691605acfb24672
-_md5_=cdb8cac1f968bd43dbf71e1cbccad32a
+_md5_=53bbeb7624feb83bb0d8ec503aec12b9

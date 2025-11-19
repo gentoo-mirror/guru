@@ -7,8 +7,8 @@ HOMEPAGE=https://github.com/microsoft/DirectXShaderCompiler
 INHERIT=cmake check-reqs python-any-r1
 KEYWORDS=~amd64 ~x86
 LICENSE=Apache-2.0-with-LLVM-exceptions UoI-NCSA BSD public-domain rc
-RDEPEND=sys-libs/zlib:0= >=dev-libs/libffi-3.4.2-r1:0=
+RDEPEND=virtual/zlib:= >=dev-libs/libffi-3.4.2-r1:0=
 SLOT=0
 SRC_URI=https://github.com/microsoft/DirectXShaderCompiler/archive/refs/tags/v1.8.2505.tar.gz -> DirectXShaderCompiler-1.8.2505.tar.gz https://github.com/KhronosGroup/SPIRV-Headers/archive/aa6cef192b8e693916eb713e7a9ccadf06062ceb.tar.gz -> DirectXShaderCompiler-headers-aa6cef192b8e693916eb713e7a9ccadf06062ceb.tar.gz https://github.com/KhronosGroup/SPIRV-Tools/archive/a62abcb402009b9ca5975e6167c09f237f630e0e.tar.gz -> DirectXShaderCompiler-tools-a62abcb402009b9ca5975e6167c09f237f630e0e.tar.gz https://github.com/microsoft/DirectX-Headers/archive/980971e835876dc0cde415e8f9bc646e64667bf7.tar.gz -> DirectXShaderCompiler-directxheaders-980971e835876dc0cde415e8f9bc646e64667bf7.tar.gz
 _eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	3a59a39e97af0f7c03f49cf3c22f262b	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	a36a2a340635cb293524229ee6d2ef7a	check-reqs	2a9731073c152554078a9a8df8fc0f1b	python-utils-r1	dbb8c4d794033ad7e7221eaf567a6c90	python-any-r1	891415dfe39ad9b41b461f2b86354af0
-_md5_=77e673e2689cbb4d30bcd9309329e11b
+_md5_=23daf9be291ae525a0a308122adb5581

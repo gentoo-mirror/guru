@@ -1,11 +1,11 @@
 DEFINED_PHASES=install
-DEPEND=dev-libs/openssl sys-libs/zlib
+DEPEND=dev-libs/openssl virtual/zlib:=
 DESCRIPTION=Community fork of MTProxy
 EAPI=8
 HOMEPAGE=https://github.com/GetPageSpeed/MTProxy
 KEYWORDS=~amd64
 LICENSE=LGPL-2
-RDEPEND=dev-libs/openssl sys-libs/zlib
+RDEPEND=dev-libs/openssl virtual/zlib:=
 SLOT=0
 SRC_URI=https://github.com/GetPageSpeed/MTProxy/archive/refs/tags/3.0.4.tar.gz -> MTProxy-3.0.4.gh.tar.gz
-_md5_=947f6c70961ae7e10f48b96915139001
+_md5_=27833960ee7d6fa5d539e6ca8c4e6eeb

@@ -1,0 +1,14 @@
+BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.28.5
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=media-video/ffmpeg:= media-libs/libebur128 media-libs/taglib
+DESCRIPTION=Versatile ReplayGain 2.0 loudness normalizer
+EAPI=8
+HOMEPAGE=https://github.com/Moonbase59/loudgain
+INHERIT=cmake
+KEYWORDS=~amd64 ~x86
+LICENSE=BSD-2
+RDEPEND=media-video/ffmpeg:= media-libs/libebur128 media-libs/taglib
+SLOT=0
+SRC_URI=https://github.com/Moonbase59/loudgain/archive/079f82c613ea1e3597ad5e2cad077829fd75d2c9.tar.gz -> loudgain-079f82c613ea1e3597ad5e2cad077829fd75d2c9.tar.gz
+_eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	3a59a39e97af0f7c03f49cf3c22f262b	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	a36a2a340635cb293524229ee6d2ef7a
+_md5_=0b8f8491ceda6e703ccf9554abcc6d34

@@ -1,6 +1,6 @@
 BDEPEND=dev-ruby/asciidoctor || ( >=dev-lang/rust-bin-1.74.1:* >=dev-lang/rust-1.74.1:* ) >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install setup test unpack
-DEPEND=net-misc/curl dev-libs/openssl sys-libs/zlib
+DEPEND=net-misc/curl dev-libs/openssl virtual/zlib:=
 DESCRIPTION=Unit conversion tool, similar to frink
 EAPI=8
 HOMEPAGE=https://rinkcalc.app/about
@@ -11,4 +11,4 @@ PROPERTIES=live
 RDEPEND=net-misc/curl
 SLOT=0
 _eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	rust	ee7b3be2c0e004fa7aaaed31e4fef928	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	a1af74aa9e34cd73aeac642cd0dd54d8	desktop	3a72ffe0d8e1dd73af3a1c8c15a59fed	git-r3	875eb471682d3e1f18da124be97dcc81
-_md5_=79217f99d1bde41a1f71981a10838efa
+_md5_=01c7d2823b35152b13143ad609ca1c3e

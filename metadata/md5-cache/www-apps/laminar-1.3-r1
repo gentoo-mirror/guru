@@ -1,6 +1,6 @@
 BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.28.5
 DEFINED_PHASES=compile configure install prepare test unpack
-DEPEND=dev-db/sqlite:3 dev-libs/capnproto sys-libs/zlib dev-libs/boost dev-libs/rapidjson test? ( dev-cpp/gtest )
+DEPEND=dev-db/sqlite:3 dev-libs/capnproto virtual/zlib:= dev-libs/boost dev-libs/rapidjson test? ( dev-cpp/gtest )
 DESCRIPTION=Fast and lightweight Continuous Integration
 EAPI=8
 HOMEPAGE=https://laminar.ohwg.net https://github.com/ohwgiles/laminar
@@ -8,9 +8,9 @@ INHERIT=cmake
 IUSE=test
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-3 MIT
-RDEPEND=dev-db/sqlite:3 dev-libs/capnproto sys-libs/zlib acct-group/laminar acct-user/laminar
+RDEPEND=dev-db/sqlite:3 dev-libs/capnproto virtual/zlib:= acct-group/laminar acct-user/laminar
 RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://github.com/ohwgiles/laminar/archive/1.3.tar.gz -> laminar-1.3.tar.gz https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.min.js -> laminar-1.3-vue.min-2.6.12.js https://raw.githubusercontent.com/drudru/ansi_up/v4.0.4/ansi_up.js -> laminar-1.3-ansi_up-4.0.4.js https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js -> laminar-1.3-Chart.min-3.9.1.js
 _eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	3a59a39e97af0f7c03f49cf3c22f262b	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	a36a2a340635cb293524229ee6d2ef7a
-_md5_=e6188de8ef7616a181ca912cec625d59
+_md5_=1430971b386a9288521ba8375cd60708

@@ -1,6 +1,6 @@
 BDEPEND=virtual/pkgconfig app-alternatives/ninja >=dev-build/cmake-3.28.5
 DEFINED_PHASES=compile configure install prepare test
-DEPEND=curl? ( net-misc/curl ) doc? ( app-text/doxygen media-gfx/graphviz ) jansson? ( dev-libs/jansson:= ) ssl? ( net-libs/gnutls:= ) net-libs/libmicrohttpd:= net-libs/orcania net-libs/yder sys-libs/zlib
+DEPEND=curl? ( net-misc/curl ) doc? ( app-text/doxygen media-gfx/graphviz ) jansson? ( dev-libs/jansson:= ) ssl? ( net-libs/gnutls:= ) net-libs/libmicrohttpd:= net-libs/orcania net-libs/yder virtual/zlib:=
 DESCRIPTION=HTTP Framework for REST Applications in C
 EAPI=8
 HOMEPAGE=https://github.com/babelouest/ulfius/
@@ -8,9 +8,9 @@ INHERIT=cmake
 IUSE=curl doc jansson ssl websocket
 KEYWORDS=~amd64 ~x86
 LICENSE=LGPL-2.1
-RDEPEND=curl? ( net-misc/curl ) doc? ( app-text/doxygen media-gfx/graphviz ) jansson? ( dev-libs/jansson:= ) ssl? ( net-libs/gnutls:= ) net-libs/libmicrohttpd:= net-libs/orcania net-libs/yder sys-libs/zlib
+RDEPEND=curl? ( net-misc/curl ) doc? ( app-text/doxygen media-gfx/graphviz ) jansson? ( dev-libs/jansson:= ) ssl? ( net-libs/gnutls:= ) net-libs/libmicrohttpd:= net-libs/orcania net-libs/yder virtual/zlib:=
 RESTRICT=test
 SLOT=0
 SRC_URI=https://github.com/babelouest/ulfius/archive/v2.7.15.tar.gz -> ulfius-2.7.15.tar.gz
 _eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	3a59a39e97af0f7c03f49cf3c22f262b	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	a36a2a340635cb293524229ee6d2ef7a
-_md5_=af3818005615a903d7af493945e8d99e
+_md5_=a26c518637c2cd5867c5e32f431dfabe

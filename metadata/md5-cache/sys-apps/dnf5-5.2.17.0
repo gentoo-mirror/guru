@@ -1,6 +1,6 @@
 BDEPEND=dev-python/sphinx virtual/pkgconfig python? ( dev-lang/swig ) test? ( app-arch/rpm app-arch/createrepo_c dev-util/cppunit ) app-alternatives/ninja >=dev-build/cmake-3.28.5
 DEFINED_PHASES=compile configure install prepare setup test
-DEPEND=>=app-arch/rpm-4.17.0 dev-cpp/sdbus-c++:0/2 dev-cpp/toml11 >=dev-db/sqlite-3.35.0:3 >=dev-libs/glib-2.46.0:2 dev-libs/json-c:= dev-libs/libfmt:= >=dev-libs/librepo-1.20.0 >=dev-libs/libsolv-0.7.25 dev-libs/libxml2 sys-apps/util-linux >=sys-libs/libmodulemd-2.11.2 sys-libs/zlib appstream? ( >=dev-libs/appstream-0.16:= ) python? ( python_single_target_python3_12? ( dev-lang/python:3.12 ) python_single_target_python3_13? ( dev-lang/python:3.13 ) python_single_target_python3_14? ( dev-lang/python:3.14 ) ) systemd? ( sys-apps/systemd:= )
+DEPEND=>=app-arch/rpm-4.17.0 dev-cpp/sdbus-c++:0/2 dev-cpp/toml11 >=dev-db/sqlite-3.35.0:3 >=dev-libs/glib-2.46.0:2 dev-libs/json-c:= dev-libs/libfmt:= >=dev-libs/librepo-1.20.0 >=dev-libs/libsolv-0.7.25 dev-libs/libxml2 sys-apps/util-linux >=sys-libs/libmodulemd-2.11.2 virtual/zlib:= appstream? ( >=dev-libs/appstream-0.16:= ) python? ( python_single_target_python3_12? ( dev-lang/python:3.12 ) python_single_target_python3_13? ( dev-lang/python:3.13 ) python_single_target_python3_14? ( dev-lang/python:3.14 ) ) systemd? ( sys-apps/systemd:= )
 DESCRIPTION=Command-line package manager
 EAPI=8
 HOMEPAGE=https://github.com/rpm-software-management/dnf5
@@ -8,10 +8,10 @@ INHERIT=cmake python-single-r1
 IUSE=appstream nls python systemd test python_single_target_python3_12 python_single_target_python3_13 python_single_target_python3_14
 KEYWORDS=~amd64
 LICENSE=GPL-2+ LGPL-2.1+
-RDEPEND=>=app-arch/rpm-4.17.0 dev-cpp/sdbus-c++:0/2 dev-cpp/toml11 >=dev-db/sqlite-3.35.0:3 >=dev-libs/glib-2.46.0:2 dev-libs/json-c:= dev-libs/libfmt:= >=dev-libs/librepo-1.20.0 >=dev-libs/libsolv-0.7.25 dev-libs/libxml2 sys-apps/util-linux >=sys-libs/libmodulemd-2.11.2 sys-libs/zlib appstream? ( >=dev-libs/appstream-0.16:= ) python? ( python_single_target_python3_12? ( dev-lang/python:3.12 ) python_single_target_python3_13? ( dev-lang/python:3.13 ) python_single_target_python3_14? ( dev-lang/python:3.14 ) ) systemd? ( sys-apps/systemd:= )
+RDEPEND=>=app-arch/rpm-4.17.0 dev-cpp/sdbus-c++:0/2 dev-cpp/toml11 >=dev-db/sqlite-3.35.0:3 >=dev-libs/glib-2.46.0:2 dev-libs/json-c:= dev-libs/libfmt:= >=dev-libs/librepo-1.20.0 >=dev-libs/libsolv-0.7.25 dev-libs/libxml2 sys-apps/util-linux >=sys-libs/libmodulemd-2.11.2 virtual/zlib:= appstream? ( >=dev-libs/appstream-0.16:= ) python? ( python_single_target_python3_12? ( dev-lang/python:3.12 ) python_single_target_python3_13? ( dev-lang/python:3.13 ) python_single_target_python3_14? ( dev-lang/python:3.14 ) ) systemd? ( sys-apps/systemd:= )
 REQUIRED_USE=^^ ( python_single_target_python3_12 python_single_target_python3_13 python_single_target_python3_14 )
 RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://github.com/rpm-software-management/dnf5/archive/refs/tags/5.2.17.0.tar.gz -> dnf5-5.2.17.0.tar.gz
 _eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	3a59a39e97af0f7c03f49cf3c22f262b	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	a36a2a340635cb293524229ee6d2ef7a	python-utils-r1	dbb8c4d794033ad7e7221eaf567a6c90	python-single-r1	47d8ac9be330c9366112b78fd4f8ce57
-_md5_=064abee0169c0f438209d76884ab57a5
+_md5_=07f723dc4e3fb8576f9d35186109a5a9

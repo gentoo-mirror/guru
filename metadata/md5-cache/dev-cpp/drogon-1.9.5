@@ -1,6 +1,6 @@
 BDEPEND=doc? ( app-text/doxygen ) app-alternatives/ninja >=dev-build/cmake-3.28.5
 DEFINED_PHASES=compile configure install prepare test unpack
-DEPEND=>=dev-cpp/trantor-1.5.19:= dev-libs/jsoncpp:= sys-libs/zlib brotli? ( app-arch/brotli:= ) mariadb? ( dev-db/mariadb:= ) postgres? ( dev-db/postgresql:= ) redis? ( dev-libs/hiredis:= ) sqlite? ( dev-db/sqlite:3 ) elibc_Darwin? ( sys-libs/native-uuid ) elibc_SunOS? ( sys-libs/libuuid ) !elibc_Darwin? ( !elibc_SunOS? ( sys-apps/util-linux ) ) spdlog? ( dev-libs/spdlog:= dev-libs/libfmt:= ) yaml? ( dev-cpp/yaml-cpp:= ) test? ( dev-cpp/gtest )
+DEPEND=>=dev-cpp/trantor-1.5.19:= dev-libs/jsoncpp:= virtual/zlib:= brotli? ( app-arch/brotli:= ) mariadb? ( dev-db/mariadb:= ) postgres? ( dev-db/postgresql:= ) redis? ( dev-libs/hiredis:= ) sqlite? ( dev-db/sqlite:3 ) elibc_Darwin? ( sys-libs/native-uuid ) elibc_SunOS? ( sys-libs/libuuid ) !elibc_Darwin? ( !elibc_SunOS? ( sys-apps/util-linux ) ) spdlog? ( dev-libs/spdlog:= dev-libs/libfmt:= ) yaml? ( dev-cpp/yaml-cpp:= ) test? ( dev-cpp/gtest )
 DESCRIPTION=C++14/17 based HTTP web application framework
 EAPI=8
 HOMEPAGE=https://github.com/drogonframework/drogon
@@ -8,9 +8,9 @@ INHERIT=cmake
 IUSE=+brotli doc examples mariadb postgres redis sqlite spdlog test +yaml
 KEYWORDS=~amd64
 LICENSE=MIT
-RDEPEND=>=dev-cpp/trantor-1.5.19:= dev-libs/jsoncpp:= sys-libs/zlib brotli? ( app-arch/brotli:= ) mariadb? ( dev-db/mariadb:= ) postgres? ( dev-db/postgresql:= ) redis? ( dev-libs/hiredis:= ) sqlite? ( dev-db/sqlite:3 ) elibc_Darwin? ( sys-libs/native-uuid ) elibc_SunOS? ( sys-libs/libuuid ) !elibc_Darwin? ( !elibc_SunOS? ( sys-apps/util-linux ) ) spdlog? ( dev-libs/spdlog:= dev-libs/libfmt:= ) yaml? ( dev-cpp/yaml-cpp:= )
+RDEPEND=>=dev-cpp/trantor-1.5.19:= dev-libs/jsoncpp:= virtual/zlib:= brotli? ( app-arch/brotli:= ) mariadb? ( dev-db/mariadb:= ) postgres? ( dev-db/postgresql:= ) redis? ( dev-libs/hiredis:= ) sqlite? ( dev-db/sqlite:3 ) elibc_Darwin? ( sys-libs/native-uuid ) elibc_SunOS? ( sys-libs/libuuid ) !elibc_Darwin? ( !elibc_SunOS? ( sys-apps/util-linux ) ) spdlog? ( dev-libs/spdlog:= dev-libs/libfmt:= ) yaml? ( dev-cpp/yaml-cpp:= )
 RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://github.com/drogonframework/drogon/archive/v1.9.5.tar.gz -> drogon-1.9.5.tar.gz test? ( https://github.com/an-tao/trantor/archive/v1.5.19.tar.gz -> trantor-1.5.19.tar.gz )
 _eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	3a59a39e97af0f7c03f49cf3c22f262b	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	a36a2a340635cb293524229ee6d2ef7a
-_md5_=5e34964412fa10ff333aab3fdb592334
+_md5_=794ef04baf4da66646063a2df3721357

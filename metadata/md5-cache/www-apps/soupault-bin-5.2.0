@@ -1,0 +1,9 @@
+DEFINED_PHASES=install unpack
+DESCRIPTION=Static website generator based on HTML rewriting
+EAPI=8
+HOMEPAGE=https://soupault.app
+KEYWORDS=-* ~amd64 ~arm64
+LICENSE=MIT
+SLOT=0
+SRC_URI=amd64? ( https://github.com/PataphysicalSociety/soupault/releases/download/5.2.0/soupault-5.2.0-linux-x86_64.tar.gz ) arm64? ( https://github.com/PataphysicalSociety/soupault/releases/download/5.2.0/soupault-5.2.0-linux-aarch64.tar.gz )
+_md5_=2ae12a0bba11ff113bfadb610b8f1019

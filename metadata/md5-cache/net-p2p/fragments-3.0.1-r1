@@ -1,6 +1,6 @@
 BDEPEND=sys-devel/gettext >=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array || ( >=dev-lang/rust-bin-1.74.1:* >=dev-lang/rust-1.74.1:* )
 DEFINED_PHASES=compile configure install postinst postrm preinst setup test
-DEPEND=>=dev-libs/glib-2.76.0:2 >=dev-libs/openssl-1.0.0:= >=gui-libs/gtk-4.12.0:4[wayland] >=gui-libs/libadwaita-1.5.0:1 net-p2p/transmission sys-apps/dbus sys-libs/zlib x11-libs/pango
+DEPEND=>=dev-libs/glib-2.76.0:2 >=dev-libs/openssl-1.0.0:= >=gui-libs/gtk-4.12.0:4[wayland] >=gui-libs/libadwaita-1.5.0:1 net-p2p/transmission sys-apps/dbus virtual/zlib:= x11-libs/pango
 DESCRIPTION=Fragments is an easy to use BitTorrent client
 EAPI=8
 HOMEPAGE=https://gitlab.gnome.org/World/Fragments
@@ -8,8 +8,8 @@ IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
 INHERIT=gnome2-utils meson rust xdg
 KEYWORDS=~amd64
 LICENSE=GPL-3+ Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD MIT Unicode-DFS-2016
-RDEPEND=>=dev-libs/glib-2.76.0:2 >=dev-libs/openssl-1.0.0:= >=gui-libs/gtk-4.12.0:4[wayland] >=gui-libs/libadwaita-1.5.0:1 net-p2p/transmission sys-apps/dbus sys-libs/zlib x11-libs/pango
+RDEPEND=>=dev-libs/glib-2.76.0:2 >=dev-libs/openssl-1.0.0:= >=gui-libs/gtk-4.12.0:4[wayland] >=gui-libs/libadwaita-1.5.0:1 net-p2p/transmission sys-apps/dbus virtual/zlib:= x11-libs/pango
 SLOT=0
 SRC_URI=https://gitlab.gnome.org/World/fragments/uploads/4a5dcb11cec0b0438ad575db08aa755c/fragments-3.0.1.tar.xz
 _eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	gnome2-utils	a8cf148ec7f5ae0b1f1d33ae5f7f9e88	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	3a59a39e97af0f7c03f49cf3c22f262b	python-utils-r1	dbb8c4d794033ad7e7221eaf567a6c90	meson	1a27c82364f611e149966d2c47cbb083	rust	ee7b3be2c0e004fa7aaaed31e4fef928	xdg	3ef49a87c52c8b77c476351195dfe575
-_md5_=1a306284d5654bcff1074c8d1115e2ae
+_md5_=9ea47c65a23ea57d70643b223796e23d

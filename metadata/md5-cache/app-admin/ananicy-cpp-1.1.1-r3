@@ -1,6 +1,6 @@
 BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.28.5
 DEFINED_PHASES=compile configure install prepare setup test
-DEPEND=>=dev-build/cmake-3.17 clang? ( >=llvm-core/clang-10 ) !app-admin/ananicy >=dev-cpp/nlohmann_json-3.9 >=dev-libs/libfmt-8 >=dev-libs/spdlog-1.9 bpf? ( dev-libs/elfutils dev-libs/libbpf dev-util/bpftool ) systemd? ( sys-apps/systemd )
+DEPEND=>=dev-build/cmake-3.17 clang? ( >=llvm-core/clang-10 ) !app-admin/ananicy >=dev-cpp/nlohmann_json-3.9 >=dev-libs/libfmt-8:= >=dev-libs/spdlog-1.9 bpf? ( dev-libs/elfutils dev-libs/libbpf dev-util/bpftool ) systemd? ( sys-apps/systemd )
 DESCRIPTION=Ananicy rewritten in C++ for much lower CPU and memory usage
 EAPI=8
 HOMEPAGE=https://gitlab.com/ananicy-cpp/ananicy-cpp
@@ -8,9 +8,9 @@ INHERIT=cmake
 IUSE=bpf clang systemd
 KEYWORDS=~amd64
 LICENSE=GPL-3
-RDEPEND=!app-admin/ananicy >=dev-cpp/nlohmann_json-3.9 >=dev-libs/libfmt-8 >=dev-libs/spdlog-1.9 bpf? ( dev-libs/elfutils dev-libs/libbpf dev-util/bpftool ) systemd? ( sys-apps/systemd )
+RDEPEND=!app-admin/ananicy >=dev-cpp/nlohmann_json-3.9 >=dev-libs/libfmt-8:= >=dev-libs/spdlog-1.9 bpf? ( dev-libs/elfutils dev-libs/libbpf dev-util/bpftool ) systemd? ( sys-apps/systemd )
 REQUIRED_USE=bpf? ( clang )
 SLOT=0
 SRC_URI=https://gitlab.com/ananicy-cpp/ananicy-cpp/-/archive/v1.1.1/ananicy-cpp-v1.1.1.tar.bz2
 _eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	3a59a39e97af0f7c03f49cf3c22f262b	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	a36a2a340635cb293524229ee6d2ef7a
-_md5_=dc23f010860dfa6a58fb646789fd573c
+_md5_=88c79b8c09e8ce27424f2642b1d0448a

@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst postrm prepare
-DEPEND=sys-libs/zlib media-libs/libsdl2[opengl] media-libs/sdl2-image[jpeg,png] x11-libs/libX11 media-libs/libglvnd[X] media-libs/libogg media-libs/libvorbis media-libs/openal
+DEPEND=virtual/zlib:= media-libs/libsdl2[opengl] media-libs/sdl2-image[jpeg,png] x11-libs/libX11 media-libs/libglvnd[X] media-libs/libogg media-libs/libvorbis media-libs/openal
 DESCRIPTION=Free multiplayer FPS based on the Cube engine
 EAPI=8
 HOMEPAGE=https://assault.cubers.net/
@@ -7,9 +7,9 @@ INHERIT=desktop xdg-utils flag-o-matic
 IUSE=debug
 KEYWORDS=~amd64
 LICENSE=ZLIB assaultcube
-RDEPEND=sys-libs/zlib media-libs/libsdl2[opengl] media-libs/sdl2-image[jpeg,png] x11-libs/libX11 media-libs/libglvnd[X] media-libs/libogg media-libs/libvorbis media-libs/openal
+RDEPEND=virtual/zlib:= media-libs/libsdl2[opengl] media-libs/sdl2-image[jpeg,png] x11-libs/libX11 media-libs/libglvnd[X] media-libs/libogg media-libs/libvorbis media-libs/openal
 RESTRICT=mirror
 SLOT=0
 SRC_URI=https://github.com/assaultcube/AC/archive/refs/tags/v1.3.0.2.tar.gz -> assaultcube-1.3.0.2.tar.gz
 _eclasses_=desktop	3a72ffe0d8e1dd73af3a1c8c15a59fed	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	flag-o-matic	a7afe42e95fb46ce9691605acfb24672
-_md5_=4cacb07d66da3ae88f57dbda62ad496d
+_md5_=c02dd806fdc4f01d3bfd3ed770a8d031

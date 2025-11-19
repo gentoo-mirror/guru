@@ -1,4 +1,4 @@
-BDEPEND=>=dev-libs/libfmt-9.1.0 test? ( >=dev-cpp/catch-3.0.1 ) app-alternatives/ninja >=dev-build/cmake-3.28.5 >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=>=dev-libs/libfmt-9.1.0:= test? ( >=dev-cpp/catch-3.0.1 ) app-alternatives/ninja >=dev-build/cmake-3.28.5 >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install prepare setup test unpack
 DEPEND=python_single_target_python3_11? ( dev-lang/python:3.11 ) python_single_target_python3_12? ( dev-lang/python:3.12 ) python_single_target_python3_13? ( dev-lang/python:3.13 ) python_single_target_python3_14? ( dev-lang/python:3.14 ) python_single_target_python3_11? ( >=dev-python/pybind11-2.10[python_targets_python3_11(-)] ) python_single_target_python3_12? ( >=dev-python/pybind11-2.10[python_targets_python3_12(-)] ) python_single_target_python3_13? ( >=dev-python/pybind11-2.10[python_targets_python3_13(-)] ) python_single_target_python3_14? ( >=dev-python/pybind11-2.10[python_targets_python3_14(-)] ) dev-libs/libfmt:=
 DESCRIPTION=SystemVerilog compiler and language services
@@ -13,4 +13,4 @@ REQUIRED_USE=^^ ( python_single_target_python3_11 python_single_target_python3_1
 RESTRICT=!test? ( test )
 SLOT=0
 _eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	3a59a39e97af0f7c03f49cf3c22f262b	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	a36a2a340635cb293524229ee6d2ef7a	python-utils-r1	dbb8c4d794033ad7e7221eaf567a6c90	python-single-r1	47d8ac9be330c9366112b78fd4f8ce57	git-r3	875eb471682d3e1f18da124be97dcc81
-_md5_=61eb2d2d7d8bd75f846b804204ddbf83
+_md5_=044d14d9de6ef2a27a23fc72d2717e0a

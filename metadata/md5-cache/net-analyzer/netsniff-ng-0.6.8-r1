@@ -1,6 +1,6 @@
 BDEPEND=app-alternatives/lex sys-devel/bison dev-libs/libsodium virtual/pkgconfig
 DEFINED_PHASES=compile configure install prepare
-DEPEND=dev-libs/libcli:= dev-libs/libnl:3 dev-libs/userspace-rcu:= net-libs/libnet:1.1 net-libs/libnetfilter_conntrack net-libs/libpcap sys-libs/ncurses:0= geoip? ( dev-libs/geoip ) zlib? ( sys-libs/zlib:= )
+DEPEND=dev-libs/libcli:= dev-libs/libnl:3 dev-libs/userspace-rcu:= net-libs/libnet:1.1 net-libs/libnetfilter_conntrack net-libs/libpcap sys-libs/ncurses:0= geoip? ( dev-libs/geoip ) zlib? ( virtual/zlib:= )
 DESCRIPTION=high performance network sniffer for packet inspection
 EAPI=8
 HOMEPAGE=http://netsniff-ng.org/
@@ -8,8 +8,8 @@ INHERIT=toolchain-funcs
 IUSE=debug geoip zlib
 KEYWORDS=~amd64
 LICENSE=GPL-2
-RDEPEND=dev-libs/libcli:= dev-libs/libnl:3 dev-libs/userspace-rcu:= net-libs/libnet:1.1 net-libs/libnetfilter_conntrack net-libs/libpcap sys-libs/ncurses:0= geoip? ( dev-libs/geoip ) zlib? ( sys-libs/zlib:= )
+RDEPEND=dev-libs/libcli:= dev-libs/libnl:3 dev-libs/userspace-rcu:= net-libs/libnet:1.1 net-libs/libnetfilter_conntrack net-libs/libpcap sys-libs/ncurses:0= geoip? ( dev-libs/geoip ) zlib? ( virtual/zlib:= )
 SLOT=0
 SRC_URI=http://pub.netsniff-ng.org/netsniff-ng/netsniff-ng-0.6.8.tar.xz
 _eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db
-_md5_=813d2b68efb6db4210340e8662e480f7
+_md5_=18067276f8996e6fbc3712dbddb5939a

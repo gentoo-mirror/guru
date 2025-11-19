@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile install
-DEPEND=dev-libs/openssl sys-libs/zlib
+DEPEND=dev-libs/openssl virtual/zlib:=
 DESCRIPTION=Convert Apple disk images to IMG format.
 EAPI=8
 HOMEPAGE=https://github.com/Lekensteyn/dmg2img
 INHERIT=toolchain-funcs
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
-RDEPEND=dev-libs/openssl sys-libs/zlib
+RDEPEND=dev-libs/openssl virtual/zlib:=
 SLOT=0
 SRC_URI=https://github.com/Lekensteyn/dmg2img/archive/a3e413489ccdd05431401357bf21690536425012.tar.gz -> dmg2img-20201227.gh.tar.gz
 _eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db
-_md5_=3c1f2879bb9904c35f69cb0e88735a61
+_md5_=06472551c9d9d9ac0401dc353ee57893

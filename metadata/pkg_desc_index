@@ -530,7 +530,7 @@ dev-erlang/ranch 1.7.1 1.8.0 2.0.0: Socket acceptor pool for TCP protocols.
 dev-erlang/yval 1.0.10: YAML validator
 dev-games/godot-dotnet 4.4.1-r2 4.5-r1 4.5.1: Multi-platform 2D and 3D game engine with a feature-rich editor
 dev-games/surgescript 0.6.1 9999: scripting language made for opensurge
-dev-games/unityhub 3.9.1 3.10.0 3.11.0 3.11.1 3.14.3: Official Unity tool for managing Unity Engines and projects
+dev-games/unityhub 3.14.3: Official Unity tool for managing Unity Engines and projects
 dev-go/get-ego-vendor 0.2.0: Utility to generate EGO_SUM data for ebuilds
 dev-go/golangci-lint-langserver 0.0.11: golangci-lint language server
 dev-go/protorpc 1.1.4: Google Protocol Protobufs RPC for Go
@@ -771,7 +771,7 @@ dev-python/hijridate 2.5.0: Accurate Hijri-Gregorian date converter based on the
 dev-python/http-ece 1.2.1: Encrypted Content Encoding for HTTP
 dev-python/i3ipc 2.2.1-r1 2.2.1-r2: An improved Python library to control i3wm and sway.
 dev-python/icecream 2.1.8: Pythonic task execution
-dev-python/injector 0.21.0-r1: Python dependency injection framework, inspired by Guice
+dev-python/injector 0.22.0: Python dependency injection framework, inspired by Guice
 dev-python/internetarchive 3.7.0 5.3.0 5.7.1: Lib and CLI for archive.org - for search, uploading, downloading, rename etc
 dev-python/invoke 2.2.1: Pythonic task execution
 dev-python/isosurfaces 0.1.2: Construct isolines/isosurfaces of a 2D/3D scalar field defined by a function
@@ -862,7 +862,7 @@ dev-python/pypandoc 1.15: Pypandoc provides a thin wrapper for pandoc, a univers
 dev-python/pyperscan 0.3.0: An opinionated Python binding for Hyperscan
 dev-python/pyproject2ebuild 0.0.3: Convert pyproject.toml to Gentoo ebuilds automatically.
 dev-python/pyqtdarktheme 2.1.0: A flat dark theme for PySide and PyQt.
-dev-python/pyrefly 0.40.0 0.41.0: A fast type checker and language server for Python
+dev-python/pyrefly 0.42.0: A fast type checker and language server for Python
 dev-python/pyrime 0.0.7: rime for python
 dev-python/pysdl3 0.9.8_beta8 0.9.8_beta9: A pure Python wrapper for SDL3
 dev-python/pysnooper 1.2.1 1.2.3: Never use print for debugging again
@@ -1000,7 +1000,7 @@ dev-util/fnm 1.38.1: Fast and simple Node.js version manager
 dev-util/fortls 2.13.0 3.0.0 3.1.1 3.1.2 3.2.2: Fortran Language Server (fortls)
 dev-util/fortran-test-drive 0.4.0 0.5.0: The simple testing framework (for Fortran)
 dev-util/gammaray 3.1.0: High-level runtime introspection tool for Qt applications
-dev-util/gemini-cli 0.7.0: Gemini CLI - a command-line AI workflow tool by Google
+dev-util/gemini-cli 0.16.0: Gemini CLI - a command-line AI workflow tool by Google
 dev-util/genTree 0.1.0 9999: Gentoo rootfs tree generator
 dev-util/git-bug 0.10.1 9999: distributed, offline-first bug tracker
 dev-util/gitlab-ci-local-bin 4.43.0 4.47.0 4.56.0: Run gitlab pipelines locally as shell executor or docker executor
@@ -1372,7 +1372,7 @@ media-gfx/sic 0.22.4: Accessible image processing and conversion from the termin
 media-gfx/silicon 0.5.2-r1 0.5.2-r2 0.5.3: Create beautiful image of your code
 media-gfx/superpaper 2.2.1: Advanced multi monitor wallpaper manager
 media-gfx/svgcleaner 0.9.5: svgcleaner could help you to clean up your SVG files from the unnecessary data.
-media-gfx/swayimg 4.3 4.5: Lightweight image viewer for Wayland display servers
+media-gfx/swayimg 4.5 4.6: Lightweight image viewer for Wayland display servers
 media-gfx/timg 1.6.2 1.6.3: Terminal image and video viewer
 media-gfx/vimiv-qt 0.9.0-r1: An image viewer with vim-like keybindings
 media-gfx/vpuppr 0.9.0-r1: VTuber application made with Godot 3.4
@@ -1438,7 +1438,7 @@ media-sound/kew 2.4.4-r1: kew (/kjuː/) is a command-line music player for Linux
 media-sound/libcava 0.10.2: Console-based Audio Visualizer for Alsa
 media-sound/listenbrainz-mpd 2.3.9: ListenBrainz submission client for MPD
 media-sound/lms 3.68.1 3.69.0 3.71.0-r1 3.71.0-r2: Lightweight Music Server.
-media-sound/loudgain 0.6.8-r2: Versatile ReplayGain 2.0 loudness normalizer
+media-sound/loudgain 0.6.8-r2 0.6.8_p20240128-r2 0.6.8_p20240128-r3: Versatile ReplayGain 2.0 loudness normalizer
 media-sound/mopidy 3.4.2: An extensible music server written in Python.
 media-sound/mousai 0.7.9: Identify songs in seconds
 media-sound/mpd-mpris 0.3.1 0.4.0 0.4.1: An implementation of the MPRIS protocol for MPD.
@@ -1632,6 +1632,7 @@ net-misc/iipsrv 1.2 1.3: High performance image server for high resolution and s
 net-misc/inv_sig_helper 0_pre20250103 9999: Rust service that decrypts YouTube signatures and manages player information
 net-misc/jool 4.1.14-r1: Required tools for Jool
 net-misc/jool-modules 4.1.14: Jool is an Open Source SIIT and NAT64 for linux
+net-misc/kissy 1.2: Kissing Interface for Sapphic Smooching over ttY
 net-misc/lyrics-in-terminal 1.7.0 1.8.0: Command Line Lyrics fetcher for MPRIS media players
 net-misc/maestral 1.9.4 1.9.5 1.9.6_rc0: Maestral is an open-source Dropbox client written in Python
 net-misc/maestral-qt 1.9.4 1.9.5 1.9.6_rc0: Maestral is an open-source Dropbox client written in Python
@@ -1702,7 +1703,7 @@ net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that 
 net-vpn/mullvadvpn-app 2025.13 2025.14_beta1: Tool used to manage daemon setup
 net-vpn/proton-vpn-gtk-app 4.11.0: Proton VPN GTK app
 net-vpn/vtun-embedded 3.0.6: Create tunnels over TCP/IP networks with shaping, encryption, and compression
-net-vpn/vtun-ng 3.0.19 3.0.21: Create tunnels over TCP/IP networks with shaping, encryption, and compression
+net-vpn/vtun-ng 3.0.21 3.0.22: Create tunnels over TCP/IP networks with shaping, encryption, and compression
 net-wireless/airspyhf 1.6.8: User mode driver for Airspy HF+
 net-wireless/bluetuith 0.2.1 0.2.2 0.2.3 9999: A TUI bluetooth manager for Linux written in Go
 net-wireless/btscreenlocker 1.8.1-r1: Daemon to lock your screen when Bluetooth trusted devices go away.
@@ -1930,7 +1931,7 @@ www-apps/redlib 0.36.0: Alternative private front-end to Reddit
 www-apps/rimgo 1.2.1: An alternative frontend for Imgur. Originally based on rimgu.
 www-apps/sblg 0.6.1: A utility for creating static blogs
 www-apps/soupault 5.1.0: Static website generator based on HTML rewriting
-www-apps/soupault-bin 5.1.0: Static website generator based on HTML rewriting
+www-apps/soupault-bin 5.2.0: Static website generator based on HTML rewriting
 www-apps/uwebsockets 20.14.0 20.62.0 9999: ultra fast, simple, secure & standards compliant web I/O
 www-apps/whoogle-search 0.9.3: A self-hosted, ad-free, privacy-respecting metasearch engine
 www-apps/zola 0.20.0 0.21.0: A fast static site generator with everything built-in
@@ -1941,7 +1942,7 @@ www-client/nyxt 3.11.8 3.12.0 9999: Nyxt - the hacker's power-browser
 www-client/torbrowser-launcher 0.3.9: A program to help you securely download and run Tor Browser
 www-client/vimb 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
 www-client/yandex-browser 25.8.5.993_p1: The web browser from Yandex
-www-client/zen-bin 1.15.5b 1.16b 1.16.3b 1.16.4b 1.17b 1.17.1b 1.17.2b 1.17.3b 1.17.4b 1.17.5b 1.17.6b: Zen Browser - A fast, privacy-focused Firefox fork
+www-client/zen-bin 1.15.5b 1.16b 1.16.3b 1.16.4b 1.17b 1.17.1b 1.17.2b 1.17.3b 1.17.4b 1.17.5b 1.17.6b 1.17.7b: Zen Browser - A fast, privacy-focused Firefox fork
 www-misc/dufs 0.40.0: Dufs is a distinctive utility file server
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits
 www-misc/kiwix-desktop 2.4.0: cross-platform viewer/manager for ZIM archives
@@ -1950,7 +1951,7 @@ www-misc/waldl 0.0.1_pre20211112: Browse and download wallpapers from wallhaven.
 www-misc/wyebadblock 1.0.0_p20230211: An adblock extension for wyeb, also webkit2gtk browsers.
 www-plugins/firefoxpwa 2.15.0 2.17.1 2.17.2: A tool to install, manage and use PWAs in Mozilla Firefox (native component)
 www-servers/hinsightd 0.9.17 9999: hinsightd a http/1.1 webserver with (hopefully) minimal goals
-www-servers/quark 9999: A small, GET-only static HTTP server
+www-servers/quark 0_pre20220817 9999: A small, GET-only static HTTP server
 x11-apps/lightdm-gtk-greeter-settings 1.2.2-r3: Configuration tool for the LightDM GTK Greeter
 x11-apps/xcur2png 0.7.1-r3: Convert X cursors to PNG images
 x11-drivers/OpenTabletDriver 0.6.6.2: A cross-platform open-source tablet driver

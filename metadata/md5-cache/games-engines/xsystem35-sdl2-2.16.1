@@ -1,6 +1,6 @@
 BDEPEND=sys-devel/gettext man? ( dev-ruby/asciidoctor ) app-alternatives/ninja >=dev-build/cmake-3.28.5
 DEFINED_PHASES=compile configure install prepare test
-DEPEND=media-libs/libsdl2 media-libs/sdl2-mixer media-libs/sdl2-ttf sys-libs/zlib webp? ( media-libs/libwebp ) debug? ( dev-libs/cJSON ) portmidi? ( media-libs/portmidi )
+DEPEND=media-libs/libsdl2 media-libs/sdl2-mixer media-libs/sdl2-ttf virtual/zlib:= webp? ( media-libs/libwebp ) debug? ( dev-libs/cJSON ) portmidi? ( media-libs/portmidi )
 DESCRIPTION=Port of xsystem35, a free implementation of AliceSoft's System 3.x game engine.
 EAPI=8
 HOMEPAGE=https://github.com/kichikuou/xsystem35-sdl2
@@ -8,8 +8,8 @@ INHERIT=cmake
 IUSE=+man debug +portmidi +webp
 KEYWORDS=~amd64
 LICENSE=GPL-2
-RDEPEND=media-libs/libsdl2 media-libs/sdl2-mixer media-libs/sdl2-ttf sys-libs/zlib webp? ( media-libs/libwebp ) debug? ( dev-libs/cJSON ) portmidi? ( media-libs/portmidi )
+RDEPEND=media-libs/libsdl2 media-libs/sdl2-mixer media-libs/sdl2-ttf virtual/zlib:= webp? ( media-libs/libwebp ) debug? ( dev-libs/cJSON ) portmidi? ( media-libs/portmidi )
 SLOT=0
 SRC_URI=https://github.com/kichikuou/xsystem35-sdl2/archive/refs/tags/v2.16.1.tar.gz -> xsystem35-sdl2-2.16.1.tar.gz
 _eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	3a59a39e97af0f7c03f49cf3c22f262b	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	a36a2a340635cb293524229ee6d2ef7a
-_md5_=9486265823ba632a29e8c12f69ec47f3
+_md5_=3af357c1a0543e5e76753c128a1fb79a

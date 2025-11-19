@@ -1,6 +1,6 @@
 BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.28.5
 DEFINED_PHASES=compile configure install prepare test
-DEPEND=ssl? ( dev-libs/openssl:= ) ws? ( >=dev-libs/spdlog-1.8.0:= ) zlib? ( sys-libs/zlib:= ) test? ( >=dev-libs/spdlog-1.8.0:= )
+DEPEND=ssl? ( dev-libs/openssl:= ) ws? ( >=dev-libs/spdlog-1.8.0:= ) zlib? ( virtual/zlib:= ) test? ( >=dev-libs/spdlog-1.8.0:= )
 DESCRIPTION=C++ websocket client and server library
 EAPI=8
 HOMEPAGE=https://github.com/machinezone/IXWebSocket
@@ -8,9 +8,9 @@ INHERIT=cmake
 IUSE=+ssl test zlib ws
 KEYWORDS=~amd64 ~x86
 LICENSE=BSD
-RDEPEND=ssl? ( dev-libs/openssl:= ) zlib? ( sys-libs/zlib:= )
+RDEPEND=ssl? ( dev-libs/openssl:= ) zlib? ( virtual/zlib:= )
 RESTRICT=!test? ( test )
 SLOT=0/11.3.2
 SRC_URI=https://github.com/machinezone/IXWebSocket/archive/refs/tags/v11.4.4.tar.gz -> ixwebsocket-11.4.4.tar.gz
 _eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	3a59a39e97af0f7c03f49cf3c22f262b	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	a36a2a340635cb293524229ee6d2ef7a
-_md5_=696a7fc9c305b3ebae724e9d7202f34f
+_md5_=1cb5a4d7db773bd535363294cf99d465

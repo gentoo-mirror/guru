@@ -1,6 +1,6 @@
 BDEPEND=doc? ( app-text/doxygen dev-qt/qttools:6[assistant] dev-ruby/asciidoctor media-gfx/graphviz[cairo] ) virtual/pkgconfig app-alternatives/ninja >=dev-build/cmake-3.28.5
 DEFINED_PHASES=compile configure install prepare test
-DEPEND=dev-libs/boost:= sys-libs/zlib graphicsmagick? ( media-gfx/graphicsmagick:=[jpeg,png] ) mysql? ( virtual/mysql || ( dev-db/mariadb-connector-c dev-db/mysql-connector-c ) ) opengl? ( media-libs/glew:= media-libs/libglvnd[X] ) pango? ( dev-libs/glib:2 media-libs/fontconfig x11-libs/pango ) pdf? ( media-libs/libharu:= ) postgres? ( dev-db/postgresql ) sqlite? ( dev-db/sqlite:3 ) ssl? ( dev-libs/openssl:= )
+DEPEND=dev-libs/boost:= virtual/zlib:= graphicsmagick? ( media-gfx/graphicsmagick:=[jpeg,png] ) mysql? ( virtual/mysql || ( dev-db/mariadb-connector-c dev-db/mysql-connector-c ) ) opengl? ( media-libs/glew:= media-libs/libglvnd[X] ) pango? ( dev-libs/glib:2 media-libs/fontconfig x11-libs/pango ) pdf? ( media-libs/libharu:= ) postgres? ( dev-db/postgresql ) sqlite? ( dev-db/sqlite:3 ) ssl? ( dev-libs/openssl:= )
 DESCRIPTION=Wt, C++ Web Toolkit
 EAPI=8
 HOMEPAGE=https://www.webtoolkit.eu/wt https://github.com/emweb/wt
@@ -8,10 +8,10 @@ INHERIT=cmake flag-o-matic
 IUSE=doc +graphicsmagick mysql opengl +pango pdf postgres +sqlite ssl wttest
 KEYWORDS=~amd64
 LICENSE=GPL-2
-RDEPEND=dev-libs/boost:= sys-libs/zlib graphicsmagick? ( media-gfx/graphicsmagick:=[jpeg,png] ) mysql? ( virtual/mysql || ( dev-db/mariadb-connector-c dev-db/mysql-connector-c ) ) opengl? ( media-libs/glew:= media-libs/libglvnd[X] ) pango? ( dev-libs/glib:2 media-libs/fontconfig x11-libs/pango ) pdf? ( media-libs/libharu:= ) postgres? ( dev-db/postgresql ) sqlite? ( dev-db/sqlite:3 ) ssl? ( dev-libs/openssl:= )
+RDEPEND=dev-libs/boost:= virtual/zlib:= graphicsmagick? ( media-gfx/graphicsmagick:=[jpeg,png] ) mysql? ( virtual/mysql || ( dev-db/mariadb-connector-c dev-db/mysql-connector-c ) ) opengl? ( media-libs/glew:= media-libs/libglvnd[X] ) pango? ( dev-libs/glib:2 media-libs/fontconfig x11-libs/pango ) pdf? ( media-libs/libharu:= ) postgres? ( dev-db/postgresql ) sqlite? ( dev-db/sqlite:3 ) ssl? ( dev-libs/openssl:= )
 REQUIRED_USE=pango? ( || ( graphicsmagick pdf ) ) opengl? ( graphicsmagick )
 RESTRICT=test
 SLOT=0/4.12.0
 SRC_URI=https://github.com/emweb/wt/archive/refs/tags/4.12.0.tar.gz -> wt-4.12.0.tar.gz
 _eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	3a59a39e97af0f7c03f49cf3c22f262b	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	a36a2a340635cb293524229ee6d2ef7a
-_md5_=0695066d70286f392de413206e761ddf
+_md5_=fdfb028b694aedd3a6bcd5d484e99655

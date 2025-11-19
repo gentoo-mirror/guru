@@ -1,6 +1,6 @@
 BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.28.5
 DEFINED_PHASES=compile configure install postinst postrm prepare test
-DEPEND=dev-libs/libfmt media-libs/alsa-lib media-libs/libglvnd media-libs/libsdl2 media-libs/libsndfile media-libs/portaudio media-libs/rtmidi sci-libs/fftw sys-libs/zlib x11-themes/hicolor-icon-theme jack? ( virtual/jack )
+DEPEND=dev-libs/libfmt:= media-libs/alsa-lib media-libs/libglvnd media-libs/libsdl2 media-libs/libsndfile media-libs/portaudio media-libs/rtmidi sci-libs/fftw virtual/zlib:= x11-themes/hicolor-icon-theme jack? ( virtual/jack )
 DESCRIPTION=a multi-system chiptune tracker compatible with DefleMask modules
 EAPI=8
 HOMEPAGE=https://github.com/tildearrow/furnace
@@ -8,8 +8,8 @@ INHERIT=cmake xdg-utils
 IUSE=jack
 KEYWORDS=~amd64 ~arm64
 LICENSE=GPL-2
-RDEPEND=dev-libs/libfmt media-libs/alsa-lib media-libs/libglvnd media-libs/libsdl2 media-libs/libsndfile media-libs/portaudio media-libs/rtmidi sci-libs/fftw sys-libs/zlib x11-themes/hicolor-icon-theme jack? ( virtual/jack )
+RDEPEND=dev-libs/libfmt:= media-libs/alsa-lib media-libs/libglvnd media-libs/libsdl2 media-libs/libsndfile media-libs/portaudio media-libs/rtmidi sci-libs/fftw virtual/zlib:= x11-themes/hicolor-icon-theme jack? ( virtual/jack )
 SLOT=0
 SRC_URI=https://github.com/tildearrow/furnace/archive/refs/tags/v0.6.tar.gz -> furnace-0.6.tar.gz https://github.com/superctr/adpcm/archive/ef7a217154badc3b99978ac481b268c8aab67bd8.tar.gz -> furnace-0.6-adpcm-ef7a217.tar.gz
 _eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	3a59a39e97af0f7c03f49cf3c22f262b	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	a36a2a340635cb293524229ee6d2ef7a
-_md5_=93749cdc4200aeb606049ab3db9ca88a
+_md5_=2410ec86041dc902d6213f14882455e3
