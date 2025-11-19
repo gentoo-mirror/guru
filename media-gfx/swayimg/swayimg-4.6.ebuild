@@ -5,23 +5,24 @@ EAPI=8
 
 inherit meson xdg
 
-DESCRIPTION="A lightweight image viewer for Wayland display servers"
+DESCRIPTION="Lightweight image viewer for Wayland display servers"
 HOMEPAGE="https://github.com/artemsen/swayimg"
 SRC_URI="https://github.com/artemsen/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="avif bash-completion exif exr gif heif jpeg jpegxl png raw sixel svg test tiff +wayland webp X"
+IUSE="avif bash-completion drm exif exr gif heif jpeg jpegxl png raw sixel svg test tiff +wayland webp X"
+REQUIRED_USE="|| ( drm wayland )"
 RESTRICT="!test? ( test )"
 
 RDEPEND="
-	dev-libs/wayland
 	media-libs/fontconfig
 	media-libs/freetype
 	x11-libs/libxkbcommon
 	avif? ( media-libs/libavif:= )
 	bash-completion? ( app-shells/bash-completion )
+	drm? ( x11-libs/libdrm )
 	exif? ( media-libs/libexif )
 	exr? ( media-libs/openexr:= )
 	gif? ( media-libs/giflib:= )
@@ -37,21 +38,25 @@ RDEPEND="
 		x11-libs/cairo[X=]
 	)
 	tiff? ( media-libs/tiff:= )
-	wayland? ( dev-libs/json-c:= )
+	wayland? (
+		dev-libs/json-c:=
+		dev-libs/wayland
+	)
 	webp? ( media-libs/libwebp:= )
 "
 DEPEND="${RDEPEND}
-	dev-libs/wayland-protocols
 	svg? ( X? ( x11-base/xorg-proto ) )
+	wayland? ( dev-libs/wayland-protocols )
 "
 BDEPEND="
-	dev-util/wayland-scanner
 	test? ( dev-cpp/gtest )
+	wayland? ( dev-util/wayland-scanner )
 "
 
 src_configure() {
 	local emesonargs=(
 		$(meson_feature avif)
+		$(meson_feature drm)
 		$(meson_feature exif)
 		$(meson_feature exr)
 		$(meson_feature gif)
@@ -64,6 +69,7 @@ src_configure() {
 		$(meson_feature svg)
 		$(meson_feature test tests)
 		$(meson_feature tiff)
+		$(meson_feature wayland)
 		$(meson_feature wayland compositor)
 		$(meson_feature webp)
 		$(meson_feature bash-completion bash)

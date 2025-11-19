@@ -27,14 +27,14 @@ RDEPEND="
 	dev-libs/boost[context]
 	dev-libs/double-conversion
 	dev-libs/libevent
-	>=dev-libs/libfmt-11.0.2
+	>=dev-libs/libfmt-11.0.2:=
 	dev-libs/utfcpp
 	>=dev-libs/xxhash-0.8.2
 	flac? ( >=media-libs/flac-1.5.0 )
 	fuse? ( sys-fs/fuse:3 )
 	sys-libs/binutils-libs
 	stacktrace? ( >=dev-cpp/cpptrace-0.8.0 )
-	sys-libs/zlib
+	virtual/zlib:=
 	jemalloc? ( >=dev-libs/jemalloc-5.3.0 )
 	test? ( >=dev-cpp/gtest-1.15.2 )
 	>=dev-cpp/range-v3-0.12.0
