@@ -1,0 +1,13 @@
+BDEPEND=>=dev-lang/go-1.20:= app-arch/unzip virtual/pkgconfig >=dev-lang/go-1.20:= app-arch/unzip
+DEFINED_PHASES=compile install unpack
+DESCRIPTION=C library for the Storj V3 network (libuplink)
+EAPI=8
+HOMEPAGE=https://storj.io https://github.com/storj/uplink-c
+INHERIT=go-module
+IUSE=static-libs
+KEYWORDS=~amd64 ~arm64
+LICENSE=MIT
+SLOT=0
+SRC_URI=https://github.com/storj/uplink-c/archive/refs/tags/v1.10.1.tar.gz -> libuplink-1.10.1.tar.gz https://github.com/david-gentoo/uplink-c/releases/download/v1.10.1/uplink-c-1.10.1-vendor.tar.xz
+_eclasses_=multiprocessing	1e32df7deee68372153dca65f4a7c21f	toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	go-env	0e2babf96e7d0b045fc07ad199eb2399	go-module	d96f2a2fd6d8fbad6d94516bf238f885
+_md5_=dd2d16bda3cd5de9ca83820b550530d5

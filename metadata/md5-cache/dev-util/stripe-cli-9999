@@ -1,13 +1,12 @@
-BDEPEND=>=dev-lang/go-1.18 >=dev-vcs/git-1.8.2.1[curl] >=dev-lang/go-1.20:= app-arch/unzip
+BDEPEND=>=dev-lang/go-1.24.1 >=dev-lang/go-1.20:= app-arch/unzip >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile install unpack
-DEPEND=>=dev-lang/go-1.18
 DESCRIPTION=A command-line tool for Stripe
-EAPI=7
-HOMEPAGE=https://stripe.com/docs/stripe-cli
-INHERIT=git-r3 go-module bash-completion-r1
-IUSE=bash-completion
+EAPI=8
+HOMEPAGE=https://docs.stripe.com/stripe-cli
+INHERIT=go-module shell-completion git-r3
+IUSE=bash-completion zsh-completion
 LICENSE=Apache-2.0
 PROPERTIES=live
 SLOT=0
-_eclasses_=git-r3	875eb471682d3e1f18da124be97dcc81	multiprocessing	1e32df7deee68372153dca65f4a7c21f	toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	go-env	0e2babf96e7d0b045fc07ad199eb2399	go-module	d96f2a2fd6d8fbad6d94516bf238f885	bash-completion-r1	767861f3744f589ee5291c1698b1c082
-_md5_=b76a985a9d06645c0919be17b7c07781
+_eclasses_=multiprocessing	1e32df7deee68372153dca65f4a7c21f	toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	go-env	0e2babf96e7d0b045fc07ad199eb2399	go-module	d96f2a2fd6d8fbad6d94516bf238f885	bash-completion-r1	767861f3744f589ee5291c1698b1c082	shell-completion	0b655d0d825e157a5e99c463bddaac16	git-r3	875eb471682d3e1f18da124be97dcc81
+_md5_=5735f6ad01e19c3452ccc8cb6ce25a09

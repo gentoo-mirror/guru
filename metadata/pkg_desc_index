@@ -377,6 +377,7 @@ app-text/lchat 1.0-r2: Line oriented front end for ii-like chat programs
 app-text/lizard 1.18.0 1.19.0: A simple code complexity analyser, supports most of the popular languages.
 app-text/lorien-bin 0.6.0-r2: Infinite canvas drawing/whiteboarding. Made with Godot.
 app-text/lsp 0.5.0_rc4 9999: The least significant pager
+app-text/notekit 0.2.0: Write your notes in instantly-formatted Markdown
 app-text/owo 0.1.0: OwO-ifies text via regex
 app-text/pandoc-crossref-bin 0.3.17.0f: Pandoc filter for cross-references
 app-text/simplenote-desktop-bin 2.23.0 2.23.2: The simplest way to keep notes
@@ -793,7 +794,7 @@ dev-python/markdownify 0.11.6: Convert HTML to Markdown
 dev-python/markovify 0.9.4: Simple, extensible Markov chain generator
 dev-python/mastodon-py 2.0.1 2.1.4: Python wrapper for the Mastodon API
 dev-python/material-color-utilities 0.1.5 9999: Python port of material-color-utilities used for Material You colors
-dev-python/materialyoucolor 2.0.10 9999: Material You color algorithms for python!
+dev-python/materialyoucolor 9999: Material You color algorithms for python!
 dev-python/mautrix 0.20.7 0.20.8: A Python 3 asyncio Matrix framework
 dev-python/mininet 2.3.0: Emulator for rapid prototyping of Software Defined Networks
 dev-python/mitype 0.2.6: Typing speed test in terminal
@@ -1044,7 +1045,7 @@ dev-util/rz-ghidra 0.8.0: An integration of the Ghidra decompiler and Sleigh Dis
 dev-util/scc 3.4.0: scc is a very fast accurate code counter
 dev-util/shellspec 0.28.1-r3 9999: A full-featured BDD unit testing framework for all POSIX shells
 dev-util/spi-tools 1.0.2: Simple command line tools to help using Linux spidev devices
-dev-util/stripe-cli 9999: A command-line tool for Stripe
+dev-util/stripe-cli 1.32.0 9999: A command-line tool for Stripe
 dev-util/stylua 2.3.0: A code formatter for Lua
 dev-util/tailspin 5.4.5: A log file highlighter
 dev-util/termux-language-server 0.0.31: A language server for some specific Bash scripts
@@ -1165,7 +1166,7 @@ gnome-extra/junction 1.7-r1: Application/browser chooser
 gnome-extra/nautilus-open-any-terminal 0.7.0: A Nautilus extension that adds a context-entry for opening any terminal
 gnome-extra/portfolio 0.9.14: A minimalist file manager for those who want to use Linux mobile devices
 gnome-extra/vvmplayer 1.4-r1: Visual Voicemail Player
-gnome-extra/wike 3.1.1: Wikipedia Reader for the GNOME Desktop
+gnome-extra/wike 3.1.1 3.1.3: Wikipedia Reader for the GNOME Desktop
 gnome-extra/yad 14.1 9999: Display GTK+ dialog boxes from command line or shell scripts
 gui-apps/1password 8.10.76-r1: Password Manager
 gui-apps/ReGreet 0.1.1-r10 0.2.0 9999: A clean and customizable GTK-based greetd greeter written in Rust
@@ -1295,7 +1296,6 @@ gui-apps/yambar 1.11.0 9999: Simplistic and highly configurable status panel for
 gui-libs/gtk-session-lock 0.2.0-r6 9999: GTK-based lockscreen for Wayland
 gui-libs/libcprime 5.0.0: Library for managing settings of CoreApps
 gui-libs/libcsys 5.0.0: Library for managing the device
-gui-libs/libsfdo 0.1.3 0.1.4: A collection of libraries which implement some freedesktop.org specifications
 gui-libs/mir 2.22.2 2.23.0: Set of libraries for building Wayland based shells
 gui-libs/qdocumentview 0.3.0.1: Widget to render multi-page documents
 gui-libs/qtforkawesome 0.3.1: Library that bundles ForkAwesome for use within Qt applications
@@ -1304,7 +1304,6 @@ gui-libs/scenefx 0.4.1 9999: A replacement for the wlroots scene API with eye-ca
 gui-libs/xdg-desktop-portal-hyprland 1.3.9-r1 9999: xdg-desktop-portal backend for Hyprland
 gui-wm/cage 0.2.1 9999: A Wayland kiosk
 gui-wm/hyprland-contrib 0.1-r1 9999: Community-maintained extensions for hyprland
-gui-wm/labwc 0.8.4-r1 0.9.1 0.9.2 9999: Openbox alternative for wayland
 gui-wm/mangowc 0.10.5 9999: wayland compositor based on wlroots and scenefx(dwl but no suckless)
 gui-wm/miracle-wm 0.7.1 0.8.0: Tiling Wayland compositor based on Mir
 gui-wm/niri 25.05.1-r1 25.08: Scrollable-tiling Wayland compositor
@@ -1477,6 +1476,7 @@ media-video/ciano 0.2.4-r2: A multimedia file converter focused on simplicity
 media-video/clapper 0.6.1 0.8.0: Modern and user-friendly media player
 media-video/cleanit 0.4.9: A command line tool that helps you to keep your subtitles clean
 media-video/delfin 0.4.7 0.4.8: Stream movies and TV shows from Jellyfin
+media-video/dependency-control 0.6.4: Package manager for Aegisub automation scripts
 media-video/gpu-screen-recorder 5.6.8 5.8.0 5.8.1 9999: A screen recorder that has minimal impact on system performance
 media-video/gpu-screen-recorder-gtk 5.7.8 9999: GTK frontend for gpu-screen-recorder.
 media-video/kikoplay 0.9.3 9999: KikoPlay is a full-featured danmu player
@@ -1593,6 +1593,7 @@ net-libs/dpdk 23.03: Data Plane Development Kit libraries for fast userspace net
 net-libs/ixwebsocket 11.4.4: C++ websocket client and server library
 net-libs/kcgi 0.13.3 0.13.4: Minimal CGI library for web applications
 net-libs/libuecc 7: a very small Elliptic Curve Cryptography library compatible with Ed25519.
+net-libs/libuplink 1.10.1: C library for the Storj V3 network (libuplink)
 net-libs/orcania 2.3.3: Library for angharad programs
 net-libs/picotls 0_pre20220721 9999: TLS 1.3 implementation in C
 net-libs/sofia-sip 1.13.17: RFC3261 compliant SIP User-Agent library
@@ -1702,7 +1703,7 @@ net-vpn/fastd 22 23: A very small VPN daemon which tunnels IP packets and Ethern
 net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that require SAML
 net-vpn/mullvadvpn-app 2025.13 2025.14_beta1: Tool used to manage daemon setup
 net-vpn/proton-vpn-gtk-app 4.11.0: Proton VPN GTK app
-net-vpn/vtun-embedded 3.0.6: Create tunnels over TCP/IP networks with shaping, encryption, and compression
+net-vpn/vtun-embedded 3.0.6 3.0.7: Create tunnels over TCP/IP networks with shaping, encryption, and compression
 net-vpn/vtun-ng 3.0.21 3.0.22: Create tunnels over TCP/IP networks with shaping, encryption, and compression
 net-wireless/airspyhf 1.6.8: User mode driver for Airspy HF+
 net-wireless/bluetuith 0.2.1 0.2.2 0.2.3 9999: A TUI bluetooth manager for Linux written in Go
@@ -1937,12 +1938,12 @@ www-apps/whoogle-search 0.9.3: A self-hosted, ad-free, privacy-respecting metase
 www-apps/zola 0.20.0 0.21.0: A fast static site generator with everything built-in
 www-client/badwolf 1.4.0-r1 9999-r1: Minimalist and privacy-oriented WebKitGTK+ browser
 www-client/browsh 1.8.2 1.8.3: A fully-modern text-based browser, rendering to TTY and browsers
-www-client/mullvad-browser-bin 15.0.1: The Mullvad Browser is developed to minimize tracking and fingerprinting.
+www-client/mullvad-browser-bin 15.0.2: The Mullvad Browser is developed to minimize tracking and fingerprinting.
 www-client/nyxt 3.11.8 3.12.0 9999: Nyxt - the hacker's power-browser
 www-client/torbrowser-launcher 0.3.9: A program to help you securely download and run Tor Browser
 www-client/vimb 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
 www-client/yandex-browser 25.8.5.993_p1: The web browser from Yandex
-www-client/zen-bin 1.15.5b 1.16b 1.16.3b 1.16.4b 1.17b 1.17.1b 1.17.2b 1.17.3b 1.17.4b 1.17.5b 1.17.6b 1.17.7b: Zen Browser - A fast, privacy-focused Firefox fork
+www-client/zen-bin 1.15.5b 1.16b 1.16.3b 1.16.4b 1.17b 1.17.1b 1.17.2b 1.17.3b 1.17.4b 1.17.5b 1.17.6b 1.17.7b 1.17.8b: Zen Browser - A fast, privacy-focused Firefox fork
 www-misc/dufs 0.40.0: Dufs is a distinctive utility file server
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits
 www-misc/kiwix-desktop 2.4.0: cross-platform viewer/manager for ZIM archives
