@@ -1,27 +1,20 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 inherit meson
 
-if [ "${PV}" == 9999 ]
-then
-	inherit mercurial
-	EHG_REPO_URI="https://hg.sr.ht/~scoopta/wlrobs"
-else
-	SRC_URI="https://hg.sr.ht/~scoopta/wlrobs/archive/v${PV}.tar.gz -> ${P}.tar.gz"
-	S="${WORKDIR}/${PN}-v${PV}"
-	KEYWORDS="~amd64"
-fi
+COMMIT="b8668b4d6d6d33e3de86ce3fa4331249bc0abc8b"
 
 DESCRIPTION="OBS plugin that allows you to screen capture on wlroots based compositors"
 HOMEPAGE="https://hg.sr.ht/~scoopta/wlrobs"
+SRC_URI="https://hg.sr.ht/~scoopta/wlrobs/archive/${COMMIT}.tar.gz -> ${P}.tar.gz"
+S="${WORKDIR}/${PN}-${COMMIT}"
 
-LICENSE="GPL-3"
-
+LICENSE="GPL-3+"
 SLOT="0"
-
+KEYWORDS="~amd64"
 RESTRICT="mirror"
 
 RDEPEND="

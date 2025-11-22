@@ -7,11 +7,11 @@ CRATES="
 "
 
 declare -A GIT_CRATES=(
-	[cl3]='https://github.com/kenba/cl3;7e742c96146890f33fc9d1f9e0251f814d3b87aa;cl3-%commit%'
+	[cl3]='https://github.com/kenba/cl3;4da03b19d19ce2ca735e09dc5e2a1bcfa133beff;cl3-%commit%'
 )
 
-LLVM_COMPAT=( {18..20} )
-RUST_MIN_VER="1.76.0"
+LLVM_COMPAT=( {18..21} )
+RUST_MIN_VER="1.85.0"
 
 inherit cargo llvm-r2 xdg
 
@@ -31,8 +31,8 @@ S="${WORKDIR}/${P^^}"
 LICENSE="MIT"
 # Dependent crate licenses
 LICENSE+="
-	Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD CC0-1.0 GPL-3 ISC MIT
-	MPL-2.0 Unicode-3.0 ZLIB
+	Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD CC0-1.0
+	CDLA-Permissive-2.0 ISC LGPL-3+ MIT MPL-2.0 Unicode-3.0 ZLIB
 "
 SLOT="0"
 KEYWORDS="~amd64"
@@ -77,19 +77,17 @@ pkg_setup() {
 }
 
 src_configure() {
-	sed -i "/^strip =/d" Cargo.toml || die
-	sed -i "s|target/release|$(cargo_target_dir)|" Makefile || die
-
 	local myfeatures=(
 		$(usev gui lact-gui)
 		$(usev libadwaita adw)
 		$(usev video_cards_nvidia nvidia)
 	)
-	cargo_src_configure --no-default-features -p lact
+	cargo_src_configure --no-default-features
 }
 
 src_install() {
-	emake DESTDIR="${D}" PREFIX="${EPREFIX}/usr" install
+	cargo_src_install --path lact
+	emake DESTDIR="${D}" PREFIX="${EPREFIX}/usr" install-resources
 	newinitd res/lact-daemon-openrc lactd
 }
 
