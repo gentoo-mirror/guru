@@ -190,6 +190,7 @@ app-editors/neovim-qt 0.2.19: Neovim client library and GUI, in Qt
 app-editors/notepadnext 0.11 0.12: A cross-platform reimplementation of Notepad++ based on Qt
 app-editors/pulsar-bin 1.127.1 1.128.0 1.130.1: A Community-led Hyper-Hackable Text Editor
 app-editors/typora-bin 1.10.8: a markdown editor,markdown reader.
+app-editors/xed 3.8.4: Small text editor by the Linux Mint developers
 app-emacs/catppuccin-emacs 9999: Soothing pastel theme for Emacs
 app-emacs/envrc 0.11: Emacs support for direnv which operates buffer-locally
 app-emacs/idris-mode 1.0 9999: Idris syntax highlighting, compiler-supported editing, and interactive REPL
@@ -432,9 +433,8 @@ dev-cpp/blurhash 0.2.0 0.2.0-r1: C++ blurhash encoder/decoder
 dev-cpp/boxed-cpp 1.4.3: Boxing primitive types in C++
 dev-cpp/coeurl 0.3.0 0.3.1: A simple async wrapper around CURL for C++
 dev-cpp/cpp-jwt 1.5_pre20220727: JSON Web Token library for C++
-dev-cpp/cpp-utilities 5.31.0: Useful C++ classes and routines
+dev-cpp/cpp-utilities 5.31.0 5.31.1: Useful C++ classes and routines
 dev-cpp/cpprestsdk 2.10.19-r5 2.10.19-r6: A Microsoft project for cloud-based client-server communication.
-dev-cpp/cpptrace 1.0.2 1.0.3 1.0.4 9999: Simple, portable, and self-contained stacktrace library for C++
 dev-cpp/dpp 10.0.23 10.0.24 10.0.25 10.0.29 10.0.30 10.0.33: Lightweight C++ Discord bot library
 dev-cpp/drogon 1.9.5 1.9.6: C++14/17 based HTTP web application framework
 dev-cpp/fast_double_parser 0.8.1: Parse strings into double floating-point values
@@ -1003,6 +1003,7 @@ dev-util/fortran-test-drive 0.4.0 0.5.0: The simple testing framework (for Fortr
 dev-util/gammaray 3.1.0 3.3.0: High-level runtime introspection tool for Qt applications
 dev-util/gemini-cli 0.16.0: Gemini CLI - a command-line AI workflow tool by Google
 dev-util/genTree 0.1.0 9999: Gentoo rootfs tree generator
+dev-util/gersemi 0.23.1: A formatter to make your CMake code the real treasure
 dev-util/git-bug 0.10.1 9999: distributed, offline-first bug tracker
 dev-util/gitlab-ci-local-bin 4.43.0 4.47.0 4.56.0: Run gitlab pipelines locally as shell executor or docker executor
 dev-util/go-task 3.38.0-r1 3.41.0-r1: A task runner / simpler Make alternative written in Go
@@ -1028,6 +1029,7 @@ dev-util/minify-bin 2.24.4: Minifier package that provides HTML5, CSS3, JS, JSON
 dev-util/mise 2025.10.10-r3 2025.10.14: The front-end to your dev env
 dev-util/mock 6.5: Simple chroot build environment manager for building RPMs
 dev-util/mock-core-configs 43.3: Mock core config files basic chroots
+dev-util/neocmakelsp 0.9.0: Another CMake LSP
 dev-util/nvchecker 2.19: New version checker for software releases
 dev-util/ocamlformat 0.26.2 0.26.2-r1: Auto-formatter for OCaml code
 dev-util/ocp-indent 1.8.2: Indentation tool for OCaml, to be used from editors like Emacs and Vim.
@@ -1091,7 +1093,7 @@ games-board/rmahjong 0.4_p20201106: Riichi Mahjong, the Japanese variant of the 
 games-emulation/RetroArch 1.19.1 1.20.0 1.21.0: RetroArch is a frontend for emulators, game engines and media players
 games-emulation/azahar 2123.3: An open-source 3DS emulator project based on Citra
 games-emulation/dosbox-x 2025.05.03 2025.10.07 9999: Complete, accurate DOS emulator forked from DOSBox
-games-emulation/eden 0.0.4_rc2: Nintendo Switch Emulator
+games-emulation/eden 0.0.4_rc3: Nintendo Switch Emulator
 games-emulation/flycast 9999: Sega Dreamcast, Naomi and Atomiswave emulator
 games-emulation/libretro-dolphin 0.0.1_pre20250517-r1: Dolphin libretro port
 games-emulation/mupen64plus-qt 1.17 9999: A basic launcher for Mupen64Plus
@@ -1299,8 +1301,8 @@ gui-libs/libcprime 5.0.0: Library for managing settings of CoreApps
 gui-libs/libcsys 5.0.0: Library for managing the device
 gui-libs/mir 2.22.2 2.23.0: Set of libraries for building Wayland based shells
 gui-libs/qdocumentview 0.3.0.1: Widget to render multi-page documents
-gui-libs/qtforkawesome 0.3.1: Library that bundles ForkAwesome for use within Qt applications
-gui-libs/qtutilities 6.18.2: Useful Qt related C++ classes and routines
+gui-libs/qtforkawesome 0.3.1 0.3.2: Library that bundles ForkAwesome for use within Qt applications
+gui-libs/qtutilities 6.18.2 6.18.3: Useful Qt related C++ classes and routines
 gui-libs/scenefx 0.4.1 9999: A replacement for the wlroots scene API with eye-candy effects.
 gui-libs/xdg-desktop-portal-hyprland 1.3.9-r1 9999: xdg-desktop-portal backend for Hyprland
 gui-wm/cage 0.2.1 9999: A Wayland kiosk
@@ -1444,7 +1446,7 @@ media-sound/mousai 0.7.9: Identify songs in seconds
 media-sound/mpd-mpris 0.3.1 0.4.0 0.4.1: An implementation of the MPRIS protocol for MPD.
 media-sound/mpvc 1.1.4-r1: mpc-like tool which connects to existing mpv instances through sockets.
 media-sound/musikcube 3.0.2 3.0.4: Excellent terminal music player, support almost every known sound system.
-media-sound/neocrystal 1.4.1 9999: A terminal user interface music player in Rust
+media-sound/neocrystal 1.4.1 1.4.2 9999: A terminal user interface music player in Rust
 media-sound/netcat-cpi 2014.04.29-r1: Kernel module edition of the Cycles Per Instruction (2014) album
 media-sound/noson-app 5.6.6-r1 5.6.8: The essential to control music from your SONOS devices on Linux platforms
 media-sound/nuclear-bin 0.6.30: Nuclear is a streaming program that pulls content from free sources on internet
@@ -1469,7 +1471,7 @@ media-sound/spotube-bin 3.8.0: An open source, cross-platform Spotify client
 media-sound/supersonic 0.17.0 0.18.1 0.19.0: A lightweight and full-featured cross-platform desktop client
 media-sound/tenacity 1.3.4-r4: Easy-to-use, privacy-friendly, FLOSS, cross-platform multi-track audio editor
 media-sound/tidal-hifi-bin 5.16.0-r1 5.17.0: Web version of Tidal running in electron with Hi-Fi support thanks to Widevine.
-media-sound/yandex-music 5.75.2 5.76.4: Yandex Music streaming service
+media-sound/yandex-music 5.75.2 5.76.4 5.77.1: Yandex Music streaming service
 media-sound/yewtube 2.12.0 9999: Terminal-based YouTube player and downloader
 media-sound/ymuse 0.22: GTK client for Music Player Daemon (MPD) written in Go
 media-sound/youtube-music-bin 3.10.0 3.11.0: YouTube Music Desktop App bundled with custom plugins
@@ -1597,6 +1599,7 @@ net-libs/ixwebsocket 11.4.4: C++ websocket client and server library
 net-libs/kcgi 0.13.3 0.13.4: Minimal CGI library for web applications
 net-libs/libuecc 7: a very small Elliptic Curve Cryptography library compatible with Ed25519.
 net-libs/libuplink 1.10.1: C library for the Storj V3 network (libuplink)
+net-libs/nodejs-bin 24.11.1: A JavaScript runtime built on Chrome's V8 JavaScript engine
 net-libs/orcania 2.3.3: Library for angharad programs
 net-libs/picotls 0_pre20220721 9999: TLS 1.3 implementation in C
 net-libs/sofia-sip 1.13.17: RFC3261 compliant SIP User-Agent library
@@ -1681,13 +1684,13 @@ net-p2p/monero 0.18.4.1 0.18.4.3 0.18.4.4 9999: The secure, private, untraceable
 net-p2p/monero-gui-bin 0.18.4.3: An open-source GUI wallet developed by the Monero community.
 net-p2p/p2pool 4.5-r2 4.8 4.9 4.9.1 9999: Decentralized pool for Monero mining
 net-p2p/persepolis 5.2.0: Persepolis is a download manager written in Python.
-net-p2p/syncthingtray 2.0.2: Tray application and Dolphin/Plasma integration for Syncthing
+net-p2p/syncthingtray 2.0.2 2.0.3: Tray application and Dolphin/Plasma integration for Syncthing
 net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
 net-p2p/yggdrasil-go 0.5.12-r1 9999: An experiment in scalable routing as an encrypted IPv6 overlay network
 net-print/captdriver 0.1.4: Alternative driver for Canon CAPT printers
 net-print/hpuld 1.00.39.15.00.23-r1: HP Unified Linux Driver (for samsung hardware)
 net-proxy/MTProxy 3.0.4-r1: Community fork of MTProxy
-net-proxy/Throne 1.0.8: Qt based cross-platform GUI proxy configuration manager
+net-proxy/Throne 1.0.9: Qt based cross-platform GUI proxy configuration manager
 net-proxy/byedpi 0.17.2 0.17.3 9999: Bypass DPI SOCKS proxy
 net-proxy/ngrok-bin 3.33.0: ngrok is a reverse proxy, firewall, and API gateway
 net-proxy/shadowsocks-rust 1.22.0: A Rust port of shadowsocks
