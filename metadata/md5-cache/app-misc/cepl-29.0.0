@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install prepare
+DEPEND=sys-libs/readline:= virtual/libelf:=
+DESCRIPTION=A readline C and C++ REPL with history, tab-completion, and undo.
+EAPI=8
+HOMEPAGE=https://github.com/alyptik/cepl
+INHERIT=toolchain-funcs
+IUSE=debug
+KEYWORDS=~amd64
+LICENSE=MIT
+RDEPEND=sys-libs/readline:= virtual/libelf:=
+SLOT=0
+SRC_URI=https://github.com/alyptik/cepl/releases/download/v29.0.0/cepl-29.0.0.tar.gz
+_eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db
+_md5_=b9376e1d878eddae5e0de3da414f7d86

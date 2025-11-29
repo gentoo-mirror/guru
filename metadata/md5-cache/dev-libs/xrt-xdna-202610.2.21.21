@@ -1,0 +1,15 @@
+BDEPEND=|| ( dev-lang/python:3.14 dev-lang/python:3.13 dev-lang/python:3.12 dev-lang/python:3.11 ) || ( ( dev-lang/python:3.14 dev-python/pybind11[python_targets_python3_14(-)] ) ( dev-lang/python:3.13 dev-python/pybind11[python_targets_python3_13(-)] ) ( dev-lang/python:3.12 dev-python/pybind11[python_targets_python3_12(-)] ) ( dev-lang/python:3.11 dev-python/pybind11[python_targets_python3_11(-)] ) ) app-alternatives/ninja >=dev-build/cmake-3.28.5
+DEFINED_PHASES=compile configure install prepare setup test
+DEPEND=sys-apps/util-linux dev-debug/systemtap dev-libs/boost dev-libs/opencl-icd-loader dev-libs/rapidjson dev-util/opencl-headers x11-libs/libdrm
+DESCRIPTION=Runtime for AIE and FPGA based platforms
+EAPI=8
+HOMEPAGE=https://github.com/amd/xdna-driver
+INHERIT=cmake python-any-r1 linux-info
+KEYWORDS=~amd64
+LICENSE=AMD-Binary-Only
+RDEPEND=dev-util/xrt sys-apps/util-linux
+RESTRICT=bindist mirror strip
+SLOT=0
+SRC_URI=https://github.com/amd/xdna-driver/archive/09824b1cff30cd3fcb657154188e6ddab708e2ec.tar.gz -> xrt-xdna-202610.2.21.21.tar.gz https://github.com/serge1/ELFIO/archive/f849001fc229c2598f8557e0df22866af194ef98.tar.gz -> ELFIO-f849001f.tar.gz https://github.com/Xilinx/aiebu/archive/9065273e0c0a4ac5930fff904ac245cf38dd3087.tar.gz -> aiebu-9065273e.tar.gz https://github.com/Xilinx/XRT/archive/f848f6f093a174bbbe82b8a9b7fe44ff91295661.tar.gz -> XRT-f848f6f0.tar.gz https://github.com/Xilinx/aie-rt/archive/a8b0667133ea2851ce27793a1796c5968226d9af.tar.gz -> aie-rt-a8b06671.tar.gz https://github.com/Xilinx/VTD/raw/5f7fec23620be7a3984c8970bc514f0faa2b2ee3/archive/strx/xrt_smi_strx.a -> xrt_smi_strx-5f7fec23.a https://github.com/Xilinx/VTD/raw/5f7fec23620be7a3984c8970bc514f0faa2b2ee3/archive/phx/xrt_smi_phx.a -> xrt_smi_phx-5f7fec23.a
+_eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	3a59a39e97af0f7c03f49cf3c22f262b	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	22e4e58d68692975dc74424dc9b12fb7	python-utils-r1	dbb8c4d794033ad7e7221eaf567a6c90	python-any-r1	891415dfe39ad9b41b461f2b86354af0	linux-info	efd923656513c879204fec6638eadee5
+_md5_=6b2909bc8a1d8bf67cbc58534d891751

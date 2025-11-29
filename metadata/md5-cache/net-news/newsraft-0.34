@@ -1,0 +1,14 @@
+BDEPEND=app-text/scdoc virtual/pkgconfig
+DEFINED_PHASES=compile install postinst postrm
+DEPEND=dev-db/sqlite:3 dev-libs/expat dev-libs/gumbo:= net-misc/curl
+DESCRIPTION=A lightweight feed reader with ncurses user interface inspired by Newsboat.
+EAPI=8
+HOMEPAGE=https://codeberg.org/newsraft/newsraft
+INHERIT=toolchain-funcs xdg-utils
+KEYWORDS=~amd64
+LICENSE=ISC
+RDEPEND=dev-db/sqlite:3 dev-libs/expat dev-libs/gumbo:= net-misc/curl
+SLOT=0
+SRC_URI=https://codeberg.org/newsraft/newsraft/archive/newsraft-0.34.tar.gz
+_eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	xdg-utils	42869b3c8d86a70ef3cf75165a395e09
+_md5_=b3443a3e376ec4066660c6ba07e01d6a
