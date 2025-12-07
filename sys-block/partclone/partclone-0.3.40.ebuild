@@ -25,7 +25,12 @@ IUSE+=" reiserfs static test ufs vmfs xfs"
 RESTRICT="!test? ( test )"
 
 RDEPEND="
+	app-arch/zstd:=
+	dev-libs/isa-l
 	dev-libs/openssl:0=
+	dev-libs/xxhash
+	sys-apps/util-linux
+	virtual/zlib:=
 	e2fs? ( sys-fs/e2fsprogs )
 	btrfs? ( sys-apps/util-linux )
 	fuse? ( sys-fs/fuse:3 )
@@ -35,7 +40,9 @@ RDEPEND="
 	reiserfs? ( sys-fs/progsreiserfs )
 	xfs? ( sys-apps/util-linux )
 	static? (
+		app-arch/zstd:=[static-libs]
 		dev-libs/openssl:0[static-libs]
+		virtual/zlib:=[static-libs]
 		e2fs? ( sys-fs/e2fsprogs[static-libs] )
 		btrfs? ( sys-apps/util-linux[static-libs] )
 		fuse? ( sys-fs/fuse:0[static-libs] )
@@ -53,7 +60,7 @@ BDEPEND="
 "
 
 PATCHES=(
-	"${FILESDIR}"/${PN}-fix-ncurses-linking.patch
+	"${FILESDIR}"/${PN}-0.3.40-fix-ncurses-linking.patch
 )
 
 DOCS=(
@@ -93,4 +100,9 @@ src_configure() {
 		--disable-reiser4
 	)
 	econf "${myconf[@]}"
+}
+
+src_test() {
+	local -x TERM=dummy
+	default
 }

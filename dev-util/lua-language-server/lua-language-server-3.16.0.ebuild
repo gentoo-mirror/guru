@@ -23,13 +23,9 @@ RDEPEND="${DEPEND}"
 BDEPEND="
 	app-alternatives/ninja
 	app-arch/unzip
+	sys-libs/libunwind
 "
 RESTRICT="!test? ( test )"
-PATCHES=(
-	"${FILESDIR}/linux.ninja.patch"
-	"${FILESDIR}/build.ninja.patch"
-	"${FILESDIR}/${PN}-3.10.5-uint32_t-fix.patch"
-)
 
 src_prepare() {
 	# Remove hardcoded gcc references
@@ -38,7 +34,8 @@ src_prepare() {
 	sed -i "s/CC = gcc/ CC = ${tc-getCC}/" \
 		3rd/lpeglabel/makefile || die
 	# Shipped file doesn't respect CFLAGS/CXXFLAGS/LDFLAGS
-	eapply "${FILESDIR}/linux.ninja.patch"
+	eapply "${FILESDIR}/${PV}-linux.ninja.patch"
+	eapply "${FILESDIR}/${PN}-${PV}-ucontext_t.patch"
 	eapply_user
 	sed -i -e "s/^cc = REPLACE_ME/cc = $(tc-getCC)/" \
 		-e "s/^ar = REPLACE_AR/ar = $(tc-getAR)/" \
@@ -60,8 +57,7 @@ src_compile() {
 		-e "s/^ar =.*./ar = REPLACE_AR/" \
 		build/build.ninja || die
 
-	eapply "${FILESDIR}/build.ninja.patch"
-	eapply "${FILESDIR}/${PN}-3.10.5-uint32_t-fix.patch"
+	eapply "${FILESDIR}/${PV}-build.ninja.patch"
 	sed -i -e "s/REPLACE_ME/$(tc-getCC)/" \
 		-e "s/REPLACE_AR/$(tc-getAR)/" \
 		-e "s|LUAMAKE_PATH|${S}/3rd/luamake/luamake|" \
