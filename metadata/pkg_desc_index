@@ -20,6 +20,7 @@ acct-group/lms 0: Group for LMS
 acct-group/mastoposter 0: System group: mastoposter
 acct-group/maubot 0: Group for Maubot Integrations
 acct-group/mautrix 0: Group for Mautrix Bridges
+acct-group/meowlnir 0: System group: meowlnir
 acct-group/mock 0: System group: mock
 acct-group/monero 0: System group: monero
 acct-group/ollama 0: A group for ollama
@@ -62,6 +63,7 @@ acct-user/mautrix-signal 0: User for Mautrix Signal Bridge
 acct-user/mautrix-slack 0: User for Mautrix Slack Bridge
 acct-user/mautrix-telegram 0: User for Mautrix Telegram Bridge
 acct-user/mautrix-whatsapp 0: User for Mautrix WhatsApp Bridge
+acct-user/meowlnir 0: System user: meowlnir
 acct-user/monero 0: System user: monero
 acct-user/ollama 3: A user for ollama
 acct-user/pleroma 0: User for www-apps/pleroma
@@ -1016,6 +1018,7 @@ dev-util/gemini-cli 0.16.0: Gemini CLI - a command-line AI workflow tool by Goog
 dev-util/genTree 0.1.0 9999: Gentoo rootfs tree generator
 dev-util/gersemi 0.23.2: A formatter to make your CMake code the real treasure
 dev-util/git-bug 0.10.1 9999: distributed, offline-first bug tracker
+dev-util/git-pages-cli 1.5.1: Command-line application for publishing sites to git-pages
 dev-util/gitlab-ci-local-bin 4.43.0 4.47.0 4.56.0: Run gitlab pipelines locally as shell executor or docker executor
 dev-util/go-task 3.38.0-r1 3.41.0-r1: A task runner / simpler Make alternative written in Go
 dev-util/gshards 0.2: Small helper tools to aid installing Crystal packages in Gentoo
@@ -1074,7 +1077,7 @@ dev-util/vala-language-server 0.48.4: Code Intelligence for Vala & Genie
 dev-util/vscode-langservers-extracted 4.8.0 4.10.0: HTML/CSS/JSON/ESLint/Markdown language servers extracted from vscode.
 dev-util/wakatime-cli 1.27.0 1.28.6: Command line interface to WakaTime used by all WakaTime plugins
 dev-util/webgpu-headers 9999 20240512: Webgpu Header files
-dev-util/webstorm 2024.3.5-r1 2025.1.4.1-r1 2025.2-r1 2025.2.2-r1 2025.2.3-r1 2025.2.4-r1: An integrated development environment for JavaScript and related technologies.
+dev-util/webstorm 2024.3.5-r1 2025.1.4.1-r1 2025.2.2-r1 2025.2.3-r1 2025.2.4-r1 2025.2.5: An integrated development environment for JavaScript and related technologies.
 dev-util/wxformbuilder 3.10.1-r1 4.2.1: A wxWidgets GUI Builder
 dev-util/xrt 202610.2.21.21 999999: Runtime for AIE and FPGA based platforms
 dev-util/yaml-language-server 1.14.0 1.15.0: Language Server for YAML Files
@@ -1560,6 +1563,7 @@ net-im/Quaternion 0.0.97.1: A Qt-based IM client for Matrix
 net-im/WasIstLos 1.6.5 1.7.0: An unofficial WhatsApp desktop application for Linux
 net-im/abaddon 0.2.2 9999: Alternative Discord client using GTK instead of Electron
 net-im/axolotl-bin 2.0.1: Axolotl is a cross-platform Signal client
+net-im/bbctl 0.13.0: Beeper Bridge Manager
 net-im/beeper 4.1.311-r1 4.2.166: Beeper: Unified Messenger
 net-im/chatterino 2.5.3 2.5.4: Chat client for https://twitch.tv
 net-im/conduit 0.10.8 0.10.9 9999: Matrix homeserver written in Rust
@@ -1577,7 +1581,7 @@ net-im/gurk-rs 0.7.1 9999: Signal messenger client for terminal
 net-im/heisenbridge 1.15.3 1.15.4: Bouncer-style Matrix IRC bridge
 net-im/iamb 0.0.8 0.0.9 0.0.10: A Matrix chat client that uses Vim keybindings
 net-im/jitsi-meet 2025.9.1 2025.10.0: Desktop application for Jitsi Meet built with Electron
-net-im/legcord-bin 1.1.4 1.1.5: Legcord is a custom client designed to enhance your Discord experience.
+net-im/legcord-bin 1.1.4 1.1.5 1.1.6: Legcord is a custom client designed to enhance your Discord experience.
 net-im/manyverse-bin 0.2310.9: A social network off the grid with append-only protocol (no edits) on blockchain
 net-im/mastoposter 0.2: Configurable reposter from Mastodon-compatible Fediverse servers
 net-im/matterhorn-bin 90000.1.0 90000.1.1: Terminal based Mattermost client
@@ -1588,6 +1592,7 @@ net-im/mautrix-signal 0.8.7 25.10: Matrix-Signal puppeting bridge
 net-im/mautrix-slack 0.1.3 0.1.4: A Matrix-Slack puppeting bridge based on slack-go
 net-im/mautrix-telegram 0.15.2 0.15.3: A Matrix-Telegram Messenger puppeting bridge
 net-im/mautrix-whatsapp 0.12.5: A Matrix-WhatsApp puppeting bridge
+net-im/meowlnir 25.11: Opinionated Matrix moderation bot
 net-im/nheko 0.12.0-r2 0.12.1 9999: Native desktop client for Matrix using Qt
 net-im/pop 8.0.21: Screen sharing with multiplayer control, with voice
 net-im/revolt-desktop 1.0.8-r2: Revolt Desktop App
@@ -1707,10 +1712,10 @@ net-proxy/ngrok-bin 3.33.1: ngrok is a reverse proxy, firewall, and API gateway
 net-proxy/shadowsocks-rust 1.22.0: A Rust port of shadowsocks
 net-proxy/snowflake 2.10.1 2.11.0: Pluggable Transport using WebRTC, inspired by Flashproxy
 net-proxy/wireproxy 1.0.9: Wireguard client that exposes itself as a proxy
-net-voip/baresip 3.23.0 3.24.0 4.2.0: Baresip is a portable and modular SIP User-Agent
+net-voip/baresip 3.24.0 4.2.0 4.3.0: Baresip is a portable and modular SIP User-Agent
 net-voip/discover-overlay 0.6.9-r1 0.7.4 0.7.8: Yet another Discord overlay for Linux written in Python using GTK3
 net-voip/gnome-calls 48.2 49.1.1: Phone dialer and call handler
-net-voip/re 3.23.0 3.24.0 4.2.0: Generic library for real-time communications with async IO support
+net-voip/re 3.24.0 4.2.0 4.3.0: Generic library for real-time communications with async IO support
 net-voip/vvmd 0.8-r1: vvmd is a lower level daemon that retrieves Visual Voicemail
 net-vpn/GlobalProtect-openconnect 2.4.4-r1: Unofficial GlobalProtect VPN client for Linux
 net-vpn/amneziawg-modules 1.0.20251009: AmneziaWG Linux kernel module

@@ -7,10 +7,10 @@ HOMEPAGE=https://github.com/amd/xdna-driver
 IDEPEND=sys-apps/kmod[tools]
 INHERIT=linux-mod-r1
 IUSE=+firmware dist-kernel modules-compress modules-sign +strip
-KEYWORDS=amd64
+KEYWORDS=~amd64
 LICENSE=GPL-2 firmware? ( linux-fw-redistributable )
 RDEPEND=sys-apps/kmod[tools] dist-kernel? ( virtual/dist-kernel:= )
 SLOT=0
 SRC_URI=https://github.com/amd/xdna-driver/archive/refs/tags/202610.2.21.21.tar.gz -> xdna-driver-202610.2.21.21.tar.gz firmware? ( https://gitlab.com/kernel-firmware/drm-firmware/-/raw/886e8948d60c354b488ad8d10c56763b81597093/amdnpu/1502_00/npu.sbin.1.5.5.391 -> 886e89-1502_00__npu.dev.sbin https://gitlab.com/kernel-firmware/drm-firmware/-/raw/886e8948d60c354b488ad8d10c56763b81597093/amdnpu/17f0_00/npu.sbin.0.7.22.185 -> 886e89-17f0_00__npu.dev.sbin https://gitlab.com/kernel-firmware/drm-firmware/-/raw/886e8948d60c354b488ad8d10c56763b81597093/amdnpu/17f0_10/npu.sbin.255.0.5.35 -> 886e89-17f0_10__npu.dev.sbin https://gitlab.com/kernel-firmware/drm-firmware/-/raw/886e8948d60c354b488ad8d10c56763b81597093/amdnpu/17f0_11/npu.sbin.255.0.5.35 -> 886e89-17f0_11__npu.dev.sbin )
 _eclasses_=mount-boot-utils	2551bac1a772f4b6beacb494a750ae92	toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	dist-kernel-utils	a40de3638d3f7a89f4c45d1a62b90e20	edo	a5e294016aa84979fcb2459749eb80b2	linux-info	efd923656513c879204fec6638eadee5	multiprocessing	1e32df7deee68372153dca65f4a7c21f	linux-mod-r1	2b1749a4ea9e1aea780b1b54dd2f65f1
-_md5_=128de542afd44d3908c0264f60707f16
+_md5_=885fbef6f3284bbc541d1675755e1b7e
