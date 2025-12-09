@@ -1,4 +1,4 @@
-# Copyright 2021-2024 Gentoo Authors
+# Copyright 2021-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -24,7 +24,7 @@ RDEPEND="
 	dev-python/markdown2[${PYTHON_USEDEP}]
 	dev-python/packaging[${PYTHON_USEDEP}]
 	dev-python/pyqt6[widgets,gui,svg,${PYTHON_USEDEP}]
-	>=net-misc/maestral-${PV%_rc*}_rc0[${PYTHON_USEDEP}]
+	>=net-misc/maestral-1.9.6[${PYTHON_USEDEP}]
 "
 BDEPEND="
 	dev-python/build[${PYTHON_USEDEP}]

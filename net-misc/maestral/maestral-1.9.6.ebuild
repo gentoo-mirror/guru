@@ -1,4 +1,4 @@
-# Copyright 2021-2024 Gentoo Authors
+# Copyright 2021-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -20,8 +20,9 @@ if [[ ${PV} != *_rc* ]]; then
 fi
 
 RDEPEND="
+	dev-python/bidict[${PYTHON_USEDEP}]
 	>=dev-python/click-8.0.2[${PYTHON_USEDEP}]
-	>=dev-python/desktop-notifier-3.3.0[${PYTHON_USEDEP}]
+	>=dev-python/desktop-notifier-5.0.0[${PYTHON_USEDEP}]
 	dev-python/dropbox[${PYTHON_USEDEP}]
 	>=dev-python/fasteners-0.15[${PYTHON_USEDEP}]
 	dev-python/importlib-metadata[${PYTHON_USEDEP}]
@@ -39,9 +40,6 @@ RDEPEND="
 "
 BDEPEND="
 	dev-python/build[${PYTHON_USEDEP}]
-	test? (
-		dev-python/bidict[${PYTHON_USEDEP}]
-	)
 "
 
 EPYTEST_DESELECT=(
@@ -59,4 +57,5 @@ EPYTEST_DESELECT=(
 	tests/offline/utils/test_path.py::test_move_preserves_xattrs
 )
 
+EPYTEST_PLUGINS=()
 distutils_enable_tests pytest

@@ -179,7 +179,7 @@ CRATES="
 
 inherit cargo
 
-DESCRIPTION="A minimal obs CLI for obs-websocket v5"
+DESCRIPTION="A minimal command to control obs via obs-websocket"
 HOMEPAGE="https://github.com/grigio/obs-cmd"
 SRC_URI="
 	https://github.com/grigio/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
