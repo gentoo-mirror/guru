@@ -1,11 +1,13 @@
-DEFINED_PHASES=install
+DEFINED_PHASES=install pretend setup
 DEPEND=acct-group/keyd
 DESCRIPTION=A key remapping daemon for linux
 EAPI=8
 HOMEPAGE=https://github.com/rvaiya/keyd
+INHERIT=linux-info
 KEYWORDS=~amd64 ~arm64 ~x86
 LICENSE=MIT
 RDEPEND=acct-group/keyd
 SLOT=0
 SRC_URI=https://github.com/rvaiya/keyd/archive/v2.5.0.tar.gz -> keyd-2.5.0.tar.gz
-_md5_=edfa814f6a65f2eb3c202af94305b6a4
+_eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	linux-info	efd923656513c879204fec6638eadee5
+_md5_=bea51be3ea3076274eb704ebe8925922
