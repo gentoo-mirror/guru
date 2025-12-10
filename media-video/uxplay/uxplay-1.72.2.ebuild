@@ -1,4 +1,4 @@
-# Copyright 2021-2024 Gentoo Authors
+# Copyright 2021-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -31,6 +31,7 @@ RDEPEND="
 	media-libs/gstreamer
 	media-libs/gst-plugins-bad
 	media-libs/gst-plugins-base
+	media-libs/gst-plugins-good
 	media-plugins/gst-plugins-libav
 	vaapi? ( media-plugins/gst-plugins-vaapi )
 	net-dns/avahi[mdnsresponder-compat]

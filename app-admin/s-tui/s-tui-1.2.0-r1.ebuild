@@ -3,12 +3,14 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..13} )
+PYTHON_COMPAT=( python3_{11..14} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 optfeature
 
 DESCRIPTION="Stress-Terminal UI monitoring tool"
 HOMEPAGE="https://amanusk.github.io/s-tui/"
+
+PATCHES=( "${FILESDIR}/${P}-dropimport.patch" )
 
 if [[ ${PV} == *9999* ]]; then
 	inherit git-r3
@@ -23,8 +25,8 @@ LICENSE="GPL-2"
 SLOT="0"
 
 RDEPEND="
-	>=dev-python/psutil-5.9.1[${PYTHON_USEDEP}]
-	>=dev-python/urwid-2.0.1[${PYTHON_USEDEP}]
+	>=dev-python/psutil-7.0.0[${PYTHON_USEDEP}]
+	>=dev-python/urwid-3.0.2[${PYTHON_USEDEP}]
 "
 
 distutils_enable_tests unittest
