@@ -116,7 +116,7 @@ app-admin/passage 1.7.4.2: A fork of password-store using age as encryption back
 app-admin/pulumi-bin 3.191.0 3.198.0 3.201.0 3.204.0 3.207.0: Infrastructure as code in any programming language
 app-admin/rbw 1.14.0 1.14.1 9999: Unofficial Bitwarden CLI
 app-admin/ripasso 0.7.0: A password manager that uses the file format of 'pass'
-app-admin/s-tui 1.1.6 1.2.0: Stress-Terminal UI monitoring tool
+app-admin/s-tui 1.2.0 1.2.0-r1: Stress-Terminal UI monitoring tool
 app-admin/synadm 0.43.1 0.44: Command line admin tool for Synapse
 app-admin/talosctl-bin 1.7.6 1.9.5 1.10.1: Pre-compiled talosctl is an tool for interacting with the Talos API
 app-admin/terragrunt-bin 0.93.11: A thin wrapper for Terraform
@@ -271,7 +271,7 @@ app-misc/kloak 0.2.30 0.3.7_p1 9999: A privacy tool that makes keystroke biometr
 app-misc/kmon 1.6.5 1.7.1: Linux kernel manager and activity monitor
 app-misc/krabby 0.3.0 9999: Print pokemon sprites in your terminal
 app-misc/ledger-live-bin 2.84.1: Manager for the Ledger hardware wallet
-app-misc/lf 33-r1 36 37 38 9999: Terminal file manager
+app-misc/lf 33-r1 36 37 38-r1 9999: Terminal file manager
 app-misc/libation 12.5.3: Libation: Free, open-source Audible library manager
 app-misc/lyfetch 1.1: Small system information script for linux systems.
 app-misc/macchina 6.4.0: A system information fetcher with an emphasis on performance.
@@ -567,7 +567,7 @@ dev-lang/odin 2025.06 9999: The Data-Oriented Language for Sane Software Develop
 dev-lang/opencilk 1.1 2.1: The OpenCilk concurrency platform for parallel programming
 dev-lang/opencilk-bin 1.1 2.1: The OpenCilk concurrency platform for parallel programming
 dev-lang/quickjs 2024.01.13-r1: Small embeddable Javascript engine
-dev-lang/swift 5.10.1 5.10.1-r1 5.10.1-r2 5.10.1-r3 5.10.1-r4 5.10.1-r5 6.0.3 6.0.3-r1 6.0.3-r2 6.1.3 6.2 6.2.1: A high-level, general-purpose, multi-paradigm, compiled programming language
+dev-lang/swift 5.10.1 5.10.1-r1 5.10.1-r2 5.10.1-r3 5.10.1-r4 5.10.1-r5 6.0.3 6.0.3-r1 6.0.3-r2 6.1.3 6.2 6.2.1 6.2.2: A high-level, general-purpose, multi-paradigm, compiled programming language
 dev-lang/swift-bootstrap 1.0: A virtual package providing a base Swift to bootstrap future versions with.
 dev-lang/uiua 0.16.2: A stack-based array programming language
 dev-lang/wabt 1.0.37: The WebAssembly Binary Toolkit
@@ -616,7 +616,7 @@ dev-libs/lygia 1.3.0: LYGIA is a shader library of reusable functions.
 dev-libs/lzfse 9999: LZFSE compression library and command line tool.
 dev-libs/mcl 0.1.13: merry's common library
 dev-libs/microprofile 4.0: An embeddable profiler
-dev-libs/mtxclient 0.10.0-r2 0.10.1: Client API library for Matrix, built on top of libcurl
+dev-libs/mtxclient 0.10.0-r2 0.10.0-r3 0.10.1 0.10.1-r1: Client API library for Matrix, built on top of libcurl
 dev-libs/nanopb 0.4.9.1 9999: plain-C Protocol Buffers for embedded/memory-constrained systems
 dev-libs/nihstro 0_pre20250505: 3DS shader assembler and disassembler
 dev-libs/oaknut 2.0.2: Yet another AArch64 emitter
@@ -903,6 +903,7 @@ dev-python/python-pidfile 3.1.1: PIDFile context processor. Supported py2 and py
 dev-python/python-socketio 5.11.4 5.12.1: Python implementation of the Socket.IO realtime server.
 dev-python/python-statemachine 2.3.6 2.4.0 2.5.0: Python Finite State Machines made easy.
 dev-python/python-telegram-bot 20.6-r1 21.1.1 9999: Python wrapper of telegram bots API
+dev-python/python-xdis 6.1.8: Python cross-version bytecode library and disassembler
 dev-python/pyvis 0.3.1: Python package for creating and visualizing interactive network graphs
 dev-python/pywavefront 1.3.3: Python library for importing Wavefront .obj files
 dev-python/pywebview 4.4.1-r2 5.1-r2: A lightweight cross-platform wrapper around a webview component
@@ -1086,7 +1087,7 @@ dev-vcs/ghorg 1.11.0: Mass repository cloning tool for GitHub/GitLab/Bitbucket
 dev-vcs/gitahead 2.7.1 2.7.1-r1: Graphical Git client to help understand and manage source code history
 dev-vcs/gitqlient 1.6.2 1.6.3 9999: Multi-platform Git client written with Qt
 dev-vcs/gitui 0.26.3 0.27.0: blazing fast terminal-ui for git
-dev-vcs/lazygit 0.54.2 0.55.0 0.55.1 0.56.0 9999: Simple terminal UI for git commands
+dev-vcs/lazygit 0.54.2 0.55.0 0.55.1 0.56.0 0.57.0 9999: Simple terminal UI for git commands
 dev-vcs/lazyjj 0.6.1: TUI for Jujutsu/jj
 dev-vcs/pijul 1.0.0_beta9: A distributed version control system based on a theory of patches
 dev-zig/zls 0.10.0-r2 0.13.0-r1 0.14.0 0.15.0 9999: Non-official language server for Zig
@@ -1414,7 +1415,7 @@ media-libs/libunicode 0.6.0: Modern C++20 Unicode library
 media-libs/monado 25.0.0 9999: The open source OpenXR runtime.
 media-libs/opencomposite 1.0.1521 9999: OpenVR over OpenXR compatibility layer
 media-libs/openvr 1.23.8: OpenVR SDK
-media-libs/openxr-loader 1.1.52 9999: OpenXR loader
+media-libs/openxr-loader 1.1.52 1.1.54 9999: OpenXR loader
 media-libs/raylib 5.0 5.5 9999: A simple and easy-to-use library to learn videogames programming
 media-libs/sonic 0.2.0_p20250419: Simple library to speed up or slow down speech
 media-libs/svt-vp9 0.3.0 9999: Scalable Video Technology for VP9 (SVT-VP9 Encoder)
@@ -1513,7 +1514,7 @@ media-video/obs-vaapi 0.4.1 0.4.2 9999: OBS Studio VAAPI support via GStreamer
 media-video/pgsrip 0.1.12: A command line tool to extract and convert PGS subtitles into SRT format
 media-video/stremio 4.4.168: Stremio is a modern media center for your video entertainment.
 media-video/syncplay 1.7.3 1.7.4: Client/server to synchronize media playback
-media-video/uxplay 1.67-r1 1.68.3-r1 1.70-r1: AirPlay Unix mirroring server
+media-video/uxplay 1.72.2: AirPlay Unix mirroring server
 media-video/walksnail-osd-tool 0.3.0-r2 9999: Tool for rendering OSDs over Walksnail DVR recordings
 media-video/webcamize 2.0.0: Use almost any camera as a webcam—DSLRs, mirrorless, camcorders, and more
 media-video/wl-screenrec 0.2.0: High performance screen/audio recorder for wlroots
@@ -1570,7 +1571,7 @@ net-im/chatterino 2.5.3 2.5.4: Chat client for https://twitch.tv
 net-im/conduit 0.10.8 0.10.9 9999: Matrix homeserver written in Rust
 net-im/discord-canary-bin 0.0.821: All-in-one voice and text chat
 net-im/discord-ptb-bin 0.0.137: All-in-one voice and text chat
-net-im/discordo 0_pre20251202 9999: A lightweight, secure, and feature-rich Discord TUI client.
+net-im/discordo 0_pre20251202-r1 9999: A lightweight, secure, and feature-rich Discord TUI client.
 net-im/dissent 0.0.37: Tiny native Discord app
 net-im/element-desktop 1.12.3 1.12.6: A glossy Matrix collaboration client for desktop
 net-im/eturnal 1.12.1 1.12.2: STUN/TURN server
@@ -1724,7 +1725,7 @@ net-vpn/amneziawg-tools 1.0.20250903: Required tools for AmneziaWG, such as awg(
 net-vpn/cloudflare-warp 2025.5.893.0 2025.9.558.0: Cloudflare Warp Client
 net-vpn/fastd 22 23: A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
 net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that require SAML
-net-vpn/mullvadvpn-app 2025.13 2025.14_beta3: Tool used to manage daemon setup
+net-vpn/mullvadvpn-app 2025.14: Tool used to manage daemon setup
 net-vpn/proton-vpn-gtk-app 4.11.0: Proton VPN GTK app
 net-vpn/vtun-embedded 3.0.6 3.0.7: Create tunnels over TCP/IP networks with shaping, encryption, and compression
 net-vpn/vtun-ng 3.0.21 3.0.22: Create tunnels over TCP/IP networks with shaping, encryption, and compression
@@ -1767,6 +1768,7 @@ sci-electronics/lxi-tools 2.7: Tools to access devices with LXI
 sci-electronics/qucs-s 25.1.2: Quite universal circuit simulator with SPICE
 sci-electronics/sby 0.60: Front-end for Yosys-based formal hardware verification flows
 sci-electronics/slang 9.1 9999: SystemVerilog compiler and language services
+sci-electronics/surfer 0.4.0: Waveform viewer with a focus on a snappy usable interface
 sci-electronics/svls 0.2.11: SystemVerilog language server
 sci-electronics/vcd 221217-r1: VCD file (Value Change Dump) command line viewer
 sci-electronics/verilator 5.026-r1 5.028-r1 9999: The fast free Verilog/SystemVerilog simulator
@@ -1813,7 +1815,7 @@ sci-mathematics/rstudio-desktop-bin 2023.09.1_p494 2024.12.0_p467 2024.12.0_p467
 sci-misc/boinc-wrapper 26018-r3 26019 26019-r1: Wrapper to use non-BOINC apps with BOINC
 sci-misc/llama-cpp 0_pre5633-r1 0_pre6140 0_pre6318 0_pre6710 0_pre6980 0_pre7276 9999: Port of Facebook's LLaMA model in C/C++
 sci-ml/aichat 0.30.0: All-in-one LLM CLI Tool
-sci-ml/ollama 0.13.0 0.13.1 9999: Get up and running with Llama 3, Mistral, Gemma, and other language models.
+sci-ml/ollama 0.13.0 0.13.1 0.13.2 9999: Get up and running with Llama 3, Mistral, Gemma, and other language models.
 sci-physics/openmodelica 1.25.5-r1: Open-source Modelica-based modeling and simulation environment
 sci-physics/ovito 3.10.4 3.10.5 3.10.5-r1: Open Visualization Tool
 sec-keys/openpgp-keys-aepaneshnikov 20221210: OpenPGP keys used by Alexander Epaneshnikov
@@ -1956,7 +1958,7 @@ www-apps/pleroma-fe 2.7.0 2.8.0 9999: Main frontend for www-apps/pleroma, inspir
 www-apps/redlib 0.36.0: Alternative private front-end to Reddit
 www-apps/rimgo 1.2.1: An alternative frontend for Imgur. Originally based on rimgu.
 www-apps/sblg 0.6.1: A utility for creating static blogs
-www-apps/soupault 5.1.0 5.2.1: Static website generator based on HTML rewriting
+www-apps/soupault 5.2.1: Static website generator based on HTML rewriting
 www-apps/soupault-bin 5.2.0: Static website generator based on HTML rewriting
 www-apps/uwebsockets 20.14.0 20.62.0 9999: ultra fast, simple, secure & standards compliant web I/O
 www-apps/whoogle-search 0.9.3: A self-hosted, ad-free, privacy-respecting metasearch engine
