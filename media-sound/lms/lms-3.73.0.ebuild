@@ -21,6 +21,7 @@ RDEPEND="
 	dev-cpp/wt:=
 	dev-libs/boost:=
 	dev-libs/libconfig[cxx]
+	dev-libs/pugixml:=
 	media-libs/taglib:=
 	media-video/ffmpeg[lame,opus]
 	sys-libs/pam
