@@ -6,6 +6,7 @@ EAPI=8
 CRATES=""
 
 LLVM_COMPAT=( {17..20} )
+# RUST_MIN_VER="1.83.0"
 RUST_NEEDS_LLVM=1
 
 inherit llvm-r1 cargo
