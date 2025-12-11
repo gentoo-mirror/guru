@@ -92,7 +92,7 @@ app-admin/aws-vault 7.2.0: Securely store and access AWS credentials in developm
 app-admin/blahajdots 0.6.0 9999: Bespoke dotfile management for sharkgirls.
 app-admin/boinctui 2.7.1 2.7.1-r1: Fullscreen text mode manager for the BOINC client
 app-admin/chamber 2.13.2: Managing secrets in AWS SSM Parameter Store
-app-admin/chezmoi 2.65.2 2.66.0 2.67.0-r1: Manage your dotfiles across multiple machines, securely
+app-admin/chezmoi 2.65.2 2.66.0 2.67.0-r1 2.68.1: Manage your dotfiles across multiple machines, securely
 app-admin/customrescuecd-x86_64 0.12.7 0.12.8: A system rescue cd or usbstick for desktop and server based on gentoo
 app-admin/doasedit 1.0.8 1.0.9 9999: Edit files as root using an unprivileged editor
 app-admin/dotbot 1.20.1: A tool that bootstraps your dotfiles
@@ -350,7 +350,7 @@ app-portage/portagecfg 2.4.0-r1: Utility to write Portage config files in an eas
 app-portage/quantum-resolver 9999: A WIP portage dependency resolver
 app-portage/showbuild 0.9.1-r2: Script to follow log of running portage builds
 app-portage/zig-ebuilder 9999: Semi-automatic generator for Zig ebuilds
-app-shells/carapace 1.5.4: Multi-shell multi-command argument completer
+app-shells/carapace 1.5.7: Multi-shell multi-command argument completer
 app-shells/direnv 2.36.0 2.37.1 9999: Environment variable manager for shell
 app-shells/elvish 0.19.2 0.20.1 0.21.0: Expressive programming language and a versatile interactive shell
 app-shells/fre 0.4.1: A command line frecency tracking tool
@@ -397,7 +397,7 @@ app-text/texlab 5.23.1 5.24.0: LaTeX Language Server
 app-text/tinymist 0.14.4 9999: An integrated language service for Typst.
 app-text/tldr 3.3.0 3.4.1: Python command line client for tldr pages
 app-text/typst 0.14.1 9999: A markup-based typesetting system for the sciences
-app-text/typstyle 0.13.17: A beautiful and reliable code formatter for Typst
+app-text/typstyle 0.14.0: A beautiful and reliable code formatter for Typst
 app-text/vale 3.7.1 3.9.1: A syntax-aware linter for prose built with speed and extensibility in mind
 app-text/xan 0.51.0 0.52.0 0.53.0 0.54.0 0.54.1 9999: The CSV magician
 app-vim/ale 3.3.0 4.0.0: Check syntax in Vim asynchronously and fix files, with LSP support
@@ -1016,7 +1016,7 @@ dev-util/fnm 1.38.1: Fast and simple Node.js version manager
 dev-util/fortls 2.13.0 3.0.0 3.1.1 3.1.2 3.2.2: Fortran Language Server (fortls)
 dev-util/fortran-test-drive 0.4.0 0.5.0: The simple testing framework (for Fortran)
 dev-util/gammaray 3.1.0 3.3.0: High-level runtime introspection tool for Qt applications
-dev-util/gemini-cli 0.16.0: Gemini CLI - a command-line AI workflow tool by Google
+dev-util/gemini-cli 0.20.0: Gemini CLI - a command-line AI workflow tool by Google
 dev-util/genTree 0.1.0 9999: Gentoo rootfs tree generator
 dev-util/gersemi 0.23.2: A formatter to make your CMake code the real treasure
 dev-util/git-bug 0.10.1 9999: distributed, offline-first bug tracker
@@ -1277,7 +1277,7 @@ gui-apps/sway-launcher-desktop 1.7.0: TUI Application launcher with Desktop Entr
 gui-apps/swaykbdd 1.4: Per-window keyboard layout switcher for Sway
 gui-apps/swaylock-effects 1.7.0.0 9999: Swaylock, with fancy effects
 gui-apps/swaylock-plugin 1.8.0 9999: Fork of Swaylock that supports animated backgrounds
-gui-apps/swaync 0.11.0 0.12.2: A simple notification daemon with a GTK gui for notifications and control center
+gui-apps/swaync 0.11.0 0.12.3: A simple notification daemon with a GTK gui for notifications and control center
 gui-apps/swayosd 0.1.0 0.2.1: GTK based on screen display for keyboard shortcuts like caps-lock and volume
 gui-apps/swayr 0.28.0 0.28.1: A LRU window-switcher (and more) for the sway window manager
 gui-apps/swayrbar 0.4.2: A swaybar-protocol implementation for sway/swaybar
@@ -1310,7 +1310,7 @@ gui-apps/wob 0.15.1-r1 0.16: Lightweight overlay volume/backlight/progress/anyth
 gui-apps/wscreensaver 9999: Xscreensaver screensavers ported to wayland
 gui-apps/wtype 0.4: xdotool type for wayland
 gui-apps/xremap 0.14.5: Dynamic key remap for X and Wayland
-gui-apps/xwayland-satellite 0.5.1 0.7: Xwayland outside your Wayland
+gui-apps/xwayland-satellite 0.5.1 0.8: Xwayland outside your Wayland
 gui-apps/yambar 1.11.0 9999: Simplistic and highly configurable status panel for X and Wayland
 gui-libs/gtk-session-lock 0.2.0-r6 9999: GTK-based lockscreen for Wayland
 gui-libs/libcprime 5.0.0: Library for managing settings of CoreApps
@@ -1325,7 +1325,7 @@ gui-wm/cage 0.2.1 9999: A Wayland kiosk
 gui-wm/hyprland-contrib 0.1-r1 9999: Community-maintained extensions for hyprland
 gui-wm/mangowc 0.10.7 9999: wayland compositor based on wlroots and scenefx(dwl but no suckless)
 gui-wm/miracle-wm 0.8.0 0.8.2: Tiling Wayland compositor based on Mir
-gui-wm/niri 25.08 25.08-r1 25.11 9999: Scrollable-tiling Wayland compositor
+gui-wm/niri 25.11-r1 9999: Scrollable-tiling Wayland compositor
 gui-wm/phoc 0.48.0 0.49.0 0.50.0: Wayland compositor for mobile phones
 gui-wm/river 0.3.11 0.3.12: A dynamic tiling Wayland compositor
 gui-wm/swayfx 0.5 0.5.3: SwayFX: Sway, but with eye candy!
@@ -1436,7 +1436,7 @@ media-radio/fllog 1.2.8: Logbook application for amateur radio use
 media-sound/6pm 0.9: 6PM is a polyphonic, touch-sensitive, realtime phase modulation synthesizer
 media-sound/Tauon 8.1.4 8.2.1 8.2.2 9999: The desktop music player of today!
 media-sound/add64 3.8.0 3.9.3: Add64 is a realtime additive/subtractive-synthesis softsynth
-media-sound/aimp 6.00.3017_alpha4 6.00.3021_alpha5 6.00.3022_alpha6: AIMP - Free Audio Player
+media-sound/aimp 6.00.3017_alpha4 6.00.3021_alpha5 6.00.3023_alpha6: AIMP - Free Audio Player
 media-sound/amberol 2024.2: Simple GUI Music Player
 media-sound/bespokesynth 1.2.1 1.3.0: Software modular synth
 media-sound/callaudiod 0.1.10 0.1.99: Call audio routing daemon
@@ -1444,9 +1444,9 @@ media-sound/corrscope 0.10.0-r1 0.10.1: Advanced oscilloscope audio visualizer s
 media-sound/cyanrip 0.9.3.1: Fully featured CD ripping program able to take out most of the tedium
 media-sound/deep-filter 0.5.6-r2: Noise supression using deep filtering
 media-sound/drumgizmo 0.9.20-r1 9999: Audio sampler plugin and stand-alone app that simulates a real drum kit
-media-sound/dzr 251019: DZR: the command line deezer.com player
+media-sound/dzr 251115: DZR: the command line deezer.com player
 media-sound/eartag 0.5.0 0.5.1: GTK4 MusicBrainz audio tagger
-media-sound/fooyin 0.9.1 0.9.2 9999: A customizable music player, Qt clone of foobar2000
+media-sound/fooyin 0.9.1 0.9.2 0.9.2-r1 9999: A customizable music player, Qt clone of foobar2000
 media-sound/furnace 0.6 0.6.5-r1 0.6.7: a multi-system chiptune tracker compatible with DefleMask modules
 media-sound/gapless 4.3.1 4.4: A GTK4 music player
 media-sound/goxlr-utility 1.2.3 9999: A utility for monitoring and controlling a TC-Helicon GoXLR or GoXLR Mini
@@ -1487,7 +1487,7 @@ media-sound/spotube-bin 3.8.0: An open source, cross-platform Spotify client
 media-sound/supersonic 0.17.0 0.18.1 0.19.0: A lightweight and full-featured cross-platform desktop client
 media-sound/tenacity 1.3.4-r4: Easy-to-use, privacy-friendly, FLOSS, cross-platform multi-track audio editor
 media-sound/tidal-hifi-bin 5.16.0-r1 5.17.0: Web version of Tidal running in electron with Hi-Fi support thanks to Widevine.
-media-sound/yandex-music 5.75.2 5.76.4 5.77.1 5.78.4 5.78.7 5.79.2: Yandex Music streaming service
+media-sound/yandex-music 5.76.4 5.77.1 5.78.7 5.79.2 5.79.7: Yandex Music streaming service
 media-sound/yewtube 2.12.0 9999: Terminal-based YouTube player and downloader
 media-sound/ymuse 0.22: GTK client for Music Player Daemon (MPD) written in Go
 media-sound/youtube-music-bin 3.10.0 3.11.0: YouTube Music Desktop App bundled with custom plugins
@@ -1602,7 +1602,7 @@ net-im/session-desktop-bin 1.15.1 1.15.2: Session Desktop - Onion routing based 
 net-im/sliding-sync 0.99.15 0.99.19: Proxy implementation of MSC3575's sync protocol.
 net-im/teams-for-linux 2.6.12 2.6.14 2.6.17: Unofficial Microsoft Teams client for Linux. Binary precompiled version.
 net-im/vesktop-bin 1.5.6 1.5.7 1.5.8 1.6.1: All-in-one voice and text chat for gamers with Vencord Preinstalled
-net-im/zulip-desktop-bin 5.11.1 5.12.0 5.12.1: Organized chat for distributed teams.
+net-im/zulip-desktop-bin 5.12.2: Organized chat for distributed teams.
 net-irc/catgirl 2.2 2.2a: TLS-only terminal IRC client
 net-irc/halloy 2025.9 2025.10 2025.11: IRC application written in Rust
 net-irc/limnoria-plugins-bugzilla 4.0: Bugzilla integration plugin for the Limnoria IRC Bot
@@ -1755,7 +1755,7 @@ sci-biology/jalview-bin 2.11.5.0: Editor of multiple sequence alignments.
 sci-chemistry/vesta-bin 3.5.8: Visualisation for Electronic and STructural Analysis.
 sci-chemistry/xcrysden 1.6.2-r2: For the visualisation of molecular and crystal structures.
 sci-electronics/bender 0.28.1-r1: A dependency management tool for hardware projects
-sci-electronics/bluespec 2022.01-r1 2023.01 2023.07 2024.01 2024.07 2025.01.1 9999: Toolchain for the Bluespec Hardware Definition Language
+sci-electronics/bluespec 2022.01-r1 2023.01 2023.07 2024.01 2024.07 2025.01.1 2025.07 9999: Toolchain for the Bluespec Hardware Definition Language
 sci-electronics/circt 1.37.0 1.76.0 1.110.0: The fast free Verilog/SystemVerilog simulator
 sci-electronics/cocotb 1.9.2: Python-based chip (RTL) verification
 sci-electronics/cocotb-bus 0.2.1: Reusable testbenching tools and bus interfaces for cocotb
@@ -1771,11 +1771,11 @@ sci-electronics/slang 9.1 9999: SystemVerilog compiler and language services
 sci-electronics/surfer 0.4.0: Waveform viewer with a focus on a snappy usable interface
 sci-electronics/svls 0.2.11: SystemVerilog language server
 sci-electronics/vcd 221217-r1: VCD file (Value Change Dump) command line viewer
-sci-electronics/verilator 5.026-r1 5.028-r1 9999: The fast free Verilog/SystemVerilog simulator
+sci-electronics/verilator 5.042 9999: The fast free Verilog/SystemVerilog simulator
 sci-electronics/yosys 0.60: framework for Verilog RTL synthesis
 sci-geosciences/google-earth-pro 7.3.6-r1: Google's 3D planet viewer
 sci-libs/dlpack 1.2: Common in-memory tensor structure
-sci-libs/onnxruntime 1.22.2: Cross-platform, high performance ML inferencing and training accelerator
+sci-libs/onnxruntime 1.23.2: Cross-platform, high performance ML inferencing and training accelerator
 sci-libs/onnxruntime-bin 1.22.0: cross-platform, high performance ML inferencing and training accelerator
 sci-libs/poselib 2.0.4: Minimal solvers for calibrated camera pose estimation
 sci-mathematics/frama-c 25.0-r2: Framework for analysis of source codes written in C
@@ -1965,7 +1965,7 @@ www-apps/whoogle-search 0.9.3: A self-hosted, ad-free, privacy-respecting metase
 www-apps/zola 0.20.0 0.21.0: A fast static site generator with everything built-in
 www-client/badwolf 1.4.0-r1 9999-r1: Minimalist and privacy-oriented WebKitGTK+ browser
 www-client/browsh 1.8.2 1.8.3: A fully-modern text-based browser, rendering to TTY and browsers
-www-client/mullvad-browser-bin 15.0.2: The Mullvad Browser is developed to minimize tracking and fingerprinting.
+www-client/mullvad-browser-bin 15.0.3: The Mullvad Browser is developed to minimize tracking and fingerprinting.
 www-client/nyxt 3.11.8 3.12.0 9999: Nyxt - the hacker's power-browser
 www-client/torbrowser-launcher 0.3.9: A program to help you securely download and run Tor Browser
 www-client/vimb 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
@@ -2019,7 +2019,7 @@ x11-misc/xob 0.2 0.3: A lightweight overlay volume (or anything) bar for the X W
 x11-misc/xsecurelock 1.9.0: X11 screen lock utility with security in mind
 x11-plugins/purple-mm-sms 0.1.7: Purple SMS plugin using ModemManager
 x11-terms/dmd5620 2.1.0: GTK+ 3.0 implementation of an AT&T / Teletype DMD 5620 emulator.
-x11-terms/rio 0.2.35: A hardware-accelerated GPU terminal emulator powered by WebGPU
+x11-terms/rio 0.2.36: A hardware-accelerated GPU terminal emulator powered by WebGPU
 x11-terms/tabby-bin 1.0.221: A terminal for a more modern age
 x11-terms/terminal-simulator 0.2 9999-r1: VT100 and VT52 terminal hardware simulator
 x11-terms/tym 3.5.1-r2: Lua-configurable terminal emulator
@@ -2045,7 +2045,7 @@ x11-themes/midnight 9999: Dark GTK-2, GTK-3, Gnome Shell, Cinnamon & Xfwm4 theme
 x11-themes/neonly-cursor 1.0.0 2.0.0: Cursor theme using a custom color palette inspired by boreal colors
 x11-themes/nordzy-cursors 2.3.0: Cursor theme using the Nord color palette and based on Vimix and cz-Viator
 x11-themes/obsidian-icon-theme 4.15-r1 9999: Obsidian Icon Theme is intuitive Faenza-like icon theme
-x11-themes/obsidian2-gtk-theme 2.24 9999: Obsidian Gnome Theme, based upon Adwaita-Maia dark skin
+x11-themes/obsidian2-gtk-theme 2.25 9999: Obsidian Gnome Theme, based upon Adwaita-Maia dark skin
 x11-themes/papirus-claws-mail-theme 0_pre20181023 0_pre20201019: Papirus icon theme for Claws Mail
 x11-themes/phosh-wallpapers 0.41.0 0.42.0: Phosh wallpapers and other artwork
 x11-themes/pop-icon-theme 3.5.0: System76 Pop icon theme for Linux
