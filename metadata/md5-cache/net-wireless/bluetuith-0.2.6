@@ -1,0 +1,15 @@
+BDEPEND=>=dev-lang/go-1.20:= app-arch/unzip
+DEFINED_PHASES=compile install prepare test unpack
+DESCRIPTION=A TUI bluetooth manager for Linux written in Go
+EAPI=8
+HOMEPAGE=https://bluetuith-org.github.io/bluetuith/
+INHERIT=go-module
+IUSE=doc
+KEYWORDS=~amd64 ~arm64
+LICENSE=Apache-2.0 BSD-2 BSD MIT
+RDEPEND=net-wireless/bluez
+RESTRICT=test
+SLOT=0
+SRC_URI=https://github.com/bluetuith-org/bluetuith/archive/v0.2.6.tar.gz -> bluetuith-0.2.6.tar.gz https://github.com/rahilarious/gentoo-distfiles/releases/download/bluetuith-0.2.6/deps.tar.xz -> bluetuith-0.2.6-deps.tar.xz https://github.com/bluetuith-org/bluetuith/archive/1b0523eeb344b70b0511bb65a442f21b8a33b65f.tar.gz -> bluetuith-docs-1b0523eeb344b70b0511bb65a442f21b8a33b65f.tar.gz
+_eclasses_=multiprocessing	1e32df7deee68372153dca65f4a7c21f	toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	go-env	0e2babf96e7d0b045fc07ad199eb2399	go-module	d96f2a2fd6d8fbad6d94516bf238f885
+_md5_=6e02210e14ee73c8570a467122ccff52
