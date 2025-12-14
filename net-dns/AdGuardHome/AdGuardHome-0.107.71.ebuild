@@ -8,11 +8,11 @@ inherit fcaps go-module readme.gentoo-r1 systemd
 DESCRIPTION="Network-wide ads & trackers blocking DNS server like Pi-Hole with web ui"
 HOMEPAGE="https://github.com/AdguardTeam/AdGuardHome/"
 
-WIKI_COMMIT="ad09f2b"
+WIKI_COMMIT="da0097b"
 SRC_URI="
-	https://github.com/AdguardTeam/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
+	https://github.com/AdguardTeam/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz
 	https://github.com/rahilarious/gentoo-distfiles/releases/download/${P}/deps.tar.xz -> ${P}-deps.tar.xz
-	https://github.com/rahilarious/gentoo-distfiles/releases/download/${PN}-0.107.57/wiki.tar.xz -> ${PN}-wiki-${WIKI_COMMIT}.tar.xz
+	https://github.com/rahilarious/gentoo-distfiles/releases/download/${P}/wiki.tar.xz -> ${PN}-wiki-${WIKI_COMMIT}.tar.xz
 	web? ( https://github.com/AdguardTeam/AdGuardHome/releases/download/v${PV}/AdGuardHome_frontend.tar.gz -> ${P}-web.tar.gz )
 "
 
@@ -133,7 +133,7 @@ src_install() {
 	einstalldocs
 	readme.gentoo_create_doc
 
-	systemd_newunit "${FILESDIR}"/AdGuardHome-0.107.57.service "${PN}".service
+	systemd_newunit "${FILESDIR}"/AdGuardHome-0.107.63.service "${PN}".service
 }
 
 pkg_postinst() {

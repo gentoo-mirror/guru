@@ -1,4 +1,4 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -6,20 +6,17 @@ EAPI=8
 inherit go-module
 
 DESCRIPTION="A TUI bluetooth manager for Linux written in Go"
-HOMEPAGE="https://darkhz.github.io/bluetuith"
-
-# MAKE SURE to change these on every update
-[[ ${PV} != 9999* ]] && \
-GIT_COMMIT="ffe8681"
-GIT_DOCUMENTATION_COMMIT="3b2ebf5a6bc8a9ed2dc48e1fa7f0df5851ddb84b"
+HOMEPAGE="https://bluetuith-org.github.io/bluetuith/"
 
 if [[ ${PV} == 9999* ]]; then
 	inherit git-r3
-	EGIT_REPO_URI="https://github.com/darkhz/bluetuith.git"
+	EGIT_REPO_URI="https://github.com/bluetuith-org/bluetuith.git"
 else
-	SRC_URI="https://github.com/darkhz/bluetuith/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+	GIT_COMMIT="5aea8bf"
+	GIT_DOCUMENTATION_COMMIT="1b0523eeb344b70b0511bb65a442f21b8a33b65f"
+	SRC_URI="https://github.com/bluetuith-org/bluetuith/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 	SRC_URI+=" https://github.com/rahilarious/gentoo-distfiles/releases/download/${P}/deps.tar.xz -> ${P}-deps.tar.xz"
-	SRC_URI+=" https://github.com/darkhz/bluetuith/archive/${GIT_DOCUMENTATION_COMMIT}.tar.gz -> ${PN}-docs-${GIT_DOCUMENTATION_COMMIT}.tar.gz"
+	SRC_URI+=" https://github.com/bluetuith-org/bluetuith/archive/${GIT_DOCUMENTATION_COMMIT}.tar.gz -> ${PN}-docs-${GIT_DOCUMENTATION_COMMIT}.tar.gz"
 	KEYWORDS="~amd64 ~arm64"
 fi
 
@@ -48,10 +45,14 @@ src_unpack() {
 
 		go-module_live_vendor
 	else
-		go-module_src_unpack
+		default
 	fi
 }
 
+src_prepare() {
+	[[ ${PV} != 9999* ]] && { ln -sv ../vendor ./ || die ; }
+	default
+}
 src_compile() {
 	# mimicking behavior from https://github.com/darkhz/bluetuith/blob/master/.goreleaser.yml
 	[[ ${PV} == 9999* ]] && GIT_COMMIT=$(git rev-parse --short HEAD)

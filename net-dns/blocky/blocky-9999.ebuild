@@ -8,7 +8,7 @@ inherit fcaps go-module systemd shell-completion
 DESCRIPTION="Fast and lightweight DNS proxy as ad-blocker with many features written in Go"
 HOMEPAGE="https://github.com/0xERR0R/blocky/"
 
-DOCUMENTATION_COMMIT=e2ada40b478f97946ef84588cafd1822b7c37c2e
+DOCUMENTATION_COMMIT=09b5d6a1441019810c62c6edea93dd6e9677eb24
 
 if [[ ${PV} == 9999* ]]; then
 	inherit git-r3

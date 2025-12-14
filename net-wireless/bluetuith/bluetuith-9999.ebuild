@@ -3,23 +3,20 @@
 
 EAPI=8
 
-inherit go-module unpacker
+inherit go-module
 
 DESCRIPTION="A TUI bluetooth manager for Linux written in Go"
-HOMEPAGE="https://darkhz.github.io/bluetuith"
-
-# MAKE SURE to change these on every update
-[[ ${PV} != 9999* ]] && \
-GIT_COMMIT="5780d74"
-GIT_DOCUMENTATION_COMMIT="3b2ebf5a6bc8a9ed2dc48e1fa7f0df5851ddb84b"
+HOMEPAGE="https://bluetuith-org.github.io/bluetuith/"
 
 if [[ ${PV} == 9999* ]]; then
 	inherit git-r3
-	EGIT_REPO_URI="https://github.com/darkhz/bluetuith.git"
+	EGIT_REPO_URI="https://github.com/bluetuith-org/bluetuith.git"
 else
-	SRC_URI="https://github.com/darkhz/bluetuith/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+	GIT_COMMIT="5aea8bf"
+	GIT_DOCUMENTATION_COMMIT="1b0523eeb344b70b0511bb65a442f21b8a33b65f"
+	SRC_URI="https://github.com/bluetuith-org/bluetuith/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 	SRC_URI+=" https://github.com/rahilarious/gentoo-distfiles/releases/download/${P}/deps.tar.xz -> ${P}-deps.tar.xz"
-	SRC_URI+=" https://github.com/darkhz/bluetuith/archive/${GIT_DOCUMENTATION_COMMIT}.tar.gz -> ${PN}-docs-${GIT_DOCUMENTATION_COMMIT}.tar.gz"
+	SRC_URI+=" https://github.com/bluetuith-org/bluetuith/archive/${GIT_DOCUMENTATION_COMMIT}.tar.gz -> ${PN}-docs-${GIT_DOCUMENTATION_COMMIT}.tar.gz"
 	KEYWORDS="~amd64 ~arm64"
 fi
 
@@ -33,9 +30,6 @@ IUSE="doc"
 RESTRICT="test"
 RDEPEND="
 	net-wireless/bluez
-"
-BDEPEND="
-	$(unpacker_src_uri_depends)
 "
 
 src_unpack() {
@@ -51,7 +45,7 @@ src_unpack() {
 
 		go-module_live_vendor
 	else
-		unpacker_src_unpack
+		default
 	fi
 }
 
