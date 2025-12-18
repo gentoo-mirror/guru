@@ -3,15 +3,15 @@
 
 EAPI=8
 
-RUST_MIN_VER="1.85.0"
+RUST_MIN_VER="1.88.0"
 LLVM_OPTIONAL=1
 LLVM_COMPAT=( {18..21} )
 
 inherit cargo llvm-r2 optfeature
 
-DESCRIPTION="A feature-rich and resource-friendly replacement for i3status, written in Rust."
+DESCRIPTION="Feature-rich and resource-friendly replacement for i3status, written in Rust"
 HOMEPAGE="https://github.com/greshake/i3status-rust/"
-SRC_URI="${CARGO_CRATE_URIS}
+SRC_URI="
 	https://github.com/greshake/i3status-rust/archive/refs/tags/v${PV}.tar.gz -> ${P}.gh.tar.gz
 	https://home.cit.tum.de/~salu/distfiles/${P}-crates.tar.xz
 	https://home.cit.tum.de/~salu/distfiles/${P}-man.1
@@ -30,7 +30,8 @@ KEYWORDS="~amd64"
 IUSE="notmuch pipewire pulseaudio"
 REQUIRED_USE="pipewire? ( ${LLVM_REQUIRED_USE} )"
 
-DEPEND="dev-libs/openssl:=
+DEPEND="
+	dev-libs/openssl:=
 	sys-apps/lm-sensors:=
 	notmuch? ( net-mail/notmuch:= )
 	pulseaudio? ( media-libs/libpulse )
@@ -42,7 +43,7 @@ BDEPEND="
 	pipewire? ( $(llvm_gen_dep 'llvm-core/clang:${LLVM_SLOT}') )
 "
 
-PATCHES="${FILESDIR}"/gitless-hash-and-date.patch
+PATCHES=( "${FILESDIR}"/${P}-gitless.patch )
 
 QA_FLAGS_IGNORED="usr/bin/i3status-rs"
 
@@ -55,8 +56,8 @@ pkg_setup() {
 
 src_prepare() {
 	default
-	local COMMIT="db4db28eda9bbf8b7fc61ddad65a00207be9368b"
-	local DATE="2025-07-05"
+	local COMMIT="b5433fde865496a1b70c0d74ee7a7d37f64f4f73"
+	local DATE="2025-12-15"
 	sed -e "s/%COMMIT%/${COMMIT:0:9}/" -e "s/%DATE%/${DATE}/" \
 		-i build.rs || die
 }
