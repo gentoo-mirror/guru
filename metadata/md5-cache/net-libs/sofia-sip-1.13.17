@@ -6,11 +6,11 @@ EAPI=8
 HOMEPAGE=https://github.com/freeswitch/sofia-sip
 INHERIT=autotools
 IUSE=debug doc +glib test
-KEYWORDS=~alpha ~amd64 ~arm ~arm64 ~ppc ~ppc64 ~sparc ~x86 ~x86-linux
+KEYWORDS=~alpha ~amd64 ~arm ~arm64 ~ppc ~ppc64 ~sparc ~x86
 LICENSE=LGPL-2.1+ BSD public-domain
 RDEPEND=dev-libs/openssl:= virtual/zlib:= glib? ( dev-libs/glib:2 )
 RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://github.com/freeswitch/sofia-sip/archive/refs/tags/v1.13.17.tar.gz -> sofia-sip-1.13.17.tar.gz
 _eclasses_=gnuconfig	ddeb9f8caff1b5f71a09c75b7534df79	toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	libtool	c81bd096be5f4c82f4e8f156ef112402	autotools	955b29ccd82c1df4755e5f37748d2fa6
-_md5_=596c611f09f65cf023a07f2b699daf4c
+_md5_=2e22b4534a986999c303b067c69b7bf4
