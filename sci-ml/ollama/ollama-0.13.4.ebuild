@@ -278,6 +278,7 @@ src_configure() {
 	if use rocm; then
 		mycmakeargs+=(
 			-DCMAKE_HIP_ARCHITECTURES="$(get_amdgpu_flags)"
+            -DAMDGPU_TARGETS="$(get_amdgpu_flags)"
 			-DCMAKE_HIP_PLATFORM="amd"
 		)
 
