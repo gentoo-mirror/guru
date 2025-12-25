@@ -10,15 +10,14 @@ inherit desktop optfeature xdg
 DESCRIPTION="Password Manager"
 HOMEPAGE="https://1password.com"
 SRC_URI="
-	amd64? ( https://downloads.1password.com/linux/tar/stable/x86_64/${PN}-${PV}.x64.tar.gz -> ${P}-amd64.tar.gz )
-	arm64? ( https://downloads.1password.com/linux/tar/stable/aarch64/${PN}-${PV}.arm64.tar.gz -> ${P}-arm64.tar.gz )"
+	amd64? ( https://downloads.1password.com/linux/tar/stable/x86_64/${P}.x64.tar.gz -> ${P}-amd64.tar.gz )
+	arm64? ( https://downloads.1password.com/linux/tar/stable/aarch64/${P}.arm64.tar.gz -> ${P}-arm64.tar.gz )"
 
 S="${WORKDIR}"
 LICENSE="all-rights-reserved"
 SLOT="0"
 
 KEYWORDS="~amd64 ~arm64"
-IUSE="policykit"
 RESTRICT="bindist mirror strip"
 
 DEPEND="
@@ -28,11 +27,6 @@ DEPEND="
 RDEPEND="${DEPEND}"
 
 QA_PREBUILT="/opt/1Password/*"
-
-src_prepare() {
-	default
-	xdg_environment_reset
-}
 
 src_install() {
 	dodir /opt/1Password
@@ -58,30 +52,22 @@ src_install() {
 	dosym -r /opt/1Password/1password /usr/bin/1password
 	dosym -r /opt/1Password/op-ssh-sign /usr/bin/op-ssh-sign
 
-	dosym -r /opt/1Password/resources/1password.desktop /usr/share/applications/1password.desktop
+	domenu /opt/1Password/resources/1password.desktop
 	newicon "${ED}/opt/1Password/resources/icons/hicolor/512x512/apps/1password.png" "${PN}.png"
 
 	dodoc "${ED}/opt/1Password/resources/custom_allowed_browsers"
+
+	# chrome-sandbox requires the setuid bit to be specifically set.
+	# See https://github.com/electron/electron/issues/17972
+	fperms 4755 /opt/1Password/chrome-sandbox
+
+	# This gives no extra permissions to the binary. It only hardens it against environmental tampering.
+	chgrp 1password "${ED}/opt/1Password/1Password-BrowserSupport" || die "Failed to change group of 1Password-BrowserSupport"
+	fperms g+s "/opt/1Password/1Password-BrowserSupport"
 }
 
 pkg_postinst() {
-	# chrome-sandbox requires the setuid bit to be specifically set.
-	# See https://github.com/electron/electron/issues/17972
-	chmod 4755 "${EROOT}"/opt/1Password/chrome-sandbox
-
-	# This gives no extra permissions to the binary. It only hardens it against environmental tampering.
-	chgrp 1password "${EROOT}"/opt/1Password/1Password-BrowserSupport
-	chmod g+s "${EROOT}"/opt/1Password/1Password-BrowserSupport
-
 	xdg_pkg_postinst
 
-	if [[ -z ${REPLACING_VERSIONS} ]]; then
-		optfeature "1Password CLI" app-admin/op-cli-bin
-	fi
-}
-
-pkg_postrm() {
-	xdg_icon_cache_update
-	xdg_desktop_database_update
-	xdg_mimeinfo_database_update
+	optfeature "1Password CLI" app-misc/1password-cli
 }
