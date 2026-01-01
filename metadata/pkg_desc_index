@@ -141,7 +141,7 @@ app-backup/timeshift 23.07.1: A system restore utility for Linux
 app-backup/timeshift-autosnap 0.9-r1: Automatically creates a timeshift-snapshot when executed
 app-benchmarks/k6 1.4.2: Load testing tool
 app-benchmarks/kdiskmark 3.2.0: Disk benchmarking tool
-app-benchmarks/occt-bin 15.0.7: All-in-one stability, stress test, benchmark and monitoring tool
+app-benchmarks/occt-bin 15.0.13: All-in-one stability, stress test, benchmark and monitoring tool
 app-benchmarks/phoronix-test-suite 10.8.4-r1 9999: Phoronix's comprehensive, cross-platform testing and benchmark suite
 app-benchmarks/poop 0.5.0 9999: Performance Optimizer Observation Platform
 app-benchmarks/unigine-superposition 1.1: Game like benchmark (CPU, GPU), for ~5 minutes
@@ -278,6 +278,7 @@ app-misc/macchina 6.4.0: A system information fetcher with an emphasis on perfor
 app-misc/mangadesk 0.7.7 0.7.8: Terminal Client for MangaDex
 app-misc/mat2 0.13.5 0.14.0: Metadata Anonymisation Toolkit: handy tool to trash your metadata
 app-misc/metadata-cleaner 2.5.6: Python GTK application to view and clean metadata in files, using mat2.
+app-misc/metetch 0.5.4: Fast system information display utility with modular customizable features
 app-misc/minder 1.16.2 1.16.3: Mind-mapping application for Elementary OS.
 app-misc/mirafetch 0.2.0 9999: A Rust reimplementation of Hyfetch wih a focus on speed
 app-misc/morgen 3.6.10: Morgen simplifies time management by consolidating all your calendars.
@@ -300,6 +301,7 @@ app-misc/proctl 1.5 9999: small C program that can control processes
 app-misc/pueue 4.0.0 4.0.2: A cli tool for managing long running shell commands.
 app-misc/qman 1.4.2 1.5.0 9999: A more modern manual page viewer for our terminals
 app-misc/rememberthemilk 1.3.11-r1: Freemium simple to-do tasks manager
+app-misc/riverql 0.2.4: GraphQL bridge and CLI client for the River Wayland compositor
 app-misc/s6-man 9999: mdoc versions of the HTML documentation for the s6 supervision suite
 app-misc/scooter 0.8.4: Interactive find-and-replace in the terminal
 app-misc/sherlock 0.15.0 9999: Hunt down social media accounts by username across social networks
@@ -526,12 +528,12 @@ dev-embedded/freertos-gdb 1.0.4: Python module for operating with freeRTOS-kerne
 dev-embedded/fwup 1.12.0 1.13.0 1.13.1 1.13.2 1.14.0: Configurable embedded Linux firmware update creator and runner
 dev-embedded/idf-component-manager 2.1.2 2.2.2: Tool for installing ESP-IDF components
 dev-embedded/mv88e6xxx-dump 0.2.0_pre20210327: Dump information about Marvell mv88e6xxx Ethernet switches
-dev-embedded/nxp-gui-guider 1.7.2-r1: GUI Guider is a user-friendly GUI development tool for LVGL
+dev-embedded/nxp-gui-guider 1.10.1: GUI Guider is a user-friendly GUI development tool for LVGL
 dev-embedded/pico-sdk 2.1.1 2.2.0: Libraries and tools for C/C++ development on RP2040 and RP2350 microcontrollers.
 dev-embedded/qdl 2.2 9999: Tool to communicate with Qualcomm System On a Chip bootroms
 dev-embedded/rauc 1.15: Lightweight update client that runs on your Embedded Linux device
 dev-embedded/rpi-openocd 9999: OpenOCD - Open On-Chip Debugger (Raspberry Pi Fork)
-dev-embedded/squareline-studio 1.3.2: Visual drag-and-drop UI editor for LVGL
+dev-embedded/squareline-studio 1.5.4: Visual drag-and-drop UI editor for LVGL
 dev-erlang/conf 0.2.6: YAML configuration for Erlang applications
 dev-erlang/cowboy 2.9.0: Small, fast, modern HTTP server for Erlang/OTP.
 dev-erlang/cowlib 2.11.0: Support library for manipulating Web protocols.
@@ -1003,6 +1005,7 @@ dev-util/catalyst-lab 1.6.0 1.6.1: An automation tool for building Gentoo releas
 dev-util/catppuccin-catwalk 1.3.2: Soothing pastel previews for the high-spirited!
 dev-util/catppuccin-whiskers 2.4.0: Soothing port creation tool for the high-spirited!
 dev-util/cmakelang 0.6.13: Provides Quality Assurance (QA) tools for cmake
+dev-util/codex 0.77.0: Codex CLI - OpenAI's AI-powered coding agent
 dev-util/coq-lsp 0.1.9: Visual Studio Code Extension and Language Server Protocol for Coq
 dev-util/deblob 0.11 0.12 9999: remove binary executables from a directory
 dev-util/distribution-gpg-keys 1.115: Collection of GPG keys used in Linux Distributions
@@ -1019,7 +1022,7 @@ dev-util/fnm 1.38.1: Fast and simple Node.js version manager
 dev-util/fortls 2.13.0 3.0.0 3.1.1 3.1.2 3.2.2: Fortran Language Server (fortls)
 dev-util/fortran-test-drive 0.4.0 0.5.0: The simple testing framework (for Fortran)
 dev-util/gammaray 3.1.0 3.3.0 3.3.1: High-level runtime introspection tool for Qt applications
-dev-util/gemini-cli 0.20.0: Gemini CLI - a command-line AI workflow tool by Google
+dev-util/gemini-cli 0.22.2: Gemini CLI - a command-line AI workflow tool by Google
 dev-util/genTree 0.1.0 9999: Gentoo rootfs tree generator
 dev-util/gersemi 0.24.0: A formatter to make your CMake code the real treasure
 dev-util/git-bug 0.10.1 9999: distributed, offline-first bug tracker
@@ -1049,7 +1052,7 @@ dev-util/mise 2025.10.10-r3 2025.10.14: The front-end to your dev env
 dev-util/mock 6.5 6.6: Simple chroot build environment manager for building RPMs
 dev-util/mock-core-configs 43.3: Mock core config files basic chroots
 dev-util/neocmakelsp 0.9.0: Another CMake LSP
-dev-util/nvchecker 2.19: New version checker for software releases
+dev-util/nvchecker 2.19 2.20: New version checker for software releases
 dev-util/ocamlformat 0.26.2 0.26.2-r1: Auto-formatter for OCaml code
 dev-util/ocp-indent 1.8.2: Indentation tool for OCaml, to be used from editors like Emacs and Vim.
 dev-util/pcpp 1.30: A C99 preprocessor written in pure Python
@@ -1091,6 +1094,7 @@ dev-vcs/gitahead 2.7.1 2.7.1-r1: Graphical Git client to help understand and man
 dev-vcs/gitqlient 1.6.2 1.6.3 9999: Multi-platform Git client written with Qt
 dev-vcs/lazygit 0.54.2 0.55.0 0.55.1 0.56.0 0.57.0 9999: Simple terminal UI for git commands
 dev-vcs/lazyjj 0.6.1: TUI for Jujutsu/jj
+dev-vcs/llm-git 0.1.2-r1: AI-powered git commit message generator using LLMs
 dev-vcs/pijul 1.0.0_beta9: A distributed version control system based on a theory of patches
 dev-zig/zls 0.10.0-r2 0.13.0-r1 0.14.0 0.15.0 9999: Non-official language server for Zig
 games-action/ATLauncher 3.4.40.1: Minecraft launcher which integrates multiple different ModPacks
@@ -1184,6 +1188,7 @@ gnome-extra/extension-manager 0.6.3-r1 0.6.5 9999: A native tool for browsing, i
 gnome-extra/iio-sensor-proxy 3.7 3.8: IIO sensors to D-Bus proxy
 gnome-extra/junction 1.7-r1: Application/browser chooser
 gnome-extra/nautilus-open-any-terminal 0.7.0: A Nautilus extension that adds a context-entry for opening any terminal
+gnome-extra/palette 3.0.0: Colour Palette tool
 gnome-extra/portfolio 0.9.14: A minimalist file manager for those who want to use Linux mobile devices
 gnome-extra/vvmplayer 1.4-r1: Visual Voicemail Player
 gnome-extra/wike 3.1.1 3.1.3: Wikipedia Reader for the GNOME Desktop
@@ -1247,6 +1252,7 @@ gui-apps/lemurs 0.3.2: A TUI Display/Login Manager
 gui-apps/lswt 1.0.4-r1 2.0.0 9999: List Wayland toplevels
 gui-apps/meteo-qt 4.1 4.2: A system tray application for the weather status
 gui-apps/mpvpaper 1.8 9999: A video wallpaper program for wlroots based wayland compositors
+gui-apps/noctalia-shell 3.7.5: Noctalia Configuration for Quickshell
 gui-apps/nwg 0: meta package package for nwg-shell
 gui-apps/nwg-bar 0.1.5 0.1.6: GTK3-based button bar for wlroots-based compositors
 gui-apps/nwg-clipman 0.2.4-r1 0.2.5: nwg-shell clipboard manager - a GTK3-based GUI for cliphist
@@ -1438,7 +1444,7 @@ media-radio/fllog 1.2.8: Logbook application for amateur radio use
 media-sound/6pm 0.9: 6PM is a polyphonic, touch-sensitive, realtime phase modulation synthesizer
 media-sound/Tauon 8.2.1 8.2.2 8.2.3 9999: The desktop music player of today!
 media-sound/add64 3.8.0 3.9.3: Add64 is a realtime additive/subtractive-synthesis softsynth
-media-sound/aimp 6.00.3017_alpha4 6.00.3021_alpha5 6.00.3027_alpha6: AIMP - Free Audio Player
+media-sound/aimp 6.00.3017_alpha4 6.00.3021_alpha5 6.00.3027_alpha6 6.00.3028_alpha7: AIMP - Free Audio Player
 media-sound/amberol 2024.2: Simple GUI Music Player
 media-sound/bespokesynth 1.2.1 1.3.0: Software modular synth
 media-sound/callaudiod 0.1.10 0.1.99: Call audio routing daemon
@@ -1464,7 +1470,7 @@ media-sound/mousai 0.7.9: Identify songs in seconds
 media-sound/mpd-mpris 0.3.1 0.4.0 0.4.1: An implementation of the MPRIS protocol for MPD.
 media-sound/mpvc 1.1.4-r1: mpc-like tool which connects to existing mpv instances through sockets.
 media-sound/musikcube 3.0.2 3.0.4: Excellent terminal music player, support almost every known sound system.
-media-sound/neocrystal 1.5.2 9999: A terminal user interface music player in Rust
+media-sound/neocrystal 2.1.1 9999: A terminal user interface music player in Rust
 media-sound/netcat-cpi 2014.04.29-r1: Kernel module edition of the Cycles Per Instruction (2014) album
 media-sound/noson-app 5.6.6-r1 5.6.8: The essential to control music from your SONOS devices on Linux platforms
 media-sound/nuclear-bin 0.6.30: Nuclear is a streaming program that pulls content from free sources on internet
@@ -1489,7 +1495,7 @@ media-sound/spotube-bin 3.8.0: An open source, cross-platform Spotify client
 media-sound/supersonic 0.17.0 0.18.1 0.19.0: A lightweight and full-featured cross-platform desktop client
 media-sound/tenacity 1.3.4-r4: Easy-to-use, privacy-friendly, FLOSS, cross-platform multi-track audio editor
 media-sound/tidal-hifi-bin 5.16.0-r1 5.17.0: Web version of Tidal running in electron with Hi-Fi support thanks to Widevine.
-media-sound/yandex-music 5.78.7 5.79.7 5.81.4: Yandex Music streaming service
+media-sound/yandex-music 5.78.7 5.79.7 5.81.4 5.82.0: Yandex Music streaming service
 media-sound/yewtube 2.12.0 9999: Terminal-based YouTube player and downloader
 media-sound/ymuse 0.22: GTK client for Music Player Daemon (MPD) written in Go
 media-sound/youtube-music-bin 3.10.0 3.11.0: YouTube Music Desktop App bundled with custom plugins
@@ -1844,7 +1850,7 @@ sys-apps/colortail 0.3.3 9999: tail command with colors
 sys-apps/coolercontrol 3.0.2: Monitor and control your cooling and other devices
 sys-apps/coolercontrold 3.0.2: Monitor and control your cooling and other devices (daemon)
 sys-apps/corefreq 2.0.8 2.0.9: CPU monitoring and tuning software designed for 64-bit processors
-sys-apps/deepcool-digital-linux 0.10.1: Linux version for the DeepCool Digital Windows software.
+sys-apps/deepcool-digital-linux 0.10.1 0.10.2: Linux version for the DeepCool Digital Windows software.
 sys-apps/dnf5 5.3.0.0: Command-line package manager
 sys-apps/dool 1.3.1-r1 1.3.2-r2 9999: Versatile replacement for vmstat, iostat and ifstat (clone of dstat)
 sys-apps/drm_info 2.8.0 2.9.0: Small utility to dump info about DRM devices
@@ -1894,7 +1900,7 @@ sys-devel/clang-bloomberg-p2996 21.0.0_p20250702 9999: Clang fork implementing e
 sys-devel/fcode-utils 1.0.3: Set of utilities to process FCODE, OpenFirmware's byte code
 sys-devel/lcc 2021.01.11-r1: The lcc retargetable ANSI C compiler
 sys-firmware/lenovolegionlinux 9999: Lenovo Legion Linux kernel module
-sys-fs/bcachefs-kmod 1.33.2: Linux bcachefs kernel module for sys-fs/bcachefs-tools
+sys-fs/bcachefs-kmod 1.33.3: Linux bcachefs kernel module for sys-fs/bcachefs-tools
 sys-fs/btrd 0.5.4: The btrfs debugger
 sys-fs/btrfs-dump 20250918: Metadata dumper for btrfs
 sys-fs/btrfs-heatmap 9-r1: Python 3 script to draw a heatmap of a btrfs filesystem
@@ -1982,7 +1988,7 @@ www-misc/libkiwix 14.0.0: Kiwix software suite core: code shared by all Kiwix po
 www-misc/waldl 0.0.1_pre20211112: Browse and download wallpapers from wallhaven.cc using sxiv
 www-misc/wyebadblock 1.0.0_p20230211: An adblock extension for wyeb, also webkit2gtk browsers.
 www-plugins/firefoxpwa 2.15.0 2.17.1 2.17.2: A tool to install, manage and use PWAs in Mozilla Firefox (native component)
-www-servers/copyparty 1.19.23: Easy-to-use, feature-packed, protable file server
+www-servers/copyparty 1.19.23-r3: Easy-to-use, feature-packed, protable file server
 www-servers/hinsightd 0.9.17 9999: hinsightd a http/1.1 webserver with (hopefully) minimal goals
 www-servers/quark 0_pre20220817 9999: A small, GET-only static HTTP server
 x11-apps/lightdm-gtk-greeter-settings 1.2.2-r3: Configuration tool for the LightDM GTK Greeter

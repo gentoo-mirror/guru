@@ -1,0 +1,11 @@
+DEFINED_PHASES=install postinst unpack
+DESCRIPTION=Noctalia Configuration for Quickshell
+EAPI=8
+HOMEPAGE=https://github.com/noctalia-dev/noctalia-shell
+IUSE=cliphist cava wlsunset xdg-desktop-portal evolution-data-server polkit-kde-agent matugen xwayland
+KEYWORDS=~amd64
+LICENSE=MIT
+RDEPEND=gui-apps/quickshell media-video/gpu-screen-recorder app-misc/brightnessctl cliphist? ( app-misc/cliphist ) cava? ( media-sound/cava ) wlsunset? ( gui-apps/wlsunset ) xdg-desktop-portal? ( sys-apps/xdg-desktop-portal ) evolution-data-server? ( gnome-extra/evolution-data-server ) polkit-kde-agent? ( kde-plasma/polkit-kde-agent ) matugen? ( x11-misc/matugen ) xwayland? ( gui-apps/xwayland-satellite )
+SLOT=0
+SRC_URI=https://github.com/noctalia-dev/noctalia-shell/releases/download/v3.7.5/noctalia-v3.7.5.tar.gz
+_md5_=1947cd3d67e324e794810400e7c03594
