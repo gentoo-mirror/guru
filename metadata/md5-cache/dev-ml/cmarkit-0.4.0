@@ -1,0 +1,15 @@
+DEFINED_PHASES=compile install
+DEPEND=>=dev-lang/ocaml-4.14.0:= dev-ml/findlib dev-ml/ocamlbuild dev-ml/topkg >=dev-ml/result-1.5:=[ocamlopt?] >=dev-ml/findlib-1.0.4-r1[ocamlopt?]
+DESCRIPTION=Cmarkit parses the CommonMark specification
+EAPI=8
+HOMEPAGE=https://erratique.ch/software/cmarkit
+INHERIT=findlib
+IUSE=+ocamlopt +ocamlopt
+KEYWORDS=~amd64
+LICENSE=ISC
+RDEPEND=>=dev-lang/ocaml-4.14.0:= dev-lang/ocaml:=[ocamlopt?]
+RESTRICT=test
+SLOT=0/0.4.0
+SRC_URI=https://github.com/dbuenzli/cmarkit/archive/v0.4.0.tar.gz -> cmarkit-0.4.0.gh.tar.gz
+_eclasses_=findlib	49d5365fca4dea46f13825b9d763c89e
+_md5_=5a7c1718b9b06a4eb32c103fbd615cba
