@@ -1,0 +1,15 @@
+BDEPEND=dev-util/bpftool llvm-core/clang >=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array
+DEFINED_PHASES=compile configure install test
+DEPEND=dev-libs/cJSON dev-libs/libbpf
+DESCRIPTION=Externally bind or mark sockets on the fly
+EAPI=8
+HOMEPAGE=https://codeberg.org/iguanajuice/flypaper
+INHERIT=meson
+IUSE=systemd
+KEYWORDS=~amd64
+LICENSE=GPL-3
+RDEPEND=dev-libs/cJSON dev-libs/libbpf
+SLOT=0
+SRC_URI=https://codeberg.org/iguanajuice/flypaper/archive/v0.4.0.tar.gz -> flypaper-0.4.0.tar.gz
+_eclasses_=toolchain-funcs	30214924c0c3b92ec7dbf24fc70d60d3	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	3a59a39e97af0f7c03f49cf3c22f262b	python-utils-r1	dbb8c4d794033ad7e7221eaf567a6c90	meson	99e6a34d0f7039439dad788f7443b574
+_md5_=35a186cf093384ee7fe4b3f177163a6d

@@ -1,0 +1,16 @@
+BDEPEND=lto? ( !custom-cflags? ( llvm-core/clang llvm-core/lld ) ) !static? ( virtual/pkgconfig ) || ( >=dev-lang/rust-bin-1.74.1:* >=dev-lang/rust-1.74.1:* )
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup test unpack
+DEPEND=!static? ( app-arch/zstd:= app-arch/xz-utils:= dev-libs/openssl:= )
+DESCRIPTION=A tool to install, manage and use PWAs in Mozilla Firefox (native component)
+EAPI=8
+HOMEPAGE=https://pwasforfirefox.filips.si/
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=cargo desktop flag-o-matic shell-completion toolchain-funcs xdg
+IUSE=custom-cflags lto static debug
+KEYWORDS=~amd64 ~arm64
+LICENSE=MPL-2.0 Apache-2.0 BSD-2 BSD ISC MIT MPL-2.0 UoI-NCSA Unicode-3.0 ZLIB
+RDEPEND=!static? ( app-arch/zstd:= app-arch/xz-utils:= dev-libs/openssl:= )
+SLOT=0
+SRC_URI=https://github.com/filips123/PWAsForFirefox/archive/v2.18.0.tar.gz -> firefoxpwa-2.18.0.tar.gz https://github.com/filips123/PWAsForFirefox/releases/download/v2.18.0/firefoxpwa-2.18.0-crates.tar.xz https://github.com/filips123/WebAppManifestRS/archive/c3329f3378a0039c96bd2b3f32529ea6b438c350.tar.gz -> WebAppManifestRS-c3329f3378a0039c96bd2b3f32529ea6b438c350.gh.tar.gz https://github.com/filips123/mime/archive/e3e2e55459d2989a3f4699566ff8f203a8720add.tar.gz -> mime-e3e2e55459d2989a3f4699566ff8f203a8720add.gh.tar.gz https://github.com/filips123/mime/archive/e3e2e55459d2989a3f4699566ff8f203a8720add.tar.gz -> mime-e3e2e55459d2989a3f4699566ff8f203a8720add.gh.tar.gz
+_eclasses_=toolchain-funcs	30214924c0c3b92ec7dbf24fc70d60d3	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	rust	20da14430886f3de143eb101684fcf62	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	aeba1d272f6c2e000912e11d8cf626eb	desktop	7b6f6e9d65093966fbc8475399c5dd4e	bash-completion-r1	767861f3744f589ee5291c1698b1c082	shell-completion	0b655d0d825e157a5e99c463bddaac16	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575
+_md5_=00129e4620fb4e72487ee7dceede644f
