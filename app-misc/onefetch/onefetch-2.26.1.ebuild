@@ -3,7 +3,7 @@
 
 EAPI=8
 
-RUST_MIN_VER="1.82.0"
+RUST_MIN_VER="1.88.0"
 
 inherit cargo shell-completion
 
@@ -15,7 +15,7 @@ SRC_URI="https://github.com/o2sh/onefetch/archive/refs/tags/${PV}.tar.gz -> ${P}
 "
 LICENSE="MIT"
 # Dependent crate licenses
-LICENSE+=" Apache-2.0 BSD ISC MPL-2.0 Unicode-3.0 ZLIB"
+LICENSE+=" Apache-2.0 BSD ISC MIT MPL-2.0 Unicode-3.0 ZLIB"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE="test"
