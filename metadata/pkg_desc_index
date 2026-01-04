@@ -88,7 +88,7 @@ app-admin/agru 0.1.18 0.1.19: A tool for managing GitLab groups and projects
 app-admin/akita 0.1.4: An HTTP log monitoring tool for your terminal
 app-admin/ananicy-cpp 1.1.1-r3: Ananicy rewritten in C++ for much lower CPU and memory usage
 app-admin/antidot 0.6.3: Cleans up your $HOME from those pesky dotfiles
-app-admin/aws-vault 7.2.0: Securely store and access AWS credentials in development environments
+app-admin/aws-vault 7.2.0 7.8.6: Securely store and access AWS credentials in development environments
 app-admin/blahajdots 0.6.0 9999: Bespoke dotfile management for sharkgirls.
 app-admin/boinctui 2.7.1 2.7.1-r1: Fullscreen text mode manager for the BOINC client
 app-admin/chamber 2.13.2: Managing secrets in AWS SSM Parameter Store
@@ -119,7 +119,7 @@ app-admin/ripasso 0.7.0: A password manager that uses the file format of 'pass'
 app-admin/s-tui 1.2.0 1.2.0-r1: Stress-Terminal UI monitoring tool
 app-admin/synadm 0.43.1 0.44: Command line admin tool for Synapse
 app-admin/talosctl-bin 1.7.6 1.9.5 1.10.1 1.12.0_rc0: Pre-compiled talosctl is an tool for interacting with the Talos API
-app-admin/terragrunt-bin 0.93.11: A thin wrapper for Terraform
+app-admin/terragrunt-bin 0.93.11 0.96.1: A thin wrapper for Terraform
 app-admin/tflint 0.58.0 0.60.0: Terraform linter
 app-alternatives/phosh-keyboard 2-r1: sm.puri.OSK0.desktop symlinks
 app-arch/fuse-archive 0.1.14 1.6 1.10 1.12: Read-only FUSE file system for mounting archives and compressed files
@@ -398,7 +398,7 @@ app-text/sioyek 9999: Sioyek is a PDF viewer with a focus on textbooks and resea
 app-text/smu 1.5 9999: Simple markup - markdown like syntax
 app-text/sup2srt 1.0.6_p20250518: Convert SUP graphic subtitles to text-based SRT format
 app-text/texlab 5.23.1 5.24.0: LaTeX Language Server
-app-text/tinymist 0.14.4 9999: An integrated language service for Typst.
+app-text/tinymist 0.14.6 9999: An integrated language service for Typst.
 app-text/tldr 3.3.0 3.4.1: Python command line client for tldr pages
 app-text/typst 0.14.2 9999: A markup-based typesetting system for the sciences
 app-text/typstyle 0.14.0: A beautiful and reliable code formatter for Typst
@@ -501,7 +501,7 @@ dev-db/rum 1.3.14 1.3.15: RUM access method - inverted index with additional inf
 dev-db/sqlcmd 1.8.3: The MSSQL SQLCMD CLI tool
 dev-db/tdscpp 20250301: C++ library to communicate with Microsoft SQL server
 dev-db/turso 0.3.2: Turso Database is an in-process OLTP database engine library with a CLI
-dev-debug/gdb-dashboard 0.17.3 0.17.4: Modular visual interface for GDB in Python
+dev-debug/gdb-dashboard 0.17.4-r1: Modular visual interface for GDB in Python
 dev-debug/gdbgui 0.15.2.0 0.15.2.0-r1 0.15.3.0: Browser-based frontend to gdb
 dev-debug/lldb-mi 0.0.1 9999: LLDB Machine Interface Driver
 dev-dotnet/gtk-sharp 3.22.2-r2: gtk bindings for mono
@@ -796,6 +796,8 @@ dev-python/justhtml 0.16.0: A pure Python HTML5 parser that just works.
 dev-python/kicad-python 0.5.0-r1: KiCad API Python Bindings for interacting with running KiCad sessions
 dev-python/langdetect 1.0.9: Port of Google's language-detection library to Python
 dev-python/latexify-py 0.4.3.1 0.4.4.1: Annotate Python source code to get LaTeX expressions
+dev-python/ledger-bitcoin 0.4.0: Client library for Ledger Bitcoin application
+dev-python/ledgercomm 1.2.1: Library to communicate with Ledger Nano S/X and Speculos
 dev-python/listparser 0.20: Parse OPML subscriptions in Python
 dev-python/lru-dict 1.3.0 1.4.1: Dict like LRU container
 dev-python/lsp-tree-sitter 0.1.1: A library to create language servers
@@ -951,11 +953,11 @@ dev-python/timeslot 0.1.2: Time slots/intervals with an arbitrary start and stop
 dev-python/tlv8 0.10.0: Type-Length-Value8 (TLV8) for python
 dev-python/tulir-telethon 1.37.0_alpha1 1.99.0_alpha6: Full-featured Telegram client library for Python 3
 dev-python/tweepy 4.14.0: An easy-to-use Python library for accessing the Twitter API.
-dev-python/types-protobuf 6.30.2.20250703: Typing stubs for protobuf
+dev-python/types-protobuf 6.32.1.20251210: Typing stubs for protobuf
 dev-python/types-requests 2.32.0.20240712 2.32.4.20250913: Typing stubs for requests
 dev-python/typing-inspect 0.9.0: Runtime inspection utilities for Python typing module
 dev-python/undervolt 0.4.0 9999: Undervolt Intel CPUs under Linux
-dev-python/upstream-ontologist 0.2.5 0.2.7: Tracking of upstream project metadata
+dev-python/upstream-ontologist 0.2.7 0.2.9: Tracking of upstream project metadata
 dev-python/urlmatch 1.0.1-r2: A Python library for easily pattern matching wildcard URLs
 dev-python/usb-monitor 1.23: An easy-to-use cross-platform library for USB device monitoring
 dev-python/validator-collection 1.5.0-r2: Collection of 60+ Python functions for validating data
@@ -992,6 +994,7 @@ dev-util/bc-ur 0.3.0: Blockchain Commons UR Library
 dev-util/bruno-bin 1.9.0 1.9.0-r1: Opensource IDE For Exploring and Testing Api's
 dev-util/bump-my-version 1.2.4 1.2.6: Version bump your Python project
 dev-util/cargo-post 0.1.7: A cargo wrapper that executes a post build script after a successful build.
+dev-util/cargo-show-asm 0.2.55: A cargo subcommand that displays the generated assembly of Rust source code.
 dev-util/catalyst-lab 1.6.0 1.6.1: An automation tool for building Gentoo release stages and binhost packages.
 dev-util/catppuccin-catwalk 1.3.2: Soothing pastel previews for the high-spirited!
 dev-util/catppuccin-whiskers 2.4.0: Soothing port creation tool for the high-spirited!
@@ -1070,7 +1073,7 @@ dev-util/topiary 0.7.3: CLI app for Topiary, the universal code formatter.
 dev-util/trivy 0.55.2: Vulnerability scanner for container images, file systems, and Git repos
 dev-util/typescript-language-server 4.1.2 4.3.3: TypeScript & JavaScript Language Server
 dev-util/u-config 0.34.0 9999: Lean and mean pkg-config replacement
-dev-util/upstream-ontologist 0.2.10 0.3.2: Tracking of upstream project metadata
+dev-util/upstream-ontologist 0.3.2 0.3.7: Tracking of upstream project metadata
 dev-util/vala-language-server 0.48.4: Code Intelligence for Vala & Genie
 dev-util/vscode-langservers-extracted 4.8.0 4.10.0: HTML/CSS/JSON/ESLint/Markdown language servers extracted from vscode.
 dev-util/wakatime-cli 1.27.0 1.28.6: Command line interface to WakaTime used by all WakaTime plugins
@@ -1082,7 +1085,7 @@ dev-util/yaml-language-server 1.14.0 1.15.0: Language Server for YAML Files
 dev-vcs/ghorg 1.11.0: Mass repository cloning tool for GitHub/GitLab/Bitbucket
 dev-vcs/gitahead 2.7.1 2.7.1-r1: Graphical Git client to help understand and manage source code history
 dev-vcs/gitqlient 1.6.2 1.6.3 9999: Multi-platform Git client written with Qt
-dev-vcs/lazygit 0.54.2 0.55.0 0.55.1 0.56.0 0.57.0 9999: Simple terminal UI for git commands
+dev-vcs/lazygit 0.56.0 0.57.0 0.58.0 9999: Simple terminal UI for git commands
 dev-vcs/lazyjj 0.6.1: TUI for Jujutsu/jj
 dev-vcs/llm-git 2.3.0: AI-powered git commit message generator using LLMs
 dev-vcs/pijul 1.0.0_beta9: A distributed version control system based on a theory of patches
@@ -1546,7 +1549,7 @@ net-client/castor 0.8.18 0.9.0-r1: A graphical browser for plain-text protocols
 net-client/geopard 1.7.0: GTK 4 Gemini browser written in Rust
 net-client/kristall 0.3-r2 0.4: Visual cross-platform gemini browser
 net-client/lagrange 1.19.3 1.19.4: Desktop GUI client for browsing Geminispace
-net-client/offpunk 2.6 2.7.1: Offline-First Gemini/Web/Gopher/RSS reader and browser
+net-client/offpunk 2.7.1 2.8: Offline-First Gemini/Web/Gopher/RSS reader and browser
 net-client/starfish 1.2.0 1.3.1: A Gemini browser for elementary OS
 net-client/telescope 0.10.1 0.11: w3m-like browser for Gemini
 net-dialup/atinout 0.9.1-r1: AT commands as input are sent to modem and responses given as output
@@ -1564,7 +1567,7 @@ net-im/Quaternion 0.0.97.1: A Qt-based IM client for Matrix
 net-im/WasIstLos 1.6.5 1.7.0: An unofficial WhatsApp desktop application for Linux
 net-im/abaddon 0.2.2 9999: Alternative Discord client using GTK instead of Electron
 net-im/bbctl 0.13.0: Beeper Bridge Manager
-net-im/beeper 4.1.311-r1 4.2.166: Beeper: Unified Messenger
+net-im/beeper 4.2.166 4.2.367: Beeper: Unified Messenger
 net-im/chatterino 2.5.3 2.5.4: Chat client for https://twitch.tv
 net-im/conduit 0.10.9 0.10.11 9999: Matrix homeserver written in Rust
 net-im/discord-canary-bin 0.0.821: All-in-one voice and text chat
@@ -1740,13 +1743,13 @@ net-wireless/rtl8821ce 0_pre20240326: Realtek RTL8821CE Driver module for Linux 
 net-wireless/rtl8821cu 0_pre20240821: Realtek 8821CU/RTL8811CU module for Linux kernel
 net-wireless/sdrpp 1.2.0_pre20240607: Cross-Platform SDR Software
 phosh-base/pfs 0.0.5 0.0.6: Phosh File Selector library for selecting files
-phosh-base/phosh 0.49.0 0.50.1: Meta package for Phosh, merge this package to install
+phosh-base/phosh 0.49.0 0.50.1 0.51.0: Meta package for Phosh, merge this package to install
 phosh-base/phosh-mobile-settings 0.49.0 0.50.1 0.51.0: Phosh and related settings for mobile
 phosh-base/phosh-osk-stevia 0.49.0 0.50.0 0.52.0: Alternative on screen keyboard for Phosh
 phosh-base/phosh-osk-stub 0.42.0 0.47.0: Alternative on screen keyboard for Phosh
-phosh-base/phosh-shell 0.48.0 0.49.0 0.50.1: Pure Wayland shell for mobile devices
+phosh-base/phosh-shell 0.49.0 0.50.1 0.51.0: Pure Wayland shell for mobile devices
 phosh-base/phosh-tour 0.47.0 0.50.0: Introduction to phosh on smartphones
-phosh-base/xdg-desktop-portal-phosh 0.48.0 0.49.0 0.50.0: Phosh portal backend for xdg-desktop-portal
+phosh-base/xdg-desktop-portal-phosh 0.49.0 0.50.0 0.52.0: Phosh portal backend for xdg-desktop-portal
 sci-biology/cmdock 0.2.0-r2 0.2.0-r3: Program for docking ligands to proteins and nucleic acids
 sci-biology/cytoscape-bin 3.10.4: A visualization platform for molecular interaction networks
 sci-biology/geneathome 1.10-r5: BOINC application for expanding Gene Regulatory Networks (GRN)
