@@ -445,7 +445,6 @@ RDEPEND="
 BDEPEND="
 	${PYTHON_DEPS}
 	>=dev-build/cmake-3.15
-	sys-devel/patch
 	dev-util/blueprint-compiler
 "
 
@@ -471,8 +470,8 @@ src_unpack() {
 
 src_prepare() {
 	default
-	sed -i "/cargo_env.*+=.*CARGO_HOME/d" src/meson.build
-	sed -i "/cargo_env.*+=.*CARGO_HOME/d" subprojects/magpie/meson.build
+	sed -i "/cargo_env.*+=.*CARGO_HOME/d" src/meson.build || die
+	sed -i "/cargo_env.*+=.*CARGO_HOME/d" subprojects/magpie/meson.build || die
 }
 
 src_configure() {
