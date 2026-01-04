@@ -18,66 +18,20 @@
 
 # New entries go on top.
 
+# Anna (cybertailor) Vyalkova <cyber+gentoo@sysrq.in> (2026-01-04)
+# Replaced by phosh-base/phosh-osk-stevia.
+# Removal on 2026-02-04.
+phosh-base/phosh-osk-stub
+
+# Anna (cybertailor) Vyalkova <cyber+gentoo@sysrq.in> (2026-01-03)
+# Critical security vulnerabilities.
+<net-im/conduit-0.10.11
+
 # Viorel Munteanu <ceamac@gentoo.org> (2025-12-11)
 # Unmaintained, causes a name collision with a pkgmove in ::gentoo.
 # See the associated bug for more details.
 # Removal on 2026-01-10.  Bug #967328.
 www-apps/jackett
-
-# Paul Zander <negril.nx+gentoo@gmail.com> (2025-11-25)
-# Added due to nodejs compile times unaware of binpkg option
-# Removal after 2025-12-02
-net-libs/nodejs-bin
-
-# Joe (joecool) Kappus <joe@wt.gd> (2025-11-13)
-# No maintainer, repos archived, dead homepage.
-# Removal on 2025-12-13
-net-im/axolotl-bin
-
-# Anna (cybertailor) Vyalkova <cyber+gentoo@sysrq.in> (2025-11-06)
-# Obsoleted by Invidious Companion:
-# https://docs.invidious.io/installation/#set-up-invidious-companion
-# Removal on 2025-12-06.
-net-misc/inv_sig_helper
-
-# Anna (cybertailor) Vyalkova <cyber+gentoo@sysrq.in> (2025-11-06)
-# Unmaintained Crystal library with no revdeps left.
-# Removal on 2025-12-06.
-dev-crystal/kilt
-dev-crystal/crikey
-dev-crystal/crustache
-dev-crystal/inflector
-dev-crystal/jbuilder
-dev-crystal/json_mapping
-dev-crystal/liquid
-dev-crystal/slang
-dev-crystal/temel
-dev-crystal/water
-
-# Anna (cybertailor) Vyalkova <cyber+gentoo@sysrq.in> (2025-10-27)
-# Depends on masked dev-python/rst2ansi.
-app-backup/b2
-
-# Anna (cybertailor) Vyalkova <cyber+gentoo@sysrq.in> (2025-10-27)
-# Unmaintained upstream, broken with docutils 0.22.
-# Removal on 2025-11-27
-dev-python/rst2ansi
-
-# David (stkw0) Roman <davidroman96@gmail.com> (2025-10-25)
-# Depends on removed libgit2 slot. No maintainer listed
-# Removal on 2025-11-24
-app-editors/amp
-
-# Alexey Zapparov <alexey@zapparov.com> (2025-10-18)
-# Upstream seems to be unmaintained.
-# Removal on 2025-11-18
-dev-util/fnm
-
-# Lucio Sauer <watermanpaint@posteo.net> (2025-10-17)
-# Header-only library with no revdeps and dead upstream for 3 years.
-# Fails to build w/ dev-build/cmake-4.
-# Removal on 2025-11-17
-dev-cpp/rang
 
 # David (stkw0) Roman <davidroman96@gmail.com> (2025-07-25)
 # Depends on removed pydantic version.
@@ -90,7 +44,6 @@ www-apps/whoogle-search
 
 # David (stkw0) Roman <davidroman96@gmail.com> (2025-04-30)
 # Depends on removed dev-qt/qtwebengine:5, they should be moved to qtwebengine:6
-media-video/stremio
 sci-physics/openmodelica
 
 # Vivian Heisz (demize) <demize@unstable.systems> (2025-04-20)
