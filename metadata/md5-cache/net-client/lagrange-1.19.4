@@ -1,0 +1,17 @@
+BDEPEND=app-arch/zip virtual/pkgconfig verify-sig? ( sec-keys/openpgp-keys-skyjake ) app-alternatives/ninja >=dev-build/cmake-3.28.5 verify-sig? ( || ( app-alternatives/gpg app-crypt/gnupg[-alternatives(-)] ) >=app-portage/gemato-20 )
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare test unpack
+DEPEND=>=dev-libs/tfdn-1.11.0:=[ssl] media-libs/libsdl2[X?,sound(+),video(+)] gui? ( X? ( x11-libs/libX11 ) bidi? ( dev-libs/fribidi ) harfbuzz? ( media-libs/harfbuzz:=[truetype(+)] ) jpegxl? ( media-libs/libjxl:= ) mp3? ( media-sound/mpg123-base ) opus? ( media-libs/opusfile ) webp? ( media-libs/libwebp:= ) ) ncurses? ( >=dev-libs/sealcurses-2.0.18_pre20230206:= ) gui? ( X? ( x11-base/xorg-proto ) )
+DESCRIPTION=Desktop GUI client for browsing Geminispace
+EAPI=8
+HOMEPAGE=https://gmi.skyjake.fi/lagrange/ https://git.skyjake.fi/gemini/lagrange
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=cmake flag-o-matic verify-sig xdg
+IUSE=X +bidi debug +gui +harfbuzz jpegxl mp3 ncurses opus webp verify-sig
+KEYWORDS=~amd64 ~x86
+LICENSE=|| ( MIT Unlicense ) Apache-2.0 BSD-2 CC-BY-SA-4.0 OFL-1.1
+RDEPEND=>=dev-libs/tfdn-1.11.0:=[ssl] media-libs/libsdl2[X?,sound(+),video(+)] gui? ( X? ( x11-libs/libX11 ) bidi? ( dev-libs/fribidi ) harfbuzz? ( media-libs/harfbuzz:=[truetype(+)] ) jpegxl? ( media-libs/libjxl:= ) mp3? ( media-sound/mpg123-base ) opus? ( media-libs/opusfile ) webp? ( media-libs/libwebp:= ) ) ncurses? ( >=dev-libs/sealcurses-2.0.18_pre20230206:= )
+REQUIRED_USE=|| ( gui ncurses )
+SLOT=0
+SRC_URI=https://git.skyjake.fi/gemini/lagrange/releases/download/v1.19.4/lagrange-1.19.4.tar.gz verify-sig? ( https://git.skyjake.fi/gemini/lagrange/releases/download/v1.19.4/lagrange-1.19.4.tar.gz.sig )
+_eclasses_=toolchain-funcs	30214924c0c3b92ec7dbf24fc70d60d3	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	3a59a39e97af0f7c03f49cf3c22f262b	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	22e4e58d68692975dc74424dc9b12fb7	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	verify-sig	2cf23b136af9fd4c3fceadc34d0f98ad	xdg	3ef49a87c52c8b77c476351195dfe575
+_md5_=47367a7d717bec87edcd47c301982e43

@@ -379,7 +379,9 @@ gui-apps/quickshell:i3 - Enable x11-wm/i3 and gui-wm/sway specific features
 gui-apps/quickshell:i3-ipc - Enable interfacing with x11-wm/i3 and gui-wm/sway's IPC
 gui-apps/quickshell:layer-shell - Enable wlroots layershell integration through the zwlr-layer-shell-v1 protocol
 gui-apps/quickshell:mpris - Enable access to MPRIS compatible media players using its dbus protocol
+gui-apps/quickshell:pam - Enable sys-libs/pam integration for user authentication
 gui-apps/quickshell:pipewire - Enable viewing and management of media-video/pipewire nodes
+gui-apps/quickshell:polkit - Enable creating sys-auth/polkit agents that can prompt user for authentication
 gui-apps/quickshell:screencopy - Enable streaming video from monitors and toplevel windows through various protocols
 gui-apps/quickshell:session-lock - Enable session lock support through the ext-session-lock-v1 protocol
 gui-apps/quickshell:sockets - Enable Unix Sockets (WARNING: Disabling is unsafe!)
@@ -700,8 +702,6 @@ net-irc/pounce:palaver - Provide push notifications for the Palaver IRC app
 net-irc/tiny:dbus - Enable desktop notifications
 net-irc/tiny:openssl - Use dev-libs/openssl as TLS backend instead of compiled-in rustls
 net-libs/ixwebsocket:ws - Build the ws utility
-net-libs/nodejs-bin:corepack - Enable the experimental corepack package management tool
-net-libs/nodejs-bin:npm - Enable NPM package manager
 net-libs/picotls:fusion - "fusion" AES-GCM engine, optimized for QUIC and other protocols that use short AEAD blocks
 net-libs/sofia-sip:glib - Add support to dev-libs/glib-based mainloop, to allow using Sofia-SIP on glib-based programs.
 net-libs/syndication-domination:json-binary - Builds a binary executable instead of python bindings
