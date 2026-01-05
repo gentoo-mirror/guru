@@ -1,4 +1,4 @@
-# Copyright 2024-2025 Gentoo Authors
+# Copyright 2024-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -54,6 +54,7 @@ PATCHES=(
 	"${FILESDIR}/${PN}-0.6.1-conditional-tests.patch"
 	"${FILESDIR}/${PN}-0.7.0-disable-mirtest.patch"
 	"${FILESDIR}/${PN}-0.7.0-no-automagic.patch"
+	"${FILESDIR}/${PN}-0.8.3-mir-2.25-compat.patch"
 )
 
 pkg_setup() {

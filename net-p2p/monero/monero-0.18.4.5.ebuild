@@ -21,7 +21,7 @@ fi
 
 LICENSE="BSD MIT"
 SLOT="0"
-IUSE="+daemon hw-wallet readline +tools +wallet-cli +wallet-rpc cpu_flags_x86_aes monero-supercop"
+IUSE="+daemon hw-wallet readline +tools +wallet-cli +wallet-rpc cpu_flags_x86_aes"
 REQUIRED_USE="|| ( daemon tools wallet-cli wallet-rpc )"
 RESTRICT="test"
 # Test requires python's requests, psutil, deepdiff which are packaged
@@ -35,7 +35,7 @@ DEPEND="
 	dev-libs/openssl:=
 	dev-libs/randomx
 	dev-libs/rapidjson
-	monero-supercop? ( dev-libs/supercop )
+	dev-libs/supercop
 	net-dns/unbound:=[threads]
 	net-libs/miniupnpc:=
 	net-libs/zeromq:=
@@ -67,9 +67,6 @@ src_prepare() {
 }
 
 src_configure() {
-	if use monero-supercop; then
-		PATCHES+=("${FILESDIR}"/${PN}-0.18.4.0-external-supercop.patch)
-	fi
 	local mycmakeargs=(
 		# TODO: Update CMake to install built libraries (help wanted)
 		-DBUILD_SHARED_LIBS=OFF
