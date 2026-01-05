@@ -88,11 +88,11 @@ app-admin/agru 0.1.18 0.1.19: A tool for managing GitLab groups and projects
 app-admin/akita 0.1.4: An HTTP log monitoring tool for your terminal
 app-admin/ananicy-cpp 1.1.1-r3: Ananicy rewritten in C++ for much lower CPU and memory usage
 app-admin/antidot 0.6.3: Cleans up your $HOME from those pesky dotfiles
-app-admin/aws-vault 7.2.0 7.8.6: Securely store and access AWS credentials in development environments
+app-admin/aws-vault 7.2.0 7.8.6-r2: Securely store and access AWS credentials in development environments
 app-admin/blahajdots 0.6.0 9999: Bespoke dotfile management for sharkgirls.
 app-admin/boinctui 2.7.1 2.7.1-r1: Fullscreen text mode manager for the BOINC client
 app-admin/chamber 2.13.2: Managing secrets in AWS SSM Parameter Store
-app-admin/chezmoi 2.65.2 2.66.0 2.67.0-r1 2.68.1: Manage your dotfiles across multiple machines, securely
+app-admin/chezmoi 2.65.2 2.66.0 2.67.0-r1 2.68.1 2.69.0: Manage your dotfiles across multiple machines, securely
 app-admin/customrescuecd-x86_64 0.12.7 0.12.8: A system rescue cd or usbstick for desktop and server based on gentoo
 app-admin/doasedit 1.0.8 1.0.9 9999: Edit files as root using an unprivileged editor
 app-admin/dotbot 1.20.1: A tool that bootstraps your dotfiles
@@ -151,7 +151,7 @@ app-containers/incus-ui 0.18.2: Incus web UI module
 app-containers/kind 0.27.0 0.30.0: Kind is a tool for running local Kubernetes clusters using Docker
 app-containers/pods 2.1.0_pre20240215-r4 2.1.2: Keep track of your podman containers
 app-containers/slim 1.40.11: Inspect, optimize and debug containers
-app-containers/waydroid 1.5.2 1.5.4: Container-based approach to boot a full Android system on Linux systems
+app-containers/waydroid 1.5.2 1.5.4 1.6.1: Container-based approach to boot a full Android system on Linux systems
 app-containers/waydroid-images 9999: Manage images for app-containers/waydroid using portage
 app-containers/waydroid-x11 1.0.2: Launch waydroid in an X11 session, using weston as a nested compositor.
 app-crypt/PBinCLI 0.3.7: PBinCLI is a command line client for PrivateBin written in Python 3
@@ -401,7 +401,7 @@ app-text/texlab 5.23.1 5.24.0: LaTeX Language Server
 app-text/tinymist 0.14.6 9999: An integrated language service for Typst.
 app-text/tldr 3.3.0 3.4.1: Python command line client for tldr pages
 app-text/typst 0.14.2 9999: A markup-based typesetting system for the sciences
-app-text/typstyle 0.14.0: A beautiful and reliable code formatter for Typst
+app-text/typstyle 0.14.1: A beautiful and reliable code formatter for Typst
 app-text/vale 3.7.1 3.9.1: A syntax-aware linter for prose built with speed and extensibility in mind
 app-text/xan 0.51.0 0.52.0 0.53.0 0.54.0 0.54.1 9999: The CSV magician
 app-vim/ale 3.3.0 4.0.0: Check syntax in Vim asynchronously and fix files, with LSP support
@@ -579,7 +579,7 @@ dev-libs/fortran-shlex 1.0.1 1.2.1 2.0.0 2.0.1: Modern Fortran port of the tiny-
 dev-libs/fortran-stdlib 0.5.0 0.6.1 0.7.0 9999: A community driven standard library for (modern) Fortran
 dev-libs/frozen 1.2.0: A header-only, constexpr alternative to gperf for C++14 users
 dev-libs/ftl 1.0_p20230220: The Fortran Template Library (FTL) is a general purpose library for Fortran 2003
-dev-libs/gbinder 1.1.42 9999: GLib-style interface to binder
+dev-libs/gbinder 1.1.43 9999: GLib-style interface to binder
 dev-libs/gmobile 0.4.0 0.6.0: Mobile related helpers for glib based projects
 dev-libs/gpds 1.10.0: A general purpose data serializer
 dev-libs/hardened_malloc 13: Hardened allocator designed for modern systems.
@@ -757,7 +757,7 @@ dev-python/find-libpython 0.5.0: Finds the libpython associated with the current
 dev-python/flask-restx 1.3.0 1.3.2: Framework API development with Flask
 dev-python/flask-socketio 5.5.1: Socket.IO integration for Flask applications.
 dev-python/fontawesomefree 6.5.1: Font Awesome Free
-dev-python/gbinder 1.1.2-r2 9999: Python bindings for libgbinder
+dev-python/gbinder 1.1.2-r2 1.3.0 9999: Python bindings for libgbinder
 dev-python/gemcall 0.9.2: A library and CLI tool for making gemini requests
 dev-python/glcontext 3.0.0: Modern OpenGL binding for python
 dev-python/glfw 2.10.0: Python bindings for GLFW
@@ -910,7 +910,7 @@ dev-python/queuelib 1.8.0: Collection of persistent and non-persistent queues fo
 dev-python/readability-lxml 0.8.4.1: Fast html to text parser (article readability tool)
 dev-python/readmdict 0.1.1-r1: Read mdx/mdd files
 dev-python/rectangle-packer 2.0.2: Pack a set of rectangles into a bounding box with minimum area
-dev-python/repology-client 0.4.0-r1 0.5.0: Asynchronous wrapper for Repology API
+dev-python/repology-client 0.5.0 0.6.0: Asynchronous wrapper for Repology API
 dev-python/rpmautospec-core 0.1.5: Core functionality used by rpmautospec
 dev-python/rstcheck 6.2.0 6.2.1: Checks syntax of reStructuredText and code blocks nested within it
 dev-python/safety-schemas 0.0.14: Schemas for Safety tools
@@ -1316,7 +1316,7 @@ gui-apps/yambar 1.11.0 9999: Simplistic and highly configurable status panel for
 gui-libs/gtk-session-lock 0.2.0-r6 9999: GTK-based lockscreen for Wayland
 gui-libs/libcprime 5.0.0: Library for managing settings of CoreApps
 gui-libs/libcsys 5.0.0: Library for managing the device
-gui-libs/mir 2.22.2 2.23.0: Set of libraries for building Wayland based shells
+gui-libs/mir 2.23.0 2.25.2: Set of libraries for building Wayland based shells
 gui-libs/qdocumentview 0.3.0.1: Widget to render multi-page documents
 gui-libs/qml-niri 0.1.2: A QML plugin for niri
 gui-libs/qtforkawesome 0.3.1 0.3.2 0.3.2-r1: Library that bundles ForkAwesome for use within Qt applications
@@ -1325,8 +1325,8 @@ gui-libs/scenefx 0.4.1 9999: A replacement for the wlroots scene API with eye-ca
 gui-libs/xdg-desktop-portal-hyprland 1.3.9-r1 1.3.11 9999: xdg-desktop-portal backend for Hyprland
 gui-wm/cage 0.2.1 9999: A Wayland kiosk
 gui-wm/hyprland-contrib 0.1-r1 9999: Community-maintained extensions for hyprland
-gui-wm/mangowc 0.10.7 9999: wayland compositor based on wlroots and scenefx(dwl but no suckless)
-gui-wm/miracle-wm 0.8.0 0.8.2: Tiling Wayland compositor based on Mir
+gui-wm/mangowc 0.10.10 9999: wayland compositor based on wlroots and scenefx(dwl but no suckless)
+gui-wm/miracle-wm 0.8.2 0.8.3: Tiling Wayland compositor based on Mir
 gui-wm/niri 25.11-r1 9999: Scrollable-tiling Wayland compositor
 gui-wm/phoc 0.49.0 0.50.0 0.52.0: Wayland compositor for mobile phones
 gui-wm/river 0.3.11 0.3.12: A dynamic tiling Wayland compositor
@@ -1516,7 +1516,7 @@ media-video/obs-streamfx 0.12.0.9999 9999: OBS® Studio plugin which adds many n
 media-video/obs-vaapi 0.4.1 0.4.2 9999: OBS Studio VAAPI support via GStreamer
 media-video/pgsrip 0.1.12: A command line tool to extract and convert PGS subtitles into SRT format
 media-video/syncplay 1.7.3 1.7.4: Client/server to synchronize media playback
-media-video/uxplay 1.72.2: AirPlay Unix mirroring server
+media-video/uxplay 1.72.3: AirPlay Unix mirroring server
 media-video/walksnail-osd-tool 0.3.0-r2 9999: Tool for rendering OSDs over Walksnail DVR recordings
 media-video/webcamize 2.0.0: Use almost any camera as a webcam—DSLRs, mirrorless, camcorders, and more
 media-video/wl-screenrec 0.2.0: High performance screen/audio recorder for wlroots
@@ -1643,7 +1643,7 @@ net-misc/cve-client 1.1.1 9999: CLI-based client / toolbox for CVE.org
 net-misc/eg25-manager 0.4.2: Daemon for managing the Quectel EG25 modem
 net-misc/ffsend 0.2.77 9999: Easily and securely share files from the command line
 net-misc/fileshelter 6.2.0 6.3.0: FileShelter is a “one-click” file sharing web application
-net-misc/flypaper 0.4.0: Externally bind or mark sockets on the fly
+net-misc/flypaper 0.4.1: Externally bind or mark sockets on the fly
 net-misc/freetube-bin 0.23.10_beta 0.23.11_beta 0.23.12_beta: A private YouTube desktop client
 net-misc/gazelle-tui 1.8.2: Minimal NetworkManager TUI with complete 802.1X enterprise WiFi support
 net-misc/gdown 5.2.0: Google Drive public file/folder downloader
@@ -1699,7 +1699,7 @@ net-p2p/fopnu 1.68: P2P file sharing system
 net-p2p/fragments 3.0.1-r1 3.0.1-r2: Fragments is an easy to use BitTorrent client
 net-p2p/gridcoin 5.4.9.0-r1: Proof-of-Stake based cryptocurrency that rewards BOINC computation
 net-p2p/ipfs-desktop-bin 0.39.0 0.40.0 0.43.0: A desktop client for IPFS. The IPFS's Native Application
-net-p2p/monero 0.18.4.1 0.18.4.3 0.18.4.4 9999: The secure, private, untraceable cryptocurrency
+net-p2p/monero 0.18.4.3 0.18.4.4 0.18.4.5 9999: The secure, private, untraceable cryptocurrency
 net-p2p/monero-gui-bin 0.18.4.3: An open-source GUI wallet developed by the Monero community.
 net-p2p/p2pool 4.5-r2 4.8 4.9 4.9.1 4.13 9999: Decentralized pool for Monero mining
 net-p2p/persepolis 5.2.0: Persepolis is a download manager written in Python.
@@ -1714,7 +1714,7 @@ net-proxy/byedpi 0.17.2 0.17.3 9999: Bypass DPI SOCKS proxy
 net-proxy/ngrok-bin 3.34.1: ngrok is a reverse proxy, firewall, and API gateway
 net-proxy/opera-proxy 1.13.1: Standalone Opera VPN proxies client
 net-proxy/shadowsocks-rust 1.22.0: A Rust port of shadowsocks
-net-proxy/snowflake 2.10.1 2.11.0: Pluggable Transport using WebRTC, inspired by Flashproxy
+net-proxy/snowflake 2.11.0-r1: Pluggable Transport using WebRTC, inspired by Flashproxy
 net-proxy/wireproxy 1.0.9: Wireguard client that exposes itself as a proxy
 net-voip/baresip 4.2.0 4.3.0 4.4.0: Baresip is a portable and modular SIP User-Agent
 net-voip/discover-overlay 0.6.9-r1 0.7.4 0.7.8: Yet another Discord overlay for Linux written in Python using GTK3
@@ -1773,7 +1773,7 @@ sci-electronics/slang 9.1 9999: SystemVerilog compiler and language services
 sci-electronics/surfer 0.5.0: Waveform viewer with a focus on a snappy usable interface
 sci-electronics/svls 0.2.11: SystemVerilog language server
 sci-electronics/vcd 221217-r1: VCD file (Value Change Dump) command line viewer
-sci-electronics/verilator 5.042 9999: The fast free Verilog/SystemVerilog simulator
+sci-electronics/verilator 5.044 9999: The fast free Verilog/SystemVerilog simulator
 sci-electronics/yosys 0.60: framework for Verilog RTL synthesis
 sci-geosciences/google-earth-pro 7.3.6-r1: Google's 3D planet viewer
 sci-libs/dlpack 1.2: Common in-memory tensor structure
