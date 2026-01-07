@@ -18,7 +18,7 @@ RESTRICT="!test? ( test )"
 RDEPEND="
 	app-arch/libarchive
 	acct-user/lms
-	<=dev-cpp/wt-4.12.0:=
+	dev-cpp/wt:=
 	dev-libs/boost:=
 	dev-libs/libconfig[cxx]
 	dev-libs/pugixml:=

@@ -1,13 +1,17 @@
-# Copyright 1999-2025 Gentoo Authors
+# Copyright 1999-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
+
+# TODO: add esp-doc package in order to build documentation
+# TODO: add examples USE
+# TODO: unbundle mbedtls?
 
 EAPI=8
 
 PYTHON_COMPAT=( python3_{11..13} )
-PYTHON_GDB_USE=( python_targets_python3_{11,12} )
-VER="14.2.0_20241119"
-GDB_VER="16.2_20250324"
-OPENOCD_VER="0.12.0-esp32-20250422"
+PYTHON_GDB_USE=( python_targets_python3_{11..13} )
+VER="14.2.0_20251107"
+GDB_VER="16.3_20250913"
+OPENOCD_VER="0.12.0-esp32-20250707"
 
 CROSSTOOL_URL="https://github.com/espressif/crosstool-NG/releases/download/esp-${VER}"
 
@@ -64,7 +68,6 @@ RDEPEND="
 RESTRICT="strip"
 
 QA_PREBUILT="opt/* usr/lib* usr/share/esp-idf/*"
-QA_PRESTRIPPED="opt/*"
 
 PATCHES=(
 	"${FILESDIR}/allow-system-install-${PN}-5.3.patch"
@@ -169,12 +172,11 @@ EOF
 		install_tool riscv32-esp-elf-gdb
 	fi
 
-	cat - > 99esp-idf <<EOF
+	newenvd - 99esp-idf <<-EOF
 	IDF_PATH=/usr/share/${PN}
 	ESP_ROM_ELF_DIR=/usr/share/${PN}/tools
 	OPENOCD_SCRIPTS=/opt/openocd-esp32/share/openocd/scripts
 EOF
-	doenvd 99esp-idf
 
 	insinto /usr/share/${PN}
 

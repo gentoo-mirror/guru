@@ -1,14 +1,16 @@
-# Copyright 2021-2025 Gentoo Authors
+# Copyright 2021-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-RUST_MIN_VER="1.75.0"
+CRATES="
+"
+RUST_MIN_VER="1.85.0"
 
 inherit cargo shell-completion
 
 DESCRIPTION="Unofficial Bitwarden CLI"
-HOMEPAGE="https://git.tozt.net/rbw"
+HOMEPAGE="https://github.com/doy/rbw"
 
 if [[ ${PV} = *9999* ]]; then
 	inherit git-r3
@@ -23,7 +25,7 @@ fi
 
 LICENSE="MIT"
 # Dependent crate licenses
-LICENSE+=" Apache-2.0 BSD Boost-1.0 ISC MIT Unicode-3.0"
+LICENSE+=" Apache-2.0 BSD Boost-1.0 ISC MIT MPL-2.0 Unicode-3.0"
 # Manually added crate licenses
 LICENSE+=" openssl"
 SLOT="0"
