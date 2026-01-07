@@ -1,0 +1,16 @@
+BDEPEND=dev-util/patchelf app-alternatives/ninja >=dev-build/cmake-3.28.5
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=net-libs/libmicrohttpd:= sys-libs/ncurses:= media-libs/libogg media-video/ffmpeg:= virtual/zlib:= media-libs/libvorbis net-misc/curl dev-libs/openssl:= media-sound/lame dev-libs/libev media-libs/taglib dev-cpp/asio libopenmpt? ( media-libs/libopenmpt media-sound/mpg123 ) mpris? ( || ( elogind? ( >=sys-auth/elogind-239 ) systemd? ( sys-apps/systemd ) basu? ( sys-libs/basu ) ) ) pipewire? ( media-video/pipewire:= ) portaudio? ( media-libs/portaudio ) pulseaudio? ( media-libs/libpulse ) sndio? ( media-sound/sndio:= ) alsa? ( media-libs/alsa-lib )
+DESCRIPTION=Excellent terminal music player, support almost every known sound system.
+EAPI=8
+HOMEPAGE=https://github.com/clangen/musikcube
+INHERIT=cmake
+IUSE=+alsa +libopenmpt pipewire pulseaudio +mpris portaudio sndio systemd elogind basu
+KEYWORDS=~amd64
+LICENSE=BSD
+RDEPEND=net-libs/libmicrohttpd:= sys-libs/ncurses:= media-libs/libogg media-video/ffmpeg:= virtual/zlib:= media-libs/libvorbis net-misc/curl dev-libs/openssl:= media-sound/lame dev-libs/libev media-libs/taglib dev-cpp/asio libopenmpt? ( media-libs/libopenmpt media-sound/mpg123 ) mpris? ( || ( elogind? ( >=sys-auth/elogind-239 ) systemd? ( sys-apps/systemd ) basu? ( sys-libs/basu ) ) ) pipewire? ( media-video/pipewire:= ) portaudio? ( media-libs/portaudio ) pulseaudio? ( media-libs/libpulse ) sndio? ( media-sound/sndio:= ) alsa? ( media-libs/alsa-lib )
+REQUIRED_USE=mpris? ( ^^ ( systemd elogind basu ) )
+SLOT=0
+SRC_URI=https://github.com/clangen/musikcube/archive/refs/tags/3.0.5.tar.gz -> musikcube-3.0.5.tar.gz
+_eclasses_=toolchain-funcs	30214924c0c3b92ec7dbf24fc70d60d3	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	3a59a39e97af0f7c03f49cf3c22f262b	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	f66e839e5b60b399ae9d51fb6e6247d3
+_md5_=2066aa4710fd762e41f2e986a37e64e7
