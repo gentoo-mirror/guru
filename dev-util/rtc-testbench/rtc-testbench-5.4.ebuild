@@ -1,10 +1,10 @@
-# Copyright 1999-2025 Gentoo Authors
+# Copyright 1999-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-LLVM_COMPAT=( {15..20} )
-PYTHON_COMPAT=( python3_{12..13} )
+LLVM_COMPAT=( {15..21} )
+PYTHON_COMPAT=( python3_{12..14} )
 
 inherit cmake python-single-r1 llvm-r2
 
@@ -58,6 +58,8 @@ pkg_setup() {
 src_configure() {
 	local mycmakeargs=(
 		-DWITH_MQTT=$(usex mqtt)
+		-DRX_TIMESTAMP=TRUE
+		-DTX_TIMESTAMP=TRUE
 	)
 
 	cmake_src_configure
@@ -65,7 +67,7 @@ src_configure() {
 
 src_compile() {
 	cmake_src_compile
-	use doc && make -C "${S}/Documentation" html
+	use doc && emake -C "${S}/Documentation" html
 }
 
 src_install() {
