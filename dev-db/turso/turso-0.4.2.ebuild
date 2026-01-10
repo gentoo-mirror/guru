@@ -1,4 +1,4 @@
-# Copyright 2024-2025 Gentoo Authors
+# Copyright 2024-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -15,7 +15,7 @@ DESCRIPTION="Turso Database is an in-process OLTP database engine library with a
 HOMEPAGE="https://github.com/tursodatabase/turso"
 SRC_URI="
 	https://github.com/tursodatabase/${PN}/releases/download/v${PV}/source.tar.gz -> ${P}.tar.gz
-	https://github.com/freijon/${PN}/releases/download/v${PV}/${P}-crates.tar.xz
+	https://github.com/gentoo-crate-dist/${PN}/releases/download/v${PV}/${P}-crates.tar.xz
 	${CARGO_CRATE_URIS}
 "
 
