@@ -89,11 +89,11 @@ app-misc/opentrack:neuralnet - Build NeuralNet face tracker using a webcam as in
 app-misc/opentrack:opencv - Enable webcam video driver via computer vision (required for NeuralNet to work)
 app-misc/opentrack:wine - Support injecting a FreeTrack driver into a running wine prefix
 app-misc/tinyfetch:pci - Enables the use of pciutils to detect GPU names
-app-misc/wlx-overlay-s:openvr - Support Valve's SteamVR SDK.
-app-misc/wlx-overlay-s:openxr - Support Khronos Group's OpenXR API.
-app-misc/wlx-overlay-s:osc - Support VRChat's Open Sound Control protocol.
-app-misc/wlx-overlay-s:pipewire - Enable pipewire support for desktop capture.
-app-misc/wlx-overlay-s:wayvr - Enable WayVR, a Wayland server for a VR environment.
+app-misc/wayvr:openvr - Support Valve's SteamVR SDK.
+app-misc/wayvr:openxr - Support Khronos Group's OpenXR API.
+app-misc/wayvr:osc - Support VRChat's Open Sound Control protocol.
+app-misc/wayvr:pipewire - Enable pipewire support for desktop capture.
+app-misc/wayvr:wayvr - Enable WayVR, a Wayland server for a VR environment.
 app-misc/yazi:cli - Install CLI Data Distribution Service
 app-office/openoffice-bin:kde - Add GTK+ Plasma's Breeze widget style
 app-text/lchat:examples - install the example indent .filter
@@ -211,8 +211,7 @@ dev-util/stylua:luajit - Build support for LuaJIT
 dev-util/stylua:luau - Build support for Luau
 dev-util/tinyxxd:xxd - use it as a replacement for xxd
 dev-util/u-config:symlink - Install pkg-config and pkgconf symlink
-dev-util/vala-language-server:debug_mem - 
-dev-util/vala-language-server:plugins - 
+dev-util/vala-language-server:debug-mem - Debug memory usage
 games-action/ddnet:antibot - Enable support for a dynamic anticheat library.
 games-action/ddnet:autoupdate - Enable the autoupdater.
 games-action/ddnet:client - Enable client compilation.
