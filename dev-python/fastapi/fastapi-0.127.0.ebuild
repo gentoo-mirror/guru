@@ -28,9 +28,8 @@ SLOT="0"
 
 RDEPEND="
 	>=dev-python/annotated-doc-0.0.2[${PYTHON_USEDEP}]
-	<dev-python/pydantic-3.0.0[${PYTHON_USEDEP}]
-	>=dev-python/pydantic-1.7.4[${PYTHON_USEDEP}]
-	<dev-python/starlette-0.50.0[${PYTHON_USEDEP}]
+	>=dev-python/pydantic-2.7.0[${PYTHON_USEDEP}]
+	<dev-python/starlette-0.51.0[${PYTHON_USEDEP}]
 	>=dev-python/starlette-0.40.0[${PYTHON_USEDEP}]
 	>=dev-python/typing-extensions-4.8.0[${PYTHON_USEDEP}]
 "
@@ -46,7 +45,8 @@ BDEPEND="
 		>=dev-python/jinja2-3.1.5[${PYTHON_USEDEP}]
 		dev-python/orjson[${PYTHON_USEDEP}]
 		>=dev-python/pwdlib-0.2.1[${PYTHON_USEDEP}]
-		dev-python/pydantic-settings[${PYTHON_USEDEP}]
+		>=dev-python/pydantic-extra-types-2.0.0[${PYTHON_USEDEP}]
+		>=dev-python/pydantic-settings-2.0.0[${PYTHON_USEDEP}]
 		dev-python/pyjwt[${PYTHON_USEDEP}]
 		>=dev-python/python-multipart-0.0.18[${PYTHON_USEDEP}]
 		<dev-python/pyyaml-7.0.0[${PYTHON_USEDEP}]
@@ -104,6 +104,8 @@ pkg_postinst() {
 	optfeature "forms and file uploads" dev-python/python-multipart
 	optfeature "validate emails" dev-python/email-validator
 	optfeature "uvicorn with uvloop" dev-python/uvicorn
+	optfeature "settings management" dev-python/pydantic-settings
+	optfeature "extra Pydantic data types" dev-python/pydantic-extra-types
 	optfeature_header "Alternative JSON responses"
 	optfeature "ORJSONResponse" dev-python/orjson
 	optfeature "UJSONResponse" dev-python/ujson

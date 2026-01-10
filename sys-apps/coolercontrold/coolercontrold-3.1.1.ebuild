@@ -1,4 +1,4 @@
-# Copyright 2024-2025 Gentoo Authors
+# Copyright 2024-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -88,6 +88,8 @@ src_install() {
 	cargo_src_install
 
 	einstalldocs
+
+	doman ../packaging/man/coolercontrold.8
 
 	doinitd ../packaging/openrc/init.d/coolercontrol
 	doconfd ../packaging/openrc/conf.d/coolercontrol

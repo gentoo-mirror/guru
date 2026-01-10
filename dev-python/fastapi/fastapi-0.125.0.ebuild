@@ -30,7 +30,7 @@ RDEPEND="
 	>=dev-python/annotated-doc-0.0.2[${PYTHON_USEDEP}]
 	<dev-python/pydantic-3.0.0[${PYTHON_USEDEP}]
 	>=dev-python/pydantic-1.7.4[${PYTHON_USEDEP}]
-	<dev-python/starlette-0.50.0[${PYTHON_USEDEP}]
+	<dev-python/starlette-0.51.0[${PYTHON_USEDEP}]
 	>=dev-python/starlette-0.40.0[${PYTHON_USEDEP}]
 	>=dev-python/typing-extensions-4.8.0[${PYTHON_USEDEP}]
 "
