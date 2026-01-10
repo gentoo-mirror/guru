@@ -379,7 +379,7 @@ app-shells/zsh-history-substring-search 1.0.2 1.1.0: ZSH port of Fish history se
 app-text/OCRmyPDF 16.10.2: OCRmyPDF adds an OCR text layer to scanned PDF files
 app-text/cmark-gfm 0.29.0.13: GitHub's fork of cmark
 app-text/code-minimap 0.6.8: A high performance code minimap generator
-app-text/codebook 0.3.22: Spell Checker for Code
+app-text/codebook 0.3.28: Spell Checker for Code
 app-text/dooit 3.3.4: A TUI todo manager
 app-text/epubgrep 0.6.2: Search tool for EPUB e-books
 app-text/ford 6.2.5 7.0.8-r1 7.0.9-r1 7.0.10 7.0.11 7.0.11-r1 7.0.12: FORD, automatic documentation generator for modern Fortran programs
@@ -753,7 +753,7 @@ dev-python/dtreeviz 2.2.2: A python library for decision tree visualization and 
 dev-python/evernote2 1.0.3 9999: Unofficial Evernote SDK for Python 3
 dev-python/exif 1.6.0: Read and modify image EXIF metadata using Python.
 dev-python/ezdxf 1.4.3: Python library for creating and manipulating DXF drawings
-dev-python/fastapi 0.120.0 0.120.2 0.121.0: FastAPI framework, high performance, easy to learn, ready for production
+dev-python/fastapi 0.125.0 0.127.0: FastAPI framework, high performance, easy to learn, ready for production
 dev-python/find-libpython 0.5.0: Finds the libpython associated with the current Python environment
 dev-python/flask-restx 1.3.0 1.3.2: Framework API development with Flask
 dev-python/flask-socketio 5.5.1: Socket.IO integration for Flask applications.
@@ -778,7 +778,7 @@ dev-python/hijridate 2.5.0: Accurate Hijri-Gregorian date converter based on the
 dev-python/http-ece 1.2.1: Encrypted Content Encoding for HTTP
 dev-python/i3ipc 2.2.1-r1 2.2.1-r2: An improved Python library to control i3wm and sway.
 dev-python/icecream 2.1.8: Pythonic task execution
-dev-python/ignore-python 0.3.0: Rust ignore crate Python bindings
+dev-python/ignore-python 0.3.1: Rust ignore crate Python bindings
 dev-python/injector 0.22.0: Python dependency injection framework, inspired by Guice
 dev-python/internetarchive 3.7.0 5.3.0 5.7.1: Lib and CLI for archive.org - for search, uploading, downloading, rename etc
 dev-python/invoke 2.2.1: Pythonic task execution
@@ -855,6 +855,7 @@ dev-python/pwdlib 0.2.1: Modern password hashing for Python
 dev-python/py-himitsu 0.0.9: A python client library for himitsu
 dev-python/py-nanoid 9999: Python Nanoid
 dev-python/pyclip 0.7.0-r2 9999: Python clipboard module
+dev-python/pydantic-extra-types 2.10.6: Extra Pydantic types
 dev-python/pydantic-settings 2.11.0-r1 2.12.0: Settings management using Pydantic
 dev-python/pydispatcher 2.0.7: Multi-producer-multi-consumer signal dispatching mechanism
 dev-python/pydub 0.25.1: Manipulate audio with an simple and easy high level interface
@@ -934,7 +935,7 @@ dev-python/sphinx-sitemap 2.8.0 2.9.0: Sitemap generator for Sphinx
 dev-python/sphinxcontrib-katex 0.9.11: KaTeX Sphinx extension for rendering of math in HTML pages
 dev-python/sphinxext-opengraph 0.13.0: Sphinx extension to generate unique OpenGraph metadata
 dev-python/sphinxnotes-mock 1.1: Sphinx extension for mocking directives and roles without modifying documents
-dev-python/sqlmodel 0.0.24: SQL databases in Python, designed for simplicity, compatibility, and robustness.
+dev-python/sqlmodel 0.0.29 0.0.31: SQL databases in Python, designed for simplicity, compatibility, and robustness.
 dev-python/starkbank-ecdsa 2.2.0-r1: A lightweight and fast pure python ECDSA library
 dev-python/steam 2.0.0-r1: Python package for interacting with Steam
 dev-python/stone 3.3.9: The Official Api Spec Language for Dropbox
@@ -1045,7 +1046,7 @@ dev-util/minify-bin 2.24.4: Minifier package that provides HTML5, CSS3, JS, JSON
 dev-util/mise 2025.10.10-r3 2025.10.14 2025.12.12: The front-end to your dev env
 dev-util/mock 6.5 6.6: Simple chroot build environment manager for building RPMs
 dev-util/mock-core-configs 43.3: Mock core config files basic chroots
-dev-util/neocmakelsp 0.9.0: Another CMake LSP
+dev-util/neocmakelsp 0.9.1: Another CMake LSP
 dev-util/nvchecker 2.19 2.20: New version checker for software releases
 dev-util/ocamlformat 0.26.2 0.26.2-r1: Auto-formatter for OCaml code
 dev-util/ocp-indent 1.8.2: Indentation tool for OCaml, to be used from editors like Emacs and Vim.
@@ -1108,7 +1109,7 @@ games-board/fairy-stockfish 14.0.1: Chess variant engine derived from Stockfish 
 games-board/openriichi 0.2.1.1-r1: OpenRiichi is an open source Japanese Mahjong client
 games-board/rmahjong 0.4_p20201106: Riichi Mahjong, the Japanese variant of the Chinese game Mahjong for 4 players
 games-emulation/RetroArch 1.21.0 1.22.2: RetroArch is a frontend for emulators, game engines and media players
-games-emulation/azahar 2123.3: An open-source 3DS emulator project based on Citra
+games-emulation/azahar 2123.4.1: An open-source 3DS emulator project based on Citra
 games-emulation/dosbox-x 2025.12.01 2026.01.02 9999: Complete, accurate DOS emulator forked from DOSBox
 games-emulation/eden 0.0.4: Nintendo Switch Emulator
 games-emulation/flycast 9999: Sega Dreamcast, Naomi and Atomiswave emulator
@@ -1819,7 +1820,7 @@ sci-mathematics/rstudio-desktop-bin 2023.09.1_p494 2024.12.0_p467 2024.12.0_p467
 sci-misc/boinc-wrapper 26018-r3 26019 26019-r1: Wrapper to use non-BOINC apps with BOINC
 sci-misc/llama-cpp 0_pre6140 0_pre6318 0_pre6710 0_pre6980 0_pre7276 0_pre7611 9999: Port of Facebook's LLaMA model in C/C++
 sci-ml/aichat 0.30.0: All-in-one LLM CLI Tool
-sci-ml/ollama 0.13.0 0.13.1 0.13.2 0.13.4 0.13.5-r1 9999: Get up and running with Llama 3, Mistral, Gemma, and other language models.
+sci-ml/ollama 0.13.0 0.13.1 0.13.2 0.13.4 0.13.5-r1 0.13.5-r2 9999: Get up and running with Llama 3, Mistral, Gemma, and other language models.
 sci-physics/openmodelica 1.26.0: Open-source Modelica-based modeling and simulation environment
 sci-physics/ovito 3.10.4 3.10.5 3.10.5-r1: Open Visualization Tool
 sec-keys/openpgp-keys-aepaneshnikov 20221210: OpenPGP keys used by Alexander Epaneshnikov
@@ -1843,8 +1844,8 @@ sys-apps/bpftune 9999: bpftune uses BPF to auto-tune Linux systems
 sys-apps/bustd 0.1.1: Process killer daemon for out-of-memory scenarios
 sys-apps/cctv 9999: Terminal interface for CoolerControl
 sys-apps/colortail 0.3.3 9999: tail command with colors
-sys-apps/coolercontrol 3.0.2: Monitor and control your cooling and other devices
-sys-apps/coolercontrold 3.0.2: Monitor and control your cooling and other devices (daemon)
+sys-apps/coolercontrol 3.0.2 3.1.1: Monitor and control your cooling and other devices
+sys-apps/coolercontrold 3.0.2 3.1.1: Monitor and control your cooling and other devices (daemon)
 sys-apps/corefreq 2.0.8 2.0.9: CPU monitoring and tuning software designed for 64-bit processors
 sys-apps/deepcool-digital-linux 0.10.1 0.10.2: Linux version for the DeepCool Digital Windows software.
 sys-apps/dnf5 5.3.0.0: Command-line package manager
