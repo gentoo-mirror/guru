@@ -1,9 +1,9 @@
-# Copyright 1999-2025 Gentoo Authors
+# Copyright 1999-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..13} )
+PYTHON_COMPAT=( python3_{12..14} )
 PYTHON_REQ_USE="sqlite(+),ssl(+)"
 DISTUTILS_USE_PEP517=no
 DISTUTILS_SINGLE_IMPL=1
@@ -26,15 +26,14 @@ RESTRICT="test"
 DEPEND="
 	dev-libs/glib:2
 	dev-libs/gobject-introspection
-	>=gui-libs/gtk-4.12:4
-	>=gui-libs/libadwaita-1.7:1[introspection]
+	>=gui-libs/gtk-4.18:4
+	>=gui-libs/libadwaita-1.8:1[introspection]
 	net-libs/webkit-gtk:6[introspection]
 "
 RDEPEND="
 	${DEPEND}
-	x11-libs/libnotify[introspection]
 	$(python_gen_cond_dep '
-		app-arch/brotli[python,${PYTHON_USEDEP}]
+		>=app-arch/brotli-1.2.0[python,${PYTHON_USEDEP}]
 		dev-python/beautifulsoup4[${PYTHON_USEDEP}]
 		dev-python/modern-colorthief[${PYTHON_USEDEP}]
 		dev-python/cryptography[${PYTHON_USEDEP}]
@@ -46,9 +45,11 @@ RDEPEND="
 		dev-python/piexif[${PYTHON_USEDEP}]
 		>=dev-python/pillow-11.3.0[${PYTHON_USEDEP}]
 		dev-python/pygobject[${PYTHON_USEDEP}]
+		>=dev-python/pyjwt-2.10.1[${PYTHON_USEDEP}]
+		>=dev-python/pypdf-6.4.2[${PYTHON_USEDEP}]
 		dev-python/python-magic[${PYTHON_USEDEP}]
 		dev-python/rarfile[compressed,${PYTHON_USEDEP}]
-		dev-python/requests[${PYTHON_USEDEP}]
+		>=dev-python/requests-2.32.4[${PYTHON_USEDEP}]
 		dev-python/unidecode[${PYTHON_USEDEP}]
 	')
 "
@@ -56,6 +57,11 @@ BDEPEND="
 	dev-util/blueprint-compiler
 	sys-devel/gettext
 "
+
+PATCHES=(
+	# x11-libs/gdk-pixbuf-2.44.3 is not packaged yet
+	"${FILESDIR}/${P}-revert-pixbuf-2.44.3.patch"
+)
 
 EPYTEST_PLUGINS=( pytest-steps )
 distutils_enable_tests pytest

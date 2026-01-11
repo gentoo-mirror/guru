@@ -1,4 +1,4 @@
-# Copyright 2022-2025 Gentoo Authors
+# Copyright 2022-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -15,15 +15,19 @@ S="${WORKDIR}"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="test"
+IUSE="llvm-libunwind test"
 REQUIRE_USE="${LUA_REQUIRED_USE}"
 
-DEPEND="${LUA_DEPS}"
+DEPEND="
+	${LUA_DEPS}
+	sys-libs/binutils-libs
+"
 RDEPEND="${DEPEND}"
 BDEPEND="
 	app-alternatives/ninja
 	app-arch/unzip
-	sys-libs/libunwind
+	!llvm-libunwind? ( sys-libs/libunwind )
+	llvm-libunwind? ( llvm-runtimes/libunwind )
 "
 RESTRICT="!test? ( test )"
 
@@ -34,8 +38,7 @@ src_prepare() {
 	sed -i "s/CC = gcc/ CC = ${tc-getCC}/" \
 		3rd/lpeglabel/makefile || die
 	# Shipped file doesn't respect CFLAGS/CXXFLAGS/LDFLAGS
-	eapply "${FILESDIR}/${PV}-linux.ninja.patch"
-	eapply "${FILESDIR}/${PN}-${PV}-ucontext_t.patch"
+	eapply "${FILESDIR}/3.16.4-linux.ninja.patch"
 	eapply_user
 	sed -i -e "s/^cc = REPLACE_ME/cc = $(tc-getCC)/" \
 		-e "s/^ar = REPLACE_AR/ar = $(tc-getAR)/" \
@@ -43,6 +46,9 @@ src_prepare() {
 		-e "s/CXXFLAGS/${CXXFLAGS}/" \
 		-e "s/LDFLAGS/${LDFLAGS}/" \
 		3rd/luamake/compile/ninja/linux.ninja || die
+	if [[ $(tc-get-cxx-stdlib) == libc++ ]]; then
+		sed -i "s/-lstdc++fs//" 3rd/luamake/compile/ninja/linux.ninja || die
+	fi
 
 	prefixify_ro "${FILESDIR}/wrapper.sh"
 }
@@ -65,6 +71,9 @@ src_compile() {
 		-e "s/CXXFLAGS/${CXXFLAGS}/" \
 		-e "s/LDFLAGS/${LDFLAGS}/" \
 		build/build.ninja || die
+	if [[ $(tc-get-cxx-stdlib) == libc++ ]]; then
+		sed -i "s/-lstdc++fs//" build/build.ninja || die
+	fi
 
 	use test && eninja -f build/build.ninja || eninja -f build/build.ninja all
 	rm -rf meta/198256b1

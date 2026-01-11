@@ -1,11 +1,12 @@
-# Copyright 2025 Gentoo Authors
+# Copyright 2025-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 DISTUTILS_EXT=1
 DISTUTILS_USE_PEP517=maturin
-PYTHON_COMPAT=( python3_{11..13} )
+PYTHON_COMPAT=( python3_{11..14} )
+RUST_MIN_VER="1.85.0"
 
 inherit cargo distutils-r1 pypi
 
@@ -29,10 +30,12 @@ LICENSE+="
 SLOT="0"
 KEYWORDS="~amd64"
 
-QA_FLAGS_IGNORED="usr/lib.*/py.*/site-packages/modern_colorthief/modern_colorthief.*.so"
+QA_FLAGS_IGNORED="usr/lib.*/py.*/site-packages/modern_colorthief/_modern_colorthief.*.so"
 
+EPYTEST_PLUGINS=()
 distutils_enable_tests pytest
 
 EPYTEST_IGNORE=(
+	# fast_colorthief is not packaged
 	examples/test_time.py
 )
