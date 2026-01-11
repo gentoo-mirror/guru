@@ -189,7 +189,7 @@ app-doc/stdman 2022.07.30 2024.07.05 9999: Formatted C++ stdlib man pages (cppre
 app-doc/sway-wiki 9999: Wiki of gui-wm/sway, rendered to HTML using kramdown-parser-gfm
 app-editors/edit 1.2.0: Microsoft edit
 app-editors/emacs-lsp-booster 0.2.1: Emacs LSP performance booster
-app-editors/imhex 1.37.4-r4: A hex editor for reverse engineers, programmers, and eyesight
+app-editors/imhex 1.38.1: A hex editor for reverse engineers, programmers, and eyesight
 app-editors/kakoune-lsp 18.1.0: Kakoune Language Server Protocol Client
 app-editors/l3afpad 0.8.18.1.11: Simple GTK3 text editor (successor to leafpad)
 app-editors/lapce 0.4.2-r1 9999: Lightning-fast and Powerful Code Editor written in Rust
@@ -693,7 +693,7 @@ dev-perl/Term-Animation 2.6: Animated ASCII Art support for Perl
 dev-php/fpdf 1.86: FPDF is a PHP class which allows to generate PDF files with pure PHP
 dev-python/DAWG-Python 0.7.2: Pure-python reader for DAWGs (DAFSAs) created by dawgdic C++ library.
 dev-python/EbookLib 0.17.1: Ebook library which can handle EPUB2/EPUB3 and Kindle format
-dev-python/ManimPango 0.4.4 0.6.0: Binding for Pango, to use with Manim.
+dev-python/ManimPango 0.4.4 0.6.1: Binding for Pango, to use with Manim.
 dev-python/PyPubSub 4.0.3-r1: Python Publish-Subscribe Package
 dev-python/PythonQwt 0.14.5 0.14.6 0.15.0: Qt plotting widgets for Python
 dev-python/SLPP 1.2.3: Simple lua-python parser
@@ -862,7 +862,7 @@ dev-python/pydub 0.25.1: Manipulate audio with an simple and easy high level int
 dev-python/pyfiglet 1.0.2: Pure-python FIGlet implementation
 dev-python/pyftdi 0.57.1: PyFtdi provides a user-space driver for FTDI devices
 dev-python/pygeotile 1.0.6: Python package to handle tiles and points of different projections.
-dev-python/pyglm 2.8.2: Fast OpenGL Mathematics (GLM) for Python
+dev-python/pyglm 2.8.3: Fast OpenGL Mathematics (GLM) for Python
 dev-python/pygls 2.0.0: A pythonic generic language server
 dev-python/pygments-promql 0.0.9-r1: A PromQL lexer for Pygments
 dev-python/pygsl 2.3.4: Python interface for the GNU scientific library (gsl)
@@ -873,7 +873,7 @@ dev-python/pymorphy3-dicts-uk 2.4.1.1.1663094765: Ukrainian dictionary for PyMor
 dev-python/pympress 1.8.6: A simple and powerful dual-screen PDF reader designed for presentations
 dev-python/pynng 0.8.1: Ergonomic bindings for nanomsg next generation (nng) in Python
 dev-python/pynput 1.7.6 1.8.1: Sends virtual input commands
-dev-python/pypandoc 1.15: Pypandoc provides a thin wrapper for pandoc, a universal document converter
+dev-python/pypandoc 1.16.2: Pypandoc provides a thin wrapper for pandoc, a universal document converter
 dev-python/pyperscan 0.3.0: An opinionated Python binding for Hyperscan
 dev-python/pyproject2ebuild 0.0.3: Convert pyproject.toml to Gentoo ebuilds automatically.
 dev-python/pyqtdarktheme 2.1.0: A flat dark theme for PySide and PyQt.
@@ -924,7 +924,7 @@ dev-python/sentry-sdk 2.30.0: Python client for Sentry
 dev-python/signalstickers-client 3.3.0: A Python client for the Signal stickers API
 dev-python/simplemma 0.9.1: A simple multilingual lemmatizer for Python
 dev-python/sjcl 0.2.1-r1: Decrypt and encrypt 'Stanford Javascript Crypto Library'-compatible messages
-dev-python/skia-pathops 0.8.0-r1: Python bindings for the Skia Path Ops
+dev-python/skia-pathops 0.9.1: Python bindings for the Skia Path Ops
 dev-python/sortedcollections 2.1.0: Apache2 licensed Python sorted collections library
 dev-python/sphinx-click 4.2.0: Sphinx plugin to automatically document click-based applications
 dev-python/sphinx-design 0.6.1: A sphinx extension for designing beautiful responsive web components
@@ -1136,7 +1136,7 @@ games-misc/gay 1.3.4: Colour your text / terminal to be more gay
 games-misc/varlpenis 3.0.4: Generates ASCII-art penis of arbitrary length
 games-puzzle/aaaaxy 1.3.436 1.4.160 1.5.250: A nonlinear 2D puzzle platformer taking place in impossible spaces
 games-puzzle/atris 1.0.7: Alizarin tetris
-games-puzzle/baba-is-you 478f: Puzzle game where you can change the rules by which you play
+games-puzzle/baba-is-you 481d: Puzzle game where you can change the rules by which you play
 games-puzzle/blockout 2.5: BlockOut II is an adaptation of the original Blockout DOS game
 games-puzzle/generic-tetromino-game 9999: Faithful clone of NES Tetris but with new features and mods API
 games-puzzle/katawa-shoujo 1.4.6 1.4.7: Re-Engineered visual novel with accessibility features
@@ -1248,7 +1248,7 @@ gui-apps/lemurs 0.3.2: A TUI Display/Login Manager
 gui-apps/lswt 1.0.4-r1 2.0.0 9999: List Wayland toplevels
 gui-apps/meteo-qt 4.1 4.2: A system tray application for the weather status
 gui-apps/mpvpaper 1.8 9999: A video wallpaper program for wlroots based wayland compositors
-gui-apps/noctalia-shell 3.8.2: Noctalia Configuration for Quickshell
+gui-apps/noctalia-shell 4.0.0: Noctalia Configuration for Quickshell
 gui-apps/nwg 0: meta package package for nwg-shell
 gui-apps/nwg-bar 0.1.5 0.1.6: GTK3-based button bar for wlroots-based compositors
 gui-apps/nwg-clipman 0.2.4-r1 0.2.5: nwg-shell clipboard manager - a GTK3-based GUI for cliphist
@@ -1897,7 +1897,6 @@ sys-devel/clang-bloomberg-p2996 21.0.0_p20250702 9999: Clang fork implementing e
 sys-devel/fcode-utils 1.0.3: Set of utilities to process FCODE, OpenFirmware's byte code
 sys-devel/lcc 2021.01.11-r1: The lcc retargetable ANSI C compiler
 sys-firmware/lenovolegionlinux 9999: Lenovo Legion Linux kernel module
-sys-fs/bcachefs-kmod 1.34.0 9999: Linux bcachefs kernel module for sys-fs/bcachefs-tools
 sys-fs/btrd 0.5.4: The btrfs debugger
 sys-fs/btrfs-dump 20250918: Metadata dumper for btrfs
 sys-fs/btrfs-heatmap 9-r1: Python 3 script to draw a heatmap of a btrfs filesystem
