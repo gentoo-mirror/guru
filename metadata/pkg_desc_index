@@ -92,7 +92,7 @@ app-admin/aws-vault 7.2.0 7.8.6-r2: Securely store and access AWS credentials in
 app-admin/blahajdots 0.6.0 9999: Bespoke dotfile management for sharkgirls.
 app-admin/boinctui 2.7.1 2.7.1-r1: Fullscreen text mode manager for the BOINC client
 app-admin/chamber 2.13.2: Managing secrets in AWS SSM Parameter Store
-app-admin/chezmoi 2.65.2 2.66.0 2.67.0-r1 2.68.1 2.69.0: Manage your dotfiles across multiple machines, securely
+app-admin/chezmoi 2.65.2 2.66.0 2.67.0-r1 2.68.1 2.69.0 2.69.1: Manage your dotfiles across multiple machines, securely
 app-admin/customrescuecd-x86_64 0.12.7 0.12.8: A system rescue cd or usbstick for desktop and server based on gentoo
 app-admin/doasedit 1.0.8 1.0.9 9999: Edit files as root using an unprivileged editor
 app-admin/dotbot 1.20.1: A tool that bootstraps your dotfiles
@@ -383,9 +383,10 @@ app-text/codebook 0.3.28: Spell Checker for Code
 app-text/dooit 3.3.4: A TUI todo manager
 app-text/epubgrep 0.6.2: Search tool for EPUB e-books
 app-text/ford 6.2.5 7.0.8-r1 7.0.9-r1 7.0.10 7.0.11 7.0.11-r1 7.0.12: FORD, automatic documentation generator for modern Fortran programs
+app-text/frog 1.6.0: Extract text from any image, video, QR Code and etc.
 app-text/harper 1.4.0: The language checker for developers.
 app-text/jrnl 4.2.1: Collect your thoughts and notes without leaving the command line
-app-text/komikku 1.86.0: Manga reader for GNOME
+app-text/komikku 1.99.0: Manga reader for GNOME
 app-text/koodo-reader-bin 1.5.1 1.6.3: A modern ebook manager and reader with sync and backup capacities
 app-text/lchat 1.0-r2: Line oriented front end for ii-like chat programs
 app-text/lizard 1.18.0 1.19.0: A simple code complexity analyser, supports most of the popular languages.
@@ -730,6 +731,7 @@ dev-python/cloudflare 2.19.4 4.2.0 4.3.1: Python wrapper for the Cloudflare v4 A
 dev-python/cloup 3.0.8: Click + option groups + constraints + aliases + help themes + ...
 dev-python/cogapp 3.4.1: Cog content generation tool. Small bits of computation for static files
 dev-python/colorspacious 1.1.2: Python library for doing colorspace conversions
+dev-python/colorthief 0.2.1: Module for grabbing the color palette from an image
 dev-python/convertdate 2.4.0: Utils for converting between date formats and calculating holidays
 dev-python/cryptg 0.5.0_p0 0.5.2: Cryptographic utilities for Telegram
 dev-python/dacite 1.8.1: This module simplifies creation of data classes (PEP 557) from dictionaries
@@ -767,6 +769,7 @@ dev-python/googletrans 4.0.0_rc1-r1: Free Google Translate API for Python. Trans
 dev-python/grapheme 0.8.0: Unicode grapheme helpers
 dev-python/graphql-core 3.2.3: Python port of GraphQL.js, the JavaScript reference implementation for GraphQL
 dev-python/graphql-relay 3.2.0: Relay library for graphql-core
+dev-python/gtts 2.5.4: Python library and CLI tool to interface with Google Translate's API
 dev-python/guidata 3.13.2 3.13.4: Library for user interfaces for easy dataset editing and display
 dev-python/guiqwt 4.4.5-r1: Efficient 2D plotting Python library based on PythonQwt
 dev-python/guppy3 3.1.5 3.1.6: A Python Programming Environment & Heap analysis toolset
@@ -774,7 +777,7 @@ dev-python/hachoir 3.3.0: Hachoir is a Python library to view and edit a binary 
 dev-python/hashids 1.3.1: Implements the hashids algorithm in python
 dev-python/hid_ups 1.0.1: Python-based library for interpreting UPS HID data.
 dev-python/hid_ups_exporter 1.0.1: Python-based library for exporting HID UPS data as metrics for Prometheus.
-dev-python/hijridate 2.5.0: Accurate Hijri-Gregorian date converter based on the Umm al-Qura calendar
+dev-python/hijridate 2.6.0: Accurate Hijri-Gregorian date converter based on the Umm al-Qura calendar
 dev-python/http-ece 1.2.1: Encrypted Content Encoding for HTTP
 dev-python/i3ipc 2.2.1-r1 2.2.1-r2: An improved Python library to control i3wm and sway.
 dev-python/icecream 2.1.8: Pythonic task execution
@@ -816,7 +819,7 @@ dev-python/mkdocs-exclude 1.0.2-r1: Lets you exclude files or trees from your ou
 dev-python/mkdocs-git-committers-plugin 0.2.3: A mkdocs plugin for displaying the last commit and a list of contributors.
 dev-python/mkdocs-rss-plugin 1.17.4: MkDocs plugin to generate a RSS feeds.
 dev-python/mobi 0.3.3: Unpack unencrypted mobi files
-dev-python/modern-colorthief 0.1.7: Colorthief but with modern codes
+dev-python/modern-colorthief 0.1.12: Colorthief but with modern codes
 dev-python/moderngl 5.12.0-r1: Modern OpenGL binding for python
 dev-python/moderngl-window 3.1.1: A cross platform utility library for ModernGL
 dev-python/mollie-api-python 3.6.0: Mollie API client for Python
@@ -840,6 +843,7 @@ dev-python/pillow-jxl-plugin 1.3.2: Pillow plugin for JPEG-XL, using Rust for bi
 dev-python/plexapi 4.17.1 4.17.2: Python bindings for the Plex API.
 dev-python/plotext 5.3.0 5.3.2: Plotting on terminal
 dev-python/plum 0.8.7: Pack/Unpack Memory
+dev-python/posthog 7.5.1: Send usage data from your Python code to PostHog
 dev-python/prometheus_exporter 1.0.0 1.1.0 9999: Python Prometheus exporter library
 dev-python/proselint 0.14.0: A linter for prose
 dev-python/protego 0.4.0: Pure-Python robots.txt parser with support for modern conventions
@@ -853,7 +857,7 @@ dev-python/psycopg2cffi 2.9.0-r1: Implementation of the psycopg2 module using cf
 dev-python/ptpython 3.0.29: Python REPL build on top of prompt-toolkit
 dev-python/pwdlib 0.2.1: Modern password hashing for Python
 dev-python/py-himitsu 0.0.9: A python client library for himitsu
-dev-python/py-nanoid 9999: Python Nanoid
+dev-python/py-nanoid 0_pre20220201: Python Nanoid
 dev-python/pyclip 0.7.0-r2 9999: Python clipboard module
 dev-python/pydantic-extra-types 2.10.6: Extra Pydantic types
 dev-python/pydantic-settings 2.11.0-r1 2.12.0: Settings management using Pydantic
@@ -1039,7 +1043,7 @@ dev-util/kubetail-bin 0.7.5 0.8.2 0.9.0 0.10.0 0.10.1: Real-time logging dashboa
 dev-util/lemminx-bin 0.27.0 0.27.1: XML Language Server
 dev-util/libtypec-utils 0.5.2: Library to interface with USB Type-C/Power Delivery devices
 dev-util/lottieconverter 0.2-r2 0.2-r3: Simple lottie (telegram animated sticker) converter
-dev-util/lua-language-server 3.15.0 3.16.0 3.16.1: Lua language server
+dev-util/lua-language-server 3.16.1 3.16.4: Lua language server
 dev-util/measureme 12.0.3: Support crate for rustc's self-profiling feature
 dev-util/mh 1.4.1: Generate help for Makefile
 dev-util/minify-bin 2.24.4: Minifier package that provides HTML5, CSS3, JS, JSON, SVG, and XML minifiers.
