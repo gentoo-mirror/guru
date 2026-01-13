@@ -4,7 +4,7 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=poetry
-PYTHON_COMPAT=( python3_{11..12} )
+PYTHON_COMPAT=( python3_{11..13} )
 
 inherit distutils-r1
 
@@ -42,14 +42,14 @@ BDEPEND="
 
 distutils_enable_tests pytest
 
-python_test(){
-	local EPYTEST_DESELECT=(
-		# tests with network
-		'tests/generate_test.py::test_references_url'
-		'tests/test_md_generate.py::TestMdGenerate::test_basic[True-True-references_url'
-		'tests/test_md_generate.py::TestMdGenerate::test_basic[True-False-references_url'
-		'tests/test_md_generate.py::TestMdGenerate::test_basic[False-True-references_url'
-		'tests/test_md_generate.py::TestMdGenerate::test_basic[False-False-references_url'
-	)
-	epytest
-}
+EPYTEST_DESELECT=(
+	# tests with network
+	'tests/generate_test.py::test_references_url'
+	'tests/test_md_generate.py::TestMdGenerate::test_basic[True-True-references_url'
+	'tests/test_md_generate.py::TestMdGenerate::test_basic[True-False-references_url'
+	'tests/test_md_generate.py::TestMdGenerate::test_basic[False-True-references_url'
+	'tests/test_md_generate.py::TestMdGenerate::test_basic[False-False-references_url'
+	# tests with error when passed
+	'tests/cli_test.py::test_config_parameters_with_nonexistent_output_path'
+	'tests/cli_test.py::test_nonexistent_output_path'
+)

@@ -9,12 +9,13 @@ MY_PN="doublecmd"
 DESCRIPTION="Free cross platform open source file manager with two panels side by side."
 HOMEPAGE="https://doublecmd.sourceforge.io/"
 
+# Switch to github repo taballs instead of sourceforge
 SRC_URI="
 	amd64? (
-		!qt6? ( https://downloads.sourceforge.net/${MY_PN}/${MY_PN}-${PV}.gtk2.x86_64.tar.xz )
-		qt6?  ( https://downloads.sourceforge.net/${MY_PN}/${MY_PN}-${PV}.qt6.x86_64.tar.xz )
+		!qt6? ( https://github.com/${MY_PN}/${MY_PN}/releases/download/v${PV}/${MY_PN}-${PV}.gtk2.x86_64.tar.xz )
+		qt6?  ( https://github.com/${MY_PN}/${MY_PN}/releases/download/v${PV}/${MY_PN}-${PV}.qt6.x86_64.tar.xz )
 	)
-	x86? ( https://downloads.sourceforge.net/${MY_PN}/${MY_PN}-${PV}.gtk2.i386.tar.xz )
+	x86? ( https://github.com/${MY_PN}/${MY_PN}/releases/download/v${PV}/${MY_PN}-${PV}.gtk2.i386.tar.xz )
 "
 
 S="${WORKDIR}/${MY_PN}"

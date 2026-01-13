@@ -18,6 +18,13 @@
 
 # New entries go on top.
 
+# Kostadin Shishmanov <kostadinshishmanov@protonmail.com> (2026-01-12)
+# No longer have a Tidal subscription, and I don't want
+# to leave the package in an unmaintained and possibly
+# unsecure state.
+# Removal on 2026-02-12
+media-sound/tidal-hifi-bin
+
 # Lucio Sauer <watermanpaint@posteo.net> (2026-01-04)
 # Header-only libraries without consumers
 # Removal on 2026-02-04
@@ -41,17 +48,14 @@ phosh-base/phosh-osk-stub
 www-apps/jackett
 
 # David (stkw0) Roman <davidroman96@gmail.com> (2025-07-25)
-# Depends on removed pydantic version.
+# Depends on removed pydantic version. Github homepage has been removed
+# Removal on 2026-02-12.
 dev-python/safety-schemas
 
 # Anna (cybertailor) Vyalkova <cyber+gentoo@sysrq.in> (2025-05-24)
 # Depends on masked net-libs/stem.
 # Masked until upstream supports running without stem.
 www-apps/whoogle-search
-
-# David (stkw0) Roman <davidroman96@gmail.com> (2025-04-30)
-# Depends on removed dev-qt/qtwebengine:5, they should be moved to qtwebengine:6
-sci-physics/openmodelica
 
 # Vivian Heisz (demize) <demize@unstable.systems> (2025-04-20)
 # Depends on ~dev-ruby/prawn-2.34.0, which was removed in

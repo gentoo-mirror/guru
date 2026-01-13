@@ -31,5 +31,6 @@ DEPEND="
 		dev-ml/gen:=[ocamlopt?]
 		dev-ml/csexp:=[ocamlopt?]
 		dev-ml/uutf:=[ocamlopt?]
+		dev-ml/mdx:=[ocamlopt?]
 	)
 "
