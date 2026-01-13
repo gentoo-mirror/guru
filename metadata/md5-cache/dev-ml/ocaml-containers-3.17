@@ -1,6 +1,6 @@
 BDEPEND=dev-lang/ocaml dev-ml/dune
 DEFINED_PHASES=compile install test
-DEPEND=dev-ml/seq:=[ocamlopt?] dev-ml/either:=[ocamlopt?] dev-ml/dune-configurator:=[ocamlopt?] test? ( >=dev-ml/qcheck-0.18:=[ocamlopt?] dev-ml/yojson:=[ocamlopt?] dev-ml/iter:=[ocamlopt?] dev-ml/gen:=[ocamlopt?] dev-ml/csexp:=[ocamlopt?] dev-ml/uutf:=[ocamlopt?] ) dev-lang/ocaml:=[ocamlopt?] dev-ml/dune:=
+DEPEND=dev-ml/seq:=[ocamlopt?] dev-ml/either:=[ocamlopt?] dev-ml/dune-configurator:=[ocamlopt?] test? ( >=dev-ml/qcheck-0.18:=[ocamlopt?] dev-ml/yojson:=[ocamlopt?] dev-ml/iter:=[ocamlopt?] dev-ml/gen:=[ocamlopt?] dev-ml/csexp:=[ocamlopt?] dev-ml/uutf:=[ocamlopt?] dev-ml/mdx:=[ocamlopt?] ) dev-lang/ocaml:=[ocamlopt?] dev-ml/dune:=
 DESCRIPTION=Modular, clean and powerful extension of the OCaml standard library
 EAPI=8
 HOMEPAGE=https://github.com/c-cube/ocaml-containers
@@ -10,7 +10,7 @@ KEYWORDS=~amd64
 LICENSE=BSD-2
 RDEPEND=dev-ml/seq:=[ocamlopt?] dev-ml/either:=[ocamlopt?] dev-ml/dune-configurator:=[ocamlopt?] dev-lang/ocaml:=[ocamlopt?] dev-ml/dune:=
 RESTRICT=!test? ( test )
-SLOT=0/3.16
-SRC_URI=https://github.com/c-cube/ocaml-containers/archive/v3.16.tar.gz -> ocaml-containers-3.16.gh.tar.gz
+SLOT=0/3.17
+SRC_URI=https://github.com/c-cube/ocaml-containers/archive/v3.17.tar.gz -> ocaml-containers-3.17.gh.tar.gz
 _eclasses_=edo	a5e294016aa84979fcb2459749eb80b2	multiprocessing	1e32df7deee68372153dca65f4a7c21f	dune	4304f35da0fafecd98eb149d0b7ed4d4
-_md5_=4f673033e1081564748cf890a0bf43ac
+_md5_=8662d4fb8bbba6409dad4beaa7ff8955
