@@ -1,0 +1,13 @@
+BDEPEND=|| ( >=dev-lang/rust-bin-1.74.1:* >=dev-lang/rust-1.74.1:* )
+DEFINED_PHASES=compile configure install setup test unpack
+DESCRIPTION=PKM Markdown Language Server
+EAPI=8
+HOMEPAGE=https://github.com/Feel-ix-343/markdown-oxide
+INHERIT=cargo
+IUSE=debug
+KEYWORDS=~amd64
+LICENSE=0BSD Apache-2.0 BSD CC0-1.0 ISC MIT MPL-2.0 Unicode-3.0
+SLOT=0
+SRC_URI=https://github.com/Feel-ix-343/markdown-oxide/archive/refs/tags/v0.25.10.tar.gz -> markdown-oxide-0.25.10.tar.gz https://gitlab.com/api/v4/projects/69517529/packages/generic/markdown-oxide/0.25.10/markdown-oxide-0.25.10-deps.tar.xz
+_eclasses_=toolchain-funcs	30214924c0c3b92ec7dbf24fc70d60d3	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	rust	20da14430886f3de143eb101684fcf62	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	aeba1d272f6c2e000912e11d8cf626eb
+_md5_=c3818b7f2e764563209b7bc06b7cf428

@@ -83,7 +83,7 @@ app-accessibility/mimic1 1.3.0.1-r1 9999: Mycroft's TTS engine, based on CMU's F
 app-accessibility/rhvoice 1.14.0 1.16.4: Multilingual text-to-speech engine (metapackage)
 app-accessibility/rhvoice-core 1.14.0-r1 1.16.4: Multilingual text-to-speech engine
 app-accessibility/speakup-tools 20121017: Tools to customize speakup module
-app-accessibility/whisper-cpp 1.7.6 1.8.2: Port of OpenAI's Whisper model in C/C++
+app-accessibility/whisper-cpp 1.7.6 1.8.2 1.8.3: Port of OpenAI's Whisper model in C/C++
 app-admin/agru 0.1.18 0.1.19: A tool for managing GitLab groups and projects
 app-admin/akita 0.1.4: An HTTP log monitoring tool for your terminal
 app-admin/ananicy-cpp 1.1.1-r4: Ananicy rewritten in C++ for much lower CPU and memory usage
@@ -92,13 +92,13 @@ app-admin/aws-vault 7.2.0 7.8.6-r2: Securely store and access AWS credentials in
 app-admin/blahajdots 0.6.0 9999: Bespoke dotfile management for sharkgirls.
 app-admin/boinctui 2.7.1 2.7.1-r1: Fullscreen text mode manager for the BOINC client
 app-admin/chamber 2.13.2: Managing secrets in AWS SSM Parameter Store
-app-admin/chezmoi 2.65.2 2.66.0 2.67.0-r1 2.68.1 2.69.0 2.69.1: Manage your dotfiles across multiple machines, securely
+app-admin/chezmoi 2.65.2 2.66.0 2.67.0-r1 2.68.1 2.69.0 2.69.1 2.69.3: Manage your dotfiles across multiple machines, securely
 app-admin/customrescuecd-x86_64 0.12.7 0.12.8: A system rescue cd or usbstick for desktop and server based on gentoo
 app-admin/doasedit 1.0.8 1.0.9 9999: Edit files as root using an unprivileged editor
 app-admin/dotbot 1.20.1: A tool that bootstraps your dotfiles
 app-admin/fatrace 0.19.0: report system wide file access events
 app-admin/gentoo_update 0.2.4: Gentoo Linux updater
-app-admin/git-credential-oauth 0.17.1: A Git credential helper that securely authenticates using OAuth
+app-admin/git-credential-oauth 0.17.2: A Git credential helper that securely authenticates using OAuth
 app-admin/grub-customizer 5.2.5: A graphical grub2 settings manager
 app-admin/hardinfo2 2.2.13: System Information and Benchmark for Linux Systems
 app-admin/himitsu 0.7 0.8 0.9-r1 9999: Secret storage system for Unix, suitable for storing passwords, keys, ...
@@ -385,6 +385,7 @@ app-text/epubgrep 0.6.2: Search tool for EPUB e-books
 app-text/ford 6.2.5 7.0.8-r1 7.0.9-r1 7.0.10 7.0.11 7.0.11-r1 7.0.12: FORD, automatic documentation generator for modern Fortran programs
 app-text/frog 1.6.0: Extract text from any image, video, QR Code and etc.
 app-text/harper 1.4.0: The language checker for developers.
+app-text/iwe 0.0.60: Markdown based personal knowledge management (PKM) system
 app-text/jrnl 4.2.1: Collect your thoughts and notes without leaving the command line
 app-text/komikku 1.99.0: Manga reader for GNOME
 app-text/koodo-reader-bin 1.5.1 1.6.3: A modern ebook manager and reader with sync and backup capacities
@@ -392,6 +393,7 @@ app-text/lchat 1.0-r2: Line oriented front end for ii-like chat programs
 app-text/lizard 1.18.0 1.19.0: A simple code complexity analyser, supports most of the popular languages.
 app-text/lorien-bin 0.6.0-r2: Infinite canvas drawing/whiteboarding. Made with Godot.
 app-text/lsp 0.5.0_rc4 9999: The least significant pager
+app-text/markdown-oxide 0.25.10: PKM Markdown Language Server
 app-text/notekit 0.2.0: Write your notes in instantly-formatted Markdown
 app-text/owo 0.1.0: OwO-ifies text via regex
 app-text/pandoc-crossref-bin 0.3.17.0f: Pandoc filter for cross-references
@@ -400,7 +402,7 @@ app-text/sioyek 9999: Sioyek is a PDF viewer with a focus on textbooks and resea
 app-text/smu 1.5 9999: Simple markup - markdown like syntax
 app-text/sup2srt 1.0.6_p20250518: Convert SUP graphic subtitles to text-based SRT format
 app-text/texlab 5.23.1 5.24.0: LaTeX Language Server
-app-text/tinymist 0.14.6 9999: An integrated language service for Typst.
+app-text/tinymist 0.14.8 9999: An integrated language service for Typst.
 app-text/tldr 3.3.0 3.4.1: Python command line client for tldr pages
 app-text/typst 0.14.2 9999: A markup-based typesetting system for the sciences
 app-text/typstyle 0.14.4: A beautiful and reliable code formatter for Typst
@@ -1006,7 +1008,7 @@ dev-util/catalyst-lab 1.6.0 1.6.1: An automation tool for building Gentoo releas
 dev-util/catppuccin-catwalk 1.3.2: Soothing pastel previews for the high-spirited!
 dev-util/catppuccin-whiskers 2.4.0: Soothing port creation tool for the high-spirited!
 dev-util/cmakelang 0.6.13: Provides Quality Assurance (QA) tools for cmake
-dev-util/codex 0.80.0: Codex CLI - OpenAI's AI-powered coding agent
+dev-util/codex 0.86.0: Codex CLI - OpenAI's AI-powered coding agent
 dev-util/coq-lsp 0.1.9: Visual Studio Code Extension and Language Server Protocol for Coq
 dev-util/deblob 0.11 0.12 9999: remove binary executables from a directory
 dev-util/distribution-gpg-keys 1.115: Collection of GPG keys used in Linux Distributions
@@ -1029,7 +1031,7 @@ dev-util/git-bug 0.10.1 9999: distributed, offline-first bug tracker
 dev-util/git-pages-cli 1.5.1: Command-line application for publishing sites to git-pages
 dev-util/gitlab-ci-local-bin 4.43.0 4.47.0 4.56.0: Run gitlab pipelines locally as shell executor or docker executor
 dev-util/go-task 3.38.0-r1 3.41.0-r1: A task runner / simpler Make alternative written in Go
-dev-util/google-antigravity 1.13.3 1.14.2: Google's AI-first IDE and agentic development platform
+dev-util/google-antigravity 1.14.2: Google's AI-first IDE and agentic development platform
 dev-util/gshards 0.2: Small helper tools to aid installing Crystal packages in Gentoo
 dev-util/hare-update 0.25.2.0 9999: assist in upgrading a codebase to a newer Hare release
 dev-util/haredo 1.0.2 9999: a simple and unix-idiomatic build automator
@@ -1040,8 +1042,8 @@ dev-util/ios-safari-remote-debug 0_pre20250506: A remote debugger for iOS Safari
 dev-util/ios-webkit-debug-proxy 1.9.2: A DevTools proxy for iOS devices
 dev-util/istyle 1.23_pre20220127: Fast and Free Automatic Formatter for Verilog Source Code
 dev-util/juliaup 1.18.9-r1: Julia installer and version multiplexer
-dev-util/kubetail 0.9.0 0.9.0-r1 0.9.0-r2: Real-time logging dashboard for Kubernetes
-dev-util/kubetail-bin 0.7.5 0.8.2 0.9.0: Real-time logging dashboard for Kubernetes
+dev-util/kubetail 0.9.0 0.9.0-r1 0.9.0-r2 0.10.1 0.11.0: Real-time logging dashboard for Kubernetes
+dev-util/kubetail-bin 0.7.5 0.8.2 0.9.0 0.10.1 0.11.0: Real-time logging dashboard for Kubernetes
 dev-util/lemminx-bin 0.27.0 0.27.1: XML Language Server
 dev-util/libtypec-utils 0.5.2: Library to interface with USB Type-C/Power Delivery devices
 dev-util/lottieconverter 0.2-r2 0.2-r3: Simple lottie (telegram animated sticker) converter
@@ -1091,7 +1093,7 @@ dev-util/wxformbuilder 3.10.1-r1 4.2.1: A wxWidgets GUI Builder
 dev-util/xcd-rgb 1.0.0 9999: colorful hex dump (RGB edition)
 dev-util/xrt 202610.2.21.21 999999: Runtime for AIE and FPGA based platforms
 dev-util/yaml-language-server 1.14.0 1.15.0: Language Server for YAML Files
-dev-vcs/ghorg 1.11.0: Mass repository cloning tool for GitHub/GitLab/Bitbucket
+dev-vcs/ghorg 1.11.0 1.11.7: Mass repository cloning tool for GitHub/GitLab/Bitbucket
 dev-vcs/gitahead 2.7.1 2.7.1-r1: Graphical Git client to help understand and manage source code history
 dev-vcs/gitqlient 1.6.2 1.6.3 9999: Multi-platform Git client written with Qt
 dev-vcs/lazygit 0.56.0 0.57.0 0.58.0 0.58.1 9999: Simple terminal UI for git commands
@@ -1173,7 +1175,7 @@ games-util/input-remapper 2.1.1 2.2.0 9999: A tool to change and program the map
 games-util/itch-bin 25.5.1-r2 26.1.9: itch.io game browser, installer and launcher
 games-util/legendary 0.20.33-r2 0.20.34-r2: A free and open-source replacement for the Epic Games Launcher
 games-util/libtess2 1.0.2: Game and tools oriented refactored version of GLU tesselator
-games-util/mangohud 0.7.2-r1 0.8.0 0.8.1 9999: Vulkan and OpenGL overlay for monitoring FPS, sensors, system load and more
+games-util/mangohud 0.7.2-r1 0.8.0 0.8.1 0.8.2 9999: Vulkan and OpenGL overlay for monitoring FPS, sensors, system load and more
 games-util/minigalaxy 1.4.0: A simple GOG client for Linux
 games-util/modrinth-app-bin 0.10.18 0.10.23 0.10.25: A unique, open source launcher that allows you to play your favorite Minecraft mods, and keep them up to date, all in one neat little package.
 games-util/protonup 0.1.5 9999: Install and Update Proton-GE
@@ -1395,13 +1397,14 @@ media-gfx/mayo 0.9.0: Opensource 3D CAD viewer and converter
 media-gfx/mirage 0.11.2 9999: Fast and simple image viewer based on Python and GTK
 media-gfx/nsxiv 32 33 9999: Neo (or New or Not) Simple (or Small or Suckless) X Image Viewer
 media-gfx/oda-file-converter 26.10.0.0: For converting between different versions of .dwg and .dxf
+media-gfx/orcaslicer-bin 2.3.1: G-code generator for 3D printers (Bambu, Prusa, Voron, Creality)
 media-gfx/pdf4qt 1.5.1.0 9999: Open source PDF WYSIWYG editor based on Qt
 media-gfx/qview 5.0 6.1-r1: Practical and minimal image viewer
 media-gfx/sic 0.22.4: Accessible image processing and conversion from the terminal tool.
 media-gfx/silicon 0.5.2-r1 0.5.2-r2 0.5.3: Create beautiful image of your code
 media-gfx/superpaper 2.2.1: Advanced multi monitor wallpaper manager
 media-gfx/svgcleaner 0.9.5: svgcleaner could help you to clean up your SVG files from the unnecessary data.
-media-gfx/swayimg 4.5 4.6: Lightweight image viewer for Wayland display servers
+media-gfx/swayimg 4.6 4.7: Lightweight image viewer for Wayland display servers
 media-gfx/timg 1.6.2 1.6.3: Terminal image and video viewer
 media-gfx/vimiv-qt 0.9.0-r1: An image viewer with vim-like keybindings
 media-gfx/vpuppr 0.9.0-r1: VTuber application made with Godot 3.4
@@ -1419,7 +1422,7 @@ media-libs/dr_wav 0.13.17: Single-header WAV audio loader and writer library
 media-libs/glad 2.0.8: Multi-Language Vulkan/GL/GLES/EGL/GLX/WGL Loader-Generator
 media-libs/glee 5.4.0-r3: OpenGL Easy Extension library
 media-libs/grok 11.0.0: World's Leading Open Source JPEG 2000 Codec
-media-libs/imgui 1.89.9-r4 1.91.1: Bloat-free graphical user interface library for C++
+media-libs/imgui 1.89.9-r4 1.91.1 1.91.6: Bloat-free graphical user interface library for C++
 media-libs/implot 0.16-r2: Immediate Mode Plotting
 media-libs/libbpg 0.9.8-r1: Better Portable Graphics reference implementation
 media-libs/libunicode 0.6.0 0.7.0: Modern C++20 Unicode library
@@ -1611,7 +1614,7 @@ net-im/revolt-desktop 1.0.8-r2: Revolt Desktop App
 net-im/session-desktop-bin 1.15.1 1.15.2: Session Desktop - Onion routing based messenger
 net-im/sliding-sync 0.99.15 0.99.19: Proxy implementation of MSC3575's sync protocol.
 net-im/teams-for-linux 2.6.14 2.6.17 2.6.18: Unofficial Microsoft Teams client for Linux. Binary precompiled version.
-net-im/vesktop-bin 1.6.1 1.6.3: All-in-one voice and text chat for gamers with Vencord Preinstalled
+net-im/vesktop-bin 1.6.3-r1: All-in-one voice and text chat for gamers with Vencord Preinstalled
 net-im/zapzap 6.2.4: WhatsApp desktop application written in PyQt6 + PyQt6-WebEngine
 net-im/zulip-desktop-bin 5.12.2: Organized chat for distributed teams.
 net-irc/catgirl 2.2 2.2a: TLS-only terminal IRC client
@@ -1649,6 +1652,7 @@ net-misc/commons-downloader 9999: A shell script to bulk download files from Wik
 net-misc/commons-wikimedia-find-by-hash 1.0.0: Search in commons.wikimedia.org by hash (sha1) of provided file
 net-misc/curlie 1.8.2: Curlie is a frontend to curl that adds the ease of use of httpie
 net-misc/cve-client 1.1.1 9999: CLI-based client / toolbox for CVE.org
+net-misc/dpibreak 0.1.1 0.2.1: Simple and efficient DPI circumvention tool in Rust.
 net-misc/eg25-manager 0.4.2: Daemon for managing the Quectel EG25 modem
 net-misc/ffsend 0.2.77 9999: Easily and securely share files from the command line
 net-misc/fileshelter 6.2.0 6.3.0: FileShelter is a “one-click” file sharing web application
@@ -1700,7 +1704,7 @@ net-news/newsflash 3.1.6 3.1.6-r1 3.3.5: Feed Reader written in GTK
 net-news/newsraft 0.30 0.32 0.34 9999: A lightweight feed reader with ncurses user interface inspired by Newsboat.
 net-nntp/inn 2.7.1 2.7.3: InterNetNews - the Internet meets Netnews
 net-nntp/nzb-monkey-go 0.1.17 0.1.18 0.1.19: Golang version of the NZB Monkey with included NZB direct search
-net-nntp/pan 0.163 0.164: A newsreader for GNOME
+net-nntp/pan 0.164 0.165: A newsreader for GNOME
 net-p2p/bisq-bin 1.9.14-r1: The decentralized bitcoin exchange (non-atomic, with arbitration)
 net-p2p/dogecoin-qt 1.14.9 9999: Dogecoin Core Qt for desktop. Downloaded blockchain is under 2.2GB. Much secure.
 net-p2p/feather 2.8.1-r1 9999: A free, open-source Monero wallet
@@ -1733,7 +1737,7 @@ net-voip/vvmd 0.8-r1: vvmd is a lower level daemon that retrieves Visual Voicema
 net-vpn/GlobalProtect-openconnect 2.4.4-r1: Unofficial GlobalProtect VPN client for Linux
 net-vpn/amneziawg-modules 1.0.20251009: AmneziaWG Linux kernel module
 net-vpn/amneziawg-tools 1.0.20250903: Required tools for AmneziaWG, such as awg(8) and awg-quick(8)
-net-vpn/cloudflare-warp 2025.5.893.0 2025.9.558.0: Cloudflare Warp Client
+net-vpn/cloudflare-warp 2025.9.558.0 2025.10.186.0: Cloudflare Warp Client
 net-vpn/fastd 22 23: A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
 net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that require SAML
 net-vpn/mullvadvpn-app 2025.14: Tool used to manage daemon setup
@@ -1777,13 +1781,13 @@ sci-electronics/liblxi 1.20: Implementation of the LAN eXtensions for Instrument
 sci-electronics/logic-bin 2.4.39 2.4.40: Saleae logic analyzer
 sci-electronics/lxi-tools 2.7: Tools to access devices with LXI
 sci-electronics/qucs-s 25.1.2: Quite universal circuit simulator with SPICE
-sci-electronics/sby 0.60: Front-end for Yosys-based formal hardware verification flows
+sci-electronics/sby 0.61: Front-end for Yosys-based formal hardware verification flows
 sci-electronics/slang 9.1 9999: SystemVerilog compiler and language services
 sci-electronics/surfer 0.5.0: Waveform viewer with a focus on a snappy usable interface
 sci-electronics/svls 0.2.11: SystemVerilog language server
 sci-electronics/vcd 221217-r1: VCD file (Value Change Dump) command line viewer
 sci-electronics/verilator 5.044 9999: The fast free Verilog/SystemVerilog simulator
-sci-electronics/yosys 0.60: framework for Verilog RTL synthesis
+sci-electronics/yosys 0.61-r1: framework for Verilog RTL synthesis
 sci-geosciences/google-earth-pro 7.3.6-r1: Google's 3D planet viewer
 sci-libs/dlpack 1.2: Common in-memory tensor structure
 sci-libs/onnxruntime 1.23.2: Cross-platform, high performance ML inferencing and training accelerator
@@ -1832,6 +1836,7 @@ sci-physics/ovito 3.10.4 3.10.5 3.10.5-r1: Open Visualization Tool
 sec-keys/openpgp-keys-aepaneshnikov 20221210: OpenPGP keys used by Alexander Epaneshnikov
 sec-keys/openpgp-keys-emersion 20240714: OpenPGP keys used by Simon Ser
 sec-keys/openpgp-keys-featherwallet 20201209: OpenPGP keys used to sign Feather Wallet releases
+sec-keys/openpgp-keys-google-artifact-registry 20210504: Google Cloud Artifact Registry Automatic Signing Key
 sec-keys/openpgp-keys-jvoisin 20230224 20251029: OpenPGP keys used by Julien Voisin
 sec-keys/openpgp-keys-phosh 2024 2025: OpenPGP keys used to sign Phosh releases
 sec-keys/openpgp-keys-russallbery 20250000: OpenPGP keys used by Russ Allbery (Eagle)
@@ -1903,7 +1908,7 @@ sys-devel/clang-bloomberg-p2996 21.0.0_p20250702 9999: Clang fork implementing e
 sys-devel/fcode-utils 1.0.3: Set of utilities to process FCODE, OpenFirmware's byte code
 sys-devel/lcc 2021.01.11-r1: The lcc retargetable ANSI C compiler
 sys-firmware/lenovolegionlinux 9999: Lenovo Legion Linux kernel module
-sys-fs/bcachefs-kmod 1.34.0 9999: Linux bcachefs kernel module for sys-fs/bcachefs-tools
+sys-fs/bcachefs-kmod 1.35.0 9999: Linux bcachefs kernel module for sys-fs/bcachefs-tools
 sys-fs/btrd 0.5.4: The btrfs debugger
 sys-fs/btrfs-dump 20250918: Metadata dumper for btrfs
 sys-fs/btrfs-heatmap 9-r1: Python 3 script to draw a heatmap of a btrfs filesystem
@@ -1962,7 +1967,6 @@ www-apps/forgejo 11.0.7 12.0.4 13.0.2: A self-hosted lightweight software forge
 www-apps/freshrss 1.26.3: A free, self-hostable news aggregator
 www-apps/goatcounter 2.6.0: Easy web analytics without tracking of personal data
 www-apps/invidious 2025.09.13.0-r2: Invidious is an alternative front-end to YouTube
-www-apps/jackett 0.22.1363: API Support for your favorite torrent trackers
 www-apps/laminar 1.3-r1: Fast and lightweight Continuous Integration
 www-apps/libmedium 2024.06.10: Alternative private front-end to Medium
 www-apps/mycorrhiza 1.15.1 9999: Git-based wiki engine written in Go using mycomarkup
@@ -1983,7 +1987,7 @@ www-client/mullvad-browser-bin 15.0.4: The Mullvad Browser is developed to minim
 www-client/nyxt 3.11.8 3.12.0 9999: Nyxt - the hacker's power-browser
 www-client/torbrowser-launcher 0.3.9: A program to help you securely download and run Tor Browser
 www-client/vimb 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
-www-client/yandex-browser 25.10.1.1173_p1: The web browser from Yandex
+www-client/yandex-browser 25.12.1.1217_p1: The web browser from Yandex
 www-client/zen-bin 1.16.4b 1.17.13b 1.17.14b 1.17.15b: Zen Browser - A fast, privacy-focused Firefox fork
 www-misc/dufs 0.40.0: Dufs is a distinctive utility file server
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits

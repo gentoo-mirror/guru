@@ -1,0 +1,15 @@
+BDEPEND=app-alternatives/gpg test? ( app-crypt/pgpdump )
+DEFINED_PHASES=compile install test
+DESCRIPTION=Google Cloud Artifact Registry Automatic Signing Key
+EAPI=8
+HOMEPAGE=https://docs.cloud.google.com/artifact-registry/docs
+INHERIT=sec-keys
+IUSE=test
+KEYWORDS=~amd64 ~arm64
+LICENSE=public-domain
+PROPERTIES=test_network
+RESTRICT=!test? ( test ) test
+SLOT=0
+SRC_URI=https://packages.cloud.google.com/apt/doc/apt-key.gpg -> openpgp-keys-google-artifact-registry-20210504.asc
+_eclasses_=eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	edo	a5e294016aa84979fcb2459749eb80b2	sec-keys	ad87ecc577cf66bca0f31a392060765a
+_md5_=3a4d2e1593dc8d25c0a74b6034834a22
