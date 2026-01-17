@@ -73,7 +73,7 @@ src_configure() {
 src_install() {
 
 	doicon -s 256 "${FILESDIR}/vesktop-bin.png"
-	domenu "${FILESDIR}/vesktop-bin.desktop"
+	domenu "${FILESDIR}/vesktop.desktop"
 
 	exeinto "${DESTDIR}"
 
@@ -95,4 +95,5 @@ src_install() {
 
 pkg_postinst() {
 	optfeature "Desktop notifications support" x11-libs/libnotify
+	xdg_pkg_postinst
 }

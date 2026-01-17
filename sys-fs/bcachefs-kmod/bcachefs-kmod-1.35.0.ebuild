@@ -10,7 +10,7 @@ MY_PV_MAJOR_MINOR=${PV%.*}
 MODULE_S="module/src/${PN%-*}-${PV}"
 VERIFY_SIG_OPENPGP_KEY_PATH=/usr/share/openpgp-keys/kentoverstreet.asc
 
-inherit flag-o-matic linux-mod-r1 toolchain-funcs unpacker verify-sig
+inherit linux-mod-r1 unpacker verify-sig
 
 DESCRIPTION="Linux bcachefs kernel module for sys-fs/bcachefs-tools"
 HOMEPAGE="https://bcachefs.org/"
@@ -35,11 +35,10 @@ BDEPEND="
 "
 
 pkg_setup() {
+	# See https://github.com/koverstreet/bcachefs-tools/blob/master/libbcachefs/Kconfig
 	local CONFIG_CHECK="
 		BLOCK
-		CRC_OPTIMIZATIONS
 		EXPORTFS
-		CLOSURES
 		CRC32
 		CRC64
 		FS_POSIX_ACL
@@ -58,8 +57,6 @@ pkg_setup() {
 		XOR_BLOCKS
 		XXHASH
 		SYMBOLIC_ERRNAME
-		MIN_HEAP
-		XARRAY_MULTI
 	"
 	use debug && CONFIG_CHECK+="
 		DEBUG_INFO
@@ -88,15 +85,8 @@ src_unpack() {
 
 src_prepare() {
 	default
-	tc-export CC
 
 	sed -i s/^VERSION=.*$/VERSION=${PV}/ Makefile || die
-	sed \
-		-e '/^CFLAGS/s:-O2::' \
-		-e '/^CFLAGS/s:-g::' \
-		-i Makefile || die
-	append-lfs-flags
-
 	emake DESTDIR="${WORKDIR}" PREFIX="/module" install_dkms
 }
 
