@@ -9,7 +9,7 @@ CHROMIUM_LANGS="af am ar bg bn ca cs da de el en-GB en-US es-419 es et fa fi
 
 VERIFY_SIG_OPENPGP_KEY_PATH=/usr/share/openpgp-keys/google-artifact-registry.asc
 
-inherit chromium-2 optfeature pax-utils unpacker verify-sig xdg
+inherit chromium-2 eapi9-pipestatus optfeature pax-utils unpacker verify-sig xdg
 
 BASE_SRC_URI="https://us-central1-apt.pkg.dev/projects/antigravity-auto-updater-dev/pool/antigravity-debian"
 
@@ -24,6 +24,7 @@ HOMEPAGE="https://antigravity.google/"
 SRC_URI="
 	amd64? ( ${BASE_SRC_URI}/antigravity_${PV}-${BUILD_ID_AMD64}_amd64_${DEB_HASH_AMD64}.deb -> ${P}_amd64.deb )
 	arm64? ( ${BASE_SRC_URI}/antigravity_${PV}-${BUILD_ID_ARM64}_arm64_${DEB_HASH_ARM64}.deb -> ${P}_arm64.deb )
+	verify-sig? ( https://home.cit.tum.de/~salu/distfiles/${P}-verify-sig.tar.xz )
 "
 S="${WORKDIR}"
 
@@ -90,38 +91,31 @@ pkg_setup() {
 
 src_unpack() {
 	if use verify-sig; then
+		unpack ${P}-verify-sig.tar.xz
+
 		# Verify APT chain of trust:
 		# InRelease (signed) -> Packages (checksum) -> .deb (checksum)
 		# ${BASE_SRC_URI}/InRelease
 		# ${BASE_SRC_URI}/main/binary-${ARCH}/Packages
-		verify-sig_verify_message "${FILESDIR}/InRelease" Release || \
-			die "InRelease signature verification failed"
+		verify-sig_verify_message InRelease - \
+			| sed "s,[0-9]\+ main/binary-${ARCH}.*,Packages.${ARCH}," \
+			| verify-sig_verify_unsigned_checksums - sha256 Packages.${ARCH}
+		pipestatus || die
 
-		sed -n '/^SHA256:/,/^[^ ]/p' Release                       \
-			| awk -v f="${FILESDIR}/Packages.${ARCH}"              \
-				'/binary-'"${ARCH}"'\/Packages/ {print $1 "  " f}' \
-			| sha256sum -c --strict - || die "Packages hash mismatch"
-
-		local version="${PV}-"
-		use amd64 && version+="${BUILD_ID_AMD64}"
-		use arm64 && version+="${BUILD_ID_ARM64}"
-		awk -v v="${version}" -v f="${DISTDIR}/${P}_${ARCH}.deb" \
-			'BEGIN {RS=""} {
-				m=0; h=""
-				for(i=1; i<NF; ++i) {
-					if ($i == "Version:" && $(i+1) == v) m=1
-					if ($i == "SHA256:") { h=$(i+1); break }
-				}
-				if (m && h) { print h "  " f; exit }
-			}' "${FILESDIR}/Packages.${ARCH}" \
-			| sha256sum -c --strict - || die ".deb archive hash mismatch"
+		cd "${DISTDIR}" > /dev/null || die
+		local BUILD_ID_ARCH=BUILD_ID_${ARCH^^}
+		sed -n "/^Version: ${PV}-${!BUILD_ID_ARCH}/,/^SHA256:/p" \
+			"${WORKDIR}/Packages.${ARCH}" \
+			| sed "s,^SHA256: \(.*\),\1 ${P}_${ARCH}.deb," \
+			| verify-sig_verify_unsigned_checksums - sha256 ${P}_${ARCH}.deb
+		pipestatus || die
 	fi
 }
 
 src_install() {
 	dodir /
 	cd "${ED}" || die
-	unpacker
+	unpacker ${P}_${ARCH}.deb
 
 	mkdir -p "${AG_HOME_BASE}" || die
 	mv "usr/share/antigravity" "${AG_HOME_BASE}/" || die
