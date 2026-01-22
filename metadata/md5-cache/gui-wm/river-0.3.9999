@@ -1,0 +1,14 @@
+BDEPEND=dev-libs/wayland-protocols dev-util/wayland-scanner man? ( app-text/scdoc ) || ( dev-lang/zig:0.15[llvm(+)?] dev-lang/zig-bin:0.15 ) || ( dev-lang/zig:0.15 dev-lang/zig-bin:0.15 ) virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile configure install postinst prepare setup test unpack
+DEPEND=dev-libs/libevdev dev-libs/libinput:= dev-libs/wayland gui-libs/wlroots:0.19[X?] x11-libs/libxkbcommon[wayland,X?] x11-libs/pixman
+DESCRIPTION=A dynamic tiling Wayland compositor
+EAPI=8
+HOMEPAGE=https://isaacfreund.com/software/river/ https://codeberg.org/river/river-classic
+INHERIT=zig git-r3
+IUSE=X +llvm man
+LICENSE=GPL-3+ MIT
+PROPERTIES=live
+RDEPEND=dev-libs/libevdev dev-libs/libinput:= dev-libs/wayland gui-libs/wlroots:0.19[X?] x11-libs/libxkbcommon[wayland,X?] x11-libs/pixman
+SLOT=0/classic
+_eclasses_=multiprocessing	1e32df7deee68372153dca65f4a7c21f	edo	a5e294016aa84979fcb2459749eb80b2	toolchain-funcs	30214924c0c3b92ec7dbf24fc70d60d3	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	linux-info	efd923656513c879204fec6638eadee5	zig-utils	890550806aab0e31ba9ce482c404b3fb	zig	ab4efc32d65701e6797bcf22ed4cee27	git-r3	875eb471682d3e1f18da124be97dcc81
+_md5_=1a3d5d37ddd98b7e5a53538fe9565988
