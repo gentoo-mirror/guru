@@ -20,14 +20,14 @@ RDEPEND="
 	gui-apps/quickshell
 	app-misc/brightnessctl
 	dev-vcs/git
+	media-gfx/imagemagick
 "
 
 src_install() {
-	# Install configuration files
 	insinto /etc/xdg/quickshell/noctalia-shell
 	doins -r .
+	fperms 0755 "/etc/xdg/quickshell/noctalia-shell/Scripts/bash/template-apply.sh"
 
-	# Install systemd unit
 	systemd_douserunit Assets/Services/systemd/noctalia.service
 }
 
@@ -41,6 +41,5 @@ pkg_postinst() {
 	optfeature "Night light functionality" gui-apps/wlsunset
 	optfeature "Enable 'Portal' option in screen recorder" sys-apps/xdg-desktop-portal
 	optfeature "Calendar events support" gnome-extra/evolution-data-server
-	optfeature "Material You color scheme generation" x11-misc/matugen
 	optfeature "Xwayland-satellite for xwayland support on niri" gui-apps/xwayland-satellite
 }
