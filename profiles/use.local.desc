@@ -832,6 +832,8 @@ sci-misc/llama-cpp:flexiblas - Build a FlexiBLAS backend
 sci-misc/llama-cpp:hip - Build a HIP (ROCm) backend
 sci-misc/llama-cpp:openblas - Build an OpenBLAS backend
 sci-misc/llama-cpp:opencl - Build an OpenCL backend, so far only works on Adreno and Intel GPUs
+sci-misc/llama-cpp:rocm - Build a HIP (ROCm) backend
+sci-misc/llama-cpp:wmma - Use rocWMMA to enhance flash attention performance
 sci-ml/ollama:cuda - Enable NVIDIA CUDA support
 sci-ml/ollama:mkl - Use sci-libs/mkl for blas, lapack and sparse blas routines
 sci-ml/ollama:rocm - Enable ROCm gpu computing support
