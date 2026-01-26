@@ -1,0 +1,15 @@
+BDEPEND=virtual/pkgconfig
+DEFINED_PHASES=install postinst setup
+DESCRIPTION=Noctalia Configuration for Quickshell
+EAPI=8
+HOMEPAGE=https://github.com/noctalia-dev/noctalia-shell
+INHERIT=optfeature python-single-r1 systemd
+IUSE=python_single_target_python3_12 python_single_target_python3_13 python_single_target_python3_14
+KEYWORDS=~amd64
+LICENSE=MIT
+RDEPEND=python_single_target_python3_12? ( dev-lang/python:3.12 ) python_single_target_python3_13? ( dev-lang/python:3.13 ) python_single_target_python3_14? ( dev-lang/python:3.14 ) gui-apps/quickshell app-misc/brightnessctl dev-vcs/git media-gfx/imagemagick
+REQUIRED_USE=^^ ( python_single_target_python3_12 python_single_target_python3_13 python_single_target_python3_14 )
+SLOT=0
+SRC_URI=https://github.com/noctalia-dev/noctalia-shell/releases/download/v4.2.2/noctalia-v4.2.2.tar.gz
+_eclasses_=optfeature	538bce96e5589935b57e178e8635f301	multiprocessing	1e32df7deee68372153dca65f4a7c21f	toolchain-funcs	30214924c0c3b92ec7dbf24fc70d60d3	python-utils-r1	dbb8c4d794033ad7e7221eaf567a6c90	python-single-r1	47d8ac9be330c9366112b78fd4f8ce57	systemd	a964c0cbe818b5729da1dbfcee5be861
+_md5_=7a3a2d01586e050c65b90d273698369b

@@ -356,7 +356,7 @@ app-portage/portagecfg 2.4.0-r1: Utility to write Portage config files in an eas
 app-portage/quantum-resolver 9999: A WIP portage dependency resolver
 app-portage/showbuild 0.9.1-r2: Script to follow log of running portage builds
 app-portage/zig-ebuilder 9999: Semi-automatic generator for Zig ebuilds
-app-shells/carapace 1.5.7: Multi-shell multi-command argument completer
+app-shells/carapace 1.5.7 1.6.0: Multi-shell multi-command argument completer
 app-shells/direnv 2.36.0 2.37.1 9999: Environment variable manager for shell
 app-shells/elvish 0.19.2 0.20.1 0.21.0: Expressive programming language and a versatile interactive shell
 app-shells/fre 0.4.1: A command line frecency tracking tool
@@ -380,7 +380,7 @@ app-shells/zsh-history-substring-search 1.0.2 1.1.0: ZSH port of Fish history se
 app-text/OCRmyPDF 16.10.2: OCRmyPDF adds an OCR text layer to scanned PDF files
 app-text/cmark-gfm 0.29.0.13: GitHub's fork of cmark
 app-text/code-minimap 0.6.8: A high performance code minimap generator
-app-text/codebook 0.3.28: Spell Checker for Code
+app-text/codebook 0.3.29: Spell Checker for Code
 app-text/dooit 3.3.4: A TUI todo manager
 app-text/epubgrep 0.6.2: Search tool for EPUB e-books
 app-text/ford 6.2.5 7.0.8-r1 7.0.9-r1 7.0.10 7.0.11 7.0.11-r1 7.0.12: FORD, automatic documentation generator for modern Fortran programs
@@ -443,7 +443,7 @@ dev-build/cargo-make 0.37.24: Rust task runner and build tool
 dev-build/fobis 3.1.0: FoBiS.py, a Fortran Building System for poor men
 dev-build/fpm 0.9.0 0.10.0 0.11.0 0.12.0: Fortran Package Manager (fpm)
 dev-build/fypp 3.2: Fypp - Python powered Fortran preprocessor
-dev-build/pdpmake 2.0.3: Public domain POSIX make
+dev-build/pdpmake 2.0.4: Public domain POSIX make
 dev-build/qtilitools 0.1.2: Scripts/commands used in the Qtilities organization
 dev-build/xmake 3.0.6 9999: A cross-platform build utility based on Lua
 dev-cpp/blurhash 0.2.0 0.2.0-r1: C++ blurhash encoder/decoder
@@ -451,7 +451,7 @@ dev-cpp/boxed-cpp 1.4.3: Boxing primitive types in C++
 dev-cpp/coeurl 0.3.0 0.3.1: A simple async wrapper around CURL for C++
 dev-cpp/cpp-jwt 1.5_pre20220727: JSON Web Token library for C++
 dev-cpp/cpp-utilities 5.31.1 5.32.0: Useful C++ classes and routines
-dev-cpp/cpprestsdk 2.10.19-r6 2.10.19-r7: A Microsoft project for cloud-based client-server communication.
+dev-cpp/cpprestsdk 2.10.19-r6 2.10.19-r8: A Microsoft project for cloud-based client-server communication.
 dev-cpp/dpp 10.0.23 10.0.24 10.0.25 10.0.29 10.0.30 10.0.33: Lightweight C++ Discord bot library
 dev-cpp/drogon 1.9.5 1.9.6: C++14/17 based HTTP web application framework
 dev-cpp/fast_double_parser 0.8.1: Parse strings into double floating-point values
@@ -848,7 +848,7 @@ dev-python/pillow-jxl-plugin 1.3.2: Pillow plugin for JPEG-XL, using Rust for bi
 dev-python/plexapi 4.17.1 4.17.2: Python bindings for the Plex API.
 dev-python/plotext 5.3.0 5.3.2: Plotting on terminal
 dev-python/plum 0.8.7: Pack/Unpack Memory
-dev-python/posthog 7.5.1: Send usage data from your Python code to PostHog
+dev-python/posthog 7.6.0: Send usage data from your Python code to PostHog
 dev-python/prometheus_exporter 1.0.0 1.1.0 9999: Python Prometheus exporter library
 dev-python/proselint 0.14.0: A linter for prose
 dev-python/protego 0.4.0: Pure-Python robots.txt parser with support for modern conventions
@@ -957,7 +957,7 @@ dev-python/templated-dictionary 1.6: Python dictionary with Jinja2 expansion
 dev-python/tempus-themes 2.3.0.20220206: Accessible themes for Pygments
 dev-python/tempy 1.4.0: A simple, visually pleasing weather report in your terminal
 dev-python/termynal 0.13.1: A lightweight and modern animated terminal window
-dev-python/textual 7.3.0: Modern Text User Interface framework
+dev-python/textual 7.4.0: Modern Text User Interface framework
 dev-python/textual-dev 1.7.0 1.8.0: Modern Text User Interface framework
 dev-python/textual-serve 1.1.2: Serve Textual apps locally
 dev-python/thonny 4.1.7: Thonny is a Python IDE meant for learning programming
@@ -1024,7 +1024,7 @@ dev-util/find-work-bugzilla 1.0.0-r1: Personal advice utility for Gentoo package
 dev-util/find-work-pkgcheck 1.0.0: Personal advice utility for Gentoo package maintainers: pkgcheck plugin
 dev-util/find-work-repology 1.0.0: Personal advice utility for Gentoo package maintainers: Repology plugin
 dev-util/flatpakify 1.0.5 1.0.6: Tool to create Flatpak bundles from Portage ebuilds
-dev-util/forgejo-runner 12.5.3 9999: A daemon that connects to a Forgejo instance and runs jobs for CI
+dev-util/forgejo-runner 12.5.3 12.6.1 9999: A daemon that connects to a Forgejo instance and runs jobs for CI
 dev-util/fortls 2.13.0 3.0.0 3.1.1 3.1.2 3.2.2: Fortran Language Server (fortls)
 dev-util/fortran-test-drive 0.4.0 0.5.0: The simple testing framework (for Fortran)
 dev-util/gammaray 3.3.0 3.3.1: High-level runtime introspection tool for Qt applications
@@ -1121,7 +1121,7 @@ games-board/fairy-stockfish 14.0.1: Chess variant engine derived from Stockfish 
 games-board/openriichi 0.2.1.1-r1: OpenRiichi is an open source Japanese Mahjong client
 games-board/rmahjong 0.4_p20201106: Riichi Mahjong, the Japanese variant of the Chinese game Mahjong for 4 players
 games-emulation/RetroArch 1.21.0 1.22.2: RetroArch is a frontend for emulators, game engines and media players
-games-emulation/azahar 2124: An open-source 3DS emulator project based on Citra
+games-emulation/azahar 2124.2: An open-source 3DS emulator project based on Citra
 games-emulation/dosbox-x 2025.12.01 2026.01.02 9999: Complete, accurate DOS emulator forked from DOSBox
 games-emulation/eden 0.0.4: Nintendo Switch Emulator
 games-emulation/flycast 9999: Sega Dreamcast, Naomi and Atomiswave emulator
@@ -1181,7 +1181,7 @@ games-util/legendary 0.20.34-r2: A free and open-source replacement for the Epic
 games-util/libtess2 1.0.2: Game and tools oriented refactored version of GLU tesselator
 games-util/mangohud 0.7.2-r1 0.8.0 0.8.1 0.8.2 9999: Vulkan and OpenGL overlay for monitoring FPS, sensors, system load and more
 games-util/minigalaxy 1.4.0: A simple GOG client for Linux
-games-util/modrinth-app-bin 0.10.18 0.10.23 0.10.25: A unique, open source launcher that allows you to play your favorite Minecraft mods, and keep them up to date, all in one neat little package.
+games-util/modrinth-app-bin 0.10.27: A unique, open source launcher that allows you to play your favorite Minecraft mods, and keep them up to date, all in one neat little package.
 games-util/oversteer 0.8.3 9999: Steering Wheel Manager for Linux
 games-util/protonup 0.1.5 9999: Install and Update Proton-GE
 games-util/qzdl 20250103 99999999: Qt version of the ZDL ZDoom launcher
@@ -1196,7 +1196,7 @@ gnome-extra/commit 4.1-r1 4.2 4.3: Commit message editor
 gnome-extra/extension-manager 0.6.3-r1 0.6.5 9999: A native tool for browsing, installing, and managing GNOME Shell Extensions
 gnome-extra/iio-sensor-proxy 3.7 3.8: IIO sensors to D-Bus proxy
 gnome-extra/junction 1.7-r1: Application/browser chooser
-gnome-extra/nautilus-open-any-terminal 0.7.0: A Nautilus extension that adds a context-entry for opening any terminal
+gnome-extra/nautilus-open-any-terminal 0.8.0: A Nautilus extension that adds a context-entry for opening any terminal
 gnome-extra/palette 3.0.0: Colour Palette tool
 gnome-extra/portfolio 0.9.14: A minimalist file manager for those who want to use Linux mobile devices
 gnome-extra/vvmplayer 1.4-r1: Visual Voicemail Player
@@ -1262,7 +1262,7 @@ gui-apps/lemurs 0.3.2 0.4.0: A TUI Display/Login Manager
 gui-apps/lswt 1.0.4-r1 2.0.0 9999: List Wayland toplevels
 gui-apps/meteo-qt 4.1 4.2: A system tray application for the weather status
 gui-apps/mpvpaper 1.8 9999: A video wallpaper program for wlroots based wayland compositors
-gui-apps/noctalia-shell 4.2.0: Noctalia Configuration for Quickshell
+gui-apps/noctalia-shell 4.2.2 9999: Noctalia Configuration for Quickshell
 gui-apps/nwg 0: meta package package for nwg-shell
 gui-apps/nwg-bar 0.1.5 0.1.6: GTK3-based button bar for wlroots-based compositors
 gui-apps/nwg-clipman 0.2.4-r1 0.2.5: nwg-shell clipboard manager - a GTK3-based GUI for cliphist
@@ -1295,7 +1295,7 @@ gui-apps/sway-launcher-desktop 1.7.0: TUI Application launcher with Desktop Entr
 gui-apps/swaykbdd 1.4: Per-window keyboard layout switcher for Sway
 gui-apps/swaylock-effects 1.7.0.0 9999: Swaylock, with fancy effects
 gui-apps/swaylock-plugin 1.8.0 9999: Fork of Swaylock that supports animated backgrounds
-gui-apps/swaync 0.11.0 0.12.3: A simple notification daemon with a GTK gui for notifications and control center
+gui-apps/swaync 0.11.0 0.12.3 0.12.4: A simple notification daemon with a GTK gui for notifications and control center
 gui-apps/swayosd 0.1.0 0.2.1: GTK based on screen display for keyboard shortcuts like caps-lock and volume
 gui-apps/swayr 0.28.2: A LRU window-switcher (and more) for the sway window manager
 gui-apps/swayrbar 0.5.0: A swaybar-protocol implementation for sway/swaybar
@@ -1355,6 +1355,7 @@ kde-misc/kio-gemini 20241109 20250730: Gemini KIO worker
 mail-client/betterbird-bin 140.2.1: Betterbird is a fine-tuned version of Mozilla Thunderbird.
 mail-client/mailspring-bin 1.17.1: A beautiful, fast and fully open source mail client for Mac, Windows and Linux
 mail-client/proton-mail-bin 1.11.0: Beta Client for Proton Mail
+mail-client/tutanota-desktop-bin 319.260107.1: Desktop client for Tutanota, the secure e-mail service
 mail-filter/postfix-mta-sts-resolver 1.4.0: Daemon which provides TLS client policy for Postfix via socketmap
 media-fonts/atkinson-hyperlegible 20200514: Braille Institute's Atkinson Hyperlegible font.
 media-fonts/blobmoji 15.0: Noto Emoji with extended Blob support
@@ -1363,6 +1364,7 @@ media-fonts/dseg 0.46: A free font which imitate LCD Display
 media-fonts/firago 1.001: A continuation of FiraSans
 media-fonts/firge 0.3.0-r1: Firge is a composite font of Fira Mono and GenShin-Gothic.
 media-fonts/gohufont 2.1_p20170627: A monospace bitmap font
+media-fonts/google-sans 20180418.123827: Current generation of Google’s brand typeface.
 media-fonts/hackgen 2.10.0: HackGen is a composite font of Hack and GenJyuu-Gothic.
 media-fonts/inconsolata_dz 20201205: A beautiful sans-serif monotype font designed for code listings
 media-fonts/inter 4.1: Inter font family
@@ -1495,7 +1497,7 @@ media-sound/pipewire-module-xrdp 0.1_pre20230609-r1 0.2: PipeWire module which e
 media-sound/plexamp 4.13.0: A dedicated music player for your Plex media library.
 media-sound/qbitmplayer 3.1.2 3.2.0-r1 3.3.1: Music Player written in C++ & Qt.
 media-sound/qloud 1.4.2: Tool to measure loudspeaker frequency and step responses and distortions
-media-sound/qobuz-player 0.6.4: Tui, web and rfid player for Qobuz
+media-sound/qobuz-player 0.6.4 0.6.5: Tui, web and rfid player for Qobuz
 media-sound/rmpc 0.9.0 0.10.0 9999: A beautiful and configurable TUI client for MPD
 media-sound/rsgain 3.5.1 3.5.3: Really Simple replay Gain calculator for tagging audio files
 media-sound/shortwave 5.0.0: An internet radio player
@@ -1508,7 +1510,7 @@ media-sound/spotube-bin 3.8.0: An open source, cross-platform Spotify client
 media-sound/supersonic 0.19.0 0.20.0: A lightweight and full-featured cross-platform desktop client
 media-sound/tenacity 1.3.4-r4: Easy-to-use, privacy-friendly, FLOSS, cross-platform multi-track audio editor
 media-sound/tidal-hifi-bin 5.16.0-r1 5.17.0: Web version of Tidal running in electron with Hi-Fi support thanks to Widevine.
-media-sound/yandex-music 5.78.7 5.79.7 5.81.4 5.82.0: Yandex Music streaming service
+media-sound/yandex-music 5.78.7 5.79.7 5.81.4 5.82.0 5.83.0: Yandex Music streaming service
 media-sound/yewtube 2.12.0 9999: Terminal-based YouTube player and downloader
 media-sound/ymuse 0.22: GTK client for Music Player Daemon (MPD) written in Go
 media-sound/youtube-music-bin 3.10.0 3.11.0: YouTube Music Desktop App bundled with custom plugins
@@ -1518,7 +1520,7 @@ media-video/clapper 0.6.1 0.8.0: Modern and user-friendly media player
 media-video/cleanit 0.4.9: A command line tool that helps you to keep your subtitles clean
 media-video/delfin 0.4.7 0.4.8: Stream movies and TV shows from Jellyfin
 media-video/dependency-control 0.6.4: Package manager for Aegisub automation scripts
-media-video/gpu-screen-recorder 5.8.1 5.10.2 5.11.2 5.11.5 9999: A screen recorder that has minimal impact on system performance
+media-video/gpu-screen-recorder 5.10.2 5.11.2 5.11.5 5.12.2 9999: A screen recorder that has minimal impact on system performance
 media-video/gpu-screen-recorder-gtk 5.7.8 9999: GTK frontend for gpu-screen-recorder.
 media-video/kikoplay 0.9.3 9999: KikoPlay is a full-featured danmu player
 media-video/kooha 2.2.3-r2: GTK4 screen recorder for Wayland
@@ -1602,7 +1604,7 @@ net-im/gurk-rs 0.7.1 9999: Signal messenger client for terminal
 net-im/heisenbridge 1.15.3 1.15.4: Bouncer-style Matrix IRC bridge
 net-im/iamb 0.0.8 0.0.9 0.0.10: A Matrix chat client that uses Vim keybindings
 net-im/jitsi-meet 2025.9.1 2025.10.0: Desktop application for Jitsi Meet built with Electron
-net-im/legcord-bin 1.1.4 1.1.5 1.1.6: Legcord is a custom client designed to enhance your Discord experience.
+net-im/legcord-bin 1.1.6-r1: Legcord is a custom client designed to enhance your Discord experience.
 net-im/manyverse-bin 0.2310.9: A social network off the grid with append-only protocol (no edits) on blockchain
 net-im/mastoposter 0.2: Configurable reposter from Mastodon-compatible Fediverse servers
 net-im/matterhorn-bin 90000.1.0 90000.1.1: Terminal based Mattermost client
@@ -1914,7 +1916,7 @@ sys-devel/clang-bloomberg-p2996 21.0.0_p20250702 9999: Clang fork implementing e
 sys-devel/fcode-utils 1.0.3: Set of utilities to process FCODE, OpenFirmware's byte code
 sys-devel/lcc 2021.01.11-r1: The lcc retargetable ANSI C compiler
 sys-firmware/lenovolegionlinux 9999: Lenovo Legion Linux kernel module
-sys-fs/bcachefs-kmod 1.35.0 9999: Linux bcachefs kernel module for sys-fs/bcachefs-tools
+sys-fs/bcachefs-kmod 1.35.2 9999: Linux bcachefs kernel module for sys-fs/bcachefs-tools
 sys-fs/btrd 0.5.4: The btrfs debugger
 sys-fs/btrfs-dump 20260123: Metadata dumper for btrfs
 sys-fs/btrfs-heatmap 9-r1: Python 3 script to draw a heatmap of a btrfs filesystem
@@ -1929,7 +1931,7 @@ sys-fs/gcsfuse 2.11.2: A user-space file system for interacting with Google Clou
 sys-fs/gdu 5.14.0 5.25.0: Disk usage analyzer with console interface written in Go
 sys-fs/gfs2-utils 3.4.1 3.5.1-r1: Shared-disk cluster file system
 sys-fs/jefferson 0.4.6 0.4.6-r1: JFFS2 filesystem extraction tool
-sys-fs/mdevd 0.1.7.0 0.1.8.0: small daemon managing kernel hotplug events, similarly to udevd
+sys-fs/mdevd 0.1.8.0 0.1.8.1: small daemon managing kernel hotplug events, similarly to udevd
 sys-fs/mountpoint-s3-bin 1.1.1: Fuse for AWS S3 (Simple Storage Service), official
 sys-fs/ntfs2btrfs 20250616: Conversion tool from NTFS to Btrfs
 sys-fs/ufiformat 0.9.9: USB Floppy Disk formatting tool
@@ -1994,7 +1996,7 @@ www-client/nyxt 3.11.8 3.12.0 9999: Nyxt - the hacker's power-browser
 www-client/torbrowser-launcher 0.3.9: A program to help you securely download and run Tor Browser
 www-client/vimb 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
 www-client/yandex-browser 25.12.1.1217_p1: The web browser from Yandex
-www-client/zen-bin 1.16.4b 1.17.13b 1.17.14b 1.17.15b: Zen Browser - A fast, privacy-focused Firefox fork
+www-client/zen-bin 1.17.13b 1.17.14b 1.17.15b 1.18.1b: Zen Browser - A fast, privacy-focused Firefox fork
 www-misc/dufs 0.40.0: Dufs is a distinctive utility file server
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits
 www-misc/kiwix-desktop 2.4.0: cross-platform viewer/manager for ZIM archives
@@ -2009,7 +2011,7 @@ x11-apps/lightdm-gtk-greeter-settings 1.2.2-r3: Configuration tool for the Light
 x11-apps/xcur2png 0.7.1-r3: Convert X cursors to PNG images
 x11-drivers/OpenTabletDriver 0.6.6.2: A cross-platform open-source tablet driver
 x11-drivers/OpenTabletDriver-bin 0.6.3.0: Cross platform tablet driver (binary package)
-x11-drivers/evdi 1.14.10 1.14.11 1.14.11_p20251211 1.14.12 9999: Extensible Virtual Display Interface
+x11-drivers/evdi 1.14.12 9999: Extensible Virtual Display Interface
 x11-drivers/xf86-input-xppen 3.4.9-r2: Driver for XP-PEN tablets and drawing devices
 x11-libs/gtk-fortran 3.24.49 4.7.1 4.8.0: A GTK+ binding to build Graphical User Interfaces in Fortran
 x11-libs/sdl-fakeqwerty 0_pre20191217: Fixes non-QWERTY keyboards on Prison Architect (and maybe other SDL games)
