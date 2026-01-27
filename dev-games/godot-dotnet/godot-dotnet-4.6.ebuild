@@ -1,17 +1,16 @@
 # Copyright 2022-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
+# Fork of dev-games/godot::gentoo
+
 EAPI=8
 
 PYTHON_COMPAT=( python3_{11..14} )
 DOTNET_PKG_COMPAT="8.0"
 NUGETS="
-coverlet.collector@3.2.0
-DiffPlex@1.5.0
+coverlet.collector@6.0.4
+DiffPlex@1.7.2
 envdte@17.8.37221
-GodotSharp@4.5.0
-Godot.SourceGenerators@4.5.0
-GodotTools.IdeMessaging@1.1.2
 Humanizer.Core@2.14.1
 Humanizer.Core@2.2.0
 JetBrains.Annotations@2019.1.3
@@ -20,31 +19,34 @@ JetBrains.RdFramework@2024.3.0
 JetBrains.Rider.PathLocator@1.0.12
 Microsoft.Bcl.AsyncInterfaces@5.0.0
 Microsoft.Bcl.AsyncInterfaces@7.0.0
+Microsoft.Bcl.Cryptography@9.0.10
 Microsoft.Build@15.1.548
 Microsoft.Build.Framework@15.1.548
-Microsoft.Build.NoTargets@2.0.1
 Microsoft.Build.Locator@1.2.6
+Microsoft.Build.NoTargets@2.0.1
 Microsoft.CodeAnalysis.Analyzers@3.3.2
 Microsoft.CodeAnalysis.Analyzers@3.3.4
-Microsoft.CodeAnalysis.Analyzer.Testing@1.1.1
-Microsoft.CodeAnalysis.CodeFix.Testing@1.1.1
+Microsoft.CodeAnalysis.Analyzer.Testing@1.1.2
+Microsoft.CodeAnalysis.CodeFix.Testing@1.1.2
 Microsoft.CodeAnalysis.Common@3.11.0
+Microsoft.CodeAnalysis.Common@4.11.0
 Microsoft.CodeAnalysis.Common@4.8.0
 Microsoft.CodeAnalysis.CSharp@3.11.0
+Microsoft.CodeAnalysis.CSharp@4.11.0
 Microsoft.CodeAnalysis.CSharp@4.8.0
-Microsoft.CodeAnalysis.CSharp.Analyzer.Testing@1.1.1
-Microsoft.CodeAnalysis.CSharp.Analyzer.Testing.XUnit@1.1.1
-Microsoft.CodeAnalysis.CSharp.CodeFix.Testing@1.1.1
-Microsoft.CodeAnalysis.CSharp.CodeFix.Testing.XUnit@1.1.1
-Microsoft.CodeAnalysis.CSharp.SourceGenerators.Testing@1.1.1
-Microsoft.CodeAnalysis.CSharp.SourceGenerators.Testing.XUnit@1.1.1
+Microsoft.CodeAnalysis.CSharp.Analyzer.Testing@1.1.2
+Microsoft.CodeAnalysis.CSharp.Analyzer.Testing.XUnit@1.1.2
+Microsoft.CodeAnalysis.CSharp.CodeFix.Testing@1.1.2
+Microsoft.CodeAnalysis.CSharp.CodeFix.Testing.XUnit@1.1.2
+Microsoft.CodeAnalysis.CSharp.SourceGenerators.Testing@1.1.2
+Microsoft.CodeAnalysis.CSharp.SourceGenerators.Testing.XUnit@1.1.2
 Microsoft.CodeAnalysis.CSharp.Workspaces@3.11.0
 Microsoft.CodeAnalysis.CSharp.Workspaces@4.8.0
-Microsoft.CodeAnalysis.SourceGenerators.Testing@1.1.1
-Microsoft.CodeAnalysis.Testing.Verifiers.XUnit@1.1.1
+Microsoft.CodeAnalysis.SourceGenerators.Testing@1.1.2
+Microsoft.CodeAnalysis.Testing.Verifiers.XUnit@1.1.2
 Microsoft.CodeAnalysis.Workspaces.Common@3.11.0
 Microsoft.CodeAnalysis.Workspaces.Common@4.8.0
-Microsoft.CodeCoverage@17.7.1
+Microsoft.CodeCoverage@18.0.0
 Microsoft.NETCore.Platforms@1.0.1
 Microsoft.NETCore.Platforms@1.1.0
 Microsoft.NETCore.Platforms@2.0.0
@@ -53,60 +55,40 @@ Microsoft.NETCore.Targets@1.0.1
 Microsoft.NETCore.Targets@1.1.0
 Microsoft.NETFramework.ReferenceAssemblies@1.0.0
 Microsoft.NETFramework.ReferenceAssemblies.net461@1.0.0
-Microsoft.NET.Test.Sdk@17.7.1
-Microsoft.TestPlatform.ObjectModel@17.7.1
-Microsoft.TestPlatform.TestHost@17.7.1
-Microsoft.VisualBasic@10.0.1
+Microsoft.NET.Test.Sdk@18.0.0
+Microsoft.TestPlatform.ObjectModel@18.0.0
+Microsoft.TestPlatform.TestHost@18.0.0
 Microsoft.VisualStudio.Composition@16.1.8
 Microsoft.VisualStudio.Composition.NetFxAttributes@16.1.8
 Microsoft.VisualStudio.Interop@17.8.37221
+Microsoft.VisualStudio.SolutionPersistence@1.0.52
 Microsoft.VisualStudio.Validation@15.0.82
 Microsoft.Win32.Primitives@4.0.1
-Microsoft.Win32.Primitives@4.3.0
 Microsoft.Win32.Registry@4.0.0
-Microsoft.Win32.Registry@4.3.0
 Microsoft.Win32.Registry@5.0.0
-NETStandard.Library@1.6.1
 NETStandard.Library@2.0.3
 Newtonsoft.Json@13.0.1
-NuGet.Common@5.6.0
-NuGet.Configuration@5.6.0
+Newtonsoft.Json@13.0.3
+NuGet.Common@6.3.4
+NuGet.Configuration@6.3.4
 NuGet.Frameworks@6.12.1
-NuGet.Frameworks@6.5.0
-NuGet.Packaging@5.6.0
-NuGet.Protocol@5.6.0
-NuGet.Resolver@5.6.0
-NuGet.Versioning@5.6.0
+NuGet.Frameworks@6.3.4
+NuGet.Packaging@6.3.4
+NuGet.Protocol@6.3.4
+NuGet.Resolver@6.3.4
+NuGet.Versioning@6.3.4
 ReflectionAnalyzers@0.1.22-dev
-runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl@4.3.0
-runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl@4.3.0
-runtime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSsl@4.3.0
 runtime.native.System@4.0.0
-runtime.native.System@4.3.0
 runtime.native.System.IO.Compression@4.1.0
-runtime.native.System.IO.Compression@4.3.0
-runtime.native.System.Net.Http@4.3.0
-runtime.native.System.Security.Cryptography.Apple@4.3.0
-runtime.native.System.Security.Cryptography.OpenSsl@4.3.0
-runtime.opensuse.13.2-x64.runtime.native.System.Security.Cryptography.OpenSsl@4.3.0
-runtime.opensuse.42.1-x64.runtime.native.System.Security.Cryptography.OpenSsl@4.3.0
-runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.Apple@4.3.0
-runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.OpenSsl@4.3.0
-runtime.rhel.7-x64.runtime.native.System.Security.Cryptography.OpenSsl@4.3.0
-runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl@4.3.0
-runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl@4.3.0
-runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl@4.3.0
 System.AppContext@4.1.0
-System.AppContext@4.3.0
-System.Buffers@4.3.0
 System.Buffers@4.5.1
 System.Collections@4.0.11
 System.Collections@4.3.0
 System.Collections.Concurrent@4.0.12
-System.Collections.Concurrent@4.3.0
 System.Collections.Immutable@1.2.0
 System.Collections.Immutable@5.0.0
 System.Collections.Immutable@7.0.0
+System.Collections.Immutable@8.0.0
 System.Collections.NonGeneric@4.0.1
 System.ComponentModel.Composition@4.5.0
 System.Composition@1.0.31
@@ -122,33 +104,23 @@ System.Composition.Runtime@7.0.0
 System.Composition.TypedParts@1.0.31
 System.Composition.TypedParts@7.0.0
 System.Console@4.0.0
-System.Console@4.3.0
 System.Diagnostics.Contracts@4.0.1
 System.Diagnostics.Debug@4.0.11
 System.Diagnostics.Debug@4.3.0
-System.Diagnostics.DiagnosticSource@4.3.0
 System.Diagnostics.FileVersionInfo@4.0.0
 System.Diagnostics.Process@4.1.0
-System.Diagnostics.Process@4.3.0
 System.Diagnostics.Tools@4.3.0
 System.Diagnostics.TraceSource@4.0.0
 System.Diagnostics.Tracing@4.1.0
-System.Diagnostics.Tracing@4.3.0
 System.Dynamic.Runtime@4.0.11
-System.Dynamic.Runtime@4.3.0
+System.Formats.Asn1@9.0.10
 System.Globalization@4.0.11
 System.Globalization@4.3.0
-System.Globalization.Calendars@4.3.0
-System.Globalization.Extensions@4.3.0
 System.IO@4.1.0
 System.IO@4.3.0
 System.IO.Compression@4.1.0
-System.IO.Compression@4.3.0
-System.IO.Compression.ZipFile@4.3.0
 System.IO.FileSystem@4.0.1
-System.IO.FileSystem@4.3.0
 System.IO.FileSystem.Primitives@4.0.1
-System.IO.FileSystem.Primitives@4.3.0
 System.IO.Pipelines@5.0.1
 System.IO.Pipelines@7.0.0
 System.IO.Pipes@4.0.0
@@ -159,11 +131,8 @@ System.Linq.Expressions@4.3.0
 System.Linq.Parallel@4.0.1
 System.Memory@4.5.4
 System.Memory@4.5.5
-System.Net.Http@4.3.0
 System.Net.Primitives@4.0.11
-System.Net.Primitives@4.3.0
 System.Net.Sockets@4.1.0
-System.Net.Sockets@4.3.0
 System.Numerics.Vectors@4.4.0
 System.ObjectModel@4.0.12
 System.ObjectModel@4.3.0
@@ -180,6 +149,7 @@ System.Reflection.Extensions@4.3.0
 System.Reflection.Metadata@1.3.0
 System.Reflection.Metadata@5.0.0
 System.Reflection.Metadata@7.0.0
+System.Reflection.Metadata@8.0.0
 System.Reflection.Primitives@4.0.1
 System.Reflection.Primitives@4.3.0
 System.Reflection.TypeExtensions@4.1.0
@@ -193,23 +163,14 @@ System.Runtime.CompilerServices.Unsafe@6.0.0
 System.Runtime.Extensions@4.1.0
 System.Runtime.Extensions@4.3.0
 System.Runtime.Handles@4.0.1
-System.Runtime.Handles@4.3.0
 System.Runtime.InteropServices@4.1.0
-System.Runtime.InteropServices@4.3.0
 System.Runtime.InteropServices.RuntimeInformation@4.0.0
-System.Runtime.InteropServices.RuntimeInformation@4.3.0
 System.Runtime.Loader@4.0.0
-System.Runtime.Numerics@4.3.0
 System.Security.AccessControl@4.5.0
 System.Security.AccessControl@5.0.0
-System.Security.Cryptography.Algorithms@4.3.0
-System.Security.Cryptography.Cng@4.3.0
-System.Security.Cryptography.Csp@4.3.0
-System.Security.Cryptography.Encoding@4.3.0
-System.Security.Cryptography.OpenSsl@4.3.0
-System.Security.Cryptography.Primitives@4.3.0
-System.Security.Cryptography.ProtectedData@4.3.0
-System.Security.Cryptography.X509Certificates@4.3.0
+System.Security.Cryptography.Cng@5.0.0
+System.Security.Cryptography.Pkcs@9.0.10
+System.Security.Cryptography.ProtectedData@4.4.0
 System.Security.Permissions@4.5.0
 System.Security.Principal@4.0.1
 System.Security.Principal.Windows@4.5.0
@@ -219,9 +180,7 @@ System.Text.Encoding@4.3.0
 System.Text.Encoding.CodePages@4.5.1
 System.Text.Encoding.CodePages@7.0.0
 System.Text.Encoding.Extensions@4.0.11
-System.Text.Encoding.Extensions@4.3.0
 System.Text.RegularExpressions@4.1.0
-System.Text.RegularExpressions@4.3.0
 System.Threading@4.0.11
 System.Threading@4.3.0
 System.Threading.Channels@7.0.0
@@ -230,31 +189,24 @@ System.Threading.Tasks@4.0.11
 System.Threading.Tasks@4.3.0
 System.Threading.Tasks.Dataflow@4.6.0
 System.Threading.Tasks.Extensions@4.0.0
-System.Threading.Tasks.Extensions@4.3.0
 System.Threading.Tasks.Extensions@4.5.4
 System.Threading.Thread@4.0.0
-System.Threading.Thread@4.3.0
 System.Threading.ThreadPool@4.0.10
-System.Threading.ThreadPool@4.3.0
-System.Threading.Timer@4.3.0
-System.ValueTuple@4.5.0
 System.Xml.ReaderWriter@4.0.11
-System.Xml.ReaderWriter@4.3.0
-System.Xml.XDocument@4.3.0
 System.Xml.XmlDocument@4.0.1
 System.Xml.XPath@4.0.1
 System.Xml.XPath.XmlDocument@4.0.1
-xunit@2.4.2
+xunit@2.9.3
 xunit.abstractions@2.0.3
-xunit.analyzers@1.0.0
-xunit.assert@2.4.2
-xunit.core@2.4.2
-xunit.extensibility.core@2.4.2
-xunit.extensibility.execution@2.4.2
-xunit.runner.visualstudio@2.4.5
+xunit.analyzers@1.18.0
+xunit.assert@2.9.3
+xunit.core@2.9.3
+xunit.extensibility.core@2.9.3
+xunit.extensibility.execution@2.9.3
+xunit.runner.visualstudio@3.1.5
 "
 
-inherit desktop dotnet-pkg python-any-r1 flag-o-matic scons-utils
+inherit branding desktop dotnet-pkg python-any-r1 flag-o-matic scons-utils
 inherit shell-completion toolchain-funcs xdg
 
 MY_PN=godot
@@ -347,18 +299,13 @@ BDEPEND="
 	wayland? ( dev-util/wayland-scanner )
 "
 
-PATCHES=(
-	"${FILESDIR}"/${MY_PN}-4.5-scons.patch
-)
-
-src_unpack() {
-	default
-
-	dotnet-pkg_src_unpack
-}
-
 src_prepare() {
 	default
+
+	# PATCHES fails due to calling dotnet-pkg_src_prepare?
+	eapply "${FILESDIR}"/${MY_PN}-4.5-scons.patch
+
+	dotnet-pkg_src_prepare
 
 	# mbedtls normally has mbedtls.pc, but Gentoo's slotted one is mbedtls-3.pc
 	sed -E "/pkg-config/s/(mbedtls|mbedcrypto|mbedx509)/&-3/g" \
@@ -379,7 +326,7 @@ src_prepare() {
 }
 
 src_compile() {
-	local -x BUILD_NAME=gentoo # replaces "custom_build" in version string
+	local -x BUILD_NAME=${BRANDING_OS_ID} # replaces "custom_build" in version
 
 	filter-lto #921017
 
@@ -392,6 +339,11 @@ src_compile() {
 		target=$(usex tools editor template_$(usex debug{,} release))
 		dev_build=$(usex debug)
 		tests=$(usex tools $(usex test)) # bakes in --test in final binary
+
+		# TODO?: libgodot requires a separate build given the executable
+		# the library are mutally exculsive and so, unless we really need
+		# it, skipping support to ease maintenance at least for now
+		#library_type=$(usex libgodot shared_library executable)
 
 		accesskit=$(usex accessibility)
 		alsa=$(usex alsa)
@@ -429,8 +381,6 @@ src_compile() {
 		builtin_graphite=no
 		builtin_harfbuzz=no
 		builtin_icu4c=no
-		# TODO: keep an eye on https://github.com/godotengine/godot/pull/110540
-		# (reminder: drop IJG and add libjpeg-turbo to unbundle array)
 		builtin_libjpeg_turbo=no
 		builtin_libogg=no
 		builtin_libpng=no
@@ -451,11 +401,9 @@ src_compile() {
 		builtin_zstd=no
 		# (more is bundled in third_party/ but they lack builtin_* switches)
 
-		module_mono_enabled=yes
-
 		# modules with optional dependencies, "possible" to disable more but
 		# gets messy and breaks all sorts of features (expected enabled)
-		#
+		module_mono_enabled=yes
 		# note raycast is only enabled on amd64+arm64 and USE should
 		# be masked for other keywords if added, see raycast/config.py
 		module_raycast_enabled=$(usex gui $(usex tools $(usex raycast)))
@@ -479,12 +427,10 @@ src_compile() {
 	# generate mono glue
 	bin/godot* --headless --generate-mono-glue modules/mono/glue || die "Failed to generate mono glue"
 
-	dotnet-pkg_src_prepare # called here, conflicts with python eclass
-
 	local MSBUILDTERMINALLOGER=off # required for msbuild to succeed?
 
 	# build the C# assemblies; pass flags so assemblies match how engine was built
-	python3 modules/mono/build_scripts/build_assemblies.py \
+	"${EPYTHON}" modules/mono/build_scripts/build_assemblies.py \
 		--godot-output-dir "${S}/bin" \
 		--precision="$(usex double-precision double single)" \
 		$(usex debug --dev-debug "") \
@@ -500,15 +446,20 @@ src_test() {
 }
 
 src_install() {
-	insinto "/usr/$(get_libdir)/godot"
-	doins -r bin/.
+	local instdir
+	instdir="/usr/$(get_libdir)/godot"
 
-	# find once
-	gd_bin="${ESYSROOT}/usr/$(get_libdir)/godot/$(basename bin/godot*)"
+	insinto "${instdir}"
+	doins -r bin/GodotSharp
 
-	fperms +x "${gd_bin}"
+	exeinto "${instdir}"
 
-	dosym "${gd_bin}" /usr/bin/godot
+	local gin
+	gin=$(basename bin/godot*) # get once
+
+	doexe "bin/${gin}"
+
+	dosym "..${instdir#/usr}/${gin}" /usr/bin/godot
 
 	doman misc/dist/linux/godot.6
 	dodoc AUTHORS.md CHANGELOG.md DONORS.md README.md
