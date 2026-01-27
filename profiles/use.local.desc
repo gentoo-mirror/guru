@@ -202,6 +202,7 @@ dev-util/gammaray:scxml - Build support for Qt State Chart XML (SCXML)
 dev-util/gammaray:webengine - Enable support for dev-qt/qtwebengine
 dev-util/rtc-testbench:mqtt - Enable logging via app-misc/mosquitto
 dev-util/rust-rover:bundled-jdk - Use bundled jdk
+dev-util/rust-rover:nvidia - Apply markdown preview patch for Nvidia cards
 dev-util/rz-ghidra:cutter-plugin - Build as dev-util/cutter's plugin
 dev-util/stylua:lua52 - Build support for Lua 5.2
 dev-util/stylua:lua53 - Build support for Lua 5.3
@@ -598,7 +599,6 @@ media-plugins/gimp-resynthesizer:translations - Install translation files.
 media-sound/6pm:midimaps - Install midi maps for that synth. Recommended
 media-sound/6pm:nls - Add support for localization
 media-sound/6pm:presets - Install presets. Recommended
-media-sound/add64:presets - Install presets. Recommended
 media-sound/drumgizmo:cli - Build stand-alone CLI application
 media-sound/drumgizmo:jack - Enable jack output and jackmidi input (CLI only)
 media-sound/drumgizmo:lv2 - Build LV2 plugin
@@ -907,6 +907,7 @@ sys-process/nq:shell - Use shell implementation
 sys-process/nq:tq - Install tq, a tmux & screen wrapper
 www-apps/forgejo:acct - User and group management via acct-*/git packages
 www-apps/pleroma:system-lexbor - Use dev-libs/lexbor instead of vendored version
+www-apps/pleroma:system-vips - Use media-libs/vips instead of vendored version
 www-client/yandex-browser:ffmpeg-codecs - Use media-video/ffmpeg-chromium for multi-threaded ffmpeg codecs for the HTML5 <audio> and <video> tags
 www-servers/hinsightd:cgi - Enable old/slow cgi support (legacy should not be used)
 www-servers/hinsightd:fcgi - Enable fast cgi support
