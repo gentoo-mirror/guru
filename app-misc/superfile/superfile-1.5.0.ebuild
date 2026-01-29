@@ -22,7 +22,7 @@ else
 fi
 
 LICENSE="MIT"
-#gentoo-go-license superfile-9999.ebuild
+#gentoo-go-license superfile-1.5.0.ebuild
 LICENSE+=" Apache-2.0 BSD-2 BSD GPL-3 ISC MIT MPL-2.0 "
 
 SLOT="0"

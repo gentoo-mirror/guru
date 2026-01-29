@@ -1,4 +1,4 @@
-# Copyright 2024 Gentoo Authors
+# Copyright 2024-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -20,19 +20,15 @@ else
 fi
 
 LICENSE="Apache-2.0"
+#gentoo-go-license stripe-cli-1.33.0.ebuild
+LICENSE+=" Apache-2.0 BSD-2 BSD ISC MIT MPL-2.0 Unlicense "
 
-# echo "# dependency licenses:"; printf 'LICENSES+=" '
-# go-licenses report ./... 2>/dev/null | awk -F ',' '{ print $NF }' | sort --unique | tr '\n' ' '; echo '"'
-
-# dependency licenses:
-LICENSES+=" Apache-2.0 BSD-2-Clause BSD ISC MIT MPL-2.0 Unlicense "
 SLOT="0"
-IUSE="bash-completion zsh-completion"
 
 BDEPEND=">=dev-lang/go-1.24.1"
 
 src_unpack() {
-	if [[ "$PV" == *9999* ]];then
+	if [[ "${PV}" == 9999 ]];then
 		git-r3_src_unpack
 		go-module_live_vendor
 	else
@@ -48,14 +44,10 @@ src_install() {
 	dobin "bin/${MY_PN}"
 
 	# disables telemetry
-	doenvd "$FILESDIR/99$PN"
+	doenvd "${FILESDIR}/99${PN}"
 
-	if use bash-completion ; then
-		"bin/${MY_PN}" completion --shell bash
-		newbashcomp "${MY_PN}-completion.bash" "$MY_PN"
-	fi
-	if use zsh-completion ; then
-		"bin/${MY_PN}" completion --shell zsh
-		newzshcomp "${MY_PN}-completion.zsh" "_$MY_PN"
-	fi
+	"bin/${MY_PN}" completion --shell bash
+	newbashcomp "${MY_PN}-completion.bash" "${MY_PN}"
+	"bin/${MY_PN}" completion --shell zsh
+	newzshcomp "${MY_PN}-completion.zsh" "_${MY_PN}"
 }

@@ -23,12 +23,12 @@ SLOT="0"
 IUSE="apfs btrfs +e2fs exfat f2fs fat fuse hfs minix ncurses nilfs2 ntfs"
 IUSE+=" reiserfs static test ufs vmfs xfs"
 RESTRICT="!test? ( test )"
+REQUIRED_USE="static? ( !fuse )"
 
 RDEPEND="
 	app-arch/zstd:=
 	dev-libs/isa-l
 	dev-libs/openssl:0=
-	dev-libs/xxhash
 	sys-apps/util-linux
 	virtual/zlib:=
 	e2fs? ( sys-fs/e2fsprogs )
@@ -45,11 +45,13 @@ RDEPEND="
 		virtual/zlib:=[static-libs]
 		e2fs? ( sys-fs/e2fsprogs[static-libs] )
 		btrfs? ( sys-apps/util-linux[static-libs] )
-		fuse? ( sys-fs/fuse:0[static-libs] )
 		ncurses? ( sys-libs/ncurses:0[static-libs] )
 		nilfs2? ( sys-fs/nilfs-utils[static-libs] )
 		ntfs? ( sys-fs/ntfs3g[static-libs] )
 		reiserfs? ( sys-fs/progsreiserfs[static-libs] )
+	)
+	!static? (
+		dev-libs/xxhash
 	)
 "
 DEPEND="
@@ -92,12 +94,14 @@ src_configure() {
 		$(use_enable ntfs)
 		$(use_enable reiserfs)
 		$(use_enable test fs-test)
-		$(use_enable static)
+		$(use_enable static static-linking)
 		$(use_enable vmfs)
 		$(use_enable ufs)
 		$(use_enable xfs)
 		--disable-jfs
 		--disable-reiser4
+
+		$(usev static --disable-xxhash)
 	)
 	econf "${myconf[@]}"
 }

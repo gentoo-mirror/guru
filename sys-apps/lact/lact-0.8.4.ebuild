@@ -1,14 +1,10 @@
-# Copyright 2024-2025 Gentoo Authors
+# Copyright 2024-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 CRATES="
 "
-
-declare -A GIT_CRATES=(
-	[cl3]='https://github.com/kenba/cl3;4da03b19d19ce2ca735e09dc5e2a1bcfa133beff;cl3-%commit%'
-)
 
 LLVM_COMPAT=( {18..21} )
 RUST_MIN_VER="1.85.0"
@@ -41,7 +37,6 @@ REQUIRED_USE="libadwaita? ( gui ) test? ( gui )"
 RESTRICT="!test? ( test )"
 
 COMMON_DEPEND="
-	virtual/opencl
 	x11-libs/libdrm[video_cards_amdgpu]
 	gui? (
 		dev-libs/glib:2
@@ -56,6 +51,7 @@ COMMON_DEPEND="
 "
 RDEPEND="
 	${COMMON_DEPEND}
+	dev-util/clinfo
 	dev-util/vulkan-tools
 	sys-apps/hwdata
 "
@@ -77,19 +73,17 @@ pkg_setup() {
 }
 
 src_configure() {
-	sed -i "/^strip =/d" Cargo.toml || die
-	sed -i "s|target/release|$(cargo_target_dir)|" Makefile || die
-
 	local myfeatures=(
 		$(usev gui lact-gui)
 		$(usev libadwaita adw)
 		$(usev video_cards_nvidia nvidia)
 	)
-	cargo_src_configure --no-default-features -p lact
+	cargo_src_configure --no-default-features
 }
 
 src_install() {
-	emake DESTDIR="${D}" PREFIX="${EPREFIX}/usr" install
+	cargo_src_install --path lact
+	emake DESTDIR="${D}" PREFIX="${EPREFIX}/usr" install-resources
 	newinitd res/lact-daemon-openrc lactd
 }
 
