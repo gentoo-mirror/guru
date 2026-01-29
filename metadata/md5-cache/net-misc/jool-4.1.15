@@ -1,0 +1,14 @@
+DEFINED_PHASES=configure install
+DEPEND=dev-libs/libnl:3 elibc_musl? ( sys-libs/argp-standalone ) iptables? ( net-firewall/iptables )
+DESCRIPTION=Required tools for Jool
+EAPI=8
+HOMEPAGE=https://nicmx.github.io/Jool/en/index.html
+INHERIT=toolchain-funcs
+IUSE=iptables
+KEYWORDS=~amd64
+LICENSE=GPL-2
+RDEPEND=dev-libs/libnl:3 elibc_musl? ( sys-libs/argp-standalone ) iptables? ( net-firewall/iptables ) !iptables? ( net-firewall/nftables )
+SLOT=0
+SRC_URI=https://github.com/NICMx/Jool/releases/download/v4.1.15/jool-4.1.15.tar.gz
+_eclasses_=toolchain-funcs	30214924c0c3b92ec7dbf24fc70d60d3
+_md5_=1c62cff6d326a81f164260cda8301de7
