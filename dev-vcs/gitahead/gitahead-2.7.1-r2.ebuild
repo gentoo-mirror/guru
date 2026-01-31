@@ -1,4 +1,4 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -27,10 +27,15 @@ RESTRICT="test"
 
 RDEPEND="
 	app-text/cmark:=
+	dev-libs/libpcre2:=
 	dev-libs/openssl:=
 	dev-qt/qt5compat:6
 	dev-qt/qtbase:6[concurrent,gui,network,widgets]
+	media-libs/libjpeg-turbo:=
+	net-libs/http-parser:=
 	net-libs/libssh2
+	virtual/zlib:=
+	x11-libs/libxkbcommon
 	gnome-keyring? (
 		app-crypt/libsecret
 	)
@@ -72,6 +77,13 @@ src_prepare() {
 
 src_configure() {
 	filter-flags -flto* # Segfault in libQt5Core.so.5
+	local mycmakeargs=(
+		# libgit2 flags
+		-DBUILD_TESTS=OFF
+		-DREGEX_BACKEND=pcre2
+		-DUSE_GSSAPI=OFF
+		-DUSE_HTTP_PARSER=system
+	)
 	cmake_src_configure
 }
 
@@ -79,10 +91,8 @@ src_install() {
 	cd "${BUILD_DIR}" || die
 
 	eninja package
-	cd ./_CPack_Packages/Linux/STGZ || die
-	mkdir -p "${D}"/usr/share || die
 	bash ./GitAhead-2.7.1.sh --prefix="${D}"/usr/share --include-subdir || die
-	rm -fr "${D}"/usr/share/GitAhead/*.so.* || die
+	rm "${D}"/usr/share/GitAhead/*.so.* || die
 
 	cd "${D}"/usr/share/GitAhead/Resources/GitAhead.iconset || die
 	local res
