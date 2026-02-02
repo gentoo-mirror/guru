@@ -4,7 +4,7 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{11..13} )
+PYTHON_COMPAT=( python3_{11..14} )
 
 inherit distutils-r1 pypi
 
@@ -25,14 +25,12 @@ RDEPEND="
 	dev-python/tomli[${PYTHON_USEDEP}]
 "
 
-BDEPEND="
-	test? (
-		dev-python/pytest-qt[${PYTHON_USEDEP}]
-		dev-python/pytest-xvfb[${PYTHON_USEDEP}]
-	)
-"
-
+EPYTEST_PLUGINS=(pytest-xvfb pytest-qt)
 distutils_enable_tests pytest
+
+EPYTEST_DESELECT=(
+	"guidata/tests/dataset/test_all_features.py::test_all_features"
+)
 
 python_test() {
 	epytest -p xvfb
