@@ -11,5 +11,5 @@ PROPERTIES=live
 RDEPEND=python_single_target_python3_11? ( dev-lang/python:3.11 ) python_single_target_python3_12? ( dev-lang/python:3.12 ) python_single_target_python3_13? ( dev-lang/python:3.13 ) python_single_target_python3_14? ( dev-lang/python:3.14 ) >=app-emulation/qemu-6.0.0[gtk,sdl,spice,virtfs] >=app-shells/bash-4.0:= app-cdr/cdrtools app-crypt/swtpm app-misc/jq net-misc/spice-gtk[gtk3] net-misc/wget net-misc/zsync sys-apps/usbutils sys-apps/util-linux || ( sys-firmware/edk2 sys-firmware/edk2-bin ) sys-process/procps x11-apps/xrandr x11-misc/xdg-user-dirs
 REQUIRED_USE=^^ ( python_single_target_python3_11 python_single_target_python3_12 python_single_target_python3_13 python_single_target_python3_14 )
 SLOT=0
-_eclasses_=multiprocessing	1e32df7deee68372153dca65f4a7c21f	toolchain-funcs	30214924c0c3b92ec7dbf24fc70d60d3	python-utils-r1	dbb8c4d794033ad7e7221eaf567a6c90	python-single-r1	47d8ac9be330c9366112b78fd4f8ce57	git-r3	875eb471682d3e1f18da124be97dcc81
+_eclasses_=multiprocessing	1e32df7deee68372153dca65f4a7c21f	toolchain-funcs	7e440a20ac11dece04e3334622e6e5da	python-utils-r1	dbb8c4d794033ad7e7221eaf567a6c90	python-single-r1	47d8ac9be330c9366112b78fd4f8ce57	git-r3	875eb471682d3e1f18da124be97dcc81
 _md5_=6c817db19327ede7eac7a6ba7b8197c8
