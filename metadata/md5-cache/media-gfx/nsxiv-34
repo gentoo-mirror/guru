@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install postinst postrm prepare setup
+DEPEND=x11-libs/libX11 >=media-libs/imlib2-1.11.0[X] statusbar? ( x11-libs/libXft media-libs/fontconfig ) exif? ( media-libs/libexif )
+DESCRIPTION=Neo (or New or Not) Simple (or Small or Suckless) X Image Viewer
+EAPI=8
+HOMEPAGE=https://codeberg.org/nsxiv/nsxiv
+INHERIT=desktop xdg-utils savedconfig toolchain-funcs linux-info shell-completion
+IUSE=+statusbar +inotify exif debug savedconfig
+KEYWORDS=~amd64
+LICENSE=GPL-2+ public-domain
+RDEPEND=x11-libs/libX11 >=media-libs/imlib2-1.11.0[X] statusbar? ( x11-libs/libXft media-libs/fontconfig ) exif? ( media-libs/libexif )
+SLOT=0
+SRC_URI=https://github.com/nsxiv/nsxiv/archive/v34.tar.gz -> nsxiv-34.tar.gz https://codeberg.org/nsxiv/nsxiv-extra/raw/commit/aa5f73c46a21060bb084b308f3d032ace86753c0/completion/zsh/_nsxiv -> nsxiv-aa5f73c46a21060bb084b308f3d032ace86753c0.comp.zsh
+_eclasses_=desktop	26d57169ca094c04be416993844ec8bc	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	portability	a39e3d646f76cb45d06b44cc1144b8d4	savedconfig	b9131abe556ad2ea96c01b06d658d363	toolchain-funcs	7e440a20ac11dece04e3334622e6e5da	linux-info	efd923656513c879204fec6638eadee5	bash-completion-r1	767861f3744f589ee5291c1698b1c082	shell-completion	0b655d0d825e157a5e99c463bddaac16
+_md5_=77c7650154758478eecaae8c911362e2
