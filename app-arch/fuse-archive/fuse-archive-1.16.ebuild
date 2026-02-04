@@ -1,9 +1,9 @@
-# Copyright 2023-2025 Gentoo Authors
+# Copyright 2023-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-inherit toolchain-funcs flag-o-matic
+inherit toolchain-funcs flag-o-matic optfeature
 
 DESCRIPTION="Read-only FUSE file system for mounting archives and compressed files"
 HOMEPAGE="https://github.com/google/fuse-archive"
@@ -21,9 +21,11 @@ SRC_URI="
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64"
+IUSE="fuse2"
 
 DEPEND="
-	>=sys-fs/fuse-2.7:0
+	fuse2? ( >=sys-fs/fuse-2.9:0 )
+	!fuse2? ( >=sys-fs/fuse-3.1:3 )
 	>=app-arch/libarchive-3.7
 "
 BDEPEND="virtual/pkgconfig"
@@ -42,10 +44,17 @@ src_compile() {
 	append-cppflags "-I../config-${BOOST_VERSION}/include"
 	append-cppflags "-I../assert-${BOOST_VERSION}/include"
 	append-cppflags "-I../move-${BOOST_VERSION}/include"
-	emake CXX="$(tc-getCXX)" PKG_CONFIG="$(tc-getPKG_CONFIG)"
+	emake CXX="$(tc-getCXX)" PKG_CONFIG="$(tc-getPKG_CONFIG)" \
+		FUSE_MAJOR_VERSION="$(usex fuse2 2 3)"
 }
 
 src_install() {
 	dobin out/fuse-archive
 	doman fuse-archive.1
+}
+
+pkg_postinst() {
+	optfeature "mounting brotli compressed files" "app-arch/brotli"
+	optfeature "mounting LZO compressed files" "app-arch/lzop"
+	optfeature "mounting compress (.Z) files" "app-arch/ncompress"
 }
