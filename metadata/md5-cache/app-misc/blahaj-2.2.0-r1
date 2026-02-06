@@ -3,7 +3,7 @@ DEFINED_PHASES=compile configure install test
 DEPEND=dev-libs/boehm-gc dev-libs/libevent dev-libs/libpcre2 dev-libs/libyaml || ( >=dev-lang/crystal-1.16.3 >=dev-lang/crystal-bin-1.16.3 )
 DESCRIPTION=Gay sharks at your local terminal
 EAPI=8
-HOMEPAGE=https://github.com/GeopJr/BLAHAJ
+HOMEPAGE=https://codeberg.org/GeopJr/BLAHAJ
 INHERIT=shards
 IUSE=debug doc
 KEYWORDS=~amd64
@@ -12,4 +12,4 @@ RDEPEND=dev-libs/boehm-gc dev-libs/libevent dev-libs/libpcre2 dev-libs/libyaml
 SLOT=0
 SRC_URI=https://github.com/GeopJr/BLAHAJ/archive/refs/tags/v2.2.0.tar.gz -> blahaj-2.2.0.tar.gz
 _eclasses_=edo	a5e294016aa84979fcb2459749eb80b2	toolchain-funcs	7e440a20ac11dece04e3334622e6e5da	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	crystal-utils	d62f451129021418fc7ec4291c366c0f	shards	78400316257ca0f86e28a2650734321e
-_md5_=6fc04556a44be436b0642206385cae69
+_md5_=bb1482e0cec299c1e4bc26c4f99a41ab
