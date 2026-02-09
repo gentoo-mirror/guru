@@ -18,6 +18,11 @@
 
 # New entries go on top.
 
+# Lucio Sauer <watermanpaint@posteo.net> (2026-02-09)
+# Depends on masked KF5 packages, no porting to KF6 in sight.
+# Removal on 2026-03-09
+kde-apps/kwalletcli
+
 # Florian Schmaus <flow@gentoo.org) (2026-02-09)
 # bcachefs 1.33 through 1.35 has a serious bug in the early reconcile
 # data update path on multi-device setups. Upgrade to 1.36 as soon as
@@ -65,18 +70,6 @@ dev-python/json-schema-for-humans
 # Unmaintained upstream and increasingly outdated.
 # Removal on 2026-02-14
 dev-util/cmakelang
-
-# Lucio Sauer <watermanpaint@posteo.net> (2026-01-04)
-# Header-only libraries without consumers
-# Removal on 2026-02-04
-media-libs/dr_flac
-media-libs/dr_mp3
-media-libs/dr_wav
-
-# Anna (cybertailor) Vyalkova <cyber+gentoo@sysrq.in> (2026-01-04)
-# Replaced by phosh-base/phosh-osk-stevia.
-# Removal on 2026-02-04.
-phosh-base/phosh-osk-stub
 
 # Anna (cybertailor) Vyalkova <cyber+gentoo@sysrq.in> (2026-01-03)
 # Critical security vulnerabilities.
