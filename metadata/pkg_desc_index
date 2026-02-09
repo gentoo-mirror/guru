@@ -253,7 +253,7 @@ app-misc/countryfetch 0.2.0: A Command-line tool similar to Neofetch for obtaini
 app-misc/cpufetch 1.06: Simplistic yet fancy CPU architecture fetching tool
 app-misc/dbf 0.9.0: Command line tool to read the content of dBASE III, IV, and 5.0 files
 app-misc/diff-so-fancy 1.4.4: Good-lookin' diffs. Actually... nah... The best-lookin' diffs
-app-misc/doublecmd 1.1.31 1.1.32: Cross Platform file manager
+app-misc/doublecmd 1.1.31 1.1.32 1.2.1: Cross Platform file manager
 app-misc/doublecmd-bin 1.1.31 1.1.32 1.2.0 1.2.1 9999: Double Commander: file manager with two panels, similar to Total Commander
 app-misc/dpscreenocr 1.4.1: Program to recognize text on screen
 app-misc/dragon 1.2.0-r1: Simple drag-and-drop source/sink for X and Wayland
@@ -328,7 +328,7 @@ app-misc/vocabsieve 0.12.2: A simple, effective tool for language learning
 app-misc/vrms-gentoo 0_pre20201102: vrms clone for Gentoo Linux
 app-misc/walld 1.4.4: A Wallpaper daemon
 app-misc/watchexec 2.1.2 2.2.1 2.3.0 2.3.2 2.3.3 9999: Executes commands in response to file modifications
-app-misc/wayvr 25.4.2 26.1.2 9999: A lightweight OpenXR/OpenVR overlay for Wayland and X11 desktops
+app-misc/wayvr 25.4.2 26.1.2 26.2.0 9999: A lightweight OpenXR/OpenVR overlay for Wayland and X11 desktops
 app-misc/wcal 0.1-r1: ISO weekly calendar
 app-misc/wego 2.2: Wego is a weather client for the terminal
 app-misc/wl-kbptr 0.3.0: Control the mouse pointer with the keyboard on Wayland
@@ -386,7 +386,7 @@ app-text/code-minimap 0.6.8: A high performance code minimap generator
 app-text/codebook 0.3.29: Spell Checker for Code
 app-text/dooit 3.3.4: A TUI todo manager
 app-text/epubgrep 0.6.2: Search tool for EPUB e-books
-app-text/ford 6.2.5 7.0.8-r1 7.0.9-r1 7.0.10 7.0.11 7.0.11-r1 7.0.12: FORD, automatic documentation generator for modern Fortran programs
+app-text/ford 6.2.5 7.0.11-r1 7.0.12 7.0.13: FORD, automatic documentation generator for modern Fortran programs
 app-text/frog 1.6.0: Extract text from any image, video, QR Code and etc.
 app-text/harper 1.4.0: The language checker for developers.
 app-text/iwe 0.0.60: Markdown based personal knowledge management (PKM) system
@@ -565,7 +565,7 @@ dev-lang/fbc-bootstrap 1.10.1: Bootstrap package for dev-lang/fbc
 dev-lang/gnu-apl 1.8: GNU interpreter for the APL programming language
 dev-lang/hare 0.24.2 0.25.2-r2 9999: The Hare systems programming language
 dev-lang/harec 0.24.2 0.25.2 9999: The Hare compiler
-dev-lang/odin 2026.01 9999: The Data-Oriented Language for Sane Software Development.
+dev-lang/odin 2026.01 2026.02 9999: The Data-Oriented Language for Sane Software Development.
 dev-lang/opencilk 1.1 2.1: The OpenCilk concurrency platform for parallel programming
 dev-lang/opencilk-bin 1.1 2.1: The OpenCilk concurrency platform for parallel programming
 dev-lang/quickjs 2024.01.13-r1: Small embeddable Javascript engine
@@ -1074,7 +1074,7 @@ dev-util/quilttools 0.3-r1: Mailbox to quilt series converter
 dev-util/rexxd 2025.02.17: Drop-in replacement for the original xxd
 dev-util/riffdiff 3.6.1: Diff filter highlighting changed line parts
 dev-util/rtc-testbench 5.4: RTC Testbench is a set of tools for validating Ethernet networks
-dev-util/rust-rover 2024.2.1-r1 2025.2.1 2025.2.2 2025.2.3 2025.2.4.1 2025.2.5 2025.3 2025.3.1 2025.3.2: A feature-rich Rust IDE with timely support by JetBrarins
+dev-util/rust-rover 2024.2.1-r1 2025.2.1 2025.2.2 2025.2.3 2025.2.4.1 2025.2.5 2025.3 2025.3.1 2025.3.2 2025.3.3: A feature-rich Rust IDE with timely support by JetBrarins
 dev-util/rust-script 0.36.0: Command-line tool to run Rust scripts which can make use of crates
 dev-util/rye 0.44.0: a Hassle-Free Python Experience
 dev-util/rz-ghidra 0.8.0: An integration of the Ghidra decompiler and Sleigh Disassembler for Rizin.
@@ -1105,7 +1105,7 @@ dev-util/yaml-language-server 1.14.0 1.15.0: Language Server for YAML Files
 dev-vcs/ghorg 1.11.0 1.11.7: Mass repository cloning tool for GitHub/GitLab/Bitbucket
 dev-vcs/gitahead 2.7.1-r2: Graphical Git client to help understand and manage source code history
 dev-vcs/gitqlient 1.6.2 1.6.3 9999: Multi-platform Git client written with Qt
-dev-vcs/lazygit 0.56.0 0.57.0 0.58.0 0.58.1 9999: Simple terminal UI for git commands
+dev-vcs/lazygit 0.56.0 0.57.0 0.58.0 0.58.1 0.59.0 9999: Simple terminal UI for git commands
 dev-vcs/lazyjj 0.6.1: TUI for Jujutsu/jj
 dev-vcs/llm-git 2.3.0: AI-powered git commit message generator using LLMs
 dev-vcs/pijul 1.0.0_beta9: A distributed version control system based on a theory of patches
@@ -1262,6 +1262,7 @@ gui-apps/intiface-central-bin 2.6.0 2.6.4: Buttplug frontend application
 gui-apps/ironbar 0.17.1 0.18.0 9999: Customisable Wayland gtk bar written in Rust
 gui-apps/klassy 6.5.2 9999: Klassy QT6 window decoration theme for KDE Plasma 6.5+
 gui-apps/koi 0.6: Theme scheduling for the KDE Plasma Desktop
+gui-apps/labwc-tweaks 0.1.0 9999: A Qt configuration tool for labwc
 gui-apps/lan-mouse 0.10.0 0.10.0_p20251027: Software KVM Switch / mouse & keyboard sharing software for Local Area Networks
 gui-apps/lemurs 0.3.2 0.4.0: A TUI Display/Login Manager
 gui-apps/lswt 1.0.4-r1 2.0.0 9999: List Wayland toplevels
@@ -1448,7 +1449,7 @@ media-libs/sonic 0.2.0_p20250419: Simple library to speed up or slow down speech
 media-libs/svt-vp9 0.3.0 0.3.1 9999: Scalable Video Technology for VP9 (SVT-VP9 Encoder)
 media-libs/vvdec 2.3.0: VVdeC, the Fraunhofer Versatile Video Decoder
 media-libs/vvenc 1.11.1: VVenC, the Fraunhofer Versatile Video Encoder
-media-libs/wivrn 25.9 25.11.1 25.12 9999: WiVRn OpenXR streaming
+media-libs/wivrn 25.12 26.2 9999: WiVRn OpenXR streaming
 media-libs/xrizer 0.3.0-r1 9999: OpenVR over OpenXR compatibility layer
 media-plugins/alsa-sndio 0.2: ALSA PCM to play audio on sndio servers
 media-plugins/argotlunar-bin 2.06-r2: Argotlunar is a sound granulator. Binary Linux VST
@@ -1592,7 +1593,7 @@ net-im/Quaternion 0.0.97.1: A Qt-based IM client for Matrix
 net-im/WasIstLos 1.6.5 1.7.0: An unofficial WhatsApp desktop application for Linux
 net-im/abaddon 0.2.2 9999: Alternative Discord client using GTK instead of Electron
 net-im/bbctl 0.13.0: Beeper Bridge Manager
-net-im/beeper 4.2.166 4.2.367: Beeper: Unified Messenger
+net-im/beeper 4.2.367 4.2.532: Beeper: Unified Messenger
 net-im/chatterino 2.5.3 2.5.4: Chat client for https://twitch.tv
 net-im/conduit 0.10.9 0.10.11 9999: Matrix homeserver written in Rust
 net-im/discord-canary-bin 0.0.821: All-in-one voice and text chat
@@ -1608,7 +1609,7 @@ net-im/gomuks 0.3.0 0.3.1: A terminal based Matrix client written in Go
 net-im/gurk-rs 0.7.1 9999: Signal messenger client for terminal
 net-im/heisenbridge 1.15.3 1.15.4: Bouncer-style Matrix IRC bridge
 net-im/iamb 0.0.8 0.0.9 0.0.10: A Matrix chat client that uses Vim keybindings
-net-im/jitsi-meet 2025.9.1 2025.10.0: Desktop application for Jitsi Meet built with Electron
+net-im/jitsi-meet 2025.10.0 2026.1.0: Desktop application for Jitsi Meet built with Electron
 net-im/legcord-bin 1.2.1: Legcord is a custom client designed to enhance your Discord experience
 net-im/manyverse-bin 0.2310.9: A social network off the grid with append-only protocol (no edits) on blockchain
 net-im/mastoposter 0.2: Configurable reposter from Mastodon-compatible Fediverse servers
@@ -1737,7 +1738,7 @@ net-print/hpuld 1.00.39.15.00.23-r1: HP Unified Linux Driver (for samsung hardwa
 net-proxy/MTProxy 3.0.4-r1: Community fork of MTProxy
 net-proxy/Throne 1.0.13: Qt based cross-platform GUI proxy configuration manager
 net-proxy/byedpi 0.17.2 0.17.3 9999: Bypass DPI SOCKS proxy
-net-proxy/ngrok-bin 3.35.0: ngrok is a reverse proxy, firewall, and API gateway
+net-proxy/ngrok-bin 3.36.0: ngrok is a reverse proxy, firewall, and API gateway
 net-proxy/opera-proxy 1.13.1: Standalone Opera VPN proxies client
 net-proxy/shadowsocks-rust 1.22.0: A Rust port of shadowsocks
 net-proxy/snowflake 2.11.0-r1: Pluggable Transport using WebRTC, inspired by Flashproxy
