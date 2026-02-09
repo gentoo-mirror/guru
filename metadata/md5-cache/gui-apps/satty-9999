@@ -2,7 +2,7 @@ BDEPEND=|| ( >=dev-lang/rust-bin-1.74.1:* >=dev-lang/rust-1.74.1:* ) >=dev-vcs/g
 DEFINED_PHASES=compile configure install postinst postrm preinst setup test unpack
 DESCRIPTION=A screenshot annotation tool inspired by Swappy and Flameshot.
 EAPI=8
-HOMEPAGE=https://github.com/gabm/satty
+HOMEPAGE=https://github.com/Satty-org/Satty
 IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
 INHERIT=cargo desktop xdg git-r3
 IUSE=debug
@@ -11,4 +11,4 @@ PROPERTIES=live
 RDEPEND=dev-libs/glib:2 media-libs/fontconfig media-libs/libepoxy media-libs/mesa[opengl] media-libs/graphene gui-libs/libadwaita gui-libs/gtk:4 x11-libs/cairo x11-libs/gdk-pixbuf:2 x11-libs/pango
 SLOT=0
 _eclasses_=toolchain-funcs	7e440a20ac11dece04e3334622e6e5da	flag-o-matic	ed1eda86c8f746a2a75f7f9f7478f5f4	multiprocessing	1e32df7deee68372153dca65f4a7c21f	rust	20da14430886f3de143eb101684fcf62	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	aeba1d272f6c2e000912e11d8cf626eb	desktop	26d57169ca094c04be416993844ec8bc	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575	git-r3	875eb471682d3e1f18da124be97dcc81
-_md5_=a6952086d9e3177e50206cd606a55569
+_md5_=5d6495e8e7cfeb5cea493d59cd8c2624
