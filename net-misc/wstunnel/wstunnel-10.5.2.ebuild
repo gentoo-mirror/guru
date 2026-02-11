@@ -5,7 +5,7 @@ EAPI=8
 
 CRATES="
 "
-RUST_MIN_VER="1.85.0"
+RUST_MIN_VER="1.88.0"
 
 inherit cargo
 
@@ -25,6 +25,13 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 QA_FLAGS_IGNORED="usr/bin/wstunnel"
+
+pkg_setup() {
+	# see bug #965963
+	export CARGO_PROFILE_RELEASE_LTO=off
+
+	rust_pkg_setup
+}
 
 src_compile() {
 	cargo_src_compile --package wstunnel-cli

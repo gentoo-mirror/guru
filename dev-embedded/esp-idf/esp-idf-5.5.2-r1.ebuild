@@ -1,4 +1,4 @@
-# Copyright 1999-2025 Gentoo Authors
+# Copyright 1999-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 # TODO: add esp-doc package in order to build documentation
@@ -7,10 +7,10 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..13} )
-PYTHON_GDB_USE=( python_targets_python3_{11..13} )
-VER="14.2.0_20241119"
-GDB_VER="16.2_20250324"
+PYTHON_COMPAT=( python3_{12..13} )
+PYTHON_GDB_USE=( python_targets_python3_{12..13} )
+VER="14.2.0_20251107"
+GDB_VER="16.3_20250913"
 OPENOCD_VER="0.12.0-esp32-20250707"
 
 CROSSTOOL_URL="https://github.com/espressif/crosstool-NG/releases/download/esp-${VER}"
@@ -47,6 +47,7 @@ BDEPEND="app-arch/unzip"
 RDEPEND="
 	${PYTHON_DEPS}
 
+	dev-build/cmake
 	dev-libs/libusb:1
 	dev-python/click[${PYTHON_USEDEP}]
 	dev-python/pyserial[${PYTHON_USEDEP}]
@@ -55,6 +56,7 @@ RDEPEND="
 	dev-python/pyelftools[${PYTHON_USEDEP}]
 	dev-embedded/esp-coredump[${PYTHON_USEDEP}]
 	dev-embedded/esptool
+	dev-embedded/esp-idf-diag[${PYTHON_USEDEP}]
 	dev-embedded/esp-idf-kconfig[${PYTHON_USEDEP}]
 	dev-embedded/esp-idf-monitor[${PYTHON_USEDEP}]
 	dev-embedded/esp-idf-nvs-partition-gen[${PYTHON_USEDEP}]
@@ -68,7 +70,6 @@ RDEPEND="
 RESTRICT="strip"
 
 QA_PREBUILT="opt/* usr/lib* usr/share/esp-idf/*"
-QA_PRESTRIPPED="opt/*"
 
 PATCHES=(
 	"${FILESDIR}/allow-system-install-${PN}-5.3.patch"

@@ -627,9 +627,9 @@ LICENSE+="
 "
 
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~arm64 ~riscv"
 
-RDEPEND="dev-libs/oniguruma"
+RDEPEND="dev-libs/oniguruma:="
 DEPEND="${RDEPEND}"
 
 src_prepare() {
