@@ -1,0 +1,15 @@
+BDEPEND=sys-devel/gnuconfig >=app-portage/elt-patches-20250306 || ( >=dev-build/automake-1.18:1.18 >=dev-build/automake-1.17-r1:1.17 ) || ( >=dev-build/autoconf-2.72-r1:2.72 ) >=dev-build/libtool-2.4.7-r3
+DEFINED_PHASES=configure install prepare
+DEPEND=dev-lang/lua:5.1 dev-libs/boost:0= dev-libs/expat dev-libs/tinyxml gnome-base/libgtop media-gfx/flam3 media-libs/freeglut media-libs/glee media-libs/libpng:* media-video/ffmpeg:0 net-misc/curl virtual/zlib:= x11-libs/libX11 x11-libs/libXrender x11-libs/wxGTK:3.2-gtk3 virtual/opengl
+DESCRIPTION=Realize the collective dream of sleeping computers from all over the internet
+EAPI=8
+HOMEPAGE=https://electricsheep.org/
+INHERIT=autotools wxwidgets desktop flag-o-matic
+IUSE=video_cards_nvidia
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=dev-lang/lua:5.1 dev-libs/boost:0= dev-libs/expat dev-libs/tinyxml gnome-base/libgtop media-gfx/flam3 media-libs/freeglut media-libs/glee media-libs/libpng:* media-video/ffmpeg:0 net-misc/curl virtual/zlib:= x11-libs/libX11 x11-libs/libXrender x11-libs/wxGTK:3.2-gtk3 virtual/opengl
+SLOT=0
+SRC_URI=https://github.com/scottdraves/electricsheep/archive/5fbbb684752be06ccbea41639968aa7f1cc678dd.tar.gz -> electricsheep-3.0.4_p20240213.tar.gz https://github.com/scottdraves/electricsheep/pull/126.patch -> electricsheep-remove-convenience.patch https://github.com/scottdraves/electricsheep/commit/f3417c7a5b6bf5bc56d2cb5572ebfad3661dc740.patch -> electricsheep-ffmpeg-8.patch
+_eclasses_=gnuconfig	ddeb9f8caff1b5f71a09c75b7534df79	toolchain-funcs	7e440a20ac11dece04e3334622e6e5da	libtool	c81bd096be5f4c82f4e8f156ef112402	autotools	955b29ccd82c1df4755e5f37748d2fa6	flag-o-matic	ed1eda86c8f746a2a75f7f9f7478f5f4	wxwidgets	c48bf68858bd3c27c272ff034eb1e14d	desktop	26d57169ca094c04be416993844ec8bc
+_md5_=4caee3d168d8b556330597a98a52cc4c

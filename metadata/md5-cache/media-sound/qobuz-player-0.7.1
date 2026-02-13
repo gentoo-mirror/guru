@@ -1,0 +1,15 @@
+BDEPEND=virtual/pkgconfig || ( >=dev-lang/rust-bin-1.90.0:* >=dev-lang/rust-1.90.0:* )
+DEFINED_PHASES=compile configure install setup test unpack
+DEPEND=dev-db/sqlite:3= media-libs/alsa-lib sys-apps/dbus
+DESCRIPTION=Tui, web and rfid player for Qobuz
+EAPI=8
+HOMEPAGE=https://github.com/SofusA/qobuz-player
+INHERIT=cargo
+IUSE=debug
+KEYWORDS=~amd64
+LICENSE=GPL-3 Apache-2.0 BSD-2 BSD CDLA-Permissive-2.0 ISC MIT MPL-2.0 UoI-NCSA Unicode-3.0 ZLIB
+RDEPEND=dev-db/sqlite:3= media-libs/alsa-lib sys-apps/dbus
+SLOT=0
+SRC_URI=https://github.com/SofusA/qobuz-player/archive/refs/tags/v0.7.1.tar.gz -> qobuz-player-0.7.1.tar.gz https://github.com/gentoo-crate-dist/qobuz-player/releases/download/v0.7.1/qobuz-player-0.7.1-crates.tar.xz https://github.com/SeaDve/mpris-server/archive/f8b3f74e93910fffd0c93df687e05cf954dcdeba.tar.gz -> mpris-server-f8b3f74e93910fffd0c93df687e05cf954dcdeba.gh.tar.gz https://github.com/nickblt/qonductor/archive/efba84c3a82042f8dca375a8b4860a96e165eed7.tar.gz -> qonductor-efba84c3a82042f8dca375a8b4860a96e165eed7.gh.tar.gz
+_eclasses_=toolchain-funcs	7e440a20ac11dece04e3334622e6e5da	flag-o-matic	ed1eda86c8f746a2a75f7f9f7478f5f4	multiprocessing	1e32df7deee68372153dca65f4a7c21f	rust	dd082fc51cbae6f9afa90dd1668d71a9	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	aeba1d272f6c2e000912e11d8cf626eb
+_md5_=b9a218b88727bfa58e7fb681744fc8ea

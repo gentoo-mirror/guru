@@ -103,10 +103,10 @@ app-admin/gentoo_update 0.2.4: Gentoo Linux updater
 app-admin/git-credential-oauth 0.17.2: A Git credential helper that securely authenticates using OAuth
 app-admin/grub-customizer 5.2.5: A graphical grub2 settings manager
 app-admin/hardinfo2 2.2.13: System Information and Benchmark for Linux Systems
-app-admin/himitsu 0.7 0.8 0.9-r1 9999: Secret storage system for Unix, suitable for storing passwords, keys, ...
+app-admin/himitsu 0.9-r1 9999: Secret storage system for Unix, suitable for storing passwords, keys, ...
 app-admin/himitsu-keyring 0.2.0: graphical frontend for managing a Himitsu key store
 app-admin/himitsu-secret-service 0.1: himitsu secret-service integration
-app-admin/himitsu-ssh 0.4 0.9.1 9999: SSH integration for Himitsu
+app-admin/himitsu-ssh 0.9.1 9999: SSH integration for Himitsu
 app-admin/himitsu-totp 0.2 0.9 9999: TOTP support for Himitsu
 app-admin/hiprompt-gtk 0.9-r1: GTK4 prompter for Himitsu
 app-admin/i2pd-tools 2025.08.21 2025.10.16 2025.10.16-r1: Some useful tools for I2P
@@ -118,7 +118,7 @@ app-admin/passage 1.7.4.2: A fork of password-store using age as encryption back
 app-admin/pulumi-bin 3.191.0 3.198.0 3.201.0 3.204.0 3.207.0: Infrastructure as code in any programming language
 app-admin/rbw 1.14.1 1.15.0 9999: Unofficial Bitwarden CLI
 app-admin/ripasso 0.7.0: A password manager that uses the file format of 'pass'
-app-admin/run0edit 0.5.6_p20251226 9999: Script to edit a single file as root using run0
+app-admin/run0edit 0.5.7 9999: Script to edit a single file as root using run0
 app-admin/s-tui 1.2.0-r1 1.3.0: Stress-Terminal UI monitoring tool
 app-admin/synadm 0.43.1 0.44: Command line admin tool for Synapse
 app-admin/talosctl-bin 1.7.6 1.9.5 1.10.1 1.12.0_rc0: Pre-compiled talosctl is an tool for interacting with the Talos API
@@ -140,7 +140,7 @@ app-backup/kopia 0.22.3: Kopia - Fast And Secure Open-Source Backup
 app-backup/kopia-ui-bin 0.22.3: Kopia - Fast And Secure Open-Source Backup (Electron UI)
 app-backup/pika-backup 0.7.4-r1: Keep your data safe
 app-backup/restic-browser 0.3.3: A GUI to browse and restore from restic backup repositories
-app-backup/timeshift 23.07.1: A system restore utility for Linux
+app-backup/timeshift 23.07.1 25.12.4: A system restore utility for Linux
 app-backup/timeshift-autosnap 0.9-r1: Automatically creates a timeshift-snapshot when executed
 app-backup/vorta 0.11.2: A GUI for Borg Backup
 app-benchmarks/k6 1.4.2: Load testing tool
@@ -258,7 +258,7 @@ app-misc/doublecmd-bin 1.1.31 1.1.32 1.2.0 1.2.1 9999: Double Commander: file ma
 app-misc/dpscreenocr 1.4.1: Program to recognize text on screen
 app-misc/dragon 1.2.0-r1: Simple drag-and-drop source/sink for X and Wayland
 app-misc/durdraw 0.29.0: Versatile ASCII and ANSI Art text editor for drawing
-app-misc/electricsheep 3.0.4_p20240213: Realize the collective dream of sleeping computers from all over the internet
+app-misc/electricsheep 3.0.4_p20240213 3.0.4_p20240213-r1: Realize the collective dream of sleeping computers from all over the internet
 app-misc/far2l 2.6.4_beta 2.6.5_beta 9999: Linux port of FAR Manager v2
 app-misc/fetsh 1.8 1.9 9999: A fetch written in POSIX shell without any external commands
 app-misc/fff 2.2: A simple file manager written in bash
@@ -554,7 +554,7 @@ dev-hare/hare-gi 0.1.0: GObject Introspection code generator for Hare
 dev-hare/hare-gtk4-layer-shell 0.1.0: gtk4-layer-shell bindings for Hare
 dev-hare/hare-json 0.24.2 0.25.2.0 9999: JSON support for Hare
 dev-hare/hare-png 9999: PNG implementation for Hare
-dev-hare/hare-ssh 0.24.2 0.25.2 9999: SSH library for Hare
+dev-hare/hare-ssh 0.25.2 9999: SSH library for Hare
 dev-hare/hare-xml 0_pre20231231 0.25.2.0 9999: XML support for Hare
 dev-java/corretto-bin 8.462.08.1 11.0.28.6.1 17.0.16.8.1 21.0.8.9.1 25.0.0.36.2: Prebuilt Java JDK binaries provided by Amazon Web Services
 dev-java/jdtls-bin 1.54.0_p202511211413 1.55.0_p202601060902 1.56.0_p202601201639: Java language server
@@ -565,8 +565,8 @@ dev-lang/crystal-bin 1.16.3 1.17.1 1.18.0 1.18.2: The Crystal Programming Langua
 dev-lang/fbc 1.10.1: A free/open source, multi-platform BASIC compiler.
 dev-lang/fbc-bootstrap 1.10.1: Bootstrap package for dev-lang/fbc
 dev-lang/gnu-apl 1.8: GNU interpreter for the APL programming language
-dev-lang/hare 0.24.2 0.25.2-r2 9999: The Hare systems programming language
-dev-lang/harec 0.24.2 0.25.2 9999: The Hare compiler
+dev-lang/hare 0.25.2-r2 0.26.0 9999: The Hare systems programming language
+dev-lang/harec 0.25.2 0.26.0 9999: The Hare compiler
 dev-lang/odin 2026.01 2026.02 9999: The Data-Oriented Language for Sane Software Development.
 dev-lang/opencilk 1.1 2.1: The OpenCilk concurrency platform for parallel programming
 dev-lang/opencilk-bin 1.1 2.1: The OpenCilk concurrency platform for parallel programming
@@ -710,7 +710,6 @@ dev-python/adb-shell 0.4.4-r1: A Python implementation of ADB with shell and Fil
 dev-python/addict 2.4.0: The Python Dict that's better than heroin
 dev-python/ahocorasick 2.0.0 2.1.0: Python module implementing Aho-Corasick algorithm
 dev-python/aisuite 0.1.7: Simple, unified interface to multiple Generative AI providers
-dev-python/annotated-doc 0.0.2: Document parameters, class attributes, return types, and variables inline
 dev-python/arpy 2.3.0: Library for accessing ar files
 dev-python/ascim 0.1.1: Manipulate ASCII art as you would do with raster images
 dev-python/asgi-lifespan 2.1.0: Programmatic startup/shutdown of ASGI apps
@@ -889,7 +888,7 @@ dev-python/pypandoc 1.16.2: Pypandoc provides a thin wrapper for pandoc, a unive
 dev-python/pyperscan 0.3.0: An opinionated Python binding for Hyperscan
 dev-python/pyproject2ebuild 0.0.3: Convert pyproject.toml to Gentoo ebuilds automatically.
 dev-python/pyqtdarktheme 2.1.0: A flat dark theme for PySide and PyQt.
-dev-python/pyrefly 0.51.0: A fast type checker and language server for Python with powerful IDE features
+dev-python/pyrefly 0.52.0: A fast type checker and language server for Python with powerful IDE features
 dev-python/pyrime 0.0.7: rime for python
 dev-python/pysdl3 0.9.8_beta8 0.9.8_beta9 0.9.9_beta1: A pure Python wrapper for SDL3
 dev-python/pysnooper 1.2.1 1.2.3: Never use print for debugging again
@@ -927,7 +926,6 @@ dev-python/rectangle-packer 2.0.2: Pack a set of rectangles into a bounding box 
 dev-python/repology-client 0.5.0 0.6.0: Asynchronous wrapper for Repology API
 dev-python/rpmautospec-core 0.1.5: Core functionality used by rpmautospec
 dev-python/rstcheck 6.2.0 6.2.1: Checks syntax of reStructuredText and code blocks nested within it
-dev-python/safety-schemas 0.0.14: Schemas for Safety tools
 dev-python/scrapy 2.12.0: A high-level Web Crawling and Web Scraping framework
 dev-python/screeninfo 0.8.1: Fetch location and size of physical screens.
 dev-python/sendgrid 6.11.0: Twilio SendGrid library for Python
@@ -1014,7 +1012,7 @@ dev-util/catalyst-lab 1.6.0 1.6.1: An automation tool for building Gentoo releas
 dev-util/catppuccin-catwalk 1.3.2: Soothing pastel previews for the high-spirited!
 dev-util/catppuccin-whiskers 2.4.0: Soothing port creation tool for the high-spirited!
 dev-util/cmakelang 0.6.13: Provides Quality Assurance (QA) tools for cmake
-dev-util/codex 0.98.0: Codex CLI - OpenAI's AI-powered coding agent
+dev-util/codex 0.101.0: Codex CLI - OpenAI's AI-powered coding agent
 dev-util/coq-lsp 0.1.9: Visual Studio Code Extension and Language Server Protocol for Coq
 dev-util/deblob 0.11 0.12 9999: remove binary executables from a directory
 dev-util/distribution-gpg-keys 1.116: Collection of GPG keys used in Linux Distributions
@@ -1031,7 +1029,7 @@ dev-util/forgejo-runner 12.5.3 12.6.1 9999: A daemon that connects to a Forgejo 
 dev-util/fortls 2.13.0 3.0.0 3.1.1 3.1.2 3.2.2: Fortran Language Server (fortls)
 dev-util/fortran-test-drive 0.4.0 0.5.0: The simple testing framework (for Fortran)
 dev-util/gammaray 3.3.0 3.3.1: High-level runtime introspection tool for Qt applications
-dev-util/gemini-cli 0.27.3: Gemini CLI - a command-line AI workflow tool by Google
+dev-util/gemini-cli 0.28.2: Gemini CLI - a command-line AI workflow tool by Google
 dev-util/genTree 0.1.0 9999: Gentoo rootfs tree generator
 dev-util/gersemi 0.25.4: A formatter to make your CMake code the real treasure
 dev-util/git-bug 0.10.1 9999: distributed, offline-first bug tracker
@@ -1040,7 +1038,7 @@ dev-util/gitlab-ci-local-bin 4.43.0 4.47.0 4.56.0: Run gitlab pipelines locally 
 dev-util/go-task 3.38.0-r1 3.41.0-r1: A task runner / simpler Make alternative written in Go
 dev-util/google-antigravity 1.16.5: Google's AI-first IDE and agentic development platform
 dev-util/gshards 0.2: Small helper tools to aid installing Crystal packages in Gentoo
-dev-util/hare-update 0.25.2.0 9999: assist in upgrading a codebase to a newer Hare release
+dev-util/hare-update 0.25.2.0 0.26.0.0 9999: assist in upgrading a codebase to a newer Hare release
 dev-util/haredo 1.0.2 9999: a simple and unix-idiomatic build automator
 dev-util/hevi 1.1.0: A terminal hex dump tool
 dev-util/hut 0.6.0: CLI tool for sourcehut
@@ -1097,7 +1095,7 @@ dev-util/vala-language-server 0.48.7: Code Intelligence for Vala & Genie
 dev-util/vscode-langservers-extracted 4.8.0 4.10.0: HTML/CSS/JSON/ESLint/Markdown language servers extracted from vscode.
 dev-util/wakatime-cli 1.27.0 1.28.6: Command line interface to WakaTime used by all WakaTime plugins
 dev-util/webgpu-headers 9999 20240512: Webgpu Header files
-dev-util/webstorm 2024.3.5-r1 2025.1.4.1-r1 2025.2.4-r1 2025.2.5 2025.3.1.1: An integrated development environment for JavaScript and related technologies.
+dev-util/webstorm 2024.3.5-r1 2025.1.4.1-r1 2025.2.5 2025.3.1.1 2025.3.2: An integrated development environment for JavaScript and related technologies.
 dev-util/wxformbuilder 3.10.1-r1 4.2.1: A wxWidgets GUI Builder
 dev-util/xcd-rgb 1.0.0 9999: colorful hex dump (RGB edition)
 dev-util/xrt 202610.2.21.21 999999: Runtime for AIE and FPGA based platforms
@@ -1269,13 +1267,13 @@ gui-apps/lemurs 0.3.2 0.4.0: A TUI Display/Login Manager
 gui-apps/lswt 1.0.4-r1 2.0.0 9999: List Wayland toplevels
 gui-apps/meteo-qt 4.1 4.2: A system tray application for the weather status
 gui-apps/mpvpaper 1.8 9999: A video wallpaper program for wlroots based wayland compositors
-gui-apps/noctalia-shell 4.4.1 9999: Noctalia Configuration for Quickshell
+gui-apps/noctalia-shell 4.4.3 9999: Noctalia Configuration for Quickshell
 gui-apps/nwg 0: meta package package for nwg-shell
 gui-apps/nwg-bar 0.1.5 0.1.6: GTK3-based button bar for wlroots-based compositors
 gui-apps/nwg-clipman 0.2.5 0.2.8: nwg-shell clipboard manager - a GTK3-based GUI for cliphist
 gui-apps/nwg-displays 0.3.25 0.3.28: Output management utility for sway and Hyprland
 gui-apps/nwg-dock 0.4.1 0.4.3: GTK3-based dock for sway
-gui-apps/nwg-dock-hyprland 0.4.6 0.4.8: GTK3-based dock for Hyprland
+gui-apps/nwg-dock-hyprland 0.4.6-r1 0.4.8-r1: GTK3-based dock for Hyprland
 gui-apps/nwg-drawer 0.7.0 0.7.4: Application drawer for wlroots-based Wayland compositors
 gui-apps/nwg-hello 0.4.0 0.4.2: GTK3-based greeter for greetd written in python
 gui-apps/nwg-icon-picker 0.1.1 0.1.1-r1 9999: GTK icon chooser with a text search option
@@ -1360,7 +1358,7 @@ kde-apps/kwalletcli 3.03: CLI for the KDE Wallet
 kde-misc/geminipart 20250730: KPart for viewing text/gemini files
 kde-misc/kio-gemini 20250730: Gemini KIO worker
 mail-client/betterbird-bin 140.2.1: Betterbird is a fine-tuned version of Mozilla Thunderbird.
-mail-client/mailspring-bin 1.17.2: A beautiful, fast and fully open source mail client for Mac, Windows and Linux
+mail-client/mailspring-bin 1.17.4: A beautiful, fast and fully open source mail client for Mac, Windows and Linux
 mail-client/proton-mail-bin 1.11.0: Beta Client for Proton Mail
 mail-client/tutanota-desktop-bin 319.260107.1: Desktop client for Tutanota, the secure e-mail service
 mail-filter/postfix-mta-sts-resolver 1.4.0: Daemon which provides TLS client policy for Postfix via socketmap
@@ -1447,7 +1445,7 @@ media-libs/sonic 0.2.0_p20250419: Simple library to speed up or slow down speech
 media-libs/svt-vp9 0.3.0 0.3.1 9999: Scalable Video Technology for VP9 (SVT-VP9 Encoder)
 media-libs/vvdec 2.3.0: VVdeC, the Fraunhofer Versatile Video Decoder
 media-libs/vvenc 1.11.1: VVenC, the Fraunhofer Versatile Video Encoder
-media-libs/wivrn 25.12 26.2 9999: WiVRn OpenXR streaming
+media-libs/wivrn 25.12 26.2 26.2.1 9999: WiVRn OpenXR streaming
 media-libs/xrizer 0.3.0-r1 9999: OpenVR over OpenXR compatibility layer
 media-plugins/alsa-sndio 0.2: ALSA PCM to play audio on sndio servers
 media-plugins/argotlunar-bin 2.06-r2: Argotlunar is a sound granulator. Binary Linux VST
@@ -1462,7 +1460,7 @@ media-radio/fllog 1.2.8: Logbook application for amateur radio use
 media-sound/6pm 0.9-r1: 6PM is a polyphonic, touch-sensitive, realtime phase modulation synthesizer
 media-sound/Tauon 8.2.1 8.2.2 8.2.3 9999: The desktop music player of today!
 media-sound/add64 3.9.3-r1 4.1.0: Add64 is a realtime additive/subtractive-synthesis softsynth
-media-sound/aimp 6.00.3017_alpha4 6.00.3021_alpha5 6.00.3027_alpha6 6.00.3030_alpha7 6.00.3036_alpha8: AIMP - Free Audio Player
+media-sound/aimp 6.00.3017_alpha4 6.00.3021_alpha5 6.00.3027_alpha6 6.00.3030_alpha7 6.00.3037_alpha8: AIMP - Free Audio Player
 media-sound/amberol 2024.2: Simple GUI Music Player
 media-sound/bespokesynth 1.2.1 1.3.0: Software modular synth
 media-sound/callaudiod 0.1.10 0.1.99: Call audio routing daemon
@@ -1501,7 +1499,7 @@ media-sound/pipewire-module-xrdp 0.1_pre20230609-r1 0.2: PipeWire module which e
 media-sound/plexamp 4.13.0: A dedicated music player for your Plex media library.
 media-sound/qbitmplayer 3.1.2 3.2.0-r1 3.3.1: Music Player written in C++ & Qt.
 media-sound/qloud 1.4.2: Tool to measure loudspeaker frequency and step responses and distortions
-media-sound/qobuz-player 0.6.5 0.6.6: Tui, web and rfid player for Qobuz
+media-sound/qobuz-player 0.6.5 0.6.6 0.7.1: Tui, web and rfid player for Qobuz
 media-sound/rmpc 0.9.0 0.10.0 9999: A beautiful and configurable TUI client for MPD
 media-sound/rsgain 3.5.1 3.5.3: Really Simple replay Gain calculator for tagging audio files
 media-sound/shortwave 5.0.0: An internet radio player
@@ -1980,7 +1978,7 @@ www-apps/invidious 2025.09.13.0-r2: Invidious is an alternative front-end to You
 www-apps/laminar 1.3-r1: Fast and lightweight Continuous Integration
 www-apps/libmedium 2024.06.10: Alternative private front-end to Medium
 www-apps/mycorrhiza 1.15.1 9999: Git-based wiki engine written in Go using mycomarkup
-www-apps/pleroma 2.9.1 2.10.0 2.10.0-r1 9999: ActivityPub social networking software compatible with other Fediverse software
+www-apps/pleroma 2.10.0 2.10.0-r1 9999: ActivityPub social networking software compatible with other Fediverse software
 www-apps/pleroma-fe 2.7.0 2.8.0 9999: Main frontend for www-apps/pleroma, inspired by qvitter
 www-apps/redlib 0.36.0: Alternative private front-end to Reddit
 www-apps/rimgo 1.2.1: An alternative frontend for Imgur. Originally based on rimgu.
