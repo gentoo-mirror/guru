@@ -1,4 +1,4 @@
-# Copyright 2021-2024 Gentoo Authors
+# Copyright 2021-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -22,7 +22,7 @@ LICENSE="MPL-2.0 GPL-3"
 
 # release policy: https://git.sr.ht/~sircmpwn/hare/tree/master/item/docs/release.md
 DEPEND="
-	~dev-lang/harec-0.24.2
+	~dev-lang/harec-0.26.0
 	>=sys-devel/qbe-1.2
 "
 BDEPEND="app-text/scdoc"
