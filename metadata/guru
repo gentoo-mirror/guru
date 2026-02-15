@@ -1,0 +1,6 @@
+#put this in /etc/portage/repos.conf/
+[guru]
+location = /var/db/repos/guru
+sync-type = git
+sync-uri = git@git.gentoo.org/repo/proj/guru.git
+priority = 9999
