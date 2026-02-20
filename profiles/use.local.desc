@@ -679,6 +679,12 @@ net-im/chatterino:qtkeychain - Enable qtkeychain support to secure passwords
 net-im/conduit:rocksdb - Add support for RocksDB; a key/value, LSM database
 net-im/conduit:system-rocksdb - Use the system-wide dev-libs/rocksdb installation
 net-im/element-desktop:emoji - Use media-fonts/noto-emoji for displaying emoji
+net-im/forkgram:dbus - Enable D-Bus support for desktop integration
+net-im/forkgram:enchant - Use app-text/enchant spell-checking backend instead of app-text/hunspell
+net-im/forkgram:fonts - Use built-in patched copy of open-sans fonts (overrides fontconfig)
+net-im/forkgram:libdispatch - Use dev-libs/libdispatch for better thread pool performance
+net-im/forkgram:screencast - Enable screencasting support via media-libs/tg_owt
+net-im/forkgram:webkit - Enable WebKit-based in-app browser (requires USE=wayland)
 net-im/gajim-plugins:acronyms_expander - Plugin: Replaces acronyms (or other strings) with given expansions/substitutes
 net-im/gajim-plugins:anti_spam - Plugin: Block some incoming messages
 net-im/gajim-plugins:clients_icons - Plugin: Shows the client icons in the roster and in groupchats
@@ -695,6 +701,7 @@ net-im/mautrix-telegram:qrcode - Enables logging in via QR code support
 net-im/mautrix-whatsapp:crypt - Enable end-to-bridge encryption with dev-libs/olm.
 net-im/nheko:video - Enable video calls
 net-im/nheko:voip - Enable audio calls
+net-im/why2:server - Build the why2-server binary
 net-irc/pounce:palaver - Provide push notifications for the Palaver IRC app
 net-irc/tiny:dbus - Enable desktop notifications
 net-irc/tiny:openssl - Use dev-libs/openssl as TLS backend instead of compiled-in rustls

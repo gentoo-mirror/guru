@@ -1,0 +1,13 @@
+BDEPEND=app-arch/brotli dev-libs/openssl net-libs/libssh2 dev-lang/nim virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=prepare unpack
+DEPEND=app-arch/brotli dev-libs/openssl net-libs/libssh2
+DESCRIPTION=TUI web browser; supports CSS, images, JavaScript, and multiple web protocols
+EAPI=8
+HOMEPAGE=https://chawan.net
+INHERIT=git-r3
+IUSE=lto
+LICENSE=Unlicense
+PROPERTIES=live
+SLOT=0
+_eclasses_=git-r3	875eb471682d3e1f18da124be97dcc81
+_md5_=efbc2ca83e9a5b0f4242476a56761a57

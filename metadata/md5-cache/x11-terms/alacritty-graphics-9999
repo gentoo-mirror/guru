@@ -1,0 +1,16 @@
+BDEPEND=dev-build/cmake app-text/scdoc || ( >=dev-lang/rust-bin-1.74.1:* >=dev-lang/rust-1.74.1:* ) >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile configure install postinst setup test unpack
+DEPEND=media-libs/fontconfig:= media-libs/freetype:2 x11-libs/libxkbcommon X? ( x11-libs/libxcb:= )
+DESCRIPTION=GPU-accelerated terminal emulator with sixel support
+EAPI=8
+HOMEPAGE=https://alacritty.org
+INHERIT=cargo desktop shell-completion eapi9-ver git-r3
+IUSE=+wayland X debug
+LICENSE=Apache-2.0 Apache-2.0 BSD-2 BSD Boost-1.0 CC0-1.0 ISC MIT MPL-2.0 Unicode-DFS-2016 Unicode-3.0
+PROPERTIES=live
+RDEPEND=media-libs/fontconfig:= media-libs/freetype:2 x11-libs/libxkbcommon X? ( x11-libs/libxcb:= ) !x11-terms/alacritty media-libs/mesa[X?,wayland?] virtual/zlib sys-libs/ncurses:0 wayland? ( dev-libs/wayland ) X? ( x11-libs/libXcursor x11-libs/libXi x11-libs/libXrandr )
+REQUIRED_USE=|| ( wayland X )
+RESTRICT=mirror
+SLOT=0
+_eclasses_=toolchain-funcs	7e440a20ac11dece04e3334622e6e5da	flag-o-matic	ed1eda86c8f746a2a75f7f9f7478f5f4	multiprocessing	1e32df7deee68372153dca65f4a7c21f	rust	dd082fc51cbae6f9afa90dd1668d71a9	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	aeba1d272f6c2e000912e11d8cf626eb	desktop	26d57169ca094c04be416993844ec8bc	bash-completion-r1	767861f3744f589ee5291c1698b1c082	shell-completion	0b655d0d825e157a5e99c463bddaac16	eapi9-ver	6a71fa30cdb3fe445114fdeab156c1f0	git-r3	875eb471682d3e1f18da124be97dcc81
+_md5_=a771dc6bc3066149d6a5d2fa2bbdfc73

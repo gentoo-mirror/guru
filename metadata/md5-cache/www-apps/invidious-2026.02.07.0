@@ -1,0 +1,16 @@
+BDEPEND=|| ( >=dev-lang/crystal-1.16.3 >=dev-lang/crystal-bin-1.16.3 ) || ( dev-util/shards dev-lang/crystal-bin ) >=dev-util/gshards-0.2 virtual/pkgconfig
+DEFINED_PHASES=compile configure install postinst prepare pretend setup test unpack
+DEPEND=dev-db/sqlite:3 dev-libs/boehm-gc dev-libs/libpcre2:= dev-libs/libxml2:2= dev-libs/libyaml dev-libs/openssl:= virtual/zlib:= dev-crystal/athena-negotiation dev-crystal/http_proxy >=dev-crystal/kemal-1.6.0 >=dev-crystal/protodec-0.1.5 virtual/crystal-db[postgres,sqlite] test? ( dev-crystal/spectator ) || ( >=dev-lang/crystal-1.16.3 >=dev-lang/crystal-bin-1.16.3 )
+DESCRIPTION=Invidious is an alternative front-end to YouTube
+EAPI=8
+HOMEPAGE=https://invidious.io/ https://github.com/iv-org/invidious
+INHERIT=check-reqs shards systemd
+IUSE=test debug doc
+KEYWORDS=~amd64
+LICENSE=AGPL-3 Apache-2.0 MIT
+RDEPEND=dev-db/sqlite:3 dev-libs/boehm-gc dev-libs/libpcre2:= dev-libs/libxml2:2= dev-libs/libyaml dev-libs/openssl:= virtual/zlib:= acct-user/invidious gnome-base/librsvg
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/iv-org/invidious/archive/refs/tags/v2.20260207.0.tar.gz -> invidious-2026.02.07.0.tar.gz https://registry.npmjs.org/video.js/-/video.js-7.12.1.tgz https://registry.npmjs.org/videojs-contrib-quality-levels/-/videojs-contrib-quality-levels-2.1.0.tgz https://registry.npmjs.org/videojs-http-source-selector/-/videojs-http-source-selector-1.1.6.tgz https://registry.npmjs.org/videojs-markers/-/videojs-markers-1.0.1.tgz https://registry.npmjs.org/videojs-mobile-ui/-/videojs-mobile-ui-0.6.1.tgz https://registry.npmjs.org/videojs-overlay/-/videojs-overlay-2.1.4.tgz https://registry.npmjs.org/videojs-share/-/videojs-share-3.2.1.tgz https://registry.npmjs.org/videojs-vr/-/videojs-vr-1.8.0.tgz https://registry.npmjs.org/videojs-vtt-thumbnails/-/videojs-vtt-thumbnails-0.0.13.tgz test? ( https://github.com/iv-org/mocks/archive/b55d58dea94f7144ff0205857dfa70ec14eaa872.tar.gz -> invidious-mocks-b55d58d.tar.gz )
+_eclasses_=check-reqs	12ab9d3fc16bfe1f87c6fb652324b57c	edo	a5e294016aa84979fcb2459749eb80b2	toolchain-funcs	7e440a20ac11dece04e3334622e6e5da	flag-o-matic	ed1eda86c8f746a2a75f7f9f7478f5f4	multiprocessing	1e32df7deee68372153dca65f4a7c21f	crystal-utils	d62f451129021418fc7ec4291c366c0f	shards	78400316257ca0f86e28a2650734321e	systemd	a964c0cbe818b5729da1dbfcee5be861
+_md5_=b463bb8a016c43f23429efd4aa6b14b5
