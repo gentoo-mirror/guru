@@ -1,4 +1,4 @@
-# Copyright 2025 Gentoo Authors
+# Copyright 2025-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -21,20 +21,25 @@ KEYWORDS="~amd64"
 
 PATCHES=(
 	"${FILESDIR}/remove-non-python-files-from-setup.patch"
+	"${FILESDIR}/fix-translations.patch"
 )
 
-RDEPEND="x11-libs/gtk+:3
-x11-libs/gtksourceview
-x11-apps/xmodmap
-$(python_gen_cond_dep '
-	dev-python/pygobject[${PYTHON_USEDEP}]
-	dev-python/pydbus[${PYTHON_USEDEP}]
-	dev-python/pydantic[${PYTHON_USEDEP}]
-	dev-python/psutil[${PYTHON_USEDEP}]
-	>=dev-python/evdev-1.3.0[${PYTHON_USEDEP}]
-	dev-python/setuptools[${PYTHON_USEDEP}]
-')
-virtual/udev"
+RDEPEND="
+	x11-libs/gtk+:3
+	x11-libs/gtksourceview
+	x11-apps/xmodmap
+	$(python_gen_cond_dep '
+		dev-python/pygobject[${PYTHON_USEDEP}]
+		dev-python/pydbus[${PYTHON_USEDEP}]
+		dev-python/pydantic[${PYTHON_USEDEP}]
+		dev-python/psutil[${PYTHON_USEDEP}]
+		>=dev-python/evdev-1.3.0[${PYTHON_USEDEP}]
+		dev-python/setuptools[${PYTHON_USEDEP}]
+	')
+	virtual/udev
+"
+
+EPYTEST_PLUGINS=()
 
 distutils_enable_tests pytest
 
