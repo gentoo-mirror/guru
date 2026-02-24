@@ -1,4 +1,4 @@
-# Copyright 2025 Gentoo Authors
+# Copyright 2025-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -22,8 +22,8 @@ elif [[ ${ARCH} == arm64 ]] ; then
 fi
 
 SRC_URI="
-amd64? ( https://github.com/imputnet/${MY_PN}-linux/releases/download/${PV}/${MY_P}-x86_64_linux.tar.xz -> ${P}-amd64.tar.xz )
-arm64? ( https://github.com/imputnet/${MY_PN}-linux/releases/download/${PV}/${MY_P}-arm64_linux.tar.xz -> ${P}-arm64.tar.xz )
+	amd64? ( https://github.com/imputnet/${MY_PN}-linux/releases/download/${PV}/${MY_P}-x86_64_linux.tar.xz -> ${P}-amd64.tar.xz )
+	arm64? ( https://github.com/imputnet/${MY_PN}-linux/releases/download/${PV}/${MY_P}-arm64_linux.tar.xz -> ${P}-arm64.tar.xz )
 "
 
 S=${WORKDIR}
