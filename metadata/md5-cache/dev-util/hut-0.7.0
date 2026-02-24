@@ -1,0 +1,12 @@
+BDEPEND=app-text/scdoc >=dev-lang/go-1.20:= app-arch/unzip
+DEFINED_PHASES=compile install unpack
+DESCRIPTION=CLI tool for sourcehut
+EAPI=8
+HOMEPAGE=https://sr.ht/~xenrox/hut/
+INHERIT=go-module
+KEYWORDS=~amd64
+LICENSE=AGPL-3
+SLOT=0
+SRC_URI=https://git.sr.ht/~xenrox/hut/archive/v0.7.0.tar.gz -> hut-0.7.0.tar.gz https://git.sr.ht/~xenrox/hut/refs/download/v0.7.0/hut-v0.7.0-vendor.tar.xz -> hut-0.7.0-vendor.tar.xz
+_eclasses_=multiprocessing	1e32df7deee68372153dca65f4a7c21f	toolchain-funcs	8a2c298bde71ecf3f452dd9e67c94369	flag-o-matic	ed1eda86c8f746a2a75f7f9f7478f5f4	go-env	0e2babf96e7d0b045fc07ad199eb2399	go-module	2a164b5dbe5ba61e90d7985a433dde70
+_md5_=ab3ba4cceb5acbcbf56ddf05c6c309b5

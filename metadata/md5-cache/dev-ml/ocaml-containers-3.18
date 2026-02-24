@@ -1,0 +1,16 @@
+BDEPEND=dev-lang/ocaml dev-ml/dune
+DEFINED_PHASES=compile install test
+DEPEND=dev-ml/seq:=[ocamlopt?] dev-ml/either:=[ocamlopt?] dev-ml/dune-configurator:=[ocamlopt?] test? ( >=dev-ml/qcheck-0.91:=[ocamlopt?] dev-ml/yojson:=[ocamlopt?] dev-ml/iter:=[ocamlopt?] dev-ml/gen:=[ocamlopt?] dev-ml/csexp:=[ocamlopt?] dev-ml/uutf:=[ocamlopt?] dev-ml/mdx:=[ocamlopt?] ) dev-lang/ocaml:=[ocamlopt?] dev-ml/dune:=
+DESCRIPTION=Modular, clean and powerful extension of the OCaml standard library
+EAPI=8
+HOMEPAGE=https://github.com/c-cube/ocaml-containers
+INHERIT=dune
+IUSE=+ocamlopt test
+KEYWORDS=~amd64
+LICENSE=BSD
+RDEPEND=dev-ml/seq:=[ocamlopt?] dev-ml/either:=[ocamlopt?] dev-ml/dune-configurator:=[ocamlopt?] dev-lang/ocaml:=[ocamlopt?] dev-ml/dune:=
+RESTRICT=!test? ( test )
+SLOT=0/3.18
+SRC_URI=https://github.com/c-cube/ocaml-containers/archive/v3.18.tar.gz -> ocaml-containers-3.18.gh.tar.gz
+_eclasses_=edo	a5e294016aa84979fcb2459749eb80b2	multiprocessing	1e32df7deee68372153dca65f4a7c21f	dune	4304f35da0fafecd98eb149d0b7ed4d4
+_md5_=2459d71ca9f1c8267e3aa7191928cdaf

@@ -1,0 +1,13 @@
+DEFINED_PHASES=install postinst postrm preinst unpack
+DESCRIPTION=Fork of official Telegram Desktop app with small useful additions - bin
+EAPI=8
+HOMEPAGE=https://github.com/Forkgram/tdesktop
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=desktop xdg
+KEYWORDS=~amd64
+LICENSE=GPL-3
+RDEPEND=dev-libs/glib:2 media-libs/fontconfig media-libs/freetype media-libs/libpng:0 sys-apps/dbus virtual/opengl x11-libs/gtk+:3[X,wayland] x11-libs/libX11 !!net-im/forkgram !!net-im/telegram-desktop !!net-im/telegram-desktop-bin
+SLOT=0
+SRC_URI=https://github.com/Forkgram/tdesktop/releases/download/v6.4.2/Telegram.tar.xz -> forkgram-bin-6.4.2.tar.xz https://raw.githubusercontent.com/Forkgram/tdesktop/dev/Telegram/Resources/art/icon16.png -> forkgram-bin-16.png https://raw.githubusercontent.com/Forkgram/tdesktop/dev/Telegram/Resources/art/icon32.png -> forkgram-bin-32.png https://raw.githubusercontent.com/Forkgram/tdesktop/dev/Telegram/Resources/art/icon48.png -> forkgram-bin-48.png https://raw.githubusercontent.com/Forkgram/tdesktop/dev/Telegram/Resources/art/icon64.png -> forkgram-bin-64.png https://raw.githubusercontent.com/Forkgram/tdesktop/dev/Telegram/Resources/art/icon128.png -> forkgram-bin-128.png https://raw.githubusercontent.com/Forkgram/tdesktop/dev/Telegram/Resources/art/icon256.png -> forkgram-bin-256.png https://raw.githubusercontent.com/Forkgram/tdesktop/dev/Telegram/Resources/art/icon512.png -> forkgram-bin-512.png
+_eclasses_=desktop	26d57169ca094c04be416993844ec8bc	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575
+_md5_=ca9f4c69ba9d7ef205c2964a6e47049f

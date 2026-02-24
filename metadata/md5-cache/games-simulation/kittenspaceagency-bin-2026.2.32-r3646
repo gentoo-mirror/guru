@@ -1,0 +1,13 @@
+DEFINED_PHASES=install pretend
+DESCRIPTION=A space flight and rocketry simulation
+EAPI=8
+HOMEPAGE=https://ksa.ahwoo.com
+INHERIT=desktop
+KEYWORDS=~amd64
+LICENSE=all-rights-reserved
+RDEPEND=media-libs/vulkan-loader || ( >=dev-dotnet/dotnet-sdk-10 >=dev-dotnet/dotnet-sdk-bin-10 )
+RESTRICT=mirror strip
+SLOT=0
+SRC_URI=https://ksa-linux.ahwoo.com/download?file=setup_ksa_v2026.2.32.3646.tar.gz -> kittenspaceagency-bin-2026.2.32-r3646.tar.gz
+_eclasses_=desktop	26d57169ca094c04be416993844ec8bc
+_md5_=d0a933ff71d4573c3271ca1c97d8d2a0

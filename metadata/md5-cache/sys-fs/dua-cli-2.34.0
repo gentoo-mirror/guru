@@ -1,0 +1,13 @@
+BDEPEND=|| ( >=dev-lang/rust-bin-1.88.0:* >=dev-lang/rust-1.88.0:* )
+DEFINED_PHASES=compile configure install setup test unpack
+DESCRIPTION=A tool to conveniently learn about the disk usage of directories, fast!
+EAPI=8
+HOMEPAGE=https://github.com/Byron/dua-cli
+INHERIT=cargo
+IUSE=debug
+KEYWORDS=~amd64
+LICENSE=MIT MIT Unicode-DFS-2016
+SLOT=0
+SRC_URI=https://github.com/Byron/dua-cli/archive/refs/tags/v2.34.0.tar.gz -> dua-cli-2.34.0.tar.gz https://github.com/gentoo-crate-dist/dua-cli/releases/download/v2.34.0/dua-cli-2.34.0-crates.tar.xz
+_eclasses_=toolchain-funcs	8a2c298bde71ecf3f452dd9e67c94369	flag-o-matic	ed1eda86c8f746a2a75f7f9f7478f5f4	multiprocessing	1e32df7deee68372153dca65f4a7c21f	rust	d879c305333cf4d043e1ade99d08d018	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	7fa26aa78643f4b76bcc1985ec2cb49b
+_md5_=90cd1480047a8cbd38a687b7453dfbc7
