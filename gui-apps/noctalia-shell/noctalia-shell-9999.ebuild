@@ -5,10 +5,10 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{12..14} )
 
-inherit optfeature python-single-r1 systemd
+inherit optfeature python-single-r1
 
-DESCRIPTION="Noctalia Configuration for Quickshell"
-HOMEPAGE="https://github.com/noctalia-dev/noctalia-shell"
+DESCRIPTION="A sleek and minimal desktop shell thoughtfully crafted for Wayland"
+HOMEPAGE="https://noctalia.dev/ https://github.com/noctalia-dev/noctalia-shell"
 
 if [[ ${PV} == *9999 ]]; then
 	inherit git-r3
@@ -25,7 +25,7 @@ REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 RDEPEND="
 	${PYTHON_DEPS}
-	gui-apps/quickshell
+	~gui-apps/noctalia-qs-9999
 	app-misc/brightnessctl
 	dev-vcs/git
 	media-gfx/imagemagick
@@ -38,14 +38,9 @@ src_install() {
 
 	python_optimize "${ED}/etc/xdg/quickshell/${PN}/Scripts/python/src"
 	python_fix_shebang "${ED}/etc/xdg/quickshell/${PN}/Scripts/python/src"
-
-	systemd_douserunit Assets/Services/systemd/noctalia.service
 }
 
 pkg_postinst() {
-	elog "Noctalia Quickshell configuration has been installed to /etc/xdg/quickshell/noctalia-shell."
-	elog "For integration with systemd a user service unit has been installed to /usr/lib/systemd/user/noctalia.service."
-
 	optfeature "clipboard history support" app-misc/cliphist
 	optfeature "audio visualizer component" media-sound/cava
 	optfeature "night light functionality" gui-apps/wlsunset

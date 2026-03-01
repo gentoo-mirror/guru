@@ -45,6 +45,7 @@ DEPEND="
 	dev-python/musicbrainzngs[${PYTHON_USEDEP}]
 	dev-python/natsort[${PYTHON_USEDEP}]
 	dev-python/pillow[${PYTHON_USEDEP}]
+	dev-python/pyopengl[${PYTHON_USEDEP}]
 	dev-python/pysdl3[${PYTHON_USEDEP}]
 	dev-python/requests[${PYTHON_USEDEP}]
 	dev-python/setproctitle[${PYTHON_USEDEP}]
@@ -103,6 +104,7 @@ pkg_postinst() {
 	optfeature "last fm support" dev-python/pylast
 	optfeature "PLEX support" dev-python/plexapi
 	optfeature "Spotify support" dev-python/tekore
+	optfeature "Discord Rich Presence support" dev-python/pypresence
 
 	xdg_pkg_postinst
 }

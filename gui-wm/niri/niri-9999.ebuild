@@ -1,4 +1,4 @@
-# Copyright 2024-2025 Gentoo Authors
+# Copyright 2024-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -12,15 +12,15 @@ RUST_MIN_VER="1.82.0"
 inherit cargo llvm-r2 optfeature shell-completion systemd
 
 DESCRIPTION="Scrollable-tiling Wayland compositor"
-HOMEPAGE="https://github.com/YaLTeR/niri"
+HOMEPAGE="https://github.com/niri-wm/niri"
 
 if [[ ${PV} == 9999 ]]; then
 	inherit git-r3
-	EGIT_REPO_URI="https://github.com/YaLTeR/niri.git"
+	EGIT_REPO_URI="https://github.com/niri-wm/niri.git"
 else
 	SRC_URI="
-		https://github.com/YaLTeR/niri/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
-		https://github.com/YaLTeR/niri/releases/download/v${PV}/${P}-vendored-dependencies.tar.xz
+		https://github.com/niri-wm/niri/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
+		https://github.com/niri-wm/niri/releases/download/v${PV}/${P}-vendored-dependencies.tar.xz
 		${CARGO_CRATE_URIS}
 	"
 	KEYWORDS="~amd64"
@@ -145,8 +145,9 @@ src_test() {
 }
 
 pkg_postinst() {
-	optfeature "Default application launcher" "gui-apps/fuzzel"
-	optfeature "Default status bar" "gui-apps/waybar"
-	optfeature "Default terminal" "x11-terms/alacritty"
 	optfeature "Xwayland support" "gui-apps/xwayland-satellite"
+	optfeature_header "Default applications"
+	optfeature "Application launcher" "gui-apps/fuzzel"
+	optfeature "Status bar" "gui-apps/waybar"
+	optfeature "Terminal" "x11-terms/alacritty"
 }
