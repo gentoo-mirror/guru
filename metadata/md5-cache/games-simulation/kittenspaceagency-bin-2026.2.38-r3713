@@ -1,0 +1,14 @@
+BDEPEND=dev-util/patchelf
+DEFINED_PHASES=install prepare
+DESCRIPTION=A space flight and rocketry simulation
+EAPI=8
+HOMEPAGE=https://ksa.ahwoo.com
+INHERIT=desktop
+KEYWORDS=~amd64
+LICENSE=all-rights-reserved
+RDEPEND=media-libs/vulkan-loader virtual/dotnet-sdk:10.0
+RESTRICT=mirror strip
+SLOT=0
+SRC_URI=https://ksa-linux.ahwoo.com/download?file=setup_ksa_v2026.2.38.3713.tar.gz -> kittenspaceagency-bin-2026.2.38-r3713.tar.gz
+_eclasses_=desktop	26d57169ca094c04be416993844ec8bc
+_md5_=3eda23c7ba2fb5e9470ca941c732de03

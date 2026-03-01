@@ -1,0 +1,13 @@
+BDEPEND=>=dev-lang/go-1.25.5 >=dev-lang/go-1.20:= app-arch/unzip virtual/pkgconfig
+DEFINED_PHASES=compile install test unpack
+DESCRIPTION=Easy web analytics without tracking of personal data
+EAPI=8
+HOMEPAGE=https://www.goatcounter.com https://github.com/arp242/goatcounter
+INHERIT=go-module systemd
+KEYWORDS=~amd64
+LICENSE=EUPL-1.2 ISC MIT OFL-1.1 Apache-2.0 BSD BSD-2 MIT public-domain
+RDEPEND=acct-user/goatcounter
+SLOT=0
+SRC_URI=https://github.com/arp242/goatcounter/archive/refs/tags/v2.7.0.tar.gz -> goatcounter-2.7.0.tar.gz https://github.com/gentoo-golang-dist/goatcounter/releases/download/v2.7.0/goatcounter-2.7.0-vendor.tar.xz
+_eclasses_=multiprocessing	1e32df7deee68372153dca65f4a7c21f	toolchain-funcs	8a2c298bde71ecf3f452dd9e67c94369	flag-o-matic	ed1eda86c8f746a2a75f7f9f7478f5f4	go-env	0e2babf96e7d0b045fc07ad199eb2399	go-module	2a164b5dbe5ba61e90d7985a433dde70	systemd	a964c0cbe818b5729da1dbfcee5be861
+_md5_=186d806e6e1312c199028944f9625406

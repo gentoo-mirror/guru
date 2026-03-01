@@ -1,6 +1,5 @@
-BDEPEND=>=dev-lang/go-1.23 >=dev-lang/go-1.20:= app-arch/unzip virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=>=dev-lang/go-1.24 >=dev-lang/go-1.20:= app-arch/unzip virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile install postinst setup unpack
-DEPEND=acct-user/yggdrasil acct-group/yggdrasil
 DESCRIPTION=An experiment in scalable routing as an encrypted IPv6 overlay network
 EAPI=8
 HOMEPAGE=https://yggdrasil-network.github.io/
@@ -9,7 +8,8 @@ INHERIT=fcaps go-module linux-info systemd git-r3
 IUSE=+filecaps
 LICENSE=LGPL-3 MIT Apache-2.0 BSD ZLIB
 PROPERTIES=live
+RDEPEND=acct-user/yggdrasil acct-group/yggdrasil
 RESTRICT=mirror
 SLOT=0
 _eclasses_=fcaps	c94316d02a37fb5cbe79b7d41c729119	multiprocessing	1e32df7deee68372153dca65f4a7c21f	toolchain-funcs	8a2c298bde71ecf3f452dd9e67c94369	flag-o-matic	ed1eda86c8f746a2a75f7f9f7478f5f4	go-env	0e2babf96e7d0b045fc07ad199eb2399	go-module	2a164b5dbe5ba61e90d7985a433dde70	linux-info	efd923656513c879204fec6638eadee5	systemd	a964c0cbe818b5729da1dbfcee5be861	git-r3	875eb471682d3e1f18da124be97dcc81
-_md5_=c730410e114ac13e35724969ea8df5f7
+_md5_=c037fadb525f38bedd51134330d5e8b7

@@ -1,0 +1,16 @@
+BDEPEND=dev-build/bmake virtual/pkgconfig kernel_linux? ( sys-kernel/linux-headers ) test? ( net-misc/curl )
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=app-crypt/libmd dev-libs/libbsd virtual/libcrypt:= virtual/zlib:= test? ( net-misc/curl )
+DESCRIPTION=Minimal CGI library for web applications
+EAPI=8
+HOMEPAGE=https://kristaps.bsd.lv/kcgi/
+INHERIT=flag-o-matic toolchain-funcs
+IUSE=debug static-libs test
+KEYWORDS=~amd64 ~x86
+LICENSE=ISC
+RDEPEND=app-crypt/libmd dev-libs/libbsd virtual/libcrypt:= virtual/zlib:=
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://kristaps.bsd.lv/kcgi/snapshots/kcgi-1.0.1.tgz
+_eclasses_=toolchain-funcs	8a2c298bde71ecf3f452dd9e67c94369	flag-o-matic	ed1eda86c8f746a2a75f7f9f7478f5f4
+_md5_=a73257bcb43613360b0a4b5aa3bac802

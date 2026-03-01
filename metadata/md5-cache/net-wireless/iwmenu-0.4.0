@@ -1,0 +1,14 @@
+BDEPEND=|| ( >=dev-lang/rust-bin-1.88.0:* >=dev-lang/rust-1.88.0:* )
+DEFINED_PHASES=compile configure install postinst prepare setup test unpack
+DESCRIPTION=Menu-driven Wi-Fi management interface for Linux
+EAPI=8
+HOMEPAGE=https://github.com/e-tho/iwmenu
+INHERIT=cargo eapi9-ver optfeature
+IUSE=debug
+KEYWORDS=~amd64
+LICENSE=GPL-3+ MIT Unicode-3.0 ZLIB || ( Apache-2.0 Boost-1.0 )
+RDEPEND=net-wireless/iwd sys-apps/dbus
+SLOT=0
+SRC_URI=https://github.com/e-tho/iwmenu/archive/refs/tags/v0.4.0.tar.gz -> iwmenu-0.4.0.tar.gz https://raw.githubusercontent.com/PPN-SD/vendor/refs/tags/iwmenu-0.4.0/iwmenu-0.4.0-crates.tar.xz
+_eclasses_=toolchain-funcs	8a2c298bde71ecf3f452dd9e67c94369	flag-o-matic	ed1eda86c8f746a2a75f7f9f7478f5f4	multiprocessing	1e32df7deee68372153dca65f4a7c21f	rust	d879c305333cf4d043e1ade99d08d018	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	7fa26aa78643f4b76bcc1985ec2cb49b	eapi9-ver	6a71fa30cdb3fe445114fdeab156c1f0	optfeature	538bce96e5589935b57e178e8635f301
+_md5_=3e35c35565d2c5bb6a087a0a6e8ed766

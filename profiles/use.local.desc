@@ -32,6 +32,10 @@ app-crypt/intel-ipsec-mb:safe-data - sensitive information is cleared on complet
 app-crypt/intel-ipsec-mb:safe-lookup - lookups which depend on sensitive information are implemented with constant time functions
 app-crypt/intel-ipsec-mb:safe-param - input parameters are checked, looking generally for NULL pointers or an incorrect input length
 app-crypt/tomb:tray - add a tomb tray in a QT desktop toolbar
+app-editors/fresh:dev-bins - Build extra developer binaries (generate_schema, event_debug)
+app-editors/fresh:embed-plugins - Bundle default plugins into the binary as a fallback
+app-editors/fresh:gui - Native GPU-accelerated window via wgpu
+app-editors/fresh:plugins - TypeScript plugin runtime support
 app-editors/imhex:desktop-portal - Use sys-apps/xdg-desktop-portal file picker instead of the GTK one
 app-editors/imhex:lz4 - Enable lz4 compression / decompression support
 app-editors/imhex:system-llvm - Use the system LLVM installation
@@ -179,14 +183,14 @@ dev-python/mastodon-py:blurhash - Install dependencies required for decoding blu
 dev-python/mastodon-py:grapheme - Install dependencies required for grapheme-aware string handling
 dev-python/ptpython:black - Add support for dev-python/black. Black not always possible on PyPy
 dev-python/ptpython:ipython - Add support for dev-python/ipython for ptipython
-dev-python/pydantic-settings:aws - Enable Amazon AWS Secrets Manager support
-dev-python/pydantic-settings:yaml - Enable YAML support
 dev-python/pyfiglet:contrib - Install fonts that don't have a clear license
 dev-python/pympress:vlc - Build with python-vlc bindings
 dev-python/pyrime:prompt-toolkit - Add support for dev-python/prompt-toolkit
 dev-python/pyrime:ptpython - Add support for dev-python/ptpython
 dev-python/python-socketio:asyncio-client - Add async websocket client
 dev-python/python-socketio:client - Add websocket client
+dev-python/pyvisa-py:serial - Enable serial port communication via dev-python/pyserial
+dev-python/pyvisa-py:usb - Enable USB communication via dev-python/pyusb
 dev-util/catalyst-lab:binhost - Binhost targets support to build selected packages.
 dev-util/catalyst-lab:git - Uploading binpkgs and releases to git repository.
 dev-util/catalyst-lab:qemu - Building stages for different architecture using QEMU.
@@ -361,6 +365,23 @@ gui-apps/ironbar:music - Enables the music module
 gui-apps/ironbar:notifications - Enables the notifications module
 gui-apps/ironbar:tray - Enables the tray module
 gui-apps/ironbar:volume - Enables the volume module
+gui-apps/noctalia-qs:bluetooth - Enable Bluetooth integration using net-wireless/bluez
+gui-apps/noctalia-qs:breakpad - Enable Google's dev-util/breakpad crash reporter
+gui-apps/noctalia-qs:hyprland - Enable gui-wm/hyprland specific integrations
+gui-apps/noctalia-qs:hyprland-focus-grab - Enables windows to grab focus on gui-wm/hyprland through the hyprland-focus-grab-v1 protocol
+gui-apps/noctalia-qs:hyprland-global-shortcuts - Enable creation of global shortcuts under gui-wm/hyprland through the hyprland-global-shortcuts-v1 protocol
+gui-apps/noctalia-qs:i3 - Enable x11-wm/i3 and gui-wm/sway specific features
+gui-apps/noctalia-qs:i3-ipc - Enable interfacing with x11-wm/i3 and gui-wm/sway's IPC
+gui-apps/noctalia-qs:layer-shell - Enable wlroots layershell integration through the zwlr-layer-shell-v1 protocol
+gui-apps/noctalia-qs:mpris - Enable access to MPRIS compatible media players using its dbus protocol
+gui-apps/noctalia-qs:pam - Enable sys-libs/pam integration for user authentication
+gui-apps/noctalia-qs:pipewire - Enable viewing and management of media-video/pipewire nodes
+gui-apps/noctalia-qs:polkit - Enable creating sys-auth/polkit agents that can prompt user for authentication
+gui-apps/noctalia-qs:screencopy - Enable streaming video from monitors and toplevel windows through various protocols
+gui-apps/noctalia-qs:session-lock - Enable session lock support through the ext-session-lock-v1 protocol
+gui-apps/noctalia-qs:sockets - Enable Unix Sockets (WARNING: Disabling is unsafe!)
+gui-apps/noctalia-qs:toplevel-management - Enable management of windows through zwlr-foreign-toplevel-management-v1 protocol
+gui-apps/noctalia-qs:tray - Enable system tray support using the status notifier dbus protocol
 gui-apps/nwg-launchers:bar - Installs nwgbar, a horizontal or vertical button bar.
 gui-apps/nwg-launchers:dmenu - Installs nwgdmenu, GTK dynamic menu windows.
 gui-apps/nwg-launchers:grid - Installs nwggrid, a GNOME-like application grid.
@@ -553,11 +574,6 @@ media-gfx/vpuppr:meowface-tracker - Enable the MeowFace tracker.
 media-gfx/vpuppr:osf-tracker - Enable the OpenSeeFace tracker.
 media-gfx/vpuppr:remote-control - Enable remote controlling the program.
 media-gfx/vpuppr:vts-tracker - Enable the VTubeStudio tracker.
-media-libs/alvr:client - Build ALVR client and launcher
-media-libs/alvr:server - Build ALVR server
-media-libs/alvr:vulkan - Build ALVR vulkan layer
-media-libs/alvr:x264 - Use x264 for h264 software encoding
-media-libs/alvr:x265 - Use x265 for h265 software encoding
 media-libs/amdvlk:raytracing - Enable Vulkan raytracing support in AMDVLK, requires dev-util/DirectXShaderCompiler to build. Disable if you have weak hardware.
 media-libs/imgui:allegro5 - Enable allegro backend and renderer
 media-libs/imgui:glfw - Enable glfw backend
@@ -595,9 +611,6 @@ media-plugins/gimp-resynthesizer:glib - Use GLib library for platform independen
 media-plugins/gimp-resynthesizer:libheal - Build the simple API library that only provides healing functionality. Not needed for GIMP, only for external test harnesses
 media-plugins/gimp-resynthesizer:threads - Enable threading support for approximately 2x performance speedup. Thread limit is hardcoded to 12
 media-plugins/gimp-resynthesizer:translations - Install translation files.
-media-sound/6pm:midimaps - Install midi maps for that synth. Recommended
-media-sound/6pm:nls - Add support for localization
-media-sound/6pm:presets - Install presets. Recommended
 media-sound/drumgizmo:cli - Build stand-alone CLI application
 media-sound/drumgizmo:jack - Enable jack output and jackmidi input (CLI only)
 media-sound/drumgizmo:lv2 - Build LV2 plugin
@@ -625,6 +638,9 @@ media-sound/musikcube:sndio - Build plugin to support sndio
 media-sound/musikcube:systemd - Build plugin to support MPRIS using systemd.
 media-sound/neocrystal:mouse - Includes toggleable mouse click support.
 media-sound/neocrystal:rpc - Includes Discord Rich Presence support
+media-sound/openaudible-bin:system-ffmpeg - Use the system-wide media-video/ffmpeg instead of bundled
+media-sound/openaudible-bin:system-jre - Use the system-wide virtual/jre instead of bundled
+media-sound/openaudible-bin:webapp - Include the OpenAudible webapp
 media-sound/piper:server - Enable server support
 media-sound/qbitmplayer:network - Allow a single instance of itself, thus subsequent calls to media-sound/qbitmplayer will just open the already opened instance of it.
 media-sound/qbitmplayer:video - Make media-sound/qbitmplayer not just a Music Player, but a Media Player by enabling its ability to play video files as well.

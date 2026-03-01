@@ -1,0 +1,15 @@
+BDEPEND=>=dev-lang/go-1.25 >=dev-lang/go-1.20:= app-arch/unzip virtual/pkgconfig
+DEFINED_PHASES=compile config install postinst unpack
+DEPEND=crypt? ( dev-libs/olm )
+DESCRIPTION=A Matrix-WhatsApp puppeting bridge
+EAPI=8
+HOMEPAGE=https://github.com/mautrix/whatsapp/
+INHERIT=go-module optfeature systemd
+IUSE=crypt
+KEYWORDS=~amd64
+LICENSE=AGPL-3 GPL-3
+RDEPEND=crypt? ( dev-libs/olm ) acct-user/mautrix-whatsapp
+SLOT=0
+SRC_URI=https://github.com/mautrix/whatsapp/archive/v0.2602.0.tar.gz -> mautrix-whatsapp-26.02.gh.tar.gz https://distfiles.chuso.net/distfiles/mautrix-whatsapp-26.02-deps.tar.xz
+_eclasses_=multiprocessing	1e32df7deee68372153dca65f4a7c21f	toolchain-funcs	8a2c298bde71ecf3f452dd9e67c94369	flag-o-matic	ed1eda86c8f746a2a75f7f9f7478f5f4	go-env	0e2babf96e7d0b045fc07ad199eb2399	go-module	2a164b5dbe5ba61e90d7985a433dde70	optfeature	538bce96e5589935b57e178e8635f301	systemd	a964c0cbe818b5729da1dbfcee5be861
+_md5_=d3f4054d5efd8d94508b57fb6da80aa5
