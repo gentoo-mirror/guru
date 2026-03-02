@@ -396,7 +396,7 @@ app-text/jrnl 4.2.1: Collect your thoughts and notes without leaving the command
 app-text/komikku 1.103.0: Manga reader for GNOME
 app-text/koodo-reader-bin 1.5.1 1.6.3: A modern ebook manager and reader with sync and backup capacities
 app-text/lchat 1.0-r2: Line oriented front end for ii-like chat programs
-app-text/lizard 1.20.0 1.21.0: A simple code complexity analyser, supports most of the popular languages.
+app-text/lizard 1.21.0 1.21.2: A simple code complexity analyser, supports most of the popular languages.
 app-text/lorien-bin 0.6.0-r2: Infinite canvas drawing/whiteboarding. Made with Godot.
 app-text/lsp 0.5.0_rc4 9999: The least significant pager
 app-text/markdown-oxide 0.25.10: PKM Markdown Language Server
@@ -478,7 +478,7 @@ dev-cpp/trantor 1.5.19 1.5.20: Non-blocking I/O tcp network lib based on c++14/1
 dev-cpp/trompeloeil 47: Header only C++14 mocking framework
 dev-cpp/units 2.3.3 2.3.4: A compile-time, header-only, dimensional analysis and unit conversion library
 dev-cpp/workflow 0.10.2-r1 0.10.3 0.10.5 9999: C++ Parallel Computing and Asynchronous Networking Engine
-dev-cpp/wt 4.12.2 4.12.3: Wt, C++ Web Toolkit
+dev-cpp/wt 4.12.2 4.12.3 4.12.4: Wt, C++ Web Toolkit
 dev-cpp/xtensor 0.26.0: header-only C++ library for numerical analysis with multi-dimensional arrays
 dev-cpp/xtl 0.8.0: Algorithms and containers used by the xtensor stack and the xeus stack
 dev-crystal/athena-negotiation 0.1.5-r1 0.2.0-r1: Framework agnostic content negotiation library
@@ -777,7 +777,7 @@ dev-python/grapheme 0.8.0 0.10.0: Unicode grapheme helpers
 dev-python/graphql-core 3.2.3: Python port of GraphQL.js, the JavaScript reference implementation for GraphQL
 dev-python/graphql-relay 3.2.0: Relay library for graphql-core
 dev-python/gtts 2.5.4: Python library and CLI tool to interface with Google Translate's API
-dev-python/guidata 3.13.4 3.14.0 3.14.1: Library for user interfaces for easy dataset editing and display
+dev-python/guidata 3.13.4 3.14.0 3.14.1 3.14.2: Library for user interfaces for easy dataset editing and display
 dev-python/guiqwt 4.4.5-r1: Efficient 2D plotting Python library based on PythonQwt
 dev-python/guppy3 3.1.5 3.1.6: A Python Programming Environment & Heap analysis toolset
 dev-python/hachoir 3.3.0: Hachoir is a Python library to view and edit a binary stream field by field
@@ -1269,8 +1269,8 @@ gui-apps/lswt 1.0.4-r1 2.0.0 9999: List Wayland toplevels
 gui-apps/meteo-qt 4.2 4.3: A system tray application for the weather status
 gui-apps/mpvpaper 1.8 9999: A video wallpaper program for wlroots based wayland compositors
 gui-apps/niri-sidebar 0.2.0: A lightweight, external sidebar manager for the Niri window manager.
-gui-apps/noctalia-qs 0.0.4 9999: Toolkit for building desktop widgets using QtQuick
-gui-apps/noctalia-shell 4.5.0 4.6.0 9999: A sleek and minimal desktop shell thoughtfully crafted for Wayland
+gui-apps/noctalia-qs 0.0.4_p20250301 9999: Toolkit for building desktop widgets using QtQuick
+gui-apps/noctalia-shell 4.5.0 4.6.1 9999: A sleek and minimal desktop shell thoughtfully crafted for Wayland
 gui-apps/nwg 0: meta package package for nwg-shell
 gui-apps/nwg-bar 0.1.5 0.1.6: GTK3-based button bar for wlroots-based compositors
 gui-apps/nwg-clipman 0.2.5 0.2.8: nwg-shell clipboard manager - a GTK3-based GUI for cliphist
@@ -1480,7 +1480,7 @@ media-sound/jriver 31.0.83: A cross-platform media center, famous for high quali
 media-sound/kew 2.4.4-r1: kew (/kjuː/) is a command-line music player for Linux.
 media-sound/libcava 0.10.6: Console-based Audio Visualizer for Alsa
 media-sound/listenbrainz-mpd 2.3.9: ListenBrainz submission client for MPD
-media-sound/lms 3.72.1 3.73.0 3.74.0: Lightweight Music Server.
+media-sound/lms 3.73.0 3.74.0 3.75.0: Lightweight Music Server.
 media-sound/loudgain 0.6.8-r2 0.6.8_p20240128-r2 0.6.8_p20240128-r3: Versatile ReplayGain 2.0 loudness normalizer
 media-sound/mopidy 3.4.2: An extensible music server written in Python.
 media-sound/mousai 0.7.9: Identify songs in seconds
@@ -1572,7 +1572,6 @@ net-analyzer/reaction 2.2.0 2.2.1: Scan logs and take action
 net-client/amfora 1.9.2 1.11.0: A fancy terminal browser for the Gemini protocol.
 net-client/castor 0.8.18 0.9.0-r1: A graphical browser for plain-text protocols
 net-client/geopard 1.7.0: GTK 4 Gemini browser written in Rust
-net-client/kristall 0.3-r2 0.4: Visual cross-platform gemini browser
 net-client/lagrange 1.19.3 1.19.4: Desktop GUI client for browsing Geminispace
 net-client/offpunk 2.7.1 2.8 3.0: Offline-First Gemini/Web/Gopher/RSS reader and browser
 net-client/starfish 1.2.0 1.3.1: A Gemini browser for elementary OS
@@ -1668,7 +1667,7 @@ net-misc/commons-downloader 9999: A shell script to bulk download files from Wik
 net-misc/commons-wikimedia-find-by-hash 1.0.0: Search in commons.wikimedia.org by hash (sha1) of provided file
 net-misc/curlie 1.8.2: Curlie is a frontend to curl that adds the ease of use of httpie
 net-misc/cve-client 1.1.1 9999: CLI-based client / toolbox for CVE.org
-net-misc/dpibreak 0.2.2 0.3.0 0.4.3: Simple and efficient DPI circumvention tool in Rust.
+net-misc/dpibreak 0.3.0 0.4.3 0.5.0: fast and easy-to-use DPI circumvention tool in Rust.
 net-misc/eg25-manager 0.4.2: Daemon for managing the Quectel EG25 modem
 net-misc/ffsend 0.2.77 9999: Easily and securely share files from the command line
 net-misc/fileshelter 6.3.0: FileShelter is a “one-click” file sharing web application
@@ -1793,7 +1792,7 @@ sci-electronics/coil64 2.3.38: Coil64 is inductance coil calculator
 sci-electronics/dsview 1.3.0 1.3.2 9999: An open source multi-function instrument
 sci-electronics/kactus2 3.13.3 9999: A open source IP-XACT-based tool
 sci-electronics/liblxi 1.20: Implementation of the LAN eXtensions for Instrumentation (LXI)
-sci-electronics/logic-bin 2.4.39 2.4.40 2.4.41: Saleae logic analyzer
+sci-electronics/logic-bin 2.4.41 2.4.42: Saleae logic analyzer
 sci-electronics/lxi-tools 2.7: Tools to access devices with LXI
 sci-electronics/qucs-s 25.1.2 25.2.0: Quite universal circuit simulator with SPICE
 sci-electronics/sby 0.61: Front-end for Yosys-based formal hardware verification flows
