@@ -26,21 +26,30 @@ DOCS=( INSTALL.md README.md )
 
 PATCHES="
 	${FILESDIR}/${PN}-6.2.0-hierarchy.patch
-	${FILESDIR}/${PN}-6.3.0-boost_1.89.patch
 "
+
+src_prepare() {
+	cmake_src_prepare
+
+	sed -e '/WorkingDirectory=/s:=.*:=/var/lib/fileshelter:' \
+		-i conf/systemd/default.service || die
+}
 
 src_install() {
 	cmake_src_install
 
 	systemd_newunit conf/systemd/default.service fileshelter.service
-	newinitd "${FILESDIR}"/fileshelter.init-r1 fileshelter
+	rm "${ED}"/usr/share/fileshelter/default.service || die
+
+	newinitd "${FILESDIR}"/fileshelter.init fileshelter
 
 	keepdir /var/log/fileshelter
-	fowners -R fileshelter:fileshelter /var/log/fileshelter
+	fowners -R fileshelter /var/log/fileshelter
 
-	mv "${ED}"/usr/share/fileshelter/fileshelter.conf "${ED}"/etc/fileshelter.conf || die
-
-	rm "${ED}"/usr/share/fileshelter/default.service || die
+	insinto /etc
+	# it may contain passwords
+	insopts -m 0640 -o fileshelter
+	doins conf/fileshelter.conf
 
 	keepdir /var/lib/fileshelter
 	fowners fileshelter:fileshelter /var/lib/fileshelter

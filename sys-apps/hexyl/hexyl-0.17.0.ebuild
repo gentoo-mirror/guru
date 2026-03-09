@@ -1,22 +1,25 @@
-# Copyright 2017-2024 Gentoo Authors
+# Copyright 2017-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
+RUST_MIN_VER="1.88"
+
 CRATES="
 	aho-corasick@1.1.3
 	anstream@0.6.17
-	anstyle@1.0.9
 	anstyle-parse@0.2.6
 	anstyle-query@1.1.2
 	anstyle-wincon@3.0.6
+	anstyle@1.0.9
 	anyhow@1.0.91
-	assert_cmd@2.0.16
+	assert_cmd@2.1.2
 	autocfg@1.4.0
 	bitflags@2.6.0
 	bstr@1.10.0
 	clap@4.5.20
 	clap_builder@4.5.20
+	clap_complete@4.5.55
 	clap_derive@4.5.18
 	clap_lex@0.7.2
 	colorchoice@1.0.3
@@ -24,7 +27,6 @@ CRATES="
 	const_format_proc_macros@0.2.33
 	diff@0.1.13
 	difflib@0.4.0
-	doc-comment@0.3.3
 	errno@0.3.9
 	float-cmp@0.9.0
 	heck@0.5.0
@@ -36,15 +38,15 @@ CRATES="
 	normalize-line-endings@0.3.0
 	num-traits@0.2.19
 	owo-colors@4.1.0
-	predicates@3.1.2
 	predicates-core@1.0.8
 	predicates-tree@1.0.11
+	predicates@3.1.2
 	pretty_assertions@1.4.1
 	proc-macro2@1.0.89
 	quote@1.0.37
-	regex@1.11.1
 	regex-automata@0.4.8
 	regex-syntax@0.8.5
+	regex@1.11.1
 	rustix@0.38.38
 	serde@1.0.214
 	serde_derive@1.0.214
@@ -53,8 +55,8 @@ CRATES="
 	syn@2.0.85
 	terminal_size@0.4.0
 	termtree@0.4.1
-	thiserror@1.0.65
 	thiserror-impl@1.0.65
+	thiserror@1.0.65
 	unicode-ident@1.0.13
 	unicode-xid@0.2.6
 	utf8parse@0.2.2
@@ -71,35 +73,44 @@ CRATES="
 	windows_x86_64_gnullvm@0.52.6
 	windows_x86_64_msvc@0.52.6
 	yansi@1.0.1
-	${PN}@${PV}
 "
 
-inherit cargo
+inherit cargo shell-completion
 
 DESCRIPTION="A command-line hex viewer"
 HOMEPAGE="https://github.com/sharkdp/hexyl"
-SRC_URI="${CARGO_CRATE_URIS}"
+SRC_URI="
+	https://github.com/sharkdp/hexyl/archive/v${PV}.tar.gz -> ${P}.tar.gz
+	${CARGO_CRATE_URIS}
+"
 
 LICENSE="|| ( Apache-2.0 MIT )"
 # Dependent crate licenses
 LICENSE+=" Apache-2.0 ISC MIT Unicode-DFS-2016 ZLIB"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="man"
+QA_FLAGS_IGNORED="usr/bin/hexyl"
+
+RESTRICT="mirror"
 
 BDEPEND="
-	man? ( virtual/pandoc )
+	virtual/pandoc
 "
 
 src_compile() {
 	cargo_src_compile
-
-	use man && pandoc -s -f markdown -t man -o "doc/${PN}.1" "doc/${PN}.1.md"
+	pandoc -s -f markdown -t man -o "doc/${PN}.1" "doc/${PN}.1.md"
 }
 
 src_install() {
 	cargo_src_install
-
 	einstalldocs
-	use man && doman doc/${PN}.1
+	doman "doc/${PN}.1"
+
+	"target/release/${PN}" --completion bash > "${PN}"
+	dobashcomp "${PN}"
+	"target/release/${PN}" --completion zsh  > "_${PN}"
+	dozshcomp "_${PN}"
+	"target/release/${PN}" --completion fish > "${PN}.fish"
+	dofishcomp "${PN}.fish"
 }
