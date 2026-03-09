@@ -855,8 +855,11 @@ sci-misc/llama-cpp:openblas - Build an OpenBLAS backend
 sci-misc/llama-cpp:opencl - Build an OpenCL backend, so far only works on Adreno and Intel GPUs
 sci-misc/llama-cpp:rocm - Build a HIP (ROCm) backend
 sci-misc/llama-cpp:wmma - Use rocWMMA to enhance flash attention performance
+sci-ml/ollama:blis - Use sci-libs/blis as blas provider
 sci-ml/ollama:cuda - Enable NVIDIA CUDA support
+sci-ml/ollama:flexiblas - Use sci-libs/flexiblas as blas provider
 sci-ml/ollama:mkl - Use sci-libs/mkl for blas, lapack and sparse blas routines
+sci-ml/ollama:openblas - Use sci-libs/openblas as blas provider
 sci-ml/ollama:rocm - Enable ROCm gpu computing support
 sys-apps/bustd:glob - Enable excluding processes with glob patterns
 sys-apps/coolercontrold:liquidctl - Support for interacting with AIO liquid coolers and other devices with app-misc/liquidctl
