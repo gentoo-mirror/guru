@@ -1,4 +1,4 @@
-# Copyright 2024-2025 Gentoo Authors
+# Copyright 2024-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -16,50 +16,81 @@ if [[ ${PV} == *9999* ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/ollama/ollama.git"
 else
+	MY_PV="${PV/_rc/-rc}"
+	MY_P="${PN}-${MY_PV}"
 	SRC_URI="
-		https://github.com/ollama/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.gh.tar.gz
-		https://github.com/gentoo-golang-dist/${PN}/releases/download/v${PV}/${P}-deps.tar.xz
+		https://github.com/ollama/${PN}/archive/refs/tags/v${MY_PV}.tar.gz -> ${MY_P}.gh.tar.gz
+		https://github.com/gentoo-golang-dist/${PN}/releases/download/v${MY_PV}/${MY_P}-deps.tar.xz
 	"
-	KEYWORDS="~amd64"
+	if [[ ${PV} != *_rc* ]]; then
+		KEYWORDS="~amd64"
+	fi
 fi
 
 LICENSE="MIT"
 SLOT="0"
 
-X86_CPU_FLAGS=(
-	sse4_2
-	avx
-	f16c
-	avx2
-	bmi2
-	fma3
-	avx512f
-	avx512vbmi
-	avx512_vnni
-	avx_vnni
-)
-CPU_FLAGS=( "${X86_CPU_FLAGS[@]/#/cpu_flags_x86_}" )
-IUSE="blas ${CPU_FLAGS[*]} cuda mkl rocm vulkan"
+IUSE="cuda rocm vulkan"
 # IUSE+=" opencl"
+
+BLAS_BACKENDS="blis mkl openblas"
+BLAS_REQUIRED_USE="blas? ( ?? ( ${BLAS_BACKENDS} ) )"
+
+IUSE+=" blas flexiblas ${BLAS_BACKENDS}"
+REQUIRED_USE+=" ${BLAS_REQUIRED_USE}"
+
+declare -rgA CPU_FEATURES=(
+	[AVX2]="x86"
+	[AVX512F]="x86"
+	[AVX512_VBMI]="x86;avx512vbmi"
+	[AVX512_VNNI]="x86"
+	[AVX]="x86"
+	[AVX_VNNI]="x86"
+	[BMI2]="x86"
+	[F16C]="x86"
+	[FMA]="x86;fma3"
+	[SSE42]="x86;sse4_2"
+)
+add_cpu_features_use() {
+	for flag in "${!CPU_FEATURES[@]}"; do
+		IFS=$';' read -r arch use <<< "${CPU_FEATURES[${flag}]}"
+		IUSE+=" cpu_flags_${arch}_${use:-${flag,,}}"
+	done
+}
+add_cpu_features_use
 
 RESTRICT="mirror test"
 
+# FindBLAS.cmake
+# If Fortran is an enabled compiler it sets BLAS_mkl_THREADING to gnu. -> sci-libs/mkl[gnu-openmp]
+# If Fortran is not an enabled compiler it sets BLAS_mkl_THREADING to intel. -> sci-libs/mkl[llvm-openmp]
 COMMON_DEPEND="
 	blas? (
-		!mkl? (
-			virtual/blas
+		blis? (
+			sci-libs/blis:=
+		)
+		flexiblas? (
+			sci-libs/flexiblas[blis?,mkl?,openblas?]
 		)
 		mkl? (
-			sci-libs/mkl
+			sci-libs/mkl[llvm-openmp]
 		)
+		openblas? (
+			sci-libs/openblas
+		)
+		virtual/blas[flexiblas=]
 	)
 	cuda? (
 		dev-util/nvidia-cuda-toolkit:=
+		x11-drivers/nvidia-drivers
 	)
 	rocm? (
 		>=dev-util/hip-${ROCM_VERSION}:=
 		>=sci-libs/hipBLAS-${ROCM_VERSION}:=
 		>=sci-libs/rocBLAS-${ROCM_VERSION}:=
+	)
+	vulkan? (
+		media-libs/vulkan-loader
 	)
 "
 
@@ -82,6 +113,7 @@ RDEPEND="
 
 PATCHES=(
 	"${FILESDIR}/${PN}-9999-use-GNUInstallDirs.patch"
+	"${FILESDIR}/${PN}-9999-make-installing-runtime-deps-optional.patch"
 )
 
 pkg_pretend() {
@@ -135,11 +167,10 @@ src_prepare() {
 
 	sed \
 		-e "/set(GGML_CCACHE/s/ON/OFF/g" \
-		-e "/PRE_INCLUDE_REGEXES.*cu/d" \
-		-e "/PRE_INCLUDE_REGEXES.*hip/d" \
-		-i CMakeLists.txt || die "bundle headers sed failed"
+		-i CMakeLists.txt || die "Disable CCACHE sed failed"
 
 	# TODO see src_unpack?
+	# bug 963401
 	sed \
 		-e "s/ -O3//g" \
 		-i \
@@ -231,10 +262,17 @@ src_prepare() {
 
 src_configure() {
 	local mycmakeargs=(
+		-DOLLAMA_INSTALL_RUNTIME_DEPS="no"
 		-DGGML_CCACHE="no"
+
+		# backends end up in /usr/bin otherwise
+		-DGGML_BACKEND_DL="yes"
+		# TODO causes duplicate install warning but breaks detection otherwise ollama/issues/13614
+		-DGGML_BACKEND_DIR="${EPREFIX}/usr/$(get_libdir)/${PN}"
 
 		# -DGGML_CPU="yes"
 		-DGGML_BLAS="$(usex blas)"
+
 		# -DGGML_CUDA="$(usex cuda)"
 		# -DGGML_HIP="$(usex rocm)"
 
@@ -250,10 +288,32 @@ src_configure() {
 		"$(cmake_use_find_package vulkan Vulkan)"
 	)
 
+	if tc-is-lto ; then
+		mycmakeargs+=(
+			-DGGML_LTO="yes"
+		)
+	fi
+
 	if use blas; then
-		if use mkl; then
+		if use flexiblas ; then
 			mycmakeargs+=(
-				-DGGML_BLAS_VENDOR="Intel"
+				-DGGML_BLAS_VENDOR="FlexiBLAS"
+			)
+		elif use blis ; then
+			mycmakeargs+=(
+				-DGGML_BLAS_VENDOR="FLAME"
+			)
+		elif use mkl ; then
+			mycmakeargs+=(
+				-DGGML_BLAS_VENDOR="Intel10_64lp"
+			)
+		# elif use nvhpc ; then
+		# 	mycmakeargs+=(
+		# 		-DGGML_BLAS_VENDOR="NVHPC"
+		# 	)
+		elif use openblas ; then
+			mycmakeargs+=(
+				-DGGML_BLAS_VENDOR="OpenBLAS"
 			)
 		else
 			mycmakeargs+=(
@@ -266,6 +326,15 @@ src_configure() {
 		local -x CUDAHOSTCXX CUDAHOSTLD
 		CUDAHOSTCXX="$(cuda_gccdir)"
 		CUDAHOSTLD="$(tc-getCXX)"
+
+		# default to all-major for now until cuda.eclass is updated
+		if [[ ! -v CUDAARCHS ]]; then
+			local CUDAARCHS="all-major"
+		fi
+
+		mycmakeargs+=(
+			-DCMAKE_CUDA_ARCHITECTURES="${CUDAARCHS}"
+		)
 
 		cuda_add_sandbox -w
 		addpredict "/dev/char/"

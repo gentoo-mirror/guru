@@ -22,7 +22,10 @@ RDEPEND="
 	dev-python/jinja2[${PYTHON_USEDEP}]
 "
 BDEPEND="
-	test? ( dev-python/strip-hints )
+	test? (
+		dev-python/jinja2[${PYTHON_USEDEP}]
+		dev-python/strip-hints
+	)
 "
 
 DISABLE_AUTOFORMATTING=y
