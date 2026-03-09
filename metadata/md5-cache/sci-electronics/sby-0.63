@@ -10,6 +10,6 @@ LICENSE=ISC
 RDEPEND=python_single_target_python3_11? ( dev-lang/python:3.11 ) python_single_target_python3_12? ( dev-lang/python:3.12 ) python_single_target_python3_13? ( dev-lang/python:3.13 ) python_single_target_python3_14? ( dev-lang/python:3.14 ) python_single_target_python3_11? ( dev-python/click[python_targets_python3_11(-)] ) python_single_target_python3_12? ( dev-python/click[python_targets_python3_12(-)] ) python_single_target_python3_13? ( dev-python/click[python_targets_python3_13(-)] ) python_single_target_python3_14? ( dev-python/click[python_targets_python3_14(-)] ) sci-electronics/yosys sci-mathematics/z3 yices2? ( sci-mathematics/yices2 )
 REQUIRED_USE=^^ ( python_single_target_python3_11 python_single_target_python3_12 python_single_target_python3_13 python_single_target_python3_14 )
 SLOT=0
-SRC_URI=https://github.com/YosysHQ/sby/archive/v0.62.tar.gz -> sby-0.62.tar.gz
+SRC_URI=https://github.com/YosysHQ/sby/archive/v0.63.tar.gz -> sby-0.63.tar.gz
 _eclasses_=multiprocessing	1e32df7deee68372153dca65f4a7c21f	toolchain-funcs	8a2c298bde71ecf3f452dd9e67c94369	python-utils-r1	34399ddcee37dc83c6735c2c46e244bc	python-single-r1	47d8ac9be330c9366112b78fd4f8ce57
 _md5_=69cca7a17786029ae22f9a1754d8b4f8
