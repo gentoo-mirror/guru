@@ -1,4 +1,4 @@
-# Copyright 2024-2025 Gentoo Authors
+# Copyright 2024-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -56,6 +56,11 @@ BDEPEND="
 
 [[ ${PV} != 9999 ]] && BDEPEND+=" soundpack? ( app-arch/unzip )"
 
+PATCHES=(
+	"${FILESDIR}/${PN}-respect-flags.patch"
+	"${FILESDIR}/${P}-fix-gcc15.patch"
+)
+
 src_unpack() {
 	if [[ ${PV} == 9999 ]]; then
 		git-r3_src_unpack
@@ -72,8 +77,6 @@ src_unpack() {
 }
 
 src_prepare() {
-	eapply "${FILESDIR}/${PN}-respect-flags.patch"
-
 	sed -i \
 		-e "s/-Werror //" \
 		-e "s/TARGET_NAME = cataclysm/TARGET_NAME = cataclysm-${SLOT}/" \
@@ -96,21 +99,18 @@ src_prepare() {
 	sed -i "s#data#${EPREFIX}/usr/share/${PN}-${SLOT}#" \
 		"data/fontdata.json" || die
 
-	# from upstream 1ab7d17
-	# NOTE: remove when bumping
-	sed -i "s/const size_type/size_type/" \
-		"src/third-party/flatbuffers/stl_emulation.h" || die
-
-	sed -i "s/cataclysm-tiles/cataclysm-tiles-${SLOT}/g" \
-		"data/xdg/org.cataclysmdda.CataclysmDDA.desktop" || die
-
 	local f="org.cataclysmdda.CataclysmDDA"
+
+	sed -i \
+		-e "s/cataclysm-tiles/cataclysm-tiles-${SLOT}/g" \
+		-e "s/${f}/${f}-${SLOT}/g" \
+		"data/xdg/${f}.desktop" || die
 
 	mv "data/xdg/${f}.desktop" "data/xdg/${f}-${SLOT}.desktop" || die
 	mv "data/xdg/${f}.svg" "data/xdg/${f}-${SLOT}.svg" || die
 	mv "data/xdg/${f}.appdata.xml" "data/xdg/${f}-${SLOT}.appdata.xml" || die
 
-	eapply_user
+	default
 }
 
 src_compile() {

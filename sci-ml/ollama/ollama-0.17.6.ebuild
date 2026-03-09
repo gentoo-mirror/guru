@@ -82,11 +82,15 @@ COMMON_DEPEND="
 	)
 	cuda? (
 		dev-util/nvidia-cuda-toolkit:=
+		x11-drivers/nvidia-drivers
 	)
 	rocm? (
 		>=dev-util/hip-${ROCM_VERSION}:=
 		>=sci-libs/hipBLAS-${ROCM_VERSION}:=
 		>=sci-libs/rocBLAS-${ROCM_VERSION}:=
+	)
+	vulkan? (
+		media-libs/vulkan-loader
 	)
 "
 
@@ -166,6 +170,7 @@ src_prepare() {
 		-i CMakeLists.txt || die "Disable CCACHE sed failed"
 
 	# TODO see src_unpack?
+	# bug 963401
 	sed \
 		-e "s/ -O3//g" \
 		-i \

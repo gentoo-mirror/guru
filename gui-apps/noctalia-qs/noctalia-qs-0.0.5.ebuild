@@ -3,7 +3,9 @@
 
 EAPI=8
 
-inherit cmake
+inherit branding cmake
+
+GIT_REVISION=1a02ba2ee11b1afa8ec9a94f8b6b652bf4f14e1d
 
 DESCRIPTION="Toolkit for building desktop widgets using QtQuick"
 HOMEPAGE="https://quickshell.org/"
@@ -11,20 +13,13 @@ HOMEPAGE="https://quickshell.org/"
 if [[ "${PV}" = *9999 ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/noctalia-dev/noctalia-qs.git"
-elif [[ ${PV} == *_p* ]]; then
-	MY_COMMIT="46e60df2d6ebb4d52d5bde8a63a9a6255e556097"
-	SRC_URI="https://github.com/noctalia-dev/noctalia-qs/archive/${MY_COMMIT}.tar.gz -> ${P}.tar.gz"
-	S="${WORKDIR}/${PN}-${MY_COMMIT}"
 else
 	SRC_URI="https://github.com/noctalia-dev/noctalia-qs/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
+	KEYWORDS="~amd64"
 fi
 
 LICENSE="LGPL-3"
 SLOT="0"
-
-if [[ ${PV} != *9999 ]] ; then
-	KEYWORDS="~amd64"
-fi
 
 # Upstream recommends leaving all build options enabled by default
 IUSE="
@@ -73,9 +68,10 @@ BDEPEND="
 
 src_configure(){
 	mycmakeargs=(
-			-DCMAKE_BUILD_TYPE=RelWithDebInfo
-			-DDISTRIBUTOR="Gentoo GURU"
+			-DCMAKE_BUILD_TYPE=Release
+			-DDISTRIBUTOR="${BRANDING_OS_NAME} GURU"
 			-DINSTALL_QML_PREFIX="lib64/qt6/qml"
+			-DGIT_REVISION=${GIT_REVISION}
 			-DCRASH_REPORTER=$(usex breakpad ON OFF)
 			-DUSE_JEMALLOC=$(usex jemalloc ON OFF)
 			-DSOCKETS=$(usex sockets ON OFF)
