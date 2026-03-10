@@ -1,18 +1,18 @@
 BDEPEND=>=dev-build/meson-1.2.1-r1 >=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array
 DEFINED_PHASES=compile configure install postinst postrm preinst setup test
-DEPEND=python_single_target_python3_11? ( dev-lang/python:3.11 ) python_single_target_python3_12? ( dev-lang/python:3.12 ) >=gui-libs/gtk-4.12.0 >=gui-libs/libadwaita-1.4.0 >=dev-python/pygobject-3.44.1 >=dev-python/pillow-10.0.0 >=media-libs/mutagen-1.46.0 >=dev-python/python-magic-0.4.27 >=dev-python/pyacoustid-1.2.2-r1 test? ( >=dev-python/pytest-7.4.0 )
+DEPEND=python_single_target_python3_12? ( dev-lang/python:3.12 ) >=gui-libs/gtk-4.12.0 >=gui-libs/libadwaita-1.4.0 >=dev-python/pygobject-3.44.1 >=dev-python/pillow-10.0.0 >=media-libs/mutagen-1.46.0 >=dev-python/python-magic-0.4.27 >=dev-python/pyacoustid-1.2.2-r1 test? ( >=dev-python/pytest-7.4.0 )
 DESCRIPTION=GTK4 MusicBrainz audio tagger
 EAPI=8
 HOMEPAGE=https://gitlab.gnome.org/World/eartag
 IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
 INHERIT=gnome2-utils meson python-single-r1 xdg
-IUSE=test python_single_target_python3_11 python_single_target_python3_12
+IUSE=test +python_single_target_python3_12
 KEYWORDS=~amd64
 LICENSE=GPL-3
-RDEPEND=python_single_target_python3_11? ( dev-lang/python:3.11 ) python_single_target_python3_12? ( dev-lang/python:3.12 ) >=gui-libs/gtk-4.12.0 >=gui-libs/libadwaita-1.4.0 >=dev-python/pygobject-3.44.1 >=dev-python/pillow-10.0.0 >=media-libs/mutagen-1.46.0 >=dev-python/python-magic-0.4.27 >=dev-python/pyacoustid-1.2.2-r1 test? ( >=dev-python/pytest-7.4.0 )
-REQUIRED_USE=^^ ( python_single_target_python3_11 python_single_target_python3_12 )
+RDEPEND=python_single_target_python3_12? ( dev-lang/python:3.12 ) >=gui-libs/gtk-4.12.0 >=gui-libs/libadwaita-1.4.0 >=dev-python/pygobject-3.44.1 >=dev-python/pillow-10.0.0 >=media-libs/mutagen-1.46.0 >=dev-python/python-magic-0.4.27 >=dev-python/pyacoustid-1.2.2-r1 test? ( >=dev-python/pytest-7.4.0 )
+REQUIRED_USE=^^ ( python_single_target_python3_12 )
 RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://gitlab.gnome.org/World/eartag/-/archive/0.5.0/eartag-0.5.0.tar.bz2
 _eclasses_=toolchain-funcs	8a2c298bde71ecf3f452dd9e67c94369	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	gnome2-utils	a8cf148ec7f5ae0b1f1d33ae5f7f9e88	flag-o-matic	ed1eda86c8f746a2a75f7f9f7478f5f4	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	d063ea1900a793f93eb095010d6d9156	python-utils-r1	34399ddcee37dc83c6735c2c46e244bc	sysroot	b9348e4d36f160f6d2556bea5b59f99c	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	meson	ee14b47f310c323b82e6655787cd65ed	python-single-r1	47d8ac9be330c9366112b78fd4f8ce57	xdg	3ef49a87c52c8b77c476351195dfe575
-_md5_=4e1d88f599ee36ca641737137ef83821
+_md5_=304673904736d86188d5a4efef33635f

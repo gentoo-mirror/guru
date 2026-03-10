@@ -1,16 +1,16 @@
-BDEPEND=test? ( >=dev-python/pandocfilters-1.5.0[python_targets_python3_11(-)?,python_targets_python3_12(-)?,python_targets_python3_13(-)?,python_targets_python3_14(-)?] app-text/texlive-core dev-texlive/texlive-latex dev-texlive/texlive-fontsrecommended dev-texlive/texlive-latexrecommended ) test? ( virtual/pandoc >=dev-python/pytest-7.4.4[python_targets_python3_11(-)?,python_targets_python3_12(-)?,python_targets_python3_13(-)?,python_targets_python3_14(-)?] ) python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 ) python_targets_python3_13? ( dev-lang/python:3.13 ) python_targets_python3_14? ( dev-lang/python:3.14 ) >=dev-python/gpep517-16[python_targets_python3_11(-)?,python_targets_python3_12(-)?,python_targets_python3_13(-)?,python_targets_python3_14(-)?] >=dev-python/poetry-core-2.1.1[python_targets_python3_11(-)?,python_targets_python3_12(-)?,python_targets_python3_13(-)?,python_targets_python3_14(-)?]
+BDEPEND=test? ( >=dev-python/pandocfilters-1.5.0[python_targets_python3_12(-)?,python_targets_python3_13(-)?,python_targets_python3_14(-)?] app-text/texlive-core dev-texlive/texlive-latex dev-texlive/texlive-fontsrecommended dev-texlive/texlive-latexrecommended ) test? ( virtual/pandoc >=dev-python/pytest-7.4.4[python_targets_python3_12(-)?,python_targets_python3_13(-)?,python_targets_python3_14(-)?] ) python_targets_python3_12? ( dev-lang/python:3.12 ) python_targets_python3_13? ( dev-lang/python:3.13 ) python_targets_python3_14? ( dev-lang/python:3.14 ) >=dev-python/gpep517-16[python_targets_python3_12(-)?,python_targets_python3_13(-)?,python_targets_python3_14(-)?] >=dev-python/poetry-core-2.1.1[python_targets_python3_12(-)?,python_targets_python3_13(-)?,python_targets_python3_14(-)?]
 DEFINED_PHASES=compile configure install prepare test
 DESCRIPTION=Pypandoc provides a thin wrapper for pandoc, a universal document converter
 EAPI=8
 HOMEPAGE=https://github.com/JessicaTegner/pypandoc https://pypi.org/project/pypandoc
 INHERIT=distutils-r1
-IUSE=test python_targets_python3_11 python_targets_python3_12 python_targets_python3_13 python_targets_python3_14
+IUSE=test python_targets_python3_12 python_targets_python3_13 python_targets_python3_14
 KEYWORDS=~amd64
 LICENSE=MIT
-RDEPEND=virtual/pandoc python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 ) python_targets_python3_13? ( dev-lang/python:3.13 ) python_targets_python3_14? ( dev-lang/python:3.14 )
-REQUIRED_USE=|| ( python_targets_python3_11 python_targets_python3_12 python_targets_python3_13 python_targets_python3_14 )
+RDEPEND=virtual/pandoc python_targets_python3_12? ( dev-lang/python:3.12 ) python_targets_python3_13? ( dev-lang/python:3.13 ) python_targets_python3_14? ( dev-lang/python:3.14 )
+REQUIRED_USE=|| ( python_targets_python3_12 python_targets_python3_13 python_targets_python3_14 )
 RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://github.com/JessicaTegner/pypandoc/archive/refs/tags/v1.16.2.tar.gz -> pypandoc-1.16.2.gh.tar.gz
 _eclasses_=toolchain-funcs	8a2c298bde71ecf3f452dd9e67c94369	flag-o-matic	ed1eda86c8f746a2a75f7f9f7478f5f4	out-of-source-utils	8e5093bd27b7f541a1913271f25d633a	multibuild	83db098a835f71feb71761f72a694aa2	multilib	404b65bd5212cff83b3935c685419d08	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	d063ea1900a793f93eb095010d6d9156	python-utils-r1	34399ddcee37dc83c6735c2c46e244bc	python-r1	5fdca77e34fc9af7d6eb47689f33f6bf	distutils-r1	44f31ede921d604a84caf05ca3e3d4dc
-_md5_=8c062893d78a4d0b3a9e89d8751fe819
+_md5_=e0007a40a16d488b1c7a6a281a3ea68b

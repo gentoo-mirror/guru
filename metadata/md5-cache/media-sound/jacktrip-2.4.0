@@ -1,4 +1,4 @@
-BDEPEND=virtual/pkgconfig || ( ( dev-lang/python:3.13 dev-python/jinja2[python_targets_python3_13(-)] dev-python/pyyaml[python_targets_python3_13(-)] ) ( dev-lang/python:3.12 dev-python/jinja2[python_targets_python3_12(-)] dev-python/pyyaml[python_targets_python3_12(-)] ) ( dev-lang/python:3.11 dev-python/jinja2[python_targets_python3_11(-)] dev-python/pyyaml[python_targets_python3_11(-)] ) ) >=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array
+BDEPEND=virtual/pkgconfig || ( ( dev-lang/python:3.13 dev-python/jinja2[python_targets_python3_13(-)] dev-python/pyyaml[python_targets_python3_13(-)] ) ( dev-lang/python:3.12 dev-python/jinja2[python_targets_python3_12(-)] dev-python/pyyaml[python_targets_python3_12(-)] ) ) >=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array
 DEFINED_PHASES=compile configure install postinst postrm preinst setup test
 DEPEND=qt5? ( dev-qt/qtcore:5= dev-qt/qtnetwork:5= ) !qt5? ( dev-qt/qtbase:6=[network] ) gui? ( qt5? ( dev-qt/qtgui:5= dev-qt/qtwidgets:5= ) !qt5? ( dev-qt/qtbase:6=[gui,widgets] ) ) jack? ( virtual/jack ) rtaudio? ( media-libs/rtaudio:= ) virtualstudio? ( dev-qt/qtdeclarative:6= dev-qt/qtshadertools:6= dev-qt/qtsvg:6= dev-qt/qtwebsockets:6= dev-qt/qtwebengine:6= dev-qt/qtwebchannel:6= )
 DESCRIPTION=Send JACK audio over a network
@@ -14,4 +14,4 @@ REQUIRED_USE=virtualstudio? ( gui !qt5 ) || ( jack rtaudio )
 SLOT=0
 SRC_URI=https://github.com/jacktrip/jacktrip/archive/refs/tags/v2.4.0.tar.gz -> jacktrip-2.4.0.tar.gz
 _eclasses_=multiprocessing	1e32df7deee68372153dca65f4a7c21f	toolchain-funcs	8a2c298bde71ecf3f452dd9e67c94369	python-utils-r1	34399ddcee37dc83c6735c2c46e244bc	python-any-r1	891415dfe39ad9b41b461f2b86354af0	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575	flag-o-matic	ed1eda86c8f746a2a75f7f9f7478f5f4	ninja-utils	d063ea1900a793f93eb095010d6d9156	sysroot	b9348e4d36f160f6d2556bea5b59f99c	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	meson	ee14b47f310c323b82e6655787cd65ed
-_md5_=896ea9fdc48b7f2984dcca9cbf61329a
+_md5_=de211d7f27efa692e659487c00409001

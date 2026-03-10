@@ -1,17 +1,17 @@
-BDEPEND=test? ( >=dev-python/pytest-7.4.4[python_targets_python3_11(-)?,python_targets_python3_12(-)?,python_targets_python3_13(-)?,python_targets_python3_14(-)?] ) || ( >=dev-lang/rust-bin-1.85.0:* >=dev-lang/rust-1.85.0:* ) python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 ) python_targets_python3_13? ( dev-lang/python:3.13 ) python_targets_python3_14? ( dev-lang/python:3.14 ) >=dev-python/gpep517-16[python_targets_python3_11(-)?,python_targets_python3_12(-)?,python_targets_python3_13(-)?,python_targets_python3_14(-)?] >=dev-util/maturin-1.8.2[python_targets_python3_11(-)?,python_targets_python3_12(-)?,python_targets_python3_13(-)?,python_targets_python3_14(-)?]
+BDEPEND=test? ( >=dev-python/pytest-7.4.4[python_targets_python3_12(-)?,python_targets_python3_13(-)?,python_targets_python3_14(-)?] ) || ( >=dev-lang/rust-bin-1.85.0:* >=dev-lang/rust-1.85.0:* ) python_targets_python3_12? ( dev-lang/python:3.12 ) python_targets_python3_13? ( dev-lang/python:3.13 ) python_targets_python3_14? ( dev-lang/python:3.14 ) >=dev-python/gpep517-16[python_targets_python3_12(-)?,python_targets_python3_13(-)?,python_targets_python3_14(-)?] >=dev-util/maturin-1.8.2[python_targets_python3_12(-)?,python_targets_python3_13(-)?,python_targets_python3_14(-)?]
 DEFINED_PHASES=compile configure install prepare setup test unpack
-DEPEND=python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 ) python_targets_python3_13? ( dev-lang/python:3.13 ) python_targets_python3_14? ( dev-lang/python:3.14 )
+DEPEND=python_targets_python3_12? ( dev-lang/python:3.12 ) python_targets_python3_13? ( dev-lang/python:3.13 ) python_targets_python3_14? ( dev-lang/python:3.14 )
 DESCRIPTION=Colorthief but with modern codes
 EAPI=8
 HOMEPAGE=https://github.com/baseplate-admin/modern_colorthief https://pypi.org/project/modern-colorthief/
 INHERIT=cargo distutils-r1 pypi
-IUSE=test debug python_targets_python3_11 python_targets_python3_12 python_targets_python3_13 python_targets_python3_14 debug
+IUSE=test debug python_targets_python3_12 python_targets_python3_13 python_targets_python3_14 debug
 KEYWORDS=~amd64
 LICENSE=MIT Apache-2.0-with-LLVM-exceptions BSD-2 BSD MIT Unicode-DFS-2016 || ( Apache-2.0 CC0-1.0 )
-RDEPEND=python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 ) python_targets_python3_13? ( dev-lang/python:3.13 ) python_targets_python3_14? ( dev-lang/python:3.14 )
-REQUIRED_USE=|| ( python_targets_python3_11 python_targets_python3_12 python_targets_python3_13 python_targets_python3_14 )
+RDEPEND=python_targets_python3_12? ( dev-lang/python:3.12 ) python_targets_python3_13? ( dev-lang/python:3.13 ) python_targets_python3_14? ( dev-lang/python:3.14 )
+REQUIRED_USE=|| ( python_targets_python3_12 python_targets_python3_13 python_targets_python3_14 )
 RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://files.pythonhosted.org/packages/source/m/modern-colorthief/modern_colorthief-0.1.12.tar.gz https://github.com/pastalian/distfiles/releases/download/modern-colorthief-0.1.12/modern-colorthief-0.1.12-crates.tar.xz
 _eclasses_=toolchain-funcs	8a2c298bde71ecf3f452dd9e67c94369	flag-o-matic	ed1eda86c8f746a2a75f7f9f7478f5f4	multiprocessing	1e32df7deee68372153dca65f4a7c21f	rust	0d1cc00e0e91a021b50b0491e361ad41	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	7fa26aa78643f4b76bcc1985ec2cb49b	out-of-source-utils	8e5093bd27b7f541a1913271f25d633a	multibuild	83db098a835f71feb71761f72a694aa2	multilib	404b65bd5212cff83b3935c685419d08	ninja-utils	d063ea1900a793f93eb095010d6d9156	python-utils-r1	34399ddcee37dc83c6735c2c46e244bc	python-r1	5fdca77e34fc9af7d6eb47689f33f6bf	distutils-r1	44f31ede921d604a84caf05ca3e3d4dc	pypi	a451be5a08e8eb46f927fc6dd163583f
-_md5_=fccb5316902e17e4c57918d10b4f5e0a
+_md5_=ab554ee1e8510df2f5d428508e89ed2e

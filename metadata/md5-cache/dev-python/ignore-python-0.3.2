@@ -1,17 +1,17 @@
-BDEPEND=test? ( >=dev-python/pytest-7.4.4[python_targets_python3_11(-)?,python_targets_python3_12(-)?,python_targets_python3_13(-)?,python_targets_python3_14(-)?] ) || ( >=dev-lang/rust-bin-1.74.1:* >=dev-lang/rust-1.74.1:* ) python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 ) python_targets_python3_13? ( dev-lang/python:3.13 ) python_targets_python3_14? ( dev-lang/python:3.14 ) >=dev-python/gpep517-16[python_targets_python3_11(-)?,python_targets_python3_12(-)?,python_targets_python3_13(-)?,python_targets_python3_14(-)?] >=dev-util/maturin-1.8.2[python_targets_python3_11(-)?,python_targets_python3_12(-)?,python_targets_python3_13(-)?,python_targets_python3_14(-)?]
+BDEPEND=test? ( >=dev-python/pytest-7.4.4[python_targets_python3_12(-)?,python_targets_python3_13(-)?,python_targets_python3_14(-)?] ) || ( >=dev-lang/rust-bin-1.74.1:* >=dev-lang/rust-1.74.1:* ) python_targets_python3_12? ( dev-lang/python:3.12 ) python_targets_python3_13? ( dev-lang/python:3.13 ) python_targets_python3_14? ( dev-lang/python:3.14 ) >=dev-python/gpep517-16[python_targets_python3_12(-)?,python_targets_python3_13(-)?,python_targets_python3_14(-)?] >=dev-util/maturin-1.8.2[python_targets_python3_12(-)?,python_targets_python3_13(-)?,python_targets_python3_14(-)?]
 DEFINED_PHASES=compile configure install prepare setup test unpack
-DEPEND=python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 ) python_targets_python3_13? ( dev-lang/python:3.13 ) python_targets_python3_14? ( dev-lang/python:3.14 )
+DEPEND=python_targets_python3_12? ( dev-lang/python:3.12 ) python_targets_python3_13? ( dev-lang/python:3.13 ) python_targets_python3_14? ( dev-lang/python:3.14 )
 DESCRIPTION=Rust ignore crate Python bindings
 EAPI=8
 HOMEPAGE=https://github.com/borsattoz/ignore-python https://pypi.org/project/ignore-python/
 INHERIT=cargo distutils-r1
-IUSE=test debug python_targets_python3_11 python_targets_python3_12 python_targets_python3_13 python_targets_python3_14 debug
+IUSE=test debug python_targets_python3_12 python_targets_python3_13 python_targets_python3_14 debug
 KEYWORDS=~amd64
 LICENSE=MIT Unicode-3.0 Apache-2.0-with-LLVM-exceptions
-RDEPEND=python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 ) python_targets_python3_13? ( dev-lang/python:3.13 ) python_targets_python3_14? ( dev-lang/python:3.14 )
-REQUIRED_USE=|| ( python_targets_python3_11 python_targets_python3_12 python_targets_python3_13 python_targets_python3_14 )
+RDEPEND=python_targets_python3_12? ( dev-lang/python:3.12 ) python_targets_python3_13? ( dev-lang/python:3.13 ) python_targets_python3_14? ( dev-lang/python:3.14 )
+REQUIRED_USE=|| ( python_targets_python3_12 python_targets_python3_13 python_targets_python3_14 )
 RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://github.com/borsattoz/ignore-python/archive/refs/tags/v0.3.2.tar.gz -> ignore-python-0.3.2.gh.tar.gz https://gitlab.com/api/v4/projects/69517529/packages/generic/ignore-python/0.3.2/ignore-python-0.3.2-deps.tar.xz
 _eclasses_=toolchain-funcs	8a2c298bde71ecf3f452dd9e67c94369	flag-o-matic	ed1eda86c8f746a2a75f7f9f7478f5f4	multiprocessing	1e32df7deee68372153dca65f4a7c21f	rust	0d1cc00e0e91a021b50b0491e361ad41	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	7fa26aa78643f4b76bcc1985ec2cb49b	out-of-source-utils	8e5093bd27b7f541a1913271f25d633a	multibuild	83db098a835f71feb71761f72a694aa2	multilib	404b65bd5212cff83b3935c685419d08	ninja-utils	d063ea1900a793f93eb095010d6d9156	python-utils-r1	34399ddcee37dc83c6735c2c46e244bc	python-r1	5fdca77e34fc9af7d6eb47689f33f6bf	distutils-r1	44f31ede921d604a84caf05ca3e3d4dc
-_md5_=aa00c5e3fd0aa5259310a51ddd46ba53
+_md5_=b25a7906e7e505850e2b78ba67d863d0

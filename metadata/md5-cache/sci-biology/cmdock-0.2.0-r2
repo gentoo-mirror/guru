@@ -1,4 +1,4 @@
-BDEPEND=apidoc? ( app-text/doxygen dev-texlive/texlive-fontutils ) doc? ( || ( ( dev-lang/python:3.12 dev-python/insipid-sphinx-theme[python_targets_python3_12(-)] dev-python/sphinx[python_targets_python3_12(-)] ) ( dev-lang/python:3.11 dev-python/insipid-sphinx-theme[python_targets_python3_11(-)] dev-python/sphinx[python_targets_python3_11(-)] ) ) ) test? ( || ( dev-lang/python:3.12 dev-lang/python:3.11 ) ) >=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array
+BDEPEND=apidoc? ( app-text/doxygen dev-texlive/texlive-fontutils ) doc? ( || ( ( dev-lang/python:3.12 dev-python/insipid-sphinx-theme[python_targets_python3_12(-)] dev-python/sphinx[python_targets_python3_12(-)] ) ) ) test? ( || ( dev-lang/python:3.12 ) ) >=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array
 DEFINED_PHASES=compile configure install postinst postrm prepare setup test
 DEPEND=dev-cpp/eigen:3 >=dev-cpp/indicators-2.3-r1 >=dev-cpp/pcg-cpp-0.98.1_p20210406-r1 >=dev-libs/cxxopts-3 boinc? ( sci-misc/boinc acct-user/boinc )
 DESCRIPTION=Program for docking ligands to proteins and nucleic acids
@@ -13,4 +13,4 @@ RESTRICT=test
 SLOT=0/0.2.0
 SRC_URI=https://gitlab.com/Jukic/cmdock/-/archive/v0.2.0/cmdock-v0.2.0.tar.bz2
 _eclasses_=boinc-app	2f7bf3214f79a932351f3a6c6afebd58	toolchain-funcs	8a2c298bde71ecf3f452dd9e67c94369	flag-o-matic	ed1eda86c8f746a2a75f7f9f7478f5f4	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	d063ea1900a793f93eb095010d6d9156	python-utils-r1	34399ddcee37dc83c6735c2c46e244bc	sysroot	b9348e4d36f160f6d2556bea5b59f99c	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	meson	ee14b47f310c323b82e6655787cd65ed	optfeature	538bce96e5589935b57e178e8635f301	python-any-r1	891415dfe39ad9b41b461f2b86354af0
-_md5_=89b03c77a3526060f9f1e9ab4f594712
+_md5_=597b642e6b08e10084c7fefc4dc06db9

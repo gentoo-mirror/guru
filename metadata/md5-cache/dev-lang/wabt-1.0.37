@@ -1,4 +1,4 @@
-BDEPEND=|| ( dev-lang/python:3.13 dev-lang/python:3.12 dev-lang/python:3.11 ) || ( ( dev-lang/python:3.13 dev-python/ply[python_targets_python3_13(-)] ) ( dev-lang/python:3.12 dev-python/ply[python_targets_python3_12(-)] ) ( dev-lang/python:3.11 dev-python/ply[python_targets_python3_11(-)] ) ) app-alternatives/ninja >=dev-build/cmake-3.28.5
+BDEPEND=|| ( dev-lang/python:3.13 dev-lang/python:3.12 ) || ( ( dev-lang/python:3.13 dev-python/ply[python_targets_python3_13(-)] ) ( dev-lang/python:3.12 dev-python/ply[python_targets_python3_12(-)] ) ) app-alternatives/ninja >=dev-build/cmake-3.28.5
 DEFINED_PHASES=compile configure install prepare setup test
 DEPEND=dev-libs/openssl:= test? ( dev-cpp/gtest dev-libs/simde )
 DESCRIPTION=The WebAssembly Binary Toolkit
@@ -13,4 +13,4 @@ RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://github.com/WebAssembly/wabt/archive/refs/tags/1.0.37.tar.gz -> wabt-1.0.37.tar.gz https://github.com/WebAssembly/testsuite/archive/cbc54d77065e5202bcb69e0d1c53ceccc29a7984.tar.gz -> WebAssembly-testsuite-cbc54d77065e5202bcb69e0d1c53ceccc29a7984.tar.gz https://github.com/WebAssembly/wasm-c-api/archive/b6dd1fb658a282c64b029867845bc50ae59e1497.tar.gz -> WebAssembly-wasm-c-api-b6dd1fb658a282c64b029867845bc50ae59e1497.tar.gz
 _eclasses_=toolchain-funcs	8a2c298bde71ecf3f452dd9e67c94369	flag-o-matic	ed1eda86c8f746a2a75f7f9f7478f5f4	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	5691a3da96eac88f135cf3596b8c2c3c	python-utils-r1	34399ddcee37dc83c6735c2c46e244bc	python-any-r1	891415dfe39ad9b41b461f2b86354af0
-_md5_=e7dc8be4e36a51869af637a6b8f6d796
+_md5_=a86f86577b40a150fc7d89c70c3ad60d

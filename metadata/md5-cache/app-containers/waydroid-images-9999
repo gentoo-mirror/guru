@@ -1,4 +1,4 @@
-BDEPEND=app-arch/unzip net-misc/wget || ( dev-lang/python:3.14 dev-lang/python:3.13 dev-lang/python:3.12 dev-lang/python:3.11 )
+BDEPEND=app-arch/unzip net-misc/wget || ( dev-lang/python:3.14 dev-lang/python:3.13 dev-lang/python:3.12 )
 DEFINED_PHASES=install setup unpack
 DESCRIPTION=Manage images for app-containers/waydroid using portage
 EAPI=8
@@ -11,4 +11,4 @@ RDEPEND=app-containers/waydroid
 REQUIRED_USE=^^ ( system-vanilla system-gapps ) ^^ ( vendor-mainline vendor-halium ) ^^ ( android-10 android-11 android-13 ) vendor-halium? ( amd64? ( || ( android-11 ) ) arm? ( || ( android-10 android-11 android-13 ) ) arm64? ( || ( android-10 android-11 android-13 ) ) x86? ( || ( android-11 ) ) )
 SLOT=0
 _eclasses_=edo	a5e294016aa84979fcb2459749eb80b2	multiprocessing	1e32df7deee68372153dca65f4a7c21f	toolchain-funcs	8a2c298bde71ecf3f452dd9e67c94369	python-utils-r1	34399ddcee37dc83c6735c2c46e244bc	python-any-r1	891415dfe39ad9b41b461f2b86354af0
-_md5_=4c5867d8566de55d28535980f385e291
+_md5_=9cb599ef9d4c4bff987a00d4b5c8d0d7

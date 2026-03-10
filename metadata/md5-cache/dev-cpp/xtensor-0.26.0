@@ -1,4 +1,4 @@
-BDEPEND=doc? ( app-text/doxygen || ( ( dev-lang/python:3.13 dev-python/breathe[python_targets_python3_13(-)] dev-python/sphinx[python_targets_python3_13(-)] dev-python/sphinx-rtd-theme[python_targets_python3_13(-)] ) ( dev-lang/python:3.12 dev-python/breathe[python_targets_python3_12(-)] dev-python/sphinx[python_targets_python3_12(-)] dev-python/sphinx-rtd-theme[python_targets_python3_12(-)] ) ( dev-lang/python:3.11 dev-python/breathe[python_targets_python3_11(-)] dev-python/sphinx[python_targets_python3_11(-)] dev-python/sphinx-rtd-theme[python_targets_python3_11(-)] ) ) ) test? ( dev-cpp/doctest ) app-alternatives/ninja >=dev-build/cmake-3.28.5
+BDEPEND=doc? ( app-text/doxygen || ( ( dev-lang/python:3.13 dev-python/breathe[python_targets_python3_13(-)] dev-python/sphinx[python_targets_python3_13(-)] dev-python/sphinx-rtd-theme[python_targets_python3_13(-)] ) ( dev-lang/python:3.12 dev-python/breathe[python_targets_python3_12(-)] dev-python/sphinx[python_targets_python3_12(-)] dev-python/sphinx-rtd-theme[python_targets_python3_12(-)] ) ) ) test? ( dev-cpp/doctest ) app-alternatives/ninja >=dev-build/cmake-3.28.5
 DEFINED_PHASES=compile configure install postinst prepare pretend setup test
 DEPEND=>=dev-cpp/xtl-0.8.0 tbb? ( dev-cpp/tbb )
 DESCRIPTION=header-only C++ library for numerical analysis with multi-dimensional arrays
@@ -14,4 +14,4 @@ RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://codeload.github.com/xtensor-stack/xtensor/tar.gz/refs/tags/0.26.0 -> xtensor-0.26.0.tar.gz
 _eclasses_=toolchain-funcs	8a2c298bde71ecf3f452dd9e67c94369	flag-o-matic	ed1eda86c8f746a2a75f7f9f7478f5f4	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	5691a3da96eac88f135cf3596b8c2c3c	python-utils-r1	34399ddcee37dc83c6735c2c46e244bc	python-any-r1	891415dfe39ad9b41b461f2b86354af0	optfeature	538bce96e5589935b57e178e8635f301
-_md5_=189ae9d5492abfcb9f080d08d5a397d5
+_md5_=2b66e3d16d8b767fd3c9698308e14d0e

@@ -1,17 +1,17 @@
-BDEPEND=test? ( dev-python/aiofiles[python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/async-timeout[python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/cryptography[python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/pyasn1[python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/rsa[python_targets_python3_11(-)?,python_targets_python3_12(-)?] ) python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 ) >=dev-python/gpep517-16[python_targets_python3_11(-)?,python_targets_python3_12(-)?] >=dev-python/setuptools-78.1.0[python_targets_python3_11(-)?,python_targets_python3_12(-)?]
+BDEPEND=test? ( dev-python/aiofiles[python_targets_python3_12(-)?] dev-python/async-timeout[python_targets_python3_12(-)?] dev-python/cryptography[python_targets_python3_12(-)?] dev-python/pyasn1[python_targets_python3_12(-)?] dev-python/rsa[python_targets_python3_12(-)?] ) python_targets_python3_12? ( dev-lang/python:3.12 ) >=dev-python/gpep517-16[python_targets_python3_12(-)?] >=dev-python/setuptools-78.1.0[python_targets_python3_12(-)?]
 DEFINED_PHASES=compile configure install prepare test
-DEPEND=test? ( dev-python/aiofiles[python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/async-timeout[python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/cryptography[python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/pyasn1[python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/rsa[python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/pycryptodome[python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/libusb1[python_targets_python3_11(-)?,python_targets_python3_12(-)?] )
+DEPEND=test? ( dev-python/aiofiles[python_targets_python3_12(-)?] dev-python/async-timeout[python_targets_python3_12(-)?] dev-python/cryptography[python_targets_python3_12(-)?] dev-python/pyasn1[python_targets_python3_12(-)?] dev-python/rsa[python_targets_python3_12(-)?] dev-python/pycryptodome[python_targets_python3_12(-)?] dev-python/libusb1[python_targets_python3_12(-)?] )
 DESCRIPTION=A Python implementation of ADB with shell and FileSync functionality.
 EAPI=8
 HOMEPAGE=https://pypi.org/project/adb-shell/ https://github.com/JeffLIrion/adb_shell
 INHERIT=distutils-r1
-IUSE=test python_targets_python3_11 python_targets_python3_12
+IUSE=test python_targets_python3_12
 KEYWORDS=~amd64
 LICENSE=BSD
-RDEPEND=dev-python/aiofiles[python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/async-timeout[python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/cryptography[python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/pyasn1[python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/rsa[python_targets_python3_11(-)?,python_targets_python3_12(-)?] python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 )
-REQUIRED_USE=|| ( python_targets_python3_11 python_targets_python3_12 ) || ( python_targets_python3_11 python_targets_python3_12 )
+RDEPEND=dev-python/aiofiles[python_targets_python3_12(-)?] dev-python/async-timeout[python_targets_python3_12(-)?] dev-python/cryptography[python_targets_python3_12(-)?] dev-python/pyasn1[python_targets_python3_12(-)?] dev-python/rsa[python_targets_python3_12(-)?] python_targets_python3_12? ( dev-lang/python:3.12 )
+REQUIRED_USE=|| ( python_targets_python3_12 ) || ( python_targets_python3_12 )
 RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://github.com/JeffLIrion/adb_shell/archive/refs/tags/v0.4.4.tar.gz -> adb-shell-0.4.4.gh.tar.gz
 _eclasses_=toolchain-funcs	8a2c298bde71ecf3f452dd9e67c94369	flag-o-matic	ed1eda86c8f746a2a75f7f9f7478f5f4	out-of-source-utils	8e5093bd27b7f541a1913271f25d633a	multibuild	83db098a835f71feb71761f72a694aa2	multilib	404b65bd5212cff83b3935c685419d08	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	d063ea1900a793f93eb095010d6d9156	python-utils-r1	34399ddcee37dc83c6735c2c46e244bc	python-r1	5fdca77e34fc9af7d6eb47689f33f6bf	distutils-r1	44f31ede921d604a84caf05ca3e3d4dc
-_md5_=e15b25c5cb9442102de80037790efe00
+_md5_=9afd097e23bcccf493736b7f8c2c50d1
