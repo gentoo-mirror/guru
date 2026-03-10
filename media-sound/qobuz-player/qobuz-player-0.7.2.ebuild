@@ -5,6 +5,7 @@ EAPI=8
 
 declare -A GIT_CRATES=(
 	[mpris-server]='https://github.com/SeaDve/mpris-server;f8b3f74e93910fffd0c93df687e05cf954dcdeba;mpris-server-%commit%'
+	[qonductor]='https://github.com/nickblt/qonductor;efba84c3a82042f8dca375a8b4860a96e165eed7;qonductor-%commit%'
 )
 
 RUST_MIN_VER="1.90.0"
