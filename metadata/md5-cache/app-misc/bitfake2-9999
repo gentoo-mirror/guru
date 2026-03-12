@@ -1,0 +1,13 @@
+BDEPEND=virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile install unpack
+DEPEND=media-libs/taglib sci-libs/fftw:3.0 media-libs/libebur128 media-libs/libsndfile media-video/ffmpeg:=
+DESCRIPTION=Audio tool using FFTW and libebur128
+EAPI=8
+HOMEPAGE=https://github.com/ray17x/bitfake2
+INHERIT=git-r3 toolchain-funcs
+LICENSE=GPL-3
+PROPERTIES=live
+RDEPEND=media-libs/taglib sci-libs/fftw:3.0 media-libs/libebur128 media-libs/libsndfile media-video/ffmpeg:=
+SLOT=0
+_eclasses_=git-r3	875eb471682d3e1f18da124be97dcc81	toolchain-funcs	da0a71e3a72194ca0b88d5b045d721ac
+_md5_=7644c0765561495c423497d8e37337bd

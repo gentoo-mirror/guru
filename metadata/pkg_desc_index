@@ -239,6 +239,7 @@ app-misc/astroterm 1.0.7 1.0.9: A planetarium for your terminal!
 app-misc/aw-client 0.11.0: Client library for ActivityWatch
 app-misc/aw-core 0.5.16: Core library for ActivityWatch
 app-misc/badvideo 5.2 9999: Ruin your videos in SECONDS!
+app-misc/bitfake2 1.0 9999: Audio tool using FFTW and libebur128
 app-misc/blahaj 2.2.0-r1: Gay sharks at your local terminal
 app-misc/brightnessctl 0.5.1: A program to read and control device brightness
 app-misc/bt 1.2.2: Interactive tree-like terminal file manager
@@ -318,7 +319,7 @@ app-misc/superfile 1.4.0-r1 1.5.0 9999: Pretty fancy and modern terminal file ma
 app-misc/tealdeer 1.8.0 1.8.1 9999: A very fast implementation of tldr in Rust.
 app-misc/television 0.12.5 0.13.11: Cross-platform, fast and extensible general purpose fuzzy finder TUI.
 app-misc/termdown 1.18.0-r1: Countdown timer and stopwatch in your terminal
-app-misc/tinyfetch 5.2 6.1 6.2 9999: fetch program written in pure C
+app-misc/tinyfetch 5.2 6.1 6.2 6.8a 9999: fetch program written in pure C
 app-misc/tmux-rime 0.0.4: rime for tmux
 app-misc/treefetch 2.0.0: 🌲 A plant-based system fetch tool made with Rust.
 app-misc/treesheets 2567 2665: Open source free form data organizer
@@ -407,7 +408,7 @@ app-text/simplenote-desktop-bin 2.23.0 2.23.2: The simplest way to keep notes
 app-text/sioyek 9999: Sioyek is a PDF viewer with a focus on textbooks and research papers
 app-text/smu 1.5 9999: Simple markup - markdown like syntax
 app-text/sup2srt 1.1.0: Convert SUP graphic subtitles to text-based SRT format
-app-text/texlab 5.23.1 5.24.0: LaTeX Language Server
+app-text/texlab 5.23.1 5.24.0 5.25.1: LaTeX Language Server
 app-text/tinymist 0.14.10 9999: An integrated language service for Typst.
 app-text/tldr 3.3.0 3.4.1: Python command line client for tldr pages
 app-text/typst 0.14.2 9999: A markup-based typesetting system for the sciences
@@ -1012,7 +1013,7 @@ dev-util/bump-my-version 1.2.6 1.2.7: Version bump your Python project
 dev-util/cargo-post 0.1.7: A cargo wrapper that executes a post build script after a successful build.
 dev-util/cargo-show-asm 0.2.55: A cargo subcommand that displays the generated assembly of Rust source code.
 dev-util/catalyst-lab 1.6.0 1.6.1: An automation tool for building Gentoo release stages and binhost packages.
-dev-util/codex 0.113.0: Codex CLI - OpenAI's AI-powered coding agent
+dev-util/codex 0.114.0: Codex CLI - OpenAI's AI-powered coding agent
 dev-util/coq-lsp 0.1.9: Visual Studio Code Extension and Language Server Protocol for Coq
 dev-util/deblob 0.11 0.12 9999: remove binary executables from a directory
 dev-util/distribution-gpg-keys 1.117: Collection of GPG keys used in Linux Distributions
@@ -1029,11 +1030,11 @@ dev-util/forgejo-runner 12.5.3 12.6.1 9999: A daemon that connects to a Forgejo 
 dev-util/fortls 2.13.0 3.0.0 3.1.1 3.1.2 3.2.2: Fortran Language Server (fortls)
 dev-util/fortran-test-drive 0.4.0 0.5.0: The simple testing framework (for Fortran)
 dev-util/gammaray 3.3.0 3.3.1: High-level runtime introspection tool for Qt applications
-dev-util/gemini-cli 0.32.1: Gemini CLI - a command-line AI workflow tool by Google
+dev-util/gemini-cli 0.33.0: Gemini CLI - a command-line AI workflow tool by Google
 dev-util/genTree 0.1.0 9999: Gentoo rootfs tree generator
 dev-util/gersemi 0.26.0: A formatter to make your CMake code the real treasure
 dev-util/git-bug 0.10.1 9999: distributed, offline-first bug tracker
-dev-util/git-pages-cli 1.5.1 1.5.2: Command-line application for publishing sites to git-pages
+dev-util/git-pages-cli 1.5.2 1.6.0: Command-line application for publishing sites to git-pages
 dev-util/gitlab-ci-local-bin 4.43.0 4.47.0 4.56.0: Run gitlab pipelines locally as shell executor or docker executor
 dev-util/go-task 3.38.0-r1 3.41.0-r1: A task runner / simpler Make alternative written in Go
 dev-util/google-antigravity 1.18.4 1.19.6 1.20.5: Google's AI-first IDE and agentic development platform
@@ -1103,7 +1104,7 @@ dev-util/yaml-language-server 1.14.0 1.15.0: Language Server for YAML Files
 dev-vcs/ghorg 1.11.7 1.11.9: Mass repository cloning tool for GitHub/GitLab/Bitbucket
 dev-vcs/gitahead 2.7.1-r2: Graphical Git client to help understand and manage source code history
 dev-vcs/gitqlient 1.6.2 1.6.3 9999: Multi-platform Git client written with Qt
-dev-vcs/lazygit 0.56.0 0.57.0 0.58.0 0.58.1 0.59.0 9999: Simple terminal UI for git commands
+dev-vcs/lazygit 0.57.0 0.58.0 0.58.1 0.59.0 0.60.0 9999: Simple terminal UI for git commands
 dev-vcs/lazyjj 0.6.1: TUI for Jujutsu/jj
 dev-vcs/llm-git 3.0.0: AI-powered git commit message generator using LLMs
 dev-vcs/pijul 1.0.0_beta9: A distributed version control system based on a theory of patches
@@ -1179,7 +1180,7 @@ games-util/gamehub 0.16.3.2-r2: GameHub is a unified library for all your games
 games-util/goverlay 1.2: Graphical UI to help manage Linux game overlays (MangoHud).
 games-util/grapejuice 7.20.12 9999: A Wine+Roblox management application
 games-util/hid-nintendo 9999: A Nintendo HID kernel module
-games-util/hydra-launcher-bin 3.8.1 3.8.3 3.9.0: Open-source gaming platform and launcher
+games-util/hydra-launcher-bin 3.8.1 3.8.3 3.9.0 3.9.1 3.9.3: Open-source gaming platform and launcher
 games-util/input-remapper 2.2.0 9999: A tool to change and program the mapping of your input device buttons
 games-util/itch-bin 25.5.1-r2 26.1.9: itch.io game browser, installer and launcher
 games-util/legendary 0.20.34-r2: A free and open-source replacement for the Epic Games Launcher
@@ -1189,6 +1190,7 @@ games-util/minigalaxy 1.4.0: A simple GOG client for Linux
 games-util/modrinth-app-bin 0.10.27: A unique, open source launcher that allows you to play your favorite Minecraft mods, and keep them up to date, all in one neat little package.
 games-util/oversteer 0.8.3 9999: Steering Wheel Manager for Linux
 games-util/protonup 0.1.5 9999: Install and Update Proton-GE
+games-util/protonup-rs 0.10.0: TUI Program for Custom Proton Download and installation written in rust
 games-util/qzdl 20250103 99999999: Qt version of the ZDL ZDoom launcher
 games-util/r2modman-bin 3.1.51: A simple and easy to use mod manager for several games using Thunderstore
 games-util/roll 2.6.1: Program to roll dices specified in a simple and intuitive way
@@ -1268,9 +1270,9 @@ gui-apps/lemurs 0.3.2 0.4.0: A TUI Display/Login Manager
 gui-apps/lswt 1.0.4-r1 2.0.0 9999: List Wayland toplevels
 gui-apps/meteo-qt 4.2 4.3: A system tray application for the weather status
 gui-apps/mpvpaper 1.8 9999: A video wallpaper program for wlroots based wayland compositors
-gui-apps/niri-sidebar 0.2.0: A lightweight, external sidebar manager for the Niri window manager.
-gui-apps/noctalia-qs 0.0.6-r1 9999: Toolkit for building desktop widgets using QtQuick
-gui-apps/noctalia-shell 4.5.0 4.6.5 9999: A sleek and minimal desktop shell thoughtfully crafted for Wayland
+gui-apps/niri-sidebar 0.3.1: A lightweight, external sidebar manager for the Niri window manager.
+gui-apps/noctalia-qs 0.0.8 9999: Toolkit for building desktop widgets using QtQuick
+gui-apps/noctalia-shell 4.5.0 4.6.6 9999: A sleek and minimal desktop shell thoughtfully crafted for Wayland
 gui-apps/nwg 0: meta package package for nwg-shell
 gui-apps/nwg-bar 0.1.5 0.1.6: GTK3-based button bar for wlroots-based compositors
 gui-apps/nwg-clipman 0.2.5 0.2.8: nwg-shell clipboard manager - a GTK3-based GUI for cliphist
@@ -1290,7 +1292,7 @@ gui-apps/organicmaps 9999: Offline maps and navigation using OpenStreetMap data
 gui-apps/packettracer 8.2.2-r1: Cisco's packet tracer
 gui-apps/quickshell 0.2.1-r1 9999: Toolkit for building desktop widgets using QtQuick
 gui-apps/rofi-wayland 1.7.5_p3 1.7.8_p1: A window switcher, run dialog and dmenu replacement
-gui-apps/satty 0.19.0 9999: A screenshot annotation tool inspired by Swappy and Flameshot.
+gui-apps/satty 0.20.1 9999: A screenshot annotation tool inspired by Swappy and Flameshot.
 gui-apps/sddm-conf 0.3.0: SDDM configuration editor
 gui-apps/sfwbar 1.0_beta16_p1 9999: S* Floating Window Bar
 gui-apps/shikane 1.0.1: A wayland dynamic output config tool focusing on accuracy and determinism
@@ -1361,7 +1363,7 @@ kde-misc/geminipart 20250730: KPart for viewing text/gemini files
 kde-misc/kio-gemini 20250730: Gemini KIO worker
 mail-client/betterbird-bin 140.2.1: Betterbird is a fine-tuned version of Mozilla Thunderbird.
 mail-client/mailspring-bin 1.18.0: A beautiful, fast and fully open source mail client for Mac, Windows and Linux
-mail-client/proton-mail-bin 1.11.0-r1: Beta Client for Proton Mail
+mail-client/proton-mail-bin 1.11.0-r1 1.12.1: Beta Client for Proton Mail
 mail-client/tutanota-desktop-bin 319.260107.1: Desktop client for Tutanota, the secure e-mail service
 mail-filter/postfix-mta-sts-resolver 1.4.0: Daemon which provides TLS client policy for Postfix via socketmap
 media-fonts/atkinson-hyperlegible 20200514: Braille Institute's Atkinson Hyperlegible font.
@@ -1511,7 +1513,7 @@ media-sound/spotify-adblock 1.0.1 1.0.2 1.0.3: Adblocker for Spotify
 media-sound/spotify-player 0.20.5 0.21.0 0.21.1 9999: spotify_player is a fast, easy to use, and configurable terminal music player.
 media-sound/spotifyd 0.3.5_p20240513 0.4.1 0.4.2: A Spotify daemon
 media-sound/spotube-bin 3.8.0: An open source, cross-platform Spotify client
-media-sound/subtui 2.8.1: A lightweight Subsonic TUI music player built in Go with scrobbling support.
+media-sound/subtui 2.10.1: A lightweight Subsonic TUI music player built in Go with scrobbling support.
 media-sound/supersonic 0.20.0 0.20.1: A lightweight and full-featured cross-platform desktop client
 media-sound/tenacity 1.3.4-r4: Easy-to-use, privacy-friendly, FLOSS, cross-platform multi-track audio editor
 media-sound/tidal-hifi-bin 5.16.0-r1 5.17.0 6.1.0 6.2.0: Web version of Tidal running in electron with Hi-Fi support thanks to Widevine.
@@ -1756,7 +1758,7 @@ net-vpn/amneziawg-modules 1.0.20251009 1.0.20260210: AmneziaWG Linux kernel modu
 net-vpn/amneziawg-tools 1.0.20250903 1.0.20260223: Required tools for AmneziaWG, such as awg(8) and awg-quick(8)
 net-vpn/fastd 22 23: A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
 net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that require SAML
-net-vpn/mullvadvpn-app 2025.14 2026.1_beta1: Tool used to manage daemon setup
+net-vpn/mullvadvpn-app 2025.14 2026.1_beta1 2026.1_beta2: Tool used to manage daemon setup
 net-vpn/proton-vpn-gtk-app 4.11.0: Proton VPN GTK app
 net-vpn/vtun-embedded 3.0.7 3.1.0: Create tunnels over TCP/IP networks with shaping, encryption, and compression
 net-vpn/vtun-ng 3.0.22 3.1.0: Create tunnels over TCP/IP networks with shaping, encryption, and compression
@@ -1865,7 +1867,6 @@ sys-apps/amd-debug-tools 0.2.7: Helpful tools for debugging AMD Zen systems
 sys-apps/asus-numpad 0.2-r1 9999: User-space driver for Asus numpad
 sys-apps/asus-touchpad-numpad-driver 0_pre20220311 9999: Feature-rich configurable Asus NumPad drivers
 sys-apps/bat-extras 2024.08.24 9999: Bash scripts that integrate bat with various command line tools.
-sys-apps/bpftune 9999: bpftune uses BPF to auto-tune Linux systems
 sys-apps/bustd 0.1.1: Process killer daemon for out-of-memory scenarios
 sys-apps/cctv 9999: Terminal interface for CoolerControl
 sys-apps/colortail 0.3.3 9999: tail command with colors
@@ -1905,7 +1906,7 @@ sys-auth/authenticator 4.6.2: 2FA code generator for GNOME
 sys-auth/hyprpolkitagent 0.1.1-r2 0.1.2: Polkit authentication agent for Hyprland, written in Qt/QML
 sys-auth/pam-gnupg 0.4-r1: Unlock GnuPG keys on login
 sys-block/clonezilla 5.8.9: Clonezilla is a partition and disk imaging/cloning program
-sys-block/partclone 0.3.44 0.3.46: Partition cloning tool
+sys-block/partclone 0.3.46 0.3.47: Partition cloning tool
 sys-block/ublksrv 1.6: Userspace block device driver
 sys-boot/customrescuecd-x86_64-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/drbl 5.4.2: Diskless Remote Boot in Linux
@@ -2003,7 +2004,7 @@ www-client/nyxt 3.11.8 3.12.0 9999: Nyxt - the hacker's power-browser
 www-client/torbrowser-launcher 0.3.9: A program to help you securely download and run Tor Browser
 www-client/vimb 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
 www-client/yandex-browser 25.12.1.1319_p1: The web browser from Yandex
-www-client/zen-bin 1.18.10b 1.19b: Zen Browser - A fast, privacy-focused Firefox fork
+www-client/zen-bin 1.18.10b 1.19.1b: Zen Browser - A fast, privacy-focused Firefox fork
 www-misc/dufs 0.40.0: Dufs is a distinctive utility file server
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits
 www-misc/kiwix-desktop 2.4.0 2.5.1: cross-platform viewer/manager for ZIM archives
