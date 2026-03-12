@@ -38,7 +38,7 @@ RDEPEND="
 	nilfs2? ( sys-fs/nilfs-utils )
 	ntfs? ( sys-fs/ntfs3g )
 	reiserfs? ( sys-fs/progsreiserfs )
-	xfs? ( sys-apps/util-linux )
+	xfs? ( dev-libs/userspace-rcu )
 	static? (
 		app-arch/zstd:=[static-libs]
 		dev-libs/openssl:0[static-libs]
@@ -49,6 +49,7 @@ RDEPEND="
 		nilfs2? ( sys-fs/nilfs-utils[static-libs] )
 		ntfs? ( sys-fs/ntfs3g[static-libs] )
 		reiserfs? ( sys-fs/progsreiserfs[static-libs] )
+		xfs? ( dev-libs/userspace-rcu[static-libs] )
 	)
 	!static? (
 		dev-libs/xxhash
@@ -62,7 +63,7 @@ BDEPEND="
 "
 
 PATCHES=(
-	"${FILESDIR}"/${PN}-0.3.40-fix-ncurses-linking.patch
+	"${FILESDIR}"/${PN}-0.3.47-fix-ncurses-linking.patch
 )
 
 DOCS=(

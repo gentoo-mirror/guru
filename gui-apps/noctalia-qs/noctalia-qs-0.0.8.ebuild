@@ -5,7 +5,7 @@ EAPI=8
 
 inherit branding cmake
 
-GIT_REVISION=b58414209fce1669cff818e50468e926613baa10
+GIT_REVISION=d5209a6b5fe8c6dff8d530e820c96f09830011e3
 
 DESCRIPTION="Toolkit for building desktop widgets using QtQuick"
 HOMEPAGE="https://quickshell.org/"
@@ -29,6 +29,7 @@ IUSE="
 	+X +i3
 	+tray +pipewire +mpris +pam +polkit +greetd +upower +notifications
 	+bluetooth +network
+	lto
 "
 REQUIRED_USE="
 	layer-shell?         ( wayland )
@@ -75,6 +76,8 @@ BDEPEND="
 	)
 "
 
+DOCS=( README.md changelog/ )
+
 src_configure() {
 	# hyprland controls all Hyprland sub-features as a group.
 	# i3 controls I3/Sway IPC.
@@ -116,6 +119,7 @@ src_configure() {
 		-DSERVICE_NOTIFICATIONS=$(usex notifications ON OFF)
 		-DBLUETOOTH=$(usex bluetooth ON OFF)
 		-DNETWORK=$(usex network ON OFF)
+		-DLTO=$(usex lto ON OFF)
 	)
 	cmake_src_configure
 }
