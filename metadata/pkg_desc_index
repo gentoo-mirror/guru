@@ -718,6 +718,7 @@ dev-python/TakeTheTime 0.3.1: Take The Time, a super-neat Python library for tim
 dev-python/adb-shell 0.4.4-r1: A Python implementation of ADB with shell and FileSync functionality.
 dev-python/addict 2.4.0: The Python Dict that's better than heroin
 dev-python/ahocorasick 2.0.0 2.1.0: Python module implementing Aho-Corasick algorithm
+dev-python/aiolimiter 1.2.1: An efficient implementation of a rate limiter for asyncio
 dev-python/aisuite 0.1.7: Simple, unified interface to multiple Generative AI providers
 dev-python/arpy 2.3.0: Library for accessing ar files
 dev-python/ascim 0.1.1: Manipulate ASCII art as you would do with raster images
@@ -758,6 +759,7 @@ dev-python/daiquiri 3.3.0 3.4.0: Library to configure Python logging easily
 dev-python/darkdetect 0.8.0: Detect OS dark mode from Python
 dev-python/dateparser 1.3.0: Date parsing library designed to parse dates from HTML pages
 dev-python/decopatch 1.4.10: Create decorators easily in python
+dev-python/deezer-py 1.3.7: A wrapper for all Deezer's APIs
 dev-python/dek 1.5.0: The decorator-decorator
 dev-python/desktop-notifier 6.1.1 6.2.0: desktop-notifier is a Python library for cross-platform desktop notifications
 dev-python/devtools 0.12.2: Dev tools for python
@@ -831,6 +833,7 @@ dev-python/litestar-htmx 0.5.0: HTMX Integration for Litestar
 dev-python/lru-dict 1.3.0 1.4.1: Dict like LRU container
 dev-python/lsp-tree-sitter 0.1.1: A library to create language servers
 dev-python/lzallright 0.2.6: A Python 3.8+ binding for lzokay library
+dev-python/m3u8 6.0.0: Python m3u8 Parser for HTTP Live Streaming (HLS) Transmissions
 dev-python/markdownify 0.11.6: Convert HTML to Markdown
 dev-python/markovify 0.9.4: Simple, extensible Markov chain generator
 dev-python/mastodon-py 2.0.1 2.1.4: Python wrapper for the Mastodon API
@@ -957,6 +960,7 @@ dev-python/sendgrid 6.11.0: Twilio SendGrid library for Python
 dev-python/sentence-splitter 1.4-r2: Sentence splitter using heuristic algorithm by Philipp Koehn and Josh Schroeder
 dev-python/sentry-sdk 2.30.0: Python client for Sentry
 dev-python/signalstickers-client 3.3.0: A Python client for the Signal stickers API
+dev-python/simple-term-menu 1.6.6: A Python package which creates simple interactive menus on the command line
 dev-python/simplemma 0.9.1: A simple multilingual lemmatizer for Python
 dev-python/sjcl 0.2.1-r1: Decrypt and encrypt 'Stanford Javascript Crypto Library'-compatible messages
 dev-python/skia-pathops 0.9.1: Python bindings for the Skia Path Ops
@@ -994,6 +998,7 @@ dev-python/textual-serve 1.1.2: Serve Textual apps locally
 dev-python/thonny 4.1.7: Thonny is a Python IDE meant for learning programming
 dev-python/timeslot 0.1.2: Time slots/intervals with an arbitrary start and stop
 dev-python/tlv8 0.10.0: Type-Length-Value8 (TLV8) for python
+dev-python/toml 0.10.2: Python library for TOML
 dev-python/trianglesolver 1.2: Attempt to solve triangles given partial info about sides and angles
 dev-python/tulir-telethon 1.37.0_alpha1 1.99.0_alpha6: Full-featured Telegram client library for Python 3
 dev-python/tweepy 4.14.0: An easy-to-use Python library for accessing the Twitter API.
@@ -1054,7 +1059,7 @@ dev-util/find-work-bugzilla 1.0.0-r1: Personal advice utility for Gentoo package
 dev-util/find-work-pkgcheck 1.0.0: Personal advice utility for Gentoo package maintainers: pkgcheck plugin
 dev-util/find-work-repology 1.0.0 1.0.1: Personal advice utility for Gentoo package maintainers: Repology plugin
 dev-util/flatpakify 1.0.5 1.0.6: Tool to create Flatpak bundles from Portage ebuilds
-dev-util/forgejo-runner 12.5.3 12.6.1 9999: A daemon that connects to a Forgejo instance and runs jobs for CI
+dev-util/forgejo-runner 12.5.3 12.6.1 12.7.2 9999: A daemon that connects to a Forgejo instance and runs jobs for CI
 dev-util/fortls 2.13.0 3.0.0 3.1.1 3.1.2 3.2.2: Fortran Language Server (fortls)
 dev-util/fortran-test-drive 0.4.0 0.5.0: The simple testing framework (for Fortran)
 dev-util/gammaray 3.3.0 3.3.1: High-level runtime introspection tool for Qt applications
@@ -1510,7 +1515,7 @@ media-sound/jriver 31.0.83: A cross-platform media center, famous for high quali
 media-sound/kew 2.4.4-r1: kew (/kjuː/) is a command-line music player for Linux.
 media-sound/libcava 0.10.7: Console-based Audio Visualizer for Alsa
 media-sound/listenbrainz-mpd 2.4.0: ListenBrainz submission client for MPD
-media-sound/lms 3.73.0 3.74.0 3.75.0: Lightweight Music Server.
+media-sound/lms 3.74.0 3.75.0 3.76.0: Lightweight Music Server.
 media-sound/loudgain 0.6.8-r2 0.6.8_p20240128-r2 0.6.8_p20240128-r3: Versatile ReplayGain 2.0 loudness normalizer
 media-sound/mopidy 3.4.2: An extensible music server written in Python.
 media-sound/mousai 0.7.9: Identify songs in seconds
@@ -1542,6 +1547,7 @@ media-sound/spotify-adblock 1.0.1 1.0.2 1.0.3: Adblocker for Spotify
 media-sound/spotify-player 0.20.5 0.21.0 0.21.1 9999: spotify_player is a fast, easy to use, and configurable terminal music player.
 media-sound/spotifyd 0.3.5_p20240513 0.4.1 0.4.2: A Spotify daemon
 media-sound/spotube-bin 3.8.0: An open source, cross-platform Spotify client
+media-sound/streamrip 2.2.0: A fast, all-in-one music downloader for Qobuz, Deezer, Tidal, and SoundCloud
 media-sound/subtui 2.11.3: A lightweight Subsonic TUI music player built in Go with scrobbling support.
 media-sound/supersonic 0.20.0 0.20.1: A lightweight and full-featured cross-platform desktop client
 media-sound/tenacity 1.3.4-r4: Easy-to-use, privacy-friendly, FLOSS, cross-platform multi-track audio editor
@@ -2031,7 +2037,7 @@ www-apps/soupault-bin 5.2.0: Static website generator based on HTML rewriting
 www-apps/uwebsockets 20.14.0 20.62.0 9999: ultra fast, simple, secure & standards compliant web I/O
 www-apps/whisparr-eros 3.3.1.579: Adult movie organizer/manager for usenet and torrent users
 www-apps/whoogle-search 0.9.3: A self-hosted, ad-free, privacy-respecting metasearch engine
-www-apps/zola 0.21.0 0.22.1 0.22.1-r1: A fast static site generator with everything built-in
+www-apps/zola 0.21.0 0.22.1-r1: A fast static site generator with everything built-in
 www-client/badwolf 1.4.0-r2 9999-r1: Minimalist and privacy-oriented WebKitGTK+ browser
 www-client/browsh 1.8.2 1.8.3: A fully-modern text-based browser, rendering to TTY and browsers
 www-client/chawan 0.3.3 9999: TUI web browser; supports CSS, images, JavaScript, and multiple web protocols
