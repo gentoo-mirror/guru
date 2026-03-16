@@ -1,0 +1,16 @@
+BDEPEND=>=llvm-core/clang-11 sys-devel/flex sys-devel/bison dev-build/cmake virtual/pkgconfig llvm-core/llvm:= || ( dev-lang/python:3.14 dev-lang/python:3.13 dev-lang/python:3.12 dev-lang/python:3.11 ) gui? ( dev-util/vulkan-headers ) app-alternatives/ninja >=dev-build/cmake-3.28.5
+DEFINED_PHASES=compile configure install prepare pretend setup test
+DEPEND=x11-misc/xdg-user-dirs sys-fs/fuse:0 dev-libs/icu:= dev-libs/libbsd dev-libs/libxml2:2 llvm-core/llvm:= media-libs/freetype media-libs/libjpeg-turbo media-libs/fontconfig media-libs/tiff:= multilib? ( media-libs/freetype[abi_x86_32] media-libs/libjpeg-turbo[abi_x86_32] media-libs/fontconfig[abi_x86_32] media-libs/tiff[abi_x86_32] sys-libs/glibc[multilib] ) gui? ( media-libs/mesa[X] virtual/opengl virtual/glu media-libs/libpng:= media-libs/giflib:= x11-libs/libX11 x11-libs/libXext x11-libs/libXrandr x11-libs/libXcursor x11-libs/libxkbfile x11-libs/cairo media-libs/libpulse media-libs/vulkan-loader ) gui? ( multilib? ( media-libs/mesa[X,abi_x86_32] virtual/opengl[abi_x86_32] virtual/glu[abi_x86_32] ) ) sys-apps/dbus media-video/ffmpeg:=
+DESCRIPTION=Translation layer for running macOS software on Linux
+EAPI=8
+HOMEPAGE=https://www.darlinghq.org
+INHERIT=cmake python-any-r1 check-reqs linux-info
+IUSE=cli cli-dev cli-extra gui gui-frameworks gui-stubs jsc webkit python ruby perl metal multilib +system
+KEYWORDS=~amd64
+LICENSE=GPL-3
+RDEPEND=x11-misc/xdg-user-dirs sys-fs/fuse:0 dev-libs/icu:= dev-libs/libbsd dev-libs/libxml2:2 llvm-core/llvm:= media-libs/freetype media-libs/libjpeg-turbo media-libs/fontconfig media-libs/tiff:= multilib? ( media-libs/freetype[abi_x86_32] media-libs/libjpeg-turbo[abi_x86_32] media-libs/fontconfig[abi_x86_32] media-libs/tiff[abi_x86_32] sys-libs/glibc[multilib] ) gui? ( media-libs/mesa[X] virtual/opengl virtual/glu media-libs/libpng:= media-libs/giflib:= x11-libs/libX11 x11-libs/libXext x11-libs/libXrandr x11-libs/libXcursor x11-libs/libxkbfile x11-libs/cairo media-libs/libpulse media-libs/vulkan-loader ) gui? ( multilib? ( media-libs/mesa[X,abi_x86_32] virtual/opengl[abi_x86_32] virtual/glu[abi_x86_32] ) ) sys-apps/dbus media-video/ffmpeg:=
+REQUIRED_USE=cli-dev? ( cli python ruby perl ) cli? ( system ) cli-extra? ( cli ) gui-frameworks? ( gui ) gui-stubs? ( gui-frameworks ) gui? ( system ) webkit? ( jsc ) python? ( system ) ruby? ( system ) perl? ( system ) metal? ( gui )
+SLOT=0
+SRC_URI=https://github.com/darlinghq/darling/releases/download/v0.1.20260222/darling-source.tar.gz -> darling-complete-source-0.1.20260222.tar.gz
+_eclasses_=toolchain-funcs	da0a71e3a72194ca0b88d5b045d721ac	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	5691a3da96eac88f135cf3596b8c2c3c	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	python-utils-r1	9c4180f103a0e8340bc993fc85dbdadd	python-any-r1	891415dfe39ad9b41b461f2b86354af0	check-reqs	12ab9d3fc16bfe1f87c6fb652324b57c	linux-info	efd923656513c879204fec6638eadee5
+_md5_=e00646f0d8ce2eca727c3fdf8932db8f

@@ -1,6 +1,5 @@
-BDEPEND=|| ( >=dev-lang/rust-bin-1.74.1:* >=dev-lang/rust-1.74.1:* ) >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=|| ( >=dev-lang/rust-bin-1.85.0:* >=dev-lang/rust-1.85.0:* ) >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install setup test unpack
-DEPEND=dev-libs/wayland-protocols dev-libs/wayland
 DESCRIPTION=Keep Wayland clipboard even after programs close
 EAPI=8
 HOMEPAGE=https://github.com/Linus789/wl-clip-persist
@@ -8,7 +7,6 @@ INHERIT=cargo git-r3
 IUSE=debug
 LICENSE=MIT Unicode-DFS-2016
 PROPERTIES=live
-RDEPEND=dev-libs/wayland-protocols dev-libs/wayland
 SLOT=0
 _eclasses_=toolchain-funcs	da0a71e3a72194ca0b88d5b045d721ac	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	1e32df7deee68372153dca65f4a7c21f	rust	0d1cc00e0e91a021b50b0491e361ad41	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	be19d4b6a17dac5249b9273866e3b66b	git-r3	7b584b5dc33e3bc66ff5b9271bf41764
-_md5_=6b7a78316d09502a5037a36fd43a67f3
+_md5_=77f86ee6be0cdd81c933f14507ceb67c

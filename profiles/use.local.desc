@@ -45,6 +45,15 @@ app-emulation/box64:aot - Enables the dynamic ahead of time recompiler for incre
 app-emulation/box86:aot - Enables the dynamic ahead of time recompiler for increased performance on ARM
 app-emulation/cloud-utils:guest-utils - Installs utilities useful within a guest VM
 app-emulation/cloud-utils:image-utils - Installs utilities useful for manipulating guest images from outside a guest VM
+app-emulation/darling:cli - Includes system and most standalone command-line programs (i.e. those that don't require additional runtimes or complex frameworks/libraries)
+app-emulation/darling:cli-dev - Includes cli, python, ruby, and perl, along with some additional targets normally regarded as GUI targets. These additional targets are necessary for certain parts of the Xcode CLI tools.
+app-emulation/darling:cli-extra - Includes cli and some additional programs not installed on a standard macOS installation (e.g. GNU tar)
+app-emulation/darling:gui - Includes system and everything necessary to run basic Cocoa, Metal, and OpenGL apps. Note that only includes the minimum required for GUI applications; most applications will also require additional frameworks (e.g. audio, video, location, etc.)
+app-emulation/darling:gui-frameworks - Includes gui and many GUI-related frameworks depended upon by Cocoa apps (e.g. audio frameworks). Note that this component only includes non-stub frameworks.
+app-emulation/darling:gui-stubs - Includes gui_frameworks and many stubbed GUI-related frameworks.
+app-emulation/darling:jsc - Enabled support for a framework used for executing JavaScript code, primarily in web browsers.
+app-emulation/darling:metal - Enable support for the Metal graphics framework
+app-emulation/darling:system - Includes core and everything necessary to enter a shell
 app-emulation/looking-glass:binutils - build backtrace support
 app-emulation/looking-glass:pipewire - enable media-video/pipewire support
 app-emulation/lsfg-vk:cli - Enables building lsfg-vk-cli
@@ -162,6 +171,7 @@ dev-libs/librepo:gpgme - Use GPGME instead of rpm library for OpenPGP key suppor
 dev-libs/librepo:zchunk - Build with zchunk support
 dev-libs/libsolv:zchunk - Build with zchunk support
 dev-libs/nanopb:pb-malloc - Enable dynamic allocation support in the decoder
+dev-libs/nativefiledialog-extended:desktop-portal - Use sys-apps/xdg-desktop-portal to open file dialogs
 dev-libs/open62541:mbedtls - Enable encryption support using net-libs/mbedtls
 dev-libs/open62541:openssl - Enable encryption support using dev-libs/openssl
 dev-libs/open62541:pubsub - Enable OPC/UA Pub/Sub extensions
@@ -478,6 +488,11 @@ gui-wm/swayfx:wallpapers - Install sway's default wallpaper image
 mail-client/mailspring-bin:wayland - Run in wayland mode under wayland sessions, x11/xwayland otherwise (x11 sessions are unaffected).
 media-fonts/atkinson-hyperlegible:otf - Use the provided Open Type Font font files
 media-fonts/atkinson-hyperlegible:ttf - Use the provided True Type Font font files
+media-fonts/geist-font:geist - Install the standard "Geist" font
+media-fonts/geist-font:geistmono - Install the "Geist Mono" monospace font variant
+media-fonts/geist-font:geistpixel - Install the "Geist Pixel" font variant
+media-fonts/geist-font:otf - Install OpenType font files (.otf)
+media-fonts/geist-font:ttf - Install TrueType font files (.ttf)
 media-fonts/maple-mono:cn - Install CN font for Simplified Chinese, Traditional Chinese and Japanese support
 media-fonts/maple-mono:ligature - Install the font with ligature support
 media-fonts/maple-mono:nerd - Install the nerd font
@@ -688,9 +703,8 @@ net-analyzer/munin-contrib:tools - munin contrib tools
 net-client/lagrange:harfbuzz - Use media-libs/harfbuzz to shape text
 net-dialup/minimodem:sndio - Enable support for the media-sound/sndio backend
 net-dns/AdGuardHome:web - Enables web user interface (UI)
-net-im/abaddon:libhandy - Support for features using gui-libs/libhandy
-net-im/abaddon:qrcodegen - Support for login through QR Code feature using dev-libs/qr-code-generator
 net-im/abaddon:rnnoise - Support for noise reduction using media-libs/rnnoise
+net-im/abaddon:voice - Voice support
 net-im/chatterino:plugins - Enable plugin support
 net-im/chatterino:qtkeychain - Enable qtkeychain support to secure passwords
 net-im/conduit:rocksdb - Add support for RocksDB; a key/value, LSM database

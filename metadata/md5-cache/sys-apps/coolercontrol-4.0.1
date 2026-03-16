@@ -1,0 +1,15 @@
+BDEPEND=virtual/pkgconfig app-alternatives/ninja >=dev-build/cmake-3.28.5
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare test
+DEPEND=dev-qt/qtbase:6[dbus,widgets] dev-qt/qtwebchannel:6 dev-qt/qtwebengine:6[widgets] x11-themes/hicolor-icon-theme
+DESCRIPTION=Monitor and control your cooling and other devices
+EAPI=8
+HOMEPAGE=https://gitlab.com/coolercontrol/coolercontrol
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=cmake desktop xdg
+KEYWORDS=~amd64
+LICENSE=GPL-3+ CC0-1.0
+RDEPEND=dev-qt/qtbase:6[dbus,widgets] dev-qt/qtwebchannel:6 dev-qt/qtwebengine:6[widgets] x11-themes/hicolor-icon-theme sys-apps/coolercontrold
+SLOT=0
+SRC_URI=https://gitlab.com/coolercontrol/coolercontrol/-/releases/4.0.1/downloads/packages/coolercontrol-4.0.1.tar.gz
+_eclasses_=toolchain-funcs	da0a71e3a72194ca0b88d5b045d721ac	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	5691a3da96eac88f135cf3596b8c2c3c	desktop	26d57169ca094c04be416993844ec8bc	xdg	3ef49a87c52c8b77c476351195dfe575
+_md5_=ba25048fa3dbfe373867faf7a0f461b3
