@@ -1,14 +1,12 @@
-BDEPEND=|| ( >=dev-lang/rust-bin-1.85.0:* >=dev-lang/rust-1.85.0:* ) >=dev-vcs/git-1.8.2.1[curl]
-DEFINED_PHASES=compile configure install setup test unpack
-DEPEND=gtk? ( dev-libs/glib:2= )
+BDEPEND=|| ( >=dev-lang/rust-bin-1.87.0:* >=dev-lang/rust-1.87.0:* ) >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile configure install postinst setup test unpack
 DESCRIPTION=Bespoke dotfile management for sharkgirls.
 EAPI=8
 HOMEPAGE=https://codeberg.org/vimproved/blahajdots
-INHERIT=cargo git-r3
-IUSE=+gtk debug
-LICENSE=GPL-3+ Apache-2.0-with-LLVM-exceptions MIT Unicode-DFS-2016 || ( Apache-2.0 Boost-1.0 )
+INHERIT=cargo optfeature git-r3
+IUSE=debug
+LICENSE=GPL-3+ Apache-2.0 MIT MPL-2.0 Unicode-3.0 ZLIB
 PROPERTIES=live
-RDEPEND=gtk? ( dev-libs/glib:2= )
 SLOT=0
-_eclasses_=toolchain-funcs	da0a71e3a72194ca0b88d5b045d721ac	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	1e32df7deee68372153dca65f4a7c21f	rust	0d1cc00e0e91a021b50b0491e361ad41	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	be19d4b6a17dac5249b9273866e3b66b	git-r3	7b584b5dc33e3bc66ff5b9271bf41764
-_md5_=5de9414bc9f87dbdf92295efd9e9b82c
+_eclasses_=toolchain-funcs	da0a71e3a72194ca0b88d5b045d721ac	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	1e32df7deee68372153dca65f4a7c21f	rust	0d1cc00e0e91a021b50b0491e361ad41	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	be19d4b6a17dac5249b9273866e3b66b	optfeature	538bce96e5589935b57e178e8635f301	git-r3	7b584b5dc33e3bc66ff5b9271bf41764
+_md5_=e37cc611fa1d460bcd0905f298cd231e

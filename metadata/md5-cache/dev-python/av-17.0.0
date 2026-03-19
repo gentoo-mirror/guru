@@ -1,0 +1,17 @@
+BDEPEND=virtual/pkgconfig >=dev-python/cython-3.1.0[python_targets_python3_12(-)?,python_targets_python3_13(-)?,python_targets_python3_14(-)?] test? ( dev-python/numpy[python_targets_python3_12(-)?,python_targets_python3_13(-)?,python_targets_python3_14(-)?] dev-python/pillow[python_targets_python3_12(-)?,python_targets_python3_13(-)?,python_targets_python3_14(-)?] ) test? ( media-video/ffmpeg:= dev-python/numpy[python_targets_python3_12(-)?,python_targets_python3_13(-)?,python_targets_python3_14(-)?] dev-python/pillow[python_targets_python3_12(-)?,python_targets_python3_13(-)?,python_targets_python3_14(-)?] >=dev-python/pytest-7.4.4[python_targets_python3_12(-)?,python_targets_python3_13(-)?,python_targets_python3_14(-)?] ) doc? ( || ( ( dev-lang/python:3.14 >=dev-python/sphinx-8.1.3[python_targets_python3_14(-)] dev-python/sphinx-copybutton[python_targets_python3_14(-)] ) ( dev-lang/python:3.13 >=dev-python/sphinx-8.1.3[python_targets_python3_13(-)] dev-python/sphinx-copybutton[python_targets_python3_13(-)] ) ( dev-lang/python:3.12 >=dev-python/sphinx-8.1.3[python_targets_python3_12(-)] dev-python/sphinx-copybutton[python_targets_python3_12(-)] ) ) ) python_targets_python3_12? ( dev-lang/python:3.12 ) python_targets_python3_13? ( dev-lang/python:3.13 ) python_targets_python3_14? ( dev-lang/python:3.14 ) >=dev-python/gpep517-16[python_targets_python3_12(-)?,python_targets_python3_13(-)?,python_targets_python3_14(-)?] >=dev-python/setuptools-78.1.0[python_targets_python3_12(-)?,python_targets_python3_13(-)?,python_targets_python3_14(-)?]
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=media-video/ffmpeg:= python_targets_python3_12? ( dev-lang/python:3.12 ) python_targets_python3_13? ( dev-lang/python:3.13 ) python_targets_python3_14? ( dev-lang/python:3.14 )
+DESCRIPTION=﻿﻿Pythonic bindings for FFmpeg's libraries
+EAPI=8
+HOMEPAGE=https://pyav.basswood-io.com/docs/stable/ https://pypi.org/project/av/ https://github.com/PyAV-Org/PyAV/
+INHERIT=distutils-r1
+IUSE=examples test doc python_targets_python3_12 python_targets_python3_13 python_targets_python3_14 debug
+KEYWORDS=~amd64
+LICENSE=BSD
+RDEPEND=media-video/ffmpeg:= dev-python/numpy[python_targets_python3_12(-)?,python_targets_python3_13(-)?,python_targets_python3_14(-)?] dev-python/pillow[python_targets_python3_12(-)?,python_targets_python3_13(-)?,python_targets_python3_14(-)?] python_targets_python3_12? ( dev-lang/python:3.12 ) python_targets_python3_13? ( dev-lang/python:3.13 ) python_targets_python3_14? ( dev-lang/python:3.14 )
+REQUIRED_USE=|| ( python_targets_python3_12 python_targets_python3_13 python_targets_python3_14 )
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/PyAV-Org/PyAV/archive/v17.0.0.tar.gz -> av-17.0.0.gh.tar.gz
+_eclasses_=eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	toolchain-funcs	da0a71e3a72194ca0b88d5b045d721ac	flag-o-matic	fd3558f73f6503093adee69adf41020d	out-of-source-utils	8e5093bd27b7f541a1913271f25d633a	multibuild	83db098a835f71feb71761f72a694aa2	multilib	404b65bd5212cff83b3935c685419d08	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	d063ea1900a793f93eb095010d6d9156	python-utils-r1	9c4180f103a0e8340bc993fc85dbdadd	python-r1	5fdca77e34fc9af7d6eb47689f33f6bf	distutils-r1	62add15ed646bfe511af53e282621b39
+_md5_=3d8f3f31e6d10f627b32bc0d19a10d85

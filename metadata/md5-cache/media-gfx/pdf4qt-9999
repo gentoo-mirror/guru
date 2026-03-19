@@ -1,6 +1,6 @@
 BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.28.5 >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare test unpack
-DEPEND=dev-cpp/tbb:= dev-libs/openssl:= dev-qt/qtbase:6[gui,widgets,xml] dev-qt/qtspeech:6 dev-qt/qtsvg:6 >=media-libs/blend2d-0.20:= media-libs/freetype media-libs/lcms:2 media-libs/libjpeg-turbo:= media-libs/openjpeg:= virtual/zlib:= test? ( dev-qt/qtbase:6[test] )
+DEPEND=dev-cpp/tbb:= dev-libs/openssl:= dev-qt/qtbase:6[concurrent,gui,widgets,xml] dev-qt/qtspeech:6 dev-qt/qtsvg:6 >=media-libs/blend2d-0.20:= media-libs/freetype media-libs/lcms:2 media-libs/libjpeg-turbo:= media-libs/openjpeg:= virtual/zlib:= test? ( dev-qt/qtbase:6[test] )
 DESCRIPTION=Open source PDF WYSIWYG editor based on Qt
 EAPI=8
 HOMEPAGE=https://jakubmelka.github.io/
@@ -9,8 +9,8 @@ INHERIT=cmake flag-o-matic xdg git-r3
 IUSE=debug test
 LICENSE=MIT
 PROPERTIES=live
-RDEPEND=dev-cpp/tbb:= dev-libs/openssl:= dev-qt/qtbase:6[gui,widgets,xml] dev-qt/qtspeech:6 dev-qt/qtsvg:6 >=media-libs/blend2d-0.20:= media-libs/freetype media-libs/lcms:2 media-libs/libjpeg-turbo:= media-libs/openjpeg:= virtual/zlib:=
+RDEPEND=dev-cpp/tbb:= dev-libs/openssl:= dev-qt/qtbase:6[concurrent,gui,widgets,xml] dev-qt/qtspeech:6 dev-qt/qtsvg:6 >=media-libs/blend2d-0.20:= media-libs/freetype media-libs/lcms:2 media-libs/libjpeg-turbo:= media-libs/openjpeg:= virtual/zlib:=
 RESTRICT=!test? ( test )
 SLOT=0
 _eclasses_=toolchain-funcs	da0a71e3a72194ca0b88d5b045d721ac	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	5691a3da96eac88f135cf3596b8c2c3c	xdg	3ef49a87c52c8b77c476351195dfe575	git-r3	7b584b5dc33e3bc66ff5b9271bf41764
-_md5_=eec033d15c3a59c3a203f4fb41da3318
+_md5_=bf1e5d4df052524f2e36dcf9a501cc06
