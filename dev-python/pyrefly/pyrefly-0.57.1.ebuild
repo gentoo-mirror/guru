@@ -23,7 +23,7 @@ CRATES="
 	anstyle-query@1.0.0
 	anstyle-wincon@3.0.7
 	anstyle@1.0.13
-	anyhow@1.0.101
+	anyhow@1.0.102
 	append-only-vec@0.1.8
 	arc-swap@1.8.2
 	argfile@0.2.1
@@ -40,17 +40,17 @@ CRATES="
 	blake3@1.8.2
 	block-buffer@0.10.2
 	bstr@1.12.1
-	bumpalo@3.19.1
+	bumpalo@3.20.2
 	byteorder@1.5.0
 	bytes@1.11.1
 	castaway@0.2.4
-	cc@1.2.56
+	cc@1.2.57
 	cfg-if@1.0.4
-	chrono@0.4.43
-	clap@4.5.54
-	clap_builder@4.5.54
-	clap_derive@4.5.49
-	clap_lex@0.7.4
+	chrono@0.4.44
+	clap@4.5.60
+	clap_builder@4.5.60
+	clap_derive@4.5.55
+	clap_lex@1.0.0
 	codespan-reporting@0.12.0
 	collection_literals@1.0.2
 	colorchoice@1.0.0
@@ -161,7 +161,7 @@ CRATES="
 	itoa@0.4.8
 	itoa@1.0.17
 	jobserver@0.1.33
-	js-sys@0.3.85
+	js-sys@0.3.91
 	kqueue-sys@1.0.4
 	kqueue@1.1.1
 	lazy_static@1.5.0
@@ -170,7 +170,7 @@ CRATES="
 	libmimalloc-sys@0.1.44
 	libredox@0.1.12
 	link-cplusplus@1.0.9
-	linux-raw-sys@0.11.0
+	linux-raw-sys@0.12.1
 	linux-raw-sys@0.4.15
 	litemap@0.7.3
 	lock_api@0.4.14
@@ -215,7 +215,7 @@ CRATES="
 	phf_codegen@0.11.3
 	phf_generator@0.11.1
 	phf_shared@0.11.3
-	pin-project-lite@0.2.16
+	pin-project-lite@0.2.17
 	pkg-config@0.3.32
 	portable-atomic@1.13.1
 	powerfmt@0.2.0
@@ -228,7 +228,7 @@ CRATES="
 	prost-types@0.11.9
 	prost@0.11.9
 	pulldown-cmark-escape@0.11.0
-	pulldown-cmark@0.13.0
+	pulldown-cmark@0.13.1
 	quote-use-macros@0.8.4
 	quote-use@0.8.4
 	quote@1.0.44
@@ -254,10 +254,10 @@ CRATES="
 	rustc-demangle@0.1.27
 	rustc-hash@2.1.1
 	rustix@0.38.44
-	rustix@1.1.3
+	rustix@1.1.4
 	rustversion@1.0.22
 	ryu@0.2.8
-	ryu@1.0.17
+	ryu@1.0.23
 	same-file@1.0.6
 	schemars@0.9.0
 	schemars@1.2.1
@@ -275,8 +275,8 @@ CRATES="
 	serde_jsonrc@0.1.0
 	serde_repr@0.1.20
 	serde_spanned@1.0.4
-	serde_with@3.16.0
-	serde_with_macros@3.16.0
+	serde_with@3.17.0
+	serde_with_macros@3.17.0
 	sha2@0.10.9
 	sharded-slab@0.1.4
 	shlex@1.3.0
@@ -296,10 +296,10 @@ CRATES="
 	structmeta@0.2.0
 	subtle@2.6.1
 	syn@1.0.109
-	syn@2.0.114
+	syn@2.0.117
 	synstructure@0.13.2
 	tar@0.4.44
-	tempfile@3.24.0
+	tempfile@3.26.0
 	termcolor@1.4.1
 	terminal_size@0.4.3
 	thiserror-impl@1.0.69
@@ -332,8 +332,8 @@ CRATES="
 	triomphe@0.1.15
 	typenum@1.19.0
 	unicase@2.9.0
-	unicode-ident@1.0.22
-	unicode-normalization@0.1.24
+	unicode-ident@1.0.24
+	unicode-normalization@0.1.25
 	unicode-segmentation@1.12.0
 	unicode-width@0.1.14
 	unicode-width@0.2.2
@@ -354,10 +354,10 @@ CRATES="
 	wasi@0.11.0+wasi-snapshot-preview1
 	wasip2@1.0.1+wasi-0.2.4
 	wasip3@0.4.0+wasi-0.3.0-rc-2026-01-06
-	wasm-bindgen-macro-support@0.2.108
-	wasm-bindgen-macro@0.2.108
-	wasm-bindgen-shared@0.2.108
-	wasm-bindgen@0.2.108
+	wasm-bindgen-macro-support@0.2.114
+	wasm-bindgen-macro@0.2.114
+	wasm-bindgen-shared@0.2.114
+	wasm-bindgen@0.2.114
 	wasm-encoder@0.244.0
 	wasm-metadata@0.244.0
 	wasmparser@0.244.0
@@ -416,6 +416,7 @@ CRATES="
 	write16@1.0.0
 	writeable@0.5.5
 	xattr@1.6.1
+	xxhash-rust@0.8.15
 	yansi@1.0.1
 	yoke-derive@0.7.4
 	yoke@0.7.4

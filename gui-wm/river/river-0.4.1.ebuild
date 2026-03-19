@@ -6,8 +6,15 @@ EAPI=8
 DESCRIPTION="A dynamic tiling Wayland compositor"
 HOMEPAGE="https://isaacfreund.com/software/river/ https://codeberg.org/river/river"
 
+declare -g -r -A ZBS_DEPENDENCIES=(
+	[pixman-0.3.0-LClMnz2VAAAs7QSCGwLimV5VUYx0JFnX5xWU6HwtMuDX.tar.gz]='https://codeberg.org/ifreund/zig-pixman/archive/v0.3.0.tar.gz'
+	[wayland-0.5.0-lQa1knz8AQCh08NA8BeQrwJB9U3CfqcVAdHZYGRKIGuu.tar.gz]='https://codeberg.org/ifreund/zig-wayland/archive/v0.5.0.tar.gz'
+	[wlroots-0.19.4-jmOlcqQMBABhKYH6NMSnoK1sohTbhc97_JP-hGg2UZaK.tar.gz]='https://codeberg.org/ifreund/zig-wlroots/archive/v0.19.4.tar.gz'
+	[xkbcommon-0.4.0-VDqIe0i2AgDRsok2GpMFYJ8SVhQS10_PI2M_CnHXsJJZ.tar.gz]='https://codeberg.org/ifreund/zig-xkbcommon/archive/v0.4.0.tar.gz'
+)
+
 ZIG_SLOT="0.15"
-inherit zig
+inherit eapi9-ver zig
 
 if [[ "${PV}" = "9999" ]]; then
 	inherit git-r3
@@ -77,4 +84,13 @@ src_install() {
 
 	insinto /usr/share/wayland-sessions/
 	doins contrib/river.desktop
+}
+
+pkg_postinst() {
+	if ver_replacing -lt 0.4; then
+		ewarn "river 0.4.x is a significant rework of the compositor's architecture,"
+		ewarn "and requires significant manual migration. If you would like to stay on"
+		ewarn "river 0.3.x, simply add '>=gui-wm/river-0.4' to your package.mask to"
+		ewarn "use river-classic continuation of the 0.3.x branch."
+	fi
 }

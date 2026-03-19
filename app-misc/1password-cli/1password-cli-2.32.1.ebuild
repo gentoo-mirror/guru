@@ -6,8 +6,8 @@ EAPI=8
 DESCRIPTION="The world’s most-loved password manager CLI"
 HOMEPAGE="https://1password.com"
 SRC_URI="
-amd64? ( https://cache.agilebits.com/dist/1P/op2/pkg/v${PV}/op_linux_amd64_v${PV}.zip )
-arm64? ( https://cache.agilebits.com/dist/1P/op2/pkg/v${PV}/op_linux_arm64_v${PV}.zip )
+amd64? ( https://cache.agilebits.com/dist/1P/op2/pkg/v${PV}/op_linux_amd64_v${PV}.zip -> ${P}-amd64.zip )
+arm64? ( https://cache.agilebits.com/dist/1P/op2/pkg/v${PV}/op_linux_arm64_v${PV}.zip -> ${P}-arm64.zip )
 "
 S="${WORKDIR}"
 
