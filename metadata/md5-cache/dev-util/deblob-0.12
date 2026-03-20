@@ -1,15 +1,15 @@
 BDEPEND=verify-sig? ( sec-keys/signify-keys-lanodan:2025 ) verify-sig? ( app-crypt/signify )
-DEFINED_PHASES=install unpack
+DEFINED_PHASES=configure install unpack
 DEPEND=>=dev-lang/hare-0.25.2:= >=dev-hare/hare-json-0.25.2.0
 DESCRIPTION=remove binary executables from a directory
 EAPI=8
 HOMEPAGE=https://hacktivis.me/projects/deblob
-INHERIT=verify-sig
+INHERIT=toolchain-funcs verify-sig
 IUSE=test verify-sig
 KEYWORDS=~amd64 ~arm64 ~riscv
 LICENSE=BSD
 RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://distfiles.hacktivis.me/releases/deblob/deblob-0.12.tar.gz test? ( https://distfiles.hacktivis.me/releases/deblob-test/deblob-test-0.12.tar.gz ) verify-sig? ( https://distfiles.hacktivis.me/releases/deblob/deblob-0.12.tar.gz.sign test? ( https://distfiles.hacktivis.me/releases/deblob-test/deblob-test-0.12.tar.gz.sign ) )
-_eclasses_=eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	verify-sig	ece4c893b6bd62eacbc4d25958e857f8
-_md5_=d8d36e812c9f36a1a471196d315e2b0b
+_eclasses_=toolchain-funcs	da0a71e3a72194ca0b88d5b045d721ac	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	verify-sig	ece4c893b6bd62eacbc4d25958e857f8
+_md5_=96608cc146135f43c7a218fca6be5f5a
