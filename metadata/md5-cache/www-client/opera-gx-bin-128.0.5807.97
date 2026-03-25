@@ -1,0 +1,15 @@
+BDEPEND=sys-devel/binutils
+DEFINED_PHASES=install postinst postrm preinst unpack
+DESCRIPTION=Opera GX Browser (Binary Package)
+EAPI=8
+HOMEPAGE=https://www.opera.com/gx
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=desktop unpacker xdg
+KEYWORDS=~amd64
+LICENSE=Opera-GX-EULA
+RDEPEND=dev-libs/atk dev-libs/glib:2 dev-libs/nspr dev-libs/nss media-libs/alsa-lib media-libs/fontconfig media-libs/freetype media-libs/mesa[gbm(+)] net-print/cups sys-apps/dbus virtual/libudev x11-libs/cairo x11-libs/libX11 x11-libs/libXcomposite x11-libs/libXdamage x11-libs/libXext x11-libs/libXfixes x11-libs/libXrandr x11-libs/libxcb x11-libs/libxkbcommon x11-libs/pango
+RESTRICT=bindist mirror strip test
+SLOT=0
+SRC_URI=https://download3.operacdn.com/ftp/pub/opera_gx/128.0.5807.97/linux/opera-gx-stable_128.0.5807.97_amd64.deb
+_eclasses_=desktop	26d57169ca094c04be416993844ec8bc	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	multiprocessing	d4511f019dc17ec44bfe46b9e672ca64	toolchain-funcs	5195689ff6a73b0e789acfa09d4fbcb9	unpacker	a89c769f7dcf68bd2a6d23da9ede2ad2	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575
+_md5_=a306b09b5ce64c6db78f63e2481c194d

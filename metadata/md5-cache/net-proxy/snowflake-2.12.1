@@ -1,0 +1,14 @@
+BDEPEND=>=dev-lang/go-1.21 >=dev-lang/go-1.20:= app-arch/unzip virtual/pkgconfig
+DEFINED_PHASES=compile configure install test unpack
+DESCRIPTION=Pluggable Transport using WebRTC, inspired by Flashproxy
+EAPI=8
+HOMEPAGE=https://snowflake.torproject.org https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/snowflake
+INHERIT=go-module systemd
+IUSE=test
+KEYWORDS=~amd64
+LICENSE=BSD Apache-2.0 BSD-2 CC0-1.0 MIT
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/snowflake/-/jobs/1413878/artifacts/file/snowflake-v2.12.1.tar.gz
+_eclasses_=toolchain-funcs	5195689ff6a73b0e789acfa09d4fbcb9	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	d4511f019dc17ec44bfe46b9e672ca64	sysroot	ba2e3d2f7daad91fdef9350dc789d87f	go-env	17d0469a6d8dc4805a1305ded9af22db	go-module	1333f0eba2be11d0afeadce17a07af4d	systemd	a964c0cbe818b5729da1dbfcee5be861
+_md5_=4341a26a2791de8da3a8d09848d4b693

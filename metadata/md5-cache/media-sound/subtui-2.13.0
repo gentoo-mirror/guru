@@ -1,0 +1,14 @@
+BDEPEND=>=dev-lang/go-1.20:= app-arch/unzip
+DEFINED_PHASES=compile install unpack
+DEPEND=media-video/mpv
+DESCRIPTION=A lightweight Subsonic TUI music player built in Go with scrobbling support.
+EAPI=8
+HOMEPAGE=https://github.com/MattiaPun/SubTUI
+INHERIT=go-module
+KEYWORDS=~amd64 ~arm64
+LICENSE=MIT BSD
+RDEPEND=media-video/mpv
+SLOT=0
+SRC_URI=https://github.com/MattiaPun/SubTUI/archive/refs/tags/v2.13.0.tar.gz -> subtui-2.13.0.tar.gz https://codeberg.org/ceres-sees-all/guru-distfiles/releases/download/subtui-2.13.0-deps.tar.xz/subtui-2.13.0-deps.tar.xz
+_eclasses_=toolchain-funcs	5195689ff6a73b0e789acfa09d4fbcb9	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	d4511f019dc17ec44bfe46b9e672ca64	sysroot	ba2e3d2f7daad91fdef9350dc789d87f	go-env	17d0469a6d8dc4805a1305ded9af22db	go-module	1333f0eba2be11d0afeadce17a07af4d
+_md5_=c46fc21552d6ec76aa32d83d65fbb6f0
