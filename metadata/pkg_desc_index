@@ -248,7 +248,7 @@ app-misc/blahaj 2.2.0-r1: Gay sharks at your local terminal
 app-misc/brightnessctl 0.5.1: A program to read and control device brightness
 app-misc/bt 1.2.2: Interactive tree-like terminal file manager
 app-misc/catt 0.12.13 0.13.0 0.13.1: Send videos from many, many online sources to your Chromecast
-app-misc/cepl 31.0.0 9999: A readline C and C++ REPL with history, tab-completion, and undo.
+app-misc/cepl 32.0.0 9999: A readline C and C++ REPL with history, tab-completion, and undo.
 app-misc/chayang 0.1.0: Gradually dim the screen.
 app-misc/cheat 4.2.3 4.3.3-r1: cheat allows you to create and view interactive cheatsheets on the command-line
 app-misc/clifm 1.11 1.13 1.16 1.18 9999: The command line file manager
@@ -354,7 +354,7 @@ app-office/khronos 4.0.0 4.0.1: A GTK4 time tracker for tasks
 app-office/lotus123r3 1.0.0_rc4: A native port of Lotus 1-2-3 to Linux.
 app-office/nixnote-bin 2.1.10: Free and open source note taking app, compatible with Evernote sync server
 app-office/notesnook-bin 2.6.12: End-to-end encrypted note taking alternative to Evernote
-app-office/obsidian 1.9.14 1.10.3: A second brain, for you, forever.
+app-office/obsidian 1.9.14 1.10.3 1.12.7: A second brain, for you, forever.
 app-office/openoffice-bin 4.1.16: Apache OpenOffice productivity suite
 app-office/pyspread 2.4: Pyspread is a non-traditional spreadsheet written in Python
 app-office/standartnotes-bin 3.183.22: End-to-end encrypted note-taking app, alternative to Evernote
@@ -378,7 +378,7 @@ app-shells/mommy 1.8.0: mommy's here to support you, in any shell, on any system
 app-shells/mrsh 9999: minimal strictly POSIX compliant shell
 app-shells/ohmyzsh 9999: A framework for managing your zsh configuration.
 app-shells/pokemon-colorscripts 9999: Pokemon unicode sprites for your terminal!
-app-shells/powerline-go 1.25: A powerline like prompt for Bash, Zsh, Fish written in Go lang.
+app-shells/powerline-go 1.25 1.26: A powerline like prompt for Bash, Zsh, Fish written in Go lang.
 app-shells/sheldon 0.8.5: Fast, configurable, shell plugin manager.
 app-shells/shox 2024.01.25: A customisable, universally compatible terminal status bar
 app-shells/silver 2.0.0-r1: A cross-shell customizable powerline-like prompt with icons
@@ -526,16 +526,16 @@ dev-embedded/arduino-cli 1.0.4 1.1.1 1.3.1: Next-generation arduino command line
 dev-embedded/arduino-ide 2.3.8: Arduino IDE 2.x - A modern open-source IDE for Arduino development
 dev-embedded/bcm2-utils 0.9.8: Utilities for Broadcom-based cable modems
 dev-embedded/esp-coredump 1.13.1 1.14.0 1.15.0: Utility that helps users to retrieve and analyse core dumps
-dev-embedded/esp-idf 5.3.4 5.4.3 5.5.2-r1 5.5.3: Espressif IoT Development Framework
+dev-embedded/esp-idf 5.3.5 5.4.3-r1 5.5.3-r1 6.0: Espressif IoT Development Framework
 dev-embedded/esp-idf-diag 0.2.0: A tool to gather diagnostic information about the ESP-IDF environment.
-dev-embedded/esp-idf-kconfig 2.5.1-r1 2.5.2: Kconfig tooling for esp-idf
+dev-embedded/esp-idf-kconfig 2.5.1-r1 2.5.2 3.6.0: Kconfig tooling for esp-idf
 dev-embedded/esp-idf-monitor 1.8.0 1.9.0: Python object-oriented database
 dev-embedded/esp-idf-nvs-partition-gen 0.1.9: Parses ESP-IDF panic handler output acts as a GDB server over stdin/stdout
 dev-embedded/esp-idf-panic-decoder 1.4.1: Parses ESP-IDF panic handler output acts as a GDB server over stdin/stdout
-dev-embedded/esp-idf-size 1.7.1: Firmware size analysis for ESP-IDF
+dev-embedded/esp-idf-size 1.7.1 2.1.0: Firmware size analysis for ESP-IDF
 dev-embedded/freertos-gdb 1.0.4: Python module for operating with freeRTOS-kernel objects in GDB
 dev-embedded/fwup 1.13.2 1.14.0 1.15.0: Configurable embedded Linux firmware update creator and runner
-dev-embedded/idf-component-manager 2.4.2 2.4.6: Tool for installing ESP-IDF components
+dev-embedded/idf-component-manager 2.4.2 2.4.6 3.0.0: Tool for installing ESP-IDF components
 dev-embedded/mv88e6xxx-dump 0.2.0_pre20210327: Dump information about Marvell mv88e6xxx Ethernet switches
 dev-embedded/nxp-gui-guider 1.10.1: GUI Guider is a user-friendly GUI development tool for LVGL
 dev-embedded/pico-sdk 2.1.1 2.2.0: Libraries and tools for C/C++ development on RP2040 and RP2350 microcontrollers.
@@ -738,6 +738,7 @@ dev-python/bashlex 0.18: Python parser for bash
 dev-python/bidict 0.23.1: The bidirectional mapping library for Python
 dev-python/billiard 4.0.2: Python multiprocessing fork
 dev-python/bleak 1.1.0 1.1.1: Bluetooth Low Energy platform Agnostic Klient (BLEAK) for Python
+dev-python/blobfile 3.2.0: Read GCS, ABS and local paths with the same interface, tensorflow.io.gfile clone
 dev-python/blurhash 1.1.4 1.1.5: Pure-Python implementation of the blurhash algorithm
 dev-python/cassowary 0.6: Run Windows Applications on Linux as if they are native (Using a VM and FreeRDP)
 dev-python/celery 5.4.0: Asynchronous task queue/job queue based on distributed message passing
@@ -756,6 +757,7 @@ dev-python/convertdate 2.4.1: Utils for converting between date formats and calc
 dev-python/cronsim 2.7: Cron expression parser and evaluator
 dev-python/cross-web 0.4.1: A library for working with web frameworks
 dev-python/cryptg 0.5.0_p0 0.5.2: Cryptographic utilities for Telegram
+dev-python/cyclopts 4.10.1: Intuitive, easy CLIs based on type hints
 dev-python/dacite 1.8.1: This module simplifies creation of data classes (PEP 557) from dictionaries
 dev-python/daff 1.4.2: The daff can produce and apply tabular diffs
 dev-python/daiquiri 3.3.0 3.4.0: Library to configure Python logging easily
@@ -773,6 +775,7 @@ dev-python/django-constance 3.1.0: Django live settings with pluggable backends,
 dev-python/django-picklefield 3.2.0: Pickled object field for Django
 dev-python/django-tailwind 3.8.0: Tailwind CSS Framework for Django projects
 dev-python/django-tinymce 4.1.0: TinyMCE integration for Django
+dev-python/docstring-parser 0.17.0: Parse Python docstrings in reST, Google and Numpydoc format
 dev-python/doxypypy 0.8.8.6_p20210405-r1: A more Pythonic version of doxypy, a Doxygen filter for Python
 dev-python/dropbox 12.0.2: The offical Dropbox SDK for Python
 dev-python/dtreeviz 2.2.2: A python library for decision tree visualization and model interpretation
@@ -782,6 +785,7 @@ dev-python/evernote2 1.0.3 9999: Unofficial Evernote SDK for Python 3
 dev-python/exif 1.6.0: Read and modify image EXIF metadata using Python.
 dev-python/ezdxf 1.4.3: Python library for creating and manipulating DXF drawings
 dev-python/fastapi 0.125.0 0.127.0 0.135.1: FastAPI framework, high performance, easy to learn, ready for production
+dev-python/fastuuid 0.14.0: Python bindings to Rust's UUID library
 dev-python/find-libpython 0.5.1: Finds the libpython associated with the current Python environment
 dev-python/flask-restx 1.3.0 1.3.2: Framework API development with Flask
 dev-python/flask-socketio 5.5.1 5.6.0 5.6.1: Socket.IO integration for Flask applications.
@@ -808,7 +812,7 @@ dev-python/hijridate 2.6.0: Accurate Hijri-Gregorian date converter based on the
 dev-python/http-ece 1.2.1: Encrypted Content Encoding for HTTP
 dev-python/httpx-sse 0.4.3: Consume Server-Sent Event (SSE) messages with HTTPX
 dev-python/i3ipc 2.2.1-r1 2.2.1-r2: An improved Python library to control i3wm and sway.
-dev-python/icecream 2.1.8: Pythonic task execution
+dev-python/icecream 2.1.8 2.1.10: Pythonic task execution
 dev-python/ignore-python 0.3.3: Rust ignore crate Python bindings
 dev-python/injector 0.22.0: Python dependency injection framework, inspired by Guice
 dev-python/inquirer 3.4.1: Common interactive command line user interfaces, based on Inquirer.js
@@ -819,6 +823,7 @@ dev-python/itemadapter 0.11.0: Common interface for scrapy data container classe
 dev-python/itemloaders 1.3.2: Library to populate items using XPath and CSS with a convenient API
 dev-python/iuliia 0.13.0: Transliterate Cyrillic to Latin in every possible way
 dev-python/jinja2-cli 0.8.2: CLI for Jinja2
+dev-python/jiter 0.13.0: Fast iterable JSON parser
 dev-python/jplephem 2.23 2.24: Python version of NASA DE4xx ephemerides for Astronomical Alamanac
 dev-python/jpype 1.6.0: Bridge to allow Python programs full access to Java class libraries
 dev-python/json_exporter 1.0.2: Python-based library for exporting JSON data as metrics for Prometheus.
@@ -936,6 +941,7 @@ dev-python/pytest-steps 1.8.0-r1: Create step-wise / incremental tests in pytest
 dev-python/python-barbicanclient 7.2.0 7.3.0: Client library for Barbican API.
 dev-python/python-designateclient 6.3.0 6.4.0: OpenStack DNS-as-a-Service - Client
 dev-python/python-fire 0.6.0 0.7.0: Library for automatically generating command line interfaces from Python objects
+dev-python/python-frontmatter 1.1.0: Parse and manage posts with YAML (or other) frontmatter
 dev-python/python-http-client 3.3.5-r1: HTTP REST client, simplified for Python
 dev-python/python-lsp-isort 0.2.1: isort plugin for the Python LSP Server
 dev-python/python-lsp-mypy 0.7.0: Mypy plugin for the Python LSP Server
@@ -960,6 +966,7 @@ dev-python/readchar 4.2.1: Python library to read characters and key strokes
 dev-python/readmdict 0.1.1-r1: Read mdx/mdd files
 dev-python/rectangle-packer 2.0.2: Pack a set of rectangles into a bounding box with minimum area
 dev-python/repology-client 0.5.0 0.6.0: Asynchronous wrapper for Repology API
+dev-python/rich-rst 1.3.2: A beautiful reStructuredText renderer for rich
 dev-python/rpmautospec-core 0.1.5: Core functionality used by rpmautospec
 dev-python/rstcheck 6.2.0 6.2.1: Checks syntax of reStructuredText and code blocks nested within it
 dev-python/runs 1.3.0: Run a block of text as a subprocess
@@ -1005,6 +1012,7 @@ dev-python/textual 8.1.1-r1: Modern Text User Interface framework
 dev-python/textual-dev 1.7.0 1.8.0: Modern Text User Interface framework
 dev-python/textual-serve 1.1.2 1.1.3: Serve Textual apps locally
 dev-python/thonny 4.1.7: Thonny is a Python IDE meant for learning programming
+dev-python/tiktoken 0.12.0: A fast BPE tokeniser for use with OpenAI's models
 dev-python/timeslot 0.1.2: Time slots/intervals with an arbitrary start and stop
 dev-python/tlv8 0.10.0: Type-Length-Value8 (TLV8) for python
 dev-python/toml 0.10.2: Python library for TOML
@@ -1014,6 +1022,7 @@ dev-python/tweepy 4.14.0: An easy-to-use Python library for accessing the Twitte
 dev-python/types-protobuf 6.32.1.20251210: Typing stubs for protobuf
 dev-python/types-requests 2.32.0.20240712 2.32.4.20250913: Typing stubs for requests
 dev-python/typing-inspect 0.9.0: Runtime inspection utilities for Python typing module
+dev-python/uncalled-for 0.2.0: Async dependency injection for Python functions
 dev-python/undervolt 0.4.0 9999: Undervolt Intel CPUs under Linux
 dev-python/upstream-ontologist 0.2.7 0.2.9: Tracking of upstream project metadata
 dev-python/urlmatch 1.0.1-r2: A Python library for easily pattern matching wildcard URLs
@@ -1072,14 +1081,14 @@ dev-util/forgejo-runner 12.5.3 12.6.1 12.7.2 9999: A daemon that connects to a F
 dev-util/fortls 2.13.0 3.0.0 3.1.1 3.1.2 3.2.2: Fortran Language Server (fortls)
 dev-util/fortran-test-drive 0.4.0 0.5.0: The simple testing framework (for Fortran)
 dev-util/gammaray 3.3.0 3.3.1: High-level runtime introspection tool for Qt applications
-dev-util/gemini-cli 0.34.0: Gemini CLI - a command-line AI workflow tool by Google
+dev-util/gemini-cli 0.35.0: Gemini CLI - a command-line AI workflow tool by Google
 dev-util/genTree 0.1.0 9999: Gentoo rootfs tree generator
 dev-util/gersemi 0.26.1: A formatter to make your CMake code the real treasure
 dev-util/git-bug 0.10.1 9999: distributed, offline-first bug tracker
 dev-util/git-pages-cli 1.5.2 1.6.0: Command-line application for publishing sites to git-pages
 dev-util/gitlab-ci-local-bin 4.43.0 4.47.0 4.56.0: Run gitlab pipelines locally as shell executor or docker executor
 dev-util/go-task 3.38.0-r1 3.41.0-r1: A task runner / simpler Make alternative written in Go
-dev-util/google-antigravity 1.18.4 1.19.6 1.20.6: Google's AI-first IDE and agentic development platform
+dev-util/google-antigravity 1.20.6 1.21.6: Google's AI-first IDE and agentic development platform
 dev-util/gshards 0.2: Small helper tools to aid installing Crystal packages in Gentoo
 dev-util/hare-update 0.25.2.0 0.26.0.0 9999: assist in upgrading a codebase to a newer Hare release
 dev-util/haredo 1.0.2 9999: a simple and unix-idiomatic build automator
@@ -1098,7 +1107,8 @@ dev-util/lottieconverter 0.2-r2 0.2-r3: Simple lottie (telegram animated sticker
 dev-util/lua-language-server 3.16.4 3.17.0 3.17.1: Lua language server
 dev-util/measureme 12.0.3: Support crate for rustc's self-profiling feature
 dev-util/mh 1.4.1: Generate help for Makefile
-dev-util/minify-bin 2.24.10: Minifier package that provides HTML5, CSS3, JS, JSON, SVG, and XML minifiers.
+dev-util/minify 2.24.11: Go minifier for web formats
+dev-util/minify-bin 2.24.11: Minifier package that provides HTML5, CSS3, JS, JSON, SVG, and XML minifiers.
 dev-util/mise 2025.10.14 2025.12.12 2026.3.3: The front-end to your dev env
 dev-util/mock 6.5 6.6: Simple chroot build environment manager for building RPMs
 dev-util/mock-core-configs 44.1: Mock core config files basic chroots
@@ -1554,7 +1564,7 @@ media-sound/qobuz-player 0.7.1 0.7.2 0.7.4: Tui, web and rfid player for Qobuz
 media-sound/rmpc 0.9.0 0.10.0 9999: A beautiful and configurable TUI client for MPD
 media-sound/rsgain 3.5.1-r1 3.5.3-r1: Really Simple replay Gain calculator for tagging audio files
 media-sound/shortwave 5.0.0: An internet radio player
-media-sound/songrec 0.6.5: An open-source Shazam client for Linux, written in Rust.
+media-sound/songrec 0.6.7: An open-source Shazam client for Linux, written in Rust.
 media-sound/spct 1.2.2 1.2.4: CLI program for playing back and rendering SPC files.
 media-sound/spot 0.4.0-r2: GTK4 Spotify (Premium) client
 media-sound/spotify-adblock 1.0.1 1.0.2 1.0.3: Adblocker for Spotify
@@ -1656,7 +1666,7 @@ net-im/endcord-bin 1.3.0 1.4.0 1.4.1: Feature rich Discord TUI client
 net-im/eturnal 1.12.1 1.12.2: STUN/TURN server
 net-im/flare 0.12.0-r1: Chat with your friends on Signal
 net-im/forkgram 6.5.1: Fork of the official Telegram Desktop app with small useful additions
-net-im/forkgram-bin 6.6.1: Fork of official Telegram Desktop app with small useful additions - bin
+net-im/forkgram-bin 6.6.2: Fork of official Telegram Desktop app with small useful additions - bin
 net-im/gajim-plugins 9999: Plugins developed for Gajim XMPP client
 net-im/go-sendxmpp 0.6.1 0.8.3: A tool to send messages or files to an XMPP contact or MUC
 net-im/gomuks 0.3.0 0.3.1: A terminal based Matrix client written in Go
@@ -1717,6 +1727,7 @@ net-misc/brickd 2.4.7 2.4.8: Network Daemon bridging API bindings to Tinkerforge
 net-misc/can-utils 2021.08.0 2023.03 2025.01 9999-r3: SocketCAN userspace utilities and tools
 net-misc/cellbroadcastd 0.0.2 0.0.3: DBus service for cellular broadcast messages
 net-misc/clatd 1.6-r1 2.1.0: A CLAT / SIIT-DC Edge Relay implementation for Linux
+net-misc/cmd-urlencode 1.0.0 9999: percent-encode stdin for making URLs
 net-misc/commons-downloader 9999: A shell script to bulk download files from Wikimedia Commons, by category
 net-misc/commons-wikimedia-find-by-hash 1.0.0: Search in commons.wikimedia.org by hash (sha1) of provided file
 net-misc/curlie 1.8.2: Curlie is a frontend to curl that adds the ease of use of httpie
@@ -2056,7 +2067,7 @@ www-client/badwolf 1.4.0-r2 9999-r1: Minimalist and privacy-oriented WebKitGTK+ 
 www-client/browsh 1.8.2 1.8.3: A fully-modern text-based browser, rendering to TTY and browsers
 www-client/chawan 0.3.3 9999: TUI web browser; supports CSS, images, JavaScript, and multiple web protocols
 www-client/helium-bin 0.10.1.1 0.10.5.1 0.10.6.1: Private, fast, and honest web browser based on Chromium
-www-client/mullvad-browser-bin 15.0.7-r1: The Mullvad Browser is developed to minimize tracking and fingerprinting.
+www-client/mullvad-browser-bin 15.0.8: The Mullvad Browser is developed to minimize tracking and fingerprinting.
 www-client/nyxt 3.11.8 3.12.0 9999: Nyxt - the hacker's power-browser
 www-client/opera-gx-bin 128.0.5807.97: Opera GX Browser (Binary Package)
 www-client/torbrowser-launcher 0.3.9: A program to help you securely download and run Tor Browser

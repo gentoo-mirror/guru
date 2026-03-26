@@ -1,0 +1,13 @@
+BDEPEND=verify-sig? ( sec-keys/signify-keys-lanodan:2026 ) verify-sig? ( app-crypt/signify )
+DEFINED_PHASES=configure install unpack
+DESCRIPTION=percent-encode stdin for making URLs
+EAPI=8
+HOMEPAGE=https://hacktivis.me/git/cmd-urlencode/
+INHERIT=toolchain-funcs verify-sig
+IUSE=static verify-sig
+KEYWORDS=~amd64
+LICENSE=MIT
+SLOT=0
+SRC_URI=https://distfiles.hacktivis.me/releases/cmd-urlencode/cmd-urlencode-1.0.0.tar.gz verify-sig? ( https://distfiles.hacktivis.me/releases/cmd-urlencode/cmd-urlencode-1.0.0.tar.gz.sign )
+_eclasses_=toolchain-funcs	5195689ff6a73b0e789acfa09d4fbcb9	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	verify-sig	ece4c893b6bd62eacbc4d25958e857f8
+_md5_=840496978676ce71c6c502ce04818149

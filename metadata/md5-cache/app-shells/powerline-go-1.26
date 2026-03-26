@@ -1,0 +1,12 @@
+BDEPEND=>=dev-lang/go-1.20:= app-arch/unzip
+DEFINED_PHASES=compile install postinst unpack
+DESCRIPTION=A powerline like prompt for Bash, Zsh, Fish written in Go lang.
+EAPI=8
+HOMEPAGE=https://github.com/justjanne/powerline-go
+INHERIT=go-module
+KEYWORDS=~amd64 ~arm ~arm64
+LICENSE=GPL-3 MIT Apache-2.0 BSD
+SLOT=0
+SRC_URI=https://github.com/justjanne/powerline-go/archive/v1.26.tar.gz -> powerline-go-1.26.tar.gz https://github.com/Tapchicoma/ebuild-deps/raw/refs/heads/main/go-deps/powerline-go-1.26-deps.tar.xz
+_eclasses_=toolchain-funcs	5195689ff6a73b0e789acfa09d4fbcb9	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	d4511f019dc17ec44bfe46b9e672ca64	sysroot	ba2e3d2f7daad91fdef9350dc789d87f	go-env	17d0469a6d8dc4805a1305ded9af22db	go-module	1333f0eba2be11d0afeadce17a07af4d
+_md5_=451298c6ad84f51ee8bc16e32434077c
