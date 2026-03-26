@@ -14,10 +14,10 @@ inherit chromium-2 eapi9-pipestatus optfeature pax-utils unpacker verify-sig xdg
 BASE_SRC_URI="https://us-central1-apt.pkg.dev/projects/antigravity-auto-updater-dev/pool/antigravity-debian"
 
 # See ${BASE_SRC_URI/pool/dists}/main/binary-${ARCH}/Packages
-BUILD_ID_AMD64="1771638098"
-BUILD_ID_ARM64="1771638096"
-DEB_HASH_AMD64="72f97454beb720380cfbdd654ab03301"
-DEB_HASH_ARM64="f096532b9c0bc65a62dc53ed2bb5ff66"
+BUILD_ID_AMD64="1774402696"
+BUILD_ID_ARM64="1774402728"
+DEB_HASH_AMD64="98e03c846452e0ea2610f02177e7654c"
+DEB_HASH_ARM64="d913bda594d63ccff238497d87b35e1f"
 
 DESCRIPTION="Google's AI-first IDE and agentic development platform"
 HOMEPAGE="https://antigravity.google/"

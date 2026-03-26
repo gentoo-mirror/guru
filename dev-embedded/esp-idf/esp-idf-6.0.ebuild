@@ -9,7 +9,7 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{12..13} )
 PYTHON_GDB_USE=( python_targets_python3_{12..13} )
-VER="14.2.0_20251107"
+VER="15.2.0_20251204"
 GDB_VER="16.3_20250913"
 OPENOCD_VER="0.12.0-esp32-20251215"
 
@@ -57,11 +57,11 @@ RDEPEND="
 	dev-embedded/esp-coredump[${PYTHON_USEDEP}]
 	dev-embedded/esptool
 	dev-embedded/esp-idf-diag[${PYTHON_USEDEP}]
-	dev-embedded/esp-idf-kconfig[${PYTHON_USEDEP}]
-	dev-embedded/esp-idf-monitor[${PYTHON_USEDEP}]
+	<dev-embedded/esp-idf-kconfig-4.0.0[${PYTHON_USEDEP}]
+	<dev-embedded/esp-idf-monitor-2.0.0[${PYTHON_USEDEP}]
 	dev-embedded/esp-idf-nvs-partition-gen[${PYTHON_USEDEP}]
 	dev-embedded/esp-idf-panic-decoder[${PYTHON_USEDEP}]
-	dev-embedded/esp-idf-size[${PYTHON_USEDEP}]
+	<dev-embedded/esp-idf-size-3.0.0[${PYTHON_USEDEP}]
 	dev-embedded/freertos-gdb[${PYTHON_USEDEP}]
 	dev-embedded/idf-component-manager[${PYTHON_USEDEP}]
 	virtual/zlib:=
@@ -73,7 +73,7 @@ QA_PREBUILT="opt/* usr/lib* usr/share/esp-idf/*"
 
 PATCHES=(
 	"${FILESDIR}/allow-system-install-${PN}-5.3.patch"
-	"${FILESDIR}/${PN}-espkconfiglib.patch"
+	"${FILESDIR}/${P}-build-fix.patch"
 )
 
 install_tool() {

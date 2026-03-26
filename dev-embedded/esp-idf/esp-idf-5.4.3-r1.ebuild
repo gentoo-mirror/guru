@@ -51,13 +51,13 @@ RDEPEND="
 	dev-python/pyelftools[${PYTHON_USEDEP}]
 	dev-embedded/esp-coredump[${PYTHON_USEDEP}]
 	<dev-embedded/esptool-5.0.0
-	dev-embedded/esp-idf-kconfig[${PYTHON_USEDEP}]
-	dev-embedded/esp-idf-monitor[${PYTHON_USEDEP}]
+	<dev-embedded/esp-idf-kconfig-3.0.0[${PYTHON_USEDEP}]
+	<dev-embedded/esp-idf-monitor-2.0.0[${PYTHON_USEDEP}]
 	dev-embedded/esp-idf-nvs-partition-gen[${PYTHON_USEDEP}]
 	dev-embedded/esp-idf-panic-decoder[${PYTHON_USEDEP}]
-	dev-embedded/esp-idf-size[${PYTHON_USEDEP}]
+	<dev-embedded/esp-idf-size-2.0.0[${PYTHON_USEDEP}]
 	dev-embedded/freertos-gdb[${PYTHON_USEDEP}]
-	dev-embedded/idf-component-manager[${PYTHON_USEDEP}]
+	<dev-embedded/idf-component-manager-3.0.0[${PYTHON_USEDEP}]
 	virtual/zlib:=
 "
 
