@@ -6,6 +6,7 @@ acct-group/blocky 0-r1: A group for net-dns/blocky
 acct-group/conduit 0: Group conduit
 acct-group/fileshelter 0: Group for fileshelter
 acct-group/flaresolverr 0: Group for www-apps/flaresolverr
+acct-group/forgejo-runner 0: Forgejo-Runner group
 acct-group/fort 0-r1: System group: fort
 acct-group/gemini 0: System group: gemini
 acct-group/goatcounter 0: System group: goatcounter
@@ -48,6 +49,7 @@ acct-user/conduit 0: User for conduit
 acct-user/eturnal 0: System user: eturnal
 acct-user/fileshelter 0: User for fileshelter
 acct-user/flaresolverr 0: User for www-apps/flaresolverr
+acct-user/forgejo-runner 0: Forgejo-Runner user account
 acct-user/fort 0-r1: User for FORT RPKI validator
 acct-user/gemini 0: System user: gemini
 acct-user/goatcounter 0: System user: goatcounter
@@ -233,7 +235,7 @@ app-eselect/eselect-ld 1.0.0: Manage the ld symlink
 app-eselect/eselect-swift 1.0 1.0-r1: Manages Swift symlinks
 app-eselect/eselect-vala 1.0.0: Manage the valac symlink
 app-metrics/scaphandre 0.5.0-r1: Electrical power consumption measurement agent
-app-misc/1password-cli 2.33.0: The world’s most-loved password manager CLI
+app-misc/1password-cli 2.33.1: The world’s most-loved password manager CLI
 app-misc/afc 1.1 1.2 9999: Anime File Checker, checks CRC32 contained in filenames
 app-misc/afetch 2.2.0: Simple system info written in C
 app-misc/agg 1.5.0-r1 1.7.0: Command-line tool for generating animated GIF files from asciicast files
@@ -526,7 +528,7 @@ dev-embedded/arduino-cli 1.0.4 1.1.1 1.3.1: Next-generation arduino command line
 dev-embedded/arduino-ide 2.3.8: Arduino IDE 2.x - A modern open-source IDE for Arduino development
 dev-embedded/bcm2-utils 0.9.8: Utilities for Broadcom-based cable modems
 dev-embedded/esp-coredump 1.13.1 1.14.0 1.15.0: Utility that helps users to retrieve and analyse core dumps
-dev-embedded/esp-idf 5.3.5 5.4.3-r1 5.5.3-r1 6.0: Espressif IoT Development Framework
+dev-embedded/esp-idf 5.3.5 5.4.3-r1 5.5.3-r1 6.0 6.0-r1: Espressif IoT Development Framework
 dev-embedded/esp-idf-diag 0.2.0: A tool to gather diagnostic information about the ESP-IDF environment.
 dev-embedded/esp-idf-kconfig 2.5.1-r1 2.5.2 3.6.0: Kconfig tooling for esp-idf
 dev-embedded/esp-idf-monitor 1.8.0 1.9.0: Python object-oriented database
@@ -717,6 +719,7 @@ dev-python/SLPP 1.2.3: Simple lua-python parser
 dev-python/TakeTheTime 0.3.1: Take The Time, a super-neat Python library for timing chunks of code
 dev-python/adb-shell 0.4.4-r1: A Python implementation of ADB with shell and FileSync functionality.
 dev-python/addict 2.4.0: The Python Dict that's better than heroin
+dev-python/agent-client-protocol 0.8.1: Client protocol specification for agent interactions
 dev-python/ahocorasick 2.0.0 2.1.0: Python module implementing Aho-Corasick algorithm
 dev-python/aiolimiter 1.2.1: An efficient implementation of a rate limiter for asyncio
 dev-python/aisuite 0.1.7: Simple, unified interface to multiple Generative AI providers
@@ -810,6 +813,7 @@ dev-python/hid_ups 1.0.1: Python-based library for interpreting UPS HID data.
 dev-python/hid_ups_exporter 1.0.1: Python-based library for exporting HID UPS data as metrics for Prometheus.
 dev-python/hijridate 2.6.0: Accurate Hijri-Gregorian date converter based on the Umm al-Qura calendar
 dev-python/http-ece 1.2.1: Encrypted Content Encoding for HTTP
+dev-python/httpx-aiohttp 0.1.12: Aiohttp transport for HTTPX
 dev-python/httpx-sse 0.4.3: Consume Server-Sent Event (SSE) messages with HTTPX
 dev-python/i3ipc 2.2.1-r1 2.2.1-r2: An improved Python library to control i3wm and sway.
 dev-python/icecream 2.1.8 2.1.10: Pythonic task execution
@@ -869,6 +873,7 @@ dev-python/nkdfu 0.2: Python DFU tool for updating Nitrokeys' firmware
 dev-python/odfdo 3.18.2: Python library for OpenDocument format (ODF)
 dev-python/odsgenerator 1.12.0: Generate an OpenDocument Format .ods file from a .json or .yaml file.
 dev-python/odsparsator 1.13.1: Generate a JSON file from an OpenDocument Format .ods file.
+dev-python/openapi-pydantic 0.5.1: Modern, type-safe OpenAPI schemas in Python using Pydantic 1.8+ and 2.x
 dev-python/opentelemetry-exporter-otlp-proto-common 1.40.0: OpenTelemetry Protobuf encoding
 dev-python/opentelemetry-exporter-otlp-proto-grpc 1.40.0: OpenTelemetry Collector Protobuf over gRPC Exporter
 dev-python/opentelemetry-exporter-otlp-proto-http 1.40.0: OpenTelemetry Collector Protobuf over HTTP Exporter
@@ -938,6 +943,7 @@ dev-python/pytest-mypy-plugins 3.2.0: pytest plugin for testing mypy types, stub
 dev-python/pytest-relaxed 2.0.2: Relaxed test discovery for pytest
 dev-python/pytest-snapshot 0.9.0: A plugin for snapshot testing with pytest
 dev-python/pytest-steps 1.8.0-r1: Create step-wise / incremental tests in pytest
+dev-python/pytest-textual-snapshot 1.1.0: Snapshot testing for Textual apps
 dev-python/python-barbicanclient 7.2.0 7.3.0: Client library for Barbican API.
 dev-python/python-designateclient 6.3.0 6.4.0: OpenStack DNS-as-a-Service - Client
 dev-python/python-fire 0.6.0 0.7.0: Library for automatically generating command line interfaces from Python objects
@@ -1008,9 +1014,10 @@ dev-python/templated-dictionary 1.6: Python dictionary with Jinja2 expansion
 dev-python/tempus-themes 2.3.0.20220206: Accessible themes for Pygments
 dev-python/tempy 1.4.0: A simple, visually pleasing weather report in your terminal
 dev-python/termynal 0.13.1-r1: A lightweight and modern animated terminal window
-dev-python/textual 8.1.1-r1: Modern Text User Interface framework
-dev-python/textual-dev 1.7.0 1.8.0: Modern Text User Interface framework
-dev-python/textual-serve 1.1.2 1.1.3: Serve Textual apps locally
+dev-python/textual 8.1.1-r1 8.2.0: Modern Text User Interface framework
+dev-python/textual-autocomplete 4.0.6: Easily add autocomplete dropdowns to your Textual apps
+dev-python/textual-dev 1.8.0: Modern Text User Interface framework
+dev-python/textual-serve 1.1.3: Serve Textual apps locally
 dev-python/thonny 4.1.7: Thonny is a Python IDE meant for learning programming
 dev-python/tiktoken 0.12.0: A fast BPE tokeniser for use with OpenAI's models
 dev-python/timeslot 0.1.2: Time slots/intervals with an arbitrary start and stop
@@ -1064,7 +1071,7 @@ dev-util/bump-my-version 1.2.6 1.2.7: Version bump your Python project
 dev-util/cargo-post 0.1.7: A cargo wrapper that executes a post build script after a successful build.
 dev-util/cargo-show-asm 0.2.55: A cargo subcommand that displays the generated assembly of Rust source code.
 dev-util/catalyst-lab 1.6.0 1.6.1: An automation tool for building Gentoo release stages and binhost packages.
-dev-util/codex 0.116.0: Codex CLI - OpenAI's AI-powered coding agent
+dev-util/codex 0.117.0: Codex CLI - OpenAI's AI-powered coding agent
 dev-util/coq-lsp 0.1.9: Visual Studio Code Extension and Language Server Protocol for Coq
 dev-util/deblob 0.12 9999: remove binary executables from a directory
 dev-util/distribution-gpg-keys 1.117: Collection of GPG keys used in Linux Distributions
@@ -1077,11 +1084,11 @@ dev-util/find-work-bugzilla 1.0.0-r1: Personal advice utility for Gentoo package
 dev-util/find-work-pkgcheck 1.0.0: Personal advice utility for Gentoo package maintainers: pkgcheck plugin
 dev-util/find-work-repology 1.0.0 1.0.1: Personal advice utility for Gentoo package maintainers: Repology plugin
 dev-util/flatpakify 1.0.5 1.0.6: Tool to create Flatpak bundles from Portage ebuilds
-dev-util/forgejo-runner 12.5.3 12.6.1 12.7.2 9999: A daemon that connects to a Forgejo instance and runs jobs for CI
+dev-util/forgejo-runner 12.7.3 9999: A daemon that connects to a Forgejo instance and runs jobs for CI
 dev-util/fortls 2.13.0 3.0.0 3.1.1 3.1.2 3.2.2: Fortran Language Server (fortls)
 dev-util/fortran-test-drive 0.4.0 0.5.0: The simple testing framework (for Fortran)
 dev-util/gammaray 3.3.0 3.3.1: High-level runtime introspection tool for Qt applications
-dev-util/gemini-cli 0.35.0: Gemini CLI - a command-line AI workflow tool by Google
+dev-util/gemini-cli 0.35.2: Gemini CLI - a command-line AI workflow tool by Google
 dev-util/genTree 0.1.0 9999: Gentoo rootfs tree generator
 dev-util/gersemi 0.26.1: A formatter to make your CMake code the real treasure
 dev-util/git-bug 0.10.1 9999: distributed, offline-first bug tracker
@@ -1244,7 +1251,7 @@ games-util/minigalaxy 1.4.0: A simple GOG client for Linux
 games-util/modrinth-app-bin 0.10.27 0.12.2: A unique, open source launcher that allows you to play your favorite Minecraft mods, and keep them up to date, all in one neat little package.
 games-util/oversteer 0.8.3 9999: Steering Wheel Manager for Linux
 games-util/protonup 0.1.5 9999: Install and Update Proton-GE
-games-util/protonup-rs 0.10.0: TUI Program for Custom Proton Download and installation written in rust
+games-util/protonup-rs 0.10.0-r1 0.11.0: TUI Program for Custom Proton Download and installation written in rust
 games-util/qzdl 20250103 99999999: Qt version of the ZDL ZDoom launcher
 games-util/r2modman-bin 3.1.51: A simple and easy to use mod manager for several games using Thunderstore
 games-util/roll 2.6.1: Program to roll dices specified in a simple and intuitive way
@@ -1295,7 +1302,7 @@ gui-apps/darkman 2.2.0: Framework for dark and light mode transitions
 gui-apps/espanso 2.3.0: Cross-platform Text Expander written in Rust
 gui-apps/eww 0.6.0-r3 9999: Elkowars Wacky Widgets is a standalone widget system made in Rust
 gui-apps/fnott 1.7.1 1.8.0 9999: Keyboard driven and lightweight Wayland notification daemon.
-gui-apps/fuzzel 1.13.1: Application launcher for wlroots based Wayland compositors.
+gui-apps/fuzzel 1.13.1 1.14.1: Application launcher for wlroots based Wayland compositors.
 gui-apps/fyi 1.0.4 9999: A notify-send alternative
 gui-apps/gcolor3 2.4.0: A simple color chooser written in GTK3
 gui-apps/gradience 0.3.0-r2 0.4.1: Change the look of Adwaita with ease
@@ -1479,7 +1486,7 @@ media-gfx/sic 0.22.4: Accessible image processing and conversion from the termin
 media-gfx/silicon 0.5.2-r1 0.5.2-r2 0.5.3: Create beautiful image of your code
 media-gfx/superpaper 2.2.1: Advanced multi monitor wallpaper manager
 media-gfx/svgcleaner 0.9.5: svgcleaner could help you to clean up your SVG files from the unnecessary data.
-media-gfx/swayimg 4.6 4.7: Lightweight image viewer for Wayland display servers
+media-gfx/swayimg 4.7 5.1: Lightweight image viewer for Wayland display servers
 media-gfx/sxot 1.0.0: Minimal X11 screenshot tool
 media-gfx/timg 1.6.2 1.6.3: Terminal image and video viewer
 media-gfx/vimiv-qt 0.9.0-r1: An image viewer with vim-like keybindings
@@ -1572,7 +1579,7 @@ media-sound/spotify-player 0.20.5 0.21.0 0.21.1 9999: spotify_player is a fast, 
 media-sound/spotifyd 0.3.5_p20240513 0.4.1 0.4.2: A Spotify daemon
 media-sound/spotube-bin 3.8.0: An open source, cross-platform Spotify client
 media-sound/streamrip 2.2.0: A fast, all-in-one music downloader for Qobuz, Deezer, Tidal, and SoundCloud
-media-sound/subtui 2.13.0: A lightweight Subsonic TUI music player built in Go with scrobbling support.
+media-sound/subtui 2.13.1: A lightweight Subsonic TUI music player built in Go with scrobbling support.
 media-sound/supersonic 0.20.0 0.20.1 0.21.0: A lightweight and full-featured cross-platform desktop client
 media-sound/tenacity 1.3.4-r4: Easy-to-use, privacy-friendly, FLOSS, cross-platform multi-track audio editor
 media-sound/tidal-hifi-bin 5.16.0-r1 5.17.0 6.1.0 6.2.0 6.3.0: Web version of Tidal running in electron with Hi-Fi support thanks to Widevine.
@@ -2073,7 +2080,7 @@ www-client/opera-gx-bin 128.0.5807.97: Opera GX Browser (Binary Package)
 www-client/torbrowser-launcher 0.3.9: A program to help you securely download and run Tor Browser
 www-client/vimb 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
 www-client/yandex-browser 26.3.1.961_p1: The web browser from Yandex
-www-client/zen-bin 1.18.10b 1.19.3b: Zen Browser - A fast, privacy-focused Firefox fork
+www-client/zen-bin 1.18.10b 1.19.4b: Zen Browser - A fast, privacy-focused Firefox fork
 www-misc/dufs 0.40.0: Dufs is a distinctive utility file server
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits
 www-misc/kiwix-desktop 2.4.0 2.5.1: cross-platform viewer/manager for ZIM archives
