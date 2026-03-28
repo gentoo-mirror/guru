@@ -4,7 +4,7 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=poetry
-PYTHON_COMPAT=( python3_{12..13} )
+PYTHON_COMPAT=( python3_{12..14} )
 
 inherit distutils-r1
 
@@ -14,7 +14,7 @@ SRC_URI="https://github.com/Textualize/textual-dev/archive/refs/tags/v${PV}.tar.
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~arm64"
 
 RDEPEND="
 	>=dev-python/textual-0.86.2[${PYTHON_USEDEP}]
@@ -25,13 +25,10 @@ RDEPEND="
 	=dev-python/typing-extensions-4*[${PYTHON_USEDEP}]
 "
 
-BDEPEND="
-	test? (
-		dev-python/pytest-aiohttp[${PYTHON_USEDEP}]
-		=dev-python/time-machine-2*[${PYTHON_USEDEP}]
-	)
-"
-
 DEPEND="${RDEPEND}"
 
+EPYTEST_PLUGINS=(
+	pytest-{asyncio,aiohttp}
+	time-machine
+)
 distutils_enable_tests pytest

@@ -22,11 +22,16 @@ fi
 
 LICENSE="MIT"
 SLOT="0"
-IUSE="examples"
-RESTRICT="test"
+IUSE="+docker examples podman lxc"
+RESTRICT="mirror test"
+REQUIRED_USE="|| ( docker podman lxc )"
 
 DEPEND="
 	>=dev-lang/go-1.25.8
+"
+
+RDEPEND="
+	acct-user/${PN}[docker=,podman=,lxc=]
 "
 
 src_unpack() {
@@ -36,6 +41,17 @@ src_unpack() {
 	else
 		go-module_src_unpack
 	fi
+}
+
+src_prepare() {
+	default
+
+	sed \
+		-e "/ExecStart=/s#=.*#=${EPREFIX}/usr/bin/forgejo-runner daemon -c %h/runner-config.yml#g" \
+		-e "/ExecReload=/s#=#=${EPREFIX}#g" \
+		-e "/User=/s#=.*#=${PN}#g" \
+		-e '/WorkingDirectory=/s#=.*#=~#g' \
+		-i contrib/forgejo-runner.service || die
 }
 
 src_compile() {
