@@ -42,10 +42,7 @@ src_install() {
 
 pkg_postinst() {
 	optfeature "clipboard history support" app-misc/cliphist
-	optfeature "audio visualizer component" media-sound/cava
 	optfeature "night light functionality" gui-apps/wlsunset
-	optfeature "enable 'Portal' option in screen recorder" sys-apps/xdg-desktop-portal
-	optfeature "calendar events support" gnome-extra/evolution-data-server
 	optfeature "power profile management" sys-power/power-profiles-daemon
 	optfeature "external display brightness control" app-misc/ddcutil
 }
