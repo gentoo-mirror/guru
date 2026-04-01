@@ -1,0 +1,13 @@
+BDEPEND=verify-sig? ( sec-keys/openpgp-keys-emersion ) >=dev-lang/go-1.24.0 >=dev-lang/go-1.20:= app-arch/unzip verify-sig? ( || ( app-alternatives/gpg app-crypt/gnupg[-alternatives(-)] ) >=app-portage/gemato-20 )
+DEFINED_PHASES=compile install unpack
+DESCRIPTION=A third-party, open-source ProtonMail CardDAV, IMAP and SMTP bridge
+EAPI=8
+HOMEPAGE=https://github.com/emersion/hydroxide
+INHERIT=go-module multiprocessing verify-sig
+IUSE=verify-sig
+KEYWORDS=~amd64
+LICENSE=MIT BSD MIT
+SLOT=0
+SRC_URI=https://github.com/emersion/hydroxide/releases/download/v0.2.31/hydroxide-0.2.31.tar.gz verify-sig? ( https://github.com/emersion/hydroxide/releases/download/v0.2.31/hydroxide-0.2.31.tar.gz.sig ) https://github.com/ingenarel/guru-depfiles/releases/download/hydroxide-0.2.31-deps.tar.xz/hydroxide-0.2.31-go-mod-deps.tar.xz -> hydroxide-0.2.31-deps.tar.xz
+_eclasses_=toolchain-funcs	5195689ff6a73b0e789acfa09d4fbcb9	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	sysroot	ba2e3d2f7daad91fdef9350dc789d87f	go-env	f7f56c1e72a626b159373a2c2b89af39	go-module	1333f0eba2be11d0afeadce17a07af4d	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	verify-sig	ece4c893b6bd62eacbc4d25958e857f8
+_md5_=b2723aded3a23ca8f0ae3ab4dc8746c0

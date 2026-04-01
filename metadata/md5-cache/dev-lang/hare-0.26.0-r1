@@ -1,0 +1,14 @@
+BDEPEND=app-text/scdoc
+DEFINED_PHASES=configure install
+DEPEND=~dev-lang/harec-0.26.0 >=sys-devel/qbe-1.2
+DESCRIPTION=The Hare systems programming language
+EAPI=8
+HOMEPAGE=https://harelang.org/
+INHERIT=toolchain-funcs
+KEYWORDS=~amd64 ~arm64 ~riscv
+LICENSE=MPL-2.0 GPL-3
+RDEPEND=~dev-lang/harec-0.26.0 >=sys-devel/qbe-1.2 sys-libs/timezone-data
+SLOT=0/0.26.0
+SRC_URI=https://git.sr.ht/~sircmpwn/hare/archive/0.26.0.tar.gz -> hare-0.26.0.tar.gz
+_eclasses_=toolchain-funcs	5195689ff6a73b0e789acfa09d4fbcb9
+_md5_=b5dae151ddc87eec10c447259300e55b

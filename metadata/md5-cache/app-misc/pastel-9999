@@ -1,12 +1,12 @@
-BDEPEND=|| ( >=dev-lang/rust-bin-1.74.1:* >=dev-lang/rust-1.74.1:* ) >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=|| ( >=dev-lang/rust-bin-1.83.0:* >=dev-lang/rust-1.83.0:* ) >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install setup test unpack
 DESCRIPTION=A command-line tool to generate, analyze, convert and manipulate colors
 EAPI=8
 HOMEPAGE=https://github.com/sharkdp/pastel
 INHERIT=cargo shell-completion git-r3
 IUSE=debug
-LICENSE=Apache-2.0 MIT Apache-2.0 MIT Unicode-DFS-2016
+LICENSE=Apache-2.0 MIT Apache-2.0 MIT Unicode-3.0
 PROPERTIES=live
 SLOT=0
 _eclasses_=toolchain-funcs	5195689ff6a73b0e789acfa09d4fbcb9	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	rust	0d1cc00e0e91a021b50b0491e361ad41	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	ace036f48c4ad5c1938fccedf35ccf45	bash-completion-r1	9e91505e030725688d1e953321a47501	shell-completion	0b655d0d825e157a5e99c463bddaac16	git-r3	7b584b5dc33e3bc66ff5b9271bf41764
-_md5_=592b465db18326576976d960f25e9adc
+_md5_=265f569963d0ed7a350c8ae2f5563eb1

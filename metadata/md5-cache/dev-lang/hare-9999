@@ -4,10 +4,10 @@ DEPEND=>=dev-lang/harec-9999 >=sys-devel/qbe-1.2
 DESCRIPTION=The Hare systems programming language
 EAPI=8
 HOMEPAGE=https://harelang.org/
-INHERIT=git-r3
+INHERIT=toolchain-funcs git-r3
 LICENSE=MPL-2.0 GPL-3
 PROPERTIES=live
-RDEPEND=>=dev-lang/harec-9999 >=sys-devel/qbe-1.2
+RDEPEND=>=dev-lang/harec-9999 >=sys-devel/qbe-1.2 sys-libs/timezone-data
 SLOT=0
-_eclasses_=git-r3	7b584b5dc33e3bc66ff5b9271bf41764
-_md5_=a40f6e94df863c1352eccd78b9670c4d
+_eclasses_=toolchain-funcs	5195689ff6a73b0e789acfa09d4fbcb9	git-r3	7b584b5dc33e3bc66ff5b9271bf41764
+_md5_=4e100b498dcfbdfa525dd9ac49bc566d

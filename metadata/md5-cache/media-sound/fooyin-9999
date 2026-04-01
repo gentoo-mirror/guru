@@ -1,17 +1,17 @@
 BDEPEND=dev-qt/qttools:6[linguist] test? ( dev-cpp/gtest ) app-alternatives/ninja >=dev-build/cmake-3.28.5 >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare test unpack
-DEPEND=dev-libs/icu:= dev-libs/kdsingleapplication dev-libs/qcoro[network] dev-qt/qtbase:6[concurrent,dbus,gui,network,sql,widgets] dev-qt/qtimageformats:6 dev-qt/qtsvg:6 media-libs/taglib:= media-video/ffmpeg:= alsa? ( media-libs/alsa-lib ) archive? ( app-arch/libarchive:= ) openmpt? ( media-libs/libopenmpt ) pipewire? ( media-video/pipewire:= ) replaygain? ( media-libs/libebur128:= ) sdl? ( media-libs/libsdl2 ) sndfile? ( media-libs/libsndfile )
+DEPEND=dev-libs/icu:= dev-libs/kdsingleapplication dev-libs/qcoro[network] dev-qt/qtbase:6[concurrent,dbus,gui,network,sql,widgets] dev-qt/qtimageformats:6 dev-qt/qtsvg:6 media-libs/taglib:= media-video/ffmpeg:= alsa? ( media-libs/alsa-lib ) archive? ( app-arch/libarchive:= ) gme? ( media-libs/game-music-emu ) openmpt? ( media-libs/libopenmpt ) pipewire? ( media-video/pipewire:= ) replaygain? ( media-libs/libebur128:= ) sdl? ( media-libs/libsdl2 ) sndfile? ( media-libs/libsndfile ) soundtouch? ( media-libs/libsoundtouch:= ) soxr? ( media-libs/soxr )
 DESCRIPTION=A customizable music player, Qt clone of foobar2000
 EAPI=8
 HOMEPAGE=https://www.fooyin.org/
 IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
 INHERIT=cmake xdg git-r3
-IUSE=alsa +archive openmpt +pipewire +replaygain sdl sndfile test
+IUSE=alsa +archive gme openmpt +pipewire +replaygain sdl sndfile soundtouch soxr test
 LICENSE=GPL-3
 PROPERTIES=live
-RDEPEND=dev-libs/icu:= dev-libs/kdsingleapplication dev-libs/qcoro[network] dev-qt/qtbase:6[concurrent,dbus,gui,network,sql,widgets] dev-qt/qtimageformats:6 dev-qt/qtsvg:6 media-libs/taglib:= media-video/ffmpeg:= alsa? ( media-libs/alsa-lib ) archive? ( app-arch/libarchive:= ) openmpt? ( media-libs/libopenmpt ) pipewire? ( media-video/pipewire:= ) replaygain? ( media-libs/libebur128:= ) sdl? ( media-libs/libsdl2 ) sndfile? ( media-libs/libsndfile )
+RDEPEND=dev-libs/icu:= dev-libs/kdsingleapplication dev-libs/qcoro[network] dev-qt/qtbase:6[concurrent,dbus,gui,network,sql,widgets] dev-qt/qtimageformats:6 dev-qt/qtsvg:6 media-libs/taglib:= media-video/ffmpeg:= alsa? ( media-libs/alsa-lib ) archive? ( app-arch/libarchive:= ) gme? ( media-libs/game-music-emu ) openmpt? ( media-libs/libopenmpt ) pipewire? ( media-video/pipewire:= ) replaygain? ( media-libs/libebur128:= ) sdl? ( media-libs/libsdl2 ) sndfile? ( media-libs/libsndfile ) soundtouch? ( media-libs/libsoundtouch:= ) soxr? ( media-libs/soxr )
 REQUIRED_USE=|| ( alsa pipewire sdl )
 RESTRICT=!test? ( test )
 SLOT=0
 _eclasses_=toolchain-funcs	5195689ff6a73b0e789acfa09d4fbcb9	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	3395ce6618fc5c7af03335471b896644	xdg	3ef49a87c52c8b77c476351195dfe575	git-r3	7b584b5dc33e3bc66ff5b9271bf41764
-_md5_=cbddd9f1f63c213899d25096917a8362
+_md5_=2b126516a2c445677f26efa4b47971c7
