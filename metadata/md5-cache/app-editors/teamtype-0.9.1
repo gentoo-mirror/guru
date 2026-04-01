@@ -1,0 +1,15 @@
+BDEPEND=|| ( >=dev-lang/rust-bin-1.85.0:* >=dev-lang/rust-1.85.0:* )
+DEFINED_PHASES=compile configure install prepare setup test unpack
+DEPEND=dev-libs/libgit2:=
+DESCRIPTION=Real-time co-editing of local text files.
+EAPI=8
+HOMEPAGE=https://teamtype.github.io/teamtype/
+INHERIT=cargo shell-completion
+IUSE=debug
+KEYWORDS=~amd64
+LICENSE=AGPL-3+ openssl Apache-2.0 BSD CC0-1.0 CDLA-Permissive-2.0 EUPL-1.2 GPL-3 ISC MIT MPL-2.0 Unicode-3.0 Unlicense ZLIB
+RDEPEND=dev-libs/libgit2:=
+SLOT=0
+SRC_URI=https://github.com/teamtype/teamtype/archive/refs/tags/v0.9.1.tar.gz -> teamtype-0.9.1.tar.gz https://raw.githubusercontent.com/PPN-SD/vendor/refs/tags/teamtype-0.9.1/teamtype-0.9.1-crates.tar.xz
+_eclasses_=toolchain-funcs	5195689ff6a73b0e789acfa09d4fbcb9	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	rust	0d1cc00e0e91a021b50b0491e361ad41	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	ace036f48c4ad5c1938fccedf35ccf45	bash-completion-r1	9e91505e030725688d1e953321a47501	shell-completion	0b655d0d825e157a5e99c463bddaac16
+_md5_=34329e30fccdb1bf982b98ccfd477411
