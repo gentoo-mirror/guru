@@ -12,8 +12,10 @@ DESCRIPTION="Bambu Studio is a cutting-edge, feature-rich slicing software"
 HOMEPAGE="https://bambulab.com"
 
 SRC_URI="
-	https://github.com/bambulab/${MY_PN}/releases/download/v${PV}/Bambu_Studio_linux_fedora-v02.05.00.66.AppImage \
-	-> ${P}.AppImage
+	amd64? (
+		https://github.com/bambulab/${MY_PN}/releases/download/v${PV}/Bambu_Studio_linux_fedora-v02.05.00.66.AppImage
+		-> ${P}.AppImage
+	)
 "
 
 LICENSE="AGPL-3"
@@ -42,10 +44,6 @@ BDEPEND="
 "
 
 QA_PREBUILT="*"
-# libOSMesa.so.8 (mesa no longer provides osmesa)
-# libwebkit2gtk-4.0.so.37 / libjavascriptcoregtk-4.0.so.18 (webkit-gtk:4 removed from tree)
-# These are optional runtime deps that the AppImage can function without
-QA_FLAGS_IGNORED="opt/bambustudio-bin/.*"
 RESTRICT="strip test"
 
 src_unpack() {
