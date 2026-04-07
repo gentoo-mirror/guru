@@ -1,0 +1,14 @@
+BDEPEND=dev-vcs/git[perl]
+DEFINED_PHASES=compile install
+DEPEND=dev-vcs/git[perl]
+DESCRIPTION=Gate between Git and Mediawiki
+EAPI=8
+HOMEPAGE=https://github.com/Git-Mediawiki/Git-Mediawiki
+INHERIT=perl-functions
+KEYWORDS=~amd64 ~arm64
+LICENSE=GPL-2
+RDEPEND=dev-vcs/git[perl] dev-perl/MediaWiki-API dev-perl/DateTime-Format-ISO8601
+SLOT=0
+SRC_URI=https://github.com/Git-Mediawiki/Git-Mediawiki/archive/c493d54bb1504d2efc02372e37b2e66c3c6e5530.tar.gz -> git-mediawiki-0_pre20260127.tar.gz
+_eclasses_=perl-functions	1863acf0982afafc67797e3ce7275b4c
+_md5_=d44ae3589da5f1e5e690ec644b61a6ba

@@ -205,6 +205,7 @@ dev-ml/ezjsonm:lwt - Provides an Lwt variant of the serialisation functions in t
 dev-nim/cligen:toml - Enable TOML config file support via dev-nim/parsetoml
 dev-python/mastodon-py:blurhash - Install dependencies required for decoding blurhash strings to images
 dev-python/mastodon-py:grapheme - Install dependencies required for grapheme-aware string handling
+dev-python/mcp:cli - Install dependencies required for the Command Line Interface
 dev-python/ptpython:black - Add support for dev-python/black. Black not always possible on PyPy
 dev-python/ptpython:ipython - Add support for dev-python/ipython for ptipython
 dev-python/pyfiglet:contrib - Install fonts that don't have a clear license
@@ -479,16 +480,9 @@ gui-apps/yambar:sway-xkb - keyboard support for Sway
 gui-apps/yambar:xkb - keyboard support for X11
 gui-apps/yambar:xwindow - XWindow (window tracking for X11) support
 gui-libs/scenefx:examples - Build example applications
-gui-libs/xdg-desktop-portal-hyprland:elogind - Enable support for rootless session via elogind
 gui-wm/cage:X - Enable support for X11 applications (XWayland)
-gui-wm/hyprland-contrib:grimblast - Install grimblast, a hyprland version of grimshot
-gui-wm/hyprland-contrib:hdrop - Install hdrop, a tdrop replacement for Hyprland
-gui-wm/hyprland-contrib:hyprprop - Install hyprprop, a xprop replacement for hyprland
-gui-wm/hyprland-contrib:scratchpad - Install scratchpad script
-gui-wm/hyprland-contrib:shellevents - Install shellevents, invoke hell functions in response to Hyprland socket events
-gui-wm/hyprland-contrib:swap - Install try_swap_workspace, a script to emulate monitor-workspace agnostic behavior of other window managers
 gui-wm/kwm:bar - Enable builtin bar
-gui-wm/mangowc:X - Enable support for X11 applications (XWayland)
+gui-wm/mangowm:X - Enable support for X11 applications (XWayland)
 gui-wm/phoc:dtrace - Enable profiling data capture support using dev-debug/systemtap
 gui-wm/phoc:sysprof - Enable profiling data capture support using dev-util/sysprof-capture
 gui-wm/river:llvm - Use LLVM Zig backend
@@ -669,6 +663,8 @@ media-sound/neocrystal:rpc - Includes Discord Rich Presence support
 media-sound/openaudible-bin:system-ffmpeg - Use the system-wide media-video/ffmpeg instead of bundled
 media-sound/openaudible-bin:system-jre - Use the system-wide virtual/jre instead of bundled
 media-sound/openaudible-bin:webapp - Include the OpenAudible webapp
+media-sound/orca-c:mouse - Enable or disable mouse features in the livecoding environment.
+media-sound/orca-c:portmidi - Enable or disable hardware MIDI output support with PortMidi.
 media-sound/piper:server - Enable server support
 media-sound/qbitmplayer:network - Allow a single instance of itself, thus subsequent calls to media-sound/qbitmplayer will just open the already opened instance of it.
 media-sound/qbitmplayer:video - Make media-sound/qbitmplayer not just a Music Player, but a Media Player by enabling its ability to play video files as well.

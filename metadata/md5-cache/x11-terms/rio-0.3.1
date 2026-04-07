@@ -1,0 +1,17 @@
+BDEPEND=dev-build/cmake virtual/pkgconfig || ( >=dev-lang/rust-bin-1.92.0:* >=dev-lang/rust-1.92.0:* )
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup test unpack
+DEPEND=media-libs/freetype:2 media-libs/fontconfig wayland? ( dev-libs/wayland ) wayland? ( x11-libs/libxkbcommon[wayland] ) X? ( x11-libs/libxkbcommon[X] ) >=sys-libs/ncurses-6.4_p20240330
+DESCRIPTION=A hardware-accelerated GPU terminal emulator powered by WebGPU
+EAPI=8
+HOMEPAGE=https://rioterm.com
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=cargo desktop xdg
+IUSE=+wayland +X debug
+KEYWORDS=~amd64
+LICENSE=MIT Apache-2.0 BSD-2 BSD Boost-1.0 CC0-1.0 ISC MIT MPL-2.0 Unicode-DFS-2016 ZLIB
+RDEPEND=media-libs/freetype:2 media-libs/fontconfig wayland? ( dev-libs/wayland ) wayland? ( x11-libs/libxkbcommon[wayland] ) X? ( x11-libs/libxkbcommon[X] ) >=sys-libs/ncurses-6.4_p20240330
+REQUIRED_USE=|| ( wayland X )
+SLOT=0
+SRC_URI=https://github.com/raphamorim/rio/archive/refs/tags/v0.3.1.tar.gz -> rio-0.3.1.tar.gz https://github.com/gentoo-crate-dist/rio/releases/download/v0.3.1/rio-0.3.1-crates.tar.xz
+_eclasses_=toolchain-funcs	5195689ff6a73b0e789acfa09d4fbcb9	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	rust	0d1cc00e0e91a021b50b0491e361ad41	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	ace036f48c4ad5c1938fccedf35ccf45	desktop	26d57169ca094c04be416993844ec8bc	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575
+_md5_=4aabfa7ff7157d13fb9996a6d7cebb9a

@@ -1,0 +1,14 @@
+BDEPEND=sys-devel/gettext virtual/pkgconfig
+DEFINED_PHASES=configure prepare
+DEPEND=sys-libs/ncurses:=
+DESCRIPTION=Extract URLs from text
+EAPI=9
+HOMEPAGE=https://sr.ht/~nabijaczleweli/urlview-ng/
+INHERIT=toolchain-funcs
+KEYWORDS=~amd64
+LICENSE=0BSD GPL-2+
+RDEPEND=sys-libs/ncurses:=
+SLOT=0
+SRC_URI=https://git.sr.ht/~nabijaczleweli/urlview-ng/archive/1e.tar.gz -> urlview-ng-1e.tar.gz
+_eclasses_=toolchain-funcs	5195689ff6a73b0e789acfa09d4fbcb9
+_md5_=83e82996ec5b60cb46d1a8b8d157dadf

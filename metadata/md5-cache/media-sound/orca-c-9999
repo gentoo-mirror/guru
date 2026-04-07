@@ -1,0 +1,14 @@
+BDEPEND=static? ( sys-libs/ncurses[static-libs] ) !static? ( sys-libs/ncurses ) portmidi? ( media-libs/portmidi ) >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile install unpack
+DEPEND=static? ( sys-libs/ncurses[static-libs] ) !static? ( sys-libs/ncurses ) portmidi? ( media-libs/portmidi )
+DESCRIPTION=Live Programming Environment(C Port)
+EAPI=8
+HOMEPAGE=https://wiki.xxiivv.com/site/orca.html https://github.com/hundredrabbits/Orca-c
+INHERIT=git-r3
+IUSE=doc examples +mouse portmidi static hardened
+LICENSE=MIT
+PROPERTIES=live
+RDEPEND=static? ( sys-libs/ncurses[static-libs] ) !static? ( sys-libs/ncurses ) portmidi? ( media-libs/portmidi )
+SLOT=0
+_eclasses_=git-r3	7b584b5dc33e3bc66ff5b9271bf41764
+_md5_=8af9201bbe77d04c9bc28a9ab187583c
