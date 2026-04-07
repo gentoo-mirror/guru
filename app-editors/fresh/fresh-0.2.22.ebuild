@@ -741,9 +741,11 @@ REQUIRED_USE="embed-plugins? ( plugins )"
 src_prepare() {
 	default
 
-	rm ../../docs/fresh.txt || die
+	cd "${WORKDIR}/${P}" || die
 
-	cp -P docs/fresh.txt ../../docs || die
+	rm docs/fresh.txt || die
+
+	cp "crates/${MY_PN}/docs/fresh.txt" docs || die
 }
 
 src_configure() {
@@ -767,10 +769,12 @@ src_install() {
 	insinto /usr/share/metainfo/
 	doins flatpak/io.github.sinelaw.${PN}.metainfo.xml
 
-	DOCS=(
-		../../README.md
-		../../CHANGELOG.md
-		../../docs/
+	cd "${WORKDIR}/${P}" || die
+
+	local DOCS=(
+		{README,CHANGELOG}.md
+		docs/
 	)
+
 	einstalldocs
 }
