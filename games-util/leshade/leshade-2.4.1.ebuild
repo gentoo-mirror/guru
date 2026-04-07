@@ -44,14 +44,18 @@ src_prepare() {
 		sed -i "s/^build_type: str = .*/build_type: str = \"Nightly\"/" main.py || die
 	fi
 
-	sed -i 's/^Icon=.*/Icon=leshade/' flatpak/io.github.ishidawg.LeShade.desktop
+	sed -i 's/^Icon=.*/Icon=leshade/' flatpak/io.github.ishidawg.LeShade.desktop || die
+}
+
+src_compile() {
+	:
 }
 
 src_install() {
 	meson_src_install
 
-	rm "${ED}/usr/share/${PN}/assets/"*
-	rm -r "${ED}/usr/share/licenses"
+	rm "${ED}/usr/share/${PN}/assets/"* || die
+	rm -r "${ED}/usr/share/licenses" || die
 
 	dosym ../../icons/hicolor/256x256/apps/${PN}.png /usr/share/${PN}/assets/logo.png
 
