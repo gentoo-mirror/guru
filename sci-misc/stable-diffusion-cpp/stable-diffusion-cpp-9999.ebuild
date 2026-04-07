@@ -24,7 +24,7 @@ LICENSE="MIT"
 SLOT="0"
 CPU_FLAGS_X86=( avx avx2 f16c )
 
-IUSE="openblas blis rocm cuda opencl vulkan flexiblas webp wmma"
+IUSE="openblas blis rocm cuda opencl vulkan flexiblas webm webp wmma"
 
 REQUIRED_USE="
 	?? (
@@ -90,6 +90,8 @@ src_configure() {
 		-DSD_OPENCL=$(usex opencl)
 		-DSD_WEBP=$(usex webp)
 		-DSD_USE_SYSTEM_WEBP=$(usex webp)
+		-DSD_WEBM=$(usex webm)
+
 		-DSD_VULKAN=$(usex vulkan)
 
 		# avoid clashing with whisper.cpp
