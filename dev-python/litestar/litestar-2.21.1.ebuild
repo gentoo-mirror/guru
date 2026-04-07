@@ -57,7 +57,7 @@ BDEPEND="
 		dev-python/redis[${PYTHON_USEDEP}]
 		dev-python/starlette[${PYTHON_USEDEP}]
 		dev-python/structlog[${PYTHON_USEDEP}]
-		<dev-python/time-machine-3[${PYTHON_USEDEP}]
+		>=dev-python/time-machine-3[${PYTHON_USEDEP}]
 		dev-python/trio[${PYTHON_USEDEP}]
 		dev-python/uvicorn[${PYTHON_USEDEP}]
 	)
@@ -144,6 +144,8 @@ distutils_enable_tests pytest
 PATCHES=(
 	# valkey not packaged
 	"${FILESDIR}"/litestar-2.19.0-no-valkey.patch
+
+	"${FILESDIR}"/litestar-2.21-timemachine-3.patch
 )
 
 python_test() {
