@@ -1,4 +1,4 @@
-# Copyright 1999-2025 Gentoo Authors
+# Copyright 1999-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -12,7 +12,7 @@ SRC_URI="https://github.com/mhx/dwarfs/releases/download/v${PV}/${P}.tar.xz"
 LICENSE="GPL-3 MIT"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE=" test +tools +fuse +perfmon flac ricepp stacktrace"
+IUSE="test +tools +fuse +perfmon flac ricepp stacktrace"
 S="${WORKDIR}/dwarfs-${PV}"
 
 RDEPEND="
