@@ -409,6 +409,12 @@ pkg_postinst() {
 		einfo "See available models at https://ollama.com/library"
 	fi
 
+	einfo
+	einfo "Ollama binds 127.0.0.1 port 11434 by default."
+	einfo "Change the bind address with the OLLAMA_HOST environment variable."
+	einfo "See https://docs.ollama.com/faq for more info"
+	einfo
+
 	if use cuda ; then
 		einfo "When using cuda the user running ${PN} has to be in the video group or it won't detect devices."
 		einfo "The ebuild ensures this for user ${PN} via acct-user/${PN}[cuda]"
