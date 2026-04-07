@@ -32,6 +32,9 @@ REQUIRED_USE="
 		blis
 		flexiblas
 	)
+	webm? (
+		webp
+	)
 	wmma? (
 		rocm
 	)
