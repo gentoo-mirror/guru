@@ -105,6 +105,10 @@ EPYTEST_IGNORE=(
 	# Avoid the dependency
 	"tests/unit/test_contrib/test_opentelemetry.py"
 	"tests/unit/test_plugins/test_prometheus.py"
+
+	# appears to require installing litestar properly prior
+	"tests/e2e/test_routing/test_path_mounting.py"
+	"tests/e2e/test_routing/test_path_resolution.py"
 )
 EPYTEST_DESELECT=(
 	# Requires docker
