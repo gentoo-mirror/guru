@@ -3,11 +3,15 @@
 
 EAPI=8
 
-inherit desktop optfeature xdg
+inherit desktop optfeature xdg verify-sig
 
 DESCRIPTION="The Mullvad Browser is developed to minimize tracking and fingerprinting."
 HOMEPAGE="https://github.com/mullvad/mullvad-browser/ https://mullvad.net/"
-SRC_URI="https://github.com/mullvad/mullvad-browser/releases/download/${PV}/mullvad-browser-linux-x86_64-${PV}.tar.xz -> ${P}.tar.xz"
+SRC_NAME="https://github.com/mullvad/mullvad-browser/releases/download/${PV}/mullvad-browser-linux-x86_64-${PV}.tar.xz"
+SRC_URI="
+	${SRC_NAME} -> ${P}.tar.xz
+	verify-sig? ( ${SRC_NAME}.asc -> ${P}.tar.xz.asc )
+"
 
 S="${WORKDIR}"
 LICENSE="MPL-2.0"
@@ -44,6 +48,11 @@ RDEPEND="
 	x11-libs/libXt
 	x11-libs/libXtst
 "
+BDEPEND="
+	verify-sig? ( sec-keys/openpgp-keys-mullvad-browser )
+"
+
+VERIFY_SIG_OPENPGP_KEY_PATH=${BROOT}/usr/share/openpgp-keys/mullvad-browser.asc
 
 QA_PREBUILT="*"
 
