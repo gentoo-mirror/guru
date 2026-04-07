@@ -23,6 +23,9 @@ LICENSE="GPL-3+"
 LICENSE+=" Apache-2.0 MIT MPL-2.0 Unicode-3.0 ZLIB"
 SLOT="0"
 
+DEPEND="dev-libs/glib:2"
+RDEPEND="${DEPEND}"
+
 QA_FLAGS_IGNORED="usr/bin/blahaj"
 
 src_unpack() {
