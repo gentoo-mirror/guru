@@ -55,9 +55,10 @@ BDEPEND="
 		dev-python/psycopg:0[${PYTHON_USEDEP}]
 		dev-python/pydantic-extra-types[${PYTHON_USEDEP}]
 		dev-python/redis[${PYTHON_USEDEP}]
+		dev-python/sqlalchemy[${PYTHON_USEDEP}]
 		dev-python/starlette[${PYTHON_USEDEP}]
 		dev-python/structlog[${PYTHON_USEDEP}]
-		<dev-python/time-machine-3[${PYTHON_USEDEP}]
+		>=dev-python/time-machine-3[${PYTHON_USEDEP}]
 		dev-python/trio[${PYTHON_USEDEP}]
 		dev-python/uvicorn[${PYTHON_USEDEP}]
 	)
@@ -104,6 +105,10 @@ EPYTEST_IGNORE=(
 	# Avoid the dependency
 	"tests/unit/test_contrib/test_opentelemetry.py"
 	"tests/unit/test_plugins/test_prometheus.py"
+
+	# appears to require installing litestar properly prior
+	"tests/e2e/test_routing/test_path_mounting.py"
+	"tests/e2e/test_routing/test_path_resolution.py"
 )
 EPYTEST_DESELECT=(
 	# Requires docker
@@ -144,6 +149,8 @@ distutils_enable_tests pytest
 PATCHES=(
 	# valkey not packaged
 	"${FILESDIR}"/litestar-2.19.0-no-valkey.patch
+
+	"${FILESDIR}"/litestar-2.21-timemachine-3.patch
 )
 
 python_test() {
