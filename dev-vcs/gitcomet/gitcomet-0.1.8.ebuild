@@ -45,13 +45,6 @@ KEYWORDS="~amd64"
 DEPEND="dev-libs/libgit2:="
 RDEPEND=">=dev-vcs/git-2.50.1"
 
-DOCS=(
-	../../README.md
-	../../CONTRIBUTING.md
-	../../NOTICE
-	../../docs
-)
-
 src_prepare() {
 	default
 
@@ -60,7 +53,7 @@ src_prepare() {
 	local VENDOR="${ECARGO_VENDOR}/libmimalloc-sys"
 
 	# overwrite the broken c_src in the workspace
-	rm -rf "${WORKSPACE}/libmimalloc-sys/c_src/mimalloc/v3"
+	rm -rf "${WORKSPACE}/libmimalloc-sys/c_src/mimalloc/v3" || die
 	cp -r "${VENDOR}/c_src/mimalloc/v3" "${WORKSPACE}/libmimalloc-sys/c_src/mimalloc/v3" || die
 }
 
@@ -83,14 +76,23 @@ src_install() {
 	# prevents auto install of desktop & icons locally
 	make_wrapper ${PN} "env GITCOMET_NO_DESKTOP_INSTALL=1 ${EPREFIX}/usr/libexec/${PN}/${PN}"
 
+	cd "${WORKDIR}/${MY_P}" || die
+
+	local DOCS=(
+		README.md
+		CONTRIBUTING.md
+		NOTICE
+		docs
+	)
+
 	einstalldocs
 
-	domenu ../../assets/linux/${PN}.desktop
+	domenu assets/linux/${PN}.desktop
 
 	local x
 	for x in 32 48 128 256 512; do
-		doicon -s ${x} ../../assets/linux/hicolor/${x}*/apps/*
+		doicon -s ${x} assets/linux/hicolor/${x}*/apps/*
 	done
 
-	newicon -s scalable ../../assets/${PN}_logo.svg ${PN}.svg
+	newicon -s scalable assets/${PN}_logo.svg ${PN}.svg
 }
