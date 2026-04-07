@@ -18,6 +18,19 @@
 
 # New entries go on top.
 
+# David Roman <stkw0@disroot.org> (2026-04-07)
+# Requires <dev-python/priority-2.0.0 which was removed in ::gentoo
+# Maintainer has been inactive since 2024
+# Removal on 2026-05-07
+dev-python/scrapy
+
+# David Roman <stkw0@disroot.org> (2026-04-07)
+# Requires <hidapi-0.15 which was removed in ::gentoo
+# Removal on 2026-07-07
+dev-python/nitrokey
+# revedep of nitrokey
+app-crypt/nitrokey-app2
+
 # Matt Jolly <kangie@gentoo.org> (2026-03-31)
 # Replaced by sys-fs/bcachefs-tools[modules] in ::gentoo.
 sys-fs/bcachefs-kmod
@@ -45,15 +58,6 @@ dev-python/mkdocs-exclude
 dev-python/mkdocs-git-committers-plugin
 dev-python/mkdocs-rss-plugin
 
-# David Roman <stkw0@disroot.org> (2026-03-02)
-# Unmaintaned. Does not support python3_12
-# Removal on 2026-04-02
-app-doc/geeknote
-app-misc/vocabsieve
-dev-python/nkdfu
-net-libs/dpdk
-sys-kernel/dpdk-kmod
-
 # Lucio Sauer <watermanpaint@posteo.net> (2026-02-10)
 # The hyprland suite is moving to the unofficial 'hyproverlay' repository at
 #  https://codeberg.org/hyproverlay/hyproverlay.git
@@ -73,11 +77,6 @@ sys-kernel/dpdk-kmod
 <=gui-libs/xdg-desktop-portal-hyprland-1.3.11
 <=gui-wm/hyprland-contrib-0.1-r1
 <=sys-auth/hyprpolkitagent-0.1.2
-
-# Lucio Sauer <watermanpaint@posteo.net> (2026-02-09)
-# Depends on masked KF5 packages, no porting to KF6 in sight.
-# Removal on 2026-03-09
-kde-apps/kwalletcli
 
 # dsaf <ghostyn678+git@gmail.com> (2026-02-02)
 # Requires systemd. Cannot be masked per profile (see top comment)
