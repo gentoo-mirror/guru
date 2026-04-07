@@ -49,10 +49,10 @@ RDEPEND="
 	x11-libs/libXtst
 "
 BDEPEND="
-	verify-sig? ( sec-keys/openpgp-keys-mullvad-browser )
+	verify-sig? ( sec-keys/openpgp-keys-mullvad-browser-bin )
 "
 
-VERIFY_SIG_OPENPGP_KEY_PATH=${BROOT}/usr/share/openpgp-keys/mullvad-browser.asc
+VERIFY_SIG_OPENPGP_KEY_PATH=${BROOT}/usr/share/openpgp-keys/mullvad-browser-bin.asc
 
 QA_PREBUILT="*"
 
