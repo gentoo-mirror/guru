@@ -55,6 +55,7 @@ BDEPEND="
 		dev-python/psycopg:0[${PYTHON_USEDEP}]
 		dev-python/pydantic-extra-types[${PYTHON_USEDEP}]
 		dev-python/redis[${PYTHON_USEDEP}]
+		dev-python/sqlalchemy[${PYTHON_USEDEP}]
 		dev-python/starlette[${PYTHON_USEDEP}]
 		dev-python/structlog[${PYTHON_USEDEP}]
 		>=dev-python/time-machine-3[${PYTHON_USEDEP}]
