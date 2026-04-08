@@ -37,7 +37,6 @@ DEPEND="
 	)
 "
 RDEPEND="${DEPEND}"
-BDEPEND="${DEPEND}"
 
 DOCS=(
 	"README.md",
@@ -52,11 +51,10 @@ src_compile() {
 		$(usex mouse '--mouse' '--no-mouse')
 	)
 
-	#sed --in-place --expression='s/ -g0//g' ./tool
-	#sed --in-place --expression='s/ -DNDEBUG//g' ./tool
-	sed --in-place --expression='s/-flto -s/-flto/g' ./tool
+	# Prevent "tool" from creating a pre-stripped binary:
+	sed --in-place --expression='s/-flto -s/-flto/g' ./tool || die
 
-	./tool build ${compile_options[@]} orca
+	./tool build ${compile_options[@]} orca || die
 }
 
 src_install() {

@@ -13,7 +13,7 @@ if [[ ${PV} == 9999 ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/hundredrabbits/Orca-c.git"
 else
-	GIT_COMMIT=9df9786e2ad3c01955cdf4cdd5ae1fffad8fa5cc
+	GIT_COMMIT=
 	MY_PN="Orca-c"
 	SRC_URI="https://github.com/hundredrabbits/${MY_PN}/archive/${GIT_COMMIT}.tar.gz -> ${P}.tar.gz"
 	S="${WORKDIR}"/"${MY_PN}-${GIT_COMMIT}"
@@ -37,7 +37,6 @@ DEPEND="
 	)
 "
 RDEPEND="${DEPEND}"
-BDEPEND="${DEPEND}"
 
 DOCS=(
 	"README.md",
@@ -52,11 +51,10 @@ src_compile() {
 		$(usex mouse '--mouse' '--no-mouse')
 	)
 
-	#sed --in-place --expression='s/ -g0//g' ./tool
-	#sed --in-place --expression='s/ -DNDEBUG//g' ./tool
-	sed --in-place --expression='s/-flto -s/-flto/g' ./tool
+	# Prevent "tool" from creating a pre-stripped binary:
+	sed --in-place --expression='s/-flto -s/-flto/g' ./tool || die
 
-	./tool build ${compile_options[@]} orca
+	./tool build ${compile_options[@]} orca || die
 }
 
 src_install() {
