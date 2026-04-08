@@ -35,6 +35,8 @@ app-crypt/intel-ipsec-mb:safe-data - sensitive information is cleared on complet
 app-crypt/intel-ipsec-mb:safe-lookup - lookups which depend on sensitive information are implemented with constant time functions
 app-crypt/intel-ipsec-mb:safe-param - input parameters are checked, looking generally for NULL pointers or an incorrect input length
 app-crypt/tomb:tray - add a tomb tray in a QT desktop toolbar
+app-dicts/crow-translate:piper-tts - Enable Piper neural text-to-speech support (requires onnxruntime and bundled espeak-ng)
+app-dicts/crow-translate:wayland - Enable improved Wayland integration via KWayland
 app-editors/fresh:dev-bins - Build extra developer binaries (generate_schema, event_debug)
 app-editors/fresh:embed-plugins - Bundle default plugins into the binary as a fallback
 app-editors/fresh:gui - Native GPU-accelerated window via wgpu
