@@ -7,12 +7,16 @@ inherit desktop
 
 DESCRIPTION="A space flight and rocketry simulation"
 HOMEPAGE="https://ksa.ahwoo.com"
-SRC_URI="https://ksa-linux.ahwoo.com/download?file=setup_ksa_v${PV}.${PR#r}.tar.gz -> ${P}-${PR}.tar.gz"
+SRC_URI="
+	amd64? (
+		https://ksa-linux.ahwoo.com/download?file=setup_ksa_v${PV}.${PR#r}.tar.gz -> ${P}-${PR}.tar.gz
+	)
+"
 S="${WORKDIR}/linux-x64"
 LICENSE="all-rights-reserved"
 
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="-* ~amd64"
 
 RESTRICT="mirror strip"
 
