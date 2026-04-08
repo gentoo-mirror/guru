@@ -17,8 +17,9 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm64 ~riscv"
 
 PATCHES=(
-	"${FILESDIR}/pipenv-${PV}-inject-system-packages.patch"
-	"${FILESDIR}/pipenv-${PV}-append-always-install-to-pip-extra-args.patch"
+	"${FILESDIR}/pipenv-${PV}-0001-Append-always-install-to-pip-extra-args.patch"
+	"${FILESDIR}/pipenv-${PV}-0002-Inject-system-packages.patch"
+
 )
 
 RDEPEND="
