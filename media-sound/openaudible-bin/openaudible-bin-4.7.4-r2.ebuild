@@ -44,6 +44,8 @@ src_install() {
 	doins -r .install4j
 	doexe OpenAudible
 
+	use system-ffmpeg && dosym -r /usr/bin/ffmpeg /opt/${MY_PN}/bin/linux_x86_64/ffmpeg
+
 	make_wrapper ${MY_PN} /opt/openaudible/OpenAudible /opt/${MY_PN}
 	newicon -s 512 share/icons/hicolor/512x512/apps/org.openaudible.OpenAudible.png ${MY_PN}.png
 	make_desktop_entry ${MY_PN}
