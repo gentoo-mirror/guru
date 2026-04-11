@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_12 )
+PYTHON_COMPAT=( python3_{12..13} )
 inherit meson python-single-r1 xdg
 
 if [[ "${PV}" == "9999" ]]
