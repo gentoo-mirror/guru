@@ -21,11 +21,10 @@ if [[ ${PV} == 999999 ]] ; then
 	inherit git-r3
 
 	BDEPEND="net-misc/wget"
-	PROPERTIES="live"
 else
 	VTD_HASH=c79b5d21568a4ffa5b0612a8279b352fc4e1109a
 
-	declare -A submodules
+	declare -Ag submodules
 	submodules["xrt"]=https://github.com/Xilinx/XRT.git@4eb1f4392a012b4e6eca759762389c612537f7c7
 	submodules["xrt/src/runtime_src/aie-rt"]=https://github.com/Xilinx/aie-rt.git@a8b0667133ea2851ce27793a1796c5968226d9af
 	submodules["xrt/src/runtime_src/core/common/aiebu"]=https://github.com/Xilinx/aiebu.git@9065273e0c0a4ac5930fff904ac245cf38dd3087
