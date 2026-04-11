@@ -28,7 +28,7 @@ else
 
 	# To regenerate, run:
 	# ebuild xdna-driver-<version>.ebuild info
-	declare -A FIRMWARES=(
+	declare -Ag FIRMWARES=(
 		[1502_00/npu.sbin.1.5.5.391]=npu.dev.sbin
 		[17f0_00/npu.sbin.0.7.22.185]=npu.dev.sbin
 		[17f0_10/1.7_npu.sbin.1.1.2.64]=npu.dev.sbin
@@ -56,7 +56,7 @@ pkg_info() {
 		# shellcheck disable=SC2016
 		local JQ_EXPR='.firmwares[] | (.url | sub($prefix; "")) as $p | "    [" + $p + "]=" + .fw_name'
 
-		echo 'declare -A FIRMWARES=('
+		echo 'declare -Ag FIRMWARES=('
 		curl -s "$INFO_FILE" | jq -r --arg prefix "$COMMON_PREFIX" "$JQ_EXPR"
 		echo ')'
 	fi

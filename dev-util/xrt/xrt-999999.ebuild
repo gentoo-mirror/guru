@@ -20,7 +20,7 @@ if [[ ${PV} == 999999 ]] ; then
 	)
 	inherit git-r3
 else
-	declare -A submodules
+	declare -Ag submodules
 	submodules["src/runtime_src/aie-rt"]=https://github.com/Xilinx/aie-rt.git@a8b0667133ea2851ce27793a1796c5968226d9af
 	submodules["src/runtime_src/core/common/aiebu"]=https://github.com/Xilinx/aiebu.git@9065273e0c0a4ac5930fff904ac245cf38dd3087
 	submodules["src/runtime_src/core/common/elf"]=https://github.com/serge1/ELFIO.git@f849001fc229c2598f8557e0df22866af194ef98

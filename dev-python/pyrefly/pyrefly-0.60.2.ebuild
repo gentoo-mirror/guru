@@ -19,13 +19,15 @@ CRATES="
 	allocator-api2@0.2.21
 	android_system_properties@0.1.5
 	anstream@0.6.21
+	anstream@1.0.0
 	anstyle-parse@0.2.0
+	anstyle-parse@1.0.0
 	anstyle-query@1.0.0
 	anstyle-wincon@3.0.7
-	anstyle@1.0.13
+	anstyle@1.0.14
 	anyhow@1.0.102
 	append-only-vec@0.1.8
-	arc-swap@1.8.2
+	arc-swap@1.9.1
 	argfile@0.2.1
 	arrayref@0.3.9
 	arrayvec@0.7.6
@@ -43,13 +45,15 @@ CRATES="
 	bumpalo@3.20.2
 	byteorder@1.5.0
 	bytes@1.11.1
+	capnp@0.25.2
 	castaway@0.2.4
 	cc@1.2.57
 	cfg-if@1.0.4
+	chacha20@0.10.0
 	chrono@0.4.44
-	clap@4.5.60
-	clap_builder@4.5.60
-	clap_derive@4.5.55
+	clap@4.6.0
+	clap_builder@4.6.0
+	clap_derive@4.6.0
 	clap_lex@1.0.0
 	codespan-reporting@0.12.0
 	collection_literals@1.0.2
@@ -64,15 +68,16 @@ CRATES="
 	convert_case@0.11.0
 	core-foundation-sys@0.8.7
 	cpufeatures@0.2.17
+	cpufeatures@0.3.0
 	crossbeam-channel@0.5.15
 	crossbeam-deque@0.8.6
 	crossbeam-epoch@0.9.18
 	crossbeam-utils@0.8.21
 	crypto-common@0.1.7
 	ctor@0.1.26
-	darling@0.21.3
-	darling_core@0.21.3
-	darling_macro@0.21.3
+	darling@0.23.0
+	darling_core@0.23.0
+	darling_macro@0.23.0
 	dashmap@5.5.3
 	deranged@0.5.5
 	derivative@2.2.0
@@ -83,6 +88,7 @@ CRATES="
 	dupe_derive@0.9.1
 	dyn-clone@1.0.20
 	either@1.15.0
+	embedded-io@0.7.1
 	encode_unicode@1.0.0
 	enum-iterator-derive@1.5.0
 	enum-iterator@2.3.0
@@ -93,7 +99,6 @@ CRATES="
 	fastrand@2.3.0
 	filetime@0.2.27
 	find-msvc-tools@0.1.9
-	fnv@1.0.7
 	foldhash@0.1.5
 	form_urlencoded@1.2.2
 	fs-err@2.11.0
@@ -126,7 +131,7 @@ CRATES="
 	hashbrown@0.16.1
 	heck@0.5.0
 	hex@0.4.3
-	home@0.5.11
+	home@0.5.12
 	human_bytes@0.4.3
 	iana-time-zone-haiku@0.1.1
 	iana-time-zone@0.1.65
@@ -140,7 +145,7 @@ CRATES="
 	icu_properties_data@1.5.0
 	icu_provider@1.5.0
 	icu_provider_macros@1.5.0
-	id-arena@2.2.1
+	id-arena@2.3.0
 	ident_case@1.0.1
 	idna@1.1.0
 	idna_adapter@1.2.0
@@ -149,8 +154,8 @@ CRATES="
 	indexmap@1.9.2
 	indexmap@2.13.0
 	indicatif@0.18.4
-	inotify-sys@0.1.3
-	inotify@0.11.0
+	inotify-sys@0.1.5
+	inotify@0.11.1
 	instant@0.1.12
 	interpolator@0.5.0
 	is-macro@0.3.6
@@ -159,14 +164,14 @@ CRATES="
 	itertools@0.11.0
 	itertools@0.14.0
 	itoa@0.4.8
-	itoa@1.0.17
-	jobserver@0.1.33
-	js-sys@0.3.91
+	itoa@1.0.18
+	jobserver@0.1.34
+	js-sys@0.3.94
 	kqueue-sys@1.0.4
 	kqueue@1.1.1
 	lazy_static@1.5.0
 	leb128fmt@0.1.0
-	libc@0.2.182
+	libc@0.2.183
 	libmimalloc-sys@0.1.44
 	libredox@0.1.12
 	link-cplusplus@1.0.9
@@ -174,7 +179,7 @@ CRATES="
 	linux-raw-sys@0.4.15
 	litemap@0.7.3
 	lock_api@0.4.14
-	lock_free_hashtable@0.1.1
+	lock_free_hashtable@0.1.2
 	log@0.4.29
 	lsp-server@0.7.9
 	manyhow-macros@0.11.4
@@ -198,7 +203,7 @@ CRATES="
 	num-traits@0.2.19
 	num_threads@0.1.3
 	object@0.37.3
-	once_cell@1.21.3
+	once_cell@1.21.4
 	os_str_bytes@7.1.1
 	parking_lot@0.11.2
 	parking_lot@0.12.5
@@ -228,17 +233,19 @@ CRATES="
 	prost-types@0.11.9
 	prost@0.11.9
 	pulldown-cmark-escape@0.11.0
-	pulldown-cmark@0.13.1
+	pulldown-cmark@0.13.3
 	quote-use-macros@0.8.4
 	quote-use@0.8.4
-	quote@1.0.44
+	quote@1.0.45
 	r-efi@5.2.0
+	rand@0.10.0
 	rand@0.8.5
 	rand@0.9.2
 	rand_chacha@0.3.1
 	rand_chacha@0.9.0
+	rand_core@0.10.0
 	rand_core@0.6.4
-	rand_core@0.9.3
+	rand_core@0.9.5
 	rayon-core@1.13.0
 	rayon@1.11.0
 	redox_syscall@0.2.10
@@ -274,9 +281,9 @@ CRATES="
 	serde_json@1.0.149
 	serde_jsonrc@0.1.0
 	serde_repr@0.1.20
-	serde_spanned@1.0.4
-	serde_with@3.17.0
-	serde_with_macros@3.17.0
+	serde_spanned@1.1.1
+	serde_with@3.18.0
+	serde_with_macros@3.18.0
 	sha2@0.10.9
 	sharded-slab@0.1.4
 	shlex@1.3.0
@@ -298,10 +305,10 @@ CRATES="
 	syn@1.0.109
 	syn@2.0.117
 	synstructure@0.13.2
-	tar@0.4.44
-	tempfile@3.26.0
+	tar@0.4.45
+	tempfile@3.27.0
 	termcolor@1.4.1
-	terminal_size@0.4.3
+	terminal_size@0.4.4
 	thiserror-impl@1.0.69
 	thiserror-impl@2.0.18
 	thiserror@1.0.69
@@ -317,24 +324,24 @@ CRATES="
 	tinyvec_macros@0.1.0
 	tokio-macros@2.6.0
 	tokio-util@0.6.10
-	tokio@1.49.0
+	tokio@1.50.0
 	toml@0.9.12+spec-1.1.0
 	toml_datetime@0.7.5+spec-1.1.0
 	toml_edit@0.23.10+spec-1.0.0
-	toml_parser@1.0.9+spec-1.1.0
-	toml_writer@1.0.6+spec-1.1.0
+	toml_parser@1.1.2+spec-1.1.0
+	toml_writer@1.1.1+spec-1.1.0
 	tracing-attributes@0.1.31
 	tracing-core@0.1.36
 	tracing-log@0.2.0
 	tracing-serde@0.2.0
-	tracing-subscriber@0.3.22
+	tracing-subscriber@0.3.23
 	tracing@0.1.44
 	triomphe@0.1.15
 	typenum@1.19.0
 	unicase@2.9.0
 	unicode-ident@1.0.24
 	unicode-normalization@0.1.25
-	unicode-segmentation@1.12.0
+	unicode-segmentation@1.13.2
 	unicode-width@0.1.14
 	unicode-width@0.2.2
 	unicode-xid@0.2.6
@@ -345,8 +352,8 @@ CRATES="
 	utf16_iter@1.0.5
 	utf8_iter@1.0.4
 	utf8parse@0.2.2
-	uuid-rng-internal@1.21.0
-	uuid@1.21.0
+	uuid-rng-internal@1.22.0
+	uuid@1.22.0
 	valuable@0.1.1
 	vec1@1.12.1
 	version_check@0.9.5
@@ -354,10 +361,10 @@ CRATES="
 	wasi@0.11.0+wasi-snapshot-preview1
 	wasip2@1.0.1+wasi-0.2.4
 	wasip3@0.4.0+wasi-0.3.0-rc-2026-01-06
-	wasm-bindgen-macro-support@0.2.114
-	wasm-bindgen-macro@0.2.114
-	wasm-bindgen-shared@0.2.114
-	wasm-bindgen@0.2.114
+	wasm-bindgen-macro-support@0.2.117
+	wasm-bindgen-macro@0.2.117
+	wasm-bindgen-shared@0.2.117
+	wasm-bindgen@0.2.117
 	wasm-encoder@0.244.0
 	wasm-metadata@0.244.0
 	wasmparser@0.244.0
@@ -405,7 +412,8 @@ CRATES="
 	windows_x86_64_msvc@0.48.5
 	windows_x86_64_msvc@0.52.6
 	windows_x86_64_msvc@0.53.0
-	winnow@0.7.14
+	winnow@0.7.15
+	winnow@1.0.1
 	wit-bindgen-core@0.51.0
 	wit-bindgen-rust-macro@0.51.0
 	wit-bindgen-rust@0.51.0

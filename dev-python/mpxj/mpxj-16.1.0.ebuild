@@ -1,14 +1,14 @@
-# Copyright 2021-2024 Gentoo Authors
+# Copyright 2021-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 DISTUTILS_USE_PEP517=standalone
-PYTHON_COMPAT=( python3_{12..13} )
+PYTHON_COMPAT=( python3_{12..14} )
 
 inherit distutils-r1 pypi
 
-DESCRIPTION="Read/Write project management files (MPP, MSPDI, MPX, PMXML, etc)"
+DESCRIPTION="Read/Write project management files (MPP, MSPDI, MPX, PMXML, XER, etc)"
 HOMEPAGE="
 	https://pypi.org/project/mpxj/
 	https://github.com/joniles/mpxj/

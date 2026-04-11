@@ -21,6 +21,7 @@ IUSE="+wayland"
 RDEPEND="
 	app-accessibility/at-spi2-core:2
 	app-crypt/mit-krb5
+	app-text/htmltidy
 	dev-build/libtool
 	dev-libs/expat
 	dev-libs/glib:2

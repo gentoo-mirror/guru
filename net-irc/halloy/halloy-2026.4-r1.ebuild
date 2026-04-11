@@ -1039,7 +1039,10 @@ DEPEND="
 		x11-libs/libXrandr
 	)
 "
-RDEPEND="${DEPEND}"
+RDEPEND="
+	${DEPEND}
+	x11-libs/libxkbcommon[wayland?,X?]
+"
 
 QA_FLAGS_IGNORED="usr/bin/${PN}"
 
@@ -1055,7 +1058,7 @@ src_unpack() {
 src_configure() {
 	if [[ ${PV} != *9999* ]] ; then
 		# Fix cargo.eclass handling of patched dependencies
-		# https://github.com/squidowl/halloy/blob/2026.3/Cargo.toml#L150-L153
+		# https://github.com/squidowl/halloy/blob/2026.4/Cargo.toml#L150-L153
 		sed -i "s,'https://github.com/squidowl/iced',crates-io,g" \
 			"${ECARGO_HOME}/config.toml" || die
 	fi

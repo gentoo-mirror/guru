@@ -35,6 +35,9 @@ pkg_postinst() {
 	optfeature "spellchecking (requires aspell dictionary such as aspell-en)" \
 		app-text/aspell
 
+	optfeature "install and update extensions from other sources" \
+		dev-vcs/git
+
 	optfeature "YouTube support" net-misc/yt-dlp
 	optfeature "play YouTube videos in native player (non-ASCII support)" media-video/mpv
 
