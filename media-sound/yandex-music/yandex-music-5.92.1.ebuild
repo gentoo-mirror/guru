@@ -18,7 +18,7 @@ S="${WORKDIR}"
 
 LICENSE="Yandex-EULA"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="-* ~amd64"
 
 RESTRICT="bindist mirror strip"
 
