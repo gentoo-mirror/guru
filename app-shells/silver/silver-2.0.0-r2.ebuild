@@ -131,7 +131,7 @@ KEYWORDS="~amd64"
 
 BDEPEND="virtual/pkgconfig"
 RDEPEND="
-	>=dev-libs/libgit2-1.1.0:=[ssh,threads]
+	>=dev-libs/libgit2-1.1.0:=[ssh,threads(+)]
 	dev-libs/openssl:0=
 "
 DEPEND="${RDEPEND}"

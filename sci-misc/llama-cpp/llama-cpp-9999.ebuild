@@ -67,7 +67,10 @@ CDEPEND="
 "
 DEPEND="${CDEPEND}
 	opencl? ( dev-util/opencl-headers )
-	vulkan? ( dev-util/vulkan-headers )
+	vulkan? (
+		dev-util/spirv-headers
+		dev-util/vulkan-headers
+	)
 "
 RDEPEND="${CDEPEND}
 	dev-python/numpy

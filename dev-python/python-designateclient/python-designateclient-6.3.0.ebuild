@@ -32,21 +32,22 @@ RDEPEND="
 	>=dev-python/debtcollector-1.2.0[${PYTHON_USEDEP}]
 "
 
-BDEPEND="
-	test? (
-		>=dev-python/coverage-4.5.0[${PYTHON_USEDEP}]
-		>=dev-python/oslo-config-5.2.0[${PYTHON_USEDEP}]
-		>=dev-python/oslotest-3.2.0[${PYTHON_USEDEP}]
-		>=dev-python/python-subunit-1.0.0[${PYTHON_USEDEP}]
-		>=dev-python/requests-mock-1.2.0[${PYTHON_USEDEP}]
-		>=dev-python/stestr-2.0.0[${PYTHON_USEDEP}]
-		>=dev-python/tempest-25.0.0[${PYTHON_USEDEP}]
-	)
-"
+# Tests disabled as it depends on dev-python/stestr which is masked for removal
+# BDEPEND="
+# 	test? (
+# 		>=dev-python/coverage-4.5.0[${PYTHON_USEDEP}]
+# 		>=dev-python/oslo-config-5.2.0[${PYTHON_USEDEP}]
+# 		>=dev-python/oslotest-3.2.0[${PYTHON_USEDEP}]
+# 		>=dev-python/python-subunit-1.0.0[${PYTHON_USEDEP}]
+# 		>=dev-python/requests-mock-1.2.0[${PYTHON_USEDEP}]
+# 		>=dev-python/stestr-2.0.0[${PYTHON_USEDEP}]
+# 		>=dev-python/tempest-25.0.0[${PYTHON_USEDEP}]
+# 	)
+# "
 
 EPYTEST_IGNORE=(
 	# not packaged
 	designateclient/hacking/checks.py
 )
 
-distutils_enable_tests pytest
+# distutils_enable_tests pytest

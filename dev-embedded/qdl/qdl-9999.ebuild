@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit git-r3 toolchain-funcs
+inherit git-r3 meson
 
 DESCRIPTION="Tool to communicate with Qualcomm System On a Chip bootroms"
 HOMEPAGE="https://github.com/linux-msm/qdl"
@@ -23,23 +23,7 @@ BDEPEND="
 	virtual/pkgconfig
 "
 
-src_compile() {
-	# $(VERSION) needs to be consistent in all make invocations
-	export VERSION="${PV}"
-
-	local PKG_CONFIG="$(tc-getPKG_CONFIG)"
-	emake CC="$(tc-getCC)" \
-		CFLAGS="${CFLAGS} $(${PKG_CONFIG} --cflags libxml-2.0 libusb-1.0 || die)" \
-		LDFLAGS="${LDFLAGS} $(${PKG_CONFIG} --libs libxml-2.0 libusb-1.0 || die)"
-	emake manpages
-}
-
-src_test() {
-	emake tests
-}
-
-src_install() {
-	emake prefix="${EPREFIX}/usr" DESTDIR="${D}" install
-	doman *.1
-	einstalldocs
+src_prepare() {
+	sed -i '/default_options/d' meson.build || die
+	default
 }

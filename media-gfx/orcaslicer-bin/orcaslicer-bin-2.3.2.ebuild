@@ -24,6 +24,7 @@ RESTRICT="mirror strip bindist"
 RDEPEND="
 	dev-libs/glib:2
 	dev-libs/libmspack
+	media-fonts/nanum
 	media-libs/gst-plugins-base:1.0[X]
 	media-libs/gst-plugins-good:1.0
 	media-libs/gstreamer:1.0

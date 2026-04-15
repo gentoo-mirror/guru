@@ -192,7 +192,7 @@ CRATES="
 	memory-stats@1.2.0
 	mimalloc@0.1.48
 	miniz_oxide@0.8.8
-	mio@1.1.1
+	mio@1.2.0
 	nix@0.23.1
 	notify-types@2.0.0
 	notify@8.2.0
@@ -259,7 +259,7 @@ CRATES="
 	regex@1.12.3
 	relative-path@1.9.3
 	rustc-demangle@0.1.27
-	rustc-hash@2.1.1
+	rustc-hash@2.1.2
 	rustix@0.38.44
 	rustix@1.1.4
 	rustversion@1.0.22
@@ -281,7 +281,7 @@ CRATES="
 	serde_json@1.0.149
 	serde_jsonrc@0.1.0
 	serde_repr@0.1.20
-	serde_spanned@1.0.4
+	serde_spanned@1.1.1
 	serde_with@3.18.0
 	serde_with_macros@3.18.0
 	sha2@0.10.9
@@ -308,7 +308,7 @@ CRATES="
 	tar@0.4.45
 	tempfile@3.27.0
 	termcolor@1.4.1
-	terminal_size@0.4.3
+	terminal_size@0.4.4
 	thiserror-impl@1.0.69
 	thiserror-impl@2.0.18
 	thiserror@1.0.69
@@ -328,8 +328,8 @@ CRATES="
 	toml@0.9.12+spec-1.1.0
 	toml_datetime@0.7.5+spec-1.1.0
 	toml_edit@0.23.10+spec-1.0.0
-	toml_parser@1.0.9+spec-1.1.0
-	toml_writer@1.0.6+spec-1.1.0
+	toml_parser@1.1.2+spec-1.1.0
+	toml_writer@1.1.1+spec-1.1.0
 	tracing-attributes@0.1.31
 	tracing-core@0.1.36
 	tracing-log@0.2.0
@@ -341,7 +341,7 @@ CRATES="
 	unicase@2.9.0
 	unicode-ident@1.0.24
 	unicode-normalization@0.1.25
-	unicode-segmentation@1.12.0
+	unicode-segmentation@1.13.2
 	unicode-width@0.1.14
 	unicode-width@0.2.2
 	unicode-xid@0.2.6
@@ -352,8 +352,8 @@ CRATES="
 	utf16_iter@1.0.5
 	utf8_iter@1.0.4
 	utf8parse@0.2.2
-	uuid-rng-internal@1.22.0
-	uuid@1.22.0
+	uuid-rng-internal@1.23.0
+	uuid@1.23.0
 	valuable@0.1.1
 	vec1@1.12.1
 	version_check@0.9.5
@@ -413,6 +413,7 @@ CRATES="
 	windows_x86_64_msvc@0.52.6
 	windows_x86_64_msvc@0.53.0
 	winnow@0.7.15
+	winnow@1.0.1
 	wit-bindgen-core@0.51.0
 	wit-bindgen-rust-macro@0.51.0
 	wit-bindgen-rust@0.51.0
@@ -427,8 +428,8 @@ CRATES="
 	yansi@1.0.1
 	yoke-derive@0.7.4
 	yoke@0.7.4
-	zerocopy-derive@0.8.31
-	zerocopy@0.8.31
+	zerocopy-derive@0.8.48
+	zerocopy@0.8.48
 	zerofrom-derive@0.1.4
 	zerofrom@0.1.4
 	zerovec-derive@0.10.3
