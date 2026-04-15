@@ -1,0 +1,13 @@
+DEFINED_PHASES=install postinst postrm unpack
+DESCRIPTION=SoftMaker Office NX binary package
+EAPI=8
+HOMEPAGE=https://www.softmaker.com
+INHERIT=xdg-utils desktop
+KEYWORDS=~amd64
+LICENSE=SoftMakerOffice
+RDEPEND=net-misc/curl sys-libs/glibc virtual/opengl dev-libs/glib media-libs/gstreamer media-libs/gst-plugins-base x11-libs/libX11 x11-libs/libXext x11-libs/libXmu x11-libs/libXrandr x11-libs/libXrender
+RESTRICT=strip mirror bindist
+SLOT=0
+SRC_URI=https://www.softmaker.net/down/softmaker-office-nx-1234-amd64.tgz
+_eclasses_=xdg-utils	42869b3c8d86a70ef3cf75165a395e09	desktop	26d57169ca094c04be416993844ec8bc
+_md5_=e9bbda92280ea7b35d54dbe9a4f25828

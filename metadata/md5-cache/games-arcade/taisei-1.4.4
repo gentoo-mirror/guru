@@ -1,4 +1,4 @@
-BDEPEND=dev-build/meson || ( ( dev-lang/python:3.13 dev-python/zstandard[python_targets_python3_13(-)] ) ( dev-lang/python:3.12 dev-python/zstandard[python_targets_python3_12(-)] ) ) || ( dev-lang/python:3.13 dev-lang/python:3.12 ) doc? ( dev-python/docutils ) >=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array
+BDEPEND=dev-build/meson || ( ( dev-lang/python:3.14 dev-python/zstandard[python_targets_python3_14(-)] ) ( dev-lang/python:3.13 dev-python/zstandard[python_targets_python3_13(-)] ) ( dev-lang/python:3.12 dev-python/zstandard[python_targets_python3_12(-)] ) ) || ( dev-lang/python:3.14 dev-lang/python:3.13 dev-lang/python:3.12 ) doc? ( dev-python/docutils ) >=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup test
 DEPEND=dev-util/glslang media-libs/freetype:2 media-libs/opusfile >=media-libs/libpng-1.5 media-libs/libsdl3[opengl] media-libs/libwebp media-libs/opusfile app-arch/zstd virtual/zlib:= dev-libs/openssl:= mimalloc? ( dev-libs/mimalloc:= ) zip? ( dev-libs/libzip[zstd] ) >=dev-libs/cglm-0.7.8 !!~dev-libs/cglm-0.9.3
 DESCRIPTION=Clone of the Touhou series, written in C using SDL/OpenGL/OpenAL.
@@ -13,4 +13,4 @@ RDEPEND=dev-util/glslang media-libs/freetype:2 media-libs/opusfile >=media-libs/
 SLOT=0
 SRC_URI=https://github.com/taisei-project/taisei/releases/download/v1.4.4/taisei-1.4.4.tar.xz
 _eclasses_=toolchain-funcs	5195689ff6a73b0e789acfa09d4fbcb9	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	python-utils-r1	9c4180f103a0e8340bc993fc85dbdadd	sysroot	ba2e3d2f7daad91fdef9350dc789d87f	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	meson	12065b402c6d78a2aec926ed8dfd964f	python-any-r1	891415dfe39ad9b41b461f2b86354af0	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575
-_md5_=5499aa4642388b6632af8c81e2581d06
+_md5_=862e2b2014de40a878e93a361ac6bd6a

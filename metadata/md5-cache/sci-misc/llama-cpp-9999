@@ -1,6 +1,6 @@
 BDEPEND=media-libs/shaderc app-alternatives/ninja >=dev-build/cmake-3.28.5 >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install prepare setup test unpack
-DEPEND=curl? ( net-misc/curl:= ) openblas? ( sci-libs/openblas:= ) openmp? ( llvm-runtimes/openmp:= ) blis? ( sci-libs/blis:= ) flexiblas? ( sci-libs/flexiblas:= ) rocm? ( >=dev-util/hip-6.3:= >=sci-libs/hipBLAS-6.3:= wmma? ( >=sci-libs/rocWMMA-6.3:= ) ) cuda? ( dev-util/nvidia-cuda-toolkit:= ) openssl? ( dev-libs/openssl:= ) opencl? ( dev-util/opencl-headers ) vulkan? ( dev-util/vulkan-headers )
+DEPEND=curl? ( net-misc/curl:= ) openblas? ( sci-libs/openblas:= ) openmp? ( llvm-runtimes/openmp:= ) blis? ( sci-libs/blis:= ) flexiblas? ( sci-libs/flexiblas:= ) rocm? ( >=dev-util/hip-6.3:= >=sci-libs/hipBLAS-6.3:= wmma? ( >=sci-libs/rocWMMA-6.3:= ) ) cuda? ( dev-util/nvidia-cuda-toolkit:= ) openssl? ( dev-libs/openssl:= ) opencl? ( dev-util/opencl-headers ) vulkan? ( dev-util/spirv-headers dev-util/vulkan-headers )
 DESCRIPTION=Port of Facebook's LLaMA model in C/C++
 EAPI=8
 HOMEPAGE=https://github.com/ggml-org/llama.cpp
@@ -13,4 +13,4 @@ REQUIRED_USE=?? ( openblas blis flexiblas ) wmma? ( rocm )
 SLOT=0
 SRC_URI=examples? ( https://huggingface.co/ggml-org/tiny-llamas/resolve/99dd1a73db5a37100bd4ae633f4cfce6560e1567/stories15M-q4_0.gguf -> ggml-org_models_tinyllamas_stories15M-q4_0-99dd1a73db5a37100bd4ae633f4cfce6560e1567.gguf )
 _eclasses_=toolchain-funcs	5195689ff6a73b0e789acfa09d4fbcb9	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	3395ce6618fc5c7af03335471b896644	cuda	8b660e223a1695e3884ee4c7dc2c5059	rocm	b406b041c5b107f8d8600865210e24e2	linux-info	efd923656513c879204fec6638eadee5	git-r3	7b584b5dc33e3bc66ff5b9271bf41764
-_md5_=b5fb6ae907b6ea794e3666db012c455f
+_md5_=5cec69855311d1dcd8054151238eeeed
