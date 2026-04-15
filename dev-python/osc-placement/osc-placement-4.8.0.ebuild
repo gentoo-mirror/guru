@@ -24,15 +24,17 @@ RDEPEND="
 	>=dev-python/osc-lib-1.2.0[${PYTHON_USEDEP}]
 	>=dev-python/oslo-utils-3.37.0[${PYTHON_USEDEP}]
 "
-BDEPEND="
-	test? (
-	    >=dev-python/coverage-4.0.0[${PYTHON_USEDEP}]
-		>=dev-python/oslotest-1.10.0[${PYTHON_USEDEP}]
-		>=dev-python/python-openstackclient-3.3.0[${PYTHON_USEDEP}]
-		>=dev-python/stestr-1.0.0[${PYTHON_USEDEP}]
-		>=dev-python/fixtures-4.2.2[${PYTHON_USEDEP}]
-	)
-"
+
+# Tests disabled as it depends on dev-python/stestr which is masked for removal
+# BDEPEND="
+# 	test? (
+# 		>=dev-python/coverage-4.0.0[${PYTHON_USEDEP}]
+# 		>=dev-python/oslotest-1.10.0[${PYTHON_USEDEP}]
+# 		>=dev-python/python-openstackclient-3.3.0[${PYTHON_USEDEP}]
+# 		>=dev-python/stestr-1.0.0[${PYTHON_USEDEP}]
+# 		>=dev-python/fixtures-4.2.2[${PYTHON_USEDEP}]
+# 	)
+# "
 
 EPYTEST_IGNORE=(
 	# Require the placement service to be packaged, too
@@ -47,4 +49,4 @@ EPYTEST_IGNORE=(
 	osc_placement/tests/functional/test_plugin.py
 )
 
-distutils_enable_tests pytest
+# distutils_enable_tests pytest
