@@ -4,7 +4,7 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{12..13} )
+PYTHON_COMPAT=( python3_{12..14} )
 
 inherit distutils-r1 pypi
 
@@ -37,6 +37,8 @@ BDEPEND="
 		>=dev-python/requests-mock-1.2.0[${PYTHON_USEDEP}]
 	)
 "
+
+EPYTEST_PLUGINS=()
 
 EPYTEST_IGNORE=(
 	# not packaged
