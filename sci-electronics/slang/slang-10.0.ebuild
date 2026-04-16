@@ -1,9 +1,9 @@
-# Copyright 1999-2025 Gentoo Authors
+# Copyright 1999-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="8"
 
-PYTHON_COMPAT=( python3_{12..14} )
+PYTHON_COMPAT=( python3_{11..14} )
 inherit cmake python-single-r1
 
 DESCRIPTION="SystemVerilog compiler and language services"
@@ -32,20 +32,16 @@ RDEPEND="
 	$(python_gen_cond_dep '
 		>=dev-python/pybind11-2.10[${PYTHON_USEDEP}]
 	')
-	dev-libs/libfmt:=
+	>=dev-libs/libfmt-12.1:=
 "
 DEPEND="${RDEPEND}"
 BDEPEND="
-	>=dev-libs/libfmt-9.1.0:=
-	test? ( >=dev-cpp/catch-3.0.1 )
+	>=dev-libs/libfmt-12.1
+	test? ( >=dev-cpp/catch-3.11 )
 "
 
 src_prepare() {
 	default
-	# In order to compile smoothly, the minimum version of fmt must be lowered.
-	sed -i \
-		-e 's/set(fmt_min_version.*)/set(fmt_min_version "9.0")/' \
-		"${S}/external/CMakeLists.txt" || die
 	cmake_src_prepare
 }
 
@@ -65,8 +61,13 @@ src_install() {
 	cmake_src_install
 
 	if use python; then
-		# fix python unexpected paths QA
-		mkdir -p "${D}/$(python_get_sitedir)" || die
-		mv "${D}"/usr/pyslang* "${D}/$(python_get_sitedir)" || die
+		# CMake installs pyslang files flat into /usr/; relocate them into
+		# a proper pyslang package directory under site-packages.
+		local pydir="${D}/$(python_get_sitedir)/pyslang"
+		mkdir -p "${pydir}" || die
+		mv "${D}"/usr/pyslang* "${pydir}" || die
+		mv "${D}"/usr/__init__.py "${pydir}" || die
+		mv "${D}"/usr/py.typed "${pydir}" || die
+		python_optimize "${D}/$(python_get_sitedir)"
 	fi
 }
