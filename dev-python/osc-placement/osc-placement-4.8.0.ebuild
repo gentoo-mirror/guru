@@ -25,28 +25,20 @@ RDEPEND="
 	>=dev-python/oslo-utils-3.37.0[${PYTHON_USEDEP}]
 "
 
-# Tests disabled as it depends on dev-python/stestr which is masked for removal
-# BDEPEND="
-# 	test? (
-# 		>=dev-python/coverage-4.0.0[${PYTHON_USEDEP}]
-# 		>=dev-python/oslotest-1.10.0[${PYTHON_USEDEP}]
-# 		>=dev-python/python-openstackclient-3.3.0[${PYTHON_USEDEP}]
-# 		>=dev-python/stestr-1.0.0[${PYTHON_USEDEP}]
-# 		>=dev-python/fixtures-4.2.2[${PYTHON_USEDEP}]
-# 	)
-# "
+BDEPEND="
+	test? (
+		>=dev-python/coverage-4.0.0[${PYTHON_USEDEP}]
+		>=dev-python/oslotest-1.10.0[${PYTHON_USEDEP}]
+		>=dev-python/python-openstackclient-3.3.0[${PYTHON_USEDEP}]
+		>=dev-python/fixtures-4.2.2[${PYTHON_USEDEP}]
+	)
+"
+
+EPYTEST_PLUGINS=()
 
 EPYTEST_IGNORE=(
-	# Require the placement service to be packaged, too
-	osc_placement/tests/functional/test_allocation.py
-	osc_placement/tests/functional/test_allocation_candidate.py
-	osc_placement/tests/functional/test_inventory.py
-	osc_placement/tests/functional/test_resource_class.py
-	osc_placement/tests/functional/test_resource_provider.py
-	osc_placement/tests/functional/test_trait.py
-	osc_placement/tests/functional/test_usage.py
-	osc_placement/tests/functional/test_aggregate.py
-	osc_placement/tests/functional/test_plugin.py
+	# Require access to cloud instance
+	osc_placement/tests/functional/
 )
 
-# distutils_enable_tests pytest
+distutils_enable_tests pytest
