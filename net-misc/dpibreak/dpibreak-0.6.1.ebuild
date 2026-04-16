@@ -13,18 +13,18 @@ CRATES="
 	anyhow@1.0.102
 	arrayvec@0.7.6
 	autocfg@1.5.0
-	bitflags@2.11.0
+	bitflags@2.11.1
 	block2@0.6.2
 	bumpalo@3.20.2
 	bytes@1.11.1
 	cast@0.3.0
-	cc@1.2.59
+	cc@1.2.60
 	cfg-if@1.0.4
 	cfg_aliases@0.2.1
 	ciborium-io@0.2.2
 	ciborium-ll@0.2.2
 	ciborium@0.2.2
-	clap@4.6.0
+	clap@4.6.1
 	clap_builder@4.6.0
 	clap_lex@1.1.0
 	criterion-plot@0.8.2
@@ -43,8 +43,8 @@ CRATES="
 	half@2.7.1
 	itertools@0.13.0
 	itoa@1.0.18
-	js-sys@0.3.94
-	libc@0.2.184
+	js-sys@0.3.95
+	libc@0.2.185
 	memchr@2.8.0
 	nfq-updated@0.2.6
 	nix@0.27.1
@@ -61,7 +61,7 @@ CRATES="
 	proc-macro2@1.0.106
 	quote@1.0.45
 	rayon-core@1.13.0
-	rayon@1.11.0
+	rayon@1.12.0
 	regex-automata@0.4.14
 	regex-syntax@0.8.10
 	regex@1.12.3
@@ -80,11 +80,11 @@ CRATES="
 	toml@0.5.11
 	unicode-ident@1.0.24
 	walkdir@2.5.0
-	wasm-bindgen-macro-support@0.2.117
-	wasm-bindgen-macro@0.2.117
-	wasm-bindgen-shared@0.2.117
-	wasm-bindgen@0.2.117
-	web-sys@0.3.94
+	wasm-bindgen-macro-support@0.2.118
+	wasm-bindgen-macro@0.2.118
+	wasm-bindgen-shared@0.2.118
+	wasm-bindgen@0.2.118
+	web-sys@0.3.95
 	winapi-i686-pc-windows-gnu@0.4.0
 	winapi-util@0.1.11
 	winapi-x86_64-pc-windows-gnu@0.4.0
@@ -109,7 +109,7 @@ CRATES="
 	zmij@1.0.21
 "
 
-RUST_MIN_VER="1.92"
+RUST_MIN_VER="1.88"
 
 inherit cargo
 
@@ -135,13 +135,8 @@ DEPEND="
 	net-libs/libnfnetlink
 "
 
-IUSE="doc"
-
 src_install() {
 	cargo_src_install
 	doman dpibreak.1
-
-	if use doc; then
-		dodoc README.md CHANGELOG
-	fi
+	dodoc README.md CHANGELOG
 }
