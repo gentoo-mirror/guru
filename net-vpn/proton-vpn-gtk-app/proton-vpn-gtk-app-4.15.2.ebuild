@@ -6,7 +6,7 @@ EAPI=8
 DISTUTILS_SINGLE_IMPL=true
 DISTUTILS_USE_PEP517=setuptools
 
-PYTHON_COMPAT=( python3_{12..13} )
+PYTHON_COMPAT=( python3_{11..14} )
 
 inherit desktop distutils-r1
 
@@ -33,8 +33,6 @@ RDEPEND="
 		dev-python/requests[${PYTHON_USEDEP}]
 	')
 "
-
-PATCHES=( "${FILESDIR}/${P}-remove-anonymous-bug-report.patch" )
 
 src_install() {
 	distutils-r1_src_install
