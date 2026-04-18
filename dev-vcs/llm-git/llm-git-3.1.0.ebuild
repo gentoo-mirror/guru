@@ -10,43 +10,43 @@ CRATES="
 	adler2@2.0.1
 	aho-corasick@1.1.4
 	android_system_properties@0.1.5
-	anstream@0.6.21
-	anstyle-parse@0.2.7
+	anstream@1.0.0
+	anstyle-parse@1.0.0
 	anstyle-query@1.1.5
 	anstyle-wincon@3.0.11
-	anstyle@1.0.13
-	anyhow@1.0.101
+	anstyle@1.0.14
+	anyhow@1.0.102
 	arboard@3.6.1
 	atomic-waker@1.1.2
 	autocfg@1.5.0
-	aws-lc-rs@1.16.0
-	aws-lc-sys@0.37.1
+	aws-lc-rs@1.16.3
+	aws-lc-sys@0.40.0
 	backtrace-ext@0.2.1
 	backtrace@0.3.76
 	base64@0.22.1
 	bit-set@0.5.3
 	bit-vec@0.6.3
-	bitflags@2.11.0
+	bitflags@2.11.1
 	block-buffer@0.10.4
 	bstr@1.12.1
-	bumpalo@3.19.1
+	bumpalo@3.20.2
 	bytemuck@1.25.0
 	byteorder-lite@0.1.0
 	bytes@1.11.1
-	cc@1.2.56
+	cc@1.2.60
 	cesu8@1.1.0
 	cfg-if@1.0.4
 	cfg_aliases@0.2.1
 	chrono-tz-build@0.3.0
 	chrono-tz@0.9.0
-	chrono@0.4.43
-	clap@4.5.59
-	clap_builder@4.5.59
-	clap_derive@4.5.55
-	clap_lex@1.0.0
+	chrono@0.4.44
+	clap@4.6.1
+	clap_builder@4.6.0
+	clap_derive@4.6.1
+	clap_lex@1.1.0
 	clipboard-win@5.4.1
-	cmake@0.1.57
-	colorchoice@1.0.4
+	cmake@0.1.58
+	colorchoice@1.0.5
 	combine@4.6.7
 	core-foundation-sys@0.8.7
 	core-foundation@0.10.1
@@ -60,7 +60,7 @@ CRATES="
 	crypto-common@0.1.7
 	deunicode@1.6.2
 	digest@0.10.7
-	dispatch2@0.3.0
+	dispatch2@0.3.1
 	displaydoc@0.2.5
 	dotenvy@0.15.7
 	downcast-rs@1.2.1
@@ -99,44 +99,46 @@ CRATES="
 	h2@0.4.13
 	half@2.7.1
 	hashbrown@0.15.5
-	hashbrown@0.16.1
+	hashbrown@0.17.0
 	heck@0.5.0
 	http-body-util@0.1.3
 	http-body@1.0.1
 	http@1.4.0
 	httparse@1.10.1
 	humansize@2.1.3
-	hyper-rustls@0.27.7
+	hyper-rustls@0.27.9
 	hyper-util@0.1.20
-	hyper@1.8.1
+	hyper@1.9.0
 	iana-time-zone-haiku@0.1.2
 	iana-time-zone@0.1.65
-	icu_collections@2.1.1
-	icu_locale_core@2.1.1
-	icu_normalizer@2.1.1
-	icu_normalizer_data@2.1.1
-	icu_properties@2.1.2
-	icu_properties_data@2.1.2
-	icu_provider@2.1.1
+	icu_collections@2.2.0
+	icu_locale_core@2.2.0
+	icu_normalizer@2.2.0
+	icu_normalizer_data@2.2.0
+	icu_properties@2.2.0
+	icu_properties_data@2.2.0
+	icu_provider@2.2.0
 	idna@1.1.0
 	idna_adapter@1.2.1
 	ignore@0.4.25
-	image@0.25.9
-	indexmap@2.13.0
-	ipnet@2.11.0
-	iri-string@0.7.10
+	image@0.25.10
+	indexmap@2.14.0
+	ipnet@2.12.0
+	iri-string@0.7.12
 	is_ci@1.2.0
 	is_terminal_polyfill@1.70.2
-	itoa@1.0.17
-	jni-sys@0.3.0
+	itoa@1.0.18
+	jni-sys-macros@0.4.1
+	jni-sys@0.3.1
+	jni-sys@0.4.1
 	jni@0.21.1
 	jobserver@0.1.34
-	js-sys@0.3.85
+	js-sys@0.3.95
 	lazy_static@1.5.0
-	libc@0.2.182
+	libc@0.2.185
 	libm@0.2.16
-	linux-raw-sys@0.11.0
-	litemap@0.8.1
+	linux-raw-sys@0.12.1
+	litemap@0.8.2
 	lock_api@0.4.14
 	log@0.4.29
 	lru-slab@0.1.2
@@ -145,8 +147,8 @@ CRATES="
 	miette@7.6.0
 	mime@0.3.17
 	miniz_oxide@0.8.9
-	mio@1.1.1
-	moxcms@0.7.11
+	mio@1.2.0
+	moxcms@0.8.1
 	nom@8.0.0
 	num-traits@0.2.19
 	objc2-app-kit@0.3.2
@@ -155,13 +157,13 @@ CRATES="
 	objc2-encode@4.1.0
 	objc2-foundation@0.3.2
 	objc2-io-surface@0.3.2
-	objc2@0.6.3
+	objc2@0.6.4
 	object@0.37.3
-	once_cell@1.21.3
+	once_cell@1.21.4
 	once_cell_polyfill@1.70.2
 	openssl-probe@0.2.1
 	os_pipe@1.2.3
-	owo-colors@4.2.3
+	owo-colors@4.3.0
 	parking_lot@0.12.5
 	parking_lot_core@0.9.12
 	parse-zoneinfo@0.3.1
@@ -175,30 +177,29 @@ CRATES="
 	phf_codegen@0.11.3
 	phf_generator@0.11.3
 	phf_shared@0.11.3
-	pin-project-lite@0.2.16
-	pin-utils@0.1.0
-	pkg-config@0.3.32
+	pin-project-lite@0.2.17
+	pkg-config@0.3.33
 	png@0.18.1
-	potential_utf@0.1.4
+	potential_utf@0.1.5
 	ppv-lite86@0.2.21
 	proc-macro2@1.0.106
-	pxfm@0.1.27
+	pxfm@0.1.29
 	quick-error@2.0.1
-	quick-xml@0.38.4
-	quinn-proto@0.11.13
+	quick-xml@0.39.2
+	quinn-proto@0.11.14
 	quinn-udp@0.5.14
 	quinn@0.11.9
-	quote@1.0.44
+	quote@1.0.45
 	r-efi@5.3.0
-	rand@0.8.5
-	rand@0.9.2
+	rand@0.8.6
+	rand@0.9.4
 	rand_chacha@0.3.1
 	rand_chacha@0.9.0
 	rand_core@0.6.4
 	rand_core@0.9.5
 	redox_syscall@0.5.18
 	regex-automata@0.4.14
-	regex-syntax@0.8.9
+	regex-syntax@0.8.10
 	regex@1.12.3
 	reqwest@0.13.2
 	ring@0.17.14
@@ -207,64 +208,64 @@ CRATES="
 	rust-embed@8.11.0
 	rustc-demangle@0.1.27
 	rustc-hash@1.1.0
-	rustc-hash@2.1.1
-	rustix@1.1.3
+	rustc-hash@2.1.2
+	rustix@1.1.4
 	rustls-native-certs@0.8.3
 	rustls-pki-types@1.14.0
 	rustls-platform-verifier-android@0.1.1
 	rustls-platform-verifier@0.6.2
-	rustls-webpki@0.103.9
-	rustls@0.23.36
+	rustls-webpki@0.103.12
+	rustls@0.23.38
 	rustversion@1.0.22
 	same-file@1.0.6
-	schannel@0.1.28
+	schannel@0.1.29
 	scopeguard@1.2.0
-	security-framework-sys@2.16.0
-	security-framework@3.6.0
+	security-framework-sys@2.17.0
+	security-framework@3.7.0
 	serde@1.0.228
 	serde_core@1.0.228
 	serde_derive@1.0.228
 	serde_json@1.0.149
-	serde_spanned@1.0.4
+	serde_spanned@1.1.1
 	sha2@0.10.9
 	shlex@1.3.0
-	simd-adler32@0.3.8
+	simd-adler32@0.3.9
 	siphasher@1.0.2
 	slab@0.4.12
 	slug@0.1.6
 	smallvec@1.15.1
-	socket2@0.6.2
+	socket2@0.6.3
 	stable_deref_trait@1.2.1
 	strsim@0.11.1
 	subtle@2.6.1
 	supports-color@3.0.2
 	supports-hyperlinks@3.2.0
 	supports-unicode@3.0.0
-	syn@2.0.116
+	syn@2.0.117
 	sync_wrapper@1.0.2
 	synstructure@0.13.2
 	system-configuration-sys@0.6.0
 	system-configuration@0.7.0
 	tera@1.20.1
-	terminal_size@0.4.3
+	terminal_size@0.4.4
 	textwrap@0.16.2
 	thiserror-impl@1.0.69
 	thiserror-impl@2.0.18
 	thiserror@1.0.69
 	thiserror@2.0.18
-	tiff@0.10.3
+	tiff@0.11.3
 	tiktoken-rs@0.9.1
-	tinystr@0.8.2
-	tinyvec@1.10.0
+	tinystr@0.8.3
+	tinyvec@1.11.0
 	tinyvec_macros@0.1.1
-	tokio-macros@2.6.0
+	tokio-macros@2.7.0
 	tokio-rustls@0.26.4
 	tokio-util@0.7.18
-	tokio@1.49.0
-	toml@1.0.2+spec-1.1.0
-	toml_datetime@1.0.0+spec-1.1.0
-	toml_parser@1.0.9+spec-1.1.0
-	toml_writer@1.0.6+spec-1.1.0
+	tokio@1.52.1
+	toml@1.1.2+spec-1.1.0
+	toml_datetime@1.1.1+spec-1.1.0
+	toml_parser@1.1.2+spec-1.1.0
+	toml_writer@1.1.1+spec-1.1.0
 	tower-http@0.6.8
 	tower-layer@0.3.3
 	tower-service@0.3.3
@@ -278,7 +279,7 @@ CRATES="
 	unicode-ident@1.0.24
 	unicode-linebreak@0.1.5
 	unicode-normalization@0.1.25
-	unicode-segmentation@1.12.0
+	unicode-segmentation@1.13.2
 	unicode-width@0.1.14
 	unicode-width@0.2.2
 	untrusted@0.9.0
@@ -289,21 +290,21 @@ CRATES="
 	walkdir@2.5.0
 	want@0.3.1
 	wasi@0.11.1+wasi-snapshot-preview1
-	wasip2@1.0.2+wasi-0.2.9
-	wasm-bindgen-futures@0.4.58
-	wasm-bindgen-macro-support@0.2.108
-	wasm-bindgen-macro@0.2.108
-	wasm-bindgen-shared@0.2.108
-	wasm-bindgen@0.2.108
-	wayland-backend@0.3.12
-	wayland-client@0.31.12
-	wayland-protocols-wlr@0.3.10
-	wayland-protocols@0.32.10
-	wayland-scanner@0.31.8
-	wayland-sys@0.31.8
-	web-sys@0.3.85
+	wasip2@1.0.3+wasi-0.2.9
+	wasm-bindgen-futures@0.4.68
+	wasm-bindgen-macro-support@0.2.118
+	wasm-bindgen-macro@0.2.118
+	wasm-bindgen-shared@0.2.118
+	wasm-bindgen@0.2.118
+	wayland-backend@0.3.15
+	wayland-client@0.31.14
+	wayland-protocols-wlr@0.3.12
+	wayland-protocols@0.32.12
+	wayland-scanner@0.31.10
+	wayland-sys@0.31.11
+	web-sys@0.3.95
 	web-time@1.1.0
-	webpki-root-certs@1.0.6
+	webpki-root-certs@1.0.7
 	weezl@0.1.12
 	winapi-util@0.1.11
 	windows-core@0.62.2
@@ -343,25 +344,25 @@ CRATES="
 	windows_x86_64_msvc@0.42.2
 	windows_x86_64_msvc@0.52.6
 	windows_x86_64_msvc@0.53.1
-	winnow@0.7.14
-	wit-bindgen@0.51.0
+	winnow@1.0.1
+	wit-bindgen@0.57.1
 	wl-clipboard-rs@0.9.3
-	writeable@0.6.2
+	writeable@0.6.3
 	x11rb-protocol@0.13.2
 	x11rb@0.13.2
-	yoke-derive@0.8.1
-	yoke@0.8.1
-	zerocopy-derive@0.8.39
-	zerocopy@0.8.39
-	zerofrom-derive@0.1.6
-	zerofrom@0.1.6
+	yoke-derive@0.8.2
+	yoke@0.8.2
+	zerocopy-derive@0.8.48
+	zerocopy@0.8.48
+	zerofrom-derive@0.1.7
+	zerofrom@0.1.7
 	zeroize@1.8.2
-	zerotrie@0.2.3
-	zerovec-derive@0.11.2
-	zerovec@0.11.5
+	zerotrie@0.2.4
+	zerovec-derive@0.11.3
+	zerovec@0.11.6
 	zmij@1.0.21
-	zune-core@0.4.12
-	zune-jpeg@0.4.21
+	zune-core@0.5.1
+	zune-jpeg@0.5.15
 "
 
 RUST_MIN_VER="1.91"
@@ -378,8 +379,8 @@ SRC_URI="
 LICENSE="MIT"
 # Dependent crate licenses
 LICENSE+="
-	Apache-2.0 BSD Boost-1.0 CDLA-Permissive-2.0 ISC MIT openssl
-	Unicode-3.0 ZLIB
+	Apache-2.0 BSD Boost-1.0 CDLA-Permissive-2.0 ISC MIT Unicode-3.0
+	ZLIB
 "
 SLOT="0"
 KEYWORDS="~amd64"
