@@ -8,14 +8,14 @@ DISTUTILS_EXT=1
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
-HASH="2df8c918ffcb4ad847d2571f32a92447ffebe2e9c94d4ea05d9a86f20beb"
+HASH="ab37d6fa21f25965d4ad059745c76f13ddfb92a2c06a842a42ad77961c24"
 DESCRIPTION="Python bindings for the Skia Path Ops"
 HOMEPAGE="
 	https://skia.org/dev/present/pathops
 	https://pypi.org/project/skia-pathops/
 	https://github.com/fonttools/skia-pathops
 "
-SRC_URI="https://files.pythonhosted.org/packages/45/e5/${HASH}/skia_pathops-${PV}.tar.gz"
+SRC_URI="https://files.pythonhosted.org/packages/4a/f6/${HASH}/skia_pathops-${PV}.tar.gz"
 S="${WORKDIR}/skia_pathops-${PV}"
 
 LICENSE="BSD"
