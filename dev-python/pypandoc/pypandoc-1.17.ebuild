@@ -3,7 +3,7 @@
 
 EAPI=8
 
-DISTUTILS_USE_PEP517=poetry
+DISTUTILS_USE_PEP517=hatchling
 PYTHON_COMPAT=( python3_{12..14} )
 
 inherit distutils-r1
@@ -31,13 +31,6 @@ BDEPEND="
 
 EPYTEST_DESELECT=(
 	# Need internet
-	tests.py::TestPypandoc::test_basic_conversion_from_http_url
-	# pandoc does not manage to find pdflatex.fmt despite it being installed
-	tests.py::TestPypandoc::test_pdf_conversion
-	# Fail for a reason I do not understand
-	tests.py::TestPypandoc::test_basic_conversion_from_file_pattern_pathlib_glob
+	tests/test_pypandoc.py::TestPypandoc::test_basic_conversion_from_http_url
 )
 distutils_enable_tests pytest
-python_test() {
-	epytest tests.py || die "Test failed with ${EPYTHON}"
-}
