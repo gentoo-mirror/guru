@@ -10,7 +10,6 @@ HOMEPAGE="https://github.com/LukashonakV/cava/"
 SRC_URI="https://github.com/LukashonakV/cava/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
 
 S="${WORKDIR}/cava-${PV}"
-BUILD_DIR="${S}-build"
 
 LICENSE="MIT Unlicense"
 SLOT="0"
