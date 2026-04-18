@@ -1,15 +1,16 @@
-# Copyright 2022-2025 Gentoo Authors
+# Copyright 2022-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-inherit meson
+inherit autotools
 
 DESCRIPTION="Console-based Audio Visualizer for Alsa"
 HOMEPAGE="https://github.com/LukashonakV/cava/"
 SRC_URI="https://github.com/LukashonakV/cava/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
 
 S="${WORKDIR}/cava-${PV}"
+BUILD_DIR="${S}-build"
 
 LICENSE="MIT Unlicense"
 SLOT="0"
@@ -35,23 +36,21 @@ DEPEND="${RDEPEND}
 	virtual/pkgconfig
 "
 
-MYMESONARGS="-Dcava_font=false"
-
 src_prepare() {
 	default
 
 	echo ${PV} > version || die
+	eautoreconf
 }
 
 src_configure() {
-	meson_src_configure
+	econf --disable-cava-font
 }
 
-src_compile() {
-	mkdir -p "${BUILD_DIR}"/example_files || die
-	cp "${S}"/example_files/config "${BUILD_DIR}"/example_files/ || die
-
-	meson_src_compile
+src_install() {
+	mkdir -p "${D}/usr/include/cava"
+	default
+	find "${ED}" -type f -name '*.la' -delete || die
 }
 
 pkg_postinst() {
