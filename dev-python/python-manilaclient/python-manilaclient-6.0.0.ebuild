@@ -4,7 +4,7 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=pbr
-PYTHON_COMPAT=( python3_{12..13} )
+PYTHON_COMPAT=( python3_{12..14} )
 
 inherit distutils-r1 pypi
 
@@ -32,21 +32,24 @@ RDEPEND="
 	>=dev-python/debtcollector-1.2.0[${PYTHON_USEDEP}]
 "
 
-# Tests disabled as it depends on dev-python/stestr which is masked for removal
-#BDEPEND="
-#	test? (
-#		>=dev-python/coverage-4.5.0[${PYTHON_USEDEP}]
-#		>=dev-python/ddt-1.0.1[${PYTHON_USEDEP}]
-#		>=dev-python/fixtures-3.0.0[${PYTHON_USEDEP}]
-#		>=dev-python/requests-mock-1.2.0[${PYTHON_USEDEP}]
-#		>=dev-python/stestr-2.0.0[${PYTHON_USEDEP}]
-#		>=dev-python/tempest-17.1.0[${PYTHON_USEDEP}]
-#		>=dev-python/testtools-2.2.0[${PYTHON_USEDEP}]
-#		>=dev-python/python-openstackclient-5.3.0[${PYTHON_USEDEP}]
-#	)
-#"
+BDEPEND="
+	test? (
+		>=dev-python/coverage-4.5.0[${PYTHON_USEDEP}]
+		>=dev-python/ddt-1.0.1[${PYTHON_USEDEP}]
+		>=dev-python/fixtures-3.0.0[${PYTHON_USEDEP}]
+		>=dev-python/requests-mock-1.2.0[${PYTHON_USEDEP}]
+		>=dev-python/testtools-2.2.0[${PYTHON_USEDEP}]
+		>=dev-python/python-openstackclient-5.3.0[${PYTHON_USEDEP}]
+	)
+"
 
-# distutils_enable_tests unittest
+distutils_enable_tests unittest
+
+src_prepare() {
+	# This test requires tempest which has been removed.
+	rm --force manilaclient/tests/unit/test_functional_utils.py
+	distutils-r1_src_prepare
+}
 
 python_test() {
 	# The functional tests would requier the OpenStack manila service to be

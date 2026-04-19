@@ -142,6 +142,6 @@ src_install() {
 	doman dpibreak.1
 
 	if use doc; then
-		dodoc README.md CHANGELOG
+		dodoc README.md CHANGELOG.md
 	fi
 }
