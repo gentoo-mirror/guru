@@ -1,0 +1,15 @@
+BDEPEND=media-video/ffmpeg media-libs/libglvnd x11-libs/libXcomposite x11-libs/libXrandr x11-libs/libXfixes media-libs/libpulse media-libs/libva x11-libs/libdrm sys-libs/libcap dev-libs/wayland >=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array
+DEFINED_PHASES=compile configure install test
+DEPEND=media-video/ffmpeg media-libs/libglvnd x11-libs/libXcomposite x11-libs/libXrandr x11-libs/libXfixes media-libs/libpulse media-libs/libva x11-libs/libdrm sys-libs/libcap dev-libs/wayland
+DESCRIPTION=A screen recorder that has minimal impact on system performance
+EAPI=8
+HOMEPAGE=https://git.dec05eba.com/gpu-screen-recorder/about
+INHERIT=meson
+IUSE=+filecaps systemd
+KEYWORDS=~amd64 ~arm64
+LICENSE=GPL-3
+RDEPEND=media-video/ffmpeg media-libs/libglvnd x11-libs/libXcomposite x11-libs/libXrandr x11-libs/libXfixes media-libs/libpulse media-libs/libva x11-libs/libdrm sys-libs/libcap dev-libs/wayland
+SLOT=0
+SRC_URI=https://dec05eba.com/snapshot/gpu-screen-recorder.git.5.13.0.tar.gz -> gpu-screen-recorder-5.13.0.tar.gz
+_eclasses_=toolchain-funcs	5195689ff6a73b0e789acfa09d4fbcb9	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	python-utils-r1	9c4180f103a0e8340bc993fc85dbdadd	sysroot	ba2e3d2f7daad91fdef9350dc789d87f	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	meson	12065b402c6d78a2aec926ed8dfd964f
+_md5_=d371014e1b03b32c1f315d210e3b05a6
