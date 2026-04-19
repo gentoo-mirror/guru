@@ -47,7 +47,6 @@ DEPEND="${COMMON_DEPEND}
 RDEPEND="${COMMON_DEPEND}
 	dev-libs/glib
 	dev-libs/libfmt:=
-	dev-qt/qtquickcontrols2
 "
 CONFIG_CHECK="~CONNECTOR ~PROC_EVENTS ~NETLINK_DIAG"
 
