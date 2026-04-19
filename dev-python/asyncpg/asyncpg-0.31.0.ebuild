@@ -23,7 +23,8 @@ RDEPEND="
 	kerberos? ( dev-python/gssapi[${PYTHON_USEDEP}] )
 "
 BDEPEND="
-	dev-python/cython[${PYTHON_USEDEP}]
+	>=dev-python/cython-3.2.1[${PYTHON_USEDEP}]
+	<dev-python/cython-4[${PYTHON_USEDEP}]
 	test? (
 		dev-db/postgresql[kerberos?,server,ssl]
 		dev-python/distro[${PYTHON_USEDEP}]
