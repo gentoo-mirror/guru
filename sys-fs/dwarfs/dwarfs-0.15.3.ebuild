@@ -11,7 +11,7 @@ SRC_URI="https://github.com/mhx/dwarfs/releases/download/v${PV}/${P}.tar.xz"
 
 LICENSE="GPL-3 MIT"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~arm64"
 IUSE="test +tools +fuse +perfmon flac ricepp stacktrace"
 S="${WORKDIR}/dwarfs-${PV}"
 
