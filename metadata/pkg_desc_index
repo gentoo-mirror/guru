@@ -199,7 +199,7 @@ app-doc/stdman 2022.07.30 2024.07.05 9999: Formatted C++ stdlib man pages (cppre
 app-doc/sway-wiki 9999: Wiki of gui-wm/sway, rendered to HTML using kramdown-parser-gfm
 app-editors/edit 1.2.0: Microsoft edit
 app-editors/emacs-lsp-booster 0.2.1: Emacs LSP performance booster
-app-editors/fresh 0.2.22 0.2.23 0.2.24: Terminal based IDE & text editor: easy, powerful and fast
+app-editors/fresh 0.2.22 0.2.23 0.2.24 0.2.25: Terminal based IDE & text editor: easy, powerful and fast
 app-editors/imhex 1.38.1: A hex editor for reverse engineers, programmers, and eyesight
 app-editors/kakoune-lsp 18.1.0: Kakoune Language Server Protocol Client
 app-editors/l3afpad 0.8.18.1.11: Simple GTK3 text editor (successor to leafpad)
@@ -258,7 +258,7 @@ app-misc/clifm 1.11 1.13 1.16 1.18 9999: The command line file manager
 app-misc/clipboard 0.10.0-r1: Cut, copy, and paste anything in your terminal
 app-misc/cliphist 0.7.0: Wayland clipboard manager with support for multimedia
 app-misc/cmd-timer 2.1.0 9999: run command at a specific interval
-app-misc/corectrl 1.5.1-r1 9999: Core control application
+app-misc/corectrl 1.5.2 9999: Core control application
 app-misc/countryfetch 0.2.0: A Command-line tool similar to Neofetch for obtaining information about your country
 app-misc/cpufetch 1.06: Simplistic yet fancy CPU architecture fetching tool
 app-misc/dbf 0.9.0: Command line tool to read the content of dBASE III, IV, and 5.0 files
@@ -488,7 +488,7 @@ dev-cpp/trantor 1.5.19 1.5.20: Non-blocking I/O tcp network lib based on c++14/1
 dev-cpp/trompeloeil 47: Header only C++14 mocking framework
 dev-cpp/units 2.3.3 2.3.4: A compile-time, header-only, dimensional analysis and unit conversion library
 dev-cpp/workflow 0.10.2-r1 0.10.3 0.10.5 9999: C++ Parallel Computing and Asynchronous Networking Engine
-dev-cpp/wt 4.12.5 4.12.6: Wt, C++ Web Toolkit
+dev-cpp/wt 4.12.5 4.12.6 4.13.1: Wt, C++ Web Toolkit
 dev-cpp/xtensor 0.26.0: header-only C++ library for numerical analysis with multi-dimensional arrays
 dev-cpp/xtl 0.8.0: Algorithms and containers used by the xtensor stack and the xeus stack
 dev-crystal/athena-negotiation 0.1.5-r1 0.2.0-r1: Framework agnostic content negotiation library
@@ -584,7 +584,7 @@ dev-lang/odin 2026.01 2026.02 2026.03 2026.04 9999: The Data-Oriented Language f
 dev-lang/opencilk 1.1 2.1: The OpenCilk concurrency platform for parallel programming
 dev-lang/opencilk-bin 1.1 2.1: The OpenCilk concurrency platform for parallel programming
 dev-lang/quickjs 2024.01.13-r1 2025.09.13.2: Small embeddable Javascript engine
-dev-lang/swift 5.10.1-r5 6.0.3-r2 6.1.3 6.2.4 6.3: A high-level, general-purpose, multi-paradigm, compiled programming language
+dev-lang/swift 5.10.1-r5 6.0.3-r2 6.1.3 6.2.4 6.3-r1 6.3.1: A high-level, general-purpose, multi-paradigm, compiled programming language
 dev-lang/swift-bin 5.10.1-r5 6.2.3 6.2.4 6.3: A high-level, general-purpose, multi-paradigm, compiled programming language
 dev-lang/swift-bootstrap 1.0: A virtual package providing a base Swift to bootstrap future versions with.
 dev-lang/uiua 0.16.2 0.17.2 0.18.1: A stack-based array programming language
@@ -860,7 +860,7 @@ dev-python/m3u8 6.0.0: Python m3u8 Parser for HTTP Live Streaming (HLS) Transmis
 dev-python/markdownify 0.11.6: Convert HTML to Markdown
 dev-python/markovify 0.9.4: Simple, extensible Markov chain generator
 dev-python/mastodon-py 2.0.1 2.1.4: Python wrapper for the Mastodon API
-dev-python/material-color-utilities 0.1.5 9999: Python port of material-color-utilities used for Material You colors
+dev-python/material-color-utilities 0.1.5: Python port of material-color-utilities used for Material You colors
 dev-python/materialyoucolor 9999: Material You color algorithms for python!
 dev-python/mautrix 0.20.8 0.21.0: A Python 3 asyncio Matrix framework
 dev-python/mcp 1.26.0: Model Context Protocol SDK
@@ -986,7 +986,7 @@ dev-python/readability-lxml 0.8.4.1: Fast html to text parser (article readabili
 dev-python/readchar 4.2.1: Python library to read characters and key strokes
 dev-python/readmdict 0.1.1-r1: Read mdx/mdd files
 dev-python/rectangle-packer 2.0.2: Pack a set of rectangles into a bounding box with minimum area
-dev-python/repology-client 0.5.0 0.6.0: Asynchronous wrapper for Repology API
+dev-python/repology-client 0.6.0 0.7.1: Asynchronous wrapper for Repology API
 dev-python/rich-rst 1.3.2: A beautiful reStructuredText renderer for rich
 dev-python/rpmautospec-core 0.1.5: Core functionality used by rpmautospec
 dev-python/rstcheck 6.2.0 6.2.1: Checks syntax of reStructuredText and code blocks nested within it
@@ -1029,7 +1029,7 @@ dev-python/templated-dictionary 1.6: Python dictionary with Jinja2 expansion
 dev-python/tempus-themes 2.3.0.20220206: Accessible themes for Pygments
 dev-python/tempy 1.4.0: A simple, visually pleasing weather report in your terminal
 dev-python/termynal 0.14.0: A lightweight and modern animated terminal window
-dev-python/textual 8.1.1-r1 8.2.0 8.2.1 8.2.2 8.2.3: Modern Text User Interface framework
+dev-python/textual 8.2.2 8.2.3 8.2.4: Modern Text User Interface framework
 dev-python/textual-autocomplete 4.0.6: Easily add autocomplete dropdowns to your Textual apps
 dev-python/textual-dev 1.8.0: Modern Text User Interface framework
 dev-python/textual-serve 1.1.3: Serve Textual apps locally
@@ -1070,7 +1070,7 @@ dev-ruby/rbenv 9999: Seamlessly manage your app's Ruby environment
 dev-ruby/rbspy 0.17.0-r1 0.21.0: Sampling CPU profiler for Ruby
 dev-ruby/rspec-wait 0.0.9: enables time-resilient expectations in your RSpec test suite
 dev-ruby/ruby-build 9999: Installs virtually any version of Ruby, from source
-dev-ruby/ruby-install 0.9.3: Installs Ruby, JRuby, Rubinius, TruffleRuby, or MRuby.
+dev-ruby/ruby-install 0.9.3 0.10.2: Installs Ruby, JRuby, Rubinius, TruffleRuby, or MRuby.
 dev-ruby/ruby-lsp 0.26.4: An opinionated language server for Ruby
 dev-scheme/sagittarius 0.9.14: R6RS/R7RS Scheme system.
 dev-tex/ninecolors 2022.02.13: Select colors with proper WCAG color contrast
@@ -1098,7 +1098,7 @@ dev-util/exercism 3.1.0 3.2.0: Command line client for https://exercism.io
 dev-util/find-work 1.0.0 9999: Personal advice utility for Gentoo package maintainers
 dev-util/find-work-bugzilla 1.0.0-r1: Personal advice utility for Gentoo package maintainers: Bugzilla plugin
 dev-util/find-work-pkgcheck 1.0.0 1.1.0: Personal advice utility for Gentoo package maintainers: pkgcheck plugin
-dev-util/find-work-repology 1.0.1: Personal advice utility for Gentoo package maintainers: Repology plugin
+dev-util/find-work-repology 1.0.1 1.1.0: Personal advice utility for Gentoo package maintainers: Repology plugin
 dev-util/flatpakify 1.0.5 1.0.6: Tool to create Flatpak bundles from Portage ebuilds
 dev-util/forgejo-cli 0.5.0: CLI application for interacting with Forgejo
 dev-util/forgejo-runner 12.8.2 9999: A daemon that connects to a Forgejo instance and runs jobs for CI
@@ -1111,7 +1111,7 @@ dev-util/gersemi 0.26.1 0.27.2: A formatter to make your CMake code the real tre
 dev-util/git-bug 0.10.1 9999: distributed, offline-first bug tracker
 dev-util/git-pages-cli 1.5.2 1.6.0: Command-line application for publishing sites to git-pages
 dev-util/gitlab-ci-local-bin 4.43.0 4.47.0 4.56.0: Run gitlab pipelines locally as shell executor or docker executor
-dev-util/go-task 3.41.0-r1 3.49.1 3.50.0: A task runner / simpler Make alternative written in Go
+dev-util/go-task 3.49.1 3.50.0: A task runner / simpler Make alternative written in Go
 dev-util/google-antigravity 1.21.9 1.22.2 1.23.2: Google's AI-first IDE and agentic development platform
 dev-util/gshards 0.2: Small helper tools to aid installing Crystal packages in Gentoo
 dev-util/hare-update 0.25.2.0 0.26.0.0 9999: assist in upgrading a codebase to a newer Hare release
@@ -1326,7 +1326,7 @@ gui-apps/fnott 1.7.1 1.8.0 9999: Keyboard driven and lightweight Wayland notific
 gui-apps/fuzzel 1.13.1 1.14.1: Application launcher for wlroots based Wayland compositors.
 gui-apps/fyi 1.0.4 9999: A notify-send alternative
 gui-apps/gcolor3 2.4.0: A simple color chooser written in GTK3
-gui-apps/gradience 0.3.0-r2 0.4.1: Change the look of Adwaita with ease
+gui-apps/gradience 0.4.1: Change the look of Adwaita with ease
 gui-apps/grimshot 9999: A helper for screenshots within sway
 gui-apps/gtklock 4.0.0: GTK-based lockscreen for Wayland
 gui-apps/gtklock-extras 9999: Gtklock modules
@@ -1429,7 +1429,7 @@ gui-wm/mangowm 0.12.8 9999: wayland compositor based on wlroots and scenefx(dwl 
 gui-wm/miracle-wm 0.8.3 0.9.0: Tiling Wayland compositor based on Mir
 gui-wm/niri 25.11-r1 9999: Scrollable-tiling Wayland compositor
 gui-wm/phoc 0.50.0 0.52.0 0.53.0: Wayland compositor for mobile phones
-gui-wm/river 0.3.11 0.3.12 0.3.14 0.3.15 0.3.9999 0.4.1 0.4.2 9999: A dynamic tiling Wayland compositor
+gui-wm/river 0.3.11 0.3.12 0.3.14 0.3.15 0.3.9999 0.4.1 0.4.2 0.4.3 9999: A dynamic tiling Wayland compositor
 gui-wm/swayfx 0.5 0.5.3: SwayFX: Sway, but with eye candy!
 gui-wm/wayback 0.2: X11 compatibility layer levaraging wlroots and Xwayland
 kde-misc/geminipart 20250730: KPart for viewing text/gemini files
@@ -1579,7 +1579,7 @@ media-sound/qloud 1.4.2: Tool to measure loudspeaker frequency and step response
 media-sound/qobuz-player 0.7.4 0.8.0 0.9.0: Tui, web and rfid player for Qobuz
 media-sound/rmpc 0.9.0 0.10.0 9999: A beautiful and configurable TUI client for MPD
 media-sound/rsgain 3.5.1-r1 3.5.3-r1: Really Simple replay Gain calculator for tagging audio files
-media-sound/shortwave 5.0.0: An internet radio player
+media-sound/shortwave 5.0.0 5.1.0: An internet radio player
 media-sound/songrec 0.6.7: An open-source Shazam client for Linux, written in Rust.
 media-sound/spct 1.2.2 1.2.4: CLI program for playing back and rendering SPC files.
 media-sound/spot 0.4.0-r2: GTK4 Spotify (Premium) client
