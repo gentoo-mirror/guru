@@ -56,6 +56,7 @@ SRC_URI="
 
 PATCHES=(
 	"${FILESDIR}/${PF}/backtracing-noexecstack.patch"
+	"${FILESDIR}/${PF}/disable-libdispatch-private-header-check.patch"
 	"${FILESDIR}/${PF}/disable-libdispatch-werror.patch"
 	"${FILESDIR}/${PF}/fix-issues-caused-by-build-system-updates.patch"
 	"${FILESDIR}/${PF}/link-ncurses-tinfo.patch"
