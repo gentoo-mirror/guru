@@ -11,21 +11,22 @@ DESCRIPTION="A high-level, general-purpose, multi-paradigm, compiled programming
 HOMEPAGE="https://www.swift.org"
 
 SRC_URI="
-	https://github.com/apple/swift-argument-parser/archive/refs/tags/1.4.0.tar.gz -> swift-argument-parser-1.4.0.tar.gz
+	https://github.com/apple/swift-argument-parser/archive/refs/tags/1.6.1.tar.gz -> swift-argument-parser-1.6.1.tar.gz
 	https://github.com/apple/swift-asn1/archive/refs/tags/1.0.0.tar.gz -> swift-asn1-1.0.0.tar.gz
-	https://github.com/apple/swift-async-algorithms/archive/refs/tags/1.0.1.tar.gz -> swift-async-algorithms-1.0.0.tar.gz
+	https://github.com/apple/swift-async-algorithms/archive/refs/tags/1.0.1.tar.gz -> swift-async-algorithms-1.0.1.tar.gz
 	https://github.com/apple/swift-atomics/archive/refs/tags/1.2.0.tar.gz -> swift-atomics-1.2.0.tar.gz
 	https://github.com/apple/swift-certificates/archive/refs/tags/1.0.1.tar.gz -> swift-certificates-1.0.1.tar.gz
-	https://github.com/apple/swift-collections/archive/refs/tags/1.1.3.tar.gz -> swift-collections-1.1.3.tar.gz
-	https://github.com/apple/swift-crypto/archive/refs/tags/3.0.0.tar.gz -> swift-crypto-3.0.0.tar.gz
+	https://github.com/apple/swift-collections/archive/refs/tags/1.1.6.tar.gz -> swift-collections-1.1.6.tar.gz
+	https://github.com/apple/swift-crypto/archive/refs/tags/3.12.5.tar.gz -> swift-crypto-3.12.5.tar.gz
 	https://github.com/apple/swift-log/archive/refs/tags/1.5.4.tar.gz -> swift-log-1.5.4.tar.gz
 	https://github.com/apple/swift-nio/archive/refs/tags/2.65.0.tar.gz -> swift-nio-2.65.0.tar.gz
 	https://github.com/apple/swift-numerics/archive/refs/tags/1.0.2.tar.gz -> swift-numerics-1.0.2.tar.gz
-	https://github.com/apple/swift-system/archive/refs/tags/1.3.0.tar.gz -> swift-system-1.3.0.tar.gz
-	https://github.com/jpsim/Yams/archive/refs/tags/5.0.6.tar.gz -> Yams-5.0.6.tar.gz
+	https://github.com/apple/swift-system/archive/refs/tags/1.5.0.tar.gz -> swift-system-1.5.0.tar.gz
+	https://github.com/microsoft/mimalloc/archive/refs/tags/v3.0.1.tar.gz -> mimalloc-v3.0.1.tar.gz
 	https://github.com/swiftlang/indexstore-db/archive/refs/tags/${P}-RELEASE.tar.gz -> indexstore-db-${PV}.tar.gz
 	https://github.com/swiftlang/llvm-project/archive/refs/tags/${P}-RELEASE.tar.gz -> llvm-project-${PV}.tar.gz
 	https://github.com/swiftlang/sourcekit-lsp/archive/refs/tags/${P}-RELEASE.tar.gz -> sourcekit-lsp-${PV}.tar.gz
+	https://github.com/swiftlang/swift-build/archive/refs/tags/${P}-RELEASE.tar.gz -> swift-build-${PV}.tar.gz
 	https://github.com/swiftlang/swift-cmark/archive/refs/tags/${P}-RELEASE.tar.gz -> swift-cmark-${PV}.tar.gz
 	https://github.com/swiftlang/swift-corelibs-foundation/archive/refs/tags/${P}-RELEASE.tar.gz -> swift-corelibs-foundation-${PV}.tar.gz
 	https://github.com/swiftlang/swift-corelibs-libdispatch/archive/refs/tags/${P}-RELEASE.tar.gz -> swift-corelibs-libdispatch-${PV}.tar.gz
@@ -46,9 +47,11 @@ SRC_URI="
 	https://github.com/swiftlang/swift-markdown/archive/refs/tags/${P}-RELEASE.tar.gz -> swift-markdown-${PV}.tar.gz
 	https://github.com/swiftlang/swift-package-manager/archive/refs/tags/${P}-RELEASE.tar.gz -> swift-package-manager-${PV}.tar.gz
 	https://github.com/swiftlang/swift-stress-tester/archive/refs/tags/${P}-RELEASE.tar.gz -> swift-stress-tester-${PV}.tar.gz
+	https://github.com/swiftlang/swift-subprocess/archive/refs/tags/0.2.1.tar.gz -> swift-subprocess-0.2.1.tar.gz
 	https://github.com/swiftlang/swift-syntax/archive/refs/tags/${P}-RELEASE.tar.gz -> swift-syntax-${PV}.tar.gz
 	https://github.com/swiftlang/swift-testing/archive/refs/tags/${P}-RELEASE.tar.gz -> swift-testing-${PV}.tar.gz
-	https://github.com/swiftlang/swift-toolchain-sqlite/archive/refs/tags/1.0.1.tar.gz -> swift-toolchain-sqlite-1.0.1.tar.gz
+	https://github.com/swiftlang/swift-toolchain-sqlite/archive/refs/tags/1.0.7.tar.gz -> swift-toolchain-sqlite-1.0.7.tar.gz
+	https://github.com/swiftlang/swift-tools-protocols/archive/refs/tags/0.0.9.tar.gz -> swift-tools-protocols-0.0.9.tar.gz
 	https://github.com/swiftlang/swift-tools-support-core/archive/refs/tags/${P}-RELEASE.tar.gz -> swift-tools-support-core-${PV}.tar.gz
 	https://github.com/swiftlang/swift/archive/refs/tags/${P}-RELEASE.tar.gz -> ${P}.tar.gz
 "
@@ -65,7 +68,7 @@ PATCHES=(
 
 S="${WORKDIR}"
 LICENSE="Apache-2.0"
-SLOT="6/1"
+SLOT="6/3"
 KEYWORDS="~amd64"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
@@ -90,7 +93,7 @@ RDEPEND="
 BDEPEND="
 	${PYTHON_DEPS}
 	>=dev-build/cmake-3.30.2
-	>=dev-build/ninja-1.11.1
+	>=dev-build/ninja-1.13.1
 	>=dev-db/sqlite-3
 	>=dev-libs/icu-69
 	>=dev-libs/libedit-20221030
@@ -274,19 +277,6 @@ src_install() {
 		&& cp -pPR "${S}/${P}/." "${ED}/${dest_dir}" \
 		|| die
 
-	# We also want to provide a stable directory which matches our SLOT to avoid
-	# revdep breakages, as patch updates use the same SLOT but otherwise move
-	# the install location on disk.
-	#
-	# See https://bugs.gentoo.org/957730
-	#
-	# `dosym` dies if the source and destination are the same, so we only want
-	# to do this for patch versions.
-	local major_ver="$(ver_cut 1-2)"
-	if [[ "${PV}" != "${major_ver}" ]]; then
-		dosym -r "${dest_dir}" "/usr/$(get_libdir)/${PN}-${major_ver}"
-	fi
-
 	# Swift ships with its own `clang`, `lldb`, etc.; we don't want these to be
 	# exposed externally, so we'll just symlink Swift-specific binaries into
 	# `/usr/bin`. (The majority of executables don't need to be exposed as
@@ -317,6 +307,22 @@ pkg_postinst() {
 	if [[ "${PKG_PREINST_SWIFT_INTENTIONALLY_SET}" == 'false' ]]; then
 		eselect swift update
 	fi
+
+	# We also want to provide a stable directory which matches our SLOT to avoid
+	# revdep breakages, as patch updates use the same SLOT but otherwise move
+	# the install location on disk.
+	#
+	# See https://bugs.gentoo.org/957730
+	#
+	# We do this in `pkg_postinst` instead of calling `dosym` in `src_install`
+	# because when upgrading from a major version to a patch version, the major
+	# version is still on disk while the patch version is being installed, so
+	# the existing directory is in use and the symlink fails to install.
+	local major_ver="$(ver_cut 1-2)"
+	if [[ "${PV}" != "${major_ver}" ]]; then
+		local libdir="${EROOT}/usr/$(get_libdir)"
+		ln -fsT "${libdir}/${P}" "${libdir}/${PN}-${major_ver}" || die
+	fi
 }
 
 pkg_postrm() {
@@ -325,5 +331,12 @@ pkg_postrm() {
 	local current_swift_version="$(eselect swift show | tail -n1 | xargs)"
 	if [[ "${current_swift_version}" == "${P}" ]]; then
 		eselect swift update
+	fi
+
+	# If we installed a SLOT symlink, we also want to remove it here.
+	local major_ver="$(ver_cut 1-2)"
+	local link="${EROOT}/usr/$(get_libdir)/${PN}-${major_ver}"
+	if [[ -L "${link}" && "${PV}" != "${major_ver}" ]]; then
+		rm "${link}"
 	fi
 }
