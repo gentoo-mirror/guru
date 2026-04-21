@@ -15,7 +15,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm64 ~x86"
 RESTRICT="mirror"
 
-BDEPEND=">=dev-lang/go-1.25.1"
+BDEPEND=">=dev-lang/go-1.25.7"
 DEPEND="dev-vcs/git"
 RDEPEND="${DEPEND}"
 
