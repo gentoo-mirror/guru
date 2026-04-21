@@ -51,9 +51,9 @@ CRATES="
 	cfg-if@1.0.4
 	chacha20@0.10.0
 	chrono@0.4.44
-	clap@4.6.0
+	clap@4.6.1
 	clap_builder@4.6.0
-	clap_derive@4.6.0
+	clap_derive@4.6.1
 	clap_lex@1.0.0
 	codespan-reporting@0.12.0
 	collection_literals@1.0.2
@@ -100,6 +100,7 @@ CRATES="
 	filetime@0.2.27
 	find-msvc-tools@0.1.9
 	foldhash@0.1.5
+	foldhash@0.2.0
 	form_urlencoded@1.2.2
 	fs-err@2.11.0
 	fsevent-sys@4.1.0
@@ -116,8 +117,8 @@ CRATES="
 	fuzzy-matcher@0.3.7
 	fxhash@0.2.1
 	generic-array@0.14.7
-	get-size-derive2@0.7.2
-	get-size2@0.7.2
+	get-size-derive2@0.7.4
+	get-size2@0.7.4
 	getopts@0.2.21
 	getrandom@0.2.16
 	getrandom@0.3.4
@@ -129,26 +130,24 @@ CRATES="
 	hashbrown@0.14.5
 	hashbrown@0.15.5
 	hashbrown@0.16.1
+	hashbrown@0.17.0
 	heck@0.5.0
 	hex@0.4.3
 	home@0.5.12
 	human_bytes@0.4.3
 	iana-time-zone-haiku@0.1.1
 	iana-time-zone@0.1.65
-	icu_collections@1.5.0
-	icu_locid@1.5.0
-	icu_locid_transform@1.5.0
-	icu_locid_transform_data@1.5.0
-	icu_normalizer@1.5.0
-	icu_normalizer_data@1.5.0
-	icu_properties@1.5.1
-	icu_properties_data@1.5.0
-	icu_provider@1.5.0
-	icu_provider_macros@1.5.0
+	icu_collections@2.2.0
+	icu_locale_core@2.2.0
+	icu_normalizer@2.2.0
+	icu_normalizer_data@2.2.0
+	icu_properties@2.2.0
+	icu_properties_data@2.2.0
+	icu_provider@2.2.0
 	id-arena@2.3.0
 	ident_case@1.0.1
 	idna@1.1.0
-	idna_adapter@1.2.0
+	idna_adapter@1.2.1
 	ignore@0.4.25
 	index_vec@0.1.4
 	indexmap@1.9.2
@@ -166,7 +165,7 @@ CRATES="
 	itoa@0.4.8
 	itoa@1.0.18
 	jobserver@0.1.34
-	js-sys@0.3.94
+	js-sys@0.3.95
 	kqueue-sys@1.0.4
 	kqueue@1.1.1
 	lazy_static@1.5.0
@@ -177,7 +176,7 @@ CRATES="
 	link-cplusplus@1.0.9
 	linux-raw-sys@0.12.1
 	linux-raw-sys@0.4.15
-	litemap@0.7.3
+	litemap@0.8.1
 	lock_api@0.4.14
 	lock_free_hashtable@0.1.2
 	log@0.4.29
@@ -223,6 +222,7 @@ CRATES="
 	pin-project-lite@0.2.17
 	pkg-config@0.3.32
 	portable-atomic@1.13.1
+	potential_utf@0.1.4
 	powerfmt@0.2.0
 	ppv-lite86@0.2.21
 	pretty_assertions@1.4.1
@@ -247,7 +247,7 @@ CRATES="
 	rand_core@0.6.4
 	rand_core@0.9.5
 	rayon-core@1.13.0
-	rayon@1.11.0
+	rayon@1.12.0
 	redox_syscall@0.2.10
 	redox_syscall@0.5.6
 	redox_syscall@0.7.0
@@ -271,7 +271,7 @@ CRATES="
 	scopeguard@1.2.0
 	scratch@1.0.6
 	seahash@4.1.0
-	semver@1.0.27
+	semver@1.0.28
 	serde-wasm-bindgen@0.6.5
 	serde@1.0.228
 	serde_bser@0.4.0
@@ -319,7 +319,7 @@ CRATES="
 	time-core@0.1.8
 	time-macros@0.2.27
 	time@0.3.47
-	tinystr@0.7.6
+	tinystr@0.8.3
 	tinyvec@1.8.0
 	tinyvec_macros@0.1.0
 	tokio-macros@2.6.0
@@ -349,11 +349,10 @@ CRATES="
 	unicode_names2_generator@1.2.2
 	unit-prefix@0.5.1
 	url@2.5.8
-	utf16_iter@1.0.5
 	utf8_iter@1.0.4
 	utf8parse@0.2.2
-	uuid-rng-internal@1.23.0
-	uuid@1.23.0
+	uuid-rng-internal@1.23.1
+	uuid@1.23.1
 	valuable@0.1.1
 	vec1@1.12.1
 	version_check@0.9.5
@@ -361,10 +360,10 @@ CRATES="
 	wasi@0.11.0+wasi-snapshot-preview1
 	wasip2@1.0.1+wasi-0.2.4
 	wasip3@0.4.0+wasi-0.3.0-rc-2026-01-06
-	wasm-bindgen-macro-support@0.2.117
-	wasm-bindgen-macro@0.2.117
-	wasm-bindgen-shared@0.2.117
-	wasm-bindgen@0.2.117
+	wasm-bindgen-macro-support@0.2.118
+	wasm-bindgen-macro@0.2.118
+	wasm-bindgen-shared@0.2.118
+	wasm-bindgen@0.2.118
 	wasm-encoder@0.244.0
 	wasm-metadata@0.244.0
 	wasmparser@0.244.0
@@ -421,19 +420,19 @@ CRATES="
 	wit-bindgen@0.51.0
 	wit-component@0.244.0
 	wit-parser@0.244.0
-	write16@1.0.0
-	writeable@0.5.5
+	writeable@0.6.2
 	xattr@1.6.1
 	xxhash-rust@0.8.15
 	yansi@1.0.1
-	yoke-derive@0.7.4
-	yoke@0.7.4
+	yoke-derive@0.8.2
+	yoke@0.8.2
 	zerocopy-derive@0.8.48
 	zerocopy@0.8.48
-	zerofrom-derive@0.1.4
-	zerofrom@0.1.4
-	zerovec-derive@0.10.3
-	zerovec@0.10.4
+	zerofrom-derive@0.1.7
+	zerofrom@0.1.7
+	zerotrie@0.2.4
+	zerovec-derive@0.11.3
+	zerovec@0.11.6
 	zmij@1.0.21
 	zstd-safe@7.2.4
 	zstd-sys@2.0.16+zstd.1.5.7
@@ -478,7 +477,7 @@ S="${WORKDIR}/${P}/${PN}"
 LICENSE="MIT"
 # Dependent crate licenses
 LICENSE+="
-	0BSD Apache-2.0 BSD-2 BSD CC0-1.0 ISC MIT Unicode-3.0
+	0BSD Apache-2.0 BSD-2 BSD Boost-1.0 CC0-1.0 ISC MIT Unicode-3.0
 	Unicode-DFS-2016 ZLIB
 "
 SLOT="0"

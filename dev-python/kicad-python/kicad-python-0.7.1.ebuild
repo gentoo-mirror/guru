@@ -11,7 +11,7 @@ DESCRIPTION="KiCad API Python Bindings for interacting with running KiCad sessio
 HOMEPAGE="https://gitlab.com/kicad/code/kicad-python https://pypi.org/project/kicad-python"
 
 # Proto files version should match kicad release
-KICAD_TAG="9.0.6"
+KICAD_TAG="10.0.1"
 KICAD_PROTO_BASE="https://gitlab.com/kicad/code/kicad/-/raw/${KICAD_TAG}/api/proto"
 
 # List of proto files needed

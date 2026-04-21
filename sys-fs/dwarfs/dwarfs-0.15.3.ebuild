@@ -9,11 +9,12 @@ DESCRIPTION="Fast high compression read-only filesystem for Linux, FreeBSD, macO
 HOMEPAGE="https://github.com/mhx/dwarfs"
 SRC_URI="https://github.com/mhx/dwarfs/releases/download/v${PV}/${P}.tar.xz"
 
+S="${WORKDIR}/dwarfs-${PV}"
+
 LICENSE="GPL-3 MIT"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~arm64"
 IUSE="test +tools +fuse +perfmon flac ricepp stacktrace"
-S="${WORKDIR}/dwarfs-${PV}"
 
 RDEPEND="
 	>=app-arch/libarchive-3.8.6
