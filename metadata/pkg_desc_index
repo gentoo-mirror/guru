@@ -100,7 +100,7 @@ app-admin/aws-vault 7.2.0 7.8.6-r2: Securely store and access AWS credentials in
 app-admin/blahajdots 0.6.1 9999: Bespoke dotfile management for sharkgirls.
 app-admin/boinctui 2.7.1-r1 2.7.2: Fullscreen text mode manager for the BOINC client
 app-admin/chamber 2.13.2: Managing secrets in AWS SSM Parameter Store
-app-admin/chezmoi 2.65.2 2.66.0 2.67.0-r1 2.68.1 2.69.0 2.69.1 2.69.3 2.70.0: Manage your dotfiles across multiple machines, securely
+app-admin/chezmoi 2.69.3 2.70.0 2.70.2: Manage your dotfiles across multiple machines, securely
 app-admin/customrescuecd-x86_64 0.12.7 0.12.8: A system rescue cd or usbstick for desktop and server based on gentoo
 app-admin/doasedit 1.0.8 1.0.9 9999: Edit files as root using an unprivileged editor
 app-admin/dotbot 1.20.1: A tool that bootstraps your dotfiles
@@ -274,7 +274,7 @@ app-misc/fetch 2.0.0 9999: A donut.c-inspired fetch tool that spins your distro 
 app-misc/fetsh 1.8 1.9 9999: A fetch written in POSIX shell without any external commands
 app-misc/fff 2.2: A simple file manager written in bash
 app-misc/gentodo 0.2.1 1.1.0 1.1.1 9999: Todo program to help enhance your Gentoo workflow
-app-misc/ghq 1.1.5 1.8.0 1.9.4 9999: Remote repository management made easy
+app-misc/ghq 1.8.0 1.9.4 1.10.1 9999: Remote repository management made easy
 app-misc/github-desktop-bin 3.4.9_rc1: Linux fork of GitHub Desktop
 app-misc/glow 1.5.1 2.0.0 2.1.1: Render markdown on the CLI, with pizzazz!
 app-misc/godedupe 1.5.1 1.5.2: Improved and modern fdupes alternative
@@ -297,7 +297,7 @@ app-misc/mangadesk 0.7.7 0.7.8: Terminal Client for MangaDex
 app-misc/mat2 0.13.5 0.14.0: Metadata Anonymisation Toolkit: handy tool to trash your metadata
 app-misc/metadata-cleaner 4.0.0: Python GTK application to view and clean metadata in files, using mat2.
 app-misc/metetch 0.5.4: Fast system information display utility with modular customizable features
-app-misc/minder 2.0.8: Mind-mapping application for Elementary OS.
+app-misc/minder 2.0.9: Mind-mapping application for Elementary OS.
 app-misc/mirafetch 0.2.0 9999: A Rust reimplementation of Hyfetch wih a focus on speed
 app-misc/morgen 3.6.10: Morgen simplifies time management by consolidating all your calendars.
 app-misc/mxw 0.1.2 0.2.1: CLI tool for Glorious wireless mice
@@ -541,6 +541,7 @@ dev-embedded/esp-idf-size 1.7.1 2.1.0: Firmware size analysis for ESP-IDF
 dev-embedded/freertos-gdb 1.0.4: Python module for operating with freeRTOS-kernel objects in GDB
 dev-embedded/fwup 1.13.2 1.14.0 1.15.0: Configurable embedded Linux firmware update creator and runner
 dev-embedded/idf-component-manager 2.4.2 2.4.6 3.0.0: Tool for installing ESP-IDF components
+dev-embedded/imsprog 1.8.3: I2C, MicroWire and SPI EEPROM/Flash chip Programmer
 dev-embedded/mv88e6xxx-dump 0.2.0_pre20210327: Dump information about Marvell mv88e6xxx Ethernet switches
 dev-embedded/nxp-gui-guider 1.10.1: GUI Guider is a user-friendly GUI development tool for LVGL
 dev-embedded/pico-sdk 2.1.1 2.2.0: Libraries and tools for C/C++ development on RP2040 and RP2350 microcontrollers.
@@ -845,7 +846,7 @@ dev-python/json_exporter 1.0.2: Python-based library for exporting JSON data as 
 dev-python/jsonfeed 1.1.2: Python package for parsing and generating JSON feeds.
 dev-python/jsonlines 4.0.0: Library with helpers for the jsonlines file format
 dev-python/justhtml 0.16.0: A pure Python HTML5 parser that just works.
-dev-python/kicad-python 0.5.0-r1 0.6.0: KiCad API Python Bindings for interacting with running KiCad sessions
+dev-python/kicad-python 0.7.1: KiCad API Python Bindings for interacting with running KiCad sessions
 dev-python/langdetect 1.0.9: Port of Google's language-detection library to Python
 dev-python/latexify-py 0.4.3.1 0.4.4.1: Annotate Python source code to get LaTeX expressions
 dev-python/ledger-bitcoin 0.4.0: Client library for Ledger Bitcoin application
@@ -945,7 +946,7 @@ dev-python/pypandoc 1.17: Pypandoc provides a thin wrapper for pandoc, a univers
 dev-python/pyperscan 0.3.0: An opinionated Python binding for Hyperscan
 dev-python/pyproject2ebuild 0.0.3: Convert pyproject.toml to Gentoo ebuilds automatically.
 dev-python/pyqtdarktheme 2.1.0: A flat dark theme for PySide and PyQt.
-dev-python/pyrefly 0.59.1 0.60.2 0.61.0 0.61.1: A fast type checker and language server for Python with powerful IDE features
+dev-python/pyrefly 0.59.1 0.60.2 0.61.1 0.62.0: A fast type checker and language server for Python with powerful IDE features
 dev-python/pyrime 0.0.7: rime for python
 dev-python/pysdl3 0.9.9_beta1: A pure Python wrapper for SDL3
 dev-python/pysnooper 1.2.1 1.2.3: Never use print for debugging again
@@ -1087,7 +1088,7 @@ dev-util/bump-my-version 1.2.6 1.2.7: Version bump your Python project
 dev-util/cargo-post 0.1.7: A cargo wrapper that executes a post build script after a successful build.
 dev-util/cargo-show-asm 0.2.55: A cargo subcommand that displays the generated assembly of Rust source code.
 dev-util/catalyst-lab 1.6.0 1.6.1: An automation tool for building Gentoo release stages and binhost packages.
-dev-util/codex 0.121.0: Codex CLI - OpenAI's AI-powered coding agent
+dev-util/codex 0.122.0: Codex CLI - OpenAI's AI-powered coding agent
 dev-util/coq-lsp 0.1.9: Visual Studio Code Extension and Language Server Protocol for Coq
 dev-util/deblob 0.12 9999: remove binary executables from a directory
 dev-util/distribution-gpg-keys 1.117: Collection of GPG keys used in Linux Distributions
@@ -1474,6 +1475,7 @@ media-fonts/warframe-fonts 0_pre20191111: Fonts from the Warframe game
 media-gfx/KTX-Software 4.3.2 4.4.2: KTX (Khronos Texture) Library and Tools
 media-gfx/WebPlotDigitizer-bin 4.7: Web based tool to extract data from plots, images, and maps
 media-gfx/airsane 0.4.7: Publish SANE scanners via Apple Airscan/eSCL
+media-gfx/appimage-thumbnailer 4.0.0: Generates AppImage thumbnails for Linux desktops
 media-gfx/azpainter 3.0.12: Full color painting software for Linux for illustration drawing
 media-gfx/bambustudio-bin 02.06.00.51: Bambu Studio is a cutting-edge, feature-rich slicing software
 media-gfx/beeref 0.3.3: A Simple Reference Image Viewer
@@ -1753,7 +1755,7 @@ net-misc/eg25-manager 0.4.2: Daemon for managing the Quectel EG25 modem
 net-misc/ffsend 0.2.77 9999: Easily and securely share files from the command line
 net-misc/fileshelter 6.4.0: FileShelter is a “one-click” file sharing web application
 net-misc/flypaper 0.4.3: Externally bind or mark sockets on the fly
-net-misc/freetube-bin 0.23.14_beta 0.23.15_beta: A private YouTube desktop client
+net-misc/freetube-bin 0.23.15_beta: A private YouTube desktop client
 net-misc/gazelle-tui 1.8.2: Minimal NetworkManager TUI with complete 802.1X enterprise WiFi support
 net-misc/gdown 5.2.0 5.2.1: Google Drive public file/folder downloader
 net-misc/gdrive 3.9.0-r1 3.9.1-r1: Google Drive CLI Client
@@ -1799,7 +1801,7 @@ net-news/gfeeds 2.2.0-r3: An RSS/Atom feed reader for GNOME.
 net-news/newsflash 3.1.6 3.1.6-r1 3.3.5: Feed Reader written in GTK
 net-news/newsraft 0.30 0.32 0.34 9999: A lightweight feed reader with ncurses user interface inspired by Newsboat.
 net-nntp/inn 2.7.1 2.7.3: InterNetNews - the Internet meets Netnews
-net-nntp/nzb-monkey-go 0.2.1 0.3.0 0.3.1: Golang version of the NZB Monkey with included NZB direct search
+net-nntp/nzb-monkey-go 0.2.1 0.3.0 0.3.1 0.3.3: Golang version of the NZB Monkey with included NZB direct search
 net-nntp/pan 0.164 0.165: A newsreader for GNOME
 net-p2p/bisq-bin 1.9.14-r1: The decentralized bitcoin exchange (non-atomic, with arbitration)
 net-p2p/dogecoin-qt 1.14.9 9999: Dogecoin Core Qt for desktop. Downloaded blockchain is under 2.2GB. Much secure.
