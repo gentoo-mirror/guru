@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit toolchain-funcs edo shell-completion
+inherit toolchain-funcs edo
 
 DESCRIPTION="X11 daemon to auto run commands triggered by user specified events"
 HOMEPAGE="https://codeberg.org/NRK/xuv"
