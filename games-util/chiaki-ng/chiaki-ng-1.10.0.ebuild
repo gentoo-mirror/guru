@@ -66,10 +66,6 @@ BDEPEND="
 "
 
 PATCHES=(
-	# Fix build failure with Qt 6.10+ (GuiPrivate not found)
-	# https://github.com/streetpea/chiaki-ng/issues/669
-	# https://github.com/streetpea/chiaki-ng/pull/670
-	"${FILESDIR}/${P}-fix-qt6-guiprivate.patch"
 	# Use shared nanopb library instead of static
 	# https://bugs.gentoo.org/965824
 	"${FILESDIR}/${P}-use-shared-nanopb.patch"
@@ -80,7 +76,9 @@ src_prepare() {
 
 	if use test; then
 		rm -r "${S}"/test/munit
-		ln -s "${WORKDIR}"/munit-${VER_MUNIT} "${S}"/test/munit
+		cp -r "${WORKDIR}"/munit-${VER_MUNIT} "${S}"/test/munit || die
+		# munit uses ATOMIC_VAR_INIT, which was removed in C23 (GCC 15+)
+		eapply "${FILESDIR}/${P}-munit-c23.patch"
 	fi
 }
 

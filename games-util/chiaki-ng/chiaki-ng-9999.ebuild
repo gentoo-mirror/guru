@@ -68,7 +68,7 @@ BDEPEND="
 PATCHES=(
 	# Use shared nanopb library instead of static
 	# https://bugs.gentoo.org/965824
-	"${FILESDIR}/${PN}-1.9.9-use-shared-nanopb.patch"
+	"${FILESDIR}/${PN}-1.10.0-use-shared-nanopb.patch"
 )
 
 src_prepare() {
@@ -76,7 +76,9 @@ src_prepare() {
 
 	if use test; then
 		rm -r "${S}"/test/munit
-		ln -s "${WORKDIR}"/munit-${VER_MUNIT} "${S}"/test/munit
+		cp -r "${WORKDIR}"/munit-${VER_MUNIT} "${S}"/test/munit || die
+		# munit uses ATOMIC_VAR_INIT, which was removed in C23 (GCC 15+)
+		eapply "${FILESDIR}/${PN}-1.10.0-munit-c23.patch"
 	fi
 }
 
