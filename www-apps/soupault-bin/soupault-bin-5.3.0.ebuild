@@ -9,7 +9,7 @@ DESCRIPTION="Static website generator based on HTML rewriting"
 HOMEPAGE="https://soupault.net"
 SRC_URI="
 	amd64? ( ${BASE_SRC_URI//@arch@/x86_64} )
-	arm64? ( ${BASE_SRC_URI//@arch@/aarch64} )
+	arm64? ( ${BASE_SRC_URI//@arch@/arm64} )
 "
 
 LICENSE="MIT"
