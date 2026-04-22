@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{12..14} )
+PYTHON_COMPAT=( python3_{11..14} )
 
 inherit python-single-r1
 
@@ -14,8 +14,9 @@ SRC_URI="https://github.com/YosysHQ/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 LICENSE="ISC"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="yices2"
+IUSE="test yices2"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
+RESTRICT="!test? ( test )"
 
 RDEPEND="
 	${PYTHON_DEPS}
@@ -27,6 +28,19 @@ RDEPEND="
 	yices2? ( sci-mathematics/yices2 )
 "
 DEPEND="${RDEPEND}"
+BDEPEND="
+	test? (
+		$(python_gen_cond_dep '
+			dev-python/xmlschema[${PYTHON_USEDEP}]
+		')
+	)
+"
+
+src_test() {
+	# Upstream tests race under parallel make (concurrent sqlite WAL access
+	# to shared status_db). Force serial execution.
+	emake -j1 -C tests test
+}
 
 src_install() {
 	# Install Python modules to yosys shared directory
