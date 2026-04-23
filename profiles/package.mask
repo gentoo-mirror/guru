@@ -18,6 +18,18 @@
 
 # New entries go on top.
 
+# Joe Kappus <joe@wt.gd) (2026-04-23)
+# Packages requiring ::gentoo masked for removal dev-python/pyqt5
+# dev-python/cassowary completely dead upstream and insecure.
+# Removal 2026-05-21
+dev-python/cassowary
+# Mostly dead upstream, not much progress on pyqt6 bringup
+# Removal 2026-05-21
+media-gfx/vimiv-qt
+# progress getting made, unmask when done.
+# https://github.com/autokey/autokey/pull/1104
+x11-apps/autokey
+
 # David Roman <stkw0@disroot.org> (2026-04-07)
 # Requires <dev-python/priority-2.0.0 which was removed in ::gentoo
 # Maintainer has been inactive since 2024
