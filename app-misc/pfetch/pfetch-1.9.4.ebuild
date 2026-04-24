@@ -17,7 +17,11 @@ fi
 LICENSE="MIT"
 SLOT="0"
 
+src_compile() {
+	:
+}
+
 src_install() {
 	emake PREFIX=/usr DESTDIR="${D}" install
-	dodoc README*
+	einstalldocs
 }
