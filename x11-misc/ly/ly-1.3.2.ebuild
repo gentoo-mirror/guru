@@ -25,7 +25,6 @@ SRC_URI="
 "
 
 S="${WORKDIR}/${PN}"
-RES="${S}/res"
 
 LICENSE="WTFPL-2"
 SLOT="0"
@@ -47,41 +46,49 @@ RDEPEND="
 		x11-apps/xrdb
 		x11-apps/xmessage
 	)
-	sys-libs/ncurses
 "
 
 # https://github.com/ziglang/zig/issues/3382
 QA_FLAGS_IGNORED="usr/bin/ly"
 
-src_configure() {
-	local my_zbs_args=(
-		$(usex X -Denable_x11_support=true -Denable_x11_support=false)
-	)
-	zig_src_configure
-}
+src_prepare() {
+	zig_src_prepare
 
-src_install() {
 	sed -e "s|\$PREFIX_DIRECTORY|/usr|g" \
 	-e "s|\$EXECUTABLE_NAME|ly|g" \
 	-e "s|\$DEFAULT_TTY|2|g" \
 	-e "s|\$CONFIG_DIRECTORY|/etc|g"\
-	-i "${RES}/${PN}@.service" \
-	-i "${RES}/${PN}-openrc" \
-	-i "${RES}/config.ini" || die "Sed Failed!"
-
-	dobin "${WORKDIR}/${P}-build/usr/bin/${PN}"
-	newinitd "${RES}/${PN}-openrc" ${PN}
-	systemd_dounit "${RES}/${PN}@.service"
-	insinto /etc/${PN}
-	doins "${RES}/config.ini" "${RES}/setup.sh"
-	insinto "/etc/${PN}/lang"
-	doins ${RES}/lang/*.ini
-	newpamd "${RES}/pam.d/ly-linux" ly
-	fperms +x /etc/${PN}/setup.sh
+	-i "${S}/res/${PN}@.service" \
+	-i "${S}/res/${PN}-openrc" \
+	-i "${S}/res/config.ini" || die
 }
 
-pkg_postinst() {
-	systemd_reenable "${PN}@.service"
+src_configure() {
+	local my_zbs_args=(
+		-Denable_x11_support=$(usex X true false)
+	)
 
-	ewarn "Only systemd and openrc files are installed"
+	zig_src_configure
+}
+
+src_install() {
+	zig_src_install
+
+	dodoc readme.md
+	newdoc res/custom-sessions/README custom-sessions
+
+	newinitd "${S}/res/${PN}-openrc" ${PN}
+
+	systemd_dounit "${S}/res/${PN}@.service"
+
+	insinto "/etc/${PN}"
+	doins "${S}/res/config.ini"
+
+	exeinto "/etc/${PN}"
+	doexe "${S}/res/setup.sh"
+
+	insinto "/etc/${PN}/lang"
+	doins "${S}/res/lang/"*.ini
+
+	newpamd "${S}/res/pam.d/ly-linux" ly
 }
