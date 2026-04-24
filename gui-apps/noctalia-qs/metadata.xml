@@ -25,6 +25,7 @@
 		<flag name="sockets">Enable Unix Sockets (WARNING: Disabling is unsafe!)</flag>
 		<flag name="toplevel-management">Enable management of windows through zwlr-foreign-toplevel-management-v1 protocol</flag>
 		<flag name="tray">Enable system tray support using the status notifier dbus protocol</flag>
+		<flag name="crash-handler">Enable crash handling using <pkg>dev-cpp/cpptrace</pkg></flag>
 	</use>
 	<upstream>
 		<remote-id type="github">noctalia-dev/noctalia-qs</remote-id>

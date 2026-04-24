@@ -17,10 +17,9 @@ else
 	https://codeberg.org/LGFae/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
 	${CARGO_CRATE_URIS}
 	"
+	S="${WORKDIR}/${PN}"
 	KEYWORDS="~amd64"
 fi
-
-S="${WORKDIR}/${PN}"
 
 LICENSE="GPL-3"
 # Dependent crate licenses

@@ -18,6 +18,18 @@
 
 # New entries go on top.
 
+# Joe Kappus <joe@wt.gd) (2026-04-23)
+# Packages requiring ::gentoo masked for removal dev-python/pyqt5
+# dev-python/cassowary completely dead upstream and insecure.
+# Removal 2026-05-21
+dev-python/cassowary
+# Mostly dead upstream, not much progress on pyqt6 bringup
+# Removal 2026-05-21
+media-gfx/vimiv-qt
+# progress getting made, unmask when done.
+# https://github.com/autokey/autokey/pull/1104
+x11-apps/autokey
+
 # David Roman <stkw0@disroot.org> (2026-04-07)
 # Requires <dev-python/priority-2.0.0 which was removed in ::gentoo
 # Maintainer has been inactive since 2024
@@ -86,20 +98,6 @@ dev-python/mkdocs-rss-plugin
 # dsaf <ghostyn678+git@gmail.com> (2026-02-02)
 # Requires systemd. Cannot be masked per profile (see top comment)
 app-admin/run0edit
-
-# Anna (cybertailor) Vyalkova <cyber+gentoo@sysrq.in> (2025-05-24)
-# Depends on masked net-libs/stem.
-# Masked until upstream supports running without stem.
-www-apps/whoogle-search
-
-# Vivian Heisz (demize) <demize@unstable.systems> (2025-04-20)
-# Depends on ~dev-ruby/prawn-2.34.0, which was removed in
-# ::gentoo, making this unable to build.
-#
-# This update will likely happen in asciidoctor-pdf 3.0.0.
-# Please unmask when appropriate.
-# Bug #954116.
-dev-ruby/asciidoctor-pdf
 
 # Julien Roy <julien@jroy.ca> (2024-03-21)
 # sys-libs/libucontext is masked in ::gentoo

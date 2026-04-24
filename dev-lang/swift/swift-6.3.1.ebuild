@@ -337,6 +337,6 @@ pkg_postrm() {
 	local major_ver="$(ver_cut 1-2)"
 	local link="${EROOT}/usr/$(get_libdir)/${PN}-${major_ver}"
 	if [[ -L "${link}" && "${PV}" != "${major_ver}" ]]; then
-		rm "${link}"
+		rm -f "${link}"
 	fi
 }

@@ -21,10 +21,13 @@ SLOT="0"
 
 # Upstream recommends leaving all build options enabled by default
 IUSE="
-	+bluetooth +dwl +greetd +hyprland +i3 +jemalloc +layer-shell
-	+mpris +networkmanager +niri +notifications +pam +pipewire +policykit
-	+screencopy +session-lock +sockets +tray +toplevel-management
-	+upower +wayland +X
+	+jemalloc +sockets
+	+wayland +layer-shell +session-lock +toplevel-management
+	+hyprland +screencopy
+	+X +i3
+	+tray +pipewire +mpris +pam +policykit +greetd +upower +notifications
+	+bluetooth +networkmanager +crash-handler
+	+dwl +niri
 "
 REQUIRED_USE="
 	hyprland?            ( wayland )
@@ -70,6 +73,7 @@ BDEPEND="
 		dev-libs/wayland-protocols
 		dev-util/wayland-scanner
 	)
+	crash-handler? ( dev-cpp/cpptrace[unwind] )
 "
 
 DOCS=( README.md changelog/ )
@@ -88,7 +92,7 @@ src_configure() {
 		-DDISTRIBUTOR="${BRANDING_OS_NAME} GURU"
 		-DINSTALL_QML_PREFIX="$(get_libdir)/qt6/qml"
 		-DGIT_REVISION=${EGIT_COMMIT}
-		-DCRASH_HANDLER=no # dev-cpp/cpptrace::gentoo does not have required use flags
+		-DCRASH_HANDLER=$(usex crash-handler)
 		-DBLUETOOTH=$(usex bluetooth)
 		-DDWL=$(usex dwl)
 		-DHYPRLAND=${_hyprland}
