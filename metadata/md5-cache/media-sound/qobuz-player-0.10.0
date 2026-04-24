@@ -1,0 +1,16 @@
+BDEPEND=virtual/pkgconfig || ( >=dev-lang/rust-bin-1.92:* >=dev-lang/rust-1.92:* )
+DEFINED_PHASES=compile configure install prepare setup test unpack
+DEPEND=dev-db/sqlite:3= dev-libs/glib gtk? ( gui-libs/libadwaita ) media-libs/alsa-lib sys-apps/dbus
+DESCRIPTION=Tui, web and rfid player for Qobuz
+EAPI=8
+HOMEPAGE=https://github.com/SofusA/qobuz-player
+INHERIT=cargo
+IUSE=gtk debug
+KEYWORDS=~amd64
+LICENSE=GPL-3 Apache-2.0 BSD-2 BSD CDLA-Permissive-2.0 ISC MIT MPL-2.0 UoI-NCSA Unicode-3.0 ZLIB
+RDEPEND=dev-db/sqlite:3= dev-libs/glib gtk? ( gui-libs/libadwaita ) media-libs/alsa-lib sys-apps/dbus
+RESTRICT=test
+SLOT=0
+SRC_URI=https://github.com/SofusA/qobuz-player/archive/refs/tags/v0.10.0.tar.gz -> qobuz-player-0.10.0.tar.gz https://github.com/gentoo-crate-dist/qobuz-player/releases/download/v0.10.0/qobuz-player-0.10.0-crates.tar.xz https://github.com/RustAudio/cpal/archive/fd3b945bffcaa493fa7cb5ceddf9db1f9330fd30.tar.gz -> cpal-fd3b945bffcaa493fa7cb5ceddf9db1f9330fd30.gh.tar.gz https://github.com/RustAudio/rodio/archive/a352fb53846b47523d828b276b6d625f251aabb2.tar.gz -> rodio-a352fb53846b47523d828b276b6d625f251aabb2.gh.tar.gz https://github.com/SeaDve/mpris-server/archive/f8b3f74e93910fffd0c93df687e05cf954dcdeba.tar.gz -> mpris-server-f8b3f74e93910fffd0c93df687e05cf954dcdeba.gh.tar.gz
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	rust	c5ae4c9b5eca97bd7fc77fede663873f	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	53bab5a62cfc3526d8ed02c0a38a6033
+_md5_=0300c4d3f3e6dbfc4b2c895fa602677e

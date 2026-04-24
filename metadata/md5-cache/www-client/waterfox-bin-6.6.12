@@ -1,0 +1,13 @@
+DEFINED_PHASES=install postinst postrm
+DESCRIPTION=A privacy-focused, performance-oriented browser based on Firefox
+EAPI=8
+HOMEPAGE=https://www.waterfox.com/
+INHERIT=desktop xdg-utils
+KEYWORDS=-* ~amd64
+LICENSE=MPL-2.0
+RDEPEND=!www-client/firefox-bin:0 || ( media-libs/libpulse media-sound/apulse ) >=app-accessibility/at-spi2-core-2.46.0:2 >=dev-libs/glib-2.26:2 media-libs/alsa-lib media-libs/fontconfig >=media-libs/freetype-2.4.10 media-video/ffmpeg sys-apps/dbus virtual/freedesktop-icon-theme >=x11-libs/cairo-1.10[X] x11-libs/gdk-pixbuf:2 >=x11-libs/gtk+-3.11:3[X] x11-libs/libX11 x11-libs/libXcomposite x11-libs/libXcursor x11-libs/libXdamage x11-libs/libXext x11-libs/libXfixes x11-libs/libXi x11-libs/libXrandr x11-libs/libXrender x11-libs/libxcb >=x11-libs/pango-1.22.0
+RESTRICT=strip
+SLOT=0
+SRC_URI=https://cdn.waterfox.com/waterfox/releases/6.6.12/Linux_x86_64/waterfox-6.6.12.tar.bz2 -> waterfox-bin-6.6.12.tar.bz2
+_eclasses_=desktop	26d57169ca094c04be416993844ec8bc	xdg-utils	42869b3c8d86a70ef3cf75165a395e09
+_md5_=346d0fa0bc781ed575672e8d6609578b
