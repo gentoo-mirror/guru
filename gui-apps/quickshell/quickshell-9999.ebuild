@@ -25,7 +25,7 @@ IUSE="
 	+hyprland +screencopy
 	+X +i3
 	+tray +pipewire +mpris +pam +policykit +greetd +upower +notifications
-	+bluetooth +networkmanager
+	+bluetooth +networkmanager +crash-handler
 "
 REQUIRED_USE="
 	layer-shell?         ( wayland )
@@ -69,6 +69,7 @@ BDEPEND="
 		dev-util/wayland-scanner
 		dev-libs/wayland-protocols
 	)
+	crash-handler? ( dev-cpp/cpptrace[unwind] )
 "
 
 DOCS=( README.md changelog/ )
@@ -90,7 +91,7 @@ src_configure() {
 		-DDISTRIBUTOR="${BRANDING_OS_NAME} GURU"
 		-DINSTALL_QML_PREFIX="$(get_libdir)/qt6/qml"
 		-DGIT_REVISION=${EGIT_COMMIT}
-		-DCRASH_HANDLER=no # dev-cpp/cpptrace::gentoo does not have required use flags
+		-DCRASH_HANDLER=$(usex crash-handler)
 		-DUSE_JEMALLOC=$(usex jemalloc)
 		-DSOCKETS=$(usex sockets)
 		-DWAYLAND=$(usex wayland)
