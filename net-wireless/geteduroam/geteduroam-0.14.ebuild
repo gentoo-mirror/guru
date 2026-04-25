@@ -49,6 +49,4 @@ src_install() {
 		systemd_douserunit "systemd/user/${PN}/${PN}-notifs.service"
 		systemd_douserunit "systemd/user/${PN}/${PN}-notifs.timer"
 	fi
-
-	doman "${FILESDIR}/geteduroam-cli.1" "${FILESDIR}/geteduroam-gui.1" "${FILESDIR}/geteduroam-notifcheck.1"
 }
