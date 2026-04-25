@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit linux-mod-r1 toolchain-funcs
+inherit linux-mod-r1 multiprocessing toolchain-funcs
 
 DESCRIPTION="AMD XDNA Driver"
 HOMEPAGE="https://github.com/amd/xdna-driver"
@@ -40,17 +40,41 @@ else
 
 	FW_URI_PREFIX=https://gitlab.com/kernel-firmware/drm-firmware/-/raw/${FW_COMMIT}/amdnpu
 
-	SRC_URI+=" firmware? ( "
+	SRC_URI+=" "
 	for fw in "${!FIRMWARES[@]}"; do
 		SRC_URI+="${FW_URI_PREFIX}/${fw} -> ${FW_COMMIT:0:6}-${fw%%/*}__${FIRMWARES[${fw}]} "
 	done
-	SRC_URI+=")"
 fi
 
 S="${WORKDIR}/${P}/src/driver/amdxdna"
-LICENSE="GPL-2 firmware? ( linux-fw-redistributable )"
+LICENSE="GPL-2 linux-fw-redistributable"
 SLOT="0"
-IUSE="+firmware"
+# Re-use compress-* USE flags from sys-kernel/linux-firmware.
+IUSE="compress-xz compress-zstd"
+REQUIRED_USE="?? ( compress-xz compress-zstd )"
+
+BDEPEND="
+	compress-xz? ( app-arch/xz-utils )
+	compress-zstd? ( app-arch/zstd )
+"
+
+pkg_setup() {
+	if use compress-xz || use compress-zstd ; then
+		local CONFIG_CHECK
+
+		if kernel_is -ge 5 19; then
+			use compress-xz && CONFIG_CHECK="~FW_LOADER_COMPRESS_XZ"
+			use compress-zstd && CONFIG_CHECK="~FW_LOADER_COMPRESS_ZSTD"
+		else
+			use compress-xz && CONFIG_CHECK="~FW_LOADER_COMPRESS"
+			if use compress-zstd; then
+				eerror "Kernels <5.19 do not support ZSTD-compressed firmware files"
+			fi
+		fi
+		linux-info_pkg_setup
+	fi
+	linux-mod-r1_pkg_setup
+}
 
 pkg_info() {
 	if [[ ${PV} != 999999 ]] ; then
@@ -99,7 +123,6 @@ src_prepare() {
 	# Forward clang compiler, otherwise fails when kernel is compiled with clang cflags
 	# shellcheck disable=SC2016
 	sed -e 's/make -s /make -s CC="${CC}" /' \
-		-e 's:>/dev/null 2>&1::' \
 		-i "${WORKDIR}/${P}"/src/driver/tools/configure_kernel.sh || die
 
 	default
@@ -122,6 +145,23 @@ src_install() {
 	insinto /lib/firmware/amdnpu
 	doins -r "${WORKDIR}/${P}/amdxdna_bins/firmware"/*
 
+	if use compress-xz || use compress-zstd; then
+		pushd "${ED}/lib/firmware/amdnpu" &>/dev/null || die
+		einfo "Compressing firmware ..."
+		local compressor
+
+		if use compress-xz; then
+			compressor="xz -T1 -C crc32"
+		elif use compress-zstd; then
+			compressor="zstd -15 -T1 -C -q --rm"
+		fi
+		# shellcheck disable=SC2086
+		find . -type f -print0 | \
+			xargs -0 -P $(makeopts_jobs) -I'{}' ${compressor} '{}'
+		assert
+		popd &>/dev/null || die
+	fi
+
 	insinto /usr/lib/modules-load.d
 	newins - amdxdna.conf <<-EOF
 		amdxdna
@@ -129,7 +169,7 @@ src_install() {
 
 	insinto /etc/modprobe.d
 	newins - amdxdna.conf <<-EOF
-		install amdxdna /sbin/insmod /lib/modules/\$(uname -r)/extra/amdxdna.ko \$CMDLINE_OPTS
+		install amdxdna /sbin/insmod /lib/modules/\$(uname -r)/extra/amdxdna.ko* \$CMDLINE_OPTS
 	EOF
 
 	linux-mod-r1_src_install
