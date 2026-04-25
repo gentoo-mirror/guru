@@ -53,7 +53,7 @@ SLOT="0"
 RESTRICT="bindist mirror strip"
 
 RDEPEND="
-	dev-util/xrt
+	~dev-util/xrt-${PV}
 	sys-apps/util-linux
 "
 
