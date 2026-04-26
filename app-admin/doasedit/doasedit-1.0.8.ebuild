@@ -17,8 +17,8 @@ DESCRIPTION="Edit files as root using an unprivileged editor"
 HOMEPAGE="https://codeberg.org/TotallyLeGIT/doasedit"
 
 LICENSE="MIT"
-
 SLOT="0"
+RESTRICT="strip test"
 
 RDEPEND="
 	app-admin/doas
