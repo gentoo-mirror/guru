@@ -1,12 +1,10 @@
-BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
-DEFINED_PHASES=compile install unpack
+DEFINED_PHASES=compile install
 DESCRIPTION=A pretty system information tool written in POSIX sh
 EAPI=8
 HOMEPAGE=https://github.com/Un1q32/pfetch
-INHERIT=git-r3
+KEYWORDS=~amd64
 LICENSE=MIT
-PROPERTIES=live
 RESTRICT=strip test
 SLOT=0
-_eclasses_=git-r3	7b584b5dc33e3bc66ff5b9271bf41764
+SRC_URI=https://github.com/Un1q32/pfetch/archive/1.10.0/pfetch-1.10.0.tar.gz
 _md5_=6830b49700b20c7ac48f4fe6e0a83eac

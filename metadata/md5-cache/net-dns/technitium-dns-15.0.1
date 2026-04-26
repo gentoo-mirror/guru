@@ -1,0 +1,15 @@
+BDEPEND=virtual/dotnet-sdk:10.0 dev-dotnet/csharp-gentoodotnetinfo virtual/pkgconfig
+DEFINED_PHASES=compile configure install postinst postrm prepare setup test unpack
+DESCRIPTION=Open-source, self-hosted authoritative and recursive DNS+DHCP server.
+EAPI=8
+HOMEPAGE=https://technitium.com/dns/
+INHERIT=dotnet-pkg systemd
+IUSE=debug
+KEYWORDS=-* ~amd64
+LICENSE=GPL-3
+RDEPEND=>=dev-libs/icu-70 virtual/dotnet-sdk:10.0
+RESTRICT=strip
+SLOT=0
+SRC_URI=https://github.com/TechnitiumSoftware/DnsServer/archive/refs/tags/v15.0.1.tar.gz -> TechnitiumDnsServer-15.0.1.tar.gz https://github.com/TechnitiumSoftware/TechnitiumLibrary/archive/refs/tags/dns-server-v15.0.1.tar.gz -> TechnitiumLibrary-15.0.1.tar.gz https://api.nuget.org/v3-flatcontainer/bouncycastle.cryptography/2.6.2/bouncycastle.cryptography.2.6.2.nupkg https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authentication.openidconnect/10.0.7/microsoft.aspnetcore.authentication.openidconnect.10.0.7.nupkg https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.abstractions/8.0.1/microsoft.identitymodel.abstractions.8.0.1.nupkg https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.jsonwebtokens/8.0.1/microsoft.identitymodel.jsonwebtokens.8.0.1.nupkg https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.logging/8.0.1/microsoft.identitymodel.logging.8.0.1.nupkg https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.protocols.openidconnect/8.0.1/microsoft.identitymodel.protocols.openidconnect.8.0.1.nupkg https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.protocols/8.0.1/microsoft.identitymodel.protocols.8.0.1.nupkg https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.tokens/8.0.1/microsoft.identitymodel.tokens.8.0.1.nupkg https://api.nuget.org/v3-flatcontainer/microsoft.win32.systemevents/6.0.0/microsoft.win32.systemevents.6.0.0.nupkg https://api.nuget.org/v3-flatcontainer/qrcoder/1.8.0/qrcoder.1.8.0.nupkg https://api.nuget.org/v3-flatcontainer/system.drawing.common/6.0.0/system.drawing.common.6.0.0.nupkg https://api.nuget.org/v3-flatcontainer/system.identitymodel.tokens.jwt/8.0.1/system.identitymodel.tokens.jwt.8.0.1.nupkg
+_eclasses_=edo	a5e294016aa84979fcb2459749eb80b2	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	nuget	a7033f7321d93b6b38dc9aed53c83bb8	dotnet-pkg-base	6c5f563c6f9f99038ac0ddf7403e3b55	dotnet-pkg	149be926006315896e1a57f36db1b772	toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	systemd	a964c0cbe818b5729da1dbfcee5be861
+_md5_=5d81bbb8306f39ac312b21de9b1496bf

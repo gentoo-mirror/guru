@@ -1,15 +1,16 @@
-BDEPEND=app-misc/jq net-misc/wget dev-util/pahole sys-apps/kmod[tools] modules-sign? ( dev-libs/openssl virtual/pkgconfig ) >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=compress-xz? ( app-arch/xz-utils ) compress-zstd? ( app-arch/zstd ) dev-util/pahole sys-apps/kmod[tools] modules-sign? ( dev-libs/openssl virtual/pkgconfig ) >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure info install postinst prepare setup unpack
 DEPEND=virtual/linux-sources
 DESCRIPTION=AMD XDNA Driver
 EAPI=8
 HOMEPAGE=https://github.com/amd/xdna-driver
 IDEPEND=sys-apps/kmod[tools]
-INHERIT=linux-mod-r1 toolchain-funcs git-r3
-IUSE=+firmware dist-kernel modules-compress modules-sign +strip
-LICENSE=GPL-2 firmware? ( linux-fw-redistributable )
+INHERIT=linux-mod-r1 multiprocessing toolchain-funcs git-r3
+IUSE=compress-xz compress-zstd dist-kernel modules-compress modules-sign +strip
+LICENSE=GPL-2 linux-fw-redistributable
 PROPERTIES=live
 RDEPEND=sys-apps/kmod[tools] dist-kernel? ( virtual/dist-kernel:= )
+REQUIRED_USE=?? ( compress-xz compress-zstd )
 SLOT=0
 _eclasses_=mount-boot-utils	2551bac1a772f4b6beacb494a750ae92	toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	dist-kernel-utils	6b5bab4e35c9a263b3f102ee53d96c65	edo	a5e294016aa84979fcb2459749eb80b2	linux-info	efd923656513c879204fec6638eadee5	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	linux-mod-r1	c07d9d48506ae94ea189c64f2f78a94a	git-r3	7b584b5dc33e3bc66ff5b9271bf41764
-_md5_=9a86ee892b8f4c137dd0f441600e4786
+_md5_=1d3cfd8ae28955bca7d42f791b0a28fa
