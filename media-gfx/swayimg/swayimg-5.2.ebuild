@@ -13,13 +13,16 @@ SRC_URI="https://github.com/artemsen/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="avif bash-completion drm exif exr gif heif jpeg jpegxl png raw sixel svg test tiff +wayland webp X"
+IUSE="avif bash-completion drm exif gif heif jpeg jpegxl png raw sixel svg test tiff +wayland webp X"
 REQUIRED_USE="
 	${LUA_REQUIRED_USE}
 	|| ( drm wayland )
 "
 RESTRICT="!test? ( test )"
 
+# disable exr until #966735 is fixed
+#	exr? ( >=media-libs/openexr-3.4:= )
+#		$(meson_feature exr)
 RDEPEND="
 	${LUA_DEPS}
 	media-libs/fontconfig
@@ -29,7 +32,6 @@ RDEPEND="
 	bash-completion? ( app-shells/bash-completion )
 	drm? ( x11-libs/libdrm )
 	exif? ( media-gfx/exiv2:= )
-	exr? ( >=media-libs/openexr-3.4:= )
 	gif? ( media-libs/giflib:= )
 	heif? ( media-libs/libheif:= )
 	jpeg? ( media-libs/libjpeg-turbo:= )
@@ -67,7 +69,6 @@ src_configure() {
 		$(meson_feature avif)
 		$(meson_feature drm)
 		$(meson_feature exif)
-		$(meson_feature exr)
 		$(meson_feature gif)
 		$(meson_feature heif)
 		$(meson_feature jpeg)

@@ -1,4 +1,4 @@
-# Copyright 1999-2025 Gentoo Authors
+# Copyright 1999-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -13,7 +13,7 @@ HOMEPAGE="
 	https://github.com/PostHog/posthog-python
 	https://pypi.org/project/posthog/
 "
-SRC_URI="https://github.com/PostHog/posthog-python/archive/refs/tags/v${PV}.tar.gz -> ${P}.gh.tar.gz"
+SRC_URI="https://github.com/PostHog/posthog-python/archive/refs/tags/${PV}.tar.gz -> ${P}.gh.tar.gz"
 
 S="${WORKDIR}/posthog-python-${PV}"
 
@@ -36,6 +36,8 @@ BDEPEND="
 		dev-python/django[${PYTHON_USEDEP}]
 		dev-python/freezegun[${PYTHON_USEDEP}]
 		dev-python/mock[${PYTHON_USEDEP}]
+		dev-python/opentelemetry-exporter-otlp-proto-http[${PYTHON_USEDEP}]
+		dev-python/opentelemetry-sdk[${PYTHON_USEDEP}]
 		dev-python/parameterized[${PYTHON_USEDEP}]
 		dev-python/pydantic[${PYTHON_USEDEP}]
 	)

@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit cmake flag-o-matic qmake-utils xdg
+inherit cmake flag-o-matic xdg
 
 DESCRIPTION="The official Qt-based program for syncing your MEGA account in your PC"
 HOMEPAGE="
@@ -11,7 +11,7 @@ HOMEPAGE="
 	https://github.com/meganz/MEGAsync
 "
 
-MEGA_SDK_REV="1c13b13cb90c77f61e38d228b73a4a6fa8df67ca" # commit of src/MEGASync/mega submodule
+MEGA_SDK_REV="f7d7a1c1c563448b196e950b78c5cd4b1284a2ca" # commit of src/MEGASync/mega submodule
 MEGA_TAG_SUFFIX="Linux"
 SRC_URI="
 	https://github.com/meganz/MEGAsync/archive/v${PV}_${MEGA_TAG_SUFFIX}.tar.gz -> ${P}.tar.gz
@@ -24,6 +24,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="dolphin mediainfo nautilus nemo thumbnail thunar"
 
+# Qt6 issue: https://github.com/meganz/MEGAsync/issues/954
 DEPEND="
 	dev-db/sqlite:3
 	dev-libs/crypto++:=
@@ -89,34 +90,19 @@ PATCHES=(
 	"${FILESDIR}/${PN}-5.7.0.0-rename-libcryptopp.patch"
 	"${FILESDIR}/${PN}-5.10.0.2-link-zlib.patch"
 	"${FILESDIR}/${PN}-6.0.0.3-cmake4.patch"
+	"${FILESDIR}/${PN}-6.2.2.0-link-icu.patch"
+	"${FILESDIR}/${PN}-6.2.2.0-static-internal-libs.patch"
 )
-
-BUILD_DIR_DOLPHIN="${S}_dolphin"
-
-dolphin_run() {
-	if use dolphin; then
-		cd "${S}/src/MEGAShellExtDolphin" || die
-		BUILD_DIR="${BUILD_DIR_DOLPHIN}" CMAKE_USE_DIR="${S}/src/MEGAShellExtDolphin" "$@"
-	fi
-}
-
-nemo_run() {
-	if use nemo; then
-		cd "${S}/src/MEGAShellExtNemo" || die
-		"$@"
-	fi
-}
-
-thunar_run() {
-	if use thunar; then
-		cd "${S}/src/MEGAShellExtThunar" || die
-		"$@"
-	fi
-}
 
 src_prepare() {
 	rmdir src/MEGASync/mega || die
 	mv "${WORKDIR}/sdk-${MEGA_SDK_REV}" src/MEGASync/mega || die
+
+	for ext in {dolphin,nautilus,thunar,nemo}; do
+		if use "!$ext"; then
+			cmake_comment_add_subdirectory -f src "MEGAShellExt${ext^}"
+		fi
+	done
 
 	cmake_src_prepare
 }
@@ -126,8 +112,6 @@ src_configure() {
 	append-cppflags -DNDEBUG
 
 	local mycmakeargs=(
-		# build internal libs as static
-		-DBUILD_SHARED_LIBS=OFF
 		-DCMAKE_MODULE_PATH="${S}/src/MEGASync/mega/cmake/modules/packages"
 		-DENABLE_DESKTOP_APP_TESTS=OFF
 		-DENABLE_DESKTOP_APP_WERROR=OFF
@@ -135,36 +119,22 @@ src_configure() {
 		-DENABLE_DESIGN_TOKENS_IMPORTER=OFF
 		-DUSE_BREAKPAD=OFF
 		-DENABLE_ISOLATED_GFX=$(usex thumbnail)
-		-DENABLE_LINUX_EXT=$(usex nautilus)
+		-DENABLE_LINUX_EXT=ON
 		-DUSE_FFMPEG=$(usex thumbnail)
 		-DUSE_FREEIMAGE=$(usex thumbnail)
 		-DENABLE_MEDIA_FILE_METADATA=$(usex mediainfo)
 		-DUSE_PDFIUM=OFF
 		-DUSE_READLINE=OFF
 	)
+	if use dolphin; then
+		mycmakeargs+=(
+			-DKF_VER=6
+		)
+	fi
+	if use nemo; then
+		mycmakeargs+=(
+			-Dno_desktop=ON
+		)
+	fi
 	cmake_src_configure
-
-	mycmakeargs=(
-		-DKF_VER=6
-		-DQt_VER=6
-	)
-	dolphin_run cmake_src_configure
-	nemo_run eqmake5 DEFINES=no_desktop
-	thunar_run eqmake5
-}
-
-src_compile() {
-	cmake_src_compile
-
-	dolphin_run cmake_src_compile
-	nemo_run emake
-	thunar_run emake
-}
-
-src_install() {
-	cmake_src_install
-
-	dolphin_run cmake_src_install
-	nemo_run emake INSTALL_ROOT="${D}" install
-	thunar_run emake INSTALL_ROOT="${D}" install
 }

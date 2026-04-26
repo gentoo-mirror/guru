@@ -18,6 +18,11 @@
 
 # New entries go on top.
 
+# David Roman <stkw0@disroot.org> (2026-04-26)
+# Duplicate of dev-util/minify. No reason to maintain this version anymore
+# Removal after 2026-05-25
+dev-util/minify-bin
+
 # Joe Kappus <joe@wt.gd) (2026-04-23)
 # Packages requiring ::gentoo masked for removal dev-python/pyqt5
 # dev-python/cassowary completely dead upstream and insecure.
@@ -61,11 +66,6 @@ dev-python/pytest-celery
 # Unmaintained in ::guru. Depends on masked dev-python/pipenv.
 # Removal on 2026-04-28.
 media-sound/yewtube
-
-# Paul Zander <negril.nx+gentoo@gmail.com> (2026-03-27)
-# Requires media-libs/openexr:0/33 which is masked in ::gentoo
-# due to media-libs/openjph #966735
->=media-gfx/swayimg-5.1
 
 # Anna Vyalkova <cyber+gentoo@sysrq.in> (2026-03-20)
 # dev-python/mkdocs have been last rited.

@@ -25,6 +25,11 @@ RDEPEND="
 	dev-python/stone[${PYTHON_USEDEP}]
 	dev-python/urllib3[${PYTHON_USEDEP}]
 "
+# setuptools-82 removed 'pkg_resources'
+# https://github.com/dropbox/dropbox-sdk-python/issues/525
+BDEPEND="
+	<dev-python/setuptools-82.0.0[${PYTHON_USEDEP}]
+"
 
 # disable tests that need SCOPED_USER_DROPBOX_TOKEN
 # and tests that fail

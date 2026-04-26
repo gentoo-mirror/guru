@@ -64,9 +64,8 @@ PATCHES=(
 	"${FILESDIR}/${PN}-2122.1-use-the-system-faad2-library.patch"
 	"${FILESDIR}/${PN}-2122.1-use-the-system-teakra-library.patch"
 	"${FILESDIR}/${PN}-2123-don-t-build-spirv-tools.patch"
-	"${FILESDIR}/${PN}-2123.1-use-the-system-oaknut-library.patch"
 	"${FILESDIR}/${PN}-2123.2-use-the-system-sirit-library.patch"
-	"${FILESDIR}/${PN}-2124-use-the-system-xxhash-library.patch"
+	"${FILESDIR}/${PN}-2125.1-use-the-system-xxhash-library.patch"
 )
 
 # [directory]=license

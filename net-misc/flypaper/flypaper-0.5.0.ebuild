@@ -18,8 +18,13 @@ DEPEND="
 	dev-libs/cJSON
 	dev-libs/libbpf
 "
-RDEPEND="${DEPEND}"
+RDEPEND="
+	${DEPEND}
+	sys-apps/grep
+	sys-apps/iproute2
+"
 BDEPEND="
+	${DEPEND}
 	dev-util/bpftool
 	llvm-core/clang
 "
@@ -30,7 +35,7 @@ src_configure() {
 	ln -s "${WORKDIR}/${P}-build/flypaper.skel.h" "${S}/build/flypaper.skel.h"
 
 	local emesonargs=(
-		$(usex systemd -Dsystemd=true -Dopenrc=true)
+		$(usex systemd -Dservicetype=systemd -Dservicetype=openrc)
 	)
 	meson_src_configure
 }

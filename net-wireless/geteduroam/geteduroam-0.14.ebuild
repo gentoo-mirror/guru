@@ -9,6 +9,7 @@ HOMEPAGE="https://github.com/geteduroam/linux-app https://get.eduroam.org/"
 SRC_URI="https://github.com/geteduroam/linux-app/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
 # pkgcheck complains about this but this isn't from upstream
 SRC_URI+=" https://codeberg.org/AshyPinguin/vendor-tarballs/releases/download/${P}/${PN}-vendor.tar.xz -> ${P}-vendor.tar.xz" # upstream doesn't bundle their vendor tarbal in their releases
+S="${WORKDIR}/linux-app-${PV}"
 
 # BSD-3 is the license of the project rest are depend.
 LICENSE="MIT Apache-2.0 BSD-2 BSD GPL-2"
@@ -20,14 +21,6 @@ DEPEND="libnotify? ( x11-libs/libnotify )
 	gui? ( >=gui-libs/gtk-4.6 >=gui-libs/libadwaita-1.1 )
 	net-misc/networkmanager"
 RDEPEND="${DEPEND}"
-
-src_unpack() {
-	unpack "${P}.tar.gz"
-	mv "linux-app-${PV}" "${P}" || die
-	unpack "${P}-vendor.tar.xz"
-	mkdir "${P}/vendor" || die
-	mv "linux-app-${PV}/vendor" "${P}" || die
-}
 
 src_compile() {
 	ego build -o geteduroam-cli ./cmd/geteduroam-cli
@@ -49,6 +42,4 @@ src_install() {
 		systemd_douserunit "systemd/user/${PN}/${PN}-notifs.service"
 		systemd_douserunit "systemd/user/${PN}/${PN}-notifs.timer"
 	fi
-
-	doman "${FILESDIR}/geteduroam-cli.1" "${FILESDIR}/geteduroam-gui.1" "${FILESDIR}/geteduroam-notifcheck.1"
 }

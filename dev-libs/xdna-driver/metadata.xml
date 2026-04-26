@@ -8,8 +8,10 @@
 	<upstream>
 		<bugs-to>https://github.com/amd/xdna-driver/issues</bugs-to>
 		<remote-id type="github">amd/xdna-driver</remote-id>
+		<remote-id type="gitlab">kernel-firmware/drm-firmware</remote-id>
 	</upstream>
 	<use>
-		<flag name="firmware">Install device firmware</flag>
+		<flag name="compress-xz">Compress firmware using xz (<pkg>app-arch/xz-utils</pkg>) before installation</flag>
+		<flag name="compress-zstd">Compress firmware using zstd (<pkg>app-arch/zstd</pkg>) before installation</flag>
 	</use>
 </pkgmetadata>
