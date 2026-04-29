@@ -1,15 +1,15 @@
-BDEPEND=screencast? ( llvm_slot_18? ( llvm-core/clang:18 ) llvm_slot_19? ( llvm-core/clang:19 ) llvm_slot_20? ( llvm-core/clang:20 ) llvm_slot_21? ( llvm-core/clang:21 ) ) || ( >=dev-lang/rust-bin-1.82.0:* >=dev-lang/rust-1.82.0:* ) virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=screencast? ( llvm_slot_19? ( llvm-core/clang:19 ) llvm_slot_20? ( llvm-core/clang:20 ) llvm_slot_21? ( llvm-core/clang:21 ) llvm_slot_22? ( llvm-core/clang:22 ) ) || ( >=dev-lang/rust-bin-1.87.0:* >=dev-lang/rust-1.87.0:* ) virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install postinst prepare setup test unpack
 DEPEND=dev-libs/glib:2 dev-libs/libinput:= dev-libs/wayland <media-libs/libdisplay-info-0.4.0:= media-libs/mesa sys-auth/seatd:= virtual/libudev:= x11-libs/cairo x11-libs/libxkbcommon x11-libs/pango x11-libs/pixman screencast? ( media-video/pipewire:= )
 DESCRIPTION=Scrollable-tiling Wayland compositor
 EAPI=8
 HOMEPAGE=https://github.com/niri-wm/niri
 INHERIT=cargo llvm-r2 optfeature shell-completion systemd git-r3
-IUSE=+dbus screencast systemd debug +llvm_slot_21 llvm_slot_18 llvm_slot_19 llvm_slot_20
+IUSE=+dbus screencast systemd debug +llvm_slot_21 llvm_slot_19 llvm_slot_20 llvm_slot_22
 LICENSE=GPL-3+ Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD-2 BSD ISC MIT MPL-2.0 Unicode-3.0 ZLIB
 PROPERTIES=live
 RDEPEND=dev-libs/glib:2 dev-libs/libinput:= dev-libs/wayland <media-libs/libdisplay-info-0.4.0:= media-libs/mesa sys-auth/seatd:= virtual/libudev:= x11-libs/cairo x11-libs/libxkbcommon x11-libs/pango x11-libs/pixman screencast? ( media-video/pipewire:= ) screencast? ( sys-apps/xdg-desktop-portal-gnome )
-REQUIRED_USE=screencast? ( dbus ) systemd? ( dbus ) ^^ ( llvm_slot_18 llvm_slot_19 llvm_slot_20 llvm_slot_21 )
+REQUIRED_USE=screencast? ( dbus ) systemd? ( dbus ) ^^ ( llvm_slot_19 llvm_slot_20 llvm_slot_21 llvm_slot_22 )
 SLOT=0
 _eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	rust	c5ae4c9b5eca97bd7fc77fede663873f	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	53bab5a62cfc3526d8ed02c0a38a6033	llvm-utils	e7edb4086e31c8537574b263d899f826	multilib	fc812e8eb2170022c28272d80a1f9e77	llvm-r2	8bc46809768366b4239eab39335419bc	optfeature	538bce96e5589935b57e178e8635f301	bash-completion-r1	9e91505e030725688d1e953321a47501	shell-completion	0b655d0d825e157a5e99c463bddaac16	systemd	a964c0cbe818b5729da1dbfcee5be861	git-r3	7b584b5dc33e3bc66ff5b9271bf41764
-_md5_=6bb86007dc6885c842d11191100b36b2
+_md5_=1dd80f83cecfed44dd317a7312dbe406
