@@ -22,6 +22,11 @@ fi
 LICENSE="MIT"
 SLOT="0"
 
+DOCS=(
+	{README,CHANGELOG,SECURITY}.md
+	docs/
+)
+
 RDEPEND="
 	media-video/mpv
 	>=net-misc/yt-dlp-2025.01.12[${PYTHON_USEDEP}]

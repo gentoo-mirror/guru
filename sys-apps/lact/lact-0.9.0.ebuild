@@ -1,4 +1,4 @@
-# Copyright 2024-2025 Gentoo Authors
+# Copyright 2024-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -6,12 +6,8 @@ EAPI=8
 CRATES="
 "
 
-declare -A GIT_CRATES=(
-	[cl3]='https://github.com/kenba/cl3;4da03b19d19ce2ca735e09dc5e2a1bcfa133beff;cl3-%commit%'
-)
-
-LLVM_COMPAT=( {18..21} )
-RUST_MIN_VER="1.85.0"
+LLVM_COMPAT=( {19..22} )
+RUST_MIN_VER="1.93.0"
 
 inherit cargo llvm-r2 xdg
 
@@ -36,26 +32,28 @@ LICENSE+="
 "
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="gui libadwaita test video_cards_nvidia"
-REQUIRED_USE="libadwaita? ( gui ) test? ( gui )"
+IUSE="gui test video_cards_nvidia"
+REQUIRED_USE="test? ( gui )"
 RESTRICT="!test? ( test )"
 
 COMMON_DEPEND="
-	virtual/opencl
-	x11-libs/libdrm[video_cards_amdgpu]
+	!test? ( x11-libs/libdrm )
+	test? ( x11-libs/libdrm[video_cards_amdgpu,video_cards_intel] )
 	gui? (
 		dev-libs/glib:2
+		gnome-base/gsettings-desktop-schemas
 		gui-libs/gtk:4[introspection]
+		>=gui-libs/libadwaita-1.5.0:1
 		media-libs/fontconfig
 		media-libs/freetype
 		media-libs/graphene
 		x11-libs/cairo
 		x11-libs/pango
 	)
-	libadwaita? ( >=gui-libs/libadwaita-1.4.0:1 )
 "
 RDEPEND="
 	${COMMON_DEPEND}
+	dev-util/clinfo
 	dev-util/vulkan-tools
 	sys-apps/hwdata
 "
@@ -79,10 +77,13 @@ pkg_setup() {
 src_configure() {
 	local myfeatures=(
 		$(usev gui lact-gui)
-		$(usev libadwaita adw)
 		$(usev video_cards_nvidia nvidia)
 	)
 	cargo_src_configure --no-default-features
+}
+
+src_compile() {
+	cargo_src_compile -p lact
 }
 
 src_install() {
@@ -92,9 +93,5 @@ src_install() {
 }
 
 src_test() {
-	local skip=(
-		# requires newer sys-apps/hwdata
-		--skip tests::snapshot_everything
-	)
-	cargo_src_test --workspace -- "${skip[@]}"
+	cargo_src_test --workspace
 }

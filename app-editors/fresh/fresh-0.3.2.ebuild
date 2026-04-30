@@ -230,6 +230,7 @@ CRATES="
 	jni@0.22.4
 	jobserver@0.1.34
 	js-sys@0.3.94
+	jsonc-parser@0.32.3
 	kasuari@0.4.12
 	keyboard-types@0.7.0
 	khronos-egl@6.0.0
@@ -266,7 +267,7 @@ CRATES="
 	miniz_oxide@0.8.9
 	mio@1.2.0
 	miow@0.6.1
-	muda@0.15.3
+	muda@0.17.1
 	naga@28.0.0
 	ndk-context@0.1.1
 	ndk-sys@0.6.0+11769913
@@ -336,6 +337,7 @@ CRATES="
 	oxc_ecmascript@0.115.0
 	oxc_estree@0.115.0
 	oxc_index@4.1.0
+	oxc_isolated_declarations@0.115.0
 	oxc_parser@0.115.0
 	oxc_regular_expression@0.115.0
 	oxc_semantic@0.115.0
