@@ -199,7 +199,7 @@ app-doc/stdman 2022.07.30 2024.07.05 9999: Formatted C++ stdlib man pages (cppre
 app-doc/sway-wiki 9999: Wiki of gui-wm/sway, rendered to HTML using kramdown-parser-gfm
 app-editors/edit 1.2.0: Microsoft edit
 app-editors/emacs-lsp-booster 0.2.1: Emacs LSP performance booster
-app-editors/fresh 0.2.25 0.3.0 0.3.1: Terminal based IDE & text editor: easy, powerful and fast
+app-editors/fresh 0.3.0 0.3.1 0.3.2: Terminal based IDE & text editor: easy, powerful and fast
 app-editors/imhex 1.38.1: A hex editor for reverse engineers, programmers, and eyesight
 app-editors/kakoune-lsp 18.1.0: Kakoune Language Server Protocol Client
 app-editors/l3afpad 0.8.18.1.11: Simple GTK3 text editor (successor to leafpad)
@@ -251,6 +251,7 @@ app-misc/bitfake2 1.1 9999: Audio tool using FFTW and libebur128
 app-misc/blahaj 2.2.0-r1: Gay sharks at your local terminal
 app-misc/brightnessctl 0.5.1: A program to read and control device brightness
 app-misc/bt 1.2.2: Interactive tree-like terminal file manager
+app-misc/cameractrls 0.6.10: Camera controls for Linux
 app-misc/catt 0.12.13 0.13.0 0.13.1: Send videos from many, many online sources to your Chromecast
 app-misc/cepl 32.0.0 9999: A readline C and C++ REPL with history, tab-completion, and undo.
 app-misc/chayang 0.1.0: Gradually dim the screen.
@@ -901,7 +902,9 @@ dev-python/persist-queue 0.8.1 1.0.0 1.1.0: A thread-safe disk based persistent 
 dev-python/phx-class-registry 4.1.0-r1: An intersection of the Registry and Factory pattern
 dev-python/pillow-heif 1.2.0 1.2.1: Python interface for libheif library
 dev-python/pillow-jxl-plugin 1.3.2: Pillow plugin for JPEG-XL, using Rust for bindings.
-dev-python/pipenv 2026.5.2: Python Development Workflow for Humans
+dev-python/pipdeptree 2.34.0: Utility for displaying installed packages in a dependency tree
+dev-python/pipenv 2026.5.2 2026.6.1: Python Development Workflow for Humans
+dev-python/plette 2.1.0-r1 2.2.1: Structured Pipfile and Pipfile.lock models
 dev-python/plexapi 4.17.2 4.18.0 4.18.1: Python bindings for the Plex API.
 dev-python/plotext 5.3.0 5.3.2: Plotting on terminal
 dev-python/plum 0.8.7: Pack/Unpack Memory
@@ -946,7 +949,7 @@ dev-python/pypandoc 1.17: Pypandoc provides a thin wrapper for pandoc, a univers
 dev-python/pyperscan 0.3.0: An opinionated Python binding for Hyperscan
 dev-python/pyproject2ebuild 0.0.3: Convert pyproject.toml to Gentoo ebuilds automatically.
 dev-python/pyqtdarktheme 2.1.0: A flat dark theme for PySide and PyQt.
-dev-python/pyrefly 0.60.2 0.61.1 0.62.0 0.63.0: A fast type checker and language server for Python with powerful IDE features
+dev-python/pyrefly 0.61.1 0.62.0 0.63.1: A fast type checker and language server for Python with powerful IDE features
 dev-python/pyrime 0.0.7: rime for python
 dev-python/pysdl3 0.9.9_beta1: A pure Python wrapper for SDL3
 dev-python/pysnooper 1.2.1 1.2.3: Never use print for debugging again
@@ -1030,7 +1033,7 @@ dev-python/templated-dictionary 1.6: Python dictionary with Jinja2 expansion
 dev-python/tempus-themes 2.3.0.20220206: Accessible themes for Pygments
 dev-python/tempy 1.4.0: A simple, visually pleasing weather report in your terminal
 dev-python/termynal 0.14.0: A lightweight and modern animated terminal window
-dev-python/textual 8.2.2 8.2.3 8.2.4: Modern Text User Interface framework
+dev-python/textual 8.2.3 8.2.4 8.2.5: Modern Text User Interface framework
 dev-python/textual-autocomplete 4.0.6: Easily add autocomplete dropdowns to your Textual apps
 dev-python/textual-dev 1.8.0: Modern Text User Interface framework
 dev-python/textual-serve 1.1.3: Serve Textual apps locally
@@ -1106,7 +1109,7 @@ dev-util/forgejo-runner 12.9.0 9999: A daemon that connects to a Forgejo instanc
 dev-util/fortls 2.13.0 3.0.0 3.1.1 3.1.2 3.2.2: Fortran Language Server (fortls)
 dev-util/fortran-test-drive 0.4.0 0.5.0: The simple testing framework (for Fortran)
 dev-util/gammaray 3.3.0 3.3.1: High-level runtime introspection tool for Qt applications
-dev-util/gemini-cli 0.39.1: Gemini CLI - a command-line AI workflow tool by Google
+dev-util/gemini-cli 0.40.0: Gemini CLI - a command-line AI workflow tool by Google
 dev-util/genTree 0.1.0 9999: Gentoo rootfs tree generator
 dev-util/gersemi 0.26.1 0.27.2: A formatter to make your CMake code the real treasure
 dev-util/git-bug 0.10.1 9999: distributed, offline-first bug tracker
@@ -1261,7 +1264,7 @@ games-util/gamehub 0.16.3.2-r2: GameHub is a unified library for all your games
 games-util/goverlay 1.2: Graphical UI to help manage Linux game overlays (MangoHud).
 games-util/grapejuice 7.20.12 9999: A Wine+Roblox management application
 games-util/hid-nintendo 9999: A Nintendo HID kernel module
-games-util/hydra-launcher-bin 3.8.1 3.8.3 3.9.0 3.9.1 3.9.3 3.9.4 3.9.5: Open-source gaming platform and launcher
+games-util/hydra-launcher-bin 3.8.3 3.9.5 3.9.7: Open-source gaming platform and launcher
 games-util/input-remapper 2.2.0 9999: A tool to change and program the mapping of your input device buttons
 games-util/itch-bin 25.5.1-r2 26.1.9: itch.io game browser, installer and launcher
 games-util/legendary 0.20.34-r2: A free and open-source replacement for the Epic Games Launcher
@@ -1436,7 +1439,9 @@ gui-wm/river 0.3.11 0.3.12 0.3.14 0.3.15 0.3.9999 0.4.1 0.4.2 0.4.3 9999: A dyna
 gui-wm/swayfx 0.5 0.5.3: SwayFX: Sway, but with eye candy!
 gui-wm/wayback 0.2: X11 compatibility layer levaraging wlroots and Xwayland
 kde-misc/geminipart 20250730: KPart for viewing text/gemini files
+kde-misc/kcgroups-dmemcg 0.1: KDE library to manipulate cgroups and boost foreground apps, with dmem cgroup support
 kde-misc/kio-gemini 20250730: Gemini KIO worker
+kde-misc/plasma-foreground-booster-dmemcg 0.1: KDE helper to boost foreground apps using dmem cgroup limits
 mail-client/betterbird-bin 140.2.1: Betterbird is a fine-tuned version of Mozilla Thunderbird.
 mail-client/mailspring-bin 1.19.1: A beautiful, fast and fully open source mail client for Mac, Windows and Linux
 mail-client/proton-mail-bin 1.11.0-r1 1.12.1: Beta Client for Proton Mail
@@ -1602,7 +1607,7 @@ media-sound/yandex-music 5.92.1 5.93.1 5.94.0 5.95.0 5.97.3: Yandex Music stream
 media-sound/yewtube 2.12.0 9999: Terminal-based YouTube player and downloader
 media-sound/ymuse 0.22: GTK client for Music Player Daemon (MPD) written in Go
 media-sound/youtube-music-bin 3.11.0-r1: YouTube Music Desktop App bundled with custom plugins
-media-sound/ytm-player 1.6.0 1.7.2 1.8.0 9999: Full-featured YouTube Music TUI client with vim-style navigation
+media-sound/ytm-player 1.7.2 1.8.0 1.9.1 9999: Full-featured YouTube Music TUI client with vim-style navigation
 media-sound/zita-ajbridge 0.8.4-r2: zita-a2j and zita-j2a - bridges between ALSA and JACK
 media-video/ciano 0.2.4-r2: A multimedia file converter focused on simplicity
 media-video/clapper 0.6.1 0.8.0: Modern and user-friendly media player
@@ -1790,7 +1795,7 @@ net-misc/toot 0.51.0-r1: toot - Mastodon CLI & TUI
 net-misc/warp 1.0.0: Fast and secure file transfer
 net-misc/wayback_machine_downloader 2.3.0 2.3.1: Download an entire website from the Wayback Machine
 net-misc/whatscli 1.0.6 1.0.11: A command line interface for WhatsApp
-net-misc/wlvncc 20250307 20250626 20250725 99999999: A Wayland Native VNC Client
+net-misc/wlvncc 20250626 20250725 20260429 99999999: A Wayland Native VNC Client
 net-misc/wsdd 0.8 0.9: A Web Service Discovery host daemon.
 net-misc/wstunnel 10.5.2: Tunnel all your traffic over Websocket or HTTP2 - Bypass firewalls/DPI
 net-misc/xh 0.25.3: Friendly and fast tool for sending HTTP requests
@@ -1961,6 +1966,7 @@ sys-apps/coolercontrol 4.0.1 4.1.0: Monitor and control your cooling and other d
 sys-apps/coolercontrold 4.0.1 4.1.0: Monitor and control your cooling and other devices (daemon)
 sys-apps/corefreq 2.0.8 2.0.9 2.1.0: CPU monitoring and tuning software designed for 64-bit processors
 sys-apps/deepcool-digital-linux 0.10.1 0.10.2: Linux version for the DeepCool Digital Windows software.
+sys-apps/dmemcg-booster 0.1.2: Service for enabling and controlling dmem cgroup limits for boosting foreground games
 sys-apps/dnf5 5.3.0.0: Command-line package manager
 sys-apps/dool 1.3.1-r1 1.3.2-r2 9999: Versatile replacement for vmstat, iostat and ifstat (clone of dstat)
 sys-apps/drm_info 2.8.0 2.9.0: Small utility to dump info about DRM devices
@@ -1971,7 +1977,7 @@ sys-apps/gat 0.23.1: Cat alternative written in Go
 sys-apps/hex 0.6.0 0.7.0: Futuristic take on hexdump
 sys-apps/hexyl 0.17.0: A command-line hex viewer
 sys-apps/killport 1.1.0: A command-line tool to easily kill processes on a specified port.
-sys-apps/lact 0.8.3 0.8.4: Linux GPU Control Application
+sys-apps/lact 0.9.0: Linux GPU Control Application
 sys-apps/loclone 0.1.0: A tool for creating CoW snapshots on XFS
 sys-apps/lr 1.6: list files, recursively
 sys-apps/lsplug 6: Replacement for lsusb that shows more useful info and less useless info
@@ -2065,7 +2071,7 @@ virtual/crystal-db 0.13-r1 0.14: Virtual for Crystal database drivers
 www-apps/anubis 1.24.0 1.25.0: Weighs the soul of incoming HTTP requests to stop AI crawlers
 www-apps/code-server-bin 4.18.0 4.19.1 4.90.3: VS Code in the browser (binary version with unbundled node and ripgrep)
 www-apps/flaresolverr 3.4.6: Proxy server to bypass Cloudflare protection
-www-apps/forgejo 11.0.12 14.0.4 15.0.0: A self-hosted lightweight software forge
+www-apps/forgejo 11.0.13 14.0.5 15.0.1: A self-hosted lightweight software forge
 www-apps/freshrss 1.26.3: A free, self-hostable news aggregator
 www-apps/goatcounter 2.6.0 2.7.0: Easy web analytics without tracking of personal data
 www-apps/invidious 2026.02.07.0: Invidious is an alternative front-end to YouTube
