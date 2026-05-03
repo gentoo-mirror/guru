@@ -61,24 +61,6 @@ app-crypt/nitrokey-app2
 # Replaced by sys-fs/bcachefs-tools[modules] in ::gentoo.
 sys-fs/bcachefs-kmod
 
-# Anna Vyalkova <cyber+gentoo@sysrq.in> (2026-03-20)
-# Unmaintained in ::guru. Depends on masked dev-python/click-didyoumean.
-# Removal on 2026-04-28.
-dev-python/celery
-dev-python/pytest-celery
-
-# Anna Vyalkova <cyber+gentoo@sysrq.in> (2026-03-20)
-# Unmaintained in ::guru. Depends on masked dev-python/pipenv.
-# Removal on 2026-04-28.
-media-sound/yewtube
-
-# Anna Vyalkova <cyber+gentoo@sysrq.in> (2026-03-20)
-# dev-python/mkdocs have been last rited.
-dev-python/mkdocs-bootstrap-tables-plugin
-dev-python/mkdocs-exclude
-dev-python/mkdocs-git-committers-plugin
-dev-python/mkdocs-rss-plugin
-
 # Lucio Sauer <watermanpaint@posteo.net> (2026-02-10)
 # The hyprland suite is moving to the unofficial 'hyproverlay' repository at
 #  https://codeberg.org/hyproverlay/hyproverlay.git
@@ -119,3 +101,7 @@ sys-libs/gcompat
 # (See also top comment)
 # Sorry for the inconvenience.
 app-office/lotus123r3
+
+# Shaumyadeep Chaudhuri <shaumya@gmail.com> (2026-04-30)
+# Requires systemd. Cannot be masked per profile (see top comment)
+sys-apps/dmemcg-booster
