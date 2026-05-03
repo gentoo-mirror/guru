@@ -1,4 +1,4 @@
-BDEPEND=|| ( app-arch/rpm2targz )
+BDEPEND=|| ( app-arch/rpm2targz >=app-arch/rpm-4.19.0 )
 DEFINED_PHASES=install nofetch postinst postrm preinst prepare setup unpack
 DESCRIPTION=AIMP - Free Audio Player
 EAPI=8
@@ -12,4 +12,4 @@ RESTRICT=bindist fetch strip
 SLOT=0
 SRC_URI=amd64? ( aimp-6.00-3038a.x86_64.rpm )
 _eclasses_=wrapper	ebaa3beeb43f7e533872b6c37168c7ad	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	estack	c61c368a76fdf3a82fdf8dbaebea3804	toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	rpm	716d8645cb3f94e78951eda6c33e0546	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575
-_md5_=c27505aab4f94460c07bf9fb758087cc
+_md5_=ccad347663f2e928048a74fbf49ca89b
