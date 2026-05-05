@@ -1,0 +1,15 @@
+BDEPEND=clang? ( llvm-core/clang ) app-alternatives/ninja >=dev-build/cmake-3.28.5
+DEFINED_PHASES=compile configure install postinst prepare test unpack
+DEPEND=app-arch/lz4:= <dev-lang/lua-5.1.6:5.1 dev-libs/jansson:= media-libs/freetype:2 media-libs/glu media-libs/libjpeg-turbo:= media-libs/libpng:= media-libs/libsdl2[X] media-libs/libtheora media-libs/libvorbis media-libs/mesa media-libs/openal media-video/ffmpeg:= x11-libs/libX11
+DESCRIPTION=FreeSpace2 Source Code Project game engine
+EAPI=8
+HOMEPAGE=https://github.com/scp-fs2open/fs2open.github.com/
+INHERIT=cmake flag-o-matic
+IUSE=clang debug discord
+KEYWORDS=~amd64
+LICENSE=Unlicense MIT Boost-1.0
+RDEPEND=app-arch/lz4:= <dev-lang/lua-5.1.6:5.1 dev-libs/jansson:= media-libs/freetype:2 media-libs/glu media-libs/libjpeg-turbo:= media-libs/libpng:= media-libs/libsdl2[X] media-libs/libtheora media-libs/libvorbis media-libs/mesa media-libs/openal media-video/ffmpeg:= x11-libs/libX11
+SLOT=0
+SRC_URI=https://github.com/scp-fs2open/fs2open.github.com/archive/refs/tags/release_25_0_1.tar.gz -> fs2_open-25.0.1.tar.gz https://github.com/scp-fs2open/libRocket/archive/ecd648a43aff8a9f3daf064d75ca5725237d5b38.tar.gz -> fs2_open-25.0.1-ext_libRocket.tar.gz https://github.com/asarium/cmake-modules/archive/7cef9577d6fc35057ea57f46b4986a8a28aeff50.tar.gz -> fs2_open-25.0.1-ext_rpavlik-cmake-modules.tar.gz
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	3395ce6618fc5c7af03335471b896644
+_md5_=251a8c99f92729e1b814692362747fa3
