@@ -34,6 +34,7 @@ DEPEND="
 "
 RDEPEND="${DEPEND}"
 BDEPEND="
+	app-text/scdoc
 	dev-build/cmake
 	virtual/pkgconfig
 "
@@ -42,7 +43,6 @@ QA_FLAGS_IGNORED="usr/bin/rio"
 
 DOCS=(
 	"README.md"
-	"docs/docs"
 )
 
 src_prepare() {
@@ -58,9 +58,19 @@ src_configure() {
 	cargo_src_configure --verbose --no-default-features
 }
 
+src_compile() {
+	cargo_src_compile
+	scdoc < extra/man/rio.1.scd > extra/man/rio.1
+	scdoc < extra/man/rio.5.scd > extra/man/rio.5
+	scdoc < extra/man/rio-bindings.5.scd > extra/man/rio-bindings.5
+}
+
 src_install() {
 	dobin "$(cargo_target_dir)/${PN}"
 
+	doman extra/man/rio.1
+	doman extra/man/rio.5
+	doman extra/man/rio-bindings.5
 	dodoc -r "${DOCS[@]}"
 	newicon -s scalable "misc/logo.svg" "${PN}.svg"
 	domenu "misc/${PN}.desktop"
