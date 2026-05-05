@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_13 )
+PYTHON_COMPAT=( python3_{13..14} )
 
 inherit cmake python-single-r1
 
@@ -51,10 +51,9 @@ BDEPEND="
 "
 
 PATCHES=(
-	"${FILESDIR}/${PN}-0.6.1-conditional-tests.patch"
-	"${FILESDIR}/${PN}-0.7.0-disable-mirtest.patch"
+	"${FILESDIR}/${PN}-0.9.0-disable-mirtest.patch"
 	"${FILESDIR}/${PN}-0.7.0-no-automagic.patch"
-	"${FILESDIR}/${PN}-0.8.3-mir-2.25-compat.patch"
+	"${FILESDIR}/${PN}-0.9.0-add-missing-headers.patch"
 )
 
 pkg_setup() {
@@ -70,12 +69,14 @@ src_prepare() {
 src_configure() {
 	local mycmakeargs=(
 		-DSYSTEMD_INTEGRATION=$(usex systemd)
-		-DWITH_TESTS=$(usex test)
+		-DENABLE_TESTS=$(usex test)
+		# depends on wasmedge, which is not available as a package
+		-DFEATURE_PLUGIN_SYSTEM=OFF
 	)
 	cmake_src_configure
 }
 
 src_test() {
 	"${BUILD_DIR}/tests/miracle-wm-tests" || die
-	"${BUILD_DIR}/miracle-wm-config/test_miracle_wm_config_c_api" || die
+	"${BUILD_DIR}/miracle-wm-c/test_miracle_wm_c_api" || die
 }

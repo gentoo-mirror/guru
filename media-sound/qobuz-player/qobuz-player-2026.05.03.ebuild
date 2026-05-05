@@ -10,15 +10,22 @@ declare -A GIT_CRATES=(
 	[cpal]='https://github.com/RustAudio/cpal;fd3b945bffcaa493fa7cb5ceddf9db1f9330fd30;cpal-%commit%'
 )
 
-RUST_MIN_VER="1.90.0"
+RUST_MIN_VER="1.92"
+
+UPSTREAM_PN="qobine"
+UPSTREAM_PV="${PV//./-}"
+MY_P="${PN}-${UPSTREAM_PV}"
+UPSTREAM_P="${UPSTREAM_PN}-${UPSTREAM_PV}"
 
 inherit cargo
 
 DESCRIPTION="Tui, web and rfid player for Qobuz"
-HOMEPAGE="https://github.com/SofusA/qobuz-player"
-SRC_URI="https://github.com/SofusA/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
-SRC_URI+=" https://github.com/gentoo-crate-dist/${PN}/releases/download/v${PV}/${P}-crates.tar.xz"
+HOMEPAGE="https://github.com/SofusA/qobine"
+SRC_URI="https://github.com/SofusA/${UPSTREAM_PN}/archive/refs/tags/v${UPSTREAM_PV}.tar.gz -> ${MY_P}.tar.gz"
+SRC_URI+=" https://github.com/gentoo-crate-dist/${PN}/releases/download/v${UPSTREAM_PV}/${MY_P}-crates.tar.xz"
 SRC_URI+=" ${CARGO_CRATE_URIS}"
+
+S="${WORKDIR}/${UPSTREAM_P}"
 
 LICENSE="GPL-3"
 # Dependent crate licenses
@@ -28,12 +35,20 @@ LICENSE+="
 "
 SLOT="0"
 KEYWORDS="~amd64"
+# The GTK feature now needs >=gui-libs/gtk-4.20 which is too much of a hassle.
+# I'll skip this feature for now because personally, I don't need it.
+# Also see: https://github.com/SofusA/qobine/issues/348#issuecomment-4368448105
+# IUSE="gtk"
+RESTRICT="test"
 
 DEPEND="
 	dev-db/sqlite:3=
+	dev-libs/glib
 	media-libs/alsa-lib
 	sys-apps/dbus
 "
+	# This will need to be in DEPEND when this feature will be re-enabled
+	# gtk? ( gui-libs/libadwaita )
 RDEPEND="${DEPEND}"
 BDEPEND="virtual/pkgconfig"
 
@@ -59,8 +74,20 @@ src_configure() {
 	default
 }
 
+src_compile() {
+	cargo_src_compile --package qobuz-player-connect
+	# use gtk && cargo_src_compile --package qobuz-player-gtk
+	cargo_src_compile --package qobuz-player-rfid
+	cargo_src_compile --package qobuz-player-tui
+	cargo_src_compile --package qobuz-player-web
+}
+
 src_install() {
-	cargo_src_install --path qobuz-player-cli
+	cargo_src_install --path qobuz-player-connect
+	# use gtk && cargo_src_install --path qobuz-player-gtk
+	cargo_src_install --path qobuz-player-rfid
+	cargo_src_install --path qobuz-player-tui
+	cargo_src_install --path qobuz-player-web
 
 	local DOCS=(
 		README.md
