@@ -1,0 +1,13 @@
+BDEPEND=virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile install postinst unpack
+DEPEND=dev-lang/lua:5.4
+DESCRIPTION=Minimal system info fetcher written in C with Lua configuration
+EAPI=8
+HOMEPAGE=https://codeberg.org/nzuum/fetchit
+INHERIT=git-r3
+LICENSE=MIT
+PROPERTIES=live
+RDEPEND=dev-lang/lua:5.4
+SLOT=0
+_eclasses_=git-r3	7b584b5dc33e3bc66ff5b9271bf41764
+_md5_=6bb5bfa98d7e4dbba27594bd628c8399
