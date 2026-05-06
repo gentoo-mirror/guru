@@ -1,4 +1,4 @@
-BDEPEND=>=dev-lang/go-1.20:= app-arch/unzip virtual/pkgconfig
+BDEPEND=>=dev-lang/go-1.24.11:= app-arch/unzip virtual/pkgconfig
 DEFINED_PHASES=compile config install postinst setup test unpack
 DEPEND=acct-user/mautrix-signal dev-libs/olm virtual/zlib:= ~dev-libs/libsignal-ffi-0.86.8
 DESCRIPTION=Matrix-Signal puppeting bridge
@@ -10,5 +10,5 @@ LICENSE=AGPL-3+ AGPL-3 Apache-2.0 BSD GPL-3+ ISC MIT MPL-2.0 public-domain
 RDEPEND=acct-user/mautrix-signal dev-libs/olm virtual/zlib:=
 SLOT=0
 SRC_URI=https://github.com/mautrix/signal/archive/refs/tags/v0.2512.0.tar.gz -> mautrix-signal-25.12.tar.gz https://github.com/gentoo-golang-dist/signal/releases/download/v0.2512.0/signal-0.2512.0-vendor.tar.xz
-_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	sysroot	4c36abaf94ebd3ab32f8abea9a444121	go-env	fca4e820393c2eac25a944be8bdf6a3a	go-module	1cbfd286f3aaa35f18f9dec1d3dbedf1	systemd	a964c0cbe818b5729da1dbfcee5be861
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	sysroot	4c36abaf94ebd3ab32f8abea9a444121	go-env	fca4e820393c2eac25a944be8bdf6a3a	go-module	22cfabf3120ed3f7bcd8b4a7697fbfba	systemd	a964c0cbe818b5729da1dbfcee5be861
 _md5_=6ce6326ad4b388074963f7d443c6f9db
