@@ -1,0 +1,16 @@
+BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.28.5
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=dev-cpp/cli11 dev-cpp/magic_enum dev-cpp/nlohmann_json dev-cpp/robin-map dev-cpp/toml11 dev-libs/boost dev-libs/libfmt dev-libs/half dev-libs/pugixml dev-libs/stb dev-libs/xbyak dev-libs/xxhash media-libs/imgui media-libs/libsdl3 media-libs/libpng media-libs/openal media-libs/sdl3-mixer media-libs/vulkan-layers media-gfx/renderdoc media-video/ffmpeg media-sound/sndio virtual/jack virtual/zlib test? ( dev-cpp/gtest )
+DESCRIPTION=PlayStation 4 emulator written in C++
+EAPI=8
+HOMEPAGE=https://shadps4.net
+INHERIT=cmake
+IUSE=discord test
+KEYWORDS=~amd64
+LICENSE=GPL-2
+RDEPEND=dev-cpp/cli11 dev-cpp/magic_enum dev-cpp/nlohmann_json dev-cpp/robin-map dev-cpp/toml11 dev-libs/boost dev-libs/libfmt dev-libs/half dev-libs/pugixml dev-libs/stb dev-libs/xbyak dev-libs/xxhash media-libs/imgui media-libs/libsdl3 media-libs/libpng media-libs/openal media-libs/sdl3-mixer media-libs/vulkan-layers media-gfx/renderdoc media-video/ffmpeg media-sound/sndio virtual/jack virtual/zlib test? ( dev-cpp/gtest )
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://codeberg.org/ceres-sees-all/guru-distfiles/releases/download/shadPS4-0.15.0-submodules.tar.xz/shadPS4-0.15.0-submodules.tar.xz -> shadPS4-0.15.0.tar.xz
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	3395ce6618fc5c7af03335471b896644
+_md5_=527e0de88f8cef2e49820e7dfd9846db

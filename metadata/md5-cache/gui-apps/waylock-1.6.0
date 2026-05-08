@@ -1,0 +1,14 @@
+BDEPEND=dev-libs/wayland-protocols dev-util/wayland-scanner || ( dev-lang/zig:0.16 dev-lang/zig-bin:0.16 ) virtual/pkgconfig
+DEFINED_PHASES=compile configure install prepare setup test unpack
+DEPEND=dev-libs/wayland sys-libs/pam x11-libs/libxkbcommon[wayland]
+DESCRIPTION=Small screenlocker for Wayland compositors
+EAPI=8
+HOMEPAGE=https://isaacfreund.com/software/waylock/ https://codeberg.org/ifreund/waylock
+INHERIT=zig
+KEYWORDS=~amd64 ~arm64
+LICENSE=ISC MIT
+RDEPEND=dev-libs/wayland sys-libs/pam x11-libs/libxkbcommon[wayland]
+SLOT=0
+SRC_URI=https://codeberg.org/ifreund/waylock/releases/download/v1.6.0/waylock-1.6.0.tar.gz https://codeberg.org/ifreund/zig-wayland/archive/v0.6.0.tar.gz -> wayland-0.6.0-lQa1kqz8AQADQmdNJsNhLoNHcnEGEUjrOaPV-dtEnEmX.tar.gz https://codeberg.org/ifreund/zig-xkbcommon/archive/v0.3.0.tar.gz -> xkbcommon-0.3.0-VDqIe3K9AQB2fG5ZeRcMC9i7kfrp5m2rWgLrmdNn9azr.tar.gz
+_eclasses_=multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	edo	a5e294016aa84979fcb2459749eb80b2	toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	linux-info	efd923656513c879204fec6638eadee5	zig-utils	00d67f014030fe73cc2e0ba2f0984231	zig	bc77880e429bb8eb2e12dc7976914959
+_md5_=02b49bdcfae84c1bcb87af452c55435d

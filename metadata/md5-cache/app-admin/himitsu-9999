@@ -4,10 +4,10 @@ DEPEND=>=dev-lang/hare-0.24.2:=
 DESCRIPTION=Secret storage system for Unix, suitable for storing passwords, keys, ...
 EAPI=8
 HOMEPAGE=https://git.sr.ht/~sircmpwn/himitsu
-INHERIT=git-r3
+INHERIT=toolchain-funcs git-r3
 LICENSE=GPL-3
 PROPERTIES=live
 RDEPEND=|| ( app-admin/hiprompt-gtk gui-apps/hiprompt-gtk-py )
 SLOT=0
-_eclasses_=git-r3	7b584b5dc33e3bc66ff5b9271bf41764
-_md5_=da33831f4f316831bfa12d58c68e0c25
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	git-r3	7b584b5dc33e3bc66ff5b9271bf41764
+_md5_=192a47f411234f96bc351cadddaedb66
