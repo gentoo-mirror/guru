@@ -1,4 +1,4 @@
-BDEPEND=test? ( dev-libs/atf dev-util/kyua ) verify-sig? ( sec-keys/signify-keys-lanodan:2025 ) verify-sig? ( app-crypt/signify )
+BDEPEND=test? ( dev-libs/atf dev-util/kyua ) verify-sig? ( sec-keys/signify-keys-lanodan:2026 ) verify-sig? ( app-crypt/signify )
 DEFINED_PHASES=configure install unpack
 DESCRIPTION=Collection of extra tools for Unixes
 EAPI=8
@@ -9,6 +9,6 @@ KEYWORDS=~amd64 ~arm64 ~riscv
 LICENSE=MPL-2.0
 RESTRICT=!test? ( test )
 SLOT=0
-SRC_URI=https://distfiles.hacktivis.me/releases/utils-extra/utils-extra-0.0.2.tar.gz verify-sig? ( https://distfiles.hacktivis.me/releases/utils-extra/utils-extra-0.0.2.tar.gz.sign )
+SRC_URI=https://distfiles.hacktivis.me/releases/utils-extra/utils-extra-0.1.0.tar.gz verify-sig? ( https://distfiles.hacktivis.me/releases/utils-extra/utils-extra-0.1.0.tar.gz.sign )
 _eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	verify-sig	ece4c893b6bd62eacbc4d25958e857f8
-_md5_=50fc5f10a1800b30933d33607739219d
+_md5_=65c0dab434db18075947499d15f01912
