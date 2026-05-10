@@ -1,17 +1,16 @@
-# Copyright 2022-2024 Gentoo Authors
+# Copyright 2022-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-MY_P="${PN}-nodejs-${PV}"
-
 DESCRIPTION="A language server for Dockerfiles"
-HOMEPAGE="https://github.com/rcjsuen/dockerfile-language-server-nodejs"
+HOMEPAGE="https://github.com/rcjsuen/dockerfile-language-server"
 SRC_URI="
-	mirror://npm/${PN}-nodejs/-/${MY_P}.tgz
-	https://tastytea.de/files/gentoo/${P}-deps.tar.xz
+	https://github.com/rcjsuen/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
+	https://codeberg.org/ceres-sees-all/guru-distfiles/releases/download/${P}-deps.tar.gz/${P}-deps.tar.gz
 "
-S="${WORKDIR}"
+
+S=${WORKDIR}
 
 # NOTE: to generate the dependency tarball:
 #       npm --cache "$(realpath ./npm-cache)" install $(portageq envvar DISTDIR)/${MY_P}.tgz
@@ -25,8 +24,7 @@ RDEPEND="net-libs/nodejs"
 BDEPEND="net-libs/nodejs[npm]"
 
 src_unpack() {
-	cd "${T}" || die "Could not cd to temporary directory"
-	unpack ${P}-deps.tar.xz
+	unpack ${P}-deps.tar.gz
 }
 
 src_install() {
@@ -36,9 +34,9 @@ src_install() {
 		--progress false \
 		--foreground-scripts \
 		--global \
-		--prefix "${ED}"/usr \
-		--cache "${T}"/npm-cache \
-		install "${DISTDIR}"/${MY_P}.tgz || die "npm install failed"
+		--prefix "${ED}/usr" \
+		--cache "${WORKDIR}/npm-cache" \
+		install "${DISTDIR}/${P}.tar.gz" || die "npm install failed"
 
 	einstalldocs
 }
