@@ -5,13 +5,13 @@ DESCRIPTION=A hex editor for reverse engineers, programmers, and eyesight
 EAPI=8
 HOMEPAGE=https://github.com/WerWolv/ImHex
 INHERIT=cmake llvm-r1 toolchain-funcs flag-o-matic xdg-utils
-IUSE=+system-llvm test lto +desktop-portal lz4 +llvm_slot_21 llvm_slot_15 llvm_slot_16 llvm_slot_17 llvm_slot_18 llvm_slot_19 llvm_slot_20
+IUSE=+system-llvm test lto +desktop-portal lz4 +llvm_slot_21 llvm_slot_16 llvm_slot_17 llvm_slot_18 llvm_slot_19 llvm_slot_20
 KEYWORDS=~amd64
 LICENSE=GPL-2
 RDEPEND=app-arch/bzip2 app-arch/xz-utils app-arch/zstd:= >=app-forensics/yara-4.2.0:= >=dev-cpp/nlohmann_json-3.10.2 dev-libs/boost >=dev-libs/capstone-5.0.3:= <dev-libs/capstone-6 dev-libs/md4c >=dev-libs/libfmt-11.0.2:= >=dev-libs/nativefiledialog-extended-1.2.1[desktop-portal?] media-libs/fontconfig media-libs/freetype >=media-libs/glfw-3.4[X] media-libs/glm media-libs/libglvnd net-libs/mbedtls:= net-misc/curl sys-apps/file virtual/zlib:= virtual/libiconv virtual/libintl
-REQUIRED_USE=^^ ( llvm_slot_15 llvm_slot_16 llvm_slot_17 llvm_slot_18 llvm_slot_19 llvm_slot_20 llvm_slot_21 )
+REQUIRED_USE=^^ ( llvm_slot_16 llvm_slot_17 llvm_slot_18 llvm_slot_19 llvm_slot_20 llvm_slot_21 )
 RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://github.com/WerWolv/ImHex/releases/download/v1.38.1/Full.Sources.tar.gz -> imhex-1.38.1.gh.tar.gz https://github.com/WerWolv/ImHex-Patterns/archive/refs/tags/ImHex-v1.38.1.tar.gz -> imhex-patterns-1.38.1.gh.tar.gz
-_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	3395ce6618fc5c7af03335471b896644	llvm-utils	e7edb4086e31c8537574b263d899f826	llvm-r1	77771a412c60b32ce3205d377edd7b83
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	3395ce6618fc5c7af03335471b896644	llvm-utils	e7edb4086e31c8537574b263d899f826	llvm-r1	7fb804a45baeadb298e57882952251f4
 _md5_=78104cf7bb2978e87942e285f017a2d3
