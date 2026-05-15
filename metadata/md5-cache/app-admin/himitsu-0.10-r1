@@ -1,0 +1,14 @@
+BDEPEND=app-text/scdoc
+DEFINED_PHASES=configure install
+DEPEND=>=dev-lang/hare-0.26.0:=
+DESCRIPTION=Secret storage system for Unix, suitable for storing passwords, keys, ...
+EAPI=8
+HOMEPAGE=https://git.sr.ht/~sircmpwn/himitsu
+INHERIT=toolchain-funcs
+KEYWORDS=~amd64 ~arm64 ~riscv
+LICENSE=GPL-3
+PDEPEND=|| ( app-admin/hiprompt-gtk gui-apps/hiprompt-gtk-py )
+SLOT=0/0.10
+SRC_URI=https://git.sr.ht/~sircmpwn/himitsu/archive/0.10.tar.gz -> himitsu-0.10.tar.gz
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5
+_md5_=24d1852daabf59cc66c10b5762b6bdc2

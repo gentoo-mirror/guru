@@ -3,9 +3,11 @@ DEPEND=dev-libs/glib >=gui-libs/gtk-4.18:4 gui-libs/libadwaita gui-libs/gtk4-lay
 DESCRIPTION=GTK4 prompter for Himitsu
 EAPI=8
 HOMEPAGE=https://git.sr.ht/~sircmpwn/hiprompt-gtk
+INHERIT=toolchain-funcs
 KEYWORDS=~amd64
 LICENSE=GPL-3
 RDEPEND=dev-libs/glib >=gui-libs/gtk-4.18:4 gui-libs/libadwaita gui-libs/gtk4-layer-shell !gui-apps/hiprompt-gtk-py
 SLOT=0
 SRC_URI=https://git.sr.ht/~sircmpwn/hiprompt-gtk/archive/0.10.tar.gz -> hiprompt-gtk-0.10.tar.gz
-_md5_=dc3601a208fd137af4455c70d4797b0f
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5
+_md5_=857cefcd65548b0d8d2049647cba442f

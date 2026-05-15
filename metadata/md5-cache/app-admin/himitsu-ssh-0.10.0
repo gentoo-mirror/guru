@@ -4,9 +4,11 @@ DEPEND=>=app-admin/himitsu-0.10:= >=dev-hare/hare-ssh-0.26.0:= >=dev-lang/hare-0
 DESCRIPTION=SSH integration for Himitsu
 EAPI=8
 HOMEPAGE=https://git.sr.ht/~sircmpwn/himitsu-ssh
+INHERIT=toolchain-funcs
 KEYWORDS=~amd64
 LICENSE=GPL-3
 RDEPEND=>=app-admin/himitsu-0.10:= >=dev-hare/hare-ssh-0.26.0:=
 SLOT=0
 SRC_URI=https://git.sr.ht/~sircmpwn/himitsu-ssh/archive/0.10.0.tar.gz -> himitsu-ssh-0.10.0.tar.gz
-_md5_=e2c4e632115f313ebd91e42f1f394951
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5
+_md5_=d6b73b8f9cbfdf1e2ee6aa182b2c29e0

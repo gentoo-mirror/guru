@@ -4,10 +4,10 @@ DEPEND=>=app-admin/himitsu-0.8:= >=dev-hare/hare-ssh-0.24.2:= >=dev-lang/hare-0.
 DESCRIPTION=SSH integration for Himitsu
 EAPI=8
 HOMEPAGE=https://git.sr.ht/~sircmpwn/himitsu-ssh
-INHERIT=git-r3
+INHERIT=toolchain-funcs git-r3
 LICENSE=GPL-3
 PROPERTIES=live
 RDEPEND=>=app-admin/himitsu-0.8:= >=dev-hare/hare-ssh-0.24.2:=
 SLOT=0
-_eclasses_=git-r3	2f8cdb10b033f92c3136aa6488a31c98
-_md5_=d9d69b94accc6382058d119815152f67
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	git-r3	2f8cdb10b033f92c3136aa6488a31c98
+_md5_=fc930fc06a3a02439e3533f15bcc01a4

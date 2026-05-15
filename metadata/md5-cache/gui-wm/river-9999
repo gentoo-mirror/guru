@@ -1,4 +1,4 @@
-BDEPEND=dev-libs/wayland-protocols dev-util/wayland-scanner man? ( app-text/scdoc ) || ( dev-lang/zig:0.15[llvm(+)?] dev-lang/zig-bin:0.15 ) || ( dev-lang/zig:0.15 dev-lang/zig-bin:0.15 ) virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=dev-libs/wayland-protocols dev-util/wayland-scanner man? ( app-text/scdoc ) || ( dev-lang/zig:0.16[llvm(+)?] dev-lang/zig-bin:0.16 ) || ( dev-lang/zig:0.16 dev-lang/zig-bin:0.16 ) virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install postinst prepare setup test unpack
 DEPEND=dev-libs/libevdev dev-libs/libinput:= dev-libs/wayland gui-libs/wlroots:0.20[X?] x11-libs/libxkbcommon[wayland,X?] x11-libs/pixman
 DESCRIPTION=A dynamic tiling Wayland compositor
@@ -11,4 +11,4 @@ PROPERTIES=live
 RDEPEND=dev-libs/libevdev dev-libs/libinput:= dev-libs/wayland gui-libs/wlroots:0.20[X?] x11-libs/libxkbcommon[wayland,X?] x11-libs/pixman
 SLOT=0
 _eclasses_=eapi9-ver	6a71fa30cdb3fe445114fdeab156c1f0	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	edo	a5e294016aa84979fcb2459749eb80b2	toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	linux-info	efd923656513c879204fec6638eadee5	zig-utils	00d67f014030fe73cc2e0ba2f0984231	zig	bc77880e429bb8eb2e12dc7976914959	git-r3	2f8cdb10b033f92c3136aa6488a31c98
-_md5_=ea4dfdca8c6a9169c7de294a742af0ad
+_md5_=b4e74aa9b10b30022f754791565c93ee

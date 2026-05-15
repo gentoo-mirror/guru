@@ -1,5 +1,5 @@
 BDEPEND=virtual/pkgconfig
-DEFINED_PHASES=compile configure install postinst postrm
+DEFINED_PHASES=compile configure install postinst postrm test
 DESCRIPTION=udev rules for Nitrokey devices
 EAPI=8
 HOMEPAGE=https://github.com/Nitrokey/nitrokey-udev-rules
@@ -10,4 +10,4 @@ RDEPEND=virtual/udev
 SLOT=0
 SRC_URI=https://github.com/Nitrokey/nitrokey-udev-rules/archive/v1.1.0.tar.gz -> nitrokey-udev-rules-1.1.0.gh.tar.gz
 _eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	udev	1a23882bb73bc31c64a6f00a5e515f34
-_md5_=c8aa9db1234166b0bdf139f8011e2edd
+_md5_=91b8dc961c88d0ff40bca63086b65227

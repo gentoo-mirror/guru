@@ -1,5 +1,5 @@
 BDEPEND=app-text/scdoc >=dev-vcs/git-1.8.2.1[curl]
-DEFINED_PHASES=configure unpack
+DEFINED_PHASES=configure install unpack
 DEPEND=>=dev-lang/hare-0.24.2:=
 DESCRIPTION=Secret storage system for Unix, suitable for storing passwords, keys, ...
 EAPI=8
@@ -10,4 +10,4 @@ PROPERTIES=live
 RDEPEND=|| ( app-admin/hiprompt-gtk gui-apps/hiprompt-gtk-py )
 SLOT=0
 _eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	git-r3	2f8cdb10b033f92c3136aa6488a31c98
-_md5_=192a47f411234f96bc351cadddaedb66
+_md5_=132b3c88da06d972fd5940a92f8e30d0

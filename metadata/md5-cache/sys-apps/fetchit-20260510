@@ -1,0 +1,15 @@
+DEFINED_PHASES=compile install postinst setup
+DEPEND=lua_single_target_lua5-4? ( dev-lang/lua:5.4 )
+DESCRIPTION=Minimal system info fetcher written in C with Lua configuration
+EAPI=8
+HOMEPAGE=https://codeberg.org/nzuum/fetchit
+INHERIT=lua-single toolchain-funcs
+IUSE=+lua_single_target_lua5-4
+KEYWORDS=~amd64
+LICENSE=MIT
+RDEPEND=lua_single_target_lua5-4? ( dev-lang/lua:5.4 )
+REQUIRED_USE=^^ ( lua_single_target_lua5-4 )
+SLOT=0
+SRC_URI=https://codeberg.org/nzuum/fetchit/archive/b0ed7c1fe08d32fc26e458cd971930d550720462.tar.gz -> fetchit-20260510.tar.gz
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	lua-utils	7c89927eda6f21c4c48136247077ab37	lua-single	75fe955a36b18e199213c8739eaebdbb
+_md5_=3dff4f43e5f8893f4cb3accf64b879d0
