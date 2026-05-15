@@ -5,7 +5,7 @@
 
 EAPI=8
 
-RUST_MIN_VER="1.92.0"
+RUST_MIN_VER="1.93.0"
 
 MY_PN=${PN}-editor
 MY_P="${MY_PN}-${PV}"
@@ -749,6 +749,8 @@ KEYWORDS="~amd64"
 
 IUSE="dev-bins +embed-plugins +plugins gui"
 REQUIRED_USE="embed-plugins? ( plugins )"
+
+RESTRICT="test" # interactive
 
 src_prepare() {
 	default

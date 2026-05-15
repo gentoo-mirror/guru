@@ -66,7 +66,7 @@ PATCHES=(
 src_unpack() {
 	if [[ "${PV}" = "9999" ]]; then
 		git-r3_src_unpack
-		zig_live_fetch
+		zig_live_src_unpack
 	else
 		zig_src_unpack
 	fi
@@ -76,6 +76,7 @@ src_configure() {
 	local my_zbs_args=(
 		-Dstrip=false # Let Portage control this
 		-Dpie=true
+		-Dllvm=$(usex llvm true false)
 		-Dman-pages=$(usex man true false)
 		-Dxwayland=$(usex X true false)
 	)

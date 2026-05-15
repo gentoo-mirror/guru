@@ -152,6 +152,8 @@ CRATES="
 	zerovec-derive@0.11.1
 "
 
+RUST_MIN_VER="1.82.0"
+
 inherit cargo
 
 DESCRIPTION="Fast, configurable, shell plugin manager."
@@ -166,6 +168,17 @@ SRC_URI="https://github.com/rossmacarthur/sheldon/archive/refs/tags/${PV}.tar.gz
 LICENSE="Apache-2.0 Apache-2.0-with-LLVM-exceptions Boost-1.0 LGPL-2.1+ MIT Unicode-3.0 Unlicense"
 SLOT="0"
 KEYWORDS="~amd64"
+# tests clone github.com/rossmacarthur/sheldon-test, requires network access
+# https://bugs.gentoo.org/974535
+RESTRICT="test"
+
+RDEPEND="
+	dev-libs/openssl:=
+	net-misc/curl
+"
+DEPEND="${RDEPEND}"
+BDEPEND="virtual/pkgconfig"
+
 # rust does not use *FLAGS from make.conf, silence portage warning
 # update with proper path to binaries this crate installs, omit leading /
 QA_FLAGS_IGNORED="usr/bin/${PN}"

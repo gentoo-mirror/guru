@@ -18,6 +18,24 @@
 
 # New entries go on top.
 
+# David Roman <stkw0@disroot.org> (2026-05-13)
+# No new releases since 2023. It is a dep of a package that was never added.
+# Removal after 2026-06-13
+dev-python/pyperscan
+
+# David Roman <stkw0@disroot.org> (2026-05-11)
+# Missing components.Hard to package: upstream don't always make releases for new versions
+# Removal after 2026-06-11
+app-misc/aw-core
+app-misc/aw-client
+# revdep of aw-core
+dev-python/timeslot
+
+# David Roman <stkw0@disroot.org> (2026-04-26)
+# No revdeps. Unmaintained upstream
+# Removal after 2026-06-11
+dev-python/TakeTheTime
+
 # David Roman <stkw0@disroot.org> (2026-04-26)
 # Duplicate of dev-util/kubetail. No reason to maintain this version anymore
 # Removal after 2026-05-25

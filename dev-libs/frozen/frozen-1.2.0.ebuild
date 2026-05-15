@@ -15,6 +15,11 @@ KEYWORDS="~amd64 ~arm64 ~ppc64"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
+PATCHES=(
+	"${FILESDIR}/${PN}-1.2.0-bump-minimum-required-CMake-version.patch"
+	"${FILESDIR}/${PN}-1.2.0-strip-Werror.patch"
+)
+
 src_configure() {
 	local mycmakeargs=(
 		-DBUILD_TESTING=$(usex test)

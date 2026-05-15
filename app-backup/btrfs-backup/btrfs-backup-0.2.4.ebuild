@@ -3,6 +3,7 @@
 
 EAPI=8
 
+RUST_MIN_VER="1.87.0"
 CRATES="
 	aho-corasick@1.1.4
 	anstream@0.6.21
@@ -108,6 +109,8 @@ RDEPEND="
 "
 DEPEND="${RDEPEND}"
 
+QA_FLAGS_IGNORED="usr/bin/${PN}"
+
 src_compile() {
 	cargo_src_compile --bin="${PN}"
 	# Install shell-complete binary into target directory to be able to
@@ -119,7 +122,7 @@ src_install() {
 	cargo_src_install --bin="${PN}"
 
 	"$(cargo_target_dir)"/bin/shell-complete bash > "${PN}.bash" || die
-	dobashcomp "${PN}.bash"
+	newbashcomp "${PN}.bash" "${PN}"
 
 	"$(cargo_target_dir)"/bin/shell-complete fish >> "${PN}.fish" || die
 	dofishcomp "${PN}.fish"
