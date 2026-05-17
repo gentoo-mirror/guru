@@ -3,6 +3,8 @@
 
 EAPI=8
 
+RUST_MIN_VER="1.89.0"
+
 inherit cargo shell-completion
 
 DESCRIPTION="Another CMake LSP"
@@ -25,9 +27,9 @@ src_install() {
 }
 
 src_test() {
-	local skip=(
-		--skip document_link::tests::test_document_link_search
-		--skip languageserver::test::test_init
+	local CARGO_SKIP_TESTS=(
+		document_link::tests::test_document_link_search
+		languageserver::test::test_init
 	)
-	cargo_src_test -- "${skip[@]}"
+	cargo_src_test
 }

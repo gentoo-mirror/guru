@@ -11,7 +11,7 @@ PYTHON_COMPAT=( python3_{12..14} )
 CRATES="
 	aho-corasick@1.1.4
 	heck@0.5.0
-	libc@0.2.185
+	libc@0.2.186
 	memchr@2.8.0
 	once_cell@1.21.4
 	portable-atomic@1.13.1
@@ -66,6 +66,8 @@ BDEPEND="
 		dev-vcs/git
 	)
 "
+
+QA_FLAGS_IGNORED="usr/lib.*/py.*/site-packages/gersemi.*.so"
 
 EPYTEST_DESELECT=(
 	tests/test_configuration.py::test_schema_in_repository_is_consistent_with_configuration_definition

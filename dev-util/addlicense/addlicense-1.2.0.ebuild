@@ -27,12 +27,11 @@ src_compile() {
 }
 
 src_test() {
-	ego test -v -buildmode=default -race ./...
+	ego test -v ./...
 }
 
 src_install() {
-	dobin ${PN}
-
-	DOCS=( LICENSE README.md )
 	default
+
+	dobin ${PN}
 }

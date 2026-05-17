@@ -23,6 +23,8 @@ fi
 LICENSE="MIT"
 SLOT="0"
 
+BDEPEND=">=dev-lang/go-1.25.0"
+
 src_unpack() {
 	if [[ "${PV}" == 9999 ]] ; then
 		git-r3_src_unpack
@@ -34,7 +36,7 @@ src_unpack() {
 
 src_compile() {
 	ego build -trimpath -buildmode=pie -mod=readonly -modcacherw -ldflags \
-		"-s -w -linkmode external -extldflags \"${LDFLAGS}\" -X 'main.Version=${PV}'" \
+		"-linkmode external -extldflags \"${LDFLAGS}\" -X 'main.Version=${PV}'" \
 		-o _minify ./cmd/minify
 }
 
