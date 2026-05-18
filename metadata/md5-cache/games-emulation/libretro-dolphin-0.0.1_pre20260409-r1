@@ -1,0 +1,16 @@
+BDEPEND=virtual/pkgconfig test? ( dev-cpp/gtest ) app-alternatives/ninja >=dev-build/cmake-3.28.5
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=app-arch/bzip2:= app-arch/lz4:= app-arch/xz-utils app-arch/zstd:= dev-libs/hidapi dev-libs/libfmt:= dev-libs/lzo:2 dev-libs/pugixml dev-libs/xxhash dev-util/glslang:= games-emulation/libretro-info media-libs/cubeb >=media-libs/imgui-1.92 media-libs/implot:0/0.17 >=media-libs/libsfml-3.0:= media-libs/libspng net-libs/enet net-libs/mbedtls:0= sys-libs/minizip-ng:= virtual/libusb:1 virtual/opengl virtual/zlib:= x11-libs/libX11 x11-libs/libXi x11-libs/libXrandr bluetooth? ( net-wireless/bluez:= ) evdev? ( dev-libs/libevdev virtual/libudev ) dev-cpp/tinygltf dev-util/vulkan-headers media-libs/VulkanMemoryAllocator egl? ( media-libs/libglvnd )
+DESCRIPTION=Dolphin libretro port
+EAPI=8
+HOMEPAGE=https://github.com/libretro/dolphin
+INHERIT=cmake
+IUSE=bluetooth egl +evdev log test
+KEYWORDS=~amd64
+LICENSE=GPL-2+ BSD BSD-2 LGPL-2.1+ MIT ZLIB MIT BSD-2 GPL-2+ FatFs MIT MIT MIT LGPL-2.1+ MIT curl
+RDEPEND=app-arch/bzip2:= app-arch/lz4:= app-arch/xz-utils app-arch/zstd:= dev-libs/hidapi dev-libs/libfmt:= dev-libs/lzo:2 dev-libs/pugixml dev-libs/xxhash dev-util/glslang:= games-emulation/libretro-info media-libs/cubeb >=media-libs/imgui-1.92 media-libs/implot:0/0.17 >=media-libs/libsfml-3.0:= media-libs/libspng net-libs/enet net-libs/mbedtls:0= sys-libs/minizip-ng:= virtual/libusb:1 virtual/opengl virtual/zlib:= x11-libs/libX11 x11-libs/libXi x11-libs/libXrandr bluetooth? ( net-wireless/bluez:= ) evdev? ( dev-libs/libevdev virtual/libudev )
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/libretro/dolphin/archive/0cd3bb89c29535db9b7552fc86871867ccf5b471.tar.gz -> libretro-dolphin-0.0.1_pre20260409.tar.gz https://github.com/mutouyun/cpp-ipc/archive/ab4e5bd18e554aaa4503a0c6f6174d9bbfb11b42.tar.gz -> cpp-ipc-ab4e5bd18e554aaa4503a0c6f6174d9bbfb11b42.tar.gz https://github.com/weisslj/cpp-optparse/archive/2265d647232249a53a03b411099863ceca35f0d3.tar.gz -> cpp-optparse-2265d647232249a53a03b411099863ceca35f0d3.tar.gz https://github.com/e-dant/watcher/archive/06f84a1314be18f5e697ebbf28c0fab2d17c9c39.tar.gz -> watcher-06f84a1314be18f5e697ebbf28c0fab2d17c9c39.tar.gz
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	3395ce6618fc5c7af03335471b896644
+_md5_=8e252b5513e2c2a7fec95abfdb7514e3

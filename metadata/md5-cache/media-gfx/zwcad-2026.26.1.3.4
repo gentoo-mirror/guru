@@ -1,0 +1,16 @@
+BDEPEND=dev-util/patchelf
+DEFINED_PHASES=install nofetch postinst postrm preinst unpack
+DEPEND=media-libs/fontconfig media-libs/libglvnd media-libs/tiff-compat:4 sys-apps/util-linux virtual/libcrypt:= virtual/zlib
+DESCRIPTION=CAD software for 2D drawing, reviewing and printing work
+EAPI=8
+HOMEPAGE=https://www.zwsoft.cn/product/zwcad/linux
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=desktop unpacker xdg
+KEYWORDS=-* ~amd64
+LICENSE=all-rights-reserved
+RDEPEND=media-libs/fontconfig media-libs/libglvnd media-libs/tiff-compat:4 sys-apps/util-linux virtual/libcrypt:= virtual/zlib
+RESTRICT=strip mirror bindist fetch
+SLOT=0
+SRC_URI=zwcad2026_26.1.3.4_amd64.deb https://anaconda.org/anaconda/python/3.8.20/download/linux-64/python-3.8.20-he870216_0.tar.bz2 -> zwcad-python-3.8.20.tar.bz2
+_eclasses_=desktop	26d57169ca094c04be416993844ec8bc	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	unpacker	a89c769f7dcf68bd2a6d23da9ede2ad2	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575
+_md5_=75bf51b2940b11c9719a2f2b16d77b80
