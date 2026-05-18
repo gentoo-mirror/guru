@@ -33,6 +33,7 @@ RDEPEND="
 	media-libs/gst-plugins-base
 	media-libs/gst-plugins-good
 	media-plugins/gst-plugins-libav
+	sys-apps/dbus
 	vaapi? ( media-plugins/gst-plugins-vaapi )
 	net-dns/avahi[mdnsresponder-compat]
 	X? ( x11-libs/libX11 )
