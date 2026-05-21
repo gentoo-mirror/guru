@@ -231,7 +231,6 @@ dev-util/gammaray:designer - Widget .ui file export
 dev-util/gammaray:geolocation - Physical position determination support from Qt framework
 dev-util/gammaray:highlight - Syntax highlighting for code editor
 dev-util/gammaray:kjob - KJob tracker plug-in
-dev-util/gammaray:qml - Build with Qt Quick support
 dev-util/gammaray:scxml - Build support for Qt State Chart XML (SCXML)
 dev-util/gammaray:webengine - Enable support for dev-qt/qtwebengine
 dev-util/ols:odinfmt - Install formatter
@@ -319,7 +318,7 @@ games-emulation/eden:discord - Enable Discord Rich Presence
 games-emulation/eden:llvm - Enable the LLVM backend for disassembly and symbol demangling
 games-emulation/eden:opengl - Enable the OpenGL graphics backend
 games-emulation/eden:room - Compile the dedicated room executable
-games-emulation/eden:sdl - Enable the SDL2-based eden-cli frontend
+games-emulation/eden:sdl - Enable the SDL-based eden-cli frontend
 games-emulation/eden:usb - Enable the LibUSB controller backend
 games-emulation/eden:web-applet - Enable the custom web applet frontend through dev-qt/qtwebengine
 games-emulation/eden:web-service - Enable multiplayer support
@@ -869,7 +868,6 @@ phosh-base/phosh-shell:test-full - Run integration tests
 phosh-base/xdg-desktop-portal-phosh:rust - Build the Rust based portal
 sci-biology/cmdock:apidoc - Build API documentation using app-text/doxygen
 sci-biology/cmdock:boinc - Use CmDock with SiDock@home BOINC project
-sci-electronics/qucs-s:ngspice - Add support for ngspice backend (recommended simulation backend)
 sci-electronics/sby:yices2 - Enable Yices2 SMT solver support
 sci-electronics/surfer:accesskit - Enable accessibility support via accesskit
 sci-electronics/surfer:performance-plot - Enable performance plotting with egui_plot
@@ -972,6 +970,8 @@ sys-process/nq:tq - Install tq, a tmux & screen wrapper
 www-apps/forgejo:acct - User and group management via acct-*/git packages
 www-apps/pleroma:system-lexbor - Use dev-libs/lexbor instead of vendored version
 www-apps/pleroma:system-vips - Use media-libs/vips instead of vendored version
+www-apps/snac:mastodon - Enable Mastodon API support
+www-apps/snac:sandbox - Enable experimental sandboxing through Linux Landlock
 www-client/yandex-browser:ffmpeg-codecs - Use media-video/ffmpeg-chromium for multi-threaded ffmpeg codecs for the HTML5 <audio> and <video> tags
 www-servers/hinsightd:cgi - Enable old/slow cgi support (legacy should not be used)
 www-servers/hinsightd:fcgi - Enable fast cgi support

@@ -1,0 +1,14 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile install unpack
+DEPEND=dev-libs/openssl net-misc/curl[ssl]
+DESCRIPTION=A simple, minimalistic ActivityPub instance written in portable C
+EAPI=8
+HOMEPAGE=https://codeberg.org/grunfink/snac2
+INHERIT=git-r3
+IUSE=+mastodon sandbox
+LICENSE=MIT
+PROPERTIES=live
+RDEPEND=dev-libs/openssl net-misc/curl[ssl]
+SLOT=0
+_eclasses_=git-r3	2f8cdb10b033f92c3136aa6488a31c98
+_md5_=292fd80fb1eee70d34b24aab9cd9d590

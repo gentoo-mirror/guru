@@ -1,0 +1,14 @@
+BDEPEND=|| ( >=dev-lang/crystal-1.16.3 >=dev-lang/crystal-bin-1.16.3 )
+DEFINED_PHASES=configure install
+DEPEND=dev-libs/boehm-gc dev-libs/libpcre2:= dev-libs/libyaml || ( >=dev-lang/crystal-1.16.3 >=dev-lang/crystal-bin-1.16.3 )
+DESCRIPTION=Small helper tools to aid installing Crystal packages in Gentoo
+EAPI=9
+HOMEPAGE=https://git.sysrq.in/gshards/
+INHERIT=crystal-utils toolchain-funcs
+KEYWORDS=~amd64
+LICENSE=GPL-2
+RDEPEND=dev-libs/boehm-gc dev-libs/libpcre2:= dev-libs/libyaml
+SLOT=0
+SRC_URI=https://git.sr.ht/~cyber/gshards/archive/0.2.tar.gz -> gshards-0.2.srht.tar.gz
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	crystal-utils	7ba289dcfc245baac3244b600bce0619
+_md5_=565457c83be24b7f7eeb682cbdd47c51

@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install
+DEPEND=dev-libs/openssl net-misc/curl[ssl]
+DESCRIPTION=A simple, minimalistic ActivityPub instance written in portable C
+EAPI=8
+HOMEPAGE=https://codeberg.org/grunfink/snac2
+IUSE=+mastodon sandbox
+KEYWORDS=~amd64 ~x86
+LICENSE=MIT
+RDEPEND=dev-libs/openssl net-misc/curl[ssl]
+SLOT=0
+SRC_URI=https://codeberg.org/grunfink/snac2/archive/2.92.tar.gz -> snac-2.92.tar.gz
+_md5_=5a4e3f1e6ea634238b4ae7f888554748
