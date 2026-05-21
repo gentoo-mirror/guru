@@ -3,11 +3,14 @@
 
 EAPI=8
 
+declare -g -r -A ZBS_DEPENDENCIES=(
+)
+ZIG_SLOT="0.16"
+
+inherit eapi9-ver zig
+
 DESCRIPTION="A dynamic tiling Wayland compositor"
 HOMEPAGE="https://isaacfreund.com/software/river/ https://codeberg.org/river/river"
-
-ZIG_SLOT="0.16"
-inherit eapi9-ver zig
 
 if [[ "${PV}" = "9999" ]]; then
 	inherit git-r3
@@ -25,14 +28,14 @@ fi
 # zig-pixman, zig-wayland, zig-wlroots, zig-xkbcommon: MIT
 LICENSE="GPL-3+ MIT"
 SLOT="0"
-IUSE="X +llvm man"
+IUSE="X man"
 
 BDEPEND="
 	dev-libs/wayland-protocols
 	dev-util/wayland-scanner
 	man? ( app-text/scdoc )
 	|| (
-		dev-lang/zig:${ZIG_SLOT}[llvm(+)?]
+		dev-lang/zig:${ZIG_SLOT}
 		dev-lang/zig-bin:${ZIG_SLOT}
 	)
 "
@@ -65,7 +68,6 @@ src_configure() {
 	local my_zbs_args=(
 		-Dstrip=false # Let Portage control this
 		-Dpie=true
-		-Dllvm=$(usex llvm true false)
 		-Dman-pages=$(usex man true false)
 		-Dxwayland=$(usex X true false)
 	)
