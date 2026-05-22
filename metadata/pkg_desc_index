@@ -206,7 +206,7 @@ app-doc/stdman 2022.07.30 2024.07.05 9999: Formatted C++ stdlib man pages (cppre
 app-doc/sway-wiki 9999: Wiki of gui-wm/sway, rendered to HTML using kramdown-parser-gfm
 app-editors/edit 1.2.0: Microsoft edit
 app-editors/emacs-lsp-booster 0.2.1: Emacs LSP performance booster
-app-editors/fresh 0.3.2 0.3.5 0.3.7: Terminal based IDE & text editor: easy, powerful and fast
+app-editors/fresh 0.3.5 0.3.7 0.3.8: Terminal based IDE & text editor: easy, powerful and fast
 app-editors/imhex 1.38.1: A hex editor for reverse engineers, programmers, and eyesight
 app-editors/kakoune-lsp 18.1.0 21.0.0: Kakoune Language Server Protocol Client
 app-editors/l3afpad 0.8.18.1.11: Simple GTK3 text editor (successor to leafpad)
@@ -522,7 +522,7 @@ dev-crystal/spectator 0.12.1-r1 0.12.2-r1: Feature-rich testing framework for Cr
 dev-crystal/webdrivers 0.4.3-r2: Helps manage drivers for Selenium, such as the Chromedriver
 dev-crystal/webless 0.1.0-r1 0.2.0-r1: HTTP::Client for testing HTTP::Handlers directly and maintaining cookies
 dev-crystal/webmock 0.14.0-r1: Mock HTTP client
-dev-db/couchdb 3.5.1-r2: Document-oriented NoSQL database
+dev-db/couchdb 3.5.2: Document-oriented NoSQL database
 dev-db/libpg_query 16.5.1.0 17.6.0.0: C library for accessing the PostgreSQL parser outside of the server environment
 dev-db/pg_query_vala 0.1.0_pre20240326-r1 0.1.0_pre20241001: Thin wrapper around libpg_query to use with vala
 dev-db/pg_repack 1.5.3: Reorganize tables in PostgreSQL databases with minimal locks
@@ -564,7 +564,7 @@ dev-erlang/cowboy 2.9.0: Small, fast, modern HTTP server for Erlang/OTP.
 dev-erlang/cowlib 2.11.0: Support library for manipulating Web protocols.
 dev-erlang/ranch 1.7.1 1.8.0 2.0.0: Socket acceptor pool for TCP protocols.
 dev-erlang/yval 1.0.10: YAML validator
-dev-games/godot-dotnet 4.6.1-r1 4.6.2: Multi-platform 2D and 3D game engine with a feature-rich editor
+dev-games/godot-dotnet 4.6.1-r1 4.6.2 4.6.3: Multi-platform 2D and 3D game engine with a feature-rich editor
 dev-games/surgescript 0.6.1-r1 9999: scripting language made for opensurge
 dev-games/unityhub 3.14.3: Official Unity tool for managing Unity Engines and projects
 dev-go/get-ego-vendor 0.2.0: Utility to generate EGO_SUM data for ebuilds
@@ -1093,7 +1093,7 @@ dev-util/bump-my-version 1.2.6 1.2.7: Version bump your Python project
 dev-util/cargo-post 0.1.7: A cargo wrapper that executes a post build script after a successful build.
 dev-util/cargo-show-asm 0.2.55: A cargo subcommand that displays the generated assembly of Rust source code.
 dev-util/catalyst-lab 1.6.0 1.6.1: An automation tool for building Gentoo release stages and binhost packages.
-dev-util/codex 0.131.0 0.132.0: Codex CLI - OpenAI's AI-powered coding agent
+dev-util/codex 0.132.0 0.133.0: Codex CLI - OpenAI's AI-powered coding agent
 dev-util/coq-lsp 0.1.9: Visual Studio Code Extension and Language Server Protocol for Coq
 dev-util/deblob 0.12 9999: remove binary executables from a directory
 dev-util/distribution-gpg-keys 1.119: Collection of GPG keys used in Linux Distributions
@@ -1110,7 +1110,7 @@ dev-util/forgejo-runner 12.10.1 9999: A daemon that connects to a Forgejo instan
 dev-util/fortls 2.13.0 3.0.0 3.1.1 3.1.2 3.2.2: Fortran Language Server (fortls)
 dev-util/fortran-test-drive 0.4.0 0.5.0: The simple testing framework (for Fortran)
 dev-util/gammaray 3.3.1 3.4.0: High-level runtime introspection tool for Qt applications
-dev-util/gemini-cli 0.42.0: Gemini CLI - a command-line AI workflow tool by Google
+dev-util/gemini-cli 0.42.0 0.43.0: Gemini CLI - a command-line AI workflow tool by Google
 dev-util/genTree 0.1.0 9999: Gentoo rootfs tree generator
 dev-util/gersemi 0.27.4 0.27.5: A formatter to make your CMake code the real treasure
 dev-util/git-bug 0.10.1 9999: distributed, offline-first bug tracker
@@ -1251,7 +1251,7 @@ games-rpg/open-adventure 1.17 1.18 1.20: Forward-port of the Crowther/Woods Adve
 games-rpg/primordia 3.6.70667: A cyberpunk point-and-click adventure game
 games-rpg/snoot-game 1.12.0: Visual novel parody of Goodbye Volcano High
 games-server/among-sus 20210519: Among Us, but it's a text adventure
-games-simulation/kittenspaceagency-bin 2026.5.10-r4424: A space flight and rocketry simulation
+games-simulation/kittenspaceagency-bin 2026.5.11-r4462: A space flight and rocketry simulation
 games-strategy/7k-ambition 3.2.8 9999: Seven Kingdoms: Ambition
 games-strategy/gigalomania 1.0.1: Libre clone of Mega-Lo-Mania (original from ~1990), supports original resources
 games-strategy/hedgewars 1.1.0_pre20260124: A turn-based strategy, artillery, action and comedy game
@@ -1357,9 +1357,8 @@ gui-apps/lswt 1.0.4-r1 2.0.0 9999: List Wayland toplevels
 gui-apps/meteo-qt 4.2 4.3: A system tray application for the weather status
 gui-apps/mpvpaper 1.8 9999: A video wallpaper program for wlroots based wayland compositors
 gui-apps/niri-sidebar 0.4.0: A lightweight, external sidebar manager for the Niri window manager.
-gui-apps/noctalia 9999: A lightweight Wayland shell and bar built directly on Wayland + OpenGL ES, with no Qt or GTK dependency.
 gui-apps/noctalia-qs 0.0.11 0.0.12 9999: Toolkit for building desktop widgets using QtQuick
-gui-apps/noctalia-shell 4.5.0 4.7.4 4.7.5 4.7.6 4.7.7 5.0.0_pre20260520 9999: A sleek and minimal desktop shell thoughtfully crafted for Wayland
+gui-apps/noctalia-shell 4.7.6 4.7.7 5.0.0_pre20260521 5.0.0_pre99999999 9999: A sleek and minimal desktop shell thoughtfully crafted for Wayland
 gui-apps/nwg 0: meta package package for nwg-shell
 gui-apps/nwg-bar 0.1.5 0.1.6: GTK3-based button bar for wlroots-based compositors
 gui-apps/nwg-clipman 0.2.5 0.2.8: nwg-shell clipboard manager - a GTK3-based GUI for cliphist
@@ -1479,6 +1478,7 @@ media-fonts/nerdfonts 3.4.0: Patched font collection with a high number of glyph
 media-fonts/overpass 3.0.4: An open source webfont family inspired by Highway Gothic
 media-fonts/piazzolla 2.005: Piazzolla font family
 media-fonts/plemoljp 3.0.0: PlemolJP is a composite font of IBM Plex Mono and IBM Plex Sans JP.
+media-fonts/redhat 5.0.0 9999: Red Hat's Open Source Fonts - Red Hat Display and Red Hat Text
 media-fonts/source-han-mono 1.002: Pan-CJK OpenType/CFF mono font family
 media-fonts/source-han-serif 2.002 2.003: Pan-CJK OpenType/CFF font family
 media-fonts/ttf-ancient-fonts 2.60: Unicode font for Latin, IPA Extensions, Greek, Cyrillic and many Symbol Blocks
@@ -1564,7 +1564,7 @@ media-sound/deep-filter 0.5.6-r2: Noise supression using deep filtering
 media-sound/drumgizmo 0.9.20-r1 9999: Audio sampler plugin and stand-alone app that simulates a real drum kit
 media-sound/dzr 251115 260308 260315: DZR: the command line deezer.com player
 media-sound/eartag 0.5.0 0.5.1: GTK4 MusicBrainz audio tagger
-media-sound/fooyin 0.10.0 0.10.3 0.10.5 0.10.6 0.10.7 9999: A customizable music player, Qt clone of foobar2000
+media-sound/fooyin 0.10.0 0.10.3 0.10.5 0.10.6 0.10.7 0.10.8 9999: A customizable music player, Qt clone of foobar2000
 media-sound/furnace 0.6 0.6.5-r1 0.6.7: a multi-system chiptune tracker compatible with DefleMask modules
 media-sound/gapless 4.3.1 4.4: A GTK4 music player
 media-sound/goxlr-utility 1.2.3 9999: A utility for monitoring and controlling a TC-Helicon GoXLR or GoXLR Mini
@@ -1600,7 +1600,7 @@ media-sound/qobuz-player 0.9.0 0.10.0 2026.05.03: Tui, web and rfid player for Q
 media-sound/rmpc 0.9.0 0.10.0 9999: A beautiful and configurable TUI client for MPD
 media-sound/rsgain 3.5.1-r1 3.5.3-r1: Really Simple replay Gain calculator for tagging audio files
 media-sound/shortwave 5.0.0 5.1.0: An internet radio player
-media-sound/songrec 0.6.9: An open-source Shazam client for Linux, written in Rust.
+media-sound/songrec 0.7.3: An open-source Shazam client for Linux, written in Rust.
 media-sound/spct 1.2.2 1.2.4: CLI program for playing back and rendering SPC files.
 media-sound/spot 0.4.0-r2: GTK4 Spotify (Premium) client
 media-sound/spotify-adblock 1.0.1 1.0.2 1.0.3: Adblocker for Spotify
@@ -1608,7 +1608,7 @@ media-sound/spotify-player 0.20.5 0.21.0 0.21.1 9999: spotify_player is a fast, 
 media-sound/spotifyd 0.3.5_p20240513 0.4.1 0.4.2: A Spotify daemon
 media-sound/spotube-bin 3.8.0: An open source, cross-platform Spotify client
 media-sound/streamrip 2.2.0: A fast, all-in-one music downloader for Qobuz, Deezer, Tidal, and SoundCloud
-media-sound/subtui 2.14.2: A lightweight Subsonic TUI music player built in Go with scrobbling support.
+media-sound/subtui 2.14.3: A lightweight Subsonic TUI music player built in Go with scrobbling support.
 media-sound/supersonic 0.21.0 0.21.1: A lightweight and full-featured cross-platform desktop client
 media-sound/tenacity 1.3.4-r4: Easy-to-use, privacy-friendly, FLOSS, cross-platform multi-track audio editor
 media-sound/tidal-hifi-bin 5.16.0-r1 5.17.0 6.1.0 6.2.0 6.3.0 6.3.1 7.0.0 7.0.1: Web version of Tidal running in electron with Hi-Fi support thanks to Widevine.
@@ -1747,7 +1747,7 @@ net-irc/tiny 0.12.0: IRC client written in Rust
 net-libs/ixwebsocket 11.4.4: C++ websocket client and server library
 net-libs/kcgi 0.13.4 1.0.1: Minimal CGI library for web applications
 net-libs/libuecc 7: a very small Elliptic Curve Cryptography library compatible with Ed25519.
-net-libs/libuplink 1.10.1-r1: C library for the Storj V3 network (libuplink)
+net-libs/libuplink 1.10.1-r3 1.14.1: C library for the Storj V3 network (libuplink)
 net-libs/orcania 2.3.3: Library for angharad programs
 net-libs/picotls 0_pre20220721 9999: TLS 1.3 implementation in C
 net-libs/sofia-sip 1.13.17: RFC3261 compliant SIP User-Agent library
@@ -1910,7 +1910,7 @@ sci-electronics/verilator 5.048-r2 9999: The fast free Verilog/SystemVerilog sim
 sci-electronics/yosys 0.64: framework for Verilog RTL synthesis
 sci-geosciences/google-earth-pro 7.3.6-r1: Google's 3D planet viewer
 sci-libs/dlpack 1.3: Common in-memory tensor structure
-sci-libs/onnxruntime 1.25.1 1.26.0: Cross-platform, high performance ML inferencing and training accelerator
+sci-libs/onnxruntime 1.25.1 1.26.0 1.26.0-r1: Cross-platform, high performance ML inferencing and training accelerator
 sci-libs/onnxruntime-bin 1.22.0: cross-platform, high performance ML inferencing and training accelerator
 sci-libs/poselib 2.0.4 2.0.5: Minimal solvers for calibrated camera pose estimation
 sci-mathematics/frama-c 25.0-r2: Framework for analysis of source codes written in C
@@ -2017,7 +2017,7 @@ sys-block/partclone 0.3.46 0.3.47: Partition cloning tool
 sys-block/ublksrv 1.6: Userspace block device driver
 sys-boot/customrescuecd-x86_64-grub 0.1: Grub menu entries for the .iso image of customrescuecd
 sys-boot/drbl 5.4.2: Diskless Remote Boot in Linux
-sys-boot/etcher-bin 2.1.4 2.1.4-r1: Flash OS images to SD cards & USB drives, safely and easily.
+sys-boot/etcher-bin 2.1.4-r1 2.1.6: Flash OS images to SD cards & USB drives, safely and easily.
 sys-boot/grml-rescueboot 0.6.7: grub2 script to add ISO images to the grub2 boot menu
 sys-boot/mkusb 23.2.0: CLI and GUI for creating bootable live USB, with optional persistent storage
 sys-boot/ventoy-bin 1.0.98-r1: Creator of bootable USBs, with ability to copy ISOs, persistence storage
@@ -2118,7 +2118,7 @@ www-client/torbrowser-launcher 0.3.9: A program to help you securely download an
 www-client/vimb 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
 www-client/waterfox-bin 6.6.13: A privacy-focused, performance-oriented browser based on Firefox
 www-client/yandex-browser 26.3.1.1088_p1: The web browser from Yandex
-www-client/zen-bin 1.18.10b 1.19.12b: Zen Browser - A fast, privacy-focused Firefox fork
+www-client/zen-bin 1.18.10b 1.19.13b: Zen Browser - A fast, privacy-focused Firefox fork
 www-misc/dufs 0.40.0: Dufs is a distinctive utility file server
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits
 www-misc/kiwix-desktop 2.4.0 2.5.1: cross-platform viewer/manager for ZIM archives
@@ -2155,12 +2155,13 @@ x11-misc/i3lock-fancy-rapid 0.0.0_pre20201109-r1 0.0.0_pre20210421: A faster imp
 x11-misc/i3status-rust 0.35.0: Feature-rich and resource-friendly replacement for i3status, written in Rust
 x11-misc/ksnip 1.11.0_pre20250130: Ksnip is a Qt based cross-platform screenshot tool
 x11-misc/leftwm-theme 0.1.2: Theme mangager for LeftWM
-x11-misc/ly 1.3.2 1.4.0: Ly - a TUI display manager
+x11-misc/ly 1.3.2 1.4.0 1.4.1: Ly - a TUI display manager
 x11-misc/matugen 2.4.1: A material you color generation tool with templates
 x11-misc/picom-jonaburg 9999: A lightweight compositor for X11 (previously a compton fork)
 x11-misc/pywal16 3.6.0 3.7.2: 16 colors fork of pywal
 x11-misc/rofi-emoji 3.3.0 3.4.1 4.1.0: Emoji selector plugin for Rofi
 x11-misc/selx 2.0.0 2.0.1: Minimal X11 rectangle selection tool
+x11-misc/silent-sddm-theme 1.4.2 9999: Highly customizable SDDM theme
 x11-misc/slstatus 1.0-r1 1.1: Status monitor for window managers that use WM_NAME/stdin to fill the status bar
 x11-misc/tbsm 0.5 0.6 0.7: A pure bash session or application launcher. Inspired by cdm, tdm and krunner
 x11-misc/vimouse 0.11: Move mouse pointer with keyboard
@@ -2170,7 +2171,7 @@ x11-misc/xob 0.2 0.3: A lightweight overlay volume (or anything) bar for the X W
 x11-misc/xsecurelock 1.9.0: X11 screen lock utility with security in mind
 x11-misc/xuv 0.2.1: X11 daemon to auto run commands triggered by user specified events
 x11-plugins/purple-mm-sms 0.1.7: Purple SMS plugin using ModemManager
-x11-terms/alacritty-graphics 0.16.1 0.17.0 9999: GPU-accelerated terminal emulator with sixel support
+x11-terms/alacritty-graphics 0.16.1 0.17.0-r1 9999: GPU-accelerated terminal emulator with sixel support
 x11-terms/dmd5620 2.1.0: GTK+ 3.0 implementation of an AT&T / Teletype DMD 5620 emulator.
 x11-terms/rio 0.3.11 0.4.2 0.4.4: A hardware-accelerated GPU terminal emulator powered by WebGPU
 x11-terms/tabby-bin 1.0.221: A terminal for a more modern age

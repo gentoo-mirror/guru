@@ -1,0 +1,13 @@
+BDEPEND=X? ( >=x11-apps/mkfontscale-1.2.0 media-fonts/encodings ) >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=install postinst postrm setup unpack
+DESCRIPTION=Red Hat's Open Source Fonts - Red Hat Display and Red Hat Text
+EAPI=8
+HOMEPAGE=https://redhatofficial.github.io/RedHatFont/
+INHERIT=font git-r3
+IUSE=+ttf otf variable webfonts +redhatmono +redhatdisplay +redhattext X
+LICENSE=OFL-1.1
+PROPERTIES=live
+REQUIRED_USE=|| ( ttf otf variable webfonts ) || ( redhatmono redhatdisplay redhattext )
+SLOT=0
+_eclasses_=font	6d0c60c855c05ae2ba808d300440ded2	git-r3	2f8cdb10b033f92c3136aa6488a31c98
+_md5_=845166cdbb619fa8c460523c68bac4ca

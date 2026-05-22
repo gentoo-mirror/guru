@@ -1,0 +1,14 @@
+BDEPEND=X? ( >=x11-apps/mkfontscale-1.2.0 media-fonts/encodings )
+DEFINED_PHASES=install postinst postrm setup
+DESCRIPTION=Red Hat's Open Source Fonts - Red Hat Display and Red Hat Text
+EAPI=8
+HOMEPAGE=https://redhatofficial.github.io/RedHatFont/
+INHERIT=font
+IUSE=+ttf otf variable webfonts +redhatmono +redhatdisplay +redhattext X
+KEYWORDS=~amd64 ~x86
+LICENSE=OFL-1.1
+REQUIRED_USE=|| ( ttf otf variable webfonts ) || ( redhatmono redhatdisplay redhattext )
+SLOT=0
+SRC_URI=https://github.com/RedHatOfficial/RedHatFont/archive/refs/tags/5.0.0.tar.gz -> redhat-5.0.0.tar.gz
+_eclasses_=font	6d0c60c855c05ae2ba808d300440ded2
+_md5_=845166cdbb619fa8c460523c68bac4ca
