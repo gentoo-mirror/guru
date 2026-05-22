@@ -1,4 +1,4 @@
-# Copyright 2025 Gentoo Authors
+# Copyright 2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -14,7 +14,7 @@ LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="-* ~amd64"
 
-RESTRICT="mirror test"
+RESTRICT="mirror strip test"
 
 RDEPEND="
 	app-accessibility/at-spi2-core:2
@@ -49,14 +49,7 @@ BDEPEND="
 	dev-util/patchelf
 "
 
-QA_PREBUILT="
-	usr/lib/balena-etcher/balena-etcher
-	usr/lib/balena-etcher/resources/etcher-util
-"
-QA_PRESTRIPPED="
-	usr/lib/balena-etcher/resources/app.asar.unpacked/.webpack/renderer/native_modules/prebuilds/linux-x64/node.napi.node
-	usr/lib/balena-etcher/resources/app.asar.unpacked/.webpack/renderer/native_modules/prebuilds/linux-x64/node.napi1.node
-"
+QA_PREBUILT="*"
 
 src_unpack() {
 	unpack_deb ${A}

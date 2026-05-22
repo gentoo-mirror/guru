@@ -3,6 +3,8 @@
 
 EAPI=8
 
+RUST_MIN_VER="1.85.0"
+
 inherit cargo gnome2-utils meson xdg
 
 DESCRIPTION="Identify songs in seconds"
@@ -24,10 +26,12 @@ RDEPEND="
 	dev-libs/glib:2
 	gui-libs/gtk:4
 	gui-libs/libadwaita:1
+	media-libs/graphene
 	media-libs/gst-plugins-bad:1.0
 	media-libs/gst-plugins-base:1.0
 	media-libs/gstreamer:1.0
 	net-libs/libsoup:3.0
+	x11-libs/cairo
 "
 DEPEND="${RDEPEND}"
 BDEPEND="
@@ -40,6 +44,8 @@ BDEPEND="
 	debug? ( dev-vcs/git )
 	test? ( dev-vcs/git )
 "
+
+QA_FLAGS_IGNORED="usr/bin/mousai"
 
 PATCHES=(
 	"${FILESDIR}/${PN}-0.7.8-remove-the-cargo-clippy-test.patch"

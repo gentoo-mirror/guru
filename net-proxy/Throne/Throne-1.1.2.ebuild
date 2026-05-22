@@ -30,6 +30,7 @@ DEPEND="${RDEPEND}"
 BDEPEND="
 	dev-go/protobuf-go
 	dev-go/protoc-gen-go-grpc
+	>=dev-lang/go-1.25
 	dev-qt/qttools:6[linguist]
 "
 
@@ -50,6 +51,9 @@ src_unpack() {
 
 src_prepare() {
 	rm -r 3rdparty/{QHotkey,quirc} || die
+
+	sed '/^cmake_minimum_required/ s/(.*)/(VERSION 3.10)/' \
+		-i 3rdparty/SQLiteCpp/CMakeLists.txt || die
 
 	cmake_src_prepare
 }
@@ -73,7 +77,7 @@ src_compile() {
 
 	VERSION_SINGBOX=$(go list -m -f '{{.Version}}' github.com/sagernet/sing-box)
 	ego build \
-		-trimpath -ldflags "-w -s -checklinkname=0 \
+		-trimpath -ldflags "-checklinkname=0 \
 		-X 'github.com/sagernet/sing-box/constant.Version=${VERSION_SINGBOX}' \
 		-X 'internal/godebug.defaultGODEBUG=multipathtcp=0'" \
 		-tags "with_clash_api,with_gvisor,with_quic,with_wireguard,with_utls,with_dhcp,with_tailscale,badlinkname,tfogo_checklinkname0"

@@ -3,9 +3,9 @@
 
 EAPI=8
 
-inherit meson
+inherit meson optfeature
 
-MY_COMMIT="e0566190d9f7f35f29a915fa58b1a4c37c32ed26"
+MY_COMMIT="d835e5456ff7d4ac371d5217f49864088c2e2123"
 
 DESCRIPTION="A lightweight Wayland shell and bar built directly on Wayland + OpenGL ES"
 HOMEPAGE="https://noctalia.dev/ https://github.com/noctalia-dev/noctalia-shell"
@@ -44,3 +44,8 @@ BDEPEND="
 "
 
 DOCS=( README.md CREDITS.md example.toml )
+
+pkg_postinst() {
+	optfeature "external display brightness control" app-misc/ddcutil
+	optfeature "hardware-accelerated screen recording" media-video/gpu-screen-recorder
+}
