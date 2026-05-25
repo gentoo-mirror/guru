@@ -25,5 +25,6 @@ QA_FLAGS_IGNORED="usr/bin/iwe usr/bin/iwes"
 src_install() {
 	cargo_src_install --path crates/iwe
 	cargo_src_install --path crates/iwes
-	dodoc LICENSE-APACHE README.md
+
+	einstalldocs
 }

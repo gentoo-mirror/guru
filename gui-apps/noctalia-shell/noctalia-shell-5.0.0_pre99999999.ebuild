@@ -15,6 +15,8 @@ EGIT_BRANCH="v5"
 LICENSE="MIT"
 SLOT="0"
 
+IUSE="+jemalloc"
+
 DEPEND="
 	dev-libs/glib:2
 	dev-cpp/sdbus-c++
@@ -32,6 +34,7 @@ DEPEND="
 	virtual/opengl
 	dev-libs/wayland
 	sys-auth/polkit
+	jemalloc? ( dev-libs/jemalloc:= )
 "
 
 RDEPEND="${DEPEND}"
@@ -43,6 +46,13 @@ BDEPEND="
 "
 
 DOCS=( README.md CREDITS.md example.toml )
+
+src_configure() {
+	local emesonargs=(
+			$(meson_feature jemalloc)
+	)
+	meson_src_configure
+}
 
 pkg_postinst() {
 	optfeature "external display brightness control" app-misc/ddcutil

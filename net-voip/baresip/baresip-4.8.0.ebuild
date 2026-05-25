@@ -91,7 +91,7 @@ src_configure() {
 	use snapshot && MODULES+="snapshot;"
 	use sdl && MODULES+="sdl;"
 	use sndfile && MODULES+="sndfile;"
-	use spandsp && MODULES+="g722;g726;plc;"
+	use spandsp && MODULES+="g722;plc;"
 	use syslog && MODULES+="syslog;"
 	use tcpcontrol && MODULES+="ctrl_tcp;"
 	use v4l && MODULES+="v4l2;"

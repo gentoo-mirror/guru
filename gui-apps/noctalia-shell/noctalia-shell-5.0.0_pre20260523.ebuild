@@ -5,7 +5,7 @@ EAPI=8
 
 inherit meson optfeature
 
-MY_COMMIT="d835e5456ff7d4ac371d5217f49864088c2e2123"
+MY_COMMIT="9559ebf5cfb2f4db9dc8a59c6318e08ddc248f33"
 
 DESCRIPTION="A lightweight Wayland shell and bar built directly on Wayland + OpenGL ES"
 HOMEPAGE="https://noctalia.dev/ https://github.com/noctalia-dev/noctalia-shell"
@@ -15,6 +15,8 @@ S="${WORKDIR}/${PN}-${MY_COMMIT}"
 
 LICENSE="MIT"
 SLOT="0"
+
+IUSE="+jemalloc"
 
 DEPEND="
 	dev-libs/glib:2
@@ -33,6 +35,7 @@ DEPEND="
 	virtual/opengl
 	dev-libs/wayland
 	sys-auth/polkit
+	jemalloc? ( dev-libs/jemalloc:= )
 "
 
 RDEPEND="${DEPEND}"
@@ -44,6 +47,13 @@ BDEPEND="
 "
 
 DOCS=( README.md CREDITS.md example.toml )
+
+src_configure() {
+	local emesonargs=(
+			$(meson_feature jemalloc)
+	)
+	meson_src_configure
+}
 
 pkg_postinst() {
 	optfeature "external display brightness control" app-misc/ddcutil

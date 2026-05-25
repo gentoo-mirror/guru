@@ -24,8 +24,9 @@ RDEPEND="
 	dev-libs/glib:2
 	gui-libs/gtk:4[wayland]
 	gui-libs/libadwaita:1
-	media-libs/gst-plugins-base:1.0
+	media-libs/graphene
 	media-libs/gst-plugins-bad:1.0
+	media-libs/gst-plugins-base:1.0
 	media-libs/gstreamer:1.0
 	media-plugins/gst-plugin-gtk4
 "
@@ -39,6 +40,8 @@ BDEPEND="
 
 	debug? ( dev-vcs/git )
 "
+
+QA_FLAGS_IGNORED="usr/bin/decoder"
 
 PATCHES=(
 	"${FILESDIR}/${PN}-0.9.0-remove-the-cargo-test-and-cargo-clippy-tests.patch"
