@@ -201,10 +201,10 @@ if [[ ${PV} == *9999* ]]; then
 	EGIT_REPO_URI="https://codeberg.org/LGFae/${PN}.git"
 else
 	SRC_URI="
-	https://codeberg.org/LGFae/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
+	https://codeberg.org/LGFae/awww/archive/v${PV}.tar.gz -> ${P}.tar.gz
 	${CARGO_CRATE_URIS}
 	"
-	KEYWORDS="~amd64"
+	KEYWORDS="~amd64 ~arm64"
 fi
 
 S="${WORKDIR}/${PN}"
@@ -221,6 +221,7 @@ RUST_MIN_VER="1.89.0"
 DEPEND="
 	app-arch/lz4:=
 	x11-libs/libxkbcommon[wayland]
+	dev-libs/wayland-protocols
 "
 RDEPEND="${DEPEND}"
 BDEPEND="

@@ -15,7 +15,7 @@ if [[ "${PV}" = *9999 ]]; then
 	EGIT_REPO_URI="https://github.com/quickshell-mirror/${PN^}.git"
 else
 	SRC_URI="https://github.com/quickshell-mirror/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
-	KEYWORDS="~amd64"
+	KEYWORDS="~amd64 ~arm64"
 fi
 
 LICENSE="LGPL-3"
@@ -36,10 +36,11 @@ REQUIRED_USE="
 	toplevel-management? ( wayland )
 	hyprland?            ( wayland )
 	screencopy?          ( wayland )
+	i3? ( X )
 "
 
 RDEPEND="
-	dev-qt/qtbase:6=[dbus,vulkan]
+	dev-qt/qtbase:6=[dbus,vulkan,X?]
 	dev-qt/qtsvg:6=
 	dev-qt/qtdeclarative:6=
 	x11-libs/libdrm

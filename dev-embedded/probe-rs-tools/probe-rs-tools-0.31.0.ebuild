@@ -6,6 +6,14 @@
 EAPI=8
 RUST_MIN_VER="1.88"
 
+# test crates (needs thumbv7em-none-eabi)
+# CRATES="
+# 	panic-halt@1.0.0
+# 	cortex-m-rt@0.7.5
+# 	cortex-m-rt-macros@0.7.5
+# "
+#
+
 inherit cargo shell-completion
 
 DESCRIPTION="A collection of on chip debugging tools to communicate with microchips."
@@ -13,6 +21,7 @@ HOMEPAGE="https://probe.rs"
 SRC_URI="
 	https://github.com/probe-rs/probe-rs/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
 	https://codeberg.org/AshyPinguin/vendor-tarballs/releases/download/${P}/${P}-crates.tar.xz
+	${CARGO_CRATE_URIS}
 "
 
 S="${WORKDIR}/probe-rs-${PV}/probe-rs-tools"
@@ -24,7 +33,10 @@ LICENSE+="
 	Unicode-3.0 Unlicense ZLIB
 "
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~arm64"
+
+QA_FLAGS_IGNORED="/usr/bin/probe-rs /usr/bin/cargo-embed /usr/bin/cargo-flash"
+RESTRICT=test #TODO: allow manual testing if it is possible to install a target
 
 src_install() {
 	cargo_src_install
@@ -33,7 +45,8 @@ src_install() {
 		SHELL="/usr/bin/${i}" "${D}/usr/bin/probe-rs" complete install --manual > "${T}/probe-rs.${i}"
 	done
 
-	dobashcomp "${T}/probe-rs.bash"
+	newbashcomp "${T}/probe-rs.bash" probe-rs
+	bashcomp_alias probe-rs cargo-embed cargo-flash
 	dofishcomp "${T}/probe-rs.fish"
-	dozshcomp "${T}/probe-rs.zsh"
+	newzshcomp "${T}/probe-rs.zsh" _probe-rs
 }

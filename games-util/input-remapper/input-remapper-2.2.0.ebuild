@@ -9,7 +9,7 @@ PYTHON_COMPAT=( python3_{12..13} )
 DISTUTILS_SINGLE_IMPL=1
 DISTUTILS_USE_PEP517=setuptools
 
-inherit distutils-r1 systemd udev desktop
+inherit distutils-r1 systemd udev desktop xdg
 
 DESCRIPTION="A tool to change and program the mapping of your input device buttons"
 HOMEPAGE="https://github.com/sezanzeb/input-remapper"
@@ -40,9 +40,7 @@ RDEPEND="
 	virtual/udev
 "
 
-EPYTEST_PLUGINS=()
-
-distutils_enable_tests pytest
+RESTRICT=test
 
 src_install() {
 	# Install data files
@@ -94,16 +92,14 @@ src_install() {
 
 pkg_postinst() {
 	udev_reload
+
+	einfo ""
+	einfo "This version of input-remapper relies on reprecated dependencies (dev-python/pkg-resources) and additionally cannot support python 3.14."
+	einfo ""
+	einfo "It is recommended to switch to the live ebuild, where both of these issues have been fixed, until the author releases a new version."
+	einfo ""
 }
 
 pkg_postrm() {
 	udev_reload
-}
-
-pkg_postinst() {
-		einfo ""
-		einfo "This version of input-remapper relies on reprecated dependencies (dev-python/pkg-resources) and additionally cannot support python 3.14."
-		einfo ""
-		einfo "It is recommended to switch to the live ebuild, where both of these issues have been fixed, until the author releases a new version."
-		einfo ""
 }
