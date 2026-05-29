@@ -1,4 +1,4 @@
-BDEPEND=app-arch/brotli dev-libs/openssl net-libs/libssh2 dev-lang/nim virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=dev-lang/nim virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=prepare unpack
 DEPEND=app-arch/brotli dev-libs/openssl net-libs/libssh2
 DESCRIPTION=TUI web browser; supports CSS, images, JavaScript, and multiple web protocols
@@ -8,6 +8,7 @@ INHERIT=git-r3
 IUSE=lto
 LICENSE=Unlicense
 PROPERTIES=live
+RDEPEND=app-arch/brotli dev-libs/openssl net-libs/libssh2
 SLOT=0
 _eclasses_=git-r3	2f8cdb10b033f92c3136aa6488a31c98
-_md5_=0f1e9d673e811500b5e5743e8c640719
+_md5_=5c6100e81d6ddac581bd947b64dd2b24

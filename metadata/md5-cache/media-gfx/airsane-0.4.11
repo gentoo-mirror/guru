@@ -1,0 +1,14 @@
+BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.28.5
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=media-gfx/sane-backends media-libs/libpng media-libs/libjpeg-turbo net-dns/avahi virtual/libusb:1
+DESCRIPTION=Publish SANE scanners via Apple Airscan/eSCL
+EAPI=8
+HOMEPAGE=https://github.com/SimulPiscator/AirSane
+INHERIT=cmake
+KEYWORDS=~amd64
+LICENSE=GPL-3
+RDEPEND=media-gfx/sane-backends media-libs/libpng media-libs/libjpeg-turbo net-dns/avahi virtual/libusb:1
+SLOT=0
+SRC_URI=https://github.com/SimulPiscator/AirSane/archive/refs/tags/v.0.4.11.tar.gz -> airsane-0.4.11.tar.gz
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	3395ce6618fc5c7af03335471b896644
+_md5_=08059cef481cc719da97d352f6455080

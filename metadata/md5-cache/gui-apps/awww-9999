@@ -1,6 +1,6 @@
 BDEPEND=app-text/scdoc || ( >=dev-lang/rust-bin-1.74.1:* >=dev-lang/rust-1.74.1:* ) >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install postinst setup test unpack
-DEPEND=app-arch/lz4:= x11-libs/libxkbcommon[wayland]
+DEPEND=app-arch/lz4:= x11-libs/libxkbcommon[wayland] dev-libs/wayland-protocols
 DESCRIPTION=Efficient animated wallpaper daemon for wayland, controlled at runtime
 EAPI=8
 HOMEPAGE=https://codeberg.org/LGFae/awww
@@ -8,7 +8,7 @@ INHERIT=cargo shell-completion git-r3
 IUSE=debug
 LICENSE=GPL-3 Apache-2.0-with-LLVM-exceptions BSD-2 BSD MIT MPL-2.0 Unicode-3.0 ZLIB
 PROPERTIES=live
-RDEPEND=app-arch/lz4:= x11-libs/libxkbcommon[wayland]
+RDEPEND=app-arch/lz4:= x11-libs/libxkbcommon[wayland] dev-libs/wayland-protocols
 SLOT=0
 _eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	rust	c5ae4c9b5eca97bd7fc77fede663873f	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	53bab5a62cfc3526d8ed02c0a38a6033	bash-completion-r1	9e91505e030725688d1e953321a47501	shell-completion	0b655d0d825e157a5e99c463bddaac16	git-r3	2f8cdb10b033f92c3136aa6488a31c98
-_md5_=cd0362897a9bc61faae3cd822311f537
+_md5_=e300673b8a269b99094f7784ffb4f551
