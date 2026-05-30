@@ -53,5 +53,7 @@ EPYTEST_DESELECT=(
 	"posthog/test/test_request.py::TestRequests::test_valid_request"
 )
 
-EPYTEST_PLUGINS=( pytest-asyncio )
+EPYTEST_IGNORE=( posthog/test/ai/ )
+
+EPYTEST_PLUGINS=( pytest-asyncio pytest-bdd )
 distutils_enable_tests pytest

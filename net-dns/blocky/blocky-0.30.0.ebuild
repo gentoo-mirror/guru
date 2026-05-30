@@ -1,4 +1,4 @@
-# Copyright 1999-2025 Gentoo Authors
+# Copyright 1999-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -8,8 +8,6 @@ inherit fcaps go-module systemd shell-completion
 DESCRIPTION="Fast and lightweight DNS proxy as ad-blocker with many features written in Go"
 HOMEPAGE="https://github.com/0xERR0R/blocky/"
 
-DOCUMENTATION_COMMIT=d58f16a83c51f47ed033a8447527fd6e7b9af135
-
 if [[ ${PV} == 9999* ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/0xERR0R/blocky.git"
@@ -17,7 +15,6 @@ else
 	SRC_URI="
 	https://github.com/0xERR0R/blocky/archive/v${PV}.tar.gz -> ${P}.tar.gz
 	https://github.com/rahilarious/gentoo-distfiles/releases/download/${P}/deps.tar.xz -> ${P}-deps.tar.xz
-	doc? ( https://github.com/0xERR0R/blocky/archive/${DOCUMENTATION_COMMIT}.tar.gz -> ${P}-docs.tar.gz )
 "
 	KEYWORDS="~amd64 ~arm64"
 fi
@@ -27,7 +24,6 @@ LICENSE="Apache-2.0"
 # deps
 LICENSE+=" AGPL-3 BSD-2 BSD ISC MIT MPL-2.0"
 SLOT="0"
-IUSE="doc"
 
 RESTRICT="test"
 
@@ -48,18 +44,13 @@ src_unpack() {
 	if [[ ${PV} == 9999* ]]; then
 		git-r3_src_unpack
 		go-module_live_vendor
-		if use doc; then
-			EGIT_BRANCH="gh-pages"
-			EGIT_CHECKOUT_DIR="${WORKDIR}/${P}-doc"
-			git-r3_src_unpack
-		fi
 	else
 		default
 	fi
 }
 
 src_compile() {
-	[[ ${PV} != 9999* ]] && { export VERSION="${PV}" && ln -sv ../vendor ./ || die ; }
+	[[ ${PV} != 9999* ]] && { export VERSION="${PV}" || die ; }
 
 	# mimicking project's Dockerfile
 	emake GO_SKIP_GENERATE=yes GO_BUILD_FLAGS="-tags static -v " build
@@ -94,12 +85,4 @@ src_install() {
 
 	# docs
 	einstalldocs
-
-	if use doc; then
-		if [[ ${PV} == 9999* ]]; then
-			dodoc -r ../"${P}"-doc/main/*
-		else
-			dodoc -r ../"${PN}"-"${DOCUMENTATION_COMMIT}"/v"${PV}"/*
-		fi
-	fi
 }

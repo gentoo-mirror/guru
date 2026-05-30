@@ -12,7 +12,7 @@ CRATES="
 	aho-corasick@1.1.4
 	heck@0.5.0
 	libc@0.2.186
-	memchr@2.8.0
+	memchr@2.8.1
 	once_cell@1.21.4
 	portable-atomic@1.13.1
 	proc-macro2@1.0.106

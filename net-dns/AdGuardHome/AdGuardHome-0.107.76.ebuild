@@ -1,4 +1,4 @@
-# Copyright 1999-2025 Gentoo Authors
+# Copyright 1999-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -8,11 +8,9 @@ inherit fcaps go-module readme.gentoo-r1 systemd
 DESCRIPTION="Network-wide ads & trackers blocking DNS server like Pi-Hole with web ui"
 HOMEPAGE="https://github.com/AdguardTeam/AdGuardHome/"
 
-WIKI_COMMIT="ad09f2b"
 SRC_URI="
-	https://github.com/AdguardTeam/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
+	https://github.com/AdguardTeam/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz
 	https://github.com/rahilarious/gentoo-distfiles/releases/download/${P}/deps.tar.xz -> ${P}-deps.tar.xz
-	https://github.com/rahilarious/gentoo-distfiles/releases/download/${PN}-0.107.57/wiki.tar.xz -> ${PN}-wiki-${WIKI_COMMIT}.tar.xz
 	web? ( https://github.com/AdguardTeam/AdGuardHome/releases/download/v${PV}/AdGuardHome_frontend.tar.gz -> ${P}-web.tar.gz )
 "
 
@@ -36,7 +34,7 @@ PATCHES=(
 )
 
 DOCS="
-	../${PN}.wiki/*
+	${PN}.wiki/*
 "
 
 DOC_CONTENTS="\n
@@ -52,8 +50,6 @@ src_unpack() {
 }
 
 src_prepare() {
-	ln -sv ../vendor ./ || die
-
 	default
 
 	# symlinking doesn't work for some reason so MUST `mv`

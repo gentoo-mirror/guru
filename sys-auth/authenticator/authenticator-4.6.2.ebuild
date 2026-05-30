@@ -3,6 +3,8 @@
 
 EAPI=8
 
+RUST_MIN_VER="1.82"
+
 inherit cargo gnome2-utils meson xdg
 
 DESCRIPTION="2FA code generator for GNOME"
@@ -10,6 +12,8 @@ HOMEPAGE="https://gitlab.gnome.org/World/Authenticator"
 SRC_URI="
 	https://gitlab.gnome.org/World/Authenticator/-/archive/${PV}/Authenticator-${PV}.tar.bz2 -> ${P}.tar.bz2
 	https://gitlab.com/api/v4/projects/69517529/packages/generic/${PN}/${PV}/${P}-deps.tar.xz
+	https://gitlab.gnome.org/World/Authenticator/-/commit/d3a63c5d66b8812fd24eea8634ad17f42f9d6d04.patch
+		-> ${PN}-4.6.2-update-metainfo-file.patch
 "
 
 S="${WORKDIR}/Authenticator-${PV}"
@@ -21,12 +25,16 @@ IUSE="debug test"
 RESTRICT="!test? ( test )"
 
 RDEPEND="
+	dev-db/sqlite:3
 	dev-libs/glib:2
+	dev-libs/openssl
 	gui-libs/gtk:4[wayland]
 	gui-libs/libadwaita:1
+	media-libs/graphene
 	media-libs/gst-plugins-base:1.0
 	media-libs/gstreamer:1.0
 	media-plugins/gst-plugin-gtk4
+	x11-libs/gdk-pixbuf:2
 "
 DEPEND="${RDEPEND}"
 BDEPEND="
@@ -38,6 +46,12 @@ BDEPEND="
 
 	debug? ( dev-vcs/git )
 "
+
+QA_FLAGS_IGNORED="usr/bin/authenticator"
+
+PATCHES=(
+	"${DISTDIR}/${PN}-4.6.2-update-metainfo-file.patch"
+)
 
 src_configure() {
 	local profile="default"

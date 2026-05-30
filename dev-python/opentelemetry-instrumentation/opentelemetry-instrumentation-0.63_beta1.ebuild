@@ -11,13 +11,13 @@ inherit distutils-r1
 MY_PV=${PV/_beta/b}
 MY_P="opentelemetry-python-contrib-${MY_PV}"
 
-OTLP_PV=1.40.0
+OTLP_PV=1.42.1
 OTLP_P="opentelemetry-python-${OTLP_PV}"
 
-DESCRIPTION="Thread context propagation support for OpenTelemetry"
+DESCRIPTION="Instrumentation Tools & Auto Instrumentation for OpenTelemetry Python"
 HOMEPAGE="
 	https://opentelemetry.io/
-	https://pypi.org/project/opentelemetry-instrumentation-threading/
+	https://pypi.org/project/opentelemetry-instrumentation/
 	https://github.com/open-telemetry/opentelemetry-python-contrib/
 "
 SRC_URI="
@@ -28,15 +28,17 @@ SRC_URI="
 			-> ${OTLP_P}.gh.tar.gz
 	)
 "
-S="${WORKDIR}/${MY_P}/instrumentation/${PN}"
+S="${WORKDIR}/${MY_P}/${PN}"
 
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64 ~arm64 ~x86"
 
 RDEPEND="
-	~dev-python/opentelemetry-api-1.40.0[${PYTHON_USEDEP}]
-	~dev-python/opentelemetry-instrumentation-${PV}[${PYTHON_USEDEP}]
+	~dev-python/opentelemetry-api-${OTLP_PV}[${PYTHON_USEDEP}]
+	~dev-python/opentelemetry-sdk-${OTLP_PV}[${PYTHON_USEDEP}]
+	~dev-python/opentelemetry-semantic-conventions-${OTLP_PV}[${PYTHON_USEDEP}]
+	>=dev-python/packaging-18.0[${PYTHON_USEDEP}]
 	>=dev-python/wrapt-1.0.0[${PYTHON_USEDEP}]
 "
 
