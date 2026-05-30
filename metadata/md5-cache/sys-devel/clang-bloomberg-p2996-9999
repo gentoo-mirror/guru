@@ -1,14 +1,14 @@
 BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.28.5 >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install postinst prepare test unpack
-DEPEND=virtual/zlib:=
+DEPEND=app-arch/zstd:= dev-libs/libxml2:= virtual/zlib:=
 DESCRIPTION=Clang fork implementing experimental support for P2996 (Reflection for C++26)
 EAPI=8
 HOMEPAGE=https://github.com/bloomberg/clang-p2996
 INHERIT=cmake prefix python-utils-r1 git-r3
-IUSE=+debug +default-reflection-latest +pie llvm_targets_AArch64 llvm_targets_AMDGPU llvm_targets_ARC llvm_targets_ARM llvm_targets_AVR llvm_targets_BPF llvm_targets_CSKY llvm_targets_DirectX llvm_targets_Hexagon llvm_targets_Lanai llvm_targets_LoongArch llvm_targets_M68k llvm_targets_MSP430 llvm_targets_Mips llvm_targets_NVPTX llvm_targets_PowerPC llvm_targets_RISCV llvm_targets_SPIRV llvm_targets_Sparc llvm_targets_SystemZ llvm_targets_VE llvm_targets_WebAssembly +llvm_targets_X86 llvm_targets_XCore llvm_targets_Xtensa
+IUSE=+debug +default-reflection-latest +pie +static-libs llvm_targets_AArch64 llvm_targets_AMDGPU llvm_targets_ARC llvm_targets_ARM llvm_targets_AVR llvm_targets_BPF llvm_targets_CSKY llvm_targets_DirectX llvm_targets_Hexagon llvm_targets_Lanai llvm_targets_LoongArch llvm_targets_M68k llvm_targets_MSP430 llvm_targets_Mips llvm_targets_NVPTX llvm_targets_PowerPC llvm_targets_RISCV llvm_targets_SPIRV llvm_targets_Sparc llvm_targets_SystemZ llvm_targets_VE llvm_targets_WebAssembly +llvm_targets_X86 llvm_targets_XCore llvm_targets_Xtensa
 LICENSE=Apache-2.0-with-LLVM-exceptions UoI-NCSA BSD MIT public-domain rc
 PROPERTIES=live
-RDEPEND=virtual/zlib:=
+RDEPEND=app-arch/zstd:= dev-libs/libxml2:= virtual/zlib:=
 SLOT=0
 _eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	3395ce6618fc5c7af03335471b896644	prefix	c3c4c93ebda319c0fa7ed6f942ba1010	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	python-utils-r1	ae7ca7f9425ab1a1d2c909e225002f98	git-r3	2f8cdb10b033f92c3136aa6488a31c98
-_md5_=50d7c74d77bbc03da866766c7cbb4aab
+_md5_=980ead3fbd963c19ff4604545f098de4

@@ -1,0 +1,15 @@
+BDEPEND=virtual/pkgconfig || ( >=dev-lang/rust-bin-1.74.1:* >=dev-lang/rust-1.74.1:* )
+DEFINED_PHASES=compile configure install setup test unpack
+DEPEND=gui-libs/gtk[wayland] gui-libs/gtk4-layer-shell[introspection] cairo? ( dev-lua/lgi[lua_targets_luajit] ) keyboard? ( dev-libs/libinput ) music? ( sys-apps/dbus ) notifications? ( gui-apps/swaync ) volume? ( media-libs/libpulse )
+DESCRIPTION=Customisable Wayland gtk bar written in Rust
+EAPI=8
+HOMEPAGE=https://crates.io/crates/ironbar
+INHERIT=cargo
+IUSE=cairo +http +keyboard +music notifications +tray +volume debug
+KEYWORDS=~amd64
+LICENSE=MIT Apache-2.0 BSD CC0-1.0 GPL-3+ ISC MIT MPL-2.0 Unicode-DFS-2016
+RDEPEND=gui-libs/gtk[wayland] gui-libs/gtk4-layer-shell[introspection] cairo? ( dev-lua/lgi[lua_targets_luajit] ) keyboard? ( dev-libs/libinput ) music? ( sys-apps/dbus ) notifications? ( gui-apps/swaync ) volume? ( media-libs/libpulse ) dev-libs/glib dev-libs/libevdev x11-libs/cairo x11-libs/gdk-pixbuf x11-libs/pango
+SLOT=0
+SRC_URI=https://github.com/JakeStanger/ironbar/archive/refs/tags/v0.19.0.tar.gz -> ironbar-0.19.0.tar.gz https://github.com/gentoo-crate-dist/ironbar/releases/download/v0.19.0/ironbar-0.19.0-crates.tar.xz
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	rust	c5ae4c9b5eca97bd7fc77fede663873f	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	983bdde2432d878045ca2524b9ff935d
+_md5_=32d90dc8350d1aa6c91daf691eaf1c34
