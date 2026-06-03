@@ -29,9 +29,11 @@ RDEPEND="
 	gui-libs/libadwaita:1
 	media-libs/dav1d
 	media-libs/glycin:2[gtk]
+	media-libs/graphene
 	media-libs/gst-plugins-base:1.0[wayland]
 	media-libs/gstreamer:1.0
 	media-libs/libwebp
+	x11-libs/cairo
 "
 DEPEND="${RDEPEND}"
 BDEPEND="
@@ -42,6 +44,8 @@ BDEPEND="
 	dev-util/gtk-update-icon-cache
 	sys-devel/gettext
 "
+
+QA_FLAGS_IGNORED="usr/bin/identity"
 
 src_configure() {
 	meson_src_configure

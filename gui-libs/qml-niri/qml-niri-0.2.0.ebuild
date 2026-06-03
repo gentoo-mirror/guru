@@ -18,11 +18,11 @@ DEPEND="dev-qt/qtbase[gui]
 "
 RDEPEND="${DEPEND}"
 
-BDEPEND="dev-build/just"
+PATCHES=( "${FILESDIR}/rpath-fix.patch" )
 
 src_install() {
 	mkdir -p "${D}/usr/lib64/qt6/qml"
-	cp -r "${WORKDIR}/${P}_build" "${D}/usr/lib64/qt6/qml/" || die
+	cp -r "${WORKDIR}/${P}_build/Niri" "${D}/usr/lib64/qt6/qml/" || die
 }
 
 src_postinst() {

@@ -4,7 +4,7 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=hatchling
-PYTHON_COMPAT=( python3_{12..13} )
+PYTHON_COMPAT=( python3_{13..14} )
 
 inherit distutils-r1
 
@@ -24,13 +24,12 @@ RDEPEND="dev-python/pydot[${PYTHON_USEDEP}]"
 BDEPEND="
 	${RDEPEND}
 	test? (
-		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
-		dev-python/pytest-mock[${PYTHON_USEDEP}]
-		dev-python/pytest-django[${PYTHON_USEDEP}]
 		dev-python/django[${PYTHON_USEDEP}]
+		dev-python/sphinxcontrib-mermaid[${PYTHON_USEDEP}]
 	)
 "
 
+EPYTEST_PLUGINS=( pytest-asyncio pytest-mock pytest-django)
 distutils_enable_tests pytest
 
 EPYTEST_DESELECT=(

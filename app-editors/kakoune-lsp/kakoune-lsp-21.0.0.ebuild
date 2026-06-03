@@ -330,13 +330,13 @@ CRATES="
 	zerovec@0.10.4
 "
 
-RUST_MIN_VERSION="1.81"
+RUST_MIN_VER="1.81"
 
 inherit cargo
 
 SRC_URI="
 	${CARGO_CRATE_URIS}
-	https://github.com/kakoune-lsp/kakoune-lsp/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz
+	https://github.com/kakoune-lsp/kakoune-lsp/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
 "
 
 LICENSE="|| ( MIT Unlicense )"
