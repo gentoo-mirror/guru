@@ -7,11 +7,8 @@ inherit cmake
 DESCRIPTION="Publish SANE scanners via Apple Airscan/eSCL"
 
 HOMEPAGE="https://github.com/SimulPiscator/AirSane"
-SRC_URI="https://github.com/SimulPiscator/AirSane/archive/refs/tags/v.${PV}.tar.gz -> ${P}.tar.gz"
-
-# License of the package.  This must match the name of file(s) in the
-# licenses/ directory.  For complex license combination see the developer
-# docs on gentoo.org for details.
+SRC_URI="https://github.com/SimulPiscator/AirSane/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
+S="${WORKDIR}/AirSane-${PV}"
 LICENSE="GPL-3"
 
 SLOT="0"
@@ -23,11 +20,6 @@ DEPEND="media-gfx/sane-backends
 	net-dns/avahi
 	virtual/libusb:1"
 RDEPEND="${DEPEND}"
-
-src_unpack() {
-	unpack ${P}.tar.gz
-	mv "AirSane-v.${PV}" "${P}" || die
-}
 
 src_prepare() {
 	cmake_src_prepare

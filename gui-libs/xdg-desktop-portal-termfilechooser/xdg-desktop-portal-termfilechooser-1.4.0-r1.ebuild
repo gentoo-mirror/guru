@@ -16,6 +16,11 @@ KEYWORDS="~amd64"
 DEPEND="
 	sys-apps/xdg-desktop-portal
 	dev-libs/inih
+	|| (
+		sys-auth/elogind
+		sys-apps/systemd
+		sys-libs/basu
+	)
 "
 
 RDEPEND="
@@ -23,3 +28,11 @@ RDEPEND="
 "
 
 BDEPEND="app-text/scdoc"
+
+src_install() {
+	dodoc Compatibility.md
+
+	meson_src_install
+
+	rm -r "${ED}/usr/share/${PN}/systemd" || die
+}

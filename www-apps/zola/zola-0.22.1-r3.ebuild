@@ -238,7 +238,7 @@ CRATES="
 	libfuzzer-sys@0.4.10
 	libm@0.2.15
 	libredox@0.1.12
-	libwebp-sys@0.9.6
+	libwebp-sys@0.14.2
 	lightningcss-derive@1.0.0-alpha.43
 	lightningcss@1.0.0-alpha.70
 	lindera-cc-cedict-builder@0.13.5
@@ -608,7 +608,7 @@ CRATES="
 
 RUST_MIN_VER="1.88.0"
 
-inherit cargo
+inherit cargo shell-completion
 
 DESCRIPTION="A fast static site generator with everything built-in"
 HOMEPAGE="https://www.getzola.org"
@@ -629,19 +629,60 @@ LICENSE+="
 
 SLOT="0"
 KEYWORDS="~amd64 ~arm64 ~ppc64 ~riscv"
+IUSE="cjk"
 
-RDEPEND="dev-libs/oniguruma:="
+RDEPEND="
+	dev-libs/oniguruma:=
+	media-libs/libwebp:=
+"
 DEPEND="${RDEPEND}"
+
+BDEPEND="virtual/pkgconfig"
 
 src_prepare() {
 	default
 	# Upstream enables stripping on rel and disables debuginfo on dev
-	sed -i 's:profile:ignore:' Cargo.toml || die
+	sed -i '/strip/d;/debug = 0/d' Cargo.toml || die
+
+	# update libwebp-sys in webp crate
+	local libwebp_PV=0.14.2 webp_P=webp-0.3.1
+
+	sed -i "s/0.9.3/${libwebp_PV}/" \
+		"${ECARGO_VENDOR}/${webp_P}"/Cargo.toml || die
+
+	cargo_update_crates "${ECARGO_VENDOR}/${webp_P}"/Cargo.toml
+
+	# now default to dynamic linking
+	sed -i "/${libwebp_PV}/a features = [\"\system-dylib\"]" \
+		"${ECARGO_VENDOR}/${webp_P}"/Cargo.toml || die
 }
 
 src_configure() {
 	# Use system libraries
 	export RUSTONIG_SYSTEM_LIBONIG=1
 
+	local myfeatures=(
+		# usev only takes 2 args
+		$(usev cjk indexing-ja )
+		$(usev cjk indexing-zh )
+	)
+
 	cargo_src_configure
+}
+
+src_compile() {
+	cargo_src_compile
+
+	echo "Generating shell completion files"
+	for sh in bash fish zsh; do
+		$(cargo_target_dir)/${PN} completion ${sh} > ${sh}.completion || die
+	done
+}
+
+src_install() {
+	cargo_src_install
+
+	newbashcomp bash.completion ${PN}
+	newfishcomp fish.completion ${PN}.fish
+	newzshcomp zsh.completion _${PN}
 }

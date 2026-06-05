@@ -27,6 +27,8 @@ SLOT="0"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 RDEPEND="
+	virtual/wine
+	app-emulation/winetricks
 	${PYTHON_DEPS}
 	$(python_gen_cond_dep '
 		dev-python/urllib3[${PYTHON_USEDEP}]

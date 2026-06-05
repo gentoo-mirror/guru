@@ -3,9 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{12..14} )
-
-inherit meson python-any-r1
+inherit meson
 
 DESCRIPTION="Kiwix software suite core: code shared by all Kiwix ports"
 HOMEPAGE="https://kiwix.org/"
@@ -35,9 +33,10 @@ DEPEND="
 	>=dev-cpp/mustache-4.1
 "
 BDEPEND="
-	${PYTHON_DEPS}
 	test? ( dev-cpp/gtest )
 "
+
+PATCHES=( "${FILESDIR}/${P}_remove-python-dep.patch" )
 
 src_prepare() {
 	default
