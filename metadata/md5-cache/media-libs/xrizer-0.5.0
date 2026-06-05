@@ -1,4 +1,4 @@
-BDEPEND=|| ( >=dev-lang/rust-bin-1.88:*[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] >=dev-lang/rust-1.88:*[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] )
+BDEPEND=media-libs/shaderc || ( >=dev-lang/rust-bin-1.88:*[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] >=dev-lang/rust-1.88:*[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] )
 DEFINED_PHASES=compile configure install prepare setup test unpack
 DESCRIPTION=OpenVR over OpenXR compatibility layer
 EAPI=8
@@ -10,4 +10,4 @@ LICENSE=GPL-3+ Apache-2.0 BSD Boost-1.0 ISC MIT OFL-1.1 UbuntuFontLicense-1.0 Un
 SLOT=0
 SRC_URI=https://github.com/Supreeeme/xrizer/archive/refs/tags/v0.5.tar.gz -> xrizer-0.5.0.tar.gz https://codeberg.org/TheGreatMcPain/guru-distfiles/releases/download/xrizer-0.5.0/xrizer-0.5.0-vendored.tar.xz
 _eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	out-of-source-utils	8e5093bd27b7f541a1913271f25d633a	multibuild	83db098a835f71feb71761f72a694aa2	multilib	fc812e8eb2170022c28272d80a1f9e77	multilib-build	d7802b3638ffc661375c0021cdd19efd	rust	c5ae4c9b5eca97bd7fc77fede663873f	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	983bdde2432d878045ca2524b9ff935d	multilib-minimal	e9f54d75b074edc47d36994bbc1e2123
-_md5_=a54193d9a46324cd9123d0947b135e46
+_md5_=2af208d0967cfaf2e393f06d53c47ed3

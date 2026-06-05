@@ -1,0 +1,16 @@
+BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.28.5
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=dev-libs/quazip dev-qt/qt5compat:6 dev-qt/qtbase:6[concurrent,gui,opengl,sql,widgets,xml] dev-qt/qtdeclarative:6 dev-qt/qtmultimedia:6 dev-qt/qtsvg:6 dev-qt/qttools:6 media-video/ffmpeg media-video/mediainfo x11-libs/libxkbcommon
+DESCRIPTION=Video metadata scraper
+EAPI=8
+HOMEPAGE=https://www.mediaelch.de/
+INHERIT=cmake
+IUSE=debug lto
+KEYWORDS=~amd64
+LICENSE=LGPL-3
+RDEPEND=dev-libs/quazip dev-qt/qt5compat:6 dev-qt/qtbase:6[concurrent,gui,opengl,sql,widgets,xml] dev-qt/qtdeclarative:6 dev-qt/qtmultimedia:6 dev-qt/qtsvg:6 dev-qt/qttools:6 media-video/ffmpeg media-video/mediainfo x11-libs/libxkbcommon
+RESTRICT=mirror
+SLOT=0
+SRC_URI=https://github.com/Komet/MediaElch/archive/v2.12.0.tar.gz -> mediaelch-2.12.0.tar.gz
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	3395ce6618fc5c7af03335471b896644
+_md5_=e7d09b6f076e0986384e5b3363446bc1
