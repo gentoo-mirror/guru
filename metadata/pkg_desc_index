@@ -109,7 +109,7 @@ app-admin/chezmoi 2.69.3 2.70.0 2.70.2: Manage your dotfiles across multiple mac
 app-admin/customrescuecd-x86_64 0.12.7 0.12.8: A system rescue cd or usbstick for desktop and server based on gentoo
 app-admin/doasedit 1.0.8 1.0.9 9999: Edit files as root using an unprivileged editor
 app-admin/dotbot 1.20.1: A tool that bootstraps your dotfiles
-app-admin/fatrace 0.19.0: report system wide file access events
+app-admin/fatrace 0.19.1: report system wide file access events
 app-admin/gentoo_update 0.2.4: Gentoo Linux updater
 app-admin/git-credential-oauth 0.17.2: A Git credential helper that securely authenticates using OAuth
 app-admin/grub-customizer 5.2.5: A graphical grub2 settings manager
@@ -208,7 +208,7 @@ app-doc/stdman 2022.07.30 2024.07.05 9999: Formatted C++ stdlib man pages (cppre
 app-doc/sway-wiki 9999: Wiki of gui-wm/sway, rendered to HTML using kramdown-parser-gfm
 app-editors/edit 1.2.0: Microsoft edit
 app-editors/emacs-lsp-booster 0.2.1: Emacs LSP performance booster
-app-editors/fresh 0.3.5 0.3.7 0.3.8 0.3.10: Terminal based IDE & text editor: easy, powerful and fast
+app-editors/fresh 0.3.7 0.3.8 0.3.10 0.3.12: Terminal based IDE & text editor: easy, powerful and fast
 app-editors/imhex 1.38.1: A hex editor for reverse engineers, programmers, and eyesight
 app-editors/kakoune-lsp 18.1.0 21.0.0: Kakoune Language Server Protocol Client
 app-editors/l3afpad 0.8.18.1.11: Simple GTK3 text editor (successor to leafpad)
@@ -555,7 +555,7 @@ dev-embedded/flip-link 0.1.12: Flips the memory layout of embedded programs to p
 dev-embedded/freertos-gdb 1.0.4: Python module for operating with freeRTOS-kernel objects in GDB
 dev-embedded/fwup 1.15.1 1.16.0: Configurable embedded Linux firmware update creator and runner
 dev-embedded/idf-component-manager 2.4.2 2.4.6 3.0.0 3.0.2: Tool for installing ESP-IDF components
-dev-embedded/imsprog 1.8.3_p20260518: I2C, MicroWire and SPI EEPROM/Flash chip Programmer
+dev-embedded/imsprog 1.8.3_p20260518 1.8.5: I2C, MicroWire and SPI EEPROM/Flash chip Programmer
 dev-embedded/mv88e6xxx-dump 0.2.0_pre20210327: Dump information about Marvell mv88e6xxx Ethernet switches
 dev-embedded/nxp-gui-guider 1.10.1: GUI Guider is a user-friendly GUI development tool for LVGL
 dev-embedded/pico-sdk 2.1.1 2.2.0: Libraries and tools for C/C++ development on RP2040 and RP2350 microcontrollers.
@@ -601,8 +601,8 @@ dev-lang/odin 2026.01 2026.02 2026.03 2026.04 2026.05 9999: The Data-Oriented La
 dev-lang/opencilk 1.1 2.1: The OpenCilk concurrency platform for parallel programming
 dev-lang/opencilk-bin 1.1 2.1: The OpenCilk concurrency platform for parallel programming
 dev-lang/quickjs 2025.09.13.2: Small embeddable Javascript engine
-dev-lang/swift 5.10.1-r5 6.0.3-r2 6.1.3 6.2.4 6.3-r1 6.3.1: A high-level, general-purpose, multi-paradigm, compiled programming language
-dev-lang/swift-bin 5.10.1-r5 6.2.3 6.2.4 6.3 6.3.1: A high-level, general-purpose, multi-paradigm, compiled programming language
+dev-lang/swift 5.10.1-r5 6.0.3-r2 6.1.3 6.2.4 6.3-r1 6.3.1 6.3.2: A high-level, general-purpose, multi-paradigm, compiled programming language
+dev-lang/swift-bin 5.10.1-r5 6.2.3 6.2.4 6.3 6.3-r1 6.3.1 6.3.1-r1 6.3.2 6.3.2-r1: A high-level, general-purpose, multi-paradigm, compiled programming language
 dev-lang/swift-bootstrap 1.0: A virtual package providing a base Swift to bootstrap future versions with.
 dev-lang/uiua 0.16.2 0.17.2 0.18.1: A stack-based array programming language
 dev-lang/wabt 1.0.37: The WebAssembly Binary Toolkit
@@ -867,7 +867,7 @@ dev-python/listparser 0.20: Parse OPML subscriptions in Python
 dev-python/litestar 2.21.1 2.22.0 2.23.0: Light, flexible and extensible ASGI framework
 dev-python/litestar-htmx 0.5.0: HTMX Integration for Litestar
 dev-python/lru-dict 1.3.0 1.4.1: Dict like LRU container
-dev-python/lsp-tree-sitter 0.1.1: A library to create language servers
+dev-python/lsp-tree-sitter 0.1.1 0.1.1-r1: A library to create language servers
 dev-python/m3u8 6.0.0: Python m3u8 Parser for HTTP Live Streaming (HLS) Transmissions
 dev-python/markdownify 0.11.6: Convert HTML to Markdown
 dev-python/markovify 0.9.4: Simple, extensible Markov chain generator
@@ -908,7 +908,7 @@ dev-python/parsel 1.10.0: Utility to extract data from XML/HTML documents using 
 dev-python/pem 23.1.0: Easy PEM file parsing in Python
 dev-python/persist-queue 0.8.1 1.0.0 1.1.0: A thread-safe disk based persistent queue in Python
 dev-python/phx-class-registry 4.1.0-r1: An intersection of the Registry and Factory pattern
-dev-python/pillow-heif 1.2.0 1.2.1: Python interface for libheif library
+dev-python/pillow-heif 1.3.0: Python interface for libheif library
 dev-python/pillow-jxl-plugin 1.3.7: Pillow plugin for JPEG-XL, using Rust for bindings.
 dev-python/pipdeptree 2.34.0: Utility for displaying installed packages in a dependency tree
 dev-python/pipenv 2026.6.1: Python Development Workflow for Humans
@@ -1133,7 +1133,7 @@ dev-util/insomnia-bin 2023.5.8: HTTP and GraphQL client for developers
 dev-util/ios-safari-remote-debug 0_pre20250506: A remote debugger for iOS Safari
 dev-util/ios-webkit-debug-proxy 1.9.2: A DevTools proxy for iOS devices
 dev-util/istyle 1.23_pre20220127: Fast and Free Automatic Formatter for Verilog Source Code
-dev-util/juliaup 1.20.1: Julia installer and version multiplexer
+dev-util/juliaup 1.20.2: Julia installer and version multiplexer
 dev-util/kubetail 0.15.0 0.16.0 0.17.0: Real-time logging dashboard for Kubernetes
 dev-util/lemminx-bin 0.27.0 0.27.1: XML Language Server
 dev-util/libtypec-utils 0.5.2: Library to interface with USB Type-C/Power Delivery devices
@@ -1153,7 +1153,7 @@ dev-util/ols 2026.01 2026.03 9999: Language server for Odin Programming language
 dev-util/opencode-bin 1.1.48 1.2.6 1.15.12: The open source coding agent
 dev-util/pcpp 1.30: A C99 preprocessor written in pure Python
 dev-util/pifpaf 3.3.0: Suite of tools and fixtures to manage daemons for testing
-dev-util/pmbootstrap 3.9.0: Helper tool for developing and building postmarketOS
+dev-util/pmbootstrap 3.9.0 3.10.3: Helper tool for developing and building postmarketOS
 dev-util/quilttools 0.3-r1: Mailbox to quilt series converter
 dev-util/rexxd 2025.02.17: Drop-in replacement for the original xxd
 dev-util/riffdiff 3.6.1: Diff filter highlighting changed line parts
@@ -1169,7 +1169,7 @@ dev-util/stripe-cli 1.33.0-r1 1.34.0 9999: A command-line tool for Stripe
 dev-util/stylua 2.5.2: A code formatter for Lua
 dev-util/systing 1.6.0: A libbpf based tracer to figure out what an application is doing
 dev-util/tailspin 5.4.5: A log file highlighter
-dev-util/termux-language-server 0.0.31: A language server for some specific Bash scripts
+dev-util/termux-language-server 0.0.31 0.0.31-r1: A language server for some specific Bash scripts
 dev-util/tflint-bin 0.43.0 0.46.0: A Pluggable Terraform Linter
 dev-util/tinyxxd 1.3.7-r2 1.3.11 9999: Drop-in replacement and standalone version of xxd
 dev-util/tokei 12.1.2 13.0.0 14.0.0 9999: Count your code, quickly
@@ -1255,8 +1255,8 @@ games-rpg/open-adventure 1.17 1.18 1.20: Forward-port of the Crowther/Woods Adve
 games-rpg/primordia 3.6.70667: A cyberpunk point-and-click adventure game
 games-rpg/snoot-game 1.12.0: Visual novel parody of Goodbye Volcano High
 games-server/among-sus 20210519: Among Us, but it's a text adventure
-games-simulation/kittenspaceagency-bin 2026.5.12-r4510: A space flight and rocketry simulation
-games-strategy/7k-ambition 3.2.8 9999: Seven Kingdoms: Ambition
+games-simulation/kittenspaceagency-bin 2026.6.2-r4531: A space flight and rocketry simulation
+games-strategy/7k-ambition 3.2.9 9999: Seven Kingdoms: Ambition
 games-strategy/gigalomania 1.0.1: Libre clone of Mega-Lo-Mania (original from ~1990), supports original resources
 games-strategy/hedgewars 1.1.0_pre20260124: A turn-based strategy, artillery, action and comedy game
 games-strategy/slay-the-spire 2.2: Deck-building roguelike game with four playable characters
@@ -1348,7 +1348,7 @@ gui-apps/gtklock 4.0.0: GTK-based lockscreen for Wayland
 gui-apps/gtklock-extras 9999: Gtklock modules
 gui-apps/heh 0.6.3: A cross-platform terminal UI used for modifying file data in hex or ASCII.
 gui-apps/hiprompt-gtk-py 0.8.0 9999: GTK+ Himitsu prompter for Wayland
-gui-apps/hyprmoncfg 1.5.1: Terminal-first monitor configurator and auto-switching daemon for Hyprland
+gui-apps/hyprmoncfg 1.5.1 1.5.2: Terminal-first monitor configurator and auto-switching daemon for Hyprland
 gui-apps/hyprnome 0.3.0: GNOME-like workspace switching in Hyprland.
 gui-apps/hyprswitch 1.3.1: A CLI/GUI that allows switching between windows in Hyprland
 gui-apps/intiface-central-bin 2.6.0 2.6.4: Buttplug frontend application
@@ -1687,8 +1687,8 @@ net-dialup/minimodem 0.24-r2 9999-r1: General-purpose software audio FSK modem
 net-dialup/syncterm 1.1 9999: BBS (bulletin board system) terminal
 net-dialup/tcpser 1.1.4: Hayes Smartmodem emulator over TCP/IP
 net-dialup/tio 3.9: Simple TTY terminal application
-net-dns/AdGuardHome 0.107.64 0.107.71 0.107.76: Network-wide ads & trackers blocking DNS server like Pi-Hole with web ui
-net-dns/blocky 0.26.2 0.28.2 0.30.0 9999: Fast and lightweight DNS proxy as ad-blocker with many features written in Go
+net-dns/AdGuardHome 0.107.71 0.107.76 0.107.77: Network-wide ads & trackers blocking DNS server like Pi-Hole with web ui
+net-dns/blocky 0.28.2 0.30.0 0.31.0 9999: Fast and lightweight DNS proxy as ad-blocker with many features written in Go
 net-dns/noip-duc 3.3.0: No-IP Dynamic Update Client (https://www.noip.com)
 net-dns/technitium-dns 13.6 14.3 15.0.1 15.1 15.2: Open-source, self-hosted authoritative and recursive DNS+DHCP server.
 net-fs/httpdirfs 1.2.7: Filesystem to mount HTTP directory listings, with a permanent cache
@@ -1959,6 +1959,7 @@ sci-misc/llama-cpp 0_pre6980 0_pre7276 0_pre7611 0_pre7924 0_pre8198 0_pre8628 0
 sci-misc/stable-diffusion-cpp 9999: Diffusion model(SD,Flux,Wan,Qwen Image,Z-Image,...) inference in pure C/C++
 sci-ml/aichat 0.30.0: All-in-one LLM CLI Tool
 sci-ml/ollama 0.18.0 0.20.3 0.21.2 9999: Get up and running with Llama 3, Mistral, Gemma, and other language models.
+sci-ml/ollama-bin 0.30.5: Get up and running with local large language models.
 sci-physics/openmodelica 1.26.0: Open-source Modelica-based modeling and simulation environment
 sci-physics/ovito 3.10.4 3.10.5 3.10.5-r1: Open Visualization Tool
 sec-keys/openpgp-keys-aepaneshnikov 20221210: OpenPGP keys used by Alexander Epaneshnikov
