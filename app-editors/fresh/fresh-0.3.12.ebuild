@@ -63,6 +63,7 @@ CRATES="
 	calloop@0.13.0
 	castaway@0.2.4
 	cc@1.2.61
+	cesu8@1.1.0
 	cexpr@0.6.0
 	cfg-expr@0.15.8
 	cfg-if@1.0.4
@@ -221,6 +222,8 @@ CRATES="
 	include_dir_macros@0.7.4
 	indexmap@2.14.0
 	indoc@2.0.7
+	inotify-sys@0.1.5
+	inotify@0.11.1
 	insta@1.47.2
 	instability@0.3.12
 	interprocess@2.4.2
@@ -234,6 +237,7 @@ CRATES="
 	jni-sys-macros@0.4.1
 	jni-sys@0.3.1
 	jni-sys@0.4.1
+	jni@0.21.1
 	jni@0.22.4
 	jobserver@0.1.34
 	js-sys@0.3.97
@@ -242,6 +246,8 @@ CRATES="
 	keyboard-types@0.7.0
 	khronos-egl@6.0.0
 	khronos_api@3.1.0
+	kqueue-sys@1.1.0
+	kqueue@1.1.1
 	lab@0.11.0
 	lazy_static@1.5.0
 	leb128fmt@0.1.0
@@ -286,6 +292,8 @@ CRATES="
 	nom@8.0.0
 	nonmax@0.5.5
 	normpath@1.5.1
+	notify-types@2.1.0
+	notify@8.2.0
 	nu-ansi-term@0.50.3
 	num-bigint@0.4.6
 	num-conv@0.2.1
@@ -323,6 +331,7 @@ CRATES="
 	onig@6.5.3
 	onig_sys@69.9.3
 	open@5.3.4
+	openssl-probe@0.2.1
 	option-ext@0.2.0
 	orbclient@0.3.54
 	ordered-float@4.6.0
@@ -448,7 +457,10 @@ CRATES="
 	rustix-openpty@0.2.0
 	rustix@0.38.44
 	rustix@1.1.4
+	rustls-native-certs@0.8.3
 	rustls-pki-types@1.14.1
+	rustls-platform-verifier-android@0.1.1
+	rustls-platform-verifier@0.6.2
 	rustls-webpki@0.103.13
 	rustls@0.23.40
 	rustversion@1.0.22
@@ -456,11 +468,14 @@ CRATES="
 	rustybuzz@0.20.1
 	ryu@1.0.23
 	same-file@1.0.6
+	schannel@0.1.29
 	schemars@1.2.1
 	schemars_derive@1.2.1
 	scoped-tls@1.0.1
 	scopeguard@1.2.0
 	sctk-adwaita@0.10.1
+	security-framework-sys@2.17.0
+	security-framework@3.7.0
 	self_cell@1.2.2
 	semver@1.0.28
 	seq-macro@0.3.6
@@ -567,6 +582,7 @@ CRATES="
 	tree-sitter-python@0.25.0
 	tree-sitter-ruby@0.23.1
 	tree-sitter-rust@0.24.2
+	tree-sitter-templ@2.2.0
 	tree-sitter-typescript@0.23.2
 	tree-sitter@0.26.8
 	tree_magic_mini@3.2.2
@@ -629,6 +645,7 @@ CRATES="
 	wayland-sys@0.31.11
 	web-sys@0.3.97
 	web-time@1.1.0
+	webpki-root-certs@1.0.7
 	webpki-roots@1.0.7
 	wezterm-bidi@0.2.3
 	wezterm-blob-leases@0.1.1
@@ -662,29 +679,38 @@ CRATES="
 	windows-result@0.1.2
 	windows-result@0.4.1
 	windows-strings@0.5.1
+	windows-sys@0.45.0
 	windows-sys@0.52.0
 	windows-sys@0.59.0
 	windows-sys@0.60.2
 	windows-sys@0.61.2
+	windows-targets@0.42.2
 	windows-targets@0.52.6
 	windows-targets@0.53.5
 	windows-threading@0.2.1
 	windows@0.56.0
 	windows@0.62.2
+	windows_aarch64_gnullvm@0.42.2
 	windows_aarch64_gnullvm@0.52.6
 	windows_aarch64_gnullvm@0.53.1
+	windows_aarch64_msvc@0.42.2
 	windows_aarch64_msvc@0.52.6
 	windows_aarch64_msvc@0.53.1
+	windows_i686_gnu@0.42.2
 	windows_i686_gnu@0.52.6
 	windows_i686_gnu@0.53.1
 	windows_i686_gnullvm@0.52.6
 	windows_i686_gnullvm@0.53.1
+	windows_i686_msvc@0.42.2
 	windows_i686_msvc@0.52.6
 	windows_i686_msvc@0.53.1
+	windows_x86_64_gnu@0.42.2
 	windows_x86_64_gnu@0.52.6
 	windows_x86_64_gnu@0.53.1
+	windows_x86_64_gnullvm@0.42.2
 	windows_x86_64_gnullvm@0.52.6
 	windows_x86_64_gnullvm@0.53.1
+	windows_x86_64_msvc@0.42.2
 	windows_x86_64_msvc@0.52.6
 	windows_x86_64_msvc@0.53.1
 	winit@0.30.13
