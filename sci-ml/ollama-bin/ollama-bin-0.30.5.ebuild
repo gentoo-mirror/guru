@@ -24,6 +24,11 @@ RDEPEND="
 	acct-group/ollama
 	acct-group/render
 	acct-group/video
+	app-arch/bzip2
+	app-arch/xz-utils
+	app-arch/zstd
+	media-libs/vulkan-loader
+	sys-libs/zlib-ng
 	>=acct-user/ollama-3[cuda?]
 	cuda? (
 		dev-util/nvidia-cuda-toolkit
