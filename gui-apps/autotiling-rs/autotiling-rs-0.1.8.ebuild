@@ -30,6 +30,8 @@ CRATES="
 	zmij@1.0.19
 "
 
+RUST_MIN_VER="1.85.0"
+
 inherit cargo
 
 DESCRIPTION="Autotiling for sway (and possibly i3)"
@@ -47,3 +49,5 @@ LICENSE+="
 "
 SLOT="0"
 KEYWORDS="~amd64"
+
+QA_FLAGS_IGNORED="usr/bin/${PN}"
