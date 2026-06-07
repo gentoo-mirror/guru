@@ -137,7 +137,7 @@ app-admin/terragrunt-bin 0.93.11 0.96.1: A thin wrapper for Terraform
 app-admin/tflint 0.58.0 0.60.0: Terraform linter
 app-admin/yolk 0.3.8: Templated dotfile management without template files
 app-alternatives/phosh-keyboard 2-r1: sm.puri.OSK0.desktop symlinks
-app-arch/brzip 0.3.3: A compression utility based on Brotli algorithm
+app-arch/brzip 0.3.4: A compression utility based on Brotli algorithm
 app-arch/fuse-archive 1.16 1.20: Read-only FUSE file system for mounting archives and compressed files
 app-arch/libarchive-qt 2.0.8-r1: Qt based archiving solution with libarchive backend
 app-arch/libzim 9.2.1-r1 9.5.0 9.6.0 9.7.0: ZIM file format: an offline storage solution for content coming from the Web
@@ -272,6 +272,7 @@ app-misc/cmd-timer 2.1.0 9999: run command at a specific interval
 app-misc/corectrl 1.5.2 9999: Core control application
 app-misc/countryfetch 0.2.0: A Command-line tool similar to Neofetch for obtaining information about your country
 app-misc/cpufetch 1.07: Simplistic yet fancy CPU architecture fetching tool
+app-misc/crush 0.75.0: The glamourous AI coding agent for your favourite terminal
 app-misc/dbf 0.9.0: Command line tool to read the content of dBASE III, IV, and 5.0 files
 app-misc/diff-so-fancy 1.4.4: Good-lookin' diffs. Actually... nah... The best-lookin' diffs
 app-misc/doublecmd 1.1.31 1.1.32 1.2.3: Cross Platform file manager
@@ -602,8 +603,8 @@ dev-lang/opencilk 1.1 2.1: The OpenCilk concurrency platform for parallel progra
 dev-lang/opencilk-bin 1.1 2.1: The OpenCilk concurrency platform for parallel programming
 dev-lang/quickjs 2025.09.13.2: Small embeddable Javascript engine
 dev-lang/swift 5.10.1-r5 6.0.3-r2 6.1.3 6.2.4 6.3-r1 6.3.1 6.3.2: A high-level, general-purpose, multi-paradigm, compiled programming language
-dev-lang/swift-bin 5.10.1-r5 6.2.3 6.2.4 6.3 6.3-r1 6.3.1 6.3.1-r1 6.3.2 6.3.2-r1: A high-level, general-purpose, multi-paradigm, compiled programming language
-dev-lang/swift-bootstrap 1.0: A virtual package providing a base Swift to bootstrap future versions with.
+dev-lang/swift-bin 5.10.1-r6 6.2.3 6.2.4 6.3 6.3-r1 6.3.1 6.3.1-r1 6.3.2 6.3.2-r1: A high-level, general-purpose, multi-paradigm, compiled programming language
+dev-lang/swift-bootstrap 1.0 1.1: A virtual package providing a base Swift to bootstrap future versions with.
 dev-lang/uiua 0.16.2 0.17.2 0.18.1: A stack-based array programming language
 dev-lang/wabt 1.0.37: The WebAssembly Binary Toolkit
 dev-libs/M_CLI2 3.2.0: M_CLI2 - parse Unix-like command line arguments from Fortran
@@ -1133,7 +1134,7 @@ dev-util/insomnia-bin 2023.5.8: HTTP and GraphQL client for developers
 dev-util/ios-safari-remote-debug 0_pre20250506: A remote debugger for iOS Safari
 dev-util/ios-webkit-debug-proxy 1.9.2: A DevTools proxy for iOS devices
 dev-util/istyle 1.23_pre20220127: Fast and Free Automatic Formatter for Verilog Source Code
-dev-util/juliaup 1.20.2: Julia installer and version multiplexer
+dev-util/juliaup 1.20.4: Julia installer and version multiplexer
 dev-util/kubetail 0.15.0 0.16.0 0.17.0: Real-time logging dashboard for Kubernetes
 dev-util/lemminx-bin 0.27.0 0.27.1: XML Language Server
 dev-util/libtypec-utils 0.5.2: Library to interface with USB Type-C/Power Delivery devices
@@ -1348,7 +1349,7 @@ gui-apps/gtklock 4.0.0: GTK-based lockscreen for Wayland
 gui-apps/gtklock-extras 9999: Gtklock modules
 gui-apps/heh 0.6.3: A cross-platform terminal UI used for modifying file data in hex or ASCII.
 gui-apps/hiprompt-gtk-py 0.8.0 9999: GTK+ Himitsu prompter for Wayland
-gui-apps/hyprmoncfg 1.5.1 1.5.2: Terminal-first monitor configurator and auto-switching daemon for Hyprland
+gui-apps/hyprmoncfg 1.5.1 1.5.2 1.6.0: Terminal-first monitor configurator and auto-switching daemon for Hyprland
 gui-apps/hyprnome 0.3.0: GNOME-like workspace switching in Hyprland.
 gui-apps/hyprswitch 1.3.1: A CLI/GUI that allows switching between windows in Hyprland
 gui-apps/intiface-central-bin 2.6.0 2.6.4: Buttplug frontend application
@@ -1444,7 +1445,7 @@ gui-wm/beansprout 1.0.0 9999: A tiling window manager for the river Wayland comp
 gui-wm/cage 0.2.1 0.3.0 9999: A Wayland kiosk
 gui-wm/canoe 0.4.0: Canoe, a River window manager implementation in Rust
 gui-wm/kwm 0.3.0 9999: A window manager based on River Wayland compositor
-gui-wm/mangowm 0.14.0 9999: wayland compositor based on wlroots and scenefx(dwl but no suckless)
+gui-wm/mangowm 0.14.2 9999: wayland compositor based on wlroots and scenefx(dwl but no suckless)
 gui-wm/miracle-wm 0.9.1: Tiling Wayland compositor based on Mir
 gui-wm/niri 26.04 9999: Scrollable-tiling Wayland compositor
 gui-wm/phoc 0.50.0 0.52.0 0.53.0: Wayland compositor for mobile phones
@@ -1552,7 +1553,7 @@ media-libs/xrizer 0.3.0-r1 0.5.0 9999: OpenVR over OpenXR compatibility layer
 media-plugins/alsa-sndio 0.2: ALSA PCM to play audio on sndio servers
 media-plugins/argotlunar-bin 2.06-r2: Argotlunar is a sound granulator. Binary Linux VST
 media-plugins/dtmediawiki 9999: Wikimedia Commons export plugin for Darktable
-media-plugins/eq10q 2.2: An LV2 audio plugin implementing a powerful and flexible parametric equalizer
+media-plugins/eq10q 2.2-r1: An LV2 audio plugin implementing a powerful and flexible parametric equalizer
 media-plugins/gimp-avif-plugin 9999: Plug-in for development GIMP 2.99.11 for loading/saving AVIF images.
 media-plugins/gimp-resynthesizer 3.0_p20260320 3.0.1_p20260408 9999: Suite of GIMP plugins for texture synthesis
 media-plugins/qt-heif-image-plugin 0.3.4: Qt plugin for HEIF images
@@ -2125,7 +2126,7 @@ www-client/torbrowser-launcher 0.3.9: A program to help you securely download an
 www-client/vimb 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
 www-client/waterfox-bin 6.6.14: A privacy-focused, performance-oriented browser based on Firefox
 www-client/yandex-browser 26.3.1.1088_p1: The web browser from Yandex
-www-client/zen-bin 1.19.13b 1.20.1b: Zen Browser - A fast, privacy-focused Firefox fork
+www-client/zen-bin 1.19.13b 1.20.2b: Zen Browser - A fast, privacy-focused Firefox fork
 www-misc/dufs 0.40.0 0.46.0: Dufs is a distinctive utility file server
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits
 www-misc/kiwix-desktop 2.4.0 2.5.1: cross-platform viewer/manager for ZIM archives
