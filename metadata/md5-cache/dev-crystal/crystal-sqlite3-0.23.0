@@ -1,0 +1,14 @@
+BDEPEND=|| ( >=dev-lang/crystal-1.16.3 >=dev-lang/crystal-bin-1.16.3 ) || ( dev-util/shards dev-lang/crystal-bin ) >=dev-util/gshards-0.2
+DEFINED_PHASES=compile configure install test
+DESCRIPTION=SQLite3 bindings for Crystal
+EAPI=9
+HOMEPAGE=https://github.com/crystal-lang/crystal-sqlite3
+INHERIT=shards
+IUSE=debug doc
+KEYWORDS=~amd64
+LICENSE=MIT
+RDEPEND=>=dev-crystal/crystal-db-0.13.0 <dev-crystal/crystal-db-0.15.0 || ( >=dev-lang/crystal-1.16.3 >=dev-lang/crystal-bin-1.16.3 )
+SLOT=0
+SRC_URI=https://github.com/crystal-lang/crystal-sqlite3/archive/refs/tags/v0.23.0.tar.gz -> crystal-sqlite3-0.23.0.tar.gz
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	crystal-utils	7ba289dcfc245baac3244b600bce0619	shards	8f9ed867acd752f56f13e2b331d75712
+_md5_=c043fe476436539c3dc83f4ab14b37e1
