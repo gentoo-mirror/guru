@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{12..13} )
+PYTHON_COMPAT=( python3_{12..14} )
 DISTUTILS_USE_PEP517=setuptools
 
 inherit distutils-r1
@@ -18,10 +18,10 @@ KEYWORDS="~amd64"
 
 BDEPEND="
 	test? (
-		dev-python/requests-mock[${PYTHON_USEDEP}]
-		dev-python/jsonschema[${PYTHON_USEDEP}]
-		dev-python/vcrpy[${PYTHON_USEDEP}]
 		dev-python/filelock[${PYTHON_USEDEP}]
+		dev-python/jsonschema[${PYTHON_USEDEP}]
+		dev-python/requests-mock[${PYTHON_USEDEP}]
+		dev-python/vcrpy[${PYTHON_USEDEP}]
 		dev-vcs/git
 	)
 "
@@ -32,6 +32,7 @@ RDEPEND="
 	dev-python/colorama[${PYTHON_USEDEP}]
 	dev-python/jsonref[${PYTHON_USEDEP}]
 	dev-python/packaging[${PYTHON_USEDEP}]
+	dev-python/psutil[${PYTHON_USEDEP}]
 	dev-python/pydantic[${PYTHON_USEDEP}]
 	dev-python/pydantic-settings[${PYTHON_USEDEP}]
 	dev-python/pyparsing[${PYTHON_USEDEP}]
@@ -51,6 +52,7 @@ EPYTEST_DESELECT=(
 	tests/test_component_manager.py::test_pack_component_with_dest_dir
 	tests/test_profile.py::TestMultiStorageClient::test_registry_storage_url
 	tests/test_profile.py::TestMultiStorageClient::test_storage_clients_precedence
+	tests/test_mirror_sync.py::test_collect_component_versions_merges_multiple_specs
 	tests/test_mirror_sync.py::test_sync_dependency_with_matches
 	tests/test_mirror_sync.py::test_sync_dependency_with_rules
 	tests/test_mirror_sync.py::test_update_existing_local_mirror
@@ -61,6 +63,8 @@ EPYTEST_DESELECT=(
 	tests/cli/test_module.py::test_raise_exception_on_warnings
 	tests/cli/test_registry_command.py::test_logout_from_registry_revoked_token
 	tests/sources/test_git.py::test_versions_component_hash
+	tests/version_solver/test_local_components_precedence.py::test_local_component_transitive_dependency
+	tests/version_solver/test_local_components_precedence.py::test_local_component_chain_dependency
 
 	tests/test_lock.py::TestLockManager::test_lock_dump_with_solution
 	tests/test_lock.py::TestLockManager::test_lock_dump_with_dictionary
