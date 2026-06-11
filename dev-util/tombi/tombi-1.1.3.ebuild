@@ -19,12 +19,7 @@ CRATES="
 	addr2line@0.24.2
 	addr@0.15.6
 	adler2@2.0.1
-	aead@0.3.2
-	aes-gcm@0.8.0
-	aes-soft@0.6.4
-	aes@0.6.0
 	aes@0.8.4
-	aesni@0.10.0
 	ahash@0.8.12
 	aho-corasick@1.1.3
 	allocator-api2@0.2.21
@@ -37,37 +32,23 @@ CRATES="
 	anstyle@1.0.11
 	anyhow@1.0.98
 	arbitrary@1.4.1
-	async-channel@1.9.0
-	async-channel@2.5.0
-	async-executor@1.13.2
-	async-global-executor@2.4.1
-	async-io@2.5.0
-	async-lock@3.4.1
-	async-std@1.13.1
-	async-task@4.7.1
 	async-trait@0.1.88
-	atomic-waker@1.1.2
 	atomic@0.6.1
 	auditable-serde@0.8.0
 	auto_impl@1.3.0
 	autocfg@1.5.0
 	backtrace@0.3.75
-	base-x@0.2.11
-	base64@0.13.1
 	base64@0.22.1
 	bit-set@0.5.3
 	bit-vec@0.6.3
 	bitflags@1.3.2
 	bitflags@2.11.0
 	block-buffer@0.10.4
-	block-buffer@0.9.0
-	blocking@1.6.2
 	boxcar@0.2.13
 	bstr@1.12.0
 	bumpalo@3.19.0
 	bytemuck@1.23.1
 	byteorder@1.5.0
-	bytes@0.5.6
 	bytes@1.11.1
 	bzip2-sys@0.1.13+1.0.8
 	bzip2@0.5.2
@@ -75,7 +56,6 @@ CRATES="
 	cfg-if@1.0.1
 	cfg_aliases@0.2.1
 	chrono@0.4.41
-	cipher@0.2.5
 	cipher@0.4.4
 	clap@4.5.43
 	clap_builder@4.5.43
@@ -83,17 +63,13 @@ CRATES="
 	clap_derive@4.5.41
 	clap_lex@0.7.5
 	colorchoice@1.0.4
-	concurrent-queue@2.5.0
 	console_error_panic_hook@0.1.7
-	const_fn@0.4.11
 	constant_time_eq@0.3.1
 	convert_case@0.6.0
-	cookie@0.14.4
 	core-foundation-sys@0.8.7
 	core-foundation@0.10.0
 	countme@3.0.1
 	cpufeatures@0.2.17
-	cpuid-bool@0.2.0
 	crc-catalog@2.4.0
 	crc32fast@1.5.0
 	crc@3.3.0
@@ -101,40 +77,28 @@ CRATES="
 	crossbeam-epoch@0.9.18
 	crossbeam-utils@0.8.21
 	crypto-common@0.1.6
-	crypto-mac@0.10.0
-	ctr@0.6.0
-	curl-sys@0.4.82+curl-8.14.1
-	curl@0.4.48
 	dashmap@5.5.3
 	deflate64@0.1.9
 	deranged@0.5.5
 	derive_arbitrary@1.4.1
 	diff@0.1.13
 	digest@0.10.7
-	digest@0.9.0
 	dirs-sys@0.5.0
 	dirs@6.0.0
-	discard@1.0.4
 	displaydoc@0.2.5
 	drop_bomb@0.1.5
 	dyn-clone@1.0.20
 	either@1.15.0
 	email_address@0.2.9
-	encoding_rs@0.8.35
 	env_filter@0.1.4
 	env_logger@0.11.8
 	equivalent@1.0.2
 	errno@0.3.13
-	event-listener-strategy@0.5.4
-	event-listener@2.5.3
-	event-listener@5.4.1
 	fancy-regex@0.13.0
 	fast-glob@0.3.3
-	fastrand@1.9.0
 	fastrand@2.3.0
 	filetime@0.2.27
 	flate2@1.1.2
-	flume@0.9.2
 	fnv@1.0.7
 	foldhash@0.1.5
 	form_urlencoded@1.2.1
@@ -142,8 +106,6 @@ CRATES="
 	futures-core@0.3.31
 	futures-executor@0.3.31
 	futures-io@0.3.31
-	futures-lite@1.13.0
-	futures-lite@2.6.1
 	futures-macro@0.3.31
 	futures-sink@0.3.31
 	futures-task@0.3.31
@@ -151,29 +113,20 @@ CRATES="
 	futures-util@0.3.31
 	futures@0.3.31
 	generic-array@0.14.7
-	getrandom@0.1.16
 	getrandom@0.2.16
 	getrandom@0.3.3
-	ghash@0.3.1
 	gimli@0.31.1
 	glob@0.3.2
 	globset@0.4.16
 	gloo-net@0.6.0
-	gloo-timers@0.3.0
 	gloo-utils@0.2.0
 	hashbrown@0.14.5
 	hashbrown@0.15.5
 	hashbrown@0.17.1
 	heck@0.5.0
-	hermit-abi@0.5.2
-	hkdf@0.10.0
-	hmac@0.10.1
 	hmac@0.12.1
 	http-body-util@0.1.3
 	http-body@1.0.1
-	http-client@6.5.3
-	http-types@2.12.0
-	http@0.2.12
 	http@1.3.1
 	httparse@1.10.1
 	hyper-rustls@0.27.7
@@ -193,14 +146,11 @@ CRATES="
 	idna_adapter@1.2.1
 	ignore@0.4.23
 	indexmap@2.14.0
-	infer@0.2.3
 	inout@0.1.4
-	instant@0.1.13
 	io-uring@0.7.9
 	ipnet@2.11.0
 	iri-string@0.7.8
 	is_terminal_polyfill@1.70.1
-	isahc@0.9.14
 	itertools@0.13.0
 	itertools@0.14.0
 	itoa@1.0.15
@@ -208,12 +158,9 @@ CRATES="
 	jiff@0.2.15
 	jobserver@0.1.33
 	js-sys@0.3.77
-	kv-log-macro@1.0.7
 	leb128fmt@0.1.0
 	libc@0.2.174
-	libnghttp2-sys@0.1.11+1.64.0
 	libredox@0.1.9
-	libz-sys@1.1.22
 	linux-raw-sys@0.9.4
 	litemap@0.8.0
 	lock_api@0.4.13
@@ -224,8 +171,6 @@ CRATES="
 	lzma-sys@0.1.20
 	md-5@0.10.6
 	memchr@2.7.5
-	mime@0.3.17
-	mime_guess@2.0.5
 	miniz_oxide@0.8.9
 	mio@1.0.4
 	nu-ansi-term@0.50.1
@@ -234,11 +179,8 @@ CRATES="
 	object@0.36.7
 	once_cell@1.21.3
 	once_cell_polyfill@1.70.1
-	opaque-debug@0.3.1
 	openssl-probe@0.1.6
-	openssl-sys@0.9.112
 	option-ext@0.2.0
-	parking@2.2.1
 	parking_lot_core@0.9.11
 	pbkdf2@0.12.2
 	pep440_rs@0.7.3
@@ -248,10 +190,7 @@ CRATES="
 	pin-project-lite@0.2.16
 	pin-project@1.1.10
 	pin-utils@0.1.0
-	piper@0.2.4
 	pkg-config@0.3.32
-	polling@3.10.0
-	polyval@0.4.5
 	portable-atomic-util@0.2.5
 	portable-atomic@1.13.1
 	potential_utf@0.1.2
@@ -260,7 +199,6 @@ CRATES="
 	pretty_assertions@1.4.1
 	prettyplease@0.2.37
 	proc-macro-crate@3.5.0
-	proc-macro-hack@0.5.20+deprecated
 	proc-macro2@1.0.95
 	psl-types@2.0.11
 	psl@2.1.199
@@ -269,16 +207,9 @@ CRATES="
 	quinn@0.11.8
 	quote@1.0.40
 	r-efi@5.3.0
-	rand@0.7.3
-	rand@0.8.5
 	rand@0.9.3
-	rand_chacha@0.2.2
-	rand_chacha@0.3.1
 	rand_chacha@0.9.0
-	rand_core@0.5.1
-	rand_core@0.6.4
 	rand_core@0.9.3
-	rand_hc@0.2.0
 	rayon-core@1.12.1
 	rayon@1.10.0
 	redox_syscall@0.5.17
@@ -295,7 +226,6 @@ CRATES="
 	rstest_macros@0.25.0
 	rustc-demangle@0.1.26
 	rustc-hash@2.1.1
-	rustc_version@0.2.3
 	rustc_version@0.4.1
 	rustix@1.0.8
 	rustls-native-certs@0.8.1
@@ -311,8 +241,6 @@ CRATES="
 	scopeguard@1.2.0
 	security-framework-sys@2.17.0
 	security-framework@3.7.0
-	semver-parser@0.7.0
-	semver@0.9.0
 	semver@1.0.26
 	serde-wasm-bindgen@0.6.5
 	serde@1.0.228
@@ -320,38 +248,26 @@ CRATES="
 	serde_derive@1.0.228
 	serde_derive_internals@0.29.1
 	serde_json@1.0.142
-	serde_qs@0.8.5
 	serde_repr@0.1.20
 	serde_urlencoded@0.7.1
 	sha1@0.10.6
-	sha1@0.6.1
 	sha1_smol@1.0.1
-	sha2@0.9.9
 	shlex@1.3.0
 	simd-adler32@0.3.7
 	similar@2.7.0
 	slab@0.4.11
-	sluice@0.5.5
 	smallvec@1.15.1
 	smawk@0.3.2
 	socket2@0.5.10
 	socket2@0.6.0
 	spdx@0.10.9
-	spinning_top@0.2.5
 	stable_deref_trait@1.2.0
-	standback@0.2.17
-	stdweb-derive@0.5.3
-	stdweb-internal-macros@0.2.9
-	stdweb-internal-runtime@0.1.5
-	stdweb@0.4.20
 	strsim@0.11.1
 	subtle@2.6.1
-	surf@2.3.2
-	syn@1.0.109
 	syn@2.0.117
 	sync_wrapper@1.0.2
 	synstructure@0.13.2
-	tar@0.4.45
+	tar@0.4.46
 	tempfile@3.20.0
 	textwrap@0.16.2
 	thiserror-impl@1.0.69
@@ -359,9 +275,6 @@ CRATES="
 	thiserror@1.0.69
 	thiserror@2.0.12
 	time-core@0.1.8
-	time-macros-impl@0.1.2
-	time-macros@0.1.1
-	time@0.2.27
 	time@0.3.47
 	tinystr@0.8.1
 	tinyvec@1.9.0
@@ -383,20 +296,17 @@ CRATES="
 	tower@0.5.2
 	tracing-attributes@0.1.30
 	tracing-core@0.1.34
-	tracing-futures@0.2.5
 	tracing@0.1.41
 	try-lock@0.2.5
 	typed-builder-macro@0.21.0
 	typed-builder@0.21.0
 	typenum@1.18.0
 	ungrammar@1.16.1
-	unicase@2.8.1
 	unicode-ident@1.0.18
 	unicode-linebreak@0.1.5
 	unicode-segmentation@1.12.0
 	unicode-width@0.2.1
 	unicode-xid@0.2.6
-	universal-hash@0.4.0
 	unscanny@0.1.0
 	untrusted@0.9.0
 	url@2.5.4
@@ -404,16 +314,12 @@ CRATES="
 	utf8_iter@1.0.4
 	utf8parse@0.2.2
 	uuid@1.18.0
-	value-bag@1.11.1
-	vcpkg@0.2.15
 	version-ranges@0.1.1
 	version_check@0.9.5
-	waker-fn@1.2.0
 	walkdir@2.5.0
 	want@0.3.1
 	wasi@0.11.1+wasi-snapshot-preview1
 	wasi@0.14.2+wasi-0.2.4
-	wasi@0.9.0+wasi-snapshot-preview1
 	wasm-bindgen-backend@0.2.100
 	wasm-bindgen-futures@0.4.50
 	wasm-bindgen-macro-support@0.2.100
@@ -425,10 +331,7 @@ CRATES="
 	wasmparser@0.227.1
 	web-sys@0.3.77
 	web-time@1.1.0
-	winapi-i686-pc-windows-gnu@0.4.0
 	winapi-util@0.1.9
-	winapi-x86_64-pc-windows-gnu@0.4.0
-	winapi@0.3.9
 	windows-core@0.61.2
 	windows-implement@0.60.0
 	windows-interface@0.59.1
@@ -510,7 +413,9 @@ RESTRICT="mirror"
 # apply-crates-fixes start
 DEPEND="
 	>=app-arch/zstd-1.5.7
-	dev-libs/openssl
+"
+BDEPEND="
+	virtual/pkgconfig
 "
 RDEPEND="
 	>=app-arch/zstd-1.5.7
@@ -531,11 +436,9 @@ src_configure(){
 
 src_compile(){
 	export ZSTD_SYS_USE_PKG_CONFIG=1 # fix for zstd-sys crate
-	export OPENSSL_NO_VENDOR=1 # fix for openssl-sys
 	cargo_src_compile
 }
 # apply-crates-fixes end
-
 src_test(){
 	# these require network at the time of writing this, so that's why they're skipped {{{
 	local CARGO_SKIP_TESTS=(
