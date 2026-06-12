@@ -210,7 +210,7 @@ app-doc/stdman 2022.07.30 2024.07.05 9999: Formatted C++ stdlib man pages (cppre
 app-doc/sway-wiki 9999: Wiki of gui-wm/sway, rendered to HTML using kramdown-parser-gfm
 app-editors/edit 1.2.0: Microsoft edit
 app-editors/emacs-lsp-booster 0.2.1: Emacs LSP performance booster
-app-editors/fresh 0.3.7 0.3.8 0.3.10 0.3.12: Terminal based IDE & text editor: easy, powerful and fast
+app-editors/fresh 0.3.8 0.3.10 0.3.12 0.4.0: Terminal based IDE & text editor: easy, powerful and fast
 app-editors/imhex 1.38.1: A hex editor for reverse engineers, programmers, and eyesight
 app-editors/kakoune-lsp 18.1.0 21.0.0: Kakoune Language Server Protocol Client
 app-editors/l3afpad 0.8.18.1.11: Simple GTK3 text editor (successor to leafpad)
@@ -235,7 +235,7 @@ app-emulation/box86 0.3.0 0.3.6 9999: Linux Userspace x86 Emulator with a twist
 app-emulation/cloud-utils 0.33: Useful set of utilities for interacting with a cloud.
 app-emulation/darling 0.1.20260201 0.1.20260220 0.1.20260222: Translation layer for running macOS software on Linux
 app-emulation/looking-glass 1_beta6 1_beta7 9999: A low latency KVM FrameRelay implementation for guests with VGA PCI Passthrough
-app-emulation/lsfg-vk 1.0.0-r1 9999: Lossless Scaling Frame Generation on Linux via DXVK/Vulkan
+app-emulation/lsfg-vk 1.0.0-r2 9999: Lossless Scaling Frame Generation on Linux via DXVK/Vulkan
 app-emulation/quickemu 4.9.7 4.9.7-r1 4.9.9 9999: Create and run optimised Windows, macOS and Linux desktop virtual machines
 app-emulation/rars 1.6-r1: RARS -- RISC-V Assembler and Runtime Simulator
 app-emulation/tinyemu 0.2019.12.21: small and simple system emulator for the RISC-V and x86 architectures
@@ -877,6 +877,7 @@ dev-python/materialyoucolor 9999: Material You color algorithms for python!
 dev-python/mautrix 0.20.8 0.21.0: A Python 3 asyncio Matrix framework
 dev-python/mcp 1.26.0: Model Context Protocol SDK
 dev-python/mininet 2.3.0: Emulator for rapid prototyping of Software Defined Networks
+dev-python/minny 0.0.1_alpha2: Package and project manager for MicroPython and CircuitPython
 dev-python/mitype 0.2.6: Typing speed test in terminal
 dev-python/mkdocs-blog-plugin 9999: Plugin for MkDocs to keep a simple blog section inside your documentation.
 dev-python/mobi 0.3.3: Unpack unencrypted mobi files
@@ -1044,7 +1045,7 @@ dev-python/textual 8.2.5 8.2.6 8.2.7: Modern Text User Interface framework
 dev-python/textual-autocomplete 4.0.6: Easily add autocomplete dropdowns to your Textual apps
 dev-python/textual-dev 1.8.0: Modern Text User Interface framework
 dev-python/textual-serve 1.1.3: Serve Textual apps locally
-dev-python/thonny 4.1.7: Thonny is a Python IDE meant for learning programming
+dev-python/thonny 4.1.7 5.0.0: Thonny is a Python IDE meant for learning programming
 dev-python/tiktoken 0.12.0: A fast BPE tokeniser for use with OpenAI's models
 dev-python/tlv8 0.10.0: Type-Length-Value8 (TLV8) for python
 dev-python/toml 0.10.2: Python library for TOML
@@ -1093,7 +1094,7 @@ dev-util/bats-assert 2.2.0: Common assertions for Bats
 dev-util/bats-support 0.3.0: Supporting library for Bats test helpers
 dev-util/bc-ur 0.3.0: Blockchain Commons UR Library
 dev-util/bruno-bin 1.9.0 1.9.0-r1 3.0.2 3.1.4: Opensource IDE For Exploring and Testing Api's
-dev-util/bump-my-version 1.2.6 1.2.7: Version bump your Python project
+dev-util/bump-my-version 1.2.6 1.2.7 1.3.0: Version bump your Python project
 dev-util/cargo-post 0.1.7: A cargo wrapper that executes a post build script after a successful build.
 dev-util/cargo-show-asm 0.2.60: A cargo subcommand that displays the generated assembly of Rust source code.
 dev-util/catalyst-lab 1.6.0 1.6.1: An automation tool for building Gentoo release stages and binhost packages.
@@ -1158,7 +1159,7 @@ dev-util/quilttools 0.3-r1: Mailbox to quilt series converter
 dev-util/rexxd 2025.02.17: Drop-in replacement for the original xxd
 dev-util/riffdiff 3.6.1: Diff filter highlighting changed line parts
 dev-util/rtc-testbench 5.4: RTC Testbench is a set of tools for validating Ethernet networks
-dev-util/rust-rover 2024.2.1-r1 2025.2.1 2025.2.2 2025.2.3 2025.2.4.1 2025.2.5 2025.3 2025.3.1 2025.3.2 2025.3.3 2025.3.4 2026.1 2026.1.1: A feature-rich Rust IDE with timely support by JetBrarins
+dev-util/rust-rover 2026.1.1 2026.1.3: A feature-rich Rust IDE with timely support by JetBrarins
 dev-util/rust-script 0.36.0: Command-line tool to run Rust scripts which can make use of crates
 dev-util/rye 0.44.0: a Hassle-Free Python Experience
 dev-util/rz-ghidra 0.8.0: An integration of the Ghidra decompiler and Sleigh Disassembler for Rizin.
@@ -1256,7 +1257,7 @@ games-rpg/primordia 3.6.70667: A cyberpunk point-and-click adventure game
 games-rpg/snoot-game 1.12.0: Visual novel parody of Goodbye Volcano High
 games-server/among-sus 20210519: Among Us, but it's a text adventure
 games-simulation/kittenspaceagency-bin 2026.6.3-r4568: A space flight and rocketry simulation
-games-strategy/7k-ambition 3.2.9 9999: Seven Kingdoms: Ambition
+games-strategy/7k-ambition 3.2.10 9999: Seven Kingdoms: Ambition
 games-strategy/gigalomania 1.0.1: Libre clone of Mega-Lo-Mania (original from ~1990), supports original resources
 games-strategy/hedgewars 1.1.0_pre20260124: A turn-based strategy, artillery, action and comedy game
 games-strategy/slay-the-spire 2.2: Deck-building roguelike game with four playable characters
@@ -1265,7 +1266,7 @@ games-strategy/zedonline-bin 0.3.2-r1: A remake of the 1996 classic game Z, with
 games-util/NotEnoughProduction 0.0.4: Tool for building production chains for modded minecraft
 games-util/ProtonUp-Qt 2.12.0 2.13.0 9999: Install and manage GE-Proton, Luxtorpeda & more for Steam Lutris and Heroic.
 games-util/chiaki-ng 1.10.0 9999: Client for PlayStation 4 and PlayStation 5 Remote Play
-games-util/curseforge 1.302.0_p32990: The CurseForge Electron App
+games-util/curseforge 1.308.1_p34958: The CurseForge Electron App
 games-util/dwarf-therapist 41.2.5 42.1.5: For managing dwarves in Dwarf Fortress
 games-util/gamehub 0.16.3.2-r2: GameHub is a unified library for all your games
 games-util/goverlay 1.2: Graphical UI to help manage Linux game overlays (MangoHud).
@@ -1280,7 +1281,7 @@ games-util/libtess2 1.0.2: Game and tools oriented refactored version of GLU tes
 games-util/linuxtrack-qt6-wayland 1.4.10 9999: Modernized fork of Linuxtrack headtracking software
 games-util/mangohud 0.8.2-r1 0.8.3 9999: Vulkan and OpenGL overlay for monitoring FPS, sensors, system load and more
 games-util/minigalaxy 1.4.0: A simple GOG client for Linux
-games-util/modrinth-app-bin 0.10.27 0.12.2 0.12.5: A unique, open source launcher that allows you to play your favorite Minecraft mods, and keep them up to date, all in one neat little package.
+games-util/modrinth-app-bin 0.10.27 0.12.2 0.12.5 0.14.5: Open source launcher letting you play and update your favourite Minecraft mods.
 games-util/oversteer 0.8.3 9999: Steering Wheel Manager for Linux
 games-util/protonplus 0.5.19: A modern compatibility tools manager
 games-util/protonup 0.1.5 9999: Install and Update Proton-GE
@@ -1442,7 +1443,7 @@ gui-libs/scenefx 0.4.1 9999: A replacement for the wlroots scene API with eye-ca
 gui-libs/xdg-desktop-portal-termfilechooser 1.4.1: xdg-desktop-portal backend for choosing files with your favorite file chooser
 gui-wm/beansprout 1.1.1 9999: A tiling window manager for the river Wayland compositor
 gui-wm/cage 0.2.1 0.3.0 9999: A Wayland kiosk
-gui-wm/canoe 0.4.0: Canoe, a River window manager implementation in Rust
+gui-wm/canoe 0.5.1: Canoe, a River window manager implementation in Rust
 gui-wm/kwm 0.3.0 9999: A window manager based on River Wayland compositor
 gui-wm/mangowm 0.14.2 9999: wayland compositor based on wlroots and scenefx(dwl but no suckless)
 gui-wm/miracle-wm 0.9.1: Tiling Wayland compositor based on Mir
@@ -1851,7 +1852,7 @@ net-proxy/MTProxy 3.0.4-r1: Community fork of MTProxy
 net-proxy/Throne 1.1.4 1.1.5: Qt based cross-platform GUI proxy configuration manager
 net-proxy/byedpi 0.17.2 0.17.3 9999: Bypass DPI SOCKS proxy
 net-proxy/dnss 0.1.1 9999: A small, speedy DNS proxy and bad-stuff-blocker
-net-proxy/ngrok-bin 3.39.1: ngrok is a reverse proxy, firewall, and API gateway
+net-proxy/ngrok-bin 3.39.7: ngrok is a reverse proxy, firewall, and API gateway
 net-proxy/opera-proxy 1.15.0: Standalone Opera VPN proxies client
 net-proxy/shadowsocks-rust 1.22.0: A Rust port of shadowsocks
 net-proxy/snowflake 2.11.0-r1 2.12.1: Pluggable Transport using WebRTC, inspired by Flashproxy
@@ -2136,7 +2137,7 @@ www-misc/waldl 0.0.1_pre20211112: Browse and download wallpapers from wallhaven.
 www-misc/wyebadblock 1.0.0_p20230211: An adblock extension for wyeb, also webkit2gtk browsers.
 www-plugins/firefoxpwa 2.17.2 2.18.0 2.18.2: A tool to install, manage and use PWAs in Mozilla Firefox (native component)
 www-plugins/tridactyl-native 0.5.0: Native messenger for Tridactyl, a vim-like web-extension
-www-servers/copyparty 1.20.12 1.20.13-r1: Easy-to-use, feature-packed, protable file server
+www-servers/copyparty 1.20.13-r1 1.20.16: Easy-to-use, feature-packed, protable file server
 www-servers/darkhttpd 1.17: When you need a web server in a hurry
 www-servers/hinsightd 0.9.17 9999: hinsightd a http/1.1 webserver with (hopefully) minimal goals
 www-servers/quark 0_pre20220817 9999: A small, GET-only static HTTP server
