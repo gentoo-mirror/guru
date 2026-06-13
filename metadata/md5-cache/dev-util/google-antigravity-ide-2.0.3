@@ -1,15 +1,15 @@
-DEFINED_PHASES=install postinst postrm preinst prepare pretend setup unpack
+DEFINED_PHASES=install postinst postrm preinst prepare setup unpack
 DESCRIPTION=Google Antigravity's Editor view with context-aware agent
 EAPI=8
 HOMEPAGE=https://antigravity.google/
 IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
 INHERIT=chromium-2 desktop optfeature pax-utils shell-completion xdg
 IUSE=kerberos webkit +l10n_af +l10n_am +l10n_ar +l10n_bg +l10n_bn +l10n_ca +l10n_cs +l10n_da +l10n_de +l10n_el +l10n_en-GB +l10n_en-US +l10n_es-419 +l10n_es +l10n_et +l10n_fa +l10n_fi +l10n_fil +l10n_fr +l10n_gu +l10n_he +l10n_hi +l10n_hr +l10n_hu +l10n_id +l10n_it +l10n_ja +l10n_kn +l10n_ko +l10n_lt +l10n_lv +l10n_ml +l10n_mr +l10n_ms +l10n_nb +l10n_nl +l10n_pl +l10n_pt-BR +l10n_pt-PT +l10n_ro +l10n_ru +l10n_sk +l10n_sl +l10n_sr +l10n_sv +l10n_sw +l10n_ta +l10n_te +l10n_th +l10n_tr +l10n_uk +l10n_ur +l10n_vi +l10n_zh-CN +l10n_zh-TW
-KEYWORDS=~amd64 ~arm64
+KEYWORDS=-* ~amd64 ~arm64
 LICENSE=all-rights-reserved
 RDEPEND=|| ( sys-apps/systemd sys-apps/systemd-utils ) >=app-accessibility/at-spi2-core-2.46.0:2 app-crypt/libsecret[crypt] app-misc/ca-certificates dev-libs/expat dev-libs/glib:2 dev-libs/nspr dev-libs/nss media-libs/alsa-lib media-libs/libglvnd media-libs/mesa net-misc/curl net-print/cups sys-apps/dbus virtual/zlib:= sys-process/lsof x11-libs/cairo x11-libs/gtk+:3 x11-libs/libdrm x11-libs/libX11 x11-libs/libxcb x11-libs/libXcomposite x11-libs/libXdamage x11-libs/libXext x11-libs/libXfixes x11-libs/libxkbcommon x11-libs/libxkbfile x11-libs/libXrandr x11-libs/libXScrnSaver x11-libs/pango x11-misc/xdg-utils kerberos? ( app-crypt/mit-krb5 ) webkit? ( net-libs/libsoup:3.0 net-libs/webkit-gtk:4.1 )
 RESTRICT=bindist mirror strip
 SLOT=0
 SRC_URI=amd64? ( https://edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/stable/2.0.3-6242596486512640/linux-x64/Antigravity%20IDE.tar.gz -> google-antigravity-ide-2.0.3_amd64.tar.gz ) arm64? ( https://edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/stable/2.0.3-6242596486512640/linux-arm/Antigravity%20IDE.tar.gz -> google-antigravity-ide-2.0.3_arm64.tar.gz )
 _eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	linux-info	efd923656513c879204fec6638eadee5	chromium-2	6be3cf193def84c82ddae5c1f21ddbe5	desktop	26d57169ca094c04be416993844ec8bc	optfeature	538bce96e5589935b57e178e8635f301	pax-utils	5555f2e75744739fe100ee62c22d28fe	bash-completion-r1	9e91505e030725688d1e953321a47501	shell-completion	0b655d0d825e157a5e99c463bddaac16	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575
-_md5_=cbb57aa52d942761dfae1d6253c0fa84
+_md5_=025f20c63bbcbb3b73cf1bcf57d3baab
