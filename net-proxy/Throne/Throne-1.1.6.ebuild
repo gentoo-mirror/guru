@@ -37,7 +37,6 @@ BDEPEND="
 PATCHES=(
 	"${FILESDIR}/${PN}-1.0.0-use-system-QHotkey.patch"
 	"${FILESDIR}/${PN}-1.1.1-dont-treat-warnings-as-errors.patch"
-	"${FILESDIR}/${PN}-1.1.1-store-the-database-in-AppConfigLocation-by-default.patch"
 	"${FILESDIR}/${PN}-1.1.1-use-system-quirc.patch"
 )
 
