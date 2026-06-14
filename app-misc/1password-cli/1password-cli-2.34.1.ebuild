@@ -16,10 +16,14 @@ SLOT="0"
 KEYWORDS="-* ~amd64 ~arm64"
 RESTRICT="strip test bindist"
 
+DEPEND="acct-group/onepassword-cli"
 BDEPEND="app-arch/unzip"
 
 QA_FLAGS_IGNORED="usr/bin/op"
 
 src_install() {
 	dobin op
+
+	chgrp onepassword-cli "${D}/usr/bin/op" || die "Failed to set group of 1password CLI"
+	fperms g+s "/usr/bin/op"
 }
