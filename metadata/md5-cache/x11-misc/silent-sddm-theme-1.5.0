@@ -1,12 +1,10 @@
-BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
-DEFINED_PHASES=install postinst unpack
+DEFINED_PHASES=install postinst
 DESCRIPTION=Highly customizable SDDM theme
 EAPI=8
 HOMEPAGE=https://github.com/uiriansan/SilentSDDM
-INHERIT=git-r3
+KEYWORDS=~amd64
 LICENSE=GPL-3
-PROPERTIES=live
 RDEPEND=x11-misc/sddm media-fonts/redhat[otf,variable,redhatmono,redhatdisplay,redhattext] >=dev-qt/qtsvg-6.10.1 >=dev-qt/qtvirtualkeyboard-6.10.1 >=dev-qt/qtmultimedia-6.10.1-r1 >=dev-qt/qtimageformats-6.10.3
 SLOT=0
-_eclasses_=git-r3	2f8cdb10b033f92c3136aa6488a31c98
+SRC_URI=https://github.com/uiriansan/SilentSDDM/archive/refs/tags/v1.5.0.tar.gz -> silent-sddm-theme-1.5.0.tar.gz
 _md5_=48d747f4c7da890e945ea2664daad8d0
