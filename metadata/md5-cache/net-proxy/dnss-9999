@@ -1,14 +1,11 @@
-BDEPEND=|| ( dev-lang/zig:0.16 dev-lang/zig-bin:0.16 ) virtual/pkgconfig virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=|| ( dev-lang/zig:0.16 dev-lang/zig-bin:0.16 ) virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install prepare setup test unpack
-DEPEND=openrc? ( sys-apps/openrc ) systemd? ( sys-apps/systemd )
 DESCRIPTION=A small, speedy DNS proxy and bad-stuff-blocker
 EAPI=8
 HOMEPAGE=https://codeberg.org/zacoons/dnss
-INHERIT=zig systemd git-r3
-IUSE=openrc systemd
+INHERIT=zig git-r3
 LICENSE=Unlicense
 PROPERTIES=live
-RDEPEND=openrc? ( sys-apps/openrc ) systemd? ( sys-apps/systemd )
 SLOT=0
-_eclasses_=multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	edo	a5e294016aa84979fcb2459749eb80b2	toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	linux-info	efd923656513c879204fec6638eadee5	zig-utils	cf2ce10a519a93e5074f21f58d06aaae	zig	fd63b54c5a3cec5302ed2c18a763a851	systemd	a964c0cbe818b5729da1dbfcee5be861	git-r3	2f8cdb10b033f92c3136aa6488a31c98
-_md5_=eb90bcac2bd6ea3b5b97cb3dd4c5a7d9
+_eclasses_=multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	edo	a5e294016aa84979fcb2459749eb80b2	toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	linux-info	efd923656513c879204fec6638eadee5	zig-utils	cf2ce10a519a93e5074f21f58d06aaae	zig	fd63b54c5a3cec5302ed2c18a763a851	git-r3	2f8cdb10b033f92c3136aa6488a31c98
+_md5_=f1d04447f31f6a406842b5ea3b6db790

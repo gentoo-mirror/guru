@@ -283,7 +283,7 @@ app-misc/dragon 1.2.0-r1: Simple drag-and-drop source/sink for X and Wayland
 app-misc/durdraw 0.29.0: Versatile ASCII and ANSI Art text editor for drawing
 app-misc/electricsheep 3.0.4_p20240213 3.0.4_p20240213-r1: Realize the collective dream of sleeping computers from all over the internet
 app-misc/far2l 2.8.0_beta-r1 9999: Linux port of FAR Manager v2
-app-misc/fetch 2.0.0 9999: A donut.c-inspired fetch tool that spins your distro logo in 3D.
+app-misc/fetch 2.1.0 9999: A donut.c-inspired fetch tool that spins your distro logo in 3D.
 app-misc/fetsh 1.8 1.9 9999: A fetch written in POSIX shell without any external commands
 app-misc/fff 2.2: A simple file manager written in bash
 app-misc/gentodo 0.2.1 1.1.0 1.1.1 9999: Todo program to help enhance your Gentoo workflow
@@ -302,7 +302,7 @@ app-misc/kloak 0.2.30 0.3.7_p1 9999: A privacy tool that makes keystroke biometr
 app-misc/kmon 1.6.5 1.7.1: Linux kernel manager and activity monitor
 app-misc/krabby 0.3.0 9999: Print pokemon sprites in your terminal
 app-misc/ledger-live-bin 2.84.1: Manager for the Ledger hardware wallet
-app-misc/lf 33-r1 36 37 38-r1 9999: Terminal file manager
+app-misc/lf 37 38-r1 41 9999: Terminal file manager
 app-misc/libation 12.5.3: Libation: Free, open-source Audible library manager
 app-misc/lyfetch 1.1: Small system information script for linux systems.
 app-misc/macchina 6.4.0: A system information fetcher with an emphasis on performance.
@@ -562,7 +562,7 @@ dev-embedded/mv88e6xxx-dump 0.2.0_pre20210327: Dump information about Marvell mv
 dev-embedded/nxp-gui-guider 1.10.1: GUI Guider is a user-friendly GUI development tool for LVGL
 dev-embedded/pico-sdk 2.1.1 2.2.0: Libraries and tools for C/C++ development on RP2040 and RP2350 microcontrollers.
 dev-embedded/probe-rs-tools 0.31.0: A collection of on chip debugging tools to communicate with microchips.
-dev-embedded/qdl 2.5 2.6 9999: Tool to communicate with Qualcomm System On a Chip bootroms
+dev-embedded/qdl 2.7 9999: Tool to communicate with Qualcomm System On a Chip bootroms
 dev-embedded/rauc 1.15.2: Lightweight update client that runs on your Embedded Linux device
 dev-embedded/rpi-openocd 9999: OpenOCD - Open On-Chip Debugger (Raspberry Pi Fork)
 dev-embedded/squareline-studio 1.6.0 1.6.1: Visual drag-and-drop UI editor for LVGL
@@ -1103,6 +1103,7 @@ dev-util/coq-lsp 0.1.9: Visual Studio Code Extension and Language Server Protoco
 dev-util/deblob 0.12 9999: remove binary executables from a directory
 dev-util/distribution-gpg-keys 1.119: Collection of GPG keys used in Linux Distributions
 dev-util/dmg2img 9999 20201227: Convert Apple disk images to IMG format.
+dev-util/docker-language-server 0.20.1: Language server for Dockerfiles, Compose files, and Bake files
 dev-util/dockerfile-language-server 0.15.0: A language server for Dockerfiles
 dev-util/eclipse-parallel-bin 4.28: Eclipse IDE for Scientific Computing (C, C++, Fortran)
 dev-util/exercism 3.1.0 3.2.0: Command line client for https://exercism.io
@@ -1273,7 +1274,7 @@ games-util/goverlay 1.2: Graphical UI to help manage Linux game overlays (MangoH
 games-util/grapejuice 7.20.12 9999: A Wine+Roblox management application
 games-util/hid-nintendo 9999: A Nintendo HID kernel module
 games-util/hydra-launcher-bin 3.8.3 3.9.5 3.9.7 3.9.7-r1 3.9.9: Open-source gaming platform and launcher
-games-util/input-remapper 2.2.0 9999: A tool to change and program the mapping of your input device buttons
+games-util/input-remapper 2.2.1 9999: A tool to change and program the mapping of your input device buttons
 games-util/itch-bin 25.5.1-r2 26.1.9: itch.io game browser, installer and launcher
 games-util/legendary 0.20.34-r2: A free and open-source replacement for the Epic Games Launcher
 games-util/leshade 2.4.6 2.4.7 2.4.9 9999: A ReShade manager for Linux
@@ -1349,7 +1350,7 @@ gui-apps/gtklock 4.0.0: GTK-based lockscreen for Wayland
 gui-apps/gtklock-extras 9999: Gtklock modules
 gui-apps/heh 0.6.3: A cross-platform terminal UI used for modifying file data in hex or ASCII.
 gui-apps/hiprompt-gtk-py 0.8.0 9999: GTK+ Himitsu prompter for Wayland
-gui-apps/hyprmoncfg 1.5.1 1.5.2 1.6.0 1.7.0: Terminal-first monitor configurator and auto-switching daemon for Hyprland
+gui-apps/hyprmoncfg 1.5.1 1.5.2 1.6.0 1.7.0 1.7.1: Terminal-first monitor configurator and auto-switching daemon for Hyprland
 gui-apps/hyprnome 0.3.0: GNOME-like workspace switching in Hyprland.
 gui-apps/hyprswitch 1.3.1: A CLI/GUI that allows switching between windows in Hyprland
 gui-apps/intiface-central-bin 2.6.0 2.6.4: Buttplug frontend application
@@ -1364,7 +1365,7 @@ gui-apps/lswt 1.0.4-r1 2.0.0 9999: List Wayland toplevels
 gui-apps/meteo-qt 4.2 4.3: A system tray application for the weather status
 gui-apps/mpvpaper 1.8 9999: A video wallpaper program for wlroots based wayland compositors
 gui-apps/niri-sidebar 0.4.0: A lightweight, external sidebar manager for the Niri window manager.
-gui-apps/noctalia 4.7.6 4.7.7 5.0.0_pre20260531 5.0.0_pre99999999 9999: A sleek and minimal desktop shell thoughtfully crafted for Wayland
+gui-apps/noctalia 4.7.6 4.7.7 5.0.0_pre20260614 5.0.0_pre99999999 9999: A sleek and minimal desktop shell thoughtfully crafted for Wayland
 gui-apps/noctalia-qs 0.0.11 0.0.12 9999: Toolkit for building desktop widgets using QtQuick
 gui-apps/nwg 0: meta package package for nwg-shell
 gui-apps/nwg-bar 0.1.5 0.1.6: GTK3-based button bar for wlroots-based compositors
@@ -1593,7 +1594,7 @@ media-sound/neocrystal 2.1.1 9999: A terminal user interface music player in Rus
 media-sound/netcat-cpi 2014.04.29-r1: Kernel module edition of the Cycles Per Instruction (2014) album
 media-sound/noson-app 5.6.20: The essential to control music from your SONOS devices on Linux platforms
 media-sound/nuclear-bin 1.39.0 1.40.0: Streaming music player that finds free music for you
-media-sound/openaudible-bin 4.8.1 4.8.2: OpenAudible is a cross-platform audiobook manager designed for Audible users.
+media-sound/openaudible-bin 4.8.2 4.8.3: OpenAudible is a cross-platform audiobook manager designed for Audible users.
 media-sound/opensoundmeter 1.2.1 1.2.2 1.2.2_p20230104: FFT based application for tuning sound systems
 media-sound/openutau 0.1.327 0.1.463 0.1.529 9999: Open source UTAU successor
 media-sound/orca-c 0_pre20250416-r1 9999: Live Programming Environment(C Port)
@@ -1606,7 +1607,7 @@ media-sound/plexamp 4.13.0: A dedicated music player for your Plex media library
 media-sound/qbitmplayer 3.1.2 3.2.0-r1 3.3.1: Music Player written in C++ & Qt.
 media-sound/qloud 1.4.2: Tool to measure loudspeaker frequency and step responses and distortions
 media-sound/qobuz-player 0.10.0 2026.05.03 2026.06.12: Tui, web and rfid player for Qobuz
-media-sound/rmpc 0.9.0 0.10.0 9999: A beautiful and configurable TUI client for MPD
+media-sound/rmpc 0.9.0 0.10.0 0.11.0 9999: A beautiful and configurable TUI client for MPD
 media-sound/rsgain 3.5.1-r1 3.5.3-r1: Really Simple replay Gain calculator for tagging audio files
 media-sound/shortwave 5.0.0 5.1.0: An internet radio player
 media-sound/songrec 0.7.3: An open-source Shazam client for Linux, written in Rust.
@@ -1745,7 +1746,7 @@ net-im/why2 1.5.3: Lightweight, fast and secure chat application powered by WHY2
 net-im/zapzap 6.2.10 6.3.4.1: WhatsApp desktop application written in PyQt6 + PyQt6-WebEngine
 net-im/zulip-desktop-bin 5.12.3: Organized chat for distributed teams.
 net-irc/catgirl 2.2 2.2a: TLS-only terminal IRC client
-net-irc/halloy 2026.5 2026.6 2026.6-r1: IRC application written in Rust
+net-irc/halloy 2026.7 2026.7.1 2026.7.2: IRC application written in Rust
 net-irc/limnoria-plugins-bugzilla 4.0: Bugzilla integration plugin for the Limnoria IRC Bot
 net-irc/litterbox 1.9: TLS-only IRC logger
 net-irc/pounce 3.0 3.1 3.1-r1: Multi-client, TLS-only IRC bouncer
@@ -1767,6 +1768,7 @@ net-libs/usockets 0.8.8 9999: tiny eventing, networking & crypto for async appli
 net-libs/yder 1.4.20-r1: Logging library for C applications
 net-mail/dovecot-fts-flatcurve 1.0.5: Dovecot FTS plugin to enable message indexing using Xapian
 net-mail/dovecot-fts-xapian 1.9.3 9999: Dovecot FTS plugin backed by Xapian
+net-mail/goimapnotify 2.5.5 9999: Execute scripts on IMAP mailbox changes using IDLE, golang version.
 net-mail/hydroxide 0.2.28 0.2.29 0.2.31 9999: A third-party, open-source ProtonMail CardDAV, IMAP and SMTP bridge
 net-mail/pop 0.2.0: Send emails from your terminal
 net-misc/FORT-validator 1.5.4-r2 1.6.1-r2 1.6.2-r2: FORT validator is an open source RPKI validator
@@ -1869,7 +1871,7 @@ net-vpn/amneziawg-modules 1.0.20251009 1.0.20260210: AmneziaWG Linux kernel modu
 net-vpn/amneziawg-tools 1.0.20250903 1.0.20260223: Required tools for AmneziaWG, such as awg(8) and awg-quick(8)
 net-vpn/fastd 22 23: A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
 net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that require SAML
-net-vpn/mullvadvpn-app 2026.2 2026.3_beta1 2026.3_beta2 2026.3_beta3: Tool used to manage daemon setup
+net-vpn/mullvadvpn-app 2026.3: Tool used to manage daemon setup
 net-vpn/proton-vpn-gtk-app 4.15.2: Proton VPN GTK app
 net-vpn/vtun-embedded 3.1.0-r1: Create tunnels over TCP/IP networks with shaping, encryption, and compression
 net-vpn/vtun-ng 3.0.22 3.1.0: Create tunnels over TCP/IP networks with shaping, encryption, and compression
