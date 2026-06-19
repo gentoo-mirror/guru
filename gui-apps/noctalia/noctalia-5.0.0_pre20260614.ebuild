@@ -5,7 +5,7 @@ EAPI=8
 
 inherit meson optfeature
 
-MY_COMMIT="298fad1678d23c964aa8ea56bfe9dc3c84eed6a4"
+MY_COMMIT="cc1983d065ba2725214dc2ad7b597554c5f21856"
 
 DESCRIPTION="A lightweight Wayland shell and bar built directly on Wayland + OpenGL ES"
 HOMEPAGE="https://noctalia.dev/ https://github.com/noctalia-dev/noctalia"

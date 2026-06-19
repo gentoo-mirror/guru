@@ -14,10 +14,10 @@ S="${WORKDIR}/wezterm"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS=""
 IUSE="wayland"
 
-RESTRICT="mirror strip"
+RESTRICT="mirror strip network-sandbox"
 
 BDEPEND="
 	net-misc/wget

@@ -3,9 +3,7 @@
 
 EAPI=8
 
-# Note: 2.2.0 has Python 3.14 support (https://github.com/sezanzeb/input-remapper/pull/1184)
-# however not all dependencies have ebuilds with 3.14 support yet. (dev-python/pydbus-0.6.0-r1)
-PYTHON_COMPAT=( python3_{12..13} )
+PYTHON_COMPAT=( python3_{12..14} )
 DISTUTILS_SINGLE_IMPL=1
 DISTUTILS_USE_PEP517=setuptools
 
@@ -20,27 +18,35 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 PATCHES=(
-	"${FILESDIR}/remove-non-python-files-from-setup.patch"
-	"${FILESDIR}/fix-translations.patch"
+	"${FILESDIR}/build-backend.patch"
+	"${FILESDIR}/mo-files.patch"
 )
 
 RDEPEND="
 	x11-libs/gtk+:3
+	sys-devel/gettext
 	x11-libs/gtksourceview
 	x11-apps/xmodmap
 	$(python_gen_cond_dep '
 		dev-python/pygobject[${PYTHON_USEDEP}]
-		dev-python/pydbus[${PYTHON_USEDEP}]
+		dev-python/dasbus[${PYTHON_USEDEP}]
 		dev-python/pydantic[${PYTHON_USEDEP}]
 		dev-python/psutil[${PYTHON_USEDEP}]
 		>=dev-python/evdev-1.3.0[${PYTHON_USEDEP}]
-		dev-python/setuptools[${PYTHON_USEDEP}]
-		dev-python/pkg-resources[${PYTHON_USEDEP}]
 	')
 	virtual/udev
 "
 
 RESTRICT=test
+
+src_compile() {
+	distutils-r1_src_compile
+
+	# With setup.py gone this needs to be manually executed.
+	# "mo-files.patch" makes language.py executable standalone
+	# and updates the output path to "${S}"/mo
+	python "${S}/install/language.py"
+}
 
 src_install() {
 	# Install data files
@@ -49,7 +55,7 @@ src_install() {
 
 	# Install lang files
 	insinto /usr/share/input-remapper/lang
-	doins -r "${S}"/mo/*
+	doins -r "${S}"/mo/lang/*
 
 	# Install udev rules
 	udev_dorules data/99-input-remapper.rules
@@ -91,17 +97,11 @@ src_install() {
 }
 
 pkg_postinst() {
-	xdg_icon_cache_update
+	xdg_pkg_postinst
 	udev_reload
-
-	einfo ""
-	einfo "This version of input-remapper relies on reprecated dependencies (dev-python/pkg-resources) and additionally cannot support python 3.14."
-	einfo ""
-	einfo "It is recommended to switch to the live ebuild, where both of these issues have been fixed, until the author releases a new version."
-	einfo ""
 }
 
 pkg_postrm() {
-	xdg_icon_cache_update
+	xdg_pkg_postrm
 	udev_reload
 }

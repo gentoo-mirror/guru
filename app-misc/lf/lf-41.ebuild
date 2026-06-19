@@ -7,15 +7,35 @@ inherit go-module shell-completion desktop xdg
 
 DESCRIPTION="Terminal file manager"
 HOMEPAGE="https://github.com/gokcehan/lf"
-SRC_URI="https://github.com/gokcehan/lf/archive/r${PV}.tar.gz -> ${P}.tar.gz"
-SRC_URI+=" https://github.com/ephemer4l/gentoo-lf/raw/main/${P}-vendor.tar.xz"
-S="${WORKDIR}/${PN}-r${PV}"
+
+if [[ "${PV}" == 9999 ]]; then
+	inherit git-r3
+	EGIT_REPO_URI="https://github.com/gokcehan/lf.git"
+else
+	KEYWORDS="~amd64 ~arm ~arm64 ~x86"
+	SRC_URI="
+	https://github.com/gokcehan/${PN}/archive/refs/tags/r${PV}.tar.gz -> ${P}.tar.gz
+	https://github.com/ingenarel/guru-depfiles/releases/download/${P}-deps.tar.xz/${P}-go-mod-deps.tar.xz ->
+	${P}-deps.tar.xz
+	"
+	S="${WORKDIR}/${PN}-r${PV}"
+fi
 
 LICENSE="MIT"
+#gentoo-go-license lf-9999.ebuild
+LICENSE+=" Apache-2.0 BSD MIT "
+# dependency licenses
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~arm64 ~x86"
-
 IUSE="+static"
+
+src_unpack() {
+	if [[ "${PV}" == 9999 ]];then
+		git-r3_src_unpack
+		go-module_live_vendor
+	else
+		default
+	fi
+}
 
 src_compile() {
 	local ldflags="-w -X main.gVersion=r${PV}"

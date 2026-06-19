@@ -1,10 +1,11 @@
-# Copyright 1999-2026 Gentoo Authors
+# Copyright 2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 PYTHON_COMPAT=( python3_{11..14} )
 DISTUTILS_USE_PEP517=setuptools
+DISTUTILS_SINGLE_IMPL=1
 
 inherit distutils-r1 xdg desktop
 
@@ -23,41 +24,45 @@ KEYWORDS="~amd64 ~x86"
 
 IUSE="test"
 RESTRICT="!test? ( test )"
-
-DEPEND="
-	test? (
-		dev-python/pylint[${PYTHON_USEDEP}]
-	)
-"
+PROPERTIES="test_network"
 
 RDEPEND="
-	x11-libs/libnotify[introspection]
-	dev-python/configobj[${PYTHON_USEDEP}]
-	media-libs/gexiv2[introspection]
-	dev-python/pycurl[${PYTHON_USEDEP}]
-	x11-libs/gtk+:3[introspection]
-	dev-python/dbus-python[${PYTHON_USEDEP}]
-	x11-libs/pango[introspection]
-	dev-python/pygobject:3[${PYTHON_USEDEP},cairo]
-	dev-python/pillow[${PYTHON_USEDEP}]
-	x11-libs/gdk-pixbuf:2[introspection]
-	dev-python/lxml[${PYTHON_USEDEP}]
-	dev-python/beautifulsoup4[${PYTHON_USEDEP}]
-	net-libs/webkit-gtk[introspection]
+	$(python_gen_cond_dep '
+		dev-python/beautifulsoup4[${PYTHON_USEDEP}]
+		dev-python/configobj[${PYTHON_USEDEP}]
+		dev-python/dbus-python[${PYTHON_USEDEP}]
+		dev-python/httplib2[${PYTHON_USEDEP}]
+		dev-python/lxml[${PYTHON_USEDEP}]
+		dev-python/packaging[${PYTHON_USEDEP}]
+		dev-python/pillow[${PYTHON_USEDEP}]
+		dev-python/pycurl[${PYTHON_USEDEP}]
+		dev-python/pygobject:3[${PYTHON_USEDEP},cairo]
+		dev-python/requests[${PYTHON_USEDEP}]
+	')
+
 	media-gfx/imagemagick
-	dev-python/httplib2[${PYTHON_USEDEP}]
-	dev-python/requests[${PYTHON_USEDEP}]
-	dev-python/packaging[${PYTHON_USEDEP}]
+	media-libs/gexiv2[introspection]
+	net-libs/webkit-gtk[introspection]
+	x11-libs/gdk-pixbuf:2[introspection]
+	x11-libs/gtk+:3[introspection]
+	x11-libs/libnotify[introspection]
+	x11-libs/pango[introspection]
 "
 
 BDEPEND="
 	sys-devel/gettext
 	test? (
-		dev-python/pylint[${PYTHON_USEDEP}]
+		$(python_gen_cond_dep '
+			dev-python/pylint[${PYTHON_USEDEP}]
+		')
 	)
 "
 
-python_prepare_all() {
+pkg_setup() {
+	python-single-r1_pkg_setup
+}
+
+src_prepare() {
 	# Remove upstream documentation to avoid incorrect installation paths
 	rm -f README.md CONTRIBUTING.md AUTHORS || die
 	rm -f data/ui/changes.txt || die
@@ -69,7 +74,7 @@ EOF
 
 	# Patch setup.py robustly so setuptools does not try to package
 	# variety/data and trigger namespace/package QA warnings.
-	python3 - <<'PY' || die
+	"${EPYTHON}" - <<'PY' || die
 from pathlib import Path
 p = Path("setup.py")
 text = p.read_text()
@@ -90,7 +95,7 @@ p.write_text(text)
 PY
 
 	# Silence deprecated PEP621 license table warning
-	python3 - <<'PY' || die
+	"${EPYTHON}" - <<'PY' || die
 from pathlib import Path
 p = Path("pyproject.toml")
 text = p.read_text()
@@ -102,7 +107,7 @@ p.write_text(text)
 PY
 
 	# Patch varietyconfig.py to make runtime data lookup use /usr/share/variety instead of package resources
-	python3 - <<'PY' || die "Failed to patch varietyconfig.py"
+	"${EPYTHON}" - <<'PY' || die "Failed to patch varietyconfig.py"
 import re
 import sys
 from pathlib import Path
@@ -126,7 +131,7 @@ if count == 0:
 p.write_text(text)
 PY
 
-	distutils-r1_python_prepare_all
+	distutils-r1_src_prepare
 }
 
 python_test() {

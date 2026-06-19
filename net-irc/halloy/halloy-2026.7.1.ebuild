@@ -71,18 +71,19 @@ CRATES="
 	bincode@1.3.3
 	bincode@2.0.1
 	bit-set@0.8.0
+	bit-set@0.9.1
 	bit-vec@0.8.0
+	bit-vec@0.9.1
 	bit_field@0.10.3
 	bitflags@1.3.2
 	bitflags@2.11.0
-	bitstream-io@4.9.0
+	bitstream-io@4.10.0
 	bitvec@1.0.1
 	blanket@0.3.0
 	block-buffer@0.10.4
 	block-buffer@0.12.0
 	block2@0.5.1
 	block2@0.6.2
-	block@0.1.6
 	blocking@1.6.2
 	bstr@1.12.1
 	built@0.8.0
@@ -113,13 +114,13 @@ CRATES="
 	clipboard_x11@0.4.3
 	cmake@0.1.58
 	coarsetime@0.1.37
-	codespan-reporting@0.12.0
+	codespan-reporting@0.13.1
 	color_quant@1.1.0
 	combine@4.6.7
 	concurrent-queue@2.5.0
 	const-oid@0.10.2
 	const-oid@0.9.6
-	const_format@0.2.35
+	const_format@0.2.36
 	const_format_proc_macros@0.2.34
 	convert_case@0.10.0
 	cookie-factory@0.3.3
@@ -127,12 +128,10 @@ CRATES="
 	core-foundation@0.10.1
 	core-foundation@0.9.4
 	core-graphics-types@0.1.3
-	core-graphics-types@0.2.0
 	core-graphics@0.23.2
-	core2@0.4.0
 	core_maths@0.1.1
 	coreaudio-rs@0.13.0
-	cosmic-text@0.18.2
+	cosmic-text@0.19.0
 	cpal@0.16.0
 	cpufeatures@0.2.17
 	cpufeatures@0.3.0
@@ -196,8 +195,8 @@ CRATES="
 	either@1.15.0
 	elliptic-curve@0.13.8
 	embed-resource@2.5.2
-	embed-resource@3.0.8
-	emojis@0.8.0
+	embed-resource@3.0.9
+	emojis@0.8.1
 	encoding_rs@0.8.35
 	endi@1.1.1
 	enum-ordinalize@3.1.15
@@ -220,7 +219,7 @@ CRATES="
 	extended@0.1.0
 	fallible-iterator@0.3.0
 	fallible-streaming-iterator@0.1.9
-	fancy-regex@0.17.0
+	fancy-regex@0.18.0
 	fast-socks5@1.0.0
 	fast-srgb8@1.0.0
 	fastrand@2.3.0
@@ -233,6 +232,7 @@ CRATES="
 	figment@0.10.19
 	filetime@0.2.27
 	find-msvc-tools@0.1.9
+	fixedbitset@0.5.7
 	flate2@1.1.9
 	float-cmp@0.9.0
 	fluid-let@1.0.0
@@ -273,7 +273,7 @@ CRATES="
 	gl_generator@0.14.0
 	glam@0.25.0
 	glob-match@0.2.1
-	glow@0.16.0
+	glow@0.17.0
 	glutin_wgl_sys@0.6.1
 	gpu-allocator@0.28.0
 	gpu-descriptor-types@0.2.0
@@ -286,6 +286,7 @@ CRATES="
 	hashbrown@0.12.3
 	hashbrown@0.15.5
 	hashbrown@0.16.1
+	hashbrown@0.17.0
 	hashlink@0.11.0
 	heck@0.4.1
 	heck@0.5.0
@@ -326,8 +327,8 @@ CRATES="
 	imara-diff@0.2.0
 	imgref@1.12.0
 	indexmap@1.9.3
-	indexmap@2.13.0
-	infer@0.16.0
+	indexmap@2.14.0
+	infer@0.19.0
 	inotify-sys@0.1.5
 	inotify@0.11.1
 	inout@0.1.4
@@ -354,6 +355,8 @@ CRATES="
 	keccak@0.1.6
 	khronos-egl@6.0.0
 	khronos_api@3.1.0
+	konst@0.2.20
+	konst_macro_rules@0.2.19
 	kqueue-sys@1.0.4
 	kqueue@1.1.1
 	kurbo@0.10.4
@@ -381,14 +384,12 @@ CRATES="
 	lzma-sys@0.1.20
 	mac-notification-sys@0.6.12
 	mach2@0.4.3
-	malloc_buf@0.0.6
 	matchers@0.2.0
 	maybe-rayon@0.1.1
 	memchr@2.8.0
 	memmap2@0.9.10
 	memoffset@0.9.1
 	merlin@3.0.0
-	metal@0.33.0
 	mime@0.3.17
 	mime_guess@2.0.5
 	minimal-lexical@0.2.1
@@ -397,16 +398,17 @@ CRATES="
 	moxcms@0.8.1
 	mundy@0.1.10
 	mutate_once@0.1.2
-	naga@28.0.0
+	naga@29.0.3
 	ndk-context@0.1.1
 	ndk-sys@0.6.0+11769913
 	ndk@0.9.0
 	new_debug_unreachable@1.0.6
+	no_std_io2@0.9.3
 	nom@7.1.3
 	nom@8.0.0
 	nonany@0.3.0
 	noop_proc_macro@0.3.0
-	notify-rust@4.12.0
+	notify-rust@4.16.1
 	notify-types@2.1.0
 	notify@8.2.0
 	ntapi@0.4.3
@@ -456,16 +458,16 @@ CRATES="
 	objc2-user-notifications@0.2.2
 	objc2@0.5.2
 	objc2@0.6.4
-	objc@0.2.7
 	once_cell@1.21.4
 	oneshot-fused-workaround@0.6.0
-	open@5.3.3
+	open@5.3.4
 	openssl-probe@0.2.1
 	option-ext@0.2.0
 	orbclient@0.3.51
 	ordered-float@2.10.1
 	ordered-float@5.3.0
 	ordered-stream@0.2.0
+	os_pipe@1.2.3
 	os_str_bytes@6.6.1
 	ouroboros@0.18.5
 	ouroboros_macro@0.18.5
@@ -483,6 +485,7 @@ CRATES="
 	pathdiff@0.2.3
 	pem-rfc7468@0.7.0
 	percent-encoding@2.3.2
+	petgraph@0.8.3
 	phf@0.11.3
 	phf@0.13.1
 	phf_generator@0.11.3
@@ -552,6 +555,7 @@ CRATES="
 	rav1e@0.8.1
 	ravif@0.13.0
 	raw-window-handle@0.6.2
+	raw-window-metal@1.1.0
 	rayon-core@1.13.0
 	rayon@1.11.0
 	rdrand@0.8.3
@@ -567,7 +571,7 @@ CRATES="
 	regex-syntax@0.8.10
 	regex@1.12.3
 	renderdoc-sys@1.1.0
-	reqwest@0.13.2
+	reqwest@0.13.3
 	resvg@0.45.1
 	retry-error@0.12.0
 	rfc6979@0.4.0
@@ -589,7 +593,7 @@ CRATES="
 	rustls-pki-types@1.14.0
 	rustls-platform-verifier-android@0.1.1
 	rustls-platform-verifier@0.6.2
-	rustls-webpki@0.103.12
+	rustls-webpki@0.103.13
 	rustls@0.23.37
 	rustversion@1.0.22
 	rustybuzz@0.20.1
@@ -653,7 +657,7 @@ CRATES="
 	softbuffer@0.4.8
 	spin@0.9.8
 	spinning@0.1.0
-	spirv@0.3.0+sdk-1.3.268.0
+	spirv@0.4.0+sdk-1.4.341.0
 	spki@0.7.3
 	sqlite-wasm-rs@0.5.2
 	ssh-cipher-fork-arti@0.2.0
@@ -714,20 +718,19 @@ CRATES="
 	tinyvec@1.11.0
 	tinyvec_macros@0.1.1
 	to_method@1.1.0
-	tokio-macros@2.6.1
+	tokio-macros@2.7.0
 	tokio-rustls@0.26.4
 	tokio-stream@0.1.18
+	tokio-tungstenite@0.28.0
 	tokio-util@0.7.18
-	tokio@1.50.0
+	tokio@1.52.1
 	toml@0.8.23
-	toml@0.9.12+spec-1.1.0
-	toml@1.1.1+spec-1.1.0
+	toml@1.1.2+spec-1.1.0
 	toml_datetime@0.6.11
-	toml_datetime@0.7.5+spec-1.1.0
 	toml_datetime@1.1.1+spec-1.1.0
 	toml_edit@0.22.27
 	toml_edit@0.25.9+spec-1.1.0
-	toml_parser@1.1.1+spec-1.1.0
+	toml_parser@1.1.2+spec-1.1.0
 	toml_write@0.1.2
 	toml_writer@1.1.1+spec-1.1.0
 	tor-async-utils@0.41.0
@@ -778,8 +781,10 @@ CRATES="
 	tracing-test-macro@0.2.6
 	tracing-test@0.2.6
 	tracing@0.1.44
+	tree_magic_mini@3.2.2
 	try-lock@0.2.5
 	ttf-parser@0.25.1
+	tungstenite@0.28.0
 	typed-index-collections@3.5.0
 	typeid@1.0.3
 	typenum@1.19.0
@@ -805,9 +810,10 @@ CRATES="
 	url@2.5.8
 	urlencoding@2.1.3
 	usvg@0.45.1
+	utf-8@0.7.6
 	utf8-width@0.1.8
 	utf8_iter@1.0.4
-	uuid@1.23.0
+	uuid@1.23.1
 	v_frame@0.3.9
 	valuable@0.1.1
 	vcpkg@0.2.15
@@ -849,13 +855,14 @@ CRATES="
 	web-time@1.1.0
 	webpki-root-certs@1.0.6
 	weezl@0.1.12
-	wgpu-core-deps-apple@28.0.0
-	wgpu-core-deps-emscripten@28.0.0
-	wgpu-core-deps-windows-linux-android@28.0.0
-	wgpu-core@28.0.1
-	wgpu-hal@28.0.1
-	wgpu-types@28.0.0
-	wgpu@28.0.0
+	wgpu-core-deps-apple@29.0.3
+	wgpu-core-deps-emscripten@29.0.3
+	wgpu-core-deps-windows-linux-android@29.0.3
+	wgpu-core@29.0.3
+	wgpu-hal@29.0.3
+	wgpu-naga-bridge@29.0.3
+	wgpu-types@29.0.3
+	wgpu@29.0.3
 	widestring@1.2.1
 	winapi-i686-pc-windows-gnu@0.4.0
 	winapi-util@0.1.11
@@ -942,6 +949,7 @@ CRATES="
 	wit-bindgen@0.51.0
 	wit-component@0.244.0
 	wit-parser@0.244.0
+	wl-clipboard-rs@0.9.3
 	writeable@0.6.2
 	wyz@0.5.1
 	x11-dl@2.21.0
@@ -989,22 +997,22 @@ CRATES="
 "
 
 declare -A GIT_CRATES=(
-	[cryoglyph]='https://github.com/iced-rs/cryoglyph;1d68895e9c4c9b73739f826e81c2e3012c155cce;cryoglyph-%commit%'
+	[cryoglyph]='https://github.com/iced-rs/cryoglyph;53ba3e879539d19ed8162942126a977ec896cc3b;cryoglyph-%commit%'
 	[dpi]='https://github.com/iced-rs/winit;05b8ff17a06562f0a10bb46e6eaacbe2a95cb5ed;winit-%commit%/dpi'
-	[iced]='https://github.com/squidowl/iced;6f4401a5e6f0ae6b75ecaf7fb667a49be7c3f49d;iced-%commit%'
-	[iced_beacon]='https://github.com/squidowl/iced;6f4401a5e6f0ae6b75ecaf7fb667a49be7c3f49d;iced-%commit%/beacon'
-	[iced_core]='https://github.com/squidowl/iced;6f4401a5e6f0ae6b75ecaf7fb667a49be7c3f49d;iced-%commit%/core'
-	[iced_debug]='https://github.com/squidowl/iced;6f4401a5e6f0ae6b75ecaf7fb667a49be7c3f49d;iced-%commit%/debug'
-	[iced_devtools]='https://github.com/squidowl/iced;6f4401a5e6f0ae6b75ecaf7fb667a49be7c3f49d;iced-%commit%/devtools'
-	[iced_futures]='https://github.com/squidowl/iced;6f4401a5e6f0ae6b75ecaf7fb667a49be7c3f49d;iced-%commit%/futures'
-	[iced_graphics]='https://github.com/squidowl/iced;6f4401a5e6f0ae6b75ecaf7fb667a49be7c3f49d;iced-%commit%/graphics'
-	[iced_program]='https://github.com/squidowl/iced;6f4401a5e6f0ae6b75ecaf7fb667a49be7c3f49d;iced-%commit%/program'
-	[iced_renderer]='https://github.com/squidowl/iced;6f4401a5e6f0ae6b75ecaf7fb667a49be7c3f49d;iced-%commit%/renderer'
-	[iced_runtime]='https://github.com/squidowl/iced;6f4401a5e6f0ae6b75ecaf7fb667a49be7c3f49d;iced-%commit%/runtime'
-	[iced_tiny_skia]='https://github.com/squidowl/iced;6f4401a5e6f0ae6b75ecaf7fb667a49be7c3f49d;iced-%commit%/tiny_skia'
-	[iced_wgpu]='https://github.com/squidowl/iced;6f4401a5e6f0ae6b75ecaf7fb667a49be7c3f49d;iced-%commit%/wgpu'
-	[iced_widget]='https://github.com/squidowl/iced;6f4401a5e6f0ae6b75ecaf7fb667a49be7c3f49d;iced-%commit%/widget'
-	[iced_winit]='https://github.com/squidowl/iced;6f4401a5e6f0ae6b75ecaf7fb667a49be7c3f49d;iced-%commit%/winit'
+	[iced]='https://github.com/squidowl/iced;fcfa87cb35b615715919c8b4da408b6488f195de;iced-%commit%'
+	[iced_beacon]='https://github.com/squidowl/iced;fcfa87cb35b615715919c8b4da408b6488f195de;iced-%commit%/beacon'
+	[iced_core]='https://github.com/squidowl/iced;fcfa87cb35b615715919c8b4da408b6488f195de;iced-%commit%/core'
+	[iced_debug]='https://github.com/squidowl/iced;fcfa87cb35b615715919c8b4da408b6488f195de;iced-%commit%/debug'
+	[iced_devtools]='https://github.com/squidowl/iced;fcfa87cb35b615715919c8b4da408b6488f195de;iced-%commit%/devtools'
+	[iced_futures]='https://github.com/squidowl/iced;fcfa87cb35b615715919c8b4da408b6488f195de;iced-%commit%/futures'
+	[iced_graphics]='https://github.com/squidowl/iced;fcfa87cb35b615715919c8b4da408b6488f195de;iced-%commit%/graphics'
+	[iced_program]='https://github.com/squidowl/iced;fcfa87cb35b615715919c8b4da408b6488f195de;iced-%commit%/program'
+	[iced_renderer]='https://github.com/squidowl/iced;fcfa87cb35b615715919c8b4da408b6488f195de;iced-%commit%/renderer'
+	[iced_runtime]='https://github.com/squidowl/iced;fcfa87cb35b615715919c8b4da408b6488f195de;iced-%commit%/runtime'
+	[iced_tiny_skia]='https://github.com/squidowl/iced;fcfa87cb35b615715919c8b4da408b6488f195de;iced-%commit%/tiny_skia'
+	[iced_wgpu]='https://github.com/squidowl/iced;fcfa87cb35b615715919c8b4da408b6488f195de;iced-%commit%/wgpu'
+	[iced_widget]='https://github.com/squidowl/iced;fcfa87cb35b615715919c8b4da408b6488f195de;iced-%commit%/widget'
+	[iced_winit]='https://github.com/squidowl/iced;fcfa87cb35b615715919c8b4da408b6488f195de;iced-%commit%/winit'
 	[winit]='https://github.com/iced-rs/winit;05b8ff17a06562f0a10bb46e6eaacbe2a95cb5ed;winit-%commit%'
 )
 
@@ -1022,7 +1030,7 @@ LICENSE+="
 "
 SLOT="0"
 
-IUSE="opengl +vulkan wayland +X"
+IUSE="opengl tor +vulkan wayland +X"
 REQUIRED_USE="
 	|| ( opengl vulkan )
 	vulkan? ( || ( wayland X ) )
@@ -1061,6 +1069,7 @@ DEPEND="
 "
 RDEPEND="
 	${DEPEND}
+	x11-libs/libxcb
 	x11-libs/libxkbcommon[wayland?,X?]
 "
 
@@ -1078,10 +1087,15 @@ src_unpack() {
 src_configure() {
 	if [[ ${PV} != *9999* ]] ; then
 		# Fix cargo.eclass handling of patched dependencies
-		# https://github.com/squidowl/halloy/blob/2026.6/Cargo.toml#L159-L162
+		# https://github.com/squidowl/halloy/blob/2026.7.1/Cargo.toml#L161-L164
 		sed -i "s,'https://github.com/squidowl/iced',crates-io,g" \
 			"${ECARGO_HOME}/config.toml" || die
 	fi
+
+	local myfeatures=(
+		$(usev tor)
+	)
+
 	cargo_src_configure
 }
 
