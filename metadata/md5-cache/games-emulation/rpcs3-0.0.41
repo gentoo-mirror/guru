@@ -1,0 +1,16 @@
+BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.28.5
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare test
+DEPEND=app-arch/7zip app-arch/zstd >=dev-libs/protobuf-33.0.0 dev-libs/hidapi dev-libs/libevdev dev-libs/pugixml dev-libs/stb dev-qt/qtbase:6[concurrent,dbus,gui,widgets] dev-qt/qtmultimedia:6 dev-qt/qtsvg:6 media-libs/alsa-lib media-libs/cubeb media-libs/glew media-libs/libglvnd media-libs/libpng:= media-libs/openal media-libs/rtmidi media-video/ffmpeg:= net-libs/miniupnpc:= net-misc/curl llvm-core/llvm:= virtual/zlib:= virtual/libusb:1 x11-libs/libX11 faudio? ( app-emulation/faudio ) opencv? ( media-libs/opencv ) vulkan? ( media-libs/vulkan-loader[wayland?] ) wayland? ( dev-libs/wayland )
+DESCRIPTION=PS3 emulator/debugger
+EAPI=8
+HOMEPAGE=https://rpcs3.net/
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=cmake flag-o-matic xdg optfeature
+IUSE=discord faudio +llvm opencv vulkan wayland
+KEYWORDS=~amd64
+LICENSE=GPL-2
+RDEPEND=app-arch/7zip app-arch/zstd >=dev-libs/protobuf-33.0.0 dev-libs/hidapi dev-libs/libevdev dev-libs/pugixml dev-libs/stb dev-qt/qtbase:6[concurrent,dbus,gui,widgets] dev-qt/qtmultimedia:6 dev-qt/qtsvg:6 media-libs/alsa-lib media-libs/cubeb media-libs/glew media-libs/libglvnd media-libs/libpng:= media-libs/openal media-libs/rtmidi media-video/ffmpeg:= net-libs/miniupnpc:= net-misc/curl llvm-core/llvm:= virtual/zlib:= virtual/libusb:1 x11-libs/libX11 faudio? ( app-emulation/faudio ) opencv? ( media-libs/opencv ) vulkan? ( media-libs/vulkan-loader[wayland?] ) wayland? ( dev-libs/wayland )
+SLOT=0
+SRC_URI=https://github.com/RPCS3/rpcs3/archive/v0.0.41.tar.gz -> rpcs3-0.0.41.tar.gz https://github.com/asmjit/asmjit/archive/416f7356967c1f66784dc1580fe157f9406d8bff.tar.gz -> rpcs3-asmjit-416f7356967c1f66784dc1580fe157f9406d8bff.tar.gz https://github.com/KhronosGroup/glslang/archive/f0bd0257c308b9a26562c1a30c4748a0219cc951.tar.gz -> rpcs3-glslang-f0bd0257c308b9a26562c1a30c4748a0219cc951.tar.gz https://github.com/wolfSSL/wolfssl/archive/1d363f3adceba9d1478230ede476a37b0dcdef24.tar.gz -> rpcs3-wolfssl-1d363f3adceba9d1478230ede476a37b0dcdef24.tar.gz https://github.com/RPCS3/soundtouch/archive/a0fba77b6f9cfbdb71f8bbec58b6ac4e5e3b1097.tar.gz -> rpcs3-soundtouch-a0fba77b6f9cfbdb71f8bbec58b6ac4e5e3b1097.tar.gz https://github.com/RPCS3/yaml-cpp/archive/51a5d623e3fde1f58829a56ba910f1cb33596222.tar.gz -> rpcs3-yaml-cpp-51a5d623e3fde1f58829a56ba910f1cb33596222-.tar.gz https://github.com/xioTechnologies/Fusion/archive/008e03eac0ac1d5f85e16f5fcaefdda3fee75cb8.tar.gz -> rpcs3-fusion-008e03eac0ac1d5f85e16f5fcaefdda3fee75cb8.tar.gz https://github.com/GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator/archive/1d8f600fd424278486eade7ed3e877c99f0846b1.tar.gz -> rpcs3-VulkanMemoryAllocator-1d8f600fd424278486eade7ed3e877c99f0846b1.tar.gz https://github.com/FeralInteractive/gamemode/archive/c54d6d4243b0dd0afcb49f2c9836d432da171a2b.tar.gz -> rpcs3-GameMode.tar.gz
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	c54f532543a549f7318d6c49aaf8e953	xdg	3ef49a87c52c8b77c476351195dfe575	optfeature	538bce96e5589935b57e178e8635f301
+_md5_=641874dabbc2e255d37673c6f3d15790

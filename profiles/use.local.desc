@@ -593,6 +593,7 @@ media-fonts/redhat:variable - Install variable font files
 media-fonts/redhat:webfonts - Install web font files
 media-fonts/victor-mono:otf - Install the OpenType version of the font
 media-fonts/victor-mono:ttf - Install the TrueType version of the font
+media-gfx/KTX-Software:tools - Enable KTX command line tools
 media-gfx/bonzomatic:system-glew - Use the systems installed version of GLEW (upstream-unsupported)
 media-gfx/bonzomatic:system-glfw - Use the systems installed version of GLFW (upstream-unsupported)
 media-gfx/bonzomatic:system-stb - Use the systems installed version of STB (upstream-unsupported)
@@ -733,7 +734,6 @@ net-im/chatterino:qtkeychain - Enable qtkeychain support to secure passwords
 net-im/conduit:rocksdb - Add support for RocksDB; a key/value, LSM database
 net-im/conduit:system-rocksdb - Use the system-wide dev-libs/rocksdb installation
 net-im/element-desktop:emoji - Use media-fonts/noto-emoji for displaying emoji
-net-im/endcord:media - Enable media support for voice calls and ASCII media
 net-im/forkgram:dbus - Enable D-Bus support for desktop integration
 net-im/forkgram:enchant - Use app-text/enchant spell-checking backend instead of app-text/hunspell
 net-im/forkgram:fonts - Use built-in patched copy of open-sans fonts (overrides fontconfig)
@@ -971,6 +971,7 @@ sys-libs/iceoryx:ccache - Enable ccache support
 sys-libs/spiral:editor - Compile spiral_editor* functions
 sys-libs/spiral:screen - Compile spiral_screen* functions
 sys-libs/spiral:term - Compile spiral_term* functions
+sys-power/fan2go:nvml - Enable the NVML device discovery
 sys-power/linux-tools-power-x86:pstate-tracer - Install utility to debug and tune the performance of the {amd,intel}_pstate drivers
 sys-power/rog-daemon:fan-curve - Enable support for custom fan curves
 sys-power/rog-daemon:mux - Enable support for MUX switch

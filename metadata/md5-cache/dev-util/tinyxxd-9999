@@ -1,7 +1,7 @@
 BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile install unpack
 DESCRIPTION=Drop-in replacement and standalone version of xxd
-EAPI=8
+EAPI=9
 HOMEPAGE=https://github.com/xyproto/tinyxxd
 INHERIT=toolchain-funcs git-r3
 IUSE=xxd test
@@ -12,4 +12,4 @@ REQUIRED_USE=test? ( !xxd )
 RESTRICT=!test? ( test )
 SLOT=0
 _eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	git-r3	2f8cdb10b033f92c3136aa6488a31c98
-_md5_=e77e19f825754002e07858370963b0be
+_md5_=c3fa4f40ab489cba72690a857fbf3836

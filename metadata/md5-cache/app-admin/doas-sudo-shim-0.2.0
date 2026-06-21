@@ -1,0 +1,12 @@
+BDEPEND=doc? ( dev-ruby/asciidoctor )
+DEFINED_PHASES=compile install
+DESCRIPTION=sudo shim that utilizes doas
+EAPI=8
+HOMEPAGE=https://github.com/jirutka/doas-sudo-shim
+IUSE=doc
+KEYWORDS=~amd64
+LICENSE=ISC
+RDEPEND=app-admin/doas !app-admin/sudo
+SLOT=0
+SRC_URI=https://github.com/jirutka/doas-sudo-shim/archive/v0.2.0.tar.gz -> doas-sudo-shim-0.2.0.tar.gz
+_md5_=d17ce4e0abbc2ad39ea7503812a50fea
