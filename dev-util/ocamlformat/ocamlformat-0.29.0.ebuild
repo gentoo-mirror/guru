@@ -1,4 +1,4 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -20,6 +20,7 @@ RESTRICT="!test? ( test )"
 
 RDEPEND="
 	>=dev-ml/cmdliner-1.1.0:=
+	>=dev-ml/csexp-1.4.0:=
 	~dev-ml/ocamlformat-lib-${PV}:=
 	>=dev-ml/re-1.10.3:=
 "
@@ -38,6 +39,12 @@ BDEPEND="
 		>=dev-util/ocp-indent-1.8.1:=
 	)
 "
+
+src_prepare() {
+	default
+
+	sed -i "/^(name ocamlformat)/a (version ${PV})" dune-project || die
+}
 
 src_compile() {
 	dune-compile ocamlformat
