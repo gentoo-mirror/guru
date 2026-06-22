@@ -425,6 +425,7 @@ app-text/lizard 1.21.3 1.22.1 1.23.0: A simple code complexity analyser, support
 app-text/lorien-bin 0.6.0-r2: Infinite canvas drawing/whiteboarding. Made with Godot.
 app-text/lsp 0.5.0_rc4 9999: The least significant pager
 app-text/markdown-oxide 0.25.10 0.25.11: PKM Markdown Language Server
+app-text/nnote 0.3.4: A plain, file-based note-taking CLI
 app-text/notekit 0.2.0: Write your notes in instantly-formatted Markdown
 app-text/owo 0.1.0: OwO-ifies text via regex
 app-text/pandoc-crossref-bin 0.3.17.0f: Pandoc filter for cross-references
@@ -715,8 +716,8 @@ dev-ml/ocaml-tsort 2.2.0: Easy to use and user-friendly topological sort
 dev-ml/ocaml-version 3.6.7 3.6.8 3.6.9: Library to parse and enumerate releases of the OCaml compiler
 dev-ml/ocaml-yaml 3.2.0: Parse and generate YAML 1.1/1.2 files
 dev-ml/ocamlc-loc 3.16.0-r1: Parse ocaml compiler output into structured form
-dev-ml/ocamlformat-lib 0.26.2: OCamlFormat is a tool to automatically format OCaml code in a uniform style.
-dev-ml/ocamlformat-rpc-lib 0.26.2: Auto-formatter for OCaml code (RPC mode)
+dev-ml/ocamlformat-lib 0.26.2 0.29.0: OCamlFormat is a tool to automatically format OCaml code in a uniform style
+dev-ml/ocamlformat-rpc-lib 0.26.2 0.29.0: Auto-formatter for OCaml code (RPC mode)
 dev-ml/odate 0.7: Date & Duration Library
 dev-ml/otoml 1.0.5: TOML parsing, manipulation, and pretty-printing library
 dev-ml/psq 0.2.0-r2 0.2.1: Functional Priority Search Queues for OCaml
@@ -914,7 +915,7 @@ dev-python/parsel 1.10.0: Utility to extract data from XML/HTML documents using 
 dev-python/pem 23.1.0-r1: Easy PEM file parsing in Python
 dev-python/persist-queue 0.8.1 1.0.0 1.1.0: A thread-safe disk based persistent queue in Python
 dev-python/phx-class-registry 4.1.0-r1: An intersection of the Registry and Factory pattern
-dev-python/pillow-heif 1.3.0: Python interface for libheif library
+dev-python/pillow-heif 1.3.0 1.4.0: Python interface for libheif library
 dev-python/pillow-jxl-plugin 1.3.7: Pillow plugin for JPEG-XL, using Rust for bindings.
 dev-python/pipdeptree 2.34.0: Utility for displaying installed packages in a dependency tree
 dev-python/pipenv 2026.6.1: Python Development Workflow for Humans
@@ -1154,7 +1155,7 @@ dev-util/mock 6.7: Simple chroot build environment manager for building RPMs
 dev-util/mock-core-configs 44.2: Mock core config files basic chroots
 dev-util/neocmakelsp 0.10.2 0.10.3: Another CMake LSP
 dev-util/nvchecker 2.19 2.20: New version checker for software releases
-dev-util/ocamlformat 0.26.2 0.26.2-r1: Auto-formatter for OCaml code
+dev-util/ocamlformat 0.26.2-r1 0.29.0: Auto-formatter for OCaml code
 dev-util/ocp-indent 1.8.2: Indentation tool for OCaml, to be used from editors like Emacs and Vim.
 dev-util/ols 2026.01 2026.03 9999: Language server for Odin Programming language
 dev-util/opencode-bin 1.1.48 1.2.6 1.15.12: The open source coding agent
@@ -1301,7 +1302,7 @@ games-util/steamtinkerlaunch 12.12 9999: Wrapper script for Steam custom launch 
 games-util/umu-launcher 1.4.0: Unified launcher for Windows games on Linux
 games-util/xivlauncher 1.3.1: Custom Launcher for Final Fantasy XIV Online (Crossplatform rewrite)
 games-util/xone 0.5.5 0.5.6 0.5.7 0.5.8: Linux kernel driver for Xbox One and Xbox Series X|S accessories
-gnome-extra/Refine 0.8.0: Tweak various aspects of GNOME
+gnome-extra/Refine 0.8.0-r1: Tweak various aspects of GNOME
 gnome-extra/commit 4.1-r1 4.2 4.3: Commit message editor
 gnome-extra/extension-manager 0.6.3-r1 0.6.5 9999: A native tool for browsing, installing, and managing GNOME Shell Extensions
 gnome-extra/iio-sensor-proxy 3.7 3.8 3.9: IIO sensors to D-Bus proxy
@@ -1577,6 +1578,7 @@ media-sound/bespokesynth 1.2.1 1.3.0: Software modular synth
 media-sound/callaudiod 0.1.10 0.1.99: Call audio routing daemon
 media-sound/corrscope 0.10.0-r1 0.10.1: Advanced oscilloscope audio visualizer specializing in chiptune
 media-sound/cyanrip 0.9.3.1: Fully featured CD ripping program able to take out most of the tedium
+media-sound/decibels 49.6.1: Play audio files
 media-sound/deep-filter 0.5.6-r2: Noise supression using deep filtering
 media-sound/drumgizmo 0.9.20-r1 9999: Audio sampler plugin and stand-alone app that simulates a real drum kit
 media-sound/dzr 251115 260308 260315: DZR: the command line deezer.com player
@@ -1615,7 +1617,7 @@ media-sound/plexamp 4.13.0: A dedicated music player for your Plex media library
 media-sound/qbitmplayer 3.1.2 3.2.0-r1 3.3.1: Music Player written in C++ & Qt.
 media-sound/qloud 1.4.2: Tool to measure loudspeaker frequency and step responses and distortions
 media-sound/qobuz-player 0.10.0 2026.05.03 2026.06.12: Tui, web and rfid player for Qobuz
-media-sound/rmpc 0.9.0 0.10.0 0.11.0 9999: A beautiful and configurable TUI client for MPD
+media-sound/rmpc 0.9.0 0.10.0 0.11.0-r1 9999: A beautiful and configurable TUI client for MPD
 media-sound/rsgain 3.5.1-r1 3.5.3-r1: Really Simple replay Gain calculator for tagging audio files
 media-sound/shortwave 5.0.0 5.1.0: An internet radio player
 media-sound/songrec 0.7.3: An open-source Shazam client for Linux, written in Rust.
@@ -1700,7 +1702,7 @@ net-dialup/syncterm 1.1 9999: BBS (bulletin board system) terminal
 net-dialup/tcpser 1.1.4: Hayes Smartmodem emulator over TCP/IP
 net-dialup/tio 3.9: Simple TTY terminal application
 net-dns/AdGuardHome 0.107.71 0.107.76 0.107.77: Network-wide ads & trackers blocking DNS server like Pi-Hole with web ui
-net-dns/blocky 0.30.0 0.31.0 0.32.0 9999: Fast and lightweight DNS proxy as ad-blocker with many features written in Go
+net-dns/blocky 0.31.0 0.32.0 0.32.1 9999: Fast and lightweight DNS proxy as ad-blocker with many features written in Go
 net-dns/noip-duc 3.3.0: No-IP Dynamic Update Client (https://www.noip.com)
 net-dns/technitium-dns 13.6 14.3 15.0.1 15.1 15.2: Open-source, self-hosted authoritative and recursive DNS+DHCP server.
 net-fs/httpdirfs 1.2.7: Filesystem to mount HTTP directory listings, with a permanent cache
@@ -1917,10 +1919,12 @@ sci-electronics/cocotb 1.9.2 2.0.1-r1: Python-based chip (RTL) verification
 sci-electronics/cocotb-bus 0.3.0: Reusable testbenching tools and bus interfaces for cocotb
 sci-electronics/coil64 2.4.39-r1: Coil64 is inductance coil calculator
 sci-electronics/dsview 1.3.2-r2 9999: An open source multi-function instrument
+sci-electronics/flexbv-free-bin 5.3156: Free version of the FlexBV boardview and schematic software
 sci-electronics/kactus2 3.13.3 9999: A open source IP-XACT-based tool
 sci-electronics/liblxi 1.20: Implementation of the LAN eXtensions for Instrumentation (LXI)
 sci-electronics/logic-bin 2.4.43 2.4.44: Saleae logic analyzer
 sci-electronics/lxi-tools 2.7: Tools to access devices with LXI
+sci-electronics/openboardview-bin 10.0.0: Linux SDL/ImGui edition software for viewing .brd files.
 sci-electronics/qucs-s 26.1.1: Quite universal circuit simulator with SPICE
 sci-electronics/sby 0.64 0.65: Front-end for Yosys-based formal hardware verification flows
 sci-electronics/slang 11.0-r1 9999: SystemVerilog compiler and language services
@@ -2131,7 +2135,7 @@ www-apps/whisparr-eros 3.3.1.579 3.3.3.683: Adult movie organizer/manager for us
 www-apps/zola 0.22.1-r2 0.22.1-r3: A fast static site generator with everything built-in
 www-client/badwolf 1.4.0-r2 9999-r1: Minimalist and privacy-oriented WebKitGTK+ browser
 www-client/browsh 1.8.2 1.8.3: A fully-modern text-based browser, rendering to TTY and browsers
-www-client/chawan 0.4.1 0.4.2 9999: TUI web browser; supports CSS, images, JavaScript, and multiple web protocols
+www-client/chawan 0.4.1 0.4.2 0.4.3 9999: TUI web browser; supports CSS, images, JavaScript, and multiple web protocols
 www-client/helium-bin 0.12.3.1 0.12.5.1 0.13.2.1: Private, fast, and honest web browser based on Chromium
 www-client/mullvad-browser-bin 15.0.14: The Mullvad Browser is developed to minimize tracking and fingerprinting.
 www-client/nyxt 3.11.8 3.12.0 9999: Nyxt - the hacker's power-browser
@@ -2204,7 +2208,7 @@ x11-terms/tym 3.5.1-r2: Lua-configurable terminal emulator
 x11-terms/weltschmerz 1.9.0: A terminal emulator in Vala
 x11-terms/wezterm-nightly-bin 99999999: A GPU-accelerated cross-platform terminal emulator and multiplexer
 x11-themes/MoreWaita 49 9999: An expanded Adwaita-styled companion icon theme
-x11-themes/adw-gtk3 5.6 5.10: The theme from libadwaita ported to GTK-3
+x11-themes/adw-gtk3 5.6 5.10 6.5: An unofficial GTK3 port of libadwaita
 x11-themes/adwaita-dark-amoled 9999: GTK-3/4 theme: black background, blue accent
 x11-themes/apple-cursor 2.0.1: Free & Open source macOS Cursors.
 x11-themes/arc-darkest-colors 0_pre20200818 0_pre20201112: Flat, dark-mode theme with transparent elements

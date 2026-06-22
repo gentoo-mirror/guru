@@ -1,14 +1,15 @@
-BDEPEND=virtual/pkgconfig || ( >=dev-lang/rust-bin-1.88.0:* >=dev-lang/rust-1.88.0:* ) >=dev-vcs/git-1.8.2.1[curl]
-DEFINED_PHASES=compile configure install setup test unpack
-DEPEND=llvm_slot_19? ( llvm-core/clang:19 ) llvm_slot_20? ( llvm-core/clang:20 ) llvm_slot_21? ( llvm-core/clang:21 ) llvm_slot_22? ( llvm-core/clang:22 )
+BDEPEND=llvm_slot_19? ( llvm-core/clang:19 ) llvm_slot_20? ( llvm-core/clang:20 ) llvm_slot_21? ( llvm-core/clang:21 ) llvm_slot_22? ( llvm-core/clang:22 ) virtual/pkgconfig || ( >=dev-lang/rust-bin-1.88.0:* >=dev-lang/rust-1.88.0:* ) >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile configure install postinst postrm preinst setup test unpack
+DEPEND=llvm_slot_19? ( llvm-runtimes/compiler-rt-sanitizers:19[libfuzzer] ) llvm_slot_20? ( llvm-runtimes/compiler-rt-sanitizers:20[libfuzzer] ) llvm_slot_21? ( llvm-runtimes/compiler-rt-sanitizers:21[libfuzzer] ) llvm_slot_22? ( llvm-runtimes/compiler-rt-sanitizers:22[libfuzzer] )
 DESCRIPTION=A beautiful and configurable TUI client for MPD
 EAPI=8
 HOMEPAGE=https://mierak.github.io/rmpc/
-INHERIT=llvm-r2 cargo shell-completion git-r3
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=llvm-r2 cargo shell-completion desktop xdg git-r3
 IUSE=+llvm_slot_21 llvm_slot_19 llvm_slot_20 llvm_slot_22 debug
 LICENSE=BSD Apache-2.0 BSD-2 BSD CC0-1.0 CDLA-Permissive-2.0 ISC LGPL-3+ MIT UoI-NCSA openssl Unicode-3.0 Unicode-DFS-2016 WTFPL-2 ZLIB
 PROPERTIES=live
 REQUIRED_USE=^^ ( llvm_slot_19 llvm_slot_20 llvm_slot_21 llvm_slot_22 )
 SLOT=0
-_eclasses_=llvm-utils	e7edb4086e31c8537574b263d899f826	toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	multilib	fc812e8eb2170022c28272d80a1f9e77	llvm-r2	d0f9b3164877aa250943c25b016e475e	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	rust	c5ae4c9b5eca97bd7fc77fede663873f	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	983bdde2432d878045ca2524b9ff935d	bash-completion-r1	9e91505e030725688d1e953321a47501	shell-completion	0b655d0d825e157a5e99c463bddaac16	git-r3	2f8cdb10b033f92c3136aa6488a31c98
-_md5_=dad69aaeca50a6b43b33207bd7404fbf
+_eclasses_=llvm-utils	e7edb4086e31c8537574b263d899f826	toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	multilib	fc812e8eb2170022c28272d80a1f9e77	llvm-r2	d0f9b3164877aa250943c25b016e475e	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	rust	c5ae4c9b5eca97bd7fc77fede663873f	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	983bdde2432d878045ca2524b9ff935d	bash-completion-r1	9e91505e030725688d1e953321a47501	shell-completion	0b655d0d825e157a5e99c463bddaac16	desktop	26d57169ca094c04be416993844ec8bc	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575	git-r3	2f8cdb10b033f92c3136aa6488a31c98
+_md5_=7fec3f12bb30bb34c12f277b2bd494b6
