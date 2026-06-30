@@ -60,6 +60,7 @@ PATCHES=(
 	"${FILESDIR}/${PF}/fix-issues-caused-by-build-system-updates.patch"
 	"${FILESDIR}/${PF}/link-ncurses-tinfo.patch"
 	"${FILESDIR}/${PF}/link-with-lld.patch"
+	"${FILESDIR}/${PF}/remove-linux-scc_h.patch"
 	"${FILESDIR}/${PF}/respect-c-cxx-flags.patch"
 	"${FILESDIR}/${PF}/sanitizer-remove-scc.patch"
 )
