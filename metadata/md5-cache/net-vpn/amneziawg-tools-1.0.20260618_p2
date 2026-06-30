@@ -1,0 +1,14 @@
+BDEPEND=virtual/pkgconfig virtual/pkgconfig
+DEFINED_PHASES=compile install setup
+DESCRIPTION=Required tools for AmneziaWG, such as awg(8) and awg-quick(8)
+EAPI=8
+HOMEPAGE=https://github.com/amnezia-vpn/amneziawg-tools
+INHERIT=linux-info bash-completion-r1 systemd toolchain-funcs
+IUSE=+awg-quick selinux
+KEYWORDS=~amd64
+LICENSE=GPL-2
+RDEPEND=awg-quick? ( || ( net-firewall/nftables net-firewall/iptables ) virtual/resolvconf ) selinux? ( sec-policy/selinux-wireguard )
+SLOT=0
+SRC_URI=https://github.com/amnezia-vpn/amneziawg-tools/archive/refs/tags/v1.0.20260618-2.tar.gz -> amneziawg-tools-1.0.20260618_p2.tar.gz
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	linux-info	efd923656513c879204fec6638eadee5	shell-completion	63a62de3ca49c798ee6e89f190e45d0e	bash-completion-r1	4386cfb12ede6cd8f0c1987d2e88da5f	systemd	a964c0cbe818b5729da1dbfcee5be861
+_md5_=4f9148e4ab6436fafce4891c61f58825

@@ -1,0 +1,15 @@
+BDEPEND=virtual/pkgconfig
+DEFINED_PHASES=compile install prepare
+DEPEND=dev-libs/glib:2 media-gfx/chafa media-libs/freeimage media-libs/libvorbis media-libs/opus media-libs/opusfile media-video/ffmpeg:= sci-libs/fftw:3.0=
+DESCRIPTION=kew (/kjuː/) is a command-line music player for Linux.
+EAPI=8
+HOMEPAGE=https://github.com/ravachol/kew
+INHERIT=toolchain-funcs
+IUSE=+dbus
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2 MIT || ( Unlicense MIT-0 )
+RDEPEND=dev-libs/glib:2 media-gfx/chafa media-libs/freeimage media-libs/libvorbis media-libs/opus media-libs/opusfile media-video/ffmpeg:= sci-libs/fftw:3.0=
+SLOT=0
+SRC_URI=https://github.com/ravachol/kew/archive/v4.1.2.tar.gz -> kew-4.1.2.tar.gz
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5
+_md5_=1081fdcab93520ae8c4306c87233bed6

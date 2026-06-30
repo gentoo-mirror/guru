@@ -1,7 +1,7 @@
 BDEPEND=>=dev-lang/go-1.24.11:= app-arch/unzip
 DEFINED_PHASES=install unpack
 DEPEND=~net-analyzer/zabbix-7.0.26[agent2]
-DESCRIPTION=Ember+ loadable plugin for Zabbix Agent 2.
+DESCRIPTION=Ember+ loadable plugin for Zabbix Agent 2
 EAPI=8
 HOMEPAGE=https://git.zabbix.com/projects/AP/repos/ember-plus/browse
 INHERIT=go-module
@@ -11,4 +11,4 @@ RDEPEND=~net-analyzer/zabbix-7.0.26[agent2]
 SLOT=0
 SRC_URI=https://git.zabbix.com/rest/api/latest/projects/AP/repos/ember-plus/archive?at=refs%2Ftags%2F7.0.26&format=tgz -> zabbix-agent2-plugin-ember-plus-7.0.26.tar.gz https://vimja.cloud/public.php/dav/files/z59eKDyLFokW2KK/net-analyzer/zabbix-agent2-plugin-ember-plus/zabbix-agent2-plugin-ember-plus-7.0.26-vendor.tar.xz
 _eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	sysroot	4c36abaf94ebd3ab32f8abea9a444121	go-env	fca4e820393c2eac25a944be8bdf6a3a	go-module	22cfabf3120ed3f7bcd8b4a7697fbfba
-_md5_=228e9419309a4d4cee86c69487fd9151
+_md5_=d29088af9b050d1af16ee2e26715a448

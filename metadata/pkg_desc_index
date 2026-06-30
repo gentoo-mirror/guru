@@ -102,7 +102,6 @@ app-admin/agru 0.1.20: A tool for managing GitLab groups and projects
 app-admin/akita 0.1.4: An HTTP log monitoring tool for your terminal
 app-admin/ananicy-cpp 1.1.1-r4: Ananicy rewritten in C++ for much lower CPU and memory usage
 app-admin/antidot 0.6.3: Cleans up your $HOME from those pesky dotfiles
-app-admin/aws-vault 7.2.0 7.8.6-r2: Securely store and access AWS credentials in development environments
 app-admin/blahajdots 0.6.1 9999: Bespoke dotfile management for sharkgirls.
 app-admin/boinctui 2.7.1-r1 2.7.2: Fullscreen text mode manager for the BOINC client
 app-admin/chamber 2.13.2: Managing secrets in AWS SSM Parameter Store
@@ -125,7 +124,6 @@ app-admin/hiprompt-gtk 0.10: GTK4 prompter for Himitsu
 app-admin/i2pd-tools 2025.08.21 2025.10.16 2025.10.16-r1: Some useful tools for I2P
 app-admin/krapplet 0.3.1-r1: Krapplet (keyring applet): a Linux graphical password manager
 app-admin/oet 0.1.9 0.1.10 0.1.11 9999: Update your system into binpkgs in an overlay sandbox
-app-admin/overmind 2.2.2-r1 2.4.0: Process manager for Procfile-based applications and tmux
 app-admin/pass-audit 1.2-r1: A pass extension for auditing your password repository.
 app-admin/passage 1.7.4.2: A fork of password-store using age as encryption backend
 app-admin/rbw 1.14.1 1.15.0 9999: Unofficial Bitwarden CLI
@@ -210,7 +208,7 @@ app-doc/stdman 2022.07.30 2024.07.05 9999: Formatted C++ stdlib man pages (cppre
 app-doc/sway-wiki 9999: Wiki of gui-wm/sway, rendered to HTML using kramdown-parser-gfm
 app-editors/edit 1.2.0: Microsoft edit
 app-editors/emacs-lsp-booster 0.2.1: Emacs LSP performance booster
-app-editors/fresh 0.3.12 0.4.0 0.4.1: Terminal based IDE & text editor: easy, powerful and fast
+app-editors/fresh 0.4.0 0.4.1 0.4.2: Terminal based IDE & text editor: easy, powerful and fast
 app-editors/imhex 1.38.1: A hex editor for reverse engineers, programmers, and eyesight
 app-editors/kakoune-lsp 18.1.0 21.0.0: Kakoune Language Server Protocol Client
 app-editors/l3afpad 0.8.18.1.11: Simple GTK3 text editor (successor to leafpad)
@@ -321,6 +319,7 @@ app-misc/nvidia-oc 0.1.24: A simple command line tool to overclock Nvidia GPUs
 app-misc/nwg-look 1.0.2-r1 1.0.6: GTK settings editor adapted to work on wlroots-based compositors
 app-misc/nwg-shell-wallpapers 1.3 1.4 1.5: Selection of wallpapers contributed to the nwg-shell project
 app-misc/oddjob 0.34.7-r1: A D-Bus service which runs odd jobs on behalf of client applications
+app-misc/omencore-bin 3.8.0: OmenCore is an Advanced Performance Control for HP Omen Laptops
 app-misc/onefetch 2.26.1: Command-line Git information tool
 app-misc/opentrack 2026.1.0_p20260208 9999: Head tracking software for MS Windows, Linux, and Apple OSX
 app-misc/pastel 0.12.0-r1 9999: A command-line tool to generate, analyze, convert and manipulate colors
@@ -377,11 +376,12 @@ app-office/pyspread 2.4: Pyspread is a non-traditional spreadsheet written in Py
 app-office/softmaker-office-nx 1234: SoftMaker Office NX binary package
 app-office/standartnotes-bin 3.183.22: End-to-end encrypted note-taking app, alternative to Evernote
 app-portage/appswipe 1.2.0: Application for browsing your local Portage repository files
-app-portage/carnage 1.4b 1.4d 9999: TUI front-end for Portage and eix
+app-portage/carnage 1.4d 1.5 9999: TUI front-end for Portage and eix
 app-portage/gpkg 1.3.10-r2: Graphical package manager for Gentoo Linux (Portage frontend)
 app-portage/pacvis 0.4.2: Displays dependency graphs of packages
 app-portage/portage-lostfiles 0.5.6-r1: A simple script to identify files not tracked by Portage package manager
 app-portage/portagecfg 2.4.0-r1: Utility to write Portage config files in an easy manner.
+app-portage/pupgrade 0.4.3: TUI and CLI wrappers for Gentoo system upgrades
 app-portage/quantum-resolver 9999: A WIP portage dependency resolver
 app-portage/showbuild 0.9.1-r2: Script to follow log of running portage builds
 app-portage/zig-ebuilder 9999: Semi-automatic generator for Zig ebuilds
@@ -414,7 +414,7 @@ app-text/epubgrep 0.6.2: Search tool for EPUB e-books
 app-text/ford 6.2.5 7.0.11-r1 7.0.12 7.0.13: FORD, automatic documentation generator for modern Fortran programs
 app-text/frog 1.6.0: Extract text from any image, video, QR Code and etc.
 app-text/harper 1.8.0: The language checker for developers.
-app-text/iwe 0.1.10 0.3.2: Markdown based personal knowledge management (PKM) system
+app-text/iwe 0.3.2 0.5.0: Markdown based personal knowledge management (PKM) system
 app-text/jrnl 4.2.1: Collect your thoughts and notes without leaving the command line
 app-text/komikku 1.103.0: Manga reader for GNOME
 app-text/koodo-reader-bin 1.5.1 1.6.3: A modern ebook manager and reader with sync and backup capacities
@@ -547,17 +547,17 @@ dev-embedded/arduino-cli 1.0.4 1.1.1 1.3.1: Next-generation arduino command line
 dev-embedded/arduino-ide 2.3.8-r1: Arduino IDE 2.x - A modern open-source IDE for Arduino development
 dev-embedded/bcm2-utils 0.9.8: Utilities for Broadcom-based cable modems
 dev-embedded/esp-coredump 1.13.1 1.14.0 1.15.0 1.16.0: Utility that helps users to retrieve and analyse core dumps
-dev-embedded/esp-idf 5.4.4 5.5.4 6.0-r1 6.0.1 6.0.1-r1: Espressif IoT Development Framework
+dev-embedded/esp-idf 5.4.4 5.5.4 6.0.1-r1 6.0.2: Espressif IoT Development Framework
 dev-embedded/esp-idf-diag 0.2.0: A tool to gather diagnostic information about the ESP-IDF environment.
-dev-embedded/esp-idf-kconfig 2.5.1-r1 2.5.2 3.6.0 3.8.1: Kconfig tooling for esp-idf
+dev-embedded/esp-idf-kconfig 2.5.2 3.8.1 3.11.1: Kconfig tooling for esp-idf
 dev-embedded/esp-idf-monitor 1.8.0 1.9.0: Python object-oriented database
 dev-embedded/esp-idf-nvs-partition-gen 0.1.9: Parses ESP-IDF panic handler output acts as a GDB server over stdin/stdout
 dev-embedded/esp-idf-panic-decoder 1.4.1 1.5.0: Parses ESP-IDF panic handler output acts as a GDB server over stdin/stdout
-dev-embedded/esp-idf-size 1.7.1 2.1.0 2.2.0: Firmware size analysis for ESP-IDF
+dev-embedded/esp-idf-size 1.7.1 2.2.0 2.2.1: Firmware size analysis for ESP-IDF
 dev-embedded/flip-link 0.1.12: Flips the memory layout of embedded programs to protect against stack overflows
 dev-embedded/freertos-gdb 1.0.4: Python module for operating with freeRTOS-kernel objects in GDB
 dev-embedded/fwup 1.15.1 1.16.0: Configurable embedded Linux firmware update creator and runner
-dev-embedded/idf-component-manager 2.4.6 3.0.2 3.0.2-r1: Tool for installing ESP-IDF components
+dev-embedded/idf-component-manager 2.4.6 3.0.2 3.0.2-r1 3.0.3: Tool for installing ESP-IDF components
 dev-embedded/imsprog 1.8.3_p20260518 1.8.5: I2C, MicroWire and SPI EEPROM/Flash chip Programmer
 dev-embedded/mv88e6xxx-dump 0.2.0_pre20210327: Dump information about Marvell mv88e6xxx Ethernet switches
 dev-embedded/nxp-gui-guider 1.10.1: GUI Guider is a user-friendly GUI development tool for LVGL
@@ -877,7 +877,7 @@ dev-python/lru-dict 1.3.0 1.4.1: Dict like LRU container
 dev-python/lsp-tree-sitter 0.1.1 0.1.1-r1: A library to create language servers
 dev-python/lupa 2.8: Python wrapper around Lua and LuaJIT
 dev-python/m3u8 6.0.0: Python m3u8 Parser for HTTP Live Streaming (HLS) Transmissions
-dev-python/markdownify 0.11.6: Convert HTML to Markdown
+dev-python/markdownify 0.11.6 1.2.2: Convert HTML to Markdown
 dev-python/markovify 0.9.4: Simple, extensible Markov chain generator
 dev-python/mastodon-py 2.0.1 2.1.4: Python wrapper for the Mastodon API
 dev-python/material-color-utilities 0.1.5: Python port of material-color-utilities used for Material You colors
@@ -904,7 +904,7 @@ dev-python/nkdfu 0.2: Python DFU tool for updating Nitrokey firmware
 dev-python/odfdo 3.18.2: Python library for OpenDocument format (ODF)
 dev-python/odsgenerator 1.12.0: Generate an OpenDocument Format .ods file from a .json or .yaml file.
 dev-python/odsparsator 1.13.1: Generate a JSON file from an OpenDocument Format .ods file.
-dev-python/openai 2.29.0: The official Python library for the openai API
+dev-python/openai 2.29.0 2.44.0: The official Python library for the openai API
 dev-python/openapi-pydantic 0.5.1: Modern, type-safe OpenAPI schemas in Python using Pydantic 1.8+ and 2.x
 dev-python/opentelemetry-exporter-otlp-proto-common 1.42.1: OpenTelemetry Protobuf encoding
 dev-python/opentelemetry-exporter-otlp-proto-grpc 1.42.1: OpenTelemetry Collector Protobuf over gRPC Exporter
@@ -928,7 +928,7 @@ dev-python/plexapi 4.17.2 4.18.0 4.18.1: Python bindings for the Plex API.
 dev-python/plotext 5.3.0 5.3.2: Plotting on terminal
 dev-python/plum 0.8.7: Pack/Unpack Memory
 dev-python/polyfactory 3.3.0: Simple and powerful factories for mock data generation
-dev-python/posthog 7.18.3 7.19.2: Send usage data from your Python code to PostHog
+dev-python/posthog 7.19.2 7.21.0: Send usage data from your Python code to PostHog
 dev-python/prefab-ui 0.19.2 0.20.2: The agentic frontend framework that even humans can use
 dev-python/prometheus_exporter 1.0.0 1.1.0 1.3.0 9999: Python Prometheus exporter library
 dev-python/proselint 0.14.0: A linter for prose
@@ -1015,7 +1015,7 @@ dev-python/rich-rst 2.0.1: A beautiful reStructuredText renderer for rich
 dev-python/rpmautospec-core 0.1.5: Core functionality used by rpmautospec
 dev-python/rstcheck 6.2.0 6.2.1: Checks syntax of reStructuredText and code blocks nested within it
 dev-python/runs 1.3.0: Run a block of text as a subprocess
-dev-python/screeninfo 0.8.1: Fetch location and size of physical screens.
+dev-python/screeninfo 0.8.1: Fetch location and size of physical screens
 dev-python/sendgrid 6.11.0: Twilio SendGrid library for Python
 dev-python/sentence-splitter 1.4-r2: Sentence splitter using heuristic algorithm by Philipp Koehn and Josh Schroeder
 dev-python/sentry-sdk 2.30.0: Python client for Sentry
@@ -1051,7 +1051,7 @@ dev-python/templated-dictionary 1.6: Python dictionary with Jinja2 expansion
 dev-python/tempus-themes 2.3.0.20220206: Accessible themes for Pygments
 dev-python/tempy 1.4.0: A simple, visually pleasing weather report in your terminal
 dev-python/termynal 0.14.0: A lightweight and modern animated terminal window
-dev-python/textual 8.2.5 8.2.6 8.2.7: Modern Text User Interface framework
+dev-python/textual 8.2.6 8.2.7 8.2.8: Modern Text User Interface framework
 dev-python/textual-autocomplete 4.0.6: Easily add autocomplete dropdowns to your Textual apps
 dev-python/textual-dev 1.8.0: Modern Text User Interface framework
 dev-python/textual-serve 1.1.3: Serve Textual apps locally
@@ -1071,6 +1071,7 @@ dev-python/upstream-ontologist 0.2.7 0.2.9: Tracking of upstream project metadat
 dev-python/urlmatch 1.0.1-r2: A Python library for easily pattern matching wildcard URLs
 dev-python/usb-monitor 1.23: An easy-to-use cross-platform library for USB device monitoring
 dev-python/uuid-utils 0.15.0 0.16.0: Fast, drop-in replacement for Python's uuid module, powered by Rust.
+dev-python/uuid7 0.1.0: UUID version 7, generating time-sorted UUIDs
 dev-python/validator-collection 1.5.0-r2: Collection of 60+ Python functions for validating data
 dev-python/volatile 2.1.0: A small extension for the tempfile module
 dev-python/w3lib 2.3.1: Library of web-related functions
@@ -1097,6 +1098,7 @@ dev-tex/tabularray 2023.03.01: Typeset tabulars and arrays with LATEX3
 dev-tex/tectonic 0.15.0 0.15.0-r1: A modernized, complete, embeddable TeX/LaTeX engine.
 dev-util/DirectXShaderCompiler 1.8.2502 1.8.2505: Microsoft DirectX Shader Compiler which is based on LLVM/Clang
 dev-util/addlicense 1.2.0: A program which ensures source code files have copyright license headers
+dev-util/antigravity-cli-bin 1.0.13_p5758107482193920: Google's agentic development platform (CLI companion)
 dev-util/bash-language-server 5.3.3 5.4.0 5.4.2 5.4.3 5.6.0: A language server for Bash
 dev-util/bats-assert 2.2.0: Common assertions for Bats
 dev-util/bats-support 0.3.0: Supporting library for Bats test helpers
@@ -1106,7 +1108,7 @@ dev-util/bump-my-version 1.2.6 1.2.7 1.3.0: Version bump your Python project
 dev-util/cargo-post 0.1.7: A cargo wrapper that executes a post build script after a successful build.
 dev-util/cargo-show-asm 0.2.60: A cargo subcommand that displays the generated assembly of Rust source code.
 dev-util/catalyst-lab 1.6.0 1.6.1: An automation tool for building Gentoo release stages and binhost packages.
-dev-util/codex 0.142.1 0.142.2: Codex CLI - OpenAI's AI-powered coding agent
+dev-util/codex 0.142.2 0.142.4: Codex CLI - OpenAI's AI-powered coding agent
 dev-util/coq-lsp 0.1.9: Visual Studio Code Extension and Language Server Protocol for Coq
 dev-util/deblob 0.12 9999: remove binary executables from a directory
 dev-util/distribution-gpg-keys 1.119: Collection of GPG keys used in Linux Distributions
@@ -1120,11 +1122,11 @@ dev-util/find-work-bugzilla 1.0.0-r1: Personal advice utility for Gentoo package
 dev-util/find-work-pkgcheck 1.0.0 1.1.0: Personal advice utility for Gentoo package maintainers: pkgcheck plugin
 dev-util/find-work-repology 1.0.1 1.1.0: Personal advice utility for Gentoo package maintainers: Repology plugin
 dev-util/flatpakify 1.0.5 1.0.6: Tool to create Flatpak bundles from Portage ebuilds
-dev-util/forgejo-runner 12.10.2 12.11.1 9999: A daemon that connects to a Forgejo instance and runs jobs for CI
+dev-util/forgejo-runner 12.11.1 12.12.0 9999: A daemon that connects to a Forgejo instance and runs jobs for CI
 dev-util/fortls 2.13.0 3.0.0 3.1.1 3.1.2 3.2.2: Fortran Language Server (fortls)
 dev-util/fortran-test-drive 0.4.0 0.5.0: The simple testing framework (for Fortran)
 dev-util/gammaray 3.3.1 3.4.0 3.4.0-r1: High-level runtime introspection tool for Qt applications
-dev-util/gemini-cli 0.46.0 0.47.0: Gemini CLI - a command-line AI workflow tool by Google
+dev-util/gemini-cli 0.47.0 0.49.0: Gemini CLI - a command-line AI workflow tool by Google
 dev-util/genTree 0.1.0 9999: Gentoo rootfs tree generator
 dev-util/gersemi 0.27.6 0.27.7: A formatter to make your CMake code the real treasure
 dev-util/git-bug 0.10.1 9999: distributed, offline-first bug tracker
@@ -1132,7 +1134,7 @@ dev-util/git-pages-cli 1.6.0 1.8.2: Command-line application for publishing site
 dev-util/gitlab-ci-local-bin 4.43.0 4.47.0 4.56.0: Run gitlab pipelines locally as shell executor or docker executor
 dev-util/go-task 3.50.0 3.51.1: A task runner / simpler Make alternative written in Go
 dev-util/google-antigravity 1.23.2 2.1.4 2.2.1: Google Antigravity 2.0, a dedicated platform to work with agents
-dev-util/google-antigravity-cli 1.0.11 1.0.12: Command-line interface for Google's Antigravity agentic development platform
+dev-util/google-antigravity-cli 1.0.12 1.0.13: Command-line interface for Google's Antigravity agentic development platform
 dev-util/google-antigravity-ide 2.0.4 2.1.1: Google Antigravity's Editor view with context-aware agent
 dev-util/gshards 0.2 0.2-r1: Small helper tools to aid installing Crystal packages in Gentoo
 dev-util/hare-update 0.26.0.0-r1 9999: assist in upgrading a codebase to a newer Hare release
@@ -1199,6 +1201,7 @@ dev-util/xrt 2.21.75 999999: Runtime for AIE and FPGA based platforms
 dev-util/yaml-language-server 1.14.0 1.15.0: Language Server for YAML Files
 dev-vcs/fvs2 0.1.5: Standalone CLI for FVS v2
 dev-vcs/ghorg 1.11.10 1.11.11: Mass repository cloning tool for GitHub/GitLab/Bitbucket
+dev-vcs/git-autofixup 0.005000: Create fixup commits for topic branches
 dev-vcs/git-mediawiki 0_pre20260127 9999: Gate between Git and Mediawiki
 dev-vcs/gitahead 2.7.1-r2: Graphical Git client to help understand and manage source code history
 dev-vcs/gitcomet 0.1.13 0.1.15: GitComet is user interface for GIT workflows
@@ -1266,7 +1269,7 @@ games-rpg/open-adventure 1.17 1.18 1.20: Forward-port of the Crowther/Woods Adve
 games-rpg/primordia 3.6.70667: A cyberpunk point-and-click adventure game
 games-rpg/snoot-game 1.12.0: Visual novel parody of Goodbye Volcano High
 games-server/among-sus 20210519: Among Us, but it's a text adventure
-games-simulation/kittenspaceagency-bin 2026.6.8-r4680: A space flight and rocketry simulation
+games-simulation/kittenspaceagency-bin 2026.6.9-r4750: A space flight and rocketry simulation
 games-strategy/7k-ambition 3.2.10 9999: Seven Kingdoms: Ambition
 games-strategy/gigalomania 1.0.1: Libre clone of Mega-Lo-Mania (original from ~1990), supports original resources
 games-strategy/hedgewars 1.1.0_pre20260124: A turn-based strategy, artillery, action and comedy game
@@ -1277,7 +1280,7 @@ games-util/NotEnoughProduction 0.0.4: Tool for building production chains for mo
 games-util/ProtonUp-Qt 2.12.0 2.13.0 9999: Install and manage GE-Proton, Luxtorpeda & more for Steam Lutris and Heroic.
 games-util/bottles 64.1: Run Windows software and games on Linux
 games-util/chiaki-ng 1.10.0 9999: Client for PlayStation 4 and PlayStation 5 Remote Play
-games-util/curseforge 1.308.1_p34958: The CurseForge Electron App
+games-util/curseforge 1.310.1_p35445: The CurseForge Electron App
 games-util/gamehub 0.16.3.2-r2: GameHub is a unified library for all your games
 games-util/goverlay 1.2: Graphical UI to help manage Linux game overlays (MangoHud).
 games-util/grapejuice 7.20.12 9999: A Wine+Roblox management application
@@ -1376,7 +1379,7 @@ gui-apps/lswt 1.0.4-r1 2.0.0 9999: List Wayland toplevels
 gui-apps/meteo-qt 4.2 4.3: A system tray application for the weather status
 gui-apps/mpvpaper 1.8 9999: A video wallpaper program for wlroots based wayland compositors
 gui-apps/niri-sidebar 0.4.0: A lightweight, external sidebar manager for the Niri window manager.
-gui-apps/noctalia 4.7.7 5.0.0_pre20260614 5.0.0_pre99999999 9999: A sleek and minimal desktop shell thoughtfully crafted for Wayland
+gui-apps/noctalia 4.7.7 5.0.0_pre20260628 5.0.0_pre99999999 9999: A sleek and minimal desktop shell thoughtfully crafted for Wayland
 gui-apps/noctalia-qs 0.0.11 0.0.12 9999: Toolkit for building desktop widgets using QtQuick
 gui-apps/nwg 0: meta package package for nwg-shell
 gui-apps/nwg-bar 0.1.5 0.1.6: GTK3-based button bar for wlroots-based compositors
@@ -1591,7 +1594,7 @@ media-sound/gapless 4.3.1 4.4: A GTK4 music player
 media-sound/goxlr-utility 1.2.3 9999: A utility for monitoring and controlling a TC-Helicon GoXLR or GoXLR Mini
 media-sound/jacktrip 2.4.0-r1 3.0.0: Send JACK audio over a network
 media-sound/jriver 31.0.83: A cross-platform media center, famous for high quality of audio.
-media-sound/kew 2.4.4-r1 3.7.3: kew (/kjuː/) is a command-line music player for Linux.
+media-sound/kew 2.4.4-r1 3.7.3 4.1.2: kew (/kjuː/) is a command-line music player for Linux.
 media-sound/libcava 0.10.7-r1: Console-based Audio Visualizer for Alsa
 media-sound/listenbrainz-mpd 2.5.1: ListenBrainz submission client for MPD
 media-sound/lms 3.76.0 3.77.0 3.78.0: Lightweight Music Server
@@ -1605,12 +1608,12 @@ media-sound/musikcube 3.0.5: Excellent terminal music player, support almost eve
 media-sound/neocrystal 2.1.1 9999: A terminal user interface music player in Rust
 media-sound/netcat-cpi 2014.04.29-r1: Kernel module edition of the Cycles Per Instruction (2014) album
 media-sound/noson-app 5.6.20: The essential to control music from your SONOS devices on Linux platforms
-media-sound/nuclear-bin 1.39.0 1.40.0: Streaming music player that finds free music for you
-media-sound/openaudible-bin 4.8.2 4.8.3: OpenAudible is a cross-platform audiobook manager designed for Audible users.
+media-sound/nuclear-bin 1.40.0 1.41.0: Streaming music player that finds free music for you
+media-sound/openaudible-bin 4.8.3 4.8.6: OpenAudible is a cross-platform audiobook manager designed for Audible users.
 media-sound/openutau 0.1.327 0.1.463 0.1.529 9999: Open source UTAU successor
 media-sound/orca-c 0_pre20250416-r1 9999: Live Programming Environment(C Port)
 media-sound/pamixer 1.6 9999: Pulseaudio command line mixer.
-media-sound/pianobooster 1.0.0-r1: A MIDI player/game that displays notes and teaches you how to play the piano
+media-sound/pear-desktop-bin 3.11.0-r1 3.12.0: Pear 🍐 is extension for music player
 media-sound/pipemixer 0.4.3: TUI volume control app for pipewire
 media-sound/piper 1.4.1 1.4.2: Fast and local neural text-to-speech engine
 media-sound/pipewire-module-xrdp 0.1_pre20230609-r1 0.2: PipeWire module which enables xrdp to use audio redirection
@@ -1635,8 +1638,7 @@ media-sound/tenacity 1.3.4-r4: Easy-to-use, privacy-friendly, FLOSS, cross-platf
 media-sound/tidal-hifi-bin 5.16.0-r1 5.17.0 6.1.0 6.2.0 6.3.0 6.3.1 7.0.0 7.0.1: Web version of Tidal running in electron with Hi-Fi support thanks to Widevine
 media-sound/yandex-music 5.95.0 5.97.3 5.100.1 5.105.3: Yandex Music streaming service
 media-sound/ymuse 0.22: GTK client for Music Player Daemon (MPD) written in Go
-media-sound/youtube-music-bin 3.11.0-r1: YouTube Music Desktop App bundled with custom plugins
-media-sound/ytm-player 1.9.2 1.9.3 1.9.4 9999: Full-featured YouTube Music TUI client with vim-style navigation
+media-sound/ytm-player 1.9.3 1.9.4 1.9.5 9999: Full-featured YouTube Music TUI client with vim-style navigation
 media-sound/zita-ajbridge 0.8.4-r2: zita-a2j and zita-j2a - bridges between ALSA and JACK
 media-video/ciano 0.2.4-r2: A multimedia file converter focused on simplicity
 media-video/clapper 0.6.1 0.8.0: Modern and user-friendly media player
@@ -1656,8 +1658,8 @@ media-video/obs-multi-rtmp 0.6.0.1 9999: OBS Simulcast support plugin
 media-video/obs-streamfx 0.12.0.9999 9999: OBS® Studio plugin which adds many new effects.
 media-video/obs-vaapi 0.4.1 0.4.2 9999: OBS Studio VAAPI support via GStreamer
 media-video/pgsrip 0.1.12: A command line tool to extract and convert PGS subtitles into SRT format
-media-video/showtime 50.0: Video player for GNOME
-media-video/syncplay 1.7.4-r1 1.7.5: Client/server to synchronize media playback
+media-video/showtime 50.0-r1: Video player for GNOME
+media-video/syncplay 1.7.4-r1 1.7.5 1.7.5-r1: Client/server to synchronize media playback
 media-video/uxplay 1.73.6-r1: AirPlay Unix mirroring server
 media-video/walksnail-osd-tool 0.3.0-r2 9999: Tool for rendering OSDs over Walksnail DVR recordings
 media-video/webcamize 2.0.0 2.0.1: Use almost any camera as a webcam—DSLRs, mirrorless, camcorders, and more
@@ -1667,8 +1669,6 @@ media-video/ytarchive 0.4.0 0.5.0: Youtube livestream downloader
 mpv-plugin/SimpleHistory 2023.09.25: Continue watching last played, manage and play from history
 mpv-plugin/SimpleUndo 2023.09.25: Ctrl-Z return to the previous seekbar position, Ctrl-Z again redo
 mpv-plugin/SmartCopyPaste 3.1: Gives mpv the capability to copy and paste while being smart and customizable
-mpv-plugin/kde-do-not-disturb 20230110: Disable the notifications while mpv is running
-mpv-plugin/kde-night-color 20230110 20240910: Disable Night Color while mpv is running
 mpv-plugin/kdialog-open-files 20221015: Use KDialog to add files to playlist, subtitles to playing video or open URLs
 mpv-plugin/mdmenu 20260218: dmenu based selection menu for chapters, tracks, playlist etc
 mpv-plugin/mfpbar 20260218: A minimalistic progressbar and osc replacement
@@ -1686,11 +1686,11 @@ net-analyzer/gping 1.20.1: Ping, but with a graph
 net-analyzer/munin-contrib 0.2021.04.27 0.2024.03.04 0.2024.03.04-r1: User contributed stuff related to munin
 net-analyzer/netsniff-ng 0.6.8-r1 0.6.9: high performance network sniffer for packet inspection
 net-analyzer/reaction 2.3.0: Scan logs and take action
-net-analyzer/zabbix-agent2-plugin-ember-plus 6.0.41 6.0.43 6.0.46 7.0.18 7.0.22 7.0.26 7.4.2 7.4.6 7.4.10: Ember+ loadable plugin for Zabbix Agent 2.
-net-analyzer/zabbix-agent2-plugin-mongodb 6.0.41 6.0.43 6.0.46 7.0.18 7.0.22 7.0.26 7.4.2-r1 7.4.6 7.4.10: MongoDB loadable plugin for Zabbix Agent 2.
-net-analyzer/zabbix-agent2-plugin-mssql 6.0.41 6.0.43 6.0.46 7.0.18 7.0.22 7.0.26 7.4.2 7.4.6 7.4.10: MSSQL loadable plugin for Zabbix Agent 2.
-net-analyzer/zabbix-agent2-plugin-nvidia-gpu 7.4.2 7.4.6 7.4.10: NVIDIA GPU loadable plugin for Zabbix Agent 2.
-net-analyzer/zabbix-agent2-plugin-postgresql 6.0.41 6.0.43 6.0.46 7.0.18 7.0.22 7.0.26 7.4.2-r1 7.4.6 7.4.10: PostgreSQL loadable plugin for Zabbix Agent 2.
+net-analyzer/zabbix-agent2-plugin-ember-plus 6.0.41 6.0.46 7.0.18 7.0.26 7.0.27 7.4.2 7.4.10 7.4.11: Ember+ loadable plugin for Zabbix Agent 2
+net-analyzer/zabbix-agent2-plugin-mongodb 6.0.41 6.0.46 7.0.18 7.0.26 7.0.27 7.4.2-r1 7.4.10 7.4.11: MongoDB loadable plugin for Zabbix Agent 2
+net-analyzer/zabbix-agent2-plugin-mssql 6.0.41 6.0.46 7.0.18 7.0.26 7.0.27 7.4.2 7.4.10 7.4.11: MSSQL loadable plugin for Zabbix Agent 2
+net-analyzer/zabbix-agent2-plugin-nvidia-gpu 7.4.2 7.4.10 7.4.11: NVIDIA GPU loadable plugin for Zabbix Agent 2
+net-analyzer/zabbix-agent2-plugin-postgresql 6.0.41 6.0.46 7.0.18 7.0.26 7.0.27 7.4.2-r1 7.4.10 7.4.11: PostgreSQL loadable plugin for Zabbix Agent 2
 net-client/amfora 1.9.2 1.11.0: A fancy terminal browser for the Gemini protocol.
 net-client/castor 0.8.18 0.9.0-r1: A graphical browser for plain-text protocols
 net-client/geopard 1.7.0: GTK 4 Gemini browser written in Rust
@@ -1704,7 +1704,7 @@ net-dialup/syncterm 1.1 9999: BBS (bulletin board system) terminal
 net-dialup/tcpser 1.1.4: Hayes Smartmodem emulator over TCP/IP
 net-dialup/tio 3.9: Simple TTY terminal application
 net-dns/AdGuardHome 0.107.76 0.107.77: Network-wide ads & trackers blocking DNS server like Pi-Hole with web ui
-net-dns/blocky 0.31.0 0.32.0 0.32.1 9999: Fast and lightweight DNS proxy as ad-blocker with many features written in Go
+net-dns/blocky 0.31.0 0.32.1 0.33.0 9999: Fast and lightweight DNS proxy as ad-blocker with many features written in Go
 net-dns/noip-duc 3.3.0: No-IP Dynamic Update Client (https://www.noip.com)
 net-dns/technitium-dns 13.6 14.3 15.0.1 15.1 15.2: Open-source, self-hosted authoritative and recursive DNS+DHCP server.
 net-fs/httpdirfs 1.2.7: Filesystem to mount HTTP directory listings, with a permanent cache
@@ -1721,8 +1721,8 @@ net-im/discord-ptb-bin 0.0.137: All-in-one voice and text chat
 net-im/discordo 0_pre20251202-r1 9999: A lightweight, secure, and feature-rich Discord TUI client.
 net-im/dissent 0.0.37: Tiny native Discord app
 net-im/element-desktop 1.12.3 1.12.6 1.12.7: A glossy Matrix collaboration client for desktop
-net-im/endcord 1.4.1 1.4.2 9999: Feature rich Discord TUI client
-net-im/endcord-bin 1.4.0 1.4.1 1.4.2: Feature rich Discord TUI client
+net-im/endcord 1.4.2 1.5.0 9999: Feature rich Discord TUI client
+net-im/endcord-bin 1.4.2 1.5.0: Feature rich Discord TUI client
 net-im/eturnal 1.12.1 1.12.2: STUN/TURN server
 net-im/flare 0.12.0-r1: Chat with your friends on Signal
 net-im/forkgram 6.5.1: Fork of the official Telegram Desktop app with small useful additions
@@ -1752,7 +1752,7 @@ net-im/revolt-desktop 1.0.8-r2: Revolt Desktop App
 net-im/session-desktop-bin 1.15.1 1.15.2: Session Desktop - Onion routing based messenger
 net-im/sliding-sync 0.99.15 0.99.19: Proxy implementation of MSC3575's sync protocol.
 net-im/teams-for-linux 2.6.14 2.6.17 2.6.18 2.7.6 2.7.12 2.7.13 2.11.1: Unofficial Microsoft Teams client for Linux. Binary precompiled version.
-net-im/tuwunel 1.7.0 1.7.1: High Performance Matrix Homeserver in Rust!
+net-im/tuwunel 1.7.1 1.8.0: High Performance Matrix Homeserver in Rust!
 net-im/vesktop-bin 1.6.5: All-in-one voice and text chat for gamers with Vencord Preinstalled
 net-im/why2 1.5.3: Lightweight, fast and secure chat application powered by WHY2 encryption.
 net-im/zapzap 6.2.10 6.3.4.1: WhatsApp desktop application written in PyQt6 + PyQt6-WebEngine
@@ -1820,6 +1820,7 @@ net-misc/mbpoll 1.5.2 9999: command line utility to communicate with ModBus slav
 net-misc/megacmd 2.5.2: Command Line Interactive and Scriptable Application to access MEGA
 net-misc/megasync 6.2.2.0: The official Qt-based program for syncing your MEGA account in your PC
 net-misc/myip 1.2.1: Get your external IP address using STUN server
+net-misc/omnissa-horizon-client 2603: Omnissa Horizon Client for Linux
 net-misc/ooni-probe-cli 3.23.0 3.24.0: OONI Probe network measurement tool for detecting internet censorship
 net-misc/openbgpd 8.4 8.5 8.6 9999: OpenBGPD is a free implementation of BGPv4
 net-misc/peertube-viewer-rs 1.8.6: Command-line PeerTube viewer inspired by youtube-viewer
@@ -1856,7 +1857,7 @@ net-p2p/fopnu 1.68: P2P file sharing system
 net-p2p/fragments 3.0.1-r1 3.0.1-r2: Fragments is an easy to use BitTorrent client
 net-p2p/gridcoin 5.5.0.0 5.5.1.0: Proof-of-Stake based cryptocurrency that rewards BOINC computation
 net-p2p/ipfs-desktop-bin 0.39.0 0.40.0 0.43.0: A desktop client for IPFS. The IPFS's Native Application
-net-p2p/monero 0.18.4.6-r1 0.18.5.0 9999: The secure, private, untraceable cryptocurrency
+net-p2p/monero 0.18.5.0 9999: The secure, private, untraceable cryptocurrency
 net-p2p/monero-gui-bin 0.18.4.3: An open-source GUI wallet developed by the Monero community.
 net-p2p/p2pool 4.8 4.9 4.9.1 4.13 4.14 4.17 9999: Decentralized pool for Monero mining
 net-p2p/persepolis 5.2.0: Persepolis is a download manager written in Python.
@@ -1881,14 +1882,14 @@ net-voip/gnome-calls 48.2 49.1.1: Phone dialer and call handler
 net-voip/re 4.7.0 4.8.0: Generic library for real-time communications with async IO support
 net-voip/vvmd 0.8-r1: vvmd is a lower level daemon that retrieves Visual Voicemail
 net-vpn/GlobalProtect-openconnect 2.4.4-r1: Unofficial GlobalProtect VPN client for Linux
-net-vpn/amneziawg-modules 1.0.20251009 1.0.20260210: AmneziaWG Linux kernel module
-net-vpn/amneziawg-tools 1.0.20250903 1.0.20260223: Required tools for AmneziaWG, such as awg(8) and awg-quick(8)
+net-vpn/amneziawg-modules 1.0.20260210 1.0.20260611: AmneziaWG Linux kernel module
+net-vpn/amneziawg-tools 1.0.20260223 1.0.20260618_p2: Required tools for AmneziaWG, such as awg(8) and awg-quick(8)
 net-vpn/fastd 22 23: A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
 net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that require SAML
 net-vpn/mullvadvpn-app 2026.3: Tool used to manage daemon setup
 net-vpn/proton-vpn-gtk-app 4.15.2: Proton VPN GTK app
 net-vpn/vtun-embedded 3.1.0-r1: Create tunnels over TCP/IP networks with shaping, encryption, and compression
-net-vpn/vtun-ng 3.0.22 3.1.0: Create tunnels over TCP/IP networks with shaping, encryption, and compression
+net-vpn/vtun-ng 3.1.0 3.1.1: Create tunnels over TCP/IP networks with shaping, encryption, and compression
 net-wireless/airspyhf 1.6.8: User mode driver for Airspy HF+
 net-wireless/bluetuith 0.2.2 0.2.3 0.2.6 9999: A TUI bluetooth manager for Linux written in Go
 net-wireless/btscreenlocker 1.8.1-r1: Daemon to lock your screen when Bluetooth trusted devices go away.
@@ -1987,6 +1988,7 @@ sci-physics/ovito 3.10.4 3.10.5 3.10.5-r1: Open Visualization Tool
 sec-keys/openpgp-keys-aepaneshnikov 20221210: OpenPGP keys used by Alexander Epaneshnikov
 sec-keys/openpgp-keys-featherwallet 20201209: OpenPGP keys used to sign Feather Wallet releases
 sec-keys/openpgp-keys-google-artifact-registry 20210504: Google Cloud Artifact Registry Automatic Signing Key
+sec-keys/openpgp-keys-monero 0.18.5.0: Monero developer keys
 sec-keys/openpgp-keys-mullvad-browser-bin 2024: OpenPGP keys used to sign Mullvad Browser releases
 sec-keys/openpgp-keys-phosh 2024 2025: OpenPGP keys used to sign Phosh releases
 sec-keys/openpgp-keys-russallbery 20250000: OpenPGP keys used by Russ Allbery (Eagle)
@@ -2095,7 +2097,7 @@ sys-libs/spiral 0.3.0: A Helix and Readline inspired line editor
 sys-power/amdfan 0.1.28 0.2.3 0.2.5: Updated AMD Fan control utility forked from amdgpu-fan and updated.
 sys-power/auto-cpufreq 2.3.0 2.4.0 2.6.0: Automatic CPU speed & power optimizer for Linux
 sys-power/envycontrol 3.5.2 9999: Easy GPU switching for Nvidia Optimus laptops under Linux
-sys-power/fan2go 0.13.0-r1 0.14.0: A simple daemon providing dynamic fan speed control
+sys-power/fan2go 0.13.0-r1 0.14.0 0.15.0: A simple daemon providing dynamic fan speed control
 sys-power/fan2go-tui 0.2.1: A simple daemon providing dynamic fan speed control
 sys-power/gtherm 0.0.3: A simple daemon to monitor thermal zones and cooling devices
 sys-power/linux-tools-power-x86 6.1 6.6: Linux x86 CPU power tools
@@ -2144,9 +2146,9 @@ www-client/mullvad-browser-bin 15.0.14: The Mullvad Browser is developed to mini
 www-client/nyxt 3.11.8 3.12.0 9999: Nyxt - the hacker's power-browser
 www-client/torbrowser-launcher 0.3.9: A program to help you securely download and run Tor Browser
 www-client/vimb 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
-www-client/waterfox-bin 6.6.14: A privacy-focused, performance-oriented browser based on Firefox
+www-client/waterfox-bin 6.6.14 6.6.15: A privacy-focused, performance-oriented browser based on Firefox
 www-client/yandex-browser 26.4.1.1101_p1: The web browser from Yandex
-www-client/zen-bin 1.20.2b-r1 1.21.1b: Zen Browser - A fast, privacy-focused Firefox fork
+www-client/zen-bin 1.21.1b 1.21.4b: Zen Browser - A fast, privacy-focused Firefox fork
 www-misc/dufs 0.40.0 0.46.0: Dufs is a distinctive utility file server
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits
 www-misc/kiwix-desktop 2.4.0 2.5.1: cross-platform viewer/manager for ZIM archives
@@ -2161,7 +2163,7 @@ www-servers/hinsightd 0.9.17 9999: hinsightd a http/1.1 webserver with (hopefull
 www-servers/quark 0_pre20220817 9999: A small, GET-only static HTTP server
 x11-apps/autokey 0.96.0-r1: AutoKey, a desktop automation utility for Linux and X11.
 x11-apps/lightdm-gtk-greeter-settings 1.2.2-r3: Configuration tool for the LightDM GTK Greeter
-x11-apps/variety 0.9.0: Wallpaper downloader and manager for Linux systems
+x11-apps/variety 0.9.0-r1: Wallpaper downloader and manager for Linux systems
 x11-apps/xcur2png 0.7.1-r3: Convert X cursors to PNG images
 x11-drivers/OpenTabletDriver 0.6.6.2: A cross-platform open-source tablet driver
 x11-drivers/OpenTabletDriver-bin 0.6.3.0: Cross platform tablet driver (binary package)
@@ -2169,7 +2171,6 @@ x11-drivers/evdi 1.14.12 1.14.13 1.14.14 1.14.15 1.14.16 9999: Extensible Virtua
 x11-drivers/xf86-input-xppen 3.4.9-r2: Driver for XP-PEN tablets and drawing devices
 x11-libs/gtk-fortran 3.24.49 4.7.1 4.8.0: A GTK+ binding to build Graphical User Interfaces in Fortran
 x11-libs/sdl-fakeqwerty 0_pre20191217: Fixes non-QWERTY keyboards on Prison Architect (and maybe other SDL games)
-x11-misc/aerial-sddm-theme 0_pre20191018-r1 9999: SDDM theme with Apple TV Aerial videos
 x11-misc/autotiling 1.9.3: Script for sway and i3 to automatically switch the window split orientation
 x11-misc/betterlockscreen 4.4.0: sweet looking lockscreen for linux system
 x11-misc/betterlockscreen_rapid 0.0.0_pre20210701 0.0.0_pre20210708: A rapid and good-looking screen locker

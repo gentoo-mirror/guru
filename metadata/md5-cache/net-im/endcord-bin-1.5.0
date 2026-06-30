@@ -1,0 +1,12 @@
+DEFINED_PHASES=install postinst
+DESCRIPTION=Feature rich Discord TUI client
+EAPI=8
+HOMEPAGE=https://github.com/sparklost/endcord
+INHERIT=optfeature
+KEYWORDS=-* ~amd64
+LICENSE=GPL-3
+RESTRICT=strip
+SLOT=0
+SRC_URI=amd64? ( https://github.com/sparklost/endcord/releases/download/1.5.0/endcord-1.5.0-linux.tar.gz )
+_eclasses_=optfeature	538bce96e5589935b57e178e8635f301
+_md5_=e0f57d071d347a444d61a1bf69d28436

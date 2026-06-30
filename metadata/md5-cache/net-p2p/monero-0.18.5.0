@@ -1,17 +1,17 @@
-BDEPEND=virtual/pkgconfig app-alternatives/ninja >=dev-build/cmake-3.28.5 doc? ( app-text/doxygen ) virtual/pkgconfig
-DEFINED_PHASES=compile configure install postinst prepare test
+BDEPEND=virtual/pkgconfig verify-sig? ( sec-keys/openpgp-keys-monero ) app-alternatives/ninja >=dev-build/cmake-3.28.5 doc? ( app-text/doxygen ) virtual/pkgconfig verify-sig? ( || ( app-alternatives/gpg app-crypt/gnupg[-alternatives(-)] ) >=app-portage/gemato-20 )
+DEFINED_PHASES=compile configure install postinst prepare test unpack
 DEPEND=app-crypt/libmd dev-libs/boost:=[nls] dev-libs/libsodium:= dev-libs/libbsd dev-libs/openssl:= dev-libs/randomx dev-libs/rapidjson dev-libs/supercop net-dns/unbound:=[threads(+)] net-libs/zeromq:= daemon? ( acct-group/monero acct-user/monero ) readline? ( sys-libs/readline:= ) hw-wallet? ( dev-libs/hidapi dev-libs/protobuf:= virtual/libusb:1 )
 DESCRIPTION=The secure, private, untraceable cryptocurrency
 EAPI=8
 HOMEPAGE=https://www.getmonero.org
-INHERIT=cmake docs systemd
-IUSE=+daemon hw-wallet readline +tools +wallet-cli +wallet-rpc cpu_flags_x86_aes doc
+INHERIT=cmake docs systemd verify-sig
+IUSE=+daemon hw-wallet readline +tools +wallet-cli +wallet-rpc cpu_flags_x86_aes verify-sig doc verify-sig
 KEYWORDS=~amd64
 LICENSE=BSD MIT
 RDEPEND=app-crypt/libmd dev-libs/boost:=[nls] dev-libs/libsodium:= dev-libs/libbsd dev-libs/openssl:= dev-libs/randomx dev-libs/rapidjson dev-libs/supercop net-dns/unbound:=[threads(+)] net-libs/zeromq:= daemon? ( acct-group/monero acct-user/monero ) readline? ( sys-libs/readline:= ) hw-wallet? ( dev-libs/hidapi dev-libs/protobuf:= virtual/libusb:1 )
 REQUIRED_USE=|| ( daemon tools wallet-cli wallet-rpc )
 RESTRICT=test
 SLOT=0
-SRC_URI=https://github.com/monero-project/monero/archive/v0.18.5.0.tar.gz -> monero-0.18.5.0.tar.gz
-_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	c54f532543a549f7318d6c49aaf8e953	docs	006125f2158d2f16904ebd9114336058	systemd	a964c0cbe818b5729da1dbfcee5be861
-_md5_=e2d06b0d9774ac5909f59f71f4f587fb
+SRC_URI=https://downloads.getmonero.org/cli/source/monero-source-v0.18.5.0.tar.bz2 verify-sig? ( https://raw.githubusercontent.com/monero-project/monero-site/5e8d74229b742b54173010e3a676215b6f2fd1d7/downloads/hashes.txt -> monero-0.18.5.0-release-hashes.txt )
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	c54f532543a549f7318d6c49aaf8e953	docs	006125f2158d2f16904ebd9114336058	systemd	a964c0cbe818b5729da1dbfcee5be861	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	verify-sig	ece4c893b6bd62eacbc4d25958e857f8
+_md5_=fc36f58b229143a238126c83e25b1e6f

@@ -1,0 +1,10 @@
+DEFINED_PHASES=install
+DESCRIPTION=Command-line interface for Google's Antigravity agentic development platform
+EAPI=8
+HOMEPAGE=https://antigravity.google/
+KEYWORDS=-* ~amd64 ~arm64
+LICENSE=all-rights-reserved
+RESTRICT=bindist mirror strip
+SLOT=0
+SRC_URI=amd64? ( https://storage.googleapis.com/antigravity-public/antigravity-cli/1.0.13-5758107482193920/linux-x64/cli_linux_x64.tar.gz -> google-antigravity-cli-1.0.13_amd64.tar.gz ) arm64? ( https://storage.googleapis.com/antigravity-public/antigravity-cli/1.0.13-5758107482193920/linux-arm/cli_linux_arm64.tar.gz -> google-antigravity-cli-1.0.13_arm64.tar.gz )
+_md5_=5e342f4ac711c8d6d521975aad6ffd72
