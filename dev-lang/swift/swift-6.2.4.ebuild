@@ -5,7 +5,7 @@ EAPI=8
 
 LLVM_COMPAT=( {17..21} )
 PYTHON_COMPAT=( python3_{12..14} )
-inherit llvm-r2 python-single-r1 toolchain-funcs
+inherit flag-o-matic llvm-r2 python-single-r1 toolchain-funcs
 
 DESCRIPTION="A high-level, general-purpose, multi-paradigm, compiled programming language"
 HOMEPAGE="https://www.swift.org"
@@ -101,6 +101,7 @@ BDEPEND="
 	>=dev-vcs/git-2.39
 	>=sys-apps/coreutils-9
 	>=sys-devel/gcc-11
+	<sys-devel/gcc-16
 	>=sys-libs/ncurses-6
 	>=virtual/zlib-1.3.1:=
 	|| (
@@ -213,6 +214,33 @@ src_configure() {
 			--libcxx
 			--extra-cmake-options=-DCLANG_DEFAULT_CXX_STDLIB=libc++
 		)
+	else
+		# Swift is going to be building against GCC's libstdc++ using Clang, and
+		# GCC 16 libstdc++ headers can only be parsed by Clang 22 and later.
+		# Swift's LLVM will automatically pick up on the latest headers on disk,
+		# so we need to point Clang to a specific GCC install dir if GCC 16 or
+		# later are installed.
+		#
+		# Adapted from `toolchain-func.eclass`'s `_gcc_install_dir`.
+		local gcc_install_dir="$(LC_ALL=C gcc -print-search-dirs 2>/dev/null \
+			| awk '$1=="install:" {print $2}')" \
+			|| die "Failed to get GCC install dir"
+
+		if [[ "$(basename "${gcc_install_dir}")" -ge 16 ]]; then
+			local base="$(dirname "${gcc_install_dir}")"
+
+			gcc_install_dir=""
+			while read -r -d '' dir; do
+				if [[ "$(basename "${dir}")" -lt 16 ]]; then
+					gcc_install_dir="${dir}"
+					break
+				fi
+			done < <(find "${base}" -mindepth 1 -maxdepth 1 -print0 | sort -rVz) \
+				|| die "Failed to find GCC install dirs"
+		fi
+
+		[[ -n "${gcc_install_dir}" ]] || die "Failed to find GCC <16 install dir"
+		append-cxxflags "--gcc-install-dir=${gcc_install_dir}"
 	fi
 
 	extra_build_flags+=(${SWIFT_EXTRA_BUILD_FLAGS})
