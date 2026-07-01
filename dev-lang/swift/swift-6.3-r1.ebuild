@@ -3,9 +3,9 @@
 
 EAPI=8
 
-LLVM_COMPAT=( {17..21} )
+LLVM_COMPAT=( {17..22} )
 PYTHON_COMPAT=( python3_{12..14} )
-inherit flag-o-matic llvm-r2 python-single-r1 toolchain-funcs
+inherit flag-o-matic llvm-r2 python-single-r1
 
 DESCRIPTION="A high-level, general-purpose, multi-paradigm, compiled programming language"
 HOMEPAGE="https://www.swift.org"
@@ -72,6 +72,7 @@ S="${WORKDIR}"
 LICENSE="Apache-2.0"
 SLOT="6/3"
 KEYWORDS="~amd64"
+IUSE="libcxx"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 RESTRICT="strip"
@@ -90,7 +91,33 @@ RDEPEND="
 	>=virtual/zlib-1.3.1:=
 	dev-lang/python
 	$(llvm_gen_dep 'llvm-core/lld:${LLVM_SLOT}=')
+	libcxx? ( $(llvm_gen_dep '=llvm-runtimes/libcxx-${LLVM_SLOT}*') )
 "
+
+# Adapted from `llvm-r2.eclass`'s `llvm_gen_dep` to output conditional
+# dependency alocks, which isn't currently supported. If llvm-r2 or a future
+# eclass introduces `llvm_gen_cond_dep`, this definition should be dropped in
+# favor of that.
+#
+# Used to conditionally depend on GCC <16 for LLVM_SLOT <22; see `src_configure`
+# for more.
+_swift_llvm_gen_cond_dep() {
+	debug-print-function ${FUNCNAME} "$@"
+
+	[[ $# -ge 2 ]] || die "Usage: ${FUNCNAME} <dependency> <slot>..."
+
+	local dep=${1}
+	shift
+
+	local slot
+	for slot in "${_LLVM_SLOTS[@]}"; do
+		for match in $*; do
+			if [[ "$slot" == "${match}" ]]; then
+				echo "llvm_slot_${slot}? ( ${dep//\$\{LLVM_SLOT\}/${slot}} )"
+			fi
+		done
+	done
+}
 
 BDEPEND="
 	${PYTHON_DEPS}
@@ -104,7 +131,6 @@ BDEPEND="
 	>=dev-vcs/git-2.39
 	>=sys-apps/coreutils-9
 	>=sys-devel/gcc-11
-	<sys-devel/gcc-16
 	>=sys-libs/ncurses-6
 	>=virtual/zlib-1.3.1:=
 	|| (
@@ -115,6 +141,8 @@ BDEPEND="
 		llvm-core/clang:${LLVM_SLOT}=
 		llvm-core/lld:${LLVM_SLOT}=
 	')
+	libcxx? ( $(llvm_gen_dep '=llvm-runtimes/libcxx-${LLVM_SLOT}*') )
+	!libcxx? ( $(_swift_llvm_gen_cond_dep '<sys-devel/gcc-16' {17..21}) )
 	dev-lang/python
 	$(python_gen_cond_dep 'dev-python/setuptools[${PYTHON_USEDEP}]')
 "
@@ -209,14 +237,16 @@ src_configure() {
 		fi
 	fi
 
-	if [[ "$(tc-get-cxx-stdlib)" = 'libc++' ]]; then
-		# On systems which use libc++ as their default C++ stdlib (e.g. systems
-		# with the LLVM profile), we want to build the internal libc++ and
-		# ensure we link against it.
+	if use libcxx; then
 		extra_build_flags+=(
 			--libcxx
 			--extra-cmake-options=-DCLANG_DEFAULT_CXX_STDLIB=libc++
 		)
+	elif [[ "${LLVM_SLOT}" -ge 22 ]]; then
+		# While `__COUNTER__` is being standardized, Clang 22 considers it a C2Y
+		# extension, and produces compilation errors by default. The semantics
+		# haven't changed, so these can be downgraded to warnings.
+		append-cxxflags '-Wno-error=c2y-extensions'
 	else
 		# Swift is going to be building against GCC's libstdc++ using Clang, and
 		# GCC 16 libstdc++ headers can only be parsed by Clang 22 and later.
