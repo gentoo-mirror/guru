@@ -60,7 +60,6 @@ PATCHES=(
 	"${FILESDIR}/${PF}/lldb-cmake-minimum-version.patch"
 	"${FILESDIR}/${PF}/remove-linux-scc_h.patch"
 	"${FILESDIR}/${PF}/respect-c-cxx-flags.patch"
-	"${FILESDIR}/${PF}/sanitizer-remove-scc.patch"
 )
 
 S="${WORKDIR}"
