@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit meson optfeature git-r3
+inherit meson optfeature git-r3 xdg-utils
 
 DESCRIPTION="A lightweight Wayland shell and bar built directly on Wayland + OpenGL ES"
 HOMEPAGE="https://noctalia.dev/ https://github.com/noctalia-dev/noctalia"
@@ -35,6 +35,8 @@ DEPEND="
 	x11-libs/cairo[glib]
 	x11-libs/libxkbcommon
 	x11-libs/pango
+	dev-cpp/tomlplusplus
+	dev-libs/md4c
 "
 
 RDEPEND="${DEPEND}"
@@ -50,11 +52,14 @@ DOCS=( README.md CREDITS.md example.toml )
 src_configure() {
 	local emesonargs=(
 		$(meson_feature jemalloc)
+		-Dsystem_md4c=true
+		-Dsystem_tomlplusplus=true
 	)
 	meson_src_configure
 }
 
 pkg_postinst() {
+	xdg_icon_cache_update
 	optfeature "external display brightness control" app-misc/ddcutil
 	optfeature "hardware-accelerated screen recording" media-video/gpu-screen-recorder
 }
