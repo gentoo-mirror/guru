@@ -4,7 +4,7 @@
 EAPI="8"
 
 MY_PV="${PV//./\/}"
-MY_LLVM_PV="b7c1a6f8b447fba6fff47d309eb7ba1bc22e8c53"
+MY_LLVM_PV="040a641988f6ed6f4fab250706ca2b620c1de2d8"
 CMAKE_BUILD_TYPE="Release"
 PYTHON_COMPAT=( python3_{12..14} )
 inherit cmake python-r1
@@ -63,17 +63,6 @@ DOCS=(
 	"${S_CIRCT}/circt-LICENSE"
 )
 
-src_prepare() {
-	# mig.mlir lacks the libz3/circt-lec-jit REQUIRES guards its sibling
-	# circt-synth LEC tests carry, so it runs and fails when Z3 is
-	# unavailable instead of being skipped.  See
-	# https://bugs.gentoo.org/977874
-	pushd "${S_CIRCT}" > /dev/null || die
-	eapply "${FILESDIR}"/${PN}-1.140.0-mig-require-libz3.patch
-	popd > /dev/null || die
-	cmake_src_prepare
-}
-
 src_configure() {
 	python_setup
 
@@ -89,6 +78,12 @@ src_configure() {
 		# it, so the app-arch/zstd RDEPEND always matches.  See
 		# https://bugs.gentoo.org/977877
 		-D LLVM_ENABLE_ZSTD=FORCE_ON
+		# We do not link Z3 into circt, so the SMT/LEC passes and the z3
+		# integration tests cannot work.  Disable z3 discovery entirely so
+		# those tests are skipped instead of detected-but-broken.  Without
+		# this, a z3 binary on PATH enables the lit 'z3' feature and tests
+		# like circt-synth/functional-reduction-z3.mlir run and fail.
+		-D Z3_DISABLE=ON
 		-D LLVM_BUILD_EXAMPLES=OFF
 		-D LLVM_ENABLE_BINDINGS=OFF
 		-D LLVM_ENABLE_OCAMLDOC=OFF
@@ -105,6 +100,16 @@ src_test() {
 	# mlir-runner JIT tests that dlopen the MLIR runtime shared libraries,
 	# which our static CMAKE_SKIP_RPATH build does not expose, and which are
 	# out of scope for packaging CIRCT.  See https://bugs.gentoo.org/977441
+	#
+	# The circt-tblgen RTG instruction tests include mlir tablegen headers
+	# through circt's llvm submodule path (llvm/mlir/include), which is empty
+	# in the release tarball because we build against a separate llvm-project
+	# checkout.  Point it at the real tree so those tests find
+	# mlir/IR/OpBase.td instead of failing.
+	if [[ ! -L ${S_CIRCT}/llvm ]]; then
+		rmdir "${S_CIRCT}/llvm" || die
+		ln -s "${S_LLVM}" "${S_CIRCT}/llvm" || die
+	fi
 	pushd "${BUILD_DIR}" || die
 	eninja check-circt
 	eninja check-circt-integration
