@@ -11,7 +11,7 @@ inherit python-any-r1 llvm-r2
 DESCRIPTION="framework for Verilog RTL synthesis"
 HOMEPAGE="https://yosyshq.net/yosys/"
 SRC_URI="
-	https://github.com/YosysHQ/${PN}/releases/download/v${PV}/yosys.tar.gz -> ${P}.tar.gz
+	https://github.com/YosysHQ/${PN}/releases/download/v${PV}/yosys-src.tar.gz -> ${P}.tar.gz
 "
 S="${WORKDIR}"
 
