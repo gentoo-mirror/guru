@@ -1,10 +1,10 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="8"
 
 PYTHON_COMPAT=( python3_{12..14} )
-inherit python-r1 qmake-utils xdg
+inherit flag-o-matic python-r1 qmake-utils xdg
 
 DESCRIPTION="A open source IP-XACT-based tool"
 HOMEPAGE="
@@ -51,6 +51,12 @@ src_prepare() {
 
 src_configure() {
 	default
+	# The in-tree libKactusAPI and libIPXACTmodels must take link precedence
+	# over any copy from an already installed kactus2, otherwise the qmake
+	# LIBS order searches /usr/lib64 before ./executable and the binary links
+	# against the old ABI, failing with undefined references to freshly added
+	# symbols.  LFLAGS precede LIBS, so a build-dir -L here wins.
+	append-ldflags "-L${S}/executable"
 	# Fix bug 854075
 	# Fix bug 854078
 	eqmake6 Kactus2_Solution.pro
