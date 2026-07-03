@@ -1,0 +1,15 @@
+Add the libz3/circt-lec-jit REQUIRES guards that every other circt-synth
+LEC test already carries.  Without them mig.mlir runs its circt-lec
+--shared-libs=%libz3 commands even when Z3 is unavailable, and the JIT
+aborts on unresolved Z3 symbols instead of the test being skipped.
+
+https://bugs.gentoo.org/977874
+
+--- a/integration_test/circt-synth/mig.mlir
++++ b/integration_test/circt-synth/mig.mlir
+@@ -1,3 +1,5 @@
++// REQUIRES: libz3
++// REQUIRES: circt-lec-jit
+ // RUN: circt-opt %s --pass-pipeline='builtin.module(hw.module(hw-aggregate-to-comb,convert-comb-to-synth{target-ir=mig},convert-synth-to-comb))' -o %t.mlir
+ // RUN: circt-lec %t.mlir %s -c1=bit_logical -c2=bit_logical --shared-libs=%libz3 | FileCheck %s --check-prefix=COMB_BIT_LOGICAL
+ // COMB_BIT_LOGICAL: c1 == c2

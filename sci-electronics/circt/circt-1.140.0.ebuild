@@ -63,6 +63,17 @@ DOCS=(
 	"${S_CIRCT}/circt-LICENSE"
 )
 
+src_prepare() {
+	# mig.mlir lacks the libz3/circt-lec-jit REQUIRES guards its sibling
+	# circt-synth LEC tests carry, so it runs and fails when Z3 is
+	# unavailable instead of being skipped.  See
+	# https://bugs.gentoo.org/977874
+	pushd "${S_CIRCT}" > /dev/null || die
+	eapply "${FILESDIR}"/${PN}-1.140.0-mig-require-libz3.patch
+	popd > /dev/null || die
+	cmake_src_prepare
+}
+
 src_configure() {
 	python_setup
 
