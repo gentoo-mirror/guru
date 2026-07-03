@@ -27,6 +27,10 @@ BDEPEND="
 	virtual/pkgconfig
 "
 
+PATCHES=(
+	"${FILESDIR}/interception-tools-0.6.8-r2-cmake-version-3-10.patch"
+)
+
 src_install() {
 	cmake_src_install
 	systemd_dounit "udevmon.service"
