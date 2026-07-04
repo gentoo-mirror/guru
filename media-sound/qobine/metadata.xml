@@ -6,7 +6,10 @@
 		<email>freijon@pm.me</email>
 	</maintainer>
 	<upstream>
-		<remote-id type="github">SofusA/qobuz-player</remote-id>
-		<bugs-to>https://github.com/SofusA/qobuz-player/issues</bugs-to>
+		<remote-id type="github">SofusA/qobine</remote-id>
+		<bugs-to>https://github.com/SofusA/qobine/issues</bugs-to>
 	</upstream>
+	<use>
+		<flag name="server">Builds the standalone disconnect server</flag>
+	</use>
 </pkgmetadata>
