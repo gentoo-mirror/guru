@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit git-r3 linux-mod-r1
+inherit linux-mod-r1
 
 DESCRIPTION="A Nintendo HID kernel module"
 HOMEPAGE="https://github.com/nicman23/dkms-hid-nintendo https://github.com/DanielOgorchock/linux"
@@ -11,6 +11,16 @@ EGIT_REPO_URI="https://github.com/nicman23/dkms-hid-nintendo"
 
 LICENSE="GPL-2"
 SLOT="0"
+
+if [[ ${PV} == 9999 ]]; then
+	inherit git-r3
+	EGIT_REPO_URI="https://github.com/nicman23/dkms-hid-nintendo"
+else
+	MY_COMMIT=""
+	SRC_URI="https://github.com/nicman23/dkms-hid-nintendo/archive/${MY_COMMIT}.tar.gz -> ${P}.tar.gz"
+	S="${WORKDIR}/dkms-hid-nintendo-${MY_COMMIT}"
+	KEYWORDS="~amd64"
+fi
 
 CONFIG_CHECK="~HID ~HID_GENERIC ~USB_HID ~HIDRAW ~UHID"
 
