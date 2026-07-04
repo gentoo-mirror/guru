@@ -60,6 +60,9 @@ BDEPEND="
 	)
 "
 
+# raise default timeout
+# https://bugs.gentoo.org/978150
+: ${EPYTEST_TIMEOUT:=10}
 EPYTEST_PLUGINS=(
 	inline-snapshot
 	pytest-{asyncio,env,httpx,timeout}
