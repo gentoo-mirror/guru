@@ -16,7 +16,10 @@ CONFIG_CHECK="~HID ~HID_GENERIC ~USB_HID ~HIDRAW ~UHID"
 
 src_prepare() {
 	default
-	sed -i 's|<asm/unaligned.h>|<linux/unaligned.h>|' src/hid-nintendo.c || die
+	if kernel_is -ge 6 12; then
+		# header was moved in 6.12
+		sed -i 's|<asm/unaligned.h>|<linux/unaligned.h>|' src/hid-nintendo.c || die
+	fi
 }
 
 src_compile() {
