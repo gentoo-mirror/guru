@@ -44,6 +44,7 @@ RESTRICT="test"
 DEPEND="
 	dev-db/sqlite:3=
 	dev-libs/glib
+	dev-libs/openssl
 	media-libs/alsa-lib
 	sys-apps/dbus
 "
