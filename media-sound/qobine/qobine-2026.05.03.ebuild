@@ -12,20 +12,20 @@ declare -A GIT_CRATES=(
 
 RUST_MIN_VER="1.92"
 
-UPSTREAM_PN="qobine"
+OLD_PN="qobuz-player"
 UPSTREAM_PV="${PV//./-}"
+OLD_P="${OLD_PN}-${UPSTREAM_PV}"
 MY_P="${PN}-${UPSTREAM_PV}"
-UPSTREAM_P="${UPSTREAM_PN}-${UPSTREAM_PV}"
 
 inherit cargo
 
 DESCRIPTION="Tui, web and rfid player for Qobuz"
 HOMEPAGE="https://github.com/SofusA/qobine"
-SRC_URI="https://github.com/SofusA/${UPSTREAM_PN}/archive/refs/tags/v${UPSTREAM_PV}.tar.gz -> ${MY_P}.tar.gz"
-SRC_URI+=" https://github.com/gentoo-crate-dist/${PN}/releases/download/v${UPSTREAM_PV}/${MY_P}-crates.tar.xz"
+SRC_URI="https://github.com/SofusA/${PN}/archive/refs/tags/v${UPSTREAM_PV}.tar.gz -> ${OLD_P}.tar.gz"
+SRC_URI+=" https://github.com/gentoo-crate-dist/${OLD_PN}/releases/download/v${UPSTREAM_PV}/${OLD_P}-crates.tar.xz"
 SRC_URI+=" ${CARGO_CRATE_URIS}"
 
-S="${WORKDIR}/${UPSTREAM_P}"
+S="${WORKDIR}/${MY_P}"
 
 LICENSE="GPL-3"
 # Dependent crate licenses
