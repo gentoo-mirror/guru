@@ -1,50 +1,66 @@
-# Copyright 2025-2026 Gentoo Authors
+# Copyright 2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{12..15} )
+inherit meson optfeature git-r3 xdg
 
-inherit optfeature python-single-r1
-
-DESCRIPTION="A sleek and minimal desktop shell thoughtfully crafted for Wayland"
+DESCRIPTION="A lightweight Wayland shell and bar built directly on Wayland + OpenGL ES"
 HOMEPAGE="https://noctalia.dev/ https://github.com/noctalia-dev/noctalia"
 
-if [[ ${PV} == *9999 ]]; then
-	inherit git-r3
-	EGIT_REPO_URI="https://github.com/noctalia-dev/noctalia.git"
-	EGIT_BRANCH="legacy-v4"
-else
-	SRC_URI="https://github.com/noctalia-dev/noctalia/releases/download/v${PV}/noctalia-v${PV}.tar.gz"
-	KEYWORDS="~amd64"
-	S="${WORKDIR}/noctalia-release"
-fi
+EGIT_REPO_URI="https://github.com/noctalia-dev/noctalia.git"
 
-MY_PN="noctalia-shell"
 LICENSE="MIT"
 SLOT="0"
-REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
-RDEPEND="
-	${PYTHON_DEPS}
-	~gui-apps/noctalia-qs-9999
-	app-misc/brightnessctl
-	dev-vcs/git
-	media-gfx/imagemagick
+IUSE="+jemalloc"
+
+DEPEND="
+	dev-cpp/sdbus-c++
+	dev-libs/glib:2
+	jemalloc? ( dev-libs/jemalloc:= )
+	dev-libs/libxml2
+	dev-libs/wayland
+	gnome-base/librsvg:2
+	media-libs/fontconfig
+	media-libs/freetype
+	media-libs/libwebp
+	media-libs/mesa
+	media-video/pipewire
+	net-misc/curl
+	sci-libs/libqalculate
+	sys-auth/polkit
+	sys-libs/pam
+	virtual/opengl
+	x11-libs/cairo[glib]
+	x11-libs/libxkbcommon
+	x11-libs/pango
+	dev-cpp/tomlplusplus
+	dev-libs/md4c
 "
 
-src_install() {
-	insinto /etc/xdg/quickshell/${MY_PN}
-	insopts -m0755
-	doins -r .
+RDEPEND="${DEPEND}"
 
-	python_optimize "${ED}/etc/xdg/quickshell/${MY_PN}/Scripts/python/src"
-	python_fix_shebang "${ED}/etc/xdg/quickshell/${MY_PN}/Scripts/python/src"
+BDEPEND="
+	dev-libs/wayland
+	dev-libs/wayland-protocols
+	dev-util/wayland-scanner
+"
+
+DOCS=( {README,CREDITS}.md example.toml )
+
+src_configure() {
+	local emesonargs=(
+		$(meson_feature jemalloc)
+		-Dsystem_md4c=true
+		-Dsystem_tomlplusplus=true
+	)
+	meson_src_configure
 }
 
 pkg_postinst() {
-	optfeature "clipboard history support" app-misc/cliphist
-	optfeature "night light functionality" gui-apps/wlsunset
-	optfeature "power profile management" sys-power/power-profiles-daemon
+	xdg_pkg_postinst
+
 	optfeature "external display brightness control" app-misc/ddcutil
+	optfeature "hardware-accelerated screen recording" media-video/gpu-screen-recorder
 }
