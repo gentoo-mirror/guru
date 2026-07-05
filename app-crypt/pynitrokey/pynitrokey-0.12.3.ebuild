@@ -47,8 +47,8 @@ src_install(){
 
 	_NITROPY_COMPLETE=bash_source nitropy > nitropy.bash || die
 	newbashcomp nitropy.bash nitropy
-	_NITROPY_COMPLETE=zsh_source nitropy > nitropy.zsh || die
-	dozshcomp nitropy.zsh
+	_NITROPY_COMPLETE=zsh_source nitropy > _nitropy || die
+	dozshcomp _nitropy
 	_NITROPY_COMPLETE=fish_source nitropy > nitropy.fish || die
 	dofishcomp nitropy.fish
 }
