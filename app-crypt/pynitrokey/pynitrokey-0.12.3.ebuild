@@ -5,7 +5,7 @@ EAPI=8
 
 DISTUTILS_USE_PEP517=poetry
 PYTHON_COMPAT=( python3_{12..14} )
-inherit distutils-r1 optfeature
+inherit distutils-r1 optfeature shell-completion
 
 DESCRIPTION="A command line interface for the Nitrokey FIDO2, Start, 3 and NetHSM"
 HOMEPAGE="https://github.com/Nitrokey/pynitrokey"
@@ -41,6 +41,17 @@ RDEPEND="
 # tests require a connected nitrokey device and will destroy the data on it!
 # it would be bad if the user was not expecting this.
 RESTRICT="test"
+
+src_install(){
+	distutils-r1_src_install
+
+	_NITROPY_COMPLETE=bash_source nitropy > nitropy.bash || die
+	newbashcomp nitropy.bash nitropy
+	_NITROPY_COMPLETE=zsh_source nitropy > nitropy.zsh || die
+	dozshcomp nitropy.zsh
+	_NITROPY_COMPLETE=fish_source nitropy > nitropy.fish || die
+	dofishcomp nitropy.fish
+}
 
 pkg_postinst(){
 	optfeature "'piv' subcommand support" dev-python/pyscard
