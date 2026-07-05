@@ -18,7 +18,7 @@ SRC_URI="https://github.com/Textualize/textual/archive/refs/tags/v${PV}.tar.gz -
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~arm64"
 
 RDEPEND="
 	>=dev-python/markdown-it-py-2.1.0[${PYTHON_USEDEP}]
@@ -32,7 +32,8 @@ RDEPEND="
 declare -A SYNTAX_LANGS=(
 	["bash"]="Bash"
 	["c"]="C"
-	["cmake"]="CMake"
+	# TODO Missing keyword for ~arm64 in ::gentoo
+	#["cmake"]="CMake"
 	["cpp"]="C++"
 	["html"]="HTML"
 	["javascript"]="JavaScript"
@@ -41,7 +42,8 @@ declare -A SYNTAX_LANGS=(
 	# TODO No Python bindings in ::gentoo
 	#["markdown"]="Markdown"
 	["python"]="Python"
-	["ruby"]="Ruby"
+	# TODO Missing keyword for ~arm64 in ::gentoo
+	#["ruby"]="Ruby"
 	["rust"]="Rust"
 	# TODO Many other (common) languages are neither in ::gentoo nor ::guru
 )

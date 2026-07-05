@@ -37,6 +37,7 @@ RDEPEND="
 BDEPEND="
 	test? (
 		>=dev-python/docker-7.1.0[${PYTHON_USEDEP}]
+		>=dev-python/opentelemetry-sdk-1.33.0[${PYTHON_USEDEP}]
 	)
 "
 

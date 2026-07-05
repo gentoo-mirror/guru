@@ -62,7 +62,7 @@ LICENSE="MIT"
 # bundled dependencies
 LICENSE+=" Boost-1.0 MIT Unlicense"
 SLOT="0"
-IUSE="debug libnotify +plugins qtkeychain spell"
+IUSE="debug libnotify +plugins spell"
 
 RESTRICT="mirror"
 
@@ -76,7 +76,6 @@ RDEPEND="
 		x11-libs/gdk-pixbuf:2
 		x11-libs/libnotify
 	)
-	qtkeychain? ( dev-libs/qtkeychain:= )
 	spell? ( app-text/hunspell )
 "
 DEPEND="
@@ -165,8 +164,6 @@ src_configure() {
 	local CMAKE_BUILD_TYPE=$(usex debug Debug Release)
 
 	local mycmakeargs=(
-		-DUSE_SYSTEM_QTKEYCHAIN=ON
-		-DBUILD_WITH_QTKEYCHAIN=$(usex qtkeychain)
 		-DBUILD_WITH_QT6=ON
 		-DBUILD_WITH_LIBNOTIFY=$(usex libnotify)
 		-DCHATTERINO_PLUGINS=$(usex plugins)
