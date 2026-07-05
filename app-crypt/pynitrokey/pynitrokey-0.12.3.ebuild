@@ -42,15 +42,19 @@ RDEPEND="
 # it would be bad if the user was not expecting this.
 RESTRICT="test"
 
-src_install(){
-	distutils-r1_src_install
-
+python_compile_all(){
+	# https://github.com/Nitrokey/pynitrokey/blob/master/docs/packaging.md
 	_NITROPY_COMPLETE=bash_source nitropy > nitropy.bash || die
-	newbashcomp nitropy.bash nitropy
-	_NITROPY_COMPLETE=zsh_source nitropy > _nitropy || die
-	dozshcomp _nitropy
+	_NITROPY_COMPLETE=zsh_source nitropy > nitropy.zsh || die
 	_NITROPY_COMPLETE=fish_source nitropy > nitropy.fish || die
+}
+
+python_install_all(){
+	newbashcomp nitropy.bash nitropy
+	newzshcomp nitropy.zsh _nitropy
 	dofishcomp nitropy.fish
+
+	distutils-r1_python_install_all
 }
 
 pkg_postinst(){
