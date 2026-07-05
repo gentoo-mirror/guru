@@ -7,9 +7,6 @@ RPM_COMPRESS_TYPE="xz"
 
 inherit rpm
 
-MY_PV=$(ver_rs 3 '-')
-MY_P=fetchmail-${MY_PV}
-
 DESCRIPTION="A vehicle monitoring and management platform"
 HOMEPAGE="https://www.cmsv7.com"
 
