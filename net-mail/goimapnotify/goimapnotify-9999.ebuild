@@ -5,7 +5,7 @@ EAPI=8
 
 inherit go-module git-r3
 
-DESCRIPTION="Execute scripts on IMAP mailbox changes using IDLE, golang version."
+DESCRIPTION="Execute scripts on IMAP mailbox changes using IDLE, golang version"
 
 EGIT_REPO_URI="https://gitlab.com/shackra/goimapnotify.git"
 
