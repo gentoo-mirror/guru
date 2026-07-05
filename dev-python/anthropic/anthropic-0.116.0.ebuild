@@ -67,6 +67,7 @@ BDEPEND="
 		>=dev-python/rich-13.7.1[${PYTHON_USEDEP}]
 		>=dev-python/standardwebhooks-1.0.1[${PYTHON_USEDEP}]
 		net-libs/nodejs[npm]
+		net-misc/curl
 	)
 "
 
