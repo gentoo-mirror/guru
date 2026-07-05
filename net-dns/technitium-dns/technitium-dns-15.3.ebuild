@@ -22,7 +22,7 @@ inherit dotnet-pkg systemd
 
 MYPV="${PV}.0"
 SRC_URI_BASE="https://github.com/TechnitiumSoftware"
-DESCRIPTION="Open-source, self-hosted authoritative and recursive DNS+DHCP server."
+DESCRIPTION="Open-source, self-hosted authoritative and recursive DNS+DHCP server"
 HOMEPAGE="https://technitium.com/dns/"
 SRC_URI="
 	$SRC_URI_BASE/DnsServer/archive/refs/tags/v${MYPV}.tar.gz -> TechnitiumDnsServer-${MYPV}.tar.gz
