@@ -129,7 +129,9 @@ src_test() {
 	is_mock_running() {
 		local -a args
 		readarray -d '' args < "/proc/${mock_pid}/cmdline" 2>/dev/null || return 1
-		[[ "${args[1]}" == "${mock}" ]]
+
+		# Check args[1] (native) or args[2] (QEMU user-mode emulation)
+		[[ "${args[1]}" == "${mock}" || "${args[2]}" == "${mock}" ]]
 	}
 
 	local attempts=0
