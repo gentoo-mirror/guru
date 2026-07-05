@@ -1,0 +1,17 @@
+BDEPEND=dev-lang/swig dev-qt/qttools:6[linguist,qdoc]
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare
+DEPEND=python_targets_python3_12? ( dev-lang/python:3.12 ) python_targets_python3_13? ( dev-lang/python:3.13 ) python_targets_python3_14? ( dev-lang/python:3.14 ) dev-qt/qtbase:6=[cups,gui,network,opengl,widgets,xml] dev-qt/qtsvg:6
+DESCRIPTION=A open source IP-XACT-based tool
+EAPI=8
+HOMEPAGE=https://research.tuni.fi/system-on-chip/tools/ https://github.com/kactus2/kactus2dev
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=flag-o-matic python-r1 qmake-utils xdg
+IUSE=python_targets_python3_12 python_targets_python3_13 python_targets_python3_14
+KEYWORDS=~amd64
+LICENSE=GPL-2
+RDEPEND=python_targets_python3_12? ( dev-lang/python:3.12 ) python_targets_python3_13? ( dev-lang/python:3.13 ) python_targets_python3_14? ( dev-lang/python:3.14 ) dev-qt/qtbase:6=[cups,gui,network,opengl,widgets,xml] dev-qt/qtsvg:6
+REQUIRED_USE=|| ( python_targets_python3_12 python_targets_python3_13 python_targets_python3_14 )
+SLOT=0
+SRC_URI=https://github.com/kactus2/kactus2dev/archive/v3.14.1.tar.gz -> kactus2-3.14.1.tar.gz
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	out-of-source-utils	8e5093bd27b7f541a1913271f25d633a	multibuild	83db098a835f71feb71761f72a694aa2	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	python-utils-r1	18a01bee4e486884d7457cfacde74099	python-r1	5fdca77e34fc9af7d6eb47689f33f6bf	qt-utils	1dd132daf534f02545dcdf62050e3c87	qmake-utils	f7cfc8bbf7f3f3b27725c9cdfecd2476	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575
+_md5_=eb2b9c9f3ea38f9e1bbe2fb1c89de025

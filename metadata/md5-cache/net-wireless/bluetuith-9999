@@ -1,5 +1,5 @@
-BDEPEND=>=dev-lang/go-1.24.11:= app-arch/unzip >=dev-vcs/git-1.8.2.1[curl]
-DEFINED_PHASES=compile install prepare test unpack
+BDEPEND=>=dev-lang/go-1.25.0 >=dev-lang/go-1.24.11:= app-arch/unzip >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile install test unpack
 DESCRIPTION=A TUI bluetooth manager for Linux written in Go
 EAPI=8
 HOMEPAGE=https://bluetuith-org.github.io/bluetuith/
@@ -11,4 +11,4 @@ RDEPEND=net-wireless/bluez
 RESTRICT=test
 SLOT=0
 _eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	sysroot	4c36abaf94ebd3ab32f8abea9a444121	go-env	fca4e820393c2eac25a944be8bdf6a3a	go-module	22cfabf3120ed3f7bcd8b4a7697fbfba	git-r3	2f8cdb10b033f92c3136aa6488a31c98
-_md5_=6e02210e14ee73c8570a467122ccff52
+_md5_=f02df55ef67e91c42139e00d0fe4dd3d

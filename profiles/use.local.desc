@@ -182,6 +182,7 @@ dev-lang/gnu-apl:postgresql - Use postrgesql
 dev-lang/gnu-apl:python - Build the Python extension lib_gnu_apl.so
 dev-lang/gnu-apl:sqlite3 - Use sqlite3
 dev-lang/quickjs:lto - Enable Link Time Optimizations (improves performance and decreases size of executables)
+dev-lang/swift:libcxx - Build against llvm-runtimes/libcxx as the default C++ runtime library over GCC's libdstc++.
 dev-lang/swift-bootstrap:binary - Bootstrap from binary (dev-lang/swift-bin:5/10) instead of building from source (dev-lang/swift:5/10).
 dev-libs/feedbackd:daemon - Build the feedbackd daemon
 dev-libs/hts_engine:speech-tools - use memory allocation/free functions of app-accessibility/speech-tools
@@ -676,14 +677,12 @@ media-sound/musikcube:sndio - Build plugin to support sndio
 media-sound/musikcube:systemd - Build plugin to support MPRIS using systemd.
 media-sound/neocrystal:mouse - Includes toggleable mouse click support.
 media-sound/neocrystal:rpc - Includes Discord Rich Presence support
-media-sound/openaudible-bin:system-ffmpeg - Use the system-wide media-video/ffmpeg instead of bundled
-media-sound/openaudible-bin:system-jre - Use the system-wide virtual/jre instead of bundled
-media-sound/openaudible-bin:webapp - Include the OpenAudible webapp
 media-sound/orca-c:mouse - Enable or disable mouse features in the livecoding environment.
 media-sound/orca-c:portmidi - Enable or disable hardware MIDI output support with PortMidi.
 media-sound/piper:server - Enable server support
 media-sound/qbitmplayer:network - Allow a single instance of itself, thus subsequent calls to media-sound/qbitmplayer will just open the already opened instance of it.
 media-sound/qbitmplayer:video - Make media-sound/qbitmplayer not just a Music Player, but a Media Player by enabling its ability to play video files as well.
+media-sound/qobine:server - Builds the standalone disconnect server
 media-sound/spct:libspct - Build spct as a shared library (libspct) for use in other applications.
 media-sound/spotify-player:daemon - Enables running the app as a daemon
 media-sound/spotify-player:image - Enables basic image support for album artwork

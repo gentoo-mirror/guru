@@ -1,0 +1,14 @@
+BDEPEND=llvm_slot_22? ( llvm-core/clang:22 ) llvm_slot_22? ( || ( dev-lang/rust-bin:9999[llvm_slot_22] dev-lang/rust:9999[llvm_slot_22] dev-lang/rust-bin:1.95.0[llvm_slot_22] dev-lang/rust:1.95.0[llvm_slot_22] ) ) virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile configure install postinst prepare setup test unpack
+DESCRIPTION=A ready to go Wayland status bar for Hyprland and Niri
+EAPI=8
+HOMEPAGE=https://malpenzibo.github.io/ashell/
+INHERIT=cargo llvm-r1 systemd git-r3
+IUSE=+llvm_slot_22 debug
+LICENSE=MIT Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD-2 BSD CC0-1.0 CDLA-Permissive-2.0 GPL-3+ ISC MIT MPL-2.0 Unicode-3.0 ZLIB
+PROPERTIES=live
+RDEPEND=dev-libs/wayland-protocols media-fonts/symbols-nerd-font media-libs/libpulse media-video/pipewire:= sys-apps/dbus x11-libs/libxkbcommon
+REQUIRED_USE=^^ ( llvm_slot_22 )
+SLOT=0
+_eclasses_=llvm-utils	e7edb4086e31c8537574b263d899f826	llvm-r1	9b5d2fc033d156d6d787a0c739b2f988	toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	rust	c5ae4c9b5eca97bd7fc77fede663873f	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	983bdde2432d878045ca2524b9ff935d	systemd	a964c0cbe818b5729da1dbfcee5be861	git-r3	2f8cdb10b033f92c3136aa6488a31c98
+_md5_=1b3f249889a746e89a26424ba3c3ec56

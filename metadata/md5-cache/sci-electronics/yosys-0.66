@@ -1,0 +1,16 @@
+BDEPEND=|| ( dev-lang/python:3.14 dev-lang/python:3.13 dev-lang/python:3.12 ) dev-vcs/git virtual/pkgconfig
+DEFINED_PHASES=configure install setup
+DEPEND=dev-libs/boost:= dev-libs/libffi:= dev-lang/tcl:= llvm_slot_18? ( llvm-core/clang:18= ) llvm_slot_19? ( llvm-core/clang:19= ) llvm_slot_20? ( llvm-core/clang:20= ) llvm_slot_21? ( llvm-core/clang:21= ) media-gfx/xdot sys-libs/ncurses:= sys-libs/readline:= virtual/zlib
+DESCRIPTION=framework for Verilog RTL synthesis
+EAPI=8
+HOMEPAGE=https://yosyshq.net/yosys/
+INHERIT=python-any-r1 llvm-r2
+IUSE=+llvm_slot_21 llvm_slot_18 llvm_slot_19 llvm_slot_20
+KEYWORDS=~amd64
+LICENSE=ISC
+RDEPEND=dev-libs/boost:= dev-libs/libffi:= dev-lang/tcl:= llvm_slot_18? ( llvm-core/clang:18= ) llvm_slot_19? ( llvm-core/clang:19= ) llvm_slot_20? ( llvm-core/clang:20= ) llvm_slot_21? ( llvm-core/clang:21= ) media-gfx/xdot sys-libs/ncurses:= sys-libs/readline:= virtual/zlib
+REQUIRED_USE=^^ ( llvm_slot_18 llvm_slot_19 llvm_slot_20 llvm_slot_21 )
+SLOT=0
+SRC_URI=https://github.com/YosysHQ/yosys/releases/download/v0.66/yosys-src.tar.gz -> yosys-0.66.tar.gz
+_eclasses_=eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	python-utils-r1	18a01bee4e486884d7457cfacde74099	python-any-r1	891415dfe39ad9b41b461f2b86354af0	llvm-utils	e7edb4086e31c8537574b263d899f826	multilib	fc812e8eb2170022c28272d80a1f9e77	llvm-r2	6dfe5b52eedf1a8ebd3e0aa9b83c8a75
+_md5_=d028c0946c785780929623432eb02381
