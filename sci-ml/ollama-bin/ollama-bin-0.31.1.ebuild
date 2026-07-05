@@ -5,7 +5,7 @@ EAPI=8
 
 inherit unpacker systemd
 
-DESCRIPTION="Get up and running with local large language models."
+DESCRIPTION="Get up and running with local large language models"
 HOMEPAGE="https://ollama.com"
 SRC_URI="
 	amd64? (
