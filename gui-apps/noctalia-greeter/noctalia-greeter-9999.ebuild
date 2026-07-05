@@ -45,8 +45,6 @@ BDEPEND="
 	dev-libs/wayland-protocols
 "
 
-DOCS=( README.md )
-
 src_configure() {
 	local emesonargs=(
 		-Dsystem_tomlplusplus=true

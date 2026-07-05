@@ -43,5 +43,3 @@ BDEPEND="
 	dev-util/wayland-scanner
 	dev-libs/wayland-protocols
 "
-
-DOCS=( README.md )
