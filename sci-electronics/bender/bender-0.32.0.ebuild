@@ -257,3 +257,13 @@ src_configure() {
 	# the dependency manager without it, matching pre-0.32 behaviour.
 	cargo_src_configure --no-default-features
 }
+
+src_test() {
+	# The diagnostic tests compare the plain-text rendering of miette
+	# reports, but owo_colors injects ANSI escapes whenever it detects
+	# color support, which splits "caused by:" from the cause string and
+	# breaks test_stderr_contains_caused_by_chain (bug 978810).  Force
+	# color off so the rendered output stays plain.
+	local -x NO_COLOR=1
+	cargo_src_test
+}
