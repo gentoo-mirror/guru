@@ -5,6 +5,8 @@
 
 EAPI=8
 
+RUST_MIN_VER="1.92.0"
+
 CRATES="
 	adler2@2.0.1
 	aho-corasick@1.1.4
