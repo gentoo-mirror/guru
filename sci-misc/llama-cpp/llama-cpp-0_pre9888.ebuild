@@ -3,7 +3,7 @@
 
 EAPI=8
 
-ROCM_VERSION="6.3"
+ROCM_VERSION="7.1"
 
 inherit cmake cuda rocm linux-info
 
@@ -17,10 +17,7 @@ if [[ ${PV} == *9999* ]]; then
 	EGIT_REPO_URI="https://github.com/ggml-org/llama.cpp.git"
 else
 	MY_PV="b${PV#0_pre}"
-	SRC_URI="
-		https://github.com/ggml-org/llama.cpp/archive/refs/tags/${MY_PV}.tar.gz -> ${P}.tar.gz
-		webui? https://huggingface.co/buckets/ggml-org/llama-ui/resolve/b0
-	"
+	SRC_URI="https://github.com/ggml-org/llama.cpp/archive/refs/tags/${MY_PV}.tar.gz -> ${P}.tar.gz"
 	S="${WORKDIR}/llama.cpp-${MY_PV}"
 	KEYWORDS="~amd64"
 fi
@@ -60,9 +57,9 @@ CDEPEND="
 	flexiblas? ( sci-libs/flexiblas:= )
 	rocm? (
 		>=dev-util/hip-${ROCM_VERSION}:=
-		>=sci-libs/hipBLAS-${ROCM_VERSION}:=
+		>=sci-libs/hipBLAS-${ROCM_VERSION}:=[${ROCM_USEDEP}]
 		wmma? (
-			>=sci-libs/rocWMMA-${ROCM_VERSION}:=
+			>=sci-libs/rocWMMA-${ROCM_VERSION}:=[${ROCM_USEDEP}]
 		)
 	)
 	cuda? ( dev-util/nvidia-cuda-toolkit:= )
@@ -125,13 +122,6 @@ src_configure() {
 		-DCMAKE_INSTALL_RPATH="${EPREFIX}/usr/$(get_libdir)/llama.cpp"
 	)
 
-	if use webui ; then
-
-		mycmakeargs+=(
-			-DLLAMA_USE_PREBUILT_UI=ON
-		)
-	fi
-
 	if use openblas ; then
 		mycmakeargs+=(
 			-DGGML_BLAS=ON -DGGML_BLAS_VENDOR=OpenBLAS
@@ -170,7 +160,6 @@ src_configure() {
 
 src_install() {
 	cmake_src_install
-	dobin "${BUILD_DIR}/bin/rpc-server"
 
 	# avoid clashing with whisper.cpp
 	rm -rf "${ED}/usr/include"
