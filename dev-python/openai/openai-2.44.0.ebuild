@@ -6,7 +6,7 @@ EAPI=8
 DISTUTILS_USE_PEP517=hatchling
 PYTHON_COMPAT=( python3_{12..14} )
 
-inherit distutils-r1 pypi
+inherit distutils-r1
 
 # See https://github.com/openai/openai-python/blob/main/.stats.yml
 API_SPEC_BASE="https://storage.googleapis.com/stainless-sdk-openapi-specs/openai"
