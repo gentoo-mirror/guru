@@ -15,3 +15,28 @@ index 90f917b215..502f5b6fc5 100644
  add_subdirectory(bsdiff-courgette)
  add_subdirectory(glaze)
  add_subdirectory(minizip)
+diff --git a/libs/search/search_quality/CMakeLists.txt b/libs/search/search_quality/CMakeLists.txt
+index 376310e14e..6daeabd6ed 100644
+--- a/libs/search/search_quality/CMakeLists.txt
++++ b/libs/search/search_quality/CMakeLists.txt
+@@ -19,12 +19,12 @@ target_link_libraries(${PROJECT_NAME}
+     indexer
+ )
+ 
+-if (NOT SKIP_QT_GUI)
+-  omim_add_tool_subdirectory(assessment_tool)
++if (BUILD_TESTING)
++  if (NOT SKIP_QT_GUI)
++    omim_add_tool_subdirectory(assessment_tool)
++  endif()
++  omim_add_tool_subdirectory(features_collector_tool)
++  omim_add_tool_subdirectory(samples_generation_tool)
++  omim_add_tool_subdirectory(search_quality_tool)
++  omim_add_test_subdirectory(search_quality_tests)
+ endif()
+-
+-omim_add_tool_subdirectory(features_collector_tool)
+-omim_add_tool_subdirectory(samples_generation_tool)
+-omim_add_tool_subdirectory(search_quality_tool)
+-
+-omim_add_test_subdirectory(search_quality_tests)

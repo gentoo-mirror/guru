@@ -25,7 +25,7 @@ EGIT_SUBMODULES=(
 	3party/imgui/imgui
 )
 
-IUSE="+test"
+IUSE="test"
 DESCRIPTION="Offline maps and navigation using OpenStreetMap data"
 HOMEPAGE="https://organicmaps.app"
 
