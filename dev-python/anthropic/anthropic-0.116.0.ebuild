@@ -1,4 +1,4 @@
-# Copyright 2024-2026 Gentoo Authors
+# Copyright 2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -6,12 +6,13 @@ EAPI=8
 DISTUTILS_USE_PEP517=hatchling
 PYTHON_COMPAT=( python3_{12..14} )
 
-inherit distutils-r1 optfeature pypi
+inherit distutils-r1 optfeature
 
 # See https://github.com/anthropics/anthropic-sdk-python/blob/main/.stats.yml
 API_SPEC_BASE="https://storage.googleapis.com/stainless-sdk-openapi-specs/anthropic"
 API_SPEC="anthropic-openapi-spec-${PV}.yml"
 MY_PN="anthropic-sdk-python"
+MY_P="${MY_PN}-${PV}"
 # See https://github.com/anthropics/anthropic-sdk-python/blob/main/scripts/mock
 STDY_PV=0.22.1
 DESCRIPTION="The official Python library for the anthropic API"
@@ -21,7 +22,7 @@ HOMEPAGE="
 "
 SRC_URI="
 	https://github.com/anthropics/${MY_PN}/archive/refs/tags/v${PV}.tar.gz
-		-> ${MY_PN}-${PV}.gh.tar.gz
+		-> ${MY_P}.gh.tar.gz
 
 	test? (
 		${API_SPEC_BASE}/anthropic-506a5ad71d522b4ae56ac3429380486647af1f92eddde80603480fb592d62b54.yml
@@ -41,7 +42,7 @@ SRC_URI="
 		)
 	)
 "
-S="${WORKDIR}/${MY_PN}-${PV}"
+S="${WORKDIR}/${MY_P}"
 
 LICENSE="MIT"
 SLOT="0"
