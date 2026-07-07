@@ -11,6 +11,7 @@ HOMEPAGE="https://github.com/ryanoasis/nerd-fonts"
 LICENSE="OFL-1.1"
 SLOT="0"
 KEYWORDS="~amd64 ~arm64"
+S="${WORKDIR}"
 
 FONTS=(
 	0xProto 3270 AdwaitaMono Agave AnonymousPro Arimo AtkinsonHyperlegibleMono
