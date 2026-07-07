@@ -4,6 +4,7 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{12..14} )
+
 inherit python-single-r1
 
 DESCRIPTION="Script to edit a single file as root using run0"
@@ -13,7 +14,7 @@ if [[ ${PV} == *9999 ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/HastD/run0edit.git"
 else
-	SRC_URI="https://github.com/HastD/run0edit/releases/download/v${PV}/run0edit-${PV}.tar.gz"
+	SRC_URI="https://github.com/HastD/run0edit/releases/download/v${PV}/${P}.tar.gz"
 	KEYWORDS="~amd64"
 fi
 
