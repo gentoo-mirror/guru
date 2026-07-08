@@ -280,7 +280,7 @@ CRATES="
 	winnow@0.6.7
 "
 
-inherit cargo desktop
+inherit cargo desktop xdg
 
 DESCRIPTION="Unit conversion tool, similar to frink"
 HOMEPAGE="https://rinkcalc.app/about/"
@@ -292,7 +292,7 @@ SRC_URI="
 
 S="${WORKDIR}/rink"
 
-LICENSE="MPL-2.0"
+LICENSE="MPL-2.0 GPL-3"
 # Dependent crate licenses
 LICENSE+="
 	Apache-2.0 BSD-2 BSD Boost-1.0 CC0-1.0 MIT MPL-2.0 Unicode-DFS-2016
@@ -300,11 +300,15 @@ LICENSE+="
 
 SLOT="0"
 KEYWORDS="~amd64 ~arm64"
-IUSE="doc"
+IUSE="doc bundle-files test"
+REQUIRED_USE="test? ( bundle-files )"
 
 # restrict mirror while in ::guru for faster downloads
 # (and to avoid needing a volunteer to host the dep tarball)
-RESTRICT="mirror"
+RESTRICT="
+	mirror
+	!test? ( test )
+"
 
 DEPEND+="
 	net-misc/curl
@@ -318,6 +322,12 @@ QA_FLAGS_IGNORED="usr/bin/rink"
 src_configure() {
 	# RINK_PATH is used in the build process to define the data file location
 	export RINK_PATH=/usr/share/rink
+
+	local myfeatures=(
+		$(usev bundle-files)
+	)
+
+	# we build without default features, so that we don't bundle the definitions in
 	cargo_src_configure --no-default-features
 }
 
@@ -331,9 +341,7 @@ src_install() {
 
 	newicon -s 192 "${S}/web/site/images/icons/icon-192x192.png" rink.png
 	newicon -s 512 "${S}/web/site/images/icons/icon-512x512.png" rink.png
-	# rink.desktop is in the tree, but not part of 0.8.0
-	# newmenu "cli/rink.desktop" "rink.desktop"
-	make_desktop_entry "/usr/bin/rink" Rink rink "Utility;Calculator;ConsoleOnly"
+	domenu "cli/rink.desktop"
 
 	doman build/rink.1
 	doman build/rink.5
