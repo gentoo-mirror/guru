@@ -10,14 +10,7 @@ S="${WORKDIR}/hts_engine_API-${PV}"
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="speech-tools"
-
-DEPENDS="speech-tools? ( app-accessibility/speech-tools )"
 
 PATCHES=(
 	"${FILESDIR}/hts_engine-1.10-musl.patch"
 )
-
-src_configure() {
-	econf $(use_enable speech-tools festival)
-}
