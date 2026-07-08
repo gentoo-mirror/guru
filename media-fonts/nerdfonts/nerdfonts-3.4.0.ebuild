@@ -7,11 +7,11 @@ inherit font
 
 DESCRIPTION="Patched font collection with a high number of glyphs (icons)"
 HOMEPAGE="https://github.com/ryanoasis/nerd-fonts"
+S="${WORKDIR}"
 
 LICENSE="OFL-1.1"
 SLOT="0"
 KEYWORDS="~amd64 ~arm64"
-S="${WORKDIR}"
 
 FONTS=(
 	0xProto 3270 AdwaitaMono Agave AnonymousPro Arimo AtkinsonHyperlegibleMono
