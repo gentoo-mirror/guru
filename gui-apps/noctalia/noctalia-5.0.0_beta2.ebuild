@@ -3,12 +3,16 @@
 
 EAPI=8
 
-inherit meson optfeature git-r3 xdg
+inherit meson optfeature xdg
+
+MY_PV="${PV/_/-}"
+MY_P="${PN}-${MY_PV}"
 
 DESCRIPTION="A lightweight Wayland shell and bar built directly on Wayland + OpenGL ES"
 HOMEPAGE="https://noctalia.dev/ https://github.com/noctalia-dev/noctalia"
 
-EGIT_REPO_URI="https://github.com/noctalia-dev/noctalia.git"
+SRC_URI="https://github.com/noctalia-dev/noctalia/archive/v${MY_PV}.tar.gz -> ${P}.tar.gz"
+S="${WORKDIR}/${MY_P}"
 
 LICENSE="MIT"
 SLOT="0"
