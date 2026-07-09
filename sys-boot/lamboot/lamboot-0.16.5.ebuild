@@ -1,9 +1,10 @@
+# Copyright 2026 Gentoo Authors
 # Copyright 2026 Lamco Development LLC
-# Distributed under the terms of the MIT or Apache-2.0 license
+# Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..14} )
+PYTHON_COMPAT=( python3_{12..15} )
 inherit python-single-r1 shell-completion
 
 DESCRIPTION="Memory-safe UEFI bootloader for Linux, written in Rust"
@@ -16,7 +17,6 @@ HOMEPAGE="https://lamco.ai/products/lamboot/ https://github.com/lamco-admin/lamb
 # separate track, gated on whether LamBoot builds on stable rustc for the
 # *-unknown-uefi targets without -Z build-std (see ../../../PACKAGING.md).
 SRC_URI="https://github.com/lamco-admin/lamboot/releases/download/v${PV}/lamboot-${PV}-x86_64.tar.gz"
-S="${WORKDIR}/lamboot-${PV}"
 
 LICENSE="MIT Apache-2.0"
 SLOT="0"
@@ -42,21 +42,40 @@ QA_PREBUILT="usr/share/lamboot/EFI/LamBoot/*.efi
 	usr/share/lamboot/EFI/LamBoot/modules/*.efi
 	usr/share/lamboot/EFI/LamBoot/drivers/*/*.efi"
 
+src_prepare() {
+	default
+
+	# Drop any Python bytecode the artifact carried; it is regenerated at
+	# runtime and would otherwise pull host paths into the package.
+	find . -type d -name __pycache__ -exec rm -rf {} + || die
+	find . -type f -name '*.pyc' -delete || die
+
+	# Normalise permissions: directories 0755, files 0644, keeping the
+	# executable bit where the tarball already set it (lamboot-install,
+	# lamboot-inspect, sign-lamboot.sh + its sign-lock/sign-unlock helpers,
+	# the .efi loaders). Mirrors the deb's `chmod -R u=rwX,go=rX`. The
+	# wholesale cp in src_install then preserves these modes.
+	chmod -R u=rwX,go=rX . || die "failed to normalise source perms"
+
+	# Pin the Python diagnostic scripts' shebangs to the selected interpreter
+	# (python-single-r1). lamboot-host-sampler and the rest are bash, left as-is.
+	python_fix_shebang lamboot-inspect lamboot-monitor.py
+}
+
 src_install() {
-	# Stage the whole distribution under /usr/share/lamboot. This is
-	# lamboot-install's SRC_DIR: it searches /usr/share/lamboot,
-	# /usr/local/share/lamboot, then /opt/lamboot, and copies the .efi to the
-	# operator's ESP from there. We copy the tree wholesale (preserving the
-	# tarball's +x bits on scripts) rather than using doins, which would force
-	# 0644 and break lamboot-install's exec of its sibling helpers.
-	#
-	# Exclude build/packaging metadata, the man page, completions, docs, the
-	# top-level README/CHANGELOG/SECURITY/LICENSE files, the manifest, and
-	# Python bytecode: those are installed to their own paths below (or not at
-	# all), and lamboot-install does not read them from SRC_DIR.
+	# Stage the whole distribution under /usr/share/lamboot — lamboot-install's
+	# SRC_DIR (it searches /usr/share/lamboot, /usr/local/share/lamboot, then
+	# /opt/lamboot, and copies the .efi to the operator's ESP from there). Copy
+	# the tree wholesale to preserve the +x bits on scripts, rather than doins
+	# (which forces 0644 and would break lamboot-install's exec of its siblings).
 	local share="${ED}/usr/share/lamboot"
 	dodir /usr/share/lamboot
 	cp -a "${S}"/. "${share}"/ || die "failed to stage distribution"
+
+	# Prune the copies installed to their own paths below (man, completions,
+	# the README/CHANGELOG/SECURITY docs) or not installed at all (packaging,
+	# docs, the license texts, the manifest); lamboot-install reads none of
+	# them from SRC_DIR.
 	rm -rf \
 		"${share}"/packaging \
 		"${share}"/man \
@@ -69,23 +88,6 @@ src_install() {
 		"${share}"/LICENSE-APACHE \
 		"${share}"/MANIFEST.sha256 \
 		|| die "failed to prune staged tree"
-	# Drop any Python bytecode the artifact carried; it is regenerated at
-	# runtime and would otherwise pull host paths into the package.
-	find "${share}" -type d -name __pycache__ -exec rm -rf {} + || die
-	find "${share}" -type f -name '*.pyc' -delete || die
-
-	# Normalise staged permissions: directories 0755, files 0644, but keep the
-	# executable bit on the scripts/binaries that carried it (lamboot-install,
-	# lamboot-inspect, sign-lamboot.sh and its sign-lock/sign-unlock helpers,
-	# the .efi loaders, etc.). No group/other write. Mirror the deb's
-	# `chmod -R u=rwX,go=rX`, which preserves +x where it was already set.
-	chmod -R u=rwX,go=rX "${share}" || die "failed to normalise staged perms"
-
-	# Pin the Python diagnostic scripts' shebangs to the selected interpreter
-	# (python-single-r1). lamboot-host-sampler and the rest are bash, left as-is.
-	python_fix_shebang \
-		"${share}"/lamboot-inspect \
-		"${share}"/lamboot-monitor.py
 
 	# esp-deploy.sh at the canonical literal path. lamboot-install checks
 	# /usr/lib/lamboot/esp-deploy.sh first, then the script-relative
@@ -110,17 +112,9 @@ src_install() {
 	newbashcomp completions/lamboot-inspect.bash lamboot-inspect
 	dozshcomp completions/_lamboot-inspect
 
-	# Documentation and dual license.
+	# Documentation. The MIT and Apache-2.0 license texts are not installed:
+	# both are in Gentoo's license tree and tracked via LICENSE above.
 	dodoc README.md CHANGELOG.md SECURITY.md
-	# The -bin tarball is thinned (PACKAGING.md §0): the full docs/ tree lives in
-	# the public repo + website, not the artifact, so it is absent here. Install
-	# it only if present, otherwise dodoc dies against the thinned tarball.
-	if [[ -d docs ]]; then
-		dodoc -r docs/.
-	fi
-	# Gentoo installs license texts under /usr/share/licenses/<pkg>.
-	insinto /usr/share/licenses/${PN}
-	doins LICENSE-MIT LICENSE-APACHE
 
 	# Note what we deliberately do NOT install: the systemd units, the
 	# kernel-install plugin, the kernel-event hooks, and lamboot-kernel-hook.
