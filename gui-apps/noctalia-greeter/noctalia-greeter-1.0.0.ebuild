@@ -35,7 +35,6 @@ DEPEND="
 	x11-libs/cairo[glib]
 	x11-libs/libxkbcommon
 	x11-libs/pango
-	dev-libs/libinput
 "
 
 RDEPEND="${DEPEND}"
