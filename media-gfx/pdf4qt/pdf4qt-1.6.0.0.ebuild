@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
-inherit cmake xdg
+inherit cmake flag-o-matic xdg
 
 DESCRIPTION="Open source PDF WYSIWYG editor based on Qt"
 HOMEPAGE="https://jakubmelka.github.io/"
@@ -20,16 +20,16 @@ fi
 
 LICENSE="MIT"
 SLOT="0"
-IUSE="test"
+IUSE="debug test"
 RESTRICT="!test? ( test )"
 
 RDEPEND="
 	dev-cpp/tbb:=
 	dev-libs/openssl:=
-	dev-qt/qtbase:6[gui,widgets,xml]
+	dev-qt/qtbase:6[concurrent,gui,widgets,xml]
 	dev-qt/qtspeech:6
 	dev-qt/qtsvg:6
-	<media-libs/blend2d-0.20:=
+	>=media-libs/blend2d-0.20:=
 	media-libs/freetype
 	media-libs/lcms:2
 	media-libs/libjpeg-turbo:=
@@ -41,20 +41,15 @@ DEPEND="$RDEPEND
 "
 
 DOCS=( NOTES.txt README.md RELEASES.txt )
-PATCHES=(
-	"${FILESDIR}/${PN}-1.4.0.0-minor-fix-remove-extention-from-Icon-endtry-in-a-des.patch"
-	"${FILESDIR}/${P}-Minimal-cmake-fixes.patch"
-	"${FILESDIR}/${P}-Make-building-of-tests-optional.patch"
-	"${FILESDIR}/${P}-Make-runtime-respect-cmake-s-plugin-dir-settings.patch"
-	"${FILESDIR}/${P}-Fix-translation-install-path-on-nix.patch"
-)
 
 src_configure() {
+	# without NDEBUG it shows annoying warning about keyboard accelerators reuse
+	use debug || append-cxxflags -DNDEBUG
+
 	local mycmakeargs=(
 		-DPDF4QT_INSTALL_DEPENDENCIES=OFF
 		-DPDF4QT_INSTALL_TO_USR=OFF
 		-DPDF4QT_BUILD_TESTS="$(usex test)"
-		-DVCPKG_OVERLAY_PORTS="" # suppress a warning
 	)
 	cmake_src_configure
 }
