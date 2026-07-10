@@ -248,3 +248,5 @@ https://github.com/nehadyounis/loghew/releases/download/v${PV}/source.tar.gz -> 
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
+
+QA_FLAGS_IGNORED="usr/bin/loghew"
