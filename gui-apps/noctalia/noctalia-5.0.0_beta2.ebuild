@@ -46,7 +46,10 @@ DEPEND="
 	x11-libs/pango
 "
 
-RDEPEND="${DEPEND}"
+RDEPEND="
+	${DEPEND}
+	dev-vcs/git
+"
 
 BDEPEND="
 	dev-libs/wayland
