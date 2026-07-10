@@ -27,18 +27,40 @@ QA_FLAGS_IGNORED="
 
 inherit xdg
 
-RDEPEND="media-libs/libva-compat[X]
-x11-libs/libvdpau
-dev-libs/libxml2-compat
-dev-libs/glib
-dev-libs/openssl
-media-libs/libpng
-x11-libs/cairo
-x11-libs/libX11
-x11-libs/libXext
-x11-libs/libXrender
-dev-util/lttng-ust-compat
-sys-apps/pcsc-lite
+RDEPEND="
+	media-libs/libva[X]
+	dev-libs/glib:2
+	dev-libs/libglibutil
+	dev-libs/libxml2
+	dev-libs/libxml2-compat
+	dev-libs/openssl
+	dev-util/lttng-ust-compat
+	media-libs/fontconfig
+	media-libs/gstreamer:1.0
+	media-libs/gst-plugins-base:1.0
+	media-libs/harfbuzz
+	media-libs/libpng:0/16
+	media-libs/libpulse
+	media-libs/libv4l
+	media-libs/libva-compat[X]
+	media-libs/mesa
+	sys-apps/pcsc-lite
+	x11-libs/cairo[X]
+	x11-libs/gtk+:3
+	x11-libs/libX11
+	x11-libs/libXcursor
+	x11-libs/libXdamage
+	x11-libs/libXext
+	x11-libs/libXfixes
+	x11-libs/libXi
+	x11-libs/libXinerama
+	x11-libs/libXrandr
+	x11-libs/libXrender
+	x11-libs/libXtst
+	x11-libs/libdrm
+	x11-libs/libvdpau
+	x11-libs/libxcb
+	x11-libs/libxkbfile
 "
 
 src_unpack() {
