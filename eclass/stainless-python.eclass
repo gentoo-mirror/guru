@@ -119,24 +119,24 @@ _stainless_set_globals() {
 				-> ${STAINLESS_SPEC_DISTNAME}
 
 			${stdy_base_uri}/cli/-/cli-${stdy_pv}.tgz
-				-> @stdy-cli-cli-${stdy_pv}.tgz
+				-> stdy-cli-${stdy_pv}.npm.tgz
 
 			amd64? (
 				${stdy_base_uri}/cli-linux-x64/-/cli-linux-x64-${stdy_pv}.tgz
-					-> @stdy-cli-linux-x64-cli-linux-x64-${stdy_pv}.tgz
+					-> stdy-cli-linux-x64-${stdy_pv}.npm.tgz
 			)
 
 			arm64? (
 				${stdy_base_uri}/cli-linux-arm64/-/cli-linux-arm64-${stdy_pv}.tgz
-					-> @stdy-cli-linux-arm64-cli-linux-arm64-${stdy_pv}.tgz
+					-> stdy-cli-linux-arm64-${stdy_pv}.npm.tgz
 			)
 		)
 	"
 
 	STAINLESS_MOCK_SERVER_DISTFILES=(
-		"@stdy-cli-cli-${stdy_pv}.tgz"
-		"@stdy-cli-linux-x64-cli-linux-x64-${stdy_pv}.tgz"
-		"@stdy-cli-linux-arm64-cli-linux-arm64-${stdy_pv}.tgz"
+		"stdy-cli-${stdy_pv}.npm.tgz"
+		"stdy-cli-linux-x64-${stdy_pv}.npm.tgz"
+		"stdy-cli-linux-arm64-${stdy_pv}.npm.tgz"
 	)
 	readonly STAINLESS_MOCK_SERVER_DISTFILES
 
