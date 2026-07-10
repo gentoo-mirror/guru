@@ -18,6 +18,12 @@ SLOT="0"
 KEYWORDS="~amd64"
 RESTRICT="mirror strip"
 QA_SONAME="usr/lib64/libpcoip_client.so"
+QA_FLAGS_IGNORED="
+	usr/lib64/libpcoip_client.so
+	usr/lib64/libclientSdkCPrimitive.so
+	usr/lib64/pcoip/.*
+	usr/lib64/omnissa/.*
+"
 
 inherit xdg
 
