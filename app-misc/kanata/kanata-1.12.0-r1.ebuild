@@ -268,3 +268,10 @@ src_configure() {
 	)
 	cargo_src_configure
 }
+
+src_install() {
+	cargo_src_install
+
+	exeinto /etc/user/init.d
+	newexe "${FILESDIR}"/kanata.initd kanata
+}
