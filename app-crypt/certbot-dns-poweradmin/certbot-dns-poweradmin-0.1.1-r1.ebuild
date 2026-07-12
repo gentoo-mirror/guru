@@ -8,7 +8,7 @@ PYTHON_COMPAT=(python3_{12..14})
 
 inherit distutils-r1 pypi
 
-DESCRIPTION="Certbot plugin for authentication using PowerAdmin."
+DESCRIPTION="Certbot plugin for authentication using PowerAdmin"
 HOMEPAGE="
 	https://github.com/poweradmin/certbot-dns-poweradmin/
 	https://www.poweradmin.org/

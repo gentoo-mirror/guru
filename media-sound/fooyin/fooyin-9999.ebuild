@@ -22,10 +22,10 @@ fi
 LICENSE="GPL-3"
 SLOT="0"
 
-IUSE="alsa +archive gme openmpt +pipewire +replaygain sdl sndfile soundtouch soxr test"
+IUSE="alsa +archive gme openmpt +pipewire projectm pulseaudio +replaygain sdl sndfile soundtouch soxr test"
 RESTRICT="!test? ( test )"
 REQUIRED_USE="
-	|| ( alsa pipewire sdl )
+	|| ( alsa pipewire pulseaudio sdl )
 "
 
 RDEPEND="
@@ -43,6 +43,11 @@ RDEPEND="
 	gme? ( media-libs/game-music-emu )
 	openmpt? ( media-libs/libopenmpt )
 	pipewire? ( media-video/pipewire:= )
+	projectm? (
+		dev-qt/qtbase:6[opengl]
+		media-libs/libprojectm:4=
+	)
+	pulseaudio? ( media-libs/libpulse )
 	replaygain? ( media-libs/libebur128:= )
 	sdl? ( media-libs/libsdl2 )
 	sndfile? ( media-libs/libsndfile )
@@ -74,6 +79,8 @@ src_configure() {
 		$(cmake_use_find_package gme LIBGME)
 		$(cmake_use_find_package openmpt OpenMpt)
 		$(cmake_use_find_package pipewire PipeWire)
+		$(cmake_use_find_package pulseaudio PulseAudio)
+		$(cmake_use_find_package projectm projectM4)
 		$(cmake_use_find_package replaygain Ebur128)
 		$(cmake_use_find_package sdl SDL2)
 		$(cmake_use_find_package sndfile SndFile)

@@ -5,7 +5,7 @@ EAPI=8
 
 inherit go-module
 
-DESCRIPTION="Execute scripts on IMAP mailbox changes using IDLE, golang version."
+DESCRIPTION="Execute scripts on IMAP mailbox changes using IDLE, golang version"
 
 HOMEPAGE="https://gitlab.com/shackra/goimapnotify"
 

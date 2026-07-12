@@ -3,7 +3,7 @@
 
 EAPI=8
 
-RUST_MIN_VER="1.83.0"
+RUST_MIN_VER="1.87.0"
 
 # Crate list bundled into a single tarball published at
 # https://github.com/vowstar/vowstar-overlay-dist
@@ -63,5 +63,9 @@ src_compile() {
 
 src_install() {
 	cargo_src_install
+	# docs/cookbook ships a pre-compressed sample dataset that would be
+	# installed as an already-compressed file, tripping the QA check for
+	# compressed files in /usr/share/doc (bug 978812).
+	rm "${S}"/docs/cookbook/resources/dataviz.tar.gz || die
 	einstalldocs
 }

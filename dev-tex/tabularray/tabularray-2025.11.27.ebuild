@@ -7,7 +7,8 @@ inherit latex-package
 
 DESCRIPTION="Typeset tabulars and arrays with LATEX3"
 HOMEPAGE="https://www.ctan.org/pkg/tabularray/"
-SRC_URI="https://github.com/lvjr/tabularray/archive/refs/tags/2025C.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/lvjr/tabularray/archive/refs/tags/2025C.tar.gz -> ${P}.tar.gz
+	doc? ( https://github.com/lvjr/tabularray/releases/download/2025C/tabularray-2025C.zip -> ${P}-doc.zip )"
 
 S="${WORKDIR}/${PN}-2025C"
 
@@ -23,7 +24,8 @@ RDEPEND="
 	dev-texlive/texlive-plaingeneric
 "
 DEPEND="${RDEPEND}"
-BDEPEND="${RDEPEND}"
+BDEPEND="${RDEPEND}
+	doc? ( app-arch/unzip )"
 
 TEXMF="/usr/share/texmf-site"
 
@@ -31,6 +33,9 @@ src_install() {
 	latex-package_src_doinstall styles
 	dodoc README.md
 	if use doc ; then
+		# Upstream ships the manual only as a prebuilt PDF in the release
+		# archive, so install that rather than rebuilding with lualatex.
+		cp "${WORKDIR}"/${PN}/tabularray.pdf "${S}"/ || die
 		latex-package_src_doinstall pdf
 	fi
 }

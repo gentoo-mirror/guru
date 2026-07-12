@@ -21,19 +21,20 @@ SLOT="0"
 
 DEPEND="
 	dev-libs/glib:2
+	dev-libs/libinput
 	dev-libs/wayland
 	gnome-base/librsvg:2
-	media-libs/fontconfig
-	media-libs/freetype
-	sys-apps/dbus
 	gui-libs/greetd
 	gui-libs/wlroots:0.20=
-	x11-libs/pango
+	media-libs/fontconfig
+	media-libs/freetype
 	media-libs/libwebp
 	media-libs/mesa
+	sys-apps/dbus
 	virtual/opengl
 	x11-libs/cairo[glib]
 	x11-libs/libxkbcommon
+	x11-libs/pango
 "
 
 RDEPEND="${DEPEND}"

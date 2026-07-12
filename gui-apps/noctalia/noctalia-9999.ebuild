@@ -16,10 +16,14 @@ SLOT="0"
 IUSE="+jemalloc"
 
 DEPEND="
+	dev-cpp/nlohmann_json
 	dev-cpp/sdbus-c++
+	dev-cpp/tomlplusplus
 	dev-libs/glib:2
 	jemalloc? ( dev-libs/jemalloc:= )
 	dev-libs/libxml2
+	dev-libs/md4c
+	dev-libs/stb
 	dev-libs/wayland
 	gnome-base/librsvg:2
 	media-libs/fontconfig
@@ -27,6 +31,7 @@ DEPEND="
 	media-libs/libwebp
 	media-libs/mesa
 	media-video/pipewire
+	media-video/wireplumber
 	net-misc/curl
 	sci-libs/libqalculate
 	sys-auth/polkit
@@ -35,11 +40,12 @@ DEPEND="
 	x11-libs/cairo[glib]
 	x11-libs/libxkbcommon
 	x11-libs/pango
-	dev-cpp/tomlplusplus
-	dev-libs/md4c
 "
 
-RDEPEND="${DEPEND}"
+RDEPEND="
+	${DEPEND}
+	dev-vcs/git
+"
 
 BDEPEND="
 	dev-libs/wayland
@@ -52,8 +58,6 @@ DOCS=( {README,CREDITS}.md example.toml )
 src_configure() {
 	local emesonargs=(
 		$(meson_feature jemalloc)
-		-Dsystem_md4c=true
-		-Dsystem_tomlplusplus=true
 	)
 	meson_src_configure
 }

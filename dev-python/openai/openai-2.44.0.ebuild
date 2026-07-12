@@ -6,7 +6,7 @@ EAPI=8
 DISTUTILS_USE_PEP517=hatchling
 PYTHON_COMPAT=( python3_{12..14} )
 
-inherit distutils-r1 pypi
+inherit distutils-r1
 
 # See https://github.com/openai/openai-python/blob/main/.stats.yml
 API_SPEC_BASE="https://storage.googleapis.com/stainless-sdk-openapi-specs/openai"
@@ -129,7 +129,9 @@ src_test() {
 	is_mock_running() {
 		local -a args
 		readarray -d '' args < "/proc/${mock_pid}/cmdline" 2>/dev/null || return 1
-		[[ "${args[1]}" == "${mock}" ]]
+
+		# Check args[1] (native) or args[2] (QEMU user-mode emulation)
+		[[ "${args[1]}" == "${mock}" || "${args[2]}" == "${mock}" ]]
 	}
 
 	local attempts=0

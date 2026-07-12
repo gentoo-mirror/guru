@@ -7,7 +7,7 @@ inherit desktop xdg unpacker wrapper
 
 MY_PN="${PN%-bin}"
 
-DESCRIPTION="OpenAudible is a cross-platform audiobook manager designed for Audible users."
+DESCRIPTION="OpenAudible is a cross-platform audiobook manager designed for Audible users"
 HOMEPAGE="https://openaudible.org/"
 SRC_URI="
 	amd64? (
