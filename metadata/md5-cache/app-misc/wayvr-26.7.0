@@ -1,0 +1,17 @@
+BDEPEND=media-libs/shaderc virtual/pkgconfig || ( >=dev-lang/rust-bin-1.88.0:* >=dev-lang/rust-1.88.0:* )
+DEFINED_PHASES=compile configure install postinst postrm preinst setup test unpack
+DEPEND=media-libs/alsa-lib media-libs/dav1d media-libs/fontconfig sys-apps/dbus media-libs/freetype X? ( x11-libs/libxcb x11-libs/libxkbcommon[X] x11-libs/libX11 x11-libs/libXext x11-libs/libXrandr ) openvr? ( =media-libs/openvr-1.23.8-r0 ) openxr? ( media-libs/openxr-loader[X?,wayland?] ) pipewire? ( media-video/pipewire ) wayland? ( x11-libs/libxkbcommon[wayland] )
+DESCRIPTION=Access your Wayland/X11 desktop from Monado/WiVRn/SteamVR.
+EAPI=8
+HOMEPAGE=https://github.com/wlx-team/wayvr
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=cargo desktop xdg
+IUSE=+openvr +openxr +wayland +X +pipewire +osc debug
+KEYWORDS=~amd64
+LICENSE=GPL-3 0BSD Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD-2 BSD CC0-1.0 ISC MIT MPL-2.0 UoI-NCSA Unicode-3.0 Unlicense ZLIB
+RDEPEND=media-libs/alsa-lib media-libs/dav1d media-libs/fontconfig sys-apps/dbus media-libs/freetype X? ( x11-libs/libxcb x11-libs/libxkbcommon[X] x11-libs/libX11 x11-libs/libXext x11-libs/libXrandr ) openvr? ( =media-libs/openvr-1.23.8-r0 ) openxr? ( media-libs/openxr-loader[X?,wayland?] ) pipewire? ( media-video/pipewire ) wayland? ( x11-libs/libxkbcommon[wayland] )
+REQUIRED_USE=|| ( openvr openxr ) || ( wayland X ) wayland? ( pipewire )
+SLOT=0
+SRC_URI=https://github.com/wlx-team/wayvr/archive/refs/tags/v26.7.0.tar.gz -> wayvr-26.7.0.tar.gz https://github.com/wlx-team/wayvr/releases/download/v26.7.0/vendor.tar.xz -> wayvr-26.7.0-vendor.tar.xz
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	rust	e2200a3d90348a53accc2f8c2e80f10c	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	c18ade5e10cfd39155908ca389968d65	desktop	e447b5f77146d69797e9f03ff177f3f1	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575
+_md5_=ba9a8c4b85add601e7beffd5962d3f9c

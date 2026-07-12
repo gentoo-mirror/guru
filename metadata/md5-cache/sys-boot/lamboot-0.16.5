@@ -1,0 +1,15 @@
+DEFINED_PHASES=install postinst prepare setup
+DESCRIPTION=Memory-safe UEFI bootloader for Linux, written in Rust
+EAPI=8
+HOMEPAGE=https://lamco.ai/products/lamboot/ https://github.com/lamco-admin/lamboot
+INHERIT=python-single-r1 shell-completion
+IUSE=python_single_target_python3_12 python_single_target_python3_13 python_single_target_python3_14 python_single_target_python3_15
+KEYWORDS=~amd64
+LICENSE=MIT Apache-2.0
+RDEPEND=sys-boot/efibootmgr python_single_target_python3_12? ( dev-lang/python:3.12 ) python_single_target_python3_13? ( dev-lang/python:3.13 ) python_single_target_python3_14? ( dev-lang/python:3.14 ) python_single_target_python3_15? ( dev-lang/python:3.15 )
+REQUIRED_USE=^^ ( python_single_target_python3_12 python_single_target_python3_13 python_single_target_python3_14 python_single_target_python3_15 )
+RESTRICT=strip
+SLOT=0
+SRC_URI=https://github.com/lamco-admin/lamboot/releases/download/v0.16.5/lamboot-0.16.5-x86_64.tar.gz
+_eclasses_=eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	python-utils-r1	18a01bee4e486884d7457cfacde74099	python-single-r1	47d8ac9be330c9366112b78fd4f8ce57	shell-completion	63a62de3ca49c798ee6e89f190e45d0e
+_md5_=6fdf62e75babd691dc416561cba76763

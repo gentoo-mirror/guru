@@ -1,6 +1,6 @@
 BDEPEND=dev-libs/glib:2 dev-util/blueprint-compiler sys-devel/gettext virtual/pkgconfig >=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install postinst postrm preinst test unpack
-DEPEND=dev-libs/glib:2 dev-libs/json-glib dev-libs/libxml2:= gui-libs/gtk:4[introspection] >=gui-libs/libadwaita-1.8.0:1[introspection] net-libs/libsoup:3.0
+DEPEND=dev-libs/glib:2 dev-libs/json-glib dev-libs/libxml2:= gui-libs/gtk:4[introspection] >=gui-libs/libadwaita-1.8.0:1[introspection] media-libs/glycin:2[gtk] net-libs/libsoup:3.0
 DESCRIPTION=A native tool for browsing, installing, and managing GNOME Shell Extensions
 EAPI=8
 HOMEPAGE=https://mattjakeman.com/apps/extension-manager
@@ -8,7 +8,7 @@ IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
 INHERIT=gnome2-utils meson xdg git-r3
 LICENSE=GPL-3+
 PROPERTIES=live
-RDEPEND=dev-libs/glib:2 dev-libs/json-glib dev-libs/libxml2:= gui-libs/gtk:4[introspection] >=gui-libs/libadwaita-1.8.0:1[introspection] net-libs/libsoup:3.0
+RDEPEND=dev-libs/glib:2 dev-libs/json-glib dev-libs/libxml2:= gui-libs/gtk:4[introspection] >=gui-libs/libadwaita-1.8.0:1[introspection] media-libs/glycin:2[gtk] net-libs/libsoup:3.0
 SLOT=0
 _eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	gnome2-utils	a8cf148ec7f5ae0b1f1d33ae5f7f9e88	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	python-utils-r1	18a01bee4e486884d7457cfacde74099	sysroot	4c36abaf94ebd3ab32f8abea9a444121	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	meson	12065b402c6d78a2aec926ed8dfd964f	xdg	3ef49a87c52c8b77c476351195dfe575	git-r3	2f8cdb10b033f92c3136aa6488a31c98
-_md5_=b512b874f2e540616e419bdb5ba4e915
+_md5_=33e768536e66eaefe6950a6b1e25abd0

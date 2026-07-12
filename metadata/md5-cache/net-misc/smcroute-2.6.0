@@ -1,0 +1,15 @@
+BDEPEND=virtual/pkgconfig
+DEFINED_PHASES=configure setup
+DEPEND=caps? ( sys-libs/libcap ) systemd? ( sys-apps/systemd:0= )
+DESCRIPTION=A static multicast routing daemon
+EAPI=8
+HOMEPAGE=https://troglobit.com/projects/smcroute/
+INHERIT=linux-info
+IUSE=caps systemd
+KEYWORDS=~amd64 ~arm64 ~x86
+LICENSE=GPL-2+
+RDEPEND=caps? ( sys-libs/libcap ) systemd? ( sys-apps/systemd:0= )
+SLOT=0
+SRC_URI=https://github.com/troglobit/smcroute/releases/download/2.6.0/smcroute-2.6.0.tar.gz
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	linux-info	efd923656513c879204fec6638eadee5
+_md5_=c50d21858a3086ed62a2a409780e8cab
