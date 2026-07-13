@@ -21,3 +21,11 @@ KEYWORDS="~amd64 ~arm64"
 
 EPYTEST_PLUGINS=()
 distutils_enable_tests pytest
+
+src_prepare() {
+	distutils-r1_src_prepare
+
+	# fix build backend
+	# https://bugs.gentoo.org/979160
+	sed -i "/^build-backend = /s/:__legacy__//" pyproject.toml || die
+}
