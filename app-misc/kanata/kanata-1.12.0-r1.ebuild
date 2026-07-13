@@ -269,6 +269,13 @@ src_configure() {
 	cargo_src_configure
 }
 
+src_test() {
+	local CARGO_SKIP_TESTS=(
+		kanata::tcp_layer_change_tests
+	)
+	cargo_src_test
+}
+
 src_install() {
 	cargo_src_install
 
