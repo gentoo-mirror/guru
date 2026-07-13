@@ -51,15 +51,34 @@ EPYTEST_PLUGINS=( anyio inline-snapshot )
 EPYTEST_XDIST=1
 distutils_enable_tests pytest
 
-EPYTEST_IGNORE=(
-	# Requires dev-python/pytest-examples which depends on missing Python
-	# bindings in dev-util/ruff::gentoo
-	tests/test_examples.py
-)
-EPYTEST_DESELECT=(
-	# Runs dev-python/uv and requires network access (v1.28.1)
-	tests/client/test_config.py::test_command_execution
-)
+src_prepare() {
+	distutils-r1_src_prepare
+
+	# Fix TOCTOU port assignment issue
+	# https://bugs.gentoo.org/979158
+	cat >> tests/conftest.py <<-EOF || die
+
+		def pytest_collection_modifyitems(items):
+		    for item in items:
+		        if hasattr(item.module, "server_port"):
+		            item.add_marker(pytest.mark.xdist_group(name="toctou_fix"))
+	EOF
+}
+
+python_test() {
+	local EPYTEST_IGNORE=(
+		# Requires dev-python/pytest-examples which depends on missing Python
+		# bindings in dev-util/ruff::gentoo
+		tests/test_examples.py
+	)
+	local EPYTEST_DESELECT=(
+		# Runs dev-python/uv and requires network access (v1.28.1)
+		tests/client/test_config.py::test_command_execution
+	)
+
+	epytest -m "xdist_group" --collect-only
+	epytest --dist=loadgroup
+}
 
 pkg_postinst() {
 	optfeature "colorized log output" dev-python/rich
