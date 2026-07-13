@@ -1,14 +1,14 @@
-BDEPEND=llvm_slot_17? ( llvm-core/clang:17= llvm-core/llvm:17= ) llvm_slot_18? ( llvm-core/clang:18= llvm-core/llvm:18= ) llvm_slot_19? ( llvm-core/clang:19= llvm-core/llvm:19= ) llvm_slot_20? ( llvm-core/clang:20= llvm-core/llvm:20= ) llvm_slot_21? ( llvm-core/clang:21= llvm-core/llvm:21= ) >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=llvm_slot_17? ( llvm-core/clang:17= llvm-core/llvm:17= ) llvm_slot_18? ( llvm-core/clang:18= llvm-core/llvm:18= ) llvm_slot_19? ( llvm-core/clang:19= llvm-core/llvm:19= ) llvm_slot_20? ( llvm-core/clang:20= llvm-core/llvm:20= ) llvm_slot_21? ( llvm-core/clang:21= llvm-core/llvm:21= ) llvm_slot_22? ( llvm-core/clang:22= llvm-core/llvm:22= ) >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install setup unpack
 DESCRIPTION=The Data-Oriented Language for Sane Software Development
 EAPI=8
 HOMEPAGE=https://odin-lang.org/
 INHERIT=flag-o-matic llvm-r2 git-r3
-IUSE=+llvm_slot_21 llvm_slot_17 llvm_slot_18 llvm_slot_19 llvm_slot_20
+IUSE=+llvm_slot_22 llvm_slot_17 llvm_slot_18 llvm_slot_19 llvm_slot_20 llvm_slot_21
 LICENSE=ZLIB
 PROPERTIES=live
-RDEPEND=llvm_slot_17? ( llvm-core/clang:17= llvm-core/llvm:17= ) llvm_slot_18? ( llvm-core/clang:18= llvm-core/llvm:18= ) llvm_slot_19? ( llvm-core/clang:19= llvm-core/llvm:19= ) llvm_slot_20? ( llvm-core/clang:20= llvm-core/llvm:20= ) llvm_slot_21? ( llvm-core/clang:21= llvm-core/llvm:21= )
-REQUIRED_USE=^^ ( llvm_slot_17 llvm_slot_18 llvm_slot_19 llvm_slot_20 llvm_slot_21 )
+RDEPEND=llvm_slot_17? ( llvm-core/clang:17= llvm-core/llvm:17= ) llvm_slot_18? ( llvm-core/clang:18= llvm-core/llvm:18= ) llvm_slot_19? ( llvm-core/clang:19= llvm-core/llvm:19= ) llvm_slot_20? ( llvm-core/clang:20= llvm-core/llvm:20= ) llvm_slot_21? ( llvm-core/clang:21= llvm-core/llvm:21= ) llvm_slot_22? ( llvm-core/clang:22= llvm-core/llvm:22= )
+REQUIRED_USE=^^ ( llvm_slot_17 llvm_slot_18 llvm_slot_19 llvm_slot_20 llvm_slot_21 llvm_slot_22 )
 SLOT=0
 _eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	llvm-utils	e7edb4086e31c8537574b263d899f826	multilib	fc812e8eb2170022c28272d80a1f9e77	llvm-r2	6dfe5b52eedf1a8ebd3e0aa9b83c8a75	git-r3	2f8cdb10b033f92c3136aa6488a31c98
-_md5_=00ab028b5c12aa7c7966a0ff3ed861f9
+_md5_=beebc0d6dce93f9bb401773e716178aa

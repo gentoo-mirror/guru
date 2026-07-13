@@ -178,7 +178,7 @@ app-crypt/age-plugin-yubikey 0.5.1: YubiKey plugin for age clients
 app-crypt/certbot-dns-cloudflare 3.2.0: Cloudflare DNS Authenticator plugin for Certbot (Let's Encrypt Client)
 app-crypt/certbot-dns-desec 1.2.1: deSEC DNS Authenticator plugin for Certbot
 app-crypt/certbot-dns-infomaniak 0.2.4: Infomaniak DNS Authenticator plugin for Certbot
-app-crypt/certbot-dns-poweradmin 0.1.1-r1 0.2.2 0.2.3: Certbot plugin for authentication using PowerAdmin
+app-crypt/certbot-dns-poweradmin 0.2.3 0.2.5: Certbot plugin for authentication using PowerAdmin
 app-crypt/certbot-dns-rfc2136 3.2.0-r100: RFC 2136 DNS Authenticator plugin for Certbot (Let’s Encrypt Client)
 app-crypt/clevis 19-r2 20-r1 21: Automated Encryption Framework
 app-crypt/firefox-decrypt 1.1.1: Tool to extract passwords from Mozilla (Firefox, Thunderbird, etc.) profiles
@@ -740,7 +740,7 @@ dev-python/DAWG-Python 0.7.2: Pure-python reader for DAWGs (DAFSAs) created by d
 dev-python/EbookLib 0.20: Ebook library which can handle EPUB2/EPUB3 and Kindle format
 dev-python/ManimPango 0.4.4 0.6.1: Binding for Pango, to use with Manim.
 dev-python/PyPubSub 4.0.3-r1: Python Publish-Subscribe Package
-dev-python/PythonQwt 0.14.6 0.15.0 0.16.0: Qt plotting widgets for Python
+dev-python/PythonQwt 0.14.6 0.16.0 0.16.3: Qt plotting widgets for Python
 dev-python/SLPP 1.2.3: Simple lua-python parser
 dev-python/adb-shell 0.4.4-r1: A Python implementation of ADB with shell and FileSync functionality.
 dev-python/addict 2.4.0: The Python Dict that's better than heroin
@@ -774,7 +774,7 @@ dev-python/bleak 1.1.0 1.1.1: Bluetooth Low Energy platform Agnostic Klient (BLE
 dev-python/blobfile 3.2.0: Read GCS, ABS and local paths with the same interface, tensorflow.io.gfile clone
 dev-python/blurhash 1.1.4 1.1.5: Pure-Python implementation of the blurhash algorithm
 dev-python/burner-redis 0.1.7: An embedded, in-process Redis-compatible database
-dev-python/caio 0.10.1: Asynchronous file IO for Linux MacOS or Windows
+dev-python/caio 0.10.2: Asynchronous file IO for Linux MacOS or Windows
 dev-python/chalice 1.32.0: Python Serverless Microframework for AWS
 dev-python/channels 4.3.2: Brings async, event-driven capabilities to Django
 dev-python/chevron 0.13.1 0.14.0-r1: A Python implementation of mustache
@@ -862,10 +862,10 @@ dev-python/invoke 3.0.3: Pythonic task execution
 dev-python/isosurfaces 0.1.2: Construct isolines/isosurfaces of a 2D/3D scalar field defined by a function
 dev-python/iuliia 0.13.0: Transliterate Cyrillic to Latin in every possible way
 dev-python/jinja2-cli 0.8.2: CLI for Jinja2
-dev-python/jiter 0.15.0: Fast iterable JSON parser
+dev-python/jiter 0.16.0: Fast iterable JSON parser
 dev-python/jplephem 2.23 2.24: Python version of NASA DE4xx ephemerides for Astronomical Alamanac
 dev-python/jpype 1.6.0: Bridge to allow Python programs full access to Java class libraries
-dev-python/json-repair 0.61.1: A package to repair broken json strings
+dev-python/json-repair 0.61.4: A package to repair broken json strings
 dev-python/json_exporter 1.0.2: Python-based library for exporting JSON data as metrics for Prometheus.
 dev-python/jsonfeed 1.1.2: Python package for parsing and generating JSON feeds.
 dev-python/jsonlines 4.0.0: Library with helpers for the jsonlines file format
@@ -989,7 +989,7 @@ dev-python/pytest-relaxed 2.0.2: Relaxed test discovery for pytest
 dev-python/pytest-snapshot 0.9.0: A plugin for snapshot testing with pytest
 dev-python/pytest-steps 1.8.0-r1: Create step-wise / incremental tests in pytest
 dev-python/pytest-textual-snapshot 1.1.0: Snapshot testing for Textual apps
-dev-python/python-barbicanclient 7.3.0 7.4.0: Client library for Barbican API.
+dev-python/python-barbicanclient 7.4.0 7.5.0: Client library for Barbican API.
 dev-python/python-designateclient 6.4.0 7.0.0: OpenStack DNS-as-a-Service - Client
 dev-python/python-fire 0.7.0: Library for automatically generating command line interfaces from Python objects
 dev-python/python-frontmatter 1.3.0: Parse and manage posts with YAML (or other) frontmatter
@@ -1066,7 +1066,7 @@ dev-python/textual-autocomplete 4.0.6: Easily add autocomplete dropdowns to your
 dev-python/textual-dev 1.8.0: Modern Text User Interface framework
 dev-python/textual-serve 1.1.3: Serve Textual apps locally
 dev-python/thonny 4.1.7 5.0.0: Thonny is a Python IDE meant for learning programming
-dev-python/tiktoken 0.12.0: A fast BPE tokeniser for use with OpenAI's models
+dev-python/tiktoken 0.13.0: A fast BPE tokeniser for use with OpenAI's models
 dev-python/tlv8 0.10.0: Type-Length-Value8 (TLV8) for python
 dev-python/tom-swe 1.0.3: Theory of Mind modeling for Software Engineering assistants
 dev-python/toml 0.10.2: Python library for TOML
@@ -1468,13 +1468,13 @@ gui-libs/qdocumentview 0.3.0.1: Widget to render multi-page documents
 gui-libs/qml-niri 0.2.0: A QML plugin for niri
 gui-libs/qtforkawesome 0.3.2-r1: Library that bundles ForkAwesome for use within Qt applications
 gui-libs/qtutilities 6.19.1 6.20.0: Useful Qt related C++ classes and routines
-gui-libs/scenefx 0.4.1 9999: A replacement for the wlroots scene API with eye-candy effects.
+gui-libs/scenefx 0.4.1 0.5 9999: A replacement for the wlroots scene API with eye-candy effects.
 gui-libs/xdg-desktop-portal-termfilechooser 1.4.1: xdg-desktop-portal backend for choosing files with your favorite file chooser
 gui-wm/beansprout 1.1.1 9999: A tiling window manager for the river Wayland compositor
 gui-wm/cage 0.2.1 0.3.0 0.3.1 9999: A Wayland kiosk
 gui-wm/canoe 0.5.1: Canoe, a River window manager implementation in Rust
 gui-wm/kwm 0.3.0 9999: A window manager based on River Wayland compositor
-gui-wm/mangowm 0.14.4 9999: wayland compositor based on wlroots and scenefx(dwl but no suckless)
+gui-wm/mangowm 0.14.4 0.15.2 9999: wayland compositor based on wlroots and scenefx(dwl but no suckless)
 gui-wm/miracle-wm 0.9.1: Tiling Wayland compositor based on Mir
 gui-wm/niri 26.04 9999: Scrollable-tiling Wayland compositor
 gui-wm/phoc 0.50.0 0.52.0 0.53.0: Wayland compositor for mobile phones
@@ -1766,7 +1766,7 @@ net-im/revolt-desktop 1.0.8-r2: Revolt Desktop App
 net-im/session-desktop-bin 1.15.1 1.15.2: Session Desktop - Onion routing based messenger
 net-im/sliding-sync 0.99.15 0.99.19: Proxy implementation of MSC3575's sync protocol.
 net-im/teams-for-linux 2.6.14 2.6.17 2.6.18 2.7.6 2.7.12 2.7.13 2.11.1: Unofficial Microsoft Teams client for Linux. Binary precompiled version.
-net-im/tuwunel 1.7.1 1.8.0: High Performance Matrix Homeserver in Rust!
+net-im/tuwunel 1.8.0 1.8.1: High Performance Matrix Homeserver in Rust!
 net-im/vesktop-bin 1.6.5: All-in-one voice and text chat for gamers with Vencord Preinstalled
 net-im/why2 1.5.3: Lightweight, fast and secure chat application powered by WHY2 encryption.
 net-im/zapzap 6.2.10 6.3.4.1: WhatsApp desktop application written in PyQt6 + PyQt6-WebEngine
@@ -1827,7 +1827,6 @@ net-misc/iipsrv 1.2 1.3: High performance image server for high resolution and s
 net-misc/jool 4.1.15: Required tools for Jool
 net-misc/jool-modules 4.1.15: Jool is an Open Source SIIT and NAT64 for linux
 net-misc/kissy 1.3: Kissing Interface for Sapphic Smooching over ttY
-net-misc/lamco-rdp-server 1.4.4: Native Wayland RDP server for GNOME, KDE, Sway and Hyprland (H.264, VA-API)
 net-misc/lyrics-in-terminal 1.7.0 1.8.0: Command Line Lyrics fetcher for MPRIS media players
 net-misc/maestral 1.9.6: Maestral is an open-source Dropbox client written in Python
 net-misc/maestral-qt 1.9.8: Maestral is an open-source Dropbox client written in Python
@@ -2066,7 +2065,6 @@ sys-boot/customrescuecd-x86_64-grub 0.1: Grub menu entries for the .iso image of
 sys-boot/drbl 5.4.2: Diskless Remote Boot in Linux
 sys-boot/etcher-bin 2.1.4-r1 2.1.6: Flash OS images to SD cards & USB drives, safely and easily.
 sys-boot/grml-rescueboot 0.6.7: grub2 script to add ISO images to the grub2 boot menu
-sys-boot/lamboot 0.16.5: Memory-safe UEFI bootloader for Linux, written in Rust
 sys-boot/mkusb 23.2.0: CLI and GUI for creating bootable live USB, with optional persistent storage
 sys-boot/ventoy-bin 1.0.98-r1: Creator of bootable USBs, with ability to copy ISOs, persistence storage
 sys-boot/zfsbootmenu 1.12.0 2.2.2 2.3.0 3.0.1 3.1.0: ZFS bootloader for root-on-ZFS systems
