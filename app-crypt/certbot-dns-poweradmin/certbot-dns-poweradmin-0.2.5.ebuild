@@ -21,8 +21,6 @@ KEYWORDS="~amd64 ~arm64"
 RDEPEND="
 	>=app-crypt/certbot-5.1.0[${PYTHON_USEDEP}]
 	>=dev-python/requests-2.33.1[${PYTHON_USEDEP}]
-	>=dev-python/urllib3-2.6.0[${PYTHON_USEDEP}]
-	>=dev-python/pyopenssl-26.0.0[${PYTHON_USEDEP}]
 "
 
 BDEPEND="
@@ -30,6 +28,8 @@ BDEPEND="
 		>=dev-python/requests-mock-1.11.0[${PYTHON_USEDEP}]
 		>=dev-python/mypy-1.13.0[${PYTHON_USEDEP}]
 		>=dev-python/types-requests-2.32.4.20250913[${PYTHON_USEDEP}]
+		>=dev-python/urllib3-2.6.0[${PYTHON_USEDEP}]
+		>=dev-python/pyopenssl-26.0.0[${PYTHON_USEDEP}]
 	)
 "
 EPYTEST_PLUGINS=( pytest-cov )

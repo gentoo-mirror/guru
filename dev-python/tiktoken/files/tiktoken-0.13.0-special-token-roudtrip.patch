@@ -7,7 +7,7 @@ index b77ca13..7ef65d9 100644
      enc = make_enc()
  
 -    assert text == enc.decode(enc.encode(text))
-+    assert text == enc.decode(enc.encode(text, allowed_special="all"))
++    assert text == enc.decode(enc.encode(text, disallowed_special=()))
  
  
  @pytest.mark.parametrize("make_enc", ENCODING_FACTORIES)

@@ -13,7 +13,7 @@ HOMEPAGE="https://pypi.org/project/PythonQwt"
 LICENSE="MIT"
 
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64"
 # Test directory seems to contain demo instead
 RESTRICT="test"
 
