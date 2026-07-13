@@ -33,6 +33,7 @@ REQUIRED_USE="
 IUSE="+openvr +openxr +wayland +X +pipewire +osc"
 
 DEPEND="
+	dev-libs/openssl
 	media-libs/alsa-lib
 	media-libs/dav1d
 	media-libs/fontconfig
