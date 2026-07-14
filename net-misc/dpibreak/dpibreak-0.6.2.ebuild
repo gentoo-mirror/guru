@@ -120,7 +120,7 @@ RUST_MIN_VER="1.88"
 
 inherit cargo
 
-DESCRIPTION="System-wide DPI circumvention with minimal configuration."
+DESCRIPTION="System-wide DPI circumvention with minimal configuration"
 HOMEPAGE="https://github.com/dilluti0n/dpibreak"
 SRC_URI="
 	https://github.com/dilluti0n/dpibreak/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
