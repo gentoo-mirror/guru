@@ -12,11 +12,10 @@ SRC_URI="https://github.com/latchset/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="dracut pkcs11 test tpm tpm1 udisks"
+IUSE="dracut pkcs11 test tpm1 udisks"
 
 BDEPEND="app-text/asciidoc
-	test? (	tpm? ( app-crypt/swtpm )
-		tpm1? ( app-crypt/swtpm )
+	test? (	app-crypt/swtpm
 		net-misc/socat
 		sys-process/lsof
 	)
