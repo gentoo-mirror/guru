@@ -161,7 +161,7 @@ BDEPEND="
 	virtual/pkgconfig
 "
 
-QA_FLAGS_IGNORED="/usr/bin/gst-video-thumbnailer /usr/bin/gst-audio-thumbnailer"
+QA_FLAGS_IGNORED="usr/bin/gst-video-thumbnailer usr/bin/gst-audio-thumbnailer"
 
 src_configure() {
 	local emesonargs=(
