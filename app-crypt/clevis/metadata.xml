@@ -13,7 +13,10 @@
 		<remote-id type="github">latchset/clevis</remote-id>
 	</upstream>
 	<use>
+		<flag name="dracut">Install dracut modules</flag>
 		<flag name="luks">Enable LUKS support</flag>
-		<flag name="tpm">Enable TPM support</flag>
+		<flag name="pkcs11">Enable PKCS#11 smartcard support</flag>
+		<flag name="tpm">Enable support for Trusted Platform Module (TPM) 2.0</flag>
+		<flag name="tpm1">Enable support for Trusted Platform Module (TPM) 1.2</flag>
 	</use>
 </pkgmetadata>
