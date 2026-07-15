@@ -29,8 +29,9 @@ app-containers/waydroid-images:system-vanilla - Use the VANILLA variant of syste
 app-containers/waydroid-images:vendor-halium - Use the HALIUM variant of vendor.img
 app-containers/waydroid-images:vendor-mainline - Use the MAINLINE variant of vendor.img
 app-containers/waydroid-x11:drm - Install a standalone Waydroid session
-app-crypt/clevis:luks - Enable LUKS support
-app-crypt/clevis:tpm - Enable TPM support
+app-crypt/clevis:dracut - Install dracut modules
+app-crypt/clevis:pkcs11 - Enable PKCS#11 smartcard support
+app-crypt/clevis:tpm1 - Enable support for Trusted Platform Module (TPM) 1.2
 app-crypt/intel-ipsec-mb:safe-data - sensitive information is cleared on completion of a function call
 app-crypt/intel-ipsec-mb:safe-lookup - lookups which depend on sensitive information are implemented with constant time functions
 app-crypt/intel-ipsec-mb:safe-param - input parameters are checked, looking generally for NULL pointers or an incorrect input length

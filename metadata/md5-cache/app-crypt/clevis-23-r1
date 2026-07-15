@@ -1,0 +1,16 @@
+BDEPEND=app-text/asciidoc test? ( app-crypt/swtpm net-misc/socat sys-process/lsof ) udisks? ( dev-util/glib-utils ) >=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array
+DEFINED_PHASES=compile configure install test
+DEPEND=dev-libs/openssl:= net-misc/curl app-crypt/tpm2-tools dev-libs/jansson dev-libs/jose dev-libs/luksmeta sys-fs/cryptsetup dracut? ( sys-kernel/dracut ) pkcs11? ( dev-libs/opensc sys-apps/pcsc-lite[policykit] ) tpm1? ( app-crypt/tpm-tools ) udisks? ( dev-libs/glib sys-fs/udisks sys-process/audit )
+DESCRIPTION=Automated Encryption Framework
+EAPI=8
+HOMEPAGE=https://github.com/latchset/clevis
+INHERIT=meson shell-completion
+IUSE=dracut pkcs11 test tpm1 udisks
+KEYWORDS=~amd64
+LICENSE=GPL-3
+RDEPEND=dev-libs/openssl:= net-misc/curl app-crypt/tpm2-tools dev-libs/jansson dev-libs/jose dev-libs/luksmeta sys-fs/cryptsetup dracut? ( sys-kernel/dracut ) pkcs11? ( dev-libs/opensc sys-apps/pcsc-lite[policykit] ) tpm1? ( app-crypt/tpm-tools ) udisks? ( dev-libs/glib sys-fs/udisks sys-process/audit ) app-misc/jq app-crypt/tpm2-tools
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/latchset/clevis/archive/v23.tar.gz -> clevis-23.tar.gz
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	python-utils-r1	18a01bee4e486884d7457cfacde74099	sysroot	4c36abaf94ebd3ab32f8abea9a444121	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	meson	12065b402c6d78a2aec926ed8dfd964f	shell-completion	63a62de3ca49c798ee6e89f190e45d0e
+_md5_=268d5b5569c059eb7aa65abddf4953a1
