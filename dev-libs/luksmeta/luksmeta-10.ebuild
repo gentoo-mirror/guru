@@ -12,17 +12,11 @@ SRC_URI="https://github.com/latchset/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 LICENSE="LGPL-2.1"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="+man"
 
 DEPEND="sys-fs/cryptsetup"
 RDEPEND="${DEPEND}"
-BDEPEND="man? ( app-text/asciidoc )
-	dev-build/libtool"
-
-PATCHES=(
-	# https://bugs.gentoo.org/837308
-	"${FILESDIR}/${PN}-tests.patch"
-)
+BDEPEND="virtual/pkgconfig
+	 app-text/asciidoc"
 
 src_prepare() {
 	# Bug https://bugs.gentoo.org/921710

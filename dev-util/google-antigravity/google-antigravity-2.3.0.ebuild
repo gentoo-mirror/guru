@@ -9,7 +9,7 @@ CHROMIUM_LANGS="af am ar bg bn ca cs da de el en-GB en-US es-419 es et fa fi
 
 inherit chromium-2 desktop optfeature pax-utils xdg
 
-EXECUTION_ID="6481382726303744"
+EXECUTION_ID="5214728084127744"
 
 MY_PN="${PN#google-}"
 DESCRIPTION="Google Antigravity 2.0, a dedicated platform to work with agents"
@@ -95,7 +95,7 @@ src_install() {
 	mkdir -p "${ED}/${AGY_HOME}" || die
 	cp -r . "${ED}/${AGY_HOME}" || die
 
-	pax-mark m "/${AGY_HOME}/${MY_PN}"
+	pax-mark m "${ED}/${AGY_HOME}/${MY_PN}"
 	fperms 0755 "/${AGY_HOME}/${MY_PN}"
 	dosym "/${AGY_HOME}/${MY_PN}" "/usr/bin/${MY_PN}"
 

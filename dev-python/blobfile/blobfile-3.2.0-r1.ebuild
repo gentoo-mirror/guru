@@ -27,8 +27,10 @@ RDEPEND="
 	>=dev-python/pycryptodome-3.8[${PYTHON_USEDEP}]
 	>=dev-python/urllib3-2[${PYTHON_USEDEP}]
 "
+# numpy is imported but not declared in pyproject.toml
 BDEPEND="
 	test? (
+		dev-python/numpy[${PYTHON_USEDEP}]
 		dev-python/xmltodict[${PYTHON_USEDEP}]
 	)
 "
@@ -36,24 +38,31 @@ BDEPEND="
 EPYTEST_PLUGINS=()
 distutils_enable_tests pytest
 
-python_prepare() {
+python_prepare_all() {
+	distutils-r1_python_prepare_all
+
 	sed -e 's/pycryptodomex/pycryptodome/' -i pyproject.toml || die
 	sed -e 's/from Cryptodome/from Crypto/' -i blobfile/_gcp.py || die
+
+	# don't install tests
+	# https://github.com/blobfile/blobfile/issues/226
+	mkdir tests || die
+	mv blobfile/*_test.py tests/ || die
 }
 
 python_test() {
 	local EPYTEST_DESELECT=(
 		# network
-		blobfile/_ops_test.py::test_az_path
-		blobfile/_ops_test.py::test_azure_public_get_url
-		blobfile/_ops_test.py::test_copy_azure_public
-		blobfile/_ops_test.py::test_gcs_public
-		blobfile/_ops_test.py::test_concurrent_write_as
-		blobfile/_ops_test.py::test_more_exists
-		blobfile/_ops_test.py::test_invalid_paths
-		blobfile/_ops_test.py::test_azure_public_container
-		blobfile/_ops_test.py::test_scandir_error
+		tests/_ops_test.py::test_az_path
+		tests/_ops_test.py::test_azure_public_get_url
+		tests/_ops_test.py::test_copy_azure_public
+		tests/_ops_test.py::test_gcs_public
+		tests/_ops_test.py::test_concurrent_write_as
+		tests/_ops_test.py::test_more_exists
+		tests/_ops_test.py::test_invalid_paths
+		tests/_ops_test.py::test_azure_public_container
+		tests/_ops_test.py::test_scandir_error
 	)
 
-	epytest -k "not _get_temp_gcs_path and not _get_temp_as_path" blobfile/*_test.py
+	epytest -k "not _get_temp_gcs_path and not _get_temp_as_path" tests
 }

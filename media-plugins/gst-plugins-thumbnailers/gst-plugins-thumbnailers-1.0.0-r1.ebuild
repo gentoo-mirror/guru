@@ -151,12 +151,17 @@ LICENSE+=" Apache-2.0 Apache-2.0-with-LLVM-exceptions MIT Unicode-3.0"
 SLOT="0"
 KEYWORDS="~amd64"
 
-DEPEND="
-	>=media-libs/gstreamer-1.26.0
+RDEPEND="
+	>=media-libs/gstreamer-1.26.0:1.0
+	>=media-libs/gst-plugins-base-1.26.0:1.0
 	>=media-libs/glycin-2.0.0
 "
+DEPEND="${RDEPEND}"
+BDEPEND="
+	virtual/pkgconfig
+"
 
-QA_FLAGS_IGNORED="/usr/bin/gst-video-thumbnailer /usr/bin/gst-audio-thumbnailer"
+QA_FLAGS_IGNORED="usr/bin/gst-video-thumbnailer usr/bin/gst-audio-thumbnailer"
 
 src_configure() {
 	local emesonargs=(
