@@ -18,7 +18,7 @@ fi
 
 RDEPEND="
 	app-crypt/cryptsetup-scripts-dinit
-	virtual/udev[-systemd]
+	virtual/udev
 	sys-apps/sed
 "
 DEPEND="${RDEPEND}"
