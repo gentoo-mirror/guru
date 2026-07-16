@@ -27,5 +27,5 @@ src_install() {
 
 	exeinto "${agy_home}"
 	doexe "antigravity"
-	dosym "${agy_home}/antigravity" "/usr/bin/agy"
+	dosym -r "${agy_home}/antigravity" "/usr/bin/agy"
 }
