@@ -7,7 +7,7 @@ RUST_MIN_VER="1.92.0"
 
 inherit cargo optfeature
 
-DESCRIPTION="Bespoke dotfile management for sharkgirls."
+DESCRIPTION="Bespoke dotfile management for sharkgirls"
 HOMEPAGE="https://codeberg.org/vimproved/blahajdots"
 
 if [[ "${PV}" = "9999" ]]; then
