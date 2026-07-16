@@ -26,7 +26,7 @@ SLOT="0"
 DEPEND="dev-libs/glib:2"
 RDEPEND="${DEPEND}"
 
-QA_FLAGS_IGNORED="usr/bin/blahaj"
+QA_FLAGS_IGNORED="usr/bin/blahajdots"
 
 src_unpack() {
 	if [[ "${PV}" = "9999" ]]; then
