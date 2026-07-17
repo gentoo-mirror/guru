@@ -25,7 +25,7 @@ RDEPEND="
 	acct-user/${PN}
 "
 
-BDEPEND=">=dev-lang/go-1.25"
+BDEPEND=">=dev-lang/go-1.25.0"
 
 src_compile() {
 	ego build ./cmd/mautrix-whatsapp $(use crypt || echo '-tags nocrypto')
