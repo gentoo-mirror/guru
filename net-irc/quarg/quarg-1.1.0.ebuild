@@ -24,7 +24,6 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
 IUSE="sqlite postgres"
-RESTRICT="test"
 
 DEPEND="${RDEPEND}"
 RDEPEND="${PYTHON_DEPS}
