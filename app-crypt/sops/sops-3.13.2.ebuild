@@ -13,6 +13,8 @@ SRC_URI+="  https://git.skysolutions.fi/gentoo-mirror/guru-vendored/releases/dow
 LICENSE="MPL-2.0"
 SLOT="0"
 
+BDEPEND=">=dev-lang/go-1.25.8"
+
 KEYWORDS="~amd64 ~arm64"
 
 src_compile() {
