@@ -41,7 +41,7 @@ src_install() {
 	(
 		echo -e '# Network-specific config options\nnetwork:'
 		sed 's/^/    /' pkg/connector/example-config.yaml || die
-		cat ../go-mod/maunium.net/go/mautrix@v0.26.3/bridgev2/matrix/mxmain/example-config.yaml || die
+		cat ../go-mod/maunium.net/go/mautrix@v0.28.1/bridgev2/matrix/mxmain/example-config.yaml || die
 	) |
 	sed "s_\./logs/bridge\.log_/var/log/mautrix/whatsapp/mautrix-whatsapp.log_" > "${PN/-/_}.yaml" || die
 
