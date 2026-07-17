@@ -4,7 +4,7 @@
 EAPI=8
 
 LLVM_COMPAT=({15..21})
-RUST_MIN_VER="1.88.0"
+RUST_MIN_VER="1.95"
 
 inherit cargo desktop xdg
 
