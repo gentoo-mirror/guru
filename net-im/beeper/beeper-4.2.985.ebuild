@@ -112,7 +112,7 @@ src_install() {
 		LICENSE.electron.txt
 		LICENSES.chromium.html
 		beepertexts.png
-		resources/app.asar.unpacked/build
+		resources/app.asar.unpacked/build/ff{mpeg,probe}
 		resources/app.asar.unpacked/node_modules/classic-level/prebuilds/linux-x64/classic-level.musl.node
 		usr
 	)
