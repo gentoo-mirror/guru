@@ -50,7 +50,7 @@ DEPEND="
 		x11-libs/libxcb:0=
 		x11-libs/xcb-util-wm
 	)
-	<gui-libs/scenefx-0.5
+	gui-libs/scenefx:0.4
 "
 # x11-libs/xcb-util-wm needed for xcb-iccm
 if [[ ${PV} == 9999 ]]; then
