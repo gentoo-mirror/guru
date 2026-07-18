@@ -48,6 +48,9 @@ BDEPEND="
 src_install() {
 	meson_src_install
 
+	# remove unneeded additional scripts
+	rm "${ED}"/usr/share/${PN}/*.sh || die
+
 	keepdir /var/lib/${PN}
 	fowners greetd:greetd /var/lib/${PN}
 }
