@@ -44,3 +44,10 @@ BDEPEND="
 	dev-util/wayland-scanner
 	dev-libs/wayland-protocols
 "
+
+src_install() {
+	meson_src_install
+
+	keepdir /var/lib/${PN}
+	fowners greetd:greetd /var/lib/${PN}
+}

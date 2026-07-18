@@ -53,3 +53,10 @@ src_configure() {
 
 	meson_src_configure
 }
+
+src_install() {
+	meson_src_install
+
+	keepdir /var/lib/${PN}
+	fowners greetd:greetd /var/lib/${PN}
+}
