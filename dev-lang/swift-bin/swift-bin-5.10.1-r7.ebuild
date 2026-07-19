@@ -9,7 +9,7 @@ inherit llvm-r2 python-single-r1 unpacker
 
 DESCRIPTION="A high-level, general-purpose, multi-paradigm, compiled programming language"
 HOMEPAGE="https://www.swift.org"
-SWIFT_PF="${PF/-bin/}"
+SWIFT_PF="swift-5.10.1-r6" # "${PF/-bin/}" if revisions match
 SRC_URI="https://github.com/itaiferber/gentoo-distfiles/releases/download/${CATEGORY}/${SWIFT_PF}/${SWIFT_PF}.gpkg.tar"
 S="${WORKDIR}"
 
@@ -27,7 +27,7 @@ RDEPEND="
 	>=app-arch/zstd-1.5
 	>=app-eselect/eselect-swift-1.0-r1
 	>=dev-db/sqlite-3
-	>=dev-libs/icu-69
+	>=dev-libs/icu-69:=
 	>=dev-libs/libedit-20221030
 	>=dev-libs/libxml2-2.11.5
 	>=net-misc/curl-8.4
@@ -36,6 +36,8 @@ RDEPEND="
 	dev-lang/python
 	$(llvm_gen_dep 'llvm-core/lld:${LLVM_SLOT}=')
 "
+
+BDEPEND=">=dev-util/patchelf-0.18"
 
 QA_PREBUILT="*"
 PKG_PREINST_SWIFT_INTENTIONALLY_SET='true'
@@ -46,6 +48,55 @@ src_unpack() {
 
 src_install() {
 	[[ -d "${SWIFT_PF}/image" ]] || die "Expected image directory not found in package"
+
+	# Swift 5.10's Foundation and related utils link against ICU libs directly
+	# (`libicudata`, `libicui18n`, `libicuuc`), and these libs are explicitly
+	# versioned on target systems. We need to fix up the SONAME references to
+	# what's actually on the target system.
+	#
+	# Note: while replacing versioned SONAME references (e.g.,
+	# 'libicudata.so.78') with unversioned references (e.g. 'libicudata.so')
+	# will work at runtime, this produces QA warnings; we'll replace both
+	# versioned and unversioned references with what's installed.
+	declare -A iculibs
+
+	# We need extended globbing for '+()' pattern replacement matches below.
+	trap "$(shopt -p extglob)" RETURN
+	shopt -s extglob
+
+	# For every ELF that depends on any `libicu*` library, we can iterate over
+	# every libicu dep and replace it with a reference to the actual SONAME
+	# found on disk. `iculibs` stores canonicalized unversioned lib name ->
+	# actual SONAME.
+	local elfile
+	while read -r elfile; do
+		# Tab-separated explicitly with `scanelf -F` below. `needed` is a
+		# comma-separated list of SONAMEs.
+		IFS=$'\t' read -r path needed <<< "${elfile}"
+		for lib in ${needed//,/ }; do
+			case "${lib}" in
+				libicu*)
+					# Drop all trailing `.\d+` groups if present so, e.g.,
+					# 'libicudata.so', 'libicudata.so.78', and
+					# 'libicudata.so.78.3' all canonicalize to 'libicudata.so'.
+					local unversioned="${lib%%+(.+([[:digit:]]))}"
+					if [[ -z "${iculibs[${unversioned}]}" ]]; then
+						local versioned
+						versioned="$(readelf -d "/usr/$(get_libdir)/${unversioned}" | \
+							awk '/SONAME/{print $NF}' | tr -d '[]')" \
+							|| die "Failed to get versioned SONAME for '${unversioned}'"
+						iculibs["${unversioned}"]="${versioned}"
+					fi
+
+					patchelf --replace-needed "${lib}" "${iculibs[${unversioned}]}" "${SWIFT_PF}${path}" \
+						|| die "Failed to replace '${lib}' dependency for '${path}'"
+					;;
+				*) ;;
+			esac
+		done
+	done < <(scanelf -Rn -F $'%p\t%n' "${SWIFT_PF/image/usr}" | grep libicu) \
+		|| die "Failed to scan for libicu references"
+
 	cp -R "${SWIFT_PF}/image/usr" "${ED}" || die "Copying prebuilt files failed"
 }
 
