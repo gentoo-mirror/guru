@@ -16,7 +16,8 @@ S="${WORKDIR}/RTC-Testbench-${PV}"
 LICENSE="BSD-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="doc mqtt"
+IUSE="doc mqtt test"
+RESTRICT="!test? ( test )"
 
 # Generated eBPF files
 QA_PREBUILT="usr/lib*/rtc-testbench/ebpf/*.o"
@@ -38,6 +39,7 @@ BDEPEND="
 	$(llvm_gen_dep '
 		llvm-core/clang:${LLVM_SLOT}=[llvm_targets_BPF(-)]
 	')
+	test? ( dev-util/cmocka )
 "
 DEPEND="
 	mqtt? ( app-misc/mosquitto )
@@ -58,6 +60,7 @@ pkg_setup() {
 src_configure() {
 	local mycmakeargs=(
 		-DWITH_MQTT=$(usex mqtt)
+		-DWITH_TESTS=$(usex test)
 		-DRX_TIMESTAMP=TRUE
 		-DTX_TIMESTAMP=TRUE
 	)
