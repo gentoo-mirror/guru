@@ -16,7 +16,7 @@ if [[ ${PV} == 9999 ]]; then
 else
 	SRC_URI="
 		https://github.com/${PN}/${PN}/archive/v${PV}/${P}.tar.gz
-		https://github.com/odrling/typst/releases/download/v${PV}/typst-vendor.tar.xz -> ${P}-vendor.tar.xz
+		https://github.com/odrling/typst/releases/download/v${PV}-vendor/typst-vendor.tar.xz -> ${P}-vendor.tar.xz
 	"
 	KEYWORDS="~amd64 ~arm64"
 fi
