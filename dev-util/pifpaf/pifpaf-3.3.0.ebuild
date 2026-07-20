@@ -14,9 +14,9 @@ HOMEPAGE="
 "
 
 LICENSE="Apache-2.0"
-RESTRICT="test" # missing dependency <kafka-bin-4.0::gentoo
 SLOT="0"
 KEYWORDS="~amd64"
+RESTRICT="test" # missing dependency <kafka-bin-4.0::gentoo
 
 RDEPEND="
 	dev-python/click[${PYTHON_USEDEP}]
@@ -50,7 +50,6 @@ BDEPEND="
 #		sys-cluster/ceph
 #		virtual/mysql[server]
 #	)
-
 
 EPYTEST_PLUGINS=( )
 EPYTEST_DESELECT=(
