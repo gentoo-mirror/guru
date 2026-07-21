@@ -1,0 +1,13 @@
+BDEPEND=virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=configure install prepare unpack
+DEPEND=media-libs/gd:=
+DESCRIPTION=Generate Hilbert curve heatmaps of the IPv4 address space
+EAPI=8
+HOMEPAGE=https://github.com/measurement-factory/ipv4-heatmap
+INHERIT=toolchain-funcs git-r3
+LICENSE=GPL-2
+PROPERTIES=live
+RDEPEND=media-libs/gd:=
+SLOT=0
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	git-r3	2f8cdb10b033f92c3136aa6488a31c98
+_md5_=bf1145375f5d2e79102f8ed1b7dd9e96

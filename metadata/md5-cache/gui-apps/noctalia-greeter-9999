@@ -1,13 +1,13 @@
 BDEPEND=dev-libs/wayland dev-util/wayland-scanner dev-libs/wayland-protocols >=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array >=dev-vcs/git-1.8.2.1[curl]
-DEFINED_PHASES=compile configure install test unpack
+DEFINED_PHASES=compile configure install postinst prepare test unpack
 DEPEND=dev-libs/glib:2 dev-libs/libinput dev-cpp/tomlplusplus dev-libs/wayland gnome-base/librsvg:2 gui-libs/greetd gui-libs/wlroots:0.20= media-libs/fontconfig media-libs/freetype media-libs/libwebp media-libs/mesa sys-apps/dbus virtual/opengl x11-libs/cairo[glib] x11-libs/libxkbcommon x11-libs/pango
 DESCRIPTION=A minimal login greeter for greetd that matches Noctalia Shell
 EAPI=8
 HOMEPAGE=https://noctalia.dev/ https://github.com/noctalia-dev/noctalia-greeter
-INHERIT=meson git-r3
+INHERIT=meson tmpfiles git-r3
 LICENSE=MIT
 PROPERTIES=live
-RDEPEND=dev-libs/glib:2 dev-libs/libinput dev-cpp/tomlplusplus dev-libs/wayland gnome-base/librsvg:2 gui-libs/greetd gui-libs/wlroots:0.20= media-libs/fontconfig media-libs/freetype media-libs/libwebp media-libs/mesa sys-apps/dbus virtual/opengl x11-libs/cairo[glib] x11-libs/libxkbcommon x11-libs/pango
+RDEPEND=dev-libs/glib:2 dev-libs/libinput dev-cpp/tomlplusplus dev-libs/wayland gnome-base/librsvg:2 gui-libs/greetd gui-libs/wlroots:0.20= media-libs/fontconfig media-libs/freetype media-libs/libwebp media-libs/mesa sys-apps/dbus virtual/opengl x11-libs/cairo[glib] x11-libs/libxkbcommon x11-libs/pango virtual/tmpfiles
 SLOT=0
-_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	python-utils-r1	5fd9a75ca55021d3276ce969f8e28391	sysroot	4c36abaf94ebd3ab32f8abea9a444121	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	meson	12065b402c6d78a2aec926ed8dfd964f	git-r3	2f8cdb10b033f92c3136aa6488a31c98
-_md5_=3865c8dcc56b01cf6654261aad38b590
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	python-utils-r1	5fd9a75ca55021d3276ce969f8e28391	sysroot	4c36abaf94ebd3ab32f8abea9a444121	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	meson	12065b402c6d78a2aec926ed8dfd964f	tmpfiles	e0b49bcd7a0daea941c0fbe4cb35ff4e	git-r3	2f8cdb10b033f92c3136aa6488a31c98
+_md5_=69231c87141f6341d1d5c4dbb454be96

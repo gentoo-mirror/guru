@@ -1,7 +1,7 @@
 BDEPEND=virtual/pkgconfig || ( >=dev-lang/rust-bin-1.74.1:* >=dev-lang/rust-1.74.1:* )
 DEFINED_PHASES=compile configure install setup test unpack
 DEPEND=media-libs/alsa-lib media-libs/shaderc media-libs/fontconfig sys-apps/dbus media-libs/freetype X? ( x11-libs/libxcb x11-libs/libxkbcommon[X] x11-libs/libX11 x11-libs/libXext x11-libs/libXrandr ) openvr? ( =media-libs/openvr-1.23.8-r0 ) openxr? ( media-libs/openxr-loader[X?,wayland?] ) pipewire? ( media-video/pipewire ) wayland? ( x11-libs/libxkbcommon[wayland] )
-DESCRIPTION=Access your Wayland/X11 desktop from Monado/WiVRn/SteamVR.
+DESCRIPTION=Access your Wayland/X11 desktop from Monado/WiVRn/SteamVR
 EAPI=8
 HOMEPAGE=https://github.com/wlx-team/wayvr
 INHERIT=cargo desktop
@@ -13,4 +13,4 @@ REQUIRED_USE=|| ( openvr openxr ) || ( wayland X ) wayland? ( pipewire )
 SLOT=0
 SRC_URI=https://github.com/wlx-team/wayvr/archive/refs/tags/v26.2.1.tar.gz -> wayvr-26.2.1.tar.gz https://github.com/wlx-team/wayvr/releases/download/v26.2.1/vendor.tar.xz -> wayvr-26.2.1-vendor.tar.xz
 _eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	rust	e2200a3d90348a53accc2f8c2e80f10c	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	c18ade5e10cfd39155908ca389968d65	desktop	e447b5f77146d69797e9f03ff177f3f1
-_md5_=811a54bbdac9cb107c8aebd5c5aacd45
+_md5_=c1df27797d11d5e4df53acdf055aa466

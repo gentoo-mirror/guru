@@ -1,0 +1,13 @@
+BDEPEND=>=dev-lang/go-1.26.5 >=dev-lang/go-1.24.11:= app-arch/unzip virtual/pkgconfig
+DEFINED_PHASES=compile install postinst prepare test unpack
+DESCRIPTION=Network-wide ads & trackers blocking DNS server like Pi-Hole with web ui
+EAPI=8
+HOMEPAGE=https://github.com/AdguardTeam/AdGuardHome/
+IDEPEND=filecaps? ( sys-libs/libcap )
+INHERIT=fcaps go-module readme.gentoo-r1 systemd
+IUSE=+web +filecaps
+LICENSE=GPL-3 Apache-2.0 BSD BSD-2 MIT ZLIB
+SLOT=0
+SRC_URI=https://github.com/AdguardTeam/AdGuardHome/archive/v0.107.78.tar.gz -> AdGuardHome-0.107.78.tar.gz https://github.com/rahilarious/gentoo-distfiles/releases/download/AdGuardHome-0.107.78/deps.tar.xz -> AdGuardHome-0.107.78-deps.tar.xz web? ( https://github.com/AdguardTeam/AdGuardHome/releases/download/v0.107.78/AdGuardHome_frontend.tar.gz -> AdGuardHome-0.107.78-web.tar.gz )
+_eclasses_=fcaps	c94316d02a37fb5cbe79b7d41c729119	toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	sysroot	4c36abaf94ebd3ab32f8abea9a444121	go-env	fca4e820393c2eac25a944be8bdf6a3a	go-module	3d4b6f3f29b3ebdeb708785b3cb1743b	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	readme.gentoo-r1	9ca94b2d607e7454ca6cfb44ab8ce327	systemd	a964c0cbe818b5729da1dbfcee5be861
+_md5_=e617c8dda13200d299a677b578a69e38

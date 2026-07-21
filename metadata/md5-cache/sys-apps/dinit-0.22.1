@@ -1,0 +1,12 @@
+DEFINED_PHASES=configure install
+DEPEND=caps? ( sys-libs/libcap ) sysv-utils? ( !sys-apps/openrc[sysv-utils(-)] !sys-apps/s6-linux-init[sysv-utils(-)] !sys-apps/systemd[sysv-utils(+)] !sys-apps/sysvinit )
+DESCRIPTION=The dinit service supervision + init suite
+EAPI=8
+HOMEPAGE=https://github.com/davmac314/dinit
+IUSE=+cgroups +caps sysv-utils
+KEYWORDS=~amd64
+LICENSE=Apache-2.0
+RDEPEND=caps? ( sys-libs/libcap ) sysv-utils? ( !sys-apps/openrc[sysv-utils(-)] !sys-apps/s6-linux-init[sysv-utils(-)] !sys-apps/systemd[sysv-utils(+)] !sys-apps/sysvinit )
+SLOT=0
+SRC_URI=https://github.com/davmac314/dinit/releases/download/v0.22.1/dinit-0.22.1.tar.xz
+_md5_=93cf1107a9f668f41f74d49bb1e70284

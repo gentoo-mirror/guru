@@ -1,0 +1,17 @@
+BDEPEND=python_single_target_python3_12? ( dev-lang/python:3.12 ) python_single_target_python3_13? ( dev-lang/python:3.13 ) python_single_target_python3_14? ( dev-lang/python:3.14 ) python_single_target_python3_15? ( dev-lang/python:3.15 ) virtual/pkgconfig doc? ( media-gfx/graphviz python_single_target_python3_12? ( dev-python/sphinx[python_targets_python3_12(-)] dev-python/sphinx-rtd-theme[python_targets_python3_12(-)] ) python_single_target_python3_13? ( dev-python/sphinx[python_targets_python3_13(-)] dev-python/sphinx-rtd-theme[python_targets_python3_13(-)] ) python_single_target_python3_14? ( dev-python/sphinx[python_targets_python3_14(-)] dev-python/sphinx-rtd-theme[python_targets_python3_14(-)] ) python_single_target_python3_15? ( dev-python/sphinx[python_targets_python3_15(-)] dev-python/sphinx-rtd-theme[python_targets_python3_15(-)] ) ) llvm_slot_17? ( llvm-core/clang:17=[llvm_targets_BPF(-)] ) llvm_slot_18? ( llvm-core/clang:18=[llvm_targets_BPF(-)] ) llvm_slot_19? ( llvm-core/clang:19=[llvm_targets_BPF(-)] ) llvm_slot_20? ( llvm-core/clang:20=[llvm_targets_BPF(-)] ) llvm_slot_21? ( llvm-core/clang:21=[llvm_targets_BPF(-)] ) llvm_slot_22? ( llvm-core/clang:22=[llvm_targets_BPF(-)] ) test? ( dev-util/cmocka ) app-alternatives/ninja >=dev-build/cmake-3.28.5
+DEFINED_PHASES=compile configure install prepare setup test
+DEPEND=mqtt? ( app-misc/mosquitto ) dev-libs/libyaml dev-libs/libbpf:= dev-libs/openssl:= net-libs/xdp-tools
+DESCRIPTION=RTC Testbench is a set of tools for validating Ethernet networks
+EAPI=8
+HOMEPAGE=https://github.com/Linutronix/RTC-Testbench
+INHERIT=cmake python-single-r1 llvm-r2
+IUSE=doc mqtt test python_single_target_python3_12 python_single_target_python3_13 python_single_target_python3_14 python_single_target_python3_15 +llvm_slot_22 llvm_slot_17 llvm_slot_18 llvm_slot_19 llvm_slot_20 llvm_slot_21
+KEYWORDS=~amd64 ~x86
+LICENSE=BSD-2
+RDEPEND=python_single_target_python3_12? ( dev-lang/python:3.12 ) python_single_target_python3_13? ( dev-lang/python:3.13 ) python_single_target_python3_14? ( dev-lang/python:3.14 ) python_single_target_python3_15? ( dev-lang/python:3.15 ) mqtt? ( app-misc/mosquitto ) dev-libs/libyaml dev-libs/libbpf:= dev-libs/openssl:= net-libs/xdp-tools
+REQUIRED_USE=^^ ( python_single_target_python3_12 python_single_target_python3_13 python_single_target_python3_14 python_single_target_python3_15 ) ^^ ( llvm_slot_17 llvm_slot_18 llvm_slot_19 llvm_slot_20 llvm_slot_21 llvm_slot_22 )
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/Linutronix/RTC-Testbench/archive/refs/tags/v5.5.tar.gz -> rtc-testbench-5.5.tar.gz
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	c54f532543a549f7318d6c49aaf8e953	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	python-utils-r1	5fd9a75ca55021d3276ce969f8e28391	python-single-r1	47d8ac9be330c9366112b78fd4f8ce57	llvm-utils	e7edb4086e31c8537574b263d899f826	multilib	fc812e8eb2170022c28272d80a1f9e77	llvm-r2	56f5637f85225a4b5312d9055a7727d8
+_md5_=fefb49ccd83f590d386564822590e3fc

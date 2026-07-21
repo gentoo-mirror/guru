@@ -185,7 +185,6 @@ dev-lang/quickjs:lto - Enable Link Time Optimizations (improves performance and 
 dev-lang/swift:libcxx - Build against llvm-runtimes/libcxx as the default C++ runtime library over GCC's libdstc++.
 dev-lang/swift-bootstrap:binary - Bootstrap from binary (dev-lang/swift-bin:5/10) instead of building from source (dev-lang/swift:5/10).
 dev-libs/feedbackd:daemon - Build the feedbackd daemon
-dev-libs/hts_engine:speech-tools - use memory allocation/free functions of app-accessibility/speech-tools
 dev-libs/libdbf:doc - Include documentation
 dev-libs/librepo:gpgme - Use GPGME instead of rpm library for OpenPGP key support
 dev-libs/librepo:zchunk - Build with zchunk support
@@ -492,6 +491,7 @@ gui-libs/scenefx:examples - Build example applications
 gui-wm/cage:X - Enable support for X11 applications (XWayland)
 gui-wm/kwm:bar - Enable builtin bar
 gui-wm/mangowm:X - Enable support for X11 applications (XWayland)
+gui-wm/miracle-wm:tools - Build internal gtk4 tools
 gui-wm/phoc:dtrace - Enable profiling data capture support using dev-debug/systemtap
 gui-wm/phoc:sysprof - Enable profiling data capture support using dev-util/sysprof-capture
 gui-wm/river:llvm - Use LLVM Zig backend
@@ -766,6 +766,7 @@ net-libs/ulfius:websocket - websocket support
 net-libs/usockets:asio - Enable bindings to use the boost asio dispatcher
 net-libs/usockets:libuv - Enable bindings to use the libuv dispatcher
 net-mail/dovecot-fts-flatcurve:textcat - Add libtextcat language guessing support for full text search (FTS)
+net-misc/gnome-ssh-askpass:gtk4 - Build the GTK-4 client
 net-misc/iipsrv:apache2 - Add Apache mox_proxy_fcgi config file
 net-misc/iipsrv:lighttpd - Add Lighttpd config file
 net-misc/jool:iptables - In addition to net-firewall/nftables, include support for xtables with net-firewall/iptables.
@@ -910,10 +911,16 @@ sci-ml/ollama:rocm - Enable ROCm gpu computing support
 sci-ml/ollama-bin:rocm - Fetch standalone Ollama ROCm libraries
 sys-apps/bustd:glob - Enable excluding processes with glob patterns
 sys-apps/coolercontrold:liquidctl - Support for interacting with AIO liquid coolers and other devices with app-misc/liquidctl
+sys-apps/dinit:cgroups - Enable cgroups support
+sys-apps/dinit:sysv-utils - Install sysvinit compatibility symlinks for halt, init, poweroff, reboot and shutdown
+sys-apps/dinit-services:kmscon - Use kmscon instead of getty for tty
 sys-apps/dnf5:appstream - Build appstream metadata plugin
 sys-apps/dnf5:manifest - Build manifest plugin
 sys-apps/drm_info:pci - Print PCI device names via libpci
 sys-apps/fselect:users - Add support for getting system users and groups
+sys-apps/turnstile:dinit - Install Dinit-related backend and data
+sys-apps/turnstile:rundir - Enable rundir management by default
+sys-apps/turnstile:runit - Install runit-related backend and data
 sys-block/clonezilla:apfs - Support apfs by partclone
 sys-block/clonezilla:btrfs - Support btrfs by partclone
 sys-block/clonezilla:e2fs - Support e2fs by partclone
