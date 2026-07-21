@@ -15,41 +15,39 @@ CRATES="
 	anstyle-query@1.1.5
 	anstyle-wincon@3.0.11
 	anstyle@1.0.14
-	anyhow@1.0.102
 	assert_cmd@2.2.2
 	async-recursion@1.1.1
 	autocfg@1.5.1
-	bitflags@2.12.1
+	bitflags@2.13.0
 	blake2@0.10.6
 	block-buffer@0.10.4
-	bstr@1.12.1
+	bstr@1.12.3
 	bumpalo@3.20.3
-	bytes@1.11.1
-	cc@1.2.63
+	bytes@1.12.0
+	cc@1.2.66
 	cfg-if@1.0.4
 	chrono-tz-build@0.3.0
 	chrono-tz@0.9.0
 	chrono@0.4.45
 	clap@4.6.1
 	clap_builder@4.6.0
-	clap_complete@4.6.5
+	clap_complete@4.6.7
 	clap_derive@4.6.1
 	clap_lex@1.1.0
 	cmake@0.1.58
 	codespan-reporting@0.13.1
 	colorchoice@1.0.5
-	console@0.16.3
+	console@0.16.4
 	core-foundation-sys@0.8.7
-	cpufeatures@0.2.17
-	crossbeam-deque@0.8.6
-	crossbeam-epoch@0.9.18
-	crossbeam-utils@0.8.21
+	crossbeam-deque@0.8.7
+	crossbeam-epoch@0.9.20
+	crossbeam-utils@0.8.22
 	crypto-common@0.1.7
-	cxx-build@1.0.194
-	cxx@1.0.194
-	cxxbridge-cmd@1.0.194
-	cxxbridge-flags@1.0.194
-	cxxbridge-macro@1.0.194
+	cxx-build@1.0.196
+	cxx@1.0.196
+	cxxbridge-cmd@1.0.196
+	cxxbridge-flags@1.0.196
+	cxxbridge-macro@1.0.196
 	deunicode@1.6.2
 	diff@0.1.13
 	difflib@0.4.0
@@ -59,13 +57,12 @@ CRATES="
 	dunce@1.0.5
 	either@1.16.0
 	encode_unicode@1.0.0
-	env_filter@1.0.1
-	env_logger@0.11.10
+	env_filter@2.0.0
+	env_logger@0.11.11
 	equivalent@1.0.2
 	errno@0.3.14
 	fastrand@2.4.1
 	find-msvc-tools@0.1.9
-	foldhash@0.1.5
 	foldhash@0.2.0
 	futures-channel@0.3.32
 	futures-core@0.3.32
@@ -78,37 +75,34 @@ CRATES="
 	futures@0.3.32
 	generic-array@0.14.7
 	getrandom@0.2.17
-	getrandom@0.4.2
+	getrandom@0.4.3
 	glob@0.3.3
 	globset@0.4.18
 	globwalk@0.9.1
-	hashbrown@0.15.5
 	hashbrown@0.17.1
 	heck@0.5.0
 	hermit-abi@0.5.2
 	humansize@2.1.3
 	iana-time-zone-haiku@0.1.2
 	iana-time-zone@0.1.65
-	id-arena@2.3.0
-	ignore@0.4.25
+	ignore@0.4.27
 	indexmap@2.14.0
-	indicatif@0.18.4
+	indicatif@0.18.6
 	is-terminal@0.4.17
 	is_ci@1.2.0
 	is_terminal_polyfill@1.70.2
-	itertools@0.14.0
+	itertools@0.15.0
 	itoa@1.0.18
-	js-sys@0.3.99
+	js-sys@0.3.103
 	lazy_static@1.5.0
-	leb128fmt@0.1.0
 	libc@0.2.186
 	libm@0.2.16
-	libredox@0.1.17
+	libredox@0.1.18
 	link-cplusplus@1.0.12
 	linux-raw-sys@0.12.1
 	lock_api@0.4.14
-	log@0.4.32
-	memchr@2.8.1
+	log@0.4.33
+	memchr@2.8.2
 	miette-derive@7.6.0
 	miette@7.6.0
 	mio@1.2.1
@@ -122,10 +116,10 @@ CRATES="
 	parse-zoneinfo@0.3.1
 	pathdiff@0.2.3
 	percent-encoding@2.3.2
-	pest@2.8.6
-	pest_derive@2.8.6
-	pest_generator@2.8.6
-	pest_meta@2.8.6
+	pest@2.8.7
+	pest_derive@2.8.7
+	pest_generator@2.8.7
+	pest_meta@2.8.7
 	phf@0.11.3
 	phf_codegen@0.11.3
 	phf_generator@0.11.3
@@ -137,9 +131,8 @@ CRATES="
 	predicates-tree@1.0.13
 	predicates@3.1.4
 	pretty_assertions@1.4.1
-	prettyplease@0.2.37
 	proc-macro2@1.0.106
-	quote@1.0.45
+	quote@1.0.46
 	r-efi@6.0.0
 	rand@0.8.6
 	rand_chacha@0.3.1
@@ -147,10 +140,10 @@ CRATES="
 	redox_syscall@0.5.18
 	redox_users@0.5.2
 	regex-automata@0.4.14
-	regex-syntax@0.8.10
-	regex@1.12.3
+	regex-syntax@0.8.11
+	regex@1.12.4
 	rustix@1.1.4
-	rustversion@1.0.22
+	rustversion@1.0.23
 	ryu@1.0.23
 	same-file@1.0.6
 	scopeguard@1.2.0
@@ -161,20 +154,19 @@ CRATES="
 	serde_derive@1.0.228
 	serde_json@1.0.150
 	serde_yaml_ng@0.10.0
-	sha2@0.10.9
 	shlex@2.0.1
 	signal-hook-registry@1.4.8
 	siphasher@1.0.3
 	slab@0.4.12
 	slug@0.1.6
-	smallvec@1.15.1
+	smallvec@1.15.2
 	socket2@0.6.4
 	strsim@0.11.1
 	subst@0.3.8
 	subtle@2.6.1
 	supports-color@2.1.0
 	supports-color@3.0.2
-	syn@2.0.117
+	syn@2.0.118
 	tabwriter@1.4.1
 	tempfile@3.27.0
 	tera@1.20.1
@@ -191,7 +183,6 @@ CRATES="
 	unicode-segmentation@1.13.3
 	unicode-width@0.1.14
 	unicode-width@0.2.2
-	unicode-xid@0.2.6
 	unit-prefix@0.5.2
 	unsafe-libyaml@0.2.11
 	utf8parse@0.2.2
@@ -199,15 +190,10 @@ CRATES="
 	wait-timeout@0.2.1
 	walkdir@2.5.0
 	wasi@0.11.1+wasi-snapshot-preview1
-	wasip2@1.0.3+wasi-0.2.9
-	wasip3@0.4.0+wasi-0.3.0-rc-2026-01-06
-	wasm-bindgen-macro-support@0.2.122
-	wasm-bindgen-macro@0.2.122
-	wasm-bindgen-shared@0.2.122
-	wasm-bindgen@0.2.122
-	wasm-encoder@0.244.0
-	wasm-metadata@0.244.0
-	wasmparser@0.244.0
+	wasm-bindgen-macro-support@0.2.126
+	wasm-bindgen-macro@0.2.126
+	wasm-bindgen-shared@0.2.126
+	wasm-bindgen@0.2.126
 	web-time@1.1.0
 	winapi-util@0.1.11
 	windows-core@0.62.2
@@ -217,16 +203,9 @@ CRATES="
 	windows-result@0.4.1
 	windows-strings@0.5.1
 	windows-sys@0.61.2
-	wit-bindgen-core@0.51.0
-	wit-bindgen-rust-macro@0.51.0
-	wit-bindgen-rust@0.51.0
-	wit-bindgen@0.51.0
-	wit-bindgen@0.57.1
-	wit-component@0.244.0
-	wit-parser@0.244.0
 	yansi@1.0.1
-	zerocopy-derive@0.8.50
-	zerocopy@0.8.50
+	zerocopy-derive@0.8.53
+	zerocopy@0.8.53
 	zmij@1.0.21
 "
 
