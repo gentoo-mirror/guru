@@ -6,12 +6,12 @@ EAPI=8
 PYTHON_COMPAT=( python3_{12..14} )
 LLVM_COMPAT=( {18..21} )
 
-inherit python-any-r1 llvm-r2
+inherit cmake python-any-r1 llvm-r2
 
 DESCRIPTION="framework for Verilog RTL synthesis"
 HOMEPAGE="https://yosyshq.net/yosys/"
 SRC_URI="
-	https://github.com/YosysHQ/${PN}/releases/download/v${PV}/yosys-src.tar.gz -> ${P}.tar.gz
+	https://github.com/YosysHQ/${PN}/releases/download/v${PV}/yosys.tar.gz -> ${P}.tar.gz
 "
 S="${WORKDIR}"
 
@@ -34,35 +34,33 @@ RDEPEND="
 DEPEND="${RDEPEND}"
 BDEPEND="
 	${PYTHON_DEPS}
+	app-alternatives/lex
+	app-alternatives/yacc
 	dev-vcs/git
 	virtual/pkgconfig
 "
 
 pkg_setup() {
 	# llvm-r2 and python-any-r1 both export pkg_setup and llvm-r2 wins,
-	# leaving PYTHON unset, so call python_setup ourselves.  An empty
-	# PYTHON_EXECUTABLE makes the Makefile run helper scripts via their env
-	# python3 shebang, which breaks with python-exec[-native-symlinks].
+	# leaving PYTHON unset, so call python_setup ourselves.
 	llvm-r2_pkg_setup
 	python_setup
 }
 
 src_configure() {
-	cat <<-__EOF__ >> Makefile.conf || die
-		PREFIX := ${EPREFIX}/usr
-		STRIP := @echo "skipping strip"
-		CXXFLAGS += ${CXXFLAGS}
-		LINKFLAGS += ${LDFLAGS}
-		PYTHON_EXECUTABLE := ${PYTHON}
-	__EOF__
-
-	default
+	local mycmakeargs=(
+		-DYOSYS_WITHOUT_SLANG=ON
+		-DYOSYS_WITH_PYTHON=OFF
+		-DYOSYS_INSTALL_DRIVER=ON
+		-DPython3_EXECUTABLE="${PYTHON}"
+	)
+	cmake_src_configure
 }
 
 src_install() {
-	default
+	cmake_src_install
 
-	# yosys-smtbmc and yosys-witness keep an env python3 shebang that also
+	# yosys-smtbmc and yosys-witness keep an env python3 shebang that
 	# breaks under python-exec[-native-symlinks]; retarget them at EPYTHON.
 	python_fix_shebang "${ED}"/usr/bin/yosys-smtbmc "${ED}"/usr/bin/yosys-witness
 }
