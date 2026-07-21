@@ -20,11 +20,20 @@ RDEPEND="
 	app-crypt/cryptsetup-scripts-dinit
 	virtual/udev
 	sys-apps/sed
+	kmscon? (
+		sys-apps/kmscon
+	)
 "
 DEPEND="${RDEPEND}"
 
+IUSE="kmscon"
+
 src_install() {
-	default
+	if use kmscon; then
+		emake install TTY=kmscon DESTDIR="${D}"
+	else
+		emake install DESTDIR="${D}"
+	fi
 	keepdir /var/log/dinit
 }
 
