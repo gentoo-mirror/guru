@@ -4,11 +4,11 @@
 EAPI=8
 
 LLVM_COMPAT=({15..21})
-RUST_MIN_VER="1.88.0"
+RUST_MIN_VER="1.95"
 
 inherit cargo desktop xdg
 
-DESCRIPTION="Access your Wayland/X11 desktop from Monado/WiVRn/SteamVR."
+DESCRIPTION="Access your Wayland/X11 desktop from Monado/WiVRn/SteamVR"
 HOMEPAGE="https://github.com/wlx-team/wayvr"
 SRC_URI="
 	https://github.com/wlx-team/wayvr/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz

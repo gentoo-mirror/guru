@@ -22,14 +22,14 @@ SLOT="0"
 IUSE="X"
 
 COMMON_DEPEND="
-	>=gui-libs/wlroots-0.19:=[libinput,session,X?]
-	<gui-libs/wlroots-0.20:=[X?]
+	>=gui-libs/wlroots-0.20:=[libinput,session,X?]
+	<gui-libs/wlroots-0.21:=[X?]
 "
 
 COMMON_DEPEND+="
 	dev-libs/libinput:=
 	dev-libs/wayland
-	>=gui-libs/scenefx-0.4.1
+	>=gui-libs/scenefx-0.5
 	dev-libs/libpcre2
 	x11-libs/libxkbcommon
 	dev-libs/cJSON
@@ -42,6 +42,8 @@ COMMON_DEPEND+="
 RDEPEND="
 	${COMMON_DEPEND}
 	x11-libs/pixman
+	x11-libs/cairo
+	x11-libs/pango
 	X? (
 		x11-base/xwayland
 	)

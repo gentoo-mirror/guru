@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit meson
+inherit meson tmpfiles
 
 DESCRIPTION="A minimal login greeter for greetd that matches Noctalia Shell"
 HOMEPAGE="https://noctalia.dev/ https://github.com/noctalia-dev/noctalia-greeter"
@@ -46,10 +46,30 @@ BDEPEND="
 	dev-libs/wayland-protocols
 "
 
+src_prepare() {
+	default
+
+	# replace greetd user
+	sed -E -i 's/^(\S+\s+\S+\s+\S+\s+)greeter(\s+)greeter(\s+)/\1greetd\2greetd\3/' data/tmpfiles.d/${PN}.conf
+}
+
 src_configure() {
 	local emesonargs=(
 		-Dsystem_tomlplusplus=true
 	)
 
 	meson_src_configure
+}
+
+src_install() {
+	meson_src_install
+
+	# remove unneeded additional scripts
+	rm "${ED}"/usr/share/${PN}/*.sh || die
+
+	dotmpfiles data/tmpfiles.d/${PN}.conf
+}
+
+pkg_postinst() {
+	tmpfiles_process ${PN}.conf
 }
