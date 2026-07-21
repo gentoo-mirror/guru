@@ -222,8 +222,8 @@ RDEPEND="
 QA_FLAGS_IGNORED="usr/bin/leftwm-theme"
 
 src_test() {
-	# requires internet connection
-	cargo_src_test -- --skip test_update_repos
+	local CARGO_SKIP_TESTS=( test_update_repos )
+	cargo_src_test
 }
 
 src_install() {
