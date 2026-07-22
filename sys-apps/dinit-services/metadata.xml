@@ -6,6 +6,8 @@
   </maintainer>
   <use>
     <flag name="kmscon">Use kmscon instead of getty for tty</flag>
+    <flag name="dbus">Enable dbus related services and helpers</flag>
+    <flag name="cryptsetup">Enable cryptsetup services</flag>
   </use>
   <upstream>
     <remote-id type="codeberg">gentoo-dinit/services</remote-id>
