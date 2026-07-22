@@ -79,6 +79,12 @@ src_prepare() {
 			-i "$f" || die
 	done
 
+	# Disable auto-updates
+	sed \
+		-e '1i #![allow(unreachable_code)]' \
+		-e '/fn env_installer(/a \    return Some("portage");' \
+		-i crates/codegen/xai-grok-update/src/auto_update.rs || die
+
 	# Cargo offline fetch workaround
 	local url commit path
 	IFS=";" read -r url commit path <<<"${GIT_CRATES[async-openai]}"
