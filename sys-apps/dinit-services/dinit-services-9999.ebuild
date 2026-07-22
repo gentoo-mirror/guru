@@ -34,12 +34,12 @@ RDEPEND="
 DEPEND="${RDEPEND}"
 
 src_install() {
-	opts=(
-		$(usev kmscon TTY=kmscon)
-		$(usev cryptsetup ENABLE_CRYPTSETUP=yes)
-		$(usev dbus ENABLE_DBUS=yes)
-	)
-	emake install DESTDIR="${D}" ${opts}
+	emake \
+		$(usev kmscon TTY=kmscon) \
+		$(usev cryptsetup ENABLE_CRYPTSETUP=yes)\
+		$(usev dbus ENABLE_DBUS=yes) \
+		DESTDIR="${D}" \
+		install
 	keepdir /var/log/dinit
 }
 
