@@ -16,7 +16,7 @@ else
 	S="${WORKDIR}/services"
 fi
 
-IUSE="kmscon dbus cryptsetup"
+IUSE="kmscon +dbus cryptsetup"
 
 RDEPEND="
 	virtual/udev
