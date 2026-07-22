@@ -132,7 +132,7 @@ app-admin/redfish-utilities 3.5.1: Python based utilities for performing common 
 app-admin/ripasso 0.7.0: A password manager that uses the file format of 'pass'
 app-admin/run0edit 0.5.9 0.5.10 9999: Script to edit a single file as root using run0
 app-admin/s-tui 1.3.0 1.4.0: Stress-Terminal UI monitoring tool
-app-admin/sshelf 0.9.0 0.10.0: A TUI for managing and connecting to SSH hosts
+app-admin/sshelf 0.10.0: A TUI for managing and connecting to SSH hosts
 app-admin/synadm 0.43.1 0.44: Command line admin tool for Synapse
 app-admin/talosctl-bin 1.7.6 1.9.5 1.10.1 1.12.0_rc0 1.12.5: Pre-compiled talosctl is an tool for interacting with the Talos API
 app-admin/terragrunt-bin 0.93.11 0.96.1: A thin wrapper for Terraform
@@ -154,6 +154,7 @@ app-backup/grub-btrfs 4.11-r1 4.12 4.13 9999: Improves Grub by adding btrfs snap
 app-backup/kopia 0.23.1: Kopia - Fast And Secure Open-Source Backup
 app-backup/kopia-ui-bin 0.23.1: Kopia - Fast And Secure Open-Source Backup (Electron UI)
 app-backup/pika-backup 0.7.4-r1 0.7.4-r2: Keep your data safe
+app-backup/portage-snapper 0.3.0: Snapper snapshots around Portage transactions, snap-pac style
 app-backup/restic-browser 0.3.3: A GUI to browse and restore from restic backup repositories
 app-backup/snapper-rollback 1.0.0: Rollback to a snapper btrfs snapshot using the flat subvolume layout
 app-backup/timeshift 23.07.1 25.12.4: A system restore utility for Linux
@@ -293,7 +294,7 @@ app-misc/gentodo 0.2.1 1.1.0 1.1.1 9999: Todo program to help enhance your Gento
 app-misc/ghq 1.8.0 1.9.4 1.10.1 9999: Remote repository management made easy
 app-misc/github-desktop-bin 3.4.9_rc1: Linux fork of GitHub Desktop
 app-misc/glow 2.1.2-r1: Render markdown on the CLI, with pizzazz!
-app-misc/godedupe 1.5.1 1.5.2: Improved and modern fdupes alternative
+app-misc/godedupe 1.5.1 1.5.2 1.6.0: Improved and modern fdupes alternative
 app-misc/gopsuinfo 0.1.5 0.1.9: A gopsutil-based command to display system usage info as text
 app-misc/grit 0.3.0: An personal task manager that represents tasks as multitree nodes
 app-misc/infnoise 0.3.3: infinite noise TRNG program
@@ -304,7 +305,7 @@ app-misc/keyd 2.6.0: A key remapping daemon for linux
 app-misc/kloak 0.2.30 0.3.7_p1 9999: A privacy tool that makes keystroke biometrics less effective
 app-misc/kmon 1.6.5 1.7.1: Linux kernel manager and activity monitor
 app-misc/krabby 0.3.0 9999: Print pokemon sprites in your terminal
-app-misc/ledger-live-bin 2.84.1: Manager for the Ledger hardware wallet
+app-misc/ledger-live-bin 4.11.0: Manager for the Ledger hardware wallet
 app-misc/lf 37 38-r1 41 9999: Terminal file manager
 app-misc/libation 12.5.3: Libation: Free, open-source Audible library manager
 app-misc/lyfetch 1.1: Small system information script for linux systems.
@@ -509,7 +510,7 @@ dev-cpp/trantor 1.5.19 1.5.20: Non-blocking I/O tcp network lib based on c++14/1
 dev-cpp/trompeloeil 47 49: Header only C++14 mocking framework
 dev-cpp/units 3.3.0: A compile-time, header-only, dimensional analysis and unit conversion library
 dev-cpp/workflow 0.10.2-r1 0.10.3 0.10.5 9999: C++ Parallel Computing and Asynchronous Networking Engine
-dev-cpp/wt 4.12.6 4.13.2 4.13.3 4.13.4: Wt, C++ Web Toolkit
+dev-cpp/wt 4.13.3 4.13.4 4.14.0: Wt, C++ Web Toolkit
 dev-cpp/xtensor 0.26.0: header-only C++ library for numerical analysis with multi-dimensional arrays
 dev-cpp/xtl 0.8.0: Algorithms and containers used by the xtensor stack and the xeus stack
 dev-crystal/athena-negotiation 0.1.5-r1 0.2.0-r1: Framework agnostic content negotiation library
@@ -914,12 +915,12 @@ dev-python/odsgenerator 1.12.0: Generate an OpenDocument Format .ods file from a
 dev-python/odsparsator 1.13.1: Generate a JSON file from an OpenDocument Format .ods file.
 dev-python/openai 2.44.0: The official Python library for the openai API
 dev-python/openapi-pydantic 0.5.1: Modern, type-safe OpenAPI schemas in Python using Pydantic 1.8+ and 2.x
-dev-python/opentelemetry-exporter-otlp-proto-common 1.42.1 1.43.0: OpenTelemetry Protobuf encoding
-dev-python/opentelemetry-exporter-otlp-proto-grpc 1.42.1 1.43.0: OpenTelemetry Collector Protobuf over gRPC Exporter
-dev-python/opentelemetry-exporter-otlp-proto-http 1.42.1 1.43.0: OpenTelemetry Collector Protobuf over HTTP Exporter
-dev-python/opentelemetry-instrumentation 0.63_beta1 0.64_beta0: Instrumentation Tools & Auto Instrumentation for OpenTelemetry Python
-dev-python/opentelemetry-instrumentation-threading 0.63_beta1 0.64_beta0: Thread context propagation support for OpenTelemetry
-dev-python/opentelemetry-proto 1.42.1 1.43.0: OpenTelemetry Python Proto
+dev-python/opentelemetry-exporter-otlp-proto-common 1.42.1 1.43.0 1.44.0: OpenTelemetry Protobuf encoding
+dev-python/opentelemetry-exporter-otlp-proto-grpc 1.42.1 1.43.0 1.44.0: OpenTelemetry Collector Protobuf over gRPC Exporter
+dev-python/opentelemetry-exporter-otlp-proto-http 1.42.1 1.43.0 1.44.0: OpenTelemetry Collector Protobuf over HTTP Exporter
+dev-python/opentelemetry-instrumentation 0.63_beta1 0.64_beta0 0.65_beta0: Instrumentation Tools & Auto Instrumentation for OpenTelemetry Python
+dev-python/opentelemetry-instrumentation-threading 0.63_beta1 0.64_beta0 0.65_beta0: Thread context propagation support for OpenTelemetry
+dev-python/opentelemetry-proto 1.42.1 1.43.0 1.44.0: OpenTelemetry Python Proto
 dev-python/opentelemetry-semantic-conventions-ai 0.5.2: OpenTelemetry Semantic Conventions for AI applications
 dev-python/osc-placement 4.8.0 4.9.0: OpenStackClient plugin for Placement service
 dev-python/oscrypto 1.3.0-r2: TLS sockets, key generation, encryption, decryption, signing, verification
@@ -1013,6 +1014,7 @@ dev-python/pywavefront 1.3.3: Python library for importing Wavefront .obj files
 dev-python/pywebview 6.1: A lightweight cross-platform wrapper around a webview component
 dev-python/questionary 2.1.0 2.1.1: Python library to build pretty command line user prompts
 dev-python/queuelib 1.8.0: Collection of persistent and non-persistent queues for Python
+dev-python/rawji 0.1.0_p20260708: Fujifilm RAF conversion using the camera's own engine over USB
 dev-python/readability-lxml 0.8.4.1: Fast html to text parser (article readability tool)
 dev-python/readchar 4.2.1: Python library to read characters and key strokes
 dev-python/readmdict 0.1.1-r1: Read mdx/mdd files
@@ -1114,12 +1116,12 @@ dev-util/bash-language-server 5.3.3 5.4.0 5.4.2 5.4.3 5.6.0: A language server f
 dev-util/bats-assert 2.2.0: Common assertions for Bats
 dev-util/bats-support 0.3.0: Supporting library for Bats test helpers
 dev-util/bc-ur 0.3.0: Blockchain Commons UR Library
-dev-util/bruno-bin 1.9.0 1.9.0-r1 3.0.2 3.1.4: Opensource IDE For Exploring and Testing Api's
+dev-util/bruno-bin 1.9.0 1.9.0-r1 3.0.2 3.1.4 3.5.3: Opensource IDE For Exploring and Testing Api's
 dev-util/bump-my-version 1.2.6 1.2.7 1.3.0: Version bump your Python project
 dev-util/cargo-post 0.1.7: A cargo wrapper that executes a post build script after a successful build.
 dev-util/cargo-show-asm 0.2.60: A cargo subcommand that displays the generated assembly of Rust source code.
 dev-util/catalyst-lab 1.6.0 1.6.1: An automation tool for building Gentoo release stages and binhost packages.
-dev-util/codex 0.144.5 0.144.6: Codex CLI - OpenAI's AI-powered coding agent
+dev-util/codex 0.144.6 0.145.0: Codex CLI - OpenAI's AI-powered coding agent
 dev-util/coq-lsp 0.1.9: Visual Studio Code Extension and Language Server Protocol for Coq
 dev-util/deblob 0.12 9999: remove binary executables from a directory
 dev-util/distribution-gpg-keys 1.119: Collection of GPG keys used in Linux Distributions
@@ -1145,8 +1147,9 @@ dev-util/git-pages-cli 1.6.0 1.8.2: Command-line application for publishing site
 dev-util/gitlab-ci-local-bin 4.43.0 4.47.0 4.56.0: Run gitlab pipelines locally as shell executor or docker executor
 dev-util/go-task 3.51.1 3.52.0: A task runner / simpler Make alternative written in Go
 dev-util/google-antigravity 1.23.2 2.2.1 2.3.1: Google Antigravity 2.0, a dedicated platform to work with agents
-dev-util/google-antigravity-cli 1.0.16 1.1.3 1.1.4: Command-line interface for Google's Antigravity agentic development platform
+dev-util/google-antigravity-cli 1.0.16 1.1.4 1.1.5: Command-line interface for Google's Antigravity agentic development platform
 dev-util/google-antigravity-ide 2.0.4 2.1.1: Google Antigravity's Editor view with context-aware agent
+dev-util/grok-build 0.2.106 0.2.109: SpaceXAI's coding agent harness and TUI
 dev-util/gshards 0.2 0.2-r1: Small helper tools to aid installing Crystal packages in Gentoo
 dev-util/hare-update 0.26.0.0-r1 9999: assist in upgrading a codebase to a newer Hare release
 dev-util/haredo 1.0.2 9999: a simple and unix-idiomatic build automator
@@ -1539,6 +1542,7 @@ media-gfx/dustr 0_p20221008 9999: light and interactive tool your crops need
 media-gfx/fontpreview 1.0.6: Highly customizable and minimal font previewer written in bash
 media-gfx/gephi-bin 0.9.6 0.10.1: The Open Graph Viz Platform
 media-gfx/glslViewer 3.2.4: Console-based GLSL live-coding viewer
+media-gfx/grawji 0.2.0: GTK4 frontend for rawji, interactive Fujifilm RAF conversion
 media-gfx/identity 26.03: Compare images and videos
 media-gfx/mayo 0.9.0: Opensource 3D CAD viewer and converter
 media-gfx/mirage 0.11.2 9999: Fast and simple image viewer based on Python and GTK
@@ -1590,7 +1594,7 @@ media-plugins/gst-plugins-thumbnailers 1.0.0-r2: GStreamer video and audio file 
 media-plugins/qt-jpegxl-image-plugin 9999: Qt plug-in to allow Qt and KDE based applications to read/write JXL images.
 media-plugins/whysynth 20170701_p20180323-r1: A software synthesizer plugin for the DSSI Soft Synth Interface
 media-radio/fllog 1.2.8: Logbook application for amateur radio use
-media-sound/Tauon 9.1.1 9.1.3 10.0.1 9999: The desktop music player of today!
+media-sound/Tauon 9.1.3 10.0.1 11.1.1 9999: The desktop music player of today!
 media-sound/aimp 6.00.3038_alpha8 6.00.3048_alpha9 6.00.3056_beta2: AIMP - Free Audio Player
 media-sound/amberol 2024.2: Simple GUI Music Player
 media-sound/bespokesynth 1.2.1 1.3.0: Software modular synth
@@ -1611,7 +1615,7 @@ media-sound/jriver 31.0.83: A cross-platform media center, famous for high quali
 media-sound/kew 2.4.4-r1 3.7.3 4.1.2: kew (/kjuː/) is a command-line music player for Linux.
 media-sound/libcava 0.10.7-r1: Console-based Audio Visualizer for Alsa
 media-sound/listenbrainz-mpd 2.5.1: ListenBrainz submission client for MPD
-media-sound/lms 3.76.0 3.77.0 3.78.0: Lightweight Music Server
+media-sound/lms 3.77.0 3.78.0 3.79.0: Lightweight Music Server
 media-sound/loudgain 0.6.8-r2 0.6.8_p20240128-r2 0.6.8_p20240128-r3: Versatile ReplayGain 2.0 loudness normalizer
 media-sound/mopidy 3.4.2: An extensible music server written in Python.
 media-sound/mousai 0.7.9: Identify songs in seconds
@@ -1950,7 +1954,7 @@ sci-electronics/slang 11.0-r1 9999: SystemVerilog compiler and language services
 sci-electronics/surfer 0.7.0-r1: Waveform viewer with a focus on a snappy usable interface
 sci-electronics/svls 0.2.11: SystemVerilog language server
 sci-electronics/vcd 221217-r1: VCD file (Value Change Dump) command line viewer
-sci-electronics/verilator 5.050 9999: The fast free Verilog/SystemVerilog simulator
+sci-electronics/verilator 5.050-r1 9999: The fast free Verilog/SystemVerilog simulator
 sci-electronics/yosys 0.67: framework for Verilog RTL synthesis
 sci-geosciences/google-earth-pro 7.3.6-r1: Google's 3D planet viewer
 sci-libs/dlpack 1.3: Common in-memory tensor structure
@@ -2026,7 +2030,7 @@ sys-apps/coolercontrold 4.3.0 4.3.1: Monitor and control your cooling and other 
 sys-apps/corefreq 2.1.0 2.1.1: CPU monitoring and tuning software designed for 64-bit processors
 sys-apps/deepcool-digital-linux 0.10.1 0.10.2: Linux version for the DeepCool Digital Windows software.
 sys-apps/dinit 0.22.1 9999: The dinit service supervision + init suite
-sys-apps/dinit-services 0.0.3 9999: Set of dinit services and helpers
+sys-apps/dinit-services 0.0.4 9999: Set of dinit services and helpers
 sys-apps/dmemcg-booster 0.1.2: Service for enabling and controlling dmem cgroup limits for boosting foreground games
 sys-apps/dnf5 5.3.0.0: Command-line package manager
 sys-apps/dool 1.3.1-r1 1.3.2-r2 9999: Versatile replacement for vmstat, iostat and ifstat (clone of dstat)
@@ -2204,7 +2208,7 @@ x11-misc/i3lock-color 2.13.5: The world's most popular non-default computer lock
 x11-misc/i3lock-fancy-rapid 0.0.0_pre20201109-r1 0.0.0_pre20210421: A faster implementation of i3lock-fancy
 x11-misc/i3status-rust 0.36.1: Feature-rich and resource-friendly replacement for i3status, written in Rust
 x11-misc/ksnip 1.11.0_pre20250130: Ksnip is a Qt based cross-platform screenshot tool
-x11-misc/leftwm-theme 0.1.2: Theme mangager for LeftWM
+x11-misc/leftwm-theme 0.1.2 0.1.3: Theme mangager for LeftWM
 x11-misc/ly 1.3.2 1.4.0 1.4.1: Ly - a TUI display manager
 x11-misc/matugen 2.4.1 4.1.0: A material you and base16 color generation tool with templates
 x11-misc/picom-jonaburg 9999: A lightweight compositor for X11 (previously a compton fork)

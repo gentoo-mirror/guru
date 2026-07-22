@@ -1,14 +1,12 @@
-BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
-DEFINED_PHASES=install postinst unpack
+DEFINED_PHASES=install postinst
 DEPEND=virtual/udev sys-apps/sed kmscon? ( sys-apps/kmscon ) cryptsetup? ( app-crypt/cryptsetup-scripts-dinit ) dbus? ( sys-apps/dbus )
 DESCRIPTION=Set of dinit services and helpers
 EAPI=8
 HOMEPAGE=https://codeberg.org/gentoo-dinit/services
-INHERIT=git-r3
 IUSE=kmscon +dbus cryptsetup
+KEYWORDS=~amd64
 LICENSE=BSD-2
-PROPERTIES=live
 RDEPEND=virtual/udev sys-apps/sed kmscon? ( sys-apps/kmscon ) cryptsetup? ( app-crypt/cryptsetup-scripts-dinit ) dbus? ( sys-apps/dbus )
 SLOT=0
-_eclasses_=git-r3	2f8cdb10b033f92c3136aa6488a31c98
+SRC_URI=https://codeberg.org/gentoo-dinit/services/archive/v0.0.4.tar.gz -> dinit-services-0.0.4.tar.gz
 _md5_=c80c1527f5d98f8f50c0ebcb07d15282

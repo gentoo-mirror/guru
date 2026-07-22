@@ -1,0 +1,10 @@
+DEFINED_PHASES=install postinst
+DESCRIPTION=Snapper snapshots around Portage transactions, snap-pac style
+EAPI=8
+HOMEPAGE=https://github.com/ursm/portage-snapper
+KEYWORDS=~amd64
+LICENSE=MIT
+RDEPEND=app-backup/snapper
+SLOT=0
+SRC_URI=https://github.com/ursm/portage-snapper/archive/refs/tags/v0.3.0.tar.gz -> portage-snapper-0.3.0.tar.gz
+_md5_=56cdaa9eafada42aa5ef081e78b741b1

@@ -1,0 +1,16 @@
+BDEPEND=>=dev-libs/protobuf-25.6[protoc] || ( >=dev-lang/rust-bin-1.92.0:* >=dev-lang/rust-1.92.0:* )
+DEFINED_PHASES=compile configure install prepare pretend setup test unpack
+DEPEND=sys-apps/bfs sys-apps/ripgrep sys-apps/ugrep
+DESCRIPTION=SpaceXAI's coding agent harness and TUI
+EAPI=8
+HOMEPAGE=https://x.ai/cli https://x.ai/open-source https://github.com/xai-org/grok-build
+INHERIT=cargo check-reqs shell-completion
+IUSE=test debug
+KEYWORDS=~amd64
+LICENSE=Apache-2.0 Apache-2.0 BSD-2 BSD Boost-1.0 CC0-1.0 CDLA-Permissive-2.0 EPL-2.0 ISC MIT MIT-0 MPL-2.0 MPL-2.0 Unicode-3.0 Unicode-DFS-2016 WTFPL-2 ZLIB
+RDEPEND=sys-apps/bfs sys-apps/ripgrep sys-apps/ugrep
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/xai-org/grok-build/archive/98a7d5949053c02d631757dd9272b09b73c463e0.tar.gz -> grok-build-0.2.109.gh.tar.gz https://github.com/fasys-crate-dist/grok-build/releases/download/v0.2.109/grok-build-0.2.109-crates.tar.xz https://github.com/helix-editor/nucleo/archive/5b74652e482f7c07d827f18c6d21e7540c242c69.tar.gz -> nucleo-5b74652e482f7c07d827f18c6d21e7540c242c69.gh.tar.gz https://github.com/helix-editor/nucleo/archive/5b74652e482f7c07d827f18c6d21e7540c242c69.tar.gz -> nucleo-5b74652e482f7c07d827f18c6d21e7540c242c69.gh.tar.gz https://github.com/our-forks/async-openai/archive/95b52ebdedf42143083cf3d6f0e0be7c84e9c808.tar.gz -> async-openai-95b52ebdedf42143083cf3d6f0e0be7c84e9c808.gh.tar.gz https://github.com/our-forks/async-openai/archive/95b52ebdedf42143083cf3d6f0e0be7c84e9c808.tar.gz -> async-openai-95b52ebdedf42143083cf3d6f0e0be7c84e9c808.gh.tar.gz
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	rust	e2200a3d90348a53accc2f8c2e80f10c	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	c18ade5e10cfd39155908ca389968d65	check-reqs	12ab9d3fc16bfe1f87c6fb652324b57c	shell-completion	63a62de3ca49c798ee6e89f190e45d0e
+_md5_=b46f25270e449f4fd0f1b8b98083649a
