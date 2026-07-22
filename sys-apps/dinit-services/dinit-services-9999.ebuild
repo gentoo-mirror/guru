@@ -36,7 +36,7 @@ DEPEND="${RDEPEND}"
 src_install() {
 	emake \
 		$(usev kmscon TTY=kmscon) \
-		$(usev cryptsetup ENABLE_CRYPTSETUP=yes)\
+		$(usev cryptsetup ENABLE_CRYPTSETUP=yes) \
 		$(usev dbus ENABLE_DBUS=yes) \
 		DESTDIR="${D}" \
 		install
