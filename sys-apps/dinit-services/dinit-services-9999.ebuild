@@ -16,24 +16,30 @@ else
 	S="${WORKDIR}/services"
 fi
 
+IUSE="kmscon dbus cryptsetup"
+
 RDEPEND="
-	app-crypt/cryptsetup-scripts-dinit
 	virtual/udev
 	sys-apps/sed
 	kmscon? (
 		sys-apps/kmscon
 	)
+	cryptsetup? (
+		app-crypt/cryptsetup-scripts-dinit
+	)
+	dbus? (
+		sys-apps/dbus
+	)
 "
 DEPEND="${RDEPEND}"
 
-IUSE="kmscon"
-
 src_install() {
-	if use kmscon; then
-		emake install TTY=kmscon DESTDIR="${D}"
-	else
-		emake install DESTDIR="${D}"
-	fi
+	opts=(
+		$(usev kmscon TTY=kmscon)
+		$(usev cryptsetup ENABLE_CRYPTSETUP=yes)
+		$(usev dbus ENABLE_DBUS=yes)
+	)
+	emake install DESTDIR="${D}" ${opts}
 	keepdir /var/log/dinit
 }
 
