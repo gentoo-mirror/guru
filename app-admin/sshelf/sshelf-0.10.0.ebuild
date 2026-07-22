@@ -22,6 +22,6 @@ LICENSE+="
 	WTFPL-2 ZLIB
 "
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~amd64"
 
 QA_FLAGS_IGNORED="usr/bin/sshelf"
