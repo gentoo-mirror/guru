@@ -1,0 +1,16 @@
+BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.28.5
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=alsa? ( media-libs/alsa-lib ) X? ( virtual/opengl x11-libs/libX11 x11-libs/libXcursor x11-libs/libXi x11-libs/libXinerama x11-libs/libXrandr x11-libs/libXxf86vm ) wayland? ( dev-libs/wayland media-libs/mesa[wayland] ) system-glfw? ( >=media-libs/glfw-3.2.1 )
+DESCRIPTION=A simple and easy-to-use library to learn videogames programming
+EAPI=8
+HOMEPAGE=https://www.raylib.com/
+INHERIT=cmake
+IUSE=alsa examples static-libs +system-glfw X wayland
+KEYWORDS=~amd64
+LICENSE=ZLIB
+RDEPEND=alsa? ( media-libs/alsa-lib ) X? ( virtual/opengl x11-libs/libX11 x11-libs/libXcursor x11-libs/libXi x11-libs/libXinerama x11-libs/libXrandr x11-libs/libXxf86vm ) wayland? ( dev-libs/wayland media-libs/mesa[wayland] ) system-glfw? ( >=media-libs/glfw-3.2.1 )
+REQUIRED_USE=|| ( system-glfw || ( X wayland ) )
+SLOT=0
+SRC_URI=https://github.com/raysan5/raylib/archive/6.0.tar.gz -> raylib-6.0.tar.gz
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	c54f532543a549f7318d6c49aaf8e953
+_md5_=0f5598ef0c5a57f84ff6852a86036f4c
