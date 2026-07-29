@@ -6,8 +6,6 @@ EAPI=8
 DISTUTILS_USE_PEP517=setuptools
 PYTHON_COMPAT=( python3_{12..14} )
 
-GIT_HASH="8223031ffad6b4b3ab4ee886658bc606e6f82bac"
-
 inherit distutils-r1
 
 MY_PN=dropbox-sdk-python
@@ -15,15 +13,9 @@ MY_P=${MY_PN}-${PV}
 
 DESCRIPTION="The offical Dropbox SDK for Python"
 HOMEPAGE="https://www.dropbox.com/developers"
-
 # pypi does not have tests, stick with gh
-if [[ ${PV} == *_p* ]] ; then
-	SRC_URI="https://github.com/dropbox/${MY_PN}/archive/${GIT_HASH}.tar.gz -> ${P}.gh.tar.gz"
-	S="${WORKDIR}/${MY_PN}-${GIT_HASH}"
-else
-	SRC_URI="https://github.com/dropbox/${MY_PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.gh.tar.gz"
-	S="${WORKDIR}/${MY_P}"
-fi
+SRC_URI="https://github.com/dropbox/${MY_PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.gh.tar.gz"
+S="${WORKDIR}/${MY_P}"
 
 LICENSE="MIT"
 SLOT="0"
@@ -31,8 +23,7 @@ KEYWORDS="~amd64 ~x86"
 
 RDEPEND="
 	>=dev-python/requests-2.16.2[${PYTHON_USEDEP}]
-	>=dev-python/six-1.12.0[${PYTHON_USEDEP}]
-	dev-python/stone[${PYTHON_USEDEP}]
+	>=dev-python/stone-3.5.3[${PYTHON_USEDEP}]
 	dev-python/urllib3[${PYTHON_USEDEP}]
 "
 
@@ -44,6 +35,7 @@ EPYTEST_DESELECT=(
 	test/unit/test_dropbox_unit.py::TestOAuth::test_NoRedirect_whole_flow
 )
 
+EPYTEST_PLUGINS=()
 distutils_enable_tests pytest
 
 src_prepare() {

@@ -44,9 +44,6 @@ LICENSE+="
 SLOT="0"
 KEYWORDS="~amd64" # ~arm64: ugrep
 # TODO add feature USE flags?
-IUSE="test"
-
-RESTRICT="!test? ( test )"
 
 DEPEND="
 	sys-apps/bfs

@@ -11,6 +11,8 @@ CRATES="
 "
 
 declare -A GIT_CRATES=(
+	[async-openai-macros]='https://github.com/our-forks/async-openai;95b52ebdedf42143083cf3d6f0e0be7c84e9c808;async-openai-%commit%/async-openai-macros'
+	[async-openai]='https://github.com/our-forks/async-openai;95b52ebdedf42143083cf3d6f0e0be7c84e9c808;async-openai-%commit%/async-openai'
 	[nucleo-matcher]='https://github.com/helix-editor/nucleo;5b74652e482f7c07d827f18c6d21e7540c242c69;nucleo-%commit%/matcher'
 	[nucleo]='https://github.com/helix-editor/nucleo;5b74652e482f7c07d827f18c6d21e7540c242c69;nucleo-%commit%'
 )
@@ -18,7 +20,7 @@ declare -A GIT_CRATES=(
 inherit cargo check-reqs shell-completion
 
 # no tagged releases
-MY_COMMIT="cb203a893d04ad15881dc0015ba77b7ff53f4ab5"
+MY_COMMIT="371de93b1537f34aaf4049a870eceb9b7264ef71"
 DESCRIPTION="SpaceXAI's coding agent harness and TUI"
 HOMEPAGE="
 	https://x.ai/cli
@@ -36,14 +38,12 @@ LICENSE="Apache-2.0"
 # Dependent crate licenses
 LICENSE+="
 	Apache-2.0 BSD-2 BSD Boost-1.0 CC0-1.0 CDLA-Permissive-2.0 EPL-2.0
-	ISC MIT MIT-0 MPL-2.0 Unicode-3.0 Unicode-DFS-2016 WTFPL-2 ZLIB
+	ISC MIT MIT-0 MPL-2.0 MPL-2.0 Unicode-3.0 Unicode-DFS-2016 WTFPL-2
+	ZLIB
 "
 SLOT="0"
 KEYWORDS="~amd64" # ~arm64: ugrep
 # TODO add feature USE flags?
-IUSE="test"
-
-RESTRICT="!test? ( test )"
 
 DEPEND="
 	sys-apps/bfs
@@ -72,9 +72,24 @@ src_prepare() {
 	for f in crates/codegen/xai-grok-{shell,tools}/build.rs; do
 		sed \
 			-e '1i #![allow(unreachable_code)]' \
-			-e '/fn main() ->/a \    return Ok(());' \
+			-e '/fn main()/a \    return Ok(());' \
 			-i "$f" || die
 	done
+
+	# Disable auto-updates
+	sed \
+		-e '1i #![allow(unreachable_code)]' \
+		-e '/fn env_installer(/a \    return Some("portage");' \
+		-i crates/codegen/xai-grok-update/src/auto_update.rs || die
+
+	# Cargo offline fetch workaround
+	local url commit path
+	IFS=";" read -r url commit path <<<"${GIT_CRATES[async-openai]}"
+	local ASYNC_OPENAI_GIT="async-openai = { git = \"${url}.git\", rev = \"${commit}\""
+	local ASYNC_OPENAI_PATH="async-openai = \\{ path = \"${WORKDIR}/async-openai-${commit}/async-openai\""
+
+	sed "s|${ASYNC_OPENAI_GIT}|${ASYNC_OPENAI_PATH}|" \
+		-i "${S}/Cargo.toml" || die
 }
 
 src_test() {

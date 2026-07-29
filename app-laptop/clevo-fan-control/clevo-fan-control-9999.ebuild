@@ -11,25 +11,22 @@ EGIT_REPO_URI="https://github.com/agramian/clevo-fan-control.git"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS=""
 
 RDEPEND="
-dev-libs/libayatana-appindicator
-x11-libs/gtk+:3
+	dev-libs/libayatana-appindicator
+	x11-libs/gtk+:3
 "
 DEPEND="${RDEPEND}"
 BDEPEND="virtual/pkgconfig"
 
 src_configure() {
-local mycmakeargs=(
--DUSER=portage
--DGROUP=portage
--DHOME="${T}/portage-home"
+	local mycmakeargs=(
+		-DHOME="${T}/portage-home"
 )
 cmake_src_configure
 }
 
 src_install() {
-cmake_src_install
-rm -rfv "${ED}/var"
+	cmake_src_install
+	rm -rfv "${ED}/var" || die
 }

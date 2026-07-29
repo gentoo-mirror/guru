@@ -4,7 +4,7 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{12..14} )
+PYTHON_COMPAT=( python3_{12..15} )
 
 inherit distutils-r1 optfeature
 
@@ -14,7 +14,7 @@ HOMEPAGE="
 	https://pypi.org/project/aiomisc/
 "
 
-MY_COMMIT="ebfdb45c8d60fda24e42f7589d2fc7fe11ae4f0c" # v18.0.9 (untagged, inferred)
+MY_COMMIT="22d3bc91f27e1bc0b839f3c907dc07b4022d00bb" # v18.0.26 (untagged, inferred)
 SRC_URI="https://github.com/aiokitchen/${PN}/archive/${MY_COMMIT}.tar.gz -> ${P}.gh.tar.gz"
 S="${WORKDIR}/${PN}-${MY_COMMIT}"
 
@@ -33,6 +33,10 @@ BDEPEND="
 		>=dev-python/setproctitle-1.3[${PYTHON_USEDEP}]
 	)
 "
+
+PATCHES=(
+	"${FILESDIR}/aiomisc-18.0.26-fix-finalizers-assertion-error.patch"
+)
 
 EPYTEST_PLUGINS=( aiomisc-pytest )
 EPYTEST_XDIST=1

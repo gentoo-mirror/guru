@@ -24,7 +24,9 @@ DEPEND="
 	dev-libs/libxml2
 	dev-libs/md4c
 	dev-libs/stb
+	dev-libs/libsodium
 	dev-libs/wayland
+	app-crypt/libsecret
 	gnome-base/librsvg:2
 	media-libs/fontconfig
 	media-libs/freetype

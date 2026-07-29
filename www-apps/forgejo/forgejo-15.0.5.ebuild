@@ -91,7 +91,7 @@ src_compile() {
 	# need to set -j1 or build fails due to a race condition between MAKE jobs.
 	# this does not actually impact build parallelism, because the go compiler
 	# will still build everything in parallel when it's invoked.
-	env "${makeenv[@]}" emake -j1 EXTRA_GOFLAGS="${GOFLAGS}" backend
+	env "${makeenv[@]}" emake -j1 EXTRA_GOFLAGS="${GOFLAGS}" STRIP=0 backend
 }
 
 src_install() {

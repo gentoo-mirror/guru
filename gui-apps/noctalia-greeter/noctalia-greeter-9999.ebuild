@@ -20,10 +20,12 @@ LICENSE="MIT"
 SLOT="0"
 
 DEPEND="
+	dev-cpp/tomlplusplus
+	dev-cpp/nlohmann_json
 	dev-libs/glib:2
 	dev-libs/libinput
-	dev-cpp/tomlplusplus
 	dev-libs/wayland
+	dev-libs/stb
 	gnome-base/librsvg:2
 	gui-libs/greetd
 	gui-libs/wlroots:0.20=
@@ -51,14 +53,6 @@ src_prepare() {
 
 	# replace greetd user
 	sed -E -i 's/^(\S+\s+\S+\s+\S+\s+)greeter(\s+)greeter(\s+)/\1greetd\2greetd\3/' data/tmpfiles.d/${PN}.conf
-}
-
-src_configure() {
-	local emesonargs=(
-		-Dsystem_tomlplusplus=true
-	)
-
-	meson_src_configure
 }
 
 src_install() {

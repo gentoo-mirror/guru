@@ -13,7 +13,7 @@ HOMEPAGE="https://yosyshq.net/yosys/"
 SRC_URI="
 	https://github.com/YosysHQ/${PN}/releases/download/v${PV}/yosys.tar.gz -> ${P}.tar.gz
 "
-S="${WORKDIR}"
+S="${WORKDIR}/${P}"
 
 LICENSE="ISC"
 SLOT="0"
@@ -40,11 +40,22 @@ BDEPEND="
 	virtual/pkgconfig
 "
 
+PATCHES=(
+	"${FILESDIR}"/${P}-respect-flags.patch
+	"${FILESDIR}"/${P}-cmake4-compat.patch
+)
+
 pkg_setup() {
 	# llvm-r2 and python-any-r1 both export pkg_setup and llvm-r2 wins,
 	# leaving PYTHON unset, so call python_setup ourselves.
 	llvm-r2_pkg_setup
 	python_setup
+}
+
+src_unpack() {
+	mkdir "${S}" || die
+	cd "${S}" || die
+	unpack ${A}
 }
 
 src_configure() {
@@ -53,6 +64,7 @@ src_configure() {
 		-DYOSYS_WITH_PYTHON=OFF
 		-DYOSYS_INSTALL_DRIVER=ON
 		-DPython3_EXECUTABLE="${PYTHON}"
+		-DCMAKE_DISABLE_FIND_PACKAGE_GTest=ON
 	)
 	cmake_src_configure
 }
