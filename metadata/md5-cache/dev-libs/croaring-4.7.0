@@ -1,0 +1,14 @@
+BDEPEND=test? ( >=dev-util/cmocka-2.0 ) app-alternatives/ninja >=dev-build/cmake-3.28.5
+DEFINED_PHASES=compile configure install prepare test
+DESCRIPTION=Roaring bitmaps in C (and C++), with SIMD optimizations
+EAPI=8
+HOMEPAGE=https://roaringbitmap.org/
+INHERIT=cmake
+IUSE=cpu_flags_arm_neon cpu_flags_x86_avx cpu_flags_x86_avx512f test
+KEYWORDS=~amd64
+LICENSE=|| ( MIT Apache-2.0 )
+RESTRICT=!test? ( test )
+SLOT=0/22
+SRC_URI=https://github.com/RoaringBitmap/CRoaring/archive/refs/tags/v4.7.0.tar.gz -> croaring-4.7.0.tar.gz
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	c54f532543a549f7318d6c49aaf8e953
+_md5_=1d3109da6242cd48f67f37cd0b0550fb
