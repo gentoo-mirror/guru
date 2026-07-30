@@ -24,29 +24,22 @@ LICENSE="GPL-3"
 SLOT=0
 
 BDEPEND="
-	>=dev-python/cython-3.2.4[${PYTHON_USEDEP}]
+	>=dev-python/cython-3.2.6[${PYTHON_USEDEP}]
 "
 RDEPEND="
-	>=dev-python/emoji-2.15.0[${PYTHON_USEDEP}]
-	>=dev-python/filetype-1.2.0[${PYTHON_USEDEP}]
-	>=dev-python/numpy-2.4.4[${PYTHON_USEDEP}]
+	>=dev-python/numpy-2.5.0[${PYTHON_USEDEP}]
 	|| (
-		>=dev-python/orjson-3.11.8[${PYTHON_USEDEP}]
+		>=dev-python/orjson-3.11.9[${PYTHON_USEDEP}]
 		dev-python/ujson[${PYTHON_USEDEP}]
 	)
-	>=dev-python/protobuf-7.34.1[${PYTHON_USEDEP}]
 	>=dev-python/pycryptodome-3.23.0[${PYTHON_USEDEP}]
-	>=dev-python/pynacl-1.6.2[${PYTHON_USEDEP}]
 	>=dev-python/pysocks-1.7.1[${PYTHON_USEDEP}]
-	>=dev-python/python-socks-2.8.1[${PYTHON_USEDEP}]
-	>=dev-python/qrcode-8.2[${PYTHON_USEDEP}]
-	>=dev-python/soundcard-0.4.5[${PYTHON_USEDEP}]
-	>=dev-python/soundfile-0.13.1[${PYTHON_USEDEP}]
-	>=dev-python/urllib3-2.6.3[${PYTHON_USEDEP}]
+	>=dev-python/soundcard-0.4.6[${PYTHON_USEDEP}]
+	>=dev-python/soundfile-0.14.0[${PYTHON_USEDEP}]
 	>=dev-python/websocket-client-1.9.0[${PYTHON_USEDEP}]
 "
 
-PATCHES=( "${FILESDIR}/${PN}-1.4.0-flags.patch" )
+PATCHES=( "${FILESDIR}/${PN}-1.5.0-flags.patch" )
 
 DOCS=( README.md docs/ )
 
@@ -78,10 +71,12 @@ pkg_postinst() {
 		dev-vcs/git
 
 	optfeature "YouTube support" net-misc/yt-dlp
+
 	optfeature "play YouTube videos in native player (non-ASCII support)" media-video/mpv
 
-	optfeature "store token in system keyring (requires gnome-keyring running under dbus)" \
-		app-crypt/libsecret
+	optfeature "store token in system keyring" app-crypt/libsecret virtual/secret-service
 
 	optfeature "round notification images" media-gfx/imagemagick
+
+	optfeature "tray support under wayland" dev-libs/libayatana-appindicator
 }

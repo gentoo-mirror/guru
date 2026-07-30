@@ -27,7 +27,7 @@ RESTRICT="mirror test"
 REQUIRED_USE="|| ( docker podman lxc )"
 
 DEPEND="
-	>=dev-lang/go-1.25.11
+	>=dev-lang/go-1.25.12
 "
 
 RDEPEND="
