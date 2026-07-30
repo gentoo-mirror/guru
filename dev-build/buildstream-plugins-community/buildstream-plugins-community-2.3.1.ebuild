@@ -60,20 +60,16 @@ python_test() {
 
 	# fuse: failed to open /dev/fuse: Permission denied
 	addwrite "/dev/fuse"
-	# still fails inside a bubblewrap container :/
-	# fusermount3: mount failed: Operation not permitted
 
 	EPYTEST_DESELECT=(
-		# fuse tests
-		tests/sources/bazel.py::test_basic
-		tests/sources/bazel.py::test_multi_url
-		tests/sources/bazel.py::test_no_sha
 		# tests using network
 		tests/sources/bazel_file.py::test_basic
 		tests/sources/bazel_file.py::test_multi_url
 		source_determinism.py::test_deterministic_source_umask[git_tag]
 		source_determinism.py::test_deterministic_source_umask[zip]
 	)
+
+	export BST_TEST_SUITE=1
 
 	# to not pollute the source directory and make grepping hard.
 	# can't just use ${T} as the --basetemp option removes the directory

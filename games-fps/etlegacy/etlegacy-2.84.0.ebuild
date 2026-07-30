@@ -1,4 +1,4 @@
-# Copyright 1999-2025 Gentoo Authors
+# Copyright 1999-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -42,9 +42,9 @@ UIDEPEND="
 	media-libs/glew:=
 	media-libs/libsdl2[sound,video,X]
 	media-libs/libogg
-	media-libs/libjpeg-turbo:0
+	media-libs/libjpeg-turbo:0=
 	virtual/opengl
-	virtual/minizip
+	virtual/minizip:=
 	curl? ( net-misc/curl )
 	freetype? ( media-libs/freetype )
 	gettext? ( sys-devel/gettext )
@@ -52,7 +52,7 @@ UIDEPEND="
 	openal? ( media-libs/openal )
 	png? ( media-libs/libpng:0= )
 	ssl? ( dev-libs/openssl:0= )
-	theora? ( media-libs/libtheora )
+	theora? ( media-libs/libtheora:= )
 	vorbis? ( media-libs/libvorbis )
 	${LUADEPEND}
 "

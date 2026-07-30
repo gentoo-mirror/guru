@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit desktop xdg-utils
+inherit desktop xdg
 
 MY_PN="waterfox"
 
@@ -61,7 +61,7 @@ src_install() {
 		newicon -s ${size} "browser/chrome/icons/default/default${size}.png" waterfox.png
 	done
 	#create desktop file
-	make_desktop_entry "/usr/bin/Waterfox" "Waterfox" waterfox "Network;WebBrowser" "$(cat "${FILESDIR}"/desktop_options)"
+	make_desktop_entry "/usr/bin/waterfox" "Waterfox" waterfox "Network;WebBrowser" "$(cat "${FILESDIR}"/desktop_options)"
 	#handle permissions of destdir files
 	fperms 0755 "${destdir}"/{waterfox-bin,updater,glxtest,vaapitest}
 	# Disable auto-updates
@@ -70,13 +70,7 @@ src_install() {
 }
 
 pkg_postinst() {
-	xdg_desktop_database_update
-	xdg_icon_cache_update
+	xdg_pkg_postinst
 	elog "For optimal performance and compatibility, please ensure"
 	elog "that you have the latest graphics drivers installed."
-}
-
-pkg_postrm() {
-	xdg_desktop_database_update
-	xdg_icon_cache_update
 }

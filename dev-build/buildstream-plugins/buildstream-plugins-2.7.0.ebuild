@@ -48,18 +48,8 @@ python_test() {
 
 	# fuse: failed to open /dev/fuse: Permission denied
 	addwrite "/dev/fuse"
-	# still fails inside a bubblewrap container :/
-	# fusermount3: mount failed: Operation not permitted
 
 	local EPYTEST_DESELECT=(
-		# fuse tests
-		tests/sources/cargo.py::test_cargo_track_fetch_build
-		tests/sources/patch.py::test_stage_and_patch
-		tests/sources/patch.py::test_stage_file_nonexistent_dir
-		tests/sources/patch.py::test_stage_file_empty_dir
-		tests/sources/patch.py::test_stage_separate_patch_dir
-		tests/sources/patch.py::test_stage_multiple_patches
-		tests/sources/patch.py::test_patch_strip_level
 		# tests using network
 		tests/sources/docker.py::test_docker_fetch
 		tests/sources/docker.py::test_docker_source_checkout
@@ -67,6 +57,8 @@ python_test() {
 		tests/sources/docker.py::test_fetch_duplicate_layers
 		source_determinism.py::test_deterministic_source_umask[git]
 	)
+
+	export BST_TEST_SUITE=1
 
 	# to not pollute the source directory and make grepping hard.
 	# can't just use ${T} as the --basetemp option removes the directory
