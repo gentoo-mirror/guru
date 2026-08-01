@@ -996,6 +996,29 @@ www-apps/pleroma:system-vips - Use media-libs/vips instead of vendored version
 www-apps/snac:mastodon - Enable Mastodon API support
 www-apps/snac:sandbox - Enable experimental sandboxing through Linux Landlock
 www-apps/zola:cjk - Enable indexing ja and zh languages
+www-client/mullvad-browser:clang - Use Clang compiler instead of GCC
+www-client/mullvad-browser:eme-free - Disable EME (DRM plugin) capability at build time
+www-client/mullvad-browser:gmp-autoupdate - Allow Gecko Media Plugins (binary blobs) to be automatically downloaded and kept up-to-date in user profiles
+www-client/mullvad-browser:gnome-shell - Integrate with gnome-base/gnome-shell search
+www-client/mullvad-browser:hwaccel - Force-enable hardware-accelerated rendering (Mozilla bug 594876)
+www-client/mullvad-browser:jpegxl - Add JPEG XL image support (EXPERIMENTAL, no official upstream support)
+www-client/mullvad-browser:jumbo-build - Enable unified build - combines source files to speed up build process, but requires more memory
+www-client/mullvad-browser:libproxy - Enable libproxy support
+www-client/mullvad-browser:openh264 - Use media-libs/openh264 for H264 support instead of downloading binary blob from Mozilla at runtime
+www-client/mullvad-browser:pgo - Add support for profile-guided optimization for faster binaries - this option will double the compile time
+www-client/mullvad-browser:pulseaudio - Add sound server support via media-libs/libpulse (may be PulseAudio or Pipewire, or apulse if installed)
+www-client/mullvad-browser:sndio - Enable support for the media-sound/sndio backend
+www-client/mullvad-browser:system-av1 - Use the system-wide media-libs/dav1d and media-libs/libaom library instead of bundled
+www-client/mullvad-browser:system-harfbuzz - Use the system-wide media-libs/harfbuzz instead of bundled and media-gfx/graphite2 in most cases
+www-client/mullvad-browser:system-icu - Use the system-wide dev-libs/icu instead of bundled
+www-client/mullvad-browser:system-jpeg - Use the system-wide media-libs/libjpeg-turbo instead of bundled
+www-client/mullvad-browser:system-libevent - Use the system-wide dev-libs/libevent instead of bundled
+www-client/mullvad-browser:system-libvpx - Use the system-wide media-libs/libvpx instead of bundled
+www-client/mullvad-browser:system-pipewire - Use system media-video/pipewire for WebRTC and screencast instead of bundled one
+www-client/mullvad-browser:system-png - Use the system-wide media-libs/libpng instead of bundled (requires APNG patches)
+www-client/mullvad-browser:system-webp - Use the system-wide media-libs/libwebp instead of bundled
+www-client/mullvad-browser:wasm-sandbox - Sandbox certain third-party libraries through WebAssembly using RLBox
+www-client/mullvad-browser:wifi - Enable necko-wifi for NetworkManager integration, and access point MAC address scanning for better precision with opt-in geolocation services
 www-client/yandex-browser:ffmpeg-codecs - Use media-video/ffmpeg-chromium for multi-threaded ffmpeg codecs for the HTML5 <audio> and <video> tags
 www-servers/hinsightd:cgi - Enable old/slow cgi support (legacy should not be used)
 www-servers/hinsightd:fcgi - Enable fast cgi support

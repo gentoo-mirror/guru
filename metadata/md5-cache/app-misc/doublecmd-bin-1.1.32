@@ -1,5 +1,5 @@
 DEFINED_PHASES=install postinst postrm preinst
-DESCRIPTION=Free cross platform open source file manager with two panels side by side.
+DESCRIPTION=Free cross platform open source file manager with two panels side by side
 EAPI=8
 HOMEPAGE=https://doublecmd.sourceforge.io/
 IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
@@ -11,4 +11,4 @@ RDEPEND=dev-libs/glib:2 sys-apps/dbus x11-libs/libX11 amd64? ( !qt6? ( app-acces
 SLOT=0
 SRC_URI=amd64? ( !qt6? ( https://downloads.sourceforge.net/doublecmd/doublecmd-1.1.32.gtk2.x86_64.tar.xz ) qt6? ( https://downloads.sourceforge.net/doublecmd/doublecmd-1.1.32.qt6.x86_64.tar.xz ) ) x86? ( https://downloads.sourceforge.net/doublecmd/doublecmd-1.1.32.gtk2.i386.tar.xz )
 _eclasses_=desktop	e447b5f77146d69797e9f03ff177f3f1	wrapper	ebaa3beeb43f7e533872b6c37168c7ad	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575
-_md5_=4a6a1d6c5938be84faedc02458df41db
+_md5_=09ca03ea5532a11249b16cd5042939fd
