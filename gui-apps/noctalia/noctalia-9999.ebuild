@@ -24,6 +24,7 @@ DEPEND="
 	dev-libs/libxml2
 	dev-libs/md4c
 	dev-libs/stb
+	dev-libs/libical
 	dev-libs/libsodium
 	dev-libs/wayland
 	app-crypt/libsecret

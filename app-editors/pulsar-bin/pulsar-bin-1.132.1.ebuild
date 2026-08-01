@@ -29,7 +29,7 @@ RDEPEND="
 	dev-libs/expat
 	dev-libs/glib
 	dev-libs/nss
-	dev-libs/openssl-compat
+	dev-libs/wayland
 	dev-vcs/git
 	media-libs/alsa-lib
 	media-libs/mesa
@@ -38,7 +38,6 @@ RDEPEND="
 	sys-apps/dbus
 	virtual/zlib
 	x11-libs/cairo
-	x11-libs/gdk-pixbuf
 	x11-libs/gtk+:3[X]
 	x11-libs/libdrm
 	x11-libs/libX11
@@ -49,7 +48,6 @@ RDEPEND="
 	x11-libs/libXfixes
 	x11-libs/libxkbcommon
 	x11-libs/libxkbfile
-	x11-libs/libxshmfence
 	x11-libs/libXrandr
 	x11-libs/pango
 "
