@@ -1,9 +1,9 @@
-# Copyright 2019-2025 Gentoo Authors
+# Copyright 2019-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{12..14} )
+PYTHON_COMPAT=( python3_14 )
 
 inherit meson python-any-r1 xdg
 
@@ -21,36 +21,34 @@ HOMEPAGE="https://taisei-project.org/"
 LICENSE="MIT CC-BY-4.0 CC0-1.0 public-domain"
 SLOT="0"
 
-IUSE="doc lto +mimalloc zip"
+IUSE="doc lto +mimalloc"
 
-# see: https://github.com/taisei-project/taisei/issues/399
 RDEPEND="
 	dev-util/glslang
 	media-libs/freetype:2
 	media-libs/opusfile
 	>=media-libs/libpng-1.5
-	media-libs/libsdl3[opengl]
+	>=media-libs/libsdl3-3.2.0[opengl]
 	media-libs/libwebp
 	media-libs/opusfile
 	app-arch/zstd
 	virtual/zlib:=
 	dev-libs/openssl:=
+	>=dev-libs/libunibreak-6.1
 	mimalloc? ( dev-libs/mimalloc:= )
-	zip? ( dev-libs/libzip[zstd] )
 "
-# see: https://github.com/taisei-project/taisei/issues/381
+# bug in dev-libs/cglm-0.9.3: https://github.com/taisei-project/taisei/issues/381
 DEPEND="
 	${RDEPEND}
 	>=dev-libs/cglm-0.7.8
 	!!~dev-libs/cglm-0.9.3
 "
 BDEPEND="
-	dev-build/meson
-	$(python_gen_any_dep '
-		dev-python/zstandard[${PYTHON_USEDEP}]
-	')
+	>=dev-build/meson-1.8.0
+	sys-devel/gettext
 	${PYTHON_DEPS}
-	doc? ( dev-python/docutils )"
+	doc? ( dev-python/docutils )
+"
 
 # BSD qsort_r(3) and Microsoft qsort_s(3) implicit declarations
 # https://bugs.gentoo.org/941235
@@ -58,10 +56,6 @@ QA_CONFIG_IMPL_DECL_SKIP=(
 	qsort_r
 	qsort_s
 )
-
-python_check_deps() {
-	python_has_version "dev-python/zstandard[${PYTHON_USEDEP}]"
-}
 
 src_prepare() {
 	# Path patching needed also without USE=doc (COPYING etc.)
@@ -82,7 +76,6 @@ src_configure() {
 	local emesonargs=(
 		$(meson_feature doc docs)
 		$(meson_use lto b_lto)
-		$(meson_feature zip vfs_zip)
 		-Dallocator=$(usex mimalloc mimalloc libc)
 		-Dstrip=false
 		-Duse_libcrypto=enabled

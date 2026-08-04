@@ -3,30 +3,25 @@
 
 EAPI=8
 
-inherit toolchain-funcs
+inherit meson
 
 DESCRIPTION="Daemonless replacement for libudev"
 HOMEPAGE="https://github.com/illiliti/libudev-zero"
 SRC_URI="https://github.com/illiliti/libudev-zero/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
+
 LICENSE="ISC"
 SLOT="0"
 KEYWORDS="~amd64 ~arm64"
 
-IUSE="static-libs"
+RDEPEND="
+	!sys-apps/systemd-utils[udev]
+	sys-apps/hwdata
+"
 
-RDEPEND="!sys-apps/systemd-utils[udev]"
-
-src_compile() {
-	tc-export CC
-	emake libudev.so.1
-	use static-libs && emake AR="$(tc-getAR)" libudev.a
-}
-
-src_install() {
-	local makeflags=(
-		DESTDIR="${D}" PREFIX=/usr LIBDIR=/usr/"$(get_libdir)"
+src_configure() {
+	local emesonargs=(
+		-Ddefault_library=shared
 	)
 
-	emake "${makeflags[@]}" install-shared
-	use static-libs && emake "${makeflags[@]}" install-static
+	meson_src_configure
 }
