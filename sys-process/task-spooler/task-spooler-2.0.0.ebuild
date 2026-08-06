@@ -20,6 +20,7 @@ LICENSE="GPL-2"
 SLOT="0"
 
 PATCHES=(
+	"${FILESDIR}"/cmake-fixes-2.0.0.patch
 	"${FILESDIR}"/cmake-bump-minver-2.0.0.patch
 )
 
