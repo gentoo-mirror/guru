@@ -1,0 +1,17 @@
+BDEPEND=virtual/pkgconfig app-alternatives/ninja >=dev-build/cmake-3.28.5
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=>=dev-qt/qtbase-6.5:6=[gui,wayland?,widgets,X?] >=dev-qt/qtimageformats-6.5:6 >=dev-qt/qtsvg-6.5:6 >=dev-libs/gpds-1.8.4[static-libs?]
+DESCRIPTION=Library for creating flowcharts and engineering diagrams
+EAPI=8
+HOMEPAGE=https://github.com/simulton/QSchematic
+INHERIT=cmake
+IUSE=examples static-libs test wayland +X
+KEYWORDS=~amd64 ~arm ~arm64 ~hppa ~ppc64 ~riscv ~x86
+LICENSE=MIT
+RDEPEND=>=dev-qt/qtbase-6.5:6=[gui,wayland?,widgets,X?] >=dev-qt/qtimageformats-6.5:6 >=dev-qt/qtsvg-6.5:6 >=dev-libs/gpds-1.8.4[static-libs?]
+REQUIRED_USE=examples? ( static-libs ) test? ( static-libs )
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/simulton/QSchematic/archive/3.1.0.tar.gz -> qschematic-3.1.0.tar.gz
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	c54f532543a549f7318d6c49aaf8e953
+_md5_=f501ba85c5320fccb35f62e34ebd5c4e
