@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit desktop optfeature shell-completion systemd tmpfiles xdg-utils
+inherit desktop optfeature shell-completion systemd tmpfiles xdg
 
 DESCRIPTION="Desktop shell for wayland compositors built with Quickshell"
 HOMEPAGE="https://github.com/AvengeMedia/DankMaterialShell"
@@ -108,9 +108,8 @@ pkg_postinst() {
 	if use greeter; then
 		tmpfiles_process dms-greeter.conf
 	fi
-	xdg_desktop_database_update
-	xdg_icon_cache_update
 
+	xdg_pkg_postinst
 	optfeature_header "Optional programs for extra features:"
 	optfeature "Audio visualizer" media-sound/cava
 	optfeature "I2C monitor brightness control" app-misc/ddcutil
@@ -128,9 +127,4 @@ pkg_postinst() {
 		elog "  \$ systemctl disable --now gdm.service sddm.service lightdm.service"
 		elog "  \$ systemctl enable --now greetd.service"
 	fi
-}
-
-pkg_postrm() {
-	xdg_desktop_database_update
-	xdg_icon_cache_update
 }
