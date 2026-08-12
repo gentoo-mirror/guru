@@ -153,6 +153,7 @@ dev-dotnet/gtk-sharp:gdk - Build the GDK bindings.
 dev-dotnet/gtk-sharp:pango - Build the Pango bindings.
 dev-embedded/esp-idf:python-gdb - Enable python-dependent gdb for Xtensa and riscv32
 dev-embedded/esp-idf:riscv32 - Enable support for riscv32
+dev-embedded/qdl:nbd - Build the nbdkit plugin via sys-block/nbdkit
 dev-embedded/rauc:gpt - Add GPT support
 dev-embedded/rauc:json - Add JSON support
 dev-embedded/rauc:network - Add network update support
@@ -645,6 +646,11 @@ media-libs/raylib:system-glfw - Link raylib against system GLFW instead of embed
 media-libs/wivrn:pipewire - Enable support for audio sink/source through native pipewire protocol
 media-libs/wivrn:pulseaudio - Enable support for audio sink/source through pulseaudio modules
 media-libs/wivrn:wireshark-plugins - Build the net-analyzer/wireshark plugin for the WiVRn protocol
+media-plugins/clapper-enhancers:control-hub - Build the Clapper Enhancer Control Hub plugin
+media-plugins/clapper-enhancers:http - Enable plugins that use network
+media-plugins/clapper-enhancers:mpris - Build the Clapper Enhancer MPRIS plugin
+media-plugins/clapper-enhancers:sqlite3 - Build the Clapper Enhancer Recall plugin
+media-plugins/clapper-enhancers:youtube - Enable YouTube support via net-misc/yt-dlp
 media-plugins/gimp-resynthesizer:animate - Enable animation of the synthesis process for debugging. You may see a 'brushfire front' of pixels being synthesized. May not work with threading enabled
 media-plugins/gimp-resynthesizer:deep-progress - Enable detailed progress reporting (percent processed) instead of shallow progress (per pass). Useful for slow motion animation
 media-plugins/gimp-resynthesizer:glib - Use GLib library for platform independence instead of direct system calls
@@ -711,6 +717,7 @@ media-sound/tenacity:vorbis - Enable Vorbis codec support
 media-sound/tenacity:vst2 - Enable VST2 plugin hosting support
 media-video/clapper:discoverer - Build Clapper Discoverer feature
 media-video/clapper:mpris - Build Clapper MPRIS feature
+media-video/clapper:plugins - Support loading libpeas based plugins that enhance capabilities
 media-video/clapper:rawimporter - Build RAW system memory importer for clappersink
 media-video/clapper:server - Build Clapper Server feature
 media-video/gpu-screen-recorder:filecaps - Remove password prompt and improve performance
@@ -752,7 +759,6 @@ net-im/gajim-plugins:pgp - Plugin: Encrypt your messages with PGP (XEP-0027)
 net-im/gajim-plugins:plugins_translations - Plugin: Translation files for Gajim Plugins
 net-im/gajim-plugins:quick_replies - Plugin: Quick replies
 net-im/gajim-plugins:triggers - Plugin: Configure Gajim's behaviour when receiving messages/events
-net-im/gomuks:encryption - End-to-end encryption support with dev-libs/olm
 net-im/mautrix-telegram:qrcode - Enables logging in via QR code support
 net-im/mautrix-whatsapp:crypt - Enable end-to-bridge encryption with dev-libs/olm.
 net-im/nheko:video - Enable video calls

@@ -1,0 +1,14 @@
+BDEPEND=virtual/pkgconfig
+DEFINED_PHASES=compile configure install
+DEPEND=dev-libs/glib:2
+DESCRIPTION=Library of glib utilities from the Sailfish OS project
+EAPI=9
+HOMEPAGE=https://github.com/sailfishos/libglibutil
+INHERIT=toolchain-funcs
+KEYWORDS=~amd64 ~arm ~arm64 ~x86
+LICENSE=BSD
+RDEPEND=dev-libs/glib:2
+SLOT=0
+SRC_URI=https://github.com/sailfishos/libglibutil/archive/1.0.82.tar.gz -> libglibutil-1.0.82.tar.gz
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5
+_md5_=afb7bceab17a0148c948ba614684a011

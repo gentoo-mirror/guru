@@ -1,16 +1,16 @@
 BDEPEND=virtual/pkgconfig verify-sig? ( sec-keys/openpgp-keys-openssh ) verify-sig? ( || ( app-alternatives/gpg app-crypt/gnupg[-alternatives(-)] ) >=app-portage/gemato-20 )
-DEFINED_PHASES=compile configure install unpack
-DEPEND=dev-libs/glib:2 x11-libs/gtk+:3
+DEFINED_PHASES=compile configure install prepare unpack
+DEPEND=app-accessibility/at-spi2-core media-libs/harfbuzz x11-libs/cairo x11-libs/gdk-pixbuf x11-libs/libX11 x11-libs/pango dev-libs/glib:2 x11-libs/gtk+:3
 DESCRIPTION=GTK-based passphrase dialog for use with OpenSSH
 EAPI=8
-HOMEPAGE=https://www.openssh.com/
+HOMEPAGE=https://www.openssh.org/
 INHERIT=toolchain-funcs verify-sig
 IUSE=verify-sig
 KEYWORDS=~amd64
 LICENSE=BSD GPL-2
-RDEPEND=dev-libs/glib:2 x11-libs/gtk+:3
+RDEPEND=app-accessibility/at-spi2-core media-libs/harfbuzz x11-libs/cairo x11-libs/gdk-pixbuf x11-libs/libX11 x11-libs/pango dev-libs/glib:2 x11-libs/gtk+:3
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://openbsd/OpenSSH/portable/openssh-9.9p2.tar.gz verify-sig? ( mirror://openbsd/OpenSSH/portable/openssh-9.9p2.tar.gz.asc )
 _eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	verify-sig	ece4c893b6bd62eacbc4d25958e857f8
-_md5_=1b244ccdc3c5d8ebe04918f241955c56
+_md5_=804c3ed070a96575eda9867b2c84ea7c

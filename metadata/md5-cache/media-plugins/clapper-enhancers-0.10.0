@@ -1,0 +1,16 @@
+BDEPEND=python_single_target_python3_12? ( dev-lang/python:3.12 ) python_single_target_python3_13? ( dev-lang/python:3.13 ) python_single_target_python3_14? ( dev-lang/python:3.14 ) dev-libs/glib:2 virtual/pkgconfig mpris? ( dev-util/gdbus-codegen ) >=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array
+DEFINED_PHASES=compile configure install postinst postrm setup test
+DEPEND=>=dev-libs/glib-2.76:2 dev-libs/libpeas:2 >=media-libs/gstreamer-1.20.0:1.0 >=media-video/clapper-0.10.0 control-hub? ( net-libs/libsoup:3.0 >=net-libs/libmicrodns-0.2.0:= ) http? ( >=dev-libs/json-glib-1.2.0 net-libs/libsoup:3.0 ) sqlite3? ( dev-db/sqlite:3 )
+DESCRIPTION=Plugins enhancing Clapper library capabilities
+EAPI=8
+HOMEPAGE=https://github.com/Rafostar/clapper-enhancers
+INHERIT=gnome2-utils meson python-single-r1
+IUSE=+control-hub +http +mpris +sqlite3 +youtube python_single_target_python3_12 python_single_target_python3_13 python_single_target_python3_14
+KEYWORDS=~amd64
+LICENSE=LGPL-2.1+
+RDEPEND=>=dev-libs/glib-2.76:2 dev-libs/libpeas:2 >=media-libs/gstreamer-1.20.0:1.0 >=media-video/clapper-0.10.0 control-hub? ( net-libs/libsoup:3.0 >=net-libs/libmicrodns-0.2.0:= ) http? ( >=dev-libs/json-glib-1.2.0 net-libs/libsoup:3.0 ) sqlite3? ( dev-db/sqlite:3 ) youtube? ( python_single_target_python3_12? ( dev-lang/python:3.12 ) python_single_target_python3_13? ( dev-lang/python:3.13 ) python_single_target_python3_14? ( dev-lang/python:3.14 ) dev-libs/libpeas:2[python,python_single_target_python3_12(-)?,python_single_target_python3_13(-)?,python_single_target_python3_14(-)?] media-video/clapper[introspection] python_single_target_python3_12? ( dev-python/pygobject:3[python_targets_python3_12(-)] net-misc/yt-dlp[python_targets_python3_12(-)] ) python_single_target_python3_13? ( dev-python/pygobject:3[python_targets_python3_13(-)] net-misc/yt-dlp[python_targets_python3_13(-)] ) python_single_target_python3_14? ( dev-python/pygobject:3[python_targets_python3_14(-)] net-misc/yt-dlp[python_targets_python3_14(-)] ) )
+REQUIRED_USE=youtube? ( ^^ ( python_single_target_python3_12 python_single_target_python3_13 python_single_target_python3_14 ) )
+SLOT=0
+SRC_URI=https://github.com/Rafostar/clapper-enhancers/archive/refs/tags/0.10.0.tar.gz -> clapper-enhancers-0.10.0.tar.gz
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	gnome2-utils	a8cf148ec7f5ae0b1f1d33ae5f7f9e88	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	python-utils-r1	5fd9a75ca55021d3276ce969f8e28391	sysroot	4c36abaf94ebd3ab32f8abea9a444121	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	meson	12065b402c6d78a2aec926ed8dfd964f	python-single-r1	47d8ac9be330c9366112b78fd4f8ce57
+_md5_=c902f6ec3a5e6f70a01b8713115f7ab6
