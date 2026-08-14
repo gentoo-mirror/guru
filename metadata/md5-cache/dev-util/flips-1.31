@@ -1,0 +1,16 @@
+BDEPEND=app-arch/unzip virtual/imagemagick-tools[png] virtual/pkgconfig
+DEFINED_PHASES=compile configure install postinst postrm preinst unpack
+DEPEND=divsuf? ( dev-libs/libdivsufsort ) gtk? ( x11-libs/gtk+:3 )
+DESCRIPTION=Patcher for IPS and BPS files
+EAPI=8
+HOMEPAGE=https://www.smwcentral.net/?p=section&a=details&id=11474
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=toolchain-funcs desktop xdg
+IUSE=+divsuf +gtk +pgo
+KEYWORDS=~amd64
+LICENSE=GPL-3
+RDEPEND=divsuf? ( dev-libs/libdivsufsort ) gtk? ( x11-libs/gtk+:3 )
+SLOT=0
+SRC_URI=https://dl.smwcentral.net/11474/floating.zip -> flips-1.31.zip
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	desktop	e447b5f77146d69797e9f03ff177f3f1	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575
+_md5_=534d78180803900f9d1d1c877756a3d1

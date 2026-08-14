@@ -231,6 +231,8 @@ dev-util/catalyst-lab:binhost - Binhost targets support to build selected packag
 dev-util/catalyst-lab:git - Uploading binpkgs and releases to git repository.
 dev-util/catalyst-lab:qemu - Building stages for different architecture using QEMU.
 dev-util/distribution-gpg-keys:copr - Install GPG keys used by Copr projects
+dev-util/flips:divsuf - Uses the more performant dev-libs/libdivsufsort instead of a bundled modified copy of yuta256's sais algorithm.
+dev-util/flips:pgo - Optimize the build using Profile Guided Optimization (PGO)
 dev-util/forgejo-runner:docker - Have forgejo-runner use app-containers/docker
 dev-util/forgejo-runner:lxc - Have forgejo-runner use app-containers/lxc
 dev-util/forgejo-runner:podman - Have forgejo-runner use app-containers/podman
