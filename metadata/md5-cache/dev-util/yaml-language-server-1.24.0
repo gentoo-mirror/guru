@@ -1,0 +1,11 @@
+BDEPEND=net-libs/nodejs[npm]
+DEFINED_PHASES=install unpack
+DESCRIPTION=Language Server for YAML Files
+EAPI=8
+HOMEPAGE=https://github.com/redhat-developer/yaml-language-server
+KEYWORDS=~amd64
+LICENSE=0BSD Apache-2.0 BSD BSD-2 CC0-1.0 ISC MIT
+RDEPEND=net-libs/nodejs
+SLOT=0
+SRC_URI=mirror://npm/yaml-language-server/-/yaml-language-server-1.24.0.tgz https://git.skysolutions.fi/gentoo-mirror/guru-vendored/releases/download/yaml-language-server-1.24.0/yaml-language-server-1.24.0-deps.tar.xz
+_md5_=ffc673226189e00baa3795be74ceeaa2

@@ -1,0 +1,14 @@
+BDEPEND=app-alternatives/yacc virtual/pkgconfig
+DEFINED_PHASES=configure postinst
+DEPEND=sys-libs/ncurses:= dev-libs/libbsd app-crypt/libmd sys-apps/util-linux virtual/zlib dev-libs/libevent dev-libs/libretls
+DESCRIPTION=Version control system prioritizing ease of use over flexibility
+EAPI=8
+HOMEPAGE=https://gameoftrees.org/
+IUSE=cvg
+KEYWORDS=~amd64
+LICENSE=ISC
+RDEPEND=sys-libs/ncurses:= dev-libs/libbsd app-crypt/libmd sys-apps/util-linux virtual/zlib dev-libs/libevent dev-libs/libretls
+RESTRICT=test
+SLOT=0
+SRC_URI=https://gameoftrees.org/releases/portable/got-portable-0.127.tar.gz
+_md5_=5d39cef1b675a1ecffb16eeaf6fb2b05

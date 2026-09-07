@@ -1,0 +1,14 @@
+BDEPEND=test? ( dev-libs/criterion )
+DEFINED_PHASES=install prepare test
+DEPEND=dev-libs/icu dev-libs/boehm-gc dev-libs/gmp dev-libs/openssl
+DESCRIPTION=A Scheme-derived Lisp written in C
+EAPI=8
+HOMEPAGE=https://github.com/DarrenKirby/cozenage
+IUSE=test
+KEYWORDS=~amd64 ~arm64
+LICENSE=GPL-3
+RDEPEND=dev-libs/icu dev-libs/boehm-gc dev-libs/gmp dev-libs/openssl
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/DarrenKirby/cozenage/releases/download/v0.19.1/cozenage-0.19.1.tar.xz
+_md5_=4262bd936a73e91e29608798911b3aaa

@@ -1,0 +1,16 @@
+BDEPEND=kde-frameworks/extra-cmake-modules sys-devel/gettext virtual/pkgconfig dev-lang/go || ( dev-lang/python:3.14 dev-lang/python:3.13 dev-lang/python:3.12 ) app-alternatives/ninja >=dev-build/cmake-3.28.5 virtual/pkgconfig
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup test
+DEPEND=>=app-i18n/fcitx-5.0.14:5 x11-libs/libX11 dev-libs/libinput virtual/libudev
+DESCRIPTION=Vietnamese Bamboo input method for Fcitx5 (Lotus branch)
+EAPI=8
+HOMEPAGE=https://lotusinputmethod.github.io/
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=cmake udev xdg python-any-r1
+IUSE=openrc
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3+ LGPL-2.1+
+RDEPEND=>=app-i18n/fcitx-5.0.14:5 x11-libs/libX11 dev-libs/libinput virtual/libudev acct-user/uinput-proxy sys-apps/acl dev-python/qtpy dev-python/dbus-python
+SLOT=0
+SRC_URI=https://github.com/LotusInputMethod/fcitx5-lotus/archive/v3.5.7.tar.gz -> fcitx5-lotus-3.5.7.tar.gz https://github.com/LotusInputMethod/bamboo-core/archive/9197d2cc164380a80d219f12cc90576ff2fbf5e6.tar.gz -> bamboo-core-9197d2cc164380a80d219f12cc90576ff2fbf5e6.tar.gz
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	c54f532543a549f7318d6c49aaf8e953	udev	1a23882bb73bc31c64a6f00a5e515f34	xdg	3ef49a87c52c8b77c476351195dfe575	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	python-utils-r1	85d8fb641bb0e79b1ae893556e9c57bc	python-any-r1	891415dfe39ad9b41b461f2b86354af0
+_md5_=a6ddadb19f03efa2a5da590598006757

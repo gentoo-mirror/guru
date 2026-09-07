@@ -1,16 +1,17 @@
-BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.28.5 >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=virtual/pkgconfig python? ( python_single_target_python3_13? ( dev-lang/python:3.13 ) python_single_target_python3_14? ( dev-lang/python:3.14 ) python_single_target_python3_15? ( dev-lang/python:3.15 ) ) app-alternatives/ninja >=dev-build/cmake-3.28.5 >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup test unpack
-DEPEND=wxwidgets? ( x11-libs/wxGTK:3.2-gtk3 ) X? ( x11-libs/libX11 x11-libs/libXi ) archive? ( app-arch/libarchive ) aws? ( >=dev-cpp/aws-sdk-cpp-1.11.712[storage] ) chardet? ( app-i18n/uchardet ) colorer? ( dev-libs/libxml2 ) nfs? ( net-fs/libnfs ) samba? ( net-fs/samba ) sftp? ( net-libs/libssh[sftp] ) ssl? ( dev-libs/openssl ) webdav? ( net-libs/neon )
+DEPEND=archive? ( app-arch/libarchive ) aws? ( dev-libs/openssl:0= net-libs/neon[ssl] ) chardet? ( app-i18n/uchardet ) colorer? ( dev-libs/libxml2 ) mtp? ( media-libs/libmtp ) nfs? ( net-fs/libnfs ) python? ( python_single_target_python3_13? ( dev-lang/python:3.13 ) python_single_target_python3_14? ( dev-lang/python:3.14 ) python_single_target_python3_15? ( dev-lang/python:3.15 ) python_single_target_python3_13? ( dev-python/cffi[python_targets_python3_13(-)] ) python_single_target_python3_14? ( dev-python/cffi[python_targets_python3_14(-)] ) python_single_target_python3_15? ( dev-python/cffi[python_targets_python3_15(-)] ) ) rar? ( app-arch/unrar ) samba? ( net-fs/samba[client] ) sdl? ( media-libs/libsdl2 media-libs/freetype:2 media-libs/harfbuzz media-libs/fontconfig ) sftp? ( net-libs/libssh[sftp] ) ssl? ( dev-libs/openssl:0= ) webdav? ( net-libs/neon ) wxwidgets? ( x11-libs/wxGTK:3.2-gtk3 ) X? ( x11-libs/libX11 x11-libs/libXi )
 DESCRIPTION=Linux port of FAR Manager v2
 EAPI=8
 HOMEPAGE=https://github.com/elfmz/far2l
 IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
-INHERIT=cmake xdg wxwidgets git-r3
-IUSE=+archive aws +chardet +colorer nfs samba sftp +ssl webdav wxwidgets X
+INHERIT=cmake optfeature python-single-r1 wxwidgets xdg git-r3
+IUSE=+archive aws +chardet +colorer mtp nfs python rar samba sdl sftp +ssl webdav wxwidgets X python_single_target_python3_13 python_single_target_python3_14 python_single_target_python3_15
 LICENSE=GPL-2
 PROPERTIES=live
-RDEPEND=wxwidgets? ( x11-libs/wxGTK:3.2-gtk3 ) X? ( x11-libs/libX11 x11-libs/libXi ) archive? ( app-arch/libarchive ) aws? ( >=dev-cpp/aws-sdk-cpp-1.11.712[storage] ) chardet? ( app-i18n/uchardet ) colorer? ( dev-libs/libxml2 ) nfs? ( net-fs/libnfs ) samba? ( net-fs/samba ) sftp? ( net-libs/libssh[sftp] ) ssl? ( dev-libs/openssl ) webdav? ( net-libs/neon )
+RDEPEND=archive? ( app-arch/libarchive ) aws? ( dev-libs/openssl:0= net-libs/neon[ssl] ) chardet? ( app-i18n/uchardet ) colorer? ( dev-libs/libxml2 ) mtp? ( media-libs/libmtp ) nfs? ( net-fs/libnfs ) python? ( python_single_target_python3_13? ( dev-lang/python:3.13 ) python_single_target_python3_14? ( dev-lang/python:3.14 ) python_single_target_python3_15? ( dev-lang/python:3.15 ) python_single_target_python3_13? ( dev-python/cffi[python_targets_python3_13(-)] ) python_single_target_python3_14? ( dev-python/cffi[python_targets_python3_14(-)] ) python_single_target_python3_15? ( dev-python/cffi[python_targets_python3_15(-)] ) ) rar? ( app-arch/unrar ) samba? ( net-fs/samba[client] ) sdl? ( media-libs/libsdl2 media-libs/freetype:2 media-libs/harfbuzz media-libs/fontconfig ) sftp? ( net-libs/libssh[sftp] ) ssl? ( dev-libs/openssl:0= ) webdav? ( net-libs/neon ) wxwidgets? ( x11-libs/wxGTK:3.2-gtk3 ) X? ( x11-libs/libX11 x11-libs/libXi )
+REQUIRED_USE=python? ( ^^ ( python_single_target_python3_13 python_single_target_python3_14 python_single_target_python3_15 ) )
 RESTRICT=mirror
 SLOT=0
-_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	c54f532543a549f7318d6c49aaf8e953	xdg	3ef49a87c52c8b77c476351195dfe575	wxwidgets	c48bf68858bd3c27c272ff034eb1e14d	git-r3	e6c2f983e006e805160436c75a0c1562
-_md5_=3decafa9f60fa6f64f6af500051f765b
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	c54f532543a549f7318d6c49aaf8e953	optfeature	58cc13bdc4e9a204077e1e7c9a1d7988	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	python-utils-r1	85d8fb641bb0e79b1ae893556e9c57bc	python-single-r1	47d8ac9be330c9366112b78fd4f8ce57	wxwidgets	c48bf68858bd3c27c272ff034eb1e14d	xdg	3ef49a87c52c8b77c476351195dfe575	git-r3	e6c2f983e006e805160436c75a0c1562
+_md5_=766c3ebccbe37a7cfc3f60907336f7c7

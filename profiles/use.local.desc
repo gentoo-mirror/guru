@@ -66,6 +66,7 @@ app-emulation/lsfg-vk:cli - Enables building lsfg-vk-cli
 app-emulation/tinyemu:http - Support fetching disks over HTTP using
 app-emulation/x48ng:X - X11 frontend
 app-emulation/x48ng:sdl - SDL fronted
+app-i18n/fcitx5-lotus:openrc - Install the OpenRC init script for fcitx5-lotus-server
 app-misc/clifm:arc4random - Use arc4random instead of random, requires 'posix' to be unset
 app-misc/clifm:archive - Archive manipulation support (extraction/decompression, listing, repacking, mounting)
 app-misc/clifm:bleach - Support for Bleach, the built-in file names cleaner
@@ -93,8 +94,12 @@ app-misc/far2l:archive - Multiarc extended archives support
 app-misc/far2l:aws - AWS S3 support in Netrocks
 app-misc/far2l:chardet - Auto charset detection
 app-misc/far2l:colorer - Colorer plugin support
+app-misc/far2l:mtp - MTP/PTP plugin support
 app-misc/far2l:nfs - NFS support in NetRocks
+app-misc/far2l:python - Python plugin support
+app-misc/far2l:rar - RAR archives support in MultiArc
 app-misc/far2l:samba - SMB support in NetRocks
+app-misc/far2l:sdl - Experimental SDL GUI backend support
 app-misc/far2l:sftp - SFTP support in NetRocks
 app-misc/far2l:ssl - FTPS support in NetRocks
 app-misc/far2l:webdav - WebDav support in NetRocks
@@ -126,6 +131,7 @@ app-portage/gpkg:sourceview - Enable syntax highlighting in configuration editor
 app-portage/gpkg:systemd - Install systemd service for gpkg-daemon
 app-portage/gpkg:systemd-boot - systemd-boot bootloader support in kernel configuration (beta)
 app-portage/gpkg:vte - Enable embedded VTE terminal for Portage output
+app-portage/pupgrade:tui - Installs tuipupgrade, the tui frontend for pupgrade
 app-text/lchat:examples - install the example indent .filter
 dev-build/cargo-make:openssl - Enable TLS support with dev-libs/openssl
 dev-build/cargo-make:rustls - Enable TLS support with rustls
@@ -256,6 +262,7 @@ dev-util/stylua:luau - Build support for Luau
 dev-util/tinyxxd:xxd - use it as a replacement for xxd
 dev-util/u-config:symlink - Install pkg-config and pkgconf symlink
 dev-util/vala-language-server:debug-mem - Debug memory usage
+dev-vcs/got:cvg - EXPERIMENTAL: build cvg - cvs-like-git
 games-action/ddnet:antibot - Enable support for a dynamic anticheat library.
 games-action/ddnet:autoupdate - Enable the autoupdater.
 games-action/ddnet:client - Enable client compilation.
@@ -370,6 +377,7 @@ games-server/among-sus:notifications - Notify players you're moving
 games-strategy/7k-ambition:multiplayer - Enable multiplayer.
 games-strategy/7k-ambition:music - Download and install the music too. It's great. Highly recommended.
 games-strategy/hedgewars:ffmpeg - Enable video recording feature
+games-strategy/hedgewars:server - Enable local server
 games-util/chiaki-ng:cli - Build CLI interface
 games-util/chiaki-ng:gui - Build Qt GUI interface
 games-util/chiaki-ng:mbedtls - Use mbedtls instead of OpenSSL as part of Chiaki lib
@@ -380,6 +388,7 @@ games-util/linuxtrack-qt6-wayland:winebridge - Build with Wine bridge support (f
 games-util/mangohud:mangoapp - Build and install mangoapp and mangoapp layer
 games-util/mangohud:mangohudctl - Build and install mangohudctl
 games-util/mangohud:mangoplot - Install mangoplot python script
+games-util/mangohud:next - Build and install server/client rewrite
 games-util/mangohud:test - Run mangohud tests
 games-util/mangohud:xnvctrl - Use XNVctrl as fall back for older Nvidia devices.
 games-util/umu-launcher:delta-update - Enable delta updates
@@ -391,6 +400,8 @@ gnome-extra/yad:sourceview - Enable x11-libs/gtksourceview support
 gnome-extra/yad:standalone - Build standalone binary (without gsettings)
 gnome-extra/yad:tools - Build yad-tools utility
 gnome-extra/yad:tray - Build with status icon
+gui-apps/awww:avif - Enable avif support.
+gui-apps/awww:jpegxl - Enable static jpegxl/jxl support.
 gui-apps/dankmaterialshell:greeter - Install dms greeter for greetd
 gui-apps/fuzzel:png - Enable support for PNG icons
 gui-apps/fuzzel:svg - enables support for SVG icons
@@ -425,7 +436,6 @@ gui-apps/nwg-launchers:dmenu - Installs nwgdmenu, GTK dynamic menu windows.
 gui-apps/nwg-launchers:grid - Installs nwggrid, a GNOME-like application grid.
 gui-apps/nwg-launchers:layershell - Enable Wayland layer shell support
 gui-apps/openrefine:commons - Download and install plugin for Wikimedia Commons
-gui-apps/quickshell:breakpad - Enable Google's dev-util/breakpad crash reporter
 gui-apps/quickshell:crash-handler - Enable crash handling using dev-cpp/cpptrace
 gui-apps/quickshell:greetd - Enable gui-libs/greetd integration
 gui-apps/quickshell:hyprland - Enable hyprland specific integrations
@@ -526,6 +536,7 @@ media-fonts/nerdfonts:0xproto - Installs 0xProto Nerd Font
 media-fonts/nerdfonts:3270 - Installs 3270 Nerd Font
 media-fonts/nerdfonts:adwaitamono - Installs AdwaitaMono Nerd Font
 media-fonts/nerdfonts:agave - Installs Agave Nerd Font
+media-fonts/nerdfonts:annotationmono - Installs Annotation Mono Font
 media-fonts/nerdfonts:anonymouspro - Installs AnonymicePro Nerd Font
 media-fonts/nerdfonts:arimo - Installs Arimo Nerd Font
 media-fonts/nerdfonts:atkinsonhyperlegiblemono - Installs AtkynsonMono Nerd Font
@@ -550,6 +561,7 @@ media-fonts/nerdfonts:firamono - Installs FiraMono Nerd Font
 media-fonts/nerdfonts:geistmono - Installs GeistMono Nerd Font
 media-fonts/nerdfonts:gohu - Installs Gohu Nerd Font
 media-fonts/nerdfonts:gomono - Installs GoMono Nerd Font
+media-fonts/nerdfonts:googlesanscode - Installs Google Sans Code Font
 media-fonts/nerdfonts:hack - Installs Hack Nerd Font
 media-fonts/nerdfonts:hasklig - Installs Hasklug Nerd Font
 media-fonts/nerdfonts:heavydata - Installs HeavyDataMono Nerd Font
@@ -770,6 +782,12 @@ net-irc/halloy:tor - Enable embedded Tor network support via Arti
 net-irc/pounce:palaver - Provide push notifications for the Palaver IRC app
 net-irc/tiny:dbus - Enable desktop notifications
 net-irc/tiny:openssl - Use dev-libs/openssl as TLS backend instead of compiled-in rustls
+net-irc/zoitechat:libcanberra - Enable sound event support using media-libs/libcanberra-gtk3
+net-irc/zoitechat:perl-legacy - Allows legacy HexChat scripts to work with ZoiteChat
+net-irc/zoitechat:plugin-checksum - Build Checksum plugin (needs plugins)
+net-irc/zoitechat:plugin-fishlim - Build FiSHLiM plugin (needs plugins)
+net-irc/zoitechat:plugin-sysinfo - Build SysInfo plugin (needs plugins)
+net-irc/zoitechat:trayicon - Enable system tray icon
 net-libs/ixwebsocket:ws - Build the ws utility
 net-libs/picotls:fusion - "fusion" AES-GCM engine, optimized for QUIC and other protocols that use short AEAD blocks
 net-libs/sofia-sip:glib - Add support to dev-libs/glib-based mainloop, to allow using Sofia-SIP on glib-based programs.
@@ -966,7 +984,6 @@ sys-block/partclone:reiserfs - Compile partclone reiserfs tool
 sys-block/partclone:ufs - Compile partclone ufs tool
 sys-block/partclone:vmfs - Compile partclone vmfs tool
 sys-block/partclone:xfs - Compile partclone xfs tool
-sys-devel/clang-bloomberg-p2996:default-reflection-latest - Defaults -freflection-latest to on.
 sys-firmware/lenovolegionlinux:downgrade-nvidia - Downgrade nvidia for 525 to enable TDP control (systemd-service)
 sys-firmware/lenovolegionlinux:elogind - Enable legiond-onresume openrc support
 sys-firmware/lenovolegionlinux:gui - Build and install legion_gui and legion_cli

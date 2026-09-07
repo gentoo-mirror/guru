@@ -1,0 +1,14 @@
+DEFINED_PHASES=install postinst setup
+DESCRIPTION=Modular visual interface for GDB in Python
+EAPI=8
+HOMEPAGE=https://github.com/cyrus-and/gdb-dashboard
+INHERIT=python-single-r1 optfeature wrapper
+IUSE=python_single_target_python3_12 python_single_target_python3_13 python_single_target_python3_14
+KEYWORDS=~amd64 ~x86
+LICENSE=MIT
+RDEPEND=dev-debug/gdb[python] python_single_target_python3_12? ( dev-lang/python:3.12 ) python_single_target_python3_13? ( dev-lang/python:3.13 ) python_single_target_python3_14? ( dev-lang/python:3.14 )
+REQUIRED_USE=^^ ( python_single_target_python3_12 python_single_target_python3_13 python_single_target_python3_14 )
+SLOT=0
+SRC_URI=https://github.com/cyrus-and/gdb-dashboard/archive/v0.17.5.tar.gz -> gdb-dashboard-0.17.5.tar.gz
+_eclasses_=eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	python-utils-r1	85d8fb641bb0e79b1ae893556e9c57bc	python-single-r1	47d8ac9be330c9366112b78fd4f8ce57	optfeature	58cc13bdc4e9a204077e1e7c9a1d7988	wrapper	ebaa3beeb43f7e533872b6c37168c7ad
+_md5_=170b6085093e1b759bd3eca15a11786a
