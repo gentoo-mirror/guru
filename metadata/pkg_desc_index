@@ -1252,7 +1252,7 @@ dev-vcs/gitcomet 0.1.16 0.2.0 0.2.1: GitComet is user interface for GIT workflow
 dev-vcs/gitkay 1.2.0: A fast, native Wayland git history viewer — gitk, but okay
 dev-vcs/gitqlient 1.6.3 9999: Multi-platform Git client written with Qt
 dev-vcs/got 0.127: Version control system prioritizing ease of use over flexibility
-dev-vcs/lazygit 0.61.1 0.62.2 0.63.0 0.63.1 9999: Simple terminal UI for git commands
+dev-vcs/lazygit 0.62.2 0.63.1 0.64.1 0.65.0 9999: Simple terminal UI for git commands
 dev-vcs/llm-git 4.2.0-r1 5.1.0: AI-powered git commit message generator using LLMs via OpenAI-compat APIs
 dev-vcs/pijul 1.0.0_beta9 1.0.0_beta15: A distributed version control system based on a theory of patches
 dev-zig/zls 0.10.0-r2 0.13.0-r1 0.14.0 0.15.0 0.16.0 9999: Non-official language server for Zig
@@ -1372,7 +1372,7 @@ gui-apps/1password 8.11.22-r1: Password Manager
 gui-apps/ReGreet 0.3.0-r1: Clean and customizable GTK-based greetd greeter written in Rust
 gui-apps/ashell 0.8.0 0.9.0 9999: A ready to go Wayland status bar for Hyprland and Niri
 gui-apps/autotiling-rs 0.1.6 0.1.8: Autotiling for sway (and possibly i3)
-gui-apps/awww 0.12.1 0.12.1-r1 9999: Efficient animated wallpaper daemon for wayland, controlled at runtime
+gui-apps/awww 0.12.1-r2 9999: Efficient animated wallpaper daemon for wayland, controlled at runtime
 gui-apps/aylurs-gtk-shell 1.8.2-r1: Aylurs's Gtk Shell (AGS), An eww inspired gtk widget system.
 gui-apps/azote 1.16.0 9999: wallpaper manager for wlroots compositors
 gui-apps/clipman 1.6.5-r2: A basic clipboard manager for Wayland.
@@ -1578,7 +1578,7 @@ media-gfx/dustr 0_p20221008 9999: light and interactive tool your crops need
 media-gfx/fontpreview 1.0.6: Highly customizable and minimal font previewer written in bash
 media-gfx/gephi-bin 0.9.6 0.10.1: The Open Graph Viz Platform
 media-gfx/glslViewer 3.2.4: Console-based GLSL live-coding viewer
-media-gfx/grawji 0.3.0: GTK4 frontend for rawji, interactive Fujifilm RAF conversion
+media-gfx/grawji 0.3.1: GTK4 frontend for rawji, interactive Fujifilm RAF conversion
 media-gfx/identity 26.03: Compare images and videos
 media-gfx/mayo 0.10.0: Opensource 3D CAD viewer and converter
 media-gfx/mirage 0.11.2 9999: Fast and simple image viewer based on Python and GTK
@@ -1753,6 +1753,8 @@ net-client/castor 0.8.18 0.9.0-r1: A graphical browser for plain-text protocols
 net-client/geopard 1.7.0: GTK 4 Gemini browser written in Rust
 net-client/lagrange 1.20.7 1.20.9: Desktop GUI client for browsing Geminispace
 net-client/offpunk 3.0 3.2: Offline-First Gemini/Web/Gopher/RSS reader and browser
+net-client/openstack_cli 0.13.8: OpenStack client rewritten in Rust
+net-client/openstack_tui 0.13.8: OpenStack Terminal User interface
 net-client/starfish 1.2.0 1.3.1: A Gemini browser for elementary OS
 net-client/telescope 0.10.1 0.11: w3m-like browser for Gemini
 net-dialup/atinout 0.9.1-r1: AT commands as input are sent to modem and responses given as output
@@ -1826,7 +1828,7 @@ net-irc/quarg 1.1.0: Search Quassel logs for matching messages and print them
 net-irc/srain 1.8.1: Modern, beautiful IRC client written in GTK+ 3
 net-irc/thelounge 4.4.1-r1 4.4.3-r2: ‎Modern, responsive, cross-platform, self-hosted web IRC client
 net-irc/tiny 0.12.0: IRC client written in Rust
-net-irc/zoitechat 2.19.0: GTK+ IRC client that's a fork of HexChat
+net-irc/zoitechat 2.19.0-r1: GTK+ IRC client that's a fork of HexChat
 net-libs/ixwebsocket 11.4.4: C++ websocket client and server library
 net-libs/kcgi 0.13.4 1.0.1: Minimal CGI library for web applications
 net-libs/libuecc 7: a very small Elliptic Curve Cryptography library compatible with Ed25519.
@@ -1886,6 +1888,7 @@ net-misc/omnissa-horizon-client 2603-r1: Omnissa Horizon Client for Linux
 net-misc/ooni-probe-cli 3.23.0 3.24.0: OONI Probe network measurement tool for detecting internet censorship
 net-misc/openbgpd 8.4 8.5 8.6 9999: OpenBGPD is a free implementation of BGPv4
 net-misc/peertube-viewer-rs 1.8.6: Command-line PeerTube viewer inspired by youtube-viewer
+net-misc/publicsuffix-db 20260907: The Public Suffix List
 net-misc/purritobin 0.6.7 9999: minimalistic commandline pastebin
 net-misc/rpki-client 9.2 9.3: Portability shim for OpenBSD's rpki-client
 net-misc/searxng 9999: Free internet metasearch engine
@@ -2000,6 +2003,7 @@ sci-electronics/surfer 0.7.0-r1: Waveform viewer with a focus on a snappy usable
 sci-electronics/svls 0.2.11: SystemVerilog language server
 sci-electronics/vcd 221217-r1: VCD file (Value Change Dump) command line viewer
 sci-electronics/verilator 5.050-r1 9999: The fast free Verilog/SystemVerilog simulator
+sci-electronics/vhdl-ls 0.87.0: VHDL Language Server
 sci-electronics/yosys 0.67-r1 0.68: framework for Verilog RTL synthesis
 sci-geosciences/google-earth-pro 7.3.6-r1: Google's 3D planet viewer
 sci-libs/dlpack 1.3: Common in-memory tensor structure
