@@ -38,6 +38,7 @@ src_compile() {
 }
 
 src_test() {
+	mkdir "${S}"/.git || die
 	ego test ./... -short
 }
 

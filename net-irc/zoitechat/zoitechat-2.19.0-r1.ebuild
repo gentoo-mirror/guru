@@ -45,6 +45,7 @@ RDEPEND="app-arch/libarchive
 			dev-python/cffi[${PYTHON_USEDEP}]
 			' 'python*')
 	 )
+	 ssl? ( dev-libs/openssl:= )
 	 trayicon? ( dev-libs/libayatana-appindicator )
 "
 
@@ -52,6 +53,7 @@ DEPEND="${RDEPEND}"
 
 BDEPEND="app-text/iso-codes
 	 dev-util/glib-utils
+	 net-misc/publicsuffix-db:=
 	 sys-devel/gettext
 	 virtual/pkgconfig"
 
