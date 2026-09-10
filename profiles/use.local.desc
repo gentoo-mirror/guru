@@ -624,6 +624,7 @@ media-gfx/glslViewer:xvfb - Enable support for thumbnail creation via Xvfb
 media-gfx/nsxiv:statusbar - Add statusbar support
 media-gfx/swayimg:drm - Enable support for Direct Rendering Manager (DRM UI)
 media-gfx/swayimg:exr - Enable support for EXR image format
+media-gfx/swayimg:ffmpeg - Enable support for video storyboard using media-video/ffmpeg
 media-gfx/swayimg:sixel - Enable support for Sixel image format
 media-gfx/swayimg:wayland - Enable Wayland UI and some compositors (Sway and Hyprland only)
 media-gfx/vpuppr:ifm-tracker - Enable the iFacialMocap tracker.
@@ -927,6 +928,7 @@ sci-misc/llama-cpp:opencl - Build an OpenCL backend, so far only works on Adreno
 sci-misc/llama-cpp:openssl - Use openssl to support HTTPS
 sci-misc/llama-cpp:rocm - Build a HIP (ROCm) backend
 sci-misc/llama-cpp:wmma - Use rocWMMA to enhance flash attention performance
+sci-misc/praat:pango - Without USE=gtk, build with minimal graphics support using x11-libs/pango
 sci-misc/stable-diffusion-cpp:blis - Build a BLIS backend
 sci-misc/stable-diffusion-cpp:flexiblas - Build a FlexiBLAS backend
 sci-misc/stable-diffusion-cpp:openblas - Build an OpenBLAS backend

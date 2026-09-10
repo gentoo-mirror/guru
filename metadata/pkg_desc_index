@@ -220,7 +220,7 @@ app-doc/stdman 2022.07.30 2024.07.05 9999: Formatted C++ stdlib man pages (cppre
 app-doc/sway-wiki 9999: Wiki of gui-wm/sway, rendered to HTML using kramdown-parser-gfm
 app-editors/edit 1.2.0: Microsoft edit
 app-editors/emacs-lsp-booster 0.2.1: Emacs LSP performance booster
-app-editors/fresh 0.4.6 0.4.7 0.4.9 0.4.10: Terminal based IDE & text editor: easy, powerful and fast
+app-editors/fresh 0.4.10 0.5.0 0.5.1: Terminal based IDE & text editor: easy, powerful and fast
 app-editors/imhex 1.38.1: A hex editor for reverse engineers, programmers, and eyesight
 app-editors/janus 0.9.8: Simple native GTK text editor with binary editing fallback
 app-editors/kakoune-lsp 18.1.0 21.0.0: Kakoune Language Server Protocol Client
@@ -276,6 +276,7 @@ app-misc/bitfake2 1.1 9999: Audio tool using FFTW and libebur128
 app-misc/blahaj 2.2.0-r1: Gay sharks at your local terminal
 app-misc/brightnessctl 0.5.1: A program to read and control device brightness
 app-misc/bt 1.2.2: Interactive tree-like terminal file manager
+app-misc/ca-certificates-dn42 20160116: DN42 root certificates
 app-misc/cameractrls 0.6.10-r1: Camera controls for Linux
 app-misc/catt 0.13.1: Send videos from many, many online sources to your Chromecast
 app-misc/cepl 32.1.0 9999: A readline C and C++ REPL with history, tab-completion, and undo.
@@ -291,7 +292,7 @@ app-misc/countryfetch 0.2.0: A Command-line tool similar to Neofetch for obtaini
 app-misc/cpufetch 1.07: Simplistic yet fancy CPU architecture fetching tool
 app-misc/crush 0.75.0: The glamourous AI coding agent for your favourite terminal
 app-misc/dbf 0.9.0: Command line tool to read the content of dBASE III, IV, and 5.0 files
-app-misc/desec-dns 1.4.0: A simple deSEC.io API client
+app-misc/desec-dns 1.4.0 1.5.0: A simple deSEC.io API client
 app-misc/diff-so-fancy 1.4.4: Good-lookin' diffs. Actually... nah... The best-lookin' diffs
 app-misc/doublecmd 1.1.32 1.2.7: Cross Platform file manager
 app-misc/doublecmd-bin 1.1.32 1.2.5 1.2.6 1.2.7 1.2.8 9999: Double Commander: file manager with two panels, similar to Total Commander
@@ -574,17 +575,18 @@ dev-embedded/arduino-cli 1.0.4 1.1.1 1.3.1: Next-generation arduino command line
 dev-embedded/arduino-ide 2.3.10: Arduino IDE 2.x - A modern open-source IDE for Arduino development
 dev-embedded/bcm2-utils 0.9.8: Utilities for Broadcom-based cable modems
 dev-embedded/esp-coredump 1.15.0 1.16.0: Utility that helps users to retrieve and analyse core dumps
-dev-embedded/esp-idf 5.4.4 5.5.4 5.5.5 6.0.1-r1 6.0.2: Espressif IoT Development Framework
+dev-embedded/esp-idf 5.4.4 5.5.5 6.0.2 6.0.3: Espressif IoT Development Framework
 dev-embedded/esp-idf-diag 0.2.0: A tool to gather diagnostic information about the ESP-IDF environment.
-dev-embedded/esp-idf-kconfig 2.5.2 3.8.1 3.11.1 3.11.1-r1: Kconfig tooling for esp-idf
-dev-embedded/esp-idf-monitor 1.8.0 1.9.0: Python object-oriented database
+dev-embedded/esp-idf-kconfig 2.5.2 3.11.1-r1 3.13.0: Kconfig tooling for esp-idf
+dev-embedded/esp-idf-monitor 1.9.0 1.10.0: Python object-oriented database
 dev-embedded/esp-idf-nvs-partition-gen 0.1.9: Parses ESP-IDF panic handler output acts as a GDB server over stdin/stdout
 dev-embedded/esp-idf-panic-decoder 1.4.1 1.5.0: Parses ESP-IDF panic handler output acts as a GDB server over stdin/stdout
-dev-embedded/esp-idf-size 1.7.1 2.2.0 2.2.1: Firmware size analysis for ESP-IDF
+dev-embedded/esp-idf-size 1.7.1 2.2.1 2.3.1: Firmware size analysis for ESP-IDF
+dev-embedded/esp-pylib 1.1.4: Python object-oriented database
 dev-embedded/flip-link 0.1.12: Flips the memory layout of embedded programs to protect against stack overflows
 dev-embedded/freertos-gdb 1.0.4: Python module for operating with freeRTOS-kernel objects in GDB
 dev-embedded/fwup 1.15.1 1.16.0: Configurable embedded Linux firmware update creator and runner
-dev-embedded/idf-component-manager 2.4.6 3.0.2 3.0.2-r1 3.0.3: Tool for installing ESP-IDF components
+dev-embedded/idf-component-manager 2.4.6 3.0.3 3.1.2: Tool for installing ESP-IDF components
 dev-embedded/imsprog 1.8.5 1.8.6 1.9.1: I2C, MicroWire and SPI EEPROM/Flash chip Programmer
 dev-embedded/mv88e6xxx-dump 0.2.0_pre20210327: Dump information about Marvell mv88e6xxx Ethernet switches
 dev-embedded/nxp-gui-guider 1.10.1 2.0.0: GUI Guider is a user-friendly GUI development tool for LVGL
@@ -1168,16 +1170,16 @@ dev-util/forgejo-runner 12.13.0 12.13.2 9999: A daemon that connects to a Forgej
 dev-util/fortls 2.13.0 3.0.0 3.1.1 3.1.2 3.2.2: Fortran Language Server (fortls)
 dev-util/fortran-test-drive 0.4.0 0.5.0: The simple testing framework (for Fortran)
 dev-util/gammaray 3.3.1 3.4.0 3.4.0-r1: High-level runtime introspection tool for Qt applications
-dev-util/gemini-cli 0.57.0 0.58.0: Gemini CLI - a command-line AI workflow tool by Google
+dev-util/gemini-cli 0.58.0 0.59.0: Gemini CLI - a command-line AI workflow tool by Google
 dev-util/genTree 0.1.0 9999: Gentoo rootfs tree generator
 dev-util/gersemi 0.27.7 0.28.0: A formatter to make your CMake code the real treasure
 dev-util/git-pages-cli 1.6.0 1.8.2: Command-line application for publishing sites to git-pages
 dev-util/gitlab-ci-local-bin 4.43.0 4.47.0 4.56.0: Run gitlab pipelines locally as shell executor or docker executor
 dev-util/go-task 3.52.0 3.53.1: A task runner / simpler Make alternative written in Go
 dev-util/google-antigravity 2.10.0 2.11.0 2.12.0 2.12.2: Google Antigravity 2.0, a dedicated platform to work with agents
-dev-util/google-antigravity-cli 1.1.26 1.1.27: Command-line interface for Google's Antigravity agentic development platform
+dev-util/google-antigravity-cli 1.1.28 1.2.0: Command-line interface for Google's Antigravity agentic development platform
 dev-util/google-antigravity-ide 2.0.4 2.1.1 2.5.5: Google Antigravity's Editor view with context-aware agent
-dev-util/grok-build 1.0.13 1.0.16: SpaceXAI's coding agent harness and TUI
+dev-util/grok-build 1.0.16 1.0.24: SpaceXAI's coding agent harness and TUI
 dev-util/gshards 0.2 0.2-r1: Small helper tools to aid installing Crystal packages in Gentoo
 dev-util/hare-update 0.26.0.0-r1 9999: assist in upgrading a codebase to a newer Hare release
 dev-util/haredo 1.0.2 9999: a simple and unix-idiomatic build automator
@@ -1189,7 +1191,7 @@ dev-util/ios-webkit-debug-proxy 1.9.2: A DevTools proxy for iOS devices
 dev-util/istyle 1.23_pre20220127: Fast and Free Automatic Formatter for Verilog Source Code
 dev-util/jstest-gtk 0.1.0_p20260610: joystick testing and configuration tool (old joydev interface)
 dev-util/juliaup 1.22.2: Julia installer and version multiplexer
-dev-util/kimi-code-bin 0.40.1 0.41.0: Kimi Code CLI, Moonshot AI's command-line coding agent
+dev-util/kimi-code-bin 0.41.0 0.42.0: Kimi Code CLI, Moonshot AI's command-line coding agent
 dev-util/kubetail 0.16.0 0.17.0 0.18.0: Real-time logging dashboard for Kubernetes
 dev-util/lemminx-bin 0.27.0 0.27.1: XML Language Server
 dev-util/libtypec-utils 0.5.2: Library to interface with USB Type-C/Power Delivery devices
@@ -1205,7 +1207,7 @@ dev-util/nvchecker 2.21 2.22: New version checker for software releases
 dev-util/ocamlformat 0.26.2-r1 0.29.0: Auto-formatter for OCaml code
 dev-util/ocp-indent 1.8.2: Indentation tool for OCaml, to be used from editors like Emacs and Vim.
 dev-util/ols 2026.05 9999: Language server for Odin Programming language
-dev-util/opencode-bin 1.1.48 1.2.6 1.15.12 1.18.29: The open source coding agent
+dev-util/opencode-bin 1.1.48 1.2.6 1.15.12 1.18.29 1.18.30: The open source coding agent
 dev-util/payload-dumper-go 2.0.1 2.0.2: an android OTA payload dumper written in Go
 dev-util/pcpp 1.30: A C99 preprocessor written in pure Python
 dev-util/pifpaf 3.3.0: Suite of tools and fixtures to manage daemons for testing
@@ -1248,7 +1250,7 @@ dev-vcs/ghorg 1.11.14 1.11.15: Mass repository cloning tool for GitHub/GitLab/Bi
 dev-vcs/git-autofixup 0.005000: Create fixup commits for topic branches
 dev-vcs/git-mediawiki 0_pre20260127 9999: Gate between Git and Mediawiki
 dev-vcs/gitahead 2.7.1-r2: Graphical Git client to help understand and manage source code history
-dev-vcs/gitcomet 0.1.16 0.2.0 0.2.1: GitComet is user interface for GIT workflows
+dev-vcs/gitcomet 0.2.0 0.2.1 0.2.2 0.2.3: GitComet is user interface for GIT workflows
 dev-vcs/gitkay 1.2.0: A fast, native Wayland git history viewer — gitk, but okay
 dev-vcs/gitqlient 1.6.3 9999: Multi-platform Git client written with Qt
 dev-vcs/got 0.127: Version control system prioritizing ease of use over flexibility
@@ -1316,7 +1318,7 @@ games-rpg/snoot-game 1.12.0: Visual novel parody of Goodbye Volcano High
 games-server/among-sus 20210519: Among Us, but it's a text adventure
 games-simulation/kittenspaceagency-bin 2026.9.7-r5402: A space flight and rocketry simulation
 games-simulation/youre-the-os 1.11.1: Game where you are a computer's OS and have to manage processes, memory and I/O
-games-strategy/7k-ambition 3.2.11 9999: Seven Kingdoms: Ambition
+games-strategy/7k-ambition 3.2.12 9999: Seven Kingdoms: Ambition
 games-strategy/gigalomania 1.0.1: Libre clone of Mega-Lo-Mania (original from ~1990), supports original resources
 games-strategy/hedgewars 1.1.0_pre20260814: A turn-based strategy, artillery, action and comedy game
 games-strategy/slay-the-spire 2.2: Deck-building roguelike game with four playable characters
@@ -1591,7 +1593,7 @@ media-gfx/sic 0.22.4: Accessible image processing and conversion from the termin
 media-gfx/silicon 0.5.2-r1 0.5.2-r2 0.5.3: Create beautiful image of your code
 media-gfx/superpaper 2.2.1: Advanced multi monitor wallpaper manager
 media-gfx/svgcleaner 0.9.5: svgcleaner could help you to clean up your SVG files from the unnecessary data.
-media-gfx/swayimg 4.7 5.4 5.5: Lightweight image viewer for Wayland display servers
+media-gfx/swayimg 4.7 5.4 5.5 5.6: Lightweight image viewer for Wayland display servers
 media-gfx/sxot 1.0.0: Minimal X11 screenshot tool
 media-gfx/timg 1.6.2 1.6.3: Terminal image and video viewer
 media-gfx/vkbasalt-cli 3.1.1: Command-line utility for vkBasalt
@@ -1693,7 +1695,7 @@ media-sound/tenacity 1.3.4-r4 1.3.5: Easy-to-use, privacy-friendly, FLOSS, cross
 media-sound/tidal-hifi-bin 5.16.0-r1 5.17.0 6.1.0 6.2.0 6.3.0 6.3.1 7.0.0 7.0.1: Web version of Tidal running in electron with Hi-Fi support thanks to Widevine
 media-sound/yandex-music 5.105.3 5.110.1 5.113.2 5.116.3: Yandex Music streaming service
 media-sound/ymuse 0.22: GTK client for Music Player Daemon (MPD) written in Go
-media-sound/ytm-player 1.9.4 1.9.5 2.0.0 9999: Full-featured YouTube Music TUI client with vim-style navigation
+media-sound/ytm-player 2.0.0 2.1.0 9999: Full-featured YouTube Music TUI client with vim-style navigation
 media-sound/zita-ajbridge 0.8.4-r2: zita-a2j and zita-j2a - bridges between ALSA and JACK
 media-video/ciano 0.2.4-r2: A multimedia file converter focused on simplicity
 media-video/clapper 0.8.0 0.10.0: Modern and user-friendly media player
@@ -1815,7 +1817,7 @@ net-im/sliding-sync 0.99.15 0.99.19: Proxy implementation of MSC3575's sync prot
 net-im/teams-for-linux 2.6.18 2.7.6 2.7.12 2.7.13 2.11.1 2.13.0: Unofficial Microsoft Teams client for Linux. Binary precompiled version
 net-im/tuwunel 1.8.3 1.9.0: High Performance Matrix Homeserver in Rust!
 net-im/vesktop-bin 1.6.6 1.6.7: All-in-one voice and text chat for gamers with Vencord Preinstalled
-net-im/why2 2.0.0: Lightweight, fast and secure chat application powered by WHY2 encryption
+net-im/why2 2.1.3: Lightweight, fast and secure chat application powered by WHY2 encryption
 net-im/zapzap 7.4 7.4.2: WhatsApp desktop application written in PyQt6 + PyQt6-WebEngine
 net-im/zendrite 3.2.0 3.2.1: Zendrite is a second-generation Matrix homeserver written in Go
 net-im/zulip-desktop-bin 5.12.3: Organized chat for distributed teams.
@@ -1952,7 +1954,7 @@ net-vpn/amneziawg-modules 3.0.20260805 3.1.20260812: AmneziaWG Linux kernel modu
 net-vpn/amneziawg-tools 3.0.20260805-r1 3.1.20260812: Required tools for AmneziaWG, such as awg(8) and awg-quick(8)
 net-vpn/fastd 22 23: A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
 net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that require SAML
-net-vpn/mullvadvpn-app 2026.4 2026.5_beta1: Tool used to manage daemon setup
+net-vpn/mullvadvpn-app 2026.4 2026.5_beta2: Tool used to manage daemon setup
 net-vpn/proton-vpn-gtk-app 4.15.2 4.17.1: Proton VPN GTK app
 net-vpn/vtun-embedded 3.1.0-r1: Create tunnels over TCP/IP networks with shaping, encryption, and compression
 net-vpn/vtun-ng 3.1.1-r1 3.1.2: Create tunnels over TCP/IP networks with shaping, encryption, and compression
@@ -2047,6 +2049,7 @@ sci-mathematics/rstudio-desktop-bin 2023.09.1_p494 2024.12.0_p467 2024.12.0_p467
 sci-misc/boinc-wrapper 26018-r3 26019 26019-r1: Wrapper to use non-BOINC apps with BOINC
 sci-misc/ik_llama-cpp 9999: llama.cpp fork with additional SOTA quants and improved performance
 sci-misc/llama-cpp 0_pre6980 0_pre7276 0_pre7611 0_pre7924 0_pre8198 0_pre8628 0_pre8838 0_pre9888 0.3.0 9999: Port of Facebook's LLaMA model in C/C++
+sci-misc/praat 7.0.02: Doing phonetics by computer
 sci-misc/stable-diffusion-cpp 9999: Diffusion model(SD,Flux,Wan,Qwen Image,Z-Image,...) inference in pure C/C++
 sci-ml/aichat 0.30.0: All-in-one LLM CLI Tool
 sci-ml/ollama 0.18.0 0.20.3 0.21.2 9999: Get up and running with Llama 3, Mistral, Gemma, and other language models.
