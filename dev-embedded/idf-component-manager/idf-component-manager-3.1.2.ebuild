@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{12..14} )
+PYTHON_COMPAT=( python3_{12..15} )
 DISTUTILS_USE_PEP517=setuptools
 
 inherit distutils-r1
@@ -27,11 +27,13 @@ BDEPEND="
 "
 
 RDEPEND="
+	dev-embedded/esp-pylib[${PYTHON_USEDEP}]
 	dev-python/cachecontrol[${PYTHON_USEDEP}]
 	dev-python/click[${PYTHON_USEDEP}]
 	dev-python/colorama[${PYTHON_USEDEP}]
 	dev-python/jsonref[${PYTHON_USEDEP}]
 	dev-python/packaging[${PYTHON_USEDEP}]
+	dev-python/pathvalidate[${PYTHON_USEDEP}]
 	dev-python/psutil[${PYTHON_USEDEP}]
 	dev-python/pydantic[${PYTHON_USEDEP}]
 	dev-python/pydantic-settings[${PYTHON_USEDEP}]

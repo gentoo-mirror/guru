@@ -99,8 +99,6 @@ src_configure() {
 		-DUSEUCD="$(usex chardet)"
 		-DCOLORER="$(usex colorer)"
 		-DMTP="$(usex mtp)"
-		-DMTP_SYSTEM_LIBUSB=OFF
-		-DMTP_SYSTEM_LIBMTP=OFF
 		-DNR_NFS="$(usex nfs)"
 		-DPYTHON="$(usex python)"
 		-DUNRAR="$(usex rar lib NO)"
@@ -111,22 +109,29 @@ src_configure() {
 		-DNR_WEBDAV="$(usex webdav)"
 		-DUSEWX="$(usex wxwidgets)"
 		-DTTYX="$(usex X)"
-		-DTTYXI="$(usex X)"
 
 		-DMUSL="$(usex elibc_musl)"
 		-DBUILD_SHARED_LIBS=OFF
 	)
+
+	if use mtp; then
+		mycmakeargs+=(
+			-DMTP_SYSTEM_LIBUSB=OFF
+			-DMTP_SYSTEM_LIBMTP=OFF
+		)
+	fi
+
+	if use X; then
+		mycmakeargs+=(
+			-DTTYXI=YES
+		)
+	fi
+
 	cmake_src_configure
 }
 
 pkg_postinst() {
-	xdg_desktop_database_update
-	xdg_icon_cache_update
+	xdg_pkg_postinst
 	optfeature "accessing Android devices through the ADB plugin" dev-util/android-tools
 	optfeature "privileged file operations through far2l's sudo support" app-admin/sudo
-}
-
-pkg_postrm() {
-	xdg_desktop_database_update
-	xdg_icon_cache_update
 }

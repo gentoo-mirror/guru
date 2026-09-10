@@ -10,8 +10,8 @@ EAPI=8
 PYTHON_COMPAT=( python3_{12..14} )
 PYTHON_GDB_USE=( python_targets_python3_{12..14} )
 VER="15.2.0_20251204"
-GDB_VER="16.3_20250913"
-OPENOCD_VER="0.12.0-esp32-20260304"
+GDB_VER="17.1_20260402"
+OPENOCD_VER="0.12.0-esp32-20260703"
 
 CROSSTOOL_URL="https://github.com/espressif/crosstool-NG/releases/download/esp-${VER}"
 
@@ -73,7 +73,6 @@ QA_PREBUILT="opt/* usr/lib* usr/share/esp-idf/*"
 
 PATCHES=(
 	"${FILESDIR}/allow-system-install-${PN}-5.3.patch"
-	"${FILESDIR}/${PN}-6.0-build-fix.patch"
 )
 
 install_tool() {

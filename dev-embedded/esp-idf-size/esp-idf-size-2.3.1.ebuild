@@ -4,7 +4,7 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{12..14} )
+PYTHON_COMPAT=( python3_{12..15} )
 
 inherit distutils-r1 pypi
 
@@ -19,8 +19,8 @@ KEYWORDS="~amd64"
 RESTRICT="test"
 
 RDEPEND="
+	dev-embedded/esp-pylib[${PYTHON_USEDEP}]
 	dev-python/pyyaml[${PYTHON_USEDEP}]
-	dev-python/rich[${PYTHON_USEDEP}]
 "
 
 DEPEND="${RDEPEND}"

@@ -25,7 +25,6 @@ CRATES="
 	anyhow@1.0.102
 	arbitrary@1.4.2
 	arboard@3.6.1
-	arc-swap@1.9.1
 	arrayref@0.3.9
 	arrayvec@0.7.6
 	as-raw-xcb-connection@1.0.1
@@ -38,7 +37,6 @@ CRATES="
 	atomic-waker@1.1.2
 	atomic@0.6.1
 	autocfg@1.5.0
-	base62@2.2.4
 	base64@0.22.1
 	bincode@1.3.3
 	bindgen@0.72.1
@@ -193,7 +191,6 @@ CRATES="
 	glib@0.18.5
 	glob@0.3.3
 	globset@0.4.18
-	globwalk@0.8.1
 	glow@0.16.0
 	glutin_wgl_sys@0.6.1
 	gobject-sys@0.18.0
@@ -233,7 +230,6 @@ CRATES="
 	interprocess@2.4.2
 	is-docker@0.2.0
 	is-wsl@0.4.0
-	itertools@0.11.0
 	itertools@0.13.0
 	itertools@0.14.0
 	itoa@1.0.18
@@ -296,7 +292,6 @@ CRATES="
 	nom@7.1.3
 	nom@8.0.0
 	nonmax@0.5.5
-	normpath@1.5.1
 	notify-types@2.1.0
 	notify@8.2.0
 	nu-ansi-term@0.50.3
@@ -454,9 +449,6 @@ CRATES="
 	rquickjs-serde@0.5.0
 	rquickjs-sys@0.11.0
 	rquickjs@0.11.0
-	rust-i18n-macro@3.1.5
-	rust-i18n-support@3.1.5
-	rust-i18n@3.1.5
 	rustc-hash@1.1.0
 	rustc-hash@2.1.2
 	rustc_version@0.4.1
@@ -493,7 +485,6 @@ CRATES="
 	serde_repr@0.1.20
 	serde_spanned@0.6.9
 	serde_spanned@1.1.1
-	serde_yaml@0.9.34+deprecated
 	serial2@0.2.36
 	sha1@0.11.0
 	sha2@0.10.9
@@ -518,7 +509,6 @@ CRATES="
 	smol_str@0.2.2
 	socket2@0.6.3
 	spirv@0.3.0+sdk-1.3.268.0
-	stable_deref_trait@1.2.1
 	static_assertions@1.1.0
 	str_indices@0.4.4
 	streaming-iterator@0.1.9
@@ -580,7 +570,6 @@ CRATES="
 	tree-sitter-typescript@0.23.2
 	tree-sitter@0.26.8
 	tree_magic_mini@3.2.2
-	triomphe@0.1.15
 	ts-rs-macros@12.0.1
 	ts-rs@12.0.1
 	ttf-parser@0.25.1
@@ -601,7 +590,6 @@ CRATES="
 	unicode-truncate@2.0.1
 	unicode-width@0.2.2
 	unicode-xid@0.2.6
-	unsafe-libyaml@0.2.11
 	untrusted@0.9.0
 	ureq-proto@0.6.0
 	ureq@3.3.0

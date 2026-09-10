@@ -32,14 +32,14 @@ DOCS=(
 
 RDEPEND="
 	media-video/mpv
-	>=net-misc/yt-dlp-2025.01.12[${PYTHON_USEDEP}]
+	>=net-misc/yt-dlp-2026.08.19[${PYTHON_USEDEP}]
 	>=dev-python/aiosqlite-0.20.0[${PYTHON_USEDEP}]
 	>=dev-python/click-8.1.0[${PYTHON_USEDEP}]
 	>=dev-python/python-mpv-1.0.0[${PYTHON_USEDEP}]
 	>=dev-python/pillow-10.0[${PYTHON_USEDEP}]
 	>=dev-python/textual-7.0.0[${PYTHON_USEDEP}]
 	>=dev-python/ytmusicapi-1.11.0[${PYTHON_USEDEP}]
-	>=dev-python/dbus-fast-4.0.0[${PYTHON_USEDEP}]
+	>=dev-python/dbus-fast-5.0.0[${PYTHON_USEDEP}]
 	>=dev-python/packaging-21.0[${PYTHON_USEDEP}]
 "
 
