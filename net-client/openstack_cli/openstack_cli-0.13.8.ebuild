@@ -763,6 +763,15 @@ KEYWORDS="~amd64 ~arm64"
 
 DEPEND="dev-libs/openssl"
 
+# Required to deal with a bug in 0.13.8 with USE="debug". The debug binary
+# crashes when generating the shell completions. It's been reported to and
+# fixed by upstream since, which is where this patch originates from. See
+#
+#   https://github.com/gtema/openstack/issues/1988
+PATCHES=(
+	"${FILESDIR}/0001-fix-cli-Disable-auto-version-flag-on-plugin-subcomma.patch"
+)
+
 src_compile() {
 	# Required for pkg-config crate:
 	#   https://wiki.gentoo.org/wiki/Writing_Rust_ebuilds#pkg-config_crate
@@ -774,9 +783,10 @@ src_compile() {
 
 	cargo_src_compile --package openstack_cli
 
-	"${S}"/target/release/osc completion bash > osc || die
-	"${S}"/target/release/osc completion zsh > _osc || die
-	"${S}"/target/release/osc completion fish > osc.fish || die
+	local bin_path="${S}/$(cargo_target_dir)/osc"
+	"${bin_path}" completion bash > osc || die
+	"${bin_path}" completion zsh > _osc || die
+	"${bin_path}" completion fish > osc.fish || die
 }
 
 src_install(){
