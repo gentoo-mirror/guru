@@ -1,0 +1,14 @@
+DEFINED_PHASES=install postinst postrm preinst prepare unpack
+DESCRIPTION=Omnissa Horizon Client for Linux
+EAPI=8
+HOMEPAGE=https://www.omnissa.com/products/horizon-8/ https://customerconnect.omnissa.com/downloads/info/slug/virtual_desktop_and_apps/omnissa_horizon_clients/8
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=xdg
+KEYWORDS=~amd64
+LICENSE=omnissa
+RDEPEND=media-libs/libva[X] dev-libs/glib:2 dev-libs/libglibutil dev-libs/libxml2 dev-libs/libxml2-compat dev-libs/openssl dev-util/lttng-ust-compat media-libs/fontconfig media-libs/gstreamer:1.0 media-libs/gst-plugins-base:1.0 media-libs/harfbuzz media-libs/libpng:0/16 media-libs/libpulse media-libs/libv4l media-libs/libva-compat[X] media-libs/mesa sys-apps/pcsc-lite x11-libs/cairo[X] x11-libs/gtk+:3 x11-libs/libX11 x11-libs/libXcursor x11-libs/libXdamage x11-libs/libXext x11-libs/libXfixes x11-libs/libXi x11-libs/libXinerama x11-libs/libXrandr x11-libs/libXrender x11-libs/libXtst x11-libs/libdrm x11-libs/libvdpau x11-libs/libxcb x11-libs/libxkbfile
+RESTRICT=mirror strip
+SLOT=0
+SRC_URI=https://download3.omnissa.com/software/CART27FQ2_LIN_2606_TARBALL/Omnissa-Horizon-Client-Linux-2606-8.19.0-32216036411.tar.gz
+_eclasses_=xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575
+_md5_=31facc1ccc7cccce7a9fd436bd26ebad

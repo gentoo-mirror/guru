@@ -1,0 +1,17 @@
+BDEPEND=virtual/pkgconfig app-alternatives/ninja >=dev-build/cmake-3.28.5
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=python_targets_python3_12? ( dev-lang/python:3.12 ) python_targets_python3_13? ( dev-lang/python:3.13 ) python_targets_python3_14? ( dev-lang/python:3.14 ) test? ( dev-python/psutil[python_targets_python3_12(-)?,python_targets_python3_13(-)?,python_targets_python3_14(-)?] sci-electronics/verilator ) app-arch/zstd:= sys-libs/ncurses:0=
+DESCRIPTION=Circuit IR Compilers and Tools
+EAPI=8
+HOMEPAGE=https://circt.llvm.org https://github.com/llvm/circt
+INHERIT=cmake python-r1
+IUSE=test python_targets_python3_12 python_targets_python3_13 python_targets_python3_14
+KEYWORDS=~amd64 ~arm64 ~riscv ~x86
+LICENSE=Apache-2.0-with-LLVM-exceptions UoI-NCSA BSD public-domain rc
+RDEPEND=python_targets_python3_12? ( dev-lang/python:3.12 ) python_targets_python3_13? ( dev-lang/python:3.13 ) python_targets_python3_14? ( dev-lang/python:3.14 ) test? ( dev-python/psutil[python_targets_python3_12(-)?,python_targets_python3_13(-)?,python_targets_python3_14(-)?] sci-electronics/verilator ) app-arch/zstd:= sys-libs/ncurses:0=
+REQUIRED_USE=|| ( python_targets_python3_12 python_targets_python3_13 python_targets_python3_14 )
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/llvm/circt/archive/refs/tags/firtool-1.159.0.tar.gz -> circt-1.159.0.tar.gz https://github.com/llvm/llvm-project/archive/6279700538792da0c5a08e17babfe9b6e824c69f.tar.gz -> llvm-project-6279700538792da0c5a08e17babfe9b6e824c69f.tar.gz
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	3530055400d05e64deaba3042af30af6	out-of-source-utils	8e5093bd27b7f541a1913271f25d633a	multibuild	83db098a835f71feb71761f72a694aa2	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	python-utils-r1	85d8fb641bb0e79b1ae893556e9c57bc	python-r1	5fdca77e34fc9af7d6eb47689f33f6bf
+_md5_=8b4fd9f4a3f76302752d587dce3e9d7c
