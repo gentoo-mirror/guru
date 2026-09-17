@@ -1,13 +1,12 @@
-BDEPEND=test? ( dev-libs/atf dev-util/kyua ) >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=configure install unpack
 DESCRIPTION=Collection of extra tools for Unixes
 EAPI=8
 HOMEPAGE=https://hacktivis.me/git/utils-extra/
 INHERIT=toolchain-funcs git-r3
-IUSE=test static
+IUSE=static
 LICENSE=MPL-2.0
 PROPERTIES=live
-RESTRICT=!test? ( test )
 SLOT=0
 _eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	git-r3	e6c2f983e006e805160436c75a0c1562
-_md5_=65c0dab434db18075947499d15f01912
+_md5_=a7d48a6fec99279475c3f100e19a0d5e

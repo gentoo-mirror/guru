@@ -151,7 +151,7 @@ app-arch/libarchive-qt 2.0.8-r1: Qt based archiving solution with libarchive bac
 app-arch/libzim 9.2.1-r1 9.5.0 9.6.0 9.7.0: ZIM file format: an offline storage solution for content coming from the Web
 app-arch/microtar 0.1.0: A lightweight tar library written in ANSI C
 app-arch/nix-compress 0.3.1: Modern implementation of the ancient unix compress(1) tool
-app-arch/ouch 0.8.0 0.8.1 0.8.2: A cli utility for easily compressing and decompressing files and directories.
+app-arch/ouch 0.8.0 0.8.1 0.8.2: A cli utility for easily compressing and decompressing files and directories
 app-arch/unalz 0.65-r1 0.65-r2: Extract ALZ archives
 app-arch/zarchive 0.1.2: Library for creating and reading zstd-compressed file archives (.zar)
 app-backup/blocksync-fast 1.0.3 1.0.4 1.0.6 1.0.7: Fast block device sync with digest, designed to improve block-based backups.
@@ -576,18 +576,17 @@ dev-embedded/arduino-cli 1.0.4 1.1.1 1.3.1: Next-generation arduino command line
 dev-embedded/arduino-ide 2.3.10: Arduino IDE 2.x - A modern open-source IDE for Arduino development
 dev-embedded/bcm2-utils 0.9.8: Utilities for Broadcom-based cable modems
 dev-embedded/esp-coredump 1.15.0 1.16.0: Utility that helps users to retrieve and analyse core dumps
-dev-embedded/esp-idf 5.4.4 5.5.5 6.0.2 6.0.3: Espressif IoT Development Framework
+dev-embedded/esp-idf 5.4.4 5.5.5 6.0.2 6.0.3 6.0.3-r1 6.1: Espressif IoT Development Framework
 dev-embedded/esp-idf-diag 0.2.0: A tool to gather diagnostic information about the ESP-IDF environment.
-dev-embedded/esp-idf-kconfig 2.5.2 3.11.1-r1 3.13.0: Kconfig tooling for esp-idf
-dev-embedded/esp-idf-monitor 1.9.0 1.10.0: Python object-oriented database
+dev-embedded/esp-idf-kconfig 2.5.2 3.11.1-r1 3.13.0-r1: Kconfig tooling for esp-idf
+dev-embedded/esp-idf-monitor 1.9.0 1.10.0-r1: Python object-oriented database
 dev-embedded/esp-idf-nvs-partition-gen 0.1.9: Parses ESP-IDF panic handler output acts as a GDB server over stdin/stdout
 dev-embedded/esp-idf-panic-decoder 1.4.1 1.5.0: Parses ESP-IDF panic handler output acts as a GDB server over stdin/stdout
-dev-embedded/esp-idf-size 1.7.1 2.2.1 2.3.1: Firmware size analysis for ESP-IDF
-dev-embedded/esp-pylib 1.1.4: Python object-oriented database
+dev-embedded/esp-idf-size 1.7.1 2.2.1 2.3.1-r1: Firmware size analysis for ESP-IDF
 dev-embedded/flip-link 0.1.12: Flips the memory layout of embedded programs to protect against stack overflows
 dev-embedded/freertos-gdb 1.0.4: Python module for operating with freeRTOS-kernel objects in GDB
-dev-embedded/fwup 1.15.1 1.16.0: Configurable embedded Linux firmware update creator and runner
-dev-embedded/idf-component-manager 2.4.6 3.0.3 3.1.2: Tool for installing ESP-IDF components
+dev-embedded/fwup 1.16.0 1.17.1: Configurable embedded Linux firmware update creator and runner
+dev-embedded/idf-component-manager 2.4.6 3.0.3 3.1.2-r1: Tool for installing ESP-IDF components
 dev-embedded/imsprog 1.8.5 1.8.6 1.9.1: I2C, MicroWire and SPI EEPROM/Flash chip Programmer
 dev-embedded/mv88e6xxx-dump 0.2.0_pre20210327: Dump information about Marvell mv88e6xxx Ethernet switches
 dev-embedded/nxp-gui-guider 1.10.1 2.0.0: GUI Guider is a user-friendly GUI development tool for LVGL
@@ -1004,7 +1003,7 @@ dev-python/pynput 1.8.2: Sends virtual input commands
 dev-python/pypandoc 1.17: Pypandoc provides a thin wrapper for pandoc, a universal document converter
 dev-python/pyproject2ebuild 0.0.3: Convert pyproject.toml to Gentoo ebuilds automatically.
 dev-python/pyqtdarktheme 2.1.0: A flat dark theme for PySide and PyQt.
-dev-python/pyrefly 1.1.0 1.1.1 1.2.0 1.3.0: A fast type checker and language server for Python with powerful IDE features
+dev-python/pyrefly 1.1.1 1.2.0 1.3.0 1.3.1: A fast type checker and language server for Python with powerful IDE features
 dev-python/pyrime 0.0.7: rime for python
 dev-python/pyroaring 1.1.0: Python wrapper for the C library CRoaring
 dev-python/pysdl3 0.9.9_beta1: A pure Python wrapper for SDL3
@@ -1178,10 +1177,10 @@ dev-util/gersemi 0.27.7 0.28.0: A formatter to make your CMake code the real tre
 dev-util/git-pages-cli 1.6.0 1.8.2: Command-line application for publishing sites to git-pages
 dev-util/gitlab-ci-local-bin 4.43.0 4.47.0 4.56.0: Run gitlab pipelines locally as shell executor or docker executor
 dev-util/go-task 3.52.0 3.53.1: A task runner / simpler Make alternative written in Go
-dev-util/google-antigravity 2.11.0 2.12.2 2.13.0: Google Antigravity 2.0, a dedicated platform to work with agents
-dev-util/google-antigravity-cli 1.1.28 1.2.2 1.2.3: Command-line interface for Google's Antigravity agentic development platform
+dev-util/google-antigravity 2.12.2 2.13.0 2.14.0: Google Antigravity 2.0, a dedicated platform to work with agents
+dev-util/google-antigravity-cli 1.1.28 1.2.4 1.2.5: Command-line interface for Google's Antigravity agentic development platform
 dev-util/google-antigravity-ide 2.0.4 2.1.1 2.5.5: Google Antigravity's Editor view with context-aware agent
-dev-util/grok-build 1.0.16 1.0.24: SpaceXAI's coding agent harness and TUI
+dev-util/grok-build 1.0.24 1.0.32: SpaceXAI's coding agent harness and TUI
 dev-util/gshards 0.2 0.2-r1: Small helper tools to aid installing Crystal packages in Gentoo
 dev-util/hare-update 0.26.0.0-r1 9999: assist in upgrading a codebase to a newer Hare release
 dev-util/haredo 1.0.2 9999: a simple and unix-idiomatic build automator
@@ -1209,7 +1208,7 @@ dev-util/nvchecker 2.21 2.22: New version checker for software releases
 dev-util/ocamlformat 0.26.2-r1 0.29.0: Auto-formatter for OCaml code
 dev-util/ocp-indent 1.8.2: Indentation tool for OCaml, to be used from editors like Emacs and Vim.
 dev-util/ols 2026.05 9999: Language server for Odin Programming language
-dev-util/opencode-bin 1.1.48 1.2.6 1.15.12 1.18.30 1.18.31: The open source coding agent
+dev-util/opencode-bin 1.18.30 1.18.31: The open source coding agent
 dev-util/payload-dumper-go 2.0.1 2.0.2: an android OTA payload dumper written in Go
 dev-util/pcpp 1.30: A C99 preprocessor written in pure Python
 dev-util/pifpaf 3.3.0: Suite of tools and fixtures to manage daemons for testing
@@ -1516,7 +1515,7 @@ gui-wm/beansprout 1.1.1 9999: A tiling window manager for the river Wayland comp
 gui-wm/cage 0.2.1 0.3.0 0.3.1 9999: A Wayland kiosk
 gui-wm/canoe 0.5.1: Canoe, a River window manager implementation in Rust
 gui-wm/kwm 0.3.0 9999: A window manager based on River Wayland compositor
-gui-wm/mangowm 0.15.6 0.16.2 0.16.3 0.17.0 9999: A fast, feature-rich Wayland compositor built on dwl
+gui-wm/mangowm 0.15.6 0.16.2 0.16.3 0.17.0 0.17.1 9999: A fast, feature-rich Wayland compositor built on dwl
 gui-wm/miracle-wm 0.10.1: Tiling Wayland compositor based on Mir
 gui-wm/niri 26.04 9999: Scrollable-tiling Wayland compositor
 gui-wm/phoc 0.50.0 0.52.0 0.53.0: Wayland compositor for mobile phones
@@ -1636,7 +1635,7 @@ media-plugins/gst-plugins-thumbnailers 1.1.0: GStreamer video and audio file thu
 media-plugins/qt-jpegxl-image-plugin 9999: Qt plug-in to allow Qt and KDE based applications to read/write JXL images.
 media-plugins/whysynth 20170701_p20180323-r1: A software synthesizer plugin for the DSSI Soft Synth Interface
 media-radio/fllog 1.2.8: Logbook application for amateur radio use
-media-sound/Tauon 10.0.1 11.1.1 11.1.1-r1 9999: The desktop music player of today!
+media-sound/Tauon 10.0.1 11.1.1 11.1.1-r1 12.0.0 9999: The desktop music player of today!
 media-sound/aimp 6.00.3038_alpha8 6.00.3048_alpha9 6.00.3056_beta2: AIMP - Free Audio Player
 media-sound/amberol 2024.2: Simple GUI Music Player
 media-sound/bespokesynth 1.2.1 1.3.0: Software modular synth
@@ -1714,7 +1713,7 @@ media-video/mediaelch 2.12.0-r3 9999: Video metadata scraper
 media-video/megapixels 1.4.3-r1: GTK4 camera application that knows how to deal with the media request api
 media-video/motioneye 0.44.0_beta3 0.44.0: A web frontend for the motion daemon, Python 3
 media-video/mpc-qt 26.01 26.07: Media Player Classic Qute Theater
-media-video/obs-cmd 0.31.3 1.0.0: A minimal command to control obs via obs-websocket
+media-video/obs-cmd 1.0.0 1.0.2: A minimal command to control obs via obs-websocket
 media-video/obs-multi-rtmp 0.6.0.1 9999: OBS Simulcast support plugin
 media-video/obs-streamfx 0.12.0.9999 9999: OBS® Studio plugin which adds many new effects.
 media-video/obs-vaapi 0.4.1 0.4.2 9999: OBS Studio VAAPI support via GStreamer
@@ -1768,7 +1767,7 @@ net-dialup/syncterm 1.1 9999: BBS (bulletin board system) terminal
 net-dialup/tcpser 1.1.4: Hayes Smartmodem emulator over TCP/IP
 net-dialup/tio 3.9: Simple TTY terminal application
 net-dns/AdGuardHome 0.107.77 0.107.78 0.107.79: Network-wide ads & trackers blocking DNS server like Pi-Hole with web ui
-net-dns/blocky 0.32.1 0.33.0 0.34.0 9999: Fast and lightweight DNS proxy as ad-blocker with many features written in Go
+net-dns/blocky 0.33.0 0.34.0 0.35.0 9999: Fast and lightweight DNS proxy as ad-blocker with many features written in Go
 net-dns/noip-duc 3.3.0: No-IP Dynamic Update Client (https://www.noip.com)
 net-dns/technitium-dns 15.4: Open-source, self-hosted authoritative and recursive DNS+DHCP server
 net-fs/httpdirfs 1.2.7: Filesystem to mount HTTP directory listings, with a permanent cache
@@ -1787,7 +1786,7 @@ net-im/dissent 0.0.37: Tiny native Discord app
 net-im/element-desktop 1.12.3 1.12.6 1.12.7: A glossy Matrix collaboration client for desktop
 net-im/endcord 1.5.1 1.5.2 1.5.3 9999: Feature rich Discord TUI client
 net-im/endcord-bin 1.5.1 1.5.2 1.5.3: Feature rich Discord TUI client
-net-im/equibop-bin 3.2.2 3.3.0: Equibop is a customizable and privacy friendly Discord desktop app
+net-im/equibop-bin 3.2.2 3.3.0 3.3.1: Equibop is a customizable and privacy friendly Discord desktop app
 net-im/eturnal 1.12.1 1.12.2: STUN/TURN server
 net-im/flare 0.12.0-r1: Chat with your friends on Signal
 net-im/forkgram 6.5.1: Fork of the official Telegram Desktop app with small useful additions
@@ -1820,7 +1819,7 @@ net-im/sliding-sync 0.99.15 0.99.19: Proxy implementation of MSC3575's sync prot
 net-im/teams-for-linux 2.6.18 2.7.6 2.7.12 2.7.13 2.11.1 2.13.0: Unofficial Microsoft Teams client for Linux. Binary precompiled version
 net-im/tuwunel 1.9.0 1.9.1: High Performance Matrix Homeserver in Rust!
 net-im/vesktop-bin 1.6.6 1.6.7: All-in-one voice and text chat for gamers with Vencord Preinstalled
-net-im/why2 2.1.4: Lightweight, fast and secure chat application powered by WHY2 encryption
+net-im/why2 2.2.1: Lightweight, fast and secure chat application powered by WHY2 encryption
 net-im/zapzap 7.4 7.4.2: WhatsApp desktop application written in PyQt6 + PyQt6-WebEngine
 net-im/zendrite 3.2.1 3.3.0: Zendrite is a second-generation Matrix homeserver written in Go
 net-im/zulip-desktop-bin 5.12.3: Organized chat for distributed teams.
@@ -2117,7 +2116,7 @@ sys-apps/sd 1.0.0: Intuitive find & replace CLI (sed alternative)
 sys-apps/sift 0.9.1: A fast and powerful alternative to grep.
 sys-apps/systemd-bootchart 234 235: systemd boot performance graphing tool
 sys-apps/turnstile 0.1.11 9999: Independent session/login tracker
-sys-apps/utils-extra 0.1.0 9999: Collection of extra tools for Unixes
+sys-apps/utils-extra 0.1.0 0.2.0 9999: Collection of extra tools for Unixes
 sys-apps/xdg-desktop-portal-umbriel 0.0.0_pre20260912: XDG Desktop Portal for Umbriel
 sys-apps/zmem 0.2.1 0.2.3 0.2.4: Memory monitoring tool focusing on swap, zswap and zram
 sys-auth/authenticator 4.6.2: 2FA code generator for GNOME
@@ -2226,7 +2225,7 @@ www-client/nyxt 3.11.8 3.12.0 9999: Nyxt - the hacker's power-browser
 www-client/torbrowser-launcher 0.3.9: A program to help you securely download and run Tor Browser
 www-client/vimb 3.7.0 9999: A fast, lightweight, vim-like browser based on webkit
 www-client/waterfox-bin 6.6.17 6.7.0: A privacy-focused, performance-oriented browser based on Firefox
-www-client/yandex-browser 26.8.1.1022_p1: The web browser from Yandex
+www-client/yandex-browser 26.8.1.1081_p1: The web browser from Yandex
 www-client/zen-bin 1.21.10b 1.21.15b: Zen Browser - A fast, privacy-focused Firefox fork
 www-misc/dufs 0.40.0 0.46.0: Dufs is a distinctive utility file server
 www-misc/gitea2rss 0.7.0: Generates RSS feeds from Gitea releases, tags and commits
