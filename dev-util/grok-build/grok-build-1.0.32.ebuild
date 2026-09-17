@@ -17,10 +17,10 @@ declare -A GIT_CRATES=(
 	[nucleo]='https://github.com/helix-editor/nucleo;5b74652e482f7c07d827f18c6d21e7540c242c69;nucleo-%commit%'
 )
 
-inherit cargo check-reqs shell-completion
+inherit cargo check-reqs linux-info shell-completion
 
 # no tagged releases
-MY_COMMIT="38683198c71c9be623bf3f7346414ae1c330ac1c"
+MY_COMMIT="256cf49bfb9b80e5188acd8bb5cb498f2eea074f"
 DESCRIPTION="SpaceXAI's coding agent harness and TUI"
 HOMEPAGE="
 	https://x.ai/cli
@@ -61,7 +61,10 @@ QA_FLAGS_IGNORED="usr/bin/.*"
 CHECKREQS_DISK_BUILD=10G # 9.7G
 
 pkg_setup() {
+	local CONFIG_CHECK="~SECURITY_LANDLOCK"
+
 	check-reqs_pkg_setup
+	linux-info_pkg_setup
 	rust_pkg_setup
 }
 

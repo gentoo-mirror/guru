@@ -10,6 +10,12 @@ SRC_URI="https://github.com/fwup-home/fwup/archive/refs/tags/v${PV}.tar.gz -> ${
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64"
+IUSE="test"
+
+# Running tests requires dev-util/xdelta to be compiled with lzma support.
+# Only run tests when the appropriate USE flag has been set.
+RESTRICT="!test? ( test )"
+BDPEND="test? ( dev-util/xdelta:3[lzma] )"
 
 RDEPEND="
 	>=app-arch/libarchive-3.7.9
@@ -29,11 +35,15 @@ src_prepare() {
 src_test() {
 	# The fwup tests do not like the portage sandbox. Make them play nice.
 
-	# Modify tests/common.sh to ensure $WRITE_SHIM and $MOUNT_SHIM point to
-	# files that don't exist. This is needed to ensure tests don't try to use
-	# LD_PRELOAD.
-	sed -i 's/^\(WRITE\|MOUNT\)_SHIM=".*"/\1_SHIM=""/' 'tests/common.sh' \
-		|| die 'Could not sed tests/common.sh'
+	# Certain tests make use of LD_PRELOAD, which does not work in the portage
+	# sandbox. Most of these use the $WRITE_SHIM or $MOUNT_SHIM defined in
+	# commmon.sh. Some tests define their own. Disable all of these so the
+	# tests in question get skipped.
+	sed -i 's/^\(WRITE\|MOUNT\|PREAD\|UBI\)_SHIM=".*"/\1_SHIM=""/' \
+		'tests/common.sh' \
+		'tests/222_block_cache_pread_count.test' \
+		'tests/226_ubi_volume_write_success.test' \
+		|| die 'Could not disable test shims'
 
 	# set VERIFY_SYSCALLS_DISABLE, to disable tracing
 	VERIFY_SYSCALLS_DISABLE="" emake check
