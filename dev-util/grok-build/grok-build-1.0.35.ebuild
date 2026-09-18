@@ -20,7 +20,7 @@ declare -A GIT_CRATES=(
 inherit cargo check-reqs linux-info shell-completion
 
 # no tagged releases
-MY_COMMIT="f21225f2d463e1629769c7b4939807923c0ef83e"
+MY_COMMIT="c8f008fc499805978b68436887ee455decba0cd4"
 DESCRIPTION="SpaceXAI's coding agent harness and TUI"
 HOMEPAGE="
 	https://x.ai/cli

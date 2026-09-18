@@ -3,6 +3,8 @@
 
 EAPI=8
 
+inherit autotools
+
 DESCRIPTION="Configurable embedded Linux firmware update creator and runner"
 HOMEPAGE="https://github.com/fwup-home/fwup"
 SRC_URI="https://github.com/fwup-home/fwup/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
@@ -15,12 +17,20 @@ IUSE="test"
 # Running tests requires dev-util/xdelta to be compiled with lzma support.
 # Only run tests when the appropriate USE flag has been set.
 RESTRICT="!test? ( test )"
-BDPEND="test? ( dev-util/xdelta:3[lzma] )"
+
+BDEPEND="
+	virtual/pkgconfig
+	test? ( dev-util/xdelta:3[lzma] )
+"
+
+DEPEND="
+	>=app-arch/libarchive-3.7.9:=[lzma]
+	>=dev-libs/confuse-2.8:=
+"
 
 RDEPEND="
-	>=app-arch/libarchive-3.7.9
+	${DEPEND}
 	app-arch/zip
-	>=dev-libs/confuse-2.8
 	dev-util/xdelta:3
 	sys-fs/dosfstools
 	sys-fs/mtools
@@ -29,7 +39,7 @@ RDEPEND="
 
 src_prepare() {
 	default
-	./autogen.sh
+	eautoreconf
 }
 
 src_test() {
