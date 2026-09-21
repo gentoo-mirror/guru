@@ -23,6 +23,7 @@ RDEPEND="
 
 	$(python_gen_cond_dep '
 		dev-python/babel[${PYTHON_USEDEP}]
+		dev-python/curl-cffi[${PYTHON_USEDEP}]
 		dev-python/flask-babel[${PYTHON_USEDEP}]
 		dev-python/flask[${PYTHON_USEDEP}]
 		dev-python/httpx-socks[${PYTHON_USEDEP}]
@@ -62,5 +63,32 @@ distutils_enable_tests pytest
 src_install() {
 	distutils-r1_src_install
 
+	newconfd "${FILESDIR}/searxng.confd" searxng
+	newinitd "${FILESDIR}/searxng.initd" searxng
 	systemd_dounit "${FILESDIR}/searxng.service"
+
+	insinto /etc/searxng
+	doins "${FILESDIR}/settings.yml"
+
+	keepdir /var/lib/searxng
+	keepdir /var/log/searxng
+
+	fowners searxng:searxng /etc/searxng
+	fowners searxng:searxng /var/lib/searxng
+	fowners searxng:searxng /var/log/searxng
+
+	fperms 750 /etc/searxng
+	fperms 640 /etc/searxng/settings.yml
+	fperms 750 /var/lib/searxng
+	fperms 750 /var/log/searxng
+}
+
+pkg_postinst() {
+	einfo "SearXNG has been installed."
+	einfo ""
+	einfo "To start:"
+	einfo "  OpenRC: rc-update add searxng default && rc-service searxng start"
+	einfo "  systemd: systemctl enable --now searxng"
+	einfo ""
+	einfo "SearXNG will listen on http://127.0.0.1:8888"
 }
