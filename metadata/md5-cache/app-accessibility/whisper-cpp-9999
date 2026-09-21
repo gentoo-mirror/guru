@@ -1,14 +1,17 @@
-BDEPEND=media-libs/shaderc app-alternatives/ninja >=dev-build/cmake-3.28.5 >=dev-vcs/git-1.8.2.1[curl]
-DEFINED_PHASES=compile configure install prepare test unpack
-DEPEND=blas? ( sci-libs/openblas ) cuda? ( dev-util/nvidia-cuda-toolkit:= ) ffmpeg? ( media-video/ffmpeg:= ) hip? ( sci-libs/hipBLAS:= ) opencl? ( sci-libs/clblast:= ) sdl2? ( media-libs/libsdl2:= ) vulkan? ( dev-util/vulkan-headers )
+BDEPEND=vulkan? ( media-libs/shaderc ) app-alternatives/ninja >=dev-build/cmake-3.28.5 >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile configure install prepare pretend setup test unpack
+DEPEND=openblas? ( sci-libs/openblas:= ) openmp? ( llvm-runtimes/openmp:= ) blis? ( sci-libs/blis:= ) flexiblas? ( sci-libs/flexiblas:= ) rocm? ( >=dev-util/hip-6.1:= >=sci-libs/hipBLAS-6.1:= ) cuda? ( dev-util/nvidia-cuda-toolkit:= ) ffmpeg? ( media-video/ffmpeg:= ) sdl2? ( >=sci-misc/llama-cpp-0.3.0:= media-libs/libsdl2:= ) opencl? ( dev-util/opencl-headers ) vulkan? ( dev-util/spirv-headers dev-util/vulkan-headers )
 DESCRIPTION=Port of OpenAI's Whisper model in C/C++
 EAPI=8
 HOMEPAGE=https://github.com/ggml-org/whisper.cpp
-INHERIT=cmake git-r3
-IUSE=blas cuda ffmpeg hip opencl sdl2 vulkan
+INHERIT=cmake cuda rocm linux-info toolchain-funcs git-r3
+IUSE=cpu_flags_x86_amx_bf16 cpu_flags_x86_amx_int8 cpu_flags_x86_amx_tile cpu_flags_x86_avx cpu_flags_x86_avx2 cpu_flags_x86_avx512_bf16 cpu_flags_x86_avx512_vnni cpu_flags_x86_avx512f cpu_flags_x86_avx512vbmi cpu_flags_x86_avx_vnni cpu_flags_x86_bmi2 cpu_flags_x86_f16c cpu_flags_x86_fma3 cpu_flags_x86_sse4_2 blis cuda flexiblas openblas opencl +openmp rocm vulkan ffmpeg sdl2 test +amdgpu_targets_gfx908 +amdgpu_targets_gfx90a +amdgpu_targets_gfx942 +amdgpu_targets_gfx1030 +amdgpu_targets_gfx1100 +amdgpu_targets_gfx1101 +amdgpu_targets_gfx1200 +amdgpu_targets_gfx1201 amdgpu_targets_gfx803 amdgpu_targets_gfx900 amdgpu_targets_gfx906 amdgpu_targets_gfx940 amdgpu_targets_gfx941 amdgpu_targets_gfx1010 amdgpu_targets_gfx1011 amdgpu_targets_gfx1012 amdgpu_targets_gfx1031 amdgpu_targets_gfx1102 amdgpu_targets_gfx1103 amdgpu_targets_gfx1150 amdgpu_targets_gfx1151
 LICENSE=MIT
 PROPERTIES=live
-RDEPEND=blas? ( sci-libs/openblas ) cuda? ( dev-util/nvidia-cuda-toolkit:= ) ffmpeg? ( media-video/ffmpeg:= ) hip? ( sci-libs/hipBLAS:= ) opencl? ( sci-libs/clblast:= ) sdl2? ( media-libs/libsdl2:= ) vulkan? ( media-libs/vulkan-loader )
+RDEPEND=openblas? ( sci-libs/openblas:= ) openmp? ( llvm-runtimes/openmp:= ) blis? ( sci-libs/blis:= ) flexiblas? ( sci-libs/flexiblas:= ) rocm? ( >=dev-util/hip-6.1:= >=sci-libs/hipBLAS-6.1:= ) cuda? ( dev-util/nvidia-cuda-toolkit:= ) ffmpeg? ( media-video/ffmpeg:= ) sdl2? ( >=sci-misc/llama-cpp-0.3.0:= media-libs/libsdl2:= ) opencl? ( dev-libs/opencl-icd-loader ) vulkan? ( media-libs/vulkan-loader )
+REQUIRED_USE=?? ( openblas blis flexiblas ) rocm? ( || ( amdgpu_targets_gfx908 amdgpu_targets_gfx90a amdgpu_targets_gfx942 amdgpu_targets_gfx1030 amdgpu_targets_gfx1100 amdgpu_targets_gfx1101 amdgpu_targets_gfx1200 amdgpu_targets_gfx1201 amdgpu_targets_gfx803 amdgpu_targets_gfx900 amdgpu_targets_gfx906 amdgpu_targets_gfx940 amdgpu_targets_gfx941 amdgpu_targets_gfx1010 amdgpu_targets_gfx1011 amdgpu_targets_gfx1012 amdgpu_targets_gfx1031 amdgpu_targets_gfx1102 amdgpu_targets_gfx1103 amdgpu_targets_gfx1150 amdgpu_targets_gfx1151 ) )
+RESTRICT=!test? ( test )
 SLOT=0
-_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	3530055400d05e64deaba3042af30af6	git-r3	e6c2f983e006e805160436c75a0c1562
-_md5_=9b7a47f1f9a92a78ceecd3d4848e7832
+SRC_URI=test? ( https://huggingface.co/ggerganov/whisper.cpp/resolve/80da2d8bfee42b0e836fc3a9890373e5defc00a6/ggml-base.en.bin -> ggerganov_models_whisper.cpp_ggml-base.en-80da2d8bfee42b0e836fc3a9890373e5defc00a6.bin )
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	3530055400d05e64deaba3042af30af6	cuda	8b660e223a1695e3884ee4c7dc2c5059	rocm	b406b041c5b107f8d8600865210e24e2	linux-info	efd923656513c879204fec6638eadee5	git-r3	e6c2f983e006e805160436c75a0c1562
+_md5_=db10098744f64218457ad3287d8380ea

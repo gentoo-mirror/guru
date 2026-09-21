@@ -7,7 +7,12 @@ acct-user/forgejo-runner:lxc - Have forgejo-runner use app-containers/lxc
 acct-user/forgejo-runner:podman - Have forgejo-runner use app-containers/podman
 app-accessibility/rhvoice:redistributable - Install also non-free (but redistributable) voices
 app-accessibility/rhvoice-core:speech-dispatcher - Build a speech-dispatcher middleware module
+app-accessibility/whisper-cpp:blis - Build a BLIS backend
+app-accessibility/whisper-cpp:flexiblas - Build a FlexiBLAS backend
 app-accessibility/whisper-cpp:hip - Build a HIP (ROCm) backend
+app-accessibility/whisper-cpp:openblas - Build an OpenBLAS backend
+app-accessibility/whisper-cpp:opencl - Build an OpenCL backend, so far only works on Adreno and Intel GPUs
+app-accessibility/whisper-cpp:rocm - Build a HIP (ROCm) backend
 app-accessibility/whisper-cpp:sdl2 - Build and install example applications that use media-libs/libsdl2
 app-admin/ananicy-cpp:bpf - Use eBPF for processing
 app-admin/ananicy-cpp:clang - Use Clang compiler instead of GCC
@@ -622,6 +627,8 @@ media-gfx/czkawka:krokiet - Krokiet is the new Czkawka frontend written in Slint
 media-gfx/glslViewer:ffmpeg - Enable ffmpeg/libav-based audio/video codec support
 media-gfx/glslViewer:xvfb - Enable support for thumbnail creation via Xvfb
 media-gfx/nsxiv:statusbar - Add statusbar support
+media-gfx/slic3r:gui - Build with GUI.
+media-gfx/slic3r:xs - Build with XS only.
 media-gfx/swayimg:drm - Enable support for Direct Rendering Manager (DRM UI)
 media-gfx/swayimg:exr - Enable support for EXR image format
 media-gfx/swayimg:ffmpeg - Enable support for video storyboard using media-video/ffmpeg
@@ -689,6 +696,13 @@ media-sound/jacktrip:rtaudio - Enable rtaudio backend
 media-sound/jacktrip:virtualstudio - Enable VirtualStudio extension
 media-sound/libcava:pipewire - Enables support for PipeWire
 media-sound/libcava:sndio - Enable support for the media-sound/sndio backend
+media-sound/librespot:alsa - Enable alsa backend feature.
+media-sound/librespot:gstreamer - Enable gstreamer backend feature.
+media-sound/librespot:jack - Enable jack backend feature.
+media-sound/librespot:portaudio - Enable portaudio backend feature.
+media-sound/librespot:rodio - Enable rodio backend feature.
+media-sound/librespot:rodio-jack - Enable rodiojack backend feature.
+media-sound/librespot:sdl - Enable sdl backend feature.
 media-sound/lms:jukebox - Support playback in server's hardware
 media-sound/lms:stb - Use dev-libs/stb graphic library instead of media-gfx/graphicsmagick
 media-sound/musikcube:alsa - Build plugin for alsa-out.
@@ -926,14 +940,12 @@ sci-misc/llama-cpp:openblas - Build an OpenBLAS backend
 sci-misc/llama-cpp:opencl - Build an OpenCL backend, so far only works on Adreno and Intel GPUs
 sci-misc/llama-cpp:openssl - Use openssl to support HTTPS
 sci-misc/llama-cpp:rocm - Build a HIP (ROCm) backend
-sci-misc/llama-cpp:wmma - Use rocWMMA to enhance flash attention performance
 sci-misc/praat:pango - Without USE=gtk, build with minimal graphics support using x11-libs/pango
 sci-misc/stable-diffusion-cpp:blis - Build a BLIS backend
 sci-misc/stable-diffusion-cpp:flexiblas - Build a FlexiBLAS backend
 sci-misc/stable-diffusion-cpp:openblas - Build an OpenBLAS backend
 sci-misc/stable-diffusion-cpp:rocm - Build a HIP (ROCm) backend
 sci-misc/stable-diffusion-cpp:webm - Support the webm audiovisual media file format
-sci-misc/stable-diffusion-cpp:wmma - Use rocWMMA to enhance flash attention performance
 sci-ml/ollama:blis - Use sci-libs/blis as blas provider
 sci-ml/ollama:cuda - Enable NVIDIA CUDA support
 sci-ml/ollama:flexiblas - Use sci-libs/flexiblas as blas provider
@@ -966,9 +978,6 @@ sys-block/clonezilla:hfs - Support hfs by partclone
 sys-block/clonezilla:minix - Support minix by partclone
 sys-block/clonezilla:nilfs2 - Support nilfs2 by partclone
 sys-block/clonezilla:ntfs - Support ntfs by partclone
-sys-block/clonezilla:reiserfs - Support reiserfs by partclone
-sys-block/clonezilla:ufs - Support ufs by partclone
-sys-block/clonezilla:vmfs - Support vmfs by partclone
 sys-block/clonezilla:xfs - Support xfs by partclone
 sys-block/partclone:apfs - Compile partclone apfs tool
 sys-block/partclone:btrfs - Compile partclone btrfs tool
