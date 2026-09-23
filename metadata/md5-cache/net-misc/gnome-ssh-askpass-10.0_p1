@@ -1,4 +1,4 @@
-BDEPEND=virtual/pkgconfig verify-sig? ( sec-keys/openpgp-keys-openssh ) verify-sig? ( || ( app-alternatives/gpg app-crypt/gnupg[-alternatives(-)] ) >=app-portage/gemato-20 )
+BDEPEND=virtual/pkgconfig verify-sig? ( sec-keys/openpgp-keys-openssh ) verify-sig? ( || ( app-alternatives/gpg app-crypt/gnupg[-alternatives(-)] ) >=app-portage/gemato-20.15 )
 DEFINED_PHASES=compile configure install prepare unpack
 DEPEND=app-accessibility/at-spi2-core media-libs/harfbuzz x11-libs/cairo x11-libs/gdk-pixbuf x11-libs/libX11 x11-libs/pango dev-libs/glib:2 x11-libs/gtk+:3
 DESCRIPTION=GTK-based passphrase dialog for use with OpenSSH
@@ -12,5 +12,5 @@ RDEPEND=app-accessibility/at-spi2-core media-libs/harfbuzz x11-libs/cairo x11-li
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://openbsd/OpenSSH/portable/openssh-10.0p1.tar.gz verify-sig? ( mirror://openbsd/OpenSSH/portable/openssh-10.0p1.tar.gz.asc )
-_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	verify-sig	ece4c893b6bd62eacbc4d25958e857f8
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	verify-sig	f0b3a8c93ad67e5137bbf53281fed014
 _md5_=804c3ed070a96575eda9867b2c84ea7c
