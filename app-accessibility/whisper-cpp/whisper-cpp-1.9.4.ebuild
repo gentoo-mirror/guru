@@ -138,6 +138,8 @@ src_configure() {
 	# GGML backends
 	mycmakeargs+=(
 		-DGGML_NATIVE=OFF	# don't set march
+		-DGGML_CCACHE=OFF
+		-DGGML_LTO="$(tc-is-lto)"
 
 		# CPU Flags
 		-DGGML_SSE42=$(usex cpu_flags_x86_sse4_2)
@@ -188,8 +190,7 @@ src_configure() {
 	fi
 
 	if use rocm; then
-		# See ${S}/docs/build.md#hip
-		export HIPCXX="$(hipconfig -l)/clang" HIP_PATH="$(hipconfig -p)"
+		rocm_use_hipcc
 		mycmakeargs+=(
 			-DGGML_HIP=ON
 			-DGPU_TARGETS=$(get_amdgpu_flags)
