@@ -1,0 +1,17 @@
+BDEPEND=llvm_slot_19? ( llvm-core/clang:19= ) llvm_slot_20? ( llvm-core/clang:20= ) llvm_slot_21? ( llvm-core/clang:21= ) llvm_slot_22? ( llvm-core/clang:22= ) llvm_slot_19? ( || ( dev-lang/rust-bin:1.86.0[llvm_slot_19] dev-lang/rust:1.86.0[llvm_slot_19] dev-lang/rust-bin:1.85.1[llvm_slot_19] dev-lang/rust:1.85.1[llvm_slot_19] dev-lang/rust-bin:1.85.0[llvm_slot_19] dev-lang/rust:1.85.0[llvm_slot_19] ) ) llvm_slot_20? ( || ( dev-lang/rust-bin:1.90.0[llvm_slot_20] dev-lang/rust:1.90.0[llvm_slot_20] dev-lang/rust-bin:1.89.0[llvm_slot_20] dev-lang/rust:1.89.0[llvm_slot_20] dev-lang/rust-bin:1.88.0[llvm_slot_20] dev-lang/rust:1.88.0[llvm_slot_20] dev-lang/rust-bin:1.87.0[llvm_slot_20] dev-lang/rust:1.87.0[llvm_slot_20] ) ) llvm_slot_21? ( || ( dev-lang/rust-bin:1.94.1[llvm_slot_21] dev-lang/rust:1.94.1[llvm_slot_21] dev-lang/rust-bin:1.94.0[llvm_slot_21] dev-lang/rust:1.94.0[llvm_slot_21] dev-lang/rust-bin:1.93.1[llvm_slot_21] dev-lang/rust:1.93.1[llvm_slot_21] dev-lang/rust-bin:1.93.0[llvm_slot_21] dev-lang/rust:1.93.0[llvm_slot_21] dev-lang/rust-bin:1.92.0[llvm_slot_21] dev-lang/rust:1.92.0[llvm_slot_21] dev-lang/rust-bin:1.91.0[llvm_slot_21] dev-lang/rust:1.91.0[llvm_slot_21] ) ) llvm_slot_22? ( || ( dev-lang/rust-bin:9999[llvm_slot_22] dev-lang/rust:9999[llvm_slot_22] dev-lang/rust-bin:1.98.1[llvm_slot_22] dev-lang/rust:1.98.1[llvm_slot_22] dev-lang/rust-bin:1.97.1[llvm_slot_22] dev-lang/rust:1.97.1[llvm_slot_22] dev-lang/rust-bin:1.96.1[llvm_slot_22] dev-lang/rust:1.96.1[llvm_slot_22] dev-lang/rust-bin:1.95.0[llvm_slot_22] dev-lang/rust:1.95.0[llvm_slot_22] ) )
+DEFINED_PHASES=compile configure install setup test unpack
+DEPEND=>=x11-base/xwayland-23.1 x11-libs/libxcb x11-libs/xcb-util-cursor
+DESCRIPTION=Xwayland outside your Wayland
+EAPI=8
+HOMEPAGE=https://github.com/Supreeeme/xwayland-satellite
+INHERIT=llvm-r1 cargo
+IUSE=systemd +llvm_slot_22 llvm_slot_19 llvm_slot_20 llvm_slot_21 debug
+KEYWORDS=~amd64
+LICENSE=MPL-2.0 Apache-2.0 BSD ISC MIT Unicode-DFS-2016 ZLIB
+RDEPEND=>=x11-base/xwayland-23.1 x11-libs/libxcb x11-libs/xcb-util-cursor
+REQUIRED_USE=^^ ( llvm_slot_19 llvm_slot_20 llvm_slot_21 llvm_slot_22 )
+RESTRICT=test
+SLOT=0
+SRC_URI=https://github.com/Supreeeme/xwayland-satellite/archive/refs/tags/v0.8.3.tar.gz -> xwayland-satellite-0.8.3.tar.gz https://github.com/gentoo-crate-dist/xwayland-satellite/releases/download/v0.8.3/xwayland-satellite-0.8.3-crates.tar.xz
+_eclasses_=llvm-utils	e7edb4086e31c8537574b263d899f826	llvm-r1	e558c35fbd4579d7a50dc777145e3af5	toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	rust	71b6825bd86e342e1540c76cc6fe864b	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	bff30f59ca59b09857b787ac644b2e4c
+_md5_=8e603a5ef79b5ffefa7ed84f13d2e570

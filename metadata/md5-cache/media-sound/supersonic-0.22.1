@@ -1,0 +1,15 @@
+BDEPEND=>=dev-lang/go-1.24.11:= app-arch/unzip
+DEFINED_PHASES=compile install postinst postrm preinst test unpack
+DEPEND=media-libs/glfw media-libs/libglvnd media-video/mpv[libmpv] x11-libs/libX11 x11-libs/libXcursor x11-libs/libXi x11-libs/libXinerama
+DESCRIPTION=A lightweight and full-featured cross-platform desktop client
+EAPI=8
+HOMEPAGE=https://github.com/dweymouth/supersonic
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=desktop go-module xdg
+KEYWORDS=~amd64
+LICENSE=GPL-3
+RDEPEND=media-libs/glfw media-libs/libglvnd media-video/mpv[libmpv] x11-libs/libX11 x11-libs/libXcursor x11-libs/libXi x11-libs/libXinerama
+SLOT=0
+SRC_URI=https://github.com/dweymouth/supersonic/archive/refs/tags/v0.22.1.tar.gz -> supersonic-0.22.1.tar.gz https://github.com/gentoo-golang-dist/supersonic/releases/download/v0.22.1/supersonic-0.22.1-vendor.tar.xz
+_eclasses_=desktop	e447b5f77146d69797e9f03ff177f3f1	toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	sysroot	4c36abaf94ebd3ab32f8abea9a444121	go-env	fca4e820393c2eac25a944be8bdf6a3a	go-module	3d4b6f3f29b3ebdeb708785b3cb1743b	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575
+_md5_=2a041a59f15ca9f4ee513d89ced6b8e0

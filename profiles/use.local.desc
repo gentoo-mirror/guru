@@ -488,6 +488,7 @@ gui-apps/xremap:pantheon - build client for Pantheon Wayland (aka Secure)
 gui-apps/xremap:socket - build client for Variant for system service
 gui-apps/xremap:wlroots - build client for Sway, Wayfire, etc.
 gui-apps/xremap:x11 - build client for X11
+gui-apps/xwayland-satellite:systemd - Send a state change notification when Xwayland has been initialized, allowing for services to depend on satellite's startup
 gui-apps/yambar:alsa - ALSA support
 gui-apps/yambar:backlight - Backlight support
 gui-apps/yambar:battery - Battery support
@@ -678,6 +679,22 @@ media-plugins/gimp-resynthesizer:deep-progress - Enable detailed progress report
 media-plugins/gimp-resynthesizer:glib - Use GLib library for platform independence instead of direct system calls
 media-plugins/gimp-resynthesizer:threads - Enable threading support for approximately 2x performance speedup. Thread limit is hardcoded to 12
 media-plugins/gimp-resynthesizer:translations - Install translation files
+media-plugins/gst-plugins-rs:analytics - Build with analytics plugin.
+media-plugins/gst-plugins-rs:audiofx - Build with audiofx plugin.
+media-plugins/gst-plugins-rs:cdg - Build with cdg plugin.
+media-plugins/gst-plugins-rs:claxon - Build with claxon plugin.
+media-plugins/gst-plugins-rs:csound - Build with csound plugin.
+media-plugins/gst-plugins-rs:elevenlabs - Build with elevenlabs plugin.
+media-plugins/gst-plugins-rs:ffv1 - Build with ffv1 plugin.
+media-plugins/gst-plugins-rs:gif - Build with gif plugin.
+media-plugins/gst-plugins-rs:gtk4 - Build with gtk4 plugin.
+media-plugins/gst-plugins-rs:hsv - Build with hsv plugin.
+media-plugins/gst-plugins-rs:lewton - Build with lewton plugin.
+media-plugins/gst-plugins-rs:skia - Build with skia plugin.
+media-plugins/gst-plugins-rs:speechmatics - Build with speechmatics plugin.
+media-plugins/gst-plugins-rs:spotify - Build with spotify plugin.
+media-plugins/gst-plugins-rs:videofx - Build with videofx plugin.
+media-plugins/gst-plugins-rs:webp - Build with webp plugin.
 media-sound/drumgizmo:cli - Build stand-alone CLI application
 media-sound/drumgizmo:jack - Enable jack output and jackmidi input (CLI only)
 media-sound/drumgizmo:lv2 - Build LV2 plugin
