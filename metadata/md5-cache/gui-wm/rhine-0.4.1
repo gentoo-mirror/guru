@@ -1,0 +1,15 @@
+BDEPEND=>=gui-wm/river-0.4.0 dev-libs/wayland-protocols x11-libs/libxkbcommon || ( dev-lang/zig:0.16 dev-lang/zig-bin:0.16 ) virtual/pkgconfig
+DEFINED_PHASES=compile configure install prepare setup test unpack
+DEPEND=dev-libs/wayland dbus? ( sys-apps/dbus )
+DESCRIPTION=A powerful tiling window manager for river implementing multiple layout options
+EAPI=8
+HOMEPAGE=https://codeberg.org/Sivecano/rhine
+INHERIT=zig
+IUSE=+dbus
+KEYWORDS=~amd64
+LICENSE=AGPL-3
+RDEPEND=dev-libs/wayland dbus? ( sys-apps/dbus )
+SLOT=0
+SRC_URI=https://codeberg.org/Sivecano/rhine/archive/0.4.1.tar.gz -> rhine-0.4.1.tar.gz https://codeberg.org/Sivecano/libtributary/archive/0.5.0.tar.gz -> tributary-0.4.1-tqCfWzbUAACWcbClrEM-xQIfPNogwri6nGNyWrt123vK.tar.gz https://codeberg.org/Games-by-Mason/mr_tween/archive/v0.1.0.tar.gz -> mr_tween-0.1.0-WbH78YcBAQD3RF4QfCYFF6EJCYzAzdIU4BHCj0pFI5yq.tar.gz https://codeberg.org/ifreund/zig-wayland/archive/v0.6.0.tar.gz -> wayland-0.6.0-lQa1kqz8AQADQmdNJsNhLoNHcnEGEUjrOaPV-dtEnEmX.tar.gz
+_eclasses_=multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	edob	357e125b8c5cad0deccb625e537ea831	edo	e472083829a6e7ff43a197cf536728a2	toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	linux-info	efd923656513c879204fec6638eadee5	zig-utils	cf2ce10a519a93e5074f21f58d06aaae	zig	fd63b54c5a3cec5302ed2c18a763a851
+_md5_=c76ca8e559f410ab48947b31f67c623c

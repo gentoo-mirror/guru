@@ -220,7 +220,7 @@ app-doc/stdman 2022.07.30 2024.07.05 9999: Formatted C++ stdlib man pages (cppre
 app-doc/sway-wiki 9999: Wiki of gui-wm/sway, rendered to HTML using kramdown-parser-gfm
 app-editors/edit 1.2.0: Microsoft edit
 app-editors/emacs-lsp-booster 0.2.1: Emacs LSP performance booster
-app-editors/fresh 0.4.10 0.5.0 0.5.1: Terminal based IDE & text editor: easy, powerful and fast
+app-editors/fresh 0.4.10 0.5.0 0.5.1 0.5.2: Terminal based IDE & text editor: easy, powerful and fast
 app-editors/imhex 1.38.1: A hex editor for reverse engineers, programmers, and eyesight
 app-editors/janus 0.9.8: Simple native GTK text editor with binary editing fallback
 app-editors/kakoune-lsp 18.1.0 21.0.0: Kakoune Language Server Protocol Client
@@ -344,7 +344,7 @@ app-misc/onefetch 2.26.1: Command-line Git information tool
 app-misc/opentrack 2026.1.0_p20260208 9999: Head tracking software for MS Windows, Linux, and Apple OSX
 app-misc/pastel 0.12.0-r1 9999: A command-line tool to generate, analyze, convert and manipulate colors
 app-misc/pfetch 1.9.4 1.10.0 1.11.0 9999: A pretty system information tool written in POSIX sh
-app-misc/pfetch-rs 2.11.1 3.0.0: A rewrite of the pfetch system information tool
+app-misc/pfetch-rs 2.11.1 3.0.0 3.0.1: A rewrite of the pfetch system information tool
 app-misc/pipes-rs 1.6.4: An over-engineered rewrite of pipes.sh in Rust
 app-misc/powerpanel 1.4.1-r1: PowerPanel software for CyberPower UPS systems
 app-misc/proctl 1.5 9999: small C program that can control processes
@@ -408,7 +408,7 @@ app-portage/pupgrade 0.4.3 0.4.4 0.5.1: TUI and CLI wrappers for Gentoo system u
 app-portage/quantum-resolver 9999: A WIP portage dependency resolver
 app-portage/showbuild 0.9.1-r2: Script to follow log of running portage builds
 app-portage/zig-ebuilder 9999: Semi-automatic generator for Zig ebuilds
-app-shells/carapace 1.7.0 1.7.1 1.7.3: Multi-shell multi-command argument completer
+app-shells/carapace 1.7.1 1.7.3 1.8.0: Multi-shell multi-command argument completer
 app-shells/direnv 2.36.0 2.37.1 9999: Environment variable manager for shell
 app-shells/elvish 0.19.2 0.20.1 0.21.0: Expressive programming language and a versatile interactive shell
 app-shells/fre 0.4.1: A command line frecency tracking tool
@@ -1008,7 +1008,7 @@ dev-python/pynput 1.8.2: Sends virtual input commands
 dev-python/pypandoc 1.17: Pypandoc provides a thin wrapper for pandoc, a universal document converter
 dev-python/pyproject2ebuild 0.0.3: Convert pyproject.toml to Gentoo ebuilds automatically.
 dev-python/pyqtdarktheme 2.1.0: A flat dark theme for PySide and PyQt.
-dev-python/pyrefly 1.1.1 1.2.0 1.3.0 1.3.1: A fast type checker and language server for Python with powerful IDE features
+dev-python/pyrefly 1.1.1 1.2.0 1.3.0 1.3.1 1.3.2: A fast type checker and language server for Python with powerful IDE features
 dev-python/pyright 1.1.414: Static type checker for Python
 dev-python/pyrime 0.0.7: rime for python
 dev-python/pyroaring 1.1.0: Python wrapper for the C library CRoaring
@@ -1184,8 +1184,8 @@ dev-util/gersemi 0.27.7 0.28.0: A formatter to make your CMake code the real tre
 dev-util/git-pages-cli 1.10.1: Command-line application for publishing sites to git-pages
 dev-util/gitlab-ci-local-bin 4.43.0 4.47.0 4.56.0: Run gitlab pipelines locally as shell executor or docker executor
 dev-util/go-task 3.52.0 3.53.1: A task runner / simpler Make alternative written in Go
-dev-util/google-antigravity 2.15.1 2.16.0 2.17.0: Google Antigravity 2.0, a dedicated platform to work with agents
-dev-util/google-antigravity-cli 1.1.28 1.2.11 1.2.12: Command-line interface for Google's Antigravity agentic development platform
+dev-util/google-antigravity 2.16.0 2.17.0 2.18.1: Google Antigravity 2.0, a dedicated platform to work with agents
+dev-util/google-antigravity-cli 1.1.28 1.2.12 1.2.13: Command-line interface for Google's Antigravity agentic development platform
 dev-util/google-antigravity-ide 2.0.4 2.1.1 2.5.5: Google Antigravity's Editor view with context-aware agent
 dev-util/grok-build 1.0.38 1.0.41: SpaceXAI's coding agent harness and TUI
 dev-util/gshards 0.2 0.2-r1: Small helper tools to aid installing Crystal packages in Gentoo
@@ -1365,7 +1365,7 @@ games-util/rusty-path-of-building 0.2.18: Cross-platform runtime for Path of Bui
 games-util/sdl2-gamepad-mapper 0.0.8-r1: GUI application to generate an SDL2 mapping string from a generic controller
 games-util/steamtinkerlaunch 12.12 9999: Wrapper script for Steam custom launch options
 games-util/umu-launcher 1.4.4: Unified launcher for Windows games on Linux
-games-util/xivlauncher 1.3.1: Custom Launcher for Final Fantasy XIV Online (Crossplatform rewrite)
+games-util/xivlauncher 1.4.0: Custom Launcher for Final Fantasy XIV Online (Crossplatform rewrite)
 games-util/xone 0.5.8: Linux kernel driver for Xbox One and Xbox Series X|S accessories
 gnome-extra/Refine 0.7.1 0.8.0-r2: Tweak various aspects of GNOME
 gnome-extra/commit 4.1-r1 4.2 4.3: Commit message editor
@@ -1392,7 +1392,7 @@ gui-apps/clipman 1.6.5-r2 1.7.0: A basic clipboard manager for Wayland
 gui-apps/contour 0.6.1.7494: Modern C++ Terminal Emulator
 gui-apps/coreaction 5.0.1: A side bar for showing widgets for C Suite
 gui-apps/corearchiver 5.0.1: Archiver for C Suite, to create and extract archives
-gui-apps/corefm 5.0.1: A lightweight file-manager for C Suite
+gui-apps/corefm 5.0.1-r1: A lightweight file-manager for C Suite
 gui-apps/coregarage 5.0.1: A settings manager for C Suite
 gui-apps/corehunt 5.0.1: A file finder utility for C Suite
 gui-apps/coreimage 5.0.1: Image viewer for C Suite
@@ -1525,10 +1525,11 @@ gui-wm/beansprout 1.1.1 9999: A tiling window manager for the river Wayland comp
 gui-wm/cage 0.2.1 0.3.0 0.3.1 9999: A Wayland kiosk
 gui-wm/canoe 0.5.1: Canoe, a River window manager implementation in Rust
 gui-wm/kwm 0.3.0 9999: A window manager based on River Wayland compositor
-gui-wm/mangowm 0.16.3 0.17.0 0.17.1 0.17.2 0.17.3 9999: A fast, feature-rich Wayland compositor built on dwl
+gui-wm/mangowm 0.17.2 0.17.3 0.17.4 9999: A fast, feature-rich Wayland compositor built on dwl
 gui-wm/miracle-wm 0.10.1: Tiling Wayland compositor based on Mir
 gui-wm/niri 26.04 9999: Scrollable-tiling Wayland compositor
 gui-wm/phoc 0.50.0 0.52.0 0.53.0: Wayland compositor for mobile phones
+gui-wm/rhine 0.4.1 9999: A powerful tiling window manager for river implementing multiple layout options
 gui-wm/river 0.3.17 0.3.9999 0.4.8 9999: A dynamic tiling Wayland compositor
 gui-wm/swayfx 0.5.3 0.6: SwayFX: Sway, but with eye candy!
 gui-wm/umbriel 0.0.0_pre20260924 0.0.0_pre99999999: An independent compositor made by noctalia
@@ -1603,7 +1604,7 @@ media-gfx/pdf4qt 1.5.3.1 1.6.0.0 9999: Open source PDF WYSIWYG editor based on Q
 media-gfx/qview 6.1-r1: Practical and minimal image viewer
 media-gfx/sic 0.22.4: Accessible image processing and conversion from the terminal tool.
 media-gfx/silicon 0.5.2-r1 0.5.2-r2 0.5.3: Create beautiful image of your code
-media-gfx/slic3r 1.3.0-r2 9999-r2: Open Source toolpath generator for 3D printers
+media-gfx/slic3r 1.3.0 9999: Open Source toolpath generator for 3D printers
 media-gfx/superpaper 2.2.1: Advanced multi monitor wallpaper manager
 media-gfx/svgcleaner 0.9.5: svgcleaner could help you to clean up your SVG files from the unnecessary data.
 media-gfx/swayimg 4.7 5.4 5.5 5.6: Lightweight image viewer for Wayland display servers
@@ -1807,6 +1808,7 @@ net-im/equibop-bin 3.2.2 3.3.0 3.3.1: Equibop is a customizable and privacy frie
 net-im/eturnal 1.12.1 1.12.2: STUN/TURN server
 net-im/flare 0.12.0-r1: Chat with your friends on Signal
 net-im/fluffychat-bin 2.9.5: The cutest instant messenger in the [matrix]
+net-im/fluxer-canary-bin 2026.927.142044: Open source voice and text chat client
 net-im/forkgram 6.5.1: Fork of the official Telegram Desktop app with small useful additions
 net-im/forkgram-bin 6.6.2: Fork of official Telegram Desktop app with small useful additions - bin
 net-im/gajim-plugins 9999: Plugins developed for Gajim XMPP client
@@ -1866,7 +1868,7 @@ net-libs/yder 1.4.20-r1: Logging library for C applications
 net-mail/dovecot-fts-flatcurve 1.0.5: Dovecot FTS plugin to enable message indexing using Xapian
 net-mail/dovecot-fts-xapian 1.9.3 9999: Dovecot FTS plugin backed by Xapian
 net-mail/goimapnotify 2.5.5 2.5.6 2.5.6-r1 2.5.7 2.5.8 9999: Execute scripts on IMAP mailbox changes using IDLE, golang version
-net-mail/hydroxide 0.2.28 0.2.29 0.2.31 9999: A third-party, open-source ProtonMail CardDAV, IMAP and SMTP bridge
+net-mail/hydroxide 0.2.31 0.2.32 9999: A third-party, open-source ProtonMail CardDAV, IMAP and SMTP bridge
 net-mail/pop 0.2.0: Send emails from your terminal
 net-misc/FORT-validator 1.5.4-r2 1.6.1-r2 1.6.2-r2: FORT validator is an open source RPKI validator
 net-misc/brickd 2.4.7 2.4.8: Network Daemon bridging API bindings to Tinkerforge hardware bricks
@@ -1970,7 +1972,7 @@ net-voip/re 4.10.0 4.11.0: Generic library for real-time communications with asy
 net-voip/vvmd 0.8-r1: vvmd is a lower level daemon that retrieves Visual Voicemail
 net-vpn/GlobalProtect-openconnect 2.4.4-r1: Unofficial GlobalProtect VPN client for Linux
 net-vpn/amneziawg-modules 3.0.20260805 3.1.20260812: AmneziaWG Linux kernel module
-net-vpn/amneziawg-tools 3.0.20260805-r1 3.1.20260812: Required tools for AmneziaWG, such as awg(8) and awg-quick(8)
+net-vpn/amneziawg-tools 3.0.20260805-r1 3.1.20260812 3.1.20260812-r1: Required tools for AmneziaWG, such as awg(8) and awg-quick(8)
 net-vpn/fastd 22 23: A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
 net-vpn/gp-saml-gui 9999: Interactively authenticate to GlobalProtect VPNs that require SAML
 net-vpn/mullvadvpn-app 2026.5: Tool used to manage daemon setup
@@ -2237,8 +2239,8 @@ www-apps/zola 0.22.1-r2 0.22.1-r3 0.22.1-r5: A fast static site generator with e
 www-client/badwolf 1.4.0-r2 9999-r1: Minimalist and privacy-oriented WebKitGTK+ browser
 www-client/browsh 1.8.2 1.8.3: A fully-modern text-based browser, rendering to TTY and browsers
 www-client/chawan 0.4.3 0.4.4 9999: TUI web browser; supports CSS, images, JavaScript, and multiple web protocols
-www-client/helium-bin 0.15.5.1 0.16.2.1 0.17.2.1: Private, fast, and honest web browser based on Chromium
-www-client/mullvad-browser 140.13.0-r1 153.2.1 153.3.2: The Mullvad Browser is developed to minimize tracking and fingerprinting
+www-client/helium-bin 0.16.2.1 0.17.2.1 0.18.1.1: Private, fast, and honest web browser based on Chromium
+www-client/mullvad-browser 140.13.0-r1 153.3.2-r1: The Mullvad Browser is developed to minimize tracking and fingerprinting
 www-client/mullvad-browser-bin 15.0.21 15.0.23: The Mullvad Browser is developed to minimize tracking and fingerprinting
 www-client/nyxt 3.11.8 3.12.0 9999: Nyxt - the hacker's power-browser
 www-client/torbrowser-launcher 0.3.9: A program to help you securely download and run Tor Browser
