@@ -1,0 +1,15 @@
+BDEPEND=virtual/pkgconfig
+DEFINED_PHASES=compile configure install
+DEPEND=dev-libs/libretls:= virtual/libcrypt:= palaver? ( dev-db/sqlite:3 net-misc/curl )
+DESCRIPTION=Multi-client, TLS-only IRC bouncer
+EAPI=8
+HOMEPAGE=https://git.causal.agency/pounce/about/
+INHERIT=edo toolchain-funcs
+IUSE=palaver
+KEYWORDS=~amd64
+LICENSE=GPL-3
+RDEPEND=dev-libs/libretls:= virtual/libcrypt:= palaver? ( dev-db/sqlite:3 net-misc/curl ) acct-user/pounce
+SLOT=0
+SRC_URI=https://git.causal.agency/pounce/snapshot/pounce-3.1.tar.gz
+_eclasses_=edob	357e125b8c5cad0deccb625e537ea831	edo	e472083829a6e7ff43a197cf536728a2	toolchain-funcs	58a918e3a42d0156f010dcfd43725be5
+_md5_=10e80bc8c1e2ff9990b0ba5e1b2ec726

@@ -1,0 +1,15 @@
+BDEPEND=virtual/pkgconfig || ( >=dev-lang/rust-bin-1.88.0:* >=dev-lang/rust-1.88.0:* )
+DEFINED_PHASES=compile configure install postinst setup test unpack
+DEPEND=dev-libs/oniguruma:= media-libs/libwebp:=
+DESCRIPTION=A fast static site generator with everything built-in
+EAPI=8
+HOMEPAGE=https://www.getzola.org
+INHERIT=cargo shell-completion
+IUSE=cjk debug
+KEYWORDS=~amd64 ~arm64 ~ppc64 ~riscv
+LICENSE=EUPL-1.2 MIT Apache-2.0 BSD-2 BSD CC0-1.0 CDLA-Permissive-2.0 EUPL-1.2 ISC MIT MPL-2.0 UoI-NCSA Unicode-3.0 ZLIB || ( Apache-2.0-with-LLVM-exceptions Boost-1.0 )
+RDEPEND=dev-libs/oniguruma:= media-libs/libwebp:=
+SLOT=0
+SRC_URI=https://github.com/getzola/zola/archive/refs/tags/v0.23.6.tar.gz -> zola-0.23.6.gh.tar.gz https://envs.net/~zyx/files/distfiles/www-apps/zola/zola-0.23.6-vendor.tar.xz
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	rust	71b6825bd86e342e1540c76cc6fe864b	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	bff30f59ca59b09857b787ac644b2e4c	shell-completion	63a62de3ca49c798ee6e89f190e45d0e
+_md5_=f486589ea43e613e1c2ff38fadd82203

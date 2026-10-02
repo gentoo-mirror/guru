@@ -1,8 +1,8 @@
 BDEPEND=|| ( >=dev-lang/rust-bin-1.74.1:* >=dev-lang/rust-1.74.1:* ) >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install setup test unpack
-DESCRIPTION=A very fast implementation of tldr in Rust.
+DESCRIPTION=A very fast implementation of tldr in Rust
 EAPI=8
-HOMEPAGE=https://github.com/tldr-pages/tldr https://github.com/dbrgn/tealdeer
+HOMEPAGE=https://github.com/tldr-pages/tldr https://github.com/tealdeer-rs/tealdeer
 INHERIT=cargo flag-o-matic shell-completion git-r3
 IUSE=debug
 LICENSE=Apache-2.0 ISC MIT MPL-2.0 Apache-2.0 BSD CDLA-Permissive-2.0 ISC MIT Unicode-3.0 ZLIB
@@ -11,4 +11,4 @@ RDEPEND=!app-text/tldr
 RESTRICT=test
 SLOT=0
 _eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	rust	71b6825bd86e342e1540c76cc6fe864b	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	bff30f59ca59b09857b787ac644b2e4c	shell-completion	63a62de3ca49c798ee6e89f190e45d0e	git-r3	e6c2f983e006e805160436c75a0c1562
-_md5_=748051b7912826f06a0def295081f22d
+_md5_=205a90002b6816918d7f2138ba1881c2
