@@ -1,0 +1,16 @@
+BDEPEND=virtual/pkgconfig app-alternatives/ninja >=dev-build/cmake-3.28.5
+DEFINED_PHASES=compile configure install prepare setup test
+DEPEND=llvm_slot_19? ( llvm-core/clang:19= llvm-core/llvm:19= llvm-core/lld:19= ) llvm_slot_20? ( llvm-core/clang:20= llvm-core/llvm:20= llvm-core/lld:20= ) llvm_slot_21? ( llvm-core/clang:21= llvm-core/llvm:21= llvm-core/lld:21= ) llvm_slot_22? ( llvm-core/clang:22= llvm-core/llvm:22= llvm-core/lld:22= ) llvm_slot_23? ( llvm-core/clang:23= llvm-core/llvm:23= llvm-core/lld:23= ) llvm_slot_24? ( llvm-core/clang:24= llvm-core/llvm:24= llvm-core/lld:24= ) dev-libs/libffi virtual/zlib:= net-misc/curl
+DESCRIPTION=The C3 programming language compiler
+EAPI=8
+HOMEPAGE=https://c3-lang.org/
+INHERIT=cmake llvm-r2
+IUSE=+llvm_slot_22 llvm_slot_19 llvm_slot_20 llvm_slot_21 llvm_slot_23 llvm_slot_24
+KEYWORDS=~amd64
+LICENSE=LGPL-3 MIT
+RDEPEND=llvm_slot_19? ( llvm-core/clang:19= llvm-core/llvm:19= llvm-core/lld:19= ) llvm_slot_20? ( llvm-core/clang:20= llvm-core/llvm:20= llvm-core/lld:20= ) llvm_slot_21? ( llvm-core/clang:21= llvm-core/llvm:21= llvm-core/lld:21= ) llvm_slot_22? ( llvm-core/clang:22= llvm-core/llvm:22= llvm-core/lld:22= ) llvm_slot_23? ( llvm-core/clang:23= llvm-core/llvm:23= llvm-core/lld:23= ) llvm_slot_24? ( llvm-core/clang:24= llvm-core/llvm:24= llvm-core/lld:24= ) dev-libs/libffi virtual/zlib:= net-misc/curl
+REQUIRED_USE=^^ ( llvm_slot_19 llvm_slot_20 llvm_slot_21 llvm_slot_22 llvm_slot_23 llvm_slot_24 )
+SLOT=0
+SRC_URI=https://github.com/c3lang/c3c/archive/refs/tags/v0.8.4.tar.gz -> c3c-0.8.4.tar.gz
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	3530055400d05e64deaba3042af30af6	llvm-utils	e7edb4086e31c8537574b263d899f826	multilib	fc812e8eb2170022c28272d80a1f9e77	llvm-r2	56f5637f85225a4b5312d9055a7727d8
+_md5_=d8250ff3b64ec728aec40e873ec9b706

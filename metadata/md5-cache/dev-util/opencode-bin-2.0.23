@@ -1,0 +1,10 @@
+DEFINED_PHASES=install
+DESCRIPTION=The open source coding agent
+EAPI=8
+HOMEPAGE=https://opencode.ai
+KEYWORDS=~amd64 ~arm64
+LICENSE=MIT
+RESTRICT=mirror strip
+SLOT=0
+SRC_URI=amd64? ( https://registry.npmjs.org/@opencode/cli-linux-x64-baseline/-/cli-linux-x64-baseline-2.0.23.tgz -> opencode-bin-2.0.23-amd64.tar.gz ) arm64? ( https://registry.npmjs.org/@opencode/cli-linux-arm64/-/cli-linux-arm64-2.0.23.tgz -> opencode-bin-2.0.23-arm64.tar.gz )
+_md5_=6808ef101a634abdf7a52e6ab40654c2

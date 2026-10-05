@@ -296,7 +296,7 @@ app-misc/dbf 0.9.0: Command line tool to read the content of dBASE III, IV, and 
 app-misc/desec-dns 1.4.0 1.5.0: A simple deSEC.io API client
 app-misc/diff-so-fancy 1.4.4: Good-lookin' diffs. Actually... nah... The best-lookin' diffs
 app-misc/doublecmd 1.1.32 1.2.7 1.2.8: Cross Platform file manager
-app-misc/doublecmd-bin 1.1.32 1.2.5 1.2.6 1.2.7 1.2.8 9999: Double Commander: file manager with two panels, similar to Total Commander
+app-misc/doublecmd-bin 1.1.32 1.2.8 1.2.9 9999: Double Commander: file manager with two panels, similar to Total Commander
 app-misc/dpscreenocr 1.4.1: Program to recognize text on screen
 app-misc/dragon 1.2.0-r1: Simple drag-and-drop source/sink for X and Wayland
 app-misc/durdraw 0.29.0: Versatile ASCII and ANSI Art text editor for drawing
@@ -345,7 +345,7 @@ app-misc/onefetch 2.26.1: Command-line Git information tool
 app-misc/opentrack 2026.1.0_p20260208 9999: Head tracking software for MS Windows, Linux, and Apple OSX
 app-misc/pastel 0.12.0-r1 9999: A command-line tool to generate, analyze, convert and manipulate colors
 app-misc/pfetch 1.9.4 1.10.0 1.11.0 9999: A pretty system information tool written in POSIX sh
-app-misc/pfetch-rs 2.11.1 3.0.0 3.0.1: A rewrite of the pfetch system information tool
+app-misc/pfetch-rs 2.11.1 3.0.0 3.0.1 3.0.2: A rewrite of the pfetch system information tool
 app-misc/pipes-rs 1.6.4: An over-engineered rewrite of pipes.sh in Rust
 app-misc/powerpanel 1.4.1-r1: PowerPanel software for CyberPower UPS systems
 app-misc/proctl 1.5 9999: small C program that can control processes
@@ -437,7 +437,7 @@ app-text/dooit 3.3.4: A TUI todo manager
 app-text/epubgrep 0.6.2: Search tool for EPUB e-books
 app-text/ford 6.2.5 7.0.11-r1 7.0.12 7.0.13: FORD, automatic documentation generator for modern Fortran programs
 app-text/frog 1.6.0: Extract text from any image, video, QR Code and etc.
-app-text/harper 1.8.0: The language checker for developers.
+app-text/harper 2.12.0: The language checker for developers
 app-text/iwe 0.13.0 0.15.0: Markdown based personal knowledge management (PKM) system
 app-text/jrnl 4.2.1: Collect your thoughts and notes without leaving the command line
 app-text/komikku 1.103.0: Manga reader for GNOME
@@ -497,7 +497,7 @@ dev-build/buildstream 2.7.0: The software integration tool
 dev-build/buildstream-plugins 2.7.0: A collection of plugins for the BuildStream project
 dev-build/buildstream-plugins-community 2.3.1: A collection of community maintained plugins for the BuildStream project
 dev-build/cargo-make 0.37.24: Rust task runner and build tool
-dev-build/fobis 3.1.0 3.2.1: FoBiS.py, a Fortran Building System for poor men
+dev-build/fobis 3.1.0 3.2.1 3.9.0: FoBiS.py, a Fortran Building System for poor men
 dev-build/fpm 0.9.0 0.10.0 0.11.0 0.12.0: Fortran Package Manager (fpm)
 dev-build/fypp 3.2: Fypp - Python powered Fortran preprocessor
 dev-build/osc 1.27.1: Command Line Interface to work with an Open Build Service
@@ -623,7 +623,7 @@ dev-java/corretto-bin 8.462.08.1 11.0.28.6.1 17.0.16.8.1 21.0.8.9.1 25.0.0.36.2:
 dev-java/jdtls-bin 1.54.0_p202511211413 1.55.0_p202601060902 1.56.0_p202601201639: Java language server
 dev-java/microsoft-openjdk-bin 11.0.28 17.0.16 21.0.8 25.0.0: Prebuilt Java JDK binaries provided by Microsoft
 dev-lang/bun-bin 1.3.14: Fast all-in-one JavaScript runtime, bundler, transpiler, and package manager
-dev-lang/c3c 0.7.5: The C3 programming language compiler
+dev-lang/c3c 0.7.5 0.8.4: The C3 programming language compiler
 dev-lang/cc65 2.19-r3 9999-r1: Cross-development package for 65(C)02 systems
 dev-lang/crystal-bin 1.20.2 1.21.0: The Crystal Programming Language
 dev-lang/fbc 1.10.1: A free/open source, multi-platform BASIC compiler.
@@ -652,7 +652,7 @@ dev-libs/fortran-regex 1.1.2: Modern Fortran port of the tiny-regex-c library fo
 dev-libs/fortran-shlex 1.0.1 1.2.1 2.0.0 2.0.1: Modern Fortran port of the tiny-regex-c library for regular expressions
 dev-libs/fortran-stdlib 0.5.0 0.6.1 0.7.0 0.8.1 9999: A community driven standard library for (modern) Fortran
 dev-libs/frozen 1.2.0: A header-only, constexpr alternative to gperf for C++14 users
-dev-libs/ftl 1.0_p20230220: The Fortran Template Library (FTL) is a general purpose library for Fortran 2003
+dev-libs/ftl 1.0_p20260211: The Fortran Template Library (FTL) is a general purpose library for Fortran 2003
 dev-libs/gbinder 1.1.43 1.1.52 9999: GLib-style interface to binder
 dev-libs/gmobile 0.4.0 0.6.0: Mobile related helpers for glib based projects
 dev-libs/gpds 1.10.0: A general purpose data serializer
@@ -666,7 +666,6 @@ dev-libs/lexbor 3.0.1: Modular web engine (HTML/CSS parser, renderer, ...)
 dev-libs/libayatana-appindicator-glib 2.0.1 9999: Ayatana Application Indicators Shared Library (GLib-2.0 reimplementation)
 dev-libs/libchardet 1.0.6: Mozilla's Universal Charset Detector C/C++ API
 dev-libs/libcli 1.10.7: Shared C library to include Cisco-like CLI into other software
-dev-libs/libcsv 3.0.4_pre20240316: Fast and flexible CSV library that can read and write CSV data
 dev-libs/libdbf 0.0.1: Library to read the content of dBASE III, IV, and 5.0 files
 dev-libs/libglibutil 1.0.80 1.0.82 9999: Library of glib utilities from sailfishos project
 dev-libs/libpkgmanifest 0.5.9: Library for working with RPM manifests
@@ -687,7 +686,7 @@ dev-libs/nanopb 0.4.9.1 9999: plain-C Protocol Buffers for embedded/memory-const
 dev-libs/nativefiledialog-extended 1.2.1-r1 1.3.0: Cross platform native file dialog library with C and C++ bindings
 dev-libs/nihstro 0_pre20250505: 3DS shader assembler and disassembler
 dev-libs/oaknut 2.0.3: Yet another AArch64 emitter
-dev-libs/open62541 1.5.6: Open source C implementation of OPC UA
+dev-libs/open62541 1.5.8: Open source C implementation of OPC UA
 dev-libs/polyseed 2.0.0 9999: Mnemonic seed library for Monero and other CryptoNote-based currencies.
 dev-libs/qschematic 3.0.3 3.1.0: Library for creating flowcharts and engineering diagrams
 dev-libs/randomx 1.2.1-r1: Proof of work algorithm based on random code execution
@@ -959,7 +958,7 @@ dev-python/pem 23.1.0-r1: Easy PEM file parsing in Python
 dev-python/persist-queue 0.8.1 1.0.0 1.1.0: A thread-safe disk based persistent queue in Python
 dev-python/pfzy 0.3.4: Python port of the fzy fuzzy string matching algorithm
 dev-python/phx-class-registry 4.1.0-r1: An intersection of the Registry and Factory pattern
-dev-python/pillow-heif 1.4.0 1.5.0: Python interface for libheif library
+dev-python/pillow-heif 1.5.0 1.8.0: Python interface for libheif library
 dev-python/pillow-jxl-plugin 1.3.7 1.3.8: Pillow plugin for JPEG-XL, using Rust for bindings
 dev-python/pipdeptree 2.34.0: Utility for displaying installed packages in a dependency tree
 dev-python/pipenv 2026.6.1: Python Development Workflow for Humans
@@ -1187,7 +1186,7 @@ dev-util/git-pages-cli 1.10.1: Command-line application for publishing sites to 
 dev-util/gitlab-ci-local-bin 4.43.0 4.47.0 4.56.0: Run gitlab pipelines locally as shell executor or docker executor
 dev-util/go-task 3.52.0 3.53.1: A task runner / simpler Make alternative written in Go
 dev-util/google-antigravity 2.17.0 2.18.1 2.19.1: Google Antigravity 2.0, a dedicated platform to work with agents
-dev-util/google-antigravity-cli 1.1.28 1.2.14 1.2.15: Command-line interface for Google's Antigravity agentic development platform
+dev-util/google-antigravity-cli 1.1.28 1.2.15 1.2.16: Command-line interface for Google's Antigravity agentic development platform
 dev-util/google-antigravity-ide 2.0.4 2.1.1 2.5.5: Google Antigravity's Editor view with context-aware agent
 dev-util/grok-build 1.0.41 1.0.45: SpaceXAI's coding agent harness and TUI
 dev-util/gshards 0.2 0.2-r1: Small helper tools to aid installing Crystal packages in Gentoo
@@ -1207,7 +1206,7 @@ dev-util/lemminx-bin 0.27.0 0.27.1: XML Language Server
 dev-util/libtypec-utils 0.5.2: Library to interface with USB Type-C/Power Delivery devices
 dev-util/lottieconverter 0.2-r2 0.2-r3: Simple lottie (telegram animated sticker) converter
 dev-util/lua-language-server 3.18.1 3.18.2 3.19.0 3.19.1: Lua language server
-dev-util/measureme 12.0.3: Support crate for rustc's self-profiling feature
+dev-util/measureme 12.0.3-r1: Support crate for rustc's self-profiling feature
 dev-util/mh 1.4.1: Generate help for Makefile
 dev-util/minify 2.24.13 2.24.14 9999: Go minifier for web formats
 dev-util/mock 6.7: Simple chroot build environment manager for building RPMs
@@ -1217,8 +1216,8 @@ dev-util/nvchecker 2.21 2.22: New version checker for software releases
 dev-util/ocamlformat 0.26.2-r1 0.29.0: Auto-formatter for OCaml code
 dev-util/ocp-indent 1.8.2: Indentation tool for OCaml, to be used from editors like Emacs and Vim.
 dev-util/ols 2026.05 9999: Language server for Odin Programming language
-dev-util/opencode-bin 1.18.30 1.18.31 2.0.20 2.0.22: The open source coding agent
-dev-util/payload-dumper-go 2.0.2: an android OTA payload dumper written in Go
+dev-util/opencode-bin 1.18.31 1.18.34 2.0.20 2.0.22 2.0.23: The open source coding agent
+dev-util/payload-dumper-go 2.1.0: an android OTA payload dumper written in Go
 dev-util/pcpp 1.30: A C99 preprocessor written in pure Python
 dev-util/pifpaf 3.3.0: Suite of tools and fixtures to manage daemons for testing
 dev-util/pmbootstrap 3.10.3 3.11.1: Helper tool for developing and building postmarketOS
@@ -1328,7 +1327,7 @@ games-rpg/open-adventure 1.17 1.18 1.20: Forward-port of the Crowther/Woods Adve
 games-rpg/primordia 3.6.70667: A cyberpunk point-and-click adventure game
 games-rpg/snoot-game 1.12.0: Visual novel parody of Goodbye Volcano High
 games-server/among-sus 20210519: Among Us, but it's a text adventure
-games-simulation/kittenspaceagency-bin 2026.9.22-r5482: A space flight and rocketry simulation
+games-simulation/kittenspaceagency-bin 2026.10.7-r5541: A space flight and rocketry simulation
 games-simulation/youre-the-os 1.11.1: Game where you are a computer's OS and have to manage processes, memory and I/O
 games-strategy/7k-ambition 3.2.13 9999: Seven Kingdoms: Ambition
 games-strategy/gigalomania 1.0.1: Libre clone of Mega-Lo-Mania (original from ~1990), supports original resources
@@ -1446,7 +1445,6 @@ gui-apps/mpvpaper 1.8 9999: A video wallpaper program for wlroots based wayland 
 gui-apps/niri-sidebar 0.4.0: A lightweight, external sidebar manager for the Niri window manager.
 gui-apps/noctalia 5.0.1 5.1.0 5.2.0 5.2.1 9999: A lightweight Wayland shell and bar built directly on Wayland + OpenGL ES
 gui-apps/noctalia-greeter 1.2.1 1.3.0 1.3.1 1.5.0 1.6.0 9999: A minimal login greeter for greetd that matches Noctalia Shell
-gui-apps/noctalia-qs 0.0.11 0.0.12 9999: Toolkit for building desktop widgets using QtQuick
 gui-apps/nwg 0: meta package package for nwg-shell
 gui-apps/nwg-bar 0.1.5 0.1.6: GTK3-based button bar for wlroots-based compositors
 gui-apps/nwg-clipman 0.2.5 0.2.8: nwg-shell clipboard manager - a GTK3-based GUI for cliphist
@@ -1510,7 +1508,7 @@ gui-apps/wlsunset 0.4.0 9999: Day/night gamma adjustments for Wayland
 gui-apps/wob 0.15.1-r1 0.16: Lightweight overlay volume/backlight/progress/anything bar for Wayland
 gui-apps/wscreensaver 9999: Xscreensaver screensavers ported to wayland
 gui-apps/wtype 0.4: xdotool type for wayland
-gui-apps/xremap 0.15.12: Dynamic key remap for X and Wayland
+gui-apps/xremap 0.15.12 0.15.14: Dynamic key remap for X and Wayland
 gui-apps/xwayland-satellite 0.8 0.8.1 0.8.2 0.8.3 0.8.3-r1: Xwayland outside your Wayland
 gui-apps/yambar 1.11.0 9999: Simplistic and highly configurable status panel for X and Wayland
 gui-libs/gtk-session-lock 0.2.0-r6 9999: GTK-based lockscreen for Wayland
@@ -1534,7 +1532,7 @@ gui-wm/phoc 0.50.0 0.52.0 0.53.0: Wayland compositor for mobile phones
 gui-wm/rhine 0.4.1 9999: A powerful tiling window manager for river implementing multiple layout options
 gui-wm/river 0.3.17 0.3.9999 0.4.8 9999: A dynamic tiling Wayland compositor
 gui-wm/swayfx 0.5.3 0.6: SwayFX: Sway, but with eye candy!
-gui-wm/umbriel 0.0.0_pre20260924 0.0.0_pre99999999: An independent compositor made by noctalia
+gui-wm/umbriel 0.0.0_pre20261003 0.0.0_pre99999999: An independent compositor made by noctalia
 gui-wm/wayback 0.2-r1 0.3: X11 compatibility layer levaraging wlroots and Xwayland
 kde-misc/geminipart 20250730: KPart for viewing text/gemini files
 kde-misc/kara 1.0.0-r1: Desktop switching utility
@@ -1686,7 +1684,7 @@ media-sound/neocrystal 2.1.1 9999: A terminal user interface music player in Rus
 media-sound/netcat-cpi 2014.04.29-r1: Kernel module edition of the Cycles Per Instruction (2014) album
 media-sound/noson-app 5.6.20: The essential to control music from your SONOS devices on Linux platforms
 media-sound/nuclear-bin 1.47.1 1.48.6: Streaming music player that finds free music for you
-media-sound/openaudible-bin 4.8.7 4.8.8: OpenAudible is a cross-platform audiobook manager designed for Audible users
+media-sound/openaudible-bin 4.8.8 4.9 5.0: OpenAudible is a cross-platform audiobook manager designed for Audible users
 media-sound/openutau 0.1.327 0.1.463 0.1.529 9999: Open source UTAU successor
 media-sound/orca-c 0_pre20250416-r1 9999: Live Programming Environment(C Port)
 media-sound/pamixer 1.6 9999: Pulseaudio command line mixer.
@@ -1713,7 +1711,7 @@ media-sound/subtui 2.14.3: A lightweight Subsonic TUI music player built in Go w
 media-sound/supersonic 0.21.0 0.21.1 0.22.1: A lightweight and full-featured cross-platform desktop client
 media-sound/tenacity 1.3.4-r4 1.3.5-r1: Easy-to-use, privacy-friendly, FLOSS, cross-platform multi-track audio editor
 media-sound/tidal-hifi-bin 5.16.0-r1 5.17.0 6.1.0 6.2.0 6.3.0 6.3.1 7.0.0 7.0.1: Web version of Tidal running in electron with Hi-Fi support thanks to Widevine
-media-sound/yandex-music 5.113.2 5.116.3 5.119.0: Yandex Music streaming service
+media-sound/yandex-music 5.113.2 5.116.3 5.119.0 5.122.0: Yandex Music streaming service
 media-sound/ymuse 0.22: GTK client for Music Player Daemon (MPD) written in Go
 media-sound/ytm-player 2.0.0 2.1.0 9999: Full-featured YouTube Music TUI client with vim-style navigation
 media-sound/zita-ajbridge 0.8.4-r2: zita-a2j and zita-j2a - bridges between ALSA and JACK
@@ -1789,7 +1787,7 @@ net-dialup/tio 3.9: Simple TTY terminal application
 net-dns/AdGuardHome 0.107.77 0.107.78 0.107.79: Network-wide ads & trackers blocking DNS server like Pi-Hole with web ui
 net-dns/blocky 0.33.0 0.34.0 0.35.0 9999: Fast and lightweight DNS proxy as ad-blocker with many features written in Go
 net-dns/noip-duc 3.3.0: No-IP Dynamic Update Client (https://www.noip.com)
-net-dns/technitium-dns 15.5.1: Open-source, self-hosted authoritative and recursive DNS+DHCP server
+net-dns/technitium-dns 15.6.0: Open-source, self-hosted authoritative and recursive DNS+DHCP server
 net-fs/httpdirfs 1.2.7: Filesystem to mount HTTP directory listings, with a permanent cache
 net-fs/webdav-server-rs 0.4.0_pre20231124: WebDAV server in Rust
 net-im/Quaternion 0.0.97.1: A Qt-based IM client for Matrix
@@ -1839,14 +1837,14 @@ net-im/revolt-desktop 1.0.8-r2: Revolt Desktop App
 net-im/session-desktop-bin 1.15.1 1.15.2: Session Desktop - Onion routing based messenger
 net-im/sliding-sync 0.99.15 0.99.19: Proxy implementation of MSC3575's sync protocol.
 net-im/teams-for-linux 2.6.18 2.7.6 2.7.12 2.7.13 2.11.1 2.13.0: Unofficial Microsoft Teams client for Linux. Binary precompiled version
-net-im/tuwunel 1.9.0 1.9.1: High Performance Matrix Homeserver in Rust!
+net-im/tuwunel 1.9.1 1.9.3: High Performance Matrix Homeserver in Rust!
 net-im/vesktop-bin 1.6.6 1.6.7: All-in-one voice and text chat for gamers with Vencord Preinstalled
-net-im/why2 2.2.6: Lightweight, fast and secure chat application powered by WHY2 encryption
-net-im/zapzap 7.4 7.4.2: WhatsApp desktop application written in PyQt6 + PyQt6-WebEngine
-net-im/zendrite 3.2.1 3.3.0: Zendrite is a second-generation Matrix homeserver written in Go
+net-im/why2 2.3.0: Lightweight, fast and secure chat application powered by WHY2 encryption
+net-im/zapzap 7.4.2 7.4.5: WhatsApp desktop application written in PyQt6 + PyQt6-WebEngine
+net-im/zendrite 3.3.0 3.4.0-r1: Zendrite is a second-generation Matrix homeserver written in Go
 net-im/zulip-desktop-bin 5.12.3: Organized chat for distributed teams.
 net-irc/catgirl 2.2 2.2a: TLS-only terminal IRC client
-net-irc/halloy 2026.7.1 2026.7.2 2026.8: IRC application written in Rust
+net-irc/halloy 2026.7.1 2026.7.2 2026.8-r1: IRC application written in Rust
 net-irc/limnoria-plugins-bugzilla 4.0: Bugzilla integration plugin for the Limnoria IRC Bot
 net-irc/litterbox 1.9: TLS-only IRC logger
 net-irc/pounce 3.0 3.1 3.1-r1 3.1-r2: Multi-client, TLS-only IRC bouncer
@@ -1938,7 +1936,7 @@ net-news/cliflux 1.6.0 1.9.0: A terminal-ui (TUI) client for the Miniflux RSS re
 net-news/comitium 1.8.2: Feed aggregator for gemini supporting many formats and protocols
 net-news/gfeeds 2.2.0-r3: An RSS/Atom feed reader for GNOME.
 net-news/newsflash 3.3.5: Feed Reader written in GTK
-net-news/newsraft 0.34 0.37 9999: Lightweight feed reader with ncurses user interface inspired by Newsboat
+net-news/newsraft 0.37 0.38 9999: Lightweight feed reader with ncurses user interface inspired by Newsboat
 net-nntp/inn 2.7.3 2.7.4: InterNetNews - the Internet meets Netnews
 net-nntp/nzb-monkey-go 0.3.3-r1: Golang version of the NZB Monkey with included NZB direct search
 net-nntp/pan 0.164 0.165: A newsreader for GNOME
@@ -2102,7 +2100,7 @@ sys-apps/cctv 9999: Terminal interface for CoolerControl
 sys-apps/colortail 0.3.3 9999: tail command with colors
 sys-apps/coolercontrol 4.3.0 4.3.1: Monitor and control your cooling and other devices
 sys-apps/coolercontrold 4.3.0 4.3.1: Monitor and control your cooling and other devices (daemon)
-sys-apps/corefreq 2.1.0-r2 2.1.1-r2 2.1.2-r2 9999-r1: CPU monitoring and tuning software designed for 64-bit processors
+sys-apps/corefreq 2.1.2-r2 2.1.4 9999-r1: CPU monitoring and tuning software designed for 64-bit processors
 sys-apps/deepcool-digital-linux 0.10.1 0.10.2: Linux version for the DeepCool Digital Windows software.
 sys-apps/dinit 0.22.1 9999: The dinit service supervision + init suite
 sys-apps/dinit-services 0.0.7 9999: Set of dinit services and helpers
@@ -2154,7 +2152,7 @@ sys-boot/mkusb 23.2.0: CLI and GUI for creating bootable live USB, with optional
 sys-boot/zfsbootmenu 1.12.0 2.2.2 2.3.0 3.0.1 3.1.0: ZFS bootloader for root-on-ZFS systems
 sys-cluster/genders 1.28.1-r1 1.32.1: Static cluster configuration database used for cluster configuration management
 sys-cluster/kops-bin 1.25.3 1.31.0: Kubernetes Operations
-sys-cluster/opencoarrays 2.9.3-r1 2.10.0-r1 2.10.1-r1 2.10.2 2.10.3: A parallel application binary interface for Fortran 2018 compilers
+sys-cluster/opencoarrays 2.10.3_p20251223: A parallel application binary interface for Fortran 2018 compilers
 sys-devel/b 0_pre20251029: A compiler for the B Programming Language implemented in Crust
 sys-devel/fcode-utils 1.0.3: Set of utilities to process FCODE, OpenFirmware's byte code
 sys-devel/lcc 2021.01.11-r1: The lcc retargetable ANSI C compiler
