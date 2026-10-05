@@ -1,4 +1,4 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -9,12 +9,13 @@ FORTRAN_STANDARD="2003"
 inherit cmake flag-o-matic fortran-2
 
 MY_PN="OpenCoarrays"
+COMMIT="74a5d0ac3f2d6ee5f985a13478a87f309a444b07"
 
 DESCRIPTION="A parallel application binary interface for Fortran 2018 compilers"
 HOMEPAGE="http://www.opencoarrays.org/"
-SRC_URI="https://github.com/sourceryinstitute/${MY_PN}/releases/download/${PV}/${MY_PN}-${PV}.tar.gz"
+SRC_URI="https://github.com/sourceryinstitute/${MY_PN}/archive/${COMMIT}.tar.gz -> ${P}.tar.gz"
 
-S="${WORKDIR}/${MY_PN}-${PV}"
+S="${WORKDIR}/${MY_PN}-${COMMIT}"
 
 LICENSE="BSD"
 SLOT="0"
@@ -36,10 +37,6 @@ RDEPEND="
 DEPEND="
 	${RDEPEND}
 "
-
-PATCHES=(
-	"${FILESDIR}/${PN}-2.10.1_fix_Wint-conversion_warning_error.patch"
-)
 
 src_configure() {
 	filter-lto # Bug 860765

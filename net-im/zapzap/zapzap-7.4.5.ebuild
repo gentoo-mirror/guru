@@ -40,6 +40,9 @@ EPYTEST_DESELECT=(
 	# Failing tests
 	tests/test_account_data_removal.py::DisabledAccountWebViewTest::test_data_is_removed_for_an_account_disabled_since_startup  # "Aborted"
 
+	# Failing due to xephyr testing environment
+	tests/test_reporting.py::ReportingCoreTests::test_runtime_environment_reports_structured_graphics_and_chromium_flags  # AssertionError: 'offscreen' != 'xcb'
+
 	# Failures related to the icon theme settings in the testing environment
 	# Might be possible to resolve, if someone wants to investigate
 	tests/test_accounts_settings_ui.py::AccountsSettingsUiTests::test_edit_dialog_combines_name_and_icon_controls
@@ -49,4 +52,6 @@ EPYTEST_DESELECT=(
 	tests/test_browser_page_button_ui.py::BrowserPageButtonUiTests::test_unread_count_is_not_rendered_inside_avatar
 	tests/test_check_box.py::CheckBoxTests::test_menu_indicators_match_checkbox_and_radio_semantics
 	tests/test_donations_page.py::DonationsPageUiTests::test_method_and_external_icons_render_for_light_and_dark_themes
+	tests/test_update_checker.py::UpdateUiTests::test_sidebar_icon_opens_details_and_download_action
+	tests/test_whatsapp_app_lock.py::WhatsAppAppLockTests::test_sidebar_button_is_accessible_themed_and_in_the_utility_group
 )

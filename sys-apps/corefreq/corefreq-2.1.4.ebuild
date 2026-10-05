@@ -6,7 +6,7 @@ EAPI=8
 inherit linux-mod-r1 systemd toolchain-funcs
 
 DESCRIPTION="CPU monitoring and tuning software designed for 64-bit processors"
-HOMEPAGE="https://www.cyring.fr/"
+HOMEPAGE="https://github.com/cyring"
 
 if [[ "${PV}" == *9999* ]]; then
 	inherit git-r3
