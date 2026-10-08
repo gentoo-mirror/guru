@@ -1,0 +1,15 @@
+BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.28.5
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=qt? ( dev-qt/qtbase:6 ) >=media-video/obs-studio-32.2.1
+DESCRIPTION=OBS Simulcast support plugin
+EAPI=8
+HOMEPAGE=https://github.com/sorayuki/obs-multi-rtmp
+INHERIT=cmake
+IUSE=+obs-frontend-api +qt
+KEYWORDS=~amd64
+LICENSE=GPL-2
+RDEPEND=qt? ( dev-qt/qtbase:6 ) >=media-video/obs-studio-32.2.1
+SLOT=0
+SRC_URI=https://github.com/sorayuki/obs-multi-rtmp/archive/refs/tags/0.7.4.4.tar.gz -> obs-multi-rtmp-0.7.4.4.tar.gz
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	3530055400d05e64deaba3042af30af6
+_md5_=a0199edfb4174c346bb899e5dab3c617
