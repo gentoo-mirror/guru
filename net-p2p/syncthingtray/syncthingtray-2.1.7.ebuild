@@ -36,6 +36,10 @@ BDEPEND="
 	plasmoid? ( kde-frameworks/extra-cmake-modules )
 "
 
+PATCHES=(
+	"${FILESDIR}/syncthingtray-2.1.7-fix-build.patch"
+)
+
 src_configure() {
 	local mycmakeargs=(
 		-DCONFIGURATION_PACKAGE_SUFFIX_QTUTILITIES=-qt6

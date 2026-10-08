@@ -5,7 +5,7 @@ EAPI=8
 
 inherit meson
 
-MY_COMMIT="ef2c16e0096302441e689b88348851c9aee77b73"
+MY_COMMIT="93faf20b1da8e980e591a313db712fec2428ef9f"
 
 DESCRIPTION="An independent compositor made by noctalia"
 HOMEPAGE="https://github.com/noctalia-dev/umbriel https://noctalia.dev/"
@@ -35,6 +35,7 @@ DEPEND="
 	>=x11-libs/pixman-0.43.0
 	x11-base/xwayland
 	media-libs/libglvnd
+	media-libs/libdisplay-info
 	media-libs/mesa[egl(+),gles2(+)]
 "
 RDEPEND="
