@@ -16,4 +16,10 @@ LICENSE="LGPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
 
+BDEPEND="
+	test? ( dev-python/six[${PYTHON_USEDEP}] )
+"
+
+EPYTEST_PLUGINS=()
+
 distutils_enable_tests pytest

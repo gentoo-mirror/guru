@@ -3,7 +3,7 @@
 
 EAPI=8
 
-EXECUTION_ID="6233328509124608"
+EXECUTION_ID="5813501495738368"
 
 MY_PN="${PN#google-}"
 DESCRIPTION="Command-line interface for Google's Antigravity agentic development platform"
