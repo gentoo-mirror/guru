@@ -1,0 +1,11 @@
+DEFINED_PHASES=install
+DESCRIPTION=Fast, disk space efficient package manager, alternative to npm and yarn
+EAPI=9
+HOMEPAGE=https://pnpm.io
+KEYWORDS=-* ~amd64 ~arm64
+LICENSE=MIT
+RDEPEND=!net-libs/nodejs[corepack(-)]
+RESTRICT=strip
+SLOT=0
+SRC_URI=amd64? ( https://github.com/pnpm/pnpm/releases/download/v11.28.3/pnpm-linux-x64.tar.gz -> pnpm-bin-11.28.3-amd64.tar.gz ) arm64? ( https://github.com/pnpm/pnpm/releases/download/v11.28.3/pnpm-linux-arm64.tar.gz -> pnpm-bin-11.28.3-arm64.tar.gz )
+_md5_=70ae8407d07f2d6b4cdb1d49445d57b5

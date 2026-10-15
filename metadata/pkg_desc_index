@@ -27,7 +27,9 @@ acct-group/meowlnir 0: System group: meowlnir
 acct-group/mock 0: System group: mock
 acct-group/monero 0: System group: monero
 acct-group/ollama 0: A group for ollama
+acct-group/onepassword 0: A group for the 1Password browser integration helper
 acct-group/onepassword-cli 0: A group for 1password CLI
+acct-group/onepassword-mcp 0: A group for the 1Password MCP server
 acct-group/pleroma 0: Group for www-apps/pleroma
 acct-group/pounce 0: System group: pounce
 acct-group/purritobin 0: Group for net-misc/purritobin
@@ -386,6 +388,7 @@ app-mobilephone/flashlight 0.1.1-r3: Simple flashlight application for the PineP
 app-mobilephone/mobile-config-firefox 2.1.0: Mobile and privacy friendly configuration for Firefox
 app-mobilephone/pinephone-modem-scripts 0.20.8: Modem scripts for the PinePhone
 app-office/beancount 2.3.6: A double-entry accounting system that uses text files as input
+app-office/gridcraft 0.4.0: GridCraft desktop app
 app-office/invoice 0.1.0: Generate invoices from the command line
 app-office/jameica-bin 2.12.0: Local platform for home banking
 app-office/khronos 4.0.0 4.0.1: A GTK4 time tracker for tasks
@@ -397,6 +400,7 @@ app-office/openoffice-bin 4.1.16: Apache OpenOffice productivity suite
 app-office/pyspread 2.4: Pyspread is a non-traditional spreadsheet written in Python
 app-office/softmaker-office-nx 1234: SoftMaker Office NX binary package
 app-office/standartnotes-bin 3.183.22: End-to-end encrypted note-taking app, alternative to Evernote
+app-office/wordcraft 0.4.0: WordCraft desktop app
 app-portage/appswipe 1.2.0: Application for browsing your local Portage repository files
 app-portage/carnage 1.4d 1.5 9999: TUI front-end for Portage and eix
 app-portage/gpkg 1.4.0: Graphical package manager for Gentoo Linux (Portage frontend)
@@ -1141,7 +1145,7 @@ dev-ruby/rbenv 9999: Seamlessly manage your app's Ruby environment
 dev-ruby/rspec-wait 1.0.2: enables time-resilient expectations in your RSpec test suite
 dev-ruby/ruby-build 9999: Installs virtually any version of Ruby, from source
 dev-ruby/ruby-lsp 0.26.4: An opinionated language server for Ruby
-dev-scheme/cozenage 0.19.1: A Scheme-derived Lisp written in C
+dev-scheme/cozenage 0.20.1: A Scheme-derived Lisp written in C
 dev-scheme/sagittarius 0.9.14: R6RS/R7RS Scheme system.
 dev-tex/ninecolors 2022.02.13: Select colors with proper WCAG color contrast
 dev-tex/tabularray 2025.11.27: Typeset tabulars and arrays with LATEX3
@@ -1158,7 +1162,7 @@ dev-util/bump-my-version 1.2.6 1.2.7 1.3.0: Version bump your Python project
 dev-util/cargo-post 0.1.7: A cargo wrapper that executes a post build script after a successful build.
 dev-util/cargo-show-asm 0.2.60: A cargo subcommand that displays the generated assembly of Rust source code.
 dev-util/catalyst-lab 1.6.0 1.6.1: An automation tool for building Gentoo release stages and binhost packages.
-dev-util/codex 0.160.0 0.160.1: Codex CLI - OpenAI's AI-powered coding agent
+dev-util/codex 0.162.0 0.162.1: Codex CLI - OpenAI's AI-powered coding agent
 dev-util/coq-lsp 0.1.9: Visual Studio Code Extension and Language Server Protocol for Coq
 dev-util/deblob 0.12 9999: remove binary executables from a directory
 dev-util/distribution-gpg-keys 1.119: Collection of GPG keys used in Linux Distributions
@@ -1178,14 +1182,14 @@ dev-util/forgejo-runner 12.13.2 13.2.0 9999: A daemon that connects to a Forgejo
 dev-util/fortls 2.13.0 3.0.0 3.1.1 3.1.2 3.2.2: Fortran Language Server (fortls)
 dev-util/fortran-test-drive 0.4.0 0.5.0: The simple testing framework (for Fortran)
 dev-util/gammaray 3.3.1 3.4.0 3.4.0-r1: High-level runtime introspection tool for Qt applications
-dev-util/gemini-cli 0.61.0 0.62.0: Gemini CLI - a command-line AI workflow tool by Google
+dev-util/gemini-cli 0.62.0 0.63.0: Gemini CLI - a command-line AI workflow tool by Google
 dev-util/genTree 0.1.0 9999: Gentoo rootfs tree generator
 dev-util/gersemi 0.27.7 0.28.0: A formatter to make your CMake code the real treasure
 dev-util/git-pages-cli 1.10.1: Command-line application for publishing sites to git-pages
 dev-util/gitlab-ci-local-bin 4.43.0 4.47.0 4.56.0: Run gitlab pipelines locally as shell executor or docker executor
 dev-util/go-task 3.52.0 3.53.1: A task runner / simpler Make alternative written in Go
-dev-util/google-antigravity 2.18.1 2.19.1 2.21.0 2.21.1: Google Antigravity 2.0, a dedicated platform to work with agents
-dev-util/google-antigravity-cli 1.1.28 1.2.17 1.3.0 1.3.1: Command-line interface for Google's Antigravity agentic development platform
+dev-util/google-antigravity 2.19.1 2.21.1 2.22.0: Google Antigravity 2.0, a dedicated platform to work with agents
+dev-util/google-antigravity-cli 1.1.28 1.2.17 1.3.1 1.3.2: Command-line interface for Google's Antigravity agentic development platform
 dev-util/google-antigravity-ide 2.0.4 2.1.1 2.5.5: Google Antigravity's Editor view with context-aware agent
 dev-util/grok-build 1.0.41 1.0.45: SpaceXAI's coding agent harness and TUI
 dev-util/gshards 0.2 0.2-r1: Small helper tools to aid installing Crystal packages in Gentoo
@@ -1215,7 +1219,7 @@ dev-util/nvchecker 2.21 2.22: New version checker for software releases
 dev-util/ocamlformat 0.26.2-r1 0.29.0: Auto-formatter for OCaml code
 dev-util/ocp-indent 1.8.2: Indentation tool for OCaml, to be used from editors like Emacs and Vim.
 dev-util/ols 2026.05 9999: Language server for Odin Programming language
-dev-util/opencode-bin 1.18.34 1.18.35 2.0.23 2.0.24: The open source coding agent
+dev-util/opencode-bin 1.18.34 1.18.35 2.0.25 2.0.26: The open source coding agent
 dev-util/payload-dumper-go 2.1.0: an android OTA payload dumper written in Go
 dev-util/pcpp 1.30: A C99 preprocessor written in pure Python
 dev-util/pifpaf 3.3.0: Suite of tools and fixtures to manage daemons for testing
@@ -1254,7 +1258,7 @@ dev-util/xcd-rgb 1.1.1 9999: colorful hex dump (RGB edition)
 dev-util/xrt 2.21.75 999999: Runtime for AIE and FPGA based platforms
 dev-util/yaml-language-server 1.15.0 1.24.0: Language Server for YAML Files
 dev-vcs/fvs2 0.1.5 0.9.0: Standalone CLI for FVS v2
-dev-vcs/ghorg 1.11.14 1.11.15: Mass repository cloning tool for GitHub/GitLab/Bitbucket
+dev-vcs/ghorg 1.11.15 1.11.16: Mass repository cloning tool for GitHub/GitLab/Bitbucket
 dev-vcs/git-autofixup 0.005000: Create fixup commits for topic branches
 dev-vcs/git-mediawiki 0_pre20260127 9999: Gate between Git and Mediawiki
 dev-vcs/gitahead 2.7.1-r2: Graphical Git client to help understand and manage source code history
@@ -1355,7 +1359,7 @@ games-util/minigalaxy 1.4.0: A simple GOG client for Linux
 games-util/modrinth-app-bin 0.14.5 0.18.2: Open source launcher letting you play and update your favourite Minecraft mods.
 games-util/nsz 5.0.0: Homebrew compatible NSP/XCI compressor/decompressor
 games-util/oversteer 0.8.3 9999: Steering Wheel Manager for Linux
-games-util/protonplus 0.5.19: A modern compatibility tools manager
+games-util/protonplus 0.5.19 0.6.8: A modern compatibility tools manager
 games-util/protonup 0.1.5 9999: Install and Update Proton-GE
 games-util/protonup-rs 0.11.0 0.12.0 0.12.1: TUI Program for Custom Proton Download and installation written in rust
 games-util/qzdl 20250103 99999999: Qt version of the ZDL ZDoom launcher
@@ -1380,7 +1384,7 @@ gnome-extra/resources 51.0-r1: Keep an eye on system resources (CPU, Memory, GPU
 gnome-extra/vvmplayer 1.4-r1: Visual Voicemail Player
 gnome-extra/wike 3.2.1: Wikipedia Reader for the GNOME Desktop
 gnome-extra/yad 14.1 9999: Display GTK+ dialog boxes from command line or shell scripts
-gui-apps/1password 8.11.22-r1: Password Manager
+gui-apps/1password 8.11.22-r1 8.12.40: Password manager and secure wallet
 gui-apps/ReGreet 0.3.0-r1: Clean and customizable GTK-based greetd greeter written in Rust
 gui-apps/ashell 0.8.0 0.9.0 9999: A ready to go Wayland status bar for Hyprland and Niri
 gui-apps/autotiling-rs 0.1.6 0.1.8: Autotiling for sway (and possibly i3)
@@ -1417,7 +1421,7 @@ gui-apps/dosage 2.1.7 2.1.8: Keep track of your treatments
 gui-apps/espanso 2.3.0 2.4.0 2.4.1: Cross-platform Text Expander written in Rust
 gui-apps/eww 0.6.0-r3 9999: Elkowars Wacky Widgets is a standalone widget system made in Rust
 gui-apps/fnott 1.7.1 1.8.0 9999: Keyboard driven and lightweight Wayland notification daemon
-gui-apps/fuzzel 1.13.1 1.14.1: Application launcher for wlroots based Wayland compositors.
+gui-apps/fuzzel 1.13.1 1.14.1 1.15.0: Application launcher for wlroots based Wayland compositors
 gui-apps/fyi 1.0.4 9999: A notify-send alternative
 gui-apps/gcolor3 2.4.0: A simple color chooser written in GTK3
 gui-apps/gradience 0.4.1: Change the look of Adwaita with ease
@@ -1525,7 +1529,7 @@ gui-wm/beansprout 1.1.1 9999: A tiling window manager for the river Wayland comp
 gui-wm/cage 0.2.1 0.3.0 0.3.1 9999: A Wayland kiosk
 gui-wm/canoe 0.5.1: Canoe, a River window manager implementation in Rust
 gui-wm/kwm 0.3.0 9999: A window manager based on River Wayland compositor
-gui-wm/mangowm 0.17.2 0.17.3 0.17.4 0.17.5 9999: A fast, feature-rich Wayland compositor built on dwl
+gui-wm/mangowm 0.17.4 0.17.5 0.18.0 9999: A fast, feature-rich Wayland compositor built on dwl
 gui-wm/miracle-wm 0.10.1: Tiling Wayland compositor based on Mir
 gui-wm/niri 26.04 9999: Scrollable-tiling Wayland compositor
 gui-wm/phoc 0.50.0 0.52.0 0.53.0: Wayland compositor for mobile phones
@@ -1824,11 +1828,11 @@ net-im/mastoposter 0.2: Configurable reposter from Mastodon-compatible Fediverse
 net-im/matterhorn-bin 90000.1.0 90000.1.1: Terminal based Mattermost client
 net-im/maubot 0.5.0-r1 0.5.1: Plugin-based Matrix bot system
 net-im/mautrix-discord 0.7.1 0.7.2: A Matrix-Discord puppeting bridge
-net-im/mautrix-linkedin 0.2608.0: A Matrix-LinkedIn Messaging puppeting bridge
+net-im/mautrix-linkedin 0.2608.0 0.2609.0: A Matrix-LinkedIn Messaging puppeting bridge
 net-im/mautrix-meta 0.4.2 0.4.3 0.2510.0: A Matrix-Facebook puppeting bridge
-net-im/mautrix-signal 25.12 26.02 26.02.1 26.02.1-r1: Matrix-Signal puppeting bridge
+net-im/mautrix-signal 25.12 26.02 26.02.1: Matrix-Signal puppeting bridge
 net-im/mautrix-slack 0.1.3 0.1.4: A Matrix-Slack puppeting bridge based on slack-go
-net-im/mautrix-telegram 0.15.3-r1 26.07 26.07-r1: Matrix-Telegram puppeting bridge
+net-im/mautrix-telegram 0.15.3-r1 26.07: Matrix-Telegram puppeting bridge
 net-im/mautrix-whatsapp 26.06: A Matrix-WhatsApp puppeting bridge
 net-im/meowlnir 26.02 26.06: Opinionated Matrix moderation bot
 net-im/nheko 0.12.0-r2 0.12.1 9999: Native desktop client for Matrix using Qt
@@ -1839,7 +1843,7 @@ net-im/sliding-sync 0.99.15 0.99.19: Proxy implementation of MSC3575's sync prot
 net-im/teams-for-linux 2.6.18 2.7.6 2.7.12 2.7.13 2.11.1 2.13.0: Unofficial Microsoft Teams client for Linux. Binary precompiled version
 net-im/tuwunel 1.9.1 1.9.3: High Performance Matrix Homeserver in Rust!
 net-im/vesktop-bin 1.6.6 1.6.7: All-in-one voice and text chat for gamers with Vencord Preinstalled
-net-im/why2 2.3.1: Lightweight, fast and secure chat application powered by WHY2 encryption
+net-im/why2 2.4.0: Lightweight, fast and secure chat application powered by WHY2 encryption
 net-im/zapzap 7.4.2 7.4.5: WhatsApp desktop application written in PyQt6 + PyQt6-WebEngine
 net-im/zendrite 3.3.0 3.4.0-r1: Zendrite is a second-generation Matrix homeserver written in Go
 net-im/zulip-desktop-bin 5.12.3: Organized chat for distributed teams.
@@ -1847,7 +1851,7 @@ net-irc/catgirl 2.2 2.2a: TLS-only terminal IRC client
 net-irc/halloy 2026.7.1 2026.7.2 2026.8-r1 2026.9: IRC application written in Rust
 net-irc/limnoria-plugins-bugzilla 4.0: Bugzilla integration plugin for the Limnoria IRC Bot
 net-irc/litterbox 1.9: TLS-only IRC logger
-net-irc/pounce 3.0 3.1 3.1-r1 3.1-r2: Multi-client, TLS-only IRC bouncer
+net-irc/pounce 3.0 3.1 3.1-r1: Multi-client, TLS-only IRC bouncer
 net-irc/quarg 1.1.0: Search Quassel logs for matching messages and print them
 net-irc/srain 1.8.1: Modern, beautiful IRC client written in GTK+ 3
 net-irc/thelounge 4.4.1-r1 4.4.3-r2: ‎Modern, responsive, cross-platform, self-hosted web IRC client
@@ -1895,7 +1899,7 @@ net-misc/gemserv 0.6.5 0.6.6: A gemini Server written in rust
 net-misc/gmcapsule 0.9.8 0.10.0: Extensible Gemini/Titan server
 net-misc/gmid 2.1 2.1.1 9999: Simple and secure Gemini server
 net-misc/gnome-ssh-askpass 9.9_p2 10.5_p1: GTK-based passphrase dialog for use with OpenSSH
-net-misc/graftcp 0.7.1 0.7.4 0.7.4-r1: A tool for redirecting a given program's TCP traffic to SOCKS5 or HTTP proxy
+net-misc/graftcp 0.7.1 0.7.4: A tool for redirecting a given program's TCP traffic to SOCKS5 or HTTP proxy
 net-misc/grpcurl 1.9.3: Command-line tool for interacting with gRPC servers
 net-misc/iipsrv 1.2 1.3: High performance image server for high resolution and scientific images
 net-misc/jool 4.1.15: Required tools for Jool
@@ -1957,7 +1961,7 @@ net-p2p/yggdrasil-go 0.5.12-r1 0.5.13 9999: An experiment in scalable routing as
 net-print/captdriver 0.1.4: Alternative driver for Canon CAPT printers
 net-print/hpuld 1.00.39.17.00.33: HP Unified Linux Driver (for samsung hardware)
 net-proxy/Throne 1.2.4 1.3.0: Qt based cross-platform GUI proxy configuration manager
-net-proxy/byedpi 0.17.2 0.17.3 0.17.3-r1 9999: Bypass DPI SOCKS proxy
+net-proxy/byedpi 0.17.2 0.17.3 9999: Bypass DPI SOCKS proxy
 net-proxy/dnss 0.1.1 9999: A small, speedy DNS proxy and bad-stuff-blocker
 net-proxy/ngrok-bin 3.39.11: ngrok is a reverse proxy, firewall, and API gateway
 net-proxy/opera-proxy 1.15.0 1.28.0: Standalone Opera VPN proxies client
@@ -2001,7 +2005,7 @@ phosh-base/phosh-shell 0.50.1 0.51.0 0.52.0: Pure Wayland shell for mobile devic
 phosh-base/phosh-tour 0.50.0 0.53.0: Introduction to phosh on smartphones
 phosh-base/xdg-desktop-portal-phosh 0.50.0 0.52.0: Phosh portal backend for xdg-desktop-portal
 sci-biology/cmdock 0.2.0-r4: Program for docking ligands to proteins and nucleic acids
-sci-biology/cytoscape-bin 3.10.4: A visualization platform for molecular interaction networks
+sci-biology/cytoscape-bin 3.10.4 3.10.5: A visualization platform for molecular interaction networks
 sci-biology/geneathome 1.10-r5: BOINC application for expanding Gene Regulatory Networks (GRN)
 sci-biology/jalview-bin 2.11.5.2: Editor of multiple sequence alignments.
 sci-chemistry/vesta 3.5.8: Visualisation for Electronic and STructural Analysis
@@ -2126,7 +2130,7 @@ sys-apps/nvimpager 0.14.0: Use nvim as a pager to view manpages, diff, etc with 
 sys-apps/openSeaChest 23.12 24.08.1: SeaGate's open source harddrive control utilities
 sys-apps/openpt 1.0.1: start program in a new pseudo-terminal
 sys-apps/ov 0.11.2 0.32.0: Feature-rich terminal pager
-sys-apps/pnpm-bin 10.19.0 10.33.2: Fast, disk space efficient package manager, alternative to npm and yarn
+sys-apps/pnpm-bin 10.19.0 10.33.2 11.28.3 12.8.2: Fast, disk space efficient package manager, alternative to npm and yarn
 sys-apps/qdiskinfo 0.4: CrystalDiskInfo alternative for Linux
 sys-apps/qemu-openrc 0.10.0 0.11.1 9999: OpenRC init script for QEMU/KVM
 sys-apps/rw 1.0: A dd replacement from the Sortix operating system
@@ -2163,13 +2167,13 @@ sys-fs/btrfs-dump 20260409: Metadata dumper for btrfs
 sys-fs/btrfs-heatmap 9-r1: Python 3 script to draw a heatmap of a btrfs filesystem
 sys-fs/diskonaut 0.10.0 0.11.0 9999: Terminal disk space visual navigator
 sys-fs/dua-cli 2.42.1 2.44.0 2.45.0: A tool to conveniently learn about the disk usage of directories, fast!
-sys-fs/dwarfs 0.15.3: Fast high compression read-only filesystem for Linux, FreeBSD, macOS and Windows
+sys-fs/dwarfs 0.15.8: Fast high compression read-only filesystem for Linux, FreeBSD, macOS and Windows
 sys-fs/dwarfs-bin 0.15.3: Static version of a fast very high compression read-only FUSE file system
 sys-fs/ffmpegfs 2.18 2.50: FUSE-based transcoding filesystem with support from/to many formats
 sys-fs/fstransform 0.9.4: Tool for in-place filesystem conversion
 sys-fs/fsverity-utils 1.6: Userspace utility for file-level integrity/authenticity verification
 sys-fs/gcsfuse 2.11.2: A user-space file system for interacting with Google Cloud Storage
-sys-fs/gdu 5.37.0: Fast disk usage analyzer with console interface written in Go
+sys-fs/gdu 5.38.0: Fast disk usage analyzer with console interface written in Go
 sys-fs/gfs2-utils 3.4.1 3.5.1-r1: Shared-disk cluster file system
 sys-fs/jefferson 0.4.6 0.4.6-r1 0.4.7: JFFS2 filesystem extraction tool
 sys-fs/mdevd 0.1.8.2: small daemon managing kernel hotplug events, similarly to udevd
@@ -2333,7 +2337,7 @@ x11-themes/nordzy-cursors 2.3.0: Cursor theme using the Nord color palette and b
 x11-themes/obsidian-icon-theme 4.15-r1 9999: Obsidian Icon Theme is intuitive Faenza-like icon theme
 x11-themes/obsidian2-gtk-theme 2.25 9999: Obsidian Gnome Theme, based upon Adwaita-Maia dark skin
 x11-themes/papirus-claws-mail-theme 0_pre20181023 0_pre20201019: Papirus icon theme for Claws Mail
-x11-themes/phinger-cursors 2.1: Most likely the most over engineered cursor theme
+x11-themes/phinger-cursors 2.1 2.2: Most likely the most over engineered cursor theme
 x11-themes/phosh-wallpapers 0.41.0 0.42.0: Phosh wallpapers and other artwork
 x11-themes/pop-icon-theme 3.5.0: System76 Pop icon theme for Linux
 x11-themes/qogir-icon-theme 2020.11.22 2025.02.15: A flat colorful design icon theme for linux desktops
