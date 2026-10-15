@@ -9,7 +9,7 @@ CHROMIUM_LANGS="af am ar bg bn ca cs da de el en-GB en-US es-419 es et fa fi
 
 inherit chromium-2 desktop optfeature pax-utils xdg
 
-EXECUTION_ID="6046815158665216"
+EXECUTION_ID="5238607586394112"
 
 MY_PN="${PN#google-}"
 DESCRIPTION="Google Antigravity 2.0, a dedicated platform to work with agents"
