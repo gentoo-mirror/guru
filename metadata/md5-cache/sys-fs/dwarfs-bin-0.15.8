@@ -1,0 +1,11 @@
+DEFINED_PHASES=install postinst prepare unpack
+DEPEND=sys-fs/fuse:3
+DESCRIPTION=Static version of a fast very high compression read-only FUSE file system
+EAPI=8
+HOMEPAGE=https://github.com/mhx/dwarfs
+KEYWORDS=-* ~amd64 ~arm64
+LICENSE=GPL-3
+RDEPEND=sys-fs/fuse:3
+SLOT=0
+SRC_URI=amd64? ( https://github.com/mhx/dwarfs/releases/download/v0.15.8/dwarfs-0.15.8-Linux-x86_64.tar.xz -> dwarfs-bin-0.15.8-amd64.tar.xz ) arm64? ( https://github.com/mhx/dwarfs/releases/download/v0.15.8/dwarfs-0.15.8-Linux-aarch64.tar.xz -> dwarfs-bin-0.15.8-arm64.tar.xz )
+_md5_=17b7d91d99a55be679b06ef07023e327
