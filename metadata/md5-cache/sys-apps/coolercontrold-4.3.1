@@ -1,4 +1,4 @@
-BDEPEND=dev-libs/protobuf[protoc(+)] || ( >=dev-lang/rust-bin-1.87.0:* >=dev-lang/rust-1.87.0:* ) virtual/pkgconfig
+BDEPEND=dev-libs/protobuf[protoc(+)] || ( >=dev-lang/rust-bin-1.90.0:* >=dev-lang/rust-1.90.0:* ) virtual/pkgconfig
 DEFINED_PHASES=compile configure install postinst prepare setup test unpack
 DEPEND=app-arch/zstd:= liquidctl? ( python_single_target_python3_12? ( dev-lang/python:3.12 ) python_single_target_python3_13? ( dev-lang/python:3.13 ) python_single_target_python3_14? ( dev-lang/python:3.14 ) python_single_target_python3_12? ( app-misc/liquidctl[python_targets_python3_12(-)] ) python_single_target_python3_13? ( app-misc/liquidctl[python_targets_python3_13(-)] ) python_single_target_python3_14? ( app-misc/liquidctl[python_targets_python3_14(-)] ) )
 DESCRIPTION=Monitor and control your cooling and other devices (daemon)
@@ -12,5 +12,5 @@ RDEPEND=app-arch/zstd:= liquidctl? ( python_single_target_python3_12? ( dev-lang
 REQUIRED_USE=liquidctl? ( ^^ ( python_single_target_python3_12 python_single_target_python3_13 python_single_target_python3_14 ) )
 SLOT=0
 SRC_URI=https://gitlab.com/coolercontrol/coolercontrol/-/releases/4.3.1/downloads/packages/coolercontrol-4.3.1.tar.gz https://gitlab.com/coolercontrol/coolercontrol/-/releases/4.3.1/downloads/packages/coolercontrold-vendor.tar.gz -> coolercontrold-4.3.1-vendor.tar.gz
-_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	rust	d8479c5aeebf8a4784905490ca659726	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	bff30f59ca59b09857b787ac644b2e4c	optfeature	58cc13bdc4e9a204077e1e7c9a1d7988	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	python-utils-r1	025367880f07ae6444e6035a49db0dab	python-single-r1	47d8ac9be330c9366112b78fd4f8ce57	systemd	a964c0cbe818b5729da1dbfcee5be861
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	rust	552cca5ca7af2571f710cc2177327f0a	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	bff30f59ca59b09857b787ac644b2e4c	optfeature	58cc13bdc4e9a204077e1e7c9a1d7988	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	python-utils-r1	025367880f07ae6444e6035a49db0dab	python-single-r1	47d8ac9be330c9366112b78fd4f8ce57	systemd	a964c0cbe818b5729da1dbfcee5be861
 _md5_=add1767c7b9f479bced2de59122ce557

@@ -1,0 +1,13 @@
+BDEPEND=>=net-libs/nodejs-22.12.0
+DEFINED_PHASES=compile install prepare test
+DESCRIPTION=Create and extract Electron ASAR archives
+EAPI=8
+HOMEPAGE=https://github.com/electron/asar
+IUSE=test
+KEYWORDS=~amd64
+LICENSE=MIT Apache-2.0 BSD-2 BlueOak-1.0.0 ISC test? ( BSD CC0-1.0 )
+RDEPEND=>=net-libs/nodejs-22.12.0
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/electron/asar/archive/refs/tags/v4.3.1.tar.gz -> asar-4.3.1.tar.gz https://codeberg.org/minorum/gentoo-dist/releases/download/asar-4.3.1-yarn/asar-4.3.1-yarn-deps.tar.xz
+_md5_=774851c78972094973760e4d1526cff7
