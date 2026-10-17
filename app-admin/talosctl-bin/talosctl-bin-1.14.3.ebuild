@@ -4,7 +4,7 @@
 EAPI="8"
 
 DESCRIPTION="Pre-compiled talosctl is an tool for interacting with the Talos API"
-HOMEPAGE="https://www.talos.dev/v1.10/"
+HOMEPAGE="https://www.talos.dev/"
 
 MY_PV="${PV/_rc/-rc.}"
 SRC_URI="

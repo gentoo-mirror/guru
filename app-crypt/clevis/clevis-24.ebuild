@@ -64,10 +64,9 @@ RDEPEND="
 RESTRICT="!test? ( test )"
 
 PATCHES=(
-	"${FILESDIR}/${PN}-23-openrc-fixes.patch"
-	"${FILESDIR}/${PN}-23-cleanup-meson-deprecation-warnings.patch"
-	"${FILESDIR}/${PN}-23-disable-automagic.patch"
-	"${FILESDIR}/${PN}-23-disable-pkcs11-automagic.patch"
+	"${FILESDIR}/${PN}-24-cleanup-meson-deprecation-warnings.patch"
+	"${FILESDIR}/${PN}-24-disable-automagic.patch"
+	"${FILESDIR}/${PN}-24-fix-tests.patch"
 )
 
 src_configure() {
@@ -83,10 +82,3 @@ src_configure() {
 
 # Most of the tests require root (FEATURES="-userpriv")
 # To run the tang pin tests, install app-crypt/tang beforehand
-src_test() {
-	local excludedtests=(
-# Doesn't work in the sandbox or without root
-		"pin-tpm2-sw"
-	)
-	meson_src_test $(meson test -C "${BUILD_DIR}" --list | grep -v "${excludedtests[@]}")
-}

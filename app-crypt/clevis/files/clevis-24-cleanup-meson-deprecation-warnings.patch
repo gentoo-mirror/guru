@@ -1,12 +1,12 @@
 diff --git a/meson.build b/meson.build
-index 8c45872..cd786d7 100644
+index 382c887..6b70b95 100644
 --- a/meson.build
 +++ b/meson.build
 @@ -1,6 +1,10 @@
  project('clevis', 'c', license: 'GPL3+',
-   version: '23',
+   version: '24',
 -  default_options: 'c_std=c99'
-+  default_options: [ 
++  default_options: [
 +    'c_std=c99',
 +    'warning_level=2',
 +    'werror=true'
@@ -116,10 +116,10 @@ index 7863f8b..58990e7 100644
    configure_file(
      input: 'module-setup.sh.in',
 diff --git a/src/luks/dracut/clevis/meson.build b/src/luks/dracut/clevis/meson.build
-index e6230f3..ca21624 100644
+index e6230f3..8a6821e 100644
 --- a/src/luks/dracut/clevis/meson.build
 +++ b/src/luks/dracut/clevis/meson.build
-@@ -1,7 +1,7 @@
+@@ -1,11 +1,11 @@
  dracut = dependency('dracut', required: false)
  
  if dracut.found()
@@ -128,6 +128,11 @@ index e6230f3..ca21624 100644
  
    dracut_data = configuration_data()
    dracut_data.merge_from(data)
+-  dracut_data.set('SYSTEMD_REPLY_PASS', sd_reply_pass.found() ? sd_reply_pass.path() : '')
++  dracut_data.set('SYSTEMD_REPLY_PASS', sd_reply_pass.found() ? sd_reply_pass.full_path() : '')
+ 
+   configure_file(
+     input: 'module-setup.sh.in',
 diff --git a/src/luks/meson.build b/src/luks/meson.build
 index 6c7b035..5469c3b 100644
 --- a/src/luks/meson.build
@@ -141,11 +146,33 @@ index 6c7b035..5469c3b 100644
  
  sd_reply_pass = find_program(
    (systemdutildir != '') ? join_paths(systemdutildir, 'systemd-reply-password') : '',
+diff --git a/src/luks/systemd/meson.build b/src/luks/systemd/meson.build
+index 913ee2e..f2f92cd 100644
+--- a/src/luks/systemd/meson.build
++++ b/src/luks/systemd/meson.build
+@@ -1,7 +1,7 @@
+ if systemd.found() and sd_reply_pass.found()
+   systemd_data = configuration_data()
+   systemd_data.merge_from(data)
+-  systemd_data.set('SYSTEMD_REPLY_PASS', sd_reply_pass.path())
++  systemd_data.set('SYSTEMD_REPLY_PASS', sd_reply_pass.full_path())
+ 
+   if not get_option('tpm1').disabled()
+     systemd_data.set('TCSD_AFTER', 'After=tcsd.service')
+@@ -11,7 +11,7 @@ if systemd.found() and sd_reply_pass.found()
+     systemd_data.set('TCSD_WANTS', '')
+   endif
+ 
+-  unitdir = systemd.get_pkgconfig_variable('systemdsystemunitdir')
++  unitdir = systemd.get_variable(pkgconfig : 'systemdsystemunitdir')
+ 
+   configure_file(
+     input: 'clevis-luks-askpass.service.in',
 diff --git a/src/luks/tests/meson.build b/src/luks/tests/meson.build
-index aebc481..0735219 100644
+index 92df21e..a0f5bec 100644
 --- a/src/luks/tests/meson.build
 +++ b/src/luks/tests/meson.build
-@@ -28,21 +28,21 @@ common_functions = configure_file(input: 'luks-common-test-functions.in',
+@@ -22,21 +22,21 @@ common_functions = configure_file(input: 'luks-common-test-functions.in',
  
  env = environment()
  env.prepend('PATH',
@@ -203,7 +230,7 @@ index dbd9a56..fd43e14 100644
      input: 'dracut.module-setup.sh.in',
      output: 'module-setup.sh',
 diff --git a/src/pins/pkcs11/tests/meson.build b/src/pins/pkcs11/tests/meson.build
-index 73ca2f7..998562d 100644
+index a517d29..9db3b18 100644
 --- a/src/pins/pkcs11/tests/meson.build
 +++ b/src/pins/pkcs11/tests/meson.build
 @@ -1,22 +1,22 @@
@@ -262,7 +289,7 @@ index 2a5295a..d77fa24 100644
      '/usr/libexec',
      libexecdir,
 diff --git a/src/pins/tang/tests/meson.build b/src/pins/tang/tests/meson.build
-index 47fa5d6..feb02a9 100644
+index dae3812..e6011cb 100644
 --- a/src/pins/tang/tests/meson.build
 +++ b/src/pins/tang/tests/meson.build
 @@ -23,15 +23,15 @@ tang_data.set('TANGD_KEYGEN', '')
@@ -322,7 +349,7 @@ index e307526..5a84aa9 100644
  #?# stay flexible.
    configure_file(
 diff --git a/src/pins/tpm1/tests/meson.build b/src/pins/tpm1/tests/meson.build
-index 4f7ebbd..ca1be7d 100644
+index b3abdca..35aa882 100644
 --- a/src/pins/tpm1/tests/meson.build
 +++ b/src/pins/tpm1/tests/meson.build
 @@ -1,14 +1,14 @@
