@@ -142,7 +142,7 @@ app-admin/run0edit 0.5.9 0.5.10 0.6.1 9999: Script to edit a single file as root
 app-admin/s-tui 1.4.0 1.5.0: Stress-Terminal UI monitoring tool
 app-admin/sshelf 0.14.1 0.15.0: A TUI for managing and connecting to SSH hosts
 app-admin/synadm 0.43.1 0.44: Command line admin tool for Synapse
-app-admin/talosctl-bin 1.7.6 1.9.5 1.10.1 1.12.0_rc0 1.12.5: Pre-compiled talosctl is an tool for interacting with the Talos API
+app-admin/talosctl-bin 1.12.5 1.14.3: Pre-compiled talosctl is an tool for interacting with the Talos API
 app-admin/terragrunt-bin 0.93.11 0.96.1: A thin wrapper for Terraform
 app-admin/tflint 0.58.0 0.60.0: Terraform linter
 app-admin/yolk 1.3.0: Templated dotfile management without template files
@@ -193,7 +193,7 @@ app-crypt/certbot-dns-gandi 1.6.2: Certbot plugin for authentication using Gandi
 app-crypt/certbot-dns-infomaniak 0.2.5 0.3.2 0.3.3: Infomaniak DNS Authenticator plugin for Certbot
 app-crypt/certbot-dns-poweradmin 0.2.5 0.2.6: Certbot plugin for authentication using PowerAdmin
 app-crypt/certbot-dns-rfc2136 3.2.0-r100: RFC 2136 DNS Authenticator plugin for Certbot (Let’s Encrypt Client)
-app-crypt/clevis 23-r1: Automated Encryption Framework
+app-crypt/clevis 24: Automated Encryption Framework
 app-crypt/cryptsetup-scripts-dinit 2.8.6: Debian cryptsetup-scripts with patches for service usage
 app-crypt/firefox-decrypt 1.1.1: Tool to extract passwords from Mozilla (Firefox, Thunderbird, etc.) profiles
 app-crypt/ifcplugin-bin 3.1.1.0: Crypto Interface Web Browser Plugin
@@ -1015,7 +1015,7 @@ dev-python/pynput 1.8.2: Sends virtual input commands
 dev-python/pypandoc 1.17: Pypandoc provides a thin wrapper for pandoc, a universal document converter
 dev-python/pyproject2ebuild 0.0.3: Convert pyproject.toml to Gentoo ebuilds automatically.
 dev-python/pyqtdarktheme 2.1.0: A flat dark theme for PySide and PyQt.
-dev-python/pyrefly 1.1.1 1.2.0 1.3.0 1.3.1 1.3.2: A fast type checker and language server for Python with powerful IDE features
+dev-python/pyrefly 1.1.1 1.2.0 1.3.0 1.3.1 1.3.2 1.4.0: A fast type checker and language server for Python with powerful IDE features
 dev-python/pyright 1.1.414: Static type checker for Python
 dev-python/pyrime 0.0.7: rime for python
 dev-python/pyroaring 1.1.0: Python wrapper for the C library CRoaring
@@ -1190,7 +1190,7 @@ dev-util/genTree 0.1.0 9999: Gentoo rootfs tree generator
 dev-util/gersemi 0.27.7 0.28.0: A formatter to make your CMake code the real treasure
 dev-util/git-pages-cli 1.10.1: Command-line application for publishing sites to git-pages
 dev-util/gitlab-ci-local-bin 4.43.0 4.47.0 4.56.0: Run gitlab pipelines locally as shell executor or docker executor
-dev-util/go-task 3.52.0 3.53.1: A task runner / simpler Make alternative written in Go
+dev-util/go-task 3.53.1 3.54.0: A task runner / simpler Make alternative written in Go
 dev-util/google-antigravity 2.22.0 2.23.1 2.24.0: Google Antigravity 2.0, a dedicated platform to work with agents
 dev-util/google-antigravity-cli 1.2.17 1.3.6 1.4.0: Command-line interface for Google's Antigravity agentic development platform
 dev-util/google-antigravity-ide 2.0.4 2.1.1 2.5.5: Google Antigravity's Editor view with context-aware agent
@@ -1222,7 +1222,7 @@ dev-util/nvchecker 2.21 2.22: New version checker for software releases
 dev-util/ocamlformat 0.26.2-r1 0.29.0: Auto-formatter for OCaml code
 dev-util/ocp-indent 1.8.2: Indentation tool for OCaml, to be used from editors like Emacs and Vim.
 dev-util/ols 2026.05 9999: Language server for Odin Programming language
-dev-util/opencode-bin 1.19.0 1.19.1 2.0.29 2.0.30: The open source coding agent
+dev-util/opencode-bin 1.19.1 1.19.3 2.0.30 2.0.31: The open source coding agent
 dev-util/payload-dumper-go 2.1.0: an android OTA payload dumper written in Go
 dev-util/pcpp 1.30: A C99 preprocessor written in pure Python
 dev-util/pifpaf 3.3.0: Suite of tools and fixtures to manage daemons for testing
@@ -1745,7 +1745,7 @@ media-video/obs-streamfx 0.12.0.9999 9999: OBS® Studio plugin which adds many n
 media-video/obs-vaapi 0.4.1 0.4.2 9999: OBS Studio VAAPI support via GStreamer
 media-video/pgsrip 0.1.12: A command line tool to extract and convert PGS subtitles into SRT format
 media-video/showtime 50.0-r2: Video player for GNOME
-media-video/stremio 1.2.2: Native Linux client for Stremio
+media-video/stremio 1.2.2-r1: Native Linux client for Stremio
 media-video/syncplay 1.7.5 1.7.5-r1 1.7.6: Client/server to synchronize media playback
 media-video/uxplay 1.73.6-r1 1.73.7: AirPlay Unix mirroring server
 media-video/walksnail-osd-tool 0.3.0-r2 9999: Tool for rendering OSDs over Walksnail DVR recordings
@@ -1816,7 +1816,7 @@ net-im/endcord-bin 1.5.1 1.5.2 1.5.3: Feature rich Discord TUI client
 net-im/equibop-bin 3.2.2 3.3.0 3.3.1: Equibop is a customizable and privacy friendly Discord desktop app
 net-im/eturnal 1.12.1 1.12.2: STUN/TURN server
 net-im/flare 0.12.0-r1: Chat with your friends on Signal
-net-im/fluffychat-bin 2.9.5: The cutest instant messenger in the [matrix]
+net-im/fluffychat-bin 2.9.5 2.10.0: The cutest instant messenger in the [matrix]
 net-im/fluxer-canary-bin 2026.927.142044 2026.928.213900: Open source voice and text chat client
 net-im/forkgram 6.5.1: Fork of the official Telegram Desktop app with small useful additions
 net-im/forkgram-bin 6.6.2: Fork of official Telegram Desktop app with small useful additions - bin
@@ -2248,7 +2248,7 @@ www-apps/whisparr-eros 3.3.5.861 3.6.0.1660: Adult movie organizer/manager for u
 www-apps/zola 0.22.1-r5 0.23.6: A fast static site generator with everything built-in
 www-client/badwolf 1.4.0-r2 9999-r1: Minimalist and privacy-oriented WebKitGTK+ browser
 www-client/browsh 1.8.2 1.8.3: A fully-modern text-based browser, rendering to TTY and browsers
-www-client/chawan 0.4.3-r1 0.4.4-r1 9999: TUI web browser; supports CSS, images, JavaScript, and multiple web protocols
+www-client/chawan 0.4.4-r1 0.5.0 9999: TUI web browser; supports CSS, images, JavaScript, and multiple web protocols
 www-client/helium-bin 0.17.2.1 0.18.1.1 0.18.2.1: Private, fast, and honest web browser based on Chromium
 www-client/mullvad-browser 140.13.0-r2 153.3.2-r2 153.4.3: The Mullvad Browser is developed to minimize tracking and fingerprinting
 www-client/mullvad-browser-bin 15.0.23 15.0.24 15.0.25: The Mullvad Browser is developed to minimize tracking and fingerprinting
