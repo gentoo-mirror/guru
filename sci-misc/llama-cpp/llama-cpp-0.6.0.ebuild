@@ -3,10 +3,12 @@
 
 EAPI=8
 
-ROCM_VERSION="7.1"
+PYTHON_COMPAT=( python3_{12..15} )
+ROCM_VERSION="6.1"
 
-inherit cmake cuda rocm linux-info toolchain-funcs
+inherit cmake cuda rocm linux-info python-any-r1 toolchain-funcs
 
+MY_PN="${PN/-/.}"
 TINY_LLAMAS_COMMIT="99dd1a73db5a37100bd4ae633f4cfce6560e1567"
 
 DESCRIPTION="Port of Facebook's LLaMA model in C/C++"
@@ -17,36 +19,41 @@ if [[ ${PV} == *9999* ]]; then
 	EGIT_REPO_URI="https://github.com/ggml-org/llama.cpp.git"
 	LLAMA_BUILD_IS_DEV=ON
 	LLAMA_BUILD_NUMBER="b0000"
-	LLAMA_UI_VERSION="b10809"
+	LLAMA_UI_VERSION="b11429"
 	MY_PV="${PV}"
 else
 	if [[ $(ver_cut 4) == "p" ]]; then
 		LLAMA_BUILD_IS_DEV=ON
 		LLAMA_BUILD_NUMBER="b$(ver_cut 5)"
 		MY_PV="${LLAMA_BUILD_NUMBER}"
-		S="${WORKDIR}/llama.cpp-${MY_PV}"
+		S="${WORKDIR}/${MY_PN}-${MY_PV}"
 	else
 		LLAMA_BUILD_IS_DEV=OFF
 		# Set from https://github.com/ggml-org/llama.cpp/releases/download/v${PV}/nightly-tag.txt
-		LLAMA_BUILD_NUMBER="b10809"
+		LLAMA_BUILD_NUMBER="b11429"
 		MY_PV="v${PV}"
-		S="${WORKDIR}/llama.cpp-${PV}"
+		S="${WORKDIR}/${MY_PN}-${PV}"
 	fi
 	LLAMA_UI_VERSION="${LLAMA_BUILD_NUMBER}"
 	SRC_URI="https://github.com/ggml-org/llama.cpp/archive/refs/tags/${MY_PV}.tar.gz -> ${P}.tar.gz"
 	KEYWORDS="~amd64"
 fi
 
+MODEL_STORIES15M_URI="
+	https://huggingface.co/ggml-org/tiny-llamas/resolve/${TINY_LLAMAS_COMMIT}/stories15M-q4_0.gguf
+		-> ggml-org_models_tinyllamas_stories15M-q4_0-${TINY_LLAMAS_COMMIT}.gguf
+"
+
 SRC_URI+="
 	https://github.com/ggml-org/llama.cpp/releases/download/${LLAMA_UI_VERSION}/llama-${LLAMA_UI_VERSION}-ui.tar.gz
-	examples? (
-		https://huggingface.co/ggml-org/tiny-llamas/resolve/${TINY_LLAMAS_COMMIT}/stories15M-q4_0.gguf
-			-> ggml-org_models_tinyllamas_stories15M-q4_0-${TINY_LLAMAS_COMMIT}.gguf
-	)
+	examples? ( ${MODEL_STORIES15M_URI} )
+	test? ( ${MODEL_STORIES15M_URI} )
 "
 
 LICENSE="MIT"
 SLOT="0"
+
+# GGML CPU flags
 X86_CPU_FLAGS=(
 	amx_bf16
 	amx_int8
@@ -65,45 +72,62 @@ X86_CPU_FLAGS=(
 )
 CPU_FLAGS=( "${X86_CPU_FLAGS[@]/#/cpu_flags_x86_}" )
 
-IUSE="${CPU_FLAGS[*]} blis cuda curl examples flexiblas openblas opencl +openmp openssl rocm vulkan"
+# GGML BLAS backends
+BLAS_BACKENDS="blis openblas"
 
+GGML_IUSE="blas flexiblas ${BLAS_BACKENDS} ${CPU_FLAGS[*]} cuda opencl +openmp rocm vulkan"
+
+IUSE="${GGML_IUSE} curl examples openssl test"
 REQUIRED_USE="
-	?? (
-		openblas
-		blis
-		flexiblas
-	)
+	blas? ( ?? ( ${BLAS_BACKENDS} ) )
 	rocm? ( ${ROCM_REQUIRED_USE} )
 "
 
+unset BLAS_BACKENDS GGML_IUSE X86_CPU_FLAGS CPU_FLAGS
+
+RESTRICT="!test? ( test )"
+
 # curl is needed for pulling models from huggingface
-# numpy is used by convert_hf_to_gguf.py
-CDEPEND="
+COMMON_DEPEND="
 	curl? ( net-misc/curl:= )
-	openblas? ( sci-libs/openblas:= )
 	openmp? ( llvm-runtimes/openmp:= )
-	blis? ( sci-libs/blis:= )
-	flexiblas? ( sci-libs/flexiblas:= )
+	blas? (
+		virtual/blas[flexiblas=]
+		flexiblas? ( sci-libs/flexiblas:=[blis?,openblas?,openmp?] )
+		!flexiblas? (
+			blis? ( sci-libs/blis:=[openmp?] )
+			openblas? ( sci-libs/openblas:=[openmp?] )
+		)
+	)
 	rocm? (
 		>=dev-util/hip-${ROCM_VERSION}:=
-		>=sci-libs/hipBLAS-${ROCM_VERSION}:=[${ROCM_USEDEP}]
+		>=sci-libs/hipBLAS-${ROCM_VERSION}:=
 	)
 	cuda? ( dev-util/nvidia-cuda-toolkit:= )
 	openssl? ( dev-libs/openssl:= )
 "
-DEPEND="${CDEPEND}
+DEPEND="${COMMON_DEPEND}
 	opencl? ( dev-util/opencl-headers )
 	vulkan? (
 		dev-util/spirv-headers
 		dev-util/vulkan-headers
 	)
 "
-RDEPEND="${CDEPEND}
-	dev-python/numpy
+RDEPEND="${COMMON_DEPEND}
 	opencl? ( dev-libs/opencl-icd-loader )
 	vulkan? ( media-libs/vulkan-loader )
 "
-BDEPEND="media-libs/shaderc"
+BDEPEND="
+	opencl? ( ${PYTHON_DEPS} )
+	vulkan? ( media-libs/shaderc )
+	test? ( $(python_gen_any_dep 'dev-python/jinja2[${PYTHON_USEDEP}]') )
+"
+
+python_check_deps() {
+	if use test; then
+		python_has_version "dev-python/jinja2[${PYTHON_USEDEP}]"
+	fi
+}
 
 pkg_pretend() {
 	[[ ${MERGE_TYPE} != binary ]] && use openmp && tc-check-openmp
@@ -119,6 +143,10 @@ pkg_setup() {
 		fi
 	fi
 
+	if use opencl || use test; then
+		python-any-r1_pkg_setup
+	fi
+
 	[[ ${MERGE_TYPE} != binary ]] && use openmp && tc-check-openmp
 }
 
@@ -130,7 +158,7 @@ src_unpack() {
 src_prepare() {
 	use cuda && cuda_src_prepare
 	cmake_src_prepare
-	if use examples; then
+	if use examples || use test; then
 		mkdir -p "${BUILD_DIR}/tinyllamas" || die
 		cp "${DISTDIR}/ggml-org_models_tinyllamas_stories15M-q4_0-${TINY_LLAMAS_COMMIT}.gguf" \
 			"${BUILD_DIR}/tinyllamas/stories15M-q4_0.gguf" || die
@@ -143,18 +171,19 @@ src_prepare() {
 
 src_configure() {
 	local mycmakeargs=(
-		-DCMAKE_BUILD_WITH_INSTALL_RPATH=ON
 		-DLLAMA_BUILD_IS_DEV=${LLAMA_BUILD_IS_DEV}
-		-DLLAMA_BUILD_TESTS=OFF
+		-DLLAMA_BUILD_TESTS=$(usex test)
 		-DLLAMA_BUILD_EXAMPLES=$(usex examples)
 		-DLLAMA_BUILD_SERVER=ON
+		-DLLAMA_TESTS_INSTALL=OFF
 		-DBUILD_NUMBER="${LLAMA_BUILD_NUMBER}"
 		-DLLAMA_CURL=$(usex curl)
 		-DLLAMA_OPENSSL=$(usex openssl)
 
-		# avoid clashing with whisper.cpp
-		-DCMAKE_INSTALL_LIBDIR="${EPREFIX}/usr/$(get_libdir)/llama.cpp"
-		-DCMAKE_INSTALL_RPATH="${EPREFIX}/usr/$(get_libdir)/llama.cpp"
+		# avoid clashing with sci-ml/ggml
+		-DCMAKE_INSTALL_INCLUDEDIR="include/${MY_PN}"
+		-DCMAKE_INSTALL_LIBDIR="$(get_libdir)/${MY_PN}"
+		-DCMAKE_INSTALL_RPATH="\$ORIGIN/../$(get_libdir)/${MY_PN};\$ORIGIN"
 	)
 
 	# GGML backends
@@ -179,6 +208,7 @@ src_configure() {
 		-DGGML_AMX_INT8=$(usex cpu_flags_x86_amx_int8)
 		-DGGML_AMX_BF16=$(usex cpu_flags_x86_amx_bf16)
 
+		-DGGML_BLAS=$(usex blas)
 		-DGGML_CUDA=$(usex cuda)
 		-DGGML_VULKAN=$(usex vulkan)
 		-DGGML_OPENMP=$(usex openmp)
@@ -186,22 +216,24 @@ src_configure() {
 		-DGGML_OPENCL=$(usex opencl)
 	)
 
-	if use openblas ; then
-		mycmakeargs+=(
-			-DGGML_BLAS=ON -DGGML_BLAS_VENDOR=OpenBLAS
-		)
-	fi
-
-	if use blis ; then
-		mycmakeargs+=(
-			-DGGML_BLAS=ON -DGGML_BLAS_VENDOR=FLAME
-		)
-	fi
-
-	if use flexiblas; then
-		mycmakeargs+=(
-			-DGGML_BLAS=ON -DGGML_BLAS_VENDOR=FlexiBLAS
-		)
+	if use blas; then
+		if use flexiblas ; then
+			mycmakeargs+=(
+				-DGGML_BLAS_VENDOR="FlexiBLAS"
+			)
+		elif use blis ; then
+			mycmakeargs+=(
+				-DGGML_BLAS_VENDOR="FLAME"
+			)
+		elif use openblas ; then
+			mycmakeargs+=(
+				-DGGML_BLAS_VENDOR="OpenBLAS"
+			)
+		else
+			mycmakeargs+=(
+				-DGGML_BLAS_VENDOR="Generic"
+			)
+		fi
 	fi
 
 	if use cuda; then
@@ -215,17 +247,24 @@ src_configure() {
 		rocm_use_hipcc
 		mycmakeargs+=(
 			-DGGML_HIP=ON
-			-DAMDGPU_TARGETS=$(get_amdgpu_flags)
+			-DGPU_TARGETS=$(get_amdgpu_flags)
 		)
 	fi
 
 	cmake_src_configure
 }
 
+src_test() {
+	local CMAKE_SKIP_TESTS=(
+		test-download-model  # due to network sandbox
+		test-arg-parser  # due to network sandbox in download functions test
+	)
+	cmake_src_test
+}
+
 src_install() {
 	cmake_src_install
-	dobin "${BUILD_DIR}/bin/ggml-rpc-server"
 
-	# avoid clashing with whisper.cpp
-	rm -r "${ED}/usr/include" || die
+	dodoc -r "${S}"/docs
+	dodoc "${S}"/tools/*/README.md
 }

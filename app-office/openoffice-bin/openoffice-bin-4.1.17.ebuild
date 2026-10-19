@@ -6,7 +6,7 @@ EAPI="8"
 RPM_COMPRESS_TYPE=none
 inherit desktop pax-utils prefix rpm xdg
 
-BUILDID="9816"
+BUILDID="9818"
 BVER="${PV/_rc*/}-${BUILDID}"
 BVER2=${PV}-${BUILDID}
 BASIS="ooobasis4.1"

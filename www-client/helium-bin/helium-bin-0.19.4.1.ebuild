@@ -96,8 +96,6 @@ src_install() {
 	cd "${MY_PN}" || die
 
 	pushd "locales" > /dev/null || die
-	# Remove empty .info files
-	rm *.info || die
 	chromium_remove_language_paks
 	popd > /dev/null || die
 

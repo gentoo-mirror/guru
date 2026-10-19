@@ -3,9 +3,10 @@
 
 EAPI=8
 
+PYTHON_COMPAT=( python3_{12..15} )
 ROCM_VERSION="6.1"
 
-inherit cmake cuda rocm linux-info toolchain-funcs
+inherit cmake cuda rocm linux-info python-any-r1 toolchain-funcs
 
 MY_PN="${PN/-/.}"
 TINY_LLAMAS_COMMIT="99dd1a73db5a37100bd4ae633f4cfce6560e1567"
@@ -18,7 +19,7 @@ if [[ ${PV} == *9999* ]]; then
 	EGIT_REPO_URI="https://github.com/ggml-org/llama.cpp.git"
 	LLAMA_BUILD_IS_DEV=ON
 	LLAMA_BUILD_NUMBER="b0000"
-	LLAMA_UI_VERSION="b10964"
+	LLAMA_UI_VERSION="b11429"
 	MY_PV="${PV}"
 else
 	if [[ $(ver_cut 4) == "p" ]]; then
@@ -29,7 +30,7 @@ else
 	else
 		LLAMA_BUILD_IS_DEV=OFF
 		# Set from https://github.com/ggml-org/llama.cpp/releases/download/v${PV}/nightly-tag.txt
-		LLAMA_BUILD_NUMBER="b10964"
+		LLAMA_BUILD_NUMBER="b11429"
 		MY_PV="v${PV}"
 		S="${WORKDIR}/${MY_PN}-${PV}"
 	fi
@@ -70,29 +71,34 @@ X86_CPU_FLAGS=(
 	sse4_2
 )
 CPU_FLAGS=( "${X86_CPU_FLAGS[@]/#/cpu_flags_x86_}" )
-GGML_IUSE="${CPU_FLAGS[*]} blis cuda flexiblas openblas opencl +openmp rocm vulkan"
-unset X86_CPU_FLAGS CPU_FLAGS
+
+# GGML BLAS backends
+BLAS_BACKENDS="blis openblas"
+
+GGML_IUSE="blas flexiblas ${BLAS_BACKENDS} ${CPU_FLAGS[*]} cuda opencl +openmp rocm vulkan"
 
 IUSE="${GGML_IUSE} curl examples openssl test"
-unset GGML_IUSE
 REQUIRED_USE="
-	?? (
-		openblas
-		blis
-		flexiblas
-	)
+	blas? ( ?? ( ${BLAS_BACKENDS} ) )
 	rocm? ( ${ROCM_REQUIRED_USE} )
 "
+
+unset BLAS_BACKENDS GGML_IUSE X86_CPU_FLAGS CPU_FLAGS
+
 RESTRICT="!test? ( test )"
 
 # curl is needed for pulling models from huggingface
-# numpy is used by convert_hf_to_gguf.py
 COMMON_DEPEND="
 	curl? ( net-misc/curl:= )
-	openblas? ( sci-libs/openblas:= )
 	openmp? ( llvm-runtimes/openmp:= )
-	blis? ( sci-libs/blis:= )
-	flexiblas? ( sci-libs/flexiblas:= )
+	blas? (
+		virtual/blas[flexiblas=]
+		flexiblas? ( sci-libs/flexiblas:=[blis?,openblas?,openmp?] )
+		!flexiblas? (
+			blis? ( sci-libs/blis:=[openmp?] )
+			openblas? ( sci-libs/openblas:=[openmp?] )
+		)
+	)
 	rocm? (
 		>=dev-util/hip-${ROCM_VERSION}:=
 		>=sci-libs/hipBLAS-${ROCM_VERSION}:=
@@ -108,11 +114,20 @@ DEPEND="${COMMON_DEPEND}
 	)
 "
 RDEPEND="${COMMON_DEPEND}
-	>=dev-python/numpy-2.2.6
 	opencl? ( dev-libs/opencl-icd-loader )
 	vulkan? ( media-libs/vulkan-loader )
 "
-BDEPEND="vulkan? ( media-libs/shaderc )"
+BDEPEND="
+	opencl? ( ${PYTHON_DEPS} )
+	vulkan? ( media-libs/shaderc )
+	test? ( $(python_gen_any_dep 'dev-python/jinja2[${PYTHON_USEDEP}]') )
+"
+
+python_check_deps() {
+	if use test; then
+		python_has_version "dev-python/jinja2[${PYTHON_USEDEP}]"
+	fi
+}
 
 pkg_pretend() {
 	[[ ${MERGE_TYPE} != binary ]] && use openmp && tc-check-openmp
@@ -126,6 +141,10 @@ pkg_setup() {
 				ewarn "To use ROCm/HIP, you need to have HSA_AMD_SVM option enabled in your kernel."
 			fi
 		fi
+	fi
+
+	if use opencl || use test; then
+		python-any-r1_pkg_setup
 	fi
 
 	[[ ${MERGE_TYPE} != binary ]] && use openmp && tc-check-openmp
@@ -189,6 +208,7 @@ src_configure() {
 		-DGGML_AMX_INT8=$(usex cpu_flags_x86_amx_int8)
 		-DGGML_AMX_BF16=$(usex cpu_flags_x86_amx_bf16)
 
+		-DGGML_BLAS=$(usex blas)
 		-DGGML_CUDA=$(usex cuda)
 		-DGGML_VULKAN=$(usex vulkan)
 		-DGGML_OPENMP=$(usex openmp)
@@ -196,22 +216,24 @@ src_configure() {
 		-DGGML_OPENCL=$(usex opencl)
 	)
 
-	if use openblas ; then
-		mycmakeargs+=(
-			-DGGML_BLAS=ON -DGGML_BLAS_VENDOR=OpenBLAS
-		)
-	fi
-
-	if use blis ; then
-		mycmakeargs+=(
-			-DGGML_BLAS=ON -DGGML_BLAS_VENDOR=FLAME
-		)
-	fi
-
-	if use flexiblas; then
-		mycmakeargs+=(
-			-DGGML_BLAS=ON -DGGML_BLAS_VENDOR=FlexiBLAS
-		)
+	if use blas; then
+		if use flexiblas ; then
+			mycmakeargs+=(
+				-DGGML_BLAS_VENDOR="FlexiBLAS"
+			)
+		elif use blis ; then
+			mycmakeargs+=(
+				-DGGML_BLAS_VENDOR="FLAME"
+			)
+		elif use openblas ; then
+			mycmakeargs+=(
+				-DGGML_BLAS_VENDOR="OpenBLAS"
+			)
+		else
+			mycmakeargs+=(
+				-DGGML_BLAS_VENDOR="Generic"
+			)
+		fi
 	fi
 
 	if use cuda; then
@@ -238,4 +260,11 @@ src_test() {
 		test-arg-parser  # due to network sandbox in download functions test
 	)
 	cmake_src_test
+}
+
+src_install() {
+	cmake_src_install
+
+	dodoc -r "${S}"/docs
+	dodoc "${S}"/tools/*/README.md
 }
