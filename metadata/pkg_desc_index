@@ -385,7 +385,7 @@ app-misc/wtf 0.43.0: The personal information dashboard for your terminal
 app-misc/x86-64-level 0.2.2 9999: Get the x86-64 Microarchitecture Level on the Current Machine
 app-misc/xplr 1.1.2: A hackable, minimal, fast TUI file explorer
 app-misc/yazi 25.2.11-r1 25.3.2 25.4.8 25.5.31 26.1.22 9999: Blazing fast terminal file manager written in Rust, based on async I/O.
-app-misc/zcock 0.2.1 0.2.2: Print an emoji according to traditional chinese calendar and more
+app-misc/zclock 0.2.3: Print an emoji according to traditional chinese calendar and more
 app-mobilephone/flashlight 0.1.1-r3: Simple flashlight application for the PinePhone
 app-mobilephone/mobile-config-firefox 2.1.0: Mobile and privacy friendly configuration for Firefox
 app-mobilephone/pinephone-modem-scripts 0.20.8: Modem scripts for the PinePhone
@@ -398,7 +398,7 @@ app-office/lotus123r3 1.0.0_rc4: A native port of Lotus 1-2-3 to Linux
 app-office/nixnote-bin 2.1.10: Free and open source note taking app, compatible with Evernote sync server
 app-office/notesnook-bin 2.6.12: End-to-end encrypted note taking alternative to Evernote
 app-office/obsidian 1.9.14 1.10.3 1.12.7: A second brain, for you, forever.
-app-office/openoffice-bin 4.1.16: Apache OpenOffice productivity suite
+app-office/openoffice-bin 4.1.17: Apache OpenOffice productivity suite
 app-office/pdfcraft 0.8.0: Accessibility: the Accessibility Checker (32 rules), its report and fixes
 app-office/pyspread 2.4: Pyspread is a non-traditional spreadsheet written in Python
 app-office/softmaker-office-nx 1234: SoftMaker Office NX binary package
@@ -450,7 +450,7 @@ app-text/jrnl 4.2.1: Collect your thoughts and notes without leaving the command
 app-text/komikku 1.103.0: Manga reader for GNOME
 app-text/koodo-reader-bin 1.5.1 1.6.3: A modern ebook manager and reader with sync and backup capacities
 app-text/lchat 1.0-r2: Line oriented front end for ii-like chat programs
-app-text/lizard 1.23.0 1.24.0: A simple code complexity analyser, supports most of the popular languages.
+app-text/lizard 1.23.0 1.24.0 1.24.1: A simple code complexity analyser, supports most of the popular languages
 app-text/lorien-bin 0.6.0-r2: Infinite canvas drawing/whiteboarding. Made with Godot.
 app-text/lsp 0.5.0_rc4 9999: The least significant pager
 app-text/markdown-oxide 0.25.11 0.25.12: PKM Markdown Language Server
@@ -564,7 +564,7 @@ dev-crystal/spectator 0.12.2-r1 0.12.4: Feature-rich testing framework for Cryst
 dev-crystal/webdrivers 0.4.3-r2 0.4.5: Helps manage drivers for Selenium, such as the Chromedriver
 dev-crystal/webless 0.1.0-r1 0.2.0-r1: HTTP::Client for testing HTTP::Handlers directly and maintaining cookies
 dev-crystal/webmock 0.14.0-r1: Mock HTTP client
-dev-db/couchdb 3.5.2-r1: Document-oriented NoSQL database
+dev-db/couchdb 3.5.2-r1 3.5.3: Document-oriented NoSQL database
 dev-db/libpg_query 16.5.1.0 17.6.0.0: C library for accessing the PostgreSQL parser outside of the server environment
 dev-db/pg_query_vala 0.1.0_pre20240326-r1 0.1.0_pre20241001: Thin wrapper around libpg_query to use with vala
 dev-db/pg_repack 1.5.3: Reorganize tables in PostgreSQL databases with minimal locks
@@ -969,7 +969,7 @@ dev-python/pillow-jxl-plugin 1.3.7 1.3.8: Pillow plugin for JPEG-XL, using Rust 
 dev-python/pipdeptree 2.34.0: Utility for displaying installed packages in a dependency tree
 dev-python/pipenv 2026.6.1: Python Development Workflow for Humans
 dev-python/plette 2.1.0-r1 2.2.1: Structured Pipfile and Pipfile.lock models
-dev-python/plexapi 4.17.2 4.18.0 4.18.1 4.18.2: Python bindings for the Plex API.
+dev-python/plexapi 4.17.2 4.18.2 4.18.3: Python bindings for the Plex API
 dev-python/plotext 5.3.0 5.3.2: Plotting on terminal
 dev-python/plum 0.8.7: Pack/Unpack Memory
 dev-python/polyfactory 3.3.0: Simple and powerful factories for mock data generation
@@ -997,6 +997,7 @@ dev-python/pydantic-extra-types 2.11.1 2.11.2: Extra Pydantic types
 dev-python/pydispatcher 2.0.7: Multi-producer-multi-consumer signal dispatching mechanism
 dev-python/pydocket 0.23.1: A distributed background task system for Python functions
 dev-python/pydub 0.25.1: Manipulate audio with an simple and easy high level interface
+dev-python/pyee 14.0.0: A rough port of Node.js's EventEmitter to Python with a few tricks of its own
 dev-python/pyfiglet 1.0.2: Pure-python FIGlet implementation
 dev-python/pyftdi 0.57.2: PyFtdi provides a user-space driver for FTDI devices
 dev-python/pygeotile 1.0.6: Python package to handle tiles and points of different projections.
@@ -1192,7 +1193,7 @@ dev-util/git-pages-cli 1.10.1: Command-line application for publishing sites to 
 dev-util/gitlab-ci-local-bin 4.43.0 4.47.0 4.56.0: Run gitlab pipelines locally as shell executor or docker executor
 dev-util/go-task 3.53.1 3.54.0: A task runner / simpler Make alternative written in Go
 dev-util/google-antigravity 2.22.0 2.23.1 2.24.0: Google Antigravity 2.0, a dedicated platform to work with agents
-dev-util/google-antigravity-cli 1.2.17 1.3.6 1.4.0: Command-line interface for Google's Antigravity agentic development platform
+dev-util/google-antigravity-cli 1.2.17 1.3.6 1.4.0 1.4.2: Command-line interface for Google's Antigravity agentic development platform
 dev-util/google-antigravity-ide 2.0.4 2.1.1 2.5.5: Google Antigravity's Editor view with context-aware agent
 dev-util/grok-build 1.0.41 1.0.45: SpaceXAI's coding agent harness and TUI
 dev-util/gshards 0.2 0.2-r1: Small helper tools to aid installing Crystal packages in Gentoo
@@ -1222,7 +1223,7 @@ dev-util/nvchecker 2.21 2.22: New version checker for software releases
 dev-util/ocamlformat 0.26.2-r1 0.29.0: Auto-formatter for OCaml code
 dev-util/ocp-indent 1.8.2: Indentation tool for OCaml, to be used from editors like Emacs and Vim.
 dev-util/ols 2026.05 9999: Language server for Odin Programming language
-dev-util/opencode-bin 1.19.1 1.19.3 2.0.30 2.0.31: The open source coding agent
+dev-util/opencode-bin 1.19.1 1.19.3 2.0.30 2.0.32: The open source coding agent
 dev-util/payload-dumper-go 2.1.0: an android OTA payload dumper written in Go
 dev-util/pcpp 1.30: A C99 preprocessor written in pure Python
 dev-util/pifpaf 3.3.0: Suite of tools and fixtures to manage daemons for testing
@@ -1269,7 +1270,7 @@ dev-vcs/gitcomet 0.2.4 0.2.5 0.3.0: GitComet is user interface for GIT workflows
 dev-vcs/gitkay 1.2.0: A fast, native Wayland git history viewer — gitk, but okay
 dev-vcs/gitqlient 1.6.3 9999: Multi-platform Git client written with Qt
 dev-vcs/got 0.127 0.128: Version control system prioritizing ease of use over flexibility
-dev-vcs/lazygit 0.64.1 0.65.1 0.66.0 0.66.1 9999: Simple terminal UI for git commands
+dev-vcs/lazygit 0.64.1 0.65.1 0.66.0 0.66.1 0.66.2 9999: Simple terminal UI for git commands
 dev-vcs/llm-git 5.1.0 5.4.0-r1: AI-powered git commit message generator using LLMs via OpenAI-compat APIs
 dev-vcs/pijul 1.0.0_beta9 1.0.0_beta15 1.0.0_beta24: A distributed version control system based on a theory of patches
 dev-zig/zls 0.10.0-r2 0.13.0-r1 0.14.0 0.15.0 0.16.0 9999: Non-official language server for Zig
@@ -1333,7 +1334,7 @@ games-rpg/open-adventure 1.17 1.18 1.20: Forward-port of the Crowther/Woods Adve
 games-rpg/primordia 3.6.70667: A cyberpunk point-and-click adventure game
 games-rpg/snoot-game 1.12.0: Visual novel parody of Goodbye Volcano High
 games-server/among-sus 20210519: Among Us, but it's a text adventure
-games-simulation/kittenspaceagency-bin 2026.10.10-r5554: A space flight and rocketry simulation
+games-simulation/kittenspaceagency-bin 2026.10.13-r5602: A space flight and rocketry simulation
 games-simulation/youre-the-os 1.11.1 1.11.2: Game where you are a computer's OS and have to manage processes, memory and I/O
 games-strategy/7k-ambition 3.2.14 9999: Seven Kingdoms: Ambition
 games-strategy/gigalomania 1.0.1: Libre clone of Mega-Lo-Mania (original from ~1990), supports original resources
@@ -1681,7 +1682,7 @@ media-sound/librespot 0.8.0: Open Source Spotify client library
 media-sound/listenbrainz-mpd 2.6.0: ListenBrainz submission client for MPD
 media-sound/lms 3.79.0 3.80.0 3.81.0: Lightweight Music Server
 media-sound/loudgain 0.6.8-r2 0.6.8_p20240128-r2 0.6.8_p20240128-r3: Versatile ReplayGain 2.0 loudness normalizer
-media-sound/mopidy 3.4.2-r1 4.0.4: An extensible music server written in Python
+media-sound/mopidy 3.4.2-r1 4.0.4 4.0.5: An extensible music server written in Python
 media-sound/mopidy-spotify 5.0.1-r1: Mopidy extension for playing music from Spotify
 media-sound/mousai 0.7.9: Identify songs in seconds
 media-sound/mpd-discord-rpc 1.11.0: Displays your currently playing data from MPD in Discord using Rich Presence.
@@ -1692,7 +1693,7 @@ media-sound/neocrystal 2.1.1 9999: A terminal user interface music player in Rus
 media-sound/netcat-cpi 2014.04.29-r1: Kernel module edition of the Cycles Per Instruction (2014) album
 media-sound/noson-app 5.6.20: The essential to control music from your SONOS devices on Linux platforms
 media-sound/nuclear-bin 1.47.1 1.48.6: Streaming music player that finds free music for you
-media-sound/openaudible-bin 4.8.8 4.9 5.0 5.0.1: OpenAudible is a cross-platform audiobook manager designed for Audible users
+media-sound/openaudible-bin 4.8.8 4.9 5.0.1 5.0.2: OpenAudible is a cross-platform audiobook manager designed for Audible users
 media-sound/openutau 0.1.327 0.1.463 0.1.529 9999: Open source UTAU successor
 media-sound/orca-c 0_pre20250416-r1 9999: Live Programming Environment(C Port)
 media-sound/pamixer 1.6 9999: Pulseaudio command line mixer.
@@ -1703,7 +1704,7 @@ media-sound/pipewire-module-xrdp 0.1_pre20230609-r1 0.2: PipeWire module which e
 media-sound/plexamp 4.13.0: A dedicated music player for your Plex media library
 media-sound/qbitmplayer 3.1.2 3.2.0-r1 3.3.1: Music Player written in C++ & Qt.
 media-sound/qloud 1.4.2 1.4.3: Tool to measure loudspeaker frequency and step responses and distortions
-media-sound/qobine 2026.06.12 2026.07.01 2026.07.21: Tui, web and rfid player for Qobuz
+media-sound/qobine 2026.07.01 2026.07.21 2026.10.16: Tui, web and rfid player for Qobuz
 media-sound/rmpc 0.9.0 0.10.0 0.11.0-r1 9999: A beautiful and configurable TUI client for MPD
 media-sound/rsgain 3.5.1-r1 3.5.3-r1: Really Simple replay Gain calculator for tagging audio files
 media-sound/shortwave 5.0.0 5.1.0: An internet radio player
@@ -1729,8 +1730,8 @@ media-video/cleanit 0.4.9: A command line tool that helps you to keep your subti
 media-video/delfin 0.4.7 0.4.8: Stream movies and TV shows from Jellyfin
 media-video/dependency-control 0.6.4: Package manager for Aegisub automation scripts
 media-video/ffmpeg4discord 0.2.4 0.3.0 0.3.1 9999: Target File Size Video Compression for Discord with FFmpeg
-media-video/gpu-screen-recorder 6.0.1 6.1.1 6.1.3 9999: A screen recorder that has minimal impact on system performance
-media-video/gpu-screen-recorder-gtk 5.7.9 9999: GTK frontend for gpu-screen-recorder.
+media-video/gpu-screen-recorder 6.1.1 6.1.3 6.1.4 9999: A screen recorder that has minimal impact on system performance
+media-video/gpu-screen-recorder-gtk 5.7.9 5.8.1 9999: GTK frontend for gpu-screen-recorder
 media-video/linux-enable-ir-emitter 7.0.0_beta: Enables the infrared camera emitter, supports any v4l2 (UVC) device
 media-video/livekit 1.13.9: Real-time media server for WebRTC
 media-video/livekit-cli 2.18.7 2.19.0: Command line interface to LiveKit
@@ -1796,7 +1797,7 @@ net-dialup/tio 3.9: Simple TTY terminal application
 net-dns/AdGuardHome 0.107.77 0.107.78 0.107.79: Network-wide ads & trackers blocking DNS server like Pi-Hole with web ui
 net-dns/blocky 0.33.0 0.34.0 0.35.0 9999: Fast and lightweight DNS proxy as ad-blocker with many features written in Go
 net-dns/noip-duc 3.3.0: No-IP Dynamic Update Client (https://www.noip.com)
-net-dns/technitium-dns 15.6.1: Open-source, self-hosted authoritative and recursive DNS+DHCP server
+net-dns/technitium-dns 15.6.2: Open-source, self-hosted authoritative and recursive DNS+DHCP server
 net-fs/httpdirfs 1.2.7: Filesystem to mount HTTP directory listings, with a permanent cache
 net-fs/webdav-server-rs 0.4.0_pre20231124: WebDAV server in Rust
 net-im/Quaternion 0.0.97.1: A Qt-based IM client for Matrix
@@ -1816,7 +1817,7 @@ net-im/endcord-bin 1.5.1 1.5.2 1.5.3: Feature rich Discord TUI client
 net-im/equibop-bin 3.2.2 3.3.0 3.3.1: Equibop is a customizable and privacy friendly Discord desktop app
 net-im/eturnal 1.12.1 1.12.2: STUN/TURN server
 net-im/flare 0.12.0-r1: Chat with your friends on Signal
-net-im/fluffychat-bin 2.9.5 2.10.0: The cutest instant messenger in the [matrix]
+net-im/fluffychat-bin 2.9.5 2.10.0 2.10.0-r1: The cutest instant messenger in the [matrix]
 net-im/fluxer-canary-bin 2026.927.142044 2026.928.213900: Open source voice and text chat client
 net-im/forkgram 6.5.1: Fork of the official Telegram Desktop app with small useful additions
 net-im/forkgram-bin 6.6.2: Fork of official Telegram Desktop app with small useful additions - bin
@@ -2078,7 +2079,7 @@ sci-mathematics/rink 0.8.0-r1 0.9.0-r1 9999: Unit conversion tool, similar to fr
 sci-mathematics/rstudio-desktop-bin 2023.09.1_p494 2024.12.0_p467 2024.12.0_p467-r1: IDE for R and Python
 sci-misc/boinc-wrapper 26018-r3 26019 26019-r1: Wrapper to use non-BOINC apps with BOINC
 sci-misc/ik_llama-cpp 9999: llama.cpp fork with additional SOTA quants and improved performance
-sci-misc/llama-cpp 0.4.0 0.4.1 9999: Port of Facebook's LLaMA model in C/C++
+sci-misc/llama-cpp 0.4.1 0.5.0 0.6.0 9999: Port of Facebook's LLaMA model in C/C++
 sci-misc/praat 7.0.02-r1: Doing phonetics by computer
 sci-misc/stable-diffusion-cpp 9999: Diffusion model(SD,Flux,Wan,Qwen Image,Z-Image,...) inference in pure C/C++
 sci-ml/aichat 0.30.0: All-in-one LLM CLI Tool
@@ -2171,7 +2172,7 @@ sys-fs/btrd 0.5.4: The btrfs debugger
 sys-fs/btrfs-dump 20260409: Metadata dumper for btrfs
 sys-fs/btrfs-heatmap 9-r1: Python 3 script to draw a heatmap of a btrfs filesystem
 sys-fs/diskonaut 0.10.0 0.11.0 9999: Terminal disk space visual navigator
-sys-fs/dua-cli 2.44.0 2.45.0 2.45.1: A tool to conveniently learn about the disk usage of directories, fast!
+sys-fs/dua-cli 2.45.0 2.45.1 2.46.0: A tool to conveniently learn about the disk usage of directories, fast!
 sys-fs/dwarfs 0.15.8: Fast high compression read-only filesystem for Linux, FreeBSD, macOS and Windows
 sys-fs/dwarfs-bin 0.15.8: Static version of a fast very high compression read-only FUSE file system
 sys-fs/ffmpegfs 2.18 2.50: FUSE-based transcoding filesystem with support from/to many formats
@@ -2249,7 +2250,7 @@ www-apps/zola 0.22.1-r5 0.23.6: A fast static site generator with everything bui
 www-client/badwolf 1.4.0-r2 9999-r1: Minimalist and privacy-oriented WebKitGTK+ browser
 www-client/browsh 1.8.2 1.8.3: A fully-modern text-based browser, rendering to TTY and browsers
 www-client/chawan 0.4.4-r1 0.5.0 9999: TUI web browser; supports CSS, images, JavaScript, and multiple web protocols
-www-client/helium-bin 0.17.2.1 0.18.1.1 0.18.2.1: Private, fast, and honest web browser based on Chromium
+www-client/helium-bin 0.18.1.1 0.18.2.1 0.19.4.1: Private, fast, and honest web browser based on Chromium
 www-client/mullvad-browser 140.13.0-r2 153.3.2-r2 153.4.3: The Mullvad Browser is developed to minimize tracking and fingerprinting
 www-client/mullvad-browser-bin 15.0.23 15.0.24 15.0.25: The Mullvad Browser is developed to minimize tracking and fingerprinting
 www-client/nyxt 3.11.8 3.12.0 9999: Nyxt - the hacker's power-browser
