@@ -194,7 +194,7 @@ app-crypt/certbot-dns-cloudflare 5.6.0: Cloudflare DNS Authenticator plugin for 
 app-crypt/certbot-dns-desec 1.2.1: deSEC DNS Authenticator plugin for Certbot
 app-crypt/certbot-dns-gandi 1.6.2: Certbot plugin for authentication using Gandi LiveDNS
 app-crypt/certbot-dns-infomaniak 0.2.5 0.3.2 0.3.3: Infomaniak DNS Authenticator plugin for Certbot
-app-crypt/certbot-dns-poweradmin 0.2.5 0.2.6: Certbot plugin for authentication using PowerAdmin
+app-crypt/certbot-dns-poweradmin 0.2.6 0.2.7: Certbot plugin for authentication using PowerAdmin
 app-crypt/certbot-dns-rfc2136 3.2.0-r100: RFC 2136 DNS Authenticator plugin for Certbot (Let’s Encrypt Client)
 app-crypt/clevis 24: Automated Encryption Framework
 app-crypt/cryptsetup-scripts-dinit 2.8.6: Debian cryptsetup-scripts with patches for service usage
@@ -629,9 +629,13 @@ dev-hare/hare-png 9999: PNG implementation for Hare
 dev-hare/hare-ssh 0.26.0 9999: SSH library for Hare
 dev-hare/hare-xml 0.25.2.0 9999: XML support for Hare
 dev-haskell/strict-concurrency 0.2.4.3: Strict concurrency abstractions
+dev-java/automaton 1.12.4: Finite-state automata and regular expressions for Java
+dev-java/axmlprinter2 1.0: Parser and printer for Android binary XML
 dev-java/corretto-bin 8.462.08.1 11.0.28.6.1 17.0.16.8.1 21.0.8.9.1 25.0.0.36.2: Prebuilt Java JDK binaries provided by Amazon Web Services
 dev-java/jdtls-bin 1.56.0_p202601201639 1.62.0_p202610131109 1.63.0_p202610151832: Java language server
 dev-java/microsoft-openjdk-bin 11.0.28 17.0.16 21.0.8 25.0.0: Prebuilt Java JDK binaries provided by Microsoft
+dev-java/permit-reflect 0.4: Reflection utilities for Java modules
+dev-java/yajsw 14.01: Yet Another Java Service Wrapper, runs any application as a daemon
 dev-lang/bun-bin 1.3.14: Fast all-in-one JavaScript runtime, bundler, transpiler, and package manager
 dev-lang/c3c 0.7.5 0.8.4: The C3 programming language compiler
 dev-lang/cc65 2.19-r3 9999-r1: Cross-development package for 65(C)02 systems
@@ -904,7 +908,7 @@ dev-python/iuliia 0.13.0: Transliterate Cyrillic to Latin in every possible way
 dev-python/jinja2-cli 0.8.2: CLI for Jinja2
 dev-python/jiter 0.16.0: Fast iterable JSON parser
 dev-python/jplephem 2.23 2.24: Python version of NASA DE4xx ephemerides for Astronomical Alamanac
-dev-python/jpype 1.6.0: Bridge to allow Python programs full access to Java class libraries
+dev-python/jpype 1.7.1: Bridge to allow Python programs full access to Java class libraries
 dev-python/json-repair 0.63.4: A package to repair broken json strings
 dev-python/json_exporter 1.0.2: Python-based library for exporting JSON data as metrics for Prometheus.
 dev-python/jsonfeed 1.1.2: Python package for parsing and generating JSON feeds.
@@ -1201,7 +1205,7 @@ dev-util/flips 1.31 1.31_p202: Patcher for IPS and BPS files
 dev-util/forgejo-runner 12.13.2 13.2.0 9999: A daemon that connects to a Forgejo instance and runs jobs for CI
 dev-util/fortls 2.13.0 3.0.0 3.1.1 3.1.2 3.2.2: Fortran Language Server (fortls)
 dev-util/fortran-test-drive 0.4.0 0.5.0: The simple testing framework (for Fortran)
-dev-util/gammaray 3.3.1 3.4.0 3.4.0-r1: High-level runtime introspection tool for Qt applications
+dev-util/gammaray 3.4.0-r1 3.4.1: High-level runtime introspection tool for Qt applications
 dev-util/gemini-cli 0.63.0 0.64.0: Gemini CLI - a command-line AI workflow tool by Google
 dev-util/genTree 0.1.0 9999: Gentoo rootfs tree generator
 dev-util/gersemi 0.27.7 0.28.0: A formatter to make your CMake code the real treasure
@@ -1239,7 +1243,7 @@ dev-util/nvchecker 2.21 2.22: New version checker for software releases
 dev-util/ocamlformat 0.26.2-r1 0.29.0: Auto-formatter for OCaml code
 dev-util/ocp-indent 1.8.2: Indentation tool for OCaml, to be used from editors like Emacs and Vim.
 dev-util/ols 2026.05 9999: Language server for Odin Programming language
-dev-util/opencode-bin 1.19.1 1.19.3 2.0.30 2.0.32: The open source coding agent
+dev-util/opencode-bin 1.19.1 1.19.3 2.0.30 2.0.32 2.1.1: The open source coding agent
 dev-util/payload-dumper-go 2.1.0: an android OTA payload dumper written in Go
 dev-util/pcpp 1.30: A C99 preprocessor written in pure Python
 dev-util/pifpaf 3.3.0: Suite of tools and fixtures to manage daemons for testing
@@ -1287,7 +1291,7 @@ dev-vcs/gitcomet 0.2.4 0.2.5 0.3.0: GitComet is user interface for GIT workflows
 dev-vcs/gitkay 1.2.0: A fast, native Wayland git history viewer — gitk, but okay
 dev-vcs/gitqlient 1.6.3 9999: Multi-platform Git client written with Qt
 dev-vcs/got 0.127 0.128: Version control system prioritizing ease of use over flexibility
-dev-vcs/lazygit 0.64.1 0.65.1 0.66.0 0.66.1 0.66.2 9999: Simple terminal UI for git commands
+dev-vcs/lazygit 0.64.1 0.65.1 0.66.0 0.66.1 0.66.2-r1 9999: Simple terminal UI for git commands
 dev-vcs/llm-git 5.1.0 5.4.0-r1: AI-powered git commit message generator using LLMs via OpenAI-compat APIs
 dev-vcs/pijul 1.0.0_beta9 1.0.0_beta15 1.0.0_beta24: A distributed version control system based on a theory of patches
 dev-zig/zls 0.10.0-r2 0.13.0-r1 0.14.0 0.15.0 0.16.0 9999: Non-official language server for Zig
@@ -1351,7 +1355,7 @@ games-rpg/open-adventure 1.17 1.18 1.20: Forward-port of the Crowther/Woods Adve
 games-rpg/primordia 3.6.70667: A cyberpunk point-and-click adventure game
 games-rpg/snoot-game 1.12.0: Visual novel parody of Goodbye Volcano High
 games-server/among-sus 20210519: Among Us, but it's a text adventure
-games-simulation/kittenspaceagency-bin 2026.10.13-r5602: A space flight and rocketry simulation
+games-simulation/kittenspaceagency-bin 2026.10.19-r5638: A space flight and rocketry simulation
 games-simulation/youre-the-os 1.11.1 1.11.2: Game where you are a computer's OS and have to manage processes, memory and I/O
 games-strategy/7k-ambition 3.2.14 9999: Seven Kingdoms: Ambition
 games-strategy/gigalomania 1.0.1: Libre clone of Mega-Lo-Mania (original from ~1990), supports original resources
@@ -1460,7 +1464,7 @@ gui-apps/klassy 6.7.3 9999: Klassy QT6 window decoration theme for KDE Plasma 6.
 gui-apps/koi 0.6: Theme scheduling for the KDE Plasma Desktop
 gui-apps/labwc-tweaks 0.1.0 9999: A Qt configuration tool for labwc
 gui-apps/labwc-tweaks-gtk 20260302 99999999: A GTK fork of labwc-tweaks
-gui-apps/lan-mouse 0.10.0 0.10.0_p20251027: Software KVM Switch / mouse & keyboard sharing software for Local Area Networks
+gui-apps/lan-mouse 0.10.0 0.10.0_p20251027 0.11.0: Software KVM Switch / mouse & keyboard sharing software for Local Area Networks
 gui-apps/lemurs 0.3.2 0.4.0 0.4.0-r1: A TUI Display/Login Manager
 gui-apps/libre-menu-editor 1.10.5 9999: A libre menu editor for desktop entries
 gui-apps/lswt 1.0.4-r1 2.0.0 9999: List Wayland toplevels
@@ -1469,7 +1473,7 @@ gui-apps/mpvpaper 1.8 9999: A video wallpaper program for wlroots based wayland 
 gui-apps/niri-float-sticky 0.0.9: A utility to make floating windows visible across all workspaces in niri
 gui-apps/niri-sidebar 0.4.0: A lightweight, external sidebar manager for the Niri window manager.
 gui-apps/noctalia 5.1.0 5.2.0 5.2.1 5.3.0 9999: A lightweight Wayland shell and bar built directly on Wayland + OpenGL ES
-gui-apps/noctalia-greeter 1.2.1 1.3.0 1.3.1 1.5.0 1.6.0 9999: A minimal login greeter for greetd that matches Noctalia Shell
+gui-apps/noctalia-greeter 1.6.0 1.7.0 9999: A minimal login greeter for greetd that matches Noctalia Shell
 gui-apps/nwg 0: meta package package for nwg-shell
 gui-apps/nwg-bar 0.1.5 0.1.6: GTK3-based button bar for wlroots-based compositors
 gui-apps/nwg-clipman 0.2.5 0.2.8: nwg-shell clipboard manager - a GTK3-based GUI for cliphist
@@ -1737,7 +1741,7 @@ media-sound/subtui 2.14.3: A lightweight Subsonic TUI music player built in Go w
 media-sound/supersonic 0.21.0 0.21.1 0.22.1: A lightweight and full-featured cross-platform desktop client
 media-sound/tenacity 1.3.4-r4 1.3.5-r1: Easy-to-use, privacy-friendly, FLOSS, cross-platform multi-track audio editor
 media-sound/tidal-hifi-bin 5.16.0-r1 5.17.0 6.1.0 6.2.0 6.3.0 6.3.1 7.0.0 7.0.1: Web version of Tidal running in electron with Hi-Fi support thanks to Widevine
-media-sound/yandex-music 5.113.2 5.116.3 5.119.0 5.122.0: Yandex Music streaming service
+media-sound/yandex-music 5.113.2 5.116.3 5.119.0 5.122.0 5.123.4: Yandex Music streaming service
 media-sound/ymuse 0.22: GTK client for Music Player Daemon (MPD) written in Go
 media-sound/ytm-player 2.0.0 2.1.0 9999: Full-featured YouTube Music TUI client with vim-style navigation
 media-sound/zita-ajbridge 0.8.4-r2: zita-a2j and zita-j2a - bridges between ALSA and JACK
@@ -1763,7 +1767,7 @@ media-video/obs-streamfx 0.12.0.9999 9999: OBS® Studio plugin which adds many n
 media-video/obs-vaapi 0.4.1 0.4.2 9999: OBS Studio VAAPI support via GStreamer
 media-video/pgsrip 0.1.12: A command line tool to extract and convert PGS subtitles into SRT format
 media-video/showtime 50.0-r2: Video player for GNOME
-media-video/stremio 1.2.2-r1: Native Linux client for Stremio
+media-video/stremio 1.2.2-r2: Native Linux client for Stremio
 media-video/syncplay 1.7.5 1.7.5-r1 1.7.6: Client/server to synchronize media playback
 media-video/uxplay 1.73.6-r1 1.73.7: AirPlay Unix mirroring server
 media-video/walksnail-osd-tool 0.3.0-r2 9999: Tool for rendering OSDs over Walksnail DVR recordings
@@ -1953,7 +1957,7 @@ net-misc/wayback_machine_downloader 2.3.0 2.3.1: Download an entire website from
 net-misc/whatscli 1.0.6 1.0.11: A command line interface for WhatsApp
 net-misc/wlvncc 20250725 20260429 99999999: A Wayland Native VNC Client
 net-misc/wsdd 0.8 0.9: A Web Service Discovery host daemon.
-net-misc/wstunnel 10.7.1 11.0.0: Tunnel all your traffic over Websocket or HTTP2 - Bypass firewalls/DPI
+net-misc/wstunnel 11.0.0 11.1.0: Tunnel all your traffic over Websocket or HTTP2 - Bypass firewalls/DPI
 net-misc/xh 0.25.3 0.26.1 0.26.2: Friendly and fast tool for sending HTTP requests
 net-misc/xkcd-handler 1.1.4: A handler for XKCD urls
 net-misc/xmrig-mo 6.21.2 6.22.2: MoneroOcean fork of xmrig that supports algo switching
@@ -2241,7 +2245,7 @@ sys-process/task-spooler 2.0.0 9999: A scheduler for CPU tasks
 sys-process/xe 1.0-r1: Simple xargs and apply replacement with sane defaults
 virtual/crystal-db 0.14 0.14-r1: Virtual for Crystal database drivers
 www-apps/anubis 1.25.0 1.26.2: Weighs the soul of incoming HTTP requests to stop AI crawlers
-www-apps/byparr 3.0.4: Proxy server to bypass captchas
+www-apps/byparr 3.0.4 3.0.4-r1: Proxy server to bypass captchas
 www-apps/code-server-bin 4.18.0 4.19.1 4.90.3: VS Code in the browser (binary version with unbundled node and ripgrep)
 www-apps/flaresolverr 3.5.0 3.5.2: Proxy server to bypass Cloudflare protection
 www-apps/forgejo 15.0.7 15.0.9 16.0.3 16.0.5: A self-hosted lightweight software forge

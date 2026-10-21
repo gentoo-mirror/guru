@@ -1,0 +1,15 @@
+BDEPEND=app-arch/unzip >=dev-java/gradle-bin-8.5
+DEFINED_PHASES=compile install preinst prepare setup
+DEPEND=>=dev-java/automaton-1.11.8:0 dev-java/commons-beanutils:0 >=dev-java/commons-cli-1.11.0:0 >=dev-java/commons-collections-4.5.0:4 >=dev-java/commons-io-2.21.0:0 >=dev-java/commons-lang-3.20.0:0 >=dev-java/commons-logging-1.3.6:0 >=dev-java/commons-text-1.15.0:0 >=dev-java/commons-vfs-2.0:2 >=dev-java/jna-5.18.1:0 >=dev-java/joda-time-2.13.0:0 >=dev-java/permit-reflect-0.4:0 >=dev-java/slf4j-api-2.0.3:0 >=dev-java/slf4j-simple-2.0.3:0 >=dev-java/velocity-2.4.1:0 virtual/jdk:21 >=dev-java/java-config-2.2.0-r3 source? ( app-arch/zip )
+DESCRIPTION=Yet Another Java Service Wrapper, runs any application as a daemon
+EAPI=8
+HOMEPAGE=https://yajsw.sourceforge.io/
+INHERIT=edo edos2unix java-pkg-2 multiprocessing prefix
+IUSE=doc source
+KEYWORDS=~amd64
+LICENSE=Apache-1.1 Apache-2.0 BSD BSD-2 CC-BY-2.5 GPL-2+ LGPL-2.1+ MIT
+RDEPEND=>=dev-java/automaton-1.11.8:0 dev-java/commons-beanutils:0 >=dev-java/commons-cli-1.11.0:0 >=dev-java/commons-collections-4.5.0:4 >=dev-java/commons-io-2.21.0:0 >=dev-java/commons-lang-3.20.0:0 >=dev-java/commons-logging-1.3.6:0 >=dev-java/commons-text-1.15.0:0 >=dev-java/commons-vfs-2.0:2 >=dev-java/jna-5.18.1:0 >=dev-java/joda-time-2.13.0:0 >=dev-java/permit-reflect-0.4:0 >=dev-java/slf4j-api-2.0.3:0 >=dev-java/slf4j-simple-2.0.3:0 >=dev-java/velocity-2.4.1:0 app-admin/sudo >=virtual/jre-21:* >=dev-java/java-config-2.2.0-r3 source? ( app-arch/zip )
+SLOT=0
+SRC_URI=https://sourceforge.net/projects/yajsw/files/yajsw/yajsw-stable-14.01/yajsw-stable-14.01.zip/download -> yajsw-stable-14.01.zip
+_eclasses_=edob	357e125b8c5cad0deccb625e537ea831	edo	e472083829a6e7ff43a197cf536728a2	edos2unix	33e347e171066657f91f8b0c72ec8773	java-utils-2	4fa0be92748bc228f31bd845d285d7f9	java-pkg-2	438c2725ea326202d7fc1eb31af76813	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	prefix	2765cb74ebcf9f9ac73893d4503c8cb6
+_md5_=ccf27cab20696ed6f80a0b81e3dd99c3
