@@ -10,7 +10,7 @@ RUST_MIN_VER="1.93.1"
 inherit cargo
 
 # last update of Cargo.lock
-CRATES_PV="10.7.1"
+CRATES_PV="11.1.0"
 DESCRIPTION="Tunnel all your traffic over Websocket or HTTP2 - Bypass firewalls/DPI"
 HOMEPAGE="https://github.com/erebe/wstunnel/"
 SRC_URI="https://github.com/erebe/wstunnel/archive/v${PV}.tar.gz -> ${P}.tar.gz"

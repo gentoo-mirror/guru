@@ -6,7 +6,7 @@ EAPI=8
 # skip warning for unused files in 3rdparty/backward-cpp
 CMAKE_QA_COMPAT_SKIP=1
 
-inherit cmake qmake-utils xdg
+inherit cmake flag-o-matic qt-utils xdg
 
 MY_PN="GammaRay"
 DESCRIPTION="High-level runtime introspection tool for Qt applications"
@@ -27,13 +27,14 @@ fi
 LICENSE="BSD-2 GPL-2+ MIT"
 SLOT=0
 
-IUSE="3d bluetooth designer doc geolocation highlight kjob scxml svg test wayland webengine"
+IUSE="3d bluetooth designer doc geolocation highlight kjob opengl scxml svg test wayland webengine"
 RESTRICT="!test? ( test )"
+REQUIRED_USE="test? ( opengl )"
 
 RDEPEND="
 	dev-libs/elfutils
-	dev-qt/qtbase:6[concurrent,gui,network,widgets,xml]
-	dev-qt/qtdeclarative:6[widgets]
+	dev-qt/qtbase:6[concurrent,gui,network,opengl?,widgets,xml]
+	dev-qt/qtdeclarative:6[opengl?,widgets]
 	3d? ( dev-qt/qt3d:6[qml] )
 	bluetooth? ( dev-qt/qtconnectivity:6[bluetooth] )
 	designer? ( dev-qt/qttools:6[designer] )
@@ -76,9 +77,17 @@ src_prepare() {
 	if ! use doc; then
 		cmake_comment_add_subdirectory -f docs manual api collection
 	fi
+	if ! use opengl; then
+		# openglsupport requires opengl
+		# quickinspector requires opengl= that we don't want
+		cmake_comment_add_subdirectory -f plugins openglsupport quickinspector
+	fi
 }
 
 src_configure() {
+	# QT_NO_OPENGL for guisupport
+	use opengl || append-cppflags -DQT_NO_OPENGL
+
 	local mycmakeargs=(
 		$(cmake_use_find_package 3d Qt63DAnimation)
 		$(cmake_use_find_package 3d Qt63DExtras)
@@ -99,7 +108,7 @@ src_configure() {
 		$(cmake_use_find_package wayland Wayland)
 		$(cmake_use_find_package webengine Qt6WebEngineWidgets)
 		-DBUILD_TESTING=$(usex test)
-		-DECM_MKSPECS_INSTALL_DIR="$(qt6_get_mkspecsdir)"
+		-DECM_MKSPECS_INSTALL_DIR="$(qt_get_mkspecsdir 6)"
 		# enable doc for manpages
 		-DGAMMARAY_BUILD_DOCS=ON
 		-DGAMMARAY_BUILD_UI=ON

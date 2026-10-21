@@ -42,14 +42,7 @@ src_install() {
 	doexe "KSA"
 	doexe "Brutal.Monitor.Subprocess"
 
-	cat > kittenspaceagency <<- 'ENDWRAPPER' || die
-		#!/usr/bin/env bash
-
-		cd /opt/kittenspaceagency
-		XDG_SESSION_TYPE=x11 exec ./KSA "$@"
-	ENDWRAPPER
-
-	dobin kittenspaceagency
+	dobin "${FILESDIR}"/kittenspaceagency
 
 	make_desktop_entry --eapi9 "/usr/bin/kittenspaceagency" \
 		-d "kittenspaceagency" \
