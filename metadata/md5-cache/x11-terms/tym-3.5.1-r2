@@ -11,7 +11,8 @@ KEYWORDS=~amd64
 LICENSE=MIT
 RDEPEND=lua_single_target_luajit? ( dev-lang/luajit:= ) lua_single_target_lua5-3? ( dev-lang/lua:5.3 ) x11-libs/gtk+:3 x11-libs/vte dev-libs/glib dev-libs/libpcre2 x11-libs/cairo x11-libs/pango
 REQUIRED_USE=^^ ( lua_single_target_luajit lua_single_target_lua5-3 )
+RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://github.com/endaaman/tym/archive/refs/tags/3.5.1.tar.gz -> tym-3.5.1.tar.gz
 _eclasses_=gnuconfig	b4fa4889c6f586d6b069215a86dd9e53	toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	libtool	6a96cd90e5da8c7c615015479f46f1a4	autotools	8e8dec541e781133e5176ee95a872f17	lua-utils	7c89927eda6f21c4c48136247077ab37	lua-single	75fe955a36b18e199213c8739eaebdbb	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575
-_md5_=f5f969f85c18cc4438bfb1c73a8b4575
+_md5_=e7616058e29e7ba0c5cda85316131317

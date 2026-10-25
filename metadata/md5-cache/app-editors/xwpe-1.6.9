@@ -1,0 +1,13 @@
+BDEPEND=virtual/pkgconfig sys-apps/texinfo
+DEFINED_PHASES=configure test
+DEPEND=dev-libs/json-c:= dev-libs/libvterm sys-libs/ncurses:= virtual/zlib gui? ( x11-libs/cairo x11-libs/libX11 x11-libs/libXft x11-libs/pango ) gpm? ( sys-libs/gpm )
+DESCRIPTION=Borland-style programming environment and editor for console and X11
+EAPI=8
+HOMEPAGE=https://codeberg.org/mendezr/xwpe
+IUSE=gpm gui
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=dev-libs/json-c:= dev-libs/libvterm sys-libs/ncurses:= virtual/zlib gui? ( x11-libs/cairo x11-libs/libX11 x11-libs/libXft x11-libs/pango ) gpm? ( sys-libs/gpm )
+SLOT=0
+SRC_URI=https://codeberg.org/mendezr/xwpe/releases/download/v1.6.9/xwpe-1.6.9.tar.gz
+_md5_=bf45e73b92f26c4c0252217c7d29898e

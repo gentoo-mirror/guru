@@ -1,0 +1,13 @@
+BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.28.5
+DEFINED_PHASES=compile configure install prepare test
+DESCRIPTION=Robust mesh cutting and Boolean operations library
+EAPI=8
+HOMEPAGE=https://github.com/cutdigital/mcut
+INHERIT=cmake
+KEYWORDS=~amd64
+LICENSE=LGPL-3+ MPL-2.0 public-domain
+RESTRICT=test
+SLOT=0/1.3.0
+SRC_URI=https://github.com/cutdigital/mcut/archive/refs/tags/v1.3.0.tar.gz -> mcut-1.3.0.tar.gz
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	3530055400d05e64deaba3042af30af6
+_md5_=0b5e9241c33670454a4a2241ad88bbf0
