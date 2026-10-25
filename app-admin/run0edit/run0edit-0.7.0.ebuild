@@ -5,7 +5,7 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{12..15} )
 
-inherit python-single-r1
+inherit meson python-single-r1
 
 DESCRIPTION="Script to edit a single file as root using run0"
 HOMEPAGE="https://github.com/HastD/run0edit"
@@ -22,6 +22,18 @@ LICENSE="|| ( Apache-2.0 MIT )"
 SLOT="0"
 
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
+
+IUSE="test"
+RESTRICT="!test? ( test )"
+
+BDEPEND="
+	virtual/pandoc
+	test? (
+		$(python_gen_cond_dep '
+			dev-python/coverage[${PYTHON_USEDEP}]
+		')
+	)
+"
 RDEPEND="
 	${PYTHON_DEPS}
 	>=sys-apps/systemd-256:=
@@ -34,23 +46,25 @@ src_prepare() {
 
 	python_fix_shebang run0edit_main.py run0edit_inner.py
 
-	local b2=$(b2sum "${S}"/run0edit_inner.py | cut -d' ' -f1)
-	local sitedir=$(python_get_sitedir)
+	local b2=$(b2sum -l 256 "${S}"/run0edit_inner.py | cut -d' ' -f1)
 
 	# patch hard-coded variables to work
 	sed -i \
-		-e "s|^INNER_SCRIPT_PATH:.*|INNER_SCRIPT_PATH: Final[str] = \"${sitedir}/run0edit_inner.py\"|" \
-		-e "/^INNER_SCRIPT_B2:/{
-			N
-			s|^.*|INNER_SCRIPT_B2: Final[str] = \"${b2}\"|
-		}" \
+		-e "s|^INNER_SCRIPT_B2:.*|INNER_SCRIPT_B2: Final[str] = \"${b2}\"|" \
 		run0edit_main.py || die
 }
 
+src_configure() {
+	local emesonargs=(
+		$(meson_feature test unit-tests)
+		$(meson_feature test integration-tests)
+	)
+
+	meson_src_configure
+}
+
 src_install() {
-	python_domodule run0edit_inner.py
+	meson_src_install
 
-	python_newscript run0edit_main.py run0edit
-
-	einstalldocs
+	rm -r "${ED}"/usr/share/licenses || die
 }
