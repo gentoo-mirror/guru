@@ -21,7 +21,7 @@ DEPEND="
 "
 RDEPEND="${DEPEND}"
 BDEPEND="
-	test? ( <dev-util/cmocka-2.0.0 )
+	test? ( >=dev-util/cmocka-2.0.0 )
 "
 
 src_prepare() {
@@ -31,6 +31,7 @@ src_prepare() {
 		--expression='s/-Werror//g' \
 		--expression='/^DFLAGS/d' \
 		--expression='/^OFLAGS/d' \
+		--expression='/^CC/d' \
 		config.mk || die
 }
 
