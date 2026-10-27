@@ -1,0 +1,12 @@
+DEFINED_PHASES=install postinst postrm preinst
+DESCRIPTION=Soho vibes for your mouse cursor
+EAPI=8
+HOMEPAGE=https://rosepinetheme.com
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=xdg
+KEYWORDS=~amd64
+LICENSE=GPL-3
+SLOT=0
+SRC_URI=https://github.com/rose-pine/cursors/releases/download/v1.1.0/BreezeX-RosePine-Linux.tar.xz -> rose-pine-cursors-1.1.0.tar.xz https://github.com/rose-pine/cursors/releases/download/v1.1.0/BreezeX-RosePineDawn-Linux.tar.xz -> rose-pine-cursors-dawn-1.1.0.tar.xz
+_eclasses_=xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575
+_md5_=6a6a99d7679d12fb00e54607de04c5f3

@@ -1,0 +1,16 @@
+BDEPEND=virtual/pkgconfig app-alternatives/ninja >=dev-build/cmake-3.28.5
+DEFINED_PHASES=compile configure install prepare pretend test
+DEPEND=dev-qt/qtbase[gui,network,widgets] dev-qt/qtwebengine kde-frameworks/kconfig kde-frameworks/kcoreaddons kde-frameworks/ki18n kde-frameworks/ktexteditor kde-frameworks/kwidgetsaddons kde-frameworks/kxmlgui kde-frameworks/syntax-highlighting
+DESCRIPTION=A Kate Markdown side panel plugin (katdown fork)
+EAPI=8
+HOMEPAGE=https://github.com/obook/katemark
+INHERIT=cmake
+IUSE=test
+KEYWORDS=-* ~amd64
+LICENSE=GPL-3
+RDEPEND=dev-qt/qtbase[gui,network,widgets] dev-qt/qtwebengine kde-frameworks/kconfig kde-frameworks/kcoreaddons kde-frameworks/ki18n kde-frameworks/ktexteditor kde-frameworks/kwidgetsaddons kde-frameworks/kxmlgui kde-frameworks/syntax-highlighting
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/obook/katemark/archive/refs/tags/v0.4.6.tar.gz -> katemark-0.4.6.tar.gz
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	3530055400d05e64deaba3042af30af6
+_md5_=cef1f6a441cb37d9afa540af65046761
