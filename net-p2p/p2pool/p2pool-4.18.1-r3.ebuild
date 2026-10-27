@@ -15,6 +15,7 @@ SRC_URI="
 	https://github.com/SChernykh/p2pool/releases/download/v${PV}/p2pool_source-v${PV}.tar.xz -> ${P}.tar.xz
 	verify-sig? ( https://github.com/SChernykh/p2pool/releases/download/v${PV}/sha256sums.txt.asc -> ${P}_shasums.asc )
 "
+S="${WORKDIR}/${PN}"
 
 LICENSE="BSD GPL-3+ ISC LGPL-3+ MIT"
 SLOT="0"
@@ -41,7 +42,7 @@ BDEPEND="
 
 src_unpack() {
 	if use verify-sig; then
-		local VERIFY_SIG_OPENPGP_KEY_PATH="${BROOT}"/usr/share/openpgp-keys/SChernykh.asc
+		local VERIFY_SIG_OPENPGP_KEY_PATH=/usr/share/openpgp-keys/SChernykh.asc
 		pushd "${DISTDIR}" > /dev/null || die
 		verify-sig_verify_message ${P}_shasums.asc - | \
 			tr \\r \\n | \
@@ -54,7 +55,6 @@ src_unpack() {
 		popd || die
 	fi
 	unpack ${P}.tar.xz
-	mv -T "${WORKDIR}"/{${PN},${P}} || die
 }
 
 src_prepare() {
@@ -73,6 +73,15 @@ src_configure() {
 		-DWITH_TLS=OFF #$(usex tls)
 	)
 	cmake_src_configure
+}
+
+src_test(){
+	"${BUILD_DIR}"/${PN} --test || die "Self-test failed"
+	"${BUILD_DIR}"/external/src/RandomX/randomx-tests || die "RandomX tests failed"
+	# TODO: add p2pool_tests
+	# https://github.com/SChernykh/p2pool/blob/abc833598f80d7a0345b6020ced90f19957d7a7c/.github/workflows/c-cpp.yml#L616
+
+	cmake_src_test
 }
 
 src_install(){
