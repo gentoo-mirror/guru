@@ -13,7 +13,7 @@ HOMEPAGE="https://bambulab.com"
 
 SRC_URI="
 	amd64? (
-		https://github.com/bambulab/${MY_PN}/releases/download/v${PV}/BambuStudio_ubuntu24.04-v02.08.02.60-20260814171356.AppImage
+		https://github.com/bambulab/${MY_PN}/releases/download/v${PV}/BambuStudio_ubuntu24.04-v02.08.02.61-20260820225108.AppImage
 		-> ${P}.AppImage
 	)
 "
@@ -41,6 +41,7 @@ RDEPEND="
 	>=x11-libs/cairo-1.8.8:0
 	x11-libs/gdk-pixbuf:2
 	x11-libs/gtk+:3
+	x11-libs/libdrm
 	x11-libs/libX11
 	x11-libs/libxkbcommon
 	x11-libs/pango

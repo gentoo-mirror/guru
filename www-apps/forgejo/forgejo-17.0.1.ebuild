@@ -28,7 +28,7 @@ RDEPEND="${DEPEND}
 	!www-apps/gitea" # until acct-user/git[forgejo]
 
 BDEPEND="
->=dev-lang/go-1.26.7
+>=dev-lang/go-1.26.9
 "
 
 DOCS=(
@@ -101,7 +101,7 @@ src_install() {
 	einstalldocs
 
 	newconfd "${FILESDIR}/forgejo.confd-r1" forgejo
-	newinitd "${FILESDIR}/forgejo.initd-r3" forgejo
+	newinitd "${FILESDIR}/forgejo.initd-r4" forgejo
 	newtmpfiles - forgejo.conf <<-EOF
 		d /run/forgejo 0755 git git
 	EOF
