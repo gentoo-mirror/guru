@@ -1,0 +1,11 @@
+BDEPEND=app-arch/unzip
+DEFINED_PHASES=install
+DESCRIPTION=Kimi Code CLI, Moonshot AI's command-line coding agent
+EAPI=8
+HOMEPAGE=https://github.com/MoonshotAI/kimi-code
+KEYWORDS=-* ~amd64 ~arm64
+LICENSE=MIT
+RESTRICT=strip
+SLOT=0
+SRC_URI=amd64? ( https://github.com/MoonshotAI/kimi-code/releases/download/@moonshot-ai/kimi-code@2.3.3/kimi-code-linux-x64.zip -> kimi-code-bin-2.3.3-amd64.zip ) arm64? ( https://github.com/MoonshotAI/kimi-code/releases/download/@moonshot-ai/kimi-code@2.3.3/kimi-code-linux-arm64.zip -> kimi-code-bin-2.3.3-arm64.zip )
+_md5_=d9dc4e3255ac5288942392b56fb8fd42

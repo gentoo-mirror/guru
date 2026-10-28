@@ -1,4 +1,4 @@
-BDEPEND=>=dev-qt/qttools-6.5.0:6[linguist] virtual/pkgconfig doc? ( app-text/doxygen[dot] ) man? ( || ( app-text/asciidoc dev-ruby/asciidoctor ) ) app-alternatives/ninja >=dev-build/cmake-3.28.5
+BDEPEND=>=dev-qt/qttools-6.5.0:6[linguist] virtual/pkgconfig doc? ( app-text/doxygen media-gfx/graphviz ) man? ( || ( app-text/asciidoc dev-ruby/asciidoctor ) ) app-alternatives/ninja >=dev-build/cmake-3.28.5
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare test
 DEPEND=app-text/cmark:= >=dev-cpp/blurhash-0.2.0:= dev-cpp/cpp-httplib:= dev-db/lmdb:= dev-libs/libfmt:= >=dev-libs/kdsingleapplication-1.1.0 >=dev-libs/mtxclient-0.10.1:= dev-libs/olm dev-libs/qtkeychain:=[qt6(+)] dev-libs/spdlog:= >=dev-qt/qtbase-6.5.0:6=[dbus,gui,widgets] >=dev-qt/qtdeclarative-6.5.0:6= >=dev-qt/qtmultimedia-6.5.0:6[qml] >=dev-qt/qtsvg-6.5.0:6 X? ( x11-libs/libxcb:= x11-libs/xcb-util-wm ) voip? ( >=media-libs/gstreamer-1.20.0:1.0 >=media-libs/gst-plugins-bad-1.20.0:1.0[wayland?] >=media-libs/gst-plugins-base-1.20.0:1.0[X?,opengl] ) >=dev-cpp/coeurl-0.3.0 dev-libs/libevent dev-libs/openssl dev-libs/re2 net-misc/curl dev-cpp/nlohmann_json >=dev-db/lmdb++-1.0.0
 DESCRIPTION=Native desktop client for Matrix using Qt
@@ -14,4 +14,4 @@ REQUIRED_USE=video? ( voip )
 SLOT=0
 SRC_URI=https://nheko.im/nheko-reborn/nheko/-/archive/v0.12.1/nheko-v0.12.1.tar.bz2
 _eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	3530055400d05e64deaba3042af30af6	optfeature	58cc13bdc4e9a204077e1e7c9a1d7988	xdg	3ef49a87c52c8b77c476351195dfe575
-_md5_=2d82858a8f75f2943f7bbcec7630683a
+_md5_=7a1c08d751b739952b72866ebb5c1399

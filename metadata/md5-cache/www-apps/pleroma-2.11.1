@@ -1,0 +1,16 @@
+BDEPEND=dev-build/cmake >=dev-util/rebar-3.20.0-r1 dev-elixir/hex dev-vcs/git !<www-apps/pleroma-2.11.1 !>www-apps/pleroma-2.11.1
+DEFINED_PHASES=compile install postinst prepare unpack
+DEPEND=>=dev-lang/erlang-27:= <dev-lang/erlang-29 >=dev-lang/elixir-1.17:= <dev-lang/elixir-1.20 dev-libs/glib sys-apps/file sys-libs/ncurses:= system-lexbor? ( dev-libs/lexbor ) system-vips? ( media-libs/vips:= ) dev-lang/elixir dev-lang/erlang:=
+DESCRIPTION=ActivityPub social networking software compatible with other Fediverse software
+EAPI=7
+HOMEPAGE=https://pleroma.social/
+INHERIT=mix optfeature flag-o-matic toolchain-funcs
+IUSE=+system-lexbor +system-vips
+KEYWORDS=~amd64
+LICENSE=AGPL-3 CC-BY-SA-4.0 CC-BY-4.0
+RDEPEND=>=dev-lang/erlang-27:= <dev-lang/erlang-29 >=dev-lang/elixir-1.17:= <dev-lang/elixir-1.20 dev-libs/glib sys-apps/file sys-libs/ncurses:= system-lexbor? ( dev-libs/lexbor ) system-vips? ( media-libs/vips:= ) acct-user/pleroma acct-group/pleroma dev-db/postgresql[uuid] dev-lang/elixir dev-lang/erlang:=
+RESTRICT=network-sandbox
+SLOT=otp
+SRC_URI=https://git.pleroma.social/pleroma/pleroma/archive/v2.11.1.tar.gz -> pleroma-2.11.1.tar.gz
+_eclasses_=mix	0121d183f009a7de47b15441d86b4ce1	optfeature	58cc13bdc4e9a204077e1e7c9a1d7988	toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d
+_md5_=a282c2ef5408c963b02115561332e624
