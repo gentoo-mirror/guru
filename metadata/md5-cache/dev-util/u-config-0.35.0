@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install test
+DESCRIPTION=Lean and mean pkg-config replacement
+EAPI=8
+HOMEPAGE=https://github.com/skeeto/u-config
+INHERIT=edo toolchain-funcs
+IUSE=symlink test
+KEYWORDS=~amd64 ~x86
+LICENSE=Unlicense symlink? ( GPL-2+ )
+RDEPEND=symlink? ( !dev-util/pkgconfig !dev-util/pkgconf )
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/skeeto/u-config/archive/v0.35.0.tar.gz -> u-config-0.35.0.tar.gz symlink? ( https://github.com/pkgconf/pkgconf/raw/refs/tags/pkgconf-1.9.5/pkg.m4 -> u-config-1.9.5-pkg.m4 )
+_eclasses_=edob	357e125b8c5cad0deccb625e537ea831	edo	e472083829a6e7ff43a197cf536728a2	toolchain-funcs	58a918e3a42d0156f010dcfd43725be5
+_md5_=432bc796c0f5d870394bdbb5961103e2
