@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{12..15} )
+PYTHON_COMPAT=( python3_{12..14} )
 DISTUTILS_USE_PEP517=setuptools
 
 inherit distutils-r1
@@ -62,7 +62,8 @@ src_compile() {
 
 python_test() {
 	# Tests expect a running redis server, so let's provide it
-	exec 3< <(redis-server /dev/null || die "failed to start redis server")
+	einfo 'starting Redis...'
+	exec 3< <(redis-server /dev/null)
 	local redis_pid=$!
 
 	# Wait until it's ready
@@ -76,6 +77,7 @@ python_test() {
 	nonfatal epytest
 	local epytest_result=$?
 
+	einfo 'stopping Redis...'
 	kill -INT $redis_pid
 	wait $redis_pid
 
