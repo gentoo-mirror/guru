@@ -1,0 +1,17 @@
+BDEPEND=dev-libs/appstream dev-libs/glib:2 dev-util/blueprint-compiler sys-devel/gettext virtual/pkgconfig llvm_slot_22? ( llvm-core/clang:22 ) || ( >=dev-lang/rust-bin-1.96.1:* >=dev-lang/rust-1.96.1:* ) >=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup test unpack
+DEPEND=dev-db/sqlite:3 >=dev-libs/glib-2.86:2 dev-libs/libxml2:= dev-libs/openssl:= >=gui-libs/gtk-4.22:4[wayland] gui-libs/gtksourceview:5 >=gui-libs/libadwaita-1.9:1 media-libs/fontconfig:1.0 media-libs/graphene media-libs/gst-plugins-base:1.0 media-libs/gstreamer:1.0 media-libs/lcms:2 >=media-video/clapper-0.10.0[gtk] >=net-libs/webkit-gtk-2.42.0:6 virtual/libintl x11-libs/cairo kernel_linux? ( sys-libs/libseccomp )
+DESCRIPTION=RSS reader that complements web-based feed services
+EAPI=8
+HOMEPAGE=https://apps.gnome.org/NewsFlash/ https://gitlab.com/news-flash/news_flash_gtk
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=cargo gnome2-utils llvm-r2 meson xdg
+IUSE=debug +llvm_slot_22
+KEYWORDS=~amd64 ~arm64
+LICENSE=GPL-3 Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD-2 BSD CDLA-Permissive-2.0 GPL-3+ ISC MIT MPL-2.0 UoI-NCSA Unicode-3.0 Unlicense ZLIB
+RDEPEND=dev-db/sqlite:3 >=dev-libs/glib-2.86:2 dev-libs/libxml2:= dev-libs/openssl:= >=gui-libs/gtk-4.22:4[wayland] gui-libs/gtksourceview:5 >=gui-libs/libadwaita-1.9:1 media-libs/fontconfig:1.0 media-libs/graphene media-libs/gst-plugins-base:1.0 media-libs/gstreamer:1.0 media-libs/lcms:2 >=media-video/clapper-0.10.0[gtk] >=net-libs/webkit-gtk-2.42.0:6 virtual/libintl x11-libs/cairo kernel_linux? ( sys-libs/libseccomp ) media-libs/gst-plugins-good:1.0 media-plugins/clapper-enhancers media-plugins/gst-plugins-adaptivedemux2 media-plugins/gst-plugins-libav:1.0 media-plugins/gst-plugins-soup:1.0 net-libs/glib-networking
+REQUIRED_USE=^^ ( llvm_slot_22 )
+SLOT=0
+SRC_URI=https://gitlab.com/api/v4/projects/8320003/packages/generic/newsflash/5.2.5/newsflash-5.2.5.tar.xz https://gitlab.com/news-flash/html2gtk/-/archive/b2ea44c9cab8f8d5f25961dd530fcf12d00c223c/html2gtk-b2ea44c9cab8f8d5f25961dd530fcf12d00c223c.tar.gz -> html2gtk-b2ea44c9cab8f8d5f25961dd530fcf12d00c223c.gl.tar.gz
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	rust	552cca5ca7af2571f710cc2177327f0a	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	bff30f59ca59b09857b787ac644b2e4c	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	gnome2-utils	a8cf148ec7f5ae0b1f1d33ae5f7f9e88	llvm-utils	e7edb4086e31c8537574b263d899f826	multilib	fc812e8eb2170022c28272d80a1f9e77	llvm-r2	a14333b7a46739f55f45dd77d478805d	ninja-utils	d063ea1900a793f93eb095010d6d9156	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	python-utils-r1	025367880f07ae6444e6035a49db0dab	sysroot	4c36abaf94ebd3ab32f8abea9a444121	meson	4d3a148e5931f2930e970884bcb4c77d	xdg	3ef49a87c52c8b77c476351195dfe575
+_md5_=69b1823e3889486a6fbda18c462aaad8

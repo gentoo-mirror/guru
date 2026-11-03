@@ -1,0 +1,14 @@
+BDEPEND=>=app-editors/emacs-29.1:*
+DEFINED_PHASES=compile configure info install postinst postrm prepare setup test unpack
+DESCRIPTION=Major mode for editing KDL files in Emacs
+EAPI=8
+HOMEPAGE=https://github.com/taquangtrung/emacs-kdl-mode
+INHERIT=elisp
+KEYWORDS=~amd64
+LICENSE=GPL-3+
+RDEPEND=dev-libs/tree-sitter-kdl >=app-editors/emacs-29.1:*
+RESTRICT=test
+SLOT=0
+SRC_URI=https://github.com/taquangtrung/emacs-kdl-mode/archive/e966ed4b53f8a72b88a016e61bcadec42f317e39.tar.gz -> kdl-mode-0.0.1_p20261002.gh.tar.gz
+_eclasses_=elisp-common	af0b23d31469d538d402c81481e6343e	elisp	46292cd5379143164fb87df42b872e5f
+_md5_=81d7ae3866ea55001fdc4a9469de1bd5
