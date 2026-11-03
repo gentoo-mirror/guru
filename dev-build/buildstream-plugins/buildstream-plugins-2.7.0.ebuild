@@ -27,6 +27,7 @@ RDEPEND="
 BDEPEND="
 	virtual/pkgconfig
 	test? (
+		dev-python/pip[${PYTHON_USEDEP}]
 		dev-python/pycodestyle[${PYTHON_USEDEP}]
 		dev-python/pyftpdlib[${PYTHON_USEDEP}]
 		dev-python/pylint[${PYTHON_USEDEP}]
@@ -55,6 +56,7 @@ python_test() {
 		tests/sources/docker.py::test_docker_source_checkout
 		tests/sources/docker.py::test_handle_network_error
 		tests/sources/docker.py::test_fetch_duplicate_layers
+		tests/sources/cargo.py::test_cargo_track_fetch_build
 		source_determinism.py::test_deterministic_source_umask[git]
 	)
 

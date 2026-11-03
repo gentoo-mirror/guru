@@ -1,4 +1,4 @@
-# Copyright 1999-2025 Gentoo Authors
+# Copyright 1999-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -54,19 +54,19 @@ SRC_URI="
 "
 
 PATCHES=(
-	"${FILESDIR}/${PF}/backtracing-noexecstack.patch"
-	"${FILESDIR}/${PF}/disable-libdispatch-private-header-check.patch"
-	"${FILESDIR}/${PF}/disable-libdispatch-werror.patch"
-	"${FILESDIR}/${PF}/fix-issues-caused-by-build-system-updates.patch"
-	"${FILESDIR}/${PF}/link-ncurses-tinfo.patch"
-	"${FILESDIR}/${PF}/link-with-lld.patch"
-	"${FILESDIR}/${PF}/remove-linux-scc_h.patch"
-	"${FILESDIR}/${PF}/respect-c-cxx-flags.patch"
+	"${FILESDIR}/${PN}-5.10-backtracing-noexecstack.patch"
+	"${FILESDIR}/${PN}-6.1-disable-libdispatch-private-header-check.patch"
+	"${FILESDIR}/${PN}-6.1-disable-libdispatch-werror.patch"
+	"${FILESDIR}/${PN}-6.1-fix-issues-caused-by-build-system-updates.patch"
+	"${FILESDIR}/${PN}-6.1-link-ncurses-tinfo.patch"
+	"${FILESDIR}/${PN}-6.1-link-with-lld.patch"
+	"${FILESDIR}/${PN}-6.1-remove-linux-scc_h.patch"
+	"${FILESDIR}/${PN}-6.1-respect-c-cxx-flags.patch"
 )
 
 S="${WORKDIR}"
 LICENSE="Apache-2.0"
-SLOT="6/1"
+SLOT="$(ver_cut 1)/$(ver_cut 2)"
 KEYWORDS="~amd64"
 IUSE="libcxx"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
@@ -185,12 +185,11 @@ src_unpack() {
 		|| die
 
 	# Some one-off fixups:
-	pushd "${S}" \
-		&& mv 'swift-cmark' 'cmark' \
-		&& mv 'swift-llbuild' 'llbuild' \
-		&& mv 'swift-package-manager' 'swiftpm' \
-		&& popd \
-		|| die
+	pushd "${S}" >/dev/null || die
+	mv 'swift-cmark' 'cmark' || die
+	mv 'swift-llbuild' 'llbuild' || die
+	mv 'swift-package-manager' 'swiftpm' || die
+	popd >/dev/null || die
 }
 
 src_configure() {
@@ -211,7 +210,7 @@ src_configure() {
 
 	# Extend the 'gentoo' build preset with user-specified flags and flags for
 	# libc++ systems.
-	cp "${FILESDIR}/${PF}/gentoo.ini" "${SWIFT_BUILD_PRESETS_INI_PATH}"
+	cp "${FILESDIR}/${PN}-6.1-gentoo.ini" "${SWIFT_BUILD_PRESETS_INI_PATH}" || die
 	local extra_build_flags=()
 
 	# Setting `-j<n>`/`--jobs=<n>` in MAKEOPTS needs to be manually exposed to
@@ -295,7 +294,7 @@ src_configure() {
 src_compile() {
 	# Building swift-driver writes to this directory for some reason, but the
 	# contents are irrelevant.
-	addpredict /var/lib/portage/home/.swiftpm
+	addpredict "${HOME}/.swiftpm"
 
 	# Versions of Swift 6.0 and later require an existing Swift compiler to
 	# bootstrap from. We can use any version from 5.10.1 and on.

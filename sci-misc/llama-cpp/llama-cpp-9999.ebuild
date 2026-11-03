@@ -19,7 +19,7 @@ if [[ ${PV} == *9999* ]]; then
 	EGIT_REPO_URI="https://github.com/ggml-org/llama.cpp.git"
 	LLAMA_BUILD_IS_DEV=ON
 	LLAMA_BUILD_NUMBER="b0000"
-	LLAMA_UI_VERSION="b11429"
+	LLAMA_UI_VERSION="b11960"
 	MY_PV="${PV}"
 else
 	if [[ $(ver_cut 4) == "p" ]]; then
@@ -30,7 +30,7 @@ else
 	else
 		LLAMA_BUILD_IS_DEV=OFF
 		# Set from https://github.com/ggml-org/llama.cpp/releases/download/v${PV}/nightly-tag.txt
-		LLAMA_BUILD_NUMBER="b11429"
+		LLAMA_BUILD_NUMBER="b11960"
 		MY_PV="v${PV}"
 		S="${WORKDIR}/${MY_PN}-${PV}"
 	fi
@@ -77,7 +77,7 @@ BLAS_BACKENDS="blis openblas"
 
 GGML_IUSE="blas flexiblas ${BLAS_BACKENDS} ${CPU_FLAGS[*]} cuda opencl +openmp rocm vulkan"
 
-IUSE="${GGML_IUSE} curl examples openssl test"
+IUSE="${GGML_IUSE} examples openssl test"
 REQUIRED_USE="
 	blas? ( ?? ( ${BLAS_BACKENDS} ) )
 	rocm? ( ${ROCM_REQUIRED_USE} )
@@ -87,9 +87,7 @@ unset BLAS_BACKENDS GGML_IUSE X86_CPU_FLAGS CPU_FLAGS
 
 RESTRICT="!test? ( test )"
 
-# curl is needed for pulling models from huggingface
 COMMON_DEPEND="
-	curl? ( net-misc/curl:= )
 	openmp? ( llvm-runtimes/openmp:= )
 	blas? (
 		virtual/blas[flexiblas=]
@@ -102,6 +100,7 @@ COMMON_DEPEND="
 	rocm? (
 		>=dev-util/hip-${ROCM_VERSION}:=
 		>=sci-libs/hipBLAS-${ROCM_VERSION}:=
+		>=sci-libs/rocBLAS-${ROCM_VERSION}:=
 	)
 	cuda? ( dev-util/nvidia-cuda-toolkit:= )
 	openssl? ( dev-libs/openssl:= )
@@ -177,7 +176,6 @@ src_configure() {
 		-DLLAMA_BUILD_SERVER=ON
 		-DLLAMA_TESTS_INSTALL=OFF
 		-DBUILD_NUMBER="${LLAMA_BUILD_NUMBER}"
-		-DLLAMA_CURL=$(usex curl)
 		-DLLAMA_OPENSSL=$(usex openssl)
 
 		# avoid clashing with sci-ml/ggml
@@ -244,10 +242,13 @@ src_configure() {
 	fi
 
 	if use rocm; then
-		rocm_use_hipcc
+		rocm_use_clang
 		mycmakeargs+=(
 			-DGGML_HIP=ON
 			-DGPU_TARGETS=$(get_amdgpu_flags)
+			-DCMAKE_HIP_FLAGS="${CXXFLAGS}"
+			# cmake.eclass clears per-build-type flags for C/CXX only; drop CMake's "-O2 -g -DNDEBUG" for HIP
+			"-DCMAKE_HIP_FLAGS_${CMAKE_BUILD_TYPE^^}="
 		)
 	fi
 
