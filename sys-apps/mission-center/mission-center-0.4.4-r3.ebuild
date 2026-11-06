@@ -281,7 +281,7 @@ CRATES="
 	zerocopy@0.7.25
 "
 
-PYTHON_COMPAT=( python3_{12..13} )
+PYTHON_COMPAT=( python3_13 )
 
 PATHFINDER_COMMIT=ec56924f660e6faa83c81c6b62b3c69b9a9fa00e
 NVTOP_COMMIT=45a1796375cd617d16167869bb88e5e69c809468
@@ -299,7 +299,7 @@ declare -A GIT_CRATES=(
 
 inherit cargo gnome2-utils meson python-any-r1 xdg
 
-DESCRIPTION="Monitor your CPU, Memory, Disk, Network and GPU usage."
+DESCRIPTION="Monitor your CPU, Memory, Disk, Network and GPU usage"
 HOMEPAGE="https://missioncenter.io/"
 
 SRC_URI="

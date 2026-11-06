@@ -2,12 +2,12 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
-PYTHON_COMPAT=( python3_{12..14} )
+PYTHON_COMPAT=( python3_{13..14} )
 PYTHON_REQ_USE="xml(+)"
 
 inherit python-r1 systemd
 
-DESCRIPTION="A Web Service Discovery host daemon."
+DESCRIPTION="A Web Service Discovery host daemon"
 HOMEPAGE="https://github.com/christgau/wsdd"
 SRC_URI="https://github.com/christgau/wsdd/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 

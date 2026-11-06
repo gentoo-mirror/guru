@@ -4,11 +4,11 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517="setuptools"
-PYTHON_COMPAT=( python3_{12..14} )
+PYTHON_COMPAT=( python3_{13..14} )
 
 inherit distutils-r1 virtualx pypi
 
-DESCRIPTION="An improved Python library to control i3wm and sway."
+DESCRIPTION="An improved Python library to control i3wm and sway"
 HOMEPAGE="https://github.com/altdesktop/i3ipc-python"
 
 LICENSE="BSD"

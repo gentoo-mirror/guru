@@ -3,12 +3,12 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{12..14} )
+PYTHON_COMPAT=( python3_{13..14} )
 DISTUTILS_USE_PEP517=setuptools
 
 inherit distutils-r1
 
-DESCRIPTION="Python package to handle tiles and points of different projections."
+DESCRIPTION="Python package to handle tiles and points of different projections"
 HOMEPAGE="https://github.com/geometalab/pyGeoTile"
 
 MY_PN="pyGeoTile"

@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{12..15} )
+PYTHON_COMPAT=( python3_{13..15} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 optfeature
 
@@ -15,8 +15,8 @@ SRC_URI="https://github.com/lilydjwg/nvchecker/archive/refs/tags/v${PV}.tar.gz -
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
-PROPERTIES="test_network"
 RESTRICT="test"
+PROPERTIES="test_network"
 
 RDEPEND="
 	dev-python/structlog[${PYTHON_USEDEP}]
@@ -100,8 +100,7 @@ pkg_postinst() {
 	optfeature "jq source" "dev-python/jq[${PYTHON_USEDEP}]"
 	optfeature "httpheader source" "dev-python/lxml[${PYTHON_USEDEP}]"
 	optfeature "pypi source" "dev-python/packaging[${PYTHON_USEDEP}]"
-	if use python_targets_python3_12 || \
-		use python_targets_python3_13; then
+	if use python_targets_python3_13; then
 		optfeature "rpmrepo source" "dev-python/zstandard[${PYTHON_USEDEP}]"
 	fi
 	optfeature "git source" dev-vcs/git

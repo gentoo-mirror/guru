@@ -386,14 +386,14 @@ CRATES="
 "
 
 RUST_MIN_VER=1.90
-PYTHON_COMPAT=( python3_{12..14} )
+PYTHON_COMPAT=( python3_{13..14} )
 
 MAGPIE_COMMIT=1a8916cfeb06a3d63eefa8b17972eb2988e16da3
 NVTOP_COMMIT=339ee0b10a64ec51f43d27357b0068a40f16e9e4
 
 inherit cargo gnome2-utils meson python-any-r1 xdg flag-o-matic
 
-DESCRIPTION="Monitor your CPU, Memory, Disk, Network and GPU usage."
+DESCRIPTION="Monitor your CPU, Memory, Disk, Network and GPU usage"
 HOMEPAGE="https://missioncenter.io/"
 SRC_URI="
 	https://gitlab.com/mission-center-devs/mission-center/-/archive/v${PV}/${PN}-v${PV}.tar.bz2 -> ${P}.tar.bz2

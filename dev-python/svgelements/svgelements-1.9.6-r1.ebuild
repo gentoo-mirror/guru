@@ -4,11 +4,11 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{12..13} )
+PYTHON_COMPAT=( python3_13 )
 
 inherit distutils-r1 optfeature
 
-DESCRIPTION="SVG Parsing for Elements, Paths, and other SVG Objects."
+DESCRIPTION="SVG Parsing for Elements, Paths, and other SVG Objects"
 HOMEPAGE="https://github.com/meerk40t/svgelements https://pypi.org/project/svgelements"
 SRC_URI="https://github.com/meerk40t/svgelements/archive/refs/tags/${PV}.tar.gz -> ${P}.gh.tar.gz"
 

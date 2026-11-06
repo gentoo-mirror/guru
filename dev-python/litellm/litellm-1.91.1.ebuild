@@ -5,11 +5,11 @@ EAPI=8
 
 DISTUTILS_USE_PEP517=uv-build
 DISTUTILS_SINGLE_IMPL=1
-PYTHON_COMPAT=( python3_{12..14} )
+PYTHON_COMPAT=( python3_{13..14} )
 
 inherit distutils-r1
 
-DESCRIPTION="Lightweight package to seamlessly call OpenAI, Azure, Cohere, Anthropic, etc."
+DESCRIPTION="Lightweight package to seamlessly call OpenAI, Azure, Cohere, Anthropic, etc"
 HOMEPAGE="
 	https://github.com/BerriAI/litellm
 	https://pypi.org/project/litellm/

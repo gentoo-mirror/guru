@@ -4,13 +4,13 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{12..14} )
+PYTHON_COMPAT=( python3_{13..14} )
 
 HTML_DOCS=( docs )
 
 inherit distutils-r1
 
-DESCRIPTION="Python package for parsing and generating JSON feeds."
+DESCRIPTION="Python package for parsing and generating JSON feeds"
 HOMEPAGE="https://github.com/lukasschwab/jsonfeed"
 SRC_URI="https://github.com/lukasschwab/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.gh.tar.gz"
 
