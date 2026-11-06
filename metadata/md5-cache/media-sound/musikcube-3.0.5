@@ -1,7 +1,7 @@
 BDEPEND=dev-util/patchelf app-alternatives/ninja >=dev-build/cmake-3.28.5
 DEFINED_PHASES=compile configure install prepare test
 DEPEND=net-libs/libmicrohttpd:= sys-libs/ncurses:= media-libs/libogg media-video/ffmpeg:= virtual/zlib:= media-libs/libvorbis net-misc/curl dev-libs/openssl:= media-sound/lame dev-libs/libev media-libs/taglib dev-cpp/asio libopenmpt? ( media-libs/libopenmpt media-sound/mpg123 ) mpris? ( || ( elogind? ( >=sys-auth/elogind-239 ) systemd? ( sys-apps/systemd ) basu? ( sys-libs/basu ) ) ) pipewire? ( media-video/pipewire:= ) portaudio? ( media-libs/portaudio ) pulseaudio? ( media-libs/libpulse ) sndio? ( media-sound/sndio:= ) alsa? ( media-libs/alsa-lib )
-DESCRIPTION=Excellent terminal music player, support almost every known sound system.
+DESCRIPTION=Excellent terminal music player, support almost every known sound system
 EAPI=8
 HOMEPAGE=https://github.com/clangen/musikcube
 INHERIT=cmake
@@ -13,4 +13,4 @@ REQUIRED_USE=mpris? ( ^^ ( systemd elogind basu ) )
 SLOT=0
 SRC_URI=https://github.com/clangen/musikcube/archive/refs/tags/3.0.5.tar.gz -> musikcube-3.0.5.tar.gz
 _eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	3530055400d05e64deaba3042af30af6
-_md5_=2066aa4710fd762e41f2e986a37e64e7
+_md5_=f6f9307478e3209a612574e6339bb535

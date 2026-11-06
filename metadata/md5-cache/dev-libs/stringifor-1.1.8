@@ -1,4 +1,4 @@
-BDEPEND=|| ( dev-lang/python:3.14 dev-lang/python:3.13 dev-lang/python:3.12 ) || ( ( dev-lang/python:3.14 dev-build/fobis[python_targets_python3_14(-)] ) ( dev-lang/python:3.13 dev-build/fobis[python_targets_python3_13(-)] ) ( dev-lang/python:3.12 dev-build/fobis[python_targets_python3_12(-)] ) ) virtual/fortran
+BDEPEND=|| ( dev-lang/python:3.14 dev-lang/python:3.13 ) || ( ( dev-lang/python:3.14 dev-build/fobis[python_targets_python3_14(-)] ) ( dev-lang/python:3.13 dev-build/fobis[python_targets_python3_13(-)] ) ) virtual/fortran
 DEFINED_PHASES=compile install prepare setup test
 DEPEND=virtual/fortran
 DESCRIPTION=StringiFor, Strings Fortran Manipulator, yet another strings Fortran module
@@ -13,4 +13,4 @@ RESTRICT=mirror !test? ( test )
 SLOT=0
 SRC_URI=https://github.com/szaghi/StringiFor/releases/download/v1.1.8/StringiFor-v1.1.8.tar.gz -> StringiFor-1.1.8.tar.gz
 _eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	fortran-2	ae6d43513003405bd4a48698fc20370a	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	python-utils-r1	025367880f07ae6444e6035a49db0dab	python-any-r1	891415dfe39ad9b41b461f2b86354af0
-_md5_=155a1db6064aa07ccae8bae9af811611
+_md5_=74ef2c8bfc6708961e458616d7ff5134

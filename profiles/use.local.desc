@@ -358,6 +358,7 @@ games-emulation/shadPS4:discord - Enables Discord Rich Presence
 games-engines/fs2_open:clang - Use Clang compiler instead of GCC
 games-engines/fs2_open:debug - Debug build to collect logfiles
 games-engines/fs2_open:discord - Enable Discord RPC support
+games-engines/fs2_open:vulkan - Build Vulkan renderer
 games-engines/instead:doc - Include some additional documentation on how to create games for the instead engine
 games-engines/instead:harfbuzz - Use media-libs/harfbuzz for better support of RTL languages
 games-engines/system3-sdl2:debug - Enable debug build with debugging symbols and debugger support
@@ -382,8 +383,6 @@ games-rpg/open-adventure:nosave - Build with save/resume disabled
 games-server/among-sus:notifications - Notify players you're moving
 games-strategy/7k-ambition:multiplayer - Enable multiplayer.
 games-strategy/7k-ambition:music - Download and install the music too. It's great. Highly recommended.
-games-strategy/hedgewars:ffmpeg - Enable video recording feature
-games-strategy/hedgewars:server - Enable local server
 games-util/chiaki-ng:cli - Build CLI interface
 games-util/chiaki-ng:gui - Build Qt GUI interface
 games-util/chiaki-ng:mbedtls - Use mbedtls instead of OpenSSL as part of Chiaki lib
@@ -803,12 +802,6 @@ net-irc/halloy:tor - Enable embedded Tor network support via Arti
 net-irc/pounce:palaver - Provide push notifications for the Palaver IRC app
 net-irc/tiny:dbus - Enable desktop notifications
 net-irc/tiny:openssl - Use dev-libs/openssl as TLS backend instead of compiled-in rustls
-net-irc/zoitechat:libcanberra - Enable sound event support using media-libs/libcanberra-gtk3
-net-irc/zoitechat:perl-legacy - Allows legacy HexChat scripts to work with ZoiteChat
-net-irc/zoitechat:plugin-checksum - Build Checksum plugin (needs plugins)
-net-irc/zoitechat:plugin-fishlim - Build FiSHLiM plugin (needs plugins)
-net-irc/zoitechat:plugin-sysinfo - Build SysInfo plugin (needs plugins)
-net-irc/zoitechat:trayicon - Enable system tray icon
 net-libs/ixwebsocket:ws - Build the ws utility
 net-libs/picotls:fusion - "fusion" AES-GCM engine, optimized for QUIC and other protocols that use short AEAD blocks
 net-libs/sofia-sip:glib - Add support to dev-libs/glib-based mainloop, to allow using Sofia-SIP on glib-based programs.
@@ -952,13 +945,6 @@ sci-misc/stable-diffusion-cpp:flexiblas - Build a FlexiBLAS backend
 sci-misc/stable-diffusion-cpp:openblas - Build an OpenBLAS backend
 sci-misc/stable-diffusion-cpp:rocm - Build a HIP (ROCm) backend
 sci-misc/stable-diffusion-cpp:webm - Support the webm audiovisual media file format
-sci-ml/ollama:blis - Use sci-libs/blis as blas provider
-sci-ml/ollama:cuda - Enable NVIDIA CUDA support
-sci-ml/ollama:flexiblas - Use sci-libs/flexiblas as blas provider
-sci-ml/ollama:mkl - Use sci-libs/mkl for blas, lapack and sparse blas routines
-sci-ml/ollama:openblas - Use sci-libs/openblas as blas provider
-sci-ml/ollama:rocm - Enable ROCm gpu computing support
-sci-ml/ollama-bin:rocm - Fetch standalone Ollama ROCm libraries
 sys-apps/bustd:glob - Enable excluding processes with glob patterns
 sys-apps/coolercontrold:liquidctl - Support for interacting with AIO liquid coolers and other devices with app-misc/liquidctl
 sys-apps/dinit:cgroups - Enable cgroups support

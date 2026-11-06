@@ -1,6 +1,6 @@
 BDEPEND=virtual/pkgconfig app-alternatives/ninja >=dev-build/cmake-3.28.5
 DEFINED_PHASES=compile configure install prepare test
-DESCRIPTION=An integration of the Ghidra decompiler and Sleigh Disassembler for Rizin.
+DESCRIPTION=An integration of the Ghidra decompiler and Sleigh Disassembler for Rizin
 EAPI=8
 HOMEPAGE=https://github.com/rizinorg/rz-ghidra
 INHERIT=cmake
@@ -11,4 +11,4 @@ RDEPEND=cutter-plugin? ( dev-util/cutter ) dev-util/rizin dev-libs/pugixml
 SLOT=0
 SRC_URI=https://github.com/rizinorg/rz-ghidra/releases/download/v0.8.0/rz-ghidra-src-v0.8.0.tar.gz -> rz-ghidra-0.8.0.tar.gz
 _eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	3530055400d05e64deaba3042af30af6
-_md5_=aa1deade8b64a7807014ef799dd6afac
+_md5_=5f93741f95a75370882b48bebcdb06b3

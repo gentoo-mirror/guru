@@ -1,13 +1,14 @@
 BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
-DEFINED_PHASES=compile install unpack
+DEFINED_PHASES=compile install postinst postrm preinst prepare unpack
 DEPEND=x11-libs/libX11 x11-libs/libXi virtual/opengl
 DESCRIPTION=Reverse-engineered Minecraft Classic client
 EAPI=8
 HOMEPAGE=https://www.classicube.net/
-INHERIT=git-r3 toolchain-funcs
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=prefix desktop xdg git-r3
 LICENSE=BSD MIT FTL
 PROPERTIES=live
 RDEPEND=x11-libs/libX11 x11-libs/libXi virtual/opengl
 SLOT=0
-_eclasses_=git-r3	e6c2f983e006e805160436c75a0c1562	toolchain-funcs	58a918e3a42d0156f010dcfd43725be5
-_md5_=2a553584cfcc3fa66fad099482365976
+_eclasses_=prefix	2765cb74ebcf9f9ac73893d4503c8cb6	desktop	e447b5f77146d69797e9f03ff177f3f1	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575	git-r3	e6c2f983e006e805160436c75a0c1562
+_md5_=b331df88155f753b76170563de92ccd2

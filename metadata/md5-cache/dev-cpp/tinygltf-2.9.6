@@ -1,4 +1,4 @@
-BDEPEND=test? ( || ( dev-lang/python:3.14 dev-lang/python:3.13 dev-lang/python:3.12 ) ) app-alternatives/ninja >=dev-build/cmake-3.28.5
+BDEPEND=test? ( || ( dev-lang/python:3.14 dev-lang/python:3.13 ) ) app-alternatives/ninja >=dev-build/cmake-3.28.5
 DEFINED_PHASES=compile configure install prepare setup test
 DEPEND=dev-libs/stb dev-cpp/nlohmann_json examples? ( media-libs/glew:= media-libs/glfw media-libs/glu virtual/opengl )
 DESCRIPTION=Header only C++11 tiny glTF 2.0 library
@@ -13,4 +13,4 @@ RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://github.com/syoyo/tinygltf/archive/refs/tags/v2.9.6.tar.gz -> tinygltf-2.9.6.tar.gz test? ( https://github.com/KhronosGroup/glTF-Sample-Models/archive/d7a3cc8e51d7c573771ae77a57f16b0662a905c6.tar.gz -> glTF-Sample-Models-d7a3cc8e51d7c573771ae77a57f16b0662a905c6.tar.gz )
 _eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	3530055400d05e64deaba3042af30af6	edob	357e125b8c5cad0deccb625e537ea831	edo	e472083829a6e7ff43a197cf536728a2	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	python-utils-r1	025367880f07ae6444e6035a49db0dab	python-any-r1	891415dfe39ad9b41b461f2b86354af0
-_md5_=0604b0f8add5373c0353983936e82141
+_md5_=e7c42ed3294ae9dd25ed0fcd496f98eb

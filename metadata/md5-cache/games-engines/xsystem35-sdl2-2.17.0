@@ -1,7 +1,7 @@
 BDEPEND=sys-devel/gettext man? ( dev-ruby/asciidoctor ) app-alternatives/ninja >=dev-build/cmake-3.28.5
 DEFINED_PHASES=compile configure install prepare test
 DEPEND=media-libs/libsdl2 media-libs/sdl2-mixer media-libs/sdl2-ttf virtual/zlib:= webp? ( media-libs/libwebp ) debug? ( dev-libs/cJSON ) portmidi? ( media-libs/portmidi )
-DESCRIPTION=Port of xsystem35, a free implementation of AliceSoft's System 3.x game engine.
+DESCRIPTION=Port of xsystem35, a free implementation of AliceSoft's System 3.x game engine
 EAPI=8
 HOMEPAGE=https://github.com/kichikuou/xsystem35-sdl2
 INHERIT=cmake
@@ -12,4 +12,4 @@ RDEPEND=media-libs/libsdl2 media-libs/sdl2-mixer media-libs/sdl2-ttf virtual/zli
 SLOT=0
 SRC_URI=https://github.com/kichikuou/xsystem35-sdl2/archive/refs/tags/v2.17.0.tar.gz -> xsystem35-sdl2-2.17.0.tar.gz
 _eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	3530055400d05e64deaba3042af30af6
-_md5_=3af357c1a0543e5e76753c128a1fb79a
+_md5_=19ab31a18e91603e3c7b44212e1af0f9

@@ -1,7 +1,7 @@
 BDEPEND=sys-devel/bison doc? ( dev-python/sphinx ) >=dev-build/meson-1.2.3 app-alternatives/ninja dev-build/meson-format-array virtual/pkgconfig
 DEFINED_PHASES=compile configure install setup test
 DEPEND=>=net-libs/libuecc-6 dev-libs/json-c dev-libs/libsodium dev-libs/openssl offload-l2tp? ( net-libs/libmnl ) caps? ( sys-libs/libcap ) test? ( dev-util/cmocka )
-DESCRIPTION=A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP.
+DESCRIPTION=A very small VPN daemon which tunnels IP packets and Ethernet frames over UDP
 EAPI=8
 HOMEPAGE=https://fastd.readthedocs.io/
 INHERIT=linux-info meson systemd
@@ -13,4 +13,4 @@ RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://github.com/neocturne/fastd/releases/download/v23/fastd-23.tar.xz
 _eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	linux-info	efd923656513c879204fec6638eadee5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	python-utils-r1	025367880f07ae6444e6035a49db0dab	sysroot	4c36abaf94ebd3ab32f8abea9a444121	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	meson	4d3a148e5931f2930e970884bcb4c77d	systemd	a964c0cbe818b5729da1dbfcee5be861
-_md5_=11137476607273b37d091386d2fba30b
+_md5_=e0d81df582c8ca922abec6f2c13415da

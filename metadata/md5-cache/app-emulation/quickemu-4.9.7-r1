@@ -1,15 +1,15 @@
 DEFINED_PHASES=install setup
-DEPEND=python_single_target_python3_12? ( dev-lang/python:3.12 ) python_single_target_python3_13? ( dev-lang/python:3.13 ) python_single_target_python3_14? ( dev-lang/python:3.14 ) >=app-emulation/qemu-6.0.0[gtk,sdl,spice,virtfs] >=app-shells/bash-4.0:= app-cdr/cdrtools app-crypt/swtpm app-misc/jq net-misc/spice-gtk[gtk3] net-misc/wget net-misc/zsync sys-apps/usbutils sys-apps/util-linux || ( sys-firmware/edk2 sys-firmware/edk2-bin ) sys-process/procps x11-apps/xrandr x11-misc/xdg-user-dirs
+DEPEND=python_single_target_python3_13? ( dev-lang/python:3.13 ) python_single_target_python3_14? ( dev-lang/python:3.14 ) >=app-emulation/qemu-6.0.0[gtk,sdl,spice,virtfs] >=app-shells/bash-4.0:= app-cdr/cdrtools app-crypt/swtpm app-misc/jq net-misc/spice-gtk[gtk3] net-misc/wget net-misc/zsync sys-apps/usbutils sys-apps/util-linux || ( sys-firmware/edk2 sys-firmware/edk2-bin ) sys-process/procps x11-apps/xrandr x11-misc/xdg-user-dirs
 DESCRIPTION=Create and run optimised Windows, macOS and Linux desktop virtual machines
 EAPI=8
 HOMEPAGE=https://github.com/quickemu-project/quickemu
 INHERIT=python-single-r1
-IUSE=python_single_target_python3_12 python_single_target_python3_13 python_single_target_python3_14
+IUSE=python_single_target_python3_13 python_single_target_python3_14
 KEYWORDS=~amd64
 LICENSE=MIT
-RDEPEND=python_single_target_python3_12? ( dev-lang/python:3.12 ) python_single_target_python3_13? ( dev-lang/python:3.13 ) python_single_target_python3_14? ( dev-lang/python:3.14 ) >=app-emulation/qemu-6.0.0[gtk,sdl,spice,virtfs] >=app-shells/bash-4.0:= app-cdr/cdrtools app-crypt/swtpm app-misc/jq net-misc/spice-gtk[gtk3] net-misc/wget net-misc/zsync sys-apps/usbutils sys-apps/util-linux || ( sys-firmware/edk2 sys-firmware/edk2-bin ) sys-process/procps x11-apps/xrandr x11-misc/xdg-user-dirs
-REQUIRED_USE=^^ ( python_single_target_python3_12 python_single_target_python3_13 python_single_target_python3_14 )
+RDEPEND=python_single_target_python3_13? ( dev-lang/python:3.13 ) python_single_target_python3_14? ( dev-lang/python:3.14 ) >=app-emulation/qemu-6.0.0[gtk,sdl,spice,virtfs] >=app-shells/bash-4.0:= app-cdr/cdrtools app-crypt/swtpm app-misc/jq net-misc/spice-gtk[gtk3] net-misc/wget net-misc/zsync sys-apps/usbutils sys-apps/util-linux || ( sys-firmware/edk2 sys-firmware/edk2-bin ) sys-process/procps x11-apps/xrandr x11-misc/xdg-user-dirs
+REQUIRED_USE=^^ ( python_single_target_python3_13 python_single_target_python3_14 )
 SLOT=0
 SRC_URI=https://github.com/quickemu-project/quickemu/archive/refs/tags/4.9.7.tar.gz -> quickemu-4.9.7.tar.gz
 _eclasses_=eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	python-utils-r1	025367880f07ae6444e6035a49db0dab	python-single-r1	47d8ac9be330c9366112b78fd4f8ce57
-_md5_=1cb28282af6feb96dd9ac395c1e833e0
+_md5_=9d6c8dba111a285efa5ee31fc547f98d

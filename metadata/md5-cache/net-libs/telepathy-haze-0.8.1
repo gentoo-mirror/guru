@@ -1,6 +1,6 @@
-BDEPEND=virtual/pkgconfig test? ( dev-python/pygobject:3 || ( ( dev-lang/python:3.13 dev-python/twisted[python_targets_python3_13(-)] ) ( dev-lang/python:3.12 dev-python/twisted[python_targets_python3_12(-)] ) ) )
+BDEPEND=virtual/pkgconfig test? ( dev-python/pygobject:3 || ( ( dev-lang/python:3.13 dev-python/twisted[python_targets_python3_13(-)] ) ) )
 DEFINED_PHASES=setup
-DEPEND=dev-libs/dbus-glib dev-libs/glib:2 net-im/pidgin:=[dbus] net-libs/telepathy-glib sys-apps/dbus || ( dev-lang/python:3.13 dev-lang/python:3.12 ) dev-libs/libxslt dev-util/glib-utils
+DEPEND=dev-libs/dbus-glib dev-libs/glib:2 net-im/pidgin:=[dbus] net-libs/telepathy-glib sys-apps/dbus || ( dev-lang/python:3.13 ) dev-libs/libxslt dev-util/glib-utils
 DESCRIPTION=Telepathy connection manager providing libpurple supported protocols
 EAPI=8
 HOMEPAGE=https://telepathy.freedesktop.org https://developer.pidgin.im/wiki/TelepathyHaze
@@ -13,4 +13,4 @@ RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://telepathy.freedesktop.org/releases/telepathy-haze/telepathy-haze-0.8.1.tar.gz
 _eclasses_=eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	python-utils-r1	025367880f07ae6444e6035a49db0dab	python-any-r1	891415dfe39ad9b41b461f2b86354af0
-_md5_=cfb9272d582999778c5967efb5474595
+_md5_=17eb4ad744dfdd9eea65a5f666aaf742

@@ -1,0 +1,13 @@
+BDEPEND=app-arch/unzip
+DEFINED_PHASES=compile install prepare
+DESCRIPTION=Fast all-in-one JavaScript runtime, bundler, transpiler, and package manager
+EAPI=8
+HOMEPAGE=https://bun.com/ https://github.com/oven-sh/bun/
+INHERIT=shell-completion
+KEYWORDS=~amd64 ~arm64
+LICENSE=MIT
+RESTRICT=strip test
+SLOT=0
+SRC_URI=amd64? ( https://github.com/oven-sh/bun/releases/download/bun-v1.4.4/bun-linux-x64.zip -> bun-bin-1.4.4-amd64.zip ) arm64? ( https://github.com/oven-sh/bun/releases/download/bun-v1.4.4/bun-linux-aarch64.zip -> bun-bin-1.4.4-arm64.zip )
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	shell-completion	42587a281b8b546975e45fad82edcb50
+_md5_=030fc37a75d9130268d7b1cfa846cbde

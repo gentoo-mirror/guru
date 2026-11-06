@@ -1,7 +1,7 @@
 BDEPEND=app-arch/bzip2 dev-libs/openssl virtual/zlib:= >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile install unpack
 DEPEND=app-arch/bzip2 dev-libs/openssl virtual/zlib:=
-DESCRIPTION=Convert Apple disk images to IMG format.
+DESCRIPTION=Convert Apple disk images to IMG format
 EAPI=8
 HOMEPAGE=https://github.com/Lekensteyn/dmg2img
 INHERIT=git-r3 toolchain-funcs
@@ -9,5 +9,5 @@ LICENSE=GPL-2
 PROPERTIES=live
 RDEPEND=app-arch/bzip2 dev-libs/openssl virtual/zlib:=
 SLOT=0
-_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	git-r3	e6c2f983e006e805160436c75a0c1562
-_md5_=110e16a9ce3447ee53197ab9675f9fbd
+_eclasses_=git-r3	e6c2f983e006e805160436c75a0c1562	toolchain-funcs	58a918e3a42d0156f010dcfd43725be5
+_md5_=b78104d83cfdd7f8ec6e45d52d34a3b0

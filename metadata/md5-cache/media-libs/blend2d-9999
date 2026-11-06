@@ -1,7 +1,7 @@
 BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.28.5 >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install prepare test unpack
 DEPEND=jit? ( >=dev-libs/asmjit-2025.10.12:= )
-DESCRIPTION=2D vector graphics library powered by a JIT compiler.
+DESCRIPTION=2D vector graphics library powered by a JIT compiler
 EAPI=8
 HOMEPAGE=https://blend2d.com/
 INHERIT=cmake git-r3
@@ -12,4 +12,4 @@ RDEPEND=jit? ( >=dev-libs/asmjit-2025.10.12:= )
 RESTRICT=!test? ( test )
 SLOT=0/9999
 _eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	3530055400d05e64deaba3042af30af6	git-r3	e6c2f983e006e805160436c75a0c1562
-_md5_=84ec015092be718351be78fad46186d5
+_md5_=393b32f1e3e6a4787db9921aca307504

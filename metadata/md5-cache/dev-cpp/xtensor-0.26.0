@@ -1,4 +1,4 @@
-BDEPEND=doc? ( app-text/doxygen || ( ( dev-lang/python:3.13 dev-python/breathe[python_targets_python3_13(-)] dev-python/sphinx[python_targets_python3_13(-)] dev-python/sphinx-rtd-theme[python_targets_python3_13(-)] ) ( dev-lang/python:3.12 dev-python/breathe[python_targets_python3_12(-)] dev-python/sphinx[python_targets_python3_12(-)] dev-python/sphinx-rtd-theme[python_targets_python3_12(-)] ) ) ) test? ( dev-cpp/doctest ) app-alternatives/ninja >=dev-build/cmake-3.28.5
+BDEPEND=doc? ( app-text/doxygen || ( ( dev-lang/python:3.13 dev-python/breathe[python_targets_python3_13(-)] dev-python/sphinx[python_targets_python3_13(-)] dev-python/sphinx-rtd-theme[python_targets_python3_13(-)] ) ) ) test? ( dev-cpp/doctest ) app-alternatives/ninja >=dev-build/cmake-3.28.5
 DEFINED_PHASES=compile configure install postinst prepare pretend setup test
 DEPEND=>=dev-cpp/xtl-0.8.0 tbb? ( dev-cpp/tbb )
 DESCRIPTION=header-only C++ library for numerical analysis with multi-dimensional arrays
@@ -14,4 +14,4 @@ RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://codeload.github.com/xtensor-stack/xtensor/tar.gz/refs/tags/0.26.0 -> xtensor-0.26.0.tar.gz
 _eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	3530055400d05e64deaba3042af30af6	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	python-utils-r1	025367880f07ae6444e6035a49db0dab	python-any-r1	891415dfe39ad9b41b461f2b86354af0	optfeature	58cc13bdc4e9a204077e1e7c9a1d7988
-_md5_=2b66e3d16d8b767fd3c9698308e14d0e
+_md5_=b34e00c9010c4610410526858c314074
