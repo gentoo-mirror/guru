@@ -1,0 +1,13 @@
+BDEPEND=virtual/pkgconfig
+DEFINED_PHASES=install postinst
+DESCRIPTION=Modern, secure, all-in-on email server (binary package)
+EAPI=8
+HOMEPAGE=https://www.xmox.nl/
+INHERIT=systemd
+KEYWORDS=-* ~amd64 ~arm64 ~x86
+LICENSE=|| ( MIT MPL-2.0 ) MIT BSD Apache-2.0 BSD-2
+RDEPEND=acct-user/mox acct-group/mox !!net-mail/mox
+SLOT=0
+SRC_URI=amd64? ( https://beta.gobuilds.org/github.com/mjl-/mox@v0.0.17/linux-amd64-go1.27.1/0BcooIyz1Z91f8-dFhIsp6fMzqxY/mox-v0.0.17-go1.27.1.gz -> mox-bin-amd64-0.0.17.gz ) arm? ( https://beta.gobuilds.org/github.com/mjl-/mox@v0.0.17/linux-arm-go1.27.1/0InYsnI7ONfijs8Qn7_rgbKzyrr4/mox-v0.0.17-go1.27.1.gz -> mox-bin-arm-0.0.17.gz ) arm64? ( https://beta.gobuilds.org/github.com/mjl-/mox@v0.0.17/linux-arm64-go1.27.1/0ANmovaWTUEfqUE9-EpSMipF4nGo/mox-v0.0.17-go1.27.1.gz -> mox-bin-arm64-0.0.17.gz ) x86? ( https://beta.gobuilds.org/github.com/mjl-/mox@v0.0.17/linux-386-go1.27.1/0ZD9BC_IjUx_PfJ4IOLqIFYbiomw/mox-v0.0.17-go1.27.1.gz -> mox-bin-x86-0.0.17.gz )
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	systemd	a964c0cbe818b5729da1dbfcee5be861
+_md5_=038f92ecf5bce4aa2c7bca322ca05ed3

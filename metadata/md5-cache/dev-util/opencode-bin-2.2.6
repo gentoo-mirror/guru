@@ -1,0 +1,12 @@
+DEFINED_PHASES=install
+DESCRIPTION=The open source coding agent
+EAPI=8
+HOMEPAGE=https://opencode.ai
+INHERIT=shell-completion
+KEYWORDS=-* ~amd64 ~arm64
+LICENSE=MIT
+RESTRICT=mirror strip
+SLOT=0
+SRC_URI=amd64? ( https://github.com/anomalyco/opencode/releases/download/v2.2.6/opencode-linux-x64.tar.gz -> opencode-bin-2.2.6-amd64.tar.gz ) arm64? ( https://github.com/anomalyco/opencode/releases/download/v2.2.6/opencode-linux-arm64.tar.gz -> opencode-bin-2.2.6-arm64.tar.gz )
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	shell-completion	42587a281b8b546975e45fad82edcb50
+_md5_=18490c4e4298822db73a6f1b52f3d1dc

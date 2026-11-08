@@ -1,5 +1,6 @@
-BDEPEND=media-libs/harfbuzz dev-qt/qtbase:6 dev-qt/qt3d:6 >=dev-vcs/git-1.8.2.1[curl]
-DEFINED_PHASES=compile install postinst postrm preinst prepare unpack
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile install postinst postrm preinst unpack
+DEPEND=app-text/mupdf:= dev-qt/qt3d:6 dev-qt/qtbase:6 media-libs/harfbuzz:= virtual/zlib:=
 DESCRIPTION=Sioyek is a PDF viewer with a focus on textbooks and research papers
 EAPI=8
 HOMEPAGE=https://github.com/ahrm/sioyek
@@ -7,6 +8,7 @@ IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
 INHERIT=qmake-utils desktop xdg git-r3
 LICENSE=GPL-3
 PROPERTIES=live
+RDEPEND=app-text/mupdf:= dev-qt/qt3d:6 dev-qt/qtbase:6 media-libs/harfbuzz:= virtual/zlib:=
 SLOT=0
 _eclasses_=qt-utils	5b7ae92788820ab4495683740521513c	toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	qmake-utils	91f1d001b598c8e4730a7a36b2c1849d	desktop	e447b5f77146d69797e9f03ff177f3f1	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	xdg	3ef49a87c52c8b77c476351195dfe575	git-r3	e6c2f983e006e805160436c75a0c1562
-_md5_=13a42e7252561a55fcd4a70bf234b7bc
+_md5_=11c4b26c8253c42c37da6bbfeeff005b
