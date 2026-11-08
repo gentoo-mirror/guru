@@ -12,14 +12,15 @@ SRC_URI="https://github.com/libcpr/cpr/archive/${PV}.tar.gz
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~arm64"
 IUSE="+ssl"
 
 # tests disabled for now, as it tries to fetch mongoose
 RESTRICT="test"
 
 RDEPEND="
-	net-misc/curl
+	net-misc/curl[ssl?]
+	ssl? ( dev-libs/openssl )
 "
 DEPEND="
 	${RDEPEND}
@@ -27,6 +28,7 @@ DEPEND="
 
 src_configure() {
 	local mycmakeargs=(
+		-DCPR_WARNINGS_AS_ERRORS=OFF
 		-DCPR_USE_SYSTEM_CURL=ON
 		-DCPR_ENABLE_SSL=$(usex ssl)
 	)
