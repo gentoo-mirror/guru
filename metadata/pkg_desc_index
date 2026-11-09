@@ -507,7 +507,7 @@ app-voices/rhvoice-arina 4.0: RHVoice voice: arina (ru)
 app-voices/rhvoice-bdl 4.1: RHVoice voice: bdl (en)
 app-voices/rhvoice-clb 4.0: RHVoice voice: clb (en)
 app-voices/rhvoice-slt 4.1: RHVoice voice: slt (en)
-dev-build/buildstream 2.7.0 2.8.0: The software integration tool
+dev-build/buildstream 2.7.0 2.8.1: The software integration tool
 dev-build/buildstream-plugins 2.7.0 2.8.0: A collection of plugins for the BuildStream project
 dev-build/buildstream-plugins-community 2.3.1 2.5.0: A collection of community maintained plugins for the BuildStream project
 dev-build/cargo-make 0.37.24: Rust task runner and build tool
@@ -532,7 +532,7 @@ dev-cpp/fast_double_parser 0.8.1: Parse strings into double floating-point value
 dev-cpp/finalcut 0.9.1-r1 9999: A text-based widget toolkit
 dev-cpp/fkYAML 0.4.2 0.4.2_p20250522 0.4.3: A C++ header-only YAML library
 dev-cpp/gsl-lite 1.1.0: C++ Guideline Support Library implementation
-dev-cpp/hydrocarbon 0.1.1: Simple, self-contained C++23 HTTP library
+dev-cpp/hydrocarbon 0.1.2: Simple, self-contained C++23 HTTP library
 dev-cpp/indicators 2.3 2.3-r1: Activity indicators for modern C++
 dev-cpp/jacinth 0.1.0: JSON for Postmodern C++
 dev-cpp/mustache 4.1 4.1_p20211210: Mustache implementation for modern C++
@@ -978,12 +978,12 @@ dev-python/mozilla-django-oidc 5.0.2: Django OpenID Connect library
 dev-python/mpxj 16.2.0: Read/Write project management files (MPP, MSPDI, MPX, PMXML, XER, etc)
 dev-python/msrest 0.7.1: AutoRest swagger generator Python client runtime
 dev-python/mwclient 0.11.0: Unofficial lib for MediaWiki API
-dev-python/nab 0.0.22-r1 0.0.23 0.0.24: PubGrub-based dependency resolver for Python packages
-dev-python/nab-index 0.0.22-r1 0.0.23 0.0.24: Pypi Simple-API client and on-disk cache for nab
-dev-python/nab-markersets 0.0.22-r1 0.0.23 0.0.24: PEP 508 marker algebra, markers as sets of environments
-dev-python/nab-project 0.0.22-r1 0.0.23 0.0.24: Indexed-backed provider, lockfile emitter, and downloader for nab
-dev-python/nab-provider 0.0.22-r1 0.0.23 0.0.24: IO-free resolution core for nab
-dev-python/nab-resolver 0.0.22-r1 0.0.23 0.0.24: Generic PubGrub dependency-resolver core
+dev-python/nab 0.0.22-r1 0.0.23 0.0.24 0.0.25: PubGrub-based dependency resolver for Python packages
+dev-python/nab-index 0.0.22-r1 0.0.23 0.0.24 0.0.25: Pypi Simple-API client and on-disk cache for nab
+dev-python/nab-markersets 0.0.22-r1 0.0.23 0.0.24 0.0.25: PEP 508 marker algebra, markers as sets of environments
+dev-python/nab-project 0.0.22-r1 0.0.23 0.0.24 0.0.25: Indexed-backed provider, lockfile emitter, and downloader for nab
+dev-python/nab-provider 0.0.22-r1 0.0.23 0.0.24 0.0.25: IO-free resolution core for nab
+dev-python/nab-resolver 0.0.22-r1 0.0.23 0.0.24 0.0.25: Generic PubGrub dependency-resolver core
 dev-python/ndjson 0.3.1: Ndjson with the same interface as the builtin json module
 dev-python/nested-multipart-parser 1.6.0: Parser for nested data in multipart form
 dev-python/nethsm 2.1.2 3.0.0: Python client for NitroKey NetHSM
@@ -1298,7 +1298,7 @@ dev-util/termux-language-server 0.0.31-r1 0.1.8: A language server for some spec
 dev-util/tflint-bin 0.43.0 0.46.0: A Pluggable Terraform Linter
 dev-util/tinyxxd 1.3.16 1.3.17 9999: Drop-in replacement and standalone version of xxd
 dev-util/tokei 12.1.2 13.0.0 14.0.0 15.0.0 9999: Count your code, quickly
-dev-util/tombi 1.9.8 1.10.0: TOML Formatter / Linter / Language Server
+dev-util/tombi 1.10.0 1.11.0: TOML Formatter / Linter / Language Server
 dev-util/topiary 0.7.3: CLI app for Topiary, the universal code formatter
 dev-util/typescript-language-server 4.1.2 4.3.3 5.1.3: TypeScript & JavaScript Language Server
 dev-util/u-config 0.34.0 0.35.0 9999: Lean and mean pkg-config replacement
@@ -1902,12 +1902,12 @@ net-im/sliding-sync 0.99.15 0.99.19: Proxy implementation of MSC3575's sync prot
 net-im/teams-for-linux 2.11.1 2.13.0 2.27.0: Unofficial Microsoft Teams client for Linux. Binary precompiled version
 net-im/tuwunel 1.9.3 1.9.4-r1: High Performance Matrix Homeserver in Rust!
 net-im/vesktop-bin 1.6.7 1.6.8 1.6.9: All-in-one voice and text chat for gamers with Vencord Preinstalled
-net-im/why2 2.4.3: Lightweight, fast and secure chat application powered by WHY2 encryption
+net-im/why2 2.5.0: Lightweight, fast and secure chat application powered by WHY2 encryption
 net-im/zapzap 7.4.5 7.5.1: WhatsApp desktop application written in PyQt6 + PyQt6-WebEngine
 net-im/zendrite 3.7.0 3.8.0: Zendrite is a second-generation Matrix homeserver written in Go
 net-im/zulip-desktop-bin 5.13.2: Organized chat for distributed teams
 net-irc/catgirl 2.2 2.2a: TLS-only terminal IRC client
-net-irc/halloy 2026.7.2 2026.8-r1 2026.9: IRC application written in Rust
+net-irc/halloy 2026.8-r1 2026.9 2026.10: IRC application written in Rust
 net-irc/limnoria-plugins-bugzilla 4.0: Bugzilla integration plugin for the Limnoria IRC Bot
 net-irc/litterbox 1.9: TLS-only IRC logger
 net-irc/pounce 3.0 3.1 3.1-r1: Multi-client, TLS-only IRC bouncer
@@ -2015,9 +2015,9 @@ net-p2p/monero 0.18.5.4-r1 9999: The secure, private, untraceable cryptocurrency
 net-p2p/monero-gui-bin 0.18.5.2: An open-source GUI wallet developed by the Monero community
 net-p2p/p2pool 4.18.1-r3: Decentralized pool for Monero mining
 net-p2p/persepolis 5.2.0: Persepolis is a download manager written in Python
-net-p2p/syncthingtray 2.1.8 2.1.9: Tray application and Dolphin/Plasma integration for Syncthing
+net-p2p/syncthingtray 2.1.9-r1: Tray application and Dolphin/Plasma integration for Syncthing
 net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
-net-p2p/yggdrasil-go 0.5.12-r1 0.5.13 9999: An experiment in scalable routing as an encrypted IPv6 overlay network
+net-p2p/yggdrasil-go 0.5.13 0.5.15 9999: An experiment in scalable routing as an encrypted IPv6 overlay network
 net-print/captdriver 0.1.4: Alternative driver for Canon CAPT printers
 net-print/hpuld 1.00.39.17.00.33: HP Unified Linux Driver (for samsung hardware)
 net-proxy/Throne 1.2.4 1.3.0: Qt based cross-platform GUI proxy configuration manager
@@ -2089,7 +2089,7 @@ sci-electronics/slang 11.0-r1 9999: SystemVerilog compiler and language services
 sci-electronics/surfer 0.7.0-r1: Waveform viewer with a focus on a snappy usable interface
 sci-electronics/svls 0.2.11: SystemVerilog language server
 sci-electronics/vcd 221217-r1: VCD file (Value Change Dump) command line viewer
-sci-electronics/verilator 5.052-r2 5.054 9999: The fast free Verilog/SystemVerilog simulator
+sci-electronics/verilator 5.052-r2 5.054-r1 9999: The fast free Verilog/SystemVerilog simulator
 sci-electronics/vhdl-ls 0.87.0: VHDL Language Server
 sci-electronics/yosys 0.68 0.69: framework for Verilog RTL synthesis
 sci-geosciences/google-earth-pro 7.3.6-r1: Google's 3D planet viewer
@@ -2205,7 +2205,7 @@ sys-apps/zmem 0.2.1 0.2.3 0.2.4: Memory monitoring tool focusing on swap, zswap 
 sys-auth/authenticator 4.6.2: 2FA code generator for GNOME
 sys-auth/pam-gnupg 0.4-r1: Unlock GnuPG keys on login
 sys-block/caligula 0.5.0: A user-friendly, lightweight TUI for disk imaging
-sys-block/clonezilla 5.16.25-r2 5.17.15-r2 5.18.12-r1 5.19.30 5.20.7: Clonezilla is a partition and disk imaging/cloning program
+sys-block/clonezilla 5.16.25-r2 5.17.15-r2 5.18.12-r1 5.19.30 5.20.10: Clonezilla is a partition and disk imaging/cloning program
 sys-block/partclone 0.3.49 0.3.50 0.3.51 0.3.52 9999: Partition cloning tool
 sys-block/ublksrv 1.6: Userspace block device driver
 sys-boot/customrescuecd-x86_64-grub 0.1: Grub menu entries for the .iso image of customrescuecd
@@ -2304,7 +2304,7 @@ www-apps/whisparr-eros 3.3.5.861 3.6.0.1660: Adult movie organizer/manager for u
 www-apps/zola 0.22.1-r5 0.23.6: A fast static site generator with everything built-in
 www-client/badwolf 1.4.0-r2 9999-r1: Minimalist and privacy-oriented WebKitGTK+ browser
 www-client/browsh 1.8.2 1.8.3: A fully-modern text-based browser, rendering to TTY and browsers
-www-client/chawan 0.5.0 0.5.1 9999: TUI web browser; supports CSS, images, JavaScript, and multiple web protocols
+www-client/chawan 0.5.1 0.5.2 9999: TUI web browser; supports CSS, images, JavaScript, and multiple web protocols
 www-client/helium-bin 0.20.1.1 0.20.2.1 0.20.3.1: Private, fast, and honest web browser based on Chromium
 www-client/mullvad-browser 140.17.0 153.4.3-r1 153.5.1 153.7.1: The Mullvad Browser is developed to minimize tracking and fingerprinting
 www-client/mullvad-browser-bin 15.0.25-r1 15.0.26 16.0: The Mullvad Browser is developed to minimize tracking and fingerprinting
@@ -2332,7 +2332,7 @@ x11-apps/variety 0.9.0-r1 0.9.1: Wallpaper downloader and manager for Linux syst
 x11-apps/xcur2png 0.7.1-r3: Convert X cursors to PNG images
 x11-drivers/OpenTabletDriver 0.6.7: A cross-platform open-source tablet driver
 x11-drivers/OpenTabletDriver-bin 0.6.3.0: Cross platform tablet driver (binary package)
-x11-drivers/evdi 1.14.12 1.14.13 1.14.14 1.14.15 1.14.16 9999: Extensible Virtual Display Interface
+x11-drivers/evdi 1.14.16 1.15.1 9999: Extensible Virtual Display Interface
 x11-libs/gtk-fortran 4.9.0: A GTK+ binding to build Graphical User Interfaces in Fortran
 x11-libs/sdl-fakeqwerty 0_pre20191217: Fixes non-QWERTY keyboards on Prison Architect (and maybe other SDL games)
 x11-misc/autotiling 1.9.3: Script for sway and i3 to automatically switch the window split orientation
@@ -2353,13 +2353,13 @@ x11-misc/leftwm-theme 0.1.2 0.1.3: Theme mangager for LeftWM
 x11-misc/ly 1.3.2 1.4.0 1.4.1: Ly - a TUI display manager
 x11-misc/matugen 2.4.1 4.1.0 4.2.0: A material you and base16 color generation tool with templates
 x11-misc/picom-jonaburg 9999: A lightweight compositor for X11 (previously a compton fork)
-x11-misc/pywal16 3.6.0 3.7.2: 16 colors fork of pywal
+x11-misc/pywal16 3.6.0 3.7.2 3.8.15: 16 colors fork of pywal
 x11-misc/rofi-emoji 3.3.0 3.4.1 4.1.0: Emoji selector plugin for Rofi
 x11-misc/selx 2.0.0 2.0.1: Minimal X11 rectangle selection tool
 x11-misc/silent-sddm-theme 1.4.2 1.5.0 9999: Highly customizable SDDM theme
 x11-misc/slstatus 1.0-r1 1.1: Status monitor for window managers that use WM_NAME/stdin to fill the status bar
 x11-misc/tbsm 0.5 0.6 0.7: A pure bash session or application launcher. Inspired by cdm, tdm and krunner
-x11-misc/touchegg 2.0.18: Linux multi-touch gesture recognizer
+x11-misc/touchegg 2.0.18-r1: Linux multi-touch gesture recognizer
 x11-misc/vimouse 0.11: Move mouse pointer with keyboard
 x11-misc/wallust 3.1.0 3.3.0 3.5.2: Generate a 16 color scheme based on an image
 x11-misc/xbanish 1.8 1.8_p20230519: Banish the mouse cursor when typing, show it again when the mouse moves

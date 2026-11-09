@@ -1,4 +1,4 @@
-BDEPEND=>=dev-lang/go-1.23 >=dev-lang/go-1.24.11:= app-arch/unzip virtual/pkgconfig
+BDEPEND=>=dev-lang/go-1.26.0 >=dev-lang/go-1.24.11:= app-arch/unzip virtual/pkgconfig
 DEFINED_PHASES=compile install postinst setup unpack
 DESCRIPTION=An experiment in scalable routing as an encrypted IPv6 overlay network
 EAPI=8
@@ -11,6 +11,6 @@ LICENSE=LGPL-3 MIT Apache-2.0 BSD ZLIB
 RDEPEND=acct-user/yggdrasil acct-group/yggdrasil
 RESTRICT=mirror
 SLOT=0
-SRC_URI=https://github.com/yggdrasil-network/yggdrasil-go/releases/download/v0.5.12/yggdrasil-0.5.12-vendored.tar.gz
+SRC_URI=https://github.com/yggdrasil-network/yggdrasil-go/releases/download/v0.5.15/yggdrasil-0.5.15-vendored.tar
 _eclasses_=fcaps	c94316d02a37fb5cbe79b7d41c729119	toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	sysroot	4c36abaf94ebd3ab32f8abea9a444121	go-env	fca4e820393c2eac25a944be8bdf6a3a	go-module	3d4b6f3f29b3ebdeb708785b3cb1743b	linux-info	efd923656513c879204fec6638eadee5	systemd	a964c0cbe818b5729da1dbfcee5be861
-_md5_=e45864e796c2b0e78ce816f4e8b40706
+_md5_=b5daddc198f89a38cec623a2a3018dae

@@ -1,14 +1,14 @@
 BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.28.5 virtual/pkgconfig
 DEFINED_PHASES=compile configure install prepare test
-DEPEND=dev-libs/glib:2 dev-libs/libinput:= dev-libs/pugixml virtual/libudev x11-libs/cairo x11-libs/gtk+:3 x11-libs/libX11 x11-libs/libXrandr x11-libs/libXtst
+DEPEND=dev-libs/glib:2 dev-libs/libinput:= dev-libs/pugixml virtual/libudev x11-libs/cairo x11-libs/gtk+:3 x11-libs/libX11 x11-libs/libXi x11-libs/libXrandr x11-libs/libXtst
 DESCRIPTION=Linux multi-touch gesture recognizer
 EAPI=8
 HOMEPAGE=https://github.com/JoseExposito/touchegg/
 INHERIT=cmake systemd
 KEYWORDS=~amd64
 LICENSE=GPL-3+
-RDEPEND=dev-libs/glib:2 dev-libs/libinput:= dev-libs/pugixml virtual/libudev x11-libs/cairo x11-libs/gtk+:3 x11-libs/libX11 x11-libs/libXrandr x11-libs/libXtst
+RDEPEND=dev-libs/glib:2 dev-libs/libinput:= dev-libs/pugixml virtual/libudev x11-libs/cairo x11-libs/gtk+:3 x11-libs/libX11 x11-libs/libXi x11-libs/libXrandr x11-libs/libXtst
 SLOT=0
 SRC_URI=https://github.com/JoseExposito/touchegg/archive/refs/tags/2.0.18.tar.gz -> touchegg-2.0.18.tar.gz
 _eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	3530055400d05e64deaba3042af30af6	systemd	a964c0cbe818b5729da1dbfcee5be861
-_md5_=9485da945354e2720489d5831ebde649
+_md5_=f20b2a9347e0178fb087134465721db0
