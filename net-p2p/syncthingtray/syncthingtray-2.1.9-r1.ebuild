@@ -13,17 +13,20 @@ SRC_URI="https://github.com/Martchus/syncthingtray/archive/refs/tags/v${PV}.tar.
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="kio plasmoid test"
+IUSE="kio plasmoid test webengine"
 RESTRICT="!test? ( test )"
 
 DEPEND="
+	dev-cpp/cpp-utilities:=
 	dev-libs/boost
 	dev-qt/qtbase:6[concurrent,network]
+	dev-qt/qtdeclarative:6
 	dev-qt/qtsvg:6
 	gui-libs/qtforkawesome[qt6(+)]
 	gui-libs/qtutilities[qt6(+)]
 	kio? ( kde-frameworks/kio:6 )
 	plasmoid? ( kde-plasma/libplasma:6 )
+	webengine? ( dev-qt/qtwebengine:6 )
 "
 RDEPEND="${DEPEND}
 	net-p2p/syncthing
@@ -44,6 +47,7 @@ src_configure() {
 		-DNO_FILE_ITEM_ACTION_PLUGIN=$(usex !kio)
 		-DNO_PLASMOID=$(usex !plasmoid)
 		-DEXCLUDE_TESTS_FROM_ALL=$(usex !test)
+		-DWEBVIEW_PROVIDER=$(usex webengine webengine none)
 	)
 	cmake_src_configure
 }
