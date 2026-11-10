@@ -72,7 +72,6 @@ app-emulation/lsfg-vk:cli - Enables building lsfg-vk-cli
 app-emulation/tinyemu:http - Support fetching disks over HTTP using
 app-emulation/x48ng:X - X11 frontend
 app-emulation/x48ng:sdl - SDL fronted
-app-i18n/fcitx5-lotus:openrc - Install the OpenRC init script for fcitx5-lotus-server
 app-misc/clifm:arc4random - Use arc4random instead of random, requires 'posix' to be unset
 app-misc/clifm:archive - Archive manipulation support (extraction/decompression, listing, repacking, mounting)
 app-misc/clifm:bleach - Support for Bleach, the built-in file names cleaner
@@ -687,7 +686,6 @@ media-sound/drumgizmo:cli - Build stand-alone CLI application
 media-sound/drumgizmo:jack - Enable jack output and jackmidi input (CLI only)
 media-sound/drumgizmo:lv2 - Build LV2 plugin
 media-sound/drumgizmo:midi - Enable midifile input via media-libs/libsmf (CLI only)
-media-sound/fooyin:archive - Build the libarchive input plugin using app-arch/libarchive
 media-sound/fooyin:gme - Build the libgme input plugin using media-libs/game-music-emu
 media-sound/fooyin:openmpt - Build the OpenMPT input plugin using media-libs/libopenmpt
 media-sound/fooyin:pipewire - Enable sound support via native PipeWire backend
@@ -871,6 +869,7 @@ net-p2p/syncthingtray:webengine - Use dev-qt/qtwebengine to configure syncthing 
 net-p2p/trezord-go:systemd - Install systemd service file
 net-p2p/trezord-go:udev - Install udev rules
 net-print/hpuld:scanner - Enable scanner on multifunction devices which support it
+net-proxy/snowflake:minimal - Build and install just the snowflake-proxy binary
 net-voip/baresip:acip - Audio Contribution over IP compatibility module
 net-voip/baresip:amr - Enables Adaptive Multi-Rate Audio support
 net-voip/baresip:aom - av1 module

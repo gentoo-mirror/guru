@@ -268,7 +268,7 @@ app-eselect/eselect-bluespec 1.0.2: Manages the /usr/bin/bsc (bluespec) symlink
 app-eselect/eselect-ld 1.0.0: Manage the ld symlink
 app-eselect/eselect-swift 1.0 1.0-r1: Manages Swift symlinks
 app-eselect/eselect-vala 1.0.0: Manage the valac symlink
-app-i18n/fcitx5-lotus 3.5.7: Vietnamese Bamboo input method for Fcitx5 (Lotus branch)
+app-i18n/fcitx5-lotus 6.0.0: Vietnamese Bamboo input method for Fcitx5 (Lotus branch)
 app-laptop/clevo-fan-control 0_pre20260722 9999: Fan speed controller for Clevo laptops
 app-laptop/inputactions-ctl 0.9.0.0: InputActions Control Tool
 app-laptop/inputactions-kwin 0.9.2.0 0.9.2.1: KWin plugin for binding keyboard, mouse, touchpad and touchscreen actions
@@ -457,7 +457,7 @@ app-text/jrnl 4.2.1: Collect your thoughts and notes without leaving the command
 app-text/komikku 1.103.0: Manga reader for GNOME
 app-text/koodo-reader-bin 1.5.1 1.6.3: A modern ebook manager and reader with sync and backup capacities
 app-text/lchat 1.0-r2: Line oriented front end for ii-like chat programs
-app-text/lizard 1.24.1 1.24.3: A simple code complexity analyser, supports most of the popular languages
+app-text/lizard 1.24.1 1.24.3 1.25.1: A simple code complexity analyser, supports most of the popular languages
 app-text/lorien-bin 0.6.0-r2: Infinite canvas drawing/whiteboarding. Made with Godot.
 app-text/lsp 0.5.0_rc4 9999: The least significant pager
 app-text/markdown-oxide 0.25.11 0.25.12: PKM Markdown Language Server
@@ -978,12 +978,12 @@ dev-python/mozilla-django-oidc 5.0.2: Django OpenID Connect library
 dev-python/mpxj 16.2.0: Read/Write project management files (MPP, MSPDI, MPX, PMXML, XER, etc)
 dev-python/msrest 0.7.1: AutoRest swagger generator Python client runtime
 dev-python/mwclient 0.11.0: Unofficial lib for MediaWiki API
-dev-python/nab 0.0.22-r1 0.0.23 0.0.24 0.0.25: PubGrub-based dependency resolver for Python packages
-dev-python/nab-index 0.0.22-r1 0.0.23 0.0.24 0.0.25: Pypi Simple-API client and on-disk cache for nab
-dev-python/nab-markersets 0.0.22-r1 0.0.23 0.0.24 0.0.25: PEP 508 marker algebra, markers as sets of environments
-dev-python/nab-project 0.0.22-r1 0.0.23 0.0.24 0.0.25: Indexed-backed provider, lockfile emitter, and downloader for nab
-dev-python/nab-provider 0.0.22-r1 0.0.23 0.0.24 0.0.25: IO-free resolution core for nab
-dev-python/nab-resolver 0.0.22-r1 0.0.23 0.0.24 0.0.25: Generic PubGrub dependency-resolver core
+dev-python/nab 0.0.24 0.0.25 0.0.26 0.0.27: PubGrub-based dependency resolver for Python packages
+dev-python/nab-index 0.0.24 0.0.25 0.0.26 0.0.27: Pypi Simple-API client and on-disk cache for nab
+dev-python/nab-markersets 0.0.24 0.0.25 0.0.26 0.0.27: PEP 508 marker algebra, markers as sets of environments
+dev-python/nab-project 0.0.24 0.0.25 0.0.26 0.0.27: Indexed-backed provider, lockfile emitter, and downloader for nab
+dev-python/nab-provider 0.0.24 0.0.25 0.0.26 0.0.27: IO-free resolution core for nab
+dev-python/nab-resolver 0.0.24 0.0.25 0.0.26 0.0.27: Generic PubGrub dependency-resolver core
 dev-python/ndjson 0.3.1: Ndjson with the same interface as the builtin json module
 dev-python/nested-multipart-parser 1.6.0: Parser for nested data in multipart form
 dev-python/nethsm 2.1.2 3.0.0: Python client for NitroKey NetHSM
@@ -1244,7 +1244,7 @@ dev-util/ghidra 12.2: Software reverse engineering (SRE) framework
 dev-util/git-pages-cli 1.10.1: Command-line application for publishing sites to git-pages
 dev-util/gitlab-ci-local-bin 4.43.0 4.47.0 4.56.0: Run gitlab pipelines locally as shell executor or docker executor
 dev-util/go-task 3.53.1 3.54.0: A task runner / simpler Make alternative written in Go
-dev-util/google-antigravity 2.26.0 2.28.2 2.29.0 2.29.1: Google Antigravity 2.0, a dedicated platform to work with agents
+dev-util/google-antigravity 2.28.2 2.29.1 2.30.0: Google Antigravity 2.0, a dedicated platform to work with agents
 dev-util/google-antigravity-cli 1.3.6 1.4.12 1.5.2 1.5.3: Command-line interface for Google's Antigravity agentic development platform
 dev-util/google-antigravity-ide 2.1.1 2.5.5 2.6.0: Google Antigravity's Editor view with context-aware agent
 dev-util/grok-build 1.0.41 1.0.45: SpaceXAI's coding agent harness and TUI
@@ -1392,7 +1392,7 @@ games-rpg/open-adventure 1.17 1.18 1.20: Forward-port of the Crowther/Woods Adve
 games-rpg/primordia 3.6.70667: A cyberpunk point-and-click adventure game
 games-rpg/snoot-game 1.12.0: Visual novel parody of Goodbye Volcano High
 games-server/among-sus 20210519: Among Us, but it's a text adventure
-games-simulation/kittenspaceagency-bin 2026.10.25-r5707: A space flight and rocketry simulation
+games-simulation/kittenspaceagency-bin 2026.11.10-r5801: A space flight and rocketry simulation
 games-simulation/youre-the-os 1.11.1 1.11.2: Game where you are a computer's OS and have to manage processes, memory and I/O
 games-strategy/7k-ambition 3.2.14 9999: Seven Kingdoms: Ambition
 games-strategy/gigalomania 1.0.1: Libre clone of Mega-Lo-Mania (original from ~1990), supports original resources
@@ -1584,9 +1584,9 @@ gui-libs/qtforkawesome 0.3.2-r1 0.3.4: Library that bundles ForkAwesome for use 
 gui-libs/qtutilities 6.22.3 6.23.0: Useful Qt related C++ classes and routines
 gui-libs/scenefx 0.4.1 0.5 9999: A replacement for the wlroots scene API with eye-candy effects
 gui-libs/xdg-desktop-portal-termfilechooser 1.5.0: xdg-desktop-portal backend for choosing files with your favorite file chooser
-gui-wm/beansprout 1.1.1 9999: A tiling window manager for the river Wayland compositor
+gui-wm/beansprout 1.2.0 9999: A tiling window manager for the river Wayland compositor
 gui-wm/cage 0.2.1 0.3.0 0.3.1 9999: A Wayland kiosk
-gui-wm/canoe 0.5.1: Canoe, a River window manager implementation in Rust
+gui-wm/canoe 0.5.1 0.6.2: Canoe, a River window manager implementation in Rust
 gui-wm/kwm 0.3.0 9999: A window manager based on River Wayland compositor
 gui-wm/mangowm 0.18.2 0.18.3 0.18.4 0.18.5 9999: A fast, feature-rich Wayland compositor built on dwl
 gui-wm/miracle-wm 0.10.1: Tiling Wayland compositor based on Mir
@@ -1727,7 +1727,7 @@ media-sound/deep-filter 0.5.6-r2: Noise supression using deep filtering
 media-sound/drumgizmo 0.9.20-r1 9999: Audio sampler plugin and stand-alone app that simulates a real drum kit
 media-sound/dzr 251115 260308 260315: DZR: the command line deezer.com player
 media-sound/eartag 0.5.0 0.5.1: GTK4 MusicBrainz audio tagger
-media-sound/fooyin 0.13.1 0.14.0 0.14.1 9999: Play and manage your music with a powerful, highly customisable player
+media-sound/fooyin 0.14.1 0.15.0 9999: Play and manage your music with a powerful, highly customisable player
 media-sound/furnace 0.6.7 0.6.8.3: a multi-system chiptune tracker compatible with DefleMask modules
 media-sound/gapless 4.3.1 4.4: A GTK4 music player
 media-sound/goxlr-utility 1.2.3 9999: A utility for monitoring and controlling a TC-Helicon GoXLR or GoXLR Mini
@@ -1778,7 +1778,7 @@ media-sound/tenacity 1.3.4-r4 1.3.5-r1: Easy-to-use, privacy-friendly, FLOSS, cr
 media-sound/tidal-hifi-bin 5.16.0-r1 5.17.0 6.1.0 6.2.0 6.3.0 6.3.1 7.0.0 7.0.1: Web version of Tidal running in electron with Hi-Fi support thanks to Widevine
 media-sound/yandex-music 5.122.0 5.123.4 5.125.3: Yandex Music streaming service
 media-sound/ymuse 0.22: GTK client for Music Player Daemon (MPD) written in Go
-media-sound/ytm-player 2.0.0 2.1.0 9999: Full-featured YouTube Music TUI client with vim-style navigation
+media-sound/ytm-player 2.0.0 2.1.0 2.2.0 9999: Full-featured YouTube Music TUI client with vim-style navigation
 media-sound/zita-ajbridge 0.8.4-r2: zita-a2j and zita-j2a - bridges between ALSA and JACK
 media-video/ciano 0.2.4-r2: A multimedia file converter focused on simplicity
 media-video/clapper 0.8.0 0.10.0: Modern and user-friendly media player
@@ -1981,7 +1981,7 @@ net-misc/rpki-client 9.2 9.3: Portability shim for OpenBSD's rpki-client
 net-misc/searxng 9999: Free internet metasearch engine
 net-misc/smcroute 2.6.0: A static multicast routing daemon
 net-misc/sshx 0.2.4: A secure web-based, collaborative terminal
-net-misc/thinlinc 4.20.0.4284: An enterprise-grade Server-Based Computing (SBC) solution
+net-misc/thinlinc 4.20.0.4284 4.21.0.4588: An enterprise-grade Server-Based Computing (SBC) solution
 net-misc/toot 0.51.0-r1: toot - Mastodon CLI & TUI
 net-misc/tuxedo-yt6801 1.0.31-r8 1.0.32: Motorcomm YT6801 Ethernet driver for TUXEDO Computers
 net-misc/warp 1.0.0: Fast and secure file transfer
@@ -2006,14 +2006,14 @@ net-nntp/nzb-monkey-go 0.3.3-r1: Golang version of the NZB Monkey with included 
 net-nntp/pan 0.164 0.165: A newsreader for GNOME
 net-p2p/bisq-bin 1.9.14-r1: The decentralized bitcoin exchange (non-atomic, with arbitration)
 net-p2p/dogecoin-qt 1.14.9 9999: Dogecoin Core Qt for desktop. Downloaded blockchain is under 2.2GB. Much secure
-net-p2p/feather 2.9.1-r1 9999: A free, open-source Monero wallet
+net-p2p/feather 2.9.1-r2 9999: A free, open-source Monero wallet
 net-p2p/fopnu 1.68: P2P file sharing system
 net-p2p/fragments 3.0.1-r1 3.0.1-r2: Fragments is an easy to use BitTorrent client
 net-p2p/gridcoin 5.5.0.0 5.5.1.0: Proof-of-Stake based cryptocurrency that rewards BOINC computation
 net-p2p/ipfs-desktop-bin 0.39.0 0.40.0 0.43.0: A desktop client for IPFS. The IPFS's Native Application
 net-p2p/monero 0.18.5.4-r1 9999: The secure, private, untraceable cryptocurrency
 net-p2p/monero-gui-bin 0.18.5.2: An open-source GUI wallet developed by the Monero community
-net-p2p/p2pool 4.18.1-r3: Decentralized pool for Monero mining
+net-p2p/p2pool 4.18.1-r4: Decentralized pool for Monero mining
 net-p2p/persepolis 5.2.0: Persepolis is a download manager written in Python
 net-p2p/syncthingtray 2.1.9-r1: Tray application and Dolphin/Plasma integration for Syncthing
 net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
@@ -2026,7 +2026,7 @@ net-proxy/dnss 0.1.1 9999: A small, speedy DNS proxy and bad-stuff-blocker
 net-proxy/ngrok-bin 3.39.11: ngrok is a reverse proxy, firewall, and API gateway
 net-proxy/opera-proxy 1.15.0 1.28.0: Standalone Opera VPN proxies client
 net-proxy/shadowsocks-rust 1.22.0: A Rust port of shadowsocks
-net-proxy/snowflake 2.11.0-r1 2.12.1 2.14.1: Pluggable Transport using WebRTC, inspired by Flashproxy
+net-proxy/snowflake 2.15.3-r1: Pluggable Transport using WebRTC, inspired by Flashproxy
 net-proxy/wireproxy 1.1.2-r2 1.1.3-r3: Wireguard client that exposes itself as a proxy
 net-proxy/xray-core 26.3.27 26.10.31 9999: A unified platform for anti-censorship
 net-voip/baresip 4.11.0 4.12.0: Baresip is a portable and modular SIP User-Agent
@@ -2085,7 +2085,7 @@ sci-electronics/lxi-tools 2.7: Tools to access devices with LXI
 sci-electronics/openboardview-bin 10.0.0: Linux SDL/ImGui edition software for viewing .brd files
 sci-electronics/qucs-s 26.1.1: Quite universal circuit simulator with SPICE
 sci-electronics/sby 0.68 0.69: Front-end for Yosys-based formal hardware verification flows
-sci-electronics/slang 11.0-r1 9999: SystemVerilog compiler and language services
+sci-electronics/slang 11.0-r2 12.1-r1: SystemVerilog compiler and language services
 sci-electronics/surfer 0.7.0-r1: Waveform viewer with a focus on a snappy usable interface
 sci-electronics/svls 0.2.11: SystemVerilog language server
 sci-electronics/vcd 221217-r1: VCD file (Value Change Dump) command line viewer
@@ -2276,7 +2276,7 @@ sys-process/snooze 0.5.1 0.6 9999: Run a command at a particular time
 sys-process/task-spooler 2.0.0 9999: A scheduler for CPU tasks
 sys-process/xe 1.0-r1: Simple xargs and apply replacement with sane defaults
 virtual/crystal-db 0.14 0.14-r1: Virtual for Crystal database drivers
-www-apps/anubis 1.25.0 1.26.2: Weighs the soul of incoming HTTP requests to stop AI crawlers
+www-apps/anubis 1.25.0 1.26.2 1.28.2: Weighs the soul of incoming HTTP requests to stop AI crawlers
 www-apps/byparr 3.0.4 3.0.4-r1: Proxy server to bypass captchas
 www-apps/code-server-bin 4.18.0 4.19.1 4.90.3: VS Code in the browser (binary version with unbundled node and ripgrep)
 www-apps/flaresolverr 3.5.0 3.5.2: Proxy server to bypass Cloudflare protection
