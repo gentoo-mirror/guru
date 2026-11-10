@@ -20,9 +20,9 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm64"
 
 RDEPEND="
-	~dev-python/nab-markersets-0.0.22[${PYTHON_USEDEP}]
-	~dev-python/nab-provider-0.0.22[${PYTHON_USEDEP}]
-	~dev-python/nab-resolver-0.0.22[${PYTHON_USEDEP}]
+	~dev-python/nab-markersets-${PV}[${PYTHON_USEDEP}]
+	~dev-python/nab-provider-${PV}[${PYTHON_USEDEP}]
+	~dev-python/nab-resolver-${PV}[${PYTHON_USEDEP}]
 	dev-python/truststore[${PYTHON_USEDEP}]
 	dev-python/typing-extensions[${PYTHON_USEDEP}]
 "
@@ -30,9 +30,10 @@ RDEPEND="
 BDEPEND="
 	dev-python/hatch-vcs[${PYTHON_USEDEP}]
 	dev-python/packaging[${PYTHON_USEDEP}]
+	test? ( dev-python/httpx2 )
 "
 
-EPYTEST_PLUGINS=( )
+EPYTEST_PLUGINS=( pytest-httpx hypothesis )
 
 distutils_enable_tests pytest
 
@@ -40,6 +41,7 @@ python_test() {
 	# skip tests that expect monorepo
 	local EPYTEST_DESELECT=(
 		tests/test_index_parsed_cache.py::TestReadPathRebuild::test_over_nested_blob_warns_and_reparses
+		tests/client/test_listings.py::test_oversized_version_is_skipped
 		tests/test_parsed_listing_codec.py::test_over_nested_blob_is_miss
 		tests/test_parsed_listing_codec.py::test_over_nested_blob_names_its_depth
 		tests/test_read_fresh_parsed_listing.py::TestReadFreshParsedListing::test_over_nested_policy_returns_none

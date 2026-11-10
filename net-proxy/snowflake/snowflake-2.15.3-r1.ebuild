@@ -5,35 +5,31 @@ EAPI=8
 
 inherit go-module systemd
 
-MY_P="${PN}-v${PV}"
-JOB_ID="898266" # Keep this in sync with the link with "other" in releases
 DESCRIPTION="Pluggable Transport using WebRTC, inspired by Flashproxy"
 HOMEPAGE="
 	https://snowflake.torproject.org
 	https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/snowflake
 "
-SRC_URI="https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/${PN}/-/jobs/${JOB_ID}/artifacts/raw/${MY_P}.tar.gz"
-S="${WORKDIR}/${MY_P}"
+SRC_URI="https://dist.torproject.org/snowflake/${PV}/snowflake-v${PV}.tar.gz"
+S=${WORKDIR}/snowflake-v${PV}
 
 LICENSE="BSD Apache-2.0 BSD-2 CC0-1.0 MIT"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="test"
-RESTRICT="!test? ( test )"
+IUSE="minimal"
 
-BDEPEND=">=dev-lang/go-1.21"
+BDEPEND=">=dev-lang/go-1.26.10"
 
 src_configure() {
 	COMPONENTS=(
-		broker
-		client
-		probetest
 		proxy
-		server
+		$(usev !minimal "broker client probetest server")
 	)
+	einfo "The following components will be built: ${COMPONENTS[@]}"
 }
 
 src_compile() {
+	local component
 	for component in "${COMPONENTS[@]}"; do
 		pushd ${component} || die
 		einfo "Building ${component}"
