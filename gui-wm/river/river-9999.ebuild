@@ -5,7 +5,7 @@ EAPI=8
 
 declare -g -r -A ZBS_DEPENDENCIES=(
 )
-ZIG_SLOT="0.16"
+ZIG_SLOT="0.17"
 
 inherit eapi9-ver zig
 
@@ -21,7 +21,7 @@ else
 		https://codeberg.org/river/river/releases/download/v${PV}/${P}.tar.gz
 		${ZBS_DEPENDENCIES_SRC_URI}
 	"
-	KEYWORDS="~amd64"
+	KEYWORDS="~amd64 ~arm64"
 fi
 
 # river: GPL-3-or-later
@@ -51,9 +51,7 @@ RDEPEND="${DEPEND}"
 
 DOCS=( "README.md" )
 
-PATCHES=(
-	"${FILESDIR}/river-0.4.1-fix-scdoc-path.patch"
-)
+BUILD_DIR="${S}"
 
 src_unpack() {
 	if [[ "${PV}" == "9999" ]]; then
