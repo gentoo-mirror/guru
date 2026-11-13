@@ -1,0 +1,15 @@
+BDEPEND=media-libs/harfbuzz || ( >=dev-lang/rust-bin-1.90.0:* >=dev-lang/rust-1.90.0:* )
+DEFINED_PHASES=compile configure install setup test unpack
+DEPEND=dev-libs/icu:= dev-libs/openssl:= media-gfx/graphite2 media-libs/fontconfig media-libs/freetype media-libs/harfbuzz:= media-libs/libpng:= virtual/zlib:=
+DESCRIPTION=A modernized, complete, embeddable TeX/LaTeX engine
+EAPI=8
+HOMEPAGE=https://tectonic-typesetting.github.io/ https://github.com/tectonic-typesetting/tectonic/
+INHERIT=cargo
+IUSE=debug
+KEYWORDS=~amd64
+LICENSE=MIT Apache-2.0 BSD CC0-1.0 CDLA-Permissive-2.0 ISC MIT MPL-2.0 Unicode-3.0 ZLIB
+RDEPEND=dev-libs/icu:= dev-libs/openssl:= media-gfx/graphite2 media-libs/fontconfig media-libs/freetype media-libs/harfbuzz:= media-libs/libpng:= virtual/zlib:=
+SLOT=0
+SRC_URI=https://github.com/tectonic-typesetting/tectonic/archive/refs/tags/tectonic@0.17.0.tar.gz -> tectonic-0.17.0.tar.gz https://github.com/yamader/gentoo-deps/releases/download/tectonic-0.17.0/tectonic-0.17.0-crates.tar.xz
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	rust	82f6599073a7368d12da31294f4a9aff	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	f37054abdadccfe8287ecf965ef5748f
+_md5_=503c999e903f18489ed5a975c3627e38

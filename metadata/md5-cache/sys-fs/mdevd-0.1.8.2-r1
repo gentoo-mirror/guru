@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst
+DEPEND=>=dev-libs/skalibs-2.14.5.0:=
+DESCRIPTION=small daemon managing kernel hotplug events, similarly to udevd
+EAPI=8
+HOMEPAGE=https://skarnet.org/software/mdevd/
+INHERIT=optfeature toolchain-funcs
+KEYWORDS=~amd64 ~arm64
+LICENSE=ISC
+RDEPEND=>=dev-libs/skalibs-2.14.5.0:=
+SLOT=0
+SRC_URI=https://skarnet.org/software/mdevd/mdevd-0.1.8.2.tar.gz
+_eclasses_=optfeature	58cc13bdc4e9a204077e1e7c9a1d7988	toolchain-funcs	58a918e3a42d0156f010dcfd43725be5
+_md5_=50b84635debde3e885954ddfa298881f
