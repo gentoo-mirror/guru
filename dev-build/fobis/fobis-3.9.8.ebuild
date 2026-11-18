@@ -4,7 +4,7 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{13..14} )
+PYTHON_COMPAT=( python3_{13..15} )
 MY_PN="FoBiS"
 
 inherit distutils-r1
@@ -20,16 +20,13 @@ S="${WORKDIR}/${MY_PN}-${PV}"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64"
 IUSE="doc graphviz"
 RESTRICT="mirror"
 
 RDEPEND="
-	${PYTHON_DEPS}
-	$(python_gen_any_dep '
-		dev-python/typer[${PYTHON_USEDEP}]
-		graphviz? ( dev-python/graphviz[${PYTHON_USEDEP}] )
-	')
+	dev-python/typer[${PYTHON_USEDEP}]
+	graphviz? ( dev-python/graphviz[${PYTHON_USEDEP}] )
 "
 
 EPYTEST_PLUGINS=( pytest-cov )
