@@ -61,7 +61,7 @@ src_prepare() {
 
 	# match with syslink
 	sed -i "s|^Exec=.*|Exec=/usr/bin/legcord-bin %U|" \
-		"usr/share/applications/${MY_PN}.desktop" || die
+		"usr/share/applications/${MY_PN,,}.desktop" || die
 
 	# rm binary libraries for unsupported architectures
 	local libdir="opt/${MY_PN}/resources/app.asar.unpacked/node_modules"
@@ -105,7 +105,7 @@ src_install() {
 	local destdir="/opt/${PN}"
 
 	exeinto "${destdir}"
-	doexe "opt/${MY_PN}/${MY_PN}"
+	doexe "opt/${MY_PN}/${MY_PN,,}"
 	doexe "opt/${MY_PN}/chrome-sandbox"
 	doexe "opt/${MY_PN}/chrome_crashpad_handler"
 
@@ -119,14 +119,14 @@ src_install() {
 	doins -r "opt/${MY_PN}/locales"
 	doins -r "opt/${MY_PN}/resources"
 
-	dosym ../../opt/"${PN}"/"${MY_PN}" /usr/bin/"${PN}"
+	dosym ../../opt/"${PN}"/"${MY_PN,,}" /usr/bin/"${PN}"
 
 	local x
 	for x in 16 32 64 128 256 512; do
 		doicon -s ${x} usr/share/icons/hicolor/${x}*/*
 	done
 
-	domenu "usr/share/applications/${MY_PN}.desktop"
+	domenu "usr/share/applications/${MY_PN,,}.desktop"
 
 	insinto /usr/share/metainfo
 	newins "${DISTDIR}/${P}.metainfo.xml" app.legcord.${MY_PN}.metainfo.xml

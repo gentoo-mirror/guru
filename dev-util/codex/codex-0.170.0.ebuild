@@ -31,10 +31,12 @@ declare -A GIT_CRATES=(
 	[nucleo]='https://github.com/helix-editor/nucleo;4253de9faabb4e5c6d81d946a5e35a90f87347ee;nucleo-%commit%'
 	[rmcp-macros]='https://github.com/modelcontextprotocol/rust-sdk;98a54789b80110ad210495c4ad845c89e1980471;rust-sdk-%commit%/crates/rmcp-macros'
 	[rmcp]='https://github.com/modelcontextprotocol/rust-sdk;98a54789b80110ad210495c4ad845c89e1980471;rust-sdk-%commit%/crates/rmcp'
+	[sqlx-core]='https://github.com/transact-rs/sqlx;10462fa4414c6c7f1ed1d39bb31678e3b726878c;sqlx-%commit%/sqlx-core'
+	[sqlx-sqlite]='https://github.com/transact-rs/sqlx;10462fa4414c6c7f1ed1d39bb31678e3b726878c;sqlx-%commit%/sqlx-sqlite'
 	[runfiles]='https://github.com/dzbarsky/rules_rust;b56cbaa8465e74127f1ea216f813cd377295ad81;rules_rust-%commit%/rust/runfiles'
-	[tokio-tungstenite]='https://github.com/openai-oss-forks/tokio-tungstenite;0e5b2d73aa18dd9f0a50ee9ff199d5aef7594186;tokio-tungstenite-%commit%'
-	[tungstenite]='https://github.com/openai-oss-forks/tungstenite-rs;4fffad30fe373adbdcffab9545e9e9bf4f2fc19f;tungstenite-rs-%commit%'
-	[v8]='https://github.com/seanh-oai/rusty_v8;350c5a859a9b3c84ab8701b3ad51e3b7699b30c0;rusty_v8-%commit%'
+	[tokio-tungstenite]='https://github.com/openai-oss-forks/tokio-tungstenite;7447c427513cfe685f236e1ac0513c4ea3dd9c0b;tokio-tungstenite-%commit%'
+	[tungstenite]='https://github.com/openai-oss-forks/tungstenite-rs;bc589d684755a8c02da0fc7e58d0861cbfc306f1;tungstenite-rs-%commit%'
+	[v8]='https://github.com/openai-oss-forks/rusty_v8;90a65f887a0c0f048f3784afbcb320b373c8a2e0;rusty_v8-%commit%'
 )
 
 RUST_MIN_VER="1.95.0"
@@ -132,6 +134,8 @@ src_prepare() {
 
 	[patch.crates-io]
 	crossterm = { path = "$(gen_git_crate_dir crossterm)" }
+	sqlx-core = { path = "$(gen_git_crate_dir sqlx-core)" }
+	sqlx-sqlite = { path = "$(gen_git_crate_dir sqlx-sqlite)" }
 	tokio-tungstenite = { path = "$(gen_git_crate_dir tokio-tungstenite)" }
 	tungstenite = { path = "$(gen_git_crate_dir tungstenite)" }
 	v8 = { path = "$(gen_git_crate_dir v8)" }
