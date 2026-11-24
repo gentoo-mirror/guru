@@ -221,8 +221,9 @@ dev-libs/zfp:twoway - Use two-way skew-associative cache
 dev-libs/zfp:utilities - Build command line utilities
 dev-ml/ezjsonm:lwt - Provides an Lwt variant of the serialisation functions in the Jsonm library.
 dev-nim/cligen:toml - Enable TOML config file support via dev-nim/parsetoml
-dev-python/mastodon-py:blurhash - Install dependencies required for decoding blurhash strings to images
-dev-python/mastodon-py:grapheme - Install dependencies required for grapheme-aware string handling
+dev-python/mastodon-py:blurhash - Support decoding blurhash strings to images
+dev-python/mastodon-py:grapheme - Support grapheme-aware string handling
+dev-python/mastodon-py:websocket - Support the WebSocket streaming API
 dev-python/ptpython:black - Add support for dev-python/black. Black not always possible on PyPy
 dev-python/ptpython:ipython - Add support for dev-python/ipython for ptipython
 dev-python/pyfiglet:contrib - Install fonts that don't have a clear license
@@ -266,6 +267,7 @@ dev-util/stylua:luajit - Build support for LuaJIT
 dev-util/stylua:luau - Build support for Luau
 dev-util/tinyxxd:xxd - use it as a replacement for xxd
 dev-util/u-config:symlink - Install pkg-config and pkgconf symlink
+dev-util/upstream-ontologist:bzr - Enable Bazaar (version control system) support via dev-vcs/breezy
 dev-util/vala-language-server:debug-mem - Debug memory usage
 dev-vcs/got:cvg - EXPERIMENTAL: build cvg - cvs-like-git
 games-action/ddnet:antibot - Enable support for a dynamic anticheat library.
@@ -764,6 +766,7 @@ mpv-plugin/mpv-mpris:autoload - Load plugin automatically
 net-analyzer/munin-contrib:plugins - contrib munin plugins
 net-analyzer/munin-contrib:templates - contrib munin tools
 net-analyzer/munin-contrib:tools - munin contrib tools
+net-client/lagrange:freetype - Use media-libs/freetype to render text
 net-client/lagrange:harfbuzz - Use media-libs/harfbuzz to shape text
 net-dialup/minimodem:sndio - Enable support for the media-sound/sndio backend
 net-dns/AdGuardHome:web - Enables web user interface (UI)
@@ -933,18 +936,18 @@ sci-misc/ik_llama-cpp:flexiblas - Build a FlexiBLAS backend
 sci-misc/ik_llama-cpp:openblas - Build an OpenBLAS backend
 sci-misc/ik_llama-cpp:rocm - Build a HIP (ROCm) backend
 sci-misc/ik_llama-cpp:wmma - Use rocWMMA to enhance flash attention performance
-sci-misc/llama-cpp:blis - Build a BLIS backend
-sci-misc/llama-cpp:flexiblas - Build a FlexiBLAS backend
-sci-misc/llama-cpp:openblas - Build an OpenBLAS backend
-sci-misc/llama-cpp:opencl - Build an OpenCL backend, so far only works on Adreno and Intel GPUs
-sci-misc/llama-cpp:openssl - Use openssl to support HTTPS
-sci-misc/llama-cpp:rocm - Build a HIP (ROCm) backend
 sci-misc/praat:pango - Without USE=gtk, build with minimal graphics support using x11-libs/pango
 sci-misc/stable-diffusion-cpp:blis - Build a BLIS backend
 sci-misc/stable-diffusion-cpp:flexiblas - Build a FlexiBLAS backend
 sci-misc/stable-diffusion-cpp:openblas - Build an OpenBLAS backend
 sci-misc/stable-diffusion-cpp:rocm - Build a HIP (ROCm) backend
 sci-misc/stable-diffusion-cpp:webm - Support the webm audiovisual media file format
+sci-ml/llama-cpp:blis - Build a BLIS backend
+sci-ml/llama-cpp:flexiblas - Build a FlexiBLAS backend
+sci-ml/llama-cpp:openblas - Build an OpenBLAS backend
+sci-ml/llama-cpp:opencl - Build an OpenCL backend, so far only works on Adreno and Intel GPUs
+sci-ml/llama-cpp:openssl - Use openssl to support HTTPS
+sci-ml/llama-cpp:rocm - Build a HIP (ROCm) backend
 sys-apps/bustd:glob - Enable excluding processes with glob patterns
 sys-apps/coolercontrold:liquidctl - Support for interacting with AIO liquid coolers and other devices with app-misc/liquidctl
 sys-apps/dinit:cgroups - Enable cgroups support

@@ -1,0 +1,15 @@
+BDEPEND=dev-libs/glib:2 virtual/pkgconfig app-alternatives/ninja >=dev-build/cmake-3.28.5
+DEFINED_PHASES=compile configure install postinst postrm prepare test
+DEPEND=dev-libs/glib:2 dev-libs/libdbusmenu[gtk3] dev-libs/wayland x11-libs/gtk+:3[wayland] x11-libs/libX11 systemd? ( sys-apps/dbus sys-apps/systemd )
+DESCRIPTION=GTK-plugin for global menu on Plasma Wayland
+EAPI=8
+HOMEPAGE=https://github.com/guiodic/appmenu-gtk-module-wayland
+INHERIT=cmake gnome2-utils
+IUSE=systemd
+KEYWORDS=~amd64
+LICENSE=LGPL-3+
+RDEPEND=dev-libs/glib:2 dev-libs/libdbusmenu[gtk3] dev-libs/wayland x11-libs/gtk+:3[wayland] x11-libs/libX11 systemd? ( sys-apps/dbus sys-apps/systemd )
+SLOT=0
+SRC_URI=https://github.com/guiodic/appmenu-gtk-module-wayland/archive/refs/tags/26.11.05.tar.gz -> appmenu-gtk-module-wayland-26.11.05.tar.gz
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	3530055400d05e64deaba3042af30af6	gnome2-utils	a8cf148ec7f5ae0b1f1d33ae5f7f9e88
+_md5_=f61dcd25e583d5ccc0652c071c9cbfc3

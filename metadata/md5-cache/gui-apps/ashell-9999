@@ -1,14 +1,15 @@
-BDEPEND=llvm_slot_22? ( llvm-core/clang:22 ) llvm_slot_22? ( || ( dev-lang/rust-bin:1.98.1[llvm_slot_22] dev-lang/rust:1.98.1[llvm_slot_22] dev-lang/rust-bin:1.97.1[llvm_slot_22] dev-lang/rust:1.97.1[llvm_slot_22] dev-lang/rust-bin:1.96.1[llvm_slot_22] dev-lang/rust:1.96.1[llvm_slot_22] dev-lang/rust-bin:1.95.0[llvm_slot_22] dev-lang/rust:1.95.0[llvm_slot_22] ) ) virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=llvm_slot_22? ( llvm-core/clang:22= ) llvm_slot_23? ( llvm-core/clang:23= ) llvm_slot_22? ( || ( dev-lang/rust-bin:1.98.1[llvm_slot_22] dev-lang/rust:1.98.1[llvm_slot_22] ) ) llvm_slot_23? ( || ( dev-lang/rust-bin:9999[llvm_slot_23] dev-lang/rust:9999[llvm_slot_23] dev-lang/rust-bin:1.100.0[llvm_slot_23] dev-lang/rust:1.100.0[llvm_slot_23] dev-lang/rust-bin:1.99.1[llvm_slot_23] dev-lang/rust:1.99.1[llvm_slot_23] dev-lang/rust-bin:1.99.0[llvm_slot_23] dev-lang/rust:1.99.0[llvm_slot_23] ) ) virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install postinst prepare setup test unpack
+DEPEND=dev-libs/wayland-protocols media-libs/libpulse media-video/pipewire:= sys-apps/dbus x11-libs/libxkbcommon
 DESCRIPTION=A ready to go Wayland status bar for Hyprland and Niri
 EAPI=8
 HOMEPAGE=https://malpenzibo.github.io/ashell/
 INHERIT=cargo llvm-r2 systemd git-r3
-IUSE=+llvm_slot_22 debug
-LICENSE=MIT Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD-2 BSD CC0-1.0 CDLA-Permissive-2.0 GPL-3+ ISC MIT MPL-2.0 Unicode-3.0 ZLIB
+IUSE=+llvm_slot_23 llvm_slot_22 debug
+LICENSE=GPL-3+ Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD-2 BSD CC0-1.0 CDLA-Permissive-2.0 GPL-3+ ISC MIT MPL-2.0 Unicode-3.0 ZLIB
 PROPERTIES=live
-RDEPEND=dev-libs/wayland-protocols media-fonts/symbols-nerd-font media-libs/libpulse media-video/pipewire:= sys-apps/dbus x11-libs/libxkbcommon
-REQUIRED_USE=^^ ( llvm_slot_22 )
+RDEPEND=media-fonts/symbols-nerd-font
+REQUIRED_USE=^^ ( llvm_slot_22 llvm_slot_23 )
 SLOT=0
 _eclasses_=llvm-utils	e7edb4086e31c8537574b263d899f826	toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	multilib	fc812e8eb2170022c28272d80a1f9e77	llvm-r2	9f39e8a89f8a2df22f02ed5f22714a13	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	rust	d2da4aa614adc34eea872ca9a6173d0a	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	f37054abdadccfe8287ecf965ef5748f	systemd	a964c0cbe818b5729da1dbfcee5be861	git-r3	e6c2f983e006e805160436c75a0c1562
-_md5_=14f7cd652177a77f3ebac1afa1dbe2c2
+_md5_=00cb1da169bae62e7283898633468caa

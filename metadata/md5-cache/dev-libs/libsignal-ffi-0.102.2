@@ -1,0 +1,14 @@
+BDEPEND=dev-build/cmake dev-libs/protobuf llvm_slot_20? ( llvm-core/clang:20 ) llvm_slot_21? ( llvm-core/clang:21 ) llvm_slot_22? ( llvm-core/clang:22 ) || ( >=dev-lang/rust-bin-1.93.1:* >=dev-lang/rust-1.93.1:* )
+DEFINED_PHASES=compile configure install pretend setup test unpack
+DESCRIPTION=C ABI library which exposes Signal protocol logic
+EAPI=8
+HOMEPAGE=https://github.com/signalapp/libsignal
+INHERIT=cargo check-reqs llvm-r2
+IUSE=debug +llvm_slot_22 llvm_slot_20 llvm_slot_21
+KEYWORDS=~amd64
+LICENSE=AGPL-3 AGPL-3 Apache-2.0 BSD CDLA-Permissive-2.0 GPL-3+ ISC MIT MPL-2.0 Unicode-3.0 ZLIB
+REQUIRED_USE=^^ ( llvm_slot_20 llvm_slot_21 llvm_slot_22 )
+SLOT=0
+SRC_URI=https://github.com/signalapp/libsignal/archive/refs/tags/v0.102.2.tar.gz -> libsignal-ffi-0.102.2.tar.gz https://github.com/sysrq-crate-dist/libsignal/releases/download/v0.102.2/libsignal-0.102.2-crates.tar.xz https://github.com/google/boringssl/archive/e2a57cfb4d915b4ba820585aef9fdee7bca13fe5.tar.gz -> boringssl-e2a57cf.tar.gz https://github.com/signalapp/SparsePostQuantumRatchet/archive/fd320484dcec89004021e6fdc7481825f5f261fa.tar.gz -> SparsePostQuantumRatchet-fd320484dcec89004021e6fdc7481825f5f261fa.gh.tar.gz https://github.com/signalapp/boring/archive/1405df0a23a0335618f88ed328c76f67646b088f.tar.gz -> boring-1405df0a23a0335618f88ed328c76f67646b088f.gh.tar.gz https://github.com/signalapp/boring/archive/1405df0a23a0335618f88ed328c76f67646b088f.tar.gz -> boring-1405df0a23a0335618f88ed328c76f67646b088f.gh.tar.gz https://github.com/signalapp/boring/archive/1405df0a23a0335618f88ed328c76f67646b088f.tar.gz -> boring-1405df0a23a0335618f88ed328c76f67646b088f.gh.tar.gz
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	rust	d2da4aa614adc34eea872ca9a6173d0a	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	f37054abdadccfe8287ecf965ef5748f	check-reqs	12ab9d3fc16bfe1f87c6fb652324b57c	llvm-utils	e7edb4086e31c8537574b263d899f826	multilib	fc812e8eb2170022c28272d80a1f9e77	llvm-r2	9f39e8a89f8a2df22f02ed5f22714a13
+_md5_=5132100c5fd92cc7f47f505d67d10e64

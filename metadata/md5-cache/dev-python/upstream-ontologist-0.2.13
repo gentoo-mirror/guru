@@ -1,0 +1,17 @@
+BDEPEND=python_single_target_python3_13? ( dev-python/setuptools-rust[python_targets_python3_13(-)] ) python_single_target_python3_14? ( dev-python/setuptools-rust[python_targets_python3_14(-)] ) test? ( app-arch/xz-utils virtual/zlib:= python_single_target_python3_13? ( dev-python/python-debian[python_targets_python3_13(-)] dev-python/ruamel-yaml[python_targets_python3_13(-)] dev-python/setuptools[python_targets_python3_13(-)] ) python_single_target_python3_14? ( dev-python/python-debian[python_targets_python3_14(-)] dev-python/ruamel-yaml[python_targets_python3_14(-)] dev-python/setuptools[python_targets_python3_14(-)] ) >=dev-vcs/breezy-3.3.22[python_single_target_python3_13(-)?,python_single_target_python3_14(-)?] ) || ( >=dev-lang/rust-bin-1.97:* >=dev-lang/rust-1.97:* ) python_single_target_python3_13? ( dev-lang/python:3.13 ) python_single_target_python3_14? ( dev-lang/python:3.14 ) python_single_target_python3_13? ( >=dev-python/gpep517-16[python_targets_python3_13(-)] dev-python/setuptools[python_targets_python3_13(-)] ) python_single_target_python3_14? ( >=dev-python/gpep517-16[python_targets_python3_14(-)] dev-python/setuptools[python_targets_python3_14(-)] )
+DEFINED_PHASES=compile configure install prepare setup test unpack
+DEPEND=app-arch/xz-utils virtual/zlib:= python_single_target_python3_13? ( dev-lang/python:3.13 ) python_single_target_python3_14? ( dev-lang/python:3.14 )
+DESCRIPTION=Tracking of upstream project metadata
+EAPI=8
+HOMEPAGE=https://pypi.org/project/upstream-ontologist/ https://github.com/jelmer/upstream-ontologist-py
+INHERIT=cargo distutils-r1
+IUSE=test debug python_single_target_python3_13 python_single_target_python3_14 debug
+KEYWORDS=~amd64
+LICENSE=Apache-2.0 0BSD Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD-2 BSD CC0-1.0 GPL-2+ GPL-3 ISC MIT MPL-2.0 MPL-2.0 Unicode-3.0 ZLIB
+RDEPEND=app-arch/xz-utils virtual/zlib:= python_single_target_python3_13? ( dev-python/python-debian[python_targets_python3_13(-)] dev-python/ruamel-yaml[python_targets_python3_13(-)] dev-python/setuptools[python_targets_python3_13(-)] ) python_single_target_python3_14? ( dev-python/python-debian[python_targets_python3_14(-)] dev-python/ruamel-yaml[python_targets_python3_14(-)] dev-python/setuptools[python_targets_python3_14(-)] ) >=dev-vcs/breezy-3.3.22[python_single_target_python3_13(-)?,python_single_target_python3_14(-)?] python_single_target_python3_13? ( dev-lang/python:3.13 ) python_single_target_python3_14? ( dev-lang/python:3.14 )
+REQUIRED_USE=^^ ( python_single_target_python3_13 python_single_target_python3_14 )
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/jelmer/upstream-ontologist-py/archive/refs/tags/v0.2.13.tar.gz -> upstream-ontologist-py-0.2.13.gh.tar.gz https://github.com/sysrq-crate-dist/upstream-ontologist-py/releases/download/v0.2.13/upstream-ontologist-py-0.2.13-crates.tar.xz
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	rust	d2da4aa614adc34eea872ca9a6173d0a	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	cargo	f37054abdadccfe8287ecf965ef5748f	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	out-of-source-utils	8e5093bd27b7f541a1913271f25d633a	multibuild	83db098a835f71feb71761f72a694aa2	multilib	fc812e8eb2170022c28272d80a1f9e77	ninja-utils	d063ea1900a793f93eb095010d6d9156	python-utils-r1	025367880f07ae6444e6035a49db0dab	python-single-r1	47d8ac9be330c9366112b78fd4f8ce57	distutils-r1	b6c87bbd4ee32d60dd49ff276fb08c92
+_md5_=3ea4054c55b443d96235eef8929b8232
