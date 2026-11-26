@@ -3,7 +3,7 @@ DEFINED_PHASES=compile configure install postinst postrm prepare test unpack
 DEPEND=dev-libs/libusb:1 dev-libs/libxml2:= dev-libs/libzip:= nbd? ( sys-block/nbdkit ) test? ( app-arch/zip dev-util/cmocka )
 DESCRIPTION=Tool to communicate with Qualcomm System On a Chip bootroms
 EAPI=8
-HOMEPAGE=https://github.com/linux-msm/qdl
+HOMEPAGE=https://github.com/qualcomm/qdl
 INHERIT=git-r3 meson udev
 IUSE=nbd test
 LICENSE=BSD
@@ -12,4 +12,4 @@ RDEPEND=dev-libs/libusb:1 dev-libs/libxml2:= dev-libs/libzip:= nbd? ( sys-block/
 RESTRICT=!test? ( test )
 SLOT=0
 _eclasses_=git-r3	e6c2f983e006e805160436c75a0c1562	toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	python-utils-r1	025367880f07ae6444e6035a49db0dab	sysroot	4c36abaf94ebd3ab32f8abea9a444121	rust-toolchain	76468983281b0a7fc167ca224f84ecfd	meson	8f31ee3f713c71ef36964e0c381dc3c8	udev	1a23882bb73bc31c64a6f00a5e515f34
-_md5_=b34e075c47652d0d9e789c8ac296b211
+_md5_=a1f9e19bd405ba3a6d806da97014e573

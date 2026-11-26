@@ -1,0 +1,15 @@
+BDEPEND=virtual/pkgconfig || ( dev-lang/zig:0.17 dev-lang/zig-bin:0.17 ) virtual/pkgconfig
+DEFINED_PHASES=compile configure install prepare setup test unpack
+DEPEND=sys-libs/pam X? ( x11-libs/libxcb )
+DESCRIPTION=A lightweight TUI (ncurses-like) display manager for Linux and BSD
+EAPI=8
+HOMEPAGE=https://codeberg.org/fairyglade/ly
+INHERIT=pam systemd zig
+IUSE=X
+KEYWORDS=~amd64
+LICENSE=WTFPL-2
+RDEPEND=sys-libs/pam X? ( x11-libs/libxcb ) app-misc/brightnessctl X? ( x11-base/xorg-server x11-apps/xauth x11-apps/xrdb )
+SLOT=0
+SRC_URI=https://codeberg.org/fairyglade/ly/archive/v1.5.0.tar.gz -> ly-1.5.0.tar.gz https://github.com/LuaJIT/LuaJIT/archive/18b087cd2cd4ddc4a79782bf155383a689d5093d.tar.gz -> N-V-__8AAODpQgCVrpfzE2ze9FA_rOuByh3WKyIyk5iS_o9a.tar.gz https://github.com/AnErrupTion/termbox2/archive/496730697c662893eec43192f48ff616c2539da6.tar.gz -> N-V-__8AAOEWBQDt5tNdIzIFY6n8DdZsCP-6MyLoNS20wgpA.tar.gz https://www.lua.org/ftp/lua-5.5.1.tar.gz -> N-V-__8AAPqeFQDipy0CdI6MKBmwYYarybBTO3IIJPrSzH_w.tar.gz https://codeberg.org/ziglang/translate-c/archive/38d8339d9050eafe5dcf85b4fc9368576ca967e1.tar.gz -> translate_c-0.0.0-Q_BUWoROBwAyokT5SJSw4YIrwdLd1w53i-pEYwBDqXZt.tar.gz https://www.lua.org/ftp/lua-5.2.4.tar.gz -> N-V-__8AALg2DgDVsrOXOPBkTZ7Vt0MZc_Gha5N--G1M-FiH.tar.gz https://www.lua.org/ftp/lua-5.1.5.tar.gz -> N-V-__8AABAhDAAIlXL7OA-0Z5sWQh_FOFGoImvOvJzkRGOg.tar.gz https://github.com/AshAmetrine/zigini/archive/085badbf90e25016f4609b5bde334689cdb41c5c.tar.gz -> zigini-0.6.0-BSkB7UtYAAB6b6HEm3Pjj5WIy-uiuBYsNTNCUENVwL1t.tar.gz https://github.com/AnErrupTion/ziglua/archive/5ff4bcc7b56661125dd93ad81addd473cebbcd14.tar.gz -> zlua-0.1.0-hGRpC9eYBQDYOfd1aKlHG8hy8eTgKiaAdIyQEQgLREpI.tar.gz https://www.lua.org/ftp/lua-5.3.6.tar.gz -> N-V-__8AALihEACTeiI1Me9rP-qPZT3BNTELDoSAXn76FIhw.tar.gz https://www.lua.org/ftp/lua-5.4.9.tar.gz -> N-V-__8AAEQ_FAAnte7Oq7KSLG9FZh_9mjvQimoekgYqkKSK.tar.gz https://github.com/Hejsil/zig-clap/archive/05faf3905e8548f5cc269a8836e154065e70128d.tar.gz -> clap-0.12.0-oBajB4XpAQCF1WRKnD5KOKPsnwwT_NNdAJ7Ww3irYJac.tar.gz https://github.com/luau-lang/luau/archive/refs/tags/0.718.tar.gz -> N-V-__8AAHD3twASfaoQIBT7MgqysHE9qE1pnme3FsEVRc84.tar.gz https://codeberg.org/ziglang/arocc/archive/d0c8c4d9c55daa7ef6e40cf0f630a5b5e900989b.tar.gz -> aro-0.0.0-JSD1QtuBNwCASyBtNF3pqTl_W3oAJQGEVyFAtrBSE_Pa.tar.gz https://github.com/ziglibs/ini/archive/10cfba648f709588ab2f8785f56641024c510df9.tar.gz -> ini-0.1.0-YCQ9YnsrAAAxl1kQHi95ths2vSkdPIJxzUg6e2Oo83w_.tar.gz
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	pam	b56d0c9c20fc5b553f13c8ae165a10a5	systemd	a964c0cbe818b5729da1dbfcee5be861	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	edob	357e125b8c5cad0deccb625e537ea831	edo	e472083829a6e7ff43a197cf536728a2	linux-info	efd923656513c879204fec6638eadee5	zig-utils	b8670f9a610964359c8de10d86390c87	zig	a218411a88def83f42f4b6bcc71cf215
+_md5_=7438a7b2ce860f9405b7774f475325fb
