@@ -1,0 +1,14 @@
+BDEPEND=!<dev-elixir/hex-2.7.0 !>dev-elixir/hex-2.7.0
+DEFINED_PHASES=compile install prepare
+DEPEND=dev-lang/elixir dev-lang/erlang:=
+DESCRIPTION=Package manager for the Erlang VM
+EAPI=8
+HOMEPAGE=https://github.com/hexpm/hex
+INHERIT=mix
+KEYWORDS=~amd64
+LICENSE=Apache-2.0
+RDEPEND=dev-lang/elixir dev-lang/erlang:=
+SLOT=2.7
+SRC_URI=https://github.com/hexpm/hex/archive/v2.7.0.tar.gz -> hex-2.7.0.tar.gz
+_eclasses_=mix	0121d183f009a7de47b15441d86b4ce1
+_md5_=86e6a0ae185f8039811ed68ed2b6d6e9
